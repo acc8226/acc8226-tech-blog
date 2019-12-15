@@ -1,6 +1,4 @@
 before_install:
-# 设置为中国时区, 解决时区显示不一致的问题
-- export TZ='Asia/Shanghai'  
 
 install: 
 - npm install
