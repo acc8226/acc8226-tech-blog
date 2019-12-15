@@ -1,8 +1,4 @@
-language: node_js
-node_js: stable
-
 install: 
-- npm install -g gulp
 - npm install
 
 script: 
@@ -17,11 +13,18 @@ after_script:
 - git commit -m "Update docs with TRAVIS-CI.” 
 - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
 
+# safelist
 branches: 
   only: 
     - master 
 
+language: node_js
+node_js: stable
+
+git:
+  depth: 1
+
 env: 
   global: 
-    - GH_REF: git@github.com:acc8226/acc8226.github.io.git # ssh
-    
+    # 使用https, 若使用ssh会出错
+    - GH_REF: github.com/acc8226/acc8226.github.io.git 
