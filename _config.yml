@@ -81,11 +81,11 @@ theme: archer # 当前主题名称。值为false时禁用主题
 
 # Deployment 部署部分
 ## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  type: git
-  repo: git@git.dev.tencent.com:aleevz/aleevz.coding.me.git
-  branch: master
-  message: update from hexo plugin
+#deploy:
+#  type: git
+#  repo: git@git.dev.tencent.com:aleevz/aleevz.coding.me.git
+#  branch: master
+#  message: update from hexo plugin
 
 jsonContent:
   meta: true
