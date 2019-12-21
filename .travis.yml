@@ -1,5 +1,5 @@
 before_install:
-- export TZ='Asia/Shanghai'  
+- export TZ='Asia/Shanghai'  # 解决时区不统一的问题
 
 install: 
 - npm install
