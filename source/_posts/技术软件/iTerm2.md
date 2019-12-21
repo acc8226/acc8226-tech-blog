@@ -69,8 +69,8 @@ ZSH_THEME_RANDOM_CANDIDATES=(
 
 ### Enabling Plugins 启用插件
 一旦你发现一个插件(或者几个) ，你想用 Oh My Zsh，你需要在。 Zshrc 文件。 您将在 $HOME 目录中找到 zshrc 文件。 用你最喜欢的文本编辑器打开它，你会看到一个地方列出所有你想要加载的插件。
-
-`cd $ZSH_CUSTOM/plugins`可以查看已安装plugins
+`$ZSH/plugins`: oh-my-zsh 官方插件目录，该目录已经预装了很多实用的插件，只不过没激活而已；
+`$ZSH_CUSTOM/plugins`: oh-my-zsh 第三方插件目录；
 
 ```sh
 vi ~/.zshrc
@@ -115,7 +115,7 @@ plugins=(... git)
 | gb                   | git branch                                                                                                                    |
 | gba                  | git branch -a                                                                                                                 |
 | gbd                  | git branch -d                                                                                                                 |
-| gbda                 | git branch --no-color --merged \| command grep -vE "^(\+|\*\|\s*(master\|develop\|dev)\s*$)" \| command xargs -n 1 git branch -d |
+| gbda                 | `git branch --no-color --merged \| command grep -vE "^(\+|\*\|\s*(master\|develop\|dev)\s*$)" \| command xargs -n 1 git branch -d` |
 | gbD                  | git branch -D                                                                                                                 |
 | gbl                  | git blame -b -w                                                                                                               |
 | gbnm                 | git branch --no-merged                                                                                                        |
@@ -311,14 +311,24 @@ Available search contexts are:
 #### 高亮插件
 
 ```sh
-sudo git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.zsh/zsh-syntax-highlighting
- ```
+sudo git clone https://github.com/zsh-users/zsh-syntax-highlighting $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+```
 
 然后编辑配置文件，`$ vim ~/.zshrc` 添加以下内容:
 ```sh
-source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $ZSH_CUSTOM/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ```
 
+#### zsh-autosuggestions
+```
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+
+Add the plugin to the list of plugins for Oh My Zsh to load (inside ~/.zshrc):
+```
+plugins=(zsh-autosuggestions)
+
+```
 
 ### Powerlevel9k主题
 ```
@@ -392,3 +402,6 @@ POWERLEVEL9K_CUSTOM_OS_ICON_BACKGROUND=red
 POWERLEVEL9K_CUSTOM_OS_ICON_FOREGROUND=white
 # -------------------------------- POWERLEVEL ---------------------------------
 ```
+
+## 参考
+https://github.com/Powerlevel9k/powerlevel9k
