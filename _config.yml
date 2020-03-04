@@ -77,7 +77,7 @@ pagination_dir: page # 分页目录
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: archer # 当前主题名称。值为false时禁用主题
+theme: next # 当前主题名称。值为false时禁用主题
 
 # Deployment 部署部分
 ## Docs: https://hexo.io/docs/deployment.html

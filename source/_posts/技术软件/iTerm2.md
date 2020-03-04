@@ -265,7 +265,6 @@ plugins=(... git)
 | gwip                 | git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commit --no-verify --no-gpg-sign -m "--wip-- [skip ci]"        |
 
 
-
 #### web-search plugin
 
 This plugin adds aliases for searching with Google, Wiki, Bing, YouTube and other popular services.
@@ -327,7 +326,11 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 Add the plugin to the list of plugins for Oh My Zsh to load (inside ~/.zshrc):
 ```
 plugins=(zsh-autosuggestions)
+```
 
+```sh
+# hightlight 插件前景色, 背景色, 字体配置
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#BABABA,bg=#66666A,bold,underline"
 ```
 
 ### Powerlevel9k主题
