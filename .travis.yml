@@ -32,6 +32,6 @@ env:
   global: 
     # 使用https, 若使用ssh会出错
     - GH_REF: github.com/acc8226/acc8226.github.io.git
-    # Coding Pages, 在这里不使用githubio, 是因为这个访问的速度比 github 更快
+    # Coding Pages, 在这里不使用githubio, 是因为这个访问的速度比 github 快
     - USER_NAME: aleevz
     - CODING_REF: e.coding.net/aleevz/aleevz.coding.me.git
