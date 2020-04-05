@@ -1,3 +1,6 @@
+---
+title: JetBrains推出编程字体Mono
+---
 JetBrains推出编程字体Mono：更适合程序开发人员
 
 ![](https://img.ithome.com/newsuploadfiles/2020/1/20200116_123507_907.png)
