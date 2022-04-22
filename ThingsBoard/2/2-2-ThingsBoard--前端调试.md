@@ -12,9 +12,13 @@ Thingsboard 是一个使用 Angular JS 框架搭建的 web SPA 架构。
 pom 文件中 yarn 指定的是 **1.22.17** 版本。因此要求此版本或者更高。正常情况下 npm install yarn -g 即可。
 
 进入 thingsboard/ui-ngx 目录进行操作
+
+````sh
 ```
 yarn
 ```
+````
+
 如果这一步报没有 yarn 命令的话，就先使用 npm 安装一下 yarn
 ```
 npm i yarn -g

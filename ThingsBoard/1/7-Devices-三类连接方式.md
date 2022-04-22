@@ -17,7 +17,8 @@ mqtt.js - npm
 https://www.npmjs.com/package/mqtt
 
 mqtt.js 全局安装
-```
+
+```sh
 npm install mqtt -g
 ```
 
