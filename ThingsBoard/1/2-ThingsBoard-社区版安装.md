@@ -44,7 +44,7 @@ ThingsBoard 前端是基于 Angular JS 框架的 SPA。
 ### 部署 thingsboard（win + docker 组合）
 
 官网
-https://github.com/thingsboard/
+<https://github.com/thingsboard/>
 
 我们需要使用存储卷的方式来进行数据持久化。 创建二个存储卷，一个存数据，一个存日志。
 
@@ -93,10 +93,10 @@ docker logs -f mytb
 5683:5683 - 将本地端口 5683 转发至 MQTT 端口 5683
 
 ThingsBoard | 首页
-http://localhost:8080/
+<http://localhost:8080/>
 
 Swagger UI
-http://localhost:8080/swagger-ui/
+<http://localhost:8080/swagger-ui/>
 - - -
 
 ## 开始使用
@@ -131,7 +131,7 @@ cat telemetry-data-as-object.json \
 -s
 ```
 
-发现会报错，查看 issues 得知 https://github.com/mqttjs/MQTT.js/issues/821，所以还得加一个任意内容的虚拟消息。
+发现会报错，查看 issues 得知 <https://github.com/mqttjs/MQTT.js/issues/821>，所以还得加一个任意内容的虚拟消息。
 
 或者直接一条命令搞定
 
@@ -175,7 +175,7 @@ curl -X POST \
 ## 参考资料
 
 thingsboard/thingsboard: Open-source IoT Platform - Device management, data collection, processing and visualization.
-https://github.com/thingsboard/thingsboard
+<https://github.com/thingsboard/thingsboard>
 
 ThingsBoard: ThingsBoard 是一个开源的物联网平台，用于数据收集、处理、可视化展示以及设备管理
 <https://gitee.com/mirrors/ThingsBoard>
@@ -184,7 +184,7 @@ ThingsBoard: ThingsBoard 是一个开源的物联网平台，用于数据收集�
 <https://iot.mushuwei.cn/#/thingsboard/>
 
 【需付费】ThingsBoard 教程二开_拿我格子衫来的博客-CSDN博客
-https://blog.csdn.net/github_35631540/category_11377483.html
+<https://blog.csdn.net/github_35631540/category_11377483.html>
 
 ThingBoard教程（一）：ThingBoard介绍及安装_专栏_易百纳技术社区
-https://www.ebaina.com/articles/140000005511
+<https://www.ebaina.com/articles/140000005511>

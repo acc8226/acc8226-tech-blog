@@ -20,7 +20,8 @@ yarn
 ````
 
 如果这一步报没有 yarn 命令的话，就先使用 npm 安装一下 yarn
-```
+
+```sh
 npm i yarn -g
 ```
 
@@ -28,7 +29,7 @@ npm i yarn -g
 
 使用 yarn 安装完成 npm 包后，运行以下命令可以将项目启动：
 
-```
+```sh
 yarn start
 ```
 
@@ -41,6 +42,7 @@ yarn start
 在前端的 proxy.conf.js 文件配置的 forwardUrl 和 wsForwardUrl 变量。这里就是配置后端服务的路径。
 
 代码如下
+
 ```js
 const forwardUrl = "http://localhost:8080";
 const wsForwardUrl = "ws://localhost:8080";
@@ -80,12 +82,12 @@ module.exports = PROXY_CONFIG;
 ## 前端架构分析
 
 ThingsBoard教程（九）：前端架构分析\_专栏\_易百纳技术社区
-https://www.ebaina.com/articles/140000010056
+<https://www.ebaina.com/articles/140000010056>
 
 ## 前端简单定制化
 
 ThingsBoard教程（十）：前端简单定制化_专栏_易百纳技术社区
-https://www.ebaina.com/articles/140000012270
+<https://www.ebaina.com/articles/140000012270>
 
 ## 部件的基本 API 解释
 
@@ -127,7 +129,7 @@ https://www.ebaina.com/articles/140000012270
 
 类型： Array<datasource style="box-sizing: border-box; margin: 0px; padding: 0px; list-style: none;"> 描述：部件的数据源， 格式请看[Subscription object](https://thingsboard.io/docs/user-guide/contribution/widgets-development/#subscription-object)</datasource>
 
-```
+```js
  datasources = [
         {  // datasource
            type: 'entity',// type of the datasource. Can be "function" or "entity"

@@ -107,9 +107,9 @@ WinSCPPath=D:\xxxx\WinSCP.exe
 ## 相关网址
 
 putty download
-https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
+<https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html>
 
 kitty download
  [https://github.com/cyd01/KiTTY/releases](https://github.com/cyd01/KiTTY/releases)
 
-27 Best SSH clients for Windows as of 2021 - Slant https://www.slant.co/topics/149/~best-ssh-clients-for-windows#21
+27 Best SSH clients for Windows as of 2021 - Slant <https://www.slant.co/topics/149/~best-ssh-clients-for-windows#21>

@@ -29,6 +29,7 @@ export class LogoComponent {
 很多公司想要定制 tb 的 logo，然后自己再申请软著，各种认证。 在 tb 中修改 logo 很简单，可以直接替换原有文件，也可以直接修改源码来更改 logo。
 
 替换文件的话，只需要替换
+
 * src/assets/logo-title_white.svg, 此图片属性中原始大小为 1536*318px，css中设置大小为 280 * 60 px。所以替换图片的过程中要最好保持固定宽高比，且高度统一为 60 px。
 * src/thinsboard.ico, 32*32px
 
@@ -37,6 +38,7 @@ src/assets/logo-white.svg 目前没用到，删除即可。
 ### 修改网站标题 和 默认语言
 
 ui-ngx\src\environments\environment.ts
+
 ```ts
 export const environment = {
   appTitle: 'xxxxxxxx',
@@ -47,7 +49,8 @@ export const environment = {
 ### 修改主题色
 
 theme.scss
-```
+
+```scss
 $tb-primary-color: #2b675d;
 $tb-secondary-color: #82a7d1;
 $tb-hue3-color: #c8d3df;
