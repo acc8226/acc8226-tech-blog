@@ -9,19 +9,22 @@ https://github.com/fatedier/frp
 
 ### 通过 ssh 访问公司内网机器
 1. 修改 frps.ini 文件，这里使用了最简化的配置：
-```
+
+```ini
 # frps.ini
 [common]
 bind_port = 7000
 ```
 
 2. 启动 frps：
-```
+
+```sh
 ./frps -c ./frps.ini
 ```
 
 3. 修改 frpc.ini 文件，假设 frps 所在服务器的公网 IP 为 x.x.x.x；
-```
+
+```ini
 # frpc.ini
 [common]
 server_addr = x.x.x.x
@@ -35,17 +38,20 @@ remote_port = 6000
 ```
 
 4. 启动 frpc：
-```
+
+```sh
 ./frpc -c ./frpc.ini
 ```
 
 5. 通过 ssh 访问内网机器，使用-o参数指定端口号. 假设用户名为 test：
-```
+
+```sh
 ssh -oPort=6000 test@x.x.x.x
 ```
 
 我的服务端配置
-```
+
+```ini
 [common]
 bind_port = 7000
 
@@ -69,9 +75,9 @@ max_ports_per_client = 10
 # custom_404_page = /path/to/404.html
 ```
 
-
 我的客户端配置
-```
+
+```ini
 [common]
 server_addr = 你的服务器端的ip
 server_port = 7000
@@ -138,5 +144,6 @@ linux：nohup 不生成 nohup.out的方法
 则可以改写为 `nohup ./frps -c frps.ini >/dev/null 2>&1 &`
 
 ## 软件下载
+
 Releases · fatedier/frp
 https://github.com/fatedier/frp/releases

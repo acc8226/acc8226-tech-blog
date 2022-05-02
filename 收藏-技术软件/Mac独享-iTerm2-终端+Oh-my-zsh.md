@@ -5,8 +5,9 @@ iTerm2是 Terminal 的替代品，也是 iTerm 的继承者。 它适用于 macO
 
 下载的是压缩文件，解压后是执行程序文件，你可以直接双击，或者直接将它拖到 Applications 目录下。
 或者你可以直接使用 Homebrew 进行安装：
-```
-$ brew cask install iterm2
+
+```sh
+brew cask install iterm2
 ```
 
 安装好之后，需要把 Zsh 设置为当前用户的默认 Shell（这样新建标签的时候才会使用 Zsh）：
@@ -27,13 +28,17 @@ $ brew cask install iterm2
 ## Oh my zsh
 
 通过在终端中运行以下命令之一，可以安装 myzsh。 您可以通过命令行使用 curl 或 wget 来安装它。
+
 ```sh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
+
 或者
+
 ```sh
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
+
 安装好之后，需要把 Zsh 设置为当前用户的默认 Shell（这样新建标签的时候才会使用 Zsh）：
 To update your account to use zsh, please run `chsh -s /bin/zsh`.
 
@@ -44,16 +49,19 @@ You'll need to remove `/Users/用户XXX/.oh-my-zsh` if you want to reinstall.
 若要使用不同的主题，只需更改值以匹配所需主题的名称。 例如:
 
 `vim ~/.zshrc`编辑
+
 ```zsh
 ZSH_THEME="agnoster" # (this is one of the fancy ones)
 # see https://github.com/ohmyzsh/ohmyzsh/wiki/Themes#agnoster
 ```
 如果你感觉精力充沛，你可以让计算机在你每次打开一个新的终端窗口时为你随机选择一个。
+
 ```zsh
 ZSH_THEME="random" # (...please let it be pie... please be some pie..)
 ```
 
 如果你想从你最喜欢的主题列表中随机选择主题:
+
 ```sh
 ZSH_THEME_RANDOM_CANDIDATES=(
   "robbyrussell"
@@ -72,8 +80,10 @@ ZSH_THEME_RANDOM_CANDIDATES=(
 ```sh
 vi ~/.zshrc
 ```
+
 For example, this might begin to look like this:
-```
+
+```text
 plugins=(
   git
   bundler
@@ -84,12 +94,13 @@ plugins=(
   ruby
 )
 ```
+
 Note that the plugins are separated by whitespace. Do not use commas between them.
 请注意，这些插件是用空格分隔的。 不要在它们之间使用逗号。
 
 #### git插件
 
-https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git
+<https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git>
 
 The git plugin provides many [aliases](#aliases) and a few useful [functions](#functions).
 
@@ -344,6 +355,7 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 
 如果出现乱码, 说明需要安装Powerline字体
 mac下的直接执行命令 或者根据提供的GitHub地址手动下载并安装也行
+
 ```sh
 cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
 ```
@@ -355,7 +367,8 @@ After installing nerd-fonts and configuring your terminal emulator to use one, c
 ![image](https://upload-images.jianshu.io/upload_images/1662509-3eb732a0ec53f141.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 去掉左侧默认的命令提示符为 user@userdemackbookPro，这样的提示符配合 powerlevel9k 主题太过冗长，因此我选择将该冗长的提示符去掉，在 ~/.zshrc 配置文件后面追加如下内容：
-```sh
+
+```prop
 # 默认主题 
 # ZSH_THEME="robbyrussell"
 

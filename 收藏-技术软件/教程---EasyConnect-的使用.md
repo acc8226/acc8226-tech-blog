@@ -5,7 +5,7 @@ EasyConnect下载链接   //后面的IP是服务端的IP地址，如果是域�
 M5.0-M7.0版本： [https://IP/com/install.exe](https://ip/com/install.exe)
 M7.1之后版本： [https://IP/com/EasyConnectInstaller.exe](https://ip/com/EasyConnectInstaller.exe)
 * 登录异常，请下载 SSL VPN 诊断修复工具 进行修复
-http://download.sangfor.com.cn/download/product/sslvpn/SangforHelperToolInstaller.exe
+<http://download.sangfor.com.cn/download/product/sslvpn/SangforHelperToolInstaller.exe>
 
 ## 选择对应的分配方式
 

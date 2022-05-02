@@ -32,9 +32,9 @@ Windows Subsystem for Android 可用于 Windows 11 上的公共预览版。
 
 必须首先在 Windows“设置”中启用开发人员模式。 可通过以下三种方式开启开发人员模式：
 
-*   打开[适用于 Android 的 Windows 子系统“设置”应用](https://docs.microsoft.com/zh-cn/windows/android/wsa/#windows-subsystem-for-android-settings-app)。 打开后，启用“开发人员模式”。
-*   在 Windows 搜索中搜索“开发人员设置”。
-*   导航到“设置”>“隐私和安全”>“面向开发人员”>“开发人员模式”。
+* 打开[适用于 Android 的 Windows 子系统“设置”应用](https://docs.microsoft.com/zh-cn/windows/android/wsa/#windows-subsystem-for-android-settings-app)。 打开后，启用“开发人员模式”。
+* 在 Windows 搜索中搜索“开发人员设置”。
+* 导航到“设置”>“隐私和安全”>“面向开发人员”>“开发人员模式”。
 
 ### 连接到适用于 Android 的 Windows 子系统进行调试
 
@@ -51,13 +51,14 @@ Windows Subsystem for Android 可用于 Windows 11 上的公共预览版。
 **查询设备**
 在发出 adb 命令之前，了解哪些设备实例已连接到 adb 服务器会很有帮助。您可以使用 devices 命令生成已连接设备的列表。
 
-```
+```sh
 adb devices
 ```
 
 **安装应用**
 您可以使用 adb 的 install 命令在模拟器或连接的设备上安装 APK：
-```
+
+```sh
 adb install path_to_apk
 ```
 

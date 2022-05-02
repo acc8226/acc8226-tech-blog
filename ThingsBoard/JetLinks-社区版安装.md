@@ -7,14 +7,16 @@ JetLinks  是一个开源物联网平台。
 测试用户未开放全部权限，建议本地运行社区版体验或者联系商务试用企业版。
 
 docker 启动
-```
-$ git clone https://github.com/jetlinks/jetlinks-community.git && cd jetlinks-community
-$ cd docker/run-all
-$ docker-compose up
+
+```sh
+git clone https://github.com/jetlinks/jetlinks-community.git && cd jetlinks-community
+cd docker/run-all
+docker-compose up
 ```
 
 附录 docker-compose.yml 文件内容
-```
+
+```yml
 version: '2'
 services:
   redis:
@@ -122,5 +124,5 @@ volumes:
 ```
 
 部署后可进行本地启动
-http://localhost:9000
+<http://localhost:9000>
 用户名:admin, 密码:admin

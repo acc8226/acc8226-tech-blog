@@ -105,13 +105,11 @@ https://www.axure.com.cn/79769/
 
 **解决“只能通过Chrome网上应用商店安装该程序”的方法**
 1.把下载后的 .crx 扩展名的离线Chrome插件的文件扩展名改成.zip 或者 .rar
-
 2. 在Chrome的地址栏中输入：chrome://extensions/ 打开Chrome 浏览器的扩展程序管理界面，并在该界面的右上方的开发者模式按钮上打勾
-
-3. 在勾选开发者模式选项以后，在该页面就会出现加载正在开发的扩展程序等按钮，点击“加载正在开发的扩展程序”按钮，并选择刚刚解压的Chrome插件文件夹的位置，如图所示：
-
+3. 在勾选开发者模式选项以后，在该页面就会出现加载正在开发的扩展程序等按钮，点击“加载正在开发的扩展程序”按钮，并选择刚刚解压的 Chrome 插件文件夹的位置。
 4. 若出现加载程序出错的情况，Chrome浏览器会提示无法加载以下来源的扩展程序： xxx路径（Chrome插件文件的解压位置）Cannot load extension with file or directory name _metadata. Filenames starting with "_" are reserved for use by the system.出现这种情况，是因为这款Chrome插件与新版的Chrome浏览器有些不兼容，这时候，用户可以打开刚刚解压的Chrome插件文件夹，并把其中_metadata文件夹的名字修改为metadata（把前面的下划线去掉）
-
 5. 更新文件夹名称成功以后，点击该错误提示下方的“重试”按钮，就可以成功地把Chrome插件加载谷歌浏览器中了
 
 ## firefox 的使用
+
+

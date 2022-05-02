@@ -51,15 +51,9 @@ npm install mqtt -g
 Index of /apps/mqttfx/1.7.1
 <http://www.jensd.de/apps/mqttfx/1.7.1/>
 
-
-
-
-
 ```sh
 docker run -p 8087:8080 -p 1599:1883 hivemq/hivemq4
 ```
-
-
 
 ## CoAP
 

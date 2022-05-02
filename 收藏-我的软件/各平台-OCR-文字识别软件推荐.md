@@ -39,6 +39,7 @@ https://jidusm.wrste.com/
 Bob 是一款 Mac 端翻译软件，支持划词翻译、截图翻译以及手动输入翻译。
 
 目前支持
+
 * 划词翻译
 * 截图翻译
 * 输入翻译
@@ -50,4 +51,4 @@ Bob 是一款 Mac 端翻译软件，支持划词翻译、截图翻译以及手�
 * PopClip 调用
 
 下载地址
-https://ripperhe.gitee.io/bob/#/
+<https://ripperhe.gitee.io/bob/#/>
