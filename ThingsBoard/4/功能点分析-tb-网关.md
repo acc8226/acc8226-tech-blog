@@ -206,10 +206,8 @@ hivemq 的 web 控制台，地址为 <http://localhost:8087>。
     "clientId": "ThingsBoard_gateway",
     "maxMessageNumberPerWorker": 10,
     "maxNumberOfWorkers": 100,
-    "security": {
-      "type": "basic",
-      "username": "admin",
-      "password": "hivemq"
+    "security": {      
+      "type": "anonymous"
     }
   },
   "mapping": [
@@ -359,6 +357,43 @@ hivemq 的 web 控制台，地址为 <http://localhost:8087>。
 deviceNameJsonExpression 设备名称
 deviceTypeJsonExpression 设备类型，作为 Device profile
 
+### connectRequests 说明
+
+ThingsBoard 允许向设备发送关于设备属性更新的 RPC 命令和通知。但是为了发送它们，平台需要知道目标设备是否连接，以及目前使用哪个网关或会话连接设备。
+如果你的设备不断地发送遥测数据，那么 ThingsBoard 已经知道如何推送通知。
+如果您的设备刚刚连接到 MQTT 代理并等待 commands/updates，则需要向 Gateway 发送消息并通知设备已连接到代理。
+
+举例
+
+```sh
+mosquitto_pub -h YOUR_MQTT_BROKER_HOST -p YOUR_MQTT_BROKER_PORT -t "sensors/connect" -m '{"serialNumber":"SN-001"}'
+mosquitto_pub -h YOUR_MQTT_BROKER_HOST -p YOUR_MQTT_BROKER_PORT -t "sensor/SN-001/connect" -m ''
+```
+
+### disconnectRequest 说明
+
+此配置部分是可选的。 本节提供的配置将用于从代理获取有关断开设备的信息。 如果您的设备仅与MQTT代理断开连接并等待commands/updates，则需要向网关发送消息，并通知设备已与代理断开连接。
+
+```sh
+mosquitto_pub -h YOUR_MQTT_BROKER_HOST -p YOUR_MQTT_BROKER_PORT -t "sensors/disconnect" -m '{"serialNumber":"SN-001"}'
+mosquitto_pub -h YOUR_MQTT_BROKER_HOST -p YOUR_MQTT_BROKER_PORT -t "sensor/SN-001/disconnect" -m '
+```
+
+### attributeUpdates 说明
+
+此配置部分是可选的。 ThingsBoard允许供应设备属性，并从设备应用程序中获取其中的一些属性。 您可以将此视为设备的远程配置。您的设备能够从 ThingsBoard 请求共享属性。 有关更多详细信息，请参见用户指南。
+
+attributeRequests 配置允许配置相应的属性请求和响应消息的格式。
+
+```text
+"retain": true, 默认为 false，如果设置为 true，该消息将被设置为主题的“last known good”/保留消息
+"deviceNameFilter": "SmartMeter.*", 正则表达式设备名称筛选器，用于确定要执行哪个函数。
+"attributeFilter": "uploadFrequency", 正则表达式属性名筛选器，用于确定要执行哪个函数。
+"topicExpression": "sensor/${deviceName}/${attributeKey}", JSON-path 表达式用于创建用于发送消息的主题地址。
+"valueExpression": "{\"${attributeKey}\":\"${attributeValue}\"}" JSON-path 表达式用于创建将发送到主题的消息数据。
+```
+
+
 ## 模拟实现具体应用场景
 
 ## 故障排除
@@ -431,27 +466,43 @@ The list of OOTB methods will be extended within upcoming releases.
 gateway_ping RPC method
 
 gateway_ping RPC method is used to check connection to the gateway and RPC processing status. Every command with prefix “gateway_” will be interpreted as a command to general gateway service and not as an RPC request to the connector or device.
+
 Command:
-`gateway_ping`
+
+```text
+gateway_ping
+```
 
 Gateway RPC ping method
 gateway_devices RPC method
 gateway_devices RPC method is used to list devices connected through the gateway with info about the type of connector used. This method returns object in “resp” with key-value parameters, where: key — is a device name value — identifies the connector
+
 Command:
-`gateway_devices`
+
+```text
+gateway_devices
+```
 
 Gateway RPC devices method
 
 gateway_restart RPC method
 gateway_restart RPC method is used to schedule restart action, e.g. bash gateway_restart 60 set up the restart of the gateway service in 60 seconds. This method uses seconds as measuring unit.
 Note: The response will be returned after adding the task to the gateway scheduler.
+
 Command:
-`gateway_restart 60`
+
+```text
+gateway_restart 60
+```
 
 gateway_reboot RPC method
 gateway_reboot RPC method is used to schedule rebooting of the gateway device (hardware?), e. g. bash gateway_reboot 60 set up the reboot of the gateway device in one minute. Take into account: this method available if you start the gateway service as a python module instead of daemon approach and the user that is running the gateway has reboot permissions.
+
 Command:
-`gateway_reboot 60`
+
+```text
+gateway_reboot 60
+```
 
 ### 远程 shell
 
@@ -509,7 +560,7 @@ tb-gateway-configurator
 ```
 
 使用您的选项回答将依次显示的问题(您可以使用输入字段中显示的默认值)。
-注意: 默认值取自/etc/thingsboard-gateway/config/tb _ gateway. yaml，所有通过 CLI 进行的配置都将保存在那里。
+注意: 默认值取自 /etc/thingsboard-gateway/config/tb _ gateway.yaml，所有通过 CLI 进行的配置都将保存在那里。
 
 最后，你可以使用以下命令启动你的 ThingsBoard IoT gateway:
 

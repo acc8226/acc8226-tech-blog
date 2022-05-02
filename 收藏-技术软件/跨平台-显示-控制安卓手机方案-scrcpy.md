@@ -1,6 +1,6 @@
 * Genymotion、Parallels Desktop 等虚拟机软件 太专业, 需要配置太多软件, 适合开发者。
 * 国内一些安卓游戏助手都可以一试, 这里我随便下载了一款网易 MuMu 对字体的显示不太好. 可以尝试一下 [傲软投屏（ApowerMirror）](https://www.apowersoft.cn/phone-mirror)
-* Vysor Pro 收费较贵，免费版则有广告
+* Vysor Pro 收费较贵，免费版广告又多
 
 ## scrcpy
 
@@ -9,13 +9,12 @@
 > This application provides display and control of Android devices connected on USB (or [over TCP/IP](https://www.genymotion.com/blog/open-source-project-scrcpy-now-works-wirelessly/)). It does not require any *root* access. It works on *GNU/Linux*, *Windows* and *macOS*.
 
 It focuses on:
-
-* **lightness** (native, displays only the device screen)
-* **performance** (30~60fps)
-* **quality** (1920×1080 or above)
-* **low latency** ([35~70ms][lowlatency])
-* **low startup time** (~1 second to display the first image)
-* **non-intrusiveness** (nothing is left installed on the device)
+ - **lightness** (native, displays only the device screen)
+ - **performance** (30~60fps)
+ - **quality** (1920×1080 or above)
+ - **low latency** ([35~70ms][lowlatency])
+ - **low startup time** (~1 second to display the first image)
+ - **non-intrusiveness** (nothing is left installed on the device)
 
 [lowlatency]: https://github.com/Genymobile/scrcpy/pull/646
 
@@ -59,8 +58,8 @@ For Gentoo, an [Ebuild] is available: [`scrcpy/`][ebuild-link].
 For Windows, for simplicity, prebuilt archives with all the dependencies
 (including `adb`) are available:
 
-- [`scrcpy-win32-v1.11.zip`][direct-win32]  
-- [`scrcpy-win64-v1.11.zip`][direct-win64]  
+ - [`scrcpy-win32-v1.11.zip`][direct-win32]  
+ - [`scrcpy-win64-v1.11.zip`][direct-win64]  
 
 [direct-win32]: https://github.com/Genymobile/scrcpy/releases/download/v1.11/scrcpy-win32-v1.11.zip
 [direct-win64]: https://github.com/Genymobile/scrcpy/releases/download/v1.11/scrcpy-win64-v1.11.zip
@@ -114,8 +113,7 @@ scrcpy -m 1024  # short version
 The other dimension is computed to that the device aspect ratio is preserved.
 That way, a device in 1920×1080 will be mirrored at 1024×576.
 
-#### Change bit-rate 修改视频码率
-
+#### Change bit-rate 修改视频码率	
 The default bit-rate is 8 Mbps. To change the video bitrate (e.g. to 2 Mbps):
 
 ```bash
@@ -124,7 +122,6 @@ scrcpy -b 2M  # short version
 ```
 
 #### Limit frame rate 限制帧率
-
 On devices with Android >= 10, the capture frame rate can be limited:
 
 ```bash
@@ -321,14 +318,13 @@ Note that it only shows _physical_ touches (with the finger on the device).
 ### Input control 输入控制
 
 #### Copy-paste
-
 可以在计算机和设备之间双向同步剪贴板
 It is possible to synchronize clipboards between the computer and the device, in
 both directions:
 
-- `Ctrl`+`c` copies the device clipboard to the computer clipboard将设备剪贴板复制到计算机剪贴板;
-- `Ctrl`+`Shift`+`v` copies the computer clipboard to the device clipboard将计算机剪贴板复制到设备剪贴板;
-- `Ctrl`+`v` _pastes_ the computer clipboard as a sequence of text events (but breaks non-ASCII characters)将计算机剪贴板粘贴为一系列文本事件(但
+ - `Ctrl`+`c` copies the device clipboard to the computer clipboard将设备剪贴板复制到计算机剪贴板;
+ - `Ctrl`+`Shift`+`v` copies the computer clipboard to the device clipboard将计算机剪贴板复制到设备剪贴板;
+ - `Ctrl`+`v` _pastes_ the computer clipboard as a sequence of text events (but breaks non-ASCII characters)将计算机剪贴板粘贴为一系列文本事件(但
 
 中断非 ascii 字符)。.
 
@@ -425,7 +421,6 @@ To override the path of the `scrcpy-server` file, configure its path in
 [`strcpy`]: http://man7.org/linux/man-pages/man3/strcpy.3.html
 
 ## scrcpy/issues
-
 https://github.com/Genymobile/scrcpy/issues
 If you have a bug or an idea, browse the open issues before opening a new one. You can also take a look at the [Open Source Guide](https://opensource.guide/ "Learn about Open Source and how to contribute").
 

@@ -1,0 +1,31 @@
+## Eyes Relax (仅适用于 Win)
+
+Eyes Relax顾名思义就是眼睛放松，一款专业的定时提醒休息保护视力软件，用户可以设置休息时间到规定的时间便会弹出休息提醒，支持定时提醒的时长和次数设置，还可根据自己的喜好设置屏保，防止视觉疲劳，保护眼睛。
+![](https://upload-images.jianshu.io/upload_images/1662509-219779c24b37a708.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
+## [f.lux][2]-全天候保护眼睛健康软件 (适用于 Win & Mac)
+
+> it makes the color of your computer's display adapt to the time of day, warm at night and like sunlight during the day.
+It's even possible that you're staying up too late because of your computer. You could use f.lux because it makes you sleep better, or you could just use it just because it makes your computer look better.
+软件界面启动后，我们先点击右上角的“change settings” 按钮来到设置选项卡。
+
+![f.lux 设置](http://upload-images.jianshu.io/upload_images/1662509-2b862a7c5ce38d39.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+1. 用来调节白天和晚上的屏幕亮度，大家可以自行感受一下不多赘述了（可能大家会觉得 软件调出来的颜色很黄（但不暴力），不过由于屏幕颜色是**随着当地时间的变化而循环渐变**的，实际笔者1年实际使用感觉过渡很自然不突兀。）
+2. 是设置当前的地理位置（[f.lux](http://www.iplaysoft.com/flux.html) 以此来推算出当地现在时间的），是整个软件能否正常工作的关键哦~
+3. 是设置屏幕渐变的速度，分为“快（20s）”和“慢（1小时）”，推荐使用Vista及以上系统的朋友选择慢速渐变，效果非常自然平滑。但是根据一些用户的使用反馈，XP下慢速选项是有BUG的只能退而选快速变换（笔者周围没有XP的系统了，故没法测试。）
+全部设置完后，点击界面右上角的“Done”保存设置。现在在软件主界面上 你可以双击曲线图来预览24小时色温变化~还是挺有趣挺贴心的功能哦？
+
+知识普及：色温 (摘自整理于百度百科)
+色温是表示光源光谱质量最通用的指标。一般用Tc表示。色温是按绝对黑体来定义的，光源的辐射在可见区和绝对黑体的辐射完全相同时，此时黑体的温度就称此光源的色温。
+高色温光源照射下，如亮度不高则给人们有一种阴冷的气氛；低色温光源照射下，亮度过高会给人们有一种闷热感觉。光色的对比：在同一空间使用两种光色差很大的光源，其对比将会出现层次效果，光色对比大时，在获得亮度层次的同时，又可获得光色的层次。
+![色温](http://upload-images.jianshu.io/upload_images/1662509-fef2aaa87569daca.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)笔记本默认色温是 5600K，现在这样想想到了晚上，会不会太刺眼了点~
+题外话
+对于每天必须面对着屏幕的广大苦逼 IT 人士，或是不玩电脑会死星人们来说，相信没有什么比这款软件更值得下载的了！笔者强烈地认为，f.lux [开发](http://www.iplaysoft.com/tag/%E5%BC%80%E5%8F%91)的初衷并不是想要延长各位使用电脑的时间，而是在不得不面对电脑的时间内尽量减少屏幕对眼睛的伤害，每天仍然要控制好盯着电脑的时间。况且，没有什么比每2，3个小时休息一下眼睛或者和亲人朋友去外面看看绿色散散步更好的[保护](http://www.iplaysoft.com/tag/%E4%BF%9D%E6%8A%A4)方法了
+
+## 参考
+
+[f.lux - 全天候保护眼睛健康软件！自动调整屏幕色温减少蓝光防疲劳，长时间玩电脑必备！ | 异次元软件下载](https://www.iplaysoft.com/flux.html)
+
+[2]: https://justgetflux.com/

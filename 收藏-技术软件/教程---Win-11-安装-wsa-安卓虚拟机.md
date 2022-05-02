@@ -4,16 +4,15 @@ Windows Subsystem for Android 可用于 Windows 11 上的公共预览版。
 
 你的设备必须满足以下特定要求：[设备要求](https://support.microsoft.com/windows/f8d0abb5-44ad-47d8-b9fb-ad6b1459ff6c)。
 
-目前已知可运行在 Intel、AMD 和 Qualcomm 平台且符合条件的设备上。
+目前已知可运行在 Intel（英特尔）、AMD 和 Qualcomm(高通) 平台且符合条件的设备上。
 
->  备注
-> Windows 上的 Amazon Appstore 目前仅在美国提供 - 需要使用此软件才能在 Windows 11 上运行 Android 应用。简而言之，设置-时间和语言-语言和区域-国家或地区请选择美国。
+由于 Windows 11 和 与之对应的 Amazon Appstore 目前仅在美国提供。简而言之，要抢先体验安卓子系统，需要在设置里面，选择“时间和语言”-“语言和区域”-“国家或地区”选择美国后重启计算机。
 
 ## 安装 Android 子系统
 
 有两种方式可以安装 Android 子系统：
 
-打开 Microsoft Store 应用程序并搜索 Amazon Appstore。选择 获取 并安装它。在安装过程中，适用于 Android 的 Windows 子系统将安装在您的 PC 上。
+打开 Microsoft Store 应用程序（美国地区）并搜索 Amazon Appstore。选择 获取 并安装它。在安装过程中，适用于 Android 的 Windows 子系统将安装在您的 PC 上。
 
 在 Microsoft Store 上搜索移动应用。Amazon Appstore 和适用于 Android 的 Windows 子系统将在安装移动应用程序之前安装。
 

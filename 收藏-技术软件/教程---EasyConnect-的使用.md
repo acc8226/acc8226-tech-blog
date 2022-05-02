@@ -4,7 +4,7 @@
 EasyConnect下载链接   //后面的IP是服务端的IP地址，如果是域名直接在IP处填写域名
 M5.0-M7.0版本： [https://IP/com/install.exe](https://ip/com/install.exe)
 M7.1之后版本： [https://IP/com/EasyConnectInstaller.exe](https://ip/com/EasyConnectInstaller.exe)
-*   登录异常，请下载 SSL VPN 诊断修复工具 进行修复
+* 登录异常，请下载 SSL VPN 诊断修复工具 进行修复
 http://download.sangfor.com.cn/download/product/sslvpn/SangforHelperToolInstaller.exe
 
 ## 选择对应的分配方式
@@ -38,4 +38,4 @@ http://download.sangfor.com.cn/download/product/sslvpn/SangforHelperToolInstalle
 ## 参考
 
 EasyConnect虚拟IP地址未分配 - SSL VPN/EMM - 深信服社区
-https://bbs.sangfor.com.cn/forum.php?mod=viewthread&tid=64518
+<https://bbs.sangfor.com.cn/forum.php?mod=viewthread&tid=64518>
