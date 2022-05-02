@@ -6,7 +6,8 @@
 
 这是我于20200210当天购买的店铺地址 [沫沫苹果的taobao店](https://shop344941029.taobao.com/search.htm?search=y), 一共花了388大洋. 我是支持正版的.
 
-## 安装 parallels desktop15
+## 安装 parallels desktop 15
+
 下载 Parallels Desktop 15 for Mac
 [https://www.parallels.com/cn/products/desktop/download/](https://www.parallels.com/cn/products/desktop/download/)
 
@@ -28,9 +29,6 @@ win10官网下载地址
 https://www.bilibili.com/video/av37703179/?spm_id_from=333.788.videocard.2
 
 ## 参考
+
 Parallels Desktop 15 中文版下载 - Mac 系统最强虚拟机！(支持Win10/macOS Catalina) - 异次元软件世界
-https://www.iplaysoft.com/parallels-desktop.html
-
-
-
-
+<https://www.iplaysoft.com/parallels-desktop.html>
