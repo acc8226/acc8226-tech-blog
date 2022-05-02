@@ -17,21 +17,21 @@ http://download.sangfor.com.cn/download/product/sslvpn/SangforHelperToolInstalle
 
 1、计算机管理-设备管理-网络适配器中检查虚拟网卡是否安装成功
 
-![](https://upload-images.jianshu.io/upload_images/1662509-183711ed7a5b6f85.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![图ec检查虚拟网卡是否安装成功](./图ec检查虚拟网卡是否安装成功.png)
 
 2、在网络连接中检查虚拟网卡是否被禁用
 
-![](https://upload-images.jianshu.io/upload_images/1662509-f09aa7cc346b477b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![图ec检查虚拟网卡是否被禁用](./图ec检查虚拟网卡是否被禁用.png)
 
 3、下载诊断工具诊断看是否有异常，如有异常需要进行修复
 
 诊断工具下载链接：[http://download.sangfor.com.cn/d ... erToolInstaller.exe](http://download.sangfor.com.cn/download/product/sslvpn/SangforHelperToolInstaller.exe)
 
-![](https://upload-images.jianshu.io/upload_images/1662509-1a6f0c8da3e33a09.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![图ec下载](./图ec下载.png)
 
 4、卸载虚拟网卡驱动重新安装，虚拟网卡，到计算机管理-设备管理-网络适配器中找到Sangfor ssl vpn的虚拟网卡驱动，然后右键卸载，卸载后可以通过诊断工具修复或者卸载EasyConnect重新安装
 
-![](https://upload-images.jianshu.io/upload_images/1662509-20a4b319a67b00b5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![图ec检测驱动](./图ec检测驱动.png)
 
 > 这个扫描工具相对而言比我试过的其他工具要更好使。如果还是不行，尝试查看自己的网络适配器是否被一些软件添加过一些奇怪的协议导致虚拟IP地址一分配则立马断开了。
 
