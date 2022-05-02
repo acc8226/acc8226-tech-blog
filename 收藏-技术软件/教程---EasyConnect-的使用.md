@@ -11,7 +11,7 @@ http://download.sangfor.com.cn/download/product/sslvpn/SangforHelperToolInstalle
 
 这里使用“账号”进行分配的服务器地址，以及用户名和密码
 
-![](https://upload-images.jianshu.io/upload_images/1662509-fcdb9c41747d895e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![图ec 录入用户名和密码](./图ec录入用户名和密码.png)
 
 ## 问题：EasyConnect虚拟IP地址未分配
 
