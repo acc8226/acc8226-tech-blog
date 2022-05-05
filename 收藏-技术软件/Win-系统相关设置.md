@@ -7,7 +7,6 @@ colortool.exe -b OneHalfDark.itermcolors
 ```
 
 当然还可以手动修改字体样式
-
 ![手动修改字体样式](./Win-系统相关设置/手动修改字体样式.png)
 
 ## 修改 host 文件

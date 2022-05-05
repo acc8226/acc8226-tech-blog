@@ -12,7 +12,7 @@ https://www.amazon.cn/gp/help/customer/display.html/ref=hp_200127470_paperwhite?
 > 1. 将新的更新文件从电脑拖入Kindle驱动器“根目录”下（和 documents 文件夹同级）
 (重要： 不要将更新文件拖入Kindle驱动器中的任何文件夹中。)
 > 2. 文件传输成功后，从电脑上安全断开Kindle的连接。
-> 3. 从Kindle和计算机上断开USB连接线的连接。 
+> 3. 从Kindle和计算机上断开USB连接线的连接。
 > 4. 开始软件更新
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-2397012b41520c53.gif?imageMogr2/auto-orient/strip)
@@ -25,6 +25,7 @@ https://www.amazon.cn/gp/help/customer/display.html/ref=hp_200127470_paperwhite?
 通过Kindle个人文档服务，您可以免费将部分类型的文档直接发送至已注册的亚马逊Z.cn帐户的Fire平板电脑、Kindlle电子书阅读器和支持的Kindle阅读软件。您可以通过授权的电子邮箱发送这些文档。
 
 Kindle个人文档服务与以下设备兼容：
+
 * Fire平板电脑
 * Kindle电子书阅读器
 * Kindle iPhone/iPad/iPod touch阅读软件
@@ -44,9 +45,10 @@ Kindle个人文档服务与以下设备兼容：
  [将文档发送至您的Fire平板电脑或Kindle电子书阅读器](https://www.amazon.cn/gp/help/customer/display.html/ref=hp_bc_nav?ie=UTF8&nodeId=201238330)›
 
 ### 如何添加电子邮箱，以从其接受文档
+
 您只能通过已添加至【管理我的内容和设备】中的【已认可的发件人电子邮箱列表】的电子邮箱来接收文档。
 
-添加已认可的发件人电子邮箱： 
+添加已认可的发件人电子邮箱：
 
 1. 转至[管理我的内容和设备](https://www.amazon.cn/manageyourkindle)。
 2. 在【设置】中，向下滚动至【个人文档设置】。

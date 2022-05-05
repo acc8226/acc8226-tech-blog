@@ -4,7 +4,7 @@
 
 ## Host 文件所在路径
 
-```
+```text
 %WINDIR%\System32\drivers\etc
 ```
 
@@ -14,35 +14,35 @@
 
 CMD 命令：开始 -> 运行 -> 键入 cmd 或 command（在命令行里可以看到系统版本、文件系统版本） 
 
-appwiz.cpl：程序和功能 
-calc：启动计算器 
-cmd.exe：CMD 命令提示符 
-自动关机命令 
-　 Shutdown -s -t 600：表示600秒后自动关机 
-　 shutdown -a ：可取消定时关机 
-　 Shutdown -r -t 600：表示600秒后自动重启 
-control：控制面版 
-devmgmt.msc：设备管理器 
-desk.cpl：屏幕分辨率 
-diskmgmt.msc：磁盘管理 
-eventvwr：事件查看器 
-explorer：打开资源管理器 
-Firewall.cpl：Windows防火墙 
-hdwwiz.cpl：设备管理器 
-inetcpl.cpl：Internet属性 
-logoff：注销命令 
-main.cpl：鼠标属性 
-mmsys.cpl：声音 
-magnify：放大镜实用程序 
-mspaint：画图 
-Msra：Windows远程协助 
-mstsc：远程桌面连接 
-netstat : an(TC)命令检查接口 
-notepad：打开记事本 
-osk：打开屏幕键盘 
-powercfg.cpl：电源选项 
-winver：关于Windows 
-write：写字板 
+appwiz.cpl：程序和功能
+calc：启动计算器
+cmd.exe：CMD 命令提示符
+自动关机命令
+　 Shutdown -s -t 600：表示600秒后自动关机
+　 shutdown -a ：可取消定时关机
+　 Shutdown -r -t 600：表示600秒后自动重启
+control：控制面版
+devmgmt.msc：设备管理器
+desk.cpl：屏幕分辨率
+diskmgmt.msc：磁盘管理
+eventvwr：事件查看器
+explorer：打开资源管理器
+Firewall.cpl：Windows防火墙
+hdwwiz.cpl：设备管理器
+inetcpl.cpl：Internet属性
+logoff：注销命令
+main.cpl：鼠标属性
+mmsys.cpl：声音
+magnify：放大镜实用程序
+mspaint：画图
+Msra：Windows远程协助
+mstsc：远程桌面连接
+netstat : an(TC)命令检查接口
+notepad：打开记事本
+osk：打开屏幕键盘
+powercfg.cpl：电源选项
+winver：关于Windows
+write：写字板
 
 ## win10关机方式：超酷的滑动关机
 
