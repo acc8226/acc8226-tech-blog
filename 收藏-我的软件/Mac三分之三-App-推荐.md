@@ -4,8 +4,8 @@
 
 * 工具类: [搜狗输入法](https://pinyin.sogou.com/mac/): 我本来是用的是百度, 使用过程中遇到了一个小bug, 果断换回搜狗输入法.
 
-* 优化类: 腾讯柠檬清理 
-https://lemon.qq.com/
+* 优化类: 腾讯柠檬清理
+<https://lemon.qq.com/>
 
 * 办公类: WPS Office for Mac
 http://mac.wps.cn/
@@ -14,10 +14,10 @@ http://mac.wps.cn/
 
 * 影音类: 网易云音乐, 爱奇艺, 腾讯视频...
 
-* 本地视频播放器: 
+* 本地视频播放器:
 IINA - The modern media player for macOS
 https://iina.io/
-或 VLC 
+或 VLC
 或 腾讯影音
 
 ### 可选包

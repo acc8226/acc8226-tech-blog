@@ -1,13 +1,13 @@
 ## 更改 terminal / cmd 命令行工具的外观
 
-https://github.com/microsoft/terminal/releases/tag/1904.29002
+<https://github.com/microsoft/terminal/releases/tag/1904.29002>
 
 ```bat
 colortool.exe -b OneHalfDark.itermcolors
 ```
 
 当然还可以手动修改字体样式
-![](https://upload-images.jianshu.io/upload_images/1662509-f9abf4fd3ff1da3d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![手动修改字体样式](./Win-系统相关设置/手动修改字体样式.png)
 
 ## 修改 host 文件
 
@@ -27,7 +27,7 @@ GitHub - **microsoft/terminal**: The new Windows Terminal and the original Windo
 https://github.com/microsoft/terminal
 
 微软 **PowerToys** 小工具合集 - 免费给 Win10 加装各种增强新功能的效率利器 - 异次元软件下载
-https://www.iplaysoft.com/powertoys.html
+<https://www.iplaysoft.com/powertoys.html>
 
 ### NetSpeedMonitor - 一款监控 windows 的网速监控软件
 
@@ -36,4 +36,4 @@ https://www.iplaysoft.com/powertoys.html
 > NetSpeedMonitor 是一个免费的实用工具，你可以使用它来观察你的网络连接速度。在它的帮助下，您可以跟踪网络问题，分析传输的数据量，并查看每月的流量统计数据。Florian Gilles 开发的轻量级 Windows 软件易于使用，并允许您直接从任务栏查看下载和上传速度。
 
 NetSpeedMonitor
-https://netspeedmonitor64.en.softonic.com/
+<https://netspeedmonitor64.en.softonic.com/>
