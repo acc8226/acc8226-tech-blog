@@ -1,4 +1,4 @@
-JetLinks  是一个开源物联网平台。
+JetLinks 是一个开源物联网平台。
 
 在线演示地址: [http://demo.jetlinks.cn (opens new window)](http://demo.jetlinks.cn/)
 用户名:`test`

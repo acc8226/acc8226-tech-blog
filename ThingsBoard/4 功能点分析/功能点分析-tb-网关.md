@@ -8,7 +8,7 @@ The IoT Gateway 是一个基于 Linux 的支持 **Python 3.7+** 的微机上运�
 
 对平台来说网关是一个设备：只不过网关的消息体和其他设备不一样，网关监听的是消息代理发送的消息。针对 MQTT 来说，网关只不过选择性监听了 topic，构建了一个映射 “map” 关系。
 
-![网关架构](./img1.png)
+![网关架构](./功能点分析-tb-网关/img1.png)
 
 ## 网关安装
 
@@ -393,7 +393,6 @@ attributeRequests 配置允许配置相应的属性请求和响应消息的格�
 "valueExpression": "{\"${attributeKey}\":\"${attributeValue}\"}" JSON-path 表达式用于创建将发送到主题的消息数据。
 ```
 
-
 ## 模拟实现具体应用场景
 
 ## 故障排除
@@ -410,7 +409,7 @@ ThingsBoard 日志存储在以下目录中:
 
 #### 激活日志功能和设置日志记录级别
 
-![add-shared-attributes-gateway](./add-shared-attributes-gateway.png)
+![add-shared-attributes-gateway](./功能点分析-tb-网关/add-shared-attributes-gateway.png)
 
 在添加共享属性窗口中，
 The name field 必须选择 RemoteLoggingLevel
@@ -425,20 +424,20 @@ The value field 用于设置日志打印级别, 可选值如下:
  NONE
  ```
 
- ![add-remote-logging-level-attribute-1](./add-remote-logging-level-attribute-1.png)
+ ![add-remote-logging-level-attribute-1](./功能点分析-tb-网关/add-remote-logging-level-attribute-1.png)
 
 打开网关设备的 Latest telemetry 标签页，你将看见新添加的 telemetry key – LOGS。
 
 #### 在 dashboard 中显示日志
 
 1\. Check LOGS key and click “Show on widget” button:
-![show-logs-on-widget](./show-logs-on-widget.png)
+![show-logs-on-widget](./功能点分析-tb-网关/show-logs-on-widget.png)
 
 2\. We will use the default Cards widget:
-![add-logs-to-dashboard](add-logs-to-dashboard.png)
+![add-logs-to-dashboard](./功能点分析-tb-网关/add-logs-to-dashboard.png)
 
 3\. Choose Timeseries table Card widget and add it to the Dashboard. It can be either the new one or the existing dashboard.
-![create-new-dashboard-for-logs](create-new-dashboard-for-logs.png)
+![create-new-dashboard-for-logs](./功能点分析-tb-网关/create-new-dashboard-for-logs.png)
 
 ### 服务端 RPC
 
@@ -510,7 +509,7 @@ gateway_reboot 60
 
 1\. you should add or change parameter remoteShell to true in the section thingsboard in the general configuration file (tb_gateway.yaml);
 
-![charhe-remote-shell-parameter](./charhe-remote-shell-parameter.png)
+![charhe-remote-shell-parameter](./功能点分析-tb-网关/charhe-remote-shell-parameter.png)
 
 > 警告: 此功能可能会导致您的设备的安全问题，我们强烈建议只使用 ssl 加密，如果您不需要，不启用它。
 
@@ -521,7 +520,7 @@ Scroll down and select RPC remote shell widget;
 Fill in required fields and same the entity. Gateway - is our gateway device;
 Now you can use the shell to control device with the gateway. For example we run ls command to get the list of files and directories in the current directory.
 
-![remote-shell-10](./remote-shell-10.png)
+![remote-shell-10](./功能点分析-tb-网关/remote-shell-10.png)
 
 ### 设备重命名/移除处理
 

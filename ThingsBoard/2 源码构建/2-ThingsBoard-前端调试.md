@@ -1,4 +1,5 @@
 ## Thingsboard 前端要点
+
 Thingsboard 是一个使用 Angular JS 框架搭建的 web SPA 架构。
 
 使用的是"@angular/cli"脚手架来搭建的。使用了 TypeScript。有部分的 React 代码，主要集中公共组件部分。
@@ -9,9 +10,9 @@ Thingsboard 是一个使用 Angular JS 框架搭建的 web SPA 架构。
 
 这里拿 ThingsBoard V3.3.4.1 的 tag 源码，要进行调试，根据项目 pom 文件中 node 使用 **v16.13.0** 版本，所以保持一致即可。目前的要求是不能高于 17。
 
-pom 文件中 yarn 指定的是 **1.22.17** 版本。因此要求此版本或者更高。正常情况下 npm install yarn -g 即可。
+pom 文件中 yarn 指定的是 **1.22.17** 版本。因此要求此版本或者更高。正常情况下 `npm install yarn -g` 即可。
 
-进入 thingsboard/ui-ngx 目录进行操作
+进入 `thingsboard/ui-ngx` 目录进行操作
 
 ````sh
 ```
@@ -289,10 +290,10 @@ self.onInit = function() {
 }
 ```
 
-编辑完成后，点击保存。 就会显示以下页面。
+编辑完成后，点击保存。
 
-这里涉及一点点 angular 的技术， 在 html 中展示一个变量需要使用 `{{变量名}}` 这种写法。 当然变量并必须被声明在 `self.ctx.$scope` 下
+这里涉及一点点 angular 的技术， 在 html 中展示一个变量需要使用 `{{变量名}}` 这种写法。 当然变量并必须被声明在 `self.ctx.$scope` 下。
 
-遍历一个数组使用 `*ngFor="let dataKeyData of testdata"` `testdata` 是 `self.ctx.$scope` 下的变量。`dataKeyData` 是每一个资源
+遍历一个数组使用 `*ngFor="let dataKeyData of testdata"` `testdata` 是 `self.ctx.$scope` 下的变量。`dataKeyData` 是每一个资源。
 
-如果你要为某一个`div`或者`button` 增加点击事件，那么就比较麻烦，需要在部件的高级功能中增加`action`。
+如果你要为某一个`div`或者`button` 增加点击事件，那么就比较麻烦，需要在部件的高级功能中增加 `action`。

@@ -3,7 +3,7 @@
 **ThingsBoard 是什么?**
 ThingsBoard 是一个开源物联网平台，可实现物联网项目的快速开发、管理和扩展。目标是提供成熟的 IoT 云或本地解决方案以此做为您的 IoT 应用程序服务端基础架构。
 
-在 IoT 平台中，ThingsBoard 是一个备受瞩目的明星项目，其点赞数高达 5K，其优秀的性能和高效的性能得到了广大开发者的认可。ThingsBoard 是用于数据收集、处理、可视化和设备管理的开源物联网平台。它通过行业标准的物联网协议 - MQTT、CoAP 和 HTTP 实现设备连接，并支持云和本地部署。Thingsboard 具有可伸缩性、容错性和性能优越的特点，因此您永远不会丢失数据。
+在 IoT 平台中，ThingsBoard 是一个备受瞩目的明星项目，其优秀的性能和高效的性能得到了广大开发者的认可。ThingsBoard 是用于数据收集、处理、可视化和设备管理的开源物联网平台。它通过行业标准的物联网协议 - MQTT、CoAP 和 HTTP 实现设备连接，并支持云和本地部署。Thingsboard 具有可伸缩性、容错性和性能优越的特点，因此您永远不会丢失数据。
 
 ### 特点
 
@@ -53,9 +53,7 @@ docker volume create mytb-data
 docker volume create mytb-logs
 ```
 
-接下来可直接运行docker：
-
-docker run -p 8080:9090 -p 1883:1883 thingsboard/tb-postgres
+接下来可直接运行 docker：
 
 ```sh
 docker run -it ^

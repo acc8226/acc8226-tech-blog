@@ -30,8 +30,8 @@ export class LogoComponent {
 
 替换文件的话，只需要替换
 
-* src/assets/logo-title_white.svg, 此图片属性中原始大小为 1536*318px，css中设置大小为 280 * 60 px。所以替换图片的过程中要最好保持固定宽高比，且高度统一为 60 px。
-* src/thinsboard.ico, 32*32px
+* src/assets/logo-title_white.svg, 此图片属性中原始大小为 1536*318px，css 中设置大小为 280 * 60 px。所以替换图片的过程中要最好保持固定宽高比，且高度统一为 60 px。
+* src/thinsboard.ico, 32 * 32px
 
 src/assets/logo-white.svg 目前没用到，删除即可。
 

@@ -57,8 +57,7 @@ docker run -p 8087:8080 -p 1599:1883 hivemq/hivemq4
 
 ## CoAP
 
-[CoAP](https://en.wikipedia.org/wiki/Constrained_Application_Protocol) 是轻量级物联网协议用于受限的设备。您可以在[此处](https://tools.ietf.org/html/rfc7252)找到有关CoAP的更多信息。CoAP协议基于 UDP，但与 HTTP 类似它使用请求-响应模型。CoAP 观察[选项](https://tools.ietf.org/html/rfc7641)允许订阅资源并接收有关资源更改的通知。
+[CoAP](https://en.wikipedia.org/wiki/Constrained_Application_Protocol) 是轻量级物联网协议用于受限的设备。您可以在[此处](https://tools.ietf.org/html/rfc7252)找到有关CoAP的更多信息。CoAP 协议基于 UDP，但与 HTTP 类似它使用请求-响应模型。CoAP 观察[选项](https://tools.ietf.org/html/rfc7641)允许订阅资源并接收有关资源更改的通知。
 
-工具 1
-coap-cli - npm
+工具 coap-cli - npm
 <https://www.npmjs.com/package/coap-cli>

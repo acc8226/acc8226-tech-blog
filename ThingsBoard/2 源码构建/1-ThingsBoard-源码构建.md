@@ -2,7 +2,7 @@
 
 本质上来说没有任何难度只要保证能通过 Maven 构建工具的命令在本地编译通过即可，其次保证有数据库就可以了，推荐用 PostgreSQL 做为开发的环境的数据库。
 
-ThingsBoard 从 3.2.2 之后需要将 JDK 更新到 11 版本。
+注意：ThingsBoard 从 3.2.2 之后需要将 JDK 更新到 11 版本。
 
 1. 拉取源码
 
@@ -12,22 +12,12 @@ git clone https://github.com/thingsboard/thingsboard.git && git checkout release
 
 或者下载指定 tag 标签所在分支。
 
-2. 预先环境
+2\. 预先环境
 JDK 11 和 maven 3.6 及其以上。此版本无需预先安装 node 和 yarn。如果需要进行前端调试，则建议安装 node 和 yarn。
 
-3. 构建打包
-
-```sh
-mvn clean install
-```
+3\. 构建打包
 
 构建打包且跳过测试
-
-```sh
-mvn clean install -DskipTests
-```
-
-在 IDEA 里 Run mvn install 没有通过，原因是 yarn 导致，我最终采用构建打包且跳过测试。
 
 ```sh
 mvn clean install -Dmaven.test.skip=true
@@ -44,6 +34,7 @@ mvn clean package -DskipTests
 
 ```sh
 ls -al
+
 -rwxr-xr-x 1 ferder 197121 180241757 Mar 23 10:44 thingsboard-3.3.4.1-boot.jar
 -rw-r--r-- 1 ferder 197121   1611307 Mar 23 10:44 thingsboard-3.3.4.1.jar
 -rw-r--r-- 1 ferder 197121 166603843 Mar 23 10:44 thingsboard-windows.zip
@@ -53,13 +44,9 @@ ls -al
 
 ## 问题总结
 
-**1. ui-ngx 构建报错**
+### 1. ui-ngx 构建报错
 
-```sh
-mvn install -Dmaven.test.skip=true -e -rf :ui-ngx
-```
-
-thingsboard-release-3.3\ui-ngx\pom.xml 版本要求一览
+请查看根据终端的报错提示。我的问题出在了 com.github.eirslett:frontend-maven-plugin 插件下载 node 和 yarn 失败。因此查看 thingsboard-release-3.3\ui-ngx\pom.xml 版本要求：
 
 ```xml
 <configuration>
@@ -68,18 +55,24 @@ thingsboard-release-3.3\ui-ngx\pom.xml 版本要求一览
 </configuration>
 ```
 
-根据终端的报错提示，问题出在了 com.github.eirslett:frontend-maven-plugin 插件下载 node 和 yarn 失败，因此手动下载 pom 文件中规定的 node 和 yarn 版本后再次重试。
+于是手动下载 pom 文件中规定的 node 和 yarn 版本。
 
 node 指定 exe 安装包到 C:\Users\ferder\.m2\repository\com\github\eirslett\node
 yarn 指定压缩包到 C:\Users\ferder\.m2\repository\com\github\eirslett\yarn
 
-**2. js-executor 构建报错，可根据终端的提示手动下载 pom 文件中规定的 node 和 yarn 版本后再次重试。或者和最新的保持一致。**
+之后重新运行。
+
+```sh
+mvn install -Dmaven.test.skip=true -e -rf :ui-ngx
+```
+
+### js-executor 构建报错，可根据终端的提示手动下载 pom 文件中规定的 node 和 yarn 版本后再次重试。或者和最新的保持一致
 
 ```sh
 mvn install -Dmaven.test.skip=true -e -rf :js-executor
 ```
 
-**3. js-executor 再次运行后依旧报错**
+### js-executor 再次运行后依旧报错
 
 ```sh
  Failed to execute goal com.github.eirslett:frontend-maven-plugin:1.12.0:yarn (yarn pkg) on project js-executor: Failed to run task: 'yarn run pkg' failed. org.apache.commons.exec.ExecuteException: Process exited with an error: 2 (Exit value: 2) -> [Help 1]
@@ -87,7 +80,7 @@ mvn install -Dmaven.test.skip=true -e -rf :js-executor
 
 根据提供的终端报错日志，查明此次原因为 `yarn run pkg` 报错
 
-```sh
+```text
 D:\zhangsan\Projects_Idea\thingsboard-release-3.3\msa\js-executor>yarn run pkg
 yarn run v1.22.18
 $ pkg -t node12-linux-x64,node12-win-x64 --out-path ./target . && node install.js
@@ -103,7 +96,7 @@ info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this comm
 ```
 
 原因：本地缓存缺少文件
-解决方法：下载地址：https://github.com/zeit/pkg-fetch/releases 。
+解决方法：下载地址：<https://github.com/zeit/pkg-fetch/releases> 。
 
 前往 github 下载对应文件
 
@@ -113,7 +106,7 @@ info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this comm
 
 并重命名，并放到对于目录 `C:\Users\ferder\.pkg-cache\v3.2`。
 
-```
+```text
 fetched-v12.22.2-linux-x64
 fetched-v12.22.2-win-x64
 ```
@@ -128,7 +121,7 @@ fetched-v12.22.2-win-x64
 
 举例本机所在目录
 
-```
+```text
 D:\alee\Projects_Idea\thingsboard-release-3.3\application\target\windows
 ```
 
@@ -151,7 +144,7 @@ PostgreSQL，此处需要使用 PostgreSQL 11.X 及以上版本。
 > 参考 Maven 常用命令 - 构建反应堆中指定模块_jason5186 的博客-CSDN博客
 <https://blog.csdn.net/jason5186/article/details/39530087>
 >
-> mvn -h 可以看到很多命令及其用途；
+> 通过查看 mvn -h命令，可以了解其他命令及其用途；
 -am --also-make 同时构建所列模块的依赖模块；
 -amd -also-make-dependents 同时构建依赖于所列模块的模块；
 -pl --projects `<arg>` 构建制定的模块，模块间用逗号分隔；
