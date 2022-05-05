@@ -1,12 +1,12 @@
 ## ThingsBoard 网关
 
-为了将您的物联网网关连接到 ThingsBoard 服务器，您需要首先提供网关凭据。我们将使用访问令牌凭证作为最简单的凭证。有关详细信息，请参阅设备身份验证选项。
-
 The IoT Gateway 是一个基于 Linux 的支持 **Python 3.7+** 的微机上运行的软件组件。
+
+为了将您的物联网网关连接到 ThingsBoard 服务器，您需要首先提供网关凭据。我们将使用访问令牌凭证作为最简单的凭证。有关详细信息，请参阅设备身份验证选项。
 
 ## 网关架构
 
-对平台来说网关是一个设备：只不过网关的消息体和其他设备不一样，网关监听的是消息代理发送的消息。针对 MQTT 来说，网关只不过选择性监听了 topic，构建了一个映射 map 关系。
+对平台来说网关是一个设备：只不过网关的消息体和其他设备不一样，网关监听的是消息代理发送的消息。针对 MQTT 来说，网关只不过选择性监听了topic，构建了一个映射 map 关系。
 
 ![网关架构](./功能点分析-tb-网关/img1.png)
 
@@ -63,7 +63,7 @@ python3 ./thingsboard_gateway/tb_gateway.py
 
 解决方案：尝试升级 protobuf 包`pip install --upgrade protobuf`
 
-### 通过 docker 安装网关
+### 方案二：通过 docker 安装网关
 
 Linux or Mac 用户:
 
@@ -88,17 +88,21 @@ docker run -it ^
 thingsboard/tb-gateway
 ```
 
-目录说明：
+目录结构说明：
 
 * 配置文件 config
 * 日志文件 logs
 * 拓展支持文件 extensions。
 
+### 方案三：通过 Linux 安装包的方式进行安装
+
+等待二次开发后再进行验证。。。
+
 ## 配置指南
 
-### 目录结构
+### 目录结构说明
 
-请在下面查看默认目录结构。
+分别为 config, logs 和 extensions 三大块的内容。
 
 ```text
 /etc/thingsboard-gateway/config  - Configuration folder.
@@ -118,10 +122,10 @@ thingsboard/tb-gateway
         __init__.py                     - Default python package file, needed for correct imports.
         custom_uplink_mqtt_converter.py - Custom Mqtt converter example.
     ...
-    opcua        - Folder for OPC-UA custom connectors/converters.
-    ble          - Folder for BLE custom connectors/converters.
-    request      - Folder for Request custom connectors/converters.
-    can          - Folder for CAN custom connectors/converters.
+    opcua   - Folder for OPC-UA custom connectors/converters.
+    ble     - Folder for BLE custom connectors/converters.
+    request - Folder for Request custom connectors/converters.
+    can     - Folder for CAN custom connectors/converters.
 
 /var/log/thingsboard-gateway    - Logs folder
     connector.log               - Connector logs.
@@ -130,16 +134,16 @@ thingsboard/tb-gateway
     tb_connection.log           - Logs for connection to the ThingsBoard instance.
 ```
 
-## config/tb_gateway.yml 配置
+### config/tb_gateway.yml 配置
 
-### 通用配置
+#### 通用配置
 
 由于要映射到 docker 容器中。
 host 是 thingsboard 的 ip 地址，port 是 thingsboard 的 MQTT 的 port 端口。所以在宿主机中配置 host 为 host.docker.internal。
 port 是 thingsboard 的 MQTT 的 port 端口。端口为 tb 中正在使用的 1883。
 accessToken 是网关的口令，拷贝设备网关的 token 即可。
 
-### MQTT Connector 配置
+#### MQTT Connector 配置
 
 这里我只启用 mqtt 选项。
 
@@ -192,8 +196,8 @@ connectors:
 
 ```sh
 docker run \
--p 8087:8080 \
 -p 1599:1883 \
+-p 8087:8080 \
 hivemq/hivemq4
 ```
 
@@ -352,16 +356,12 @@ hivemq 的 web 控制台，地址为 <http://localhost:8087>。
 
 这里面最主要的是 broker 这段。host 就是 hivemq 的ip 地址，port 是 hivemq 的 port 端口。security 是默认的安全配置，官网推荐的是 basic。
 
-我们通过 mqtt.js 进行客户端请求发送。
-
-可以看到我们通过网关将我们配置的设备信息已经显示到 thingsboard 中去了。
-
-### 字段说明
+### config/mqtt.json 配置
 
 deviceNameJsonExpression 设备名称
 deviceTypeJsonExpression 设备类型，作为 Device profile
 
-### connectRequests 说明
+#### connectRequests 说明
 
 ThingsBoard 允许向设备发送关于设备属性更新的 RPC 命令和通知。但是为了发送它们，平台需要知道目标设备是否连接，以及目前使用哪个网关或会话连接设备。
 如果你的设备不断地发送遥测数据，那么 ThingsBoard 已经知道如何推送通知。
@@ -370,20 +370,34 @@ ThingsBoard 允许向设备发送关于设备属性更新的 RPC 命令和通知
 举例
 
 ```sh
-mosquitto_pub -h YOUR_MQTT_BROKER_HOST -p YOUR_MQTT_BROKER_PORT -t "sensors/connect" -m '{"serialNumber":"SN-001"}'
-mosquitto_pub -h YOUR_MQTT_BROKER_HOST -p YOUR_MQTT_BROKER_PORT -t "sensor/SN-001/connect" -m ''
+mosquitto_pub -h YOUR_MQTT_BROKER_HOST \
+-p YOUR_MQTT_BROKER_PORT \
+-t "sensors/connect" -m '{"serialNumber":"SN-001"}'
 ```
 
-### disconnectRequest 说明
+或
+
+```sh
+mosquitto_pub -h YOUR_MQTT_BROKER_HOST \
+-p YOUR_MQTT_BROKER_PORT \
+-t "sensor/SN-001/connect" -m ''
+```
+
+#### disconnectRequest 说明
 
 此配置部分是可选的。 本节提供的配置将用于从代理获取有关断开设备的信息。 如果您的设备仅与MQTT代理断开连接并等待commands/updates，则需要向网关发送消息，并通知设备已与代理断开连接。
 
 ```sh
-mosquitto_pub -h YOUR_MQTT_BROKER_HOST -p YOUR_MQTT_BROKER_PORT -t "sensors/disconnect" -m '{"serialNumber":"SN-001"}'
-mosquitto_pub -h YOUR_MQTT_BROKER_HOST -p YOUR_MQTT_BROKER_PORT -t "sensor/SN-001/disconnect" -m '
+mosquitto_pub -h YOUR_MQTT_BROKER_HOST \
+-p YOUR_MQTT_BROKER_PORT \
+-t "sensors/disconnect" -m '{"serialNumber":"SN-001"}'
+
+mosquitto_pub -h YOUR_MQTT_BROKER_HOST \
+-p YOUR_MQTT_BROKER_PORT \
+-t "sensor/SN-001/disconnect" -m '
 ```
 
-### attributeUpdates 说明
+#### attributeUpdates 说明
 
 此配置部分是可选的。 ThingsBoard允许供应设备属性，并从设备应用程序中获取其中的一些属性。 您可以将此视为设备的远程配置。您的设备能够从 ThingsBoard 请求共享属性。 有关更多详细信息，请参见用户指南。
 
@@ -397,6 +411,10 @@ attributeRequests 配置允许配置相应的属性请求和响应消息的格�
 "valueExpression": "{\"${attributeKey}\":\"${attributeValue}\"}" JSON-path 表达式用于创建将发送到主题的消息数据。
 ```
 
+我们通过 mqtt.js 进行客户端请求发送。
+
+如果不出意外，我们将发现网关已将我们配置的设备信息已经显示到 thingsboard 中去了。
+
 ## 模拟实现具体应用场景
 
 ## 故障排除
@@ -405,7 +423,10 @@ ThingsBoard 日志存储在以下目录中:
 **/var/log/thingsboard**
 
 你可以发出以下命令以检查后端是否有任何错误:
-`cat /var/log/thingsboard/thingsboard.log | grep ERROR`
+
+```sh
+cat /var/log/thingsboard/thingsboard.log | grep ERROR
+```
 
 ## 网关产品特点
 
@@ -426,9 +447,9 @@ The value field 用于设置日志打印级别, 可选值如下:
  ERROR
  CRITICAL
  NONE
- ```
+```
 
- ![add-remote-logging-level-attribute-1](./功能点分析-tb-网关/add-remote-logging-level-attribute-1.png)
+![add-remote-logging-level-attribute-1](./功能点分析-tb-网关/add-remote-logging-level-attribute-1.png)
 
 打开网关设备的 Latest telemetry 标签页，你将看见新添加的 telemetry key – LOGS。
 
@@ -507,9 +528,7 @@ Command:
 gateway_reboot 60
 ```
 
-### 远程 shell
-
-#### 步骤一 激活远程 shell
+### 激活远程 shell
 
 1\. you should add or change parameter remoteShell to true in the section thingsboard in the general configuration file (tb_gateway.yaml);
 

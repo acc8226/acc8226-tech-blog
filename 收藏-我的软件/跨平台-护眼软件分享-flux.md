@@ -1,6 +1,7 @@
 ## Eyes Relax (仅适用于 Win)
 
 Eyes Relax顾名思义就是眼睛放松，一款专业的定时提醒休息保护视力软件，用户可以设置休息时间到规定的时间便会弹出休息提醒，支持定时提醒的时长和次数设置，还可根据自己的喜好设置屏保，防止视觉疲劳，保护眼睛。
+
 ![](https://upload-images.jianshu.io/upload_images/1662509-219779c24b37a708.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## [f.lux][2]-全天候保护眼睛健康软件 (适用于 Win & Mac)
