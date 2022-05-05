@@ -6,7 +6,7 @@ The IoT Gateway 是一个基于 Linux 的支持 **Python 3.7+** 的微机上运�
 
 ## 网关架构
 
-对平台来说网关是一个设备：只不过网关的消息体和其他设备不一样，网关监听的是消息代理发送的消息。针对 MQTT 来说，网关只不过选择性监听了 topic，构建了一个映射 “map” 关系。
+对平台来说网关是一个设备：只不过网关的消息体和其他设备不一样，网关监听的是消息代理发送的消息。针对 MQTT 来说，网关只不过选择性监听了 topic，构建了一个映射 map 关系。
 
 ![网关架构](./功能点分析-tb-网关/img1.png)
 
@@ -37,7 +37,7 @@ curl -LJO https://github.com/thingsboard/thingsboard-gateway/archive/refs/tags/3
 cd thingsboard-gateway
 ```
 
-**4\. 在项目根目录，使用 setup.py 脚本安装 python 模块：**
+**4\. 进入项目根目录，使用 setup.py 脚本安装 python 模块：**
 
 ```sh
 python3 setup.py install
@@ -50,7 +50,7 @@ mkdir logs
 ```
 
 **6\. 将网关配置为与您的 ThingsBoard 平台实例一起使用**
-选择并配置 connector 连接器。
+这一步需要自行配置 connector 连接器。
 
 **7\. 运行网关，检查安装结果：**
 
@@ -61,11 +61,11 @@ python3 ./thingsboard_gateway/tb_gateway.py
 **期间遇到问题**
 运行报错 AttributeError: module 'google.protobuf.descriptor' has no attribute '_internal_create_key'
 
-解决方案：try the next command `pip install --upgrade protobuf`
+解决方案：尝试升级 protobuf 包`pip install --upgrade protobuf`
 
 ### 通过 docker 安装网关
 
-linux or mac use:
+Linux or Mac 用户:
 
 ```sh
 docker run -it \
@@ -77,7 +77,7 @@ docker run -it \
 thingsboard/tb-gateway
 ```
 
-windows use:
+Windows 用户:
 
 ```bat
 docker run -it ^
@@ -130,14 +130,18 @@ thingsboard/tb-gateway
     tb_connection.log           - Logs for connection to the ThingsBoard instance.
 ```
 
-## MQTT Connector
+## config/tb_gateway.yml 配置
 
-配置文件 config/tb_gateway.yml。
+### 通用配置
 
-host 是 thingsboard 的 ip 地址，port 是 thingsboard 的 MQTT 的 port 端口。这里由于要映射到 docker 容器中，所以在宿主机中配置 host 为 host.docker.internal，端口为 tb 中正在使用的 1883。
+由于要映射到 docker 容器中。
+host 是 thingsboard 的 ip 地址，port 是 thingsboard 的 MQTT 的 port 端口。所以在宿主机中配置 host 为 host.docker.internal。
+port 是 thingsboard 的 MQTT 的 port 端口。端口为 tb 中正在使用的 1883。
 accessToken 是网关的口令，拷贝设备网关的 token 即可。
 
-配置 connectors 只启用 mqtt。
+### MQTT Connector 配置
+
+这里我只启用 mqtt 选项。
 
 ```yml
 thingsboard:

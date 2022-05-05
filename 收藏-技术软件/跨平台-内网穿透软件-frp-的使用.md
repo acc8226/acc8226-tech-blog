@@ -8,6 +8,7 @@ https://github.com/fatedier/frp
 将 **frpc** 及 **frpc.ini** 放到处于内网环境的机器上。
 
 ### 通过 ssh 访问公司内网机器
+
 1. 修改 frps.ini 文件，这里使用了最简化的配置：
 
 ```ini
@@ -16,13 +17,13 @@ https://github.com/fatedier/frp
 bind_port = 7000
 ```
 
-2. 启动 frps：
+2\. 启动 frps：
 
 ```sh
 ./frps -c ./frps.ini
 ```
 
-3. 修改 frpc.ini 文件，假设 frps 所在服务器的公网 IP 为 x.x.x.x；
+3\. 修改 frpc.ini 文件，假设 frps 所在服务器的公网 IP 为 x.x.x.x；
 
 ```ini
 # frpc.ini
@@ -37,13 +38,13 @@ local_port = 22
 remote_port = 6000
 ```
 
-4. 启动 frpc：
+4\. 启动 frpc：
 
 ```sh
 ./frpc -c ./frpc.ini
 ```
 
-5. 通过 ssh 访问内网机器，使用-o参数指定端口号. 假设用户名为 test：
+5\. 通过 ssh 访问内网机器，使用-o参数指定端口号. 假设用户名为 test：
 
 ```sh
 ssh -oPort=6000 test@x.x.x.x
@@ -139,7 +140,7 @@ local_port = 22
 remote_port = 6003
 ```
 
-linux：nohup 不生成 nohup.out的方法
+linux：nohup 不生成 nohup.out 的方法
 参考此用法`nohup ./program >/dev/null 2>&1 &` 
 则可以改写为 `nohup ./frps -c frps.ini >/dev/null 2>&1 &`
 

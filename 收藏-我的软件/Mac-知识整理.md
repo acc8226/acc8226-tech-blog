@@ -28,15 +28,16 @@ System Preferences，点开 Accessibility > Display，勾上 Reduce transparency
 
 启用或停用 root 用户
 
-1.  选取苹果菜单 () >“系统偏好设置”，然后点按“用户与群组”（或“帐户”）。
-2.  点按锁形图标，然后输入管理员名称和密码。
-3.  点按“登录选项”。
-4.  点按“加入”（或“编辑”）。
-5.  点按“打开目录实用工具”。
-6.  点按“目录实用工具”窗口中的锁形图标，然后输入管理员名称和密码。
-7.  从“目录实用工具”的菜单栏中：
-*   选取“编辑”>“启用 Root 用户”，然后输入要用于 root 用户的密码。
-*   或者选取“编辑”>“停用 Root 用户”。
+1. 选取苹果菜单 () >“系统偏好设置”，然后点按“用户与群组”（或“帐户”）。
+2. 点按锁形图标，然后输入管理员名称和密码。
+3. 点按“登录选项”。
+4. 点按“加入”（或“编辑”）。
+5. 点按“打开目录实用工具”。
+6. 点按“目录实用工具”窗口中的锁形图标，然后输入管理员名称和密码。
+7. 从“目录实用工具”的菜单栏中：
+
+* 选取“编辑”>“启用 Root 用户”，然后输入要用于 root 用户的密码。
+* 或者选取“编辑”>“停用 Root 用户”。
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-fe39046c1543ff67.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -53,7 +54,8 @@ System Preferences，点开 Accessibility > Display，勾上 Reduce transparency
 ## 其他事项
 
 **升级了macOS Sierra 后，command line tools 报错的问题**的处理
-```
+
+```text
 xcrun: error: invalid active developer path
  (/Library/Developer/CommandLineTools), missing xcrun at:
  /Library/Developer/CommandLineTools/usr/bin/xcrun
@@ -65,7 +67,7 @@ xcrun: error: invalid active developer path
 
 `~/.bash_profile `下这里记录我目前的配置
 
-```
+```sh
 # java
 export CLASSPATH=$JAVA_HOME/lib/tools.jar:$JAVA_HOME/lib/dt.jar:.
 # 先定义, 最终再导出也是可以的

@@ -9,8 +9,8 @@
 
 ## iOS
 
-* goodreader【付费】
-GoodReader中文版是一款阅读软件，GoodReader 中文版对于编码、印刷、分享、联网等功能也非常多。而且GoodReader中文版支持的格式非常多，如Office 文档、PDF、TXT、HTML 等几乎所有主流文档的浏览阅读，支持书签，支持横屏，支持与Dropbox等存储服务、Gmail等邮箱、Google Docs进行绑定，还可以通过无线网络使用电脑传输文件，甚至还有FTP Server功能。
+* GoodReader
+GoodReader 中文版是一款阅读软件，GoodReader 中文版对于编码、印刷、分享、联网等功能也非常多。而且GoodReader中文版支持的格式非常多，如Office 文档、PDF、TXT、HTML 等几乎所有主流文档的浏览阅读，支持书签，支持横屏，支持与Dropbox等存储服务、Gmail等邮箱、Google Docs进行绑定，还可以通过无线网络使用电脑传输文件，甚至还有FTP Server功能。
 
 * ducument【免费】
 Readdle 开发的 Documents 犹如您的文档管理中枢，文档、音乐、视频、书籍都能存储其中，您在 iPhone/iPad 上还能轻松阅读、聆听、下载、批注几乎任何文件。
@@ -24,7 +24,7 @@ Readdle 开发的 Documents 犹如您的文档管理中枢，文档、音乐、�
 因为经常要连 SCP 服务器所以电脑里有，临时访问 WebDAV 服务器并且正好有这个软件的话拿来就可以用，还是挺顺手的。缺点是大文件无法续传。
 
 WinSCP 下载地址
-https://winscp.net/eng/index.php
+<https://winscp.net/eng/index.php>
 
 * RaiDrive
 一款免费的**网盘映射工具**，可以支持将 [OneDrive](https://www.iplaysoft.com/onedrive.html)、[Dropbox](https://www.iplaysoft.com/dropbox.html)、[Google Drive](https://www.iplaysoft.com/google-drive.html)、[Google Photos](https://www.iplaysoft.com/google-photos.html) 等常见网盘以及 [FTP](https://www.iplaysoft.com/tag/ftp)、SFTP、**WebDAV** 等网络空间挂载成电脑的“本地磁盘”，让你可以像电脑本机[硬盘](https://www.iplaysoft.com/tag/%E7%A1%AC%E7%9B%98)一样操作和使用网盘里的文件。

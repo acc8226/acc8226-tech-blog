@@ -11,7 +11,7 @@
 极度扫描是一款跨平台的 OCR 工具，支持表格 / 公式识别、图片转文字，并且可以通过截图 / 拍照 / 选择图片 / PDF 等多种方式导入，轻松助你提升办公效率。
 
 下载地址
-https://jidusm.wrste.com/
+<https://jidusm.wrste.com/>
 
 > 主要是因为我有识别 mathpix 数学公式的需要。且我在当时在[数码荔枝](https://store.lizhi.io/)购买只需 30 元就可购买终生版。
 

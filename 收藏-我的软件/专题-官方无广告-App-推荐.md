@@ -6,7 +6,7 @@
 
 ### WPS专业版
 
-下载试用 - 金山WPS企业版官网，WPS Office 提供兼容、正版、适用OFFICE。
+下载试用 - 金山 WPS 企业版官网，WPS Office 提供兼容、正版、适用OFFICE。
 
 目前可直接下载 PC 版 和 安卓版。
 
@@ -18,16 +18,11 @@
 
 免费无广告。
 
-### Alook浏览器
+### Alook 浏览器
 
 iOS版本的自行去 app store 搜索（提前说明：苹果版的不免费哦）
 
 Alook浏览器 - 4倍速(alook.browser) - 应用 - 酷安 <https://www.coolapk.com/apk/alook.browser>
-
-### X浏览器
-
-小而强大
-<https://www.xbext.com/index.html>
 
 ## WinRAR 企业授权记录
 
@@ -37,6 +32,9 @@ Alook浏览器 - 4倍速(alook.browser) - 应用 - 酷安 <https://www.coolapk.c
 
 废话不多说， 主要是最近被 WinRAR 中文免费版的广告弹窗骚扰十分不爽。于是想寻求破解之道。
 
+方式一：公司电脑已预装了正版的 WinRAR
+
+方式二：
 1. 这里需下载 [非简体中午版]才生效。然后通常需要选择 64 位操作系统即可。
 
 * 英文版  [**WinRAR x64 (64 bit) 6.00**](https://www.rarlab.com/rar/winrar-x64-600.exe) 。
