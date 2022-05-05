@@ -7,6 +7,7 @@ colortool.exe -b OneHalfDark.itermcolors
 ```
 
 当然还可以手动修改字体样式
+
 ![手动修改字体样式](./Win-系统相关设置/手动修改字体样式.png)
 
 ## 修改 host 文件
@@ -24,7 +25,7 @@ C:\Windows\System32\drivers\etc\HOSTS
 ## 一些微软官方软件
 
 GitHub - **microsoft/terminal**: The new Windows Terminal and the original Windows console host, all in the same place!
-https://github.com/microsoft/terminal
+<https://github.com/microsoft/terminal>
 
 微软 **PowerToys** 小工具合集 - 免费给 Win10 加装各种增强新功能的效率利器 - 异次元软件下载
 <https://www.iplaysoft.com/powertoys.html>

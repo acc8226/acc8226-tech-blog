@@ -43,7 +43,7 @@ PSCP (PuTTY Secure Copy client)是 PuTTY 提供的文件传输工具，通过 SS
 举例: 
 pscp.exe -pw  ncl@3/Lb YourUserName@YourHostName:/abc/my.log D:\my.txt
 
-```bash
+```text
 PuTTY Secure Copy client
 Release 0.73
 Usage: pscp [options] [user@]host:source target
@@ -85,31 +85,33 @@ Options:
 1. KiTTY 全量包 https://github.com/cyd01/KiTTY/releases
 
 KiTTY 是基于 Putty 的改进版，加入了一些实用特性，可以完美替代 putty。比如记住密码自动连接等，下面是几个常用的设置，记录一下：
-* 编码设置: Window -> Translation -> Remote character set : UTF-8
 
+* 编码设置: Window -> Translation -> Remote character set : UTF-8
 * 自动登录设置: Connetcion -> Data -> Auto-login username : root
 Connetcion -> Data -> Auto-login password : password，还可以在 Command 中输入自定义要执行的命令。
 
 集成 PSCP
 kitty.ini 填入
-```
+
+```ini
 WinSCPPath=D:\xxxxx\kscp.exe
 ```
 
-2. WinSCP 下载绿色版 https://winscp.net/eng/downloads.php
+2\. WinSCP 下载绿色版 <https://winscp.net/eng/downloads.php>
 
 集成 WinSCP
 kitty.ini 填入
-```
+
+```ini
 WinSCPPath=D:\xxxx\WinSCP.exe
 ```
 
 ## 相关网址
 
 putty download
-https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
+<https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html>
 
 kitty download
- [https://github.com/cyd01/KiTTY/releases](https://github.com/cyd01/KiTTY/releases)
+<https://github.com/cyd01/KiTTY/releases>
 
-27 Best SSH clients for Windows as of 2021 - Slant https://www.slant.co/topics/149/~best-ssh-clients-for-windows#21
+27 Best SSH clients for Windows as of 2021 - Slant <https://www.slant.co/topics/149/~best-ssh-clients-for-windows#21>
