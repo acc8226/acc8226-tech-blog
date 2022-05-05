@@ -39,6 +39,7 @@ Windows Subsystem for Android 可用于 Windows 11 上的公共预览版。
 ### 连接到适用于 Android 的 Windows 子系统进行调试
 
 **连接到适用于 Android 的 Windows 子系统**
+
 1. 打开适用于 Android 的 Windows 子系统的“设置”应用，获取 IP 地址。 （使用 Windows 搜索来选择和启动。）
 2. IP 地址将显示在 IP 地址部分下。 如果没有显示 IP 地址，请启动使用 Amazon Appstore 安装的 Android 应用，然后在“设置”应用的 IP 地址按钮上选择“刷新”。
 3. 现在，你已有了用于连接到适用于 Android 的 Windows 子系统 VM 的 IP 地址，在终端或 Powershell 中，接下来可使用 adb connect（必须[安装 adb](https://developer.android.com/studio/command-line/adb)）进行连接。
