@@ -6,9 +6,9 @@ The IoT Gateway 是一个基于 Linux 的支持 **Python 3.7+** 的微机上运�
 
 ## 网关架构
 
-对平台来说网关是一个设备：只不过网关的消息体和其他设备不一样，网关监听的是消息代理发送的消息。针对 MQTT 来说，网关只不过选择性监听了topic，构建了一个映射 map 关系。
+对平台来说网关是一个设备：只不过网关的消息体和其他设备不一样，网关监听的是消息代理发送的消息。针对 MQTT 来说，网关只不过选择性监听了 topic，构建了一个映射 map 关系。
 
-![网关架构](./功能点分析-tb-网关/img1.png)
+![网关架构](./功能点分析-tb-网关/网关架构.png)
 
 ## 网关安装
 
@@ -17,7 +17,10 @@ The IoT Gateway 是一个基于 Linux 的支持 **Python 3.7+** 的微机上运�
 从源代码安装 ThingsBoard 网关您应遵循以下步骤：
 
 **1\. 使用 apt 将所需的库安装到系统中：**
-`sudo apt install python3-dev python3-pip libglib2.0-dev git`
+
+```sh
+sudo apt install python3-dev python3-pip libglib2.0-dev git
+```
 
 **2\. 克隆指定版本的网关源代码：**
 
@@ -96,7 +99,51 @@ thingsboard/tb-gateway
 
 ### 方案三：通过 Linux 安装包的方式进行安装
 
-等待二次开发后再进行验证。。。
+等待二次开发后再进行验证。
+
+## mqtt broker 选型
+
+为了搭配 mqtt Connector 使用，需要提前安装 mqtt broker.
+
+### 供测试用的 hivemq
+
+使用 docker 进行部署 hivemq：
+
+```sh
+docker run \
+-p 1599:1883 \
+-p 8087:8080 \
+hivemq/hivemq4
+```
+
+hivemq 的 web 控制台，地址为 <http://localhost:8087>。登录用户名为 admin，密码为 hivemq。
+
+### 供生产用的 EMQX 开源版
+
+获取镜像
+
+```sh
+docker pull emqx/emqx:4.4.3
+```
+
+启动容器
+
+```sh
+docker run -d --name emqx \
+-p 1889:1883 \
+-p 8081:8081 \
+-p 8083:8083 \
+-p 8084:8084 \
+-p 8883:8883 \
+-p 18083:18083 emqx/emqx:4.4.3
+```
+
+* EMQX 的 MQTT/TCP 监听端口由默认的 1883
+* EMQX 的 HTTP API 服务 http:management 默认监听 8081 端口
+* MQTT/WS 监听器的监听地址 mqtt:ws:8083
+* mqtt:wss:8084
+* MQTT TLS 的默认 mqtt:ssl 端口是 8883
+* 当 EMQX 成功运行在你的本地计算机上且 EMQX Dashboard 被默认启用时，你可以访问 <http://localhost:18083> 来查看你的 Dashboard，默认用户名是 admin，密码是 public。
 
 ## 配置指南
 
@@ -188,20 +235,7 @@ connectors:
     configuration: mqtt.json
 ```
 
-下一步配置 mqtt 远程信息，但是需要安装 mqtt broker。
-
-为了方便测试，这里我使用的是 hivemq。
-
-使用 docker 进行部署 hivemq：
-
-```sh
-docker run \
--p 1599:1883 \
--p 8087:8080 \
-hivemq/hivemq4
-```
-
-hivemq 的 web 控制台，地址为 <http://localhost:8087>。
+下一步配置 mqtt 远程信息，前提是已安装 mqtt broker。
 
 配置 gateway 中的 mqtt.json
 
@@ -370,7 +404,8 @@ ThingsBoard 允许向设备发送关于设备属性更新的 RPC 命令和通知
 举例
 
 ```sh
-mosquitto_pub -h YOUR_MQTT_BROKER_HOST \
+mosquitto_pub \
+-h YOUR_MQTT_BROKER_HOST \
 -p YOUR_MQTT_BROKER_PORT \
 -t "sensors/connect" -m '{"serialNumber":"SN-001"}'
 ```
@@ -378,7 +413,8 @@ mosquitto_pub -h YOUR_MQTT_BROKER_HOST \
 或
 
 ```sh
-mosquitto_pub -h YOUR_MQTT_BROKER_HOST \
+mosquitto_pub \
+-h YOUR_MQTT_BROKER_HOST \
 -p YOUR_MQTT_BROKER_PORT \
 -t "sensor/SN-001/connect" -m ''
 ```
