@@ -1,6 +1,7 @@
 再次强调用好触控板和快捷键, 将极大提高效率
 
 ### 两大神器: **输入法**和**浏览器**
+
 > [搜狗输入法](https://pinyin.sogou.com/mac/) 由于百度不好用, 19年初装上后还会偶尔bug资源占用率居高不下
 . 我的要求是要有同步词库.  而且支持中文下输入英文标点的功能. 然后有单行模式更好.
 > [360极速浏览器](https://browser.360.cn/ee/mac/index.html), 习惯而已. 鼠标悬停指向当前页也是一绝.
@@ -59,10 +60,12 @@ shfit + command + R 进入阅读模式
 此设置适用于来自其他电脑的有线连接（如以太网连接）。如果您使用的是正确配置的 AirPort 基站，则它也适用于 Wi-Fi 连接。某些任务可能会阻止电脑在闲置时进入睡眠状态。
 
 ### 根据路径跳转到目录
+
 使用快捷键: `Shift + Command + G`, 可是感觉还是不如Win系统的`Win + E` + 选定地址栏 + 粘贴 + 敲回车方便
 ![](https://upload-images.jianshu.io/upload_images/1662509-3bff4ca099214b46.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### 类似 Win 的显示桌面
+
 鼠标移动到右下角, 模仿Win系统点击右下角显示桌面的功能
 ![【系统偏好设置】-【Mission Control（调度中心）】，点击位于左下角的【触发角】选项](https://upload-images.jianshu.io/upload_images/1662509-af8414725f97fa62.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -78,7 +81,7 @@ defaults write com.apple.dashboard mcx-disabled -boolean YES && killall Dock
 defaults write com.apple.dashboard mcx-disabled -boolean NO && killall Dock
 ```
 
-####  "apple无法检查其是否包含恶意软件"的问题
+#### "apple无法检查其是否包含恶意软件"的问题
 
 系统偏好设置==> 安全性与隐私 ===> 在下方允许就可以了。
 

@@ -3,6 +3,7 @@ Charles 通过将自己设置成系统的网络访问代理服务器，使得所
 ![](https://upload-images.jianshu.io/upload_images/1662509-8565686dc0d54932.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 Charles 主要的功能包括：
+
 1. 截取 Http 和 Https 网络封包。
 2. 支持重发网络请求，方便后端调试。
 3. 支持修改网络请求参数。

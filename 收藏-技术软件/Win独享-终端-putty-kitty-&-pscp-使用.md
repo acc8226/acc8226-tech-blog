@@ -26,7 +26,7 @@
 
 3. 打开的配置窗口左边选择 Appearance，在右边点 Font settings 里面的 Change 按钮，选择好中文字体，比如：宋体、新宋体之类.
 
-4. 然后设置 Translation 
+4. 然后设置 Translation
 ![](https://upload-images.jianshu.io/upload_images/1662509-017309e50c75983f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 5. 最后保存下配置，几乎就能 解决 99% 编码问题了
@@ -40,8 +40,11 @@
 pscp.exe - PuTTY Secure Copy client
 PSCP (PuTTY Secure Copy client)是 PuTTY 提供的文件传输工具，通过 SSH 连接，在两台机器之间安全的传输文件，可以用于任何 SSH（包括 SSH v1、SSH v2）服务器。
 
-举例: 
+举例:
+
+```bat
 pscp.exe -pw  ncl@3/Lb YourUserName@YourHostName:/abc/my.log D:\my.txt
+```
 
 ```text
 PuTTY Secure Copy client

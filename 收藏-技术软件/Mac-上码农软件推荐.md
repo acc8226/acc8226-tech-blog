@@ -1,4 +1,4 @@
-> 有便携版(.app 或 dmg镜像但内部依旧是app 这种形式)和安装版(pkg这种形式)和应用商店版的区分，能选择便携包尽量选择它。安装包类型是便携类软件的补充, 可以按需挑选。如果该软件能做到跨平台, 我可能会优先推荐. 以下内容我尽量选择免费的, 从而避免付费. 这当然会错过一些优秀作品啦. 
+> 有便携版(.app 或 dmg镜像但内部依旧是 app 这种形式)和安装版(pkg 这种形式)和应用商店版的区分，能选择便携包尽量选择它。安装包类型是便携类软件的补充, 可以按需挑选。如果该软件能做到跨平台, 我可能会优先推荐. 以下内容我尽量选择免费的, 从而避免付费。这当然会错过一些优秀作品啦。
 
 ## 编程语言类
 
@@ -24,7 +24,7 @@
 
 ## 远程连接类
 
-【应用商店版】App Store 搜索 Zen Term 即可 
+【应用商店版】App Store 搜索 Zen Term 即可
 
 ## ftp 文件管理类
 
@@ -38,11 +38,11 @@
 
 轻量级的这个如何定义, 一般感觉自带的文本编辑工具就可以. 也可按需选择 , sublime text, atom都可以. 这里就不一一列举了.
 
-重量级IDE, 例如 [IntelliJ IDEA](https://www.jetbrains.com/idea/) , eclipse, VSCode 啥按需选择吧。
+重量级 IDE, 例如 [IntelliJ IDEA](https://www.jetbrains.com/idea/) , eclipse, VSCode 啥按需选择吧。
 
 ## 数据库连接软件
 
-由于目前MySQL比较常用, 图形化可以选择 sequel pro [免费] 或 Navicat[付费软件]。
+由于目前 MySQL 比较常用, 图形化可以选择 sequel pro [免费] 或 Navicat[付费软件]。
 
 ## 浏览器
 
@@ -61,7 +61,7 @@ Charles is an HTTP proxy / HTTP monitor / Reverse Proxy
 该工具结合  Oh My Zsh 会有极度舒适的终端体验
 
 > mac下 Oh my zsh + iTerm2初体验 - 简书
-https://www.jianshu.com/p/b5e7fa6ad495
+<https://www.jianshu.com/p/b5e7fa6ad495>
 
 * 软件包管理工具Homebrew
 

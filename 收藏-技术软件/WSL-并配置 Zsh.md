@@ -4,7 +4,9 @@
 
 适用于 Linux 的 Windows 子系统随 Windows 操作系统一起提供，但必须先启用它并安装 Linux 发行版，然后才能开始使用它。
 
-若要使用简化的 --install 命令，必须运行最新版本的 Windows。 
+控制面板——>程序——>程序和功能——>启用或关闭Windows功能——>适用于Linux的Windows子系统——>确定 （然后重启）
+
+若要使用简化的 --install 命令，必须运行最新版本的 Windows。
 
 如果希望安装除 Ubuntu 以外的 Linux 发行版，或者希望手动完成这些步骤，请参阅 [WSL 安装页](https://docs.microsoft.com/zh-cn/windows/wsl/install)了解更多详细信息。
 
@@ -23,7 +25,7 @@ wsl --install
 
 列出可用的 Linux 发行版
 
-```
+```text
 >wsl --list --online
 以下是可安装的有效分发的列表。
 请使用“wsl --install -d <分发>”安装。
@@ -38,6 +40,7 @@ Ubuntu-16.04    Ubuntu 16.04 LTS
 Ubuntu-18.04    Ubuntu 18.04 LTS
 Ubuntu-20.04    Ubuntu 20.04 LTS
 ```
+
 或者 `wsl.exe -l -o`
 
 这里我们选择安装 20.04 LTS 版
@@ -69,9 +72,22 @@ wsl --unregister <DistributionName>
 | Ubuntu 20.04       | `\\wsl$\Ubuntu-20.04\home\username` |
 | Ubuntu 18.04       | `\\wsl$\Ubuntu-18.04\home\username` |
 | Debian             | `\\wsl$\Debian\home\username`       |
-| Windows PowerShell | `C:\Users\username`   |
+| Windows PowerShell | `C:\Users\username` |
 
 > 如果想从 WSL 发行版命令行访问 Windows 文件目录，而不是使用 C:\Users\username，则需使用 /mnt/c/Users/username 访问该目录，因为 Linux 发行版将 Windows 文件系统视为已装载的驱动器。
+
+### 子系统Linux重启(不重启Win)
+
+WSL 子系统是基于 LxssManager 服务运行的。
+只需要将 LxssManager 重启即可。
+也可以做成一个 bat 文件。
+
+Using CMD (Administrator)
+
+```bat
+net stop LxssManager
+net start LxssManager
+···
 
 ## ubuntu 常用命令
 
@@ -116,7 +132,7 @@ sudo apt-get upgrade
 ubuntu1804 config --default-user root
 进入ubuntu控制台, 之后执行 passwd 输入新密码即可。
 
-### 搭配 Visual Studio Code 
+### 搭配 Visual Studio Code 使用
 
 Visual Studio Code 以及 Remote - WSL 扩展使你能够直接从 VS Code 使用 WSL 作为实时开发环境。 可以：
 
@@ -146,7 +162,45 @@ Visual Studio Code 以及 Remote - WSL 扩展使你能够直接从 VS Code 使�
 
 还可以通过使用 VS Code 中的快捷方式 `CTRL+SHIFT+P` 调出命令面板，以访问更多 VS Code 远程选项。 如果随后键入 `Remote-WSL`，将看到可用的 VS Code 远程选项列表，使你可以在远程会话中重新打开文件夹，指定要在哪个发行版中打开，等等。
 
-## 开始安装 zsh
+## wslg 支持
+
+WSLg 是 Linux GUI 的 Windows 子系统的缩写，该项目的目的是支持在 Windows 上运行 Linux GUI 应用程序(X11 and Wayland) ，提供完全集成的桌面体验。
+
+**先决条件**
+Windows 11(build 22000. *)或 Windows 11 Insider Preview (builds 21362 +)
+
+将会随着即将发布的 Windows 一起普及。要访问 WSLg 的预览版，您需要从 Microsoft Store 安装 Linux 预览版 Windows 子系统。
+
+建议在为 WSL 启用虚拟 GPU (vGPU)的系统上运行 WSLg，这样您就可以受益于硬件加速的 OpenGL 渲染。您可以在下面找到支持 WSL 的预览驱动程序。
+
+* [AMD GPU driver for WSL](https://community.amd.com/community/radeon-pro-graphics/blog/2020/06/17/announcing-amd-support-for-gpu-accelerated-machine-learning-training-on-windows-10)
+* [Intel GPU driver for WSL](https://downloadcenter.intel.com/download/30579/Intel-Graphics-Windows-DCH-Drivers)
+* [NVIDIA GPU driver for WSL](https://developer.nvidia.com/cuda/wsl)
+
+**安装和运行 GUI 应用程序**
+如果您想要开始使用一些 GUI 应用程序，您可以从您的 Linux 终端运行以下命令来下载和安装一些流行的应用程序。如果你使用的是不同于 Ubuntu 的发行版，那么它可能使用的是不同的软件包管理器。
+
+```sh
+## Update list of available packages
+sudo apt update
+
+## Gedit
+sudo apt install gedit -y
+
+## GIMP
+sudo apt install gimp -y
+
+## Nautilus
+sudo apt install nautilus -y
+
+## VLC
+sudo apt install vlc -y
+
+## X11 apps
+sudo apt install x11-apps -y
+```
+
+## 安装 zsh
 
 ```sh
 sudo apt-get install zsh
@@ -163,12 +217,14 @@ chsh -s $(which zsh)
 ```sh
 echo $SHELL
 ```
-#### 安装 oh-my-zsh
+
+### 安装 oh-my-zsh
+
+```sh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-$ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
-#### 设置 ys 主题
+### 设置 ys 主题
 
 打开 oh-my-zsh 配置文件
 
@@ -178,6 +234,6 @@ sudo vim ~/.zshrc
 
 修改主题配色为 ys
 
-```
+```text
 ZSH_THEME="ys"  
 ```

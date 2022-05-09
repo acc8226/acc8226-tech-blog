@@ -1,11 +1,11 @@
 ## 下载地址
 
-https://www.postman.com/downloads/
+<https://www.postman.com/downloads/>
 
 ## Postman 与测试
 
 postman使用教程,接口自动化测试_全栈工程师开发手册（原创）(腾讯内推)-CSDN博客_postman接口测试教程
-https://blog.csdn.net/luanpeng825485697/article/details/83507112
+<https://blog.csdn.net/luanpeng825485697/article/details/83507112>
 
 newman -version 查看版本信息
 

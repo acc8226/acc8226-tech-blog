@@ -1,6 +1,7 @@
 iTerm2是 Terminal 的替代品，也是 iTerm 的继承者。 它适用于 macOS 10.12或更新版本的 mac 电脑。 iTerm2将终端带入了现代社会，带来了一些你从来不知道自己一直想要的功能。
 
 ## iTerm
+
 官网 https://www.iterm2.com/
 
 下载的是压缩文件，解压后是执行程序文件，你可以直接双击，或者直接将它拖到 Applications 目录下。
@@ -15,7 +16,7 @@ brew cask install iterm2
 * 将一个选项卡划分为多个窗格，每个窗格显示不同的会话。 您可以垂直和水平切片，并创建任何数量的窗格在任何可以想象的安排。 请注意，非活动窗格稍微变暗，因此很容易看到哪些窗格是活动的。
 ![image](https://upload-images.jianshu.io/upload_images/1662509-edc2b56202ae5b2f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-* 注册一个热键，当您在另一个应用程序中时，它会将 iTerm2带到前台。 一个终端总是离键盘一步之遥。 您可以选择让热键打开一个专用窗口。 
+* 注册一个热键，当您在另一个应用程序中时，它会将 iTerm2带到前台。 一个终端总是离键盘一步之遥。 您可以选择让热键打开一个专用窗口。
 
 * Iterm2具有强大的页面查找功能。 用户界面不会碍事。 所有匹配都会立即突出显示。 甚至还提供了正则表达式支持！
 ![image](https://upload-images.jianshu.io/upload_images/1662509-8d03849e37e628ee.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -54,6 +55,7 @@ You'll need to remove `/Users/用户XXX/.oh-my-zsh` if you want to reinstall.
 ZSH_THEME="agnoster" # (this is one of the fancy ones)
 # see https://github.com/ohmyzsh/ohmyzsh/wiki/Themes#agnoster
 ```
+
 如果你感觉精力充沛，你可以让计算机在你每次打开一个新的终端窗口时为你随机选择一个。
 
 ```zsh

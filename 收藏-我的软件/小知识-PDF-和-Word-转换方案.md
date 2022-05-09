@@ -25,7 +25,8 @@
 搜索 pdf_info_changer 这款免费软件.
 
 以下是 PDF 一些字段的说明
-```
+
+```text
 标题 Subject
 作者 Author
 创建时间
@@ -36,9 +37,9 @@ PDF版本
 
 ## 工具: 在线PDF压缩
 
-https://www.pdf365.cn/pdf-compress/
+<https://www.pdf365.cn/pdf-compress/>
 
-https://smallpdf.com/cn
+<https://smallpdf.com/cn>
 
 ## 附录
 
