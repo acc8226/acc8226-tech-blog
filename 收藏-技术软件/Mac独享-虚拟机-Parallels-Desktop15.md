@@ -13,7 +13,7 @@
 
 ## 安装 windows 10
 
-win10官网下载地址
+win10 官网下载地址
 [https://www.microsoft.com/zh-cn/software-download/windows10](https://www.microsoft.com/zh-cn/software-download/windows10)
 
 未激活也能一直使用, 就这样吧.
@@ -26,7 +26,7 @@ win10官网下载地址
   [https://m.bilibili.com/video/av36914543.html](https://m.bilibili.com/video/av36914543.html)
 
 【Mac虚拟机教学⑦】Parallels 虚拟机可能会难住你的 7 个问题
-https://www.bilibili.com/video/av37703179/?spm_id_from=333.788.videocard.2
+<https://www.bilibili.com/video/av37703179/?spm_id_from=333.788.videocard.2>
 
 ## 参考
 
