@@ -65,7 +65,7 @@ xcrun: error: invalid active developer path
 
 **mac 下个人 `bash_profile` 留存备份**
 
-`~/.bash_profile `下这里记录我目前的配置
+`~/.bash_profile` 下这里记录我目前的配置
 
 ```sh
 # java

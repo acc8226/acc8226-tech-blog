@@ -16,7 +16,7 @@ Windows 优化：[软媒魔方](http://mofang.ruanmei.com/)
 
 极客版
 7-Zip
-https://sparanoid.com/lab/7z/download.html
+<https://sparanoid.com/lab/7z/download.html>
 
 ## 输入法
 
@@ -24,7 +24,7 @@ https://sparanoid.com/lab/7z/download.html
 
 ## 杀毒、安全
 
-[腾讯电脑管家](https://guanjia.qq.com/) / [360安全卫士](https://weishi.360.cn/)/ [火绒安全](https://www.huorong.cn/) 
+[腾讯电脑管家](https://guanjia.qq.com/) / [360安全卫士](https://weishi.360.cn/)/ [火绒安全](https://www.huorong.cn/)
 
 ## 聊天 / 远程办公
 
@@ -36,7 +36,7 @@ Android 用户可选择 [腾讯应用宝PC版](https://sj.qq.com/) / [360 手机
 
 iOS 用户请下载 iTunes 和 PP 助手。
 
-#### 下载软件：
+#### 下载软件
 
 [迅雷](https://dl.xunlei.com/) / [Free Download Manager](https://www.freedownloadmanager.org/zh/) 
 
@@ -47,6 +47,7 @@ iOS 用户请下载 iTunes 和 PP 助手。
 爱奇艺 / 腾讯视频 / 优酷 
 
 ## 文字办公 / 电子邮件 / 股票财经
+
 * 微软 Office / 金山 WPS
 * 印象笔记 / 有道云笔记
 * Foxmail / 网易邮箱大师
@@ -75,6 +76,7 @@ PS 【收费软件】 / GIMP 【PS的替代品且免费】 / 美图秀秀【免�
 • VirtualBox
 
 **我的小工具集**
+
 * [Everything-文件搜索工具](https://www.voidtools.com/zh-cn/)
 * f.lux - 自动调整屏幕色温减少蓝光防疲劳软件
 * ToDesk 远程控制
@@ -92,5 +94,5 @@ PS 【收费软件】 / GIMP 【PS的替代品且免费】 / 美图秀秀【免�
 ## 参考
 
 * [《Win7宝典 / Windows7宝典》](http://www.win7china.com/html/6351.html)
-*  [软媒-Win10之家](https://win10.ithome.com/)
-*  [Win装机必备软件大全](https://www.ithome.com/bibei/)
+* [软媒-Win10之家](https://win10.ithome.com/)
+* [Win装机必备软件大全](https://www.ithome.com/bibei/)

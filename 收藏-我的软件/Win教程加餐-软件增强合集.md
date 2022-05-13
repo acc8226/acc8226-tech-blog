@@ -6,8 +6,8 @@
 
 https://geekuninstaller.com/
 
-**分析磁盘空间占比（查找大文件）—— WizTree** 
-https://wiztreefree.com/download
+**分析磁盘空间占比（查找大文件）—— WizTree**
+<https://wiztreefree.com/download>
 
 **网速检测实用软件 —— NetSpeedMonitor**
 https://netspeedmonitor64.en.softonic.com/download
@@ -32,4 +32,4 @@ https://www.advanced-ip-scanner.com/cn/
 
 ## Microsoft store 版好用的软件
 
-windows terminal
+未完成

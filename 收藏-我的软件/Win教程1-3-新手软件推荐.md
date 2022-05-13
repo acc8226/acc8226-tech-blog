@@ -10,6 +10,7 @@
 ## 输入法-搜狗
 
 可选Win系统自带或这次推荐的 [搜狗输入法智慧版](https://pinyin.sogou.com/zhihui/), 无广告不解释。处理日常使用外还能表情斗图
+
 ![](https://upload-images.jianshu.io/upload_images/1662509-fb48650d650984ec.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## 解压软件
@@ -20,7 +21,7 @@
 
  一个简单但强大的截图工具 --- [点击了解更多](https://www.jianshu.com/p/e9e0a77d8d7a)
 > Snipaste 是一个强大的截图工具，可以让你将截图贴回到屏幕上！按下 F1 来开始截图，再按 F3，截图就在桌面置顶显示了。就这么简单！
-> 
+>
 > 你还可以将剪贴板里的文字或者颜色信息转化为图片窗口，并且将它们进行缩放、旋转、翻转、设为半透明，甚至让鼠标能穿透它们！如果你大部分工作时间都在电脑前，贴图功能将改变你的工作方式、提升工作效率。
 
 ## [护眼软件-flux](https://www.jianshu.com/p/455b9637db33) 
@@ -38,7 +39,8 @@ https://share.weiyun.com/9ffNrDMg
 电脑作为这个时代的一常用工具，我仅在这里分享些经验。工具的使用主要在人，希望无论是刚入门还是老手都能从容使用 Windows。
 
 想要了解更多可以看其他文章
-* [Win教程2/3: Win10装机必备](https://www.jianshu.com/p/1eb4e787c670) 
+
+* [Win教程2/3: Win10装机必备](https://www.jianshu.com/p/1eb4e787c670)
 * [Win教程3/3: Win10 使用技巧](https://www.jianshu.com/p/1717c6fb4143)
 
 也欢迎在简书平台[关注我](https://www.jianshu.com/u/7ef875ed6ee8)。
