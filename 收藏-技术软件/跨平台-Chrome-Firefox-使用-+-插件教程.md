@@ -36,11 +36,11 @@ Shift + 空格键 或者 pageUp 键
 ### uBlock Origin （去广告）
 
 uBlock Origin - 一款不可多得的浏览器广告拦截插件，使用体验比 Adblock 效果更好。
-https://www.cnplugins.com/office/block/
+<https://www.cnplugins.com/office/block/>
 
 ### 彩云小译 - 在线翻译  (比百度 / 谷歌更智能）
 
-https://fanyi.caiyunapp.com/#/web
+<https://fanyi.caiyunapp.com/#/web>
 
 浏览网页时，点击书签栏中或插件的"彩云小译"，网页将变成中英对照模式。
 **若开通付费，才能享用翻译无限次**
@@ -54,22 +54,22 @@ Tampermonkey 是一款浏览器脚本管理插件，常见浏览器都支持，�
 > **注**：chrome 可以通过网站 [crx4chrome](https://link.zhihu.com/?target=https%3A//www.crx4chrome.com/) 来下载扩展程序 crx 文件，手动将 crx 文件拖动至扩展页面安装即可。
 
 **greasyfork 脚本大全**
-https://greasyfork.org/zh-CN 。
+<https://greasyfork.org/zh-CN> 。
 
 **数码小站一个免费插件就能愉快地互联网冲浪**
-https://greasyfork.org/zh-CN/scripts/426806
+<https://greasyfork.org/zh-CN/scripts/426806>
 【数码小站】超级SVIP多功能工具箱-百度网盘直链高速下载,VIP视频去广告免费看等多功能聚合,持续更新
 
 **为了让超链接能痛快地把用户送到终点**
-https://greasyfork.org/zh-CN/scripts/412612
+<https://greasyfork.org/zh-CN/scripts/412612>
 Open the F**king URL Right Now
 
 **免费视频在线解析**
-https://greasyfork.org/zh-CN/scripts/27349
+<https://greasyfork.org/zh-CN/scripts/27349>
 
 ### Proxy SwitchyOmega
 
-https://proxy-switchyomega.com/
+<https://proxy-switchyomega.com/>
 
 Chrome 和 Firefox 浏览器上的代理扩展程序，可以轻松快捷的管理和切换多个代理设置。
 
@@ -79,7 +79,7 @@ Chrome 和 Firefox 浏览器上的代理扩展程序，可以轻松快捷的管�
 
 ### Web开发者助手 FeHelper
 
-https://www.baidufe.com/fehelper/index/index.html
+<https://www.baidufe.com/fehelper/index/index.html>
 
 插件支持Chrome、Firefox、MS-Edge 浏览器，内部工具集持续增加，目前包括 JSON 自动/手动格式化、JSON 内容比对、代码美化与压缩、信息编解码转换、二维码生成与解码、图片 Base64 编解码转换、Markdown、 网页油猴、网页取色器、脑图(Xmind)等贴心工具，甚至在目前新版本的 FeHelpe r中，还集成了FH开发者工具， 如果你也想自己搞一个工具集成到 FeHelper 中，那这一定能满足到你。另外，本站也提供部分工具的在线版本！
 
@@ -89,14 +89,14 @@ Postman 的轻巧替代品
 
 【Restlet Client - REST API Testing v2.19.1 Chrome插件下载】Restlet Client - REST API Testing v2.19.1 Chrome插件免费下载 - 开发者插件下载 - Chrome插件网
 
-http://www.cnplugins.com/devtool/restlet-client-rest-api-t-v2-19-1/download.html
+<http://www.cnplugins.com/devtool/restlet-client-rest-api-t-v2-19-1/download.html>
 
 ### Axure RP Extension For Chrome （用于打开产品原型图）
 
 对于很多需要设计产品原型的朋友来说，Axure RP Pro可谓是非常方便、好用的一款软件，因为它不仅能绘制出详细的产品构思，也能生成浏览器格式的产品原型。但是如果想把原型拿给客户查看，千万记得给浏览器安装Axure扩展程序哦。
 
 最新Axure谷歌浏览器Chrome扩展程序安装方法 - Axure中文网
-https://www.axure.com.cn/79769/
+<https://www.axure.com.cn/79769/>
 
 ## 安装插件遇到的问题及解决方法总结
 
@@ -104,12 +104,10 @@ https://www.axure.com.cn/79769/
 找到自己已经下载好的Chrome离线安装文件xxx.crx，然后将其从资源管理器中拖动到Chrome的扩展管理界面中，这时候用户会发现在扩展管理器的中央部分中会多出一个”拖动以安装“的插件按钮。
 
 **解决“只能通过Chrome网上应用商店安装该程序”的方法**
-1.把下载后的 .crx 扩展名的离线Chrome插件的文件扩展名改成.zip 或者 .rar
-2. 在Chrome的地址栏中输入：chrome://extensions/ 打开Chrome 浏览器的扩展程序管理界面，并在该界面的右上方的开发者模式按钮上打勾
+1.把下载后的 .crx 扩展名的离线Chrome插件的文件扩展名改成 .zip 或者 .rar
+2. 在Chrome的地址栏中输入：chrome://extensions/ 打开 Chrome 浏览器的扩展程序管理界面，并在该界面的右上方的开发者模式按钮上打勾
 3. 在勾选开发者模式选项以后，在该页面就会出现加载正在开发的扩展程序等按钮，点击“加载正在开发的扩展程序”按钮，并选择刚刚解压的 Chrome 插件文件夹的位置。
-4. 若出现加载程序出错的情况，Chrome浏览器会提示无法加载以下来源的扩展程序： xxx路径（Chrome插件文件的解压位置）Cannot load extension with file or directory name _metadata. Filenames starting with "_" are reserved for use by the system.出现这种情况，是因为这款Chrome插件与新版的Chrome浏览器有些不兼容，这时候，用户可以打开刚刚解压的Chrome插件文件夹，并把其中_metadata文件夹的名字修改为metadata（把前面的下划线去掉）
+4. 若出现加载程序出错的情况，Chrome 浏览器会提示无法加载以下来源的扩展程序： xxx路径（Chrome插件文件的解压位置）Cannot load extension with file or directory name _metadata. Filenames starting with "_" are reserved for use by the system.出现这种情况，是因为这款 Chrome 插件与新版的 Chrome 浏览器有些不兼容，这时候，用户可以打开刚刚解压的Chrome插件文件夹，并把其中 _metadata 文件夹的名字修改为 metadata（把前面的下划线去掉）
 5. 更新文件夹名称成功以后，点击该错误提示下方的“重试”按钮，就可以成功地把Chrome插件加载谷歌浏览器中了
 
 ## firefox 的使用
-
-

@@ -1,4 +1,4 @@
-https://github.com/fatedier/frp
+<https://github.com/fatedier/frp>
 
 > frp 是一个可用于内网穿透的高性能的反向代理应用，支持 tcp, udp 协议，为 http 和 https 应用协议提供了额外的能力，且尝试性支持了点对点穿透。
 
@@ -126,22 +126,10 @@ type = tcp
 local_ip = 10.1.104.107
 local_port = 22
 remote_port = 6001
-
-[ssh-uat]
-type = tcp
-local_ip = 10.1.104.108
-local_port = 22
-remote_port = 6002
-
-[ssh-reg]
-type = tcp
-local_ip = 10.1.104.124
-local_port = 22
-remote_port = 6003
 ```
 
 linux：nohup 不生成 nohup.out 的方法
-参考此用法`nohup ./program >/dev/null 2>&1 &` 
+参考此用法`nohup ./program >/dev/null 2>&1 &`
 则可以改写为 `nohup ./frps -c frps.ini >/dev/null 2>&1 &`
 
 ## 软件下载

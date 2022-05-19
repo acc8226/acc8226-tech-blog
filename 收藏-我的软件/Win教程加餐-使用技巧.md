@@ -10,7 +10,7 @@ Ctrl + V 粘贴
 切换程序 ALT + Tab
 
 **chrome 谷歌浏览器系列的快捷键**
-Ctrl + J 打开下载窗体
+Ctrl + J 打开下载窗口
 
 ## 显示优化：Clear Type 增强文字的显示清晰度
 
@@ -23,7 +23,7 @@ ClearType 是由微软公司在其 Windows 操作系统中提供的荧幕字体�
 ## 美化: 手动更换必应美图的壁纸
 
 推荐一个每日推荐美图的网站
-微软 Bing 搜索 - 国内版  https://cn.bing.com/
+微软 Bing 搜索 - 国内版  <https://cn.bing.com/>
 
 ![动图](https://upload-images.jianshu.io/upload_images/1662509-d10b44f7e29fde29.gif?imageMogr2/auto-orient/strip)
 
@@ -43,7 +43,7 @@ ClearType 是由微软公司在其 Windows 操作系统中提供的荧幕字体�
 
 好的，这意味着你的系统已经安装了 Microsoft IIS 或者其他一些 MS 技术来报告这个签名---- 出于某种原因，他们正在 Windows 的后续版本中这样做。如果你不打算使用它，你可以卸载它，它不是 windows 的一个组成部分，所以它被卸载不会影响窗口的正常操作，如果你需要稍后再安装它，它作为标准操作系统的一部分，所以你不需要做任何精心设计的聪明。
 
-开始-> 控制面板-> 程序和功能点击左边菜单中的‘打开和关闭窗口功能’链接。等待列表加载，然后找到“ Internet 信息服务”
+开始 -> 控制面板 -> 程序和功能点击左边菜单中的‘打开和关闭窗口功能’链接。等待列表加载，然后找到“ Internet 信息服务”
 
 1. World Wide Web Publishing Service服务关闭
 2. SQL Server Reporting Services（MSSQLSERVER)服务 服务关闭

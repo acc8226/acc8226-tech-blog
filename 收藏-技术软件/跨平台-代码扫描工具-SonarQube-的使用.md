@@ -3,7 +3,7 @@
 **一、访问官网：**
 
 官网下载
-Download | SonarQube https://www.sonarqube.org/downloads/
+Download | SonarQube <https://www.sonarqube.org/downloads/>
 
 或者网盘下载
 <https://share.weiyun.com/pKZETzSZ>
@@ -88,14 +88,14 @@ catch 块中记录中断状态之后将线程中断，正确的处理了中断�
 
 ```java
 public class MyClass {
-  static private SimpleDateFormat format = new SimpleDateFormat("HH-mm-ss");  // Noncompliant
-  static private Calendar calendar = Calendar.getInstance();  // Noncompliant
+    static private SimpleDateFormat format = new SimpleDateFormat("HH-mm-ss");  // Noncompliant
+    static private Calendar calendar = Calendar.getInstance();  // Noncompliant
 ```
 
 解决建议：
 
 ```java
- public class MyClass {
-  private SimpleDateFormat format = new SimpleDateFormat("HH-mm-ss");
-  private Calendar calendar = Calendar.getInstance();
+public class MyClass {
+    private SimpleDateFormat format = new SimpleDateFormat("HH-mm-ss");
+    private Calendar calendar = Calendar.getInstance();
 ```

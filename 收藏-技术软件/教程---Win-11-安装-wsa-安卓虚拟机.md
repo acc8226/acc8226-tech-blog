@@ -45,9 +45,10 @@ Windows Subsystem for Android 可用于 Windows 11 上的公共预览版。
 3. 现在，你已有了用于连接到适用于 Android 的 Windows 子系统 VM 的 IP 地址，在终端或 Powershell 中，接下来可使用 adb connect（必须[安装 adb](https://developer.android.com/studio/command-line/adb)）进行连接。
 
 **下载适用于操作系统对应 的 SDK Platform-Tools（包含了 adb）**
-* https://dl.google.com/android/repository/platform-tools-latest-windows.zip
-* https://dl.google.com/android/repository/platform-tools-latest-linux.zip
-* https://dl.google.com/android/repository/platform-tools-latest-darwin.zip
+
+* <https://dl.google.com/android/repository/platform-tools-latest-windows.zip>
+* <https://dl.google.com/android/repository/platform-tools-latest-linux.zip>
+* <https://dl.google.com/android/repository/platform-tools-latest-darwin.zip>
 
 **查询设备**
 在发出 adb 命令之前，了解哪些设备实例已连接到 adb 服务器会很有帮助。您可以使用 devices 命令生成已连接设备的列表。
@@ -70,4 +71,4 @@ https://webcdn.m.qq.com/webapp/homepage/index.html#/) 搜索下载并 adb instal
 ## 参考文档
 
 Android 调试桥 (adb)  |  Android 开发者  |  Android Developers
-https://developer.android.google.cn/studio/command-line/adb
+<https://developer.android.google.cn/studio/command-line/adb>

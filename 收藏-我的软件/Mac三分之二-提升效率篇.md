@@ -41,7 +41,7 @@ shfit + command + R 进入阅读模式
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-5e2a497ab27ef0cc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-### 嫌鼠标指针小, 可随时调整 
+### 嫌鼠标指针小, 可随时调整
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-63860f3433970f9e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -51,7 +51,7 @@ shfit + command + R 进入阅读模式
 
 > ##### 节能的其他选项
 > ###### 如果可能，使硬盘进入睡眠
-> 当您没有从硬盘驱动器读取或写入文件时，此设置将减小硬盘驱动器电机的功耗。固态硬盘 (SSD) 无移动部件，因此该设置不会影响仅使用 SSD 存储数据的 Mac 电脑。 
+> 当您没有从硬盘驱动器读取或写入文件时，此设置将减小硬盘驱动器电机的功耗。固态硬盘 (SSD) 无移动部件，因此该设置不会影响仅使用 SSD 存储数据的 Mac 电脑。
 如果您拥有内置或外置非 SSD 驱动器并且使用的应用（如专业的音频或视频编辑软件）能借助对硬盘数据的持续读写访问而实现更好的运行效果，请考虑取消选中此选项。
 
 > ###### 唤醒以供网络访问
@@ -73,11 +73,11 @@ shfit + command + R 进入阅读模式
 
 现在整个OS X 界面都变得扁平，可是仪表盘充满了违和感。
 
-```bash
-//关闭仪表盘
+```sh
+# 关闭仪表盘
 defaults write com.apple.dashboard mcx-disabled -boolean YES && killall Dock
 
-//开启仪表盘
+# 开启仪表盘
 defaults write com.apple.dashboard mcx-disabled -boolean NO && killall Dock
 ```
 

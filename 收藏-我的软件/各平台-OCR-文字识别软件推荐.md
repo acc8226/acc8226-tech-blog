@@ -30,7 +30,7 @@
 多个词典支持单词真人发音。
 
 下载地址
- https://saladict.crimx.com/download.html
+ <https://saladict.crimx.com/download.html>
 
 > 浏览器插件跨平台，且口碑很好，一般推荐此款即可。
 

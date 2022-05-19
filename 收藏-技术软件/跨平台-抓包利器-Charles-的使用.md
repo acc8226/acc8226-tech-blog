@@ -10,7 +10,7 @@ Charles 主要的功能包括：
 4. 支持网络请求的截获并动态修改。
 5. 支持模拟慢速网络。
 
-官网下载地址: https://www.charlesproxy.com/download/
+官网下载地址: <https://www.charlesproxy.com/download/>
 
 > 请低调使用且不得作为商业用途：
 > Registered Name: 	`https://zhile.io`

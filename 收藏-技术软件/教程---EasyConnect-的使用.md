@@ -1,7 +1,7 @@
 ## 下载和安装
 
 * 自动安装组件失败，请手动 EasyConnectInstaller.exe
-EasyConnect下载链接   //后面的IP是服务端的IP地址，如果是域名直接在IP处填写域名
+EasyConnect 下载链接   //后面的IP是服务端的IP地址，如果是域名直接在IP处填写域名
 M5.0-M7.0版本： [https://IP/com/install.exe](https://ip/com/install.exe)
 M7.1之后版本： [https://IP/com/EasyConnectInstaller.exe](https://ip/com/EasyConnectInstaller.exe)
 * 登录异常，请下载 SSL VPN 诊断修复工具 进行修复
@@ -11,31 +11,31 @@ M7.1之后版本： [https://IP/com/EasyConnectInstaller.exe](https://ip/com/Ea
 
 这里使用“账号”进行分配的服务器地址，以及用户名和密码
 
-![图ec 录入用户名和密码](./图ec录入用户名和密码.png)
+![图 ec 录入用户名和密码](./教程---EasyConnect-的使用/图ec录入用户名和密码.png)
 
 ## 问题：EasyConnect虚拟IP地址未分配
 
 1、计算机管理-设备管理-网络适配器中检查虚拟网卡是否安装成功
 
-![图ec检查虚拟网卡是否安装成功](./图ec检查虚拟网卡是否安装成功.png)
+![图 ec 检查虚拟网卡是否安装成功](./教程---EasyConnect-的使用/图ec检查虚拟网卡是否安装成功.png)
 
 2、在网络连接中检查虚拟网卡是否被禁用
 
-![图ec检查虚拟网卡是否被禁用](./图ec检查虚拟网卡是否被禁用.png)
+![图ec检查虚拟网卡是否被禁用](./教程---EasyConnect-的使用/图ec检查虚拟网卡是否被禁用.png)
 
 3、下载诊断工具诊断看是否有异常，如有异常需要进行修复
 
 诊断工具下载链接：[http://download.sangfor.com.cn/d ... erToolInstaller.exe](http://download.sangfor.com.cn/download/product/sslvpn/SangforHelperToolInstaller.exe)
 
-![图ec下载](./图ec下载.png)
+![图 ec 下载](./教程---EasyConnect-的使用/图ec下载.png)
 
 4、卸载虚拟网卡驱动重新安装，虚拟网卡，到计算机管理-设备管理-网络适配器中找到Sangfor ssl vpn的虚拟网卡驱动，然后右键卸载，卸载后可以通过诊断工具修复或者卸载EasyConnect重新安装
 
-![图ec检测驱动](./图ec检测驱动.png)
+![图 ec 检测驱动](./教程---EasyConnect-的使用/图ec检测驱动.png)
 
 > 这个扫描工具相对而言比我试过的其他工具要更好使。如果还是不行，尝试查看自己的网络适配器是否被一些软件添加过一些奇怪的协议导致虚拟IP地址一分配则立马断开了。
 
 ## 参考
 
-EasyConnect虚拟IP地址未分配 - SSL VPN/EMM - 深信服社区
+EasyConnect 虚拟 IP 地址未分配 - SSL VPN/EMM - 深信服社区
 <https://bbs.sangfor.com.cn/forum.php?mod=viewthread&tid=64518>

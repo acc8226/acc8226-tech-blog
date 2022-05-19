@@ -94,16 +94,16 @@ set https_proxy=http://192.168.88.17:8333
 
 若编写后存在了D盘名称为 proxy.pac 的文件。
 
-则对应的地址为 file://d:\proxy.pac 或者使用 http://10.1.212.135:8080/proxy.pac
+则对应的地址为 file://d:\proxy.pac 或者使用 <http://10.1.212.135:8080/proxy.pac>
 
 ```js
 // url 是正在访问的完整 URL 地址, host 指的是从该 URL 提取出的主机名称
 function FindProxyForURL(url, host) {
-	    if (shExpMatch(host, "10.*") || shExpMatch(host, "127.*")) {
-			return "DIRECT";	
-		} else {
-			return "PROXY 10.5.3.9:80"; 
-		}
+    if (shExpMatch(host, "10.*") || shExpMatch(host, "127.*")) {
+        return "DIRECT";
+    } else {
+        return "PROXY 10.5.3.9:80";
+    }
 }
 ```
 
@@ -120,7 +120,7 @@ Win 10 现在的版本命名规则是：
 ## 如何快捷拼图
 
 美图秀秀网页版
-https://xiuxiu.web.meitu.com/main.html
+<https://xiuxiu.web.meitu.com/main.html>
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-ad2c4a0781be7dc9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -149,44 +149,43 @@ CHCP是一个计算机指令，能够显示或设置活动代码页编号。
 
 ## Windows系统环境变量大全
 
-环境变量	详细信息
-%ALLUSERSPROFILE%	所有用户 Profile 文件位置
-%APPDATA%	应用程序数据的默认存放位置
-%CD%	当前目录
-%CLIENTNAME%	联接到终端服务会话时客户端的 NETBIOS 名
-%CMDCMDLINE%	启动当前 cmd.exe 所使用的命令行
-%CMDEXTVERSION%	当前命令处理程序扩展版本号
-%CommonProgramFiles%	常用文件的文件夹路径
-%COMPUTERNAME%	计算机名
-%COMSPEC%	可执行命令外壳（命令处理程序）的路径
-%DATE%	当前日期
-%ERRORLEVEL%	最近使用的命令的错误代码
-**%HOMEDRIVE%	用户主目录所在的驱动器盘符**
-%HOMEPATH%	用户主目录的完整路径
-%HOMESHARE%	用户共享主目录的网络路径
-%LOGONSEVER%	有效的当前登录会话的域名控制器名
-%NUMBER_OF_PROCESSORS%	计算机安装的处理器数
-%OS%	操作系统的名字（ Windows XP 和 Windows 2000 列为 Windows_NT ）
-%Path%	可执行文件的搜索路径
-%PATHEXT%	操作系统认为可被执行的文件扩展名
-%PROCESSOR_ARCHITECTURE%	处理器的芯片架构
-%PROCESSOR_IDENTIFIER%	处理器的描述
-%PROCESSOR_LEVEL%	计算机的处理器的型号
-%PROCESSOR_REVISION%	处理器的修订号
-%ProgramFiles%	Program Files 文件夹的路径
-%PROMPT%	当前命令解释器的命令提示设置
-%RANDOM%	界于 0 和 32767 之间的随机十进制数
-%SESSIONNAME%	连接到终端服务会话时的连接和会话名
-%SYSTEMDRIVE%	Windows 启动目录所在驱动器
-%SYSTEMROOT%	Windows 启动目录的位置
-%TEMP% and %TMP%	当前登录的用户可用应用程序的默认临时目录
-%TIME%	当前时间
-%USERDOMAIN%	包含用户帐号的域的名字
-%USERNAME%	当前登录的用户的名字
-%USERPROFILE%	当前用户 Profile 文件位置
-%WINDIR%	操作系统目录的位置
+环境变量 详细信息
+%ALLUSERSPROFILE% 所有用户 Profile 文件位置
+%APPDATA% 应用程序数据的默认存放位置
+%CD% 当前目录
+%CLIENTNAME% 联接到终端服务会话时客户端的 NETBIOS 名
+%CMDCMDLINE% 启动当前 cmd.exe 所使用的命令行
+%CMDEXTVERSION% 当前命令处理程序扩展版本号
+%CommonProgramFiles% 常用文件的文件夹路径
+%COMPUTERNAME% 计算机名
+%COMSPEC% 可执行命令外壳（命令处理程序）的路径
+%DATE% 当前日期
+%ERRORLEVEL% 最近使用的命令的错误代码
+**%HOMEDRIVE% 用户主目录所在的驱动器盘符**
+%HOMEPATH% 用户主目录的完整路径
+%HOMESHARE% 用户共享主目录的网络路径
+%LOGONSEVER% 有效的当前登录会话的域名控制器名
+%NUMBER_OF_PROCESSORS% 计算机安装的处理器数
+%OS% 操作系统的名字（ Windows XP 和 Windows 2000 列为 Windows_NT ）
+%Path% 可执行文件的搜索路径
+%PATHEXT% 操作系统认为可被执行的文件扩展名
+%PROCESSOR_ARCHITECTURE% 处理器的芯片架构
+%PROCESSOR_IDENTIFIER% 处理器的描述
+%PROCESSOR_LEVEL% 计算机的处理器的型号
+%PROCESSOR_REVISION% 处理器的修订号
+%ProgramFiles% Program Files 文件夹的路径
+%PROMPT% 当前命令解释器的命令提示设置
+%RANDOM% 界于 0 和 32767 之间的随机十进制数
+%SESSIONNAME% 连接到终端服务会话时的连接和会话名
+%SYSTEMDRIVE% Windows 启动目录所在驱动器
+%SYSTEMROOT% Windows 启动目录的位置
+%TEMP% and %TMP% 当前登录的用户可用应用程序的默认临时目录
+%TIME% 当前时间
+%USERDOMAIN% 包含用户帐号的域的名字
+%USERNAME% 当前登录的用户的名字
+%USERPROFILE% 当前用户 Profile 文件位置
+%WINDIR% 操作系统目录的位置
 
 ## 参考
 
 你可能不知道的几种替代式windows快捷操作 | IT技术资料分享 <https://www.lmdouble.com/1424236155.html>
-

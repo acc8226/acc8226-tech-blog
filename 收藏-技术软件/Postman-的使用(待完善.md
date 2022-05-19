@@ -20,5 +20,5 @@ https://github.com/postmanlabs/newman
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-eb472cbf9e0aa0cb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-使得file参数与Controller里面的@RequestParam里面的file对应
+使得 file 参数与 Controller 里面的 @RequestParam 里面的 file  对应
 ![](https://upload-images.jianshu.io/upload_images/1662509-d103f87d9e37c7e9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)

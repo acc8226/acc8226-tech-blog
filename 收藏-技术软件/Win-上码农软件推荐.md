@@ -19,9 +19,9 @@ Git 则去官网安装对应版本即可，可选择 Portable 版本。
 
 【便携版】**SVN 命令行工具**
 Apache Subversion command line tools
- [Apache-Subversion-1.13.0](https://www.visualsvn.com/files/Apache-Subversion-1.13.0.zip) 
+ [Apache-Subversion-1.13.0](https://www.visualsvn.com/files/Apache-Subversion-1.13.0.zip)
 
-【安装版】svn 增强工具  [TortoiseSVN 官网下载地址](https://tortoisesvn.net/downloads.html)  
+【安装版】svn 增强工具  [TortoiseSVN 官网下载地址](https://tortoisesvn.net/downloads.html)
 
 【安装版】Git 增强工具 [TortoiseGit – Windows Shell Interface to Git 官网下载地址](https://tortoisegit.org/download/)
 
@@ -31,7 +31,7 @@ Apache Subversion command line tools
 
 【便携版】 [MobaXterm](https://mobaxterm.mobatek.net/) 功能全面，界面稍微不是很现代
 
-> * 我感觉 Windows 上最好用的 shell 工具可能要数 XShell ， 但 [XShell 和 Xftp](https://www.netsarang.com/zh/free-for-home-school/)  是付费软件。
+> * Windows 上最好用的 shell 工具可能要数 XShell ， 但 [XShell 和 Xftp](https://www.netsarang.com/zh/free-for-home-school/)  是付费软件。
 > * [Royal Apps](https://www.royalapps.com/server/main/download
 ) 下的 Royal TS  和文件管理 也是二合一，界面华丽。
 > * 国产的 [finalshell](http://www.hostbuf.com/t/988.html) 集合 shell 和文件管理。免费挺不错。
@@ -68,7 +68,7 @@ Windows 终端是一个新式主机应用程序，它面向你喜爱的命令行
 ## ftp 文件管理类
 
 【便携版】 WinSCP :: Official Site :: Free SFTP and FTP client for Windows
-https://winscp.net/eng/index.php
+<https://winscp.net/eng/index.php>
 
 [FileZilla](https://www.filezilla.cn/) 虽说跨平台使用，但是界面我不太喜欢。
 flashfxp 是收费产品我就不推荐了。
@@ -80,7 +80,7 @@ flashfxp 是收费产品我就不推荐了。
 
 ## 数据库客户端
 
-推荐 https://www.heidisql.com/ 
+推荐 https://www.heidisql.com/
 
 由于目前MySQL比较常用, 图形化可以 SQLyog 或 Navicat都是付费软件。
 
@@ -102,7 +102,7 @@ WinMerge [开源](https://winmerge.org/source-code/)用于Windows的差分和�
 【安装版】**[Postman](https://www.postman.com/downloads/)**
 支持模拟POST、GET、PUT等常见请求，是后台接口开发者或前端、接口测试人员不可多得的工具
 
-【安装版】Charles 
+【安装版】Charles
 Web 抓包用。
 Charles is an HTTP proxy / HTTP monitor / Reverse Proxy
 

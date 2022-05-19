@@ -12,7 +12,7 @@ colortool.exe -b OneHalfDark.itermcolors
 
 ## 修改 host 文件
 
-hosts文件是Windows系统中一个负责 IP 地址与域名快递解析的文件，以 ASCLL 格式保存。计算机在键入域名的时候，首先会去看看hosts文件汇总有没有关于此域名IP地址的记录。为了提高计算机访问某一网站的速度，修改hosts文件是很好的办法。这里直接编辑即可。
+hosts 文件是 Windows 系统中一个负责 IP 地址与域名快递解析的文件，以 ASCLL 格式保存。计算机在键入域名的时候，首先会去看看 hosts 文件汇总有没有关于此域名IP地址的记录。为了提高计算机访问某一网站的速度，修改hosts文件是很好的办法。这里直接编辑即可。
 
 ```text
 C:\Windows\System32\drivers\etc\HOSTS

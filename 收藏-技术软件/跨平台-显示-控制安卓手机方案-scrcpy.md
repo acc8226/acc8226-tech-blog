@@ -9,6 +9,7 @@
 > This application provides display and control of Android devices connected on USB (or [over TCP/IP](https://www.genymotion.com/blog/open-source-project-scrcpy-now-works-wirelessly/)). It does not require any *root* access. It works on *GNU/Linux*, *Windows* and *macOS*.
 
 It focuses on:
+
 - **lightness** (native, displays only the device screen)
 - **performance** (30~60fps)
 - **quality** (1920×1080 or above)
@@ -35,7 +36,7 @@ control it using keyboard and mouse.
 
 ### Linux
 
-On Linux, you typically need to [build the app manually][BUILD]. 
+On Linux, you typically need to [build the app manually][BUILD].
 
 A [Snap] package is available: [`scrcpy`][snap-link].
 
@@ -58,8 +59,8 @@ For Gentoo, an [Ebuild] is available: [`scrcpy/`][ebuild-link].
 For Windows, for simplicity, prebuilt archives with all the dependencies
 (including `adb`) are available:
 
- - [`scrcpy-win32-v1.11.zip`][direct-win32]  
- - [`scrcpy-win64-v1.11.zip`][direct-win64]  
+* [`scrcpy-win32-v1.11.zip`][direct-win32]
+* [`scrcpy-win64-v1.11.zip`][direct-win64]
 
 [direct-win32]: https://github.com/Genymobile/scrcpy/releases/download/v1.11/scrcpy-win32-v1.11.zip
 [direct-win64]: https://github.com/Genymobile/scrcpy/releases/download/v1.11/scrcpy-win64-v1.11.zip
@@ -98,7 +99,7 @@ scrcpy --help
 
 ### Capture configuration
 
-#### Reduce size 限制画面分辨率	
+#### Reduce size 限制画面分辨率
 
 Sometimes, it is useful to mirror an Android device at a lower definition to
 increase performance.
@@ -113,7 +114,7 @@ scrcpy -m 1024  # short version
 The other dimension is computed to that the device aspect ratio is preserved.
 That way, a device in 1920×1080 will be mirrored at 1024×576.
 
-#### Change bit-rate 修改视频码率	
+#### Change bit-rate 修改视频码率
 The default bit-rate is 8 Mbps. To change the video bitrate (e.g. to 2 Mbps):
 
 ```bash
@@ -191,7 +192,7 @@ scrcpy --serial 0123456789abcdef
 scrcpy -s 0123456789abcdef  # short version
 ```
 
-You can start several instances of _scrcpy_ for several devices. 
+You can start several instances of _scrcpy_ for several devices.
 
 #### SSH tunnel 隧道
 
@@ -273,7 +274,7 @@ scrcpy --no-control
 scrcpy -n
 ```
 
-#### Turn screen off 关闭手机屏幕	
+#### Turn screen off 关闭手机屏幕
 
 It is possible to turn the device screen off while mirroring on start with a
 command-line option:
@@ -404,7 +405,7 @@ Audio is not forwarded by _scrcpy_. Use [USBaudio] (Linux-only).
  | Copy computer clipboard to device      | `Ctrl`+`Shift`+`v`            | `Cmd`+`Shift`+`v`
  | Enable/disable FPS counter (on stdout) | `Ctrl`+`i`                    | `Cmd`+`i`
 
-_¹Double-click on black borders to remove them._  
+_¹Double-click on black borders to remove them._
 _²Right-click turns the screen on if it was off, presses BACK otherwise._
 
 ## Custom paths
