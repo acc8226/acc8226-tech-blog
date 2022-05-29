@@ -188,4 +188,4 @@ CHCP是一个计算机指令，能够显示或设置活动代码页编号。
 
 ## 参考
 
-你可能不知道的几种替代式windows快捷操作 | IT技术资料分享 <https://www.lmdouble.com/1424236155.html>
+你可能不知道的几种替代式 windows 快捷操作 | IT 技术资料分享 <https://www.lmdouble.com/1424236155.html>
