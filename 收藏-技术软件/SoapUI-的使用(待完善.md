@@ -3,4 +3,4 @@ soapUI 是一个开源测试工具，通过 soap/http 来检查、调用、实�
 soapUI pro 是 soapUI 的商业非开源版本，实现的功能较开源的soapUI 更多。
 
 官网下载地址
-https://www.soapui.org/downloads/latest-release/
+<https://www.soapui.org/downloads/latest-release/>

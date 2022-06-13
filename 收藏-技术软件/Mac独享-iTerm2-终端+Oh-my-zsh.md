@@ -2,7 +2,7 @@ iTerm2是 Terminal 的替代品，也是 iTerm 的继承者。 它适用于 macO
 
 ## iTerm
 
-官网 https://www.iterm2.com/
+官网 <https://www.iterm2.com/>
 
 下载的是压缩文件，解压后是执行程序文件，你可以直接双击，或者直接将它拖到 Applications 目录下。
 或者你可以直接使用 Homebrew 进行安装：
@@ -371,7 +371,7 @@ After installing nerd-fonts and configuring your terminal emulator to use one, c
 去掉左侧默认的命令提示符为 user@userdemackbookPro，这样的提示符配合 powerlevel9k 主题太过冗长，因此我选择将该冗长的提示符去掉，在 ~/.zshrc 配置文件后面追加如下内容：
 
 ```prop
-# 默认主题 
+# 默认主题
 # ZSH_THEME="robbyrussell"
 
 # 使用powerlevel9k主题
