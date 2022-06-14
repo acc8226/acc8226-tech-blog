@@ -9,7 +9,7 @@
 
 ## 输入法-搜狗
 
-可选Win系统自带或这次推荐的 [搜狗输入法智慧版](https://pinyin.sogou.com/zhihui/), 无广告不解释。处理日常使用外还能表情斗图
+可选 Win 系统自带或这次推荐的 [搜狗输入法智慧版](https://pinyin.sogou.com/zhihui/), 无广告不解释。处理日常使用外还能表情斗图
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-fb48650d650984ec.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -17,20 +17,20 @@
 
 推荐 [360压缩](http://yasuo.360.cn/), 永久免费, 无广告弹窗，不折腾。
 
-## 截图软件 [Snipaste](https://zh.snipaste.com/) 
+## 截图软件 [Snipaste](https://zh.snipaste.com/)
 
  一个简单但强大的截图工具 --- [点击了解更多](https://www.jianshu.com/p/e9e0a77d8d7a)
 > Snipaste 是一个强大的截图工具，可以让你将截图贴回到屏幕上！按下 F1 来开始截图，再按 F3，截图就在桌面置顶显示了。就这么简单！
 >
 > 你还可以将剪贴板里的文字或者颜色信息转化为图片窗口，并且将它们进行缩放、旋转、翻转、设为半透明，甚至让鼠标能穿透它们！如果你大部分工作时间都在电脑前，贴图功能将改变你的工作方式、提升工作效率。
 
-## [护眼软件-flux](https://www.jianshu.com/p/455b9637db33) 
+## [护眼软件-flux](https://www.jianshu.com/p/455b9637db33)
 
 f.lux - 全天候保护眼睛健康软件！自动调整屏幕色温减少蓝光防疲劳，长时间玩电脑必备！
 
 ## 合集下载地址
 
-https://share.weiyun.com/9ffNrDMg
+<https://share.weiyun.com/9ffNrDMg>
 
 ## 结束语
 
