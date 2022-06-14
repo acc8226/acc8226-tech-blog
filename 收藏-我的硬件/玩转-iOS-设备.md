@@ -1,8 +1,8 @@
-一直沉迷于各种 App, 这里闲谈些App, 顺便夸夸iOS的生态(很好)
+一直沉迷于各种 App, 这里闲谈些 App, 顺便夸夸 iOS 的生态(很好)。
 
 这里写下我的推荐的(微信, 微博这种就算了)
 
-买了个iPhone作为日常用机, 4.7寸屏幕拥有较好的握持感. 但看视频肯定屏幕太小, 作为办公用途, 挑选了我用过的必备的App
+买了个 iPhone 作为日常用机, 4.7寸 屏幕拥有较好的握持感。但看视频肯定屏幕太小, 作为办公用途, 挑选了我用过的必备的App
 
 ## 主桌面
 
@@ -43,14 +43,10 @@
 ### 正考虑加入的 APP
 
 * 腾讯TIM (嫌弃手机QQ太臃肿了)
-* 收藏云书签 (随时随地收藏, 可配合kindle, evernote, wechat, weibo, 可调用系统分享, 离线阅读, 还有PC浏览器插件配合)
-
-## 后来手头的小米手机成了备用![](https://upload-images.jianshu.io/upload_images/1662509-3b1988671c31fc11.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## iPad资源
 
-* 其实有了苹果手机, 该迁移的资源都迁移了一部分. iPad mini 1就盖了几年泡面, 然后有点儿卡, 不如手头的华为 M3 平板.
-* 当然它拥有 iOS 无可取代的可玩性. 常用几类: 影音  阅读 办公 游戏.也是应接不暇.
+* 其实有了苹果手机, 该迁移的资源都迁移了一部分. iPad mini 1 已经盖了几年泡面, 有点儿卡了。不如手头的华为 M3 平板给力。
+* 当然它拥有 iOS 无可取代的可玩性. 常用几类: 影音  阅读 办公 游戏.也是应接不暇。
 
- 等时机一到, 我再换 Pad的
-![截图当纪念](https://upload-images.jianshu.io/upload_images/1662509-0daad5d880393ba9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![截图当纪念](./imgs/%E7%8E%A9%E8%BD%AC-iOS-%E8%AE%BE%E5%A4%87/1662509-0daad5d880393ba9.png)
