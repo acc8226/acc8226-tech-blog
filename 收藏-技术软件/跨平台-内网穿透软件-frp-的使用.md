@@ -135,4 +135,4 @@ linux：nohup 不生成 nohup.out 的方法
 ## 软件下载
 
 Releases · fatedier/frp
-https://github.com/fatedier/frp/releases
+<https://github.com/fatedier/frp/releases>
