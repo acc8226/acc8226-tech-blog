@@ -10,7 +10,7 @@
 
 ### NetSpeedMonitor - 一款监控 windows 的网速监控软件
 
-我一直想找一款可以搜寻所有 wifi 接入设备的软件, 用于替代 mac 平台的 LanScan for mac. 就找到这个了。
+我一直想找一款可以搜寻所有 wifi 接入设备的软件, 用于替代 mac 平台的 LanScan for mac，于是乎就找到这个了。
 
 > NetSpeedMonitor 是一个免费的实用工具，你可以使用它来观察你的网络连接速度。在它的帮助下，您可以跟踪网络问题，分析传输的数据量，并查看每月的流量统计数据。Florian Gilles 开发的轻量级 Windows 软件易于使用，并允许您直接从任务栏查看下载和上传速度。
 
@@ -19,19 +19,21 @@ NetSpeedMonitor
 
 如果存在兼容性问题，可以选择使用兼容模式
 
- ![](https://upload-images.jianshu.io/upload_images/1662509-ed869bc2e8590350.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](./imgs/Win%E6%95%99%E7%A8%8B%E5%8A%A0%E9%A4%90-%E8%BD%AF%E4%BB%B6%E5%A2%9E%E5%BC%BA%E5%90%88%E9%9B%86/1662509-1efd1288fd0f162a.png)
 
 打开之后如果发现状态栏并没有出现变化。这个时候应该鼠标右键点击状态栏的空白处，然后在“工具栏”中将 netspeedmonitor 勾选
 
-![](https://upload-images.jianshu.io/upload_images/1662509-08b638c387f77511.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](./imgs/Win%E6%95%99%E7%A8%8B%E5%8A%A0%E9%A4%90-%E8%BD%AF%E4%BB%B6%E5%A2%9E%E5%BC%BA%E5%90%88%E9%9B%86/1662509-08b638c387f77511.png)
 
 右键进入 Configuration
-![](https://upload-images.jianshu.io/upload_images/1662509-08366b84d99ddab2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![](./imgs/Win%E6%95%99%E7%A8%8B%E5%8A%A0%E9%A4%90-%E8%BD%AF%E4%BB%B6%E5%A2%9E%E5%BC%BA%E5%90%88%E9%9B%86/1662509-08366b84d99ddab2.png)
 
 在弹出的窗口中选择你正在使用的网卡，然后点击确定就可以了。
-![](https://upload-images.jianshu.io/upload_images/1662509-1efd1288fd0f162a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-![最终效果](https://upload-images.jianshu.io/upload_images/1662509-4728bc1e918520b9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](./imgs/Win%E6%95%99%E7%A8%8B%E5%8A%A0%E9%A4%90-%E8%BD%AF%E4%BB%B6%E5%A2%9E%E5%BC%BA%E5%90%88%E9%9B%86/1662509-1efd1288fd0f162a.png)
+
+![最终效果](./imgs/Win%E6%95%99%E7%A8%8B%E5%8A%A0%E9%A4%90-%E8%BD%AF%E4%BB%B6%E5%A2%9E%E5%BC%BA%E5%90%88%E9%9B%86/1662509-4728bc1e918520b9.png)
 
 ### Advanced IP Scanner – 免费下载网络扫描程序
 

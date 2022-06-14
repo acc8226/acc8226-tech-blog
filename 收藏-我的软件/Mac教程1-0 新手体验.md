@@ -140,7 +140,7 @@ Command + control + F 或者 点击左上角绿色按钮
 * 查看“时区”偏好设置
 * 查看“语言与地区”偏好设置
 
-https://support.apple.com/zh-cn/HT203413
+<https://support.apple.com/zh-cn/HT203413>
 
 ### macOS 使用手册
 
