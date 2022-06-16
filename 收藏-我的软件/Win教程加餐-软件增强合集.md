@@ -14,7 +14,7 @@
 
 > NetSpeedMonitor 是一个免费的实用工具，你可以使用它来观察你的网络连接速度。在它的帮助下，您可以跟踪网络问题，分析传输的数据量，并查看每月的流量统计数据。Florian Gilles 开发的轻量级 Windows 软件易于使用，并允许您直接从任务栏查看下载和上传速度。
 
-NetSpeedMonitor
+NetSpeedMonitor 官网
 <https://netspeedmonitor64.en.softonic.com/>
 
 如果存在兼容性问题，可以选择使用兼容模式
