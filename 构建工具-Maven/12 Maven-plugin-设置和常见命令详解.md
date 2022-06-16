@@ -1,0 +1,306 @@
+## 核心 Plugin
+
+### [Clean Plugin](http://maven.apache.org/plugins/maven-clean-plugin/)
+
+The Clean Plugin is used when you want to remove files generated at build-time in a project's directory.
+
+跳过 Clean
+
+```sh
+mvn clean -Dmaven.clean.skip=true
+```
+
+### [Resources Plugin](http://maven.apache.org/plugins/maven-resources-plugin/)
+
+### [Compiler Plugin](http://maven.apache.org/plugins/maven-compiler-plugin/)
+
+[JDK 1.8 及之前] Setting the -source and -target of the Java Compiler
+
+```xml
+<project>
+  [...]
+  <properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+  [...]
+</project>
+```
+
+或直接配置插件:
+
+```xml
+<project>
+  [...]
+  <build>
+    [...]
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+    </plugins>
+    [...]
+  </build>
+  [...]
+</project>
+```
+
+[JDK 9 及之之后]  To target Java 9 or later, you should at least use version 3.6.0 of the maven-compiler-plugin and set the maven.compiler.release property to the Java release you are targetting (e.g. 9, 10, 11, 12, etc.).
+
+```xml
+    <properties>
+        <maven.compiler.release>11</maven.compiler.release>
+    </properties>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.8.1</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+```
+
+### Surefire
+
+Maven Surefire Plugin – Introduction http://maven.apache.org/surefire/maven-surefire-plugin/
+
+### [Install Plugin](http://maven.apache.org/plugins/maven-install-plugin/)
+
+The Install Plugin has 3 goals:
+
+* [install:install](http://maven.apache.org/plugins/maven-install-plugin/install-mojo.html) is used to automatically install the project's main artifact (the JAR, WAR or EAR), its POM and any attached artifacts (sources, javadoc, etc) produced by a particular project. 在大多数情况下，install: install 目标不需要任何配置，它需要在默认构建生命周期的安装阶段安装项目的 POM 和工件文件。
+* [install:install-file](http://maven.apache.org/plugins/maven-install-plugin/install-file-mojo.html) is mostly used to install an externally created artifact into the local repository, along with its POM. In that case the project information can be taken from an optionally specified pomFile, but can also be given using command line parameters.
+* [install:help](http://maven.apache.org/plugins/maven-install-plugin/help-mojo.html) displays help information on maven-install-plugin.
+
+如果 JAR 是由 Apache Maven 构建的，那么它将在 META-INF 目录的子文件夹中包含 pom.xml，默认情况下将读取该文件夹。在这种情况下，你需要做的就是:
+
+```sh
+mvn org.apache.maven.plugins:maven-install-plugin:3.0.0:install-file \
+-Dfile=<path-to-file>
+````
+
+Apache maven 安装插件可以在本地存储库中包含预先构建的自定义 POM 和工件。只需将 pomFile 参数的值设置为自定义 POM 的路径。
+
+```sh
+mvn org.apache.maven.plugins:maven-install-plugin:3.0.0:install-file \
+-Dfile=path-to-your-artifact-jar \
+-DpomFile=path-to-pom
+```
+
+有时候你没有第三方工件的 POM。例如，在存储库中安装专有的或商业的 JAR 时。在这种情况下，Install Plugin 可以创建一个泛型 POM，其中包含 Maven 所需的最小 POM 元素集，例如 groupId、 artifactId、 version、 packaging。您可以通过将 generatePom 参数设置为 true 来告诉 Maven 生成 POM。
+
+```sh
+mvn org.apache.maven.plugins:maven-install-plugin:3.0.0:install-file  \
+-Dfile=path-to-your-artifact-jar \
+-DgroupId=your.groupId \
+-DartifactId=your-artifactId \
+-Dversion=version \
+-Dpackaging=jar \
+-DgeneratePom=true
+```
+
+**将工件安装到特定的本地存储库路径**
+Apache Maven Install Plugin 使用 settings.xml 中定义的本地存储库来安装工件。
+您可以通过在安装时设置 localRepositoryPath 参数在特定的本地存储库上安装构件。
+
+```sh
+mvn org.apache.maven.plugins:maven-install-plugin:3.0.0-M1:install-file  -Dfile=path-to-your-artifact-jar \
+                                                                              -DgroupId=your.groupId \
+                                                                              -DartifactId=your-artifactId \
+                                                                              -Dversion=version \
+                                                                              -Dpackaging=jar \
+                                                                              -DlocalRepositoryPath=path-to-specific-local-repo
+```
+
+**安装辅助工件**
+有时候，在本地存储库中安装了主要构件之后，您需要安装辅助构件。要安装辅助构件，您需要使用分类器参数对辅助构件进行分类。
+
+假设您想为一个旧的工件安装源代码，比如 commons-logging-1.0.3。中央存储库只有该版本的主要构件和 -javadoc 构件。将源文件打包到本地磁盘上的 JAR 文件中，然后运行以下命令:
+
+```sh
+mvn org.apache.maven.plugins:maven-install-plugin:3.0.0:install-file  -Dfile=path-to-commons-logging-sources.jar \
+                                                                              -DgroupId=commons-logging \
+                                                                              -DartifactId=commons-logging \
+                                                                              -Dversion=1.0.3 \
+                                                                              -Dpackaging=jar \
+                                                                              -Dclassifier=sources
+```
+
+### Deploy Plugin
+
+Apache Maven Deploy Plugin – Introduction http://maven.apache.org/plugins/maven-deploy-plugin/
+
+### Site Plugin
+
+Apache Maven Site Plugin – Introduction http://maven.apache.org/plugins/maven-site-plugin/
+
+## Packaging types/tools
+
+### [Jar Plugin](http://maven.apache.org/plugins/maven-jar-plugin/index.html)
+
+Goals Overview
+
+* [jar:jar](http://maven.apache.org/plugins/maven-jar-plugin/jar-mojo.html) create a jar file for your project classes inclusive resources.
+* [jar:test-jar](http://maven.apache.org/plugins/maven-jar-plugin/test-jar-mojo.html) create a jar file for your project test classes.
+
+### [Shade Plugin](http://maven.apache.org/plugins/maven-shade-plugin/index.html)
+
+这个插件提供了打包到一个 uber-jar 中的功能。
+
+### [Source Plugin](http://maven.apache.org/plugins/maven-source-plugin/index.html)
+
+The Source Plugin has five goals:
+
+* [source:aggregate](http://maven.apache.org/plugins/maven-source-plugin/aggregate-mojo.html) aggregrates sources for all modules in an aggregator project.
+* [source:jar](http://maven.apache.org/plugins/maven-source-plugin/jar-mojo.html) is used to bundle the main sources of the project into a jar archive.
+* [source:test-jar](http://maven.apache.org/plugins/maven-source-plugin/test-jar-mojo.html) on the other hand, is used to bundle the test sources of the project into a jar archive.
+* [source:jar-no-fork](http://maven.apache.org/plugins/maven-source-plugin/jar-no-fork-mojo.html) is similar to **jar** but does not fork the build lifecycle.
+* [source:test-jar-no-fork](http://maven.apache.org/plugins/maven-source-plugin/test-jar-no-fork-mojo.html) is similar to **test-jar** but does not fork the build lifecycle.
+
+为当前项目的源文件创建一个 JAR 归档。
+
+使用 Maven 打包 SpringBoot 项目将源码 source.jar
+
+```xml
+<build>
+		<plugins>
+			<plugin>
+  				<groupId>org.apache.maven.plugins</groupId>
+  				<artifactId>maven-source-plugin</artifactId>
+  				<version>3.2.1</version>
+  				<executions>
+					<execution>
+						<id>attach-sources</id>
+				  		<phase>verify</phase>
+				  		<goals>
+							<goal>jar-no-fork</goal>
+			  			</goals>
+			  		</execution>
+				</executions>
+  			</plugin>
+	  </plugins>
+</build>
+```
+
+因为必须在 deploy 之前要先把 source.jar 生成出来，deploy 插件才能识别target 路径下的 jar 并进行上传，所以推荐将 jar-no-fork 绑定在 verify 流程节点上。
+
+> 需要注意的是，dependencies 和 dependencyManagement 均是 project 下的直接子元素，但是 plugins 和 pluginManagement 却是 project 下 build 的直接子元素。
+
+## Tools 插件
+
+### archetype 插件
+
+Maven 使用原型 archetype 插件**创建项目**。archetype 也就是原型，是一个 Maven 插件，准确说是一个项目模板，它的任务是根据模板创建一个项目结构。
+
+创建目录的两种方式:
+
+1. archetype:generate 按照提示进行选择
+2. archetype:generate -D参数
+
+已知 archetypeArtifactId 有多种, 常用的有 `maven-archetype-webapp` 和 `maven-archetype-quickstart`。要创建一个简单的 Java 应用，我们将使用 maven-archetype-quickstart 插件。
+
+Windows 下可键入：
+
+```sh
+mvn archetype:generate ^
+-DarchetypeGroupId=org.apache.maven.archetypes ^
+-DarchetypeArtifactId=maven-archetype-quickstart ^
+-DarchetypeVersion=1.4 ^
+-DgroupId=com.abc ^
+-DartifactId=restaurant ^
+-Dversion=1.0-SNAPSHOT ^
+-Dpackage=com.abc.restaurant ^
+-DinteractiveMode=false
+```
+
+参考说明：
+
+* -DarchetypeArtifactId: 指定 ArchetypeId，maven-archetype-quickstart，创建一个简单的 Java 应用
+* -DinteractiveMode: 是否使用交互模式
+* -DgroupId=组织名, 公司网址的反写+项目名
+* -DartifactId=项目名-模块名
+* -Dversion=版本号
+* -Dpackage=代码所存在的包名
+
+### [help 插件](http://maven.apache.org/plugins/maven-help-plugin/)
+
+查看当前处于激活状态的 profile
+
+```sh
+mvn help:active-profiles
+```
+
+检查当前 Maven 环境启用的文件
+
+```sh
+mvn help:effective-settings
+```
+
+查看当前项目的pom配置，包括所有依赖
+
+```sh
+mvn help:effective-pom
+```
+
+打印所有可用的环境变量和 Java 系统属性
+
+```sh
+mvn help:system
+```
+
+## 其他插件
+
+### Tomcat 插件
+
+详细帮助
+`mvn help:describe -Dplugin=tomcat7`
+
+使用带 groupId 的全限定名，例子如下：
+`mvn help:describe -Dplugin=org.apache.tomcat.maven:tomcat7-maven-plugin:2.2`
+
+tomcat 命令
+
+```sh
+* $ mvn tomcat7:run
+* $ mvn tomcat:deploy
+* $ mvn tomcat:undeploy
+```
+
+## 常见命令
+
+```sh
+mvn [options] [<goal(s)>] [<phase(s)>]
+```
+
+指定使用某个配置文件执行 Maven 命令
+
+```sh
+mvn -s <filepath> <goal>
+mvn -s ~/.m2/settings_local.xml clean deploy
+```
+
+查看当前项目的所有 mvn 配置
+
+```sh
+mvn -X
+```
+
+`mvn archetype:generate` 使用模板生成项目
+`mvn compile` 编译源代码
+`mvn test` 跑单元测试
+`mvn package` 打包
+`mvn deploy` 部署
+`mvn site` 生成站点
+`mvn clean` 清理
+`mvn install` 安装

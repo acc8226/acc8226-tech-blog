@@ -1,0 +1,248 @@
+Maven 构建生命周期定义了一个项目构建跟发布的过程。
+
+> Maven defines 3 lifecycles in META-INF/plexus/components.xml。
+
+一个典型的 Maven 构建（build）生命周期是由以下几个阶段的序列组成的：
+
+![](https://upload-images.jianshu.io/upload_images/1662509-1dd4c3b64d843e6d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+为了完成 default 生命周期，这些阶段（包括其他未在上面罗列的生命周期阶段）将被按顺序地执行。
+
+Maven 有以下三个标准的生命周期：
+
+* **clean**：项目清理的处理
+* **default**(或 build)：项目部署的处理
+* **site**：项目站点文档创建的处理
+
+## Clean 生命周期
+
+clean 的生命周期是直接通过其插件绑定定义的。
+
+```xml
+<phases>
+  <phase>pre-clean</phase>
+  <phase>clean</phase>
+  <phase>post-clean</phase>
+</phases>
+<default-phases>
+  <clean>
+    org.apache.maven.plugins:maven-clean-plugin:2.5:clean
+  </clean>
+</default-phases>
+```
+
+当我们执行 mvn post-clean 命令时，Maven 调用 clean 生命周期，它包含以下阶段：
+
+pre-clean：执行一些需要在clean之前完成的工作
+clean：移除所有上一次构建生成的文件
+post-clean：执行一些需要在clean之后立刻完成的工作
+mvn clean 中的 clean 就是上面的 clean，在一个生命周期中，运行某个阶段的时候，它之前的所有阶段都会被运行，也就是说，如果执行 mvn clean 将运行以下两个生命周期阶段：
+
+```text
+pre-clean, clean
+```
+
+如果我们运行 mvn post-clean ，则运行以下三个生命周期阶段：
+
+```text
+pre-clean, clean, post-clean
+```
+
+我们可以通过在上面的 clean 生命周期的任何阶段定义目标来修改这部分的操作行为。Clean 生命周期
+当我们执行 `mvn post-clean` 命令时，Maven 调用 clean 生命周期，它包含以下阶段：
+
+pre-clean：执行一些需要在clean之前完成的工作
+clean：移除所有上一次构建生成的文件
+post-clean：执行一些需要在clean之后立刻完成的工作
+mvn clean 中的 clean 就是上面的 clean，在一个生命周期中，运行某个阶段的时候，它之前的所有阶段都会被运行，也就是说，如果执行 mvn clean 将运行以下两个生命周期阶段：
+
+```text
+pre-clean, clean
+```
+
+如果我们运行 mvn post-clean ，则运行以下三个生命周期阶段：
+
+```text
+pre-clean, clean, post-clean
+```
+
+我们可以通过在上面的 clean 生命周期的任何阶段定义目标来修改这部分的操作行为。
+
+## 构建阶段由插件目标构成
+
+一个插件目标代表一个特定的任务（比构建阶段更为精细），这有助于项目的构建和管理。这些目标可能被绑定到多个阶段或者无绑定。不绑定到任何构建阶段的目标可以在构建生命周期之外通过直接调用执行。这些目标的执行顺序取决于调用目标和构建阶段的顺序。
+
+例如，考虑下面的命令：
+clean 和 pakage 是构建阶段，dependency:copy-dependencies 是目标
+
+```text
+mvn clean dependency:copy-dependencies package
+```
+
+这里的 clean 阶段将会被首先执行，然后 dependency:copy-dependencies 目标会被执行，最终 package 阶段被执行。
+
+## Default (Build) 生命周期
+
+这是 Maven 的主要生命周期，被用于构建应用。
+
+有一些与 Maven 生命周期相关的重要概念需要说明：
+
+当一个阶段通过 Maven 命令调用时，例如 mvn compile，只有该阶段之前以及包括该阶段在内的所有阶段会被执行。
+
+不同的 maven 目标将根据打包的类型（JAR / WAR / EAR），被绑定到不同的 Maven 生命周期阶段。
+
+缺省生命周期的定义没有任何相关的插件，这个生命周期的插件绑定是为每个包分别定义的。
+
+maven-core-3.x.y.jar/META-INF/plexus/default-bindings.xml 定义了针对不同打包类型的default生命周期的绑定.
+
+```xml
+<phases>
+  <phase>validate</phase>
+  <phase>initialize</phase>
+  <phase>generate-sources</phase>
+  <phase>process-sources</phase>
+  <phase>generate-resources</phase>
+  <phase>process-resources</phase>
+  <phase>compile</phase>
+  <phase>process-classes</phase>
+  <phase>generate-test-sources</phase>
+  <phase>process-test-sources</phase>
+  <phase>generate-test-resources</phase>
+  <phase>process-test-resources</phase>
+  <phase>test-compile</phase>
+  <phase>process-test-classes</phase>
+  <phase>test</phase>
+  <phase>prepare-package</phase>
+  <phase>package</phase>
+  <phase>pre-integration-test</phase>
+  <phase>integration-test</phase>
+  <phase>post-integration-test</phase>
+  <phase>verify</phase>
+  <phase>install</phase>
+  <phase>deploy</phase>
+</phases>
+```
+
+## Site 生命周期
+
+Maven Site 插件一般用来创建新的报告文档、部署站点等。
+
+site 的生命周期是直接通过其插件绑定定义的。
+
+```xml
+<phases>
+  <phase>pre-site</phase>
+  <phase>site</phase>
+  <phase>post-site</phase>
+  <phase>site-deploy</phase>
+</phases>
+<default-phases>
+  <site>
+    org.apache.maven.plugins:maven-site-plugin:3.3:site
+  </site>
+  <site-deploy>
+    org.apache.maven.plugins:maven-site-plugin:3.3:deploy
+  </site-deploy>
+</default-phases>
+```
+
+* pre-site：执行一些需要在生成站点文档之前完成的工作
+* site：生成项目的站点文档
+* post-site： 执行一些需要在生成站点文档之后完成的工作，并且为部署做准备
+* site-deploy：将生成的站点文档部署到特定的服务器上
+这里经常用到的是site阶段和site-deploy阶段，用以生成和发布Maven站点
+
+### Plugin bindings for jar packaging
+
+```xml
+<phases>
+  <process-resources>
+    org.apache.maven.plugins:maven-resources-plugin:2.6:resources
+  </process-resources>
+  <compile>
+    org.apache.maven.plugins:maven-compiler-plugin:3.1:compile
+  </compile>
+  <process-test-resources>
+    org.apache.maven.plugins:maven-resources-plugin:2.6:testResources
+  </process-test-resources>
+  <test-compile>
+    org.apache.maven.plugins:maven-compiler-plugin:3.1:testCompile
+  </test-compile>
+  <test>
+    org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test
+  </test>
+  <package>
+    org.apache.maven.plugins:maven-jar-plugin:2.4:jar
+  </package>
+  <install>
+    org.apache.maven.plugins:maven-install-plugin:2.4:install
+  </install>
+  <deploy>
+    org.apache.maven.plugins:maven-deploy-plugin:2.7:deploy
+  </deploy>
+</phases>
+```
+
+## Maven 插件
+
+Maven 有以下三个标准的生命周期：
+
+* clean：项目清理的处理
+* default 或 build：项目部署的处理
+* site：项目站点文档创建的处理
+
+每个生命周期中都包含着一系列的阶段(phase)。这些 phase 就相当于 Maven 提供的统一的接口，然后这些 phase 的实现由 Maven 的插件来完成。
+
+我们在输入 mvn 命令的时候 比如 mvn clean，clean 对应的就是 Clean 生命周期中的 clean 阶段。但是 clean 的具体操作是由 maven-clean-plugin 来实现的。所以说 Maven 生命周期的每一个阶段的具体实现都是由 Maven 插件实现的。
+
+Maven 实际上是一个依赖插件执行的框架，每个任务实际上是由插件完成。Maven 插件通常被用来：
+
+* 创建 jar 文件
+* 创建 war 文件
+* 编译代码文件
+* 代码单元测试
+* 创建工程文档
+* 创建工程报告
+
+插件通常提供了一个目标的集合，并且可以使用下面的语法执行：
+
+```bash
+mvn [plugin-name]:[goal-name]
+```
+
+例如，一个 Java 工程可以使用 maven-compiler-plugin 的 compile-goal 编译，使用以下命令：
+
+```bash
+mvn compiler:compile
+```
+
+## 插件类型
+
+Maven 提供了下面两种类型的插件：
+
+* Build plugins	在构建时执行，并在 pom.xml 的 元素中配置。
+* Reporting plugins	在网站生成过程中执行，并在 pom.xml 的 元素中配置。
+
+下面是一些常用插件的列表：
+
+插件描述
+
+* clean 构建之后清理目标文件。删除目标目录。
+* compiler 编译 Java 源文件。
+* surefile 运行 JUnit 单元测试。创建测试报告。
+* jar 从当前工程中构建 JAR 文件。
+* war 从当前工程中构建 WAR 文件。
+* javadoc 为工程生成 Javadoc。
+* antrun 从构建过程的任意一个阶段中运行一个 ant 任务的集合。
+
+## 插件相关概念
+
+插件是在 pom.xml 中使用 plugins 元素定义的。
+每个插件可以有多个目标。
+你可以定义阶段，插件会使用它的 phase 元素开始处理。我们已经使用了 clean 阶段。
+你可以通过绑定到插件的目标的方式来配置要执行的任务。
+
+## 参考
+
+Maven 构建生命周期 | 菜鸟教程
+<https://www.runoob.com/maven/maven-build-life-cycle.html>
