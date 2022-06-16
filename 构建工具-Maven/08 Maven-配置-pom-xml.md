@@ -4,11 +4,11 @@
 * 用户级 （Per User）定义在Maven的设置 xml 文件中
 * 项目级（Per Project）定义在项目的POM文件 pom.xml 中
 
-前者又被叫做全局配置，对操作系统的所有使用者生效；后者被称为用户配置，只对当前操作系统的使用者生效。如果两者都存在，它们的内容将被合并，并且用户范围的 settings.xml 会覆盖全局的 settings.xml。
+前者又被叫做全局配置，对操作系统的所有使用者生效；后者被称为用户配置，只对当前操作系统的使用者生效。如果两者都存在，它们的内容将被合并，并且用户范围的 `settings.xml` 会覆盖全局的 `settings.xml`。
 
-Maven 安装后，用户目录下不会自动生成 settings.xml，只有全局配置文件。如果需要创建用户范围的 settings.xml，可以将安装路径下的settings 复制到目录 ${user.home}/.m2/。Maven 默认的 settings.xml 是一个包含了注释和例子的模板，可以快速的修改它来达到你的要求。
+Maven 安装后，用户目录下不会自动生成 settings.xml，只有全局配置文件。如果需要创建用户范围的 settings.xml，可以将安装路径下的 settings 复制到目录 ${user.home}/.m2/。Maven 默认的 settings.xml 是一个包含了注释和例子的模板，可以快速的修改它来达到你的要求。
 
-全局配置一旦更改，所有的用户都会受到影响，而且如果maven进行升级，所有的配置都会被清除，所以要提前复制和备份 ${M2_HOME}/conf/settings.xml 文件，一般情况下不推荐配置全局的 settings.xml。
+全局配置一旦更改，所有的用户都会受到影响，而且如果maven进行升级，所有的配置都会被清除，所以要提前复制和备份 `${M2_HOME}/conf/settings.xml` 文件，一般情况下不推荐配置全局的 `settings.xml`。
 
 ## 配置文件激活
 
@@ -62,7 +62,7 @@ mvn test -Pnormal
 ```
 
 3.2 通过环境变量
-在 pom.xml 里面的 <id> 为 test 的 <profile> 节点，加入 <activation> 节点
+在 pom.xml 里面的`<id>`为 test 的 `<profile>` 节点，加入 `<activation>` 节点
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-cdbcd7dafc91fece.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -72,7 +72,7 @@ mvn test -Pnormal
 mvn test -Denv=test
 ```
 
-提示 1：上面使用 -D 传递环境变量，其中 evn 对应刚才设置的 <name> 值，test 对应<value>。
+提示 1：上面使用 -D 传递环境变量，其中 evn 对应刚才设置的 `<name>` 值，test 对应`<value>`。
 
 提示 2：在 Windows 10 上测试了系统的环境变量，但是不生效，所以，只能通过 -D 传递。
 

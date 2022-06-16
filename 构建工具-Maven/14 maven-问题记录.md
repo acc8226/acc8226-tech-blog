@@ -8,7 +8,7 @@
 
 * 方法二：在repository 的 release 或者 snapshots 版本中新增 updatePolicy 属性，设置为”always”、”daily” (默认)、”interval:XXX” (分钟)或”never”。这里设置为 always，表示强制每次都更新依赖库。
 
-* 方法三：maven命令后加-U，如mvn package -U【推荐】
+* 方法三：maven命令后加 -U，如 mvn package -U【推荐】
 
 ### 单元测试编写好, 但是不执行
 
@@ -81,7 +81,7 @@ b.如果 B 不用 SNAPSHOT, 但一直使用一个单一的 Release 版本号，�
 
 ### maven 中配置多个 mirror 的问题
 
-有个小伙伴遇到一个疑问：他的工作笔记本，在公司用部门搭建的maven私服做镜像，回到家用 aliyun 的镜像，每次都要改配置文件，很麻烦，希望能够不改动配置文件的情况下，动态切换mirror配置。
+有个小伙伴遇到一个疑问：他的工作笔记本，在公司用部门搭建的maven私服做镜像，回到家用 aliyun 的镜像，每次都要改配置文件，很麻烦，希望能够不改动配置文件的情况下，动态切换 mirror 配置。
 
 我们知道 settings.xml 中可以使用变量，可以尝试使用变量解决。
 

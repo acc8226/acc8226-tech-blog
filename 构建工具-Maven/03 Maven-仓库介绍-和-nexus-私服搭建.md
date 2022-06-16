@@ -85,8 +85,8 @@ Maven 中央仓库是由 Maven 社区提供的仓库，其中包含了大量常�
 
 ## 私服 nexus 的特性
 
-nexus 私服实际上是一个 javaEE的 web 系统
-作用:用来管理一个公司所有的 jar 包,实现项目jar包的版本统一。
+nexus 私服实际上是一个 javaEE 的 web 系统
+作用:用来管理一个公司所有的 jar 包,实现项目 jar 包的版本统一。
 jar下载搜索顺序：本地仓库 -->  nexus私服 或者 Maven中央库.
 
 ## 为什么需要私服

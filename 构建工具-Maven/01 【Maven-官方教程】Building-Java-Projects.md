@@ -38,7 +38,7 @@ public class Greeter {
 
 ## Define a simple Maven build
 
-准备好Maven环境后, 你需要创建一个 Maven 项目的定义。 Maven 项目是用一个名为 pom.XML 的 XML 文件定义的。 除此之外, 这个文件提供了项目的名称、版本和它对外部库的依赖。
+准备好 Maven 环境后, 你需要创建一个 Maven 项目的定义。 Maven 项目是用一个名为 pom.XML 的 XML 文件定义的。 除此之外, 这个文件提供了项目的名称、版本和它对外部库的依赖。
 
 Create a file named pom.xml at the root of the project (i.e. put it next to the src folder) and give it the following contents:
 

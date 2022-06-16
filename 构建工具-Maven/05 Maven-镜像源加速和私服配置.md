@@ -86,7 +86,7 @@ settings.xml 在 mirrors 标签中添加 mirror 子节点：
 
 ## 配置华为私有库下载
 
-1. 在 settings.xml 中添加认证信息
+1\. 在 settings.xml 中添加认证信息
 在 Maven 默认 settings.xml 中找到 servers 的部分，添加一个 server 配置如下。
 
 ```xml

@@ -155,11 +155,11 @@ done
 find . -type f -not -path './mavenimport\.sh*' -not -path '*/\.*' -not -path '*/\^archetype\-catalog\.xml*' -not -path '*/\^maven\-metadata\-local*\.xml' -not -path '*/\^maven\-metadata\-deployment*\.xml' | sed "s|^\./||" | xargs -I '{}' curl -u "$USERNAME:$PASSWORD" -X PUT -v -T {} ${REPO_URL}/{} ;
 ```
 
-6.输入chmod a+x mavenimport.sh进行可执行授权
-7.执行导入命令
+6\. 输入chmod a+x mavenimport.sh 进行可执行授权
+7\. 执行导入命令
 
 ```sh
 ./mavenimport.sh -u admin -p admin123 -r http://ip:8081/repository/maven-releases/
 ```
 
-8.等待全部导入完毕后，在 Nexus 上刷新即可看到已导入的 jar。
+8\. 等待全部导入完毕后，在 Nexus 上刷新即可看到已导入的 jar。
