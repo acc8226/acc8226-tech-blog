@@ -17,18 +17,20 @@
 要声明您的应用需要权限，请将 [<uses-permission>
 ](http://developer.android.youdaxue.com/guide/topics/manifest/uses-permission-element.html) 元素置于您的[应用清单](http://developer.android.youdaxue.com/guide/topics/manifest/manifest-intro.html)中，作为顶级 [<manifest>
 ](http://developer.android.youdaxue.com/guide/topics/manifest/manifest-element.html) 元素的子项。例如，需要发送短信的应用可在清单中添加以下代码行：
-``` java
+
+```xml
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
         package="com.example.snazzyapp">
 
     <uses-permission android:name="android.permission.SEND_SMS"/>
-    
+
     <application ...>
         ...
     </application>
 
 </manifest>
 ```
+
 系统在您声明权限之后的行为取决于权限的敏感性。如果权限不影响用户隐私权，系统会自动授权。如果权限可能涉及对敏感用户信息的访问，系统将要求用户审批请求。要了解有关不同种类权限的详细信息，请参阅[正常权限和危险权限](http://developer.android.youdaxue.com/guide/topics/security/permissions.html#normal-dangerous)。
 
 ### 在运行时请求权限(6.0 API 23)
@@ -48,11 +50,13 @@
 
 如果您的应用需要危险权限，则每次执行需要这一权限的操作时您都必须检查自己是否具有该权限。用户始终可以自由调用此权限，因此，即使应用昨天使用了相机，它不能假设自己今天仍具有该权限。
 要检查您是否具有某项权限，请调用 [ContextCompat.checkSelfPermission()](http://developer.android.youdaxue.com/reference/android/support/v4/content/ContextCompat.html#checkSelfPermission(android.content.Context, java.lang.String)) 方法。例如，以下代码段显示了如何检查 Activity 是否具有在日历中进行写入的权限：
-``` java
+
+```java
 // Assume thisActivity is the current activity
 int permissionCheck = ContextCompat.checkSelfPermission(thisActivity,
         Manifest.permission.WRITE_CALENDAR);
 ```
+
 如果应用具有此权限，方法将返回 [PackageManager.PERMISSION_GRANTED](http://developer.android.youdaxue.com/reference/android/content/pm/PackageManager.html#PERMISSION_GRANTED)，并且应用可以继续操作。如果应用不具有此权限，方法将返回[PERMISSION_DENIED](http://developer.android.youdaxue.com/reference/android/content/pm/PackageManager.html#PERMISSION_DENIED)，且应用必须明确向用户要求权限。
 
 ##### 请求权限
@@ -72,7 +76,7 @@ int permissionCheck = ContextCompat.checkSelfPermission(thisActivity,
 果应用尚无所需的权限，则应用必须调用一个 [requestPermissions()](http://developer.android.youdaxue.com/reference/android/support/v4/app/ActivityCompat.html#requestPermissions(android.app.Activity, java.lang.String[], int)) 方法，以请求适当的权限。应用将传递其所需的权限，以及您指定用于识别此权限请求的整型*请求代码*。此方法异步运行：它会立即返回，并且在用户响应对话框之后，系统会使用结果调用应用的回调方法，将应用传递的相同请求代码传递到 [requestPermissions()](http://developer.android.youdaxue.com/reference/android/support/v4/app/ActivityCompat.html#requestPermissions(android.app.Activity, java.lang.String[], int))。
 以下代码可以检查应用是否具备读取用户联系人的权限，并根据需要请求该权限：
 
-``` java
+```java
 // Here, thisActivity is the current activity
 if (ContextCompat.checkSelfPermission(thisActivity,
                 Manifest.permission.READ_CONTACTS)
@@ -107,7 +111,8 @@ if (ContextCompat.checkSelfPermission(thisActivity,
 
 当应用请求权限时，系统将向用户显示一个对话框。当用户响应时，系统将调用应用的 [onRequestPermissionsResult()](https://developer.android.google.cn/reference/android/support/v4/app/ActivityCompat.OnRequestPermissionsResultCallback.html#onRequestPermissionsResult(int, java.lang.String[], int[])) 方法，向其传递用户响应。您的应用必须替换该方法，以了解是否已获得相应权限。回调会将您传递的相同请求代码传递给 [requestPermissions()](https://developer.android.google.cn/reference/android/support/v4/app/ActivityCompat.html#requestPermissions(android.app.Activity, java.lang.String[], int))
 。例如，如果应用请求[READ_CONTACTS](https://developer.android.google.cn/reference/android/Manifest.permission.html#READ_CONTACTS) 访问权限，则它可能采用以下回调方法：
-``` java
+
+```java
 @Override
 public void onRequestPermissionsResult(int requestCode,
         String permissions[], int[] grantResults) {
@@ -150,6 +155,7 @@ public void onRequestPermissionsResult(int requestCode,
 有关 Android 权限的一般信息，请参阅[权限和用户数据](https://developer.android.google.cn/training/articles/user-data-overview.html)。如需了解有关如何在您的代码中使用权限的详情，请参阅[使用系统权限](https://developer.android.google.cn/training/permissions/index.html)。有关使用唯一标识符的最佳做法，请参阅[唯一标识符最佳做法](https://developer.android.google.cn/training/articles/user-data-ids.html)。
 
 使用 Android 权限时，我们建议遵循以下原则：
+
 1. 仅使用您的应用正常工作所需的权限。根据您使用权限的方式，您可以通过其他方式执行您需要的操作（系统 intent、标识符、电话的后台处理），无需依赖敏感信息访问权限。
 2. 请注意库所需的权限。添加某个库时，您也会继承它的权限要求。您应了解您正在添加的库、它们需要的权限以及这些权限的用途。
 3. 公开透明。进行权限请求时，请明确您正在访问的内容以及访问原因，以便用户可以做出明智的决定。在进行权限请求时（包括安装、运行时或更新权限对话框）提供这些信息。

@@ -7,6 +7,7 @@
 [图片上传失败...(image-d1a065-1640352404665)] 定义的项目将打开一个用于更改设置的界面。](http://upload-images.jianshu.io/upload_images/1662509-7d81f5f527202b86.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### 概览
+
 设置是使用您在 XML 文件中声明的 [Preference](https://developer.android.google.cn/reference/android/preference/Preference.html) 类的各种子类构建而成，而不是使用 [View](https://developer.android.google.cn/reference/android/view/View.html) 对象构建用户界面。
 
 [Preference](https://developer.android.google.cn/reference/android/preference/Preference.html) 对象是单个设置的构建基块。每个 [Preference](https://developer.android.google.cn/reference/android/preference/Preference.html) 均作为项目显示在列表中，并提供适当的 UI 供用户修改设置。例如，[CheckBoxPreference](https://developer.android.google.cn/reference/android/preference/CheckBoxPreference.html) 可创建一个列表项用于显示复选框，[ListPreference](https://developer.android.google.cn/reference/android/preference/ListPreference.html) 可创建一个项目用于打开包含选择列表的对话框。
@@ -224,6 +225,7 @@ PreferenceManager.setDefaultValues(this, R.xml.advanced_preferences, false);
 此方法采用三个参数, 第三个参数是一个布尔值，用于指示是否应该多次设置默认值。如果该值为 false，则仅当过去从未调用此方法时（或者默认值共享首选项文件中的 [KEY_HAS_SET_DEFAULT_VALUES](https://developer.android.google.cn/reference/android/preference/PreferenceManager.html#KEY_HAS_SET_DEFAULT_VALUES)为 false 时），系统才会设置默认值。
 
 ### 使用首选项标头
+
 在极少数情况下，您可能需要设计设置，使第一个屏幕仅显示[子屏幕](https://developer.android.google.cn/guide/topics/ui/settings.html#Subscreens)的列表（例如在系统“设置”应用中，如图 4 和图 5 所示）。** 在开发针对 Android 3.0 及更高版本**的此类设计时，您应该使用“标头”功能，而非使用嵌套的 [PreferenceScreen](https://developer.android.google.cn/reference/android/preference/PreferenceScreen.html) 元素构建子屏幕。
 
 要使用标头构建设置，您需要：
@@ -244,19 +246,23 @@ PreferenceManager.setDefaultValues(this, R.xml.advanced_preferences, false);
  将替换标头。](http://upload-images.jianshu.io/upload_images/1662509-36a8614c669eed7e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### 读取首选项
+
 默认情况下，应用的所有首选项均保存到一个可通过调用静态方法 [PreferenceManager.getDefaultSharedPreferences()](https://developer.android.google.cn/reference/android/preference/PreferenceManager.html#getDefaultSharedPreferences(android.content.Context)) 从应用内的任何位置访问的文件中。 这将返回 [SharedPreferences](https://developer.android.google.cn/reference/android/content/SharedPreferences.html) 对象，其中包含与 [PreferenceActivity](https://developer.android.google.cn/reference/android/preference/PreferenceActivity.html) 中所用 [Preference](https://developer.android.google.cn/reference/android/preference/Preference.html) 对象相关的所有键值对。
 例如，从应用中的任何其他 Activity 读取某个首选项值的方法如下：
-``` java
+
+```java
 SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
 String syncConnPref = sharedPref.getString(SettingsActivity.KEY_PREF_SYNC_CONN, "");
 ```
 
 ##### 侦听首选项变更
+
 出于某些原因，您可能希望在用户更改任一首选项时立即收到通知。 要在任一首选项发生更改时收到回调，请实现[SharedPreference.OnSharedPreferenceChangeListener](https://developer.android.google.cn/reference/android/content/SharedPreferences.OnSharedPreferenceChangeListener.html) 接口，并通过调用 [registerOnSharedPreferenceChangeListener()](https://developer.android.google.cn/reference/android/content/SharedPreferences.html#registerOnSharedPreferenceChangeListener(android.content.SharedPreferences.OnSharedPreferenceChangeListener)) 为 [SharedPreferences](https://developer.android.google.cn/reference/android/content/SharedPreferences.html) 对象注册侦听器。
 该接口只有 [onSharedPreferenceChanged()](https://developer.android.google.cn/reference/android/content/SharedPreferences.OnSharedPreferenceChangeListener.html#onSharedPreferenceChanged(android.content.SharedPreferences, java.lang.String)) 一种回调方法，而且您可能会发现在 Activity 过程中实现该接口最为简单。
 
 若要妥善管理 Activity 生命周期，我们建议您在 [onResume()](https://developer.android.google.cn/reference/android/app/Activity.html#onResume()) 和 [onPause()](https://developer.android.google.cn/reference/android/app/Activity.html#onPause()) 回调期间分别注册和注销[SharedPreferences.OnSharedPreferenceChangeListener](https://developer.android.google.cn/reference/android/content/SharedPreferences.OnSharedPreferenceChangeListener.html)。
-``` java
+
+```java
 @Override
 protected void onResume() {
     super.onResume();
@@ -275,7 +281,8 @@ protected void onPause() {
 > **注意：**目前，首选项管理器不会在您调用 [registerOnSharedPreferenceChangeListener()](https://developer.android.google.cn/reference/android/content/SharedPreferences.html#registerOnSharedPreferenceChangeListener(android.content.SharedPreferences.OnSharedPreferenceChangeListener)) 时存储对侦听器的强引用。 但是，您必须存储对侦听器的强引用，否则它将很容易被当作垃圾回收。 我们建议您将对侦听器的引用保存在只要您需要侦听器就会存在的对象的实例数据中。
 
 例如，在以下代码中，调用方未保留对侦听器的引用。 因此，侦听器将容易被当作垃圾回收，并在将来某个不确定的时间失败：
-``` java
+
+```java
 prefs.registerOnSharedPreferenceChangeListener(
   // Bad! The listener is subject to garbage collection!
   new SharedPreferences.OnSharedPreferenceChangeListener() {
@@ -286,6 +293,7 @@ prefs.registerOnSharedPreferenceChangeListener(
 ```
 
 有鉴于此，请将对侦听器的引用存储在只要需要侦听器就会存在的对象的实例数据字段中：
+
 ``` java
 SharedPreferences.OnSharedPreferenceChangeListener listener =
     new SharedPreferences.OnSharedPreferenceChangeListener() {
@@ -297,13 +305,15 @@ prefs.registerOnSharedPreferenceChangeListener(listener);
 ```
 
 ### 管理网络使用情况
+
 从 Android 4.0 开始，通过系统的“设置”应用，用户可以了解自己的应用在前台和后台使用的网络数据量。然后，用户可以据此禁止具体的应用使用后台数据。 为了避免用户禁止您的应用从后台访问数据，您应该有效地使用数据连接，并允许用户通过应用设置优化应用的数据使用。
 
 例如，您可以允许用户控制应用同步数据的频率，控制应用是否仅在有 Wi-Fi 时才执行上传/下载操作，以及控制应用能否在漫游时使用数据，等等。为用户提供这些控件后，即使数据使用量接近他们在系统“设置”中设置的限制，他们也不大可能禁止您的应用访问数据，因为他们可以精确地控制应用使用的数据量。
 
 在 [PreferenceActivity](https://developer.android.google.cn/reference/android/preference/PreferenceActivity.html) 中添加必要的首选项来控制应用的数据使用习惯后，您应立即在清单文件中为 [ACTION_MANAGE_NETWORK_USAGE](https://developer.android.google.cn/reference/android/content/Intent.html#ACTION_MANAGE_NETWORK_USAGE)
  添加 Intent 过滤器。例如：
-```
+
+```xml
 <activity android:name="SettingsActivity" ... >
     <intent-filter>
        <action android:name="android.intent.action.MANAGE_NETWORK_USAGE" />
@@ -315,6 +325,7 @@ prefs.registerOnSharedPreferenceChangeListener(listener);
 此 Intent 过滤器指示系统此 Activity 控制应用的数据使用情况。因此，当用户从系统的“设置”应用检查应用所使用的数据量时，可以使用*“查看应用设置”*按钮启动 [PreferenceActivity](https://developer.android.google.cn/reference/android/preference/PreferenceActivity.html)，这样，用户就能够优化应用使用的数据量。
 
 ### 构建自定义首选项
+
 Android 框架包括各种 [Preference](https://developer.android.google.cn/reference/android/preference/Preference.html) 子类，您可以使用它们为各种不同类型的设置构建 UI。不过，您可能会发现自己需要的设置没有内置解决方案，例如，数字选取器或日期选取器。 在这种情况下，您将需要通过扩展 [Preference](https://developer.android.google.cn/reference/android/preference/Preference.html) 类或其他子类之一来创建自定义首选项。
 
 扩展 [Preference](https://developer.android.google.cn/reference/android/preference/Preference.html) 类时，您需要执行以下几项重要操作：
@@ -326,11 +337,14 @@ Android 框架包括各种 [Preference](https://developer.android.google.cn/ref
 * 如果 [Preference](https://developer.android.google.cn/reference/android/preference/Preference.html) 提供自己的 UI（例如对话框），请保存并恢复状态以处理生命周期变更（例如，用户旋转屏幕）。
 
 下文介绍如何完成所有这些任务。
+
 ##### 指定用户界面
+
 如果您要直接扩展 [Preference](https://developer.android.google.cn/reference/android/preference/Preference.html) 类，则需要实现 [onClick()](https://developer.android.google.cn/reference/android/preference/Preference.html#onClick()) 来定义在用户选择该项时发生的操作。不过，大多数自定义设置都会扩展[DialogPreference](https://developer.android.google.cn/reference/android/preference/DialogPreference.html) 以显示对话框，从而简化这一过程。扩展 [DialogPreference](https://developer.android.google.cn/reference/android/preference/DialogPreference.html) 时，必须在类构造函数中调用 [setDialogLayoutResourcs()](https://developer.android.google.cn/reference/android/preference/DialogPreference.html#setDialogLayoutResource(int))
  来指定对话框的布局。
 
 例如，自定义 [DialogPreference](https://developer.android.google.cn/reference/android/preference/DialogPreference.html) 可以使用下面的构造函数来声明布局并为默认的肯定和否定对话框按钮指定文本：
+
 ``` java
 public class NumberPickerPreference extends DialogPreference {
     public NumberPickerPreference(Context context, AttributeSet attrs) {
@@ -345,18 +359,24 @@ public class NumberPickerPreference extends DialogPreference {
     ...
 }
 ```
+
 ##### [保存设置的值](https://developer.android.google.cn/guide/topics/ui/settings.html#CustomSave)
+
 ##### [初始化当前值](https://developer.android.google.cn/guide/topics/ui/settings.html#CustomInitialize)
+
 ##### [提供默认值](https://developer.android.google.cn/guide/topics/ui/settings.html#CustomDefault)
+
 ##### 保存和恢复首选项的状态
+
 正如布局中的 [View](https://developer.android.google.cn/reference/android/view/View.html) 一样，在重启 Activity 或片段时（例如，用户旋转屏幕），[Preference](https://developer.android.google.cn/reference/android/preference/Preference.html) 子类也负责保存并恢复其状态。要正确保存并恢复[Preference](https://developer.android.google.cn/reference/android/preference/Preference.html) 类的状态，您必须实现生命周期回调方法 [onSaveInstanceState()](https://developer.android.google.cn/reference/android/preference/Preference.html#onSaveInstanceState()) 和 [onRestoreInstanceState()](https://developer.android.google.cn/reference/android/preference/Preference.html#onRestoreInstanceState(android.os.Parcelable))。
 
 [Preference](https://developer.android.google.cn/reference/android/preference/Preference.html) 的状态由实现 [Parcelable](https://developer.android.google.cn/reference/android/os/Parcelable.html) 接口的对象定义。Android 框架为您提供此类对象，作为定义状态对象（[Preference.BaseSavedState](https://developer.android.google.cn/reference/android/preference/Preference.BaseSavedState.html) 类）的起点。
 
 要定义 [Preference](https://developer.android.google.cn/reference/android/preference/Preference.html) 类保存其状态的方式，您应该扩展 [Preference.BaseSavedState](https://developer.android.google.cn/reference/android/preference/Preference.BaseSavedState.html) 类。您只需重写几种方法并定义 [CREATOR](https://developer.android.google.cn/reference/android/preference/Preference.BaseSavedState.html#CREATOR) 对象。
 
-对于大多数应用，如果 [Preference](https://developer.android.google.cn/reference/android/preference/Preference.html) 子类保存除整型数以外的其他数据类型，则可复制下列实现并直接更改处理 value 的行.
-```
+对于大多数应用，如果 [Preference](https://developer.android.google.cn/reference/android/preference/Preference.html) 子类保存除整型数以外的其他数据类型，则可复制下列实现并直接更改处理 value 的行。
+
+```java
 private static class SavedState extends BaseSavedState {
     // Member that holds the setting's value
     // Change this data type to match the type saved by your Preference
@@ -397,6 +417,7 @@ private static class SavedState extends BaseSavedState {
 如果将上述 [Preference.BaseSavedState](https://developer.android.google.cn/reference/android/preference/Preference.BaseSavedState.html) 实现添加到您的应用（通常，作为 [Preference](https://developer.android.google.cn/reference/android/preference/Preference.html) 子类的子类），则需要为 [Preference](https://developer.android.google.cn/reference/android/preference/Preference.html) 子类实现[onSaveInstanceState()](https://developer.android.google.cn/reference/android/preference/Preference.html#onSaveInstanceState()) 和 [onRestoreInstanceState()](https://developer.android.google.cn/reference/android/preference/Preference.html#onRestoreInstanceState(android.os.Parcelable)) 方法。
 
 例如：
+
 ``` java
 @Override
 protected Parcelable onSaveInstanceState() {

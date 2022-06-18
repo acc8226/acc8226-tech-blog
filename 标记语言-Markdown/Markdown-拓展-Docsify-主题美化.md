@@ -22,41 +22,41 @@ https://jhildenbiddle.github.io/docsify-themeable/#/
 
 1. Add the docsify-themeable plugin to your `index.html` after docsify:
 
-   ```html
-   <!-- docsify-themeable (latest v0.x.x) -->
-   <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
-   ```
+```html
+<!-- docsify-themeable (latest v0.x.x) -->
+<script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
+```
 
 1. Review the [Options](options) section and configure as needed. For example:
 
-   ```html
-   <script>
-     window.$docsify = {
-         // ...
-         themeable: {
-             readyTransition : true, // default
-             responsiveTables: true  // default
-         }
-     }
-   </script>
-   ```
+```html
+<script>
+    window.$docsify = {
+        // ...
+        themeable: {
+            readyTransition : true, // default
+            responsiveTables: true  // default
+        }
+    }
+</script>
+```
 
 1. Review the [Customization](customization) section and set theme properties as needed. For example:
 
-   ```html
-   <style>
-     :root {
-       /* Reduce the font size */
-       --base-font-size: 14px;
+```html
+<style>
+    :root {
+    /* Reduce the font size */
+    --base-font-size: 14px;
 
-       /* Change the theme color hue */
-       --theme-hue: 325;
+    /* Change the theme color hue */
+    --theme-hue: 325;
 
-       /* Change the sidebar bullets */
-       --sidebar-nav-link-before-content: '😀';
-     }
-   </style>
-   ```
+    /* Change the sidebar bullets */
+    --sidebar-nav-link-before-content: '😀';
+    }
+</style>
+```
 
 ## Local Preview
 
@@ -103,7 +103,7 @@ Sites powered by [docsify.js](//docsify.js.org/) can be hosted on any web server
 ## 主题推荐
 
 docsify-share 使用的主题
-https://coroo.github.io/docsify-share/#/
+<https://coroo.github.io/docsify-share/#/>
 
 ```html
   <!-- docsify-themeable styles-->
@@ -115,4 +115,3 @@ https://coroo.github.io/docsify-share/#/
 ```
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-78f4d1435e4b015c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-

@@ -85,7 +85,7 @@ Markdown 中半角空格的使用很重要，一些情况下能调节文字间�
 
 ### YAML Front Matter
 
-必须是 markdown 文件中的第一部分，并且必须采用在三点划线之间书写的有效的 YAML。 
+必须是 markdown 文件中的第一部分，并且必须采用在三点划线之间书写的有效的 YAML。
 
 格式
 
@@ -102,6 +102,7 @@ multiple:
 ```
 
 举例
+
 ```yml
 ---
 title: Hello World

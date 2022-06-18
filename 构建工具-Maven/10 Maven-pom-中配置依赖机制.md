@@ -164,7 +164,7 @@ maven 2.0.9 之后可用，主要用来解决多子 pom.xml 多重继承的场�
 
 依赖项管理部分是集中依赖项信息的机制。当您有一组继承自通用父级的项目时，可以将关于依赖关系的所有信息放在通用 POM 中，并对子 POM 中的工件进行更简单的引用。
 
-根据 dependencyManagement 部分匹配依赖引用的最小信息集实际上是{ groupId，artifactId，type，classifier }。在许多情况下，这些依赖关系将引用没有分类器的 jar 工件。这允许我们将标识设置为 { groupId，artifactId } ，因为类型字段的默认值是 jar，而默认分类器是 null。如果 type 和 classifier 不是默认值则需要手动指定。
+根据 dependencyManagement 部分匹配依赖引用的最小信息集实际上是{ groupId，artifactId，type，classifier }。在许多情况下，这些依赖关系将引用没有分类器的 jar 工件。这允许我们将标识设置为 {groupId，artifactId } ，因为类型字段的默认值是 jar，而默认分类器是 null。如果 type 和 classifier 不是默认值则需要手动指定。
 
 举例
 

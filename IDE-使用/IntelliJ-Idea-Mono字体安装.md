@@ -7,7 +7,7 @@ JetBrains 表示：在当今的大部分时间里，我们作为开发人员都�
 **JetBrainsMono.**
 A typeface for developers_
 
-*  **mac**: Select all font files in the folder and double-click them. Click the “Install Font” button.
+* **mac**: Select all font files in the folder and double-click them. Click the “Install Font” button.
 * **windows**: Select all font files in the folder, right-click any of them, then pick “Install” from the menu.
 * **linux**: Unpack fonts to ${HOME}/.fonts and execute
     sudo fc-cache -f -v

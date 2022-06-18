@@ -23,7 +23,9 @@ It's very easy to make some words **bold** and other words *italic* with Markdow
 * *倾斜*
 * **加粗**
 * ~~中划线效果~~
-* _You **can** combine them_
+*
+
+_You **can** combine them_
 
 ## 标题 (Headers)
 
@@ -34,6 +36,7 @@ It's very easy to make some words **bold** and other words *italic* with Markdow
 `###### This is an <h6> tag`
 
 效果:
+
 ![](https://upload-images.jianshu.io/upload_images/1662509-cf2356a65d01a54b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## 引用(BLOCKQUOTES)
@@ -62,18 +65,21 @@ As Kanye West said:
 ```
 
 效果:
+
 * Item 1
 * Item 2
   + Item 2a
   + Item 2b
 
 **有序列表(Ordered):**
+
 ```
 1. 这是一个有序列表1
 2. 这是一个有序列表2
 ```
 
 效果:
+
 1. 这是一个有序列表1
 2. 这是一个有序列表2
 
@@ -98,13 +104,15 @@ Visit [Daring Fireball][] for more information.
 ...
 然后接着定义链接：[Daring Fireball]: http://daringfireball.net/
 ```
+
 > * 其实参考式的链接重点不在于它比较好写，而是它比较好读.
 > * 使用 Markdown 的参考式链接，可以让文件更像是浏览器最后产生的结果，让你可以把一些标记相关的元数据移到段落文字之外，你就可以增加链接而不让文章的阅读感觉被打断。
 
 ## 图像(IMAGES)
 
 > 像构造链接一样，只需要在前面加！
-```
+
+```md
 ![GitHub Logo](/images/logo.png)
 Format: ![Alt Text](url)
 
@@ -114,7 +122,7 @@ Format: ![Alt Text](url)
 
 ## 内联代码 (Inline code)
 
-```
+```text
 I think you should use an `<addr>` element here instead.
 ```
 
@@ -126,7 +134,8 @@ I think you should use an `<addr>` element here instead.
 would otherwise have special meaning in Markdown’s formating syntax.
 
 Markdown 可以利用反斜杠来插入一些在语法中有其它意义的符号，例如：如果你想要用星号加在文字旁边的方式来做出强调效果，你可以在星号的前面加上反斜杠：
-```
+
+```text
 \ 反斜线     ` 反引号     * 星号     _ 底线
 {}花括号     []方括号     ()括弧     # 井字号
 + 加号       ! 惊叹号     - 减号     . 英文句点
@@ -141,12 +150,14 @@ Markdown 可以利用反斜杠来插入一些在语法中有其它意义的符�
   + 或者简单的每行前加四个空格
 
 > you can wrap your code with ``` to create a code block without the leading spaces. Add an **optional language** identifier and your code will get syntax highlighting.
+
 ```javascript
 // javascript语法高亮
 function test() {
     console.log("look ma’, no spaces");
 }
 ```
+
 ```java
 // java语法高亮
 protected final void sayHello() {
@@ -159,7 +170,8 @@ protected final void sayHello() {
 > You can create tables by assembling a list of words and dividing them
 with hyphens - (for the first row), and then separating each column
 with a pipe | :
-```
+
+```md
 First Header | Second Header
 ------------ | -------------
 Content cell 1 | Content cell 2
@@ -168,6 +180,7 @@ Content column 1 | Content column 2
 
 **对齐方式**
 我们可以设置表格的对齐方式：
+
 * -: 设置内容和标题栏居右对齐。
 * :- 设置内容和标题栏居左对齐。
 * :-: 设置内容和标题栏居中对齐。
@@ -180,7 +193,7 @@ Content column 1 | Content column 2
 
 Markdown 让你可以自然地书写字符，需要转换的会由它自行处理。如果你使用的 `&`字符是 HTML 字符实体的一部分，它会保留原状，否则它会被转换成 `&`。
 
-```
+```text
 char glyph | HTML tag
 "          |    "
 &          |    &

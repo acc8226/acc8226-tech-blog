@@ -1,12 +1,21 @@
 ## 遇到的问题
 
+### mvn 命令必须在pom文件目录下执行吗
+
+不是必须，可以
+
+```text
+ -f,--file <arg>                        Force the use of an alternate POM
+                                        file (or directory with pom.xml)
+```
+
 ### Maven 错误：was cached in the local repository, resolution will not be reattempted until the update
 
 在使用公司内部的 maven 仓库编译项目时，由于新加入了几个依赖包，第一次编译失败了，可能原因是 maven 私服找不到相关jar。此后在修复了公司内部 maven 仓库后编译项目出现错误
 
 * 方法一：查看本地仓库对应 jar 包所在目录的 lastUpdated 文件，进一步查看报错信息，尝试删除后再次运行原 maven 命令或进行代码的拉取。
 
-* 方法二：在repository 的 release 或者 snapshots 版本中新增 updatePolicy 属性，设置为”always”、”daily” (默认)、”interval:XXX” (分钟)或”never”。这里设置为 always，表示强制每次都更新依赖库。
+* 方法二：在 repository 的 release 或者 snapshots 版本中新增 updatePolicy 属性，设置为”always”、”daily” (默认)、”interval:XXX” (分钟)或”never”。这里设置为 always，表示强制每次都更新依赖库。
 
 * 方法三：maven命令后加 -U，如 mvn package -U【推荐】
 
@@ -27,11 +36,11 @@ Test*.java ：以 Test 开头的 Java 类；
 
 * 将依赖性版本升级到新版本，用 HTTPS 版本替换过时的 HTTP 存储库 URL
 * 保留依赖版本，但在设置中定义一个镜像。
-* 注释掉 $MAVEN_HOME/conf/settings.xml 中的拦截标签。
+* 注释掉 `$MAVEN_HOME/conf/settings.xml` 中的拦截标签。
 
-### 使用maven打包失败，报Unknown lifecycle phase “.test.skip=true“
+### 使用 maven 打包失败，报 Unknown lifecycle phase “.test.skip=true“
 
-将命令从
+windows 环境下使用 powershell 会这样，请将命令从
 
 ```sh
 mvn clean package -Dmaven.test.skip=true
@@ -64,18 +73,18 @@ b.如果 B 不用 SNAPSHOT, 但一直使用一个单一的 Release 版本号，�
 4、 不用 Release 版本，在所有地方都用 SNAPSHOT 版本行不行？
 不行。正式环境中不得使用 snapshot 版本的库。 比如说，今天你依赖某个 snapshot 版本的第三方库成功构建了自己的应用，明天再构建时可能就会失败，因为今晚第三方可能已经更新了它的 snapshot 库。你再次构建时，Maven 会去远程 repository 下载 snapshot 的最新版本，你构建时用的库就是新的 jar 文件了，这时正确性就很难保证了。
 
-### 【用处不大】从 Maven 项目中导出项目依赖的jar包
+### 【用处不大】从 Maven 项目中导出项目依赖的 jar 包
 
-一、导出到默认目录 targed/dependency
+1\. 导出到默认目录 targed/dependency
 　　从Maven项目中导出项目依赖的jar包：进入工程pom.xml 所在的目录下，执行如下命令：
 　　1、mvn dependency:copy-dependencies，则 maven 项目所依赖的 jar 包会导出到 target/dependency 目录中。
 
-二、导出到自定义目录中
+2\. 导出到自定义目录中
 　　在maven项目下创建lib文件夹，输入以下命令：
 　　1、mvn dependency:copy-dependencies -DoutputDirectory=lib；
 　　2、maven 项目所依赖的 jar 包都会复制到项目目录下的lib目录下。
 
-三、设置依赖级别
+3\. 设置依赖级别
 　　同时可以设置依赖级别，通常使用 compile 级别
 　　mvn dependency:copy-dependencies -DoutputDirectory=lib -DincludeScope=compile
 
@@ -121,16 +130,16 @@ mvn help-effective-settings -Daliyun=central
 mvn help:effective-settings -Dnetease=central
 ```
 
-### maven 在构建多模块项目中，从选择性的指定位置进行构建应用
+### maven 在构建多模块项目中，指定位置进行构建应用
 
-> 参考 Maven 常用命令 - 构建反应堆中指定模块_jason5186 的博客-CSDN博客
-<https://blog.csdn.net/jason5186/article/details/39530087>
->
-> 通过查看 mvn -h命令，可以了解其他命令及其用途；
+通过查看 mvn -h命令，可以了解其他命令及其用途；
+
+```text
 -am --also-make            同时构建所列模块的依赖模块；
 -amd -also-make-dependents 同时构建依赖于所列模块的模块；
 -pl --projects `<arg>`     构建制定的模块，模块间用逗号分隔；
 -rf -resume-from `<arg>`   从指定的模块恢复反应堆。
+```
 
 ## 参考
 

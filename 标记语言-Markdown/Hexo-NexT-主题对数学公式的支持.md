@@ -38,7 +38,7 @@ mathjax: true
 ....
 ```
 
-```
+```yml
 <!-- This post will NOT render the Math Equations -->
 ---
 title: Not Render Math
@@ -47,7 +47,7 @@ mathjax: false
 ....
 ```
 
-```
+```yml
 <!-- This post will NOT render the Math Equations either -->
 ---
 title: Not Render Math Either

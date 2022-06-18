@@ -2,7 +2,7 @@
 
 下面是一个例子，告诉你如何使用 GitHub 语法突显标记:
 
-```javascript
+```js
 function fancyAlert(arg) {
   if(arg) {
     $.facebox({div:'#foo'})
@@ -63,11 +63,10 @@ mojombo/github-flavored-markdown@16c999e8c71134401a78d4d46435517b2271d6ac
 
 任何引用发布或拉请求的号码都将自动转换为链接。
 
-```
+```yml
 #1
 mojombo#1
 mojombo/github-flavored-markdown#1
-
 ```
 
 ## Username @mentions
@@ -75,6 +74,7 @@ mojombo/github-flavored-markdown#1
 输入一个`@`符号，后面跟着一个用户名，会通知那个人来查看评论。 这被称为“@mention” ，因为你提到的是个人。 你也可以@提及组织中的团队。
 
 ## Automatic linking for URLs
+
 任何 URL (如 `http://www.github.com/` 链接)都会自动转换成可点击的链接。
 
 ## Strikethrough 删除
@@ -88,6 +88,7 @@ GitHub 支持表情符号 [emoji](https://help.github.com/articles/basic-writin
 要查看我们支持的所有图片，请查看 [Emoji Cheat Sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md).
 
 ## 跳转到标题锚点
+
 先定义一个`#标题`, 然后可以用`[abcd...](#该标题)`来定位该锚点
 
 ```md
@@ -102,4 +103,4 @@ GitHub 支持表情符号 [emoji](https://help.github.com/articles/basic-writin
 ## 参考
 
 Mastering Markdown &middot; GitHub Guides
-https://guides.github.com/features/mastering-markdown/#GitHub-flavored-markdown
+<https://guides.github.com/features/mastering-markdown/#GitHub-flavored-markdown>

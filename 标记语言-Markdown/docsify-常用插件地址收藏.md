@@ -5,26 +5,26 @@ https://docsify.js.org/#/zh-cn/quickstart
 ## 基本组件的更新包
 
 **docsify.min.js 压缩版**
-https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js
+<https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js>
 最新所在文件夹 https://cdn.jsdelivr.net/npm/docsify/lib/
 
 **vue.css 完整版**
-https://cdn.jsdelivr.net/npm/docsify/themes/vue.css
-最新所在文件夹 https://cdn.jsdelivr.net/npm/docsify/themes/
+<https://cdn.jsdelivr.net/npm/docsify/themes/vue.css>
+最新所在文件夹 <https://cdn.jsdelivr.net/npm/docsify/themes/>
 
 **vue.css 压缩版**
-https://cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css
+<https://cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css>
 最新所在文件夹 https://cdn.jsdelivr.net/npm/docsify/lib/themes/
 
 ## 额外插件的更新包
 
 **图片缩放 - Zoom image**
-https://cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js
+<https://cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js>
 
 **字数统计 docsify-count**
-https://unpkg.com/docsify-count/dist/countable.min.js
-https://unpkg.com/docsify-count/dist/countable.js
-https://unpkg.com/docsify-count/dist/
+<https://unpkg.com/docsify-count/dist/countable.min.js>
+<https://unpkg.com/docsify-count/dist/countable.js>
+<https://unpkg.com/docsify-count/dist/>
 
 **分页导航插件**
 https://cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js
@@ -39,7 +39,7 @@ https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css
 **button-custom.css**
 https://coroo.github.io/docsify-share/assets/css/button-custom.css
 **main-custom.css**
-https://coroo.github.io/docsify-share/assets/css/main-custom.css
+<https://coroo.github.io/docsify-share/assets/css/main-custom.css>
 
 ## 用法
 

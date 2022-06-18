@@ -20,6 +20,7 @@
  对象加载）。
 
 使用菜单资源是一种很好的做法，原因如下：
+
 * 更易于使用 XML 可视化菜单结构
 * 将菜单内容与应用的行为代码分离
 * 允许您利用[应用资源](http://developer.android.youdaxue.com/guide/topics/resources/index.html)框架，为不同的平台版本、屏幕尺寸和其他配置创建备用菜单配置
@@ -48,9 +49,9 @@
 
 * 如果您开发的应用适用于 **Android 2.3.x（API 级别 10）或更低版本**，则当用户按*“菜单”*按钮时，选项菜单的内容会出现在屏幕底部，如图 1 所示。打开时，第一个可见部分是图标菜单，其中包含多达 6 个菜单项。 如果菜单包括 6 个以上项目，则 Android 会将第六项和其余项目放入溢出菜单。用户可以通过选择*“更多”*打开该菜单。
 * 如果您开发的应用适用于 **Android 3.0（API 级别 11）及更高版本**，则选项菜单中的项目将出现在应用栏中。 默认情况下，系统会将所有项目均放入操作溢出菜单中。用户可以使用应用栏右侧的操作溢出菜单图标（或者，通过按设备*“菜单”*按钮（如有））显示操作溢出菜单。 要支持快速访问重要操作，您可以将`android:showAsAction="ifRoom"`
- 添加到对应的 <item>元素，从而将几个项目提升到应用栏中（请参阅图 2）。如需了解有关操作项目和其他应用栏行为的详细信息，请参阅[添加应用栏](http://developer.android.youdaxue.com/training/appbar/index.html)培训课程。
+ 添加到对应的`<item>`元素，从而将几个项目提升到应用栏中（请参阅图 2）。如需了解有关操作项目和其他应用栏行为的详细信息，请参阅[添加应用栏](http://developer.android.youdaxue.com/training/appbar/index.html)培训课程。
 
-您可以通过 Activity 子类或 Fragment 子类为选项菜单声明项目。如果您的 Activity 和片段均为选项菜单声明项目，则这些项目将合并到 UI 中。 系统将首先显示 Activity 的项目，随后按每个片段添加到 Activity 中的顺序显示各片段的项目。 如有必要，您可以使用 android:orderInCategory 属性，对需要移动的每个 <item> 中的菜单项重新排序。
+您可以通过 Activity 子类或 Fragment 子类为选项菜单声明项目。如果您的 Activity 和片段均为选项菜单声明项目，则这些项目将合并到 UI 中。 系统将首先显示 Activity 的项目，随后按每个片段添加到 Activity 中的顺序显示各片段的项目。 如有必要，您可以使用 android:orderInCategory 属性，对需要移动的每个 `<item>` 中的菜单项重新排序。
 
 要为 Activity 指定选项菜单，请重写 onCreateOptionsMenu()（片段会提供自己的 onCreateOptionsMenu() 回调）。通过此方法，您可以将菜单资源（使用 XML 定义）扩充到回调中提供的 Menu 中。 例如：
 
@@ -72,7 +73,7 @@ public boolean onCreateOptionsMenu(Menu menu) {
 
 用户从选项菜单中选择项目（包括应用栏中的操作项目）时，系统将调用 Activity 的 onOptionsItemSelected() 方法。 此方法将传递所选的 MenuItem。您可以通过调用 getItemId() 方法来识别项目，该方法将返回菜单项的唯一 ID（由菜单资源中的 android:id 属性定义，或通过提供给 add() 方法的整型数定义）。 您可以将此 ID 与已知的菜单项匹配，以执行适当的操作。例如：
 
-``` java
+```java
 @Override
 public boolean onOptionsItemSelected(MenuItem item) {
     // Handle item selection
@@ -119,13 +120,15 @@ public boolean onOptionsItemSelected(MenuItem item) {
 ##### 创建浮动上下文菜单
 
 要提供浮动上下文菜单，请执行以下操作：
-1. 通过调用 [registerForContextMenu()](http://developer.android.youdaxue.com/reference/android/app/Activity.html#registerForContextMenu(android.view.View))，注册应与上下文菜单关联的 [View](http://developer.android.youdaxue.com/reference/android/view/View.html)
+
+1\. 通过调用 [registerForContextMenu()](http://developer.android.youdaxue.com/reference/android/app/Activity.html#registerForContextMenu(android.view.View))，注册应与上下文菜单关联的 [View](http://developer.android.youdaxue.com/reference/android/view/View.html)
  并将其传递给 [View](http://developer.android.youdaxue.com/reference/android/view/View.html)。如果 Activity 使用 [ListView](http://developer.android.youdaxue.com/reference/android/widget/ListView.html)
  或 [GridView](http://developer.android.youdaxue.com/reference/android/widget/GridView.html) 且您希望每个项目均提供相同的上下文菜单，请通过将 [ListView](http://developer.android.youdaxue.com/reference/android/widget/ListView.html)
  或 [GridView](http://developer.android.youdaxue.com/reference/android/widget/GridView.html)传递给[registerForContextMenu()](http://developer.android.youdaxue.com/reference/android/app/Activity.html#registerForContextMenu(android.view.View))，为上下文菜单注册所有项目。
-2. 在 [Activity](http://developer.android.youdaxue.com/reference/android/app/Activity.html) 或 [Fragment](http://developer.android.youdaxue.com/reference/android/app/Fragment.html) 中实现 [onCreateContextMenu()](http://developer.android.youdaxue.com/reference/android/view/View.OnCreateContextMenuListener.html#onCreateContextMenu(android.view.ContextMenu, android.view.View, android.view.ContextMenu.ContextMenuInfo)) 方法。当注册后的视图收到长按事件时，系统将调用您的 [onCreateContextMenu()](http://developer.android.youdaxue.com/reference/android/view/View.OnCreateContextMenuListener.html#onCreateContextMenu(android.view.ContextMenu, android.view.View, android.view.ContextMenu.ContextMenuInfo)) 方法。在此方法中，您通常可通过扩充菜单资源来定义菜单项。例如：
 
-``` java
+2\. 在 [Activity](http://developer.android.youdaxue.com/reference/android/app/Activity.html) 或 [Fragment](http://developer.android.youdaxue.com/reference/android/app/Fragment.html) 中实现 [onCreateContextMenu()](http://developer.android.youdaxue.com/reference/android/view/View.OnCreateContextMenuListener.html#onCreateContextMenu(android.view.ContextMenu, android.view.View, android.view.ContextMenu.ContextMenuInfo)) 方法。当注册后的视图收到长按事件时，系统将调用您的 [onCreateContextMenu()](http://developer.android.youdaxue.com/reference/android/view/View.OnCreateContextMenuListener.html#onCreateContextMenu(android.view.ContextMenu, android.view.View, android.view.ContextMenu.ContextMenuInfo)) 方法。在此方法中，您通常可通过扩充菜单资源来定义菜单项。例如：
+
+```java
 @Override
 public void onCreateContextMenu(ContextMenu menu, View v, ContextMenuInfo menuInfo) {
           super.onCreateContextMenu(menu, v, menuInfo);
@@ -135,9 +138,9 @@ public void onCreateContextMenu(ContextMenu menu, View v, ContextMenuInfo menuIn
 ```
 
 [MenuInflater](http://developer.android.youdaxue.com/reference/android/view/MenuInflater.html) 允许您通过[菜单资源](http://developer.android.youdaxue.com/guide/topics/resources/menu-resource.html)扩充上下文菜单。回调方法参数包括用户所选的 [View](http://developer.android.youdaxue.com/reference/android/view/View.html)，以及一个提供有关所选项的附加信息的[ContextMenu.ContextMenuInfo](http://developer.android.youdaxue.com/reference/android/view/ContextMenu.ContextMenuInfo.html) 对象。如果 Activity 有多个视图，每个视图均提供不同的上下文菜单，则可使用这些参数确定要扩充的上下文菜单。
-3. 实现 [onContextItemSelected()](http://developer.android.youdaxue.com/reference/android/app/Activity.html#onContextItemSelected(android.view.MenuItem))。用户选择菜单项时，系统将调用此方法，以便您能够执行适当的操作。 例如：
+3\. 实现 [onContextItemSelected()](http://developer.android.youdaxue.com/reference/android/app/Activity.html#onContextItemSelected(android.view.MenuItem))。用户选择菜单项时，系统将调用此方法，以便您能够执行适当的操作。 例如：
 
-``` java
+```java
 @Override
 public boolean onContextItemSelected(MenuItem item) {
     AdapterContextMenuInfo info = (AdapterContextMenuInfo) item.getMenuInfo();
@@ -176,11 +179,12 @@ public boolean onContextItemSelected(MenuItem item) {
 ###### 为单个视图启用上下文操作模式
 
 如果希望仅当用户选择特定视图时才调用上下文操作模式，则应：
-1. 实现 [ActionMode.Callback](http://developer.android.youdaxue.com/reference/android/view/ActionMode.Callback.html) 接口。在其回调方法中，您既可以为上下文操作栏指定操作，又可以响应操作项目的点击事件，还可以处理操作模式的其他生命周期事件。
-2. 当需要显示操作栏时（例如，用户长按视图），请调用 [startActionMode()](http://developer.android.youdaxue.com/reference/android/app/Activity.html#startActionMode(android.view.ActionMode.Callback))。
+1\. 实现 [ActionMode.Callback](http://developer.android.youdaxue.com/reference/android/view/ActionMode.Callback.html) 接口。在其回调方法中，您既可以为上下文操作栏指定操作，又可以响应操作项目的点击事件，还可以处理操作模式的其他生命周期事件。
+2\. 当需要显示操作栏时（例如，用户长按视图），请调用 [startActionMode()](http://developer.android.youdaxue.com/reference/android/app/Activity.html#startActionMode(android.view.ActionMode.Callback))。
 
-1. 例如：实现 [ActionMode.Callback](http://developer.android.youdaxue.com/reference/android/view/ActionMode.Callback.html) 接口：
-``` java
+1\. 例如：实现 [ActionMode.Callback](http://developer.android.youdaxue.com/reference/android/view/ActionMode.Callback.html) 接口：
+
+```java
 private ActionMode.Callback mActionModeCallback = new ActionMode.Callback() {
 
     // Called when the action mode is created; startActionMode() was called
@@ -304,6 +308,7 @@ listView.setMultiChoiceModeListener(new MultiChoiceModeListener() {
 ### 创建弹出菜单
 
 [PopupMenu](http://developer.android.youdaxue.com/reference/android/widget/PopupMenu.html) 是锚定到 [View](http://developer.android.youdaxue.com/reference/android/view/View.html) 的模态菜单。如果空间足够，它将显示在定位视图下方，否则显示在其上方。它适用于：
+
 * 为与特定内容确切相关的操作提供溢出样式菜单（例如，Gmail 的电子邮件标头，如图所示）。
 
 ![ Gmail 应用中的弹出菜单，锚定到右上角的溢出按钮。](http://upload-images.jianshu.io/upload_images/1662509-b7ddc7ae2edd328c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -316,13 +321,13 @@ listView.setMultiChoiceModeListener(new MultiChoiceModeListener() {
 
 如果[使用 XML 定义菜单](http://developer.android.youdaxue.com/guide/topics/ui/menus.html#xml)，则显示弹出菜单的方法如下：
 
-1. 实例化 [PopupMenu](http://developer.android.youdaxue.com/reference/android/widget/PopupMenu.html) 及其构造函数，该函数将提取当前应用的 [Context](http://developer.android.youdaxue.com/reference/android/content/Context.html) 以及菜单应锚定到的 [View](http://developer.android.youdaxue.com/reference/android/view/View.html)。
-2. 使用 [MenuInflater](http://developer.android.youdaxue.com/reference/android/view/MenuInflater.html) 将菜单资源扩充到 [PopupMenu.getMenu()](http://developer.android.youdaxue.com/reference/android/widget/PopupMenu.html#getMenu()) 返回的 [Menu](http://developer.android.youdaxue.com/reference/android/view/Menu.html) 对象中。
-3. 调用 [PopupMenu.show()](http://developer.android.youdaxue.com/reference/android/widget/PopupMenu.html#show())。
+1\. 实例化 [PopupMenu](http://developer.android.youdaxue.com/reference/android/widget/PopupMenu.html) 及其构造函数，该函数将提取当前应用的 [Context](http://developer.android.youdaxue.com/reference/android/content/Context.html) 以及菜单应锚定到的 [View](http://developer.android.youdaxue.com/reference/android/view/View.html)。
+2\. 使用 [MenuInflater](http://developer.android.youdaxue.com/reference/android/view/MenuInflater.html) 将菜单资源扩充到 [PopupMenu.getMenu()](http://developer.android.youdaxue.com/reference/android/widget/PopupMenu.html#getMenu()) 返回的 [Menu](http://developer.android.youdaxue.com/reference/android/view/Menu.html) 对象中。
+3\. 调用 [PopupMenu.show()](http://developer.android.youdaxue.com/reference/android/widget/PopupMenu.html#show())。
 
 例如，以下是一个使用 [android:onClick](http://developer.android.youdaxue.com/reference/android/R.attr.html#onClick)属性显示弹出菜单的按钮：
 
-``` java
+```java
 <ImageButton
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -333,7 +338,7 @@ listView.setMultiChoiceModeListener(new MultiChoiceModeListener() {
 
 稍后，Activity 可按照如下方式显示弹出菜单：
 
-``` java
+```java
 public void showPopup(View v) {
     PopupMenu popup = new PopupMenu(this, v);
     MenuInflater inflater = popup.getMenuInflater();

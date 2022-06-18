@@ -20,9 +20,11 @@
 
 **七牛测试域名 1 个月失效的问题(网友提供的解决方法)**
 七牛提供的测试域名1个月就失效了，通常是够用的 。 如果失效了，也不用担心，找到原始的 markdown 文件，用下面的命令对文件做个替换即可（new.bkt.clouddn域名需要按照实际进行替换）。
-```
+
+```sh
  sed -i "s#//.*bkt.clouddn#//new.bkt.clouddn#g" file.md
 ```
+
 > 注: 且目前七牛不再提供测试域名了, 只能挥手告别。
 
 ## 【其他方案】又拍云存储空间+流量
@@ -35,7 +37,7 @@
 
 oschina 旗下的码云在国内比较靠谱，速度也能接受。
 
-```
+```text
 https://gitee.com/kaiLee/html-nav/blob/master/snipaste.png
 
 将 blob 改为 raw 则是图片的原始地址了：
@@ -47,7 +49,7 @@ https://gitee.com/kaiLee/html-nav/blob/master/snipaste.png
 
 github 服务器在国外, 直接访问肯定太慢. 知道看到了 **[PicGo](https://github.com/Molunerfinn/PicGo), [jsdelivr](https://www.jsdelivr.com/), [github](https://github.com/)** 的三剑客组合。
 
-教程：[-----请参考这里的视频教程-----](https://www.bilibili.com/video/av65336062?from=search&seid=4753922999762898690) 
+教程：[-----请参考这里的视频教程-----](https://www.bilibili.com/video/av65336062?from=search&seid=4753922999762898690)
 
 > 放在 Github 的资源在国内加载速度比较慢，因此需要使用 CDN 加速来优化网站打开速度，jsDelivr + Github 便是免费且好用的 CDN.
 
@@ -85,24 +87,24 @@ https://cdn.jsdelivr.net/gh/acc8226/JsDelivrCDN/img/20191117180214.jpg
 ## 相关资源
 
 Github 官网
-https://github.com/
+<https://github.com/>
 
 jsdelivr 官网
-https://www.jsdelivr.com/
+<https://www.jsdelivr.com/>
 
 PigGo 下载
-https://github.com/Molunerfinn/PicGo/releases
+<https://github.com/Molunerfinn/PicGo/releases>
 
 ## 参考
 
 [活动作品](https://www.bilibili.com/blackboard/activity-newstar4.html?msource=caitiao "叮！你的笔记本电脑和季度大会员等待领取中！")关于博客的最稳定的图床方案
-https://www.bilibili.com/video/av65336062?from=search&seid=4753922999762898690
+<https://www.bilibili.com/video/av65336062?from=search&seid=4753922999762898690>
 
 目前最稳定的免费图床方案 - 301技术-HuanHao
-https://301technology.cn/2019/08/03/picgojsdelivrgithub/
+<https://301technology.cn/2019/08/03/picgojsdelivrgithub/>
 
 Github+jsDelivr+PicGo 打造稳定快速、高效免费图床
-https://blog.csdn.net/qq_36759224/article/details/98058240
+<https://blog.csdn.net/qq_36759224/article/details/98058240>
 
 PicGo - 免费开源的图片上传与管理工具 (Markdown写作贴图 / 跨平台图床应用)
-https://www.iplaysoft.com/picgo.html
+<https://www.iplaysoft.com/picgo.html>

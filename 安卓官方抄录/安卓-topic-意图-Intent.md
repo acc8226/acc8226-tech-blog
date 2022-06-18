@@ -1,11 +1,13 @@
 **意图**是安卓中重要核心组件之一。
 
 Intent 是一个消息传递对象，您可以使用它从其他应用组件请求操作。尽管 Intent 可以通过多种方式促进组件之间的通信，但其基本用例主要包括以下三个：
+
 * 启动 Activity
 * 启动服务
 * 传递广播
 
 Intent 分为两种类型：
+
 * 显式 Intent：按名称（完全限定类名）指定要启动的组件。 通常，您会在自己的应用中使用显式 Intent 来启动组件，这是因为您知道要启动的 Activity 或服务的类名。例如，启动新 Activity 以响应用户操作，或者启动服务以在后台下载文件。
 * 隐式 Intent ：不会指定特定的组件，而是声明要执行的常规操作，从而允许其他应用中的组件来处理它。 例如，如需在地图上向用户显示位置，则可以使用隐式 Intent，请求另一具有此功能的应用在地图上显示指定的位置。
 
@@ -18,8 +20,9 @@ Intent 分为两种类型：
 ##### 显式 Intent 示例
 
 显式 Intent 是指用于启动某个特定应用组件（例如，应用中的某个特定 Activity 或服务）的 Intent。 要创建显式 Intent，请为 [Intent](http://developer.android.youdaxue.com/reference/android/content/Intent.html) 对象定义组件名称 — Intent 的所有其他属性均为可选属性。
-例如，如果在应用中构建了一个名为 DownloadService、旨在从网页下载文件的服务，则可使用以下代码启动该服务：  
-``` java
+例如，如果在应用中构建了一个名为 DownloadService、旨在从网页下载文件的服务，则可使用以下代码启动该服务：
+
+```java
 // Executed in an Activity, so 'this' is the Context
 // The fileUrl is a string URL, such as "http://www.example.com/image.png"
 Intent downloadIntent = new Intent(this, DownloadService.class);
@@ -28,9 +31,10 @@ startService(downloadIntent);
 ```
 
 ##### 隐式 Intent 示例
+
 > **注意：**用户可能没有*任何*应用处理您发送到 [startActivity()](http://developer.android.youdaxue.com/reference/android/content/Context.html#startActivity(android.content.Intent)) 的隐式 Intent。如果出现这种情况，则调用将会失败，且应用会崩溃。要验证 Activity 是否会接收 Intent，请对 [Intent](http://developer.android.youdaxue.com/reference/android/content/Intent.html) 对象调用 [resolveActivity()](http://developer.android.youdaxue.com/reference/android/content/Intent.html#resolveActivity(android.content.pm.PackageManager))。如果结果为非空，则至少有一个应用能够处理该 Intent，且可以安全调用[startActivity()](http://developer.android.youdaxue.com/reference/android/content/Context.html#startActivity(android.content.Intent))。 如果结果为空，则不应使用该 Intent。如有可能，您应停用发出该 Intent 的功能。
 
-``` java
+```java
 // Create the text message with a string
 Intent sendIntent = new Intent();
 sendIntent.setAction(Intent.ACTION_SEND);
@@ -50,7 +54,8 @@ if (sendIntent.resolveActivity(getPackageManager()) != null) {
 ，并将其传递给 [startActivity()](http://developer.android.youdaxue.com/reference/android/app/Activity.html#startActivity(android.content.Intent))。例如：
 
 ![选择器对话框。](http://upload-images.jianshu.io/upload_images/1662509-67e47e9aa4e669c0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-``` java
+
+```java
 Intent sendIntent = new Intent(Intent.ACTION_SEND);
 ...
 
@@ -67,9 +72,11 @@ if (sendIntent.resolveActivity(getPackageManager()) != null) {
 ```
 
 ### 使用待定 Intent
+
 [PendingIntent](http://developer.android.youdaxue.com/reference/android/app/PendingIntent.html) 对象是 [Intent](http://developer.android.youdaxue.com/reference/android/content/Intent.html) 对象的包装器。[PendingIntent](http://developer.android.youdaxue.com/reference/android/app/PendingIntent.html) 的主要目的是授权外部应用使用包含的 [Intent](http://developer.android.youdaxue.com/reference/android/content/Intent.html)，就像是它从您应用本身的进程中执行的一样。
 
 待定 Intent 的主要用例包括：
+
 * 声明用户使用您的[通知](http://developer.android.youdaxue.com/guide/topics/ui/notifiers/notifications.html)执行操作时所要执行的 Intent（Android 系统的 [NotificationManager](http://developer.android.youdaxue.com/reference/android/app/NotificationManager.html) 执行 [Intent](http://developer.android.youdaxue.com/reference/android/content/Intent.html)）。
 * 声明用户使用您的 [应用小部件](http://developer.android.youdaxue.com/guide/topics/appwidgets/index.html)执行操作时要执行的 Intent（主屏幕应用执行 [Intent](http://developer.android.youdaxue.com/reference/android/content/Intent.html)
 ）。
@@ -84,7 +91,9 @@ if (sendIntent.resolveActivity(getPackageManager()) != null) {
 如需了解有关使用待定 Intent 的详细信息，请参阅[通知](http://developer.android.youdaxue.com/guide/topics/ui/notifiers/notifications.html)和[应用小部件](http://developer.android.youdaxue.com/guide/topics/appwidgets/index.html) API 指南等手册中每个相应用例的相关文档。
 
 ### Intent 解析
+
 当系统收到隐式 Intent 以启动 Activity 时，它根据以下三个方面将该 Intent 与 Intent 过滤器进行比较，搜索该 Intent 的最佳 Activity：
+
 * Intent 操作
 * Intent 数据（URI 和数据类型）
 * Intent 类别
@@ -92,6 +101,7 @@ if (sendIntent.resolveActivity(getPackageManager()) != null) {
 下文根据如何在应用的清单文件中声明 Intent 过滤器，描述 Intent 如何与相应的组件匹配。
 
 ##### Intent 匹配
+
 通过 Intent 过滤器匹配 Intent，这不仅有助于发现要激活的目标组件，还有助于发现设备上组件集的相关信息。 例如，主页应用通过使用指定[ACTION_MAIN](http://developer.android.youdaxue.com/reference/android/content/Intent.html#ACTION_MAIN) 操作和 [CATEGORY_LAUNCHER](http://developer.android.youdaxue.com/reference/android/content/Intent.html#CATEGORY_LAUNCHER) 类别的 Intent 过滤器查找所有 Activity，以此填充应用启动器。
 
 您的应用可以采用类似的方式使用 Intent 匹配。[PackageManager](http://developer.android.youdaxue.com/reference/android/content/pm/PackageManager.html) 提供了一整套 query...() 方法来返回所有能够接受特定 Intent 的组件。此外，它还提供了一系列类似的 resolve...() 方法来确定响应 Intent 的最佳组件。 例如，[queryIntentActivities()](http://developer.android.youdaxue.com/reference/android/content/pm/PackageManager.html#queryIntentActivities(android.content.Intent, int)) 将返回能够执行那些作为参数传递的 Intent 的所有 Activity 列表，而 [queryIntentServices()](http://developer.android.youdaxue.com/reference/android/content/pm/PackageManager.html#queryIntentServices(android.content.Intent, int)) 则可返回类似的服务列表。这两种方法均不会激活组件，而只是列出能够响应的组件。 对于广播接收器，有一种类似的方法： [queryBroadcastReceivers()](http://developer.android.youdaxue.com/reference/android/content/pm/PackageManager.html#queryBroadcastReceivers(android.content.Intent, int))。

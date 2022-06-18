@@ -10,14 +10,16 @@ https://stackedit.io/app#
 * Typora
 
 **纯小白快速上手**
-* [印象笔记](https://www.yinxiang.com/) 
-*  [有道云笔记](https://note.youdao.com)
+
+* [印象笔记](https://www.yinxiang.com/)
+* [有道云笔记](https://note.youdao.com)
 
 **中规中矩**
 MarkdownPad。Windows 平台特有，免费版 和 收费版, Windows 下老牌 md 编辑器, 还不错。
 
 **不推荐产品**
-* 马克飞象: 必须付费, 且对图床的实现方式有待商榷。
+
+* 马克飞象: 付费, 且对图床的实现方式有待商榷。
 * 为知笔记: 之后收费了。
 
 ## Mac 平台
@@ -34,7 +36,7 @@ MarkdownPad。Windows 平台特有，免费版 和 收费版, Windows 下老牌 
 优先考虑到跨平台的优势，则可重点考虑以下两款。
 
 1. 普通用户建议使用有道或印象笔记。
-2. 码农们也可以选择以上软件，当然我选择 **VS Code**  + 插件 markdownlint。然后再辅助搭配 **Typora** 用于预览和导出 md 文件。 
+2. 码农们也可以选择以上软件，当然我选择 **VS Code**  + 插件 markdownlint。然后再辅助搭配 **Typora** 用于预览和导出 md 文件。
 
 ## 其他知识点
 
@@ -44,7 +46,7 @@ https://www.jianshu.com/p/2097bef17cbe)
 * [使用 Docsify 构建接口文档 - 简书](
 https://www.jianshu.com/p/4d7ef8cad8ee)
 
-### markdown 如何导出为 pdf 文件 
+### markdown 如何导出为 pdf 文件
 
 **方式一：使用 Typora （推荐）**
 该软件默认预设了多种主题，然后界面支持多语言。多级标题也能完美展示。
@@ -52,7 +54,7 @@ https://www.jianshu.com/p/4d7ef8cad8ee)
 ![](https://upload-images.jianshu.io/upload_images/1662509-ed7e125858ee021e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 **方式二：使用网页版的 stackedit**
-https://stackedit.io/app# 
+https://stackedit.io/app#
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-32dbc8c01b4c67a2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -69,7 +71,7 @@ https://stackedit.io/app#
 ## 参考
 
 stackedit 在线 markdown 编辑
-https://stackedit.io/app# 
+<https://stackedit.io/app>#
 
 使用GitHub搭建免费图床/网盘(CDN加速)
-https://www.jianshu.com/p/2097bef17cbe
+<https://www.jianshu.com/p/2097bef17cbe>

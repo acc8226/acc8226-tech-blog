@@ -91,7 +91,7 @@ hexo g
 
 强制上传版
 
-```
+```sh
 git config user.name "flow"
 git config user.email "flow@feipig.fun"
 
@@ -105,7 +105,7 @@ git push --force  "https://${userName}:${accessToken}@${hostName}/${userName}/${
 
 基于上版更新条记录版
 
-```
+```sh
 git config --global user.name "flow"
 git config --global user.email "flow@feipig.fun"
 
@@ -120,13 +120,13 @@ git commit -m "committed by flow"
 git push origin master
 ```
 
-3. 使用 gitee page 的发布项目
+3\. 使用 gitee page 的发布项目
 
 新建目标项目：https://gitee.com/kaiLee/kaiLee.git
 
 我这里可以使用  username + accessToken 方式 clone 等操作。提取一系列私密变量后
 
-```
+```text
 userName kaiLee
 accessToken 70e185c4cc2d56418e1d2c8385bca1b7
 hostName gitee.com
@@ -134,7 +134,8 @@ repoPath kaiLee.git
 ```
 
 改造成了这样：
-```
+
+```sh
 git clone https://${userName}:${accessToken}@${hostName}/${userName}/${repoPath}
 ```
 
@@ -157,7 +158,6 @@ categories:
 - bar
 ---
 ```
-
 
 根据 post.md 的格式
 
@@ -183,12 +183,14 @@ type: tags
 ```
 
 添加 categories 则是类似的方法
-```
+
+```sh
 $ cd hexo-site
 $ hexo new page categories
 ```
 
 编辑新页面并将类型更改为标签，主题将在此页面中自动显示标签云。页面内容如下:
+
 ```
 title: categories
 date: 2014-12-22 12:39:04
@@ -203,13 +205,15 @@ type: categories
  自定义404页
 
 在终端中，切换到站点根目录的源文件夹。创建一个名为404的新文件夹，然后在其中创建一个新页面:
-```
-$ cd hexo-site
-$ hexo new page 404
+
+```sh
+cd hexo-site
+hexo new page 404
 ```
 
 如果你想启用公益404(腾讯在中国提供的服务) ，请编辑404/index.md，像这样:
-```
+
+```md
 ---
 title: '404'
 date: 2014-12-22 12:39:04
@@ -233,11 +237,12 @@ menu:
 
 Local 本地Search 搜寻
 
-```
-$ npm install hexo-generator-searchdb
+```sh
+npm install hexo-generator-searchdb
 ```
 
 添加依赖
+
 ```
 # Local Search
 # Dependencies: https://github.com/next-theme/hexo-generator-searchdb
@@ -254,7 +259,6 @@ local_search:
   preload: false
 ```
 
-
 ## 期间遇到的一些问题
 
 ### 部署 Gitee Pages 常见问题
@@ -268,6 +272,7 @@ local_search:
 答：当需要部署的仓库和自己的个性地址不一致时，如：[https://gitee.com/ipvb/blog](https://gitee.com/ipvb/blog) ，生成的pages url 为 [https://ipvb.gitee.io/blog](https://ipvb.gitee.io/blog) ，而访问的资源404，如 [https://ipvb.gitee.io/style.css](https://ipvb.gitee.io/style.css) 。这是因为相应配置文件的相对路径存在问题导致的，生成的资源 url 应该为 [https://ipvb.gitee.io/blog/style.css](https://ipvb.gitee.io/blog/style.css) 才对。对于不同的静态资源生成器，配置如下：
 
 Hexo 配置文件_config.yml的url和root修改如下：
+
 ```
 url: https://ipvb.gitee.io/blog
 root: /blog

@@ -1,6 +1,6 @@
 ## 文字特效
 
-```
+```html
 <script type="text/javascript">
 var a_idx = 0;
 jQuery(document).ready(function($) {
@@ -45,7 +45,7 @@ jQuery(document).ready(function($) {
 
 ## 鼠标点击-烟花特效
 
-```
+```html
 <script src="../static/js/cursor-effects.js"></script>
-<canvas width="1366" height="662" style="position: fixed; left: 0px; top: 0px; z-index: 2147483647; pointer-events: none;"></canvas> 
+<canvas width="1366" height="662" style="position: fixed; left: 0px; top: 0px; z-index: 2147483647; pointer-events: none;"></canvas>
 ```

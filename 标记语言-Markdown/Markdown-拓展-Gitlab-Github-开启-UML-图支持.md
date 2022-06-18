@@ -17,7 +17,7 @@ plantuml-server 启动完成后，需要在 GitLab 上配置开启 PlantUML，�
 
 在 GitLab 10.3 中[引入](https://gitlab.com/gitlab-org/gitlab-foss/-/merge_requests/15107) 。您可以访问官方页面以获取更多详细信息。
 
-### gitlab 配置 [Kroki](https://kroki.io/) 
+### gitlab 配置 [Kroki](https://kroki.io/)
 
 可以访问官方页面以获取更多详细信息。
 
@@ -28,7 +28,7 @@ plantuml-server 启动完成后，需要在 GitLab 上配置开启 PlantUML，�
 目前版本已内置，可以直接使用。
 
 mermaid-js/mermaid: Generation of diagram and flowchart from text in a similar manner as markdown
-https://github.com/mermaid-js/mermaid
+<https://github.com/mermaid-js/mermaid>
 
 ## 对 mermaid 的详细说明
 
@@ -58,13 +58,13 @@ graph TD;
 ## 参考文档
 
 GitLab Flavored Markdown | GitLab
-https://docs.gitlab.com/ee/user/markdown.html#mermaid
+<https://docs.gitlab.com/ee/user/markdown.html#mermaid>
 
 GitLab Markdown - 《Gitlab 中文文档》 - 书栈网 · BookStack
-https://www.bookstack.cn/read/gitlab-doc-zh/docs-408.md#mermaid
+<https://www.bookstack.cn/read/gitlab-doc-zh/docs-408.md#mermaid>
 
 Mermaid：如何在Markdown文本中添加流程图，附支持github的方法_DenryDu的博客-CSDN博客_gitlab mermaid
-https://blog.csdn.net/weixin_43661154/article/details/112101437
+<https://blog.csdn.net/weixin_43661154/article/details/112101437>
 
 Typora通过mermaid使用流程图、脑图-CSDN博客_mermaid 思维导图
-https://blog.csdn.net/Alexhcf/article/details/112801877
+<https://blog.csdn.net/Alexhcf/article/details/112801877>

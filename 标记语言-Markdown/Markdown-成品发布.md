@@ -11,14 +11,17 @@ Content hosted on the [legacy.gitbook.com](https://legacy.gitbook.com/) will c
 前提条件：下载 Releases · jgm/pandoc https://github.com/jgm/pandoc/releases。或者使用 typora。
 
 **不带模板的导出 word**
-```
+
+```sh
 pandoc abc.md -o abc1.docx
 ```
 
 **导出 word 且使用 reference docx**
-```
+
+```sh
 pandoc --reference-doc myColumns.docx -o abc2.docx abc.md
 ```
+
 官网介绍 abc.md 改成 xxx 也是可以的。所以说这个没有限制。只要源文件存在。
 
 ## 导出为 pdf 文件
@@ -29,7 +32,7 @@ pandoc --reference-doc myColumns.docx -o abc2.docx abc.md
 
 ### Marp 介绍
 
-https://github.com/marp-team/marp/
+<https://github.com/marp-team/marp/>
 
 Marp 最早是一个 GitHub 上的开源桌面软件，目前已经迭代成为一个多项目库的集合，包括 JavaScript 框架、命令行接口、代码编辑器插件等等。
 
@@ -39,6 +42,7 @@ Marp for VS Code - Visual Studio Marketplace
 https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode
 
 目前支持的导出格式
+
 ![](https://upload-images.jianshu.io/upload_images/1662509-cbca5f2d9bb40d76.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### Reveal.js 介绍
@@ -48,10 +52,10 @@ https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode
 Reveal.js 支持 Markdown 语法，我们得以直接在 Markdown 编辑器里做 PPT。你用 Markdown 语法所实现的精美、简洁的版式，在 Reveal.js 里仍能沿用。
 
 The HTML presentation framework | reveal.js
-https://revealjs.com/
+<https://revealjs.com/>
 
 hakimel/reveal.js: The HTML Presentation Framework
-https://github.com/hakimel/reveal.js
+<https://github.com/hakimel/reveal.js>
 
 ## 推荐客户端工具
 
@@ -60,7 +64,7 @@ typora 可以无脑导出，值得推荐！
 ## 参考
 
 Reveal.js：把你的 Markdown 文稿变成 PPT - 少数派
-https://sspai.com/post/40657
+<https://sspai.com/post/40657>
 
 Marp：用 Markdown「写」PPT 的新选择 - 少数派
-https://sspai.com/post/55718
+<https://sspai.com/post/55718>

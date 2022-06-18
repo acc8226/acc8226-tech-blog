@@ -3,14 +3,15 @@
 缺点：不支持直接点击按钮进行 HTTP 请求，需要手动粘贴参数到 POSTMAN 等工具。
 
 Docsify 初始化 & 运行
-```
+
+```sh
 docsify init ./docs
 docsify run ./docs
 ```
 
 **开启搜索**功能
 
-此时必须开启多页文档才行。详见 https://docsify.js.org/#/zh-cn/more-pages
+此时必须开启多页文档才行。详见 <https://docsify.js.org/#/zh-cn/more-pages>
 
 ```.
 └── docs
@@ -23,6 +24,7 @@ add js
 <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
 
 增加配置
+
 ```js
 window.$docsify = {
   count:{
@@ -51,14 +53,14 @@ copyCode: {
 开启**代码高亮**功能
 **docsify**内置的代码高亮工具是 [Prism](https://github.com/PrismJS/prism)。Prism 默认支持的语言如下：
 
-*   Markup - `markup`, `html`, `xml`, `svg`, `mathml`, `ssml`, `atom`, `rss`
-*   CSS - `css`
-*   C-like - `clike`
-*   JavaScript - `javascript`, `js`
+* Markup - `markup`, `html`, `xml`, `svg`, `mathml`, `ssml`, `atom`, `rss`
+* CSS - `css`
+* C-like - `clike`
+* JavaScript - `javascript`, `js`
 
 [添加额外的语法支持](https://prismjs.com/#supported-languages)需要通过CDN添加相应的[语法文件](https://cdn.jsdelivr.net/npm/prismjs@1/components/) :
 
-```
+```html
 <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script>
 ```
@@ -72,18 +74,20 @@ copyCode: {
 
 prism-properties.min.js
 prism-java.min.js
-prism-yaml.min.js 
-prism-sql.min.js 
+prism-yaml.min.js
+prism-sql.min.js
 
 ## 最终成品
 
 _sidebar.md
-```
+
+```text
 * [xxx-app端](/)
 * [xxx-微信端](/wechat)
 ```
 
 index.html
+
 ```html
 <!DOCTYPE html>
 <html lang="zh">
@@ -97,8 +101,8 @@ index.html
 	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css" title="vue">
 	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/dark.css" title="dark" disabled>
     <link rel="stylesheet" href="css/theme-simple-dark.css" disabled>
-	
-	<style>	
+
+	<style>
 	</style>
 </head>
 
@@ -110,7 +114,7 @@ index.html
 			loadSidebar: true,
 			maxLevel: 2,
 			subMaxLevel: 2,
-			name: '',			
+			name: '',
 			search: {
 			  maxAge: 600000,// 过期时间，设置为10分钟
 			  noData: {
@@ -123,7 +127,7 @@ index.html
 			  // 搜索标题的最大层级, 1 - 6
 			  depth: 2,
 			},
-			
+
 			 count: {
 				countable:true,
 				fontsize:'0.9em',
@@ -132,16 +136,16 @@ index.html
 			    isExpected: false // 是否显示需要阅读的分钟数
 
 			 },
-			 
+
 			copyCode: {
 			  buttonText: {'/' : '点击复制'},
 			  errorText: {'/' : '错误'},
 			  successText: {'/' : '已复制'}
 	        },
-			
+
 			plugins: [
-				function (hook, vm) {				  
-								
+				function (hook, vm) {
+
 				var footer = [
 					'<hr/>',
 					'<footer>',
@@ -154,15 +158,15 @@ index.html
 				  hook.afterEach(function(html) {
 					return html + footer;
 				  });
-				}				  
+				}
 			],
-	  
+
 		}
   </script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script> 
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>  
-  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>  
+  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
 </body>
 
 </html>
@@ -179,4 +183,4 @@ index.html
 接口文档采用 markdown 编写，入门比较容易
 
 附录一个实用接口文档的 markdown 模板 - 简书
-https://www.jianshu.com/p/f5a0b5894ffc
+<https://www.jianshu.com/p/f5a0b5894ffc>

@@ -10,7 +10,9 @@ Android Studio 是基于 IntelliJ IDEA 的官方 Android 应用开发集成开�
 * C++ 和 NDK 支持
 
 ## 安装指南：Windows
+
 #### 安装 Android Studio
+
 打开 [Android 开发者网站](http://developer.android.youdaxue.com/sdk/index.html)安装 Android Studio。此页面将自动检测到你的操作系统。
 ![](http://upload-images.jianshu.io/upload_images/1662509-92452dfe1ba8ed01.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 

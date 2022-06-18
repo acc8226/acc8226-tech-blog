@@ -43,14 +43,15 @@ Windows下的配置M2_HOME 和 PATH下新增M2_HOME/bin 目录
 ## Maven核心概念
 
 **Maven插件**
-　Maven的核心仅仅定义了抽象的生命周期，具体的任务都是交由插件完成的每个插件都能实现多个功能，每个功能就是一个插件目标
-　Maven的生命周期与插件目标相互绑定，以完成某个具体的构建任务, Maven的插件在: .m2\repository\org\apache\maven\plugins
+Maven的核心仅仅定义了抽象的生命周期，具体的任务都是交由插件完成的每个插件都能实现多个功能，每个功能就是一个插件目标
+
+Maven的生命周期与插件目标相互绑定，以完成某个具体的构建任务, Maven的插件在:.m2\repository\org\apache\maven\plugins
 
 **Maven坐标**
-　类似在平面几何中坐标（x,y）可以标识平面中唯一的一点, Maven世界拥有大量构建，我们需要找一个用来唯一标识一个构建的统一规范　。拥有了统一规范，就可以把查找工作交给机器
-　　　　　　groupId：定义当前Maven项目隶属项目  (实际对应JAVA的包的结构, 是main目录里java的目录结构)
-　　　　　　artifactId：定义实际项目中的一个模块(项目的唯一的标识符,实际对应项目的名称,就是项目根目录的名称)
-　　　　　　version：定义当前项目的当前版本
+类似在平面几何中坐标（x,y）可以标识平面中唯一的一点, Maven世界拥有大量构建，我们需要找一个用来唯一标识一个构建的统一规范　。拥有了统一规范，就可以把查找工作交给机器
+　　　　　　groupId：定义当前Maven项目隶属项目  (实际对应JAVA的包的结构, 是main目录里java的目录结构)
+　　　　　　artifactId：定义实际项目中的一个模块(项目的唯一的标识符,实际对应项目的名称,就是项目根目录的名称)
+　　　　　　version：定义当前项目的当前版本
 **Maven仓库**
 　　　　何为Maven仓库：用来统一存储所有Maven共享构建的位置就是仓库
 　　　　Maven配置jar包的路径为：groupId/artifactId/version/artifactId-version
@@ -90,7 +91,7 @@ site：项目站点文档创建的处理
 
 ## pom.xml 示例说明
 
-**建立 pom.xml 文件**
+建立 pom.xml 文件
 
 ```xml
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">

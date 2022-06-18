@@ -20,6 +20,7 @@
 > I am not sure if you have an old version of IntelliJ but If I go File => Settings... => Inspections => Serialization issues => Serializable class without 'serialVersionUID' enabled, the class you provide give me warnings.
 
 ## 疑问
+
 * Sync project with Gradle files
 ![](http://upload-images.jianshu.io/upload_images/1662509-7f3d76c59034095c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 

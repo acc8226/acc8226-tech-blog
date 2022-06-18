@@ -18,19 +18,19 @@ VuePress 诞生的初衷是为了支持 Vue.js 及其子项目的文档需求，
 
 ### 依赖环境
 
-*   [Node.js v12+在新窗口打开](https://nodejs.org/)
-*   [Yarn v1 classic在新窗口打开](https://classic.yarnpkg.com/zh-Hans/) （可选）
-
+* [Node.js v12+在新窗口打开](https://nodejs.org/)
+* [Yarn v1 classic在新窗口打开](https://classic.yarnpkg.com/zh-Hans/) （可选）
 
 创建并进入一个新目录
-```
+
+```sh
 mkdir vuepress-starter
 cd vuepress-starter
 ```
 
 初始化项目
-*   YARN 
-*   NPM 
+*   YARN
+*   NPM
 
 ```
 git init
@@ -38,8 +38,8 @@ yarn init
 ```
 
  将 VuePress 安装为本地依赖
-*   YARN 
-*   NPM 
+*   YARN
+*   NPM
 
 ```
 yarn add -D vuepress@next
@@ -74,8 +74,8 @@ echo '# Hello VuePress' > docs/README.md
 
 在本地启动服务器来开发你的文档网站
 
-*   YARN 
-*   NPM 
+*   YARN
+*   NPM
 
 ```
 yarn docs:dev
@@ -278,7 +278,7 @@ export default defineUserConfig<DefaultThemeOptions>({
       {
         text: '指南',
         link: ' https://v2.vuepress.vuejs.org/zh/guide/#%E5%AE%83%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84',
-      },      
+      },
       // 嵌套 Group - 最大深度为 2
       {
         text: '参考',
@@ -287,13 +287,13 @@ export default defineUserConfig<DefaultThemeOptions>({
             text: 'VuePress',
             children: [{text: '命令行接口',link: '/cli', activeMatch: '/cli',}, {text: '配置',link: '/config',activeMatch: '/config'}],
           }
-        ],      
+        ],
       },
       {
         text: 'Github',
         link: 'https://github.com/vuepress/vuepress-next',
-      },    
-    ],  
+      },
+    ],
   },
 })
 ```

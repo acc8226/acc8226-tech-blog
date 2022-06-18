@@ -3,11 +3,12 @@ AsciiDoc，它的设计初衷就是为了解决写书规模的问题，并且是
 > 是一个用于编写纯文本笔记、文章、文档、书籍、网页、幻灯片和手册页的轻量级标记语言。 本指南是常见的 ascii doc 文档和文本格式化标记的快速参考。
 
 AsciiDoc 相比 Markdown 支持更多的格式，包括而不限于：
-*   文档属性，设置作者、版本信息等。
-*   语法高亮。
-*   表格。
-*   Include 功能，将大文档拆分几个文件。
-*   自定义块语法，可扩展性。
+
+* 文档属性，设置作者、版本信息等。
+* 语法高亮。
+* 表格。
+* Include 功能，将大文档拆分几个文件。
+* 自定义块语法，可扩展性。
 
 Markdown 通过自行扩展语法或者使用 HTML 可以实现这些格式，但前者造成文档不通用的问题，后者则直接把展示结构硬编码到了文档中，将来修改会很麻烦。
 
@@ -27,7 +28,7 @@ AsciiDoctor 是一个很宏伟的项目，还有很多子项目在开发中，�
 示例一:
 <https://raw.githubusercontent.com/asciidoctor/asciidoctor/master/README-zh_CN.adoc>
 
-```
+```adoc
 = Asciidoctor
 Dan Allen <https://github.com/mojavelinux[@mojavelinux]>; Sarah White <https://github.com/graphitefriction[@graphitefriction]>; Ryan Waldron <https://github.com/erebor[@erebor]>
 // settings:

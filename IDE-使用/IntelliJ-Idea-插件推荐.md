@@ -12,7 +12,7 @@ https://plugins.jetbrains.com/plugin/6317-lombok/
 
 > 之所以必备，是因为 spring boot 对 lombok 也不抗拒。项目中也是使用广泛。
 
-##  **[GsonFormatPlus](https://github.com/mars-men/GsonFormatPlus)**
+## [GsonFormatPlus](https://github.com/mars-men/GsonFormatPlus)
 
 使用方法，下载安装后可使用 Generate 的快捷键。
 

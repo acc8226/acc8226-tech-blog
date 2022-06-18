@@ -4,19 +4,19 @@
 
 CODING 静态网站服务结合 [Tencent Serverless Framework](https://cloud.tencent.com/product/sls) 提供完整、高效的部署流程，支持 Jekyll、Hexo 等多种部署框架。静态资源的分发由 [腾讯云对象存储 COS](https://cloud.tencent.com/product/cos) 和拥有多个边缘网点的 [腾讯云内容分发网络 CDN](https://cloud.tencent.com/product/cdn) 提供支持。
 
-1. 在 CODING DevOps 平台左侧导航栏中点击【项目】，来到项目列表页，在项目列表页点击【创建项目】按钮。
+1\. 在 CODING DevOps 平台左侧导航栏中点击【项目】，来到项目列表页，在项目列表页点击【创建项目】按钮。
 
-2. 选择创建 DevOps 项目。
+2\. 选择创建 DevOps 项目。
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-a2b98112ad8ebe86.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-3. 进入项目后，在左侧导航栏中依次点击持续部署 - 静态网站。如果是首次使用静态网站服务，会看到提示，要求去开启腾讯云中关于 CODING 与 SLS 相关的权限，并且进行实名认证。
+3\. 进入项目后，在左侧导航栏中依次点击持续部署 - 静态网站。如果是首次使用静态网站服务，会看到提示，要求去开启腾讯云中关于 CODING 与 SLS 相关的权限，并且进行实名认证。
 
-4. 点击【新建静态网站】，进入新建静态网站页面，填写网站名称，然后在代码来源中选择示例项目，在示例项目中选择 Hexo，最后选择部署的节点，这里选择香港节点。
+4\. 点击【新建静态网站】，进入新建静态网站页面，填写网站名称，然后在代码来源中选择示例项目，在示例项目中选择 Hexo，最后选择部署的节点，这里选择香港节点。
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-e24c4cbd7fe1962c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-5. 创建成功后，耐心等待静态网站部署完成，状态由【部署中】变为【部署成功】。
+5\. 创建成功后，耐心等待静态网站部署完成，状态由【部署中】变为【部署成功】。
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-c623ad09a44aa103.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
