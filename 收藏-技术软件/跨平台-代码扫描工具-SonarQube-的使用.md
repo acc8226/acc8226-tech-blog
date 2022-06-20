@@ -15,7 +15,7 @@ Download | SonarQube <https://www.sonarqube.org/downloads/>
 **进入 `/conf` 目录，修改 sonar-scanner.properties 文件。**
 
 三、**执行扫描**
-进入 \bin 目录，执行 sonar-scanner.bat，进行扫描
+进入 bin 目录，执行 sonar-scanner.bat，进行扫描
 
 ## sonar 常见错误
 
@@ -38,9 +38,9 @@ try (PrintWriter out2 = new PrintWriter(
 **2. "InterruptedException" should not be ignored**
 在代码中不应该忽略中断异常，只在日志中打印异常日志，就像“忽略”一样。抛出中断异常会清除线程的中断状态，因此如果异常处理不当，那么线程被中断的信息将会丢失。相反，中断应该被重新抛出——立即或者在清理方法的状态之后——或者应该通过调用 Thread.interrupt() 来重新中断线程，即使这是单线程的应用程序。任何其他的操作过程都有延迟线程关闭的风险，并且丢失了线程被中断的信息——线程很可能没有完成它的任务。
 
-类似地，也应该传播ThreadDeath异常。根据它的JavaDoc:
+类似地，也应该传播 ThreadDeath 异常。根据它的 JavaDoc:
 
-如果ThreadDeath异常被一个方法捕获，那么它被重新抛出是很重要的，这样线程就会结束。
+如果 ThreadDeath 异常被一个方法捕获，那么它被重新抛出是很重要的，这样线程就会结束。
 
 不符合要求的代码如下：
 

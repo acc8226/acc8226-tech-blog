@@ -117,9 +117,9 @@ plugins=(... git)
 | Alias                | Command                                                                                                                       |
 |:---------------------|:------------------------------------------------------------------------------------------------------------------------------|
 | g                    | git                                                                                                                           |
-| ga                   | git add                                                                                                                       |
-| gaa                  | git add --all                                                                                                                 |
-| gapa                 | git add --patch                                                                                                               |
+| ga  | git add                                                                                                                       |
+| gaa   | git add --all                                                                                                                 |
+| gapa  | git add --patch                                                                                                               |
 | gau                  | git add --update                                                                                                              |
 | gav                  | git add --verbose                                                                                                             |
 | gap                  | git apply                                                                                                                     |

@@ -1,0 +1,473 @@
+## [1. 熟练掌握Java技术，熟悉面向对象思想，熟悉常用设计模式](http://www.jianshu.com/p/5bdf591ebda2)
+
+* 熟练掌握Java技术，熟悉面向对象思想，熟悉常用设计模式
+
+* 面向对象思想: 继承, 封装, 多态
+
+* 设计模式:
+
+六大原则
+
+1. 单一职责(Single Responsibility Principle)
+> 对于单一职责原则，我的建议是接口一定要做到单一职责，类的设计尽量做到只有一个原因引起变化。
+2. 里氏替换原则(Liskov Substitution Principle)
+所有引用基类的地方必须能透明地使用其子类的对象。
+3. 迪米特法则(Law of Demeter,LoD)
+一个对象应该对其他对象有最少的了解。通俗地讲，一个类应该对自己需要耦合或调用的类知道得最少
+4. 接口隔离原则(Interface Segregation Principle)
+    * 接口要尽量小
+    * 接口要高内聚
+    * 定制服务
+    * 接口设计是有限度的
+5. 依赖倒置原则(Dependence Inversion Principle,DIP)
+    * 高层模块不应该依赖低层模块，两者都应该依赖其抽象；
+    * 抽象不应该依赖细节；
+    * 细节应该依赖抽象
+6. 开闭原则(Open Closed Principle)
+开闭原则是一个终极目标，任何人包括大师级人物都无法百分之百做到，但朝这个方向努力，可以非常显著地改善一个系统的架构，真正做到“拥抱变化”。
+
+把这 6 个原则的首字母（里氏替换原则和迪米特法则的首字母重复，只取一个）联合起来就是**SOLID**（稳定的），其代表的含义也就是把这6个原则结合使用的好处：建立稳定、灵活、健壮的设计，而开闭原则又是重中之重，是最基础的原则，是其他 5 大原则的精神领袖。
+
+常用设计模式
+
+* 单例模式
+* 迭代器模式
+* 适配器模式
+* 策略模式
+* 代理模式
+
+## 2. Android 四大组件 和 Fragment的使用;
+
+## 3. Android中的数据存储(文件, 网络, 数据库存储)
+
+## 4. 熟悉掌握Android中常用的UI元素, 动画, 样式
+
+**动画**
+android 3.0 新增属性动画(Object, Value)
+android 5.0 新增矢量图动画
+> 通常定义一个 AnimatedVectorDrawable 需要以下三个xml文件：
+
+1.vector drawable 本身：res/drawable/中定义一个有<vector>元素的xml文件，参考上面对VectorDrawable的定义。
+2.vector drawable 的动画文件（Animated vector drawable）：res/drawable/中定义一个有<animated-vector>元素的xml文件。
+3.一个或者多个属性动画文件：res/drawable/中定义一个有<objectAnimator>元素的xml文件。
+
+**自定义 View**
+
+1. 完全自定义 View
+2. 继承已有 View, 重写部分功能
+3. 继承 ViewGroup
+
+步骤
+
+1. 自定义属性的声明和获取
+2. 测量 onMeasure
+3. 布局 onLayout(ViewGroup)
+4. 绘制 onDraw
+5. onTouchEvent
+6. onInterceptTouchEvent(ViewGroup) 是否拦截该手势
+
+## 5. 消息机制和多线程的使用
+
+## 消息机制和多线程的使用
+
+UI线程的消息循环是在 ActivityThread 方法中创建的, 该函数为 Android 应用程序的入口.
+
+在 Android 应用启动的时候, 会默认有一个主线程(UI线程), 这个线程会关联一个消息队列, 所有操作都会被封装成消息交给主线程来处理.
+
+Looper 总结:
+
+1. 通过 Looper.prepare 来创建 looper 对象(消息队列封装在 Looper 对象中), 并且保存在 sThreadLocal 中。
+2. 消息循环的建立通过 Looper.loop() 方法, loop 方法实际上是建立一个死循环, 不断从消息队列中取出消息。
+
+Handler 将消息发送给消息队列, 消息队列又将消息分发给 Handler 来处理。
+
+Message 的两个重要成员变量
+Hander target;
+Runnable callback;
+
+不管是 post 一个Runnable(包装成Message, callback设置为runnable成员变量)还是sendMessage, 都会调用sendMessageDelayed(msg, time)方法, Handler 最终将消息追加到 MessageQueue中, 而 Looper 不断取出从MessageQueue 中读取消息, 并调用 Handler的dispathMessage 来处理消息.
+dispathMessage 方法是一个分发方法, 如果 Runnable 类型的 callback 变量不为空, 则 callback.run 中执行更新UI的代码, 否则会走到 handMessage 这个分支.
+
+Handle r构造方法中通过 Looper.myLooper 来获取 Looper 对象.
+
+``` java
+//1. 成员变量mLooper的获得
+mLooper = Looper.myLooper();
+
+//1. Looper.myLooper的源码
+/**
+  * Return the Looper object associated with the current thread.  Returns
+  * null if the calling thread is not associated with a Looper.
+  */
+ public static @Nullable Looper myLooper() {
+     return sThreadLocal.get();
+}
+```
+
+##### 安卓中多线程的实现
+
+使用 JavaSE中线程 和 线程池,
+
+安卓为开发者封装了一些常用的类 AsyncTask, HandlerThread.
+
+线程池的优点
+
+1. 重用存在的线程, 减少对象创建,销毁的开销
+2. 有效控制最大的并发线程数, 提高系统资源的使用率, 同时避免过多资源竞争, 避免堵塞
+3. 提供定时执行, 单线程, 并发数控制等功能
+
+在android平台, 由于资源有限, 最常用的就是通过Executors.newFixedThreadPool(int size)来启动固定数量的线程池.
+
+#### AsyncTask 的原理
+
+onPreExecute
+doInBackground
+onProgressUpdate
+onPostExecute
+
+概括来说, 调用 execute 方法后, execute方法先调用 onPreExecute 方法,
+然后由 ThreadPoolExecutors 实例 sExecutor 执行一个 FutureTask 任务, 这个过程中 doInBackground 将被调用, 如果在 doInBackground 中调用了publicProgress 方法, 则通过 sHandler 发送一条MESSAGE_POST_PROGRESS 消息, 更新进度;
+如果遇到异常, 则发送一条 MESSAGE_POST_CANCEL消息, sHandler处理消息时, onCancelled 方法会被调用;
+如果执行成功, 则发送一条 MESSAGE_POST_RESULT 的消息, sHandler处理消息时会调用 onPostExectute(result)方法, 让用户得以在 UI 线程处理结果.
+总的来说, AsyncTask 的本质是使用线程池技术 和 Handler 封装, 减少了处理问题的复杂度, 提高了开发效率。
+
+#### HandlerThread 的使用
+
+## 6. 网络通信机制及常用数据传输协议；
+
+HTTP网络请求原理
+HTTP 是一种应用层协议, 通过 TCP 实现了可靠的数据传输, 能够保证可靠的数据传输.
+
+消息的交互流程有如下几步:
+
+1. 客户端执行网络请求, 从URL解析出服务器的主机名
+2. 将服务器的主机名转换为服务器的IP地址;
+3. 将端口号从URL中解析出来
+4. 建立一条客户端与Web服务器的TCP连接;
+5. 客户端通过输出流向服务器发送一条HTTP请求
+6. 服务器向客户端回送一条HTTP响应报文
+7. 客户端从输入流获取报文
+8. 客户端解析报文, 关闭连接
+9. 客户端将结果显示在UI上
+
+##### HTTP的请求方式(7种)
+
+get
+post
+put
+delete
+
+trace
+options
+head
+
+##### Android中执行网络请求
+
+1. 全面支持 HTTP 协议的HttpClient(在android2.3以前), 在android6.0 中该库已被移除
+2. 最佳选择 HttpURLConnection
+
+##### 网络框架的简单实现
+
+### [7. Android中的屏幕适配](http://www.jianshu.com/p/4bd99428d319)
+
+### 8. Android中的布局优化, 内存优化
+
+##### 布局优化
+
+* 减少视图层级
+  * 通过工具分析视图层级, 优先相对布局, 约束布局
+  * merge标签, 去处理子布局的根视图和父布局是同一类型的情况
+* 延迟加载的ViewStub
+通过这个不可见的和能在运行期间延迟加载目标视图的, 宽高都为0的View.
+
+##### 内存优化
+
+* 检查自身可以内存
+每个app都有heap限制, 可以通过调用getMemory来获取可用heap大小
+* 知晓内存的开支情况
+  * 使用枚举通常会比使用静态常量要消耗两倍以上的内存，在Android开发当中我们应当尽可能地不使用枚举。
+  * 任何一个Java类，包括内部类、匿名类，都要占用大概500字节的内存空间。
+  * 任何一个类的实例要消耗12-16字节的内存开支，因此频繁创建实例也是会一定程序上影响内存的。
+  * 在使用 HashMap 时，即使你只设置了一个基本数据类型的键，比如说int，但是也会按照对象的大小来分配内存，大概是 32 字节，而不是 4 字节。因此最好的办法就是像上面所说的一样，使用优化过的数据集合。
+*  注意内存的开销, 使用专门给为 android 优化过的数据容器 SparseArray, SparseBoolArray, LongSparseArray, 比 HashMap 消耗更少的内存.通常的HashMap 的实现方式更加消耗内存，因为它需要一个额外的实例对象来记录 Mapping 操作。另外，SparseArray 更加高效在于他们避免了对 key 与value 的 autobox 自动装箱，并且避免了装箱后的解箱。
+弃用枚举类型而使用加上 IntDef, StringDef 注解修饰的全局常量
+
+* bitmap 的优化
+  * 千万不要去加载不需要的分辨率, 会占用我们相当多宝贵的内存
+  * 图片的色彩格式, 来压缩图片质量
+    ARGB_8888 代表32位ARGB位图
+    ARGB_4444 代表16位ARGB位图
+    RGB_565 代表8位RGB位图
+  * 使用成熟的图片框架Picasso, ImageLoader
+
+* 当内存紧张时释放内存
+onTrimMemory()方法还有很多种其它类型的回调，可以在手机内存降低的时候及时通知我们。我们应该根据回调中传入的级别来去决定如何释放应用程序的资源：
+
+* 善用 service 资源
+系统会倾向于将这个 Service 所依赖的进程进行保留. 因为service的运行代价很高. 例如使用 IntentService 处理一些单一短时间任务, 这种 Service 的最大特点就是当后台任务执行结束后会自动停止，从而极大程度上避免了Service 内存泄漏的可能性。
+* 为序列化的数据使用 nano protobufs
+* 尽量避免使用依赖注入框架
+* 谨慎使用 external libraries
+* 关注 lint 工具所提出的建议
+* 使用 ProGuard 来剔除不需要的代码
+能够通过移除不需要的代码，重命名类，域与方法等方对代码进行压缩，优化与混淆。使用 ProGuard可以是的你的代码更加紧凑，这样能够使用更少mapped代码所需要的RAM。
+* 对最终的 APK 使用 zipalign
+* 使用多进程
+一个典型的例子是创建一个可以长时间后台播放的Music Player。如果整个app运行在一个进程中，当后台播放的时候，前台的那些UI资源也没有办法得到释放。类似这样的 app 可以切分成2个进程：一个用来操作UI，另外一个用来后台的Service.
+你可以通过在manifest文件中声明’android:process’属性来实现某个组件运行在另外一个进程的操作。
+* 谨慎使用抽象编程
+许多程序员都喜欢各种使用抽象来编程，认为这是一种很好的编程习惯。当然，这一点不可否认，因为的抽象的编程方法更加面向对象，而且在代码的维护和可扩展性方面都会有所提高。但是，在 Android 上使用抽象会带来额外的内存开支，因为抽象的编程方法需要编写额外的代码，虽然这些代码根本执行不到，但是却也要映射到内存当中，不仅占用了更多的内存，在执行效率方面也会有所降低。当然这里我并不是提倡大家完全不使用抽象编程，而是谨慎使用抽象编程，不要认为这是一种很酷的编程方式而去肆意使用它，只在你认为有必要的情况下才去使用。
+
+## 9. Android中的单元测试
+
+优点
+
+1. 为代码提供保障
+2. 优化设计, 编写单元测试从调用者角度观察, 迫使设计者吧程序设计成易于调试和可测试, 并且消除软件中的耦合.
+3. 文档记录, 是一种展示函数或者类使用的最佳文档
+4. 具有回归性, 编写完成后可以随时快速测试.
+
+JUnit简介
+基于Java语言的单元测试框架.
+
+开发人员一般需要新建一个TestCase的类, 然后在该测试类中添加测试函数.
+需要注意的是, 每个测试方法, TestCase之间并没有关联, 它们的执行顺序也不一定是代码中的执行顺序, 因此, 测试方法不要存在依赖性.
+
+##### 测试哪些条件
+
+1. 边界条件
+是单元测试需要重要测试的地方
+2. 覆盖执行路径
+
+##### 模拟所需的功能模块
+
+* 手动mock对象
+* 使用Mockito库
+
+##### Android中单元测试
+
+Google在Junit的基础上进行拓展, 使之能在Android上运行测试实例, Android平台下所有的测试类都是InstrumentationTestCase的子类, 它的内部封装了Instrumentation对四大组件进行操作, 而InstrumentationTestCase继承在Junit的TestCase.
+
+* 需要Context的测试用例
+AndroidTestCase
+* AcitivityUnitTestCase<T>
+和 ActivityInstrumentationTestCase2<T>
+* 测试Service, 继承自ServiceTestCase<T>
+* 测试ContentPrivider, 继承自ContentPrividerTestCase2<T>
+
+### 10. 网络框架Volley, 图片处理 Picasso 等
+
+第一部分Request
+第二部分RequestQueue消息队列, 维护了提交我给网络框架的请求队列, 并根据对应规则进行排序, 该队列使用的线程安全的PriorityBlockingQueue, 所以支持并发访问.
+第三部分NetWorkExecutor, 也就是网络的执行者, 该Exectuor继承自Thread, 在run方法中循环访问请求队列, 从请求队列中获取网络请求, 请求完成后提交给UI线程
+第四部分Response及其投递类, 使用ResponseDelivery来封装Response的投递, 保证Response在UI线程中执行, Response会根据用户的不同需求返回特定的类型.
+
+##### Picasso
+
+Picasso不仅实现了图片异步加载的功能，还解决了android中加载图片时需要解决的一些常见问题：
+1.在adapter中需要取消已经不在视野范围的ImageView图片资源的加载，否则会导致图片错位，Picasso已经解决了这个问题。
+2.使用复杂的图片压缩转换来尽可能的减少内存消耗
+3.自带内存和硬盘二级缓存功能
+
+**Cache，缓存类**
+![](http://upload-images.jianshu.io/upload_images/1662509-dd3878de000159d9?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+Lrucache，主要是get和set方法，存储的结构采用了LinkedHashMap，这种map内部实现了lru算法（Least Recently Used 近期最少使用算法）。
+
+**Request，操作封装类**
+![](http://upload-images.jianshu.io/upload_images/1662509-bc261c465cfc71c6?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+所有对图形的操作都会记录在这里，供之后图形的创建使用
+
+**Action**
+
+Action 代表了一个具体的加载任务，主要用于图片加载后的结果回调，有两个抽象方法，complete 和error，也就是当图片解析为bitmap后用户希望做什么。最简单的就是将 bitmap 设置给 imageview，失败了就将错误通过回调通知到上层。
+![](http://upload-images.jianshu.io/upload_images/1662509-cd62e7eac475b6ac?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+ImageViewAction 实现了Action，在complete中将 bitmap 和 imageview 组成了一个 PicassoDrawable，里面会实现淡出的动画效果。
+
+**BitmapHunter**
+
+![](http://upload-images.jianshu.io/upload_images/1662509-56e103bd140540bd?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+BitmapHunter 是一个 Runnable，其中有一个 decode 的抽象方法，用于子类实现不同类型资源的解析。
+
+在 bitmaphunter 成功得到 bitmap 后，就是通过 dispatcher 将结果传递出去的，当然让 bitmaphunter 执行也要通过 Dispatcher。
+![](http://upload-images.jianshu.io/upload_images/1662509-0a7f6d9c2311a209?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+Dispatcher 内有一个 HandlerThread，所有的请求都会通过这个 thread 转换，也就是请求也是异步的，这样应该是为了Ui线程更加流畅，同时保证请求的顺序，因为 handler 的消息队列。外部调用的是 dispatchXXX 方法，然后通过handler将请求转换到对应的 performXXX 方法。例如生成 Action 以后就会调用 dispather 的 dispatchSubmit()来 请求执行，
+
+handler接到消息后转换到 performSubmit 方法
+
+这里将通过 action 得到具体的 BitmapHunder，然后交给 ExecutorService 执行。
+
+下面是 Picasso.with(context).load("http://i.imgur.com/DvpvklR.png").into(imageView)的过程
+
+``` java
+public static Picasso with(Context context) {
+        if (singleton == null) {
+            singleton = new Builder(context).build();
+        }
+        return singleton;
+    }
+
+    public Picasso build() {
+            Context context = this.context;
+
+            if (downloader == null) {
+                downloader = Utils.createDefaultDownloader(context);
+            }
+            if (cache == null) {
+                cache = new LruCache(context);
+            }
+            if (service == null) {
+                service = new PicassoExecutorService();
+            }
+            if (transformer == null) {
+                transformer = RequestTransformer.IDENTITY;
+            }
+
+            Stats stats = new Stats(cache);
+
+            Dispatcher dispatcher = new Dispatcher(context, service, HANDLER,
+                    downloader, cache, stats);
+
+            return new Picasso(context, dispatcher, cache, listener,
+                    transformer, stats, debugging);
+        }
+```
+
+在 Picasso.with() 的时候会将执行所需的所有必备元素创建出来，如缓存cache、执行 executorService、调度 dispatch 等，在load()时创建Request，在into()中创建action、bitmapHunter，并最终交给 dispatcher 执行。
+
+## 11. 目前流行的 MVP 模式构建应用
+
+全称 Model View Presenter
+MVP 让 UI 界面和数据分离, 解除 View 和 Model 直接的耦合。
+
+MVP（Model-View-Presenter）是MVC的演化版本，MVP的角色定义如下。* Model：主要提供数据的存取功能。Presenter需要通过Model层来存储、获取数据。
+
+* View：负责处理用户事件和视图部分的展示。在Android中，它可能是Activity、Fragment类或者是某个View控件。
+* Presenter：作为View和Model之间沟通的桥梁，它从Model层检索数据后返回给View层，使得View和Model之间没有耦合。
+
+![MVP模式.png](https://upload-images.jianshu.io/upload_images/1662509-30a0fe7f016ccd2b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+在MVP里（见图10-2），Presenter完全将Model和View进行了分离，主要的程序逻辑在Presenter里实现。而且，Presenter与具体的View是没有直接关联的，而是通过定义好的接口进行交互，从而使得在变更View时可以保持Presenter的不变，这点符合面向接口编程的特点。View只应该有简单的Set/Get方法，以及用户输入和设置界面显示的内容，除此之外就不应该有更多的内容。**绝不允许View直接访问Model**，这就是其与MVC的很大不同之处。
+
+```java
+public interface BasePresenter {
+    void start();
+}
+
+public interface BaseView<T> {
+    void setPresenter(T presenter);
+}
+```
+
+```java
+/**
+ * This specifies the contract between the view and the presenter.
+ */
+public interface StatisticsContract {
+
+    interface View extends BaseView<Presenter> {
+
+        void setProgressIndicator(boolean active);
+
+        void showStatistics(int numberOfIncompleteTasks, int numberOfCompletedTasks);
+
+        void showLoadingStatisticsError();
+
+        boolean isActive();
+    }
+
+    interface Presenter extends BasePresenter {
+
+    }
+}
+
+
+/**
+ * Listens to user actions from the UI ({@link TaskDetailFragment}), retrieves the data and updates
+ * the UI as required.
+ */
+public class TaskDetailPresenter implements TaskDetailContract.Presenter {
+
+    private final TasksRepository mTasksRepository;
+
+    private final TaskDetailContract.View mTaskDetailView;
+
+    @Nullable
+    private String mTaskId;
+
+    public TaskDetailPresenter(@Nullable String taskId,
+                               @NonNull TasksRepository tasksRepository,
+                               @NonNull TaskDetailContract.View taskDetailView) {
+        mTaskId = taskId;
+        mTasksRepository = checkNotNull(tasksRepository, "tasksRepository cannot be null!");
+        mTaskDetailView = checkNotNull(taskDetailView, "taskDetailView cannot be null!");
+
+        mTaskDetailView.setPresenter(this);
+    }
+
+    @Override
+    public void start() {
+        openTask();
+    }
+....
+
+
+/**
+ * Main UI for the task detail screen.
+ */
+public class TaskDetailFragment extends Fragment implements TaskDetailContract.View {
+
+
+```java
+  @Override
+    public void onResume() {
+        super.onResume();
+        mPresenter.start();
+    }
+```
+
+
+一些View层的操作
+
+```java
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == REQUEST_EDIT_TASK) {
+            // If the task was edited successfully, go back to the list.
+            if (resultCode == Activity.RESULT_OK) {
+                getActivity().finish();
+            }
+        }
+    }
+
+    @Override
+    public void showEditTask(@NonNull String taskId) {
+        Intent intent = new Intent(getContext(), AddEditTaskActivity.class);
+        intent.putExtra(AddEditTaskFragment.ARGUMENT_EDIT_TASK_ID, taskId);
+        startActivityForResult(intent, REQUEST_EDIT_TASK);
+    }
+```
+
+这种情况下给 present
+
+```java
+    // Fragment#onCreateView中
+
+    fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mPresenter.editTask();
+            }
+        });
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.menu_delete:
+                mPresenter.deleteTask();
+                return true;
+        }
+        return false;
+    }
+```
