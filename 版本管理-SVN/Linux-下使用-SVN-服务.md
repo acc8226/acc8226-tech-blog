@@ -1,0 +1,164 @@
+## 安装
+
+CentOS 系统
+
+```sh
+yum install -y subversion
+```
+
+ubuntu 系统
+
+```bash
+sudo apt-get install subversion
+```
+
+## 创建对应目录
+
+使得`/data/svn`作为svn项目的一个根目录
+
+```sh
+mkdir -p /data/svn
+svnadmin create /data/svn/myproject
+```
+
+## SVN 推荐最小信息
+
+**svn服务配置文件**：/data/svn/myproject/conf/svnserve.conf
+
+该文件仅由[general]和[sasl]配置段组成。
+
+```sh
+[general]
+# force-username-case = none
+#控制非鉴权用户（匿名用户）访问版本库的权限。可以是read、write，none，默认为read. 这里为了安全权限, 可以设为none
+anon-access = none
+# 控制鉴权用户访问版本库的权限。取值范围为"write"、"read"和"none"。即"write"为可读可写，"read"为只读，"none"表示无访问权限。缺省值：write
+auth-access = write
+# 指定用户名口令文件名。除非指定绝对路径，否则文件位置为相对conf目录的相对路径。缺省值：passwd
+password-db = passwd
+# 指定权限配置文件名，通过该文件可以实现以路径为基础的访问控制。除非指定绝对路径，否则文件位置为相对conf目录的相对路径。缺省值：authz
+authz-db = authz
+# 【可选】指定版本库的认证域，即在登录时提示的认证域名称。若两个版本库的认证域相同，建议使用相同的用户名口令数据文件。 缺省值：一个UUID(Universal Unique IDentifier，全局唯一标示)
+# realm = My First Repository
+[sasl]
+```
+
+**配置用户和密码** ：/data/svn/myproject/conf/passwd
+
+[users]配置段的配置行格式如下：
+<用户名> = <口令>
+
+```sh
+[users]
+zhangsan  = 123456
+lisi      =            666
+wangwu =            789
+```
+
+这里我发现 等号的两侧可以通过空格进去分割。为了排版可以通过空格进行格式控制。
+
+**配置用户组和权限**：/data/svn/myproject/conf/authz
+
+[groups]配置段中配置行格式如下：
+<用户组> = <用户列表>
+
+用户列表由若干个用户组或用户名构成，用户组或用户名之间用逗号","分隔，引用用户组时要使用前缀"@"(如：引用用户组"all"要使用字符串"@all")。
+
+> 注意： 用户列表中的用户是要在用户密码文件中定义的用户
+
+版本库路径权限段的段名格式如下：
+[<版本库名>:<项目/目录>]
+
+其中，方框号内部分可以有多种写法：
+[/]，表示根布幕及以下，根目录是svnserve启动时指定的，我们指定为/application/svndata，[/]就是表示对全部版本库设置权限
+
+[repos:/]，表示对版本库repos设置权限
+
+[repos:/sadoc] 表示对版本库repos中sadoc目录设置权限
+
+如版本库abc路径/tmp的版本库路径权限段的段名为"[abc:/tmp]"。
+可省略段名中的版本库名。若省略版本库名，则该版本库路径权限段对所有版本库中相同路径的访问控制都有效。
+如：段名为"[/tmp]"的版本库路径权限段设置了所有引用该权限配置文件的版本库中目录"/tmp"的访问权限。
+
+版本库路径权限段中配置行格式有如下三种：
+
+<用户名> = <权限>
+@<用户组> = <权限>
+= <权限>
+其中，"*"表示任何用户；权限的取值范围为''w"、'r'和'rw'和空，空表示对该版本库路径无任何权限，'r'表示具有只读权限，'rw'表示有读写权限。
+
+```bash
+#用户组
+[groups]
+# 用户组admin 包含 zhangsan 和 lisi 两位成员，这里仅作为演示
+admin = zhangsan,lisi
+
+# 使用[/]代表svn服务器中的所有资源库
+[/]
+# 用户组权限
+@admin = rw
+# 非用户组权限也设置读写权限，避免 wangwu 有意见
+* = rw
+```
+
+启动 SVN 服务
+
+```sh
+svnserve -d -r /data/svn
+# 或为避免E000013出现权限问题 sudo svnserve -d -r /data/svn ，
+```
+
+--listen-port 可以加在尾部表示自定义端口号
+若没有任何提示就说明启动成功了. 不写的话默认端口为 **3690**
+
+客户端则可以尝试使用svn co命令检出项目
+
+```sh
+svn checkout svn://127.0.0.1/myproject /data/svn/svnrepos --username root --password 123456
+```
+
+**停止 svn 服务**
+killall svnserve
+
+## 一台svn服务器上同时运行多个版本库有2种方案
+
+* 在SVN服务器上创建多个版本库，同时运行多个svnserve进程，分别监听不同的端口。客户端连接此服务器不同端口即可连接不同的版本库。
+
+* 现在/data/svn_data下建立多个repo1,repo2等多个版本库, 分别配置各自信息
+`单版本库起动 svnserve -d -r /data/svn_data/repo1`。访问地址则是`127.0.0.1/`
+`多版本库起动 svnserve -d -r /data/svn_data/` (**推荐此种用法**)启动到父目录的等级更加方便。访问地址则是`127.0.0.1/repo1`, `127.0.0.1/repo2`, ...
+
+## 总结
+
+* SVN 管理员可以通过这3个配置文件设置 SVN 服务的用户名口令以及对版本库路径的访问权限。这些配置文件保存后就立即生效，不需要重启 svnserve 服务。
+
+* 一般情况下会禁用非认证用户的任何权限
+anon-access = none
+
+**出现的问题和解决方法**
+
+1\. 在修改配置authz后，如果authz包含错误，那么会在客户端提示Invalid authz configuration。在客户端并没有显示问题的详细原因，但是在服务器端有一个工具可以检查authz的语法 svnauthz-validate  使用方法如下：
+
+```sh
+svnauthz-validate /srv/svn/conf/authz
+```
+
+2\. SVN报错：`svn: E000013: Can't open file '/data/svn/myproject/db/txn-current-lock': Permission denied` 解决方法
+
+问题出现在一开始的地方，一开始的时候svn的安装是root用户进行安装的（sudo apt-get install subversion），所以在进行svn服务的启动的时候也要相应的采取root的权限进行启动，不然就只有read的权限而没有write的权限，所以，分析完上面的问题以后，我们只需要先停止现有的svn服务，然后再以root的权限开启svn服务就可以。shell命令如下：
+
+```sh
+killall svnserve
+
+sudo svnserve -d -r /var/svn （这边你要换成你自己svn的所在目录）
+```
+
+## SVN 常用命令
+
+SVN 常用命令 - 简书
+<https://www.jianshu.com/p/f190bfdfdcb9>
+
+## 参考
+
+【SVN】1. SVN 安装部署-xiexiaojun-51CTO博客
+<https://blog.51cto.com/xiexiaojun/2049665>

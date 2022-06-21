@@ -1,4 +1,4 @@
-每天都在无聊的等公交地铁, 终于知道了时间的宝贵, 于是买了个 499 的Kindle（第7代）。
+每天都在无聊的等公交地铁, 终于知道了时间的宝贵, 于是买了个 499 的 Kindle（第7代）。
 
 > 亚马逊已经确定 kindle 将退出中国市场，所以在线书籍赶紧存本地吧。
 
@@ -33,7 +33,7 @@ Kindle 个人文档服务与以下设备兼容：
 * Kindle iPhone/iPad/iPod touch 阅读软件
 * Kindle 安卓阅读软件
 
-通过将文档发送至您的〖发送至 Kindle〗电子邮箱，您可将其发送至兼容设备。〖发送至 Kindle〗电子邮箱是系统在您注册兼容设备时为您分配的唯一电子邮箱。有关〖发送至 Kindle〗电子邮箱的详细信息，请参阅[使用您的〖发送至Kindle〗电子邮箱](https://www.amazon.cn/gp/help/customer/display.html?nodeId=201974220)。
+通过将文档发送至您的〖发送至 Kindle〗电子邮箱，您可将其发送至兼容设备。〖发送至 Kindle〗电子邮箱是系统在您注册兼容设备时为您分配的唯一电子邮箱。有关〖发送至 Kindle〗电子邮箱的详细信息，请参阅[使用您的〖发送至 Kindle〗电子邮箱](https://www.amazon.cn/gp/help/customer/display.html?nodeId=201974220)。
 
 * Kindle 个人文档服务支持以下文件类型：
 * Kindle 格式（.MOBI、.AZW）

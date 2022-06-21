@@ -1,4 +1,4 @@
-```
+```gradle
 apply plugin: 'com.android.application'
 
 android {

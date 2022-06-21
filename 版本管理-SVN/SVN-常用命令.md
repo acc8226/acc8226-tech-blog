@@ -1,0 +1,113 @@
+## 检查 svn 是否已安装
+
+安装好后 输入 `svn --version`  检查
+
+```bash
+svn --version
+```
+
+请在任何不清楚的时候使用 svn help 查看帮助
+`svn help`
+查看对应命令的帮助文档
+`svn help <subcommand>`
+
+## svn基本操作
+
+版本库下的文件和目录列表
+
+**查看项目  list (ls) **
+简写：svn ls
+用法：svn list path
+
+```bash
+svn list svn://xxx/abc
+```
+
+表示可以在不下载文件到本地目录的情况下来察看目录中的文件
+
+**导入操作 import**
+
+将源文件夹内容 导入到对应目标文件夹内容。将 demo1 中的所有内容，上传到服务器 mycode 仓库的 demo1 目录下，后面双引号中的"初始化导入"是注释
+
+```bash
+svn import /Users/ale/Desktop/demo1 svn://localhost/mycode/demo1 --username=marry --password=123 -m "初始化导入"
+```
+
+导入单个文件
+
+```bash
+svn import /Users/ale/台账记录2.24-2.28.xlsx  svn://svn.polyhome.net/nci_ydbq/台账记录2.24-2.28.xlsx -m "导入"
+```
+
+**检出项目 checkout (co)**
+
+```bash
+svn checkout svn://localhost/mycode /Users/apple/Documents/abc
+```
+
+表示检出 svn://localhost/mycode 到 abc目录下
+
+## 联合操作
+
+将改动的文件并提交服务器(注意这个*表示全部文件)
+
+```sh
+svn add filename
+svn commit -m "注释" *
+```
+
+**更新至最新版本**
+
+```sh
+svn update
+```
+
+默认更新当前目录以及子目录下所有的文件
+
+**更新至某个版本**
+
+```sh
+svn update -r 版本号 path
+```
+
+```sh
+svn update -r 200 test.php
+```
+
+将版本库中的文件 test.php 还原到版本200. 如果在提交的时候提示过期的话，是因为冲突，需要先update，修改文件，然后清除 svn resolved，最后再提交commit
+
+**比较差异**
+`svn diff path`(将修改的文件与基础版本比较)
+例如：svn diff test.php
+
+对版本m和版本n 比较差异
+`svn diff -r m:n path`
+例如：svn diff -r 200:201 test.php
+简写：svn di
+
+**恢复本地修改**
+`svn revert`: 恢复原始未改变的工作副本文件 (恢复大部份的本地修改)。revert:
+用法: revert PATH…
+注意: 本子命令不会存取网络，并且会解除冲突的状况。但是它不会恢复
+被删除的目录
+
+**两版本之间的差异合并到当前文件**
+`svn merge -r m:n path`
+例如：svn merge -r 200:205 test.php（将版本200与205之间的差异合并到当前文件，但是一般都会产生冲突，需要处理一下）
+
+**解决冲突**
+`svn resolved`: 移除工作副本的目录或文件的“冲突”状态。
+用法: `resolved PATH…`
+注意: 本子命令不会依语法来解决冲突或是移除冲突标记；它只是移除冲突的
+相关文件，然后让 PATH 可以再次提交。
+
+## 参考
+
+* 【SVN】1. SVN 安装部署-xiexiaojun-51CTO博客
+<https://blog.51cto.com/xiexiaojun/2049665>
+
+* SVN命令使用详解-龙果博客
+<https://blog.roncoo.com/article/124725>
+
+* CentOS 下启用 SVN 服务 - 简书
+<https://www.jianshu.com/p/08390d63637f>
