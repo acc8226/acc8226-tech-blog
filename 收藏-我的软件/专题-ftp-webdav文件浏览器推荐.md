@@ -10,7 +10,7 @@
 ## iOS
 
 * GoodReader
-GoodReader 中文版是一款阅读软件，GoodReader 中文版对于编码、印刷、分享、联网等功能也非常多。而且 GoodReader 中文版支持的格式非常多，如Office 文档、PDF、TXT、HTML 等几乎所有主流文档的浏览阅读，支持书签，支持横屏，支持与 Dropbox 等存储服务、Gmail 等邮箱、Google Docs 进行绑定，还可以通过无线网络使用电脑传输文件，甚至还有 FTP Server 功能。
+GoodReader 中文版是一款阅读软件，GoodReader 中文版对于编码、印刷、分享、联网等功能也非常多。而且 GoodReader 中文版支持的格式非常多，如 Office 文档、PDF、TXT、HTML 等几乎所有主流文档的浏览阅读，支持书签，支持横屏，支持与 Dropbox 等存储服务、Gmail 等邮箱、Google Docs 进行绑定，还可以通过无线网络使用电脑传输文件，甚至还有 FTP Server 功能。
 
 * ducument【免费】
 Readdle 开发的 Documents 犹如您的文档管理中枢，文档、音乐、视频、书籍都能存储其中，您在 iPhone/iPad 上还能轻松阅读、聆听、下载、批注几乎任何文件。

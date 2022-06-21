@@ -14,7 +14,7 @@ newman run D:\postman_collection.json 运行
 ### postmanlabs/newman
 
 postmanlabs/newman: Newman is a command-line collection runner for Postman
-https://github.com/postmanlabs/newman
+<https://github.com/postmanlabs/newman>
 
 ### Spring Boot开发中利用postman图片上传提示Required request part 'file' is not present
 

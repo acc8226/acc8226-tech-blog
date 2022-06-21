@@ -117,7 +117,7 @@ date: 2013/7/13 20:46:25
 本人使用 Visual Studio + markdownlint - 插件
 
 markdownlint - 插件地址
-https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint
+<https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint>
 
 ## markdown 部署到网站
 
@@ -128,7 +128,7 @@ markdown 的一个缺点就是每个由单独的页面进行构建，要想单�
 ## 参考
 
 会用 Markdown 还不够，还得知道排版规范 - 知乎
-https://zhuanlan.zhihu.com/p/69376149
+<https://zhuanlan.zhihu.com/p/69376149>
 
 markdownlint规则详细介绍及自定义参数设置 - 简书
-https://www.jianshu.com/p/51523a1c6fe1
+<https://www.jianshu.com/p/51523a1c6fe1>

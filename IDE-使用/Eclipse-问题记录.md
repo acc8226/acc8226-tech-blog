@@ -13,6 +13,7 @@
 Export aborted because fatal lint errors were found.These are listed in the Problems view.Either fix these before running Export again,or turn off "Run full error check when exporting app" in the [Android](http://lib.csdn.net/base/android) > Lint Error checking preference page.
 
 解决：
+
 ![](http://upload-images.jianshu.io/upload_images/1662509-a2bf64399ff544a0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 **升级了 sdk 之后运行出错**
@@ -25,4 +26,4 @@ Failed to load D:\Android-Studio\sdk\build-tools\26.0.1\lib\dx.jar
 ## 参考
 
 * 删除 eclipse自动生成的 //TODO Auto-generated - 黄彪博客 - CSDN博客
-https://blog.csdn.net/hbiao68/article/details/52682823
+<https://blog.csdn.net/hbiao68/article/details/52682823>

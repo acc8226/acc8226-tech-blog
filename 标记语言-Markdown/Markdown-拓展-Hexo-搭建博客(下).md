@@ -72,10 +72,10 @@ footer:
 ```
 
 1. hexo-src 构建项目的地址
-https://codeup.aliyun.com/5eacd74338076f00011bc59e/hexo-src.git
+<https://codeup.aliyun.com/5eacd74338076f00011bc59e/hexo-src.git>
 
 2. 发布 hexo 博客的· 云效 Flow
-https://flow.aliyun.com/pipelines/1001720/current
+<https://flow.aliyun.com/pipelines/1001720/current>
 
 构建工作
 
@@ -161,21 +161,24 @@ categories:
 
 根据 post.md 的格式
 
-```
+```yml
 ---
 title: {{ title }}
 date: {{ date }}
 tags:
 ---
 ```
+
 ## next 主题添加 categories 和 tags
-```
+
+```yml
 $ cd hexo-site
 $ hexo new page tags
 ```
 
 编辑新页面并将类型更改为标签，主题将在此页面中自动显示标签云。页面内容如下:
-```
+
+```yml
 title: Tags
 date: 2014-12-22 12:39:04
 type: tags
@@ -185,13 +188,13 @@ type: tags
 添加 categories 则是类似的方法
 
 ```sh
-$ cd hexo-site
-$ hexo new page categories
+cd hexo-site
+hexo new page categories
 ```
 
 编辑新页面并将类型更改为标签，主题将在此页面中自动显示标签云。页面内容如下:
 
-```
+```yml
 title: categories
 date: 2014-12-22 12:39:04
 type: categories
@@ -243,7 +246,7 @@ npm install hexo-generator-searchdb
 
 添加依赖
 
-```
+```yml
 # Local Search
 # Dependencies: https://github.com/next-theme/hexo-generator-searchdb
 local_search:
@@ -263,19 +266,19 @@ local_search:
 
 ### 部署 Gitee Pages 常见问题
 
-#### **如何创建一个首页访问地址不带二级目录的 pages，如ipvb.gitee.io？**
+#### **如何创建一个首页访问地址不带二级目录的 pages，如 ipvb.gitee.io？**
 
 你需要建立一个与自己个性地址同名的仓库，如 [https://gitee.com/ipvb](https://gitee.com/ipvb) 这个用户，想要创建一个自己的站点，但不想以子目录的方式访问，想以`ipvb.gitee.io`直接访问，那么他就可以创建一个名字为`ipvb`的仓库 [https://gitee.com/ipvb/ipvb](https://gitee.com/ipvb/ipvb) 部署完成后，就能以 [https://ipvb.gitee.io](https://ipvb.gitee.io/) 进行访问了。
 
-#### **当要部署的项目与自己的个性地址不一致时，部署完成后存在一些资源访问404？**
+#### **当要部署的项目与自己的个性地址不一致时，部署完成后存在一些资源访问 404？**
 
 答：当需要部署的仓库和自己的个性地址不一致时，如：[https://gitee.com/ipvb/blog](https://gitee.com/ipvb/blog) ，生成的pages url 为 [https://ipvb.gitee.io/blog](https://ipvb.gitee.io/blog) ，而访问的资源404，如 [https://ipvb.gitee.io/style.css](https://ipvb.gitee.io/style.css) 。这是因为相应配置文件的相对路径存在问题导致的，生成的资源 url 应该为 [https://ipvb.gitee.io/blog/style.css](https://ipvb.gitee.io/blog/style.css) 才对。对于不同的静态资源生成器，配置如下：
 
 Hexo 配置文件_config.yml的url和root修改如下：
 
-```
+```yml
 url: https://ipvb.gitee.io/blog
 root: /blog
 ```
 
-> 当如果是建立与自己个性地址同名的仓库，是不会存在这个问题的。比如 https://kailee.gitee.io/ 这个地址。
+> 当如果是建立与自己个性地址同名的仓库，是不会存在这个问题的。比如 <https://kailee.gitee.io/> 这个地址。

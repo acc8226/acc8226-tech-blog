@@ -1,6 +1,6 @@
 作为一款开箱即用的产物，尽量不做过多额外配置。
 
-##  设置 vscode 换行符 （\n）
+## 设置 vscode 换行符 （\n）
 
 直接搜索files:eol进行设置。
 
@@ -9,7 +9,7 @@
 IntelliJ IDEA 键盘映射
 https://marketplace.visualstudio.com/items?itemName=k--kato.intellij-idea-keybindings
 
-markdownlint 
+markdownlint
 https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint
 
 ## VS code 更改字体

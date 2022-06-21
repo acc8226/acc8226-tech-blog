@@ -1,15 +1,16 @@
 ## 下划线
 
-```
+```html
 <u>支持下滑线了</u>
 ```
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-7206d2ec0ee55b1b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-
 ## 添加待办事项
+
 语法示例：
-```
+
+```md
 三只青蛙
 * [x] 第一只青蛙
 * [ ] 第二只青蛙
@@ -21,7 +22,8 @@
 ## 插入表格
 
 语法示例：
-```
+
+```md
 | 帐户类型 | 免费帐户 | 标准帐户 | 高级帐户 |
 | --- | --- | --- | --- |
 | 帐户流量 | 60M | 1GB | 10GB |
@@ -139,10 +141,12 @@ section 项目B
 设置之后可以自动根据设置的分级标题来自动生成目录。
 
 语法示例：
-```
+
+```md
 [TOC]
 ```
 
 ## 参考
+
 印象笔记 Markdown 入门指南
-https://list.yinxiang.com/markdown/eef42447-db3f-48ee-827b-1bb34c03eb83.php
+<https://list.yinxiang.com/markdown/eef42447-db3f-48ee-827b-1bb34c03eb83.php>

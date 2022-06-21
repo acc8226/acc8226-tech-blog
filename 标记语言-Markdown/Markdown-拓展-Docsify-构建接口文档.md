@@ -21,7 +21,10 @@ docsify run ./docs
 
 **开启字数统计**功能
 add js
+
+```html
 <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+```
 
 增加配置
 
@@ -38,11 +41,13 @@ window.$docsify = {
 
 **开启复制到剪切板**功能
 
+```html
 <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+```
 
 增加配置
 
-```
+```js
 copyCode: {
  buttonText: {'/' : '点击复制'},
  errorText: {'/' : '错误'},
@@ -180,7 +185,7 @@ index.html
 
 ## 总结
 
-接口文档采用 markdown 编写，入门比较容易
+接口文档采用 markdown 编写，入门较容易
 
 附录一个实用接口文档的 markdown 模板 - 简书
 <https://www.jianshu.com/p/f5a0b5894ffc>

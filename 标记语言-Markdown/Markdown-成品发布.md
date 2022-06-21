@@ -8,7 +8,7 @@ Content hosted on the [legacy.gitbook.com](https://legacy.gitbook.com/) will c
 
 ## 导出为 word 文件
 
-前提条件：下载 Releases · jgm/pandoc https://github.com/jgm/pandoc/releases。或者使用 typora。
+前提条件：下载 Releases · jgm/pandoc <https://github.com/jgm/pandoc/releases>。或者使用 typora。
 
 **不带模板的导出 word**
 
@@ -39,7 +39,7 @@ Marp 最早是一个 GitHub 上的开源桌面软件，目前已经迭代成为�
 对于普通用户而言，现阶段使用 Marp 的最好方式就是通过其发布的 VS Code 插件，通过它，我们可以让使用 Markdown 写 PPT 这件事的体验接近原生 App，上手简单，最后却能输出样式丰富的幻灯片（比如官方的 [这个例子](https://yhatt-marp-cli-example.netlify.com/#1)）。
 
 Marp for VS Code - Visual Studio Marketplace
-https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode
+<https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode>
 
 目前支持的导出格式
 

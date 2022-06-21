@@ -11,10 +11,11 @@ https://www.jetbrains.com/idea/download/other.html
 1. 解压
 2. 【可选】添加至环境变量，这样无论在哪个目录下都可启动 IntelliJ IDE
 3. 【可选】调整 JVM 堆大小的值
-4. 打开命令行工具进入安装目录的bin文件夹下， 键入 idea.bat . 这个命令同时会在 `${user.home}/. IntelliJIdea2020.3`目录中初始化一系列的配置文件。
+4. 打开命令行工具进入安装目录的 bin 文件夹下， 键入 idea.bat . 这个命令同时会在 `${user.home}/. IntelliJIdea2020.3`目录中初始化一系列的配置文件。
 
 附原文：
-```
+
+```text
 IntelliJ IDEA
 
 INSTALLATION INSTRUCTIONS
@@ -82,7 +83,7 @@ Enjoy!
 
 **修改默认 行分隔符**， 这里一律使用 unix 的换行符行为。
 
-File->Settings… Editor->Code Style 
+File->Settings… Editor->Code Style
 
 建议都设置成 Unix 形式的 `Unix and OS X（\n）`
 
@@ -159,7 +160,7 @@ Ctrl+Y 删除行
 
 清除无效包引用  Ctrl + Alt  + O
 
-Alt + 左方向键       向左切换tab页         
+Alt + 左方向键       向左切换tab页
 Alt + 右方向键       向右切换tab页
 
 **修改 Project 工具窗口（或其他活动工具窗口）大小**
@@ -286,7 +287,7 @@ Postfix Completion 功能本质上也是代码模板，只是它比 Live Templat
 
 ## IDEA 集成 tomcat
 
-## Intellij IDEA 打开多个窗口项目 
+## Intellij IDEA 打开多个窗口项目
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-6fa8e0b6fa8d533a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 

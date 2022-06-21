@@ -9,7 +9,7 @@ You can generate diagrams and flowcharts from text by using [Mermaid](https://m
 ### gitlab 配置 plantuml
 
 plantuml/plantuml-server: PlantUML Online Server
-https://github.com/plantuml/plantuml-server
+<https://github.com/plantuml/plantuml-server>
 
 plantuml-server 启动完成后，需要在 GitLab 上配置开启 PlantUML，管理员登录 -> Admin Area -> Settings，复选框选中 Enable PlantUML，输入 PlantUML URL（就是刚刚启动的 PlantUML Server 服务监听地址）。好了现在可以开始 PlantUML 之旅了。
 
@@ -38,7 +38,7 @@ Mermaid 支持软件项目中一系列不同的常见图表类型，涵盖流程
 
 To generate a diagram or flowchart, write your text inside the mermaid block:
 
-```
+```md
 ```mermaid
 graph TD;
   A-->B;

@@ -461,8 +461,9 @@ Copyright (C) 2012-2020 Dan Allen, Sarah White, Ryan Waldron, and the individual
 ```
 
 示例二:
-https://raw.githubusercontent.com/spring-guides/gs-gradle/master/README.adoc
-```
+<https://raw.githubusercontent.com/spring-guides/gs-gradle/master/README.adoc>
+
+```adoc
 :spring_boot_version: 1.5.10.RELEASE
 :jdk: https://www.oracle.com/technetwork/java/javase/downloads/index.html
 :toc:
@@ -797,14 +798,15 @@ include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/
 https://marketplace.visualstudio.com/items?itemName=joaompinto.asciidoctor-vscode
 
 ## 参考
+
 asciidoctor 官网
-https://github.com/asciidoctor/asciidoctor
+<https://github.com/asciidoctor/asciidoctor>
 
 asciidoc 官网
-http://asciidoc.org/asciidocapi.html
+<http://asciidoc.org/asciidocapi.html>
 
 AsciiDoc 简介
-https://chloerei.com/2014/10/16/asciidoc-introduction/
+<https://chloerei.com/2014/10/16/asciidoc-introduction/>
 
 asciidoctor-vscode插件的 Github 地址
-https://github.com/asciidoctor/asciidoctor-vscode
+<https://github.com/asciidoctor/asciidoctor-vscode>

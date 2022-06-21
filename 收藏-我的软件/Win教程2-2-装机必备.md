@@ -4,7 +4,7 @@
 
 驱动管理：[驱动精灵](http://www.drivergenius.com/) / [驱动人生](https://www.160.com/) 二选一。从此不用担心驱动光盘📀丢失。
 
-Windows 优化：[软媒魔方](http://mofang.ruanmei.com/) 
+Windows 优化：[软媒魔方](http://mofang.ruanmei.com/)
 
 ## 网络浏览器
 
@@ -38,13 +38,13 @@ iOS 用户请下载 iTunes 和 PP 助手。
 
 #### 下载软件
 
-[迅雷](https://dl.xunlei.com/) / [Free Download Manager](https://www.freedownloadmanager.org/zh/) 
+[迅雷](https://dl.xunlei.com/) / [Free Download Manager](https://www.freedownloadmanager.org/zh/)
 
 ## 影音播放、网络电视、视频转换软件
 
 [PotPlayer](https://potplayer.org/) / QQ影音(19年下半年又开始更新了) / 格式工厂
 网易云音乐 / QQ 音乐
-爱奇艺 / 腾讯视频 / 优酷 
+爱奇艺 / 腾讯视频 / 优酷
 
 ## 文字办公 / 电子邮件 / 股票财经
 
@@ -88,7 +88,7 @@ PS 【收费软件】 / GIMP 【PS的替代品且免费】 / 美图秀秀【免�
 例如订火车票可以选择 12306
 携程 / 飞猪订个票
 优酷, 爱奇艺, [腾讯视频](http://v.qq.com) 看个视频
-听歌可选 [网易云音乐](https://music.163.com) 
+听歌可选 [网易云音乐](https://music.163.com)
 看个新闻可选 今日头条 或者 网易新闻，[腾讯网](https://www.qq.com/)
 
 ## 参考

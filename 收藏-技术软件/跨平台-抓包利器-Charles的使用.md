@@ -13,7 +13,7 @@ Charles 主要的功能包括：
 官网下载地址: <https://www.charlesproxy.com/download/>
 
 > 请低调使用且不得作为商业用途：
-> Registered Name: 	`https://zhile.io`
+> Registered Name: `https://zhile.io`
 > License Key: `48891cf209c6d32bf4`
 
 1、抓浏览器网页请求

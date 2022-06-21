@@ -10,12 +10,13 @@ docsify 是一个动态生成文档网站的工具。不同于 GitBook、Hexo �
 
 推荐全局安装 docsify-cli 工具，可以方便地创建及在本地预览生成的文档。
 
-```
+```sh
 npm i docsify-cli -g
 ```
 
 如果想在项目的 `./docs` 目录里写文档，直接通过 `init` 初始化项目。
-```
+
+```sh
 docsify init ./docs
 ```
 
@@ -27,15 +28,16 @@ docsify init ./docs
 
 初始化成功后，可以看到 `./docs` 目录下创建的几个文件
 
-*   `index.html` 入口文件
-*   `README.md` 会做为主页内容渲染
-*   `.nojekyll` 用于阻止 GitHub Pages 忽略掉下划线开头的文件
+* `index.html` 入口文件
+* `README.md` 会做为主页内容渲染
+* `.nojekyll` 用于阻止 GitHub Pages 忽略掉下划线开头的文件
 
 ## [手动初始化](https://docsify.js.org/#/zh-cn/quickstart?id=%e6%89%8b%e5%8a%a8%e5%88%9d%e5%a7%8b%e5%8c%96)
 
 如果不喜欢 npm 或者觉得安装工具太麻烦，我们可以直接手动创建一个 `index.html` 文件。
 
 *index.html*
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -62,6 +64,7 @@ docsify init ./docs
 ```
 
 README.md
+
 ```md
 # Headline
 
@@ -75,7 +78,8 @@ README.md
 > 注意：不能以 / 结尾，否则页面访问会 404。
 
 示例
-```
+
+```md
 * [首页](/)
 * [1.1 ThingsBoard简单说明](/tb/1/1.ThingsBoard简单说明)
 * [1.2 ThingsBoard社区版安装](/tb/1/2.ThingsBoard社区版安装)
@@ -89,7 +93,8 @@ README.md
 首先配置 `loadSidebar` 选项，具体配置规则见[配置项#loadSidebar](https://docsify.js.org/#/zh-cn/configuration?id=loadsidebar)。
 
 *index.html 信息*
-```
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -140,13 +145,14 @@ README.md
 
 **docsify**内置的代码高亮工具是 [Prism](https://github.com/PrismJS/prism)。Prism 默认支持的语言如下：
 
-*   Markup - `markup`, `html`, `xml`, `svg`, `mathml`, `ssml`, `atom`, `rss`
-*   CSS - `css`
-*   C-like - `clike`
-*   JavaScript - `javascript`, `js`
+* Markup - `markup`, `html`, `xml`, `svg`, `mathml`, `ssml`, `atom`, `rss`
+* CSS - `css`
+* C-like - `clike`
+* JavaScript - `javascript`, `js`
 
 添加额外的语法支持需要通过CDN添加相应的语法文件 :
-```
+
+```html
 <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script>
 ```
@@ -172,19 +178,20 @@ README.md
 ```
 
 ### 字数统计
-这是一款为docsify提供文字统计的插件. [@827652549](https://github.com/827652549)提供
+
+这是一款为 docsify 提供文字统计的插件. [@827652549](https://github.com/827652549)提供
 
 它提供了统计中文汉字和英文单词的功能，并且排除了一些markdown语法的特殊字符例如*、-等
 
 **Add JS**
 
-```
+```html
 <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
 ```
 
 **Add settings**
 
-```
+```js
 window.$docsify = {
   count:{
     countable:true,
@@ -197,7 +204,7 @@ window.$docsify = {
 
 ## docsify-themeable 主题的使用
 
-```
+```html
 <!-- Theme: Simple (latest v0.x.x) -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-defaults.css">
 

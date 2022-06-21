@@ -9,8 +9,8 @@ Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 [Markdown](
 ## 安装 Hexo
 
 在安装前，您必须检查电脑中是否已安装下列应用程序：
-*   [Node.js](http://nodejs.org/)
-*   [Git](http://git-scm.com/)
+* [Node.js](http://nodejs.org/)
+* [Git](http://git-scm.com/)
 
 > **Node.js 版本限制**
 > 我们强烈建议永远安装最新版本的 Hexo，以及 [推荐的 Node.js 版本](https://hexo.io/zh-cn/docs/#%E5%AE%89%E8%A3%85%E5%89%8D%E6%8F%90)。
@@ -58,7 +58,7 @@ $ npm install
 
 > **我们强烈建议你将所有的主题配置集中在一处**。如果你不得不在多处配置你的主题，那么这些信息对你将会非常有用：Hexo 在合并主题配置时，Hexo 配置文件中的 `theme_config` 的优先级最高，其次是 `_config.[theme].yml` 文件，最后是位于主题目录下的 `_config.yml` 文件。
 >
->  顺序: `theme_config` > `_config.[theme].yml` > 主题目录下的`_config.yml`
+> 顺序: `theme_config` > `_config.[theme].yml` > 主题目录下的`_config.yml`
 
 ## 新建文章
 
@@ -78,8 +78,8 @@ $ hexo g
 或 $ hexo generate
 ```
 
-* -d, --deploy	文件生成后立即部署网站
-* -w, --watch	监视文件变动
+* -d, --deploy 文件生成后立即部署网站
+* -w, --watch 监视文件变动
 
 ## 部署 deploy 命令
 
@@ -90,7 +90,7 @@ $ hexo d
 或 $ hexo deploy
 ```
 
-* -g, --generate	部署之前预先生成静态文件
+* -g, --generate 部署之前预先生成静态文件
 
 ## clean 命令
 

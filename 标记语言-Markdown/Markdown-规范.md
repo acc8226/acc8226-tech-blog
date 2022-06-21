@@ -61,7 +61,7 @@ Parameters: level (number; default 1)
 This rule is intended to ensure document headings start at the top level and
 is triggered when the first heading in the document isn't an h1 heading:
 
-```markdown
+```md
 ## This isn't an H1 heading
 
 ### Another heading
@@ -69,7 +69,7 @@ is triggered when the first heading in the document isn't an h1 heading:
 
 The first heading in the document should be an h1 heading:
 
-```markdown
+```md
 # Start with an H1 heading
 
 ## Then use an H2 for subsections

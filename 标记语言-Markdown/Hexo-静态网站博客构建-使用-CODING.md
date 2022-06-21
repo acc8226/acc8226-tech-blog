@@ -20,7 +20,7 @@ CODING 静态网站服务结合 [Tencent Serverless Framework](https://cloud.te
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-c623ad09a44aa103.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-6. 部署成功后，CODING 静态网站会自动帮您生成一个访问地址，点击后即可访问刚刚部署的博客网站。至此，部署流程全部完成。
+6\. 部署成功后，CODING 静态网站会自动帮您生成一个访问地址，点击后即可访问刚刚部署的博客网站。至此，部署流程全部完成。
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-c8404e41ac4ba2f3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 

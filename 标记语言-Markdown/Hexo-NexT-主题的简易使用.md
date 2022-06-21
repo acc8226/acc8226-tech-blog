@@ -37,16 +37,16 @@ git clone https://github.com/next-theme/hexo-theme-next themes/next
 using npm
 
 ```sh
-$ cd hexo-site
-$ npm install hexo-theme-next@latest
+cd hexo-site
+npm install hexo-theme-next@latest
 ```
 
 using git
 
 ```sh
-$ cd hexo-site
-$ cd themes/next
-$ git pull origin master
+cd hexo-site
+cd themes/next
+git pull origin master
 ```
 
 ### 启动 NexT

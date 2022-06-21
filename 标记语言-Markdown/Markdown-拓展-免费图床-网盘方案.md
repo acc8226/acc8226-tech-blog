@@ -51,12 +51,11 @@ github 服务器在国外, 直接访问肯定太慢. 知道看到了 **[PicGo](h
 
 教程：[-----请参考这里的视频教程-----](https://www.bilibili.com/video/av65336062?from=search&seid=4753922999762898690)
 
-> 放在 Github 的资源在国内加载速度比较慢，因此需要使用 CDN 加速来优化网站打开速度，jsDelivr + Github 便是免费且好用的 CDN.
-
+> 放在 Github 的资源在国内加载速度比较慢，因此需要使用 CDN 加速来优化网站打开速度，jsDelivr + Github 便是免费且好用的 CDN。
 > CDN 的全称是 Content Delivery Network，即内容分发网络。CDN 是构建在网络之上的内容分发网络，依靠部署在各地的边缘服务器，通过中心平台的负载均衡、内容分发、调度等功能模块，使用户就近获取所需内容，降低网络拥塞，提高用户访问响应速度和命中率。CDN 的关键技术主要有内容存储和分发技术。——百度百科
 
 图片地址示例：
-https://cdn.jsdelivr.net/gh/acc8226/JsDelivrCDN/img/20191117180214.jpg
+<https://cdn.jsdelivr.net/gh/acc8226/JsDelivrCDN/img/20191117180214.jpg>
 
 #### PicGo 配置说明
 
@@ -65,8 +64,9 @@ https://cdn.jsdelivr.net/gh/acc8226/JsDelivrCDN/img/20191117180214.jpg
 * 设定Token：粘贴之前生成的【Token】
 * 指定存储路径：填写想要储存的路径，如【images/】，这样就会在仓库下创建一个名为 images 的文件夹，图片将会储存在此文件夹中
 * 设定自定义域名：它的的作用是，在图片上传后，PicGo 会按照【自定义域名+上传的图片名】的方式生成访问链接，放到粘贴板上，因为我们要使用jsDelivr加速访问，所以可以设置为【https://cdn.jsdelivr.net/gh/用户名/图床仓库名 】
-`jsDelivr参考格式: The URL structure is /gh/user/repo@version/file.js
-`
+
+jsDelivr参考格式: The URL structure is /gh/user/repo@version/file.js
+
 #### PicGo 的自定义配置
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-63eb930b124b85ca.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)对于追求效率的键盘党而言，你还可以使用键盘快捷键 `CTRL+SHIFT+P` (Win / Linux) 或者 `Command+SHIFT+P` (macOS) 来快速上传剪贴板里的 (第一张) 图片。

@@ -7,7 +7,7 @@
 
 可选：语言包
 
-![](./imgs/%E7%BB%99%E5%88%9D%E5%AD%A6%E8%80%85%E7%9A%84-%E7%AE%80%E6%98%93-SVN-%E6%95%99%E7%A8%8B/1662509-62590168b8e026c3.png)
+![](./imgs/%E7%BB%99%E5%88%9D%E5%AD%A6%E8%80%85%E7%9A%84-%E7%AE%80%E6%98%93-SVN-%E6%95%99%E7%A8%8B/1662509-991922411b1c3224.png)
 
 TortoiseSVN 使用教程 | 菜鸟教程。入门的话看到【更新档案及目录 update】章节即可。
 <https://www.runoob.com/svn/tortoisesvn-intro.html>
@@ -23,8 +23,7 @@ TortoiseSVN 使用教程 | 菜鸟教程。入门的话看到【更新档案及�
 **检查账号是否可用**
 
 鼠标右键
-
-![](./imgs/%E7%BB%99%E5%88%9D%E5%AD%A6%E8%80%85%E7%9A%84-%E7%AE%80%E6%98%93-SVN-%E6%95%99%E7%A8%8B/1662509-991922411b1c3224.png)
+![](./imgs/%E7%BB%99%E5%88%9D%E5%AD%A6%E8%80%85%E7%9A%84-%E7%AE%80%E6%98%93-SVN-%E6%95%99%E7%A8%8B/1662509-bbe18ad7495f70c7.png)
 
 拷贝管理员分配的地址，此时会弹出认证框。输入 已分配好的 用户名和密码，若能进入页面则说明账号可用。
 
@@ -32,12 +31,16 @@ TortoiseSVN 使用教程 | 菜鸟教程。入门的话看到【更新档案及�
 
 右击空白处 或者 在 Repo-browser 中 checkout 即可。
 
-## 免费 - 如何创建免费的svn项目
+## 如何创建免费的svn项目
 
 腾讯云开发者平台-登录帐号之后，可以在创建项目的界面看到 SVN 仓库的选项
 
-![](./imgs/%E7%BB%99%E5%88%9D%E5%AD%A6%E8%80%85%E7%9A%84-%E7%AE%80%E6%98%93-SVN-%E6%95%99%E7%A8%8B/1662509-bbe18ad7495f70c7.png)
+![](./imgs/%E7%BB%99%E5%88%9D%E5%AD%A6%E8%80%85%E7%9A%84-%E7%AE%80%E6%98%93-SVN-%E6%95%99%E7%A8%8B/1662509-62590168b8e026c3.png)
+
+gitee 的功能设置也提供 svn 访问支持
+
+![](./imgs/%E7%BB%99%E5%88%9D%E5%AD%A6%E8%80%85%E7%9A%84-%E7%AE%80%E6%98%93-SVN-%E6%95%99%E7%A8%8B/5.png)
 
 ## 更多教程
 
-SVN 教程 | 菜鸟教程 https://www.runoob.com/svn/svn-tutorial.html
+SVN 教程 | 菜鸟教程 <https://www.runoob.com/svn/svn-tutorial.html>
