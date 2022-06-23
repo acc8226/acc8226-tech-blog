@@ -1,16 +1,4 @@
-## 华为开源镜像站加速下载开源组件
-
-settings.xml 在 mirrors 标签中添加 mirror 子节点：
-
-```xml
-<mirror>
-        <id>huawei-cloud-mirror</id>
-        <mirrorOf>central</mirrorOf>
-        <url>https://repo.huaweicloud.com/repository/maven/</url>
-</mirror>
-```
-
-## 配置华为私有库下载
+## 配置华为云私有库下载
 
 1\. settings.xml 中设置仓库凭证：servers 节点中添加如下配置
 
@@ -57,34 +45,7 @@ settings.xml 在 mirrors 标签中添加 mirror 子节点：
 </profile>
 ```
 
-## 阿里云开源镜像站加速下载开源组件
-
-在`<mirrors></mirrors>`标签中添加 mirror 子节点,
-
-```xml
-<mirror>
-    <id>aliyun-mirror</id>
-    <mirrorOf>central</mirrorOf>
-    <url>https://maven.aliyun.com/repository/public</url>
-</mirror>
-```
-
-如果想使用其它代理仓库,可在 profile 下的 repositories 节点中加入对应的仓库使用地址。以使用 Spring 代理仓为例：
-
-```xml
-<repository>
-    <id>spring</id>
-    <url>https://maven.aliyun.com/repository/spring</url>
-    <releases>
-        <enabled>true</enabled>
-    </releases>
-    <snapshots>
-        <enabled>true</enabled>
-    </snapshots>
-</repository>
-```
-
-## 配置华为私有库下载
+## 配置阿里云私有库下载
 
 1\. 在 settings.xml 中添加认证信息
 在 Maven 默认 settings.xml 中找到 servers 的部分，添加一个 server 配置如下。
@@ -205,9 +166,6 @@ mvn clean package
 
 ## 参考
 
-华为开源镜像站_软件开发服务_华为云
-<https://mirrors.huaweicloud.com/home>
-
-Maven 仓库 · 云效 Packages · 企业级制品仓库 <https://packages.aliyun.com/maven>
-
-Maven 查看当前生效配置、pom、环境变量等命令（mvn help用法） - 简书 <https://www.jianshu.com/p/6184fa25fd53>
+1. 华为开源镜像站_软件开发服务_华为云 <https://mirrors.huaweicloud.com/home>
+2. Maven 仓库 · 云效 Packages · 企业级制品仓库 <https://packages.aliyun.com/maven>
+3. Maven 查看当前生效配置、pom、环境变量等命令（mvn help用法） - 简书 <https://www.jianshu.com/p/6184fa25fd53>

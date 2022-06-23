@@ -129,8 +129,9 @@ Maven – Settings Reference
 
 LocalRepository
 作用：该值表示构建系统本地仓库的路径。
-其默认值：~/.m2/repository。
-```
+其默认值：`~/.m2/repository`。
+
+```xml
 <localRepository>${user.home}/.m2/repository</localRepository>
 ```
 
@@ -139,14 +140,16 @@ LocalRepository
 InteractiveMode
 作用：表示 maven 是否需要和用户交互以获得输入。
 如果 maven 需要和用户交互以获得输入，则设置成 true，反之则应为false。默认为 true。
-```
+
+```xml
 <interactiveMode>true</interactiveMode>
 ```
 
 UsePluginRegistry
 作用：maven 是否需要使用 plugin-registry.xml 文件来管理插件版本。
-如果需要让maven使用文件~/.m2/plugin-registry.xml 来管理插件版本，则设为true。默认为false。
-```
+如果需要让maven使用文件~/.m2/plugin-registry.xml 来管理插件版本，则设为 true。默认为 false。
+
+```xml
 <usePluginRegistry>false</usePluginRegistry>
 ```
 
@@ -154,15 +157,17 @@ Offline
 作用：表示 maven 是否需要在离线模式下运行。
 如果构建系统需要在离线模式下运行，则为 true，默认为 false。
 当由于网络设置原因或者安全因素，构建服务器不能连接远程仓库的时候，该配置就十分有用。
-```
+
+```xml
 <offline>false</offline>
 ```
 
 PluginGroups
-作用：当插件的组织id（groupId）没有显式提供时，供搜寻插件组织Id（groupId）的列表。
-该元素包含一个 pluginGroup 元素列表，每个子元素包含了一个组织Id（groupId）。
+作用：当插件的组织 id（groupId）没有显式提供时，供搜寻插件组织 Id（groupId）的列表。
+该元素包含一个 pluginGroup 元素列表，每个子元素包含了一个组织 Id（groupId）。
 当我们使用某个插件，并且没有在命令行为其提供组织Id（groupId）的时候，Maven就会使用该列表。默认情况下该列表包含了org.apache.maven.plugins和org.codehaus.mojo。
-```
+
+```xml
 <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
                       https://maven.apache.org/xsd/settings-1.0.0.xsd">
@@ -176,7 +181,8 @@ PluginGroups
 ```
 
 Servers
-作用：一般，仓库的下载和部署是在 pom.xml 文件中的 repositories 和distributionManagement 元素中定义的。然而，一般类似用户名、密码（有些仓库访问是需要安全认证的）等信息不应该在pom.xml文件中配置，这些信息可以配置在settings.xml中。
+作用：一般，仓库的下载和部署是在 pom.xml 文件中的 repositories 和distributionManagement 元素中定义的。然而，一般类似用户名、密码（有些仓库访问是需要安全认证的）等信息不应该在 pom.xml 文件中配置，这些信息可以配置在 settings.xml 中。
+
 ```xml
 <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
@@ -231,10 +237,9 @@ Mirrors
 </settings>
 ```
 
-**关于 <mirror> 的说明**
+**关于 `<mirror>` 的说明**
 
 虽然 mirrors 可以配置多个子节点，但是它只会使用其中的一个节点，即默认情况下配置多个 mirror 的情况下，只有第一个生效，只有当前一个 mirror 无法连接的时候，才会去找后一个；而我们想要的效果是：当 a.jar 在第一个 mirror中不存在的时候，maven 会去第二个 mirror 中查询下载，但是 maven 不会这样做！所以一般而言配置一个就够了。
-
 
 * `*` 匹配所有 repo id
 * `external:*` 匹配除了使用本地主机或基于文件的存储库之外的所有存储库。当您希望排除为集成测试定义的重定向存储库时，可以使用此方法。
@@ -256,6 +261,7 @@ Mirrors
 
 Proxies
 作用：用来配置不同的代理。
+
 ```xml
 <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
@@ -290,6 +296,7 @@ Profiles
 作用：根据环境参数来调整构建配置的列表。
 settings.xml中 的 profile 元素是 pom.xml 中 profile 元素的裁剪版本。
 它包含了id、activation、repositories、pluginRepositories 和 properties元素。这里的 profile 元素只包含这五个子元素是因为这里只关心构建系统这个整体（这正是settings.xml文件的角色定位），而非单独的项目对象模型设置。如果一个settings.xml中的 profile 被激活，它的值会覆盖任何其它定义在pom.xml中带有相同 id 的 profile。
+
 ```xml
 <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
@@ -435,9 +442,9 @@ maven插件是一种特殊类型的构件。由于这个原因，插件仓库独
 ```
 
 ActiveProfiles
-作用：手动激活 profiles 的列表，按照 profile 被应用的顺序定义activeProfile。
-该元素包含了一组activeProfile元素，每个activeProfile都含有一个profile id。任何在activeProfile中定义的profile id，不论环境设置如何，其对应的 profile都会被激活。如果没有匹配的profile，则什么都不会发生。
-例如，env-test是一个activeProfile，则在pom.xml（或者profile.xml）中对应id的profile会被激活。如果运行过程中找不到这样一个profile，Maven则会像往常一样运行。
+作用：手动激活 profiles 的列表，按照 profile 被应用的顺序定义 activeProfile。
+该元素包含了一组 activeProfile 元素，每个activeProfile都含有一个 profile id。任何在 activeProfile 中定义的 profile id，不论环境设置如何，其对应的 profile 都会被激活。如果没有匹配的profile，则什么都不会发生。
+例如，env-test 是一个 activeProfile，则在 pom.xml（或者profile.xml）中对应id的profile会被激活。如果运行过程中找不到这样一个profile，Maven则会像往常一样运行。
 
 ```xml
 <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -480,5 +487,5 @@ ActiveProfiles
 
 ## 参考
 
-Maven全局配置文件settings.xml详解 - 静默虚空 - 博客园
+Maven 全局配置文件 settings.xml 详解 - 静默虚空 - 博客园
 <https://www.cnblogs.com/jingmoxukong/p/6050172.html>

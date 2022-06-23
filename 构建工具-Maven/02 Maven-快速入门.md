@@ -186,6 +186,7 @@ Maven extension for VS Code. It provides a project explorer and shortcuts to exe
 * 官网地址：<https://maven.apache.org>
 * Maven 库搜索：<http://mvnrepository.com>
 * Maven镜像国内站：<https://repo.huaweicloud.com/apache/maven/maven-3/>
+* Index of /maven/maven-3 <https://downloads.apache.org/maven/maven-3/>
 
 ## 参考
 
