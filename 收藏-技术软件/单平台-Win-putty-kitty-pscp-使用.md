@@ -16,7 +16,19 @@
 首先创建 putty.exe 的快捷方式到桌面；然后运行 putty，输入 host name、port、saved session’s name，点击保存，假设 session 名为“qa server”，随后关闭窗口；最后右击 putty 快捷方式，属性，目标，加上如下参数
 ` -load "qa server" -ssh -l {username} -pw {password}`。
 
-或者这么整也行 `"C:\Program Files\PuTTY\putty.exe" -load YOUR_SESSNAME -P YOUR_PORT -pw YOUR_PASSWORD -ssh YOUR_USERNAME@YOUR_HOST_NAME`
+或者这么整也行
+
+```sh
+"C:\Program Files\PuTTY\putty.exe" -load YOUR_SESSNAME -P YOUR_PORT -pw YOUR_PASSWORD -ssh YOUR_USERNAME@YOUR_HOST_NAME
+```
+
+-m 选项的释义：-m file   read remote command(s) from file
+
+于是乎就有了自动登录后执行默认的命令：
+
+```sh
+putty [-pw password] [-m file] user@ip_addr
+```
 
 **对 putty 乱码的处理**
 
@@ -81,7 +93,7 @@ Options:
 
 ## 高级方案：使用 KiTTY  并集成 WinSCP
 
-1. KiTTY 全量包 https://github.com/cyd01/KiTTY/releases
+1. KiTTY 全量包 <https://github.com/cyd01/KiTTY/releases>
 
 KiTTY 是基于 Putty 的改进版，加入了一些实用特性，可以完美替代 putty。比如记住密码自动连接等，下面是几个常用的设置，记录一下：
 

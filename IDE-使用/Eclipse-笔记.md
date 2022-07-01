@@ -2,7 +2,7 @@
 
 **下载地址**
 Eclipse Packages | The Eclipse Foundation - home to a global community, the Eclipse IDE, Jakarta EE and over 350 open source projects...
-https://www.eclipse.org/downloads/packages/
+<https://www.eclipse.org/downloads/packages/>
 
 ## 使用前基本配置
 

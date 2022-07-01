@@ -2,15 +2,19 @@
 
 ## 设置 vscode 换行符 （\n）
 
-直接搜索files:eol进行设置。
+直接搜索 files:eol 进行设置。
+
+## 设置自动换行
+
+搜索框输入： word warp 然后将值改成 on
 
 ## 我的必装插件
 
 IntelliJ IDEA 键盘映射
-https://marketplace.visualstudio.com/items?itemName=k--kato.intellij-idea-keybindings
+<https://marketplace.visualstudio.com/items?itemName=k--kato.intellij-idea-keybindings>
 
 markdownlint
-https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint
+<https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint>
 
 ## VS code 更改字体
 
@@ -37,9 +41,9 @@ https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownli
 
 To successfully complete this tutorial, you need to first setup your Python development environment. Specifically, this tutorial requires:
 
-*   VS Code
-*   VS Code Python extension
-*   Python 3
+* VS Code
+* VS Code Python extension
+* Python 3
 
 ### 验证安装
 
@@ -73,4 +77,3 @@ py -3 -m venv .venv
 ```
 
 Once you are finished, type deactivate in the terminal window to deactivate the virtual environment.
-

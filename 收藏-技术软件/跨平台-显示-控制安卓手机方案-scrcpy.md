@@ -10,12 +10,12 @@
 
 It focuses on:
 
-- **lightness** (native, displays only the device screen)
-- **performance** (30~60fps)
-- **quality** (1920×1080 or above)
-- **low latency** ([35~70ms][lowlatency])
-- **low startup time** (~1 second to display the first image)
-- **non-intrusiveness** (nothing is left installed on the device)
+* **lightness** (native, displays only the device screen)
+* **performance** (30~60fps)
+* **quality** (1920×1080 or above)
+* **low latency** ([35~70ms][lowlatency])
+* **low startup time** (~1 second to display the first image)
+* **non-intrusiveness** (nothing is left installed on the device)
 
 [lowlatency]: https://github.com/Genymobile/scrcpy/pull/646
 
@@ -115,6 +115,7 @@ The other dimension is computed to that the device aspect ratio is preserved.
 That way, a device in 1920×1080 will be mirrored at 1024×576.
 
 #### Change bit-rate 修改视频码率
+
 The default bit-rate is 8 Mbps. To change the video bitrate (e.g. to 2 Mbps):
 
 ```bash
@@ -123,6 +124,7 @@ scrcpy -b 2M  # short version
 ```
 
 #### Limit frame rate 限制帧率
+
 On devices with Android >= 10, the capture frame rate can be limited:
 
 ```bash
@@ -142,16 +144,18 @@ scrcpy --crop 1224:1440:0:0   # 1224x1440 at offset (0,0)
 If `--max-size` is also specified, resizing is applied after cropping.
 
 ### Recording
+
 投屏并录屏：
 It is possible to record the screen while mirroring:
 
-```bash
+```sh
 scrcpy --record file.mp4
 scrcpy -r file.mkv
 ```
 
 To disable mirroring while recording: 不投屏只录屏：
-```bash
+
+```sh
 scrcpy --no-display --record file.mp4
 scrcpy -Nr file.mkv
 # interrupt recording with Ctrl+C
@@ -165,9 +169,12 @@ variation] does not impact the recorded file.
 [packet delay variation]: https://en.wikipedia.org/wiki/Packet_delay_variation
 
 ### Connection 连接
+
 #### Wireless 无线连接
+
 _Scrcpy_ uses `adb` to communicate with the device, and `adb` can [connect] to a
 device over TCP/IP:
+
 1. 查询设备当前的 IP 地址 (设置 →关于手机→状态)
 2. 启用 adb TCP/IP 连接，执行命令：adb tcpip 5555，其中 5555 为端口号
 3. 拔掉你的数据线
@@ -187,7 +194,7 @@ scrcpy -b2M -m800  # short version
 
 If several devices are listed in `adb devices`, you must specify the _serial_:
 
-```bash
+```sh
 scrcpy --serial 0123456789abcdef
 scrcpy -s 0123456789abcdef  # short version
 ```
@@ -200,7 +207,7 @@ To connect to a remote device, it is possible to connect a local `adb` client to
 a remote `adb` server (provided they use the same version of the _adb_
 protocol):
 
-```bash
+```sh
 adb kill-server    # kill the local adb server on 5037
 ssh -CN -L5037:localhost:5037 -R27183:localhost:27183 your_remote_computer
 # keep this open
@@ -214,7 +221,7 @@ scrcpy
 
 Like for wireless connections, it may be useful to reduce quality:
 
-```
+```sh
 scrcpy -b2M -m800 --max-fps 15
 ```
 
@@ -229,6 +236,7 @@ scrcpy --window-title 'My device'
 ```
 
 #### Position and size
+
 The initial window position and size may be specified:
 
 ```bash
@@ -253,9 +261,10 @@ scrcpy --always-on-top
 ```
 
 #### Fullscreen 全屏
+
 The app may be started directly in fullscreen:
 
-```bash
+```sh
 scrcpy --fullscreen
 scrcpy -f  # short version
 ```
@@ -323,17 +332,18 @@ Note that it only shows _physical_ touches (with the finger on the device).
 It is possible to synchronize clipboards between the computer and the device, in
 both directions:
 
- - `Ctrl`+`c` copies the device clipboard to the computer clipboard将设备剪贴板复制到计算机剪贴板;
- - `Ctrl`+`Shift`+`v` copies the computer clipboard to the device clipboard将计算机剪贴板复制到设备剪贴板;
- - `Ctrl`+`v` _pastes_ the computer clipboard as a sequence of text events (but breaks non-ASCII characters)将计算机剪贴板粘贴为一系列文本事件(但
+* `Ctrl`+`c` copies the device clipboard to the computer clipboard将设备剪贴板复制到计算机剪贴板;
+* `Ctrl`+`Shift`+`v` copies the computer clipboard to the device clipboard将计算机剪贴板复制到设备剪贴板;
+* `Ctrl`+`v` _pastes_ the computer clipboard as a sequence of text events (but breaks non-ASCII characters)将计算机剪贴板粘贴为一系列文本事件(但
 
 中断非 ascii 字符)。.
 
 #### Text injection preference
 
 There are two kinds of [events][textevents] generated when typing text:
- - _key events_, signaling that a key is pressed or released;
- - _text events_, signaling that a text has been entered.
+
+- _key events_, signaling that a key is pressed or released;
+- _text events_, signaling that a text has been entered.
 
 By default, letters are injected using key events, so that the keyboard behaves
 as expected in games (typically for WASD keys).
@@ -359,7 +369,6 @@ window.
 
 There is no visual feedback, a log is printed to the console.
 
-
 #### Push file to device
 
 To push a file to `/sdcard/` on the device, drag & drop a (non-APK) file to the
@@ -380,7 +389,6 @@ scrcpy --push-target /sdcard/foo/bar/
 Audio is not forwarded by _scrcpy_. Use [USBaudio] (Linux-only).
 [USBaudio]: https://github.com/rom1v/usbaudio
 [issue #14]: https://github.com/Genymobile/scrcpy/issues/14
-
 
 ## Shortcuts
 
@@ -412,7 +420,7 @@ _²Right-click turns the screen on if it was off, presses BACK otherwise._
 To use a specific _adb_ binary, configure its path in the environment variable
 `ADB`:
 
-    ADB=/path/to/adb scrcpy
+ADB=/path/to/adb scrcpy
 
 To override the path of the `scrcpy-server` file, configure its path in
 `SCRCPY_SERVER_PATH`.
@@ -422,7 +430,8 @@ To override the path of the `scrcpy-server` file, configure its path in
 [`strcpy`]: http://man7.org/linux/man-pages/man3/strcpy.3.html
 
 ## scrcpy/issues
-https://github.com/Genymobile/scrcpy/issues
+
+<https://github.com/Genymobile/scrcpy/issues>
 If you have a bug or an idea, browse the open issues before opening a new one. You can also take a look at the [Open Source Guide](https://opensource.guide/ "Learn about Open Source and how to contribute").
 
 If you're ready to tackle some open issues, [we've collected some good first issues for you ](https://github.com/Genymobile/scrcpy/contribute).
@@ -435,7 +444,7 @@ https://www.iplaysoft.com/tou-ping-ruan-jian.html)
 ## 参考
 
 * Genymobile/scrcpy: Display and control your Android device
-https://github.com/Genymobile/scrcpy
+<https://github.com/Genymobile/scrcpy>
 
 * 异次元软件对 scrcpy 的介绍:
-https://www.iplaysoft.com/scrcpy.html
+<https://www.iplaysoft.com/scrcpy.html>
