@@ -283,7 +283,7 @@ git reset commit-id
 例如:
 例如回退到上个版本`git reset --hard HEAD^`
 
-##  reset 和 checkout 的差异
+## reset 和 checkout 的差异
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-36a54e70c4e18774.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 

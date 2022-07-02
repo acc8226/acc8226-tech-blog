@@ -41,18 +41,19 @@ HEAD始终指向当前分支的最近提交。当切换分支时, HEAD 会更新
 
 查看所有分支的提交历史
 
-```
+```sh
 git show-branch
 ```
 
 查看特定分支的提交历史
 
-```
+```sh
 git show-branch feature1 feature2
 ```
 
 也可以使用通配符
-```
+
+```sh
 git show-branch 'feature*'
 ```
 
