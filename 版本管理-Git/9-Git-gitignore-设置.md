@@ -1,0 +1,123 @@
+## .gitignore 介绍
+
+在Git工作区的根目录下创建一个特殊的`.gitignore`文件，然后把要忽略的文件名填进去，Git就会自动忽略这些文件。
+
+虽然 gitignore 文件对Git有特殊的意义,但是它和版本库中任何其他普通文件都是同样管理的。除非把 gitignore 添加到索引中,否则 Git 仍会把它当成未追踪的文件。
+
+**忽略文件的原则**
+
+* 忽略操作系统自动生成的文件，比如缩略图等；
+* 忽略编译生成的中间文件、可执行文件等，也就是如果一个文件是通过另一个文件自动生成的，那自动生成的文件就没必要放进版本库，比如Java编译产生的.class文件；
+* 忽略你自己的带有敏感信息的配置文件，比如存放口令的配置文件。
+
+我们不需要从头写`.gitignore`文件，GitHub已经为我们准备了各种配置文件，只需要组合一下就可以使用了。所有配置文件可浏览：<https://github.com/github/gitignore>
+
+注意：`.gitignore`文件本身要放到版本库里，并且可以对.gitignore做版本管理！
+
+* 所有空行或者以注释符号 ＃ 开头的行都会被 Git 忽略。
+* 可以使用标准的 **glob** 模式匹配。
+* 匹配模式最后跟反斜杠（/）说明要忽略的是目录。
+* 要忽略指定模式以外的文件或目录，可以在模式前加上惊叹号（!）取反。
+
+所谓的 `glob` 模式是指 `shell` 所使用的简化了的正则表达式。
+ * 星号（*）匹配零个或多个任意字符；
+
+ * [abc] 匹配任何一个列在方括号中的字符（这个例子要么匹配一个 a，要么匹配一个 b，要么匹配一个 c）；如果在方括号中使用短划线分隔两个字符，表示所有在这两个字符范围内的都可以匹配（比如 [0-9] 表示匹配所有 0 到 9 的数字）
+
+ * 问号（?）只匹配一个任意字符；
+
+我们再看一个` .gitignore ` 文件的例子：
+```
+# (相对)忽略 build/ 相对目录下的所有build目录, 不忽略build文件
+build/
+# (相对)会忽略 doc/notes.txt 但不包括 doc/server/arch.txt
+doc/*.txt
+
+# (相对)忽略所有 .log 结尾的文件
+*.log
+# 但 pref.log 除外
+!pref.log
+
+# (绝对)仅忽略 项目 根目录下的 TODO 文件和目录
+/TODO
+```
+
+以下是说明:
+
+```sh
+# 忽略something文件和something目录
+something
+
+# 只忽略something目录，不忽略something文件
+something/
+
+# 只忽略something文件，不忽略something目录
+something
+!something/
+
+# 只忽略当前目录下的something文件和目录，子目录的something不在忽略范围内
+/something
+```
+
+总结: 一般用第二种'something/'就够了
+
+使用Windows的童鞋注意了，如果你在资源管理器里新建一个`.gitignore`文件，它会非常弱智地提示你必须输入文件名，但是在文本编辑器里“保存”或者“另存为”就可以把文件保存为`.gitignore`了。
+
+或者可以使用以下方法，在git bash中输入以下命令：
+
+```sh
+$ touch .gitignore
+$ vi .gitignore
+```
+
+## Java.gitignore 模板
+
+```bash
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+# idea项目一般需要自己增加如下两项
+.idea/
+target/
+```
+
+## 使用 git check-ignore命令检查规则
+
+```
+$ git check-ignore -v App.class
+.gitignore:3:*.class App.class
+```
+Git会告诉我们，`.gitignore`的第3行规则忽略了该文件，于是我们就可以知道应该修订哪个规则。
+
+## Git忽略规则及.gitignore规则不生效的解决办法
+
+```
+git rm -r --cached .
+git add .
+git commit -m 'update .gitignore'
+```
+
+> PS：注意–cached后面有一个”.”，add后面也有一个“.”
+>
+> 完成上述操作后，再重新修改.gitnore文件，并`git add .`添加文件到缓存区

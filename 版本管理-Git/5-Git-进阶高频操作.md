@@ -1,0 +1,181 @@
+## stash 储藏
+
+当手头工作没有完成时，先把工作现场 `git stash` 一下，然后去修复 bug
+
+--include-untracked 参数可以额外储藏新的未被追踪的文件。
+--all 选项将收集所有未跟踪的文件以及在 .gitignore 和 排除文件中明确忽略的文件。
+
+```sh
+# 更推荐对 stash 加一些注释
+`git stash save 'message'`
+`git stash save --include-untracked 'message'`
+`git stash save --all -untracked 'message'`
+```
+
+Git 把 stash 内容存在某个地方了(包含了工作区 和 暂存区的内容)，但是需要恢复一下，有两个办法：
+
+* `git stash apply`恢复，但是恢复后，stash内容并不删除，你需要用 git stash drop来删除；
+* 另一种方式是 `git stash pop`，恢复的同时把 stash 内容 pop 出去.
+
+按保存时间由近及远的顺序列举出储藏栈。
+`git stash list`
+
+恢复指定的 stash, 只需要指定序号, stash@{0} 代表最新的 stash。依次是次新的数据，按照时间新到旧排序。
+
+```sh
+git stash apply stash@{0}
+```
+
+此时, 变更内容都还原到了工作区.
+
+清空所有 stash 信息
+
+```sh
+git stash clear
+```
+
+要用其他更基础的 Git 命令来达到相同的效果,需要手动创建一个新分支,在新分
+支上提交所有修改,之后回到之前的分支继续工作,最后把你保存的分支状态恢复到新的工作目录。如果还不清楚,下面将展示这样的过程。
+
+有时,储藏你的变更会导致你的分支上出现一个全新的开发序列,并且在最终还原你的储藏状态到所有变更之前时可能没有直接意义。此外,合并冲突可能会导致弹出操作难以进行。然而,你可能仍需要恢复你储藏的内容。在这种情况下, git 提供了git stash branch 命令来帮助你。这条命令基于储藏条目生成时的提交,会将保存的储藏内容转换到一个新分支。
+
+因此我们重置一些状态,采用一些不同的方法,创建一个名为 mod 的新分支来包含那些储藏的变更。
+
+```sh
+ $ git stash branch mod
+# 操作 mod 分支
+...
+# 切回 master 分支，并进行合并
+ $ git checkout master
+ Switched to branch 'master
+ $ git merge mod
+```
+
+以下展示在没有 stash 命令之前怎么保存临时提交
+
+```sh
+# 常规开发试程中断
+
+# 创建一个新分支来保存状态
+git checkout -b saved_state
+git commit -a -m "Saved state"
+
+#回到之前的分支进行更新
+ $ git checkout master
+
+# 编辑紧急修复
+git commit -a-m "Fix something."
+
+# 恢复保存的状态到工作目录
+git checkout saved state
+git reset -soft HEAD
+
+#..继续之前我们离开时的工作
+```
+
+## cherry-pick
+
+git cherry-pick提交命令会在当前分支上应用给定提交引入的变更。这将引入一个新的独特的提交。严格来说,使用git cherry-pick并不改变版本库中的现有历史记录,而是添加历史记录。
+
+跟其他通过应用 diff 来引入变更的Git操作一样,你可能需要解决冲突来完全应用给定提交的变更。
+
+git cherry-pick 命令通常用于把版本库中一个分支的特定提交引入一个不同的分支中。
+
+`git cherry-pick <提交号1> <提交号2> <提交号3>`
+挑选多个提交合并, 提交之间用空格相隔
+
+挑选区间, 左开右闭.其中，<start-commit>在时间上必须早于<end-commit>
+`git cherry-pick <start-commit>..<end-commit>`
+
+```
+git cherry-pick <subcommand>
+
+    --quit                end revert or cherry-pick sequence 结束pick操作，但是不会影响冲突之前多个提交中已经成功的
+    --continue            resume revert or cherry-pick sequence  //继续下个操作
+    --abort               cancel revert or cherry-pick sequence 直接打回原形
+
+    -n, --no-commit       don't automatically commit 不自动提交
+    -e, --edit            edit the commit message 编辑提交信息
+    -s, --signoff         add Signed-off-by:
+    -m, --mainline <parent-number>
+                          select mainline parent
+    --rerere-autoupdate   update the index with reused conflict resolution if possible
+    --strategy <strategy>
+                          merge strategy
+    -X, --strategy-option <option>
+                          option for merge strategy
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+    -x                    append commit name
+    --ff                  allow fast-forward
+    --allow-empty         preserve initially empty commits
+    --allow-empty-message
+                          allow commits with empty messages
+    --keep-redundant-commits
+                          keep redundant, empty commits
+```
+
+如果在git cherry-pick 后加一个分支名，则表示将该分支**顶端**提交进cherry-pick，如：`git cherry-pick <branch name>`
+
+## rebase 交互式
+
+```sh
+git rebase -i
+```
+
+如果你在命令后增加了这个选项, Git 会打开一个 UI 界面并列出将要被复制到目标分支的备选提交记录，它还会显示每个提交记录的哈希值和提交说明，提交说明有助于你理解这个提交进行了哪些更改。
+
+此模式下你可以重新排序、编辑、删除,把多个提交合并成一个,把一个提交分离成多个, 然后把它们放回原来的分支或者不同的分支。
+
+`git rebase -i HEAD^` 区间范围为 [HEAD, HEAD]
+`git rebase -i HEAD~2` 区间范围为 (HEAD~2, HEAD] ，为左开右闭区间。
+`git rebase -i HEAD~3` 区间范围为 (HEAD~3, HEAD]
+
+```
+git rebase -i HEAD~3
+
+pick ba16ab5 1
+pick 4e71e75 aiya
+pick cc4b570 someMessage
+
+# Rebase c277d53..cc4b570 onto c277d53 (3 commands)
+#
+# Commands:
+# p, pick <commit> = use commit
+# r, reword <commit> = use commit, but edit the commit message
+# e, edit <commit> = use commit, but stop for amending
+# s, squash <commit> = use commit, but meld into previous commit
+# f, fixup <commit> = like "squash", but discard this commit's log message
+# x, exec <command> = run command (the rest of the line) using shell
+# b, break = stop here (continue rebase later with 'git rebase --continue')
+# d, drop <commit> = remove commit
+# l, label <label> = label current HEAD with a name
+# t, reset <label> = reset HEAD to a label
+```
+
+其中 s, squash 将会所在行所在的提交合并到前一个提交中
+
+一般为方便确认 rebase 的返回，通常和 `git show-branch --more=nums [branchName]` 搭配使用。
+
+## 分支开发策略
+
+在实际开发中，我们应该按照几个基本原则进行分支管理：
+
+首先，**master分支应该是非常稳定的**，也就是**仅用来发布新版本**，平时不能在上面干活；
+
+那在哪干活呢？干活都在 dev 分支上，也就是说，dev 分支是不稳定的，到某个时候，比如 1.0 版本发布时，再把 dev 分支合并到 master上，在 master 分支发布1.0版本；
+
+你和你的小伙伴们每个人都在**dev分支**上干活，每个人都有自己的分支，时不时地往 dev 分支上合并就可以了。
+
+![](https://upload-images.jianshu.io/upload_images/1662509-be29f85352582bd6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+* * *
+
+## 选择分支的衍合 or 合并
+
+**衍合的风险**
+
+呃，奇妙的衍合也并非完美无缺，要用它得遵守一条准则：
+一旦分支中的提交对象发布到公共仓库，就千万不要对该分支进行衍合操作。
+
+如果把衍合当成一种在推送之前清理提交历史的手段，而且仅仅衍合那些尚未公开的提交对象，就没问题。如果衍合那些已经公开的提交对象，并且已经有人基于这些提交对象开展了后续开发工作的话，就会出现叫人沮丧的麻烦。

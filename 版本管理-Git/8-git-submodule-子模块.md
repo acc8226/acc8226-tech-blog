@@ -1,0 +1,139 @@
+Git Submodule 允许一个 git 仓库，作为另一个 git 仓库的子目录，并且保持父项目和子项目相互独立。
+
+父项目：外层项目
+子项目：里面的项目。
+
+## 常用命令
+
+git submodule 涉及的常用功能有：
+
+* git clone <repository> –recursive ：递归的方式克隆整个项目
+* git submodule add <repository> <path> ：添加子模块
+* git submodule init ：初始化子模块
+* git submodule update ：更新子模块
+
+* git submodule foreach git pull： 拉取所有子模块
+* `git submodule foreach git checkout -- .` 所有子模块进行 checkout -- . 操作。
+
+```
+NAME
+       git-submodule - Initialize, update or inspect submodules
+
+SYNOPSIS
+       git submodule [--quiet] add [<options>] [--] <repository> [<path>]
+       git submodule [--quiet] status [--cached] [--recursive] [--] [<path>...]
+       git submodule [--quiet] init [--] [<path>...]
+       git submodule [--quiet] deinit [-f|--force] (--all|[--] <path>...)
+       git submodule [--quiet] update [<options>] [--] [<path>...]
+       git submodule [--quiet] summary [<options>] [--] [<path>...]
+       git submodule [--quiet] foreach [--recursive] <command>
+       git submodule [--quiet] sync [--recursive] [--] [<path>...]
+       git submodule [--quiet] absorbgitdirs [--] [<path>...]
+
+
+DESCRIPTION
+       Inspects, updates and manages submodules.
+
+       For more information about submodules, see gitsubmodules(7).
+```
+
+### 子模块的添加
+
+```sh
+git submodule add <url> <path>
+```
+
+其中，url 为子模块的路径，path 为该子模块存储的目录路径。
+
+执行成功后，git status 会看到项目中修改了.gitmodules，并增加了一个新文件夹（为刚刚添加的路径)
+
+使用命令 git status 可以看到多了两个需要提交的文件，其中 .gitmodules 指定submodule 的主要信息，包括子模块的路径和地址信息，moduleA 指定了子模块的commit id，使用 git diff 可以看到这两项的内容。
+
+然后和往常一样进行 add 和 commit 即可.
+
+需要注意的是，父项目的 git 并不会记录 submodule 的文件变动，它是按照 commit id 指定 submodule 的 git header，所以 .gitmodules 和 moduleA 这两项是需要提交到父项目的远程仓库的。
+
+### 克隆带子模块的版本库
+
+方法一：先 clone 父项目，再初始化 submodule，最后更新 submodule，初始化只需要做一次，之后每次只需要直接 update 就可以了，需要注意 submodule 默认是不在任何分支上的，它指向父项目存储的 submodule commit id。
+
+```sh
+git clone project.git project2 && cd project2
+git submodule init
+git submodule update
+```
+
+或者
+
+```sh
+git clone project.git project2  && cd project2
+git submodule update --init --recursive
+```
+
+方法二：采用递归参数 –recursive，需要注意同样 submodule 默认是不在任何分支上的，它指向父项目存储的 submodule commit id。
+
+```sh
+git clone project.git project3 –recursive
+```
+
+### 子模块的更新
+
+子模块的维护者提交了更新后，使用子模块的项目必须手动更新才能包含最新的提交。
+在项目中，进入到子模块目录下，执行 git pull 更新，查看 git log 查看相应提交。
+完成后返回到项目目录，可以看到子模块有待提交的更新，使用 git add，提交即可。
+
+###  [从存储库中删除所有 Git 缓存的子模块(Deleting all Git cached submodules from repository)](http://www.it1352.com/802947.html)
+
+```sh
+# deinit all submodules from .gitmodules
+git submodule deinit .
+
+# remove all submodules (`git rm`) from .gitmodules
+git submodule | cut -c43- | while read -r line; do (git rm "$line"); done
+
+# delete all submodule sections from .git/config (`git config --local --remove-section`) by fetching those from .git/config
+git config --local -l | grep submodule | sed -e 's/^\(submodule\.[^.]*\)\(.*\)/\1/g' | while read -r line; do (git config --local --remove-section "$line"); done
+
+# manually remove leftovers
+rm .gitmodules
+rm -rf .git/modules
+```
+
+I do not know for server synchronisation. It could be done automatically with next commit, or we might need those commands:
+```
+git submodule sync
+git submodule update --init --recursive --remote
+```
+
+## 一个示例
+
+```sh
+git clone git@gitee.com:mabuo/html.git
+# 添加子模块, 并进行一次提交 f'f
+git submodule add git@gitee.com:mabuo/html.git lala
+git add .
+git commit -m 'add submodule'
+```
+
+## Git出现 fatal: Pathspec 'xxx' is in submodule 解决方案
+
+由于某个目录是一个 git 项目。
+使用 git add 后只增加了文件夹，但是没有文件。手动 Add 里面单个文件则报出错误信息：
+fatal: Pathspec 'xxx' is in submodule
+
+解决方案:
+发现 vendor/crazyfd 下面并没有 .git 文件
+所以使用下面命令：
+
+```sh
+git rm -rf --cached vendor/crazyfd/yii2-qiniu
+git add vendor/crazyfd/yii2-qiniu/*
+```
+
+## 参考
+
+Git 出现 fatal: Pathspec 'xxx' is in submodule 解决方案
+<https://blog.csdn.net/JaredFu/article/details/53116578>
+
+git submodule的使用_Jacob-wj的博客-CSDN博客_git submod
+<https://blog.csdn.net/wangjia55/article/details/24400501>

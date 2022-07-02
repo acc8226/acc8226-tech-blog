@@ -1,0 +1,497 @@
+## 本地分支 和 branch 命令
+
+Git 鼓励开发者频繁使用分支，正是因为有着这些特性作保障。Git 是如何知道你当前在哪个分支上工作的呢？其实答案也很简单，它保存着一个名为 **HEAD 的特别指针**。（译注：将 HEAD 想象为当前分支的别名。）
+
+`$ git branch [branch-name]` 创建新的分支
+`$ git branch  [-r | --track]  [本地分支名] [远程仓库名]/[远程分支名]` 创建追踪分支
+`$ git branch` 查看所有分支
+`$ git branch -a` 查看当前的版本库当中有哪些分支, 包含远程仓库的所有分支
+`$ git branch -r` 仅看所有远程分支
+`$ git branch -v` 要查看各个分支最后一个提交对象的信息 （译注：此为 --verbose 的简写，取首字母）
+`$ git branch -vv` 查看当前的本地分支与远程分支的关联关系
+
+`$ git branch --merge`
+查看哪些分支已被并入当前分支（译注：也就是说哪些分支是当前分支的直接上游。一般来说，列表中没有 * 的分支通常都可以用 git branch -d 来删掉。原因很简单，既然已经把它们所包含的工作整合到了其他分支，删掉也不会损失什么。
+`$ git branch --no-merged` 查看尚未合并的工作，它会显示还未合并进来的分支。由于这些分支中还包含着尚未合并进来的工作成果，所以简单地用 git branch -d 删除该分支会提示错误，因为那样做会丢失数据, 过，如果你确实想要删除该分支上的改动，可以用大写的删除选项 -D 强制执行
+
+> 一般当前本地分支前带有“*”号且为绿色，远程分支为红色
+
+当合并分支时，如果可能，Git 会用 Fast forward 模式，但这种模式下，删除分支后，会丢掉分支信息。
+如果要强制**禁用 Fast forward 模式**，Git 就会在 merge 时生成一个新的 commit。
+例如 `$ git merge --no-ff -m "merge with no-ff" dev`
+
+git branch (-m | -M) [<oldbranch>] <newbranch> 移动分支/重命名
+git branch (-c | -C) [<oldbranch>] <newbranch> 拷贝分支
+git branch (-d | -D) [-r] <branchname>... 删除分支
+
+**给本地分支改名** git  branch -m 原分支名 新分支名， 若修改当前所在分支的名字，原分支名可以省略不写。
+
+**本地分支的复制**
+-C 表示 --force 强制的意思。
+
+**本地分支的删除**
+`$ git branch -d <branch-name>` 删除分支，此命令也一次性删除多个，只需要一并列出就行。另外 Git 阻止你删除当前分支。因为删除当前分支将导致Git无法确定工作目录树应该是什么样的。相反,必须始终选择一个非当前分支。
+
+但是还有另外一个微妙的问题。Git 不会让你删除一个包含不存在于当前分支中的提交的分支。也就是说,如果分支被删除则开发的提交部分就会丢失, Git 会阻止你意外删除提交中的开发。
+
+最后,正如错误消息提示的,可以通过使用 -D 而不是-d来覆盖 Git 的安全检查。只有你确定不需要该分支额外的内容时才可以这样做。
+`$ git branch -D <branch-name>` 强制删除该分支 ，此命令也一次性删除多个，只需要一并列出就行。
+
+- - -
+
+创建并切换到该分支
+`git checkout -b [branch-name]`
+
+相当于
+
+```sh
+git branch [branch-name]
+git checkout [branch-name]
+```
+
+## 分离 HEAD 分支
+
+通常情况下,通过直接指出分支名来检出分支的头部是明智的。因此,默认情况下, git checkout 会改变期望的分支的头部。
+
+然而,可以检出任何提交。在这样的情况下, Git 会自动创建一种匿名分支,称为一个分离的 HEAD (detached HEAD) 。在下面的情况下, Git 会创建一个分离的 HEAD.
+
+如果你发现自己在一个分离的头部,然后你决定在该点用新的提交留住它们,那么你必须首先创建一个新分支:
+
+```sh
+git checkout-b new_branch
+```
+
+## 远程仓库/分支和 remote
+
+远程分支（remote branch）是对远程仓库中的分支的索引。它们是一些无法移动的本地分支；只有在 Git 进行网络交互时才会更新。远程分支就像是书签，提醒着你上次连接远程仓库时上面各分支的位置.
+
+查看当前配置有哪些远程仓库详细信息 `git remote [-v | --verbose]`
+添加远程仓库 `git remote add [remote-name] [url]`
+查看远程仓库所有信息 `git remote show [remote-name]`
+远程仓库配置的重命名 `git remote rename [old-name] [new-name]`
+删除远程仓库 `git remote rm [remote-name]`
+调整你的url `git remote set-url origin git@github.com:someaccount/someproject.git`
+`git remote update` 更新所有的 remote
+`git remote update remote_name` 使得本地版本库中的 origin 已被基于远程版本库的信息更新了。当最初添加远程版本库时,使用 -f 选项将导致立即对该远程版本库执行 fetch 操作。
+
+git remote rm命令会从你的本地版本库中删除给定的远程版本库及其关联的远程追踪分支。要只从你的本地版本库删除一个远程跟踪分支,使用这样的命令:
+```
+$ git branch-r -d origin/dev
+```
+
+远程版本库中可能已经有分支被其他开发人员删除了(即使这些分支的副本可能还遗留在你的版本库中) 。 `git remote prune`命令可以用来删除你的本地版本库中那些陈旧的(相对于实际的远程版本库)远程追踪分支。
+
+为了与上游远程版本库更加同步,使用`git remote update --prune remote`命令首先从远程版本库获得更新,然后一步删除陈旧的追踪分支。
+
+## 创建跟踪分支
+
+分支类别细分：
+
+* 远程追踪分支(remote-tracking branch)与远程版本库相关联,专门用来追踪远程版本库中每个分支的变化。
+* 本地追踪分支(local-tracking branch)与远程追踪分支相配对。它是一种集成分支,用于收集本地开发和远程追踪分支中的变更。
+* 任何本地的非追踪分支通常称为特性(topic)或开发(development)分支。
+
+本地已有分支添加追踪
+
+使用 --set-upstream
+~~git branch --set-upstream <local-branch-name> <remote-name>/<branch>~~
+新版本中 --set-upstream 已经过时，一般使用 --set-upstream-to 代替
+
+使用 --set-upstream-to
+
+```sh
+git branch --set-upstream-to=远程主机名/分支名 本地分支名
+```
+
+或者使用 -u 简写
+
+```sh
+git branch -u 主机名/远程分支名 本地分支名
+```
+
+> 说明:
+> 1.-u 是 --set-upstream-to 的缩写；
+> 2. 最后一个参数本地分支名可以省略不写。
+
+撤销该分支对远程分支的跟踪
+git branch --unset-upstream 【分支名】
+
+如果你还未创建该分支，为了创建跟踪远程分支并切换到该分支，可以使用：
+
+```sh
+git checkout -b [本地分支名] [远程名]/[分支名]
+```
+
+如果你有 1.6.2 以上版本的 Git，也可使用 -t,  --track 选项：
+
+```bash
+# 如果本地分支名 和 远程分支名 不一致的话，则都需要单独写出来
+$ git checkout -b [本地分支名] --track [远程仓库名]/[远程分支名]
+
+# 创建本地同名追踪分支
+$ git checkout --track [远程仓库名]/[远程分支名]
+```
+
+从远程跟踪分支 checkout 出来的本地分支，称为 **跟踪分支**。跟踪分支是一种和某个远程分支有直接联系的本地分支。在跟踪分支里输入 git push，Git 会自行推断应该向哪个服务器的哪个分支推送数据。同样，在这些分支里运行 git pull 会获取所有远程索引，并把它们的数据都合并到本地分支中来。
+
+你应该会发现，在上面应该不止一次见过 --set-upstream-to 这个词了，这个 upstream 到底是什么呢？
+
+> **upstream & downstream 的概念**
+git 中存在 upstream 和 downstream，简言之，当我们把仓库A中某分支x的代码push到仓库B分支y，此时仓库B的这个分支y就叫做A中 x 分支的 upstream，而 x 则被称作 y 的downstream，这是一个相对关系，每一个本地分支都相对地可以有一个远程的 upstream 分支（注意这个 upstream 分支可以不同名，但通常我们都会使用同名分支作为upstream）。
+
+## 克隆分支 clone
+
+`$ git clone <repo>`
+`$ git clone --bare <repo>` 克隆裸仓库
+`$ git clone <repo> <directory>` 克隆到指定的目录
+`$ git clone --depth 10 git_仓库_url` 只会获取最近 xx（10条提交记录的）代码，默认是 master 分支， 如果想要指定分支，可以结合 -b --single--branch 使用。
+
+其中 mvp-dev-more 是本地仓库名字。remotes/origin/mvp-dev-more 可以省略为 origin/mvp-dev-more
+
+**clone 单一分支**
+
+```sh
+git clone -b git_分支名称 --single-branch git_仓库_url 获取指定分支的代码
+```
+
+举例
+```
+git clone -b dev --single-branch http://118.54.96.123/be/preser-customer.git
+```
+
+快速检出特定版本
+```
+$ git clone -b v1.45.1 --depth 1 https://github.com/grpc/grpc-java
+```
+
+**检出特定分支**
+```
+git checkout -b mvp-dev-more remotes/origin/mvp-dev-more
+```
+
+## 分支合并策略一 merge
+
+> 在开始合并之前, 虽然不必从干净的目前启动合并，但是最好整理一下工作目录。在正常合并结束的时候, Git 会创建新版本的文件并把它们放到工作目录中。此外, Git 在操作的时候还用索引来存储文件的中间版本。
+
+如果已经修改了工作目录中的文件,或者已经通过 git add 或 git rm 修改了索引,那么版本库里就已经有了一个脏的工作目录或者索引。如果在脏的状态下开始合并, Git可能无法一次合并所有分支及工作目录或索引的的修改。
+
+由于git merge操作是区分上下文的。当前分支始终是目标分支
+`$ git merge [other_branch]`
+
+合并两个不相关的分支 加上参数 --allow-unrelated-histories
+
+> 默认情况下, git 合并命令拒绝合并没有共同祖先的历史。当两个项目的历史独立地开始时,这个选项可以被用来覆盖这个安全。由于这是一个非常少见的情况,因此没有默认存在的配置变量,也不会添加。
+
+```
+git checkout master
+git merge bugFix
+```
+
+等价于
+
+```
+git merge bugFix master
+```
+
+在合并中产生冲突是不可避免的事情，但是 git 会给出友好的提示信息。可以使用`git status` 或 `git ls-files -u` 查看未完成合并状态的文件。也可以用 git diff 查看未完成的工作区的内容。
+
+## 分支合并策略二  rebase
+
+git rebase 命令是用来改变一串提交以什么为基础的。**此命令至少需要提交将迁往的分支名**。
+
+git rebase 的一个常见用途是保持你正在开发的一系列提交相对于另一个分支是最新的, 那通常是 master 分支或者来自另一个版本库的追踪分支。
+
+命令会先取出特性分支 server，然后在主分支 master 上重演。
+```
+git rebase [主分支] [特性分支]
+```
+
+当前分支可以`git rebase [主分支]`， 省略了当前特性分支而已。
+
+举例：将 bugFix 的东西重新在上 master 演绎，和 merge 一样，改动的是 bugFix 分支。
+
+```
+git checkout bugFix
+git rebase master
+```
+
+等价于
+
+```
+# 迁往的分支名是 master (变的是 master), 最后一个参数不写缺省是 HEAD
+git rebase master bugFix
+```
+
+这样 bugFix 分支已经向前移植到了master分支。
+
+git rebase命令也可以用 --onto 选项把一条分支上的开发线整个移植到完全不同的分支上。
+
+## fetch 命令
+
+fetch 命令**只是将远端的数据拉到本地仓库**，并不会自动合并到当前工作分支，只有当你确实准备好了，才能手工合并。
+
+如果只想取回特定分支的更新，可以指定分支名
+`$ git fetch <远程主机名> <分支名>`
+
+将某个远程主机的更新
+`$ git fetch <远程主机名>`
+
+由于没有指定 refspec，该远程版本库的信息在配置文件中，Git会使用 remote 条目中所有"fetch ="的行。因此,将抓取远程版 本库中的每个refs/heads/分支。
+
+```
+[remote "origin"]
+	...
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	...
+```
+
+要更新所有分支，命令可以简写为：
+`$ git fetch`
+
+举例：将远程版本库上的修改同步到本地 `git fetch origin master` 会将远程版本库上的代码同步到本地，不过同步下来的代码并不会合并到任何分支上去，而是会存放在到一个 origin/master 分支上，这时我们可以通过 diff 命令来查看远程版本库上到底修改了哪些东西：
+
+```sh
+git diff origin/master
+
+# 之后再调用 merge 命令将 origin/master 分支上的修改合并到主分支上即可：
+git merge origin/master`
+```
+
+## 合并远程分支 pull
+
+git pull 操作有两个根本步骤,每个步骤都由独立的 Git 命令实现。也就是说, git pull意味着先执行 git fetch, 然后执行 git merge 或 git rebase ,默认情况下,第二个步骤是merge,因为这始终是大多数情况下期望的行为。
+
+因为拉取(pull)操作还进行 merge 或 rebase 步骤,所以 git push 和 git pull 不被视为 是相对的。相反, git push和 git fetch 被认为是相对的。推送(push)和抓取(fetch)都负责在版本库之间传输数据,但方向相反。
+
+命令格式：
+
+```sh
+git pull <远程主机名> <远程分支名>:<本地分支名>
+```
+
+比如，取回origin主机的 next 分支，与本地的 master 分支合并，需要写成下面这样。
+`$ git pull origin next:master`
+
+如果远程分支是与**当前分支**合并，则冒号后面的部分可以省略。
+
+```sh
+git pull <远程主机名> <远程分支名>
+```
+
+例如`git pull origin next`
+上面命令表示，取回 origin/next分支，再与当前分支合并
+
+```sh
+$ git fetch origin
+# 或者完全指定 $ git merge refs/remotes/origin/next
+$ git merge origin/next
+```
+
+如果设置了某个分支用于跟踪某个远端仓库的分支, git pull，目的都是要从原始克隆的远端仓库中抓取数据后，合并到工作区中的**当前分支**。可以直接
+
+```sh
+git pull
+```
+
+- - -
+
+实际上，在直接使用 `git pull` 的时候，如果我们没有指定 upstream，git 会根据配置文件知道怎么合并分支。
+
+```
+[branch "develop"]
+    remote = origin
+    merge = refs/heads/develop
+```
+
+这里解读下，当 develop 分支是当前检出的分支时,使用origin作为fetch (或pull)操作过程中获取更新的默认远程版本库。此外,在git pull 的 merge步骤中,用远程版本库中的 refs/heads/develop 作为默认分支合并到 develop 分支。
+
+也可通过命令行设置：`git config branch.develop.merge refs/heads/develop`
+
+这样当我们在 develop 分支 git pull 时，如果没有指定 upstream分支，git将根据我们的 config文件去 merge origin/develop；如果指定了upstream分支，则会忽略config中的 merge 默认配置。
+
+- - -
+
+如果合并需要采用rebase模式，可以使用`--rebase`选项。
+
+```sh
+git pull --rebase <远程主机名> <远程分支名>:<本地分支名>
+```
+
+如果远程主机删除了某个分支，默认情况下，`git pull` 不会在拉取远程分支的时候，删除对应的本地分支。这是为了防止，由于其他人操作了远程主机，导致git pull不知不觉删除了本地分支。
+但是，你可以改变这个行为，加上参数 -p 就会在本地删除远程已经删除的分支。
+
+```sh
+$ git pull -p
+
+# 等同于下面的命令
+
+$ git fetch --prune origin
+$ git fetch -p
+```
+
+## 推送数据到远程仓库 push
+
+```sh
+git push [远程名] [本地分支]:[远程分支]
+```
+
+只有一个源的推送是源和目标引用使用同名的简写。以下三者等价。如果目标分支不存在则会创建。
+
+```sh
+git push [upstream] [分支名]
+git push [upstream] [分支名]:[分支名]
+git push [upstream] [分支名]:refs/heads/[分支名]
+```
+
+推送删除远程分支，你会发现源分支被省略了，那就等于是在说“在这里提取空白然后把它变成[远程分支]”）
+
+```sh
+git push [upstream] :[分支名]
+```
+
+如果不喜欢:branch的形式,可以使用语法上等价的形式(--delete):
+
+```sh
+git push upstream --delete [分支名]
+```
+
+如果当前分支与远程分支之间存在追踪关系，则本地分支和远程分支都可以省略。
+```
+git push origin
+```
+如果当前分支未设置过跟踪远程分支，则需要手动指定一次 -u 参数。
+```
+git push -u origin dev
+```
+
+否则在推送前需要 `git branch -u 主机名/远程分支名 本地分支名` 设置追踪。
+
+如果主机名只有一个，则主机名都可以省略。
+```
+git push
+```
+
+- - -
+
+**关于直接使用 git push 的说明。**
+因为在[git的全局配置中，有一个push.default](http://git-scm.com/docs/git-config)属性，其决定了`git push`操作的默认行为。在Git 2.0之前，这个属性的默认被设为'matching'，2.0之后则被更改为了'simple'。
+
+**push.default** 有以下几个可选值：
+nothing, current, upstream, simple, matching
+
+其用途分别为：
+
+* nothing - push操作无效，除非显式指定远程分支，例如git push origin develop（我觉得。。。可以给那些不愿学git的同事配上此项）。
+* current - push当前分支到远程同名分支，如果远程同名分支不存在则自动创建同名分支。
+* upstream - push当前分支到它的upstream分支上（这一项其实用于经常从本地分支push/pull到同一远程仓库的情景，这种模式叫做central workflow）。
+* simple - simple和upstream是相似的，只有一点不同，simple必须保证本地分支和它的远程 upstream分支同名，否则会拒绝push操作。
+* matching - push所有本地和远程两端都存在的同名分支。
+
+因此如果我们使用了git2.0之前的版本，push.default = matching，git push后则会推送当前分支代码到远程分支，而2.0之后，push.default = simple，如果没有指定当前分支的upstream分支，就会收到 fatal 提示。
+
+- - -
+
+将本地的所有分支都推送到远程主机，这时需要使用–all选项。
+
+```sh
+git push --all origin
+```
+
+上面命令表示，将所有本地分支都推送到origin主机。
+如果远程主机的版本比本地版本更新，推送时Git会报错，要求先在本地做`git pull`合并差异，然后再推送到远程主机。这时，如果你一定要推送，可以使用`--force`选项。
+
+```sh
+git push --force origin
+```
+
+上面命令使用`--force`选项，结果导致远程主机上更新的版本被覆盖。除非你很确定要这样做，否则应该尽量避免使用`--force`选项。
+
+分支如何重命名，目前没有一个一步到位的方法，分两步走。新增新分支，删除旧分支
+
+```sh
+$ git branch new origin/older
+$ git push origin new
+$ git push origin :older
+```
+
+## tag标签
+
+Git 使用的标签有两种类型：轻量级的（lightweight）和含附注的（annotated）。
+
+* **轻量级标签**, 就像是个不会变化的分支，实际上它就是个指向特定提交对象的引用。
+* **附注标签**，实际上是存储在仓库中的一个独立对象，它有自身的校验和信息，包含着标签的名字，电子邮件地址和日期，以及标签说明，标签本身也允许使用 GNU Privacy Guard (GPG) 来签署或验证。一般我们都建议使用含附注型的标签，以便保留相关信息；当然，如果只是临时性加注标签，或者不需要旁注额外信息，用轻量级标签也没问题。
+
+查看所有标签
+`$ git tag`
+
+`$ git tag -l 'v1.4.2.*'`用特定的搜索模式列出符合条件的标签
+
+创建轻量标签
+
+```
+git tag <name>
+```
+
+用于新建一个标签，默认为 HEAD，也可以指定一个commit id
+例如指定commit id，为后期加注标签的：`git tag v0.9 6d9ea3`
+
+创建一个含附注类型的标签 `git tag -a v1.4 -m 'my version 1.4`
+用 -a （译注：取 annotated 的首字母）指定标签名字即可
+-m 选项则指定了对应的标签说明，Git 会将此说明一同保存在标签对象中)
+
+用PGP签名标签
+git tag -s <tagname> -m "blablabla..."
+
+查看相应标签的版本信息
+git show <tagname>
+
+举例：
+
+```
+$ git show v0.9
+commit 622493706ab447b6bb37e4e2a2f276a20fed2ab4
+Author: Brian
+Date:   Thu Aug 22 11:22:08 2013 +0800
+   add merge
+```
+
+推送单个标签
+
+```
+$ git push origin [tagname]
+```
+
+推送所有本地新增的标签
+
+```
+$ git push origin --tags
+```
+
+删除一个本地标签
+```
+$ git tag -d <tagname>
+```
+
+删除一个远程标签,与删除远程仓库类似
+
+```
+$ git push origin :refs/tags/<tagname>
+```
+
+可以简写为
+```
+$ git push origin :<tagname>
+```
+
+举例
+
+```
+$ git tag -d v0.9
+$ git push origin :refs/tags/v0.9
+```
+
+## git同步远程已删除的分支
+
+使用 git remote show origin 进行分析
+
+使用 git remote prune origin 或者 git fetch origin -p / --prune 去删除冗余分支。
