@@ -32,9 +32,12 @@
 
 ## 手机端
 
-### 永中 office
+### LibreOffice
 
-免费无广告。
+主页 | LibreOffice 简体中文官方网站 - 自由免费的办公套件
+<https://zh-cn.libreoffice.org/>
+
+比尽给我弹窗的 wps 和功能少的永中 office 好用。
 
 ### Alook 浏览器
 

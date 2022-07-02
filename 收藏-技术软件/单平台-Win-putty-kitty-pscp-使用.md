@@ -2,7 +2,7 @@
 
 受制于 Xshell 的收费，因此总在寻思构建一套免费的 ssh 方案。
 
-## putty
+## putty 终端
 
 双击即可直接使用
 
@@ -43,15 +43,21 @@ putty [-pw password] [-m file] user@ip_addr
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-33bbff834134ff05.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-## pscp 工具
+## pscp 用于传文件
 
 pscp.exe - PuTTY Secure Copy client
 PSCP (PuTTY Secure Copy client)是 PuTTY 提供的文件传输工具，通过 SSH 连接，在两台机器之间安全的传输文件，可以用于任何 SSH（包括 SSH v1、SSH v2）服务器。
 
 举例:
 
-```bat
-pscp.exe -pw  ncl@3/Lb YourUserName@YourHostName:/abc/my.log D:\my.txt
+文件从本地上传到服务器, 格式为 pscp [源文件] [Linux用户名]@[Linux服务器IP地址]:[Linux服务器目标目录]
+
+将文件从服务器下载到本地，格式为 pscp [Linux用户名]@[Linux服务器IP地址]:[Linux服务器源文件] [本地目标文件夹]
+
+举例：
+
+```sh
+pscp -pw abcddeg YourUserName@YourHostName:/abc/my.log D:\my.log
 ```
 
 ```text
@@ -91,7 +97,7 @@ Options:
             log protocol details to a file
 ```
 
-## 高级方案：使用 KiTTY  并集成 WinSCP
+## 高级方案：使用 KiTTY 并集成 WinSCP
 
 1. KiTTY 全量包 <https://github.com/cyd01/KiTTY/releases>
 

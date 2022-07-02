@@ -82,8 +82,9 @@ public class WaitlistDbHelper extends SQLiteOpenHelper {
 ```
 
 ### 更新数据库
+
 1. 版本号增加
-2. 修改onCreate中执行的sql语句, onUpgrade按需求做适量更改.
+2. 修改 onCreate 中执行的 sql 语句, onUpgrade 按需求做适量更改。
 
 ### 检查表中某列是否存在
 
@@ -116,12 +117,18 @@ public class WaitlistDbHelper extends SQLiteOpenHelper {
 ### 数据库的修复
 
 比如手机程序对.db的不当操作造成.
+
+```sh
 $ sqlite3 backup.sqlite
 sqlite> .output “_temp.tmp”
 sqlite> .dump
 sqlite> .quit
+```
 
+```sh
 $ sqlite3 new.sqlite
 sqlite> .read “_temp.tmp”
 sqlite> .quit
-就将错误的backup.sqlite修复为new.sqlite了
+```
+
+就将错误的 backup.sqlite 修复为 new.sqlite 了。

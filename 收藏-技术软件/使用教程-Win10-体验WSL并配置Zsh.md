@@ -4,7 +4,7 @@
 
 适用于 Linux 的 Windows 子系统随 Windows 操作系统一起提供，但必须先启用它并安装 Linux 发行版，然后才能开始使用它。
 
-控制面板——>程序——>程序和功能——>启用或关闭Windows功能——>适用于Linux的Windows子系统——>确定 （然后重启）
+控制面板——>程序——>程序和功能——>启用或关闭 Windows 功能——>适用于 Linux 的 Windows 子系统——>确定 （然后重启）
 
 若要使用简化的 --install 命令，必须运行最新版本的 Windows。
 
@@ -76,7 +76,13 @@ wsl --unregister <DistributionName>
 
 > 如果想从 WSL 发行版命令行访问 Windows 文件目录，而不是使用 C:\Users\username，则需使用 /mnt/c/Users/username 访问该目录，因为 Linux 发行版将 Windows 文件系统视为已装载的驱动器。
 
-### 子系统Linux重启(不重启Win)
+windows 如何访问 wsl 系统下的文件，可以在 wsl 终端输入以下命令
+
+```bat
+explorer.exe .
+```
+
+### 子系统 Linux 重启(不需要重启 Win)
 
 WSL 子系统是基于 LxssManager 服务运行的。
 只需要将 LxssManager 重启即可。
@@ -132,7 +138,7 @@ sudo apt-get upgrade
 ubuntu1804 config --default-user root
 进入ubuntu控制台, 之后执行 passwd 输入新密码即可。
 
-### 搭配 Visual Studio Code 使用
+### 搭配 Visual Studio Code
 
 Visual Studio Code 以及 Remote - WSL 扩展使你能够直接从 VS Code 使用 WSL 作为实时开发环境。 可以：
 
@@ -235,5 +241,5 @@ sudo vim ~/.zshrc
 修改主题配色为 ys
 
 ```text
-ZSH_THEME="ys"  
+ZSH_THEME="ys"
 ```

@@ -8,22 +8,22 @@
 
 六大原则
 
-1. 单一职责(Single Responsibility Principle)
+1\. 单一职责(Single Responsibility Principle)
 > 对于单一职责原则，我的建议是接口一定要做到单一职责，类的设计尽量做到只有一个原因引起变化。
-2. 里氏替换原则(Liskov Substitution Principle)
+2\. 里氏替换原则(Liskov Substitution Principle)
 所有引用基类的地方必须能透明地使用其子类的对象。
-3. 迪米特法则(Law of Demeter,LoD)
+3\. 迪米特法则(Law of Demeter,LoD)
 一个对象应该对其他对象有最少的了解。通俗地讲，一个类应该对自己需要耦合或调用的类知道得最少
-4. 接口隔离原则(Interface Segregation Principle)
+4\. 接口隔离原则(Interface Segregation Principle)
     * 接口要尽量小
     * 接口要高内聚
     * 定制服务
     * 接口设计是有限度的
-5. 依赖倒置原则(Dependence Inversion Principle,DIP)
+5\. 依赖倒置原则(Dependence Inversion Principle,DIP)
     * 高层模块不应该依赖低层模块，两者都应该依赖其抽象；
     * 抽象不应该依赖细节；
     * 细节应该依赖抽象
-6. 开闭原则(Open Closed Principle)
+6\. 开闭原则(Open Closed Principle)
 开闭原则是一个终极目标，任何人包括大师级人物都无法百分之百做到，但朝这个方向努力，可以非常显著地改善一个系统的架构，真正做到“拥抱变化”。
 
 把这 6 个原则的首字母（里氏替换原则和迪米特法则的首字母重复，只取一个）联合起来就是**SOLID**（稳定的），其代表的含义也就是把这6个原则结合使用的好处：建立稳定、灵活、健壮的设计，而开闭原则又是重中之重，是最基础的原则，是其他 5 大原则的精神领袖。
@@ -68,7 +68,7 @@ android 5.0 新增矢量图动画
 
 ## 5. 消息机制和多线程的使用
 
-## 消息机制和多线程的使用
+### 消息机制和多线程的使用
 
 UI线程的消息循环是在 ActivityThread 方法中创建的, 该函数为 Android 应用程序的入口.
 
@@ -104,7 +104,7 @@ mLooper = Looper.myLooper();
 }
 ```
 
-##### 安卓中多线程的实现
+### 安卓中多线程的实现
 
 使用 JavaSE中线程 和 线程池,
 
@@ -133,7 +133,7 @@ onPostExecute
 
 #### HandlerThread 的使用
 
-## 6. 网络通信机制及常用数据传输协议；
+## 6. 网络通信机制及常用数据传输协议
 
 HTTP网络请求原理
 HTTP 是一种应用层协议, 通过 TCP 实现了可靠的数据传输, 能够保证可靠的数据传输.
@@ -150,7 +150,7 @@ HTTP 是一种应用层协议, 通过 TCP 实现了可靠的数据传输, 能够
 8. 客户端解析报文, 关闭连接
 9. 客户端将结果显示在UI上
 
-##### HTTP的请求方式(7种)
+### HTTP的请求方式(7种)
 
 get
 post
@@ -168,11 +168,11 @@ head
 
 ##### 网络框架的简单实现
 
-### [7. Android中的屏幕适配](http://www.jianshu.com/p/4bd99428d319)
+## [7. Android中的屏幕适配](http://www.jianshu.com/p/4bd99428d319)
 
-### 8. Android中的布局优化, 内存优化
+## 8. Android中的布局优化, 内存优化
 
-##### 布局优化
+### 布局优化
 
 * 减少视图层级
   * 通过工具分析视图层级, 优先相对布局, 约束布局
@@ -180,7 +180,7 @@ head
 * 延迟加载的ViewStub
 通过这个不可见的和能在运行期间延迟加载目标视图的, 宽高都为0的View.
 
-##### 内存优化
+### 内存优化
 
 * 检查自身可以内存
 每个app都有heap限制, 可以通过调用getMemory来获取可用heap大小
@@ -189,7 +189,7 @@ head
   * 任何一个Java类，包括内部类、匿名类，都要占用大概500字节的内存空间。
   * 任何一个类的实例要消耗12-16字节的内存开支，因此频繁创建实例也是会一定程序上影响内存的。
   * 在使用 HashMap 时，即使你只设置了一个基本数据类型的键，比如说int，但是也会按照对象的大小来分配内存，大概是 32 字节，而不是 4 字节。因此最好的办法就是像上面所说的一样，使用优化过的数据集合。
-*  注意内存的开销, 使用专门给为 android 优化过的数据容器 SparseArray, SparseBoolArray, LongSparseArray, 比 HashMap 消耗更少的内存.通常的HashMap 的实现方式更加消耗内存，因为它需要一个额外的实例对象来记录 Mapping 操作。另外，SparseArray 更加高效在于他们避免了对 key 与value 的 autobox 自动装箱，并且避免了装箱后的解箱。
+* 注意内存的开销, 使用专门给为 android 优化过的数据容器 SparseArray, SparseBoolArray, LongSparseArray, 比 HashMap 消耗更少的内存.通常的HashMap 的实现方式更加消耗内存，因为它需要一个额外的实例对象来记录 Mapping 操作。另外，SparseArray 更加高效在于他们避免了对 key 与value 的 autobox 自动装箱，并且避免了装箱后的解箱。
 弃用枚举类型而使用加上 IntDef, StringDef 注解修饰的全局常量
 
 * bitmap 的优化
@@ -233,18 +233,18 @@ JUnit简介
 开发人员一般需要新建一个TestCase的类, 然后在该测试类中添加测试函数.
 需要注意的是, 每个测试方法, TestCase之间并没有关联, 它们的执行顺序也不一定是代码中的执行顺序, 因此, 测试方法不要存在依赖性.
 
-##### 测试哪些条件
+### 测试哪些条件
 
 1. 边界条件
 是单元测试需要重要测试的地方
 2. 覆盖执行路径
 
-##### 模拟所需的功能模块
+### 模拟所需的功能模块
 
 * 手动mock对象
 * 使用Mockito库
 
-##### Android中单元测试
+### Android中单元测试
 
 Google在Junit的基础上进行拓展, 使之能在Android上运行测试实例, Android平台下所有的测试类都是InstrumentationTestCase的子类, 它的内部封装了Instrumentation对四大组件进行操作, 而InstrumentationTestCase继承在Junit的TestCase.
 
@@ -255,14 +255,14 @@ AndroidTestCase
 * 测试Service, 继承自ServiceTestCase<T>
 * 测试ContentPrivider, 继承自ContentPrividerTestCase2<T>
 
-### 10. 网络框架Volley, 图片处理 Picasso 等
+## 10. 网络框架Volley, 图片处理 Picasso 等
 
 第一部分Request
 第二部分RequestQueue消息队列, 维护了提交我给网络框架的请求队列, 并根据对应规则进行排序, 该队列使用的线程安全的PriorityBlockingQueue, 所以支持并发访问.
 第三部分NetWorkExecutor, 也就是网络的执行者, 该Exectuor继承自Thread, 在run方法中循环访问请求队列, 从请求队列中获取网络请求, 请求完成后提交给UI线程
 第四部分Response及其投递类, 使用ResponseDelivery来封装Response的投递, 保证Response在UI线程中执行, Response会根据用户的不同需求返回特定的类型.
 
-##### Picasso
+### Picasso
 
 Picasso不仅实现了图片异步加载的功能，还解决了android中加载图片时需要解决的一些常见问题：
 1.在adapter中需要取消已经不在视野范围的ImageView图片资源的加载，否则会导致图片错位，Picasso已经解决了这个问题。
@@ -270,10 +270,12 @@ Picasso不仅实现了图片异步加载的功能，还解决了android中加载
 3.自带内存和硬盘二级缓存功能
 
 **Cache，缓存类**
+
 ![](http://upload-images.jianshu.io/upload_images/1662509-dd3878de000159d9?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 Lrucache，主要是get和set方法，存储的结构采用了LinkedHashMap，这种map内部实现了lru算法（Least Recently Used 近期最少使用算法）。
 
 **Request，操作封装类**
+
 ![](http://upload-images.jianshu.io/upload_images/1662509-bc261c465cfc71c6?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 所有对图形的操作都会记录在这里，供之后图形的创建使用
@@ -427,8 +429,7 @@ public class TaskDetailFragment extends Fragment implements TaskDetailContract.V
     }
 ```
 
-
-一些View层的操作
+一些 View 层的操作
 
 ```java
     @Override

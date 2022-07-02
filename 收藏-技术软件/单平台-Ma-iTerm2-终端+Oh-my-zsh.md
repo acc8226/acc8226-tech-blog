@@ -421,4 +421,4 @@ POWERLEVEL9K_CUSTOM_OS_ICON_FOREGROUND=white
 
 ## 参考
 
-https://github.com/Powerlevel9k/powerlevel9k
+<https://github.com/Powerlevel9k/powerlevel9k>

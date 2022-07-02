@@ -25,15 +25,26 @@ markdownlint
 
 但是随着图形用户界面主流的更新和电脑技术的提高，处理比例字体的局限性得到了突破，因此现在排版上显得比较自然的比例字体的使用已经相当普及。
 
-由于等宽字体的特点，当今的平面设计上也有特意使用等宽字体所具有的文化特征进行创作的风格，其中最具有代表性的就是 ASCII 艺术。ASCII 艺术所使用的字符都是等宽字体，如果改用比例字体，图片往往变形而无法表达创作者本意。在网页设计中， <tt></tt>或<pre></pre> HTML 标记通常都是使用等宽字体。另外，代码以及文字接口的程序，如虚拟终端等也经常使用等宽字体。
+由于等宽字体的特点，当今的平面设计上也有特意使用等宽字体所具有的文化特征进行创作的风格，其中最具有代表性的就是 ASCII 艺术。ASCII 艺术所使用的字符都是等宽字体，如果改用比例字体，图片往往变形而无法表达创作者本意。在网页设计中， `<tt></tt>` 或 `<pre></pre>` 等HTML 标记通常都是使用等宽字体。另外，代码以及文字接口的程序，如虚拟终端等也经常使用等宽字体。
 
 另外，代码以及文字接口的程序，如虚拟终端等也**经常使用等宽字体**。
 
-![](https://upload-images.jianshu.io/upload_images/1662509-5f78637d0986b549.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![截图](./imgs/VS-Code-%E4%BD%BF%E7%94%A8/1.png)
 
 ## 修改 vscode 终端字体
 
 在 code-首选项-设置里面，输入fontsize, 点击功能-终端即可轻松找到。
+
+## 多行操作快捷键
+
+第一种模式
+1 Alt+Shift   竖列选择
+这种模式下只可以选择竖列，不可以随意插入光标。所以只限制于同一列且不间隔的情况下。
+
+第二种模式
+1 Shift+Ctrl 竖列选择
+2 Ctrl+光标点击 选择多个编辑位点
+这种模式下不仅可以选择竖列，同时还可以在多个地方插入光标。
 
 ## VS Code 配置 Python
 
@@ -77,3 +88,8 @@ py -3 -m venv .venv
 ```
 
 Once you are finished, type deactivate in the terminal window to deactivate the virtual environment.
+
+## 参考
+
+vscode中多行操作快捷键_闲云野鹤~~~的博客-CSDN博客_vscode多行选择快捷键
+<https://blog.csdn.net/weixin_44481878/article/details/88532141>

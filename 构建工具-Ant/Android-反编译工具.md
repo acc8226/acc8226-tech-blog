@@ -46,7 +46,7 @@ I: Copying unknown files/dir...
 
 ## 反编译 xml 工具
 
-AXMLPrinter2.jar 官方介绍： AXMLPrinter2.jar apk 分析 APK 文件，取得 APK 文件中的 包名、版本号及图标，很强大的工具，再一次感受到了批处理的牛逼。可以将 android 安卓编译过的二进制 XML 文件(binary xml file)反编译明文输出保存。是 APK 反编译修改的必备工具之一。例如需要查看 apk 安装包的权限、名称等，可以用 AXMLPrinter2 对androidmanifest.xml 反编译进行明文查看。反编译速度非常快、好用，可以顺利编译出.XML文件。
+AXMLPrinter2.jar 官方介绍： AXMLPrinter2.jar apk 分析 APK 文件，取得 APK 文件中的 包名、版本号及图标，很强大的工具，再一次感受到了批处理的牛逼。可以将 android 安卓编译过的二进制 XML 文件(binary xml file)反编译明文输出保存。是 APK 反编译修改的必备工具之一。例如需要查看 apk 安装包的权限、名称等，可以用 AXMLPrinter2 对androidmanifest.xml 反编译进行明文查看。反编译速度非常快、好用，可以顺利编译出 XML 文件。
 
 ## 参考
 
