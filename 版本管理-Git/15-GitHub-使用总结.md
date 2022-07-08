@@ -18,13 +18,13 @@ fork 的两种主要工作流程：
 
 1\. fork 并且更新一个仓库
 
-![](https://upload-images.jianshu.io/upload_images/1662509-83795296344ac1d9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![fork1](./imgs/15-GitHub-%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/fork1.png)
 
 2\. 同步一个 fork
 
 Joe 和其余贡献者已经对这个项目做了一些修改，而你将在他们的修改的基础上，还要再做一些修改。在你开始之前，你最好”同步你的 fork”，以确保在最新的复制版本里工作。下面是你要做的：
 
-![](https://upload-images.jianshu.io/upload_images/1662509-b345c81fbe9b14e9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![fork2](./imgs/15-GitHub-%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/fork2.png)
 
 3\. 比较一下 fork 和同步工作流程的区别
 
@@ -102,18 +102,16 @@ ipconfig /flushdns
 git config --global url."https://github.com/".insteadOf git://github.com/
 ```
 
-### 代码推送成功 github不显示小绿格解决方案
+### 代码推送成功 github不显示小绿格（贡献度）
 
 原因
 github邮箱和git bush邮箱不一致
 
 解决方案
+单项目设置 git config user.email “你的邮件地址”
+或全局设置 git config --global user.email “你的邮件地址”
 
-但项目设置
-git config user.email “你的邮件地址”
-
-或全局设置
-git config --global user.email “你的邮件地址”
+注：gitee 平台也是此类原因。
 
 ## 参考
 
