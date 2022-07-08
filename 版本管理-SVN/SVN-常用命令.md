@@ -19,7 +19,7 @@ svn --version
 简写：svn ls
 用法：svn list path
 
-```bash
+```sh
 svn list svn://xxx/abc
 ```
 
@@ -29,13 +29,13 @@ svn list svn://xxx/abc
 
 将源文件夹内容 导入到对应目标文件夹内容。将 demo1 中的所有内容，上传到服务器 mycode 仓库的 demo1 目录下，后面双引号中的"初始化导入"是注释
 
-```bash
+```sh
 svn import /Users/ale/Desktop/demo1 svn://localhost/mycode/demo1 --username=marry --password=123 -m "初始化导入"
 ```
 
 导入单个文件
 
-```bash
+```sh
 svn import /Users/ale/台账记录2.24-2.28.xlsx  svn://svn.polyhome.net/nci_ydbq/台账记录2.24-2.28.xlsx -m "导入"
 ```
 
