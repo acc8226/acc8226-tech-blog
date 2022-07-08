@@ -69,7 +69,7 @@ public boolean onCreateOptionsMenu(Menu menu) {
 此外，您还可以使用 add() 添加菜单项，并使用 findItem() 检索项目，以便使用 MenuItem API 修改其属性。
 如果您开发的应用适用于 Android 2.3.x 及更低版本，则当用户首次打开选项菜单时，系统会调用 onCreateOptionsMenu() 来创建该菜单。 如果您开发的应用适用于 Android 3.0 及更高版本，则系统将在启动 Activity 时调用 onCreateOptionsMenu()，以便向应用栏显示项目。
 
-##### 处理点击事件
+#### 处理点击事件
 
 用户从选项菜单中选择项目（包括应用栏中的操作项目）时，系统将调用 Activity 的 onOptionsItemSelected() 方法。 此方法将传递所选的 MenuItem。您可以通过调用 getItemId() 方法来识别项目，该方法将返回菜单项的唯一 ID（由菜单资源中的 android:id 属性定义，或通过提供给 add() 方法的整型数定义）。 您可以将此 ID 与已知的菜单项匹配，以执行适当的操作。例如：
 
@@ -117,7 +117,7 @@ public boolean onOptionsItemSelected(MenuItem item) {
 
 ![浮动上下文菜单（左）和上下文操作栏（右）的屏幕截图。](http://upload-images.jianshu.io/upload_images/1662509-fac1a887274cc55c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-##### 创建浮动上下文菜单
+#### 创建浮动上下文菜单
 
 要提供浮动上下文菜单，请执行以下操作：
 
@@ -379,7 +379,10 @@ public boolean onMenuItemClick(MenuItem item) {
 }
 ```
 
-* ### [创建菜单组](http://developer.android.youdaxue.com/guide/topics/ui/menus.html#groups)
-  * ##### [使用可选中的菜单项](http://developer.android.youdaxue.com/guide/topics/ui/menus.html#checkable)
-* ### [添加基于 Intent 的菜单项](http://developer.android.youdaxue.com/guide/topics/ui/menus.html#intents)
-  * ###### [允许将 Activity 添加到其他菜单中](http://developer.android.youdaxue.com/guide/topics/ui/menus.html#AllowingToAdd)
+### [创建菜单组](http://developer.android.youdaxue.com/guide/topics/ui/menus.html#groups)
+
+#### [使用可选中的菜单项](http://developer.android.youdaxue.com/guide/topics/ui/menus.html#checkable)
+
+### [添加基于 Intent 的菜单项](http://developer.android.youdaxue.com/guide/topics/ui/menus.html#intents)
+
+#### [允许将 Activity 添加到其他菜单中](http://developer.android.youdaxue.com/guide/topics/ui/menus.html#AllowingToAdd)

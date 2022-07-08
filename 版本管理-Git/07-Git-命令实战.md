@@ -1,20 +1,20 @@
 ## 初始化仓库并推送到远端
 
-1. 初始化
+1\. 初始化
 
 ```bash
 echo "# MyProject" >> README.md
 git init
 ```
 
-2. 然后可以愉快的进行开发了
+2\. 然后可以愉快的进行开发了
 
 ```bash
 add .
 commit 'lalala'
 ```
 
-3. 进行推送（如果本身已经是 git 仓库了，直接走到第 3 步骤）
+3\. 进行推送（如果本身已经是 git 仓库了，直接走到第 3 步骤）
 
 ```sh
 # 将本地仓库关联一个远程库
@@ -58,9 +58,9 @@ Instead of naming each ref to push, specifies that all refs under
 
 ## 撤销修改
 
-场景1：当你改乱了工作区某个文件的内容，还未提交到工作区, 且想直接丢弃工作区的修改时，用命令`git checkout -- file`。用干净暂存区内容（同版本库）去覆盖工作区的内容。
+场景1：当你改乱了工作区某个文件的内容，还未提交到工作区, 且想直接丢弃工作区的修改时，用命令 `git checkout -- file`。用干净暂存区内容（同版本库）去覆盖工作区的内容。
 
-场景2：当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令`git reset HEAD file`，就回到了场景1，第二步按场景1操作。
+场景2：当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令 `git reset HEAD file`，就回到了场景1，第二步按场景1操作。
 
 ## reset 和 revert
 
@@ -94,7 +94,7 @@ commit-id 指的是要修改的节点的父节点.
 
 ## git 如何修改远程 URL
 
-```bash
+```sh
 # 先查看remote的名字
 git remote -v
 origin http://aaa.bbb.ccc.ddd/be/preser-image.git (fetch)
