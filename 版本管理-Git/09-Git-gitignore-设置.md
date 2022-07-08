@@ -1,6 +1,6 @@
 ## .gitignore 介绍
 
-在Git工作区的根目录下创建一个特殊的`.gitignore`文件，然后把要忽略的文件名填进去，Git就会自动忽略这些文件。
+在Git工作区的根目录下创建一个特殊的 `.gitignore` 文件，然后把要忽略的文件名填进去，Git 就会自动忽略这些文件。
 
 虽然 gitignore 文件对Git有特殊的意义,但是它和版本库中任何其他普通文件都是同样管理的。除非把 gitignore 添加到索引中,否则 Git 仍会把它当成未追踪的文件。
 
@@ -20,14 +20,14 @@
 * 要忽略指定模式以外的文件或目录，可以在模式前加上惊叹号（!）取反。
 
 所谓的 `glob` 模式是指 `shell` 所使用的简化了的正则表达式。
- * 星号（*）匹配零个或多个任意字符；
 
- * [abc] 匹配任何一个列在方括号中的字符（这个例子要么匹配一个 a，要么匹配一个 b，要么匹配一个 c）；如果在方括号中使用短划线分隔两个字符，表示所有在这两个字符范围内的都可以匹配（比如 [0-9] 表示匹配所有 0 到 9 的数字）
-
- * 问号（?）只匹配一个任意字符；
+* 星号（*）匹配零个或多个任意字符；
+* [abc] 匹配任何一个列在方括号中的字符（这个例子要么匹配一个 a，要么匹配一个 b，要么匹配一个 c）；如果在方括号中使用短划线分隔两个字符，表示所有在这两个字符范围内的都可以匹配（比如 [0-9] 表示匹配所有 0 到 9 的数字）
+* 问号（?）只匹配一个任意字符；
 
 我们再看一个` .gitignore ` 文件的例子：
-```
+
+```sh
 # (相对)忽略 build/ 相对目录下的所有build目录, 不忽略build文件
 build/
 # (相对)会忽略 doc/notes.txt 但不包括 doc/server/arch.txt
@@ -66,8 +66,8 @@ something
 或者可以使用以下方法，在git bash中输入以下命令：
 
 ```sh
-$ touch .gitignore
-$ vi .gitignore
+touch .gitignore
+vi .gitignore
 ```
 
 ## Java.gitignore 模板
@@ -104,15 +104,16 @@ target/
 
 ## 使用 git check-ignore命令检查规则
 
-```
+```sh
 $ git check-ignore -v App.class
 .gitignore:3:*.class App.class
 ```
+
 Git会告诉我们，`.gitignore`的第3行规则忽略了该文件，于是我们就可以知道应该修订哪个规则。
 
 ## Git忽略规则及.gitignore规则不生效的解决办法
 
-```
+```sh
 git rm -r --cached .
 git add .
 git commit -m 'update .gitignore'

@@ -9,6 +9,7 @@ Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 [Markdown](
 ## 安装 Hexo
 
 在安装前，您必须检查电脑中是否已安装下列应用程序：
+
 * [Node.js](http://nodejs.org/)
 * [Git](http://git-scm.com/)
 

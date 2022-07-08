@@ -32,7 +32,7 @@ POST
 |resultMsg | string | 提示话术  |
 |resultBody |object |  依情况而定 |
 
-**返回 resultBody 说明**
+**响应体说明**
 
 |参数名|类型|说明|
 |:-----  |:-----|-----

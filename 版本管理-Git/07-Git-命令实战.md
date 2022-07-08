@@ -54,7 +54,7 @@ Instead of naming each ref to push, specifies that all refs under
            and deleted refs will be removed from the remote end. This is the
            default if the configuration option remote.<remote>.mirror is set.
 
-简而言之 `-- mirror ` 强制推送 all refs under refs/  下的所有. 保持绝对的同步.
+简而言之 `-- mirror` 强制推送 all refs under refs/  下的所有. 保持绝对的同步.
 
 ## 撤销修改
 
@@ -90,7 +90,7 @@ commit-id 指的是要修改的节点的父节点.
 `git rm --cached --force ydq-api/ydq-api.iml`
 
 移除指定文件夹即文件夹下所有文件：
-`git rm --cached --force -r .idea/ `
+`git rm --cached --force -r .idea/`
 
 ## git 如何修改远程 URL
 
@@ -151,6 +151,6 @@ git config --global --unset https.proxy
 ## 参考
 
 很好的参考文章:
-https://fle.github.io/git-tip-keep-your-branch-clean-with-fixup-and-autosquash.html
+<https://fle.github.io/git-tip-keep-your-branch-clean-with-fixup-and-autosquash.html>
 
-https://www.jianshu.com/p/53806c704f6a
+<https://www.jianshu.com/p/53806c704f6a>

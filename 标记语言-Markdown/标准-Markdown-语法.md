@@ -23,7 +23,6 @@ It's very easy to make some words **bold** and other words *italic* with Markdow
 * *倾斜*
 * **加粗**
 * ~~中划线效果~~
-*
 
 _You **can** combine them_
 

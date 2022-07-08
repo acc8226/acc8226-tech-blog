@@ -1,0 +1,148 @@
+## 9.1 从数据处理到人工智能
+
+## 9.2 实例15: 霍兰德人格分析雷达图
+
+## 9.3 从Web解析到网络空间
+
+- Requests、Scrapy、pyspider
+- Beautiful Soup、Re、Python-Goose
+- Django、Pyramid、Flask
+- WeRobot、aip、MyQR
+
+## 概述 **Python [二维码生成器 / MyQR](https://github.com/sylnsfar/qrcode/blob/master/README-cn.md)**
+
+可生成*普通二维码*、*带图片的艺术二维码（黑白与彩色）*、*动态二维码（黑白与彩色）*。
+
+#### 普通二维码
+
+![](https://upload-images.jianshu.io/upload_images/1662509-7458b00eb3079fb1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+```markdown
+#1 Words
+myqr https://github.com
+```
+
+* 在命令后输入链接或者句子作为参数，然后在程序的当前目录中产生相应的二维码图片文件，默认命名为” qrcode.png“。
+
+#### 艺术二维码
+
+![](https://upload-images.jianshu.io/upload_images/1662509-88151ebb1f531fda.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![](https://upload-images.jianshu.io/upload_images/1662509-97347f4a59b4dd29.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+```markdown
+#1 -p
+myqr https://github.com -p github.jpg
+```
+
+* 参数`-p` 用来将QR二维码图像与一张同目录下的图片相结合，产生一张**黑白**图片。
+
+#### 动态gif二维码
+
+![](https://upload-images.jianshu.io/upload_images/1662509-20fb77e8f51e51e7.gif?imageMogr2/auto-orient/strip)
+
+## 9.4 从人机交互到艺术设计
+
+- PyQt5、wxPython、PyGObject
+- PyGame、Panda3D、cocos2d
+- VR Zero、pyovr、Vizard
+- Quads、ascii_art、turtle
+
+## 9.5 实例16: 玫瑰花绘制
+
+![](https://upload-images.jianshu.io/upload_images/1662509-3c7161098d03f6bf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+```python
+#RoseDraw.py
+import turtle as t
+# 定义一个曲线绘制函数
+def DegreeCurve(n, r, d=1):
+    for i in range(n):
+        t.left(d)
+        t.circle(r, abs(d))
+# 初始位置设定
+s = 0.2 # size
+t.setup(450*5*s, 750*5*s)
+t.pencolor("black")
+t.fillcolor("red")
+t.speed(100)
+t.penup()
+t.goto(0, 900*s)
+t.pendown()
+# 绘制花朵形状
+t.begin_fill()
+t.circle(200*s,30)
+DegreeCurve(60, 50*s)
+t.circle(200*s,30)
+DegreeCurve(4, 100*s)
+t.circle(200*s,50)
+DegreeCurve(50, 50*s)
+t.circle(350*s,65)
+DegreeCurve(40, 70*s)
+t.circle(150*s,50)
+DegreeCurve(20, 50*s, -1)
+t.circle(400*s,60)
+DegreeCurve(18, 50*s)
+t.fd(250*s)
+t.right(150)
+t.circle(-500*s,12)
+t.left(140)
+t.circle(550*s,110)
+t.left(27)
+t.circle(650*s,100)
+t.left(130)
+t.circle(-300*s,20)
+t.right(123)
+t.circle(220*s,57)
+t.end_fill()
+# 绘制花枝形状
+t.left(120)
+t.fd(280*s)
+t.left(115)
+t.circle(300*s,33)
+t.left(180)
+t.circle(-300*s,33)
+DegreeCurve(70, 225*s, -1)
+t.circle(350*s,104)
+t.left(90)
+t.circle(200*s,105)
+t.circle(-500*s,63)
+t.penup()
+t.goto(170*s,-30*s)
+t.pendown()
+t.left(160)
+DegreeCurve(20, 2500*s)
+DegreeCurve(220, 250*s, -1)
+# 绘制一个绿色叶子
+t.fillcolor('green')
+t.penup()
+t.goto(670*s,-180*s)
+t.pendown()
+t.right(140)
+t.begin_fill()
+t.circle(300*s,120)
+t.left(60)
+t.circle(300*s,120)
+t.end_fill()
+t.penup()
+t.goto(180*s,-550*s)
+t.pendown()
+t.right(85)
+t.circle(600*s,40)
+# 绘制另一个绿色叶子
+t.penup()
+t.goto(-150*s,-1000*s)
+t.pendown()
+t.begin_fill()
+t.rt(120)
+t.circle(300*s,115)
+t.left(75)
+t.circle(300*s,100)
+t.end_fill()
+t.penup()
+t.goto(430*s,-1070*s)
+t.pendown()
+t.right(30)
+t.circle(-600*s,35)
+t.done()
+```

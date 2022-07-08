@@ -7,15 +7,15 @@ Git Submodule 允许一个 git 仓库，作为另一个 git 仓库的子目录�
 
 git submodule 涉及的常用功能有：
 
-* git clone <repository> –recursive ：递归的方式克隆整个项目
-* git submodule add <repository> <path> ：添加子模块
-* git submodule init ：初始化子模块
-* git submodule update ：更新子模块
+* `git clone <repository> –recursive` ：递归的方式克隆整个项目
+* `git submodule add <repository> <path>` ：添加子模块
+* `git submodule init` ：初始化子模块
+* `git submodule update` ：更新子模块
 
 * git submodule foreach git pull： 拉取所有子模块
 * `git submodule foreach git checkout -- .` 所有子模块进行 checkout -- . 操作。
 
-```
+```text
 NAME
        git-submodule - Initialize, update or inspect submodules
 
@@ -82,7 +82,7 @@ git clone project.git project3 –recursive
 在项目中，进入到子模块目录下，执行 git pull 更新，查看 git log 查看相应提交。
 完成后返回到项目目录，可以看到子模块有待提交的更新，使用 git add，提交即可。
 
-###  [从存储库中删除所有 Git 缓存的子模块(Deleting all Git cached submodules from repository)](http://www.it1352.com/802947.html)
+### [从存储库中删除所有 Git 缓存的子模块(Deleting all Git cached submodules from repository)](http://www.it1352.com/802947.html)
 
 ```sh
 # deinit all submodules from .gitmodules
@@ -100,7 +100,8 @@ rm -rf .git/modules
 ```
 
 I do not know for server synchronisation. It could be done automatically with next commit, or we might need those commands:
-```
+
+```sh
 git submodule sync
 git submodule update --init --recursive --remote
 ```

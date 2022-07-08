@@ -1,8 +1,8 @@
-Git windows版本官方下载地址
-https://git-scm.com/download/win
+Git windows 版本官方下载地址
+<https://git-scm.com/download/win>
 
 配合 Windows 下主推小乌龟 Git 拓展.
-https://tortoisegit.org/download/ (请选择正确的 32 / 64位版本)
+<https://tortoisegit.org/download/> (请选择正确的 32 / 64位版本)
 为了便携, 我这里下载了便携版的软件.
 
 > 这个版本的 Git for Windows 是可移植的，也就是说不需要
@@ -15,7 +15,7 @@ Windows 注册表。“安装”不需要管理员权限。
 > *NOTE*: if you decide to unpack the archive using 7-Zip manually, you must
 run the `post-install.bat` script. Git will not run correctly otherwise.
 
-如果您熟悉类 unix 的 shell，只需启动‘ git-bash.exe’即可。
+如果您熟悉类 unix 的 shell，只需启动 ‘git-bash.exe’ 即可。
 如果没有，就启动‘ git-cmd.exe’。
 
 或者，您可以执行这些命令来修改% path%

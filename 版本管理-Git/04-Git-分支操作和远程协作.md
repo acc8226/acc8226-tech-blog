@@ -75,7 +75,8 @@ git checkout-b new_branch
 `git remote update remote_name` 使得本地版本库中的 origin 已被基于远程版本库的信息更新了。当最初添加远程版本库时,使用 -f 选项将导致立即对该远程版本库执行 fetch 操作。
 
 git remote rm命令会从你的本地版本库中删除给定的远程版本库及其关联的远程追踪分支。要只从你的本地版本库删除一个远程跟踪分支,使用这样的命令:
-```
+
+```sh
 $ git branch-r -d origin/dev
 ```
 
@@ -155,17 +156,20 @@ git clone -b git_分支名称 --single-branch git_仓库_url 获取指定分支�
 ```
 
 举例
-```
+
+```sh
 git clone -b dev --single-branch http://118.54.96.123/be/preser-customer.git
 ```
 
 快速检出特定版本
-```
+
+```sh
 $ git clone -b v1.45.1 --depth 1 https://github.com/grpc/grpc-java
 ```
 
 **检出特定分支**
-```
+
+```sh
 git checkout -b mvp-dev-more remotes/origin/mvp-dev-more
 ```
 
@@ -182,14 +186,14 @@ git checkout -b mvp-dev-more remotes/origin/mvp-dev-more
 
 > 默认情况下, git 合并命令拒绝合并没有共同祖先的历史。当两个项目的历史独立地开始时,这个选项可以被用来覆盖这个安全。由于这是一个非常少见的情况,因此没有默认存在的配置变量,也不会添加。
 
-```
+```sh
 git checkout master
 git merge bugFix
 ```
 
 等价于
 
-```
+```sh
 git merge bugFix master
 ```
 
@@ -202,7 +206,8 @@ git rebase 命令是用来改变一串提交以什么为基础的。**此命令�
 git rebase 的一个常见用途是保持你正在开发的一系列提交相对于另一个分支是最新的, 那通常是 master 分支或者来自另一个版本库的追踪分支。
 
 命令会先取出特性分支 server，然后在主分支 master 上重演。
-```
+
+```sh
 git rebase [主分支] [特性分支]
 ```
 
@@ -210,14 +215,14 @@ git rebase [主分支] [特性分支]
 
 举例：将 bugFix 的东西重新在上 master 演绎，和 merge 一样，改动的是 bugFix 分支。
 
-```
+```sh
 git checkout bugFix
 git rebase master
 ```
 
 等价于
 
-```
+```sh
 # 迁往的分支名是 master (变的是 master), 最后一个参数不写缺省是 HEAD
 git rebase master bugFix
 ```
@@ -238,7 +243,7 @@ fetch 命令**只是将远端的数据拉到本地仓库**，并不会自动合�
 
 由于没有指定 refspec，该远程版本库的信息在配置文件中，Git会使用 remote 条目中所有"fetch ="的行。因此,将抓取远程版 本库中的每个refs/heads/分支。
 
-```
+```text
 [remote "origin"]
 	...
 	fetch = +refs/heads/*:refs/remotes/origin/*
@@ -297,7 +302,7 @@ git pull
 
 实际上，在直接使用 `git pull` 的时候，如果我们没有指定 upstream，git 会根据配置文件知道怎么合并分支。
 
-```
+```text
 [branch "develop"]
     remote = origin
     merge = refs/heads/develop
@@ -356,18 +361,22 @@ git push upstream --delete [分支名]
 ```
 
 如果当前分支与远程分支之间存在追踪关系，则本地分支和远程分支都可以省略。
-```
+
+```sh
 git push origin
 ```
+
 如果当前分支未设置过跟踪远程分支，则需要手动指定一次 -u 参数。
-```
+
+```sh
 git push -u origin dev
 ```
 
 否则在推送前需要 `git branch -u 主机名/远程分支名 本地分支名` 设置追踪。
 
 如果主机名只有一个，则主机名都可以省略。
-```
+
+```sh
 git push
 ```
 
@@ -409,9 +418,9 @@ git push --force origin
 分支如何重命名，目前没有一个一步到位的方法，分两步走。新增新分支，删除旧分支
 
 ```sh
-$ git branch new origin/older
-$ git push origin new
-$ git push origin :older
+git branch new origin/older
+git push origin new
+git push origin :older
 ```
 
 ## tag标签
@@ -428,7 +437,7 @@ Git 使用的标签有两种类型：轻量级的（lightweight）和含附注�
 
 创建轻量标签
 
-```
+```sh
 git tag <name>
 ```
 
@@ -443,7 +452,10 @@ git tag <name>
 git tag -s <tagname> -m "blablabla..."
 
 查看相应标签的版本信息
+
+```sh
 git show <tagname>
+```
 
 举例：
 
@@ -457,37 +469,39 @@ Date:   Thu Aug 22 11:22:08 2013 +0800
 
 推送单个标签
 
-```
-$ git push origin [tagname]
+```sh
+git push origin [tagname]
 ```
 
 推送所有本地新增的标签
 
-```
-$ git push origin --tags
+```sh
+git push origin --tags
 ```
 
 删除一个本地标签
-```
-$ git tag -d <tagname>
+
+```sh
+git tag -d <tagname>
 ```
 
 删除一个远程标签,与删除远程仓库类似
 
-```
-$ git push origin :refs/tags/<tagname>
+```sh
+git push origin :refs/tags/<tagname>
 ```
 
 可以简写为
-```
-$ git push origin :<tagname>
+
+```sh
+git push origin :<tagname>
 ```
 
 举例
 
-```
-$ git tag -d v0.9
-$ git push origin :refs/tags/v0.9
+```sh
+git tag -d v0.9
+git push origin :refs/tags/v0.9
 ```
 
 ## git同步远程已删除的分支

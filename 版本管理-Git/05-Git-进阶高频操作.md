@@ -75,7 +75,7 @@ git reset -soft HEAD
 
 ## cherry-pick
 
-git cherry-pick提交命令会在当前分支上应用给定提交引入的变更。这将引入一个新的独特的提交。严格来说,使用git cherry-pick并不改变版本库中的现有历史记录,而是添加历史记录。
+git cherry-pick 提交命令会在当前分支上应用给定提交引入的变更。这将引入一个新的独特的提交。严格来说,使用 git cherry-pick并不改变版本库中的现有历史记录,而是添加历史记录。
 
 跟其他通过应用 diff 来引入变更的Git操作一样,你可能需要解决冲突来完全应用给定提交的变更。
 
@@ -84,7 +84,7 @@ git cherry-pick 命令通常用于把版本库中一个分支的特定提交引�
 `git cherry-pick <提交号1> <提交号2> <提交号3>`
 挑选多个提交合并, 提交之间用空格相隔
 
-挑选区间, 左开右闭.其中，<start-commit>在时间上必须早于<end-commit>
+挑选区间, 左开右闭.其中，`<start-commit>` 在时间上必须早于 `<end-commit>`
 `git cherry-pick <start-commit>..<end-commit>`
 
 ```sh

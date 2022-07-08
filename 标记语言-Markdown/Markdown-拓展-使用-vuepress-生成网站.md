@@ -29,8 +29,8 @@ cd vuepress-starter
 ```
 
 初始化项目
-*   YARN
-*   NPM
+* YARN
+* NPM
 
 ```
 git init
@@ -38,16 +38,17 @@ yarn init
 ```
 
  将 VuePress 安装为本地依赖
-*   YARN
-*   NPM
 
-```
+* YARN
+* NPM
+
+```sh
 yarn add -D vuepress@next
 ```
 
 在 `package.json` 中添加一些 [scripts在新窗口打开](https://classic.yarnpkg.com/zh-Hans/docs/package-json#toc-scripts)
 
-```
+```json
 {
   "scripts": {
     "docs:dev": "vuepress dev docs",
@@ -58,7 +59,7 @@ yarn add -D vuepress@next
 
 将默认的临时目录和缓存目录添加到 `.gitignore` 文件中
 
-```
+```sh
 echo 'node_modules' >> .gitignore
 echo '.temp' >> .gitignore
 echo '.cache' >> .gitignore
@@ -66,18 +67,18 @@ echo '.cache' >> .gitignore
 ```
 
 创建你的第一篇文档
-```
+
+```sh
 mkdir docs
 echo '# Hello VuePress' > docs/README.md
-
 ```
 
 在本地启动服务器来开发你的文档网站
 
-*   YARN
-*   NPM
+* YARN
+* NPM
 
-```
+```sh
 yarn docs:dev
 ```
 
@@ -87,7 +88,7 @@ VuePress 会在 [http://localhost:8080在新窗口打开](http://localhost:8080
 
 假设这是你的 Markdown 文件所处的目录结构：
 
-```
+```text
 └─ docs
    ├─ guide
    │  ├─ getting-started.md
@@ -120,7 +121,7 @@ VuePress 会在 [http://localhost:8080在新窗口打开](http://localhost:8080
 
 **输入**
 
-```
+```text
 VuePress 2 已经发布 :tada: ！
 ```
 
@@ -142,7 +143,7 @@ VuePress 2 已经发布 🎉 ！
 
 **输入**
 
-```
+```ts
 ```ts{1,6-8}
 import type { UserConfig } from '@vuepress/cli'
 
@@ -157,9 +158,9 @@ export const config: UserConfig = {
 
 行数范围标记的例子：
 
-*   行数范围： `{5-8}`
-*   多个单行： `{4,7,9}`
-*   组合： `{4,7-13,16,23-27,40}`
+* 行数范围： `{5-8}`
+* 多个单行： `{4,7,9}`
+* 组合： `{4,7-13,16,23-27,40}`
 
 **行号**
 你肯定已经注意到在代码块的最左侧会展示行号。这个功能是默认启用的，你可以通过配置来禁用它。
@@ -174,7 +175,7 @@ base
 默认值： /
 详情：部署站点的基础路径。
 
-如果你想让你的网站部署到一个子路径下，你将需要设置它。它的值应当总是以斜杠开始，并以斜杠结束。举例来说，如果你想将你的网站部署到 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/"。
+如果你想让你的网站部署到一个子路径下，你将需要设置它。它的值应当总是以斜杠开始，并以斜杠结束。举例来说，如果你想将你的网站部署到 <https://foo.github.io/bar/>，那么 base 应该被设置成 "/bar/"。
 
 base 将会作为前缀自动地插入到所有以 / 开始的其他选项的链接中，所以你只需要指定一次。
 
@@ -183,6 +184,7 @@ base 将会作为前缀自动地插入到所有以 / 开始的其他选项的链
 ### 顶部导航栏设置
 
 navbar
+
 * 类型： false | (NavbarItem | NavbarGroup | string)[]
 * 默认值： []
 * 详情：
@@ -194,6 +196,7 @@ navbar
   * 字符串应为目标页面文件的路径。它将会被转换为 NavbarItem 对象，将页面标题作为 text ，将页面路由路径作为 link 。
 
 示例 1：
+
 ```js
 module.exports = {
   themeConfig: {
@@ -216,6 +219,7 @@ module.exports = {
 ```
 
 示例 2：
+
 ```js
 module.exports = {
   themeConfig: {
@@ -259,6 +263,7 @@ module.exports = {
 > VuePress 站点必要的配置文件是 .vuepress/config.js，它应该导出一个 JavaScript 对象。如果你使用 TypeScript ，你可以将其替换为 .vuepress/config.ts ，以便让 VuePress 配置得到更好的类型提示。
 
 config.ts 配置
+
 ```ts
 import { defineUserConfig } from 'vuepress'
 import type { DefaultThemeOptions } from 'vuepress'
@@ -299,7 +304,7 @@ export default defineUserConfig<DefaultThemeOptions>({
 ```
 
 VuePress Demo 代码地址
-https://gitee.com/kaiLee/Demo-VuePress
+<https://gitee.com/kaiLee/Demo-VuePress>
 
 ## 总结
 
@@ -308,6 +313,7 @@ https://gitee.com/kaiLee/Demo-VuePress
 缺点：V2 的文档写的有点糙，很多时候不知道怎样配置启用所需的功能。
 
 一些记录：
+
 * `package.json` 中添加一些 [scripts在新窗口打开](https://classic.yarnpkg.com/zh-Hans/docs/package-json#toc-scripts)，分别用于调试 `yarn docs:dev` 和部署 `yarn docs:build`。
 
 ```js
@@ -328,4 +334,4 @@ https://gitee.com/kaiLee/Demo-VuePress
 ## 参考
 
 首页 | VuePress
-https://v2.vuepress.vuejs.org/zh/
+<https://v2.vuepress.vuejs.org/zh/>

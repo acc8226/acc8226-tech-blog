@@ -24,6 +24,7 @@ GitHub【国内访问，时快时慢】
 * 码云 最大为100 MB
 
 coding 提供了 文件网盘功能，普通用户提供了高达 30GB 的容量。
+
 ![](https://upload-images.jianshu.io/upload_images/1662509-0ba1972430126817.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## 使用 Git LFS 上传大文件
@@ -45,7 +46,7 @@ coding 提供了 文件网盘功能，普通用户提供了高达 30GB 的容量
 
 ### 让本地新仓库支持 Git LFS
 
-```bash
+```sh
 # 初始化一个仓库
 $ mkdir big-repo
 $ cd big-repo

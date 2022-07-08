@@ -63,10 +63,10 @@
 
 其对应语法分别为：graph TB/graph BT/graph RL/graph LR。
 
-*   TB - top bottom（自上而下）
-*   BT - bottom top（自下而上）
-*   RL - right left（从右到左）
-*   LR - left right（从左到右）
+* TB - top bottom（自上而下）
+* BT - bottom top（自下而上）
+* RL - right left（从右到左）
+* LR - left right（从左到右）
 
 简单示例如图：
 
@@ -119,7 +119,7 @@ dateFormat YYYY-MM-DD规定了时间轴，title （标题文本）表示甘特
 ## 参考
 
 【简明版】有道云笔记Markdown指南
-http://note.youdao.com/iyoudao/?p=2411
+<http://note.youdao.com/iyoudao/?p=2411>
 
 【进阶版】有道云笔记Markdown指南
-http://note.youdao.com/iyoudao/?p=2445
+<http://note.youdao.com/iyoudao/?p=2445>

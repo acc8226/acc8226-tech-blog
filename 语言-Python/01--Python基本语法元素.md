@@ -1,0 +1,44 @@
+## python 可以做什么
+
+* web开发
+* 数据分析
+* 人工智能
+
+## 语法元素总览
+
+- 缩进、注释、命名、变量、保留字
+- 数据类型、字符串、 整数、浮点数、列表
+- 赋值语句、分支语句、函数
+- input()、print()、eval()、 print()格式化
+
+## 注释
+
+解释：不被程序执行的辅助性信息说明
+
+* 单行注释 以`#`开头, 其后内容为注释
+* 多行注释 以`'''`开头
+
+## Python 3.x的保留字（关键字）
+
+###### (黑色文字表示常用关键字)
+
+![](https://upload-images.jianshu.io/upload_images/1662509-17c2749cd451727a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+## 评估函数eval()
+
+去掉参数最外侧引号并执行余下语句的函数
+
+## 经典实例
+
+```py
+# 两种体系的转换
+tempStr = input("请输入带有符号的温度值:")
+if tempStr[-1] in ['f', 'F']:
+    c = (eval(tempStr[0: -1]) - 32) / 1.8
+    print("转换后的温度是{:.2f}C".format(c))
+elif tempStr[-1] in ['c', 'C']:
+    f = eval(tempStr[0: -1]) * 1.8 + 32
+    print("转换后的温度是{:.2f}F".format(f))
+else:
+    print("输入格式错误")
+```
