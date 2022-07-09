@@ -1,6 +1,6 @@
 ## chrome 的使用
 
-### 常用操作
+### 常用快捷键
 
 新建标签
 Ctrl + T
@@ -31,21 +31,14 @@ Windows, Chrome OS & Linux: Ctrl + D
 向上翻页
 Shift + 空格键 或者 pageUp 键
 
-## 常用插件
+### 常用插件
 
-### uBlock Origin （去广告）
+#### uBlock Origin （去广告）
 
 uBlock Origin - 一款不可多得的浏览器广告拦截插件，使用体验比 Adblock 效果更好。
 <https://www.cnplugins.com/office/block/>
 
-### 彩云小译 - 在线翻译  (比百度 / 谷歌更智能）
-
-<https://fanyi.caiyunapp.com/#/web>
-
-浏览网页时，点击书签栏中或插件的"彩云小译"，网页将变成中英对照模式。
-**若开通付费，才能享用翻译无限次**
-
-## 浏览器辅助神器：油猴
+#### 浏览器辅助神器：油猴
 
 Tampermonkey 是一款浏览器脚本管理插件，常见浏览器都支持，结合脚本网站 Greasyfork，能够方便的实现脚本旳一键安装、自动更新、快速启用等便捷功能。
 
@@ -67,7 +60,7 @@ Open the F**king URL Right Now
 **免费视频在线解析**
 <https://greasyfork.org/zh-CN/scripts/27349>
 
-### Proxy SwitchyOmega
+#### Proxy SwitchyOmega
 
 <https://proxy-switchyomega.com/>
 
@@ -77,13 +70,13 @@ Chrome 和 Firefox 浏览器上的代理扩展程序，可以轻松快捷的管�
 * 可以在线导入 AutoProxy 和 Switchy 格式的规则，也可以自己添加域名通配符、网址通配符和网址正则等切换规则。
 * 可以在浏览器菜单中对情景模式进行快速切换，可以快速对当前网址添加过滤规则。
 
-### Web开发者助手 FeHelper
+#### Web开发者助手 FeHelper
 
 <https://www.baidufe.com/fehelper/index/index.html>
 
 插件支持Chrome、Firefox、MS-Edge 浏览器，内部工具集持续增加，目前包括 JSON 自动/手动格式化、JSON 内容比对、代码美化与压缩、信息编解码转换、二维码生成与解码、图片 Base64 编解码转换、Markdown、 网页油猴、网页取色器、脑图(Xmind)等贴心工具，甚至在目前新版本的 FeHelpe r中，还集成了FH开发者工具， 如果你也想自己搞一个工具集成到 FeHelper 中，那这一定能满足到你。另外，本站也提供部分工具的在线版本！
 
-### Restlet Client-REST API Testing
+#### Restlet Client-REST API Testing
 
 Postman 的轻巧替代品
 
@@ -91,14 +84,20 @@ Postman 的轻巧替代品
 
 <http://www.cnplugins.com/devtool/restlet-client-rest-api-t-v2-19-1/download.html>
 
-### Axure RP Extension For Chrome （用于打开产品原型图）
+#### Axure RP Extension For Chrome （用于打开产品原型图）
 
 对于很多需要设计产品原型的朋友来说，Axure RP Pro可谓是非常方便、好用的一款软件，因为它不仅能绘制出详细的产品构思，也能生成浏览器格式的产品原型。但是如果想把原型拿给客户查看，千万记得给浏览器安装Axure扩展程序哦。
 
 最新Axure谷歌浏览器Chrome扩展程序安装方法 - Axure中文网
 <https://www.axure.com.cn/79769/>
 
-## 安装插件遇到的问题及解决方法总结
+#### 彩云小译 - 在线翻译  (比百度 / 谷歌更智能）【付费，可免费使用】
+
+<https://fanyi.caiyunapp.com/#/web>
+
+浏览网页时，点击书签栏中或插件的"彩云小译"，网页将变成中英对照模式。
+
+#### 安装插件遇到的问题及解决方法总结
 
 **谷歌浏览器中安装 .crx 扩展名的离线 Chrome 插件**
 找到自己已经下载好的Chrome离线安装文件xxx.crx，然后将其从资源管理器中拖动到Chrome的扩展管理界面中，这时候用户会发现在扩展管理器的中央部分中会多出一个”拖动以安装“的插件按钮。

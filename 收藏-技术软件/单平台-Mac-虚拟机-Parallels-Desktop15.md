@@ -13,7 +13,7 @@
 
 ## 安装 windows 10
 
-win10 官网下载地址
+win 10 官网下载地址
 [https://www.microsoft.com/zh-cn/software-download/windows10](https://www.microsoft.com/zh-cn/software-download/windows10)
 
 未激活也能一直使用, 就这样吧.

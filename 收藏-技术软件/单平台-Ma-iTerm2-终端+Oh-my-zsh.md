@@ -275,7 +275,6 @@ plugins=(... git)
 | gwch                 | git whatchanged -p --abbrev-commit --pretty=medium                                                                            |
 | gwip                 | git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commit --no-verify --no-gpg-sign -m "--wip-- [skip ci]"        |
 
-
 #### web-search plugin
 
 This plugin adds aliases for searching with Google, Wiki, Bing, YouTube and other popular services.
@@ -296,8 +295,9 @@ You can use the `web-search` plugin in these two forms:
 For example, these two are equivalent:
 
 ```zsh
-$ web_search google oh-my-zsh
-$ google oh-my-zsh
+web_search google oh-my-zsh
+
+google oh-my-zsh
 ```
 
 Available search contexts are:
@@ -325,17 +325,20 @@ sudo git clone https://github.com/zsh-users/zsh-syntax-highlighting $ZSH_CUSTOM/
 ```
 
 然后编辑配置文件，`$ vim ~/.zshrc` 添加以下内容:
+
 ```sh
 source $ZSH_CUSTOM/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ```
 
 #### zsh-autosuggestions
-```
+
+```sh
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
 Add the plugin to the list of plugins for Oh My Zsh to load (inside ~/.zshrc):
-```
+
+```sh
 plugins=(zsh-autosuggestions)
 ```
 
@@ -345,13 +348,17 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#BABABA,bg=#66666A,bold,underline"
 ```
 
 ### Powerlevel9k主题
+
+```sh
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 ```
-$ git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
-```
+
 You then need to select this theme in your ~/.zshrc:
-```
+
+```sh
 ZSH_THEME="powerlevel9k/powerlevel9k"
 ```
+
 原版配色我很不喜欢, 蓝色和绿色太纯正. 可以自己换一些配色
 ![image](https://upload-images.jianshu.io/upload_images/1662509-cc8f3f420842994c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -370,7 +377,7 @@ After installing nerd-fonts and configuring your terminal emulator to use one, c
 
 去掉左侧默认的命令提示符为 user@userdemackbookPro，这样的提示符配合 powerlevel9k 主题太过冗长，因此我选择将该冗长的提示符去掉，在 ~/.zshrc 配置文件后面追加如下内容：
 
-```prop
+```sh
 # 默认主题
 # ZSH_THEME="robbyrussell"
 

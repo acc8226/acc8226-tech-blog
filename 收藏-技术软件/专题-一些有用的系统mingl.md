@@ -1,0 +1,15 @@
+## 如何测试端口通不通
+
+### telnet
+
+telnet 是 windows 标准服务，可以直接用；如果是 linux 机器，需要安装 telnet.
+
+用法: telnet ip地址/域名 port
+
+### 使用ssh判断
+
+ssh 是 linux的标准配置并且最常用，可以用来判断端口吗？
+
+用法: ssh ip地址/域名 -p port
+
+-p 指定端口

@@ -11,7 +11,7 @@
 ◆ 在 Windows 9x/NT/2000 下都能运行的非常好;
 ◆ 支持协议广
 
-**用快捷方式实现自动登录**
+### 用快捷方式实现自动登录
 
 首先创建 putty.exe 的快捷方式到桌面；然后运行 putty，输入 host name、port、saved session’s name，点击保存，假设 session 名为“qa server”，随后关闭窗口；最后右击 putty 快捷方式，属性，目标，加上如下参数
 ` -load "qa server" -ssh -l {username} -pw {password}`。
@@ -30,18 +30,20 @@
 putty [-pw password] [-m file] user@ip_addr
 ```
 
-**对 putty 乱码的处理**
+### 对 putty 乱码的处理
 
-1. 一般为 gbk 和 utf-8 这两种格式常见. 可以先行尝试设置为 utf-8。
-2. 如若不生效后. 可再次尝试改为中文字体（GB中文编码）。
-3. 打开的配置窗口左边选择 Appearance，在右边点 Font settings 里面的 Change 按钮，选择好中文字体，比如：宋体、新宋体之类。
-4. 然后设置 Translation
-![](https://upload-images.jianshu.io/upload_images/1662509-017309e50c75983f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-5. 最后保存下配置，几乎就能 解决 99% 编码问题了
+1\. 一般为 gbk 和 utf-8 这两种格式常见. 可以先行尝试设置为 utf-8。
+2\. 如若不生效后. 可再次尝试改为中文字体（GB中文编码）。
+3\. 打开的配置窗口左边选择 Appearance，在右边点 Font settings 里面的 Change 按钮，选择好中文字体，比如：宋体、新宋体之类。
+4\. 然后设置 Translation
 
-**调整 putty 窗口的宽高**
+![Translation](./imgs/%E5%8D%95%E5%B9%B3%E5%8F%B0-Win-putty-kitty-pscp-%E4%BD%BF%E7%94%A8/1.png)
 
-![](https://upload-images.jianshu.io/upload_images/1662509-33bbff834134ff05.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+5\. 最后保存下配置，几乎就能 解决 99% 编码问题了
+
+### 调整 putty 窗口的宽高
+
+![调整宽高](./imgs/%E5%8D%95%E5%B9%B3%E5%8F%B0-Win-putty-kitty-pscp-%E4%BD%BF%E7%94%A8/2.png)
 
 ## pscp 用于传文件
 
