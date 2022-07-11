@@ -20,16 +20,11 @@ Git 鼓励开发者频繁使用分支，正是因为有着这些特性作保障�
 如果要强制**禁用 Fast forward 模式**，Git 就会在 merge 时生成一个新的 commit。
 例如 `$ git merge --no-ff -m "merge with no-ff" dev`
 
-git branch (-m | -M) [<oldbranch>] <newbranch> 移动分支/重命名
-git branch (-c | -C) [<oldbranch>] <newbranch> 拷贝分支
-git branch (-d | -D) [-r] <branchname>... 删除分支
+`git branch (-m | -M) [<oldbranch>] <newbranch>` 移动分支/重命名。若修改当前所在分支的名字，原分支名可以省略不写。
+`git branch (-c | -C) [<oldbranch>] <newbranch>` 拷贝分支。-C 表示 --force 强制的意思。
+`git branch (-d | -D) [-r] <branchname>...` 删除分支
 
-**给本地分支改名** git  branch -m 原分支名 新分支名， 若修改当前所在分支的名字，原分支名可以省略不写。
-
-**本地分支的复制**
--C 表示 --force 强制的意思。
-
-**本地分支的删除**
+**本地分支的删除的详细说明**
 `$ git branch -d <branch-name>` 删除分支，此命令也一次性删除多个，只需要一并列出就行。另外 Git 阻止你删除当前分支。因为删除当前分支将导致Git无法确定工作目录树应该是什么样的。相反,必须始终选择一个非当前分支。
 
 但是还有另外一个微妙的问题。Git 不会让你删除一个包含不存在于当前分支中的提交的分支。也就是说,如果分支被删除则开发的提交部分就会丢失, Git 会阻止你意外删除提交中的开发。
@@ -39,8 +34,7 @@ git branch (-d | -D) [-r] <branchname>... 删除分支
 
 - - -
 
-创建并切换到该分支
-`git checkout -b [branch-name]`
+创建并切换到该分支 `git checkout -b [branch-name]`
 
 相当于
 
@@ -74,10 +68,10 @@ git checkout-b new_branch
 `git remote update` 更新所有的 remote
 `git remote update remote_name` 使得本地版本库中的 origin 已被基于远程版本库的信息更新了。当最初添加远程版本库时,使用 -f 选项将导致立即对该远程版本库执行 fetch 操作。
 
-git remote rm命令会从你的本地版本库中删除给定的远程版本库及其关联的远程追踪分支。要只从你的本地版本库删除一个远程跟踪分支,使用这样的命令:
+git remote rm 命令会从你的本地版本库中删除给定的远程版本库及其关联的远程追踪分支。要只从你的本地版本库删除一个远程跟踪分支,使用这样的命令:
 
 ```sh
-$ git branch-r -d origin/dev
+git branch-r -d origin/dev
 ```
 
 远程版本库中可能已经有分支被其他开发人员删除了(即使这些分支的副本可能还遗留在你的版本库中) 。 `git remote prune`命令可以用来删除你的本地版本库中那些陈旧的(相对于实际的远程版本库)远程追踪分支。
@@ -164,7 +158,7 @@ git clone -b dev --single-branch http://118.54.96.123/be/preser-customer.git
 快速检出特定版本
 
 ```sh
-$ git clone -b v1.45.1 --depth 1 https://github.com/grpc/grpc-java
+git clone -b v1.45.1 --depth 1 https://github.com/grpc/grpc-java
 ```
 
 **检出特定分支**
@@ -250,8 +244,7 @@ fetch 命令**只是将远端的数据拉到本地仓库**，并不会自动合�
 	...
 ```
 
-要更新所有分支，命令可以简写为：
-`$ git fetch`
+要更新所有分支，命令可以简写为：`$ git fetch`
 
 举例：将远程版本库上的修改同步到本地 `git fetch origin master` 会将远程版本库上的代码同步到本地，不过同步下来的代码并不会合并到任何分支上去，而是会存放在到一个 origin/master 分支上，这时我们可以通过 diff 命令来查看远程版本库上到底修改了哪些东西：
 
@@ -383,7 +376,7 @@ git push
 - - -
 
 **关于直接使用 git push 的说明。**
-因为在[git的全局配置中，有一个push.default](http://git-scm.com/docs/git-config)属性，其决定了`git push`操作的默认行为。在Git 2.0之前，这个属性的默认被设为'matching'，2.0之后则被更改为了'simple'。
+因为在[git的全局配置中，有一个push.default](http://git-scm.com/docs/git-config)属性，其决定了`git push`操作的默认行为。在 Git 2.0之前，这个属性的默认被设为'matching'，2.0之后则被更改为了'simple'。
 
 **push.default** 有以下几个可选值：
 nothing, current, upstream, simple, matching
@@ -448,8 +441,8 @@ git tag <name>
 用 -a （译注：取 annotated 的首字母）指定标签名字即可
 -m 选项则指定了对应的标签说明，Git 会将此说明一同保存在标签对象中)
 
-用PGP签名标签
-git tag -s <tagname> -m "blablabla..."
+用 PGP 签名标签
+`git tag -s <tagname> -m "blablabla..."`
 
 查看相应标签的版本信息
 
@@ -459,7 +452,7 @@ git show <tagname>
 
 举例：
 
-```
+```sh
 $ git show v0.9
 commit 622493706ab447b6bb37e4e2a2f276a20fed2ab4
 Author: Brian
@@ -471,6 +464,12 @@ Date:   Thu Aug 22 11:22:08 2013 +0800
 
 ```sh
 git push origin [tagname]
+```
+
+相当于
+
+```sh
+git push origin refs/tags/源标签名:refs/tags/目的标签名
 ```
 
 推送所有本地新增的标签
@@ -497,6 +496,8 @@ git push origin :refs/tags/<tagname>
 git push origin :<tagname>
 ```
 
+在 Git v1.7.0 之后，可以使用这种语法删除远程标签：`git push origin --delete tag 标签名`
+
 举例
 
 ```sh
@@ -504,8 +505,12 @@ git tag -d v0.9
 git push origin :refs/tags/v0.9
 ```
 
-## git同步远程已删除的分支
+## git 同步远程已删除的分支
 
-使用 git remote show origin 进行分析
+使用 `git remote show origin` 进行分析
 
-使用 git remote prune origin 或者 git fetch origin -p / --prune 去删除冗余分支。
+或者可以一键去除冗余分支
+
+```sh
+git remote prune origin 或者 git fetch origin -p / --prune
+```

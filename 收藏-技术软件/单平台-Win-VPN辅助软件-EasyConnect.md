@@ -13,7 +13,7 @@ M7.1 之后版本： [https://IP/com/EasyConnectInstaller.exe](https://ip/com/E
 
 ![图 ec 录入用户名和密码](./imgs/教程---EasyConnect-的使用/图ec录入用户名和密码.png)
 
-## 问题：EasyConnect虚拟IP地址未分配
+## 问题：EasyConnect 虚拟 IP 地址未分配
 
 1、计算机管理-设备管理-网络适配器中检查虚拟网卡是否安装成功
 
