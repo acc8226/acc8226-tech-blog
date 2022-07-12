@@ -6,7 +6,7 @@ telnet 是 windows 标准服务，可以直接用；如果是 linux 机器，需
 
 用法: telnet ip地址/域名 port
 
-### 使用ssh判断
+### 使用 ssh 判断
 
 ssh 是 linux的标准配置并且最常用，可以用来判断端口吗？
 
