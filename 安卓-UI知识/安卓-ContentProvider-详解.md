@@ -1,6 +1,6 @@
-![](http://upload-images.jianshu.io/upload_images/1662509-f8cab03b7b97cf73.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](./imgs/%E5%AE%89%E5%8D%93-ContentProvider-%E8%AF%A6%E8%A7%A3/1.png)
 
-##### 构建content URI
+## 构建content URI
 
 ```java
 public class TaskContract {
@@ -61,7 +61,7 @@ public class TaskContract {
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-92baccbc411c61b8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-##### 构建URiMatcher
+## 构建URiMatcher
 
 1. 为多行和单行数据定义final整型常量
 2. 为完整的UriMatcher声明静态全局变量
@@ -159,11 +159,11 @@ public class TaskContentProvider extends ContentProvider {
 }
 ```
 
-##### 数据库解析流程
+## 数据库解析流程
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-d7d19e65f06a95ee.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-**insert**
+insert
 
 ```java
 // Implement insert to handle requests to insert a single new row of data

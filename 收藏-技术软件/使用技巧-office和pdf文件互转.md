@@ -45,8 +45,10 @@ wkhtmltopdf，生成的 pdf 有目录。比直接打印网页强。
 
 ## markdown 转为 word
 
-1. 编辑器导出，例如使用 typora。
+1. 编辑器导出，例如使用 typora。该软件默认预设了多种主题，然后界面支持多语言。多级标题也能完美展示。
 2. 借助 pandoc 命令行工具。 `pandoc -s MANUAL.txt -o example29.docx`
+
+下载 pandoc 的地址 <https://github.com/jgm/pandoc/releases>
 
 ## markdown 转为 pdf
 
