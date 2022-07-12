@@ -12,11 +12,11 @@
 ### String
 
 可从应用或从其他资源文件（如 XML 布局）引用的单个字符串。
-> 注：字符串是一种使用 name 属性（并非 XML 文件的名称）中提供的值进行引用的简单资源。 因此，您可以在一个 XML 文件中将字符串资源与其他简单资源合并在一起，放在 <resources> 元素之下。
+> 注：字符串是一种使用 name 属性（并非 XML 文件的名称）中提供的值进行引用的简单资源。 因此，您可以在一个 XML 文件中将字符串资源与其他简单资源合并在一起，放在 `<resources>` 元素之下。
 
 * 文件位置：
   res/values/*filename*.xml
-  filename 是任意值。<string>
+  filename 是任意值。`<string>`
 * 元素的 name
  将用作资源 ID。
 * 编译的资源数据类型：
@@ -67,7 +67,7 @@
 
 不要被某些事实误导，比如 two 听起来只能应用于数量 2：某种语言可能规定，2、12、102（等等）均相同对待，但与其他数量则区分对待。 可以依靠翻译人员来了解他们的语言实际的区分要求。
 
-通常可以利用“Books: 1”之类的数量中性表示来避免使用数量字符串。 如果这是一种符合您的应用需要的样式，就能减轻您和翻译人员的工作负荷。
+通常可以利用 “Books: 1” 之类的数量中性表示来避免使用数量字符串。 如果这是一种符合您的应用需要的样式，就能减轻您和翻译人员的工作负荷。
 > 注：Plurals 集合是一种使用 name 属性（并非 XML 文件的名称）中提供的值进行引用的简单资源。 因此，您可以在一个 XML 文件中将 plurals 资源与其他简单资源合并在一起，放在 <resources> 元素之下。
 
 语法：
@@ -84,7 +84,7 @@
 </resources>
 ```
 
-quantity关键字。表示应在何时使用该字符串的值。以下是其有效值，括号内的示例并不详尽：
+quantity 关键字。表示应在何时使用该字符串的值。以下是其有效值，括号内的示例并不详尽：
 
 值|说明
 :---:|---
@@ -127,7 +127,7 @@ String songsFound = res.getQuantityString(R.plurals.numberOfSongsAvailable, coun
 
 关于如何正确设置字符串资源的格式和样式，您应该了解下面这几个要点。
 
-##### 转义撇号和引号
+#### 转义撇号和引号
 
 如果字符串中包含撇号 (')，您必须用反斜杠 (\') 将其转义，或为字符串加上双引号 ("")。 例如，以下是一些有效和无效的字符串：
 
@@ -175,7 +175,8 @@ String songsFound = res.getQuantityString(R.plurals.numberOfSongsAvailable, coun
 
 有时，您可能想让自己创建的带样式文本资源同时也用作格式字符串。 正常情况下，这是行不通的，因为 [String.format(String, Object...)
 ](http://developer.android.youdaxue.com/reference/java/lang/String.html#format(java.lang.String,java.lang.Object...)) 方法会去除字符串中的所有样式信息。 这个问题的解决方法是编写带转义实体的 HTML 标记，在完成格式设置后，这些实体可通过 [fromHtml(String)](http://developer.android.youdaxue.com/reference/android/text/Html.html#fromHtml(java.lang.String)) 恢复。 例如：
-1. 将您带样式的文本资源存储为 HTML 转义字符串：
+
+1\. 将您带样式的文本资源存储为 HTML 转义字符串：
 
 ```xml
 <resources>
@@ -184,7 +185,7 @@ String songsFound = res.getQuantityString(R.plurals.numberOfSongsAvailable, coun
 ```
 
 在这个带格式的字符串中，添加了` <b> `元素。请注意，开括号使用` &lt; ` 表示法进行了 HTML 转义。
-2. 然后照常设置字符串格式，但还要调用 fromHtml(String) 以将 HTML 文本转换成带样式文本：
+2\. 然后照常设置字符串格式，但还要调用 fromHtml(String) 以将 HTML 文本转换成带样式文本：
 
 ``` java
 Resources res = getResources();

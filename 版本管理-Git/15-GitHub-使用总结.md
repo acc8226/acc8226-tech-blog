@@ -105,7 +105,7 @@ git config --global url."https://github.com/".insteadOf git://github.com/
 ### 代码推送成功 github不显示小绿格（贡献度）
 
 原因
-github邮箱和git bush邮箱不一致
+github 邮箱和 git push 邮箱不一致
 
 解决方案
 单项目设置 git config user.email “你的邮件地址”
@@ -115,5 +115,5 @@ github邮箱和git bush邮箱不一致
 
 ## 参考
 
-浅谈 GIT 中的 Fork_撕裂石头的博客-CSDN 博客_git中的 fork
+浅谈 GIT 中的 Fork_撕裂石头的博客-CSDN 博客_git 中的 fork
 <https://blog.csdn.net/qq_29947967/article/details/80519113>

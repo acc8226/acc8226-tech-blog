@@ -2,9 +2,9 @@
 
 ## measure 的过程
 
-measure过程要分情况来看，如果只是一个原始的View，那么通过measure方法就完成了其测量过程，如果是一个ViewGroup，除了完成自己的测量过程外，还会遍历去调用所有子元素的measure方法，各个子元素再递归去执行这个流程，下面针对这两种情况分别讨论。
+measure 过程要分情况来看，如果只是一个原始的View，那么通过measure方法就完成了其测量过程，如果是一个ViewGroup，除了完成自己的测量过程外，还会遍历去调用所有子元素的measure方法，各个子元素再递归去执行这个流程，下面针对这两种情况分别讨论。
 
-1. View的measure过程View的measure过程由其measure方法来完成，**measure方法是一个final类型的方法**，这意味着子类不能重写此方法，在View的measure方法中会去**调用View的onMeasure方法**，因此只需要看onMeasure的实现即可，View的onMeasure方法如下所示。
+1. View 的 measure过程 View 的 measure 过程由其 measure 方法来完成，**measure方法是一个final类型的方法**，这意味着子类不能重写此方法，在 View的 measure 方法中会去**调用View的onMeasure方法**，因此只需要看onMeasure 的实现即可，View 的 onMeasure 方法如下所示。
 
 ```java
  /**
@@ -35,7 +35,7 @@ measure过程要分情况来看，如果只是一个原始的View，那么通过
     }
 ```
 
-setMeasuredDimension方法会设置View宽/高的测量值，因此我们只需要看View.getDefaultSize这个静态方法即可：
+setMeasuredDimension 方法会设置 View 宽/高的测量值，因此我们只需要看 View.getDefaultSize 这个静态方法即可：
 
 ```java
     /**
@@ -65,9 +65,9 @@ setMeasuredDimension方法会设置View宽/高的测量值，因此我们只需�
     }
 ```
 
-可以看出，getDefaultSize这个方法的逻辑很简单，对于我们来说，我们只需要看AT_MOST和.EXACTLY这两种情况。**简单地理解，其实getDefaultSize返回的大小就是measureSpec中的specSize**，而这个specSize就是View测量后的大小，这里多次提到**测量后的大小**，是因为View最终的大小是在layout阶段确定的，所以这里必须要加以区分，但是几乎所有情况下View的测量大小和最终大小是相等的。
+可以看出，getDefaultSize 这个方法的逻辑很简单，对于我们来说，我们只需要看 AT_MOST 和 EXACTLY 这两种情况。**简单地理解，其实getDefaultSize返回的大小就是measureSpec中的specSize**，而这个specSize就是View测量后的大小，这里多次提到**测量后的大小**，是因为View最终的大小是在layout阶段确定的，所以这里必须要加以区分，但是几乎所有情况下View的测量大小和最终大小是相等的。
 
-至于UNSPECIFIED这种情况，一般用于系统内部的测量过程，在这种情况下，View的大小为getDefaultSize的第一个参数size，即宽/高分别为getSuggestedMinimumWidth和getSuggestedMinimumHeight这两个方法的返回值，看一下它们的源码：
+至于UNSPECIFIED这种情况，一般用于系统内部的测量过程，在这种情况下，View的大小为getDefaultSize的第一个参数size，即宽/高分别为 getSuggestedMinimumWidth 和 getSuggestedMinimumHeight 这两个方法的返回值，看一下它们的源码：
 
 ```java
     /**
@@ -86,7 +86,7 @@ setMeasuredDimension方法会设置View宽/高的测量值，因此我们只需�
     }
 ```
 
-这里只分析getSuggestedMinimumWidth方法的实现，getSuggestedMinimumHeight和它的实现原理是一样的。从getSuggestedMinimumWidth的代码可以看出，如果View没有设置背景，那么View的宽度为mMinWidth，而mMinWidth对应于android:minWidth这个属性所指定的值，因此View的宽度即为android:minWidth属性所指定的值。这个属性如果不指定，那么mMinWidth则默认为0；如果View指定了背景，则View的宽度为max(mMinWidth,mBackground.getMinimumWidth())。mMinWidth的含义我们已经知道了，那么mBackground.getMinimumWidth()是什么呢？我们看一下Drawable的getMinimumWidth方法，如下所示。
+这里只分析 getSuggestedMinimumWidth 方法的实现，getSuggestedMinimumHeight 和它的实现原理是一样的。从getSuggestedMinimumWidth 的代码可以看出，如果View没有设置背景，那么 View 的宽度为 mMinWidth，而mMinWidth对应于 android:minWidth 这个属性所指定的值，因此View的宽度即为 android:minWidth 属性所指定的值。这个属性如果不指定，那么 mMinWidth则默认为 0；如果 View 指定了背景，则View的宽度为max(mMinWidth,mBackground.getMinimumWidth())。mMinWidth 的含义我们已经知道了，那么mBackground.getMinimumWidth()是什么呢？我们看一下Drawable的getMinimumWidth方法，如下所示。
 
 ```java
 public abstract class Drawable {
@@ -110,9 +110,9 @@ public abstract class Drawable {
 }
 ```
 
-可以看出，getMinimumWidth返回的就是Drawable的原始宽度，前提是这个Drawable有原始宽度，否则就返回0。那么Drawable在什么情况下有原始宽度呢？这里先举个例子说明一下，ShapeDrawable无原始宽/高，而BitmapDrawable有原始宽/高（图片的尺寸），详细内容会在第6章进行介绍。
+可以看出，getMinimumWidth 返回的就是 Drawable 的原始宽度，前提是这个 Drawable 有原始宽度，否则就返回0。那么Drawable在什么情况下有原始宽度呢？这里先举个例子说明一下，ShapeDrawable 无原始宽/高，而BitmapDrawable有原始宽/高（图片的尺寸），详细内容会在第6章进行介绍。
 
-这里再总结一下getSuggestedMinimumWidth的逻辑：如果View没有设置背景，那么返回android:minWidth这个属性所指定的值，这个值可以为0；如果View设置了背景，则返回android:minWidth和背景的最小宽度这两者中的最大值，getSuggestedMinimumWidth和getSuggestedMinimumHeight的返回值就是View在UNSPECIFIED情况下的测量宽/高。
+这里再总结一下 getSuggestedMinimumWidth 的逻辑：如果View没有设置背景，那么返回android:minWidth这个属性所指定的值，这个值可以为0；如果View设置了背景，则返回android:minWidth和背景的最小宽度这两者中的最大值，getSuggestedMinimumWidth 和 getSuggestedMinimumHeight 的返回值就是View在UNSPECIFIED情况下的测量宽/高。
 
 从getDefaultSize方法的实现来看，View的宽/高由specSize决定，所以我们可以得出如下结论：**直接继承View的自定义控件需要重写`onMeasure`方法并设置wrap_content时的自身大小，否则在布局中使用wrap_content就相当于使用match_parent**。为什么呢？这个原因需要结合上述代码和表1才能更好地理解。从上述代码中我们知道，如果View在布局中使用wrap_content，那么它的specMode是AT_MOST模式，在这种模式下，它的宽/高等于specSize；查表4-1可知，这种情况下View的specSize是parentSize，而parentSize是父容器中目前可以使用的大小，也就是父容器当前剩余的空间大小。很显然，View的宽/高就等于父容器当前剩余的空间大小，这种效果和在布局中使用match_parent完全一致。如何解决这个问题呢？也很简单，代码如下所示。
 
@@ -330,33 +330,39 @@ int heightMeasureSpec = View.MeasureSpec.makeMeasureSpec(100, View.MeasureSpec.E
 view.measure(widthMeasureSpec, heightMeasureSpec);
 ```
   * wrap_content如下measure：
+  
 ```java
 int widthMeasureSpec = View.MeasureSpec.makeMeasureSpec((1<<30)-1, View.MeasureSpec.AT_MOST);
 int heightMeasureSpec = View.MeasureSpec.makeMeasureSpec((1<<30)-1, View.MeasureSpec.AT_MOST);
 v_view1.measure(widthMeasureSpec, heightMeasureSpec);
 ```
+
 注意到(1 << 30)-1，通过分析MeasureSpec的实现可以知道，View的尺寸使用30位二进制表示，也就是说最大是30个1（即2^30 – 1），也就是(1 << 30) – 1，在最大化模式下，我们用View理论上能支持的最大值去构造MeasureSpec是合理的。
 
 关于View的measure，网络上有两个错误的用法。为什么说是错误的，首先其违背了系统的内部实现规范（因为无法通过错误的MeasureSpec去得出合法的SpecMode，从而导致measure过程出错），其次不能保证一定能measure出正确的结果。
 
 * 第一种错误用法：
+
 ```java
 int widthMeasureSpec = MeasureSpec.makeMeasureSpec(-1, MeasureSpec.UNSPECIFIED);
 int heightMeasureSpec = MeasureSpec.makeMeasureSpec(-1, MeasureSpec.UNSPECIFIED);
 view.measure(widthMeasureSpec, heightMeasureSpec);
 ```
+
 * 第二种错误用法
+
 ```java
 view.measure(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT)
 ```
 
 ## layout 的过程
 
-> Layout 的作用是ViewGroup用来确定子元素的位置，当ViewGroup的位置被确定后，它在onLayout中会遍历所有的子元素并调用其layout方法，在layout方法中onLayout方法又会被调用。Layout过程和measure过程相比就简单多了，layout方法确定View本身的位置，而onLayout方法则会确定所有子元素的位置，先看View的layout方法。
+> Layout 的作用是 ViewGroup 用来确定子元素的位置，当ViewGroup的位置被确定后，它在onLayout中会遍历所有的子元素并调用其 layout 方法，在layout方法中onLayout方法又会被调用。Layout过程和measure过程相比就简单多了，layout方法确定 View本身的位置，而onLayout方法则会确定所有子元素的位置，先看View的layout方法。
 
 ## draw 的过程
 
-Draw过程就比较简单了，它的作用是将View绘制到屏幕上面。View的绘制过程遵循如下几步：
+Draw 过程就比较简单了，它的作用是将View绘制到屏幕上面。View的绘制过程遵循如下几步：
+
 1. 绘制背景background.draw(canvas)。
 2. 绘制自己（onDraw）。
 3. 绘制children（dispatchDraw）。

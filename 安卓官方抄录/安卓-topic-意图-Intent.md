@@ -12,7 +12,7 @@ Intent 分为两种类型：
 * 隐式 Intent ：不会指定特定的组件，而是声明要执行的常规操作，从而允许其他应用中的组件来处理它。 例如，如需在地图上向用户显示位置，则可以使用隐式 Intent，请求另一具有此功能的应用在地图上显示指定的位置。
 
 [图片上传失败...(image-976dbc-1640352429584)]
-，并将其传递给 [startActivity()](http://developer.android.youdaxue.com/reference/android/content/Context.html#startActivity(android.content.Intent))。**[2]**Android 系统搜索所有应用中与 Intent 匹配的 Intent 过滤器。** 找到匹配项之后，**[3]** 该系统通过调用匹配 Activity（Activity B）的 [onCreate()](http://developer.android.youdaxue.com/reference/android/app/Activity.html#onCreate(android.os.Bundle)) 方法并将其传递给 [Intent](http://developer.android.youdaxue.com/reference/android/content/Intent.html)，以此启动匹配 Activity](http://upload-images.jianshu.io/upload_images/1662509-6496761370a9e66c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+，并将其传递给 [startActivity()](http://developer.android.youdaxue.com/reference/android/content/Context.html#startActivity(android.content.Intent))。**[2]**Android 系统搜索所有应用中与 Intent 匹配的 Intent 过滤器。找到匹配项之后，**[3]** 该系统通过调用匹配 Activity（Activity B）的 [onCreate()](http://developer.android.youdaxue.com/reference/android/app/Activity.html#onCreate(android.os.Bundle)) 方法并将其传递给 [Intent](http://developer.android.youdaxue.com/reference/android/content/Intent.html)，以此启动匹配 Activity](http://upload-images.jianshu.io/upload_images/1662509-6496761370a9e66c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 > **注意：**为了确保应用的安全性，启动 [Service](http://developer.android.youdaxue.com/reference/android/app/Service.html)
  时，请始终使用显式 Intent，且不要为服务声明 Intent 过滤器。使用隐式 Intent 启动服务存在安全隐患，因为您无法确定哪些服务将响应 Intent，且用户无法看到哪些服务已启动。从 Android 5.0（API 级别 21）开始，如果使用隐式 Intent 调用 [bindService()](http://developer.android.youdaxue.com/reference/android/content/Context.html#bindService(android.content.Intent, android.content.ServiceConnection, int))，系统会引发异常。
@@ -100,7 +100,7 @@ if (sendIntent.resolveActivity(getPackageManager()) != null) {
 
 下文根据如何在应用的清单文件中声明 Intent 过滤器，描述 Intent 如何与相应的组件匹配。
 
-##### Intent 匹配
+#### Intent 匹配
 
 通过 Intent 过滤器匹配 Intent，这不仅有助于发现要激活的目标组件，还有助于发现设备上组件集的相关信息。 例如，主页应用通过使用指定[ACTION_MAIN](http://developer.android.youdaxue.com/reference/android/content/Intent.html#ACTION_MAIN) 操作和 [CATEGORY_LAUNCHER](http://developer.android.youdaxue.com/reference/android/content/Intent.html#CATEGORY_LAUNCHER) 类别的 Intent 过滤器查找所有 Activity，以此填充应用启动器。
 

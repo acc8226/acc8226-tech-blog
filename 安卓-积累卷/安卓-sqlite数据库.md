@@ -1,6 +1,6 @@
-* 创建Entry的内部类, 该类实现BaseColumns
-* tableName定义常量字符串
-* 为table的每一项什么常量字符串
+* 创建 Entry 的内部类, 该类实现 BaseColumns
+* tableName 定义常量字符串
+* 为 table 的每一项什么常量字符串
 
 ```java
 package com.example.android.waitlist.data;

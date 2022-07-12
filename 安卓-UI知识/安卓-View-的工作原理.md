@@ -1,6 +1,6 @@
 > 在Android的知识体系中，View扮演着很重要的角色，简单来理解，View 是 Android 在视觉上的呈现。在界面上 Android 提供了一套 GUI库，里面有很多控件，但是很多时候我们并不满足于系统提供的控件，因为这样就意味这应用界面的同类化比较严重。那么怎么才能做出与众不同的效果呢？答案是自定义 View，也可以叫自定义控件，通过自定义 View 我们可以实现各种五花八门的效果。但是自定义 View 是有一定难度的，尤其是复杂的自定义View，大部分时候我们仅仅了解基本控件的使用方法是无法做出复杂的自定义控件的。为了更好地自定义 View，还需要掌握 View 的底层工作原理，比如View的测量流程、布局流程以及绘制流程，掌握这几个基本流程后，我们就对 View 的底层更加了解，这样我们就可以做出一个比较完善的自定义 View。
 
-### 初识 ViewRoot 和 DecorView
+## 初识 ViewRoot 和 DecorView
 
 在正式介绍 View 的三大流程之前，我们必须先介绍一些基本概念，这样才能更好地理解View的measure、layout和draw过程，本节主要介绍 ViewRoot 和 DecorView 的概念。
 
@@ -23,11 +23,11 @@ measure过程决定了View的宽/高，Measure完成以后，可以通过**getMe
 
 ![图2  顶级View：DecorView的结构](http://upload-images.jianshu.io/upload_images/1662509-3fafb554334992c2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-### 2 理解MeasureSpec
+## 2 理解MeasureSpec
 
 为了更好地理解View的测量过程，我们还需要理解MeasureSpec。从名字上来看，MeasureSpec看起来像“测量规格”或者“测量说明书”，不管怎么翻译，它看起来都好像是或多或少地决定了View的测量过程。通过源码可以发现，MeasureSpec的确参与了View的measure过程。读者可能有疑问，MeasureSpec是干什么的呢？确切来说，**MeasureSpec在很大程度上决定了一个View的尺寸规格**，之所以说是很大程度上是因为**这个过程还受父容器的影响**，因为父容器影响View的MeasureSpec的创建过程。在测量过程中，**系统会将View的LayoutParams根据父容器所施加的规则转换成对应的MeasureSpec**，然后再根据这个measureSpec来测量出View的宽/高。上面提到过，这里的宽/高是测量宽/高，不一定等于View的最终宽/高。Mea-sureSpec看起来有点复杂，其实它的实现是很简单的，下面会详细地分析MeasureSpec。
 
-#### 2.1 MeasureSpec
+### 2.1 MeasureSpec
 
 MeasureSpec代表一个32位int值，高2位代表Spec-Mode，低30位代表SpecSize，SpecMode是指测量模式，而SpecSize是指在某种测量模式下的规格大小。下面先看一下MeasureSpec内部的一些常量的定义，通过下面的代码，应该不难理解 MeasureSpec 的工作原理：
 
@@ -97,7 +97,7 @@ SpecMode有三类，每一类都表示特殊的含义，如下所示。
 * EXACTLY 父容器已经检测出View所需要的精确大小，这个时候View的最终大小就是SpecSize所指定的值。它对应于LayoutParams中的match_parent和具体的数值这两种模式。
 * AT_MOST 父容器指定了一个可用大小即SpecSize，View的大小不能大于这个值，具体是什么值要看不同View的具体实现。它对应于LayoutParams中的wrap_content。
 
-#### 2.2　MeasureSpec和LayoutParams的对应关系
+### 2.2　MeasureSpec和LayoutParams的对应关系
 
 上面提到，系统内部是通过MeasureSpec来进行View的测量，但是正常情况下我们使用View指定MeasureSpec，尽管如此，但是我们可以给View设置LayoutParams。在View测量的时候，**系统会将LayoutParams在父容器的约束下转换成对应的MeasureSpec**，然后再根据这个MeasureSpec来确定View测量后的宽/高。需要注意的是，MeasureSpec不是唯一由LayoutParams决定的，LayoutParams需要和父容器一起才能决定View的MeasureSpec，从而进一步决定View的宽/高。另外，对于顶级View（即DecorView）和普通View来说，MeasureSpec的转换过程略有不同。对于DecorView，其MeasureSpec由窗口的尺寸和其自身的LayoutParams来共同确定；对于普通View，其MeasureSpec由父容器的MeasureSpec和自身的LayoutParams来共同决定，MeasureSpec一旦确定后，onMeasure中就可以确定View的测量宽/高。
 

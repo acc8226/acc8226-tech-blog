@@ -6,7 +6,7 @@
 
 **docsify.min.js 压缩版**
 <https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js>
-最新所在文件夹 https://cdn.jsdelivr.net/npm/docsify/lib/
+最新所在文件夹 <https://cdn.jsdelivr.net/npm/docsify/lib/>
 
 **vue.css 完整版**
 <https://cdn.jsdelivr.net/npm/docsify/themes/vue.css>

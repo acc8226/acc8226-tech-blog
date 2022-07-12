@@ -6,9 +6,10 @@
 > 确保启用 Discover USB devices 复选框。
 使用 USB 电缆将 Android 设备直接连接到您的开发计算机。 首次连接时，通常会看到 DevTools 检测到未知设备。 如果您 Android 设备的型号名称下显示绿色圆点和 Connected 文本，则表示 DevTools 已与您的设备成功建立连接
 
-![](https://upload-images.jianshu.io/upload_images/1662509-252ce0d31bb926d7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![dev tools](./imgs/Android-%E8%AE%BE%E5%A4%87%E4%BD%BF%E7%94%A8-chrome%E8%BF%9C%E7%A8%8B%E8%B0%83%E8%AF%95/dev%20tools.png)
 
 ## 远程调试 WebView
+
 使用 Chrome 开发者工具在您的原生 Android 应用中调试 WebView。
 在 Android 4.4 (KitKat) 或更高版本中，使用 DevTools 可以在原生 Android 应用中调试 WebView 内容。
 
@@ -41,6 +42,7 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
 chrome://inspect, 页面将显示您的设备上已启用调试的 WebView 列表。
 
 要开始调试，请点击您想要调试的 WebView 下方的 inspect。像使用远程浏览器标签一样使用 DevTools。
-![](https://upload-images.jianshu.io/upload_images/1662509-e501fcb32b17222f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![inspect with chrome](./imgs/Android-%E8%AE%BE%E5%A4%87%E4%BD%BF%E7%94%A8-chrome%E8%BF%9C%E7%A8%8B%E8%B0%83%E8%AF%95/inspect%20with%20chrome.png)
 
 与 WebView 一起列示的灰色图形表示 WebView 的大小和相对于设备屏幕的位置。如果您的 WebView 已设置标题，标题也会一起显示。

@@ -22,7 +22,7 @@ Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 [Markdown](
 npm install hexo-cli -g
 ```
 
-**1. 建立网站**
+### 建立网站
 
 ```sh
 # 新建一个网站。如果没有设置 folder ，Hexo 默认在目前的文件夹建立网站。
@@ -31,7 +31,7 @@ $ cd <folder>
 $ npm install
 ```
 
-**2. 启动服务器**
+### 启动服务器
 
 `hexo s` 或 `hexo server`
 
@@ -56,7 +56,6 @@ $ npm install
 
 **独立的 _config.[theme].yml 文件**
 > 该特性自 Hexo 5.0.0 起提供
-
 > **我们强烈建议你将所有的主题配置集中在一处**。如果你不得不在多处配置你的主题，那么这些信息对你将会非常有用：Hexo 在合并主题配置时，Hexo 配置文件中的 `theme_config` 的优先级最高，其次是 `_config.[theme].yml` 文件，最后是位于主题目录下的 `_config.yml` 文件。
 >
 > 顺序: `theme_config` > `_config.[theme].yml` > 主题目录下的`_config.yml`

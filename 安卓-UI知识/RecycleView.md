@@ -1,6 +1,6 @@
-ItemTouchHelper 用法:
+## ItemTouchHelper 用法
 
-``` java
+```java
         // COMPLETED (3) Create a new ItemTouchHelper with a SimpleCallback that handles both LEFT and RIGHT swipe directions
         // Create an item touch helper to handle swiping items off the list
         new ItemTouchHelper(new ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT) {

@@ -24,9 +24,23 @@ pandoc --reference-doc myColumns.docx -o abc2.docx abc.md
 
 官网介绍 abc.md 改成 xxx 也是可以的。所以说这个没有限制。只要源文件存在。
 
+批量处理 bat 脚本
+
+```bat
+@echo off
+:: 遍历当前文件夹下的所有后缀名为md的文件
+for /f %%a in ('dir /b *.md') do (
+    :: 执行pandoc命令，把每个md文件都转为docx文件，docx文件的文件名为：md文件名.md.docx
+    pandoc %%a -o %%a.docx
+)
+pause
+```
+
 ## 导出为 pdf 文件
 
 对 windows 环境而言，光使用 pandoc 还不够，还得安装插件，所以这里更建议使用 typora。
+
+或者可以采取迂回战术，按照 md->HTML->PDF 的路径或者md->word->PDF 的路径转。
 
 ## 发布为 ppt 文件
 

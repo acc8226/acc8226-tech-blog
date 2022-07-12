@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>15-GitHub-使用总结</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="abc.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h2 id="使用-ssh-连接-git-仓库">使用 ssh 连接 git 仓库</h2>
+<p>生成 ssh 密钥</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh-keygen</span> <span class="at">-t</span> rsa <span class="at">-C</span> <span class="st">&quot;你的邮箱地址&quot;</span></span></code></pre></div>
+<p>验证是否可正常访问</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh</span> <span class="at">-T</span> git@github.com</span></code></pre></div>
+<h2 id="github-中的-fork-工作流程">GitHub 中的 Fork 工作流程</h2>
+<p>fork 的两种主要工作流程：</p>
+<p>1. fork 并且更新一个仓库</p>
+<figure>
+<img
+src="./imgs/15-GitHub-%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/fork1.png"
+alt="fork1" />
+<figcaption aria-hidden="true">fork1</figcaption>
+</figure>
+<p>2. 同步一个 fork</p>
+<p>Joe
+和其余贡献者已经对这个项目做了一些修改，而你将在他们的修改的基础上，还要再做一些修改。在你开始之前，你最好”同步你的
+fork”，以确保在最新的复制版本里工作。下面是你要做的：</p>
+<figure>
+<img
+src="./imgs/15-GitHub-%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/fork2.png"
+alt="fork2" />
+<figcaption aria-hidden="true">fork2</figcaption>
+</figure>
+<p>3. 比较一下 fork 和同步工作流程的区别</p>
+<p>当你最初 fork 一个仓库的时候，信息的流向是从 Joe
+的仓库到你的仓库，然后再到你本地计算机。但是最初的过程之后，信息的流向是从
+Joe 的仓库到你的本地计算机，之后再到你的仓库。</p>
+<h2 id="我对-fork-的理解">我对 fork 的理解</h2>
+<h3 id="git-fork-项目更新原则">git fork 项目更新原则</h3>
+<p>为保证 master 分支纯净，自己只在特性分支进行二次开发</p>
+<p>1. 配置当前 fork 的仓库的原仓库地址</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add upstream <span class="op">&lt;</span>原仓库git地址<span class="op">&gt;</span></span></code></pre></div>
+<p>2. 查看当前仓库的所有地址</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote <span class="at">-v</span></span></code></pre></div>
+<p>3. 使用 fetch 更新对于仓库</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> fetch upstream</span></code></pre></div>
+<p>4. 切换到 master 分支，合并 upstream/master 分支到本地 master</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> merge upstream/master</span></code></pre></div>
+<p>5. 如果需要自己 github 上的 fork 仓库保持同步更新，则执行 git push
+操作</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin master</span></code></pre></div>
+<h3 id="我的操作">我的操作</h3>
+<ol type="1">
+<li>下载源码
+<code>git clone -o gitee https://gitee.com/mirrors/ThingsBoard.git</code></li>
+<li>添加仓库地址
+<code>git remote add origin &lt;原仓库git地址&gt;</code></li>
+<li>将 master 的追踪分支从 gitee/master 切换到 origin/master</li>
+<li>git push 即可推送本地 master 到 origin 的 master 分支</li>
+</ol>
+<h2 id="遇到过的问题">遇到过的问题</h2>
+<h3
+id="git---failed-to-connect-to-github.com-port-443-timed-out-访问超时的解决方案">Git
+- Failed to connect to github.com port 443: Timed out
+访问超时的解决方案</h3>
+<p>1. 访问 <a
+href="https://www.ipaddress.com/">https://www.ipaddress.com/</a>
+网址查询下面所需的地址对应的 IP，输入 hostname 或 domain 查询，比如查询
+github.com 的 IP。</p>
+<p>2. 修改 hosts 文件，在
+<code>C:\Windows\System32\drivers\etc\hosts</code> 中添加单条记录</p>
+<pre class="host"><code>140.82.114.3 github.com</code></pre>
+<p>3. 刷新 DNS 缓存</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">ipconfig</span> /flushdns</span></code></pre></div>
+<h3
+id="the-unauthenticated-git-protocol-on-port-9418-is-no-longer-supported-解决方案">The
+unauthenticated git protocol on port 9418 is no longer supported
+解决方案</h3>
+<p>由于存在安全问题，git 协议 on 9418 端口不再提供支持，目前官网只提供
+https 方式或者 ssh 方式。</p>
+<p>方法一：手动去该项目地址的 github 网址，改成 https 方式或者 ssh
+方式其中一种。 方法二：全局替换</p>
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode sh"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> url.<span class="st">&quot;https://github.com/&quot;</span>.insteadOf git://github.com/</span></code></pre></div>
+<h3 id="代码推送成功-github不显示小绿格贡献度">代码推送成功
+github不显示小绿格（贡献度）</h3>
+<p>原因 github邮箱和git bush邮箱不一致</p>
+<p>解决方案 单项目设置 git config user.email “你的邮件地址” 或全局设置
+git config –global user.email “你的邮件地址”</p>
+<p>注：gitee 平台也是此类原因。</p>
+<h2 id="参考">参考</h2>
+<p>浅谈 GIT 中的 Fork_撕裂石头的博客-CSDN 博客_git中的 fork <a
+href="https://blog.csdn.net/qq_29947967/article/details/80519113"
+class="uri">https://blog.csdn.net/qq_29947967/article/details/80519113</a></p>
+</body>
+</html>

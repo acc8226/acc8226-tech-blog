@@ -55,22 +55,22 @@
 
 ```java
 public class MyApplication extends Application {
-	@Override
-	public void onCreate() {
-		super.onCreate();
-		if (LeakCanary.isInAnalyzerProcess(this)) {
-			// This process is dedicated to LeakCanary for heap analysis.
-			// You should not init your app in this process.
-			return;
-		}
-		LeakCanary.install(this);
-	}
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        if (LeakCanary.isInAnalyzerProcess(this)) {
+            // This process is dedicated to LeakCanary for heap analysis.
+            // You should not init your app in this process.
+            return;
+        }
+        LeakCanary.install(this);
+    }
 }
 ```
 
 ## 三、感谢
 
-* 感谢 [Square](https://github.com/square) 公司 提供的 [Leakcanary](https://github.com/square/leakcanary)。
+* 感谢 [Square](https://github.com/square) 提供的 [Leakcanary](https://github.com/square/leakcanary)。
 * 版权声明：本文为 cekiasoo 原创文章，转载请务必注明[出处](http://blog.csdn.net/cekiasoo/article/details/70880740)！
-* [Leakcanary-eclipse 传送门 ](https://github.com/cekiasoo/Leakcanary-eclipse)
+* [Leakcanary-eclipse 传送门](https://github.com/cekiasoo/Leakcanary-eclipse)
 目前是根据 Leakcanary 1.5.1 的版本进行转化的

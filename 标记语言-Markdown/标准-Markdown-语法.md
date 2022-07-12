@@ -54,7 +54,7 @@ As Kanye West said:
 
 ## 列表(LISTS)
 
-**无序列表(Unordered)**
+### 无序列表(Unordered)
 
 ```text
 * Item 1
@@ -70,7 +70,7 @@ As Kanye West said:
   + Item 2a
   + Item 2b
 
-**有序列表(Ordered):**
+### 有序列表(Ordered)
 
 ```md
 1. 这是一个有序列表1

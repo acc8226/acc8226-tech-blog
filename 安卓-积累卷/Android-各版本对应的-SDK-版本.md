@@ -1,16 +1,21 @@
 ## SDK
 
-Android 开发所需的 SDK，下载并解压后，将解压出的整个文件夹复制或者移动到 your sdk 路径/platforms文件夹，然后打开 SDK Manager，打开 Tools(工具)菜单选择 Options (选项)菜单项打开Android SDK Manager Setting对话框，点击 Clear Cache (清除缓存)按钮，然后重启 Eclipse(或 Android Studio) 和 SDK Manager。
+Android 开发所需的 SDK，下载并解压后，将解压出的整个文件夹复制或者移动到 your sdk 路径/platforms文件夹，然后打开 SDK Manager，打开 Tools(工具)菜单选择 Options (选项)菜单项打开 Android SDK Manager Setting 对话框，点击 Clear Cache (清除缓存)按钮，然后重启 Eclipse(或 Android Studio) 和 SDK Manager。
 
-平台版本 | SDK 版本 | 版本名称
+平台版本 | API LeveL | 版本名称
 -----| ----- | -----
-9.0 | 28  | Pie (Android P)
-8.1 | 27  | Oreo(Android O)（奥利奥）
+13 | 33  | Android 13 / Android T/ Tiramisu / 提拉米苏
+12 | 32  | S_V2 / sv2 / Snow Cone / 刨冰
+12 | 31  | Android 12 / Android S / Snow Cone / 刨冰
+11 | 30  | Android 11 / Android R / Red Velvet Cake(红丝绒蛋糕) / RVC
+10 | 29  | Android 10 / Android Q (Android 系统将直接被称为 Android 10，不再使用甜品做代号)
+9.0 | 28  | Android P (Pie)
+8.1 | 27  | Oreo_MR1(Android O)（奥利奥）
 8.0 | 26  | Oreo(Android O)（奥利奥）
-7.1 | 25  | Nougat(Android N)（牛轧糖）
+7.1 | 25  | Nougat(Android N_MR1)（牛轧糖）
 7.0 | 24 | Nougat(Android N)（牛轧糖）
 6.0 | 23 | Marshmallow(Android M)（棉花糖）
-5.1 | 22  | Lollipop(Android L)（棒棒糖）
+5.1 | 22  | LOLLIPOP_MR1(Android L)（棒棒糖）
 5.0 | 21 | Lollipop(Android L)（棒棒糖）
 4.4 | 19 | KITKAT（奇巧巧克力）
 4.3 | 18  | JELLY_BEAN_MR2
@@ -23,24 +28,12 @@ Android 开发所需的 SDK，下载并解压后，将解压出的整个文件�
 3.0.X | 11  | HONEYCOMB
 2.3.3 2.3.4 | 10 | GINGERBREAD_MR1
 
-## Android 各版本和对应 JDK 版本
-
-SDK 版本 | JDK 版本
------ | -----
-26 | -
-23 | -
-22 | 7
-21 | 7
-19 | 6
-18 | 6
-17 | 6
-16 | 6
-15 | 6
-10 | 6
-
 ## 参考
 
 信息中心  |  Android Developers
 <https://developer.android.google.cn/about/dashboards/>
 
 AndroidDevTools - Android开发工具 Android SDK下载 Android Studio下载 Gradle下载 SDK Tools下载 <https://www.androiddevtools.cn/index.html>
+
+Build.VERSION_CODES  |  Android Developers
+<https://developer.android.google.cn/reference/android/os/Build.VERSION_CODES>

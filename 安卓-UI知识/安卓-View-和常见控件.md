@@ -1,4 +1,5 @@
 ## View
+
 View.getVisibility()
 
 很显然，我们可以用 `View.getVisibility()` 来检查一个它是否处于View.VISIBLE状态。这是最基本的检查，如果连这个方法得到的返回值都是View.INVISIBLE或者View.GONE 的话，那么它对用户肯定是不可见的。

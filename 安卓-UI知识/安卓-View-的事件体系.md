@@ -19,7 +19,7 @@ Bottom = getBottom();
 
 我们很容易得出 View 的宽高和坐标的关系:
 
-```
+```text
 width = right - left;
 height = bottom -top;
 ```
@@ -27,7 +27,7 @@ height = bottom -top;
 从 Android3.0开始，View 增加了额外的几个参数； x, y, translationX 和 translationY,其中 x 和 y 是**View左上角的坐标**，而 translationX 和 translationY是View左上角**相对于父容器的偏移量**。这几个参数也是**相对于父容器的坐标**，并且translationX和 translationY的默认值是0，和View的四个基本的位置参数一样，View也为它们提供了get/set方法
 几个参数的换算关系如下所示：
 
-```
+```java
 x = left + translationX;
 y = top + translationY;
 ```
@@ -36,7 +36,7 @@ y = top + translationY;
 
 ### MotionEvent 和 TouchSlop
 
-##### MotionEvent
+#### MotionEvent
 
 在手指接触屏幕所产生的一系列事件中，典型的事件类型有以下几中：
 
@@ -70,7 +70,7 @@ TouchSlop是系统所能识别出的被认为是**滑动的最小距离**，换�
 
 ### 1.4  VelocityTracker、GestureDetector 和 Scroller
 
-##### 1.4.1 VelocityTracker
+#### 1.4.1 VelocityTracker
 
 用于追踪手指在滑动过程中的速度, 包括水平和竖直方向上的速度。使用它时，首先在View的onTouchEvent方法中追踪当前点击事件的速度：
 
@@ -90,14 +90,17 @@ TouchSlop是系统所能识别出的被认为是**滑动的最小距离**，换�
 
 最后，当不需要使用速度追踪的时候，调用clear方法来重置并回收：
 
+```java
+velocityTracker.clear();
+velocityTracker.recycle();
 ```
-     velocityTracker.clear();
-     velocityTracker.recycle();
-```
+
 ##### 1.4.2 GestureDetector
+
 用于对用户手势进行检测，辅助检测用户的单击、滑动、长按、双击等行为。
 
 使用过程：创建一个GestureDetector对象并实现OnGestureListener接口，再根据需要实现其中的方法，对用户的行为做出怎样的反应。接着，在View的onTouchEvent方法中做如下实现：
+
 ```
       boolean consume = mGestureDetector.onTouchEvent(event);
       return consume;
@@ -132,7 +135,7 @@ public void computeScroll(){
 }
 ```
 
-# 2 View的滑动
+## 2 View的滑动
 
 ### 2.1 使用View.scrollTo/scrollBy
 
@@ -474,25 +477,25 @@ Scroller的使用方法在1.4.3节中已经进行了介绍，下面我们来分�
 
 ```java
 public boolean onInterceptTouchEvent(MotionEvent event){
-	boolean intercepted = false;
-	int x = (int) event.getX();
-	int y = (int) event.getY();
+    boolean intercepted = false;
+    int x = (int) event.getX();
+    int y = (int) event.getY();
 
-	switch (event.getAction()){
-	case MotionEvent.ACTION_MOVE:{
-		if(父容器需要当前点击事件){
-			intercepted = true;
-		}
-		break;
-	}
-	default:
-		break;
+    switch (event.getAction()){
+    case MotionEvent.ACTION_MOVE:{
+        if(父容器需要当前点击事件){
+            intercepted = true;
+        }
+        break;
+    }
+    default:
+        break;
 
-	}
-	mLastXIntercept = x;
-	mLastYIntercept = y;
+    }
+    mLastXIntercept = x;
+    mLastYIntercept = y;
 
-	return intercepted;
+    return intercepted;
 
 }
 ```
@@ -503,48 +506,51 @@ public boolean onInterceptTouchEvent(MotionEvent event){
 
 2.内部拦截法
 内部拦截法是指父容器不拦截任何事件，所有的事件都传递给子元素，如果子元素需要此事件就直接消耗掉，否则就交由父容器进行处理，这种方法和Android中的事件分发机制不一致，**需要配合requestDisallowInterceptTouchEvent方法**才能正常工作，使用起来较外部拦截法稍显复杂。它的伪代码如下，我们**需要重写子元素的dispatchTouchEvent方法**：
-```
+
+```java
 public boolean dispathTouchEvent(MotionEvent event){
-	int x = (int) event.getX();
-	int y = (int) event.getY();
+    int x = (int) event.getX();
+    int y = (int) event.getY();
 
-	switch (event.getAction()){
-	case MotionEvent.ACTION_DOWN:{
-		parent.requestDisallowInterceptTouchEvent(true);
-		break;
-	}
-	case MotionEvent.ACTION_MOVE:{
-		int deltaX = x - mLastX;
-		int deltaY = y - mLastY;
-		if(父容器需要此类点击事件){
-			parent.requestDisallowInterceptTouchEvent(false)
-		}
+    switch (event.getAction()){
+    case MotionEvent.ACTION_DOWN:{
+        parent.requestDisallowInterceptTouchEvent(true);
+        break;
+    }
+    case MotionEvent.ACTION_MOVE:{
+        int deltaX = x - mLastX;
+        int deltaY = y - mLastY;
+        if(父容器需要此类点击事件){
+            parent.requestDisallowInterceptTouchEvent(false)
+        }
 
-		break;
-	}
-	case MotionEvent.ACTION_UP:{
-		break;
-	}
-	default:
-		break;
+        break;
+    }
+    case MotionEvent.ACTION_UP:{
+        break;
+    }
+    default:
+        break;
 
-	}
-	mLastX = x;
-	mLastY = y;
+    }
+    mLastX = x;
+    mLastY = y;
 
-	return super.dispatchTouchEvent(event);
+    return super.dispatchTouchEvent(event);
 }
 ```
+
 除了子元素需要做处理以外，父元素也要默认拦截除了ACTION_DOWN以外的其他事件，这样当子元素调用parent.requestDisallowInterceptTouchEvent(false)方法时，父元素才能继续拦截所需的事件。
 
 为什么父容器不能拦截ACTION_DOWN事件呢？那是因为ACTION_DOWN事件并不受FLAG_DISALLOW_INTER-CEPT这个标记位的控制，所以一旦父容器拦截ACTION_DOWN事件，那么所有的事件都无法传递到子元素中去，这样内部拦截就无法起作用了。父元素所做的修改如下所示。
-```
+
+```java
 public boolean onInterceptTouchEvent(MotionEvent event){
-	if(event.getAction() == MotionEvent.ACTION_DOWN){
-		return false;
-	}else {
-		return true;
-	}
+    if(event.getAction() == MotionEvent.ACTION_DOWN){
+        return false;
+    }else {
+        return true;
+    }
 }
 ```
 

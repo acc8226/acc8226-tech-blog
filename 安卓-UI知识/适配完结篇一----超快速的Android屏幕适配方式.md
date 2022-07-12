@@ -1,4 +1,4 @@
-由于Android碎片化严重，屏幕分辨率千奇百怪，而想要在各种分辨率的设备上显示基本一致的效果，适配成本越来越高。虽然Android官方提供了dp单位来适配，但其在各种奇怪分辨率下表现却不尽如人意，因此下面探索一种简单且低侵入的适配方式。
+由于 Android 碎片化严重，屏幕分辨率千奇百怪，而想要在各种分辨率的设备上显示基本一致的效果，适配成本越来越高。虽然 Android 官方提供了dp单位来适配，但其在各种奇怪分辨率下表现却不尽如人意，因此下面探索一种简单且低侵入的适配方式。
 
 ### 谈谈dpi 和 dp
 
@@ -13,6 +13,7 @@
 * density = dpi / 160;
 
 ### 屏幕尺寸、分辨率、像素密度三者关系
+
 通常情况下，一部手机的分辨率是宽x高，屏幕大小是以寸为单位，那么三者的关系是：
 ![](https://upload-images.jianshu.io/upload_images/1662509-482822e0dfb53d2d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -66,9 +67,9 @@ May be either DENSITY_LOW，DENSITY_MEDIUM or DENSITY_HIGH
 
 ## 探索新的适配方式
 
-#### 梳理需求
+### 梳理需求
 
-首先来梳理下我们的需求，一般我们设计图都是以固定的尺寸来设计的。比如以分辨率1920px * 1080px来设计，以density为3来标注，也就是屏幕其实是640dp * 360dp。如果我们想在所有设备上显示完全一致，其实是不现实的，因为屏幕高宽比不是固定的，16:9、4:3甚至其他宽高比层出不穷，宽高比不同，显示完全一致就不可能了。但是通常下，我们只需要以宽或高一个维度去适配，比如我们Feed是上下滑动的，只需要保证在所有设备中宽的维度上显示一致即可，再比如一个不支持上下滑动的页面，那么需要保证在高这个维度上都显示一致，尤其不能存在某些设备上显示不全的情况。
+首先来梳理下我们的需求，一般我们设计图都是以固定的尺寸来设计的。比如以分辨率 1920 px * 1080 px 来设计，以 density 为 3 来标注，也就是屏幕其实是 640dp * 360dp。如果我们想在所有设备上显示完全一致，其实是不现实的，因为屏幕高宽比不是固定的，16:9、4:3甚至其他宽高比层出不穷，宽高比不同，显示完全一致就不可能了。但是通常下，我们只需要以宽或高一个维度去适配，比如我们Feed是上下滑动的，只需要保证在所有设备中宽的维度上显示一致即可，再比如一个不支持上下滑动的页面，那么需要保证在高这个维度上都显示一致，尤其不能存在某些设备上显示不全的情况。
 
 因此，总结下大致需求如下：
 
@@ -113,7 +114,7 @@ MM: 毫米.
 
 一般给的图都是以像素为单位的. 例如1920*1080 5寸屏的我们如果有1pt = 1px.  则如果需要120px的宽度, 我们不用想写成120pt就OK了。
 
-```
+```text
 要求得的1pt实际对应的px / 屏幕宽度px = 1px / 设计图宽度px
 要求得的1pt实际对应的px = 屏幕宽度px / 设计图宽度px
 
@@ -121,17 +122,19 @@ MM: 毫米.
 metrics.xdpi * (1.0f/72) = 对于1pt表示的像素
 metrics.xdpi = 1*72=72
 ```
+
 当前情况下容易得出 `xdpi = 72`, 我们还是算出原来的xdpi为440, 也就是大概差了6倍.如果假设1pt = 1px, 在使用过程中发现1pt变现为6px, 也就是突然变大了, 你就知道pt失效导致的.自己去找原因并解决.
 
 #### 最终方案
 
 * 已知设计图宽度为1080px, 以宽这个维度来适配。
 * 适配后的 xdpi= 72f * 设备真实宽(单位px) / 设计图宽度，接下来只需要把我们计算好的 density 在系统中修改下即可
+
 ```java
-		final Point size = new Point();
-		((WindowManager) context.getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay().getSize(size);
-		final Resources resources = context.getResources();
-		resources.getDisplayMetrics().xdpi = size.x / designWidth * 72f;
+final Point size = new Point();
+((WindowManager) context.getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay().getSize(size);
+final Resources resources = context.getResources();
+resources.getDisplayMetrics().xdpi = size.x / designWidth * 72f;
 ```
 
 #### 总结
@@ -167,131 +170,131 @@ import android.view.WindowManager;
  * 使用方法: Application#onCreate中调用一次即可
  */
 public class ScreenHelper {
-	/**
-	 * 重新计算displayMetrics.xhdpi, 使单位pt重定义为设计稿的相对长度
-	 *
-	 * @see #activate()
-	 *
-	 * @param context
-	 * @param designWidth
-	 *            设计稿的宽度
-	 */
-	public static void resetDensity(Context context, float designWidth) {
-		if (context == null) return;
-		final Point size = new Point();
-		((WindowManager) context.getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay().getSize(size);
-		final Resources resources = context.getResources();
-		resources.getDisplayMetrics().xdpi = size.x / designWidth * 72f;
+  /**
+   * 重新计算displayMetrics.xhdpi, 使单位pt重定义为设计稿的相对长度
+   *
+   * @see #activate()
+   *
+   * @param context
+   * @param designWidth
+   *            设计稿的宽度
+   */
+  public static void resetDensity(Context context, float designWidth) {
+    if (context == null) return;
+    final Point size = new Point();
+    ((WindowManager) context.getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay().getSize(size);
+    final Resources resources = context.getResources();
+    resources.getDisplayMetrics().xdpi = size.x / designWidth * 72f;
 
-		DisplayMetrics metrics = getMetricsOnMiui(resources);
-		if (metrics != null) {
-			metrics.xdpi = size.x / designWidth * 72f;
-		}
-	}
+    DisplayMetrics metrics = getMetricsOnMiui(resources);
+    if (metrics != null) {
+      metrics.xdpi = size.x / designWidth * 72f;
+    }
+  }
 
-	/**
-	 * 恢复displayMetrics为系统原生状态，单位pt恢复为长度单位磅
-	 *
-	 * @see #inactivate()
-	 *
-	 * @param context
-	 */
-	public static void restoreDensity(Context context) {
-		context.getResources().getDisplayMetrics().setToDefaults();
+  /**
+   * 恢复displayMetrics为系统原生状态，单位pt恢复为长度单位磅
+   *
+   * @see #inactivate()
+   *
+   * @param context
+   */
+  public static void restoreDensity(Context context) {
+    context.getResources().getDisplayMetrics().setToDefaults();
 
-		DisplayMetrics metrics = getMetricsOnMiui(context.getResources());
-		if (metrics != null)
-			metrics.setToDefaults();
-	}
+    DisplayMetrics metrics = getMetricsOnMiui(context.getResources());
+    if (metrics != null)
+      metrics.setToDefaults();
+  }
 
-	// 解决MIUI更改框架导致的MIUI7+Android5.1.1上出现的失效问题(以及极少数基于这部分miui去掉art然后置入xposed的手机)
-	private static DisplayMetrics getMetricsOnMiui(Resources resources) {
-		if ("MiuiResources".equals(resources.getClass().getSimpleName())
-				|| "XResources".equals(resources.getClass().getSimpleName())) {
-			try {
-				Field field = Resources.class.getDeclaredField("mTmpMetrics");
-				field.setAccessible(true);
-				return (DisplayMetrics) field.get(resources);
-			} catch (Exception e) {
-				return null;
-			}
-		}
-		return null;
-	}
+  // 解决MIUI更改框架导致的MIUI7+Android5.1.1上出现的失效问题(以及极少数基于这部分miui去掉art然后置入xposed的手机)
+  private static DisplayMetrics getMetricsOnMiui(Resources resources) {
+    if ("MiuiResources".equals(resources.getClass().getSimpleName())
+        || "XResources".equals(resources.getClass().getSimpleName())) {
+      try {
+        Field field = Resources.class.getDeclaredField("mTmpMetrics");
+        field.setAccessible(true);
+        return (DisplayMetrics) field.get(resources);
+      } catch (Exception e) {
+        return null;
+      }
+    }
+    return null;
+  }
 
-	private Application.ActivityLifecycleCallbacks mActivityLifecycleCallbacks;
-	private Application mApplication;
-	private float mDesignWidth;
+  private Application.ActivityLifecycleCallbacks mActivityLifecycleCallbacks;
+  private Application mApplication;
+  private float mDesignWidth;
 
-	/**
-	 *
-	 * @param application
-	 *            application
-	 * @param width
-	 *            设计稿宽度
-	 */
-	public ScreenHelper(Application application, float width) {
-		mApplication = application;
-		mDesignWidth = width;
+  /**
+   *
+   * @param application
+   *            application
+   * @param width
+   *            设计稿宽度
+   */
+  public ScreenHelper(Application application, float width) {
+    mApplication = application;
+    mDesignWidth = width;
 
-		mActivityLifecycleCallbacks = new Application.ActivityLifecycleCallbacks() {
-			@Override
-			public void onActivityCreated(Activity activity, Bundle savedInstanceState) {
-				// 通常情况下application与activity得到的resource虽然不是一个实例，但是displayMetrics是同一个实例，只需调用一次即可
-				// 为了面对一些不可预计的情况以及向上兼容，分别调用一次较为保险
-				resetDensity(mApplication, mDesignWidth);
-				resetDensity(activity, mDesignWidth);
-			}
+    mActivityLifecycleCallbacks = new Application.ActivityLifecycleCallbacks() {
+      @Override
+      public void onActivityCreated(Activity activity, Bundle savedInstanceState) {
+        // 通常情况下application与activity得到的resource虽然不是一个实例，但是displayMetrics是同一个实例，只需调用一次即可
+        // 为了面对一些不可预计的情况以及向上兼容，分别调用一次较为保险
+        resetDensity(mApplication, mDesignWidth);
+        resetDensity(activity, mDesignWidth);
+      }
 
-			@Override
-			public void onActivityStarted(Activity activity) {
-				resetDensity(mApplication, mDesignWidth);
-				resetDensity(activity, mDesignWidth);
-			}
+      @Override
+      public void onActivityStarted(Activity activity) {
+        resetDensity(mApplication, mDesignWidth);
+        resetDensity(activity, mDesignWidth);
+      }
 
-			@Override
-			public void onActivityResumed(Activity activity) {
-				resetDensity(mApplication, mDesignWidth);
-				resetDensity(activity, mDesignWidth);
-			}
+      @Override
+      public void onActivityResumed(Activity activity) {
+        resetDensity(mApplication, mDesignWidth);
+        resetDensity(activity, mDesignWidth);
+      }
 
-			@Override
-			public void onActivityPaused(Activity activity) {
+      @Override
+      public void onActivityPaused(Activity activity) {
 
-			}
+      }
 
-			@Override
-			public void onActivityStopped(Activity activity) {
+      @Override
+      public void onActivityStopped(Activity activity) {
 
-			}
+      }
 
-			@Override
-			public void onActivitySaveInstanceState(Activity activity, Bundle outState) {
+      @Override
+      public void onActivitySaveInstanceState(Activity activity, Bundle outState) {
 
-			}
+      }
 
-			@Override
-			public void onActivityDestroyed(Activity activity) {
+      @Override
+      public void onActivityDestroyed(Activity activity) {
 
-			}
-		};
-	}
+      }
+    };
+  }
 
-	/**
-	 * 激活本方案
-	 */
-	public void activate() {
-		resetDensity(mApplication, mDesignWidth);
-		mApplication.registerActivityLifecycleCallbacks(mActivityLifecycleCallbacks);
-	}
+  /**
+   * 激活本方案
+   */
+  public void activate() {
+    resetDensity(mApplication, mDesignWidth);
+    mApplication.registerActivityLifecycleCallbacks(mActivityLifecycleCallbacks);
+  }
 
-	/**
-	 * 恢复系统原生方案
-	 */
-	public void inactivate() {
-		restoreDensity(mApplication);
-		mApplication.unregisterActivityLifecycleCallbacks(mActivityLifecycleCallbacks);
-	}
+  /**
+   * 恢复系统原生方案
+   */
+  public void inactivate() {
+    restoreDensity(mApplication);
+    mApplication.unregisterActivityLifecycleCallbacks(mActivityLifecycleCallbacks);
+  }
 
     /**
      * 转换pt为px
@@ -316,17 +319,17 @@ public class ScreenHelper {
 **旋转屏幕之后适配失效**
 可以在onConfigurationChanged中调用`ScreenHelper .resetDensity(getContext(), designWidth)`规避
 
-**特定国产机型ROM中偶先fragment失效**
-可以在fragment的onCreateView中调用`ScreenHelper .resetDensity(getContext(), designWidth)`规避
+**特定国产机型ROM中偶先 fragment 失效**
+可以在fragment的onCreateView中调用 `ScreenHelper .resetDensity(getContext(), designWidth)`规避
 
-#### 总结
+## 总结
 
 * 总而言之这是一套按比例适配的方式
 * 以上说的某些情况下 xdpi 会被还原导致失效, 表现形式为字体大小, View 的宽和高突然扩大好几倍的情况发生, 需要使ScreenHelper#resetDensity 方法还原.
 * 该方案只考虑**x轴**方向, 毋需或者暂不考虑y轴方向
 * 如何选择基准设备呢, 这当然根据 UI 给的切图而定, 但现在的 UI 一般都是以苹果设备为原型而定. 我给的参考是手机参考`1920px*1080px` 16:9 的屏幕,一般而言可以做到手机和Pad通吃,如果你们公司遵循"更大的屏幕显示更多的内容", 可以和美工协商规划.
 
-##### 参考
+## 参考
 
 1. [Android多分辨率适配框架（1）— 核心基础 - CSDN博客](https://blog.csdn.net/lfdfhl/article/details/52735103)
 2. [一种极低成本的Android屏幕适配方式](https://www.toutiao.com/i6558665383790772739/)
