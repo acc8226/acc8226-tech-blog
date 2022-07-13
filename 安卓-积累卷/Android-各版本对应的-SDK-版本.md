@@ -4,12 +4,12 @@ Android 开发所需的 SDK，下载并解压后，将解压出的整个文件�
 
 平台版本 | API LeveL | 版本名称
 -----| ----- | -----
-13 | 33  | Android 13 / Android T/ Tiramisu / 提拉米苏
-12 | 32  | S_V2 / sv2 / Snow Cone / 刨冰
+13 | 33  | Android 13 / Android T/ Tiramisu 提拉米苏
+12 | 32  | Android 12 / S_V2 / sv2 / Snow Cone / 刨冰
 12 | 31  | Android 12 / Android S / Snow Cone / 刨冰
-11 | 30  | Android 11 / Android R / Red Velvet Cake(红丝绒蛋糕) / RVC
+11 | 30  | Android 11 / Android R / Red Velvet Cake / RVC / 红丝绒蛋糕
 10 | 29  | Android 10 / Android Q (Android 系统将直接被称为 Android 10，不再使用甜品做代号)
-9.0 | 28  | Android P (Pie)
+9.0 | 28  | Android 9 / Android P (Pie)
 8.1 | 27  | Oreo_MR1(Android O)（奥利奥）
 8.0 | 26  | Oreo(Android O)（奥利奥）
 7.1 | 25  | Nougat(Android N_MR1)（牛轧糖）

@@ -205,4 +205,4 @@ Python 下载 | Python123
 <https://www.python123.io/download>
 
 pip documentation
-https://pip.pypa.io/en/stable/
+<https://pip.pypa.io/en/stable/>

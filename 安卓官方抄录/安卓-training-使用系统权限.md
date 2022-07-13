@@ -1,18 +1,18 @@
 > https://developer.android.google.cn/training/permissions/index.html
 
-### 声明权限
+## 声明权限
 
 每款 Android 应用都在访问受限的沙盒中运行。如果应用需要使用其沙盒外的资源或信息，则必须请求相应*权限*。您可以在[应用清单](http://developer.android.youdaxue.com/guide/topics/manifest/manifest-intro.html)中列出相应的权限，声明应用需要此权限。
 根据权限的敏感性，系统可能会自动授予权限，或者需要由设备用户对请求进行许可。例如，如果您的应用请求打开设备手电筒的权限，系统将自动授予该权限。但如果您的应用需要读取用户联系人，系统会要求用户授权。
 用户需要在安装应用（运行 Android 5.1 和更低版本的设备）或者运行应用（运行 Android 6.0 和更高版本的设备）时授予权限，具体取决于平台版本。
 
-###### 确定您的应用需要哪些权限
+### 确定您的应用需要哪些权限
 
 开发应用时，您应注意应用何时使用需要权限的功能。通常，在使用并非由自身创建的信息资源、执行会影响设备或其他应用行为的操作时，应用都需要获得相应的权限。例如，如果应用需要访问互联网、使用设备摄像头或者打开或关闭 WLAN，应用需要获得相应的权限。要查看系统权限的列表，请参阅[正常权限和危险权限](http://developer.android.youdaxue.com/guide/topics/security/permissions.html#normal-dangerous)。
 
 您的应用仅需要获得其直接执行的操作的权限。如果应用请求另一应用执行任务或提供信息，则不需要获得相应权限。例如，如果您的应用需要读取用户的地址簿，则需要 [READ_CONTACTS](http://developer.android.youdaxue.com/reference/android/Manifest.permission.html#READ_CONTACTS) 权限。但如果您的应用使用一个 *intent* 从用户的“联系人”应用中请求信息，则您的应用不需要任何权限，但“联系人”应用*确实*需要该权限。如需了解详细信息，请参阅[考虑使用 intent](http://developer.android.youdaxue.com/training/permissions/best-practices.html#perms-vs-intents)。
 
-##### 向清单添加权限
+### 向清单添加权限
 
 要声明您的应用需要权限，请将 [<uses-permission>
 ](http://developer.android.youdaxue.com/guide/topics/manifest/uses-permission-element.html) 元素置于您的[应用清单](http://developer.android.youdaxue.com/guide/topics/manifest/manifest-intro.html)中，作为顶级 [<manifest>
@@ -33,7 +33,7 @@
 
 系统在您声明权限之后的行为取决于权限的敏感性。如果权限不影响用户隐私权，系统会自动授权。如果权限可能涉及对敏感用户信息的访问，系统将要求用户审批请求。要了解有关不同种类权限的详细信息，请参阅[正常权限和危险权限](http://developer.android.youdaxue.com/guide/topics/security/permissions.html#normal-dangerous)。
 
-### 在运行时请求权限(6.0 API 23)
+## 在运行时请求权限(6.0 API 23)
 
 从 Android 6.0（API 级别 23）开始，用户开始在应用运行时向其授予权限，而不是在应用安装时授予。此方法可以简化应用安装过程，因为用户在安装或更新应用时不需要授予权限。它还让用户可以对应用的功能进行更多控制；例如，用户可以选择为相机应用提供相机访问权限，而不提供设备位置的访问权限。用户可以随时进入应用的“Settings”屏幕调用权限。
 
@@ -46,7 +46,7 @@
 
 本课将介绍如何使用 Android [支持库](http://developer.android.youdaxue.com/tools/support-library/index.html)来检查和请求权限。Android 框架从 Android 6.0（API 级别 23）开始提供类似方法。不过，使用**支持库**更简单，因为在调用方法前，您的应用不需要检查它在哪个版本的 Android 上运行。
 
-##### 检查权限
+### 检查权限
 
 如果您的应用需要危险权限，则每次执行需要这一权限的操作时您都必须检查自己是否具有该权限。用户始终可以自由调用此权限，因此，即使应用昨天使用了相机，它不能假设自己今天仍具有该权限。
 要检查您是否具有某项权限，请调用 [ContextCompat.checkSelfPermission()](http://developer.android.youdaxue.com/reference/android/support/v4/content/ContextCompat.html#checkSelfPermission(android.content.Context, java.lang.String)) 方法。例如，以下代码段显示了如何检查 Activity 是否具有在日历中进行写入的权限：
@@ -59,11 +59,11 @@ int permissionCheck = ContextCompat.checkSelfPermission(thisActivity,
 
 如果应用具有此权限，方法将返回 [PackageManager.PERMISSION_GRANTED](http://developer.android.youdaxue.com/reference/android/content/pm/PackageManager.html#PERMISSION_GRANTED)，并且应用可以继续操作。如果应用不具有此权限，方法将返回[PERMISSION_DENIED](http://developer.android.youdaxue.com/reference/android/content/pm/PackageManager.html#PERMISSION_DENIED)，且应用必须明确向用户要求权限。
 
-##### 请求权限
+### 请求权限
 
 如果您的应用需要应用清单中列出的危险权限，那么，它必须要求用户授予该权限。Android 为您提供了多种权限请求方式。调用这些方法将显示一个标准的 Android 对话框，不过，您不能对它们进行自定义。
 
-###### 解释应用为什么需要权限
+#### 解释应用为什么需要权限
 
 在某些情况下，您可能需要帮助用户了解您的应用为什么需要某项权限。例如，如果用户启动一个摄影应用，用户对应用要求使用相机的权限可能不会感到吃惊，但用户可能无法理解为什么此应用想要访问用户的位置或联系人。在请求权限之前，不妨为用户提供一个解释。请记住，您不需要通过解释来说服用户；如果您提供太多解释，用户可能发现应用令人失望并将其移除。
 您可以采用的一个方法是仅在用户已拒绝某项权限请求时提供解释。如果用户继续尝试使用需要某项权限的功能，但继续拒绝权限请求，则可能表明用户不理解应用为什么需要此权限才能提供相关功能。对于这种情况，比较好的做法是显示解释。
@@ -71,7 +71,7 @@ int permissionCheck = ContextCompat.checkSelfPermission(thisActivity,
 
 > 注：如果用户在过去拒绝了权限请求，并在权限请求系统对话框中选择了 Don't ask again 选项，此方法将返回 false。如果设备规范禁止应用具有该权限，此方法也会返回 false。
 
-###### 请求您需要的权限
+#### 请求您需要的权限
 
 果应用尚无所需的权限，则应用必须调用一个 [requestPermissions()](http://developer.android.youdaxue.com/reference/android/support/v4/app/ActivityCompat.html#requestPermissions(android.app.Activity, java.lang.String[], int)) 方法，以请求适当的权限。应用将传递其所需的权限，以及您指定用于识别此权限请求的整型*请求代码*。此方法异步运行：它会立即返回，并且在用户响应对话框之后，系统会使用结果调用应用的回调方法，将应用传递的相同请求代码传递到 [requestPermissions()](http://developer.android.youdaxue.com/reference/android/support/v4/app/ActivityCompat.html#requestPermissions(android.app.Activity, java.lang.String[], int))。
 以下代码可以检查应用是否具备读取用户联系人的权限，并根据需要请求该权限：
@@ -107,7 +107,7 @@ if (ContextCompat.checkSelfPermission(thisActivity,
 
 > **注**：当您的应用调用 [requestPermissions()](https://developer.android.google.cn/reference/android/support/v4/app/ActivityCompat.html#requestPermissions(android.app.Activity, java.lang.String[], int)) 时，系统将向用户显示一个标准对话框。您的应用*无法*配置或更改此对话框。如果您需要为用户提供任何信息或解释，您应在调用 [requestPermissions()](https://developer.android.google.cn/reference/android/support/v4/app/ActivityCompat.html#requestPermissions(android.app.Activity, java.lang.String[], int)) 之前进行，如[解释应用为什么需要权限](https://developer.android.google.cn/training/permissions/requesting.html#explain)中所述。
 
-###### 处理权限请求响应
+#### 处理权限请求响应
 
 当应用请求权限时，系统将向用户显示一个对话框。当用户响应时，系统将调用应用的 [onRequestPermissionsResult()](https://developer.android.google.cn/reference/android/support/v4/app/ActivityCompat.OnRequestPermissionsResultCallback.html#onRequestPermissionsResult(int, java.lang.String[], int[])) 方法，向其传递用户响应。您的应用必须替换该方法，以了解是否已获得相应权限。回调会将您传递的相同请求代码传递给 [requestPermissions()](https://developer.android.google.cn/reference/android/support/v4/app/ActivityCompat.html#requestPermissions(android.app.Activity, java.lang.String[], int))
 。例如，如果应用请求[READ_CONTACTS](https://developer.android.google.cn/reference/android/Manifest.permission.html#READ_CONTACTS) 访问权限，则它可能采用以下回调方法：
@@ -149,7 +149,7 @@ public void onRequestPermissionsResult(int requestCode,
 
 当系统要求用户授予权限时，用户可以选择指示系统不再要求提供该权限。这种情况下，无论应用在什么时候使用 [requestPermissions()](https://developer.android.google.cn/reference/android/support/v4/app/ActivityCompat.html#requestPermissions(android.app.Activity, java.lang.String[], int)) 再次要求该权限，系统都会立即拒绝此请求。系统会调用您的 [onRequestPermissionsResult()](https://developer.android.google.cn/reference/android/support/v4/app/ActivityCompat.OnRequestPermissionsResultCallback.html#onRequestPermissionsResult(int, java.lang.String[], int[])) 回调方法，并传递 [PERMISSION_DENIED](https://developer.android.google.cn/reference/android/content/pm/PackageManager.html#PERMISSION_DENIED)，如果用户再次明确拒绝了您的请求，系统将采用相同方式操作。这意味着当您调用 [requestPermissions()](https://developer.android.google.cn/reference/android/support/v4/app/ActivityCompat.html#requestPermissions(android.app.Activity, java.lang.String[], int)) 时，您不能假设已经发生与用户的任何直接交互。
 
-### 应用权限最佳做法
+## 应用权限最佳做法
 
 权限请求可以保护设备中的敏感信息，并且仅应在应用为正常行使功能而必须访问这些信息时使用。利用本文档提供的技巧，您无需访问此类信息即可实现相同（或更好的）功能；但本文不会详细讨论权限在 Android 操作系统中的工作方式。
 有关 Android 权限的一般信息，请参阅[权限和用户数据](https://developer.android.google.cn/training/articles/user-data-overview.html)。如需了解有关如何在您的代码中使用权限的详情，请参阅[使用系统权限](https://developer.android.google.cn/training/permissions/index.html)。有关使用唯一标识符的最佳做法，请参阅[唯一标识符最佳做法](https://developer.android.google.cn/training/articles/user-data-ids.html)。

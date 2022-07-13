@@ -121,18 +121,18 @@ public class CustomApplication extends Application {
 
 到此你应该对内存泄漏的本质已经有所了解了，这里列举出一些会导致内存泄漏的地方，可以作为排查内存泄漏的一个checklist
 
-* 某个集合类（List）被一个static变量引用，同时这个集合类没有删除自己内部的元素
+* 某个集合类（List）被一个 static 变量引用，同时这个集合类没有删除自己内部的元素
 * 单例模式持有外部本应该被释放的对象（第一节中那个例子）
-* Android特殊组件或者类忘记释放，比如：BraodcastReceiver忘记解注册、Cursor忘记销毁、Socket忘记close、TypedArray忘记recycle、callback忘记remove。如果你自己定义了一个类，最好不要直接将一个Activity类型作为他的属性，如果必须要用，要么处理好释放的问题，要么使用弱引用
+* Android 特殊组件或者类忘记释放，比如：BraodcastReceiver 忘记解注册、Cursor 忘记销毁、Socket 忘记close、TypedArray 忘记 recycle、callback 忘记 remove。如果你自己定义了一个类，最好不要直接将一个Activity 类型作为他的属性，如果必须要用，要么处理好释放的问题，要么使用弱引用
 * Handler。只要 Handler 发送的 Message 尚未被处理，则该 Message 及发送它的 Handler 对象将被线程 MessageQueue 一直持有。由于 Handler 属于 TLS(Thread Local Storage) 变量, 生命周期和 Activity 是不一致的。因此这种实现方式一般很难保证跟 View 或者 Activity 的生命周期保持一致，故很容易导致无法正确释放。如上所述，Handler 的使用要尤为小心，否则将很容易导致内存泄露的发生。
-* Thread。如果Thread的run方法一直在循环的执行不停，而该Thread又持有了外部变量，那么这个外部变量即发生内存泄漏。
-* 网络请求或者其他异步线程。之前 Volley会有这样的一个问题，在 Volley 的response 来到之前如果Activity已经退出了而且response里面含有Activity的成员变量，会导致该 Activity 发生内存泄漏，该问题一直没有找到合适的解决办法。不过看来 Volley官网已经注意到这个问题了，目前最新的版本已经 fix this leak。
+* Thread。如果 Thread 的 run 方法一直在循环的执行不停，而该 Thread 又持有了外部变量，那么这个外部变量即发生内存泄漏。
+* 网络请求或者其他异步线程。之前 Volley 会有这样的一个问题，在 Volley 的 response 来到之前如果 Activity 已经退出了而且 response 里面含有 Activity 的成员变量，会导致该 Activity 发生内存泄漏，该问题一直没有找到合适的解决办法。不过看来 Volley官网已经注意到这个问题了，目前最新的版本已经 fix this leak。
 
 ![版本说明](./imgs/Android%E7%9A%84%E5%86%85%E5%AD%98%E6%B3%84%E9%9C%B2/1.png)
 
 ## 使用 leakcanary
 
-之前Android开发通常使用MAT内存分析工具来排查heap的问题，之类的文章比较多，大家可以自己找。这里推荐一个叫做leakcanary的工具，他可以集成在你的代码里面。这个东西大家可以参考：[http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2015/0509/2854.html](http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2015/0509/2854.html)
+之前Android开发通常使用MAT内存分析工具来排查 heap 的问题，之类的文章比较多，大家可以自己找。这里推荐一个叫做 leakcanary 的工具，他可以集成在你的代码里面。这个东西大家可以参考：[http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2015/0509/2854.html](http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2015/0509/2854.html)
 
 ## 特别鸣谢
 
