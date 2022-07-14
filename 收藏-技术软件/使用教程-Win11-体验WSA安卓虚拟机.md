@@ -64,9 +64,20 @@ adb devices
 adb install path_to_apk
 ```
 
+adb install 指定设备安装
+输入 `adb devices` 查看设备id。接着 `adb -s 设备id install app-release.apk` 即可。
+
 **APK 资源去哪找**
 我一般去[应用宝](
 https://webcdn.m.qq.com/webapp/homepage/index.html#/) 搜索下载并 adb install 安装到本地。
+
+**卸载应用**
+
+预备知识：查看已安装 app 的方法：
+adb shell pm list packages
+
+使用 uninstall 命令
+adb uninstall com.example.xxx
 
 ## 参考文档
 

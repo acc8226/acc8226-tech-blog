@@ -52,8 +52,8 @@ android 5.0 新增矢量图动画
 > 通常定义一个 AnimatedVectorDrawable 需要以下三个xml文件：
 
 1.vector drawable 本身：res/drawable/中定义一个有<vector>元素的xml文件，参考上面对VectorDrawable的定义。
-2.vector drawable 的动画文件（Animated vector drawable）：res/drawable/中定义一个有<animated-vector>元素的xml文件。
-3.一个或者多个属性动画文件：res/drawable/中定义一个有<objectAnimator>元素的xml文件。
+2.vector drawable 的动画文件（Animated vector drawable）：res/drawable/中定义一个有`<animated-vector>`元素的xml文件。
+3.一个或者多个属性动画文件：res/drawable/中定义一个有`<objectAnimator>`元素的 xml 文件。
 
 **自定义 View**
 
@@ -110,7 +110,7 @@ mLooper = Looper.myLooper();
 
 ### 安卓中多线程的实现
 
-使用 JavaSE中线程 和 线程池,
+使用 JavaSE 中线程 和 线程池,
 
 安卓为开发者封装了一些常用的类 AsyncTask, HandlerThread.
 
@@ -217,8 +217,8 @@ onTrimMemory()方法还有很多种其它类型的回调，可以在手机内存
 能够通过移除不需要的代码，重命名类，域与方法等方对代码进行压缩，优化与混淆。使用 ProGuard可以是的你的代码更加紧凑，这样能够使用更少mapped代码所需要的RAM。
 * 对最终的 APK 使用 zipalign
 * 使用多进程
-一个典型的例子是创建一个可以长时间后台播放的Music Player。如果整个app运行在一个进程中，当后台播放的时候，前台的那些UI资源也没有办法得到释放。类似这样的 app 可以切分成2个进程：一个用来操作UI，另外一个用来后台的Service.
-你可以通过在manifest文件中声明’android:process’属性来实现某个组件运行在另外一个进程的操作。
+一个典型的例子是创建一个可以长时间后台播放的 Music Player。如果整个 app 运行在一个进程中，当后台播放的时候，前台的那些UI资源也没有办法得到释放。类似这样的 app 可以切分成2个进程：一个用来操作 UI，另外一个用来后台的 Service.
+你可以通过在 manifest文件中声明 ’android:process’ 属性来实现某个组件运行在另外一个进程的操作。
 * 谨慎使用抽象编程
 许多程序员都喜欢各种使用抽象来编程，认为这是一种很好的编程习惯。当然，这一点不可否认，因为的抽象的编程方法更加面向对象，而且在代码的维护和可扩展性方面都会有所提高。但是，在 Android 上使用抽象会带来额外的内存开支，因为抽象的编程方法需要编写额外的代码，虽然这些代码根本执行不到，但是却也要映射到内存当中，不仅占用了更多的内存，在执行效率方面也会有所降低。当然这里我并不是提倡大家完全不使用抽象编程，而是谨慎使用抽象编程，不要认为这是一种很酷的编程方式而去肆意使用它，只在你认为有必要的情况下才去使用。
 
@@ -287,6 +287,7 @@ Lrucache，主要是get和set方法，存储的结构采用了LinkedHashMap，�
 **Action**
 
 Action 代表了一个具体的加载任务，主要用于图片加载后的结果回调，有两个抽象方法，complete 和error，也就是当图片解析为bitmap后用户希望做什么。最简单的就是将 bitmap 设置给 imageview，失败了就将错误通过回调通知到上层。
+
 ![](http://upload-images.jianshu.io/upload_images/1662509-cd62e7eac475b6ac?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ImageViewAction 实现了Action，在complete中将 bitmap 和 imageview 组成了一个 PicassoDrawable，里面会实现淡出的动画效果。

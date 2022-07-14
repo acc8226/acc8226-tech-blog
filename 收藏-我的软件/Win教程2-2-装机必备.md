@@ -36,7 +36,7 @@ Android 用户可选择 [腾讯应用宝PC版](https://sj.qq.com/) / [360 手机
 
 iOS 用户请下载 iTunes 和 PP 助手。
 
-#### 下载软件
+## 下载软件
 
 [迅雷](https://dl.xunlei.com/) / [Free Download Manager](https://www.freedownloadmanager.org/zh/)
 
@@ -63,10 +63,12 @@ ACDSee 看图软件
 PS 【收费软件】 / GIMP 【PS的替代品且免费】 / 美图秀秀【免费】
 
 **硬盘管理/分区、光盘类软件**
+
 * diskgenius 良心国软
 * Acronis Disk Director 11 Advanced 官方简体中文版下载（[官方下载](http://download.acronis.com/trial/ADD11A_trial_zh-CN.exe) 236M）- 《[Win7、Vista如何调整硬盘分区](http://www.vista123.com/vista/229.html)》 支持250G及以上硬盘
 
 **备份、虚拟光驱、光驱刻录软件**
+
 * 软媒虚拟光驱(软媒魔方自带了这个小组件)
 * [Vista/Win7 一键还原/ Vista Ghost](http://www.vista123.com/vistaghost/)）1.3.6 免费中文正式版（[官方下载](http://down.ruanmei.com/vistaghost/vistaghostsetup.zip) 4.30M） 支持64位/32位的Win7 和 Vista 系统
 * CDBurnerXP 4.3.8.2474 光盘刻录免费多国语言正式版（[官方下载](http://ember.cdburnerxp.se/cdbxp_setup_4.3.8.2474.exe) 3.27M）多国语言（含简体中文）

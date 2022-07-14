@@ -10,7 +10,7 @@ colortool.exe -b OneHalfDark.itermcolors
 
 ![手动修改字体样式](./Win-系统相关设置/手动修改字体样式.png)
 
-## 修改 Win 7~11 的 host 文件
+## 修改 Windows 的 host 文件
 
 hosts 文件是 Windows 系统中一个负责 IP 地址与域名快递解析的文件，以 ASCLL 格式保存。计算机在键入域名的时候，首先会去看看 hosts 文件汇总有没有关于此域名 IP 地址的记录。为了提高计算机访问某一网站的速度，修改 hosts 文件是很好的办法。
 

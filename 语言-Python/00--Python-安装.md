@@ -122,11 +122,11 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 ## 一个在线运行环境
 
 在线编程 | Python123
-https://www.python123.io/index/playground/python
+<https://www.python123.io/index/playground/python>
 
 ## python 的一些语法
 
-```sh
+```py
 # 默认会换行, 懂我呀
 print('hello')
 # 重载该函数, end填入''则不换行

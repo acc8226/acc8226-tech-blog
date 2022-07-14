@@ -2,12 +2,15 @@
 
 ### 在线版
 
-网页工具：Word转换为PDF文件。DOC文件转换为PDF文件
+网页工具：Word 转换为 PDF 文件。DOC文件转换为 PDF 文件
 <https://www.ilovepdf.com/zh-cn/word_to_pdf>
 
 ### 离线版
 
-office 和 wps 可直接导出 pdf，如果想批量导出 pdf，可尝试万彩办公大师-文件转换工具。
+【优先】PDF24 Tools: 免费且易于使用的在线PDF工具
+<https://tools.pdf24.org/zh/>
+
+【备用】office 和 wps 可直接导出 pdf，如果想批量导出 pdf，可尝试万彩办公大师-文件转换工具。
 <http://www.wofficebox.com/>
 
 注：其余无论国产/国外软件转 pdf 软件大多是付费服务，要不免费版有水印，要不就是前几页免费，极度不推荐。

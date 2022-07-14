@@ -2,11 +2,11 @@
 
 .DS_Store(英文全称 Desktop Services Store)是一种由苹果公司的 Mac OS X 操作系统所创造的隐藏文件，目的在于存贮目录的自定义属性，例如文件们的图标位置或者是背景色的选择。相当于 Windows 下的 desktop.ini 文件。
 
-包含个人信息, 导出的时候记得删除。当然不删除的话感觉也作用不大。
+它包含个人信息, 导出的时候记得删除。当然不删除的话感觉也作用不大。
 
 ### 如何在当前文件夹下打开终端:  finder->服务->服务偏好设置
 
-> ![](https://upload-images.jianshu.io/upload_images/1662509-bd2e4f32af695326.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/1662509-bd2e4f32af695326.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### 压缩文件的时候不想要带.DS_Store
 
@@ -14,11 +14,11 @@
 
 ## 小知识
 
-**mac 发热原因**
+### mac 发热原因
 
 一般而言是 cpu 占用率高的缘故
 
-### 降低 WindowServer 进程占用很高的 CPU占用，否则容易烫手
+#### 降低 WindowServer 进程占用很高的 CPU占用，否则容易烫手
 
 WindowServer 是 macOS 的核心进程，负责程序的图形化显示，你在屏幕上看到的内容，都是 WindowServer 作用的结果。所以，这个进程是安全的。
 
