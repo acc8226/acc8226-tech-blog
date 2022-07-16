@@ -1,7 +1,8 @@
 ![](https://upload-images.jianshu.io/upload_images/1662509-4c2d897b87504fcb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## Requests 的安装
-```
+
+```sh
 # 1. 找到 python 安装路径:
 C:\Users\hp\AppData\Local\Programs\Python\Python35\Scripts`
 # 2. cmd命令执行
@@ -33,7 +34,7 @@ pip install requests
 
 #### 爬取网页的通用代码框架
 
-``` python 
+```py
 import requests
 
 def getHTMLText(url):

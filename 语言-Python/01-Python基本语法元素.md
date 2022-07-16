@@ -6,10 +6,10 @@
 
 ## 语法元素总览
 
-- 缩进、注释、命名、变量、保留字
-- 数据类型、字符串、 整数、浮点数、列表
-- 赋值语句、分支语句、函数
-- input()、print()、eval()、 print()格式化
+* 缩进、注释、命名、变量、保留字
+* 数据类型、字符串、 整数、浮点数、列表
+* 赋值语句、分支语句、函数
+* input()、print()、eval()、 print()格式化
 
 ## 注释
 
@@ -20,7 +20,7 @@
 
 ## Python 3.x的保留字（关键字）
 
-###### (黑色文字表示常用关键字)
+### (黑色文字表示常用关键字)
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-17c2749cd451727a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 

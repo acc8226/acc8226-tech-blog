@@ -55,14 +55,14 @@ switch 任务支持对特性(property)的直接比较判断。<switch>标签内�
 也可以使用`fileset`等数据元素动态指定在遍历的文件集合。
 
 ```xml
-  <ac:for param="xmlfile"
-      xmlns:ac="antlib:net.sf.antcontrib">
-      <fileset dir="${basedir}" includes="**/*.xml"/>
-      <sequential>
-        <copy file="@{xmlfile}" todir="${des_dir}/for"></copy>
-        <echo message="@{xmlfile}"/>
-      </sequential>
-    </ac:for>
+<ac:for param="xmlfile"
+    xmlns:ac="antlib:net.sf.antcontrib">
+    <fileset dir="${basedir}" includes="**/*.xml"/>
+    <sequential>
+    <copy file="@{xmlfile}" todir="${des_dir}/for"></copy>
+    <echo message="@{xmlfile}"/>
+    </sequential>
+</ac:for>
 ```
 
 ## [变量(Variable)](http://ant-contrib.sourceforge.net/tasks/tasks/variable_task.html)

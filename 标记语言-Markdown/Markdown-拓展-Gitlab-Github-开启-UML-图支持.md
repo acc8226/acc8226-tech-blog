@@ -23,7 +23,7 @@ plantuml-server 启动完成后，需要在 GitLab 上配置开启 PlantUML，�
 
 ## 对 github 的支持
 
-支持时间：https://github.blog/2022-02-14-include-diagrams-markdown-files-mermaid/
+支持时间：<https://github.blog/2022-02-14-include-diagrams-markdown-files-mermaid/>
 
 目前版本已内置，可以直接使用。
 

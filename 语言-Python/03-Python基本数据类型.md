@@ -13,10 +13,10 @@
 
 * 带有小数点及小数的数字
 * 浮点数取值范围和小数精度都存在限制，但常规计算可忽略
-* 取值范围数量级约-10 308 至10 308 ，精度数量级10 -16
+* 取值范围数量级约 -10 308 至 10 308 ，精度数量级10 -16
 
 浮点数间运算存在不确定尾数，不是bug
-结果无限接近0.3，但可能存在尾数
+结果无限接近 0.3，但可能存在尾数
 
 解决办法: 使用round函数
 浮点数间运算存在不确定尾数
@@ -39,6 +39,7 @@ True
 #### 复数类型
 
 z = 1.23e-4+5.6e+89j
+
 - 实部是什么？ z.real 获得实部
 - 虚部是什么？ z.imag 获得虚部
 
@@ -71,6 +72,7 @@ z = 1.23e-4+5.6e+89j
 ![](https://upload-images.jianshu.io/upload_images/1662509-48d501445ecfacab.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 使用[ ]获取字符串中一个或多个字符
+
 - 索引：返回字符串中单个字符 <字符串>[M]
 "请输入带有符号的温度值: "[0] 或者 TempStr[-1]
 - 切片：返回字符串中一段字符子串 <字符串>[M: N]
@@ -119,6 +121,7 @@ z = 1.23e-4+5.6e+89j
 ## time 库基本介绍
 
 time库包括三类函数
+
 - 时间获取：time() ctime() gmtime()
 - 时间格式化：strftime() strptime()
 - 程序计时：sleep(), perf_counter()
@@ -140,6 +143,7 @@ time库包括三类函数
 #### 程序计时
 
 程序计时应用广泛
+
 - 程序计时指测量起止动作所经历时间的过程
 - 测量时间：perf_counter()
 - 产生时间：sleep()
@@ -198,7 +202,9 @@ print("\n" + "执行结束".center(strWidth, '-'))
 ![Harrison C. et al. Rethinking the Progress Bar. In ACM Symposium on User Interface Software and Technology, 2007](https://upload-images.jianshu.io/upload_images/1662509-cea94008d26a1f35.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 文本进度条的不同设计函数
+
 ![](https://upload-images.jianshu.io/upload_images/1662509-58a46fe261ee00b7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ![](https://upload-images.jianshu.io/upload_images/1662509-9451642dea3725b8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 结论: 先慢后快的方式更迎合人们

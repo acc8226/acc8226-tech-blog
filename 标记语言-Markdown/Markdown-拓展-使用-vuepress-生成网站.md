@@ -29,10 +29,11 @@ cd vuepress-starter
 ```
 
 初始化项目
+
 * YARN
 * NPM
 
-```
+```sh
 git init
 yarn init
 ```

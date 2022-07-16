@@ -53,7 +53,7 @@ Caused by: java.lang.ClassNotFoundException: com.sun.mail.util.FolderClosedIOExc
 
 ## AntCall
 
-利用AntCall Task实现target间调用时传递参数的实例  当需要从一个target传递参数到被调用的target时，可以使用<param> 类型进行传递。当然也可以在target中定义property来实现，与Java中的方法调用时传递参数相似
+利用 AntCall Task 实现 target 间调用时传递参数的实例  当需要从一个 target 传递参数到被调用的 target 时，可以使用 `<param>` 类型进行传递。当然也可以在 target 中定义 property 来实现，与 Java 中的方法调用时传递参数相似
 
 ```xml
   <target name="targetA">

@@ -9,12 +9,12 @@
 ### Windows & Linux 平台
 
 * VS Code
-* marktext【免费】 / Typora【付费】
+* marktext【免费、推荐】 / Typora【付费】
 
 ### Mac 平台
 
 * VS Code
-* marktext【免费】 / Typora【付费】
+* marktext【免费、推荐】 / Typora【付费】
 * Mac 独享 的 MWeb4(付费)，因为我看中的的是自动导出为博客和图片上传服务(图床)。
 
 ## 最终选择

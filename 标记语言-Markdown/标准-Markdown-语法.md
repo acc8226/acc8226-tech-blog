@@ -30,9 +30,12 @@ _You **can** combine them_
 
 支持六级标题, h1 级标题最大 -> h6 级标题最小
 源码:
-`# This is an <h1> tag`
-`## This is an <h2> tag`
-`###### This is an <h6> tag`
+
+```md
+# This is an <h1> tag
+## This is an <h2> tag
+###### This is an <h6> tag
+```
 
 效果:
 

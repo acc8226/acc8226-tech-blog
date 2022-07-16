@@ -9,6 +9,7 @@
 　7. apk 签名
 
 ## 1. aapt(Android Asset Packaging Tool) - Package the android resources得到R.java文件
+
 命令`build-tools/安卓某个版本/aapt.exe package`
 
 ```bat
@@ -39,7 +40,8 @@ aapt package -f -m -M AndroidManifest.xml -I D:/Android/android-sdk/platforms/an
 * `-d` 指定放置生成的类文件的位置
 * 最后一个参数是 <source files>, 列举出所有用到的源文件, 由于我指定了sourcepath, 我只列举了`gen/com/nci/insprotection/*.java src/com/nci/insprotection/*.java`
 
-> 注意:
+注意:
+
 > * `-d`文件夹必须存在, 否则会`javac: 找不到目录: bin/classes`, 所以的手动mkdir
 > * 提示找不到`符号:   类 BuildConfig`, 由于我是从Eclipse拷出的项目, 手动copy一个到`gen`下`R.java`的同级目录即可.
 ``` java
@@ -64,6 +66,7 @@ public final class BuildConfig {
 
 `aapt package -f -M AndroidManifest.xml -I D:/Android/android-sdk/platforms/android-22/android.jar -A assets -S res -F bin/res.zip
 `
+
 * -f 如果编译生成的文件已经存在，强制覆盖。
 * -M 使生成的包的目录存放在-J参数指定的目录
 * -I 指定某个版本平台的android.jar文件的路径

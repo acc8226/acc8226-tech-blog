@@ -51,7 +51,7 @@ Would become:
 
 ## SHA references
 
-任何对提交的 SHA-1散列的引用都会自动转换为 GitHub 上提交的链接。
+任何对提交的 SHA-1 散列的引用都会自动转换为 GitHub 上提交的链接。
 
 ```text
 16c999e8c71134401a78d4d46435517b2271d6ac

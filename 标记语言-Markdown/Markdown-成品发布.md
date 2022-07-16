@@ -40,7 +40,7 @@ pause
 
 对 windows 环境而言，光使用 pandoc 还不够，还得安装插件，所以这里更建议使用 typora。
 
-或者可以采取迂回战术，按照 md->HTML->PDF 的路径或者md->word->PDF 的路径转。
+或者可以采取迂回战术，按照 md->HTML->PDF 的路径或者 md->word->PDF 的路径转。
 
 ## 发布为 ppt 文件
 

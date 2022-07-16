@@ -1,9 +1,9 @@
-## turtle库概述
+## turtle 库概述
 
-turtle(海龟)库是turtle绘图体系的Python实现
+turtle(海龟)库是 turtle 绘图体系的 Python 实现
 
-* turtle绘图体系：1969年诞生，主要用于程序设计入门
-* Python语言的标准库之一
+* turtle 绘图体系：1969 年诞生，主要用于程序设计入门
+* Python 语言的标准库之一
 * 入门级的图形绘制函数库
 
 ## turtle的绘图窗体
