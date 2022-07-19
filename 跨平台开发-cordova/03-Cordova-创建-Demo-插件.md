@@ -1,0 +1,143 @@
+## 1. 创建基本插件
+
+```sh
+plugman create --name MyPluginName --plugin_id cordova-plugin-my --plugin_version 0.0.1
+```
+
+然后就会生成如下的文件内容，即下面的两个文件：
+
+```text
+.
+├── plugin.xml
+├── src
+└── www
+    └── MyPluginName.js
+```
+
+plugin.xml 清单文件，定义了插件的结构以及相关的设置。
+```
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-my" version="0.0.1"
+	xmlns="http://apache.org/cordova/ns/plugins/1.0"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>MyPluginName</name>
+    <js-module name="MyPluginName" src="www/MyPluginName.js">
+        <clobbers target="cordova.plugins.MyPluginName" />
+    </js-module>
+</plugin>
+```
+
+> 它定义了几个内容：
+> * plugin -- 命名空间、ID、版本
+> * name -- 名称
+> * js-module -- js文件地址，会被默认加载到首页面（index.html）。clobbers元素定义的内容将会被插入到 `window`对象中
+
+MyPluginName.js JavaScript接口，用于插件与混合应用的接口。
+```javascript
+var exec = require('cordova/exec');
+
+exports.coolMethod = function (arg0, success, error) {
+    exec(success, error, 'MyPluginName', 'coolMethod', [arg0]);
+};
+```
+> exports中创建了一个名为coolMethod的方法，然后cordova将调用对应平台的Native方法。
+
+## 2. 添加安卓平台支持
+```
+$ plugman platform add --platform_name android
+```
+它会在src目录下创建android文件夹, 并产生`MyPluginName.java`文件. 如果遇到包名出错的情况, 修改为你想要的包名即可. 它提供了原生功能和接口。
+```java
+package com.abc.cordova; // 包名可能会出错
+
+import org.apache.cordova.CordovaPlugin;
+import org.apache.cordova.CallbackContext;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+/**
+ * This class echoes a string called from JavaScript.
+ */
+public class MyPluginName extends CordovaPlugin {
+
+    @Override
+    public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
+        if (action.equals("coolMethod")) {
+            String message = args.getString(0);
+            this.coolMethod(message, callbackContext);
+            return true;
+        }
+        return false;
+    }
+
+    private void coolMethod(String message, CallbackContext callbackContext) {
+        if (message != null && message.length() > 0) {
+            callbackContext.success(message);
+        } else {
+            callbackContext.error("Expected one non-empty string argument.");
+        }
+    }
+}
+```
+
+它也会更新你的`plugin.xml` 配置文件, 适当修改后如下
+```
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-my" version="0.0.1">
+  <name>MyPluginName</name>
+  <js-module name="MyPluginName" src="www/MyPluginName.js">
+    <clobbers target="cordova.plugins.MyPluginName"/>
+  </js-module>
+  <platform name="android">
+    <config-file parent="/*" target="res/xml/config.xml">
+      <feature name="MyPluginName">
+        <param name="android-package" value="com.abc.cordova.MyPluginName"/>
+      </feature>
+    </config-file>
+    <source-file src="src/android/MyPluginName.java" target-dir="src/com/abc/cordova"/>
+  </platform>
+</plugin>
+```
+
+## 3. 创建package.json, 否则无法 add 插件
+```bash
+plugman createpackagejson .
+```
+
+## 4. 使用插件
+
+```bash
+cordova plugin add ../MyPluginName
+```
+由于我的项目MyApp 和 MyPluginName 属于同一级, 所以这样添加插件
+
+## 5. 配置后可运行
+
+在www 下的index.html中添加按钮
+
+```html
+<button id = "testButton">test</button>
+```
+
+然后再在 js/index.js 下新增
+```
+document.getElementById("testButton").addEventListener("click", wowawoziji);
+
+function wowawoziji() {
+            // 注意clobbers中拿到的名称 和 js文件中配置的方法名要保持一致
+            cordova.plugins.MyPluginName.coolMethod('Hello , catch YOU!',
+               function(success){
+                  alert(success);
+               },
+               function(error) {
+                  alert(error);
+               });
+         }
+```
+
+最后, 一切完美
+```
+$ cordova run android
+```

@@ -1,0 +1,145 @@
+Apache Cordova 是一个开源移动开发框架，它允许您使用标准的 Web 技术，如 HTML5，CSS3 和 JavaScript 进行跨平台开发，避免每个移动平台本机开发语言。应用程序在针对每个平台的包装内执行，并依靠符合标准的 API 绑定来访问每个设备的传感器，数据和网络状态。
+
+## 快速开始
+
+Cordova 提供了一组设备相关的 API，通过这组 API，移动应用能够以 JavaScript 访问原生的设备功能，如摄像头、麦克风等。
+
+Cordova 命令行运行在 Node.js 上，可以在 NPM 上使用。按照特定于平台的指南安装其他平台依赖项。打开命令提示符或终端。
+
+1. Installing Cordova
+
+```sh
+npm install -g cordova
+```
+
+2. Create a project
+
+```sh
+cordova create <path>.
+```
+
+举例 `$ cordova create myapp com.mycompany.myteam.myapp MyApp`
+
+3. Add a platform
+
+To add a platform, type `cordova platform add <platform name>`。
+举例 `cordova platform add android`。
+
+4. Run your app
+From the command line, run `cordova run <platform name>`.
+举例 `cordova run android`
+
+5. Common next steps
+*   [Read the docs](https://cordova.apache.org/docs/en/latest/guide/overview/)
+*   [Add a Plugin](https://cordova.apache.org/docs/en/latest/guide/cli/#add-plugins)
+*   [Customize app icons](https://cordova.apache.org/docs/en/latest/config_ref/images.html)
+*   [Configure Your App](https://cordova.apache.org/docs/en/latest/config_ref/)
+
+## 前提条件
+
+### 检查你是否满足搭建平台的要求
+
+```sh
+cordova requirements
+```
+
+### 查看有哪些平台
+
+```bash
+$ cordova platform ls
+
+Installed platforms:
+  android 7.1.4
+Available platforms:
+  browser ~5.0.1
+  ios ~4.5.4
+  osx ~4.0.1
+  windows ~6.0.0
+```
+
+## 创建应用程序
+
+运行以下命令为所有平台生成项目:
+
+```sh
+cordova build
+```
+
+您可以选择将每个构建的范围限制在特定的平台上——在本例中是“ ios”:
+
+```sh
+cordova build ios
+```
+
+## 插件相关
+
+### Add Plugins 添加插件
+
+A plugin exposes a Javascript API for native SDK functionality.
+
+你也可以使用 CLI 来启动搜索页面:
+$ cordova plugin search camera
+
+To add and save the camera plugin to config.xml and package.json
+
+```sh
+$ cordova plugin add cordova-plugin-camera
+
+Fetching plugin "cordova-plugin-camera@~2.1.0" via npm
+Installing "cordova-plugin-camera" for android
+Installing "cordova-plugin-camera" for ios
+```
+
+### 插件升级
+
+https://cordova.apache.org/docs/en/8.x/guide/next/index.html#plugin-upgrades
+
+目前还没有使用单一命令升级更改过的插件的机制。 取而代之的是，移除插件并将其添加到你的项目中，新版本将被安装:
+
+```
+cordova plugin rm "some-plugin"
+cordova plugin add "some-plugin"
+```
+
+### 如何自定义图标
+
+有关启动画面图像的文档可以在 [Splashscreen plugin](https://cordova.apache.org/docs/en/8.x/reference/cordova-plugin-splashscreen/) 文档中找到。
+
+## 其他
+
+### 如何更新 Cordova 和你的项目
+
+在安装 cordova 实用程序之后，你总是可以通过运行以下命令将其更新为最新版本:
+`$ sudo npm update -g cordova`
+
+运行 cordova-v 查看当前运行的版本。 要找到最新发布的 cordova 版本，你可以运行:
+`$ npm info cordova version`
+
+## 参考文档
+
+Cordova教程_w3cschool
+https://www.w3cschool.cn/cordova/
+
+## 安卓平台的使用
+
+### 设定版本号
+
+https://cordova.apache.org/docs/en/latest/guide/platforms/android/index.html#setting-the-version-code
+更改应用程序生成的 apk 的版本代码，请在应用程序的 config.xml 文件的 widget 元素中设置 **android-versionCode** 属性。 如果没有设置 android-versionCode，则将使用 version 属性确定版本代码。
+
+### gradle 下载
+
+Gradle Build Tool
+https://gradle.org/
+
+![android plugin version 和 required Gradle version的对应关系](https://upload-images.jianshu.io/upload_images/1662509-2a845872e958546b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+### 相关问答
+
+**问**: Downloading https://services.gradle.org/distributions/gradle-4.1-all.zip
+Exception in thread "main" java.net.UnknownHostException: services.gradle.org
+        at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java                                        :184)
+        at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+
+**答**: 根据 url 下载对应 zip 压缩包, 并找到对应目录, Copy 到对应下载文件夹
+![](https://upload-images.jianshu.io/upload_images/1662509-ef536a1e524a9e73.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)

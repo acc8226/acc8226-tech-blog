@@ -1,0 +1,493 @@
+Apache Cordova 是一个开源移动开发框架，它允许您使用标准的 Web 技术，如 HTML5，CSS3 和 JavaScript 进行跨平台开发，避免每个移动平台本机开发语言。应用程序在针对每个平台的包装内执行，并依靠符合标准的 API 绑定来访问每个设备的传感器，数据和网络状态。
+
+## 结构
+
+Cordova 应用程序有几个组件。 下图展示了 Cordova 应用程序体系结构的高级视图。
+![](https://upload-images.jianshu.io/upload_images/1662509-979a671ed3bee6a0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+### WebView
+
+启用 cordova 的 WebView 可以为应用程序提供其整个用户界面。 在某些平台上，它还可以是一个更大的混合应用程序中的一个组件，该混合应用程序将 WebView 与本地应用程序组件混合在一起。 (详见嵌入 WebViews。)
+
+### Web App
+
+这是应用程序代码驻留的部分。 应用程序本身实现为一个 web 页面，默认情况下是一个名为 index.html 的本地文件，该文件引用 CSS、 JavaScript、图片、媒体文件或其他运行所必需的资源。 应用程序在本地应用程序包装器中以 WebView 执行，然后将其分发到应用程序商店。
+
+### Plugins 插件
+
+插件是 Cordova 生态系统不可或缺的一部分。 它们为 Cordova 和本地组件提供了一个相互通信和绑定到标准设备 api 的接口。 这使你能够从 JavaScript 调用本机代码。
+
+## 预装环境
+
+1. 下载并安装 Node.js。 在安装时，您应该能够在命令行上调用节点和 npm。
+2. (可选)下载并安装一个 git 客户端
+3. 使用 Node.js 的 npm 工具安装 cordova 模块`$ sudo npm install -g cordova`
+
+## 创建流程
+
+### 1. 新建 / 打开 Cordova项目
+
+```bash
+$ cordova create hello com.example.hello HelloWorld
+```
+cordova 创建脚本生成一个基本目录结构 web-based application，其主页是项目的 www / index. html 文件。
+
+### 2. 添加平台支持
+
+添加平台和后续命令都需要在项目的目录或任何子目录中运行, 添加安卓 和 iOS平台
+```
+$ cordova platform add ios
+$ cordova platform add android
+```
+
+![平台支持情况](https://upload-images.jianshu.io/upload_images/1662509-fe0437a5a9bf6644.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+### 3. 添加插件支持
+让应用程序访问设备级别的特性，则需要添加插件。每个插件为本地 SDK 功能提供了 Javascript API支持。
+
+#### Ⅰ. 在开发过程中可能会使用的插件：
+
+1. cordova-plugin-camera    	该插件可以获取保险人的照片
+2. cordova-plugin-contacts   	该插件可以获取保险人的联系方式
+3. cordova-plugin-device     	该插件可以获取设备的信息
+4. cordova-plugin-file-transfer 	该插件可以上传保险人的信息，同时也可以现在保险人的信息
+5. cordova-plugin-app-version	该插件可以获取设备的信息版本号
+6. cordova-plugin-inappbrowser 在你的应用程序中显示有用的文章、视频和网络资源。 用户可以在不离开你的应用程序的情况下浏览网页。
+7. cordova-plugin-media-capture 这个插件提供了对设备的音频、图像和视频捕获功能的访问。
+8. cordova-plugin-wechat 一个 cordova 插件，一个微信 SDK 的 JS 版本
+9. cordova-plugin-zip 一个 Cordova 插件解压缩文件在安卓和 iOS。
+
+> Plugin Search - Apache Cordova
+https://cordova.apache.org/plugins/
+
+#### Ⅱ. 插件的使用方法
+
+在 cordova 中使用以上插件的方法都是相同的，下面就以cordova-plugin-camera插件使用为例：
+步骤1 - 安装相机插件
+在命令提示符窗口中运行以下代码以安装此插件。
+```
+C:\Users\username\Desktop\CordovaProject>cordova plugin add cordova-plugin-camera
+```
+步骤2 - 添加按钮和图像
+在此步骤中，我们将创建用于调用摄像头的按钮和在拍摄后将显示图像的 img 。将其添加到 div.html = 元素中的 index.html 。
+```html
+<button id = "cameraTakePicture">TAKE PICTURE</button>
+<img id = "myImage"></img>
+```
+步骤3 - 添加事件监听器
+事件侦听器添加到 onDeviceReady 函数中，以确保Cordova在我们开始使用它之前加载。
+```javascript
+document.getElementById("cameraTakePicture").addEventListener
+   ("click", cameraTakePicture);
+```
+步骤4 - 添加功能(拍照)
+我们正在创建 cameraTakePicture 函数，该函数作为回调传递给我们的事件侦听器。 当点击按钮时，它会被触发。在这个函数中，我们调用由插件API提供的 navigator.camera 全局对象。如果拍摄成功，数据将被发送到 onSuccess 回调函数，如果没有，将显示带有错误信息的警报。我们将这个代码放在 index.js 的底部
+```javascript
+function cameraTakePicture() {
+   navigator.camera.getPicture(onSuccess, onFail, {
+      quality: 50,
+      destinationType: Camera.DestinationType.DATA_URL
+   });
+
+   function onSuccess(imageData) {
+      var image = document.getElementById('myImage');
+      image.src = "data:image/jpeg;base64," + imageData;
+   }
+
+   function onFail(message) {
+      alert('Failed because: ' + message);
+   }
+}
+```
+当我们运行应用程序，并按按钮，本机相机将被触发。
+
+## 创建一个插件
+
+插件是一个注入代码包，它允许 Cordova 网络视图在其中呈现应用程序与其运行的本地平台通信。 插件提供了对设备和平台功能的访问，而这些功能通常是基于网络的应用程序所不具备的。 你可以在 Cordova Plugin Search 页面上搜索可用的插件。
+
+插件包括一个单一的 JavaScript 接口，以及每个支持平台的相应本机代码库。 本质上，这隐藏了通用 JavaScript 接口背后的各种本地代码实现。
+项目维护一组叫做核心插件的插件。 这些核心插件提供应用程序访问设备功能，如电池、相机、联系人等。
+
+除了核心插件之外，还有一些第三方插件为不一定在所有平台上都可用的特性提供了额外的绑定。 你可以使用插件搜索或 npm 来搜索 Cordova 插件。 您也可以开发自己的插件，如插件开发指南中所述。 插件可能是必要的，例如，在 Cordova 和自定义本地组件之间进行通信。
+
+**针对移动保全**已有的电子签名功能和运用 OCR 技术进行信息识别和影像采集功能, 需要额外开发插件。在准备编写插件时，最好查看一下现有的插件以获得指导。
+
+### 1. Building a Plugin 构建插件
+
+应用程序开发人员使用 CLI 的插件 add 命令为项目添加插件。 该命令的参数是包含插件代码的 git 存储库的 URL。 这个例子实现了 Cordova 的设备 API:
+```bash
+cordova plugin add https://git-wip-us.apache.org/repos/asf/cordova-plugin-device.git
+```
+插件存储库必须具有一个顶级 plugin.xml 清单文件。 有许多方法可以配置这个文件，详细信息可以在插件规范中找到。 这个简化版本的设备插件提供了一个简单的例子来作为一个模型:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-device" version="0.2.3">
+    <name>Device</name>
+    <description>Cordova Device Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,device</keywords>
+    <js-module src="www/device.js" name="device">
+        <clobbers target="device" />
+    </js-module>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Device">
+                <param name="ios-package" value="CDVDevice"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/CDVDevice.h" />
+        <source-file src="src/ios/CDVDevice.m" />
+    </platform>
+</plugin>
+```
+
+顶级插件标签的` id` 属性使用相同的反向域格式来识别插件包和它们添加到的应用程序。 `Js-module` 标记指定通用 JavaScript 接口的路径。` Platform `标记为 ios 平台指定了一组相应的本机代码。 `Config-file` 标记封装了一个特性标记，该特性标记被注入到特定于平台的` config.xml `文件中，以使平台知道附加的代码库。 头文件和源文件标记指定库的组件文件的路径。
+
+### 2. 使用Plugman 验证插件
+
+你可以使用 plugman 工具来检查插件是否正确地安装在每个平台上。 使用以下的 node 命令安装 plugman:
+```bash
+npm install -g plugman
+```
+您需要一个有效的应用程序源目录，例如默认 CLI-generated 项目中包含的顶级 www 目录，如 Create your first app guide 中所述。
+然后运行以下命令来测试 iOS 依赖项是否正确加载:
+```
+plugman install --platform ios --project /path/to/my/project/www --plugin /path/to/my/plugin
+```
+有关 Plugman 选项的详细信息，请参阅使用 Plugman 管理插件。
+
+### 3. JavaScript 接口
+
+Javascript 接口提供了面向前端的接口，这使得它可能是插件中最重要的部分。 你可以随心所欲地构建你的插件的 JavaScript，但是你需要调用 cordova.exec 与本地平台通信，使用以下语法
+```
+cordova.exec(function(winParam) {},
+             function(error) {},
+             "service",
+             "action",
+             ["firstArgument", "secondArgument", 42, false]);
+```
+以下是每个参数的工作原理:
+* 函数(winParam){} : 成功的回调函数。 假设您的 exec 调用成功完成，则该函数将与您传递给它的任何参数一起执行。
+* 函数(错误){} : 错误回调函数。 如果操作没有成功完成，该函数将使用一个可选的错误参数执行。
+* "service": 在本机端调用的服务名称。 这对应于一个本机类，下面列出的本机指南中提供了更多关于该类的信息。
+* "action": 呼叫本地方的操作名称。 这通常对应于本机类方法。 请参阅下面列出的本地指南。
+* [ / * arguments * / ] : 要传递到本机环境的参数数组。
+
+### 4. Sample JavaScript实例
+这个例子展示了一种实现插件 JavaScript 接口的方法:
+```
+window.echo = function(str, callback) {
+    cordova.exec(callback, function(err) {
+        callback('Nothing to echo.');
+    }, "Echo", "echo", [str]);
+};
+```
+在这个例子中，插件将自己作为 echo 函数附加到窗口对象上，插件用户可以这样调用:
+```
+window.echo("echome", function(echoValue) {
+    alert(echoValue == "echome"); // should alert true.
+});
+```
+查看传递给 cordova.exec 函数的最后三个参数。 第一个调用 Echo 服务，这是一个类名。 第二个请求 echo 动作，这是该类中的一个方法。 第三个是包含 echo 字符串的参数数组，它是 window.echo 函数的第一个参数。
+传递给` exec `的成功回调只是对 `window.echo` 回调函数的引用。 如果本地平台触发错误回调，它只需调用成功回调并将其传递为默认字符串。
+
+### 5. Native Interface原生接口
+
+一旦你为你的插件定义了 JavaScript，你需要用至少一个本地实现来补充它。 下面列出了每个平台的详细信息，每个平台都基于上面简单的 Echo Plugin 示例:
+*   [Android Plugins 安卓插件](https://cordova.apache.org/docs/en/latest/guide/platforms/android/plugin.html)
+*   [iOS Plugins Ios 插件](https://cordova.apache.org/docs/en/latest/guide/platforms/ios/plugin.html)
+*   [Windows Plugins Windows 插件](https://cordova.apache.org/docs/en/latest/guide/platforms/windows/plugin.html)
+
+## 安卓插件开发指南
+本节提供如何在 Android 平台上实现本地插件代码的详细信息。 在阅读本文之前，请参阅插件开发指南以了解该插件的结构及其通用的 JavaScript 接口。 本节将继续演示示例 echo 插件，该插件可以从 Cordova webview 与本机平台之间进行通信。 另一个示例请参见 CordovaPlugin.java 中的注释。
+
+Android 插件是基于 cordova-Android 的，它是基于一个带有本地桥接的 Android WebView 构建的。 Android 插件的本机部分至少包含一个 Java 类，该类扩展了 CordovaPlugin 类并覆盖了其中一个执行方法。
+
+#### 插件类映射
+插件的 JavaScript 接口使用 cordov.exec 方法如下:
+```
+exec(<successFunction>, <failFunction>, <service>, <action>, [<args>]);
+```
+这将从 WebView 向 Android 本地端封送一个请求，通过在 args 数组中传递附加参数，有效地调用服务类上的 action 方法。
+
+无论是以 Java 文件还是以 jar 文件的形式分发插件，都必须在 Cordova-Android 应用程序的 res / xml / config.xml 文件中指定该插件。 有关如何使用 plugin.xml 文件注入这个特性元素的更多信息，请参见 Application Plugins:
+```xml
+<feature name="<service_name>">
+    <param name="android-package" value="<full_name_including_namespace>" />
+</feature>
+```
+服务名称与 JavaScript exec 调用中使用的名称匹配。 该值是 Java 类的完全限定的名称空间标识符。 否则，插件可能会编译，但仍然不可用于 Cordova。
+
+#### [插件初始化和生存期](https://cordova.apache.org/docs/en/latest/guide/platforms/android/plugin.html#plugin-initialization-and-lifetime)
+为每个 WebView 的生命周期创建一个插件对象实例。 除非在 config.xml 中将带有 onload name 属性的 param 设置为"true"，否则在 JavaScript 调用首次引用插件之前，不会对插件进行实例化。 比如说
+```
+<feature name="Echo">
+    <param name="android-package" value="<full_name_including_namespace>" />
+    <param name="onload" value="true" />
+</feature>
+```
+插件的启动逻辑应该使用 initialize 方法。
+```Java
+@Override
+public void initialize(CordovaInterface cordova, CordovaWebView webView) {
+    super.initialize(cordova, webView);
+    // your init code here
+}
+```
+
+插件还可以访问 Android 生命周期事件，并且可以通过扩展提供的方法(onResume、 onDestroy 等)来处理这些事件。 具有长时间运行的请求、后台活动(如媒体播放、侦听器或内部状态)的插件应该实现 onReset ()方法。 它在 WebView 导航到新页面或刷新时执行，这会重新加载 JavaScript。
+
+#### 编写 Android Java 插件
+
+一个 JavaScript 调用会向原生端发出一个插件请求，相应的 Java 插件会被正确地映射到 config.xml 文件中，但是最终的 Android Java Plugin 类是什么样的呢？ 使用 JavaScript 的 exec 函数分配给插件的任何内容都会传递到插件类的 execute 方法中。 大多数执行实现看起来像这样:
+
+```Java
+@Override
+public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
+    if ("beep".equals(action)) {
+        this.beep(args.getLong(0));
+        callbackContext.success();
+        return true;
+    }
+    return false;  // Returning false results in a "MethodNotFound" error.
+}
+```
+
+Javascript exec 函数的 action 参数对应于一个带有可选参数的私有类方法。
+
+当捕获异常并返回错误时，为了清晰起见，尽可能使返回到 JavaScript 的错误匹配 Java 的异常名称是很重要的。
+
+#### Threading 线程[](https://cordova.apache.org/docs/en/latest/guide/platforms/android/plugin.html#threading)
+
+插件的 JavaScript 不在 WebView 接口的主线程中运行，而是在 WebCore 线程上运行，execute 方法也是如此。 如果你需要与用户界面交互，你应该使用 Activity 的 runOnUiThread 方法，如下所示:
+
+```java
+@Override
+public boolean execute(String action, JSONArray args, final CallbackContext callbackContext) throws JSONException {
+    if ("beep".equals(action)) {
+        final long duration = args.getLong(0);
+        cordova.getActivity().runOnUiThread(new Runnable() {
+            public void run() {
+                ...
+                callbackContext.success(); // Thread-safe.
+            }
+        });
+        return true;
+    }
+    return false;
+}
+```
+
+如果您不需要在 UI 线程上运行，但也不希望阻塞 WebCore 线程，那么您应该使用从 Cordova.getthreadpool ()获得的 Cordova ExecutorService 来执行代码，如下所示:
+
+```Java
+@Override
+public boolean execute(String action, JSONArray args, final CallbackContext callbackContext) throws JSONException {
+    if ("beep".equals(action)) {
+        final long duration = args.getLong(0);
+        cordova.getThreadPool().execute(new Runnable() {
+            public void run() {
+                ...
+                callbackContext.success(); // Thread-safe.
+            }
+        });
+        return true;
+    }
+    return false;
+}
+```
+
+#### 添加依赖库
+
+如果你的 Android 插件有额外的依赖关系，它们必须以两种方式之一列在 plugin.xml 中。
+
+首选的方法是使用框架 / 标签(更多细节参见 Plugin Specification)。 以这种方式指定库允许通过 Gradle 的依赖管理逻辑来解析它们。 这允许多个插件使用常用的库，如 gson、 android-support-v4和 google-play-services，而不会发生冲突。
+
+第二个选项是使用`< lib-file / >` 指定 jar 文件的位置(有关详细信息，请参阅 Plugin Specification)。 这种方法只有在你确定没有其他插件会依赖于你引用的库(例如，如果库是特定于你的插件的)的情况下才能使用。 否则，如果另一个插件添加了相同的库，就有可能导致你的插件用户出现构建错误。 值得注意的是，Cordova 应用程序开发人员不一定是本地开发人员，因此本地平台构建错误尤其令人沮丧。
+
+## 构建流程
+
+#### 安装构建的先决条件
+
+为了构建和运行应用程序，你需要为每个你想要的平台安装 sdk。 或者，如果您使用浏览器进行开发，您可以使用不需要任何平台 sdk 的浏览器平台。
+
+检查你是否符合构建 platform 的要求:
+
+```bash
+$ cordova requirements
+Requirements check results for android:
+Java JDK: installed .
+Android SDK: installed
+Android target: installed android-19,android-21,android-22,android-23,Google Inc.:Google APIs:19,Google Inc.:Google APIs (x86 System Image):19,Google Inc.:Google APIs:23
+Gradle: installed
+
+Requirements check results for ios:
+Apple OS X: not installed
+Cordova tooling for iOS requires Apple OS X
+Error: Some of requirements check failed
+```
+
+#### 创建应用程序[](https://cordova.apache.org/docs/en/latest/guide/cli/index.html#build-the-app)
+
+默认情况下，`cordova create` 脚本生成一个骨架网络应用程序，其起始页是项目的 `www / index. html` 文件。 任何初始化都应该指定为 `www/js/index.js`中定义的 deviceready 事件处理程序的一部分。
+
+运行以下命令为所有平台构建项目:
+`$ cordova build`
+
+你可以有选择地将每个构建的范围限制在特定的平台上——在本例选择"android":
+
+```bash
+cordova build android
+```
+
+如果最后能看到`BUILD SUCCESSFUL` 则说明构建debug版本的 apk 包成功
+
+```
+BUILD SUCCESSFUL in 1m 11s
+46 actionable tasks: 12 executed, 34 up-to-date
+Built the following apk(s):
+        D:\CCordova\myapp\platforms\android\app\build\outputs\apk\debug\app-debug.apk
+```
+
+参见[](https://cordova.apache.org/docs/en/latest/guide/cli/index.html#see-also)
+*   [Cordova build command reference documentation Cordova build](https://cordova.apache.org/docs/en/latest/reference/cordova-cli/index.html#cordova-build-command)
+
+### 签署安卓应用
+
+参数说明:
+
+![](https://upload-images.jianshu.io/upload_images/1662509-a32751baf1f540ca.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+可以以上命令行参数对 Cordova CLI `build`或 `run` 进行使用。
+`cordova run android --release -- --keystore=../my-release-key.keystore --storePassword=password --alias=alias_name --password=password`
+
+举例去生成保全的生产包
+`cordova run android --release -- --keystore=./platforms/android/polystor.keystore --storePassword=polystor --alias=polystor --password=polystor`
+根据路径找到对应目录
+
+![](https://upload-images.jianshu.io/upload_images/1662509-3ccb66280b9c406b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+* app-release.apk就是已签名的安卓安装包
+
+### 签署iOS应用
+
+参数说明:
+![](https://upload-images.jianshu.io/upload_images/1662509-fd764c386de35bb1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+或者，你可以在构建配置文件(build.json)中使用 -- buildConfig 参数对相同的命令指定它们。
+对于自动签名，配置文件由 Xcode (推荐)自动管理。
+对于手动签名，使用 UUID 指定配置文件。
+如果你有一个自定义的情况，你需要传递额外的构建标志到 Xcode，你可以使用一个或多个构建标志选项来传递这些标志到 xcodebuild。 如果使用 xcodebuild 内置标志，它将显示一个警告。
+```bash
+cordova build --device --buildFlag="MYSETTING=myvalue" --buildFlag="MY_OTHER_SETTING=othervalue"
+cordova run --device --buildFlag="DEVELOPMENT_TEAM=FG35JLLMXX4A" --buildFlag="-scheme TestSchemeFlag"
+```
+
+### 测试应用程序
+
+移动平台的 sdk 通常与执行设备映像的模拟器捆绑在一起，这样你就可以从主屏幕启动应用程序，看看它是如何与许多平台功能相互作用的。 运行以下命令重建应用程序，并在特定平台的模拟器中查看它:
+
+```bash
+$ cordova emulate android
+```
+
+接下来使用 cordova emulate 命令刷新模拟器映像以显示最新的应用程序，现在可以在主屏幕上启动:
+![](https://upload-images.jianshu.io/upload_images/1662509-2bea8b0723326fb2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+或者，你可以把手机插入电脑，直接测试应用程序:
+
+```bash
+cordova run android
+```
+
+在运行此命令之前，您需要设置用于测试的设备，并遵循因平台不同而不同的过程。
+
+See Also 参见[](https://cordova.apache.org/docs/en/latest/guide/cli/index.html#see-also)
+
+* [Setting up Android emulator 设置 Android 模拟器](https://cordova.apache.org/docs/en/latest/guide/platforms/android/index.html#setting-up-an-emulator)
+* [Cordova run command reference documentation 运行命令参考文档](https://cordova.apache.org/docs/en/latest/reference/cordova-cli/index.html#cordova-run-command)
+* [Cordova emulate command reference documentation Cordova 模拟命令参考文档](https://cordova.apache.org/docs/en/latest/reference/cordova-cli/index.html#cordova-emulate-command)
+
+## 高级主题
+
+### 在原生应用中嵌入Cordova
+
+Cordova 应用程序通常在本地移动平台中作为基于浏览器的 WebView 实现。 本节展示如何为支持平台创建自己的 WebView 组件，以充分利用 Cordova api。 然后，您可以在混合应用程序中部署这些 Cordova 应用程序组件和本地组件。
+
+要部署 WebView，您需要熟悉每个本机编程环境。 以下为支持的平台提供说明:
+
+* [Android WebViews](https://cordova.apache.org/docs/en/latest/guide/platforms/android/webview.html)
+* [iOS WebViews](https://cordova.apache.org/docs/en/latest/guide/platforms/ios/webview.html)
+
+## [下一步](https://cordova.apache.org/docs/en/latest/guide/next/index.html)
+
+对于那些了解如何使用 Cordova CLI 和使用插件的开发人员，有一些事情你可以考虑下一步研究，以构建更好、更高性能的 Cordova 应用程序。 下面的文档提供了与最佳实践、测试、升级和其他主题相关的各种主题的建议，但并不是说明性的。
+
+* Best Practices 最佳实践
+* Handling Upgrades 处理升级
+* Testing Cordova apps 测试 Cordova 应用程序
+* Debugging Cordova apps 调试 Cordova 应用程序
+* User Interface 用户界面
+* Special Considerations 特别考虑
+
+### 最佳实践
+
+#### SPA Is Your Friend
+
+首先，你的 Cordova 应用程序应该采用 SPA (单页应用程序)设计。 定义不严格的 SPA 是一个客户端应用程序，它从网页的一个请求运行。 用户加载一组初始资源(HTML、 CSS 和 JavaScript) ，并通过 AJAX 完成进一步的更新(显示新视图、加载数据)。 Spa 通常用于更复杂的客户端应用程序。 就是一个很好的例子。 加载 GMail 之后，邮件视图、编辑和组织都是通过更新 DOM 完成的，而不是真正离开当前页面去加载一个全新的页面。
+
+使用 SPA 可以帮助您以更高效的方式组织应用程序，但它对 Cordova 应用程序也有特定的好处。 在使用任何插件之前，Cordova 应用程序必须等待备份 / 备份事件触发。 如果你不使用 SPA，而你的用户点击从一个页面到另一个页面，你必须等待设备再次启动后才能使用插件。 随着应用程序变得越来越大，这很容易被忘记。
+
+你可以在 Cordova 应用程序中使用 SPA 库的例子有:
+
+* [AngularJS](http://angularjs.org/)
+* [EmberJS](http://emberjs.com/)
+* [Backbone](http://backbonejs.org/)
+* [Kendo UI](http://www.telerik.com/kendo-ui)
+* [Monaca](http://monaca.mobi/en/)
+* [ReactJS](http://facebook.github.io/react/)
+* [Sencha Touch](http://www.sencha.com/products/touch/)
+* [jQuery Mobile](http://jquerymobile.com/)
+
+#### 性能考虑
+
+点击与触摸
+最大和最简单的错误，你可以使用点击事件。 虽然这些"工作"在移动设备上还不错，但大多数设备都会延迟300毫秒，以区分触摸和触摸"保持"事件。 使用 touchstart 或者 touchend 会带来显著的改进——300毫秒听起来不算多，但是它可能会导致 UI 更新和行为的不稳定。 您还应该考虑这样一个事实，即非 webkit 浏览器不支持"触摸"事件，请参阅 canifuse。 为了解决这些限制，您可以签出各种类型的库，如 HandJS 和 Fastclick。
+
+Css 过渡与 DOM Manipulation
+使用硬件加速的 CSS 过渡要比使用 JavaScript 创建动画要好得多。 有关示例，请参阅本节末尾的资源列表。
+
+Networks Suck
+网络并不总是糟糕，但是移动网络的延迟，即使是好的移动网络，也比你想象的要糟糕得多。 一个桌面应用程序每30秒吞下500行 JSON 数据，在移动设备上的速度和耗电量一样慢。 请记住，Cordova 应用程序有多种方式来持久化应用程序中的数据(例如 LocalStorage 和文件系统)。 在本地缓存该数据，并认识到来回发送的数据量。 当应用程序通过蜂窝网络连接时，这是一个特别重要的考虑因素。
+
+#### 识别并处理离线状态
+
+你不仅可以在一个缓慢的网络，它是完全有可能为您的应用程序完全脱机。 您的应用程序应该以一种智能的方式处理这个问题。 如果你的应用程序没有，人们会认为你的应用程序是坏的。 考虑到处理它是多么容易(Cordova 支持对脱机和联机事件进行侦听) ，在脱机运行时，应用程序绝对没有理由不能很好地响应。 确保测试(参见下面的测试部分)你的应用程序，并确保测试当你开始处于一种状态，然后切换到另一种状态时，您的应用程序的处理方式。
+
+### 应用界面
+
+构建一个在移动设备上看起来不错的 Cordova 应用程序可能是一个挑战，尤其是对开发人员来说。 许多人选择使用 UI 框架来简化这个过程。 这里有一个简短的选项列表，你可以考虑一下。
+
+* [jQuery Mobile](http://jquerymobile.com/) - jQuery Mobile automatically enhances your layout for mobile optimization. It also handles creating a SPA for you automatically. - jQuery 移动自动增强您的布局移动优化。 它还可以自动为你创建 SPA
+* [ionic](http://ionicframework.com/) - This powerful UI framework actually has its own CLI to handle project creation. - 这个强大的 UI 框架实际上有自己的 CLI 来处理项目创建
+* [Ratchet](http://goratchet.com/) - Brought to you by the people who created Bootstrap. - 由创建 Bootstrap 的人带来
+* [Kendo UI](http://www.telerik.com/kendo-ui) - Open source UI and application framework from Telerik. - Telerik 的开源用户界面及应用程式架构
+* [Topcoat ](http://topcoat.io/)
+* [ReactJS](http://facebook.github.io/react/)
+
+在构建用户界面时，考虑所有的目标平台和用户期望之间的差异是很重要的。 例如，具有 ios 风格的用户界面的 Android 应用程序可能不会受到用户的欢迎。 这有时甚至是由各种应用程序存储强制执行的。 因此，重要的是你要尊重每个平台的约定，因此熟悉各种人机交互指南:
+
+* [iOS](https://developer.apple.com/library/ios/documentation/userexperience/conceptual/MobileHIG/index.html)
+* [Android 安卓系统](http://developer.android.com/design/index.html)
+* [Windows Phone](https://dev.windows.com/en-us/design)
+
+#### 附加用户界面文章和资源
+
+尽管浏览器引擎变得越来越标准化，我们仍然生活在一个固定的世界(- webkit 和-ms)下面的文章对于开发用于跨浏览器应用程序的用户界面很有价值: http://blogs.windows.com/windows_phone/b/wpdev/archive/2012/11/15/adapting-your-webkit-optimized-site-for-internet-explorer-10.aspx
+
+## 查看帮助文档
+
+```bash
+cordova help
+```
