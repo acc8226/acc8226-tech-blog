@@ -1,10 +1,8 @@
-## 使用
-
-### （一）导入
+## 导入
 
 > 导入 Leakcanary-watcher、Leakcanary-analyzer、Leakcanary-android， 在当前项目的引用 Leakcanary-android 这个 library。
 
-### （二）在 AndroidManifest 中配置
+## 在 AndroidManifest 中配置
 
 打开当前的 AndroidManifest 添加下面的代码。
 
@@ -44,11 +42,11 @@
 > 还有权限
 
 ```xml
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 ```
 
-### （三）在 Application 中初始化
+## 在 Application 中初始化
 
 > 新建一个 Application 类，继承自 Application 的，如果你项目已经有那就不需要新建了。
 覆盖 onCreate() 方法，在 onCreate() 方法里调用 LeakCanary 的 install() 方法就可以了。
@@ -68,7 +66,7 @@ public class MyApplication extends Application {
 }
 ```
 
-## 三、感谢
+## 感谢
 
 * 感谢 [Square](https://github.com/square) 提供的 [Leakcanary](https://github.com/square/leakcanary)。
 * 版权声明：本文为 cekiasoo 原创文章，转载请务必注明[出处](http://blog.csdn.net/cekiasoo/article/details/70880740)！
