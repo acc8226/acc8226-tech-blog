@@ -4,9 +4,9 @@
 
 ## scrcpy
 
-推荐一款开源免费, 跨平台支持 Win、Mac、Linux，可通过 USB 数据线 (或WiFi) 连接电脑，将手机画面投屏到电脑显示，并可使用键盘鼠标远程控制你的手机
+推荐一款开源免费, 跨平台支持 Win、Mac、Linux，可通过 USB 数据线 (或 WiFi) 连接电脑，将手机画面投屏到电脑显示，并可使用键盘鼠标远程控制你的手机
 
-> This application provides display and control of Android devices connected on USB (or [over TCP/IP](https://www.genymotion.com/blog/open-source-project-scrcpy-now-works-wirelessly/)). It does not require any *root* access. It works on *GNU/Linux*, *Windows* and *macOS*.
+This application provides display and control of Android devices connected on USB (or [over TCP/IP](https://www.genymotion.com/blog/open-source-project-scrcpy-now-works-wirelessly/)). It does not require any *root* access. It works on *GNU/Linux*, *Windows* and *macOS*.
 
 It focuses on:
 
@@ -172,7 +172,7 @@ variation] does not impact the recorded file.
 
 #### Wireless 无线连接
 
-_Scrcpy_ uses `adb` to communicate with the device, and `adb` can [connect] to a
+*Scrcpy* uses `adb` to communicate with the device, and `adb` can [connect] to a
 device over TCP/IP:
 
 1. 查询设备当前的 IP 地址 (设置 →关于手机→状态)
@@ -254,7 +254,6 @@ scrcpy --window-borderless
 #### Always on top
 
 保持 scrcpy 窗口始终在顶部:
-To keep the scrcpy window always on top:
 
 ```bash
 scrcpy --always-on-top
@@ -417,7 +416,8 @@ _¹Double-click on black borders to remove them._
 _²Right-click turns the screen on if it was off, presses BACK otherwise._
 
 ## Custom paths
-To use a specific _adb_ binary, configure its path in the environment variable
+
+To use a specific *adb* binary, configure its path in the environment variable
 `ADB`:
 
 ADB=/path/to/adb scrcpy

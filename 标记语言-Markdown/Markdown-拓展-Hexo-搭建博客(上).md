@@ -13,8 +13,7 @@ Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 [Markdown](
 * [Node.js](http://nodejs.org/)
 * [Git](http://git-scm.com/)
 
-> **Node.js 版本限制**
-> 我们强烈建议永远安装最新版本的 Hexo，以及 [推荐的 Node.js 版本](https://hexo.io/zh-cn/docs/#%E5%AE%89%E8%A3%85%E5%89%8D%E6%8F%90)。
+Node.js 版本限制：我们强烈建议永远安装最新版本的 Hexo，以及 [推荐的 Node.js 版本](https://hexo.io/zh-cn/docs/#%E5%AE%89%E8%A3%85%E5%89%8D%E6%8F%90)。
 
 如果您的电脑中已经安装上述必备程序，那么恭喜您！接下来只需要使用 npm 即可完成 Hexo 的安装。
 
@@ -55,7 +54,9 @@ $ npm install
 您可以在 `_config.yml` 中修改大部分的配置。
 
 **独立的 _config.[theme].yml 文件**
-> 该特性自 Hexo 5.0.0 起提供
+
+该特性自 Hexo 5.0.0 起提供
+
 > **我们强烈建议你将所有的主题配置集中在一处**。如果你不得不在多处配置你的主题，那么这些信息对你将会非常有用：Hexo 在合并主题配置时，Hexo 配置文件中的 `theme_config` 的优先级最高，其次是 `_config.[theme].yml` 文件，最后是位于主题目录下的 `_config.yml` 文件。
 >
 > 顺序: `theme_config` > `_config.[theme].yml` > 主题目录下的`_config.yml`
@@ -67,7 +68,7 @@ hexo new [layout] <title>
 ```
 
 新建一篇文章。如果没有设置 `layout` 的话，默认使用 [_config.yml](https://hexo.io/zh-cn/docs/configuration) 中的 `default_layout` 参数代替。如果标题包含空格的话，请使用引号括起来。
-示例`hexo new "My New Post"`
+示例 `hexo new "My New Post"`
 
 ## 生成静态文件
 

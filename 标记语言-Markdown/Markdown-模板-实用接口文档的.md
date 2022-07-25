@@ -32,7 +32,7 @@ POST
 |resultMsg | string | 提示话术  |
 |resultBody |object |  依情况而定 |
 
-**响应体说明**
+**响应体说明：**
 
 |参数名|类型|说明|
 |:-----  |:-----|-----
@@ -45,7 +45,7 @@ POST
 | ├──  dateTime | string | 操作时间|
 | ├──  description  | string | 操作后状态 |
 
-**返回示例**
+**返回示例：**
 
 ```json
 {

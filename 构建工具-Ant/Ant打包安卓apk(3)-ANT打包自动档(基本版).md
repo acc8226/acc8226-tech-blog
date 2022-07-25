@@ -1,6 +1,7 @@
 1. ANT支持
 2. 配置环境变量(android和ANT都需要)
-```
+
+```sh
 export ANDROID_HOME=/Users/Stay/Desktop/develop/android-sdk-mac_x86/
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 export PATH=${PATH}:${ANDROID_HOME}/tools
@@ -18,7 +19,7 @@ export PATH=${PATH}:${ANT_HOME}/bin
 
 project.properties格式如下
 
-```
+```properties
 # Project target.
 target=android-22
 ```

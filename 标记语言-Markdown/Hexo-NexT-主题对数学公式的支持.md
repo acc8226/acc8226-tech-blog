@@ -25,9 +25,10 @@ math:
     copy_tex: false
 ```
 
-> `per_page` 是控制是否每页呈现数学方程式。
-> * true → Equations will be processed on 每一页. Even if they not exists on one or another page.
-> * false → 它只会渲染那些含有 `mathjax: true` 的文章
+`per_page` 是控制是否每页呈现数学方程式。
+
+* true → Equations will be processed on 每一页. Even if they not exists on one or another page.
+* false → 它只会渲染那些含有 `mathjax: true` 的文章
 
 ```yml
 <!-- This post will render the Math Equations -->
@@ -83,19 +84,19 @@ math:
 
 与 MathJax 相比，KaTeX 引擎是一个更快的数学渲染引擎，而且没有 JavaScript 它也能生存。
 
-1. 需要卸载原始渲染器 hexo-renderer
+1\. 需要卸载原始渲染器 hexo-renderer
 
 ```sh
 npm un hexo-renderer-marked
 ```
 
-2. 如果你使用 KaTeX 渲染数学公式，你需要安装渲染器选中的一个:
+2\. 如果你使用 KaTeX 渲染数学公式，你需要安装渲染器选中的一个:
 
 ```sh
 npm i hexo-renderer-markdown-it-plus # or hexo-renderer-markdown-it
 ```
 
-3. 在主题配置文件中，选择 katex 作为渲染引擎。
+3\. 在主题配置文件中，选择 katex 作为渲染引擎。
 
 ```yml
 math:
@@ -104,7 +105,7 @@ math:
     enable: true
 ```
 
-4. 运行标准 Hexo 生成、部署进程或启动服务器:
+4\. 运行标准 Hexo 生成、部署进程或启动服务器:
 
 ```sh
 hexo clean && hexo g -d
@@ -120,8 +121,9 @@ Mhchem 是 MathJax 的第三方扩展，是一个可以轻松写出漂亮的化�
 Katex 的 Copy-tex 扩展修改了任何支持剪贴板 API 的浏览器中的复制 / 粘贴行为，这样，当选择和复制整个 KaTeX 渲染的元素时，结果剪贴板的文本内容将呈现 KaTeX 元素作为其 LaTeX 源，并由指定的分隔符包围。 更多信息:  [Copy-tex extension](https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex).
 
 注意:
+
 1. Displayed Math `(i.e. $$...$$) `需要以新行开始, 换言之before the opening `$$ `and after the ending `$$`不能出现任何非空白字符
-2.  不支持 Unicode 编码
+2. 不支持 Unicode 编码
 3. Inline Math (..`$...$`) 不能包含空格 **after the opening `$` and before the ending `$`** ([comment #32](https://github.com/theme-next/hexo-theme-next/pull/32#issuecomment-357489509)).
 4. Heading中使用 math, 在使用 toc 时候会出现三次, 因此 head 中不建议使用 math
 5. 如果你在你的 post's title 中使用 math，它不会被渲染
@@ -173,7 +175,7 @@ $$
 多重对齐方程
 我们可以用 `align` 来排列多个方程，每个方程都有自己的数字。
 
-```
+```tex
 $$\begin{align}
 a &= b + c \label{eq3} \\
 x &= yz \label{eq4}\\
@@ -191,7 +193,7 @@ l &= m - n \label{eq5}
 
 统一表示方法：`\color{颜色}{文本}`
 
-```
+```tex
 # *附 上面那种 - MarkDown 彩色字体语法：
 $\color{black}{黑色(\text{black})}$
 $\color{red}{红色(\text{red})}$
@@ -205,6 +207,7 @@ $\color{silver}{银色}$
 $\color{lime}{浅绿色}$
 $\color{navy}{藏青色}$
 ```
+
 $\color{black}{黑色(\text{black})}$
 $\color{red}{红色(\text{red})}$
 $\color{blue}{蓝色(\text{blue})}$
@@ -219,7 +222,7 @@ $\color{navy}{藏青色}$
 
 ## 字体特效设置
 
-```
+```tex
 $\bf{加粗}$
 $\underline{下划线}$
 $\enclose{horizontalstrike}{删除线}	$

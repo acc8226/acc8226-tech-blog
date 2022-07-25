@@ -172,8 +172,9 @@ tags:
 ## next 主题添加 categories 和 tags
 
 ```yml
-$ cd hexo-site
-$ hexo new page tags
+cd hexo-site
+
+hexo new page tags
 ```
 
 编辑新页面并将类型更改为标签，主题将在此页面中自动显示标签云。页面内容如下:
@@ -205,8 +206,6 @@ type: categories
 
 ## next 主题添加 404 页面
 
- 自定义404页
-
 在终端中，切换到站点根目录的源文件夹。创建一个名为404的新文件夹，然后在其中创建一个新页面:
 
 ```sh
@@ -216,7 +215,7 @@ hexo new page 404
 
 如果你想启用公益404(腾讯在中国提供的服务) ，请编辑404/index.md，像这样:
 
-```md
+```yml
 ---
 title: '404'
 date: 2014-12-22 12:39:04
@@ -227,7 +226,7 @@ comments: false
 </script>
 ```
 
-通过编辑主题配置文件在菜单中添加404:
+通过编辑主题配置文件在菜单中添加 404:
 
 ```yaml
 menu:
@@ -238,7 +237,7 @@ menu:
 
 ## 添加本地搜索
 
-Local 本地Search 搜寻
+Local 本地 Search 搜寻
 
 ```sh
 npm install hexo-generator-searchdb

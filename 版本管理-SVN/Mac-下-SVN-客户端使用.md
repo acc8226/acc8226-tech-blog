@@ -4,7 +4,7 @@ mac 下已经自带了 svn 软件 。使用`svn –version` 查看是否安装�
 
 如果你有安装 XCode，只需要在 code > Preferences > download > Command Line Tools > Install 即可，速度很快，基本1分钟搞定。
 
-如果没有，不建议手动查找安装包，应该是在 [Apple Developer网站](https://developer.apple.com/downloads/index.action) 下载Command_Line_Tools_for_Xcode.dmg 安装包。
+如果没有，不建议手动查找安装包，应该是在 [Apple Developer网站](https://developer.apple.com/downloads/index.action) 下载 Command_Line_Tools_for_Xcode.dmg 安装包。
 当然也可以命令行安装 `xcode-select --install`。
 
 也可使用 brew 安装 svn

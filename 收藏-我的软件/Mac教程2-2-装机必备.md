@@ -18,7 +18,6 @@
 IINA - The modern media player for macOS
 <https://iina.io/>
 或 VLC
-或 腾讯影音
 
 ### 可选包
 

@@ -8,13 +8,13 @@ turtle(海龟)库是 turtle 绘图体系的 Python 实现
 
 ## turtle的绘图窗体
 
-turtle的一个画布空间, 最小单位是像素
+turtle 的一个画布空间, 最小单位是像素
 
 ## turtle的绘图窗体
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-49ad7647de219653.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-###### 绘制窗体
+### 绘制窗体
 
 turtle.setup(width, height, startx, starty)
 * setup()设置窗体大小及位置
@@ -23,14 +23,14 @@ turtle.setup(width, height, startx, starty)
 
 ![setup()设置窗体大小及位置](https://upload-images.jianshu.io/upload_images/1662509-6304edddba25bb6b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-###### 绝对坐标
+### 绝对坐标
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-014075ad9f32fc37.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 `turtle.goto( 100, 100)` \#去往绝对坐标
 `turtle.seth(angle)`  \#改变绝对角度, 别名 turtle.setheading(angle)
 
-###### 相对(海龟)坐标
+### 相对(海龟)坐标
 
 `circle(r,extent=None)` \#以左侧为圆心,来个整圆, 相当于第二个参数360度
 `turtle.circle(30, 180)` \#以左侧为圆心
@@ -54,7 +54,7 @@ turtle.setup(width, height, startx, starty)
 ![](https://upload-images.jianshu.io/upload_images/1662509-fded7b2fd8739b2e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ![](https://upload-images.jianshu.io/upload_images/1662509-f3a1a84d4549c980.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-###### turtle的RGB色彩模式
+### turtle的RGB色彩模式
 
 `turtle.colormode(mode)` \#默认采用小数值 可切换为整数值
 
@@ -65,7 +65,7 @@ turtle.pencolor("purple") \#颜色字符串
 turtle.pencolor(255, 215, 0) \#RGB的整数值
 turtle.pencolor((0.63,0.13,0.94)) \#RGB的元组值
 
-###### 画笔控制函数
+### 画笔控制函数
 
 turtle.penup() 别名 turtle.pu()
 抬起画笔，海龟在飞行
@@ -79,7 +79,7 @@ turtle.pensize(width) 别名 turtle.width(width)
 turtle.pencolor(color) color为颜色字符串或r,g,b值
 画笔颜色，海龟在涂装
 
-# 库引用
+## 库引用
 
 扩充Python程序功能的方式
 - 使用import保留字完成，采用<a>.<b>()编码风格
@@ -122,9 +122,9 @@ turtle.done()
 Output
 ![](https://upload-images.jianshu.io/upload_images/1662509-66c9bee2732950d5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-# 循环语句
+## 循环语句
 
-###### for和in、range()函数
+### for和in、range()函数
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-ff92fec37bbd6487.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
