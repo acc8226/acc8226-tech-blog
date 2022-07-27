@@ -61,7 +61,7 @@
 | central          | <https://maven.aliyun.com/repository/central>          | <https://maven.aliyun.com/nexus/content/repositories/central>  | <https://repo1.maven.org/maven2/>          |
 | jcenter          | <https://maven.aliyun.com/repository/public>           | <https://maven.aliyun.com/nexus/content/repositories/jcenter>  | <http://jcenter.bintray.com/>              |
 | public           | <https://maven.aliyun.com/repository/public>           | <https://maven.aliyun.com/nexus/content/groups/public>         | central仓和jcenter仓的聚合仓             |
-| google           | <https://maven.aliyun.com/repository/google>           | https://maven.aliyun.com/nexus/conten
+| google           | <https://maven.aliyun.com/repository/google>           | <https://maven.aliyun.com/nexus/conten>
 t/repositories/google   | <https://maven.google.com/>                |
 | gradle-plugin    | <https://maven.aliyun.com/repository/gradle-plugin>    | <https://maven.aliyun.com/nexus/content/repositories/gradle-plugin> | <https://plugins.gradle.org/m2/>           |
 | spring           | <https://maven.aliyun.com/repository/spring>           | <https://maven.aliyun.com/nexus/content/repositories/spring>   | <http://repo.spring.io/libs-milestone/>    |

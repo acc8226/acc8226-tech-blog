@@ -4,7 +4,7 @@
 $vim test.sh
 ```
 
-```
+```sh
 #!/bin/bash
 
 a=10
@@ -37,7 +37,7 @@ fi
 
 运行
 
-```
+```sh
 $bash test.sh
 a + b : 30
 a - b : -10
@@ -47,25 +47,26 @@ b % a : 0
 a != b
 ```
 
-> *   原生bash不支持简单的数学运算，但是可以通过其他命令来实现，例如 `awk` 和 `expr`，`expr` 最常用。
-> *   `expr` 是一款表达式计算工具，使用它能完成表达式的求值操作。
-> *   注意使用的反引号（esc键下边）
-> *   表达式和运算符之间要有空格`$a + $b`写成`$a+$b`不行
-> *   条件表达式要放在方括号之间，并且要有空格`[ $a == $b ]`写成`[$a==$b]`不行
-> *   乘号（`*`）前边必须加反斜杠（`\`)才能实现乘法运算
+* 原生bash不支持简单的数学运算，但是可以通过其他命令来实现，例如 `awk` 和 `expr`，`expr` 最常用。
+* `expr` 是一款表达式计算工具，使用它能完成表达式的求值操作。
+* 注意使用的反引号（esc键下边）
+* 表达式和运算符之间要有空格 `$a + $b` 写成 `$a+$b` 不行
+* 条件表达式要放在方括号之间，并且要有空格 `[ $a == $b ]` 写成 `[$a==$b]` 不行
+* 乘号（`*`）前边必须加反斜杠（`\`)才能实现乘法运算
 
 ## 关系运算符
+
 关系运算符只支持数字，不支持字符串，除非字符串的值是数字。
 
 ![5-2-1](https://upload-images.jianshu.io/upload_images/1662509-f439b2895cbf3418?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 实例
 
-```
+```sh
 vim test2.sh
 ```
 
-```
+```sh
 #!/bin/bash
 
 a=10
@@ -81,17 +82,18 @@ fi
 
 运行
 
-```
+```sh
 $bash test2.sh
 10 -eq 20: a != b
 ```
 
 ## 逻辑运算符
+
 ![](https://upload-images.jianshu.io/upload_images/1662509-a6d893e9fd78e613?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 实例
 
-```
+```sh
 #!/bin/bash
 a=10
 b=20
@@ -113,16 +115,15 @@ fi
 
 结果
 
-```
+```sh
 return false
 return true
 ```
 
-
 ## 字符串运算
 ![](https://upload-images.jianshu.io/upload_images/1662509-780c799ea43ddb48?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-```
+```sh
 #!/bin/bash
 
 a="abc"
@@ -150,7 +151,7 @@ fi
 
 结果
 
-```
+```sh
 abc = efg: a != b
 -n abc : The string length is not 0
 abc : The string is not empty
@@ -162,7 +163,7 @@ abc : The string is not empty
 
 实例
 
-```
+```sh
 #!/bin/bash
 
 file="/home/shiyanlou/test.sh"
@@ -188,11 +189,12 @@ File exists
 ```
 
 ## 支持浮点运算
+
 浮点运算，比如实现求圆的面积和周长。
 
 > `expr` 只能用于整数计算，可以使用 `bc` 或者 `awk` 进行浮点数运算。
 
-```
+```sh
 #!/bin/bash
 
 raduis=2.4
@@ -210,7 +212,7 @@ echo "area=$area"
 
 > 以上代码如果想在环境中运行，需要先安装 `bc`。
 
-```
+```sh
 $ sudo apt-get update
 $ sudo apt-get install bc
 ```
@@ -229,8 +231,8 @@ $ sudo apt-get install bc
 
 ## 注意
 
-*   文件名一定要一致，以便于验证结果
-*   文件创建在 `/home/shiyanlou/` 下
+* 文件名一定要一致，以便于验证结果
+* 文件创建在 `/home/shiyanlou/` 下
 
 ## 参考代码
 
@@ -240,7 +242,7 @@ $ sudo apt-get install bc
 
 `/home/shiyanlou/Area.sh` 的参考代码：
 
-```
+```sh
 #!/bin/bash
 a=3
 b=2
@@ -249,7 +251,7 @@ echo `expr $a \* $b`
 
 `/home/shiyanlou/Cum.sh` 的参考代码：
 
-```
+```sh
 #!/bin/bash
 a=3
 b=2

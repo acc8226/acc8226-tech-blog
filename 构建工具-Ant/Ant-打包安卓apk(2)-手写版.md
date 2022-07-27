@@ -3,9 +3,7 @@
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <project default="package resources" basedir=".">
-  <description>
-		安卓构建脚本
-  </description>
+  <description>安卓构建脚本</description>
   <property name="project-dir" location="."/>
 
   <property environment="env" />

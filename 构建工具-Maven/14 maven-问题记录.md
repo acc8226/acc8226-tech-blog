@@ -26,7 +26,7 @@ Test*.java ：以 Test 开头的 Java 类；
 *Test.java ：以 Test 结尾的 Java 类;
 *TestCase.java：以 TestCase 结尾的 Java 类。
 
-### Maven 3.8.1 报错 Blocked mirror for repositories
+### Maven 3.8.x 报错 Blocked mirror for repositories
 
 ```text
 [ERROR] Failed to execute goal on project test: Could not resolve dependencies for project xxx: Failed to collect dependencies at my.test:dependency:version -> my.test.transitive:transitive:version: Failed to read artifact descriptor for my.test.transitive:transitive:jar:version: Could not transfer artifact my.test.transitive:transitive:pom:version from/to maven-default-http-blocker (http://0.0.0.0/): Blocked mirror for repositories: [blocked-repository-id (http://blocked.repository.org, default, releases+snapshots)]
@@ -37,6 +37,10 @@ Test*.java ：以 Test 开头的 Java 类；
 * 将依赖性版本升级到新版本，用 HTTPS 版本替换过时的 HTTP 存储库 URL
 * 保留依赖版本，但在设置中定义一个镜像。
 * 注释掉 `$MAVEN_HOME/conf/settings.xml` 中的拦截标签。
+
+```xml
+
+```
 
 ### 使用 maven 打包失败，报 Unknown lifecycle phase “.test.skip=true“
 

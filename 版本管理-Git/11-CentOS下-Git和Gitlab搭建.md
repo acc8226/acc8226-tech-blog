@@ -41,10 +41,9 @@ yum install gcc perl-ExtUtils-MakeMaker
 
 ## 创建 git 账号密码
 
-为我们刚刚搭建好的 git 创建一个账号
-`useradd -m gituser`
-设置密码
-`passwd gituser`
+为我们刚刚搭建好的 git 创建一个账号 `useradd -m gituser`
+
+设置密码 `passwd gituser`
 
 ## 创建 git 仓库并初始化
 
@@ -61,8 +60,11 @@ cd /data/git-repositories/ && git init --bare helloWorld.git
 ```
 
 给 git 仓库目录设置用户和用户组并设置权限
+
+```sh
 chown -R gituser:gituser /data/git-repositories
 chmod 755 /data/git-repositories
+```
 
 ### 使用搭建好的 Git 服务
 
@@ -74,48 +76,47 @@ git clone gituser@<您的 CVM IP 地址>:/data/git-repositories/helloWorld.git
 
 ## Gitlab 搭建
 
-1. 安装依赖包。
+1\. 安装依赖包。
 
 ```sh
 sudo yum install -y curl policycoreutils-python openssh-server
 ```
 
-2. 设置SSH开机自启动并启动SSH服务。
+2\. 设置SSH开机自启动并启动SSH服务。
 
-    ```sh
-    sudo systemctl enable sshd
-    sudo systemctl start sshd
-    ```
+```sh
+sudo systemctl enable sshd
+sudo systemctl start sshd
+```
 
-3. 安装 Postfix 来发送通知邮件。
+3\. 安装 Postfix 来发送通知邮件。
 
-    ```sh
-    sudo yum install postfix
-    ```
+```sh
+sudo yum install postfix
+```
 
-4. 设置 Postfix 开机自启动。
+4\. 设置 Postfix 开机自启动。
 
-    ```sh
-    sudo systemctl enable postfix
-    ```
+```sh
+sudo systemctl enable postfix
+```
 
-5.  启动 Postfix 服务。
-    1.  输入命令`vim /etc/postfix/main.cf`打开main.cf文件并找到下图内容：
-        [![](https://upload-images.jianshu.io/upload_images/1662509-281b14ccc1844e9b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/9777/155125473138837_zh-CN.png)
-    2.  将这行代码改为`inet_interfaces = all`，然后按`Esc`键，然后输入`:wq`并回车以保存并关闭main.cf文件。
-    3.  输入命令`sudo systemctl start postfix`启动Postfix服务。
-6. 添加 GitLab 软件包仓库。
+5\. 启动 Postfix 服务。
+
+输入命令`vim /etc/postfix/main.cf`打开 main.cf 文件并找到如下内容 `inet_interfaces = localhost` 将这行代码改为 `inet_interfaces = all`，然后按`Esc`键，然后输入`:wq`并回车以保存并关闭main.cf文件。输入命令 `sudo systemctl start postfix` 启动 Postfix 服务。
+
+6\. 添加 GitLab 软件包仓库。
 
 ```sh
 curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh | sudo bash
 ```
 
-7. 安装 GitLab。
+7\. 安装 GitLab。
 
-```
+```sh
 sudo EXTERNAL_URL="GitLab服务器的公网IP地址" yum install -y gitlab-ce
 ```
 
 **说明** 您可从 ECS 管理控制台的实例列表页找到GitLab服务器的公网IP地址。
 
-8. 使用浏览器访问 GitLab 服务器的公网IP地址，显示如下页面，说明环境搭建成功。
+8\. 使用浏览器访问 GitLab 服务器的公网IP地址，显示如下页面，说明环境搭建成功。

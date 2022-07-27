@@ -3,7 +3,7 @@
 　1. 根据资源文件和 AndroidManifest.xml 生成 R.java 文件
 　2. 处理 aidl，生成对应的 java文件，如果没有 aidl，则跳过
 　3. 编译工程源码（主项目，库）src 目录下所有的源码，同时上边生成的R.java和aidl生成的java文件也会被编译生成相应的 class 文件
-　4. 将第3步生成的class文件打包生成 .dex 文件
+　4. 将第 3 步生成的 class 文件打包生成 .dex 文件
 　5. 将资源文件打包，生成初始的apk
 　6. 将第 4 步生成的 .dex 文件加入到apk中生成未签名的包
 　7. apk 签名
@@ -25,7 +25,7 @@ aapt package -f -m -M AndroidManifest.xml -I D:/Android/android-sdk/platforms/an
 　　-S : res文件夹路径 resource-sources
 　　-J : R.java的输出目录
 
-## 2. 编译aidl文件
+## 2. 编译 aidl 文件
 
 没有则可以忽略
 
@@ -43,7 +43,8 @@ aapt package -f -m -M AndroidManifest.xml -I D:/Android/android-sdk/platforms/an
 注意:
 
 > * `-d`文件夹必须存在, 否则会`javac: 找不到目录: bin/classes`, 所以的手动mkdir
-> * 提示找不到`符号:   类 BuildConfig`, 由于我是从Eclipse拷出的项目, 手动copy一个到`gen`下`R.java`的同级目录即可.
+> * 提示找不到`符号:   类 BuildConfig`, 由于我是从Eclipse拷出的项目, 手动copy一个到`gen`下`R.java`的同级目录即可。
+
 ``` java
 /** Automatically generated file. DO NOT MODIFY */
 package com.nci.insprotection;
@@ -64,8 +65,7 @@ public final class BuildConfig {
 
 ## 5. 打包assets和res资源为资源压缩包(例如res.zip 或者 resources.ap_ 这样的名字都可以)
 
-`aapt package -f -M AndroidManifest.xml -I D:/Android/android-sdk/platforms/android-22/android.jar -A assets -S res -F bin/res.zip
-`
+`aapt package -f -M AndroidManifest.xml -I D:/Android/android-sdk/platforms/android-22/android.jar -A assets -S res -F bin/res.zip`
 
 * -f 如果编译生成的文件已经存在，强制覆盖。
 * -M 使生成的包的目录存放在-J参数指定的目录
@@ -74,7 +74,7 @@ public final class BuildConfig {
 * -S 指定res文件夹的路径
 * -F 指定输出文件完整路径
 
-## 6. 用sdklib.jar打包apk(组合classes.dex和res.zip生成未签名的APK)
+## 6. 用 sdklib.jar 打包 apk(组合classes.dex和res.zip生成未签名的APK)
 
 老版本可以用apkbuild.bat的命令`apkbuilder bin/unsigned.apk -v -u -z bin/res.zip -f bin/classes.dex  `
 但是如果如果被移除的话, 可以在安卓sdk安装目录tools\lib下是否存在sdklib.jar, 如果存在还是可以打包的。

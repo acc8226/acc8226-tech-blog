@@ -15,7 +15,6 @@
 
 为了有利于项目维护、增强代码可读性、提升 Code Review 效率以及规范团队安卓开发，故提出以下安卓开发规范，该规范结合本人多年的开发经验并吸取多家之精华，可谓是本人的呕心沥血之作，称其为当前最完善的安卓开发规范一点也不为过，如有更好建议，欢迎到 GitHub 提 issue，原文地址：**[Android 开发规范（完结版）][Android 开发规范（完结版）]**。相关 Demo，可以查看我的 Android 开发工具类集合项目：**[Android 开发人员不得不收集的代码][Android 开发人员不得不收集的代码]**。后续可能会根据该规范出一个 CheckStyle 插件来检查是否规范，当然也支持在 CI 上运行。
 
-
 ### 2 AS 规范
 
 工欲善其事，必先利其器。
@@ -135,7 +134,7 @@ com
 
 参考以上的代码结构，按功能分包具体可以这样做：
 
-```
+```text
 com
 └── domain
     └── app
@@ -159,7 +158,6 @@ com
         ├── util 工具类
         └── widget 小部件
 ```
-
 
 #### 3.2 类名
 
@@ -187,7 +185,6 @@ com
 
 > 注意：如果项目采用 MVP，所有 Model、View、Presenter 的接口都以 I 为前缀，不加后缀，其他的接口采用上述命名规则。
 
-
 #### 3.3 方法名
 
 方法名都以 `lowerCamelCase` 风格编写。
@@ -208,7 +205,6 @@ com
 | `clearXX()`                 | 清除数据                                     |
 | `removeXX()`, `deleteXX()`  | 移除数据或者视图等，如 `removeView()`               |
 | `drawXX()`                  | 绘制数据或效果相关的，使用 draw 前缀标识                  |
-
 
 #### 3.4 常量名
 
@@ -232,7 +228,6 @@ static final ImmutableSetmutableElements = ImmutableSet.of(mutable);
 static final Logger logger = Logger.getLogger(MyClass.getName());
 static final String[] nonEmptyArray = {"these", "can", "change"};
 ```
-
 
 #### 3.5 非常量字段名
 
@@ -264,13 +259,11 @@ public class MyClass {
 
 使用 1 个字符前缀来表示作用范围，1 个字符的前缀必须小写，前缀后面是由表意性强的一个单词或多个单词组成的名字，而且每个单词的首写字母大写，其它字母小写，这样保证了对变量名能够进行正确的断句。
 
-
 ##### 3.5.2 Type0（控件类型）
 
 考虑到 Android 众多的 UI 控件，为避免控件和普通成员变量混淆以及更好地表达意思，所有用来表示控件的成员变量统一加上控件缩写作为前缀（具体见附录 [UI 控件缩写表](#ui-控件缩写表)）。
 
 例如：`mIvAvatar`、`rvBooks`、`flContainer`。
-
 
 ##### 3.5.3 VariableName（变量名）
 
@@ -286,7 +279,6 @@ public class MyClass {
 | `Pre`   | 一组变量中的上一个  |
 | `Cur`   | 一组变量中的当前变量 |
 
-
 ##### 3.5.4 Type1（数据类型）
 
 对于表示集合或者数组的非常量字段名，我们可以添加后缀来增强字段的可读性，比如：
@@ -299,11 +291,9 @@ public class MyClass {
 
 > 注意：如果数据类型不确定的话，比如表示的是很多书，那么使用其复数形式来表示也可，例如 `mBooks`。
 
-
 #### 3.6 参数名
 
 参数名以 `lowerCamelCase` 风格编写，参数应该避免用单个字符命名。
-
 
 #### 3.7 局部变量名
 
@@ -313,11 +303,9 @@ public class MyClass {
 
 即使局部变量是 `final` 和不可改变的，也不应该把它示为常量，自然也不能用常量的规则去命名它。
 
-
 #### 3.8 临时变量
 
 临时变量通常被取名为 `i`、`j`、`k`、`m` 和 `n`，它们一般用于整型；`c`、`d`、`e`，它们一般用于字符型。 如：`for (int i = 0; i < len; i++)`。
-
 
 #### 3.9 类型变量名
 
@@ -327,7 +315,6 @@ public class MyClass {
 2. 以类命名方式（参考[3.2 类名](#32-类名)），后面加个大写的 T（如：`RequestT`, `FooBarT`）。
 
 更多还可参考：**[阿里巴巴 Java 开发手册][阿里巴巴 Java 开发手册]**
-
 
 ### 4 代码样式规范
 
@@ -370,11 +357,9 @@ if (condition)
     body();  // bad!
 ```
 
-
 #### 4.2 编写简短方法
 
 在可行的情况下，尽量编写短小精炼的方法。我们了解，有些情况下较长的方法是恰当的，因此对方法的代码长度没有做出硬性限制。如果某个方法的代码超出 40 行，请考虑是否可以在不破坏程序结构的前提下对其拆解。
-
 
 #### 4.3 类成员的顺序
 
@@ -436,7 +421,6 @@ public class MainActivity extends Activity {
 }
 ```
 
-
 #### 4.4 函数参数的排序
 
 在 Android 开发过程中，`Context` 在函数参数中是再常见不过的了，我们最好把 `Context` 作为其第一个参数。
@@ -452,7 +436,6 @@ public User loadUser(Context context, int userId);
 // Callbacks always go last
 public void loadUserAsync(Context context, int userId, UserCallback callback);
 ```
-
 
 #### 4.5 字符串常量的命名和值
 
@@ -483,7 +466,6 @@ static final String EXTRA_SURNAME = "com.myapp.extras.EXTRA_SURNAME";
 static final String ACTION_OPEN_USER = "com.myapp.action.ACTION_OPEN_USER";
 ```
 
-
 #### 4.6 Activities 和 Fragments 的传参
 
 当 `Activity` 或 `Fragment` 传递数据通过 `Intent` 或 `Bundle` 时，不同值的键须遵循上一条所提及到的。
@@ -513,7 +495,6 @@ public static MainFragment newInstance(User user) {
 ```
 
 > 注意：这些函数需要放在 `onCreate()` 之前的类的顶部；如果我们使用了这种方式，那么 `extras` 和 `arguments` 的键应该是 `private` 的，因为它们不再需要暴露给其他类来使用。
-
 
 #### 4.7 行长限制
 
@@ -547,7 +528,6 @@ int longName =
         anotherVeryLongVariable + anEvenLongerOne - thisRidiculousLongOne + theFinalOne;
 ```
 
-
 ##### 4.7.1.2 函数链的换行
 
 当同一行中调用多个函数时（比如使用构建器时），对每个函数的调用应该在新的一行中，我们把换行符插入在 `.` 之前。
@@ -565,7 +545,6 @@ Picasso.with(context)
         .load("https://blankj.com/images/avatar.jpg")
         .into(ivAvatar);
 ```
-
 
 ##### 4.7.1.3 多参数的换行
 
@@ -586,7 +565,6 @@ loadPicture(context,
         "Avatar of the user",
         clickListener);
 ```
-
 
 ##### 4.7.1.4 RxJava 链式的换行
 
@@ -611,7 +589,6 @@ public Observable<Location> syncLocations() {
             });
 }
 ```
-
 
 ### 5 资源文件规范
 
@@ -647,7 +624,6 @@ public Observable<Location> syncLocations() {
 | `slide_in`          | 滑动进入    |
 | `shrink_to_middle`  | 中间缩小    |
 
-
 #### 5.2 颜色资源文件（color/）
 
 专门存放颜色相关的资源文件。
@@ -659,7 +635,6 @@ public Observable<Location> syncLocations() {
 例如：`sel_btn_font.xml`。
 
 颜色资源也可以放于 `res/drawable/` 目录，引用时则用 `@drawable` 来引用，但不推荐这么做，最好还是把两者分开。
-
 
 #### 5.3 图片资源文件（drawable/ 和 mipmap/）
 
@@ -708,7 +683,6 @@ public Observable<Location> syncLocations() {
 
 > 注意：使用 Android Studio 的插件 SelectorChapek 可以快速生成 selector，前提是命名要规范。
 
-
 #### 5.4 布局资源文件（layout/）
 
 命名规则：`类型_模块名`、`类型{_模块名}_逻辑名称`。
@@ -727,7 +701,6 @@ public Observable<Location> syncLocations() {
 | `ppw_info.xml`              | 信息弹窗（PopupWindow） `类型_逻辑名称` |
 | `item_main_song.xml`        | 主页歌曲列表项 `类型_模块名_逻辑名称`       |
 
-
 #### 5.5 菜单资源文件（menu/）
 
 菜单相关的资源文件应放在该目录下。
@@ -737,7 +710,6 @@ public Observable<Location> syncLocations() {
 说明：`{}` 中的内容为可选。
 
 例如：`main_drawer.xml`、`navigation.xml`。
-
 
 #### 5.6 values 资源文件（values/）
 
@@ -788,7 +760,6 @@ public Observable<Location> syncLocations() {
 
 > 注意：如果某些颜色和主题有关，那就单独写一个 `colors_theme.xml`。
 
-
 ##### 5.6.2 dimens.xml
 
 像对待 `colors.xml` 一样对待 `dimens.xml` 文件，与定义颜色调色板一样，你同时也应该定义一个空隙间隔和字体大小的“调色板”。 一个好的例子，如下所示：
@@ -819,7 +790,6 @@ public Observable<Location> syncLocations() {
 
 布局时在写 `margins` 和 `paddings` 时，你应该使用 `spacing_xx` 尺寸格式来布局，而不是像对待 `string` 字符串一样直接写值，像这样规范的尺寸很容易修改或重构，会使应用所有用到的尺寸一目了然。 这样写会非常有感觉，会使组织和改变风格或布局非常容易。
 
-
 ##### 5.6.3 strings.xml
 
 `<string>` 的 `name` 命名使用下划线命名法，采用以下规则：`{模块名_}逻辑名称`，这样方便同一个界面的所有 `string` 都放到一起，方便查找。
@@ -834,12 +804,11 @@ public Observable<Location> syncLocations() {
 | `button_ok`         | 确认键     |
 | `loading`           | 加载文字    |
 
-
 ##### 5.6.4 styles.xml
 
 `<style>` 的 `name` 命名使用大驼峰命名法，几乎每个项目都需要适当的使用 `styles.xml` 文件，因为对于一个视图来说，有一个重复的外观是很常见的，将所有的外观细节属性（`colors`、`padding`、`font`）放在 `styles.xml` 文件中。 在应用中对于大多数文本内容，最起码你应该有一个通用的 `styles.xml` 文件，例如：
 
-```
+```xml
 <style name="ContentText">
     <item name="android:textSize">@dimen/font_normal</item>
     <item name="android:textColor">@color/basic_black</item>
@@ -848,7 +817,7 @@ public Observable<Location> syncLocations() {
 
 应用到 `TextView` 中：
 
-```
+```xml
 <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -859,13 +828,11 @@ public Observable<Location> syncLocations() {
 
 或许你需要为按钮控件做同样的事情，不要停止在那里，将一组相关的和重复 `android:xxxx` 的属性放到一个通用的 `<style>` 中。
 
-
 #### 5.7 id 命名
 
 命名规则：`view 缩写{_模块名}_逻辑名`，例如： `btn_main_search`、`btn_back`。
 
 如果在项目中有用黄油刀的话，使用 AS 的插件：ButterKnife Zelezny，可以非常方便帮助你生成注解；没用黄油刀的话可以使用 Android Code Generator 插件。
-
 
 ### 6 版本统一规范
 
@@ -874,7 +841,6 @@ Android 开发存在着众多版本的不同，比如 `compileSdkVersion`、`min
 具体可以参考我写的这篇博文：**[Android 开发之版本统一规范][Android 开发之版本统一规范]**。
 
 如果是开发多个系统级别的应用，当多个应用同时用到相同的 `so` 库时，一定要确保 `so` 库的版本一致，否则可能会引发应用崩溃。
-
 
 ### 7 第三方库规范
 
@@ -893,7 +859,6 @@ Android 开发存在着众多版本的不同，比如 `compileSdkVersion`、`min
 * **[GreenDao][GreenDao]**
 * **[Dagger2][Dagger2]**（选用）
 * **[Tinker][Tinker]**（选用）
-
 
 ### 8 注释规范
 
@@ -934,7 +899,6 @@ public class WelcomeActivity {
 
 这样便可在每次新建类的时候自动加上该头注释。
 
-
 #### 8.2 方法注释
 
 每一个成员方法（包括自定义成员方法、覆盖方法、属性方法）的方法头都必须做方法头注释，在方法前一行输入 `/** + 回车` 或者设置 `Fix doc comment`（Settings -> Keymap -> Fix doc comment）快捷键，AS 便会帮你生成模板，我们只需要补全参数即可，如下所示。
@@ -954,7 +918,6 @@ public static byte[] bitmap2Bytes(Bitmap bitmap, CompressFormat format) {
     return baos.toByteArray();
 }
 ```
-
 
 #### 8.3 块注释
 
@@ -977,7 +940,6 @@ public static byte[] bitmap2Bytes(Bitmap bitmap, CompressFormat format) {
 
 > Tip：在写多行注释时，如果你希望在必要时能重新换行（即注释像段落风格一样），那么使用 `/* ... */`。
 
-
 #### 8.4 其他一些注释
 
 AS 已帮你集成了一些注释模板，我们只需要直接使用即可，在代码中输入 `todo`、`fixme` 等这些注释模板，回车后便会出现如下注释。
@@ -986,7 +948,6 @@ AS 已帮你集成了一些注释模板，我们只需要直接使用即可，�
 // TODO: 17/3/14 需要实现，但目前还未实现的功能的说明
 // FIXME: 17/3/14 需要修正，甚至代码是错误的，不能工作，需要修复的说明
 ```
-
 
 ### 9 测试规范
 
@@ -1016,5 +977,6 @@ AS 已帮你集成了一些注释模板，我们只需要直接使用即可，�
 2. `Activity` 和 `Fragment` 里面有许多重复的操作以及操作步骤，所以我们都需要提供一个 `BaseActivity`
 
 ## 转载地址
-Blankj/AndroidStandardDevelop: :star2: Best practices in Android develop(final).
-https://github.com/Blankj/AndroidStandardDevelop
+
+Blankj/AndroidStandardDevelop: :star2: Best practices in Android develop(final)
+<https://github.com/Blankj/AndroidStandardDevelop>

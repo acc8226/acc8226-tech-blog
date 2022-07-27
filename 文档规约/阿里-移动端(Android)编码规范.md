@@ -1,6 +1,7 @@
 为指导 Android 开发者更加高效、高质量地进行 App 开发，呈现给用户体验好、性能优、稳定性佳、安全性高的产品。
 
 本手册以开发者为中心视角分为Java语言规范，Android 资源文件命名与使用，Android 基本组件，UI 与布局，进程、线程与消息通信，文件与数据库，Bitmap、Drawable 与动画，安全，其他等九大部分，根据约束力强弱，规约依次分为强制、推荐、参考三大类：
+
 * 【强制】必须遵守，违反本约定或将会引起严重的后果；
 * 【推荐】尽量遵守，长期遵守有助于系统稳定性和合作效率的提升；
 * 【参考】充分理解，技术意识的引导，是个人学习、团队沟通、项目合作的方向
@@ -81,6 +82,7 @@ EditText | et
 
 Android 基本组件指 `Activity`、`Fragment`、`Service`、`BroadcastReceiver`、
 `ContentProvider` 等等。
+
 1. 【强制】Activity 间的数据通信，对于数据量比较大的，避免使用 Intent + Parcelable的方式，可以考虑 EventBus 等替代方案，以免造成 TransactionTooLargeException。
 
 2. 【推荐】Activity#onSaveInstanceState()方法不是 Activity 生命周期方法，也不保证一定会被调用。它是用来在 Activity 被意外销毁时保存 UI 状态的，只能用于保存临时性数据，例如 UI 控件的属性等，不能跟数据的持久化存储混为一谈。持久化存储应该在 Activity#onPause()/onStop()中实行。
@@ -143,6 +145,7 @@ Activity#onPause()/onStop()中结合 isFinishing()的判断来执行。
 17. 【强制】Activity或者Fragment中动态注册BroadCastReceiver时，registerReceiver()和 unregisterReceiver()要成对出现。
 
 ## 四、UI 与布局
+
 1. 【强制】布局中不得不使用 ViewGroup 多重嵌套时，不要使用 LinearLayout 嵌套，改用 RelativeLayout，可以有效降低嵌套数。
 
 2. 【推荐】在 Activity 中显示对话框或弹出浮层时，尽量使用 DialogFragment，而非Dialog/AlertDialog，这样便于随Activity生命周期管理对话框/弹出浮层的生命周期。
@@ -198,6 +201,7 @@ public void showPromptDialog(String text){
 10. 【 推荐 】 禁 止 在多 进 程 之 间 用 SharedPreferences 共 享数 据 ， 虽 然 可 以(MODE_MULTI_PROCESS)，但官方已不推荐。
 
 11.【推荐】谨慎使用 Android 的多进程，多进程虽然能够降低主进程的内存压力，但会遇到如下问题：
+
 * 不能实现完全退出所有 Activity 的功能；
 * 首次进入新启动进程的页面时会有延时的现象（有可能黑屏、白屏几秒，是白屏还是黑屏和新 Activity 的主题有关）；
 * 应用内多进程时，Application 实例化多次，需要考虑各个模块是否都需要在所有进程中初始化；
@@ -260,6 +264,7 @@ https://stackoverflow.com/questions/5474923/onanimationend-is-not-getting-called
 16. 【推荐】当 View Animation 执行结束时，调用 View.clearAnimation()释放相关资源。
 
 ## 八、安全
+
 1. 【强制】使用 PendingIntent 时，禁止使用空 intent，同时禁止使用隐式 Intent。
 
 2. 【强制】禁止使用常量初始化矢量参数构建 IvParameterSpec，建议 IV 通过随机方式产生。
@@ -270,7 +275,8 @@ https://stackoverflow.com/questions/5474923/onanimationend-is-not-getting-called
 复应用程序数据。
 
 正例：
-```
+
+```xml
 <application
 android:allowBackup="false"
 android:icon="@drawable/test_launcher"
@@ -278,31 +284,31 @@ android:label="@string/app_name"
 android:theme="@style/AppTheme" >
 ```
 
-4. 【强制】在实现的 HostnameVerifier 子类中，需要使用 verify 函数效验服务器主机名的合法性，否则会导致恶意程序利用中间人攻击绕过主机名效验。
+4\. 【强制】在实现的 HostnameVerifier 子类中，需要使用 verify 函数效验服务器主机名的合法性，否则会导致恶意程序利用中间人攻击绕过主机名效验。
 
-5. 【强制】利用 X509TrustManager 子类中的 checkServerTrusted 函数效验服务器端证书的合法性。
+5\. 【强制】利用 X509TrustManager 子类中的 checkServerTrusted 函数效验服务器端证书的合法性。
 
-6. 【强制】META-INF 目录中不能包含如.apk,.odex,.so 等敏感文件，该文件夹没有经过签名，容易被恶意替换。
+6\. 【强制】META-INF 目录中不能包含如.apk,.odex,.so 等敏感文件，该文件夹没有经过签名，容易被恶意替换。
 
-7. 【强制】Receiver/Provider 不能在毫无权限控制的情况下，将 android:export 设置为 true。
+7\. 【强制】Receiver/Provider 不能在毫无权限控制的情况下，将 android:export 设置为 true。
 
-8. 【参考】数据存储在 Sqlite 或者轻量级存储需要对数据进行加密，取出来的时候进行解密。
+8\. 【参考】数据存储在 Sqlite 或者轻量级存储需要对数据进行加密，取出来的时候进行解密。
 
-9. 【强制】阻止 webview 通过 file:schema 方式访问本地敏感数据。
+9\. 【强制】阻止 webview 通过 file:schema 方式访问本地敏感数据。
 
-10.【强制】不要广播敏感信息，只能在本应用使用 LocalBroadcast，避免被别的应用收到，或者 setPackage 做限制。
+10\.【强制】不要广播敏感信息，只能在本应用使用 LocalBroadcast，避免被别的应用收到，或者 setPackage 做限制。
 
-11.【强制】不要把敏感信息打印到 log 中。
+11\.【强制】不要把敏感信息打印到 log 中。
 > 说明：
 在 APP 的开发过程中，为了方便调试，通常会使用 log 函数输出一些关键流程的信息，这些信息中通常会包含敏感内容，如执行流程、明文的用户名密码等，这会让攻击者更加容易的了解 APP 内部结构方便破解和攻击，甚至直接获取到有价值的敏感信息。
 
-12.【强制】对于内部使用的组件，显示设置组件的"android:exported"属性为 false。
+12\.【强制】对于内部使用的组件，显示设置组件的"android:exported"属性为 false。
 
-13.【强制】应用发布前确保 android:debuggable 属性设置为 false。
+13\.【强制】应用发布前确保 android:debuggable 属性设置为 false。
 
-14.【强制】使用 Intent Scheme URL 需要做过滤。
+14\.【强制】使用 Intent Scheme URL 需要做过滤。
 
-15.【强制】密钥加密存储或者经过变形处理后用于加解密运算，切勿硬编码到代码中。
+15\.【强制】密钥加密存储或者经过变形处理后用于加解密运算，切勿硬编码到代码中。
 说明：
 应用程序在加解密时，使用硬编码在程序中的密钥，攻击者通过反编译拿到密钥可以轻易解密 APP 通信数据。
 
@@ -316,7 +322,7 @@ android:theme="@style/AppTheme" >
 
 20.【推荐】对于不需要使用 File 协议的应用，禁用 File 协议，显式设置 webView.getSettings().setAllowFileAccess(false)，对于需要使用 File 协议的应用，禁止 File协议调用 JavaScript，显式设置 webView.getSettings().setJavaScriptEnabled(false)。
 
-21. 【强制】Android APP 在 HTTPS 通信中，验证策略需要改成严格模式。 说明：Android APP 在 HTTPS 通信中，使用 ALLOW_ALL_HOSTNAME_VERIFIER，表示允许和所有的 HOST 建立 SSL 通信，这会存在中间人攻击的风险，最终导致敏感信息可能会被劫持，以及其他形式的攻击。
+21\. 【强制】Android APP 在 HTTPS 通信中，验证策略需要改成严格模式。 说明：Android APP 在 HTTPS 通信中，使用 ALLOW_ALL_HOSTNAME_VERIFIER，表示允许和所有的 HOST 建立 SSL 通信，这会存在中间人攻击的风险，最终导致敏感信息可能会被劫持，以及其他形式的攻击。
 
 22.【推荐】Android5.0 以后安全性要求较高的应用应该使用 window.setFlag(LayoutParam.FLAG_SECURE) 禁止录屏。
 

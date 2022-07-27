@@ -54,7 +54,7 @@ esac
 
 运行脚本之后要生产类似这样的解决方案：
 
-```
+```sh
 Your containers: 8     5     3
 
 Solution1 step0: 8-->0-->0
@@ -77,7 +77,7 @@ Solution1 step7: 4-->4-->0
 
 ![6-10-1](https://upload-images.jianshu.io/upload_images/1662509-5e77d2f80b1dbc9b?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-```
+```sh
 #!/bin/bash
 for((i=1;i<=5;i++))
 do
@@ -106,6 +106,7 @@ done
 ```
 
 ## bash挑战-最大值
+
 目标
 新建一个 test.sh，判断 8 4 5 三个数字的最大值
 
@@ -119,8 +120,9 @@ done
 
 此题解法不唯一，这里只是给出其中一种作为参考。
 
-/home/shiyanlou/test.sh 参考代码：
-```
+/home/shiyanlou/test.sh 参考代码
+
+```sh
 #!/bin/bash
 max=0
 a=8
@@ -136,7 +138,7 @@ done
 echo $max
 ```
 
-##  bash挑战-偶数之和
+## bash挑战-偶数之和
 
 ## 目标
 
@@ -156,7 +158,7 @@ echo $max
 
 `/home/shiyanlou/test.sh` 的参考代码：
 
-```
+```sh
 #!/bin/bash
 cnt=0
 sum=0
@@ -176,8 +178,9 @@ echo $sum
 
 首先让系统随机生成一个数字，给这个数字一个范围，让用户猜数字，对输入作出判断，并且给出提示。
 
-请用while语句实现。
-```
+请用 while 语句实现。
+
+```sh
 #!/bin/bash
 
 function randNum(){
@@ -201,4 +204,3 @@ function randNum(){
 
 randNum $(($RANDOM%100+1))
 ```
-

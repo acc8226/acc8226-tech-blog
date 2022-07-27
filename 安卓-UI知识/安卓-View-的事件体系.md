@@ -4,7 +4,7 @@ View 是 Android 中所有控件的基类。
 
 ### View的位置参数
 
-View 的位置由它的四个顶点来决定, 分别对应 View 的四个属性:top, left, right, bottom, 其中top是左上角的纵坐标, left 是左上角的横坐标, right是右下角的横坐标, bottom是右下角的纵坐标. 需要注意的是, 这些坐标都是**相对**于View的**父容器**来说的，这是一种**相对坐标**.
+View 的位置由它的四个顶点来决定, 分别对应 View 的四个属性:top, left, right, bottom, 其中 top 是左上角的纵坐标, left 是左上角的横坐标, right 是右下角的横坐标, bottom 是右下角的纵坐标. 需要注意的是, 这些坐标都是**相对**于View的**父容器**来说的，这是一种**相对坐标**.
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-bcf8a4cb0f5153d7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -24,7 +24,7 @@ width = right - left;
 height = bottom -top;
 ```
 
-从 Android3.0开始，View 增加了额外的几个参数； x, y, translationX 和 translationY,其中 x 和 y 是**View左上角的坐标**，而 translationX 和 translationY是View左上角**相对于父容器的偏移量**。这几个参数也是**相对于父容器的坐标**，并且translationX和 translationY的默认值是0，和View的四个基本的位置参数一样，View也为它们提供了get/set方法
+从 Android3.0开始，View 增加了额外的几个参数； x, y, translationX 和 translationY,其中 x 和 y 是**View左上角的坐标**，而 translationX 和 translationY 是View左上角**相对于父容器的偏移量**。这几个参数也是**相对于父容器的坐标**，并且 translationX 和 translationY 的默认值是0，和 View 的四个基本的位置参数一样，View 也为它们提供了get/set方法
 几个参数的换算关系如下所示：
 
 ```java
@@ -54,7 +54,7 @@ y = top + translationY;
 
 ##### 1.3.2 TouchSlop
 
-TouchSlop是系统所能识别出的被认为是**滑动的最小距离**，换个说法，当手指在屏幕上滑动时，如果两次滑动之间的距离小于这个 常量，那么系统就不认为你是在进行滑动操作。
+TouchSlop 是系统所能识别出的被认为是**滑动的最小距离**，换个说法，当手指在屏幕上滑动时，如果两次滑动之间的距离小于这个 常量，那么系统就不认为你是在进行滑动操作。
  原因间之：滑动的距离太短，系统不认为它是滑动的。这是一个常量，和设备有关，在不同设备上这个值可能是不同的，
 通过如下方式即可获取这个常量
 `ViewConfiguration.get(getContext()).getScaledTouchSlop();`
@@ -101,7 +101,7 @@ velocityTracker.recycle();
 
 使用过程：创建一个GestureDetector对象并实现OnGestureListener接口，再根据需要实现其中的方法，对用户的行为做出怎样的反应。接着，在View的onTouchEvent方法中做如下实现：
 
-```
+```java
       boolean consume = mGestureDetector.onTouchEvent(event);
       return consume;
 ```
@@ -175,13 +175,13 @@ public void scrollBy(int x, int y) {
 }
 ```
 
-从上面的源码可以看出，scrollBy实际上也是调用了scrollTo方法，它实现了基于当前位置的相对滑动，而scrollTo则实现了基于所传递参数的绝对滑动，这个不难理解。利用scrollTo和scrollBy来实现View的滑动，这不是一件困难的事，但是我们要明白滑动过程中View内部的两个属性mScrollX和mScrollY的改变规则，这两个属性可以通过getScrollX和getScrollY方法分别得到。这里先简要概况一下：在滑动过程中，**mScrollX的值总是等于View左边缘和View内容左边缘在水平方向的距离**，而**mScrollY的值总是等于View上边缘和View内容上边缘在竖直方向的距离**。View边缘是指View的位置，由四个顶点组成，而View内容边缘是指View中的内容的边缘，scrollTo和scrollBy只能改变View内容的位置而不能改变View在布局中的位置。mScrollX和mScrollY的单位为像素，并且当View左边缘在View内容左边缘的右边时，mScrollX为正值，反之为负值；当View上边缘在View内容上边缘的下边时，mScrollY为正值，反之为负值。换句话说，如果从左向右滑动，那么mScrollX为负值，反之为正值；如果从上往下滑动，那么mScrollY为负值，反之为正值。
+从上面的源码可以看出，scrollBy 实际上也是调用了 scrollTo 方法，它实现了基于当前位置的相对滑动，而scrollTo则实现了基于所传递参数的绝对滑动，这个不难理解。利用 scrollTo 和 scrollBy 来实现 View 的滑动，这不是一件困难的事，但是我们要明白滑动过程中 View 内部的两个属性 mScrollX 和 mScrollY 的改变规则，这两个属性可以通过getScrollX和getScrollY方法分别得到。这里先简要概况一下：在滑动过程中，**mScrollX的值总是等于View左边缘和View内容左边缘在水平方向的距离**，而**mScrollY的值总是等于View上边缘和View内容上边缘在竖直方向的距离**。View边缘是指View的位置，由四个顶点组成，而View内容边缘是指View中的内容的边缘，scrollTo和scrollBy只能改变View内容的位置而不能改变View在布局中的位置。mScrollX和mScrollY的单位为像素，并且当View左边缘在View内容左边缘的右边时，mScrollX为正值，反之为负值；当View上边缘在View内容上边缘的下边时，mScrollY为正值，反之为负值。换句话说，如果从左向右滑动，那么mScrollX为负值，反之为正值；如果从上往下滑动，那么mScrollY为负值，反之为正值。
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-15fafaa0cad05e5a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 > 大家在理解这个问题的时候，不妨这样想象手机屏幕是一个中空的盖板，盖板下面是一个巨大的画布，也就是我们想要显示的视图。当把这个盖板盖在画布上的某一处时，透过中间空的矩形，我们看见了手机屏幕上显示的视图，而画布上其他地方的视图，则被盖板盖住了无法看见。我们的视图与这个例子非常类似，我们没有看见视图，并不代表它就不存在，有可能只是在屏幕外面而已。当调用scrollBy方法时，可以想象为外面的盖板在移动
 
-如果在ViewGroup中使用scrollTo、scrollBy方法，那么移动的将是所有子View，但如果在View中使用，那么移动的将是View的内容，例如TextView，content就是它的文本；ImageView，content就是它的drawable对象。
+如果在 ViewGroup 中使用 scrollTo、scrollBy方法，那么移动的将是所有子 View，但如果在 View 中使用，那么移动的将是View的内容，例如 TextView，content 就是它的文本；ImageView，content就是它的drawable对象。
 
 相信通过上面的分析，读者朋友应该知道为什么不能在View中使用这两个方法来拖动这个View了。那么我们就该View所在的ViewGroup中来使用scrollBy方法，移动它的子View，代码如下所示。
 `((View) getParent()).scrollBy(offsetX, offsetY);`
@@ -193,7 +193,9 @@ public void scrollBy(int x, int y) {
 `ObjectAnimator.ofFloat(targetView, "translationX", 0, 200).setDuration(1000).start();`
 
 ### 2.3　改变布局参数
+
 本节将介绍第三种实现View滑动的方法，那就是改变布局参数，即改变LayoutParams。这个比较好理解了，比如我们想把一个Button向右平移100px，我们只需要将这个Button的LayoutParams里的marginLeft参数的值增加100px即可，是不是很简单呢？还有一种情形，为了达到移动Button的目的，我们可以在Button的左边放置一个空的View，这个空View的默认宽度为0，当我们需要向右移动Button时，只需要重新设置空View的宽度即可，当空View的宽度增大时（假设Button的父容器是水平方向的LinearLayout），Button就自动被挤向右边，即实现了向右平移的效果。如何重新设置一个View的Layout-Params呢？很简单，如下所示。
+
 ```
 MarginLayoutParams params = (MarginLayoutParams)mButton1.getLayoutParams();
 params.width += 100;
@@ -202,6 +204,7 @@ mButton1.requestLayout();   //或者mButton1.setLayoutParams(params);
 ```
 
 ### 2.4 各种滑动方式的对比
+
 * scrollTo/scrollBy这种方式，它是View提供的原生方法，其作用是专门用于View的滑动，它可以比较方便地实现滑动效果并且不影响内部元素的单击事件。但是它的缺点也是很显然的：**只能滑动View的内容**，并不能滑动View本身。
 * 通过动画来实现View的滑动，这要分情况。如果是Android 3.0以上并采用属性动画，那么采用这种方式没有明显的缺点；如果是使用View动画或者在Android 3.0以下使用属性动画，均不能改变View本身的属性。在实际使用中，如果动画元素不需要响应用户的交互，那么使用动画来做滑动是比较合适的，否则就不太适合。但是动画有一个很明显的优点，那就是一些复杂的效果必须要通过动画才能实现。
 * 下改变布局这种方式，它除了使用起来麻烦点以外，也没有明显的缺点，它的主要适用对象是一些具有交互性的View，因为这些View需要和用户交互，直接通过动画去实现会有问题，这在2.2节中已经有所介绍, 所以这个时候我们可以使用直接改变布局参数的方式去实现。

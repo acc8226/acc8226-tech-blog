@@ -17,6 +17,7 @@ turtle 的一个画布空间, 最小单位是像素
 ### 绘制窗体
 
 turtle.setup(width, height, startx, starty)
+
 * setup()设置窗体大小及位置
 * 4个参数中后两个可选
 * setup()不是必须的

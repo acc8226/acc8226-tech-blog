@@ -40,7 +40,6 @@ Path %ANT_HOME%\bin
 指定用以查找类或接口定义的**源代码路径**。与用户类路径一样，源路径项用分号 (;)进行分隔，它们可以是目录、JAR 归档文件或 ZIP 归档文件。如果使用包，那么目录或归档文件中的本地路径名必须反映包名。
 > 注意：通过类路径查找的类，如果找到了其源文件，则可能会自动被重新编译。
 
-
 `-d`用于指定.class文件的生成目录, 将目录 `src/com/tt`下Hello.Java类编译到`bin`目录下
 美中不足的是-d需要指定已经存在的目录，不能自动创建。
 `javac -sourcepath src -classpath . -d bin src/com/tt/Hello.java`
@@ -54,7 +53,10 @@ java会基于提供的classpath（缩写成cp）路径去搜索。
 * 方法一: 指定`MANIFEST.MF`文件的命令:  `jar vcfm classes.jar MANIFEST.MF -C bin/ .`
 * 方法二: 先直接生成
 `jar vcf classes.jar -C bin/ .`
-再 winRAR 直接修改 `MANIFEST.MF`![](https://upload-images.jianshu.io/upload_images/1662509-1948d6b4264b6e63.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+再 winRAR 直接修改 `MANIFEST.MF`
+
+![](https://upload-images.jianshu.io/upload_images/1662509-1948d6b4264b6e63.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 或者拿出 `MANIFEST.MF` 文件后命令 `jar vufm classes.jar MANIFEST.MF`, 这里注意要空两个空行, 如果遇到`Duplicate name in Manifest: Created-By.`这种语句直接忽略就好, 因为字段有重名而已。
 
 > 之所以加`v`是为了生成详细输出, 去掉也没影响
