@@ -142,14 +142,14 @@ java -jar migrate-local-repo-tool.jar -cd "C:/Users/hp\Desktop/abc/tmpRepo/class
 # Get command line params
 
 while getopts ":r:u:p:" opt; do
-	case $opt in
-		r) REPO_URL="$OPTARG"
-		;;
-		u) USERNAME="$OPTARG"
-		;;
-		p) PASSWORD="$OPTARG"
-		;;
-	esac
+    case $opt in
+        r) REPO_URL="$OPTARG"
+        ;;
+        u) USERNAME="$OPTARG"
+        ;;
+        p) PASSWORD="$OPTARG"
+        ;;
+    esac
 done
 
 find . -type f -not -path './mavenimport\.sh*' -not -path '*/\.*' -not -path '*/\^archetype\-catalog\.xml*' -not -path '*/\^maven\-metadata\-local*\.xml' -not -path '*/\^maven\-metadata\-deployment*\.xml' | sed "s|^\./||" | xargs -I '{}' curl -u "$USERNAME:$PASSWORD" -X PUT -v -T {} ${REPO_URL}/{} ;

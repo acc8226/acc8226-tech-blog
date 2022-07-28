@@ -1,9 +1,13 @@
-> 目标 虽然用不上渠道的概念, 其实其实和渠道的概念类似, 其实就是多几个可以变更的字段配置
+> 目标 虽然用不上渠道的概念, 其实其实和渠道的概念类似, 其实就是多几个可以变更的字段配置。
 
 目前我需要一个boolean, 一个请求的url,
+
+```properties
 config.url =http://10.1.64.42:9082/insure-pad/padServer.do,
 config.bool = false
- 我想加快apk打包速度啊, 一方面是还在用eclipse, 二来如果用普通的gradle的farvor方式还是不够快,美团都有v2方案了, 自己搞一搞比较有意思而已
+```
+
+我想加快 apk 打包速度啊, 一方面是还在用eclipse, 二来如果用普通的 gradle 的 farvor 方式还是不够快,美团都有 v2 方案了, 自己搞一搞比较有意思而已
 
 ## META-INF目录下添加额外信息(不推荐)
 
@@ -42,17 +46,19 @@ config.bool = false
 
 ## APP文件的注释字段中添加渠道信息。(不推荐)
 
-该种方式利用了APK本身是一种zip包的特点，在zip的注释字段中添加渠道信息，并提供了gradle插件。其中数据格式定义如下：   
+该种方式利用了APK本身是一种zip包的特点，在zip的注释字段中添加渠道信息，并提供了gradle插件。其中数据格式定义如下：
+
 ![](https://upload-images.jianshu.io/upload_images/1662509-3fec8266f79b4604.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
- 而添加的渠道信息如下所示：
+而添加的渠道信息如下所示：
+
 ![](https://upload-images.jianshu.io/upload_images/1662509-9b428a82b8fa0655.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 该种方式较前两种方式实现相对麻烦些，特别是渠道信息的获取需要读取整个APK，解析注解，获取渠道信息，另外就是**兼容性不是很好**。
 
-## AndroidManifest.xml中添加渠道信息 (推荐)
+## AndroidManifest.xml 中添加渠道信息 (推荐)
 
- 渠道信息将被添加到application结点下的子结点meta-data中，如下：
+渠道信息将被添加到application结点下的子结点meta-data中，如下：
 
 ```xml
  <application
@@ -65,7 +71,7 @@ config.bool = false
       </meta-data>
 ```
 
-该种方式是目前应用最广的一种，比如友盟统计sdk，腾讯统计sdk等。其中**name和value可以自由定义**，比较灵活。APP可以利用系统API，方便的获取渠道信息，示例代码如下：
+该种方式是目前应用最广的一种，比如友盟统计 sdk，腾讯统计 sdk 等。其中**name和value可以自由定义**，比较灵活。APP 可以利用系统 API，方便的获取渠道信息，示例代码如下：
 
 ```java
 ApplicationInfo appInfo = this.getPackageManager().getApplicationInfo(getPackageName(), PackageManager.GET_META_DATA);
@@ -75,6 +81,7 @@ String channel = appInfo.metaData.getString("Goapk_Market");
 这里采用的是网易云捕精英大队开发了[多渠道打包工具](http://crash-public-online.nos.netease.com/makechannels.zip)，该工具主要基于manifest和meta渠道包制作方式，实现快速批量多渠道包的生成。
 
 命令行下，运行：`java -jar makechannels.jar` 查看版本号与使用方法：
+
 ![](https://upload-images.jianshu.io/upload_images/1662509-cf07de8b17c65440.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 配置的channels.txt(以|分割, 第一个是配置value, 第二个是配置key, 第三个是配置输出的文件名)
@@ -90,6 +97,7 @@ true,http://10.1.104.28:8099/yyy|CUSTOM_KEY|技术微服务
 `java -jar makechannels.jar -apk xxx.apk -config channels.txt -out outputApk`
 
 接下来得重新签名, 这里注意安卓从Android 7.0开始引入了v2签名，但是由于app需要兼容之前的机器，所以也必须进行v1签名才可以。如果只进行v2签名，将导致在android7.0之前的机器安装失败；我尝试Java自带的jarsigner可是报错`META-INF/MANIFEST.MF has invalid digest for AndroidManifest.xml`, 后来查资料发现还是用网易提供的极速签名工具[点击下载](http://nsmobile-pub-online.nos.netease.com/apksigner.rar)靠谱
+
 `java -jar apksigner.jar -appname 测试 -keystore debug.keystore -pswd android -alias androiddebugkey -aliaspswd android -v1 true -v2 false in.apk `
 
 > * -appname 待签名的应用程序名，可选，但建议不同的 APP 填上对应的 app 名（可以为中文），有助于【加速】
@@ -100,6 +108,7 @@ true,http://10.1.104.28:8099/yyy|CUSTOM_KEY|技术微服务
 签名后如果包能正确安装到手机（无需运行）则没有问题，如果安装失败请用命令安装 ：`adb install apkfile`查看出错信息
 
 最后一步 zipalign 优化
+
 `zipalign -v -f [alignmentSize] in.apk out.apk `
 (可选)再进行v2签名。
 `java -jar ApkSigner.jar [-appname test] -keystore keystorePath -alias alias [-pswd password] [-aliaspswd aliasPassword] -v1 false -v2 true out.apk`

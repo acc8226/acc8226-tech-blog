@@ -220,8 +220,8 @@ mvn compiler:compile
 
 Maven 提供了下面两种类型的插件：
 
-* Build plugins	在构建时执行，并在 pom.xml 的 元素中配置。
-* Reporting plugins	在网站生成过程中执行，并在 pom.xml 的 元素中配置。
+* Build plugins 在构建时执行，并在 pom.xml 的 元素中配置。
+* Reporting plugins 在网站生成过程中执行，并在 pom.xml 的 元素中配置。
 
 下面是一些常用插件的列表：
 

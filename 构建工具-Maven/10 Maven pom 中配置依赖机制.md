@@ -143,6 +143,7 @@ provided意味着打包的时候可以不用包进去，别的设施(Web Contain
 maven 2.0.9 之后可用，主要用来解决多子 pom.xml 多重继承的场景。只能用在 dependencyManagement 块中，它将 spring-boot-dependencies 中 dependencyManagement 下的 dependencies 插入到当前工程的dependencyManagement 中，所以不存在依赖传递。
 
 举例 import 的使用
+
 ```xml
 <dependencyManagement>
     <dependencies>
@@ -158,7 +159,7 @@ maven 2.0.9 之后可用，主要用来解决多子 pom.xml 多重继承的场�
 </dependencyManagement>
 ```
 
-当没有<scope>import</scope>时，意思是将 spring-boot-dependencies 的 dependencies 全部插入到当前工程的 dependencies 中，并且会依赖传递。
+当没有 `<scope>import</scope>` 时，意思是将 spring-boot-dependencies 的 dependencies 全部插入到当前工程的 dependencies 中，并且会依赖传递。
 
 ## Dependency Management 依赖关系管理
 

@@ -1,4 +1,4 @@
-不废话, 直接上代码
+直接上代码
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -153,8 +153,8 @@
 笔记:
 
 * 需要提交配置好环境变量
-* 日期时间戳dstamp、tsdamp、today的应用, 尼玛HH:mm才是二十四小时, hh:mm是十二小时制
-* FilterChain是个好东西, 本来对于正则表达式理解的不深, 然后ant对Properties的value这种字符串无从下手的时候, 万能的搜索帮了大忙
+* 日期时间戳 dstamp、tsdamp、today的应用, 尼玛 HH:mm 才是二十四小时, hh:mm 是十二小时制
+* FilterChain 是个好东西, 本来对于正则表达式理解的不深, 然后 ant 对 Properties 的 value 这种字符串无从下手的时候, 万能的搜索帮了大忙
 
 小疑惑:
 
