@@ -17,7 +17,7 @@
 
 2\. pom.xml 配置
 
-配置好了settings.xml后，在 **代码库根目录**下的 pom.xml 加入以下配置:
+配置好了 settings.xml后，在 **代码库根目录**下的 pom.xml 加入以下配置:
 
 ```xml
 <!-- 需要发布二方包 则打开下列配置 -->
@@ -57,6 +57,17 @@ mvn archetype:generate \
 -DartifactId=edu \
 -DgroupId=ecjtu \
 -DarchetypeVersion=1.4 \
+-DinteractiveMode=false
+```
+
+或者 windows
+
+```sh
+mvn archetype:generate ^
+-DarchetypeArtifactId=maven-archetype-quickstart ^
+-DartifactId=edu ^
+-DgroupId=ecjtu ^
+-DarchetypeVersion=1.4 ^
 -DinteractiveMode=false
 ```
 
@@ -118,16 +129,17 @@ java -jar migrate-local-repo-tool.jar -cd "C:/Users/hp\Desktop/abc/tmpRepo/class
 ```
 
 参数注解：
--cd 您要迁移的本地目录，例如：/$HOME/.m2/repository/
--t 目标仓库地址（您可以在【私有仓库】界面点击仓库地址，获取您的目标仓库地址）
--u 用户名
--p 密码
+
+* -cd 您要迁移的本地目录，例如：`/$HOME/.m2/repository/`
+* -t 目标仓库地址（您可以在【私有仓库】界面点击仓库地址，获取您的目标仓库地址）
+* -u 用户名
+* -p 密码
 
 根据您的实际需求指定合适的参数，然后执行该命令，稍等片刻，您的本地仓库中的制品将会被批量迁移到您所指定的 Maven 私库中。
 
-如果迁移的本地目录中文件目录过多或者目录层级过深，可能会导致迁移命令卡死或者返回异常。推荐做法是只迁移你自己的私有制品到私有仓库中，构建时拉取公共制品包可以使用我们提供的公共代理库。比如假设你的私有制品都放置在 /$HOME/.m2/repository/com/alibaba/ **目录中，你可以将com/alibaba/** 目录复制一份到一个空的目录中，比如复制到 /tmp/repo/ 中，然后运行迁移命令时将-cd命令参数指定为 /tmp/repo/，这样迁移工具只会迁移你的私有制品。
+如果迁移的本地目录中文件目录过多或者目录层级过深，可能会导致迁移命令卡死或者返回异常。推荐做法是只迁移你自己的私有制品到私有仓库中，构建时拉取公共制品包可以使用我们提供的公共代理库。比如假设你的私有制品都放置在 `/$HOME/.m2/repository/com/alibaba/` 目录中，你可以将 `com/alibaba/` 目录复制一份到一个空的目录中，比如复制到 /tmp/repo/ 中，然后运行迁移时使用 -cd 命令参数指定为 `/tmp/repo/`，这样迁移工具只会迁移该文件夹里你的指定私有制品。
 
-### 【推荐方式二】批量上传Maven仓库 jar 包到 Nexus3.x 私服
+### 【推荐方式二】批量上传 Maven 仓库 jar 包到 Nexus3.x 私服
 
 1.先将本地 maven/repository 仓库打一个完整的zip压缩包
 2.上传到 linux 目录，如：/opt

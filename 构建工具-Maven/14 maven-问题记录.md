@@ -2,29 +2,30 @@
 
 ### mvn 命令必须在 pom 文件目录下执行吗
 
-不是必须，可以
+不是，可以 -f 指定 pom。
 
-```text
+```sh
  -f,--file <arg>                        Force the use of an alternate POM
                                         file (or directory with pom.xml)
 ```
 
-### Maven 错误：was cached in the local repository, resolution will not be reattempted until the update
+### 报错：was cached in the local repository, resolution will not be reattempted until the update
 
-在使用公司内部的 maven 仓库编译项目时，由于新加入了几个依赖包，第一次编译失败了，可能原因是 maven 私服找不到相关jar。此后在修复了公司内部 maven 仓库后编译项目出现错误
+在使用公司内部的 maven 仓库编译项目时，由于新加入了几个依赖包，第一次编译失败了，可能原因是 maven 私服找不到相关 jar。此后在修复了公司内部 maven 仓库后编译项目出现错误
 
 * 方法一：查看本地仓库对应 jar 包所在目录的 lastUpdated 文件，进一步查看报错信息，尝试删除后再次运行原 maven 命令或进行代码的拉取。
 
-* 方法二：在 repository 的 release 或者 snapshots 版本中新增 updatePolicy 属性，设置为”always”、”daily” (默认)、”interval:XXX” (分钟)或”never”。这里设置为 always，表示强制每次都更新依赖库。
+* 方法二：在 repository 的 release 或者 snapshots 版本中新增/修改 updatePolicy 属性，它的可选项有”always”、”daily” (默认)、”interval:XXX” (分钟)或”never”。这里可以设置为 always，表示强制每次都更新依赖库。
 
 * 方法三：maven命令后加 -U，如 mvn package -U【推荐】
 
 ### 单元测试编写好, 但是不执行
 
-根据约定优于配置。在默认情况下，“maven-surefire-plugin”插件将自动执行项目“src/test/java”路径下的测试类，但测试类需要遵从以下命名模式，Maven才能自动执行它们：　　
-Test*.java ：以 Test 开头的 Java 类；
-*Test.java ：以 Test 结尾的 Java 类;
-*TestCase.java：以 TestCase 结尾的 Java 类。
+根据约定优于配置。在默认情况下，“maven-surefire-plugin”插件将自动执行项目“src/test/java”路径下的测试类，但测试类需要遵从以下命名模式，Maven 才能自动执行它们：
+
+* Test*.java ：以 Test 开头的 Java 类；
+* *Test.java ：以 Test 结尾的 Java 类;
+* *TestCase.java：以 TestCase 结尾的 Java 类。
 
 ### Maven 3.8.x 报错 Blocked mirror for repositories
 
@@ -56,6 +57,17 @@ mvn clean package -Dmaven.test.skip=true
 mvn clean package '-Dmaven.test.skip=true'
 ```
 
+### 【WARNING】The POM for com.alibaba:druid:jar:1.1.21 is invalid 警告问题
+
+执行 install 命令并添加 -X 参数，方便排查。
+
+```sh
+# cmd 输出 DEBUG 信息
+mvn clean install -X
+# 或者直接把 DEBUG 信息输出到本地的 debug.txt 文件
+mvn clean install -X > debug.txt
+```
+
 ## 一些记录
 
 ### 跳过测试用例的执行
@@ -77,7 +89,7 @@ b.如果 B 不用 SNAPSHOT, 但一直使用一个单一的 Release 版本号，�
 4、 不用 Release 版本，在所有地方都用 SNAPSHOT 版本行不行？
 不行。正式环境中不得使用 snapshot 版本的库。 比如说，今天你依赖某个 snapshot 版本的第三方库成功构建了自己的应用，明天再构建时可能就会失败，因为今晚第三方可能已经更新了它的 snapshot 库。你再次构建时，Maven 会去远程 repository 下载 snapshot 的最新版本，你构建时用的库就是新的 jar 文件了，这时正确性就很难保证了。
 
-### 【用处不大】从 Maven 项目中导出项目依赖的 jar 包
+### Maven 项目中导出项目依赖的 jar 包
 
 1\. 导出到默认目录 targed/dependency
 　　从Maven项目中导出项目依赖的jar包：进入工程pom.xml 所在的目录下，执行如下命令：
@@ -92,11 +104,11 @@ b.如果 B 不用 SNAPSHOT, 但一直使用一个单一的 Release 版本号，�
 　　同时可以设置依赖级别，通常使用 compile 级别
 　　mvn dependency:copy-dependencies -DoutputDirectory=lib -DincludeScope=compile
 
-### maven 中配置多个 mirror 的问题
+### maven 动态切换 mirror 配置。
 
-有个小伙伴遇到一个疑问：他的工作笔记本，在公司用部门搭建的maven私服做镜像，回到家用 aliyun 的镜像，每次都要改配置文件，很麻烦，希望能够不改动配置文件的情况下，动态切换 mirror 配置。
+有个小伙伴遇到一个疑问：他的工作笔记本，在公司用部门搭建的 maven 私服做镜像，回到家用 aliyun 的镜像，每次都要改配置文件，很麻烦，希望能够不改动配置文件的情况下，
 
-我们知道 settings.xml 中可以使用变量，可以尝试使用变量解决。
+我们知道 settings.xml 中可以使用变量，可以尝试使用变量解决。首先需配置多个 mirror。
 
 ```xml
 <mirrors>
@@ -118,7 +130,7 @@ b.如果 B 不用 SNAPSHOT, 但一直使用一个单一的 Release 版本号，�
 </mirrors>
 ```
 
-我们知道，默认情况下配置多个 mirror 的情况下，只有第一个生效。那么我们可以将最后一个作为默认值，前面配置的使用环境变量动态切换。
+默认情况下配置多个 mirror 的情况下，只有第一个生效。那么我们可以将最后一个作为默认值，前面配置的使用环境变量动态切换。
 
 默认情况下，执行： `mvn help:effective-settings` 可以看到使用的是私服。
 

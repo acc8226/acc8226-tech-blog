@@ -18,7 +18,7 @@ Maven 的本地仓库，在安装 Maven 后并不会创建，它是在第一次�
 
 Maven 本地仓库默认被创建在 %USER_HOME% 目录下。要修改默认位置，在 %M2_HOME%\conf 目录中的 Maven 的 settings.xml 文件中更改路径。
 
-默认地址为`${user.home}/.m2/repository`
+默认地址为 `${user.home}/.m2/repository`
 
 ```xml
 <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
@@ -43,8 +43,11 @@ Maven 中央仓库是由 Maven 社区提供的仓库，其中包含了大量常�
 * 不需要配置。
 * 需要通过网络才能访问。
 
-要浏览中央仓库的内容，maven 社区提供了一个 URL：[http://search.maven.org/#browse](http://search.maven.org/#browse)。使用这个仓库，开发人员可以搜索可能需要获取的代码库。
-或者进入 <https://repo.maven.apache.org/maven2/> 中进行查找。
+使用这个仓库，开发人员可以搜索可能需要获取的代码库。
+
+要浏览中央仓库的内容，maven 社区提供了一个 URL：[http://search.maven.org/#browse](http://search.maven.org/#browse)。
+
+如果您知道包名等信息，也可逐步进行查找 <https://repo.maven.apache.org/maven2/>。
 
 ### 远程仓库
 
@@ -91,7 +94,7 @@ jar下载搜索顺序：本地仓库 -->  nexus私服 或者 Maven中央库.
 
 ## 为什么需要私服
 
-为什么要搭建 nexus 私服，原因很简单，有些公司都不提供外网给项目组人员，因此就不能使用maven访问远程的仓库地址，所以很有必要在局域网里找一台有外网权限的机器，搭建 nexus 私服，然后开发人员连到这台私服上，这样的话就可以通过这台搭建了nexus 私服的电脑访问maven的远程仓库。
+为什么要搭建 nexus 私服，原因很简单，有些公司都不提供外网给项目组人员，因此就不能使用 maven 访问远程的仓库地址，所以很有必要在局域网里找一台有外网权限的机器，搭建 nexus 私服，然后开发人员连到这台私服上，这样的话就可以通过这台搭建了 nexus 私服的电脑访问 maven 的远程仓库。
 
 ## 安装
 
@@ -197,7 +200,7 @@ Download Remote Indexs 表示是否下载远程仓库的索引，有些索引仓
 ### 私服迁移
 
 除了手动上传之外，很多时候也存在私服迁移到另外一个服务器的情况，这个时候就有更简单的方式去解决第三方jar的问题。
-拷贝原私服 indexer（索引文件夹）和 storage（jar贮藏文件夹）文件夹
+拷贝原私服 indexer（索引文件夹）和 storage（jar 贮藏文件夹）文件夹
 
 拷贝到目标私服下同一个目录下，如果只需要jar包那就只拷贝 storage 文件夹覆盖即可，同理，需要索引的话那就拷贝 indexer 文件夹覆盖到目标文件夹即可。
 
