@@ -12,8 +12,16 @@ CODING 代码托管 | 极速 Git 代码仓库服务
 腾讯工蜂
 <https://git.code.tencent.com/>
 
-GitHub【国内访问，时快时慢】
+## 国外三巨头
+
+GitHub【国内访问不太稳定】
 <https://www.github.com/>
+
+GitLab
+<https://gitlab.com/users/sign_in>
+
+Bitbucket | Git solution for teams using Jira
+<https://bitbucket.org/product/>
 
 ## Git 启用上传大文件功能
 

@@ -53,3 +53,21 @@ git branch -a
 ## git 查看某个分支是从哪个分支拉出来的
 
 git reflog --date=local | grep 分支名
+
+## fatal: remote origin already exists
+
+```sh
+git remote add origin**************
+fatal: remote origin already exists.（报错远程起源已经存在。）
+```
+
+解决方法
+
+1、先输入 git remote rm origin
+2、再输入 git remote add origin**************
+
+或者直接更新 url
+
+```sh
+git remote set-url origin https://github.com/yourname/learngit.git (这个是你的复制的仓库地址)
+```

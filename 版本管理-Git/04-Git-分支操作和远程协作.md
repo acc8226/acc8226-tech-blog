@@ -64,19 +64,22 @@ git checkout-b new_branch
 查看远程仓库所有信息 `git remote show [remote-name]`
 远程仓库配置的重命名 `git remote rename [old-name] [new-name]`
 删除远程仓库 `git remote rm [remote-name]`
-调整你的url `git remote set-url origin git@github.com:someaccount/someproject.git`
+调整你的 url `git remote set-url origin git@github.com:someaccount/someproject.git`
 `git remote update` 更新所有的 remote
 `git remote update remote_name` 使得本地版本库中的 origin 已被基于远程版本库的信息更新了。当最初添加远程版本库时,使用 -f 选项将导致立即对该远程版本库执行 fetch 操作。
 
-git remote rm 命令会从你的本地版本库中删除给定的远程版本库及其关联的远程追踪分支。要只从你的本地版本库删除一个远程跟踪分支,使用这样的命令:
+git remote rm 命令会从你的本地版本库中删除给定的远程版本库及其关联的远程追踪分支。
+
+如果你只想从你的本地版本库删除一个远程跟踪分支,使用这样的命令:
 
 ```sh
-git branch-r -d origin/dev
+git branch -r -d origin/dev
 ```
 
-远程版本库中可能已经有分支被其他开发人员删除了(即使这些分支的副本可能还遗留在你的版本库中) 。 `git remote prune`命令可以用来删除你的本地版本库中那些陈旧的(相对于实际的远程版本库)远程追踪分支。
+当遇到远程版本库中可能已经有分支被其他开发人员删除了的情况(即使这些分支的副本可能还遗留在你的版本库中) 。
+可以使用 `git remote prune` 命令删除你的本地版本库中那些陈旧的(相对于实际的远程版本库)远程追踪分支。
 
-为了与上游远程版本库更加同步,使用`git remote update --prune remote`命令首先从远程版本库获得更新,然后一步删除陈旧的追踪分支。
+为了与上游远程版本库更加同步,使用 `git remote update --prune remote` 命令首先从远程版本库获得更新,然后一步删除陈旧的追踪分支。
 
 ## 创建跟踪分支
 

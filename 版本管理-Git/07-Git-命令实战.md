@@ -36,7 +36,7 @@ git remote set-url origin https://codeup.aliyun.com/5eacd74338076f00011bc59e/hex
 git push --mirror
 ```
 
-或者不 set-url origin, 而是最后两条命令变成一条命令, 进行推送
+或者两条命令变成一条命令, 进行推送
 
 ```sh
 git push --mirror https://codeup.aliyun.com/5eacd74338076f00011bc59e/hexo-src.git
