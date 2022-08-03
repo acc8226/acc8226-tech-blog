@@ -18,7 +18,7 @@ author: acc8226
 language: zh-CN
 timezone: Asia/Shanghai
 
-# 其中 :category 取目录，post_title 则去取文章中的title
+# 其中 :category 取目录，post_title 取文章中的 title
 permalink: :category/:post_title/
 
 ## updated_option supports 'mtime' 使用文件的最后修改时间, 'date' 使用 date 作为 updated 的值。可被用于 Git 工作流之中, 'empty'
@@ -179,7 +179,6 @@ tags:
 
 ```yml
 cd hexo-site
-
 hexo new page tags
 ```
 
