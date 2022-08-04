@@ -1,3 +1,10 @@
+---
+title: Markdown-拓展-Gitlab-Github-开启-UML-图支持
+categories: 标记语言-Markdown
+tags:
+- Markdown
+---
+
 ## 为什么需要它
 
 一些[可视化](https://so.csdn.net/so/search?q=%E5%8F%AF%E8%A7%86%E5%8C%96&spm=1001.2101.3001.7020)工具再给我们带来直观性的同时，也增加了操作的难度，需要精细地调整组件的大小和样式，更多的时候，我们不是为了写一份漂亮的报告而画流程图，只是需要便捷地向他人分享自己的 idea，在这样的需求下，代码生成流程图显然更适合。

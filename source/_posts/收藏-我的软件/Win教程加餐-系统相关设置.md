@@ -1,3 +1,8 @@
+---
+title: Win教程加餐-系统相关设置
+categories: 收藏-我的软件
+---
+
 ## 更改 terminal / cmd 命令行工具的外观
 
 <https://github.com/microsoft/terminal/releases/tag/1904.29002>

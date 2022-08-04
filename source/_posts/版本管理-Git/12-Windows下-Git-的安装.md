@@ -1,3 +1,11 @@
+---
+title: 12-Windows下-Git-的安装
+categories: 版本管理-Git
+tags:
+- 版本管理
+- git
+---
+
 Git windows 版本官方下载地址
 <https://git-scm.com/download/win>
 

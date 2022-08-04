@@ -1,3 +1,10 @@
+---
+title: JS-Array(数组)简单入门
+categories: 语言-JavaScript
+tags:
+- js
+---
+
 ## 数组是什么?
 
 数组通常被描述为“像列表一样的对象”; 简单来说，数组是一个包含了多个值的对象。数组对象可以存储在变量中，并且能用和其他任何类型的值完全相同的方式处理，区别在于我们可以单独访问列表中的每个值，并使用列表执行一些有用和高效的操作，如循环 - 它对数组中的每个元素都执行相同的操作。
@@ -62,7 +69,7 @@ var arr = new Array(element0, element1, ..., elementN);
 var arr = Array(element0, element1, ..., elementN);
 ```
 
-> 译者注: var arr=[4] 和 var arr=new Array(4)是不等效的， 
+> 译者注: var arr=[4] 和 var arr=new Array(4)是不等效的，
 > 使用字面值(literal)的方式应该不仅仅是便捷，同时也不易踩坑
 
 为了创建一个长度不为0，但是又没有任何元素的数组

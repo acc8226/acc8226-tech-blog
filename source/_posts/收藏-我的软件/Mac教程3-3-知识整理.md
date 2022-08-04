@@ -1,3 +1,8 @@
+---
+title: Mac教程3-3-知识整理
+categories: 收藏-我的软件
+---
+
 ### .DS_Store 文件是什么？
 
 .DS_Store(英文全称 Desktop Services Store)是一种由苹果公司的 Mac OS X 操作系统所创造的隐藏文件，目的在于存贮目录的自定义属性，例如文件们的图标位置或者是背景色的选择。相当于 Windows 下的 desktop.ini 文件。

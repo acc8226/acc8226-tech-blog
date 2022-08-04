@@ -1,7 +1,8 @@
 ---
 title: 安卓-sqlite数据库
 categories: 安卓积累卷
-tags: android
+tags:
+- android
 ---
 
 * 创建 Entry 的内部类, 该类实现 BaseColumns

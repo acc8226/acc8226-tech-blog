@@ -1,3 +1,8 @@
+---
+title: Java编程规约【04】OOP规约
+categories: 文档规约
+---
+
 1\. 【强制】避免通过一个类的对象引用访问此类的静态变量或静态方法，无谓增加编译器解析成本，直接用 类名来访问即可。
 
 2\. 【强制】所有的覆写方法，必须加 `@Override` 注解。
@@ -145,7 +150,7 @@ private void method();
 ```java
 public Integer getData() {
     if (condition) {
-        return this.data + 100; 
+        return this.data + 100;
     } else {
         return this.data - 100;
     }
@@ -244,6 +249,6 @@ High level modules should not depend upon low level modules.Both should depend u
 * 《1. 2022 Java开发手册(黄山版).pdf
 * 《设计模式之禅 第1版》
 * 《Java技术手册 第6版》
-* 《编写高质量代码：改善Java程序的151个建议》 
+* 《编写高质量代码：改善Java程序的151个建议》
 * 白话阿里巴巴Java开发手册（安全规约） - 李艳鹏 - 简书(https://www.jianshu.com/p/9528c4ea1504)
 

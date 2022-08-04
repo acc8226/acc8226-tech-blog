@@ -1,3 +1,11 @@
+---
+title: Ant-实现流程控制、遍历
+categories: 构建工具-Ant
+tags:
+- 构建工具
+- Ant
+---
+
 ## [if 逻辑判断](http://ant-contrib.sourceforge.net/tasks/tasks/if.html)
 
 `<if>` 标签没有任何的标签内属性，在 `<if>` 标签下紧跟着嵌套一个条件判断任务，如果条件判断为真，则直接处理 `<then>` 标签的内容；如果条件为假，则跳转到 `<elseif>` 标签中，接下判断该标签内的条件判断并根据结果选择去处理接下来的 `<then>` 内容或者再跳转出来处理 `<else>` 标签的内容。

@@ -1,3 +1,10 @@
+---
+title: 安卓-ContentProvider 详解
+categories: 安卓-UI知识
+tags:
+- android
+---
+
 ![](./imgs/%E5%AE%89%E5%8D%93-ContentProvider-%E8%AF%A6%E8%A7%A3/1.png)
 
 ## 构建content URI

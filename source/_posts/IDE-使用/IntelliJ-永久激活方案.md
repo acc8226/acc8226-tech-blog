@@ -1,3 +1,8 @@
+---
+title: IntelliJ-永久激活方案
+categories: IDE-使用
+---
+
 本教程适用于 IntelliJ IDEA 2021.* 所有版本。
 
 > 插件下载链接

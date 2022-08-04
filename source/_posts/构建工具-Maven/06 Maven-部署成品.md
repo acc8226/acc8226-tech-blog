@@ -1,3 +1,11 @@
+---
+title: 06 Maven-部署成品
+categories: 构建工具-Maven
+tags:
+- 构建工具
+- Maven
+---
+
 ## 上传设置
 
 1\. settings.xml 中设置仓库凭证：servers 节点中添加如下配置.[如果未加密则可跳过]

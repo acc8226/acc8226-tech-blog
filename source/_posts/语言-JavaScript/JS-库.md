@@ -1,3 +1,10 @@
+---
+title: JS-库
+categories: 语言-JavaScript
+tags:
+- js
+---
+
 JavaScript 框架（库）
 JavaScript 高级程序设计（特别是对浏览器差异的复杂处理），通常很困难也很耗时。
 为了应对这些调整，许多的 JavaScript (helper) 库应运而生。
@@ -11,7 +18,7 @@ JavaScript 高级程序设计（特别是对浏览器差异的复杂处理），
 
 在本教程中，您将学习到如何开始使用它们，来使得 JavaScript 编程更容易、更安全且更有乐趣。
 
-### jQuery 
+### jQuery
 是目前最受欢迎的 JavaScript 框架。
 它使用 CSS 选择器来访问和操作网页上的 HTML 元素（DOM 对象）。
 jQuery 同时提供 companion UI（用户界面）和插件。

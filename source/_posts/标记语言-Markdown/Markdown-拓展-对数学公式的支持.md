@@ -1,3 +1,10 @@
+---
+title: Markdown-拓展-对数学公式的支持
+categories: 标记语言-Markdown
+tags:
+- Markdown
+---
+
 ## MathJax 和 LaTeX 数学公式 支持
 
 [MathJax](https://www.mathjax.org/) 是一款运行在浏览器中的开源数学符号渲染引擎，使用 MathJax 可以方便的在浏览器中显示数学公式，不需要使用图片。目前，MathJax 可以解析 **Latex**、**MathML** 和 **ASCIIMathML** 的标记语言。MathJax 项目于 2009 年开始，发起人有 American Mathematical Society, Design Science 等，还有众多的支持者，个人感觉 MathJax 会成为今后数学符号渲染引擎中的主流，也许现在已经是了。本文接下来会讲述 MathJax 的基础用法，但不涉及MathJax 的安装及配置。

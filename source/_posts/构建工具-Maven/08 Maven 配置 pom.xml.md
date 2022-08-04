@@ -1,3 +1,11 @@
+---
+title: 08 Maven 配置 pom.xml
+categories: 构建工具-Maven
+tags:
+- 构建工具
+- Maven
+---
+
 ## 构建配置文件的类型
 
 * 全局（Global）定义在 Maven 全局的设置 xml 文件中 (%MAVEN_HOME%/conf/settings.xml)

@@ -1,3 +1,11 @@
+---
+title: 01-Git-初识
+categories: 版本管理-Git
+tags:
+- 版本管理
+- git
+---
+
 ## 集中式 or 分布式
 
 集中化的版本控制系统（ Centralized Version Control Systems，简称 CVCS）

@@ -1,3 +1,8 @@
+---
+title: Java编程规约【03】代码格式
+categories: 文档规约
+---
+
 1\. 【强制】如果大括号内为空，简洁地写成{}即可，大括号中间无需换行和空格；如果是非空代码块，则：
 1）左大括号前不换行。
 2）左大括号后换行。
@@ -15,7 +20,7 @@
 5\. 【强制】采用 4 个空格缩进，禁止使用 Tab 字符。
 
 说明：如使用 Tab 缩进，必须设置 1 个 Tab 为 4 个空格。
-IDEA 设置 Tab 为 4 个空格时，请勿勾选 Use tab character； 
+IDEA 设置 Tab 为 4 个空格时，请勿勾选 Use tab character；
 Eclipse 设置中，找到 tab policy 设置为 Spaces only，Tab size：4，最后必须勾选 insert spaces for tabs
 
 正例：（涉及上述中的 1-5 点）

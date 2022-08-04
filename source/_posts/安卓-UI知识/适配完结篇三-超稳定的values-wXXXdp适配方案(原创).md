@@ -1,3 +1,10 @@
+---
+title: 适配完结篇三-超稳定的values-wXXXdp适配方案(原创)
+categories: 安卓-UI知识
+tags:
+- android
+---
+
 ## 观点
 
 * 适配还是使用百分比布局靠谱, 想一想 百分比 = match_parent 其实值 100%, 权重也是按比例

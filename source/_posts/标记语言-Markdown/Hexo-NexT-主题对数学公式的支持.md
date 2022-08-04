@@ -1,7 +1,8 @@
 ---
 title: Hexo-NexT-主题对数学公式的支持
-date:
+categories: 标记语言-Markdown
 tags:
+- Markdown
 ---
 
 由于静态网站的某些功能有限，所以我们需要第三方服务来扩展我们的网站。在任何时候，你都可以使用 NexT 支持的第三方服务来扩展所需的功能。

@@ -1,3 +1,10 @@
+---
+title: JS-对象
+categories: 语言-JavaScript
+tags:
+- js
+---
+
 https://developer.mozilla.org/zh-CN/docs/Learn/JavaScript/Objects
 
 ## JavaScript 对象

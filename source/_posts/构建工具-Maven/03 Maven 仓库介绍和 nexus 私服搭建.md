@@ -1,3 +1,11 @@
+---
+title: 03 Maven 仓库介绍和 nexus 私服搭建
+categories: 构建工具-Maven
+tags:
+- 构建工具
+- Maven
+---
+
 ## Maven 仓库
 
 在 Maven 的术语中，仓库是一个位置（place）。Maven 仓库是项目中依赖的第三方库，这个库所在的位置叫做仓库。在 Maven 中，任何一个依赖、插件或者项目构建的输出，都可以称之为构件。Maven 仓库能帮助我们管理构件（主要是 JAR ），它就是放置所有 JAR 文件（WAR，ZIP，POM 等）的地方。

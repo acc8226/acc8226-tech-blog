@@ -1,3 +1,10 @@
+---
+title: 安卓-View-和常见控件
+categories: 安卓-UI知识
+tags:
+- android
+---
+
 ## View
 
 View.getVisibility()
@@ -22,8 +29,8 @@ View.isShown()
 
 ## ScrollView
 
-public class ScrollView 
-extends [FrameLayout](http://developer.android.youdaxue.com/reference/android/widget/FrameLayout.html) 
+public class ScrollView
+extends [FrameLayout](http://developer.android.youdaxue.com/reference/android/widget/FrameLayout.html)
 [java.lang.Object](http://developer.android.youdaxue.com/reference/java/lang/Object.html)
 [android.view.View](http://developer.android.youdaxue.com/reference/android/view/View.html)
 [android.view.ViewGroup](http://developer.android.youdaxue.com/reference/android/view/ViewGroup.html)

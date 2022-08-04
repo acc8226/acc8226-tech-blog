@@ -1,7 +1,8 @@
 ---
 title: 开始自己的-markdown-写作
-date:
+categories: 标记语言-Markdown
 tags:
+- Markdown
 ---
 
 ## 前言

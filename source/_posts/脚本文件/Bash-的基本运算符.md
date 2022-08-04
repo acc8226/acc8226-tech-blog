@@ -1,3 +1,10 @@
+---
+title: Bash-的基本运算符
+categories: 脚本文件
+tags:
+- 脚本文件
+---
+
 ![](https://upload-images.jianshu.io/upload_images/1662509-0578a592b6b7b580?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ```sh

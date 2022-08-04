@@ -1,3 +1,8 @@
+---
+title: Jetty-简单安装和部署-jenkins
+categories: Web服务器技术
+---
+
 Jetty 提供了一个 web 服务器和 servlet 容器，另外还提供了对 HTTP/2、 WebSocket、 OSGi、 JMX、 JNDI、 JAAS 和许多其他集成的支持。这些组件是开放源码的，可以免费用于商业用途和分发。
 
 在开发和生产中，Jetty 被广泛应用于各种项目和产品中。Jetty 长期以来深受开发人员的喜爱，因为它可以轻松地嵌入到设备、工具、框架、应用服务器和现代云服务中。

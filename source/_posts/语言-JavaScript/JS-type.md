@@ -1,7 +1,14 @@
+---
+title: JS-type
+categories: 语言-JavaScript
+tags:
+- js
+---
+
 typeof 操作符
 你可以使用 typeof 操作符来检测变量的数据类型。
 
-typeof "John"                // 返回 string 
+typeof "John"                // 返回 string
 typeof 3.14                  // 返回 number
 typeof false                 // 返回 boolean
 typeof [1,2,3,4]             // 返回 object

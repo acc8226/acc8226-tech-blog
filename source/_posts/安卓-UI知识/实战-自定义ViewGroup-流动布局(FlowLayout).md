@@ -1,3 +1,10 @@
+---
+title: 实战-自定义ViewGroup-流动布局(FlowLayout)
+categories: 安卓-UI知识
+tags:
+- android
+---
+
 ## 安卓自定义 ViewGroup 需要注意的地方
 
 至少需要提供 width, 和height两个属性

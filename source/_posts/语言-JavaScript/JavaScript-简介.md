@@ -1,3 +1,10 @@
+---
+title: JavaScript-简介
+categories: 语言-JavaScript
+tags:
+- js
+---
+
 JavaScript 是一种可以用来给网页增加交互性的编程语言。
 
 常常会看到 JavaScript 被称为“脚本语言”（scripting language），这暗示着它更适合编写脚本而不是程序。这实际上并没有根本性的差异。JavaScript 脚本也是一种程序，它们包含在 HTML 页面内部（原先编写脚本的方式），或者驻留在外部文件中（现在的首选方法）。

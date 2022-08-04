@@ -1,7 +1,8 @@
 ---
 title: 安卓-Bitmap-和-Drawable的使用
-date:
+categories: 安卓-UI知识
 tags:
+- android
 ---
 
 ## Bitmap 的使用
@@ -110,8 +111,8 @@ Drawable 资源是 Android 应用中使用最广泛的资源，它不仅可以�
 当然上面这些用法,其实用得不多,更多的时候我们是在res/values目录下创建一个color.xml 文件,然后把要用到的颜色值写到里面,需要的时候通过@color获得相应的值，比如：
 
 ```xml
-<?xml version="1.0" encoding="utf-8"?>  
-<resources>  
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
     <color name="red">#ffff0000</color>
     <color name="green">#ff00ff00</color>
     <color name="blue">#ff0000ff</color>

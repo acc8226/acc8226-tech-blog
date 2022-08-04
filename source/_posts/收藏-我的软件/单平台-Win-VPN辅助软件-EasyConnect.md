@@ -1,3 +1,8 @@
+---
+title: 单平台-Win-VPN辅助软件-EasyConnect
+categories: 收藏-我的软件
+---
+
 ## 下载和安装
 
 * 自动安装组件失败，请手动 EasyConnectInstaller.exe

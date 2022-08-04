@@ -1,3 +1,10 @@
+---
+title: JS-window
+categories: 语言-JavaScript
+tags:
+- js
+---
+
 JavaScript Window - 浏览器对象模型
 浏览器对象模型 (BOM) 使 JavaScript 有能力与浏览器"对话"。
 
@@ -37,13 +44,13 @@ var h=window.innerHeight
 
 ## Window Screen
 window.screen 对象包含有关用户屏幕的信息。
-这些信息可以用来了解客户端硬件的基本配置。 
+这些信息可以用来了解客户端硬件的基本配置。
 ![](https://upload-images.jianshu.io/upload_images/1662509-fa4a0c82b7419ee4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 返回屏幕的可用宽度
 ```html
-<script> 
-  document.write("可用宽度: " + screen.availWidth); 
+<script>
+  document.write("可用宽度: " + screen.availWidth);
 </script>
 ```
 
@@ -71,22 +78,22 @@ window.location 对象用于获得当前页面的地址 (URL)，并把浏览器�
 *   [history.back()](https://www.w3cschool.cn/jsref/met-his-back.html) - 与在浏览器点击后退按钮相同
 *   [history.forward()](https://www.w3cschool.cn/jsref/met-his-forward.html) - 与在浏览器中点击向前按钮向前相同
 
-## window.navigator 
+## window.navigator
 navigator 对象包含有关访问者浏览器的信息。
 ```javascript
-<div id="example"></div> 
+<div id="example"></div>
 
-<script> 
+<script>
 
-txt = "<p>Browser CodeName: " + navigator.appCodeName + "</p>"; 
-txt+= "<p>Browser Name: " + navigator.appName + "</p>"; 
-txt+= "<p>Browser Version: " + navigator.appVersion + "</p>"; 
-txt+= "<p>Cookies Enabled: " + navigator.cookieEnabled + "</p>"; 
-txt+= "<p>Platform: " + navigator.platform + "</p>"; 
-txt+= "<p>User-agent header: " + navigator.userAgent + "</p>"; 
-txt+= "<p>User-agent language: " + navigator.systemLanguage + "</p>"; 
+txt = "<p>Browser CodeName: " + navigator.appCodeName + "</p>";
+txt+= "<p>Browser Name: " + navigator.appName + "</p>";
+txt+= "<p>Browser Version: " + navigator.appVersion + "</p>";
+txt+= "<p>Cookies Enabled: " + navigator.cookieEnabled + "</p>";
+txt+= "<p>Platform: " + navigator.platform + "</p>";
+txt+= "<p>User-agent header: " + navigator.userAgent + "</p>";
+txt+= "<p>User-agent language: " + navigator.systemLanguage + "</p>";
 
-document.getElementById("example").innerHTML=txt; 
+document.getElementById("example").innerHTML=txt;
 
 </script>
 ```
@@ -114,21 +121,21 @@ clearInterval() 方法用于停止 setInterval() 方法执行的函数代码。
 window.clearInterval() 方法可以不使用window前缀，直接使用函数clearInterval()。
 要使用 clearInterval() 方法, 在创建计时方法时你必须使用全局变量
 ```html
-<p id="demo"></p> 
-<button onclick="myStopFunction()">Stop time</button> 
+<p id="demo"></p>
+<button onclick="myStopFunction()">Stop time</button>
 
-<script> 
-var myVar=setInterval(function(){myTimer()},1000); 
-function myTimer() 
-{ 
-var d=new Date(); 
-var t=d.toLocaleTimeString(); 
-document.getElementById("demo").innerHTML=t; 
-} 
-function myStopFunction() 
-{ 
-clearInterval(myVar); 
-} 
+<script>
+var myVar=setInterval(function(){myTimer()},1000);
+function myTimer()
+{
+var d=new Date();
+var t=d.toLocaleTimeString();
+document.getElementById("demo").innerHTML=t;
+}
+function myStopFunction()
+{
+clearInterval(myVar);
+}
 </script>
 ```
 
@@ -142,7 +149,7 @@ window.setTimeout("javascript 函数",毫秒数);
 ## JavaScript Cookies
 Cookies 用于存储 web 页面的用户信息。
 
-由于 JavaScript 是运行在客户端的脚本，所以可以使用JavaScript来设置运行在客户端的Cookies。 
+由于 JavaScript 是运行在客户端的脚本，所以可以使用JavaScript来设置运行在客户端的Cookies。
 
 使用 JavaScript 创建Cookie
 JavaScript 可以使用 document.cookie 属性来创建 、读取、及删除 cookies。
@@ -160,27 +167,27 @@ document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 GMT";
 
 ### 设置cookies
 ```
-function setCookie(cname,cvalue,exdays)        
-{        
-var d = new Date();        
-d.setTime(d.getTime()+(exdays*24*60*60*1000));        
-var expires = "expires="+d.toGMTString();        
-document.cookie = cname + "=" + cvalue + "; " + expires;        
+function setCookie(cname,cvalue,exdays)
+{
+var d = new Date();
+d.setTime(d.getTime()+(exdays*24*60*60*1000));
+var expires = "expires="+d.toGMTString();
+document.cookie = cname + "=" + cvalue + "; " + expires;
 }
 ```
 
 ### 获取 cookie 值的函数
 然后，我们创建一个函数用户返回指定 cookie 的值：
 ```
-function getCookie(cname)        
-{        
-var name = cname + "=";        
-var ca = document.cookie.split(';');        
-for(var i=0; i<ca.length; i++)        
-  {        
-  var c = ca[i].trim();        
-  if (c.indexOf(name)==0) return c.substring(name.length,c.length);        
-  }        
-return "";        
+function getCookie(cname)
+{
+var name = cname + "=";
+var ca = document.cookie.split(';');
+for(var i=0; i<ca.length; i++)
+  {
+  var c = ca[i].trim();
+  if (c.indexOf(name)==0) return c.substring(name.length,c.length);
+  }
+return "";
 }
 ```

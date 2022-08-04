@@ -1,3 +1,10 @@
+---
+title: Windows-cmd(bat)-脚本简介
+categories: 脚本文件
+tags:
+- 脚本文件
+---
+
 ## 前提知识
 
 ### 命令提示符介绍

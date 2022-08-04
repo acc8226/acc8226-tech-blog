@@ -1,3 +1,8 @@
+---
+title: Nginx-使用
+categories: Web服务器技术
+---
+
 ## nginx 反向代理
 
 这里用到了关键字 proxy_pass

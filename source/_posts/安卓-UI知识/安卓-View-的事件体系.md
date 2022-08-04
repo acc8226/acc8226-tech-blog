@@ -1,7 +1,8 @@
 ---
 title: 安卓-View-的事件体系
-date:
+categories: 安卓-UI知识
 tags:
+- android
 ---
 
 ### 什么是View

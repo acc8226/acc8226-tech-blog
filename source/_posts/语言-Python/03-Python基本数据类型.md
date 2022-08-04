@@ -1,3 +1,10 @@
+---
+title: 03-Python基本数据类型
+categories: 语言-Python
+tags:
+- python
+---
+
 ## 整数类型
 
 4 种进制表示形式

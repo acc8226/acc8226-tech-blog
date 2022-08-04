@@ -1,3 +1,8 @@
+---
+title: Google-Shell-风格规范
+categories: 文档规约
+---
+
 ## 背景[](https://google.github.io/styleguide/shellguide.html#background)
 
 ### 使用哪种 Shell[](https://google.github.io/styleguide/shellguide.html#which-shell-to-use)

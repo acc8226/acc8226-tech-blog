@@ -1,3 +1,10 @@
+---
+title: AJAX
+categories: 语言-JavaScript
+tags:
+- js
+---
+
 ![](https://upload-images.jianshu.io/upload_images/1662509-2558627485fe75a8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### XMLHttpRequest 对象

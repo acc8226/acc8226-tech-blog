@@ -1,3 +1,10 @@
+---
+title: 01-Python基本语法元素
+categories: 语言-Python
+tags:
+- python
+---
+
 ## python 可以做什么
 
 * web开发

@@ -1,3 +1,8 @@
+---
+title: 单平台-Win-putty-kitty-pscp 使用
+categories: 收藏-技术软件
+---
+
 ## 前言
 
 受制于 Xshell 的收费，因此总在寻思构建一套免费的 ssh 方案。

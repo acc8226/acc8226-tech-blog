@@ -1,3 +1,8 @@
+---
+title: Java编程规约【08】-控制语句
+categories: 文档规约
+---
+
 1.【强制】在一个 switch 块内，每个 case 要么通过 continue / break / return 等来终止，要么注释说明
 程序将继续执行到哪一个 case 为止；在一个 switch 块内，都必须包含一个 default 语句并且放在最
 后，即使它什么代码也没有。

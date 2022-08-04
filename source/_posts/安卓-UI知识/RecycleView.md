@@ -1,3 +1,10 @@
+---
+title: 适配完结篇一-RecycleView
+categories: 安卓-UI知识
+tags:
+- android
+---
+
 ## ItemTouchHelper 用法
 
 ```java

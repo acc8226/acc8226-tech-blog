@@ -1,7 +1,8 @@
 ---
 title: Markdown-替代品-Asciidoc-介绍
-date:
+categories: 标记语言-Markdown
 tags:
+- Markdown
 ---
 
 AsciiDoc，它的设计初衷就是为了解决写书规模的问题，并且是 O’Reilly 的在线出版平台 [Atlas](http://chimera.labs.oreilly.com/) 的推荐语言。经过一番学习，我觉得 Asciidoc 确实很适合电子书制作。

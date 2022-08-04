@@ -1,4 +1,11 @@
-> https://developer.android.google.cn/training/permissions/index.html
+---
+title: 安卓-training-使用系统权限
+categories: 安卓官方抄录
+tags:
+- android
+---
+
+https://developer.android.google.cn/training/permissions/index.html
 
 ## 声明权限
 

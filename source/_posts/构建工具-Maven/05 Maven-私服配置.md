@@ -1,3 +1,11 @@
+---
+title: 05 Maven-私服配置
+categories: 构建工具-Maven
+tags:
+- 构建工具
+- Maven
+---
+
 ## 配置华为云私有库下载
 
 1\. settings.xml 中设置仓库凭证：servers 节点中添加如下配置

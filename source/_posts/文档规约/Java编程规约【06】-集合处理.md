@@ -1,3 +1,8 @@
+---
+title: Java编程规约【06】-集合处理
+categories: 文档规约
+---
+
 1\. 【强制】关于 hashCode 和 equals 的处理，遵循如下规则：
   1. 只要覆写 equals，就必须覆写 hashCode。
   2. 因为 Set 存储的是不重复的对象，依据 hashCode 和 equals 进行判断，所以 Set 存储的对象必须覆写这两种方法。
@@ -45,7 +50,7 @@ if (value == null || remappingFunction == null) {
 }
 ```
 
-反例： 
+反例：
 
 ```java
 List<Pair<String, Double>> pairArrayList = new ArrayList<>(2);
@@ -130,7 +135,7 @@ Iterator<String> iterator = list.iterator();
 while (iterator.hasNext()) {
     String item = iterator.next();
     if (删除元素的条件) {
-        iterator.remove(); 
+        iterator.remove();
     }
 }
 ```
@@ -139,8 +144,8 @@ while (iterator.hasNext()) {
 
 ```java
 for (String item : list) {
-    if ("1".equals(item)) { 
-        list.remove(item); 
+    if ("1".equals(item)) {
+        list.remove(item);
     }
 }
 ```
@@ -197,7 +202,7 @@ ArrayList<User> users = new ArrayList(10);
 反例：由于 HashMap 的干扰，很多人认为 ConcurrentHashMap 是可以置入 null 值，而事实上，存储 null 值时会抛 出 NPE 异常。
 
 
-总结: 
+总结:
 Java 的集合类 API 有很大的选择余地；Java 7 至少提供了 58 个不同的集合类。在编写应用时，选择恰当的集合类，以及恰当地使用集合类，是一个重要的性能考量。
 使用集合类的第一条规则是，选择适合应用的算法需求的集合类。该建议并不是特定于 Java 的。LinkedList 不适合做搜索；如果需要访问一段随机的数据，应该将集合保存到 HashMap 中。如果数据需要有序排列，则应使用 TreeMap，而不是尝试在应用中做排序。如果会用索引访问数据，则使用 ArrayList；但如果会频繁地向该数组中间插入数据，则不要使用它，诸如此类。根据算法选择要使用哪个集合类，这非常重要，但是在 Java 中做选择和在其他编程语言中做选择并没有多少区别。
 然而在使用 Java 的集合类时，还有一些特殊的地方需要考虑。
@@ -229,7 +234,7 @@ Java 的集合类 API 有很大的选择余地；Java 7 至少提供了 58 个�
 
 ### 参考(References)
 《码出高效 阿里巴巴Java开发手册 终极版（1.3.0）》
- [《Java性能权威指南》](http://www.ituring.com.cn/book/1445) 
+ [《Java性能权威指南》](http://www.ituring.com.cn/book/1445)
  [《Java技术手册 第6版》](http://www.ituring.com.cn/book/1554)
 [《Java面向对象编程(第2版)》](https://www.amazon.cn/dp/B01NAI4UXH/ref=sr_1_1?ie=UTF8&qid=1515739503&sr=8-1&keywords=java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B)
 

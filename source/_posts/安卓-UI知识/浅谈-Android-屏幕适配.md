@@ -1,7 +1,8 @@
 ---
 title: 浅谈-Android-屏幕适配
-date:
+categories: 安卓-UI知识
 tags:
+- android
 ---
 
 ## 几组概念

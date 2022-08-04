@@ -1,4 +1,11 @@
-> https://developer.android.google.cn/guide/topics/ui/settings.html
+---
+title: 安卓-topic-UI-设置-settings
+categories: 安卓官方抄录
+tags:
+- android
+---
+
+https://developer.android.google.cn/guide/topics/ui/settings.html
 
 应用通常包括允许用户修改应用特性和行为的设置。例如，有些应用允许用户指定是否启用通知，或指定应用与云端同步数据的频率。
 
@@ -236,7 +243,7 @@ PreferenceManager.setDefaultValues(this, R.xml.advanced_preferences, false);
 
 使用此设计的一大好处是，在大屏幕上运行时，[PreferenceActivity](https://developer.android.google.cn/reference/android/preference/PreferenceActivity.html) 会自动提供双窗格布局（如图）。
 
-![**1.** 标头用 XML 标头文件定义。 
+![**1.** 标头用 XML 标头文件定义。
 **2.** 每组设置均由 [PreferenceFragment](https://developer.android.google.cn/reference/android/preference/PreferenceFragment.html)
 （通过标头文件中的 <header>
  元素指定）定义。](http://upload-images.jianshu.io/upload_images/1662509-4037f002a1f752f2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)

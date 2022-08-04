@@ -1,3 +1,11 @@
+---
+title: 12 Maven plugin 设置和常见命令详解
+categories: 构建工具-Maven
+tags:
+- 构建工具
+- Maven
+---
+
 ## 核心 Plugin
 
 ### [Clean Plugin](http://maven.apache.org/plugins/maven-clean-plugin/)

@@ -1,3 +1,8 @@
+---
+title: 跨平台-显示-控制安卓手机方案-scrcpy
+categories: 收藏-技术软件
+---
+
 * Genymotion、Parallels Desktop 等虚拟机软件 太专业, 需要配置太多软件, 适合开发者。
 * 国内一些安卓游戏助手都可以一试, 这里我随便下载了一款网易 MuMu 对字体的显示不太好. 可以尝试一下 [傲软投屏（ApowerMirror）](https://www.apowersoft.cn/phone-mirror)
 * Vysor Pro 收费较贵，免费版广告又多

@@ -1,3 +1,8 @@
+---
+title: Android-app-build-gradle说明
+categories: IDE-使用
+---
+
 ```gradle
 apply plugin: 'com.android.application'
 

@@ -1,3 +1,11 @@
+---
+title: 给初学者的-简易-SVN-教程
+categories: 版本管理-SVN
+tags:
+- 版本管理
+- SVN
+---
+
 ## windows 用户
 
 推荐使用 tortoisesvn

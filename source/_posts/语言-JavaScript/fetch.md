@@ -1,3 +1,10 @@
+---
+title: fetch
+categories: 语言-JavaScript
+tags:
+- js
+---
+
 https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API/Using_Fetch
 
 ```html

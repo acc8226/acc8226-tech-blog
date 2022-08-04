@@ -1,3 +1,10 @@
+---
+title: JS-声明
+categories: 语言-JavaScript
+tags:
+- js
+---
+
 ## var
 
 声明一个变量，可同时将其初始化为一个值。
@@ -68,7 +75,7 @@ function do_something() {
   console.log(bar); // 111
 }
 
-// is implicitly understood as: 
+// is implicitly understood as:
 function do_something() {
   var bar;
   console.log(bar); // undefined
@@ -82,7 +89,7 @@ function do_something() {
 
 x是全局变量，并且赋值为0。
 y被声明成函数a作用域的变量，然后赋值成2。
-创建新的全局变量z，并且给z赋值为5。 
+创建新的全局变量z，并且给z赋值为5。
 
 ```js
 var x = 0;  // x是全局变量，并且赋值为0。
@@ -92,12 +99,12 @@ console.log(typeof z); // undefined，因为z还不存在。
 function a() { // 当a被调用时，
   var y = 2;   // y被声明成函数a作用域的变量，然后赋值成2。
 
-  console.log(x, y);   // 0 2 
+  console.log(x, y);   // 0 2
 
   function b() {       // 当b被调用时，
     x = 3;  // 全局变量x被赋值为3，不生成全局变量。
     y = 4;  // 已存在的外部函数的y变量被赋值为4，不生成新的全局变量。
-    z = 5;  // 创建新的全局变量z，并且给z赋值为5。 
+    z = 5;  // 创建新的全局变量z，并且给z赋值为5。
   }         // (在严格模式下（strict mode）抛出ReferenceError)
 
   b();     // 调用b时创建了全局变量z。
@@ -171,7 +178,7 @@ if (a === 1) {
 
   console.log(a);  // 11
   console.log(b);  // 22
-} 
+}
 
 console.log(a); // 11
 console.log(b); // 2
@@ -201,7 +208,7 @@ let x = 1;
 ### 常量示例
 下面的例子演示了常量的特性。在浏览器的控制台试一下这个例子。
 ```js
-// 注意: 常量在声明的时候可以使用大小写，但通常情况下全部用大写字母。 
+// 注意: 常量在声明的时候可以使用大小写，但通常情况下全部用大写字母。
 
 // 定义常量MY_FAV并赋值7
 const MY_FAV = 7;
@@ -212,17 +219,17 @@ MY_FAV = 20;
 // 输出 7
 console.log("my favorite number is: " + MY_FAV);
 
-// 尝试重新声明会报错 
+// 尝试重新声明会报错
 const MY_FAV = 20;
 
 //  MY_FAV 保留给上面的常量，这个操作会失败
-var MY_FAV = 20; 
+var MY_FAV = 20;
 
 // 也会报错
 let MY_FAV = 20;
 
 // 注意块范围的性质很重要
-if (MY_FAV === 7) { 
+if (MY_FAV === 7) {
     // 没问题，并且创建了一个块作用域变量 MY_FAV
     // (works equally well with let to declare a block scoped non const variable)
     let MY_FAV = 20;

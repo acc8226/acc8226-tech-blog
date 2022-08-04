@@ -1,3 +1,11 @@
+---
+title: Ant打包安卓apk(2)-手写版
+categories: 构建工具-Ant
+tags:
+- 构建工具
+- Ant
+---
+
 接着上文, 直接上 ant 脚本
 
 ```xml

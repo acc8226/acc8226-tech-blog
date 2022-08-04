@@ -1,3 +1,10 @@
+---
+title: Bash-的流程控制
+categories: 脚本文件
+tags:
+- 脚本文件
+---
+
 ## 一、if else
 和 Java、PHP等语言不一样，sh的流程控制不可为空
 

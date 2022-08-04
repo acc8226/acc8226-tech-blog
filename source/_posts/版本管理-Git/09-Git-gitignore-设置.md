@@ -1,3 +1,11 @@
+---
+title: 09-Git-gitignore-设置
+categories: 版本管理-Git
+tags:
+- 版本管理
+- git
+---
+
 ## .gitignore 介绍
 
 在Git工作区的根目录下创建一个特殊的 `.gitignore` 文件，然后把要忽略的文件名填进去，Git 就会自动忽略这些文件。

@@ -1,3 +1,10 @@
+---
+title: 翻译-国外大神的js-分号使用指南
+categories: 语言-JavaScript
+tags:
+- js
+---
+
 * Required: When two statements are on the same line
 必备: 当两个语句在同一行时
 

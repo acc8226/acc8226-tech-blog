@@ -1,3 +1,8 @@
+---
+title: Java编程规约【07】-并发处理
+categories: 文档规约
+---
+
 1\. 【强制】获取单例对象需要保证线程安全，其中的方法也要保证线程安全。
 说明：资源驱动类、工具类、单例工厂类都需要注意。
 
@@ -11,17 +16,17 @@ public class UserThreadFactory implements ThreadFactory {
     private final String namePrefix;
     private final AtomicInteger nextId = new AtomicInteger(1);
     // 定义线程组名称，在利用 jstack 来排查问题时，非常有帮助
-    UserThreadFactory(String whatFeatureOfGroup) {    
+    UserThreadFactory(String whatFeatureOfGroup) {
         namePrefix = "FromUserThreadFactory's" + whatFeatureOfGroup + "-Worker-";
     }
-    
+
     @Override
-    public Thread newThread(Runnable task) {    
-        String name = namePrefix + nextId.getAndIncrement();    
-        Thread thread = new Thread(null, task, name, 0, false);    
-        System.out.println(thread.getName());    
-        return thread;    
-    }    
+    public Thread newThread(Runnable task) {
+        String name = namePrefix + nextId.getAndIncrement();
+        Thread thread = new Thread(null, task, name, 0, false);
+        System.out.println(thread.getName());
+        return thread;
+    }
 }
 ```
 
@@ -171,16 +176,16 @@ volatile 型，（比如修改 helper 的属性声明为 private volatile Helper
 public class LazyInitDemo {
     private volatile Helper helper = null;
     public Helper getHelper() {
-    if (helper == null) {    
-        synchronized(this) {  
-            if (helper == null) {   
-                helper = new Helper();   
-            }    
-        }   
-    }   
-    return helper;   
-}    
-// other methods and fields...   
+    if (helper == null) {
+        synchronized(this) {
+            if (helper == null) {
+                helper = new Helper();
+            }
+        }
+    }
+    return helper;
+}
+// other methods and fields...
 }
 ```
 

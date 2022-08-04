@@ -1,3 +1,11 @@
+---
+title: SVN-常用命令
+categories: 版本管理-SVN
+tags:
+- 版本管理
+- SVN
+---
+
 ## 检查 svn 是否已安装
 
 安装好后 输入 `svn --version`  检查

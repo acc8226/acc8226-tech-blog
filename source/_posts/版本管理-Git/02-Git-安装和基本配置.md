@@ -1,3 +1,11 @@
+---
+title: 02-Git-安装和基本配置
+categories: 版本管理-Git
+tags:
+- 版本管理
+- git
+---
+
 ## Git 安装
 
 ### Linux 上安装 Git

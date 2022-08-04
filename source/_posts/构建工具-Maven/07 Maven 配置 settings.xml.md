@@ -1,3 +1,11 @@
+---
+title: 07 Maven 配置 settings.xml
+categories: 构建工具-Maven
+tags:
+- 构建工具
+- Maven
+---
+
 ## 个性化 settings.xml 配置
 
 Settings.xml 中包含类似本地仓储位置、修改远程仓储服务器、认证信息等配置。

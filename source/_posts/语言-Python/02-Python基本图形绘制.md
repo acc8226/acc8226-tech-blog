@@ -1,3 +1,10 @@
+---
+title: 02-Python基本图形绘制
+categories: 语言-Python
+tags:
+- python
+---
+
 ## turtle 库概述
 
 turtle(海龟)库是 turtle 绘图体系的 Python 实现

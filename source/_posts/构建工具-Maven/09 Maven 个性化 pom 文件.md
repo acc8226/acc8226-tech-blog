@@ -1,3 +1,11 @@
+---
+title: 09 Maven 个性化 pom 文件
+categories: 构建工具-Maven
+tags:
+- 构建工具
+- Maven
+---
+
 ## POM 参考
 
 Maven – POM Reference

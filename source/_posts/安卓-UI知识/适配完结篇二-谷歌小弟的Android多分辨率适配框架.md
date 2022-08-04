@@ -1,3 +1,10 @@
+---
+title: 适配完结篇二-谷歌小弟的Android多分辨率适配框架
+categories: 安卓-UI知识
+tags:
+- android
+---
+
 ```java
 import android.content.Context;
 import android.content.res.Resources;

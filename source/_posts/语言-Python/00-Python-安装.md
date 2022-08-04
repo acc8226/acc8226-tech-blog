@@ -1,3 +1,10 @@
+---
+title: 00-Python-安装
+categories: 语言-Python
+tags:
+- python
+---
+
 ## 安装 python
 
 ### windows 平台

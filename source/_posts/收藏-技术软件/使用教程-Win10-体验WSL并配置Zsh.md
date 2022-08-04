@@ -1,3 +1,8 @@
+---
+title: 使用教程-Win10-体验WSL并配置Zsh
+categories: 收藏-技术软件
+---
+
 > Windows Subsystem for Linux（简称 WSL）是一个在 Windows 10/11 上能够运行原生 Linux 二进制[可执行文件](https://baike.baidu.com/item/%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/2885816)（ELF 格式）的兼容层。
 
 ## 入门

@@ -1,7 +1,14 @@
+---
+title: JS的控制流程
+categories: 语言-JavaScript
+tags:
+- js
+---
+
 ## Block
 一个块语句可以用来管理零个或多个语句。该区块是由一对大括号分隔。
 
-块声明: 
+块声明:
 { StatementList }
 
 通过var声明的变量没有块级作用域。在语句块里声明的变量作用域是其所在的函数或者 script 标签内，你可以在语句块外面访问到它。换句话说，语句块 不会生成一个新的作用域。尽管单独的语句块是合法的语句，但在JavaScript中你不会想使用单独的语句块，因为它们不像你想象的C或Java中的语句块那样处理事物。例如：
@@ -42,7 +49,7 @@ foo('outside');  // TypeError: foo is not a function
   function foo(location) {
    console.log('foo is called ' + location);
   }
-  foo('inside'); // 正常工作并且打印 'foo is called inside' 
+  foo('inside'); // 正常工作并且打印 'foo is called inside'
 }
 ```
 

@@ -1,3 +1,8 @@
+---
+title: Eclipse-常用插件
+categories: IDE-使用
+---
+
 ## 生成类图工具(ModelGoon)插件
 
 一个 Eclipse 插件，能将 Eclipse 中现有的 java 类生成类图，可以进行 Java 包的依赖分析，基于 UML 图进行模型设计，以及逆向工程（即从已有源代码生成类图）。

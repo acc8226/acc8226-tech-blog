@@ -1,3 +1,10 @@
+---
+title: docsify-常用插件地址收藏
+categories: 标记语言-Markdown
+tags:
+- Markdown
+---
+
 ## docsify 介绍
 
 <https://docsify.js.org/#/zh-cn/quickstart>

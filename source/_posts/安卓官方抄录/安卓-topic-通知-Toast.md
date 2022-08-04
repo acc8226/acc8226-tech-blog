@@ -1,4 +1,11 @@
-> http://developer.android.youdaxue.com/guide/topics/ui/notifiers/toasts.html#Positioning
+---
+title: 安卓-topic-通知-Toast
+categories: 安卓官方抄录
+tags:
+- android
+---
+
+http://developer.android.youdaxue.com/guide/topics/ui/notifiers/toasts.html#Positioning
 
 ### 创建自定义Toast View
 

@@ -1,4 +1,11 @@
-> <http://developer.android.youdaxue.com/guide/topics/ui/menus.html>
+---
+title: 安卓-topic-菜单-Menu
+categories: 安卓官方抄录
+tags:
+- android
+---
+
+<http://developer.android.youdaxue.com/guide/topics/ui/menus.html>
 
 菜单是许多应用类型中常见的用户界面组件。要提供熟悉而一致的用户体验，您应使用 Menu API 呈现 Activity 中的用户操作和其他选项。
 从 Android 3.0（API 级别 11）开始，采用 Android 技术的设备不必再提供一个专用“菜单”按钮。随着这种改变，Android 应用需摆脱对包含 6 个项目的传统菜单面板的依赖，取而代之的是要提供一个应用栏来呈现常见的用户操作。

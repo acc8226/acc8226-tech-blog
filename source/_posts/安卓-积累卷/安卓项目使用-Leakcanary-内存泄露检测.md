@@ -1,3 +1,10 @@
+---
+title: 安卓项目使用-Leakcanary-内存泄露检测
+categories: 安卓积累卷
+tags:
+- android
+---
+
 ## 导入
 
 > 导入 Leakcanary-watcher、Leakcanary-analyzer、Leakcanary-android， 在当前项目的引用 Leakcanary-android 这个 library。

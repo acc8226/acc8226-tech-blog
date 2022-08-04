@@ -1,3 +1,10 @@
+---
+title: JS-函数
+categories: 语言-JavaScript
+tags:
+- js
+---
+
 ## 函数定义
 > 在JavaScript中另一个基本概念是函数, 它允许你在一个代码块中存储一段用于处理单任务的代码，然后在任何你需要的时候用一个简短的命令来调用，而不是把相同的代码写很多次。
 
@@ -120,7 +127,7 @@ function myFunction(arg1, arg2) {
     this.firstName = arg1;
     this.lastName  = arg2;
 }
- 
+
 // This    creates a new object
 var x = new myFunction("John","Doe");
 x.firstName;                             // 返回 "John"
@@ -158,11 +165,11 @@ var add = (function () {
     var counter = 0;
     return function () {return counter += 1;}
 })();
- 
+
 add();
 add();
 add();
- 
+
 // 计数器为 3
 ```
 

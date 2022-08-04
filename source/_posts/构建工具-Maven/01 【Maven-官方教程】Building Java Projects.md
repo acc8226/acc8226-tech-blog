@@ -1,3 +1,11 @@
+---
+title: 构建工具-Maven
+categories: 构建工具-Maven
+tags:
+- 构建工具
+- Maven
+---
+
 ## Create the directory structure
 
 mkdir -p src/main/java/hello on *nix systems

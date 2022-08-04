@@ -1,3 +1,11 @@
+---
+title: Ant打包安卓apk(3)-ANT打包自动档(基本版)
+categories: 构建工具-Ant
+tags:
+- 构建工具
+- Ant
+---
+
 1\. ANT支持
 2\. 配置环境变量(android 和 ANT 都需要)
 

@@ -1,3 +1,8 @@
+---
+title: Java编程规约【05】日期处理
+categories: 文档规约
+---
+
 1\. 【强制】日期格式化时，传入 pattern 中表示年份统一使用小写的 y。
 说明：日期格式化时，yyyy 表示当天所在的年，而大写的 YYYY 代表是 week in which year（JDK7 之后引入的概念）， 意思是当天所在的周属于的年份，一周从周日开始，周六结束，只要本周跨年，返回的 YYYY 就是下一年。
 正例：表示日期和时间的格式如下所示： `new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")`

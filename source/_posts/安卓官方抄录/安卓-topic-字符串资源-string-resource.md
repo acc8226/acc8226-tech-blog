@@ -1,4 +1,11 @@
-> http://developer.android.youdaxue.com/guide/topics/resources/string-resource.html
+---
+title: 安卓-topic-字符串资源-string-resource
+categories: 安卓官方抄录
+tags:
+- android
+---
+
+http://developer.android.youdaxue.com/guide/topics/resources/string-resource.html
 
 ## 字符串资源
 

@@ -1,3 +1,8 @@
+---
+title: Java编程规约【01】命名风格
+categories: 文档规约
+---
+
 1\. 【强制】所有编程相关的命名均不能以下划线或美元符号开始，也不能以下划线或美元符号结束。
 反例：`_name / __name / $Object / name_ / name$ / Object$`
 

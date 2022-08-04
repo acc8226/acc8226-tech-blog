@@ -1,3 +1,8 @@
+---
+title: vim-文档编辑2
+categories: 文本编辑器-使用
+---
+
 ## 进入 vim
 
 使用vim命令进入vim界面

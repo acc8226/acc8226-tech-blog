@@ -1,7 +1,8 @@
 ---
 title: Markdown-额外语法支持-GitHub-Flavored-Markdown
-date:
+categories: 标记语言-Markdown
 tags:
+- Markdown
 ---
 
 ## Syntax highlighting 语法突显

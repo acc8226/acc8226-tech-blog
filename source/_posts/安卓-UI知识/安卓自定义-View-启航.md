@@ -1,3 +1,10 @@
+---
+title: 安卓自定义-View-启航
+categories: 安卓-UI知识
+tags:
+- android
+---
+
 先总结下自定义 View 的步骤：
 
 1. 自定义 View 的属性

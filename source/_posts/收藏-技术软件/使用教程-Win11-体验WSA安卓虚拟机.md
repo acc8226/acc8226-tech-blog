@@ -1,3 +1,8 @@
+---
+title: 使用教程-Win11-体验WSA安卓虚拟机
+categories: 收藏-技术软件
+---
+
 ## 先决条件
 
 Windows Subsystem for Android 可用于 Windows 11 上的公共预览版。

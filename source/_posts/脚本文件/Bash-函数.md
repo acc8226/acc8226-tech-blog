@@ -1,7 +1,8 @@
 ---
 title: Bash-函数
-date:
+categories: 脚本文件
 tags:
+- 脚本文件
 ---
 
 ## 函数定义

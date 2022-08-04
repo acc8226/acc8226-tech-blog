@@ -1,3 +1,10 @@
+---
+title: JavaScript-基本语法
+categories: 语言-JavaScript
+tags:
+- js
+---
+
 JavaScript 可以做什么?
 
 事件可以用于处理表单验证，用户输入，用户行为及浏览器动作:

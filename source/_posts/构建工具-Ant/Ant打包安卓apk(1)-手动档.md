@@ -1,3 +1,11 @@
+---
+title: Ant打包安卓apk(1)-手动档
+categories: 构建工具-Ant
+tags:
+- 构建工具
+- Ant
+---
+
 ![](https://upload-images.jianshu.io/upload_images/1662509-e6e38c5ec874cd32.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 　1. 根据资源文件和 AndroidManifest.xml 生成 R.java 文件

@@ -1,3 +1,10 @@
+---
+title: js的严格模式(strict-mode)
+categories: 语言-JavaScript
+tags:
+- js
+---
+
 JavaScript 严格模式（strict mode）即在严格的条件下运行。
 
 > "use strict" 指令只允许出现在脚本或函数的开头。
@@ -30,8 +37,8 @@ var v = "Hi!  I'm a strict mode script!";
 function strict() {
   // 函数级别严格模式语法
   'use strict';
-  function nested() { 
-    return "And so am I!"; 
+  function nested() {
+    return "And so am I!";
   }
   return "Hi!  I'm a strict mode function!  " + nested();
 }

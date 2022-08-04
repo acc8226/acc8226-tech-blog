@@ -1,3 +1,11 @@
+---
+title: 02 Maven-快速入门
+categories: 构建工具-Maven
+tags:
+- 构建工具
+- Maven
+---
+
 Maven 翻译为"专家"、"内行"，是 Apache 下的一个纯 Java 开发的开源项目。基于项目对象模型（缩写：POM）概念，Maven 利用一个中央信息片断能管理一个项目的构建、报告和文档等步骤。
 
 Maven 是一个项目管理工具，可以对 Java 项目进行构建、依赖管理。

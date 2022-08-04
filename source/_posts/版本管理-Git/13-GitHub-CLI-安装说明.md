@@ -1,4 +1,12 @@
-> GitHub CLI brings GitHub to your terminal. Free and open source.
+---
+title: 13-GitHub-CLI-安装说明
+categories: 版本管理-Git
+tags:
+- 版本管理
+- git
+---
+
+GitHub CLI brings GitHub to your terminal. Free and open source.
 
 GitHub CLI | Take GitHub to the command line
 <https://cli.github.com/>

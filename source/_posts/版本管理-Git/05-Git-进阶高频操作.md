@@ -1,3 +1,11 @@
+---
+title: 05-Git-进阶高频操作
+categories: 版本管理-Git
+tags:
+- 版本管理
+- git
+---
+
 ## stash 储藏
 
 当手头工作没有完成时，先把工作现场 `git stash` 一下，然后去修复 bug

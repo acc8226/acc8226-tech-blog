@@ -1,3 +1,10 @@
+---
+title: Android-各版本对应的-SDK-版本
+categories: 安卓积累卷
+tags:
+- android
+---
+
 ## SDK
 
 Android 开发所需的 SDK，下载并解压后，将解压出的整个文件夹复制或者移动到 your sdk 路径/platforms文件夹，然后打开 SDK Manager，打开 Tools(工具)菜单选择 Options (选项)菜单项打开 Android SDK Manager Setting 对话框，点击 Clear Cache (清除缓存)按钮，然后重启 Eclipse(或 Android Studio) 和 SDK Manager。

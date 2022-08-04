@@ -1,3 +1,8 @@
+---
+title: 跨平台-Chrome 和 Firefox 使用包含插件
+categories: 收藏-技术软件
+---
+
 ## chrome 的使用
 
 ### 常用快捷键

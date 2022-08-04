@@ -1,3 +1,11 @@
+---
+title: 14 maven-问题记录
+categories: 构建工具-Maven
+tags:
+- 构建工具
+- Maven
+---
+
 ## 遇到的问题
 
 ### mvn 命令必须在 pom 文件目录下执行吗

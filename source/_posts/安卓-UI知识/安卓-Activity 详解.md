@@ -1,3 +1,10 @@
+---
+title: 安卓-Activity 详解
+categories: 安卓-UI知识
+tags:
+- android
+---
+
 常见容器视图示例：
 
 类名称|description
@@ -214,7 +221,7 @@ ftp: //192.168.17.168
 
 如果同时设置了 launchMode 和标志动作，则标志动作优先于相应的launchMode 属性值.
 
-* singgletop: FLAG_ ACTIVITY_ SINGLE_ TOP 
+* singgletop: FLAG_ ACTIVITY_ SINGLE_ TOP
 * singletask: FLAG_ACTIVITY_SINGLE_TOP + FLAG_ ACTIVITY_ CLEAR_ TOP
 
 **FLAG_ACTIVITY_CLEAR_TASK**

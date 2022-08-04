@@ -1,3 +1,8 @@
+---
+title: Mac教程1-0 新手体验
+categories: 收藏-我的软件
+---
+
 纠结了一阵, 9299 终入手翻新的 13.3 英寸 17款 MacBook Pro 2.3GHz 双核 英特尔 [酷睿i5 7360U 处理器](http://detail.zol.com.cn/cpu/index1168451.shtml) ，配备 Retina 显示屏 - 深空灰色
 
 产品链接: [https://www.apple.com/cn/shop/product/FPXT2CH/A](https://www.apple.com/cn/shop/product/FPXT2CH/A)

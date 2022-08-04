@@ -1,3 +1,10 @@
+---
+title: 在JavaSctript中解决问题
+categories: 语言-JavaScript
+tags:
+- js
+---
+
 ## 初学者常见的错误
 
 **正确的拼写和使用**

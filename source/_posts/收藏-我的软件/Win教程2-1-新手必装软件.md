@@ -1,3 +1,8 @@
+---
+title: Win教程2-1-新手必装软件
+categories: 收藏-我的软件
+---
+
 拿到新电脑后接下需要安装些常用工具类软件，于是有了此文。
 
 ## [浏览器-360极速](https://browser.360.cn/ee/index.html)

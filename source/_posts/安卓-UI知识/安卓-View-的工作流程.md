@@ -1,3 +1,10 @@
+---
+title: 安卓-View-的工作流程
+categories: 安卓-UI知识
+tags:
+- android
+---
+
 > View 的工作流程主要是指 measure、layout、draw 这三大流程，即测量、布局和绘制，其中 measure 确定 View 的测量宽/高，layout 确定 View 的最终宽/高和四个顶点的位置，而 draw 则将View绘制到屏幕上。
 
 ## measure 的过程
@@ -330,7 +337,7 @@ int heightMeasureSpec = View.MeasureSpec.makeMeasureSpec(100, View.MeasureSpec.E
 view.measure(widthMeasureSpec, heightMeasureSpec);
 ```
   * wrap_content如下measure：
-  
+
 ```java
 int widthMeasureSpec = View.MeasureSpec.makeMeasureSpec((1<<30)-1, View.MeasureSpec.AT_MOST);
 int heightMeasureSpec = View.MeasureSpec.makeMeasureSpec((1<<30)-1, View.MeasureSpec.AT_MOST);

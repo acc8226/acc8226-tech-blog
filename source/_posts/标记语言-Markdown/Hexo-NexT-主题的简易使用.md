@@ -1,3 +1,10 @@
+---
+title: Hexo-NexT-主题的简易使用
+categories: 标记语言-Markdown
+tags:
+- Markdown
+---
+
 主题介绍:
 NexT - Elegant and powerful theme for Hexo. 支持丰富的拓展的 Hexo 主题.
 

@@ -1,7 +1,8 @@
 ---
 title: 标准-Markdown-语法
-date:
+categories: 标记语言-Markdown
 tags:
+- Markdown
 ---
 
 Markdown 的目标是实现「易读易写」。也是兼容 HTML的, 是一种适用于网络的书写语言。

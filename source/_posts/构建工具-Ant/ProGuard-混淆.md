@@ -1,3 +1,11 @@
+---
+title: ProGuard-混淆
+categories: 构建工具-Ant
+tags:
+- 构建工具
+- Ant
+---
+
 ProGuard 技术的功能概括为以下4项：
 
 1.压缩（shrinks）  ：检查并移除代码中无用的类，字段，方法，属性。

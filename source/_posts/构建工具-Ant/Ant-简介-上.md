@@ -1,4 +1,12 @@
-> Apache Ant 是由 Java 语言开发的工具，由 Apache 软件基金会所提供。Apache Ant 的配置文件写成 XML 容易维护和书写，而且结构很清晰。本教程将以简单的方式会向你展示如何利用 Apache ANT 来自动地构建和部署过程。
+---
+title: Ant-简介-上
+categories: 构建工具-Ant
+tags:
+- 构建工具
+- Ant
+---
+
+Apache Ant 是由 Java 语言开发的工具，由 Apache 软件基金会所提供。Apache Ant 的配置文件写成 XML 容易维护和书写，而且结构很清晰。本教程将以简单的方式会向你展示如何利用 Apache ANT 来自动地构建和部署过程。
 
 1\. 下载到某个目录解压到, 例如安装路径`C:\L_Executable\apache-ant-1.10.5`
 2\. 配置环境变量

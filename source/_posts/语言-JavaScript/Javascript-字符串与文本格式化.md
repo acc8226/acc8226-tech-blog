@@ -1,4 +1,12 @@
+---
+title: Javascript-字符串与文本格式化
+categories: 语言-JavaScript
+tags:
+- js
+---
+
 ## 字符串
+
 JavaScript中的 [String](https://developer.mozilla.org/en-US/docs/Glossary/String "String: In any computer programming language, a string is a sequence of characters used to represent text.") 类型用于表示文本型的数据. 它是由无符号整数值（16bit）作为元素而组成的集合. 字符串中的每个元素在字符串中占据一个位置. 第一个元素的index值是0, 下一个元素的index值是1, 以此类推. 字符串的长度就是字符串中所含的元素个数.你可以通过String字面值或者String对象两种方式创建一个字符串。
 
 ### String字面量

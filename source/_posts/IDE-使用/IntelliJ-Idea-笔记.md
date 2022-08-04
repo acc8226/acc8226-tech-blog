@@ -1,3 +1,8 @@
+---
+title: IntelliJ-Idea-笔记
+categories: IDE-使用
+---
+
 ## 下载和安装
 
 https://www.jetbrains.com/idea/download/other.html

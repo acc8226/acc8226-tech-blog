@@ -1,3 +1,10 @@
+---
+title: nodejs安装
+categories: 语言-Node.js
+tags:
+- nodeJS
+---
+
 ## npm 换源的的几种方式
 
 1.临时使用

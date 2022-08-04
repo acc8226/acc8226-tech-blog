@@ -1,3 +1,11 @@
+---
+title: 11 Maven lifecycles 和 plugin 简介
+categories: 构建工具-Maven
+tags:
+- 构建工具
+- Maven
+---
+
 Maven 构建生命周期定义了一个项目构建跟发布的过程。
 
 > Maven defines 3 lifecycles in META-INF/plexus/components.xml。

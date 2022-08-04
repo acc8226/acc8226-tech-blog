@@ -1,3 +1,10 @@
+---
+title: Android-设备使用-chrome远程调试
+categories: 安卓积累卷
+tags:
+- android
+---
+
 1. 在您的 Android 设备上打开 Developer Options 屏幕。
 2. 选择 **Enable USB Debugging**。
 3. 在您的开发计算机上打开 Chrome。

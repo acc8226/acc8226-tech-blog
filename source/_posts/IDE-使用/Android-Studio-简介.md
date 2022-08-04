@@ -1,3 +1,8 @@
+---
+title: Android-Studio-简介
+categories: IDE-使用
+---
+
 Android Studio 是基于 IntelliJ IDEA 的官方 Android 应用开发集成开发环境 (IDE)。除了 IntelliJ 强大的代码编辑器和开发者工具，Android Studio 提供了更多可提高 Android 应用构建效率的功能，例如：
 
 * 基于 Gradle 的灵活构建系统

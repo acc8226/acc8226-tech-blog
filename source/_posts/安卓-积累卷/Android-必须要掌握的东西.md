@@ -1,3 +1,10 @@
+---
+title: Android-必须要掌握的东西
+categories: 安卓积累卷
+tags:
+- android
+---
+
 ## [1. 熟练掌握Java技术，熟悉面向对象思想，熟悉常用设计模式](http://www.jianshu.com/p/5bdf591ebda2)
 
 * 熟练掌握Java技术，熟悉面向对象思想，熟悉常用设计模式

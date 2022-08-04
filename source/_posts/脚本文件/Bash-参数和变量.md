@@ -1,7 +1,8 @@
 ---
 title: Bash-参数和变量
-date:
+categories: 脚本文件
 tags:
+- 脚本文件
 ---
 
 ## 变量定义

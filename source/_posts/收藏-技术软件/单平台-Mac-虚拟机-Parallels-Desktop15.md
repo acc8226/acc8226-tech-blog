@@ -1,3 +1,8 @@
+---
+title: 单平台-Mac-虚拟机-Parallels-Desktop15
+categories: 收藏-技术软件
+---
+
 > Parallels Desktop 被称为 macOS 上最强大的虚拟机软件。可以在 Mac 下同时模拟运行 Win、Linux、Android 等多种操作系统及软件而不必重启电脑，并能在不同系统间随意切换。
 >
 > 最新版的 Parallels Desktop 15 (PD15) 完美支持最新的 macOS Catalina 并对 Windows 10 特别优化！可不重启直接在 Mac 系统上运行 Win10 UWP 通用应用、运行游戏、使用 Windows 版软件如 Office 办公软件、IE 浏览器、VisualStudio、AutoCAD 等。新版 PD15 支持 Metal 和 DirectX 11，游戏和 3D 性能大幅提升！！绝对是 Mac 用户必备神器……

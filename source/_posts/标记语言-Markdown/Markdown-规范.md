@@ -1,7 +1,8 @@
 ---
 title: Markdown-规范
-date:
+categories: 标记语言-Markdown
 tags:
+- Markdown
 ---
 
 # Rules

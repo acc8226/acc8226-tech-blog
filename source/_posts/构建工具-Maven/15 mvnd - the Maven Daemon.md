@@ -1,3 +1,11 @@
+---
+title: 15 mvnd - the Maven Daemon
+categories: 构建工具-Maven
+tags:
+- 构建工具
+- Maven
+---
+
 Index of /maven/mvnd
 <https://downloads.apache.org/maven/mvnd/>
 

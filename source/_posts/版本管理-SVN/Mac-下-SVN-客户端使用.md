@@ -1,3 +1,11 @@
+---
+title: Mac-下-SVN-客户端使用
+categories: 版本管理-SVN
+tags:
+- 版本管理
+- SVN
+---
+
 ## 安装方法
 
 mac 下已经自带了 svn 软件 。使用`svn –version` 查看是否安装。

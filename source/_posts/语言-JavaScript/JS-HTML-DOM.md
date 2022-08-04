@@ -1,4 +1,12 @@
+---
+title: JS-HTML-DOM
+categories: 语言-JavaScript
+tags:
+- js
+---
+
 ## HTML DOM (文档对象模型)
+
 当网页被加载时，浏览器会创建页面的文档对象模型（Document Object Model）。
 
 HTML DOM 定义了用于 HTML 的一系列标准的对象，以及访问和处理 HTML 文档的标准方法。通过 DOM，你可以访问所有的 HTML 元素，连同它们所包含的文本和属性。
@@ -28,7 +36,7 @@ JavaScript 能够创建动态的 HTML 内容：
 
 ### HTML DOM 改变 CSS
 改变 HTML 样式
-如需改变 HTML 元素的样式，请使用这个语法：    
+如需改变 HTML 元素的样式，请使用这个语法：
 ```
 document.getElementById(id).style.property=new style
 ```
@@ -37,7 +45,7 @@ document.getElementById(id).style.property=new style
 ```html
 <!DOCTYPE html>
 <html>
-  
+
   <body>
     <h1 id="id1">My Heading 1</h1>
     <button type="button" onclick="document.getElementById('id1').style.color='red'">Click Me!</button></body>
@@ -60,13 +68,13 @@ HTML DOM 允许您使用 JavaScript 来向 HTML 元素分配事件：
 ```xml
 <!DOCTYPE html>
 <html>
-  
+
   <head>
     <meta charset="utf-8">
     <title>W3Cschool教程(w3cschool.cn)</title></head>
-  
+
   <head></head>
-  
+
   <body>
     <p>点击按钮执行
       <em>displayDate()</em>函数.</p>

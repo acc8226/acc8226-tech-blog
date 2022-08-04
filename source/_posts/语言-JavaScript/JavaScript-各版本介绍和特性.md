@@ -1,3 +1,10 @@
+---
+title: JavaScript-各版本介绍和特性
+categories: 语言-JavaScript
+tags:
+- js
+---
+
 ## JavaScript 1.1
 
 Netscape Navigator 3.0在**1996年8月19**发布，是支持 JavaScript 的浏览器的第二个主要的版本。
