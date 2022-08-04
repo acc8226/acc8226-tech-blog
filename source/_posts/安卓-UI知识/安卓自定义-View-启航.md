@@ -5,7 +5,7 @@
 3. [重写 onMeasure]
 4. 重写 onDraw
 
-我把3用[]标出了，所以说3不一定是必须的，当然了大部分情况下还是需要重写的。
+我把 3 用[]标出了，所以说 3 不一定是必须的，当然了大部分情况下还是需要重写的。
 
 1. 自定义 View 的属性，首先在 res/values/  下建立一个attrs.xml ， 在里面定义我们的属性和声明我们的整个样式。
 
@@ -27,7 +27,7 @@
 ```
 
 > format是值该属性的取值类型:
-string, color, demension, integer, enum, reference, float,boolean, fraction, flag;不清楚的可以google
+string, color, demension, integer, enum, reference, float,boolean, fraction, flag;不清楚的可以 google
 
 ## 自定义View之基础概念之用到的六个工具
 

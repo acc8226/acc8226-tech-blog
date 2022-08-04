@@ -18,8 +18,8 @@ author: acc8226
 language: zh-CN
 timezone: Asia/Shanghai
 
-# 其中 :category 取目录，post_title 取文章中的 title
-permalink: :category/:post_title/
+# 其中 post_title 取文章中的 title
+permalink: :post_title/
 
 ## updated_option supports 'mtime' 使用文件的最后修改时间, 'date' 使用 date 作为 updated 的值。可被用于 Git 工作流之中, 'empty'
 updated_option: 'date'
@@ -175,96 +175,9 @@ tags:
 ---
 ```
 
-## next 主题添加 categories 和 tags
+## 痛点
 
-```yml
-cd hexo-site
-hexo new page tags
-```
-
-编辑新页面并将类型更改为标签，主题将在此页面中自动显示标签云。页面内容如下:
-
-```yml
-title: Tags
-date: 2014-12-22 12:39:04
-type: tags
----
-```
-
-添加 categories 则是类似的方法
-
-```sh
-cd hexo-site
-hexo new page categories
-```
-
-编辑新页面并将类型更改为标签，主题将在此页面中自动显示标签云。页面内容如下:
-
-```yml
-title: categories
-date: 2014-12-22 12:39:04
-type: categories
----
-```
-
-添加 about
-
-## next 主题添加 404 页面
-
-在终端中，切换到站点根目录的源文件夹。创建一个名为404的新文件夹，然后在其中创建一个新页面:
-
-```sh
-cd hexo-site
-hexo new page 404
-```
-
-如果你想启用公益404(腾讯在中国提供的服务) ，请编辑404/index.md，像这样:
-
-```yml
----
-title: '404'
-date: 2014-12-22 12:39:04
-comments: false
----
-<script src="//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js"
-        charset="utf-8" homePageUrl="/" homePageName="Back to home">
-</script>
-```
-
-通过编辑主题配置文件在菜单中添加 404:
-
-```yaml
-menu:
-  home: / || fa fa-home
-  archives: /archives/ || fa fa-archive
-  commonweal: /404/ || fa fa-heartbeat
-```
-
-## 添加本地搜索
-
-Local 本地 Search 搜寻
-
-```sh
-npm install hexo-generator-searchdb
-```
-
-添加依赖
-
-```yml
-# Local Search
-# Dependencies: https://github.com/next-theme/hexo-generator-searchdb
-local_search:
-  enable: true
-  # If auto, trigger search by changing input.
-  # If manual, trigger search by pressing enter key or search button.
-  trigger: auto
-  # Show top n results per article, show all results by setting to -1
-  top_n_per_article: 1
-  # Unescape html strings to the readable one.
-  unescape: false
-  # Preload the search data when the page loads.
-  preload: false
-```
+我不想图片资源直接放在 `source/images` 文件夹中。然后通过类似于 ![](/images/image.jpg) 的方法访问它们。对于那些想要更有规律地提供图片和其他资源以及想要将他们的资源分布在各个文章上的人来说，Hexo 提供的方式无法直接使用 markdown 语法。因此无法灵活引用相对路径的图片。于是我打算转战到 hugo 平台。
 
 ## 期间遇到的一些问题
 
@@ -276,9 +189,9 @@ local_search:
 
 #### **当要部署的项目与自己的个性地址不一致时，部署完成后存在一些资源访问 404？**
 
-答：当需要部署的仓库和自己的个性地址不一致时，如：[https://gitee.com/ipvb/blog](https://gitee.com/ipvb/blog) ，生成的pages url 为 [https://ipvb.gitee.io/blog](https://ipvb.gitee.io/blog) ，而访问的资源404，如 [https://ipvb.gitee.io/style.css](https://ipvb.gitee.io/style.css) 。这是因为相应配置文件的相对路径存在问题导致的，生成的资源 url 应该为 [https://ipvb.gitee.io/blog/style.css](https://ipvb.gitee.io/blog/style.css) 才对。对于不同的静态资源生成器，配置如下：
+答：当需要部署的仓库和自己的个性地址不一致时，如：[https://gitee.com/ipvb/blog](https://gitee.com/ipvb/blog) ，生成的 pages url 为 [https://ipvb.gitee.io/blog](https://ipvb.gitee.io/blog) ，而访问的资源404，如 [https://ipvb.gitee.io/style.css](https://ipvb.gitee.io/style.css) 。这是因为相应配置文件的相对路径存在问题导致的，生成的资源 url 应该为 [https://ipvb.gitee.io/blog/style.css](https://ipvb.gitee.io/blog/style.css) 才对。对于不同的静态资源生成器，配置如下：
 
-Hexo 配置文件_config.yml的url和root修改如下：
+Hexo 配置文件_config.yml 同步需要修改 url 和 root：
 
 ```yml
 url: https://ipvb.gitee.io/blog

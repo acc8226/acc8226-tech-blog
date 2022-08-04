@@ -1,5 +1,5 @@
-1. ANT支持
-2. 配置环境变量(android和ANT都需要)
+1\. ANT支持
+2\. 配置环境变量(android 和 ANT 都需要)
 
 ```sh
 export ANDROID_HOME=/Users/Stay/Desktop/develop/android-sdk-mac_x86/
@@ -9,13 +9,13 @@ export ANT_HOME=/Users/Stay/Desktop/develop/ant/apache-ant-1.8.4
 export PATH=${PATH}:${ANT_HOME}/bin
 ```
 
-3. 生成一个简单的build.xml，本身sdk/tool/ant 下有个完整的build.xml，我们只要基于它创建一个简单的build.xml即可.
+3\. 生成一个简单的 build.xml，本身 sdk/tool/ant 下有个完整的 build.xml，我们只要基于它创建一个简单的 build.xml即可.
 
 首先切换到项目根目录,
 `android update project --path . --name XXX` --path更新的是local.properties, --name更新的是build.xml
 否则会(must already have an AndroidManifest.xml)
 
-最好需要存在project.properties的情况下, 否则会 `Error: The project either has no target set or the target is invalid.`
+最好需要存在 project.properties 的情况下, 否则会 `Error: The project either has no target set or the target is invalid.`
 
 project.properties格式如下
 
@@ -25,7 +25,7 @@ target=android-22
 ```
 
 这样会更新两个文件
-Updated `local.properties`  sdk.dir标签指向路径, 此文件不应该包含在vcs中
+Updated `local.properties`  sdk.dir 标签指向路径, 此文件不应该包含在vcs中
 Updated `build.xml`  ant文件支持, 我觉得该文件可选是否包含在vcs中
 
 build.xml实例如下:
@@ -125,7 +125,7 @@ build.xml实例如下:
 </project>
 ```
 
-4. 你可以使用`ant -p`检测是否输出日志正常, 如果没问题说明你已经可以`ant debug`或者`ant release` 进行打包了
+4\. 你可以使用`ant -p`检测是否输出日志正常, 如果没问题说明你已经可以`ant debug`或者`ant release` 进行打包了
 ant release需要密钥支持, 并在ant.properties里对key进行声明
 
 ```sh

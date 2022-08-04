@@ -1,3 +1,9 @@
+---
+title: 安卓-sqlite数据库
+categories: 安卓积累卷
+tags: android
+---
+
 * 创建 Entry 的内部类, 该类实现 BaseColumns
 * tableName 定义常量字符串
 * 为 table 的每一项什么常量字符串

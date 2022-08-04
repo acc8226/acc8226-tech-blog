@@ -14,7 +14,7 @@
 
 **vue.css 压缩版**
 <https://cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css>
-最新所在文件夹 https://cdn.jsdelivr.net/npm/docsify/lib/themes/
+最新所在文件夹 <https://cdn.jsdelivr.net/npm/docsify/lib/themes/>
 
 ## 额外插件的更新包
 
@@ -27,17 +27,17 @@
 <https://unpkg.com/docsify-count/dist/>
 
 **分页导航插件**
-https://cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js
-最新所在文件夹 https://cdn.jsdelivr.net/npm/docsify-pagination/dist/
+<https://cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js>
+最新所在文件夹 <https://cdn.jsdelivr.net/npm/docsify-pagination/dist/>
 
 **复制到剪贴板**
-https://cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js
+<https://cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js>
 
 **theme-simple.css**
-https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css
-最新所在文件夹 https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/
+<https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css>
+最新所在文件夹 <https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/>
 **button-custom.css**
-https://coroo.github.io/docsify-share/assets/css/button-custom.css
+<https://coroo.github.io/docsify-share/assets/css/button-custom.css>
 **main-custom.css**
 <https://coroo.github.io/docsify-share/assets/css/main-custom.css>
 

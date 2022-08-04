@@ -38,7 +38,7 @@ aapt package -f -m -M AndroidManifest.xml -I D:/Android/android-sdk/platforms/an
 * `-sourcepath`指定用以查找类或接口定义的源代码路径, 这是非常重要的一个小技巧, 填写`src`后从而不用列举出`com.nci.insprotection`下所有的包了
 * 使用`-classpath/-cp`标签需要列举出所用用到的jar包`.;libs/android-support-v4.jar;xxx.jar;yyy.jar`, 不能使用通配符, 否则会找不到符号。还要注意jar包的命名最好不带空格，否则得双引号引起来
 * `-d` 指定放置生成的类文件的位置
-* 最后一个参数是 <source files>, 列举出所有用到的源文件, 由于我指定了sourcepath, 我只列举了`gen/com/nci/insprotection/*.java src/com/nci/insprotection/*.java`
+* 最后一个参数是 `<source files>`, 列举出所有用到的源文件, 由于我指定了sourcepath, 我只列举了`gen/com/nci/insprotection/*.java src/com/nci/insprotection/*.java`
 
 注意:
 
@@ -130,7 +130,7 @@ zipalign -f -v 4 bin/signed.apk bin/signed_aligned.apk
 
 ## 总结
 
-这篇文章只是说明了一个通用的流程, 很多方面的优化还没有考虑, 比如资源压缩, 代码混淆, 很多地方都是从网上找的, 所以还是不建议这么做, 用 AS 的 gradle构建再发到应用市场才靠谱, 但是自己折腾还是有实验价值的。
+这篇文章只是说明了一个通用的流程, 很多方面的优化还没有考虑, 比如资源压缩, 代码混淆, 很多地方都是从网上找的, 所以还是不建议这么做, 用 AS 的 gradle 构建再发到应用市场才靠谱, 但是自己折腾还是有实验价值的。
 
 ## 参考
 
