@@ -7,38 +7,41 @@ tags:
 
 ## 自定义配置
 
-其实就是一个迁移过程，将配置和文章这两块内容记住修改点
+### _config.yml 的配置
 
-_config.yml
+修改根目录下的 _config.yml。
+
+注：以下只列出修改过的部分。
 
 ```yaml
-title: Blogs of acc8226
-description: a personal website of acc8226
+# Site
+title: ac86 的博客
+subtitle: ''
+description: a personal blog of acc8226
+keywords: blog
 author: acc8226
-## 中文简体 zh-CN, 可以选择更改为en
+## 中文简体 zh-CN, 可以选择更改为 en
 language: zh-CN
-timezone: Asia/Shanghai
 
-# 其中 post_title 取文章中的 title
-permalink: :post_title/
+# URL
+# 可让您更方便的通过日期来管理文章
+permalink: :title/
 
-## updated_option supports 'mtime' 使用文件的最后修改时间, 'date' 使用 date 作为 updated 的值。可被用于 Git 工作流之中, 'empty'
-updated_option: 'date'
-
+# Writing
 # 代码高亮
 highlight:
   enable: true
   line_number: true
-  auto_detect: true
+  auto_detect: false
 
 # 分页
 index_generator:
   path: ''
-  per_page: 5
+  per_page: 8
   order_by: -date
 ```
 
-_config.next.yml 主题设置
+### _config.next.yml 主题设置
 
 ```yaml
 # 数学公式的支持
@@ -96,7 +99,7 @@ hexo g
 
 代码上传, 我这里写了 2 个版本。可以根据需要选其一。
 
-强制上传版
+**强制上传版**
 
 ```sh
 git config user.name "flow"
@@ -178,17 +181,15 @@ tags:
 
 ## 痛点
 
-我不想图片资源直接放在 `source/images` 文件夹中。然后通过类似于 ![](/images/image.jpg) 的方法访问它们。对于那些想要更有规律地提供图片和其他资源以及想要将他们的资源分布在各个文章上的人来说，Hexo 提供的方式无法直接使用 markdown 语法。因此无法灵活引用相对路径的图片。于是我打算转战到 hugo 平台。
+我不想图片资源直接放在 `source/images` 文件夹中。然后通过类似于 ![](/images/image.jpg) 的方法访问它们。对于那些想要更有规律地提供图片和其他资源以及想要将他们的资源分布在各个文章上的人来说，Hexo 提供的方式无法直接使用 markdown 语法，无法灵活引用相对路径的图片。所以 hexo 搭载图床使用可能才是出路。
 
-## 期间遇到的一些问题
+## 部署 Gitee Pages 遇到过的问题
 
-### 部署 Gitee Pages 常见问题
-
-#### **如何创建一个首页访问地址不带二级目录的 pages，如 ipvb.gitee.io？**
+### 如何创建一个首页访问地址不带二级目录的 pages，如 ipvb.gitee.io？
 
 你需要建立一个与自己个性地址同名的仓库，如 [https://gitee.com/ipvb](https://gitee.com/ipvb) 这个用户，想要创建一个自己的站点，但不想以子目录的方式访问，想以`ipvb.gitee.io`直接访问，那么他就可以创建一个名字为`ipvb`的仓库 [https://gitee.com/ipvb/ipvb](https://gitee.com/ipvb/ipvb) 部署完成后，就能以 [https://ipvb.gitee.io](https://ipvb.gitee.io/) 进行访问了。
 
-#### **当要部署的项目与自己的个性地址不一致时，部署完成后存在一些资源访问 404？**
+### 当要部署的项目与自己的个性地址不一致时，部署完成后存在一些资源访问 404？
 
 答：当需要部署的仓库和自己的个性地址不一致时，如：[https://gitee.com/ipvb/blog](https://gitee.com/ipvb/blog) ，生成的 pages url 为 [https://ipvb.gitee.io/blog](https://ipvb.gitee.io/blog) ，而访问的资源404，如 [https://ipvb.gitee.io/style.css](https://ipvb.gitee.io/style.css) 。这是因为相应配置文件的相对路径存在问题导致的，生成的资源 url 应该为 [https://ipvb.gitee.io/blog/style.css](https://ipvb.gitee.io/blog/style.css) 才对。对于不同的静态资源生成器，配置如下：
 

@@ -29,7 +29,7 @@ tags:
 myqr https://github.com
 ```
 
-* 在命令后输入链接或者句子作为参数，然后在程序的当前目录中产生相应的二维码图片文件，默认命名为” qrcode.png“。
+在命令后输入链接或者句子作为参数，然后在程序的当前目录中产生相应的二维码图片文件，默认命名为” qrcode.png“。
 
 #### 艺术二维码
 
@@ -37,14 +37,14 @@ myqr https://github.com
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-97347f4a59b4dd29.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-```markdown
+```md
 #1 -p
 myqr https://github.com -p github.jpg
 ```
 
-* 参数`-p` 用来将QR二维码图像与一张同目录下的图片相结合，产生一张**黑白**图片。
+参数 `-p` 用来将QR二维码图像与一张同目录下的图片相结合，产生一张**黑白**图片。
 
-#### 动态gif二维码
+#### 动态 gif 二维码
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-20fb77e8f51e51e7.gif?imageMogr2/auto-orient/strip)
 
@@ -59,7 +59,7 @@ myqr https://github.com -p github.jpg
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-3c7161098d03f6bf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-```python
+```py
 #RoseDraw.py
 import turtle as t
 # 定义一个曲线绘制函数

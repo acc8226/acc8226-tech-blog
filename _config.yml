@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Blogs of acc8226
+title: ac86 的博客
 subtitle: ''
-description: a personal website of acc8226
-keywords:
-author: John Doe
-## 中文简体 zh-CN, 可以选择更改为en
+description: a personal blog of acc8226
+keywords: blog
+author: acc8226
+## 中文简体 zh-CN, 可以选择更改为 en
 language: zh-CN
 timezone: ''
 
@@ -64,7 +64,7 @@ prismjs:
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
-  per_page: 10
+  per_page: 8
   order_by: -date
 
 # Category & Tag
@@ -105,10 +105,3 @@ theme: landscape
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
-
-# hexo-renderer-marked
-marked:
-  lazyload: true
-  prependRoot: true
-  postAsset: true
-
