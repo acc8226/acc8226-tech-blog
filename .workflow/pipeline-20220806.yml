@@ -26,8 +26,8 @@ stages:
           - npm install
           - hexo clean
           - hexo g
-          - git clone "https://${userName}:${accessToken}@${hostName}/${userName}/${repoPath}"
-          - cd ${userName}/
+          - git clone "https://$userName:$accessToken@$hostName/$userName/$repoPath"
+          - cd $userName/
           - git rm -rf .
           - cp -r ../public/* ./
           - git add .
