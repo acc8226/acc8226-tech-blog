@@ -7,6 +7,12 @@ triggers:
     branches:
       prefix:
         - ''
+variables:
+  global:
+    - repoPath
+    - hostName
+    - accessToken
+    - userName
 stages:
   - name: stage-a8ac94d3
     displayName: 未命名
