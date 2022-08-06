@@ -14,7 +14,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://kailee.gitee.io
 # 可让您更方便的通过日期来管理文章
 permalink: :title/
 permalink_defaults:
