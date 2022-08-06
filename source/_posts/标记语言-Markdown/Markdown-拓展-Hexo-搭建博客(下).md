@@ -60,8 +60,7 @@ pagination_dir: page
 cnpm install hexo-cli -g
 cnpm install
 
-hexo clean
-hexo g
+hexo clean && hexo g
 ```
 
 代码上传, 我这里写了 2 个版本。可以根据需要选其一。

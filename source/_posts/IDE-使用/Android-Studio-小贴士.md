@@ -1,5 +1,5 @@
 ---
-title: Android-Studio-小贴士
+title: Android Studio 小贴士
 categories: IDE-使用
 ---
 
@@ -21,7 +21,7 @@ categories: IDE-使用
 * 改变字体以及行间距
 ![](http://upload-images.jianshu.io/upload_images/1662509-8e4c788bb8dea0ef.gif?imageMogr2/auto-orient/strip)
 
-* 启用serialVersionUID
+* 启用 serialVersionUID
 > I am not sure if you have an old version of IntelliJ but If I go File => Settings... => Inspections => Serialization issues => Serializable class without 'serialVersionUID' enabled, the class you provide give me warnings.
 
 ## 疑问
@@ -38,5 +38,6 @@ categories: IDE-使用
 [4]: http://upload-images.jianshu.io/upload_images/1662509-86e4fb26a36da4ee.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240
 
 ## AS 快捷键
+
 IntelliJ Idea 常用快捷键列表 - 一路前行 - 博客园
-https://www.cnblogs.com/zhangpengshou/p/5366413.html
+<https://www.cnblogs.com/zhangpengshou/p/5366413.html>
