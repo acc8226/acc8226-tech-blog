@@ -9,9 +9,9 @@ triggers:
         - ''
 variables:
   global:
-    - repoPath
-    - hostName
     - accessToken
+    - hostName
+    - repoPath
     - userName
 stages:
   - name: stage-a8ac94d3
@@ -32,6 +32,8 @@ stages:
           - npm install
           - hexo clean
           - hexo g
+          - git config --global user.name "giteego"
+          - git config --global user.email "giteego@feipig.fun"
           - git clone "https://$userName:$accessToken@$hostName/$userName/$repoPath"
           - cd $userName/
           - git rm -rf .
