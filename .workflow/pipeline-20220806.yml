@@ -26,6 +26,13 @@ stages:
           - npm install
           - hexo clean
           - hexo g
+          - git clone "https://${userName}:${accessToken}@${hostName}/${userName}/${repoPath}"
+          - cd ${userName}/
+          - git rm -rf .
+          - cp -r ../public/* ./
+          - git add .
+          - git commit -m "committed by gitee go"
+          - git push origin master
         artifacts:
           - name: public
             path:
