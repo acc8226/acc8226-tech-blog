@@ -34,52 +34,19 @@ highlight:
   line_number: true
   auto_detect: false
 
-# 分页
+# 主页分页
 index_generator:
   path: ''
-  per_page: 8
+  per_page: 4
   order_by: -date
+
+# Pagination 标签、分类的分页
+## Set per_page to 0 to disable pagination
+per_page: 15
+pagination_dir: page
 ```
 
-### _config.next.yml 主题设置
-
-```yaml
-# 数学公式的支持
-math:
-  every_page: true
-# 目前只开启 mathjax
-  mathjax:
-    enable: true
-    tags: none
-  katex:
-    enable: false
-    copy_tex: false
-# Enable / Disable menu icons / item badges.
-menu_settings:
-  icons: true
-  badges: true
-# Sidebar Avatar
-avatar:
-  # Replace the default image and set the url here.
-  url: #/images/avatar.gif
-  # If true, the avatar will be dispalyed in circle.
-  rounded: true
-  # If true, the avatar will be rotated with the cursor. 鼠标放在头像上时是否旋转
-  rotated: true
-social:
-  GitHub: https://github.com/acc8226 || fab fa-github
-  #E-Mail: mailto:yourname@gmail.com || fa fa-envelope
-  Weibo: https://weibo.com/u/1846300870 || fab fa-weibo
-# 修改页脚
-footer:
-  # 网站开始时间
-  since: 2018
-  icon:
-    # If you want to animate the icon, set it to true.
-    animated: true
-  # If not defined, `author` from Hexo `_config.yml` will be used.
-  copyright: acc8226<br/><a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral"><img src="https://www.upyun.com/static/img/%E6%A0%B7%E5%BC%8F%E5%9B%BE.7cf927c.png width='34%' "/></a>
-```
+## 部署自动化
 
 1. hexo-src 构建项目的地址
 <https://codeup.aliyun.com/5eacd74338076f00011bc59e/hexo-src.git>
@@ -99,7 +66,7 @@ hexo g
 
 代码上传, 我这里写了 2 个版本。可以根据需要选其一。
 
-**强制上传版**
+### 强制上传版
 
 ```sh
 git config user.name "flow"
@@ -113,7 +80,7 @@ git commit -m "force push by flow"
 git push --force  "https://${userName}:${accessToken}@${hostName}/${userName}/${repoPath}" master
 ```
 
-基于上版更新条记录版
+### 基于上版更新条记录版
 
 ```sh
 git config --global user.name "flow"
@@ -149,37 +116,7 @@ repoPath kaiLee.git
 git clone https://${userName}:${accessToken}@${hostName}/${userName}/${repoPath}
 ```
 
-**新建文章示例**
-
-通过命令行创建：
-
-或直接创建目录和文件：
-
-1. 建立 \source\_posts\demo\demo.md
-
-2. 键入以下内容
-
-```md
----
-title: demo-title
-date: 2020-12-12 17:15:55
-categories:
-- foo
-- bar
----
-```
-
-根据 post.md 的格式
-
-```yml
----
-title: {{ title }}
-date: {{ date }}
-tags:
----
-```
-
-## 痛点
+## hexo 的痛点
 
 我不想图片资源直接放在 `source/images` 文件夹中。然后通过类似于 ![](/images/image.jpg) 的方法访问它们。对于那些想要更有规律地提供图片和其他资源以及想要将他们的资源分布在各个文章上的人来说，Hexo 提供的方式无法直接使用 markdown 语法，无法灵活引用相对路径的图片。所以 hexo 搭载图床使用可能才是出路。
 

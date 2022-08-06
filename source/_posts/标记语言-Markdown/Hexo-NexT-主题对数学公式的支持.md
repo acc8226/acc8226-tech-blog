@@ -3,6 +3,7 @@ title: Hexo-NexT-主题对数学公式的支持
 categories: 标记语言-Markdown
 tags:
 - Markdown
+mathjax: true
 ---
 
 由于静态网站的某些功能有限，所以我们需要第三方服务来扩展我们的网站。在任何时候，你都可以使用 NexT 支持的第三方服务来扩展所需的功能。
@@ -129,7 +130,7 @@ Katex 的 Copy-tex 扩展修改了任何支持剪贴板 API 的浏览器中的�
 
 注意:
 
-1. Displayed Math `(i.e. $$...$$) `需要以新行开始, 换言之before the opening `$$ `and after the ending `$$`不能出现任何非空白字符
+1. Displayed Math `(i.e. $$...$$)` 需要以新行开始, 换言之before the opening `$$` and after the ending `$$`不能出现任何非空白字符
 2. 不支持 Unicode 编码
 3. Inline Math (..`$...$`) 不能包含空格 **after the opening `$` and before the ending `$`** ([comment #32](https://github.com/theme-next/hexo-theme-next/pull/32#issuecomment-357489509)).
 4. Heading中使用 math, 在使用 toc 时候会出现三次, 因此 head 中不建议使用 math
@@ -256,14 +257,23 @@ $\enclose{updiagonalstrike,downdiagonalstrike,horizontalstrike,verticalstrike}{�
 ## 额外：设置字号
 
 $\Huge{小初字体(36pts)}$
+
 $\huge{一号字体(27.5pts)}$
+
 $\LARGE{二号字体(21pts)}$
+
 $\Large{三号字体(15.75pts)}$
+
 $\large{四号字体(13.75pts)}$
+
 $\normalsize{小四字体(12pts)}$
+
 $默认字体(12pts)$
+
 $\small{五号字体(10.5pts)}$
+
 $\scriptsize{六号字体(7.875pts)}$
+
 $\tiny{七号字体(5.25pts)}$
 
 ## 参考
