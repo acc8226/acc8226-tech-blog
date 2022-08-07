@@ -268,9 +268,9 @@ git merge origin/master`
 
 ## 合并远程分支 pull
 
-git pull 操作有两个根本步骤,每个步骤都由独立的 Git 命令实现。也就是说, git pull意味着先执行 git fetch, 然后执行 git merge 或 git rebase ,默认情况下,第二个步骤是merge,因为这始终是大多数情况下期望的行为。
+git pull 操作有两个根本步骤,每个步骤都由独立的 Git 命令实现。也就是说, git pull 意味着先执行 git fetch, 然后执行 git merge 或 git rebase, 默认情况下, 第二个步骤是 merge, 因为这始终是大多数情况下期望的行为。
 
-因为拉取(pull)操作还进行 merge 或 rebase 步骤,所以 git push 和 git pull 不被视为 是相对的。相反, git push和 git fetch 被认为是相对的。推送(push)和抓取(fetch)都负责在版本库之间传输数据,但方向相反。
+因为拉取(pull)操作还进行 merge 或 rebase 步骤,所以 git push 和 git pull 不被视为是相对的。相反, git push和 git fetch 被认为是相对的。推送(push)和抓取(fetch)都负责在版本库之间传输数据,但方向相反。
 
 命令格式：
 
@@ -278,7 +278,7 @@ git pull 操作有两个根本步骤,每个步骤都由独立的 Git 命令实�
 git pull <远程主机名> <远程分支名>:<本地分支名>
 ```
 
-比如，取回origin主机的 next 分支，与本地的 master 分支合并，需要写成下面这样。
+比如，取回 origin 主机的 next 分支，与本地的 master 分支合并，需要写成下面这样。
 `$ git pull origin next:master`
 
 如果远程分支是与**当前分支**合并，则冒号后面的部分可以省略。
@@ -312,21 +312,23 @@ git pull
     merge = refs/heads/develop
 ```
 
-这里解读下，当 develop 分支是当前检出的分支时,使用origin作为fetch (或pull)操作过程中获取更新的默认远程版本库。此外,在git pull 的 merge步骤中,用远程版本库中的 refs/heads/develop 作为默认分支合并到 develop 分支。
+这里解读下，当 develop 分支是当前检出的分支时,使用origin作为fetch (或pull)操作过程中获取更新的默认远程版本库。此外,在 git pull 的 merge 步骤中,用远程版本库中的 refs/heads/develop 作为默认分支合并到 develop 分支。
 
 也可通过命令行设置：`git config branch.develop.merge refs/heads/develop`
 
-这样当我们在 develop 分支 git pull 时，如果没有指定 upstream分支，git将根据我们的 config文件去 merge origin/develop；如果指定了upstream分支，则会忽略config中的 merge 默认配置。
+这样当我们在 develop 分支 git pull 时，如果没有指定 upstream分支，git 将根据我们的 config文件去 merge origin/develop；如果指定了 upstream 分支，则会忽略 config 中的 merge 默认配置。
 
 - - -
 
-如果合并需要采用rebase模式，可以使用`--rebase`选项。
+如果合并需要采用 rebase 模式，可以使用 `--rebase` 选项。
 
 ```sh
 git pull --rebase <远程主机名> <远程分支名>:<本地分支名>
 ```
 
-如果远程主机删除了某个分支，默认情况下，`git pull` 不会在拉取远程分支的时候，删除对应的本地分支。这是为了防止，由于其他人操作了远程主机，导致git pull不知不觉删除了本地分支。
+- - -
+
+如果远程主机删除了某个分支，默认情况下，`git pull` 不会在拉取远程分支的时候，删除对应的本地分支。这是为了防止，由于其他人操作了远程主机，导致 git pull 不知不觉删除了本地分支。
 但是，你可以改变这个行为，加上参数 -p 就会在本地删除远程已经删除的分支。
 
 ```sh

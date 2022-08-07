@@ -68,7 +68,7 @@ title: Not Render Math Either
 
 目前，NexT 提供了两个渲染引擎: MathJax 和 KaTeX。
 
-### MathJax 引擎(推荐)
+### MathJax 引擎
 
 Firstly, make sure you have [installed](http://johnmacfarlane.net/pandoc/installing.html) pandoc (version >= 2.0).
 
@@ -86,11 +86,11 @@ math:
     enable: true
 ```
 
-### KaTeX 引擎(暂不推荐)
-
-> 目前在NexT 主题中 KaTeX 还不完善, 暂时不建议使用.
+### KaTeX 引擎
 
 与 MathJax 相比，KaTeX 引擎是一个更快的数学渲染引擎，而且没有 JavaScript 它也能生存。
+
+注意：目前在NexT 主题中 KaTeX 还不完善, 但是由于不依赖 pandoc 还是挺方便的。
 
 1\. 需要卸载原始渲染器 hexo-renderer
 
@@ -275,6 +275,12 @@ $\small{五号字体(10.5pts)}$
 $\scriptsize{六号字体(7.875pts)}$
 
 $\tiny{七号字体(5.25pts)}$
+
+## 遇到过的问题
+
+问：Hexo Next主题配置Mathjax遇到的问题：pandoc exited with code null
+
+答：使用 pandoc 还需要在本地安装，在官网上下载pandoc，直接安装即可。
 
 ## 参考
 
