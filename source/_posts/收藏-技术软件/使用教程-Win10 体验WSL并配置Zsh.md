@@ -1,5 +1,5 @@
 ---
-title: 使用教程-Win10-体验WSL并配置Zsh
+title: 使用教程-Win10 体验 WSL 并配置 Zsh
 categories:
   - 收藏
   - 技术软件

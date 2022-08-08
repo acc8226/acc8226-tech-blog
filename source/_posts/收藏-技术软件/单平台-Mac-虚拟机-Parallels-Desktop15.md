@@ -1,5 +1,5 @@
 ---
-title: 单平台-Mac-虚拟机-Parallels-Desktop15
+title: 单平台-Mac-虚拟机 Parallels Desktop15
 categories:
   - 收藏
   - 技术软件

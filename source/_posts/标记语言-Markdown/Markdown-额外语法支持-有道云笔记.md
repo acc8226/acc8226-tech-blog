@@ -125,8 +125,8 @@ dateFormat YYYY-MM-DD规定了时间轴，title （标题文本）表示甘特
 
 ## 参考
 
-【简明版】有道云笔记Markdown指南
+【简明版】有道云笔记 Markdown 指南
 <http://note.youdao.com/iyoudao/?p=2411>
 
-【进阶版】有道云笔记Markdown指南
+【进阶版】有道云笔记 Markdown 指南
 <http://note.youdao.com/iyoudao/?p=2445>

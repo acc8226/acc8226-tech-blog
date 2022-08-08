@@ -25,9 +25,11 @@ var person1 = new Object();
 ```
 
 **使用create()方法**
+
 ```js
 var person2 = Object.create(person1);
 ```
+
 您可以看到，person2是基于person1创建的， 它们具有相同的属性和方法。这非常有用， 因为它允许您创建新的对象而无需定义构造函数。缺点是比起构造函数，浏览器在更晚的时候才支持create()方法（IE9,  IE8 或甚至以前相比）， 加上一些人认为构造函数让您的代码看上去更整洁 —— 您可以在一个地方创建您的构造函数， 然后根据需要创建实例， 这让您能很清楚地知道它们来自哪里。
 
 > 注意：必须重申，原型链中的方法和属性没有被复制到其他对象——它们被访问需要通过前面所说的“原型链”的方式。
@@ -40,7 +42,9 @@ var person2 = Object.create(person1);
 原因在于，继承的属性和方法是定义在 `prototype` 属性之上的（你可以称之为子命名空间 (sub namespace) ）——那些以 `Object.prototype.` 开头的属性，而非仅仅以 `Object.` 开头的属性。`prototype` 属性的值是一个对象，我们希望被原型链下游的对象继承的属性和方法，都被储存在其中。
 
 ### 修改原型
+
 我们的代码中定义了构造器，然后用这个构造器创建了一个对象实例，此后向构造器的 prototype 添加了一个新的方法：
+
 ```js
 function Person(first, last, age, gender, interests) {
 
@@ -56,7 +60,8 @@ Person.prototype.farewell = function() {
 ```
 
 ## JavaScript 中的继承
-我们要做的第一件事是创建一个Teacher()构造器——将下面的代码加入到现有代码之下：
+
+我们要做的第一件事是创建一个 Teacher() 构造器——将下面的代码加入到现有代码之下：
 
 ```js
 function Teacher(first, last, age, gender, interests, subject) {
@@ -67,6 +72,7 @@ function Teacher(first, last, age, gender, interests, subject) {
 ```
 
 ### 从无参构造函数继承
+
 ```js
 function Brick() {
   this.width = 10;
@@ -82,6 +88,7 @@ function BlueGlassBrick() {
 ```
 
 js的原型式的继承
+
 ```js
 function Person(first, last, age, gender, interests) {
         this.name = {
@@ -93,8 +100,10 @@ function Person(first, last, age, gender, interests) {
         this.interests = interests;
       };
 ```
+
 设置 Student() 的原型和构造器引用
-```
+
+```js
  // Student class!
       function Student(first, last, age, gender, interests) {
         Person.call(this, first, last, age, gender, interests);

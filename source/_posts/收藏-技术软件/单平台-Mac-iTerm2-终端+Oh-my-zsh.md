@@ -1,5 +1,5 @@
 ---
-title: 单平台-Mac-iTerm2-终端+Oh-my-zsh
+title: 单平台-Mac-iTerm2 终端+Oh-my-zsh
 categories:
   - 收藏
   - 技术软件

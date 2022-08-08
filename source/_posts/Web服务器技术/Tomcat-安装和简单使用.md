@@ -1,6 +1,6 @@
 ---
-title: Tomcat-安装和简单使用
-categories: Web服务器技术
+title: Tomcat 安装和简单使用
+categories: Web 服务器技术
 ---
 
 ## tomcat 版本的选择

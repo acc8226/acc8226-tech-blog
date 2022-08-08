@@ -1,6 +1,6 @@
 ---
-title: Nginx-使用
-categories: Web服务器技术
+title: Nginx 使用
+categories: Web 服务器技术
 ---
 
 ## nginx 反向代理

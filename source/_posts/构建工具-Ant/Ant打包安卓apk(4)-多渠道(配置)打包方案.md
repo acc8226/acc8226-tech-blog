@@ -1,14 +1,15 @@
 ---
 title: Ant打包安卓apk(4)-多渠道(配置)打包方案
-categories: 构建工具-Ant
+categories:
+  - 构建工具
+  - Ant
 tags:
-- 构建工具
 - Ant
 ---
 
 > 目标 虽然用不上渠道的概念, 其实其实和渠道的概念类似, 其实就是多几个可以变更的字段配置。
 
-目前我需要一个boolean, 一个请求的url,
+目前我需要一个 boolean, 一个请求的 url,
 
 ```properties
 config.url =http://10.1.64.42:9082/insure-pad/padServer.do,
@@ -31,7 +32,7 @@ config.bool = false
 
 可是在Windows环境下文件名不能包含`\/:*?"<>|`这九种字符
 
-#### 我查询Java的Unicode编码, 想用对应字符替代
+#### 我查询 Java 的 Unicode 编码, 想用对应字符替代
 
 * 用166`¦`替代`:`
 * 用643`ʃ`替代`/`
@@ -39,7 +40,7 @@ config.bool = false
 
 #### 试试URL编码
 
-> URL编码 遵循下列规则: 每对name/value由&;符分开;每对来自表单的name/value由=符分开。如果用户没有输入值给这个name，那么这个name还是出现，只是无值。任何特殊的字符(就是那些不是简单的七位ASCII，如汉字)将以百分符%用十六进制编码，当然也包括象 =,&;，和 % 这些特殊的字符。其实url编码就是一个字符ascii码的十六进制。不过稍微有些变动，需要在前面加上"%"。比如"\"，它的ascii码是92，92的十六进制是5c，所以"\"的url编码就是%5c。那么汉字的url编码呢?很简单，看例子:"胡"的ascii码是-17670，十六进制是BAFA，url编码是"%BA%FA"。
+> URL编码 遵循下列规则: 每对name/value由&;符分开;每对来自表单的name/value由=符分开。如果用户没有输入值给这个 name，那么这个 name 还是出现，只是无值。任何特殊的字符(就是那些不是简单的七位ASCII，如汉字)将以百分符%用十六进制编码，当然也包括象 =,&;，和 % 这些特殊的字符。其实url编码就是一个字符ascii码的十六进制。不过稍微有些变动，需要在前面加上"%"。比如"\"，它的ascii码是92，92的十六进制是5c，所以"\"的 url 编码就是 %5c。那么汉字的 url 编码呢?很简单，看例子:"胡"的ascii码是-17670，十六进制是BAFA，url编码是 "%BA%FA"。
 
 但是由于我写的地址`%2Chttp%3A%2F%2F10.1.64.42%3A9082%2Finsure-pad%2FpadServer.do%2Cfalse`由于我试的是android 5.1的机器, 暂时判定存在特殊字符串, 导致Failure [INSTALL_PARSE_FAILED_NO_CERTIFICATES]
 ~~URL编码也不好走~~
@@ -54,7 +55,7 @@ config.bool = false
 
 ## APP文件的注释字段中添加渠道信息。(不推荐)
 
-该种方式利用了APK本身是一种zip包的特点，在zip的注释字段中添加渠道信息，并提供了gradle插件。其中数据格式定义如下：
+该种方式利用了 APK 本身是一种 zip 包的特点，在 zip 的注释字段中添加渠道信息，并提供了gradle插件。其中数据格式定义如下：
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-3fec8266f79b4604.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 

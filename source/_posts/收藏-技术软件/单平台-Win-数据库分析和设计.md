@@ -1,5 +1,5 @@
 ---
-title: 单平台-Win-数据库分析和设计
+title: 单平台-Win 数据库分析和设计
 categories:
   - 收藏
   - 技术软件

@@ -1,8 +1,9 @@
 ---
 title: Ant-简介-下
-categories: 构建工具-Ant
+categories:
+  - 构建工具
+  - Ant
 tags:
-- 构建工具
 - Ant
 ---
 

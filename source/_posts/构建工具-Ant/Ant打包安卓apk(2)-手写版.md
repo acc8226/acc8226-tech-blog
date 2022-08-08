@@ -1,8 +1,9 @@
 ---
 title: Ant打包安卓apk(2)-手写版
-categories: 构建工具-Ant
+categories:
+  - 构建工具
+  - Ant
 tags:
-- 构建工具
 - Ant
 ---
 

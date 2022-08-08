@@ -1,5 +1,5 @@
 ---
-title: Markdown-额外语法支持-GitHub-Flavored-Markdown
+title: Markdown-额外语法支持 GitHub Flavored Markdown
 categories: 标记语言-Markdown
 tags:
 - Markdown

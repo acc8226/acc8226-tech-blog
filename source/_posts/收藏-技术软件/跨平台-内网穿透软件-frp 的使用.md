@@ -1,5 +1,5 @@
 ---
-title: 跨平台-内网穿透软件-frp 的使用
+title: 跨平台-内网穿透软件 frp 的使用
 categories:
   - 收藏
   - 技术软件

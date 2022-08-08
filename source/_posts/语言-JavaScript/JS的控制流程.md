@@ -8,12 +8,14 @@ tags:
 ---
 
 ## Block
+
 一个块语句可以用来管理零个或多个语句。该区块是由一对大括号分隔。
 
 块声明:
 { StatementList }
 
 通过var声明的变量没有块级作用域。在语句块里声明的变量作用域是其所在的函数或者 script 标签内，你可以在语句块外面访问到它。换句话说，语句块 不会生成一个新的作用域。尽管单独的语句块是合法的语句，但在JavaScript中你不会想使用单独的语句块，因为它们不像你想象的C或Java中的语句块那样处理事物。例如：
+
 ```js
 var x = 1;
 {
@@ -24,7 +26,6 @@ console.log(x); // 输出 2
 
 使用`let`和 `const`
 相比之下，使用 [`let`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/let "The source for this interactive example is stored in a GitHub repository. If you'd like to contribute to the interactive examples project, please clone https://github.com/mdn/interactive-examples and send us a pull request.")和[`const`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/const "常量是块级作用域，很像使用 let 语句定义的变量。常量的值不能通过重新赋值来改变，并且不能重新声明。")声明的变量是**有**块级作用域的。
-
 
 ```js
 let x = 1;
@@ -44,7 +45,9 @@ console.log(c); // 输出1, 而且不会报错
 相比之下，使用 [`let`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/let "The source for this interactive example is stored in a GitHub repository. If you'd like to contribute to the interactive examples project, please clone https://github.com/mdn/interactive-examples and send us a pull request.")和[`const`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/const "常量是块级作用域，很像使用 let 语句定义的变量。常量的值不能通过重新赋值来改变，并且不能重新声明。")声明的变量是**有**块级作用域的。
 
 #### 使用`function`
+
 [函数声明](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)同样被限制在声明他的语句块内:
+
 ```js
 foo('outside');  // TypeError: foo is not a function
 {
@@ -56,9 +59,11 @@ foo('outside');  // TypeError: foo is not a function
 ```
 
 ## break
+
 终止当前的循环，switch 或 label 语句，使程序跳到下一个语句执行。
 
 `break`语句包含一个可选的标签，可允许程序摆脱一个被标记的语句。`break`语句需要内嵌在引用的标签中。被标记的语句可以是任何 [`块`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/block "块语句（或其他语言的复合语句）用于组合零个或多个语句。该块由一对大括号界定，可以是labelled：")语句；不一定是循环语句。
+
 ```js
 function testBreak(x) {
   var i = 0;
@@ -75,6 +80,7 @@ function testBreak(x) {
 ```
 
 下面的代码中一起使用 break 语句和被标记的块语句。一个 break 语句必须内嵌在它引用的标记中。注意，inner_block 内嵌在 outer_block 中。
+
 ```js
 outer_block:{
 
@@ -89,6 +95,7 @@ outer_block:{
 ```
 
 ## continue
+
 终止执行当前或标签循环的语句，直接执行下一个迭代循环。
 
 与 [`break`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/break "break 语句中止当前循环，switch语句或label 语句，并把程序控制流转到紧接着被中止语句后面的语句。") 语句的区别在于， continue 并不会终止循环的迭代，而是：
@@ -99,8 +106,8 @@ outer_block:{
 
 `continue` 语句可以包含一个可选的标号以控制程序跳转到指定循环的下一次迭代，而非当前循环。此时要求 `continue` 语句在对应的循环内部。
 
-
 ## Empty
+
 空语句用来表示没有语句的情况，尽管 JavaScript 语法期望有语句提供。
 
 > 提示：在使用空语句的情况下专门写上注释是个不错的主意，因为不是很容易区分空语句和普通的分号。
@@ -121,6 +128,7 @@ else
 ```
 
 ## if...else
+
 如果指定的条件是 true ，则执行相匹配的一个语句，若为 false，则执行另一个语句。
 
 ```js
@@ -141,9 +149,11 @@ else if (condition3)
 else
    statementN
 ```
+
 * 要在一个从句中执行多条语句，可使用语句块（{ ... }）。通常情况下，一直使用语句块是个好习惯，特别是在涉及嵌套if语句的代码中
 
 不要将原始布尔值的`true`和`false`与[Boolean](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Boolean "en/JavaScript/Reference/Global_Objects/Boolean")对象的真或假混淆。任何一个值，只要它不是 `undefined`、`null`、 `0`、`NaN`或空字符串（`""`），那么无论是任何对象，即使是值为假的Boolean对象，在条件语句中都为真。例如：
+
 ```js
 var b = new Boolean(false);
 if (b) //表达式的值为true
@@ -151,6 +161,7 @@ if (b) //表达式的值为true
 
 建议不要在条件表达式中单纯的使用赋值运算，因为粗看下赋值运算的代码很容易让人误认为是等性比较。
 如果你需要在条件表达式中使用赋值运算，**用圆括号包裹**赋值运算。例如：
+
 ```js
 if ((x = y)) {
    /* do the right thing */
@@ -158,7 +169,9 @@ if ((x = y)) {
 ```
 
 ## switch
+
 计算表达式，将子句于表达式的值做匹配，执行与该值相关联的语句。
+
 ```js
 switch (expression) {
   case value1:
@@ -186,6 +199,7 @@ switch (expression) {
 即使你把 default 放到其它 case 之上，它仍有效。但是建议将default语句放到最后一句.
 
 ## try...catch
+
 标记一个语句块，并指定一个应该抛出异常的反馈。（Marks a block of statements to try, and specifies a response, should an exception be thrown.）
 
 `try`语句包含了由一个或者多个语句组成的`try`块, 和至少一个`catch`子句或者一个`finally`子句的其中一个，或者两个兼有， 下面是三种形式的`try`声明：
@@ -203,6 +217,7 @@ switch (expression) {
 你也可以用`try`语句去处理 JavaScript 异常。参考[JavaScript 指南](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide)了解更多关于 Javascript 异常的信息。
 
 下面用符合 ECMAscript 规范的简单的 JavaScript 来编写相同的“条件catch子句”（显然更加冗长的，但是可以在任何地方运行）：
+
 ```js
 try {
     myroutine(); // may throw three types of exceptions
@@ -219,6 +234,7 @@ try {
 ```
 
 ## throw
+
 抛出一个用户定义的异常。
 
 语法: `throw expression; `
@@ -256,7 +272,9 @@ try {
 ```
 
 ### 重新抛出异常
-你可以使用throw来抛出异常。下面的例子捕捉了一个异常值为数字的异常，并在其值大于50后重新抛出异常。重新抛出的异常传播到闭包函数或顶层，以便用户看到它。
+
+你可以使用 throw 来抛出异常。下面的例子捕捉了一个异常值为数字的异常，并在其值大于 50 后重新抛出异常。重新抛出的异常传播到闭包函数或顶层，以便用户看到它。
+
 ```js
 try {
    throw n; // 抛出一个数值异常

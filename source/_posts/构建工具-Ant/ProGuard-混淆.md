@@ -1,12 +1,13 @@
 ---
 title: ProGuard-混淆
-categories: 构建工具-Ant
+categories:
+  - 构建工具
+  - Ant
 tags:
-- 构建工具
 - Ant
 ---
 
-ProGuard 技术的功能概括为以下4项：
+ProGuard 技术的功能概括为以下 4 项：
 
 1.压缩（shrinks）  ：检查并移除代码中无用的类，字段，方法，属性。
 2.优化（optimizes）：对字节码进行优化，移除无用的指令。
@@ -307,10 +308,10 @@ ProGuard 技术的功能概括为以下4项：
 ## 参考
 
 Android优雅的进行混淆——使用@Keep注解 重要 - CSDN博客
-https://blog.csdn.net/u011904605/article/details/78736010
+<https://blog.csdn.net/u011904605/article/details/78736010>
 
 ProGuard代码混淆详细攻略 - CSDN博客
-https://blog.csdn.net/shensky711/article/details/52770993
+<https://blog.csdn.net/shensky711/article/details/52770993>
 
 用ant实现自动打包android（二） -- android代码混淆 - CSDN博客
-https://blog.csdn.net/droid_zhlu/article/details/11849913
+<https://blog.csdn.net/droid_zhlu/article/details/11849913>

@@ -1,8 +1,9 @@
 ---
 title: Android-反编译工具
-categories: 构建工具-Ant
+categories:
+  - 构建工具
+  - Ant
 tags:
-- 构建工具
 - Ant
 ---
 

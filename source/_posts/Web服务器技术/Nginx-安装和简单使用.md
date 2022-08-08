@@ -1,6 +1,6 @@
 ---
-title: Nginx-安装和简单使用
-categories: Web服务器技术
+title: Nginx 安装和简单使用
+categories: Web 服务器技术
 ---
 
 * web服务器, 轻量级, 能处理大并发量

@@ -1,8 +1,9 @@
 ---
 title: Ant打包安卓apk(5)-多渠道(配置)打包方案-ant脚本
-categories: 构建工具-Ant
+categories:
+  - 构建工具
+  - Ant
 tags:
-- 构建工具
 - Ant
 ---
 

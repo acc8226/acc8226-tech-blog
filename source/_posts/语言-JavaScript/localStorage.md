@@ -7,7 +7,7 @@ tags:
 - js
 ---
 
-> 在HTML5中，新加入了一个 localStorage特 性，这个特性主要是用来作为本地存储来使用的，解决了cookie存储空间不足的问题(cookie中每条cookie的存储空间为4k)，localStorage中一般浏览器支持的是5M大小，这个在不同的浏览器中localStorage会有所不同。
+> 在 HTML5 中，新加入了一个 localStorage 特性，这个特性主要是用来作为本地存储来使用的，解决了cookie存储空间不足的问题(cookie中每条cookie的存储空间为 4k)，localStorage 中一般浏览器支持的是 5M 大小，这个在不同的浏览器中localStorage会有所不同。
 
 localStorage 只支持 string 类型的存储
 
@@ -23,7 +23,8 @@ var storage=window.localStorage;
             storage.setItem("c",3);
 ```
 
-JSON.stringify()这个方法，来将JSON转换成为JSON字符串
+JSON.stringify()这个方法，来将JSON转换成为 JSON 字符串
+
 ```js
 var data = {name:'xiecanyong',
                 sex:'man',

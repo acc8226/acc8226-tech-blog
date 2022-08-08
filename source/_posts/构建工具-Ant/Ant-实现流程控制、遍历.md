@@ -1,8 +1,9 @@
 ---
 title: Ant-实现流程控制、遍历
-categories: 构建工具-Ant
+categories:
+  - 构建工具
+  - Ant
 tags:
-- 构建工具
 - Ant
 ---
 
