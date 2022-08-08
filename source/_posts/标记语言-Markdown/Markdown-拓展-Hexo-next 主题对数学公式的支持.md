@@ -1,9 +1,8 @@
 ---
-title: Hexo-NexT-主题对数学公式的支持
+title: Markdown-拓展-Hexo-next 主题对数学公式的支持
 categories: 标记语言-Markdown
 tags:
 - Markdown
-mathjax: true
 ---
 
 由于静态网站的某些功能有限，所以我们需要第三方服务来扩展我们的网站。在任何时候，你都可以使用 NexT 支持的第三方服务来扩展所需的功能。
@@ -35,8 +34,10 @@ math:
 
 `per_page` 是控制是否每页呈现数学方程式。
 
-* true → Equations will be processed on 每一页. Even if they not exists on one or another page.
-* false → 它只会渲染那些含有 `mathjax: true` 的文章
+* true → Equations will be processed on 每一页. Even if they not exists on one or another page。
+* false → 它只会渲染那些含有 `mathjax: true` 的文章。
+
+注意：如果启用的是 katex 则不用关心此项。
 
 ```yml
 <!-- This post will render the Math Equations -->

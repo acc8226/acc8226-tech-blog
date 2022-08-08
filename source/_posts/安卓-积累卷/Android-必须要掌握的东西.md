@@ -1,6 +1,9 @@
 ---
 title: Android-必须要掌握的东西
-categories: 安卓积累卷
+date: 2017.03.27 08:34:23
+categories:
+  - 安卓
+  - 积累卷
 tags:
 - android
 ---

@@ -1,5 +1,5 @@
 ---
-title: 09-Git-gitignore-设置
+title: 09-Git gitignore 设置
 date: 2021.10.03 22:16:40
 updated: 2022.08.08 13:55:00
 categories:

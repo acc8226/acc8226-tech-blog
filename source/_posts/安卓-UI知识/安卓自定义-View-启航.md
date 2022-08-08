@@ -1,6 +1,9 @@
 ---
-title: 安卓自定义-View-启航
-categories: 安卓-UI知识
+title: 安卓自定义 View 启航
+date: 2022.06.18 09:17:31
+categories:
+  - 安卓
+  - UI知识
 tags:
 - android
 ---

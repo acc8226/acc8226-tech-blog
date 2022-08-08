@@ -1,5 +1,5 @@
 ---
-title: Markdown-拓展-对数学公式的支持
+title: Markdown 之MathJax 和 LaTeX 数学公式语法
 categories: 标记语言-Markdown
 tags:
 - Markdown

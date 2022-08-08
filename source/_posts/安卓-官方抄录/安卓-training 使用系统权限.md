@@ -1,6 +1,9 @@
 ---
-title: 安卓-training-使用系统权限
-categories: 安卓官方抄录
+title: 安卓-training 使用系统权限
+date: 2017.02.22 11:46:25
+categories:
+  - 安卓
+  - 官方抄录
 tags:
 - android
 ---

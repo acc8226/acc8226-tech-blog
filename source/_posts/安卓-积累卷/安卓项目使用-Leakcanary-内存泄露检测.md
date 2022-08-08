@@ -1,6 +1,9 @@
 ---
-title: 安卓项目使用-Leakcanary-内存泄露检测
-categories: 安卓积累卷
+title: 安卓项目使用 Leakcanary 内存泄露检测
+date: 2017.10.26 13:26:09
+categories:
+  - 安卓
+  - 积累卷
 tags:
 - android
 ---

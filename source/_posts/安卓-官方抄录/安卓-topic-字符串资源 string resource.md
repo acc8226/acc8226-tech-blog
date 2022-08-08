@@ -1,6 +1,9 @@
 ---
-title: 安卓-topic-字符串资源-string-resource
-categories: 安卓官方抄录
+title: 安卓-topic 字符串资源 string resource
+date: 2017.02.21 22:20:59
+categories:
+  - 安卓
+  - 官方抄录
 tags:
 - android
 ---
@@ -10,6 +13,7 @@ http://developer.android.youdaxue.com/guide/topics/resources/string-resource.htm
 ## 字符串资源
 
 字符串资源为您的应用提供具有可选文本样式和格式设置的文本字符串。 共有三种类型的资源可为您的应用提供字符串：
+
 * [String](http://developer.android.youdaxue.com/guide/topics/resources/string-resource.html#String)提供单个字符串的 XML 资源。
 * [String Array](http://developer.android.youdaxue.com/guide/topics/resources/string-resource.html#StringArray)提供字符串数组的 XML 资源。
 * [Quantity Strings (Plurals)](http://developer.android.youdaxue.com/guide/topics/resources/string-resource.html#Plurals) 带有用于多元化的不同字符串的 XML 资源。

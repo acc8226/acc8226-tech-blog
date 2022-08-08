@@ -43,7 +43,7 @@ creative_commons:
 menu:
   home: / || fa fa-home
   categories: /categories/ || fa fa-th
-  tags: /tags/ || fa fa-tags
+  archives: /archives/ || fa fa-archive
   about: /about/ || fa fa-user
   #home: / || fa fa-home
   #about: /about/ || fa fa-user
@@ -56,7 +56,6 @@ menu:
 
 # Enable / Disable menu icons / item badges.
 menu_settings:
-  icons: true
   badges: false
 
 # ---------------------------------------------------------------
@@ -95,7 +94,7 @@ site_state: true
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
   GitHub: https://github.com/acc8226 || fab fa-github
-  E-Mail: mailto:acc8226@qq.com || fa fa-envelope
+  # E-Mail: mailto:acc8226@qq.com || fa fa-envelope
   RSS: /atom.xml || fa fa-rss
 
 social_icons:
@@ -118,14 +117,13 @@ links:
 toc:
   enable: true
   # Automatically add list number to toc.
-  number: false
+  number: true
   # If true, all words will placed on next lines if header width longer then sidebar width.
   wrap: false
   # If true, all level of TOC in a post will be displayed, rather than the activated part of it.
   expand_all: false
   # Maximum heading depth of generated toc.
   max_depth: 3
-
 
 # ---------------------------------------------------------------
 # Footer Settings
@@ -145,6 +143,8 @@ footer:
     name: fa fa-heart
     # If you want to animate the icon, set it to true.
     animated: true
+    # 更换爱心的颜色
+    color: "#808080"
   # If not defined, `author` from Hexo `_config.yml` will be used.
   copyright: acc8226<br/><a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral"><img src="/images/upyun_logo.png" style="min-width:280px;width:33.3%;"/></a>
 
@@ -212,19 +212,14 @@ tagcloud:
   orderby: name # Order of tags
   order: 1 # Sort order
 
-# Google Calendar
-# Share your recent schedule to others via calendar page.
-calendar:
-  calendar_id: <required> # Your Google account E-Mail
-  api_key: <required>
-  orderBy: startTime
-  showLocation: false
-  offsetMax: 72 # Time Range
-  offsetMin: 4 # Time Range
-  showDeleted: false
-  singleEvents: true
-  maxResults: 250
 
+# Mermaid tag
+mermaid:
+  enable: true
+  # Available themes: default | dark | forest | neutral
+  theme:
+    light: default
+    dark: dark
 
 # ---------------------------------------------------------------
 # Misc Theme Settings
@@ -416,7 +411,7 @@ math:
 
 # Easily enable fast Ajax navigation on your website.
 # For more information: https://github.com/next-theme/pjax
-pjax: false
+pjax: true
 
 # FancyBox is a tool that offers a nice and elegant way to add zooming functionality for images.
 # For more information: https://fancyapps.com/fancybox/
@@ -429,7 +424,7 @@ mediumzoom: false
 
 # Vanilla JavaScript plugin for lazyloading images.
 # For more information: https://apoorv.pro/lozad.js/demo/
-lazyload: false
+lazyload: true
 
 # Pangu Support
 # For more information: https://github.com/vinta/pangu.js
@@ -454,6 +449,13 @@ quicklink:
   # Default (true) will attempt to use the fetch() API if supported (rather than link[rel=prefetch]).
   priority: true
 
+# Canvas ribbon
+# For more information: https://github.com/hustcc/ribbon.js
+canvas_ribbon:
+  enable: true
+  size: 172 # The width of the ribbon
+  alpha: 0.31 # The transparency of the ribbon
+  zIndex: -1 # The display level of the ribbon
 
 # ---------------------------------------------------------------
 # Comments Settings

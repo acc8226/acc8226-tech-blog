@@ -111,7 +111,7 @@ scheme: Gemini
 
 ### Dark Mode 黑暗模式
 
-您可以通过编辑主题配置文件，搜索暗模式关键字来启用暗模式。 主题下一步自动显示黑暗模式，如果操作系统偏好的主题是黑暗的。 Css 混合混合模式是用来使黑暗模式的所有 4 个方案以上，确保您的浏览器支持此属性。
+您可以通过编辑主题配置文件，搜索暗模式关键字来启用暗模式。 主题下一步自动显示黑暗模式，如果操作系统偏好的主题是黑暗的。 CSS 混合混合模式是用来使黑暗模式的所有 4 个方案以上，确保您的浏览器支持此属性。
 
 ```yml
 # Dark Mode
@@ -215,9 +215,11 @@ comments: false
 
 _config.next.yml
 
+```sh
 npm install hexo-generator-feed --save
+```
 
-_config.yml
+接着进行配置 _config.yml
 
 ```yml
 feed:
@@ -254,6 +256,37 @@ Search Services | NexT
 Statistics and Analytics | NexT
 <https://theme-next.js.org/docs/third-party-services/statistics-and-analytics.html#Baidu-Analytics-China>
 
+## External Libraries
+
+### PJAX
+
+PJAX/nPjax 是一个独立的 JavaScript 模块，它使用 AJAX (XmlHttpRequest)和 pushState ()来提供快速浏览体验。
+
+它允许你完全改变标准网站的用户体验(服务器端生成的或静态的) ，让用户感觉他们正在浏览一个应用程序，特别是那些低带宽连接。
+
+### Lazyload
+
+Lozad.js  是一个现代版 JavaScript 的懒惰加载器插件。它延迟加载的图像在长的网页。在用户滚动到视口之前，不会加载视口之外的图像。这与图像预加载相反。
+
+### Canvas Ribbon
+
+canvas-ribbon.js is a ribbon backgroud of website draw on canvas.
+
+## 开启 Mermaid 支持
+
+Mermaid | NexT
+<https://theme-next.js.org/docs/tag-plugins/mermaid.html>
+
+示例：
+
+```mermaid
+graph TD;
+A-->B;
+A-->C;
+B-->D;
+C-->D;
+```
+
 ## 配置汇总
 
 _config.next.yml
@@ -287,12 +320,17 @@ social:
 toc:
   enable: true
   # Automatically add list number to toc.
-  number: false
+  number: true
+  # If true, all words will placed on next lines if header width longer then sidebar width.
+  wrap: false
+  # If true, all level of TOC in a post will be displayed, rather than the activated part of it.
+  expand_all: false
   # Maximum heading depth of generated toc.
   max_depth: 3
 
 menu:
   home: / || fa fa-home
+  categories: /categories/ || fa fa-th
   archives: /archives/ || fa fa-archive
   about: /about/ || fa fa-user
 
@@ -303,20 +341,25 @@ footer:
   since: 2015
   # Icon between year and copyright info.
   icon:
+    # Icon name in Font Awesome. See: https://fontawesome.com/icons
+    name: fa fa-heart
     # If you want to animate the icon, set it to true.
     animated: true
+    # 更换爱心的颜色
+    color: "#808080"
   # If not defined, `author` from Hexo `_config.yml` will be used.
-  copyright: acc8226<br/><a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral"><img src="/images/upyun_logo.png" style="min-width:280px;width:33.8%;"/></a>
-  # Powered by Hexo & NexT
-  powered: false
+  copyright: acc8226<br/><a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral"><img src="/images/upyun_logo.png" style="min-width:280px;width:33.3%;"/></a>
 
 # 数学公式的支持
 math:
-  every_page: true
-# 目前只开启 mathjax
-  mathjax:
+  # Default (false) will load mathjax / katex script on demand.
+  # That is it only render those page which has `mathjax: true` in front-matter.
+  # If you set it to true, it will load mathjax / katex script EVERY PAGE.
+  every_page: false
+  katex:
     enable: true
-    tags: none
+    # See: https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex
+    copy_tex: false
 
 # Local Search
 # Dependencies: https://github.com/next-theme/hexo-generator-searchdb
@@ -340,6 +383,14 @@ codeblock:
   # Add copy button on codeblock
   copy_button:
     enable: true
+
+# Mermaid tag
+mermaid:
+  enable: true
+  # Available themes: default | dark | forest | neutral
+  theme:
+    light: default
+    dark: dark
 ```
 
 受影响的 _config.yml
@@ -368,4 +419,8 @@ search:
   field: post
   content: true
   format: html
+
+highlight:
+  exclude_languages:
+    - mermaid
 ```

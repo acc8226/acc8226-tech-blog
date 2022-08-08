@@ -1,6 +1,9 @@
 ---
 title: 浅谈-Android-屏幕适配
-categories: 安卓-UI知识
+date: 2017.05.21 17:12:58
+categories:
+  - 安卓
+  - UI知识
 tags:
 - android
 ---

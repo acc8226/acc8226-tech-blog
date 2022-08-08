@@ -1,6 +1,9 @@
 ---
 title: 安卓-Activity 详解
-categories: 安卓-UI知识
+date: 2017.03.08 10:13:58
+categories:
+  - 安卓
+  - UI知识
 tags:
 - android
 ---

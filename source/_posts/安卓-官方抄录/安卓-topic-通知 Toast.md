@@ -1,6 +1,9 @@
 ---
-title: 安卓-topic-通知-Toast
-categories: 安卓官方抄录
+title: 安卓-topic 通知 Toast
+date: 2017.02.22 19:37:46
+categories:
+  - 安卓
+  - 官方抄录
 tags:
 - android
 ---

@@ -1,5 +1,5 @@
 ---
-title: Markdown-拓展-Gitlab-Github-开启-UML-图支持
+title: Markdown-拓展-Gitlab-Github 开启 UML 图支持
 categories: 标记语言-Markdown
 tags:
 - Markdown
@@ -41,18 +41,17 @@ mermaid-js/mermaid: Generation of diagram and flowchart from text in a similar m
 
 如果您不熟悉使用 Mermaid，或者需要帮助来确定 Mermaid 代码中的问题，则 [Mermaid Live Editor](https://mermaid-js.github.io/mermaid-live-editor/) 是一个有用的工具，可用于在 Mermaid 图中创建和解决问题。
 
-Mermaid 支持软件项目中一系列不同的常见图表类型，涵盖流程图、UML、Git 图、用户体验流程图，甚至可怕的甘特图。
+Mermaid 支持软件项目中一系列不同的常见图表类型，涵盖流程图、UML、Git 图、用户体验流程图，甘特图。
 
 To generate a diagram or flowchart, write your text inside the mermaid block:
 
-```md
-```mermaid
-graph TD;
-  A-->B;
-  A-->C;
-  B-->D;
-  C-->D;
-```
+    ```mermaid
+    graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+    ```
 
 ## 对 Typora 的支持
 

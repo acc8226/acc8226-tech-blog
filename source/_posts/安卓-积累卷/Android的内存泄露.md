@@ -1,6 +1,9 @@
 ---
 title: Android的内存泄露
-categories: 安卓积累卷
+date: 2018.03.22 14:07:06
+categories:
+  - 安卓
+  - 积累卷
 tags:
 - android
 ---
@@ -135,7 +138,7 @@ public class CustomApplication extends Application {
 * Thread。如果 Thread 的 run 方法一直在循环的执行不停，而该 Thread 又持有了外部变量，那么这个外部变量即发生内存泄漏。
 * 网络请求或者其他异步线程。之前 Volley 会有这样的一个问题，在 Volley 的 response 来到之前如果 Activity 已经退出了而且 response 里面含有 Activity 的成员变量，会导致该 Activity 发生内存泄漏，该问题一直没有找到合适的解决办法。不过看来 Volley 官网已经注意到这个问题了，目前最新的版本已经 fix this leak。
 
-![版本说明](./imgs/Android%E7%9A%84%E5%86%85%E5%AD%98%E6%B3%84%E9%9C%B2/1.png)
+![版本说明](http://likai.test.upcdn.net/%E5%AE%89%E5%8D%93-%E7%A7%AF%E7%B4%AF%E5%8D%B7/Android%E7%9A%84%E5%86%85%E5%AD%98%E6%B3%84%E9%9C%B2/1.png)
 
 ## 使用 leakcanary
 

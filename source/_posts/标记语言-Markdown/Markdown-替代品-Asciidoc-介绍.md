@@ -801,8 +801,9 @@ include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/
 ```
 
 ## 配套软件
+
 **[推荐]** Visual Studio Code 和配套asciidoctor-vscode插件
-https://marketplace.visualstudio.com/items?itemName=joaompinto.asciidoctor-vscode
+<https://marketplace.visualstudio.com/items?itemName=joaompinto.asciidoctor-vscode>
 
 ## 参考
 

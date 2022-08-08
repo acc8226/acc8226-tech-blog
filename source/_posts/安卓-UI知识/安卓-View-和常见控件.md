@@ -1,6 +1,9 @@
 ---
 title: 安卓-View-和常见控件
-categories: 安卓-UI知识
+date: 2017.02.20 18:23:30
+categories:
+  - 安卓
+  - UI知识
 tags:
 - android
 ---

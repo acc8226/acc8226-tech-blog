@@ -1,6 +1,9 @@
 ---
 title: 安卓-sqlite数据库
-categories: 安卓积累卷
+date: 2017.03.10 12:24:46
+categories:
+  - 安卓
+  - 积累卷
 tags:
 - android
 ---

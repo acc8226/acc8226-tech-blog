@@ -1,6 +1,9 @@
 ---
-title: 适配完结篇二-谷歌小弟的Android多分辨率适配框架
-categories: 安卓-UI知识
+title: 适配完结篇2-谷歌小弟的 Android 多分辨率适配框架
+date: 2017.05.21 17:48:36
+categories:
+  - 安卓
+  - UI知识
 tags:
 - android
 ---

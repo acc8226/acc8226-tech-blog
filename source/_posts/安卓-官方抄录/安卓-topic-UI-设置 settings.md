@@ -1,6 +1,9 @@
 ---
-title: 安卓-topic-UI-设置-settings
-categories: 安卓官方抄录
+title: 安卓-topic UI 设置 settings
+date: 2017.02.22 22:12:58
+categories:
+  - 安卓
+  - 官方抄录
 tags:
 - android
 ---

@@ -1,6 +1,9 @@
 ---
 title: 实战-自定义ViewGroup-流动布局(FlowLayout)
-categories: 安卓-UI知识
+date: 2017.07.28 13:18:24
+categories:
+  - 安卓
+  - UI知识
 tags:
 - android
 ---
