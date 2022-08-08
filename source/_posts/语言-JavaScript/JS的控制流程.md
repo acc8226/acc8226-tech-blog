@@ -1,6 +1,8 @@
 ---
 title: JS的控制流程
-categories: 语言-JavaScript
+categories:
+  - 语言
+  - JavaScript
 tags:
 - js
 ---

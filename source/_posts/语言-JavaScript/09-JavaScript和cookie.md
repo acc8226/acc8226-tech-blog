@@ -1,6 +1,8 @@
 ---
 title: 09-JavaScript和cookie
-categories: 语言-JavaScript
+categories:
+  - 语言
+  - JavaScript
 tags:
 - js
 ---

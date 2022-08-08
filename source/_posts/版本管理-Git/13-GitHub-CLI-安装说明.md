@@ -6,7 +6,6 @@ categories:
 tags:
 - git
 ---
----
 
 GitHub CLI brings GitHub to your terminal. Free and open source.
 

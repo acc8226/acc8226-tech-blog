@@ -1,6 +1,8 @@
 ---
 title: js的严格模式(strict-mode)
-categories: 语言-JavaScript
+categories:
+  - 语言
+  - JavaScript
 tags:
 - js
 ---

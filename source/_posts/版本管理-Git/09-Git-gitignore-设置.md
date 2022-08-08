@@ -6,7 +6,6 @@ categories:
 tags:
 - git
 ---
----
 
 ## .gitignore 介绍
 

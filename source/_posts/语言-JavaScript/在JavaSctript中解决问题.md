@@ -1,6 +1,8 @@
 ---
 title: 在JavaSctript中解决问题
-categories: 语言-JavaScript
+categories:
+  - 语言
+  - JavaScript
 tags:
 - js
 ---

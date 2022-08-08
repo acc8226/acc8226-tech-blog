@@ -1,6 +1,8 @@
 ---
 title: 02-Python基本图形绘制
-categories: 语言-Python
+categories:
+  - 语言
+  - Python
 tags:
 - python
 ---

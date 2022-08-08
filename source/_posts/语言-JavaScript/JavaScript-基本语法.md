@@ -1,6 +1,8 @@
 ---
 title: JavaScript-基本语法
-categories: 语言-JavaScript
+categories:
+  - 语言
+  - JavaScript
 tags:
 - js
 ---

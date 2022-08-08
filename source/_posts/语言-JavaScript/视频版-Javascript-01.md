@@ -1,6 +1,8 @@
 ---
 title: 视频版-Javascript-01
-categories: 语言-JavaScript
+categories:
+  - 语言
+  - JavaScript
 tags:
 - js
 ---

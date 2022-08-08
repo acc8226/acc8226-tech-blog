@@ -1,6 +1,8 @@
 ---
 title: JS-Array(数组)简单入门
-categories: 语言-JavaScript
+categories:
+  - 语言
+  - JavaScript
 tags:
 - js
 ---

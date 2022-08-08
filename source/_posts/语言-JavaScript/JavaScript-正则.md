@@ -1,6 +1,8 @@
 ---
 title: JavaScript-正则
-categories: 语言-JavaScript
+categories:
+  - 语言
+  - JavaScript
 tags:
 - js
 ---

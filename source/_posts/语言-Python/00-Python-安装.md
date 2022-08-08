@@ -1,6 +1,8 @@
 ---
 title: 00-Python-安装
-categories: 语言-Python
+categories:
+  - 语言
+  - Python
 tags:
 - python
 ---

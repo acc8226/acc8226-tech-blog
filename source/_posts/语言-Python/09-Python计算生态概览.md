@@ -1,6 +1,8 @@
 ---
 title: 09-Python计算生态概览
-categories: 语言-Python
+categories:
+  - 语言
+  - Python
 tags:
 - python
 ---

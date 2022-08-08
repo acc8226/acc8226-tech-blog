@@ -1,6 +1,8 @@
 ---
 title: JS-HTML-DOM
-categories: 语言-JavaScript
+categories:
+  - 语言
+  - JavaScript
 tags:
 - js
 ---

@@ -1,6 +1,8 @@
 ---
 title: 使用JQuery库
-categories: 语言-JavaScript
+categories:
+  - 语言
+  - JavaScript
 tags:
 - js
 ---

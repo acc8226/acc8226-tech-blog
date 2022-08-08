@@ -1,6 +1,8 @@
 ---
 title: JS-对象2
-categories: 语言-JavaScript
+categories:
+  - 语言
+  - JavaScript
 tags:
 - js
 ---

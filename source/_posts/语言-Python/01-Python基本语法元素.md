@@ -1,6 +1,8 @@
 ---
 title: 01-Python基本语法元素
-categories: 语言-Python
+categories:
+  - 语言
+  - Python
 tags:
 - python
 ---

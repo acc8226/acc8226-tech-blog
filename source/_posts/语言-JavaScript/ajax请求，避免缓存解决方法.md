@@ -1,6 +1,8 @@
 ---
 title: ajax请求，避免缓存解决方法
-categories: 语言-JavaScript
+categories:
+  - 语言
+  - JavaScript
 tags:
 - js
 ---

@@ -1,6 +1,8 @@
 ---
 title: 03-Python基本数据类型
-categories: 语言-Python
+categories:
+  - 语言
+  - Python
 tags:
 - python
 ---

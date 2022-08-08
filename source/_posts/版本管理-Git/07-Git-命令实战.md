@@ -6,7 +6,6 @@ categories:
 tags:
 - git
 ---
----
 
 ## 初始化仓库并推送到远端
 

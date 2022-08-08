@@ -9,7 +9,7 @@ tags:
 
 ## Windows 主推小乌龟 SVN
 
-https://tortoisesvn.net/downloads.html (请选择正确的 32 / 64位版本)
+<https://tortoisesvn.net/downloads.html> (请选择正确的 32 / 64位版本)
 
 SVN 安装
 <https://www.runoob.com/svn/svn-install.html>
@@ -36,7 +36,7 @@ checkout yourSvnPath yourLocalPath [ --username someOne]
 
 ## Tortoise SVN 下遇到的问题
 
-#### TortoiseSVN -无法查看log，提示Want to go offline，时间显示 1970 问题
+### TortoiseSVN -无法查看log，提示Want to go offline，时间显示 1970 问题
 
 ![svn查看log时，提示“Want to go offline”错误](./imgs/Windows-%E4%B8%8B-SVN-%E5%AE%A2%E6%88%B7%E7%AB%AF%E4%BD%BF%E7%94%A8/1.png)
 

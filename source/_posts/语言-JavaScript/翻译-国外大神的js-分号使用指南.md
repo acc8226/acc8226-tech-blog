@@ -1,6 +1,8 @@
 ---
 title: 翻译-国外大神的js-分号使用指南
-categories: 语言-JavaScript
+categories:
+  - 语言
+  - JavaScript
 tags:
 - js
 ---

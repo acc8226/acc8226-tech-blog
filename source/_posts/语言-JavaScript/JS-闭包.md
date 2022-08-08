@@ -1,6 +1,8 @@
 ---
 title: JS-闭包
-categories: 语言-JavaScript
+categories:
+  - 语言
+  - JavaScript
 tags:
 - js
 ---

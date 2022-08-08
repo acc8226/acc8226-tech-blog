@@ -1,6 +1,8 @@
 ---
 title: JavaScript-对象入门使用-JSON
-categories: 语言-JavaScript
+categories:
+  - 语言
+  - JavaScript
 tags:
 - js
 ---

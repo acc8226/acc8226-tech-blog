@@ -1,6 +1,8 @@
 ---
 title: JavaScript-使用误区
-categories: 语言-JavaScript
+categories:
+  - 语言
+  - JavaScript
 tags:
 - js
 ---

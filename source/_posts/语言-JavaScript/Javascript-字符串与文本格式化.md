@@ -1,6 +1,8 @@
 ---
 title: Javascript-字符串与文本格式化
-categories: 语言-JavaScript
+categories:
+  - 语言
+  - JavaScript
 tags:
 - js
 ---
