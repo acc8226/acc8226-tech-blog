@@ -1,9 +1,11 @@
 ---
 title: 07-Git-命令实战
-categories: 版本管理-Git
+categories:
+  - 版本管理
+  - Git
 tags:
-- 版本管理
 - git
+---
 ---
 
 ## 初始化仓库并推送到远端

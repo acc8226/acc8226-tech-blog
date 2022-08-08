@@ -1,6 +1,8 @@
 ---
 title: 10 Maven pom 中配置依赖机制
-categories: 构建工具-Maven
+categories:
+  - 构建工具
+  - Maven
 tags:
 - 构建工具
 - Maven

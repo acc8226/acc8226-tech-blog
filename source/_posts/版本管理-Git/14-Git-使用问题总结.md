@@ -1,9 +1,11 @@
 ---
 title: 14-Git-使用问题总结
-categories: 版本管理-Git
+categories:
+  - 版本管理
+  - Git
 tags:
-- 版本管理
 - git
+---
 ---
 
 ## 问题分析 : could not lock config file

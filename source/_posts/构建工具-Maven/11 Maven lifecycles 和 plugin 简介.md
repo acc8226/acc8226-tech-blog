@@ -1,6 +1,8 @@
 ---
 title: 11 Maven lifecycles 和 plugin 简介
-categories: 构建工具-Maven
+categories:
+  - 构建工具
+  - Maven
 tags:
 - 构建工具
 - Maven

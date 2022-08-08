@@ -1,6 +1,9 @@
 ---
 title: 06 Maven-部署成品
-categories: 构建工具-Maven
+date: 2020.05.19 17:10:25
+categories:
+  - 构建工具
+  - Maven
 tags:
 - 构建工具
 - Maven

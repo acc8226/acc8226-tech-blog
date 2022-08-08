@@ -6,9 +6,9 @@ tags:
 ---
 
 ## 一、if else
-和 Java、PHP等语言不一样，sh的流程控制不可为空
+和 Java、PHP 等语言不一样，sh的流程控制不可为空
 
-在sh/bash里可不能这么写，如果else分支没有语句执行，就不要写这个else。
+在 sh/bash 里可不能这么写，如果 else 分支没有语句执行，就不要写这个else。
 
 #### 1.if
 

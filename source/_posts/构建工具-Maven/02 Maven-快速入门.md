@@ -1,6 +1,9 @@
 ---
 title: 02 Maven-快速入门
-categories: 构建工具-Maven
+date: 2019.07.11 23:43:25
+categories:
+  - 构建工具
+  - Maven
 tags:
 - 构建工具
 - Maven

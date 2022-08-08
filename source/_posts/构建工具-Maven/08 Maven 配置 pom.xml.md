@@ -1,6 +1,8 @@
 ---
 title: 08 Maven 配置 pom.xml
-categories: 构建工具-Maven
+categories:
+  - 构建工具
+  - Maven
 tags:
 - 构建工具
 - Maven

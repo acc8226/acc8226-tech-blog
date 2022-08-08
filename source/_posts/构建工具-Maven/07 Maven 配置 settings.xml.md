@@ -1,6 +1,8 @@
 ---
 title: 07 Maven 配置 settings.xml
-categories: 构建工具-Maven
+categories:
+  - 构建工具
+  - Maven
 tags:
 - 构建工具
 - Maven

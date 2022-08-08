@@ -1,6 +1,9 @@
 ---
 title: 构建工具-Maven
-categories: 构建工具-Maven
+date: 2021.11.05 11:55:53
+categories:
+  - 构建工具
+  - Maven
 tags:
 - 构建工具
 - Maven

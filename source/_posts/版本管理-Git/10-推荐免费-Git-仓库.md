@@ -1,9 +1,11 @@
 ---
 title: 10-推荐免费-Git-仓库
-categories: 版本管理-Git
+categories:
+  - 版本管理
+  - Git
 tags:
-- 版本管理
 - git
+---
 ---
 
 ## Git 免费仓库

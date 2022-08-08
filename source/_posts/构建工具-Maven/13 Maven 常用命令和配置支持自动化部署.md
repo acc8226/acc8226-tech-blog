@@ -1,6 +1,8 @@
 ---
 title: 13 Maven 常用命令和配置支持自动化部署
-categories: 构建工具-Maven
+categories:
+  - 构建工具
+  - Maven
 tags:
 - 构建工具
 - Maven

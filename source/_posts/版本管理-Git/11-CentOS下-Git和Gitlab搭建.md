@@ -1,9 +1,11 @@
 ---
 title: 11-CentOS下-Git和Gitlab搭建
-categories: 版本管理-Git
+categories:
+  - 版本管理
+  - Git
 tags:
-- 版本管理
 - git
+---
 ---
 
 ## Git 的搭建

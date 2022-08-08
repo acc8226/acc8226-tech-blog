@@ -42,8 +42,7 @@ creative_commons:
 # External url should start with http:// or https://
 menu:
   home: / || fa fa-home
-  tags: /tags/ || fa fa-tags
-  archives: /archives/ || fa fa-archive
+  categories: /categories/ || fa fa-th
   about: /about/ || fa fa-user
 
 # Enable / Disable menu icons / item badges.
@@ -494,12 +493,8 @@ disqusjs:
 # For more information: https://changyan.kuaizhan.com
 changyan:
   enable: false
-  appid:
-  appkey:
-
-# LiveRe comments system
-# You can get your uid from https://livere.com/insight/myCode (General web site)
-livere_uid: # <your_uid>
+  appid: cywdkXKvl
+  appkey: e89b1d7850399f6e0d4810a0c48ebe97
 
 # Gitalk
 # For more information: https://gitalk.github.io
@@ -521,8 +516,8 @@ gitalk:
 # Utterances
 # For more information: https://utteranc.es
 utterances:
-  enable: false
-  repo: user-name/repo-name # Github repository owner and name
+  enable: true
+  repo: acc8226/acc8226.github.io # Github repository owner and name
   # Available values: pathname | url | title | og:title
   issue_term: pathname
   # Available values: github-light | github-dark | preferred-color-scheme | github-dark-orange | icy-dark | dark-blue | photon-dark | boxy-light

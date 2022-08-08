@@ -1,9 +1,11 @@
 ---
 title: 04-Git-分支操作和远程协作
-categories: 版本管理-Git
+categories:
+  - 版本管理
+  - Git
 tags:
-- 版本管理
 - git
+---
 ---
 
 ## 本地分支 和 branch 命令

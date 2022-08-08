@@ -1,9 +1,11 @@
 ---
 title: 09-Git-gitignore-设置
-categories: 版本管理-Git
+categories:
+  - 版本管理
+  - Git
 tags:
-- 版本管理
 - git
+---
 ---
 
 ## .gitignore 介绍

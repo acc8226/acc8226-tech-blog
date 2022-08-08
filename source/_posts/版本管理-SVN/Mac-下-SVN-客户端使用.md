@@ -1,8 +1,9 @@
 ---
 title: Mac-下-SVN-客户端使用
-categories: 版本管理-SVN
+categories:
+  - 版本管理
+  - SVN
 tags:
-- 版本管理
 - SVN
 ---
 

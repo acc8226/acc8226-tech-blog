@@ -1,9 +1,11 @@
 ---
 title: 05-Git-进阶高频操作
-categories: 版本管理-Git
+categories:
+  - 版本管理
+  - Git
 tags:
-- 版本管理
 - git
+---
 ---
 
 ## stash 储藏

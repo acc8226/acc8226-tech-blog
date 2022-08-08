@@ -1,6 +1,9 @@
 ---
-title: 04 Maven-镜像源加速
-categories: 构建工具-Maven
+title: 04 Maven-镜像源加速、
+date: 2020.05.07 00:51:23
+categories:
+  - 构建工具
+  - Maven
 tags:
 - 构建工具
 - Maven

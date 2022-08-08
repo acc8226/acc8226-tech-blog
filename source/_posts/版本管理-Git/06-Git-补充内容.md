@@ -1,9 +1,11 @@
 ---
 title: 06-Git-补充内容
-categories: 版本管理-Git
+categories:
+  - 版本管理
+  - Git
 tags:
-- 版本管理
 - git
+---
 ---
 
 ## 提交 ID

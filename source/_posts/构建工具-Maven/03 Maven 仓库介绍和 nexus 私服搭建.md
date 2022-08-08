@@ -1,6 +1,9 @@
 ---
 title: 03 Maven 仓库介绍和 nexus 私服搭建
-categories: 构建工具-Maven
+date: 2019.11.03 23:42:26
+categories:
+  - 构建工具
+  - Maven
 tags:
 - 构建工具
 - Maven

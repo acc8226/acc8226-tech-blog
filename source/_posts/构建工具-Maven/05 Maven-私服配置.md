@@ -1,6 +1,9 @@
 ---
 title: 05 Maven-私服配置
-categories: 构建工具-Maven
+date: 2020.05.01 00:51:11
+categories:
+  - 构建工具
+  - Maven
 tags:
 - 构建工具
 - Maven

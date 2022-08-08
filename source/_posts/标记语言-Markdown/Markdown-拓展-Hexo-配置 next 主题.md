@@ -1,8 +1,10 @@
 ---
-title: Hexo-NexT-主题的简易使用
+title: Markdown-拓展-Hexo-配置 next 主题
 categories: 标记语言-Markdown
 tags:
 - Markdown
+- hexo
+- hexo theme
 ---
 
 主题介绍:

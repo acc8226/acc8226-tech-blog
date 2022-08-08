@@ -1,9 +1,11 @@
 ---
 title: 15-GitHub-使用总结
-categories: 版本管理-Git
+categories:
+  - 版本管理
+  - Git
 tags:
-- 版本管理
 - git
+---
 ---
 
 ## 使用 ssh 连接 git 仓库

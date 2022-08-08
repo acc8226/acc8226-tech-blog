@@ -1,8 +1,9 @@
 ---
 title: Linux-下使用-SVN-服务
-categories: 版本管理-SVN
+categories:
+  - 版本管理
+  - SVN
 tags:
-- 版本管理
 - SVN
 ---
 
