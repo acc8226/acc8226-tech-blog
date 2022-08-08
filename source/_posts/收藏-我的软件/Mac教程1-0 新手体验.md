@@ -1,6 +1,8 @@
 ---
 title: Mac教程1-0 新手体验
-categories: 收藏-我的软件
+categories:
+  - 收藏
+  - 我的软件
 ---
 
 纠结了一阵, 9299 终入手翻新的 13.3 英寸 17款 MacBook Pro 2.3GHz 双核 英特尔 [酷睿i5 7360U 处理器](http://detail.zol.com.cn/cpu/index1168451.shtml) ，配备 Retina 显示屏 - 深空灰色
@@ -60,7 +62,7 @@ macOS 还有一个很好用的原因，就是在于触控板有很多操作手�
 
 通用
 Command-H：隐藏最前面的应用的窗口 Hide the window
-Command-Option-H 隐藏（Hide）其他应用程序窗口　　
+Command-Option-H 隐藏（Hide）其他应用程序窗口
 Command-M：最小化窗口 Minimize the window
 Command-N 新建 Create a new XXX
 Command-O Open

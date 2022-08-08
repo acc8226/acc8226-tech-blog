@@ -1,6 +1,8 @@
 ---
 title: 专题-OCR-文字识别软件推荐
-categories: 收藏-我的软件
+categories:
+  - 收藏
+  - 我的软件
 ---
 
 ## OCR识别-白描 (iOS / Mac / 安卓 / 网页版)

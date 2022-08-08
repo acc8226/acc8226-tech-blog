@@ -1,6 +1,8 @@
 ---
 title: 单平台-Win-putty-kitty-pscp 使用
-categories: 收藏-技术软件
+categories:
+  - 收藏
+  - 技术软件
 ---
 
 ## 前言

@@ -1,6 +1,8 @@
 ---
-title: nodejs安装
-categories: 语言-Node.js
+title: nodejs 安装
+categories:
+  - 语言
+  - Node.js
 tags:
 - nodeJS
 ---

@@ -1,6 +1,8 @@
 ---
 title: Win教程加餐-系统相关设置
-categories: 收藏-我的软件
+categories:
+  - 收藏
+  - 我的软件
 ---
 
 ## 更改 terminal / cmd 命令行工具的外观

@@ -1,6 +1,8 @@
 ---
 title: 跨平台-Postman 的使用(待完善
-categories: 收藏-技术软件
+categories:
+  - 收藏
+  - 技术软件
 ---
 
 ## 下载地址

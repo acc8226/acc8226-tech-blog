@@ -1,6 +1,8 @@
 ---
 title: Win教程加餐-使用技巧
-categories: 收藏-我的软件
+categories:
+  - 收藏
+  - 我的软件
 ---
 
 ## 效率：妙用快捷键

@@ -1,6 +1,8 @@
 ---
 title: Mac教程3-3-知识整理
-categories: 收藏-我的软件
+categories:
+  - 收藏
+  - 我的软件
 ---
 
 ### .DS_Store 文件是什么？

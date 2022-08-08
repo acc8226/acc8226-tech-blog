@@ -1,6 +1,8 @@
 ---
 title: 单平台-Win-VPN辅助软件-EasyConnect
-categories: 收藏-我的软件
+categories:
+  - 收藏
+  - 我的软件
 ---
 
 ## 下载和安装

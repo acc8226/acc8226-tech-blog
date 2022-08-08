@@ -1,6 +1,8 @@
 ---
 title: Win教程加餐-软件增强合集
-categories: 收藏-我的软件
+categories:
+  - 收藏
+  - 我的软件
 ---
 
 ## PC 版软件

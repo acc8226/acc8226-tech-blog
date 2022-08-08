@@ -1,6 +1,8 @@
 ---
 title: 单平台-Mac-虚拟机-Parallels-Desktop15
-categories: 收藏-技术软件
+categories:
+  - 收藏
+  - 技术软件
 ---
 
 > Parallels Desktop 被称为 macOS 上最强大的虚拟机软件。可以在 Mac 下同时模拟运行 Win、Linux、Android 等多种操作系统及软件而不必重启电脑，并能在不同系统间随意切换。

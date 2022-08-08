@@ -1,6 +1,8 @@
 ---
 title: 专题-ftp-webdav文件浏览器推荐
-categories: 收藏-我的软件
+categories:
+  - 收藏
+  - 我的软件
 ---
 
 ## 安卓

@@ -1,6 +1,8 @@
 ---
 title: 跨平台-显示-控制安卓手机方案-scrcpy
-categories: 收藏-技术软件
+categories:
+  - 收藏
+  - 技术软件
 ---
 
 * Genymotion、Parallels Desktop 等虚拟机软件 太专业, 需要配置太多软件, 适合开发者。

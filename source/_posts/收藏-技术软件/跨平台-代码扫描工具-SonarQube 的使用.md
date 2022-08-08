@@ -1,6 +1,8 @@
 ---
 title: 跨平台-代码扫描工具-SonarQube 的使用
-categories: 收藏-技术软件
+categories:
+  - 收藏
+  - 技术软件
 ---
 
 ## 使用

@@ -1,6 +1,8 @@
 ---
 title: 使用技巧-office和pdf文件互转
-categories: 收藏-我的软件
+categories:
+  - 收藏
+  - 我的软件
 ---
 
 ## word 转 pdf

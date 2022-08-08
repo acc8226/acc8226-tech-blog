@@ -1,6 +1,8 @@
 ---
 title: Office-WPS的使用(待完善
-categories: 收藏-我的软件
+categories:
+  - 收藏
+  - 我的软件
 ---
 
 ## 比较 2 列是否相等

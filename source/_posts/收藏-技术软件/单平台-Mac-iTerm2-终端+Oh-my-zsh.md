@@ -1,6 +1,8 @@
 ---
 title: 单平台-Mac-iTerm2-终端+Oh-my-zsh
-categories: 收藏-技术软件
+categories:
+  - 收藏
+  - 技术软件
 ---
 
 iTerm2 是 Terminal 的替代品，也是 iTerm 的继承者。 它适用于 macOS 10.12 或更新版本的 mac 电脑。 iTerm2 将终端带入了现代社会，带来了一些你从来不知道自己一直想要的功能。
