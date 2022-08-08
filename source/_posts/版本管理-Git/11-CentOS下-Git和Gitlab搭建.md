@@ -1,5 +1,6 @@
 ---
 title: 11-CentOS下-Git和Gitlab搭建
+date: 2019.11.08 16:11:30
 categories:
   - 版本管理
   - Git

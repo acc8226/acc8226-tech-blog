@@ -1,6 +1,7 @@
 ---
 title: 09-Git-gitignore-设置
 date: 2021.10.03 22:16:40
+updated: 2022.08.08 13:55:00
 categories:
   - 版本管理
   - Git
@@ -10,7 +11,7 @@ tags:
 
 ## .gitignore 介绍
 
-在Git工作区的根目录下创建一个特殊的 `.gitignore` 文件，然后把要忽略的文件名填进去，Git 就会自动忽略这些文件。
+在 Git 工作区的根目录下创建一个特殊的 `.gitignore` 文件，然后把要忽略的文件名填进去，Git 就会自动忽略这些文件。
 
 虽然 gitignore 文件对Git有特殊的意义,但是它和版本库中任何其他普通文件都是同样管理的。除非把 gitignore 添加到索引中,否则 Git 仍会把它当成未追踪的文件。
 
