@@ -1,6 +1,8 @@
 ---
 title: nacos
-categories: Spring Cloud Alibaba
+categories:
+  - 微服务
+  - Spring Cloud Alibaba
 tags:
 - Spring Cloud Alibaba
 ---

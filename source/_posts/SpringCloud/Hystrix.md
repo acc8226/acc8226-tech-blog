@@ -1,6 +1,8 @@
 ---
 title: Hystrix
-categories: SpringCloud
+categories:
+  - 微服务
+  - Spring Cloud
 tags:
 - Spring Cloud
 ---

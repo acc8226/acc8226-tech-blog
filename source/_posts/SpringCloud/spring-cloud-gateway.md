@@ -1,6 +1,8 @@
 ---
 title: spring-cloud-gateway
-categories: SpringCloud
+categories:
+  - 微服务
+  - Spring Cloud
 tags:
 - Spring Cloud
 ---
