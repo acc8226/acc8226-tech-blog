@@ -1,16 +1,19 @@
 ---
 title: Android-反编译工具
+date: 2022.06.26 19:14:31
 categories:
-  - 构建工具
-  - Ant
+  - 安卓
+  - 积累卷
 tags:
-- Ant
+- android
+- 反编译
 ---
 
 ## [Apktool](https://ibotpeaches.github.io/Apktool/install/)
 
 > A tool for reverse engineering 3rd party, closed, binary Android apps. It can decode resources to nearly original form and rebuild them after making some modifications. It also makes working with an app easier because of the project like file structure and automation of some repetitive tasks like building apk, etc.
 
+```text
 usage: apktool
  -advance,--advanced   prints advance information.
  -version,--version    prints the version then exits
@@ -28,6 +31,7 @@ usage: apktool b[uild] [options] <app_path>
  -f,--force-all          Skip changes detection and build all fi
  -o,--output <dir>       The name of apk that gets written. Defa
  -p,--frame-path <dir>   Uses framework files located in <dir>.
+ ```
 
 ```text
 $ apktool d test.apk

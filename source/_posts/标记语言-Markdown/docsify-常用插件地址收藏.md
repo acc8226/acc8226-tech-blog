@@ -1,5 +1,6 @@
 ---
 title: docsify-常用插件地址收藏
+date: 2022.03.15 18:48:28
 categories: 标记语言-Markdown
 tags:
 - Markdown
@@ -22,6 +23,8 @@ tags:
 **vue.css 压缩版**
 <https://cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css>
 最新所在文件夹 <https://cdn.jsdelivr.net/npm/docsify/lib/themes/>
+
+<!-- more -->
 
 ## 额外插件的更新包
 

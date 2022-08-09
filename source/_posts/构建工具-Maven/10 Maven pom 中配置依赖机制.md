@@ -1,5 +1,6 @@
 ---
 title: 10 Maven pom 中配置依赖机制
+date: 2021.10.24 21:38:40
 categories:
   - 构建工具
   - Maven

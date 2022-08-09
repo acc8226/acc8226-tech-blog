@@ -1,5 +1,5 @@
 ---
-title: 翻译-国外大神的js-分号使用指南
+title: 翻译-国外大神的 js 分号使用指南
 categories:
   - 语言
   - JavaScript

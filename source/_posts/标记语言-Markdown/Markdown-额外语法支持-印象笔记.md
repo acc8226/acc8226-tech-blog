@@ -1,5 +1,6 @@
 ---
 title: Markdown-额外语法支持-印象笔记
+date: 2019.01.09 20:25:47
 categories: 标记语言-Markdown
 tags:
 - Markdown
@@ -61,6 +62,8 @@ y.suffix: $
 ```
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-dd1ed5c2aa77f41b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<!-- more -->
 
 ## 插入行内代码或代码块
 

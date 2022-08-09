@@ -1,5 +1,6 @@
 ---
 title: 标准-Markdown-语法
+date: 2017.01.01 10:50:28
 categories: 标记语言-Markdown
 tags:
 - Markdown
@@ -61,6 +62,8 @@ As Kanye West said:
 
 > We're living the future so
 > the present is our past.
+
+<!-- more -->
 
 ## 列表(LISTS)
 

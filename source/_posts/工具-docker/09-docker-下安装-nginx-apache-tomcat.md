@@ -1,8 +1,12 @@
 ---
 title: 09. docker-下安装-nginx-apache-tomcat
+date: 2022.04.19 16:14:29
 categories: 工具-docker
 tags:
 - docker
+- nginx
+- apache
+- tomcat
 ---
 
 ## 安装 nginx 服务器

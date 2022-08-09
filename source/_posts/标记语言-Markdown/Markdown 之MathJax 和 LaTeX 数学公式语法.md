@@ -1,5 +1,6 @@
 ---
 title: Markdown 之MathJax 和 LaTeX 数学公式语法
+date: 2020.05.03 14:17:04
 categories: 标记语言-Markdown
 tags:
 - Markdown
@@ -43,6 +44,8 @@ x^2_i
 ```math
 x^{10}
 ```
+
+<!-- more -->
 
 括号
 

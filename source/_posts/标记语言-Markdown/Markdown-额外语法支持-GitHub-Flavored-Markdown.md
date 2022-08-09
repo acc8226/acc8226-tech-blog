@@ -1,5 +1,6 @@
 ---
 title: Markdown-额外语法支持 GitHub Flavored Markdown
+date: 2020.05.02 20:13:39
 categories: 标记语言-Markdown
 tags:
 - Markdown
@@ -65,6 +66,8 @@ Would become:
 mojombo@16c999e8c71134401a78d4d46435517b2271d6ac
 mojombo/github-flavored-markdown@16c999e8c71134401a78d4d46435517b2271d6ac
 ```
+
+<!-- more -->
 
 ## Issue references within a repository
 

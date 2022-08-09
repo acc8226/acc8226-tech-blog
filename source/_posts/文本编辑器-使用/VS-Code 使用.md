@@ -34,7 +34,7 @@ markdownlint
 
 另外，代码以及文字接口的程序，如虚拟终端等也**经常使用等宽字体**。
 
-![截图](./imgs/VS-Code-%E4%BD%BF%E7%94%A8/1.png)
+![截图](http://likai.test.upcdn.net/%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8-%E4%BD%BF%E7%94%A8/VS-Code-%E4%BD%BF%E7%94%A8/1.png)
 
 ## 修改 vscode 终端字体
 

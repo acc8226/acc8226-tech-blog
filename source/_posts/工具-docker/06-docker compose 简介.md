@@ -1,8 +1,10 @@
 ---
 title: 06. docker compose 简介
+date: 2022.07.07 15:59:16
 categories: 工具-docker
 tags:
 - docker
+- docker compose
 ---
 
 ## Docker Compose 简介
@@ -108,6 +110,6 @@ Docker Swarm 是 Docker 的集群管理工具。它将 Docker 主机池转变为
 swarm mananger：负责整个集群的管理工作包括集群配置、服务管理等所有跟集群有关的工作。
 work node：即图中的 available node，主要负责运行相应的服务来执行任务（task）。
 
-![原理图](./imgs/06.%20docker-Compose-%E7%AE%80%E4%BB%8B/%E5%8E%9F%E7%90%86%E5%9B%BE.png)
+![原理图](http://likai.test.upcdn.net/%E5%B7%A5%E5%85%B7-docker/06.%20docker-Compose-%E7%AE%80%E4%BB%8B/%E5%8E%9F%E7%90%86%E5%9B%BE.png)
 
 ## 参考

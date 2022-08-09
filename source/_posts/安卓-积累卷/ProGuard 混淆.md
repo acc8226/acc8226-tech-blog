@@ -1,10 +1,11 @@
 ---
-title: ProGuard-混淆
+title: ProGuard 混淆
+date: 2018.10.01 10:34:33
 categories:
-  - 构建工具
-  - Ant
+  - 安卓
+  - 积累卷
 tags:
-- Ant
+- android
 ---
 
 ProGuard 技术的功能概括为以下 4 项：

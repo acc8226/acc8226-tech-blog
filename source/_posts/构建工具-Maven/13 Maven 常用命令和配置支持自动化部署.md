@@ -1,5 +1,6 @@
 ---
 title: 13 Maven 常用命令和配置支持自动化部署
+date: 2021.11.01 09:07:22
 categories:
   - 构建工具
   - Maven
@@ -109,4 +110,4 @@ xuanm - 博客园 <https://www.cnblogs.com/grasp/p/12794707.html>
 
 ## idea 开启 maven 多线程编译的方法
 
-![idea 配置 maven 多线程构建](./imgs/13%20Maven-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E5%92%8C%E9%85%8D%E7%BD%AE%E6%94%AF%E6%8C%81%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2/idea64_qFIIiH5qHu.png)
+![idea 配置 maven 多线程构建](http://likai.test.upcdn.net/%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7-Maven/13%20Maven-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E5%92%8C%E9%85%8D%E7%BD%AE%E6%94%AF%E6%8C%81%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2/idea64_qFIIiH5qHu.png)

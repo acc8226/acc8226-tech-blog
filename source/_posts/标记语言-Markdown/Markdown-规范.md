@@ -1,5 +1,6 @@
 ---
 title: Markdown-规范
+date: 2020.02.07 08:42:54
 categories: 标记语言-Markdown
 tags:
 - Markdown
@@ -89,6 +90,8 @@ Rationale: The top level heading often acts as the title of a document. More
 information: <https://cirosantilli.com/markdown-style-guide#top-level-header>.
 
 <a name="md003"></a>
+
+<!-- more -->
 
 ## MD003 - Heading style
 

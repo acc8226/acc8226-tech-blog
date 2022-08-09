@@ -1,5 +1,6 @@
 ---
 title: Markdown-额外语法支持-有道云笔记
+date: 2020.05.02 21:07:14
 categories: 标记语言-Markdown
 tags:
 - Markdown
@@ -36,6 +37,8 @@ tags:
 ### 书写数学公式
 
 [![数学公式](https://upload-images.jianshu.io/upload_images/1662509-0bbf19306cd873fb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)](http://note.youdao.com/iyoudao/wp-content/uploads/2016/09/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F.png)
+
+<!-- more -->
 
 ### 表格
 

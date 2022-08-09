@@ -1,13 +1,14 @@
 ---
-title: 01. docker-简介和安装
+title: 01. docker 简介和安装
+date: 2020.03.21 17:19:15
 categories: 工具-docker
 tags:
 - docker
 ---
 
-![传统虚拟化](./imgs/01.%20docker-%E7%AE%80%E4%BB%8B%E5%92%8C%E5%AE%89%E8%A3%85/%E4%BC%A0%E7%BB%9F%E8%99%9A%E6%8B%9F%E5%8C%96.png)
+![传统虚拟化](http://likai.test.upcdn.net/%E5%B7%A5%E5%85%B7-docker/01.%20docker-%E7%AE%80%E4%BB%8B%E5%92%8C%E5%AE%89%E8%A3%85/%E4%BC%A0%E7%BB%9F%E8%99%9A%E6%8B%9F%E5%8C%96.png)
 
-![Docker](./imgs/01.%20docker-%E7%AE%80%E4%BB%8B%E5%92%8C%E5%AE%89%E8%A3%85/2.png)
+![Docker](http://likai.test.upcdn.net/%E5%B7%A5%E5%85%B7-docker/01.%20docker-%E7%AE%80%E4%BB%8B%E5%92%8C%E5%AE%89%E8%A3%85/2.png)
 
 ## Docker 的应用场景
 
@@ -24,7 +25,7 @@ Docker 包括三个基本概念:
 * 容器（Container）：镜像（Image）和容器（Container）的关系，就像是面向对象程序设计中的类和实例一样，镜像是静态的定义，容器是镜像运行时的实体。容器可以被创建、启动、停止、删除、暂停等。
 * 仓库（Repository）：仓库可看着一个代码控制中心，用来保存镜像。
 
-![图1](./imgs/01.%20docker-%E7%AE%80%E4%BB%8B%E5%92%8C%E5%AE%89%E8%A3%85/1.png)
+![图1](http://likai.test.upcdn.net/%E5%B7%A5%E5%85%B7-docker/01.%20docker-%E7%AE%80%E4%BB%8B%E5%92%8C%E5%AE%89%E8%A3%85/1.png)
 
 ## 安装 Docker
 

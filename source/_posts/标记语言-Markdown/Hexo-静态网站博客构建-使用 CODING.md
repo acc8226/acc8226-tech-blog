@@ -1,5 +1,6 @@
 ---
 title: Hexo-静态网站博客构建-使用-CODING
+date: 2021.01.16 13:21:16
 categories: 标记语言-Markdown
 tags:
 - Markdown
@@ -22,6 +23,8 @@ CODING 静态网站服务结合 [Tencent Serverless Framework](https://cloud.te
 4\. 点击【新建静态网站】，进入新建静态网站页面，填写网站名称，然后在代码来源中选择示例项目，在示例项目中选择 Hexo，最后选择部署的节点，这里选择香港节点。
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-e24c4cbd7fe1962c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<!-- more -->
 
 5\. 创建成功后，耐心等待静态网站部署完成，状态由【部署中】变为【部署成功】。
 

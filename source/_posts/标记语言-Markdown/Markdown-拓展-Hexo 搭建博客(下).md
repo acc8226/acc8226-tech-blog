@@ -1,5 +1,6 @@
 ---
 title: Markdown-拓展 Hexo 搭建博客(下)
+date: 2019.10.02 09:35:37
 categories: 标记语言-Markdown
 tags:
 - Markdown
@@ -64,6 +65,8 @@ hexo clean && hexo g
 ```
 
 代码上传, 我这里写了 2 个版本。可以根据需要选其一。
+
+<!-- more -->
 
 ### 强制上传版
 

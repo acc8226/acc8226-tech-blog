@@ -1,8 +1,10 @@
 ---
 title: 08. docker-下安装-redis-5.0.9
+date: 2020.07.06 01:21:14
 categories: 工具-docker
 tags:
 - docker
+- redis
 ---
 
 目前 5.x 系列中 5.0.9 为最新版本。

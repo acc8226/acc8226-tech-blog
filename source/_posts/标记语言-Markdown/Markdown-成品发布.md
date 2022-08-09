@@ -1,5 +1,6 @@
 ---
 title: Markdown-成品发布
+date: 2022.04.02 10:36:32
 categories: 标记语言-Markdown
 tags:
 - Markdown
@@ -48,6 +49,8 @@ pause
 对 windows 环境而言，光使用 pandoc 还不够，还得安装插件，所以这里更建议使用 typora。
 
 或者可以采取迂回战术，按照 md->HTML->PDF 的路径或者 md->word->PDF 的路径转。
+
+<!-- more -->
 
 ## 发布为 ppt 文件
 

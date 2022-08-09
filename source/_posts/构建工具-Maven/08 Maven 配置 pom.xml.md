@@ -1,5 +1,6 @@
 ---
 title: 08 Maven 配置 pom.xml
+date: 2021.10.23 21:50:13
 categories:
   - 构建工具
   - Maven

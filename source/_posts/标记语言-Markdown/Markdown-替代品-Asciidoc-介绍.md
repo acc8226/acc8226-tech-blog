@@ -1,5 +1,6 @@
 ---
-title: Markdown-替代品-Asciidoc-介绍
+title: Markdown-替代品 Asciidoc 介绍
+date: 2020.01.28 19:55:36
 categories: 标记语言-Markdown
 tags:
 - Markdown
@@ -20,6 +21,8 @@ AsciiDoc 相比 Markdown 支持更多的格式，包括而不限于：
 Markdown 通过自行扩展语法或者使用 HTML 可以实现这些格式，但前者造成文档不通用的问题，后者则直接把展示结构硬编码到了文档中，将来修改会很麻烦。
 
 当然， 更多的特性带来更多的学习成本，对于博客等简单文档，这些特性并不是必须的，但对于电子书等大型文档，标准内提供丰富的特性就很有必要，否则就需要自己实现不成熟、不兼容的扩展。
+
+<!-- more -->
 
 ## AsciiDoctor
 

@@ -1,5 +1,6 @@
 ---
 title: Markdown-拓展-Hexo-配置 next 主题
+date: 2020.09.04 14:57:11
 categories: 标记语言-Markdown
 tags:
 - Markdown
@@ -70,6 +71,8 @@ theme: next
 
 在更改主题和验证主题之间，我们最好使用 `hexo clean` 来清理 Hexo 的缓存。
 然后键入`hexo s --debug`，现在你可以在浏览器中打开 <http://localhost:4000>，检查网站是否正常运行。
+
+<!-- more -->
 
 ## 部署
 

@@ -1,5 +1,6 @@
 ---
 title: Markdown-拓展-使用 vuepress 生成网站
+date: 2021.09.30 21:15:51
 categories: 标记语言-Markdown
 tags:
 - Markdown
@@ -20,6 +21,8 @@ VuePress 诞生的初衷是为了支持 Vue.js 及其子项目的文档需求，
 在开发过程中，我们启动一个常规的开发服务器 (dev-server) ，并将 VuePress 站点作为一个常规的 SPA。如果你以前使用过 Vue 的话，你在使用时会感受到非常熟悉的开发体验。
 
 在构建过程中，我们会为 VuePress 站点创建一个服务端渲染 (SSR) 的版本，然后通过虚拟访问每一条路径来渲染对应的 HTML 。
+
+<!-- more -->
 
 ## 快速上手
 
