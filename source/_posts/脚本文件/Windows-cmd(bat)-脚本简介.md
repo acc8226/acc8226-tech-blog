@@ -2,7 +2,8 @@
 title: Windows-cmd(bat)-脚本简介
 categories: 脚本文件
 tags:
-- 脚本文件
+- Batch
+- CMD
 ---
 
 ## 前提知识

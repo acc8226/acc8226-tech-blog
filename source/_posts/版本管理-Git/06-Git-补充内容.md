@@ -1,5 +1,5 @@
 ---
-title: 06-Git 补充内容
+title: 06. Git 补充内容
 date: 2020.04.06 00:30:27
 categories:
   - 版本管理

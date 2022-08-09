@@ -2,7 +2,7 @@
 title: Bash-参数和变量
 categories: 脚本文件
 tags:
-- 脚本文件
+- Bash
 ---
 
 ## 变量定义

@@ -2,7 +2,7 @@
 title: PowerShell-脚本简介
 categories: 脚本文件
 tags:
-- 脚本文件
+- PowerShell
 ---
 
 ## 什么是 PowerShell？

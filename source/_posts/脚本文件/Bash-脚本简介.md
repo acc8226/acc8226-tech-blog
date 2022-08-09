@@ -2,7 +2,7 @@
 title: Bash-脚本简介
 categories: 脚本文件
 tags:
-- 脚本文件
+- Bash
 ---
 
 ## 什么是 shell 脚本

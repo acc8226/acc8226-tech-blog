@@ -2,7 +2,7 @@
 title: Bash-一些总结
 categories: 脚本文件
 tags:
-- 脚本文件
+- Bash
 ---
 
 shell 中脚本参数传递的两种方式

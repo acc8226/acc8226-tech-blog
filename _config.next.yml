@@ -142,9 +142,9 @@ footer:
     # Icon name in Font Awesome. See: https://fontawesome.com/icons
     name: fa fa-heart
     # If you want to animate the icon, set it to true.
-    animated: true
-    # 更换爱心的颜色
-    color: "#808080"
+    animated: false
+    # 爱心的颜色
+    # color: "#808080"
   # If not defined, `author` from Hexo `_config.yml` will be used.
   copyright: acc8226<br/><a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral"><img src="/images/upyun_logo.png" style="min-width:280px;width:33.3%;"/></a>
 

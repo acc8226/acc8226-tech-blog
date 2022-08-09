@@ -2,7 +2,7 @@
 title: Bash-函数
 categories: 脚本文件
 tags:
-- 脚本文件
+- Bash
 ---
 
 ## 函数定义

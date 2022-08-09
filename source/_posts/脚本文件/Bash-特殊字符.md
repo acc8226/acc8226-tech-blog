@@ -2,7 +2,7 @@
 title: Bash-特殊字符
 categories: 脚本文件
 tags:
-- 脚本文件
+- Bash
 ---
 
 一、注释（#）

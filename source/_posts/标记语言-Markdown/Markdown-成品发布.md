@@ -64,7 +64,7 @@ Marp for VS Code - Visual Studio Marketplace
 
 目前支持的导出格式
 
-![截图](./imgs/Markdown-%E6%88%90%E5%93%81%E5%8F%91%E5%B8%83/1.png)
+![截图](http://likai.test.upcdn.net/%E6%A0%87%E8%AE%B0%E8%AF%AD%E8%A8%80-Markdown/Markdown-%E6%88%90%E5%93%81%E5%8F%91%E5%B8%83/1.png)
 
 ### Reveal.js 介绍
 

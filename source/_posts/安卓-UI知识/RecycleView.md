@@ -1,9 +1,9 @@
 ---
-title: 适配完结篇一-RecycleView
+title: RecycleView
 date: 2017.03.10 13:55:39
 categories:
   - 安卓
-  - UI知识
+  - UI 知识
 tags:
 - android
 ---

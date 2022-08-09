@@ -2,7 +2,7 @@
 title: Bash-介绍和入门
 categories: 脚本文件
 tags:
-- 脚本文件
+- Bash
 ---
 
 ####  课程来源

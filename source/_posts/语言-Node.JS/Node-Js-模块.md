@@ -1,8 +1,10 @@
 ---
 title: Node-Js-模块
-categories: 语言-JavaScript
+categories:
+  - 语言
+  - Node.js
 tags:
-- js
+- nodeJS
 ---
 
 下载完安装包会提示:

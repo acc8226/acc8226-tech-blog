@@ -2,7 +2,7 @@
 title: Bash-实例
 categories: 脚本文件
 tags:
-- 脚本文件
+- Bash
 ---
 
 清空日志

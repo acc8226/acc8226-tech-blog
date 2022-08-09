@@ -3,7 +3,7 @@ title: 安卓-View-的事件体系
 date: 2017.03.29 14:58:41
 categories:
   - 安卓
-  - UI知识
+  - UI 知识
 tags:
 - android
 ---

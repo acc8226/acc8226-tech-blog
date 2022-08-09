@@ -1,5 +1,5 @@
 ---
-title: 07-Git 命令实战
+title: 07. Git 命令实战
 date: 2017.04.13 23:06:06
 categories:
   - 版本管理
