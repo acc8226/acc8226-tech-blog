@@ -1,8 +1,12 @@
 ---
-title: about
+title: 关于我
 date: 2022-08-06 13:24:36
 comments: false
 ---
+
+## 我的简历
+
+## 其他
 
 鸿门宴
 
