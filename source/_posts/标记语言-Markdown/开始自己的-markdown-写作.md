@@ -1,9 +1,10 @@
 ---
 title: 开始自己的-markdown-写作
 date: 2022.04.20 10:58:33
-categories: 标记语言-Markdown
-tags:
-- Markdown
+categories:
+  - 标记语言
+  - Markdown
+tags: Markdown
 ---
 
 ## 前言

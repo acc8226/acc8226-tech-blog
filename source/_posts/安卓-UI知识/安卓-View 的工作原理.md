@@ -1,5 +1,5 @@
 ---
-title: 安卓-View-的工作原理
+title: 安卓-View 的工作原理
 date: 2017.04.16 09:54:26
 categories:
   - 安卓

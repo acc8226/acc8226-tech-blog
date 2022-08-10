@@ -1,7 +1,9 @@
 ---
 title: 01. docker 简介和安装
 date: 2020.03.21 17:19:15
-categories: 工具-docker
+categories:
+  - 容器技术
+  - docker
 tags:
 - docker
 ---

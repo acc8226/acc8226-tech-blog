@@ -1,5 +1,5 @@
 ---
-title: 安卓-View-的工作流程
+title: 安卓-View 的工作流程
 date: 2017.04.17 21:57:40
 categories:
   - 安卓

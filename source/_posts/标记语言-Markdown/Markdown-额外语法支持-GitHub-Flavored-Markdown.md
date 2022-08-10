@@ -1,9 +1,10 @@
 ---
 title: Markdown-额外语法支持 GitHub Flavored Markdown
 date: 2020.05.02 20:13:39
-categories: 标记语言-Markdown
-tags:
-- Markdown
+categories:
+  - 标记语言
+  - Markdown
+tags: Markdown
 ---
 
 ## Syntax highlighting 语法突显

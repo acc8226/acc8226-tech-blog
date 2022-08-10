@@ -1,9 +1,10 @@
 ---
 title: Hexo-静态网站博客构建-使用-CODING
 date: 2021.01.16 13:21:16
-categories: 标记语言-Markdown
-tags:
-- Markdown
+categories:
+  - 标记语言
+  - Markdown
+tags: Markdown
 ---
 
 ## 产品介绍

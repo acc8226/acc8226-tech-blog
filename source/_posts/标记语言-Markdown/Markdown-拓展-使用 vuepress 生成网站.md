@@ -1,9 +1,10 @@
 ---
 title: Markdown-拓展-使用 vuepress 生成网站
 date: 2021.09.30 21:15:51
-categories: 标记语言-Markdown
-tags:
-- Markdown
+categories:
+  - 标记语言
+  - Markdown
+tags: Markdown
 ---
 
 ## 介绍

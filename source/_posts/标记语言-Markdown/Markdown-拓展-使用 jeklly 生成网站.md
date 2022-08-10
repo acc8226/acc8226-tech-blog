@@ -1,9 +1,10 @@
 ---
 title: Markdown-拓展-使用 jeklly 生成网站
 date: 2022-07-01 00:00:00
-categories: 标记语言-Markdown
-tags:
-- Markdown
+categories:
+  - 标记语言
+  - Markdown
+tags: Markdown
 ---
 
 ## 先决条件

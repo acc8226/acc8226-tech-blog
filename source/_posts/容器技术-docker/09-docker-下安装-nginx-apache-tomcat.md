@@ -1,7 +1,9 @@
 ---
 title: 09. docker-下安装-nginx-apache-tomcat
 date: 2022.04.19 16:14:29
-categories: 工具-docker
+categories:
+  - 容器技术
+  - docker
 tags:
 - docker
 - nginx

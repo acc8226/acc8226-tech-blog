@@ -1,7 +1,9 @@
 ---
 title: 10. docker 下常见镜像
 date: 2022.07.08 09:45:19
-categories: 工具-docker
+categories:
+  - 容器技术
+  - docker
 tags:
 - docker
 ---

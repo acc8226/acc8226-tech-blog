@@ -1,9 +1,10 @@
 ---
-title: Markdown-额外语法支持-印象笔记
+title: Markdown-额外语法支持 印象笔记
 date: 2019.01.09 20:25:47
-categories: 标记语言-Markdown
-tags:
-- Markdown
+categories:
+  - 标记语言
+  - Markdown
+tags: Markdown
 ---
 
 ## 下划线

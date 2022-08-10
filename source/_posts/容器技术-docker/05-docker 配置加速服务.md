@@ -1,7 +1,9 @@
 ---
 title: 05. docker 配置加速服务
 date: 2020.07.11 09:45:04
-categories: 工具-docker
+categories:
+  - 容器技术
+  - docker
 tags:
 - docker
 ---

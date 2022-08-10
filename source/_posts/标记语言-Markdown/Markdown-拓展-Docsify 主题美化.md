@@ -1,9 +1,10 @@
 ---
 title: Markdown-拓展 Docsify 主题美化
 date: 2021.02.23 11:00:16
-categories: 标记语言-Markdown
-tags:
-- Markdown
+categories:
+  - 标记语言
+  - Markdown
+tags: Markdown
 ---
 
 docsify-themeable - A delightfully simple theme system for docsify.js

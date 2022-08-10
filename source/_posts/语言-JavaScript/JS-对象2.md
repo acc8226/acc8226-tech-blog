@@ -1,5 +1,5 @@
 ---
-title: JS-对象2
+title: JS-对象 2
 categories:
   - 语言
   - JavaScript

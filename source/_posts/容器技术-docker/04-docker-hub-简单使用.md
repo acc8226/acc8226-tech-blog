@@ -1,7 +1,9 @@
 ---
 title: 04. docker-hub-简单使用
 date: 2022.03.28 13:32:50
-categories: 工具-docker
+categories:
+  - 容器技术
+  - docker
 tags:
 - docker
 ---

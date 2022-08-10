@@ -1,9 +1,10 @@
 ---
 title: Markdown-成品发布
 date: 2022.04.02 10:36:32
-categories: 标记语言-Markdown
-tags:
-- Markdown
+categories:
+  - 标记语言
+  - Markdown
+tags: Markdown
 ---
 
 ## 发布线上电子书

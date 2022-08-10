@@ -1,9 +1,10 @@
 ---
 title: Markdown-拓展-免费图床-网盘方案
 date: 2019.11.17 18:18:44
-categories: 标记语言-Markdown
-tags:
-- Markdown
+categories:
+  - 标记语言
+  - Markdown
+tags: Markdown
 ---
 
 ## 前言

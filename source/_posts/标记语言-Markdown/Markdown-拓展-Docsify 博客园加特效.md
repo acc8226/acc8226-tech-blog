@@ -1,9 +1,10 @@
 ---
 title: Markdown-拓展 Docsify 博客园加特效
 date: 2021.10.10 11:29:29
-categories: 标记语言-Markdown
-tags:
-- Markdown
+categories:
+  - 标记语言
+  - Markdown
+tags: Markdown
 ---
 
 ## 文字特效

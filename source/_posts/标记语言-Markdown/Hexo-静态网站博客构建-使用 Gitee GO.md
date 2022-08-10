@@ -1,9 +1,10 @@
 ---
 title: Hexo-静态网站博客构建-使用 Gitee GO
 date: 2022-08-01 00:00:00
-categories: 标记语言-Markdown
-tags:
-- Markdown
+categories:
+  - 标记语言
+  - Markdown
+tags: Markdown
 ---
 
 新建流水线。

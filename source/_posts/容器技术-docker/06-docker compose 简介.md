@@ -1,7 +1,9 @@
 ---
 title: 06. docker compose 简介
 date: 2022.07.07 15:59:16
-categories: 工具-docker
+categories:
+  - 容器技术
+  - docker
 tags:
 - docker
 - docker compose

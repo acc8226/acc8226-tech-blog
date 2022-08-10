@@ -1,9 +1,10 @@
 ---
 title: Markdown-拓展-Gitlab-Github 开启 UML 图支持
 date: 2022.04.11 12:15:06
-categories: 标记语言-Markdown
-tags:
-- Markdown
+categories:
+  - 标记语言
+  - Markdown
+tags: Markdown
 ---
 
 ## 为什么需要它

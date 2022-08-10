@@ -1,9 +1,10 @@
 ---
 title: Markdown-拓展 Docsify 构建接口文档
 date: 2020.08.29 20:51:35
-categories: 标记语言-Markdown
-tags:
-- Markdown
+categories:
+  - 标记语言
+  - Markdown
+tags: Markdown
 ---
 
 优点：使用 markdown 编写，docsify 作为支撑。快速高效，若搭载搜索功能，功能较为完善。且可部署在内网环境。

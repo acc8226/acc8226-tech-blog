@@ -9,7 +9,7 @@ tags:
 
 ## 字符串
 
-JavaScript中的 [String](https://developer.mozilla.org/en-US/docs/Glossary/String "String: In any computer programming language, a string is a sequence of characters used to represent text.") 类型用于表示文本型的数据. 它是由无符号整数值（16bit）作为元素而组成的集合. 字符串中的每个元素在字符串中占据一个位置. 第一个元素的index值是0, 下一个元素的index值是1, 以此类推. 字符串的长度就是字符串中所含的元素个数.你可以通过String字面值或者String对象两种方式创建一个字符串。
+JavaScript中的 [String](https://developer.mozilla.org/en-US/docs/Glossary/String "String: In any computer programming language, a string is a sequence of characters used to represent text.") 类型用于表示文本型的数据. 它是由无符号整数值（16bit）作为元素而组成的集合. 字符串中的每个元素在字符串中占据一个位置. 第一个元素的index值是0, 下一个元素的 index 值是1, 以此类推. 字符串的长度就是字符串中所含的元素个数.你可以通过String字面值或者String对象两种方式创建一个字符串。
 
 ### String字面量
 
@@ -17,11 +17,11 @@ JavaScript中的 [String](https://developer.mozilla.org/en-US/docs/Glossary/Str
 "bar"
 
 16进制转义序列
-`\x`之后的数值将被认为是一个16进制数.
+`\x`之后的数值将被认为是一个 16 进制数.
 `'\xA9' // "©"`
 
 Unicode转义序列
-Unicode转义序列在\u之后需要至少4个字符.
+Unicode转义序列在\u 之后需要至少 4 个字符.
 `'\u00A9' // "©"`
 
 ### 字符串对象
@@ -49,6 +49,7 @@ typeof s; // Returns 'object'
 模板字符串使用反勾号 (` `) ([grave accent](https://en.wikipedia.org/wiki/Grave_accent)) 包裹内容而不是单引号或双引号. 模板字符串可以包含占位符. 占位符用美元符号和花括号标识 (`${expression}`).
 
 * 多行
+
 ```js
 console.log(`string text line 1
 string text line 2`);
@@ -58,6 +59,7 @@ string text line 2`);
 
 * 嵌入表达式
 为了在一般的字符串中嵌入表达式, 需要使用如下语法:
+
 ```js
 var a = 5;
 var b = 10;
@@ -67,6 +69,7 @@ console.log("Fifteen is " + (a + b) + " and\nnot " + (2 * a + b) + ".");
 ```
 
 使用模板字符串, 可以使用语法糖让类似功能的实现代码更具可读性:
+
 ```js
 var a = 5;
 var b = 10;

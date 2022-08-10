@@ -1,7 +1,9 @@
 ---
 title: 08. docker-下安装-redis-5.0.9
 date: 2020.07.06 01:21:14
-categories: 工具-docker
+categories:
+  - 容器技术
+  - docker
 tags:
 - docker
 - redis

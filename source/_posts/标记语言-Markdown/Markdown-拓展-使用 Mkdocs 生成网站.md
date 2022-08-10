@@ -1,8 +1,9 @@
 ---
 title: Markdown-拓展-使用 Mkdocs 生成网站
-categories: 标记语言-Markdown
-tags:
-- Markdown
+categories:
+  - 标记语言
+  - Markdown
+tags: Markdown
 ---
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).

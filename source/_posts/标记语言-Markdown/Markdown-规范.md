@@ -1,9 +1,10 @@
 ---
 title: Markdown-规范
 date: 2020.02.07 08:42:54
-categories: 标记语言-Markdown
-tags:
-- Markdown
+categories:
+  - 标记语言
+  - Markdown
+tags: Markdown
 ---
 
 # Rules

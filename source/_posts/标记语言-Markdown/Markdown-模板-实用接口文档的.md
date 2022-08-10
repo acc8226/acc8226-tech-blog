@@ -1,9 +1,10 @@
 ---
 title: Markdown-模板-实用接口文档的
 date: 2020.05.27 19:19:39
-categories: 标记语言-Markdown
-tags:
-- Markdown
+categories:
+  - 标记语言
+  - Markdown
+tags: Markdown
 ---
 
 ## 源码地址

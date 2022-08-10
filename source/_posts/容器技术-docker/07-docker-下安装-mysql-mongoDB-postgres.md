@@ -1,7 +1,9 @@
 ---
 title: 07. docker-下安装-mysql-mongoDB-postgres
 date: 2020.07.09 21:38:12
-categories: 工具-docker
+categories:
+  - 容器技术
+  - docker
 tags:
 - docker
 - mysql

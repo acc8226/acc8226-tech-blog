@@ -1,9 +1,10 @@
 ---
 title: Markdown-额外语法支持-有道云笔记
 date: 2020.05.02 21:07:14
-categories: 标记语言-Markdown
-tags:
-- Markdown
+categories:
+  - 标记语言
+  - Markdown
+tags: Markdown
 ---
 
 有道云笔记内置 Markdown 编辑器和使用指南，非技术类笔记用户，千万不要被「标记」、「语言」吓到，Markdown 的语法十分简单，常用的标记符号不超过十个，用于日常写作记录绰绰有余，不到半小时就能完全掌握。

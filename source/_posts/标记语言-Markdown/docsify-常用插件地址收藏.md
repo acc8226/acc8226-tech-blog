@@ -1,9 +1,10 @@
 ---
 title: docsify-常用插件地址收藏
 date: 2022.03.15 18:48:28
-categories: 标记语言-Markdown
-tags:
-- Markdown
+categories:
+  - 标记语言
+  - Markdown
+tags: Markdown
 ---
 
 ## docsify 介绍
