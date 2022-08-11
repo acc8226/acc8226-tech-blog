@@ -118,8 +118,8 @@ git config --global url."https://github.com/".insteadOf git://github.com/
 github 邮箱和 git push 邮箱不一致
 
 解决方案
-单项目设置 git config user.email “你的邮件地址”
-或全局设置 git config --global user.email “你的邮件地址”
+单项目设置 `git config user.email “你的邮件地址”`
+或全局设置 `git config --global user.email “你的邮件地址”`
 
 注：gitee 平台也是此类原因。
 

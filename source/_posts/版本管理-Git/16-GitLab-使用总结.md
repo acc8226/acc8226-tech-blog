@@ -76,7 +76,7 @@ ssh-keygen -t rsa -C "你的邮箱地址"
 验证是否可正常访问
 
 ```sh
-ssh -T  git@xxx.xxx.xxx.xxx -vvv
+ssh -T git@xxx.xxx.xxx.xxx -vvv
 ```
 
 ## 参考

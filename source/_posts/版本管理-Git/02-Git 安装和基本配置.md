@@ -100,22 +100,15 @@ git config --global user.name "Mona Lisa"
 git config --global user.email "YourEmail@example.com"
 ```
 
-推荐的增强配置
-提交检出均不转换，防止 git 自动将 lf 和 crlf 互转。
+## 推荐的增强配置
+
+* 提交检出均不转换，防止 git 自动将 lf 和 crlf 互转。
+* 拒绝提交包含混合换行符的文件
+* 让 Git 显示颜色，使命令输出看起来更醒目
 
 ```sh
 git config --global core.autocrlf false
-```
-
-拒绝提交包含混合换行符的文件
-
-```sh
 git config --global core.safecrlf true
-```
-
-让 Git 显示颜色，使命令输出看起来更醒目
-
-```sh
 git config --global color.ui true
 ```
 
@@ -160,7 +153,7 @@ ssh-keygen -t rsa -C "youremail@example.com"
 
 你需要把邮件地址换成你自己的邮件地址，然后一路回车，使用默认值即可，由于这个Key也不是用于军事目的，所以也无需设置密码。
 
-如果一切顺利的话，可以在用户主目录里找到 .ssh目录，里面有 id_rsa 和 id_rsa.pub 两个文件，这两个就是 SSH Key 的秘钥对，**id_rsa 是私钥**，不能泄露出去，id_rsa.pub是公钥，可以放心地告诉任何人。
+如果一切顺利的话，可以在用户主目录里找到 .ssh目录，里面有 id_rsa 和 id_rsa.pub 两个文件，这两个就是 SSH Key 的秘钥对，**id_rsa 是私钥**，不能泄露出去，id_rsa.pub 是公钥，可以放心地告诉任何人。
 
 为什么 GitHub 需要 SSH Key呢？因为 GitHub 需要识别出你推送的提交确实是你推送的，而不是别人冒充的，而 Git 支持 SSH 协议，所以，GitHub 只要知道了你的公钥，就可以确认只有你自己才能推送。
 
