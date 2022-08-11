@@ -1,5 +1,5 @@
 ---
-title: PowerShell-脚本简介
+title: PowerShell 脚本简介
 categories: 脚本文件
 tags:
 - PowerShell

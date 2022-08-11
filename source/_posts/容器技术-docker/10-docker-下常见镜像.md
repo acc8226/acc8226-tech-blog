@@ -38,6 +38,8 @@ docker run -p 80:80 \
 -d httpd
 ```
 
+<!-- more -->
+
 命令说明：
 
 * -p 80:80: 将容器的 80 端口映射到主机的 80 端口。
@@ -70,7 +72,9 @@ docker pull garland/butterfly:3.2.3
 Starting with login and password
 
 ```sh
-docker run --name firstCMD --env PASSWORD=12345 -d  -p 12345:12345 garland/butterfly:3.2.3 --login --port=12345
+docker run --name firstCMD --env PASSWORD=12345 -d \
+-p 12345:12345 garland/butterfly:3.2.3 \
+--login --port=12345
 ```
 
 ## 下安装 php
@@ -96,3 +100,11 @@ docker run --name myPostgres12 -e POSTGRES_PASSWORD=mysecretpassword -d postgres
 
 sonatype/nexus3 - Docker Image | Docker Hub
 <https://hub.docker.com/r/sonatype/nexus3>
+
+## 安装 mssql server
+
+docker pull mcr.microsoft.com/mssql/server:2019-latest
+
+docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Abc123.." --name sqlserver -p 1433:1433 -d mcr.microsoft.com/mssql/server:2019-latest
+
+docker exec -it sqlserver /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P Abc123..

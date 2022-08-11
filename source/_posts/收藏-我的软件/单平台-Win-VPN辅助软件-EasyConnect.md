@@ -1,5 +1,5 @@
 ---
-title: 单平台-Win-VPN辅助软件-EasyConnect
+title: 单平台-Win-VPN 辅助软件 EasyConnect
 categories:
   - 收藏
   - 我的软件

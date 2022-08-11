@@ -1,10 +1,11 @@
 ---
-title: 使用JQuery库
+title: 使用 jQuery 库
 categories:
   - 语言
   - JavaScript
 tags:
 - js
+- jQuery
 ---
 
 * jQuery 是一个 JavaScript 库。

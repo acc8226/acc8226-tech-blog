@@ -1,5 +1,5 @@
 ---
-title: 专题-OCR-文字识别软件推荐
+title: 专题-OCR 文字识别软件推荐
 categories:
   - 收藏
   - 我的软件

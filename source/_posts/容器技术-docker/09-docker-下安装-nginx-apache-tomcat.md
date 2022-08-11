@@ -41,6 +41,8 @@ docker run --name my-nginx \
 * -p 80:80： 端口进行映射，将本地 80 端口映射到容器内部的 80 端口。
 * -d nginx： 设置容器在在后台一直运行。
 
+<!-- more -->
+
 **复杂构建**
 
 导出 nginx.conf 和 html 文件夹

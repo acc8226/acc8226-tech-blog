@@ -1,5 +1,5 @@
 ---
-title: 单平台-Win-星号密码显示工具
+title: 单平台-Win 星号密码显示工具
 categories:
   - 收藏
   - 我的软件

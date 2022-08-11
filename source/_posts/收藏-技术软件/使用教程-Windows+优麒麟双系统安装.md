@@ -1,5 +1,5 @@
 ---
-title: 使用教程-Windows+优麒麟双系统安装
+title: 使用教程-Windows 优麒麟双系统安装
 categories:
   - 收藏
   - 技术软件

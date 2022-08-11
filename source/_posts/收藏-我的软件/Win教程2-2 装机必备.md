@@ -1,5 +1,5 @@
 ---
-title: Win教程2-2-装机必备
+title: Win教程2-2 装机必备
 categories:
   - 收藏
   - 我的软件

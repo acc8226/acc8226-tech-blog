@@ -1,5 +1,5 @@
 ---
-title: Google-XML-Document-Format-风格规范
+title: Google-XML-Document Format 风格规范
 categories: 文档规约
 ---
 

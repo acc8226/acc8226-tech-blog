@@ -1,6 +1,7 @@
 ---
-title: 03. docker-的简单使用
+title: 03. docker 的简单使用
 date: 2022.02.18 22:09:08
+updated: 2022.08.10 16:13:00
 categories:
   - 容器技术
   - docker
@@ -77,6 +78,8 @@ docker logs 2b1b7a428627
 `docker restart <CONTAINER ID>`
 指定容器名称重启容器
 `docker restart <CONTAINER NAME>`
+
+<!-- more -->
 
 ### 进入容器
 
@@ -183,12 +186,28 @@ runoob@runoob:~$ docker inspect wizardly_chandrasekhar
 ......
 ```
 
-## 其他
+## 其他命令
 
-docker重启参数--restart=always的作用_bjywxc的博客-CSDN博客_restart=always
-<https://blog.csdn.net/bjywxc/article/details/103530262>
+docker cp :用于容器与主机之间的数据拷贝。
+
+实例
+
+将主机/www/runoob目录拷贝到容器96f7f14e99ab的/www目录下。
+
+```sh
+docker cp /www/runoob 96f7f14e99ab:/www/
+```
+
+将容器96f7f14e99ab的/www目录拷贝到主机的/tmp目录中。
+
+```sh
+docker cp  96f7f14e99ab:/www /tmp/
+```
 
 ## 参考
 
 docker 仓库
 <https://hub.docker.com/search?q=&type=image>
+
+docker重启参数--restart=always的作用_bjywxc的博客-CSDN博客_restart=always
+<https://blog.csdn.net/bjywxc/article/details/103530262>

@@ -1,5 +1,5 @@
 ---
-title: Mac教程2-1-新手必装软件
+title: Mac教程2-1 新手必装软件
 categories:
   - 收藏
   - 我的软件

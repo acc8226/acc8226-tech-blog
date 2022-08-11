@@ -1,5 +1,5 @@
 ---
-title: 专题-官方无广告软件app推荐
+title: 专题-官方无广告软件 app 推荐
 categories:
   - 收藏
   - 我的软件
@@ -48,6 +48,6 @@ categories:
 
 ### Alook 浏览器
 
-iOS 版本的自行去 app store 搜索（提前说明：苹果版的不免费哦）
+iOS 版本的自行去 App Store 搜索（提前说明：苹果版的不免费）
 
 Alook浏览器 - 8倍速 - 酷安 <https://www.coolapk.com/apk/alook.browser>
