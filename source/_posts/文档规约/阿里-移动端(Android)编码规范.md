@@ -5,7 +5,7 @@ categories: 文档规约
 
 为指导 Android 开发者更加高效、高质量地进行 App 开发，呈现给用户体验好、性能优、稳定性佳、安全性高的产品。
 
-本手册以开发者为中心视角分为Java语言规范，Android 资源文件命名与使用，Android 基本组件，UI 与布局，进程、线程与消息通信，文件与数据库，Bitmap、Drawable 与动画，安全，其他等九大部分，根据约束力强弱，规约依次分为强制、推荐、参考三大类：
+本手册以开发者为中心视角分为 Java 语言规范，Android 资源文件命名与使用，Android 基本组件，UI 与布局，进程、线程与消息通信，文件与数据库，Bitmap、Drawable 与动画，安全，其他等九大部分，根据约束力强弱，规约依次分为强制、推荐、参考三大类：
 
 * 【强制】必须遵守，违反本约定或将会引起严重的后果；
 * 【推荐】尽量遵守，长期遵守有助于系统稳定性和合作效率的提升；
@@ -51,17 +51,18 @@ GridView 的行 layout 以 module_grid_item 开头
 采用以下规则：
 **`父 style 名称.当前 style 名称`**
     如：
+
     ```
     <style name="ParentTheme.ThisActivityTheme">
     …
     </style>
     ```
 
-8. 【推荐】string资源文件或者文本用到字符需要全部写入module_strings.xml文件中，字符串以小写单词+下划线的方式命名，采用以下规则：
+8\. 【推荐】string资源文件或者文本用到字符需要全部写入module_strings.xml文件中，字符串以小写单词+下划线的方式命名，采用以下规则：
 **`模块名_逻辑名称`**
 如：`moudule_login_tips,module_homepage_notice_desc`
 
-9. 【推荐】Id 资源原则上以驼峰法命名，View 组件的资源 id 需要以 View 的缩写作为
+9\. 【推荐】Id 资源原则上以驼峰法命名，View 组件的资源 id 需要以 View 的缩写作为
 前缀。常用缩写表如下：
 
 控件|缩写

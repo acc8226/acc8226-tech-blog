@@ -1,5 +1,5 @@
 ---
-title: 在JavaSctript中解决问题
+title: 在 JavaSctript 中解决问题
 categories:
   - 语言
   - JavaScript

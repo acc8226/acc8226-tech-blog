@@ -58,8 +58,8 @@ defer="defer"
 
 ### Boolean类型
 
-* Boolean类型有两个字面量: true 和 false, 并且区分大小写!
-**任何类型**都可以转换为Boolean类型, 一般使用在流程控制语句后面:
+* Boolean 类型有两个字面量: true 和 false, 并且区分大小写!
+**任何类型**都可以转换为 Boolean 类型, 一般使用在流程控制语句后面:
 
 --Boolean: false,
 --String: ""(空字符串),
@@ -68,13 +68,13 @@ defer="defer"
 --Undefined: undefined
 它们的结果都是false, 其他情况则为true
 
-```Javascript
-        var i = 1
-        if (i) {
-            console.log("你是true")
-        } else {
-            console.log("你是false")
-        }
+```js
+var i = 1
+if (i) {
+    console.log("你是true")
+} else {
+    console.log("你是false")
+}
 ```
 
 这段代码隐式的i 可以理解为`Boolean(i)`, 结果为`true`

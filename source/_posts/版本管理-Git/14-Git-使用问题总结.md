@@ -41,7 +41,7 @@ git merge origin/master --allow-unrelated-histories
 
 ```sh
 # 提交检出均不转换
-git config --global core.autocrlf false`
+git config --global core.autocrlf false
 ```
 
 三种取值 true, input, false 的解释

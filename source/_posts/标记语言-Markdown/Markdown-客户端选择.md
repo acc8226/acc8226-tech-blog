@@ -10,7 +10,7 @@ tags: Markdown
 ## 网页端
 
 **stackedit (推荐)**
-开箱即用, 在主流 markdown 语法支持的基础上, 还支持数学公式, 各种流程图. 还提供了一键导出 PDF 的功能。
+开箱即用, 在主流 markdown 语法支持的基础上, 还支持数学公式, 各种流程图。
 <https://stackedit.io/app>
 
 ## 客户端
@@ -18,12 +18,14 @@ tags: Markdown
 ### Windows & Linux 平台
 
 * VS Code
-* marktext【免费、推荐】 / Typora【付费】
+* marktext【免费、推荐】
+* Typora【付费】
 
 ### Mac 平台
 
 * VS Code
-* marktext【免费、推荐】 / Typora【付费】
+* marktext【免费、推荐】
+* Typora【付费】
 * Mac 独享 的 MWeb4(付费)，因为我看中的的是自动导出为博客和图片上传服务(图床)。
 
 ## 最终选择
@@ -35,12 +37,14 @@ tags: Markdown
 * 马克飞象: 付费, 且对图床的实现方式有待商榷。
 * 为知笔记: 之后收费了。
 
-## 其他知识点
+## 遇到的问题
 
-* [Markdown 拓展-免费图床/网盘方案 - 简书
-](https://www.jianshu.com/p/2097bef17cbe)
-* [Markdown 拓展-免费图床/网盘方案 - 简书
-](https://www.jianshu.com/p/4d7ef8cad8ee)
+问题：Typora 过期解决方法，Typora打不开了怎么办，提示 The beta version of typora is expired, please download and install a newer version
+
+解决：
+按 Windows + R 打开运行窗口，输入 regedit，点确定
+打开注册表，依次展开计算机\HKEY_CURRENT_USER\Software\Typora
+然后在Typora上右键，点权限，选中Administrtors，把权限全部设置为拒绝
 
 ## 参考
 

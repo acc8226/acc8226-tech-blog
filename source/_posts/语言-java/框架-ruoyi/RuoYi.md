@@ -126,4 +126,35 @@ com.ruoyi
 
 ## 后台手册
 
+### 分页实现
+
+* 前端采用基于bootstrap的轻量级表格插件bootstrap-table(opens new window)
+* 后端采用基于mybatis的轻量级分页插件pageHelper
+
+### 导入导出
+
+在实际开发中经常需要使用导入导出功能来加快数据的操作。在项目中可以使用注解来完成此项功能。 在需要被导入导出的实体类属性添加@Excel注解。
+
+### 权限注解
+
+Shiro 的认证注解处理是有内定的处理顺序的，如果有个多个注解的话，前面的通过了会继续检查后面的，若不通过则直接返回，处理顺序依次为（与实际声明顺序无关） RequiresRoles、RequiresPermissions、RequiresAuthentication、RequiresUser、RequiresGuest。
+
+例如：你同时声明了RequiresRoles和RequiresPermissions，那就要求拥有此角色的同时还得拥有相应的权限。
+
+### 事务管理
+
+新建的Spring Boot项目中，一般都会引用spring-boot-starter或者spring-boot-starter-web，而这两个起步依赖中都已经包含了对于spring-boot-starter-jdbc或spring-boot-starter-data-jpa的依赖。 当我们使用了这两个依赖的时候，框架会自动默认分别注入DataSourceTransactionManager或JpaTransactionManager。 所以我们不需要任何额外配置就可以用 @Transactional 注解进行事务的使用。
+
+Spring 的默认的事务规则是遇到运行异常（RuntimeException）和程序错误（Error）才会回滚。如果想针对检查异常进行事务回滚，可以在 @Transactional 注解里使用 rollbackFor属性明确指定异常。
+
+### 参数验证
+
+spring boot中可以用@Validated来校验数据，如果数据异常则会统一抛出异常，方便异常中心统一处理。
+
+### 系统日志
+
+在实际开发中，对于某些关键业务，我们通常需要记录该操作的内容，一个操作调一次记录方法，每次还得去收集参数等等，会造成大量代码重复。 我们希望代码中只有业务相关的操作，在项目中使用注解来完成此项功能。
+
+在需要被记录日志的controller方法上添加@Log注解，使用方法如下：
+
 ## 我对代码的分析
