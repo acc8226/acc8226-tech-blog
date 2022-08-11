@@ -112,7 +112,7 @@ ipconfig /flushdns
 git config --global url."https://github.com/".insteadOf git://github.com/
 ```
 
-### 代码推送成功 github不显示小绿格（贡献度）
+### 代码推送成功 github 不显示小绿格（贡献度）
 
 原因
 github 邮箱和 git push 邮箱不一致

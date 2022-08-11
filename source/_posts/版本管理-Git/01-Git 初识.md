@@ -1,7 +1,7 @@
 ---
 title: 01. Git 初识
 date: 2019.02.22 16:18:08
-updated: 2022/8/11 00:00:00
+updated: 2022-08-11 00:00:00
 categories:
   - 版本管理
   - Git
