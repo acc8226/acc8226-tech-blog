@@ -8,7 +8,7 @@ tags:
 - android
 ---
 
-http://developer.android.youdaxue.com/guide/topics/ui/notifiers/toasts.html#Positioning
+<http://developer.android.youdaxue.com/guide/topics/ui/notifiers/toasts.html#Positioning>
 
 ### 创建自定义Toast View
 

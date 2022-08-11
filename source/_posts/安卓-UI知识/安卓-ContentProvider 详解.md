@@ -8,7 +8,7 @@ tags:
 - android
 ---
 
-![ContentProvider](http://likai.test.upcdn.net/%E5%AE%89%E5%8D%93-UI%E7%9F%A5%E8%AF%86/%E5%AE%89%E5%8D%93-ContentProvider-%E8%AF%A6%E8%A7%A3/1.png)
+![ContentProvider](/images/安卓-UI知识/安卓-ContentProvider-详解/1.png)
 
 ## 构建content URI
 
