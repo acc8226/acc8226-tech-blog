@@ -34,7 +34,7 @@ stages:
           - hexo g
           - git config --global user.name "giteego"
           - git config --global user.email "giteego@feipig.fun"
-          - git clone "https://$userName:$accessToken@$hostName/$userName/$repoPath"
+          - git clone --depth 1 "https://$userName:$accessToken@$hostName/$userName/$repoPath"
           - cd $userName/
           - git rm -rf .
           - cp -r ../public/* ./

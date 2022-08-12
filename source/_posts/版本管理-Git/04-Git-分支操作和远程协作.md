@@ -1,7 +1,7 @@
 ---
 title: 04. Git 分支操作和远程协作
-date: 2021.10.02 21:03:43
-updated: 2022-08-11 00:00:00
+date: 2021-10-02 21:03:43
+updated: 2022-08-12 12:19:00
 categories:
   - 版本管理
   - Git
@@ -68,7 +68,7 @@ git checkout-b new_branch
 
 ## 远程仓库/分支和 remote
 
-远程分支（remote branch）是对远程仓库中的分支的索引。它们是一些无法移动的本地分支；只有在 Git 进行网络交互时才会更新。远程分支就像是书签，提醒着你上次连接远程仓库时上面各分支的位置.
+远程分支（remote branch）是对远程仓库中的分支的索引。它们是一些无法移动的本地分支；只有在 Git 进行网络交互时才会更新。远程分支就像是书签，提醒着你上次连接远程仓库时上面各分支的位置。
 
 查看当前配置有哪些远程仓库详细信息 `git remote [-v | --verbose]`
 添加远程仓库 `git remote add [remote-name] [url]`
@@ -153,7 +153,7 @@ git 中存在 upstream 和 downstream，简言之，当我们把仓库A中某分
 `$ git clone <repo>`
 `$ git clone --bare <repo>` 克隆裸仓库
 `$ git clone <repo> <directory>` 克隆到指定的目录
-`$ git clone --depth 10 git_仓库_url` 只会获取最近 xx（10条提交记录的）代码，默认是 master 分支， 如果想要指定分支，可以结合 -b --single--branch 使用。
+`$ git clone --depth 10 git_仓库_url` 只会获取最近 xx（10 条提交记录的）代码，默认是 master 分支， 如果想要指定分支，可以结合 -b --single--branch 使用。
 
 其中 mvp-dev-more 是本地仓库名字。remotes/origin/mvp-dev-more 可以省略为 origin/mvp-dev-more
 
@@ -185,7 +185,7 @@ git checkout -b mvp-dev-more remotes/origin/mvp-dev-more
 
 > 在开始合并之前, 虽然不必从干净的目前启动合并，但是最好整理一下工作目录。在正常合并结束的时候, Git 会创建新版本的文件并把它们放到工作目录中。此外, Git 在操作的时候还用索引来存储文件的中间版本。
 
-如果已经修改了工作目录中的文件,或者已经通过 git add 或 git rm 修改了索引,那么版本库里就已经有了一个脏的工作目录或者索引。如果在脏的状态下开始合并, Git可能无法一次合并所有分支及工作目录或索引的的修改。
+如果已经修改了工作目录中的文件,或者已经通过 git add 或 git rm 修改了索引,那么版本库里就已经有了一个脏的工作目录或者索引。如果在脏的状态下开始合并, Git 可能无法一次合并所有分支及工作目录或索引的的修改。
 
 由于git merge操作是区分上下文的。当前分支始终是目标分支
 `$ git merge [other_branch]`
@@ -315,7 +315,7 @@ git pull
     merge = refs/heads/develop
 ```
 
-这里解读下，当 develop 分支是当前检出的分支时,使用origin作为fetch (或pull)操作过程中获取更新的默认远程版本库。此外,在 git pull 的 merge 步骤中,用远程版本库中的 refs/heads/develop 作为默认分支合并到 develop 分支。
+这里解读下，当 develop 分支是当前检出的分支时,使用 origin 作为 fetch (或pull) 操作过程中获取更新的默认远程版本库。此外,在 git pull 的 merge 步骤中,用远程版本库中的 refs/heads/develop 作为默认分支合并到 develop 分支。
 
 也可通过命令行设置：`git config branch.develop.merge refs/heads/develop`
 
@@ -399,13 +399,13 @@ nothing, current, upstream, simple, matching
 
 其用途分别为：
 
-* nothing - push操作无效，除非显式指定远程分支，例如git push origin develop（我觉得。。。可以给那些不愿学git的同事配上此项）。
+* nothing - push操作无效，除非显式指定远程分支，例如 git push origin develop（我觉得。。。可以给那些不愿学git的同事配上此项）。
 * current - push当前分支到远程同名分支，如果远程同名分支不存在则自动创建同名分支。
 * upstream - push当前分支到它的upstream分支上（这一项其实用于经常从本地分支push/pull到同一远程仓库的情景，这种模式叫做central workflow）。
-* simple - simple和upstream是相似的，只有一点不同，simple必须保证本地分支和它的远程 upstream分支同名，否则会拒绝push操作。
-* matching - push所有本地和远程两端都存在的同名分支。
+* simple - simple 和 upstream 是相似的，只有一点不同，simple必须保证本地分支和它的远程 upstream分支同名，否则会拒绝push操作。
+* matching - push 所有本地和远程两端都存在的同名分支。
 
-因此如果我们使用了git2.0之前的版本，push.default = matching，git push后则会推送当前分支代码到远程分支，而2.0之后，push.default = simple，如果没有指定当前分支的upstream分支，就会收到 fatal 提示。
+因此如果我们使用了 git2.0 之前的版本，push.default = matching，git push后则会推送当前分支代码到远程分支，而2.0之后，push.default = simple，如果没有指定当前分支的upstream分支，就会收到 fatal 提示。
 
 - - -
 
@@ -415,8 +415,8 @@ nothing, current, upstream, simple, matching
 git push --all origin
 ```
 
-上面命令表示，将所有本地分支都推送到origin主机。
-如果远程主机的版本比本地版本更新，推送时Git会报错，要求先在本地做`git pull`合并差异，然后再推送到远程主机。这时，如果你一定要推送，可以使用`--force`选项。
+上面命令表示，将所有本地分支都推送到 origin 主机。
+如果远程主机的版本比本地版本更新，推送时 Git 会报错，要求先在本地做`git pull`合并差异，然后再推送到远程主机。这时，如果你一定要推送，可以使用`--force`选项。
 
 ```sh
 git push --force origin
@@ -451,7 +451,7 @@ git tag <name>
 ```
 
 用于新建一个标签，默认为 HEAD，也可以指定一个commit id
-例如指定commit id，为后期加注标签的：`git tag v0.9 6d9ea3`
+例如指定 commit id，为后期加注标签的：`git tag v0.9 6d9ea3`
 
 创建一个含附注类型的标签 `git tag -a v1.4 -m 'my version 1.4`
 用 -a （译注：取 annotated 的首字母）指定标签名字即可
