@@ -26,7 +26,7 @@ jobs:
       - run: hexo g
       - run: git config --global user.name "giteego"
       - run: git config --global user.email "giteego@github.fun"
-      - run: git clone --depth 1 https://${{ env.USERNAME }}:${{ env.ACCESSTOKEN }}@${{ env.HOSTNAME }}/${{ env.USERNAME }}/${{ env.REPOPATH }}
+      - run: git clone --depth 1 https://${{ secrets.USERNAME }}:${{ secrets.ACCESSTOKEN }}@${{ secrets.HOSTNAME }}/${{ secrets.USERNAME }}/${{ secrets.REPOPATH }}
       - run: cd $userName/
       - run: git rm -rf .
       - run: cp -r ../public/* ./
