@@ -26,5 +26,5 @@ jobs:
       - run: hexo g
       - run: git config --global user.name "giteego"
       - run: git config --global user.email "giteego@github.fun"
-      - run: git clone --depth 1 https://${{ secrets.USERNAME }}:${{ secrets.ACCESSTOKEN }}@${{ secrets.HOSTNAME }}/${{ secrets.USERNAME }}/${{ secrets.REPOPATH }}
+      - run: git clone https://${{ secrets.USERNAME }}:${{ secrets.ACCESSTOKEN }}@${{ secrets.HOSTNAME }}/${{ secrets.USERNAME }}/${{ secrets.REPOPATH }}
       - run: cd ${{ secrets.USERNAME }} && git rm -rf . && cp -r ../public/* ./ && cp ./404/index.html ./404.html && git add . && git commit -m "committed by gitee go" && git push origin master
