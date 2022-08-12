@@ -1,6 +1,7 @@
 ---
 title: 14. Git 使用问题总结
 date: 2021.10.06 12:49:54
+updated: 2022-08-12 18:56:00
 categories:
   - 版本管理
   - Git
@@ -23,7 +24,7 @@ C:\Users\hp
 
 设置 HOME 环境变量为自己的用户目录
 
-![](https://upload-images.jianshu.io/upload_images/1662509-4bd31644e369a6d6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](/images/版本管理-Git/14-Git-使用问题总结/1.png)
 
 ## Git pull 失败
 
@@ -46,7 +47,7 @@ git config --global core.autocrlf false
 
 三种取值 true, input, false 的解释
 
-![](https://upload-images.jianshu.io/upload_images/1662509-65a7a820b77dd9b9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](/images/版本管理-Git/14-Git-使用问题总结/2.png)
 
 ## git clone 时，提示 warning: remote HEAD refers to nonexistent ref, unable to checkout.
 

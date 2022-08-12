@@ -1,6 +1,7 @@
 ---
 title: 15. GitHub 使用总结
 date: 2022.03.31 14:52:43
+updated: 2022-08-12 17:21:00
 categories:
   - 版本管理
   - Git
@@ -28,13 +29,13 @@ fork 的两种主要工作流程：
 
 1\. fork 并且更新一个仓库
 
-![fork1](http://likai.test.upcdn.net/%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86-Git/15-GitHub-%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/fork1.png)
+![fork1](/images/版本管理-Git/15-GitHub-使用总结/fork1.png)
 
 2\. 同步一个 fork
 
 Joe 和其余贡献者已经对这个项目做了一些修改，而你将在他们的修改的基础上，还要再做一些修改。在你开始之前，你最好”同步你的 fork”，以确保在最新的复制版本里工作。下面是你要做的：
 
-![fork2](http://likai.test.upcdn.net/%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86-Git/15-GitHub-%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/fork2.png)
+![fork2](/images/版本管理-Git/15-GitHub-使用总结/fork2.png)
 
 3\. 比较一下 fork 和同步工作流程的区别
 
@@ -91,7 +92,7 @@ git push origin master
 
 2\. 修改 hosts 文件，在 `C:\Windows\System32\drivers\etc\hosts` 中添加单条记录
 
-```host
+```text
 140.82.114.3 github.com
 ```
 

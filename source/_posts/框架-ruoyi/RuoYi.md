@@ -2,7 +2,6 @@
 title: Ruoyi
 date: 2022-08-01 00:00:00
 categories:
-  - 语言
   - Java
   - 框架
 tags:

@@ -307,13 +307,13 @@ https://www.jianshu.com/p/21aa61bf8b8f
 
 @Override从 jdk1.5 开始出现的，是用来标注方法重写；通常方法重写发生在继承父类，重写父类方法，或者实现接口，实现接口方法；
 
-@Override能够保证你正确重写方法，当重写方法出错时（方法名误写、漏掉参数）编译器会提示编译错误
+@Override 能够保证你正确重写方法，当重写方法出错时（方法名误写、漏掉参数）编译器会提示编译错误
 
-1.问题出在idea得jdk版本低于 1.5   ：File → Project Structure → Modules  把JDK版本改成大于 1.5 就可以了
+1.问题出在 idea 得 jdk 版本低于 1.5   ：File → Project Structure → Modules  把JDK版本改成大于 1.5 就可以了
 
 ### 让IDEA显示标题栏，而不是跟菜单栏合并
 
-新版的IDEA默认把标题栏跟菜单栏合并了，变得美观了些，但是非常不方便拖动窗口，影响生产力
+新版的 IDEA 默认把标题栏跟菜单栏合并了，变得美观了些，但是非常不方便拖动窗口，影响生产力
 解决方法：
 
 * 打开 Help -> Edit Custom VM Options…
@@ -324,23 +324,29 @@ https://www.jianshu.com/p/21aa61bf8b8f
 
 这是 IntelliJ IDEA 2018.2 的新特性。
 
-需要关闭修改的话，可以在Settings | Editor | Color Scheme | Language Defaults | Identifiers | Reassigned local variable.下关闭这个提示： 把右侧的Effects默认勾选给取消。
+需要关闭修改的话，可以在Settings | Editor | Color Scheme | Language Defaults | Identifiers | Reassigned local variable.下关闭这个提示： 把右侧的 Effects 默认勾选给取消。
 
 > 建议还是保留比较好
 
-## 遇到过的问题
-
-### IDEA提示：Boolean method ‘xxx‘ is always inverted
+### 提示：Boolean method ‘xxx‘ is always inverted
 
 提示详情：
 一个返回类型为布尔值的方法，被 IDEA 自动高亮，提示为 Boolean method 'xxx' is always inverted。并提供一个 Invert method 的解决方案。
 
+### IDEA 突然爆红，但是代码却可以正常运行
+
+原因是因为IDEA有缓存，只需要刷新一下缓存就好了
+
+解决办法：
+
+file --> Invalidate Caches /Restart. --> Invalidate and Restart
+
 ## 参考
 
 IntelliJ IDEA_ReferenceCard
-https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf
+<https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf>
 
 伯乐在线 > 代码生成利器：IDEA 强大的 Live Templates
 ttp://blog.jobbole.com/110607/
 
-JetBrains 官方发布快捷键技巧：IntelliJ IDEA 中，你完全不需要鼠标的 10 种情况 - IT之家 https://www.ithome.com/0/573/291.htm
+JetBrains 官方发布快捷键技巧：IntelliJ IDEA 中，你完全不需要鼠标的 10 种情况 - IT之家 <https://www.ithome.com/0/573/291.htm>
