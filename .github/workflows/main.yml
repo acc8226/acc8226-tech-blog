@@ -17,16 +17,16 @@ jobs:
 
       - name: npm install, build
         uses: actions/setup-node@v3
-          with:
-            node-version: ${{ env.NODE_VERSION }}
-            cache: 'npm'
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
       - run: npm install hexo-cli -g
       - run: npm ci
       - run: hexo clean
       - run: hexo g
       - run: git config --global user.name "giteego"
       - run: git config --global user.email "giteego@github.fun"
-      - run: git clone --depth 1 "https:/${{ env.USERNAME }}:${{ env.ACCESSTOKEN }}@${{ env.HOSTNAME }}/${{ env.USERNAME }}/${{ env.REPOPATH }}"
+      - run: git clone --depth 1 "https://${{ env.USERNAME }}:${{ env.ACCESSTOKEN }}@${{ env.HOSTNAME }}/${{ env.USERNAME }}/${{ env.REPOPATH }}"
       - run: cd $userName/
       - run: git rm -rf .
       - run: cp -r ../public/* ./
@@ -34,4 +34,3 @@ jobs:
       - run: git add .
       - run: git commit -m "committed by gitee go"
       - run: git push origin master
-      
