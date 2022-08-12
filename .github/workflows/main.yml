@@ -28,6 +28,7 @@ jobs:
       - run: git config --global user.email "giteego@github.fun"
       - run: git clone --depth 1 https://${{ secrets.USERNAME }}:${{ secrets.ACCESSTOKEN }}@${{ secrets.HOSTNAME }}/${{ secrets.USERNAME }}/${{ secrets.REPOPATH }}
       - run: cd ${{ secrets.USERNAME }}
+      - run: ls
       - run: git rm -rf .
       - run: cp -r ../public/* ./
       - run: cp ./404/index.html ./404.html
