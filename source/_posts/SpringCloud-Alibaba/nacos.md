@@ -18,12 +18,16 @@ Nacos: 概览 欢迎来到 Nacos 的世界！ Nacos 致力于帮助您发现、�
 alibaba/nacos: an easy-to-use dynamic service discovery, configuration and service management platform for building cloud native applications.
 <https://github.com/alibaba/nacos/>
 
-单机模式启动
+### 单机模式启动
 
 ```cd
 cd nacos-server-2.1.0\bin
 startup.cmd -m standalone
 ```
+
+### 集群模式启动
+
+默认就是
 
 ## 功能
 
