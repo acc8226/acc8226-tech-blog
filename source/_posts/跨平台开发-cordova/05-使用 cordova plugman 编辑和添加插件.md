@@ -1,6 +1,7 @@
 ---
 title: 05. 使用 cordova plugman 编辑和添加插件
 date: 2022-07-19 21:56:09
+updated: 2022.08.13 16:21:00
 categories:
   - 跨平台开发
   - cordova
