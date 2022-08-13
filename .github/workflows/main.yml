@@ -49,6 +49,7 @@ jobs:
 
   build:
     runs-on: ubuntu-latest
+    needs: [clone, generate]
     steps:
       - uses: actions/download-artifact@v3
         with:
