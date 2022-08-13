@@ -1,0 +1,69 @@
+---
+title: 02. Spring IOC 与容器的概念
+date: 2022-08-13 23:46:00
+updated: 2022-08-13 23:46:00
+categories:
+  - Spring
+tags:
+- spring
+---
+
+Spring 框架的功能被有组织的分散到约 20 个模块中。这些模块分布在核心容器，数据访问/集成，Web，AOP（面向切面的编程），植入(Instrumentation)，消息传输和测试，如下面的图所示。
+
+![](https://upload-images.jianshu.io/upload_images/1662509-8caf6ee177eccd54.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+## 核心容器模块
+
+[*核心容器*](http://docs.spring.io/spring/docs/5.0.0.M5/spring-framework-reference/html/beans.html#beans-introduction) 由以下模块组成，spring-core， spring-beans，spring-context，spring-context-support，和spring-expression （Spring表达式语言）。
+
+spring-core和spring-beans模块[提供了框架的基础功能](http://docs.spring.io/spring/docs/5.0.0.M5/spring-framework-reference/html/beans.html#beans-introduction)，包括IOC和依赖注入功能。 BeanFactory 是一个成熟的工厂模式的实现。你不再需要编程去实现单例模式，允许你把依赖关系的配置和描述从程序逻辑中解耦。
+
+[*上下文*](http://docs.spring.io/spring/docs/5.0.0.M5/spring-framework-reference/html/beans.html#context-introduction)（spring-context）模块建立在由[*Core和Beans*](http://docs.spring.io/spring/docs/5.0.0.M5/spring-framework-reference/html/beans.html#beans-introduction)模块提供的坚实的基础上：它提供一个框架式的对象访问方式，类似于一个 JNDI 注册表。上下文模块从 Beans 模块继承其功能，并添加支持国际化（使用，例如，资源集合），事件传播，资源负载，并且透明创建上下文，例如，Servlet容器。Context 模块还支持 Java EE 的功能，如 EJB，JMX 和基本的远程处理。 ApplicationContext 接口是 Context 模块的焦点。 spring-context-support 支持整合普通第三方库到Spring应用程序上下文，特别是用于高速缓存（ehcache，JCache）和调度（CommonJ，Quartz）的支持。
+
+spring-expression模块提供了强大的[*表达式语言*](http://docs.spring.io/spring/docs/5.0.0.M5/spring-framework-reference/html/expressions.html)去支持查询和操作运行时对象图。这是对 JSP 2.1 规范中规定的统一表达式语言（unified EL）的扩展。该语言支持设置和获取属性值，属性分配，方法调用，访问数组，集合和索引器的内容，逻辑和算术运算，变量命名以及从Spring的IoC容器中以名称检索对象。 它还支持列表投影和选择以及常见的列表聚合。
+
+##  AOP 和 Instrumentation 模块
+
+spring-aop 模块提供了一个符合[*AOP*](http://docs.spring.io/spring/docs/5.0.0.M5/spring-framework-reference/html/aop.html#aop-introduction)联盟（要求）的面向方面的编程实现，例如，允许您定义方法拦截器和切入点（pointcuts），以便干净地解耦应该被分离的功能实现。 使用源级元数据(source-level metadata)功能，您还可以以类似于.NET属性的方式将行为信息合并到代码中。
+
+单独的 spring-aspects 模块，提供了与 AspectJ 的集成。
+
+spring-instrument 模块提供了类植入(instrumentation)支持和类加载器的实现，可以应用在特定的应用服务器中。该 spring-instrument-tomcat 模块包含了支持 Tomcat 的植入代理。
+
+## BeanFactory 接口 和 ApplicationContext 接口
+
+在基于 Spring 的应用中,你的应用对象生存于 Spring 容器(container)中。Spring 容器负责创建对象,装配它们,配置它们并管理它们的整个生命周期,从生存到死亡。
+
+容器是 Spring 框架的核心。Spring 容器使用DI管理构成应用的组件，它会创建相互协作的组件之间的关联。毫无疑问,这些对象更简单干净，更易于理解，更易于重用并且更易于进行单元测试。
+
+Spring 容器并不是只有一个。Spring 自带了多个容器实现,可以归为两种不同的类型。在 Spring Ioc 容器的代表就是 org.springframework.beans 包中的 BeanFactory 接口，BeanFactory 接口提供了 IoC 容器最基本功能；而 org.springframework.context 包下的 ApplicationContext 接口扩展了 BeanFactory，还提供了与 Spring AOP 集成、国际化处理、事件传播及提供不同层次的 context 实现，如针对 Web 应用的 WebApplicationContext。
+
+简单说，BeanFactory 提供了 IoC 容器最基本功能，而 ApplicationContext 则增加了更多支持企业级功能支持。ApplicationContext 完全继承 BeanFactory，因而 BeanFactory 所具有的语义也适用于 ApplicationContext。
+
+* XmlBeanFactory：BeanFactory 实现，提供基本的 IoC 容器功能，可以从 classpath 或文件系统等获取资源。
+
+```java
+Resource resource = new FileSystemResource(file);
+BeanFactory beanFactory = new XmlBeanFactory(resource);
+```
+
+**使用应用上下文**
+
+Spring自带了多种类型的应用上下文。下面罗列的几个是你最有可能遇到的。
+以下都是 ApplicationContext 的实现:
+
+* AnnotationConfigApplicationcontext: 从一个或多个基于 Java 的配置类中加载 Spring 应用上下文,
+* AnnotationConfiglebApplicationcontext: 从一个或多个基于 Java 的配置类中加载 SpringWeb 应用上下文。
+* ClassPathxmApplicationcontext: 从类路径下的一个或多个 XML 配置文件中加载上下文定义,把应用上下文的定义文件作为类资源。
+* FilesystemxmApplicationContext: 从文件系统下的一个或多个 XML 配置文件中加载上下文定义
+* XmlWebApplicationcontext: 从Web应用下的一个或多个 XML 配置文件中加载上下文定义.
+
+##  bean的生命周期
+
+在传统的Java应用中, bean的生命周期很简单。使用Java关键字new进行bean实例化,然后该bean就可以使用了。一旦该bean不再被使用,则由Java自动进行垃圾回收。
+
+相比之下, Spring容器中的 bean的生命周期就显得相对复杂多了。正确理解Springbean的生命周期非常重要,因为你或许要利用Spring提供的扩展点来自定义bean的创建过程。
+
+## 参考
+
+[Spring实战（第4版）-异步社区](https://www.epubit.com/bookDetails?id=N37734)

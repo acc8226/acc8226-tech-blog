@@ -1,0 +1,225 @@
+---
+title: 01. Spring 简介
+date: 2022-08-13 23:45:00
+updated: 2022-08-13 23:45:00
+categories:
+  - Spring
+tags:
+- spring
+---
+
+## [Spring](https://spring.io/ ) 框架简介
+
+在 Java 近 20 年的历史中，它经历过很好的时代，也经历过饱受诟病的时代。尽管有很多粗糙的地方，如 applet、企业级JavaBean（Enterprise JavaBean，EJB）、Java 数据对象（Java Data Object，JDO）以及无数的日志框架，但是作为一个平台，Java 的历史是丰富多彩的，有很多的企业级软件都是基于这个平台构建的。Spring是 Java 历史中很重要的组成部分。
+
+在诞生之初，创建 Spring 的主要目的是用来替代更加重量级的企业级 Java 技术，尤其是 EJB。相对于 EJB 来说，Spring 提供了更加轻量级和简单的编程模型。它增强了简单老式Java对象（PlainOldJavaobject，POJO）的功能，使其具备了之前只有EJB和其他企业级Java规范才具有的功能。
+
+Spring 框架是一个 Java 平台，为开发 Java 应用程序提供全面的基础设施支持。 Spring 负责处理基础设施，这样您就可以专注于应用程序。
+
+## Spring的发展历程
+
+最初由 Rod Johnson 所创立的开发框架,用于简化企业级 Java 应用的开发。
+
+**在没有Spring之前, Java企业级开发的状况:**
+
+* 依赖于老版本的EJB;
+* 严重依赖于应用服务器;
+* 开发和调试非常困难。
+
+**Spring解决了什么问题?**
+
+* Bean 工厂,实现控制反转,不再需要进行依赖查找;
+* Bean的生命周期管理;
+* 面向切面的编程范式;
+* 在应用服务器之外使用 Java EE 的诸多功能;
+* 便利的工具类和模板类;
+* 以统一的开发模式解决各个领域的开发问题。
+
+## 依赖注入和控制反转
+
+Spring Framework 控制反转组件解决了这个问题，它提供了一种正式的方法，可以将不同的组件组合成一个完全可用的应用程序。 Spring 框架将形式化的设计模式编码为一流对象，您可以将其集成到自己的应用程序中。 许多组织和机构以这种方式使用 Spring 框架来设计健壮的、可维护的应用程序。
+
+**框架模块**
+
+The Spring Framework 由大约 20 个模块组成的特性组成. 这些模块分为 Core Container, Data Access/Integration, Web, AOP (Aspect Oriented Programming), Instrumentation, Messaging, and Test, as shown in the following diagram.
+
+**核心容器**
+核心容器由 Spring-Core、 Spring-beans、 Spring-context、 Spring-context-support 和 Spring-Expression (Spring Expression Language)模块组成。
+
+### 下载地址:
+
+springframework 的 jar 包下载地址
+https://repo.spring.io/ui/native/release/org/springframework/spring/
+
+举例: 4.3.30 版本下载地址
+https://repo.spring.io/ui/api/v1/download?repoKey=release&path=org%252Fspringframework%252Fspring%252F4.3.30.RELEASE%252Fspring-framework-4.3.30.RELEASE-dist.zip
+
+> 包含 src 源码 和 doc 文档。若是开发项目，则更推荐使用 maven 或 gradle。而非传统的导入 Jar 包的“笨”方法。
+
+**spring framework 对 jdk 不同版本的要求**
+
+* Spring 3 jdk 5 以上
+* Spring 4 jdk 6 以上
+* Spring 5 jdk 8 以上
+
+目前企业使用一般都是 Spring 4 以上居多。
+
+## 环境搭建
+
+推荐IDE 为 IDEA 或者 Spring Tools 4 for Eclipse（https://spring.io/tools）
+
+## Spring 的 HelloWord
+
+注：以下都是在终端 mac 上使用 iTerm 2 运行正常的代码，所以这里不借助 IDE, 直接使用终端。
+
+1. 环境准备
+
+* JDK 1.8
+* Maven 3.6.1
+
+2. 用Maven创建项目
+
+创建maven-archetype-quickstart项目
+
+```bash
+mvn archetype:generate \
+-DgroupId=abc.lei.le \
+-DartifactId=SpringExample \
+-DarchetypeArtifactId=maven-archetype-quickstart
+```
+
+3. 复制全量 pom.xml，这里已经含有了 spring 相关依赖。
+
+```xml
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>abc.lei.le</groupId>
+  <artifactId>SpringExample</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>SpringExample</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <spring.version>4.3.30.RELEASE</spring.version>
+  </properties>
+
+  <dependencies>
+	<dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+	  <version>${spring.version}</version>
+	</dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>
+```
+
+4. 创建一个 Spring Bean
+
+```java
+package abc.lei.le;
+
+public class HelloWorld {
+
+  private String name;
+
+  public void setName(String n){
+    this.name = n;
+  }
+
+  public void printHello() {
+    System.out.println("say: " + name);
+  }
+}
+```
+
+5. 创建 Spring Bean的配置文件，
+
+新建文件位于 src/main/resources下的 SpringBeans.xml。这里为了简单演示，使用最原始的 xml 配置，而非 Java 配置形式。
+
+```xml
+<?xml version = "1.0" encoding = "UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="helloBean" class="abc.lei.le.HelloWorld">
+		<property name="name" value="你好 Spring 呀" />
+	</bean>
+</beans>
+```
+
+6. 创建测试App
+
+```java
+package abc.lei.le;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class App {
+
+  public static void main(String[] args){
+	ApplicationContext context = new ClassPathXmlApplicationContext("SpringBeans.xml");
+    HelloWorld obj = (HelloWorld) context.getBean("helloBean");
+    obj.printHello();
+  }
+}
+```
+
+7. 运行代码
+```sh
+mvn clean && mvn compile && mvn exec:java -Dexec.mainClass="abc.lei.le.App"
+```
+
+8. 总结
+> 通过查看 dependency:tree, 反向得知了导入一个 spring-context 已足矣。
+```
+mvn dependency:tree
+
+[INFO] abc.lei.le:SpringExample:jar:1.0-SNAPSHOT
+[INFO] +- org.springframework:spring-context:jar:4.3.30.RELEASE:compile
+[INFO] |  +- org.springframework:spring-aop:jar:4.3.30.RELEASE:compile
+[INFO] |  +- org.springframework:spring-beans:jar:4.3.30.RELEASE:compile
+[INFO] |  +- org.springframework:spring-core:jar:4.3.30.RELEASE:compile
+[INFO] |  |  \- commons-logging:commons-logging:jar:1.2:compile
+[INFO] |  \- org.springframework:spring-expression:jar:4.3.30.RELEASE:compile
+[INFO] \- junit:junit:jar:3.8.1:test
+```
+
+## 遇到的问题
+
+**问题 ：通配符的匹配很全面, 但无法找到元素 ‘context:component-scan‘**
+
+解答：建议导入全量的 xml 配置。
+```xml
+<?xml version = "1.0" encoding = "UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+	http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd
+    ">
+    ..................
+</beans>
+```
+
+## 参考
+
+Spring – 个人小站-记录编程知识 https://www.jinnianshizhunian.vip/category/java/spring
+
+《Spring Framework 5 中文文档》 - 书栈网 · BookStack
+https://www.bookstack.cn/books/spring-5-framework-doc

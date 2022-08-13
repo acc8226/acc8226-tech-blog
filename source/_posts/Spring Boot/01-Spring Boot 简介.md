@@ -1,0 +1,321 @@
+---
+title: 01. Spring Boot 简介
+date: 2022-08-13 23:47:00
+updated: 2022-08-13 23:47:00
+categories:
+  - Spring Boot
+tags:
+- spring boot
+---
+
+## Spring Boot 介绍
+
+官网地址
+https://spring.io/projects/spring-boot
+
+Spring Boot 2.3.12.RELEASE API 参考
+https://docs.spring.io/spring-boot/docs/2.3.12.RELEASE/api/
+
+Spring Boot 参考文档
+https://docs.spring.io/spring-boot/docs/2.3.12.RELEASE/reference/html/
+
+**优点**
+
+* 快速创建独立运行 spring 项目和主流框架集成
+* 嵌入式 servlet 容器, 应用无需打成 war 包
+* starters 自动依赖与版本控制
+* 大量的自动配置, 简化开发, 也可修改默认值
+* 无需配置 xml, 无代码生成, 开箱即用
+* 准生产环境的运行时应用监控
+* 与云计算的天然集成
+
+**Spring 主要目标**
+
+* 为所有 Spring 开发提供从根本上更快且可广泛访问的入门体验。
+* 开箱即用，但随着需求开始偏离默认值而迅速摆脱困境。
+* 提供大型项目（例如嵌入式服务器，安全性，度量标准，运行状况检查和外部化配置）通用的一系列非功能性功能。
+* 没有代码生成，也不需要 XML 配置。
+
+环境要求
+
+* IDEA https://www.jetbrains.com/idea/download/
+* 根据实际 spring 版本，推荐 JDK 8  及以上
+* Maven or Gradle 构建工具
+
+## 生成项目
+
+### Spring Initializr 在线生成
+
+* Spring Initializr  https://start.spring.io/
+* Aliyun Java Initializr https://start.aliyun.com/bootstrap.html
+* 也可通过分享过的配置文件一键进入
+
+https://start.spring.io/#!type=maven-project&language=java&platformVersion=2.5.13&packaging=jar&jvmVersion=1.8&groupId=com.example&artifactId=demo&name=demo&description=Demo%20project%20for%20Spring%20Boot&packageName=com.example.demo
+
+https://start.aliyun.com/bootstrap.html/#!type=maven-project&language=java&architecture=none&platformVersion=2.4.1&packaging=jar&jvmVersion=1.8&groupId=com.example&artifactId=demo&name=demo&description=Demo%20project%20for%20Spring%20Boot&packageName=com.example.demo
+
+## pom 文件分析
+
+方式一：通过指定 parent 父项目进行创建。
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.5.13</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.example</groupId>
+	<artifactId>demo</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>demo</name>
+	<description>Demo project for Spring Boot</description>
+	<properties>
+		<java.version>1.8</java.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
+```
+
+方式二：通过 dependencyManagement 进行指定。
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.example</groupId>
+    <artifactId>demo</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>demo</name>
+    <description>Demo project for Spring Boot</description>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <spring-boot.version>2.4.1</spring-boot.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.4.1</version>
+                <configuration>
+                    <mainClass>com.example.demo.DemoApplication</mainClass>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>repackage</id>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
+```
+
+
+
+
+1. 启动引导 Spring
+
+ReadingListApplication 在 Spring Boot 应用程序里有两个作用：配置和启动引导。首先，这是主要的 Spring 配置类。虽然Spring Boot的自动配置免除了很多Spring配置，但你还需要进行少量配置来启用自动配置。
+
+
+```java
+package readinglist;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+// 开启组件扫描和自动配置
+@SpringBootApplication
+public class ReadingListApplication {
+
+  public static void main(String[] args) {
+    // 负责启动引导应用程序
+    SpringApplication.run(ReadingListApplication.class, args);
+  }
+}
+```
+
+`@SpringBootApplication`开启了Spring的组件扫描和Spring Boot的自动配置功能。实际上，@SpringBootApplication将三个有用的注解组合在了一起。
+
+Spring的`@Configuration`：标明该类使用Spring基于Java的配置。虽然本书不会写太多配置，但我们会更倾向于使用基于Java而不是XML的配置。
+
+Spring的`@ComponentScan`：启用组件扫描，这样你写的Web控制器类和其他组件才能被自动发现并注册为Spring应用程序上下文里的Bean。本章稍后会写一个简单的Spring MVC控制器，使用@Controller进行注解，这样组件扫描才能找到它。
+
+Spring Boot的`@EnableAutoConfiguration`：这个不起眼的小注解也可以称为`@Abracadabra2`，就是这一行配置开启了Spring Boot自动配置的魔力，让你不用再写成篇的配置了。
+
+2. 测试Spring Boot应用程序
+Initializr还提供了一个测试类的骨架，可以基于它为你的应用程序编写测试。但ReadingListApplicationTests 不止是个用于测试的占位符，它还是一个例子，告诉你如何为Spring Boot应用程序编写测试。
+
+```java
+package readinglist;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.boot.test.SpringApplicationConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.context.web.WebAppConfiguration;
+
+import readinglist.ReadingListApplication;
+
+@RunWith(SpringJUnit4ClassRunner.class)
+// 通过Spring Boot加载上下文
+@SpringApplicationConfiguration(
+         classes = ReadingListApplication.class)
+@WebAppConfiguration
+
+public class ReadingListApplicationTests {
+
+  @Test
+  public void contextLoads() {    // 测试加载的上下文
+  }
+
+}
+```
+
+3. 配置应用程序属性
+你完全不用告诉 Spring Boot 为你加载`application.properties`，只要它存在就会被加载，Spring 和应用程序代码都能获取其中的属性。
+
+## 额外知识
+
+Spring MVC 中将 `@PathVariable`的使用
+```java
+@RequestMapping(value="/{reader}", method=RequestMethod.GET)
+  public String readersBooks(
+      @PathVariable("reader") String reader,
+      Model model) {
+          ...
+      }
+}
+```
+
+### 自动配置微调
+
+`$ java -jar readinglist-0.0.1-SNAPSHOT.jar --server.port=8000`
+
+默认情况下，Spring Boot会用Logback（[http://logback.qos.ch](http://logback.qos.ch/)）来记录日志，并启用`INFO`级别输出到控制台。
+
+### Spring Boot应用程序有多种设置途径
+
+Spring Boot能从多种属性源获得属性，包括如下几处。
+
+(1) 命令行参数
+(2) java:comp/env 里的JNDI属性
+(3) JVM 系统属性
+(4) 操作系统环境变量
+(5) 随机生成的带 random.* 前缀的属性（在设置其他属性时，可以引用它们，比如${random.long}）
+(6) 应用程序以外的 application.properties 或者 appliaction.yml 文件
+(7) 打包在应用程序内的 application.properties 或者 appliaction.yml 文件
+(8) 通过 @PropertySource 标注的属性源
+(9) 默认属性
+
+这个列表按照优先级排序，也就是说，任何在高优先级属性源里设置的属性都会覆盖低优先级的相同属性。例如，命令行参数会覆盖其他属性源里的属性。
+
+application.properties 和 application.yml文件能放在以下四个位置。
+
+(1) 外置，在相对于应用程序运行目录的/config子目录里。
+(2) 外置，在应用程序运行的目录里。
+(3) 内置，在config 包内。
+(4) 内置，在Classpath 根目录。
+
+同样，这个列表按照优先级排序。也就是说，/config子目录里的application.properties会覆盖应用程序Classpath里的application.properties中的相同属性。
+
+此外，如果你在同一优先级位置同时有application.properties和application.yml，那么application.yml里的属性会覆盖application.properties里的属性。
+
+### Spring Boot会为错误视图提供如下错误属性
+
+timestamp：错误发生的时间。
+status：HTTP状态码。
+error：错误原因。
+exception：异常的类名。
+message：异常消息（如果这个错误是由异常引起的）。
+errors：BindingResult异常里的各种错误（如果这个错误是由异常引起的）。
+trace：异常跟踪信息（如果这个错误是由异常引起的）。
+path：错误发生时请求的URL路径。
+
+## 构建成品后运行项目
+
+一键启用
+```java
+mvn package
+# 可以直接前台运行
+java -jar target/springbootTest-0.0.1-SNAPSHOT.jar
+
+# 或者后端启动
+nohup java -jar 自己的springboot项目.jar >mylog.log 2>&1 &
+```
+
+## 参考
+
+README - 《Spring Boot 中文文档》 - 书栈网 · BookStack
+https://www.bookstack.cn/read/springboot/README.md

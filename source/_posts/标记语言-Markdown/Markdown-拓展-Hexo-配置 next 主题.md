@@ -172,6 +172,20 @@ codeblock:
     enable: true
 ```
 
+### 创建 sitemap 地图并提交百度搜索站点
+
+站点地图就是把你的博客中的相关博文链接都归纳到 sitemap.xml 这个文件中，把 sitemap.xml 提交到 Google 搜索站点，Bing 搜索站点或 Baidu 搜索站点，那么你的博客的网站架构都能被这些搜索站点所解析出来，这样就更容易被这些搜索站点的爬虫爬取出来，更容易使你的博客中的相关信息被搜索到。
+
+npm install hexo-generator-sitemap --save
+
+登录百度资源管理平台，依次点击 用户中心->站点管理->添加网站（网站会随时更新，路径可能不同，只要找到添加网站的位置就可以）。
+
+```yml
+# Baidu Webmaster tools verification.
+# See: https://ziyuan.baidu.com/site
+baidu_site_verification: code-1A4lv8uB0c
+```
+
 ## 添加页面
 
 ### Adding «Tags» Page
