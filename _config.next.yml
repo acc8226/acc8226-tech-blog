@@ -45,11 +45,7 @@ menu:
   categories: /categories/ || fa fa-th
   archives: /archives/ || fa fa-archive
   about: /about/ || fa fa-user
-  #home: / || fa fa-home
-  #about: /about/ || fa fa-user
   #tags: /tags/ || fa fa-tags
-  #categories: /categories/ || fa fa-th
-  #archives: /archives/ || fa fa-archive
   #schedule: /schedule/ || fa fa-calendar
   #sitemap: /sitemap.xml || fa fa-sitemap
   #commonweal: /404/ || fa fa-heartbeat
@@ -164,7 +160,6 @@ local_search:
   # Preload the search data when the page loads.
   preload: false
 
-
 reward:
   #wechatpay: /images/wechatpay.png
   #alipay: /images/alipay.png
@@ -202,15 +197,6 @@ post_navigation: left
 # Custom Page Settings
 # See: https://theme-next.js.org/docs/theme-settings/custom-pages
 # ---------------------------------------------------------------
-
-# TagCloud settings for tags page.
-tagcloud:
-  min: 12 # Minimum font size in px
-  max: 30 # Maximum font size in px
-  amount: 200 # Total amount of tags
-  orderby: name # Order of tags
-  order: 1 # Sort order
-
 
 # Mermaid tag
 mermaid:
@@ -262,8 +248,6 @@ codeblock:
   # Add copy button on codeblock
   copy_button:
     enable: true
-    # Available values: default | flat | mac
-    style:
 
 back2top:
   enable: true
@@ -275,22 +259,10 @@ back2top:
 # Reading progress bar
 reading_progress:
   enable: false
-  # Available values: left | right
-  start_at: left
-  # Available values: top | bottom
-  position: top
-  reversed: false
-  color: "#37c6c0"
-  height: 3px
 
 # Bookmark Support
 bookmark:
   enable: false
-  # Customize the color of the bookmark.
-  color: "#222"
-  # If auto, save the reading progress when closing the page or clicking the bookmark-icon.
-  # If manual, only save it by clicking the bookmark-icon.
-  save: auto
 
 # `Follow me on GitHub` banner in the top-right corner.
 github_banner:

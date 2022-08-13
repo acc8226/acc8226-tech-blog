@@ -1,5 +1,6 @@
 ---
-title: vim-简单使用1
+title: vim【1】简单使用
+date: 2020.04.05 00:46:21
 categories: 文本编辑器-使用
 ---
 

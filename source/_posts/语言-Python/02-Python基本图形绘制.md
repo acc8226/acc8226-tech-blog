@@ -1,5 +1,5 @@
 ---
-title: 02-Python 基本图形绘制
+title: 02. Python 基本图形绘制
 categories:
   - 语言
   - Python

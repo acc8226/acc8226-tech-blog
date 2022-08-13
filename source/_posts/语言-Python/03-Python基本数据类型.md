@@ -1,5 +1,5 @@
 ---
-title: 03-Python 基本数据类型
+title: 03. Python 基本数据类型
 categories:
   - 语言
   - Python

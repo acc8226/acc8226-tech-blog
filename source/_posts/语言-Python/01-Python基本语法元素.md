@@ -1,5 +1,5 @@
 ---
-title: 01-Python 基本语法元素
+title: 01. Python 基本语法元素
 categories:
   - 语言
   - Python
