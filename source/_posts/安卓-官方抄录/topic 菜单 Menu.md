@@ -74,7 +74,7 @@ public boolean onCreateOptionsMenu(Menu menu) {
 }
 ```
 
-如果菜单按钮与Fragment关联，则确保在Fragment的 **`onCreate`** 方法中调用 **`setHasOptionsMenu(true)`**。
+如果菜单按钮与 Fragment 关联，则确保在 Fragment 的 **`onCreate`** 方法中调用 **`setHasOptionsMenu(true)`**。
 
 此外，您还可以使用 add() 添加菜单项，并使用 findItem() 检索项目，以便使用 MenuItem API 修改其属性。
 如果您开发的应用适用于 Android 2.3.x 及更低版本，则当用户首次打开选项菜单时，系统会调用 onCreateOptionsMenu() 来创建该菜单。 如果您开发的应用适用于 Android 3.0 及更高版本，则系统将在启动 Activity 时调用 onCreateOptionsMenu()，以便向应用栏显示项目。

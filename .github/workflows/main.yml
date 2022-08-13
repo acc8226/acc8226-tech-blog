@@ -1,33 +1,74 @@
-name: kaiLee DiaoDiaoDiao
-
+name: kaiLee DiaoDiaoDiao Action
 on:
   push:
     branches:
       - "master"
   workflow_dispatch:
-
 env:
   NODE_VERSION: '16' # set this to the node version to use
 
 jobs:
-  build:
+  clone:
+    runs-on: ubuntu-latest
+    steps:
+      - name: RRRUN
+        run: |
+          git clone https://${{ secrets.USERNAME }}:${{ secrets.ACCESSTOKEN }}@${{ secrets.HOSTNAME }}/${{ secrets.USERNAME }}/${{ secrets.REPOPATH }}
+          cd ${{ secrets.USERNAME }}
+          git rm -rf .
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: my-artifact1
+          path: ${{ secrets.USERNAME }}
+
+  generate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
 
-      - name: npm install, build
+      - name: Check out repository code
         uses: actions/setup-node@v3
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: 'npm'
-      - run: npm install hexo-cli -g
-      - run: npm ci
-      - run: hexo clean
-      - run: hexo g
-      - run: git config --global user.name "giteego"
-      - run: git config --global user.email "giteego@github.fun"
-      - run: git clone https://${{ secrets.USERNAME }}:${{ secrets.ACCESSTOKEN }}@${{ secrets.HOSTNAME }}/${{ secrets.USERNAME }}/${{ secrets.REPOPATH }}
-      - run: cd ${{ secrets.USERNAME }} && git rm -rf . && cp -r ../public/* ./ && cp ./404/index.html ./404.html && git add . && git commit -m "committed by gitee go" && git push origin master
+
+      - name: RRRUN
+        run: |
+          # 哈哈
+          npm install hexo-cli -g
+          npm ci
+          hexo clean
+          hexo g
+          cp ./public/404/index.html ./public/404.html
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: my-artifact2
+          path: ./public/
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v3
+        with:
+          name: my-artifact1
+          path: ${{ secrets.USERNAME }}
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: my-artifact2
+          path: ./public/
+
+      - name: RRRUN
+        run: |
+          git config --global user.name "giteego"
+          git config --global user.email "giteego@github.fun"
+          cd ${{ secrets.USERNAME }}
+          cp -r ../public/* ./
+          git add .
+          git commit -m "committed by gitee go"
+          git push origin master
 
       - name: Build Gitee Pages
         uses: yanglbme/gitee-pages-action@main
