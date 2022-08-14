@@ -44,6 +44,8 @@ spring:
     active: dev, hsqldb
 ```
 
+<!-- more -->
+
 以这种方式设置的值会被 System 属性(spring.profiles.active)或环境变量(SPRING_PROFILES_ACTIVE)设置替换，但不会被 SpringApplicationBuilder.profiles ()方法替换。因此，可以使用后一个 Java API  增加配置文件而不改变缺省值。
 
 ## 设置默认 Profile Name
