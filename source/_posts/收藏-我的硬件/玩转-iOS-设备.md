@@ -70,4 +70,4 @@ categories:
 
 截图以留恋
 
-![截图留恋](./imgs/%E7%8E%A9%E8%BD%AC-iOS-%E8%AE%BE%E5%A4%87/1662509-0daad5d880393ba9.png)
+![截图留恋](/images/收藏-我的硬件/玩转-iOS-设备/1662509-0daad5d880393ba9.png)
