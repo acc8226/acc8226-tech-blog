@@ -27,7 +27,7 @@ jobs:
         run: |
           npm install hexo-cli -g
           npm ci
-          hexo g
+          hexo g --silent
           cp ./public/404/index.html ./public/404.html
 
       - name: Push to Gitee

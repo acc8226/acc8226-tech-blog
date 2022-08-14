@@ -1,6 +1,7 @@
 ---
-title: 玩转-电子阅读器-Kindle
+title: 玩转-电子阅读器 Kindle
 date: 2017-04-17 18:06:56
+updated: 2022-08-14 21:32:00
 categories:
   - 收藏
   - 我的硬件
