@@ -41,6 +41,11 @@ Joe 和其余贡献者已经对这个项目做了一些修改，而你将在他�
 
 当你最初 fork 一个仓库的时候，信息的流向是从 Joe 的仓库到你的仓库，然后再到你本地计算机。但是最初的过程之后，信息的流向是从 Joe 的仓库到你的本地计算机，之后再到你的仓库。
 
+## GitHub Actions 入门教程
+
+GitHub Actions 入门教程 - 阮一峰的网络日志
+<https://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html>
+
 ## 我对 fork 的理解
 
 ### git fork 项目更新原则

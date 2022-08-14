@@ -1,9 +1,3 @@
-# ===============================================================
-# It's recommended to use Alternate Theme Config to configure NexT
-# Modifying this file may result in merge conflict
-# See: https://theme-next.js.org/docs/getting-started/configuration
-# ===============================================================
-
 # ---------------------------------------------------------------
 # Theme Core Configuration Settings
 # See: https://theme-next.js.org/docs/theme-settings/
@@ -90,7 +84,7 @@ site_state: true
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
   GitHub: https://github.com/acc8226 || fab fa-github
-  # E-Mail: mailto:acc8226@qq.com || fa fa-envelope
+  E-Mail: mailto:acc8226@qq.com || fa fa-envelope
   RSS: /atom.xml || fa fa-rss
 
 social_icons:
@@ -118,7 +112,7 @@ toc:
   # If true, all level of TOC in a post will be displayed, rather than the activated part of it.
   expand_all: false
   # Maximum heading depth of generated toc.
-  max_depth: 3
+  max_depth: 4
 
 # ---------------------------------------------------------------
 # Footer Settings
@@ -285,43 +279,6 @@ github_banner:
 font:
   enable: false
 
-  # Uri of fonts host, e.g. https://fonts.googleapis.com (Default).
-  host:
-
-  # Font options:
-  # `external: true` will load this font family from `host` above.
-  # `family: Times New Roman`. Without any quotes.
-  # `size: x.x`. Use `em` as unit. Default: 1 (16px)
-
-  # Global font settings used for all elements inside <body>.
-  global:
-    external: true
-    family: Lato
-    size:
-
-  # Font settings for site title (.site-title).
-  title:
-    external: true
-    family:
-    size:
-
-  # Font settings for headlines (<h1> to <h6>).
-  headings:
-    external: true
-    family:
-    size:
-
-  # Font settings for posts (.post-body).
-  posts:
-    external: true
-    family:
-
-  # Font settings for <code> and code blocks.
-  codes:
-    external: true
-    family:
-
-
 # ---------------------------------------------------------------
 # SEO Settings
 # See: https://theme-next.js.org/docs/theme-settings/seo
@@ -467,27 +424,6 @@ utterances:
   issue_term: pathname
   # Available values: github-light | github-dark | preferred-color-scheme | github-dark-orange | icy-dark | dark-blue | photon-dark | boxy-light
   theme: github-light
-
-# Isso
-# For more information: https://posativ.org/isso/
-isso: # <data_isso>
-
-
-# ---------------------------------------------------------------
-# Post Widgets & Content Sharing Services
-# See: https://theme-next.js.org/docs/third-party-services/post-widgets
-# ---------------------------------------------------------------
-
-# Star rating support to each article.
-# To get your ID visit https://widgetpack.com
-rating:
-  enable: false
-  id:     # <app_id>
-  color:  "#fc6423"
-
-# AddThis Share. See: https://www.addthis.com
-# Go to https://www.addthis.com/dashboard to customize your tools.
-add_this_id:
 
 # ---------------------------------------------------------------
 # Statistics and Analytics
