@@ -91,7 +91,7 @@ var arr = [];
 arr.length = arrayLength;
 ```
 
-这里倒是推荐使用第一种.
+这里倒是推荐使用第一种。
 
 遍历数组(interating over array)
 

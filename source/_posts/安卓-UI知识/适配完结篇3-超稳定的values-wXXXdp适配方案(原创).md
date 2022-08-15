@@ -1,5 +1,5 @@
 ---
-title: 适配完结篇三-超稳定的 values-wXXXdp 适配方案(原创)
+title: 适配完结篇3-超稳定的 values-wXXXdp 适配方案(原创)
 date: 2018.06.24 20:37:44
 categories:
   - 安卓

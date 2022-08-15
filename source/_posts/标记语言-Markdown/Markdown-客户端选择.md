@@ -1,6 +1,6 @@
 ---
 title: Markdown-客户端选择
-date: 2020.02.06 11:58:16
+date: 2020-02-06 11:58:16
 updated: 2022-08-14 22:54:00
 categories:
   - 标记语言
