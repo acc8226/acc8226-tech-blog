@@ -1,6 +1,6 @@
 ---
 title: Markdown 之MathJax 和 LaTeX 数学公式语法
-date: 2020.05.03 14:17:04
+date: 2020-05-03 14:17:04
 categories:
   - 标记语言
   - Markdown
@@ -72,7 +72,7 @@ $$\pi$$
 $$\lbrace a*b \rbrace$$
 
 **求和与积分**
-\sum用来表示求和符号，其下标表示求和下限，上标表示上限。如
+\sum 用来表示求和符号，其下标表示求和下限，上标表示上限。如
 
 ```math
 \sum_1^n
@@ -80,7 +80,7 @@ $$\lbrace a*b \rbrace$$
 
 $$\sum_1^n$$
 
-\int用来表示积分符号，同样地，其上下标表示积分的上下限。如
+\int 用来表示积分符号，同样地，其上下标表示积分的上下限。如
 
 ```math
 \int_1^\infty
@@ -89,7 +89,7 @@ $$\sum_1^n$$
 $$\int_1^\infty$$
 
 分式
-第一种，使用\frac ab , \frac作用于其后的两个组a , b ，结果为𝑎𝑏。如果你的分子或分母不是单个字符，请使用{...}来分组。
+第一种，使用 \frac ab , \frac作用于其后的两个组 a , b，结果为 𝑎𝑏。如果你的分子或分母不是单个字符，请使用{...}来分组。
 
 ```math
 \frac ab
@@ -103,7 +103,7 @@ $$\frac ab$$
 
 $$\frac a{x+1}$$
 
-第二种，使用\over来分隔一个组的前后两部分，如 {a+1 \over b+1}
+第二种，使用 \over 来分隔一个组的前后两部分，如 {a+1 \over b+1}
 
 ```math
 {a+1 \over b+1}
@@ -163,7 +163,7 @@ x = {-b \pm \sqrt{b^2-4ac} \over 2a}
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
 
 数列
- \ldots与\cdots，其区别是dots的位置不同，ldots位置稍低，cdots位置居中。
+ \ldots与\cdots，其区别是 dots 的位置不同，ldots 位置稍低，cdots 位置居中。
 
 ```math
 a_1 + a_2 + \cdots
@@ -180,7 +180,7 @@ $$a_1,\,a_2, \ldots, a_n$$
 **矩阵**
 使用‘三个点’
 
-```
+```text
 \begin{matrix}...\end{matrix}
 ```
 
@@ -193,7 +193,7 @@ $$\begin{matrix}...\end{matrix}$$来表示矩阵，在\begin与\end之间加入�
 $$\begin{matrix} 1 & x & x^2 \\ 1 & y & y^2 \\ 1 & z & z^2 \end{matrix}$$
 
 加括号
-如果要对矩阵加括号，可以使用特殊的matrix，即替换\begin{matrix}...\end{matrix}中的matrix为pmatrix , bmatrix , Bmatrix , vmatrix , Vmatrix.
+如果要对矩阵加括号，可以使用特殊的matrix，即替换 \begin{matrix}...\end{matrix}中的matrix 为 pmatrix , bmatrix , Bmatrix , vmatrix , Vmatrix.
 
 省略元素
 可以使用\cdots ⋯ \ddots ⋱ \vdots ⋮ 来省略矩阵中的元素，如：
@@ -231,7 +231,7 @@ StackEdit 支持`$$...$$`写法
 
 ## 颜色支持
 
-指定字体的方式很简单,我们只需要在数学公式中以`{\字体{Samplety}}` 的形式使用上述字体标记,就可以将"Sample"这几个字符设置为指定字体了。
+指定字体的方式很简单,我们只需要在数学公式中以`{\字体{Samplety}}` 的形式使用上述字体标记,就可以将 "Sample" 这几个字符设置为指定字体了。
 
 除此之外,在必要情况下,我们还可以使用\color标记来指定这些字体的颜色,该标记的第一个参数为颜色的名称,第二个参数是被指定颜色的字符,譬如 `$\color{black}{Sample}$`
 

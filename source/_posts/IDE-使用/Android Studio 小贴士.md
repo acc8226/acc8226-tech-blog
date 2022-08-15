@@ -1,5 +1,6 @@
 ---
 title: Android Studio 小贴士
+date: 2017.01.03 13:13:06
 categories: IDE-使用
 ---
 

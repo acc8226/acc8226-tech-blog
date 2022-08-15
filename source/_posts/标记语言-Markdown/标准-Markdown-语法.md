@@ -1,6 +1,6 @@
 ---
 title: 标准-Markdown 语法
-date: 2017.01.01 10:50:28
+date: 2017-01-01 10:50:28
 categories:
   - 标记语言
   - Markdown

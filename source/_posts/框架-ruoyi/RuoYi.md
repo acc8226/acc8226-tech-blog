@@ -85,7 +85,7 @@ Maven >= 3.0
 #### 运行系统
 
 1、导入项目。
-2、创建数据库ry并导入数据脚本 ry_2021xxxx.sql，quartz.sql
+2、创建数据库 ry 并导入数据脚本 ry_2021xxxx.sql，quartz.sql
 3、打开项目运行 com.ruoyi.RuoYiApplication.java
 
 #### 必要配置
@@ -111,9 +111,9 @@ sentinel >= 1.6.0
 
 ##### 后端要点
 
-创建数据库ry-cloud并导入数据脚本ry_2021xxxx.sql（必须），quartz.sql（可选）
+创建数据库 ry-cloud 并导入数据脚本 ry_2021xxxx.sql（必须），quartz.sql（可选）
 
-创建数据库ry-config并导入数据脚本ry_config_2021xxxx.sql（必须）
+创建数据库 ry-config 并导入数据脚本 ry_config_2021xxxx.sql（必须）
 
 配置nacos持久化，修改conf/application.properties文件，增加支持mysql数据源配置
 

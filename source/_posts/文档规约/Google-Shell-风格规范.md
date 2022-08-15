@@ -1,6 +1,6 @@
 ---
 title: Google-Shell 风格规范
-date: 2021.12.24 21:29:26
+date: 2021-12-24 21:29:26
 categories: 文档规约
 ---
 

@@ -8,7 +8,7 @@ tags:
 - android
 ---
 
-http://developer.android.youdaxue.com/guide/topics/resources/string-resource.html
+<http://developer.android.youdaxue.com/guide/topics/resources/string-resource.html>
 
 ## 字符串资源
 

@@ -1,5 +1,6 @@
 ---
 title: Eclipse-常用插件
+date: 2017.06.08 13:32:55
 categories: IDE-使用
 ---
 
@@ -13,9 +14,11 @@ categories: IDE-使用
 
 ## 使用方法
 
-1. 新建所需图, 一般放到所在项目根目录
+1\. 新建所需图, 一般放到所在项目根目录
+
 ![](http://upload-images.jianshu.io/upload_images/1662509-1762de3d71e25490.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-2. 把关联的类拖进生成的 mg* 文件中，将自动生成关联关系.
+
+2\. 把关联的类拖进生成的 mg* 文件中，将自动生成关联关系.
 
 ## 打开文件/文件夹位置插件
 
@@ -26,3 +29,7 @@ On Mac OS X, you can find the "plugins/dropins" folder by right click on "/Appli
 Restart Eclipse workbench.
 
 To uninstall, just remove the jar.
+
+## 下载地址
+
+<https://www.jianguoyun.com/p/DSy7_58Q2o7zBxjb-NAEIAA>

@@ -82,7 +82,7 @@ mojombo/github-flavored-markdown#1
 
 ## Username @mentions
 
-输入一个`@`符号，后面跟着一个用户名，会通知那个人来查看评论。 这被称为“@mention” ，因为你提到的是个人。 你也可以@提及组织中的团队。
+输入一个 `@` 符号，后面跟着一个用户名，会通知那个人来查看评论。 这被称为 “@mention” ，因为你提到的是个人。 你也可以@提及组织中的团队。
 
 ## Automatic linking for URLs
 

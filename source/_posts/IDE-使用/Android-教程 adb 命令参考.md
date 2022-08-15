@@ -1,5 +1,6 @@
 ---
-title: Android-教程-adb命令参考
+title: Android-教程 adb 命令参考
+date: 2017.01.03 13:04:14
 categories: IDE-使用
 ---
 

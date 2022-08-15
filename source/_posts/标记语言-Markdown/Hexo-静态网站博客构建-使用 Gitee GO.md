@@ -1,6 +1,7 @@
 ---
 title: Hexo-静态网站博客构建-使用 Gitee GO
-date: 2022-08-01 00:00:00
+date: 2022-08-05 00:00:00
+updated: 2022-08-14 22:52:00
 categories:
   - 标记语言
   - Markdown
@@ -74,4 +75,4 @@ stages:
 
 ## Gitee page 免费版没有自动部署
 
-我不常构建，手动就手动吧。
+于是乎，我选择转向 GitHub Action。

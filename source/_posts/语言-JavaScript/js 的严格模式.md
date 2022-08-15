@@ -1,5 +1,5 @@
 ---
-title: js的严格模式(strict-mode)
+title: js 的严格模式
 categories:
   - 语言
   - JavaScript

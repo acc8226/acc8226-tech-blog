@@ -1,6 +1,6 @@
 ---
 title: 单平台-Win-putty-kitty-pscp 使用
-date: 2020.06.04 19:04:06
+date: 2020-06-04 19:04:06
 categories:
   - 收藏
   - 技术软件

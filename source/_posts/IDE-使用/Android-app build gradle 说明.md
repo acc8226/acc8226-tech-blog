@@ -1,5 +1,6 @@
 ---
-title: Android-app-build-gradle说明
+title: Android-app build gradle 说明
+date: 2017.02.20 17:22:53
 categories: IDE-使用
 ---
 
