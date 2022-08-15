@@ -15,10 +15,10 @@ Netscape Navigator 3.0在**1996年8月19**发布，是支持 JavaScript 的浏�
 
 ### 新增的对象
 
-*   [Array](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Array "REDIRECT Array")
-*   [Boolean](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Boolean "此页面仍未被本地化, 期待您的翻译!")
-*   [Function](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Function "此页面仍未被本地化, 期待您的翻译!")
-*   [Number](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Number "JavaScript 的 Number 对象是经过封装的能让你处理数字值的对象。Number 对象由 Number() 构造器创建。")
+* [Array](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Array "REDIRECT Array")
+* [Boolean](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Boolean "此页面仍未被本地化, 期待您的翻译!")
+* [Function](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Function "此页面仍未被本地化, 期待您的翻译!")
+* [Number](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Number "JavaScript 的 Number 对象是经过封装的能让你处理数字值的对象。Number 对象由 Number() 构造器创建。")
 
 ### 新增的属性
 
@@ -46,6 +46,7 @@ Netscape Navigator 3.0在**1996年8月19**发布，是支持 JavaScript 的浏�
 *   [LiveConnect](https://developer.mozilla.org/en-US/docs/Archive/Web/LiveConnect). Java and JavaScript之间的通信.
 
 ### 1.1修改的功能
+
 *   “对象删除”：你可通过以设置对象的引用为null来删除一个对象。
 *   增加了对象的构造函数和原型属性
 *   [eval()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval) 现在是每一个对象的方法（之前是一个内置函数），它能够在指定对象的上下文执行一个JavaScript代码的字符串。
@@ -55,10 +56,13 @@ Netscape Navigator 3.0在**1996年8月19**发布，是支持 JavaScript 的浏�
 *   当[parseFloat()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat) 和 [parseint()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt)指定的字符串（参数）的第一个字符无法转换为数字时，在所有平台都会返回NaN。（在这之前发布的版本里，在Solaris和Irix下它们会返回NaN，而在其他平台会返回0）
 
 ## JavaScript 1.2
+
 Netscape Navigator 4.0在**1997年6月11日**发布，它是是支持JavaScript的浏览器的第三个主要的版本。
 
 ## 1.2 新特性
+
 ### 新增的对象
+
 *   可以使用简明的字面记号来创建对象。（灵感来自Python 1.x的dictionary的简明语法）
 *   数字也可以使用简明的字面记号来创建。（灵感来自Python 1.x的字list的简明语法）
 *   [arguments](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope/arguments)
@@ -94,10 +98,12 @@ Netscape Navigator 4.0在**1997年6月11日**发布，它是是支持JavaScript�
 *   [export](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export)
 
 ### 其他新特性
+
 *   [Regular Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
 *   [Signed scripts](https://web.archive.org/web/19971015223714/http://developer.netscape.com/library/documentation/communicator/jsguide/js1_2.htm)
 
 ### 1.2 修改的功能
+
 *   现在你可以在函数内部嵌套函数。
 *   Number现在可以将指定的对象转换为数字。
 *   如果x是一个不包含格式良好的数字字面的字符串，Number将会生成一个NaN而不是一个错误。
@@ -110,8 +116,8 @@ Netscape Navigator 4.0在**1997年6月11日**发布，它是是支持JavaScript�
 *   toString(): 现在可以把对象或者数组转换为文字。
 *   [break](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/break) 和[continue](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/continue) 语句现在可以在带标签的语句中使用。
 
-
 ## JavaScript 1.3
+
 > Netscape Navigator 4.5是在1998年10月19日发布的。
 
 ## 1.3 新特性
@@ -171,7 +177,6 @@ Netscape Navigator 4.0在**1997年6月11日**发布，它是是支持JavaScript�
 *   [Boolean](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Boolean "此页面仍未被本地化, 期待您的翻译!") 对象的[变化](https://web.archive.org/web/20000815081640/http://developer.netscape.com/docs/manuals/communicator/jsref/js13.html#Boolean)。
 *   toString()的[变化](https://web.archive.org/web/20000815081640/http://developer.netscape.com/docs/manuals/communicator/jsref/js13.html#toString)。
 
-
 ## JavaScript 1.4的新特性
 > 下面是 JavaScript 1.4 的更新记录，它只可用于 1999 年发布的 Netscape 服务端 JavaScript。 旧的 Netscape 文档可在 [archive.org](https://web.archive.org/web/20040802225238/http://developer.netscape.com/docs/manuals/js/core/jsref/index.htm) 找到。
 
@@ -179,14 +184,15 @@ Netscape Navigator 4.0在**1997年6月11日**发布，它是是支持JavaScript�
 *   [in](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/in) 运算符
 *   [instanceof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof) 运算符
 
+## JavaScript 1.4 的功能改动
 
-## JavaScript 1.4的功能改动
 *   [eval()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval "JavaScript/Reference/Global_Functions/Eval") 的改动 (不能被间接唤起，也不再是Object的一个方法)
 *   [arguments](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope/arguments "JavaScript/Reference/Functions/arguments") 不再是函数的属性
 *   废除了 [Function.arity](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function/arity "返回一个函数的形参数量.") 以支持 [Function.length](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function/length "此页面仍未被本地化, 期待您的翻译!")
 *   [LiveConnect](https://developer.mozilla.org/en-US/docs/Archive/Web/LiveConnect) 的改动
 
 ## JavaScript 1.5 新特性
+
 > 以下为JavaScript 1.5 的更新日志。该版本包含在发行于2000年11月14日的Netscape Navigator 6.0中，也在后续的的Netscape Navigator版本和Firefox 1.0中使用。你可以拿JavaScript 1.5 和JScript version 5.5，Internet Explorer 5.5进行比较，后者发行于2000年7月。相应的ECMA 标准是 ECMA-262 Edition 3版 (自1999年12月)。
 
 *   [Number.prototype.toExponential()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Number/toExponential "toExponential() 方法以指数表示法返回该数值字符串表示形式。")
@@ -197,6 +203,7 @@ Netscape Navigator 4.0在**1997年6月11日**发布，它是是支持JavaScript�
 *   JavaScript 开发者可以为对象添加getter和setter
 
 ### JavaScript 1.5 功能变化
+
 * 运行时错误现在作为异常报告。
 * 正则表达式变化:
   * 数量修饰符 — +, *, ? 和 {} — 现在可以跟在 ? 后强行使其变为非贪婪模式。
@@ -207,10 +214,11 @@ Netscape Navigator 4.0在**1997年6月11日**发布，它是是支持JavaScript�
 * 函数可以在表达式中声明。
 
 ## JavaScript 1.6新特性
+
 > 以下是JavaScript 1.6的更新日志。JavaScript 1.6已经被包含在2005年11月发布的Firefox 1.5 (Gecko 1.8)中。JavaScript 1.6相对应的ECMA标准是ECMA-262第3版和ECMAScript for XML (E4X)，这让它拥有了一些额外的特性 。引入了一些新特性：E4X，几个新的数组方法，还有数组和字符串的通用接口(generics)。
 
-
 ## JavaScript 1.6新特性
+
 *   使用[JavaScript](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript "JavaScript")创建和处理[XML](https://developer.mozilla.org/zh-CN/docs/Glossary/XML "XML")内容的ECMAScript for XML ([E4X](https://developer.mozilla.org/zh-CN/docs/Archive/Web/E4X "E4X")) 的支持文档已经添加。 更多详情：使用E4X处理XML。
 *   [Array.prototype.indexOf()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)
 *   [Array.prototype.lastIndexOf()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf)
@@ -223,38 +231,43 @@ Netscape Navigator 4.0在**1997年6月11日**发布，它是是支持JavaScript�
 *   [String generics](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String#String_generic_methods "https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/String#String_generics")
 *   [for each...in](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/for_each...in)
 
-## JavaScript 1.6功能变化
+## JavaScript 1.6 功能变化
+
 *   产生了一个[bug](https://bugzilla.mozilla.org/show_bug.cgi?id=292215)，当形参或实参的数量已经固定了，若 [arguments[n]](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/arguments) 中的n大于这个数量，就不能被设置。
 
 > JavaScript 1.7是一个引出了一些新特性的语言更新，尤其是generator，iterator，数组推导式， let 表达式和解构赋值。
 
 为了使用 JavaScript 1.7的一些新特性，你需要明确指出你希望使用 JavaScript 1.7。在HTML 或XUL code中，使用：
 
+## JavaScript 1.7 的新特性
 
-## JavaScript 1.7的新特性
 以下是javaScript 1.7版本的更新日志，这个版本被包括在 [Firefox 2](https://developer.mozilla.org/en-US/Firefox/Releases/2) (2006年10月)。
 
 JavaScript 1.7是一个引出了一些新特性的语言更新，尤其是generator，iterator，数组推导式， `let` 表达式和解构赋值。
 
 以下JavaScript 1.7的新特性目前还不是ECMA-262标准的一部分。在最近的Firefox版本中会根据ECMAScipt6中的描述来实现这些功能。具体内容见这些参考页面。
 
-*   [Iterators and generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators)
-*   [Array comprehensions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Array_comprehensions#Differences_to_the_older_JS1.7.2FJS1.8_comprehensions)
+* [Iterators and generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators)
+* [Array comprehensions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Array_comprehensions#Differences_to_the_older_JS1.7.2FJS1.8_comprehensions)
 *   [let 声明](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)(Gecko 41中抛弃了 let 声明，见 [bug 1023609](https://bugzilla.mozilla.org/show_bug.cgi?id=1023609 "FIXED: Remove SpiderMonkey support for let expressions"))
-*   [const 声明](https://developer.mozilla.org/en-US/docs/const)
-*   [解构赋值](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)(Gecko 40中不再支持JS1.7风格的for-in解构，见[bug 1083498](https://bugzilla.mozilla.org/show_bug.cgi?id=1083498 "FIXED: Remove SpiderMonkey support for destructuring for-in (JS1.7-only language extension)"))
+* [const 声明](https://developer.mozilla.org/en-US/docs/const)
+* [解构赋值](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)(Gecko 40中不再支持JS1.7风格的for-in解构，见[bug 1083498](https://bugzilla.mozilla.org/show_bug.cgi?id=1083498 "FIXED: Remove SpiderMonkey support for destructuring for-in (JS1.7-only language extension)"))
 
-## JavaScript 1.8新特性
+## JavaScript 1.8 新特性
+
 *   [Expression Closures](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Expression_Closures "表达式闭包是定义简单函数的一种便捷方式。").
 *   [生成器表达式](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Iterators_and_Generators)。生成器表达式可以让你方便地创建生成器（在JavaScript1.7中引入）。通常你需要创建一个内含yield的自定义函数来得到一个生成器，而生成器表达式可以让你使用类似数组的语法来达到同样的目的。
 *   [`Array.prototype.reduce()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
 *   [`Array.prototype.reduceRight()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/ReduceRight)
 
 ## JavaScript 1.8功能更新
+
 ### 对for..in解构的修改
+
 JavaScript1.8中的一个修改是对JavaScript1.7中引入的数组键值结构相关的bug修复。之前可以用for ( var [key, value] in array )的方式来解构一个数组的键值。但是，这也让对数组的数组的键值解构变得不可能（比如一个迭代器返回一个当前键值对的数组）。现在这个问题可以用for ( var [key, value] in Iterator(array))来解决([bug 366941](https://bugzilla.mozilla.org/show_bug.cgi?id=366941 "FIXED: Get rid of the "for([key, value] in obj)" form so that normal array destructuring works in for..in"))。
 
 ## JavaScript 1.8.1 新特性
+
 *   [Object.getPrototypeOf()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getPrototypeOf)
 *   [原生支持 JSON](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_native_JSON)
 *   [String.prototype.trim()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim)
@@ -263,12 +276,13 @@ JavaScript1.8中的一个修改是对JavaScript1.7中引入的数组键值结构
 *   [String.prototype.startsWith()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith)
 
 ## JavaScript 1.8.1 功能更新
-对象和数组初始化器中的属性隐式设置不再在 JavaScript 中执行 setter。 这使得设置属性值的行为更具可预测性。
 
+对象和数组初始化器中的属性隐式设置不再在 JavaScript 中执行 setter。 这使得设置属性值的行为更具可预测性。
 
 ## JavaScript 1.8.5的新特性
 
 ### 新函数
+
 Function	Description
 Object.create()	使用指定的原型对象和属性. bug 492840
 Object.defineProperty()	为对象添加给定的描述信息的属性名.
@@ -286,15 +300,17 @@ Array.isArray()	判断变量是否是数组. bug 510537
 Date.prototype.toJSON()	返回一个Date对象用JSON格式化的字符串.
 Function.prototype.bind()	创建一个新函数,当这个函数被调用时,函数会使用提供的上下文环境(给定的字符序列) bug 429507
 
- ### ECMAScript5新特性
+### ECMAScript5 新特性
+
 *   [get](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/get "JavaScript/Reference/Operators/Special Operators/get Operator") 和 [set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/set "JavaScript/Reference/Operators/Special Operators/set Operator") 操作现在允许标识为数值或字符串. [bug 520696](https://bugzilla.mozilla.org/show_bug.cgi?id=520696 "FIXED: Implement support for |{ get "string literal"() { /* ... */ }, get 5.4() { /* ... */ }, 6.72: 3 }|")
 *   [Function.apply()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply "JavaScript/Reference/Global Objects/Function/apply") 能接受任意的类数组的对象作为参数列表,而不是只支持真正数组.
 *   [支持严格模式](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope/Strict_mode "JavaScript/Strict mode")
 *   [Array.toString()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toString "JavaScript/Reference/Global Objects/Array/toString") 现在允许在非数组上使用,如果允许则会返回调用其 [join()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join "JavaScript/Reference/Global Objects/Array/join") 方法,否则调用 [toString()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString "JavaScript/Reference/Global Objects/Object/toString") 方法.
 
-### JavaScript 1.8.5中功能变化
-*   ISO 8601 在Date中支持: [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date "https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date") 对象的 [parse()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse "https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/parse") 方法现在支持简单的ISO 8601 格式化时间字符串.
-*   全局对象变为只读: 按照ECMAScript 5 标准,[NaN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN "JavaScript/Reference/Global Objects/NaN"), [Infinity](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity "JavaScript/Reference/Global Objects/Infinity"), 和 [undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined "JavaScript/Reference/Global Objects/undefined") 全局对象变为只读.
+### JavaScript 1.8.5 中功能变化
+
+* ISO 8601 在Date中支持: [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date "https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date") 对象的 [parse()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse "https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/parse") 方法现在支持简单的ISO 8601 格式化时间字符串.
+* 全局对象变为只读: 按照ECMAScript 5 标准,[NaN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN "JavaScript/Reference/Global Objects/NaN"), [Infinity](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity "JavaScript/Reference/Global Objects/Infinity"), 和 [undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined "JavaScript/Reference/Global Objects/undefined") 全局对象变为只读.
 *   [obj.__parent__](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/Parent "JavaScript/Reference/Global Objects/Object/Parent") and obj.__count__ 过时. 部分原因如下:: [SpiderMonkey change du jour: the special __parent__ property has been removed](http://whereswalden.com/2010/05/07/spidermonkey-change-du-jour-the-special-__parent__-property-has-been-removed/ "http://whereswalden.com/2010/05/07/spidermonkey-change-du-jour-the-special-__parent__-property-has-been-removed/") [bug 551529](https://bugzilla.mozilla.org/show_bug.cgi?id=551529 "FIXED: Remove __count__") & [bug 552560](https://bugzilla.mozilla.org/show_bug.cgi?id=552560 "FIXED: Remove __parent__").
 *   [JSON.parse()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse "Using native JSON")不再支持逗号结尾.
 
@@ -304,21 +320,21 @@ Function.prototype.bind()	创建一个新函数,当这个函数被调用时,函�
 
 5.1，JavaScript 基于的标准的一个旧版本，在2011年6月被批准。
 
-http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf
+<http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf>
 
 ### ES2015
 
 6 th Edition /  June 2015
-https://www.ecma-international.org/publications/standards/Ecma-262.htm
-https://www.ecma-international.org/ecma-262/6.0/index.html
+<https://www.ecma-international.org/publications/standards/Ecma-262.htm>
+<https://www.ecma-international.org/ecma-262/6.0/index.html>
 
 ### ES2016
 
 7 th Edition / June 2016
-https://www.ecma-international.org/publications/standards/Ecma-262.htm
-https://www.ecma-international.org/ecma-262/7.0/index.html
+<https://www.ecma-international.org/publications/standards/Ecma-262.htm>
+<https://www.ecma-international.org/ecma-262/7.0/index.html>
 
 ## 参考
 
 JavaScript 更新
-https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/New_in_JavaScript
+<https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/New_in_JavaScript>

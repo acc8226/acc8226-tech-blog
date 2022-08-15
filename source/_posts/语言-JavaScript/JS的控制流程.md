@@ -138,7 +138,7 @@ if (condition)
    statement2]
 
 
-// else if的语法
+// else if 的语法
 if (condition1)
    statement1
 else if (condition2)

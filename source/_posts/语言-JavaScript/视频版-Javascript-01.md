@@ -7,9 +7,9 @@ tags:
 - js
 ---
 
-为什么要有JavaScript
+为什么要有 JavaScript
 
-JavaScript最初目的
+JavaScript 最初目的
   判断客户端的输入
 
 JavaScript现在的意义

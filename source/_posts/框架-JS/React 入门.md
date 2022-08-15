@@ -1,10 +1,11 @@
 ---
 title: React-入门
 categories:
-  - 语言
-  - JavaScript
+  - 框架
+  - js
 tags:
 - js
+- react
 ---
 
 React 官方中文文档 – 用于构建用户界面的 JavaScript 库

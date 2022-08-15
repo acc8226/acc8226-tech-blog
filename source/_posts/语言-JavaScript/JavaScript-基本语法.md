@@ -110,7 +110,7 @@ double	in	static	with
 Value = undefined
 在计算机程序中，经常会声明无值的变量。未使用值来声明的变量，其值实际上是 undefined。
 
-### js数组
+### js 数组
 
 ```js
  var cars=new Array();
@@ -133,9 +133,10 @@ var person={firstname: "John", lastname: "Doe", id: 5566};
 
 ```js
 var person = {
-	firstname: "John",
-	lastname: "Doe",
-	id: 5566};
+  firstname: "John",
+  lastname: "Doe",
+  id: 5566
+};
 ```
 
 ### 特殊的Undefined 和 Null

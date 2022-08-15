@@ -1,11 +1,13 @@
 ---
-title: 02. Spring boot 之 profile 配置
-date: 2019.07.17 22:43:50
+title: Spring boot 下 swagger2 的使用
+date: 2019-07-17 22:43:50
 updated: 2022-08-15 13:33:00
 categories:
-  - Spring Boot
+  - 框架
+  - Java
 tags:
 - spring boot
+- swagger
 ---
 
 Swagger 是一个规范和完整的框架，用于生成、描述、调用和可视化 RESTful 风格的 Web 服务。总体目标是使客户端和文件系统作为服务器以同样的速度来更新。文件的方法，参数和模型紧密集成到服务器端的代码，允许API来始终保持同步。
@@ -266,9 +268,27 @@ public Docket customImplementation(){
 }
 ```
 
-然后，需要在dev和test环境中配置：
+然后，需要在 dev 和 test 环境中配置：
 
 ```yml
 swagger:
   enable: true
 ```
+
+## 记录
+
+### Swagger访问地址
+
+3.0.x访问地址：
+<http://localhost:8081/{context-path}/swagger-ui/index.html>
+
+2.9.x访问地址：
+<http://localhost:8081/{context-path}/swagger-ui.html>
+
+### pom 项目地址
+
+Maven Repository: io.springfox » springfox-swagger2
+<https://mvnrepository.com/artifact/io.springfox/springfox-swagger2>
+
+Maven Repository: io.springfox » springfox-swagger-ui
+<https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui>

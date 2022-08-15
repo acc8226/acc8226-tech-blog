@@ -12,11 +12,11 @@ categories: 文档规约
 * 【推荐】尽量遵守，长期遵守有助于系统稳定性和合作效率的提升；
 * 【参考】充分理解，技术意识的引导，是个人学习、团队沟通、项目合作的方向
 
-## 一、Java 语言规范
+## Java 语言规范
 
-遵循Oracle公司《The Java Language Specification, Java SE 8 Edition》
+遵循 Oracle 公司《The Java Language Specification, Java SE 8 Edition》
 
-## 二、Android 资源文件命名与使用
+## Android 资源文件命名与使用
 
 1. 【推荐】资源文件需带模块前缀。
 
@@ -40,15 +40,15 @@ GridView 的行 layout 以 module_grid_item 开头
 * frame 动画资源：尽可能以模 块+功能命名+序号。
 如：module_loading_grey_001
 
-5. 【推荐】 color 资源使用#AARRGGBB 格式，写入 module_colors.xml 文件中，命名格式采用以下规则：**`模块名_逻辑名称_颜色`**
+5\. 【推荐】 color 资源使用#AARRGGBB 格式，写入 module_colors.xml 文件中，命名格式采用以下规则：**`模块名_逻辑名称_颜色`**
 如：`<color name="module_btn_bg_color">#33b5e5e5</color>`
 
-6. 【推荐】dimen 资源以小写单词+下划线方式命名，写入 module_dimens.xml 文件中，
+6\. 【推荐】dimen 资源以小写单词+下划线方式命名，写入 module_dimens.xml 文件中，
 采用以下规则：
 模块名_描述信息
 如：`<dimen name="module_horizontal_line_height">1dp</dimen>`
 
-7. 【推荐】style 资源采用小写单词+下划线方式命名，写入 module_styles.xml 文件中，
+7\. 【推荐】style 资源采用小写单词+下划线方式命名，写入 module_styles.xml 文件中，
 采用以下规则：
 **`父 style 名称.当前 style 名称`**
     如：
@@ -85,7 +85,7 @@ EditText | et
 
 10.【推荐】大分辨率图片（单维度超过 1000）大分辨率图片建议统一放在 xxhdpi 目录下管理，否则将导致占用内存成倍数增加。
 
-## 三、Android 基本组件
+## Android 基本组件
 
 Android 基本组件指 `Activity`、`Fragment`、`Service`、`BroadcastReceiver`、
 `ContentProvider` 等等。
@@ -151,7 +151,7 @@ Activity#onPause()/onStop()中结合 isFinishing()的判断来执行。
 
 17. 【强制】Activity或者Fragment中动态注册BroadCastReceiver时，registerReceiver()和 unregisterReceiver()要成对出现。
 
-## 四、UI 与布局
+## UI 与布局
 
 1. 【强制】布局中不得不使用 ViewGroup 多重嵌套时，不要使用 LinearLayout 嵌套，改用 RelativeLayout，可以有效降低嵌套数。
 
@@ -189,7 +189,7 @@ public void showPromptDialog(String text){
 
 11.【强制】不能使用 ScrollView 包裹 ListView/GridView/ExpandableListVIew;因为这样会把 ListView 的所有 Item 都加载到内存中，要消耗巨大的内存和 cpu 去绘制图面。
 
-## 五、进程、线程与消息通信
+## 进程、线程与消息通信
 
 1. 【强制】不要通过 Intent 在 Android 基础组件之间传递大数据（binder transaction缓存为 1MB），可能导致 OOM。
 
@@ -214,7 +214,7 @@ public void showPromptDialog(String text){
 * 应用内多进程时，Application 实例化多次，需要考虑各个模块是否都需要在所有进程中初始化；
 * 多进程间通过 SharedPreferences 共享数据时不稳定。
 
-## 六、文件与数据库
+## 文件与数据库
 
 1. 【强制】任何时候不要硬编码文件路径，请使用 Android 文件系统 API 访问。
 2. 【强制】当使用外部存储时，必须检查外部存储的可用性。
@@ -243,7 +243,7 @@ selectionArgs[0] = mUserInput;
 String mSelectionClause = "var = " + mUserInput;
 ```
 
-## 七、Bitmap、Drawable 与动画
+## Bitmap、Drawable 与动画
 
 1. 【强制】加载大图片或者一次性加载多张图片，应该在异步线程中进行。图片的加载，涉及到 IO 操作，以及 CPU 密集操作，很可能引起卡顿。
 2. 【强制】在 ListView，ViewPager，RecyclerView，GirdView 等组件中使用图片时，应做好图片的缓存，避免始终持有图片导致内存泄露，也避免重复创建图片，引起性 能 问 题 。 建 议 使 用 Fresco （ https://github.com/facebook/fresco ）、 Glide（https://github.com/bumptech/glide）等图片库。
@@ -270,7 +270,7 @@ https://stackoverflow.com/questions/5474923/onanimationend-is-not-getting-called
 
 16. 【推荐】当 View Animation 执行结束时，调用 View.clearAnimation()释放相关资源。
 
-## 八、安全
+## 安全
 
 1. 【强制】使用 PendingIntent 时，禁止使用空 intent，同时禁止使用隐式 Intent。
 
@@ -345,7 +345,7 @@ Android WebView 组件加载网页发生证书认证错误时，会调用 WebVie
 
 27. 【推荐】直接传递命令字或者间接处理有敏感信息或操作时，避免使用 socket 实现，使用能够控制权限校验身份的方式通讯。
 
-## 九、其他
+## 其他
 
 1. 【强制】不要通过 Msg 传递大的对象，会导致内存问题。
 
