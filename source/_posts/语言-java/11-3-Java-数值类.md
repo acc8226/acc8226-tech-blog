@@ -1,0 +1,285 @@
+## java.lang.Math(final类)
+
+Java 语言是彻底地面向对象语言，哪怕是进行数学运算也封装到一个类中的，这个类是 java.lang.Math，Math 类是 final 的不能被继承。Math 类中包含用于进行基本数学运算的方法，如指数、对数、平方根和三角函数等。这些方法分类如下：
+1. 舍入方法
+* `static double ceil(double a)`：返回大于或等于 a 最小整数。
+* `static double floor(double a)`：**返回小于或等于 a 最大整数**。
+* `static int round(float a)`：**四舍五入方法**。
+2. 最大值和最小值
+* `static int min(int a, int b)`：取两个 int 整数中较小的一个整数。
+* `static int min(long a, long b)`：取两个 long 整数中较小的一个整数。
+* `static int min(float a, float b)`：取两个 float 浮点数中较小的一个浮点数。
+* `static int min(double a, double b)`：取两个 double 浮点数中较小的一个浮点数。
+max方法取两个数中较大的一个数，max 方法与 min 方法参数类似也有 4 个版本，这里不再赘述。
+
+3. 绝对值
+* `static int abs(int a)`：取 int 整数 a 的绝对值。
+* `static long abs(long a)`：取 long 整数 a 的绝对值。
+* `static float abs(float a)`：取 float 浮点数 a 的绝对值。
+* `static double abs(double a)`：取 double 浮点数 a 的绝对值。
+
+4. 三角函数：
+* `static double sin(double a)`：返回角的三角正弦。
+* `static double cos(double a)`：返回角的三角余弦。
+* `static double tan(double a)`：返回角的三角正切。
+* `static double asin(double a)`：返回一个值的反正弦。
+* `static double acos(double a)`：返回一个值的反余弦。
+* `static double atan(double a)`：返回一个值的反正切。
+* `static double toDegrees(double angrad)`：将弧度转换为角度。
+* `static double toRadians(double angdeg)`：将角度转换为弧度。
+
+5. 对数运算：static double log(double a)`，返回a的自然对数。
+
+6. 平方根：static double sqrt(double a)`，返回a的正平方根。
+
+7. 幂运算：static double pow(double a, double b)`，返回第一个参数的第二个参数次幂的值。
+
+8. 计算随机值：static double random()，返回大于等于 0.0 且小于 1.0随机数(左闭右开))。
+
+9. 常量
+圆周率PI，自然对数的底数E。
+
+
+## 大数值
+
+对货币等大值数据进行计算时，int、long、float 和 double 等基本数据类型已经在精度方面不能满足需求了。为此 Java 提高了两个大数值类：BigInteger 和 BigDecimal，这里两个类都继承自 Number 抽象类。
+
+### BigInteger
+
+java.math.BigInteger 是不可变的任意精度的大整数。BigInteger 构造方法有很多，其中字符串参数的构造方法有两个：
+* BigInteger(String val)：将十进制字符串val转换为 BigInteger 对象。
+* BigInteger(String val, int radix)：按照指定基数 radix 将字符串 val 转换为 BigInteger 对象。
+
+BigInteger 提供多种方法，下面列举几个常用的方法：
+int compareTo(BigInteger val)：将当前对象与参数 val 进行比较，方法返回值是 int，如果返回值是 0，则相等；如果返回值小于 0，则此对象小于参数对象；如果返回值大于 0，则此对象大于参数对象。
+* BigInteger add(BigInteger val)：加运算，当前对象数值加参数val。
+* BigInteger subtract(BigInteger val)：减运算，当前对象数值减参数val。
+* BigInteger multiply(BigInteger val)：乘运算，当前对象数值乘参数val。
+* BigInteger divide(BigInteger val)：除运算，当前对象数值除以参数val。
+
+### BigDecimal
+
+java.math.BigDecimal 是不可变的任意精度的有符号十进制数。BigDecimal构造方法有很多：
+* BigDecimal(BigInteger val)：将 BigInteger 对象 val 转换为BigDecimal对象。
+* BigDecimal(double val)：将 double 转换为BigDecimal对象，参数val是double类型的二进制浮点值准确的十进制表示形式。
+* BigDecimal(int val)：将int转换为 BigDecimal 对象。
+* BigDecimal(long val)：将long转换为 BigDecimal 对象。
+* BigDecimal(String val)：将字符串表示数值形式转换为 BigDecimal 对象。
+
+BigDecimal 提供多种方法，下面列举几个常用的方法：
+* int compareTo(BigDecimal val)：将当前对象与参数 val 进行比较，方法返回值是int，如果返回值是0，则相等；如果返回值小于 0，则此对象小于参数对象；如果返回值大于0，则此对象大于参数对象。
+* BigDecimal add(BigDecimal val)：加运算，当前对象数值加参数 val。
+* BigDecimal subtract(BigDecimal val)：减运算，当前对象数值减参数 val。
+* BigDecimal multiply(BigDecimal val)：乘运算，当前对象数值乘参数 val。
+* BigDecimal divide(BigDecimal val)：除运算，当前对象数值除以参数 val。
+* BigDecimal divide(BigDecimal val, int roundingMode)：除运算，当前对象数值除以参数 val。roundingMode 要应用的舍入模式。
+
+注意：如果传入的字符串是一个非法的数值，例如空串、含有字母，这时候就会报异常 NumberFormatException
+
+```java
+new BigDecimal("");
+new BigDecimal("m");
+new BigDecimal("v1");
+new BigDecimal(" 1");
+new BigDecimal("1 ");
+```
+都会报这个 NumberFormatException。
+
+RoundingMode 枚举介绍 
+1. ROUND_DOWN
+```java
+BigDecimal b = new BigDecimal("2.225667").setScale(2, BigDecimal.ROUND_DOWN);
+System.out.println(b);//2.22 直接去掉多余的位数
+```
+
+2. ROUND_UP
+```java
+BigDecimal c = new BigDecimal("2.224667").setScale(2, BigDecimal.ROUND_UP);
+System.out.println(c);//2.23 跟上面相反，进位处理
+ ```
+
+3. ROUND_CEILING
+```
+BigDecimal f = new BigDecimal("2.224667").setScale(2, BigDecimal.ROUND_CEILING);
+System.out.println(f);//2.23 如果是正数，相当于BigDecimal.ROUND_UP
+ 
+BigDecimal g = new BigDecimal("-2.225667").setScale(2, BigDecimal.ROUND_CEILING);
+System.out.println(g);//-2.22 如果是负数，相当于BigDecimal.ROUND_DOWN
+```java
+
+4. ROUND_FLOOR
+```java
+BigDecimal h = new BigDecimal("2.225667").setScale(2, BigDecimal.ROUND_FLOOR);
+System.out.println(h);//2.22 如果是正数，相当于BigDecimal.ROUND_DOWN
+        
+BigDecimal i = new BigDecimal("-2.224667").setScale(2, BigDecimal.ROUND_FLOOR);
+System.out.println(i);//-2.23 如果是负数，相当于BigDecimal.ROUND_HALF_UP
+ ```
+
+5. ROUND_HALF_UP - 这是标准的四舍五入。
+```java
+BigDecimal d = new BigDecimal("2.225").setScale(2, BigDecimal.ROUND_HALF_UP);
+System.out.println("ROUND_HALF_UP"+d); //2.23  四舍五入（若舍弃部分>=.5，就进位）
+ ```
+
+6. ROUND_HALF_DOWN
+```java
+BigDecimal e = new BigDecimal("2.225").setScale(2, BigDecimal.ROUND_HALF_DOWN);
+System.out.println("ROUND_HALF_DOWN"+e);//2.22  四舍五入（若舍弃部分>.5,就进位）
+ ```
+
+7. ROUND_HALF_EVEN
+```java
+BigDecimal j = new BigDecimal("2.225").setScale(2, BigDecimal.ROUND_HALF_EVEN);
+System.out.println(j);//2.22 如果舍弃部分左边的数字为偶数，则作   ROUND_HALF_DOWN 
+        
+BigDecimal k = new BigDecimal("2.215").setScale(2, BigDecimal.ROUND_HALF_EVEN);
+System.out.println(k);//2.22 如果舍弃部分左边的数字为奇数，则作   ROUND_HALF_UP
+        
+System.out.println("4.05: "+new BigDecimal("4.05").setScale(1, BigDecimal.ROUND_HALF_EVEN));//4.05: 4.0  down
+System.out.println("4.15: "+new BigDecimal("4.15").setScale(1, BigDecimal.ROUND_HALF_EVEN));//4.15: 4.2  up
+System.out.println("4.25: "+new BigDecimal("4.25").setScale(1, BigDecimal.ROUND_HALF_EVEN));//4.25: 4.2  down
+System.out.println("4.35: "+new BigDecimal("4.35").setScale(1, BigDecimal.ROUND_HALF_EVEN));//4.35: 4.4  up
+System.out.println("4.45: "+new BigDecimal("4.45").setScale(1, BigDecimal.ROUND_HALF_EVEN));//4.45: 4.4  down
+System.out.println("4.55: "+new BigDecimal("4.55").setScale(1, BigDecimal.ROUND_HALF_EVEN));//4.55: 4.6  up
+System.out.println("4.65: "+new BigDecimal("4.65").setScale(1, BigDecimal.ROUND_HALF_EVEN));//4.65: 4.6  down
+        
+System.out.println("3.05: "+new BigDecimal("3.05").setScale(1, BigDecimal.ROUND_HALF_EVEN));//3.05: 3.0  down
+System.out.println("3.15: "+new BigDecimal("3.15").setScale(1, BigDecimal.ROUND_HALF_EVEN));//3.15: 3.2  up
+System.out.println("3.25: "+new BigDecimal("3.25").setScale(1, BigDecimal.ROUND_HALF_EVEN));//3.25: 3.2  down
+System.out.println("3.35: "+new BigDecimal("3.35").setScale(1, BigDecimal.ROUND_HALF_EVEN));//3.35: 3.4  up
+System.out.println("3.45: "+new BigDecimal("3.45").setScale(1, BigDecimal.ROUND_HALF_EVEN));//3.45: 3.4  down
+System.out.println("3.55: "+new BigDecimal("3.55").setScale(1, BigDecimal.ROUND_HALF_EVEN));//3.55: 3.6  up
+System.out.println("3.65: "+new BigDecimal("3.65").setScale(1, BigDecimal.ROUND_HALF_EVEN));//3.65: 3.6  down
+ ```
+
+8.ROUND_UNNECESSARY
+```
+BigDecimal l = new BigDecimal("2.215").setScale(3, BigDecimal.ROUND_UNNECESSARY);
+System.out.println(l);
+//断言请求的操作具有精确的结果，因此不需要舍入。
+//如果对获得精确结果的操作指定此舍入模式，则抛出ArithmeticException。
+```
+
+IDEA 更推荐使用 `public BigDecimal setScale(int newScale, RoundingMode roundingMode) `，而非第二个参数传入的是 int 类型的入参。
+
+**使用 BigDecimal 总结**
+* BigDecimal的初始化要使用 String 入参或 BigDecimal.valueOf()。不能使用 double 和 float。因为 double 和 float 本身的存储可能不精确。
+* 比较两个BigDecimal的 value 要使用 compareTo。
+
+### [数据库数据类型decimal理解](https://www.cnblogs.com/chenweipeng/p/9627659.html)
+
+MySQL `DECIMAL`数据类型用于在数据库中存储精确的数值。
+
+例如语法：column_name DECIMAL(P, D)
+
+其中P表示的是有效数字的位数，D 表示是小数的位数，D 小于或等于P。
+
+理解可看下面代码：
+
+create table decimal_test(
+id int auto_increment PRIMARY key,
+score decimal(5,2) -- 取值范围是** -999.99 到 999.99**
+);
+
+* 整数的位数必须小于等于 m-d，不然报错。小数的位数可以大于 d 位。多出d位时会做四舍五入，截取到d位。
+* 以上均不包括小数点、符号的位数。数字的总长度是 m 位，保存后的小数位最多是 d 位。如果保存后是整数，小数位不会补 0。
+
+select * from decimal_test;
+-- 正数：
+insert into decimal_test(score) VALUES(1.23); -- 1.23
+insert into decimal_test(score) VALUES(123.45); -- 123.45
+insert into decimal_test(score) VALUES(123.455); -- 123.46
+insert into decimal_test(score) VALUES(123.451); -- 123.45
+insert into decimal_test(score) VALUES(123.451123); -- 123.45
+insert into decimal_test(score) VALUES(12345.451123); -- Out of range value for column 'score'
+insert into decimal_test(score) VALUES(9999.451123); -- Out of range value for column 'score'
+insert into decimal_test(score) VALUES(999.451123234324); -- 999.45
+insert into decimal_test(score) VALUES(999.999999999); -- Out of range value for column 'score'
+insert into decimal_test(score) VALUES(999.99123); -- 999.99
+-- 负数：
+insert into decimal_test(score) VALUES(-1.23); -- -1.23
+insert into decimal_test(score) VALUES(-12.34); -- -12.34
+insert into decimal_test(score) VALUES(-123.45); -- -123.45
+insert into decimal_test(score) VALUES(-999.45); -- -999.45
+insert into decimal_test(score) VALUES(-12343); -- Out of range value for column 'score'
+insert into decimal_test(score) VALUES(12343); -- Out of range value for column 'score'
+insert into decimal_test(score) VALUES(1234); -- Out of range value for column 'score'
+insert into decimal_test(score) VALUES(123); -- 123
+insert into decimal_test(score) VALUES(-123); -- -123
+insert into decimal_test(score) VALUES(-999.99); -- -999.99
+insert into decimal_test(score) VALUES(-9990.99); -- Out of range value for column 'score'
+insert into decimal_test(score) VALUES(-1234.99); -- Out of range value for column 'score'
+insert into decimal_test(score) VALUES(-1234); -- Out of range value for column 'score'
+
+## 数值格式化
+
+我们经常要将数字进行格式化，比如取 2 位小数，这是最常见的。[Java](http://lib.csdn.net/base/javase "Java SE知识库") 提供 DecimalFormat　类，帮你用最快的速度将数字格式化为你需要的样子。下面是常用的例子：
+
+```java
+import java.text.DecimalFormat;
+
+public class Test {
+    public static void main(String[] args){
+        double pi=3.1415927;//圆周率
+        // 取一位整数 
+        System.out.println(new DecimalFormat("0").format(pi));//3
+        // 取一位整数和两位小数  
+        System.out.println(new DecimalFormat("0.00").format(pi));//3.14
+        // 取两位整数和三位小数，整数不足部分以0填补。  
+        System.out.println(new DecimalFormat("00.000").format(pi));//03.142  
+        // 取所有整数部分  
+        System.out.println(new DecimalFormat("#").format(pi));//3  
+        // 以百分比方式计数，并取两位小数  
+        System.out.println(new DecimalFormat("#.##%").format(pi));//314.16%  
+        
+        long c=299792458;//光速  
+        // 显示为科学计数法，并取五位小数  
+        System.out.println(new DecimalFormat("#.#####E0").format(c));//2.99792E8  
+        // 显示为两位整数的科学计数法，并取四位小数  
+        System.out.println(new DecimalFormat("00.####E0").format(c));//29.9792E7  
+        // 每三位以逗号进行分隔。  
+        System.out.println(new DecimalFormat(",###").format(c));//299,792,458  
+        // 将格式嵌入文本  
+        System.out.println(new DecimalFormat("光速大小为每秒,###米").format(c)); //光速大小为每秒299,792,458米
+    }
+}
+```
+
+DecimalFormat 类主要靠 # 和 0 两种占位符号来指定数字长度。0 表示如果位数不足则以 0 填充，# 表示只要有可能就把数字拉上这个位置。上面的例子包含了差不多所有的基本用法，如果你想了解更多，请参考 DecimalFormat 类的文档。
+
+## 数据类型转换的小结
+
+取小于等于该数组的数(取整)
+int i = (int)12.34;
+int j = Math.round(12.34)
+
+int 转 char
+char c = (char)c;
+
+字符串转 int, 出错会抛  java.lang.NumberFormatException 运行时异常
+int i=Integer.parseInt(s);
+
+int 转字符串
+String s = String.valueOf(i);
+
+四舍五入
+Math.round()
+
+## 三目运算符的一个坑-自动拆箱
+
+```
+Integer a =  null ;
+Integer b = true ? a : 0; 
+```
+
+开发中避免的措施：
+1. 对对象进行使用或者操作时都先验空，然后再进行操作处理。
+2. 三目运算符后最好使用同种类型的对象。
+
+## 参考
+
+【java】BigDecimal.setScale用法总结 - Angel挤一挤 - 博客园 https://www.cnblogs.com/sxdcgaq8080/p/12123917.html
+
+数据库数据类型 decimal 理解 - 学无止境BS - 博客园
+https://www.cnblogs.com/chenweipeng/p/9627659.html

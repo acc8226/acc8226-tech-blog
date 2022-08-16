@@ -1,0 +1,217 @@
+## File类
+
+将文件和文件夹封装成对象,方便操作文件和文件夹
+
+```java                  
+File(String pathname); 通过将给定路径名字符串转换为抽象路径名来创建一个新 File 实例。 
+File(String parent, String child); 根据parent路径名字符串和 child 路径名字符串创建一个新 File 实例。   
+File(File parent, String child); 根据parent抽象路径名和 child 路径名字符串创建一个新 File 实例。
+```
+
+> 提示：所有在 java.io 中的类都将相对路径名解释为以用户工作目录开始，你可以通过调用 `System.getProperty("user.dir")` 来获得这个信息
+>
+> 警告: 由于反斜杠字符在 Java 字符串中是转义字符，因此要确保在 Windows 风格的路径名中使用 \\（例如，C:\\Windows\\win.ini）。在 Windows 中，还可以使用单斜杠字符（C:/Windows/win.ini），因为大部分 Windows 文件处理的系统调用都会将斜杠解释成文件分隔符。但是，并**不推荐**这样做，因为 Windows 系统函数的行为会因与时俱进而发生变化。因此，对于可移植的程序来说，应该使用程序所运行平台的文件分隔符，我们可以通过常量字符串 **java.io.File.separator**获得它。         
+
+java.io.File.separatorChar 
+```
+On UNIX systems the value of this field is <code>'/'</code>; 
+on Microsoft Windows systems it is <code>'\'</code>.
+```
+
+java.io.File.pathSeparatorChar
+```
+On UNIX systems, this character is <code>':'</code>; 
+on Microsoft Windows systems it is <code>';'</code>.
+``` 
+
+##### 基本操作
+
+##### 创建
+
+当且仅当不存在具有此抽象路径名指定名称的文件时，不可分地创建一个新的空文件。
+f.createNewFile();
+
+最终目录的父目录必须存在,因此只是建立一层目录
+System.out.println(f.mkdir());
+
+可以任意建立多级目录
+System.out.println(f.mkdirs());
+
+##### 删除
+
+boolean delete(); 删除失败返回false
+void delectOnExit();在程序退出时删除指定文件
+
+##### 判断
+
+boolean exists():文件是否存在,是最为常用的方法
+isFile();
+isDirectory();
+isHidden();
+isAbsolute(); 
+
+##### 获取
+
+getName(); // 返回文件或目录名
+getPath();
+getParent();
+getAbsolutePath();
+lastModified();
+length();
+```
+
+##### 文件列表:     
+* static File[] listRoots(): 列出可用的文件系统根。      
+* String[] list(): 返回一个字符串数组，这些字符串指定此抽象路径名表示的目录中的文件和目录。     
+* String[] list(FilenameFilter filter): 返回一个字符串数组，这些字符串指定此抽象路径名表示的目录中满足指定过滤器的文件和目录。  
+
+列出指定目录下文件或文件夹,包含子目录中的内容.也就是列出指定目录下所有的内容.
+``` java
+列出指定目录下文件或文件夹,包含子目录中的内容.   
+public static void listFile(File f,int level){
+    level++;
+    if (f.isFile()) {
+        System.out.println(getLevel(level)+f); 
+    } else if (f.isDirectory()) {
+        System.out.println(getLevel(level)+f);
+        File[] files = f.listFiles();
+        for (File file: files) {
+            listFile(file,level);
+        }          
+    }
+}
+ 
+public static String getLevel(int i){
+    StringBuilder sb = new StringBuilder();
+    for(int k=0;k<i;k++) {
+        sb.append("|-");
+    }
+    return sb.toString();
+}
+```      
+
+删除一个带内容的目录 (原理: 在window中,删除目录从里面到外删,使用递归思想)
+
+```java
+//删除一个带目录的内容
+public static void deleteDir(File f){
+    if(f.isFile())
+        f.delete();
+    else if(f.isDirectory()){
+        File[] files = f.listFiles();
+        for(File file: files){
+            deleteDir(file);
+        }
+        f.delete();
+    }
+}
+```
+
+练习: 将一个指定目录下的java文件的绝对路径存储到一个文本文件中, 建立一个java文件列表文件.
+(思路: 递归, IO流, File相关)
+``` java
+public class Test {
+	public static void main(String[] args) throws IOException {
+		List<File> list = new ArrayList<File>();
+		// 获取new下所有java文件,参数是目录和list对象
+		fileToList(new File("D:" + File.separator + "New"), list);
+		// 取出list对象中信息,并写入list.txt
+		listToFile(list, new File("d:" + File.separator + "list.txt"));
+	}
+
+	/**
+	 * 通过路径名,将所需信息存入list集合中
+	 * 
+	 * @param f
+	 * @param list
+	 */
+	private static void fileToList(File f, List<File> list) {
+		File[] files = f.listFiles();
+		for (File file : files) {
+			if (file.isHidden())
+				continue;
+			if (file.isDirectory())
+				fileToList(file, list);
+			else if (file.isFile()) {
+				if (file.getName().endsWith(".java"))
+					list.add(file);
+			}
+		}
+	}
+
+	/**
+	 * 取出集合中所需信息,写入目标文件
+	 * 
+	 * @param list
+	 * @param f
+	 */
+	private static void listToFile(List<File> list, File f) {
+		try (BufferedWriter bfw = new BufferedWriter(new FileWriter(f))) {
+			for (File file : list) {
+				// getAbsolutePath方法是非常常用的,用来获取绝对路径
+				bfw.write(file.getAbsolutePath());
+				bfw.newLine();
+				bfw.flush();
+			}
+		} catch (IOException e) {
+			throw new RuntimeException("流写入异常");
+		}
+	}
+
+}
+```
+
+##### Properties类
+
+* 是HashTable的子类.
+* Properties 类表示了一个持久的属性集。Properties 可保存在流中或从流中加载。属性列表中每个键及其对应值都是一个字符串。  
+* 因为 Properties 继承于 Hashtable，所以可对 Properties 对象应用 put 和 putAll 方法。但不建议使用这两个方法，因为它们允许调用者插入其键或值不是 String 的项。相反，应该使用 setProperty 方法。如果在“不安全”的 Properties 对象（即包含非 String 的键或值）上调用 store 或 save 方法，则该调用将失败。类似地，如果在“不安全”的 Properties 对象（即包含非 String 的键）上调用 propertyNames 或 list 方法，则该调用将失败。
+      
+``` java
+##### 设置和获取元素
+String getProperty(String key)           
+用指定的键在此属性列表中搜索属性 
+
+String getProperty(String key, String defaultValue)           
+用指定的键在属性列表中搜索属性。
+
+##### 遍历
+		Set<String> set = prop.stringPropertyNames();
+		for (String key : set) {
+			System.out.println(key + "---" + prop.getProperty(key));
+		}
+
+##### 载入和存储
+void load(InputStream inStream)           
+从输入流中读取属性列表（键和元素对）。
+
+void store(OutputStream out, String comments)           
+以适合使用 load(InputStream) 方法加载到 Properties 表中的格式，将此 Properties 表中的属性列表（键和元素对）写入输出流
+```
+
+### Zip文档
+ZIP 文档（通常）以压缩格式存储了一个或多个文件，每个 ZIP 文档都有一个头，包含诸如每个文件名字和所使用的压缩方法等信息。在 Java 中，可以使用 ZipInputStream 来读入 ZIP 文档。你可能需要浏览文档中每个单独的项，getNextEntry 方法就可以返回一个描述这些项的 ZipEntry 类型的对象。ZipInputStream 的 read 方法被修改为在碰到当前项的结尾时返回－ 1（而不是碰到 ZIP 文件的末尾），然后你必须调用 closeEntry 来读入下一项
+``` java
+		//典型的通读 ZIP文件的代码
+		ZipInputStream zin = new ZipInputStream(new BufferedInputStream(new FileInputStream("cc.zip")));
+		ZipEntry entry;
+		while ((entry = zin.getNextEntry()) != null) {
+			// analyze entry
+			// read the contents of zin
+			zin.closeEntry();
+		}
+		zin.close();
+```
+
+要写出到 ZIP 文件，可以使用 ZipOutputStream，而对于你希望放入到 ZIP 文件中的每一项，都应该创建一个 ZipEntry 对象，并将文件名传递给 ZipEntry 的构造器，它将设置其他诸如文件日期和解压缩方法等参数。如果需要，你可以覆盖这些设置。然后，你需要调用 ZipOutputStream 的 putNextEntry 方法来开始写出新文件，并将文件数据发送到ZIP 流中。当完成时，需要调用 closeEntry。然后，你需要对所有你希望存储的文件都重
+复这个过程。下面是代码框架：
+``` java
+		ZipOutputStream zout = new ZipOutputStream(new BufferedOutputStream(new FileOutputStream("cc.zip")));
+		for all files{
+			ZipEntry zipEntry = new ZipEntry("first.txt");
+			zout.putNextEntry(zipEntry);
+			// send data to zout
+			zout.closeEntry();		
+		}
+		zout.close();
+```

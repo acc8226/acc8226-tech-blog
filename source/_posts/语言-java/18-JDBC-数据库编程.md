@@ -1,0 +1,375 @@
+## 数据持久技术概述
+
+把数据保存到数据库中只是一种数据持久化方式。凡是将数据保存到存储介质中，需要的时候能够找到它们，并能够对数据进行修改，这些就属于数据持久化。
+
+Java中数据持久化技术有很多：
+1. 文本文件
+通过 Java I/O 流技术将数据保存到文本文件中，然后进行读写操作，这些文件一般是结构化的文档，如 XML、JSON 和 CSV等文件。结构化文档就是文件内部采取某种方式将数据组织起来。
+2. 对象序列化
+序列化用于将某个对象以及它的状态写到文件中，它保证了被写入的对象之间的关系，当需要这个对象时，可以完整地从文件重新构造出来，并保持原来的状态。在 Java 中实现 java.io.Serilizable接口的对象才能被序列化和反序列化。Java 还提供了两个流：ObjectInputStream 和 ObjectOutputStream。但序列化不支持事务处理、查询或者向不同的用户共享数据。序列化只适用于最简单的应用，或者在某些无法有效地支持数据库的嵌入式系统中。
+3. 数据库
+将数据保存数据库中是不错的选择，数据库的后面是一个数据库管理系统，它支持事务处理、并发访问、高级查询和SQL语言。Java 对象保存到数据库中主要的技术有：JDBC1、EJB2和ORM3 框架等。JDBC 是本书重点介绍的技术。
+
+## MySQL数据库管理系统
+介绍JDBC技术一定会依托某个数据库管理系统（(Database Management System，缩写DBMS），还会使用SQL语句，所以本节先介绍一下数据库管理系统。
+
+数据库管理系统负责对数据进行管理、维护和使用。现在主流数据库管理系统有Oracle、SQL Server、DB 2、Sysbase 和 MySQL 等，本节介绍 MySQL 数据库管理系统使用和管理。
+
+### 数据库安装与配置
+
+目前 Oracle 提供了多个 MySQL 版本，其中社区版 MySQL Community Edition 是免费的，社区版本比较适合中小企业数据库。
+社区版下载地址是[https://dev.mysql.com/downloads/windows/installer/5.7.html](https://dev.mysql.com/downloads/windows/installer/5.7.html)。
+根据需要, 我只选择Custom（自定义安装）, 然后勾选了六大组件
+![](https://upload-images.jianshu.io/upload_images/1662509-a9376eccfccfdb88.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![](https://upload-images.jianshu.io/upload_images/1662509-76e90d33bf533eef.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/1662509-63660083c358f923.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/1662509-e5e1e8c1bc0de86e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/1662509-5e3ca019c8b8f220.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+### 连接MySQL服务器
+
+由于MySQL是C/S（客户端/服务器）结构的，所以应用程序包括它的客户端必须连接到服务器才能使用其服务功能。下面主要介绍MySQL本身客户端如何连接到服务器。
+* MySQL 5.6 Command Line Client快捷方式
+这个工具就是MySQL命令行客户端工具，可以使用MySQL命令行客户端工具连接到MySQL服务器，要求输入root密码。输入root密码按Enter键，如果密码正确则连接到MySQL服务器。
+
+* 通用的连接方式
+快速连接服务器方式连接的是本地数据库，如果服务器不在本地，而是在一个远程主机上，那么需要可以使用通用的连接方式。
+在操作系统下打开一个终端窗口，Windows下是命令行工具，在次输入mysql -h localhost -u root –p命令。
+> **提示**： mysql -h localhost -u root -p命令,参数说明：
+> -h：要连接的服务器主机名或IP地址，可以是远程的一个服务器主机，也可以是-hlocalhost方式没有空格。
+> -u：是服务器要验证的用户名，这个用户一定是数据库中存在的，并且具有连接服务器的权限，也可以是-uroot方式没有空格。
+> -p：是与上面用户对应的密码，也可以直接输入密码-p123456，123456是root密码。
+> 所以mysql -h localhost -u root -p命令也可以替换为mysql -hlocalhost -uroot -p123456。
+
+### 常见的管理命令
+* `help`
+* `exit` / `quit `
+* `show databases;` 查看数据库的命令
+* `create database DATABASE_NAME`
+* `drop database DATABASE_NAME`
+
+### 数据库表的管理
+`use DATABASE_NAME` 命令结尾没有分号。如果没有选择数据库
+`show tables;`查看有多少个数据表的命令
+`desc TABLE_NAME` 查看数据库中表信息
+
+## JDBC技术
+
+Java中数据库编程是通过JDBC（Java Database Connectivity）实现的。使用JDBC技术涉及到三种不同的角色：Java官方、开发人员和数据库厂商。
+![](https://upload-images.jianshu.io/upload_images/1662509-b4649e15e391fe4a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+### JDBC API
+
+JDBC API为Java开发者使用数据库提供了统一的编程接口，它由一组 Java 类和接口组成。这种类和接口来自于java.sql和javax.sql两个包。
+
+java.sql：这个包中的类和接口主要针对基本的数据库编程服务，如创建连接、执行语句、语句预编译和批处理查询等。同时也有一些高级的处理，如批处理更新、事务隔离和可滚动结果集等。
+
+javax.sql：它主要为数据库方面的高级操作提供了接口和类，提供分布式事务、连接池和行集等。
+
+```
+java.sql.SQLException: The server time zone value '°??ó?????÷??±ê×??±??' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:76)
+```
+解决办法: 添加后缀`?serverTimezone=GMT`
+
+### 建立数据连接
+驱动程序加载成功就可以进行数据库连接了。建立数据库连接可以通过调用 DriverManager 类的getConnection()方法实现，该方法有几个重载版本，如下所示。
+* static Connection getConnection(String url)：尝试通过一个URL建立数据库连接，调用此方法时，DriverManager会试图从已注册的驱动中选择恰当的驱动来建立连接。
+* static Connection getConnection(String url，Properties info)：尝试通过一个URL建立数据库连接，一些连接参数（如user和password）可以按照键值对的形式放置到info中，Properties是Hashtable的子类，它是一种Map结构。
+* static Connection getConnection(String url, String user, String password)：尝试通过一个URL建立数据库连接，指定数据库用户名和密码。
+
+JDBC的URL类似于其他场合的URL，它的语法如下：
+`jdbc:<subprotocol>:<subname>`
+这里有三个部分，它们用冒号隔离。
+* 协议：jdbc表示协议，它是唯一的，JDBC只有这一种协议。
+* 子协议：主要用于识别数据库驱动程序，也就是说，不同的数据库驱动程序的子协议不同。
+* 子名：它属于专门的驱动程序，不同的专有驱动程序可以采用不同的实现。
+
+对于不同的数据库，厂商提供的驱动程序和连接的URL都不同，在这里总结后如表所示。
+![](https://upload-images.jianshu.io/upload_images/1662509-7871268f2211a490.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+> 注意　Connection对象代表的数据连接不能被 JVM 的垃圾收集器回收，在使用完连接后必须关闭（调用close()方法），否则连接会保持一段比较长的时间，直到超时。Java 7之前都在finally模块中关闭数据库连接。Java 7之后可以 Connection 接口继承了AutoCloseable接口，可以通过自动资源管理技术释放资源。
+
+### 下面重点介绍一下JDBC API中最重要的三个接口：Connection、Statement和ResultSet
+
+1. Connection接口
+java.sql.Connection接口的实现对象代表与数据库的连接，也就是在Java程序和数据库之间建立连接。Connection接口中常用的方法：
+* Statement createStatement()：创建一个语句对象，语句对象用来将SQL语句发送到数据库。
+
+```
+createStament有一种重载形式:
+conn.createStament(int, int) 的进一步说明
+结果集的特性
+是否可滚动
+是否敏感
+是否可更新
+
+Result.TYPE_FORWARD_ONLY: 不滚动结果集 
+Result.TYPE-SCROLL_INSENSITIVE: 滚动且不敏感
+Result.TYPE-SCROLL_SENSITIVE: 滚动且敏感
+
+CONCUR_READ_ONLY: 结果集是只读的
+CONCUR_UPDATABLE: 结果集是可更新的
+```
+
+* PreparedStatement prepareStatement(String sql)：创建一个预编译的语句对象，用来将参数化的SQL语句发送到数据库，参数包含一个或者多个问号“?”占位符。
+* CallableStatement prepareCall(String sql)：创建一个调用存储过程的语句对象，参数是调用的存储过程，参数包含一个或者多个问号“?”为占位符。
+* close()：关闭到数据库的连接，在使用完连接后必须关闭，否则连接会保持一段比较长的时间，直到超时。
+* isClosed()：判断连接是否已经关闭。
+
+2. Statement接口
+java.sql.Statement 称为语句对象，它提供用于向数据库发出SQL语句，并且访问结果。Connection 接口提供了生成 Statement 的方法，一般情况下可以通过connection.createStatement() 方法就可以得到 Statement 对象。
+
+有三种Statement接口：java.sql.Statement、java.sql.PreparedStatement和java.sql.CallableStatement，其中PreparedStatement继承Statement接口，CallableStatement继承PreparedStatement接口。Statement实现对象用于执行基本的**SQL语句**，PreparedStatement实现对象用于执行**预编译的SQL语句**，CallableStatement实现对象用于用来调用数据库中的**存储过程**。
+
+PreparedStatement 的好处:
+1. 防止sql攻击
+2. 提高代码的可读性, 可维护性 (对于有参的情况, 通过 ? 占位符, 严格要求的参数的个数和类型)
+3. 提高效率
+
+如何得到 PreparedStatement 对象
+* 给出 sql 模块
+* 调用conn.preparedStatement(sql模板);
+* 调用pstmp 的 setxxx() 系列方法sql模板中的 ? 赋值
+* 调用pstmp 的 exectureUpdate() 或 executeQuery(), 但它的方法都没有参数
+
+> **注意**　预编译SQL语句是在程序编译的时一起进行编译，这样的语句在数据库中执行时候，不需要编译过程，直接执行SQL语句，所以速度很快。在预编译SQL语句会有一些程序执行时才能确定的参数，这些参数采用“?”占位符，直到运行时再用实际参数替换。
+
+
+Statement提供了许多方法，最常用的方法如下：
+* executeQuery()：运行查询语句，返回ResultSet对象。
+* executeUpdate()：运行更新操作，返回更新的行数。
+* close()：关闭语句对象。
+* isClosed()：判断语句对象是否已经关闭。
+```java
+// Statement
+Connection conn = DriverManager.getConnection("jdbc:odbc:accessdb",  "admin",  "admin");
+Statement stmt = conn.createStatement();
+ResultSet rst = stmt.executeQuery("select userid, name from user");
+
+// PreparedStatement
+Connection conn = DriverManager.getConnection("jdbc:odbc:accessdb",  "admin",  "admin");
+PreparedStatement pstmt = conn.prepareStatement("insert into user values(?，?)");
+pstmt.setInt(1,10);           //绑定第一个参数
+pstmt.setString(2,"guan");    //绑定第二个参数
+pstmt.executeUpdate();        //执行SQL语句
+
+// CallableStatement对象用于执行对数据库已存储过程的调用
+Connection conn = DriverManager.getConnection("jdbc:odbc:accessdb",  "admin",  "admin");
+strSQL = "{call proc_userinfo(?，?)}";
+java.sql.CallableStatement sqlStmt = conn.prepaleCall(strSQL);
+sqlStmt.setString(1，"tony");
+sqIStmt.setString(2，"tom");
+//执行存储过程
+int i = sqlStmt.exeCuteUpdate();
+```
+> 注意　PreparedStatement绑定参数时需要注意两个问题：绑定参数顺序和绑定参数的类型，绑定参数索引是从**1开始**，而不是从0开始的。根据绑定参数的类型不同选择对应的set方法。
+
+> 启用mysql的预处理
+
+
+3. ResultSet接口
+在Statement执行SQL语句时，如果是SELET语句会返回结果集，结果集通过接口java.sql.ResultSet描述的，它提供了逐行访问结果集的方法，通过该方法能够访问结果集中不同字段的内容。
+ResultSet提供了检索不同类型字段的方法，最常用的方法介绍如下：
+* close()：关闭结果集对象。
+* isClosed()：判断结果集对象是否已经关闭。
+* next()：将结果集的光标从当前位置向后移一行。
+* getString()：获得在数据库里是CHAR 或 VARCHAR等字符串类型的数据，返回值类型是String。
+* getFloat()：获得在数据库里是浮点类型的数据，返回值类型是float。
+* getDouble()：获得在数据库里是浮点类型的数据，返回值类型是double。
+* getDate()：获得在数据库里是日期类型的数据，返回值类型是java.sql.Date。
+* getBoolean()：获得在数据库里是布尔数据的类型，返回值类型是boolean。
+* getBlob()：获得在数据库里是Blob(二进制大型对象)类型的数据，返回值类型是Blob类型。
+* getClob()：获得在数据库里是Clob(字符串大型对象)类型的数据，返回值类型是Clob。
+
+这些方法要求有列名或者列索引，如getString()方法的两种情况：
+* public String getString(int columnlndex) throws SQLException
+* public String getString(String columnName) throws SQLException
+
+方法getXXX提供了获取当前行中某列值的途径，在每一行内，可按任何次序获取列值。使用列索引有时会比较麻烦，这个顺序是select语句中的顺序：
+```java
+select * from user
+select userid, name from user
+select name,userid from user
+```
+
+## 案例：数据CRUD操作
+
+对数据库表中数据可以进行4类操作：数据插入（Create）、数据查询（Read）、数据更新（Update）和数据删除（Delete），也是俗称的“增、删、改、查”。
+
+本节通过一个案例介绍如何通过JDBC技术实现Java对数据的CRUD操作。
+![数据库编程的一般过程](https://upload-images.jianshu.io/upload_images/1662509-2173f39e4591cace.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+上述步骤是基本的一般步骤，实际情况会有所变化，例如没有参数需要绑定，则第4步骤就省略了。还有，如果Connection对象、Statement对象和ResultSet对象都采用自动资源管理技术释放资源，那么第7步骤也可以省略。
+
+为了介绍数据查询操作案例，这里准备了一个User表，它有两个字段name和userid。
+![User表结构](https://upload-images.jianshu.io/upload_images/1662509-bca522fa4b97cfef.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
+``` java
+// 查询最大的用户Id
+public static int readMaxUserId() {
+　
+    int maxId = 0;
+    try (
+            // 2.创建数据库连接
+            Connection conn = DriverManager.getConnection(url, info);
+            // 3. 创建语句对象
+            PreparedStatement pstmt = conn.prepareStatement("select max(userid) from user");
+            // 4. 绑定参数
+            // pstmt.setInt(1, 0);
+            // 5. 执行查询（R）
+            ResultSet rs = pstmt.executeQuery()) {
+        // 6. 遍历结果集
+        if (rs.next()) {
+            maxId = rs.getInt(1);
+        }
+　
+    } catch (SQLException e) {
+        e.printStackTrace();
+    }
+　
+    return maxId;
+}
+
+// 数据插入操作
+public static void create() {
+　
+    try ( // 2.创建数据库连接
+            Connection conn = DriverManager.getConnection(url, info);
+            // 3. 创建语句对象
+            PreparedStatement pstmt
+                = conn.prepareStatement("insert into user (userid, name) values (?,?)")) { ①
+　
+        // 查询最大值
+        int maxId = readMaxUserId();
+　
+        // 4. 绑定参数
+        pstmt.setInt(1, ++maxId);                    
+        pstmt.setString(2, "Tony" + maxId);          
+        // 5. 执行修改（C、U、D）
+        int affectedRows = pstmt.executeUpdate();    
+　
+        System.out.printf("成功插入%d条数据。\n", affectedRows);
+　
+    } catch (SQLException e) {
+        e.printStackTrace();
+    }
+}
+
+// 数据更新操作
+public static void update() {
+　
+    try ( // 2.创建数据库连接
+            Connection conn = DriverManager.getConnection(url, info);
+            // 3. 创建语句对象
+            PreparedStatement pstmt
+                = conn.prepareStatement("update user set name = ? where userid > ?")) {
+　
+        // 4. 绑定参数
+        pstmt.setString(1, "Tom");
+        pstmt.setInt(2, 30);
+        // 5. 执行修改（C、U、D）
+        int affectedRows = pstmt.executeUpdate();
+　
+        System.out.printf("成功更新%d条数据。\n", affectedRows);
+　
+    } catch (SQLException e) {
+        e.printStackTrace();
+    }
+}
+
+// 数据删除操作
+public static void delete() {
+　
+    try ( // 2.创建数据库连接
+            Connection conn = DriverManager.getConnection(url, info);
+            // 3. 创建语句对象
+            PreparedStatement pstmt = conn.prepareStatement("delete from user where userid = ?")) {
+　
+        // 查询最大值
+        int maxId = readMaxUserId();
+　
+        // 4. 绑定参数
+        pstmt.setInt(1, maxId);
+        // 5. 执行修改（C、U、D）
+        int affectedRows = pstmt.executeUpdate();
+　
+        System.out.printf("成功删除%d条数据。\n", affectedRows);
+　
+    } catch (SQLException e) {
+        e.printStackTrace();
+    }
+}
+```
+数据更新、数据删除与数据插入程序结构上非常类似，差别主要在于SQL语句的不同，绑定参数的不同。具体代码不再解释。
+
+## jdbc 的下载
+https://dev.mysql.com/downloads/connector/j/
+
+![](https://upload-images.jianshu.io/upload_images/1662509-946124b49ce9e637.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+或者 maven 引入即可.
+```
+<!-- 数据库驱动 -->
+<dependency>
+  <groupId>mysql</groupId>
+  <artifactId>mysql-connector-java</artifactId>
+  <version>8.0.11</version>
+</dependency>
+```
+
+### dao 模式
+* dao(data access object)模式就是一个类, 把访问数据库的代码封装起来. dao在数据库与业务逻辑(service)之间.
+* 实体域: 即操作的对象
+* dao 模式需要先提供一个dao接口
+* 然后在提供一个dao 的实现类
+* 在编写一个dao 工厂, service 通过工厂来获取dao实现
+
+### mysql 的 url 配置
+启用批处理
+首先my.ini 配置文件需要启用, 然后url需要启用rewriteBatchedStatements=true
+
+启用大数据 blob
+其实就是 file 和 blob 的转换
+file 转 blob
+```
+byte[] bytes = IOUtil.toByteArray(new FileInputStream("c:/abc.txt"));
+Blob blob = new SerialBlob(bytes);
+```
+然后就可以使用blob 了.
+
+blob 转 file
+```
+InputStream is = bolb.getBinaryStream();
+```
+
+### java 日期类型和sql日期类型的转换
+java.util包 转 sql包下: 
+Date -> java.sql.date
+Time -> java.sql.time
+timestamp -> java.sql.timestamp
+举例: `java.sql.Date sqlDate = new java.sql.Date(utilDate.getTime());`
+
+sql 转 java.util包下: 
+Date <- java.sql.date
+Time <- java.sql.time
+timestamp <- java.sql.timestamp
+举例: `java.util.Date date = sqlDate;`, 这是由于sql包下的这个都是util 包下的子类.
+
+## 要点
+
+导jar包, 驱动
+加载驱动类 Class.forName
+给出url, username, password, 其中url背下来!  jdbc://
+使用 driver manager
+
+## 参考
+
+第 28 章　数据库编程-图灵社区
+http://www.ituring.com.cn/book/tupubarticle/17724
