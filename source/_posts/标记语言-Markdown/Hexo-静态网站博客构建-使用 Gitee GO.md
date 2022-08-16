@@ -1,5 +1,5 @@
 ---
-title: Hexo-静态网站博客构建-使用 Gitee GO
+title: Hexo 静态网站博客构建-使用 Gitee GO
 date: 2022-08-05 00:00:00
 updated: 2022-08-14 22:52:00
 categories:

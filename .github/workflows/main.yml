@@ -1,4 +1,4 @@
-name: kaiLee DiaoDiaoDiao Action
+name: Build Gitee Pages Action
 on:
   push:
     branches:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 env:
-  NODE_VERSION: '16' # set this to the node version to use
+  NODE_VERSION: 'lts/*' # set this to the node version to use
 
 permissions:
   contents: read
@@ -34,8 +34,8 @@ jobs:
         run: |
           cd public
           git init
-          git config user.name "giteego"
-          git config user.email "giteego@github.fun"
+          git config user.name "GithubAction"
+          git config user.email "acc8226@qq.com"
           git add .
           git commit -m "committed by gitee go"
           git push -f https://${{ secrets.USERNAME }}:${{ secrets.ACCESSTOKEN }}@${{ secrets.HOSTNAME }}/${{ secrets.USERNAME }}/${{ secrets.REPOPATH }} master

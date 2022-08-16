@@ -32,8 +32,8 @@ stages:
           - npm install
           - hexo clean
           - hexo g
-          - git config --global user.name "giteego"
-          - git config --global user.email "giteego@feipig.fun"
+          - git config --global user.name "Gitee-Go"
+          - git config --global user.email "acc8226@qq.com"
           - git clone --depth 1 "https://$userName:$accessToken@$hostName/$userName/$repoPath"
           - cd $userName/
           - git rm -rf .
