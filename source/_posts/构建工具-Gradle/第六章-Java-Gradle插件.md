@@ -1,15 +1,17 @@
-我们已经知道，Gradle是一个非常灵活的构建框架，他提供了构建的基础核心，为了对具体的业务进行构建，Gradle在此基础上提供了插件的概念，这样就能基于Gradle进行很好的扩展，而不改变其核心基础，又能满足不同业务的需要，这也是我们在架构中参考的。
+我们已经知道，Gradle 是一个非常灵活的构建框架，他提供了构建的基础核心，为了对具体的业务进行构建，Gradle在此基础上提供了插件的概念，这样就能基于 Gradle 进行很好的扩展，而不改变其核心基础，又能满足不同业务的需要，这也是我们在架构中参考的。
 
 我们做过Java开发都了解，它的大体流程都差不多，无非就是依赖第三方库，编译源文件，进行单元测试，打包发布等等，每个Java工程都差不多，Gradle为了不让我们在每个Java工程里都做这些重复的劳动工作，为了我们提供了非常核心、常用的Java,我们只要应用它，就可以非常轻松的构建出一个项目了。
 
 ### 6.1 如何应用
+
 基于我们之前讲的应用插件章节，很容易的应用Java插件，我们常用的方式就是使用简称应用：
-    
+
 `apply plugin: 'java'`
 
 通过以上脚本应用之后，Java插件会为你的工程添加很多有用的默认设置和约定，比如源代码的位置，单元测试代码的位置，资源文件的位置等等，一般情况下我们最好都遵循它的默认设置，这样做的好处一来是我们不用写太多的脚本来自定义，二来便于团队协作，因为这是约定俗成的，大家都容易理解。
 
 ### 6.2 Java插件约定的项目结构
+
 我们前面的章节讲了Gradle的插件会为我们做一些默认设置和约定，这些约定很泛很杂，现在我们讲讲Java插件中为我们约定的Java的项目结构是怎样的，只有我们遵循了这些约定，Java插件才能找到我们的Java类，找到我们的资源进行编译，找到我们的单元测试类进行单元测试等等。
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-03b622835e123f93.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -17,7 +19,7 @@
 默认情况下，Java插件约定src/main/java下为我们的项目源代码存放目录；src/main/resources为要打包的文件存放目录，比如一些Properties配置文件和图片等；src/test/java为我们的单元测试用例存放目录，我们执行单元测试的时候，Gradle会在这个目录下搜索我们的单元测试用例执行；src/test/resources里存放的是我们单元测试中使用的文件。
 
 main和test是Java插件为我们内置的两个**源代码集合**，那么我们可以不可以自己添加一些呢，比如我有一个vip版本，是不是可以添加一个vip的目录来存放vip相关的java源码和文件呢，这个是完全可以的，如果要实现这个目的，我们在build脚本里这么配置
- 
+
 ![](http://upload-images.jianshu.io/upload_images/1662509-244c3a374368af23.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 添加一个vip的源代码集合（源集），然后我们在src下新建vip/java、vip/resources目录就可以分别存放vip相关的源代码和资源文件了。仿照例子我们可以添加很多的源集，他们默认的目录结构是：
@@ -34,7 +36,8 @@ src/sourceSet/resources
 一般从Eclipse工程迁移过来的时候，我们的目录结构还是src这样的，一时不好去改变目录，所以可以采用这种配置，更改Java插件默认的目录即可。
 
 ### 6.3  如何配置第三方依赖
-作为一个Java项目，不可避免的会依赖很多第三方Jar，这也是值得提倡的，因为有很多优秀的开源工具和框架让我们更高效的研发，而不是重复发明轮子。
+
+作为一个Java项目，不可避免的会依赖很多第三方 Jar，这也是值得提倡的，因为有很多优秀的开源工具和框架让我们更高效的研发，而不是重复发明轮子。
 
 要想使用这些第三方依赖，你要告诉Gradle如何找到这些依赖，也就是我们要讲的依赖配置。一般情况下我们都是从仓库中查找我们需要的Jar包，在Gradle中要配置一个仓库的Jar依赖，首先我们得告诉Gradle我们要使用什么类型的仓库，这些仓库的位置在哪里，这里Gradle从知道从哪里去搜寻我们依赖的Jar。
 
@@ -52,7 +55,7 @@ src/sourceSet/resources
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-7bc92f02e9bf3388.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-前面我们刚刚提了compile这个依赖，他是一个编译时依赖，那么有没有专门针对单元测试代码编译的依赖呢，比如junit4，我正常的代码编译时根本用不上，如果强制使用compile也可以，但是会junit4就会被打包到发布的产品中，这不能增加了产品的大小，也为维护带来了不变，所以Gradle为我们提供了**testCompile依赖**，它只会在编译单元测试用例是使用，不会打包到发布的产品中，职责分明。现在我们看看还为我们提供了哪些依赖。
+前面我们刚刚提了 compile 这个依赖，他是一个编译时依赖，那么有没有专门针对单元测试代码编译的依赖呢，比如junit4，我正常的代码编译时根本用不上，如果强制使用 compile 也可以，但是会junit4就会被打包到发布的产品中，这不能增加了产品的大小，也为维护带来了不变，所以 Gradle 为我们提供了**testCompile依赖**，它只会在编译单元测试用例是使用，不会打包到发布的产品中，职责分明。现在我们看看还为我们提供了哪些依赖。
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-e31e9d4b6c251b44.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -80,7 +83,8 @@ src/sourceSet/resources
 
 这样配置后，libs文件加下的扩展名为jar的都会被依赖，非常方便，这里用到的是Project的fileTree方法，而不是上面用的files方法。
 
-### 6.4 如何构建一个Java项目
+### 6.4 如何构建一个 Java 项目
+
 在Gradle中，执行任何操作都是任务驱动的，构建Java项目也不例外。Java插件为我们提供了很多任务，通过运行他们来达到我们构建Java项目的目的。最常用任务是build任务，运行它会构建你的整个项目，我们可以通过./gradlew build执行，然后gradle就会编译你的源码文件，处理你的资源文件，打成jar包，然后编译测试用例代码，处理测试资源，最后运行单元测试。下面我们运行下看看效果：
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-b7762df1f1767921.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -98,6 +102,7 @@ javadoc任务，可以为我们生成java格式的doc api文档。
 通过运行不同的任务，进行不同的构建，达到不同的目的。
 
 ### 6.5 源码集合(SourceSet)概念
+
 SourceSet-源代码集合-源集，是Java插件用来描述和管理源代码及其资源的一个抽象概念，是一个Java源代码文件和资源文件的集合。通过源集，我们可以非常方便的访问源代码目录，设置源集的属性，更改源集的java目录或者资源目录等等。
 
 有了源集，我们就能针对不同的业务和应用对我们源代码进行分组，比如用于主要业务产品的main以及用于单元测试的test，职责分明清晰。他们两个也是Java插件默认内置的两个标准源集。
@@ -110,7 +115,8 @@ Java插件在Project下为我们提供了一个sourceSets属性以及一个sourc
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-f24dd977ee830170.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-### 6.6 Java插件添加的任务
+### 6.6 Java 插件添加的任务
+
 Java插件为我们添加了很多有用的任务，我们已经介绍了一些，这一小结再详细介绍一些。
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-6963a76eedfff4fa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -124,6 +130,7 @@ Java插件为我们添加了很多有用的任务，我们已经介绍了一些�
 此外还有一些用于描述整个构建生命周期的任务，比如assemble，build，check等等，这里就不一一介绍了，想具体了解的可以参考相关文档。
 
 ### 6.7 Java插件添加的属性
+
 Java插件添加了很多常用的属性，这些属性都被添加到Project中，我们可以直接使用他们，比如我们前面已经用到的sourceSets。
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-7605e2adf20805b7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -131,6 +138,7 @@ Java插件添加了很多常用的属性，这些属性都被添加到Project中
 以上这些都是我们常用的属性，注意看它的类型，然后对比Gradle API文档看他没有有哪些可以使用的方法或者属性。
 
 ### 6.8 多项目构建
+
 多项目构建，其实就是多个Gradle项目一起构建，比如我们本书的例子已经是一个多项目了，他们一起通过Settings.gradle配置管理，每个项目里都有一个Build文件对该项目进行配置，然后采用项目依赖，就可以实现多个项目协作，这对于我们大项目的，模块化非常有用。
 
 下面我们以一个多项目构建的例子，来说明多个项目之间如果依赖构建。
@@ -166,7 +174,8 @@ subprojects可以对其所有的子项目进行配置，如果想对包括根项
 ### 6.9 如何发布构件
 有时候我们的项目是一个库工程，要发布Jar给其他工程使用，Gradle为我们提供了非常方便、功能抢到的发布功能，通过配置，我们可以把我们的jar包发布到本地目录、Maven库，Ivy库等等中。
 
-### 6.10 生成Idea和Eclipse配置
+### 6.10 生成 Idea 和 Eclipse 配置
+
 Gradle为我们提供了idea和eclipse插件来帮助我们生成不同IDE下的配置文件，这样我们就能直接使用不同的IDE导入项目即可，满足我们不同IDE下的快速配置开发。
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-f1e92ec024adedbd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -174,10 +183,12 @@ Gradle为我们提供了idea和eclipse插件来帮助我们生成不同IDE下的
 我们执行./gradlew :example610:idea就可以生成idea相关的工程配置文件，让我们使用IDEA可以直接把它作为IDEA工程导入；相似的执行./gradlew :example610:eclipse就能生成供Eclipse直接导入的Eclipse工程配置文件。
 
 ### 6.11 小结
+
 说不写小结，又忍不住了，呵呵。写小结因为这一章太重要，最大的目的还是希望大家仔细看，看明白，不明白的可以给我留言，我也会一一解答。
 
-Java工程是我们最熟悉最常用的工程，Java插件对此支持非常好，我们花了10个小节介绍Java，但是由于篇幅所限，还是有非常多的功能不能一一介绍，比如单元测试报告，Jar包的Manifest清单配置等等，如果大家有兴趣，可以想看相关文档，加深对Java插件的理解，理解了Java插件后，对于我们理解下章Android插件就容易多了。
+Java工程是我们最熟悉最常用的工程，Java 插件对此支持非常好，我们花了10个小节介绍Java，但是由于篇幅所限，还是有非常多的功能不能一一介绍，比如单元测试报告，Jar包的Manifest清单配置等等，如果大家有兴趣，可以想看相关文档，加深对 Java 插件的理解，理解了 Java 插件后，对于我们理解下章Android插件就容易多了。
 
 - - -
+
 本文属自学历程, 仅供参考
 详情请支持原书 [Android Gradle权威指南](https://yuedu.baidu.com/ebook/14a722970740be1e640e9a3e)

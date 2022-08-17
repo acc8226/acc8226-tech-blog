@@ -33,7 +33,7 @@ xmlns:custom="http://schemas.android.com/apk/res-auto"
 * 使每行 view 均分剩余空间
 * 可尝试增加目前流行的 tag 效果
 
-`FlowLayout.java `
+`FlowLayout.java`
 
 ```java
 package cn.lik.view;

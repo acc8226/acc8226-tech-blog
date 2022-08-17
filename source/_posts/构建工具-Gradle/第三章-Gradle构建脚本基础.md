@@ -5,11 +5,13 @@
 最后介绍的是自定义属性，他们有何作用，如何定义，什么时候会用到等等，最后最后强调的是脚本就是代码，以写代码的方式来写脚本，灵活运用。
 
 ### 3.1 Setting文件
+
 在Gradle中，定义了一个设置文件，用于初始化以及工程树的配置。设置文件的默认名字是settings.gradle，放在根工程目录下。
 
 设置文件大多数的作用都是为了配置子工程。在Gradle多工程是通过工程树表示的，就相当于我们在Android Studio看到的Project和Module概念一样。根工程相当于Android Studio中的Project，一个根工程可以有很多子工程，也就是很多Module，这样就和Android Studio定义的Module概念对应上了。
 
 ### 3.2 Build文件
+
 每个Project都会有一个build文件，该文件是该Project构建的入口，可以在这里针对该Project进行配置，比如配置版本，需要哪些插件，依赖哪些库等等。
 
 既然每个Project都会有一个build文件，那么Root Project也不例外。Root Project可以获取到所有的Child Project，所以在Root Project的build文件里我们可以对Child Project统一配置，比如应用的插件，依赖的Maven中心库等等。这一点Gradle早就考虑到了，为我们提供了便捷的方法进行配置，比如配置所有Child Project的的仓库为jcenter，这样我们依赖的jar包就可以从jcenter中心库中下载了：
@@ -24,7 +26,8 @@
 
 上面讲了很多配置，但是大家不要误以为subprojects和allprojects只能配置，他们只是两个方法，接受一个闭包作为参数，对工程进行遍历，遍历的过程中调用我们自定义的闭包，所以我们可以在闭包里配置，打印，输出，修改Project的属性都可以。
 
-### 3.3 Projects以及tasks
+### 3.3 Projects 以及 tasks
+
 其实一个Project就是在你的业务范围内，被你抽象出来的一个个独立的模块，你可以根据你的情况抽象归类，最后这一个个的Project组成了你的整个Gradle构建。
 
 从我们编码的角度讲，他们就是一个个独立的模块，好好利用他们吧，这样你的代码就能够做到低耦合、高内聚啦。
@@ -34,7 +37,7 @@
 ### 3.4 创建一个任务
 这里的task看着像一个关键字，其实他是Project对象的一个函数，原型为create(String name, Closure configureClosure)
 ```
-task customTask1 {		
+task customTask1 {
 	doFirst{
 		println 'do first'
 	}
@@ -44,7 +47,7 @@ task customTask1 {
 }
 
 //我们还可以通过TaskContainer创建任务，Project对象已经默认定义好了TaskContainer，这就是tasks：
-tasks.create('customTask2') {		
+tasks.create('customTask2') {
 	doFirst{
 		println 'do first2'
 	}
@@ -57,26 +60,26 @@ tasks.create('customTask2') {
 ### 3.5 任务依赖
 任务之间使可以有依赖关系的，这样我们就能控制哪些任务先于哪些任务执行，哪些任务执行后，其他任务才能执行。比如我们运行jar任务之前，compile任务一定要执行过，也就是jar依赖于compile；Android的install任务一定要一来package任务进行打包生成apk，然后才能install设备里。
 ```
-task hello {		
+task hello {
 	doLast{
 		println 'hello'
 	}
 }
 
-task world {		
+task world {
 	doLast{
 		println 'world'
 	}
 }
 
-task exTask(dependsOn: hello) {		
+task exTask(dependsOn: hello) {
 	doLast{
 		println '---Task end---'
 	}
 }
 
-task exMultiTask {	
-	dependsOn hello, world	
+task exMultiTask {
+	dependsOn hello, world
 	doLast{
 		println '---MultiTask end---'
 	}
@@ -111,14 +114,14 @@ ext{
 	address = 'xiang'
 }
 
-task customProperty {	
-	ext.inner = 'innnnnner'					
-					
+task customProperty {
+	ext.inner = 'innnnnner'
+
 	doLast{
 		println project.hasProperty('customProperty') //true
 		println project.hasProperty('age') //true
 		println project.hasProperty('inner')//返回fasle
-				
+
 		println "${age}"
 		println "${phone}"
 		println "${inner}"

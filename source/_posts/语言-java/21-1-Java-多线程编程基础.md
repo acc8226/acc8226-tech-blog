@@ -3,27 +3,27 @@
 进程: 一个正在执行的程序。每个进程执行都有一个执行顺序，该顺序是一个执行路径，或叫一个控制单元。一个进程至少有一个线程。
 
 线程：就是进程中的一个独立的控制单元. 线程控制这进程的执行。
-          
+
 多进程的缺点：进程切换开销大；进程间的通信不方便。
-          
+
 多线程: 指的是在单个程序中可以同时运行多个不同的线程，执行不同的任务，线程切换的开销小 。
 
 在 Java 中，当我们启动 main 函数时其实就启动了一个 JVM 的进程，而 main 函数所在的线程就是这个进程中的一个线程，也称主线程。
 
 ## 线程创建与运行
- 
+
 Java 中表示线程，用到了 Thread 类。其构造方法如下:
 
 ``` java
 public Thread（）；
-public Thread （ThreadGroup group，Runnable target，String name）;     
+public Thread （ThreadGroup group，Runnable target，String name）;
 public Thread（Runnable target）；
 public Thread（Runnable target，String name）；
 public Thread（String name）；
 public Thread（ThreadGroup group，Runnable target）；
-public Thread（ThreadGroup group，String name）； 
+public Thread（ThreadGroup group，String name）；
 ```
-  
+
 线程创建的三种方式
  * 继承 Thread 类实现多线程    　　　　
  * 实现 Runnable 接口编写多线程，将一个 Runnable 接口对象传递给线程，线程在调度时将自动调用 Runnable 接口对象的 run方法。
@@ -42,24 +42,24 @@ public Thread（ThreadGroup group，String name）；
 • 基本类型的值不可变，因此不能（也无需）锁定。
 • 接口中声明的方法不能使用 synchronized 修饰。
 • 内部类只是语法糖，因此内部类的锁对外层类无效（反过来亦然）。
-• Java 的锁可重入*（reentrant）*。这意味着，如果一个线程拥有一个监视器，这个线程遇到具有同一个监视器的同步代码块时，可以进入这个代码块。 
+• Java 的锁可重入*（reentrant）*。这意味着，如果一个线程拥有一个监视器，这个线程遇到具有同一个监视器的同步代码块时，可以进入这个代码块。
 
 wait() 和 notify() 方法必须在 synchronized 修饰的方法或代码块中使用，因为只有临时把锁放弃，这两个方法才能正常工作。
 
 ## 线程调度与优先级(体现了多线程的随机性)
-    
-Java 采用抢占式调度策略,下面几种情况下，当前线程会放弃CPU： 
-1. 当前时间片用完； 
-2. 线程在执行时调用了`yield() `或`sleep() `方法主动放弃；  
-3. 进行 I/O 访问，等待用户输入，导致线程阻塞；或者为等候一个条件变量，线程调用`wait`方法；    
+
+Java 采用抢占式调度策略,下面几种情况下，当前线程会放弃CPU：
+1. 当前时间片用完；
+2. 线程在执行时调用了`yield() `或`sleep() `方法主动放弃；
+3. 进行 I/O 访问，等待用户输入，导致线程阻塞；或者为等候一个条件变量，线程调用`wait`方法；
 4. 有高优先级的线程参与调度。
 
 **线程的优先级**
-用数字来表示，范围从 1~10。主线程的默认优先级为 5。  
+用数字来表示，范围从 1~10。主线程的默认优先级为 5。
   ``` java
       // 三个常用的优先级
-      Thread.MIN_PRIORITY=1          
-      Thread.NORM_PRIORITY=5 　　　 
+      Thread.MIN_PRIORITY=1
+      Thread.NORM_PRIORITY=5 　　　
       Thread.MAX_PRIORITY=10
   ```
      　
@@ -170,15 +170,15 @@ Java 平台会为它创建的每个对象记录一个特殊的标记，这个标
 
 > 同步是保护状态的一种协助机制，因此非常脆弱。一个缺陷（需要使用synchronized 修饰的方法却没有使用）就可能为系统的整体安全性带来灾难性的后果。
 
-* 对象如同锁，持有锁的线程可以在同步中执行。          
+* 对象如同锁，持有锁的线程可以在同步中执行。
 * 没有持有锁的线程即使获取 CPU 的执行权，也进不去，因为没有获取锁。
-          
-同步的前提:               
-1. 必须要有两个或者以上的线程               
-2. 必须要多个线程使用同一个锁     
-          
-好处:解决了多线程的安全问题          
-弊端:多个线程需要判断锁,较为消耗资源.     
+
+同步的前提:
+1. 必须要有两个或者以上的线程
+2. 必须要多个线程使用同一个锁
+
+好处:解决了多线程的安全问题
+弊端:多个线程需要判断锁,较为消耗资源.
 
 ##  synchronized 关键字
 
@@ -259,10 +259,10 @@ public class Ch21_1_DeadLockDemo {
 				synchronized (ThreadB.class) {
 				}
 			}
-			
+
 		}
 	}
-	
+
 	static class ThreadB extends Thread {
 		@Override
 		public void run() {
@@ -275,7 +275,7 @@ public class Ch21_1_DeadLockDemo {
 				synchronized (ThreadA.class) {
 				}
 			}
-			
+
 		}
 	}
 

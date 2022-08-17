@@ -1,6 +1,7 @@
 ## [What plugins do 插件的作用](https://docs.gradle.org/6.3/userguide/plugins.html#sec:what_plugins_do)
 
 在项目中应用插件可以扩展项目的能力，它可以做以下事情:
+
 * 扩展 Gradle 模型(例如，添加可配置的新 DSL 元素)
 * 根据约定配置项目(例如添加新任务或配置合理的默认值)
 * 应用特定的配置(例如添加组织存储库或执行标准)
@@ -69,8 +70,8 @@ plugins {
 
 ```
 plugins {
-    id «plugin id»                                            
-    id «plugin id» version «plugin version» [apply «false»]   
+    id «plugin id»
+    id «plugin id» version «plugin version» [apply «false»]
 }
 ```
 

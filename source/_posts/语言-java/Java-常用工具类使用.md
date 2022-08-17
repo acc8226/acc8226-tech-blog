@@ -38,21 +38,20 @@ deeTtoString
 deepEquals
 deepHashCode
 
-其实，Arrays中包含的数组方法是比较少的，很多常用的操作没有，比如，Arrays的binarySearch只能针对已排序数组进行查找，那没有排序的数组怎么方便查找呢？Apache有一个开源包（http://commons.apache.org/proper/commons-lang/），里面有一个类ArrayUtils（位于包org.apache.commons.lang3），包含了更多的常用数组操作，这里就不列举了。数组是计算机程序中的基本数据结构，Arrays类以及ArrayUtils类封装了关于数组的常见操作，使用这些方法，避免“重新发明轮子”吧。
+其实，Arrays 中包含的数组方法是比较少的，很多常用的操作没有，比如，Arrays的binarySearch只能针对已排序数组进行查找，那没有排序的数组怎么方便查找呢？Apache有一个开源包（http://commons.apache.org/proper/commons-lang/），里面有一个类 ArrayUtils（位于包org.apache.commons.lang3），包含了更多的常用数组操作，这里就不列举了。数组是计算机程序中的基本数据结构，Arrays 类以及 ArrayUtils 类封装了关于数组的常见操作，使用这些方法，避免“重新发明轮子”吧。
 
 ## Collections 类
 
 ## 补充类库-Apache Commons 系列
 
-官网地址 http://commons.apache.org/
-http://commons.apache.org/proper/commons-lang/
+官网地址 <http://commons.apache.org/>
+<http://commons.apache.org/proper/commons-lang/>
 
-**Apache Commons Lang** - http://commons.apache.org/proper/commons-lang/
+**Apache Commons Lang** - <http://commons.apache.org/proper/commons-lang/>
 Apache Commons Lang 为 java.Lang API 提供了许多 helper 实用程序，特别是字符串操作方法、基本的数值方法、对象反射、并发性、创建和序列化以及系统属性。此外，它还包含对 java.util 的基本增强。Date 和一系列实用程序，专门用于帮助构建方法，如 hashCode、 toString 和 equals。
 
 * ArrayUtils（位于包org.apache.commons.lang3），包含了更多的常用数组操作。
 
-**Apache Commons IO**-https://commons.apache.org/proper/commons-io/
+**Apache Commons IO**-<https://commons.apache.org/proper/commons-io/>
 
 ## 补充类库-guava 库
-

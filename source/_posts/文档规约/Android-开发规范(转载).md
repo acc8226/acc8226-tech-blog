@@ -90,7 +90,7 @@ categories: 文档规约
 
 如要知道更多好处，可以查看这篇博文：**[Package by features, not layers][Package by features, not layers]**，当然，我们大谷歌也有相应的 Sample：**[todo-mvp][todo-mvp]**，其结构如下所示，很值得学习。
 
-```
+```text
 com
 └── example
     └── android

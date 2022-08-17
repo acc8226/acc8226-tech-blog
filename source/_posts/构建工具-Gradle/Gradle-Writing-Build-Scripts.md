@@ -23,7 +23,7 @@ projectApi
 
 | Name | Type | Default Value |
 | --- | --- | --- |
-| `project` | [Project](https://docs.gradle.org/6.3/dsl/org.gradle.api.Project.html) | The `Project` instance 
+| `project` | [Project](https://docs.gradle.org/6.3/dsl/org.gradle.api.Project.html) | The `Project` instance
 | `name` | `String` | The name of the project directory.
 |`path` | `String` | The absolute path of the project.
 |`description` | `String` | A description for the project.
@@ -48,6 +48,7 @@ projectApi
 ### [Local variables 局部变量](https://docs.gradle.org/6.3/userguide/writing_build_scripts.html#sec:local_variables)
 
 使用 def 关键字声明局部变量。 它们只能在声明它们的范围内可见。 局部变量是底层 Groovy 语言的一个特性。
+
 ```
 def dest = "dest"
 
@@ -96,7 +97,7 @@ task printProperties {
 }
 ```
 
-```
+```sh
 > gradle -q printProperties
 3.1.0.RELEASE
 build@master.org
@@ -114,7 +115,7 @@ plugin
 
 您可以用以下非常易读的方式配置任意对象。
 
-```
+```java
 import java.text.FieldPosition
 
 task configure {
@@ -132,7 +133,7 @@ task configure {
 ## [Configuring arbitrary objects using an external script 使用外部脚本配置任意对象](https://docs.gradle.org/6.3/userguide/writing_build_scripts.html#sec:configuring_arbitrary_objects_using_an_external_script)
 build.gradle
 
-```
+```gradle
 task configure {
     doLast {
         def pos = new java.text.FieldPosition(10)
@@ -145,7 +146,8 @@ task configure {
 ```
 
 other.gradle
-```
+
+```groovy
 // Set properties.
 beginIndex = 1
 endIndex = 5
@@ -220,8 +222,8 @@ repositories({ println "in a closure" })
 
 ### [Closure delegate 结束代表](https://docs.gradle.org/6.3/userguide/writing_build_scripts.html#sec:closure_delegate)
 
-
 每个闭包都有一个委托对象，Groovy 使用这个对象查找变量和方法引用，这些变量和方法引用不是闭包的局部变量或参数。 Gradle 将此用于配置闭包，其中将 delegate 对象设置为要配置的对象。
+
 ```
 dependencies {
     assert delegate == project.dependencies
@@ -235,7 +237,8 @@ dependencies {
 为了使构建脚本更简洁，Gradle 自动向 Gradle 脚本添加一组 import 语句。 这意味着不使用 throw new org.gradle.api.tasks。 Stopexecutionexception ()可以直接键入 throw new StopExecutionException ()。
 
 下面列出了添加到每个脚本中的导入:
-```
+
+```text
 import org.gradle.*
 import org.gradle.api.*
 import org.gradle.api.artifacts.*

@@ -1,8 +1,8 @@
-Android Gradle为我们提供了大量的DSL，我们使用这些DSL定义配置我们的工程以满足我们项目中不同的需求。这些DSL有很多，在上一章演示Android Gradle工程示例的时候，我们已经大概介绍了compileSdkVersion、buildToolsVersion以及defaultConfig等，这一章我们再详细介绍一些常用的DSL配置，这些配有有签名信息、构建类型、代码混淆、zipAlign对齐压缩等。
+Android Gradle 为我们提供了大量的 DSL，我们使用这些 DSL 定义配置我们的工程以满足我们项目中不同的需求。这些DSL有很多，在上一章演示Android Gradle工程示例的时候，我们已经大概介绍了compileSdkVersion、buildToolsVersion以及defaultConfig等，这一章我们再详细介绍一些常用的 DSL 配置，这些配有有签名信息、构建类型、代码混淆、zipAlign 对齐压缩等。
 
 ### 8.1 defaultConfig默认配置
 
-defaultConfig是android对象中的一个配置块，负责定义所有的默认配置，它是一个ProductFlavor，如果一个ProductFlavor没有被特殊定义配置的话，默认就会使用defaultConfig{}块指定的配置，比如包名、版本号、版本名称等。
+defaultConfig 是 android 对象中的一个配置块，负责定义所有的默认配置，它是一个ProductFlavor，如果一个ProductFlavor没有被特殊定义配置的话，默认就会使用defaultConfig{}块指定的配置，比如包名、版本号、版本名称等。
 
 一个基本上的defaultConfig配置如下：
 

@@ -16,20 +16,20 @@ gradle_user_home（在远程仓库下载的jar包保存到该路径下）
 
 Gradle的配置文件为用户根目录下的：~/.gradle/init.gradle（Windows路径为：C:\Users\<UserName>\.gradle\ init.gradle）。
 
-```
+```gradle
 allprojects{
-	repositories {
-		maven {
-			url 'https://mirrors.huaweicloud.com/repository/maven/'
-		}
-	}
-	buildscript {
-		repositories {
-			maven {
-				url 'https://mirrors.huaweicloud.com/repository/maven/'
-			}
-		}
-	}
+    repositories {
+        maven {
+            url 'https://mirrors.huaweicloud.com/repository/maven/'
+        }
+    }
+    buildscript {
+        repositories {
+            maven {
+                url 'https://mirrors.huaweicloud.com/repository/maven/'
+            }
+        }
+    }
 }
 ```
 

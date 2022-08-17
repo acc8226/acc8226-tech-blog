@@ -14,6 +14,7 @@ public interface Serializable
 现给出一串数据（313, 89, 123, 323, 313, 15, 90, 56, 39）求出最大值和最小值并输出。
 
 方法一：排序后输出
+
 ```java
         Arrays.sort(data);
         System.out.println(data[0]);
@@ -21,12 +22,13 @@ public interface Serializable
 ```
 
 方法二：转成流后获取 max 和 min
+
 ```java
         System.out.println(Arrays.stream(data).min().getAsInt());
         System.out.println(Arrays.stream(data).max().getAsInt());
 ```
 
-## 18位身份证号加权校验方法
+## 18 位身份证号加权校验方法
 
 ```java
     /**
@@ -66,4 +68,4 @@ public interface Serializable
 ## 参考资料
 
 Guava - ImportNew 专注于 Java 技术分享。
-http://www.importnew.com/tag/guava
+<http://www.importnew.com/tag/guava>

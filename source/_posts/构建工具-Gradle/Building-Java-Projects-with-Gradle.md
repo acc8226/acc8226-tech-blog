@@ -2,6 +2,7 @@
 在您选择的项目目录中，创建以下子目录结构; 例如，使用  `mkdir -p src/main/java/hello` on *nix systems.
 
 `src/main/java/hello/HelloWorld.java`
+
 ```java
 package hello;
 
@@ -14,6 +15,7 @@ public class HelloWorld {
 ```
 
 `src/main/java/hello/Greeter.java`
+
 ```java
 package hello;
 
@@ -25,23 +27,26 @@ public class Greeter {
 ```
 
 ## Install Gradle
-Now that you have a project that you can build with Gradle, you can install Gradle. 
+
+Now that you have a project that you can build with Gradle, you can install Gradle.
 It’s highly recommended to use an installer:
 
-*   [SDKMAN](https://sdkman.io/)
-*   [Homebrew](https://brew.sh/) (brew install gradle)
+* [SDKMAN](https://sdkman.io/)
+* [Homebrew](https://brew.sh/) (brew install gradle)
 
 作为最后的手段，如果这两个工具都不适合您的需要，您可以从 https://www.gradle.org/downloads 下载二进制文件。 只需要二进制文件，因此查找 gradle-version-bin.zip 的链接。 (您还可以选择 gradle-version-all.zip 来获取源代码和文档以及二进制文件。)
 
 Unzip the file to your computer, and add the bin folder to your path.
 
 To test the Gradle installation, run Gradle from the command-line:
+
 ```
 gradle
 ```
 
 If all goes well, you see a welcome message:
 ```
+
 :help
 
 Welcome to Gradle 2.3.
@@ -58,6 +63,7 @@ Total time: 2.675 secs
 ```
 
 ### Find out what Gradle can do
+
 现在已经安装了 Gradle，看看它能做什么。 在为项目创建 build.gradle 文件之前，可以询问它有哪些任务可用:`gradle tasks`
 
 您应该看到可用任务的列表。 假设你在一个没有 build.Gradle 文件的文件夹中运行 Gradle，你会看到一些非常基本的任务.
@@ -67,6 +73,7 @@ Total time: 2.675 secs
 说到添加插件，接下来你需要添加一个插件来实现基本的 Java 构建功能。
 
 ### Build Java code
+
 Starting simple, create a very basic `build.gradle` file in the <project folder> you created at the beginning of this guide. Give it just just one line:
 
 ```
@@ -82,12 +89,15 @@ gradle build
 
 几秒钟后，“ BUILD SUCCESSFUL”表示构建已经完成。
 要查看构建工作的结果，请查看构建文件夹。 其中你会发现几个目录，包括这三个显要的文件夹:
+
 * classes. The project’s compiled .class files.
 * reports. Reports produced by the build (such as test reports).
 * libs. Assembled project libraries (usually JAR and/or WAR files).
 
 ### Declare dependencies
+
 First, change HelloWorld.java to look like this:
+
 ```java
 package hello;
 
@@ -110,7 +120,9 @@ repositories {
     mavenCentral()
 }
 ```
+
 现在我们已经为第三方库做好了准备，让我们声明一些。
+
 ```
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
@@ -122,17 +134,20 @@ dependencies {
 ```
 
 Finally, let’s specify the name for our JAR artifact.
+
 ```
 jar {
     baseName = 'gs-gradle'
     version =  '0.1.0'
 }
 ```
+
 Jar 块指定如何命名 JAR 文件。 在本例中，它将呈现 gs-gradle-0.1.0.jar。
 
 现在，如果您运行 Gradle build，Gradle 应该解决来自 Maven Central 存储库的 Joda Time 依赖关系，构建将会成功。
 
 ### Build your project with Gradle Wrapper 使用 Gradle 包装器构建项目
+
 Gradle 包装器是启动 Gradle 构建的首选方式。 它由一个用于 Windows 的批处理脚本和一个用于 OS x 和 Linux 的 shell 脚本组成。 这些脚本允许您运行 Gradle 构建，而不需要在系统上安装 Gradle。 这曾经是一些添加到你的构建文件，但它已经被折叠到 Gradle，所以不再有任何需要。 相反，您只需使用以下命令。
 ```
 $ gradle wrapper --gradle-version 2.13

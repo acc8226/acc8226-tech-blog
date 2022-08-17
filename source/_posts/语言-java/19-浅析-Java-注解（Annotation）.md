@@ -1,15 +1,15 @@
-Java 5之后可以在源代码中嵌入一些补充信息，这种补充信息称为注解（Annotation），例如在方法覆盖中使用过的@Override注解，注解都是**@符号开头**的。
+Java 5之后可以在源代码中嵌入一些补充信息，这种补充信息称为注解（Annotation），例如在方法覆盖中使用过的@Override 注解，注解都是**@符号开头**的。
 
 注解并不能改变程序运行的结果，不会影响程序运行的性能。有些注解可以在编译时给用户提示或警告，有的注解可以在运行时读写字节码文件信息。
 
 ## 五个基本注解
 
-无论是哪一种注解，本质上都一种数据类型，是一种接口类型。到Java 8为止Java SE提供11种内置注解。其中有 5 种是基本注解，它们来自于java.lang包。有6个是元注解（Meta Annotation），它们来自于java.lang.annotation包，自定义注解会用到元注解。
+无论是哪一种注解，本质上都一种数据类型，是一种接口类型。到 Java 8 为止 Java SE 提供11种内置注解。其中有 5 种是基本注解，它们来自于java.lang包。有 6 个是元注解（Meta Annotation），它们来自于 java.lang.annotation包，自定义注解会用到元注解。
 
 > 元注解就是负责注解其他的注解。
-基本注解包括：@Override、@Deprecated、@SuppressWarnings、@SafeVarargs和@FunctionalInterface。下面逐一介绍一下。
+基本注解包括：@Override、@Deprecated、@SuppressWarnings、@SafeVarargs 和 @FunctionalInterface。下面逐一介绍一下。
 
-**@Override**只能用于方法，子类覆盖父类方法（或者实现接口的方法）时可以@Override注解。编译器会检查被@Override注解的方法，确保该方法父类中存在的方法，否则会有编译错误。
+**@Override**只能用于方法，子类覆盖父类方法（或者实现接口的方法）时可以 @Override 注解。编译器会检查被 @Override 注解的方法，确保该方法父类中存在的方法，否则会有编译错误。
 
 ```java
 package java.lang;
@@ -20,7 +20,7 @@ public @interface Override {
 }
 ```
 
-**@Deprecated**用来指示API已经过时了
+**@Deprecated**用来指示 API 已经过时了
 
 ``` java
 package java.lang;
@@ -33,7 +33,7 @@ public @interface Deprecated {
 ```
 
 **@SuppressWarnings**
-用来抑制编译器警告，如果你确认程序中的警告没有问题，可以不用理会。但是就是不想看到这些警告，可以使用@SuppressWarnings注解消除这些警告。
+用来抑制编译器警告，如果你确认程序中的警告没有问题，可以不用理会。但是就是不想看到这些警告，可以使用 @SuppressWarnings 注解消除这些警告。
 
 ```java
 @Target({TYPE, FIELD, METHOD, PARAMETER, CONSTRUCTOR, LOCAL_VARIABLE})
@@ -64,7 +64,7 @@ public @interface SuppressWarnings {
      }
 ```
 
-在可变参数display前添加@SafeVarargs注解。当然可用也可以使用@SuppressWarnings("unchecked")注解，但@SafeVarargs注解更适合。
+在可变参数 display 前添加 @SafeVarargs 注解。当然可用也可以使用 @SuppressWarnings("unchecked")注解，但@SafeVarargs注解更适合。
 
 ```java
          @SafeVarargs
@@ -98,24 +98,26 @@ public @interface FunctionalInterface {}
 
 ## 六个元注解
 
-元注解包括：@Documented、@Target、@Retention、@Inherited、@Repeatable和@Native。元注解是为其他注解进行说明的注解，当自定义一个新的注解类型时，其中可以使用元注解。这一节先介绍一下这几种元注解含义，下一节在自定义注解中详细介绍它们的使用的。
+元注解包括：@Documented、@Target、@Retention、@Inherited、@Repeatable 和 @Native。元注解是为其他注解进行说明的注解，当自定义一个新的注解类型时，其中可以使用元注解。这一节先介绍一下这几种元注解含义，下一节在自定义注解中详细介绍它们的使用的。
 
 1. @Documented
-如果在一个自定义注解中引用@Documented注解，那么该注解可以修饰代码元素（类、接口、成员变量和成员方法等），javadoc等工具可以提取这些注解信息。
+如果在一个自定义注解中引用 @Documented 注解，那么该注解可以修饰代码元素（类、接口、成员变量和成员方法等），javadoc等工具可以提取这些注解信息。
 
 2. @Target
 @Target注解用来指定一个新注解的适用目标。@Target注解有一个成员（value）用来设置适用目标，value是java.lang.annotation.ElementType**枚举类型的数组**，ElementType描述Java程序元素类型，它有10个枚举常量，如表所示。
+
 ![](https://upload-images.jianshu.io/upload_images/1662509-fc7dd9e2db8fe54b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 3. @Retention
 @Retention注解用来指定一个新注解的有效范围，@Retention注解有一个成员（value）用来设置保留策略，value是java.lang.annotation.RetentionPolicy枚举类型，RetentionPolicy描述注解保留策略，它有3个枚举常量，如表所示。
+
 ![RetentionPolicy枚举类型中的枚举常量](https://upload-images.jianshu.io/upload_images/1662509-f341d26315f19350.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 4. @Inherited
 @Inherited注解用来指定一个新注解可以被继承。假定一个类A被该新注解修饰，那么这个A类的子类会继承该新注解。
 
 5. @Repeatable
-@Repeatable注解是Java 8新增加的，它允许在相同的程序元素中重复注释，可重复的注释必须使用@Repeatable进行注释。
+@Repeatable注解是Java 8新增加的，它允许在相同的程序元素中重复注释，可重复的注释必须使用 @Repeatable 进行注释。
 
 6. @Native
 @Native注解一个成员变量，指示这个变量可以被本地代码引用。常常被代码生成工具使用。
@@ -126,7 +128,7 @@ public @interface FunctionalInterface {}
 
 ### 新建注解类
 
-声明自定义注解可以使用@interface关键字实现，最简单形式的注解示例代码如下：
+声明自定义注解可以使用 @interface 关键字实现，最简单形式的注解示例代码如下：
 
 ```java
 package qy.likai.java;
@@ -157,7 +159,7 @@ public @interface MyAnnotation {
 
 读取注解信息需要反射相关API，Class类如下方法：
 
-* <A extends Annotation> A getAnnotation(Class<A> annotationClass)：如果此元素存在annotationClass类型的注解，则返回注解，否则返回null。
+* `<A extends Annotation> A getAnnotation(Class<A> annotationClass)`：如果此元素存在annotationClass类型的注解，则返回注解，否则返回null。
 * Annotation[] getAnnotations()：返回此元素上存在的**所有注解**。
 * Annotation[] getDeclaredAnnotations():返回**直接存在于此元素上的所有注解**。与getAnnotations()区别在于该方法将**不返回继承的注释**。
 * boolean isAnnotationPresent(Class<? extends Annotation> annotationClass)：如果此元素上存在annotationClass类型的注解，则返回true，否则返回false。
@@ -241,22 +243,23 @@ public class AnnotationTest {
 ## 元注解中 RetentionPolicy 的三个级别
 
 1、RetentionPolicy.SOURCE：注解只保留在源文件，当Java文件编译成class文件的时候，注解被遗弃；
-2、RetentionPolicy.CLASS：注解被保留到class文件，但jvm加载class文件时候被遗弃，这是**默认**的生命周期；
+2、RetentionPolicy.CLASS：注解被保留到 class文件，但jvm加载class文件时候被遗弃，这是**默认**的生命周期；
 3、RetentionPolicy.RUNTIME：注解不仅被保存到class文件中，jvm加载class文件之后，仍然存在；
 
-这3个生命周期分别对应于：Java源文件(.java文件) ---> .class文件 ---> 内存中的字节码。
+这3个生命周期分别对应于：Java 源文件(.java文件) ---> .class文件 ---> 内存中的字节码。
 
 那怎么来选择合适的注解生命周期呢？
 
-首先要明确生命周期长度 SOURCE < CLASS < RUNTIME ，所以前者能作用的地方后者一定也能作用。一般如果需要在运行时去动态获取注解信息，那只能用 RUNTIME 注解；如果要在编译时进行一些预处理操作，比如生成一些辅助代码（如 ButterKnife），就用 CLASS注解；如果只是做一些检查性的操作，比如 @Override 和 @SuppressWarnings，则可选用 SOURCE 注解。
+首先要明确生命周期长度 SOURCE < CLASS < RUNTIME，所以前者能作用的地方后者一定也能作用。一般如果需要在运行时去动态获取注解信息，那只能用 RUNTIME 注解；如果要在编译时进行一些预处理操作，比如生成一些辅助代码（如 ButterKnife），就用 CLASS 注解；如果只是做一些检查性的操作，比如 @Override 和 @SuppressWarnings，则可选用 SOURCE 注解。
 
 ## 源码下载
 
-https://gitee.com/kaiLee/javabijifanshe/blob/master/src/main/java/qy/likai/java/AnnotationTest.java
+<https://gitee.com/kaiLee/javabijifanshe/blob/master/src/main/java/qy/likai/java/AnnotationTest.java>
 
 ## 参考
+
 * Java从小白到大牛-[关东升](https://www.ituring.com.cn/space/99229) (作者)-第 27 章　注解（Annotation）-图灵社区
 https://www.ituring.com.cn/book/tupubarticle/17723
 
 * 自定义注解之运行时注解(RetentionPolicy.RUNTIME)_Rukey7的博客-CSDN博客_@retention(retentionpolicy.runtime)
-https://blog.csdn.net/github_35180164/article/details/52118286
+<https://blog.csdn.net/github_35180164/article/details/52118286>

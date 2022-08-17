@@ -1,10 +1,11 @@
 我们之前说过，Gradle 的核心是一种基于依赖性编程的语言。 在 Gradle 术语中，这意味着您可以定义任务和任务之间的依赖关系。 Gradle 保证这些任务按照其依赖项的顺序执行，并且每个任务只执行一次。 这些任务形成了一个有向无环图。 有一些构建工具可以在执行任务时建立这样的依赖关系图。 在执行任何任务之前，Gradle 构建完整的依赖关系图。 这位于 Gradle 的心脏地带，使许多事情成为可能，否则这些事情是不可能实现的。
 
 您的构建脚本配置这个依赖关系图。因此，严格地说，它们是构建配置脚本。
- 
+
 ## [Build phases 构建阶段](https://docs.gradle.org/6.3/userguide/build_lifecycle.html#sec:build_phases)
 
 一个 Gradle 构建有三个不同的阶段。
+
 * Initialization 初始化
 * Configuration 配置
 * Execution 执行

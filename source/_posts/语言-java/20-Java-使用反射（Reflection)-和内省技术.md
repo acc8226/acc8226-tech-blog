@@ -1,16 +1,16 @@
 反射（Reflection）是程序的自我分析能力，通过反射可以确定类有哪些方法、有哪些构造方法以及有哪些成员变量。Java语言提供了反射机制，通过反射机制能够动态读取一个类的信息；能够在运行时动态加载类，而不是在编译期。反射可以应用于框架开发，它能够从配置文件中读取配置信息动态加载类、创建对象，以及调用方法和成员变量。
 
-## Java反射机制API
+## Java 反射机制 API
 
 Java反射机制API主要是 `java.lang.Class` 类和 `java.lang.reflect` 包。
 
-### java.lang.Class类
+### java.lang.Class 类
 
-java.lang.Class类是实现反射的关键所在，Class类的一个实例表示Java的一种数据类型，包括类、接口、枚举、注解（Annotation）、数组、基本数据类型和void，void是“无类型”，主要用于方法返回值类型声明，表示不需要返回值。Class没有公有的构造方法，Class实例是**由JVM在类加载时自动创建的**。
+java.lang.Class类是实现反射的关键所在，Class 类的一个实例表示 Java 的一种数据类型，包括类、接口、枚举、注解（Annotation）、数组、基本数据类型和  void，void 是“无类型”，主要用于方法返回值类型声明，表示不需要返回值。Class 没有公有的构造方法，Class 实例是**由JVM在类加载时自动创建的**。
 
-方法1：调用Object类的getClass()方法。          
-方法2：使用Class类的forName()方法。          
-方法3：如果T是一个Java类型，那么T.class就代表了与该类型匹配的Class对象。
+方法1：调用 Object 类的 getClass()方法。
+方法2：使用 Class 类的 forName()方法。
+方法3：如果 T 是一个 Java 类型，那么 T.class 就代表了与该类型匹配的 Class 对象。
 
 ```java
     public static void main( String[] args ) throws ClassNotFoundException {
@@ -39,69 +39,81 @@ java.lang.Class类是实现反射的关键所在，Class类的一个实例表示
     }
 ```
 
-每一种类型包括类和接口等，都有一个class静态变量可以获得Class实例。另外，每一个对象都有getClass()方法可以获得Class实例，该方法是由Object类提供的实例方法。
+每一种类型包括类和接口等，都有一个 class 静态变量可以获得 Class 实例。另外，每一个对象都有 getClass() 方法可以获得 Class 实例，该方法是由 Object 类提供的实例方法。
 
 是否为接口: `isInterface()`
 是否为数组对象: `isArray()`
 是否是基本类型: `isPrimitive()`
 获得父类: `class: getSuperclass()`
 
-###java.lang.reflect包
-java.lang.reflect包提供了反射中用到类，主要的类说明如下：
-* Constructor类：提供类的构造方法信息。
+<!-- more -->
+
+### java.lang.reflect包
+
+java.lang.reflect 包提供了反射中用到类，主要的类说明如下：
+
+* Constructor 类：提供类的构造方法信息。
 * Field类：提供类或接口中成员变量信息。
-* Method类：提供类或接口成员方法信息。
-* Array类：提供了动态创建和访问Java数组的方法。
-* Modifier类：提供类和成员访问修饰符信息。
+* Method 类：提供类或接口成员方法信息。
+* Array 类：提供了动态创建和访问 Java 数组的方法。
+* Modifier 类：提供类和成员访问修饰符信息。
 
 示例代码如下：
+
 ```java
     public static void main(String[] args) {
 
         try {
             // 动态加载xx类的运行时对象
-            Class c = Class.forName("java.lang.String");      
+            Class c = Class.forName("java.lang.String");
             // 获取成员方法集合
-            Method[] methods = c.getDeclaredMethods();        
+            Method[] methods = c.getDeclaredMethods();
             // 遍历成员方法集合
-            for (Method method : methods) {                   
+            for (Method method : methods) {
                 // 打印权限修饰符，如public、protected、private
-                System.out.print(Modifier.toString(method.getModifiers()));        
+                System.out.print(Modifier.toString(method.getModifiers()));
                 // 打印返回值类型名称
-                System.out.print(" " + method.getReturnType().getName() + " ");    
+                System.out.print(" " + method.getReturnType().getName() + " ");
                 // 打印方法名称
-                System.out.println(method.getName() + "();");                      
+                System.out.println(method.getName() + "();");
             }
-        } catch (ClassNotFoundException e) {                                       
+        } catch (ClassNotFoundException e) {
             System.out.println("找不到指定类");
         }
     }
 ```
 
-* 通过Class的静态方法forName(String)创建某个类的运行时对象，其中的参数是类全名字符串，如果在类路径中找不到这个类则抛出ClassNotFoundException异常。
-* 通过Class的实例方法getDeclaredMethods()返回某个类的成员方法对象数组。
-* method.getModifiers()方法返回访问权限修饰符常量代码，是int类型，例如1代表public，这些数字代表的含义可以通过Modifier.toString(int)方法转换为字符串。
-* 通过Method的getReturnType()方法获得方法返回值类型，然后再调用getName()方法返回该类型的名称。
+* 通过 Class 的静态方法 forName(String)创建某个类的运行时对象，其中的参数是类全名字符串，如果在类路径中找不到这个类则抛出 ClassNotFoundException 异常。
+* 通过 Class 的实例方法 getDeclaredMethods()返回某个类的成员方法对象数组。
+* method.getModifiers()方法返回访问权限修饰符常量代码，是int类型，例如 1 代表 public，这些数字代表的含义可以通过Modifier.toString(int)方法转换为字符串。
+* 通过 Method 的 getReturnType()方法获得方法返回值类型，然后再调用 getName()方法返回该类型的名称。
 * method.getName()返回方法名称。
 
 ## 创建对象
-反射机制提供了另外一种创建对象方法，Class类提供了一个实例方法newInstance()，通过该方法可以创建对象。
 
-下面两条语句实现了创建字符串String对象。
+反射机制提供了另外一种创建对象方法，Class 类提供了一个实例方法newInstance()，通过该方法可以创建对象。
+
+下面两条语句实现了创建字符串 String 对象。
+
 ```java
 Class clz = Class.forName("java.lang.String");
 String str = (String) clz.newInstance();
 ```
-这两条语句相当于String str = new String()语句。另外，需要注意newInstance()方法有可以会抛出
-* InstantiationException表示不能实例化异常
-* IllegalAccessException是不能访问构造方法异常。
+
+这两条语句相当于 String str = new String()语句。另外，需要注意 newInstance() 方法有可以会抛出
+
+* InstantiationException 表示不能实例化异常
+* IllegalAccessException 是不能访问构造方法异常。
 
 ### 调用构造方法
-调用方法newInstance()创建对象，这个过程中需要调用构造方法，上面的代码只是调用了String的默认构造方法。如果想要调用非默认构造方法，需要使用Constructor对象，它对应着一个构造方法，获得Constructor对象需要使用Class类的如下方法：
+
+调用方法 newInstance() 创建对象，这个过程中需要调用构造方法，上面的代码只是调用了 String 的默认构造方法。如果想要调用非默认构造方法，需要使用 Constructor 对象，它对应着一个构造方法，获得 Constructor 对象需要使用Class 类的如下方法：
+
 * Constructor[] getConstructors()：返回所有**公有**构造方法Constructor对象数组。
 * Constructor[] getDeclaredConstructors()：返回**所有**构造方法Constructor对象数组。
-* Constructor getConstructor(Class... parameterTypes)：根据参数列表返回一个**公有**Constructor对象。参数parameterTypes是Class数组，指定构造方法的参数列表。
+* Constructor getConstructor(Class... parameterTypes)：根据参数列表返回一个**公有**Constructor对象。参数 parameterTypes 是 Class数组，指定构造方法的参数列表。
 * Constructor getDeclaredConstructor(Class... parameterTypes)：根据参数列表返回一个Constructor对象。参数parameterTypes同上。
+
 ```java
 private static void printConstructor() throws Exception {
         Class clazz = String.class;
@@ -118,11 +130,14 @@ private static void printConstructor() throws Exception {
 > Java反射机制能够在运行时动态加载类，而**不是在编译期**。在一些框架开发中经常将要实例化的类名保存到配置文件中，在运行时从配置文件中读取类名字符串，然后动态创建对象，建立依赖关系。采用new创建对象依赖关系是在编译期建立的，反射机制能够将依赖关系推迟到运行时建立，这种依赖关系动态注入进来称为依赖注入。
 
 ## 调用方法
-通过反射机制还可以调用方法，这与调用构造方法类似。调用方法需要使用Method对象，它对应着一个方法，获得Method对象需要使用Class类的如下方法：
+
+通过反射机制还可以调用方法，这与调用构造方法类似。调用方法需要使用 Method 对象，它对应着一个方法，获得Method对象需要使用 Class 类的如下方法：
+
 * Method[] getMethods()：返回所有公有方法Method对象数组。
 * Method[] getDeclaredMethods()：返回所有方法Method对象数组。
 * Method getMethod(String name, Class... parameterTypes)：通过方法名和参数类型返回公有方法Method对象。参数parameterTypes是Class数组，指定方法的参数列表。
-* Method getDeclaredMethod(String name, Class... parameterTypes)：通过方法名和参数类型返回方法Method对象。参数parameterTypes同上。
+* Method getDeclaredMethod(String name, Class... parameterTypes)：通过方法名和参数类型返回方法 Method对象。参数 parameterTypes 同上。
+
 ```java
 private static void testMethods() throws Exception {
         // 正常实现
@@ -152,11 +167,13 @@ private static void testMethods() throws Exception {
 ```
 
 ## 调用成员变量
-通过反射机制还可以调用成员变量，调用方法需要使用Field对象，它对应着一个方法，获得Field对象需要使用Class类的如下方法：
-* Field[] getFields()：返回所有公有成员变量Field对象数组。
-* Field[] getDeclaredFields()：返回所有成员变量Field对象数组。
+
+通过反射机制还可以调用成员变量，调用方法需要使用 Field 对象，它对应着一个方法，获得 Field 对象需要使用 Class 类的如下方法：
+
+* Field[] getFields()：返回所有公有成员变量 Field 对象数组。
+* Field[] getDeclaredFields()：返回所有成员变量 Field 对象数组。
 * Field getField(String name)：通过指定公共成员变量名返回Field对象。
-* Field getDeclaredField(String name)：通过指定成员变量名返回Field对象。
+* Field getDeclaredField(String name)：通过指定成员变量名返回 Field 对象。
 
 ```java
 private static void testFiled() throws Exception {
@@ -184,6 +201,7 @@ private static void testFiled() throws Exception {
 ```
 
 输出
+
 ```
 hello
 hello
@@ -214,7 +232,7 @@ new value
 		}.getClass();
 		// 如何拿到接口中定义的泛型Person
 		System.out.println(((ParameterizedType) clz.getGenericInterfaces()[0]).getActualTypeArguments()[0]);
-		
+
 		clz = new MyAbstractClass<Person>() {
 			@Override
 			public Person get() {
@@ -223,14 +241,14 @@ new value
 		}.getClass();
 		// 如何拿到抽象类中定义的泛型Person
 		System.out.println(((ParameterizedType) clz.getGenericSuperclass()).getActualTypeArguments()[0]);
-		
-		
+
+
 	}
 
 	static interface MyInterface<T> {
 		T get();
 	}
-	
+
 	static abstract class MyAbstractClass<T> {
 		abstract T get();
 	}

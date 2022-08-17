@@ -2,7 +2,7 @@
 
 xml中 或者在 类方法上写的sql语句有问题
 
-### SpringBoot整合Mybatis报错:Consider defining a bean of type 'xx.xx.xx' in your configur
+### SpringBoot 整合 Mybatis 报错 Consider defining a bean of type 'xx.xx.xx' in your configur
 
 Consider defining a bean of type 'com.poly.ncl.chargepaychange.mapper.ChargePayChangeMapper' in your configuration.
 

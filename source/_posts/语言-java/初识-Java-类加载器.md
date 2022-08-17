@@ -8,6 +8,7 @@ BootstrapClassLoader(启动类加载器)
 
 获取类加载器
 通过简单的demo来得到类加载器
+
 ```java
 public class User {
 	public static void main(String[] args) {
@@ -35,13 +36,14 @@ AppClassLoader检测加载类，当前应用加载器会从当前应用中(就�
 
 用户可以使用自定义类加载器用来实现对不同位置的类的加载和调用
 
-```
+```sh
 mkdir -p aa/bb
 vim aa/bb/Hello.java
 javac aa/bb/Hello.java
 ```
 
 Hello.java 代码
+
 ```java
 package aa.bb;
 
@@ -54,14 +56,16 @@ public class Hello {
 ```
 
 自定义类加载器
-```
+
+```sh
 mkdir -p aa/classloader
 vim aa/classloader/MyClassLoader.java
 javac -Xlint:deprecation aa/classloader/MyClassLoader.java
 ```
 
 MyClassLoader.java 代码
-```
+
+```sh
 package aa.classloader;
 
 import java.io.ByteArrayOutputStream;
@@ -80,7 +84,7 @@ public class MyClassLoader extends ClassLoader {
 	public Class<?> findClass(final String name) throws ClassNotFoundException {
         final String classPath = path + "/" + name.replace(".","/") + ".class";
         try (InputStream in = new FileInputStream(classPath);
-        ByteArrayOutputStream out = new ByteArrayOutputStream();) {			
+        ByteArrayOutputStream out = new ByteArrayOutputStream();) {
             int len;
             byte[] bytes = new byte[4096];
 			while ((len = in.read(bytes)) != -1) {
@@ -96,7 +100,7 @@ public class MyClassLoader extends ClassLoader {
 }
 ```
 
-创建测试类  HelloTest.java 
+创建测试类  HelloTest.java
 ```sh
 mkdir -p aa/test
 vim aa/test/HelloTest.java
@@ -114,7 +118,7 @@ public class HelloTest {
         MyClassLoader myClassLoader = new MyClassLoader(path);
         Class<?> clazz = myClassLoader.findClass("aa.bb.Hello");
         clazz.newInstance();
-	} 
+	}
 }
 ```
 
@@ -132,5 +136,5 @@ init ...
 4.使用自定义的类加载器可以没有限制的在其他的地方加载类
 
 ## 参考
-Java中自定义ClassLoader和ClassLoader的使用非  
+Java中自定义ClassLoader和ClassLoader的使用非
 https://blog.csdn.net/weixin_45492007/article/details/98875060

@@ -6,13 +6,14 @@ Groovy 的特性虽然不多，但也有一些，我们不可能在这里都讲�
 
 字符串，每一门语言都会有对字符串的处理，Java相对要稍微复杂一些，限制比较多，相比而言，Groovy 非常方便，比如字符串的运算、求值、正则等等。
 
-从现在开始我们算是正式的介绍 Groovy 了，在此之前我们先要知道，在 Groovy 中，分号不是必须的。相信很多用Java的朋友都习惯了，每一行的结束必须有分号，但是 Groovy 没这个强制规定，所以你看到的Gradle脚本很多都没有分号，其实这个是 Groovy 的特性，而不是 Gradle 的。没有分号的时候，我们阅读的时候每一行默认为有分号就好了。
+从现在开始我们算是正式的介绍 Groovy 了，在此之前我们先要知道，在 Groovy 中，分号不是必须的。相信很多用 Java 的朋友都习惯了，每一行的结束必须有分号，但是 Groovy 没这个强制规定，所以你看到的 Gradle 脚本很多都没有分号，其实这个是 Groovy 的特性，而不是 Gradle 的。没有分号的时候，我们阅读的时候每一行默认为有分号就好了。
 
 在Groovy中，**单引号和双引号**都可以定义一个字符串常量（Java里单引号定义一个字符），不同的是单引号标记的是纯粹的字符串常量，而不是对字符串里的表达式做运算，但是双引号可以。
 
 * 单引号没有运算的能力，它里面的所有都是常量字符串。
 * 双引号可以直接进行表达式计算的这个能力非常好用，我们可以用这种方式进行字符串链接运算，再也不用 Java 中繁琐的 +号了。**记住这个嵌套的规则，一个美元符号紧跟着一对花括号，花括号里放表达式**，比如`${name}`,`${1+1}`等等，**只有一个变量的时候可以省略花括号**，比如 `$name`。
-```
+
+```groovy
 task printStringVar << {
 	def str1 = "我是火车王"
 	println"$str1"
@@ -24,18 +25,18 @@ task printStringVar << {
 
 集合，也是我们在 Java 中经常用到的，Groovy 完全兼容了Java的集合，并且进行了扩展，使得生命一个集合，迭代一个集合、查找集合的元素等等操作变得非常容易。常见的集合有 List、Set、Map 和 Queue，这里我们只介绍常用的 List 和 Map。
 
-###  List
+### List
 
 ```groovy
 task list << {
 	def list = [1, 3, 5, 7, 9]
-	
+
 	println list.getClass().name
 	println list[0]
 	println list[-1]//访问最后一个元素
 	println list[-2]//访问倒数第二个元素
 	println list[1..3]//访问第2到第4个元素
-	
+
 	// it 变量就是正在迭代的元素，这里有闭包的知识
 	list.each {
 		println it
@@ -48,15 +49,15 @@ task list << {
 ``` groovy
 task map << {
 	def map = ['width': 1366, 'height': 768]
-	
+
 	println map.getClass().name
 	// 以下下方式都能快速的取出指定key的值
 	println map.width
 	println map["height"]
-	
-	map.each{			
+
+	map.each{
 		println "${it.key}: ${it.value}"
-	}	
+	}
 }
 ```
 对于集合，Groovy 还提供了诸如 collect、find、findAll 等便捷的方法，有兴趣的朋友可以找相关文档。
@@ -70,12 +71,12 @@ task map << {
 task testMethod <<{
 	def i1 = 12
 	def i2 = 67
-	
+
 	//括号, 分号都不要了
 	printSum i1, i2
-	
+
 	def maxResult = getMax i1, i2
-	println maxResult	
+	println maxResult
 }
 
 // 无 return
@@ -94,26 +95,27 @@ def getMax(int i1, int i2) {
 ```
 
 **代码块是可以作为参数传递的**
-代码块--一段被花括号包围的代码，其实就是我们后面要将的闭包，Groovy是允许其作为参数传递的，但是结合这我们上面方法的特性，最后的基于闭包的方法调用就会非常优雅、易读。以我们的集合的each方法为例，它接受的参数其实就是一个闭包。
+代码块--一段被花括号包围的代码，其实就是我们后面要将的闭包，Groovy 是允许其作为参数传递的，但是结合这我们上面方法的特性，最后的基于闭包的方法调用就会非常优雅、易读。以我们的集合的each方法为例，它接受的参数其实就是一个闭包。
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-72f3bfd7fbf9e588.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### JavaBean
-```
+
+```groovy
 task testJavaBean << {
-	Person p = new Person();	
+	Person p = new Person();
 	p.name = "砰砰博士"
-	
-	println p.name	
-	println "${p.name}"	
-	println "${p.age}" 
+
+	println p.name
+	println "${p.name}"
+	println "${p.age}"
 	println "${p.brand}" //能这么用, 其实只是因为该对象里定义了相应的getter/setter方法而已
 }
 
 class Person {
 	String name;
 	private int age;
-	
+
 	public String getBrand(){
 		'hearthstone'
 	}
@@ -121,6 +123,7 @@ class Person {
 ```
 
 ## 闭包
+
 闭包是Groovy的一个非常重要的特性，可以说他是DSL的基础。闭包不是Groovy的首创，但是它支持这一重要特性，这就使用我们的代码灵活、轻量、可复用，再也不用像Java一样动不动就要搞一个类了，虽然Java后来有了匿名内部类，但是一样冗余不灵活。
 
 ### 初识闭包
@@ -132,18 +135,19 @@ class Person {
 
 ### 向闭包传递参数
 当闭包有一个参数时，默认就是it；当有多个参数是，it就不能表示了，我们需要把参数一一列出。
-```
-task helloClosure << {		
-	customEachMap{k,v ->	
+
+```groovy
+task helloClosure << {
+	customEachMap{k,v ->
         println "${k}: ${v}"
-    }	
+    }
 }
 
 def customEachMap(closure) {
 	def map1 = ['张三': 18, '李四': 20, '老五': 25]
 	map1.each{
 		closure it.key, it.value
-	}	
+	}
 }
 ```
 
@@ -151,14 +155,14 @@ def customEachMap(closure) {
 
 Groovy 闭包的强大之处在于它支持闭包方法的委托。Groovy 的闭包有 thisObject、owner、delegate 三个属性，当你在闭包内调用方法时，由他们来确定使用哪个对象来处理。默认情况下 delegate 和 owner 是相等的，但是 delegate 是可以被修改的，这个功能是非常强大的，Gradle 中的很闭包的很多功能都是通过修改 delegate 实现的。
 
-```
-task testDelegate << {		
-	
+```groovy
+task testDelegate << {
+
 	new Delegate().test{
 		println thisObject.getClass().name
 		println owner.getClass().name
 		println delegate.getClass().name
-		
+
 		method1()
 		it.method1()
 	}
@@ -173,7 +177,7 @@ class Delegate{
 	def method1(){
 		println "Context this: ${this.getClass().name} in Delegate, method1 in Delegate"
 	}
-	
+
 	def test(Closure<Delegate> closure){
 		closure(this)
 	}
@@ -191,7 +195,7 @@ class Delegate{
 
 DSL(Domain Specific Language),领域特定语言，说白了就是专门关注某一领域专门语言，在于专，而不是全，所以才叫领域特定的，而不是像 Java 这种通用全面的语言。
 
-Gradle 就是一门 DSL，他是基于 Groovy 的，专门解决自动化构建的DSL。自动化构建太复杂、太麻烦、太专业，我们理解不了，没问题，专家们就开发了DSL--Gradle，我们作为开发者只要按照 Gradle DSL 定义的，书写相应的 Gradle 脚本就可以达到我们自动化构建的目的，这也是DSL的初衷。
+Gradle 就是一门 DSL，他是基于 Groovy 的，专门解决自动化构建的 DSL。自动化构建太复杂、太麻烦、太专业，我们理解不了，没问题，专家们就开发了 DSL--Gradle，我们作为开发者只要按照 Gradle DSL 定义的，书写相应的 Gradle 脚本就可以达到我们自动化构建的目的，这也是 DSL 的初衷。
 
 DSL 涉及的东西还有很多，这里我们简单的提一下概念，让大家有个了解，关于这方便更详细的可以阅读世界级软件开发大师 Martin Fowler 的《领域特定语言》，这本书介绍的非常详细。
 
