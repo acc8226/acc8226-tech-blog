@@ -1,0 +1,138 @@
+[冯诺依曼体系](https://baike.so.com/doc/1227903-1298795.html)机包括：[运算器](https://baike.so.com/doc/5687638-5900330.html)、控制器、[存储器](https://baike.so.com/doc/4224899-4426539.html)、输入和输出设备
+
+lscpu 此命令用来显示 cpu 的相关信息
+
+bc 命令是任意精度计算器语言，通常在 linux 下当计算器用。
+
+```sh
+$ bc
+$ obase = 16
+$ 15
+A // 15转成16进制为A
+```
+
+/usr 系统
+/home 用户目录
+/boot
+/var/log
+
+硬盘
+ide /dev/hd
+sata /dev/sd
+scsi
+use
+
+centos6
+/dev/sda,b,c,...z, aa, bb, ac, az, ba,
+分区: mbr, gpt
+主: 一个硬盘上最多四个, 只能有一个活动, 1-4
+拓展: 最多一个, 划分更小的分区, 拓展+主分区<=4 1-4
+拓展分区: 5, 6
+
+分区规划:
+/ 50G
+/boot 1G绝对够用
+/data 30G
+swap 交换分区 因为为物理内存的1.5倍或2倍 centos7.5 2G  centos6.10 1G
+
+id -u 查看该用户是否具有root权限
+cat /etc/centos-release 查看 centos 版本
+
+```
+CentOS Linux release 7.6.1810 (Core)
+```
+
+### 查看硬件信息
+
+uname -r 查看操作系统内核版本
+
+```
+3.10.0-957.27.2.el7.x86_64
+```
+
+lscpu 查看cpu信息
+
+free -h 查看内存信息(方式一)
+
+```
+              total        used        free      shared  buff/cache   available
+Mem:           927M        376M         66M         46M        483M        346M
+Swap:          511M        282M        229M
+```
+
+cat /proc/meminfo 查看内存信息(方式二)
+
+查看硬盘信息
+
+```
+[root@10-9-64-159 ~]# lsblk
+NAME   MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
+vda    253:0    0  40G  0 disk
+└─vda1 253:1    0  40G  0 part /
+```
+
+who 查看所有登陆的用户
+who am i 查看当前登陆的用户
+
+查看当前使用的 shell
+
+```
+[root@10-9-64-159 ~]# echo $SHELL
+/bin/bash
+```
+
+查看操作系统已有的shell
+
+```
+[root@10-9-64-159 ~]# cat /etc/shells
+/bin/sh
+/bin/bash
+/usr/bin/sh
+/usr/bin/bash
+/bin/tcsh
+/bin/csh
+```
+
+ctrl + L 清屏
+
+hostname 查看主机名
+
+### 更改默认前缀
+
+```
+PS1="\[\e[\1;32m\][\u@\h \w]\\$[\e[0m\]"
+```
+
+将其写入新文件, 可以开启启动
+`cat /etc/profile.d/env.sh`
+
+### 内部命令 外部命令
+
+首先找内部命令, 如果找不到则找外部命令
+
+```
+[root@10-9-64-159 /]# type -a pwd
+pwd 是 shell 内嵌
+pwd 是 /usr/bin/pwd
+```
+
+基于 bash
+enable 查看所有内部命令
+enable -n 查看所有已禁用的内部命令
+
+外部命令的表现形式为对应的可执行文件, 查看路径:
+which | whereis
+
+区别是否是内外部命令
+type COMMAND
+
+**Hash缓存表**
+    系统初始hash表为空, 当外部命令执行时, 默认会从path路径下寻找该命令, 找到会记录到hash表中, 当在此使用该命令, shell解释器首先会从hash表中若存在则执行, 利用hash缓存表可大大提高命令的调用速率.
+
+hash常见用法
+hash 显示hash缓存
+hash -l 显示hash缓存, 可作为输入使用
+hash -p path name 将命令全路径path起别名为name
+hash -t name 打印缓存中name的路径
+hash -d name 清除name缓存
+hash -r 清楚缓存

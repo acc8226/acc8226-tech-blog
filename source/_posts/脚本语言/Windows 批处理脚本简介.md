@@ -219,7 +219,8 @@ echo 你好，cmd
 
 *将参数1，参数2 输入到命令行*
 hello.bat aaa bbb
-```
+
+```bat
 echo %1
 echo %2
 ```
@@ -234,7 +235,8 @@ pause 就是暂停命令
 pause > null 的作用是同样的，区别是不显示“请按任意键继续. . .”这些字，nul 相当于空设备。
 
 定义变量，注意等号左右不能加空格。
-```
+
+```bat
 set a=123
 ```
 
@@ -295,17 +297,20 @@ find \"ok\" c:\test.txt || echo 不成功
 
 **6. 管道操作符 |**
 *clip 将内容复制到剪切板*
-```
+
+```bat
 clip < 1.txt
 ```
 
 *dir 组合 clip 的用法示例*
-```
+
+```bat
 dir | clip
 ```
 
 *start 可以打开文件夹，文件，网址等*
-```
+
+```bat
 start /max 1.txt
 start /min 1.txt
 ```

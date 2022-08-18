@@ -29,7 +29,7 @@ M7.1 之后版本： [https://IP/com/EasyConnectInstaller.exe](https://ip/com/E
 
 2、在网络连接中检查虚拟网卡是否被禁用
 
-![图ec检查虚拟网卡是否被禁用](./imgs/教程---EasyConnect-的使用/图ec检查虚拟网卡是否被禁用.png)
+![图 ec 检查虚拟网卡是否被禁用](./imgs/教程---EasyConnect-的使用/图ec检查虚拟网卡是否被禁用.png)
 
 3、下载诊断工具诊断看是否有异常，如有异常需要进行修复
 

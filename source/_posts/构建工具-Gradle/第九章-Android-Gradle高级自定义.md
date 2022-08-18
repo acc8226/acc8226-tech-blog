@@ -1,13 +1,14 @@
-这一章主要针对项目中可以用到的一些实用功能来介绍Android Gradle，比如如何隐藏我们的证书文件，降低风险；如何批量修改生成的apk文件名，这样我们就可以修改成我们需要的，从文件名中就可以看到渠道，版本号以及生成日期等信息，这多方便啊；还有其他突破65535方法的限制等等。
+这一章主要针对项目中可以用到的一些实用功能来介绍Android Gradle，比如如何隐藏我们的证书文件，降低风险；如何批量修改生成的apk文件名，这样我们就可以修改成我们需要的，从文件名中就可以看到渠道，版本号以及生成日期等信息，这多方便啊；还有其他突破 65535 方法的限制等等。
 
 ### 9.1 使用共享库
-android的包，比如android.app, android.content, android.view, 以及android.widget等，这些是默认就包含在android sdk库里的，所有的应用都可以直接使用它们，系统会帮我们会自动链接他们，不会出现找不到相关类的情况。还有一些库，比如com.google.android.maps、android.test.runner等，这些库是独立的，并不会被系统自动链接，所以我们要使用他们的话，就需要单独进行生成使用，这类库我们称之为共享库。
 
-在AndroidManifest文件中，我们可以通过<uses-library>来指定我们要使用的库
+android的包，比如 android.app, android.content, android.view, 以及 android.widget等，这些是默认就包含在android sdk库里的，所有的应用都可以直接使用它们，系统会帮我们会自动链接他们，不会出现找不到相关类的情况。还有一些库，比如com.google.android.maps、android.test.runner等，这些库是独立的，并不会被系统自动链接，所以我们要使用他们的话，就需要单独进行生成使用，这类库我们称之为共享库。
+
+在 AndroidManifest 文件中，我们可以通过<uses-library>来指定我们要使用的库
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-48cdee2bb68aeeae.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-这样我们就声明了我们需要使用maps这个共享库，声明之后，在安装生成的APK包的时候，系统会根据我们的定义，帮我们检测我们的手机系统是否有我们需要的共享库，因为我们设置的android:required="true"，是必须，如果手机系统不满足，将不能安装该应用。
+这样我们就声明了我们需要使用 maps 这个共享库，声明之后，在安装生成的APK包的时候，系统会根据我们的定义，帮我们检测我们的手机系统是否有我们需要的共享库，因为我们设置的android:required="true"，是必须，如果手机系统不满足，将不能安装该应用。
 
 在Android中，除了我们标准的SDK，还存在两种库，一种是add-ons库，他们位于add-ons目录下，这些库大部分第三方厂商或者公司开发的，一般是为了让开发者使用，但是又不想暴漏具体标准实现的；第二类是optional可选库，他们位于platforms/android-xx/optional目录下，一般是为了兼容旧版本的API，比如org.apache.http.legacy，这是一个HttpClient的库，从API23开始，标准的Android SDK中不再包含HttpClient库，如果还想使用HttpClient库，就必须使用org.apache.http.legacy这个可选库。
 

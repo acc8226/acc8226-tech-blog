@@ -1,5 +1,5 @@
 ---
-title: 专题-ftp-webdav 文件浏览器推荐
+title: 专题-ftp/webdav 文件浏览器推荐
 categories:
   - 收藏
   - 我的软件

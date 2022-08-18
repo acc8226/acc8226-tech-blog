@@ -1,5 +1,5 @@
 ---
-title: Bash 之 spring-boot 启动案例
+title: Bash 之 spring boot 启动案例
 categories: 脚本文件
 tags:
 - Bash

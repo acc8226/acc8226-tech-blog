@@ -51,7 +51,7 @@ vim test2.sh
 执行脚本
 
 ```sh
-$ bash test2.sh
+bash test2.sh
 ```
 
 查看结果
@@ -154,8 +154,8 @@ Hello World
 反引号中的命令会优先执行，如：
 
 ```sh
-$ cp `mkdir back` test.sh back
-$ ls
+cp `mkdir back` test.sh back
+ls
 ```
 
 先创建了 back 目录，然后复制 test.sh 到 back 目录
@@ -217,7 +217,7 @@ $ : > test.sh   # 文件“test.sh”现在被清空了
 也可能用来作为注释行，但不推荐这么做。使用 # 来注释的话，将关闭剩余行的错误检查，所以可以在注释行中写任何东西。然而，使用 : 的话将不会这样。如：
 
 ```sh
-$ : This is a comment that generates an error,( if [ $x -eq 3] )
+This is a comment that generates an error,( if [ $x -eq 3] )
 ```
 
 ":"还用来在 `/etc/passwd` 和 `$PATH` 变量中做分隔符，如：
@@ -234,7 +234,7 @@ $ echo $PATH
 在一个双括号结构中，? 就是C语言的三元操作符，如：
 
 ```sh
-$ vim test.sh
+vim test.sh
 ```
 
 输入如下代码，并保存：
@@ -261,7 +261,7 @@ $ bash test.sh
 前面已经用到了
 
 ```sh
-$ vim test.sh
+vim test.sh
 ```
 
 ```sh
@@ -291,7 +291,7 @@ $ bash test.sh
 在括号中的变量，由于是在子shell中，所以对于脚本剩下的部分是不可用的。父进程，也就是脚本本身，将不能够读取在子进程中创建的变量，也就是在子shell 中创建的变量。如：
 
 ```sh
-$ vim test20.sh
+vim test20.sh
 ```
 
 输入代码：
@@ -319,7 +319,7 @@ a = 123
 创建数组
 
 ```sh
-$ vim test21.sh
+vim test21.sh
 ```
 
 输入代码：
@@ -370,9 +370,9 @@ bash test22.sh
 查看运行结果：
 
 ```sh
-$ ls
-$ cat t.txt
-$ cat t.back
+ls
+cat t.txt
+cat t.back
 ```
 
 注意： 在大括号中，不允许有空白，除非这个空白被引用或转义。
@@ -382,7 +382,7 @@ $ cat t.back
 代码块，又被称为内部组，这个结构事实上创建了一个匿名函数（一个没有名字的函数）。然而，与“标准”函数不同的是，在其中声明的变量，对于脚本其他部分的代码来说**还是可见的**。
 
 ```sh
-$ vim test23.sh
+vim test23.sh
 ```
 
 输入代码：
@@ -411,7 +411,7 @@ a = 321
 条件测试表达式放在[ ]中。下列练习中的-lt (less than)表示小于号。
 
 ```sh
-$ vim test24.sh
+vim test24.sh
 ```
 
 输入代码：
@@ -442,7 +442,7 @@ a: 5
 在一个array结构的上下文中，中括号用来引用数组中每个元素的编号。
 
 ```sh
-$ vim test25.sh
+vim test25.sh
 ```
 
 输入代码：
@@ -480,7 +480,7 @@ test.sh >> filename：把 test.sh 的输出追加到文件 filename 中。如果
 分析前边命令的输出，并将输出作为后边命令的输入。这是一种产生命令链的好方法。
 
 ```sh
-$ vim test26.sh
+vim test26.sh
 ```
 
 输入代码：
@@ -495,8 +495,8 @@ exit 0
 现在让我们输送ls -l的输出到一个脚本中：
 
 ```sh
-$ chmod 755 test26.sh
-$ ls -l | ./test26.sh
+chmod 755 test26.sh
+ls -l | ./test26.sh
 ```
 
 ## 破折号
@@ -506,7 +506,7 @@ $ ls -l | ./test26.sh
 在所有的命令内如果想使用选项参数的话,前边都要加上“-”。
 
 ```sh
-$ vim test27.sh
+vim test27.sh
 ```
 
 输入代码：
@@ -558,8 +558,8 @@ exit 0
 运行代码：
 
 ```sh
-$ bash test28.sh
-$ ls
+bash test28.sh
+ls
 ```
 
 ## 波浪号（~）

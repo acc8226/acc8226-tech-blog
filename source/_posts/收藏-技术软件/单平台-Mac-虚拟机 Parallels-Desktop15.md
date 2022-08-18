@@ -1,5 +1,5 @@
 ---
-title: 单平台-Mac-虚拟机 Parallels Desktop 15
+title: 单平台-Mac 虚拟机 Parallels Desktop 15
 date: 2020.02.13 22:27:52
 categories:
   - 收藏

@@ -359,7 +359,7 @@ quicklink:
   # Default (true) will attempt to use the fetch() API if supported (rather than link[rel=prefetch]).
   priority: true
 
-# Canvas ribbon
+# Canvas ribbon 丝带效果
 # For more information: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
   enable: true

@@ -1,5 +1,5 @@
 ---
-title: 单平台-Mac-iTerm2 终端+Oh-my-zsh
+title: 单平台-Mac iTerm2 终端+Oh-my-zsh
 date: 2019.12.22 13:28:02
 categories:
   - 收藏
@@ -26,7 +26,7 @@ brew cask install iterm2
 
 * 注册一个热键，当您在另一个应用程序中时，它会将 iTerm2带到前台。 一个终端总是离键盘一步之遥。 您可以选择让热键打开一个专用窗口。
 
-* Iterm2具有强大的页面查找功能。 用户界面不会碍事。 所有匹配都会立即突出显示。 甚至还提供了正则表达式支持！
+* Iterm2 具有强大的页面查找功能。 用户界面不会碍事。 所有匹配都会立即突出显示。 甚至还提供了正则表达式支持！
 ![image](https://upload-images.jianshu.io/upload_images/1662509-8d03849e37e628ee.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### iTerm2 快速隐藏和显示
