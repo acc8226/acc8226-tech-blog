@@ -1,14 +1,8 @@
-注解提供了一种简单的方式来实现简单映射语句，而不会引入大量的开销。但是比较复杂的 SQL 和 动态 SQL 还是建议采用映射文件。
+注解提供了一种简单的方式来实现简单映射语句，省略了对应的 mapper.xml，而不会引入大量的开销。但是比较复杂的 SQL 和 动态 SQL 还是建议采用映射文件。
 
-MyBatis 框架
-注解
+MyBatis 框架的注解
 
-@select
-@insert
-@update
-@delete
-
-### MyBatis 的常用的注解包括
+## MyBatis 的常用的注解包括
 
 | 注解 | 描述 |
 | ------ | ------ |
@@ -22,8 +16,6 @@ MyBatis 框架
 | @Param | 当映射方法需要多个参数，这个注解可以被应用于映射器的方法 参数来给每个参数一个名字。否则，多 （不包括任何 RowBounds 参数），如 #{param1} , #{param2} 等。 使用 @Param("id"), 参数应该被命名为 #{id} |
 | @ResultMap | 给@Select 或者@SelectProvider 提供在 XML 映射中的的 id |
 | @ResultType | 当使用结果处理器时启用此注解 |
-
-其实就是省略了对应的 mapper.xml而已
 
 ```java
 package shiyanlou.mybatis.annotation.mapper;
@@ -58,7 +50,7 @@ public interface UserMapper {
      * @param user
      * @throws Exception
      */
-    @Update("update user set age=#{age} where id=#{id}")
+    @Update("update user set age = #{age} where id = #{id}")
     public void updateUser(User user) throws Exception;
 
     /*
@@ -67,7 +59,7 @@ public interface UserMapper {
      * @return
      * @throws Exception
      */
-    @Delete("delete from user where id=#{user_id}")
+    @Delete("delete from user where id = #{user_id}")
     public int deleteUser(@Param("user_id") Integer id) throws Exception;
 
     /*
@@ -78,10 +70,10 @@ public interface UserMapper {
      */
     @Select("select * from user where id=#{id}")
     @Results({
-        @Result(id=true,property="id",column="id"),
-        @Result(property="name",column="name"),
-        @Result(property="sex",column="sex"),
-        @Result(property="age",column="age"),
+        @Result(id=true, property="id", column="id"),
+        @Result(property="name", column="name"),
+        @Result(property="sex", column="sex"),
+        @Result(property="age", column="age"),
     })
     public User selectUserById(Integer id) throws Exception;
 

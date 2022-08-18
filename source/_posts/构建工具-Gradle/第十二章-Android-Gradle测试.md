@@ -1,14 +1,14 @@
-对于研发来说，测试永远都是绕不开的，通过测试我们可以减少bug率，提高产品的质量。测试有黑白之分，我们这里主要讲白盒测试，也就是基于现有代码逻辑的测试，比如单元测试等。
+对于研发来说，测试永远都是绕不开的，通过测试我们可以减少 bug 率，提高产品的质量。测试有黑白之分，我们这里主要讲白盒测试，也就是基于现有代码逻辑的测试，比如单元测试等。
 
-Android为测试提供了很好的支持，既可以使用传统的Junit测试，又可以使用Android提供的Instrument测试，这一章我们主要讲Android Gradle和Android测试之间的配合和结合，期间会涉及一些单元测试用例或者对一些测试框架的使用，但是主要介绍点还是Android Gradle和Android测试，对于Android测试本身介绍不多，关于Android测试本身，比如Activity等四大组件测试、UI自动化测试、espresso UI测试框架等可以参考官方文档。
+Android 为测试提供了很好的支持，既可以使用传统的 Junit测试，又可以使用 Android 提供的 Instrument 测试，这一章我们主要讲Android Gradle 和 Android 测试之间的配合和结合，期间会涉及一些单元测试用例或者对一些测试框架的使用，但是主要介绍点还是Android Gradle和Android测试，对于 Android 测试本身介绍不多，关于Android测试本身，比如 Activity 等四大组件测试、UI自动化测试、espresso UI测试框架等可以参考官方文档。
 
 ### 12.1 基本概念
 
-在 Android Gradle 中，测试应用相关已经被作为项目的一部分，而不再是一个单元的测试工程了，这对我们一起管理引用代码比较方便。它是一个 SourceSet，这个我们之前有过介绍，比如有 main SourceSet，对测试来说有androidTest SourceSet。当我们使用 Android Studio 新建一个项目的时候，会帮我们默认生成main和androidTest SourceSet，路径和main相似，是src/androidTest/，当我们运行测试的时候，androidTest SourceSet会被构建成一个可以安装到设备上的测试Apk，这个测试Apk里有很多我们写好的测试用例，他们会被执行，来测试我们的App。
+在 Android Gradle 中，测试应用相关已经被作为项目的一部分，而不再是一个单元的测试工程了，这对我们一起管理引用代码比较方便。它是一个 SourceSet，这个我们之前有过介绍，比如有 main SourceSet，对测试来说有androidTest SourceSet。当我们使用 Android Studio 新建一个项目的时候，会帮我们默认生成main和androidTest SourceSet，路径和main相似，是src/androidTest/，当我们运行测试的时候，androidTest SourceSet会被构建成一个可以安装到设备上的测试 Apk，这个测试 Apk 里有很多我们写好的测试用例，他们会被执行，来测试我们的 App。
 
 在androidTest SourceSet里我们可以依赖各种测试库，写很多方面的测试用例，比如单元测试的、集成测试的，espresso UI测试的，uiautomator自动化测试的等等。
 
-既然它可以生成一个Apk，那么它一定有Apk的必备属性和文件，比如包名、比如AndroidManifest.xml文件等等，那么他们是怎么被配置的呢，还记得我们讲的ProductFlavor吗？它里面有很多以test开头的配置，这些就是我们用来配置测试Apk用的。一般测试Apk我们会统一配置，而不是针对每个渠道都配置，所以我们会在defaultConfig里来对测试Apk进行配置，让其自动生成所需要的包名、AndroidManifest.xml文件等信息，defaultConfig也可以这么配置，因为defaultConfig其实也是一个ProductFlavor。
+既然它可以生成一个Apk，那么它一定有Apk的必备属性和文件，比如包名、比如 AndroidManifest.xml 文件等等，那么他们是怎么被配置的呢，还记得我们讲的 ProductFlavor 吗？它里面有很多以test开头的配置，这些就是我们用来配置测试Apk用的。一般测试Apk我们会统一配置，而不是针对每个渠道都配置，所以我们会在defaultConfig里来对测试 Apk 进行配置，让其自动生成所需要的包名、AndroidManifest.xml文件等信息，defaultConfig 也可以这么配置，因为defaultConfig 其实也是一个 ProductFlavor。
 
 1. testApplicationId 测试Apk的包名
 2. testFunctionalTest 是否启用功能测试

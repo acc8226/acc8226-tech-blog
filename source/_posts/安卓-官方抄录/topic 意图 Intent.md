@@ -27,7 +27,7 @@ Intent 分为两种类型：
 > **注意：**为了确保应用的安全性，启动 [Service](http://developer.android.youdaxue.com/reference/android/app/Service.html)
  时，请始终使用显式 Intent，且不要为服务声明 Intent 过滤器。使用隐式 Intent 启动服务存在安全隐患，因为您无法确定哪些服务将响应 Intent，且用户无法看到哪些服务已启动。从 Android 5.0（API 级别 21）开始，如果使用隐式 Intent 调用 [bindService()](http://developer.android.youdaxue.com/reference/android/content/Context.html#bindService(android.content.Intent, android.content.ServiceConnection, int))，系统会引发异常。
 
-##### 显式 Intent 示例
+## 显式 Intent 示例
 
 显式 Intent 是指用于启动某个特定应用组件（例如，应用中的某个特定 Activity 或服务）的 Intent。 要创建显式 Intent，请为 [Intent](http://developer.android.youdaxue.com/reference/android/content/Intent.html) 对象定义组件名称 — Intent 的所有其他属性均为可选属性。
 例如，如果在应用中构建了一个名为 DownloadService、旨在从网页下载文件的服务，则可使用以下代码启动该服务：
@@ -40,7 +40,7 @@ downloadIntent.setData(Uri.parse(fileUrl));
 startService(downloadIntent);
 ```
 
-##### 隐式 Intent 示例
+## 隐式 Intent 示例
 
 > **注意：**用户可能没有*任何*应用处理您发送到 [startActivity()](http://developer.android.youdaxue.com/reference/android/content/Context.html#startActivity(android.content.Intent)) 的隐式 Intent。如果出现这种情况，则调用将会失败，且应用会崩溃。要验证 Activity 是否会接收 Intent，请对 [Intent](http://developer.android.youdaxue.com/reference/android/content/Intent.html) 对象调用 [resolveActivity()](http://developer.android.youdaxue.com/reference/android/content/Intent.html#resolveActivity(android.content.pm.PackageManager))。如果结果为非空，则至少有一个应用能够处理该 Intent，且可以安全调用[startActivity()](http://developer.android.youdaxue.com/reference/android/content/Context.html#startActivity(android.content.Intent))。 如果结果为空，则不应使用该 Intent。如有可能，您应停用发出该 Intent 的功能。
 
@@ -57,7 +57,7 @@ if (sendIntent.resolveActivity(getPackageManager()) != null) {
 }
 ```
 
-##### 强制使用应用选择器
+## 强制使用应用选择器
 
 如果有多个应用响应隐式 Intent，则用户可以选择要使用的应用，并将其设置为该操作的默认选项。 如果用户可能希望今后一直使用相同的应用执行某项操作（例如，打开网页时，用户往往倾向于仅使用一种网络浏览器），则这一点十分有用。
 但是，如果多个应用可以响应 Intent，且用户可能希望每次使用不同的应用，则应采用显式方式显示选择器对话框。 选择器对话框每次都会要求用户选择用于操作的应用（用户无法为该操作选择默认应用）。 例如，当应用使用[ACTION_SEND](http://developer.android.youdaxue.com/reference/android/content/Intent.html#ACTION_SEND) 操作执行“共享”时，用户根据目前的状况可能需要使用另一不同的应用，因此应当始终使用选择器对话框，如图 2 中所示。要显示选择器，请使用 [createChooser()](http://developer.android.youdaxue.com/reference/android/content/Intent.html#createChooser(android.content.Intent, java.lang.CharSequence)) 创建 [Intent](http://developer.android.youdaxue.com/reference/android/content/Intent.html)
@@ -81,7 +81,7 @@ if (sendIntent.resolveActivity(getPackageManager()) != null) {
 }
 ```
 
-### 使用待定 Intent
+## 使用待定 Intent
 
 [PendingIntent](http://developer.android.youdaxue.com/reference/android/app/PendingIntent.html) 对象是 [Intent](http://developer.android.youdaxue.com/reference/android/content/Intent.html) 对象的包装器。[PendingIntent](http://developer.android.youdaxue.com/reference/android/app/PendingIntent.html) 的主要目的是授权外部应用使用包含的 [Intent](http://developer.android.youdaxue.com/reference/android/content/Intent.html)，就像是它从您应用本身的进程中执行的一样。
 
@@ -100,7 +100,7 @@ if (sendIntent.resolveActivity(getPackageManager()) != null) {
 
 如需了解有关使用待定 Intent 的详细信息，请参阅[通知](http://developer.android.youdaxue.com/guide/topics/ui/notifiers/notifications.html)和[应用小部件](http://developer.android.youdaxue.com/guide/topics/appwidgets/index.html) API 指南等手册中每个相应用例的相关文档。
 
-### Intent 解析
+## Intent 解析
 
 当系统收到隐式 Intent 以启动 Activity 时，它根据以下三个方面将该 Intent 与 Intent 过滤器进行比较，搜索该 Intent 的最佳 Activity：
 
@@ -110,7 +110,7 @@ if (sendIntent.resolveActivity(getPackageManager()) != null) {
 
 下文根据如何在应用的清单文件中声明 Intent 过滤器，描述 Intent 如何与相应的组件匹配。
 
-#### Intent 匹配
+### Intent 匹配
 
 通过 Intent 过滤器匹配 Intent，这不仅有助于发现要激活的目标组件，还有助于发现设备上组件集的相关信息。 例如，主页应用通过使用指定[ACTION_MAIN](http://developer.android.youdaxue.com/reference/android/content/Intent.html#ACTION_MAIN) 操作和 [CATEGORY_LAUNCHER](http://developer.android.youdaxue.com/reference/android/content/Intent.html#CATEGORY_LAUNCHER) 类别的 Intent 过滤器查找所有 Activity，以此填充应用启动器。
 

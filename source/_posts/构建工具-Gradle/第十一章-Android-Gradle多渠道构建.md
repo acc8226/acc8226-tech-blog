@@ -2,11 +2,11 @@
 
 ### 11.1 多渠道构建的基本原理
 
-在Android Gradle中，定义了一个叫 Build Variant 的概念，直译是构建变体，我喜欢叫它为构件-构建的产物(Apk),一个Build Variant=Build Type+Product Flavor，Build Type 就是我们构建的类型，比如 release和debug，Product Flavor 就是我们构建的渠道，比如 baidu，google 等等，他们加起来就是 baiduRelease，baiduDebug，googleRelease，googleDebug，共有这几种组合的构件产出，Product Flavor 也就是我们多渠道构建的基础，下面我们看看如何新增一个Product Flavor。
+在Android Gradle中，定义了一个叫 Build Variant 的概念，直译是构建变体，我喜欢叫它为构件-构建的产物(Apk),一个Build Variant=Build Type+Product Flavor，Build Type 就是我们构建的类型，比如 release 和 debug，Product Flavor 就是我们构建的渠道，比如 baidu，google 等等，他们加起来就是 baiduRelease，baiduDebug，googleRelease，googleDebug，共有这几种组合的构件产出，Product Flavor 也就是我们多渠道构建的基础，下面我们看看如何新增一个Product Flavor。
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-818f82ad6a68e4c1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-Android Gradle 为我们提供了 productFlavors方法来添加不同的渠道，它接受域对象类型的 ProductFlavor 闭包作为其参数，前面章节我们在介绍 Build Type 的时候也介绍过域对象，所以我们可以为 productFlavors{}闭包添加很多的渠道，每一个都是一个 ProductFlavor 类型的渠道，在NamedDomainObjectContainer中的名字就是渠道名，比如baidu，google等。
+Android Gradle 为我们提供了 productFlavors 方法来添加不同的渠道，它接受域对象类型的 ProductFlavor 闭包作为其参数，前面章节我们在介绍 Build Type 的时候也介绍过域对象，所以我们可以为 productFlavors{}闭包添加很多的渠道，每一个都是一个 ProductFlavor 类型的渠道，在NamedDomainObjectContainer中的名字就是渠道名，比如baidu，google等。
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-e34610100e6d0944.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 

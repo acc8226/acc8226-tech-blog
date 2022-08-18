@@ -5,13 +5,13 @@ tags:
 - Bash
 ---
 
-## 一、if else
+## if else
 
 和 Java、PHP 等语言不一样，sh的流程控制不可为空
 
 在 sh/bash 里可不能这么写，如果 else 分支没有语句执行，就不要写这个else。
 
-#### 1.if
+### 1.if
 
 if 语句语法格式：
 
@@ -25,7 +25,7 @@ then
 fi
 ```
 
-#### 2.if else
+### 2.if else
 
 if else 语法格式：
 
@@ -99,7 +99,7 @@ fi
 Two numbers are equal!
 ```
 
-## 二、for 循环
+## for 循环
 
 for循环一般格式为：
 
@@ -195,7 +195,7 @@ do
 done
 ```
 
-## 四、无限循环
+## 无限循环
 
 无限循环语法格式：
 
@@ -217,7 +217,7 @@ done
 for (( ; ; ))
 ```
 
-## 五、until 循环
+## until 循环
 
 until循环执行一系列命令直至条件为真时停止。 until循环与while循环在处理方式上刚好相反。 一般while循环优于until循环，但在某些时候—也只是极少数情况下，until循环更加有用。 until 语法格式:
 
@@ -230,7 +230,7 @@ done
 
 条件可为任意测试条件，测试发生在循环末尾，因此循环至少执行一次—请注意这一点。
 
-## 六、case
+## case
 
 Shell case语句为多选择语句。可以用case语句匹配一个值与一个模式，如果匹配成功，执行相匹配的命令。case语句格式如下：
 
@@ -309,7 +309,7 @@ done
 
 执行以上代码，输出结果为：
 
-## 八、continue
+## continue
 
 continue命令与break命令类似，只有一点差别，它不会跳出所有循环，仅仅跳出当前循环。 对上面的例子进行修改：
 
@@ -332,6 +332,6 @@ done
 
 运行代码发现，当输入大于5的数字时，该例中的循环不会结束，语句 `echo "Game is over!"` 永远不会被执行。
 
-## 九、esac
+## esac
 
 case 的语法和 C family 语言差别很大，它需要一个 esac（就是case反过来）作为结束标记，每个 case 分支用右圆括号，用两个分号表示break。

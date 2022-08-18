@@ -1,15 +1,15 @@
-从这章开始我们就开始介绍Android Gradle插件了，会通过几章由浅入深的详细的介绍Android Gradle，本章会简单的介绍下Android Gradle插件，然后通过一个例子对其有大概的了解，最后讲下如果从原来基于Eclipse进行Android开发的方式，转到基于Android Studio，使用Android Gradle插件开发的新方式
+从这章开始我们就开始介绍 Android Gradle 插件了，会通过几章由浅入深的详细的介绍 Android Gradle，本章会简单的介绍下 Android Gradle 插件，然后通过一个例子对其有大概的了解，最后讲下如果从原来基于 Eclipse 进行 Android 开发的方式，转到基于 Android Studio，使用 Android Gradle 插件开发的新方式
 
 ### 7.1 Android Gradle插件简介
 
-从Gradle的角度看，我们知道Android其实就是 Gradle 的一个第三方插件，他是由Google 的Android团队开发的，但是从Android的角度看，Android插件是基于 Gradle 构建的，和Android Studio完美无缝搭配的新一代构建系统，它不同于Eclipse+Ant的搭配，相比于旧的构建系统，它更灵活，更容易配置，还能很方便的创建衍生的版本--也就是我们常用的多渠道包。让我们看看Android官方对它的推崇程度：
+从 Gradle 的角度看，我们知道 Android 其实就是 Gradle 的一个第三方插件，他是由Google 的Android团队开发的，但是从Android的角度看，Android 插件是基于 Gradle 构建的，和Android Studio完美无缝搭配的新一代构建系统，它不同于 Eclipse+Ant 的搭配，相比于旧的构建系统，它更灵活，更容易配置，还能很方便的创建衍生的版本--也就是我们常用的多渠道包。让我们看看 Android 官方对它的推崇程度：
 
 1. 可以很容易的重用代码和资源
 2. 可以很容易的创建应用的衍生版本，所以不管你是创建多个apk，还是不同功能的应用都很方便
 3. 可以很容易的配置、扩展以及自定义构建过程
 4. 和IDE无缝整合
 
-上面说的IDE就是Android Studio，真是Android Gradle+Android Studio搭配，工作不累。
+上面说的 IDE 就是 Android Studio，真是 Android Gradle+Android Studio 搭配，工作不累。
 
 ### 7.2 Android Gradle插件分类
 
@@ -19,33 +19,33 @@ Android Gradle插件的分类其实是根据Android工程的属性分类的，�
 2. Library插件id：com.android.library
 3. Test插件id：com.android.test
 
-通过应用以上三种不同的插件，就可以配置我们的工程是一个Android App工程，还是一个Android Library工程，或者是一个Android Test测试工程，然后配合着Android Studio，就可以分别对他们进行编译、测试、发布等操作。
+通过应用以上三种不同的插件，就可以配置我们的工程是一个Android App工程，还是一个Android Library工程，或者是一个Android Test 测试工程，然后配合着Android Studio，就可以分别对他们进行编译、测试、发布等操作。
 
 ### 7.3 应用Android Gradle 插件
 
-在讲Gradle插件的时候，我们讲了要应用一个插件，必须要知道他们的插件id，除此之外，如果是第三方的插件，还要配置他们的依赖classpath。Android Gradle插件就是属于第三方插件，它托管在Jcenter上，所以在应用他们之前，我们要先配置依赖classpath，这样当我们应用插件的时候，Gradle系统才能找到他们。
+在讲 Gradle 插件的时候，我们讲了要应用一个插件，必须要知道他们的插件id，除此之外，如果是第三方的插件，还要配置他们的依赖 classpath。Android Gradle 插件就是属于第三方插件，它托管在Jcenter上，所以在应用他们之前，我们要先配置依赖 classpath，这样当我们应用插件的时候，Gradle系统才能找到他们。
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-d490a1c580cc5667.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-我们配置里仓库为jcenter，这样当我们配置依赖的时候，gradle就会去这个仓库里寻找我们的依赖。
+我们配置里仓库为 jcenter，这样当我们配置依赖的时候，gradle 就会去这个仓库里寻找我们的依赖。
 
-然后我们在dependencies{}配置里我们需要的是Android Gradle1.5.0版本的插件。
+然后我们在dependencies{}配置里我们需要的是 Android Gradle1.5.0 版本的插件。
 
-buildscript{}这部分配置可以写到根工程的build.gradle脚本文件中，这样所有的子工程就不用重复配置了。
+buildscript{}这部分配置可以写到根工程的 build.gradle 脚本文件中，这样所有的子工程就不用重复配置了。
 
-以上配置好之后，我们就可以应用我们的Android Gradle插件了。
+以上配置好之后，我们就可以应用我们的 Android Gradle 插件了。
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-fa62816a00cc67fd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-android{}是Android插件提供的一个扩展类型，可以让我们自定义Android Gradle工程。compileSdkVersion是编译所依赖的Android SDK的版本，这里是API Level；buildToolsVersion是构建该Android工程所以的构建工具的版本。
+android{}是Android插件提供的一个扩展类型，可以让我们自定义Android Gradle 工程。compileSdkVersion是编译所依赖的Android SDK 的版本，这里是 API Level；buildToolsVersion 是构建该 Android 工程所以的构建工具的版本。
 
-以前应用的是一个App工程插件，应用Android Library插件和Android Test插件也类似的，只需要换成相应的id即可。
+以前应用的是一个 App 工程插件，应用 Android Library 插件和 Android Test 插件也类似的，只需要换成相应的id即可。
 
 ### 7.4 Android Gradle 工程示例
 
-Android Gradle插件继承于Java插件，具有所有Java插件的特性，它也需要在Setting文件里通过include配置包含的子工程，也需要应用Android插件等等。
+Android Gradle 插件继承于 Java 插件，具有所有 Java 插件的特性，它也需要在 Setting 文件里通过 include 配置包含的子工程，也需要应用Android插件等等。
 
-下面我们就通过一个App工程的示例，来演示下App的工程目录结构以及相关的Android Gradle配置。
+下面我们就通过一个 App 工程的示例，来演示下App的工程目录结构以及相关的Android Gradle配置。
 
 我们可以通过Android Studio创建一个App工程，创建后我们可以看到其大概工程目录结构如下：
 
@@ -59,15 +59,15 @@ Android Gradle工程的配置，都是在android{}中，这是唯一的一个入
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-d12f94b1ffa83930.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-在com.android.application插件中，getExtensionClass()返回的就是com.android.build.gradle.AppExtension，所以关于android的很多配置可以从这个类里去找，参考我们前面讲的Gradle知识，可以找到很多试用的配置或者可以利用的对象、方法或者属性等等，而这些并没有在Android文档里介绍的，这就是可以看源代码的好处。
+在com.android.application 插件中，getExtensionClass()返回的就是 com.android.build.gradle.AppExtension，所以关于 android 的很多配置可以从这个类里去找，参考我们前面讲的Gradle知识，可以找到很多试用的配置或者可以利用的对象、方法或者属性等等，而这些并没有在Android文档里介绍的，这就是可以看源代码的好处。
 
 ##### 7.4.1 compileSdkVersion
 
-compileSdkVersion 23，是配置我们编译Android工程的SDK，这里的23是Android SDK的API Level，对应的是Android6.0的SDK，这个大家都清楚的。该配置的原型是一个compileSdkVersion方法
+compileSdkVersion 23，是配置我们编译 Android 工程的SDK，这里的 23 是 Android SDK 的 API Level，对应的是Android6.0的SDK，这个大家都清楚的。该配置的原型是一个 compileSdkVersion 方法
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-207fee7d105a8bee.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-除此之外，他还有一个set方法，所以我们可以把它当成android的一个属性使用。
+除此之外，他还有一个 set 方法，所以我们可以把它当成 android 的一个属性使用。
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-e3ccc04101053e43.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -75,7 +75,7 @@ compileSdkVersion 23，是配置我们编译Android工程的SDK，这里的23是
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-bd8ec2023e0f9b62.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-这就是Gradle的灵活支出，通过不同的方法，就可以达到不同的配置方式。
+这就是 Gradle 的灵活支出，通过不同的方法，就可以达到不同的配置方式。
 
 ### 7.4.2 buildToolsVersion
 
@@ -87,11 +87,11 @@ buildToolsVersion "23.0.1"表示我们使用的Android 构建工具的版本，�
 
 ##### 7.4.3 defaultConfig
 
-defaultConfig 是默认的配置，它是一个 ProductFlavor，ProductFlavor允许我们根据不同的情况同时生成多个不同的APK包，比如我们后面介绍的多渠道打包。如果不针对我们自定义的ProductFlavor单独配置的话，会为这个ProductFlavor使用**默认的defaultConfig**的配置。
+defaultConfig 是默认的配置，它是一个 ProductFlavor，ProductFlavor 允许我们根据不同的情况同时生成多个不同的APK包，比如我们后面介绍的多渠道打包。如果不针对我们自定义的ProductFlavor 单独配置的话，会为这个ProductFlavor使用**默认的defaultConfig**的配置。
 
-例子中applicationId是配置我们的包名，这里是org.flysnow.app.example74
+例子中applicationId是配置我们的包名，这里是 org.flysnow.app.example74
 
-minSdkVersion 是最低支持的Android系统的API Level，这里是14
+minSdkVersion 是最低支持的 Android 系统的API Level，这里是14
 
 targetSdkVersion 表明我们是基于哪个Android版本开发的，这里是23
 
@@ -105,14 +105,14 @@ versionName 我们的App应用的版本名称，用户可以看到，就是我�
 
 buildTypes是一个NamedDomainObjectContainer类型，是一个域对象，还记得我们讲的SourceSet吗？这个和那个一样。SourceSet里有main、test等，同样的buildTypes里有release，debug等，我们可以在buildTypes{}里新增任意多个我们需要构建的类型，比如debug，Gradle会帮我们自动创建一个对应的BuildType，名字就是我们定义的名字。
 
-release就是一个BuildType，后面章节我们会详细介绍BuildType，例子中我们用到了两个配置
+release 就是一个 BuildType，后面章节我们会详细介绍BuildType，例子中我们用到了两个配置
 
-minifyEnabled 是否为该构建类型启用混淆，我们这里是false表示不启用，如果想要启用可以设置为true
+minifyEnabled 是否为该构建类型启用混淆，我们这里是 false 表示不启用，如果想要启用可以设置为true
 
 proguardFiles，当我们启用混淆时，所使用的proguard 的配置文件，我们可以通过它配置我们如何进行proguard混淆，比如混淆的级别，哪些类或者方法不进行混淆等等。它对应 BuildType的proguardFiles方法，可以接受一个可变参数，所以我们同时可以配置多个配置文件，比如我们例子中的
 `proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'`
 
-getDefaultProguardFile是android扩展的一个方法，它可以获取你的Android SDK目录下的默认的proguard配置文件，在android-sdk/tools/proguard/目录下，文件名就是我们传入的参数的名字proguard-android.txt。
+getDefaultProguardFile 是 android 扩展的一个方法，它可以获取你的 Android SDK 目录下的默认的 proguard 配置文件，在android-sdk/tools/proguard/目录下，文件名就是我们传入的参数的名字proguard-android.txt。
 
 其他还有很多有用的配置，我们后面的章节都会一一介绍，这里只简单的介绍入门示例，让大家对Android Gradle有一个大概的了解
 
@@ -158,17 +158,17 @@ install和uninstall类的任务可以直接在我们已链接的设备上安装�
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-9d14dbea29f95d5f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-这种方式保留了原来项目的目录结构，为了达到这个目的，又让Android Studio可以识别该项目，所以Eclipse Export功能对生成的build.gradle脚本文件做了处理，从上面的例子中我们可以看到，重写了main这个SourceSet，为Android Studio指明我们的java文件、res资源文件、assets文件、aidl文件以及manifest文件在项目中的位置，这中Android Studio才能识别他们，进而作为一个Android工程进行编译构建。
+这种方式保留了原来项目的目录结构，为了达到这个目的，又让Android Studio可以识别该项目，所以Eclipse Export功能对生成的 build.gradle 脚本文件做了处理，从上面的例子中我们可以看到，重写了main这个SourceSet，为Android Studio 指明我们的 java文件、res资源文件、assets文件、aidl文件以及manifest文件在项目中的位置，这中Android Studio 才能识别他们，进而作为一个Android工程进行编译构建。
 
-以前的Eclipse+ADT的工程结构，单元测试是放在tests目录下的，所以在这里对其单元测试目录进行了重新设置，指定我们原来的tests目录为其单元测试根目录。debug、和release这两个Build Type也类似。
+以前的Eclipse+ADT的工程结构，单元测试是放在tests目录下的，所以在这里对其单元测试目录进行了重新设置，指定我们原来的tests目录为其单元测试根目录。debug、和 release 这两个 Build Type 也类似。
 
-以上两种迁移方式，大家根据自己的情况选择，不过还是**建议大家选择第一种**，迁移后就用Android Studio的目录结构来开发，不然会有很多兼容性的 build 脚本代码，以后Android Gradle插件升级也不容易，因为有时候会有一些兼容，导致以后的任何变动都要小心翼翼。
+以上两种迁移方式，大家根据自己的情况选择，不过还是**建议大家选择第一种**，迁移后就用 Android Studio 的目录结构来开发，不然会有很多兼容性的 build 脚本代码，以后Android Gradle插件升级也不容易，因为有时候会有一些兼容，导致以后的任何变动都要小心翼翼。
 
 ### 7.7 小结
 
-这一章介绍了Android Gradle插件，让大家对 Android Gradle 以及Android Studio 工程有一个简单而全面的了解，也可以基于这些知识新建自己的Android Gradle工程，并进行开发，是一个整体的认识，了解其中的一些基本的概念。
+这一章介绍了 Android Gradle 插件，让大家对 Android Gradle 以及 Android Studio 工程有一个简单而全面的了解，也可以基于这些知识新建自己的 Android Gradle 工程，并进行开发，是一个整体的认识，了解其中的一些基本的概念。
 
-下几章会从一些现实中的项目使用到的情况来介绍Android Gradle，比如多工程打包，比如发布库工程，比如多渠道打包等等，等这些介绍完之后，相信大家已经非常熟悉和使用Android Gradle了，然后会用一章对Android Gradle做一个全面的介绍，到时候会有很多你没有见过的配置和功能等等。
+下几章会从一些现实中的项目使用到的情况来介绍 Android Gradle，比如多工程打包，比如发布库工程，比如多渠道打包等等，等这些介绍完之后，相信大家已经非常熟悉和使用 Android Gradle 了，然后会用一章对 Android Gradle 做一个全面的介绍，到时候会有很多你没有见过的配置和功能等等。
 
 - - -
 

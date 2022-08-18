@@ -36,7 +36,7 @@ public enum GradeEnum {
 }
 ```
 
-2. 配置文件 resources/application.yml
+2\. 配置文件 resources/application.yml
 
 ```yml
 # MP 配置
@@ -67,4 +67,4 @@ converter.setFastJsonConfig(config);
 private UserStatus status;
 ```
 
-以上两种方式任选其一,然后在枚举中复写 toString 方法即可。
+以上两种方式任选其一, 然后在枚举中复写 toString 方法即可。

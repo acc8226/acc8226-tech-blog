@@ -3,10 +3,10 @@
 </trim>
 ```
 
-prefix:在 trim 标签内 sql 语句加上前缀
-suffix:在 trim 标签内 sql 语句加上后缀
-prefixOverrides:指定去除多余的前缀内容
-suffixOverrides:指定去除多余的后缀内容，如：suffixOverrides=","，去除 trim 标签内 sql 语句多余的后缀","
+* prefix:在 trim 标签内 sql 语句加上前缀
+* suffix:在 trim 标签内 sql 语句加上后缀
+* prefixOverrides:指定去除多余的前缀内容
+* suffixOverrides:指定去除多余的后缀内容，如：suffixOverrides=","，去除 trim 标签内 sql 语句多余的后缀","
 
 ```xml
 <insert id="insert" parameterType="com.tortuousroad.groupon.cart.entity.Cart">
@@ -66,7 +66,7 @@ suffixOverrides:指定去除多余的后缀内容，如：suffixOverrides=","，
 suffixOverrides=","
 ```
 
-执行的sql语句也许是这样的, 这显然是错误的
+执行的 sql 语句也许是这样的, 这显然是错误的
 
 ```sql
 insert into cart (id,user_id,deal_id,) values(1,2,1,);
@@ -113,11 +113,14 @@ if ($row) {
 ```
 
 但是这样写有两个问题
+
 1、效率太差，每次执行都要执行2个sql
 2、高并发的情况下数据会出问题，不能保证原子性
 
-还好MySQL 为我们解决了这个问题：我们可以通过 ON DUPLICATE KEY UPDATE  达到以上目的, 且能保证操作的原子性和数据的完整性。
+还好 MySQL 为我们解决了这个问题：我们可以通过 ON DUPLICATE KEY UPDATE  达到以上目的, 且能保证操作的原子性和数据的完整性。
+
 **ON DUPLICATE KEY UPDATE **可以达到以下目的:
+
 向数据库中插入一条记录：
 
 若该数据的主键值/ UNIQUE KEY 已经在表中存在,则执行更新操作, 即UPDATE 后面的操作。

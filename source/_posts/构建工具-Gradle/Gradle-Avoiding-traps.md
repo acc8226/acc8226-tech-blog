@@ -5,6 +5,7 @@
 ### [Example: Variables scope: local and script wide 示例: 变量范围: 本地范围和脚本范围](https://docs.gradle.org/6.3/userguide/potential_traps.html#example_variables_scope_local_and_script_wide)
 
 scope.groovy
+
 ```
 String localScope1 = 'localScope1'
 def localScope2 = 'localScope2'

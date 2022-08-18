@@ -1,4 +1,4 @@
-### 安装 Nginx
+## 安装 Nginx
 
 `yum install nginx -y`
 
