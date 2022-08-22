@@ -23,6 +23,7 @@ categories: IDE-使用
 ![](http://upload-images.jianshu.io/upload_images/1662509-8e4c788bb8dea0ef.gif?imageMogr2/auto-orient/strip)
 
 * 启用 serialVersionUID
+
 > I am not sure if you have an old version of IntelliJ but If I go File => Settings... => Inspections => Serialization issues => Serializable class without 'serialVersionUID' enabled, the class you provide give me warnings.
 
 ## 疑问

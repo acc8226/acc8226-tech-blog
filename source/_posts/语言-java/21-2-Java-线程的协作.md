@@ -32,92 +32,92 @@ import java.util.concurrent.ExecutionException;
  * 线程池自定义任务 简单 demo
  */
 public class Ch21_10_Executor {
-	
+
     interface MyFuture<V> {
-    	// 阻塞直到线程运行结束
+        // 阻塞直到线程运行结束
         V get() throws InterruptedException, ExecutionException;
-	}
-    
+    }
+
     static class MyExecutor {
-    	// 它封装了创建子线程，同步获取结果的过程，它会创建一个执行子线程
-    	public <V> MyFuture<V> submit(final Callable<V> callable) {
-    		Object lock = new Object();
-    		ExecutorThread<V> thread = new ExecutorThread<>(callable, lock);
-    		thread.start();
-    		
-    		MyFuture<V> future = new MyFuture<V>() {
+        // 它封装了创建子线程，同步获取结果的过程，它会创建一个执行子线程
+        public <V> MyFuture<V> submit(final Callable<V> callable) {
+            Object lock = new Object();
+            ExecutorThread<V> thread = new ExecutorThread<>(callable, lock);
+            thread.start();
 
-				@Override
-				public V get() throws InterruptedException, ExecutionException {
-					synchronized (lock) {
-						while(!thread.isDone) {
-							lock.wait();
-						}
-						if (thread.getException() != null) {
-							throw new ExecutionException(thread.getException());
-						}
-						V v = thread.getResult();
-						return v;
-					}
-				}
-			};
-			return future;
-    	}
+            MyFuture<V> future = new MyFuture<V>() {
+
+                @Override
+                public V get() throws InterruptedException, ExecutionException {
+                    synchronized (lock) {
+                        while(!thread.isDone) {
+                            lock.wait();
+                        }
+                        if (thread.getException() != null) {
+                            throw new ExecutionException(thread.getException());
+                        }
+                        V v = thread.getResult();
+                        return v;
+                    }
+                }
+            };
+            return future;
+        }
     }
-    
+
     static class ExecutorThread<V> extends Thread {
-    	private V result;
-    	private Exception exception;
-    	boolean isDone = false;
-    	private Callable<V> callable;
-    	private Object lock;
-    	
-		public ExecutorThread(Callable<V> callable, Object lock) {
-			this.callable = callable;
-			this.lock = lock;
-		}
-		
-		@Override
-		public void run() {
-			try {
-				result = callable.call();
-			} catch (Exception e) {
-				exception = e;
-			} finally {
-				synchronized (lock) {
-					isDone = true;
-					lock.notifyAll();
-				}
-			}
-		}
+        private V result;
+        private Exception exception;
+        boolean isDone = false;
+        private Callable<V> callable;
+        private Object lock;
 
-		public V getResult() {
-			return result;
-		}
+        public ExecutorThread(Callable<V> callable, Object lock) {
+            this.callable = callable;
+            this.lock = lock;
+        }
 
-		public Exception getException() {
-			return exception;
-		}
+        @Override
+        public void run() {
+            try {
+                result = callable.call();
+            } catch (Exception e) {
+                exception = e;
+            } finally {
+                synchronized (lock) {
+                    isDone = true;
+                    lock.notifyAll();
+                }
+            }
+        }
 
-		public boolean isDone() {
-			return isDone;
-		}
+        public V getResult() {
+            return result;
+        }
+
+        public Exception getException() {
+            return exception;
+        }
+
+        public boolean isDone() {
+            return isDone;
+        }
     }
-	
-	public static void main(String[] args) throws Exception {
-		MyExecutor executor = new MyExecutor();
-		Callable<String> callable = new Callable<String>() {
-			@Override
-			public String call() throws Exception {
-				Thread.sleep(2000);
-				return "hello MyExecutor!";
-			}
-		};
-		MyFuture<String> future = executor.submit(callable);
-		// 获取异步调取结果
-		String result = future.get();
-		System.out.println("result = " + result);
-	}
+
+    public static void main(String[] args) throws Exception {
+        MyExecutor executor = new MyExecutor();
+        Callable<String> callable = new Callable<String>() {
+            @Override
+            public String call() throws Exception {
+                Thread.sleep(2000);
+                return "hello MyExecutor!";
+            }
+        };
+        MyFuture<String> future = executor.submit(callable);
+        // 获取异步调取结果
+        String result = future.get();
+        System.out.println("result = " + result);
+    }
 
 }
 ```

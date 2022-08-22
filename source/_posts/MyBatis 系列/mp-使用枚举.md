@@ -1,10 +1,12 @@
+## 使用枚举
+
+mp 提供了 @EnumValue 枚举注解。
+
 枚举与数据库
 
 枚举与 json
 
 枚举与 spring boot
-
-使用 @EnumValue 注解枚举属性
 
 ```java
 package com.baomidou.mybatisplus.samples.enums.enums;
@@ -68,3 +70,22 @@ private UserStatus status;
 ```
 
 以上两种方式任选其一, 然后在枚举中复写 toString 方法即可。
+
+## com.baomidou.mybatisplus.annotation.TableField
+
+boolean exist() default true; 默认 true 存在，false 不存在
+FieldFill fill() default FieldFill.DEFAULT;  字段自动填充策略
+
+## com.baomidou.mybatisplus.annotation.TableId
+
+表主键标识
+
+String value() default ""; 字段值（驼峰命名方式，该值可无）
+IdType type() default IdType.NONE; 主键ID
+
+## com.baomidou.mybatisplus.annotation.TableLogic
+
+表字段逻辑处理注解（逻辑删除）
+
+String value() default ""; 默认逻辑未删除值（该值可无、会自动获取全局配置）
+String delval() default ""; 默认逻辑删除值（该值可无、会自动获取全局配置）

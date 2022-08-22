@@ -29,6 +29,7 @@ AWT是Swing的基础，Swing事件处理和布局管理都是依赖于AWT，AWT�
 ## 事件处理模型
 
 图形界面的组件要响应用户操作，就必须添加事件处理机制。Swing采用AWT的事件处理模型进行事件处理。在事件处理的过程中涉及三个要素：
+
 1. 事件：是用户对界面的操作，在Java中事件被封装称为事件类 java.awt.AWTEvent 及其子类，例如按钮单击事件类是 java.awt.event.ActionEvent。
 2. 事件源：是事件发生的场所，就是各个组件，例如按钮单击事件的事件源是按钮（Button）。
 3. 事件处理者：是事件处理程序，在Java 中事件处理者是实现特定接口的事件对象。
@@ -38,6 +39,7 @@ AWT是Swing的基础，Swing事件处理和布局管理都是依赖于AWT，AWT�
 ### 使用适配器
 
 事件监听器都是接口，在Java中接口中定义的抽象方法必须全部是实现，哪怕你对某些方法并不关心。为此 Java 还提供了一些与监听器相配套的适配器。监听器是接口，命名采用XXXListener，而适配器是类，命名采用XXX Adapter。在使用时通过继承事件所对应的适配器类，覆盖所需要的方法，无关方法不用实现。
+
 ```java
      this.addWindowListener(new WindowAdapter(){
          @Override
@@ -51,6 +53,7 @@ AWT是Swing的基础，Swing事件处理和布局管理都是依赖于AWT，AWT�
 可见代码非常的简洁。事件适配器提供了一种简单的实现监听器的手段，可以缩短程序代码。但是，由于Java的单一继承机制，当需要多种监听器或此类已有父类时，就无法采用事件适配器了。
 
 并非所有的监听器接口都有对应的适配器类，一般定义了多个方法的监听器接口，例如WindowListener有多个方法对应多种不同的窗口事件时，才需要配套的适配器，主要的适配器如下：
+
 * ComponentAdapter：组件适配器。
 * ContainerAdapter：容器适配器。
 * FocusAdapter：焦点适配器。
@@ -68,11 +71,13 @@ Java SE提供了7种布局管理器包括：FlowLayout、BorderLayout、GridLayo
 ### FlowLayout
 
 主要的构造方法如下：
+
 * FlowLayout(int align, int hgap, int vgap)：创建一个 FlowLayout 对象，它具有指定的对齐方式以及指定的水平和垂直间隙，hgap 参数是组件之间的水平间隙，vgap 参数是组件之间的垂直间隙，单位是像素。
 * FlowLayout(int align)：创建一个FlowLayout对象，指定的对齐方式，默认的水平和垂直间隙是5个单位。
 * FlowLayout()：创建一个FlowLayout对象，它是居中对齐的，默认的水平和垂直间隙是5个单位。
 
 上述参数align是对齐方式，它是通过FlowLayout的常量指定的，这些常量说明如下：
+
 * FlowLayout.CENTER：指示每一行组件都应该是居中的。
 * FlowLayout.LEADING：指示每一行组件都应该与容器方向的开始边对齐，例如，对于从左到右的方向，则与左边对齐。
 * FlowLayout.LEFT：指示每一行组件都应该是左对齐的。
@@ -86,10 +91,12 @@ BorderLayout 是 JWindow、JFrame 和 JDialog 的默认布局管理器。BorderL
 ![](https://upload-images.jianshu.io/upload_images/1662509-bd3b7bc8544a38c2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 BorderLayout主要的构造方法如下：
+
 * BorderLayout(int hgap, int vgap)：创建一个 BorderLayout 对象，指定水平和垂直间隙，hgap参数是组件之间的水平间隙，vgap参数是组件之间的垂直间隙，单位是像素。
 * BorderLayout()：创建一个BorderLayout对象，组件之间没有间隙。
 
 BorderLayout 布局有5个区域，为此BorderLayout中定义了5个约束常量，说明如下：
+
 * BorderLayout.CENTER：中间区域的布局约束（容器中央）。
 * BorderLayout.EAST：东区域的布局约束（容器右边）。
 * BorderLayout.NORTH：北区域的布局约束（容器顶部）。
@@ -100,6 +107,7 @@ BorderLayout 布局有5个区域，为此BorderLayout中定义了5个约束常�
 
 GridLayout布局以网格形式对组件进行摆放，容器被分成大小相等的矩形，一个矩形中放置一个组件。
 GridLayout布局主要的构造方法如下：
+
 * GridLayout()：创建具有默认值的GridLayout对象，即每个组件占据一行一列。
 * GridLayout(int rows, int cols)：创建具有指定行数和列数的GridLayout对象。
 * GridLayout(int rows, int cols, int hgap, int vgap)：创建具有指定行数和列数的GridLayout对象，并指定水平和垂直间隙。
@@ -121,6 +129,7 @@ GridLayout布局主要的构造方法如下：
 • drawString(String s,int x,int y)
 
 填充
+
 * fillOval(int x, int y, int width, int height)
 * fillRect(int x, int y, int width, int height)
 * fillRoundRect(int x, int y, int width, int height, int arcWidth, int arcHeight)
@@ -128,12 +137,14 @@ GridLayout布局主要的构造方法如下：
 arcAngle)
 
 3. 字体控制
+
 * Font myFont = new Font("宋体", Font.BOLD, 12);
 定义字体为宋体，大小为12号，粗体。
 
 * Font.PLAIN，Font.ITALIC，Font.BOLD分别表示普通、斜体和粗体。
 * 如果要同时兼有几种风格可以通过"+"号连接。
 例如：
+
 ```java
 new Font("TimesRoman", Font.BOLD + Font.ITALIC, 28);
 ```
@@ -168,6 +179,7 @@ Component类中定义方法
 • getForeground() ---获取前景色
 
 思考：设置一个红色按钮，上面写黄色字如何实现？
+
 ```java
 Button btn = new Button("确定");
 btn.setBackground(Color.red);
@@ -190,6 +202,7 @@ Image img = tool.getImage( "images\\img1.gif");
 public void drawImage(Image, x, y, imageObserver)
 
 ## Java 2D图形绘制步骤
+
 1. 获得一个Graphics2D类的对象;
 • Graphics2D g2d=(Graphics2D)g;
 • 定义2D图形对象(java.awt.geom包)；
@@ -260,47 +273,48 @@ import java.awt.event.ActionListener;
 
 public class Test3 {
 
-	public static void main(String[] args) {
-		new MyFrame();
-	}
-	
-	static class MyFrame extends Frame {
-		
-		public MyFrame() {
-			setTitle("测试");
-			Button btn = new Button("改背景");
-			Font f = new Font("黑体", Font.BOLD, 22);
-			btn.setFont(f);
-			btn.addActionListener(new ActionListener() {
-				
-				@Override
-				public void actionPerformed(ActionEvent e) {
-					setBackground(new Color((int)(Math.random() * 0xFFFFFF)));
-				}
-			});
-			setLayout(new FlowLayout());
-			add(btn);
-			
-			btn = new Button("关闭");
-			btn.setFont(f);
-			btn.addActionListener(new ActionListener() {
-				
-				@Override
-				public void actionPerformed(ActionEvent e) {
-					dispose();
-				}
-			});
-			add(btn);
-			
-			super.setSize(400, 200);
-			super.setVisible(true);	
-		}
-	}
+    public static void main(String[] args) {
+        new MyFrame();
+    }
+
+    static class MyFrame extends Frame {
+
+        public MyFrame() {
+            setTitle("测试");
+            Button btn = new Button("改背景");
+            Font f = new Font("黑体", Font.BOLD, 22);
+            btn.setFont(f);
+            btn.addActionListener(new ActionListener() {
+
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    setBackground(new Color((int)(Math.random() * 0xFFFFFF)));
+                }
+            });
+            setLayout(new FlowLayout());
+            add(btn);
+
+            btn = new Button("关闭");
+            btn.setFont(f);
+            btn.addActionListener(new ActionListener() {
+
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    dispose();
+                }
+            });
+            add(btn);
+
+            super.setSize(400, 200);
+            super.setVisible(true);
+        }
+    }
 
 }
 ```
 
 设有一批英文单词存放在一个数组中，编制一个图形界面程序浏览单词。在界面中安排一个标签显示单词，另有“上一个”、“下一个”两个按钮实现单词的前后翻动。
+
 ```java
 package newfile;
 
@@ -315,76 +329,76 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Test3 {
-	
-	public static void main(String[] args) {
-		MyFrame myFrame = new MyFrame();
-		String[] strs = {"welcome", "element", "target", "term", "modify", "yellow"};
-		myFrame.setContent(strs);
-		myFrame.setVisible(true);
-	}
-	
-	static class MyFrame extends Frame {
-		
-		private String[] strs;
-		private int index;
-		private Label label = new Label();
-		
-		public MyFrame() {
-			setSize(400, 200);
-			setTitle("单词卡片");
-			
-			Panel panel = new Panel(new FlowLayout());
-			this.label.setFont(new Font("宋体", Font.PLAIN, 28));
-			this.label.setAlignment(Label.CENTER);
-			add("Center", this.label);
-			add("South", panel);
-			
-			Button btn = new Button("上一个");
-			panel.add(btn);
-			Font f = new Font("黑体", Font.PLAIN, 20);
-			btn.setFont(f);
-			btn.addActionListener(new ActionListener() {
-				
-				@Override
-				public void actionPerformed(ActionEvent e) {
-					preWord();
-				}
-			});
-			
-			btn = new Button("下一个");
-			panel.add(btn);
-			btn.setFont(f);
-			btn.addActionListener(new ActionListener() {	
-				@Override
-				public void actionPerformed(ActionEvent e) {
-					nextWord();
-				}
-			});
-		}
 
-		public void setContent(String[] strs) {
-			this.strs = strs;
-			this.index = 0;
-			this.label.setText(strs[index]);		
-		}
-		
-		public void preWord() {
-			if (this.index <= 0) {
-				this.index = this.strs.length - 1;
-			} else {
-				this.index = --this.index % this.strs.length;
-			}
-			this.label.setText(strs[index]);
-		}
-		
-		public void nextWord() {
-			if (index >= 0) {
-				this.index = ++this.index % this.strs.length;
-			} else {
-				this.index = 0;
-			}
-			this.label.setText(this.strs[this.index]);
-		}
-	}
+    public static void main(String[] args) {
+        MyFrame myFrame = new MyFrame();
+        String[] strs = {"welcome", "element", "target", "term", "modify", "yellow"};
+        myFrame.setContent(strs);
+        myFrame.setVisible(true);
+    }
+
+    static class MyFrame extends Frame {
+
+        private String[] strs;
+        private int index;
+        private Label label = new Label();
+
+        public MyFrame() {
+            setSize(400, 200);
+            setTitle("单词卡片");
+
+            Panel panel = new Panel(new FlowLayout());
+            this.label.setFont(new Font("宋体", Font.PLAIN, 28));
+            this.label.setAlignment(Label.CENTER);
+            add("Center", this.label);
+            add("South", panel);
+
+            Button btn = new Button("上一个");
+            panel.add(btn);
+            Font f = new Font("黑体", Font.PLAIN, 20);
+            btn.setFont(f);
+            btn.addActionListener(new ActionListener() {
+
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    preWord();
+                }
+            });
+
+            btn = new Button("下一个");
+            panel.add(btn);
+            btn.setFont(f);
+            btn.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    nextWord();
+                }
+            });
+        }
+
+        public void setContent(String[] strs) {
+            this.strs = strs;
+            this.index = 0;
+            this.label.setText(strs[index]);
+        }
+
+        public void preWord() {
+            if (this.index <= 0) {
+                this.index = this.strs.length - 1;
+            } else {
+                this.index = --this.index % this.strs.length;
+            }
+            this.label.setText(strs[index]);
+        }
+
+        public void nextWord() {
+            if (index >= 0) {
+                this.index = ++this.index % this.strs.length;
+            } else {
+                this.index = 0;
+            }
+            this.label.setText(this.strs[this.index]);
+        }
+    }
 }
 ```

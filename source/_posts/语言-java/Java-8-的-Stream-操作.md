@@ -8,7 +8,6 @@
 4. 构造方法引用，通过类名::new， 如 User::new
 
 > 第三点: 若Lambda 的参数列表的第一个参数，是实例方法的调用者，第二个参数(或无参)是实例方法的参数时，格式： 类名::实例方法名
-
 > There are several basic function shapes,
 including Function (unary function from T to R),
 Consumer (unary function from T to void),
@@ -33,59 +32,59 @@ public static void main(String[] args) {
         int i = toIntFunction.apply(new DoubleColon(),"toInt");
     }
 
-	static class DoubleColon {
+    static class DoubleColon {
 
-	    public static void printStr(String str) {
-	        System.out.println("printStr : " + str);
-	    }
+        public static void printStr(String str) {
+            System.out.println("printStr : " + str);
+        }
 
-	    public void toUpper(){
-	        System.out.println("toUpper : " + this.toString());
-	    }
+        public void toUpper(){
+            System.out.println("toUpper : " + this.toString());
+        }
 
-	    public void toLower(String str){
-	        System.out.println("toLower : " + str);
-	    }
+        public void toLower(String str){
+            System.out.println("toLower : " + str);
+        }
 
-	    public int toInt(String str){
-	        System.out.println("toInt : " + str);
-	        return 1;
-	    }
-	}
+        public int toInt(String str){
+            System.out.println("toInt : " + str);
+            return 1;
+        }
+    }
 ```
 
 > 用::提取的函数，最主要的区别在于静态与非静态方法，非静态方法比静态方法多一个参数，就是被调用的实例。
 
 ```java
 // 使用双冒号::来构造非静态函数引用
-	    String content = "Hello JDK8";
+String content = "Hello JDK 8";
 
-	    // public String substring(int beginIndex)
-	    // 写法一: 对象::非静态方法
-	    Function<Integer, String> func = content::substring;
-	    String result = func.apply(1);
-	    System.out.println(result);
+// public String substring(int beginIndex)
+// 写法一: 对象::非静态方法
+Function<Integer, String> func = content::substring;
+String result = func.apply(1);
+System.out.println(result);
 
-	    // 写法二:
-	    IntFunction<String> intFunc = content::substring;
-	    result = intFunc.apply(1);
-	    System.out.println(result);
+// 写法二:
+IntFunction<String> intFunc = content::substring;
+result = intFunc.apply(1);
+System.out.println(result);
 
-	    // 写法三: String::非静态方法
-	    BiFunction<String,Integer,String> lala = String::substring;
-	    String s = lala.apply(content, 1);
-	    System.out.println(s);
+// 写法三: String::非静态方法
+BiFunction<String,Integer,String> lala = String::substring;
+String s = lala.apply(content, 1);
+System.out.println(s);
 
-	    // public String toUpperCase()
-	    // 写法一: 函数引用也是一种函数式接口，所以也可以将函数引用作为方法的参数
-	    Function<String, String> func2 = String::toUpperCase;
-	    result = func2.apply("lalala");
-	    System.out.println(result);
+// public String toUpperCase()
+// 写法一: 函数引用也是一种函数式接口，所以也可以将函数引用作为方法的参数
+Function<String, String> func2 = String::toUpperCase;
+result = func2.apply("lalala");
+System.out.println(result);
 
-	    // 写法二: 可以改写成Supplier: 入参void, 返回值String
-	    Supplier<String> supplier = "alalal"::toUpperCase;
-	    result = supplier.get();
-	    System.out.println(result);
+// 写法二: 可以改写成Supplier: 入参void, 返回值String
+Supplier<String> supplier = "alalal"::toUpperCase;
+result = supplier.get();
+System.out.println(result);
 ```
 
 ### 数组引用
@@ -127,58 +126,58 @@ c static void main(String[] args) {
 ```java
 final List<String> list = Arrays.asList("jack", "mary", "lucy");
 
-		// 过滤 + 输出
-		System.out.println("过滤 + 输出: ");
-		Stream<String> stream = list.stream();
-		stream.filter(item -> !item.equals("zhangsan"))
-			.filter(item -> !item.equals("wangwu"))
-			.forEach(item -> System.out.println(item));
+        // 过滤 + 输出
+        System.out.println("过滤 + 输出: ");
+        Stream<String> stream = list.stream();
+        stream.filter(item -> !item.equals("zhangsan"))
+            .filter(item -> !item.equals("wangwu"))
+            .forEach(item -> System.out.println(item));
 
-		// 限制为2
-		System.out.println("limit(2): ");
-		list.stream().limit(2).forEach(System.out::println);
+        // 限制为2
+        System.out.println("limit(2): ");
+        list.stream().limit(2).forEach(System.out::println);
 
-		// 排序
-		System.out.println("排序: ");
-		list.stream().sorted((o1, o2) -> o1.compareTo(o2)).forEach(System.out::println);
+        // 排序
+        System.out.println("排序: ");
+        list.stream().sorted((o1, o2) -> o1.compareTo(o2)).forEach(System.out::println);
 
-		// 取出最大值
-		System.out.println("max: ");
-		String result = list.stream().max((o1, o2) -> o1.compareTo(o2)).orElse("error");
-		System.out.println(result);
+        // 取出最大值
+        System.out.println("max: ");
+        String result = list.stream().max((o1, o2) -> o1.compareTo(o2)).orElse("error");
+        System.out.println(result);
 
 
-		// toList
-		System.out.println("toList: ");
-		List<Integer> collectList = Stream.of(1, 2, 3, 4)
-		        .collect(Collectors.toList());
-		System.out.println("collectList: " + collectList);
-		// 打印结果
-		// collectList: [1, 2, 3, 4]
+        // toList
+        System.out.println("toList: ");
+        List<Integer> collectList = Stream.of(1, 2, 3, 4)
+                .collect(Collectors.toList());
+        System.out.println("collectList: " + collectList);
+        // 打印结果
+        // collectList: [1, 2, 3, 4]
 
-		// toSet
-		System.out.println("toSet: ");
-		Set<Integer> collectSet = Stream.of(1, 2, 3, 4)
-		        .collect(Collectors.toSet());
-		System.out.println("collectSet: " + collectSet);
-		// 打印结果
-		// collectSet: [1, 2, 3, 4]
+        // toSet
+        System.out.println("toSet: ");
+        Set<Integer> collectSet = Stream.of(1, 2, 3, 4)
+                .collect(Collectors.toSet());
+        System.out.println("collectSet: " + collectSet);
+        // 打印结果
+        // collectSet: [1, 2, 3, 4]
 ```
 
 ### list 转 map(通过 stream)
 
 ```java
 List<Person> list = new ArrayList<>();
-		list.add(new Person(1, "mary"));
-		list.add(new Person(2, "lucy"));
+        list.add(new Person(1, "mary"));
+        list.add(new Person(2, "lucy"));
 
-		Map<Integer, Person> map = list.stream().collect(Collectors.toMap(Person::getId, Function.identity()));
-		System.out.println(map);
-		// 输出: {1=Main3$Person@42f30e0a, 2=Main3$Person@24273305}
+        Map<Integer, Person> map = list.stream().collect(Collectors.toMap(Person::getId, Function.identity()));
+        System.out.println(map);
+        // 输出: {1=Main3$Person@42f30e0a, 2=Main3$Person@24273305}
 
-		Map<Integer, String> map2 = list.stream().collect(Collectors.toMap(Person::getId, Person::getName));
-		System.out.println(map2);
-		// 输出: {1=mary, 2=lucy}
+        Map<Integer, String> map2 = list.stream().collect(Collectors.toMap(Person::getId, Person::getName));
+        System.out.println(map2);
+        // 输出: {1=mary, 2=lucy}
 ```
 
 ### 分割数据块
@@ -186,8 +185,8 @@ List<Person> list = new ArrayList<>();
 ![](https://upload-images.jianshu.io/upload_images/1662509-c664e40483b9b188.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ```java
 Map<Boolean, List<Integer>> map = Stream.of(1, 2, 3, 4)
-	        .collect(Collectors.partitioningBy(item -> item > 2));
-		System.out.println(map);
+            .collect(Collectors.partitioningBy(item -> item > 2));
+        System.out.println(map);
 
 // 输出: {false=[1, 2], true=[3, 4]}
 ```

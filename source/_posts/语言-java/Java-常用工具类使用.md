@@ -38,7 +38,7 @@ deeTtoString
 deepEquals
 deepHashCode
 
-其实，Arrays 中包含的数组方法是比较少的，很多常用的操作没有，比如，Arrays的binarySearch只能针对已排序数组进行查找，那没有排序的数组怎么方便查找呢？Apache有一个开源包（http://commons.apache.org/proper/commons-lang/），里面有一个类 ArrayUtils（位于包org.apache.commons.lang3），包含了更多的常用数组操作，这里就不列举了。数组是计算机程序中的基本数据结构，Arrays 类以及 ArrayUtils 类封装了关于数组的常见操作，使用这些方法，避免“重新发明轮子”吧。
+其实，Arrays 中包含的数组方法是比较少的，很多常用的操作没有，比如，Arrays的binarySearch只能针对已排序数组进行查找，那没有排序的数组怎么方便查找呢？Apache有一个开源包（<http://commons.apache.org/proper/commons-lang/>），里面有一个类 ArrayUtils（位于包org.apache.commons.lang3），包含了更多的常用数组操作，这里就不列举了。数组是计算机程序中的基本数据结构，Arrays 类以及 ArrayUtils 类封装了关于数组的常见操作，使用这些方法，避免“重新发明轮子”吧。
 
 ## Collections 类
 

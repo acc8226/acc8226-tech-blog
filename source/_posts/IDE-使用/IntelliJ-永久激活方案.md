@@ -1,6 +1,6 @@
 ---
 title: IntelliJ-永久激活方案
-date: 2020.06.09 23:21:36
+date: 2020-06-09 23:21:36
 categories: IDE-使用
 ---
 
@@ -17,6 +17,6 @@ categories: IDE-使用
 * windows系统：reset_jetbrains_eval_windows.vbs
 * linux/mac系统：reset_jetbrains_eval_mac_linux.sh
 
-2\. 进入 IDEA 中， 先随便新建个 Java 工程， 然后将网盘中最新的 IDEA 无限重置 30 天试用期补丁 ide-eval-resetter-2.3.4.zip拖入 IDEA 界面中
+2\. 进入 IDEA 中， 先随便新建个 Java 工程， 然后将网盘中最新的 IDEA 无限重置 30 天试用期补丁 ide-eval-resetter-2.3.4.zip 拖入 IDEA 界面中
 
 3\. 点 help -> eval reset，然后勾选 Logout when reset 和 Auto reset before per restart 选项，再点 reset 然后重启软件！（这一步非常重要）

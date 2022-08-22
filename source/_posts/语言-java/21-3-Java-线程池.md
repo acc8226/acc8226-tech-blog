@@ -7,6 +7,7 @@
 创建并开启一个线程开销很大。如果我们每次需要执行任务时重复这个步骤，那将会是一笔巨大的性能开销，这也是我们希望通过多线程解决的问题。
 
 为了更好理解创建和开启一个线程的开销，让我们来看一看 JVM 在后台做了哪些事：
+
 * 为线程栈分配内存，保存每个线程方法调用的栈帧。
 * 每个栈帧包括本地变量数组、返回值、操作栈和常量池
 * 一些 JVM 支持本地方法，也将分配本地方法栈
@@ -16,6 +17,7 @@
 * 线程共享堆和方法区
 
 **java.util.concurrent 包中有以下接口**
+
 * Executor —— 执行任务的简单接口
 * ExecutorService —— 一个较复杂的接口，包含额外方法来管理任务和 executor 本身
 * ScheduledExecutorService —— 扩展自 ExecutorService，增加了执行任务的调度方法
@@ -25,7 +27,8 @@
 **Executors 类和 Executor 接口**
 Executors 类包含工厂方法创建不同类型的线程池，Executor 是个简单的线程池接口，只有一个 execute() 方法。
 
-**Executors 类里的工厂方法可以创建很多类型的线程池**：
+**Executors 类里的工厂方法可以创建很多类型的线程池**
+
 * newSingleThreadExecutor()：包含单个线程和无界队列的线程池，同一时间只能执行一个任务
 * newFixedThreadPool()：包含固定数量线程并共享无界队列的线程池；当所有线程处于工作状态，有新任务提交时，任务在队列中等待，直到一个线程变为可用状态
 * newCachedThreadPool()：只有需要时创建新线程的线程池
@@ -34,6 +37,7 @@ Executors 类包含工厂方法创建不同类型的线程池，Executor 是个�
 ### Callable
 
 Callable() 函数返回的类型就是传递进来的 V 类型。
+
 ```java
 public interface Callable<V> {
     /**
@@ -51,6 +55,7 @@ public interface Callable<V> {
 Future 就是对于具体的 Runnable 或者 Callable 任务的执行结果进行取消、查询是否完成、获取结果。必要时可以通过 get 方法获取执行结果，该方法会阻塞直到任务返回结果。
 
 Future 类位于java.util.concurrent 包下，它是一个接口：
+
 ```java
 public interface Future<V> {
     boolean cancel(boolean mayInterruptIfRunning);
@@ -75,6 +80,7 @@ public interface Future<V> {
 * get(long timeout, TimeUnit unit) 用来获取执行结果，如果在指定时间内，还没获取到结果，就直接返回 null。
 
 也就是说 Future 提供了三种功能：
+
 1. 判断任务是否完成；
 2. 能够中断任务；
 3. 能够获取任务执行结果。
@@ -86,7 +92,9 @@ public interface Future<V> {
 ```java
 public class FutureTask<V> implements RunnableFuture<V>
 ```
+
 FutureTask 类实现了 RunnableFuture 接口，我们看一下 RunnableFuture 接口的实现：
+
 ```java
 public interface RunnableFuture<V> extends Runnable, Future<V> {
     void run();
@@ -117,6 +125,7 @@ public interface RunnableFuture<V> extends Runnable, Future<V> {
 然后返回 true（shutdown 请求后所有任务执行完毕）或 false（已超时）
 
 **总结**
+
 * 优雅的关闭，用shutdown(), 之后不能再提交新的任务进去
 * 想立马关闭，并得到未执行任务列表，用shutdownNow()
 awaitTermination()并不具有提交的功能, awaitTermination()是阻塞的，返回结果是线程池是否已停止（true/false）；shutdown()不阻塞。
@@ -155,46 +164,50 @@ If a request cannot be queued, a new thread is created unless this would exceed 
 
 **明确拒绝任务时的行为**
 任务队列总有占满的时候，这是再 submit() 提交新的任务会怎么样呢？RejectedExecutionHandler接口为我们提供了控制方式，接口定义如下：
+
 ```java
 public interface RejectedExecutionHandler {
     void rejectedExecution(Runnable r, ThreadPoolExecutor executor);
 }
 ```
+
 ![](https://upload-images.jianshu.io/upload_images/1662509-a9e960dae6f3033b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 线程池默认的拒绝行为是 **AbortPolicy**，也就是抛出 RejectedExecutionHandler 异常，该异常是非受检异常，很容易忘记捕获。如果不关心任务被拒绝的事件，可以将拒绝策略设置成DiscardPolicy，这样多余的任务会悄悄的被忽略。
 
 策略使用的 Demo
+
 ```java
 public static void main(String[] args) {
-		final int corePoolSize = 1;
-		final int maxPoolSize = 2;
-		BlockingQueue<Runnable> queue = new LinkedBlockingQueue<Runnable>(1);
+        final int corePoolSize = 1;
+        final int maxPoolSize = 2;
+        BlockingQueue<Runnable> queue = new LinkedBlockingQueue<Runnable>(1);
 
-		 // 拒绝策略1：将抛出 RejectedExecutionException. 此处可以切换成其他策略
-		ThreadPoolExecutor executor = new ThreadPoolExecutor
-		(corePoolSize,maxPoolSize, 5,TimeUnit.SECONDS, queue, 
-				new ThreadPoolExecutor.AbortPolicy());
+         // 拒绝策略1：将抛出 RejectedExecutionException. 此处可以切换成其他策略
+        ThreadPoolExecutor executor = new ThreadPoolExecutor
+        (corePoolSize,maxPoolSize, 5,TimeUnit.SECONDS, queue,
+                new ThreadPoolExecutor.AbortPolicy());
 
-		for(int i=0; i<4; i++) {
-			executor.execute(new Worker());
-		}
-		executor.shutdown();
-	}
+        for(int i=0; i<4; i++) {
+            executor.execute(new Worker());
+        }
+        executor.shutdown();
+    }
 
 public static void testShutDown(int startNo) throws InterruptedException {
-		ExecutorService executorService = Executors.newFixedThreadPool(2);
-		for (int i = 0; i < 5; i++) {
-			executorService.execute(getTask(i + startNo));
-		}
-		executorService.shutdown();
-		// awaitTermination是阻塞方法
-		executorService.awaitTermination(1, TimeUnit.DAYS);
-		System.out.println("shutDown->all thread shutdown");
-	}
+        ExecutorService executorService = Executors.newFixedThreadPool(2);
+        for (int i = 0; i < 5; i++) {
+            executorService.execute(getTask(i + startNo));
+        }
+        executorService.shutdown();
+        // awaitTermination是阻塞方法
+        executorService.awaitTermination(1, TimeUnit.DAYS);
+        System.out.println("shutDown->all thread shutdown");
+    }
 ```
 
 获取处理结果和异常
 线程池的处理结果、以及处理过程中的异常都被包装到 Future 中，并在调用 Future.get() 方法时获取，执行过程中的异常会被包装成 ExecutionException，submit() 方法本身不会传递结果和任务执行过程中的异常。获取执行结果的代码可以这样写：
+
 ```java
 ExecutorService executorService = Executors.newFixedThreadPool(4);
 Future<Object> future = executorService.submit(new Callable<Object>() {
@@ -203,7 +216,7 @@ Future<Object> future = executorService.submit(new Callable<Object>() {
             throw new RuntimeException("exception in call~");// 该异常会在调用Future.get()时传递给调用者
         }
     });
-     
+
 try {
   Object result = future.get();
 } catch (InterruptedException e) {
@@ -214,6 +227,7 @@ try {
 ```
 
 ### 正确构造线程池
+
 ```java
 int poolSize = Runtime.getRuntime().availableProcessors() * 2;
 BlockingQueue<Runnable> queue = new ArrayBlockingQueue<>(512);
@@ -223,13 +237,14 @@ executorService = new ThreadPoolExecutor(poolSize, poolSize,
 ```
 
 #### 获取单个结果
+
 过`submit()`向线程池提交任务后会返回一个`Future`，调用`V Future.get()`方法能够阻塞等待执行结果，`V get(long timeout, TimeUnit unit)`方法可以指定等待的超时时间。
 
 #### 获取多个结果
 
 如果向线程池提交了多个任务，要获取这些任务的执行结果，可以依次调用`Future.get()`获得。但对于这种场景，我们更应该使用 [ExecutorCompletionService](https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ExecutorCompletionService.html)，该类的`take()`方法总是阻塞等待某一个任务完成，然后返回该任务的`Future`对象。向`CompletionService`批量提交任务后，只需调用相同次数的`CompletionService.take()`方法，就能获取所有任务的执行结果，获取顺序是任意的，取决于任务的完成顺序：
-```java
 
+```java
 void solve(Executor e,
            Collection<Callable<Result>> solvers)
     throws InterruptedException, ExecutionException {
@@ -249,9 +264,11 @@ void solve(Executor e,
 `V Future.get(long timeout, TimeUnit unit)`方法可以指定等待的超时时间，超时未完成会抛出`TimeoutException`。
 
 #### 多个任务的超时时间
+
 等待多个任务完成，并设置最大等待时间，可以通过[CountDownLatch](https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/CountDownLatch.html)完成：
+
 ```java
-public void testLatch(ExecutorService executorService, List<Runnable> tasks) 
+public void testLatch(ExecutorService executorService, List<Runnable> tasks)
     throws InterruptedException{
        
     CountDownLatch latch = new CountDownLatch(tasks.size());
@@ -274,9 +291,9 @@ public void testLatch(ExecutorService executorService, List<Runnable> tasks)
 ## 参考
 
 深入学习 Java 线程池
-http://www.importnew.com/29212.html
+<http://www.importnew.com/29212.html>
 
 threadPoolExecutor 中的 shutdown() 、 shutdownNow() 、 awaitTermination() 的用法和区别
-https://blog.csdn.net/u012168222/article/details/52790400 
+<https://blog.csdn.net/u012168222/article/details/52790400>
 
  [Java线程池详解](https://www.cnblogs.com/CarpenterLee/p/9558026.html)

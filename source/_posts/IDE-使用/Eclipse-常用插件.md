@@ -9,7 +9,7 @@ categories: IDE-使用
 一个 Eclipse 插件，能将 Eclipse 中现有的 java 类生成类图，可以进行 Java 包的依赖分析，基于 UML 图进行模型设计，以及逆向工程（即从已有源代码生成类图）。
 
 1. 下载 ModelGoon 到本地；
-2. 打开 Eclipse，点击Help，选择 Install new software；
+2. 打开 Eclipse，点击 Help，选择 Install new software；
 3. 点击 add 按钮，选择 archive，在找到 ModelGoon 所在的位置，确定安装。
 
 ## 使用方法

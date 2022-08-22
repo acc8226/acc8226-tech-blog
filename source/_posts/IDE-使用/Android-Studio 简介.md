@@ -20,6 +20,7 @@ Android Studio 是基于 IntelliJ IDEA 的官方 Android 应用开发集成开�
 ### 安装 Android Studio
 
 打开 [Android 开发者网站](http://developer.android.youdaxue.com/sdk/index.html)安装 Android Studio。此页面将自动检测到你的操作系统。
+
 ![](http://upload-images.jianshu.io/upload_images/1662509-92452dfe1ba8ed01.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 接受条款及条件，开始下载。双击下载的文件并按照提示操作。 打开下载后的文件，并按照 Android Studio 设置向导操作。所有步骤均接受默认配置。

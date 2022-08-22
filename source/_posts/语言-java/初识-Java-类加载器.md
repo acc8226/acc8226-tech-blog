@@ -1,5 +1,5 @@
 什么是 ClassLoader
-ClassLoader简称类加载器，主要用于加载和校验编译后的Java文件(即：以.class结尾的文件)；
+ClassLoader 简称类加载器，主要用于加载和校验编译后的 Java 文件(即：以.class结尾的文件)；
 
 有哪些类加载器(ClassLoader)
 AppClassLoader(应用类加载器)
@@ -11,13 +11,13 @@ BootstrapClassLoader(启动类加载器)
 
 ```java
 public class User {
-	public static void main(String[] args) {
-		User user = new User();
-		Class<? extends User> userClass = user.getClass();
-		System.out.println(userClass.getClassLoader());
-		System.out.println(userClass.getClassLoader().getParent());
-		System.out.println(userClass.getClassLoader().getParent().getParent());
-	}
+    public static void main(String[] args) {
+        User user = new User();
+        Class<? extends User> userClass = user.getClass();
+        System.out.println(userClass.getClassLoader());
+        System.out.println(userClass.getClassLoader().getParent());
+        System.out.println(userClass.getClassLoader().getParent().getParent());
+    }
 }
 ```
 
@@ -49,9 +49,9 @@ package aa.bb;
 
 public class Hello {
 
-	static {
-		System.out.println("init ...");
-	}
+    static {
+        System.out.println("init ...");
+    }
 }
 ```
 
@@ -81,19 +81,19 @@ public class MyClassLoader extends ClassLoader {
     }
 
     @Override
-	public Class<?> findClass(final String name) throws ClassNotFoundException {
+    public Class<?> findClass(final String name) throws ClassNotFoundException {
         final String classPath = path + "/" + name.replace(".","/") + ".class";
         try (InputStream in = new FileInputStream(classPath);
         ByteArrayOutputStream out = new ByteArrayOutputStream();) {
             int len;
             byte[] bytes = new byte[4096];
-			while ((len = in.read(bytes)) != -1) {
-				out.write(bytes, 0, len);
-			}
-			byte[] byteArray = out.toByteArray();
-			return defineClass(name, byteArray, 0, byteArray.length);
-		} catch (Exception e) {
-			e.printStackTrace();
+            while ((len = in.read(bytes)) != -1) {
+                out.write(bytes, 0, len);
+            }
+            byte[] byteArray = out.toByteArray();
+            return defineClass(name, byteArray, 0, byteArray.length);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
         return null;
     }
@@ -101,12 +101,14 @@ public class MyClassLoader extends ClassLoader {
 ```
 
 创建测试类  HelloTest.java
+
 ```sh
 mkdir -p aa/test
 vim aa/test/HelloTest.java
 javac aa/test/HelloTest.java
 ```
-```
+
+```java
 package aa.test;
 
 import aa.classloader.MyClassLoader;
@@ -118,11 +120,12 @@ public class HelloTest {
         MyClassLoader myClassLoader = new MyClassLoader(path);
         Class<?> clazz = myClassLoader.findClass("aa.bb.Hello");
         clazz.newInstance();
-	}
+    }
 }
 ```
 
 运行结果
+
 ```
 java aa.test.HelloTest
 
@@ -136,5 +139,6 @@ init ...
 4.使用自定义的类加载器可以没有限制的在其他的地方加载类
 
 ## 参考
+
 Java中自定义ClassLoader和ClassLoader的使用非
-https://blog.csdn.net/weixin_45492007/article/details/98875060
+<https://blog.csdn.net/weixin_45492007/article/details/98875060>
