@@ -1,5 +1,5 @@
 ---
-title: Bash-脚本简介
+title: Bash 脚本简介
 categories: 脚本文件
 tags:
 - Bash

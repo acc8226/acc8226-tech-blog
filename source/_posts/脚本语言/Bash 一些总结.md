@@ -1,5 +1,5 @@
 ---
-title: Bash-一些总结
+title: Bash 一些总结
 categories: 脚本文件
 tags:
 - Bash

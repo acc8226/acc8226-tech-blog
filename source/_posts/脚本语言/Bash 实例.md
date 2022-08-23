@@ -1,5 +1,5 @@
 ---
-title: Bash-实例
+title: Bash 实例
 categories: 脚本文件
 tags:
 - Bash
@@ -23,15 +23,13 @@ exit
 ```
 
 > `cat /dev/null > wtmp` 可以换为 `: > wtmp`
-
 > 遇到权限不够的提示，为什么，如何解决？
 权限不够加sudo啊，可是你会发现
 >
 > sudo cat /dev/null > /var/log/wtmp 一样会提示权限不够，为什么呢？因为sudo只能让cat命令以sudo的权限执行，而对于>这个符号并没有sudo的权限，我们可以使用
 >
 > sudo sh -c "cat /dev/null > /var/log/wtmp " 让整个命令都具有sudo的权限执行
-
-> 为什么cleanlogs.sh可以将log文件清除？
+> 为什么 cleanlogs.sh 可以将 log 文件清除？
 因为/dev/null ，里面是空的，重定向到 /var/log/wtmp 文件后，就清空了 wtmp 文件的内容。
 
 ## 题目一

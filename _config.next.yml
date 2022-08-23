@@ -346,7 +346,6 @@ lazyload: true
 # Front-matter variable (nonsupport home archive).
 quicklink:
   enable: false
-
   # Home page and archive page can be controlled through home and archive options below.
   # This configuration item is independent of `enable`.
   home: false
@@ -363,8 +362,8 @@ quicklink:
 # For more information: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
   enable: true
-  size: 172 # The width of the ribbon
-  alpha: 0.31 # The transparency of the ribbon
+  size: 150 # The width of the ribbon
+  alpha: 0.28 # The transparency of the ribbon
   zIndex: -1 # The display level of the ribbon
 
 # ---------------------------------------------------------------

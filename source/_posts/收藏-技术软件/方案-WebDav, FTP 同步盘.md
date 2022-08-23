@@ -1,5 +1,5 @@
 ---
-title: 方案-WebDav, ftp 同步盘
+title: 方案-WebDav/ftp 同步盘
 date: 2022-08-10 15:20:00
 categories:
   - 收藏

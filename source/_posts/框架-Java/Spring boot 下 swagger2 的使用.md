@@ -17,7 +17,7 @@ swagger 官方 Demo 供参考
 
 ### swagger注解
 
-swagger通过注解表明该接口会生成文档，包括接口名、请求方法、参数、返回信息的等等。
+swagger 通过注解表明该接口会生成文档，包括接口名、请求方法、参数、返回信息的等等。
 
 ![API详细说明](https://upload-images.jianshu.io/upload_images/1662509-4fb0a6569a9a4186.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -28,11 +28,11 @@ swagger通过注解表明该接口会生成文档，包括接口名、请求方�
 @ApiParam(value = "用户Id") 常用
 
 @ApiImplicitParam：
-作用在方法上，表示单独的请求参数, 一个非常强大且重要的注解, 作用和ApiParam类似
+作用在方法上，表示单独的请求参数, 一个非常强大且重要的注解, 作用和 ApiParam 类似
 
 ## 开始使用
 
-pom中导入dependency
+pom 中导入 dependency
 
 ```xml
 <!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger2 -->
@@ -144,12 +144,12 @@ public class PaychangeTotalController {
 * position：如果一个controller中有多个请求方法，可以通过该属性来指定API在swagger-ui中的显示顺序
 
 **@ApiOperation() 用于方法**
-           在指定的（路由）路径上，对一个操作或HTTP方法进行描述。具有相同路径的不同操作会被归组为同一个操作对象。不同的HTTP请求方法及路径组合构成一个唯一操作。此注解的属性有：
+在指定的（路由）路径上，对一个操作或 HTTP 方法进行描述。具有相同路径的不同操作会被归组为同一个操作对象。不同的HTTP请求方法及路径组合构成一个唯一操作。此注解的属性有：
 
-* value：对操作的简单说明，长度为120个字母，60个汉字。
+* value：对操作的简单说明，长度为 120 个字母，60 个汉字。
 * notes：对操作的详细说明。
-* httpMethod：HTTP请求的动作名，可选值有："GET", "HEAD", "POST", "PUT", "DELETE", "OPTIONS" and "PATCH"。
-code：默认为200，有效值必须符合标准的HTTP Status Code Definitions。
+* httpMethod：HTTP 请求的动作名，可选值有："GET", "HEAD", "POST", "PUT", "DELETE", "OPTIONS" and "PATCH"。
+code：默认为 200，有效值必须符合标准的HTTP Status Code Definitions。
 
 **@ApiParam() 用于方法，参数，字段说明**
 增加对参数的元信息说明，主要的属性有：
@@ -160,30 +160,30 @@ value：对该参数含义的简短说明
 **@ApiResponses（）用于包装类**
 注解@ApiResponse的包装类，数组结构。
 
-即使需要使用一个@ApiResponse注解，也需要将@ApiResponse注解包含在注解@ApiResponses内。
+即使需要使用一个@ApiResponse注解，也需要将 @ApiResponse 注解包含在注解 @ApiResponses 内。
 
 **@ApiResponse（）用于方法的返回结果**
 描述一个操作可能的返回结果。
 
-当REST API请求发生时，这个注解可用于描述所有可能的成功与错误码。
-可以用，也可以不用这个注解去描述操作的返回类型，但成功操作的返回类型必须在@ApiOperation中定义。
-如果API具有不同的返回类型，那么需要分别定义返回值，并将返回类型进行关联。
-但Swagger不支持同一返回码，多种返回类型的注解。注意：这个注解必须被包含在@ApiResponses注解中。
+当REST API 请求发生时，这个注解可用于描述所有可能的成功与错误码。
+可以用，也可以不用这个注解去描述操作的返回类型，但成功操作的返回类型必须在 @ApiOperation 中定义。
+如果 API 具有不同的返回类型，那么需要分别定义返回值，并将返回类型进行关联。
+但 Swagger不支持同一返回码，多种返回类型的注解。注意：这个注解必须被包含在 @ApiResponses 注解中。
 
 字段说明：
-code：HTTP请求返回码。有效值必须符合标准的HTTP Status Code Definitions。
+code：HTTP 请求返回码。有效值必须符合标准的 HTTP Status Code Definitions。
 message：用于对返回信息作详细说明，对请求结果的描述信息
 response：返回类型信息，必须使用完全限定类名，比如“com.xyz.cc.Person.class”。
 responseContainer：如果返回类型为容器类型，可以设置相应的值。有效值为 "List", "Set" or "Map"，其他任何无效的值都会被忽略
 
 2）Model的注解
 **@ApiModel() 用于类**
-提供对Swagger model额外信息的描述。在标注@ApiOperation注解的操作内，所有的类将自动被内省（introspected），但利用这个注解可以做一些更加详细的model结构说明。主要属性有：
+提供对 Swagger model 额外信息的描述。在标注 @ApiOperation 注解的操作内，所有的类将自动被内省（introspected），但利用这个注解可以做一些更加详细的 model 结构说明。主要属性有：
 value：model的别名，默认为类名
 description：对model的详细描述
 
-** @ApiModelProperty() 用于model类的属性**
-表示对model属性的说明或者数据操作更改，主要的属性有：
+**@ApiModelProperty() 用于model类的属性**
+表示对 model 属性的说明或者数据操作更改，主要的属性有：
 
 value：描述
 required：标识该属性是否为必须值
@@ -201,7 +201,7 @@ allowableValues : 可选值, 像这样`@ApiModelProperty(allowableValues = "rang
 
 该注解可以包含多个 @ApiImplicitParam
 
-###  [swagger2 如何匹配多个controller](https://www.cnblogs.com/acm-bingzi/p/swagger2-controller.html)
+### [swagger2 如何匹配多个controller](https://www.cnblogs.com/acm-bingzi/p/swagger2-controller.html)
 
 ```java
 @Bean

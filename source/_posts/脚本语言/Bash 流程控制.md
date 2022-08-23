@@ -1,5 +1,5 @@
 ---
-title: Bash-的流程控制
+title: Bash 的流程控制
 categories: 脚本文件
 tags:
 - Bash

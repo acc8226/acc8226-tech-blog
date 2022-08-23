@@ -1,5 +1,5 @@
 ---
-title: Bash-函数
+title: Bash 函数
 categories: 脚本文件
 tags:
 - Bash

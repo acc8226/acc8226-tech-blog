@@ -1,5 +1,5 @@
 ---
-title: Bash-介绍和入门
+title: Bash 介绍和入门
 categories: 脚本文件
 tags:
 - Bash

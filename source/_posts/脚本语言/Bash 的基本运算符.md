@@ -1,5 +1,5 @@
 ---
-title: Bash-的基本运算符
+title: Bash 的基本运算符
 categories: 脚本文件
 tags:
 - Bash
@@ -8,7 +8,7 @@ tags:
 ![](https://upload-images.jianshu.io/upload_images/1662509-0578a592b6b7b580?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ```sh
-$vim test.sh
+vim test.sh
 ```
 
 ```sh
@@ -54,7 +54,7 @@ b % a : 0
 a != b
 ```
 
-* 原生bash不支持简单的数学运算，但是可以通过其他命令来实现，例如 `awk` 和 `expr`，`expr` 最常用。
+* 原生 bash 不支持简单的数学运算，但是可以通过其他命令来实现，例如 `awk` 和 `expr`，`expr` 最常用。
 * `expr` 是一款表达式计算工具，使用它能完成表达式的求值操作。
 * 注意使用的反引号（esc键下边）
 * 表达式和运算符之间要有空格 `$a + $b` 写成 `$a+$b` 不行
@@ -128,6 +128,7 @@ return true
 ```
 
 ## 字符串运算
+
 ![](https://upload-images.jianshu.io/upload_images/1662509-780c799ea43ddb48?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ```sh
@@ -190,7 +191,7 @@ fi
 
 结果
 
-```
+```text
 The file is readable
 File exists
 ```
@@ -220,8 +221,8 @@ echo "area=$area"
 > 以上代码如果想在环境中运行，需要先安装 `bc`。
 
 ```sh
-$ sudo apt-get update
-$ sudo apt-get install bc
+sudo apt-get update
+sudo apt-get install bc
 ```
 
 ## bash挑战-矩形的面积和周长
