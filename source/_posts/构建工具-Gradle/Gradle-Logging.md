@@ -1,22 +1,22 @@
 日志是构建工具的主要“ UI”。 如果太冗长，那么真正的警告和问题很容易被隐藏起来。 另一方面，你需要相关的信息来判断事情是否出了问题。 Gradle 定义了6个日志级别，如日志级别所示。 除了通常可以看到的日志级别之外，还有两个 gradle 特定的日志级别。 这些层次是安静和生命周期。 后者是默认的，用于报告构建进度。
 
 
-ERROR	
+ERROR
 Error messages
 
-QUIET	
+QUIET
 Important information messages
 
-WARNING	
+WARNING
 Warning messages
 
-LIFECYCLE	
+LIFECYCLE
 Progress information messages
 
-INFO	
+INFO
 Information messages
 
-DEBUG	
+DEBUG
 Debug messages
 
 > 无论使用何种日志级别，都会显示控制台的丰富组件(生成状态和进度区域中的工作)。 在 Gradle 4.0之前，这些富组件只显示在日志级 LIFECYCLE 或更低的级别。
@@ -33,6 +33,7 @@ Debug messages
 
 示例1. 使用 stdout 写日志消息
 build.gradle
+
 ```
 println 'A message which is logged at QUIET level'
 ```
@@ -41,7 +42,7 @@ Gradle 还为构建脚本提供了一个 Logger 属性，这是 Logger 的一个
 
 build.gradle
 
-```
+```groovy
 logger.quiet('An info log message which is always logged.')
 logger.error('An error log message.')
 logger.warn('A warning log message.')
@@ -61,7 +62,7 @@ logger.info('A {} log message', 'info')
 
 您还可以从构建中使用的其他类(例如 buildSrc 目录中的类)中连接到 Gradle 的日志系统。 只需使用 SLF4J 记录器。 您可以像在构建脚本中使用提供的记录器一样使用这个记录器。
 
-```
+```java
 import org.slf4j.LoggerFactory
 
 def slf4jLogger = LoggerFactory.getLogger('some-logger')
@@ -80,7 +81,8 @@ println 'A message which is logged at INFO level'
 ```
 
 若要在任务执行期间更改标准输出或错误的日志级别，任务还提供 LoggingManager。
-```
+
+```groovy
 task logInfo {
     logging.captureStandardOutput LogLevel.INFO
     doFirst {
@@ -96,7 +98,8 @@ task logInfo {
 你可以用自己的日志界面替换 Gradle 的大部分日志界面。 例如，如果您希望以某种方式自定义 UI ——记录更多或更少的信息，或更改格式，则可以这样做。 您可以使用 Gradle.useLogger (java.lang。 对象)方法。 这可以从构建脚本、 init 脚本或通过嵌入 API 访问。 注意，这将完全禁用 Gradle 的默认输出。 下面是一个 init 脚本示例，它改变了记录任务执行和生成完成的方式。
 
 customLogger.init.gradle
-```
+
+```java
 useLogger(new CustomEventLogger())
 
 class CustomEventLogger extends BuildAdapter implements TaskExecutionListener {
@@ -118,7 +121,7 @@ class CustomEventLogger extends BuildAdapter implements TaskExecutionListener {
 }
 ```
 
-```
+```sh
 $ gradle -I customLogger.init.gradle build
 
 > Task :compile
@@ -145,12 +148,12 @@ build completed
 
 记录器可以实现下面列出的任何侦听器接口。 注册日志程序时，只替换它实现的接口的日志记录。 其他接口的日志记录保持不变。 您可以在 Build 生命周期事件中找到关于侦听器接口的更多信息。
 
-*   [BuildListener](https://docs.gradle.org/6.3/javadoc/org/gradle/BuildListener.html)
+* [BuildListener](https://docs.gradle.org/6.3/javadoc/org/gradle/BuildListener.html)
 
-*   [ProjectEvaluationListener](https://docs.gradle.org/6.3/javadoc/org/gradle/api/ProjectEvaluationListener.html)
+* [ProjectEvaluationListener](https://docs.gradle.org/6.3/javadoc/org/gradle/api/ProjectEvaluationListener.html)
 
-*   [TaskExecutionGraphListener](https://docs.gradle.org/6.3/javadoc/org/gradle/api/execution/TaskExecutionGraphListener.html)
+* [TaskExecutionGraphListener](https://docs.gradle.org/6.3/javadoc/org/gradle/api/execution/TaskExecutionGraphListener.html)
 
-*   [TaskExecutionListener](https://docs.gradle.org/6.3/javadoc/org/gradle/api/execution/TaskExecutionListener.html)
+* [TaskExecutionListener](https://docs.gradle.org/6.3/javadoc/org/gradle/api/execution/TaskExecutionListener.html)
 
-*   [TaskActionListener](https://docs.gradle.org/6.3/javadoc/org/gradle/api/execution/TaskActionListener.html)
+* [TaskActionListener](https://docs.gradle.org/6.3/javadoc/org/gradle/api/execution/TaskActionListener.html)

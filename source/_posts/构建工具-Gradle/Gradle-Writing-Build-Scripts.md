@@ -2,7 +2,7 @@
 
 Gradle 提供了一种领域特定语言(DSL)来描述构建，这种构建语言在 Groovy 和 Kotlin 都可以使用。
 
-Groovy 构建脚本可以包含任何 Groovy 语言元素。 Kotlin 构建脚本可以包含任何 Kotlin 语言元素。 Gradle 假设每个构建脚本都使用 UTF-8进行编码。
+Groovy 构建脚本可以包含任何 Groovy 语言元素。 Kotlin 构建脚本可以包含任何 Kotlin 语言元素。 Gradle 假设每个构建脚本都使用 UTF-8 进行编码。
 
 ## [The Project API 电视宣传短片](https://docs.gradle.org/6.3/userguide/writing_build_scripts.html#sec:project_api)
 
@@ -49,7 +49,7 @@ projectApi
 
 使用 def 关键字声明局部变量。 它们只能在声明它们的范围内可见。 局部变量是底层 Groovy 语言的一个特性。
 
-```
+```groovy
 def dest = "dest"
 
 task copy(type: Copy) {
@@ -131,6 +131,7 @@ task configure {
 ```
 
 ## [Configuring arbitrary objects using an external script 使用外部脚本配置任意对象](https://docs.gradle.org/6.3/userguide/writing_build_scripts.html#sec:configuring_arbitrary_objects_using_an_external_script)
+
 build.gradle
 
 ```gradle

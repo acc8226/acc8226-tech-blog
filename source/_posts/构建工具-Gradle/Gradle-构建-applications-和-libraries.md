@@ -78,6 +78,7 @@ run - Runs this project as a JVM application
 ```
 
 Run 任务告诉 Gradle 在分配给 mainClassName 属性的类中执行 main 方法。
+
 ```
 $ ./gradlew run
 > Task :compileJava UP-TO-DATE

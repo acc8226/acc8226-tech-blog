@@ -55,11 +55,11 @@ Android Gradle 插件继承于 Java 插件，具有所有 Java 插件的特性�
 
 下面我们来看看Android Gradle的build.gradle配置文件
 
-Android Gradle工程的配置，都是在android{}中，这是唯一的一个入口，通过它，可以对Android Gradle工程进行自定义的配置，其具体实现是com.android.build.gradle.AppExtension，是Project的一个扩展，创建原型如下：
+Android Gradle工程的配置，都是在android{}中，这是唯一的一个入口，通过它，可以对Android Gradle工程进行自定义的配置，其具体实现是 com.android.build.gradle.AppExtension，是 Project 的一个扩展，创建原型如下：
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-d12f94b1ffa83930.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-在com.android.application 插件中，getExtensionClass()返回的就是 com.android.build.gradle.AppExtension，所以关于 android 的很多配置可以从这个类里去找，参考我们前面讲的Gradle知识，可以找到很多试用的配置或者可以利用的对象、方法或者属性等等，而这些并没有在Android文档里介绍的，这就是可以看源代码的好处。
+在 com.android.application 插件中，getExtensionClass()返回的就是 com.android.build.gradle.AppExtension，所以关于 android 的很多配置可以从这个类里去找，参考我们前面讲的Gradle知识，可以找到很多试用的配置或者可以利用的对象、方法或者属性等等，而这些并没有在Android文档里介绍的，这就是可以看源代码的好处。
 
 ##### 7.4.1 compileSdkVersion
 
@@ -92,11 +92,8 @@ defaultConfig 是默认的配置，它是一个 ProductFlavor，ProductFlavor �
 例子中applicationId是配置我们的包名，这里是 org.flysnow.app.example74
 
 minSdkVersion 是最低支持的 Android 系统的API Level，这里是14
-
 targetSdkVersion 表明我们是基于哪个Android版本开发的，这里是23
-
 versionCode 我们的App应用内部版本号，一般用于控制App升级
-
 versionName 我们的App应用的版本名称，用户可以看到，就是我们发布的版本，这里是1.0
 
 以上所有配置对应的都是ProductFlavor类里的方法或者属性。
@@ -122,11 +119,11 @@ getDefaultProguardFile 是 android 扩展的一个方法，它可以获取你的
 
 connectedCheck 在所有链接的设备或者模拟器上运行check检查
 
-deviceCheck 通过API连接远程设备运行checks。它被用于CI(译者注:持续集成)服务器上。
+deviceCheck 通过 API 连接远程设备运行 checks。它被用于CI(译者注:持续集成)服务器上。
 
-lint 在所有的ProductFlavor上运行lint检查。
+lint 在所有的 ProductFlavor 上运行lint检查。
 
-install和uninstall类的任务可以直接在我们已链接的设备上安装或者卸载你的App。
+install 和 uninstall 类的任务可以直接在我们已链接的设备上安装或者卸载你的App。
 
 除此之外，还有一些不太常用的任务，比如signingReport 可以打印App的签名；androidDependencies 可以打印android的依赖，还有其他一些类似的任务，大家可以通过./gradlew tasks来查看。
 
@@ -134,7 +131,7 @@ install和uninstall类的任务可以直接在我们已链接的设备上安装�
 
 ### 7.6 从Eclipse迁移到Android Gradle工程
 
-最开始的时候还没有Android Studio，也没有Android Gradle这个插件，我们都是使用Eclipse+ADT+Ant进行Android开发，用过Ant的，再和我们的Gradle对比一下，就会发现Gradle的灵活，还有Android Studio这个强大的IDE和Android Gradle完美配合，会使得我们开发效率大大提高，所以很多人都迫不及待的想从原来基于Eclipse+ADT+Ant，迁移到我们的Android Studio+Gradle，这一小结我们就简单的讲下如何迁移。
+最开始的时候还没有 Android Studio，也没有 Android Gradle 这个插件，我们都是使用 Eclipse+ADT+Ant 进行Android 开发，用过Ant的，再和我们的 Gradle 对比一下，就会发现 Gradle 的灵活，还有Android Studio这个强大的IDE和Android Gradle完美配合，会使得我们开发效率大大提高，所以很多人都迫不及待的想从原来基于Eclipse+ADT+Ant，迁移到我们的Android Studio+Gradle，这一小结我们就简单的讲下如何迁移。
 
 从Eclipse迁移到Android Studio有两种方式，一种是使用Android Studio直接导入Eclipse工程，另外一种使用Eclipse导出Android Gradle配置文件，转换为一个Gradle工程，然后再使用Android Studio把它作为一个Gradle工程导入。
 

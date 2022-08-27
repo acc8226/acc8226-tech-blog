@@ -18,18 +18,20 @@
 
 默认情况下，Java插件约定src/main/java下为我们的项目源代码存放目录；src/main/resources为要打包的文件存放目录，比如一些Properties配置文件和图片等；src/test/java为我们的单元测试用例存放目录，我们执行单元测试的时候，Gradle会在这个目录下搜索我们的单元测试用例执行；src/test/resources里存放的是我们单元测试中使用的文件。
 
-main和test是Java插件为我们内置的两个**源代码集合**，那么我们可以不可以自己添加一些呢，比如我有一个vip版本，是不是可以添加一个vip的目录来存放vip相关的java源码和文件呢，这个是完全可以的，如果要实现这个目的，我们在build脚本里这么配置
+main 和 test 是 Java 插件为我们内置的两个**源代码集合**，那么我们可以不可以自己添加一些呢，比如我有一个vip版本，是不是可以添加一个vip的目录来存放vip相关的java源码和文件呢，这个是完全可以的，如果要实现这个目的，我们在build脚本里这么配置
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-244c3a374368af23.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-添加一个vip的源代码集合（源集），然后我们在src下新建vip/java、vip/resources目录就可以分别存放vip相关的源代码和资源文件了。仿照例子我们可以添加很多的源集，他们默认的目录结构是：
-```
+添加一个 vip 的源代码集合（源集），然后我们在src下新建 vip/java/vip/resources 目录就可以分别存放 vip 相关的源代码和资源文件了。仿照例子我们可以添加很多的源集，他们默认的目录结构是：
+
+```text
 src/sourceSet/java
 src/sourceSet/resources
 ```
-看到这里，读者有没有发现这个和我们Android多渠道打包发布很像（Android插件详细介绍）。关于源集的改变我们后面是详细讲，这里大家知道先这样使用。
 
-以上是Java默认定义的文件目录，特殊情况下我们可以改变他们，所以不建议这么做，下面我们说说改变的方法，只需要在build脚本配置对应目录即可。
+看到这里，读者有没有发现这个和我们 Android 多渠道打包发布很像（Android 插件详细介绍）。关于源集的改变我们后面是详细讲，这里大家知道先这样使用。
+
+以上是Java默认定义的文件目录，特殊情况下我们可以改变他们，所以不建议这么做，下面我们说说改变的方法，只需要在 build 脚本配置对应目录即可。
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-5984dbb196989de9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -37,11 +39,11 @@ src/sourceSet/resources
 
 ### 6.3  如何配置第三方依赖
 
-作为一个Java项目，不可避免的会依赖很多第三方 Jar，这也是值得提倡的，因为有很多优秀的开源工具和框架让我们更高效的研发，而不是重复发明轮子。
+作为一个 Java 项目，不可避免的会依赖很多第三方 Jar，这也是值得提倡的，因为有很多优秀的开源工具和框架让我们更高效的研发，而不是重复发明轮子。
 
-要想使用这些第三方依赖，你要告诉Gradle如何找到这些依赖，也就是我们要讲的依赖配置。一般情况下我们都是从仓库中查找我们需要的Jar包，在Gradle中要配置一个仓库的Jar依赖，首先我们得告诉Gradle我们要使用什么类型的仓库，这些仓库的位置在哪里，这里Gradle从知道从哪里去搜寻我们依赖的Jar。
+要想使用这些第三方依赖，你要告诉 Gradle 如何找到这些依赖，也就是我们要讲的依赖配置。一般情况下我们都是从仓库中查找我们需要的 Jar 包，在 Gradle 中要配置一个仓库的Jar依赖，首先我们得告诉 Gradle 我们要使用什么类型的仓库，这些仓库的位置在哪里，这里 Gradle 从知道从哪里去搜寻我们依赖的 Jar。
 
-以上脚本我们配置了一个Maven中心库，告诉Gradle可以在Maven中心库中搜寻我们依赖的Jar，初次之外，我们也可以从jcenter库、ivy库、本地Maven库mavenLocal、自己搭建的Maven私服库等等中搜寻，甚至我们本地配置的文件夹也可以作为一个仓库，由此可见，Gradle支持的仓库非常丰富，也可以多个库一起使用，比如一些公共的开源框架可以从mavenCentral上下载，一些我们公司自己的私有Jar可以在我们公司自己搭建的Maven私服上下载：
+以上脚本我们配置了一个Maven中心库，告诉Gradle可以在Maven 中心库中搜寻我们依赖的Jar，初次之外，我们也可以从 jcenter 库、ivy 库、本地 Maven 库 mavenLocal、自己搭建的Maven私服库等等中搜寻，甚至我们本地配置的文件夹也可以作为一个仓库，由此可见，Gradle支持的仓库非常丰富，也可以多个库一起使用，比如一些公共的开源框架可以从mavenCentral上下载，一些我们公司自己的私有Jar可以在我们公司自己搭建的Maven私服上下载：
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-487ce0252b7ac2e1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -51,7 +53,7 @@ src/sourceSet/resources
 
 上面例子中我们配置了一个okhttp的依赖，其中compile是依赖名称，它的意思表示我们在编译Java源文件时需要依赖okhttp；group、name、以及version，看他们的名字和顺序，我们熟悉Maven的非常熟悉，他们就是Maven中的GAV(groupid、artifactid、version)，这是Maven非常重要的组成文件，他们三个合起来标记一个唯一的构件。
 
-是不是觉得每次写group、name、version非常麻烦，是的，我也是，Gradle这么好用的工具不会想不到，所以为我们提供了简写的方式：
+是不是觉得每次写 group、name、version 非常麻烦，是的，我也是，Gradle 这么好用的工具不会想不到，所以为我们提供了简写的方式：
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-7bc92f02e9bf3388.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -59,7 +61,7 @@ src/sourceSet/resources
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-e31e9d4b6c251b44.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-除此之外，Java插件可以为不同的源集在编译时和运行时指定不同的依赖，比如main源集指定一个编译时的依赖，vip源集可以指定另外一个不同的依赖。
+除此之外，Java 插件可以为不同的源集在编译时和运行时指定不同的依赖，比如 main 源集指定一个编译时的依赖，vip源集可以指定另外一个不同的依赖。
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-bc07cc777145cc5f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -67,7 +69,7 @@ src/sourceSet/resources
 
 我们刚刚讲的基于库的这种依赖是外部模块的依赖，一般都会配置一个仓库，不管是Maven，还是Ivy等。除了外部依赖之外，常用的还有项目依赖以及文件依赖。
 
-项目依赖依赖的是一个Gradle项目，是在Settings Build文件中配置过的，依赖一个项目非常简单，比如
+项目依赖依赖的是一个 Gradle 项目，是在 Settings Build文件中配置过的，依赖一个项目非常简单，比如
 
 ![Paste_Image.png](http://upload-images.jianshu.io/upload_images/1662509-54dd52e7ffef2710.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -127,7 +129,7 @@ Java插件为我们添加了很多有用的任务，我们已经介绍了一些�
 
 运行任务的时候，列表中的任务名称中的**sourceSet**要换成你的源集的名称，比如main源集的就是compileMainJava。
 
-此外还有一些用于描述整个构建生命周期的任务，比如assemble，build，check等等，这里就不一一介绍了，想具体了解的可以参考相关文档。
+此外还有一些用于描述整个构建生命周期的任务，比如 assemble，build，check 等等，这里就不一一介绍了，想具体了解的可以参考相关文档。
 
 ### 6.7 Java插件添加的属性
 
@@ -139,7 +141,7 @@ Java插件添加了很多常用的属性，这些属性都被添加到Project中
 
 ### 6.8 多项目构建
 
-多项目构建，其实就是多个Gradle项目一起构建，比如我们本书的例子已经是一个多项目了，他们一起通过Settings.gradle配置管理，每个项目里都有一个Build文件对该项目进行配置，然后采用项目依赖，就可以实现多个项目协作，这对于我们大项目的，模块化非常有用。
+多项目构建，其实就是多个 Gradle 项目一起构建，比如我们本书的例子已经是一个多项目了，他们一起通过Settings.gradle 配置管理，每个项目里都有一个Build文件对该项目进行配置，然后采用项目依赖，就可以实现多个项目协作，这对于我们大项目的，模块化非常有用。
 
 下面我们以一个多项目构建的例子，来说明多个项目之间如果依赖构建。
 
@@ -172,7 +174,8 @@ app/build.gradle
 subprojects可以对其所有的子项目进行配置，如果想对包括根项目在内的所有项目进行统一配置，我们可以使用allprojects，用法和subprojects一样，就不举例子了，大家可以自己尝试一下。
 
 ### 6.9 如何发布构件
-有时候我们的项目是一个库工程，要发布Jar给其他工程使用，Gradle为我们提供了非常方便、功能抢到的发布功能，通过配置，我们可以把我们的jar包发布到本地目录、Maven库，Ivy库等等中。
+
+有时候我们的项目是一个库工程，要发布 Jar 给其他工程使用，Gradle 为我们提供了非常方便、功能抢到的发布功能，通过配置，我们可以把我们的jar包发布到本地目录、Maven库，Ivy 库等等中。
 
 ### 6.10 生成 Idea 和 Eclipse 配置
 

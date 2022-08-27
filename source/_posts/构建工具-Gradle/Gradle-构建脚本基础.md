@@ -9,7 +9,7 @@ Gradle 可以在一个项目上完成的工作由一个或多个任务定义。�
 ## [Hello world 你好，世界](https://docs.gradle.org/6.3/userguide/tutorial_using_tasks.html#sec:hello_world)
 要进行尝试，请创建以下名为 build.gradle 的构建脚本。
 
-```
+```groovy
 task hello {
     doLast {
         println 'Hello world!'

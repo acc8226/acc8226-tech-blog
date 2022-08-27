@@ -69,6 +69,7 @@ Tasks 命令列出了可以调用的 Gradle 任务，包括由基础插件添加
 ## 快速入门- [Analyze and debug your build](https://guides.gradle.org/creating-new-gradle-builds/#analyze_and_debug_your_build)
 
 Gradle 提供了一个简单的 Java 项目，您可以使用它来演示构建扫描功能。 如果你想使用它，克隆或下载存储库。
+
 ```
 $ git clone https://github.com/gradle/gradle-build-scan-quickstart
 Cloning into 'gradle-build-scan-quickstart'...

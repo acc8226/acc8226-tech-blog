@@ -79,7 +79,7 @@ PicGo 是一款开源跨平台的免费图片上传工具以及图床相册管�
 * 指定存储路径：填写想要储存的路径，如【images/】，这样就会在仓库下创建一个名为 images 的文件夹，图片将会储存在此文件夹中
 * 设定自定义域名：它的的作用是，在图片上传后，PicGo 会按照【自定义域名+上传的图片名】的方式生成访问链接，放到粘贴板上，因为我们要使用jsDelivr加速访问，所以可以设置为【https://cdn.jsdelivr.net/gh/用户名/图床仓库名 】
 
-jsDelivr参考格式: The URL structure is /gh/user/repo@version/file.js
+jsDelivr 参考格式: The URL structure is /gh/user/repo@version/file.js
 
 #### PicGo 的自定义配置
 

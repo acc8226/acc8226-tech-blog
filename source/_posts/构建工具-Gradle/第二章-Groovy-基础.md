@@ -15,9 +15,9 @@ Groovy 的特性虽然不多，但也有一些，我们不可能在这里都讲�
 
 ```groovy
 task printStringVar << {
-	def str1 = "我是火车王"
-	println"$str1"
-	println"${str1}, 谁敢召唤我, 你想借个${str1}"
+    def str1 = "我是火车王"
+    println"$str1"
+    println"${str1}, 谁敢召唤我, 你想借个${str1}"
 }
 ```
 
@@ -29,18 +29,18 @@ task printStringVar << {
 
 ```groovy
 task list << {
-	def list = [1, 3, 5, 7, 9]
+    def list = [1, 3, 5, 7, 9]
 
-	println list.getClass().name
-	println list[0]
-	println list[-1]//访问最后一个元素
-	println list[-2]//访问倒数第二个元素
-	println list[1..3]//访问第2到第4个元素
+    println list.getClass().name
+    println list[0]
+    println list[-1]//访问最后一个元素
+    println list[-2]//访问倒数第二个元素
+    println list[1..3]//访问第2到第4个元素
 
-	// it 变量就是正在迭代的元素，这里有闭包的知识
-	list.each {
-		println it
-	}
+    // it 变量就是正在迭代的元素，这里有闭包的知识
+    list.each {
+        println it
+    }
 }
 ```
 
@@ -48,16 +48,16 @@ task list << {
 
 ``` groovy
 task map << {
-	def map = ['width': 1366, 'height': 768]
+    def map = ['width': 1366, 'height': 768]
 
-	println map.getClass().name
-	// 以下下方式都能快速的取出指定key的值
-	println map.width
-	println map["height"]
+    println map.getClass().name
+    // 以下下方式都能快速的取出指定key的值
+    println map.width
+    println map["height"]
 
-	map.each{
-		println "${it.key}: ${it.value}"
-	}
+    map.each{
+        println "${it.key}: ${it.value}"
+    }
 }
 ```
 对于集合，Groovy 还提供了诸如 collect、find、findAll 等便捷的方法，有兴趣的朋友可以找相关文档。
@@ -69,28 +69,28 @@ task map << {
 
 ```
 task testMethod <<{
-	def i1 = 12
-	def i2 = 67
+    def i1 = 12
+    def i2 = 67
 
-	//括号, 分号都不要了
-	printSum i1, i2
+    //括号, 分号都不要了
+    printSum i1, i2
 
-	def maxResult = getMax i1, i2
-	println maxResult
+    def maxResult = getMax i1, i2
+    println maxResult
 }
 
 // 无 return
 def printSum(int i1, int i2){
-	println i1+i2
+    println i1+i2
 }
 
 // 有 return 值, 为最后一句为返回值
 def getMax(int i1, int i2) {
-	def max = i1;
-	if (i2 > i1) {
-		max = i2;
-	}
-	"max is $max"
+    def max = i1;
+    if (i2 > i1) {
+        max = i2;
+    }
+    "max is $max"
 }
 ```
 
@@ -103,51 +103,52 @@ def getMax(int i1, int i2) {
 
 ```groovy
 task testJavaBean << {
-	Person p = new Person();
-	p.name = "砰砰博士"
+    Person p = new Person();
+    p.name = "砰砰博士"
 
-	println p.name
-	println "${p.name}"
-	println "${p.age}"
-	println "${p.brand}" //能这么用, 其实只是因为该对象里定义了相应的getter/setter方法而已
+    println p.name
+    println "${p.name}"
+    println "${p.age}"
+    println "${p.brand}" //能这么用, 其实只是因为该对象里定义了相应的getter/setter方法而已
 }
 
 class Person {
-	String name;
-	private int age;
+    String name;
+    private int age;
 
-	public String getBrand(){
-		'hearthstone'
-	}
+    public String getBrand(){
+        'hearthstone'
+    }
 }
 ```
 
 ## 闭包
 
-闭包是Groovy的一个非常重要的特性，可以说他是DSL的基础。闭包不是Groovy的首创，但是它支持这一重要特性，这就使用我们的代码灵活、轻量、可复用，再也不用像Java一样动不动就要搞一个类了，虽然Java后来有了匿名内部类，但是一样冗余不灵活。
+闭包是 Groovy 的一个非常重要的特性，可以说他是 DSL 的基础。闭包不是 Groovy 的首创，但是它支持这一重要特性，这就使用我们的代码灵活、轻量、可复用，再也不用像Java一样动不动就要搞一个类了，虽然 Java 后来有了匿名内部类，但是一样冗余不灵活。
 
 ### 初识闭包
 
 前面我们讲过，闭包其实就是一段代码块，下面我们就一步步实现自己的闭包，了解闭包的it变量的由来。集合的 each 方法我们已经非常熟悉了，我们就以其为例，实现一个类似的闭包功能。
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-a0a4d0333795d2db.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-在上面的例子中我们定义了一个方法customEach，它只有一个参数，用于接收一个闭包（代码块），那么这个闭包如何执行呢？很简单，跟一对括号就是执行了，会JavaScript的朋友是不是觉得很熟悉，把它当做一个方法调用，括号里的参数就是该闭包接收的参数，如果只有一个参数，那么就是我们的it变量了。
+在上面的例子中我们定义了一个方法customEach，它只有一个参数，用于接收一个闭包（代码块），那么这个闭包如何执行呢？很简单，跟一对括号就是执行了，会 JavaScript 的朋友是不是觉得很熟悉，把它当做一个方法调用，括号里的参数就是该闭包接收的参数，如果只有一个参数，那么就是我们的 it 变量了。
 
 ### 向闭包传递参数
+
 当闭包有一个参数时，默认就是it；当有多个参数是，it就不能表示了，我们需要把参数一一列出。
 
 ```groovy
 task helloClosure << {
-	customEachMap{k,v ->
+    customEachMap{k,v ->
         println "${k}: ${v}"
     }
 }
 
 def customEachMap(closure) {
-	def map1 = ['张三': 18, '李四': 20, '老五': 25]
-	map1.each{
-		closure it.key, it.value
-	}
+    def map1 = ['张三': 18, '李四': 20, '老五': 25]
+    map1.each{
+        closure it.key, it.value
+    }
 }
 ```
 
@@ -158,29 +159,29 @@ Groovy 闭包的强大之处在于它支持闭包方法的委托。Groovy 的闭
 ```groovy
 task testDelegate << {
 
-	new Delegate().test{
-		println thisObject.getClass().name
-		println owner.getClass().name
-		println delegate.getClass().name
+    new Delegate().test{
+        println thisObject.getClass().name
+        println owner.getClass().name
+        println delegate.getClass().name
 
-		method1()
-		it.method1()
-	}
+        method1()
+        it.method1()
+    }
 }
 
 def method1(){
-	println "Context this: ${this.getClass().name} in root, method1 in root"
+    println "Context this: ${this.getClass().name} in root, method1 in root"
 }
 
 class Delegate{
 
-	def method1(){
-		println "Context this: ${this.getClass().name} in Delegate, method1 in Delegate"
-	}
+    def method1(){
+        println "Context this: ${this.getClass().name} in Delegate, method1 in Delegate"
+    }
 
-	def test(Closure<Delegate> closure){
-		closure(this)
-	}
+    def test(Closure<Delegate> closure){
+        closure(this)
+    }
 
 }
 ```

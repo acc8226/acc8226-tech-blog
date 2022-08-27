@@ -1,5 +1,5 @@
 ---
-title: Google-Shell 风格规范
+title: Google Shell 风格规范
 date: 2021-12-24 21:29:26
 categories: 文档规约
 ---
@@ -193,7 +193,7 @@ long string."
 
 ### 多个管道[](https://google.github.io/styleguide/shellguide.html#pipelines)
 
-如果管道不能适应一行一个那么应该分割成每行一个．　
+如果管道不能适应一行一个那么应该分割成每行一个．
 
 如果管道都适合在一行，那么就使用一行即可．
 

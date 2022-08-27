@@ -1,3 +1,4 @@
+
 ## ThreadLocal
 
 ThreadLocal 是 JDK 包提供的，它提供了线程本地变量，也就是如果你创建了一个 ThreadLocal变量，那么访问这个变量的每个线程都会有这个变量的一个本地副本。当多个线程操作这个变量时，实际操作的是自己本地内存里面的变量，从而避免了线程安全问题。创建一个 ThreadLocal变量后，每个线程都会复制一个变量到自己的本地内存。
@@ -17,6 +18,8 @@ CountDownLatch类只提供了一个构造器：
 * public void await() throws InterruptedException { };   //调用await()方法的线程会被挂起，它会等待直到count值为0才继续执行
 * public boolean await(long timeout, TimeUnit unit) throws InterruptedException { };  //和await()类似，只不过等待一定的时间后count值还没变为0的话就会继续执行
 * public void countDown() { };  //将count值减1
+
+<!-- more -->
 
 ```java
 final CountDownLatch latch = new CountDownLatch(2);

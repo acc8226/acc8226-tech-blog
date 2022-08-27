@@ -8,6 +8,8 @@ notify 做的事情就是从条件队列中选一个线程，将其从队列中�
 
 wait/notify 方法只能在 synchronized 代码块内被调用，如果调用 wait/notify 方法时，当前线程没有持有对象锁，会抛出异常 java.lang.IllegalMonitor-StateException。
 
+<!-- more -->
+
 ### 同时开始
 
 每个线程在开始前进行 wait，然后主线程通过 notifyAll 唤醒所有。

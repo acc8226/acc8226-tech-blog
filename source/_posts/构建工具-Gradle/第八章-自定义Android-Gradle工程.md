@@ -2,9 +2,9 @@ Android Gradle 为我们提供了大量的 DSL，我们使用这些 DSL 定义�
 
 ### 8.1 defaultConfig 默认配置
 
-defaultConfig 是 android 对象中的一个配置块，负责定义所有的默认配置，它是一个ProductFlavor，如果一个ProductFlavor没有被特殊定义配置的话，默认就会使用defaultConfig{}块指定的配置，比如包名、版本号、版本名称等。
+defaultConfig 是 android 对象中的一个配置块，负责定义所有的默认配置，它是一个 ProductFlavor，如果一个 ProductFlavor 没有被特殊定义配置的话，默认就会使用 defaultConfig{} 块指定的配置，比如包名、版本号、版本名称等。
 
-一个基本上的defaultConfig配置如下：
+一个基本上的 defaultConfig 配置如下：
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-3faa53fb4953b1c8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -15,11 +15,13 @@ defaultConfig 是 android 对象中的一个配置块，负责定义所有的默
 applicationId是ProductFlavor的一个属性，用于指定生成的App的包名，默认情况下是null，这时候在构建的时候，会从我们的AndroidManifest.xml文件中读取，也就是我们在AndroidManifest.xml文件中配置的manifest标签的package属性值。
 
 ##### 8.1.2 minSdkVersion
-minSdkVersion是ProductFlavor的一个方法，对应的方法原型是
-```
-    public void minSdkVersion(int minSdkVersion) {
-        this.setMinSdkVersion(minSdkVersion);
-    }
+
+minSdkVersion 是 ProductFlavor 的一个方法，对应的方法原型是
+
+```java
+public void minSdkVersion(int minSdkVersion) {
+    this.setMinSdkVersion(minSdkVersion);
+}
 ```
 
 它可以指定我们的App最低支持的Android 操作系统版本，其对应的值是Android SDK的API LEVEL，根据这里的方法原型，它接受的值是一个整数，除此之外，它还有以下两种方法原型定义：
@@ -31,9 +33,11 @@ minSdkVersion是ProductFlavor的一个方法，对应的方法原型是
 ![](http://upload-images.jianshu.io/upload_images/1662509-f1f03c83100f5d33.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ##### 8.1.3 targetSdkVersion
+
 这个用于配置我们基于哪个Android SDK开发，它的可选值和minSdkVersion一样，没有配置的时候也会从AndroidManifest.xml文件中读取，参考minSdkVersion的介绍，这里就不多做介绍了。
 
 ##### 8.1.4 versionCode
+
 它也是ProductFlavor的一个属性，用于配置Android App的内部版本号，是一个整数值，通常用于版本的升级。没有配置的时候从AndroidManifest.xml文件中读取，建议配置。其方法原型是
 
 ```java
@@ -83,17 +87,17 @@ public String getVersionName() {
 
 ##### 8.1.7 testInstrumentationRunner
 
-用于配置单元测试时使用的Runner，默认使用的是android.test.InstrumentationTestRunner，如果你想使用自己自定义的Runner，修改这个值即可，它也是一个属性，其方法原型是
+用于配置单元测试时使用的 Runner，默认使用的是android.test.InstrumentationTestRunner，如果你想使用自己自定义的 Runner，修改这个值即可，它也是一个属性，其方法原型是
 
-``` java
-    public ProductFlavor setTestInstrumentationRunner(String testInstrumentationRunner) {
-        this.mTestInstrumentationRunner = testInstrumentationRunner;
-        return this;
-    }
+```java
+public ProductFlavor setTestInstrumentationRunner(String testInstrumentationRunner) {
+    this.mTestInstrumentationRunner = testInstrumentationRunner;
+    return this;
+}
 
-    public String getTestInstrumentationRunner() {
-        return this.mTestInstrumentationRunner;
-    }
+public String getTestInstrumentationRunner() {
+    return this.mTestInstrumentationRunner;
+}
 ```
 
 ##### 8.1.8 signingConfig

@@ -18,6 +18,8 @@ JavaFX是开发丰富互联网应用程序（Rich Internet Application，缩写R
 
 AWT是Swing的基础，Swing事件处理和布局管理都是依赖于AWT，AWT内容来自java.awt包，Swing内容来自javax.swing包。AWT和Swing作为图形用户界面技术包括了4个主要的概念：组件（Component）、容器（Container）、事件处理和布局管理器（LayoutManager），下面将围绕这些概念展开。
 
+<!-- more -->
+
 ### Swing类层次结构
 
 容器和组件构成了Swing的主要内容，下面分别介绍一下Swing中容器和组件类层次结构。

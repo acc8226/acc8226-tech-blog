@@ -25,9 +25,12 @@ public Thread（ThreadGroup group，String name）；
 ```
 
 线程创建的三种方式
+
  * 继承 Thread 类实现多线程    　　　　
  * 实现 Runnable 接口编写多线程，将一个 Runnable 接口对象传递给线程，线程在调度时将自动调用 Runnable 接口对象的 run方法。
 * 使用 FutureTask 方式。创建的 FutrueTask 对象作为任务创建了一个线程并且启动它，最后通过 futureTask.get（）等待任务执行完毕并返回结果。
+
+<!-- more -->
 
 ## 使用线程
 

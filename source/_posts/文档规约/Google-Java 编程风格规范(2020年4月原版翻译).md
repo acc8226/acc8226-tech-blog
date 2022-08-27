@@ -1,6 +1,6 @@
 ---
-title: Google-Java 编程风格规范(2020年4月原版翻译)
-date: 2020.04.05 19:53:48
+title: Google Java 编程风格规范(2020年4月原版翻译)
+date: 2020-04-05 19:53:48
 categories: 文档规约
 ---
 

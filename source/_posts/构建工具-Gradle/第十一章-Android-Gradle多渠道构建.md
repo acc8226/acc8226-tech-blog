@@ -12,11 +12,11 @@ Android Gradle 为我们提供了 productFlavors 方法来添加不同的渠道�
 
 以上的渠道配置之后，Android Gradle 就会生成很多 Task，基本上都是基于 Build Type+Product Flavor的方式生成的，比如 assembleBaidu，assembleRelease，assembleBaiduRelease 等等，assemble 开头的负责生成构件产物(Apk)，比如 assembleBaidu 运行之后会生成 baidu 渠道的 release 和 debug 包；assembleRelease 运行后会生成所有渠道的release包；而 assembleBaiduRelease 运行后只会生成 baidu 的 release包。除了assemble 系列的，还有compile系列的、install 系列的等等，大家可以通过运行 ./gradlew tasks 来查看有哪些任务。除了生成的 Task之外，每个 ProductFlavor 还可以有自己的 SourceSet，还可以有自己的 Dependencies 依赖，这意味着什么，意味着我们可以为每个渠道定义他们自己的资源、代码以及依赖的第三方库，这为我们自定义每个渠道提供很大的便利和灵活性，后面的11.3小节的多渠道定制我们会详细介绍这部分内容。
 
-### 11.2 Flurry多渠道和友盟多渠道构建
+### 11.2 Flurry 多渠道和友盟多渠道构建
 
-Flurry和友盟是我们常用的两个App统计分析工具，基本上所有的软件都会接入其中的一个。Flurry本身没有渠道的概念，它有Application，所以可以把一个Application当成一个渠道，这样就可以使用Flurry统计每个渠道的活跃新增等情况；友盟本身有渠道的概念，只要我们在AndroidManifest.xml配置标注即可，下面以这两种统计演示下多渠道的用法。
+Flurry 和友盟是我们常用的两个 App 统计分析工具，基本上所有的软件都会接入其中的一个。Flurry 本身没有渠道的概念，它有 Application，所以可以把一个 Application 当成一个渠道，这样就可以使用Flurry统计每个渠道的活跃新增等情况；友盟本身有渠道的概念，只要我们在AndroidManifest.xml配置标注即可，下面以这两种统计演示下多渠道的用法。
 
-Flurry的统计是以Application划分渠道的，每个Application都有一个Key，我们称之为Flurry Key，这个当我们在Flurry上创建Application的时候就自动帮我们生成好了，现在我们要做的就是为每个渠道配置不同的Flurry Key，还记得我们在第九章讲的自动已BuildConfig吗，利用的就是这个功能。
+Flurry 的统计是以 Application划分渠道的，每个Application都有一个Key，我们称之为Flurry Key，这个当我们在Flurry上创建Application的时候就自动帮我们生成好了，现在我们要做的就是为每个渠道配置不同的Flurry Key，还记得我们在第九章讲的自动已BuildConfig吗，利用的就是这个功能。
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-d02532e611828083.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 

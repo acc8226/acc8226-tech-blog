@@ -15,7 +15,7 @@ Android 为测试提供了很好的支持，既可以使用传统的 Junit测试
 3. testHandleProfiling 是否启用性能分析
 4. testInstrumentationRunner 运行测试使用的Instrumentation Runner
 
-这些配置我们在上一章多渠道里都有详细介绍，他们是用来配置Android测试的配置，帮助我们生成AndroidManifest.xml，其实主要是用来生成AndroidManifest的instrumentation这个标签。
+这些配置我们在上一章多渠道里都有详细介绍，他们是用来配置 Android 测试的配置，帮助我们生成 AndroidManifest.xml，其实主要是用来生成 AndroidManifest 的 instrumentation 这个标签。
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-23532f5b6a70f2d4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -23,15 +23,15 @@ Android 为测试提供了很好的支持，既可以使用传统的 Junit测试
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-ffa5f8d9bb73eb12.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-看到这里，我们应该发现一个现象，targetPackage这个属性我们并没有配置，怎么在AndroidManifest.xml也生成了呢，这是**Android Gradle自动帮我们做的**，它会使用被测试App的包名进行填充。
+看到这里，我们应该发现一个现象，targetPackage 这个属性我们并没有配置，怎么在AndroidManifest.xml 也生成了呢，这是**Android Gradle自动帮我们做的**，它会使用被测试 App 的包名进行填充。
 
-前面我们讲过，每一个SourceSet都可以配置它自己的dependencies依赖，androidTest也不例外，它也可以，并且它可以有自己的资源，配置等，和我们使用其他的SourceSet是一样的，该有的都有。
+前面我们讲过，每一个SourceSet都可以配置它自己的 dependencies依赖，androidTest也不例外，它也可以，并且它可以有自己的资源，配置等，和我们使用其他的SourceSet是一样的，该有的都有。
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-0580915f6a575f90.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 这样只有Android测试的时候这些才会被编译到测试的Apk里，为我们测试所用，正式的Apk包里是没有这些Jar库的。
 
-默认情况下测试Apk测试的目标Apk是debug模式下的，这有很大好处，第一个因为debug模式下的我们都不会混淆代码，对我们发现问题有帮助，第二个对我们查看测试的代码覆盖率有帮助，可以很容易的发现哪些没有覆盖到，如果想更改也很方便，Android Gradle为我们提供了testBuildType，可以更改要测试BuildType。
+默认情况下测试Apk测试的目标 Apk 是 debug 模式下的，这有很大好处，第一个因为 debug 模式下的我们都不会混淆代码，对我们发现问题有帮助，第二个对我们查看测试的代码覆盖率有帮助，可以很容易的发现哪些没有覆盖到，如果想更改也很方便，Android Gradle 为我们提供了 testBuildType，可以更改要测试BuildType。
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-ebe7b93068150e11.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -39,13 +39,13 @@ Android 为测试提供了很好的支持，既可以使用传统的 Junit测试
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-91fae7faf6dc8cb2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-从源代码里我们也可以看到，它的默认值是debug，也就是我们上面讲的测试的是debug类型的App包。
+从源代码里我们也可以看到，它的默认值是 debug，也就是我们上面讲的测试的是 debug 类型的 App 包。
 
-写好了测试的代码，我们怎么运行呢，测试需要我们手动执行来运行，使用./gradlew connectedCheck 即可运行我们的测试，这个任务是一个引导性质的任务，它首先会使用 androidAndroidTest 任务构建好测试应用和被测试应用，其中被测试应用又是被 assembleDebug 任务构建的；然后通过install任务安装这两个应用；接着运行我们写好的测试用例，最后等运行完之后，写卸载两个应用。这个前提我们一定要有一台 Android 设备或者 Android 模拟器以供我们测试使用，如果你同时运行了多个设备，那么会在每个设备上都执行测试用例。
+写好了测试的代码，我们怎么运行呢，测试需要我们手动执行来运行，使用 ./gradlew connectedCheck 即可运行我们的测试，这个任务是一个引导性质的任务，它首先会使用 androidAndroidTest 任务构建好测试应用和被测试应用，其中被测试应用又是被 assembleDebug 任务构建的；然后通过install任务安装这两个应用；接着运行我们写好的测试用例，最后等运行完之后，写卸载两个应用。这个前提我们一定要有一台 Android 设备或者 Android 模拟器以供我们测试使用，如果你同时运行了多个设备，那么会在每个设备上都执行测试用例。
 
 最后测试的结果会被保存在build/androidTest-results目录下，我们可以前往查看我们测试的结果。
 
-以前讲的都是测试App，也就是Application项目，如果我们要测试一个库项目呢？其实和测试Application项目是一样的，配置、目录、依赖等都一样，唯一不同的是不会有被测试的 Apk 生成，只有一个测试Apk生成，我们库项目中的代码被作为一个依赖库添加到测试Apk中，库的AndroidManifest文件中的配置也会被合并到测试Apk的AndroidManifest中，有没有发现，其实一个Application项目引用库项目是一样的。运行测试方面也是一样的，执行命令行执行命令即可。
+以前讲的都是测试App，也就是 Application 项目，如果我们要测试一个库项目呢？其实和测试 Application项目是一样的，配置、目录、依赖等都一样，唯一不同的是不会有被测试的 Apk 生成，只有一个测试 Apk 生成，我们库项目中的代码被作为一个依赖库添加到测试 Apk中，库的 AndroidManifest文件中的配置也会被合并到测试 Apk 的AndroidManifest 中，有没有发现，其实一个 Application 项目引用库项目是一样的。运行测试方面也是一样的，执行命令行执行命令即可。
 
 ### 12.2 本地单元测试
 
