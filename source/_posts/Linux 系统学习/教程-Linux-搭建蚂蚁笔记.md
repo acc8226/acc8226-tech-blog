@@ -17,49 +17,52 @@ $> tar -xzvf leanote-darwin-amd64.v2.0.bin.tar.gz
 #### 2.1 安装 mongodb
 
 下载以下旧版本：
-*   64位 linux mongodb 3.0.1 下载链接: [https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-3.0.1.tgz](https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-3.0.1.tgz)
+
+* 64位 linux mongodb 3.0.1 下载链接: [https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-3.0.1.tgz](https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-3.0.1.tgz)
 
 下载到 /user1下, 直接解压即可:
-```
-$> tar -xzvf mongodb-linux-x86_64-3.0.1.tgz/
+
+```sh
+tar -xzvf mongodb-linux-x86_64-3.0.1.tgz/
 ```
 
-为了快速使用`mongodb`命令, 可以配置环境变量。编辑 ~/.profile或/etc/profile 文件， 将mongodb/bin路径加入即可:
+为了快速使用 `mongodb` 命令, 可以配置环境变量。编辑 ~/.profile或/etc/profile 文件， 将 mongodb/bin 路径加入即可:
 
-```
-$> sudo vim /etc/profile
+```sh
+sudo vim /etc/profile
 ```
 
 在/etc/profile中添加以下行，注意把用户名（user1）和相应的文件目录名（mongodb-linux-x86_64-3.0.1）替换成自己系统中的名称：
 
-```
+```sh
 export PATH=$PATH:/user1/mongodb-linux-x86_64-3.0.1/bin
 ```
 
 保存修改后，在终端运行以下命令使环境变量生效:
 
-```
-$> source /etc/profile
+```sh
+source /etc/profile
 ```
 
 #### 2.2 测试 mongodb 安装
 
 先在`/home/user1/`下新建一个目录mongodb_data存放mongodb数据:
 
-```
+```sh
 mkdir -p /home/user1/mongodb_data/
 ```
 
-用以下命令启动mongod:
-```
+用以下命令启动 mongod:
+
+```sh
 mongod --dbpath /home/user1/mongodb_data
 ```
 
 这时mongod已经启动，重新打开一个终端, 键入mongo进入交互程序：
 
-```
-$> mongo
-> show dbs
+```sh
+mongo
+show dbs
 ...数据库列表
 ```
 
@@ -68,13 +71,13 @@ $> mongo
 leanote初始数据存放在`/home/user1/leanote/mongodb_backup/leanote_install_data/`中。
 打开终端， 输入以下命令导入数据。
 
-```
-$> mongorestore -h localhost -d leanote --dir /home/user1/leanote/mongodb_backup/leanote_install_data/
+```sh
+mongorestore -h localhost -d leanote --dir /home/user1/leanote/mongodb_backup/leanote_install_data/
 ```
 
 现在在mongodb中已经新建了leanote数据库, 可用命令查看下leanote有多少张"表":
 
-```
+```sh
 $> mongo
 > show dbs #　查看数据库
 leanote	0.203125GB
@@ -88,9 +91,9 @@ note_content_histories
 note_contents
 ```
 
-初始数据的users表中已有 2 个用户:
+初始数据的 users 表中已有 2 个用户:
 
-```
+```sh
 user1 username: admin, password: abc123 (管理员, 只有该用户才有权管理后台, 请及时修改密码)
 user2 username: demo@leanote.com, password: demo@leanote.com (仅供体验使用)
 ```
@@ -108,13 +111,13 @@ user2 username: demo@leanote.com, password: demo@leanote.com (仅供体验使用
 
 新开一个窗口, 运行:
 
-```
-$> cd /home/user1/leanote/bin
-$> bash run.sh
+```sh
+cd /home/user1/leanote/bin
+bash run.sh
 ```
 
-发现报错`-bash: ./run.sh: Permission denied`
-尝试使用`chmod u+x *.sh`再重试
+发现报错 `-bash: ./run.sh: Permission denied`
+尝试使用 `chmod u+x *.sh` 再重试
 
 最后出现以下信息证明运行成功:
 
@@ -139,7 +142,7 @@ mongod --auth --fork --dbpath=/home/user1/mongodb_data --logpath=/home/user1/mon
 
 我们还可以通过mongo客户端工具通知服务器正常退出. 由于这里必须`shutdown command only works with the admin database; try 'use admin'`
 
-```
+```js
 db.createUser(  {
     user: "admin",
     pwd: "admin123",
@@ -166,12 +169,12 @@ db.shutdownServer();
 
 **让蚂蚁笔记nohup**
 
-```
+```sh
 nohup bash /home/user1/leanote/bin/run.sh >/dev/null 2>&1 &
 ```
 
-用awk提取一下进程ID, 结合kill pid可以关闭蚂蚁笔记哦
-`ps -aux|grep /home/user1/leanote/bin/run.sh| grep -v grep | awk '{print $2}'`
+用 awk 提取一下进程ID, 结合 kill pid 可以关闭蚂蚁笔记哦
+`ps -aux | grep /home/user1/leanote/bin/run.sh| grep -v grep | awk '{print $2}'`
 
 ## 进一步完善
 
@@ -181,7 +184,7 @@ nohup bash /home/user1/leanote/bin/run.sh >/dev/null 2>&1 &
 
 mongodb v3 创建用户如下:
 
-```
+```sh
 # 首先切换到leanote数据库下
 > use leanote;
 # 添加一个用户root, 密码是abc123
@@ -199,13 +202,13 @@ mongodb v3 创建用户如下:
 
 启动mongodb, 注意这里加了`--auth`参数:
 
-```
-$> mongod --dbpath /home/user1/mongodb_data --auth
+```sh
+mongod --dbpath /home/user1/mongodb_data --auth
 ```
 
 还要修改配置文件 : 修改 leanote/conf/app.conf:
 
-```
+```conf
 db.host=localhost
 db.port=27017
 db.dbname=leanote # required
@@ -216,10 +219,10 @@ db.password=mini66 # if not exists, please leave blank
 ## 参考
 
 Leanote 二进制版详细安装教程 Mac and Linux
-https://github.com/leanote/leanote/wiki/Leanote-%E4%BA%8C%E8%BF%9B%E5%88%B6%E7%89%88%E8%AF%A6%E7%BB%86%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B----Mac-and-Linux
+<https://github.com/leanote/leanote/wiki/Leanote-%E4%BA%8C%E8%BF%9B%E5%88%B6%E7%89%88%E8%AF%A6%E7%BB%86%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B----Mac-and-Linux>
 
 MongoDB学习笔记(管理基础) - Stephen_Liu - 博客园
-https://www.cnblogs.com/stephen-liu74/archive/2012/09/22/2658670.html
+<https://www.cnblogs.com/stephen-liu74/archive/2012/09/22/2658670.html>
 
  [MongoDB 权限认证](https://www.cnblogs.com/shaosks/p/5775757.html)
-https://www.cnblogs.com/shaosks/p/5775757.html
+<https://www.cnblogs.com/shaosks/p/5775757.html>

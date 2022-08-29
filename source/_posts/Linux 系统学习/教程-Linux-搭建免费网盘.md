@@ -28,7 +28,7 @@ server {
       proxy_set_header Host $host;
       proxy_set_header X-Real-IP       $remote_addr;
       proxy_set_header X-Forwarded-For  $proxy_add_x_forwarded_for;
-      proxy_set_header X-Forwarded-Proto $scheme; 
+      proxy_set_header X-Forwarded-Proto $scheme;
       proxy_pass http://127.0.0.1:3030;
   }
 }
@@ -42,7 +42,7 @@ server {
 
 更加适合于办公，很多单位机关都在用。它提供了在线编辑 office 的支持。这个 wiki 在书写方面还是感觉有所欠缺。
 
-1. 安装最新的 Seafile 9.0.x 版本服务器之前，请确认已安装以下软件
+1\. 安装最新的 Seafile 9.0.x 版本服务器之前，请确认已安装以下软件
 
 ```sh
 # on Debian 10/Ubuntu 18.04/Ubuntu 20.04
@@ -53,9 +53,9 @@ pip3 install --timeout=3600 django==3.2.* future mysqlclient pymysql Pillow pyli
 captcha jinja2 sqlalchemy==1.4.3 psd-tools django-pylibmc django-simple-captcha pycryptodome==3.12.0
 ```
 
-2. 到 [Seafile 页面](http://www.seafile.com/download)下载最新的服务器安装包。
+2\. 到 [Seafile 页面](http://www.seafile.com/download)下载最新的服务器安装包。
 
-3. 下载后进行安装
+3\. 下载后进行安装
 
 ```sh
 cd seafile-server-*

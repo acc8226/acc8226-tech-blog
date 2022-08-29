@@ -1,6 +1,6 @@
 ---
-title: 安卓-ContentProvider 详解
-date: 2017.03.10 14:22:08
+title: 安卓 ContentProvider 详解
+date: 2017-03-10 14:22:08
 categories:
   - 安卓
   - UI 知识
