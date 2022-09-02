@@ -360,7 +360,21 @@ public class ResultConfig {
 }
 ```
 
-解决办法：此种写法极度不建议，所有list or set or array 传空数组。或者重新定义请求的实体类。不需要设置 null 转空字符。
+解决办法：此种写法极度不建议，所有 list or set or array 传空数组。或者重新定义请求的实体类。不需要设置 null 转空字符。
+
+### 请求接收入参报 com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException
+
+第一种解决方案
+
+ObjectMapper对象添加
+mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+
+第二种解决方案
+
+在需要转化的对象的类中添加注解，注解信息如下：
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class User
+...
 
 ## 参考
 

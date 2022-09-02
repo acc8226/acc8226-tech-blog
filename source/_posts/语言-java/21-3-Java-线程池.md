@@ -174,6 +174,7 @@ public interface RejectedExecutionHandler {
 ```
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-a9e960dae6f3033b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 线程池默认的拒绝行为是 **AbortPolicy**，也就是抛出 RejectedExecutionHandler 异常，该异常是非受检异常，很容易忘记捕获。如果不关心任务被拒绝的事件，可以将拒绝策略设置成DiscardPolicy，这样多余的任务会悄悄的被忽略。
 
 策略使用的 Demo

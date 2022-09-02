@@ -8,7 +8,7 @@ BufferedReader buf = new BufferedReader(new InputStreamReader(System.in));
 String str = buf.readLine();
 ```
 
-## 使用System.out输出
+## 使用 System.out 输出
 
  (标准输出流 System.out )提供的如下方法
 

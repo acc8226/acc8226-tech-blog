@@ -73,7 +73,7 @@ $ unzip -l shiyanlou.zip
 
 使用 -O（英文字母，大写 o）参数指定编码类型：
 
-```
+```sh
 unzip -O GBK 中文压缩文件.zip
 ```
 
@@ -81,7 +81,7 @@ unzip -O GBK 中文压缩文件.zip
 
 创建一个 tar 包：
 
-```
+```sh
 $ cd /home/shiyanlou
 $ tar -P -cf shiyanlou.tar /home/shiyanlou/Desktop # 不建议使用绝对路径
 
@@ -96,7 +96,7 @@ $ tar -cf shiyanlou.tar
 
 解压一个文件（-x 参数）到指定路径的已存在目录（**-C**参数指定路径）：
 
-```
+```sh
 $ mkdir tardir
 $ tar -xf shiyanlou.tar -C tardir
 # 会报警告从成员名中删除开头的“/”,  造成该问题的原因是因为使用相对路径和绝对路径引起的。另外还有一种解决方法是，使用相对路径.
