@@ -50,9 +50,9 @@ shfit + command + R 进入阅读模式
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-91d86a34e2073501.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
->* 该快捷键原本是功能是"显示调度中心", 发现多此一举,因为三指向上就已经实现该功能, 就改成Ctrl + 向上键, 模仿出Win系统的味道
-> * 但目前发现仅对部分软件有效
-> * 可以改成你想要的快捷键, 发现`option + 向上键` 也挺合理的
+* 该快捷键原本是功能是"显示调度中心", 发现多此一举,因为三指向上就已经实现该功能, 就改成Ctrl + 向上键, 模仿出Win系统的味道
+* 但目前发现仅对部分软件有效
+* 可以改成你想要的快捷键, 发现 `option + 向上键` 也挺合理的
 
 ### 将 Fn 功能键作为标准功能键, 而非辅助键
 
@@ -86,7 +86,7 @@ shfit + command + R 进入阅读模式
 
 ### 类似 Win 的显示桌面
 
-鼠标移动到右下角, 模仿Win系统点击右下角显示桌面的功能
+鼠标移动到右下角, 模仿 Win 系统点击右下角显示桌面的功能
 ![【系统偏好设置】-【Mission Control（调度中心）】，点击位于左下角的【触发角】选项](https://upload-images.jianshu.io/upload_images/1662509-af8414725f97fa62.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### 关闭仪表盘
@@ -101,13 +101,13 @@ defaults write com.apple.dashboard mcx-disabled -boolean YES && killall Dock
 defaults write com.apple.dashboard mcx-disabled -boolean NO && killall Dock
 ```
 
-#### "apple无法检查其是否包含恶意软件"的问题
+#### "apple 无法检查其是否包含恶意软件"的问题
 
 系统偏好设置==> 安全性与隐私 ===> 在下方允许就可以了。
 
 ## 小技巧
 
-输入命令 `ifconfig en0` 查看本机IP(最后是数字0,而不是字母O)
+输入命令 `ifconfig en0` 查看本机 IP(最后是数字0,而不是字母O)
 
 ## 参考
 

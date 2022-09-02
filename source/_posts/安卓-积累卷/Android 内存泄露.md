@@ -1,6 +1,6 @@
 ---
 title: Android 内存泄露
-date: 2018.03.22 14:07:06
+date: 2018-03-22 14:07:06
 categories:
   - 安卓
   - 积累卷
@@ -140,7 +140,7 @@ public class CustomApplication extends Application {
 
 ## 使用 leakcanary
 
-之前 Android 开发通常使用 MA T内存分析工具来排查 heap 的问题，之类的文章比较多，大家可以自己找。这里推荐一个叫做 leakcanary 的工具，他可以集成在你的代码里面。这个东西大家可以参考：[http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2015/0509/2854.html](http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2015/0509/2854.html)
+之前 Android 开发通常使用 MAT 内存分析工具来排查 heap 的问题，之类的文章比较多，大家可以自己找。这里推荐一个叫做 leakcanary 的工具，他可以集成在你的代码里面。这个东西大家可以参考：[http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2015/0509/2854.html](http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2015/0509/2854.html)
 
 ## 特别鸣谢
 

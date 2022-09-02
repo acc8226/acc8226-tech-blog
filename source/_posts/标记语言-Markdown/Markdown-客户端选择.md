@@ -49,3 +49,6 @@ stackedit 在线 markdown 编辑
 
 使用 GitHub 搭建免费图床/网盘(CDN加速)
 <https://www.jianshu.com/p/2097bef17cbe>
+
+marktext/marktext: 📝A simple and elegant markdown editor, available for Linux, macOS and Windows.
+<https://github.com/marktext/marktext>

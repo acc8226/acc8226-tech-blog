@@ -22,11 +22,8 @@ swagger 通过注解表明该接口会生成文档，包括接口名、请求方
 ![API详细说明](https://upload-images.jianshu.io/upload_images/1662509-4fb0a6569a9a4186.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 @Api(tags = "收付费方式变更") 常用
-
 @ApiOperation("获取用户列表") 常用
-
 @ApiParam(value = "用户Id") 常用
-
 @ApiImplicitParam：
 作用在方法上，表示单独的请求参数, 一个非常强大且重要的注解, 作用和 ApiParam 类似
 
@@ -131,7 +128,7 @@ public class PaychangeTotalController {
 }
 ```
 
-### 总结常用swagger-ui注解
+### 总结常用 swagger-ui 注解
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-5741596fcdc5f005.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -191,17 +188,12 @@ example：给出该属性的示例值
 allowableValues : 可选值, 像这样`@ApiModelProperty(allowableValues = "range[1,5]")` 或者 `@ApiModelProperty(allowableValues = "111, 222")`
 
 3）其他注解
-**@ApiIgnore() 用于类，方法，方法参数**
+**@ApiIgnore() 用于类，方法，方法参数** 表示这个方法或者类被忽略
 
-表示这个方法或者类被忽略
-- @ApiImplicitParam() 用于方法
+@ApiImplicitParams：用在请求的方法上，包含一组参数说明
+@ApiImplicitParam：用在 @ApiImplicitParams 注解中，指定一个请求参数的配置信息
 
-表示单独的请求参数
-- @ApiImplicitParams()  用于方法
-
-该注解可以包含多个 @ApiImplicitParam
-
-### [swagger2 如何匹配多个controller](https://www.cnblogs.com/acm-bingzi/p/swagger2-controller.html)
+### [swagger2 如何匹配多个 controller](https://www.cnblogs.com/acm-bingzi/p/swagger2-controller.html)
 
 ```java
 @Bean

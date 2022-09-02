@@ -1,0 +1,299 @@
+## 类型比较
+
+虽然 PHP 是弱类型语言，但也需要明白变量类型及它们的意义，因为我们经常需要对 PHP 变量进行比较，包含松散和严格比较。
+
+松散比较：使用两个等号 == 比较，只比较值，不比较类型。
+严格比较：用三个等号 === 比较，除了比较值，也比较类型。
+例如，"42" 是一个字符串而 42 是一个整数。FALSE 是一个布尔值而 "false" 是一个字符串。
+
+## php 运算符
+
+和其他语言类似, 不在介绍
+
+### if 和 switch
+
+```
+<?php
+$t=date("H");
+if ($t<"10")
+{
+    echo "Have a good morning!";
+}
+elseif ($t<"20")
+{
+    echo "Have a good day!";
+}
+else
+{
+    echo "Have a good night!";
+}
+?>
+```
+
+```
+<?php
+switch (n)
+{
+case label1:
+    如果 n=label1，此处代码将执行;
+    break;
+case label2:
+    如果 n=label2，此处代码将执行;
+    break;
+default:
+    如果 n 既不等于 label1 也不等于 label2，此处代码将执行;
+}
+?>
+```
+
+## 数组
+
+在 PHP 中，有三种类型的数组：
+
+数值数组 - 带有数字 ID 键的数组
+关联数组 - 带有指定的键的数组，每个键关联一个值
+多维数组 - 包含一个或多个数组的数组
+
+遍历数值数组
+
+```php
+<?php
+$cars=array("Volvo","BMW","Toyota");
+$arrlength=count($cars);
+
+for($x=0;$x<$arrlength;$x++)
+{
+    echo $cars[$x];
+    echo "<br>";
+}
+?>
+```
+
+遍历关联数组
+
+```php
+<?php
+$age=array("Peter"=>"35","Ben"=>"37","Joe"=>"43");
+
+foreach($age as $x=>$x_value)
+{
+    echo "Key=" . $x . ", Value=" . $x_value;
+    echo "<br>";
+}
+?>
+```
+
+### 数组排序
+
+PHP - 数组排序函数
+
+sort() - 对数组进行升序排列
+rsort() - 对数组进行降序排列
+asort() - 根据关联数组的值，对数组进行升序排列
+ksort() - 根据关联数组的键，对数组进行升序排列
+arsort() - 根据关联数组的值，对数组进行降序排列
+krsort() - 根据关联数组的键，对数组进行降序排列
+
+```php
+<?php
+
+$cars=array("Volvo","BMW","Toyota");
+sort($cars);
+
+?>
+```
+
+## PHP 超级全局变量
+
+超级全局变量在PHP 4.1.0之后被启用, 是PHP系统中自带的变量，在一个脚本的全部作用域中都可用。
+
+PHP 超级全局变量
+PHP中预定义了几个超级全局变量（superglobals） ，这意味着它们在一个脚本的全部作用域中都可用。 你不需要特别说明，就可以在函数及类中使用。
+
+PHP 超级全局变量列表:
+
+$GLOBALS
+$_SERVER
+$_REQUEST
+$_POST
+$_GET
+$_FILES
+$_ENV
+$_COOKIE
+$_SESSION
+
+PHP $_SERVER
+$_SERVER 是一个包含了诸如头信息(header)、路径(path)、以及脚本位置(script locations)等等信息的数组。这个数组中的项目由 Web 服务器创建。不能保证每个服务器都提供全部项目；服务器可能会忽略一些，或者提供一些没有在这里列举出来的项目。
+
+以下实例中展示了如何使用$_SERVER中的元素:
+
+```php
+<?php
+$x = 75;
+$y = 25;
+
+function addition()
+{
+    $GLOBALS['z'] = $GLOBALS['x'] + $GLOBALS['y'];
+}
+
+addition();
+echo $z;
+?>
+```
+
+PHP $_SERVER
+$_SERVER 是一个包含了诸如头信息(header)、路径(path)、以及脚本位置(script locations)等等信息的数组。这个数组中的项目由 Web 服务器创建。不能保证每个服务器都提供全部项目；服务器可能会忽略一些，或者提供一些没有在这里列举出来的项目。
+
+以下实例中展示了如何使用$_SERVER中的元素:
+
+```php
+<?php
+
+echo "PHP_SELF: ", $_SERVER['PHP_SELF'];
+echo "<br>";
+echo "SERVER_NAME: ", $_SERVER['SERVER_NAME'];
+echo "<br>";
+echo "HTTP_HOST: ", $_SERVER['HTTP_HOST'];
+echo "<br>";
+echo "HTTP_REFERER: ", $_SERVER['HTTP_REFERER'];
+echo "<br>";
+echo "HTTP_USER_AGENT: ", $_SERVER['HTTP_USER_AGENT'];
+echo "<br>";
+echo "SCRIPT_NAME: ", $_SERVER['SCRIPT_NAME'];
+
+echo "<br>";
+echo "GATEWAY_INTERFACE: ", $_SERVER['GATEWAY_INTERFACE'];
+?>
+```
+
+我这里 php -S localhost:8888 启动,然后该目录下有一个 a.php 然后访问 http://localhost:8888/a.php 可以得到以下输出:
+PHP_SELF: /a.php
+SERVER_NAME: localhost
+HTTP_HOST: localhost:8888
+SERVER_PORT: 8888
+HTTP_REFERER:
+HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+SCRIPT_NAME: /a.php
+GATEWAY_INTERFACE:
+
+## php 循环
+
+PHP 循环
+在您编写代码时，您经常需要让相同的代码块一次又一次地重复运行。我们可以在代码中使用循环语句来完成这个任务。
+
+在 PHP 中，提供了下列循环语句：
+while - 只要指定的条件成立，则循环执行代码块
+do...while - 首先执行一次代码块，然后在指定的条件成立时重复这个循环
+for - 循环执行代码块指定的次数
+foreach - 根据数组中每个元素来循环代码块
+
+```php
+<html>
+<body>
+
+<?php
+$i=1;
+while($i<=5)
+{
+    echo "The number is " . $i . "<br>";
+    $i++;
+}
+?>
+
+</body>
+</html>
+```
+
+输出：
+
+The number is 1
+The number is 2
+The number is 3
+The number is 4
+The number is 5
+
+## PHP 循环 - For 循环
+
+foreach 循环用于遍历数组。
+
+语法
+```
+foreach ($array as $value)
+{
+    要执行代码;
+}
+```
+每进行一次循环，当前数组元素的值就会被赋值给 $value 变量（数组指针会逐一地移动），在进行下一次循环时，您将看到数组中的下一个值。
+```
+foreach ($array as $key => $value)
+{
+    要执行代码;
+}
+```
+每一次循环，当前数组元素的键与值就都会被赋值给 $key 和 $value 变量（数字指针会逐一地移动），在进行下一次循环时，你将看到数组中的下一个键与值。
+
+示例:
+```
+<?php
+$x=array("Google","Runoob","Taobao");
+foreach ($x as $value)
+{
+    echo $value . PHP_EOL;
+}
+echo "<br>";
+
+foreach ($x as $key => $value)
+{
+    echo "key  为 " . $key . "，对应的 value 为 ". $value . PHP_EOL;
+}
+echo "<br>";
+
+$x=array(1=>"Google", 2=>"Runoob", 3=>"Taobao");
+foreach ($x as $key => $value)
+{
+    echo "key  为 " . $key . "，对应的 value 为 ". $value . PHP_EOL;
+}
+echo "<br>";
+
+$x=array("first"=>"Google", "second"=>"Runoob", 3=>"Taobao");
+foreach ($x as $key => $value)
+{
+    echo "key  为 " . $key . "，对应的 value 为 ". $value . PHP_EOL;
+}
+echo "<br>";
+
+?>
+```
+
+```php
+Google Runoob Taobao
+key 为 0，对应的 value 为 Google key 为 1，对应的 value 为 Runoob key 为 2，对应的 value 为 Taobao
+key 为 1，对应的 value 为 Google key 为 2，对应的 value 为 Runoob key 为 3，对应的 value 为 Taobao
+key 为 first，对应的 value 为 Google key 为 second，对应的 value 为 Runoob key 为 3，对应的 value 为 Taobao
+```
+
+## PHP 函数
+
+如要在页面加载时执行脚本，您可以把它放到函数里。
+函数是通过调用函数来执行的。
+你可以在页面的任何位置调用函数。
+
+实例
+
+```php
+<?php
+function add($x,$y)
+{
+    $total=$x+$y;
+    return $total;
+}
+
+echo "1 + 16 = " . add(1,16);
+?>
+```
+
+## 参考
+
+菜鸟教程-php 教程
+<https://www.runoob.com/php/php-tutorial.html>

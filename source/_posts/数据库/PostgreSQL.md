@@ -241,19 +241,19 @@ PL/pgSQL 是一种用于 PostgreSQL 数据库系统的可载入的过程语言�
 
 ## 遇到过的问题
 
-pgadmin4 在点击备份数据库时，PgAdmin 出现Utility file not found. Please correct the Binary Path in the Preferences dialog 的解决办法
+pgadmin4 在点击备份数据库时，PgAdmin 出现 Utility file not found. Please correct the Binary Path in the Preferences dialog 的解决办法
 
 1\. 点击顶部菜单栏，File→PreferencesPreferences
 
 2\. 在弹出的窗口中，点击 Paths 下的 Binary paths 操作示例
 
-3\. 右侧内容滚动到最下方，根据自己本地 PostgreSQL 版本，勾选默认，并且在右侧选择对应 PostgreSQ 安装目录下的bin文件夹，然后点击保存设置路径
+3\. 右侧内容滚动到最下方，根据自己本地 PostgreSQL 版本，勾选默认，并且在右侧选择对应 PostgreSQ 安装目录下的 bin 文件夹，然后点击保存设置路径
 
 - - -
 
 pg_dump 提示命令行参数太多
 
-原来是 -h 中的 - 用的是中文，改成用英文的就可以了。
+原来是 -h 中的 - 符号用的是中文，改成用英文的就可以了。
 
 ## 参考
 

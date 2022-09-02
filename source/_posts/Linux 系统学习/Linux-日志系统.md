@@ -41,7 +41,7 @@
 
 只闻其名，不见其人，我们并不能明白这些日志记录的内容。首先我们来看 `alternatives.log` 中的信息，在本实验环境中没有任何日志输出是因为刚刚启动的系统中并没有任何的更新迭代。我可以看看从其他地方截取过来的内容
 
-```
+```text
 update-alternatives 2016-07-02 13:36:16: run with --install /usr/bin/x-www-browser x-www-browser /usr/bin/google-chrome-stable 200
 update-alternatives 2016-07-02 13:36:16: run with --install /usr/bin/gnome-www-browser gnome-www-browser /usr/bin/google-chrome-stable 200
 update-alternatives 2016-07-02 13:36:16: run with --install /usr/bin/google-chrome google-chrome /usr/bin/google-chrome-stable 200
@@ -51,7 +51,7 @@ update-alternatives 2016-07-02 13:36:16: run with --install /usr/bin/google-chro
 
 我们用这样的命令来看看 `auth.log` 中的信息
 
-```
+```sh
 less auth.log
 ```
 
@@ -63,7 +63,7 @@ less auth.log
 
 我们通过这样的例子就可以很明显的看出区别，在本实验环境中因为是刚启动的环境，所以两个日志中的信息都是空的
 
-```
+```sh
 less /var/log/apt/history.log
 
 less /var/log/apt/term.log
@@ -75,25 +75,25 @@ less /var/log/apt/term.log
 
 然后我们来安装 git 这个程序，因为本实验环境中本有预装 git 所以这里真正执行的操作是一个更新的操作，但这并不影响
 
-```
+```sh
 sudo apt-get install git
 ```
 
-![实验楼](https://upload-images.jianshu.io/upload_images/1662509-d99c4fed04a51e69?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/1662509-d99c4fed04a51e69?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 成功的执行之后我们再来查看两个日志的内容变化
 
-![实验楼](https://upload-images.jianshu.io/upload_images/1662509-b9b2f3e054f0909a?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/1662509-b9b2f3e054f0909a?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-![实验楼](https://upload-images.jianshu.io/upload_images/1662509-6330f031219cb804?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/1662509-6330f031219cb804?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 其他的日志格式也都类似于之前我们所查看的日志，主要便是时间，操作。而这其中有两个比较特殊的日志，其查看的方式比较与众不同，因为这两个日志并不是 ASCII 文件而是被编码成了二进制文件，所以我们并不能直接使用 less、cat、more 这样的工具来查看，这两个日志文件是 wtmp，lastlog
 
-![实验楼](https://upload-images.jianshu.io/upload_images/1662509-ca6fec39c05da401?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/1662509-ca6fec39c05da401?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 我们查看的方法是使用 last 与 lastlog 工具来提取其中的信息
 
-![实验楼](https://upload-images.jianshu.io/upload_images/1662509-6cbc86187b8c234d?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/1662509-6cbc86187b8c234d?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 关于这两个工具的更深入使用我们可以使用前面的学习过的 man 来查看
 
@@ -103,8 +103,8 @@ sudo apt-get install git
 
 这样的实现可以通过两种方式：
 
-*   一种是由软件开发商自己来自定义日志格式然后指定输出日志位置；
-*   一种方式就是 Linux 提供的日志服务程序，而我们这里系统日志是通过 syslog 来实现，提供日志管理服务。
+* 一种是由软件开发商自己来自定义日志格式然后指定输出日志位置；
+* 一种方式就是 Linux 提供的日志服务程序，而我们这里系统日志是通过 syslog 来实现，提供日志管理服务。
 
 syslog 是一个系统日志记录程序，在早期的大部分 Linux 发行版都是内置 syslog，让其作为系统的默认日志收集工具，虽然随着时代的进步与发展，syslog 已经年老体衰跟不上时代的需求，所以他被 rsyslog 所代替了，较新的 Ubuntu、Fedora 等等都是默认使用 rsyslog 作为系统的日志收集工具
 
@@ -114,7 +114,7 @@ rsyslog 的全称是 rocket-fast system for log，它提供了高性能，高安
 
 因为一些原因本实验环境中默认并没有打开这个服务，我们可以手动开启这项服务，然后来查看
 
-```
+```sh
 sudo apt-get update
 sudo apt-get install -y rsyslog
 sudo service rsyslog start
@@ -127,30 +127,30 @@ ps aux | grep syslog
 
 首先我们来看 rsyslog 的配置文件是什么样子的，而 rsyslog 的配置文件有两个，
 
-*   一个是 `/etc/rsyslog.conf`
-*   一个是 `/etc/rsyslog.d/50-default.conf`。
+* 一个是 `/etc/rsyslog.conf`
+* 一个是 `/etc/rsyslog.d/50-default.conf`。
 
 第一个主要是配置的环境，也就是 rsyslog 加载什么模块，文件的所属者等；而第二个主要是配置的 Filter Conditions
 
-```
+```sh
 vim /etc/rsyslog.conf
 
 vim /etc/rsyslog.d/50-default.conf
 ```
 
-![实验楼](https://upload-images.jianshu.io/upload_images/1662509-7941d5a5578e799d?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/1662509-7941d5a5578e799d?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-![实验楼](https://upload-images.jianshu.io/upload_images/1662509-7fc9cc097a01a9d3?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/1662509-7fc9cc097a01a9d3?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 也不知道他在写什么，我们还是来看看 rsyslog 的结构框架，数据流的走向吧。
 
-![实验楼](https://upload-images.jianshu.io/upload_images/1662509-8f52e034bb864c5d?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/1662509-8f52e034bb864c5d?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 通过这个简单的流程图我们可以知道 rsyslog 主要是由 Input、Output、Parser 这样三个模块构成的，并且了解到数据的简单走向，首先通过 Input module 来收集消息，然后将得到的消息传给 Parser module，通过分析模块的层层处理，将真正需要的消息传给 Output module，然后便输出至日志文件中。
 
 上文提到过 rsyslog 号称可以提供超过每秒一百万条消息给目标文件，怎么只是这样简单的结构。我们可以通过下图来做更深入的了解
 
-![实验楼](https://upload-images.jianshu.io/upload_images/1662509-0dfa358aa5c047c8?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/1662509-0dfa358aa5c047c8?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 （图片来源于[http://www.rsyslog.com/doc/queues_analogy.html](http://www.rsyslog.com/doc/queues_analogy.html)）
 

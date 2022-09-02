@@ -1,0 +1,15 @@
+## Adminer
+
+Adminer - Database management in a single PHP file
+https://www.adminer.org/en/
+
+Adminer (原名 phpMinAdmin)是一个用 PHP 编写的全功能数据库管理工具。与 phpMyAdmin 相反，它由一个可以部署到目标服务器的文件组成。可用于 MySQL，MariaDB，PostgreSQL，SQLite，MS SQL，Oracle，Firebird，SimpleDB，Elasticsearch 和 MongoDB。
+
+用 Adminer 替换 phpMyAdmin，你会得到一个更整洁的用户界面，对 MySQL 特性的更好支持，更高的性能和更高的安全性。
+
+**使用方法**
+将该 php 页面挂载到 nginx 或 apache 服务器中，通过浏览器直接访问即可。
+
+## Adminer Editor
+
+Adminer 编辑器是一个易于使用和用户友好的数据库数据编辑工具编写在 PHP。它适合于普通用户，因为它提供高级数据操作。
