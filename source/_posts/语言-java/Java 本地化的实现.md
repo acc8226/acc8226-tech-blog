@@ -46,7 +46,7 @@ System.out.println("NUM:"+fro3); //俄语
 
 自定义名字__语言代码.properties
 
-在MessagesBundle文件中写入 对应 message 的内容示例
+在 MessagesBundle 文件中写入 对应 message 的内容示例
 
 ```properties
 message=\u65E9\u4E0A\u597D

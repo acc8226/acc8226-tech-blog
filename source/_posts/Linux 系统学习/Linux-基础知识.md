@@ -19,9 +19,9 @@
 3. 第三列则表示当前伪终端的启动时间。
 
 **who 命令其它常用参数**
-参数	说明
+参数 说明
 
-```
+```text
 -a	打印能打印的全部
 -d	打印死掉的进程
 -m	同 who am i 或者 who mom likes
@@ -34,10 +34,9 @@
 
 创建用户 sudo adduser zhangsan
 设置密码 sudo passwd 123456
-查看用户的所在用户组 groups gp123 
+查看用户的所在用户组 groups gp123
 
 > 其中冒号之前表示用户，后面表示该用户所属的用户组。这里可以看到 shiyanlou 用户属于 shiyanlou 用户组，每次新建用户如果不指定用户组的话，默认会自动创建一个与用户名相同的用户组（差不多就相当于家长的意思）。
-
 > 默认情况下新创建的用户是不具有 root 权限的，也不在 sudo 用户组，可以让其加入 sudo 用户组从而获取 root 权限
 
 使得该用户获得 root 组权限
@@ -49,7 +48,7 @@ sudo usermod -G sudo zhangsan
 删除用户和用户组
 
 ```sh
-$ sudo deluser likai --remove-home
+sudo deluser likai --remove-home
 ```
 
 注：使用 --remove-home 参数在删除用户时候会一并将该用户的工作目录一并删除。如果不使用那么系统会自动在 /home 目录为该用户保留工作目录。
@@ -103,4 +102,4 @@ adduser 在创建用户的同时，会创建工作目录和密码（提示你设
 ## 参考
 
 Linux 基础入门（新版）_Linux - 实验楼
-https://www.shiyanlou.com/courses/1
+<https://www.shiyanlou.com/courses/1>

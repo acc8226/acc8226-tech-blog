@@ -10,8 +10,8 @@
 
 根据图中所显示的日志，我们可以根据服务对象粗略的将日志分为两类
 
-*   系统日志
-*   应用日志
+* 系统日志
+* 应用日志
 
 系统日志主要是存放系统内置程序或系统内核之类的日志信息如 `alternatives.log` 、`btmp` 等等，应用日志主要是我们装的第三方应用所产生的日志如 `tomcat7` 、`apache2`等等。
 
@@ -296,7 +296,7 @@ logrotate 程序是一个日志文件管理工具。用来把旧的日志文件�
 
 显而易见，logrotate 是基于 CRON 来运行的，其脚本是 /etc/cron.daily/logrotate；同时我们可以在 `/etc/logrotate` 中找到其配置文件
 
-```
+```sh
 cat /etc/logrotate.conf
 ```
 
@@ -304,7 +304,7 @@ cat /etc/logrotate.conf
 
 这其中的具体意思是什么呢？
 
-```
+```sh
 # see "man logrotate" for details  //可以查看帮助文档
 # rotate log files weekly
 weekly                             //设置每周转储一次(daily、weekly、monthly当然可以使用这些参数每天、星期，月 )

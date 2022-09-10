@@ -183,6 +183,7 @@ List<Person> list = new ArrayList<>();
 ### 分割数据块
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-c664e40483b9b188.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ```java
 Map<Boolean, List<Integer>> map = Stream.of(1, 2, 3, 4)
             .collect(Collectors.partitioningBy(item -> item > 2));
@@ -198,18 +199,17 @@ Map<Boolean, List<Integer>> map = Stream.of(1, 2, 3, 4)
 数据分组是一种更自然的分割数据操作， 与将数据分成true和false两部分不同，可以使用任意值对数据分组。
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-f9578dc1fa528b23.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 groupingBy是都集合进行分组，分组之后的结果形如Map<key,List>。其中，key是进行分组的字段类型，比如按Ussr类中的type（用户类型：1、2、3、4）进行分组，type的类型为Integer，分组之后的Map的key类型就是Integer。并且最多会分成四组，所以最后的结果即Map<Integer,List>。
 假设我们想用户类型为1的集合，首先先进行分组，如：
-`Map<Integer,List<User>> userMap = allUserList.parallelStream().collect(Collectors.groupingBy(User::getType));
-`
+`Map<Integer,List<User>> userMap = allUserList.parallelStream().collect(Collectors.groupingBy(User::getType));`
 
-接下来直接从Map中get(1)即可，如：
-`List<User> userList  =  userMap.get(1);`
+接下来直接从Map中get(1)即可，如：`List<User> userList  =  userMap.get(1);`
 
-> groupingBy与partitioningBy之间的坑
+> groupingBy 与 partitioningBy 之间的坑
 >
-> 1.必须要提的一点是：在进行get时，groupingBy分组若key不存在则返回null，partitioningBy则会返回空数组，groupingBy分组注意判空。
-2.stream处理集合的效率并不一定比迭代器高，如果不要求顺序可以使用parallelStream进行并行流的处理。
+> 1.必须要提的一点是：在进行 get 时，groupingBy 分组若 key 不存在则返回 null，partitioningBy 则会返回空数组，groupingBy 分组注意判空。
+2. stream 处理集合的效率并不一定比迭代器高，如果不要求顺序可以使用parallelStream进行并行流的处理。
 
 ### 字符串
 
@@ -226,28 +226,54 @@ System.out.println("strJoin: " + strJoin);
 TODO阅读+理解：Java8中使用stream进行分组统计和普通实现的分组统计的性能对比_冯立彬的博客-CSDN博客_java stream 分组统计
 <https://blog.csdn.net/fenglibing/article/details/80238310>
 
+### Java8中流API Peek()
+
+流由三部分组成：数据源、零个或多个中间操作以及零个或一个终端操作。
+
+peek() 是一个中间操作，由于是惰性，所以如果没有对管道应用终端操作则不会执行。
+
+peek() 的 Javadoc 页面说：“这个方法的存在主要是为了支持调试，如果希望在元素流过管道中的某个点时看到它们的值”。
+最重要的是， peek() 在另一种情况下很有用：想要改变元素的内部状态时。 例如，假设想在打印之前将所有用户名转换为小写。
+
+举例
+
+```java
+@Test
+public void test3(){
+    List<String> collect = Stream.of("one", "two", "three", "four")
+            .filter(e -> e.length() > 3)
+            .peek(e -> System.out.println("过滤值: " + e))
+            .map(String::toUpperCase)
+            .peek(e -> System.out.println("映射值: " + e))
+            .collect(Collectors.toList());
+    System.out.println(collect);
+}
+```
+
 ## 遇到过的问题
 
-## Java8 流处理过程进行toMap规约处理时的java.util.stream.Collectors.lambda$throwingMerger$0(Collectors.java:133)异常
+## Java8 流处理过程进行 toMap 规约处理时的 java.util.stream.Collectors.lambda$throwingMerger$0(Collectors.java:133) 异常
 
 解决方法：规约处理时进行冲突兼容处理，即出现冲突时进行取值选择
 
-冲突处理选择方法，在toMap(key, value, (v1,v2) -> v1)中添加冲突时选值参数“（v1, v2）-> v1”表示出现key冲突时取第一次出现的key的值,，“（v1, v2）-> v2”表示出现key冲突时取最后一次出现的key的值，在实际中根据自己的实际情况取值。
+冲突处理选择方法，在 toMap(key, value, (v1,v2) -> v1)中添加冲突时选值参数“（v1, v2）-> v1”表示出现 key 冲突时取第一次出现的 key 的值,，“（v1, v2）-> v2” 表示出现 key 冲突时取最后一次出现的 key 的值，在实际中根据自己的实际情况取值。
 
 ```java
-Map<String, Integer> nameAgeMap = employList.stream().collect(Collectors.toMap(Employee :: getName, Employee :: getAge, (v1, v2) -> v1));
+Map<String, Integer> nameAgeMap = employList
+  .stream()
+  .collect(Collectors.toMap(Employee :: getName, Employee :: getAge, (v1, v2) -> v1));
 ```
 
 ## 参考
 
-JDK1.8新特性(三): 方法引用 ::和Optional
+JDK1.8新特性(三): 方法引用 ::和 Optional
 <https://blog.csdn.net/vbirdbest/article/details/80207673>
 
 <https://blog.csdn.net/IO_Field/article/details/54971761>
-Java 8系列之Stream的基本语法详解
+Java 8 系列之 Stream的基本语法详解
 
-Java8新特性Stream使用心得之：groupingBy与partitioningBy_G_axis的博客-CSDN博客
+Java8 新特性 Stream 使用心得之：groupingBy 与 partitioningBy_G_axis 的博客-CSDN博客
 <https://blog.csdn.net/V_Axis/article/details/86095053>
 
-这可能是史上最好的 Java8 新特性 Stream 流教程 - osc_bnuaa5jy的个人空间 - OSCHINA
+这可能是史上最好的 Java8 新特性 Stream 流教程 - osc_bnuaa5jy 的个人空间 - OSCHINA
 <https://my.oschina.net/u/4271175/blog/3265285>
