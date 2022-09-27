@@ -1,6 +1,6 @@
 ---
 title: 安卓-topic 通知 Toast
-date: 2017.02.22 19:37:46
+date: 2017-02-22 19:37:46
 categories:
   - 安卓
   - 官方抄录
@@ -10,7 +10,7 @@ tags:
 
 <http://developer.android.youdaxue.com/guide/topics/ui/notifiers/toasts.html#Positioning>
 
-### 创建自定义Toast View
+### 创建自定义 Toast View
 
 To create a custom layout, define a View layout, in XML or in your application code, and pass the root [View](http://developer.android.youdaxue.com/reference/android/view/View.html) object to the [setView(View)](http://developer.android.youdaxue.com/reference/android/widget/Toast.html#setView(android.view.View)) method.
 For example, you can create the layout for the toast visible in the screenshot to the right with the following XML (saved as *layout/custom_toast.xml*):

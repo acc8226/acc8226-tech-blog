@@ -32,10 +32,10 @@ RecyclerView 的 item layout 以 module_recycle_item 开头
 GridView 的行 layout 以 module_grid_item 开头
 ```
 
-3. 【推荐】 drawable 资源名称以小写单词+下划线的方式命名，根据分辨率不同存放在不同的 drawable 目录下，建议只使用一套,例如 drawable-xhdpi。采用规则如下: **`模块名_业务功能描述_控件描述_控件状态限定词`**
+3\. 【推荐】 drawable 资源名称以小写单词+下划线的方式命名，根据分辨率不同存放在不同的 drawable 目录下，建议只使用一套,例如 drawable-xhdpi。采用规则如下: **`模块名_业务功能描述_控件描述_控件状态限定词`**
 如：`module_login_btn_pressed,module_tabs_icon_home_normal`
 
-4. 【推荐】anim 资源名称以小写单词+下划线的方式命名，采用以下规则：**`模块名_逻辑名称_[方向|序号]`**
+4\. 【推荐】anim 资源名称以小写单词+下划线的方式命名，采用以下规则：**`模块名_逻辑名称_[方向|序号]`**
 * tween 动 画 资 源 ： 尽 可 能 以 通 用 的 动 画 名 称 命 名 ， 如 module_fade_in, module_fade_out, module_push_down_in (动画+方向)；
 * frame 动画资源：尽可能以模 块+功能命名+序号。
 如：module_loading_grey_001
@@ -128,20 +128,20 @@ intent.setAction("com.great.activity_intent.Intent_Demo1_Result3");
 
 6. 【强制】避免使用隐式 Intent 广播敏感信息，信息可能被其他注册了对应BroadcastReceiver 的 App 接收。
 
-7. 【 推 荐 】 添 加 Fragment 时 ， 确 保 FragmentTransaction#commit() 在Activity#onPostResume()或者 FragmentActivity#onResumeFragments()内调用。不要随意使用 FragmentTransaction#commitAllowingStateLoss()来代替，任何commitAllowingStateLoss()的使用必须经过 code review，确保无负面影响。
+7\. 【 推 荐 】 添 加 Fragment 时 ， 确 保 FragmentTransaction#commit() 在Activity#onPostResume()或者 FragmentActivity#onResumeFragments()内调用。不要随意使用 FragmentTransaction#commitAllowingStateLoss()来代替，任何commitAllowingStateLoss()的使用必须经过 code review，确保无负面影响。
 
-8. 【推荐】不要在 Activity#onDestroy()内执行释放资源的工作，例如一些工作线程的销毁和停止，因为 onDestroy()执行的时机可能较晚。可根据实际需要，在
+8\. 【推荐】不要在 Activity#onDestroy()内执行释放资源的工作，例如一些工作线程的销毁和停止，因为 onDestroy()执行的时机可能较晚。可根据实际需要，在
 Activity#onPause()/onStop()中结合 isFinishing()的判断来执行。
 
-9. 【推荐】如非必须，避免使用嵌套的 Fragment。
+9\. 【推荐】如非必须，避免使用嵌套的 Fragment。
 
-10. 【推荐】总是使用显式 Intent 启动或者绑定 Service，且不要为服务声明 Intent Filter，保证应用的安全性。如果确实需要使用隐式调用，则可为 Service 提供 Intent Filter并从 Intent 中排除相应的组件名称，但必须搭配使用 Intent#setPackage()方法设置Intent 的指定包名，这样可以充分消除目标服务的不确定性。
+10\. 【推荐】总是使用显式 Intent 启动或者绑定 Service，且不要为服务声明 Intent Filter，保证应用的安全性。如果确实需要使用隐式调用，则可为 Service 提供 Intent Filter并从 Intent 中排除相应的组件名称，但必须搭配使用 Intent#setPackage()方法设置Intent 的指定包名，这样可以充分消除目标服务的不确定性。
 
 11.【推荐】Service 需要以多线程来并发处理多个启动请求，建议使用 IntentService，可避免各种复杂的设置。
 
 12.【推荐】对于只用于应用内的广播，优先使用 LocalBroadcastManager 来进行注册和发送，LocalBroadcastManager 安全性更好，同时拥有更高的运行效率。
 
-13. 【推荐】当前Activity的onPause方法执行结束后才会执行下一个Activity的onCreate方法，所以在 onPause 方法中不适合做耗时较长的工作，这会影响到页面之间的跳转效率。
+13\. 【推荐】当前Activity的onPause方法执行结束后才会执行下一个Activity的onCreate方法，所以在 onPause 方法中不适合做耗时较长的工作，这会影响到页面之间的跳转效率。
 
 14.【强制】不要在 Android 的 Application 对象中缓存数据。基础组件之间的数据共享请使用 Intent 等机制，也可使用 SharedPreferences 等数据持久化机制。
 
@@ -149,7 +149,7 @@ Activity#onPause()/onStop()中结合 isFinishing()的判断来执行。
 
 16.【强制】使用 Adapter 的时候，如果你使用了 ViewHolder 做缓存，在 getView()的方法中无论这项 convertView 的每个子控件是否需要设置属性(比如某个 TextView设置的文本可能为 null，某个按钮的背景色为透明，某控件的颜色为透明等)，都需要为其显式设置属性(Textview 的文本为空也需要设置 setText("")，背景透明也需要设置)，否则在滑动的过程中，因为 adapter item 复用的原因，会出现内容的显示错乱。
 
-17. 【强制】Activity或者Fragment中动态注册BroadCastReceiver时，registerReceiver()和 unregisterReceiver()要成对出现。
+17\. 【强制】Activity 或者 Fragment 中动态注册 BroadCastReceiver 时，registerReceiver()和 unregisterReceiver()要成对出现。
 
 ## UI 与布局
 
@@ -183,7 +183,7 @@ public void showPromptDialog(String text){
     3. 通过修改 canvas 位置并且调用 invalidate(int l, int t, int r, int b)等方式限定刷新区域；
     4. 通过设置一个是否允许 requestLayout 的变量，然后重写控件的 requestlayout、onSizeChanged 方法 ， 判 断 控 件 的大小 没 有 改 变 的 情况下 ， 当 进 入requestLayout 的时候，直接返回而不调用 super 的 requestLayout 方法。
 
-9. 【推荐】不能在 Activity 没有完全显示时显示 PopupWindow 和 Dialog。
+9\. 【推荐】不能在 Activity 没有完全显示时显示 PopupWindow 和 Dialog。
 
 10.【推荐】尽量不要使用 AnimationDrawable，它在初始化的时候就将所有图片加载到内存中，特别占内存，并且还不能释放，释放之后下次进入再次加载时会报错。
 
@@ -272,11 +272,11 @@ https://stackoverflow.com/questions/5474923/onanimationend-is-not-getting-called
 
 ## 安全
 
-1. 【强制】使用 PendingIntent 时，禁止使用空 intent，同时禁止使用隐式 Intent。
+1\. 【强制】使用 PendingIntent 时，禁止使用空 intent，同时禁止使用隐式 Intent。
 
-2. 【强制】禁止使用常量初始化矢量参数构建 IvParameterSpec，建议 IV 通过随机方式产生。
+2\. 【强制】禁止使用常量初始化矢量参数构建 IvParameterSpec，建议 IV 通过随机方式产生。
 
-3. 【强制】将 android:allowbackup 属性设置为 false，防止 adb backup 导出数据。
+3\. 【强制】将 android:allowbackup 属性设置为 false，防止 adb backup 导出数据。
 > 说明：
 在 AndroidManifest.xml 文件中为了方便对程序数据的备份和恢复在 Android APIlevel 8 以后增加了 android:allowBackup 属性值。默认情况下这个属性值为 true,故当 allowBackup 标志值为 true 时，即可通过 adb backup 和 adb restore 来备份和恢
 复应用程序数据。

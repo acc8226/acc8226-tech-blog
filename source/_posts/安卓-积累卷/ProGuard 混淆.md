@@ -20,9 +20,9 @@ ProGuard 技术的功能概括为以下 4 项：
 （1） ProGuard 配置
 -include{filename}：从给定的文件中读取配置参数。
 -basedirectory{directoryname}：指定基础目录为以后对应的档案名称。
--injars{class_path}：指定要处理的应用程序jar、war、ear和目录。
--outjars{class_path}：指定处理完后要输出的jar、war、ear和目录的名称。
--libraryjars{classpath}：指定要处理的应用程序jar、war、ear和目录所需的程序库文件。
+-injars{class_path}：指定要处理的应用程序 jar、war、ear 和目录。
+-outjars{class_path}：指定处理完后要输出的 jar、war、ear 和目录的名称。
+-libraryjars{classpath}：指定要处理的应用程序 jar、war、ear 和目录所需的程序库文件。
 -dontskipnonpubliclibraryclasses：不忽略对非公开类的处理，默认是跳过
 -dontskipnonpubliclibraryclassmembers：不忽略对非公开类的类库的成员
 
@@ -179,7 +179,7 @@ ProGuard 技术的功能概括为以下 4 项：
 -keepclassmembers class * implements java.io.Serializable {
     static final long serialVersionUID;
     private static final java.io.ObjectStreamField[] serialPersistentFields;
-	!static !transient <fields>;
+    !static !transient <fields>;
     private void writeObject(java.io.ObjectOutputStream);
     private void readObject(java.io.ObjectInputStream);
     java.lang.Object writeReplace();
@@ -308,11 +308,11 @@ ProGuard 技术的功能概括为以下 4 项：
 
 ## 参考
 
-Android优雅的进行混淆——使用@Keep注解 重要 - CSDN博客
+Android 优雅的进行混淆——使用 @Keep 注解 重要 - CSDN 博客
 <https://blog.csdn.net/u011904605/article/details/78736010>
 
-ProGuard代码混淆详细攻略 - CSDN博客
+ProGuard 代码混淆详细攻略 - CSDN 博客
 <https://blog.csdn.net/shensky711/article/details/52770993>
 
-用ant实现自动打包android（二） -- android代码混淆 - CSDN博客
+用 ant 实现自动打包 android（二） -- android 代码混淆 - CSDN博客
 <https://blog.csdn.net/droid_zhlu/article/details/11849913>
