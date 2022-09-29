@@ -122,7 +122,7 @@ date: 2013/7/13 20:46:25
 ---
 ```
 
-目前此种写法 typora，gitlab，GitHub，gitee 都有支持。
+目前此种写法 typora，gitlab，GitHub，gitee 都支持。
 
 ## markdown 客户端选择
 

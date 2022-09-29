@@ -1,6 +1,6 @@
 ---
 title: Windows 批处理脚本简介
-date: 2022.04.05 14:41:50
+date: 2022-04-05 14:41:50
 categories: 脚本文件
 tags:
 - bat

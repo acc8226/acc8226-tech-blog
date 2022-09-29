@@ -1,4 +1,4 @@
-上一章我们已经介绍了Gradle脚本的基础，在其中我们也强调了Gradle中最要的Projects和Tasks这两个概念，尤其是Tasks，我们的所有Gradle的构建工作都是由Tasks组合完成的，那么这一章我们就详细的介绍下Tasks--任务。
+上一章我们已经介绍了 Gradle 脚本的基础，在其中我们也强调了 Gradle 中最要的 Projects 和 Tasks这两个概念，尤其是Tasks，我们的所有 Gradle 的构建工作都是由 Tasks 组合完成的，那么这一章我们就详细的介绍下 Tasks--任务。
 任务的介绍也是从实用性出发，比如如何多种方式创建任务，如果访问任务的方法和属性等信息，如果对任务进行分组、排序，以及任务的一些规则性知识。
 
 第一种是直接以一个任务名字创建任务的方式：
@@ -36,13 +36,13 @@ Project中还有一种名字 + Map 参数 + 闭包的的方式，和上面演示
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-07e5eadb7d9e62c9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-**tasks是Project对象的属性**，其类型是TaskContainer，我们可以使用它来直接创建任务。对于关于 TaskContainer 其他几种创建方式和前面演示的 Project 的 task 方法基本上一样，就不一一写示例了，大家可以参考上面的练习写一下。
+**tasks 是 Project 对象的属性**，其类型是TaskContainer，我们可以使用它来直接创建任务。对于关于 TaskContainer 其他几种创建方式和前面演示的 Project 的 task 方法基本上一样，就不一一写示例了，大家可以参考上面的练习写一下。
 
 ### 4.2 多种方式访问任务
 
 首先呢，我们创建的任务都会作为项目(Project)的一个属性，属性名就是任务名，所以我们可以直接通过该任务名访问和操纵该任务：
 
-通过索引访问的时候，任务名就是我们Key（关键索引），其实这里说 key 不恰当，因为t asks 并不是一个 Map，这里再顺便扩展下Groovy的知识，[]在Groovy中是一个操作符，我们知道Groovy的操作符都有对应的方法让我们重载，a[b]对应的是 a.getAt(b)这个方法.
+通过索引访问的时候，任务名就是我们Key（关键索引），其实这里说 key 不恰当，因为t asks 并不是一个 Map，这里再顺便扩展下 Groovy 的知识，[]在Groovy中是一个操作符，我们知道Groovy的操作符都有对应的方法让我们重载，a[b]对应的是 a.getAt(b)这个方法.
 
 ```gradle
 //直接通过该任务名访问和操纵该任务

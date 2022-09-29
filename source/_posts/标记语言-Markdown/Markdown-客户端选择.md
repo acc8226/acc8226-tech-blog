@@ -40,7 +40,7 @@ tags: Markdown
 解决：
 按 Windows + R 打开运行窗口，输入 regedit，点确定
 打开注册表，依次展开计算机\HKEY_CURRENT_USER\Software\Typora
-然后在Typora上右键，点权限，选中Administrtors，把权限全部设置为拒绝
+然后在 Typora 上右键，点权限，选中 Administrtors，把权限全部设置为拒绝
 
 ## 参考
 

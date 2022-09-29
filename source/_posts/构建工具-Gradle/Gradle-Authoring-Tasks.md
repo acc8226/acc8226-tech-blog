@@ -5,10 +5,12 @@
 当 Gradle 执行一个任务时，它可以通过控制台 UI 和 toolingapi 将任务标记为不同的结果。 这些标签基于任务是否有要执行的操作，是否应该执行这些操作，是否确实执行了这些操作，以及这些操作是否做了任何更改。
 
 ## [Defining tasks 定义任务](https://docs.gradle.org/6.3/userguide/more_about_tasks.html#sec:defining_tasks)
+
 在本章中，我们已经看到了如何使用任务名称的字符串来定义任务。 这种风格有一些变化，您可能需要在某些情况下使用。
 
 1. 使用任务名的字符串定义任务
-```
+
+```groovy
 task('hello') {
     doLast {
         println "hello"
@@ -21,7 +23,7 @@ task('copy', type: Copy) {
 }
 ```
 
-2. 使用 tasks 
+2. 使用 tasks
 ```
 tasks.create('hello') {
     doLast {
@@ -456,7 +458,7 @@ taskX.finalizedBy taskY
 
 ## [Lifecycle tasks 生命周期任务](https://docs.gradle.org/6.3/userguide/more_about_tasks.html#sec:lifecycle_tasks)
 
-生命周期任务是本身不做工作的任务。 它们通常没有任何任务操作。 
+生命周期任务是本身不做工作的任务。 它们通常没有任何任务操作。
 
 Base Plugin 定义了几个标准的生命周期任务，比如构建、组装和检查。 所有的核心语言插件，比如 Java 插件，都应用基础插件，因此具有相同的生命周期任务的基础集。
 

@@ -1,4 +1,4 @@
-Android Gradle 为我们提供了大量的 DSL，我们使用这些 DSL 定义配置我们的工程以满足我们项目中不同的需求。这些DSL有很多，在上一章演示Android Gradle工程示例的时候，我们已经大概介绍了compileSdkVersion、buildToolsVersion以及defaultConfig等，这一章我们再详细介绍一些常用的 DSL 配置，这些配有有签名信息、构建类型、代码混淆、zipAlign 对齐压缩等。
+Android Gradle 为我们提供了大量的 DSL，我们使用这些 DSL 定义配置我们的工程以满足我们项目中不同的需求。这些DSL有很多，在上一章演示 Android Gradle 工程示例的时候，我们已经大概介绍了 compileSdkVersion、buildToolsVersion以及 defaultConfig 等，这一章我们再详细介绍一些常用的 DSL 配置，这些配有有签名信息、构建类型、代码混淆、zipAlign 对齐压缩等。
 
 ### 8.1 defaultConfig 默认配置
 
@@ -12,7 +12,7 @@ defaultConfig 是 android 对象中的一个配置块，负责定义所有的默
 
 ##### 8.1.1 applicationId
 
-applicationId是ProductFlavor的一个属性，用于指定生成的App的包名，默认情况下是null，这时候在构建的时候，会从我们的AndroidManifest.xml文件中读取，也就是我们在AndroidManifest.xml文件中配置的manifest标签的package属性值。
+applicationId 是 ProductFlavor 的一个属性，用于指定生成的 App 的包名，默认情况下是 null，这时候在构建的时候，会从我们的AndroidManifest.xml文件中读取，也就是我们在 AndroidManifest.xml 文件中配置的 manifest 标签的package属性值。
 
 ##### 8.1.2 minSdkVersion
 
@@ -28,7 +28,7 @@ public void minSdkVersion(int minSdkVersion) {
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-c33e197b95acc51f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-根据我们前面讲的Gradle知识，发现minSdkVersion也是一个属性，它也可以接受一个字符串作为它的值，在这里明确一下，这个字符串不是我们SDK API LEVEL的字符串形式，而是Code Name，也就是我们的每个Android SDK或者说是Android OS的代号。就是我们新闻上经常见到的什么‘冰激凌三明治’什么的。这里给出一个列表，让大家一目了然。
+根据我们前面讲的 Gradle 知识，发现 minSdkVersion 也是一个属性，它也可以接受一个字符串作为它的值，在这里明确一下，这个字符串不是我们 SDK API LEVEL 的字符串形式，而是 Code Name，也就是我们的每个Android SDK或者说是Android OS 的代号。就是我们新闻上经常见到的什么‘冰激凌三明治’什么的。这里给出一个列表，让大家一目了然。
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-f1f03c83100f5d33.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -57,7 +57,7 @@ public class DefaultProductFlavor extends BaseConfigImpl implements ProductFlavo
 
 ###### 8.1.5 versionName
 
-versionName 和 versionCode 类似，也是ProductFlavor一个属性，用于配置Android App的版本名称，比如V1.0.0等等，主要显示用，让用户或者市场知道我们的Android App版本，它和versionCode一个是外部用，一个是内部使用，一起配合完成Android App的版本控制，其方法原型是
+versionName 和 versionCode 类似，也是ProductFlavor一个属性，用于配置 Android App 的版本名称，比如 V1.0.0 等等，主要显示用，让用户或者市场知道我们的 Android App 版本，它和 versionCode 一个是外部用，一个是内部使用，一起配合完成 Android App 的版本控制，其方法原型是
 
 ```java
 public ProductFlavor setVersionName(String versionName) {
@@ -87,7 +87,7 @@ public String getVersionName() {
 
 ##### 8.1.7 testInstrumentationRunner
 
-用于配置单元测试时使用的 Runner，默认使用的是android.test.InstrumentationTestRunner，如果你想使用自己自定义的 Runner，修改这个值即可，它也是一个属性，其方法原型是
+用于配置单元测试时使用的 Runner，默认使用的是 android.test.InstrumentationTestRunner，如果你想使用自己自定义的 Runner，修改这个值即可，它也是一个属性，其方法原型是
 
 ```java
 public ProductFlavor setTestInstrumentationRunner(String testInstrumentationRunner) {
@@ -102,7 +102,7 @@ public String getTestInstrumentationRunner() {
 
 ##### 8.1.8 signingConfig
 
-配置默认的签名信息，用对生成的App签名，它是一个SigningConfig，也是ProductFlavor的一个属性，可以直接对其进行配置，其方法原型是
+配置默认的签名信息，用对生成的 App 签名，它是一个 SigningConfig，也是 ProductFlavor 的一个属性，可以直接对其进行配置，其方法原型是
 
 ``` java
     public SigningConfig getSigningConfig() {
@@ -117,7 +117,7 @@ public String getTestInstrumentationRunner() {
 
 ##### 8.1.9 proguardFile
 
-用于配置App ProGuard混淆所使用的ProGuard配置文件，它是ProductFlavor的一个方法，接受一个文件作为参数。其方法原型为
+用于配置 App ProGuard 混淆所使用的 ProGuard 配置文件，它是ProductFlavor的一个方法，接受一个文件作为参数。其方法原型为
 
 ```java
     public void proguardFile(Object proguardFile) {
@@ -131,7 +131,7 @@ public String getTestInstrumentationRunner() {
 
 这个也是配置ProGuard配置文件，只不过它可以同时接受多个配置文件，因为它的参数是一个可变类型的参数。
 
-```
+```java
     public void proguardFiles(Object... files) {
         Object[] var2 = files;
         int var3 = files.length;
@@ -147,10 +147,10 @@ public String getTestInstrumentationRunner() {
 
 ### 8.2 配置签名信息
 
-一个App只有被签名之后才能被发布、安装、使用，签名是保护App的方式，标记该App的唯一性，如果App被恶意篡改，签名就不一样了，就无法升级安装，一定程度上也保护了我们的App。
+一个 App 只有被签名之后才能被发布、安装、使用，签名是保护 App 的方式，标记该App的唯一性，如果 App 被恶意篡改，签名就不一样了，就无法升级安装，一定程度上也保护了我们的App。
 
 要对App进行签名，你先得有一个签名证书文件，这个文件被开发者持有，我们这里假设你已经有生成的证书，不对证书的生成进行介绍了。
-一般我们的App有debug和release两种模式（下面会将构建类型），在我们开发调试的时候使用的是debug模式，发布的时候使用release模式；我们可以针对这两种模式采用不同的签名方式，一般debug模式的时候，Android SDK已经为我们提供了一个默认的debug签名证书，我们可以直接使用，但是发布的时候，release模式构建时，我们要配置使用自己生成的签名证书。
+一般我们的App有debug和release两种模式（下面会将构建类型），在我们开发调试的时候使用的是 debug 模式，发布的时候使用release模式；我们可以针对这两种模式采用不同的签名方式，一般 debug 模式的时候，Android SDK 已经为我们提供了一个默认的debug签名证书，我们可以直接使用，但是发布的时候，release 模式构建时，我们要配置使用自己生成的签名证书。
 
 对于签名信息的配置，Android Gradle为我们提供了非常简便的方式，让我们可以非常容易的配置一个签名信息以供调用。
 
@@ -168,7 +168,7 @@ Android Gradle为我们提供了signingConfigs{}配置块便于我们生成多�
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-46105b6a8c0d6ff3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-默认情况下，debug模式的签名已经被配置好了，使用的就是Android SDK自动生成的debug证书，它一般位于$HOME/.android/debug.keystore，其Key和密码都是已知的，一般情况下我们不需要单独配置debug模式的签名信息。
+默认情况下，debug模式的签名已经被配置好了，使用的就是 Android SDK 自动生成的 debug 证书，它一般位于$HOME/.android/debug.keystore，其Key和密码都是已知的，一般情况下我们不需要单独配置 debug 模式的签名信息。
 
 现在我们配置好了两个签名信息，但是他们还没有被使用，现在只是生成了两个SigningConfig的实例，一个变量名为release，一个为debug，如果要使用他们我们只需引用他们即可，比如在8.1.8节中我们讲配置默认的签名信息，现在我们就可以引用debug的配置信息使用。
 
@@ -202,7 +202,8 @@ applicationIdSuffix是BuildType的一个属性，用于配置**基于默认appli
 ##### 8.3.2 debuggable
 
 debuggable也是BuildType的一个属性，用于配置是否生成一个可供调试的Apk。其值可以为true或者false。其方法原型为
-```
+
+```java
     public BuildType setDebuggable(boolean debuggable) {
         this.mDebuggable = debuggable;
         return this;
@@ -260,7 +261,7 @@ jniDebuggable 和 debuggable 类似，也是BuildType的一个属性，用于配
 
 从实现中看，我们只需传递一个文件名给这个方法，他就会返回tools/proguard 目录下的该文件的绝对路径。
 
-Android SDK默认为我们提供了两个Proguard配置文件，他们分别是proguard-android.txt和proguard-android-optimize.txt，一个是没有优化的，一个是优化的，你可以根据情况自己选择，当然你也可以都不用，全部自己定义，自己定义的时候可以参考Proguard官方网站文档，查看相关配置说明，网址为 http://proguard.sourceforge.net/ 。
+Android SDK默认为我们提供了两个 Proguard 配置文件，他们分别是 proguard-android.txt和proguard-android-optimize.txt，一个是没有优化的，一个是优化的，你可以根据情况自己选择，当然你也可以都不用，全部自己定义，自己定义的时候可以参考 Proguard 官方网站文档，查看相关配置说明，网址为 <http://proguard.sourceforge.net/> 。
 
 除了在BuildType中启用混淆和配置混淆外，我们也可以在defaultConfig中启用和配置，还记得我们前面在8.1章节讲的吧，**因为这个是默认配置，一般用的比较少**。
 
@@ -268,15 +269,15 @@ Android SDK默认为我们提供了两个Proguard配置文件，他们分别是p
 
 ### 8.5 启用 zipalign 优化
 
-zipalign 是 Android 为我们提供的一个整理优化Apk文件的工具，它能提供系统和应用的运行效率，更快的读写 Apk 中的资源，降低内存的使用，所以对于我们要发布的 App，在发布之前**一定要使用zipalign进行优化**。
+zipalign 是 Android 为我们提供的一个整理优化 Apk 文件的工具，它能提供系统和应用的运行效率，更快的读写 Apk 中的资源，降低内存的使用，所以对于我们要发布的 App，在发布之前**一定要使用zipalign进行优化**。
 
-Android Gradle为我们提供了开启zipalign优化更简便的方式，我们只需要配置开启即可，剩下的操作，比如调用SDK目录下的zipalign工具进行处理等，Android Gradle会帮我们搞定。要为我们的 release 模式开启 zipalign 优化的话，只需进行如下配置即可。
+Android Gradle 为我们提供了开启 zipalign 优化更简便的方式，我们只需要配置开启即可，剩下的操作，比如调用SDK目录下的zipalign工具进行处理等，Android Gradle会帮我们搞定。要为我们的 release 模式开启 zipalign 优化的话，只需进行如下配置即可。
 
 zipAlignEnabled是BuildType 的一个属性，接受一个 boolean 类型的值.
 
 ### 8.6 小结
 
-这一章对我们 Android Gradle 常用的 DSL 做了详细的讲解说明，并且尽可能对常用的属性方法配置也进行了详细的说明，同时配有每个属性和方法的源代码实现，让大家对这些配置有个更深的认识。大家可以灵活的使用这些DSL对自己的项目进行自定义构建，以满足自己的项目需求。
+这一章对我们 Android Gradle 常用的 DSL 做了详细的讲解说明，并且尽可能对常用的属性方法配置也进行了详细的说明，同时配有每个属性和方法的源代码实现，让大家对这些配置有个更深的认识。大家可以灵活的使用这些 DSL 对自己的项目进行自定义构建，以满足自己的项目需求。
 
 - - -
 

@@ -1,6 +1,6 @@
 ## 第一个 Gradle 命令
 
-```
+```sh
 gradle -h
 ```
 
