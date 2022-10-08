@@ -28,4 +28,4 @@ $cfg['Servers'][$i]['compress'] = false;
 $cfg['Servers'][$i]['AllowNoPassword'] = false;
 ```
 
-然后就可以像正常访问 mysql 服务一样进行访问即可. 
+然后就可以像正常访问 mysql 服务一样进行访问即可。

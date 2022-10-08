@@ -31,11 +31,11 @@ ProGuard 技术的功能概括为以下 4 项：
 `-keepclassmembers{Modifier}{class_specification}`: **通过成员来指定**来只保护指定**类的某些成员**, 防止被混淆或移除, 注意**类名还是会被混淆**
 `-keepclasswithmembers{class_specification}`: **通过成员来指定**哪些类不被混淆处理。保持**匹配到的类的类名和指定的方法不被混淆**，其他未指定的方法仍然会被混淆
 
-> 和keep选项的区别是，keepclassmembers只保持属性不被混淆，会混淆类名
+> 和 keep 选项的区别是，keepclassmembers 只保持属性不被混淆，会混淆类名
 
-`-keepnames{class_specification}`: 等于-keep, allowshrinking class_specification的别名，允许该类被压缩，**未被使用的元素将会在压缩阶段被移除**，此选项会保持对应的类名和指定的成员不被混淆（未指定的成员依然会被混淆）
+`-keepnames{class_specification}`: 等于-keep, allowshrinking class_specification 的别名，允许该类被压缩，**未被使用的元素将会在压缩阶段被移除**，此选项会保持对应的类名和指定的成员不被混淆（未指定的成员依然会被混淆）
 `-keepclassmembernames{class_specification}`: -keepclasseswithmembers, allowshrinking class_specification的别名，但是未使用的类和成员可能会在压缩阶段被移除
-`-keepclasseswithmembernames {class_specification}`: -keepclasseswithmembers, allowshrinking class_specification的别名，未使用的类和成员可能会在压缩阶段被移除
+`-keepclasseswithmembernames {class_specification}`: -keepclasseswithmembers, allowshrinking class_specification 的别名，未使用的类和成员可能会在压缩阶段被移除
 
 1. 压缩
 -dontshrink: 不压缩输入的类文件
@@ -58,14 +58,14 @@ ProGuard 技术的功能概括为以下 4 项：
 
 ### 执行ProGuard后会生成的文件
 
-1）dump.txt          描述apk文件里的所以类的内部结构
+1）dump.txt          描述 apk 文件里的所以类的内部结构
 2）mapping.txt     列出了原始的和混淆后的类、方法和属性的对应关系
 3）seeds.txt          列出了没有被混淆的类和属性
-4）usage.txt           列出了没有被打到apk文件中的代码
+4）usage.txt           列出了没有被打到 apk 文件中的代码
 
-这些文件置于<project_root>/bin/projuard目录下,如果您使用ant工具；如果使用eclipse，则置于<project_root>/proguard目录下面
+这些文件置于 `<project_root>/bin/projuard` 目录下,如果您使用 ant 工具；如果使用 eclipse，则置于`<project_root>/proguard` 目录下面
 
-### Proguard通配符
+### Proguard 通配符
 
 ```text
 通配符      描述
@@ -77,7 +77,7 @@ ProGuard 技术的功能概括为以下 4 项：
 ***         匹配任意参数类型
 ```
 
-```java
+```sh
 # (android)在优化阶段移除相关方法的调用
 -assumenosideeffects class android.util.Log {
     public static boolean isLoggable(java.lang.String, int);
@@ -101,10 +101,10 @@ ProGuard 技术的功能概括为以下 4 项：
 # 指定不去忽略非公共的库的类的成员
 -dontskipnonpubliclibraryclassmembers
 
-# Android不需要预校验preverify, proguard的4个步骤之一, 去掉这一步可加快混淆速度
+# Android 不需要预校验 preverify, proguard 的4个步骤之一, 去掉这一步可加快混淆速度
 -dontpreverify
 
-# 有了verbose这句话，混淆后就会生成映射文件
+# 有了 verbose 这句话，混淆后就会生成映射文件
 -verbose
 # 包含有类名->混淆后类名的前后映射关系, 然后使用printmapping指定映射文件的名称
 -printmapping proguardMapping.txt
@@ -134,7 +134,7 @@ ProGuard 技术的功能概括为以下 4 项：
 -keepclasseswithmembernames class * {
     native <methods>;}
 
-# 保留了继承自Activity、Application这些类的子类
+# 保留了继承自 Activity、Application 这些类的子类
 # 因为这些子类都有可能被外部调用
 # 比如说，第一行就保证了所有Activity的子类不要被混淆
 -keep public class * extends android.app.Activity
@@ -153,8 +153,8 @@ ProGuard 技术的功能概括为以下 4 项：
 # 如果有引用android-support-v4.jar包，可以添加下面这行
 # -keep public class com.tuniu.app.ui.fragment.** {*;}
 
-# 保留在Activity中的方法参数是view的方法，
-# 从而我们在layout里面编写onClick就不会被影响
+# 保留在 Activity 中的方法参数是view的方法，
+# 从而我们在 layout 里面编写 onClick 就不会被影响
 -keepclassmembers class * extends android.app.Activity {
     public void *(android.view.View);}
 
@@ -171,11 +171,11 @@ ProGuard 技术的功能概括为以下 4 项：
     public <init>(android.content.Context, android.util.AttributeSet);
     public <init>(android.content.Context, android.util.AttributeSet, int);}
 
-# 保留Parcelable序列化的类不被混淆
+# 保留 Parcelable 序列化的类不被混淆
 -keep class * implements android.os.Parcelable {
     public static final android.os.Parcelable$Creator *;}
 
-# 保留Serializable序列化的类不被混淆
+# 保留 Serializable 序列化的类不被混淆
 -keepclassmembers class * implements java.io.Serializable {
     static final long serialVersionUID;
     private static final java.io.ObjectStreamField[] serialPersistentFields;
@@ -246,8 +246,8 @@ ProGuard 技术的功能概括为以下 4 项：
 # 将相应的类或者方法的名称进行保留而不被混淆。
 # 做混淆的开发人员，应该对代码比较熟悉，以确保万无一失。
 
-# 对于自定义View的解决方案
-# 凡是在layout目录下的xml布局文件中配置的自定义View，都不能进行混淆。
+# 对于自定义 View 的解决方案
+# 凡是在 layout 目录下的 xml 布局文件中配置的自定义View，都不能进行混淆。
 
 # 针对第三方jar包的解决方案
 # 一般而言，这些SDK都是经过ProGuard混淆了的。
@@ -261,7 +261,7 @@ ProGuard 技术的功能概括为以下 4 项：
 -keep public class * extends android.support.v4.**
 -keep public class * extends android.app.Fragment
 
-# 其他的第三方jar包的解决方案这个就要取决于第三方jar包的混淆策略了
+# 其他的第三方 jar 包的解决方案这个就要取决于第三方jar 包的混淆策略了
 # -libraryjars libs/alipaysdk.jar
 # -dontwarn com.alipay.android.app.**
 # -keep public class com.alipay.** { *; }
@@ -271,7 +271,7 @@ ProGuard 技术的功能概括为以下 4 项：
 -keep class com.google.** {*;}
 
 
-#xstream
+# xstream
 -dontwarn com.thoughtworks.xstream.**
 -keep class com.thoughtworks.xstream.** {*;}
 

@@ -1,6 +1,6 @@
 ---
 title: 单平台-Mac iTerm2 终端+Oh-my-zsh
-date: 2019.12.22 13:28:02
+date: 2019-12-22 13:28:02
 categories:
   - 收藏
   - 技术软件

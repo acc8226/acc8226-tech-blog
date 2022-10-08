@@ -8,7 +8,9 @@
 
 1、执行如下命令
 
+```sh
 wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
+```
 
 2、上面的命令执行结束后，执行下面的命令
 

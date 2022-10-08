@@ -58,7 +58,7 @@ yarn init
 yarn add -D vuepress@next
 ```
 
-在 `package.json` 中添加一些 [scripts在新窗口打开](https://classic.yarnpkg.com/zh-Hans/docs/package-json#toc-scripts)
+在 `package.json` 中添加一些 [scripts 在新窗口打开](https://classic.yarnpkg.com/zh-Hans/docs/package-json#toc-scripts)
 
 ```json
 {
@@ -94,7 +94,7 @@ echo '# Hello VuePress' > docs/README.md
 yarn docs:dev
 ```
 
-VuePress 会在 [http://localhost:8080在新窗口打开](http://localhost:8080/) 启动一个热重载的开发服务器。当你修改你的 Markdown 文件时，浏览器中的内容也会自动更新。
+VuePress 会在 [http://localhost:8080 在新窗口打开](http://localhost:8080/) 启动一个热重载的开发服务器。当你修改你的 Markdown 文件时，浏览器中的内容也会自动更新。
 
 ## 页面
 

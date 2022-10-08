@@ -12,7 +12,7 @@
 
 ### if 和 switch
 
-```
+```php
 <?php
 $t=date("H");
 if ($t<"10")
@@ -30,7 +30,7 @@ else
 ?>
 ```
 
-```
+```php
 <?php
 switch (n)
 {
@@ -218,23 +218,28 @@ The number is 5
 foreach 循环用于遍历数组。
 
 语法
-```
+
+```php
 foreach ($array as $value)
 {
     要执行代码;
 }
 ```
+
 每进行一次循环，当前数组元素的值就会被赋值给 $value 变量（数组指针会逐一地移动），在进行下一次循环时，您将看到数组中的下一个值。
-```
+
+```php
 foreach ($array as $key => $value)
 {
     要执行代码;
 }
 ```
+
 每一次循环，当前数组元素的键与值就都会被赋值给 $key 和 $value 变量（数字指针会逐一地移动），在进行下一次循环时，你将看到数组中的下一个键与值。
 
 示例:
-```
+
+```php
 <?php
 $x=array("Google","Runoob","Taobao");
 foreach ($x as $value)

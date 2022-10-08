@@ -1,6 +1,7 @@
 ---
 title: Markdown-规范
 date: 2020.02.07 08:42:54
+updated: 2022-10-6 20:35:00
 categories:
   - 标记语言
   - Markdown
@@ -12,7 +13,7 @@ as well as an examples of documents that break the rule and corrected
 versions of the examples. Any rule whose heading is ~~struck through~~ is
 deprecated, but still provided for backward-compatibility.
 
-<a name="md001"></a>
+`<a name="md001"></a>`
 
 ## MD001 - Heading levels should only increment by one level at a time
 
@@ -52,7 +53,7 @@ Rationale: Headings represent the structure of a document and can be confusing
 when skipped - especially for accessibility scenarios. More information:
 <https://www.w3.org/WAI/tutorials/page-structure/headings/>.
 
-<a name="md002"></a>
+`<a name="md002"></a>`
 
 ## ~~MD002 - First heading should be a top level heading~~
 
@@ -88,7 +89,7 @@ cases where an h1 is added externally.
 Rationale: The top level heading often acts as the title of a document. More
 information: <https://cirosantilli.com/markdown-style-guide#top-level-header>.
 
-<a name="md003"></a>
+`<a name="md003"></a>`
 
 <!-- more -->
 

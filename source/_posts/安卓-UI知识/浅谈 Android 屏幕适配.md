@@ -88,9 +88,11 @@ smallestWidth (sw<N>dp)
 设置 不同的 ScaleType 会得到不同的显示效果，一般情况下，设置为 centerCrop 能获得较好的适配效果。fixXY 可能导致变形.
 
 #### 动态设置
+
 * 有一些情况下，我们需要动态的设置控件大小或者是位置，比如说 popwindow 的显示位置和偏移量等，这个时候我们可以动态的获取当前的屏幕属性，然后设置合适的数值
 * 使用官方百分比布局
-```
+
+```groovy
 dependencies{
     compile'com.android.support:percent:25.1.0'
 }

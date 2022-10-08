@@ -1,6 +1,7 @@
 ---
 title: Markdown-拓展 Docsify 生成网站
 date: 2020-03-10 21:27:43
+updated: 2022-10-06 20:35:00
 categories:
   - 标记语言
   - Markdown
@@ -44,8 +45,6 @@ docsify init ./docs
 ## [手动初始化](https://docsify.js.org/#/zh-cn/quickstart?id=%e6%89%8b%e5%8a%a8%e5%88%9d%e5%a7%8b%e5%8c%96)
 
 如果不喜欢 npm 或者觉得安装工具太麻烦，我们可以直接手动创建一个 `index.html` 文件。
-
-*index.html*
 
 ```html
 <!DOCTYPE html>

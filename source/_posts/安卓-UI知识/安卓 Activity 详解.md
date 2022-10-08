@@ -1,6 +1,7 @@
 ---
 title: 安卓 Activity 详解
-date: 2017.03.08 10:13:58
+date: 2017-03-08 10:13:58
+updated: 2022-10-06 20:35:00
 categories:
   - 安卓
   - UI 知识

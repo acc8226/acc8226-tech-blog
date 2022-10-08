@@ -33,8 +33,11 @@ Readdle 开发的 Documents 犹如您的文档管理中枢，文档、音乐、�
 WinSCP 下载地址
 <https://winscp.net/eng/index.php>
 
-* RaiDrive
+* RaiDrive 同步盘
 一款免费的**网盘映射工具**，可以支持将 [OneDrive](https://www.iplaysoft.com/onedrive.html)、[Dropbox](https://www.iplaysoft.com/dropbox.html)、[Google Drive](https://www.iplaysoft.com/google-drive.html)、[Google Photos](https://www.iplaysoft.com/google-photos.html) 等常见网盘以及 [FTP](https://www.iplaysoft.com/tag/ftp)、SFTP、**WebDAV** 等网络空间挂载成电脑的“本地磁盘”，让你可以像电脑本机[硬盘](https://www.iplaysoft.com/tag/%E7%A1%AC%E7%9B%98)一样操作和使用网盘里的文件。
 
-RaiDrive 下载地址
-<https://www.raidrive.com/>
+Download
+<https://www.raidrive.com/download>
+
+不推荐方案
+FTPbox 界面和功能都不好用，不推荐。

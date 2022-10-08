@@ -1,6 +1,7 @@
 ---
 title: Markdown-拓展 Docsify 构建接口文档
 date: 2020.08.29 20:51:35
+updated: 2022-10-6 20:35:00
 categories:
   - 标记语言
   - Markdown
@@ -107,75 +108,75 @@ index.html
 <html lang="zh">
 
 <head>
-	<meta charset="UTF-8">
-	<title>接口文档</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="UTF-8">
+    <title>接口文档</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="description" content="Description">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css" title="vue">
-	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/dark.css" title="dark" disabled>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css" title="vue">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/dark.css" title="dark" disabled>
     <link rel="stylesheet" href="css/theme-simple-dark.css" disabled>
 
-	<style>
-	</style>
+    <style>
+    </style>
 </head>
 
 <body>
-	<div id="app">加载中...</div>
-	<script>
-		window.$docsify = {
-			auto2top: true,
-			loadSidebar: true,
-			maxLevel: 2,
-			subMaxLevel: 2,
-			name: '',
-			search: {
-			  maxAge: 600000,// 过期时间，设置为10分钟
-			  noData: {
-				'/': '没有结果!'
-			  },
-			  paths: 'auto',
-			  placeholder: {
-				'/': '搜索接口'
-			  },
-			  // 搜索标题的最大层级, 1 - 6
-			  depth: 2,
-			},
+    <div id="app">加载中...</div>
+    <script>
+        window.$docsify = {
+            auto2top: true,
+            loadSidebar: true,
+            maxLevel: 2,
+            subMaxLevel: 2,
+            name: '',
+            search: {
+              maxAge: 600000,// 过期时间，设置为10分钟
+              noData: {
+                '/': '没有结果!'
+              },
+              paths: 'auto',
+              placeholder: {
+                '/': '搜索接口'
+              },
+              // 搜索标题的最大层级, 1 - 6
+              depth: 2,
+            },
 
-			 count: {
-				countable:true,
-				fontsize:'0.9em',
-				color:'rgb(90,90,90)',
-				language:'chinese',
-			    isExpected: false // 是否显示需要阅读的分钟数
+             count: {
+                countable:true,
+                fontsize:'0.9em',
+                color:'rgb(90,90,90)',
+                language:'chinese',
+                isExpected: false // 是否显示需要阅读的分钟数
 
-			 },
+             },
 
-			copyCode: {
-			  buttonText: {'/' : '点击复制'},
-			  errorText: {'/' : '错误'},
-			  successText: {'/' : '已复制'}
-	        },
+            copyCode: {
+              buttonText: {'/' : '点击复制'},
+              errorText: {'/' : '错误'},
+              successText: {'/' : '已复制'}
+            },
 
-			plugins: [
-				function (hook, vm) {
+            plugins: [
+                function (hook, vm) {
 
-				var footer = [
-					'<hr/>',
-					'<footer>',
-					'<span>likai&copy;2020.</span>',
-					'<span> Proudly published with <a href="https://github.com/docsifyjs/docsify" target="_blank">docsify</a></span>',
-					' V' + window.Docsify.version,
-					'</footer>'
-				  ].join('');
+                var footer = [
+                    '<hr/>',
+                    '<footer>',
+                    '<span>likai&copy;2020.</span>',
+                    '<span> Proudly published with <a href="https://github.com/docsifyjs/docsify" target="_blank">docsify</a></span>',
+                    ' V' + window.Docsify.version,
+                    '</footer>'
+                  ].join('');
 
-				  hook.afterEach(function(html) {
-					return html + footer;
-				  });
-				}
-			],
+                  hook.afterEach(function(html) {
+                    return html + footer;
+                  });
+                }
+            ],
 
-		}
+        }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>

@@ -1,6 +1,7 @@
 ---
 title: Markdown-拓展 Hexo 搭建博客(下)
-date: 2019.10.02 09:35:37
+date: 2019-10-02 09:35:37
+updated: 2022-10-6 20:35:00
 categories:
   - 标记语言
   - Markdown

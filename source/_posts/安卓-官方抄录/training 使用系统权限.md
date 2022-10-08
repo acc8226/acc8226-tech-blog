@@ -1,6 +1,7 @@
 ---
 title: 安卓-training 使用系统权限
 date: 2017.02.22 11:46:25
+updated: 2022-10-06 20:35:00
 categories:
   - 安卓
   - 官方抄录
@@ -24,8 +25,8 @@ https://developer.android.google.cn/training/permissions/index.html
 
 ### 向清单添加权限
 
-要声明您的应用需要权限，请将 [<uses-permission>
-](http://developer.android.youdaxue.com/guide/topics/manifest/uses-permission-element.html) 元素置于您的[应用清单](http://developer.android.youdaxue.com/guide/topics/manifest/manifest-intro.html)中，作为顶级 [<manifest>
+要声明您的应用需要权限，请将 [`<uses-permission>`
+](http://developer.android.youdaxue.com/guide/topics/manifest/uses-permission-element.html) 元素置于您的[应用清单](http://developer.android.youdaxue.com/guide/topics/manifest/manifest-intro.html)中，作为顶级 [`<manifest>`
 ](http://developer.android.youdaxue.com/guide/topics/manifest/manifest-element.html) 元素的子项。例如，需要发送短信的应用可在清单中添加以下代码行：
 
 ```xml

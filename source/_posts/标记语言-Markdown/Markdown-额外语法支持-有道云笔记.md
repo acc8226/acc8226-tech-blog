@@ -1,6 +1,7 @@
 ---
 title: Markdown-额外语法支持-有道云笔记
 date: 2020.05.02 21:07:14
+updated: 2022-10-6 20:35:00
 categories:
   - 标记语言
   - Markdown
@@ -43,7 +44,7 @@ tags: Markdown
 
 ### 表格
 
-当你需要在Markdown文稿中键入表格，代码如下：
+当你需要在 Markdown 文稿中键入表格，代码如下：
 
 [![2-6表格](https://upload-images.jianshu.io/upload_images/1662509-76d6f2b182e3ed5c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)](http://note.youdao.com/iyoudao/wp-content/uploads/2016/09/2-6%E8%A1%A8%E6%A0%BC.png)
 
@@ -55,7 +56,7 @@ tags: Markdown
 
 待办事项和清单在日常工作、生活中经常被使用。
 
-在Markdown中，你只需要在待办的事项文本或者清单文本前加上`- [ ]`、`- [x]`即可。
+在 Markdown 中，你只需要在待办的事项文本或者清单文本前加上`- [ ]`、`- [x]`即可。
 `- [ ] 表示未完成，- [x] 表示已完成。`
 
 注：键入字符与字符之间都要保留一个字符的空格。

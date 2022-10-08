@@ -1,6 +1,7 @@
 ---
 title: 安卓-topic 字符串资源 string resource
 date: 2017.02.21 22:20:59
+updated: 2022-10-06 20:35:00
 categories:
   - 安卓
   - 官方抄录

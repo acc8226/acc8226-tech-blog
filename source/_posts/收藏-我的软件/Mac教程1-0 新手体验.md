@@ -1,6 +1,6 @@
 ---
 title: Mac教程1-0 新手体验
-date: 2019.03.17 17:27:17
+date: 2019-03-17 17:27:17
 categories:
   - 收藏
   - 我的软件
@@ -75,12 +75,12 @@ Command-Q 退出
 
 ### 文件操作
 
-”拷贝“才是对应windows下的”复制“Copy = Command + C
+”拷贝“才是对应 windows 下的”复制“Copy = Command + C
 "粘贴": Command + V
 
-”制作替身“是对应windows下的”创建快捷方式“的意思。当您打开替身时，原始项目会打开。
-“复制” 可以理解为在当前目录完成了CV操作
-"移动到此处": 在Command+C用使用 **Command +Option+V** 将其移动到目标目录。相当于windows的剪切+粘贴操作
+”制作替身“是对应 windows 下的”创建快捷方式“的意思。当您打开替身时，原始项目会打开。
+“复制” 可以理解为在当前目录完成了 CV 操作
+"移动到此处": 在 Command + C 用使用 **Command +Option+V** 将其移动到目标目录。相当于windows的剪切+粘贴操作
 
 ### 访达 Finder 和系统快捷键
 

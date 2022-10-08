@@ -7,7 +7,7 @@
 
 ## 优麒麟 Ubuntu Kylin
 
-优麒麟(英文名为Ubuntu Kylin)是基于 Ubuntu 的一款官方衍生版。 它是一款专门为中国市场打造的免费操作系统，而且它已经被录入中国政府采购条例名单中。它包括 Ubuntu 用户期待的各种功能，并配有必备的中文软件及程序。
+优麒麟(英文名为 Ubuntu Kylin)是基于 Ubuntu 的一款官方衍生版。 它是一款专门为中国市场打造的免费操作系统，而且它已经被录入中国政府采购条例名单中。它包括 Ubuntu 用户期待的各种功能，并配有必备的中文软件及程序。
 
 * 官方下载地址
 <https://www.ubuntukylin.com/downloads/>
@@ -44,7 +44,7 @@ https://www.chinauos.com/
 ![](https://upload-images.jianshu.io/upload_images/1662509-0fec5762427dcf3b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 **与树莓派搭配使用的工具: SDFormatter 介绍**
-https://www.sdcard.org/downloads/formatter/index.html
+<https://www.sdcard.org/downloads/formatter/index.html>
 
 SDFormatter 是一个简单和有用的 SD 卡修复工具也是内存卡修复工具，专门设计为 TF 卡/手机 SD 卡/ SD 卡 / SDHC 卡 / SDXC 内存卡修复使用，此内存卡修复工具除了可以在 WIN 系统上运行，还支持苹果 MACOSX 系统上运行。
 

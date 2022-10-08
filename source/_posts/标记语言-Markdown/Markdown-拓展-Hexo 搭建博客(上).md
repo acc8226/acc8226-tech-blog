@@ -1,6 +1,6 @@
 ---
-title: Markdown-拓展 Hexo 搭建博客(上)
-date: 2018.08.17 21:41:46
+title: Markdown 拓展 Hexo 搭建博客(上)
+date: 2018-08-17 21:41:46
 categories:
   - 标记语言
   - Markdown

@@ -1,6 +1,7 @@
 ---
 title: 安卓 Bitmap 和 Drawable 的使用
-date: 2021.12.26 21:10:21
+date: 2021-12-26 21:10:21
+updated: 2022-10-06 20:35:00
 categories:
   - 安卓
   - UI 知识

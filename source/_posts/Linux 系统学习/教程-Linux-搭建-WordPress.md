@@ -1,5 +1,5 @@
 官网
-https://cn.wordpress.org/download/
+<https://cn.wordpress.org/download/>
 
 ```sh
 wget https://cn.wordpress.org/latest-zh_CN.tar.gz
@@ -22,4 +22,4 @@ sed -i 's/password_here/NewPassWord1./' /var/www/html/wp-blog/wp-config.php
 systemctl start httpd
 ```
 
-4. 浏览器访问 <http://<ECS公网IP>/wp-blog/wp-admin/install.php> 完成 wordpress 初始化配置。
+浏览器访问 <http://ECS公网IP/wp-blog/wp-admin/install.php> 完成 wordpress 初始化配置。

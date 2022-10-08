@@ -16,9 +16,9 @@ PHP版 的 Hello World
 ```
 
 // 从终端输入
-`php index.php` 
+`php index.php`
 // Run with built-in web server.
-`$ sudo php -S localhost:80` 
+`$ sudo php -S localhost:80`
 
 ## php 脚本
 PHP 脚本可以放在文档中的任何位置。
@@ -39,7 +39,7 @@ PHP 脚本以 <?php 开始，以 ?> 结束：
 PHP 没有声明变量的命令。
 变量在您第一次赋值给它的时候被创建
 
-```
+```php
 $name = "mary";
 ```
 
@@ -55,9 +55,11 @@ PHP 会根据变量的值，自动把变量转换为正确的数据类型。
 在强类型的编程语言中，我们必须在使用变量前先声明（定义）变量的类型和名称。
 
 ### PHP 变量作用域
+
 变量的作用域是脚本中变量可被引用/使用的部分。
 
 PHP 有四种不同的变量作用域：
+
 * local 本地变量
 * global 在函数外定义的变量
 * static 保证某个局部变量不要被删除。
@@ -68,10 +70,11 @@ PHP 有四种不同的变量作用域：
 在 PHP 中有两个基本的输出方式： echo 和 print。使用的时候可以不用加括号，也可以加上括号。
 
 echo 和 print 区别:
+
 * echo - 可以输出一个或多个字符串
 * print - 只允许输出一个字符串，返回值总为 1
 
-```
+```php
 $cars=array("Volvo","BMW","Toyota");
 echo "我车的品牌是 {$cars[0]}";
 
@@ -79,6 +82,7 @@ echo "这是一个", "字符串，", "使用了", "多个", "参数。";
 ```
 
 ## 数据类型
+
 String（字符串）, Integer（整型）, Float（浮点型）, Boolean（布尔型）, Array（数组）, Object（对象）, NULL（空值）。
 
 > PHP var_dump() 函数
@@ -86,14 +90,14 @@ String（字符串）, Integer（整型）, Float（浮点型）, Boolean（布�
 **var_dump()** 函数显示关于一个或多个表达式的结构信息，包括表达式的类型与值。数组将递归展开值，通过缩进显示其结构。
 
 ```php
-<?php 
+<?php
 
 $x = 5985;
 var_dump($x);
-echo "<br>"; 
-$x = -345; // 负数 
+echo "<br>";
+$x = -345; // 负数
 var_dump($x);
-echo "<br>"; 
+echo "<br>";
 $x = 0x8C; // 十六进制数
 var_dump($x);
 echo "<br>";
@@ -104,10 +108,10 @@ echo "<br>";
 
 $x = 10.365;
 var_dump($x);
-echo "<br>"; 
+echo "<br>";
 $x = 2.4e3;
 var_dump($x);
-echo "<br>"; 
+echo "<br>";
 $x = 8E-5;
 var_dump($x);
 echo "<br>";
@@ -131,7 +135,7 @@ class Car {
     function __construct($color="green") {
       $this->color = $color;
     }
-    
+
     function what_color() {
       return $this->color;
     }
@@ -162,8 +166,10 @@ var_dump($x);
 ```
 
 ### PHP 5 常量
+
 设置常量，使用 define() 函数，函数语法如下：
-```
+
+```php
 bool define ( string $name , mixed $value [, bool $case_insensitive = false ] )
 ```
 
@@ -179,7 +185,7 @@ case_insensitive ：可选参数，如果设置为 TRUE，该常量则大小写�
 以下实例演示了在函数内使用常量，即便常量定义在函数外也可以正常使用常量。
 
 ```php
-<?php 
+<?php
 
 // 区分大小写的常量名
 define("GREETING", "欢迎访问 Runoob.com");
@@ -190,18 +196,19 @@ echo '<br>';
 ```
 
 ### PHP 中的字符串变量
+
 字符串变量用于包含有字符的值。
 
 在创建字符串之后，我们就可以对它进行操作了。您可以直接在函数中使用字符串，或者把它存储在变量中。
 
-```
-<?php 
-$txt="Hello world!"; 
-echo $txt; 
+```php
+<?php
+$txt="Hello world!";
+echo $txt;
 ?>
 ```
 
 ## 参考
 
 菜鸟教程-php 教程
-https://www.runoob.com/php/php-tutorial.html
+<https://www.runoob.com/php/php-tutorial.html>

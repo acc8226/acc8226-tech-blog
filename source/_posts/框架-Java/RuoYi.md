@@ -10,6 +10,12 @@ tags:
 
 ## 快速了解
 
+### 系统需求
+
+JDK >= 1.8
+MySQL >= 5.7
+Maven >= 3.0
+
 ### 主要特性
 
 * 完全响应式布局（支持电脑、平板、手机等所有主流设备）
@@ -115,7 +121,7 @@ sentinel >= 1.6.0
 
 创建数据库 ry-config 并导入数据脚本 ry_config_2021xxxx.sql（必须）
 
-配置nacos持久化，修改conf/application.properties文件，增加支持mysql数据源配置
+配置 nacos 持久化，修改 conf/application.properties 文件，增加支持 mysql 数据源配置
 
 ```text
 # db mysql
@@ -140,6 +146,42 @@ npm install --registry=https://registry.npmmirror.com
 # 本地开发 启动项目
 npm run dev
 ```
+
+发布
+
+```bash
+# 构建测试环境
+npm run build:stage
+
+# 构建生产环境
+npm run build:prod
+```
+
+#### 使用 docker 运行
+
+```sh
+cd docker
+docker-compose up -d ruoyi-mysql ruoyi-redis ruoyi-nacos
+```
+
+mysql
+数据库: 'ry-cloud'
+root / password
+
+nacos
+<http://localhost:8848/nacos/>
+nacos / nacos
+
+##### 启动
+
+RuoYiGatewayApplication （网关模块 必须）
+RuoYiAuthApplication （认证模块 必须）
+RuoYiSystemApplication （系统模块 必须）
+
+RuoYiMonitorApplication （监控中心 可选）
+RuoYiGenApplication （代码生成 可选）
+RuoYiJobApplication （定时任务 可选）
+RuoYFileApplication （文件服务 可选）
 
 ## 项目介绍
 

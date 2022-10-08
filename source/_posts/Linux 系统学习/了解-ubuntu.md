@@ -18,7 +18,7 @@ https://mirrors.aliyun.com/ubuntu/
 
 Ubuntu 的软件源配置文件是 /etc/apt/sources.list。请将系统自带的该文件做个备份，将该文件替换为下面内容，即可使用 TUNA 的软件源镜像。
 
-```
+```bash
 deb http://mirrors.tencentyun.com/ubuntu/ focal main restricted universe multiverse
 deb http://mirrors.tencentyun.com/ubuntu/ focal-security main restricted universe multiverse
 deb http://mirrors.tencentyun.com/ubuntu/ focal-updates main restricted universe multiverse
@@ -49,7 +49,7 @@ sudo sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
 
 先通过 bash 进入子系统修改配置
 
-```
+```bash
 Port = 22 # 默认是22端口，如果和windows端口冲突或你想换成其他的否则不用动
 #ListenAddress 0.0.0.0 # 如果需要指定监听的IP则去除最左侧的井号，并配置对应IP，默认即监听PC所有IP
 PermitRootLogin no # 如果你需要用 root 直接登录系统则此处改为 yes

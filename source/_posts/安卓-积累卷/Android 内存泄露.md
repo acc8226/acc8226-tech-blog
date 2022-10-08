@@ -36,7 +36,7 @@ public class PendingOrderManager {
 }
 ```
 
-然后让你的某个Activity去使用这个PendingOrderManager单例，并且某个时候退出这个Activity:
+然后让你的某个 Activity 去使用这个 PendingOrderManager 单例，并且某个时候退出这个 Activity:
 
 ```java
 //belong to some Activity
@@ -46,7 +46,7 @@ PendingOrderManager.getInstance(this).func();
 finish()
 ```
 
-这个时候内存泄漏已经发生：你退出了你的这个 Activity 本以为 java 的垃圾回收会将它释放，但实际上 Activity 一直被PendingOrderManager 持有着。Acitivity 这个 Context 被长生命周期个体（单例一旦被创建就是整个 app 的生命周期）持有导致了这个 Context 发生了内存泄漏。
+这个时候内存泄漏已经发生：你退出了你的这个 Activity 本以为 java 的垃圾回收会将它释放，但实际上 Activity 一直被 PendingOrderManager 持有着。Acitivity 这个 Context 被长生命周期个体（单例一旦被创建就是整个 app 的生命周期）持有导致了这个 Context 发生了内存泄漏。
 
 这个例子和上面的例子是相通的，上面的 C 的例子因为忘记了手动执行 free 一个 10 字节内存导致内存泄漏。而下面这个例子是垃圾回收机制“故意忘记”了回收 Context 的内存而导致了内存泄漏。下面两节将对这个里面到底发生了什么进行说明。
 
@@ -56,7 +56,7 @@ finish()
 
 * 静态存储区：内存在程序编译的时候就已经分配好，这块内存在程序整个运行期间都存在。它主要存放静态数据、全局static数据和常量
 * 栈：就是 CPU 的寄存器（并不是内存），特点是容量很小但是速度最快，函数或者方法的的方法体内声明的变量或者指向对象的引用、局部变量即分配在这里，生命周期到该函数或者方法体尾部即止
-* 堆：就是动态内存分配去（就是实体的内存RAM），C 中 malloc 和 fee，java 中的 new 和垃圾回收直接操作的就是这里的区域，类的成员变量分配在这里
+* 堆：就是动态内存分配去（就是实体的内存 RAM），C 中 malloc 和 fee，java 中的 new 和垃圾回收直接操作的就是这里的区域，类的成员变量分配在这里
 从上面即可看出静态存储区域是编译时已经分配好的，栈是CPU自动控制的，那么我们所讨论的内存泄漏的问题实际上就是分配在堆里面的内存出现了问题，一般问题在于两点：
 
 1. 快速不断的进行 new 操作。比如Android的自定义View的时候你在 onDraw 里面 new 出对象，就会导致这个自定义 View 的绘制特别卡，这是因为 onDraw 是快速重复执行的方法，在这个方法里面每次都 new 出对象会导致连续不断的 new 出新的对象，也导致 gc 也在不断的执行从而不断的回收堆内存。由于堆位于内存RAM上，这样子就导致了内存的不断的分配和回收消耗了 CPU，同时导致了内存出现“空洞”（因为堆内存不是连续的）
