@@ -3,9 +3,9 @@ title: Apache HTTP 的安装
 categories: Web 服务器技术
 ---
 
-Apache 是世界使用排名第一的 Web 服务器软件。它可以运行在几乎所有广泛使用的计算机平台上，由于其跨平台和安全性被广泛使用，是最流行的Web服务器端软件之一。
+Apache 是世界使用排名第一的 Web 服务器软件。它可以运行在几乎所有广泛使用的计算机平台上，由于其跨平台和安全性被广泛使用，是最流行的 Web 服务器端软件之一。
 
-1\. 执行如下命令，安装Apache服务及其扩展包。
+1\. 执行如下命令，安装 Apache 服务及其扩展包。
 
 ```sh
 yum -y install httpd httpd-manual mod_ssl mod_perl mod_auth_mysql

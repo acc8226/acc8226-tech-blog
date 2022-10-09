@@ -30,7 +30,7 @@ categories: Web 服务器技术
 1\. 从 nginx 官网下载稳定版 Stable version 安装包
 <http://nginx.org/en/download.html>
 
-2\. 安装Nginx依赖，pcre、openssl、gcc、zlib（推荐使⽤yum源⾃动安装）
+2\. 安装 Nginx 依赖，pcre、openssl、gcc、zlib（推荐使⽤yum源⾃动安装）
 
 ```sh
 yum -y install gcc zlib zlib-devel pcre-devel openssl openssl-devel

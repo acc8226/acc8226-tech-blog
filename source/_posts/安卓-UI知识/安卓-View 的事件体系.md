@@ -1,6 +1,6 @@
 ---
 title: 安卓-View 的事件体系
-date: 2017.03.29 14:58:41
+date: 2017-03-29 14:58:41
 updated: 2022-10-06 20:35:00
 categories:
   - 安卓
@@ -35,7 +35,7 @@ width = right - left;
 height = bottom -top;
 ```
 
-从 Android3.0开始，View 增加了额外的几个参数； x, y, translationX 和 translationY,其中 x 和 y 是**View左上角的坐标**，而 translationX 和 translationY 是View左上角**相对于父容器的偏移量**。这几个参数也是**相对于父容器的坐标**，并且 translationX 和 translationY 的默认值是0，和 View 的四个基本的位置参数一样，View 也为它们提供了get/set方法
+从 Android3.0开始，View 增加了额外的几个参数； x, y, translationX 和 translationY,其中 x 和 y 是**View左上角的坐标**，而 translationX 和 translationY 是View左上角**相对于父容器的偏移量**。这几个参数也是**相对于父容器的坐标**，并且 translationX 和 translationY 的默认值是0，和 View 的四个基本的位置参数一样，View 也为它们提供了 get/set 方法
 几个参数的换算关系如下所示：
 
 ```java
@@ -94,9 +94,9 @@ TouchSlop 是系统所能识别出的被认为是**滑动的最小距离**，换
 速度 = (终点位置 - 起点位置)/时间段
 
 ```java
-     velocityTracker.computeCurrentVelocity(1000);//1000毫秒
-     int xVelocity = (int) velocityTracker.getXVelocity();
-     int yVelocity = (int) velocityTracker.getYVelocity();
+velocityTracker.computeCurrentVelocity(1000);//1000毫秒
+int xVelocity = (int) velocityTracker.getXVelocity();
+int yVelocity = (int) velocityTracker.getYVelocity();
 ```
 
 最后，当不需要使用速度追踪的时候，调用clear方法来重置并回收：
@@ -113,8 +113,8 @@ velocityTracker.recycle();
 使用过程：创建一个GestureDetector对象并实现OnGestureListener接口，再根据需要实现其中的方法，对用户的行为做出怎样的反应。接着，在View的onTouchEvent方法中做如下实现：
 
 ```java
-      boolean consume = mGestureDetector.onTouchEvent(event);
-      return consume;
+boolean consume = mGestureDetector.onTouchEvent(event);
+return consume;
 ```
 
  OnGestureListener 和OnDoubleTapListener中的方法常用的有：onSingleTapUp(单击)、onFling(快速滑动)、oScroll（拖动）、onLongPress（长按）、onDoubleTap(双击）。

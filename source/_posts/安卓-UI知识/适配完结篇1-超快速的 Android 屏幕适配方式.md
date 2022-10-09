@@ -12,7 +12,7 @@ tags:
 
 ### 谈谈dpi 和 dp
 
-* **dpi**全名为dot per inch，它表示每英寸上的像素点个数，所以它也常为屏幕密度。 在Android中使用DisplayMetrics中的**densityDpi**字段表示该值，并且不少文档中常用dpi来简化或者指代densityDpi。在手机屏幕一定的情况下，如果分辨率越高那么该值则越大，这就意味着画面越清晰、细腻和逼真。
+* **dpi**全名为dot per inch，它表示每英寸上的像素点个数，所以它也常为屏幕密度。 在Android中使用 DisplayMetrics 中的**densityDpi**字段表示该值，并且不少文档中常用dpi来简化或者指代 densityDpi。在手机屏幕一定的情况下，如果分辨率越高那么该值则越大，这就意味着画面越清晰、细腻和逼真。
 * The density-independent pixel(**dp**)is equivalent to one physical pixel on a 160 dpi screen, which is the baseline density assumed by the system for a “medium” density screen.
 已知Android的多个显示级别中有一个mdpi，它被称为基准密度。
 **当dpi=160时1px=1dp**，也就是说所有dp和px的转换都是基于mdpi而言的。
@@ -27,7 +27,7 @@ tags:
 通常情况下，一部手机的分辨率是宽x高，屏幕大小是以寸为单位，那么三者的关系是：
 ![](https://upload-images.jianshu.io/upload_images/1662509-482822e0dfb53d2d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
- 以华为P7为例，计算其dpi值。先利用勾股定理得其对角线的像素值为2202.91，再除以对角线的大小5，即2202.91/5=440.582；此处计算出的440.58便是该设备的**真实屏幕密度**dpi。
+以华为 P7 为例，计算其dpi值。先利用勾股定理得其对角线的像素值为 2202.91，再除以对角线的大小5，即 2202.91/5=440.582；此处计算出的440.58便是该设备的**真实屏幕密度** dpi。
 
 现在我们再通过代码来获取设备的 dpi 值
 
@@ -49,8 +49,8 @@ density = 3.0
 densityDpi = 480
 ```
 
-发现代码中获取到的**densityDpi=480**和我们计算出来的屏幕实际密度值440.582不一样。因为在每部手机出厂时都会为该手机设置屏幕密度，若其屏幕的实际密度是440dpi那么就会将其屏幕密度设置为与之接近的480dpi；如果实际密度为325dpi那么就会将其屏幕密度设置为与之接近的320dpi。
-这也就是说常见的屏幕密度是与每个显示级别的最大值相对应的，比如：120、160、240、320、480、640等。顺便说一下，看到代码中的density么？其实它就是一个倍数关系，它表示当前设备的densityDpi和160的比值，480/160=3倍关系属于xxhdpi。从而逻辑分辨率为`640dp * 360dp`
+发现代码中获取到的**densityDpi=480**和我们计算出来的屏幕实际密度值440.582不一样。因为在每部手机出厂时都会为该手机设置屏幕密度，若其屏幕的实际密度是440dpi那么就会将其屏幕密度设置为与之接近的 480dpi；如果实际密度为 325dpi 那么就会将其屏幕密度设置为与之接近的320dpi。
+这也就是说常见的屏幕密度是与每个显示级别的最大值相对应的，比如：120、160、240、320、480、640 等。顺便说一下，看到代码中的density么？其实它就是一个倍数关系，它表示当前设备的densityDpi和160的比值，480/160=3倍关系属于xxhdpi。从而逻辑分辨率为`640dp * 360dp`
 
 其实，关于这一点，我们从Android源码对于densityDpi的注释也可以看到一些端倪：
 
@@ -63,7 +63,7 @@ May be either DENSITY_LOW，DENSITY_MEDIUM or DENSITY_HIGH
 
 ### dp并不能做到适配
 
-假设我们UI设计图是按屏幕宽度为360dp来设计的，如果屏幕宽度为1080/(440/160)=392.7dp，也就是屏幕是比设计图要宽的。这种情况下， 即使使用dp也是无法在不同设备上显示为同样效果的。 同时还存在部分设备屏幕宽度不足360dp，这时就会导致按360dp宽度来开发实际显示不全的情况。
+假设我们UI设计图是按屏幕宽度为 360dp 来设计的，如果屏幕宽度为 1080/(440/160)=392.7dp，也就是屏幕是比设计图要宽的。这种情况下， 即使使用dp也是无法在不同设备上显示为同样效果的。 同时还存在部分设备屏幕宽度不足 360dp，这时就会导致按360dp宽度来开发实际显示不全的情况。
 
 ### 对比其他方案
 
@@ -73,7 +73,7 @@ May be either DENSITY_LOW，DENSITY_MEDIUM or DENSITY_HIGH
 * [ConstraintLayout](https://link.jianshu.com/?t=https%3A%2F%2Fdeveloper.android.com%2Freference%2Fandroid%2Fsupport%2Fconstraint%2FConstraintLayout.html)。百分比支持库deprecated之后推荐使用的布局，看起来似乎略复杂。
 * [建立多套分辨率](https://link.jianshu.com/?t=http%3A%2F%2Fblog.csdn.net%2Flmj623565791%2Farticle%2Fdetails%2F45460089)。编写脚本将长度转换成各分辨率下的长度，缺点是难以覆盖市面上的所有分辨率。此处有优化, 可以参考我的[另外一篇文章](https://www.jianshu.com/p/e203bf03c94f)
 
-* [AutoLayout支持库](https://blog.csdn.net/lmj623565791/article/details/49990941/)。该库的想法非常好：对照设计图，使用px编写布局，不影响预览；绘制阶段将对应设计图的px数值计算转换为当前屏幕下适配的大小；为简化接入，inflate时自动将各Layout转换为对应的AutoLayout，从而不需要在所有的xml中更改。但是同时该库也存在扩展性较差。对于每一种ViewGroup都要对应编写对应的AutoLayout进行扩展，对于各View的每个需要适配的属性都要编写代码进行适配扩展；在onMeasure阶段进行数值计算。消耗性能，并且这对于非LayoutParams中的属性存在较多不合理之处。
+* [AutoLayout支持库](https://blog.csdn.net/lmj623565791/article/details/49990941/)。该库的想法非常好：对照设计图，使用 px 编写布局，不影响预览；绘制阶段将对应设计图的 px 数值计算转换为当前屏幕下适配的大小；为简化接入，inflate 时自动将各Layout 转换为对应的 AutoLayout，从而不需要在所有的 xml 中更改。但是同时该库也存在扩展性较差。对于每一种 ViewGroup 都要对应编写对应的 AutoLayout进 行扩展，对于各View的每个需要适配的属性都要编写代码进行适配扩展；在 onMeasure 阶段进行数值计算。消耗性能，并且这对于非 LayoutParams 中的属性存在较多不合理之处。
 
 ## 探索新的适配方式
 
@@ -120,9 +120,9 @@ MM: 毫米.
 
 对DIP和SP下手对于老项目不够友好, 只能选择这三个单位. 又会发现这三个单位转换得到像素值的时候都会与`metrics.xdpi`有关
 > xdpi: The exact physical pixels per inch of the screen in the X dimension.
-> 其实说白了就是X横轴方向的dpi.
+> 其实说白了就是 X 横轴方向的 dpi。
 
-一般给的图都是以像素为单位的. 例如1920*1080 5寸屏的我们如果有1pt = 1px.  则如果需要120px的宽度, 我们不用想写成120pt就OK了。
+一般给的图都是以像素为单位的. 例如1920*1080 5寸屏的我们如果有1pt = 1px.  则如果需要120px的宽度, 我们不用想写成 120pt 就 OK了。
 
 ```text
 要求得的1pt实际对应的px / 屏幕宽度px = 1px / 设计图宽度px
@@ -133,7 +133,7 @@ metrics.xdpi * (1.0f/72) = 对于1pt表示的像素
 metrics.xdpi = 1*72=72
 ```
 
-当前情况下容易得出 `xdpi = 72`, 我们还是算出原来的xdpi为440, 也就是大概差了6倍.如果假设1pt = 1px, 在使用过程中发现1pt变现为6px, 也就是突然变大了, 你就知道pt失效导致的.自己去找原因并解决.
+当前情况下容易得出 `xdpi = 72`, 我们还是算出原来的xdpi为440, 也就是大概差了6倍.如果假设 1pt = 1px, 在使用过程中发现 1pt 变现为 6px, 也就是突然变大了, 你就知道pt失效导致的.自己去找原因并解决.
 
 #### 最终方案
 
@@ -149,10 +149,12 @@ resources.getDisplayMetrics().xdpi = size.x / designWidth * 72f;
 
 #### 总结
 
-* 使用冷门的pt作为长度单位，按照上述想法将其重定义为与屏幕大小相关的相对单位，不会对dp等常用单位的使用造成影响。
-* 绘制。编写xml时完全对照设计稿上的尺寸来编写，只不过单位换为pt。假如设计图宽度为200，一个控件在设计图上标注的长度为3，只需要在初始化时定义宽度为200，绘制该控件时长度写为3pt，那么在任何大小的屏幕上该控件所表现的长度都为屏幕宽度的3/200。如果需要在代码中动态转换成px的话，使用`TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_PT, value, metrics)`
+* 使用冷门的 pt 作为长度单位，按照上述想法将其重定义为与屏幕大小相关的相对单位，不会对dp等常用单位的使用造成影响。
+* 绘制。编写xml时完全对照设计稿上的尺寸来编写，只不过单位换为pt。假如设计图宽度为200，一个控件在设计图上标注的长度为3，只需要在初始化时定义宽度为200，绘制该控件时长度写为3pt，那么在任何大小的屏幕上该控件所表现的长度都为屏幕宽度的3/200。如果需要在代码中动态转换成 px 的话，使用`TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_PT, value, metrics)`
 * 预览。实时预览时绘制页面是很重要的一个环节。如果美工偷懒拿了个iPhone6的标准尺寸1334x750的设计图，为了实现于正常绘制时一样的预览功能，创建一个长为1334磅，宽为750磅的设备作为预览，经换算约为21.25英寸((sqrt(1334^2 + 750^2))/72)。预览时选择这个设备即可。
+
 ![](https://upload-images.jianshu.io/upload_images/1662509-9697c0d8a204c06b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 > 这是因为有一个已知条件 `1pt = 1px` 则等价于`xdpi = 72`
 因为`1334px * 750px` , 则对角线`px = 1530.3px = 1530.3pt = 21.25 inch`
 如果采用`1920px*1080px`的屏幕同理啦.
@@ -321,16 +323,16 @@ public class ScreenHelper {
 #### FAQ
 
 **若存在webview导致适配失效的问题**
-可以先继承WebView并重写`setOverScrollMode(int mode)`方法，在方法中调用super之后调用一遍`ScreenHelper.resetDensity(getContext(), designWidth)`规避
+可以先继承 WebView 并重写`setOverScrollMode(int mode)`方法，在方法中调用super之后调用一遍`ScreenHelper.resetDensity(getContext(), designWidth)`规避
 
 **若存在dialog中适配失效的问题**
-可以在dialog的oncreate中调用一遍`ScreenHelper.resetDensity(getContext(), designWidth)`规避
+可以在 dialog 的 oncreate 中调用一遍`ScreenHelper.resetDensity(getContext(), designWidth)`规避
 
 **旋转屏幕之后适配失效**
-可以在onConfigurationChanged中调用`ScreenHelper .resetDensity(getContext(), designWidth)`规避
+可以在 onConfigurationChanged 中调用`ScreenHelper .resetDensity(getContext(), designWidth)`规避
 
 **特定国产机型ROM中偶先 fragment 失效**
-可以在fragment的onCreateView中调用 `ScreenHelper .resetDensity(getContext(), designWidth)`规避
+可以在 fragment 的 onCreateView中调用 `ScreenHelper .resetDensity(getContext(), designWidth)`规避
 
 ## 总结
 

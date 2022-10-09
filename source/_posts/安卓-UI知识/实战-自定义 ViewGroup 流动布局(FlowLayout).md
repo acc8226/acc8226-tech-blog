@@ -353,6 +353,7 @@ public class FlowLayout extends ViewGroup {
 ```
 
 `AlignItems.java`
+
 ```java
 /*
  * Copyright 2016 Google Inc. All rights reserved.
@@ -391,6 +392,7 @@ public @interface AlignItems {
 ```
 
 `res/values/attrs.xml`
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <resources>

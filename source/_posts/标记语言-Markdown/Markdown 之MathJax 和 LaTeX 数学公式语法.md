@@ -1,5 +1,5 @@
 ---
-title: Markdown 之MathJax 和 LaTeX 数学公式语法
+title: Markdown 之 MathJax 和 LaTeX 数学公式语法
 date: 2020-05-03 14:17:04
 updated: 2022-10-6 20:35:00
 categories:
@@ -266,7 +266,7 @@ $\color{lime}{Sample}$
 
 ## 参考
 
-Mathjax与LaTex公式简介 - 林大勇 - 博客园
+Mathjax 与 LaTex 公式简介 - 林大勇 - 博客园
 <https://www.cnblogs.com/linxd/p/4955530.html>
 
 MathJax basic tutorial and quick reference - Mathematics Meta Stack Exchange
@@ -275,5 +275,5 @@ MathJax basic tutorial and quick reference - Mathematics Meta Stack Exchange
 Supported Functions · KaTeX
 <https://khan.github.io/KaTeX/docs/supported.html>
 
-Markdown写作指南-异步社区-致力于优质IT知识的出版和分享
+Markdown 写作指南-异步社区-致力于优质IT知识的出版和分享
 <https://www.epubit.com/columnDetails?id=CL6c695f34d7aec>
