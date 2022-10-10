@@ -1,6 +1,6 @@
 ---
 title: Markdown-拓展 Hexo next 主题对数学公式的支持
-date: 2020.09.06 19:41:00
+date: 2020-09-06 19:41:00
 updated: 2022-10-6 20:35:00
 categories:
   - 标记语言

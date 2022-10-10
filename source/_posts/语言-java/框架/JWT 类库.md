@@ -2,10 +2,10 @@
 title: JWT 类库
 date: 2022-08-22 17:10:00
 categories:
-  - Java
+  - 语言-Java
   - 框架
 tags:
-- Java 框架
+- Java-框架
 - 安全
 - 鉴权
 ---

@@ -3,8 +3,8 @@ title: Spring boot 下 swagger2 的使用
 date: 2019-07-17 22:43:50
 updated: 2022-08-15 13:33:00
 categories:
+  - 语言-Java
   - 框架
-  - Java
 tags:
 - spring boot
 - swagger

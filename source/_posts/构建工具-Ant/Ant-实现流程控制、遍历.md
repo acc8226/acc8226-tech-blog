@@ -1,6 +1,6 @@
 ---
 title: Ant-实现流程控制、遍历
-date: 2022.06.22 09:16:34
+date: 2022-06-22 09:16:34
 categories:
   - 构建工具
   - Ant
@@ -118,4 +118,4 @@ switch 任务支持对特性(property)的直接比较判断。`<switch>` 标签�
 
 ## 参考
 
-* [Ant][StartWithAnt] 第七章 Ant扩展包ant-contrib的使用 - Sodino的专栏 - CSDN博客 <https://blog.csdn.net/sodino/article/details/16923615?utm_source=copy>
+[Ant][StartWithAnt] 第七章 Ant扩展包ant-contrib的使用 - Sodino的专栏 - CSDN博客 <https://blog.csdn.net/sodino/article/details/16923615?utm_source=copy>
