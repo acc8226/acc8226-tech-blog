@@ -1,17 +1,17 @@
 ---
 title: Jackson 使用
-date: 2020.11.10 16:47:48
+date: 2020-11-10 16:47:48
 categories:
   - 语言-Java
   - 框架
 tags:
-- Java-框架
+- java
 - json
 ---
 
-老版本的 Jackson 使用的包名为 org.codehaus.jackson，而新版本使用的是com.fasterxml.jackson。
+老版本的 Jackson 使用的包名为 org.codehaus.jackson，而新版本使用的是 com.fasterxml.jackson。
 
-Jackson主要包含了3个模块
+Jackson 主要包含了3个模块
 
 * jackson-core
 * jackson-annotations
@@ -366,7 +366,7 @@ public class ResultConfig {
 
 第一种解决方案
 
-ObjectMapper对象添加
+ObjectMapper 对象添加
 mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 
 第二种解决方案
@@ -384,5 +384,5 @@ FasterXML Jackson学习笔记
 Jackson注解 @JsonFormat_徐海兴的专栏-CSDN博客
 <https://blog.csdn.net/u012326462/article/details/83019681>
 
-《轻松学习Jackson》教程 - 996极客教程
+《轻松学习 Jackson》教程 - 996极客教程
 <https://996geek.com/articles/164>

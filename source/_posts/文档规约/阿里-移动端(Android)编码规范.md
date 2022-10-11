@@ -1,6 +1,6 @@
 ---
 title: 阿里-移动端(Android)编码规范
-date: 2018.03.21 13:33:42
+date: 2018-03-21 13:33:42
 categories: 文档规约
 ---
 
@@ -36,6 +36,7 @@ GridView 的行 layout 以 module_grid_item 开头
 如：`module_login_btn_pressed,module_tabs_icon_home_normal`
 
 4\. 【推荐】anim 资源名称以小写单词+下划线的方式命名，采用以下规则：**`模块名_逻辑名称_[方向|序号]`**
+
 * tween 动 画 资 源 ： 尽 可 能 以 通 用 的 动 画 名 称 命 名 ， 如 module_fade_in, module_fade_out, module_push_down_in (动画+方向)；
 * frame 动画资源：尽可能以模 块+功能命名+序号。
 如：module_loading_grey_001
@@ -53,11 +54,11 @@ GridView 的行 layout 以 module_grid_item 开头
 **`父 style 名称.当前 style 名称`**
     如：
 
-    ```
-    <style name="ParentTheme.ThisActivityTheme">
-    …
-    </style>
-    ```
+```xml
+<style name="ParentTheme.ThisActivityTheme">
+…
+</style>
+```
 
 8\. 【推荐】string资源文件或者文本用到字符需要全部写入module_strings.xml文件中，字符串以小写单词+下划线的方式命名，采用以下规则：
 **`模块名_逻辑名称`**
@@ -94,7 +95,7 @@ Android 基本组件指 `Activity`、`Fragment`、`Service`、`BroadcastReceiver
 
 2. 【推荐】Activity#onSaveInstanceState()方法不是 Activity 生命周期方法，也不保证一定会被调用。它是用来在 Activity 被意外销毁时保存 UI 状态的，只能用于保存临时性数据，例如 UI 控件的属性等，不能跟数据的持久化存储混为一谈。持久化存储应该在 Activity#onPause()/onStop()中实行。
 
-3. 【强制】Activity 间通过隐式 Intent 的跳转，在发出 Intent 之前必须通过 resolveActivity检查，避免找不到合适的调用组件，造成ActivityNotFoundException 的异常。
+3. 【强制】Activity 间通过隐式 Intent 的跳转，在发出 Intent 之前必须通过 resolveActivity 检查，避免找不到合适的调用组件，造成ActivityNotFoundException 的异常。
 正例：
 
 ``` java
@@ -122,11 +123,11 @@ Intent intent = new Intent();
 intent.setAction("com.great.activity_intent.Intent_Demo1_Result3");
 ```
 
-4. 【强制】避免在 Service#onStartCommand()/onBind()方法中执行耗时操作，如果确实有需求，应改用 IntentService 或采用其他异步机制完成。
+4\. 【强制】避免在 Service#onStartCommand()/onBind()方法中执行耗时操作，如果确实有需求，应改用 IntentService 或采用其他异步机制完成。
 
-5. 【强制】避免在 BroadcastReceiver#onReceive()中执行耗时操作，如果有耗时工作，应该创建 IntentService 完成，而不应该在 BroadcastReceiver 内创建子线程去做。
+5\. 【强制】避免在 BroadcastReceiver#onReceive()中执行耗时操作，如果有耗时工作，应该创建 IntentService 完成，而不应该在 BroadcastReceiver 内创建子线程去做。
 
-6. 【强制】避免使用隐式 Intent 广播敏感信息，信息可能被其他注册了对应BroadcastReceiver 的 App 接收。
+6\. 【强制】避免使用隐式 Intent 广播敏感信息，信息可能被其他注册了对应BroadcastReceiver 的 App 接收。
 
 7\. 【 推 荐 】 添 加 Fragment 时 ， 确 保 FragmentTransaction#commit() 在Activity#onPostResume()或者 FragmentActivity#onResumeFragments()内调用。不要随意使用 FragmentTransaction#commitAllowingStateLoss()来代替，任何commitAllowingStateLoss()的使用必须经过 code review，确保无负面影响。
 
@@ -172,12 +173,12 @@ public void showPromptDialog(String text){
   promptDialog.show(getFragmentManager(), text);
 ```
 
-3. 【推荐】源文件统一采用 UTF-8 的形式进行编码。
-4. 【强制】禁止在非 ui 线程进行 view 相关操作。
-5. 【推荐】文本大小使用单位 dp，view 大小使用单位 dp。对于 Textview，如果在文字大小确定的情况下推荐使用 wrap_content 布局避免出现文字显示不全的适配问题。
-6. 【强制】禁止在设计布局时多次设置子 view 和父 view 中为同样的背景造成页面过度绘制，推荐将不需要显示的布局进行及时隐藏。
-7. 【推荐】灵活使用布局，推荐 Merge、ViewStub 来优化布局，尽可能多的减少 UI布局层级，推荐使用 FrameLayout，LinearLayout、RelativeLayout 次之。
-8. 【推荐】在需要时刻刷新某一区域的组件时，建议通过以下方式避免引发全局 layout刷新:
+3\. 【推荐】源文件统一采用 UTF-8 的形式进行编码。
+4\. 【强制】禁止在非 ui 线程进行 view 相关操作。
+5\. 【推荐】文本大小使用单位 dp，view 大小使用单位 dp。对于 Textview，如果在文字大小确定的情况下推荐使用 wrap_content 布局避免出现文字显示不全的适配问题。
+6\. 【强制】禁止在设计布局时多次设置子 view 和父 view 中为同样的背景造成页面过度绘制，推荐将不需要显示的布局进行及时隐藏。
+7\. 【推荐】灵活使用布局，推荐 Merge、ViewStub 来优化布局，尽可能多的减少 UI布局层级，推荐使用 FrameLayout，LinearLayout、RelativeLayout 次之。
+8\. 【推荐】在需要时刻刷新某一区域的组件时，建议通过以下方式避免引发全局 layout刷新:
     1. 设置固定的 view 大小的高宽，如倒计时组件等；
     2. 调用 view 的 layout 方式修改位置，如弹幕组件等；
     3. 通过修改 canvas 位置并且调用 invalidate(int l, int t, int r, int b)等方式限定刷新区域；

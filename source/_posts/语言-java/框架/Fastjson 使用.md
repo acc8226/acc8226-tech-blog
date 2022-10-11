@@ -5,7 +5,7 @@ categories:
   - 语言-Java
   - 框架
 tags:
-- Java 框架
+- java
 - json
 ---
 
@@ -13,7 +13,7 @@ fastjson 是阿里巴巴的开源 JSON 解析库，它可以解析 JSON 格式�
 
 功能完备: 支持泛型，支持流处理超大文本，支持枚举，支持序列化和反序列化扩展。
 
-下载 jar包 或者配置 maven 依赖:
+下载 jar 包 或者配置 maven 依赖:
 
 ```xml
 <dependency>
@@ -27,7 +27,7 @@ fastjson 是阿里巴巴的开源 JSON 解析库，它可以解析 JSON 格式�
 
 创建 JSON 对象非常简单，只需使用 JSONObject（fastJson提供的json对象） 和 JSONArray（fastJson提供json数组对象） 对象即可。
 
-我们可以把JSONObject 当成一个 **Map<String,Object>** 来看，只是 JSONObject 提供了更为丰富便捷的方法，方便我们对于对象属性的操作。
+我们可以把 JSONObject 当成一个 **Map<String,Object>** 来看，只是 JSONObject 提供了更为丰富便捷的方法，方便我们对于对象属性的操作。
 
 1. 直接构造
 
@@ -38,19 +38,19 @@ json.put("bbb", 2);
 json.put("ccc", new Object());
 ```
 
-2. 查看源码, 可知构造的时候传入 map
+2\. 查看源码, 可知构造的时候传入 map
 
-```
-    // 源码
-    public JSONObject(Map<String, Object> map){
-        if (map == null) {
-            throw new IllegalArgumentException("map is null.");
-        }
-        this.map = map;
+```java
+// 源码
+public JSONObject(Map<String, Object> map){
+    if (map == null) {
+        throw new IllegalArgumentException("map is null.");
     }
+    this.map = map;
+}
 ```
 
-3. JSON.parseObject 方法
+3\. JSON.parseObject 方法
 
 ```java
 // 字符串解析 JSON 对象
@@ -59,7 +59,7 @@ JSONObject obj = JSON.parseObject("{\"title\":\"fastJson真的很快\"}");
 
 ## 创建 JSONArray 对象
 
-同样我们可以把 JSONArray 当做一个 List<Object>，可以把 JSONArray 看成 JSONObject 对象的一个集合。
+同样我们可以把 JSONArray 当做一个 `List<Object>`，可以把 JSONArray 看成 JSONObject 对象的一个集合。
 
 1. 直接构造
 
@@ -68,7 +68,7 @@ JSONArray json = new JSONArray();
 json.add("xxx");
 ```
 
-2. 查看源码, 可知构造的时候传入 list
+2\. 查看源码, 可知构造的时候传入 list
 
 ```java
 // 源码
@@ -77,7 +77,7 @@ public JSONArray(List<Object> list){
 }
 ```
 
-3. JSON.parseArray 一系列方法
+3\. JSON.parseArray 一系列方法
 
 ```java
 // 从字符串解析JSON数组
@@ -156,7 +156,7 @@ System.out.println(JSON.toJSONString(new Person(18, null, null), SerializerFeatu
 
 **NameFilter 对序列化后的参数名进行拦截处理。**
 
-```
+```java
 Object process(Object object, String name, Object value);
 ```
 
@@ -164,7 +164,7 @@ Object process(Object object, String name, Object value);
 
 **ValueFilter 对序列化后的value进行拦截处理。**
 
-```
+```java
 String process(Object object, String name, Object value);
 ```
 
@@ -173,8 +173,9 @@ String process(Object object, String name, Object value);
 **ContextValueFilter extends SerializeFilter**
 在某些场景下，对Value做过滤，需要获得所属JavaBean的信息，包括类型、字段、方法等。在fastjson-1.2.9中，提供了ContextValueFilter，类似于之前版本提供的**ValueFilter**，只是多了BeanContext参数可用。
 
-```
+```java
 package com.alibaba.fastjson.serializer;
+
 public interface ContextValueFilter extends SerializeFilter {
     Object process(BeanContext context,
            Object object,
@@ -222,7 +223,7 @@ public @interface JSONField {
 举例`JSONField(name = "DATE OF BIRTH",  format="yyyy-MM-dd HH:mm:ss", serialize = true, ordinal = 1)`
 * JSONField 的 format 参数用于格式化 Date 类型。
 
-```
+```java
 // 配置date序列化和反序列使用yyyyMMdd日期格式
 @JSONField(format="yyyy-MM-dd")
 public Date date;
@@ -240,7 +241,7 @@ public Date date;
 SerializeConfig：内部是个map容器主要功能是配置并记录每种Java类型对应的序列化类。
 举例使用:
 
-```
+```java
 SerializeConfig.getGlobalInstance().addFilter(A.class, upcaseNameFilter);
 ```
 
@@ -270,7 +271,7 @@ public class ClassNameFilterTest extends TestCase {
 
 用 fastjson 实现克隆
 
-```
+```java
 JSON.parseObject(JSON.toJSONString(this), this.getClass());
 ```
 

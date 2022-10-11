@@ -1,14 +1,15 @@
 ## 安装
 
 ## PHP 是什么？
+
 *   PHP（全称：PHP：Hypertext Preprocessor，即"PHP：超文本预处理器"）是一种通用开源脚本语言。
 *   PHP 脚本在服务器上执行。
 *   PHP 可免费下载使用。
 *   PHP 对初学者而言简单易学。
 *   PHP 也为专业的程序员提供了许多先进的功能。
 
-
 PHP版 的 Hello World
+
 ```php
 <?php
   echo 'Hello World';
@@ -21,9 +22,9 @@ PHP版 的 Hello World
 `$ sudo php -S localhost:80`
 
 ## php 脚本
+
 PHP 脚本可以放在文档中的任何位置。
 PHP 脚本以 <?php 开始，以 ?> 结束：
-
 
 通过 PHP，有两种在浏览器输出文本的基础指令：echo 和 print。
 

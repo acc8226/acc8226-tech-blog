@@ -5,7 +5,6 @@ https://www.phpmyadmin.net/files/
 
 因为 phpMyAdmin 的界面是完全基于您的浏览器，所以您需要一个网站服务器（如 Apache, nginx, [IIS](https://docs.phpmyadmin.net/zh_CN/latest/glossary.html#term-iis)）来安装 phpMyAdmin。
 
-
 ### Which PHP versions does phpMyAdmin support?[](#which-php-versions-does-phpmyadmin-support "Permalink to this headline")
 
 Since release 4.5, phpMyAdmin supports only PHP 5.5 and newer. Since release 4.1 phpMyAdmin supports only PHP 5.3 and newer. For PHP 5.2 you can use 4.0.x releases.
@@ -16,7 +15,7 @@ HHVM is supported up to phpMyAdmin 4.8.
 
 Since release 5.0, phpMyAdmin supports only PHP 7.1 and newer.
 
-**这里由于我装的是 PHP Version 5.4.16，所以准备安装 4.4 的版本。** 
+**这里由于我装的是 PHP Version 5.4.16，所以准备安装 4.4 的版本。**
 然后访问 http://YOUE-IP/phpMyAdmin 试试。
 这是报错找不到文件夹，解决办法就是创建该文件夹 `/var/lib/php/session`
 
