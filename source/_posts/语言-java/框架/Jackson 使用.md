@@ -58,7 +58,7 @@ String jsonString = objectMapper.writeValueAsString(man);
 System.out.println(jsonString);
 ```
 
-> * 在默认情况下（即不对ObjectMapper做任何额外配置，也不对Java对象加任何Annotation），ObjectMapper依赖于Java对象的默认的 **无参构造函数** 进行反序列化，并且严格地通过 getter（序列化依赖get方法） 和 setter（反序列化依赖set方法） 的命名(而**非成员变量**)规约进行序列化和反序列化。
+> * 在默认情况下（即不对ObjectMapper 做任何额外配置，也不对 Java 对象加任何Annotation），ObjectMapper依赖于Java对象的默认的 **无参构造函数** 进行反序列化，并且严格地通过 getter（序列化依赖 get 方法） 和 setter（反序列化依赖set方法） 的命名(而**非成员变量**)规约进行序列化和反序列化。
 > * ObjectMapper在序列化时，将所有的字段一一序列化，无论这些字段是否有值 或者 为 null。这一点和阿里巴巴 fastjson 的不同, fastjson 的做法是若字段为 null 则不序列化该字段.
 
 ## json 转对象 (反序列化)
@@ -77,8 +77,8 @@ ObjectMapper支持从 byte[]、File、InputStream、字符串等数据的 JSON �
 ```
 
 * 对反序列而言，若报错`(no Creators, like default construct, exist): cannot deserialize from Object value (no delegate- or property-based Creator)`。这个时候说明缺少空构造（无论是默认构造还是手动构造）或者在带参的构造中需要搭配注解 @JsonCreator 进行使用。
-* 在反序列化的时候，默认情况下接受输出信息的实体类的字段不能有输入中不存在的，否则会报 `com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "name2" `。 如果某些输入字段在对应实体类中无匹配，则该字段值为赋予 null 属正常. 或者在class上面加上`@JsonIgnoreProperties(ignoreUnknown = true) `注解
-* Jackson除了处理普通对象，还可以对Java集合、数组等进行序列化处理。如果需要”反序列化集合”的元素为非基本类型，可以通过创建一个空实现的TypeReference实例，将需要反序列化的集合带上泛型信息传递进去，以解决泛型信息无法传递的问题。
+* 在反序列化的时候，默认情况下接受输出信息的实体类的字段不能有输入中不存在的，否则会报 `com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "name2"`。 如果某些输入字段在对应实体类中无匹配，则该字段值为赋予 null 属正常. 或者在class上面加上 `@JsonIgnoreProperties(ignoreUnknown = true)` 注解
+* Jackson 除了处理普通对象，还可以对Java集合、数组等进行序列化处理。如果需要”反序列化集合”的元素为非基本类型，可以通过创建一个空实现的TypeReference实例，将需要反序列化的集合带上泛型信息传递进去，以解决泛型信息无法传递的问题。
 
 ### @JsonProperty 注解
 
@@ -91,7 +91,7 @@ ObjectMapper支持从 byte[]、File、InputStream、字符串等数据的 JSON �
 * required: 定义在反序列化期间是否需要属性的值
 
 **value的用法:**
-默认情况下映射的JSON属性与注解的属性名称相同，不过可以使用该注解的**`value`**值修改JSON属性名, 例如 `value = "mobileNumber"`
+默认情况下映射的 JSON 属性与注解的属性名称相同，不过可以使用该注解的**`value`**值修改JSON属性名, 例如 `value = "mobileNumber"`
 
 **access的用法:**
 
@@ -378,7 +378,7 @@ public class User
 
 ## 参考
 
-FasterXML Jackson学习笔记
+FasterXML Jackson 学习笔记
 <https://www.jianshu.com/p/4bd355715419>
 
 Jackson注解 @JsonFormat_徐海兴的专栏-CSDN博客

@@ -16,11 +16,11 @@ Android Gradle 为我们提供了 productFlavors 方法来添加不同的渠道�
 
 Flurry 和友盟是我们常用的两个 App 统计分析工具，基本上所有的软件都会接入其中的一个。Flurry 本身没有渠道的概念，它有 Application，所以可以把一个 Application 当成一个渠道，这样就可以使用Flurry统计每个渠道的活跃新增等情况；友盟本身有渠道的概念，只要我们在AndroidManifest.xml配置标注即可，下面以这两种统计演示下多渠道的用法。
 
-Flurry 的统计是以 Application划分渠道的，每个Application都有一个Key，我们称之为Flurry Key，这个当我们在Flurry上创建Application的时候就自动帮我们生成好了，现在我们要做的就是为每个渠道配置不同的Flurry Key，还记得我们在第九章讲的自动已BuildConfig吗，利用的就是这个功能。
+Flurry 的统计是以 Application 划分渠道的，每个Application都有一个Key，我们称之为Flurry Key，这个当我们在Flurry上创建Application的时候就自动帮我们生成好了，现在我们要做的就是为每个渠道配置不同的Flurry Key，还记得我们在第九章讲的自动已BuildConfig吗，利用的就是这个功能。
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-d02532e611828083.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-这样每个渠道的BuildConfig类中都有会有名字为FLURRY_KEY常量定义，它的值是我们在渠道中使用buildConfigField指定的值，每个渠道都不一样，这样我们只需要在代码中使用这个常量即可，这样每个渠道的统计分析就可以做到了。
+这样每个渠道的 BuildConfig 类中都有会有名字为 FLURRY_KEY 常量定义，它的值是我们在渠道中使用buildConfigField 指定的值，每个渠道都不一样，这样我们只需要在代码中使用这个常量即可，这样每个渠道的统计分析就可以做到了。
 `Fluury.init(this, FLUURY_KEY);
 
 友盟的话，本身是有渠道的概念，不过它不是在代码中指定的，而是在AndroidManifest.xml中配置的，通过配置meta-data标签来设置。
@@ -30,7 +30,7 @@ Flurry 的统计是以 Application划分渠道的，每个Application都有一�
 ID" android:name="UMENG_CHANNEL">
 ```
 
-示例中的Channel ID就是我们的渠道值，比如baidu，google等。如果我们就动态的改变的，就需要用到我们在9.5小结讲到的manifestPlaceholders，这一小节就是以友盟的多渠道为例进行讲解的，大家可以再回过头来看一下，这里不在进行详细讲了。
+示例中的 Channel ID就是我们的渠道值，比如baidu，google等。如果我们就动态的改变的，就需要用到我们在9.5小结讲到的 manifestPlaceholders，这一小节就是以友盟的多渠道为例进行讲解的，大家可以再回过头来看一下，这里不在进行详细讲了。
 
 现在通过这两个例子我们可以发现，我们所做的其实就是对每个渠道，根据不同的业务进行不同的定制，这里是两个统计分析，以后可能还有其他监控、推送等业务，在定制的过程中我们用到了Android Gradle提供的不同的配置以及功能，最终来达到我们的目的，所以下一节我们就详细的讲下对渠道(ProductFlavor)的定制，然后大家根据这些Android Gradle提供的对渠道定制的功能，来实现自己不同渠道的业务需求。
 

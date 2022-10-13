@@ -4,6 +4,7 @@
 
 **主键约束**
 表中任意列只要满足以下条件，都可以用于主键。
+
 ❑ 任意两行的主键值都不相同。
 ❑ 每行都具有一个主键值（即列中不允许NULL值）。
 ❑ 包含主键值的列从不修改或更新。（大多数 DBMS 不允许这么做，但如果你使用的 DBMS 允许这样做，好吧，千万别！）
@@ -63,6 +64,7 @@ CREATE TABLE person_tbl (
 ### 普通索引
 
 1. 创建索引的基本方式
+
 ```sql
 CREATE INDEX indexName
 ON table_name (column_name)
@@ -71,18 +73,20 @@ ON table_name (column_name)
 ON 用来指定被索引的表，而索引中包含的列（此例中仅有一列）在表名后的圆括号中给出。
 
 2. 修改表结构(添加索引)
+
 ```sql
 ALTER table tableName
 ADD INDEX indexName(column_name)
 ```
 
 3. 创建表的时候直接指定
+
 ```sql
-CREATE TABLE mytable(  
-ID INT NOT NULL,   
-username VARCHAR(16) NOT NULL,  
-INDEX [indexName] (username(length))  
-);  
+CREATE TABLE mytable(
+ID INT NOT NULL,
+username VARCHAR(16) NOT NULL,
+INDEX [indexName] (username(length))
+);
 ```
 
 ### 唯一索引
@@ -90,23 +94,26 @@ INDEX [indexName] (username(length))
 它与前面的普通索引类似，不同的就是：索引列的值必须唯一，但允许有空值。如果是组合索引，则列值的组合必须唯一。它有以下几种创建方式：
 
 1. 创建索引
+
 ```sql
 CREATE UNIQUE INDEX indexName
-ON mytable(username(length)) 
+ON mytable(username(length))
 ```
 
 2. 修改表结构
+
 ```sql
 ALTER table mytable
 ADD UNIQUE [indexName] (username(length))
 ```
 
 3. 创建表的时候直接指定
+
 ```sql
-CREATE TABLE mytable(  
-ID INT NOT NULL,   
-username VARCHAR(16) NOT NULL,  
-UNIQUE [indexName] (username(length))  
+CREATE TABLE mytable(
+ID INT NOT NULL,
+username VARCHAR(16) NOT NULL,
+UNIQUE [indexName] (username(length))
 );
 ```
 
@@ -120,6 +127,7 @@ UNIQUE [indexName] (username(length))
 ## 使用 ALTER 命令删除索引
 
 主键作用于列上（可以一个列或多个列联合主键），添加主键索引时，你需要确保该主键默认不为空（NOT NULL）。实例如下：
+
 ```sql
 ALTER TABLE testalter_tbl ADD PRIMARY KEY (i);
 ```
@@ -133,12 +141,15 @@ SHOW INDEX FROM table_name;
 ```
 
 删除索引的语法
+
 ```sql
-DROP INDEX [indexName] ON mytable; 
+DROP INDEX [indexName] ON mytable;
 ```
 
 ## 参考
 
-SQL 必知必会（第5版）-本·福达-微信读书https://weread.qq.com/web/reader/f7632a30720befadf7636bb
+SQL 必知必会（第5版）-本·福达-微信读书
+<https://weread.qq.com/web/reader/f7632a30720befadf7636bb>
 
-Mysql 中索引 key 、primary key 、unique key 与 index 区别_凡心所向，素履所往，生如逆旅，一苇以航-CSDN博客_key 索引 https://blog.csdn.net/rnzhiw/article/details/82084331
+Mysql 中索引 key 、primary key 、unique key 与 index 区别_凡心所向，素履所往，生如逆旅，一苇以航-CSDN博客_key 索引
+<https://blog.csdn.net/rnzhiw/article/details/82084331>

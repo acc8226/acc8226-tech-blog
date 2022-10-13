@@ -247,7 +247,7 @@ String mSelectionClause = "var = " + mUserInput;
 ## Bitmap、Drawable 与动画
 
 1. 【强制】加载大图片或者一次性加载多张图片，应该在异步线程中进行。图片的加载，涉及到 IO 操作，以及 CPU 密集操作，很可能引起卡顿。
-2. 【强制】在 ListView，ViewPager，RecyclerView，GirdView 等组件中使用图片时，应做好图片的缓存，避免始终持有图片导致内存泄露，也避免重复创建图片，引起性 能 问 题 。 建 议 使 用 Fresco （ https://github.com/facebook/fresco ）、 Glide（https://github.com/bumptech/glide）等图片库。
+2. 【强制】在 ListView，ViewPager，RecyclerView，GirdView 等组件中使用图片时，应做好图片的缓存，避免始终持有图片导致内存泄露，也避免重复创建图片，引起性 能 问 题 。 建议使用 Fresco （ https://github.com/facebook/fresco ）、 Glide（https://github.com/bumptech/glide）等图片库。
 3. 【强制】png 图片使用 tinypng 或者类似工具压缩处理，减少包体积。
 4. 【推荐】应根据实际展示需要，压缩图片，而不是直接显示原图。手机屏幕比较小，直接显示原图，并不会增加视觉上的收益，但是却会耗费大量宝贵的内存。
 5. 【强制】使用完毕的图片，应该及时回收，释放宝贵的内存。

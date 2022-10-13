@@ -17,6 +17,7 @@ show character set;
 show collation;
 
 通常系统管理在安装时定义一个默认的字符集和校对。此外，也可以在创建数据库时，指定默认的字符集和校对。为了确定所用的字符集和校对，可以使用以下语句：
+
 ```sql
 show variables like 'character%';
 show variables like 'collation%';
@@ -27,6 +28,7 @@ show variables like 'collation%';
 行名称需要尽量避开设置为关键字。能为 `desc`, 否则会报错, 而使用 `descr` 或者 `description`不会报错。所以应该 desc 是一个关键字。
 
 这个语句会报错
+
 ```sql
 create table mytable(
 id integer AUTO_INCREMENT PRIMARY KEY ,
@@ -35,6 +37,7 @@ completed TINYINT(1) NOT NULL);
 ```
 
 这个语句可以
+
 ```sql
 create table mytable(
 id integer AUTO_INCREMENT PRIMARY KEY ,
@@ -51,6 +54,7 @@ completed TINYINT(1) NOT NULL);
 在 MySQL 中，NULL 值与任何其它值的比较（即使是 NULL）永远返回 NULL，即 NULL = NULL 返回 NULL 。
 
 以下四种情况下都返回 NULL。
+
 ```sql
 select null=null, null != null, 1=null, 1!=null
 ```
@@ -58,6 +62,7 @@ select null=null, null != null, 1=null, 1!=null
 ## COLLATE 关键字
 
 在 mysql 中执行`show create table <tablename>`指令，可以看到一张表的建表语句，example 如下：
+
 ```sql
 CREATE TABLE `table1` (
     `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
@@ -73,7 +78,7 @@ COLLATE = utf8_unicode_ci;
 
 ## COLLATE 是用来做什么的？
 
-所谓`utf8_unicode_ci`，其实是用来排序的规则。对于 mysql 中那些字符类型的列，如 `VARCHAR`，`CHAR`，`TEXT` 类型的列，都需要有一个 `COLLATE` 类型来告知 mysql 如何对该列进行排序和比较。简而言之，**COLLATE 会影响到ORDER BY 语句的顺序，会影响到 WHERE 条件中大于小于号筛选出来的结果，会影响 **`DISTINCT`**、**`GROUP BY`**、**`**HAVING**`**语句的查询结果**。另外，mysql 建索引的时候，如果索引列是字符类型，也**会影响索引创建**，只不过这种影响我们感知不到。总之，**凡是涉及到字符类型比较或排序的地方，都会和 COLLATE 有关**。
+所谓`utf8_unicode_ci`，其实是用来排序的规则。对于 mysql 中那些字符类型的列，如 `VARCHAR`，`CHAR`，`TEXT` 类型的列，都需要有一个 `COLLATE` 类型来告知 mysql 如何对该列进行排序和比较。简而言之，**COLLATE 会影响到 ORDER BY 语句的顺序，会影响到 WHERE 条件中大于小于号筛选出来的结果，会影响 **`DISTINCT`**、**`GROUP BY`**、**`**HAVING**`**语句的查询结果**。另外，mysql 建索引的时候，如果索引列是字符类型，也**会影响索引创建**，只不过这种影响我们感知不到。总之，**凡是涉及到字符类型比较或排序的地方，都会和 COLLATE 有关**。
 
 ### 各种 COLLATE 的区别
 
@@ -105,6 +110,7 @@ mysql 中和 utf8mb4 相关的所有 COLLATE
 设置`COLLATE`可以在示例级别、库级别、表级别、列级别、以及SQL指定。实例级别的`COLLATE`设置就是mysql配置文件或启动指令中的`collation_connection`系统变量。
 
 库级别设置`COLLATE`的语句如下：
+
 ```sql
 CREATE DATABASE <db_name> DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ```
@@ -112,6 +118,7 @@ CREATE DATABASE <db_name> DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_
 如果库级别没有设置`CHARSET`和`COLLATE`，则库级别默认的`CHARSET`和`COLLATE`使用实例级别的设置。在mysql8.0以下版本中，你如果什么都不修改，默认的`CHARSET`是`Latin1`，默认的`COLLATE`是`latin1_swedish_ci`。从mysql8.0开始，默认的`CHARSET`已经改为了`utf8mb4`，默认的`COLLATE`改为了`utf8mb4_0900_ai_ci`。
 
 表级别的`COLLATE`设置，则是在`CREATE TABLE`的时候加上相关设置语句，例如：
+
 ```sql
 CREATE TABLE (
 
@@ -136,6 +143,7 @@ CREATE TABLE (
 如果列级别没有设置 `CHARSET`和 `COLATE`，则列级别会继承表级别的`CHARSET`与`COLLATE`。
 
 最后，你也可以在写 SQL 查询的时候显示声明`COLLATE`来覆盖任何库表列的`COLLATE`设置，不太常用，了解即可：
+
 ```sql
 SELECT DISTINCT field1 COLLATE utf8mb4_general_ci FROM table1;
 
@@ -153,5 +161,5 @@ SELECT field1, field2 FROM table1 ORDER BY field1 COLLATE utf8mb4_unicode_ci;
 
 ## 参考
 
-MYSQL中的COLLATE是什么？ - 云+社区 - 腾讯云
-https://cloud.tencent.com/developer/article/1366841?fromSource=waitui
+MYSQL 中的 COLLATE 是什么？ - 云+社区 - 腾讯云
+<https://cloud.tencent.com/developer/article/1366841?fromSource=waitui>
