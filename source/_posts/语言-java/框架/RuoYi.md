@@ -277,3 +277,7 @@ spring boot 中可以用 @Validated 来校验数据，如果数据异常则会�
 在需要被记录日志的 controller 方法上添加@ Log 注解，使用方法如下：
 
 ## 代码分析
+
+## 文件上传/下载
+
+由于后端框架支持分布式存储应用 + api，所以如果有需要类似表格模板的功能可用借助 file 接口进行上传并拿到下载地址即可。形如 `http://sand-mold.foxfirst.cn:9111/mfox/2022/09/20/6a8f52ba-ebb7-43c5-a103-62318bf87e68.xlsx`

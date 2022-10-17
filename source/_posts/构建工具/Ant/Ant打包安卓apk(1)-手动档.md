@@ -1,5 +1,5 @@
 ---
-title: Ant打包安卓apk(1) 手动档
+title: Ant 打包安卓 apk(1) 手动档
 date: 2022-06-23 10:53:12
 categories:
   - 构建工具
@@ -20,7 +20,7 @@ tags:
 
 ## 1. aapt(Android Asset Packaging Tool) - Package the android resources得到R.java文件
 
-命令`build-tools/安卓某个版本/aapt.exe package`
+命令 `build-tools/安卓某个版本/aapt.exe package`
 
 ```bat
 set path=%path%;D:\Android\android-sdk\build-tools\25.0.2

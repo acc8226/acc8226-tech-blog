@@ -3,7 +3,7 @@ Localizing Currency 本地化货币
 Localizing Number 本地化数字
 Localing Text 本地化文本
 
-对于本地化，java的Locale类。Util包的使用方法如下
+对于本地化，java 的 Locale 类。Util 包的使用方法如下
 
 ```java
 Locale l = new Locale ("de","DE");

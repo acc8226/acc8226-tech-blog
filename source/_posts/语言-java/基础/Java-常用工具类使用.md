@@ -31,14 +31,14 @@ Java中有一个类Arrays，包含一些对数组操作的静态方法。
 * 批量设置值
 * 计算哈希值 hashCode()
 
-> Java 8 和 9 对Arrays类又增加了一些方法，比如将数组转换为流、并行排序、数组比较等，具体可参看API文档。
+> Java 8 和 9 对Arrays 类又增加了一些方法，比如将数组转换为流、并行排序、数组比较等，具体可参看API文档。
 
-Arrays 中的 toString、equals、hashCode都有对应的针对多维数组的方法：
+Arrays 中的 toString、equals、hashCode 都有对应的针对多维数组的方法：
 deeTtoString
 deepEquals
 deepHashCode
 
-其实，Arrays 中包含的数组方法是比较少的，很多常用的操作没有，比如，Arrays的binarySearch只能针对已排序数组进行查找，那没有排序的数组怎么方便查找呢？Apache有一个开源包（<http://commons.apache.org/proper/commons-lang/>），里面有一个类 ArrayUtils（位于包org.apache.commons.lang3），包含了更多的常用数组操作，这里就不列举了。数组是计算机程序中的基本数据结构，Arrays 类以及 ArrayUtils 类封装了关于数组的常见操作，使用这些方法，避免“重新发明轮子”吧。
+其实，Arrays 中包含的数组方法是比较少的，很多常用的操作没有，比如，Arrays的binarySearch只能针对已排序数组进行查找，那没有排序的数组怎么方便查找呢？Apache 有一个开源包（<http://commons.apache.org/proper/commons-lang/>），里面有一个类 ArrayUtils（位于包org.apache.commons.lang3），包含了更多的常用数组操作，这里就不列举了。数组是计算机程序中的基本数据结构，Arrays 类以及 ArrayUtils 类封装了关于数组的常见操作，使用这些方法，避免“重新发明轮子”吧。
 
 ## Collections 类
 

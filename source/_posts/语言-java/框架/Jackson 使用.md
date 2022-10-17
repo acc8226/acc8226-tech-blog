@@ -5,7 +5,7 @@ categories:
   - 语言-Java
   - 框架
 tags:
-- java
+- Java
 - json
 ---
 
@@ -87,7 +87,7 @@ ObjectMapper支持从 byte[]、File、InputStream、字符串等数据的 JSON �
 * value: 定义逻辑属性的名称, 作用是把该属性的名称序列化为另外一个名称
 * access: 更改序列化和反序列化中逻辑属性的可见性
 * defaultValue: 用于记录预期的默认值
-* index: 定义与object指定的其他属性相关的属性的数字索引
+* index: 定义与 object 指定的其他属性相关的属性的数字索引
 * required: 定义在反序列化期间是否需要属性的值
 
 **value的用法:**

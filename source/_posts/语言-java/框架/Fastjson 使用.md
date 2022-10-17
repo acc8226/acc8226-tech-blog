@@ -1,15 +1,16 @@
 ---
 title: Fastjson 使用
 date: 2020.03.18 19:41:15
+updated: 2022-10-14 22:36:00
 categories:
   - 语言-Java
   - 框架
 tags:
-- java
-- json
+- Java
+- Json
 ---
 
-fastjson 是阿里巴巴的开源 JSON 解析库，它可以解析 JSON 格式的字符串，支持将 Java Bean序列化为JSON字符串，也可以从 JSON 字符串反序列化到 JavaBean。
+fastjson 是阿里巴巴的开源 JSON 解析库，它可以解析 JSON 格式的字符串，支持将 Java Bean 序列化为 JSON 字符串，也可以从 JSON 字符串反序列化到 JavaBean。
 
 功能完备: 支持泛型，支持流处理超大文本，支持枚举，支持序列化和反序列化扩展。
 
@@ -25,7 +26,7 @@ fastjson 是阿里巴巴的开源 JSON 解析库，它可以解析 JSON 格式�
 
 ## 创建 JSONObject 对象
 
-创建 JSON 对象非常简单，只需使用 JSONObject（fastJson提供的json对象） 和 JSONArray（fastJson提供json数组对象） 对象即可。
+创建 JSON 对象非常简单，只需使用 JSONObject（fastJson提供的json对象） 和 JSONArray（fastJson 提供 json 数组对象） 对象即可。
 
 我们可以把 JSONObject 当成一个 **Map<String,Object>** 来看，只是 JSONObject 提供了更为丰富便捷的方法，方便我们对于对象属性的操作。
 
@@ -80,20 +81,20 @@ public JSONArray(List<Object> list){
 3\. JSON.parseArray 一系列方法
 
 ```java
-// 从字符串解析JSON数组
+// 从字符串解析 JSON 数组
 JSONArray arr = JSON.parseArray("[\"一只兔子\",\"两只绵羊\"]\n");
 ```
 
 ## 对象转 json 串 (序列化)
 
-com.alibaba.fastjson.JSON的静态方法, 适用于任意 Object 对象.包括JSONObject, JSONArray
+com.alibaba.fastjson.JSON 的静态方法, 适用于任意 Object 对象.包括 JSONObject, JSONArray
 
 ```java
 // 序列化
 String text = JSON.toJSONString(obj);
 ```
 
-由于 JSONObject 和 JSONArray 都继承与JSON抽象类, 如果直接得到了 JSON 抽象类的子类, 可以直接toString 或者 toJSONString方法(两者等价)进行序列化.
+由于 JSONObject 和 JSONArray 都继承与JSON抽象类, 如果直接得到了 JSON 抽象类的子类, 可以直接 toString 或者 toJSONString 方法(两者等价)进行序列化.
 
 **序列化默认情况严格依赖 bean 的 Getter 方法，所以一定要规范 Getter 方法的写法。**
 
@@ -523,7 +524,7 @@ public class App {
 
 ### fastjson 处理布尔值
 
-建议 POJO 中布尔值一律定义为 Boolean 类型，且都不要加 is前缀，防止一些框架解析引起的序列化错误。
+建议 POJO 中布尔值一律定义为 Boolean 类型，且都不要加 is 前缀，防止一些框架解析引起的序列化错误。
 
 ```java
 public static class Person {

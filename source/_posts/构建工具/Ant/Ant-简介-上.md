@@ -40,7 +40,7 @@ Path %ANT_HOME%\bin
 <zip destfile="project.zip" basedir="."/>
 ```
 
-## 插播Java教程
+## 插播 Java 教程
 
 ### javac 的官方说法
 
@@ -71,13 +71,13 @@ java会基于提供的classpath（缩写成cp）路径去搜索。
 
 > 之所以加`v`是为了生成详细输出, 去掉也没影响
 
-### 关于Classpath一些笔记
+### 关于 Classpath 一些笔记
 
 `Classpath` 可以用3种不同的方式设置：
 
-* 如果没有设置——那么classpath参数就会被忽略，环境变量中的CLASSPATH就会被使用到
-* 如果环境变量CLASSPATH没找到，那么就是默认使用当前目录（”.”）
-* 如果classpath作为命令行参数显示设置了，那么它就是覆盖所有其他的值。 当设置覆盖默认值（当前目录）时，classpath会造成不可预料的结果。 所以要么省略, 要么`-cp .;lib/aaa.jar`例如为`javac -cp .;lib/aaa.jar bbb.java`
+* 如果没有设置——那么 classpath 参数就会被忽略，环境变量中的 CLASSPATH 就会被使用到
+* 如果环境变量 CLASSPATH 没找到，那么就是默认使用当前目录（”.”）
+* 如果 classpath 作为命令行参数显示设置了，那么它就是覆盖所有其他的值。 当设置覆盖默认值（当前目录）时，classpath会造成不可预料的结果。 所以要么省略, 要么`-cp .;lib/aaa.jar`例如为`javac -cp .;lib/aaa.jar bbb.java`
 
 入门小案例
 
