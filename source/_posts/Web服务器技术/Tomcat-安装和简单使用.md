@@ -14,7 +14,7 @@ ApacheTomcat 是 JakartaEE (正式的 JavaEE)技术的一个子集的开放源�
 | 4.0              | 2.3          | 3.0         | 1.1                | 1.1                              | 9.0.x                     | 9.0.64                      | 8 and later                                |
 | 3.1              | 2.3          | 3.0         | 1.1                | 1.1                              | 8.5.x                     | 8.5.81                      | 7 and later                                |
 | 3.1              | 2.3          | 3.0         | 1.1                | N/A                              | 8.0.x (superseded)        | 8.0.53 (superseded)         | 7 and later                                |
-| 3.0              | 2.2          | 2.2         | 1.1                | N/A                              | 7.0.x (archived)          | 7.0.109 (archived)          | 6 and later<br>(7 and later for WebSocket) |
+| 3.0              | 2.2          | 2.2         | 1.1                | N/A                              | 7.0.x (archived)          | 7.0.109 (archived)          | 6 and later (7 and later for WebSocket) |
 | 2.5              | 2.1          | 2.1         | N/A                | N/A                              | 6.0.x (archived)          | 6.0.53 (archived)           | 5 and later                                |
 | 2.4              | 2.0          | N/A         | N/A                | N/A                              | 5.5.x (archived)          | 5.5.36 (archived)           | 1.4 and later                              |
 | 2.3              | 1.2          | N/A         | N/A                | N/A                              | 4.1.x (archived)          | 4.1.40 (archived)           | 1.3 and later                              |
@@ -61,7 +61,6 @@ Neither the JAVA_HOME nor the JRE_HOME environment variable is defined
 At least one of these environment variable is needed to run this program
 >
 > 解决办法: cent os 下安装 open-jre8 即可 `su -c "yum install java-1.8.0-openjdk-devel"`
-
 > **mac下查看自己的IP**
 终端输入`ifconfig | grep "inet " | grep -v 127.0.0.1` 代码 显示ip地址
 或者 `ifconfig en0`

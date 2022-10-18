@@ -12,7 +12,7 @@ tags: Markdown
 
 Jekyll 要求如下:
 
-Ruby 版本2.5.0或更高版本
+Ruby 版本 2.5.0 或更高版本
 RubyGems
 GCC and Make
 
