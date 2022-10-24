@@ -32,8 +32,8 @@ System.out.println(Arrays.stream(data).max().getAsInt());
 
 ```java
 /**
-    * 功能描述：18位身份证号加权校验规则
-    **/
+ * 功能描述：18位身份证号加权校验规则
+ **/
 private static boolean judgeIdCard(final String idCardNo) {
     log.info("------18位身份证号加权校验方法---入参身份证号：{}------", idCardNo);
     try {

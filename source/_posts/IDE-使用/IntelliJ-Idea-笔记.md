@@ -6,11 +6,11 @@ categories: IDE-使用
 
 ## 下载和安装
 
-https://www.jetbrains.com/idea/download/other.html
+<https://www.jetbrains.com/idea/download/other.html>
 
-版本推荐：根据我的观察，每年五月份过后可以下载上个年度的最终版本了。
+版本推荐：根据我的观察，每年五月份过后去获取上个年度的最新版本应该是最终版本，可下载用纸。
 
-> 若下载的是 2020 之后的版本，已经不区分是否 with Bundled JBR 了。直接选择 zip 格式即可。
+> 若下载的是 2020 之后的版本已不再区分是否 with Bundled JBR 了。直接选择 zip 格式即可。
 
 ## Windows 版的安装说明
 
@@ -102,8 +102,8 @@ File->Settings… Editor->Code Style
 
 ## 快捷键
 
-Ctrl+N Navigate|Class Open any file in your project 快速打开类
-Ctrl+Shift+N Navigate|File Open any file in your project 快速打开文件
+Ctrl + N Navigate|Class Open any file in your project 快速打开类
+Ctrl + Shift + N Navigate|File Open any file in your project 快速打开文件
 
 Ctrl + F  / Cmd + F  意为 find 在当前文件进行文本查找
 Ctrl + Shift + F      在当前项目进行文本查找
@@ -111,48 +111,47 @@ Ctrl + Shift + F      在当前项目进行文本查找
 Ctrl + R  / Cmd + R 意为 replace 在当前文件进行文本替换
 Ctrl + Shift + R      在当前项目进行文本替换
 
-Ctrl+Shift+Up/Down 整块代码 范围内向上/下移动
+Ctrl + Shift + Up/Down 整块代码 范围内向上/下移动
+Alt + Shift + Up/Down 上/下移一行 或者 选中行代码向上/下移动
 
-Alt+Shift+Up/Down 上/下移一行 或者 选中行代码向上/下移动
+Alt + Up/Down 在方法间快速移动定位
 
-Alt+Up/Down 在方法间快速移动定位
+Ctrl + O (Code|Override Methods) 重写方法
+Ctrl + I(Code|Implements Methods) 实现方法
 
-Ctrl+O (Code|Override Methods) 重写方法
-Ctrl+I(Code|Implements Methods) 实现方法
+Ctrl + U 转到父类
+Ctrl + Alt + B 跳转到类 / 方法实现处
 
-Ctrl+U 转到父类
-Ctrl+Alt+B 跳转到类 / 方法实现处
+Ctrl + Shift + U 大小写转化
 
-Ctrl+Shift+U 大小写转化
+Shift + F6 (Refactor|Rename) 重构–重命名
 
-Shift+F6 (Refactor|Rename) 重构 – 重命名
+Ctrl + Alt + L 格式化代码
 
-Ctrl+Alt+L 格式化代码
-
-Ctrl+G 跳转到行
+Ctrl + G 跳转到行
 
 Ctrl + Alt + 左方向键 | 快速返回上次查看代码的位置（Back）
 Ctrl + Alt + 右方向键 | 快速返回上次查看代码的位置（Forward）
 
 Alt+F7 (Edit|Find|Find Usages)
 
-Ctrl+Q(View|Quick Documentation)
-Ctrl+B(Navigate|Declaration or Usages) 查看详情
+Ctrl + Q(View|Quick Documentation)
+Ctrl + B(Navigate|Declaration or Usages) 查看详情
 click the mouse on usages with the CTRL 进入详情
-Ctrl+F12 (Navigate|File Structure) + select element press Enter key
+Ctrl + F12 (Navigate|File Structure) + select element press Enter key
 
-Ctrl+Shift+空格 自动补全
-Shift+Click close tabs 还是喜欢用鼠标中键
+Ctrl + Shift + 空格 自动补全
+Shift + Click close tabs 还是喜欢用鼠标中键
 
-Alt+Insert (Code|Generate) 自动生成，代码自动生成，如生成对象的 set / get 方法，构造函数，toString() 等
+Alt + Insert (Code|Generate) 自动生成，代码自动生成，如生成对象的 set / get 方法，构造函数，toString() 等
 Alt+F1 查到当前编辑元素
 
-Ctrl+W(select word)
-Ctrl+方向键（左 / 右）跳转到上一个 下一个单词的首位置
-Ctrl+方向键（上 / 下）无效
+Ctrl + W(select word)
+Ctrl + 方向键（左 / 右）跳转到上一个 下一个单词的首位置
+Ctrl + 方向键（上 / 下）无效
 
-Shift+方向键（左 / 右）选中内容左/右移动一位
-Shift+方向键（上 / 下）选中内容上 / 下移动一行
+Shift + 方向键（左 / 右）选中内容左/右移动一位
+Shift + 方向键（上 / 下）选中内容上 / 下移动一行
 
 当光标在单词首 或者 尾的位置时，可以 Ctrl+Shift+Left/Right 选中靠左/靠右单词
 
@@ -168,6 +167,8 @@ Ctrl+Y 删除行
 
 Alt + 左方向键       向左切换tab页
 Alt + 右方向键       向右切换tab页
+
+抽取函数/方法  Command-Option-M（Ctrl-Alt-M）
 
 **修改 Project 工具窗口（或其他活动工具窗口）大小**
 
@@ -188,10 +189,12 @@ Shift + ESC 隐藏工具窗口 也能和 F12 连用。
 Java 开发过程经常需要编写有固定格式的代码，例如说声明一个私有变量，logger 或者 bean 等等。对于这种小范围的代码生成，我们可以利用 IDEA 提供的 Live Templates功能。刚开始觉得它只是一个简单的 Code Snippet，后来发现它支持变量函数配置，可以支持很复杂的代码生成。下面我来介绍一下Live Templates 的用法。
 
 IDEA 自带很多常用的动态模板，在 Java 代码中输入 fori，回车就会出现
+
 ```java
 for (int i = 0; i < ; i++) {
 }
 ```
+
 按 Tab 可以在各个空白处跳转，手动填值。
 
 ![详见设置页面-Live Templates](https://upload-images.jianshu.io/upload_images/1662509-662f0d4a3c6ed377.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -200,6 +203,7 @@ for (int i = 0; i < ; i++) {
 * **sout** 生成`System.out.println();`
 
 ## Postfix Completion
+
 Postfix Completion 功能本质上也是代码模板，只是它比 Live Templates 来得更加便捷一点点而已。具体它是做什么的，我们通过下面一张 Gif 演示图来说明：
 
 ![image](https://upload-images.jianshu.io/upload_images/1662509-009cc6a8e8d3442b.gif?imageMogr2/auto-orient/strip)
@@ -253,6 +257,7 @@ Postfix Completion 功能本质上也是代码模板，只是它比 Live Templat
 * 在创建 class 类的时候, 如果是 x.y.z.MyClass 的形式, IEDA 会自动创建 x.y.z 包, 是不是很强大
 
 ## IntelliJ IDEA 两种 keymap 快捷键方案 Mac OS X 和 Mac OS X 10.5+ 的区别
+
 就是Mac OS X 10.5+更贴近于 Mac 系统本身快捷键的操作体验，IDE的快捷键与系统快捷冲突的更少；而 Mac OS X 方案更贴近于 IntelliJ IDEA固有的设计。
 
 因此，如果你有经常更换系统平台进行开发的需求，那么为了快捷键的更快适应，达到体验一致性，就**使用 Mac OS X 方案**；如果想要更爽的利用 mac 系统开发，没有跨平台和协作性的问题的话，就使用 Mac OS X 10.5+方案。
@@ -260,7 +265,6 @@ Postfix Completion 功能本质上也是代码模板，只是它比 Live Templat
  官网：http://www.jetbrains.com/idea/download/#section=windows
 
 ![设置编码](https://upload-images.jianshu.io/upload_images/1662509-43b4d7de28f46b8b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
 
 | **快捷键**            | **介绍**                                                     |
 | --------------------- | ------------------------------------------------------------ |

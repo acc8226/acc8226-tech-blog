@@ -1,6 +1,7 @@
 ## 标准输入输出流
 
 字符输入: `char c = (char)System.in.read();`
+
 字符串输入:
 
 ```java

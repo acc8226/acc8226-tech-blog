@@ -4,7 +4,7 @@ date: 2017.01.03 13:04:14
 categories: IDE-使用
 ---
 
-adb 工具位于 SDK 的 **platform-tools** 目录下，因此在命令行中使用 ABD 的时候，需要通过 cd 命令，切换到该目录下，或者将 platform-tools 的路径添加到系统环境变量中，这样就可以直接使用了。
+adb 工具位于 SDK 的 **platform-tools** 目录下，因此在命令行中使用 adb 的时候，需要通过 cd 命令，切换到该目录下，或者将 platform-tools 的路径添加到系统环境变量中，这样就可以直接使用了。
 
 * `adb shell` 就可以使用 shell 命令了
 * `adb reboot` 重新启动
