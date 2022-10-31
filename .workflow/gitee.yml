@@ -1,50 +1,50 @@
-version: '1.0'
-name: pipeline-20220806
-displayName: pipeline-20220806
-triggers:
-  trigger: auto
-  push:
-    branches:
-      prefix:
-        - ''
-variables:
-  global:
-    - accessToken
-    - hostName
-    - repoPath
-    - userName
-stages:
-  - name: stage-a8ac94d3
-    displayName: 未命名
-    strategy: naturally
-    trigger: auto
-    executor: []
-    steps:
-      - step: build@nodejs
-        name: build_nodejs
-        displayName: Nodejs 构建
-        nodeVersion: 17.8.0
-        commands:
-          - '# 设置 NPM 源，提升安装速度'
-          - npm config set registry https://registry.npmmirror.com
-          - '# 执行编译命令'
-          - npm install hexo-cli -g
-          - npm install
-          - hexo clean
-          - hexo g
-          - git config --global user.name "Gitee-Go"
-          - git config --global user.email "acc8226@qq.com"
-          - git clone --depth 1 "https://$userName:$accessToken@$hostName/$userName/$repoPath"
-          - cd $userName/
-          - git rm -rf .
-          - cp -r ../public/* ./
-          - cp ./404/index.html ./404.html
-          - git add .
-          - git commit -m "committed by gitee go"
-          - git push origin main
-        caches:
-          - ~/.npm
-          - ~/.yarn
-        notify: []
-        strategy:
-          retry: '0'
+# version: '1.0'
+# name: pipeline-20220806
+# displayName: pipeline-20220806
+# triggers:
+#   trigger: auto
+#   push:
+#     branches:
+#       prefix:
+#         - ''
+# variables:
+#   global:
+#     - accessToken
+#     - hostName
+#     - repoPath
+#     - userName
+# stages:
+#   - name: stage-a8ac94d3
+#     displayName: 未命名
+#     strategy: naturally
+#     trigger: auto
+#     executor: []
+#     steps:
+#       - step: build@nodejs
+#         name: build_nodejs
+#         displayName: Nodejs 构建
+#         nodeVersion: 17.8.0
+#         commands:
+#           - '# 设置 NPM 源，提升安装速度'
+#           - npm config set registry https://registry.npmmirror.com
+#           - '# 执行编译命令'
+#           - npm install hexo-cli -g
+#           - npm install
+#           - hexo clean
+#           - hexo g
+#           - git config --global user.name "Gitee-Go"
+#           - git config --global user.email "acc8226@qq.com"
+#           - git clone --depth 1 "https://$userName:$accessToken@$hostName/$userName/$repoPath"
+#           - cd $userName/
+#           - git rm -rf .
+#           - cp -r ../public/* ./
+#           - cp ./404/index.html ./404.html
+#           - git add .
+#           - git commit -m "committed by gitee go"
+#           - git push origin main
+#         caches:
+#           - ~/.npm
+#           - ~/.yarn
+#         notify: []
+#         strategy:
+#           retry: '0'
