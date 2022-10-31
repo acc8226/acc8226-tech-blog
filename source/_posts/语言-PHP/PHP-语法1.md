@@ -2,11 +2,11 @@
 
 ## PHP 是什么？
 
-*   PHP（全称：PHP：Hypertext Preprocessor，即"PHP：超文本预处理器"）是一种通用开源脚本语言。
-*   PHP 脚本在服务器上执行。
-*   PHP 可免费下载使用。
-*   PHP 对初学者而言简单易学。
-*   PHP 也为专业的程序员提供了许多先进的功能。
+* PHP（全称：PHP：Hypertext Preprocessor，即"PHP：超文本预处理器"）是一种通用开源脚本语言。
+* PHP 脚本在服务器上执行。
+* PHP 可免费下载使用。
+* PHP 对初学者而言简单易学。
+* PHP 也为专业的程序员提供了许多先进的功能。
 
 PHP版 的 Hello World
 
@@ -76,7 +76,7 @@ echo 和 print 区别:
 * print - 只允许输出一个字符串，返回值总为 1
 
 ```php
-$cars=array("Volvo","BMW","Toyota");
+$cars = array("Volvo","BMW","Toyota");
 echo "我车的品牌是 {$cars[0]}";
 
 echo "这是一个", "字符串，", "使用了", "多个", "参数。";

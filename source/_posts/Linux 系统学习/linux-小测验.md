@@ -14,8 +14,8 @@ crontab -e 添加一下内容
 在 Linux 中，对于文本的处理和分析是极为重要的，现在有一个文件叫做 data1，可以使用下面的命令下载：
 
 ```sh
-$ cd /home/shiyanlou
-$ wget http://labfile.oss.aliyuncs.com/courses/1/data1
+cd /home/shiyanlou
+wget http://labfile.oss.aliyuncs.com/courses/1/data1
 ```
 
 data1 文件里记录是一些命令的操作记录，现在需要你从里面找出出现频率次数前 3 的命令并保存在 `/home/shiyanlou/result`。

@@ -69,8 +69,8 @@ Starting Jetty: OK Wed Nov 20 10:26:53 MST 2013
 
 ## 遇到过的问题
 
-问题：jetty 隔几天凌晨定时出现404错误（linux /tmp/)
-解决方案：(jetty.home)/work下创建一个统一的work目录，这样最方便部署。
+问题：jetty 隔几天凌晨定时出现 404 错误（linux /tmp/)
+解决方案：(jetty.home)/work下创建一个统一的 work 目录，这样最方便部署。
 
 ## 参考
 

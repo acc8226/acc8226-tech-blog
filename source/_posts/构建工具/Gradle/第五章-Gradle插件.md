@@ -4,7 +4,7 @@ Gradle 本身内置了很多常用的插件，这些插件基本上能帮我们�
 
 ### 5.1 插件是什么
 
-插件是为了解决某一问题域构建甚至各种问题，在Gradle的基础上，提供的可复用的扩展。
+插件是为了解决某一问题域构建甚至各种问题，在 Gradle 的基础上，提供的可复用的扩展。
 
 把插件应用到你的项目中，插件会扩展项目的功能，帮助你在项目的构建过程中做很多事情：
 
@@ -33,7 +33,7 @@ Gradle 本身内置了很多常用的插件，这些插件基本上能帮我们�
 ![](http://upload-images.jianshu.io/upload_images/1662509-1e8635af92f20291.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 以前三种写法是等价的，不要我们第一种用的最多，因为它比较建议，容易记。第二种写法一般适用于我们在build文件中自定义的插件--也就是脚本插件。
-二进制插件一般都是被打包在一个jar里独立发布的，比如我们自定义的插件，在发布的时候我们也可以为其指定plugin id，这个plugin id最好是一个全限定名称，就像你的包名一样，这样发布的插件plugin id就不会重复，比如org.flysnow.tools.plugin.xxx。
+二进制插件一般都是被打包在一个 jar 里独立发布的，比如我们自定义的插件，在发布的时候我们也可以为其指定plugin id，这个plugin id最好是一个全限定名称，就像你的包名一样，这样发布的插件 plugin id 就不会重复，比如 org.flysnow.tools.plugin.xxx。
 
 ##### 5.2.2 应用脚本插件
 
@@ -69,7 +69,7 @@ Action的方式就是我们自己要new一个Action，然后在execute方法里�
 
 第三方发布的作为jar的二进制插件，我们在应用的时候，必须要现在buildscript{}里配置其classpath才能使用，这个不像Gradle为我们提供的内置插件。比如我们的Android Gradle插件，就属于Android发布的第三方插件，如果要使用他们我们先要进行配置。
 
-```
+```groovy
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
@@ -107,9 +107,9 @@ buildscript{}块是一个在构建项目之前，为项目进行前期准备和�
 
 plugins dsl是一种新的插件应用方式，Gradle2.1以上版本才可以用。目前这个功能还在内测中以后可能会变，我们先了解以下，遇到这种写法我们也知道是什么意思。
 
-```
+```groovy
 plugin{
-	id 'java'
+    id 'java'
 }
 ```
 
@@ -117,15 +117,15 @@ plugin{
 
 还记得前面我们应用第三方插件的时候要先使用buildscript配置吧？使用plugins就有一种例外，如果该插件已经被托管在https://plugins.gradle.org/网站上，我们就不用在buildscript里配置classpa依赖了，直接使用plugins就可以应用插件。
 
-```
+```groovy
 plugin{
-	id 'org.sonarqube' version "1.2"
+    id 'org.sonarqube' version "1.2"
 }
 ```
 
 ##### 5.2.6 更多好用的插件
 
-开源的力量是强大的，很多开发者为 Gradle 社区贡献了很多好用的插件，这些查看我们可以在 https://plugins.gradle.org/ 上找到，也可以到Github上找。
+开源的力量是强大的，很多开发者为 Gradle 社区贡献了很多好用的插件，这些查看我们可以在 <https://plugins.gradle.org/> 上找到，也可以到 Github 上找。
 
 ### 5.3 自定义插件
 

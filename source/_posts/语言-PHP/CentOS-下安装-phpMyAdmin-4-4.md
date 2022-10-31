@@ -1,7 +1,7 @@
 首先去官网下载 phpMyAdmin
 
 phpMyAdmin - Files
-https://www.phpmyadmin.net/files/
+<https://www.phpmyadmin.net/files/>
 
 因为 phpMyAdmin 的界面是完全基于您的浏览器，所以您需要一个网站服务器（如 Apache, nginx, [IIS](https://docs.phpmyadmin.net/zh_CN/latest/glossary.html#term-iis)）来安装 phpMyAdmin。
 
@@ -20,7 +20,8 @@ Since release 5.0, phpMyAdmin supports only PHP 7.1 and newer.
 这是报错找不到文件夹，解决办法就是创建该文件夹 `/var/lib/php/session`
 
 然后刷新页面，继续报错
-```
+
+```text
 Warning in ./libraries/session.inc.php#105
  session_start(): open(/var/lib/php/session/sess_htpikat322t7fgvok2nh4sb4tkcrla55, O_RDWR) failed: Permission denied (13)
 ```
@@ -29,6 +30,7 @@ Warning in ./libraries/session.inc.php#105
 ![](https://upload-images.jianshu.io/upload_images/1662509-e4ef74ba83e2814b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 然后访问 http://YOUR-IP/phpMyAdmin/setup。配置一下后下载生成最终的 config.inc.php 文件
+
 ```php
 <?php
 /*

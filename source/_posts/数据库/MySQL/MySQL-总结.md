@@ -26,6 +26,7 @@ default-character-client 客户端发送什么编码的数据
 default-character-result 数据采用什么编码发给客户端
 
 在总配置文件 my.ini 中进行配置，可实现一劳永逸
+
 ```
 [mysql]
 default-character-set=gbk
@@ -40,8 +41,8 @@ default-character-set=gbk
 **从 t_user表中，取出 user_name字段相同的记录中，id最大的那一行数据**
 
 ```sql
-select  id,user_name from t_user 
-where  id in (select max(id) from t_user group by user_name ) 
+select  id,user_name from t_user
+where  id in (select max(id) from t_user group by user_name )
 ```
 
 **sql server 中查询一个表中某个数据重复条数大于1的所有信息**
@@ -52,7 +53,8 @@ select count(A) [as](https://www.baidu.com/s?wd=as&tn=SE_PcZhidaonwhc_ngpagmjz&
 where [num](https://www.baidu.com/s?wd=num&tn=SE_PcZhidaonwhc_ngpagmjz&rsv_dl=gh_pc_zhidao) >1
 
 ## 使用 jdbc 连接数据库语法
-```
+
+```properties
 jdbc.url=jdbc:mysql:///test?characterEncoding=utf-8&serverTimezone=Asia/Shanghai
 ```
 
@@ -67,19 +69,22 @@ jdbc.url=jdbc:mysql:///test?characterEncoding=utf-8&serverTimezone=Asia/Shanghai
 1. 管理员权限运行命令提示符，登录 MySQL。
 
 2. 修改账户密码加密规则并更新用户密码
+
 ```sql
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'password' PASSWORD EXPIRE NEVER;   
 
-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';  
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password'; 
 ```
 
 3. 刷新权限并重置密码
+
 ```sql
-# 刷新权限 
-FLUSH PRIVILEGES; 
-```  
+# 刷新权限
+FLUSH PRIVILEGES;
+```
 
 再重置下密码：
+
 ```sql
 alter user 'root'@'localhost' identified by '123456';
 ```
@@ -107,6 +112,7 @@ Query OK, 0 rows affected (0.00 sec)
 ```
 
 如果希望使用用户名为”username”，使用密码 ”password” 从IP地址为 192.168.0.100 的主机连接到mysql服务器的话：
+
 ```sql
 GRANT ALL PRIVILEGES ON *.* TO 'username'@'192.168.0.100' IDENTIFIED BY 'password' WITH GRANT OPTION;
 

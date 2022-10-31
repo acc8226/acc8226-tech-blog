@@ -30,7 +30,7 @@ console.log(y); // 打印 "1"
 console.log(z); // 抛出 ReferenceError: z 未在 x 外部声明
 ```
 
-2. 声明变量在任何代码执行前创建，而非声明变量只有在执行赋值操作的时候才会被创建。
+2\. 声明变量在任何代码执行前创建，而非声明变量只有在执行赋值操作的时候才会被创建。
 
 ```js
 console.log(a);                // 抛出ReferenceError。
@@ -42,7 +42,7 @@ console.log(a);                // 打印"undefined"或""（不同浏览器实现
 console.log('still going...'); // 打印"still going..."。
 ```
 
-3. 声明变量是它所在上下文环境的不可配置属性，非声明变量是可配置的（如非声明变量可以被删除）。
+3\. 声明变量是它所在上下文环境的不可配置属性，非声明变量是可配置的（如非声明变量可以被删除）。
 
 ```js
 var a = 1;
@@ -168,6 +168,7 @@ console.log(this.y); // undefined
 ### 重复声明
 
 在同一个函数或块作用域中重复声明同一个变量会引起[`SyntaxError`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError "SyntaxError 对象代表尝试解析语法上不合法的代码的错误。")。
+
 ```js
 if (x) {
   let foo;

@@ -1,4 +1,5 @@
 全量查询语句
+
 ```sql
 SELECT column_name, function(column_name)
 FROM table_name
@@ -10,10 +11,11 @@ LIMIT 5
 ```
 
 全量关键字
+
 ```sql
-SELECT 
+SELECT
 FROM
-WHERE 
+WHERE
 GROUP BY
 HAVING
 ORDER BY
@@ -23,15 +25,15 @@ ORDER BY
 
 ## WHERE 过滤数据
 
-MySQL中可根据需要使用很多条件操作符和操作符的组合。为了检查某个范围的值，可使用BETWEEN操作符。
+MySQL中可根据需要使用很多条件操作符和操作符的组合。为了检查某个范围的值，可使用 BETWEEN 操作符。
 
-注意：是！=还是<>？！=和<>通常可以互换。但是，并非所有 DBMS 都支持这两种不等于操作符。如果有疑问，请参阅相应的 DBMS 文档。
+注意：是 ！= 还是 <>？！= 和 <> 通常可以互换。但是，并非所有 DBMS 都支持这两种不等于操作符。如果有疑问，请参阅相应的 DBMS 文档。
 
 SELECT语句有一个特殊的 WHERE 子句，可用来检查具有 NULL 值的列。这个WHERE子句就是 ISNULL 子句。
 
 **NULL 关键字**
-> NULL 无值（no value），它与字段包含0、空字符串或仅仅包含空格不同。
 
+> NULL 无值（no value），它与字段包含0、空字符串或仅仅包含空格不同。
 > NULL 与不匹配
 > 在通过过滤选择出不具有特定值的行时，你可能希望返回具有 NULL 值的行。但是，不行。因为未知具有特殊的含义，数据库不知道它们是否匹配，所以在匹配过滤或不匹配过滤时不返回它们。因此，在过滤数据时，一定要验证返回数据中确实给出了被过滤列具有 NULL 的行。
 
@@ -40,7 +42,7 @@ WHERE 可包含任意数目的 AND 和 OR 操作符。允许两者结合以进�
 
 SQL（像多数语言一样）在处理OR操作符前，优先处理AND操作符。
 
-> 在WHERE子句中使用圆括号 任何时候使用具有 AND 和 OR 操作符的WHERE子句，都应该使用圆括号明确地分组操作符。不要过分依赖默认计算次序，即使它确实是你想要的东西也是如此。使用圆括号没有什么坏处，它能消除歧义。
+> 在WHERE子句中使用圆括号 任何时候使用具有 AND 和 OR 操作符的 WHERE 子句，都应该使用圆括号明确地分组操作符。不要过分依赖默认计算次序，即使它确实是你想要的东西也是如此。使用圆括号没有什么坏处，它能消除歧义。
 
 **为什么要使用IN操作符？**
 其优点具体如下。
@@ -143,10 +145,10 @@ select cust_id  from orders where order_num in (
 **作为计算字段使用的成为相关子查询**
 
 ```sql
-select cust_email from customers where cust_id in 
-(select cust_id  from orders where order_num in 
-  (select order_num from orderitems where prod_id  = 'BR01' 
-  ) 
+select cust_email from customers where cust_id in
+(select cust_id  from orders where order_num in
+  (select order_num from orderitems where prod_id  = 'BR01'
+  )
 )
 ```
 
@@ -172,7 +174,7 @@ select cust_email from customers where cust_id in
 
 内连接
 
-方言版 
+方言版
 ```
 select xxx列 from 表A, 表b where 条件1=xxx
 ```
@@ -193,7 +195,7 @@ select xxx列 from 表A inner join 表b on 条件1=xxx
 
 多行单列 select * from 表1 别名1 where 列1 [IN, ALL, ANY] (select 列 from 表名2 别名2 where 条件)
 
-单行多列 select * from 表1 别名1 where (列1, 列2) in (select 列1, 列2  from 表2 别名2 where 条件) 
+单行多列 select * from 表1 别名1 where (列1, 列2) in (select 列1, 列2  from 表2 别名2 where 条件)
 很少见, 看上去像对象
 
 多行多列 select * from 表1 别名1 , (select ... ) 别名2 where 条件

@@ -2,12 +2,12 @@
 
 ### 结论
 
-1.  ssh key 的类型有四种，分别是 dsa、rsa、 ecdsa、ed25519。
-2.  根据数学特性，这四种类型又可以分为两大类，dsa/rsa 是一类，ecdsa/ed25519 是一类，后者算法更先进。
-3.  dsa 因为安全问题，已不再使用了。
-4.  ecdsa 因为政治原因和技术原因，也不推荐使用。
-5.  rsa 是目前兼容性最好的，应用最广泛的key类型，在用ssh-keygen工具生成 key的时候，默认使用的也是这种类型。不过在生成key时，如果指定的key size太小的话，也是有安全问题的，推荐 key size 是 3072 或更大。
-6.  ed25519 是目前最安全、加解密速度最快的key类型，由于其数学特性，它的 key的长度比 rsa 小很多，优先推荐使用。它目前唯一的问题就是兼容性，即在旧版本的ssh 工具集中可能无法使用。不过据我目前测试，还没有发现此类问题。
+1. ssh key 的类型有四种，分别是 dsa、rsa、 ecdsa、ed25519。
+2. 根据数学特性，这四种类型又可以分为两大类，dsa/rsa 是一类，ecdsa/ed25519 是一类，后者算法更先进。
+3. dsa 因为安全问题，已不再使用了。
+4. ecdsa 因为政治原因和技术原因，也不推荐使用。
+5. rsa 是目前兼容性最好的，应用最广泛的 key 类型，在用ssh-keygen工具生成 key的时候，默认使用的也是这种类型。不过在生成 key 时，如果指定的 key size 太小的话，也是有安全问题的，推荐 key size 是 3072 或更大。
+6. ed25519 是目前最安全、加解密速度最快的 key 类型，由于其数学特性，它的 key 的长度比 rsa 小很多，优先推荐使用。它目前唯一的问题就是兼容性，即在旧版本的 ssh 工具集中可能无法使用。不过据我目前测试，还没有发现此类问题。
 
 ## 什么是 OpenSSH
 
@@ -31,13 +31,13 @@ scp.exe 是在 SSH 上运行的文件复制实用工具
 ssh-keygen -t ed25519
 ```
 
-你可以按 Enter 来接受默认值，或指定要在其中生成密钥的路径和/或文件名。 此时，系统会提示你使用密码来加密你的私钥文件。 这可为空，但不建议这样做。 将密码与密钥文件一起使用来提供双因素身份验证。 
+你可以按 Enter 来接受默认值，或指定要在其中生成密钥的路径和/或文件名。 此时，系统会提示你使用密码来加密你的私钥文件。 这可为空，但不建议这样做。 将密码与密钥文件一起使用来提供双因素身份验证。
 
 现在，指定位置已有一个公共/专用 Ed25519 密钥对。 .pub 文件是公钥，没有扩展名的文件是私钥。
 
 ### 总结
 
-优先选择 ed25519，否则选择 rsa 
+优先选择 ed25519，否则选择 rsa
 
 ## 总结遇到的问题
 
@@ -53,12 +53,12 @@ ssh-keygen -t ed25519
 
 ### Linux SSH 远程登录错误解决办法 WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!
 
-**报错原因**: 
-当我们选择 yes 时，ssh会把阿里云服务器的公钥(host key)都记录在~/.ssh/known_hosts。当下次访问相同服务器时，ssh会核对host key。如果host key不同，ssh会发出警告，避免你受到中间人攻击。
+**报错原因**:
+当我们选择 yes 时，ssh会把阿里云服务器的公钥(host key)都记录在~/.ssh/known_hosts。当下次访问相同服务器时，ssh 会核对 host key。如果 host key不同，ssh 会发出警告，避免你受到中间人攻击。
 
 我这里之所以报错，是因为我重置了阿里云服务器，服务器host key发生了变化，所以再次登录时会报错。
 
-**解决办法**: 
-`ssh-keygen -R YourAliyunServerIp`     （YourAliyunServerIp 就是你阿里云服务器的公网ip）
+**解决办法**:
+`ssh-keygen -R YourAliyunServerIp` （YourAliyunServerIp 就是你阿里云服务器的公网ip）
 
-它会更改我们上面说到的known_hosts文件，并生成一个known_hosts.old文件，known_hosts.old文件其实就是known_hosts未修改前的版本。
+它会更改我们上面说到的 known_hosts 文件，并生成一个 known_hosts.old 文件，known_hosts.old 文件其实就是known_hosts 未修改前的版本。

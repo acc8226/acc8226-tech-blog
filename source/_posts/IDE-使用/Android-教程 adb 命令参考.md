@@ -1,6 +1,6 @@
 ---
 title: Android-教程 adb 命令参考
-date: 2017.01.03 13:04:14
+date: 2017-01-03 13:04:14
 categories: IDE-使用
 ---
 
@@ -18,7 +18,7 @@ adb 工具位于 SDK 的 **platform-tools** 目录下，因此在命令行中使
 调用 Activity Manager (am)
 
 调用软件包管理器 (pm)
-`$ pm list packages –f`    列出所有的Package。
+`$ pm list packages –f` 列出所有的Package。
 
 ## 截图
 
@@ -30,14 +30,12 @@ adb pull /sdcard/screenshot.png d:screenshot.png
 ## 连续截图
 
 ```sh
-
 adb shell
 cd /system/bin/
 screencap -p /sdcard/screenshot.png
 ```
 
 获取到当前设备停在哪个Activity上面。
-
 `adb shell dumpsys activity top`
 
 ## 参考

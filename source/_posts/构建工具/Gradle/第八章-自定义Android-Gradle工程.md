@@ -12,7 +12,7 @@ defaultConfig 是 android 对象中的一个配置块，负责定义所有的默
 
 ##### 8.1.1 applicationId
 
-applicationId 是 ProductFlavor 的一个属性，用于指定生成的 App 的包名，默认情况下是 null，这时候在构建的时候，会从我们的AndroidManifest.xml文件中读取，也就是我们在 AndroidManifest.xml 文件中配置的 manifest 标签的package属性值。
+applicationId 是 ProductFlavor 的一个属性，用于指定生成的 App 的包名，默认情况下是 null，这时候在构建的时候，会从我们的 AndroidManifest.xml 文件中读取，也就是我们在 AndroidManifest.xml 文件中配置的 manifest 标签的package属性值。
 
 ##### 8.1.2 minSdkVersion
 

@@ -27,7 +27,7 @@ KOD 依赖什么环境？
 
 然后最好也安装 mysql 模块，方便 php 访问 mysql
 
-```
+```sh
 yum install php-mysql
 ```
 

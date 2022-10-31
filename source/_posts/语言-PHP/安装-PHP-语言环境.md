@@ -1,27 +1,28 @@
 ## Ceno OS 下安装 php
 
-WordPress是使用PHP语言开发的博客平台，用户可以在支持PHP和MySQL数据库的服务器上架设属于自己的网站。也可以把WordPress当作一个内容管理系统（CMS）来使用。
+WordPress 是使用 PHP 语言开发的博客平台，用户可以在支持PHP和MySQL数据库的服务器上架设属于自己的网站。也可以把WordPress 当作一个内容管理系统（CMS）来使用。
 
-1. 执行如下命令，安装PHP环境。
+1\. 执行如下命令，安装PHP环境。
 
 ```bash
 yum -y install php php-mysql gd php-gd gd-devel php-xml php-common php-mbstring php-ldap php-pear php-xmlrpc
 ```
 
-2.    执行如下命令创建PHP测试页面。
+2\. 执行如下命令创建PHP测试页面。
 
 ```bash
 echo "<?php phpinfo(); ?>" > /var/www/html/phpinfo.php
 ```
 
-3.    执行如下命令，重启Apache服务。
+3\. 执行如下命令，重启Apache服务。
 
 ```bash
 systemctl restart httpd
 ```
 
 若使用 nginx, 则重新加载nginx服务`nginx -s reload`. 以下为我的nginx.conf 文件的配置, 目前我监听的是8088端口.
-```
+
+```sh
 server {
         listen       8088;
         server_name  localhost;
@@ -38,7 +39,7 @@ server {
     }
 ```
 
-4.    打开浏览器，访问`http://<ECS公网地址>/phpinfo.php`，显示如下页面表示PHP语言环境安装成功。
+4. 打开浏览器，访问 `http://<ECS公网地址>/phpinfo.php`，显示如下页面表示 PHP 语言环境安装成功。
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-024ce1b7f76e0d07.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -54,7 +55,7 @@ No package 'sqlite3' found
 
 解决办法:
 
-##  windows 下安装 php
+## windows 下安装 php
 
 XAMPP Apache + MariaDB + PHP + Perl
 

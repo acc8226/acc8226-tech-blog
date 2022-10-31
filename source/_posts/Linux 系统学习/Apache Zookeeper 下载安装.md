@@ -3,23 +3,24 @@ Apache ZooKeeper 是一个开发和维护开源服务器的项目，它支持高
 ## 下载地址
 
 北京理工大学 开源软件镜像服务
-https://mirror.bit.edu.cn/web/
+<https://mirror.bit.edu.cn/web/>
 
 清华大学开源软件镜像站 | Tsinghua Open Source Mirror
-https://mirrors.tuna.tsinghua.edu.cn/
+<https://mirrors.tuna.tsinghua.edu.cn/>
 
 北京外国语大学开源软件镜像站 | BFSU Open Source Mirror
-https://mirrors.bfsu.edu.cn/
+<https://mirrors.bfsu.edu.cn/>
 
 zookeeper-3.4.14 下载地址
-https://mirrors.bfsu.edu.cn/apache/zookeeper/zookeeper-3.4.14/zookeeper-3.4.14.tar.gz
+<https://mirrors.bfsu.edu.cn/apache/zookeeper/zookeeper-3.4.14/zookeeper-3.4.14.tar.gz>
 
 ## 遇到过的问题
 
 ### Zookeeper 3.5启动时 8080 端口被占用
 
-通过查阅 Zookeeper3.5 的官方文档，发现这是Zookeeper3.5的新特性：
-```
+通过查阅 Zookeeper3.5 的官方文档，发现这是 Zookeeper3.5 的新特性：
+
+```text
 New in 3.5.0: The AdminServer is an embedded Jetty server that provides an HTTP interface to the four letter word commands. By default, the server is started on port 8080, and commands are issued by going to the URL "/commands/[command name]", e.g., http://localhost:8080/commands/stat. The command response is returned as JSON. Unlike the original protocol, commands are not restricted to four-letter names, and commands can have multiple names; for instance, "stmk" can also be referred to as "set_trace_mask". To view a list of all available commands, point a browser to the URL /commands (e.g., http://localhost:8080/commands). See the AdminServer configuration options for how to change the port and URLs.
 ```
 
@@ -29,7 +30,7 @@ New in 3.5.0: The AdminServer is an embedded Jetty server that provides an HTTP 
 
 我们可以修改在 zoo.cfg 中修改 AdminServer 的端口：
 
-```
+```cfg
 admin.serverPort=8888
 ```
 
@@ -38,10 +39,10 @@ admin.serverPort=8888
 这是 zookeeper 自己搞了一个简易应用服务器，可以查看一些信息
 
 listint and issuing commands
-http://localhost:8888/commands
+<http://localhost:8888/commands>
 
 ## 第三方工具：数据查看工具 ZooInspector
 
-1. 下载 https://issues.apache.org/jira/secure/attachment/12436620/ZooInspector.zip
+1. 下载 <https://issues.apache.org/jira/secure/attachment/12436620/ZooInspector.zip>
 2. 进入目录 ZooInspector\build，运行 zookeeper-dev-ZooInspector.jar
 3. 点击左上角连接按钮，输入 zk 服务地址：ip 或者 主机名:2181

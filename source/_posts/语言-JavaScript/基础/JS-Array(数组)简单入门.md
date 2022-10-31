@@ -80,7 +80,7 @@ var arr = Array(element0, element1, ..., elementN);
 > 译者注: var arr=[4] 和 var arr=new Array(4)是不等效的，
 > 使用字面值(literal)的方式应该不仅仅是便捷，同时也不易踩坑
 
-为了创建一个长度不为0，但是又没有任何元素的数组
+为了创建一个长度不为 0，但是又没有任何元素的数组
 
 ```js
 var arr = new Array(arrayLength);

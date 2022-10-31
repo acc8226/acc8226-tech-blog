@@ -1,3 +1,9 @@
+---
+title: PostgreSQL 简介
+date:
+categories:
+---
+
 ## 软件安装
 
 ### Download PostgreSQL
@@ -33,7 +39,7 @@ Installation Log: C:\Users\ferder\AppData\Local\Temp\install-postgresql.log
 
 ### docker 版安装
 
-技巧：可以选择 alpine linux版本占用空间较小。
+技巧：可以选择 alpine linux 版本占用空间较小。
 
 ```sh
 docker run --name some-postgres \

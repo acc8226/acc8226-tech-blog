@@ -1,14 +1,15 @@
 ---
-title: Angular-入门
+title: Angular 入门
 categories:
-  - 语言
-  - JavaScript
+  - 框架
+  - js
 tags:
 - js
+- Angular
 ---
 
 Angular 中文官网
-https://angular.cn/
+<https://angular.cn/>
 
 Angular 需要 Node.js 的活跃 LTS 版或维护期 LTS版。
 

@@ -139,23 +139,23 @@ install 和 uninstall 类的任务可以直接在我们已链接的设备上安�
 
 这种方式比较简单，要导入到 Android Studio，我们打开 Android Studio，选择 File->Import Project,然后会弹出一个对话框，选择我们的 Eclipse ADT 工程的目录，然后就会打开一个向导，按向导一步步操作，最后完成的时候，会打开一个 "import-summary.txt" 文件，里面描述的我们这次导入涉及到的文件迁移和改变等等，我们再根据我们上面讲的Android Gradle工程结构做调整即可。
 
-以上是我导入的一个例子生成的import-summary.txt，我们可以看到有一段Moved Files，也就是说，这种导入方式，会把我们原来Eclipse+ADT项目的目录结构转换成了Android Studio的目录结构，破坏了原来的目录结构，如果对于目录结构有严格要求的，就不要使用这种方式了，可以使用我们下面讲的第二种方式，如果没有严格要求的，建议采用这种方式，因为这是Android Studio默认推荐的目录结构，也可以熟悉下，为以后的新的功能，甚至团队间的协作也方便，因为它毕竟是Android Studio的一种默认的约定，大家都熟悉，沟通交流简单。
+以上是我导入的一个例子生成的import-summary.txt，我们可以看到有一段Moved Files，也就是说，这种导入方式，会把我们原来Eclipse+ADT项目的目录结构转换成了Android Studio 的目录结构，破坏了原来的目录结构，如果对于目录结构有严格要求的，就不要使用这种方式了，可以使用我们下面讲的第二种方式，如果没有严格要求的，建议采用这种方式，因为这是Android Studio默认推荐的目录结构，也可以熟悉下，为以后的新的功能，甚至团队间的协作也方便，因为它毕竟是 Android Studio 的一种默认的约定，大家都熟悉，沟通交流简单。
 
 ##### 7.6.2 从Eclipse+ADT中导出
 
 从Eclipse导出，也非常简单，我们首先打开Eclipse，然后在其中找到我们要导出的工程，右击->Export，导出之前确保你的ADT越新越好，因为可能有些BUG会在新版里修复。
 
-选择导出之后，会看到一个对话框，我们在其中展开Android，然后会看到Generate Gradle Build Files选项，选择它即可，然后就会打开一个向导，我们按找向导操作，就会生成Gradle Android工程需要的Setting和build脚本文件。
+选择导出之后，会看到一个对话框，我们在其中展开Android，然后会看到 Generate Gradle Build Files 选项，选择它即可，然后就会打开一个向导，我们按找向导操作，就会生成 Gradle Android 工程需要的Setting和build脚本文件。
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-68b5b214364c9aad.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-最后我们再打开Android Studio，然后选择File->Import Project，选择我们刚刚导出的Android工程目录，然后Next，一步步即可导入到Android Studio中。
+最后我们再打开Android Studio，然后选择 File->Import Project，选择我们刚刚导出的 Android 工程目录，然后Next，一步步即可导入到Android Studio中。
 
 下面我们看下这种方式生成的build.gradle脚本示例
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-9d14dbea29f95d5f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-这种方式保留了原来项目的目录结构，为了达到这个目的，又让Android Studio可以识别该项目，所以Eclipse Export功能对生成的 build.gradle 脚本文件做了处理，从上面的例子中我们可以看到，重写了main这个SourceSet，为Android Studio 指明我们的 java文件、res资源文件、assets文件、aidl文件以及manifest文件在项目中的位置，这中Android Studio 才能识别他们，进而作为一个Android工程进行编译构建。
+这种方式保留了原来项目的目录结构，为了达到这个目的，又让Android Studio可以识别该项目，所以Eclipse Export功能对生成的 build.gradle 脚本文件做了处理，从上面的例子中我们可以看到，重写了main这个SourceSet，为Android Studio 指明我们的 java 文件、res 资源文件、assets 文件、aidl 文件以及 manifest文件在项目中的位置，这中Android Studio 才能识别他们，进而作为一个 Android 工程进行编译构建。
 
 以前的 Eclipse+ADT 的工程结构，单元测试是放在 tests 目录下的，所以在这里对其单元测试目录进行了重新设置，指定我们原来的 tests 目录为其单元测试根目录。debug、和 release 这两个 Build Type 也类似。
 

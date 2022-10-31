@@ -20,7 +20,7 @@ chmod +x shadowsocks-all.sh
 
 ./shadowsocks-all.sh 2>&1| tee shadowsocks-all.log
 
-4、执行上述命令会有相关输入提示操作；根据需要选择。不明白的话就直接选1或者直接默认回车；之后会提示你输入密码和端口，对应设置即可，或者直接使用默认的；由于 iPhone端的wingy目前只支持到cfb，所以加密方式选择aes-256-cfb也就是选择7；全部执行完成之后就会出现如下信息：
+4、执行上述命令会有相关输入提示操作；根据需要选择。不明白的话就直接选1或者直接默认回车；之后会提示你输入密码和端口，对应设置即可，或者直接使用默认的；由于 iPhone 端的 wingy 目前只支持到 cfb，所以加密方式选择 aes-256-cfb 也就是选择7；全部执行完成之后就会出现如下信息：
 
 ```text
 StartingShadowsocks success
@@ -47,7 +47,7 @@ Enjoy it!
 Windows：https://github.com/shadowsocks/shadowsocks-windows/releases
 Mac：https://github.com/yangfeicheung/Shadowsocks-X/releases
 Android：https://github.com/shadowsocks/shadowsocks-android/releases
-iPhone：App Store上下载 ShadowLink，这个要用国外appid才可以下载哦。国内的搜不到的，因为 shadowrocket 收费的
+iPhone：App Store 上下载 ShadowLink，这个要用国外 appid 才可以下载哦。国内的搜不到的，因为 shadowrocket 收费的
 
 2、配置Shadowsocks
 

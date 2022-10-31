@@ -1,6 +1,7 @@
 Shell 变量
 
 使用 declare 命令创建一个变量名为 tmp 的变量：
+
 ```
 $ declare tmp
 ```
@@ -87,7 +88,7 @@ exit 0
 如何让环境变量立即生效
 前面我们在 Shell 中修改了一个配置脚本文件之后（比如 zsh 的配置文件 home 目录下的 .zshrc），每次都要退出终端重新打开甚至重启主机之后其才能生效，很是麻烦，我们可以使用 source 命令来让其立即生效，如：
 
-```
+```sh
 $ cd /home/shiyanlou
 $ source .zshrc
 ```

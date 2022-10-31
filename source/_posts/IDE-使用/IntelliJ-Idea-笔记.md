@@ -199,8 +199,8 @@ for (int i = 0; i < ; i++) {
 
 ![详见设置页面-Live Templates](https://upload-images.jianshu.io/upload_images/1662509-662f0d4a3c6ed377.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-* **psvm** 生成main方法的快捷键
-* **sout** 生成`System.out.println();`
+* **psvm** 生成 main 方法的快捷键
+* **sout** 生成 `System.out.println();`
 
 ## Postfix Completion
 
@@ -258,9 +258,9 @@ Postfix Completion 功能本质上也是代码模板，只是它比 Live Templat
 
 ## IntelliJ IDEA 两种 keymap 快捷键方案 Mac OS X 和 Mac OS X 10.5+ 的区别
 
-就是Mac OS X 10.5+更贴近于 Mac 系统本身快捷键的操作体验，IDE的快捷键与系统快捷冲突的更少；而 Mac OS X 方案更贴近于 IntelliJ IDEA固有的设计。
+就是 Mac OS X 10.5+ 更贴近于 Mac 系统本身快捷键的操作体验，IDE 的快捷键与系统快捷冲突的更少；而 Mac OS X 方案更贴近于 IntelliJ IDEA 固有的设计。
 
-因此，如果你有经常更换系统平台进行开发的需求，那么为了快捷键的更快适应，达到体验一致性，就**使用 Mac OS X 方案**；如果想要更爽的利用 mac 系统开发，没有跨平台和协作性的问题的话，就使用 Mac OS X 10.5+方案。
+因此，如果你有经常更换系统平台进行开发的需求，那么为了快捷键的更快适应，达到体验一致性，就**使用 Mac OS X 方案**；如果想要更爽的利用 mac 系统开发，没有跨平台和协作性的问题的话，就使用 Mac OS X 10.5+ 方案。
 
  官网：http://www.jetbrains.com/idea/download/#section=windows
 
@@ -286,7 +286,7 @@ Postfix Completion 功能本质上也是代码模板，只是它比 Live Templat
 【remote branches】远程仓库分支
 
 第一步: 合并到 master 主分支
-切换到master分支
+切换到 master 分支
 
 第二步: 合并代码到 master 主分支, 在合并的分支上点击 merge
 ![点击merge](https://upload-images.jianshu.io/upload_images/1662509-4933ab0ca8f40e7d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -304,7 +304,7 @@ Postfix Completion 功能本质上也是代码模板，只是它比 Live Templat
 ## idea 激活教程
 
 IDEA 永久激活方案 (实测可用) - 简书
-https://www.jianshu.com/p/21aa61bf8b8f
+<https://www.jianshu.com/p/21aa61bf8b8f>
 
 ## 遇到过的问题
 
@@ -329,7 +329,7 @@ https://www.jianshu.com/p/21aa61bf8b8f
 
 这是 IntelliJ IDEA 2018.2 的新特性。
 
-需要关闭修改的话，可以在Settings | Editor | Color Scheme | Language Defaults | Identifiers | Reassigned local variable.下关闭这个提示： 把右侧的 Effects 默认勾选给取消。
+需要关闭修改的话，可以在 Settings | Editor | Color Scheme | Language Defaults | Identifiers | Reassigned local variable.下关闭这个提示： 把右侧的 Effects 默认勾选给取消。
 
 > 建议还是保留比较好
 

@@ -10,16 +10,17 @@ android 的包，比如 android.app, android.content, android.view, 以及 andro
 
 这样我们就声明了我们需要使用 maps 这个共享库，声明之后，在安装生成的APK包的时候，系统会根据我们的定义，帮我们检测我们的手机系统是否有我们需要的共享库，因为我们设置的android:required="true"，是必须，如果手机系统不满足，将不能安装该应用。
 
-在Android 中，除了我们标准的 SDK，还存在两种库，一种是 add-ons 库，他们位于 add-ons 目录下，这些库大部分第三方厂商或者公司开发的，一般是为了让开发者使用，但是又不想暴漏具体标准实现的；第二类是optional可选库，他们位于 platforms/android-xx/optional目录下，一般是为了兼容旧版本的 API，比如 org.apache.http.legacy，这是一个 HttpClient 的库，从 API23 开始，标准的Android SDK中不再包含 HttpClient 库，如果还想使用 HttpClient 库，就必须使用 org.apache.http.legacy 这个可选库。
+在Android 中，除了我们标准的 SDK，还存在两种库，一种是 add-ons 库，他们位于 add-ons 目录下，这些库大部分第三方厂商或者公司开发的，一般是为了让开发者使用，但是又不想暴漏具体标准实现的；第二类是 optional可选库，他们位于 platforms/android-xx/optional目录下，一般是为了兼容旧版本的 API，比如 org.apache.http.legacy，这是一个 HttpClient 的库，从 API23 开始，标准的Android SDK中不再包含 HttpClient 库，如果还想使用 HttpClient 库，就必须使用 org.apache.http.legacy 这个可选库。
 
-对第一类 add-ons 附件库来说，Android Gradle 会自动解析，帮我们添加到 classpath 里，但是第二类 optional可选库就不会了，我们看下关于这两种库的Android Gradle源码说明，位于IAndroidTarget.java文件中
+对第一类 add-ons 附件库来说，Android Gradle 会自动解析，帮我们添加到 classpath 里，但是第二类 optional 可选库就不会了，我们看下关于这两种库的 Android Gradle 源码说明，位于 IAndroidTarget.java文件中
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-f3f2afad41350442.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-这时候我们就需要自己把这个可选库添加到classpath中，为此，Android Gradle为我们提供了useLibrary方法，让我们可以把一个库添加到我们的classpath中，这样我们才能在代码中使用他们。
+这时候我们就需要自己把这个可选库添加到classpath中，为此，Android Gradle为我们提供了useLibrary方法，让我们可以把一个库添加到我们的 classpath 中，这样我们才能在代码中使用他们。
 
 只要知道它的名字，我们就可以使用useLibrary把他们添加到classpath，这样我们的编译就可以通过了。useLibrary是一个方法，看下它的源代码实现
-```
+
+```java
     public void useLibrary(String name) {
         this.useLibrary(name, true);
     }
@@ -33,9 +34,9 @@ android 的包，比如 android.app, android.content, android.view, 以及 andro
 
 对于 Api Level 低于 23 的系统来说，默认的标准库里已经包含了Apache HttpClient库，所以我们这里的Android Gradle配置只是为了保证编译的通过，那么对于等于或者大于 23 的系统呢？系统标准包（不是 Android 开发Sdk提供，是手机里）里有没有 Apache HttpClient 库呢？如果没有，是不是已经把他当成一个共享库呢？试试如果不在AndroidManifest文件中配置下 uses-library 标签是否可以运行？友情提示：PackageManager().getSystemSharedLibraryNames()方法。
 
-### 9.2 批量修改生成的apk文件名
+### 9.2 批量修改生成的 apk 文件名
 
-普通的Java比较简单，因为它有一个有限的任务集合，而且它的属性或者方法都是 Java Gradle 插件添加的，比较固定，而且我们访问任务以及任务里的方法和属性都比较方便，比如 classes 这个编译 Java 源代码的任务，我们通过 project.tasks.classes 就可以访问它，非常快捷，但是对于 Android 工程，就不行了，Android工程相对与Java工程来说，要复杂的多，因为它有很多相同的任务，这些任务的名字都是通过 Build Types 和 Product Flavors 生成的，是动态的创建和生成的，而且时机比较靠后，如果你还像原来一样在某个闭包里通过 project.tasks 获取一个任务，会提示找不到该任务，因为还没有生成。
+普通的 Java 比较简单，因为它有一个有限的任务集合，而且它的属性或者方法都是 Java Gradle 插件添加的，比较固定，而且我们访问任务以及任务里的方法和属性都比较方便，比如 classes 这个编译 Java 源代码的任务，我们通过 project.tasks.classes 就可以访问它，非常快捷，但是对于 Android 工程，就不行了，Android工程相对与Java工程来说，要复杂的多，因为它有很多相同的任务，这些任务的名字都是通过 Build Types 和 Product Flavors 生成的，是动态的创建和生成的，而且时机比较靠后，如果你还像原来一样在某个闭包里通过 project.tasks 获取一个任务，会提示找不到该任务，因为还没有生成。
 
 既然要修改生成的 Apk 文件名，那么我们就要修改 Android Gradle 打包的输出，为了解决这个问题（不限于此），android对象为我们提供了2个属性：
 

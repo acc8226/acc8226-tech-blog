@@ -1,6 +1,6 @@
 ---
 title: Eclipse-问题记录
-date: 2017.05.21 10:56:21
+date: 2017-05-21 10:56:21
 categories: IDE-使用
 ---
 
@@ -31,5 +31,5 @@ Failed to load D:\Android-Studio\sdk\build-tools\26.0.1\lib\dx.jar
 
 ## 参考
 
-* 删除 eclipse自动生成的 //TODO Auto-generated - 黄彪博客 - CSDN博客
+* 删除 eclipse 自动生成的 //TODO Auto-generated - 黄彪博客 - CSDN博客
 <https://blog.csdn.net/hbiao68/article/details/52682823>

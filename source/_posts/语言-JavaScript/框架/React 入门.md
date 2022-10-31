@@ -5,7 +5,7 @@ categories:
   - js
 tags:
 - js
-- react
+- React
 ---
 
 React 官方中文文档 – 用于构建用户界面的 JavaScript 库

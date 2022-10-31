@@ -1,11 +1,19 @@
+---
+title:
+date:
+categories:
+---
+
 ## 构建 Java applications
-```
-$ mkdir demo
-$ cd demo
+
+```sh
+mkdir demo
+cd demo
 ```
 
 在新项目目录中，运行 init 任务，并在提示时选择 java-application 项目类型。 对于其他问题，按回车键使用默认值。
-```
+
+```sh
 $ gradle init
 > Task :wrapper
 
@@ -62,7 +70,7 @@ BUILD SUCCESSFUL
 
 因为 Gradle 构建使用了 Application 插件，所以可以从命令行运行应用程序。 首先，使用 tasks task 查看插件添加了哪些任务。
 
-```
+```sh
 $ ./gradlew tasks
 :tasks
 
@@ -79,7 +87,7 @@ run - Runs this project as a JVM application
 
 Run 任务告诉 Gradle 在分配给 mainClassName 属性的类中执行 main 方法。
 
-```
+```sh
 $ ./gradlew run
 > Task :compileJava UP-TO-DATE
 > Task :processResources NO-SOURCE
@@ -93,12 +101,13 @@ BUILD SUCCESSFUL
 ```
 
 ## 构建 Java libraries
-```
-$ mkdir demo
-$ cd demo
+
+```sh
+mkdir demo
+cd demo
 ```
 
-```
+```sh
 $ gradle init
 > Task :wrapper
 
@@ -142,10 +151,9 @@ BUILD SUCCESSFUL
 2 actionable tasks: 2 executed
 ```
 
-
 ### [Assemble the library JAR 组装库 JAR](https://guides.gradle.org/building-java-libraries/#assemble_the_library_jar)
 
-```
+```sh
 $ ./gradlew build
 > Task :compileJava
 > Task :processResources NO-SOURCE
@@ -164,7 +172,8 @@ BUILD SUCCESSFUL
 ```
 
 您可以在 build / libs 目录中找到新打包的 JAR 文件，其名称为 demo.JAR。 通过运行以下命令验证存档是否有效:
-```
+
+```sh
 $ jar tf build/libs/demo.jar
 META-INF/
 META-INF/MANIFEST.MF
@@ -184,7 +193,8 @@ version = '0.1.0'
 ```
 
 另一个常见的需求是自定义清单文件，通常是通过添加一个或多个属性。 让我们通过配置 jar 任务在清单文件中包含库名和版本。 在构建脚本的末尾添加以下内容:
-```
+
+```groovy
 jar {
     manifest {
         attributes('Implementation-Title': project.name,
@@ -193,13 +203,14 @@ jar {
 }
 ```
 
-为了确认这些更改正常工作，再次运行 JAR 任务.
-```
-$ ./gradlew jar
+为了确认这些更改正常工作，再次运行 JAR 任务。
+
+```sh
+./gradlew jar
 ```
 
 > **了解更多关于配置 jar 的信息**
-> 清单只是可以在 jar 任务上配置的许多属性之一。 要获得完整的列表，请参阅 Gradle Language Reference 的 Jar 部分以及 Gradle 用户手册的 Jar 和 Creating Archives 部分
+> 清单只是可以在 jar 任务上配置的许多属性之一。 要获得完整的列表，请参阅 Gradle Language Reference 的 Jar 部分以及 Gradle 用户手册的 Jar 和 Creating Archives 章节。
 
 ### [Adding API documentation 添加 API 文档](https://guides.gradle.org/building-java-libraries/#adding_api_documentation)
 
@@ -207,8 +218,8 @@ Java 库插件通过 javadoc 任务内置支持 Java 的 API 文档工具。
 
 Build Init 插件生成的代码已经在 Library.java 文件上放置了注释。 将注释修改为 javadoc 标记。
 
-```
-$ ./gradlew javadoc
+```sh
+./gradlew javadoc
 ```
 
 您可以通过打开 build / docs / javadoc / index. HTML 文件来查看生成的 javadoc 文件。

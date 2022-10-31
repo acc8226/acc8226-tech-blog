@@ -4,7 +4,7 @@ date: 2020.04.04 21:31:26
 categories: IDE-使用
 ---
 
-JetBrains 推出编程字体Mono：更适合程序开发人员
+JetBrains 推出编程字体 Mono：更适合程序开发人员
 
 JetBrains 表示：在当今的大部分时间里，我们作为开发人员都在看代码。我们一直在寻找最佳字体，以使我们更容易在屏幕上查看文本。但是，许多流行字体中的逻辑并不总是考虑到通读代码和阅读书本之间的区别。我们的眼睛以非常不同的方式沿代码移动，通常必须垂直移动和水平移动，这与阅读书籍不同，因为它们总是沿同一方向沿文本滑动。
 
@@ -27,7 +27,7 @@ Select JetBrains Mono in the IDE settings: go to Preferences/Settings → Editor
 ## 参考
 
 jetbrains mono 字体官网
-https://www.jetbrains.com/lp/mono/
+<https://www.jetbrains.com/lp/mono/>
 
 JetBrains推出编程字体 Mono：更适合程序开发人员
-https://m.ithome.com/html/468814.htm
+<https://m.ithome.com/html/468814.htm>

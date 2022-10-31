@@ -12,9 +12,9 @@
 
 中科大源、清华源或阿里源可任意选择一。
 
-https://mirrors.ustc.edu.cn/
-https://mirrors.tuna.tsinghua.edu.cn/
-https://mirrors.aliyun.com/ubuntu/
+<https://mirrors.ustc.edu.cn/>
+<https://mirrors.tuna.tsinghua.edu.cn/>
+<https://mirrors.aliyun.com/ubuntu/>
 
 Ubuntu 的软件源配置文件是 /etc/apt/sources.list。请将系统自带的该文件做个备份，将该文件替换为下面内容，即可使用 TUNA 的软件源镜像。
 
@@ -33,7 +33,7 @@ deb-src http://mirrors.tencentyun.com/ubuntu/ focal-updates main restricted univ
 
 方式一：使用 sed 命令进行替换
 
-将http://archive.ubuntu.com/ 替换为 http://mirrors.ustc.edu.cn 即可。可以使用如下命令：
+将 <http://archive.ubuntu.com/> 替换为 <http://mirrors.ustc.edu.cn> 即可。可以使用如下命令：
 
 ```sh
 sudo sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
@@ -97,8 +97,8 @@ dpkg -l 查看当前系统中已经安装的软件包的信息
 dpkg -L （软件包名称）查看系统中已经安装的软件文件的详细列表
 dpkg -s 查看已经安装的指定软件包的详细信息
 dpkg -S 查看系统中的某个文件属于那个软件包;
-dpkg -i *.deb文件的安装
-dpkg -r *.deb文件的卸载;
+`dpkg -i *.deb` 文件的安装
+`dpkg -r *.deb` 文件的卸载;
 dpkg -P 彻底的卸载 包括软件的配置文件等等
 查看没有安装的deb包命令
 dpkg -c 查询deb包文件中所包含的文件 rpm -qlp
@@ -108,8 +108,8 @@ dpkg -I 查询deb包的详细信息
 
 ## 参考
 
-dpkg命令的详细使用教程_阿力php的博客-CSDN博客_dpkg命令
-https://blog.csdn.net/qq_18839693/article/details/62229646
+dpkg 命令的详细使用教程_阿力php的博客-CSDN博客_dpkg命令
+<https://blog.csdn.net/qq_18839693/article/details/62229646>
 
-dpkg命令的用法_小绵羊的学习之路的博客-CSDN博客_dpkg命令
-https://blog.csdn.net/yang3572/article/details/80991108
+dpkg 命令的用法_小绵羊的学习之路的博客-CSDN博客_dpkg命令
+<https://blog.csdn.net/yang3572/article/details/80991108>

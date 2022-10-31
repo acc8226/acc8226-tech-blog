@@ -1,3 +1,9 @@
+---
+title:
+date:
+categories:
+---
+
 对于研发来说，测试永远都是绕不开的，通过测试我们可以减少 bug 率，提高产品的质量。测试有黑白之分，我们这里主要讲白盒测试，也就是基于现有代码逻辑的测试，比如单元测试等。
 
 Android 为测试提供了很好的支持，既可以使用传统的 Junit测试，又可以使用 Android 提供的 Instrument 测试，这一章我们主要讲Android Gradle 和 Android 测试之间的配合和结合，期间会涉及一些单元测试用例或者对一些测试框架的使用，但是主要介绍点还是Android Gradle和Android测试，对于 Android 测试本身介绍不多，关于Android测试本身，比如 Activity 等四大组件测试、UI自动化测试、espresso UI测试框架等可以参考官方文档。

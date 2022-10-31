@@ -1,3 +1,9 @@
+---
+title:
+date:
+categories:
+---
+
 ## 第一个 Gradle 命令
 
 ```sh
@@ -5,6 +11,7 @@ gradle -h
 ```
 
 查看帮助信息
+
 ```
 USAGE: gradle [option...] [task...]
 ```
@@ -30,7 +37,7 @@ Options
 
 Gradle 提供了通过 Groovy 或基于 kotlin 的 DSL 创建和配置任务的 api。 Project 包括一组 Tasks，每个 Tasks 执行一些基本操作。
 
-```
+```sh
 gradle wrapper
 ```
 
@@ -47,7 +54,7 @@ Options
 
 首先可以`gradle help` 了解一下常用的命令。前提是该目录已经是一个 gradle 项目，否则需要事先进行初始化。
 
-```
+```sh
 gradle help
 
 > Task :help

@@ -12,7 +12,7 @@ creatTask1.doLast{
 }
 ```
 
-第二种是以一个任务名字+一个对该任务配置的Map对象来创建任务：
+第二种是以一个任务名字 + 一个对该任务配置的Map对象来创建任务：
 
 ```groovy
 //2: 任务名字 + 该任务配置的Map
@@ -36,13 +36,13 @@ Project中还有一种名字 + Map 参数 + 闭包的的方式，和上面演示
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-07e5eadb7d9e62c9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-**tasks 是 Project 对象的属性**，其类型是TaskContainer，我们可以使用它来直接创建任务。对于关于 TaskContainer 其他几种创建方式和前面演示的 Project 的 task 方法基本上一样，就不一一写示例了，大家可以参考上面的练习写一下。
+**tasks 是 Project 对象的属性**，其类型是 TaskContainer，我们可以使用它来直接创建任务。对于关于 TaskContainer 其他几种创建方式和前面演示的 Project 的 task 方法基本上一样，就不一一写示例了，大家可以参考上面的练习写一下。
 
 ### 4.2 多种方式访问任务
 
 首先呢，我们创建的任务都会作为项目(Project)的一个属性，属性名就是任务名，所以我们可以直接通过该任务名访问和操纵该任务：
 
-通过索引访问的时候，任务名就是我们Key（关键索引），其实这里说 key 不恰当，因为t asks 并不是一个 Map，这里再顺便扩展下 Groovy 的知识，[]在Groovy中是一个操作符，我们知道Groovy的操作符都有对应的方法让我们重载，a[b]对应的是 a.getAt(b)这个方法.
+通过索引访问的时候，任务名就是我们 Key（关键索引），其实这里说 key 不恰当，因为t asks 并不是一个 Map，这里再顺便扩展下 Groovy 的知识，[]在Groovy中是一个操作符，我们知道Groovy的操作符都有对应的方法让我们重载，a[b]对应的是 a.getAt(b)这个方法.
 
 ```gradle
 //直接通过该任务名访问和操纵该任务
@@ -61,7 +61,7 @@ tasks['creatTask1'].doLast{
 ```
 
 值得强调的时候，通过路径访问的时候，参数值可以是任务路径也可以是任务的名字，但是通过名字访问的时候，参数值只能是任务的名字，不能为路径。
-通过以上几种方式我们发现访问Gradle的任务非常方便，当我们拿到这个任务的引用的时候，我们就可以按我们的业务逻辑去操纵它，比如配置任务依赖，配置任务的一些属性，调用方法呢，这是Ant做不到的，这也是Gradle的灵活之处。
+通过以上几种方式我们发现访问 Gradle 的任务非常方便，当我们拿到这个任务的引用的时候，我们就可以按我们的业务逻辑去操纵它，比如配置任务依赖，配置任务的一些属性，调用方法呢，这是Ant做不到的，这也是Gradle的灵活之处。
 
 ### 4.3 任务分组和描述
 
@@ -81,7 +81,7 @@ myTask.doLast{
 ### 4.4 <<操作符
 
 详细读者们已经看到了我们很多例子中使用了这个操作符，这一小节我们就从源代码的角度来讲解下这个操作符，让大家对它有个更深入的了解。
-<<操作符在Gradle的Task上是doLast方法的短标记形式，也就是说<<可以代替doLast
+<<操作符在 Gradle 的 Task 上是 doLast 方法的短标记形式，也就是说<<可以代替doLast
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-3ff6a7cf71d52a50.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -95,7 +95,7 @@ myTask.doLast{
 
 接下来看实例
 
-```
+```groovy
 Task task1 = task(task1, type: CustomTask)
 task1.doFirst{
     println "doFirst"
@@ -124,7 +124,7 @@ class CustomTask extends DefaultTask{
 ![](http://upload-images.jianshu.io/upload_images/1662509-f291b3a5a12702c1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ![doFirst和doLast这两个方法的实现代码](http://upload-images.jianshu.io/upload_images/1662509-774ae1559a6c0d01.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-doFirst永远都是在actions List第一位添加，保证其添加的Action在现有actions List元素的最前面，doLast永远都是在actions List末尾添加，保证其添加的Action在现有actions List元素的最后面。一个往最前面添加，一个往最后面添加，最后这个actions List按顺序就形成了doFirst、doSelf、doLast三部分的Actions，就达到的doFirst、doSelf、doLast三部分的Actions顺序执行的目的。
+doFirst永远都是在actions List第一位添加，保证其添加的Action在现有actions List元素的最前面，doLast 永远都是在actions List末尾添加，保证其添加的Action在现有actions List元素的最后面。一个往最前面添加，一个往最后面添加，最后这个actions List按顺序就形成了doFirst、doSelf、doLast 三部分的 Actions，就达到的 doFirst、doSelf、doLast 三部分的Actions顺序执行的目的。
 
 这一小结是基于源代码对Task执行的分析，可能有点难，但是我还是建议大家仔细看，一遍看不懂多看几遍，结合着例子和源代码看，理解了对整个Task的执行就熟悉的多了。
 
@@ -132,10 +132,10 @@ doFirst永远都是在actions List第一位添加，保证其添加的Action在�
 
 其实并没有真正的任务排序功能，这个排序不像我们想象的通过设置优先级或者Order顺序实现，而是通过任务的shouldRunAfter和mustRunAfter这两个方法来显示的，他们可以控制一个任务一定或者应该在某个任务之后执行，通过这种方式你可以在某些情况下控制任务的执行顺序，而不是通过强依赖的方式。
 
-这个功能是非常有用的，比如我们公司自己设置的必须先执行单元测试，才能进行打包，这就保证了App的质量。类似情况还有很多，比如必须要单元测试之后才能进行集成测试；打包成功之后才能进行部署发布等。
+这个功能是非常有用的，比如我们公司自己设置的必须先执行单元测试，才能进行打包，这就保证了 App 的质量。类似情况还有很多，比如必须要单元测试之后才能进行集成测试；打包成功之后才能进行部署发布等。
 
-**taskB.shouldRunAfter(taskA)** 表示taskB应该在taskA执行之后执行，这里的应该而不是必须，所以有可能任务顺序并不会按预设的执行。
-**taskB.mustRunAfter(taskA)** 表示taskB必须在taskA执行之后执行，这个规则就比较严格。
+**taskB.shouldRunAfter(taskA)** 表示 taskB 应该在 taskA 执行之后执行，这里的应该而不是必须，所以有可能任务顺序并不会按预设的执行。
+**taskB.mustRunAfter(taskA)** 表示 taskB 必须在 taskA 执行之后执行，这个规则就比较严格。
 
 ```groovy
 task task1{
@@ -189,9 +189,9 @@ NamedDomainObjectCollection是一个具有唯一不变名字的域对象的集�
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-bdb668ab43a2a984.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-一个是直接添加一个Rule，一个是通过闭包配置成一个Rule再添加，两种方式大同小异，如果仔细观察你会发现，Gradle中基本上都是这种写法，成对出现。
+一个是直接添加一个 Rule，一个是通过闭包配置成一个 Rule 再添加，两种方式大同小异，如果仔细观察你会发现，Gradle中基本上都是这种写法，成对出现。
 
-当我们执行、依赖一个不存在的任务时，Gradle会执行失败，失败信息是任务不存在，我们使用规则对其进行改进，当执行、依赖不存在的任务时，不会执行失败，而是打印提示信息提示该任务不存在：
+当我们执行、依赖一个不存在的任务时，Gradle 会执行失败，失败信息是任务不存在，我们使用规则对其进行改进，当执行、依赖不存在的任务时，不会执行失败，而是打印提示信息提示该任务不存在：
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-ebfc4fbd5720ee5b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 

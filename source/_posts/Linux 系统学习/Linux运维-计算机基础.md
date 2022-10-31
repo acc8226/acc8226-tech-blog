@@ -38,7 +38,7 @@ swap 交换分区 因为为物理内存的1.5倍或2倍 centos7.5 2G  centos6.10
 id -u 查看该用户是否具有root权限
 cat /etc/centos-release 查看 centos 版本
 
-```
+```text
 CentOS Linux release 7.6.1810 (Core)
 ```
 
@@ -46,7 +46,7 @@ CentOS Linux release 7.6.1810 (Core)
 
 uname -r 查看操作系统内核版本
 
-```
+```text
 3.10.0-957.27.2.el7.x86_64
 ```
 
@@ -54,7 +54,7 @@ lscpu 查看cpu信息
 
 free -h 查看内存信息(方式一)
 
-```
+```text
               total        used        free      shared  buff/cache   available
 Mem:           927M        376M         66M         46M        483M        346M
 Swap:          511M        282M        229M
@@ -64,7 +64,7 @@ cat /proc/meminfo 查看内存信息(方式二)
 
 查看硬盘信息
 
-```
+```sh
 [root@10-9-64-159 ~]# lsblk
 NAME   MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
 vda    253:0    0  40G  0 disk
@@ -76,14 +76,14 @@ who am i 查看当前登陆的用户
 
 查看当前使用的 shell
 
-```
+```sh
 [root@10-9-64-159 ~]# echo $SHELL
 /bin/bash
 ```
 
-查看操作系统已有的shell
+查看操作系统已有的 shell
 
-```
+```sh
 [root@10-9-64-159 ~]# cat /etc/shells
 /bin/sh
 /bin/bash
@@ -99,7 +99,7 @@ hostname 查看主机名
 
 ### 更改默认前缀
 
-```
+```sh
 PS1="\[\e[\1;32m\][\u@\h \w]\\$[\e[0m\]"
 ```
 
@@ -110,7 +110,7 @@ PS1="\[\e[\1;32m\][\u@\h \w]\\$[\e[0m\]"
 
 首先找内部命令, 如果找不到则找外部命令
 
-```
+```sh
 [root@10-9-64-159 /]# type -a pwd
 pwd 是 shell 内嵌
 pwd 是 /usr/bin/pwd

@@ -5,7 +5,7 @@ categories: IDE-使用
 ---
 
 Plugins | JetBrains
-https://plugins.jetbrains.com/
+<https://plugins.jetbrains.com/>
 
 以下是介绍顺序按照优先级排序
 
@@ -60,9 +60,9 @@ Lombok - Plugins | JetBrains
 
 会产生漂亮进度条。
 
-##  [Jenkins Control Plugin](https://github.com/MCMicS/jenkins-control-plugin/issues)
+## [Jenkins Control Plugin](https://github.com/MCMicS/jenkins-control-plugin/issues)
 
-下载，重新进入IDE，设置一下即可。
+下载，重新进入 IDE，设置一下即可。
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-d0110756f7d9b592.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -74,7 +74,7 @@ Lombok - Plugins | JetBrains
 
 注意：如果你用的是 jenkins 2, 并且启用了 CSRF(防止跨站点请求伪造），需要填 Crumb Data， 这个可以通过以下url获取:**[http://jenkinsserver:port/crumbIssuer/api/xml?tree=crumb#](http://jenkinsserver/crumbIssuer/api/xml?tree=crumb#)**，其中**jenkinsserver:port**即为本机的**Jenkins**访问地址
 
-**不建议：**如果不启用 CSRF的话（默认启用），到 系统管理 -> Configure Global Security（全局安全配置）中, 取消勾选下图选项.
+**不建议：**如果不启用 CSRF 的话（默认启用），到 系统管理 -> Configure Global Security（全局安全配置）中, 取消勾选下图选项.
 
 ![image](https://upload-images.jianshu.io/upload_images/1662509-0a5ffcb31c451442.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -102,7 +102,7 @@ Lombok - Plugins | JetBrains
 ## 参考
 
 只需三分钟让你的 JetBrains 变身中文界面 - 数码荔枝
-https://www.lizhi.io/blog/41066015
+<https://www.lizhi.io/blog/41066015>
 
 Java代码规范与质量检测插件 SonarLint - 废物大师兄 - 博客园
-https://www.cnblogs.com/cjsblog/p/10735800.html
+<https://www.cnblogs.com/cjsblog/p/10735800.html>
