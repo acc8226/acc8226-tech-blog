@@ -1,5 +1,5 @@
 ---
-title: Markdown 之 MathJax 和 LaTeX 数学公式语法
+title: Markdown-MathJax 和 LaTeX 数学公式语法
 date: 2020-05-03 14:17:04
 updated: 2022-10-6 20:35:00
 categories:

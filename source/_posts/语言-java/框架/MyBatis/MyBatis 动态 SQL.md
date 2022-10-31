@@ -1,3 +1,15 @@
+---
+title: MyBatis-动态 SQL
+date:
+updated:
+categories:
+  - 语言-Java
+  - 框架-MyBatis
+tags:
+- Java
+- MyBatis
+---
+
 动态 SQL 是 MyBatis 一个强大的特性，它可以帮助程序员减轻根据不同条件拼接 SQL 语句的痛苦。MyBatis 动态 SQL 元素与 JSTL 或其他类 XML 文件处理器相似。MyBatis 采用功能强大的基于 OGNL 的表达式来消除其他元素。
 
 MyBatis 常用的动态 SQL 元素包括：
