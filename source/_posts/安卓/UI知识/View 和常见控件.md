@@ -73,8 +73,9 @@ Android Button 默认样式高度问题, 去掉可用`android:minHeight="0px"`
 
 ### 代码设置textview 字体颜色
 
+```java
 setTextColor(0xFF0000FF);
-//0xFF0000FF是int类型的数据，分组一下0x|FF|0000FF，0x是代表颜色整 数的标记，ff是表示透明度，0000FF表示颜色，注意：这里0xFF0000FF必须是8个的颜色表示，不接受0000FF这种6个的颜色表示。
+//0xFF0000FF 是 int 类型的数据，分组一下0x|FF|0000FF，0x 是代表颜色整 数的标记，ff是表示透明度，0000FF表示颜色，注意：这里 0xFF0000FF 必须是8个的颜色表示，不接受 0000FF 这种 6 个的颜色表示。
 setTextColor(Color.rgb(255, 255, 255));
 setTextColor(Color.parseColor("#FFFFFF"));
 //还有就是使用资源文件进行设置
@@ -82,6 +83,7 @@ setTextColor(this.getResources().getColor(R.color.blue));
 //通过获得资源文件进行设置。根据不同的情况R.color.blue也可以是R.string.blue或者
 //另外还可以使用系统自带的颜色类
 setTextColor(android.graphics.Color.BLUE);
+```
 
 ### TextView按下和抬起时的颜色变换
 

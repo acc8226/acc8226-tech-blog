@@ -36,17 +36,17 @@ tags:
 switch 任务支持对特性(property)的直接比较判断。`<switch>` 标签内只有一个属性”value”用于指定要进行判断的字符串或特性；里面可以内嵌 `<case>` 标签及 `<default>` 标签，`<case>` 标签内有属性”value”用于指定被比较的字符串或特性，当两者匹配时，则执行 `<case>` 内的任务。否则跳转到 `<default>` 中去。在switch任务中必须至少有一个 `<case>` 标签或 `<default>` 标签。
 
 ```xml
-    <switch value="mobile.qq">
-      <case value="mobile">
-        <echo message="The value of property is mobile" />
-      </case>
-      <case value="qq">
-        <echo message="The value of property is qq" />
-      </case>
-      <default>
-        <echo message="The value of property is np" />
-      </default>
-    </switch>
+<switch value="mobile.qq">
+    <case value="mobile">
+    <echo message="The value of property is mobile" />
+    </case>
+    <case value="qq">
+    <echo message="The value of property is qq" />
+    </case>
+    <default>
+    <echo message="The value of property is np" />
+    </default>
+</switch>
 ```
 
 ## for
@@ -54,12 +54,12 @@ switch 任务支持对特性(property)的直接比较判断。`<switch>` 标签�
 发现 for 任务需要自定义一个命名空间
 
 ```xml
-    <antcontrib:for list="a,b,c,d,e" param="letter"
-      xmlns:antcontrib="antlib:net.sf.antcontrib">
-      <sequential>
-        <echo>Letter @{letter}</echo>
-      </sequential>
-    </antcontrib:for>
+<antcontrib:for list="a,b,c,d,e" param="letter"
+    xmlns:antcontrib="antlib:net.sf.antcontrib">
+    <sequential>
+    <echo>Letter @{letter}</echo>
+    </sequential>
+</antcontrib:for>
 ```
 
 也可以使用`fileset`等数据元素动态指定在遍历的文件集合。

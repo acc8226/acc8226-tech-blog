@@ -1,6 +1,6 @@
 ---
 title: 实战-自定义ViewGroup 流动布局(FlowLayout)
-date: 2017.07.28 13:18:24
+date: 2017-07-28 13:18:24
 categories:
   - 安卓
   - UI 知识
@@ -12,7 +12,7 @@ tags:
 
 至少需要提供 width, 和height两个属性
 
-同样地，如果要使用自定义的属性，那么就需要创建自己的名字空间，在Android Studio中，第三方的控件都使用如下代码来引入名字空间。
+同样地，如果要使用自定义的属性，那么就需要创建自己的名字空间，在 Android Studio 中，第三方的控件都使用如下代码来引入名字空间。
 xmlns:custom="http://schemas.android.com/apk/res-auto"
 
 ## 流动布局手写精简版

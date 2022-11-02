@@ -20,7 +20,7 @@ echo "<?php phpinfo(); ?>" > /var/www/html/phpinfo.php
 systemctl restart httpd
 ```
 
-若使用 nginx, 则重新加载nginx服务`nginx -s reload`. 以下为我的nginx.conf 文件的配置, 目前我监听的是8088端口.
+若使用 nginx, 则重新加载 nginx 服务`nginx -s reload`. 以下为我的 nginx.conf 文件的配置, 目前我监听的是8088端口.
 
 ```sh
 server {

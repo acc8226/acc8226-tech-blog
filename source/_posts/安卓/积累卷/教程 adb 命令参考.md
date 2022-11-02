@@ -1,5 +1,5 @@
 ---
-title: Android-教程 adb 命令参考
+title: 安卓-教程 adb 命令参考
 date: 2017-01-03 13:04:14
 categories: IDE-使用
 ---
@@ -35,7 +35,7 @@ cd /system/bin/
 screencap -p /sdcard/screenshot.png
 ```
 
-获取到当前设备停在哪个Activity上面。
+获取到当前设备停在哪个 Activity 上。
 `adb shell dumpsys activity top`
 
 ## 参考

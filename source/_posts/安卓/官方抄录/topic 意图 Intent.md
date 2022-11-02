@@ -1,6 +1,6 @@
 ---
 title: 安卓-topic 意图 Intent
-date: 2017.02.18 21:38:34
+date: 2017-02-18 21:38:34
 categories:
   - 安卓
   - 官方抄录

@@ -24,7 +24,7 @@ Eclipse Packages | The Eclipse Foundation - home to a global community, the Ecli
 
 ### Ctrl + Shift + R：打开资源
 
-这可能是所有快捷键组合中最省时间的了。这组快捷键可以让你打开你的工作区中任何一个文件，而你只需要按下文件名或mask名中的前几个字母，比如applic*.xml。
+这可能是所有快捷键组合中最省时间的了。这组快捷键可以让你打开你的工作区中任何一个文件，而你只需要按下文件名或mask名中的前几个字母，比如 applic*.xml。
 
 ### Ctrl + O：快速outline
 
@@ -40,7 +40,7 @@ Eclipse Packages | The Eclipse Foundation - home to a global community, the Ecli
 
 ### Ctrl +. 及 Ctrl +1：下一个错误及快速修改
 
-ctrl+. 将光标移动至当前文件中的下一个报错处或警告处。这组快捷键我一般与ctrl+1 一并使用，即修改建议的快捷键。新版Eclipse的修改建议做的很不错，可以帮你解决很多问题，如方法中的缺失参数，throw/catch exception，未执行的方法等等。
+ctrl+. 将光标移动至当前文件中的下一个报错处或警告处。这组快捷键我一般与 ctrl+1 一并使用，即修改建议的快捷键。新版 Eclipse 的修改建议做的很不错，可以帮你解决很多问题，如方法中的缺失参数，throw/catch exception，未执行的方法等等。
 
 ### Alt+方向键
 
@@ -62,7 +62,7 @@ Shift+enter在当前行之下创建一个空白行，与光标是否在行末无
 
 这组快捷键将帮助你在打开的编辑器之间浏览。使用 ctrl+page down或 ctrl+page up 可以浏览前后的选项卡，但是在很多文件打开的状态下，ctrl+e 会更加有效率。
 
-## 开启java editor 的自动填写功能, 填写你需要的正则或者普通字符串都行.
+## 开启 java editor 的自动填写功能, 填写你需要的正则或者普通字符串都行.
 
 windows->preferences->java->editor->content assist 填入`.[a-zA-Z]`
 
@@ -74,7 +74,7 @@ windows->preferences->java->editor->content assist 填入`.[a-zA-Z]`
 
 ## attach source 关联源码
 
-点击 Eclipse 打开.class文件时出现的那个“Attach Source”按键，然后把 JDK 库的源文件压缩包（通常是在jdk安装的根目录中的一个“src.zip”文件）载入Eclipse中。
+点击 Eclipse 打开 .class 文件时出现的那个 “Attach Source” 按键，然后把 JDK 库的源文件压缩包（通常是在 jdk 安装的根目录中的一个 “src.zip” 文件）载入 Eclipse 中。
 
 其他的第三方java插件的源代码文件的载入方法类似。
 

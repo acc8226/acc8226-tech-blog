@@ -6,7 +6,7 @@
 
 ## wget
 
- wget 支持HTTP，HTTPS和FTP协议，可以使用 HTTP 代理。所谓的自动下载是指，wget可以在用户退出系统的之后在后台执行。这意味这你可以登录系统，启动一个wget下载任务，然后退出系统，wget 将在后台执行直到任务完成
+ wget 支持 HTTP，HTTPS 和 FTP 协议，可以使用 HTTP 代理。所谓的自动下载是指，wget 可以在用户退出系统的之后在后台执行。这意味这你可以登录系统，启动一个wget下载任务，然后退出系统，wget 将在后台执行直到任务完成
 
 wget 可以跟踪HTML页面上的链接依次下载来创建远程服务器的本地版本，完全重建原始站点的目录结构。这又常被称作”递归下载”。
 
@@ -32,7 +32,7 @@ curl 默认的 HTTP 动词是 GET，使用 -X 参数可以支持其他动词。
 ```$ curl -X POST www.qq.com```
 ```$ curl -X DELETE www.qq.com```
 
-**显示响应header信息**
+**显示响应 header 信息**
 `$ curl -i www.qq.com`
 -i 参数可以显示 http response 的头信息，连同网页代码一起。
 -I 参数则只显示 http response 的头信息。
@@ -101,4 +101,3 @@ cURL 支持你做很多事情。你可以把 cURL 想象成一个精简的命令
 ## 参考
 
 <http://www.ruanyifeng.com/blog/2019/09/curl-reference.html>
-

@@ -34,8 +34,8 @@ data1 文件里记录是一些命令的操作记录，现在需要你从里面�
 4. 操作过程使用管道，例如：
 
 ```sh
-$ cd /home/shiyanlou
-$ cat data1 |....|....|....   >  /home/shiyanlou/result
+cd /home/shiyanlou
+cat data1 |....|....|....   >  /home/shiyanlou/result
 ```
 
 ## 来源
@@ -46,7 +46,7 @@ $ cat data1 |....|....|....   >  /home/shiyanlou/result
 
 注意：请务必自己独立思考解决问题之后再对照参考答案，一开始直接看参考答案收获不大。
 
-```
+```sh
 cat data1 |cut -c 8-|sort|uniq -dc|sort -rn -k1 |head -3 > /home/shiyanlou/result
 ```
 
@@ -59,8 +59,8 @@ cat data1 |cut -c 8-|sort|uniq -dc|sort -rn -k1 |head -3 > /home/shiyanlou/resul
 数据文件可以使用以下命令下载：
 
 ```sh
-$ cd /home/shiyanlou
-$ wget http://labfile.oss.aliyuncs.com/courses/1/data2
+cd /home/shiyanlou
+wget http://labfile.oss.aliyuncs.com/courses/1/data2
 ```
 
 下载后的数据文件路径为 `/home/shiyanlou/data2`。

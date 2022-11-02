@@ -1,6 +1,6 @@
 ## [linux 查看java的安装路径](https://www.cnblogs.com/hanshuai/p/9604730.html)
 
-```
+```sh
 han@ubuntu:/etc$ whereis java
 java: /usr/bin/java /usr/share/java /usr/lib/jvm/java-8-openjdk-amd64/bin/java /usr/share/man/man1/java.1.gz
 han@ubuntu:/etc$ ls -lrt /usr/bin/java

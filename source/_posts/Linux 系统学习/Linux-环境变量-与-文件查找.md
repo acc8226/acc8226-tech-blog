@@ -89,8 +89,8 @@ exit 0
 前面我们在 Shell 中修改了一个配置脚本文件之后（比如 zsh 的配置文件 home 目录下的 .zshrc），每次都要退出终端重新打开甚至重启主机之后其才能生效，很是麻烦，我们可以使用 source 命令来让其立即生效，如：
 
 ```sh
-$ cd /home/shiyanlou
-$ source .zshrc
+cd /home/shiyanlou
+source .zshrc
 ```
 
 source 命令还有一个别名就是 .，上面的命令如果替换成 . 的方式就该是：

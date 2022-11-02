@@ -5,8 +5,8 @@ categories: IDE-使用
 ---
 
 * Auto import(自动导入)
-  + 对于 Windows，请依次转到“文件 (File)”>“设置 (Settings)”>“编辑器 (Editor)”>“常规 (General)”>“自动导入 (Auto Import)”
-  + 对于 Mac，请依次转到 Android Studio >“偏好设置 (Preferences)”>“编辑器 (Editor)”>“常规 (General)”>“自动导入 (Auto Import)”
+  * 对于 Windows，请依次转到“文件 (File)”>“设置 (Settings)”>“编辑器 (Editor)”>“常规 (General)”>“自动导入 (Auto Import)”
+  * 对于 Mac，请依次转到 Android Studio >“偏好设置 (Preferences)”>“编辑器 (Editor)”>“常规 (General)”>“自动导入 (Auto Import)”
 
   ![1]
 

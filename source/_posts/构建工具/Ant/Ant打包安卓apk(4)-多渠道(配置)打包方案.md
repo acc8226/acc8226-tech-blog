@@ -1,6 +1,6 @@
 ---
 title: Ant打包安卓apk(4) 多渠道(配置)打包方案
-date: 2018.10.01 21:03:35
+date: 2018-10-01 21:03:35
 categories:
   - 构建工具
   - Ant
@@ -17,7 +17,7 @@ config.url =http://10.1.64.42:9082/insure-pad/padServer.do,
 config.bool = false
 ```
 
-我想加快 apk 打包速度啊, 一方面是还在用eclipse, 二来如果用普通的 gradle 的 farvor 方式还是不够快,美团都有 v2 方案了, 自己搞一搞比较有意思而已
+我想加快 apk 打包速度啊, 一方面是还在用 eclipse, 二来如果用普通的 gradle 的 farvor 方式还是不够快,美团都有 v2 方案了, 自己搞一搞比较有意思而已
 
 ## META-INF目录下添加额外信息(不推荐)
 
@@ -39,9 +39,9 @@ config.bool = false
 * 用643`ʃ`替代`/`
 ~~但是从文件名在安卓上读取的字符想扑克牌的方片,识别不了, 此路不走罢~~
 
-#### 试试URL编码
+#### 试试 URL 编码
 
-> URL编码 遵循下列规则: 每对name/value由&;符分开;每对来自表单的name/value由=符分开。如果用户没有输入值给这个 name，那么这个 name 还是出现，只是无值。任何特殊的字符(就是那些不是简单的七位ASCII，如汉字)将以百分符%用十六进制编码，当然也包括象 =,&;，和 % 这些特殊的字符。其实url编码就是一个字符ascii码的十六进制。不过稍微有些变动，需要在前面加上"%"。比如"\"，它的ascii码是92，92的十六进制是5c，所以"\"的 url 编码就是 %5c。那么汉字的 url 编码呢?很简单，看例子:"胡"的ascii码是-17670，十六进制是BAFA，url编码是 "%BA%FA"。
+> URL 编码 遵循下列规则: 每对 name/value 由 &; 符分开;每对来自表单的 name/value 由 = 符分开。如果用户没有输入值给这个 name，那么这个 name 还是出现，只是无值。任何特殊的字符(就是那些不是简单的七位 ASCII，如汉字)将以百分符 % 用十六进制编码，当然也包括象 =,&;，和 % 这些特殊的字符。其实url编码就是一个字符 ascii 码的十六进制。不过稍微有些变动，需要在前面加上"%"。比如"\"，它的 ascii码是 92，92 的十六进制是 5c，所以"\"的 url 编码就是 %5c。那么汉字的 url 编码呢? 很简单，看例子:"胡"的ascii码是-17670，十六进制是 BAFA，url 编码是 "%BA%FA"。
 
 但是由于我写的地址`%2Chttp%3A%2F%2F10.1.64.42%3A9082%2Finsure-pad%2FpadServer.do%2Cfalse`由于我试的是android 5.1的机器, 暂时判定存在特殊字符串, 导致Failure [INSTALL_PARSE_FAILED_NO_CERTIFICATES]
 ~~URL编码也不好走~~
@@ -50,7 +50,7 @@ config.bool = false
 
 其实解决的就是冒号 和 斜杠的转义, 写法如下
 将`,http://10.1.64.42:9082/insure-pad/padServer.do,false`
-其中用[SLASH]  表示斜杠`/ ` , 用[COLON] 表示冒号`:`
+其中用[SLASH]  表示斜杠`/` , 用[COLON] 表示冒号`:`
 **还是存在同样的问题, 存在特殊字符串, 会导致Failure[INSTALL_PARSE_FAILED_NO_CERTIFICATES]**
 所以仍然解决不了问题, 心灰意冷了
 
@@ -88,13 +88,13 @@ ApplicationInfo appInfo = this.getPackageManager().getApplicationInfo(getPack
 String channel = appInfo.metaData.getString("Goapk_Market");
 ```
 
-这里采用的是网易云捕精英大队开发了[多渠道打包工具](http://crash-public-online.nos.netease.com/makechannels.zip)，该工具主要基于manifest和meta渠道包制作方式，实现快速批量多渠道包的生成。
+这里采用的是网易云捕精英大队开发了[多渠道打包工具](http://crash-public-online.nos.netease.com/makechannels.zip)，该工具主要基于 manifest 和 meta 渠道包制作方式，实现快速批量多渠道包的生成。
 
 命令行下，运行：`java -jar makechannels.jar` 查看版本号与使用方法：
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-cf07de8b17c65440.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-配置的channels.txt(以|分割, 第一个是配置value, 第二个是配置key, 第三个是配置输出的文件名)
+配置的 channels.txt (以 | 分割, 第一个是配置 value, 第二个是配置 key, 第三个是配置输出的文件名)
 
 ```text
 false,http://10.1.104.28:8081/xxx|CUSTOM_KEY|保全技术
@@ -125,11 +125,11 @@ true,http://10.1.104.28:8099/yyy|CUSTOM_KEY|技术微服务
 
 ## 参考
 
-* 详解高速神器python脚步打包android apk，超级快！！（打包系列教程之六） - CSDN博客
+* 详解高速神器 python 脚本打包 android apk，超级快！！（打包系列教程之六） - CSDN 博客
 <https://blog.csdn.net/javazejian/article/details/50760590>
 * Android快速批量多渠道包的“蛋生” - 网易云捕博客 - CSDN博客
 <https://blog.csdn.net/crash163/article/details/51879585>
 * Android 应用加固_工具下载_通用工具_网易云易盾
 <http://support.dun.163.com/documents/15588074449563648?docId=101829642806284288>
-* 自动化打包apk总结并整合资料 - 简书
+* 自动化打包 apk 总结并整合资料 - 简书
 <https://www.jianshu.com/p/4a07d902066f>

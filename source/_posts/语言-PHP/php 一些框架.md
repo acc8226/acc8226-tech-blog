@@ -1,4 +1,4 @@
-ThinkPHP 框架 | 中文最佳实践 PHP 开源框架,专注WEB应用快速开发8年！
+ThinkPHP 框架 | 中文最佳实践 PHP 开源框架,专注 WEB 应用快速开发
 
 <https://www.thinkphp.cn/>
 

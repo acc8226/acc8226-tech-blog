@@ -1,4 +1,4 @@
-SQL 最强大的功能之一就是能在数据检索查询的执行中联结（join）表。联结是利用 SQL 的 SELECT 能执行的最重要的操作，很好地理解联结及其语法是学习SQL的一个极为重要的组成部分。另外聚集函数也可以在联结中进行使用。
+SQL 最强大的功能之一就是能在数据检索查询的执行中联结（join）表。联结是利用 SQL 的 SELECT 能执行的最重要的操作，很好地理解联结及其语法是学习 SQL 的一个极为重要的组成部分。另外聚集函数也可以在联结中进行使用。
 
 SQL 连接(JOIN) 用于把来自两个或多个表的行结合起来。
 
@@ -16,6 +16,7 @@ FULL JOIN：只要其中一个表中存在匹配，则返回行
 ## 前提准备
 
 导入语句
+
 ```sql
 -- --------------------------------------------------------
 -- 主机:                           10.1.212.135
@@ -85,7 +86,8 @@ INSERT INTO `websites` (`id`, `name`, `url`, `alexa`, `country`) VALUES
 ```
 
 预览数据
-```
+
+```sql
 MariaDB [test]> SELECT * FROM websites;
 +----+---------------+---------------------------+-------+---------+
 | id | name          | url                       | alexa | country |
@@ -129,6 +131,7 @@ MariaDB [test]> SELECT * FROM access_log;
 INNER JOIN 关键字在表中存在匹配时返回行。
 
 语法
+
 ```sql
 SELECT column_name(s)
 FROM table1
@@ -148,6 +151,7 @@ ON table1.column_name=table2.column_name;
 > 注释：INNER JOIN 与 JOIN 是相同的。
 
 示例：返回所有网站的访问记录
+
 ```sql
 MariaDB [test]> SELECT Websites.name, access_log.count, access_log.date
     -> FROM Websites
@@ -183,7 +187,9 @@ FROM table1
 LEFT JOIN table2
 ON table1.column_name=table2.column_name;
 ```
+
 或：
+
 ```sql
 SELECT column_name(s)
 FROM table1
@@ -221,19 +227,23 @@ MariaDB [test]> SELECT Websites.name, access_log.count, access_log.date
 ### SQL RIGHT JOIN 语法
 
 RIGHT JOIN 关键字从右表（table2）返回所有的行，即使左表（table1）中没有匹配。如果左表中没有匹配，则结果为 NULL。
+
 ```sql
 SELECT column_name(s)
 FROM table1
 RIGHT JOIN table2
 ON table1.column_name=table2.column_name;
 ```
+
 或：
+
 ```sql
 SELECT column_name(s)
 FROM table1
 RIGHT OUTER JOIN table2
 ON table1.column_name=table2.column_name;
 ```
+
 注释：在某些数据库中，RIGHT JOIN 称为 RIGHT OUTER JOIN。
 
 ```sql
@@ -282,12 +292,14 @@ ON table1.column_name=table2.column_name;
 ## 多个连接的写法总结
 
 INNER JOIN 连接两个数据表的用法：
+
 ```sql
-SELECT * FROM 表1 
+SELECT * FROM 表1
 INNER JOIN 表2 ON 表1.字段号=表2.字段号
 ```
 
 INNER JOIN 连接三个数据表的用法：
+
 ```sql
 SELECT * FROM 表1
 INNER JOIN 表2 ON 表1.字段号=表2.字段号
@@ -334,9 +346,10 @@ where cust_id in (
 
 ## 例题
 
-提问：查找值等于或大于1000的所有订单号和订单数量至少达到这个数的顾客名称。
+提问：查找值等于或大于 1000 的所有订单号和订单数量至少达到这个数的顾客名称。
 
-解答：可以使用使用简单的等联结或ANSI的INNER JOIN语法。
+解答：可以使用使用简单的等联结或 ANSI 的 INNER JOIN 语法。
+
 ```sql
 -- Equijoin syntax
 SELECT cust_name, SUM(item_price*quantity) AS total_price
@@ -348,8 +361,8 @@ ORDER BY cust_name;
 
 -- ANSI INNER JOIN syntax
 SELECT cust_name, SUM(item_price*quantity) AS total_price
-FROM Customers 
- INNER JOIN Orders ON Customers.cust_id = Orders.cust_id 
+FROM Customers
+ INNER JOIN Orders ON Customers.cust_id = Orders.cust_id
  INNER JOIN OrderItems ON Orders.order_num = OrderItems.order_num
 GROUP BY cust_name
 HAVING SUM(item_price*quantity) >= 1000
@@ -359,6 +372,6 @@ ORDER BY cust_name;
 ## 参考
 
 SQL UNION 操作符 | 菜鸟教程
-https://www.runoob.com/sql/sql-union.html
+<https://www.runoob.com/sql/sql-union.html>
 
 SQL必知必会（第5版）-本·福达-微信读书https://weread.qq.com/web/reader/f7632a30720befadf7636bb

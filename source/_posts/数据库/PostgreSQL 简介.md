@@ -198,17 +198,17 @@ METHOD 参数设置
 
 ### PgSQL 设置远程连接
 
-1\. 安装目录/data/pg_hba.conf
+1\. 安装目录 /data/pg_hba.conf
 
 ```conf
- host    all       all         192.168.1.1/32      md5 --/32代表只允许192.168.1.1访问
- host    all       all         192.168.1.0/24     md5 --/24代表192.168.1.1~192.168.1.255都允许访问
- host    all       all         192.168.0.0/16      md5 --/16代表192.168.1.1~192.168.255.255都允许访问
- host    all       all         192.0.0.0/8          md5 --/8代表192.1.1.1~192.255.255.255都允许访问
- host    all       all         0.0.0.0/0          md5 --/0代表所有ip地址都允许访问
+ host    all       all         192.168.1.1/32      md5 --/32 代表只允许 192.168.1.1 访问
+ host    all       all         192.168.1.0/24     md5 --/24 代表 192.168.1.1~192.168.1.255 都允许访问
+ host    all       all         192.168.0.0/16      md5 --/16 代表 192.168.1.1~192.168.255.255 都允许访问
+ host    all       all         192.0.0.0/8          md5 --/8 代表 192.1.1.1~192.255.255.255 都允许访问
+ host    all       all         0.0.0.0/0          md5 --/0 代表所有 ip 地址都允许访问
 ```
 
-2\. 修改监听的IP和端口。
+2\. 修改监听的 IP 和端口。
 
 打开 postgresql.conf。找到以下内容：
 
@@ -220,7 +220,7 @@ listen_addresses = '*' # what IP address(es) to listen on;
 
 ## 导入和导出功能
 
-Postgresql的三种备份方式
+Postgresql 的三种备份方式
 
 1. 文件系统级别的冷备份。
 2. SQL转储。
@@ -239,7 +239,7 @@ psql -h 127.0.0.1 -p 5432 -U postgres -d thingsx2 < dbname.sql
 PL/pgSQL 是一种用于 PostgreSQL 数据库系统的可载入的过程语言。PL/pgSQL 的设计目标是创建一种这样的可载入过程语言。
 
 * 可以被用来创建函数和触发器过程，
-* 对SQL语言增加控制结构，
+* 对 SQL 语言增加控制结构，
 * 可以执行复杂计算，
 * 继承所有用户定义类型、函数和操作符，
 * 可以被定义为受服务器信任，
@@ -249,7 +249,7 @@ PL/pgSQL 是一种用于 PostgreSQL 数据库系统的可载入的过程语言�
 
 pgadmin4 在点击备份数据库时，PgAdmin 出现 Utility file not found. Please correct the Binary Path in the Preferences dialog 的解决办法
 
-1\. 点击顶部菜单栏，File→PreferencesPreferences
+1\. 点击顶部菜单栏，File → PreferencesPreferences
 
 2\. 在弹出的窗口中，点击 Paths 下的 Binary paths 操作示例
 

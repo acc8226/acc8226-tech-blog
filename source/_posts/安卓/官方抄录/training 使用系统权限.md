@@ -9,7 +9,7 @@ tags:
 - android
 ---
 
-https://developer.android.google.cn/training/permissions/index.html
+<https://developer.android.google.cn/training/permissions/index.html>
 
 ## 声明权限
 

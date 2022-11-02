@@ -18,11 +18,14 @@ FHS（英文：Filesystem Hierarchy Standard 中文：文件系统层次结构�
 ![](https://upload-images.jianshu.io/upload_images/1662509-a084bf9f01cae3d1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## 目录路径
+
+```sh
 $ cd ..
 
 进入 home 目录
 $ cd ~
 # 或者 cd /home/<你的用户名>
+```
 
 使用 pwd 获取当前路径：
 
@@ -61,7 +64,7 @@ nl 命令，添加行号并打印，这是个比 cat -n 更专业的行号打印
 
 这里简单列举它的常用的几个参数：
 
-```text
+```sh
 -b : 指定添加行号的方式，主要有两种：
     -b a:表示无论是否为空行，同样列出行号("cat -n"就是这种方式)
     -b t:只列出非空行的编号并列出（默认为这种方式）

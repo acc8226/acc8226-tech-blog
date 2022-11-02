@@ -86,7 +86,7 @@ public final class BuildConfig {
 
 ## 6. 用 sdklib.jar 打包 apk(组合classes.dex和res.zip生成未签名的APK)
 
-老版本可以用apkbuild.bat的命令`apkbuilder bin/unsigned.apk -v -u -z bin/res.zip -f bin/classes.dex`
+老版本可以用 apkbuild.bat 的命令`apkbuilder bin/unsigned.apk -v -u -z bin/res.zip -f bin/classes.dex`
 但是如果如果被移除的话, 可以在安卓 sdk 安装目录 tools\lib 下是否存在 sdklib.jar, 如果存在还是可以打包的。
 
 ```sh

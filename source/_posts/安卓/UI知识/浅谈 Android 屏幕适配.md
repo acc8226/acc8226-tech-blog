@@ -1,6 +1,6 @@
 ---
 title: 浅谈 Android 屏幕适配
-date: 2017.05.21 17:12:58
+date: 2017-05-21 17:12:58
 categories:
   - 安卓
   - UI 知识
@@ -17,7 +17,7 @@ tags:
 为简便起见，Android 将所有实际屏幕尺寸分组为四种通用尺寸：小、 正常、大和超大。(太宽泛了, 现在已不建议使用)
 
 **DPI（Dots Per Inch）**：每英寸点数，表示指屏幕密度。是测量空间点密度的单位，最初应用于打印技术中，它表示每英寸能打印上的墨滴数量。较小的 DPI 会产生不清晰的图片。
-后来DPI的概念也被应用到了计算机屏幕上，**计算机屏幕一般采用 PPI（Pixels Per Inch）来表示一英寸屏幕上显示的像素点的数量，现在 DPI 也被引入。**
+后来 DPI 的概念也被应用到了计算机屏幕上，**计算机屏幕一般采用 PPI（Pixels Per Inch）来表示一英寸屏幕上显示的像素点的数量，现在 DPI 也被引入。**
 
 为简便起见，Android 将所有屏幕密度分组为六种通用密度
 屏幕像素密度  | `ldpi` | `mdpi` | `hdpi` | `xhdpi` | `xxhdpi` | `xxxhdpi`
@@ -29,7 +29,7 @@ tags:
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-747cdd693267c079.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-**PPI(Pixels Per Inch)**：图像分辨率；是每英寸图像内有多少个像素点，分辨率的单位为ppi，通常叫做像素每英寸。图像分辨率一般被用于ps中，用来改变图像的清晰度。
+**PPI(Pixels Per Inch)**：图像分辨率；是每英寸图像内有多少个像素点，分辨率的单位为 ppi，通常叫做像素每英寸。图像分辨率一般被用于 ps 中，用来改变图像的清晰度。
 
 **密度无关像素 (dp)**
 在定义 UI 布局时应使用的虚拟像素单位，用于以密度无关方式表示布局维度或位置。
@@ -45,16 +45,17 @@ tags:
 
 应用显示在密度不同的屏幕上时，如果它保持用户界面元素的物理尺寸（从 用户的视角），便可实现“密度独立性” 。
 Android 系统可帮助您的应用以两种方式实现密度独立性：
+
 * 系统根据当前屏幕密度扩展 dp 单位数
 * 系统在必要时可根据当前屏幕密度将可绘制对象资源扩展到适当的大小
-  + `nodpi`：它可用于您不希望缩放以匹配设备密度的位图资源。例如.9图推荐放在此目录
-  +  `anydpi`：此限定符适合所有屏幕密度，其优先级高于其他限定符。 这对于[矢量可绘制对象](https://developer.android.google.cn/training/material/drawables.html#VectorDrawables)很有用。 *此项为 API 级别 21 中新增配置*
+  * `nodpi`：它可用于您不希望缩放以匹配设备密度的位图资源。例如.9图推荐放在此目录
+  * `anydpi`：此限定符适合所有屏幕密度，其优先级高于其他限定符。 这对于[矢量可绘制对象](https://developer.android.google.cn/training/material/drawables.html#VectorDrawables)很有用。 *此项为 API 级别 21 中新增配置*
 
 ### 最佳做法
 
 * 使用新尺寸限定符
-smallestWidth (sw<N>dp)
-> 屏幕的基本尺寸，由可用屏幕区域的最小尺寸指定。 具体来说，设备的smallestWidth 是屏幕可用高度和宽度的最小尺寸（您也可以将其视为屏幕的“最小可能宽度”）。无论屏幕的当前方向如何，您均可使用此限定符确保应用 UI 的可用宽度至少为 <N>dp。
+smallestWidth (`sw<N>dp`)
+> 屏幕的基本尺寸，由可用屏幕区域的最小尺寸指定。 具体来说，设备的 smallestWidth 是屏幕可用高度和宽度的最小尺寸（您也可以将其视为屏幕的“最小可能宽度”）。无论屏幕的当前方向如何，您均可使用此限定符确保应用 UI 的可用宽度至少为 `<N>dp`。
 >
 > 例如，如果布局要求屏幕区域的最小尺寸始终至少为 600 dp，则可使用此限定符创建布局资源 res/layout-sw600dp/。仅当可用屏幕的最小尺寸至少为 600dp 时，系统才会使用这些资源，而不考虑 600dp 所代表的边是用户所认为的高度还是宽度。smallestWidth 是设备的固定屏幕尺寸特性；设备的 smallestWidth **不会随屏幕方向的变化而改变**。
 >
@@ -71,6 +72,7 @@ smallestWidth (sw<N>dp)
 ### 图标的适配
 
 在进行开发的时候，我们需要**把合适大小的图片放在合适的文件夹**里面。下面以图标设计为例进行介绍。
+
 ![](http://upload-images.jianshu.io/upload_images/1662509-7ce5c01687d06c75.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 在设计图标时，对于五种主流的像素密度（MDPI、HDPI、XHDPI、XXHDPI 和XXXHDPI）应按照 2:3:4:6:8 的比例进行缩放。
@@ -83,7 +85,7 @@ smallestWidth (sw<N>dp)
 
 #### .9图自动拉伸
 
-#### ImageView的ScaleType属性
+#### ImageView的ScaleType 属性
 
 设置 不同的 ScaleType 会得到不同的显示效果，一般情况下，设置为 centerCrop 能获得较好的适配效果。fixXY 可能导致变形.
 
@@ -106,7 +108,6 @@ dependencies{
 
 ## 参考
 
-* https://developer.android.google.cn/guide/practices/screens_support#density-independence
-* http://blog.csdn.net/lfdfhl/article/details/52735103
-* 一款APP设计的从0到1之：Android设计规范篇-UI中国-专业用户体验设计平台
-https://www.ui.cn/detail/281292.html
+* <https://developer.android.google.cn/guide/practices/screens_support#density-independence>
+* <http://blog.csdn.net/lfdfhl/article/details/52735103>
+* 一款APP设计的从 0 到 1 之：Android设计规范篇-UI中国-专业用户体验设计平台 <https://www.ui.cn/detail/281292.html>
