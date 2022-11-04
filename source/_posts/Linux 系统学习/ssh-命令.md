@@ -2,12 +2,14 @@
 
 ### 结论
 
-1. ssh key 的类型有四种，分别是 dsa、rsa、 ecdsa、ed25519。
-2. 根据数学特性，这四种类型又可以分为两大类，dsa/rsa 是一类，ecdsa/ed25519 是一类，后者算法更先进。
-3. dsa 因为安全问题，已不再使用了。
-4. ecdsa 因为政治原因和技术原因，也不推荐使用。
-5. rsa 是目前兼容性最好的，应用最广泛的 key 类型，在用ssh-keygen工具生成 key的时候，默认使用的也是这种类型。不过在生成 key 时，如果指定的 key size 太小的话，也是有安全问题的，推荐 key size 是 3072 或更大。
-6. ed25519 是目前最安全、加解密速度最快的 key 类型，由于其数学特性，它的 key 的长度比 rsa 小很多，优先推荐使用。它目前唯一的问题就是兼容性，即在旧版本的 ssh 工具集中可能无法使用。不过据我目前测试，还没有发现此类问题。
+ssh key 的类型有四种，分别是 dsa、rsa、 ecdsa、ed25519。
+
+根据数学特性，这四种类型又可以分为两大类，dsa/rsa 是一类，ecdsa/ed25519 是一类，后者算法更先进。
+
+1. dsa 因为安全问题，已不再使用了。
+2. ecdsa 因为政治原因和技术原因，也不推荐使用。
+3. rsa 是目前兼容性最好的，应用最广泛的 key 类型，在用ssh-keygen工具生成 key的时候，默认使用的也是这种类型。不过在生成 key 时，如果指定的 key size 太小的话，也是有安全问题的，推荐 key size 是 3072 或更大。
+4. ed25519 是目前最安全、加解密速度最快的 key 类型，由于其数学特性，它的 key 的长度比 rsa 小很多，优先推荐使用。它目前唯一的问题就是兼容性，即在旧版本的 ssh 工具集中可能无法使用。不过据我目前测试，还没有发现此类问题。
 
 ## 什么是 OpenSSH
 
@@ -41,24 +43,26 @@ ssh-keygen -t ed25519
 
 ## 总结遇到的问题
 
-### 问题一
+### WSL 的时候 `sudo service ssh start` 启动不了 ssh
 
-使用 windows 子系统 WSL 的时候 sudo service ssh start 启动不来。
+在尝试 `sudo ssh-keygen -A`，之后就没问题了。
 
-然后尝试 sudo ssh-keygen -A，之后就没问题了。
+### 之后我在使用 Putty 的时候，登录 linux 的时候，提示 no supported authentication methods available
 
-### 问题二
+可以尝试更改文件 /etc/ssh/sshd_config 中启用 `PasswordAuthentication yes`，然后再重启服务器即可
 
-之后我在使用 Putty 的时候，登录linux的时候，提示 no supported authentication methods available，可以尝试更改文件 /etc/ssh/sshd_config 中启用 `PasswordAuthentication yes`，然后再重启服务器即可。
-
-### Linux SSH 远程登录错误解决办法 WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!
+### Linux SSH 远程登录错误解决办法 WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED
 
 **报错原因**:
-当我们选择 yes 时，ssh会把阿里云服务器的公钥(host key)都记录在~/.ssh/known_hosts。当下次访问相同服务器时，ssh 会核对 host key。如果 host key不同，ssh 会发出警告，避免你受到中间人攻击。
+当我们选择 yes 时，ssh 会把阿里云服务器的公钥(host key)都记录在 ~/.ssh/known_hosts。当下次访问相同服务器时，ssh 会核对 host key。如果 host key不同，ssh 会发出警告，避免你受到中间人攻击。
 
-我这里之所以报错，是因为我重置了阿里云服务器，服务器host key发生了变化，所以再次登录时会报错。
+我这里之所以报错，是因为我重置了阿里云服务器，服务器 host key 发生了变化，所以再次登录时会报错。
 
 **解决办法**:
 `ssh-keygen -R YourAliyunServerIp` （YourAliyunServerIp 就是你阿里云服务器的公网ip）
 
 它会更改我们上面说到的 known_hosts 文件，并生成一个 known_hosts.old 文件，known_hosts.old 文件其实就是known_hosts 未修改前的版本。
+
+### likai@localhost: Permission denied (publickey)
+
+登录目标机器，打开 /etc/ssh/sshd_config ，修改 PasswordAuthentication no 为：PasswordAuthentication yes。

@@ -8,11 +8,11 @@ categories:
 
 > Windows Subsystem for Linux（简称 WSL）是一个在 Windows 10/11 上能够运行原生 Linux 二进制[可执行文件](https://baike.baidu.com/item/%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/2885816)（ELF 格式）的兼容层。
 
-## 入门
+## WSL 入门
 
 适用于 Linux 的 Windows 子系统随 Windows 操作系统一起提供，但必须先启用它并安装 Linux 发行版，然后才能开始使用它。
 
-控制面板——>程序——>程序和功能——>启用或关闭 Windows 功能——>适用于 Linux 的 Windows 子系统——>确定 （然后重启）
+控制面板 ——> 程序 ——> 程序和功能 ——> 启用或关闭 Windows 功能 ——> 适用于 Linux 的 Windows 子系统 ——> 确定 （然后重启）
 
 若要使用简化的 --install 命令，必须运行最新版本的 Windows。
 
@@ -59,7 +59,7 @@ Ubuntu-20.04    Ubuntu 20.04 LTS
 
 或者 `wsl --install --distribution <Distribution Name>`
 
-也可去微软应用商店搜索并下载, 这里我装的是 Ubuntu。
+也可去微软应用商店搜索并下载, 这里我装的是 Ubuntu 20.04。
 
 ### 注销或卸载 Linux 发行版
 
@@ -92,9 +92,7 @@ explorer.exe .
 
 ### 子系统 Linux 重启(不需要重启 Win)
 
-WSL 子系统是基于 LxssManager 服务运行的。
-只需要将 LxssManager 重启即可。
-也可以做成一个 bat 文件。
+WSL 子系统是基于 LxssManager 服务运行的。只需要将 LxssManager 重启即可。也可以做成一个 bat 文件。
 
 Using CMD (Administrator)
 
@@ -176,12 +174,29 @@ Visual Studio Code 以及 Remote - WSL 扩展使你能够直接从 VS Code 使�
 
 还可以通过使用 VS Code 中的快捷方式 `CTRL+SHIFT+P` 调出命令面板，以访问更多 VS Code 远程选项。 如果随后键入 `Remote-WSL`，将看到可用的 VS Code 远程选项列表，使你可以在远程会话中重新打开文件夹，指定要在哪个发行版中打开，等等。
 
+### WSL常见用法
+
+wsl启动ssh
+
+```sh
+sudo service ssh start
+```
+
+wsl 修改用户名密码
+
+```sh
+# 进入poweshell
+wsl -u root
+passwd # 输入密码
+exit
+```
+
 ## wslg 支持
 
 WSLg 是 Linux GUI 的 Windows 子系统的缩写，该项目的目的是支持在 Windows 上运行 Linux GUI 应用程序(X11 and Wayland) ，提供完全集成的桌面体验。
 
 **先决条件**
-Windows 11(build 22000. *)或 Windows 11 Insider Preview (builds 21362 +)
+Windows 11(build 22000.*) 或 Windows 11 Insider Preview (builds 21362 +)
 
 将会随着即将发布的 Windows 一起普及。要访问 WSLg 的预览版，您需要从 Microsoft Store 安装 Linux 预览版 Windows 子系统。
 
