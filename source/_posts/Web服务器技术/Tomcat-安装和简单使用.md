@@ -1,5 +1,7 @@
 ---
 title: Tomcat 安装和简单使用
+date: 2022.01.01 00:00:00
+updated: 2022.11.05 10:36:00
 categories: Web 服务器技术
 ---
 

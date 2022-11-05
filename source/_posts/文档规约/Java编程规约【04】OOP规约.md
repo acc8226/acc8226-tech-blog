@@ -1,6 +1,7 @@
 ---
-title: Java编程规约【04】OOP规约
+title: Java 编程规约【04】OOP 规约
 date: 2017.12.29 10:31:42
+updated: 2022-11-05 10:46:00
 categories: 文档规约
 ---
 

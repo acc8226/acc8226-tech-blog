@@ -1,4 +1,4 @@
-## [linux 查看java的安装路径](https://www.cnblogs.com/hanshuai/p/9604730.html)
+## [linux 查看 java 的安装路径](https://www.cnblogs.com/hanshuai/p/9604730.html)
 
 ```sh
 han@ubuntu:/etc$ whereis java

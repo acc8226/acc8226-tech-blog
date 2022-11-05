@@ -1,5 +1,7 @@
 ---
 title: Jetty 简单安装和部署 jenkins
+date: 2022.01.01 00:00:00
+updated: 2022.11.05 10:36:00
 categories: Web 服务器技术
 ---
 

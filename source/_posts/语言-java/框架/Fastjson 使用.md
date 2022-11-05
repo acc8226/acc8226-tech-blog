@@ -1,6 +1,6 @@
 ---
 title: Fastjson 使用
-date: 2020.03.18 19:41:15
+date: 2020-03-18 19:41:15
 updated: 2022-10-14 22:36:00
 categories:
   - 语言-Java
@@ -169,10 +169,10 @@ Object process(Object object, String name, Object value);
 String process(Object object, String name, Object value);
 ```
 
-对于参数列表中三个参数都很好理解，第一个Object为现在被拦截参数的拥有者，第二个参数为其参数名，第三个参数为其参数值，其实这个地方重点要理解的是返回值。ValueFilter的作用是在序列化之前对一些参数值做一些后置处理。例如参数值的类型为Double，但是你想做精度控制并且返回值为String，这个ValueFilter就有很大作用了，如果不做处理，直接返回value就可以了。
+对于参数列表中三个参数都很好理解，第一个Object为现在被拦截参数的拥有者，第二个参数为其参数名，第三个参数为其参数值，其实这个地方重点要理解的是返回值。ValueFilter的作用是在序列化之前对一些参数值做一些后置处理。例如参数值的类型为 Double，但是你想做精度控制并且返回值为 String，这个 ValueFilter 就有很大作用了，如果不做处理，直接返回 value 就可以了。
 
 **ContextValueFilter extends SerializeFilter**
-在某些场景下，对Value做过滤，需要获得所属JavaBean的信息，包括类型、字段、方法等。在fastjson-1.2.9中，提供了ContextValueFilter，类似于之前版本提供的**ValueFilter**，只是多了BeanContext参数可用。
+在某些场景下，对Value做过滤，需要获得所属 JavaBean 的信息，包括类型、字段、方法等。在 fastjson-1.2.9 中，提供了 ContextValueFilter，类似于之前版本提供的**ValueFilter**，只是多了BeanContext参数可用。
 
 ```java
 package com.alibaba.fastjson.serializer;
@@ -283,7 +283,7 @@ Object object = xxx;
 JSON.parseObject(JSON.toJSONString(object, SerializerFeature.WriteNullStringAsEmpty), object.getClass());
 ```
 
-### Fastjson的SerializerFeature序列化属性
+### Fastjson 的 SerializerFeature 序列化属性
 
 QuoteFieldNames———-输出key时是否使用双引号,默认为true
 WriteMapNullValue——–是否输出值为null的字段,默认为false
@@ -416,12 +416,12 @@ public class App {
 
 ### fastjson 处理枚举
 
-很多人也喜欢给枚举定义一个私有的属性，序列化为JSON时，希望以这个属性值作为value，这个时候就需要自己定义JSON的序列化和反序列化实现了。Fastjson提供了2个接口。用户控制序列化和反序列化行为，这个实在是太简单，这里不多说。看代码
+很多人也喜欢给枚举定义一个私有的属性，序列化为 JSON 时，希望以这个属性值作为 value，这个时候就需要自己定 JSON 的序列化和反序列化实现了。Fastjson 提供了 2 个接口。用户控制序列化和反序列化行为，这个实在是太简单，这里不多说。看代码
 
 * ObjectSerializer
 * ObjectDeserializer
 
-自定义 ObjectSerializer /ObjectDeserializer 的方式最为灵活，可以考虑抽象一个接口出来，让所有的枚举都实现接口。这样针对接口编写ObjectSerializer /ObjectDeserializer实现，就可以很好的复用了。
+自定义 ObjectSerializer / ObjectDeserializer 的方式最为灵活，可以考虑抽象一个接口出来，让所有的枚举都实现接口。这样针对接口编写 ObjectSerializer /ObjectDeserializer 实现，就可以很好的复用了。
 
 ```java
     public static class GenderEnumSerializer implements ObjectSerializer {

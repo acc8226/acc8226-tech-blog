@@ -9,7 +9,7 @@ tags:
 
 基于杨春敏与黄毅的 ABS 译文制作，一本深入学习 shell 脚本艺术的书籍。原版链接：[点这里](http://www.tldp.org/LDP/abs/html/)
 
-Bash（GNU Bourne-Again Shell）是一个为 GNU 计划编写的Unix shell，它是许多Linux平台默认使用的shell。
+Bash（GNU Bourne-Again Shell）是一个为 GNU 计划编写的 Unix shell，它是许多 Linux 平台默认使用的 shell。
 
 shell 是一个命令解释器，是介于操作系统内核与用户之间的一个绝缘层。准确地说，它也是能力很强的计算机语言，被称为解释性语言或脚本语言。它可以通过将系统调用、公共程序、工具和编译过的二进制程序”粘合“在一起来建立应用，这是大多数脚本语言的共同特征，所以有时候脚本语言又叫做“胶水语言”
 
@@ -39,7 +39,7 @@ echo Hello World
 
 **运行 Bash 脚本的方式：**
 
-> ```
+> ```sh
 > # 使用shell来执行
 > $ sh hello.sh
 > # 使用 bash 来执行

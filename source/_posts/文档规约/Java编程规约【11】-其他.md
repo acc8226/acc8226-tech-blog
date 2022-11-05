@@ -1,6 +1,7 @@
 ---
 title: Java编程规约【11】-其他
-date: 2018.01.26 09:43:11
+date: 2018-01-26 09:43:11
+updated: 2022-11-05 10:46:00
 categories: 文档规约
 ---
 
@@ -43,5 +44,5 @@ public static void hello() {
 
 ## 参考
 
-1. 2022 Java开发手册(黄山版).pdf
-2. 白话阿里巴巴Java开发手册（安全规约） - 李艳鹏 - 简书(<https://www.jianshu.com/p/9528c4ea1504>)
+1. 2022 Java 开发手册(黄山版).pdf
+2. 白话阿里巴巴 Java 开发手册（安全规约） - 李艳鹏 - 简书(<https://www.jianshu.com/p/9528c4ea1504>)

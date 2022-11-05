@@ -1,5 +1,7 @@
 ---
 title: Nginx 安装和简单使用
+date: 2022.01.01 00:00:00
+updated: 2022.11.05 10:36:00
 categories: Web 服务器技术
 ---
 
@@ -17,7 +19,6 @@ categories: Web 服务器技术
 **CentOS 下 yum 安装**
 使用 `yum` 来安装 Nginx
 `yum install nginx -y`
-安装完成后，使用 `nginx` 命令启动 Nginx： `./nginx`
 
 **ubuntu 下 apt-get 安装**
 `apt-get install nginx`
@@ -30,7 +31,7 @@ categories: Web 服务器技术
 1\. 从 nginx 官网下载稳定版 Stable version 安装包
 <http://nginx.org/en/download.html>
 
-2\. 安装 Nginx 依赖，pcre、openssl、gcc、zlib（推荐使⽤yum源⾃动安装）
+2\. 安装 Nginx 依赖，pcre、openssl、gcc、zlib（推荐使⽤ yum 源⾃动安装）
 
 ```sh
 yum -y install gcc zlib zlib-devel pcre-devel openssl openssl-devel
@@ -116,8 +117,23 @@ Error: Could not symlink .
 
 Nginx 让新的配置生效  `nginx -s reload`
 关闭命令: `nginx -s stop`
+运行以下命令查看 Nginx 版本。`nginx -v`
 
-运行 <http://localhost/>
+### 如果是通过包管理器进行安装
+
+运行以下命令启动 Nginx 服务。
+`systemctl start nginx` = `service nginx restart`
+运行以下命令设置 Nginx 服务开机自启动。
+`systemctl enable nginx`
+运行以下命令设置 Nginx 禁止开机自启。
+`systemctl disable nginx`
+停止服务
+`systemctl stop nginx`
+
+配置文件所在目录
+
+* 配置文件 /etc/nginx
+* 网页存放文件 /usr/share/nginx/html
 
 ## 教程
 
@@ -128,6 +144,89 @@ make && make install
 
 ./configure --prefix=/home/work/nginx3 ..... // 第三个nginx的安装配置
 make && make install
+
+## 功能演示
+
+### nginx 反向代理
+
+这里用到了关键字 proxy_pass
+
+```conf
+server {
+    listen 9000;
+    server_name  localhost;
+
+    location /risk_pdf {
+        proxy_pass https://ebt.oss-cn-beijing.aliyuncs.com/PDF_SC;
+    }
+}
+```
+
+### nginx 禁止限制某个 IP 地址或网段访问服务器 - 不要学我说话 - 博客园
+
+<https://www.cnblogs.com/hmycl/p/14416350.html>
+
+### Nginx 下安装 SSL 证书
+
+1. 申请证书 todo
+
+2. 安装证书
+
+首先找到Nginx 配置目录.例如我的目录在`/etc/nginx`
+
+在证书控制台下载Nginx版本证书。下载到本地的压缩文件包解压后包含：
+
+.crt文件：是证书文件，crt是**pem**文件的扩展名。
+.key文件：证书的私钥文件（申请证书时如果没有选择自动创建CSR，则没有该文件）。
+> 友情提示： .pem扩展名的证书文件采用Base64-encoded的PEM格式文本文件，可根据需要修改扩展名。
+
+1. 放置 crt 证书文件和 key 私钥文件并打开 Nginx 安装目录下 conf 目录中的 nginx.conf 文件. 将其修改为 (以下属性中 **ssl 开头的属性与证书配置有直接关系**，其它属性请结合自己的实际情况复制或调整) :
+/etc/pki/nginx/private/www.abc.com.key
+/etc/pki/nginx/server/www.abc.com.crt.pem
+
+```conf
+server {
+ listen 443;
+ server_name localhost;
+ ssl on;
+ root html;
+ index index.html index.htm;
+
+ ssl_certificate   cert/a.pem;
+ ssl_certificate_key  cert/a.key;
+ ssl_session_timeout 5m;
+ ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:!NULL:!aNULL:!MD5:!ADH:!RC4;
+ ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+ ssl_prefer_server_ciphers on;
+
+ location / {
+     root html;
+     index index.html index.htm;
+ }
+}
+```
+
+2\. 重启 Nginx 服务
+进入 nginx 可执行目录下，输入命令`./nginx -s reload` 即可.
+
+### 301 重定向
+
+301 重定向是很常见的需求，比如访问 nowamagic.net，自动跳到 www.nowamagic.net。或者倒过来，访问 www.nowamagic.net 跳到 nowamagic.net。Nginx 中配置 [301](http://www.nowamagic.net/academy/tag/301) 重定向(301 redirect)很容易，下面介绍下方法。
+
+单独为不带 www 的 URL 单独设一条 server 规则：
+
+```conf
+server {
+    server_name  nowamagic.net;
+    rewrite ^(.*) http://www.nowamagic.net$1 permanent;
+}
+```
+
+再 `nginx -s reload` 即可。[Nginx](http://www.nowamagic.net/academy/tag/Nginx) 的 301 配置还是很简单的。
+
+
+
+
 
 ## 记录
 
@@ -163,9 +262,13 @@ location / {
 
 ### nginx reload 与 restart 的区别
 
-reload --重新加载，reload会重新加载配置文件，Nginx服务不会中断。而且reload时会测试conf语法等，如果出错会rollback用上一次正确配置文件保持正常运行。
+reload --重新加载，reload 会重新加载配置文件，Nginx 服务不会中断。而且 reload 时会测试 conf 语法等，如果出错会 rollback 用上一次正确配置文件保持正常运行。
 
 restart --重启（先stop后start），会重启 Nginx 服务。这个重启会造成服务一瞬间的中断，如果配置文件出错会导致服务启动失败，那就是更长时间的服务中断了。
-所以，如果是线上的服务，修改的配置文件一定要备份。为了保证线上服务高可用，最好使用reload。
+所以，如果是线上的服务，修改的配置文件一定要备份。为了保证线上服务高可用，最好使用 reload。
 
-还有一点，reload 只是重新加载配置文件，不会清理 nginx 的一些缓存，在有些需要清理缓存的场景需要restart ，例如 upstream 后端配置的集群服务地址是域名而不是ip，当后端IP 变了，就需要清除该域名的解析缓存，此时需要重启而不是 reload。
+还有一点，reload 只是重新加载配置文件，不会清理 nginx 的一些缓存，在有些需要清理缓存的场景需要 restart ，例如 upstream 后端配置的集群服务地址是域名而不是 ip，当后端 IP 变了，就需要清除该域名的解析缓存，此时需要重启而不是 reload。
+
+## 参考
+
+[《 http状态码301和302详解及区别——辛酸的探索之路》](http://blog.csdn.net/grandPang/article/details/47448395)

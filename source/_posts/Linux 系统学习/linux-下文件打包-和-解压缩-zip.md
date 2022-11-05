@@ -197,5 +197,4 @@ tar命令在解压时会默认指定参数--same-owner，即打包的时候是�
 
 ## 参考
 
-实验楼
-<https://www.shiyanlou.com/courses/1/learning/?id=61>
+实验楼 <https://www.shiyanlou.com/courses/1/learning/?id=61>
