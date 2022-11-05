@@ -1,9 +1,11 @@
 ---
 title: Nginx 安装和简单使用
-date: 2022.01.01 00:00:00
-updated: 2022.11.05 10:36:00
+date: 2022-01-01 00:00:00
+updated: 2022-11-05 10:36:00
 categories: Web 服务器技术
 ---
+
+nginx 特点：
 
 * web 服务器, 轻量级, 能处理大并发量
 * 反向代理服务器(负载均衡)
@@ -12,7 +14,7 @@ categories: Web 服务器技术
 
 ## windows 下 Nginx 环境的安装
 
-下载-解压-双击 nginx.exe 即可运行
+下载压缩包后进行解压，双击里面的 nginx.exe 即可运行
 
 ## linux 下 Nginx 环境的安装
 

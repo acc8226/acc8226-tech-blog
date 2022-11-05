@@ -21,11 +21,11 @@ Jackson 主要包含了3个模块
 
 Jackson有三种方式处理 json
 
-* 使用底层的基于 Stream 的方式对Json的每一个小的组成部分进行控制
-* 使用 Tree Model，通过JsonNode处理单个Json节点
-* 使用 databind 模块，直接对Java对象进行序列化和反序列化
+* 使用底层的基于 Stream 的方式对 Json 的每一个小的组成部分进行控制
+* 使用 Tree Model，通过 JsonNode 处理单个 Json 节点
+* 使用 databind 模块，直接对 Java 对象进行序列化和反序列化
 
-通常来说，我们在日常开发中使用的是第3种方式，有时为了简便也会使用第2种方式，比如你要从一个很大的 Json 对象中只读取那么一两个字段的时候，采用databind方式显得有些重，JsonNode 反而更简单。
+通常来说，我们在日常开发中使用的是第3种方式，有时为了简便也会使用第 2 种方式，比如你要从一个很大的 Json 对象中只读取那么一两个字段的时候，采用databind方式显得有些重，JsonNode 反而更简单。
 
 ## 导入
 
@@ -58,7 +58,7 @@ String jsonString = objectMapper.writeValueAsString(man);
 System.out.println(jsonString);
 ```
 
-> * 在默认情况下（即不对ObjectMapper 做任何额外配置，也不对 Java 对象加任何Annotation），ObjectMapper依赖于Java对象的默认的 **无参构造函数** 进行反序列化，并且严格地通过 getter（序列化依赖 get 方法） 和 setter（反序列化依赖set方法） 的命名(而**非成员变量**)规约进行序列化和反序列化。
+> * 在默认情况下（即不对 ObjectMapper 做任何额外配置，也不对 Java 对象加任何Annotation），ObjectMapper 依赖于Java对象的默认的 **无参构造函数** 进行反序列化，并且严格地通过 getter（序列化依赖 get 方法） 和 setter（反序列化依赖set方法） 的命名(而**非成员变量**)规约进行序列化和反序列化。
 > * ObjectMapper在序列化时，将所有的字段一一序列化，无论这些字段是否有值 或者 为 null。这一点和阿里巴巴 fastjson 的不同, fastjson 的做法是若字段为 null 则不序列化该字段.
 
 ## json 转对象 (反序列化)
@@ -131,7 +131,7 @@ public class YourClass {
 }
 ```
 
-#### JsonCreator注解
+#### @JsonCreator
 
 当 json 在反序列化时，默认选择类的无参构造函数创建类对象，当没有无参构造函数时会报错，@JsonCreator作用就是指定反序列化时用的无参构造函数。构造方法的参数前面需要加上@JsonProperty,否则会报错。
 
@@ -142,9 +142,9 @@ public Person(@JsonProperty("id") String id) {
 }
 ```
 
-#### JsonFormat 注解
+#### @JsonFormat
 
-@JsonFormat 用来表示json序列化的一种格式或者类型，主要有下面几个常用的属性
+@JsonFormat 用来表示 json 序列化的一种格式或者类型，主要有下面几个常用的属性
 
 ```java
 @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy年MM月dd日 HH:mm:ss", timezone = "GMT+8")
@@ -205,18 +205,18 @@ public static enum Include {
 
 > 正常情况下建议不要使用 @JsonInclude(JsonInclude.Include.NON_EMPTY)和@JsonInclude(JsonInclude.Include.NON_NULL)，因为这样序列化之后的数据无法展现出数据的 schema，对客户端不友好。一般而言使用默认的就行。
 
-#### JsonValue 注解(用得不多)
+#### @JsonValue
 
-@JsonValue 可以用在 get 方法或者属性字段上，一个类只能用一个，当加上@JsonValue注解是，序列化是只返回这一个字段的值(用某个方法的返回值序列化整个对象的返回结果)。
+此注解用得不多。
+
+@JsonValue 可以用在 get 方法或者属性字段上，一个类只能用一个，当加上 @JsonValue 注解是，序列化是只返回这一个字段的值(用某个方法的返回值序列化整个对象的返回结果)。
 
 ```java
 public class Man {
-
     private String name;
 
     @JsonValue
     private Integer age;
-
     ...
 }
 ```
@@ -248,7 +248,7 @@ objectMapper
 ```
 
 可选配置
-通过启用SerializationFeature.INDENT_OUTPUT缩进输出配置，可以使得内容格式化后再输出，非常友好。
+通过启用 SerializationFeature.INDENT_OUTPUT 缩进输出配置，可以使得内容格式化后再输出，非常友好。
 
 mapper.enable(SerializationFeature.INDENT_OUTPUT); // 格式化
 

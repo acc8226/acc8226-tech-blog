@@ -9,5 +9,5 @@ tags:
 - Java
 ---
 
-Hutool — 🍬A set of tools that keep Java sweet.
+Hutool — A set of tools that keep Java sweet.
 <https://www.hutool.cn/>

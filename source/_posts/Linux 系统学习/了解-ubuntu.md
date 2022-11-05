@@ -1,4 +1,4 @@
-## Ubuntu 版本介绍
+## Ubuntu 版本
 
 * 20.04：focal；
 * 18.04：bionic；
@@ -6,7 +6,7 @@
 * 16.04：xenial；
 * 14.04：trusty。
 
-> 使用 HTTPS 源可以有效避免国内运营商的缓存劫持。
+提示：使用 HTTPS 源可以有效避免国内运营商的缓存劫持。
 
 ## 更换源
 
@@ -58,7 +58,7 @@ PasswordAuthentication yes # 将 no 改为 yes 表示使用帐号密码方式登
 
 如果文件不存在说明尚未安装，则执行安装 `apt-get install openssh-server`
 
-之后使用 service ssh start 即可。
+之后使用 `service ssh start` 即可。
 
 然后客户端`ssh 用户名@localhost` 可进行登录即可。
 
@@ -106,9 +106,26 @@ dpkg -I 查询deb包的详细信息
 添加说明：
 最常用的就是-i，-r。简单，安装／卸载。不用说。
 
+## 遇到过的问题
+
+### "System has not been booted with systemd as init system"
+
+原因是你想用 systemd 命令来管理 Linux 上的服务，但你的系统并没有使用 systemd，（很可能）使用的是经典的SysV init（sysvinit）系统。
+
+答案很简单，就是不要使用 systemctl 命令，而是使用等同的 sysvinit 命令。相反，可以使用对应的 sysvinit 命令。
+
+Systemd command | Sysvinit command
+----  | ----
+systemctl start service_name | service service_name start
+systemctl stop service_name | service service_name stop
+systemctl restart service_name | service service_name restart
+systemctl status service_name | service service_name status
+systemctl enable service_name | service service_name on
+systemctl disable service_name | service service_name off
+
 ## 参考
 
-dpkg 命令的详细使用教程_阿力php的博客-CSDN博客_dpkg命令
+dpkg 命令的详细使用教程_阿力 php 的博客-CSDN 博客_dpkg命令
 <https://blog.csdn.net/qq_18839693/article/details/62229646>
 
 dpkg 命令的用法_小绵羊的学习之路的博客-CSDN博客_dpkg命令

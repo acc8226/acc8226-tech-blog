@@ -58,6 +58,7 @@ plugins {
 #### [Limitations of the plugins DSL 插件 DSL 的局限性](https://docs.gradle.org/6.3/userguide/plugins.html#plugins_dsl_limitations)
 
 这种向项目中添加插件的方式远不止是一种更方便的语法。 这些插件的 DSL 处理方式使得 Gradle 能够很早很快地确定使用中的插件。 这使得 Gradle 能够做一些明智的事情，比如:
+
 * 优化插件类的加载和重用。
 * 允许不同的插件使用不同版本的依赖关系。
 * 为编辑辅助提供编译脚本中关于潜在属性和值的编辑器详细信息。

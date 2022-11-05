@@ -1,5 +1,5 @@
 ---
-title: 跨平台-显示-控制安卓手机方案-scrcpy
+title: 跨平台-显示-控制安卓手机方案 scrcpy
 date: 2019-11-30 22:34:48
 categories:
   - 收藏

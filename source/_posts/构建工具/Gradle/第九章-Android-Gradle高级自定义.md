@@ -10,7 +10,7 @@ android 的包，比如 android.app, android.content, android.view, 以及 andro
 
 这样我们就声明了我们需要使用 maps 这个共享库，声明之后，在安装生成的APK包的时候，系统会根据我们的定义，帮我们检测我们的手机系统是否有我们需要的共享库，因为我们设置的android:required="true"，是必须，如果手机系统不满足，将不能安装该应用。
 
-在Android 中，除了我们标准的 SDK，还存在两种库，一种是 add-ons 库，他们位于 add-ons 目录下，这些库大部分第三方厂商或者公司开发的，一般是为了让开发者使用，但是又不想暴漏具体标准实现的；第二类是 optional可选库，他们位于 platforms/android-xx/optional目录下，一般是为了兼容旧版本的 API，比如 org.apache.http.legacy，这是一个 HttpClient 的库，从 API23 开始，标准的Android SDK中不再包含 HttpClient 库，如果还想使用 HttpClient 库，就必须使用 org.apache.http.legacy 这个可选库。
+在Android 中，除了我们标准的 SDK，还存在两种库，一种是 add-ons 库，他们位于 add-ons 目录下，这些库大部分第三方厂商或者公司开发的，一般是为了让开发者使用，但是又不想暴漏具体标准实现的；第二类是 optional可选库，他们位于 platforms/android-xx/optional目录下，一般是为了兼容旧版本的 API，比如 org.apache.http.legacy，这是一个 HttpClient 的库，从 API23 开始，标准的 Android SDK 中不再包含 HttpClient 库，如果还想使用 HttpClient 库，就必须使用 org.apache.http.legacy 这个可选库。
 
 对第一类 add-ons 附件库来说，Android Gradle 会自动解析，帮我们添加到 classpath 里，但是第二类 optional 可选库就不会了，我们看下关于这两种库的 Android Gradle 源码说明，位于 IAndroidTarget.java文件中
 

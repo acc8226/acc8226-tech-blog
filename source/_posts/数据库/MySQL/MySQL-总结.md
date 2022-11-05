@@ -4,8 +4,8 @@
 
 以下是几个需要知道的引擎：
 
-* InnoDB是一个可靠的事务处理引擎，它不支持全文本搜索；
-* MEMORY在功能等同于MyISAM，但由于数据存储在内存中，速度很快（特别适合于临时表）；
+* InnoDB 是一个可靠的事务处理引擎，它不支持全文本搜索；
+* MEMORY 在功能等同于 MyISAM，但由于数据存储在内存中，速度很快（特别适合于临时表）；
 * MyISAM 是一个性能极高的引擎，它支持全文本搜索，但不支持事务处理。
 
 > 外键不能跨引擎 混用引擎类型有一个大缺陷。外键（用于强制实施引用完整性，如第1章所述）不能跨引擎，即使用一个引擎的表不能引用具有使用不同引擎的表的外键。
@@ -27,7 +27,7 @@ default-character-result 数据采用什么编码发给客户端
 
 在总配置文件 my.ini 中进行配置，可实现一劳永逸
 
-```
+```ini
 [mysql]
 default-character-set=gbk
 ```
@@ -38,14 +38,14 @@ default-character-set=gbk
 
 ## 案例 / 技巧
 
-**从 t_user表中，取出 user_name字段相同的记录中，id最大的那一行数据**
+**从 t_user 表中，取出 user_name 字段相同的记录中，id 最大的那一行数据**
 
 ```sql
-select  id,user_name from t_user
-where  id in (select max(id) from t_user group by user_name )
+select id,user_name from t_user
+where id in (select max(id) from t_user group by user_name )
 ```
 
-**sql server 中查询一个表中某个数据重复条数大于1的所有信息**
+**sql server 中查询一个表中某个数据重复条数大于 1 的所有信息**
 
 select * from (
 select count(A) [as](https://www.baidu.com/s?wd=as&tn=SE_PcZhidaonwhc_ngpagmjz&rsv_dl=gh_pc_zhidao) [num](https://www.baidu.com/s?wd=num&tn=SE_PcZhidaonwhc_ngpagmjz&rsv_dl=gh_pc_zhidao) , A from table1 group by A
@@ -66,9 +66,9 @@ jdbc.url=jdbc:mysql:///test?characterEncoding=utf-8&serverTimezone=Asia/Shanghai
 
 原因：因为 MySQL8.0 与以前的版本加密方式不同,需要更改一下加密方法
 
-1. 管理员权限运行命令提示符，登录 MySQL。
+1\. 管理员权限运行命令提示符，登录 MySQL。
 
-2. 修改账户密码加密规则并更新用户密码
+2\. 修改账户密码加密规则并更新用户密码
 
 ```sql
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'password' PASSWORD EXPIRE NEVER;   
@@ -76,7 +76,7 @@ ALTER USER 'root'@'localhost' IDENTIFIED BY 'password' PASSWORD EXPIRE NEVER;  
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password'; 
 ```
 
-3. 刷新权限并重置密码
+3\. 刷新权限并重置密码
 
 ```sql
 # 刷新权限
@@ -103,7 +103,7 @@ alter user 'root'@'localhost' identified by '123456';
 
 如果希望使用用户名为”username”，使用密码”password”从任何主机连接到mysql服务器的话：
 
-```
+```sql
 mysql> GRANT ALL PRIVILEGES ON *.* TO 'username'@'%' IDENTIFIED BY 'password' WITH GRANT OPTION;
 Query OK, 0 rows affected (0.00 sec)
 
@@ -138,7 +138,7 @@ flush privileges; 注意这里需要有；号否则不执行。
 
 **ERROR 1415 (0A000): Not allowed to return a result set from a trigger**
 
-```
+```sql
 CREATE TRIGGER newproduct AFTER INSERT ON products
 FOR EACH ROW SELECT 'Product added';
 ```
@@ -149,17 +149,36 @@ FOR EACH ROW SELECT 'Product added';
 
 ## sql 优化
 
-https://www.eversql.com/
+<https://www.eversql.com/>
 
-https://www.eversql.com/sql-order-of-operations-sql-query-order-of-execution/
+<https://www.eversql.com/sql-order-of-operations-sql-query-order-of-execution/>
+
+## 遇到过的问题
+
+### MySQL表不能修改、删除等操作，卡死、锁死情况的处理办法
+
+```sql
+show full processlist;
+```
+
+列出当前的操作process，看到很多处于 waiting 的process ，说明已经有卡住的 proces。假如说这里我们看到是 sending data 的这条语句卡住了 mysql。
+
+找出 id 后，我们再执行：
+
+```sql
+kill processid;
+```
 
 ## 参考
 
 Mysql is not allowed to connect to this mysql server报错解决办法_wtopps的专栏-CSDN博客
-https://blog.csdn.net/wtopps/article/details/81626656
+<https://blog.csdn.net/wtopps/article/details/81626656>
 
 Host 'ip地址' is not allowed to connect to this MySQL server报错解决方法_CXRS_LIU的博客-CSDN博客
-https://blog.csdn.net/CXRS_LIU/article/details/90478519
+<https://blog.csdn.net/CXRS_LIU/article/details/90478519>
 
 ERROR 1415 (0A000): Not allowed to return a result set from a trigger_学而时‘享’之，乐乎-CSDN博客
-https://blog.csdn.net/Mr_Programming_Liu/article/details/89376988
+<https://blog.csdn.net/Mr_Programming_Liu/article/details/89376988>
+
+MySQL表不能修改、删除等操作，卡死、锁死情况的处理办法 - wqbin - 博客园
+<https://www.cnblogs.com/wqbin/p/11900653.html>

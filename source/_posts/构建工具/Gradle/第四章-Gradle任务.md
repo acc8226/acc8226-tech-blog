@@ -32,7 +32,7 @@ createTask2.doLast{
 
 因为Map传参配置的方式（第二种）毕竟可配置的项有限，所以可以通过闭包的方式进行更多更灵活的配置，闭包里的委托对象就是 Task，所以你可以使用 Task 对象的任何方法、属性等信息进行配置，比如示例中我们配置了任务的描述和任务执行后要做的事情。
 
-Project中还有一种名字 + Map 参数 + 闭包的的方式，和上面演示的非常相似，就不列出了，下面我们说下 TaskContainer 创建任务的方式。如果我们去看Project对象中关于上面我们演示的task方法的源代码，就会发现其实他们最终都是调用 TaskContainer 对象中的create 方法，其参数和 Project 中的 task 方法基本一样，我们下面看例子，我们使用这种方式重写第三种方式的例子：
+Project 中还有一种名字 + Map 参数 + 闭包的的方式，和上面演示的非常相似，就不列出了，下面我们说下 TaskContainer 创建任务的方式。如果我们去看Project对象中关于上面我们演示的task方法的源代码，就会发现其实他们最终都是调用 TaskContainer 对象中的create 方法，其参数和 Project 中的 task 方法基本一样，我们下面看例子，我们使用这种方式重写第三种方式的例子：
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-07e5eadb7d9e62c9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 

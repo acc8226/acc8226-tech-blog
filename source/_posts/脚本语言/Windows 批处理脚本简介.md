@@ -1,6 +1,7 @@
 ---
 title: Windows 批处理脚本简介
 date: 2022-04-05 14:41:50
+updated: 2022-11-05 09:48:00
 categories: 脚本文件
 tags:
 - bat
@@ -368,7 +369,7 @@ SetX 有三种使用方式:
          /F file {var {/A x,y | /R x,y string}[/M] | /X} [/D delimiters]
 
 描述:
-    在用户或系统环境创建或修改环境变量。能基于参数、注册表项或文件输    入设置变量。
+    在用户或系统环境创建或修改环境变量。能基于参数、注册表项或文件输入设置变量。
 ```
 
 ### 批处理脚本遍历指定文件夹下的文件
@@ -411,7 +412,33 @@ C:\Users\ferder>echo %time%
 
 则是再当前目录下创建一个空的文件夹。
 
+## 一些记录
+
+### cd /d %~dp0是什么意思
+
+意思是更改当前目录为批处理本身的目录。
+
+比如你有个批处理 a.bat 在 D:\qq文件夹下
+
+a.bat内容为
+cd /d %~dp0
+
+在这里
+cd /d %~dp0 的意思就是cd /d d:\qq
+
+%0代表批处理本身 d:\qq\a.bat
+
+~dp是变量扩充
+d既是扩充到分区号 d:
+p就是扩充到路径 \qq
+dp就是扩充到分区号路径 d:\qq
+
+## 遇到过的问题
+
 ## 参考
 
 DOS 批处理中的字符串处理详解(字符串截取)
 <https://blog.csdn.net/xiaoding133/article/details/39253083>
+
+cd /d %~dp0是什么意思啊？ - 海阔天 - 博客园
+<https://www.cnblogs.com/yxsylyh/archive/2012/06/07/dosdp0.html>

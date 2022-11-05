@@ -1,6 +1,6 @@
 ---
 title: Ant打包安卓apk(3) ANT 打包自动档(基本版)
-date: 2018.10.15 10:30:11
+date: 2018-10-15 10:30:11
 categories:
   - 构建工具
   - Ant
