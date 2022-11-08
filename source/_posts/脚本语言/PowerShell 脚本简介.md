@@ -21,13 +21,25 @@ Get-Service ssh-agent | Set-Service -StartupType Manual
 Set-Service -Name sshd -StartupType 'Automatic'
 
 输出日志
+
+```powershell
 Write-Output "Firewall rule 'OpenSSH-Server-In-TCP' has been created and exists."
+```
 
 启动服务
+
+```powershell
 Start-Service sshd
+```
 
 安装功能
+
+```powershell
 Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
+```
 
 卸载功能
+
+```powershell
 Remove-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
+```

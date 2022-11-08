@@ -1,6 +1,6 @@
 ## 引擎类型
 
-与其他 DBMS 一样，MySQL 有一个具体管理和处理数据的内部引擎。在你使用CREATE TABLE 语句时，该引擎具体创建表，而在你使用 SELECT 语句或进行其他数据库处理时，该引擎在内部处理你的请求。多数时候，此引擎都隐藏在 DBMS 内，不需要过多关注它。但 MySQL 与其他 DBMS 不一样，它具有多种引擎。它打包多个引擎，这些引擎都隐藏在MySQL服务器内，全都能执行 CREATE TABLE 和 SELECT 等命令。为什么要发行多种引擎呢？因为它们具有各自不同的功能和特性，为不同的任务选择正确的引擎能获得良好的功能和灵活性。
+与其他 DBMS 一样，MySQL 有一个具体管理和处理数据的内部引擎。在你使用CREATE TABLE 语句时，该引擎具体创建表，而在你使用 SELECT 语句或进行其他数据库处理时，该引擎在内部处理你的请求。多数时候，此引擎都隐藏在 DBMS 内，不需要过多关注它。但 MySQL 与其他 DBMS 不一样，它具有多种引擎。它打包多个引擎，这些引擎都隐藏在 MySQL 服务器内，全都能执行 CREATE TABLE 和 SELECT 等命令。为什么要发行多种引擎呢？因为它们具有各自不同的功能和特性，为不同的任务选择正确的引擎能获得良好的功能和灵活性。
 
 以下是几个需要知道的引擎：
 
@@ -64,7 +64,7 @@ jdbc.url=jdbc:mysql:///test?characterEncoding=utf-8&serverTimezone=Asia/Shanghai
 
 ### 使用 navicat 连接Mysql 8.0 数据库 出现2095- Authentication plugin 'caching_sha2_password' cannot be loaded
 
-原因：因为 MySQL8.0 与以前的版本加密方式不同,需要更改一下加密方法
+原因：因为 MySQL 8.0 与以前的版本加密方式不同,需要更改一下加密方法
 
 1\. 管理员权限运行命令提示符，登录 MySQL。
 
@@ -97,11 +97,11 @@ alter user 'root'@'localhost' identified by '123456';
 
 **现象**
 
-第一次在服务器上安装mysql后，使用客户端连接服务器的mysql，报错“host xxx is not allowed to connect to this mysql server”。
+第一次在服务器上安装 mysql 后，使用客户端连接服务器的 mysql，报错 “host xxx is not allowed to connect to this mysql server”。
 
 **解决方式一**
 
-如果希望使用用户名为”username”，使用密码”password”从任何主机连接到mysql服务器的话：
+如果希望使用用户名为 ”username”，使用密码”password” 从任何主机连接到 mysql 服务器的话：
 
 ```sql
 mysql> GRANT ALL PRIVILEGES ON *.* TO 'username'@'%' IDENTIFIED BY 'password' WITH GRANT OPTION;
@@ -131,7 +131,7 @@ GRANT ALL PRIVILEGES ON mydatabase.* TO 'username'@'192.168.0.100' IDENTIFIED BY
 
 **解决方式二**
 
-报"Host ‘169.254.213.3’ is not allowed to connect to this MySQL server主要的意思是这个host主机不能访问本机的mysql服务，原因需要连接非本机的mysql的时候，默认host是localhost，我们需要将这个mysql连接权限设置成%，更改方法直接通过软件更改和命令行更改：选择mysql这个数据库，里面有一个user表，进入表中有一个host字段将localhost值更改为%这个保存后，刷新或者重启MySQL服务都行。 刷新的命令是
+报"Host ‘169.254.213.3’ is not allowed to connect to this MySQL server 主要的意思是这个host主机不能访问本机的 mysql 服务，原因需要连接非本机的 mysql 的时候，默认 host 是 localhost，我们需要将这个mysql 连接权限设置成%，更改方法直接通过软件更改和命令行更改：选择 mysql 这个数据库，里面有一个user表，进入表中有一个 host 字段将 localhost 值更改为%这个保存后，刷新或者重启 MySQL 服务都行。 刷新的命令是
 flush privileges; 注意这里需要有；号否则不执行。
 
 ## sql 错误码
@@ -161,7 +161,7 @@ FOR EACH ROW SELECT 'Product added';
 show full processlist;
 ```
 
-列出当前的操作process，看到很多处于 waiting 的process ，说明已经有卡住的 proces。假如说这里我们看到是 sending data 的这条语句卡住了 mysql。
+列出当前的操作 process，看到很多处于 waiting 的process ，说明已经有卡住的 proces。假如说这里我们看到是 sending data 的这条语句卡住了 mysql。
 
 找出 id 后，我们再执行：
 

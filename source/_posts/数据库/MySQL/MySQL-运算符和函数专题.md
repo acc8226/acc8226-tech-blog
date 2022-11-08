@@ -27,11 +27,11 @@ Year() 是一个从日期（或日期时间）中返回年份的函数
 
 ### 聚集函数
 
-MySQL给出了5个聚集函数：avg, sum, count, max, min
+MySQL 给出了 5 个聚集函数：avg, sum, count, max, min
 
 COUNT()函数有两种使用方式。
-❑ 使用COUNT(*)对表中行的数目进行计数，不管表列中包含的是空值（NULL）还是非空值。
-❑ 使用COUNT(column)对特定列中具有值的行进行计数，忽略NULL值。
+❑ 使用 COUNT(*) 对表中行的数目进行计数，不管表列中包含的是空值（NULL）还是非空值。
+❑ 使用 COUNT(column) 对特定列中具有值的行进行计数，忽略NULL值。
 
 对非数值数据使用 MIN() MIN() 函数与 MAX()函数类似，MySQL 允许将它用来返回任意列中的最小值，包括返回文本列中的最小值。在用于文本数据时，如果数据按相应的列排序，则 MIN()返回最前面的行。
 
@@ -50,16 +50,18 @@ MySQL 5 及后期版本 下面将要介绍的聚集函数的 DISTINCT 的使用�
 ### if()函数
 
 语法
+
 ```sql
 IF(condition, value_if_true, value_if_false)
 ```
 
-简介：适用于单条件，if(condition，A,B)，如果condition成立，则A，否则B
+简介：适用于单条件，if(condition，A,B)，如果 condition 成立，则 A，否则 B
+
 ```sql
 select username, if(sex=1,'男','女') as sex from user;
 ```
 
-以上代码含义：判断sex是否为1，若为1则sex=男，否则sex=女，并输出对应姓名和性别
+以上代码含义：判断 sex 是否为 1，若为 1 则 sex=男，否则 sex=女，并输出对应姓名和性别
 
 ### coalesce 函数
 
@@ -83,9 +85,10 @@ select coalesce(null,null,3); // 返回 3
 select coalesce(null, null, null); // 返回 null
 ```
 
-### case...when函数
+### case...when 函数
 
 语法1
+
 ```sql
 CASE expression
 WHEN value1 THEN returnvalue1
@@ -95,9 +98,11 @@ WHEN value3 THEN returnvalue3
 ELSE defaultreturnvalue
 END
 ```
-如果expression=value1，则 return value1，若 expression = value2，则return value2........，否则返回 default return value。此函数在很多编程语言的初阶都有讲，故在此不举例。
+
+如果 expression=value1，则 return value1，若 expression = value2，则return value2........，否则返回 default return value。此函数在很多编程语言的初阶都有讲，故在此不举例。
 
 语法2
+
 ```sql
 CASE
 WHEN condition1 THEN returnvalue1

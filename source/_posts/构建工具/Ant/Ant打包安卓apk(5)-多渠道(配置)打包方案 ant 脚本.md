@@ -163,7 +163,7 @@ tags:
 笔记:
 
 * 需要提交配置好环境变量
-* 日期时间戳 dstamp、tsdamp、today的应用, 尼玛 HH:mm 才是二十四小时, hh:mm 是十二小时制
+* 日期时间戳 dstamp、tsdamp、today 的应用, 尼玛 HH:mm 才是二十四小时, hh:mm 是十二小时制
 * FilterChain 是个好东西, 本来对于正则表达式理解的不深, 然后 ant 对 Properties 的 value 这种字符串无从下手的时候, 万能的搜索帮了大忙
 
 小疑惑:

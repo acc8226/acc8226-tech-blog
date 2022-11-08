@@ -6,7 +6,7 @@
 表中任意列只要满足以下条件，都可以用于主键。
 
 ❑ 任意两行的主键值都不相同。
-❑ 每行都具有一个主键值（即列中不允许NULL值）。
+❑ 每行都具有一个主键值（即列中不允许 NULL值）。
 ❑ 包含主键值的列从不修改或更新。（大多数 DBMS 不允许这么做，但如果你使用的 DBMS 允许这样做，好吧，千万别！）
 ❑ 主键值不能重用。如果从表中删除某一行，其主键值不分配给新行。
 
@@ -93,21 +93,21 @@ INDEX [indexName] (username(length))
 
 它与前面的普通索引类似，不同的就是：索引列的值必须唯一，但允许有空值。如果是组合索引，则列值的组合必须唯一。它有以下几种创建方式：
 
-1. 创建索引
+1\. 创建索引
 
 ```sql
 CREATE UNIQUE INDEX indexName
 ON mytable(username(length))
 ```
 
-2. 修改表结构
+2\. 修改表结构
 
 ```sql
 ALTER table mytable
 ADD UNIQUE [indexName] (username(length))
 ```
 
-3. 创建表的时候直接指定
+3\. 创建表的时候直接指定
 
 ```sql
 CREATE TABLE mytable(

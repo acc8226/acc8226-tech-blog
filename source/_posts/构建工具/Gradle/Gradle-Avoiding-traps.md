@@ -6,7 +6,7 @@
 
 scope.groovy
 
-```
+```groovy
 String localScope1 = 'localScope1'
 def localScope2 = 'localScope2'
 scriptScope = 'scriptScope'
@@ -40,7 +40,8 @@ method()
 ```
 
 Output of 产量groovy scope.groovy
-```
+
+```sh
 > groovy scope.groovy
 localScope1
 localScope2
@@ -60,7 +61,8 @@ scriptScope
 记住 Gradle 有一个独特的配置和执行阶段是很重要的(请参阅构建生命周期)。
 
 build.gradle
-```
+
+```groovy
 def classesDir = file('build/classes')
 classesDir.mkdirs()
 task clean(type: Delete) {
@@ -78,7 +80,7 @@ task compile {
 }
 ```
 
-```
+```sh
 > gradle -q compile
 The class directory does not exist. I can not operate
 ```

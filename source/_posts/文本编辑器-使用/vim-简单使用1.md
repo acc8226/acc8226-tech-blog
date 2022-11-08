@@ -1,12 +1,12 @@
 ---
 title: vim【1】简单使用
-date: 2020.04.05 00:46:21
+date: 2020-04-05 00:46:21
 categories: 文本编辑器-使用
 ---
 
 Vim 是从 vi 发展出来的一个文本编辑器。代码补完、编译及错误跳转等方便编程的功能特别丰富，在程序员中被广泛使用。
 
-简单的来说， vi 是老式的字处理器，不过功能已经很齐全了，但是还是有可以进步的地方。 vim 则可以说是程序开发者的一项很好用的工具。
+简单的来说，vi 是老式的字处理器，不过功能已经很齐全了，但是还是有可以进步的地方。 vim 则可以说是程序开发者的一项很好用的工具。
 
 连 vim 的官方网站 ([http://www.vim.org](http://www.vim.org/)) 自己也说 vim 是一个程序开发工具而不是文字处理软件。
 
@@ -27,6 +27,7 @@ vim 键盘图：
 基本上 vi/vim 共分为三种模式，分别是命令模式（Command mode），输入模式（Insert mode）和底线命令模式（Last line mode）。
 
 ### 普通模式(Normal mode)
+
 用户刚刚启动 vi/vim，便进入了普通模式。
 
 此状态下敲击键盘动作会被 Vim 识别为命令，而非输入字符。比如我们此时按下i，并不会输入一个字符，i 被当作了一个命令。
@@ -48,7 +49,7 @@ Vim 强大的编辑能来自于其普通模式命令。普通模式命令往往�
 
 在输入模式中，可以使用以下按键：
 
-* 字符按键以及Shift组合，输入字符
+* 字符按键以及 Shift 组合，输入字符
 * ENTER，回车键，换行
 * BACK SPACE，退格键，删除光标前一个字符
 * DEL，删除键，删除光标后一个字符
@@ -78,8 +79,8 @@ Vim 强大的编辑能来自于其普通模式命令。普通模式命令往往�
 
 ### 下载插件
 
-*   下载路径[https://github.com/scrooloose/nerdtree](https://github.com/scrooloose/nerdtree) 这个是NERD tree的官网地址。
-*   可以点击[https://github.com/scrooloose/nerdtree/archive/master.zip](https://github.com/scrooloose/nerdtree/archive/master.zip) 该链接直接下载。
+* 下载路径[https://github.com/scrooloose/nerdtree](https://github.com/scrooloose/nerdtree) 这个是NERD tree的官网地址。
+* 可以点击[https://github.com/scrooloose/nerdtree/archive/master.zip](https://github.com/scrooloose/nerdtree/archive/master.zip) 该链接直接下载。
 
 ### 安装配置
 

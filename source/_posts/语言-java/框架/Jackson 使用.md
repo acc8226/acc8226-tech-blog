@@ -11,7 +11,7 @@ tags:
 
 老版本的 Jackson 使用的包名为 org.codehaus.jackson，而新版本使用的是 com.fasterxml.jackson。
 
-Jackson 主要包含了3个模块
+Jackson 主要包含了 3 个模块
 
 * jackson-core
 * jackson-annotations
@@ -19,7 +19,7 @@ Jackson 主要包含了3个模块
 
 其中，jackson-databind 又依赖于 jackson-annotations。jackson-annotations 又依赖于 jackson-core，
 
-Jackson有三种方式处理 json
+Jackson 有三种方式处理 json
 
 * 使用底层的基于 Stream 的方式对 Json 的每一个小的组成部分进行控制
 * 使用 Tree Model，通过 JsonNode 处理单个 Json 节点
@@ -58,8 +58,8 @@ String jsonString = objectMapper.writeValueAsString(man);
 System.out.println(jsonString);
 ```
 
-> * 在默认情况下（即不对 ObjectMapper 做任何额外配置，也不对 Java 对象加任何Annotation），ObjectMapper 依赖于Java对象的默认的 **无参构造函数** 进行反序列化，并且严格地通过 getter（序列化依赖 get 方法） 和 setter（反序列化依赖set方法） 的命名(而**非成员变量**)规约进行序列化和反序列化。
-> * ObjectMapper在序列化时，将所有的字段一一序列化，无论这些字段是否有值 或者 为 null。这一点和阿里巴巴 fastjson 的不同, fastjson 的做法是若字段为 null 则不序列化该字段.
+> * 在默认情况下（即不对 ObjectMapper 做任何额外配置，也不对 Java 对象加任何 Annotation），ObjectMapper 依赖于 Java 对象的默认的 **无参构造函数** 进行反序列化，并且严格地通过 getter（序列化依赖 get 方法） 和 setter（反序列化依赖set方法） 的命名(而**非成员变量**)规约进行序列化和反序列化。
+> * ObjectMapper 在序列化时，将所有的字段一一序列化，无论这些字段是否有值 或者 为 null。这一点和阿里巴巴 fastjson 的不同, fastjson 的做法是若字段为 null 则不序列化该字段.
 
 ## json 转对象 (反序列化)
 
@@ -78,7 +78,7 @@ ObjectMapper支持从 byte[]、File、InputStream、字符串等数据的 JSON �
 
 * 对反序列而言，若报错`(no Creators, like default construct, exist): cannot deserialize from Object value (no delegate- or property-based Creator)`。这个时候说明缺少空构造（无论是默认构造还是手动构造）或者在带参的构造中需要搭配注解 @JsonCreator 进行使用。
 * 在反序列化的时候，默认情况下接受输出信息的实体类的字段不能有输入中不存在的，否则会报 `com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "name2"`。 如果某些输入字段在对应实体类中无匹配，则该字段值为赋予 null 属正常. 或者在class上面加上 `@JsonIgnoreProperties(ignoreUnknown = true)` 注解
-* Jackson 除了处理普通对象，还可以对Java集合、数组等进行序列化处理。如果需要”反序列化集合”的元素为非基本类型，可以通过创建一个空实现的TypeReference实例，将需要反序列化的集合带上泛型信息传递进去，以解决泛型信息无法传递的问题。
+* Jackson 除了处理普通对象，还可以对 Java 集合、数组等进行序列化处理。如果需要”反序列化集合”的元素为非基本类型，可以通过创建一个空实现的 TypeReference 实例，将需要反序列化的集合带上泛型信息传递进去，以解决泛型信息无法传递的问题。
 
 ### @JsonProperty 注解
 
@@ -90,10 +90,10 @@ ObjectMapper支持从 byte[]、File、InputStream、字符串等数据的 JSON �
 * index: 定义与 object 指定的其他属性相关的属性的数字索引
 * required: 定义在反序列化期间是否需要属性的值
 
-**value的用法:**
-默认情况下映射的 JSON 属性与注解的属性名称相同，不过可以使用该注解的**`value`**值修改JSON属性名, 例如 `value = "mobileNumber"`
+**value 的用法:**
+默认情况下映射的 JSON 属性与注解的属性名称相同，不过可以使用该注解的 **`value`** 值修改 JSON 属性名, 例如 `value = "mobileNumber"`
 
-**access的用法:**
+**access 的用法:**
 
 * AUTO（默认）：自动确定此属性的读取和/或写入访问权限。
 * READ_ONLY：只允许序列化（get），不允许反序列化（set）
@@ -160,7 +160,7 @@ private Date date3;
 shap: 表示序列化后的一种类型
 
 * pattern: 表示日期的格式
-* timezone: 默认是GMT，中国需要GMT+8
+* timezone: 默认是 GMT，中国需要 GMT+8
 * locale: 根据位置序列化的一种格式
 
 上面三种格式序列化后的结果：
@@ -203,7 +203,7 @@ public static enum Include {
     }
 ```
 
-> 正常情况下建议不要使用 @JsonInclude(JsonInclude.Include.NON_EMPTY)和@JsonInclude(JsonInclude.Include.NON_NULL)，因为这样序列化之后的数据无法展现出数据的 schema，对客户端不友好。一般而言使用默认的就行。
+> 正常情况下建议不要使用 @JsonInclude(JsonInclude.Include.NON_EMPTY)和 @JsonInclude(JsonInclude.Include.NON_NULL)，因为这样序列化之后的数据无法展现出数据的 schema，对客户端不友好。一般而言使用默认的就行。
 
 #### @JsonValue
 
@@ -381,8 +381,8 @@ public class User
 FasterXML Jackson 学习笔记
 <https://www.jianshu.com/p/4bd355715419>
 
-Jackson注解 @JsonFormat_徐海兴的专栏-CSDN博客
+Jackson注解 @JsonFormat_徐海兴的专栏-CSDN 博客
 <https://blog.csdn.net/u012326462/article/details/83019681>
 
-《轻松学习 Jackson》教程 - 996极客教程
+《轻松学习 Jackson》教程 - 996 极客教程
 <https://996geek.com/articles/164>
