@@ -144,7 +144,8 @@ gradle properties
 ```
 
 输出是广泛的，下面是一些可用的属性:
-```
+
+```sh
 > Task :properties
 
 ------------------------------------------------------------
@@ -165,6 +166,7 @@ BUILD SUCCESSFUL
 Buildfile 属性是构建脚本的完全限定路径名，默认情况下位于 projectDir 中。
 
 您可以更改许多属性。 例如，您可以尝试将以下行添加到构建脚本文件中，并重新执行 gradle 属性。
+
 ```
 description = "A trivial Gradle build"
 version = "1.0"

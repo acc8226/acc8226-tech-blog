@@ -7,6 +7,7 @@ Gradle 可以在一个项目上完成的工作由一个或多个任务定义。�
 通常，任务是通过应用插件提供的，这样你就不必自己定义它们了。尽管如此，为了让您了解什么是任务，我们将在本章讨论用一个项目在构建中定义一些简单的任务。
 
 ## [Hello world 你好，世界](https://docs.gradle.org/6.3/userguide/tutorial_using_tasks.html#sec:hello_world)
+
 要进行尝试，请创建以下名为 build.gradle 的构建脚本。
 
 ```groovy
@@ -21,7 +22,7 @@ task hello {
 
 > 本用户指南中的大多数示例都使用 -q 命令行选项运行。 这会抑制 Gradle 的日志消息，因此只显示任务的输出。 这使得用户指南中的示例输出更加清晰。 如果你不想使用这个选项，你就不需要使用它。 有关影响 Gradle 输出的命令行选项的详细信息，请参阅日志记录。
 
-```
+```sh
 > gradle -q hello
 Hello world!
 ```
@@ -31,7 +32,8 @@ Hello world!
 ## [Build scripts are code 构建脚本就是代码](https://docs.gradle.org/6.3/userguide/tutorial_using_tasks.html#sec:build_scripts_are_code)
 
 Gradle 的构建脚本为您提供了 Groovy 和 Kotlin 的全部功能:
-```
+
+```groovy
 task upper {
     doLast {
         String someString = 'mY_nAmE'
@@ -50,7 +52,8 @@ task count {
 ## [Task dependencies 任务依赖性](https://docs.gradle.org/6.3/userguide/tutorial_using_tasks.html#sec:task_dependencies)
 
 正如您可能已经猜到的，您可以声明依赖于其他任务的任务。
-```
+
+```groovy
 task hello {
     doLast {
         println 'Hello world!'
@@ -65,7 +68,8 @@ task intro {
 ```
 
  懒惰依赖——另一个任务还不存在
-```
+
+```groovy
 task taskX {
     dependsOn 'taskY'
     doLast {
@@ -83,7 +87,7 @@ task taskY {
 
 Groovy 或 Kotlin 的强大功能不仅仅用于定义任务的功能。 例如，您还可以使用它动态创建任务。
 
-```
+```groovy
 4.times { counter ->
     task "task$counter" {
         doLast {
@@ -93,7 +97,7 @@ Groovy 或 Kotlin 的强大功能不仅仅用于定义任务的功能。 例如�
 }
 ```
 
-```
+```sh
 > gradle -q task1
 I'm task number 1
 ```
@@ -101,7 +105,8 @@ I'm task number 1
 ## [Manipulating existing tasks 操纵现有的任务](https://docs.gradle.org/6.3/userguide/tutorial_using_tasks.html#sec:manipulating_existing_tasks)
 
 一旦创建了任务，就可以通过 API 访问它们。 例如，您可以使用它在运行时动态地向任务添加依赖项。 蚂蚁不允许这样的事情发生。
-```
+
+```groovy
 4.times { counter ->
     task "task$counter" {
         doLast {
@@ -112,7 +117,7 @@ I'm task number 1
 task0.dependsOn task2, task3
 ```
 
-```
+```sh
 > gradle -q task0
 I'm task number 2
 I'm task number 3
@@ -120,6 +125,7 @@ I'm task number 0
 ```
 
 ## Example 9. Accessing a task via API - adding behaviour  通过 API 添加行为访问任务
+
 ```
 task hello {
     doLast {

@@ -33,7 +33,7 @@ Debug messages
 示例1. 使用 stdout 写日志消息
 build.gradle
 
-```
+```groovy
 println 'A message which is logged at QUIET level'
 ```
 

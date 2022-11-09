@@ -143,9 +143,9 @@ CREATE TRIGGER newproduct AFTER INSERT ON products
 FOR EACH ROW SELECT 'Product added';
 ```
 
-执行的时候会报ERROR 1415 (0A000): Not allowed to return a result set from a trigger的错误。MySQL5 早期版本是支持的，现在的新版本已经不支持这种写法。触发器不允许出现 SELECT *的形式，因为这会返回一个结果集，而这是不允许的，所以会报出这种错。
+执行的时候会报 ERROR 1415 (0A000): Not allowed to return a result set from a trigger的错误。MySQL5 早期版本是支持的，现在的新版本已经不支持这种写法。触发器不允许出现 SELECT *的形式，因为这会返回一个结果集，而这是不允许的，所以会报出这种错。
 
-触发器中可以使用SELECT  INTO的形式来进行查询，将结果放进一个变量，然后查询该变量。
+触发器中可以使用 SELECT INTO 的形式来进行查询，将结果放进一个变量，然后查询该变量。
 
 ## sql 优化
 

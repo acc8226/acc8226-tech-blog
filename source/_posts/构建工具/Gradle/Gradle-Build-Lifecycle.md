@@ -17,12 +17,14 @@
 设置文件在初始化阶段执行。 多项目构建必须在多项目层次结构的根项目中有 settings.gradle 文件。 这是必需的，因为设置文件定义了哪些项目正在参与多项目构建(参见创作多项目构建)。 对于单项目生成，设置文件是可选的。 除了定义所包含的项目之外，您可能还需要它将库添加到构建脚本类路径中(请参见 organizinggradle 项目)。 让我们首先用一个单独的项目构建做一些反思:
 
 settings.gradle
-```
+
+```groovy
 println 'This is executed during the initialization phase.'
 ```
 
 build.gradle
-```
+
+```groovy
 println 'This is executed during the configuration phase.'
 
 task configured {
@@ -46,7 +48,7 @@ task testBoth {
 }
 ```
 
-```
+```sh
 > gradle test testBoth
 This is executed during the initialization phase.
 
@@ -81,7 +83,8 @@ BUILD SUCCESSFUL in 0s
 #### [Hierarchical layouts 分层布局](https://docs.gradle.org/6.3/userguide/build_lifecycle.html#sec:hierarchical_layouts)
 
 settings.gradle
-```
+
+```groovy
 include 'project1', 'project2:child', 'project3:child1'
 ```
 
@@ -90,7 +93,8 @@ Include 方法将项目路径作为参数。 假设项目路径等于相对物�
 #### [Flat layouts 平面布局](https://docs.gradle.org/6.3/userguide/build_lifecycle.html#sec:flat_layouts)
 
 settings.gradle
-```
+
+```groovy
 includeFlat 'project3', 'project4'
 ```
 
@@ -100,7 +104,8 @@ Includeflat 方法将目录名作为参数。 这些目录需要作为根项目�
 
 在设置文件中创建的多项目树由所谓的项目描述符组成。 您可以随时在设置文件中修改这些描述符。 要访问描述符，你可以这样做:
 settings.gradle
-```
+
+```groovy
 println rootProject.name
 println project(':projectA').name
 ```
@@ -108,12 +113,13 @@ println project(':projectA').name
 使用此描述符，您可以更改项目的名称、项目目录和生成文件。
 
 settings.gradle
-```
+
+```groovy
 rootProject.name = 'main'
 project(':projectA').projectDir = new File(settingsDir, '../my-project-a')
 project(':projectA').buildFileName = 'projectA.gradle'
 ```
 
-*   [Initialization 初始化](https://docs.gradle.org/6.3/userguide/build_lifecycle.html#sec:initialization)
-*   [Configuration and execution of a single project build 单个项目生成的配置和执行](https://docs.gradle.org/6.3/userguide/build_lifecycle.html#sec:configuration_and_execution_of_a_single_project_build)
-*   [Responding to the lifecycle in the build script 在构建脚本中响应生命周期](https://docs.gradle.org/6.3/userguide/build_lifecycle.html#build_lifecycle_events)
+* [Initialization 初始化](https://docs.gradle.org/6.3/userguide/build_lifecycle.html#sec:initialization)
+* [Configuration and execution of a single project build 单个项目生成的配置和执行](https://docs.gradle.org/6.3/userguide/build_lifecycle.html#sec:configuration_and_execution_of_a_single_project_build)
+* [Responding to the lifecycle in the build script 在构建脚本中响应生命周期](https://docs.gradle.org/6.3/userguide/build_lifecycle.html#build_lifecycle_events)

@@ -29,11 +29,13 @@ FROM table_name
 > 查询语句中 NULL 的特殊作用, 任何字段 和 NULL 比较的结果都是 false。注意`name = NULL` 和 `name IS NULL` 的区别. 前者永远为 false, 后者则是判断该字段是否为 null.
 
 **WHERE、GROUP BY、HAVING 的区别**
+
 * where：数据库中常用的是 where 关键字，用于在初始表中筛选查询。它是一个约束声明，用于约束数据，在返回结果集之前起作用。
 * group by: 对 SELECT 查询出来的结果集按照某个字段或者表达式进行分组，获得一组组的集合，然后从每组中取出一个指定字段或者表达式的值。
 * HAVING ：用于对 WHERE和 GROUP BY 查询出来的分组经行过滤，查出满足条件的分组结果。它是一个过滤声明，是在查询返回结果集以后对查询结果进行的过滤操作。
 
 **查询语句执行顺序**
+
 1. FROM, including JOINs
 2. WHERE
 3. GROUP BY
@@ -55,12 +57,14 @@ MySQL 中使用 REGEXP 或 NOT REGEXP 运算符 (或 RLIKE 和 NOT RLIKE) 来操
 | [^*charlist*] 或 [!*charlist*] | 不在字符列中的任何单一字符 |
 
 下面的 SQL 语句选取 name 以 A 到 H 字母开头的网站：
+
 ```sql
 SELECT * FROM Websites
 WHERE name REGEXP '^[A-H]';
 ```
 
 下面的 SQL 语句选取 name 不以 A 到 H 字母开头的网站：
+
 ```sql
 SELECT * FROM Websites
 WHERE name REGEXP '^[^A-H]';
@@ -69,6 +73,7 @@ WHERE name REGEXP '^[^A-H]';
 > 匹配不区分大小写 MySQL 中的正则表达式匹配（自版本3.23.4后）不区分大小写（即，大写和小写都匹配）。为区分大小写，可使用BINARY关键字，如WHERE prod_name REGEXP BINARY 'JetPack .000'。
 
 **进行 OR 匹配**
+
 ```sql
 select '1000' regexp '1000|2000' -- 1
 union all select '2000' regexp '1000|2000' -- 1
@@ -78,6 +83,7 @@ union all select '100' regexp '1000|2000'; -- 0
 > 两个以上的 OR 条件 可以给出两个以上的 OR 条件。例如，'1000 | 2000 | 3000’将匹配1000或2000或3000。
 
 **匹配几个字符之一**
+
 ```sql
 select '1 t' regexp '[12] t' -- 1
 union all select '2 t' regexp '[1|2] t' -- 1 加不加中间的竖线结果都一样，表示中括号内的单子字符
@@ -97,6 +103,7 @@ union all select '2000 t' regexp '1|2000 t'; -- 去掉了中括号，1 表示 1 
 目前为止使用的所有正则表达式都试图匹配单次出现。如果存在一个匹配，该行被检索出来，如果不存在，检索不出任何行。但有时需要对匹配的数目进行更强的控制。例如，你可能需要寻找所有的数，不管数中包含多少数字，或者你可能想寻找一个单词并且还能够适应一个尾随的s（如果存在），等等。
 
 > 简单的正则表达式测试 可以在不使用数据库表的情况下用SELECT来测试正则表达式。REGEXP 检查总是返回0（没有匹配）或1（匹配）。可以用带文字串的REGEXP来测试表达式，并试验它们。相应的语法如下：
+
 ```sql
 select 'hello' regexp '^h';
 ```
@@ -127,6 +134,7 @@ DML(数据操作语言, 它是对表记录的操作(增 删 改)。
 语句示例如下，这部分内容详见 SQL 教程。
 
 简单例句：
+
 ```sql
 INSERT INTO table_name VALUES (value1, value2,...valueN );
 
@@ -136,6 +144,7 @@ delete from table [where 子句]
 ```
 
 每条 INSERT语句中的列名（和次序）相同，可以如下组合各语句：
+
 ```sql
 INSERT INTO table_name
 VALUES (value1, value2,...valueN )
@@ -153,10 +162,13 @@ INSERT SELECT 中的列名 为简单起见，这个例子在 INSERT 和 SELECT �
 INSERT SELECT 中 SELECT 语句可包含 WHERE 子句以过滤插入的数据。
 
 **insert 语句可以加入 IGNORE 关键字**
+
 ```sql
 insert ignore into
 ```
+
 当插入数据时，如出现错误时，如重复数据，将不返回错误，只以警告形式返回。所以使用ignore 请确保语句本身没有问题，否则也会被忽略掉。例如：
+
 ```sql
 INSERT IGNORE INTO books (name)
 VALUES ('MySQL Manual')
@@ -177,7 +189,6 @@ ON duplicate KEY UPDATE id = id
 为了删除某个列的值，可设置它为 NULL（假如表定义允许NULL值）。
 
 > 删除表的内容而不是表 DELETE 语句从表中删除行，甚至是删除表中所有行。但是，DELETE不删除表本身。
-
 > 更快的删除 如果想从表中删除所有行，不要使用 DELETE。可使用 TRUNCATE TABLE 语句，它完成相同的工作，但速度更快（TRUNCATE 实际是删除原来的表并重新创建一个表，而不是逐行删除表中的数据）。
 
 **delete，drop，truncate 比较**
@@ -186,25 +197,30 @@ delete，drop，truncate 都有删除表的作用，区别在于：
  2、delete 是 DML 语句，操作完以后如果没有不想提交事务还可以回滚，truncate 和 drop 是 DDL 语句，操作完马上生效，不能回滚，打个比方，delete 是发微信说分手，后悔还可以撤回，truncate 和 drop 是直接扇耳光说滚，不能反悔。
  3、执行的速度上，drop > truncate > delete，打个比方，drop 是神舟火箭，truncate 是和谐号动车，delete 是自行车。
 
-###  [MySQL replace INTO 和 INSERT IGNORE INTO](https://www.cnblogs.com/martin1009/archive/2012/10/08/2714858.html) 的区别
+### [MySQL replace INTO 和 INSERT IGNORE INTO](https://www.cnblogs.com/martin1009/archive/2012/10/08/2714858.html) 的区别
 
 REPLACE 的运行与 INSERT 很相似。只有一点例外，假如表中的一个旧记录与一个用于 PRIMARY KEY 或一个 UNIQUE 索引的新记录具有相同的值，则在新记录被插入之前，旧记录被删除。
 
 注意，除非表有一个 PRIMARY KEY 或 UNIQUE 索引，否则，使用一个 REPLACE 语句没有意义。该语句会与 INSERT 相同，因为没有索引被用于确定是否新行复制了其它的行。
+
 ```sql
 REPLACE INTO `table` (`unique_column`,`num`) VALUES ('$unique_value',$num);
 ```
+
 跟
+
 ```sql
 INSERT INTO `table` (`unique_column`,`num`)
 VALUES('$unique_value', $num)
 ON DUPLICATE UPDATE num=$num;
 ```
+
 还是有些区别的。区别就是 replace into 的时候会删除老记录。如果表中有一个自增的主键。那么就要出问题了。
 
 首先，因为新纪录与老记录的主键值不同，所以其他表中所有与本表老数据主键id建立的关联全部会被破坏。其次，就是，频繁的 REPLACE INTO 会造成新纪录的主键的值迅速增大。
 
 MySQL replace into 有三种形式：
+
 ```sql
 1. replace into tbl_name(col_name, ...) values(...)
 2. replace into tbl_name(col_name, ...) select ...
@@ -216,6 +232,7 @@ INSERT IGNORE INTO 与 INSERT INTO 的区别就是 INSERT IGNORE INTO 会忽略�
 ## DDL:(Data Definition Language)
 
 修改存储引擎：修改为 myisam
+
 ```sql
 alter table tableName
 engine = myisam;
@@ -224,11 +241,13 @@ engine = myisam;
 **创建 MySQL 数据表**
 
 创建表需要以下信息：
+
 * 表名
 * 表字段名
 * 定义每个表字段
 
 语法
+
 ```sql
 CREATE TABLE table_name [IF NOT EXISTS](
   column_name column_type,
@@ -276,26 +295,31 @@ OrderDate datetime NOT NULL DEFAULT CURDATE(),
 ```
 
 **指定默认值**
+
 > 提示：使用 DEFAULT 而不是 NULL 值许多数据库开发人员喜欢使用 DEFAULT 值而不是 NULL 列，对于用于计算或数据分组的列更是如此。
 
 **删除表**
+
 ```sql
 DROP TABLE table_name ;
 ```
 
 **修改表**
 删除表
+
 ```sql
 drop table 表名
 ```
 
 重命名表名称
+
 ```sql
 RENAME table 表名
 TO 新表名;
 ```
 
 RENAME TABLE 所做的仅是重命名一个表。可以使用下面的语句对多个表重命名：
+
 ```sql
 RENAME table table1表名 TO 新表名1,
  table2表名 TO 新表名2,
@@ -303,11 +327,13 @@ RENAME table table1表名 TO 新表名1,
 ```
 
 查看指定表的创建语句
+
 ```sql
 SHOW CREATE TABLE 表名;
 ```
 
 **修改表字段**
+
 * ALERT table 表名 ADD 列名 列类型; // 添加新列
 * ALERT table 表名 DROP COLUMN 列名; // 删除列
 * ALERT table 表名 MODIFY 列名 列类型; // 仅修改列类型
@@ -318,16 +344,21 @@ SHOW CREATE TABLE 表名;
 添加字段的三种写法
 
 * 字段会自动添加到数据表字段的**末尾**
+
 ```sql
 ALTER TABLE contacts
 ADD email VARCHAR(60);
 ```
+
 * 添加到头部
+
 ```sql
 ALTER TABLE contacts
 ADD email VARCHAR(60) FIRST;
 ```
+
 * 添加至指定列之后
+
 ```sql
 ALTER TABLE contacts
 ADD email VARCHAR(60) AFTER name;
@@ -335,12 +366,14 @@ ADD email VARCHAR(60) AFTER name;
 
 **修改字段默认值**
 使用 ALTER 来修改字段的默认值，尝试以下实例：
+
 ```sql
 ALTER TABLE testalter
 ALTER i SET DEFAULT 1000;
 ```
 
 你也可以使用 ALTER 命令及 DROP 子句来删除字段的默认值，如下实例：
+
 ```sql
 ALTER TABLE testalter
 ALTER i DROP DEFAULT;
@@ -357,52 +390,63 @@ ALTER i DROP DEFAULT;
 大多数 DBMS 都给管理员提供了管理机制，利用管理机制授予或限制对数据的访问。
 
 需要获得所有用户账号列表
+
 ```sql
 select user from mysql.user;
 ```
 
 创建用户
+
 ```sql
 CREATE user 用户名@ip地址 identified by '密码'
 ```
 
 重命名用户账号
+
 ```sql
 rename user ben to bforta;
 ```
 
-用户只能在指定ip地址登录
+用户只能在指定 ip 地址登录
+
 ```sql
 CREATE user 用户名@'%' identified by '密码'
 ```
-用户能在任意ip地址登录
+
+用户能在任意 ip 地址登录
 
 给用户授权
-```
+
+```sql
 GRANT 权限1[, 权限2] on 数据库.* to 用户名@ip
 ```
 
 GRANT的反操作为REVOKE，用它来撤销特定的权限。
-```
+
+```sql
 REVOKE 权限1[, 权限2] on 数据库.* from 用户名@ip
 ```
 
 查看权限
-```
+
+```sql
 SHOW grants FOR 用户名@ip
 ```
 
 删除用户
+
 ```sql
 DROP user 用户名@ip
 ```
 
 更改口令
+
 ```sql
 set password for bforta = Password('lalalallala');
 ```
 
 SET PASSWORD 还可以用来设置你自己的口令：
+
 ```sql
 set password = Password('lalalallala');
 ```
@@ -416,10 +460,10 @@ MySQL 教程下 - 简书 https://www.jianshu.com/p/7c698d95c93f
 ## 参考
 
 MySQL 简介 | 菜鸟教程
-https://www.runoob.com/mysql/mysql-tutorial.html
+<https://www.runoob.com/mysql/mysql-tutorial.html>
 
 DQL、DML、DDL、DCL、TCL_springlan的博客-CSDN博客
-https://blog.csdn.net/springlan/article/details/106245872
+<https://blog.csdn.net/springlan/article/details/106245872>
 
 SQL Order of Operations – In Which Order MySQL Executes Queries?
-https://www.eversql.com/sql-order-of-operations-sql-query-order-of-execution/f
+<https://www.eversql.com/sql-order-of-operations-sql-query-order-of-execution/f>

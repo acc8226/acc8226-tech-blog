@@ -24,6 +24,7 @@ CREATE TABLE insect
 则下一个插入的值为 100。
 
 你也可以在表创建成功后，通过以下语句来实现：
+
 ```sql
 ALTER TABLE t AUTO_INCREMENT = 100;
 ```
@@ -51,6 +52,7 @@ MySQL 5 添加了对视图的支持。视图是虚拟的表。与包含数据的
 ❑ 查看所有视图 `show table status where comment = 'view';`
 
 sql 小案例：
+
 ```sql
 -- 创建视图
 CREATE VIEW `vendors_view` AS
@@ -84,6 +86,7 @@ MySQL 5 添加了对存储过程的支持。存储过程简单来说，就是为
 ❑ 你可能没有创建存储过程的安全访问权限。许多数据库管理员限制存储过程的创建权限，允许用户使用存储过程，但不允许他们创建存储过程。尽管有这些缺陷，存储过程还是非常有用的，并且应该尽可能地使用。
 
 它创建一个新的存储过程 productpricing。没有返回数据，因为这段代码并未调用存储过程，这里只是为以后使用而创建它。
+
 ```sql
 delimiter //
 
@@ -98,6 +101,7 @@ delimiter ;
 `CALL productpricing()；` 执行刚创建的存储过程并显示返回的结果。因为存储过程实际上是一种函数，所以存储过程名后需要有()符号（即使不传递参数也需要）。
 
 删除存储过程
+
 ```sql
 drop procedure productpricing;
 ```
@@ -131,6 +135,7 @@ MySQL 5 添加了对游标的支持。游标（cursor）是一个存储在 MySQL
 ## 触发器
 
 若需要在某个表发生更改时自动处理。这确切地说就是触发器。触发器是 MySQL 响应以下任意语句而自动执行的一条 MySQL 语句（或位于 BEGIN 和 END 语句之间的一组语句）：
+
 ❑ DELETE；
 ❑ INSERT；
 ❑ UPDATE。
@@ -139,6 +144,7 @@ MySQL 5 添加了对游标的支持。游标（cursor）是一个存储在 MySQL
 
 **创建触发器**
 在创建触发器时，需要给出 4 条信息：
+
 ❑ 唯一的触发器名；
 ❑ 触发器关联的表；
 ❑ 触发器应该响应的活动（DELETE、INSERT 或 UPDATE）；
@@ -210,10 +216,13 @@ select * from orderitems;
 为了支持回退部分事务处理，必须能在事务处理块中合适的位置放置占位符。这样，如果需要回退，可以回退到某个占位符。
 
 创建保留点：
+
 ```sql
 savepoint delete1;
 ```
+
 回滚到指定保留点：
+
 ```sql
 rollback to delete1;
 ```
@@ -274,16 +283,19 @@ SHOW CREATE TABLE runoob_tbl \G
 ```
 
 2 仅创建并复制表结构，不包含数据，不包含完整性约束
+
 ```sql
 CREATE TABLE 新表 SELECT * FROM 旧表 WHERE 1=2
 ```
 
 仅创建并复制表结构，包含数据，不包含完整性约束
+
 ```sql
 CREATE TABLE 新表 [AS] SELECT * FROM 旧表
 ```
 
 3 完整复制表的方法【推荐】:
+
 ```sql
 CREATE TABLE 新表 LIKE 旧表
 ```
@@ -291,6 +303,7 @@ CREATE TABLE 新表 LIKE 旧表
 如果你想复制表的内容，你就可以使用 INSERT INTO ... SELECT 语句来实现。
 
 完整复制结构 + 插入数据【推荐】:
+
 ```sql
 CREATE TABLE targetTable LIKE sourceTable;
 INSERT INTO targetTable SELECT * FROM sourceTable;
@@ -347,6 +360,7 @@ INTO OUTFILE '/tmp/runoob.txt';
 ```
 
 你可以通过命令选项来设置数据输出的指定格式，以下实例为导出 CSV 格式：
+
 ```sql
 SELECT * FROM runoob_tbl INTO OUTFILE '/tmp/runoob.txt'
 FIELDS TERMINATED BY ',' ENCLOSED BY '"'
@@ -368,23 +382,27 @@ password ******
 **导出 SQL 格式的数据**
 
 导出单张表数据
-```sql
+
+```sh
 mysqldump -u 用户名 -p密码 数据库名 表名 > 生成脚本的路径
 ```
 
 如果你需要导出整个数据库的数据，可以使用以下命令：
-```sql
+
+```sh
 mysqldump -u 用户名 -p密码 数据库名 > 生成脚本的路径
 ```
 
 如果需要备份所有数据库，可以使用以下命令：
-```
+
+```sh
 $ mysqldump -u root -p --all-databases > database_dump.txt
 password ******
 ```
 
 导出 SQL 格式的数据到指定文件，如下所示：
-```
+
+```sh
 $ mysqldump -u root -p RUNOOB runoob_tbl > dump.txt
 password ******
 ```
@@ -396,14 +414,16 @@ password ******
 如果你需要将备份的数据库导入到 MySQL 服务器中，可以使用以下命令，使用以下命令你需要确认数据库已经创建：
 
 在未登录情况下
-```bash
+
+```sh
 mysql -u 用户名 -p密码 数据库名 < 生成脚本的路径
 ```
 
 **2、SOURCE 命令导入**
 
 SOURCE 命令导入数据库需要先登录到数库终端：
-```
+
+```sh
 SOURCE c:/mydb.sql
 ```
 
@@ -434,7 +454,7 @@ mysqlimport 客户端提供了 LOAD DATA INFILEQL 语句的一个命令行接口
 ❑ 数据库是不断变化的实体。一组优化良好的表一会儿后可能就面目全非了。由于表的使用和内容的更改，理想的优化和配置也会改变。
 ❑ 最重要的规则就是，每条规则在某些条件下都会被打破。
 
-浏览文档 位于http://dev.mysql.com/doc/ 的 MySQL 文档有许多提示和技巧（甚至有用户提供的评论和反馈）。一定要查看这些非常有价值的资料。
+浏览文档 位于 <http://dev.mysql.com/doc/> 的 MySQL 文档有许多提示和技巧（甚至有用户提供的评论和反馈）。一定要查看这些非常有价值的资料。
 
 ## 相关专题
 
@@ -445,6 +465,6 @@ MySQL 教程上 - 简书 https://www.jianshu.com/p/8af392d711f4
 ## 参考
 
 MySQL 简介 | 菜鸟教程
-https://www.runoob.com/mysql/mysql-tutorial.html
+<https://www.runoob.com/mysql/mysql-tutorial.html>
 
-MySQL事件（定时任务）_pan_junbiao的博客-CSDN博客_mysql 定时任务 https://blog.csdn.net/pan_junbiao/article/details/86489237
+MySQL事件（定时任务）_pan_junbiao的博客-CSDN博客_mysql 定时任务 <https://blog.csdn.net/pan_junbiao/article/details/86489237>

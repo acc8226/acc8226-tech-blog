@@ -5,6 +5,7 @@ SQL 是由关键字组成的语言，关键字是一些用于执行 SQL 操作�
 ## show
 
 所支持的其他 SHOW 语句还有：
+
 ❑ SHOW STATUS，用于显示广泛的服务器状态信息；
 ❑ SHOW CREATE DATABASE 和 SHOW CREATE TABLE，分别用来显示创建特定数据库或表的 MySQL 语句；
 ❑ SHOW GRANTS，用来显示授予用户（所有用户或特定用户）的安全权限；
@@ -100,22 +101,22 @@ mysql 中和 utf8mb4 相关的所有 COLLATE
 
 **结论：推荐使用`utf8mb4_unicode_ci`**，对于已经用了`utf8mb4_general_ci`的系统，也没有必要花时间改造。
 
-另外需要注意的一点是，从mysql 8.0开始，mysql默认的`CHARSET`已经不再是`Latin1`了，改为了`utf8mb4`（[参考链接](https://dev.mysql.com/doc/refman/8.0/en/charset-applications.html)），并且默认的COLLATE也改为了`utf8mb4_0900_ai_ci`。`utf8mb4_0900_ai_ci`大体上就是`unicode`的进一步细分，`0900`指代unicode比较算法的编号（ Unicode Collation Algorithm version），`ai`表示accent insensitive（发音无关），例如e, è, é, ê 和 ë是一视同仁的。
+另外需要注意的一点是，从mysql 8.0开始，mysql默认的`CHARSET`已经不再是`Latin1`了，改为了`utf8mb4`（[参考链接](https://dev.mysql.com/doc/refman/8.0/en/charset-applications.html)），并且默认的COLLATE也改为了`utf8mb4_0900_ai_ci`。`utf8mb4_0900_ai_ci`大体上就是`unicode`的进一步细分，`0900`指代 unicode 比较算法的编号（Unicode Collation Algorithm version），`ai`表示accent insensitive（发音无关），例如e, è, é, ê 和 ë是一视同仁的。
 
 [相关参考链接1](https://www.monolune.com/what-is-the-utf8mb4_0900_ai_ci-collation/)
 [相关参考链接2](https://dev.mysql.com/doc/refman/8.0/en/charset-collation-names.html)
 
 ### COLLATE 设置级别及其优先级
 
-设置`COLLATE`可以在示例级别、库级别、表级别、列级别、以及SQL指定。实例级别的`COLLATE`设置就是mysql配置文件或启动指令中的`collation_connection`系统变量。
+设置`COLLATE`可以在示例级别、库级别、表级别、列级别、以及SQL指定。实例级别的 `COLLATE` 设置就是mysql配置文件或启动指令中的 `collation_connection` 系统变量。
 
-库级别设置`COLLATE`的语句如下：
+库级别设置 `COLLATE` 的语句如下：
 
 ```sql
 CREATE DATABASE <db_name> DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ```
 
-如果库级别没有设置`CHARSET`和`COLLATE`，则库级别默认的`CHARSET`和`COLLATE`使用实例级别的设置。在mysql8.0以下版本中，你如果什么都不修改，默认的`CHARSET`是`Latin1`，默认的`COLLATE`是`latin1_swedish_ci`。从mysql8.0开始，默认的`CHARSET`已经改为了`utf8mb4`，默认的`COLLATE`改为了`utf8mb4_0900_ai_ci`。
+如果库级别没有设置 `CHARSET` 和 `COLLATE`，则库级别默认的 `CHARSET` 和 `COLLATE` 使用实例级别的设置。在mysql8.0以下版本中，你如果什么都不修改，默认的 `CHARSET` 是 `Latin1`，默认的`COLLATE` 是`latin1_swedish_ci`。从mysql8.0开始，默认的 `CHARSET` 已经改为了`utf8mb4`，默认的 `COLLATE` 改为了`utf8mb4_0900_ai_ci`。
 
 表级别的`COLLATE`设置，则是在`CREATE TABLE`的时候加上相关设置语句，例如：
 
@@ -150,8 +151,8 @@ SELECT DISTINCT field1 COLLATE utf8mb4_general_ci FROM table1;
 SELECT field1, field2 FROM table1 ORDER BY field1 COLLATE utf8mb4_unicode_ci;
 ```
 
-> SELECT的其他COLLATE子句
-> 除了这里看到的在ORDER BY子句中使用以外，COLLATE还可以用于GROUP BY、HAVING、聚集函数、别名等。
+> SELECT 的其他 COLLATE 子句
+> 除了这里看到的在 ORDER BY 子句中使用以外，COLLATE 还可以用于 GROUP BY、HAVING、聚集函数、别名等。
 
 如果全都显示设置了，那么优先级顺序是 SQL语句 > 列级别设置 > 表级别设置 > 库级别设置 > 实例级别设置。也就是说列上所指定的 `COLLATE` 可以覆盖表上指定的 `COLLATE`，表上指定的`COLLATE`可以覆盖库级别的 `COLLATE`。如果没有指定，则继承下一级的设置。即列上面没有指定 `COLLATE`，则该列的`COLLATE`和表上设置的一样。
 

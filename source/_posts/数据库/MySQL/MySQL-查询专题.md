@@ -21,11 +21,11 @@ HAVING
 ORDER BY
 ```
 
-注意：SQL可以只通过列名引用列。也可能会使用完全限定的名字来引用列。
+注意：SQL 可以只通过列名引用列。也可能会使用完全限定的名字来引用列。
 
 ## WHERE 过滤数据
 
-MySQL中可根据需要使用很多条件操作符和操作符的组合。为了检查某个范围的值，可使用 BETWEEN 操作符。
+MySQL 中可根据需要使用很多条件操作符和操作符的组合。为了检查某个范围的值，可使用 BETWEEN 操作符。
 
 注意：是 ！= 还是 <>？！= 和 <> 通常可以互换。但是，并非所有 DBMS 都支持这两种不等于操作符。如果有疑问，请参阅相应的 DBMS 文档。
 
@@ -48,7 +48,7 @@ SQL（像多数语言一样）在处理OR操作符前，优先处理AND操作符
 其优点具体如下。
 ❑ 在使用长的合法选项清单时，IN操作符的语法更清楚且更直观。
 ❑ 在使用IN时，计算的次序更容易管理（因为使用的操作符更少）。
-❑ IN操作符一般比OR操作符清单执行更快。
+❑ IN操作符一般比 OR 操作符清单执行更快。
 ❑ IN的最大优点是可以包含其他SELECT语句，使得能够更动态地建立WHERE子句。
 ❑ IN WHERE子句中用来指定要匹配值的清单的关键字，功能与OR相当。
 
@@ -71,6 +71,7 @@ GROUP BY 语句根据一个或多个列对结果集进行分组。
 ❑ GROUP BY子句必须出现在WHERE子句之后，ORDER BY子句之前。
 
 WITH ROLLUP：在 GROUP 分组字段的基础上再进行统计数据。示例：
+
 ```sql
 select vend_id , prod_price ,count(*)  from `Products` group by vend_id, prod_price WITH ROLLUP
 
@@ -175,21 +176,26 @@ select cust_email from customers where cust_id in
 内连接
 
 方言版
-```
+
+```sql
 select xxx列 from 表A, 表b where 条件1=xxx
 ```
+
 **标准版** 逗号改成inner join, where 改成 on
-```
+
+```sql
 select xxx列 from 表A inner join 表b on 条件1=xxx
 ```
+
 自然版
 
 ## sql 的一对一, 多对多关系
 
 子查询
-  * 有多个 select 关键字
-  * 可以出现的位置 select , 表名, where。其中出现在在select位置不推荐
-  * 出现在表名表示是临时表, 出现在where 条件则是作为一个判断条件的一部分
+
+* 有多个 select 关键字
+* 可以出现的位置 select , 表名, where。其中出现在在select位置不推荐
+* 出现在表名表示是临时表, 出现在where 条件则是作为一个判断条件的一部分
 
 单行单列 select * from 表1 别名1 where 列1 [=, >, <, <=, >=, !=] (select 列 from 表名2 别名2 where 条件)
 

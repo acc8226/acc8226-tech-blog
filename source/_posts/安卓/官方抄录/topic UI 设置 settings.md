@@ -85,13 +85,13 @@ XML 文件的根节点必须是一个 [PreferenceScreen](https://developer.andr
 </PreferenceScreen>
 ```
 
-##### 创建设置组
+### 创建设置组
 
 如果您提供的列表包含 10 项或更多设置，则用户可能难以浏览、理解和处理这些设置。若要弥补这一点，您可以将部分或全部设置分成若干组，从而有效地将一个长列表转化为多个短列表。 可以通过下列两种方法之一提供一组相关设置：
 
 您可以使用其中一种或两种分组方法来组织应用的设置。决定要使用的方法以及如何拆分设置时，应遵循 Android 设计的[设置](https://developer.android.google.cn/design/patterns/settings.html)指南中的准则。
 
-###### 使用标题
+#### 使用标题
 
 若要以分隔线分隔两组设置并为其提供标题（如下图所示），请将每组 [Preference](https://developer.android.google.cn/reference/android/preference/Preference.html) 对象放入[PreferenceCategory](https://developer.android.google.cn/reference/android/preference/PreferenceCategory.html) 内。
 
@@ -126,7 +126,7 @@ XML 文件的根节点必须是一个 [PreferenceScreen](https://developer.andr
 </PreferenceScreen>
 ```
 
-###### 使用子屏幕
+#### 使用子屏幕
 
 若要将设置组放入子屏幕（如图所示），请将 [Preference](https://developer.android.google.cn/reference/android/preference/Preference.html) 对象组放入 [PreferenceScreen](https://developer.android.google.cn/reference/android/preference/PreferenceScreen.html) 内。
 ![设置子屏幕。<PreferenceScreen> 元素创建的项目选中后，即会打开一个单独的列表来显示嵌套设置。](http://upload-images.jianshu.io/upload_images/1662509-015a6f21eac5e7f9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -160,7 +160,7 @@ XML 文件的根节点必须是一个 [PreferenceScreen](https://developer.andr
 </PreferenceScreen>
 ```
 
-##### 使用 Intent
+### 使用 Intent
 
 在某些情况下，您可能需要首选项来打开不同的 Activity（而不是网络浏览器等设置屏幕）或查看网页。 要在用户选择首选项时调用 [Intent](https://developer.android.google.cn/reference/android/content/Intent.html)，请将<intent> 元素添加为相应 <Preference> 元素的子元素。
 例如，您可以按如下方法使用首选项打开网页：
@@ -189,7 +189,7 @@ public class SettingsActivity extends PreferenceActivity {
 }
 ```
 
-##### 使用首选项片段
+### 使用首选项片段
 
 如果您在开发针对 Android 3.0（API 级别 11）及更高版本的应用，则应使用 [PreferenceFragment](https://developer.android.google.cn/reference/android/preference/PreferenceFragment.html) 显示 [Preference](https://developer.android.google.cn/reference/android/preference/Preference.html) 对象的列表。您可以将[PreferenceFragment](https://developer.android.google.cn/reference/android/preference/PreferenceFragment.html) 添加到任何 Activity，而不必使用 [PreferenceActivity](https://developer.android.google.cn/reference/android/preference/PreferenceActivity.html)。
 与仅使用上述 Activity 相比，无论您在构建何种 Activity，[片段](https://developer.android.google.cn/guide/components/fragments.html)都可为应用提供一个更加灵活的体系结构。 因此，我们**建议您***尽可能使用[PreferenceFragment](https://developer.android.google.cn/reference/android/preference/PreferenceFragment.html) 控制设置的显示，而不是使用 [PreferenceActivity](https://developer.android.google.cn/reference/android/preference/PreferenceActivity.html)。[PreferenceFragment](https://developer.android.google.cn/reference/android/preference/PreferenceFragment.html) 的实现就像定义 [onCreate()](https://developer.android.google.cn/reference/android/preference/PreferenceFragment.html#onCreate(android.os.Bundle)) 方法以使用 [addPreferencesFromResource()](https://developer.android.google.cn/reference/android/preference/PreferenceFragment.html#addPreferencesFromResource(int)) 加载首选项文件一样简单。例如：

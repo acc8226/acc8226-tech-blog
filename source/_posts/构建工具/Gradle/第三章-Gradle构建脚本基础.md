@@ -6,15 +6,15 @@
 
 ### 3.1 Setting文件
 
-在Gradle中，定义了一个设置文件，用于初始化以及工程树的配置。设置文件的默认名字是settings.gradle，放在根工程目录下。
+在Gradle中，定义了一个设置文件，用于初始化以及工程树的配置。设置文件的默认名字是 settings.gradle，放在根工程目录下。
 
-设置文件大多数的作用都是为了配置子工程。在Gradle多工程是通过工程树表示的，就相当于我们在Android Studio看到的Project和Module概念一样。根工程相当于Android Studio中的Project，一个根工程可以有很多子工程，也就是很多Module，这样就和Android Studio定义的Module概念对应上了。
+设置文件大多数的作用都是为了配置子工程。在Gradle多工程是通过工程树表示的，就相当于我们在 Android Studio 看到的Project 和 Module 概念一样。根工程相当于 Android Studio 中的 Project，一个根工程可以有很多子工程，也就是很多Module，这样就和 Android Studio 定义的 Module 概念对应上了。
 
 ### 3.2 Build文件
 
 每个 Project 都会有一个 build 文件，该文件是该 Project 构建的入口，可以在这里针对该 Project 进行配置，比如配置版本，需要哪些插件，依赖哪些库等等。
 
-既然每个 Project 都会有一个 build 文件，那么 Root Project 也不例外。Root Project可以获取到所有的Child Project，所以在Root Project的build文件里我们可以对Child Project统一配置，比如应用的插件，依赖的Maven中心库等等。这一点 Gradle 早就考虑到了，为我们提供了便捷的方法进行配置，比如配置所有Child Project的的仓库为jcenter，这样我们依赖的jar包就可以从jcenter中心库中下载了：
+既然每个 Project 都会有一个 build 文件，那么 Root Project 也不例外。Root Project 可以获取到所有的Child Project，所以在Root Project的build文件里我们可以对 Child Project 统一配置，比如应用的插件，依赖的 Maven 中心库等等。这一点 Gradle 早就考虑到了，为我们提供了便捷的方法进行配置，比如配置所有 Child Project 的的仓库为 jcenter，这样我们依赖的 jar 包就可以从jcenter中心库中下载了：
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-44795ab65048f852.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 

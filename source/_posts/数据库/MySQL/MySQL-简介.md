@@ -25,6 +25,7 @@ RDBMS 即关系数据库管理系统(Relational Database Management System)的�
 ## 常见操作
 
 修改 MySQL 默认密码
+
 ```bash
 # 修改密码安全策略为低（只校验密码长度，至少8位）。
 set global validate_password_policy=0;
@@ -39,6 +40,7 @@ GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '1234567';
 ```
 
 退出数据库
+
 * exit
 * quit
 * control + C
@@ -46,12 +48,14 @@ GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '1234567';
 ## 登录 MySQL
 
 最简写法
+
 ```bash
 mysql
 ```
 
 较完整写法
-```
+
+```sh
 mysql -h 主机名 -u 用户名 -p
 ```
 
@@ -68,6 +72,7 @@ mysql -h 主机名 -u 用户名 -p
 该命令将输出 MySQL 数据库管理系统的性能及统计信息。
 
 示例：
+
 ```sql
 # 显示数据库 RUNOOB 中所有表的信息
 SHOW TABLE STATUS FROM RUNOOB;
@@ -82,29 +87,35 @@ SHOW TABLE STATUS from RUNOOB LIKE 'runoob%'\G;
 ## MySQL 数据库操作
 
 创建数据库
-```
+
+```sql
 CREATE DATABASE <数据库名>;
 ```
 
 删除数据库
-```
+
+```sql
 DROP DATABASE <数据库名>;
 ```
 
 选择 MySQL 数据库
+
 ```sql
 USE <数据库名>;
 ```
 
 为了获得一个数据库内的表的列表
+
 ```sql
 SHOW TABLES ;
 ```
 
 SHOW也可以用来显示表列：
-```
+
+```sql
 show columns from customers;
 ```
+
 它对每个字段返回一行，行中包含字段名、数据类型、是否允许 NULL、键信息、默认值以及其他信息。
 
 > DESCRIBE 语句 MySQL支持用 DESCRIBE 作为SHOW COLUMNS FROM的一种快捷方式。
@@ -152,6 +163,7 @@ date 和 datetime 在插入的时候可以用 NOW() 函数。
  （3）text: 与 char 和 varchar 不同的是，text 不可以有默认值，其最大长度是 2 的 16 次方-1
 
 总结起来，有几点：
+
 * 经常变化的字段用 varchar
 * 知道固定长度的用 char
 * 尽量用 varchar
@@ -161,10 +173,10 @@ date 和 datetime 在插入的时候可以用 NOW() 函数。
 ## 参考
 
 MySQL 简介 | 菜鸟教程
-https://www.runoob.com/mysql/mysql-tutorial.html
+<https://www.runoob.com/mysql/mysql-tutorial.html>
 
 官网 5.7 参考手册
-https://dev.mysql.com/doc/refman/5.7/en/
+<https://dev.mysql.com/doc/refman/5.7/en/>
 
 官网 8.0 参考手册
-https://dev.mysql.com/doc/refman/8.0/en/
+<https://dev.mysql.com/doc/refman/8.0/en/>

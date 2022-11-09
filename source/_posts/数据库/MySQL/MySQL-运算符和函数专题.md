@@ -115,4 +115,4 @@ END
 
 ## 参考
 
-MySQL——条件函数（if、coalesce、ifnull、case...when）_日光咖啡的博客-CSDN博客_mysql条件函数if https://blog.csdn.net/weixin_39229385/article/details/119982659
+MySQL——条件函数（if、coalesce、ifnull、case...when）_日光咖啡的博客-CSDN博客_mysql条件函数if <https://blog.csdn.net/weixin_39229385/article/details/119982659>

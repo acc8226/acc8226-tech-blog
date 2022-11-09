@@ -17,7 +17,7 @@ Jackson 主要包含了 3 个模块
 * jackson-annotations
 * jackson-databind
 
-其中，jackson-databind 又依赖于 jackson-annotations。jackson-annotations 又依赖于 jackson-core，
+其中，jackson-databind 依赖于 jackson-annotations。jackson-annotations 又依赖于 jackson-core，
 
 Jackson 有三种方式处理 json
 
@@ -29,22 +29,22 @@ Jackson 有三种方式处理 json
 
 ## 导入
 
-maven 导入
+Maven
 
 ```xml
 <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
 <dependency>
     <groupId>com.fasterxml.jackson.core</groupId>
     <artifactId>jackson-databind</artifactId>
-    <version>2.13.3</version>
+    <version>2.13.4</version>
 </dependency>
 ```
 
-或 gradle 导入
+Gradle(Kotlin)
 
-```groovy
+```kts
 // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
-implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.13.3'
+implementation("com.fasterxml.jackson.core:jackson-databind:2.13.4")
 ```
 
 ## 对象转 json (序列化)
@@ -80,7 +80,9 @@ ObjectMapper支持从 byte[]、File、InputStream、字符串等数据的 JSON �
 * 在反序列化的时候，默认情况下接受输出信息的实体类的字段不能有输入中不存在的，否则会报 `com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "name2"`。 如果某些输入字段在对应实体类中无匹配，则该字段值为赋予 null 属正常. 或者在class上面加上 `@JsonIgnoreProperties(ignoreUnknown = true)` 注解
 * Jackson 除了处理普通对象，还可以对 Java 集合、数组等进行序列化处理。如果需要”反序列化集合”的元素为非基本类型，可以通过创建一个空实现的 TypeReference 实例，将需要反序列化的集合带上泛型信息传递进去，以解决泛型信息无法传递的问题。
 
-### @JsonProperty 注解
+## 注解
+
+### @JsonProperty
 
 可用于方法上 或者 字段上。
 
@@ -107,12 +109,12 @@ So you could also do something like:
 private String password;
 ```
 
-### 忽略字段
+### @JsonIgnore忽略字段
 
-@JsonIgnore 注解
+ 注解
 注解用于排除某个属性，这样该属性就不会被Jackson序列化和反序列化。
 
-#### @JsonIgnoreProperties 注解
+### @JsonIgnoreProperties 注解
 
 @JsonIgnoreProperties(value = {"mobile","name"})
 @JsonIgnoreProperties主要用于类上, 表示该字段在序列化和反序列化的时候都将被忽略。
@@ -131,7 +133,7 @@ public class YourClass {
 }
 ```
 
-#### @JsonCreator
+### @JsonCreator
 
 当 json 在反序列化时，默认选择类的无参构造函数创建类对象，当没有无参构造函数时会报错，@JsonCreator作用就是指定反序列化时用的无参构造函数。构造方法的参数前面需要加上@JsonProperty,否则会报错。
 
@@ -142,7 +144,7 @@ public Person(@JsonProperty("id") String id) {
 }
 ```
 
-#### @JsonFormat
+### @JsonFormat
 
 @JsonFormat 用来表示 json 序列化的一种格式或者类型，主要有下面几个常用的属性
 
@@ -173,7 +175,7 @@ shap: 表示序列化后的一种类型
 }
 ```
 
-#### @JsonInclude
+### @JsonInclude
 
 也是用于微调序列化
 
@@ -205,7 +207,7 @@ public static enum Include {
 
 > 正常情况下建议不要使用 @JsonInclude(JsonInclude.Include.NON_EMPTY)和 @JsonInclude(JsonInclude.Include.NON_NULL)，因为这样序列化之后的数据无法展现出数据的 schema，对客户端不友好。一般而言使用默认的就行。
 
-#### @JsonValue
+### @JsonValue
 
 此注解用得不多。
 
@@ -237,14 +239,22 @@ public enum Distance {
 }
 ```
 
-## 使用Jackson的推荐配置
+### JsonPropertyOrder
+
+自定义排序
+@JsonPropertyOrder({ "name", "id" })
+
+按字母排序
+@JsonPropertyOrder(alphabetic=true)
+
+## 使用 Jackson 的推荐配置
 
 ```java
 objectMapper
-        // 序列化生成对人友好的日期展示
-        .configure(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS, false)
-        // 反序列化时自动忽略多余字段：
-        .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+    // 序列化生成对人友好的日期展示
+    .configure(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS, false)
+    // 反序列化时自动忽略多余字段：
+    .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 ```
 
 可选配置

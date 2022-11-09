@@ -78,7 +78,7 @@ Total time: 2.675 secs
 
 Starting simple, create a very basic `build.gradle` file in the `<project folder>` you created at the beginning of this guide. Give it just just one line:
 
-```sh
+```groovy
 apply plugin: 'java'
 ```
 
@@ -127,7 +127,7 @@ repositories {
 
 现在我们已经为第三方库做好了准备，让我们声明一些。
 
-```
+```groovy
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
@@ -139,7 +139,7 @@ dependencies {
 
 Finally, let’s specify the name for our JAR artifact.
 
-```
+```groovy
 jar {
     baseName = 'gs-gradle'
     version =  '0.1.0'
@@ -254,3 +254,8 @@ dependencies {
 }
 // end::dependencies[]
 ```
+
+## 参考
+
+Building Java Applications Sample
+<https://docs.gradle.org/current/samples/sample_building_java_applications.html#run_the_application>
