@@ -22,7 +22,7 @@ createTask2.doLast{
 }
 ```
 
-和第一种方式大同小异，只是多了一个Map参数，用于对要创建的Task进行配置，比如我们例子里为其指定了分组为BUILD，我们通过执行该任务可以看到我们的配置其了作用。
+和第一种方式大同小异，只是多了一个 Map 参数，用于对要创建的Task进行配置，比如我们例子里为其指定了分组为 BUILD，我们通过执行该任务可以看到我们的配置其了作用。
 
 ![Map中可用的配置](http://upload-images.jianshu.io/upload_images/1662509-d0ae9297018a7c9f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -32,7 +32,7 @@ createTask2.doLast{
 
 因为Map传参配置的方式（第二种）毕竟可配置的项有限，所以可以通过闭包的方式进行更多更灵活的配置，闭包里的委托对象就是 Task，所以你可以使用 Task 对象的任何方法、属性等信息进行配置，比如示例中我们配置了任务的描述和任务执行后要做的事情。
 
-Project 中还有一种名字 + Map 参数 + 闭包的的方式，和上面演示的非常相似，就不列出了，下面我们说下 TaskContainer 创建任务的方式。如果我们去看Project对象中关于上面我们演示的task方法的源代码，就会发现其实他们最终都是调用 TaskContainer 对象中的create 方法，其参数和 Project 中的 task 方法基本一样，我们下面看例子，我们使用这种方式重写第三种方式的例子：
+Project 中还有一种名字 + Map 参数 + 闭包的的方式，和上面演示的非常相似，就不列出了，下面我们说下 TaskContainer 创建任务的方式。如果我们去看 Project 对象中关于上面我们演示的 task 方法的源代码，就会发现其实他们最终都是调用 TaskContainer 对象中的create 方法，其参数和 Project 中的 task 方法基本一样，我们下面看例子，我们使用这种方式重写第三种方式的例子：
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-07e5eadb7d9e62c9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -44,7 +44,7 @@ Project 中还有一种名字 + Map 参数 + 闭包的的方式，和上面演�
 
 通过索引访问的时候，任务名就是我们 Key（关键索引），其实这里说 key 不恰当，因为t asks 并不是一个 Map，这里再顺便扩展下 Groovy 的知识，[]在Groovy中是一个操作符，我们知道Groovy的操作符都有对应的方法让我们重载，a[b]对应的是 a.getAt(b)这个方法.
 
-```gradle
+```groovy
 //直接通过该任务名访问和操纵该任务
 task creatTask1{
     doLast{
@@ -124,9 +124,9 @@ class CustomTask extends DefaultTask{
 ![](http://upload-images.jianshu.io/upload_images/1662509-f291b3a5a12702c1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ![doFirst和doLast这两个方法的实现代码](http://upload-images.jianshu.io/upload_images/1662509-774ae1559a6c0d01.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-doFirst永远都是在actions List第一位添加，保证其添加的Action在现有actions List元素的最前面，doLast 永远都是在actions List末尾添加，保证其添加的Action在现有actions List元素的最后面。一个往最前面添加，一个往最后面添加，最后这个actions List按顺序就形成了doFirst、doSelf、doLast 三部分的 Actions，就达到的 doFirst、doSelf、doLast 三部分的Actions顺序执行的目的。
+doFirst永远都是在actions List第一位添加，保证其添加的Action在现有actions List元素的最前面，doLast 永远都是在actions List末尾添加，保证其添加的Action在现有actions List元素的最后面。一个往最前面添加，一个往最后面添加，最后这个actions List按顺序就形成了 doFirst、doSelf、doLast 三部分的 Actions，就达到的 doFirst、doSelf、doLast 三部分的Actions顺序执行的目的。
 
-这一小结是基于源代码对Task执行的分析，可能有点难，但是我还是建议大家仔细看，一遍看不懂多看几遍，结合着例子和源代码看，理解了对整个Task的执行就熟悉的多了。
+这一小结是基于源代码对Task执行的分析，可能有点难，但是我还是建议大家仔细看，一遍看不懂多看几遍，结合着例子和源代码看，理解了对整个 Task 的执行就熟悉的多了。
 
 ### 4.6 任务排序
 
@@ -157,7 +157,7 @@ task2.mustRunAfter(task1)
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-bc69055cf28ccc85.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-这个排序目前还属于Beta版，以后的 Gradle 版本可能会有变动，但是如果正好项目中遇到了类似的情况，不妨试试，很有用。
+这个排序目前还属于 Beta 版，以后的 Gradle 版本可能会有变动，但是如果正好项目中遇到了类似的情况，不妨试试，很有用。
 
 ### 4.7 任务的启用和禁用
 

@@ -16,7 +16,7 @@ categories:
 
 ### 离线版
 
-【优先】PDF24 Tools: 免费且易于使用的在线PDF工具
+【优先】PDF24 Tools: 免费且易于使用的在线 PDF 工具
 <https://tools.pdf24.org/zh/>
 
 【备用】office 和 wps 可直接导出 pdf，如果想批量导出 pdf，可尝试万彩办公大师-文件转换工具。
@@ -26,7 +26,11 @@ categories:
 
 ## pdf 转 word
 
-1. 使用上面提到的万彩-PDF 批量转 Office 工具就可以。
+离线版 万彩办公大师官网-免费的办公工具百宝箱OfficeBox,绿色无广告无捆绑
+<http://www.wofficebox.com/>
+
+在线版 将你的 PDF 转换为 DOC 和 DOCX 文件，以便于编辑。
+<https://www.ilovepdf.com/zh-cn/pdf_to_word>
 
 ## markdown 转 html
 
@@ -49,9 +53,9 @@ asin929/markdown-css: a collection of makrdown css.
 wkhtmltopdf，生成的 pdf 有目录。比直接打印网页强。
 <https://wkhtmltopdf.org/index.html>
 
-简单用法 wkhtmltopdf www.ithome.com ithome.pdf
+简单用法 `wkhtmltopdf www.ithome.com ithome.pdf`
 
-加页脚页码 wkhtmltopdf --footer-center [page]/[topage] www.ithome.com ithome.pdf
+加页脚页码 `wkhtmltopdf --footer-center [page]/[topage] www.ithome.com ithome.pdf`
 
 遇到的问题：目前好像必须源文件是 http/https 的资源，不能是本地的资源。我最终选择本地启了一个服务才完成转 pdf。
 

@@ -1,6 +1,7 @@
 ---
 title: 使用教程-Win10 体验 WSL 并配置 Zsh
 date: 2020-06-02 22:57:01
+updated: 2022-11-16 13:28:02
 categories:
   - 收藏
   - 技术软件
@@ -191,6 +192,41 @@ passwd # 输入密码
 exit
 ```
 
+### 同一局域网下 windows 主机和 wsl 子系统相互网络服务访问
+
+#### 从主机访问 wsl 的服务
+
+在 wsl 子系统中，使用以下命令，获取 wsl 的 ip
+
+```sh
+ip addr | grep eth0
+```
+
+我这里的显示是：
+
+```sh
+eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    inet 172.30.64.232/20 brd 172.30.79.255 scope global eth0
+```
+
+wsl 的 ip 即为 inet 后面的一串，也就是 172.30.64.232。
+
+#### 从 wsl 访问主机的服务
+
+输入命令
+
+```powershell
+New-NetFirewallRule -DisplayName "WSL" -Direction Inbound -InterfaceAlias "vEthernet (WSL)" -Action Allow
+```
+
+然后在 wsl 中输入命令：
+
+```sh
+cat /etc/resolv.conf | grep nameserver | awk '{ print $2 }'
+```
+
+就会出现一个 ip，这个 ip 可以用 ping + ip 测试一下，应该可以连通。
+
 ## wslg 支持
 
 WSLg 是 Linux GUI 的 Windows 子系统的缩写，该项目的目的是支持在 Windows 上运行 Linux GUI 应用程序(X11 and Wayland) ，提供完全集成的桌面体验。
@@ -266,3 +302,8 @@ sudo vim ~/.zshrc
 ```text
 ZSH_THEME="ys"
 ```
+
+## 参考
+
+同一局域网下windows主机和wsl子系统相互网络服务访问_薛钦亮的博客-CSDN博客_局域网访问wsl
+<https://blog.csdn.net/weixin_43997331/article/details/122593312>

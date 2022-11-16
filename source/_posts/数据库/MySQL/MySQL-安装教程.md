@@ -119,7 +119,7 @@ apt-get install mysql-server
 brew install mysql
 ```
 
-```bash
+```text
 We've installed your MySQL database without a root password. To secure it run:
     mysql_secure_installation
 

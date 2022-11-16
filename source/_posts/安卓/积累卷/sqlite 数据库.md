@@ -1,6 +1,7 @@
 ---
 title: 安卓-sqlite 数据库
 date: 2017-03-10 12:24:46
+updated: 2022-11-16 17:47:00
 categories:
   - 安卓
   - 积累卷
@@ -113,10 +114,10 @@ public class WaitlistDbHelper extends SQLiteOpenHelper {
              cursor = db.rawQuery( "select * from sqlite_master where name = ? and sql like ?"
                 , new String[]{tableName , "%" + columnName + "%"} );
              result = null != cursor && cursor.moveToFirst() ;
-         }catch (Exception e){
+         } catch (Exception e) {
              e.printStackTrace();
-         }finally{
-             if(null != cursor && !cursor.isClosed()){
+         } finally {
+             if (null != cursor && !cursor.isClosed()) {
                  cursor.close() ;
              }
          }
@@ -126,7 +127,7 @@ public class WaitlistDbHelper extends SQLiteOpenHelper {
 
 ### 数据库的修复
 
-比如手机程序对.db的不当操作造成.
+比如手机程序对 .db 的不当操作造成.
 
 ```sh
 $ sqlite3 backup.sqlite

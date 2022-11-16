@@ -1,6 +1,6 @@
 ---
 title: Java 编程规约【07】-并发处理
-date: 2018.01.16 15:11:28
+date: 2018-01-16 15:11:28
 updated: 2022-11-05 10:46:00
 categories: 文档规约
 ---
@@ -204,7 +204,7 @@ count.addAndGet(1);
 
 如果是 JDK8，推荐使用 LongAdder 对象，比 AtomicLong 性能更好（减少乐观锁的重试次数）。
 
-笔记：volatile只有内存可见性语义，synchronized有互斥语义，一写多读使用volatile就可以，多写就必须使用synchronized，fetch-mod-get也必须使用synchronized。
+笔记：volatile 只有内存可见性语义，synchronized有互斥语义，一写多读使用 volatile 就可以，多写就必须使用 synchronized，fetch-mod-get 也必须使用synchronized。
 
 18\. 【参考】HashMap 在容量不够进行 resize 时由于高并发可能出现死链，导致 CPU 飙升，在开发过程
 中注意规避此风险。
@@ -213,7 +213,7 @@ count.addAndGet(1);
 说明：这个变量是针对一个线程内所有操作共享的，所以设置为静态变量，所有此类实例共享此静态变量，也就是说在
 类第一次被使用时装载，只分配一块存储空间，所有此类的对象（只要是这个线程内定义的）都可以操控这个变量。
 
-笔记：ThreadLocal 为解决多线程程序的并发问题提供了一种新思路。当使用ThreadLocal维护变量时，ThreadLocal为每个使用该变量的线程提供独立的变量副本，所以每一个线程都可以独立地改变自己的副本，而不会影响其它线程所对应的副本。ThreadLocal实际上是一个从线程ID到变量的Map，每次取得ThreadLocal变量，实际上是先取得当前线程ID，再用当前线程ID取得关联的变量。ThreadLocal 使用了 WeakHashMap，在 key 被回收的时候，value 也被回收了，不用担心内存泄露。
+笔记：ThreadLocal 为解决多线程程序的并发问题提供了一种新思路。当使用 ThreadLocal 维护变量时，ThreadLocal 为每个使用该变量的线程提供独立的变量副本，所以每一个线程都可以独立地改变自己的副本，而不会影响其它线程所对应的副本。ThreadLocal 实际上是一个从线程 ID 到变量的 Map，每次取得 ThreadLocal 变量，实际上是先取得当前线程 ID，再用当前线程ID取得关联的变量。ThreadLocal 使用了 WeakHashMap，在 key 被回收的时候，value 也被回收了，不用担心内存泄露。
 
 ## 参考
 

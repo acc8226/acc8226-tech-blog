@@ -1,5 +1,6 @@
 ---
 title: 支持关于双重身份验证的 App
+updated: 2022-11-16 13:28:02
 categories:
   - 收藏
   - 技术软件
@@ -16,7 +17,7 @@ Multi-Factor Authentication (MFA) 是一种非常简单的最佳安全实践方�
 ## 下载
 
 前提条件
-用户需要先在智能设备上安装一个MFA应用程序（例如： Google Authenticator），才能绑定虚拟设备。
+用户需要先在智能设备上安装一个 MFA 应用程序（例如： Google Authenticator），才能绑定虚拟设备。
 
 Google Authenticator APK for Android - Download
 <https://google-authenticator.en.softonic.com/android>

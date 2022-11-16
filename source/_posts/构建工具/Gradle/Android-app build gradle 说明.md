@@ -1,11 +1,11 @@
 ---
-title: Android-app build gradle 说明
-date: 2017.02.20 17:22:53
+title: Android app build gradle 说明
+date: 2017-02-20 17:22:53
 updated: 2022-11-09 13:56:00
 categories: IDE-使用
 ---
 
-```gradle
+```groovy
 apply plugin: 'com.android.application'
 
 android {
@@ -15,7 +15,7 @@ android {
     defaultConfig {
         applicationId "com.example.android.sunshine.app"
         minSdkVersion 10
-        targetSdkVersion 23 //建议指向最新版本
+        targetSdkVersion 23 // 建议永远使用最新版本
         versionCode 1
         versionName "1.0"
     }

@@ -35,4 +35,4 @@ allprojects{
 
 ## 一个教程
 
-http://blog.didispace.com/books/GradleUserGuide/
+<http://blog.didispace.com/books/GradleUserGuide/>

@@ -24,7 +24,7 @@ Gradle 本身内置了很多常用的插件，这些插件基本上能帮我们�
 什么是二进制插件呢？二进制插件就是实现了org.gradle.api.Plugin接口的插件，他们可以有plugin id，下面我们看下如何应用一个java插件。
 `apply plugin:'java'`
 
-这样我们把java插件应用到我们的项目中了，其中'java'是Java插件的plugin id，他是唯一的，对于Gradle自带的核心插件都有一个容易记的短名称作为其plugin id，比如这里的java，其实它对应类型的是org.gradle.api.plugins.JavaPlugin，所以通过该类型我们也可以应用这个插件。
+这样我们把java插件应用到我们的项目中了，其中 'java' 是 Java 插件的plugin id，他是唯一的，对于Gradle自带的核心插件都有一个容易记的短名称作为其 plugin id，比如这里的java，其实它对应类型的是org.gradle.api.plugins.JavaPlugin，所以通过该类型我们也可以应用这个插件。
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-0ccc0c0110e9e959.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -41,7 +41,7 @@ Gradle 本身内置了很多常用的插件，这些插件基本上能帮我们�
 
 其实这不能算一个插件，也不是一个插件，它指示一个脚本，应用脚本插件，其实就是把这个脚本加载进来，和二进制 插件不同的是它使用的是 from 关键字，后面紧跟的是一个脚本文件，可以是本地的，也可以是网络的，如果是网络上的话要使用 HTTP URL。
 
-虽然它不是一个真正的插件，但是不能忽视它的作用，它是脚本文件模块化的基础，我们可以把庞大的脚本文件，进行分块、分段整理，拆分成一个个共用、职责分明的文件，然后使用apply from来引用他们，比如我们可以把常用的函数放在一个utils.gradle脚本里，供其他脚本文件引用。示例中我们把App的版本名称和版本号单独放在一个脚本文件里，这样我们每次只需要在这个文件修改App的版本名称和版本号即可，清晰、简单、方便、快捷，也可以使用自动化对该文件自动处理生成版本等等。
+虽然它不是一个真正的插件，但是不能忽视它的作用，它是脚本文件模块化的基础，我们可以把庞大的脚本文件，进行分块、分段整理，拆分成一个个共用、职责分明的文件，然后使用 apply from 来引用他们，比如我们可以把常用的函数放在一个utils.gradle脚本里，供其他脚本文件引用。示例中我们把 App 的版本名称和版本号单独放在一个脚本文件里，这样我们每次只需要在这个文件修改App的版本名称和版本号即可，清晰、简单、方便、快捷，也可以使用自动化对该文件自动处理生成版本等等。
 
 ##### 5.2.3 apply方法的其他用法
 
@@ -51,7 +51,7 @@ Project.apply()方法有三种使用方式，他们是以接受参数的不同�
 
 **闭包的方式:**
 
-```
+```groovy
 apply{
 	plugin 'java'
 }
@@ -67,7 +67,7 @@ Action的方式就是我们自己要new一个Action，然后在execute方法里�
 
 ##### 5.2.4 应用第三方发布的插件
 
-第三方发布的作为jar的二进制插件，我们在应用的时候，必须要现在buildscript{}里配置其classpath才能使用，这个不像Gradle为我们提供的内置插件。比如我们的Android Gradle插件，就属于Android发布的第三方插件，如果要使用他们我们先要进行配置。
+第三方发布的作为 jar 的二进制插件，我们在应用的时候，必须要现在 buildscript{} 里配置其 classpath 才能使用，这个不像 Gradle为我们提供的内置插件。比如我们的 Android Gradle 插件，就属于 Android 发布的第三方插件，如果要使用他们我们先要进行配置。
 
 ```groovy
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
@@ -105,7 +105,7 @@ buildscript{}块是一个在构建项目之前，为项目进行前期准备和�
 
 ##### 5.2.5 使用plugins DSL应用插件
 
-plugins dsl是一种新的插件应用方式，Gradle2.1以上版本才可以用。目前这个功能还在内测中以后可能会变，我们先了解以下，遇到这种写法我们也知道是什么意思。
+plugins dsl 是一种新的插件应用方式，Gradle2.1 以上版本才可以用。目前这个功能还在内测中以后可能会变，我们先了解以下，遇到这种写法我们也知道是什么意思。
 
 ```groovy
 plugin{
@@ -115,7 +115,7 @@ plugin{
 
 这样就应用了java插件，看着更简洁一些，更符合dsl规范。
 
-还记得前面我们应用第三方插件的时候要先使用buildscript配置吧？使用plugins就有一种例外，如果该插件已经被托管在https://plugins.gradle.org/网站上，我们就不用在buildscript里配置classpa依赖了，直接使用plugins就可以应用插件。
+还记得前面我们应用第三方插件的时候要先使用 buildscript 配置吧？使用 plugins 就有一种例外，如果该插件已经被托管在 https://plugins.gradle.org/网站上，我们就不用在 buildscript 里配置 classpa 依赖了，直接使用plugins就可以应用插件。
 
 ```groovy
 plugin{
@@ -149,7 +149,7 @@ class MyPlugin implements Plugin<Project>{
 }
 ```
 
-以上是我们定义的一个简单的插件，是定义在build脚本文件里的，只能我们自己的项目用，如果我们想开发一个独立的插件给所有想用的人怎么做呢？这就需要我们单独创建一个Groovy工程作为开发自定义插件的工程了。
+以上是我们定义的一个简单的插件，是定义在 build 脚本文件里的，只能我们自己的项目用，如果我们想开发一个独立的插件给所有想用的人怎么做呢？这就需要我们单独创建一个 Groovy 工程作为开发自定义插件的工程了。
 
 - - -
 

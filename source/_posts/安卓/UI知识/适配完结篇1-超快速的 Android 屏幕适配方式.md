@@ -1,6 +1,7 @@
 ---
 title: 适配完结篇1-超快速的 Android 屏幕适配方式
 date: 2018-06-24 09:53:23
+updated: 2022-11-16 17:47:00
 categories:
   - 安卓
   - UI 知识

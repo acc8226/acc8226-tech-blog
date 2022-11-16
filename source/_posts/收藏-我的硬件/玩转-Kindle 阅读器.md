@@ -1,5 +1,5 @@
 ---
-title: 玩转-电子阅读器 Kindle
+title: 玩转-Kindle 阅读器
 date: 2017-04-17 18:06:56
 updated: 2022-08-14 21:32:00
 categories:

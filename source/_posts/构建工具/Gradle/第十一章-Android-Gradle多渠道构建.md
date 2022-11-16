@@ -4,7 +4,7 @@ date:
 categories:
 ---
 
-因为我们发布或者推广的渠道不同，就造成了我们的Android App可能会有很多个，因为我们需要细分他们，才能针对不同的渠道做不同的处理，比如统计跟踪、是否升级、App名字是否一致等等。尤其在国内这个各种应用市场百家争鸣的时代，我们需要发布的App渠道甚至多个好几百个，而且各有各的特殊处理，所以这就更需要我们有一套自动的满足多渠道构建的工具来帮我们解决这个问题，有了Android Gradle的Flavor后，我们就可以完美的解决以上问题，并且可以实现批量自动化。这一章主要介绍多渠道构建的基本原理，然后使用Flurry和友盟这两个最常用的分析统计平台作为例子来演示多渠道构建，接着我们介绍下 Flavor 的每个配置的用法，让大家可以根据需求定制自己的每个渠道，最后我们会介绍一种快速打包上百个渠道的方法，以提高多渠道构建的效率。
+因为我们发布或者推广的渠道不同，就造成了我们的 Android App 可能会有很多个，因为我们需要细分他们，才能针对不同的渠道做不同的处理，比如统计跟踪、是否升级、App 名字是否一致等等。尤其在国内这个各种应用市场百家争鸣的时代，我们需要发布的 App 渠道甚至多个好几百个，而且各有各的特殊处理，所以这就更需要我们有一套自动的满足多渠道构建的工具来帮我们解决这个问题，有了 Android Gradle 的Flavor 后，我们就可以完美的解决以上问题，并且可以实现批量自动化。这一章主要介绍多渠道构建的基本原理，然后使用Flurry和友盟这两个最常用的分析统计平台作为例子来演示多渠道构建，接着我们介绍下 Flavor 的每个配置的用法，让大家可以根据需求定制自己的每个渠道，最后我们会介绍一种快速打包上百个渠道的方法，以提高多渠道构建的效率。
 
 ### 11.1 多渠道构建的基本原理
 
@@ -20,7 +20,7 @@ Android Gradle 为我们提供了 productFlavors 方法来添加不同的渠道�
 
 ### 11.2 Flurry 多渠道和友盟多渠道构建
 
-Flurry 和友盟是我们常用的两个 App 统计分析工具，基本上所有的软件都会接入其中的一个。Flurry 本身没有渠道的概念，它有 Application，所以可以把一个 Application 当成一个渠道，这样就可以使用Flurry统计每个渠道的活跃新增等情况；友盟本身有渠道的概念，只要我们在AndroidManifest.xml配置标注即可，下面以这两种统计演示下多渠道的用法。
+Flurry 和友盟是我们常用的两个 App 统计分析工具，基本上所有的软件都会接入其中的一个。Flurry 本身没有渠道的概念，它有 Application，所以可以把一个 Application 当成一个渠道，这样就可以使用 Flurry 统计每个渠道的活跃新增等情况；友盟本身有渠道的概念，只要我们在AndroidManifest.xml配置标注即可，下面以这两种统计演示下多渠道的用法。
 
 Flurry 的统计是以 Application 划分渠道的，每个Application都有一个Key，我们称之为Flurry Key，这个当我们在Flurry上创建Application的时候就自动帮我们生成好了，现在我们要做的就是为每个渠道配置不同的Flurry Key，还记得我们在第九章讲的自动已BuildConfig吗，利用的就是这个功能。
 
@@ -36,9 +36,9 @@ Flurry 的统计是以 Application 划分渠道的，每个Application都有一�
 ID" android:name="UMENG_CHANNEL">
 ```
 
-示例中的 Channel ID就是我们的渠道值，比如baidu，google等。如果我们就动态的改变的，就需要用到我们在9.5小结讲到的 manifestPlaceholders，这一小节就是以友盟的多渠道为例进行讲解的，大家可以再回过头来看一下，这里不在进行详细讲了。
+示例中的 Channel ID 就是我们的渠道值，比如 baidu，google 等。如果我们就动态的改变的，就需要用到我们在 9.5 小结讲到的 manifestPlaceholders，这一小节就是以友盟的多渠道为例进行讲解的，大家可以再回过头来看一下，这里不在进行详细讲了。
 
-现在通过这两个例子我们可以发现，我们所做的其实就是对每个渠道，根据不同的业务进行不同的定制，这里是两个统计分析，以后可能还有其他监控、推送等业务，在定制的过程中我们用到了Android Gradle提供的不同的配置以及功能，最终来达到我们的目的，所以下一节我们就详细的讲下对渠道(ProductFlavor)的定制，然后大家根据这些Android Gradle提供的对渠道定制的功能，来实现自己不同渠道的业务需求。
+现在通过这两个例子我们可以发现，我们所做的其实就是对每个渠道，根据不同的业务进行不同的定制，这里是两个统计分析，以后可能还有其他监控、推送等业务，在定制的过程中我们用到了 Android Gradle 提供的不同的配置以及功能，最终来达到我们的目的，所以下一节我们就详细的讲下对渠道(ProductFlavor)的定制，然后大家根据这些 Android Gradle 提供的对渠道定制的功能，来实现自己不同渠道的业务需求。
 
 ### 11.3 多渠道构建定制
 
@@ -48,7 +48,7 @@ Flavor这个单词比较有意思，看字面意思是气味、味道的意思�
 
 ##### 11.3.1 applicationId
 
-它是ProductFlavor的属性，用于设置该渠道的包名，如果你的App想为该渠道设置特别的包名，可以使用applicationId这个属性进行设置。
+它是 ProductFlavor 的属性，用于设置该渠道的包名，如果你的 App 想为该渠道设置特别的包名，可以使用applicationId这个属性进行设置。
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-ae8ff9b123ec89bb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -60,7 +60,7 @@ Flavor这个单词比较有意思，看字面意思是气味、味道的意思�
 
 ##### 11.3.2 consumerProguardFiles
 
-即使一个属性，也有一个同名的方法，它只对Android库项目有用，当我们发布库项目生成一个AAR包的时候，使用consumerProguardFiles配置的混淆文件列表也会被打包到AAR里一起发布，这样当应用项目引用这个AAR包、并且启用混淆的时候，会自动的使用AAR包里的混淆文件对AAR包里的代码进行混淆，这样我们就不用对该AAR包进行混淆配置了，因为它自带了。
+即使一个属性，也有一个同名的方法，它只对 Android 库项目有用，当我们发布库项目生成一个AAR包的时候，使用consumerProguardFiles配置的混淆文件列表也会被打包到 AAR 里一起发布，这样当应用项目引用这个AAR包、并且启用混淆的时候，会自动的使用AAR包里的混淆文件对AAR包里的代码进行混淆，这样我们就不用对该AAR包进行混淆配置了，因为它自带了。
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-caa309d93f0d695a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -68,19 +68,19 @@ Flavor这个单词比较有意思，看字面意思是气味、味道的意思�
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-54feb08c963e69e8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-从源代码中也可可以看出有两种设置方式，一种是我们刚刚演示的方法，另外一种是属性设置，他们两个的区别在于：consumerProguardFiles方法是一直添加的，不会清空以前的混淆文件，而consumerProguardFiles属性配置的方式是每次都是新的混淆文件列表，以前配置的会先被清空。
+从源代码中也可可以看出有两种设置方式，一种是我们刚刚演示的方法，另外一种是属性设置，他们两个的区别在于：consumerProguardFiles 方法是一直添加的，不会清空以前的混淆文件，而 consumerProguardFiles 属性配置的方式是每次都是新的混淆文件列表，以前配置的会先被清空。
 
 ##### 11.3.3 manifestPlaceholders
 
-这个属性已经在9.5节介绍过，这里不像细讲，大家可以再翻看9.5小节熟悉一下。
+这个属性已经在 9.5 节介绍过，这里不像细讲，大家可以再翻看 9.5 小节熟悉一下。
 
 ##### 11.3.4 multiDexEnabled
 
-这个属性用来启用多个dex的配置，主要用来突破65535方法的问题，大家可以参考9.11一节的介绍，这里不再详细表述。
+这个属性用来启用多个dex的配置，主要用来突破 65535 方法的问题，大家可以参考9.11一节的介绍，这里不再详细表述。
 
 ##### 11.3.5 proguardFiles
 
-混淆使用的文件配置，可以参考8.3一节里关于混淆的讲解，这里不再详述。
+混淆使用的文件配置，可以参考 8.3 一节里关于混淆的讲解，这里不再详述。
 
 ##### 11.3.6 signingConfig
 
@@ -88,7 +88,7 @@ Flavor这个单词比较有意思，看字面意思是气味、味道的意思�
 
 ##### 11.3.7 testApplicationId
 
-我们一般都会对Android进行单元测试，这个单元测试有自己的专门的Apk测试包，testApplicationId是用来适配测试包的包名的，它的使用方法和我们前面介绍的applicationId一样。
+我们一般都会对 Android 进行单元测试，这个单元测试有自己的专门的 Apk 测试包，testApplicationId 是用来适配测试包的包名的，它的使用方法和我们前面介绍的applicationId一样。
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-257f34229f8b572e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 

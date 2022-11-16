@@ -12,7 +12,7 @@ gradle -h
 
 查看帮助信息
 
-```
+```sh
 USAGE: gradle [option...] [task...]
 ```
 
@@ -21,11 +21,11 @@ USAGE: gradle [option...] [task...]
 init - Initializes a new Gradle build.
 wrapper - Generates Gradle wrapper files.
 
-```
+```sh
 gradle init
 ```
 
-```
+```sh
 Options
      --dsl     Set the build script DSL to be used in generated scripts.
                Available values are:
@@ -41,7 +41,7 @@ Gradle 提供了通过 Groovy 或基于 kotlin 的 DSL 创建和配置任务的 
 gradle wrapper
 ```
 
-```
+```sh
 Options
      --distribution-type     The type of the Gradle distribution to be used by the wrapper.
                              Available values are:
@@ -77,14 +77,15 @@ Tasks 命令列出了可以调用的 Gradle 任务，包括由基础插件添加
 
 Gradle 提供了一个简单的 Java 项目，您可以使用它来演示构建扫描功能。 如果你想使用它，克隆或下载存储库。
 
-```
+```sh
 $ git clone https://github.com/gradle/gradle-build-scan-quickstart
 Cloning into 'gradle-build-scan-quickstart'...
 $ cd gradle-build-scan-quickstart
 ```
 
 从 Gradle 4.3开始，您可以启用构建扫描，而无需在构建脚本中进行任何附加配置。 当使用命令行选项—— scan 发布构建扫描时，所需的构建扫描插件将自动应用。 在构建结束之前，您被要求在命令行上接受许可协议。 下面的控制台输出演示了该行为。
-```
+
+```sh
 $ ./gradlew build --scan
 ```
 
@@ -98,12 +99,12 @@ Gradle 提供了一个任务库，您可以在自己的项目中进行配置。 
 2. 在 src 目录中添加名为 myfile.txt 的文件。 内容是任意的(甚至可以为空) ，但为了方便起见，添加单行 Hello，World！ 对它。
 3. 在 build.gradle 文件中，在构建文件中定义一个名为 `type: Copy` (注意大写字母)的任务，该任务将 src 目录复制到名为 dest 的新目录。 (您不必创建 dest 目录ー任务会为您完成。)
 
-```
+```sh
 mkdir src
 echo HelloWorld > src/myfile.txt
 ```
 
-```
+```groovy
 task copy(type: Copy, group: "Custom", description: "Copies sources to the dest directory") {
     from "src"
     into "dest"
@@ -113,14 +114,16 @@ task copy(type: Copy, group: "Custom", description: "Copies sources to the dest 
 在这里，`group`和`description`可以是任何你想要的。 您甚至可以省略它们，但这样做也会在任务报告中省略它们，以后再使用。
 
 现在执行新的复制任务:
-```
+
+```sh
 gradle copy
 ```
 
 ## zip 命令
 
 包括了一系列插件，更多的插件可以在 Gradle 插件门户网站上找到。 发行版中包含的插件之一是 `basic` 插件。 结合名为 `Zip` 的核心类型，可以使用已配置的名称和位置创建项目的 Zip 归档。
-```
+
+```groovy
 plugins {
     id "base"
 }
@@ -133,13 +136,13 @@ task zip(type: Zip, group: "Archive", description: "Archives sources in a zip fi
 
 基础插件使用设置在 build / distribution 文件夹中创建一个名为 basic-demo-1.0.zip 的归档文件。
 
-```
+```sh
 gradle zip
 ```
 
 ### Discover available properties 发现可用属性
 
-```
+```sh
 gradle properties
 ```
 
@@ -163,11 +166,12 @@ version: unspecified
 BUILD SUCCESSFUL
 
 ```
+
 Buildfile 属性是构建脚本的完全限定路径名，默认情况下位于 projectDir 中。
 
 您可以更改许多属性。 例如，您可以尝试将以下行添加到构建脚本文件中，并重新执行 gradle 属性。
 
-```
+```groovy
 description = "A trivial Gradle build"
 version = "1.0"
 ```

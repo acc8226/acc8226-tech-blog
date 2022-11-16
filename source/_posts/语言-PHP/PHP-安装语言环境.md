@@ -2,7 +2,7 @@
 
 WordPress 是使用 PHP 语言开发的博客平台，用户可以在支持PHP和MySQL数据库的服务器上架设属于自己的网站。也可以把WordPress 当作一个内容管理系统（CMS）来使用。
 
-1\. 执行如下命令，安装PHP环境。
+1\. 执行如下命令，安装 PHP 环境。
 
 ```bash
 yum -y install php php-mysql gd php-gd gd-devel php-xml php-common php-mbstring php-ldap php-pear php-xmlrpc

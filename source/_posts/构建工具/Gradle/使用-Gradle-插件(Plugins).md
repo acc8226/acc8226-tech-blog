@@ -24,7 +24,7 @@
 
 ## [Script plugins 脚本插件](https://docs.gradle.org/6.3/userguide/plugins.html#sec:script_plugins)
 
-```
+```groovy
 apply from: 'other.gradle'
 ```
 
@@ -41,7 +41,8 @@ apply from: 'other.gradle'
 Dsl 插件提供了一种简洁方便的方式来声明插件的依赖关系。 它与 Gradle 插件门户网站一起工作，提供对核心插件和社区插件的简单访问。 这些插件的 DSL 块配置了一个 pluginintervenciesspec 的实例。
 
 要应用核心插件，可以使用简短的名称:
-```
+
+```groovy
 plugins {
     id 'java'
 }
@@ -49,7 +50,7 @@ plugins {
 
 要从门户网站应用社区插件，必须使用完全合格的插件 id:
 
-```
+```groovy
 plugins {
     id 'com.jfrog.bintray' version '0.4.1'
 }
@@ -69,7 +70,7 @@ plugins {
 
 插件{}块不支持任意代码。 它是约束的，以便是幂等的(产生相同的结果每次)和副作用自由(安全的 Gradle 执行在任何时候)。
 
-```
+```groovy
 plugins {
     id «plugin id»
     id «plugin id» version «plugin version» [apply «false»]
@@ -101,7 +102,7 @@ plugins {
 
 您可以应用驻留在项目的 buildSrc 目录中的插件，只要它们有一个已定义的 ID。 下面的示例演示如何将 buildSrc 中定义的插件实现类 my.MyPlugin 绑定到 ID“ my-plugin” :
 
-```
+```groovy
 plugins {
     id 'java-gradle-plugin'
 }
@@ -117,7 +118,8 @@ gradlePlugin {
 ```
 
 应用来自 buildSrc 的插件
-```
+
+```groovy
 plugins {
     id 'my-plugin'
 }
@@ -127,7 +129,7 @@ plugins {
 
 Pluginmanagement {}块可能只出现在 settings.gradle 文件中，其中它必须是文件中的第一个块，或者出现在初始化脚本中。
 
-```
+```groovy
 pluginManagement {
     plugins {
     }
@@ -138,7 +140,7 @@ pluginManagement {
 }
 ```
 
-```
+```groovy
 settingsEvaluated { settings ->
     settings.pluginManagement {
         plugins {
@@ -159,7 +161,8 @@ settingsEvaluated { settings ->
 
 示例: 使用自定义插件库中的插件
 settings.gradle
-```
+
+```groovy
 pluginManagement {
     repositories {
         maven {
@@ -188,7 +191,8 @@ pluginManagement {
 要添加解析规则，请在 pluginManagement {}块中使用 resolutionStrategy {} :
 
 settings.gradle
-```
+
+```groovy
 pluginManagement {
     resolutionStrategy {
         eachPlugin {
@@ -220,7 +224,8 @@ pluginManagement {
 例如，下面来自示例插件项目的完整示例演示了如何使用 java-gradle-plugin、 Maven-publish 插件和 Ivy-publish 插件向 Ivy 和 Maven 库发布 org.gradle.sample.hello 插件和 org.gradle.sample.goodbye 插件。
 
 build.gradle
-```
+
+```groovy
 plugins {
     id 'java-gradle-plugin'
     id 'maven-publish'
@@ -265,7 +270,8 @@ publishing {
 #### [Applying Binary Plugins 应用二进制插件](https://docs.gradle.org/6.3/userguide/plugins.html#sec:applying_binary_plugins)
 
 build.gradle
-```
+
+```groovy
 apply plugin: 'java'
 ```
 
@@ -273,7 +279,8 @@ apply plugin: 'java'
 
 与使用插件 id 不同，插件也可以通过简单地指定插件的类来应用:
 build.gradle
-```
+
+```groovy
 apply plugin: JavaPlugin
 ```
 
@@ -286,7 +293,8 @@ apply plugin: JavaPlugin
 应用一个带有内建脚本块的插件
 
 build.gradle
-```
+
+```groovy
 buildscript {
     repositories {
         jcenter()

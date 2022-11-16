@@ -53,6 +53,7 @@ FIRST() 函数返回指定的列中第一个记录的值。
 注释：只有 MS Access 支持 FIRST() 函数。
 
 MySQL 使用 LIMIT
+
 ```sql
 SELECT column_name FROM table_name
 ORDER BY column_name ASC
@@ -66,6 +67,7 @@ LAST() 函数返回指定的列中最后一个记录的值。
 注释：同样只有 MS Access 支持 FIRST() 函数。
 
 MySQL 语法
+
 ```sql
 SELECT column_name FROM table_name
 ORDER BY column_name DESC
@@ -90,6 +92,7 @@ SQL Scalar 函数基于输入值，返回一个单一的值。
 SELECT UCASE(name), LCASE(name)
 FROM Websites;
 ```
+
 ### MID() 函数
 
 MID() 函数用于从文本字段中提取字符。
@@ -106,26 +109,31 @@ length 可选。要返回的字符数。如果省略，则 MID() 函数返回剩
 LEN() 函数返回文本字段中值的长度。
 
 SQL LEN() 语法
+
 ```sql
 SELECT LEN(column_name)
 FROM table_name;
 ```
 
 MySQL 中函数为 LENGTH()
+
 ```sql
 SELECT LENGTH(column_name)
 FROM table_name;
 ```
+
 ### ROUND() 函数
 
 ROUND() 函数用于把数值字段舍入为指定的小数位数。
 
 SQL ROUND() 语法
+
 ```sql
 SELECT ROUND(column_name,decimals) FROM table_name;
 ```
 
 参数描述
+
 * column_name  必需。要舍入的字段。
 * decimals  必需。规定要返回的小数位数。
 
@@ -141,7 +149,7 @@ NOW() 函数返回当前系统的日期和时间。
 
 **MySQL 中的 NOW() 函数**
 
-```
+```sql
 SELECT NOW(),CURDATE(),CURTIME()
 
 +---------------------+------------+-----------+
@@ -158,15 +166,18 @@ Time: 0.021s
 FORMAT() 函数用于对字段的显示进行格式化。
 
 SQL FORMAT() 语法
+
 ```sql
 SELECT FORMAT(column_name,format) FROM table_name;
 ```
 
 参数	描述
+
 * column_name 必需。要格式化的字段。
 * format	必需。规定格式。
 
-示例: 
+示例:
+
 ```sql
 mysql> SELECT name, url, DATE_FORMAT(Now(),'%Y-%m-%d') AS date
     -> FROM Websites;
@@ -187,33 +198,35 @@ mysql> SELECT name, url, DATE_FORMAT(Now(),'%Y-%m-%d') AS date
 ### MySQL DATE_ADD() 函数
 
 DATE_ADD() 函数向日期添加指定的时间间隔。
-```
+
+```sql
 DATE_ADD(date, INTERVAL expr type)
 ```
+
 date 参数是合法的日期表达式。expr 参数是您希望添加的时间间隔。
 
 type 参数可以是下列值：
 
-MICROSECOND    
-SECOND    
-MINUTE    
-HOUR    
-DAY    
-WEEK    
-MONTH    
-QUARTER    
-YEAR    
-SECOND_MICROSECOND    
-MINUTE_MICROSECOND    
-MINUTE_SECOND    
-HOUR_MICROSECOND    
-HOUR_SECOND    
-HOUR_MINUTE    
-DAY_MICROSECOND    
-DAY_SECOND    
-DAY_MINUTE    
-DAY_HOUR    
-YEAR_MONTH    
+MICROSECOND
+SECOND
+MINUTE
+HOUR
+DAY
+WEEK
+MONTH
+QUARTER
+YEAR
+SECOND_MICROSECOND
+MINUTE_MICROSECOND
+MINUTE_SECOND
+HOUR_MICROSECOND
+HOUR_SECOND
+HOUR_MINUTE
+DAY_MICROSECOND
+DAY_SECOND
+DAY_MINUTE
+DAY_HOUR
+YEAR_MONTH
 
 现在，我们想要向 "OrderDate" 添加 45 天，这样就可以找到付款日期。
 
@@ -222,9 +235,11 @@ SELECT DATE_ADD('2010-3-4', INTERVAL 45 DAY) AS OrderPayDate
 ```
 
 ### DATE_SUB() 函数从日期减去指定的时间间隔。
+
 和DATE_ADD 一个是加上日期, 一个是减去日期
 
 ### DATEDIFF() 函数返回两个日期之间的天数。
+
 ```sql
 SELECT DATEDIFF('2008-11-30','2008-11-29') AS DiffDate
 ```
@@ -235,7 +250,8 @@ SELECT DATEDIFF('2008-11-30','2008-11-29') AS DiffDate
 date 参数是合法的日期。format 规定日期/时间的输出格式。
 
 可以使用的格式有：
-```
+
+```text
 %a	缩写星期名
 %b	缩写月名
 %c	月，数值
@@ -271,11 +287,12 @@ date 参数是合法的日期。format 规定日期/时间的输出格式。
 
 ## 防止 SQL 注入攻击
 
-所谓 SQL 注入，就是通过把 SQL 命令插入到Web表单递交或输入域名或页面请求的查询字符串，最终达到欺骗服务器执行恶意的 SQL 命令。
+所谓 SQL 注入，就是通过把 SQL 命令插入到 Web 表单递交或输入域名或页面请求的查询字符串，最终达到欺骗服务器执行恶意的 SQL 命令。
 
 我们永远不要信任用户的输入，我们必须认定用户输入的数据都是不安全的，我们都需要对用户输入的数据进行过滤处理。
 
 防止 SQL 注入，我们需要注意以下几个要点：
+
 1. 永远不要信任用户的输入。对用户的输入进行校验，可以通过正则表达式，或限制长度；对单引号和 双"-"进行转换等。
 2. 永远不要使用动态拼装sql，可以使用参数化的sql或者直接使用存储过程进行数据查询存取。
 3. 永远不要使用管理员权限的数据库连接，为每个应用使用单独的权限有限的数据库连接。
@@ -303,13 +320,13 @@ date 参数是合法的日期。format 规定日期/时间的输出格式。
 
 通常，COMMIT用于保存更改，ROLLBACK用于撤销。
 
-要支持回退部分事务，必须在事务处理块中的合适位置放置占位符。这样，如果需要回退，可以回退到某个占位符。在 SQL 中，这些占位符称为保留点。在MariaDB、MySQL和Oracle中创建占位符，可使用SAVEPOINT语句。
+要支持回退部分事务，必须在事务处理块中的合适位置放置占位符。这样，如果需要回退，可以回退到某个占位符。在 SQL 中，这些占位符称为保留点。在 MariaDB、MySQL 和 Oracle 中创建占位符，可使用 SAVEPOINT 语句。
 
 > 提示：保留点越多越好可以在SQL代码中设置任意多的保留点，越多越好。为什么呢？因为保留点越多，你就越能灵活地进行回退。
 
 ## SQL 游标
 
-有时，需要在检索出来的行中前进或后退一行或多行，这就是游标的用途所在。游标（cursor）是一个存储在DBMS服务器上的数据库查询，它不是一条SELECT语句，而是被该语句检索出来的结果集。在存储了游标之后，应用程序可以根据需要滚动或浏览其中的数据。
+有时，需要在检索出来的行中前进或后退一行或多行，这就是游标的用途所在。游标（cursor）是一个存储在DBMS服务器上的数据库查询，它不是一条 SELECT 语句，而是被该语句检索出来的结果集。在存储了游标之后，应用程序可以根据需要滚动或浏览其中的数据。
 
 使用游标涉及几个明确的步骤。
 ❑ 在使用游标前，必须声明（定义）它。这个过程实际上没有检索数据，它只是定义要使用的SELECT 语句和游标选项。
@@ -328,7 +345,7 @@ date 参数是合法的日期。format 规定日期/时间的输出格式。
 ## 参考
 
 SQL 简介 | 菜鸟教程
-https://www.runoob.com/sql/sql-intro.html
+<https://www.runoob.com/sql/sql-intro.html>
 
 MySQL 教程MySQL 教程
-https://wiki.imooc.com/mysql/index.html
+<https://wiki.imooc.com/mysql/index.html>

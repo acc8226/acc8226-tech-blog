@@ -155,21 +155,21 @@ required：指定该参数是否为必传参数
 value：对该参数含义的简短说明
 
 **@ApiResponses（）用于包装类**
-注解@ApiResponse的包装类，数组结构。
+注解 @ApiResponse 的包装类，数组结构。
 
-即使需要使用一个@ApiResponse注解，也需要将 @ApiResponse 注解包含在注解 @ApiResponses 内。
+注意：即使需要使用一个@ApiResponse注解，也需要将 @ApiResponse 注解包含在注解 @ApiResponses 内。
 
 **@ApiResponse（）用于方法的返回结果**
 描述一个操作可能的返回结果。
 
-当REST API 请求发生时，这个注解可用于描述所有可能的成功与错误码。
+当 REST API 请求发生时，这个注解可用于描述所有可能的成功与错误码。
 可以用，也可以不用这个注解去描述操作的返回类型，但成功操作的返回类型必须在 @ApiOperation 中定义。
 如果 API 具有不同的返回类型，那么需要分别定义返回值，并将返回类型进行关联。
 但 Swagger不支持同一返回码，多种返回类型的注解。注意：这个注解必须被包含在 @ApiResponses 注解中。
 
 字段说明：
-code：HTTP 请求返回码。有效值必须符合标准的 HTTP Status Code Definitions。
-message：用于对返回信息作详细说明，对请求结果的描述信息
+code：HTTP 请求返回码。有效值必须符合标准的 HTTP Status Code Definitions。举例：400
+message：用于对返回信息作详细说明，对请求结果的描述信息。举例：例如”请求参数没填好”
 response：返回类型信息，必须使用完全限定类名，比如“com.xyz.cc.Person.class”。
 responseContainer：如果返回类型为容器类型，可以设置相应的值。有效值为 "List", "Set" or "Map"，其他任何无效的值都会被忽略
 

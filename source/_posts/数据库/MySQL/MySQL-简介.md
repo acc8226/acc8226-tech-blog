@@ -18,7 +18,7 @@ RDBMS 即关系数据库管理系统(Relational Database Management System)的�
 
 ## MySQL 版本
 
-❑ 4——InnoDB引擎，增加事务处理、并、改进全文本搜索等的支持。
+❑ 4——InnoDB 引擎，增加事务处理、并、改进全文本搜索等的支持。
 ❑ 4.1——对函数库、子查询、集成帮助等的重要增加。
 ❑ 5——存储过程、触发器、游标、视图等。
 
@@ -107,10 +107,10 @@ USE <数据库名>;
 为了获得一个数据库内的表的列表
 
 ```sql
-SHOW TABLES ;
+SHOW TABLES;
 ```
 
-SHOW也可以用来显示表列：
+SHOW 也可以用来显示表列：
 
 ```sql
 show columns from customers;
@@ -143,9 +143,9 @@ YEAR - 格式：YYYY 或 YY
 
 每个时间类型有一个有效值范围和一个"零"值，当指定不合法的 MySQL 不能表示的值时使用"零"值。
 
-TIMESTAMP 类型有专有的自动更新特性，将在后面描述。
+TIMESTAMP 类型有专有的自动更新特性。TIMESTAMP 占用4个字节，范围 1970-01-01 00:00:01.000000 到 2038-01-19 03:14:07.999999;
 
-注意：如果 DATETIME 类型的值没有时间部分，默认时间为 00:00:00。时间日期比较可以用 `=` 号。
+DATETIME 占用8个字节; 如果 DATETIME 类型的值没有时间部分，默认时间为 00:00:00。时间日期比较可以用 `=` 号。
 
 date 和 datetime 在插入的时候可以用 NOW() 函数。
 
@@ -180,3 +180,6 @@ MySQL 简介 | 菜鸟教程
 
 官网 8.0 参考手册
 <https://dev.mysql.com/doc/refman/8.0/en/>
+
+MySQL timestamp和datetime的区别 - 七彩鱼丸 - 博客园
+<https://www.cnblogs.com/starfish29/p/10627953.html>

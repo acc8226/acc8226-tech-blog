@@ -1,6 +1,6 @@
 ---
-title: IntelliJ-Idea Mono 字体安装
-date: 2020.04.04 21:31:26
+title: IDEA Mono 字体安装
+date: 2020-04-04 21:31:26
 updated: 2022-11-09 13:56:00
 categories: IDE-使用
 ---

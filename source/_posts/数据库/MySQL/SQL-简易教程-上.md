@@ -43,6 +43,7 @@ SQL 可在数据库中创建设置表、存储过程、视图，包含权限管�
 SQL 使用**单引号**来环绕文本值，这样更加规范。（大部分数据库系统也接受双引号）。如果是**数值**，请不要使用引号。
 
 **Number 类型**
+
 * TINYINT(size)	带符号 -128 到 127 ，无符号 0 到 255。
 * INT(size)	带符号范围 -2147483648 到 2147483647，无符号的范围是 0 到 4294967295。 size 默认为 11
 * BIGINT(size)	带符号的范围是 -9223372036854775808 到 9223372036854775807，无符号的范围是 0 到 18446744073709551615。size 默认为 20
@@ -50,6 +51,7 @@ SQL 使用**单引号**来环绕文本值，这样更加规范。（大部分数
 > 注意：以上的 size 代表的并不是存储在数据库中的具体的长度。实际上int(size)所占多少存储空间并无任何关系。int(3)、int(4)、int(8) 在磁盘上都是占用 4 btyes 的存储空间。就是在显示给用户的方式有点不同外，int(M) 跟 int 数据类型是相同的。
 
 **Date 类型**
+
 * DATE()	日期。格式：YYYY-MM-DD
 注释：支持的范围是从 '1000-01-01' 到 '9999-12-31'
 * DATETIME()	*日期和时间的组合。格式：YYYY-MM-DD HH:MM:SS
@@ -66,6 +68,7 @@ SELECT * FROM Persons WHERE FirstName=Bush
 ## SELECT 语句
 
 检索一列或多列。
+
 ```sql
 SELECT column_name1, column_name2 FROM table_name;
 ```
@@ -73,6 +76,7 @@ SELECT column_name1, column_name2 FROM table_name;
 > 未排序数据 如果读者自己试验这个查询，可能会发现显示输出的数据顺序与这里的不同。出现这种情况很正常。如果没有明确排序查询结果，则返回的数据的顺序没有特殊意义。返回数据的顺序可能是数据被添加到表中的顺序，也可能不是。只要返回相同数目的行，就是正常的。
 
 SELECT 语句还可以使用星号（＊）检索所有的列
+
 ```sql
 SELECT * FROM table_name;
 ```
@@ -84,11 +88,13 @@ SELECT * FROM table_name;
 > 注意：DISTINCT 作用于之后**所有字段**，不能作用部分范围。
 
 DISTINCT 语法：
+
 ```sql
 SELECT DISTINCT column_name,column_name FROM table_name;
 ```
 
 SELECT 使用示例：
+
 ```sql
 SELECT * FROM Vendors;
 
@@ -100,6 +106,7 @@ SELECT vend_id, vend_name FROM Vendors;
 WHERE 子句用于提取那些满足指定条件的记录。
 
 WHERE 语法
+
 ```sql
 SELECT column_name,column_name
 FROM table_name
@@ -141,6 +148,7 @@ ORDER BY 关键字用于对结果集按照一个列或者多个列进行排序�
 ORDER BY 关键字**默认按照升序 ASC** 对记录进行排序。如果需要按照降序对记录进行排序，您可以使用 DESC 关键字。当然你也可以为每个字段指定顺序。
 
 语法
+
 ```sql
 SELECT column_name,column_name
 FROM table_name
@@ -148,6 +156,7 @@ ORDER BY column_name, column_name ASC|DESC;
 ```
 
 示例：
+
 ```sql
 -- default order by ASC
 SELECT * FROM Websites
@@ -176,25 +185,30 @@ SQL INSERT INTO 语法
 INSERT INTO 语句可以有两种编写形式。
 
 第一种形式：不指定列名，只需提供被插入的值即可：
+
 ```sql
 INSERT INTO table_name
 VALUES (value1,value2,value3,...);
 ```
 
 示例：
+
 ```sql
 INSERT INTO Websites
 VALUES (null, '天猫商城', 'https://www.tmall.com/', '8', 'CN');
 ```
+
 注意：这里 id 列插入预设为 null，
 
 第二种形式：需要指定列名
+
 ```sql
 INSERT INTO table_name (column1,column2,column3,...)
 VALUES (value1,value2,value3,...);
 ```
 
 示例：
+
 ```sql
 INSERT INTO Websites (name, url, alexa, country)
 VALUES ('百度', 'https://www.baidu.com/','4','CN');
@@ -203,7 +217,8 @@ VALUES ('百度', 'https://www.baidu.com/','4','CN');
 **INSERT 插入多条数据**
 
 一个 values，然后是多条数据。
-```
+
+```sql
 INSERT INTO table_name  (field1, field2,...fieldN)
 VALUES  (valueA1,valueA2,...valueAN)
 ,(valueB1,valueB2,...valueBN)
@@ -213,6 +228,7 @@ VALUES  (valueA1,valueA2,...valueAN)
 ## UPDATE 语句
 
 语法：
+
 ```sql
 UPDATE table_name
 SET column1=value1, column2=value2,...
@@ -220,6 +236,7 @@ SET column1=value1, column2=value2,...
 ```
 
 示例：
+
 ```sql
 UPDATE Websites
 SET alexa='5000', name='菜鸟学习网'
@@ -233,12 +250,14 @@ WHERE name = '菜鸟教程';
 DELETE 语句用于删除表中的行。
 
 语法：
+
 ```sql
 DELETE FROM table_name
 [WHERE 子句]
 ```
 
 示例：
+
 ```sql
 DELETE FROM Websites
 WHERE name = 'Facebook';

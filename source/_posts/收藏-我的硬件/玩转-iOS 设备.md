@@ -29,7 +29,7 @@ categories:
 
 ### 主桌面
 
-* QQ 或者 Tim(嫌手机 QQ 太臃肿了)
+* QQ 或者 Tim(如果嫌手机 QQ 太臃肿的话)
 * QQ 邮箱 或者 网易邮箱大师
 * Kindle【已过时】(现支持打开 epub 类型的文件了, txt文本也不在话下,至少我觉得比 iBook 靠谱)
 * Document (或者 GoodReader 苹果管理文件神器, 需付费)
@@ -62,7 +62,7 @@ categories:
 
 ### 生活支付类
 
-支付宝, 各种银行啦, 理财类 App 等
+支付宝、各种银行、理财类 App 等
 
 ## iPad 资源
 

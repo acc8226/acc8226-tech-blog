@@ -88,7 +88,7 @@ settings.gradle
 include 'project1', 'project2:child', 'project3:child1'
 ```
 
-Include 方法将项目路径作为参数。 假设项目路径等于相对物理文件系统路径。 例如，默认情况下，路径“ services: api”映射到文件夹“ services / api”(相对于项目根目录)。 您只需指定树的叶子。 这意味着包含服务: 酒店: api 的路径将导致创建3个项目: 服务、服务: 酒店和服务: 酒店: api。 关于如何使用项目路径的更多示例可以在 Settings.include (java.lang)的 DSL 文档中找到。 String []).
+Include 方法将项目路径作为参数。 假设项目路径等于相对物理文件系统路径。 例如，默认情况下，路径 “services: api” 映射到文件夹 “services / api”(相对于项目根目录)。 您只需指定树的叶子。 这意味着包含服务: 酒店: api 的路径将导致创建 3 个项目: 服务、服务: 酒店和服务: 酒店: api。 关于如何使用项目路径的更多示例可以在 Settings.include (java.lang)的 DSL 文档中找到。 String []).
 
 #### [Flat layouts 平面布局](https://docs.gradle.org/6.3/userguide/build_lifecycle.html#sec:flat_layouts)
 

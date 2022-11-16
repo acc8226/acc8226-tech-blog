@@ -1,6 +1,6 @@
 ---
-title: IntelliJ-Idea-笔记
-date: 2019.06.02 21:41:52
+title: IntelliJ Idea 笔记
+date: 2019-06-02 21:41:52
 updated: 2022-11-09 13:56:00
 categories: IDE-使用
 ---
@@ -166,8 +166,8 @@ Ctrl+Y 删除行
 
 清除无效包引用  Ctrl + Alt  + O
 
-Alt + 左方向键       向左切换tab页
-Alt + 右方向键       向右切换tab页
+Alt + 左方向键       向左切换 tab 页
+Alt + 右方向键       向右切换 tab 页
 
 抽取函数/方法  Command-Option-M（Ctrl-Alt-M）
 
@@ -187,7 +187,7 @@ Shift + ESC 隐藏工具窗口 也能和 F12 连用。
 
 ## Live Templates
 
-Java 开发过程经常需要编写有固定格式的代码，例如说声明一个私有变量，logger 或者 bean 等等。对于这种小范围的代码生成，我们可以利用 IDEA 提供的 Live Templates功能。刚开始觉得它只是一个简单的 Code Snippet，后来发现它支持变量函数配置，可以支持很复杂的代码生成。下面我来介绍一下Live Templates 的用法。
+Java 开发过程经常需要编写有固定格式的代码，例如说声明一个私有变量，logger 或者 bean 等等。对于这种小范围的代码生成，我们可以利用 IDEA 提供的 Live Templates 功能。刚开始觉得它只是一个简单的 Code Snippet，后来发现它支持变量函数配置，可以支持很复杂的代码生成。下面我来介绍一下Live Templates 的用法。
 
 IDEA 自带很多常用的动态模板，在 Java 代码中输入 fori，回车就会出现
 
@@ -263,7 +263,7 @@ Postfix Completion 功能本质上也是代码模板，只是它比 Live Templat
 
 因此，如果你有经常更换系统平台进行开发的需求，那么为了快捷键的更快适应，达到体验一致性，就**使用 Mac OS X 方案**；如果想要更爽的利用 mac 系统开发，没有跨平台和协作性的问题的话，就使用 Mac OS X 10.5+ 方案。
 
- 官网：http://www.jetbrains.com/idea/download/#section=windows
+ 官网：<http://www.jetbrains.com/idea/download/#section=windows>
 
 ![设置编码](https://upload-images.jianshu.io/upload_images/1662509-43b4d7de28f46b8b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -281,7 +281,7 @@ Postfix Completion 功能本质上也是代码模板，只是它比 Live Templat
 | F8                    | 在 Debug 模式下，进入下一步，如果当前行断点是一个方法，则不进入当前方法体内，Step Over |
 | F9                    | 在 Debug 模式下，恢复程序运行，但是如果该断点下面代码还有断点则停在下一个断点上，Resume |
 
-## Idea 合并test 分支到主分支
+## Idea 合并 test 分支到主分支
 
 【local branches】本地分支
 【remote branches】远程仓库分支
@@ -317,7 +317,7 @@ IDEA 永久激活方案 (实测可用) - 简书
 
 1.问题出在 idea 得 jdk 版本低于 1.5   ：File → Project Structure → Modules  把JDK版本改成大于 1.5 就可以了
 
-### 让IDEA显示标题栏，而不是跟菜单栏合并
+### 让 IDEA 显示标题栏，而不是跟菜单栏合并
 
 新版的 IDEA 默认把标题栏跟菜单栏合并了，变得美观了些，但是非常不方便拖动窗口，影响生产力
 解决方法：
@@ -341,11 +341,26 @@ IDEA 永久激活方案 (实测可用) - 简书
 
 ### IDEA 突然爆红，但是代码却可以正常运行
 
-原因是因为IDEA有缓存，只需要刷新一下缓存就好了
+原因是因为 IDEA 有缓存，只需要刷新一下缓存就好了
 
 解决办法：
 
 file --> Invalidate Caches /Restart. --> Invalidate and Restart
+
+### command line is too long. shorten command line for xxx的解决方法
+
+方式一：
+打开IDEA，找到项目最上部的 .idea ----- 双击打开 ----- 找到 workspace.xml ---- 双击打开该文件
+
+在 workspace.xml 文件中搜索：`<component name="PropertiesComponent">` 包含配置内加上一条：`<property name="dynamic.classpath" value="true" />`
+
+重新启动便可正常运行。
+
+方式二：
+
+第一步：找到该程序的配置信息编辑处
+第二步：找到修改选项的地方：“Modify options”，按照图中顺序选择
+第三步：再选择具体的 “Shorten command line”选项：classpath 路径
 
 ## 参考
 

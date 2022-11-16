@@ -131,7 +131,7 @@ GRANT ALL PRIVILEGES ON mydatabase.* TO 'username'@'192.168.0.100' IDENTIFIED BY
 
 **解决方式二**
 
-报"Host ‘169.254.213.3’ is not allowed to connect to this MySQL server 主要的意思是这个host主机不能访问本机的 mysql 服务，原因需要连接非本机的 mysql 的时候，默认 host 是 localhost，我们需要将这个mysql 连接权限设置成%，更改方法直接通过软件更改和命令行更改：选择 mysql 这个数据库，里面有一个user表，进入表中有一个 host 字段将 localhost 值更改为%这个保存后，刷新或者重启 MySQL 服务都行。 刷新的命令是
+报"Host ‘169.254.213.3’ is not allowed to connect to this MySQL server 主要的意思是这个host主机不能访问本机的 mysql 服务，原因需要连接非本机的 mysql 的时候，默认 host 是 localhost，我们需要将这个mysql 连接权限设置成%，更改方法直接通过软件更改和命令行更改：选择 mysql 这个数据库，里面有一个user表，进入表中有一个 host 字段将 localhost 值更改为 % 这个保存后，刷新或者重启 MySQL 服务都行。 刷新的命令是
 flush privileges; 注意这里需要有；号否则不执行。
 
 ## sql 错误码
@@ -155,6 +155,14 @@ FOR EACH ROW SELECT 'Product added';
 
 ## 遇到过的问题
 
+### MySQL出现警告：Integer display width is deprecated and will be removed in a future release
+
+Integer display width is deprecated and will be removed in a future release：整数显示宽度已弃用，将在以后的版本中删除
+
+对于整数数据类型如INT [M]，M指示显示宽度，对于浮点和定点数据类型， M是可以存储的总位数。从MySQL 8.0.17开始，对于整数数据类型，不建议使用display width属性，即不用M显示宽度，并且在将来的MySQL版本中将删除对它的支持。
+
+例如， INT(4)指定 INT显示宽度为四位数的。应用程序可以使用此可选的显示宽度来显示整数值，该整数值的宽度小于为列指定的宽度，方法是用空格左键填充。如果插入的数的位数大于显示的宽度M的值，数值依然可以插入，并显示原来的数。如 year INT[4], year的值为12345，那么还是显示12345。
+
 ### MySQL表不能修改、删除等操作，卡死、锁死情况的处理办法
 
 ```sql
@@ -168,6 +176,11 @@ show full processlist;
 ```sql
 kill processid;
 ```
+
+### lock wait timeout exceeded
+
+MySQL抛出异常：lock wait timeout exceeded解决方案_程序猿微刊的博客-CSDN博客_mysql 抛出异常语句
+<https://blog.csdn.net/CharlesYooSky/article/details/89084310>
 
 ## 参考
 
