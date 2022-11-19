@@ -1,5 +1,5 @@
 ---
-title: Mac教程3-3 知识整理
+title: Mac 教程3-3 知识整理
 date: 2019-10-01 12:34:26
 updated: 2022-11-05 13:45:00
 categories:

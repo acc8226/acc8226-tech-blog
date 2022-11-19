@@ -11,16 +11,17 @@ tags:
 
 ## 安卓自定义 ViewGroup 需要注意的地方
 
-至少需要提供 width, 和height两个属性
+至少需要提供 width, 和 height 两个属性
 
 同样地，如果要使用自定义的属性，那么就需要创建自己的名字空间，在 Android Studio 中，第三方的控件都使用如下代码来引入名字空间。
-xmlns:custom="http://schemas.android.com/apk/res-auto"
+
+`xmlns:custom="http://schemas.android.com/apk/res-auto"`
 
 ## 流动布局手写精简版
 
-* 增加了'center'居中等三种排列方式
-* 额外支持padding属性
-* layout_newline属性支持自定义换行(类似'\n'的换行效果)
+* 增加了 'center' 居中等三种排列方式
+* 额外支持 padding 属性
+* layout_newline 属性支持自定义换行(类似'\n'的换行效果)
 
 ## 参考
 

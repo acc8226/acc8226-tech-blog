@@ -23,7 +23,7 @@ categories:
 
 ## PDManer
 
-PDManer: PDManer元数建模，是一款多操作系统开源免费的桌面版关系数据库模型建模工具，相对于 PowerDesigner，他具备界面简洁美观，操作简单，上手容易等特点。支持Windows,Mac,Linux等操作系统，也能够支持国产操作系统。
+PDManer: PDManer 元数建模，是一款多操作系统开源免费的桌面版关系数据库模型建模工具，相对于 PowerDesigner，他具备界面简洁美观，操作简单，上手容易等特点。支持 Windows, Mac, Linux 等操作系统，也能够支持国产操作系统。
 
 PDMan-2 --> CHINER-3 --> PDManer-4,数据库建模产品的升级延续
 

@@ -1,5 +1,5 @@
 ---
-title: Mac教程 2-2 装机必备
+title: Mac 教程 2-2 装机必备
 date: 2019-03-24 18:09:22
 updated: 2022-11-05 13:45:00
 categories:
@@ -9,7 +9,7 @@ categories:
 
 ### 必备包
 
-* 必备: [360极速浏览器](https://browser.360.cn/ee/mac/index.html) or 谷歌浏览器.  之所以选择360极速, 是因为鼠标悬停和鼠标手势很好用. **本身也能支持 PDF 阅读**
+* 必备: [360 极速浏览器](https://browser.360.cn/ee/mac/index.html) or 谷歌浏览器.  之所以选择360极速, 是因为鼠标悬停和鼠标手势很好用. **本身也能支持 PDF 阅读**
 
 * 工具类: [搜狗输入法](https://pinyin.sogou.com/mac/): 我本来是用的是百度, 使用过程中遇到了一个小bug, 果断换回搜狗输入法。
 

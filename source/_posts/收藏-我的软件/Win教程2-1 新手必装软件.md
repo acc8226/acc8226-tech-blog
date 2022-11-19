@@ -1,5 +1,5 @@
 ---
-title: Win教程 2-1 新手必装软件
+title: Win 教程 2-1 新手必装软件
 date: 2019-08-03 22:48:01
 updated: 2022-11-05 13:45:00
 categories:

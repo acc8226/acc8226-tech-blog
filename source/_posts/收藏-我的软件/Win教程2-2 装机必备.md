@@ -1,5 +1,5 @@
 ---
-title: Win教程 2-2 装机必备
+title: Win 教程 2-2 装机必备
 date: 2019-10-01 22:08:33
 updated: 2022-11-05 13:45:00
 categories:

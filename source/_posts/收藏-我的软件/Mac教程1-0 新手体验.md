@@ -1,5 +1,5 @@
 ---
-title: Mac教程1-0 新手体验
+title: Mac 教程1-0 新手体验
 date: 2019-03-17 17:27:17
 updated: 2022-11-05 13:45:00
 categories:
