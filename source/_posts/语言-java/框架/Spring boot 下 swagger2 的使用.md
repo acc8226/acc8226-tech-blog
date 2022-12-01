@@ -15,7 +15,7 @@ Swagger 是一个规范和完整的框架，用于生成、描述、调用和可
 swagger 官方 Demo 供参考
 <https://petstore.swagger.io/>
 
-### swagger注解
+### swagger 注解
 
 swagger 通过注解表明该接口会生成文档，包括接口名、请求方法、参数、返回信息的等等。
 
@@ -32,14 +32,12 @@ swagger 通过注解表明该接口会生成文档，包括接口名、请求方
 pom 中导入 dependency
 
 ```xml
-<!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger2 -->
 <dependency>
     <groupId>io.springfox</groupId>
     <artifactId>springfox-swagger2</artifactId>
     <version>2.8.0</version>
 </dependency>
 
-<!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui -->
 <dependency>
     <groupId>io.springfox</groupId>
     <artifactId>springfox-swagger-ui</artifactId>

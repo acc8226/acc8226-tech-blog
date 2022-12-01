@@ -1,56 +1,50 @@
 ## 方法引用
 
-方法引用分为三种，方法引用通过一对双冒号:: 来表示，方法引用是一种函数式接口的另一种书写方式
+方法引用分为三种，方法引用通过一对双冒号 :: 来表示，方法引用是一种函数式接口的另一种书写方式
 
-1. 静态方法引用，通过类名::静态方法名， 如 Integer::parseInt
-2. 实例方法引用，通过实例对象::实例方法，如 str::substring
+1. 静态方法引用，通过 类名::静态方法名， 如 Integer::parseInt
+2. 实例方法引用，通过 实例对象::实例方法，如 str::substring
 3. 类名::实例方法名, 如 String::substring
-4. 构造方法引用，通过类名::new， 如 User::new
+4. 构造方法引用，通过 类名::new， 如 User::new
 
-> 第三点: 若Lambda 的参数列表的第一个参数，是实例方法的调用者，第二个参数(或无参)是实例方法的参数时，格式： 类名::实例方法名
-> There are several basic function shapes,
-including Function (unary function from T to R),
-Consumer (unary function from T to void),
-Predicate (unary function from T to boolean),
-and Supplier (nullary function to R).
->
-> Function shapes have a natural arity based on how they are most commonly used. The basic shapes can be modified by an arity prefix to indicate a different arity, such as BiFunction (binary function from T and U to R).
-类名::方法名，相当于对这个方法闭包的引用，类似js中的一个 function。比如：
+> 第三点: 若 Lambda 的参数列表的第一个参数，是实例方法的调用者，第二个参数(或无参)是实例方法的参数时，格式： 类名::实例方法名
+
+类名::方法名，相当于对这个方法闭包的引用，类似 js 中的一个 function。比如：
 
 ```java
 public static void main(String[] args) {
-        Consumer<String> printStrConsumer = DoubleColon::printStr;
-        printStrConsumer.accept("printStrConsumer");
+    Consumer<String> printStrConsumer = DoubleColon::printStr;
+    printStrConsumer.accept("printStrConsumer");
 
-        Consumer<DoubleColon> toUpperConsumer = DoubleColon::toUpper;
-        toUpperConsumer.accept(new DoubleColon());
+    Consumer<DoubleColon> toUpperConsumer = DoubleColon::toUpper;
+    toUpperConsumer.accept(new DoubleColon());
 
-        BiConsumer<DoubleColon,String> toLowerConsumer = DoubleColon::toLower;
-        toLowerConsumer.accept(new DoubleColon(),"toLowerConsumer");
+    BiConsumer<DoubleColon,String> toLowerConsumer = DoubleColon::toLower;
+    toLowerConsumer.accept(new DoubleColon(),"toLowerConsumer");
 
-        BiFunction<DoubleColon,String,Integer> toIntFunction = DoubleColon::toInt;
-        int i = toIntFunction.apply(new DoubleColon(),"toInt");
+    BiFunction<DoubleColon,String,Integer> toIntFunction = DoubleColon::toInt;
+    int i = toIntFunction.apply(new DoubleColon(),"toInt");
+}
+
+static class DoubleColon {
+
+    public static void printStr(String str) {
+        System.out.println("printStr : " + str);
     }
 
-    static class DoubleColon {
-
-        public static void printStr(String str) {
-            System.out.println("printStr : " + str);
-        }
-
-        public void toUpper(){
-            System.out.println("toUpper : " + this.toString());
-        }
-
-        public void toLower(String str){
-            System.out.println("toLower : " + str);
-        }
-
-        public int toInt(String str){
-            System.out.println("toInt : " + str);
-            return 1;
-        }
+    public void toUpper(){
+        System.out.println("toUpper : " + this.toString());
     }
+
+    public void toLower(String str){
+        System.out.println("toLower : " + str);
+    }
+
+    public int toInt(String str){
+        System.out.println("toInt : " + str);
+        return 1;
+    }
+}
 ```
 
 > 用::提取的函数，最主要的区别在于静态与非静态方法，非静态方法比静态方法多一个参数，就是被调用的实例。
@@ -192,28 +186,45 @@ Map<Boolean, List<Integer>> map = Stream.of(1, 2, 3, 4)
 // 输出: {false=[1, 2], true=[3, 4]}
 ```
 
-函数的返回值只能将数据分为两组也就是ture和false两组数据。
+函数的返回值只能将数据分为两组也就是 ture 和 false 两组数据。
 
-### 数据块分组
+### groupingBy 数据块分组
 
-数据分组是一种更自然的分割数据操作， 与将数据分成true和false两部分不同，可以使用任意值对数据分组。
+数据分组是一种更自然的分割数据操作， 与将数据分成 true 和 false 两部分不同，可以使用任意值对数据分组。
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-f9578dc1fa528b23.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-groupingBy是都集合进行分组，分组之后的结果形如Map<key,List>。其中，key是进行分组的字段类型，比如按Ussr类中的type（用户类型：1、2、3、4）进行分组，type的类型为Integer，分组之后的Map的key类型就是Integer。并且最多会分成四组，所以最后的结果即Map<Integer,List>。
-假设我们想用户类型为1的集合，首先先进行分组，如：
-`Map<Integer,List<User>> userMap = allUserList.parallelStream().collect(Collectors.groupingBy(User::getType));`
+groupingBy 是都集合进行分组，分组之后的结果形如 `Map<key,List>`。其中，key 是进行分组的字段类型，比如按 Ussr 类中的 type（用户类型：1、2、3、4）进行分组，type的类型为Integer，分组之后的Map的key类型就是Integer。并且最多会分成四组，所以最后的结果即 Map<Integer,List>。
+假设我们想用户类型为 1 的集合，首先先进行分组，如：
 
-接下来直接从Map中get(1)即可，如：`List<User> userList  =  userMap.get(1);`
+```java
+Map<Integer,List<User>> userMap = allUserList.parallelStream().collect(Collectors.groupingBy(User::getType));
+```
+
+接下来直接从 Map 中 get(1) 即可，如：`List<User> userList  =  userMap.get(1);`
 
 > groupingBy 与 partitioningBy 之间的坑
 >
-> 1.必须要提的一点是：在进行 get 时，groupingBy 分组若 key 不存在则返回 null，partitioningBy 则会返回空数组，groupingBy 分组注意判空。
-2. stream 处理集合的效率并不一定比迭代器高，如果不要求顺序可以使用parallelStream进行并行流的处理。
+1. 必须要提的一点是：在进行 get 时，groupingBy 分组若 key 不存在则返回 null，partitioningBy 则会返回空数组，groupingBy 分组注意判空。
+2. stream 处理集合的效率并不一定比迭代器高，如果不要求顺序可以使用 parallelStream 进行并行流的处理。
 
-### 字符串
+根据俩个字段进行分组
 
-在Java 1.8中，我们可以使用Stream来实现。这里我们将使用 Collectors.joining 收集 Stream 中的值，该方法可以方便地将Stream得到一个字符串。joining函数接受三个参数，分别表示允（用以分隔元素）、前缀和后缀。
+```java
+Map<Integer, Map<BigDecimal, List<User>>> collect = userList.stream().filter(Objects::nonNull)
+                .collect(Collectors.groupingBy(User::getAge, Collectors.groupingBy(User::getMoney)));
+```
+
+复杂分组
+
+```java
+        Map<Integer, Map<BigDecimal, List<Long>>> collect = userList.stream().filter(Objects::nonNull)
+                .collect(Collectors.groupingBy(User::getAge, Collectors.groupingBy(User::getMoney, Collectors.mapping(User::getId, Collectors.toList()))));
+```
+
+### collect
+
+Collectors.joining 收集 Stream 中的值，该方法可以方便地将 Stream 得到一个字符串。joining 函数接受三个参数，分别表示允（用以分隔元素）、前缀和后缀。
 
 ```java
 String strJoin = Stream.of("1", "2", "3", "4")
@@ -223,10 +234,11 @@ System.out.println("strJoin: " + strJoin);
 // strJoin: [1,2,3,4]
 ```
 
-TODO阅读+理解：Java8中使用stream进行分组统计和普通实现的分组统计的性能对比_冯立彬的博客-CSDN博客_java stream 分组统计
-<https://blog.csdn.net/fenglibing/article/details/80238310>
+### distinct
 
-### Java8中流API Peek()
+去重
+
+### Peek
 
 流由三部分组成：数据源、零个或多个中间操作以及零个或一个终端操作。
 
@@ -239,7 +251,7 @@ peek() 的 Javadoc 页面说：“这个方法的存在主要是为了支持调�
 
 ```java
 @Test
-public void test3(){
+public void test(){
     List<String> collect = Stream.of("one", "two", "three", "four")
             .filter(e -> e.length() > 3)
             .peek(e -> System.out.println("过滤值: " + e))
@@ -249,6 +261,24 @@ public void test3(){
     System.out.println(collect);
 }
 ```
+
+### sorted 排序
+
+stream 中有两个 sorted 方法：
+
+1. 一个无参的方法 `Stream<T> sorted();`查看它的实现类，往里进，发现它默认使用的是自然排序 compareTo。
+2. 一个有参的方法 `Stream<T> sorted(Comparator<? super T> comparator);` 该方法需要传一个比较器参数。
+
+默认为升序
+`userList = userList.stream().sorted(Comparator.comparing(User::getAge)).collect(Collectors.toList());`
+
+改为降序
+
+`userList = userList.stream().sorted(Comparator.comparing(User::getAge).reversed()).collect(Collectors.toList());`
+
+多条件排序
+
+`userList = userList.stream().sorted(Comparator.comparing(User::getAge).thenComparing(User::getId)).collect(Collectors.toList());`
 
 ## 遇到过的问题
 
@@ -277,3 +307,6 @@ Java8 新特性 Stream 使用心得之：groupingBy 与 partitioningBy_G_axis �
 
 这可能是史上最好的 Java8 新特性 Stream 流教程 - osc_bnuaa5jy 的个人空间 - OSCHINA
 <https://my.oschina.net/u/4271175/blog/3265285>
+
+Java8 中使用stream进行分组统计和普通实现的分组统计的性能对比_冯立彬的博客-CSDN博客_java stream 分组统计
+<https://blog.csdn.net/fenglibing/article/details/80238310>

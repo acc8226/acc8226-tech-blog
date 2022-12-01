@@ -116,8 +116,8 @@ FROM table_name AS alias_name;
 
 ## SQL 连接(JOIN)
 
-SQL join 用于把来自两个或多个表的行结合起来。由于内容较多，请参考SQL 连接(JOIN) - 简书
-https://www.jianshu.com/p/e0092c894dcf
+SQL join 用于把来自两个或多个表的行结合起来。由于内容较多，请参考 SQL 连接(JOIN) - 简书
+<https://www.jianshu.com/p/e0092c894dcf>
 
 ## SQL UNION 操作符
 
@@ -147,9 +147,9 @@ SELECT column_name(s) FROM table2;
 注意：UNION 结果集中的列名总是等于 UNION 中第一个 SELECT 语句中的列名。这种行为带来一个有意思的副作用。由于只使用第一个名字，那么想要排序也只能用这个名字。
 
 **对组合查询结果排序**
-SELECT 语句的输出用 ORDER BY 子句排序。在用 UNION 组合查询时，只能使用一条ORDER BY 子句，它必须出现在最后一条SELECT语句之后
+SELECT 语句的输出用 ORDER BY 子句排序。在用 UNION 组合查询时，只能使用一条 ORDER BY 子句，它必须出现在最后一条SELECT语句之后
 
- ### SELECT INTO 语句
+### SELECT INTO 语句
 
 我们可以复制所有的列插入到新表中：
 ```sql

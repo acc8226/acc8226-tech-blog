@@ -72,36 +72,34 @@ Alibaba Druid 1.2.x
 
 ### 历史漏洞
 
-略
-
 注意：若依平台的默认口令 admin/admin123，请大家在线上环境一定要修改超级管理员的密码。
 SysPasswordService.encryptPassword(String username, String password, String salt)
-直接到main运行此方法，填充账号密码及盐（保证唯一），生成 md5 加密字符串。
+直接到 main 运行此方法，填充账号密码及盐（保证唯一），生成 md5 加密字符串。
 
 ## 环境部署
 
 ### 标准版
 
-#### 准备工作
+准备工作
 
 JDK >= 1.8 (推荐1.8版本)
 Mysql >= 5.7.0 (推荐5.7版本)
 Maven >= 3.0
 
-#### 运行系统
+运行系统
 
 1、导入项目。
 2、创建数据库 ry 并导入数据脚本 ry_2021xxxx.sql，quartz.sql
 3、打开项目运行 com.ruoyi.RuoYiApplication.java
 
-#### 必要配置
+必要配置
 
 * 修改数据库连接，编辑 resources 目录下的 application-druid.yml
 * 修改服务器配置，编辑 resources 目录下的 application.yml
 
-### 分离版
+### 微服务版
 
-#### 准备工作
+准备工作
 
 ```text
 JDK >= 1.8 (推荐 1.8 版本)
@@ -113,12 +111,10 @@ nacos >= 1.1.0 (ruoyi-cloud >= 3.0.0需要下载nacos >= 2.x.x版本)
 sentinel >= 1.6.0
 ```
 
-#### 运行系统
+运行系统
 
-##### 后端要点
-
+后端要点
 创建数据库 ry-cloud 并导入数据脚本 ry_2021xxxx.sql（必须），quartz.sql（可选）
-
 创建数据库 ry-config 并导入数据脚本 ry_config_2021xxxx.sql（必须）
 
 配置 nacos 持久化，修改 conf/application.properties 文件，增加支持 mysql 数据源配置
@@ -134,7 +130,7 @@ db.password=password
 
 seata 分布式事务（可选配置，默认不启用）,如果需要启用请创建数据库 ry-seata 并导入数据脚本 ry_seata_2021xxxx.sql
 
-##### 前端要点
+前端要点
 
 ```sh
 # 进入项目目录
@@ -262,7 +258,7 @@ Shiro 的认证注解处理是有内定的处理顺序的，如果有个多个�
 
 ### 事务管理
 
-新建的 Spring Boot 项目中，一般都会引用 spring-boot-starter 或者 spring-boot-starter-web，而这两个起步依赖中都已经包含了对于spring-boot-starter-jdbc或spring-boot-starter-data-jpa的依赖。 当我们使用了这两个依赖的时候，框架会自动默认分别注入DataSourceTransactionManager 或 JpaTransactionManager。 所以我们不需要任何额外配置就可以用 @Transactional 注解进行事务的使用。
+新建的 Spring Boot 项目中，一般都会引用 spring-boot-starter 或者 spring-boot-starter-web，而这两个起步依赖中都已经包含了对于 spring-boot-starter-jdbc 或 spring-boot-starter-data-jpa 的依赖。 当我们使用了这两个依赖的时候，框架会自动默认分别注入 DataSourceTransactionManager 或 JpaTransactionManager。 所以我们不需要任何额外配置就可以用 @Transactional 注解进行事务的使用。
 
 Spring 的默认的事务规则是遇到运行异常（RuntimeException）和程序错误（Error）才会回滚。如果想针对检查异常进行事务回滚，可以在 @Transactional 注解里使用 rollbackFor属性明确指定异常。
 
@@ -274,10 +270,23 @@ spring boot 中可以用 @Validated 来校验数据，如果数据异常则会�
 
 在实际开发中，对于某些关键业务，我们通常需要记录该操作的内容，一个操作调一次记录方法，每次还得去收集参数等等，会造成大量代码重复。 我们希望代码中只有业务相关的操作，在项目中使用注解来完成此项功能。
 
-在需要被记录日志的 controller 方法上添加@ Log 注解，使用方法如下：
+在需要被记录日志的 Controller 方法上添加 @Log 注解，使用方法如下：
 
 ## 代码分析
 
 ## 文件上传/下载
 
 由于后端框架支持分布式存储应用 + api，所以如果有需要类似表格模板的功能可用借助 file 接口进行上传并拿到下载地址即可。形如 `http://sand-mold.foxfirst.cn:9111/mfox/2022/09/20/6a8f52ba-ebb7-43c5-a103-62318bf87e68.xlsx`
+
+## 问题记录
+
+### 提示 "请求访问：/prevention/population/list，认证失败，无法访问系统资源"
+
+```json
+{
+    "msg": "请求访问：/prevention/population/list，认证失败，无法访问系统资源",
+    "code": 401
+}
+```
+
+原因是登录的时候携带了已登录的 token。

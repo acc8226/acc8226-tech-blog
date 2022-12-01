@@ -3,7 +3,7 @@
 
 ### 1. 下载 leanote 二进制版
 
-https://jaist.dl.sourceforge.net/project/leanote-bin/2.6.1/leanote-linux-amd64-v2.6.1.bin.tar.gz
+<https://jaist.dl.sourceforge.net/project/leanote-bin/2.6.1/leanote-linux-amd64-v2.6.1.bin.tar.gz>
 
 下载到 /user1下, 直接解压即可:
 
@@ -75,7 +75,7 @@ leanote初始数据存放在`/home/user1/leanote/mongodb_backup/leanote_install_
 mongorestore -h localhost -d leanote --dir /home/user1/leanote/mongodb_backup/leanote_install_data/
 ```
 
-现在在mongodb中已经新建了leanote数据库, 可用命令查看下leanote有多少张"表":
+现在在 mongodb 中已经新建了 leanote 数据库, 可用命令查看下 leanote 有多少张"表":
 
 ```sh
 $> mongo
@@ -121,7 +121,7 @@ bash run.sh
 
 最后出现以下信息证明运行成功:
 
-```
+```sh
 ...
 TRACE 2013/06/06 15:01:27 watcher.go:72: Watching: /home/life/leanote/bin/src/github.com/leanote/leanote/conf/routes
 Go to /@tests to run the tests.
@@ -136,7 +136,7 @@ Listening on :9000...
 采用语法`./mongod --dbpath=/path/mongodb --fork=true logpath=/path/mongod.log`
 **mangoDB之fork跑起来**
 
-```
+```sh
 mongod --auth --fork --dbpath=/home/user1/mongodb_data --logpath=/home/user1/mongod_leanote.log. 所以得先行添加admin用户.
 ```
 
@@ -178,9 +178,9 @@ nohup bash /home/user1/leanote/bin/run.sh >/dev/null 2>&1 &
 
 ## 进一步完善
 
-### 为mongodb数据库添加用户
+### 为 mongodb 数据库添加用户
 
-像mysql一样有root用户, mongodb初始是没有用户的, 这样很不安全, 所以要为leanote数据库新建一个用户来连接leanote数据库(注意, 并不是为leanote的表users里新建用户, 而是新建一个连接leanote数据库的用户, 类似mysql的root用户).
+像 mysql 一样有 root 用户, mongodb 初始是没有用户的, 这样很不安全, 所以要为leanote数据库新建一个用户来连接leanote数据库(注意, 并不是为leanote的表users里新建用户, 而是新建一个连接leanote数据库的用户, 类似mysql的root用户).
 
 mongodb v3 创建用户如下:
 

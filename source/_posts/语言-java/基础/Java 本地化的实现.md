@@ -55,11 +55,11 @@ message=\u65E9\u4E0A\u597D
 然后创建文件成功。可以在文件内写内容 使用如下语句可以使内容显示对应的语言在输入栏
 
 ```java
-Locale locale=new Locale("zh", "CN"); //选择中文
+Locale locale = new Locale("zh", "CN"); //选择中文
 ResourceBundle rbl=     //对应文件名字 对应的本地化语言
         ResourceBundle.getBundle("MessagesBundle", locale);
 System.out.println(rbl.getString("message"));
-    //输出文件中对应message的信息
+//输出文件中对应 message 的信息
 ```
 
 ## 参考

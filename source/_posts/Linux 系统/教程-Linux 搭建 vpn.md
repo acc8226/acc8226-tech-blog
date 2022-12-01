@@ -20,7 +20,7 @@ chmod +x shadowsocks-all.sh
 
 ./shadowsocks-all.sh 2>&1| tee shadowsocks-all.log
 
-4、执行上述命令会有相关输入提示操作；根据需要选择。不明白的话就直接选1或者直接默认回车；之后会提示你输入密码和端口，对应设置即可，或者直接使用默认的；由于 iPhone 端的 wingy 目前只支持到 cfb，所以加密方式选择 aes-256-cfb 也就是选择7；全部执行完成之后就会出现如下信息：
+4、执行上述命令会有相关输入提示操作；根据需要选择。不明白的话就直接选1或者直接默认回车；之后会提示你输入密码和端口，对应设置即可，或者直接使用默认的；由于 iPhone 端的 wingy 目前只支持到 cfb，所以加密方式选择 aes-256-cfb 也就是选择 7；全部执行完成之后就会出现如下信息：
 
 ```text
 StartingShadowsocks success
@@ -49,7 +49,7 @@ Mac：https://github.com/yangfeicheung/Shadowsocks-X/releases
 Android：https://github.com/shadowsocks/shadowsocks-android/releases
 iPhone：App Store 上下载 ShadowLink，这个要用国外 appid 才可以下载哦。国内的搜不到的，因为 shadowrocket 收费的
 
-2、配置Shadowsocks
+2、配置 Shadowsocks
 
 windows
 
@@ -61,7 +61,7 @@ windows
 
 ![基于国外服务器搭建自己的VPN-天下数据](https://upload-images.jianshu.io/upload_images/1662509-c28d55cf80e4a726.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-android手机
+android 手机
 
 安装好上面对应的客户端如下图左边的填写对应的服务ip、端口、密码、加密方式然后保存；然后点击中间图下面的小飞机，看到手机上面有个钥匙的就是成功了，然后你就可以用浏览器访问Google嘞
 
@@ -71,7 +71,7 @@ android手机
 
 ![基于国外服务器搭建自己的VPN-天下数据](https://upload-images.jianshu.io/upload_images/1662509-5ab1a491c9249375.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-iPhone手机
+iPhone 手机
 
 安装好上面对应的客户端如左边图点击添加线路，然后是中间图填写对应的服务 ip、端口、密码、加密方式然后保存，之后点击左图的开关按钮；看到手机上出现 vpn 的图标就成功了，可以随心所欲看视频了。
 

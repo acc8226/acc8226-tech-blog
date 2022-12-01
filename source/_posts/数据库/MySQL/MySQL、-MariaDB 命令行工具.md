@@ -1,4 +1,4 @@
-> MyCLI is a command line interface for MySQL, MariaDB, and Percona with auto-completion and syntax highlighting.
+MyCLI is a command line interface for MySQL, MariaDB, and Percona with auto-completion and syntax highlighting.
 
 Mycli 是 MySQL、 MariaDB 和 Percona 的命令行界面，具有自动补全和语法突显。
 

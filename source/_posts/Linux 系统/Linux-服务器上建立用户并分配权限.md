@@ -21,7 +21,8 @@ deluser –remove-home newname
 
 创建组
 addgroup是 add 和 group 的缩写，add是英语“添加”的意思，group是英语“群组”的意思。所以addgroup命令用于添加一个新的群组。
-```
+
+```sh
 sudo addgroup siatstudent
 ```
 
@@ -30,7 +31,7 @@ delgroup 是 delete 和group的缩写，delete是英语“删除”的意思，g
 
 查看组
 
-### chmod命令：修改文件的访问权限
+### chmod 命令：修改文件的访问权限
 
 Linux/Unix 的档案调用权限分为三级 : 档案拥有者、群组、其他。利用 chmod 可以藉以控制档案如何被他人所调用。
 

@@ -1,5 +1,5 @@
 ---
-title: 单平台-Win-putty/kitty/pscp 使用
+title: 单平台-Win-终端软件的使用
 date: 2020-06-04 19:04:06
 updated: 2022-11-16 13:28:02
 categories:
@@ -9,7 +9,7 @@ categories:
 
 ## 前言
 
-受制于 Xshell 的收费，因此总在寻思构建一套免费的 ssh 方案。
+受制于 Xshell 的收费，因此在寻思构建一套免费的 ssh 方案。
 
 ## putty 终端
 
@@ -31,9 +31,9 @@ categories:
 "C:\Program Files\PuTTY\putty.exe" -load YOUR_SESSNAME -P YOUR_PORT -pw YOUR_PASSWORD -ssh YOUR_USERNAME@YOUR_HOST_NAME
 ```
 
--m 选项的释义：-m file   read remote command(s) from file
+再者看到了 -m 选项的释义：-m file 表示为 read remote command(s) from file
 
-于是乎就有了自动登录后执行默认的命令：
+于是就有了自动登录后执行默认的命令：
 
 ```sh
 putty [-pw password] [-m file] user@ip_addr
@@ -108,7 +108,7 @@ Options:
             log protocol details to a file
 ```
 
-## 高级方案：使用 KiTTY 并集成 WinSCP
+## 高级方案：使用 KiTTY 替代 putty
 
 1. KiTTY 全量包 <https://github.com/cyd01/KiTTY/releases>
 
@@ -118,12 +118,15 @@ KiTTY 是基于 Putty 的改进版，加入了一些实用特性，可以完美�
 * 自动登录设置: Connetcion -> Data -> Auto-login username : root
 Connetcion -> Data -> Auto-login password : password，还可以在 Command 中输入自定义要执行的命令。
 
-集成 PSCP
+### 集成 PSCP
+
 kitty.ini 填入
 
 ```ini
 WinSCPPath=D:\xxxxx\kscp.exe
 ```
+
+### 集成 WinSCP
 
 2\. WinSCP 下载绿色版 <https://winscp.net/eng/downloads.php>
 
@@ -133,6 +136,10 @@ kitty.ini 填入
 ```ini
 WinSCPPath=D:\xxxx\WinSCP.exe
 ```
+
+## 暂不推荐软件
+
+堡塔 SSH 终端 | 稍微有点卡
 
 ## 相关网址
 
