@@ -70,7 +70,7 @@ SELECT * FROM Websites
 WHERE name REGEXP '^[^A-H]';
 ```
 
-> 匹配不区分大小写 MySQL 中的正则表达式匹配（自版本3.23.4后）不区分大小写（即，大写和小写都匹配）。为区分大小写，可使用BINARY关键字，如WHERE prod_name REGEXP BINARY 'JetPack .000'。
+> 匹配不区分大小写 MySQL 中的正则表达式匹配（自版本 3.23.4 后）不区分大小写（即，大写和小写都匹配）。为区分大小写，可使用 BINARY 关键字，如 WHERE prod_name REGEXP BINARY 'JetPack .000'。
 
 **进行 OR 匹配**
 
@@ -80,7 +80,7 @@ union all select '2000' regexp '1000|2000' -- 1
 union all select '100' regexp '1000|2000'; -- 0
 ```
 
-> 两个以上的 OR 条件 可以给出两个以上的 OR 条件。例如，'1000 | 2000 | 3000’将匹配1000或2000或3000。
+> 两个以上的 OR 条件 可以给出两个以上的 OR 条件。例如，'1000 | 2000 | 3000’将匹配 1000 或 2000 或 3000。
 
 **匹配几个字符之一**
 
@@ -110,10 +110,10 @@ select 'hello' regexp '^h';
 
 ### MySQL 是创建计算字段
 
-在MySQL的SELECT语句中，可使用Concat()函数来拼接两个列；
+在 MySQL 的 SELECT 语句中，可使用 Concat() 函数来拼接两个列；
 计算字段的另一常见用途是对检索出的数据进行算术计算。
 
-> 如何测试计算 SELECT提供了测试和试验函数与计算的一个很好的办法。虽然SELECT通常用来从表中检索数据，但可以省略FROM子句以便简单地访问和处理表达式。例如，SELECT 3*2；将返回 6, SELECT Trim('abc')；将返回 abc，而SELECT Now() 利用 Now()函数返回当前日期和时间。通过这些例子，可以明白如何根据需要使用 SELECT 进行试验。
+> 如何测试计算 SELECT提供了测试和试验函数与计算的一个很好的办法。虽然 SELECT 通常用来从表中检索数据，但可以省略 FROM 子句以便简单地访问和处理表达式。例如，SELECT 3*2；将返回 6, SELECT Trim('abc')；将返回 abc，而SELECT Now() 利用 Now() 函数返回当前日期和时间。通过这些例子，可以明白如何根据需要使用 SELECT 进行试验。
 
 ### LIMIT and OFFSET
 
@@ -175,7 +175,7 @@ VALUES ('MySQL Manual')
 ```
 
 **2. on duplicate key update**
-当 primary 或者 unique 重复时，则执行 update 语句，如 update 后为无用语句，如 id=id，则同1功能相同，但错误不会被忽略掉。例如，为了实现 name 重复的数据插入不报错，可使用一下语句：
+当 primary 或者 unique 重复时，则执行 update 语句，如 update 后为无用语句，如 id=id，则同 1 功能相同，但错误不会被忽略掉。例如，为了实现 name 重复的数据插入不报错，可使用一下语句：
 
 ```sql
 INSERT INTO books (name)
@@ -184,6 +184,7 @@ ON duplicate KEY UPDATE id = id
 ```
 
 **UPDATE 语句**
+
 > IGNORE 关键字 如果用 UPDATE 语句更新多行，并且在更新这些行中的一行或多行时出现一个错误，则整个 UPDATE 操作被取消（错误发生前更新的所有行被恢复到它们原来的值）。即使是发生错误，也继续进行更新，可使用 IGNORE 关键字，如下所示：`UPDATE IGNORE customers…`
 
 为了删除某个列的值，可设置它为 NULL（假如表定义允许NULL值）。
@@ -192,10 +193,11 @@ ON duplicate KEY UPDATE id = id
 > 更快的删除 如果想从表中删除所有行，不要使用 DELETE。可使用 TRUNCATE TABLE 语句，它完成相同的工作，但速度更快（TRUNCATE 实际是删除原来的表并重新创建一个表，而不是逐行删除表中的数据）。
 
 **delete，drop，truncate 比较**
-delete，drop，truncate 都有删除表的作用，区别在于：
+
+它们都有删除表的作用，区别在于：
 1、delete 和 truncate 仅仅删除表数据，drop 连表数据和表结构一起删除，打个比方，delete 是单杀，truncate 是团灭，drop 是把电脑摔了。
- 2、delete 是 DML 语句，操作完以后如果没有不想提交事务还可以回滚，truncate 和 drop 是 DDL 语句，操作完马上生效，不能回滚，打个比方，delete 是发微信说分手，后悔还可以撤回，truncate 和 drop 是直接扇耳光说滚，不能反悔。
- 3、执行的速度上，drop > truncate > delete，打个比方，drop 是神舟火箭，truncate 是和谐号动车，delete 是自行车。
+2、delete 是 DML 语句，操作完以后如果没有不想提交事务还可以回滚，truncate 和 drop 是 DDL 语句，操作完马上生效，不能回滚，打个比方，delete 是发微信说分手，后悔还可以撤回，truncate 和 drop 是直接扇耳光说滚，不能反悔。
+3、执行的速度上，drop > truncate > delete，打个比方，drop 是神舟火箭，truncate 是和谐号动车，delete 是自行车。
 
 ### [MySQL replace INTO 和 INSERT IGNORE INTO](https://www.cnblogs.com/martin1009/archive/2012/10/08/2714858.html) 的区别
 
@@ -273,7 +275,6 @@ CREATE TABLE IF NOT EXISTS `runoob`(
 使用 AUTO_INCREMENT 设置为自动增量，每个表只允许一个 AUTO_INCREMENT 列，而且它必须被索引（如，通过使它成为主键）。
 
 > 覆盖AUTO_INCREMENT 如果一个列被指定为 AUTO_INCREMENT，则它需要使用特殊的值吗？你可以简单地在 INSERT 语句中指定一个值，只要它是唯一的（至今尚未使用过）即可，该值将被用来替代自动生成的值。后续的增量将开始使用该手工插入的值。
-
 > 确定 AUTO_INCREMENT 值 让 MySQL 生成（通过自动增量）主键的一个缺点是你不知道这些值都是谁。
 > 考虑这个场景：你正在增加一个新订单。这要求在 orders 表中创建一行，然后在 orderitems 表中对订购的每项物品创建一行。order_num 在 orderitems 表中与订单细节一起存储。这就是为什么orders表和orderitems表为相互关联的表的原因。这显然要求你在插入 orders 行之后，插入 orderitems 行之前知道生成的order_num。
 >

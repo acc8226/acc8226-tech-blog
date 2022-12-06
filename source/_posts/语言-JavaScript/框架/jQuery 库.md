@@ -1,16 +1,16 @@
 ---
 title: 使用 jQuery 库
 categories:
-  - 语言
-  - JavaScript
+  - 框架
+  - js
 tags:
 - js
 - jQuery
 ---
 
-* jQuery 是一个 JavaScript 库。
-* jQuery 极大地简化了 JavaScript 编程。
-* jQuery 很容易学习。
+## 开始
+
+JQuery 是一个快速、小型和功能丰富的 JavaScript 库。它使 HTML 文档遍历和操作、事件处理、动画和 Ajax 之类的事情变得更加简单，并且提供了一个跨多种浏览器的易于使用的 API。通过多功能性和可扩展性的结合，jQuery 改变了数百万人编写 JavaScript 的方式。
 
 ### ready 方法
 
@@ -79,3 +79,8 @@ $(function(){});
 
   </html>
 ```
+
+## 参考
+
+jQuery
+<https://jquery.com/>

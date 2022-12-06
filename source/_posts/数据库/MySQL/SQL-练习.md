@@ -52,7 +52,7 @@ mysql查询当天的数据_→_→BéLieve的博客-CSDN博客_mysql查询当天
 
 ## 参考
 
-在MySQL中创建 Oracle 中的 dept、emp、bonus、salgrade表 - 请叫我Can - 博客园
+在 MySQL 中创建 Oracle 中的 dept、emp、bonus、salgrade 表 - 请叫我 Can - 博客园
 <https://www.cnblogs.com/CanBlog/p/10711741.html>
 
 SQL 经典实例-图书-图灵社区

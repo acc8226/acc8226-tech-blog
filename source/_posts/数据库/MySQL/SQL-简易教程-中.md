@@ -97,11 +97,14 @@ WHERE name BETWEEN 'A' AND 'H';
 通过使用 SQL，可以为表名称或列名称指定别名。基本上，创建别名是为了让列名称的可读性更强。
 
 1. 列的 SQL 别名语法
+
 ```sql
 SELECT column_name AS alias_name
 FROM table_name;
 ```
+
 2. 表的 SQL 别名语法
+
 ```sql
 SELECT column_name(s)
 FROM table_name AS alias_name;
@@ -128,14 +131,17 @@ UNION 操作符用于**合并两个或多个 SELECT 语句的结果集**。
 ❑同时，每个 SELECT 语句中的列的顺序必须相同。
 
 SQL UNION 语法
+
 ```sql
 SELECT column_name(s) FROM table1
 UNION
 SELECT column_name(s) FROM table2;
 ```
+
 注释：默认地，UNION 操作符选取不同的值。**如果允许重复的值，请使用 UNION ALL。**
 
 SQL UNION ALL 语法
+
 ```sql
 SELECT column_name(s) FROM table1
 UNION ALL
@@ -152,12 +158,15 @@ SELECT 语句的输出用 ORDER BY 子句排序。在用 UNION 组合查询时�
 ### SELECT INTO 语句
 
 我们可以复制所有的列插入到新表中：
+
 ```sql
 SELECT *
 INTO newtable [IN externaldb]
 FROM table1;
 ```
+
 或者只复制希望的列插入到新表中：
+
 ```sql
 SELECT column_name(s)
 INTO newtable [IN externaldb]
@@ -167,6 +176,7 @@ FROM table1;
 提示：新表将会使用 SELECT 语句中定义的列名称和类型进行创建。您可以使用 AS 子句来应用新名称。
 
 SELECT INTO 语句可用于通过另一种模式创建一个新的空表。只需要添加促使查询没有数据返回的 WHERE 子句即可：
+
 ```sql
 SELECT *
 INTO newtable
@@ -179,10 +189,12 @@ WHERE 1=0;
 从一个表复制数据，然后把数据插入到一个已存在的表中。前提是要求目标表必须先存在。
 
 我们可以从一个表中复制所有的列插入到另一个已存在的表中：
+
 ```sql
 INSERT INTO table2
 SELECT * FROM table1;
 ```
+
 或者我们可以只复制希望的列插入到另一个已存在的表中：
 
 ```sql
@@ -243,6 +255,7 @@ SQL 约束用于规定表中的数据规则。如果存在违反约束的数据�
 约束可以在创建表时规定（通过 CREATE TABLE 语句），或者在表创建之后规定（通过 ALTER TABLE 语句）。
 
 在 SQL 中，我们有如下约束：
+
 * NOT NULL - 指示某列不能存储 NULL 值。
 * UNIQUE - 保证某列的每行必须有唯一的值。
 * PRIMARY KEY - NOT NULL 和 UNIQUE 的结合。确保某列（或两个列多个列的结合）有唯一标识，有助于更容易更快速地找到表中的一个特定的记录。
@@ -270,12 +283,14 @@ UNIQUE (P_Id)
 ```
 
 修改之添加约束
+
 ```sql
 ALTER TABLE websites
 ADD UNIQUE (url)
 ```
 
 修改之删除约束
+
 ```sql
 ALTER TABLE websites
 DROP INDEX url
@@ -286,6 +301,7 @@ ALTER TABLE 时的 SQL PRIMARY KEY 约束。
 当表已被创建时，如需在 "P_Id" 列创建 PRIMARY KEY 约束，请使用下面的 SQL：
 
 MySQL / SQL Server / Oracle / MS Access：
+
 ```sql
 ALTER TABLE Persons
 ADD PRIMARY KEY (P_Id)
@@ -294,6 +310,7 @@ ADD PRIMARY KEY (P_Id)
 如需命名 PRIMARY KEY 约束，并定义多个列的 PRIMARY KEY 约束，请使用下面的 SQL 语法：
 
 MySQL / SQL Server / Oracle / MS Access：
+
 ```sql
 ALTER TABLE Persons
 ADD CONSTRAINT pk_PersonID PRIMARY KEY (P_Id,LastName)
@@ -323,6 +340,7 @@ REFERENCES Persons(P_Id)
 ```
 
 撤销 FOREIGN KEY 约束
+
 ```sql
 ALTER TABLE Orders
 DROP FOREIGN KEY fk_PerOrders
@@ -358,6 +376,7 @@ DEFAULT 约束用于向列中插入默认值。如果没有规定其他的值，
 ```sql
 ALTER TABLE 时的 SQL DEFAULT 约束
 ```
+
 当表已被创建时，如需在 "City" 列创建 DEFAULT 约束，请使用下面的 SQL：
 
 MySQL：
@@ -397,6 +416,7 @@ ON table_name (column_name)
 注意：用于创建索引的语法在不同的数据库中不一样。因此，检查您的数据库中创建索引的语法。
 
 用于 MySQL 的 DROP INDEX 删除的语法：
+
 ```sql
 ALTER TABLE table_name DROP INDEX index_name
 ```
@@ -412,6 +432,7 @@ ALTER TABLE table_name DROP INDEX index_name
 ```
 
 DROP TABLE 语句用于删除表。前提是该表必须存在，否则会报错。
+
 ```sql
 DROP TABLE table_name
 ```
@@ -423,6 +444,7 @@ DROP TABLE `apps`;
 ```
 
 若存在则删除
+
 ```sql
 DROP TABLE IF EXISTS `apps`;
 ```
@@ -461,6 +483,7 @@ ADD column_name datatype
 ```
 
 如需删除表中的列，请使用下面的语法（请注意，某些数据库系统不允许这种在数据库表中删除列的方式）：
+
 ```sql
 ALTER TABLE table_name
 DROP COLUMN column_name
@@ -552,6 +575,6 @@ WHERE EXISTS
 ## 参考
 
 菜鸟教程
-https://www.runoob.com/sql/sql-tutorial.html
+<https://www.runoob.com/sql/sql-tutorial.html>
 
-SQL必知必会（第5版）-本·福达-微信读书https://weread.qq.com/web/reader/f7632a30720befadf7636bb
+SQL必知必会（第5版）-本·福达-微信读书 <https://weread.qq.com/web/reader/f7632a30720befadf7636bb>

@@ -18,21 +18,6 @@ FULL JOIN：只要其中一个表中存在匹配，则返回行
 导入语句
 
 ```sql
--- --------------------------------------------------------
--- 主机:                           10.1.212.135
--- 服务器版本:                        10.6.5-MariaDB - mariadb.org binary distribution
--- 服务器操作系统:                      Win64
--- HeidiSQL 版本:                  11.3.0.6295
--- --------------------------------------------------------
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET NAMES utf8 */;
-/*!50503 SET NAMES utf8mb4 */;
-/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
-/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
-/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
-
--- 导出  表 test.access_log 结构
 CREATE TABLE IF NOT EXISTS `access_log` (
   `aid` int(11) NOT NULL AUTO_INCREMENT,
   `site_id` int(11) NOT NULL DEFAULT 0 COMMENT '网站id',
@@ -41,7 +26,6 @@ CREATE TABLE IF NOT EXISTS `access_log` (
   PRIMARY KEY (`aid`)
 ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb3;
 
--- 正在导出表  test.access_log 的数据：~9 rows (大约)
 DELETE FROM `access_log`;
 /*!40000 ALTER TABLE `access_log` DISABLE KEYS */;
 INSERT INTO `access_log` (`aid`, `site_id`, `count`, `date`) VALUES
@@ -56,7 +40,6 @@ INSERT INTO `access_log` (`aid`, `site_id`, `count`, `date`) VALUES
 	(9, 3, 201, '2016-05-17');
 /*!40000 ALTER TABLE `access_log` ENABLE KEYS */;
 
--- 导出  表 test.websites 结构
 CREATE TABLE IF NOT EXISTS `websites` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` char(20) NOT NULL DEFAULT '' COMMENT '站点名称',
@@ -66,7 +49,6 @@ CREATE TABLE IF NOT EXISTS `websites` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb3;
 
--- 正在导出表  test.websites 的数据：~7 rows (大约)
 DELETE FROM `websites`;
 /*!40000 ALTER TABLE `websites` DISABLE KEYS */;
 INSERT INTO `websites` (`id`, `name`, `url`, `alexa`, `country`) VALUES
@@ -126,7 +108,7 @@ MariaDB [test]> SELECT * FROM access_log;
 
 有时我们会听到返回称为叉联结（cross join）的笛卡儿积的联结类型。
 
-## SQL INNER JOIN 内联结
+## SQL INNER JOIN 内联结（交集）
 
 INNER JOIN 关键字在表中存在匹配时返回行。
 
@@ -136,7 +118,7 @@ INNER JOIN 关键字在表中存在匹配时返回行。
 SELECT column_name(s)
 FROM table1
 INNER JOIN table2
-ON table1.column_name=table2.column_name;
+ON table1.column_name = table2.column_name;
 ```
 
 可省略 INNER 关键字：
@@ -185,7 +167,7 @@ SQL LEFT JOIN 语法
 SELECT column_name(s)
 FROM table1
 LEFT JOIN table2
-ON table1.column_name=table2.column_name;
+ON table1.column_name = table2.column_name;
 ```
 
 或：
@@ -279,14 +261,31 @@ FULL OUTER JOIN 关键字只要左表（table1）和右表（table2）其中一�
 
 FULL OUTER JOIN 关键字结合了 LEFT JOIN 和 RIGHT JOIN 的结果。
 
-注意：MariaDB、MySQL和SQLite 不支持 FULL OUTER JOIN 语法。你可以在 SQL Server 测试以下实例。
+注意：MariaDB、MySQL 和 SQLite 不支持 FULL OUTER JOIN 语法。你可以在 SQL Server 测试以下实例。
 
 SQL FULL OUTER JOIN 语法
+
 ```sql
 SELECT column_name(s)
 FROM table1
 FULL OUTER JOIN table2
 ON table1.column_name=table2.column_name;
+```
+
+mysql 的写法
+
+```sql
+mysql> select * from t1 left join t2 on t1.id = t2.id
+    -> union
+    -> select * from t1 right join t2 on t1.id = t2.id;
+```
+
+并集去交集
+
+```sql
+mysql> select * from t1 left join t2 on t1.id = t2.id where t2.id is null
+    -> union
+    -> select * from t1 right join t2 on t1.id = t2.id where t1.id is null;
 ```
 
 ## 多个连接的写法总结

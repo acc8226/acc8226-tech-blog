@@ -30,10 +30,10 @@ Netscape Navigator 3.0在**1996年8月19**发布，是支持 JavaScript 的浏�
 
 ### 新增的方法
 
-*   [Array.prototype.join()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/join "join() 方法将一个数组（或一个类数组对象）的所有元素连接成一个字符串并返回这个字符串。")
-*   [Array.prototype.reverse()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse "reverse() 方法将数组中元素的位置颠倒。")
-*   [Array.prototype.sort()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/sort "sort() 方法用原地算法对数组的元素进行排序，并返回数组。排序算法现在是稳定的。默认排序顺序是根据字符串Unicode码点。")
-*   Array.prototype.split()
+* [Array.prototype.join()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/join "join() 方法将一个数组（或一个类数组对象）的所有元素连接成一个字符串并返回这个字符串。")
+* [Array.prototype.reverse()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse "reverse() 方法将数组中元素的位置颠倒。")
+* [Array.prototype.sort()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/sort "sort() 方法用原地算法对数组的元素进行排序，并返回数组。排序算法现在是稳定的。默认排序顺序是根据字符串Unicode码点。")
+* Array.prototype.split()
 
 ### 新增的操作符
 
@@ -42,10 +42,10 @@ Netscape Navigator 3.0在**1996年8月19**发布，是支持 JavaScript 的浏�
 
 ### 其他新特性
 
-*   [<noscript>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript)
-*   [LiveConnect](https://developer.mozilla.org/en-US/docs/Archive/Web/LiveConnect). Java and JavaScript之间的通信.
+* [<noscript>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript)
+* [LiveConnect](https://developer.mozilla.org/en-US/docs/Archive/Web/LiveConnect). Java and JavaScript之间的通信.
 
-### 1.1修改的功能
+### 1.1 修改的功能
 
 *   “对象删除”：你可通过以设置对象的引用为null来删除一个对象。
 *   增加了对象的构造函数和原型属性

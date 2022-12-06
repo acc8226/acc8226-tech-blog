@@ -5,8 +5,10 @@ updated: 2022-08-15 13:33:00
 categories:
   - 语言-Java
   - 框架
+  - 接口文档
 tags:
-- spring boot
+- Spring boot
+- 接口文档
 ---
 
 Knife4j · 集 Swagger2 及 OpenAPI3 为一体的增强解决方案. | Knife4j

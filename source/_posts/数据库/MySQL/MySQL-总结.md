@@ -155,21 +155,21 @@ FOR EACH ROW SELECT 'Product added';
 
 ## 遇到过的问题
 
-### MySQL出现警告：Integer display width is deprecated and will be removed in a future release
+### MySQL 出现警告：Integer display width is deprecated and will be removed in a future release
 
 Integer display width is deprecated and will be removed in a future release：整数显示宽度已弃用，将在以后的版本中删除
 
-对于整数数据类型如INT [M]，M指示显示宽度，对于浮点和定点数据类型， M是可以存储的总位数。从MySQL 8.0.17开始，对于整数数据类型，不建议使用display width属性，即不用M显示宽度，并且在将来的MySQL版本中将删除对它的支持。
+对于整数数据类型如 INT [M]，M指示显示宽度，对于浮点和定点数据类型， M是可以存储的总位数。从MySQL 8.0.17 开始，对于整数数据类型，不建议使用display width 属性，即不用M显示宽度，并且在将来的 MySQL 版本中将删除对它的支持。
 
-例如， INT(4)指定 INT显示宽度为四位数的。应用程序可以使用此可选的显示宽度来显示整数值，该整数值的宽度小于为列指定的宽度，方法是用空格左键填充。如果插入的数的位数大于显示的宽度M的值，数值依然可以插入，并显示原来的数。如 year INT[4], year的值为12345，那么还是显示12345。
+例如， INT(4)指定 INT 显示宽度为四位数的。应用程序可以使用此可选的显示宽度来显示整数值，该整数值的宽度小于为列指定的宽度，方法是用空格左键填充。如果插入的数的位数大于显示的宽度M的值，数值依然可以插入，并显示原来的数。如 year INT[4], year 的值为 12345，那么还是显示 12345。
 
-### MySQL表不能修改、删除等操作，卡死、锁死情况的处理办法
+### MySQL 表不能修改、删除等操作，卡死、锁死情况的处理办法
 
 ```sql
 show full processlist;
 ```
 
-列出当前的操作 process，看到很多处于 waiting 的process ，说明已经有卡住的 proces。假如说这里我们看到是 sending data 的这条语句卡住了 mysql。
+列出当前的操作 process，看到很多处于 waiting 的 process ，说明已经有卡住的 proces。假如说这里我们看到是 sending data 的这条语句卡住了 mysql。
 
 找出 id 后，我们再执行：
 
@@ -182,9 +182,17 @@ kill processid;
 MySQL抛出异常：lock wait timeout exceeded解决方案_程序猿微刊的博客-CSDN博客_mysql 抛出异常语句
 <https://blog.csdn.net/CharlesYooSky/article/details/89084310>
 
+## 总结
+
+### MYSQL on 和 where 的区别
+
+在多表查询时，ON和where都表示筛选条件，on先执行，where后执行。
+
+外连接时，on条件是在生成临时表时使用的条件，它不管on中的条件是否为真，都会返回左边表中的记录。而where条件是在临时表生成好后，再对临时表进行过滤的条件。
+
 ## 参考
 
-Mysql is not allowed to connect to this mysql server报错解决办法_wtopps的专栏-CSDN博客
+Mysql is not allowed to connect to this mysql server 报错解决办法_wtopps 的专栏-CSDN 博客
 <https://blog.csdn.net/wtopps/article/details/81626656>
 
 Host 'ip地址' is not allowed to connect to this MySQL server报错解决方法_CXRS_LIU的博客-CSDN博客
