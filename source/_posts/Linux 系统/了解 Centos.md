@@ -4,6 +4,12 @@
 cat /etc/centos-release
 ```
 
+或者
+
+```sh
+cat /etc/redhat-release
+```
+
 ## yum 命令
 
 安装但是会检测依赖
@@ -44,19 +50,19 @@ yum remove tomcat
 
 查看 rpm 安装包列表：
 
-```
+```sh
 rpm -qa | grep mysql
 ```
 
 正常卸载：
 
-```
+```sh
 rpm -e mysql-community-client-5.6.44-2.el7.x86_64
 ```
 
 强制卸载：
 
-```
+```sh
 rpm -e mysql-community-client-5.6.44-2.el7.x86_64 --nodeps
 ```
 

@@ -14,7 +14,7 @@
 
 它涉及以下步骤：
 ❑ 用新的列布局创建一个新表；
-❑ 使用INSERT SELECT语句（关于这条语句的详细介绍，请参阅第19章）从旧表复制数据到新表。如果有必要，可使用转换函数和计算字段；
+❑ 使用 INSERT SELECT 语句（关于这条语句的详细介绍，请参阅第19章）从旧表复制数据到新表。如果有必要，可使用转换函数和计算字段；
 ❑ 检验包含所需数据的新表；
 ❑ 重命名旧表（如果确定，可以删除它）；
 ❑ 用旧表原来的名字重命名新表；
@@ -153,42 +153,23 @@ FOR EACH ROW SELECT 'Product added';
 
 <https://www.eversql.com/sql-order-of-operations-sql-query-order-of-execution/>
 
-## 遇到过的问题
-
-### MySQL 出现警告：Integer display width is deprecated and will be removed in a future release
-
-Integer display width is deprecated and will be removed in a future release：整数显示宽度已弃用，将在以后的版本中删除
-
-对于整数数据类型如 INT [M]，M指示显示宽度，对于浮点和定点数据类型， M是可以存储的总位数。从MySQL 8.0.17 开始，对于整数数据类型，不建议使用display width 属性，即不用M显示宽度，并且在将来的 MySQL 版本中将删除对它的支持。
-
-例如， INT(4)指定 INT 显示宽度为四位数的。应用程序可以使用此可选的显示宽度来显示整数值，该整数值的宽度小于为列指定的宽度，方法是用空格左键填充。如果插入的数的位数大于显示的宽度M的值，数值依然可以插入，并显示原来的数。如 year INT[4], year 的值为 12345，那么还是显示 12345。
-
-### MySQL 表不能修改、删除等操作，卡死、锁死情况的处理办法
-
-```sql
-show full processlist;
-```
-
-列出当前的操作 process，看到很多处于 waiting 的 process ，说明已经有卡住的 proces。假如说这里我们看到是 sending data 的这条语句卡住了 mysql。
-
-找出 id 后，我们再执行：
-
-```sql
-kill processid;
-```
-
-### lock wait timeout exceeded
-
-MySQL抛出异常：lock wait timeout exceeded解决方案_程序猿微刊的博客-CSDN博客_mysql 抛出异常语句
-<https://blog.csdn.net/CharlesYooSky/article/details/89084310>
-
 ## 总结
 
 ### MYSQL on 和 where 的区别
 
-在多表查询时，ON和where都表示筛选条件，on先执行，where后执行。
+在多表查询时，ON 和 where都表示筛选条件，on 先执行，where 后执行。
 
-外连接时，on条件是在生成临时表时使用的条件，它不管on中的条件是否为真，都会返回左边表中的记录。而where条件是在临时表生成好后，再对临时表进行过滤的条件。
+外连接时，on 条件是在生成临时表时使用的条件，它不管 on 中的条件是否为真，都会返回左边表中的记录。而 where 条件是在临时表生成好后，再对临时表进行过滤的条件。
+
+### mysql 将两张表的count 数据相加
+
+```sql
+select sum(sum1) from (
+select count(*) as sum1 from retrun_factory  emp_id='S20190001'
+union all
+select count(*) as sum1 from  retrun_factory_log emp_id='S20190001'
+) as total
+```
 
 ## 参考
 

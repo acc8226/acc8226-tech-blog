@@ -1,5 +1,5 @@
 ---
-title: 跨平台-Postman 的使用(待完善
+title: 跨平台 Postman 的使用
 date: 2020-09-12 10:53:39
 updated: 2022-11-16 13:28:02
 categories:
@@ -22,7 +22,7 @@ newman -version
 newman run D:\postman_collection.json
 运行 json
 
-### postmanlabs/newman
+## postmanlabs/newman
 
 postmanlabs/newman: Newman is a command-line collection runner for Postman
 <https://github.com/postmanlabs/newman>
@@ -31,12 +31,16 @@ postmanlabs/newman: Newman is a command-line collection runner for Postman
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-eb472cbf9e0aa0cb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-使得 file 参数与 Controller 里面的 @RequestParam 里面的 file  对应
+需使得 file 参数与 Controller 里面的 @RequestParam 里面的 file  对应
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-d103f87d9e37c7e9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## 问题总结
 
-在 postman 的 Collection 请求方式为 Bearer Token 报错 异常信息: `Unable to read JSON value: �z��&�r#�$�3S"`
+**在 postman 的 Collection 请求方式为 Bearer Token 报错 异常信息: `Unable to read JSON value: "`**
 
-在录入框中去掉 Bearer 就好了。
+将录入框中去掉 Bearer 就好了。
+
+**解决 postman 报错：Error: Maximum response size reached**
+
+修改Postman设置：通用-max response size in MB

@@ -146,7 +146,9 @@ public Person(@JsonProperty("id") String id) {
 
 ### @JsonFormat
 
-@JsonFormat 用来表示 json 序列化的一种格式或者类型，主要有下面几个常用的属性
+@JsonFormat 用来表示 json 序列化的一种格式或者类型，主要有下面几个常用的属性。
+
+可以添加到属性的 getter 方法和属性上。
 
 ```java
 @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy年MM月dd日 HH:mm:ss", timezone = "GMT+8")
@@ -174,6 +176,9 @@ shap: 表示序列化后的一种类型
     "date3":"2018-10-11T13:47:48.956+0000"
 }
 ```
+
+注：如果遇到 JsonFormat 相差8小时问题
+因为我们是东八区（北京时间）。所有需要额外设置 timezone 为 GMT+8。
 
 ### @JsonInclude
 

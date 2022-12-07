@@ -232,6 +232,7 @@ public Docket createRestApi() {
             .paths(PathSelectors.any())
             .build();
 }
+
 @Bean
 public Docket createRestApi() {
     return new Docket(DocumentationType.SWAGGER_2)
@@ -268,12 +269,12 @@ swagger:
 
 ## 记录
 
-### Swagger访问地址
+### Swagger 访问地址
 
-3.0.x访问地址：
+3.0.x 访问地址：
 <http://localhost:8081/{context-path}/swagger-ui/index.html>
 
-2.9.x访问地址：
+2.9.x 访问地址：
 <http://localhost:8081/{context-path}/swagger-ui.html>
 
 ### pom 项目地址
@@ -283,3 +284,9 @@ Maven Repository: io.springfox » springfox-swagger2
 
 Maven Repository: io.springfox » springfox-swagger-ui
 <https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui>
+
+## 问题总结
+
+Swagger 设置密码登录
+
+建议转而使用 Knife4j。

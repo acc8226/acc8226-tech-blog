@@ -290,3 +290,7 @@ spring boot 中可以用 @Validated 来校验数据，如果数据异常则会�
 ```
 
 原因是登录的时候携带了已登录的 token。
+
+### excel导出 报错（Invalid row number (1048576) outside allowable range (0..1048575)）
+
+默认的 ruoyi 对 excel 的 yml 配置有行数还是 MB 体积限制，建议还是使用更加强大的阿里 easyexcel。
