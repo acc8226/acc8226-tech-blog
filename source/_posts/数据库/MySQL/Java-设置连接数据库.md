@@ -68,3 +68,44 @@
 ```
 
 其中 order_no 为唯一索引
+
+批量插入也能用
+
+```xml
+<!-- 批量插入-->
+<insert id="insertResidentBatch" parameterType="java.util.List">
+    INSERT IGNORE INTO population
+    (card_number, name, tel, district
+    , town, community, addr, detail_addr, update_time
+    ) VALUES
+    <foreach collection="list" item="it" separator=",">
+        (
+        #{it.cardNumber}, #{it.name}, #{it.tel}, #{it.district}
+        , #{it.town}, #{it.community}, #{it.addr}, #{it.detailAddr}, #{it.updateTime}
+        )
+    </foreach>
+    ON DUPLICATE KEY UPDATE
+
+    name = values(name),
+    tel = values(tel),
+    district = values(district),
+
+    town = values(town),
+    community = values(community),
+    addr = values(addr),
+    detail_addr = values(detail_addr),
+    update_time = values(update_time)
+</insert>
+```
+
+对应 Java 方法
+
+```java
+/**
+    * 批量插入常住人员
+    *
+    * @param list 设备
+    * @return 结果
+    */
+long insertResidentBatch(List<PopulationDO> list);
+```

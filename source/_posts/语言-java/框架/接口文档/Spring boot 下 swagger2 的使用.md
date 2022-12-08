@@ -98,10 +98,10 @@ public class Swagger2 {
  前端控制器
  * </p>
  *
- * @author someone
+ * @author lik
  * @since 2019-07-15
  */
-@Api(tags = "收付费方式变更")
+@Api(tags = "收费方式变更")
 @RestController
 @RequestMapping("/test")
 public class PaychangeTotalController {
@@ -132,12 +132,12 @@ public class PaychangeTotalController {
 ![](https://upload-images.jianshu.io/upload_images/1662509-5741596fcdc5f005.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 **@Api() 用于类**
-该注解将一个 Controller（Class）标注为一个 swagger 资源（API）。在默认情况下，Swagger-Core 只会扫描解析具有 @Api 注解的类，而会自动忽略其他类别资源（JAX-RS endpoints，Servlets等等）的注解。该注解包含以下几个重要属性：
+该注解将一个 Controller（Class）标注为一个 swagger 资源（API）。在默认情况下，Swagger-Core 只会扫描解析具有 @Api 注解的类，而会自动忽略其他类别资源（JAX-RS endpoints，Servlets 等等）的注解。该注解包含以下几个重要属性：
 
 * tags：API分组标签。具有相同标签的API将会被归并在一组内展示。
-* value：如果tags没有定义，value将作为Api的tags使用
-* description：对该API的详细描述信息
-* position：如果一个controller中有多个请求方法，可以通过该属性来指定API在swagger-ui中的显示顺序
+* value：如果 tags 没有定义，value 将作为 Api 的 tags 使用
+* description：对该 API 的详细描述信息
+* position：如果一个 controller 中有多个请求方法，可以通过该属性来指定API在swagger-ui中的显示顺序
 
 **@ApiOperation() 用于方法**
 在指定的（路由）路径上，对一个操作或 HTTP 方法进行描述。具有相同路径的不同操作会被归组为同一个操作对象。不同的HTTP请求方法及路径组合构成一个唯一操作。此注解的属性有：
@@ -156,7 +156,7 @@ value：对该参数含义的简短说明
 **@ApiResponses（）用于包装类**
 注解 @ApiResponse 的包装类，数组结构。
 
-注意：即使需要使用一个@ApiResponse注解，也需要将 @ApiResponse 注解包含在注解 @ApiResponses 内。
+注意：即使需要使用一个 @ApiResponse 注解，也需要将 @ApiResponse 注解包含在注解 @ApiResponses 内。
 
 **@ApiResponse（）用于方法的返回结果**
 描述一个操作可能的返回结果。
@@ -164,7 +164,7 @@ value：对该参数含义的简短说明
 当 REST API 请求发生时，这个注解可用于描述所有可能的成功与错误码。
 可以用，也可以不用这个注解去描述操作的返回类型，但成功操作的返回类型必须在 @ApiOperation 中定义。
 如果 API 具有不同的返回类型，那么需要分别定义返回值，并将返回类型进行关联。
-但 Swagger不支持同一返回码，多种返回类型的注解。注意：这个注解必须被包含在 @ApiResponses 注解中。
+但 Swagger 不支持同一返回码，多种返回类型的注解。注意：这个注解必须被包含在 @ApiResponses 注解中。
 
 字段说明：
 code：HTTP 请求返回码。有效值必须符合标准的 HTTP Status Code Definitions。举例：400
@@ -191,6 +191,12 @@ allowableValues : 可选值, 像这样`@ApiModelProperty(allowableValues = "rang
 
 @ApiImplicitParams：用在请求的方法上，包含一组参数说明
 @ApiImplicitParam：用在 @ApiImplicitParams 注解中，指定一个请求参数的配置信息
+
+举例：可以用于说明头信息
+
+```java
+@ApiImplicitParam(name = "Authorization", value = "Authorization",required = true, dataType = "String",paramType="header")
+```
 
 ### [swagger2 如何匹配多个 controller](https://www.cnblogs.com/acm-bingzi/p/swagger2-controller.html)
 

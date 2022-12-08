@@ -84,94 +84,93 @@ System.out.println(result);
 ### 数组引用
 
 ```java
-        // 传统Lambda实现
-        IntFunction<int[]> function = (i) -> new int[i];
-        int[] apply = function.apply(5);
-        System.out.println(apply.length); // 5
+// 传统Lambda实现
+IntFunction<int[]> function = (i) -> new int[i];
+int[] apply = function.apply(5);
+System.out.println(apply.length); // 5
 
-        // 数组类型引用实现
-        function = int[]::new;
-        apply = function.apply(10);
-        System.out.println(apply.length); // 10
+// 数组类型引用实现
+function = int[]::new;
+apply = function.apply(10);
+System.out.println(apply.length); // 10
 ```
 
 ## Optional的用法
 
 ```java
-c static void main(String[] args) {
-    // Optional类已经成为Java 8类库的一部分，在Guava中早就有了，可能Oracle是直接拿来使用了
-    // Optional用来解决空指针异常，使代码更加严谨，防止因为空指针NullPointerException对代码造成影响
-    String msg = "hello";
-    Optional<String> optional = Optional.of(msg);
-    // 判断是否有值，不为空
-    boolean present = optional.isPresent();
-    // 如果有值，则返回值，如果等于空则抛异常
-    String value = optional.get();
-    // 如果为空，返回else指定的值
-    String hi = optional.orElse("hi");
-    // 如果值不为空，就执行Lambda表达式
-    optional.ifPresent(opt -> System.out.println(opt));
+// Optional类已经成为Java 8类库的一部分，在Guava中早就有了，可能Oracle是直接拿来使用了
+// Optional用来解决空指针异常，使代码更加严谨，防止因为空指针NullPointerException对代码造成影响
+String msg = "hello";
+Optional<String> optional = Optional.of(msg);
+// 判断是否有值，不为空
+boolean present = optional.isPresent();
+// 如果有值，则返回值，如果等于空则抛异常
+String value = optional.get();
+// 如果为空，返回else指定的值
+String hi = optional.orElse("hi");
+// 如果值不为空，就执行Lambda表达式
+optional.ifPresent(opt -> System.out.println(opt));
 ```
 
 ## Stream 的操作
 
-有些Stream可以转成集合，比如前面提到toList,生成了 java.util.List 类的实例。当然了，还有还有toSet和toCollection，分别生成 Set和Collection 类的实例。
+有些 Stream 可以转成集合，比如前面提到 toList,生成了 java.util.List 类的实例。当然了，还有还有 toSet 和toCollection，分别生成 Set 和 Collection 类的实例。
 
 ```java
 final List<String> list = Arrays.asList("jack", "mary", "lucy");
 
-        // 过滤 + 输出
-        System.out.println("过滤 + 输出: ");
-        Stream<String> stream = list.stream();
-        stream.filter(item -> !item.equals("zhangsan"))
-            .filter(item -> !item.equals("wangwu"))
-            .forEach(item -> System.out.println(item));
+// 过滤 + 输出
+System.out.println("过滤 + 输出: ");
+Stream<String> stream = list.stream();
+stream.filter(item -> !item.equals("zhangsan"))
+    .filter(item -> !item.equals("wangwu"))
+    .forEach(item -> System.out.println(item));
 
-        // 限制为2
-        System.out.println("limit(2): ");
-        list.stream().limit(2).forEach(System.out::println);
+// 限制为2
+System.out.println("limit(2): ");
+list.stream().limit(2).forEach(System.out::println);
 
-        // 排序
-        System.out.println("排序: ");
-        list.stream().sorted((o1, o2) -> o1.compareTo(o2)).forEach(System.out::println);
+// 排序
+System.out.println("排序: ");
+list.stream().sorted((o1, o2) -> o1.compareTo(o2)).forEach(System.out::println);
 
-        // 取出最大值
-        System.out.println("max: ");
-        String result = list.stream().max((o1, o2) -> o1.compareTo(o2)).orElse("error");
-        System.out.println(result);
+// 取出最大值
+System.out.println("max: ");
+String result = list.stream().max((o1, o2) -> o1.compareTo(o2)).orElse("error");
+System.out.println(result);
 
 
-        // toList
-        System.out.println("toList: ");
-        List<Integer> collectList = Stream.of(1, 2, 3, 4)
-                .collect(Collectors.toList());
-        System.out.println("collectList: " + collectList);
-        // 打印结果
-        // collectList: [1, 2, 3, 4]
+// toList
+System.out.println("toList: ");
+List<Integer> collectList = Stream.of(1, 2, 3, 4)
+        .collect(Collectors.toList());
+System.out.println("collectList: " + collectList);
+// 打印结果
+// collectList: [1, 2, 3, 4]
 
-        // toSet
-        System.out.println("toSet: ");
-        Set<Integer> collectSet = Stream.of(1, 2, 3, 4)
-                .collect(Collectors.toSet());
-        System.out.println("collectSet: " + collectSet);
-        // 打印结果
-        // collectSet: [1, 2, 3, 4]
+// toSet
+System.out.println("toSet: ");
+Set<Integer> collectSet = Stream.of(1, 2, 3, 4)
+        .collect(Collectors.toSet());
+System.out.println("collectSet: " + collectSet);
+// 打印结果
+// collectSet: [1, 2, 3, 4]
 ```
 
 ### list 转 map(通过 stream)
 
 ```java
 List<Person> list = new ArrayList<>();
-        list.add(new Person(1, "mary"));
-        list.add(new Person(2, "lucy"));
+list.add(new Person(1, "mary"));
+list.add(new Person(2, "lucy"));
 
-        Map<Integer, Person> map = list.stream().collect(Collectors.toMap(Person::getId, Function.identity()));
-        System.out.println(map);
-        // 输出: {1=Main3$Person@42f30e0a, 2=Main3$Person@24273305}
+Map<Integer, Person> map = list.stream().collect(Collectors.toMap(Person::getId, Function.identity()));
+System.out.println(map);
+// 输出: {1=Main3$Person@42f30e0a, 2=Main3$Person@24273305}
 
-        Map<Integer, String> map2 = list.stream().collect(Collectors.toMap(Person::getId, Person::getName));
-        System.out.println(map2);
-        // 输出: {1=mary, 2=lucy}
+Map<Integer, String> map2 = list.stream().collect(Collectors.toMap(Person::getId, Person::getName));
+System.out.println(map2);
+// 输出: {1=mary, 2=lucy}
 ```
 
 ### 分割数据块
@@ -180,8 +179,8 @@ List<Person> list = new ArrayList<>();
 
 ```java
 Map<Boolean, List<Integer>> map = Stream.of(1, 2, 3, 4)
-            .collect(Collectors.partitioningBy(item -> item > 2));
-        System.out.println(map);
+        .collect(Collectors.partitioningBy(item -> item > 2));
+    System.out.println(map);
 
 // 输出: {false=[1, 2], true=[3, 4]}
 ```
@@ -212,14 +211,14 @@ Map<Integer,List<User>> userMap = allUserList.parallelStream().collect(Collector
 
 ```java
 Map<Integer, Map<BigDecimal, List<User>>> collect = userList.stream().filter(Objects::nonNull)
-                .collect(Collectors.groupingBy(User::getAge, Collectors.groupingBy(User::getMoney)));
+            .collect(Collectors.groupingBy(User::getAge, Collectors.groupingBy(User::getMoney)));
 ```
 
 复杂分组
 
 ```java
-        Map<Integer, Map<BigDecimal, List<Long>>> collect = userList.stream().filter(Objects::nonNull)
-                .collect(Collectors.groupingBy(User::getAge, Collectors.groupingBy(User::getMoney, Collectors.mapping(User::getId, Collectors.toList()))));
+Map<Integer, Map<BigDecimal, List<Long>>> collect = userList.stream().filter(Objects::nonNull)
+        .collect(Collectors.groupingBy(User::getAge, Collectors.groupingBy(User::getMoney, Collectors.mapping(User::getId, Collectors.toList()))));
 ```
 
 ### collect
@@ -238,7 +237,11 @@ System.out.println("strJoin: " + strJoin);
 
 去重
 
-### Peek
+### limit
+
+limit方法可以对流进行截取，只取用前n个。
+
+### peek
 
 流由三部分组成：数据源、零个或多个中间操作以及零个或一个终端操作。
 
@@ -262,6 +265,10 @@ public void test(){
 }
 ```
 
+### skip
+
+如果希望跳过前几个元素，可以使用 skip 方法获取一个截取之后的新流
+
 ### sorted 排序
 
 stream 中有两个 sorted 方法：
@@ -279,6 +286,16 @@ stream 中有两个 sorted 方法：
 多条件排序
 
 `userList = userList.stream().sorted(Comparator.comparing(User::getAge).thenComparing(User::getId)).collect(Collectors.toList());`
+
+## 应用：进行分页
+
+```java
+final TableDataInfo dataTable = getDataTable(resultList);
+final int pageSize = (query.getPageSize() != null && query.getPageSize() > 0) ? query.getPageSize() : 8;
+final int pageNum = (query.getPageNum() != null && query.getPageNum() > 0) ? query.getPageNum() : 0;
+dataTable.setRows(resultList.stream().skip((long) (pageNum - 1) * pageSize).limit(pageSize).
+        collect(Collectors.toList()));
+```
 
 ## 遇到过的问题
 
