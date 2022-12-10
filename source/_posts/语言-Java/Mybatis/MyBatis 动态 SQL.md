@@ -1,7 +1,7 @@
 ---
 title: MyBatis-动态 SQL
-date:
-updated:
+date: 2022
+updated: 2022
 categories:
   - 语言-Java
   - 框架-MyBatis
@@ -91,6 +91,88 @@ trim 元素可以给自己包含的内容加上前缀（prefix）或加上后缀
     </trim>
 </select>
 ```
+
+```xml
+<trim prefix="" suffix=""  prefixOverrides="" suffixOverrides="">
+</trim>
+```
+
+* prefix:在 trim 标签内 sql 语句加上前缀
+* suffix:在 trim 标签内 sql 语句加上后缀
+* prefixOverrides:指定去除多余的前缀内容
+* suffixOverrides:指定去除多余的后缀内容，如：suffixOverrides=","，去除 trim 标签内 sql 语句多余的后缀","
+
+```xml
+<insert id="insert" parameterType="com.tortuousroad.groupon.cart.entity.Cart">
+        insert into cart
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="userId != null">
+                user_id,
+            </if>
+            <if test="dealId != null">
+                deal_id,
+            </if>
+            <if test="dealSkuId != null">
+                deal_sku_id,
+            </if>
+            <if test="count != null">
+                count,
+            </if>
+            <if test="createTime != null">
+                create_time,
+            </if>
+            <if test="updateTime != null">
+                update_time,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id, jdbcType=BIGINT},
+            </if>
+            <if test="userId != null">
+                #{userId, jdbcType=BIGINT},
+            </if>
+            <if test="dealId != null">
+                #{dealId, jdbcType=BIGINT},
+            </if>
+            <if test="dealSkuId != null">
+                #{dealSkuId, jdbcType=BIGINT},
+            </if>
+            <if test="count != null">
+                #{count, jdbcType=INTEGER},
+            </if>
+            <if test="createTime != null">
+                #{createTime, jdbcType=TIMESTAMP},
+            </if>
+            <if test="updateTime != null">
+                #{updateTime, jdbcType=TIMESTAMP},
+            </if>
+        </trim>
+    </insert>
+```
+
+假设没有指定
+
+```sql
+suffixOverrides=","
+```
+
+执行的 sql 语句也许是这样的, 这显然是错误的
+
+```sql
+insert into cart (id, user_id, deal_id,) values(1,2,1,);
+```
+
+指定之后语句就会变成
+
+```sql
+insert into cart (id, user_id, deal_id) values(1,2,1);
+```
+
+这样就将“，”去掉就正常了
 
 ### where
 

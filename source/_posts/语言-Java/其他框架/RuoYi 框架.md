@@ -294,3 +294,13 @@ spring boot 中可以用 @Validated 来校验数据，如果数据异常则会�
 ### excel导出 报错（Invalid row number (1048576) outside allowable range (0..1048575)）
 
 默认的 ruoyi 对 excel 的 yml 配置有行数还是 MB 体积限制，建议还是使用更加强大的阿里 easyexcel。
+
+### 修改默认密码
+
+修改用户名和密码，将 ry-config 中的 user 表 username 替换成你需要的登录账户，password 改成你需要的密码，密码运行即可得到加密有算法。注意盐值是随机的，所以生成密码每次可能不一样，请不要担心。
+
+```java
+public static void main(String[] args) {
+    System.out.println(new BCryptPasswordEncoder().encode("ruoyi"));
+}
+```

@@ -4,9 +4,9 @@ date: 2022-12-07 15:20:00
 updated: 2022-12-07 15:20:00
 categories:
   - 应用
-  - 监控
+  - 运维监控
 tags:
-- 监控
+- 运维监控
 ---
 
 使用 docker 安装 zabbix
