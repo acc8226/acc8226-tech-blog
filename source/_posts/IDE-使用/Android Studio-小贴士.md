@@ -9,7 +9,7 @@ categories: IDE-使用
   * 对于 Windows，请依次转到“文件 (File)”>“设置 (Settings)”>“编辑器 (Editor)”>“常规 (General)”>“自动导入 (Auto Import)”
   * 对于 Mac，请依次转到 Android Studio >“偏好设置 (Preferences)”>“编辑器 (Editor)”>“常规 (General)”>“自动导入 (Auto Import)”
 
-  ![1]
+![1]
 
 * Documentation of mouse over (鼠标停留自动显示文档)
 

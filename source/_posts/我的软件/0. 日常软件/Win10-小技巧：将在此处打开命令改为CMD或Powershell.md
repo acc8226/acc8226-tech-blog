@@ -1,6 +1,6 @@
 ---
 title: Win10-小技巧：将在此处打开命令改为 CMD 或 Powershell
-date: 2018.04.07 15:30:24
+date: 2018-04-07 15:30:24
 updated: 2022-11-05 13:45:00
 categories:
   - 收藏

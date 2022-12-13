@@ -9,6 +9,6 @@ tags:
 - Java
 ---
 
-Google Guava官方教程（中文版） | 并发编程网 – ifeve.com https://ifeve.com/google-guava/
+Google Guava 官方教程（中文版） | 并发编程网 – ifeve.com https://ifeve.com/google-guava/
 
 ImmutableSet
