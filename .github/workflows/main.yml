@@ -25,6 +25,7 @@ jobs:
 
       - name: npm install, build
         run: |
+          export TZ=Asia/Shanghai
           npm install hexo-cli -g
           npm ci
           hexo g --silent
