@@ -12,4 +12,4 @@ lrwxrwxrwx 1 root root 46 4月   2 15:54 /etc/alternatives/java -> /usr/lib/jvm/
 ## 参考
 
 linux 查看java的安装路径 - 韩帅 - 博客园
-https://www.cnblogs.com/hanshuai/p/9604730.html
+<https://www.cnblogs.com/hanshuai/p/9604730.html>

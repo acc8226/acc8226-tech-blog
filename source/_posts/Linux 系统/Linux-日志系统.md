@@ -190,8 +190,8 @@ sysklogd 是老的简单格式，一些新的语法特性不支持。而 legacy 
 
 注释有两种语法:
 
-*   井号 #
-*   C-style `/* .. */`
+* 井号 #
+* C-style `/* .. */`
 
 执行顺序: 指令在 rsyslog.conf 文件中是从上到下的顺序执行的。
 
@@ -205,7 +205,7 @@ legacy 格式使用 $template 的语法，不过这个在以后要移除，所�
 
 了解了 rsyslog 环境的配置文件之后，我们看向 `/etc/rsyslog.d/50-default.conf` 这个配置文件，这个文件中主要是配置的 Filter Conditions，也就是我们在流程图中所看见的 `Parser & Filter Engine`,它的名字叫 Selectors 是过滤 syslog 的传统方法，他主要由两部分组成，`facility` 与 `priority`，其配置格式如下
 
-```
+```sh
 facility.priority　　　　　log_location
 ```
 
@@ -245,7 +245,7 @@ rsyslog 通过 Facility 的概念来定义日志消息的来源，以便对日�
 
 ![实验楼](https://upload-images.jianshu.io/upload_images/1662509-8b400b2e535de548?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-```
+```sh
 auth,authpriv.*       /var/log/auth.log
 ```
 
@@ -253,7 +253,7 @@ auth,authpriv.*       /var/log/auth.log
 
 而其中有类似于这样的配置信息意思有细微的差别
 
-```
+```sh
 kern.*      -/var/log/kern.log
 ```
 
@@ -263,7 +263,7 @@ kern.*      -/var/log/kern.log
 
 与日志相关的还有一个还有常用的命令 `logger`,logger 是一个 shell 命令接口，可以通过该接口使用 Syslog 的系统日志模块，还可以从命令行直接向系统日志文件写入信息。
 
-```
+```sh
 #首先将syslog启动起来
 sudo service rsyslog start
 
@@ -288,6 +288,7 @@ sudo tail -f /var/log/syslog
 | -p | 设置日志的 facility 与 priority |
 
 ## 转存日志
+
 在本地的机器中每天都有成百上千条日志被写入文件中，更别说是我们的服务器，每天都会有数十兆甚至更多的日志信息被写入文件中，如果是这样的话，每天看着我们的日志文件不断的膨胀，那岂不是要占用许多的空间，所以有个叫 logrotate 的东西诞生了。
 
 logrotate 程序是一个日志文件管理工具。用来把旧的日志文件删除，并创建新的日志文件。我们可以根据日志文件的大小，也可以根据其天数来切割日志、管理日志，这个过程又叫做“转储”。

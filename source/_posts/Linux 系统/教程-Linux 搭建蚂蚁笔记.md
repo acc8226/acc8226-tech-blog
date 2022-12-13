@@ -221,7 +221,7 @@ db.password=mini66 # if not exists, please leave blank
 Leanote 二进制版详细安装教程 Mac and Linux
 <https://github.com/leanote/leanote/wiki/Leanote-%E4%BA%8C%E8%BF%9B%E5%88%B6%E7%89%88%E8%AF%A6%E7%BB%86%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B----Mac-and-Linux>
 
-MongoDB学习笔记(管理基础) - Stephen_Liu - 博客园
+MongoDB 学习笔记(管理基础) - Stephen_Liu - 博客园
 <https://www.cnblogs.com/stephen-liu74/archive/2012/09/22/2658670.html>
 
  [MongoDB 权限认证](https://www.cnblogs.com/shaosks/p/5775757.html)

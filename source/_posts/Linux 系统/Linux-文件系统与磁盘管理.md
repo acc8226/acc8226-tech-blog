@@ -1,6 +1,6 @@
 使用 df 命令查看磁盘的容量
 
-```
+```sh
 df
 ```
 
@@ -51,7 +51,7 @@ du -h virtual.img
 我们可以简单的使用下面的命令来将我们的虚拟磁盘镜像格式化为ext4文件系统：
 
 ```sh
-$ sudo mkfs.ext4 virtual.img
+sudo mkfs.ext4 virtual.img
 ```
 
 **使用 mount 命令挂载磁盘到目录树**
@@ -62,7 +62,7 @@ Linux/UNIX 命令行的 mount 指令是告诉操作系统，对应的文件系�
 我们先来使用mount来查看下主机已经挂载的文件系统：
 
 ```sh
-$ sudo mount
+sudo mount
 ```
 
 那么我们如何挂载真正的磁盘到目录树呢，mount命令的一般格式如下：

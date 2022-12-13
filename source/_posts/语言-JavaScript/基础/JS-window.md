@@ -50,6 +50,7 @@ var h=window.innerHeight
 
 window.screen 对象包含有关用户屏幕的信息。
 这些信息可以用来了解客户端硬件的基本配置。
+
 ![](https://upload-images.jianshu.io/upload_images/1662509-fa4a0c82b7419ee4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 返回屏幕的可用宽度

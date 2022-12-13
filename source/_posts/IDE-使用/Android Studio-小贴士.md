@@ -12,15 +12,19 @@ categories: IDE-使用
   ![1]
 
 * Documentation of mouse over (鼠标停留自动显示文档)
-  ![][2]
+
+![][2]
 
 * Show line numbers (显示行号)
-  ![][3]
+
+![][3]
 
 * **Control + O， Control + I** (自动重载)
-  ![][4]
+
+![][4]
 
 * 改变字体以及行间距
+
 ![](http://upload-images.jianshu.io/upload_images/1662509-8e4c788bb8dea0ef.gif?imageMogr2/auto-orient/strip)
 
 * 启用 serialVersionUID
@@ -30,6 +34,7 @@ categories: IDE-使用
 ## 疑问
 
 * Sync project with Gradle files
+
 ![](http://upload-images.jianshu.io/upload_images/1662509-7f3d76c59034095c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 [1]: http://upload-images.jianshu.io/upload_images/1662509-7938b2eb8644dbfa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240

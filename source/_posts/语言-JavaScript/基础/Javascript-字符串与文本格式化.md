@@ -9,7 +9,7 @@ tags:
 
 ## 字符串
 
-JavaScript中的 [String](https://developer.mozilla.org/en-US/docs/Glossary/String "String: In any computer programming language, a string is a sequence of characters used to represent text.") 类型用于表示文本型的数据. 它是由无符号整数值（16bit）作为元素而组成的集合. 字符串中的每个元素在字符串中占据一个位置. 第一个元素的 index 值是0, 下一个元素的 index 值是 1, 以此类推. 字符串的长度就是字符串中所含的元素个数。你可以通过String字面值或者 String 对象两种方式创建一个字符串。
+JavaScript 中的 [String](https://developer.mozilla.org/en-US/docs/Glossary/String "String: In any computer programming language, a string is a sequence of characters used to represent text.") 类型用于表示文本型的数据. 它是由无符号整数值（16bit）作为元素而组成的集合. 字符串中的每个元素在字符串中占据一个位置. 第一个元素的 index 值是0, 下一个元素的 index 值是 1, 以此类推. 字符串的长度就是字符串中所含的元素个数。你可以通过String字面值或者 String 对象两种方式创建一个字符串。
 
 ### String字面量
 
@@ -20,8 +20,8 @@ JavaScript中的 [String](https://developer.mozilla.org/en-US/docs/Glossary/Str
 `\x`之后的数值将被认为是一个 16 进制数.
 `'\xA9' // "©"`
 
-Unicode转义序列
-Unicode转义序列在\u 之后需要至少 4 个字符.
+Unicode 转义序列
+Unicode 转义序列在\u 之后需要至少 4 个字符.
 `'\u00A9' // "©"`
 
 ### 字符串对象
@@ -34,9 +34,9 @@ console.log(s); // Displays: { '0': 'f', '1': 'o', '2': 'o'}
 typeof s; // Returns 'object'
 ```
 
-你可以在String字面值上使用String对象的任何方法—JavaScript自动把String字面值转换为一个临时的String对象, 然后调用其相应方法,最后丢弃此临时对象.在String字面值上也可以使用String.length属性.
+你可以在String字面值上使用 String 对象的任何方法—JavaScript 自动把 String 字面值转换为一个临时的 String 对象, 然后调用其相应方法,最后丢弃此临时对象.在 String 字面值上也可以使用 String.length 属性.
 
-除非必要, 应该尽量使用String字面值, 因为String对象的某些行为可能并不与直觉一致.
+除非必要, 应该尽量使用 String 字面值, 因为String对象的某些行为可能并不与直觉一致.
 
 ### String 对象方法
 
@@ -44,7 +44,7 @@ typeof s; // Returns 'object'
 
 ### 多行模板字符串
 
-模板字符串是一种允许内嵌表达式的String字面值. 可以用它实现多行字符串或者字符串内插等特性.
+模板字符串是一种允许内嵌表达式的 String 字面值. 可以用它实现多行字符串或者字符串内插等特性.
 
 模板字符串使用反勾号 (` `) ([grave accent](https://en.wikipedia.org/wiki/Grave_accent)) 包裹内容而不是单引号或双引号. 模板字符串可以包含占位符. 占位符用美元符号和花括号标识 (`${expression}`).
 

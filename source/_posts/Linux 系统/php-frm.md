@@ -16,7 +16,7 @@ listen = 127.0.0.1:9001
 [root@localhost init.d]# service php-fpm start
 ```
 
-或者直接reload一下，一般是重新加载配置文件php.ini：
+或者直接 reload 一下，一般是重新加载配置文件 php.ini：
 
 ```sh
 service php-fpm reload

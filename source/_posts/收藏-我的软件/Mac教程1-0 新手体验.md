@@ -7,7 +7,7 @@ categories:
   - 我的软件
 ---
 
-纠结了一阵, 9299 终入手翻新的 13.3 英寸 17款 MacBook Pro 2.3GHz 双核 英特尔 [酷睿i5 7360U 处理器](http://detail.zol.com.cn/cpu/index1168451.shtml) ，配备 Retina 显示屏 - 深空灰色
+纠结了一阵, 9299 终入手翻新的 13.3 英寸 17 款 MacBook Pro 2.3GHz 双核 英特尔 [酷睿i5 7360U 处理器](http://detail.zol.com.cn/cpu/index1168451.shtml) ，配备 Retina 显示屏 - 深空灰色
 
 产品链接: [https://www.apple.com/cn/shop/product/FPXT2CH/A](https://www.apple.com/cn/shop/product/FPXT2CH/A)
 
@@ -117,7 +117,7 @@ Control+空格: 切换输入法
 
 ### 最大化窗口
 
-我记得windows是 徽标键+方向上, mac这是**按住Option**的同时**点击窗口左上角绿色按钮**
+我记得 windows 是 徽标键+方向上, mac 这是**按住Option**的同时**点击窗口左上角绿色按钮**
 
 或者实在不行可以试试"全屏"模式
 Command + control + F 或者 点击左上角绿色按钮

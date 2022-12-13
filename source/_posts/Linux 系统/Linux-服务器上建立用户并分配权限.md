@@ -27,7 +27,7 @@ sudo addgroup siatstudent
 ```
 
 删除组
-delgroup 是 delete 和group的缩写，delete是英语“删除”的意思，group是英语“群组”的意思。所以delgroup 命令用于删除一个已存在的群组。
+delgroup 是 delete 和group的缩写，delete 是英语“删除”的意思，group 是英语“群组”的意思。所以 delgroup 命令用于删除一个已存在的群组。
 
 查看组
 
@@ -35,7 +35,7 @@ delgroup 是 delete 和group的缩写，delete是英语“删除”的意思，g
 
 Linux/Unix 的档案调用权限分为三级 : 档案拥有者、群组、其他。利用 chmod 可以藉以控制档案如何被他人所调用。
 
-https://blog.csdn.net/jiandanjinxin/article/details/51920812
+<https://blog.csdn.net/jiandanjinxin/article/details/51920812>
 
 ## 总结
 

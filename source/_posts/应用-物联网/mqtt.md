@@ -10,5 +10,5 @@ tags:
 - Java
 ---
 
-第一章 - MQTT介绍 · MQTT协议中文版
+第一章 - MQTT 介绍 · MQTT 协议中文版
 <https://mcxiaoke.gitbooks.io/mqtt-cn/content/mqtt/01-Introduction.html>

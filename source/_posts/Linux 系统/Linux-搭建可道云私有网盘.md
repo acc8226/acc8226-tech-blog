@@ -23,7 +23,7 @@ KOD 依赖什么环境？
 [root@localhost conf.d]# systemctl start php-fpm
 ```
 
-这里我很好奇，这样php就安装好了，因为我并没有 `yum install php` 。
+这里我很好奇，这样 php 就安装好了，因为我并没有 `yum install php` 。
 
 然后最好也安装 mysql 模块，方便 php 访问 mysql
 
@@ -44,7 +44,7 @@ unzip kodexplorer3.46.zip
 
 ### 配置 nginx.conf
 
-```
+```conf
 server {
     listen 80;
     server_name localhost;
@@ -63,6 +63,7 @@ server {
 ```
 
 看到主页则表示非常完美
+
 ![](https://upload-images.jianshu.io/upload_images/1662509-f442d64f09d54935.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## 安装 kanbox
@@ -82,11 +83,11 @@ wget http://static.kodcloud.com/update/download/kodbox.1.12.zip
 unzip kodbox.1.12.zip && chmod -Rf 777 ./*
 ```
 
-然后设置Kod安装目录为读写权限
+然后设置 Kod 安装目录为读写权限
 最终浏览器访问KOD放置的目录（如http://x.x/kodexplorer），开始您的使用之旅
 
-http://YOUR-IP:8080/
-或者 http://YOUR-IP/index.php
+<http://YOUR-IP:8080/>
+或者 <http://YOUR-IP/index.php>
 
 这里设置密码为
 likai
@@ -95,10 +96,10 @@ tangleilei
 ## 参考
 
 CentOS 部署kodexplorer可道云搭建私有网盘
-http://bbs.kodcloud.com/d/5
+<http://bbs.kodcloud.com/d/5>
 
-https://kodcloud.com/help/
+<https://kodcloud.com/help/>
 帮助 - 可道云 KodExplorer-企业私有云存储与协同办公平台_企业网盘_企业云盘_云网盘
 
 基于 LNMP 的测试工具环境部署-慕课网
-https://www.imooc.com/learn/1070
+<https://www.imooc.com/learn/1070>

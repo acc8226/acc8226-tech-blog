@@ -1,6 +1,7 @@
 ---
 title: MinIO 存储
 date: 2022-08-12 19:06:00
+updated: 2022-08-12 19:06:00
 categories:
   - 语言-Java
   - 框架

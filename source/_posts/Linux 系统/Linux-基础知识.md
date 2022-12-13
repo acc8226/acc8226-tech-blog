@@ -65,8 +65,8 @@ su，su- 与 sudo 的区别
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-3321f6dd11ecaab3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-* `ls -lh `查看(-h 便于人类可阅读)文件大小
-* `ls -a `显示除了 .（当前目录）和 ..（上一级目录）之外的所有文件，包括隐藏文件（Linux 下以 . 开头的文件为隐藏文件）。
+* `ls -lh` 查看(-h 便于人类可阅读)文件大小
+* `ls -a` 显示除了 .（当前目录）和 ..（上一级目录）之外的所有文件，包括隐藏文件（Linux 下以 . 开头的文件为隐藏文件）。
 * `ls -asSh` 显示所有文件大小，并以普通人类能看懂的方式呈现
 
 其中小 s 为显示文件大小，大 S 为按文件大小排序，-h 便于人类可阅读。

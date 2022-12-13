@@ -100,9 +100,9 @@ outer_block:{
 
 与 [`break`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/break "break 语句中止当前循环，switch语句或label 语句，并把程序控制流转到紧接着被中止语句后面的语句。") 语句的区别在于， continue 并不会终止循环的迭代，而是：
 
-*   在 [`while`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/while "while 语句可以在某个条件表达式为真的前提下，循环执行指定的一段代码，直到那个表达式不为真时结束循环。") 循环中，控制流跳转回条件判断；
+* 在 [`while`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/while "while 语句可以在某个条件表达式为真的前提下，循环执行指定的一段代码，直到那个表达式不为真时结束循环。") 循环中，控制流跳转回条件判断；
 
-*   在 [`for`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/for "for 语句用于创建一个循环，它包含了三个可选的表达式，三个可选的表达式包围在圆括号中并由分号分隔， 后跟一个在循环中执行的语句（通常是一个块语句）。") 循环中，控制流跳转到更新语句。
+* 在 [`for`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/for "for 语句用于创建一个循环，它包含了三个可选的表达式，三个可选的表达式包围在圆括号中并由分号分隔， 后跟一个在循环中执行的语句（通常是一个块语句）。") 循环中，控制流跳转到更新语句。
 
 `continue` 语句可以包含一个可选的标号以控制程序跳转到指定循环的下一次迭代，而非当前循环。此时要求 `continue` 语句在对应的循环内部。
 
@@ -204,9 +204,9 @@ switch (expression) {
 
 `try`语句包含了由一个或者多个语句组成的`try`块, 和至少一个`catch`子句或者一个`finally`子句的其中一个，或者两个兼有， 下面是三种形式的`try`声明：
 
-1.  `try...catch`
-2.  `try...finally`
-3.  `try...catch...finally`
+1. `try...catch`
+2. `try...finally`
+3. `try...catch...finally`
 
 `catch`子句包含`try`块中抛出异常时要执行的语句。也就是，你想让`try`语句中的内容成功， 如果没成功，你想控制接下来发生的事情，这时你可以在`catch`语句中实现。 如果在`try`块中有任何一个语句（或者从`try`块中调用的函数）抛出异常，控制立即转向`catch`子句。如果在`try`块中没有异常抛出，会跳过`catch`子句。
 
