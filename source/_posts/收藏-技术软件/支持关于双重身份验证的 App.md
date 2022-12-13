@@ -1,5 +1,6 @@
 ---
 title: 支持关于双重身份验证的 App
+date: 2022-11-16 13:28:02
 updated: 2022-11-16 13:28:02
 categories:
   - 收藏
@@ -21,6 +22,10 @@ Multi-Factor Authentication (MFA) 是一种非常简单的最佳安全实践方�
 
 Google Authenticator APK for Android - Download
 <https://google-authenticator.en.softonic.com/android>
+
+## 其他同类型 app
+
+Authy，据说口碑很高。但是这个 app 要安装手机只提供应用商店的入口，所以就不推荐了。
 
 ## 参考
 

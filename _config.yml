@@ -17,7 +17,7 @@ timezone: ''
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://kailee.gitee.io
-# 永久链接设置为哈希值
+# 永久链接设置为 哈希值
 permalink: :hash/
 permalink_defaults:
 pretty_urls:
@@ -117,10 +117,10 @@ feed:
   enable: true
   type: atom
   path: atom.xml
-  limit: 30
+  limit: 25
   hub:
   content:
-  content_limit: 140
+  content_limit: 120
   content_limit_delim: ' '
   order_by: -date
   icon: icon.png

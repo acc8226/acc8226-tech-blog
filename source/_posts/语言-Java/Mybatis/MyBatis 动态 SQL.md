@@ -1,7 +1,7 @@
 ---
 title: MyBatis-动态 SQL
-date: 2022
-updated: 2022
+date: 2022-10-01 00:00:00
+updated: 2022-10-01 00:00:00
 categories:
   - 语言-Java
   - 框架-MyBatis
@@ -9,6 +9,96 @@ tags:
 - Java
 - MyBatis
 ---
+
+## insert 插入的用法
+
+```xml
+<script>INSERT INTO ar_bank_info
+  <trim prefix="(" suffix=")" suffixOverrides="," >
+    <if test = 'policyNo != null'>policy_no, </if>
+    <if test = 'orderNo != null'>order_no, </if>
+    <if test = 'bankCode != null'>bank_code, </if>
+    <if test = 'bankName != null'>bank_name, </if>
+    <if test = 'bankIdNo != null'>bank_id_no, </if>
+    <if test = 'bankAccountName != null'>bank_account_name, </if>
+    <if test = 'bankProvince != null'>bank_province, </if>
+    <if test = 'bankCity != null'>bank_city, </if>
+    <if test = 'paymentForm != null'>payment_form, </if>
+    <if test = 'createTime != null'>create_time, </if>
+    <if test = 'backAmount != null'>back_amount, </if>
+    <if test = 'soStatus != null'>so_status, </if>
+  </trim>
+  <trim prefix="values (" suffix=")" suffixOverrides="," >
+    <if test = 'policyNo != null'>#{policyNo}, </if>
+    <if test = 'orderNo != null'>#{orderNo}, </if>
+    <if test = 'bankCode != null'>#{bankCode}, </if>
+    <if test = 'bankName != null'>#{bankName}, </if>
+    <if test = 'bankIdNo != null'>#{bankIdNo}, </if>
+    <if test = 'bankAccountName != null'>#{bankAccountName}, </if>
+    <if test = 'bankProvince != null'>#{bankProvince}, </if>
+    <if test = 'bankCity != null'>#{bankCity}, </if>
+    <if test = 'paymentForm != null'>#{paymentForm}, </if>
+    <if test = 'createTime != null'>#{createTime}, </if>
+    <if test = 'backAmount != null'>#{backAmount}, </if>
+    <if test = 'soStatus != null'>#{soStatus}, </if>
+  </trim>
+  ON DUPLICATE KEY UPDATE
+  policy_no = VALUES(policy_no),
+  bank_name = VALUES(bank_name),
+  bank_id_no = VALUES(bank_id_no),
+  bank_code = VALUES(bank_code),
+  bank_account_name = VALUES(bank_account_name),
+  payment_form = VALUES(payment_form),
+  modify_time = VALUES(modify_time),
+  back_amount = VALUES(back_amount),
+  so_status = VALUES(so_status)
+</script>
+```
+
+其中 order_no 为唯一索引
+
+批量插入也能搭配 DUPLICATE 进行使用
+
+```xml
+<!-- 批量插入-->
+<insert id="insertResidentBatch" parameterType="java.util.List">
+    INSERT IGNORE INTO population
+    (card_number, name, tel, district
+    , town, community, addr, detail_addr, update_time
+    ) VALUES
+    <foreach collection="list" item="it" separator=",">
+        (
+        #{it.cardNumber}, #{it.name}, #{it.tel}, #{it.district}
+        , #{it.town}, #{it.community}, #{it.addr}, #{it.detailAddr}, #{it.updateTime}
+        )
+    </foreach>
+    ON DUPLICATE KEY UPDATE
+
+    name = values(name),
+    tel = values(tel),
+    district = values(district),
+
+    town = values(town),
+    community = values(community),
+    addr = values(addr),
+    detail_addr = values(detail_addr),
+    update_time = values(update_time)
+</insert>
+```
+
+对应 Java 方法
+
+```java
+/**
+    * 批量插入常住人员
+    *
+    * @param list 设备
+    * @return 结果
+    */
+long insertResidentBatch(List<PopulationDO> list);
+```
+
+## 其他标签
 
 动态 SQL 是 MyBatis 一个强大的特性，它可以帮助程序员减轻根据不同条件拼接 SQL 语句的痛苦。MyBatis 动态 SQL 元素与 JSTL 或其他类 XML 文件处理器相似。MyBatis 采用功能强大的基于 OGNL 的表达式来消除其他元素。
 
@@ -303,3 +393,32 @@ bind 元素可以从 OGNL 表达式中创建一个变量并将其绑定到上下
       select * from user where phone like #{pattern}
 </select>
 ```
+
+## 应用
+
+### 创建表
+
+mapper.java
+
+```java
+void createNucleicTrueTable(@Param("tableName") String tableName);
+```
+
+Mapper.xml
+
+```xml
+<!-- 建表语句-->
+<update id="createNucleicTrueTable" parameterType="java.lang.String">
+    CREATE TABLE IF NOT EXISTS `${tableName}` (
+    `id` BIGINT(20) NOT NULL AUTO_INCREMENT COMMENT '自增id',
+    `card_number` CHAR(18) NOT NULL COMMENT '身份证号' COLLATE 'utf8mb4_unicode_ci',
+    `name` VARCHAR(30) NOT NULL COMMENT '姓名' COLLATE 'utf8mb4_unicode_ci',
+    PRIMARY KEY (`id`) USING BTREE
+    )
+    COMMENT='采样动态表'
+    COLLATE='utf8mb4_unicode_ci'
+    ENGINE=InnoDB;
+</update>
+```
+
+注意，`${tableName}` 的两边是带了撇的。

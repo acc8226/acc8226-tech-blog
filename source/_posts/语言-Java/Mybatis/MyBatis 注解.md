@@ -98,3 +98,22 @@ public interface UserMapper {
     public List<User> selectAllUser() throws Exception;
 }
 ```
+
+## @MapKey
+
+@MapKey 作用以及 @MapKey is required 解决方案
+
+ @MapKey的作用是在返回一个Map的时候，Map的key将映射成注解中的值的字段,从而使map变相可以作为List使用。
+
+```java
+public class UserMapper() {
+    //使用list接收
+    //[{id:1111,name:"foo"},{id:2222,name:"bar"}]
+    public List<User> useList();
+
+    //使用带有@Mapkey("id")的Map<Integer,User>接收
+    //{1111:{id:1111,name:"foo"},2222:{id:2222,name:"bar"}}
+    @Mapkey("id")
+    public Map<Integer,User> useMap();
+}
+```

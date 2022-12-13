@@ -53,14 +53,14 @@ tags:
 XStream xstream = new XStream(new StaxDriver());
 ```
 
-2. 序列化对象到 XML
+2\. 序列化对象到 XML
 
 ```java
 // Object to XML Conversion
 String xml = xstream.toXML(student);
 ```
 
-3. 反序列化 XML 获得对象。
+3\. 反序列化 XML 获得对象。
 
 ```java
 // XML to Object Conversion
@@ -83,7 +83,7 @@ XStream.alias(String name, Class type)
 
 字段混叠用于创建以 XML 字段的别名。
 
-```
+```java
 XStream.aliasField(String alias, Class definedIn, String fieldName)
 ```
 
@@ -146,7 +146,7 @@ xstream.aliasField("name", Student.class, "studentName");
 @XStreamAlias("student")    //define class level alias
 class Student {
     @XStreamAlias("name")   //define field level alias
-	@XStreamAsAttribute     //define field as attribute
+    @XStreamAsAttribute     //define field as attribute
 	private String studentName;
 
 	@XStreamImplicit        //define list as an implicit collection
