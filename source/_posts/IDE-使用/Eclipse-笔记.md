@@ -61,7 +61,7 @@ Shift+enter在当前行之下创建一个空白行，与光标是否在行末无
 
 ## 自动填写功能
 
-这组快捷键将帮助你在打开的编辑器之间浏览。使用 ctrl+page down或 ctrl+page up 可以浏览前后的选项卡，但是在很多文件打开的状态下，ctrl+e 会更加有效率。
+这组快捷键将帮助你在打开的编辑器之间浏览。使用 ctrl+page down 或 ctrl+page up 可以浏览前后的选项卡，但是在很多文件打开的状态下，ctrl+e 会更加有效率。
 
 ## 开启 java editor 的自动填写功能, 填写你需要的正则或者普通字符串都行.
 
@@ -78,6 +78,16 @@ windows->preferences->java->editor->content assist 填入`.[a-zA-Z]`
 点击 Eclipse 打开 .class 文件时出现的那个 “Attach Source” 按键，然后把 JDK 库的源文件压缩包（通常是在 jdk 安装的根目录中的一个 “src.zip” 文件）载入 Eclipse 中。
 
 其他的第三方java插件的源代码文件的载入方法类似。
+
+## Eclipse 中对 maven 项目进行打包
+
+选中项目右键 --》 Run As/Debug As -- 》 Maven build
+
+## 遇到过的问题
+
+### Eclipse 启动 Tomcat 时 45 秒超时解决方法
+
+双击 Servers 视图中的对应的 Server，打开 Server 的属性界面，右边有个 Timeouts，把里面的45改大些
 
 ## Eclipse 教程 | 菜鸟教程
 

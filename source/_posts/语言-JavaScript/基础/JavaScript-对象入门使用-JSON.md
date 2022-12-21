@@ -7,7 +7,7 @@ tags:
 - js
 ---
 
-JavaScript对象表示法（JSON）是用于将结构化数据表示为JavaScript对象的标准格式，通常用于在网站上表示和传输数据
+JavaScript 对象表示法（JSON）是用于将结构化数据表示为 JavaScript 对象的标准格式，通常用于在网站上表示和传输数据
 
 ### 什么是 JSON
 
@@ -81,16 +81,16 @@ JSON 数组
 
 #### 其他注意事项
 
-*   JSON 是一种纯数据格式，它只包含属性，没有方法。
-*   JSON 要求有两头的 { } 来使其合法。最安全的写法是有两边的括号，而不是一边。
-*   甚至一个错位的逗号或分号就可以导致  JSON 文件出错。您应该小心的检查您想使用的数据(虽然计算机生成的 JSON 很少出错，只要生成程序正常工作)。您可以通过像 [JSONLint](http://jsonlint.com/) 的应用程序来检验 JSON。
-*   JSON 可以将任何标准合法的 JSON 数据格式化保存，不只是数组和对象。比如，一个单一的字符串或者数字可以是合法的 JSON 对象。虽然不是特别有用处……
-*   不像 JavaScript 标识符可以用作属性，在 JSON 中，只有字符串才能用作属性。
+* JSON 是一种纯数据格式，它只包含属性，没有方法。
+* JSON 要求有两头的 { } 来使其合法。最安全的写法是有两边的括号，而不是一边。
+* 甚至一个错位的逗号或分号就可以导致  JSON 文件出错。您应该小心的检查您想使用的数据(虽然计算机生成的 JSON 很少出错，只要生成程序正常工作)。您可以通过像 [JSONLint](http://jsonlint.com/) 的应用程序来检验 JSON。
+* JSON 可以将任何标准合法的 JSON 数据格式化保存，不只是数组和对象。比如，一个单一的字符串或者数字可以是合法的 JSON 对象。虽然不是特别有用处……
+* 不像 JavaScript 标识符可以用作属性，在 JSON 中，只有字符串才能用作属性。
 
 ## 对象和文本间的转换
 
-*   [parse()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse): 以文本字符串形式接受JSON对象作为参数，并返回相应的对象。。
-*   [stringify()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify): 接收一个对象作为参数，返回一个对应的JSON字符串。
+* [parse()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse): 以文本字符串形式接受JSON对象作为参数，并返回相应的对象。。
+* [stringify()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify): 接收一个对象作为参数，返回一个对应的JSON字符串。
 
 parse举例:
 

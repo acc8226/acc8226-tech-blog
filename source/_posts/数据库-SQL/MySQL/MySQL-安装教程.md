@@ -2,17 +2,17 @@
 
 MySQL 下载地址为： [MySQL 下载](https://dev.mysql.com/downloads/mysql/) 。 这里我们挑选 *MySQL Community Server*。拿到压缩包后我们将进行解压后配置启动。这里我将解压后的文件夹放在 `C:\web\mysql-8.0.11` 下。
 
-打开刚刚解压的文件夹 C:\web\mysql-8.0.11 ，在该文件夹下创建 my.ini 配置文件，编辑 my.ini 配置以下基本信息：
+打开刚刚解压的文件夹 `C:\web\mysql-8.0.11`，在该文件夹下创建 `my.ini` 配置文件，编辑 `my.ini` 配置以下基本信息：
 
 ```sh
 [client]
-# 设置mysql客户端默认字符集
+# 设置 mysql 客户端默认字符集
 default-character-set=utf8
 
 [mysqld]
-# 设置3306端口
+# 设置 3306 端口
 port = 3306
-# 设置mysql的安装目录
+# 设置 mysql 的安装目录
 basedir=C:\\web\\mysql-8.0.11
 # 设置 mysql数据库的数据的存放目录，MySQL 8+ 不需要以下配置，系统自己生成即可，否则有可能报错
 # datadir=C:\\web\\sqldata
@@ -71,7 +71,7 @@ net stop mysql
 **卸载**
 执行 msi 的卸载程序，手动删除 mysql 的 program File 和 program Data 目录。
 
-### Linux 上 MySQL 的安装
+## Linux 上 MySQL 的安装
 
 **CentOS 7 安装 MySQL**
 
@@ -110,10 +110,10 @@ ALTER USER 'root'@'localhost' IDENTIFIED BY 'NewPassWord1.';
 **ubuntu 安装 mysql**
 
 ```bash
-apt-get install mysql-server
+apt install mysql-server
 ```
 
-### Mac 下使用 brew 安装 MySQL
+## Mac 下使用 brew 安装 MySQL
 
 ```sh
 brew install mysql
@@ -130,17 +130,18 @@ To connect run:
 
 To have launchd start mysql now and restart at login:
   brew services start mysql
+
 Or, if you don't want/need a background service you can just run:
      mysql.server start
 ```
 
-后台开启服务
+开启前台服务
 mysql.server start
 
-停止 mysql 后台服务
+停止前台服务
 mysql.server stop
 
-重启服务
+重启后台服务
 brew services restart mysql
 
 ### 使用套件进行安装
@@ -158,8 +159,22 @@ The free web development solution with Apache, Nginx, PHP & MySQL。
 
 > 新版本 MariaDB 已经取代了 MySQL，因此需要下载老版本的 XAMPP 或者直接切换成 MySQL 的衍生产品 MariaDB。
 
+## docker 下安装 mysql 5.7
+
 ## docker 下安装 mysql 8.0.18
 
 <https://www.jianshu.com/p/88de10c93f23>
+
+在 Docker 中安装并修改 MySQL 中的 my.cnf 配置文件
+
+vim /etc/mysql/my.cnf
+
+在使用 docker容器时，有时候里边没有安装vim，运行vim命令时提示说：vim: command not found，这个时候就需要安装vim，当运行以下安装命令时：
+
+apt-get install vim
+
+如果 Error 报错提示：E: Unable to locate package vim，根据 apt 命令下载并安装软件的惯例，我们需要对 apt进行更新！！！
+
+apt-get update
 
 ## 参考

@@ -54,16 +54,16 @@ Starting Jetty: OK Wed Nov 20 10:26:53 MST 2013
 
 ```xml
 <Configure class="org.eclipse.jetty.webapp.WebAppContext">
-        <Set name="contextPath">/jenkins</Set>
-        <Set name="war"><SystemProperty name="jetty.home" default="."/>/webapps/jenkins.war</Set>
-        <Get name="securityHandler">
-                <Set name="loginService">
-                        <New class="org.eclipse.jetty.security.HashLoginService">
-                                <Set name="name">Jenkins Realm</Set>
-                                <Set name="config"><SystemProperty name="jetty.home" default="."/>/demo-base/etc/realm.properties</Set>
-                        </New>
-                </Set>
-        </Get>
+    <Set name="contextPath">/jenkins</Set>
+    <Set name="war"><SystemProperty name="jetty.home" default="."/>/webapps/jenkins.war</Set>
+    <Get name="securityHandler">
+        <Set name="loginService">
+            <New class="org.eclipse.jetty.security.HashLoginService">
+                <Set name="name">Jenkins Realm</Set>
+                <Set name="config"><SystemProperty name="jetty.home" default="."/>/demo-base/etc/realm.properties</Set>
+            </New>
+        </Set>
+    </Get>
 </Configure>
 ```
 

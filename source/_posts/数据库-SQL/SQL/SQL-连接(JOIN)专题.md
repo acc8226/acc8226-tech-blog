@@ -29,15 +29,15 @@ CREATE TABLE IF NOT EXISTS `access_log` (
 DELETE FROM `access_log`;
 /*!40000 ALTER TABLE `access_log` DISABLE KEYS */;
 INSERT INTO `access_log` (`aid`, `site_id`, `count`, `date`) VALUES
-	(1, 1, 45, '2016-05-10'),
-	(2, 3, 100, '2016-05-13'),
-	(3, 1, 230, '2016-05-14'),
-	(4, 2, 10, '2016-05-14'),
-	(5, 5, 205, '2016-05-14'),
-	(6, 4, 13, '2016-05-15'),
-	(7, 3, 220, '2016-05-15'),
-	(8, 5, 545, '2016-05-16'),
-	(9, 3, 201, '2016-05-17');
+    (1, 1, 45, '2016-05-10'),
+    (2, 3, 100, '2016-05-13'),
+    (3, 1, 230, '2016-05-14'),
+    (4, 2, 10, '2016-05-14'),
+    (5, 5, 205, '2016-05-14'),
+    (6, 4, 13, '2016-05-15'),
+    (7, 3, 220, '2016-05-15'),
+    (8, 5, 545, '2016-05-16'),
+    (9, 3, 201, '2016-05-17');
 /*!40000 ALTER TABLE `access_log` ENABLE KEYS */;
 
 CREATE TABLE IF NOT EXISTS `websites` (
@@ -52,13 +52,13 @@ CREATE TABLE IF NOT EXISTS `websites` (
 DELETE FROM `websites`;
 /*!40000 ALTER TABLE `websites` DISABLE KEYS */;
 INSERT INTO `websites` (`id`, `name`, `url`, `alexa`, `country`) VALUES
-	(1, 'Google', 'https://www.google.cm/', 1, 'USA'),
-	(2, '淘宝', 'https://www.taobao.com/', 13, 'CN'),
-	(3, '菜鸟学习网', 'http://www.runoob.com/', 5000, 'CN'),
-	(4, '微博', 'http://weibo.com/', 20, 'CN'),
-	(5, 'Facebook', 'https://www.facebook.com/', 3, 'USA'),
-	(6, '百度', 'https://www.baidu.com/', 4, 'CN'),
-	(7, 'stackoverflow', 'http://stackoverflow.com/', 0, 'IND');
+    (1, 'Google', 'https://www.google.cm/', 1, 'USA'),
+    (2, '淘宝', 'https://www.taobao.com/', 13, 'CN'),
+    (3, '菜鸟学习网', 'http://www.runoob.com/', 5000, 'CN'),
+    (4, '微博', 'http://weibo.com/', 20, 'CN'),
+    (5, 'Facebook', 'https://www.facebook.com/', 3, 'USA'),
+    (6, '百度', 'https://www.baidu.com/', 4, 'CN'),
+    (7, 'stackoverflow', 'http://stackoverflow.com/', 0, 'IND');
 /*!40000 ALTER TABLE `websites` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

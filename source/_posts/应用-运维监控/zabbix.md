@@ -51,7 +51,103 @@ tags:
 
 主动和被动默认都相对于 agent 而言。
 
-### 使用 docker 安装 zabbix
+## zabbix 架构
+
+1、Zabbix Server
+·Zabbix server 是 agent 程序报告系统可用性、系统完整性和统计数据的核心组件，是所有配置信息、统计信息和操作数据的核心存储器。
+
+2、Zabbix 数据库存储
+。所有配置信息和 Zabbix 收集到的数据都被存储在数据库中
+
+3、Zabbix Web 界面
+。为了从任何地方和任何平台都可以轻松的访问Zabbix,我们提供基于Web的Zabbix界面。该界面是ZabbixServer的一部分，通常(但不一定)跟Zabbix Server运行在同一台物理机器上。
+如果使用 SQLite,Zabbix Web 界面必须要跟Zabbix Server运行在同一台物理机器上。
+
+4、Zabbix Proxy 代理服务器
+Zabbix proxy 可以替 Zabbix Server 收集性能和可用性数据。Proxy 代理服务器是Zabbix软件可选择部署的部分;当然，Proxy 代理服务器可以帮助单台 Zabbix Server 分担负载压力。
+
+5、Zabbix Agent 监控代理
+Zabbix agents监控代理 部署在监控目标上，能够主动监控本地资源和应用程序，并将收集到的数据报告给Zabbix Server。
+
+6、Zabbix 数据流
+监控方面，为了创建一个监控项(item)用于采集数据，必须先创建一个主机 (host)。
+告警方面，在监控项里创建触发器 (trigger) ，通过触发器(trigger) 来触发告警动作(action)。因此如果你想收到Server XCPU负载过高的告警，必须满足
+1、为Server X创建一个host并关联一个用于对CPU进行监控的监控项 (ltem)。
+2、创建一个Trigger，设置成当CPU负载过高时会触发
+3、Trigger被触发，发送告警邮件虽然看起来有很多步骤，但是使用模板的话操作起来其实很简单，Zabbix 这样的设计使得配置机制非常灵活易用。
+
+## zabbix 常用术语含义
+
+1、主机(host)
+台你想监控的网络设备，用 IP 或域名表示
+
+2、主机组(host group)
+主机的逻辑组;它包含主机和模板。一个主机组里的主机和模板之间并没有任何直接的关联。通常在给不同用户组的主机分配权限时候使用主机组。
+
+3、监控项(item)
+你想要接收的主机的特定数据，一个度量数据。
+
+4\. 触发器 (trigger)
+一个被用于定义问题闻值和“评估”监控项接收到的数据的逻辑表达式当接收到的数据高于闽值时，触发器从”OK"变成“Problem"状态。当接收到的数据低于闻值时，触发器保留/返回一个“OK”的状态。
+
+5\. 事件(event)
+单次发生的需要注意的事情，例如触发器状态改变或发现有监控代理自动注册
+
+6\. 异常(problem)
+一个处在“异常”状态的触发器
+
+7\. 动作(action)
+一个对事件做出反应的预定义的操作。
+一个动作由操作(例如发出通知)和条件(当时操作正在发生)组成
+
+8\. 升级(escalation)
+一个在动作内执行操作的自定义场景; 发送通知/执行远程命令的序列
+
+9\. 媒介(media)
+发送告警通知的手段;告警通知的途径
+
+10\. 通知(notification)
+利用已选择的媒体途径把跟事件相关的信息发送给用户
+
+11、远程命令(remote command)
+一个预定义好的，满足一些条件的情况下，可以在被监控主机上自动执行的命令
+
+12、模版(template)
+一组可以被应用到一个或多个主机上的实体(监控项，触发器，图形，聚合图形，应用，LLD，Web场景)的集合
+模版的任务就是加快对主机监控任务的实施，也可以使监控任务的批量修改更简单。模版是直接关联到每台单独的主机上。
+
+13、应用(application)
+一组监控项组成的逻辑分组
+
+14、web 场景(web scenario)
+利用一个或多个 HTTP 请求来检查网站的可用性
+
+15、前端(frontend)
+Zabbix 提供的 web 界面
+
+16、Zabbix API
+Zabbix API 允许你使用 JSON RPC 协议(是一个无状态且轻量级的远程过程调用(RPC)传送协议，其传递内容透过 JSON 为主)来创建、更新和获取 Zabbix 对象(如主机、监控项、图形和其他)信息或者执行任何其他的自定义的任务
+
+17、Zabbix serverl
+Zabbix软件实现监控的核心程序，主要功能是与Zabbix proxies和Agents进行交互、触发器计算、发送告警通知;并将数据集中保存等
+
+18、Zabbix agent
+一个部署在监控对象上的，能够主动监控本地资源和应用的程序
+Zabbix agent部署在监控的目标上，主动监测本地的资源和应用(硬件驱动，内存，处理器统计等).Zabbix agent 收集本地的操作信息并将数据报告给Zabbix server用于进一步处理。一旦出现异常(比如硬盘空间已满或者有崩溃的服务进程),Zabbix server 会主动警告管理员指定机器上的异常。Zabbix agents 的极端高效缘于它可以利用本地系统调用来完成统计数据的收集。
+
+19\. 被动 (passive) 和主动 (active) 检查
+Zabbix agents可以执行被动和主动两种检查方式
+1、被动检查(passive check) 模式中 agent 应答数据请求，Zabbix server (或者proxy) 问 agent 数据,如 CPU 的负载情况，然后 Zabbix agent 回送结果。
+2、主动检查 (Active checks) 处理过程将相对复杂。Agent 必须首先 Zabbix sever 索取监控项列表以进行独立处理，然后周期性地发送新的值给 server。
+执行被动或主动检查是通过选择相应的监测项目类型来配置的。item type.Zabbix agent 处理监控项类型有Zabbix agent  Zabbix agent (active)。
+
+20\. Zabbix proxy
+一个帮助 Zabbix Server 收集数据，分担 Zabbix Server 的负载的程序
+Zabbix Proxy 是一个可以从一个或多个受监控设备收集监控数据，并将信息发送到 Zabbix sever 的进程，基本上是代表 sever 工作的。所有收集的数据都在本地进行缓存，然后传送到 proxy 所属的 Zabbix sever.部署 Proxy 是可选的，但是可能非常有益于分散单个Zabbix sever 的负载。如果只有 proxy 收集数据 sever上的进程就会减少 CPU 消耗和磁盘 I/O 负载
+Zabbix proxy 是完成远程区域、分支机构、没有本地管理员的网络的集中监控的理想解决方案。
+Zabbix proxy 需要使用独立的数据库。
+
+## 使用 docker 安装 zabbix
 
 ```bash
 docker run --name mysql-server -t ^
@@ -65,12 +161,10 @@ docker run --name mysql-server -t ^
       --character-set-server=utf8 --collation-server=utf8_bin ^
       --default-authentication-plugin=mysql_native_password
 
-
  docker run --name zabbix-java-gateway -t ^
       --network=zabbix-net ^
       --restart unless-stopped ^
       -d zabbix/zabbix-java-gateway:alpine-5.4-latest
-
 
 docker run --name zabbix-server-mysql -t ^
              -e DB_SERVER_HOST="mysql-server" ^
@@ -84,7 +178,6 @@ docker run --name zabbix-server-mysql -t ^
              --restart unless-stopped ^
              -d zabbix/zabbix-server-mysql:alpine-5.4-latest
 
-
 docker run --name zabbix-web-nginx-mysql -t ^
              -e ZBX_SERVER_HOST="zabbix-server-mysql" ^
              -e DB_SERVER_HOST="mysql-server" ^
@@ -97,6 +190,11 @@ docker run --name zabbix-web-nginx-mysql -t ^
              --restart unless-stopped ^
              -d zabbix/zabbix-web-nginx-mysql:alpine-5.4-latest
 ```
+
+## 快速入门
+
+user
+zabbixpwd
 
 ## 遇到的问题
 

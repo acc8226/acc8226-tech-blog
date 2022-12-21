@@ -1,4 +1,4 @@
-SED单行脚本快速参考（Unix 流编辑器）                
+SED单行脚本快速参考（Unix 流编辑器）
 
 英文标题：USEFUL ONE-LINE SCRIPTS FOR SED (Unix stream editor)
 原标题：HANDY ONE-LINERS FOR SED (Unix stream editor)
@@ -7,8 +7,8 @@ SED单行脚本快速参考（Unix 流编辑器）
 译者：Joe Hong     - 电邮：hq00e[at]126[dot]com
 
 在以下地址可找到本文档的最新（英文）版本：
-   http://sed.sourceforge.net/sed1line.txt
-   http://www.pement.org/sed/sed1line.txt
+   <http://sed.sourceforge.net/sed1line.txt>
+   <http://www.pement.org/sed/sed1line.txt>
 
 其他语言版本：
   中文          - http://sed.sourceforge.net/sed1line_zh-CN.html
@@ -18,7 +18,6 @@ SED单行脚本快速参考（Unix 流编辑器）
   德语          - http://sed.sourceforge.net/sed1line_de.html
 
   葡语          - http://sed.sourceforge.net/sed1line_pt-BR.html
-
 
 文本间隔：
 --------
@@ -238,7 +237,7 @@ SED单行脚本快速参考（Unix 流编辑器）
  sed '52!d'                       # 方法2
  sed '52q;d'                      # 方法3, 处理大文件时更有效率
 
- # 从第3行开始，每7行显示一次    
+ # 从第3行开始，每7行显示一次
  gsed -n '3~7p'                   # 只对GNU sed有效
  sed -n '3,${p;n;n;n;n;n;n;}'     # 其他sed
 
@@ -430,7 +429,7 @@ sedmod以及GNU sed v3.02.80。
    sed -n '51q;45,50p' filename       # 一样，但快得多
 
 如果你有其他的单行脚本想与大家分享或者你发现了本文档中错误的地方，请发电
-子邮件给本文档的作者（Eric Pement）。邮件中请记得提供你所使用的sed版本、 
+子邮件给本文档的作者（Eric Pement）。邮件中请记得提供你所使用的sed版本、
 该sed所运行的操作系统及对问题的适当描述。本文所指的单行脚本指命令行的长
 度在65个字符或65个以下的sed脚本〔译注1〕。本文档的各种脚本是由以下所列作
 者所写或提供：
