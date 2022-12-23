@@ -27,7 +27,7 @@ RDBMS 即关系数据库管理系统(Relational Database Management System)的�
 修改 MySQL 默认密码
 
 ```bash
-# 修改密码安全策略为低（只校验密码长度，至少8位）。
+# 修改密码安全策略为低（只校验密码长度，至少 8 位）。
 set global validate_password_policy=0;
 
 ALTER USER 'root'@'localhost' IDENTIFIED BY '1234567';
@@ -134,7 +134,6 @@ BIT 数据类型保存位字段值，并且支持 MyISAM、MEMORY、InnoDB 和 B
 作为 SQL 标准的扩展，MySQL 也支持整数类型 TINYINT、MEDIUMINT 和 BIGINT。
 
 **日期和时间类型**
-
 DATE - 格式：YYYY-MM-DD
 TIME 时间值或持续时间
 DATETIME - 格式：YYYY-MM-DD HH:MM:SS
@@ -150,13 +149,11 @@ DATETIME 占用8个字节; 如果 DATETIME 类型的值没有时间部分，默�
 date 和 datetime 在插入的时候可以用 NOW() 函数。
 
 **字符串类型**
-
 字符串类型指 CHAR、VARCHAR、BINARY、VARBINARY、BLOB、TEXT、ENUM 和 SET。
 
 字符串类型支持单引号和双引号包裹，建议用 **单引号** 包裹更加规范。
 
 **关于 char、varchar 与 text 的说明**
-
 这三种类型比较：
  （1）char:  不用多说了，它是定长格式的，但是长度范围是 0~255。当你想要储存一个长度不足 255 的字符时，Mysql 会用空格来填充剩下的字符。因此在读取数据时，char 类型的数据要进行处理，把后面的空格去除。
  （2）varchar:  关于 varchar，有的说最大长度是 255，也有的说是 65535，查阅很多资料后发现是这样的：varchar 类型在 5.0.3 以下的版本中的最大长度限制为 255，而在 5.0.3 及以上的版本中，varchar 数据类型的长度支持到了 65535，也就是说可以存放 65532 个字节（注意是字节而不是字符！）的数据（起始位和结束位占去了3个字节），也就是说，在 5.0.3 以下版本中需要使用固定的 TEXT 或 BLOB 格式存放的数据可以在高版本中使用可变长的 varchar 来存放，这样就能有效的减少数据库文件的大小。

@@ -41,12 +41,11 @@ Enjoy it!
 5、看到以上信息就说明安装完成了，然后根据不同的终端设备进行设置就可以了
 
 **第三步、使用 Shadowsocks 终端体验 VPN**
-
 1、下载对应客户端
 
-Windows：https://github.com/shadowsocks/shadowsocks-windows/releases
-Mac：https://github.com/yangfeicheung/Shadowsocks-X/releases
-Android：https://github.com/shadowsocks/shadowsocks-android/releases
+Windows：<https://github.com/shadowsocks/shadowsocks-windows/releases>
+Mac：<https://github.com/yangfeicheung/Shadowsocks-X/releases>
+Android：<https://github.com/shadowsocks/shadowsocks-android/releases>
 iPhone：App Store 上下载 ShadowLink，这个要用国外 appid 才可以下载哦。国内的搜不到的，因为 shadowrocket 收费的
 
 2、配置 Shadowsocks

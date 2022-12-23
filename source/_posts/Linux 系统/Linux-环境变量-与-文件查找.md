@@ -2,7 +2,7 @@ Shell 变量
 
 使用 declare 命令创建一个变量名为 tmp 的变量：
 
-```
+```sh
 $ declare tmp
 ```
 

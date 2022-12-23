@@ -47,7 +47,7 @@ INSERT INTO emp VALUES (7934,'MILLER','CLERK',7782,'1982-01-23',1300,NULL,10);
 
 ## 其他练习
 
-mysql查询当天的数据_→_→BéLieve的博客-CSDN博客_mysql查询当天日期数据
+mysql 查询当天的数据_→_→BéLieve 的博客-CSDN 博客_mysql 查询当天日期数据
 <https://blog.csdn.net/weixin_46099269/article/details/115520341>
 
 ## 参考

@@ -7,7 +7,6 @@
 标准版一般够用，官网都有提供安卓苹果和PC客户端。
 
 **使用方法**
-
 下载对应平台压缩包解压到您觉得合适的地方，系统默认存储空间为启动文件相同文件夹。解压后只有一个二进制文件。
 
 ```sh
@@ -16,7 +15,6 @@ cd /yourpath/   #(yourpath替换为您文件路径)
 ```
 
 **Nginx 反向代理示例**
-
 Nginx 反向代理需添加：proxy_set_header X-Forwarded-Proto $scheme;
 
 ```conf
@@ -35,7 +33,6 @@ server {
 ```
 
 **亮点：可配置 webdav**
-
 安卓手机搭配 ES浏览器可以倍速播放视频还是不错滴。
 
 ## seafile

@@ -79,17 +79,17 @@ COLLATE = utf8_unicode_ci;
 
 ## COLLATE 是用来做什么的？
 
-所谓`utf8_unicode_ci`，其实是用来排序的规则。对于 mysql 中那些字符类型的列，如 `VARCHAR`，`CHAR`，`TEXT` 类型的列，都需要有一个 `COLLATE` 类型来告知 mysql 如何对该列进行排序和比较。简而言之，**COLLATE 会影响到 ORDER BY 语句的顺序，会影响到 WHERE 条件中大于小于号筛选出来的结果，会影响 **`DISTINCT`**、**`GROUP BY`**、**`**HAVING**`**语句的查询结果**。另外，mysql 建索引的时候，如果索引列是字符类型，也**会影响索引创建**，只不过这种影响我们感知不到。总之，**凡是涉及到字符类型比较或排序的地方，都会和 COLLATE 有关**。
+所谓`utf8_unicode_ci`，其实是用来排序的规则。对于 mysql 中那些字符类型的列，如 `VARCHAR`，`CHAR`，`TEXT` 类型的列，都需要有一个 `COLLATE` 类型来告知 mysql 如何对该列进行排序和比较。简而言之，**COLLATE 会影响到 ORDER BY 语句的顺序，会影响到 WHERE 条件中大于小于号筛选出来的结果，会影响** `DISTINCT`**、**`GROUP BY`**、**`**HAVING**`**语句的查询结果**。另外，mysql 建索引的时候，如果索引列是字符类型，也**会影响索引创建**，只不过这种影响我们感知不到。总之，**凡是涉及到字符类型比较或排序的地方，都会和 COLLATE 有关**。
 
 ### 各种 COLLATE 的区别
 
 `COLLATE` 通常是和数据编码（`CHARSET`）相关的，一般来说每种 `CHARSET` 都有多种它所支持的 `COLLATE`，并且每种 `CHARSET` 都指定一种 `COLLATE` 为默认值。例如 `Latin1` 编码的默认 `COLLATE` 为`latin1_swedish_ci`，`GBK` 编码的默认 `COLLATE` 为 `gbk_chinese_ci`， `utf8mb4` 编码的默认值为 `utf8mb4_general_ci`。
 
-这里顺便讲个题外话，mysql中有`utf8`和`utf8mb4`两种编码，**在 mysql 中请大家忘记**`utf8`**，永远使用 **`utf8mb4`**。这是 mysql 的一个遗留问题，mysql 中的 `utf8` 最多只能支持 3 bytes 长度的字符编码，对于一些需要占据 4 bytes 的文字，mysql的`utf8`就不支持了，要使用 `utf8mb4` 才行。
+这里顺便讲个题外话，mysql中有`utf8`和`utf8mb4`两种编码，**在 mysql 中请大家忘记**`utf8` **，永远使用** `utf8mb4`**。这是 mysql 的一个遗留问题，mysql 中的 `utf8` 最多只能支持 3 bytes 长度的字符编码，对于一些需要占据 4 bytes 的文字，mysql的`utf8`就不支持了，要使用 `utf8mb4` 才行。
 
 很多`COLLATE`都带有`_ci`字样，这是 Case Insensitive的缩写，即大小写无关，也就是说"A"和"a"在排序和比较的时候是一视同仁的。`selection * from table1 where field1 = "a"`同样可以把 field1 为"A"的值选出来。与此同时，对于那些`_cs`后缀的`COLLATE`，则是 Case Sensitive，即大小写敏感的。
 
-在 mysql 中使用`show collation`指令可以查看到 mysql 所支持的所有`COLLATE`。以`utf8mb4` 为例，该编码所支持的所有 `COLLATE` 如下图所示。
+在 mysql 中使用 `show collation` 指令可以查看到 mysql 所支持的所有 `COLLATE`。以`utf8mb4` 为例，该编码所支持的所有 `COLLATE` 如下图所示。
 
 mysql 中和 utf8mb4 相关的所有 COLLATE
 
@@ -154,7 +154,7 @@ SELECT field1, field2 FROM table1 ORDER BY field1 COLLATE utf8mb4_unicode_ci;
 > SELECT 的其他 COLLATE 子句
 > 除了这里看到的在 ORDER BY 子句中使用以外，COLLATE 还可以用于 GROUP BY、HAVING、聚集函数、别名等。
 
-如果全都显示设置了，那么优先级顺序是 SQL语句 > 列级别设置 > 表级别设置 > 库级别设置 > 实例级别设置。也就是说列上所指定的 `COLLATE` 可以覆盖表上指定的 `COLLATE`，表上指定的`COLLATE`可以覆盖库级别的 `COLLATE`。如果没有指定，则继承下一级的设置。即列上面没有指定 `COLLATE`，则该列的`COLLATE`和表上设置的一样。
+如果全都显示设置了，那么优先级顺序是 SQL语句 > 列级别设置 > 表级别设置 > 库级别设置 > 实例级别设置。也就是说列上所指定的 `COLLATE` 可以覆盖表上指定的 `COLLATE`，表上指定的`COLLATE` 可以覆盖库级别的 `COLLATE`。如果没有指定，则继承下一级的设置。即列上面没有指定 `COLLATE`，则该列的 `COLLATE` 和表上设置的一样。
 
 以上就是关于 mysql 的 `COLLATE` 相关知识。不过，在系统设计中，我们还是要尽量避免让系统严重依赖中文字段的排序结果，在 mysql 的查询中也应该尽量避免使用中文做查询条件。
 
