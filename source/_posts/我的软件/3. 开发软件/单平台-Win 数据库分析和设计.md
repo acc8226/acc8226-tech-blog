@@ -4,7 +4,7 @@ date: 2022-05-01 19:04:06
 updated: 2022-11-16 13:28:02
 categories:
   - 收藏
-  - 技术软件
+  - 开发软件
 ---
 
 ## power designer

@@ -4,7 +4,7 @@ date: 2019-11-30 22:34:48
 updated: 2022-11-16 13:28:02
 categories:
   - 收藏
-  - 技术软件
+  - 开发软件
 ---
 
 * Genymotion、Parallels Desktop 等虚拟机软件 太专业, 需要配置太多软件, 适合开发者。

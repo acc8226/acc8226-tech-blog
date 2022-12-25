@@ -4,7 +4,7 @@ date: 2020-03-02 14:52:00
 updated: 2022-11-16 13:28:02
 categories:
   - 收藏
-  - 技术软件
+  - 开发软件
 ---
 
 <https://github.com/fatedier/frp>

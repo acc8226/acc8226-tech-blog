@@ -4,7 +4,7 @@ date: 2019-10-01 22:08:33
 updated: 2022-11-05 13:45:00
 categories:
   - 收藏
-  - 我的软件
+  - 日常软件
 ---
 
 电脑目前属于日常办公品, 除了办公外也用途也很多。希望本文若能帮到你。
@@ -17,15 +17,13 @@ Windows 优化：[软媒魔方](http://mofang.ruanmei.com/)
 
 ## 网络浏览器
 
-[360极速浏览器](https://browser.360.cn/ee/) / [QQ 浏览器](https://browser.qq.com/) 二选一
+[360极速浏览器](https://browser.360.cn/ee/) / 360 安全浏览器
 
 ## 压缩、解压缩软件
 
 [360压缩](https://yasuo.360.cn/) 轻巧无广告
 
-极客版
-7-Zip
-<https://sparanoid.com/lab/7z/download.html>
+或者 7-Zip <https://sparanoid.com/lab/7z/download.html>
 
 ## 输入法
 
@@ -74,7 +72,7 @@ PS 【收费软件】 / GIMP 【PS的替代品且免费】 / 美图秀秀【免�
 **硬盘管理/分区、光盘类软件**
 
 * diskgenius 良心国软
-* Acronis Disk Director 11 Advanced 官方简体中文版下载（[官方下载](http://download.acronis.com/trial/ADD11A_trial_zh-CN.exe) 236M）- 《[Win7、Vista如何调整硬盘分区](http://www.vista123.com/vista/229.html)》 支持250G及以上硬盘
+* Acronis Disk Director 11 Advanced 官方简体中文版下载（[官方下载](http://download.acronis.com/trial/ADD11A_trial_zh-CN.exe) 236M）- 《[Win7、Vista如何调整硬盘分区](http://www.vista123.com/vista/229.html)》 支持250G 及以上硬盘
 
 **备份、虚拟光驱、光驱刻录软件**
 
@@ -94,13 +92,13 @@ PS 【收费软件】 / GIMP 【PS的替代品且免费】 / 美图秀秀【免�
 
 ## 善用浏览器
 
-目前浏览器也能做很多事儿。若用好浏览器，是可以少装很多软件。
+目前浏览器也能做很多事儿。若用好浏览器，可以少装很多软件。例如：
 
-例如订火车票可以选择 12306
-携程 / 飞猪订个票
-优酷, 爱奇艺, [腾讯视频](http://v.qq.com) 看个视频
-听歌可选 [网易云音乐](https://music.163.com)
-看个新闻可选 今日头条 或者 网易新闻，[腾讯网](https://www.qq.com/)
+* 订火车票可以选择 12306
+* 携程 / 飞猪订个票
+* 优酷, 爱奇艺, [腾讯视频](http://v.qq.com) 看个视频
+* 听歌可选 [网易云音乐](https://music.163.com)
+* 看个新闻可选 今日头条 或者 网易新闻，[腾讯网](https://www.qq.com/)
 
 ## 参考
 

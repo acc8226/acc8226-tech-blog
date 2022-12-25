@@ -100,8 +100,8 @@ MID() 函数用于从文本字段中提取字符。
 SQL MID() 语法
 `SELECT MID(column_name,start[,length]) FROM table_name;`
 
-column_name	必需。要提取字符的字段。
-start	必需。规定开始位置（起始值是 1）。
+column_name 必需。要提取字符的字段。
+start 必需。规定开始位置（起始值是 1）。
 length 可选。要返回的字符数。如果省略，则 MID() 函数返回剩余文本。
 
 ### LEN() 函数
@@ -179,8 +179,7 @@ SELECT FORMAT(column_name,format) FROM table_name;
 示例:
 
 ```sql
-mysql> SELECT name, url, DATE_FORMAT(Now(),'%Y-%m-%d') AS date
-    -> FROM Websites;
+mysql> SELECT name, url, DATE_FORMAT(Now(),'%Y-%m-%d') AS date FROM Websites;
 +--------------+---------------------------+------------+
 | name         | url                       | date       |
 +--------------+---------------------------+------------+
@@ -294,11 +293,11 @@ date 参数是合法的日期。format 规定日期/时间的输出格式。
 防止 SQL 注入，我们需要注意以下几个要点：
 
 1. 永远不要信任用户的输入。对用户的输入进行校验，可以通过正则表达式，或限制长度；对单引号和 双"-"进行转换等。
-2. 永远不要使用动态拼装sql，可以使用参数化的sql或者直接使用存储过程进行数据查询存取。
+2. 永远不要使用动态拼装 sql，可以使用参数化的sql或者直接使用存储过程进行数据查询存取。
 3. 永远不要使用管理员权限的数据库连接，为每个应用使用单独的权限有限的数据库连接。
 4. 不要把机密信息直接存放，加密或者 hash 掉密码和敏感的信息。
 5. 应用的异常信息应该给出尽可能少的提示，最好使用自定义的错误信息对原始错误信息进行包装
-6. sql注入的检测方法一般采取辅助软件或网站平台来检测，软件一般采用sql注入检测工具jsky，网站平台就有亿思网站安全平台检测工具。MDCSOFT SCAN等。采用MDCSOFT-IPS可以有效的防御SQL注入，XSS攻击等。
+6. sql 注入的检测方法一般采取辅助软件或网站平台来检测，软件一般采用sql注入检测工具 jsky，网站平台就有亿思网站安全平台检测工具。MDCSOFT SCAN 等。采用 MDCSOFT-IPS 可以有效的防御SQL注入，XSS攻击等。
 
 ## SQL 视图（Views）
 

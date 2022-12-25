@@ -4,7 +4,7 @@ date: 2019-03-17 17:27:17
 updated: 2022-11-05 13:45:00
 categories:
   - 收藏
-  - 我的软件
+  - 日常软件
 ---
 
 纠结了一阵, 9299 终入手翻新的 13.3 英寸 17 款 MacBook Pro 2.3GHz 双核 英特尔 [酷睿i5 7360U 处理器](http://detail.zol.com.cn/cpu/index1168451.shtml) ，配备 Retina 显示屏 - 深空灰色
