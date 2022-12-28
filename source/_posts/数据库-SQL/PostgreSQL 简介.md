@@ -6,8 +6,7 @@ categories:
 
 ## 软件安装
 
-### Download PostgreSQL
-
+enterprisedb 厂商提供的全平台下载地址
 <https://www.enterprisedb.com/downloads/postgres-postgresql-downloads>
 
 ### Windows 版安装 12.10
@@ -44,19 +43,20 @@ Installation Log: C:\Users\ferder\AppData\Local\Temp\install-postgresql.log
 ```sh
 docker run --name some-postgres \
 -p 5432:5432 \
--e POSTGRES_PASSWORD=pppaaa \
+-e POSTGRES_PASSWORD=abcdefg \
 -d postgres:12.10-alpine
 ```
 
 其中默认用户名为 postgres
 
-小技巧：查看数据库版本，可以用 `select version()` 语句。
-
 ## 数据库管理软件推荐
 
-windows 版本可使用自带的 pgAdmin 4。也可使用较为通用且免费的 DBeaver CE。
+Windows 版本可使用自带的 pgAdmin 4。也可使用较为通用且免费的 DBeaver CE。
 
 ## 命令行的使用
+
+查看数据库版本
+`select version()`
 
 创建数据库
 
@@ -135,8 +135,7 @@ runoobdb=# \d company
 ### insert 语句
 
 ```sql
-INSERT INTO COMPANY
-(ID,NAME,AGE)
+INSERT INTO COMPANY (ID,NAME,AGE)
 VALUES (2, 'Allen', 25);
 ```
 
@@ -156,11 +155,11 @@ runoobdb=# select * from company;
 
 pg 数据库配置无需交互式输入密码连接服务端
 
-第一种方式：配置一个环境变量 PGPASSWORD，这个只需要在执行psql命令之前执行：
+第一种方式：配置一个环境变量 PGPASSWORD，这个只需要在执行 psql 命令之前执行：
 
 export PGPASSWORD=password
 
-第二种方式：配置一个配置文件.pgpass文件，格式像下面这样就行：
+第二种方式：配置一个配置文件 .pgpass 文件，格式像下面这样就行：
 
 127.0.0.1:5432:*:postgres:postgres
 
@@ -223,7 +222,7 @@ listen_addresses = '*' # what IP address(es) to listen on;
 Postgresql 的三种备份方式
 
 1. 文件系统级别的冷备份。
-2. SQL转储。
+2. SQL 转储。
 3. 连续归档
 
 备份
@@ -257,14 +256,19 @@ pgadmin4 在点击备份数据库时，PgAdmin 出现 Utility file not found. Pl
 
 - - -
 
-pg_dump 提示命令行参数太多
+使用 pg_dump 提示命令行参数太多
 
 原来是 -h 中的 - 符号用的是中文，改成用英文的就可以了。
 
+## 官方文档
+
 ## 参考
 
-PostgreSQL 的 pg_hba.conf 配置参数详解_将臣三代的博客-CSDN博客_pg_hba.conf
+PostgreSQL 12.2 手册
+<http://www.postgres.cn/docs/12/>
+
+PostgreSQL 的 pg_hba.conf 配置参数详解_将臣三代的博客-CSDN 博客_pg_hba.conf
 <https://blog.csdn.net/yaoqiancuo3276/article/details/80404883>
 
-pg数据库配置无需交互式输入密码连接服务端_heipacker的博客-CSDN博客
+pg 数据库配置无需交互式输入密码连接服务端_heipacker 的博客-CSDN 博客
 <https://blog.csdn.net/heipacker/article/details/48087699>

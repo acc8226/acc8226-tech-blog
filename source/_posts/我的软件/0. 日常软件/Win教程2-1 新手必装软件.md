@@ -7,7 +7,7 @@ categories:
   - 日常软件
 ---
 
-拿到新电脑后接下需要安装些常用工具类软件，于是有了此文。
+拿到新电脑后肯定需要安装一些常用软件，于是有了此文。总的宗旨是从尽量从官网下载，这样更安全，这样也避免其他渠道下载的软件有后门。
 
 ## [浏览器-360极速](https://browser.360.cn/ee/index.html)
 
@@ -16,11 +16,15 @@ categories:
 > 鼠标手势：长按鼠标右键，手势即动作
 > 鼠标悬停：在标签上滚动鼠标滚轮，可自动激活该标签
 
+或者 360 安全浏览器也是不错的选择。
+
 ## 输入法-搜狗
 
-可选 Win 系统自带或这次推荐的 [搜狗输入法智慧版](https://pinyin.sogou.com/zhihui/), 无广告不解释。处理日常使用外还能表情斗图。
+[搜狗输入法智慧版](https://pinyin.sogou.com/zhihui/), 无广告不解释。处理日常使用外还能表情斗图。
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-fb48650d650984ec.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+如果你 win 11 自带的输入法也不错，如果用的很顺心则不用额外安装输入法了。
 
 ## 解压软件
 
@@ -40,7 +44,7 @@ f.lux - 全天候保护眼睛健康软件！自动调整屏幕色温减少蓝光
 
 ## 合集下载地址
 
-<https://share.weiyun.com/9ffNrDMg>
+<https://www.aliyundrive.com/s/GWZdQzhuCRa>
 
 ## 结束语
 
