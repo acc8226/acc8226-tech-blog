@@ -81,8 +81,11 @@ PS 【收费软件】 / GIMP 【PS的替代品且免费】 / 美图秀秀【免�
 * CDBurnerXP 4.3.8.2474 光盘刻录免费多国语言正式版（[官方下载](http://ember.cdburnerxp.se/cdbxp_setup_4.3.8.2474.exe) 3.27M）多国语言（含简体中文）
 
 **虚机机系列**
-• VMware Workstation
-• VirtualBox
+
+* 【推荐】VMware Workstation Player(之前叫 VMware Workstation)
+* [VirtualBox](https://www.virtualbox.org/)
+
+注：在 mac 平台 VMWare 推出了 VMware Fusion Pro 专业版 和 Player 免费版。
 
 **我的小工具集**
 
@@ -102,6 +105,6 @@ PS 【收费软件】 / GIMP 【PS的替代品且免费】 / 美图秀秀【免�
 
 ## 参考
 
-* [《Win7宝典 / Windows7宝典》](http://www.win7china.com/html/6351.html)
-* [软媒-Win10之家](https://win10.ithome.com/)
-* [Win装机必备软件大全](https://www.ithome.com/bibei/)
+* [《Win7宝典 / Windows7 宝典》](http://www.win7china.com/html/6351.html)
+* [软媒-Win10 之家](https://win10.ithome.com/)
+* [Win 装机必备软件大全](https://www.ithome.com/bibei/)

@@ -2,14 +2,14 @@
 
 ### 7.1 Android Gradle插件简介
 
-从 Gradle 的角度看，我们知道 Android 其实就是 Gradle 的一个第三方插件，他是由Google 的Android团队开发的，但是从Android的角度看，Android 插件是基于 Gradle 构建的，和Android Studio完美无缝搭配的新一代构建系统，它不同于 Eclipse+Ant 的搭配，相比于旧的构建系统，它更灵活，更容易配置，还能很方便的创建衍生的版本--也就是我们常用的多渠道包。让我们看看 Android 官方对它的推崇程度：
+从 Gradle 的角度看，我们知道 Android 其实就是 Gradle 的一个第三方插件，他是由 Google 的 Android 团队开发的，但是从Android 的角度看，Android 插件是基于 Gradle 构建的，和Android Studio完美无缝搭配的新一代构建系统，它不同于 Eclipse+Ant 的搭配，相比于旧的构建系统，它更灵活，更容易配置，还能很方便的创建衍生的版本--也就是我们常用的多渠道包。让我们看看 Android 官方对它的推崇程度：
 
 1. 可以很容易的重用代码和资源
 2. 可以很容易的创建应用的衍生版本，所以不管你是创建多个apk，还是不同功能的应用都很方便
 3. 可以很容易的配置、扩展以及自定义构建过程
-4. 和IDE无缝整合
+4. 和 IDE 无缝整合
 
-上面说的 IDE 就是 Android Studio，真是 Android Gradle+Android Studio 搭配，工作不累。
+上面说的 IDE 就是 Android Studio，真是 Android Gradle + Android Studio 搭配，工作不累。
 
 ### 7.2 Android Gradle插件分类
 

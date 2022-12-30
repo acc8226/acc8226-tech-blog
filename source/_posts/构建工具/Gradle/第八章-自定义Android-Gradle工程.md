@@ -38,7 +38,7 @@ public void minSdkVersion(int minSdkVersion) {
 
 ##### 8.1.4 versionCode
 
-它也是ProductFlavor的一个属性，用于配置Android App的内部版本号，是一个整数值，通常用于版本的升级。没有配置的时候从AndroidManifest.xml文件中读取，建议配置。其方法原型是
+它也是 ProductFlavor 的一个属性，用于配置 Android App 的内部版本号，是一个整数值，通常用于版本的升级。没有配置的时候从AndroidManifest.xml 文件中读取，建议配置。其方法原型是
 
 ```java
 public class DefaultProductFlavor extends BaseConfigImpl implements ProductFlavor {
