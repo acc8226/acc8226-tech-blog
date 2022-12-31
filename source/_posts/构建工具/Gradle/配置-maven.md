@@ -2,7 +2,7 @@
 
 gradle_home
 变量名：GRADLE_HOME
-变量值：D:\work\gradle-6.5（gradle安装目录）
+变量值：D:\work\gradle-6.5（gradle 安装目录）
 path（编辑）
 
 变量名：GRADLE_USER_HOME

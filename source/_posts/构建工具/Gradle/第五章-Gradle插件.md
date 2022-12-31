@@ -22,6 +22,7 @@ Gradle 本身内置了很多常用的插件，这些插件基本上能帮我们�
 ##### 5.2.1 应用二进制插件
 
 什么是二进制插件呢？二进制插件就是实现了org.gradle.api.Plugin接口的插件，他们可以有plugin id，下面我们看下如何应用一个java插件。
+
 `apply plugin:'java'`
 
 这样我们把java插件应用到我们的项目中了，其中 'java' 是 Java 插件的plugin id，他是唯一的，对于Gradle自带的核心插件都有一个容易记的短名称作为其 plugin id，比如这里的java，其实它对应类型的是org.gradle.api.plugins.JavaPlugin，所以通过该类型我们也可以应用这个插件。
@@ -53,7 +54,7 @@ Project.apply()方法有三种使用方式，他们是以接受参数的不同�
 
 ```groovy
 apply{
-	plugin 'java'
+    plugin 'java'
 }
 ```
 
@@ -150,8 +151,3 @@ class MyPlugin implements Plugin<Project>{
 ```
 
 以上是我们定义的一个简单的插件，是定义在 build 脚本文件里的，只能我们自己的项目用，如果我们想开发一个独立的插件给所有想用的人怎么做呢？这就需要我们单独创建一个 Groovy 工程作为开发自定义插件的工程了。
-
-- - -
-
-本文属自学历程, 仅供参考
-详情请支持原书 [Android Gradle权威指南](https://yuedu.baidu.com/ebook/14a722970740be1e640e9a3e)

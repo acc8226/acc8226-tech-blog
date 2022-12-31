@@ -6,17 +6,18 @@ categories:
   - 语言-groovy
 ---
 
-The Apache Groovy programming language - Download https://groovy.apache.org/download.html
+The Apache Groovy programming language
+Download <https://groovy.apache.org/download.html>
 
-Groovy 是基于 JVM 虚拟机的一种动态语言，它的语法和 Java 非常相似，由 Java 入门Groovy，基本上没有任何障碍。Groovy 完全兼容 Java，又在此基础上增加了很多动态类型和灵活的特性，比如支持闭包，支持 DSL，可以说它是一门非常灵活的动态脚本语言。
+Groovy 是基于 JVM 虚拟机的一种动态语言，它的语法和 Java 非常相似，由 Java 入门 Groovy，基本上没有任何障碍。Groovy 完全兼容 Java，又在此基础上增加了很多动态类型和灵活的特性，比如支持闭包，支持 DSL，可以说它是一门非常灵活的动态脚本语言。
 
-Groovy 的特性虽然不多，但也有一些，我们不可能在这里都讲完，这也不是这本书的初衷，在这里我挑一些和 Gradle 有关的知识讲，让大家很快的入门 Groovy，并且能看懂这门脚本语言，知道在 Gradl 为什么这么写。其次是每个 Gradle 的 build 脚本文件都是一个 Groovy 脚本文件，你可以在里面写任何符合 Groovy 的代码，比如定义类，生命函数，定义变量等等，而 Groovy 又完全兼容 Java，这就意味着你可以在 build 脚本文件里写任何的 Java代码，非常灵活方便。
+Groovy 的特性虽然不多，但也有一些，我们不可能在这里都讲完，在这里我挑一些和 Gradle 有关的知识讲，让大家很快的入门 Groovy，并且能看懂这门脚本语言，知道在 Gradle 为什么这么写。其次是每个 Gradle 的 build 脚本文件都是一个 Groovy 脚本文件，你可以在里面写任何符合 Groovy 的代码，比如定义类，生命函数，定义变量等等，而 Groovy 又完全兼容 Java，这就意味着你可以在 build 脚本文件里写任何的 Java代码，非常灵活方便。
 
 ## 字符串
 
 字符串，每一门语言都会有对字符串的处理，Java 相对要稍微复杂一些，限制比较多，相比而言，Groovy 非常方便，比如字符串的运算、求值、正则等等。
 
-从现在开始我们算是正式的介绍 Groovy 了，在此之前我们先要知道，在 Groovy 中，分号不是必须的。相信很多用 Java 的朋友都习惯了，每一行的结束必须有分号，但是 Groovy 没这个强制规定，所以你看到的 Gradle 脚本很多都没有分号，其实这个是 Groovy 的特性，而不是 Gradle 的。没有分号的时候，我们阅读的时候每一行默认为有分号就好了。
+从现在开始我们算是正式的介绍 Groovy 了，在此之前我们先要知道，在 Groovy 中，分号不是必须的。相信很多用 Java 的朋友都习惯了，每一行的结束必须有分号，但是 Groovy 没这个强制规定，所以你看到的 Gradle 脚本很多都没有分号，其实这个是 Groovy 的特性，而不是 Gradle 的。没有分号的时候，我们每一行默认为有分号就好了。
 
 在 Groovy 中，**单引号和双引号**都可以定义一个字符串常量（Java 里单引号定义一个字符），不同的是单引号标记的是纯粹的字符串常量，而不是对字符串里的表达式做运算，但是双引号可以。
 
@@ -56,7 +57,7 @@ task list << {
 
 ### Map
 
-``` groovy
+```groovy
 task map << {
     def map = ['width': 1366, 'height': 768]
 
@@ -210,7 +211,7 @@ DSL(Domain Specific Language),领域特定语言，说白了就是专门关注�
 
 Gradle 就是一门 DSL，他是基于 Groovy 的，专门解决自动化构建的 DSL。自动化构建太复杂、太麻烦、太专业，我们理解不了，没问题，专家们就开发了 DSL--Gradle，我们作为开发者只要按照 Gradle DSL 定义的，书写相应的 Gradle 脚本就可以达到我们自动化构建的目的，这也是 DSL 的初衷。
 
-DSL 涉及的东西还有很多，这里我们简单的提一下概念，让大家有个了解，关于这方便更详细的可以阅读世界级软件开发大师 Martin Fowler 的《领域特定语言》，这本书介绍的非常详细。
+DSL 涉及的东西还有很多，这里我们简单的提一下概念，让大家有个了解，关于这方便更详细的可以阅读世界级软件开发大师 Martin Fowler 的《领域特定语言》。
 
 ## 参考
 

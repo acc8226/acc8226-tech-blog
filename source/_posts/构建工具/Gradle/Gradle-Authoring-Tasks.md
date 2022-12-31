@@ -73,7 +73,8 @@ println tasks.named('copy').get().destinationDir
 ```
 
 通过路径访问任务
-```
+
+```groovy
 project(':projectA') {
     task hello
 }
@@ -87,6 +88,7 @@ println tasks.getByPath(':projectA:hello').path
 ```
 
 ## [Configuring tasks 配置任务](https://docs.gradle.org/6.3/userguide/more_about_tasks.html#sec:configuring_tasks)
+
 作为一个例子，让我们看看 Gradle 提供的 Copy 任务。 要为生成创建一个 Copy 任务，您可以在生成脚本中声明:
 
 ```
@@ -98,6 +100,7 @@ task myCopy(type: Copy)
 为了清楚起见，请认识到这个任务的名称是“ myCopy” ，但它的类型是“ Copy”。 您可以具有同一类型的多个任务，但名称不同。 您会发现，这为您实现跨特定类型的所有任务的横切关注点提供了很大的能力。
 
 1. 使用 API 配置任务
+
 ```
 Copy myCopy = tasks.getByName("myCopy")
 myCopy.from 'resources'
@@ -139,7 +142,7 @@ task copy(type: Copy) {
 
 有几种方法可以定义任务的依赖关系。 在“任务依赖项”中，介绍了如何使用任务名称定义依赖项。 任务名称可以引用与任务相同的项目中的任务，也可以引用其他项目中的任务。 若要引用另一个项目中的任务，请在任务名称前面加上它所属项目的路径作为前缀。 下面是一个例子，它增加了一个从 projectA: tasxx 到 projectB: taskY 的依赖项:
 
-```
+```groovy
 project('projectA') {
     task taskX {
         dependsOn ':projectB:taskY'
@@ -158,15 +161,15 @@ project('projectB') {
 }
 ```
 
-```
+```text
 > gradle -q taskX
 taskY
 taskX
 ```
 
 2. 使用任务对象添加依赖项
-```
 
+```groovy
 task taskX {
     doLast {
         println 'taskX'
@@ -182,14 +185,15 @@ task taskY {
 taskX.dependsOn taskY
 ```
 
-```
+```sh
 > gradle -q taskX
 taskY
 taskX
 ```
 
 对于更高级的用途，可以使用惰性块定义任务依赖项。 计算时，块将传递正在计算其依赖关系的任务。 惰性块应该返回单个 Task 或 Task 对象的集合，然后将其视为任务的依赖项。 下面的示例为名称以 lib 开头的项目中的所有任务添加从 tasxx 的依赖项:
-```
+
+```groovy
 task taskX {
     doLast {
         println 'taskX'
@@ -226,8 +230,7 @@ task notALib {
 
 有两个排序规则可用: “必须运行后”和“应该运行后”。
 
-
-```
+```groovy
 task taskX {
     doLast {
         println 'taskX'
@@ -248,7 +251,8 @@ taskY
 ```
 
 添加一个应该在任务排序后运行
-```
+
+```groovy
 task taskX {
     doLast {
         println 'taskX'
@@ -269,11 +273,13 @@ taskY
 ```
 
 请注意，“ B.mustRunAfter (a)”或“ B.shouldRunAfter (a)”并不意味着任务之间存在任何执行依赖关系:
+
 * 可以独立执行任务 a 和任务 b。 只有当两个任务都计划执行时，排序规则才有效。
 * 当使用 -- continue 运行时，b 可以在 a 失败的情况下执行。
 
 如果任务引入了一个订购周期，则忽略“应该在后面运行”的任务排序
-```
+
+```groovy
 task taskX {
     doLast {
         println 'taskX'
@@ -302,7 +308,8 @@ taskX
 ```
 
 ## [Adding a description to a task 向任务添加描述](https://docs.gradle.org/6.3/userguide/more_about_tasks.html#sec:adding_a_description_to_a_task)
-```
+
+```groovy
 task copy(type: Copy) {
    description 'Copies the resource directory to the target directory.'
    from 'resources'
@@ -318,7 +325,8 @@ Gradle 提供了多种跳过任务执行的方法。
 ### [Using a predicate 使用谓词](https://docs.gradle.org/6.3/userguide/more_about_tasks.html#sec:using_a_predicate)
 
 您可以使用 onlyIf ()方法将谓词附加到任务。 只有在谓词计算结果为 true 时才执行任务的操作。 将谓词实现为闭包。 闭包作为参数传递任务，如果任务应该执行，则返回 true，如果应该跳过任务，则返回 false。 谓词是在任务即将执行之前计算的。
-```
+
+```groovy
 task hello {
     doLast {
         println 'hello world'
@@ -339,8 +347,7 @@ BUILD SUCCESSFUL in 0s
 
 如果跳过任务的逻辑不能用谓词表示，则可以使用 StopExecutionException。 如果该异常是由某个操作引发的，则跳过该操作的进一步执行以及该任务的任何后续操作的执行。 生成继续执行下一个任务。
 
-
-```
+```groovy
 task compile {
     doLast {
         println 'We are doing the compile.'
@@ -363,7 +370,8 @@ task myTask {
 ### [Enabling and disabling tasks 启用和禁用任务](https://docs.gradle.org/6.3/userguide/more_about_tasks.html#sec:enabling_and_disabling_tasks)
 
 每个任务都有一个默认为 true 的启用标志。 将其设置为 false 可以防止执行任务的任何操作。 禁用的任务将被标记为“跳过”。
-```
+
+```groovy
 task disableMe {
     doLast {
         println 'This should not be printed if the task is disabled.'
@@ -375,7 +383,7 @@ disableMe.enabled = false
 ### [Task timeouts 任务超时](https://docs.gradle.org/6.3/userguide/more_about_tasks.html#sec:task_timeouts)
 每个任务都有一个超时属性，可用于限制其执行时间。 当任务超时时，其任务执行线程将被中断。 任务将被标记为失败。 终结器任务仍将运行。 如果使用了 -- continue，则其他任务可以在它之后继续运行。 不对中断作出反应的任务不能超时。 Gradle 的所有内置任务都会及时响应超时。
 
-```
+```groovy
 task hangingTask() {
     doLast {
         Thread.sleep(100000)
@@ -384,7 +392,7 @@ task hangingTask() {
 }
 ```
 
-*   [Up-to-date checks (AKA Incremental Build) 最新检查(又名增量构建)](https://docs.gradle.org/6.3/userguide/more_about_tasks.html#sec:up_to_date_checks)
+* [Up-to-date checks (AKA Incremental Build) 最新检查(又名增量构建)](https://docs.gradle.org/6.3/userguide/more_about_tasks.html#sec:up_to_date_checks)
 
 任何构建工具的一个重要部分是能够避免执行已经完成的工作。 考虑编译的过程。 一旦你的源文件已经被编译，就不需要重新编译它们，除非有什么变化影响了输出，比如修改源文件或者删除输出文件。 而且编译可能会花费大量的时间，因此在不需要时跳过这一步可以节省大量的时间。
 
@@ -393,7 +401,7 @@ Gradle 通过一个称为增量构建的特性支持这种开箱即用的行为�
 ## [Task rules 任务规则](https://docs.gradle.org/6.3/userguide/more_about_tasks.html#sec:task_rules)
 有时您希望有一个任务，其行为取决于大量或无限数量的参数值范围。 提供这些任务的一个非常好的表达方式是任务规则:
 
-```
+```groovy
 tasks.addRule("Pattern: ping<ID>") { String taskName ->
     if (taskName.startsWith("ping")) {
         task(taskName) {
@@ -414,7 +422,7 @@ String 参数用作规则的描述，这在 gradle 任务中显示。
 
 规则不仅在从命令行调用任务时使用。 你也可以在基于规则的任务上创建 dependsOn 关系:
 
-```
+```groovy
 tasks.addRule("Pattern: ping<ID>") { String taskName ->
     if (taskName.startsWith("ping")) {
         task(taskName) {
@@ -439,7 +447,8 @@ Pinging: Server2
 ## [Finalizer tasks 终结器任务](https://docs.gradle.org/6.3/userguide/more_about_tasks.html#sec:finalizer_tasks)
 
 当计划运行最终完成的任务时，终结器任务将自动添加到任务图中。
-````
+
+```groovy
 task taskX {
     doLast {
         println 'taskX'
