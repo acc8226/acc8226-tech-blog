@@ -1,4 +1,6 @@
-# 我的笔记
+![build badge](https://github.com/acc8226/page-source/actions/workflows/main.yml/badge.svg)
+
+## 我的笔记
 
 简书文章将陆续迁移至此。本项目是使用 hexo 进行构建的源码，所有的文章都在 [source/_posts](source/_posts) 目录，并按类别存放。
 

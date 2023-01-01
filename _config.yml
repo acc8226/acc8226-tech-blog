@@ -46,6 +46,7 @@ external_link:
   field: site # Apply to the whole site
   exclude: ''
 filename_case: 0
+# 使草稿默认发布到站点中设为 false
 render_drafts: false
 post_asset_folder: true
 relative_link: false
