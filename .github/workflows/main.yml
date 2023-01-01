@@ -33,13 +33,10 @@ jobs:
 
       - name: Push to Gitee
         run: |
-          cd public
-          git config --global init.defaultBranch main
-          git init
-          git config user.name "GithubAction"
-          git config user.email "acc8226@qq.com"
-          git add .
-          git commit -m "committed by github action"
+          cd public && ls
+          git config --global init.defaultBranch main && git init
+          git config user.name "GithubAction" && git config user.email "acc8226@qq.com"
+          git add . && git commit -m "committed by github action"
           git push -f https://${{ secrets.USERNAME }}:${{ secrets.ACCESSTOKEN }}@${{ secrets.HOSTNAME }}/${{ secrets.USERNAME }}/${{ secrets.REPOPATH }} main
 
       - name: Build Gitee Pages
