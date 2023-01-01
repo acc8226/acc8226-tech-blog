@@ -13,3 +13,15 @@ categories:
 
 李跳跳 + 真是好友
 <https://mp.weixin.qq.com/s/HM7S_yDRUwaHnzAT9nVqAQ>
+
+## 分类
+
+数字人民币
+现在已经放开了注册，但是生态还不完善，然后 170 的收集也注册不了，现在我是 153 的号码进行注册的。
+
+## 政务
+
+## 重要
+
+北京云法庭
+<http://sspt.bjcourt.gov.cn/bcourt/onlineCourt/downloadYm>

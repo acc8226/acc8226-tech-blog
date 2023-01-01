@@ -10,15 +10,15 @@ keywords: blog
 author: ac86
 ## 中文简体 zh-CN, 可以选择更改为 en
 language:
-  - zh-CN
-  - en
-timezone: ''
+- zh-CN
+- en
+timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://kailee.gitee.io
-# 永久链接设置为 哈希值
-permalink: :hash/
+# 永久链接设置为 | hash of filename (same as :title) and date (12-hexadecimal)
+permalink: :lang/:hash/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -31,12 +31,14 @@ tag_dir: tags
 archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
+# Hexo 会捕获网址中的第一段以检测语言
 i18n_dir: :lang
 # 指定不进行渲染的文件或文件夹
 skip_render:
 
 # Writing
-new_post_name: :title.md # File name of new posts
+# File name of new posts
+new_post_name: :lang/:title.md
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link:
