@@ -1,5 +1,5 @@
 ---
-title: 自研导出 git 版本差异到剪贴板工具
+title: 导出 git 版本差异到剪贴板脚本
 date: 2022-02-16 20:26:07
 updated: 2022-11-13 12:00:00
 categories:

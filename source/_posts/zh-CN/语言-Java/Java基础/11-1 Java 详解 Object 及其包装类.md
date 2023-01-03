@@ -1,5 +1,5 @@
 ---
-title: 11.1 Java 详解 Object 及其包装类
+title: 11-1 Java 详解 Object 及其包装类
 date: 2017-01-25 11:15:30
 updated: 2022-10-06 20:35:00
 categories:
