@@ -32,7 +32,7 @@ github 地址
 
 using npm
 
-```bash
+```sh
 cd hexo-site
 npm install hexo-theme-next
 ```
@@ -46,7 +46,7 @@ git clone https://github.com/next-theme/hexo-theme-next themes/next
 
 或者转到 NexT 版本Release Page 发布页面. 下载 [稳定版](https://github.com/next-theme/hexo-theme-next/releases)，将 zip 文件解压缩到站点的 themes 目录，并重命名解压缩的文件夹为 next。
 
-在确认不再使用 hexo 自带的 landscape 主题可以自行移除 npm uninstall hexo-theme-landscape。
+如果不想再使用 hexo 自带的 landscape 主题，可以自行移除 `npm uninstall hexo-theme-landscape`。
 
 ### 升级 NexT
 
@@ -445,3 +445,7 @@ highlight:
   exclude_languages:
     - mermaid
 ```
+
+## 参考
+
+next 主题配置很多时候用到了 Font Awesome 的图标，可用去 <https://fontawesome.com/icons> 或者 <https://www.thinkcmf.com/font_awesome.html> 网站搜索并使用。

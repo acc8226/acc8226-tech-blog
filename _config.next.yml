@@ -38,8 +38,8 @@ menu:
   home: / || fa fa-home
   categories: /categories/ || fa fa-th
   archives: /archives/ || fa fa-archive
-  about: /about/ || fa fa-user
   nav: /nav/ || fa fa-compass
+  about: /about/ || fa fa-user
   #tags: /tags/ || fa fa-tags
   #schedule: /schedule/ || fa fa-calendar
   #sitemap: /sitemap.xml || fa fa-sitemap
@@ -260,7 +260,7 @@ bookmark:
 # `Follow me on GitHub` banner in the top-right corner.
 github_banner:
   enable: true
-  permalink: https://github.com/acc8226
+  permalink: https://github.com/acc8226/
   title: Follow me on GitHub
 
 # ---------------------------------------------------------------
