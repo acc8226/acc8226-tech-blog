@@ -188,6 +188,7 @@ demo/Library.class
 您通常希望 JAR 文件的名称包含库版本。 这可以通过在构建脚本中设置顶级版本属性轻松实现，如下所示:
 
 build.gradle中增加
+
 ```
 version = '0.1.0'
 ```

@@ -147,10 +147,10 @@ xstream.aliasField("name", Student.class, "studentName");
 class Student {
     @XStreamAlias("name")   //define field level alias
     @XStreamAsAttribute     //define field as attribute
-	private String studentName;
+    private String studentName;
 
-	@XStreamImplicit        //define list as an implicit collection
-	private List<Note> notes = new ArrayList<Note>();
+    @XStreamImplicit        //define list as an implicit collection
+    private List<Note> notes = new ArrayList<Note>();
 ```
 
 为了告诉 XStream 框架来处理注释，需要XML序列化之前添加下面的命令。
@@ -197,80 +197,80 @@ import com.thoughtworks.xstream.io.HierarchicalStreamWriter;
 import com.thoughtworks.xstream.io.xml.StaxDriver;
 
 public class XStreamTester {
-	public static void main(String args[]) {
-		XStreamTester tester = new XStreamTester();
-		XStream xstream = new XStream(new StaxDriver());
-		Student student = tester.getStudentDetails();
-		xstream.autodetectAnnotations(true);
-		xstream.registerConverter(new StudentConverter()); // 注册转换器
-		// Object to XML Conversion
-		String xml = xstream.toXML(student);
-		System.out.println(xml);
-	}
+    public static void main(String args[]) {
+        XStreamTester tester = new XStreamTester();
+        XStream xstream = new XStream(new StaxDriver());
+        Student student = tester.getStudentDetails();
+        xstream.autodetectAnnotations(true);
+        xstream.registerConverter(new StudentConverter()); // 注册转换器
+        // Object to XML Conversion
+        String xml = xstream.toXML(student);
+        System.out.println(xml);
+    }
 
-	private Student getStudentDetails() {
-		Student student = new Student("Mahesh", "Parashar");
-		return student;
-	}
+    private Student getStudentDetails() {
+        Student student = new Student("Mahesh", "Parashar");
+        return student;
+    }
 
 }
 
 @XStreamAlias("student")
 class Student {
 
-	@XStreamAlias("name")
-	private Name studentName;
+    @XStreamAlias("name")
+    private Name studentName;
 
-	public Student(String firstName, String lastName) {
-		this.studentName = new Name(firstName, lastName);
-	}
+    public Student(String firstName, String lastName) {
+        this.studentName = new Name(firstName, lastName);
+    }
 
-	public Name getName() {
-		return studentName;
-	}
+    public Name getName() {
+        return studentName;
+    }
 }
 
 class Name {
-	private String firstName;
-	private String lastName;
+    private String firstName;
+    private String lastName;
 
-	public Name(String firstName, String lastName) {
-		this.firstName = firstName;
-		this.lastName = lastName;
-	}
+    public Name(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
 
-	public String getFirstName() {
-		return firstName;
-	}
+    public String getFirstName() {
+        return firstName;
+    }
 
-	public String getLastName() {
-		return lastName;
-	}
+    public String getLastName() {
+        return lastName;
+    }
 }
 
 class StudentConverter implements Converter {
 
-	public void marshal(Object value, HierarchicalStreamWriter writer,
-			MarshallingContext context) {
-		Student student = (Student) value;
-		writer.startNode("name");
-		writer.setValue(student.getName().getFirstName() + ","
-				+ student.getName().getLastName());
-		writer.endNode();
-	}
+    public void marshal(Object value, HierarchicalStreamWriter writer,
+            MarshallingContext context) {
+        Student student = (Student) value;
+        writer.startNode("name");
+        writer.setValue(student.getName().getFirstName() + ","
+                + student.getName().getLastName());
+        writer.endNode();
+    }
 
-	public Object unmarshal(HierarchicalStreamReader reader,
-			UnmarshallingContext context) {
-		reader.moveDown();
-		String[] nameparts = reader.getValue().split(",");
-		Student student = new Student(nameparts[0], nameparts[1]);
-		reader.moveUp();
-		return student;
-	}
+    public Object unmarshal(HierarchicalStreamReader reader,
+            UnmarshallingContext context) {
+        reader.moveDown();
+        String[] nameparts = reader.getValue().split(",");
+        Student student = new Student(nameparts[0], nameparts[1]);
+        reader.moveUp();
+        return student;
+    }
 
-	public boolean canConvert(Class object) {
-		return object.equals(Student.class);
-	}
+    public boolean canConvert(Class object) {
+        return object.equals(Student.class);
+    }
 }
 ```
 
@@ -290,35 +290,35 @@ import com.thoughtworks.xstream.io.json.JsonHierarchicalStreamDriver;
 import com.thoughtworks.xstream.io.json.JsonWriter;
 
 public class XStreamTester {
-	public static void main(String args[]) {
-		XStream xstream = new XStream(new JsonHierarchicalStreamDriver() {
-			public HierarchicalStreamWriter createWriter(Writer writer) {
-				return new JsonWriter(writer, JsonWriter.DROP_ROOT_MODE);
-			}
-		});
+    public static void main(String args[]) {
+        XStream xstream = new XStream(new JsonHierarchicalStreamDriver() {
+            public HierarchicalStreamWriter createWriter(Writer writer) {
+                return new JsonWriter(writer, JsonWriter.DROP_ROOT_MODE);
+            }
+        });
 
-		Student student = new Student("Mahesh", "Parashar");
-		xstream.setMode(XStream.NO_REFERENCES);
-		xstream.alias("student", Student.class);
-		System.out.println(xstream.toXML(student));
-	}
+        Student student = new Student("Mahesh", "Parashar");
+        xstream.setMode(XStream.NO_REFERENCES);
+        xstream.alias("student", Student.class);
+        System.out.println(xstream.toXML(student));
+    }
 }
 
 @XStreamAlias("student")
 class Student {
 
-	public String firstName;
-	public String lastName;
+    public String firstName;
+    public String lastName;
 
-	public Student(String firstName, String lastName) {
-		this.firstName = firstName;
-		this.lastName = lastName;
-	}
+    public Student(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
 
-	public String toString() {
-		return "Student [ firstName: " + firstName + ", lastName: " + lastName
-				+ " ]";
-	}
+    public String toString() {
+        return "Student [ firstName: " + firstName + ", lastName: " + lastName
+                + " ]";
+    }
 }
 ```
 
@@ -335,61 +335,61 @@ String xml = xstream.toXML(student);
 
 示例
 ```java
-		XStream xs = new XStream(new DomDriver());
-		System.out.println(xs.toXML(new Object()));
-		// <object/>
+        XStream xs = new XStream(new DomDriver());
+        System.out.println(xs.toXML(new Object()));
+        // <object/>
 
-		System.out.println(xs.toXML(new Integer(21)));
-		// <int>21</int>
+        System.out.println(xs.toXML(new Integer(21)));
+        // <int>21</int>
 
-		System.out.println(xs.toXML("Hello"));
-		// <string>Hello</string>
+        System.out.println(xs.toXML("Hello"));
+        // <string>Hello</string>
 
-		List<String> list = new ArrayList<String>();
-		for (int i = 0; i < 3; i++) {
-			list.add(String.valueOf(i));
-		}
-		System.out.println(xs.toXML(list));
-		/*<list>
-		  <string>0</string>
-		  <string>1</string>
-		  <string>2</string>
-		</list>*/
+        List<String> list = new ArrayList<String>();
+        for (int i = 0; i < 3; i++) {
+            list.add(String.valueOf(i));
+        }
+        System.out.println(xs.toXML(list));
+        /*<list>
+          <string>0</string>
+          <string>1</string>
+          <string>2</string>
+        </list>*/
 
-		Map<String, String> map = new HashMap<String, String>();
-		map.put("aa", "AA");
-		map.put("bb", "BB");
-		System.out.println(xs.toXML(map));
-		/*
-		<map>
-		  <entry>
-		    <string>aa</string>
-		    <string>AA</string>
-		  </entry>
-		  <entry>
-		    <string>bb</string>
-		    <string>BB</string>
-		  </entry>
-		</map>
-		*/
+        Map<String, String> map = new HashMap<String, String>();
+        map.put("aa", "AA");
+        map.put("bb", "BB");
+        System.out.println(xs.toXML(map));
+        /*
+        <map>
+          <entry>
+            <string>aa</string>
+            <string>AA</string>
+          </entry>
+          <entry>
+            <string>bb</string>
+            <string>BB</string>
+          </entry>
+        </map>
+        */
 
-		List<Map<String, String>> mapList = new ArrayList<Map<String, String>>(1);
-		mapList.add(map);
-		System.out.println(xs.toXML(mapList));
-		/*
-		<list>
-		  <map>
-		    <entry>
-		      <string>aa</string>
-		      <string>AA</string>
-		    </entry>
-		    <entry>
-		      <string>bb</string>
-		      <string>BB</string>
-		    </entry>
-		  </map>
-		</list>
-		*/
+        List<Map<String, String>> mapList = new ArrayList<Map<String, String>>(1);
+        mapList.add(map);
+        System.out.println(xs.toXML(mapList));
+        /*
+        <list>
+          <map>
+            <entry>
+              <string>aa</string>
+              <string>AA</string>
+            </entry>
+            <entry>
+              <string>bb</string>
+              <string>BB</string>
+            </entry>
+          </map>
+        </list>
+        */
 ```
 
 **对象转 xml 的注意事项**

@@ -46,7 +46,7 @@ typeof s; // Returns 'object'
 
 模板字符串是一种允许内嵌表达式的 String 字面值. 可以用它实现多行字符串或者字符串内插等特性.
 
-模板字符串使用反勾号 (` `) ([grave accent](https://en.wikipedia.org/wiki/Grave_accent)) 包裹内容而不是单引号或双引号. 模板字符串可以包含占位符. 占位符用美元符号和花括号标识 (`${expression}`).
+模板字符串使用反勾号 ([grave accent](https://en.wikipedia.org/wiki/Grave_accent)) 包裹内容而不是单引号或双引号. 模板字符串可以包含占位符。占位符用美元符号和花括号标识 (`${expression}`).
 
 * 多行
 

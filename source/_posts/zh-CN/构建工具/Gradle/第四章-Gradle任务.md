@@ -78,7 +78,7 @@ myTask.doLast{
 }
 ```
 
-### 4.4 <<操作符
+### 4.4 << 操作符
 
 详细读者们已经看到了我们很多例子中使用了这个操作符，这一小节我们就从源代码的角度来讲解下这个操作符，让大家对它有个更深入的了解。
 <<操作符在 Gradle 的 Task 上是 doLast 方法的短标记形式，也就是说<<可以代替doLast
@@ -117,9 +117,9 @@ class CustomTask extends DefaultTask{
 
 ![Output](http://upload-images.jianshu.io/upload_images/1662509-141a96e9aac9773c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-结果和我们期望的一样。我们前面讲了，执行Tasks的时候就是在遍历执行actions List，那么要达到这种doFirst、doSelf、doLast顺序的目的，就必须把doFirst的Actions放在actions List的最前面，把doSelf的Actions放在List中间，把doLast的Actions放在List最后面，这样才能达到按约定顺序执行的目的。
+结果和我们期望的一样。我们前面讲了，执行Tasks的时候就是在遍历执行 actions List，那么要达到这种 doFirst、doSelf、doLast 顺序的目的，就必须把 doFirst 的 Action s放在 actions List 的最前面，把 doSelf 的 Actions 放在 List 中间，把doLast的Actions放在List最后面，这样才能达到按约定顺序执行的目的。
 
-当我们使用task方法创建task1这个任务的时候，Gradle会解析其带有TaskAction标注的方法作为其Task执行的Action，然后通过Task的prependParallelSafeAction方法把该Action添加到actions List里：
+当我们使用 task 方法创建task1这个任务的时候，Gradle会解析其带有TaskAction标注的方法作为其Task执行的Action，然后通过Task的prependParallelSafeAction方法把该Action添加到actions List里：
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-f291b3a5a12702c1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -180,7 +180,7 @@ Task 中有个 enabled 属性，用于启用和禁用任务，默认是 true 表
 
 NamedDomainObjectCollection是一个具有唯一不变名字的域对象的集合，它里面所有的元素都有一个唯一不变的名字，该名字是String类型，所以我们可以通过名字获取该元素，比如我们通过任务的名字获取该任务。
 
-说完唯一不变的名字，我们再说规则，NamedDomainObjectCollection 的规则有什么用呢？我们上面说了要想获取一个NamedDomainObjectCollection的元素是通过一个唯一的名字获取的，那么这个唯一的名字可能在NamedDomainObjectCollection中并不存在，具体到任务中就是说你想获取的这个任务不存在，这时候就会调用我们添加的规则来处理这种异常情况，我们看下源代码：
+说完唯一不变的名字，我们再说规则，NamedDomainObjectCollection 的规则有什么用呢？我们上面说了要想获取一个NamedDomainObjectCollection 的元素是通过一个唯一的名字获取的，那么这个唯一的名字可能在 NamedDomainObjectCollection 中并不存在，具体到任务中就是说你想获取的这个任务不存在，这时候就会调用我们添加的规则来处理这种异常情况，我们看下源代码：
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-30925dabf635a35f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 

@@ -1,7 +1,7 @@
 ---
 title: groovy
 date: 2022-08-12 19:06:00
-updated: 2022-08-12 19:06:00
+updated: 2023-01-04 13:25:00
 categories:
   - 语言-groovy
 ---
@@ -12,6 +12,21 @@ Download <https://groovy.apache.org/download.html>
 Groovy 是基于 JVM 虚拟机的一种动态语言，它的语法和 Java 非常相似，由 Java 入门 Groovy，基本上没有任何障碍。Groovy 完全兼容 Java，又在此基础上增加了很多动态类型和灵活的特性，比如支持闭包，支持 DSL，可以说它是一门非常灵活的动态脚本语言。
 
 Groovy 的特性虽然不多，但也有一些，我们不可能在这里都讲完，在这里我挑一些和 Gradle 有关的知识讲，让大家很快的入门 Groovy，并且能看懂这门脚本语言，知道在 Gradle 为什么这么写。其次是每个 Gradle 的 build 脚本文件都是一个 Groovy 脚本文件，你可以在里面写任何符合 Groovy 的代码，比如定义类，生命函数，定义变量等等，而 Groovy 又完全兼容 Java，这就意味着你可以在 build 脚本文件里写任何的 Java代码，非常灵活方便。
+
+## 示例
+
+```groovy
+class Example {
+   static void main(String[] args) {
+      // Using a simple println statement to print output to the console
+      println('Hello World')
+      def a = 123
+      println(a)
+      String zhangsan = 'zhang'
+      println(zhangsan)
+   }
+}
+```
 
 ## 字符串
 
@@ -77,7 +92,7 @@ task map << {
 ### 方法
 
 * 括号是可以省略的
-* return是可以不写的
+* return 是可以不写的
 
 ```groovy
 task testMethod <<{
@@ -214,5 +229,8 @@ Gradle 就是一门 DSL，他是基于 Groovy 的，专门解决自动化构建�
 DSL 涉及的东西还有很多，这里我们简单的提一下概念，让大家有个了解，关于这方便更详细的可以阅读世界级软件开发大师 Martin Fowler 的《领域特定语言》。
 
 ## 参考
+
+Groovy 教程_w3cschool
+<https://www.w3cschool.cn/groovy/>
 
 本文纯属自学历程 + 一些记录，绝大部分内容来自原书 [Android Gradle权威指南](https://yuedu.baidu.com/ebook/14a722970740be1e640e9a3e)。觉得对你有用，请支持原书。

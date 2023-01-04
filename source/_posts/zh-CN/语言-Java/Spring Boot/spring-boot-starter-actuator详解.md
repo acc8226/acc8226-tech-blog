@@ -1,5 +1,5 @@
 ---
-title: spring-boot-starter-actuator详解
+title: spring-boot-starter-actuator 详解
 date: 2022-12-10 23:07:00
 updated: 2022-12-10 23:07:00
 categories:

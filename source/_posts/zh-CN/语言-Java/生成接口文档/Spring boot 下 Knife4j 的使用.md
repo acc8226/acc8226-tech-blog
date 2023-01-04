@@ -14,5 +14,5 @@ tags:
 Knife4j · 集 Swagger2 及 OpenAPI3 为一体的增强解决方案. | Knife4j
 <https://doc.xiaominfo.com/>
 
-knife4j: knife4j是为Java MVC框架集成Swagger生成Api文档的工具,前身是swagger-bootstrap-ui
+knife4j: knife4j 是为 Java MVC 框架集成 Swagger 生成 Api 文档的工具,前身是 swagger-bootstrap-ui
 <https://gitee.com/xiaoym/knife4j>
