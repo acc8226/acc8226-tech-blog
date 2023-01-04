@@ -8,6 +8,10 @@ categories:
 
 获取每日必应壁纸并自动输出到 md 文件的 kotlin 小程序。
 
+## 项目地址
+
+<https://gitee.com/kaiLee/bing-wallpaper-kotlin>
+
 ![谁在打盹儿？](https://cn.bing.com/th?id=OHR.SandhillSleeping_ZH-CN8483997851_UHD.jpg&w=1000)
 
 今日：2023-01-03 | 标题：谁在打盹儿？ | 版权：博斯克·德尔·阿帕奇国家野生动物保护区的沙丘鹤，美国新墨西哥州 (© Jay Goodrich/Tandem Stills + Motion) [download 4k](https://cn.bing.com/th?id=OHR.SandhillSleeping_ZH-CN8483997851_UHD.jpg)

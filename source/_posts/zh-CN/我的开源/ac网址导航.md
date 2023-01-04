@@ -10,6 +10,10 @@ categories:
 
 注：本项目修改于刘明野的工具箱 <https://tools.liumingye.cn/> 右键并查看源代码。如有侵权，请联系我们，本站会尽快删除。
 
+## 项目地址
+
+<https://gitee.com/kaiLee/nav>
+
 ## 网址导航代码修改过程
 
 1. 右键查看源代码，去除自认为不需要元素并保存 css 和 js 等资源到本地

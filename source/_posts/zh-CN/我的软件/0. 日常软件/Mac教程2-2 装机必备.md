@@ -101,7 +101,7 @@ Mac App Store 上的“HandShaker - 安卓手机管理工具”
 Mac App Store 上的“每日英语听力 - 英语听力的最佳途径”
 <https://itunes.apple.com/cn/app/mei-ri-ying-yu-ting-li-ying/id734383760?mt=12>
 
-Reeder 热门的Rss订阅
+Reeder 热门的 Rss 订阅
 
 绘图类似Ps: GIMP - Downloads
 <https://www.gimp.org/downloads/>
@@ -124,7 +124,7 @@ NightOwl
 
 ## 程序员用到
 
-Apps - Mac 开发配置手册 - 极客学院Wiki
+Apps - Mac 开发配置手册 - 极客学院 Wiki
 <http://wiki.jikexueyuan.com/project/mac-dev-setup/apps.html>
 
 macOS 缺失的软件包的管理器 — macOS 缺失的软件包的管理器
@@ -139,7 +139,7 @@ Charles Web Debugging Proxy
 <https://www.charlesproxy.com/>
 
 SVN客户端
-Cornerstone for mac|Cornerstone Mac版下载 V3.0.3 - PC6苹果网
+Cornerstone for mac|Cornerstone Mac 版下载 V3.0.3 - PC6苹果网
 <http://www.pc6.com/mac/111958.html>
 
 Dash for macOS - API Documentation Browser, Snippet Manager - Kapeli

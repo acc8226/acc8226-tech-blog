@@ -9,7 +9,7 @@ categories:
 
 微软的 CMD 也就是命令提示符已经伴随了我们很多年了，这些年来 CMD 已经勤勤恳恳地默默工作着，虽然没有图形化的界面，但是其干净整洁的操作环境仍然受到了大家的欢迎。
 
-随着微软 Win10 系统的流行，更加强大的 PowerShell 崭露头角，采用.net 架构编写的Powershell性能更加强大，实现的功能也丰富。此时略显老迈的 CMD 心有力而力不足。而微软也尝试使用各种方法使 PowerShell 取代目前的 CMD。
+随着微软 Win10 系统的流行，更加强大的 PowerShell 崭露头角，采用.net 架构编写的 Powershell 性能更加强大，实现的功能也丰富。此时略显老迈的 CMD 心有力而力不足。而微软也尝试使用各种方法使 PowerShell 取代目前的 CMD。
 
 从 Win10 Build 14971 开始，用户已经无法通过按住 Shift、右击资源管理器空白处来选择“在此处打开命令提示符”了，那么对于这些用户来说，究竟有没有办法将 CMD 找回来呢？当然办法还是有的，这时候就要用到万能的注册表了。
 
@@ -41,7 +41,7 @@ categories:
 
 > “powershell.exe -noexit -command Set-Location -literalPath '%V'”
 
-从Win10 Build 14971 开始，微软就开始将 Powershell 取代 CMD 成为主命令Shell，取代的决心非常显著，但微软也提供了折衷的解决方案，通过“设置——个性化——任务栏”，关闭以下功能即可回到此前状态。但在最新的版本中，目前该选项只能控制右击开始按钮的功能选项，无法还原右键菜单，所以感到不习惯的朋友不妨参照以上方法设置下。
+从Win10 Build 14971 开始，微软就开始将 Powershell 取代 CMD 成为主命令 Shell，取代的决心非常显著，但微软也提供了折衷的解决方案，通过“设置——个性化——任务栏”，关闭以下功能即可回到此前状态。但在最新的版本中，目前该选项只能控制右击开始按钮的功能选项，无法还原右键菜单，所以感到不习惯的朋友不妨参照以上方法设置下。
 
 ![image](http://upload-images.jianshu.io/upload_images/1662509-e34c7a669740a461.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240 "Win10小技巧：如何将在此处打开命令改为 CMD 或 Powershell？")
 

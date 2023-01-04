@@ -8,6 +8,10 @@ categories:
 
 由于项目组规定每次发布版本需要记录文件变动差异，于是乎自学了一些 Windows 批处理内容，写了个批处理脚本方便统计。
 
+## 项目地址
+
+<https://gitee.com/kaiLee/my-cmd>
+
 ## 介绍
 
 导出 git 版本差异到剪贴板

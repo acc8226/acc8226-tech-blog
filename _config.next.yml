@@ -120,7 +120,7 @@ toc:
 # ---------------------------------------------------------------
 
 # Show multilingual switcher in footer.
-language_switcher: true
+language_switcher: false
 
 footer:
   # Specify the year when the site was setup. If not defined, current year will be used.
@@ -136,7 +136,6 @@ footer:
     color: "#808080"
   # If not defined, `author` from Hexo `_config.yml` will be used.
   copyright: ac86<br/><a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral"><img src="/images/upyun_logo.png" style="min-width:263px; width:32.3%;"/></a>
-
   # Powered by Hexo & NexT
   powered: false
 
@@ -178,8 +177,8 @@ related_posts:
 # Post edit
 # Easily browse and edit blog source code online.
 post_edit:
-  enable: false
-  url: https://github.com/user-name/repo-name/tree/branch-name/subdirectory-name/ # Link for view source
+  enable: true
+  url: https://github.com/acc8226/page-source/tree/main/source/_posts/zh-CN/ # Link for view source
   #url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name/ # Link for fork & edit
 
 # Show previous post and next post in post footer if exists
