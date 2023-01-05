@@ -11,4 +11,7 @@ MinIO | Code and downloads to create high performance object storage
 <https://min.io/download#/>
 
 启动
+
+```sh
 minio.exe server D:\minioData
+```
