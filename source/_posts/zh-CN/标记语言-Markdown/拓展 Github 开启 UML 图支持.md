@@ -72,8 +72,8 @@ GitLab Flavored Markdown | GitLab
 GitLab Markdown - 《Gitlab 中文文档》 - 书栈网 · BookStack
 <https://www.bookstack.cn/read/gitlab-doc-zh/docs-408.md#mermaid>
 
-Mermaid：如何在Markdown文本中添加流程图，附支持github的方法_DenryDu的博客-CSDN博客_gitlab mermaid
+Mermaid：如何在 Markdown 文本中添加流程图，附支持github的方法_DenryDu的博客-CSDN博客_gitlab mermaid
 <https://blog.csdn.net/weixin_43661154/article/details/112101437>
 
-Typora通过mermaid使用流程图、脑图-CSDN博客_mermaid 思维导图
+Typora 通过 mermaid 使用流程图、脑图-CSDN博客_mermaid 思维导图
 <https://blog.csdn.net/Alexhcf/article/details/112801877>
