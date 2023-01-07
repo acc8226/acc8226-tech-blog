@@ -11,7 +11,7 @@ PowerShell 是一种跨平台的任务自动化解决方案，由命令行 shell
 
 ## 示例
 
-查询服务名称为“ssh-agent”的服务。
+查询服务名称为 “ssh-agent” 的服务。
 Get-Service ssh-agent
 
 查询服务名称为“ssh-agent”的服务，若查询到则启动

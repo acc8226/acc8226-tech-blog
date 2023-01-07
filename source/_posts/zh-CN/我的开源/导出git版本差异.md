@@ -26,11 +26,6 @@ categories:
 D:\gitlab\abcProject "669ae28118f1b67fd45^^" 669ae28118f1b67fd
 ```
 
-## 项目地址
-
-ac86/my-cmd - 码云
-<https://gitee.com/kaiLee/my-cmd/>
-
 ## 源码展示
 
 ```bat

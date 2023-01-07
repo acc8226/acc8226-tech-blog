@@ -113,7 +113,7 @@ Error: Could not symlink .
 /usr/local/opt is not writable.
 ```
 
-使用`$ sudo chown -R $(whoami):admin /usr/local`发现还是没用, 最终手动创建/user/local/opt 文件夹解决了(**Mac High Sierra 中不能改变/usr/local的拥有者的问题**)
+使用`$ sudo chown -R $(whoami):admin /usr/local`发现还是没用, 最终手动创建/user/local/opt 文件夹解决了(**Mac High Sierra 中不能改变 /usr/local 的拥有者的问题**)
 
 ## 常用命令
 
@@ -171,7 +171,6 @@ server {
 ### Nginx 下安装 SSL 证书
 
 1. 申请证书 todo
-
 2. 安装证书
 
 首先找到Nginx 配置目录.例如我的目录在`/etc/nginx`
