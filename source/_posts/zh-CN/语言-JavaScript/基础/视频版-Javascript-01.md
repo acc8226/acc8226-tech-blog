@@ -239,8 +239,8 @@ parseInt("D") // 默认为10进制, 结果为NaN
         }
 ```
 
-if语句
+if 语句
 包含只有if, 只有if和else, 和if elseif嵌套语句三种情况
 
-switch语句
+switch 语句
 用的是`===`全等号

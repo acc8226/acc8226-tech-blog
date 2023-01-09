@@ -1,5 +1,7 @@
 ---
 title: JS-声明
+date: 2020-01-22 23:20:55
+updated: 2020-01-22 23:20:55
 categories:
   - 语言
   - JavaScript
@@ -16,6 +18,7 @@ tags:
  > 简而言之, [`var`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/statements/var "var 声明语句声明一个变量，并可选地将其初始化为一个值。")声明的变量只能是全局或者整个函数块的。
 
 将赋值给未声明变量的值在执行赋值时将其隐式地创建为全局变量（它将成为全局对象的属性）。声明和未声明变量之间的差异是：
+
 1. 声明变量的作用域限制在其声明位置的上下文中，而非声明变量总是全局的。
 
 ```js

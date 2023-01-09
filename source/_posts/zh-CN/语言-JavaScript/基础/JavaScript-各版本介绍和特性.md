@@ -268,12 +268,12 @@ JavaScript1.8中的一个修改是对JavaScript1.7中引入的数组键值结构
 
 ## JavaScript 1.8.1 新特性
 
-*   [Object.getPrototypeOf()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getPrototypeOf)
-*   [原生支持 JSON](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_native_JSON)
-*   [String.prototype.trim()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim)
-*   [String.prototype.trimLeft()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/TrimLeft)
-*   [String.prototype.trimRight()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/TrimRight)
-*   [String.prototype.startsWith()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith)
+* [Object.getPrototypeOf()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getPrototypeOf)
+* [原生支持 JSON](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_native_JSON)
+* [String.prototype.trim()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim)
+* [String.prototype.trimLeft()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/TrimLeft)
+* [String.prototype.trimRight()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/TrimRight)
+* [String.prototype.startsWith()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith)
 
 ## JavaScript 1.8.1 功能更新
 
@@ -302,17 +302,17 @@ Function.prototype.bind()	创建一个新函数,当这个函数被调用时,函�
 
 ### ECMAScript5 新特性
 
-*   [get](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/get "JavaScript/Reference/Operators/Special Operators/get Operator") 和 [set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/set "JavaScript/Reference/Operators/Special Operators/set Operator") 操作现在允许标识为数值或字符串. [bug 520696](https://bugzilla.mozilla.org/show_bug.cgi?id=520696 "FIXED: Implement support for |{ get "string literal"() { /* ... */ }, get 5.4() { /* ... */ }, 6.72: 3 }|")
-*   [Function.apply()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply "JavaScript/Reference/Global Objects/Function/apply") 能接受任意的类数组的对象作为参数列表,而不是只支持真正数组.
-*   [支持严格模式](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope/Strict_mode "JavaScript/Strict mode")
-*   [Array.toString()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toString "JavaScript/Reference/Global Objects/Array/toString") 现在允许在非数组上使用,如果允许则会返回调用其 [join()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join "JavaScript/Reference/Global Objects/Array/join") 方法,否则调用 [toString()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString "JavaScript/Reference/Global Objects/Object/toString") 方法.
+* [get](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/get "JavaScript/Reference/Operators/Special Operators/get Operator") 和 [set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/set "JavaScript/Reference/Operators/Special Operators/set Operator") 操作现在允许标识为数值或字符串. [bug 520696](https://bugzilla.mozilla.org/show_bug.cgi?id=520696 "FIXED: Implement support for |{ get "string literal"() { /* ... */ }, get 5.4() { /* ... */ }, 6.72: 3 }|")
+* [Function.apply()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply "JavaScript/Reference/Global Objects/Function/apply") 能接受任意的类数组的对象作为参数列表,而不是只支持真正数组.
+* [支持严格模式](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope/Strict_mode "JavaScript/Strict mode")
+* [Array.toString()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toString "JavaScript/Reference/Global Objects/Array/toString") 现在允许在非数组上使用,如果允许则会返回调用其 [join()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join "JavaScript/Reference/Global Objects/Array/join") 方法,否则调用 [toString()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString "JavaScript/Reference/Global Objects/Object/toString") 方法.
 
 ### JavaScript 1.8.5 中功能变化
 
 * ISO 8601 在Date中支持: [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date "https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date") 对象的 [parse()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse "https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/parse") 方法现在支持简单的ISO 8601 格式化时间字符串.
 * 全局对象变为只读: 按照ECMAScript 5 标准,[NaN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN "JavaScript/Reference/Global Objects/NaN"), [Infinity](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity "JavaScript/Reference/Global Objects/Infinity"), 和 [undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined "JavaScript/Reference/Global Objects/undefined") 全局对象变为只读.
-*   [obj.__parent__](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/Parent "JavaScript/Reference/Global Objects/Object/Parent") and obj.__count__ 过时. 部分原因如下:: [SpiderMonkey change du jour: the special __parent__ property has been removed](http://whereswalden.com/2010/05/07/spidermonkey-change-du-jour-the-special-__parent__-property-has-been-removed/ "http://whereswalden.com/2010/05/07/spidermonkey-change-du-jour-the-special-__parent__-property-has-been-removed/") [bug 551529](https://bugzilla.mozilla.org/show_bug.cgi?id=551529 "FIXED: Remove __count__") & [bug 552560](https://bugzilla.mozilla.org/show_bug.cgi?id=552560 "FIXED: Remove __parent__").
-*   [JSON.parse()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse "Using native JSON")不再支持逗号结尾.
+* [obj.__parent__](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/Parent "JavaScript/Reference/Global Objects/Object/Parent") and obj.__count__ 过时. 部分原因如下:: [SpiderMonkey change du jour: the special __parent__ property has been removed](http://whereswalden.com/2010/05/07/spidermonkey-change-du-jour-the-special-__parent__-property-has-been-removed/ "http://whereswalden.com/2010/05/07/spidermonkey-change-du-jour-the-special-__parent__-property-has-been-removed/") [bug 551529](https://bugzilla.mozilla.org/show_bug.cgi?id=551529 "FIXED: Remove __count__") & [bug 552560](https://bugzilla.mozilla.org/show_bug.cgi?id=552560 "FIXED: Remove __parent__").
+* [JSON.parse()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse "Using native JSON")不再支持逗号结尾.
 
 ## 其他
 
