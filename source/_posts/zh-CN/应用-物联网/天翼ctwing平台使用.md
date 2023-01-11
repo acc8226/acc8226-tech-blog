@@ -1,5 +1,5 @@
 ---
-title: 天翼ctwing平台使用
+title: 天翼 ctwing 平台使用
 date: 2023-01-09 10:38:00
 updated: 2023-01-09 10:38:00
 categories:
@@ -27,5 +27,5 @@ tags:
 
 ### HTTP(S)接入
 
-HTTP协议设备接入平台的地址为 <http://http.ctwing.cn>，端口为 8991。支持 ipv4 和 ipv6 接入。
-HTTPS协议设备接入平台的地址为 <https://http.ctwing.cn>，端口为8992。支持 ipv4 和 ipv6 接入。
+HTTP 协议设备接入平台的地址为 <http://http.ctwing.cn>，端口为 8991。支持 ipv4 和 ipv6 接入。
+HTTPS 协议设备接入平台的地址为 <https://http.ctwing.cn>，端口为 8992。支持 ipv4 和 ipv6 接入。

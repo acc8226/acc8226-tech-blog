@@ -1,15 +1,13 @@
 ---
-title: 跨平台-Chrome 和 Firefox 使用包含插件
+title: Chrome 和 Firefox 拓展插件
 date: 2020-09-12 10:53:39
-updated: 2022-11-16 13:28:02
+updated: 2023-01-11 13:28:00
 categories:
   - 收藏
-  - 开发软件
+  - 拓展软件
 ---
 
-## chrome 的使用
-
-### 常用快捷键
+## 浏览器的通用快捷键
 
 新建标签
 Ctrl + T
@@ -19,6 +17,18 @@ Ctrl + W
 
 新建窗口
 Ctrl + N
+
+新建下载
+Ctrl + J
+
+切换标签页
+Ctrl + TAB
+
+反方向切换标签页
+Ctrl + Alt + TAB
+
+前进 / 后退
+Alt + 左方向键 / Alt + 右方向键
 
 有时，我们会发现某个标签页本不该关闭，却为时已晚。正因如此，在 Chrome 中，可以通过几个简便的按键操作，重新打开关闭的标签页。
 Windows, Chrome OS & Linux: Ctrl + Shift + T
@@ -40,12 +50,15 @@ Windows, Chrome OS & Linux: Ctrl + D
 向上翻页
 Shift + 空格键 或者 pageUp 键
 
-### 常用插件
+## 浏览器的通用插件
 
-#### uBlock Origin （去广告）
+### 常用
 
-uBlock Origin - 一款不可多得的浏览器广告拦截插件，使用体验比 Adblock 效果更好。
-<https://www.cnplugins.com/office/block/>
+#### 腾讯交互翻译 TranSmart
+
+<https://transmart.qq.com/zh-CN/download>
+
+### 专业性
 
 #### 浏览器辅助神器：油猴
 
@@ -69,6 +82,29 @@ Open the F**king URL Right Now
 **免费视频在线解析**
 <https://greasyfork.org/zh-CN/scripts/27349>
 
+## chrome 的使用
+
+### 常用快捷键
+
+#### uBlock Origin （去广告）
+
+### 常用-插件
+
+#### uBlock Origin
+
+一款不可多得的浏览器广告拦截插件，使用体验比 Adblock 效果更好。
+<https://www.cnplugins.com/office/block/>
+
+#### 彩云小译
+
+在线翻译  (比百度 / 谷歌更智能）【付费，可免费使用】
+
+<https://fanyi.caiyunapp.com/#/web>
+
+浏览网页时，点击书签栏中或插件的"彩云小译"，网页将变成中英对照模式。
+
+### 专业性-插件
+
 #### Proxy SwitchyOmega
 
 <https://proxy-switchyomega.com/>
@@ -83,7 +119,7 @@ Chrome 和 Firefox 浏览器上的代理扩展程序，可以轻松快捷的管�
 
 <https://www.baidufe.com/fehelper/index/index.html>
 
-插件支持Chrome、Firefox、MS-Edge 浏览器，内部工具集持续增加，目前包括 JSON 自动/手动格式化、JSON 内容比对、代码美化与压缩、信息编解码转换、二维码生成与解码、图片 Base64 编解码转换、Markdown、 网页油猴、网页取色器、脑图(Xmind)等贴心工具，甚至在目前新版本的 FeHelper 中，还集成了 FH 开发者工具， 如果你也想自己搞一个工具集成到 FeHelper 中，那这一定能满足到你。另外，本站也提供部分工具的在线版本！
+插件支持 Chrome、Firefox、MS-Edge 浏览器，内部工具集持续增加，目前包括 JSON 自动/手动格式化、JSON 内容比对、代码美化与压缩、信息编解码转换、二维码生成与解码、图片 Base64 编解码转换、Markdown、 网页油猴、网页取色器、脑图(Xmind)等贴心工具，甚至在目前新版本的 FeHelper 中，还集成了 FH 开发者工具， 如果你也想自己搞一个工具集成到 FeHelper 中，那这一定能满足到你。另外，本站也提供部分工具的在线版本！
 
 #### Restlet Client-REST API Testing
 
@@ -95,27 +131,49 @@ Postman 的轻巧替代品
 
 #### Axure RP Extension For Chrome （用于打开产品原型图）
 
-对于很多需要设计产品原型的朋友来说，Axure RP Pro可谓是非常方便、好用的一款软件，因为它不仅能绘制出详细的产品构思，也能生成浏览器格式的产品原型。但是如果想把原型拿给客户查看，千万记得给浏览器安装Axure扩展程序哦。
+对于很多需要设计产品原型的朋友来说，Axure RP Pro 可谓是非常方便、好用的一款软件，因为它不仅能绘制出详细的产品构思，也能生成浏览器格式的产品原型。但是如果想把原型拿给客户查看，千万记得给浏览器安装 Axure 扩展程序哦。
 
-最新Axure谷歌浏览器Chrome扩展程序安装方法 - Axure中文网
+最新Axure谷歌浏览器Chrome扩展程序安装方法 - Axure 中文网
 <https://www.axure.com.cn/79769/>
 
-#### 彩云小译 - 在线翻译  (比百度 / 谷歌更智能）【付费，可免费使用】
+## firefox 的使用
 
-<https://fanyi.caiyunapp.com/#/web>
+### 常用快捷键
 
-浏览网页时，点击书签栏中或插件的"彩云小译"，网页将变成中英对照模式。
+ctrl + shift + A 打开拓展和主题
 
-#### 安装插件遇到的问题及解决方法总结
+### 日常插件
+
+Gesturefy
+具有大量自定义功能的鼠标手势扩展，令浏览和操作更加便捷迅速。
+<https://addons.mozilla.org/zh-CN/firefox/addon/gesturefy/>
+
+RSSHub Radar
+RSSHub Radar is a spin-off of RSSHub that helps you quickly discover and subscribe to RSS and RSSHub for your current site.
+<https://addons.mozilla.org/zh-CN/firefox/addon/rsshub-radar/>
+
+Country Flag +
+Shows country flag based on the server location of the active tab's url
+<https://addons.mozilla.org/zh-CN/firefox/addon/flag-plus/>
+
+Tampermonkey
+Tampermonkey is the world's most popular userscript manager.
+<https://addons.mozilla.org/zh-CN/firefox/addon/tampermonkey/>
+
+Tabliss
+A beautiful New Tab page with many customisable backgrounds and widgets that does not require any permissions.
+<https://addons.mozilla.org/zh-CN/firefox/addon/tabliss/>
+
+### 开发者用-插件
+
+## 安装插件遇到的问题及解决方法总结
 
 **谷歌浏览器中安装 .crx 扩展名的离线 Chrome 插件**
 找到自己已经下载好的 Chrome 离线安装文件 xxx.crx，然后将其从资源管理器中拖动到 Chrome 的扩展管理界面中，这时候用户会发现在扩展管理器的中央部分中会多出一个”拖动以安装“的插件按钮。
 
 **解决“只能通过Chrome网上应用商店安装该程序”的方法**
-1.把下载后的 .crx 扩展名的离线Chrome插件的文件扩展名改成 .zip 或者 .rar
+1.把下载后的 .crx 扩展名的离线 Chrome 插件的文件扩展名改成 .zip 或者 .rar
 2. 在 Chrome 的地址栏中输入：chrome://extensions/ 打开 Chrome 浏览器的扩展程序管理界面，并在该界面的右上方的开发者模式按钮上打勾
 3. 在勾选开发者模式选项以后，在该页面就会出现加载正在开发的扩展程序等按钮，点击“加载正在开发的扩展程序”按钮，并选择刚刚解压的 Chrome 插件文件夹的位置。
 4. 若出现加载程序出错的情况，Chrome 浏览器会提示无法加载以下来源的扩展程序： xxx路径（Chrome插件文件的解压位置）Cannot load extension with file or directory name _metadata. Filenames starting with "_" are reserved for use by the system.出现这种情况，是因为这款 Chrome 插件与新版的 Chrome 浏览器有些不兼容，这时候，用户可以打开刚刚解压的 Chrome 插件文件夹，并把其中 _metadata 文件夹的名字修改为 metadata（把前面的下划线去掉）
 5. 更新文件夹名称成功以后，点击该错误提示下方的“重试”按钮，就可以成功地把Chrome插件加载谷歌浏览器中了
-
-## firefox 的使用

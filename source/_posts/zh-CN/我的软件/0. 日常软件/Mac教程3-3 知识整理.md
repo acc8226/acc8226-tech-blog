@@ -60,7 +60,7 @@ System Preferences，点开 Accessibility > Display，勾上 Reduce transparency
 
 ## 其他事项
 
-**升级了macOS Sierra 后，command line tools 报错的问题**的处理
+**升级了 macOS Sierra 后，command line tools 报错的问题**的处理
 
 ```text
 xcrun: error: invalid active developer path

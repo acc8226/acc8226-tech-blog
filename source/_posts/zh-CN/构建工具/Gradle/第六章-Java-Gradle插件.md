@@ -16,9 +16,9 @@
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-03b622835e123f93.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-默认情况下，Java 插件约定 src/main/java 下为我们的项目源代码存放目录；src/main/resources 为要打包的文件存放目录，比如一些 Properties 配置文件和图片等；src/test/java为我们的单元测试用例存放目录，我们执行单元测试的时候，Gradle会在这个目录下搜索我们的单元测试用例执行；src/test/resources里存放的是我们单元测试中使用的文件。
+默认情况下，Java 插件约定 src/main/java 下为我们的项目源代码存放目录；src/main/resources 为要打包的文件存放目录，比如一些 Properties 配置文件和图片等；src/test/java为我们的单元测试用例存放目录，我们执行单元测试的时候，Gradle 会在这个目录下搜索我们的单元测试用例执行；src/test/resources 里存放的是我们单元测试中使用的文件。
 
-main 和 test 是 Java 插件为我们内置的两个**源代码集合**，那么我们可以不可以自己添加一些呢，比如我有一个vip版本，是不是可以添加一个vip的目录来存放 vip 相关的 java 源码和文件呢，这个是完全可以的，如果要实现这个目的，我们在build脚本里这么配置
+main 和 test 是 Java 插件为我们内置的两个**源代码集合**，那么我们可以不可以自己添加一些呢，比如我有一个 vip 版本，是不是可以添加一个vip的目录来存放 vip 相关的 java 源码和文件呢，这个是完全可以的，如果要实现这个目的，我们在 build 脚本里这么配置
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-244c3a374368af23.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -31,11 +31,11 @@ src/sourceSet/resources
 
 看到这里，读者有没有发现这个和我们 Android 多渠道打包发布很像（Android 插件详细介绍）。关于源集的改变我们后面是详细讲，这里大家知道先这样使用。
 
-以上是Java默认定义的文件目录，特殊情况下我们可以改变他们，所以不建议这么做，下面我们说说改变的方法，只需要在 build 脚本配置对应目录即可。
+以上是 Java 默认定义的文件目录，特殊情况下我们可以改变他们，所以不建议这么做，下面我们说说改变的方法，只需要在 build 脚本配置对应目录即可。
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-5984dbb196989de9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-一般从Eclipse工程迁移过来的时候，我们的目录结构还是src这样的，一时不好去改变目录，所以可以采用这种配置，更改Java插件默认的目录即可。
+一般从 Eclipse 工程迁移过来的时候，我们的目录结构还是 src 这样的，一时不好去改变目录，所以可以采用这种配置，更改 Java 插件默认的目录即可。
 
 ### 6.3  如何配置第三方依赖
 
@@ -61,13 +61,13 @@ src/sourceSet/resources
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-e31e9d4b6c251b44.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-除此之外，Java 插件可以为不同的源集在编译时和运行时指定不同的依赖，比如 main 源集指定一个编译时的依赖，vip源集可以指定另外一个不同的依赖。
+除此之外，Java 插件可以为不同的源集在编译时和运行时指定不同的依赖，比如 main 源集指定一个编译时的依赖，vip 源集可以指定另外一个不同的依赖。
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-bc07cc777145cc5f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ![他们的通用使用格式](http://upload-images.jianshu.io/upload_images/1662509-b85ad97a2de7bbcb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-我们刚刚讲的基于库的这种依赖是外部模块的依赖，一般都会配置一个仓库，不管 是Maven，还是 Ivy 等。除了外部依赖之外，常用的还有项目依赖以及文件依赖。
+我们刚刚讲的基于库的这种依赖是外部模块的依赖，一般都会配置一个仓库，不管是 Maven，还是 Ivy 等。除了外部依赖之外，常用的还有项目依赖以及文件依赖。
 
 项目依赖依赖的是一个 Gradle 项目，是在 Settings Build 文件中配置过的，依赖一个项目非常简单，比如
 
@@ -83,33 +83,33 @@ src/sourceSet/resources
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-4dff1a4c2539997a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-这样配置后，libs 文件加下的扩展名为 jar 的都会被依赖，非常方便，这里用到的是 Project的fileTree 方法，而不是上面用的 files 方法。
+这样配置后，libs 文件加下的扩展名为 jar 的都会被依赖，非常方便，这里用到的是 Project的 fileTree 方法，而不是上面用的 files 方法。
 
 ### 6.4 如何构建一个 Java 项目
 
-在 Gradle 中，执行任何操作都是任务驱动的，构建 Java 项目也不例外。Java 插件为我们提供了很多任务，通过运行他们来达到我们构建J ava 项目的目的。最常用任务是 build 任务，运行它会构建你的整个项目，我们可以通过 ./gradlew build 执行，然后 gradle 就会编译你的源码文件，处理你的资源文件，打成jar包，然后编译测试用例代码，处理测试资源，最后运行单元测试。下面我们运行下看看效果：
+在 Gradle 中，执行任何操作都是任务驱动的，构建 Java 项目也不例外。Java 插件为我们提供了很多任务，通过运行他们来达到我们构建 Java 项目的目的。最常用任务是 build 任务，运行它会构建你的整个项目，我们可以通过 ./gradlew build 执行，然后 gradle 就会编译你的源码文件，处理你的资源文件，打成 jar 包，然后编译测试用例代码，处理测试资源，最后运行单元测试。下面我们运行下看看效果：
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-b7762df1f1767921.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 看下任务运行的顺序，就能看出我们在构建整个 Java 项目的时候，Java 插件都做了哪些事情。最后在 build/libs 生成 jar包。
 
-除了 build 任务，还有一些其他常用的任务，比如 clean，这个是删除build目录以及其他构建生成的文件，如果编译中有问题，可以先执行 clean，然后再重新 build。
+除了 build 任务，还有一些其他常用的任务，比如 clean，这个是删除 build 目录以及其他构建生成的文件，如果编译中有问题，可以先执行 clean，然后再重新 build。
 
 还有 assemble 任务，该任务不会执行单元测试，只会编译和打包，这个任务在 Android 里也有，执行它可以打 apk 包，所以它不止会打 jar 包，其实它算是一个引导类的任务，根据不同的项目类型打出不同的包。
 
-还有check任务，它只会执行单元测试，有时候还会做一些质量检查，不会打jar包，也是个引导任务。
+还有 check 任务，它只会执行单元测试，有时候还会做一些质量检查，不会打 jar 包，也是个引导任务。
 
-javadoc任务，可以为我们生成java格式的doc api文档。
+javadoc 任务，可以为我们生成 java 格式的 doc api文档。
 
 通过运行不同的任务，进行不同的构建，达到不同的目的。
 
 ### 6.5 源码集合(SourceSet)概念
 
-SourceSet-源代码集合-源集，是Java插件用来描述和管理源代码及其资源的一个抽象概念，是一个 Java 源代码文件和资源文件的集合。通过源集，我们可以非常方便的访问源代码目录，设置源集的属性，更改源集的java目录或者资源目录等等。
+SourceSet-源代码集合-源集，是 Java 插件用来描述和管理源代码及其资源的一个抽象概念，是一个 Java 源代码文件和资源文件的集合。通过源集，我们可以非常方便的访问源代码目录，设置源集的属性，更改源集的java目录或者资源目录等等。
 
-有了源集，我们就能针对不同的业务和应用对我们源代码进行分组，比如用于主要业务产品的main以及用于单元测试的test，职责分明清晰。他们两个也是 Java 插件默认内置的两个标准源集。
+有了源集，我们就能针对不同的业务和应用对我们源代码进行分组，比如用于主要业务产品的 main 以及用于单元测试的test，职责分明清晰。他们两个也是 Java 插件默认内置的两个标准源集。
 
-Java插件 在 Project 下为我们提供了一个 sourceSet 属性以及一个 sourceSets {}闭包来访问和配置源集。sourceSets是是一个SourceSetContainer，我们可以参见它的API，看它有哪些方法和属性供我们使用。sourceSets{}闭包配置的都是SourceSet对象，下面我们会讲它有哪些配置。
+Java 插件 在 Project 下为我们提供了一个 sourceSet 属性以及一个 sourceSets {}闭包来访问和配置源集。sourceSets 是是一个SourceSetContainer，我们可以参见它的 API，看它有哪些方法和属性供我们使用。sourceSets{} 闭包配置的都是 SourceSet 对象，下面我们会讲它有哪些配置。
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-9407f3225486e32a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -119,21 +119,21 @@ Java插件 在 Project 下为我们提供了一个 sourceSet 属性以及一个 
 
 ### 6.6 Java 插件添加的任务
 
-Java插件为我们添加了很多有用的任务，我们已经介绍了一些，这一小结再详细介绍一些。
+Java 插件为我们添加了很多有用的任务，我们已经介绍了一些，这一小结再详细介绍一些。
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-6963a76eedfff4fa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-以上这些是对所有Java项目都适用的任务，对于内置的main和test源集甚至我们自己的新增的源集也新增了一些任务
+以上这些是对所有 Java 项目都适用的任务，对于内置的 main 和 test 源集甚至我们自己的新增的源集也新增了一些任务
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-9d60b494639246df.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-运行任务的时候，列表中的任务名称中的**sourceSet**要换成你的源集的名称，比如main源集的就是compileMainJava。
+运行任务的时候，列表中的任务名称中的 **sourceSet** 要换成你的源集的名称，比如 main 源集的就是 compileMainJava。
 
 此外还有一些用于描述整个构建生命周期的任务，比如 assemble，build，check 等等，这里就不一一介绍了，想具体了解的可以参考相关文档。
 
 ### 6.7 Java插件添加的属性
 
-Java插件添加了很多常用的属性，这些属性都被添加到Project中，我们可以直接使用他们，比如我们前面已经用到的sourceSets。
+Java 插件添加了很多常用的属性，这些属性都被添加到 Project中，我们可以直接使用他们，比如我们前面已经用到的 sourceSets。
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-7605e2adf20805b7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -141,7 +141,7 @@ Java插件添加了很多常用的属性，这些属性都被添加到Project中
 
 ### 6.8 多项目构建
 
-多项目构建，其实就是多个 Gradle 项目一起构建，比如我们本书的例子已经是一个多项目了，他们一起通过Settings.gradle 配置管理，每个项目里都有一个Build文件对该项目进行配置，然后采用项目依赖，就可以实现多个项目协作，这对于我们大项目的，模块化非常有用。
+多项目构建，其实就是多个 Gradle 项目一起构建，比如我们本书的例子已经是一个多项目了，他们一起通过 settings.gradle 配置管理，每个项目里都有一个 Build 文件对该项目进行配置，然后采用项目依赖，就可以实现多个项目协作，这对于我们大项目的，模块化非常有用。
 
 下面我们以一个多项目构建的例子，来说明多个项目之间如果依赖构建。
 
@@ -151,8 +151,8 @@ Java插件添加了很多常用的属性，这些属性都被添加到Project中
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-88cccf59e01dcf9e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-现在这两个项目已经被我们加入到Gradle项目中了，做为Gradle项目。他们分别有自己的build文件，都是应用了Java插件，表明他们都是Java项目。
-其中我们在base项目中定义了Person类以供app项目的HelloWorld使用，要使用其他项目中的类，我们需要在项目中的build文件中配置项目依赖。
+现在这两个项目已经被我们加入到 Gradle 项目中了，做为 Gradle 项目。他们分别有自己的 build 文件，都是应用了 Java 插件，表明他们都是 Java 项目。
+其中我们在 base 项目中定义了 Person 类以供 app 项目的 HelloWorld 使用，要使用其他项目中的类，我们需要在项目中的 build 文件中配置项目依赖。
 
 app/build.gradle
 
@@ -162,7 +162,7 @@ app/build.gradle
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-3ba9ff5838b3914f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-这样我们就完成了一个多项目中的构建，项目之间相互协作在Gradle中变得如此容易，别惊讶还有更炫的功能，有没有注意到我们的项目都是 Java 项目，应用的都是 Java 插件，对于这类公用的配置，Gradle 为我们提供了基于根项目对其所有的子项目通用配置的方法。**Gradle的根项目可以理解为一个所有子项目的容器**，我们可以在根项目中遍历所有的子项目，在遍历的过程中为其配置通用配置。
+这样我们就完成了一个多项目中的构建，项目之间相互协作在 Gradle 中变得如此容易，别惊讶还有更炫的功能，有没有注意到我们的项目都是 Java 项目，应用的都是 Java 插件，对于这类公用的配置，Gradle 为我们提供了基于根项目对其所有的子项目通用配置的方法。**Gradle的根项目可以理解为一个所有子项目的容器**，我们可以在根项目中遍历所有的子项目，在遍历的过程中为其配置通用配置。
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-41de53362874ea42.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -171,11 +171,11 @@ app/build.gradle
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-d1216d31493de711.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-subprojects 可以对其所有的子项目进行配置，如果想对包括根项目在内的所有项目进行统一配置，我们可以使用allprojects，用法和 subprojects一样，就不举例子了，大家可以自己尝试一下。
+subprojects 可以对其所有的子项目进行配置，如果想对包括根项目在内的所有项目进行统一配置，我们可以使用 allprojects，用法和 subprojects一样，就不举例子了，大家可以自己尝试一下。
 
 ### 6.9 如何发布构件
 
-有时候我们的项目是一个库工程，要发布 Jar 给其他工程使用，Gradle 为我们提供了非常方便、功能抢到的发布功能，通过配置，我们可以把我们的jar包发布到本地目录、Maven库，Ivy 库等等中。
+有时候我们的项目是一个库工程，要发布 Jar 给其他工程使用，Gradle 为我们提供了非常方便、功能抢到的发布功能，通过配置，我们可以把我们的 jar 包发布到本地目录、Maven 库，Ivy 库等等中。
 
 ### 6.10 生成 Idea 和 Eclipse 配置
 

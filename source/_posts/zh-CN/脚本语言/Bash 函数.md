@@ -74,7 +74,7 @@ The sum of the two numbers entered is 3 !
 
 ## 二、函数参数
 
-在Shell中，调用函数时可以向其传递参数。在函数体内部，通过 `<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><annotation encoding="application/x-tex">` n 的形式来获取参数的值，例如，</annotation></semantics></math>n的形式来获取参数的值，例如，1表示第一个参数，$2表示第二个参数... 带参数的函数示例：
+在 Shell 中，调用函数时可以向其传递参数。在函数体内部，通过 `<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><annotation encoding="application/x-tex">` n 的形式来获取参数的值，例如，</annotation></semantics></math>n的形式来获取参数的值，例如，1表示第一个参数，$2表示第二个参数... 带参数的函数示例：
 
 ```sh
 #!/bin/bash
@@ -103,4 +103,4 @@ Outputs all parameters as a string 1 2 3 4 5 6 7 8 9 34 73 !
 ```
 
 **注意**
-> 10 不能获取第十个参数，获取第十个参数需要{10}。当n>=10时，需要使用${n}来获取参数
+10 不能获取第十个参数，获取第十个参数需要{10}。当n>=10时，需要使用${n}来获取参数

@@ -255,6 +255,24 @@ dependencies {
 // end::dependencies[]
 ```
 
+## 构建 kotlin 项目
+
+1.8 之前
+
+```kt
+tasks.withType<KotlinCompile> {
+    kotlinOptions.jvmTarget = "1.8"
+}
+```
+
+1.8 之后
+
+```kt
+tasks.withType<KotlinCompile> {
+    compilerOptions.jvmTarget.set(JvmTarget.JVM_1_8)
+}
+```
+
 ## 参考
 
 Building Java Applications Sample

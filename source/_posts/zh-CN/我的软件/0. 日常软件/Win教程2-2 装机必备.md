@@ -17,11 +17,11 @@ Windows 优化：[软媒魔方](http://mofang.ruanmei.com/)
 
 ## 网络浏览器
 
-[360极速浏览器](https://browser.360.cn/ee/) / 360 安全浏览器
+[360 极速浏览器](https://browser.360.cn/ee/) / 360 安全浏览器
 
 ## 压缩、解压缩软件
 
-[360压缩](https://yasuo.360.cn/) 轻巧无广告
+[360 压缩](https://yasuo.360.cn/) 轻巧无广告
 
 或者 7-Zip <https://sparanoid.com/lab/7z/download.html>
 
@@ -39,7 +39,7 @@ Windows 优化：[软媒魔方](http://mofang.ruanmei.com/)
 
 ## 电脑管理手机软件
 
-Android 用户可选择 [腾讯应用宝PC版](https://sj.qq.com/) / [360 手机助手PC版](http://sj.360.cn/index.html)
+Android 用户可选择 [腾讯应用宝 PC 版](https://sj.qq.com/) / [360 手机助手PC版](http://sj.360.cn/index.html)
 
 iOS 用户请下载 iTunes 和 PP 助手。
 
