@@ -194,7 +194,7 @@ $$\begin{matrix}...\end{matrix}$$来表示矩阵，在\begin与\end之间加入�
 $$\begin{matrix} 1 & x & x^2 \\ 1 & y & y^2 \\ 1 & z & z^2 \end{matrix}$$
 
 加括号
-如果要对矩阵加括号，可以使用特殊的matrix，即替换 \begin{matrix}...\end{matrix}中的matrix 为 pmatrix , bmatrix , Bmatrix , vmatrix , Vmatrix.
+如果要对矩阵加括号，可以使用特殊的 matrix，即替换 \begin{matrix}...\end{matrix} 中的 matrix 为 pmatrix , bmatrix , Bmatrix , vmatrix , Vmatrix.
 
 省略元素
 可以使用\cdots ⋯ \ddots ⋱ \vdots ⋮ 来省略矩阵中的元素，如：

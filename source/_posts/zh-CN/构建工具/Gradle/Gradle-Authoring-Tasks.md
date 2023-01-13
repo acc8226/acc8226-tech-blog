@@ -381,6 +381,7 @@ disableMe.enabled = false
 ```
 
 ### [Task timeouts 任务超时](https://docs.gradle.org/6.3/userguide/more_about_tasks.html#sec:task_timeouts)
+
 每个任务都有一个超时属性，可用于限制其执行时间。 当任务超时时，其任务执行线程将被中断。 任务将被标记为失败。 终结器任务仍将运行。 如果使用了 -- continue，则其他任务可以在它之后继续运行。 不对中断作出反应的任务不能超时。 Gradle 的所有内置任务都会及时响应超时。
 
 ```groovy
@@ -399,6 +400,7 @@ task hangingTask() {
 Gradle 通过一个称为增量构建的特性支持这种开箱即用的行为。 几乎可以肯定您已经看到它在运行: 当您运行构建时，几乎每次 UP-TO-DATE 文本出现在任务名称旁边时，它都处于活动状态。 任务结果在任务结果中描述。
 
 ## [Task rules 任务规则](https://docs.gradle.org/6.3/userguide/more_about_tasks.html#sec:task_rules)
+
 有时您希望有一个任务，其行为取决于大量或无限数量的参数值范围。 提供这些任务的一个非常好的表达方式是任务规则:
 
 ```groovy
