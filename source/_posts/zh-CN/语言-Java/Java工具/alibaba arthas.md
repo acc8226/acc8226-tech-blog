@@ -97,7 +97,7 @@ curl -L https://arthas.aliyun.com/install.sh | sh
 
 一目了然的了解系统的状态，哪些线程比较占cpu？他们到底在做什么？
 
-```
+```text
 $ thread -n 3
 "as-command-execute-daemon" Id=29 cpuUsage=75% RUNNABLE
     at sun.management.ThreadImpl.dumpThreads0(Native Method)
@@ -154,7 +154,8 @@ public interface Servlet {
 ```
 
 #### mc
-* https://arthas.aliyun.com/doc/mc
+
+* <https://arthas.aliyun.com/doc/mc>
 
 Memory Compiler/内存编译器，编译`.java`文件生成`.class`。
 
@@ -163,6 +164,7 @@ mc /tmp/Test.java
 ```
 
 #### retransform
+
 * https://arthas.aliyun.com/doc/retransform
 
 加载外部的`.class`文件，retransform 热更新jvm已加载的类。
@@ -173,9 +175,10 @@ retransform -c 327a647b /tmp/Test.class /tmp/Test\$Inner.class
 ```
 
 #### sc
-* https://arthas.aliyun.com/doc/sc
 
-查找JVM中已经加载的类
+* <https://arthas.aliyun.com/doc/sc>
+
+查找 JVM 中已经加载的类
 
 ```bash
 $ sc -d org.springframework.web.context.support.XmlWebApplicationContext
@@ -229,6 +232,7 @@ $ vmtool --action getInstances --className java.lang.String --limit 10
     @String[java/util/concurrent/locks/LockSupport],
 ]
 ```
+
 #### stack
 
 * https://arthas.aliyun.com/doc/stack
@@ -268,7 +272,7 @@ ts=2018-09-18 10:11:45;thread_name=http-bio-8080-exec-10;id=d9;is_daemon=true;pr
 
 #### Trace
 
-* https://arthas.aliyun.com/doc/trace
+* <https://arthas.aliyun.com/doc/trace>
 
 观察方法执行的时候哪个子调用比较慢:
 
@@ -314,7 +318,7 @@ Affect(class-cnt:1 , method-cnt:1) cost in 109 ms.
 
 #### Time Tunnel(tt)
 
-* https://arthas.aliyun.com/doc/tt
+* <https://arthas.aliyun.com/doc/tt>
 
 记录方法调用信息，支持事后查看方法调用的参数，返回值，抛出的异常等信息，仿佛穿越时空隧道回到调用现场一般。
 
@@ -384,26 +388,6 @@ OK
 #### Arthas Spring Boot Starter
 
 * [Arthas Spring Boot Starter](https://arthas.aliyun.com/doc/spring-boot-starter.html)
-
-### Known Users
-
-Arthas有超过120家登记用户，[查看全部](USERS.md)。
-
-如果您在使用Arthas，请让我们知道，您的使用对我们非常重要：https://github.com/alibaba/arthas/issues/111 （按登记顺序排列）
-
-![Alibaba](static/alibaba.png)
-![Alipay](static/alipay.png)
-![Aliyun](static/aliyun.png)
-![Taobao](static/taobao.png)
-![ICBC](static/icbc.png)
-![雪球财经](static/xueqiu.png)
-![顺丰科技](static/sf.png)
-![贝壳找房](static/ke.png)
-![vipkid](static/vipkid.png)
-![百度凤巢](static/baidufengchao.png)
-![有赞](static/youzan.png)
-![科大讯飞](static/iflytek.png)
-![智联招聘](static/zhaopin.png)
 
 ### 衍生项目
 

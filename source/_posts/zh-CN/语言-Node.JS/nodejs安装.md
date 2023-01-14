@@ -55,11 +55,26 @@ pm2 start app.js --name="api"
 启动应用程序并命名为 "api"
 
 启动应用程序并指定参数并命名，这里用了双引号
+
+简单示例
+
+```js
 pm2 start "node airSensor.js 192.168.18.107 WeatherSensor1" --name weather2
+```
+
+详细示例
+
+```js
+// 基地气象1 WeatherSensor1
+pm2 start "node airSensor.js 192.168.18.105 WeatherSensor1" --name WeatherSensor1
+// 土壤1 SoilSensor1
+pm2 start "node soilSensor.js 192.168.18.105 SoilSensor1" --name SoilSensor1
+// 室内气象1 IndoorWeatherSensor1
+pm2 start "node airSensor.js 192.168.18.105 IndoorWeatherSensor1" --name IndoorWeatherSensor1
+```
 
 停止所有服务
 pm2 stop all
 
 停止指定服务
 pm2 stop zhangsan
-

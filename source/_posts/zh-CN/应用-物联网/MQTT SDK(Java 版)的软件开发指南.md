@@ -16,3 +16,5 @@ tags:
 令下发应答和样例使用程序。
 
 约束：现有 1.0 版本只支持单个 MQTT Cient 端对接平台。
+
+resource 设备基本信息 json 文件（device.properties）和设备物模型 json 文件。获取后运行 TestDemo.java 即可解决。
