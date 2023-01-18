@@ -128,12 +128,3 @@ function Person(first, last, age, gender, interests) {
 1.  那些定义在构造器函数中的、用于给予对象实例的。这些都很容易发现 - 在您自己的代码中，它们是构造函数中使用`this.x = x`类型的行；在内置的浏览器代码中，它们是可用于对象实例的成员（通常通过使用`new`关键字调用构造函数来创建，例如`var myInstance = new myConstructor()`）。
 2.  那些直接在构造函数上定义、仅在构造函数上可用的。这些通常仅在内置的浏览器对象中可用，并通过被直接链接到构造函数而不是实例来识别。 例如`[Object.keys()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/keys)`。
 3.  那些在构造函数原型上定义、由所有实例和对象类继承的。这些包括在构造函数的原型属性上定义的任何成员，如`myConstructor.prototype.x()`。
-
-
-
-
-
-
-
-
-

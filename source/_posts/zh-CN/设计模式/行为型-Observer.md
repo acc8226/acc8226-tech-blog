@@ -72,8 +72,8 @@ public class Demo {
 ### 应用一：用户注册成功之后，给用户发放投资体验金功能
 
 修改前代码
-```java
 
+```java
 public class UserController {
   private UserService userService; // 依赖注入
   private PromotionService promotionService; // 依赖注入
@@ -89,8 +89,8 @@ public class UserController {
 ```
 
 修改后代码
-```java
 
+```java
 public interface RegObserver {
   void handleRegSuccess(long userId);
 }
@@ -147,4 +147,4 @@ public class UserController {
 ## 参考
 
 设计模式之美_设计模式_代码重构-极客时间
-https://time.geekbang.org/column/intro/250
+<https://time.geekbang.org/column/intro/250>

@@ -292,7 +292,5 @@ MY_ARRAY = ['B']
 ## 参考
 
 <https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/var>
-
 <https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/let>
-
 <https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/const>

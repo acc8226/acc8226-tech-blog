@@ -1,5 +1,5 @@
 ---
-title: Markdown 之替代品 Asciidoc 介绍
+title: Markdown 替代品 Asciidoc 介绍
 date: 2020-01-28 19:55:36
 updated: 2022-10-06 20:35:00
 categories:

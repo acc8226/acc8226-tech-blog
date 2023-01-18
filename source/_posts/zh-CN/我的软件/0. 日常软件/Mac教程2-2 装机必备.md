@@ -44,31 +44,6 @@ IINA - The modern media player for macOS
 <https://dl.xunlei.com/#mod02>
 或 Free Download Manager
 
-#### 解决: 为何Mac App store 下载 App失败 使用已购项目页面再试一次
-
-> 可能是 DNS 的问题, 需要在屏幕右上角找到 WiFi 图标，点击进入“打开网络偏好设置”。
-
-![](https://upload-images.jianshu.io/upload_images/1662509-71ec5ac65ba9c947.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-为什么需要更换公共 DNS 服务器？
-
-DNS 服务器一般是由互联网服务提供商 (ISP) 出资建立的，比如电信/移动宽带，它们在全国各地建立了多组 DNS 服务器，上网拨号时会按地区自动为你们分配，一般大家不必理会也能正常上网。但问题在于，部分地区所提供的 DNS 经常宕机、人满为患没有及时扩容、上网高峰时解析缓慢，甚至有些地方的机房人员滥用职权谋取私利，利用 DNS 劫持网站，偷偷插广告/诱导/嗅探帐号密码等，都会对用户的网速和上网体验和帐号安全造成影响。
-
-腾讯 DNSPod Public DNS+
-119.29.29.29
-
-阿里公共 DNS
-223.5.5.5
-
-百度 DNS
-180.76.76.76
-
-OneDNS 家庭版
-117.50.60.30
-
-OneDNS 纯净版
-117.50.11.11
-
 ### 一些介绍苹果 App 资源的网站
 
 MacFlow | 只推荐优秀 MAC 软件

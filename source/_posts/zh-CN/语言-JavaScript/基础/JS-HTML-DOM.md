@@ -113,7 +113,7 @@ HTML DOM 允许您使用 JavaScript 来向 HTML 元素分配事件：
 document.getElementById("myBtn").onclick=function(){displayDate()};
 ```
 
-把匿名的function去掉改为
+把匿名的 function 去掉改为
 
 ```js
 document.getElementById("myBtn").onclick=displayDate();
@@ -179,7 +179,7 @@ var node=document.createTextNode("This is new.");
 para.appendChild(node);
 
 // 然后向一个已存在的元素追加该元素。
-var element=document.getElementById("div1");
+var element = document.getElementById("div1");
 element.appendChild(para);
 </script>
 ```
@@ -192,8 +192,8 @@ element.appendChild(para);
 <p id="p2">This is another paragraph.</p>
 </div>
 <script>
-var parent=document.getElementById("div1");
-var child=document.getElementById("p1");
+var parent = document.getElementById("div1");
+var child = document.getElementById("p1");
 parent.removeChild(child);
 </script>
 ```

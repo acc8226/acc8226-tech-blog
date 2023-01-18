@@ -396,7 +396,7 @@ public class MainActivity extends Activity {
     }
 
     public void setTitle(String title) {
-    	mTitle = title;
+        mTitle = title;
     }
 
     private void setUpView() {

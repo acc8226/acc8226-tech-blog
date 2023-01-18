@@ -11,7 +11,7 @@ categories:
 
 只为了让安卓更好用
 
-李跳跳 + 真是好友
+李跳跳 + 真实好友
 <https://mp.weixin.qq.com/s/HM7S_yDRUwaHnzAT9nVqAQ>
 
 ## 分类

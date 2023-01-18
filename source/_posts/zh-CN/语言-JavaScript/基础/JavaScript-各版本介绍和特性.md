@@ -316,19 +316,19 @@ Function.prototype.bind()	创建一个新函数,当这个函数被调用时,函�
 
 ## 其他
 
-### ECMAScript 5的支持情况
+### ECMAScript 5 的支持情况
 
 5.1，JavaScript 基于的标准的一个旧版本，在2011年6月被批准。
 
 <http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf>
 
-### ES2015
+### ES 2015
 
 6 th Edition /  June 2015
 <https://www.ecma-international.org/publications/standards/Ecma-262.htm>
 <https://www.ecma-international.org/ecma-262/6.0/index.html>
 
-### ES2016
+### ES 2016
 
 7 th Edition / June 2016
 <https://www.ecma-international.org/publications/standards/Ecma-262.htm>

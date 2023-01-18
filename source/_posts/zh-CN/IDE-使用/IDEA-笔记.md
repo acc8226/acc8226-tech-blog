@@ -18,7 +18,7 @@ categories: IDE-使用
 1. 解压
 2. 【可选】添加至环境变量，这样无论在哪个目录下都可启动 IntelliJ IDE
 3. 【可选】调整 JVM 堆大小的值
-4. 打开命令行工具进入安装目录的 bin 文件夹下， 键入 idea.bat . 这个命令同时会在 `${user.home}/. IntelliJIdea2020.3`目录中初始化一系列的配置文件。
+4. 打开命令行工具进入安装目录的 bin 文件夹下， 键入 idea.bat . 这个命令同时会在 `${user.home}/. IntelliJIdea2020.3` 目录中初始化一系列的配置文件。
 
 附原文：
 

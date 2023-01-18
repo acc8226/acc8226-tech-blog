@@ -77,7 +77,7 @@ windows->preferences->java->editor->content assist 填入`.[a-zA-Z]`
 
 点击 Eclipse 打开 .class 文件时出现的那个 “Attach Source” 按键，然后把 JDK 库的源文件压缩包（通常是在 jdk 安装的根目录中的一个 “src.zip” 文件）载入 Eclipse 中。
 
-其他的第三方java插件的源代码文件的载入方法类似。
+其他的第三方 java 插件的源代码文件的载入方法类似。
 
 ## Eclipse 中对 maven 项目进行打包
 
