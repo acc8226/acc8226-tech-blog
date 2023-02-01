@@ -1,5 +1,5 @@
 ---
-title: 单平台-Win-终端软件的使用
+title: 单平台 Win-终端软件的使用
 date: 2020-06-04 19:04:06
 updated: 2022-11-16 13:28:02
 categories:

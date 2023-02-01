@@ -50,6 +50,8 @@ Windows, Chrome OS & Linux: Ctrl + D
 向上翻页
 Shift + 空格键 或者 pageUp 键
 
+<!-- more -->
+
 ## 浏览器的通用插件
 
 ### 常用

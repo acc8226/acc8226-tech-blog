@@ -1,5 +1,5 @@
 ---
-title: 使用教程-Win10 体验 WSL 并配置 Zsh
+title: 使用教程 Win10 体验 WSL 并配置 Zsh
 date: 2020-06-02 22:57:01
 updated: 2022-11-16 13:28:02
 categories:

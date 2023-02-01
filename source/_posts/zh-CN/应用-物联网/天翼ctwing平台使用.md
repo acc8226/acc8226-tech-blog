@@ -195,3 +195,6 @@ payload 为
 
 设备id 15537179001
 特征码 qxMMbVxpoA2eo_Tq2TJ3aUVwTMW4O_rKbMVbn4oj2oE
+
+按 TCP 接口要求（请参考TCP协议-终端线下开发-接口介绍）组装登录报文
+<https://www.ctwing.cn/sbjr/70>
