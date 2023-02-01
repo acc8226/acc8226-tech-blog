@@ -56,6 +56,8 @@ uTools 新一代效率工具平台
 
 虚位以待
 
+## 待定
+
 ## 软件回收站
 
 一些用过的软件但主观关键明显不好用的记录，说不定下版会优化，所以仅供参考
@@ -63,6 +65,8 @@ uTools 新一代效率工具平台
 占用 CPU 资源太大
 Lively Wallpaper - Microsoft Store 应用程序
 <https://apps.microsoft.com/store/detail/lively-wallpaper/9NTM2QC6QWS7>
+
+芒果壁纸 时间长了会白屏
 
 ## 参考
 

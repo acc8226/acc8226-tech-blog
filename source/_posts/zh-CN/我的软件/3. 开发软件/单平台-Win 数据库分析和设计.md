@@ -1,5 +1,5 @@
 ---
-title: 单平台 Win 数据库分析和设计
+title: 单平台-Win 数据库分析和设计
 date: 2022-05-01 19:04:06
 updated: 2022-11-16 13:28:02
 categories:

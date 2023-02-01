@@ -7,7 +7,7 @@ categories:
   - 开发软件
 ---
 
-* Genymotion、Parallels Desktop 等虚拟机软件 太专业, 需要配置太多软件, 适合开发者。
+* Genymotion、Parallels Desktop 等虚拟机软件太专业, 需要配置太多软件, 适合开发者。
 * 国内一些安卓游戏助手都可以一试, 这里我随便下载了一款网易 MuMu，它对字体的显示不太好。另外可以尝试一下 [傲软投屏（ApowerMirror）](https://www.apowersoft.cn/phone-mirror)
 * Vysor Pro 收费较贵，免费版广告又多
 
@@ -447,7 +447,7 @@ If you're ready to tackle some open issues, [we've collected some good first is
 
 ## 其他方案
 
-[5款免费手机投屏软件汇总 - 将 iOS 安卓画面无线串流投到电脑电视大屏幕](
+[5 款免费手机投屏软件汇总 - 将 iOS 安卓画面无线串流投到电脑电视大屏幕](
 https://www.iplaysoft.com/tou-ping-ruan-jian.html)
 
 ## 参考
