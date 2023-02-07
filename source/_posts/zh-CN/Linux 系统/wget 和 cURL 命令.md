@@ -44,7 +44,7 @@ curl 默认的 HTTP 动词是 GET，使用 -X 参数可以支持其他动词。
 -L 参数，curl 就会跳转到新的网址。
 `$ curl -L www.qq.com`
 
-若不加`-L`则不会自动重定向
+若不加 `-L` 则不会自动重定向
 
 ```sh
 curl www.qq.com
@@ -79,7 +79,6 @@ curl www.qq.com
 `curl www.ithome.com`
 
 **进行 post 请求**
-
 设置 http 代理
 curl --proxy 10.5.3.9:80 <https://www.so.com>
 

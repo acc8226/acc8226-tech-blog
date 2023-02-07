@@ -16,7 +16,7 @@ zookeeper-3.4.14 下载地址
 
 ## 遇到过的问题
 
-### Zookeeper 3.5启动时 8080 端口被占用
+### Zookeeper 3.5 启动时 8080 端口被占用
 
 通过查阅 Zookeeper3.5 的官方文档，发现这是 Zookeeper3.5 的新特性：
 

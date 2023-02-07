@@ -257,9 +257,9 @@ var txt2=txt.toLowerCase();   // txt2 is txt converted to lower
 
 ```js
 function myFunction(){
-	var str="a,b,c,d,e,f";
-	var n=str.split(",");
-	document.getElementById("demo").innerHTML=n[0];
+    var str="a,b,c,d,e,f";
+    var n=str.split(",");
+    document.getElementById("demo").innerHTML=n[0];
 }
 ```
 
@@ -334,7 +334,7 @@ var myCars=["Saab","Volvo","BMW"];
 ![](https://upload-images.jianshu.io/upload_images/1662509-e0a712d097bad3c6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 创建新方法
-原型是JavaScript全局构造函数。它可以构建新Javascript对象的属性和方法。
+原型是 JavaScript 全局构造函数。它可以构建新 Javascript 对象的属性和方法。
 
 ```html
 <!DOCTYPE html>
@@ -345,19 +345,19 @@ var myCars=["Saab","Volvo","BMW"];
 </head>
 <body>
 
-<p id="demo">单击按钮创建一个数组,调用ucase（）方法, 并显示结果。</p>
+<p id="demo">单击按钮创建一个数组,调用 ucase（）方法, 并显示结果。</p>
 <button onclick="myFunction()">点我</button>
 <script>
 Array.prototype.myUcase=function(){
-	for (i=0;i<this.length;i++){
-		this[i]=this[i].toUpperCase();
-	}
+    for (i=0;i<this.length;i++){
+        this[i]=this[i].toUpperCase();
+    }
 }
 function myFunction(){
-	var fruits = ["Banana", "Orange", "Apple", "Mango"];
-	fruits.myUcase();
-	var x=document.getElementById("demo");
-	x.innerHTML=fruits;
+    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.myUcase();
+    var x=document.getElementById("demo");
+    x.innerHTML=fruits;
 }
 </script>
 
@@ -434,7 +434,7 @@ else
 
 JavaScript 提供 8 种可被 Math 对象访问的算数值：
 
-你可以参考如下Javascript常量使用方法：
+你可以参考如下 Javascript 常量使用方法：
 
 * Math.E
 * Math.PI

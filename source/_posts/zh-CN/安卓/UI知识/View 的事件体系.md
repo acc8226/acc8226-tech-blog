@@ -15,7 +15,7 @@ View 是 Android 中所有控件的基类。
 
 ### View的位置参数
 
-View 的位置由它的四个顶点来决定, 分别对应 View 的四个属性:top, left, right, bottom, 其中 top 是左上角的纵坐标, left 是左上角的横坐标, right 是右下角的横坐标, bottom 是右下角的纵坐标. 需要注意的是, 这些坐标都是**相对**于View的**父容器**来说的，这是一种**相对坐标**.
+View 的位置由它的四个顶点来决定, 分别对应 View 的四个属性: top, left, right, bottom, 其中 top 是左上角的纵坐标, left 是左上角的横坐标, right 是右下角的横坐标, bottom 是右下角的纵坐标. 需要注意的是, 这些坐标都是**相对**于View的**父容器**来说的，这是一种**相对坐标**.
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-bcf8a4cb0f5153d7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -110,16 +110,16 @@ velocityTracker.recycle();
 
 用于对用户手势进行检测，辅助检测用户的单击、滑动、长按、双击等行为。
 
-使用过程：创建一个GestureDetector对象并实现OnGestureListener接口，再根据需要实现其中的方法，对用户的行为做出怎样的反应。接着，在View的onTouchEvent方法中做如下实现：
+使用过程：创建一个 GestureDetector 对象并实现 OnGestureListener 接口，再根据需要实现其中的方法，对用户的行为做出怎样的反应。接着，在 View 的 onTouchEvent方法中做如下实现：
 
 ```java
 boolean consume = mGestureDetector.onTouchEvent(event);
 return consume;
 ```
 
- OnGestureListener 和OnDoubleTapListener中的方法常用的有：onSingleTapUp(单击)、onFling(快速滑动)、oScroll（拖动）、onLongPress（长按）、onDoubleTap(双击）。
+ OnGestureListener 和OnDoubleTapListener 中的方法常用的有：onSingleTapUp(单击)、onFling(快速滑动)、oScroll（拖动）、onLongPress（长按）、onDoubleTap(双击）。
 
-值得注意的是在实际开发中，可以在View的onTouchEvent方法中实现所需的监听，如果**只监听滑动相关的，可以在onTouchEvent中实现**，如果监听双击的话，可以使用GestureDetector。
+值得注意的是在实际开发中，可以在 View 的 onTouchEvent 方法中实现所需的监听，如果**只监听滑动相关的，可以在onTouchEvent中实现**，如果监听双击的话，可以使用 GestureDetector。
 
 ##### 1.4.3 Scroller
 
@@ -198,16 +198,16 @@ public void scrollBy(int x, int y) {
 `((View) getParent()).scrollBy(offsetX, offsetY);`
 
 ### 2.2　使用动画
-通过动画我们能够让一个View进行平移，而平移就是一种滑动。使用动画来移动View，主要是操作View的translationX和translationY属性，既可以采用传统的View动画，也可以采用属性动画，如果采用属性动画的话，为了能够兼容3.0以下的版本，需要采用开源动画库nineoldandroids（ http://nineoldandroids.com/ ）。
+通过动画我们能够让一个View进行平移，而平移就是一种滑动。使用动画来移动 View，主要是操作View的translationX和translationY属性，既可以采用传统的View动画，也可以采用属性动画，如果采用属性动画的话，为了能够兼容 3.0 以下的版本，需要采用开源动画库nineoldandroids（ http://nineoldandroids.com/ ）。
 
 采用View动画的代码，如下所示。此动画可以在1000ms内将一个View从原始位置向右下角移动200个像素。
 `ObjectAnimator.ofFloat(targetView, "translationX", 0, 200).setDuration(1000).start();`
 
 ### 2.3　改变布局参数
 
-本节将介绍第三种实现View滑动的方法，那就是改变布局参数，即改变LayoutParams。这个比较好理解了，比如我们想把一个Button向右平移100px，我们只需要将这个Button的LayoutParams里的marginLeft参数的值增加100px即可，是不是很简单呢？还有一种情形，为了达到移动Button的目的，我们可以在Button的左边放置一个空的View，这个空View的默认宽度为0，当我们需要向右移动Button时，只需要重新设置空View的宽度即可，当空View的宽度增大时（假设Button的父容器是水平方向的LinearLayout），Button就自动被挤向右边，即实现了向右平移的效果。如何重新设置一个View的Layout-Params呢？很简单，如下所示。
+本节将介绍第三种实现View滑动的方法，那就是改变布局参数，即改变LayoutParams。这个比较好理解了，比如我们想把一个Button向右平移100px，我们只需要将这个 Button的LayoutParams 里的marginLeft参数的值增加100px即可，是不是很简单呢？还有一种情形，为了达到移动Button的目的，我们可以在 Button 的左边放置一个空的 View，这个空View的默认宽度为0，当我们需要向右移动Button时，只需要重新设置空View的宽度即可，当空View的宽度增大时（假设Button的父容器是水平方向的LinearLayout），Button就自动被挤向右边，即实现了向右平移的效果。如何重新设置一个View的Layout-Params呢？很简单，如下所示。
 
-```
+```java
 MarginLayoutParams params = (MarginLayoutParams)mButton1.getLayoutParams();
 params.width += 100;
 params.leftMargin += 100;
@@ -288,7 +288,7 @@ public class TestButton extends TextView {
 
 ```
 
-通过上述代码可以看出，这一全屏滑动的效果实现起来相当简单。首先我们通过getRawX和getRawY方法来获取手指当前的坐标，注意不能使用getX和getY方法，因为这个是要全屏滑动的，所以需要获取当前点击事件在屏幕中的坐标而不是相对于View本身的坐标；其次，我们要得到两次滑动之间的位移，有了这个位移就可以移动当前的View.
+通过上述代码可以看出，这一全屏滑动的效果实现起来相当简单。首先我们通过getRawX和getRawY方法来获取手指当前的坐标，注意不能使用getX 和 getY 方法，因为这个是要全屏滑动的，所以需要获取当前点击事件在屏幕中的坐标而不是相对于View本身的坐标；其次，我们要得到两次滑动之间的位移，有了这个位移就可以移动当前的View.
 
 # 3.　弹性滑动
 实现弹性滑动的方法有很多，但是它们都有一个共同思想：将一次大的滑动分成若干次小的滑动并在一个时间段内完成，弹性滑动的具体实现方式有很多，比如通过Scroller、Handler#postDelayed以及Thread#sleep等，下面一一进行介绍。
@@ -331,7 +331,7 @@ Scroller的使用方法在1.4.3节中已经进行了介绍，下面我们来分�
 
 我们再看一下Scroller的computeScrollOffset方法的实现，如下所示。
 
-```
+```java
     /**
      * Call this when you want to know the new location.  If it returns true,
      * the animation is not yet finished.
@@ -378,6 +378,7 @@ Scroller的使用方法在1.4.3节中已经进行了介绍，下面我们来分�
 在上述代码中，我们的动画本质上没有作用于任何对象上，它只是在1000ms内完成了整个动画过程。利用这个特性，我们就可以在动画的每一帧到来时获取动画完成的比例，然后再根据这个比例计算出当前View所要滑动的距离。注意，这里的滑动针对的是View的内容而非View本身。可以发现，这个方法的思想其实和Scroller比较类似，都是通过改变一个百分比配合scrollTo方法来完成View的滑动。需要说明一点，采用这种方法除了能够完成弹性滑动以外，还可以实现其他动画效果，我们完全可以在onAnimationUpdate方法中加上我们想要的其他操作。
 
 ### 3.3 使用延时策略
+
 本节介绍另外一种实现弹性滑动的方法，那就是延时策略。它的核心思想是通过发送一系列延时消息从而达到一种渐近式的效果，具体来说可以使用Handler或View的postDelayed方法，也可以使用线程的sleep方法。对于postDelayed方法来说，我们可以通过它来延时发送一个消息，然后在消息中来进行View的滑动，如果接连不断地发送这种延时消息，那么就可以实现弹性滑动的效果。对于sleep方法来说，通过在while循环中不断地滑动View和sleep，就可以实现弹性滑动的效果。
 
 下面采用Handler来做个示例，其他方法请读者自行去尝试，思想都是类似的。下面的代码在大约1000ms内将**View的内容**向左移动了100像素，代码比较简单，就不再详细介绍了。之所以说大约1000ms，是因为采用这种方式无法精确地定时，原因是系统的消息调度也是需要时间的，并且所需时间不定。
@@ -424,7 +425,8 @@ Scroller的使用方法在1.4.3节中已经进行了介绍，下面我们来分�
 在dispatchTouchEvent方法中调用，用来处理点击事件，返回结果表示是否消耗当前事件，如果不消耗，则在同一个事件序列中，当前View无法再次接收到事件。
 
 上述三个方法到底有什么区别呢？它们是什么关系呢？其实它们的关系可以用如下伪代码表示：
-```
+
+```java
 　public boolean dispatchTouchEvent（MotionEvent ev){
 　　　　boolean consume = false;
 　　　　if(onInterceptTouchEvent(ev)){
@@ -441,6 +443,7 @@ Scroller的使用方法在1.4.3节中已经进行了介绍，下面我们来分�
 当一个点击事件产生后，它的传递过程遵循如下顺序：Activity -> Window -> View，即事件总是先传递给Activity，Activity再传递给Window，最后Window再传递给顶级View。顶级View接收到事件后，就会按照事件分发机制去分发事件。考虑一种情况，如果一个View的onTouchEvent返回false，那么它的父容器的onTouchEvent将会被调用，依此类推。如果所有的元素都不处理这个事件，那么这个事件将会最终传递给Activity处理，即Activity的onTouchEvent方法会被调用。
 
 关于事件传递的机制，这里给出一些结论，根据这些结论可以更好地理解整个传递机制，如下所示。
+
 1. 同一个事件序列是指从手指接触屏幕的那一刻起，到手指离开屏幕的那一刻结束，在这个过程中所产生的一系列事件，这个事件序列以down事件开始，中间含有数量不定的move事件，最终以up事件结束。
 2. 正常情况下，一个事件序列只能被一个View拦截且消耗。这一条的原因可以参考（3），因为一旦一个元素拦截了某此事件，那么同一个事件序列内的所有事件都会直接交给它处理，因此同一个事件序列中的事件不能分别由两个View同时处理，但是通过特殊手段可以做到，比如一个View将本该自己处理的事件通过onTouchEvent强行传递给其他View处理。
 3. 某个View一旦决定拦截，那么这一个事件序列都只能由它来处理（如果事件序列能够传递给它的话），并且它的onInterceptTouchEvent不会再被调用。这条也很好理解，就是说当一个View决定拦截一个事件后，那么系统会把同一个事件序列内的其他方法都直接交给它来处理，因此就不用再调用这个View的onInterceptTouchEvent去询问它是否要拦截了。
@@ -484,6 +487,7 @@ Scroller的使用方法在1.4.3节中已经进行了介绍，下面我们来分�
 对于场景3来说，它的滑动规则就更复杂了，和场景2一样，它也无法直接根据滑动的角度、距离差以及速度差来做判断，同样还是只能从业务上找到突破点，具体方法和场景2一样，都是从业务的需求上得出相应的处理规则，在下一节将会通过实际的例子来演示这种情况的解决方案。
 
 ### 5.3　滑动冲突的解决方式
+
 描述了三种典型的滑动冲突场景，在本节将会一一分析各种场景并给出具体的解决方法。首先我们要分析第一种滑动冲突场景，这也是最简单、最典型的一种滑动冲突，因为它的滑动规则比较简单，不管多复杂的滑动冲突，它们之间的区别仅仅是滑动规则不同而已。抛开滑动规则不说，我们需要找到一种不依赖具体的滑动规则的通用的解决方法，在这里，我们就根据场景1的情况来得出通用的解决方案，然后场景2和场景3我们只需要修改有关滑动规则的逻辑即可。
 
 1.外部拦截法

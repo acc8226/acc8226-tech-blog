@@ -104,7 +104,6 @@ set https_proxy=http://192.168.88.17:8333
 ```
 
 **windows 自动代理设置脚本**
-
 若编写后存在了 D 盘名称为 proxy.pac 的文件。
 
 则对应的地址为 file://d:\proxy.pac 或者使用 <http://10.1.212.135:8080/proxy.pac>

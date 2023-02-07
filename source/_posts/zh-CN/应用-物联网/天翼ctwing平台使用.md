@@ -196,5 +196,33 @@ payload 为
 设备id 15537179001
 特征码 qxMMbVxpoA2eo_Tq2TJ3aUVwTMW4O_rKbMVbn4oj2oE
 
-按 TCP 接口要求（请参考TCP协议-终端线下开发-接口介绍）组装登录报文
+按 TCP 接口要求（请参考 TCP 协议-终端线下开发-接口介绍）组装登录报文
 <https://www.ctwing.cn/sbjr/70>
+
+## 北向应用的开发
+
+设置上报周期
+ <http://localhost:8080/dm/v2/lwm2m/device/config?deviceId=&period=0>
+
+开始、停止上报温湿度；电机旋转控制
+ <http://localhost:8080/dm/v2/lwm2m/device/command?deviceId=&code=7>
+
+打开关闭自动控制
+ <http://localhost:8080/lwm2m/setRuleEngine?autoControl=false>
+
+## 测试数据
+
+aep.lwm2m.masterKey=6c5eb26a934e44619ce1f9189f5b43b8
+aep.lwm2m.productId=15537600
+
+设备id 8ac6a0dafb234c23a94ef0211bd55ebe
+
+还需要引入 apache httpcompomnet 包
+
+## 记录
+
+密码
+5gE8jCp3
+
+mob
+15313887091
