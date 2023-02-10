@@ -16,20 +16,7 @@
 <https://mirrors.tuna.tsinghua.edu.cn/>
 <https://mirrors.aliyun.com/ubuntu/>
 
-Ubuntu 的软件源配置文件是 /etc/apt/sources.list。请将系统自带的该文件做个备份，将该文件替换为下面内容，即可使用 TUNA 的软件源镜像。
-
-```bash
-deb http://mirrors.tencentyun.com/ubuntu/ focal main restricted universe multiverse
-deb http://mirrors.tencentyun.com/ubuntu/ focal-security main restricted universe multiverse
-deb http://mirrors.tencentyun.com/ubuntu/ focal-updates main restricted universe multiverse
-#deb http://mirrors.tencentyun.com/ubuntu/ focal-proposed main restricted universe multiverse
-#deb http://mirrors.tencentyun.com/ubuntu/ focal-backports main restricted universe multiverse
-deb-src http://mirrors.tencentyun.com/ubuntu/ focal main restricted universe multiverse
-deb-src http://mirrors.tencentyun.com/ubuntu/ focal-security main restricted universe multiverse
-deb-src http://mirrors.tencentyun.com/ubuntu/ focal-updates main restricted universe multiverse
-#deb-src http://mirrors.tencentyun.com/ubuntu/ focal-proposed main restricted universe multiverse
-#deb-src http://mirrors.tencentyun.com/ubuntu/ focal-backports main restricted universe multiverse
-```
+Ubuntu 的软件源配置文件是 /etc/apt/sources.list。请将系统自带的该文件做个备份。
 
 方式一：使用 sed 命令进行替换
 
@@ -41,7 +28,7 @@ sudo sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
 
 方式二：直接覆盖
 
-或者 20.04 LTS 为例， copy 内容覆盖掉 /sources.list 即可。
+以 20.04 LTS 为例， copy 内容覆盖掉 /sources.list 即可。
 
 然后请运行 `sudo apt-get update` 更新索引以生效。
 
@@ -90,7 +77,7 @@ lsb_release -a
 
 ## dpkg 命令
 
-linux 的包管理有多种，除了rpm，apt 等还有优秀的 dpkg。
+linux 的包管理有多种，除了 rpm，apt 等还有优秀的 dpkg。
 
 dpkg 命令的使用：
 dpkg -l 查看当前系统中已经安装的软件包的信息
@@ -104,7 +91,7 @@ dpkg -P 彻底的卸载 包括软件的配置文件等等
 dpkg -c 查询deb包文件中所包含的文件 rpm -qlp
 dpkg -I 查询deb包的详细信息
 添加说明：
-最常用的就是-i，-r。简单，安装／卸载。不用说。
+最常用的就是 -i，-r。简单，安装／卸载。不用说。
 
 ## 遇到过的问题
 

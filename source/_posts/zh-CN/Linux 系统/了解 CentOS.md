@@ -15,15 +15,15 @@ cat /etc/redhat-release
 安装但是会检测依赖
 
 ```sh
-sudo rpm -Uvh thingsx.rpm
+sudo rpm -Uvh <rpm package name>
 ```
 
-如果遇到“错误：依赖检测失败”的问题则可以在安装命令后加两个参数 --nodeps --force ,即安装时不再分析包之间的依赖关系而直接安装，例如：
+如果遇到“错误：依赖检测失败”的问题则可以在安装命令后加两个参数 --nodeps --force，即安装时不再分析包之间的依赖关系而直接安装。
 
 查看 .rpm 依赖
 
 ```sh
-rpm -qpR < rpm package name>
+rpm -qpR <rpm package name>
 ```
 
 卸载包
@@ -43,9 +43,9 @@ yum remove tomcat
 (05) 查询一个包是否被安装：# rpm -q < rpm package name>
 (06) 得到被安装的包的信息：# rpm -qi < rpm package name>
 (07) 列出该包中有哪些文件：# rpm -ql < rpm package name>
-(08) 列出服务器上的一个文件属于哪一个RPM包：#rpm -qf
+(08) 列出服务器上的一个文件属于哪一个 RPM 包：#rpm -qf
 (09) 可综合好几个参数一起用：# rpm -qil < rpm package name>
-(10) 列出所有被安装的rpm package：# rpm -qa
+(10) 列出所有被安装的 rpm package：# rpm -qa
 (11) 列出一个未被安装进系统的RPM包文件中包含有哪些文件：# rpm -qilp < rpm package name>
 
 查看 rpm 安装包列表：

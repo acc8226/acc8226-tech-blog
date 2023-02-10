@@ -7,7 +7,7 @@ categories: Web 服务器技术
 
 ## tomcat 版本的选择
 
-ApacheTomcat 是 JakartaEE (正式的 JavaEE)技术的一个子集的开放源码软件实现。ApacheTomcat 的不同版本可用于规范的不同版本。规范和相应的 Apache Tomcat 版本之间的映射如下:
+Apache Tomcat 是 JakartaEE (正式的 JavaEE)技术的一个子集的开放源码软件实现。ApacheTomcat 的不同版本可用于规范的不同版本。规范和相应的 Apache Tomcat 版本之间的映射如下:
 
 | **Servlet Spec** | **JSP Spec** | **EL Spec** | **WebSocket Spec** | **Authentication (JASPIC) Spec** | **Apache Tomcat Version** | **Latest Released Version** | **Supported Java Versions**                |
 | ---------------- | ------------ | ----------- | ------------------ | -------------------------------- | ------------------------- | --------------------------- | ------------------------------------------ |
@@ -24,7 +24,7 @@ ApacheTomcat 是 JakartaEE (正式的 JavaEE)技术的一个子集的开放源�
 
 ## mac / linux 下 tomcat 安装
 
-需要预先配置 Java 环境, 并选择对应的版本, 我选择的是 Tomcat 8.5
+需要预先配置 Java 环境, 并选择对应的版本, 我选择的是 Tomcat 8.5。
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-a74a8e9f2de07fdb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -42,14 +42,18 @@ wget https://mirrors.tuna.tsinghua.edu.cn/apache/tomcat/tomcat-8/v8.5.71/bin/apa
 tar -zxvf apache-tomcat-8.5.71.tar.gz
 ```
 
-修改Tomcat名字。
+修改 Tomcat 名字。
 mv apache-tomcat-8.5.71 /usr/local/Tomcat8.5
 
-为Tomcat授权。
+为 Tomcat 授权。
 chmod +x /usr/local/Tomcat8.5/bin/*.sh
 
-执行以下命令，修改Tomcat默认端口号为80。
+说明： Tomcat 默认端口号为 8080。
+执行以下命令，修改 Tomcat 默认端口号为 80。
+
+```sh
 sed -i 's/Connector port="8080"/Connector port="80"/' /usr/local/Tomcat8.5/conf/server.xml
+```
 
 启动
 /usr/local/Tomcat8.5/bin/./startup.sh
@@ -62,9 +66,10 @@ sed -i 's/Connector port="8080"/Connector port="80"/' /usr/local/Tomcat8.5/conf/
 Neither the JAVA_HOME nor the JRE_HOME environment variable is defined
 At least one of these environment variable is needed to run this program
 >
-> 解决办法: cent os 下安装 open-jre8 即可 `su -c "yum install java-1.8.0-openjdk-devel"`
+> 解决办法: CentOS 下安装 open-jre8 即可 `su -c "yum install java-1.8.0-openjdk-devel"`
+
 > **mac下查看自己的IP**
-终端输入`ifconfig | grep "inet " | grep -v 127.0.0.1` 代码 显示ip地址
+终端输入`ifconfig | grep "inet " | grep -v 127.0.0.1` 代码 显示 ip 地址
 或者 `ifconfig en0`
 
 ## 常用操作
@@ -86,7 +91,7 @@ config/logging.properties
 win 控制台乱码的问题, 查看默认编码, 是否没有设置 UTF-8 替换为 gb2312 编码
 
 **修改端口号**
-服务器的默认端口是 8080,也可以将其改成自定义的端口,conf 目录下的 server.xml 文件,将以下语句的 port 值 8080 改为自定义的端口号:(例如8081)
+服务器的默认端口是 8080,也可以将其改成自定义的端口,conf 目录下的 server.xml 文件,将以下语句的 port 值 8080 改为自定义的端口号:(例如 8081)
 
 ```xml
 <Connector port="8081" protocol="HTTP/1.1"

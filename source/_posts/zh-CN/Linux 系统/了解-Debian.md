@@ -1,9 +1,15 @@
 Debian 发行版本
 Debian 一直维护着至少三个发行版本：稳定版（stable），测试版（testing）和不稳定版（unstable）。
 
+Debian -- 通用操作系统
+<https://www.debian.org/>
+
 ## 发行版目录
 
 下一代 Debian 正式发行版的代号为 bookworm — 测试（testing）版 — 发布日期尚未确定
+
+
+
 
 Debian 11 (bullseye) — 当前的稳定（stable）版
 Debian 10（buster） — 当前的旧的稳定（oldstable）版
