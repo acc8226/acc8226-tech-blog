@@ -1,5 +1,5 @@
 ---
-title: 跨平台-SoapUI 的使用(待完善
+title: 跨平台-SoapUI 的使用
 date: 2020-09-12 10:53:39
 updated: 2022-11-16 13:28:02
 categories:

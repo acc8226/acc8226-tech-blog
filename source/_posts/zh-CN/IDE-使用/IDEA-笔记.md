@@ -90,7 +90,7 @@ Enjoy!
 
 **修改默认 行分隔符**， 这里一律使用 unix 的换行符行为。
 
-File->Settings… Editor->Code Style
+File -> Settings… Editor -> Code Style
 
 建议都设置成 Unix 形式的 `Unix and OS X（\n）`
 
@@ -99,7 +99,7 @@ File->Settings… Editor->Code Style
 > JetBrains Runtime 是什么
 > JetBrains Runtime （即 JetBrains 运行时）是一个运行时环境，用于在 Windows，Mac OS X 和 Linux 上 运行 IntelliJ 平台的各种产品。JetBrains Runtime 基于 OpenJDK 项目，并进行了一些修改。这些修改包括：抗锯齿，Linux 上增强的字体渲染，HiDPI 支持，连字，一些官方版本中未提供的针对产品崩溃的修复程序以及其他小的增强功能。
 >
->JetBrains Runtime 不是 OpenJDK 的认证版本。请自己承担风险使用。
+> JetBrains Runtime 不是 OpenJDK 的认证版本。请自己承担风险使用。
 
 ## 快捷键
 
@@ -172,13 +172,11 @@ Alt + 右方向键       向右切换 tab 页
 抽取函数/方法  Command-Option-M（Ctrl-Alt-M）
 
 **修改 Project 工具窗口（或其他活动工具窗口）大小**
-
  Ctrl+Shift+Right（Windows 或 Linux）或 ⇧⌘Right (macOS) 增加工具窗口宽度，按 Ctrl+Shift+Left 或 ⇧⌘Left 减少工具窗口宽度。
 
 对于其他工具窗口，例如 Run 或 Problems，可以使用 Ctrl+Shift+Up（Windows 或 Linux）或 ⇧⌘Up (macOS) 增加高度，使用 Ctrl+Shift+Down 或 ⇧⌘Down 减少高度。
 
 **使用 Esc 返回编辑器窗口，使用 F12 跳转到上次使用的工具窗口**
-
 完成 Project 工具窗口、Debug 窗口或 Maven 等工具窗口的操作后，使用 Esc 即可返回编辑器（不必在编辑器窗口中点击鼠标）。
 
 还可以使用 F12 将焦点返回上次使用的工具窗口（作为该工具窗口的特定快捷键的替代方法）。
@@ -302,6 +300,16 @@ Postfix Completion 功能本质上也是代码模板，只是它比 Live Templat
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-6fa8e0b6fa8d533a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
+## 非商业用途免费用
+
+建议在 github 的项目。
+
+三个月内有活跃
+
+申请地址
+
+<https://www.jetbrains.com/shop/eform/opensource?product=ALL>
+
 ## idea 激活教程
 
 IDEA 永久激活方案 (实测可用) - 简书
@@ -310,12 +318,11 @@ IDEA 永久激活方案 (实测可用) - 简书
 ## 遇到过的问题
 
 **@Override is not allowed when implementing interface method**
-
 @Override从 jdk1.5 开始出现的，是用来标注方法重写；通常方法重写发生在继承父类，重写父类方法，或者实现接口，实现接口方法；
 
 @Override 能够保证你正确重写方法，当重写方法出错时（方法名误写、漏掉参数）编译器会提示编译错误
 
-1.问题出在 idea 得 jdk 版本低于 1.5   ：File → Project Structure → Modules  把JDK版本改成大于 1.5 就可以了
+1.问题出在 idea 得 jdk 版本低于 1.5 ：File → Project Structure → Modules  把JDK版本改成大于 1.5 就可以了
 
 ### 让 IDEA 显示标题栏，而不是跟菜单栏合并
 
