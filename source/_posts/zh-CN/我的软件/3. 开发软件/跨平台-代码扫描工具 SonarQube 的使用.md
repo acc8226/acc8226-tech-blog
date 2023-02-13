@@ -29,7 +29,7 @@ Download | SonarQube <https://www.sonarqube.org/downloads/>
 ## sonar 常见错误
 
 **1. Resources should be closed**
-IO资源应该在使用后关闭。在try语句中使用了Connections, streams, files 等，这些类实现了 Closeable 或者AutoCloseable 接口，必须在 finally 块中关闭，否则，如果出现异常就可能无法关闭。对于实现了 AutoCloseable 接口的类，最好使用 “try-with-resource” 语句来自动关闭。如果不能正确地关闭资源，就会导致资源泄漏，这可能会导致应用程序甚至整个系统的崩溃。
+IO资源应该在使用后关闭。在 try 语句中使用了 Connections, streams, files 等，这些类实现了 Closeable 或者AutoCloseable 接口，必须在 finally 块中关闭，否则，如果出现异常就可能无法关闭。对于实现了 AutoCloseable 接口的类，最好使用 “try-with-resource” 语句来自动关闭。如果不能正确地关闭资源，就会导致资源泄漏，这可能会导致应用程序甚至整个系统的崩溃。
 
 如果使用 jdk1.7 以上的版本，推荐使用[try-with-resources](https://link.jianshu.com/?t=http://docs.oracle.com/javase/tutorial/essential/exceptions/tryResourceClose.html)语句。
 
@@ -65,7 +65,7 @@ public void run () {
 }
 ```
 
- catch块中只是打印了异常日志，相当于忽略了这个异常。
+ catch 块中只是打印了异常日志，相当于忽略了这个异常。
 
 处理建议为抛出异常：
 
@@ -86,7 +86,7 @@ public void run () {
 catch 块中记录中断状态之后将线程中断，正确的处理了中断异常。
 
 **3. Null pointers should not be dereferenced/accessed.**
-对值为null的指针调用任何方法，就会引发空指针异常(java.lang.NullPointerException)。在最好的情况下，这样的异常会导致程序终止。在最坏的情况下，它可能暴露出对攻击者有用的调试信息，或者它可能允许攻击者绕过安全措施。
+对值为 null 的指针调用任何方法，就会引发空指针异常(java.lang.NullPointerException)。在最好的情况下，这样的异常会导致程序终止。在最坏的情况下，它可能暴露出对攻击者有用的调试信息，或者它可能允许攻击者绕过安全措施。
 
 **4. Non-thread-safe fields should not be static**
 并不是标准 Java 库中的所有类都为线程安全的。多线程时，有些类很可能会在运行时引起数据问题或异常。

@@ -58,7 +58,7 @@ mkdir -p /home/user1/mongodb_data/
 mongod --dbpath /home/user1/mongodb_data
 ```
 
-这时mongod已经启动，重新打开一个终端, 键入mongo进入交互程序：
+这时 mongod 已经启动，重新打开一个终端, 键入 mongo 进入交互程序：
 
 ```sh
 mongo
@@ -198,9 +198,9 @@ mongodb v3 创建用户如下:
 1 # 返回1表示正确
 ```
 
-用户添加好后重新运行下mongodb, 并开启权限验证. 在mongod的终端按ctrl+c即可退出mongodb.
+用户添加好后重新运行下 mongodb, 并开启权限验证. 在 mongod 的终端按 ctrl+c 即可退出 mongodb.
 
-启动mongodb, 注意这里加了`--auth`参数:
+启动 mongodb, 注意这里加了`--auth`参数:
 
 ```sh
 mongod --dbpath /home/user1/mongodb_data --auth

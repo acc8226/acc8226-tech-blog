@@ -84,7 +84,7 @@ ZSH_THEME_RANDOM_CANDIDATES=(
 
 ### Enabling Plugins 启用插件
 
-一旦你发现一个插件(或者几个) ，你想用 Oh My Zsh，你需要在。 Zshrc 文件。 您将在 $HOME 目录中找到 zshrc 文件。 用你最喜欢的文本编辑器打开它，你会看到一个地方列出所有你想要加载的插件。
+一旦你发现一个插件(或者几个) ，你想用 Oh My Zsh，你需要在。 Zshrc 文件。 您将在 `$HOME` 目录中找到 zshrc 文件。 用你最喜欢的文本编辑器打开它，你会看到一个地方列出所有你想要加载的插件。
 `$ZSH/plugins`: oh-my-zsh 官方插件目录，该目录已经预装了很多实用的插件，只不过没激活而已；
 `$ZSH_CUSTOM/plugins`: oh-my-zsh 第三方插件目录；
 
