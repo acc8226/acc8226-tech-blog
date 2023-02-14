@@ -24,11 +24,11 @@ alibaba/nacos - GitHub
 
 ### 版本选择
 
-您可以在 Nacos 的[release notes](https://github.com/alibaba/nacos/releases)及[博客](https://nacos.io/zh-cn/blog/index.html)中找到每个版本支持的功能的介绍，当前推荐的稳定版本为2.1.1。
+您可以在 Nacos 的[release notes](https://github.com/alibaba/nacos/releases)及[博客](https://nacos.io/zh-cn/blog/index.html)中找到每个版本支持的功能的介绍。
 
 ### 预备环境准备
 
-Nacos 依赖 [Java](https://docs.oracle.com/cd/E19182-01/820-7851/inst_cli_jdk_javahome_t/) 环境来运行。如果您是从代码开始构建并运行Nacos，还需要为此配置 [Maven](https://maven.apache.org/index.html)环境，请确保是在以下版本环境中安装使用:
+Nacos 依赖 [Java](https://docs.oracle.com/cd/E19182-01/820-7851/inst_cli_jdk_javahome_t/) 环境来运行。如果您是从代码开始构建并运行 Nacos，还需要为此配置 [Maven](https://maven.apache.org/index.html)环境，请确保是在以下版本环境中安装使用:
 
 1. 64 bit OS，支持 Linux/Unix/Mac/Windows，推荐选用 Linux/Unix/Mac。
 2. 64 bit JDK 1.8+；[下载](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) & [配置](https://docs.oracle.com/cd/E19182-01/820-7851/inst_cli_jdk_javahome_t/)。
@@ -50,18 +50,18 @@ ls -al distribution/target/
 cd distribution/target/nacos-server-$version/nacos/bin
 ```
 
-#### 下载编译后压缩包方式
+#### 直接下载编译后压缩包方式
 
 您可以从 [最新稳定版本](https://github.com/alibaba/nacos/releases) 下载 `nacos-server-$version.zip` 包。
 
 ```bash
-  unzip nacos-server-$version.zip 或者 tar -xvf nacos-server-$version.tar.gz
-  cd nacos/bin
+unzip nacos-server-$version.zip 或者 tar -xvf nacos-server-$version.tar.gz
+cd nacos/bin
 ```
 
 ### 启动服务器
 
-- 注：Nacos的运行需要以至少2C4g60g*3的机器配置下运行。
+- 注：Nacos 的运行需要以至少 2C4g60g*3 的机器配置下运行。
 
 #### Linux/Unix/Mac
 
@@ -99,15 +99,15 @@ cd distribution/target/nacos-server-$version/nacos/bin
 
 ### 关闭服务器
 
-Linux/Unix/Mac
+Linux/Unix/Mac 系统
 
 `sh shutdown.sh`
 
-Windows
+Windows 系统
 
 `shutdown.cmd`
 
-或者双击shutdown.cmd运行文件。
+或者双击 shutdown.cmd 运行文件。
 
 ## 功能
 
