@@ -7,7 +7,7 @@ categories:
   - 日常软件
 ---
 
-## OCR识别-白描 (iOS / Mac / 安卓 / 网页版)
+## OCR 识别-白描 (iOS / Mac / 安卓 / 网页版)
 
 白描 App - 白描官网|简洁高效的 OCR 文字识别与文件扫描软件|拍照取字方便快捷
 <https://baimiao.uzero.cn/>

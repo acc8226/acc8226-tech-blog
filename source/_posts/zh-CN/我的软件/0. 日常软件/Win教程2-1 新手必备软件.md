@@ -1,5 +1,5 @@
 ---
-title: Win 教程 2-1 新手必装软件
+title: Win 教程 2-1 新手必备软件
 date: 2019-08-03 22:48:01
 updated: 2022-11-05 13:45:00
 categories:
@@ -36,11 +36,11 @@ categories:
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-fb48650d650984ec.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-## 工具软件
-
-### 解压软件
+## 解压缩软件
 
 推荐 [360 压缩](http://yasuo.360.cn/), 永久免费, 无广告弹窗。
+
+## 工具软件
 
 ### 截图软件 [Snipaste](https://zh.snipaste.com/)
 
