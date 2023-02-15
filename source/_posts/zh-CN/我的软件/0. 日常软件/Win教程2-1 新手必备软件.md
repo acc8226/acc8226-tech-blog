@@ -40,6 +40,12 @@ categories:
 
 推荐 [360 压缩](http://yasuo.360.cn/), 永久免费, 无广告弹窗。
 
+## 同步密码软件
+
+bitwarden【全平台】
+
+它开源免费，跨平台支持 Windows、Mac、Linux、iOS、Android 平台，同时也提供了 Chrome、Edge、Firefox、Safari 等浏览器扩展可实现快速填充帐号密码一键登录网站，是一款非常不错的 1Password 免费替代品。
+
 ## 工具软件
 
 ### 截图软件 [Snipaste](https://zh.snipaste.com/)
