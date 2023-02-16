@@ -1,5 +1,5 @@
 ---
-title: 单平台-Win 星号密码显示工具
+title: 单平台-Win 星号密码查看器
 date: 2020-09-07 14:27:44
 updated: 2022-11-05 13:45:00
 categories:

@@ -1,15 +1,21 @@
 ---
-title: Git GUI 推荐
+title: 版本控制 Git 相关软件
 date: 2022-12-13 14:16:00
-updated: 2022-12-13 14:16:00
+updated: 2023-02-16 20:31:00
 categories:
   - 收藏
   - 专业软件
 ---
 
-windows 环境下已经自带了 gitk，如果觉得还是不好使的话。一般 Java 开发者使用的 ide 也有相应的支持，足矣支持使用。
+## 终端软件
 
-## SourceTree（跨平台）
+<https://git-scm.com/downloads>
+
+## 图形化软件
+
+windows 环境下已经自带了 gitk，如果觉得还是不好使的话。Java 开发者使用的 ide 也有相应的支持，足够使用le。
+
+## SourceTree（全平台）
 
 Sourcetree | Free Git GUI for Mac and Windows
 <https://www.sourcetreeapp.com/>
