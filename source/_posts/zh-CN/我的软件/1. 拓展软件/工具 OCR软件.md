@@ -1,10 +1,10 @@
 ---
-title: 专题-OCR 文字识别软件推荐
-date:
+title: 工具 OCR软件
+date: 2022-11-05 13:45:00
 updated: 2022-11-05 13:45:00
 categories:
   - 收藏
-  - 日常软件
+  - 拓展软件
 ---
 
 ## OCR 识别-白描 (iOS / Mac / 安卓 / 网页版)
@@ -23,5 +23,4 @@ categories:
 
 > 主要是因为我有识别 mathpix 数学公式的需要。且我在当时在[数码荔枝](https://store.lizhi.io/)购买 30 元买断了终生版。
 
-目前已支持 mac, windows, 安卓三大平台, 另外微信小程序支持正在开发中...
-
+目前已支持 mac, windows, 安卓三大平台, 另外微信小程序支持正在开发中。

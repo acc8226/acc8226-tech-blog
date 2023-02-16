@@ -41,7 +41,7 @@ categories:
 
 “powershell.exe -noexit -command Set-Location -literalPath '%V'”
 
-从Win10 Build 14971 开始，微软就开始将 Powershell 取代 CMD 成为主命令 Shell，取代的决心非常显著，但微软也提供了折衷的解决方案，通过“设置——个性化——任务栏”，关闭以下功能即可回到此前状态。但在最新的版本中，目前该选项只能控制右击开始按钮的功能选项，无法还原右键菜单，所以感到不习惯的朋友不妨参照以上方法设置下。
+从 Win10 Build 14971 开始，微软就开始将 Powershell 取代 CMD 成为主命令 Shell，取代的决心非常显著，但微软也提供了折衷的解决方案，通过“设置——个性化——任务栏”，关闭以下功能即可回到此前状态。但在最新的版本中，目前该选项只能控制右击开始按钮的功能选项，无法还原右键菜单，所以感到不习惯的朋友不妨参照以上方法设置下。
 
 ![image](http://upload-images.jianshu.io/upload_images/1662509-e34c7a669740a461.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240 "Win10小技巧：如何将在此处打开命令改为 CMD 或 Powershell？")
 
