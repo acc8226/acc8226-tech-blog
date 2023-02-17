@@ -37,7 +37,9 @@ Windows Subsystem for Android 可用于 Windows 11 上的公共预览版。
 
 要使用适用于 Android 的 Windows 子系统在 Windows 11 设备上测试和调试应用，需要执行以下设置步骤。
 
-### [](https://docs.microsoft.com/zh-cn/windows/android/wsa/#enable-developer-mode-in-windows-settings)在 Windows“设置”中启用开发人员模式
+### 在 Windows“设置”中启用开发人员模式
+
+<https://docs.microsoft.com/zh-cn/windows/android/wsa/#enable-developer-mode-in-windows-settings>
 
 必须首先在 Windows“设置”中启用开发人员模式。 可通过以下三种方式开启开发人员模式：
 
@@ -77,8 +79,7 @@ adb install path_to_apk
 首先输入 `adb devices` 查看设备 id，接着 `adb -s 设备id install app-release.apk` 即可。
 
 **APK 资源去哪找**
-我一般去[应用宝](
-https://webcdn.m.qq.com/webapp/homepage/index.html#/) 搜索下载并安装到本地。
+我一般去[应用宝](<https://webcdn.m.qq.com/webapp/homepage/index.html#/>) 搜索下载并安装到本地。
 
 **卸载应用**
 预备知识：查看已安装 app 的方法：
