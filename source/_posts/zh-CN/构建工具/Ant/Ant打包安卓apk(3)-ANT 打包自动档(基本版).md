@@ -36,8 +36,8 @@ target=android-22
 ```
 
 这样会更新两个文件
-Updated `local.properties`  sdk.dir 标签指向路径, 此文件不应该包含在vcs中
-Updated `build.xml`  ant文件支持, 我觉得该文件可选是否包含在vcs中
+Updated `local.properties`  sdk.dir 标签指向路径, 此文件不应该包含在 vcs 中
+Updated `build.xml` ant 文件支持, 我觉得该文件可选是否包含在 vcs 中
 
 build.xml实例如下:
 

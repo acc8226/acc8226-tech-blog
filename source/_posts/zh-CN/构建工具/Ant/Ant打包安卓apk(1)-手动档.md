@@ -13,7 +13,7 @@ tags:
 
 1. 根据资源文件和 AndroidManifest.xml 生成 R.java 文件
 2. 处理 aidl，生成对应的 java文件，如果没有 aidl，则跳过
-3. 编译工程源码（主项目，库）src 目录下所有的源码，同时上边生成的R.java和aidl生成的java文件也会被编译生成相应的 class 文件
+3. 编译工程源码（主项目，库）src 目录下所有的源码，同时上边生成的 R.jav a和 aidl 生成的 java 文件也会被编译生成相应的 class 文件
 4. 将第 3 步生成的 class 文件打包生成 .dex 文件
 5. 将资源文件打包，生成初始的 apk
 6. 将第 4 步生成的 .dex 文件加入到apk中生成未签名的包
@@ -40,14 +40,14 @@ aapt package -f -m -M AndroidManifest.xml -I D:/Android/android-sdk/platforms/an
 
 没有则可以忽略
 
-## 3. Javac 编译(包含 src 和 gen 目录)java 文件
+## 3. Javac 编译(包含 src 和 gen 目录) java 文件
 
 `javac -encoding UTF-8 -source 1.6 -target 1.6 -bootclasspath D:/Android/android-sdk/platforms/android-22/android.jar -sourcepath src -classpath .;libs/android-support-v4.jar;libs/SDMCommon-2.2.3.jar;libs/AnySignV2.0.0.Android.1.1.1.jar;libs/bjca_anysign_tool.jar;libs/DataVaultLib.jar;libs/httpmime-4.1.3.jar;libs/SDMConnectivity-2.2.3.jar;libs/SDMParser-2.2.3.jar;libs/SMPRestClient-2.2.3.jar;libs/sup-client-util.jar;libs/wsecx-android_package-v1.4.jar;libs/xstream-1.4.4.jar -d bin/classes gen/com/nci/insprotection/*.java src/com/nci/insprotection/*.java`
 
 * 我安装的是`1.8.0_91`, 但我知道目标安卓 5.1 是基于 JDK1.6, 所以指定`-source`和`-target`都是1.6
 * `-bootclasspath` 覆盖引导类文件的位置, 我设置的编译版本是 22
-* `-sourcepath`指定用以查找类或接口定义的源代码路径, 这是非常重要的一个小技巧, 填写`src`后从而不用列举出`com.nci.insprotection`下所有的包了
-* 使用`-classpath/-cp`标签需要列举出所用用到的 jar 包`.;libs/android-support-v4.jar;xxx.jar;yyy.jar`, 不能使用通配符, 否则会找不到符号。还要注意 jar 包的命名最好不带空格，否则得双引号引起来
+* `-sourcepath`指定用以查找类或接口定义的源代码路径, 这是非常重要的一个小技巧, 填写`src`后从而不用列举出`com.nci.insprotection` 下所有的包了
+* 使用 `-classpath/-cp` 标签需要列举出所用用到的 jar 包`.;libs/android-support-v4.jar;xxx.jar;yyy.jar`, 不能使用通配符, 否则会找不到符号。还要注意 jar 包的命名最好不带空格，否则得双引号引起来
 * `-d` 指定放置生成的类文件的位置
 * 最后一个参数是 `<source files>`, 列举出所有用到的源文件, 由于我指定了sourcepath, 我只列举了`gen/com/nci/insprotection/*.java src/com/nci/insprotection/*.java`
 
@@ -105,7 +105,7 @@ java com.android.sdklib.build.ApkBuilderMain bin/aaa.apk -u -z bin/resources.ap_
 * -z 指定 apk 资源路径 Followed by the path to a zip archive. Adds the content of the application package.
 * -f 指定 dex 文件路径 Followed by the path to a file. Adds the file to the application package.
 * -rf     引用的第三方jar以及其中的资源文件，按照一定的格式放置到apk文件夹中, 一般是`src`, Followed by the path to a source folder.             Adds the java resources found in that folder to the application package, while keeping their path relative to the source folder.
-* -rj     一般是`/libs`, Followed by the path to a jar file or a folder containing jar files. Adds the java resources found in the jar file(s) to the application package.
+* -rj     一般是 `/libs`, Followed by the path to a jar file or a folder containing jar files. Adds the java resources found in the jar file(s) to the application package.
 * -nf     一般是`/libs`, 将主项目libs下面的so库打包 Followed by the root folder containing native libraries to include in the application package.
 
 ## 7. jarsigner 生成签名包

@@ -20,7 +20,7 @@ config.bool = false
 
 我想加快 apk 打包速度啊, 一方面是还在用 eclipse, 二来如果用普通的 gradle 的 farvor 方式还是不够快,美团都有 v2 方案了, 自己搞一搞比较有意思而已
 
-## META-INF目录下添加额外信息(不推荐)
+## META-INF 目录下添加额外信息(不推荐)
 
 然后从代码中读取需要的字段即可
 
@@ -52,12 +52,12 @@ config.bool = false
 其实解决的就是冒号 和 斜杠的转义, 写法如下
 将`,http://10.1.64.42:9082/insure-pad/padServer.do,false`
 其中用[SLASH]  表示斜杠`/` , 用[COLON] 表示冒号`:`
-**还是存在同样的问题, 存在特殊字符串, 会导致Failure[INSTALL_PARSE_FAILED_NO_CERTIFICATES]**
+**还是存在同样的问题, 存在特殊字符串, 会导致 Failure[INSTALL_PARSE_FAILED_NO_CERTIFICATES]**
 所以仍然解决不了问题, 心灰意冷了
 
 ## APP文件的注释字段中添加渠道信息。(不推荐)
 
-该种方式利用了 APK 本身是一种 zip 包的特点，在 zip 的注释字段中添加渠道信息，并提供了gradle插件。其中数据格式定义如下：
+该种方式利用了 APK 本身是一种 zip 包的特点，在 zip 的注释字段中添加渠道信息，并提供了 gradle 插件。其中数据格式定义如下：
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-3fec8266f79b4604.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 

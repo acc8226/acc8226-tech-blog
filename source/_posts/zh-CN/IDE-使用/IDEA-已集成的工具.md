@@ -37,8 +37,8 @@ Accept: application/json
 
 ## 参考
 
-在 IDEA 中快速测试 API 接口_weixin_33795833的博客-CSDN博客
+在 IDEA 中快速测试 API 接口_weixin_33795833的博客-CSDN 博客
 <https://blog.csdn.net/weixin_33795833/article/details/91911123>
 
-IntelliJ IDEA——数据库集成工具(Database)的使用 - huiyi0521 - 博客园
+IntelliJ IDEA—数据库集成工具(Database)的使用 - huiyi0521 - 博客园
 <https://www.cnblogs.com/huiyi0521/p/10125537.html>

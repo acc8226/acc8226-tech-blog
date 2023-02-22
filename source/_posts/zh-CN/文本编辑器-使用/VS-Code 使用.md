@@ -57,7 +57,9 @@ markdownlint
 
 ## VS Code 配置 Python
 
-### [Prerequisites](https://code.visualstudio.com/docs/python/python-tutorial#_prerequisites)
+### Prerequisites
+
+<https://code.visualstudio.com/docs/python/python-tutorial#_prerequisites>
 
 To successfully complete this tutorial, you need to first setup your Python development environment. Specifically, this tutorial requires:
 
@@ -79,7 +81,9 @@ Windows: open a command prompt and run the following command:
 py -3 --version
 ```
 
-### [Select a Python interpreter](https://code.visualstudio.com/docs/python/python-tutorial#_select-a-python-interpreter)
+### Select a Python interpreter
+
+<https://code.visualstudio.com/docs/python/python-tutorial#_select-a-python-interpreter>
 
 Python is an interpreted language, and in order to run Python code and get Python IntelliSense, you must tell VS Code which interpreter to use.
 
@@ -98,7 +102,11 @@ py -3 -m venv .venv
 
 Once you are finished, type deactivate in the terminal window to deactivate the virtual environment.
 
+## 下载加速
+
+将域名替换为 vscode.cdn.azure.cn
+
 ## 参考
 
-vscode中多行操作快捷键_闲云野鹤~~~的博客-CSDN博客_vscode多行选择快捷键
+vscode 中多行操作快捷键_闲云野鹤的博客-CSDN博客_vscode 多行选择快捷键
 <https://blog.csdn.net/weixin_44481878/article/details/88532141>

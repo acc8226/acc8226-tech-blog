@@ -15,7 +15,7 @@ JARFILE=preser-beneficiary.jar
 
 cd $DIR
 
-PROCESS=`ps -ef|grep $JARFILE |grep -v grep|grep -v PPID|awk '{ print $2}'`
+PROCESS=`ps -ef | grep $JARFILE | grep -v grep | grep -v PPID | awk '{ print $2}'`
 for i in $PROCESS
 do
   echo "Kill the $JARFILE process [ $i ]"

@@ -18,7 +18,7 @@ tags:
     simple example build file
   </description>
 
-  <!-- 使用第三方的ant包，使ant支持for循环-->
+  <!-- 使用第三方的 ant 包，使 ant 支持 for 循环-->
   <taskdef resource="net/sf/antcontrib/antcontrib.properties">
     <classpath>
       <pathelement location="${env.ANT_HOME}/lib/ant-contrib-1.0b3.jar"/>
@@ -40,7 +40,7 @@ tags:
   <property name="appName.apk" value="${inDir}/${appName}"/>
   <!-- 多渠道打包配置 -->
   <property name="channels.txt" location="${inDir}/channels.txt"/>
-  <!-- keystore配置 -->
+  <!-- keystore 配置 -->
   <property name="key.store.path" location="${inDir}/${key.store}"/>
 
   <property name="zipalign" value="${build-tools}/zipalign" />
