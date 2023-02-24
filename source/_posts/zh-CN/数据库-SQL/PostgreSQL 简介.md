@@ -51,18 +51,13 @@ docker run --name some-postgres \
 
 ## 数据库管理软件推荐
 
-Windows 版本可使用自带的 pgAdmin 4。也可使用较为通用且免费的 DBeaver CE。
+Windows 版本可使用自带的 pgAdmin 4。也可使用通用且免费的 DBeaver CE 版。
 
 ## 命令行的使用
 
-查看数据库版本
-`select version()`
+查看数据库版本 `select version()`
 
-创建数据库
-
-```sql
-CREATE DATABASE runoobdb;
-```
+创建数据库 `CREATE DATABASE runoobdb;`
 
 **`\l` 用于查看已经存在的数据库**
 
@@ -130,6 +125,10 @@ runoobdb=# \d company
     "company_pkey" PRIMARY KEY, btree (id)
 ```
 
+`\password` 重新设置用户的密码，之后然后需要 \q 退出后才生效
+
+`\q` 退出。
+
 ## 各种语句
 
 ### insert 语句
@@ -187,7 +186,7 @@ USER 参数设置
  文件名称用 `@` 前缀，该文件包含数据库名称或用户名称
 
 ADDRESS 参数设置
-该参数可以为 `主机名称` 或者`IP/32(IPV4) `或 `IP/128(IPV6)`，主机
+该参数可以为 `主机名称` 或者 `IP/32(IPV4)` 或 `IP/128(IPV6)`，主机
 名称以 `.`开头，`samehost`或`samenet` 匹配任意Ip地址
 
 METHOD 参数设置

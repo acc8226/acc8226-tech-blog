@@ -11,8 +11,8 @@ tags:
 
 常见容器视图示例：
 
-类名称|description
-:---:|:---:
+类名称 | description
+:---: | :---:
 [LinearLayout](http://developer.android.youdaxue.com/reference/android/widget/LinearLayout.html) |在一行或一列里显示视图。
 [RelativeLayout](http://developer.android.youdaxue.com/reference/android/widget/RelativeLayout.html)|相对某个视图放置其他视图。
 [FrameLayout](http://developer.android.youdaxue.com/reference/android/widget/FrameLayout.html)|ViewGroup 包含一个子视图。
@@ -21,7 +21,7 @@ tags:
 
 Activity 会创建视图来向用户显示信息，并使用户与 Activity 互动。视图是 Android UI 框架中的类。它们占据了屏幕上的方形区域，负责绘制并处理事件。Activity 通过读取 XML 布局文件确定要创建哪些视图（并放在何处）。这些 XML 文件存储在标记为 layouts 的 res 文件夹内。
 
-* onCreate的super方法放在第一句, onPause以后的super的方法放在最后一句.
+* onCreate 的 super 方法放在第一句, onPause 以后的 super 的方法放在最后一句.
 
 onCreate
 onStart
@@ -212,6 +212,7 @@ content: //mobile.android.data/cities
 ftp: //192.168.17.168
 总结
 定位窗口：
+
 * 通过Componentname、Action、Category 和 Data 可以定位一个或多个窗口。
 * 传递数据：通过 Data 和 Extra。
 * 控制访问组件的行为（窗口、服务和广播）：通过Flags。
@@ -221,12 +222,12 @@ ftp: //192.168.17.168
 从常理推测＜category＞标签应该是可选的，不过实际上＜category＞也是必须加的，原因就是一个特殊的Category：android.intent.category.DEFAULT。如果调用者不添加Category，按常理会认为过滤条件中不包含Category，系统自然也就不考虑Category了。不过Android系统并不是这样认为的。不管调用者是否添加Category，系统都会认为有一个默认的Category已经被添加。相当于调用者执行如下的代码。intent.addCategory(Intent.CATEGORY_DEFAULT);
 既然调用者默认加入了一个Category，那么被调用这自然也需要在过滤器（＜intent-filter＞标签）中加入如下的＜category＞标签了。
 
-### 常用Intent.FLAG
+### 常用 Intent.FLAG
 
 如果同时设置了 launchMode 和标志动作，则标志动作优先于相应的launchMode 属性值.
 
-* singgletop: FLAG_ ACTIVITY_ SINGLE_ TOP
-* singletask: FLAG_ACTIVITY_SINGLE_TOP + FLAG_ ACTIVITY_ CLEAR_ TOP
+* singgletop: FLAG_ACTIVITY_SINGLE_ TOP
+* singletask: FLAG_ACTIVITY_SINGLE_TOP + FLAG_ACTIVITY_CLEAR_TOP
 
 **FLAG_ACTIVITY_CLEAR_TASK**
-如果在调用 Context.startActivity 时传递这个标记，将会导致任何用来放置该 activity 的已经存在的 task 里面的已经存在的 activity 先清空，然后该 activity 再在该 task 中启动，也就是说，这个新启动的 activity 变为了这个空tas的根activity.所有老的 activity 都结束掉。该标志必须和 FLAG_ACTIVITY_NEW_TASK 一起使用。
+如果在调用 Context.startActivity 时传递这个标记，将会导致任何用来放置该 activity 的已经存在的 task 里面的已经存在的 activity 先清空，然后该 activity 再在该 task 中启动，也就是说，这个新启动的 activity 变为了这个空 tas 的根 activity.所有老的 activity 都结束掉。该标志必须和 FLAG_ACTIVITY_NEW_TASK 一起使用。
