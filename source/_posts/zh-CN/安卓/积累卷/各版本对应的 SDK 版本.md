@@ -41,10 +41,10 @@ Android 开发所需的 SDK，下载并解压后，将解压出的整个文件�
 
 ## 参考
 
-信息中心  |  Android Developers
+信息中心 | Android Developers
 <https://developer.android.google.cn/about/dashboards/>
 
-AndroidDevTools - Android开发工具 Android SDK下载 Android Studio下载 Gradle下载 SDK Tools下载 <https://www.androiddevtools.cn/index.html>
+AndroidDevTools - Android 开发工具 Android SDK 下载 Android Studio 下载 Gradle 下载 SDK Tools下载 <https://www.androiddevtools.cn/index.html>
 
-Build.VERSION_CODES  |  Android Developers
+Build.VERSION_CODES | Android Developers
 <https://developer.android.google.cn/reference/android/os/Build.VERSION_CODES>

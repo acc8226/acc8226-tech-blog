@@ -25,10 +25,10 @@ Apache 默认监听 80 端口，所以只需在浏览器访问即可。
 
 <!-- more -->
 
-## ubuntu 下的安装
+## ubuntu 安装 apache2
 
 ```sh
-apt-get install apache2
+apt get install apache2
 ```
 
 ## 参考

@@ -32,11 +32,11 @@ Installation Log: C:\Users\ferder\AppData\Local\Temp\install-postgresql.log
 由此可看出端口号默认为 5432
 如果是 windows 系统，则默认数据文件在 C:\Program Files\PostgreSQL\11\data 目录下。
 
-### mac 版安装 12.10
+### mac 安装 12.10
 
 <https://get.enterprisedb.com/postgresql/postgresql-12.10-2-osx.dmg>
 
-### docker 版安装
+### docker 安装
 
 技巧：可以选择 alpine linux 版本占用空间较小。
 
@@ -170,33 +170,35 @@ pg_hba.conf 为 PostgreSQL 的访问策略配置文件，默认位于 /var/lib/p
 
 TYPE 参数设置
 TYPE 表示主机类型，值可能为：
-若为 `local` 表示是 unix-domain 的 socket连接，
-若为 `host` 是TCP/IP socket
-若为 `hostssl` 是SSL加密的TCP/IP socket
+若为 `local` 表示是 unix-domain 的 socket 连接，
+若为 `host` 是 TCP/IP socket
+若为 `hostssl` 是 SSL 加密的 TCP/IP socket
 
 DATABASE 参数设置
 DATABASE 表示数据库名称,值可能为：
 `all` ,`sameuser`,`samerole`,`replication`,`数据库名称` ,或者多个
-数据库名称用 `逗号`，注意ALL不匹配 replication
+数据库名称用 `逗号`，注意 ALL 不匹配 replication
 
 USER 参数设置
  USER 表示用户名称，值可以为：
  `all`,`一个用户名`，`一组用户名` ，多个用户时，可以用 `,`逗号隔开，
- 或者在用户名称前缀 `+` ;在USER和DATABASE字段，也可以写一个单独的
+ 或者在用户名称前缀 `+` ; 在 USER 和 DATABASE 字段，也可以写一个单独的
  文件名称用 `@` 前缀，该文件包含数据库名称或用户名称
 
 ADDRESS 参数设置
 该参数可以为 `主机名称` 或者 `IP/32(IPV4)` 或 `IP/128(IPV6)`，主机
-名称以 `.`开头，`samehost`或`samenet` 匹配任意Ip地址
+名称以 `.`开头，`samehost` 或 `samenet` 匹配任意Ip地址
 
 METHOD 参数设置
-该值可以为"trust", "reject", "md5", "password", "scram-sha-256",
-"gss", "sspi", "ident", "peer", "pam", "ldap", "radius" or "cert"
-注意 若为`password`则发送的为明文密码。
+该值可以为 "trust", "reject", "md5", "password", "scram-sha-256","gss", "sspi", "ident", "peer", "pam", "ldap", "radius" or "cert"
+
+注意 若为 `password` 则发送的为明文密码。
 
 ### PgSQL 设置远程连接
 
-1\. 安装目录 /data/pg_hba.conf
+1\. 安装目录 /data/pg_hba.conf，将 0.0.0.0/0  进行开启。
+
+详细释义如下：
 
 ```conf
  host    all       all         192.168.1.1/32      md5 --/32 代表只允许 192.168.1.1 访问
