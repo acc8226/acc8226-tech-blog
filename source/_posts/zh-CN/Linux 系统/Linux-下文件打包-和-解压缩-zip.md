@@ -33,15 +33,18 @@ zip -r cc.zip index.html static
 `zip -r yasuo.zip * -x "test/*" -x "bbb/*"`
 
 设置压缩级别为 9 和 1（9 最大，1 最小），重新打包：
-```
+
+```sh
 $ zip -r -9 -q -o shiyanlou_9.zip /home/shiyanlou/Desktop -x ~/*.zip
 $ zip -r -1 -q -o shiyanlou_1.zip /home/shiyanlou/Desktop -x ~/*.zip
 ```
+
 一个参数用于设置压缩级别 -[1-9]，1 表示最快压缩但体积大，9 表示体积最小但耗时最久。
 
 创建加密 zip 包
 使用 -e 参数可以创建加密压缩包：
-```
+
+```sh
 $ zip -r -e -o shiyanlou_encryption.zip /home/shiyanlou/Desktop
 ```
 
@@ -92,7 +95,7 @@ $ tar -cf shiyanlou.tar Desktop/ # 不建议使用绝对路径
 $ tar -cf shiyanlou.tar
 ```
 
-上面命令中，-P 保留绝对路径符，-c 表示创建一个 tar 包文件，-f 用于指定创建的文件名，注意文件名必须紧跟在 -f 参数之后，比如不能写成 tar -fc shiyanlou.tar，可以写成 tar -f shiyanlou.tar -c ~。你还可以加上` -v` 参数以可视的的方式输出打包的文件。
+上面命令中，-P 保留绝对路径符，-c 表示创建一个 tar 包文件，-f 用于指定创建的文件名，注意文件名必须紧跟在 -f 参数之后，比如不能写成 tar -fc shiyanlou.tar，可以写成 tar -f shiyanlou.tar -c ~。你还可以加上 `-v` 参数以可视的的方式输出打包的文件。
 
 解压一个文件（-x 参数）到指定路径的已存在目录（**-C**参数指定路径）：
 
@@ -102,26 +105,27 @@ $ tar -xf shiyanlou.tar -C tardir
 # 会报警告从成员名中删除开头的“/”,  造成该问题的原因是因为使用相对路径和绝对路径引起的。另外还有一种解决方法是，使用相对路径.
 ```
 
->  PS：如果不是特殊需要，不建议大家使用参数-P
+> PS：如果不是特殊需要，不建议大家使用参数-P
 > 还是建议相对路径
 
-
 只查看不解包文件 -t 参数：
-```
-$ tar -tf shiyanlou.tar
+
+```sh
+tar -tf shiyanlou.tar
 ```
 
 对于创建不同的压缩格式的文件，对于 tar 来说是相当简单的，需要的只是换一个参数，这里我们就以使用 gzip 工具创建 *.tar.gz 文件为例来说明。
 
 我们只需要在创建 tar 文件的基础上添加 -z 参数，使用 **gzip** 来压缩文件：
 
-```
-$ tar -czf shiyanlou.tar.gz /home/shiyanlou/Desktop
+```sh
+tar -czf shiyanlou.tar.gz /home/shiyanlou/Desktop
 ```
 
 解压 *.tar.gz 文件：
-```
-$ tar -xzf shiyanlou.tar.gz
+
+```sh
+tar -xzf shiyanlou.tar.gz
 ```
 
 现在我们要使用其它的压缩工具创建或解压相应文件只需要更改一个参数即可：
@@ -191,9 +195,9 @@ tar：
 
 ## 问题收集
 
-tar命令解压文件后造成目录权限更改
+tar 命令解压文件后造成目录权限更改
 
-tar命令在解压时会默认指定参数--same-owner，即打包的时候是谁的，解压后就给谁；如果在解压时指定参数--no-same-owner（即 tar --no-same-owner -zxvf xxxx.tar.gz），则会将执行该 tar 命令的用户作为解压后的文件目录的所有者。
+tar 命令在解压时会默认指定参数 --same-owner，即打包的时候是谁的，解压后就给谁；如果在解压时指定参数--no-same-owner（即 tar --no-same-owner -zxvf xxxx.tar.gz），则会将执行该 tar 命令的用户作为解压后的文件目录的所有者。
 
 ## 参考
 

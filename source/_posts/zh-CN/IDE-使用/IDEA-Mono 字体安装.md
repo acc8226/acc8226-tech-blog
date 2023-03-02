@@ -30,5 +30,5 @@ Select JetBrains Mono in the IDE settings: go to Preferences/Settings → Editor
 jetbrains mono 字体官网
 <https://www.jetbrains.com/lp/mono/>
 
-JetBrains推出编程字体 Mono：更适合程序开发人员
+JetBrains 推出编程字体 Mono：更适合程序开发人员
 <https://m.ithome.com/html/468814.htm>

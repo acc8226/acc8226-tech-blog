@@ -7,15 +7,15 @@ package factory.simple;
 
 public class RuleConfigParserFactory {
 
-	public static IRuleConfigParser createParser(String configFormat) {
-	    IRuleConfigParser parser = null;
-	    if ("json".equalsIgnoreCase(configFormat)) {
-	      parser = new JsonRuleConfigParser();
-	    } else if ("xml".equalsIgnoreCase(configFormat)) {
-	      parser = new XmlRuleConfigParser();
-	    }
-	    return parser;
-	  }
+  public static IRuleConfigParser createParser(String configFormat) {
+      IRuleConfigParser parser = null;
+      if ("json".equalsIgnoreCase(configFormat)) {
+        parser = new JsonRuleConfigParser();
+      } else if ("xml".equalsIgnoreCase(configFormat)) {
+        parser = new XmlRuleConfigParser();
+      }
+      return parser;
+    }
 }
 ```
 
@@ -60,7 +60,7 @@ import factory.common.IRuleConfigParser;
 
 public interface IRuleConfigParserFactory {
 
-	IRuleConfigParser createParser();
+  IRuleConfigParser createParser();
 
 }
 ```
@@ -73,10 +73,10 @@ import factory.common.JsonRuleConfigParser;
 
 public class JsonRuleConfigParserFactory implements IRuleConfigParserFactory{
 
-	@Override
-	public IRuleConfigParser createParser() {
-		return new JsonRuleConfigParser();
-	}
+  @Override
+  public IRuleConfigParser createParser() {
+    return new JsonRuleConfigParser();
+  }
 }
 ```
 
@@ -88,10 +88,10 @@ import factory.common.XmlRuleConfigParser;
 
 public class XmlRuleConfigParserFactory implements IRuleConfigParserFactory{
 
-	@Override
-	public IRuleConfigParser createParser() {
-		return new XmlRuleConfigParser();
-	}
+  @Override
+  public IRuleConfigParser createParser() {
+    return new XmlRuleConfigParser();
+  }
 
 }
 ```
@@ -106,15 +106,15 @@ import factory.common.RuleConfig;
 
 public class Main {
 
-	public static void main(String[] args) {
+  public static void main(String[] args) {
 
-		IRuleConfigParserFactory parserFactory = RuleConfigParserFactoryMap.getParserFactory("xml");
-		IRuleConfigParser parser = parserFactory.createParser();
-		RuleConfig config = parser.parse("xml text ...");
+    IRuleConfigParserFactory parserFactory = RuleConfigParserFactoryMap.getParserFactory("xml");
+    IRuleConfigParser parser = parserFactory.createParser();
+    RuleConfig config = parser.parse("xml text ...");
 
-		System.out.println(config);
+    System.out.println(config);
 
-	}
+  }
 
 }
 ```
@@ -133,9 +133,9 @@ import factory.common.ISystemConfigParser;
 
 public interface IConfigParserFactory {
 
-	IRuleConfigParser createRuleParser();
+  IRuleConfigParser createRuleParser();
 
-	ISystemConfigParser createSystemParser();
+  ISystemConfigParser createSystemParser();
 
 }
 ```
@@ -150,15 +150,15 @@ import factory.common.JsonSystemConfigParser;
 
 public class JsonConfigParserFactory implements IConfigParserFactory{
 
-	@Override
-	public IRuleConfigParser createRuleParser() {
-		return new JsonRuleConfigParser();
-	}
+  @Override
+  public IRuleConfigParser createRuleParser() {
+    return new JsonRuleConfigParser();
+  }
 
-	@Override
-	public ISystemConfigParser createSystemParser() {
-		return new JsonSystemConfigParser();
-	}
+  @Override
+  public ISystemConfigParser createSystemParser() {
+    return new JsonSystemConfigParser();
+  }
 }
 ```
 
@@ -172,15 +172,15 @@ import factory.common.JsonSystemConfigParser;
 
 public class XmlConfigParserFactory implements IConfigParserFactory{
 
-	@Override
-	public IRuleConfigParser createRuleParser() {
-		return new JsonRuleConfigParser();
-	}
+  @Override
+  public IRuleConfigParser createRuleParser() {
+    return new JsonRuleConfigParser();
+  }
 
-	@Override
-	public ISystemConfigParser createSystemParser() {
-		return new JsonSystemConfigParser();
-	}
+  @Override
+  public ISystemConfigParser createSystemParser() {
+    return new JsonSystemConfigParser();
+  }
 }
 ```
 

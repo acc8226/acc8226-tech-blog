@@ -3,7 +3,7 @@ Shell 变量
 使用 declare 命令创建一个变量名为 tmp 的变量：
 
 ```sh
-$ declare tmp
+declare tmp
 ```
 
 > 其实也可以不用 declare 预声明一个变量，直接即用即创建，这里只是告诉你 declare 的作用，这在创建其它指定类型的变量（如数组）时会用到。

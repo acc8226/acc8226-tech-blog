@@ -32,11 +32,11 @@ System.out.println("RMB:"+fro);
 NumberFormat nft1=NumberFormat.getNumberInstance(new Locale("en", "US"));
 NumberFormat nft2=NumberFormat.getNumberInstance(new Locale("zh", "CN"));
 NumberFormat nft3=NumberFormat.getNumberInstance(new Locale("ru", "RU"));
-String  fro1=nft1.format(12345600);
+String  fro1 = nft1.format(12345600);
 System.out.println("NUM:"+fro1); //美国
-String  fro2=nft2.format(12345600);
+String  fro2 = nft2.format(12345600);
 System.out.println("NUM:"+fro2); //中国
-String  fro3=nft3.format(12345600);
+String  fro3 = nft3.format(12345600);
 System.out.println("NUM:"+fro3); //俄语
 ```
 

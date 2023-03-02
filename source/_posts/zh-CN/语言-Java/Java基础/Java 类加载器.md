@@ -126,7 +126,7 @@ public class HelloTest {
 
 运行结果
 
-```
+```sh
 java aa.test.HelloTest
 
 init ...
