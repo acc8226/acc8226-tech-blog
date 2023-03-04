@@ -54,9 +54,9 @@ function strict() {
 如果代码中使用"use strict"开启了严格模式,则下面的情况都会在脚本运行之前抛出SyntaxError异常:
 
 * 八进制语法:var n = 023和var s = "\047"
-* with语句
-* 使用delete删除一个变量名(而不是属性名):delete myVariable
-* 使用eval或arguments作为变量名或函数名
+* with 语句
+* 使用 delete 删除一个变量名(而不是属性名):delete myVariable
+* 使用 eval 或 arguments作为变量名或函数名
 * 使用未来保留字(也许会在ECMAScript 6中使用):implements, interface, let, * package, private, protected, public, static,和yield作为变量名或函数名
 * 在语句块中使用函数声明:if(a<b){ function f(){} }
 * 其他错误
@@ -93,13 +93,13 @@ f();
 
 在普通的函数调用`f()中`,`this`的值会指向全局对象.在严格模式中,`this`的值会指向`undefined`.当函数通过call和apply调用时,如果传入的`thisvalue`参数是一个`null`和`undefined`除外的原始值(字符串,数字,布尔值),则`this的值会成为那个原始值对应的包装对象`,如果`thisvalue`参数的值是`undefined`或`null`,则`this的值会指向全局对象`.在严格模式中,`this的值就是``thisvalue`参数的值,没有任何类型转换.
 
-#### arguments对象属性不与对应的形参变量同步更新
+#### arguments 对象属性不与对应的形参变量同步更新
 
 在非严格模式中,修改`arguments`对象中某个索引属性的值,和这个属性对应的形参变量的值也会同时变化,反之亦然.这会让JavaScript的代码混淆引擎让代码变得更难读和理解。在严格模式中`arguments 对象会以形参变量的拷贝的形式被创建和初始化，因此 arguments 对象的改变不会影响形参。`
 
 #### eval相关的区别
 
-在严格模式中,`eval`不会在当前的作用域内创建新的变量.另外,传入eval的字符串参数也会按照严格模式来解析.你需要全面测试来确保没有代码收到影响。另外，如果你并不是为了解决一个非常实际的解决方案中，尽量不要使用`eval。`
+在严格模式中,`eval` 不会在当前的作用域内创建新的变量.另外,传入eval的字符串参数也会按照严格模式来解析.你需要全面测试来确保没有代码收到影响。另外，如果你并不是为了解决一个非常实际的解决方案中，尽量不要使用 `eval。`
 
 ## 参考
 

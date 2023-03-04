@@ -1,5 +1,7 @@
 ---
 title: nodejs 安装
+date: 2022-08-08 00:00:00
+updated: 2022-08-08 00:00:00
 categories:
   - 语言
   - Node.js

@@ -44,7 +44,7 @@ Java7 源码如下所示：
 说明：对于 `Integer var = ?` 在 -128 至 127 之间的赋值，Integer 对象是在 `IntegerCache.cache` 产生，会复用已有对 象，这个区间内的 Integer 值可以直接使用 `==` 进行判断，但是这个区间之外的所有数据，都会在堆上产生，并不会复 用已有对象，这是一个大坑，推荐使用 equals 方法进行判断。
 
 我的批注：相信有经验的开发者都应该知道字符串 String 比较肯定用的是 equals。
-Java 世界里相等请用equals方法，`==` 表示对象相等，一般在框架开发中会用到。
+Java 世界里相等请用 equals 方法，`==` 表示对象相等，一般在框架开发中会用到。
 
 8\. 【强制】任何货币金额，均以最小货币单位且为整型类型进行存储。
 
@@ -194,10 +194,10 @@ str = str + "hello";
 7）类成员方法只供类内部调用，必须是 private。
 8）类成员方法只对继承类公开，那么限制为 protected。 说明：任何类、方法、参数、变量，严控访问范围。过于宽泛的访问范围，不利于模块解耦。思考：如果是一个 private 的方法，想删除就删除，可是一个 public 的 service 成员方法或成员变量，删除一下，不得手心冒点汗吗？ 变量像自己的小孩，尽量在自己的视线内，变量作用域太大，无限制的到处跑，那么你会担心的。
 
-
 ## 补充知识
 
 ### 六大设计原则解读
+
 1. 单一职责原则(Single Responsibility Principle)，简称是 SRP
 SRP 的原话解释是：
 There should never be more than one reason for a class to change.
@@ -235,7 +235,7 @@ High level modules should not depend upon low level modules.Both should depend u
 
 5\. 迪米特法则(Law of Demeter)
 迪米特法则（Law of Demeter,LoD）也称为最少知识原则（Least Knowledge Principle,LKP），虽然名字不同，但描述的是同一个规则：一个对象应该对其他对象有最少的了解。
-> 通俗地讲，一个类应该对自己需要耦合或调用的类知道得最少，你（被耦合或调用的类）的内部是如何复杂都和我没关系，那是你的事情，我就知道你提供的这么多public方法，我就调用这么多，其他的我一概不关心。
+> 通俗地讲，一个类应该对自己需要耦合或调用的类知道得最少，你（被耦合或调用的类）的内部是如何复杂都和我没关系，那是你的事情，我就知道你提供的这么多 public 方法，我就调用这么多，其他的我一概不关心。
 
 迪米特法则的核心观念就是类间解耦，弱耦合，只有弱耦合了以后，类的复用率才可以提高。其要求的结果就是产生了大量的中转或跳转类，导致系统的复杂性提高，同时也为维护带来了难度。读者在采用迪米特法则时需要反复权衡，既做到让结构清晰，又做到高内聚低耦合。
 
@@ -248,9 +248,8 @@ High level modules should not depend upon low level modules.Both should depend u
 
 ## 参考(References)
 
-* 《1. 2022 Java开发手册(黄山版).pdf
+* 《1. 2022 Java 开发手册(黄山版).pdf
 * 《设计模式之禅 第1版》
-* 《Java技术手册 第6版》
-* 《编写高质量代码：改善Java程序的151个建议》
-* 白话阿里巴巴Java开发手册（安全规约） - 李艳鹏 - 简书(https://www.jianshu.com/p/9528c4ea1504)
-
+* 《Java 技术手册 第6版》
+* 《编写高质量代码：改善 Java 程序的151个建议》
+* 白话阿里巴巴 Java 开发手册（安全规约） - 李艳鹏 - 简书(<https://www.jianshu.com/p/9528c4ea1504>)

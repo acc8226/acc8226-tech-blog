@@ -160,7 +160,7 @@ jarsigner -verify xxx.apk 验证apk
 
 ### 使用apksigner.jar进行验证(推荐)
 
-使用ant格式, 也可改写为java -jar格式
+使用 ant 格式, 也可改写为 java -jar 格式
 
 ```xml
   <target name="verifyApk" description="checking whether signatures of APK files will verify on Android devices.">

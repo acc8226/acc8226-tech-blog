@@ -40,11 +40,22 @@ Installation Log: C:\Users\ferder\AppData\Local\Temp\install-postgresql.log
 
 技巧：可以选择 alpine linux 版本占用空间较小。
 
+pg14
+
 ```sh
-docker run --name some-postgres \
--p 5432:5432 \
--e POSTGRES_PASSWORD=abcdefg \
--d postgres:12.10-alpine
+docker run --name pg14 \
+-p 5430:5432 \
+-e POSTGRES_PASSWORD=aaabbb \
+-d postgres:14-alpine
+```
+
+pg15
+
+```sh
+docker run --name pg15 \
+-p 5431:5432 \
+-e POSTGRES_PASSWORD=bbbccc \
+-d postgres:15-alpine
 ```
 
 其中默认用户名为 postgres
@@ -166,7 +177,7 @@ export PGPASSWORD=password
 
 ### pg_hba.conf 配置文件讲解
 
-pg_hba.conf 为 PostgreSQL 的访问策略配置文件，默认位于 /var/lib/pgsql/10/data/ 目录（PostgreSQL10）。
+pg_hba.conf 为 PostgreSQL 的访问策略配置文件，默认位于 `/var/lib/pgsql/10/data/` 目录（以 PostgreSQL 10 为例）。
 
 TYPE 参数设置
 TYPE 表示主机类型，值可能为：
@@ -176,7 +187,7 @@ TYPE 表示主机类型，值可能为：
 
 DATABASE 参数设置
 DATABASE 表示数据库名称,值可能为：
-`all` ,`sameuser`,`samerole`,`replication`,`数据库名称` ,或者多个
+`all`，`sameuser`，`samerole`，`replication`，`数据库名称` ,或者多个
 数据库名称用 `逗号`，注意 ALL 不匹配 replication
 
 USER 参数设置
@@ -212,9 +223,15 @@ METHOD 参数设置
 
 打开 postgresql.conf。找到以下内容：
 
+```sh
 listen_addresses = 'localhost' # what IP address(es) to listen on;
+```
+
 改为
+
+```sh
 listen_addresses = '*' # what IP address(es) to listen on;
+```
 
 3\. 重启服务
 

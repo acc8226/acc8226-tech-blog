@@ -8,9 +8,6 @@ Debian -- 通用操作系统
 
 下一代 Debian 正式发行版的代号为 bookworm — 测试（testing）版 — 发布日期尚未确定
 
-
-
-
 Debian 11 (bullseye) — 当前的稳定（stable）版
 Debian 10（buster） — 当前的旧的稳定（oldstable）版
 Debian 9（stretch） — 更旧的稳定（oldoldstable）版，现有长期支持
@@ -24,3 +21,9 @@ Debian GNU/Linux 3.0（woody） — 被淘汰的稳定版
 Debian GNU/Linux 2.2（potato） — 被淘汰的稳定版
 Debian GNU/Linux 2.1（slink） — 被淘汰的稳定版
 Debian GNU/Linux 2.0（hamm） — 被淘汰的稳定版
+
+## 下载
+
+debian-11.6.0-amd64-netinst.iso。
+这是 Debian 11，代号为 bullseye，网络安装，用于 64 位 PC（amd64）
+

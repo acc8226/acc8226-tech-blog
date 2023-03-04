@@ -217,7 +217,7 @@ count.addAndGet(1);
 
 ## 参考
 
-1. 2022 Java开发手册(黄山版).pdf
-2. 《编写高质量代码：改善Java程序的151个建议》
-3. 白话阿里巴巴Java开发手册（安全规约） - 李艳鹏 - 简书(<https://www.jianshu.com/p/9528c4ea1504>)
+1. 2022 Java 开发手册(黄山版).pdf
+2. 《编写高质量代码：改善 Java 程序的 151 个建议》
+3. 白话阿里巴巴 Java 开发手册（安全规约） - 李艳鹏 - 简书(<https://www.jianshu.com/p/9528c4ea1504>)
 4. [Java并发编程的艺术](https://www.amazon.cn/dp/B012QIKPGM/ref=sr_1_3?ie=UTF8&qid=1516341619&sr=8-3&keywords=java%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E5%AE%9E%E6%88%98)

@@ -267,10 +267,10 @@ String mSelectionClause = "var = " + mUserInput;
 
 14.【推荐】根据设备性能，选择性开启复杂动画，以实现一个整体较优的性能和体验；
 
-15.【推荐】在有强依赖 onAnimationEnd 回调的交互时，如动画播放完毕才能操作页面 ， onAnimationEnd 可 能 会 因 各 种 异 常 没 被 回 调 （ 参 考 ：
-https://stackoverflow.com/questions/5474923/onanimationend-is-not-getting-called-onanimationstart-works-fine），建议加上超时保护或通过 postDelay 替代onAnimationEnd。
+15.【推荐】在有强依赖 onAnimationEnd 回调的交互时，如动画播放完毕才能操作页面 ， onAnimationEnd 可 能 会 因 各 种 异 常 没 被 回 调
+（参考 ：<https://stackoverflow.com/questions/5474923/onanimationend-is-not-getting-called-onanimationstart-works-fine> ），建议加上超时保护或通过 postDelay 替代onAnimationEnd。
 
-16\. 【推荐】当 View Animation 执行结束时，调用 View.clearAnimation()释放相关资源。
+16\. 【推荐】当 View Animation 执行结束时，调用 View.clearAnimation() 释放相关资源。
 
 ## 安全
 

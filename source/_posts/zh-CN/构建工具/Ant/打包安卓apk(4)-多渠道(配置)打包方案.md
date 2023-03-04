@@ -109,7 +109,7 @@ true,http://10.1.104.28:8099/yyy|CUSTOM_KEY|技术微服务
 
 接下来得重新签名, 这里注意安卓从Android 7.0开始引入了v2签名，但是由于app需要兼容之前的机器，所以也必须进行v1签名才可以。如果只进行v2签名，将导致在android7.0之前的机器安装失败；我尝试Java自带的jarsigner可是报错`META-INF/MANIFEST.MF has invalid digest for AndroidManifest.xml`, 后来查资料发现还是用网易提供的极速签名工具[点击下载](http://nsmobile-pub-online.nos.netease.com/apksigner.rar)靠谱
 
-`java -jar apksigner.jar -appname 测试 -keystore debug.keystore -pswd android -alias androiddebugkey -aliaspswd android -v1 true -v2 false in.apk `
+`java -jar apksigner.jar -appname 测试 -keystore debug.keystore -pswd android -alias androiddebugkey -aliaspswd android -v1 true -v2 false in.apk`
 
 > * -appname 待签名的应用程序名，可选，但建议不同的 APP 填上对应的 app 名（可以为中文），有助于【加速】
 > * -keystore：后跟.keystore 签名文件
@@ -120,7 +120,7 @@ true,http://10.1.104.28:8099/yyy|CUSTOM_KEY|技术微服务
 
 最后一步 zipalign 优化
 
-`zipalign -v -f [alignmentSize] in.apk out.apk `
+`zipalign -v -f [alignmentSize] in.apk out.apk`
 (可选)再进行v2签名。
 `java -jar ApkSigner.jar [-appname test] -keystore keystorePath -alias alias [-pswd password] [-aliaspswd aliasPassword] -v1 false -v2 true out.apk`
 

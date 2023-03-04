@@ -77,7 +77,7 @@ class Son extends ConfusingName {
 
 12\. 【强制】杜绝完全不规范的英文缩写，避免望文不知义。
 
-反例：AbstractClass“缩写”成 AbsClass；condition“缩写”成 condi；Function“缩写”成 Fu，此类随意缩写严重降低了代码的可阅读性。
+反例：AbstractClass “缩写”成 AbsClass；condition “缩写”成 condi；Function “缩写”成 Fu，此类随意缩写严重降低了代码的可阅读性。
 
 13\. 【推荐】为了达到代码自解释的目标，任何自定义编程元素在命名时，使用完整的单词组合来表达。
 
@@ -135,4 +135,4 @@ B）领域模型命名规约：
 
 ## 参考
 
-2022 Java开发手册(黄山版).pdf
+2022 Java 开发手册(黄山版).pdf

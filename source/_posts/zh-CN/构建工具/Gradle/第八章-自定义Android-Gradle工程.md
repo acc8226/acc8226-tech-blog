@@ -125,7 +125,7 @@ public String getTestInstrumentationRunner() {
     }
 ```
 
-可以看到它可以被调用多次，调用一次添加一个，其参数被project.file方法转换为一个文件对象。其具体使用我们在稍后进行介绍。
+可以看到它可以被调用多次，调用一次添加一个，其参数被 project.file 方法转换为一个文件对象。其具体使用我们在稍后进行介绍。
 
 ##### 8.1.10 proguardFiles
 
@@ -156,7 +156,7 @@ public String getTestInstrumentationRunner() {
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-29a7deee827816bc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-Android Gradle为我们提供了signingConfigs{}配置块便于我们生成多个签名配置信息。signingConfigs是android的一个方法，它接受一个域对象作为其参数，前面我们讲过的，其类型是NamedDomainObjectContainer<SigningConfig>，这样我们在signingConfigs{}块中定义的都是一个SigningConfig。一个SigningConfig就是一个签名配置，其可配置的元素如下：
+Android Gradle 为我们提供了signingConfigs{}配置块便于我们生成多个签名配置信息。signingConfigs 是 android 的一个方法，它接受一个域对象作为其参数，前面我们讲过的，其类型是 NamedDomainObjectContainer<SigningConfig>，这样我们在 signingConfigs{}块中定义的都是一个 SigningConfig。一个SigningConfig 就是一个签名配置，其可配置的元素如下：
 
 * storeFile 签名证书文件
 * storePassword 签名证书文件的密码
@@ -174,7 +174,7 @@ Android Gradle为我们提供了signingConfigs{}配置块便于我们生成多�
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-ee4d4daad65fe0ef.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-可以看到我们在defaultConfig中对签名配置的应用这里的signingConfigs是android对象实例的一个属性，对应是getSigningConfigs()，debug就是我们上面创建的签名配置名称。
+可以看到我们在 defaultConfig 中对签名配置的应用这里的 signingConfigs 是 android 对象实例的一个属性，对应是getSigningConfigs()，debug 就是我们上面创建的签名配置名称。
 
 除了上面的默认签名配置之外，我们也可以对构建的类型分别配置签名信息，比如我上面说的debug模式配置debug的签名信息，release默认配置release的签名信息。
 
@@ -184,7 +184,7 @@ Android Gradle为我们提供了signingConfigs{}配置块便于我们生成多�
 
 ### 8.3 构建的应用类型
 
-关于构建类型，前面的章节我们已经用到了一些，在Android Gradle工程中，Android Gradle已经帮我们内置了debug和release两个构建类型，他们两种模式的只要差别在于能否在设备上调试以及签名不一样，其他代码和文件资源都是一样的，一般情况下也够用了。
+关于构建类型，前面的章节我们已经用到了一些，在Android Gradle 工程中，Android Gradle 已经帮我们内置了debug和release两个构建类型，他们两种模式的只要差别在于能否在设备上调试以及签名不一样，其他代码和文件资源都是一样的，一般情况下也够用了。
 
 如果想增加新的构建类型，在buildTypes{}代码块中继续添加元素就好了。buildTypes和signingConfigs一样，也是android的一个方法，接受的参数也是一个域对象NamedDomainObjectContainer<BuildType>，添加的每一个都是BuildType类型，所以你可以使用BuildType提供的方法和属性对现有的BuildType配置，这里列举一些常用的配置。
 
@@ -192,22 +192,22 @@ Android Gradle为我们提供了signingConfigs{}配置块便于我们生成多�
 
 applicationIdSuffix是BuildType的一个属性，用于配置**基于默认applicationId的后缀**，比如默认defaultConfig中配置的applicationId为org.flysnow.app.example82，我们在debug的BuildType中指定applicationIdSuffix为.debug,那么构建生成的debug apk的包名就是org.flysnow.app.example82.debug。其方法原型为
 
-```
-    public BaseConfigImpl setApplicationIdSuffix(String applicationIdSuffix) {
-        this.mApplicationIdSuffix = applicationIdSuffix;
-        return this;
-    }
+```java
+public BaseConfigImpl setApplicationIdSuffix(String applicationIdSuffix) {
+    this.mApplicationIdSuffix = applicationIdSuffix;
+    return this;
+}
 ```
 
 ##### 8.3.2 debuggable
 
-debuggable也是BuildType的一个属性，用于配置是否生成一个可供调试的Apk。其值可以为true或者false。其方法原型为
+debuggable 也是 BuildType 的一个属性，用于配置是否生成一个可供调试的Apk。其值可以为true或者false。其方法原型为
 
 ```java
-    public BuildType setDebuggable(boolean debuggable) {
-        this.mDebuggable = debuggable;
-        return this;
-    }
+public BuildType setDebuggable(boolean debuggable) {
+    this.mDebuggable = debuggable;
+    return this;
+}
 ```
 
 ##### 8.3.3 jniDebuggable
@@ -239,7 +239,7 @@ jniDebuggable 和 debuggable 类似，也是BuildType的一个属性，用于配
 
 配置该BuildType使用的签名配置，前面已经讲过，可以参考8.2章节温习一遍。
 
-**每一个BuildType都会生成一个SourceSet**，默认位置为src/<buildtypename>/,根据我们以前讲的知识，一个SourceSet包含源代码、资源文件等信息，在Android中就包含了我们的java源代码，res资源文件以及AndroidManiftest文件等，所以针对不同的BuildType，我们可以单独的为其指定Java源代码，res资源等，只要把他们放到src/<buildtypename>/下相应的位置即可，在构建的时候，Android Gradle会优先使用他们代替我们main下的相关文件。
+**每一个BuildType都会生成一个SourceSet**，默认位置为 `src/<buildtypename>/`,根据我们以前讲的知识，一个 SourceSet 包含源代码、资源文件等信息，在Android中就包含了我们的java源代码，res资源文件以及AndroidManiftest文件等，所以针对不同的BuildType，我们可以单独的为其指定Java源代码，res资源等，只要把他们放到src/<buildtypename>/下相应的位置即可，在构建的时候，Android Gradle会优先使用他们代替我们main下的相关文件。
 
 另外需要注意，因为我们的每个 BuildType 都会生成一个SourceSet，所以新增的 BuildType 名字一个要注意，不能是main和androidTest，因为他们两个已经被系统占用，同事每个BuildType之间名称不能相同。
 
@@ -265,7 +265,7 @@ Android SDK默认为我们提供了两个 Proguard 配置文件，他们分别�
 
 除了在BuildType中启用混淆和配置混淆外，我们也可以在defaultConfig中启用和配置，还记得我们前面在8.1章节讲的吧，**因为这个是默认配置，一般用的比较少**。
 
-我们还可以针对个别渠道，启用和配置 Proguard 混淆，多渠道包是通过 productFlavors 配置的，productFlavors 是一个NamedDomainObjectContainer<ProductFlavor>域对象，其配置的渠道本质上就是一个ProductFlavor，**和defaultConfig是一样的**，所以每个渠道也可以单独的启用和配置Proguard混淆。
+我们还可以针对个别渠道，启用和配置 Proguard 混淆，多渠道包是通过 productFlavors 配置的，productFlavors 是一个`NamedDomainObjectContainer<ProductFlavor>` 域对象，其配置的渠道本质上就是一个 ProductFlavor，**和defaultConfig是一样的**，所以每个渠道也可以单独的启用和配置Proguard混淆。
 
 ### 8.5 启用 zipalign 优化
 

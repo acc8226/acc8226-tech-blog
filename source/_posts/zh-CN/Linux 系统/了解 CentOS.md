@@ -1,3 +1,12 @@
+## 下载 Fedora
+
+Download Fedora Workstation
+<https://getfedora.org/en/workstation/download/>
+
+Fedora 自带中文输入法，支持 yum 和 dnf 且安装包小于 2 G，外观也做的不错。
+
+## 命令
+
 查看版本信息
 
 ```sh

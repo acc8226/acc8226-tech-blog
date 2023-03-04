@@ -72,4 +72,4 @@ Kindle 个人文档服务与以下设备兼容：
 ## 参考(References)
 
 * [Kindle 阅读器固件下载大全及升级方法 – 书伴](https://kindlefere.com/post/4.html)
-* K7 5.12.2更新包地址: <https://s3.amazonaws.com/firmwaredownloads/update_kindle_5.12.2.bin>
+* K7 5.12.2 更新包地址: <https://s3.amazonaws.com/firmwaredownloads/update_kindle_5.12.2.bin>

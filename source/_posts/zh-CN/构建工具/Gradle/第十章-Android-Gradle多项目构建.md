@@ -65,7 +65,7 @@ Android 库项目引用和 Gradle 的其他引用是一样的，都是通过depe
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-d13ca76391523940.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-看到这里大家看明白了把，对于 lib 这个库项目，我们先配置成可以同时发布多个aar，然后我们在其他引用工程里做如上示例的引用，比如 flavor1 这个渠道包就引用 flavor1 这个渠道对应的lib1库的release aar包；flavor2这个渠道就引用flavor2 这个渠道对应的lib1库的release aar包。
+看到这里大家看明白了把，对于 lib 这个库项目，我们先配置成可以同时发布多个aar，然后我们在其他引用工程里做如上示例的引用，比如 flavor1 这个渠道包就引用 flavor1 这个渠道对应的 lib1 库的 release aar包；flavor2这个渠道就引用flavor2 这个渠道对应的 lib1 库的 release aar包。
 
 以上这些引用都是在项目立直接引用，下一节我们讲如何发布我们的aar包到Maven中心库，以供其他项目引用。
 
@@ -73,7 +73,7 @@ Android 库项目引用和 Gradle 的其他引用是一样的，都是通过depe
 
 项目直接依赖一般适用于关联比较紧密、不可复用的项目，对于这类项目我们可以直接基于源代码项目的依赖，有时候我们会有一些项目，可以被其他项目所复用，比如我们的公共组件库，工具库等等，这类就可以单独发布出去，被其他项目使用，就像我们引用jcenter上的类库一样方便，这一节我们就讲如何把库项目单独的发布到我们自己的Maven中心库.
 
-要搭建自己的Maven私服，推荐使用 Nexus Repository Manager，版本选择 2.xx，下载地址： <http://www.sonatype.com/download-oss-sonatype> ，我这里选择的是2.12.1版本，我们选择 nexus-2.12.1-01-bundle.tar.gz包下载解压，然后找到nexus-2.12.1-01\bin\jsw这个目录，可以看到有很多以操作系统和 cpu 架构命名的文件夹，你可以根据你的系统选择进入相应的文件夹运行 start-nexus 脚本即可启动Nexus，启动之后，我们在浏览器里打开 <http://localhost:8081/nexus/> 即可访问，注意看右上角有个 Log In 链接，点击可以登陆管理Nexus，默认的用户名是admin，密码是admin123。关于Nexus的搭建和使用，非常简单，大家可以 Google 下相关文章，很容易的就会入门使用，这里不再多讲。
+要搭建自己的Maven私服，推荐使用 Nexus Repository Manager，版本选择 2.xx，下载地址： <http://www.sonatype.com/download-oss-sonatype> ，我这里选择的是 2.12.1 版本，我们选择 nexus-2.12.1-01-bundle.tar.gz包下载解压，然后找到nexus-2.12.1-01\bin\jsw这个目录，可以看到有很多以操作系统和 cpu 架构命名的文件夹，你可以根据你的系统选择进入相应的文件夹运行 start-nexus 脚本即可启动 Nexus，启动之后，我们在浏览器里打开 <http://localhost:8081/nexus/> 即可访问，注意看右上角有个 Log In 链接，点击可以登陆管理 Nexus，默认的用户名是admin，密码是admin123。关于Nexus的搭建和使用，非常简单，大家可以 Google 下相关文章，很容易的就会入门使用，这里不再多讲。
 
 有了部署好的Nexus Maven中心库之后，我们就可以把我们的项目发布到我们的中心库了，要想通过Maven发布，首先我们得在build.gradle中应用maven插件：
 
