@@ -4,7 +4,7 @@ service iptables stop
 
 /etc/init.d/iptables stop
 
-之后 redhat7 中使用了 firewalld 代替了原来的 iptables。
+redhat7 中使用了 firewalld 代替了原来的 iptables。
 
 查看防火墙状态：systemctl status firewalld
 
@@ -33,7 +33,7 @@ service iptables stop
 （4）关闭防火墙：systemctl stop firewalld
 （5）检查防火墙状态：systemctl status firewalld
 
-二、使用firewall-cmd配置端口
+二、使用 firewall-cmd 配置端口
 
 （1）查看防火墙状态：firewall-cmd --state
 （2）重新加载配置：firewall-cmd --reload

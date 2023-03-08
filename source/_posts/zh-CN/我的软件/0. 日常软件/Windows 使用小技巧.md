@@ -35,9 +35,9 @@ categories:
 
 5、将右侧默认字符串值改为 “cmd.exe /s /k pushd "%V"”，确定保存即可。
 
-![image](http://upload-images.jianshu.io/upload_images/1662509-cbaf565e29939a65.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240 "Win10小技巧：如何将在此处打开命令改为CMD或Powershell？")
+![image](http://upload-images.jianshu.io/upload_images/1662509-cbaf565e29939a65.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240 "Win10小技巧：如何将在此处打开命令改为 CMD 或 Powershell？")
 
-6、这样处理之后，在资源管理器空白处按住 Shift 按键右击鼠标，出现的选项仍然是“在此处打开Powershell 窗口”，但点击后实际开启的功能确实已经变成了“在此处打开命令提示符”。
+6、这样处理之后，在资源管理器空白处按住 Shift 按键右击鼠标，出现的选项仍然是“在此处打开 Powershell 窗口”，但点击后实际开启的功能确实已经变成了“在此处打开命令提示符”。
 
 7、要改回去，只要把以上键值改回以下键值即可，注意不含两侧引号。
 
@@ -51,4 +51,4 @@ categories:
 
 ## 参考
 
-文章来源: IT之家(<https://www.ithome.com/html/win10/282909.htm>)
+文章来源: IT 之家(<https://www.ithome.com/html/win10/282909.htm>)

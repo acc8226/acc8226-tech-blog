@@ -38,9 +38,9 @@ calc：启动计算器
 cmd.exe：CMD 命令提示符
 
 自动关机命令
-　 Shutdown -s -t 600：表示600秒后自动关机
+　 Shutdown -s -t 600：表示 600 秒后自动关机
 　 shutdown -a ：可取消定时关机
-　 Shutdown -r -t 600：表示600秒后自动重启
+　 Shutdown -r -t 600：表示 600 秒后自动重启
 
 control：控制面版
 devmgmt.msc：设备管理器
@@ -48,9 +48,9 @@ desk.cpl：屏幕分辨率
 diskmgmt.msc：磁盘管理
 eventvwr：事件查看器
 explorer：打开资源管理器
-Firewall.cpl：Windows防火墙
+Firewall.cpl：Windows 防火墙
 hdwwiz.cpl：设备管理器
-inetcpl.cpl：Internet属性
+inetcpl.cpl：Internet 属性
 logoff：注销命令
 main.cpl：鼠标属性
 mmsys.cpl：声音
