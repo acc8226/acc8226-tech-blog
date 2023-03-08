@@ -4,7 +4,7 @@ date: 2019-01-18 15:21:04
 updated: 2022-12-10 16:26:00
 categories:
   - 语言-Java
-  - JSON和XML
+  - JSON 和 XML
 tags:
 - Java
 - XStream

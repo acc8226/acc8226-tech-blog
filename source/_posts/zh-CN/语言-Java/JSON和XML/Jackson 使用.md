@@ -4,10 +4,10 @@ date: 2020-11-10 16:47:48
 updated: 2020-11-10 16:47:48
 categories:
   - 语言-Java
-  - 框架
+  - JSON 和 XML
 tags:
 - Java
-- json
+- Json
 ---
 
 老版本的 Jackson 使用的包名为 org.codehaus.jackson，而新版本使用的是 com.fasterxml.jackson。
