@@ -169,5 +169,5 @@ public Lock getLock(boolean fair) {
 ## 参考
 
 1. 2022 Java开发手册(黄山版).pdf
-2. 《编写高质量代码：改善Java程序的151个建议》
+2. 《编写高质量代码：改善 Java 程序的 151 个建议》
 3. 白话阿里巴巴Java开发手册（安全规约） - 李艳鹏 - 简书(<https://www.jianshu.com/p/9528c4ea1504>)

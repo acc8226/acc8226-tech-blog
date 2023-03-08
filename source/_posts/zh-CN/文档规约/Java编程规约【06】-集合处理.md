@@ -236,11 +236,11 @@ Java 的集合类 API 有很大的选择余地；Java 7 至少提供了 58 个�
 ![表3：实现Map接口的类](http://upload-images.jianshu.io/upload_images/1662509-8979d63c7c602438.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### 参考(References)
+
 《码出高效 阿里巴巴Java开发手册 终极版（1.3.0）》
  [《Java性能权威指南》](http://www.ituring.com.cn/book/1445)
  [《Java技术手册 第6版》](http://www.ituring.com.cn/book/1554)
 [《Java面向对象编程(第2版)》](https://www.amazon.cn/dp/B01NAI4UXH/ref=sr_1_1?ie=UTF8&qid=1515739503&sr=8-1&keywords=java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B)
-
 
 20.【参考】合理利用好集合的有序性（sort）和稳定性（order），避免集合的无序性（unsort）和不稳定性（unorder）带来的负面影响。
 

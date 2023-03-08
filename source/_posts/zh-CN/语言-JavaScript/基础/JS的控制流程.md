@@ -36,7 +36,6 @@ let x = 1;
 }
 console.log(x); // 输出 1
 
-
 const c = 1;
 {
   const c = 2;
@@ -100,7 +99,7 @@ outer_block:{
 
 终止执行当前或标签循环的语句，直接执行下一个迭代循环。
 
-与 [`break`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/break "break 语句中止当前循环，switch语句或label 语句，并把程序控制流转到紧接着被中止语句后面的语句。") 语句的区别在于， continue 并不会终止循环的迭代，而是：
+与 [`break`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/break "break 语句中止当前循环，switch 语句或 label 语句，并把程序控制流转到紧接着被中止语句后面的语句。") 语句的区别在于， continue 并不会终止循环的迭代，而是：
 
 * 在 [`while`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/while "while 语句可以在某个条件表达式为真的前提下，循环执行指定的一段代码，直到那个表达式不为真时结束循环。") 循环中，控制流跳转回条件判断；
 

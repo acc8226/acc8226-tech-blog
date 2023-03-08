@@ -30,7 +30,7 @@ Installation Log: C:\Users\ferder\AppData\Local\Temp\install-postgresql.log
 ```
 
 由此可看出端口号默认为 5432
-如果是 windows 系统，则默认数据文件在 C:\Program Files\PostgreSQL\11\data 目录下。
+windows 系统数据文件在 C:\Program Files\PostgreSQL\11\data 目录下。
 
 ### mac 安装 12.10
 
@@ -40,11 +40,22 @@ Installation Log: C:\Users\ferder\AppData\Local\Temp\install-postgresql.log
 
 技巧：可以选择 alpine linux 版本占用空间较小。
 
+pg 14
+
 ```sh
-docker run --name some-postgres \
--p 5432:5432 \
--e POSTGRES_PASSWORD=abcdefg \
--d postgres:12.10-alpine
+docker run --name pg14 \
+-p 5430:5432 \
+-e POSTGRES_PASSWORD=aaabbb \
+-d postgres:14-alpine
+```
+
+pg 15
+
+```sh
+docker run --name pg15 \
+-p 5431:5432 \
+-e POSTGRES_PASSWORD=bbbccc \
+-d postgres:15-alpine
 ```
 
 其中默认用户名为 postgres
@@ -58,6 +69,9 @@ Windows 版本可使用自带的 pgAdmin 4。也可使用通用且免费的 DBea
 查看数据库版本 `select version()`
 
 创建数据库 `CREATE DATABASE runoobdb;`
+
+`psql -d postgres` 连接 postgres 数据库
+`psql -d abc` 连接 abc 数据库
 
 **`\l` 用于查看已经存在的数据库**
 
@@ -127,6 +141,12 @@ runoobdb=# \d company
 
 `\password` 重新设置用户的密码，之后然后需要 \q 退出后才生效
 
+`\c +数据库名` 切换数据库（相当于 mysql 中 ，use 数据库）
+
+`\d` 查看库中表
+
+`\conninfo` 查看连接信息
+
 `\q` 退出。
 
 ## 各种语句
@@ -156,17 +176,21 @@ pg 数据库配置无需交互式输入密码连接服务端
 
 第一种方式：配置一个环境变量 PGPASSWORD，这个只需要在执行 psql 命令之前执行：
 
+```sh
 export PGPASSWORD=password
+```
 
 第二种方式：配置一个配置文件 .pgpass 文件，格式像下面这样就行：
 
+```sh
 127.0.0.1:5432:*:postgres:postgres
+```
 
-这种方式需要你去配置一个文件，注意这个需要放在用户主目录下面下，～/.pgpass，还需要注意这个文件的权限，至少当前用户能读取到这个文件。
+这种方式需要你去配置一个文件，注意这个需要放在用户主目录下面下，`～/.pgpass`，还需要注意这个文件的权限，至少当前用户能读取到这个文件。
 
 ### pg_hba.conf 配置文件讲解
 
-pg_hba.conf 为 PostgreSQL 的访问策略配置文件，默认位于 /var/lib/pgsql/10/data/ 目录（PostgreSQL10）。
+pg_hba.conf 为 PostgreSQL 的访问策略配置文件，默认位于 `/var/lib/pgsql/10/data/` 目录（以 PostgreSQL 10 为例）。
 
 TYPE 参数设置
 TYPE 表示主机类型，值可能为：
@@ -176,12 +200,12 @@ TYPE 表示主机类型，值可能为：
 
 DATABASE 参数设置
 DATABASE 表示数据库名称,值可能为：
-`all` ,`sameuser`,`samerole`,`replication`,`数据库名称` ,或者多个
-数据库名称用 `逗号`，注意 ALL 不匹配 replication
+`all`，`sameuser`，`samerole`，`replication`，`数据库名称` ,或者多个
+数据库名称用逗号，注意 ALL 不匹配 replication
 
 USER 参数设置
  USER 表示用户名称，值可以为：
- `all`,`一个用户名`，`一组用户名` ，多个用户时，可以用 `,`逗号隔开，
+ `all`,`一个用户名`，`一组用户名` ，多个用户时，可以用 `,` 逗号隔开，
  或者在用户名称前缀 `+` ; 在 USER 和 DATABASE 字段，也可以写一个单独的
  文件名称用 `@` 前缀，该文件包含数据库名称或用户名称
 
@@ -201,20 +225,26 @@ METHOD 参数设置
 详细释义如下：
 
 ```conf
- host    all       all         192.168.1.1/32      md5 --/32 代表只允许 192.168.1.1 访问
- host    all       all         192.168.1.0/24     md5 --/24 代表 192.168.1.1~192.168.1.255 都允许访问
- host    all       all         192.168.0.0/16      md5 --/16 代表 192.168.1.1~192.168.255.255 都允许访问
- host    all       all         192.0.0.0/8          md5 --/8 代表 192.1.1.1~192.255.255.255 都允许访问
- host    all       all         0.0.0.0/0          md5 --/0 代表所有 ip 地址都允许访问
+ host    all    all    192.168.1.1/32   md5 --/32 代表只允许 192.168.1.1 访问
+ host    all    all    192.168.1.0/24   md5 --/24 代表 192.168.1.1~192.168.1.255 都允许访问
+ host    all    all    192.168.0.0/16   md5 --/16 代表 192.168.1.1~192.168.255.255 都允许访问
+ host    all    all    192.0.0.0/8      md5 --/8 代表 192.1.1.1~192.255.255.255 都允许访问
+ host    all    all    0.0.0.0/0        md5 --/0 代表所有 ip 地址都允许访问
 ```
 
 2\. 修改监听的 IP 和端口。
 
 打开 postgresql.conf。找到以下内容：
 
+```sh
 listen_addresses = 'localhost' # what IP address(es) to listen on;
+```
+
 改为
+
+```sh
 listen_addresses = '*' # what IP address(es) to listen on;
+```
 
 3\. 重启服务
 
@@ -227,10 +257,16 @@ Postgresql 的三种备份方式
 3. 连续归档
 
 备份
+
+```sh
 pg_dump –h 192.168.18.101 -h 5432 -U postgres -c -C –-file=dbname.sql thingsx
+```
 
 导出
+
+```sh
 psql -h 127.0.0.1 -p 5432 -U postgres -d thingsx2 < dbname.sql
+```
 
 注：-d 展示的是指向的数据库
 

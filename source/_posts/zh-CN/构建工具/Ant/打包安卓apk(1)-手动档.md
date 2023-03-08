@@ -9,7 +9,7 @@ tags:
 - Ant
 ---
 
-![](https://upload-images.jianshu.io/upload_images/1662509-e6e38c5ec874cd32.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![图](https://upload-images.jianshu.io/upload_images/1662509-e6e38c5ec874cd32.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 1. 根据资源文件和 AndroidManifest.xml 生成 R.java 文件
 2. 处理 aidl，生成对应的 java文件，如果没有 aidl，则跳过
@@ -124,7 +124,7 @@ java com.android.sdklib.build.ApkBuilderMain bin/aaa.apk -u -z bin/resources.ap_
 
 zipalign 可以使用 4 字节对齐的方式优化我们签名打包后的 apk 文件中的以二进制格式存放的文件（如资源图片），这样的话，当资源文件被映射到内存时，应用程序访问资源文件的速率就会被大大提升，同时节省应用占用的内存空间。
 
-检测有没有4字节对齐
+检测有没有 4 字节对齐
 
 ```bash
 set path=%path%;D:\Android\android-sdk\build-tools\27.0.3

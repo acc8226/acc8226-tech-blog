@@ -4,7 +4,7 @@ date:
 categories:
 ---
 
-Apache Derby 是一个 Apache DB 子项目，是一个完全用 Java 实现的开源关系数据库，可以在 Apache License 2.0版本下使用。一些主要特点包括:
+Apache Derby 是一个 Apache DB 子项目，是一个完全用 Java 实现的开源关系数据库，可以在 Apache License 2.0 版本下使用。一些主要特点包括:
 
 Derby 的占用空间很小——基本引擎和嵌入式 JDBC 驱动程序的占用空间约为3.5 MB。
 Derby 基于 Java、 JDBC 和 SQL 标准。

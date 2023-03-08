@@ -54,11 +54,11 @@ windows
 
 下载之后运行就会看到右下角有小飞机，然后右键编辑服务器；对应的服务器地址、端口、密码、加密方式就是第二步中4步骤中看到的信息，对应填写确定即可；
 
-![基于国外服务器搭建自己的VPN-天下数据](https://upload-images.jianshu.io/upload_images/1662509-ee49663055814ee6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![基于国外服务器搭建自己的 VPN](https://upload-images.jianshu.io/upload_images/1662509-ee49663055814ee6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-见证奇迹的时刻到了浏览器打开https://www.google.com/
+见证奇迹的时刻到了浏览器打开 https://www.google.com/
 
-![基于国外服务器搭建自己的VPN-天下数据](https://upload-images.jianshu.io/upload_images/1662509-c28d55cf80e4a726.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![基于国外服务器搭建自己的 VPN](https://upload-images.jianshu.io/upload_images/1662509-c28d55cf80e4a726.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 android 手机
 

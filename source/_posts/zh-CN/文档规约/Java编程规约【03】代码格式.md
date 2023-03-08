@@ -183,7 +183,7 @@ StringBuffer sb = new StringBuffer();
 `<img src="{@docroot}/images/logo.gif">`这份资料受`<a href="{@docRoot}/legal.html">`版权保护`</a>`。
 
 * `{@literal text }`
-这个行内标签按照字面形式显示` text`，`text` 中的所有 HTML 都会转义，而且所有` javadoc `标签都会被忽略。虽然不保留空白格式，但仍适合在 <pre> 标签中使用。
+这个行内标签按照字面形式显示` text`，`text` 中的所有 HTML 都会转义，而且所有 `javadoc` 标签都会被忽略。虽然不保留空白格式，但仍适合在 `<pre>` 标签中使用。
 
 * `{@code text }`
 这个标签和 {@literal} 标签的作用类似，但会使用代码字体显示 text 的字面量。
@@ -192,7 +192,7 @@ StringBuffer sb = new StringBuffer();
 没有参数的 `{@value}` 标签在 static final 字段的文档注释中使用，会被替换成当前字段的常量值。
 
 * `{@value reference }`
-这种 `{@value} `标签的变体有一个` reference `参数，指向一个` static final `字段，会被替换成指定字段的常量值。
+这种 `{@value}` 标签的变体有一个 `reference`参数，指向一个` static final `字段，会被替换成指定字段的常量值。
 
 ### 包的文档注释
 
@@ -225,7 +225,7 @@ public class MainActivity extends Activity {
         ...
     }
     public void setTitle(String title) {
-    	mTitle = title;
+        mTitle = title;
     }
     private void setUpView() {
         ...

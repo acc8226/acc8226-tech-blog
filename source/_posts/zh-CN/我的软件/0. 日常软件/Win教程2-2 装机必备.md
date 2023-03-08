@@ -105,6 +105,6 @@ PS 【收费软件】 / GIMP 【PS的替代品且免费】 / 美图秀秀【免�
 
 ## 参考
 
-* [《Win7宝典 / Windows7 宝典》](http://www.win7china.com/html/6351.html)
+* [《Win 7 宝典 / Windows 7 宝典》](http://www.win7china.com/html/6351.html)
 * [软媒-Win10 之家](https://win10.ithome.com/)
 * [Win 装机必备软件大全](https://www.ithome.com/bibei/)

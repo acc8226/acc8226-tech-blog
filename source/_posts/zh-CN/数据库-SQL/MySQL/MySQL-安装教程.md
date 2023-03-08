@@ -378,5 +378,3 @@ GRANT ALL PRIVILEGES ON *.* TO 'xiaobudian'@'%';
 ```sh
 mysql  -uroot -p123456 -h 117.xxx.xx.xx
 ```
-
-## 参考

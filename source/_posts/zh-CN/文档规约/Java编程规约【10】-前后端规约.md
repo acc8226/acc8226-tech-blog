@@ -72,7 +72,3 @@ response.setHeader("Cache-Control", "s-maxage=" + cacheSeconds);
 ## 参考
 
 1. 2022 Java开发手册(黄山版).pdf
-
----
-
-我的博客即将同步至腾讯云+社区，邀请大家一同入驻：https://cloud.tencent.com/developer/support-plan?invite_code=y2m6xv60g6h9
