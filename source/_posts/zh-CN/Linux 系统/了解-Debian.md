@@ -26,4 +26,3 @@ Debian GNU/Linux 2.0（hamm） — 被淘汰的稳定版
 
 debian-11.6.0-amd64-netinst.iso。
 这是 Debian 11，代号为 bullseye，网络安装，用于 64 位 PC（amd64）
-
