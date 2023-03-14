@@ -133,10 +133,11 @@ init ...
 ```
 
 总结：
-1.使用自定义的类加载器的时候需要继承ClassLoader来实现class的加载
-2.在加载的过程中须要使用 ByteArrayOutputStream 内存流
-3.解析的时候需要使用父类来解析获得二进制信息以此得到Class的信息(必须调用 super.defineClass(fileName, classBytes, 0, classBytes.length);)
-4.使用自定义的类加载器可以没有限制的在其他的地方加载类
+
+1. 使用自定义的类加载器的时候需要继承 ClassLoader 来实现 class 的加载
+2. 在加载的过程中须要使用 ByteArrayOutputStream 内存流
+3. 解析的时候需要使用父类来解析获得二进制信息以此得到Class的信息(必须调用 super.defineClass(fileName, classBytes, 0, classBytes.length);)
+4. 使用自定义的类加载器可以没有限制的在其他的地方加载类
 
 ## 参考
 

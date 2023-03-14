@@ -45,7 +45,7 @@ console.log(c); // 输出1, 而且不会报错
 
 相比之下，使用 [`let`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/let "The source for this interactive example is stored in a GitHub repository. If you'd like to contribute to the interactive examples project, please clone https://github.com/mdn/interactive-examples and send us a pull request.")和[`const`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/const "常量是块级作用域，很像使用 let 语句定义的变量。常量的值不能通过重新赋值来改变，并且不能重新声明。")声明的变量是**有**块级作用域的。
 
-#### 使用`function`
+### 使用`function`
 
 [函数声明](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)同样被限制在声明他的语句块内:
 
@@ -238,7 +238,7 @@ try {
 
 抛出一个用户定义的异常。
 
-语法: `throw expression; `
+语法: `throw expression`
 
 ```js
 throw "Error2"; // 抛出了一个值为字符串的异常

@@ -1,6 +1,7 @@
 ---
 title: PostgreSQL 简介
-date:
+date: 2023-01-01 00:23:00
+updated: 2023-01-01 00:23:00
 categories:
 ---
 
@@ -45,7 +46,7 @@ pg 14
 ```sh
 docker run --name pg14 \
 -p 5430:5432 \
--e POSTGRES_PASSWORD=aaabbb \
+-e POSTGRES_PASSWORD=abc \
 -d postgres:14-alpine
 ```
 
@@ -54,7 +55,7 @@ pg 15
 ```sh
 docker run --name pg15 \
 -p 5431:5432 \
--e POSTGRES_PASSWORD=bbbccc \
+-e POSTGRES_PASSWORD=bcd \
 -d postgres:15-alpine
 ```
 
@@ -259,7 +260,7 @@ Postgresql 的三种备份方式
 备份
 
 ```sh
-pg_dump –h 192.168.18.101 -h 5432 -U postgres -c -C –-file=dbname.sql thingsx
+pg_dump –h 192.168.18.101 -p 5432 -U postgres -c -C –-file=dbname.sql thingsx
 ```
 
 导出

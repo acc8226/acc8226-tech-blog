@@ -77,9 +77,7 @@ xcrun: error: invalid active developer path
 ```sh
 # java
 export CLASSPATH=$JAVA_HOME/lib/tools.jar:$JAVA_HOME/lib/dt.jar:.
-# 先定义, 最终再导出也是可以的
-JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home
-export JAVA_HOME
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home
 export PATH=$JAVA_HOME/bin:$PATH
 
 # gradle

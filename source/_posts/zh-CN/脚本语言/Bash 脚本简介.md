@@ -1,5 +1,7 @@
 ---
 title: Bash 脚本简介
+date: 2022-04-05 14:41:50
+updated: 2022-11-05 09:48:00
 categories: 脚本文件
 tags:
 - Bash

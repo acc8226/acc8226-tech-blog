@@ -1742,8 +1742,7 @@ can require that usage be consistent within the document.
 
 Rationale: Consistent formatting makes it easier to understand a document.
 
-
 > 快照 end
 
 ## 原文出处
-https://github.com/DavidAnson/markdownlint/blob/master/doc/Rules.md
+<https://github.com/DavidAnson/markdownlint/blob/master/doc/Rules.md>
