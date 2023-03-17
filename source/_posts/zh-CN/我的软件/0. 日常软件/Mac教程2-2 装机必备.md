@@ -9,13 +9,6 @@ categories:
 
 ### 必备包
 
-* 必备: [360 极速浏览器](https://browser.360.cn/ee/mac/index.html) or 谷歌浏览器.  之所以选择360极速, 是因为鼠标悬停和鼠标手势很好用. **本身也能支持 PDF 阅读**
-
-* 工具类: [搜狗输入法](https://pinyin.sogou.com/mac/): 我本来是用的是百度, 使用过程中遇到了一个小bug, 果断换回搜狗输入法。
-
-* 优化类: 腾讯柠檬清理
-<https://lemon.qq.com/>
-
 * 办公类: WPS Office for Mac
 <http://mac.wps.cn/>
 
@@ -31,8 +24,6 @@ IINA - The modern media player for macOS
 ### 可选包
 
 * 印象笔记 or 有道云笔记
-
-* [百度网盘](https://pan.baidu.com) or 腾讯微云
 
 * Snipaste - 截图 + 贴图
 <https://zh.snipaste.com/>

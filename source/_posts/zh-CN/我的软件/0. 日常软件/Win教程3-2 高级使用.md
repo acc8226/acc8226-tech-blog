@@ -1,7 +1,7 @@
 ---
-title: Win 教程加餐-系统相关设置
-date: 2020-08-12 16:47:20
-updated: 2022-11-16 17:12:00
+title: Win 教程 3-2 高级使用
+date: 2021-06-03 21:27:25
+updated: 2022-11-05 13:45:00
 categories:
   - 收藏
   - 日常软件
@@ -21,7 +21,19 @@ colortool.exe -b OneHalfDark.itermcolors
 
 ## 修改 host 文件
 
-hosts 文件是操作系统中一个负责 IP 地址与域名快递解析的文件。计算机在键入域名的时候，首先会去看看 hosts 文件汇总有没有关于此域名 IP 地址的记录。为了提高计算机访问某一网站的速度，修改 hosts 文件是很好的办法。
+hosts 文件是操作系统中一个负责 IP 地址与域名快递解析的文件。计算机在键入域名的时候，首先会去看看 hosts 文件汇总有没有关于此域名 IP 地址的记录。
+
+Host 文件所在路径
+
+```text
+%WINDIR%\System32\drivers\etc
+```
+
+或者
+
+```text
+C:\Windows\System32\drivers\etc
+```
 
 修改 hosts 有什么作用？
 
@@ -44,6 +56,32 @@ hosts 文件是操作系统中一个负责 IP 地址与域名快递解析的文�
 * 在 Windows 下命令行执行：ipconfig /flushdns
 * 在 macOS 下执行命令：sudo killall -HUP mDNSResponder
 * 如果你使用 Chrome 浏览器，那么可以访问：chrome://net-internals/#dns，然后点击「Clear host cache」按钮来清空浏览器里的 DNS 缓存。
+
+### 代理设置
+
+**windows下 Dos 命令行设置代理**
+按需设置对应的地址 + 端口信息，以下为举例：
+
+```sh
+set http_proxy=http://10.5.3.9:80
+set https_proxy=http://192.168.88.17:8333
+```
+
+**windows 自动代理设置脚本**
+若编写后存在了 D 盘名称为 proxy.pac 的文件。
+
+则对应的地址为 file://d:\proxy.pac 或者使用 <http://10.1.212.135:8080/proxy.pac>
+
+```js
+// url 是正在访问的完整 URL 地址, host 指的是从该 URL 提取出的主机名称
+function FindProxyForURL(url, host) {
+    if (shExpMatch(host, "10.*") || shExpMatch(host, "127.*")) {
+        return "DIRECT";
+    } else {
+        return "PROXY 10.5.3.9:80";
+    }
+}
+```
 
 ## 设置环境变量
 
@@ -69,3 +107,7 @@ setx -m name "%name%;value"
 同样也可以用系统命令来打开“启动文件夹”。
 
 在运行里面输入 `shell:startup`，打开之后把要启动的快捷方式放进窗口即可。
+
+## 参考
+
+你可能不知道的几种替代式 Windows 快捷操作 | IT 技术资料分享 <https://www.lmdouble.com/1424236155.html>
