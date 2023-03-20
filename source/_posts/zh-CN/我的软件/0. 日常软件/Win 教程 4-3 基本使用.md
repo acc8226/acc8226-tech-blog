@@ -1,5 +1,5 @@
 ---
-title: Win 教程 3-1 基本使用
+title: Win 教程 4-3 基本使用
 date: 2019-10-01 22:08:33
 updated: 2022-11-05 13:45:00
 categories:
@@ -76,7 +76,6 @@ Ctrl + J 打开下载窗口
 
 选择刚刚创建的快捷方式，你可以重命名为自己喜欢的名字，这里我改为“滑动关机”。
 
-
 ### 几种替代式 windows 快捷操作
 
 相对于鼠标点点点，有时候用键盘快捷键操作在执行效率上会更高一些，网上关于 windows 快捷键相关的文章非常多，而且都是非常常用的一些快捷操作。虽然如此，但还是有一些快捷操作你可能不知道的，下面IT技术资料分享网小编就给大家分享几种替代式的 windows 快捷操作，进一步丰富大家对快捷键操作的认识。
@@ -151,115 +150,34 @@ Win 10 现在的版本命名规则是：
 
 没有装 360 的话使用重启电脑后选择安全模式, 将指定文件删除即可。
 
+### rp 文件怎么打开
+
+rp 文件可以通过 Axure8 导入打开，具体方式如下：
+
+1、打开一个的 Axure8，找到并点击“文件”。
+
+![](./imgs/%E5%B0%8F%E7%9F%A5%E8%AF%86--rp%E6%96%87%E4%BB%B6%E7%94%A8%E4%BB%80%E4%B9%88%E6%89%93%E5%BC%80/1662509-44045d805536673d.jpg)
+
+2、在弹出的下拉菜单中，找到并点击“从 RP 文件导入”的选项。
+3、在弹出页面中，选择需要打开的rp文件，并点击最下方的“打开”。
+4、选择并点击需要导入的文件。
+5、点击最下方的 “next”，进入下一步。
+
+![](./imgs/%E5%B0%8F%E7%9F%A5%E8%AF%86--rp%E6%96%87%E4%BB%B6%E7%94%A8%E4%BB%80%E4%B9%88%E6%89%93%E5%BC%80/1662509-c38ab607fb147e8f.jpg)
+
+6、在弹出页面，确认并点击“next”。
+7、进入到了导入检查的界面当中，看需要添加的内容，及删除的内容的信息。
+8、点击下方的“next”，rp 文件就可以打开了。
+
+![](./imgs/%E5%B0%8F%E7%9F%A5%E8%AF%86--rp%E6%96%87%E4%BB%B6%E7%94%A8%E4%BB%80%E4%B9%88%E6%89%93%E5%BC%80/1662509-9980b83c1d59c2f5.jpg)
+
+所以建议为了方便预览, 在导出 rp 文件的同事导出再导出一份 html 格式是比较好的做法。
+
 ## 遇到过的问题
 
 ### 系统提示：此应用无法在你的电脑上运行是怎么回事
 
 请检查下载文件的完整性。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## 系统优化/设置/清理软件
-
-驱动管理：[驱动精灵](http://www.drivergenius.com/) / [驱动人生](https://www.160.com/) 二选一。从此不用担心驱动光盘📀丢失。
-
-Windows 优化：[软媒魔方](http://mofang.ruanmei.com/)
-
-## 网络浏览器
-
-[360 极速浏览器](https://browser.360.cn/ee/) / 360 安全浏览器
-
-## 压缩、解压缩软件
-
-[360 压缩](https://yasuo.360.cn/) 轻巧无广告
-
-或者 7-Zip <https://sparanoid.com/lab/7z/download.html>
-
-## 输入法
-
-[搜狗输入法智慧版](https://pinyin.sogou.com/zhihui/) / [百度输入法](http://shurufa.baidu.com/)
-
-## 杀毒、安全
-
-[腾讯电脑管家](https://guanjia.qq.com/) / [360安全卫士](https://weishi.360.cn/)/ [火绒安全](https://www.huorong.cn/)
-
-## 聊天 / 远程办公
-
-[QQ](https://im.qq.com/) / [微信电脑版](https://pc.weixin.qq.com/) / [钉钉](https://www.dingtalk.com/) / 飞书 ...
-
-## 电脑管理手机软件
-
-Android 用户可选择 [腾讯应用宝 PC 版](https://sj.qq.com/) / [360 手机助手PC版](http://sj.360.cn/index.html)
-
-iOS 用户请下载 iTunes 和 PP 助手。
-
-## 下载软件
-
-[迅雷](https://dl.xunlei.com/) / [Free Download Manager](https://www.freedownloadmanager.org/zh/)
-
-## 影音播放、网络电视、视频转换软件
-
-[PotPlayer](https://potplayer.org/) / QQ影音(19 年下半年又开始更新了) / 格式工厂
-网易云音乐 / QQ 音乐
-爱奇艺 / 腾讯视频 / 优酷
-
-## 文字办公 / 电子邮件 / 股票财经
-
-* 微软 Office / 金山 WPS
-* 印象笔记 / 有道云笔记
-* Foxmail / 网易邮箱大师
-* 向日葵 / TeamViewer
-* 腾讯微云 / 坚果云网盘
-* 福昕 pdf / Adobe Pdf
-
-## 其他系列
-
-**图像处理、相片、图片浏览编辑**
-Snipaste 截图软件
-ACDSee 看图软件
-PS 【收费软件】 / GIMP 【PS的替代品且免费】 / 美图秀秀【免费】
-
-**硬盘管理/分区、光盘类软件**
-
-* diskgenius 良心国软
-* Acronis Disk Director 11 Advanced 官方简体中文版下载（[官方下载](http://download.acronis.com/trial/ADD11A_trial_zh-CN.exe) 236M）- 《[Win7、Vista如何调整硬盘分区](http://www.vista123.com/vista/229.html)》 支持250G 及以上硬盘
-
-**备份、虚拟光驱、光驱刻录软件**
-
-* 软媒虚拟光驱(软媒魔方自带了这个小组件)
-* [Vista/Win7 一键还原/ Vista Ghost](http://www.vista123.com/vistaghost/)）1.3.6 免费中文正式版（[官方下载](http://down.ruanmei.com/vistaghost/vistaghostsetup.zip) 4.30M） 支持64位/32位的Win7 和 Vista 系统
-* CDBurnerXP 4.3.8.2474 光盘刻录免费多国语言正式版（[官方下载](http://ember.cdburnerxp.se/cdbxp_setup_4.3.8.2474.exe) 3.27M）多国语言（含简体中文）
-
-**虚机机系列**
-
-* 【推荐】VMware Workstation Player(之前叫 VMware Workstation)
-* [VirtualBox](https://www.virtualbox.org/)
-
-注：在 mac 平台 VMWare 推出了 VMware Fusion Pro 专业版 和 Player 免费版。
-
-**我的小工具集**
-
-* [Everything-文件搜索工具](https://www.voidtools.com/zh-cn/)
-* f.lux - 自动调整屏幕色温减少蓝光防疲劳软件
-* ToDesk 远程控制
 
 ## 善用浏览器
 

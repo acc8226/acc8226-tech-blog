@@ -137,7 +137,7 @@ $ sudo dpkg -i emacs24_24.5+1-6ubuntu1.1_amd64.deb
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-3c99f477657a2830?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-我们将如何解决这个错误呢？这就要用到 `apt-get` 了，使用它的`-f`参数了，修复依赖关系的安装
+我们将如何解决这个错误呢？这就要用到 `apt-get` 了，使用它的 `-f` 参数了，修复依赖关系的安装
 
 ```sh
 sudo apt-get update

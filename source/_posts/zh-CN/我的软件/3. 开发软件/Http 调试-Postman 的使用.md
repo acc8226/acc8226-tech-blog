@@ -13,7 +13,7 @@ categories:
 
 ## Postman 与测试
 
-postman使用教程,接口自动化测试_全栈工程师开发手册（原创）(腾讯内推)-CSDN博客_postman接口测试教程
+postman 使用教程,接口自动化测试_全栈工程师开发手册（原创）(腾讯内推)-CSDN博客_postman接口测试教程
 <https://blog.csdn.net/luanpeng825485697/article/details/83507112>
 
 newman -version
@@ -38,9 +38,12 @@ postmanlabs/newman: Newman is a command-line collection runner for Postman
 ## 问题总结
 
 **在 postman 的 Collection 请求方式为 Bearer Token 报错 异常信息: `Unable to read JSON value: "`**
-
 将录入框中去掉 Bearer 就好了。
 
 **解决 postman 报错：Error: Maximum response size reached**
-
 修改Postman设置：通用-max response size in MB
+
+## 目前不好用软件
+
+apifox
+用得我不知所云

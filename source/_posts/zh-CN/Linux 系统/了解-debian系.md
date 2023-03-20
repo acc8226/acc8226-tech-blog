@@ -1,4 +1,37 @@
-## Ubuntu 版本
+## debain 系统
+
+Debian 发行版本
+Debian 一直维护着至少三个发行版本：稳定版（stable），测试版（testing）和不稳定版（unstable）。
+
+Debian -- 通用操作系统
+<https://www.debian.org/>
+
+### 发行版目录
+
+下一代 Debian 正式发行版的代号为 bookworm — 测试（testing）版 — 发布日期尚未确定
+
+Debian 11 (bullseye) — 当前的稳定（stable）版
+Debian 10（buster） — 当前的旧的稳定（oldstable）版
+Debian 9（stretch） — 更旧的稳定（oldoldstable）版，现有长期支持
+Debian 8（jessie） — 已存档版本，现有扩展长期支持
+Debian 7（wheezy） — 被淘汰的稳定版
+Debian 6.0（squeeze） — 被淘汰的稳定版
+Debian GNU/Linux 5.0（lenny） — 被淘汰的稳定版
+Debian GNU/Linux 4.0（etch） — 被淘汰的稳定版
+Debian GNU/Linux 3.1（sarge） — 被淘汰的稳定版
+Debian GNU/Linux 3.0（woody） — 被淘汰的稳定版
+Debian GNU/Linux 2.2（potato） — 被淘汰的稳定版
+Debian GNU/Linux 2.1（slink） — 被淘汰的稳定版
+Debian GNU/Linux 2.0（hamm） — 被淘汰的稳定版
+
+### 下载
+
+debian-11.6.0-amd64-netinst.iso。
+这是 Debian 11，代号为 bullseye，网络安装，用于 64 位 PC（amd64）
+
+## ubuntu 系统
+
+### Ubuntu 版本
 
 * 20.04：focal；
 * 18.04：bionic；
@@ -8,7 +41,7 @@
 
 提示：使用 HTTPS 源可以有效避免国内运营商的缓存劫持。
 
-## 更换源
+### 更换源
 
 中科大源、清华源或阿里源可任意选择一。
 
@@ -32,7 +65,7 @@ sudo sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
 
 然后请运行 `sudo apt-get update` 更新索引以生效。
 
-### 启用 ssh
+#### 启用 ssh
 
 先通过 bash 进入子系统修改配置
 
@@ -61,13 +94,13 @@ service ssh restart
 service ssh stop
 * 生成对应的 rsa, ecdsa, ed25519 三种类型的秘钥：
 
-### 启用 lrzsz
+#### 启用 lrzsz
 
 ```sh
 sudo apt get install lrzsz
 ```
 
-## 常用命令
+### 常用命令
 
 查看当前系统版本
 
@@ -75,7 +108,7 @@ sudo apt get install lrzsz
 lsb_release -a
 ```
 
-## dpkg 命令
+### dpkg 命令
 
 linux 的包管理有多种，除了 rpm，apt 等还有优秀的 dpkg。
 
@@ -94,9 +127,9 @@ dpkg 命令的使用：
 添加说明：
 最常用的就是 -i，-r。简单，安装／卸载。不用说。
 
-## 遇到过的问题
+### 遇到过的问题
 
-### System has not been booted with systemd as init system
+#### System has not been booted with systemd as init system
 
 原因是你想用 systemd 命令来管理 Linux 上的服务，但你的系统并没有使用 systemd，（很可能）使用的是经典的 SysV init（sysvinit）系统。
 
