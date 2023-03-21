@@ -41,16 +41,16 @@ JETTY_HOME=/opt/jetty/jetty-distribution-{VERSION}
 Starting Jetty: OK Wed Nov 20 10:26:53 MST 2013
 ```
 
-2\. 【可选】然后根据需要，例如 etc/jetty-http.xml 中可以把默认的 8080 端口给改成 8081。
+2\. 【可选】然后根据需要，例如 etc/jetty-http.xml 中可以把默认的 8080 端口给改成 9001。
 
 ```xml
-<Set name="port"><Property name="jetty.http.port" deprecated="jetty.port" default="8081" /></Set>
+<Set name="port"><Property name="jetty.http.port" deprecated="jetty.port" default="9001" /></Set>
 ```
 
 3\. 拖入下载的 jenkins.war 到 webapps 目录中
 
-4\. 由于 Jetty 8.1.0之后对安全性有了一些要求，需要显示注明安全域（security realm）。
-解决方法：编辑（或新建） webapps/jenkins.xml 文件，添加如下配置。
+4\. 由于 Jetty 8.1.0 之后对安全性有了一些要求，需要显示注明安全域（security realm）。
+解决方法：编辑/新建 webapps/jenkins.xml 文件，添加如下配置。
 
 ```xml
 <Configure class="org.eclipse.jetty.webapp.WebAppContext">
@@ -72,7 +72,7 @@ Starting Jetty: OK Wed Nov 20 10:26:53 MST 2013
 ## 遇到过的问题
 
 问题：jetty 隔几天凌晨定时出现 404 错误（linux /tmp/)
-解决方案：(jetty.home)/work下创建一个统一的 work 目录，这样最方便部署。
+解决方案：在 $(jetty.home) 下创建一个 work 目录。
 
 ## 参考
 

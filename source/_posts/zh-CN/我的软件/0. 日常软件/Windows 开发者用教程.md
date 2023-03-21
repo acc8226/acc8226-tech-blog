@@ -142,7 +142,7 @@ CHCP 是一个计算机指令，能够显示或设置活动代码页编号。
 
 > “计算机\HKEY_CLASSES_ROOT\Directory\Background\shell\Powershell\command”
 
-补充：因为 Win10 创新者版本（Win10 Creators）提供了[注册表路径的简化](http://www.ithome.com/html/win10/272872.htm)，所以，“HKEY_CLASSES_ROOT”完全可以用“HKCR”取代，以上地址可以精简为“HKCR\Directory\Background\shell\Powershell\command”
+补充：因为 Win10 创新者版本（Win10 Creators）提供了[注册表路径的简化](http://www.ithome.com/html/win10/272872.htm)，所以，“HKEY_CLASSES_ROOT”完全可以用 “HKCR” 取代，以上地址可以精简为 “HKCR\Directory\Background\shell\Powershell\command”
 
 ![image](http://upload-images.jianshu.io/upload_images/1662509-00f6f15a622c0897.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240 "Win10 小技巧：如何将在此处打开命令改为CMD或Powershell？")
 
