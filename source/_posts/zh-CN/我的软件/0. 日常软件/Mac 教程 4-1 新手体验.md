@@ -1,5 +1,5 @@
 ---
-title: Mac-教程 1-0 新手体验
+title: Mac 教程 4-1 新手体验
 date: 2019-03-17 17:27:17
 updated: 2022-11-05 13:45:00
 categories:
@@ -7,7 +7,7 @@ categories:
   - 日常软件
 ---
 
-纠结了一阵, 9299 终入手翻新的 13.3 英寸 17 款 MacBook Pro 2.3 GHz 双核 英特尔 [酷睿i5 7360U 处理器](http://detail.zol.com.cn/cpu/index1168451.shtml) ，配备 Retina 显示屏-深空灰色
+纠结了一阵, 9299 终入手翻新的 13.3 英寸 2017 款 MacBook Pro 2.3GHz 双核 英特尔 [酷睿i5 7360U 处理器](http://detail.zol.com.cn/cpu/index1168451.shtml) ，配备 Retina 显示屏-深空灰色
 
 产品链接: [https://www.apple.com/cn/shop/product/FPXT2CH/A](https://www.apple.com/cn/shop/product/FPXT2CH/A)
 
@@ -104,6 +104,7 @@ Command+Y（打开历史访问，支持Safari和Chrome）
 
 Control + 空格: 切换输入法
 mac 的 Delete 键 为 Fn+退格键
+默认按下 Fn 启用的是功能键, 您可自行选择是否开启将 F1~F12 键用作标准功能键
 
 ## Tips
 

@@ -57,7 +57,7 @@ C:\Windows\System32\drivers\etc
 * 在 macOS 下执行命令：sudo killall -HUP mDNSResponder
 * 如果你使用 Chrome 浏览器，那么可以访问：chrome://net-internals/#dns，然后点击「Clear host cache」按钮来清空浏览器里的 DNS 缓存。
 
-### 代理设置
+## 代理设置
 
 **windows下 Dos 命令行设置代理**
 按需设置对应的地址 + 端口信息，以下为举例：

@@ -1,5 +1,5 @@
 ---
-title: Mac 教程 2-1 装机必备
+title: Mac 教程 4-2 装机必备
 date: 2019-03-17 17:27:17
 updated: 2022-11-05 13:45:00
 categories:
@@ -25,7 +25,7 @@ categories:
 > 鼠标手势：长按鼠标右键，手势即动作
 > 鼠标悬停：在标签上滚动鼠标滚轮，可自动激活该标签
 
-其实自带的 Safari 其实也不错，苹果也说自家的更加省电。点击‘Safari 浏览器拓展...’ 将跳转到 App Store 商店查看浏览器拓展
+其实自带的 Safari 其实也不错，苹果也说自家的更加省电。点击 ‘Safari 浏览器拓展...’ 将跳转到 App Store 商店查看浏览器拓展
 
 ## 输入法
 
@@ -42,6 +42,27 @@ categories:
 bitwarden【全平台】
 
 它开源免费，跨平台支持 Windows、Mac、Linux、iOS、Android 平台，同时也提供了 Chrome、Edge、Firefox、Safari 等浏览器扩展可实现快速填充帐号密码一键登录网站，是一款非常不错的 1Password 免费替代品。
+
+## 其他软件
+
+**记笔记**
+印象笔记 or 有道云笔记
+
+**截图**
+Snipaste - 截图 + 贴图
+<https://zh.snipaste.com/>
+
+rss 阅读器
+Reeder 热门的 Rss 订阅
+
+## 软件资源站
+
+苹果软件下载_mac 软件_mac游戏下载_免费苹果电脑软件下载网站
+<http://www.pc6.com/mac/>
+
+## 软件回收站
+
+抖音 appstore 版
 
 ## 参考
 

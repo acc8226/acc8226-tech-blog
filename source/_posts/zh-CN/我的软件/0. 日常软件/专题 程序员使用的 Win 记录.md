@@ -1,5 +1,5 @@
 ---
-title: Windows 开发者用教程
+title: 专题 程序员使用的 Win 记录
 date: 2018-04-07 15:30:24
 updated: 2023-02-16 21:53:00
 categories:
@@ -89,7 +89,7 @@ CHCP 是一个计算机指令，能够显示或设置活动代码页编号。
 
 在 cmd 中输入 CHCP 65001
 
-## Windows系统环境变量大全
+## Windows 系统环境变量大全
 
 环境变量 详细信息
 %ALLUSERSPROFILE% 所有用户 Profile 文件位置
