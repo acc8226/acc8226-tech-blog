@@ -211,5 +211,5 @@ kill －l
 ![实验楼](https://upload-images.jianshu.io/upload_images/1662509-72c572c52658c512?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 > **注意**
-> 若是在使用 kill ＋信号值然后直接加 pid，你将会对 pid 对应的进程进行操作
-> 若是在使用 kill+信号值然后 `％jobnumber`，这时所操作的对象是 job，这个数字就是就当前 bash 中后台的运行的 job 的 ID
+> 若是在使用 kill ＋ 信号值然后直接加 pid，你将会对 pid 对应的进程进行操作
+> 若是在使用 kill +  信号值然后 `％jobnumber`，这时所操作的对象是 job，这个数字就是就当前 bash 中后台的运行的 job 的 ID

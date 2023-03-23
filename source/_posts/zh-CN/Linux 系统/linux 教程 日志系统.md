@@ -1,3 +1,11 @@
+---
+title: linux 教程 日志系统
+date: 2019-03-17 17:27:17
+updated: 2022-11-05 13:45:00
+categories:
+  - linux
+---
+
 日志数据可以是有价值的信息宝库，也可以是毫无价值的数据泥潭。它可以记录下系统产生的所有行为，并按照某种规范表达出来。我们可以使用日志系统所记录的信息为系统进行排错，优化系统的性能，或者根据这些信息调整系统的行为。收集你想要的数据，分析出有价值的信息，可以提高系统、产品的安全性，还可以帮助开发完善代码，优化产品。日志会成为在事故发生后查明“发生了什么”的一个很好的“取证”信息来源。日志可以为审计进行审计跟踪。
 
 ## 常见的日志
@@ -180,9 +188,9 @@ Rsyslog 架构如图中所示，从图中我们可以很清楚的看见，rsyslo
 
 在配置中 rsyslog 支持三种配置语法格式：
 
-*   sysklogd
-*   legacy rsyslog
-*   RainerScript
+* sysklogd
+* legacy rsyslog
+* RainerScript
 
 sysklogd 是老的简单格式，一些新的语法特性不支持。而 legacy rsyslog 是以 dollar 符($)开头的语法，在 v6 及以上的版本还在支持，就如上文所说的 `$ModLoad` 还有一些插件和特性只在此语法下支持。而以 `$` 开头的指令是全局指令，全局指令是 rsyslogd 守护进程的配置指令，每行只能有一个指令。 RainnerScript 是最新的语法。在官网上 rsyslog 大多推荐这个语法格式来配置
 
@@ -272,7 +280,6 @@ ping 127.0.0.1 | logger -it logger_test -p local3.notice &
 
 #查看是否有数据写入
 sudo tail -f /var/log/syslog
-
 ```
 
 ![实验楼](https://upload-images.jianshu.io/upload_images/1662509-1de803f3e1201137?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)

@@ -1,3 +1,11 @@
+---
+title: linux 教程 压缩和解压
+date: 2019-03-17 17:27:17
+updated: 2022-11-05 13:45:00
+categories:
+  - linux
+---
+
 在讲 Linux 上的压缩工具之前，有必要先了解一下常见常用的压缩包文件格式。在 Windows 上最常见的不外乎这两种 *.zip，*.7z 后缀的压缩文件。而在 Linux 上面常见的格式除了以上两种外，还有 .rar，*.gz，*.xz，*.bz2，*.tar，*.tar.gz，*.tar.xz，*.tar.bz2，简单介绍如下：
 
 文件后缀名 说明
@@ -35,8 +43,8 @@ zip -r cc.zip index.html static
 设置压缩级别为 9 和 1（9 最大，1 最小），重新打包：
 
 ```sh
-$ zip -r -9 -q -o shiyanlou_9.zip /home/shiyanlou/Desktop -x ~/*.zip
-$ zip -r -1 -q -o shiyanlou_1.zip /home/shiyanlou/Desktop -x ~/*.zip
+zip -r -9 -q -o shiyanlou_9.zip /home/shiyanlou/Desktop -x ~/*.zip
+zip -r -1 -q -o shiyanlou_1.zip /home/shiyanlou/Desktop -x ~/*.zip
 ```
 
 一个参数用于设置压缩级别 -[1-9]，1 表示最快压缩但体积大，9 表示体积最小但耗时最久。
@@ -45,7 +53,7 @@ $ zip -r -1 -q -o shiyanlou_1.zip /home/shiyanlou/Desktop -x ~/*.zip
 使用 -e 参数可以创建加密压缩包：
 
 ```sh
-$ zip -r -e -o shiyanlou_encryption.zip /home/shiyanlou/Desktop
+zip -r -e -o shiyanlou_encryption.zip /home/shiyanlou/Desktop
 ```
 
 > 注意： 关于 zip 命令，因为 Windows 系统与 Linux/Unix 在文本文件格式上的一些兼容问题，比如换行符（为不可见字符），在 Windows 为 CR+LF（Carriage-Return+Line-Feed：回车加换行），而在 Linux/Unix 上为 LF（换行），所以如果在不加处理的情况下，在 Linux 上编辑的文本，在 Windows 系统上打开可能看起来是没有换行的。如果你想让你在 Linux 创建的 zip 压缩文件在 Windows 上解压后没有任何问题，那么你还需要对命令做一些修改：
@@ -135,50 +143,15 @@ tar -xzf shiyanlou.tar.gz
 *.tar.xz	-J
 *tar.bz2	-j
 
-## RAR命令(winrar 官网提供下载包, 专门服务于 rar 格式)
+## RAR 命令
+
+winrar 官网提供下载包, 专门服务于 rar 格式
 
 > RAR is a console application allowing to manage archive files in command line mode. RAR provides compression, encryption, data recovery and many other functions described in this manual.
 >
 > RAR supports only **RAR format archives**, which have .rar file name extension by default. ZIP and other formats are not supported.
 
-只支持 rar 也是醉了, 够专用。
-
-```text
-<命令>
-  a             添加文件到压缩文件
-  c             添加压缩文件注释
-  ch            更改压缩文件参数
-  cw            将压缩文件注释写入文件
-  d             从压缩文件中删除文件
-  e             提取文件无需压缩文件的路径
-  f             更新压缩文件里的文件
-  i[par]=<str>  查找压缩文件中的字符串
-  k             锁定压缩文件
-  l[t[a],b]     列出压缩文件内容 [technical[all], bare]
-  m[f]          移动到压缩文件 [仅文件]
-  p             打印文件到 stdout
-  r             修复压缩文件
-  rc            重建丢失的分卷
-  rn            重命名已压缩文件
-  rr[N]         添加数据恢复记录
-  rv[N]         创建恢复分卷
-  s[name|-]     转换压缩文件为自解压或自解压转换为压缩文件
-  t             测试压缩文件
-  u             更新压缩文件中的文件
-  v[t[a],b]     详细列出压缩文件内容 [technical[all],bare]
-  x             使用完整路径提取文件
-
-<参数>
--inul          禁用所有消息
-```
-
-1) add all *.hlp files from the current directory to the archive help.rar:
-`rar a help *.hlp`
-
-2) 作为一个特殊的例外，如果目录名被指定为一个参数，如果目录名不包含文件掩码和后面的反斜杠，目录的所有内容所有的子目录甚至会被添加到存档中
-如果没有指定 switch-r。
-下面的命令将添加目录中的所有文件位图及其子目录到 RAR 归档图片.RAR:
-`rar a Pictures.rar Bitmaps`
+只支持 rar 也是够专用。
 
 ## 总结
 
@@ -197,7 +170,7 @@ tar：
 
 tar 命令解压文件后造成目录权限更改
 
-tar 命令在解压时会默认指定参数 --same-owner，即打包的时候是谁的，解压后就给谁；如果在解压时指定参数--no-same-owner（即 tar --no-same-owner -zxvf xxxx.tar.gz），则会将执行该 tar 命令的用户作为解压后的文件目录的所有者。
+tar 命令在解压时会默认指定参数 `--same-owner`，即打包的时候是谁的，解压后就给谁；如果在解压时指定参数 --no-same-owner（即 `tar --no-same-owner -zxvf xxxx.tar.gz`），则会将执行该 tar 命令的用户作为解压后的文件目录的所有者。
 
 ## 参考
 

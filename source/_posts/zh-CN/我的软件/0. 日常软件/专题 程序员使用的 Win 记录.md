@@ -89,45 +89,6 @@ CHCP 是一个计算机指令，能够显示或设置活动代码页编号。
 
 在 cmd 中输入 CHCP 65001
 
-## Windows 系统环境变量大全
-
-环境变量 详细信息
-%ALLUSERSPROFILE% 所有用户 Profile 文件位置
-%APPDATA% 应用程序数据的默认存放位置
-%CD% 当前目录
-%CLIENTNAME% 联接到终端服务会话时客户端的 NETBIOS 名
-%CMDCMDLINE% 启动当前 cmd.exe 所使用的命令行
-%CMDEXTVERSION% 当前命令处理程序扩展版本号
-%CommonProgramFiles% 常用文件的文件夹路径
-%COMPUTERNAME% 计算机名
-%COMSPEC% 可执行命令外壳（命令处理程序）的路径
-%DATE% 当前日期
-%ERRORLEVEL% 最近使用的命令的错误代码
-**%HOMEDRIVE% 用户主目录所在的驱动器盘符**
-%HOMEPATH% 用户主目录的完整路径
-%HOMESHARE% 用户共享主目录的网络路径
-%LOGONSEVER% 有效的当前登录会话的域名控制器名
-%NUMBER_OF_PROCESSORS% 计算机安装的处理器数
-%OS% 操作系统的名字（ Windows XP 和 Windows 2000 列为 Windows_NT ）
-%Path% 可执行文件的搜索路径
-%PATHEXT% 操作系统认为可被执行的文件扩展名
-%PROCESSOR_ARCHITECTURE% 处理器的芯片架构
-%PROCESSOR_IDENTIFIER% 处理器的描述
-%PROCESSOR_LEVEL% 计算机的处理器的型号
-%PROCESSOR_REVISION% 处理器的修订号
-%ProgramFiles% Program Files 文件夹的路径
-%PROMPT% 当前命令解释器的命令提示设置
-%RANDOM% 界于 0 和 32767 之间的随机十进制数
-%SESSIONNAME% 连接到终端服务会话时的连接和会话名
-%SYSTEMDRIVE% Windows 启动目录所在驱动器
-%SYSTEMROOT% Windows 启动目录的位置
-%TEMP% and %TMP% 当前登录的用户可用应用程序的默认临时目录
-%TIME% 当前时间
-%USERDOMAIN% 包含用户帐号的域的名字
-%USERNAME% 当前登录的用户的名字
-%USERPROFILE% 当前用户 Profile 文件位置
-%WINDIR% 操作系统目录的位置
-
 ## 将在此处打开命令改为 CMD 或 Powershell
 
 微软的 CMD 也就是命令提示符已经伴随了我们很多年了，这些年来 CMD 已经勤勤恳恳地默默工作着，虽然没有图形化的界面，但是其干净整洁的操作环境仍然受到了大家的欢迎。

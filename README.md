@@ -1,3 +1,5 @@
+# notes
+
 ![build badge](https://github.com/acc8226/page-source/actions/workflows/main.yml/badge.svg)
 
 ## My notes
@@ -6,7 +8,7 @@ The jinahu.com articles will be moved here one by one. This project is built usi
 
 ## Copyright notice
 
-Due to the large number of articles, if there are inappropriate references to publications, web site caused by infringement, please contact me immediately Mailto: ACC8226@QQ. Com.
+Due to the large number of articles, if there are inappropriate references to publications, web site caused by infringement, please contact me immediately mailto: acc8226@qq.com.
 The source of individual reproduction should be indicated. Commercial reproduction is prohibited without my consent.
 
 ## Blog building steps
@@ -17,7 +19,7 @@ The source of individual reproduction should be indicated. Commercial reproducti
 
 ## About Me
 
-Java back-end development, recently prepared to go to ChangSha to find a job
+Java back-end development, recently prepared to go to ChangSha-CN to find a job
 
 ## 我的笔记
 

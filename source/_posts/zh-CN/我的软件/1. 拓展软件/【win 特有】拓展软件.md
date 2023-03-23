@@ -58,32 +58,6 @@ The new Windows Terminal and the original Windows console host, all in the same 
 免登录的百度网盘不限速下载器工具！免账号/不需会员轻松跑满速 - 异次元软件世界
 <https://www.iplaysoft.com/antdownload.html>
 
-## 归档类软件
-
-炉石官方插件
-随之国服没了已经落幕
-
-## 软件回收站
-
-### 非专业类
-
-一些用过的软件但主观关键明显不好用的记录，说不定下版会优化，所以仅供参考
-
-占用 CPU 资源太大
-Lively Wallpaper - Microsoft Store 应用程序
-<https://apps.microsoft.com/store/detail/lively-wallpaper/9NTM2QC6QWS7>
-
-芒果壁纸
-时间长了会白屏
-
-猿如意
-不让人满意
-
-### 专业类
-
-JupyterLab
-感觉不好用
-
 ## 参考
 
 Microsoft PowerToys | Microsoft Learn

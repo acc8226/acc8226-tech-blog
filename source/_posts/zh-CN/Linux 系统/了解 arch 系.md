@@ -1,3 +1,11 @@
+---
+title: 了解 arch 系
+date: 2019-03-17 17:27:17
+updated: 2022-11-05 13:45:00
+categories:
+  - linux
+---
+
 pacman 是一个软件包管理器，作为 ArchLinux发行版的一部分。它最早由 Arch Linux 的 Judd Vinet 开发，Pacman 可以解决安装过程中的依赖问题，自动下载并且安装所有需要的软件包。Pacman包管理器是Arch Linux的一大亮点。它将一个简单的二进制包格式和易用的构建系统结合了起来。Pacman使得简单的管理与自定义软件包成为了可能，而不论他们来自于官方的 Arch 软件库或是用户自己创建的。
 
 pacman {-S --sync}     [选项] [软件包]  //安装安装包

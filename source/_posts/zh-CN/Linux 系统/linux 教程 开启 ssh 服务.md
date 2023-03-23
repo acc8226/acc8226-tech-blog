@@ -1,3 +1,11 @@
+---
+title: linux 教程 开启 ssh 服务
+date: 2019-03-17 17:27:17
+updated: 2022-11-05 13:45:00
+categories:
+  - linux
+---
+
 ## RSA，DSA，ECDSA，EdDSA 和 Ed25519 的区别
 
 ### 结论
@@ -66,3 +74,17 @@ ssh-keygen -t ed25519
 ### likai@localhost: Permission denied (publickey)
 
 登录目标机器，打开 /etc/ssh/sshd_config ，修改 PasswordAuthentication no 为：PasswordAuthentication yes。
+
+## 记录
+
+### sftp 端口号是多少
+
+SFTP 是 SSH 服务或守护程序的子系统。 因此，这使 SFTP 侦听 TCP 22 端口。 我们可以使用以下 sftp 命令来连接远程系统 SFTP 服务。
+
+更改默认的SFTP端口 (Change Default SFTP Port)
+如果要更改默认的SFTP端口，则需要更改SSH配置，这也将更改默认的SSH端口。 我们需要打开 SSH 配置文件 /etc/ssh/sshd_config 并进行更改
+
+
+
+
+systemctl restart sshd.service

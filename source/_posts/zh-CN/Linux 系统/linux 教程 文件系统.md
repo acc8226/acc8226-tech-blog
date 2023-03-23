@@ -1,4 +1,10 @@
-touch，file，rm，mv 等基本命令
+---
+title: linux 教程 文件系统
+date: 2019-03-17 17:27:17
+updated: 2022-11-05 13:45:00
+categories:
+  - linux
+---
 
 Linux 是以树形目录结构的形式来构建整个系统的，可以理解为树形目录是一个用户可操作系统的骨架。虽然本质上无论是目录结构还是操作系统内核都是存储在磁盘上的，但从逻辑上来说 Linux 的磁盘是“挂在”（挂载在）目录上的，每一个目录不仅能使用本地磁盘分区的文件系统，也可以使用网络上的文件系统。举例来说，可以利用网络文件系统（Network File System，NFS）服务器载入某特定目录等。
 
@@ -9,7 +15,7 @@ Linux 的目录结构说复杂很复杂，说简单也很简单。复杂在于�
 FHS（英文：Filesystem Hierarchy Standard 中文：文件系统层次结构标准），多数 Linux 版本采用这种文件组织形式，FHS 定义了系统中每个区域的用途、所需要的最小构成的文件和目录同时还给出了例外处理与矛盾处理。
 
 > FHS 定义了两层规范，第一层是， / 下面的各个目录应该要放什么文件数据，例如 /etc 应该放置设置文件，/bin 与 /sbin 则应该放置可执行文件等等。
-> 第二层则是针对 /usr 及 /var 这两个目录的子目录来定义。例如 /var/log 放置系统日志文件，/usr/share 放置共享数据等等。
+> 第二层则是针对 /var 及 /usr 这两个目录的子目录来定义。例如 /var/log 放置系统日志文件，/usr/share 放置共享数据等等。
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-a370c69fb1e8909d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -108,6 +114,147 @@ vim 的使用
 ```sh
 vimtutor
 ```
+
+## 搜索文件
+
+与搜索相关的命令常用的有 whereis，which，find 和 locate。
+
+whereis 简单快速
+whereis 只能搜索二进制文件(-b)，man 帮助文件(-m)和源代码文件(-s)。如果想要获得更全面的搜索结果可以使用 locate 命令。
+
+which小而精
+which 本身是 Shell 内建的一个命令，我们通常使用 which 来确定是否安装了某个指定的程序，因为它只从 PATH 环境变量指定的路径中去搜索命令并且返回第一个搜索到的结果。也就是说，我们可以看到某个系统命令是否存在以及执行的到底是哪一个地方的命令。
+
+find精而细
+find 应该是这几个命令中最强大的了，它不但可以通过文件类型、文件名进行查找而且可以根据文件的属性（如文件的时间戳，文件的权限等）进行搜索。find 命令强大到，要把它讲明白至少需要单独好几节课程才行，我们这里只介绍一些常用的内容。
+
+这条命令表示去 /etc/ 目录下面 ，搜索名字叫做 interfaces 的文件或者目录。这是 find 命令最常见的格式
+
+```sh
+find /etc/ -name interfaces
+```
+
+列出用户家目录下比 /etc 目录新的文件：
+
+```sh
+find ~ -newer /etc
+```
+
+使用 df 命令查看磁盘的容量
+
+```sh
+df
+```
+
+使用 du 命令查看目录的容量
+
+```sh
+# 默认同样以 块 的大小展示
+du
+# 加上`-h`参数，以更易读的方式展示
+du -h
+# 查看层级为 1，这样运行速度快
+du -h --max-depth=1
+```
+
+-d 参数指定查看目录的深度
+
+```sh
+du -h #同--human-readable 以 K，M，G为单位，提高信息的可读性。
+du -a #同--all 显示目录中所有文件的大小。
+du -s #同--summarize 仅显示总计，只列出最后加总的值。
+
+来自: http://man.linuxde.net/du
+```
+
+## 简单的磁盘管理
+
+dd 命令用于转换和复制文件，不过它的复制不同于 cp。
+
+dd 的命令行语句与其他的 Linux 程序不同，因为它的命令行选项格式为选项=值，而不是更标准的--选项 值或-选项=值。dd默认从标准输入中读取，并写入到标准输出中，但可以用选项if（input file，输入文件）和of（output file，输出文件）改变。
+
+```sh
+# 输出到文件
+dd if=/dev/stdin of=test bs=10 count=1
+# 或者省略 if=/dev/stdin 也是可以的
+
+# 输出到标准输出
+$ dd if=/dev/stdin of=/dev/stdout bs=10 count=1
+# 注在打完了这个命令后，继续在终端打字，作为你的输入
+```
+
+使用 dd 命令创建虚拟镜像文件
+ 从/dev/zero设备创建一个容量为 256M 的空文件：
+
+```sh
+dd if=/dev/zero of=virtual.img bs=1M count=256
+du -h virtual.img
+```
+
+使用 mkfs 命令格式化磁盘（我们这里是自己创建的虚拟磁盘镜像）
+我们可以简单的使用下面的命令来将我们的虚拟磁盘镜像格式化为ext4文件系统：
+
+```sh
+sudo mkfs.ext4 virtual.img
+```
+
+**使用 mount 命令挂载磁盘到目录树**
+用户在 Linux/UNIX 的机器上打开一个文件以前，包含该文件的文件系统必须先进行挂载的动作，此时用户要对该文件系统执行 mount 的指令以进行挂载。该指令通常是使用在 USB 或其他可移除存储设备上，而根目录则需要始终保持挂载的状态。又因为 Linux/UNIX 文件系统可以对应一个文件而不一定要是硬件设备，所以可以挂载一个包含文件系统的文件到目录树。
+
+Linux/UNIX 命令行的 mount 指令是告诉操作系统，对应的文件系统已经准备好，可以使用了，而该文件系统会对应到一个特定的点（称为挂载点）。挂载好的文件、目录、设备以及特殊文件即可提供用户使用。
+
+我们先来使用 mount 来查看下主机已经挂载的文件系统：
+
+```sh
+sudo mount
+```
+
+那么我们如何挂载真正的磁盘到目录树呢，mount 命令的一般格式如下：
+
+```sh
+mount [options] [source] [directory]
+```
+
+一些常用操作
+
+```sh
+mount [-o [操作选项]] [-t 文件系统类型] [-w|--rw|--ro] [文件系统源] [挂载点]
+```
+
+```sh
+mount -o loop -t ext4 virtual.img /mnt
+# 也可以省略挂载类型，很多时候 mount 会自动识别
+
+# 以只读方式挂载
+mount -o loop --ro virtual.img /mnt
+# 或者mount -o loop,ro virtual.img /mnt
+```
+
+使用 umount 命令卸载已挂载磁盘
+
+```sh
+# 命令格式 sudo umount 已挂载设备名或者挂载点，如：
+sudo umount /mnt
+```
+
+**使用 fdisk 为磁盘分区（关于分区的一些概念不清楚的用户请参看[主引导记录](http://zh.wikipedia.org/wiki/%E4%B8%BB%E5%BC%95%E5%AF%BC%E8%AE%B0%E5%BD%95)）**
+
+```sh
+# 查看硬盘分区表信息
+sudo fdisk -l
+
+# 进入磁盘分区模式
+sudo fdisk virtual.img
+```
+
+找出当前目录下面占用最大的前十个文件。
+
+```sh
+du -ah -d 1 | sort -hr | head -n 10
+```
+
+解释：-a 是所有文件，-h是可读方式，-d是深度，1 代表 2 层，也就保证了作业要求恶的当下目录中，sort 是排序，-r 是倒着排，-h和之前的一样，head 是取头部，-n 是取的数量，10 是是个文件。 注：初学，如有错误，欢迎指正。
+
 
 ## 参考
 
