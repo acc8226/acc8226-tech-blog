@@ -62,20 +62,20 @@ windows
 
 android 手机
 
-安装好上面对应的客户端如下图左边的填写对应的服务ip、端口、密码、加密方式然后保存；然后点击中间图下面的小飞机，看到手机上面有个钥匙的就是成功了，然后你就可以用浏览器访问Google嘞
+安装好上面对应的客户端如下图左边的填写对应的服务ip、端口、密码、加密方式然后保存；然后点击中间图下面的小飞机，看到手机上面有个钥匙的就是成功了，然后你就可以用浏览器访问 Google。
 
-![基于国外服务器搭建自己的VPN-天下数据](https://upload-images.jianshu.io/upload_images/1662509-1ce1a4ee13840bf2.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![基于国外服务器搭建自己的VPN](https://upload-images.jianshu.io/upload_images/1662509-1ce1a4ee13840bf2.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-![基于国外服务器搭建自己的VPN-天下数据](https://upload-images.jianshu.io/upload_images/1662509-1fa8fb2a83f6f2eb.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![基于国外服务器搭建自己的VPN](https://upload-images.jianshu.io/upload_images/1662509-1fa8fb2a83f6f2eb.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-![基于国外服务器搭建自己的VPN-天下数据](https://upload-images.jianshu.io/upload_images/1662509-5ab1a491c9249375.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![基于国外服务器搭建自己的VPN](https://upload-images.jianshu.io/upload_images/1662509-5ab1a491c9249375.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 iPhone 手机
 
 安装好上面对应的客户端如左边图点击添加线路，然后是中间图填写对应的服务 ip、端口、密码、加密方式然后保存，之后点击左图的开关按钮；看到手机上出现 vpn 的图标就成功了，可以随心所欲看视频了。
 
-![基于国外服务器搭建自己的 VPN-天下数据](https://upload-images.jianshu.io/upload_images/1662509-18bbe33ad742a89c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![基于国外服务器搭建自己的 VPN](https://upload-images.jianshu.io/upload_images/1662509-18bbe33ad742a89c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-![基于国外服务器搭建自己的 VPN-天下数据](https://upload-images.jianshu.io/upload_images/1662509-47a5261628aee129.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![基于国外服务器搭建自己的 VPN](https://upload-images.jianshu.io/upload_images/1662509-47a5261628aee129.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-![基于国外服务器搭建自己的 VPN-天下数据](https://upload-images.jianshu.io/upload_images/1662509-a927e0920549a5bc.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![基于国外服务器搭建自己的 VPN](https://upload-images.jianshu.io/upload_images/1662509-a927e0920549a5bc.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
