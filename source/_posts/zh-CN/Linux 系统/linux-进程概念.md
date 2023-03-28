@@ -212,4 +212,4 @@ kill －l
 
 > **注意**
 > 若是在使用 kill ＋ 信号值然后直接加 pid，你将会对 pid 对应的进程进行操作
-> 若是在使用 kill +  信号值然后 `％jobnumber`，这时所操作的对象是 job，这个数字就是就当前 bash 中后台的运行的 job 的 ID
+> 若是在使用 kill +  信号值然后 `％jobnumber`，这时所操作的对象是 job，这个数字就是就当前 bash 中后台的运行的 job 的 ID。

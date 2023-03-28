@@ -33,31 +33,32 @@ nginx 特点：
 1\. 从 nginx 官网下载稳定版 Stable version 安装包
 <http://nginx.org/en/download.html>
 
-2\. 安装 Nginx 依赖，pcre、openssl、gcc、zlib（推荐使⽤ yum 源⾃动安装）
+2\. 前提，已安装 Nginx 依赖（推荐使⽤ yum 源⾃动安装）
 
 ```sh
 yum -y install gcc zlib zlib-devel pcre-devel openssl openssl-devel
 ```
 
-3\. 解压 Nginx 软件包
-tar -xvf nginx-1.17.8.tar
+3\. 解压 Nginx 软件包 tar -xvf nginx-1.17.8.tar
 
 4\. 进⼊解压之后的⽬录 nginx-1.17.8
 cd nginx-1.17.8
 
-5\. 命令⾏执⾏./configure
+5\. 命令⾏执⾏ `./configure`
+
+> nginx 默认将安装在 /usr/local/nginx 目录。你可以用 `configure --prefix=path` 来指定你想要的安装目录。
 
 6\. 命令⾏执⾏ make
 
-7\. 命令⾏执⾏ make install，完毕之后在/usr/local/下会产⽣⼀个nginx⽬录
+7\. 命令⾏执⾏ make install，完毕之后在 /usr/local/ 下会产⽣⼀个 nginx ⽬录
 
 > -bash: make: command not found - 解决办法
-一般出现这个-bash: make: command not found提示，是因为安装系统的时候使用的是最小化mini安装，系统没有安装 make 等常用命令，直接 yum 安装即可。
+一般出现 -bash: make: command not found 提示，是因为安装系统的时候使用的是最小化 mini 安装，系统没有安装 make 等常用命令，直接 yum 安装即可。
 `yum -y install gcc make`
 
-8\. 进入`/usr/local/nginx/sbin`, 键入 `./nginx` 即可启动默认80端口的nginx.
+8\. 进入`/usr/local/nginx/sbin`, 键入 `./nginx` 即可启动默认 80 端口的nginx.
 
-## mac下 nginx 的使用
+## mac 下 nginx 的使用
 
 分别执行下面这两行命令，就会自动安装nginx，等待安装完成即可
 
@@ -114,6 +115,10 @@ Error: Could not symlink .
 ```
 
 使用`$ sudo chown -R $(whoami):admin /usr/local`发现还是没用, 最终手动创建/user/local/opt 文件夹解决了(**Mac High Sierra 中不能改变 /usr/local 的拥有者的问题**)
+
+## 安装 tengine
+
+淘宝旗下的 [Tengine](https://tengine.taobao.org/download_cn.html) 项目。
 
 ## 常用命令
 
@@ -173,15 +178,15 @@ server {
 1. 申请证书 todo
 2. 安装证书
 
-首先找到Nginx 配置目录.例如我的目录在`/etc/nginx`
+首先找到 Nginx 配置目录.例如我的目录在`/etc/nginx`
 
 在证书控制台下载Nginx版本证书。下载到本地的压缩文件包解压后包含：
 
-.crt文件：是证书文件，crt是**pem**文件的扩展名。
-.key文件：证书的私钥文件（申请证书时如果没有选择自动创建CSR，则没有该文件）。
+.crt 文件：是证书文件，crt是**pem**文件的扩展名。
+.key 文件：证书的私钥文件（申请证书时如果没有选择自动创建CSR，则没有该文件）。
 > 友情提示： .pem扩展名的证书文件采用Base64-encoded的PEM格式文本文件，可根据需要修改扩展名。
 
-1. 放置 crt 证书文件和 key 私钥文件并打开 Nginx 安装目录下 conf 目录中的 nginx.conf 文件. 将其修改为 (以下属性中 **ssl 开头的属性与证书配置有直接关系**，其它属性请结合自己的实际情况复制或调整) :
+1\. 放置 crt 证书文件和 key 私钥文件并打开 Nginx 安装目录下 conf 目录中的 nginx.conf 文件. 将其修改为 (以下属性中 **ssl 开头的属性与证书配置有直接关系**，其它属性请结合自己的实际情况复制或调整) :
 /etc/pki/nginx/private/www.abc.com.key
 /etc/pki/nginx/server/www.abc.com.crt.pem
 
@@ -225,10 +230,6 @@ server {
 
 再 `nginx -s reload` 即可。[Nginx](http://www.nowamagic.net/academy/tag/Nginx) 的 301 配置还是很简单的。
 
-
-
-
-
 ## 记录
 
 ### 如何将 nginx 添加到全局变量中（环境变量）
@@ -265,7 +266,7 @@ location / {
 
 reload --重新加载，reload 会重新加载配置文件，Nginx 服务不会中断。而且 reload 时会测试 conf 语法等，如果出错会 rollback 用上一次正确配置文件保持正常运行。
 
-restart --重启（先stop后start），会重启 Nginx 服务。这个重启会造成服务一瞬间的中断，如果配置文件出错会导致服务启动失败，那就是更长时间的服务中断了。
+restart --重启（先 stop 后 start），会重启 Nginx 服务。这个重启会造成服务一瞬间的中断，如果配置文件出错会导致服务启动失败，那就是更长时间的服务中断了。
 所以，如果是线上的服务，修改的配置文件一定要备份。为了保证线上服务高可用，最好使用 reload。
 
 还有一点，reload 只是重新加载配置文件，不会清理 nginx 的一些缓存，在有些需要清理缓存的场景需要 restart ，例如 upstream 后端配置的集群服务地址是域名而不是 ip，当后端 IP 变了，就需要清除该域名的解析缓存，此时需要重启而不是 reload。

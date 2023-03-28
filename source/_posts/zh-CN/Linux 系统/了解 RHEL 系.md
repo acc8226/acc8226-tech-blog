@@ -6,7 +6,26 @@ categories:
   - linux
 ---
 
-## 下载 Fedora
+## centos
+
+### 更新 CentOS 系统
+
+可查看您当前的系统内核版本。如需要升级，可以进行如下操作：
+`cat /etc/centos-release`
+
+Step 1 编辑 yum.conf
+在 /etc/yum.conf 中，注释：`exclude kernel* centos-release*`
+
+Step 2 升级所有软件包
+输入命令：`yum update`
+此命令将升级 CentOS 系统和所有相关的软件包到软件源提供的最新版本。
+
+Step 3 确认升级完成
+升级完成后，再次输入命令：
+`cat /etc/centos-release`
+此时会展示升级后的系统版本。
+
+## Fedora
 
 Download Fedora Workstation
 <https://getfedora.org/en/workstation/download/>
@@ -29,25 +48,49 @@ cat /etc/redhat-release
 
 ## yum 命令
 
-安装但是会检测依赖
-
-```sh
-sudo rpm -Uvh <rpm package name>
-```
-
-如果遇到“错误：依赖检测失败”的问题则可以在安装命令后加两个参数 --nodeps --force，即安装时不再分析包之间的依赖关系而直接安装。
-
-查看 .rpm 依赖
-
-```sh
-rpm -qpR <rpm package name>
-```
-
 卸载包
 
 ```sh
 yum remove tomcat
 ```
+
+### 安装 java
+
+`yum -y install java`
+
+### 安装 Apache 服务
+
+使用 yum 安装 Apache
+`yum install httpd -y`
+
+启动 Apache 服务：
+`service httpd start`
+
+还有 stop, restart 命令
+`service httpd stop`
+`service httpd restart`
+
+### 安装 PHP
+
+安装 PHP 和 PHP-MYSQL 支持工具：
+
+```bash
+yum install php php-mysql -y
+```
+
+### 安装 mariadb
+
+yum install -y mariadb-server mariadb
+
+启动 mariadb
+`systemctl start mariadb`
+
+配置密码, 这里默认使用密码 QcloudLabPASSWORD
+`mysqladmin -u root password 'QcloudLabPASSWORD'`
+
+登录 mariadb
+`mysql -u root -pQcloudLabPASSWORD`
+
 
 ## rpm 命令
 
@@ -81,6 +124,20 @@ rpm -e mysql-community-client-5.6.44-2.el7.x86_64
 
 ```sh
 rpm -e mysql-community-client-5.6.44-2.el7.x86_64 --nodeps
+```
+
+安装但是会检测依赖
+
+```sh
+sudo rpm -Uvh <rpm package name>
+```
+
+如果遇到“错误：依赖检测失败”的问题则可以在安装命令后加两个参数 --nodeps --force，即安装时不再分析包之间的依赖关系而直接安装。
+
+查看 .rpm 依赖
+
+```sh
+rpm -qpR <rpm package name>
 ```
 
 ## service 命令

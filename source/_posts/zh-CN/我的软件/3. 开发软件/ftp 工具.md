@@ -1,6 +1,6 @@
 ---
 title: ftp 工具
-date:
+date: 2022-11-05 13:45:00
 updated: 2022-11-05 13:45:00
 categories:
   - 收藏

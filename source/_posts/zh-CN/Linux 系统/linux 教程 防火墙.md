@@ -1,6 +1,16 @@
+---
+title: linux 教程 防火墙
+date: 2019-03-17 17:27:17
+updated: 2022-11-05 13:45:00
+categories:
+  - linux
+---
+
 在 RHEL7 之前的版本中关闭防火墙等服务的命令是
 
+```sh
 service iptables stop
+```
 
 /etc/init.d/iptables stop
 

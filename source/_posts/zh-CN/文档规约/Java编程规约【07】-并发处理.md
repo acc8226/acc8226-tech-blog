@@ -152,25 +152,25 @@ if (isLocked) {
 12\. 【强制】多线程并行处理定时任务时，Timer 运行多个 TimeTask 时，只要其中之一没有捕获抛出的异
 常，其它任务便会自动终止运行，使用 ScheduledExecutorService 则没有这个问题。
 
-13.【推荐】资金相关的金融敏感信息，使用悲观锁策略。
+13\.【推荐】资金相关的金融敏感信息，使用悲观锁策略。
 说明：乐观锁在获得锁的同时已经完成了更新操作，校验逻辑容易出现漏洞，另外，乐观锁对冲突的解决策略有较复杂
 的要求，处理不当容易造成系统压力或数据异常，所以资金相关的金融敏感信息不建议使用乐观锁更新。
 正例：悲观锁遵循一锁二判三更新四释放的原则。
 
-14.【推荐】使用 CountDownLatch 进行异步转同步操作，每个线程退出前必须调用 countDown 方法，线
+14\.【推荐】使用 CountDownLatch 进行异步转同步操作，每个线程退出前必须调用 countDown 方法，线
 程执行代码注意 catch 异常，确保 countDown 方法被执行到，避免主线程无法执行至 await 方法，
 直到超时才返回结果。
 说明：注意，子线程抛出异常堆栈，不能在主线程 try-catch 到。
 
 笔记：CountDownLatch 存在于 java.util.concurrent 包下。这个类能够使一个线程等待其他线程完成各自的工作后再执行。请在 try...finally 语句里执行 countDown 方法，与关闭资源类似。
 
-15.【推荐】避免 Random 实例被多线程使用，虽然共享该实例是线程安全的，但会因竞争同一 seed 导致
+15\.【推荐】避免 Random 实例被多线程使用，虽然共享该实例是线程安全的，但会因竞争同一 seed 导致
 的性能下降。
 说明：Random 实例包括 java.util.Random 的实例或者 Math.random() 的方式。
 正例：在 JDK7 之后，可以直接使用 API ThreadLocalRandom，而在 JDK7 之前，需要编码保证每个线程持有一个
 单独的 Random 实例。
 
-16.【推荐】通过双重检查锁（double-checked locking），实现延迟初始化需要将目标属性声明为
+16\.【推荐】通过双重检查锁（double-checked locking），实现延迟初始化需要将目标属性声明为
 volatile 型，（比如修改 helper 的属性声明为 private volatile Helper helper = null;）。
 正例：
 
@@ -193,7 +193,7 @@ public class LazyInitDemo {
 
 笔记：请参考参考[The "Double-Checked Locking is Broken" Declaration](http://www.cs.umd.edu/~pugh/java/memoryModel/DoubleCheckedLocking.html)
 
-17.【参考】volatile 解决多线程内存不可见问题对于一写多读，是可以解决变量同步问题，但是如果多
+17\.【参考】volatile 解决多线程内存不可见问题对于一写多读，是可以解决变量同步问题，但是如果多
 写，同样无法解决线程安全问题。
 说明：如果是 count++ 操作，使用如下类实现：
 
@@ -220,4 +220,4 @@ count.addAndGet(1);
 1. 2022 Java 开发手册(黄山版).pdf
 2. 《编写高质量代码：改善 Java 程序的 151 个建议》
 3. 白话阿里巴巴 Java 开发手册（安全规约） - 李艳鹏 - 简书(<https://www.jianshu.com/p/9528c4ea1504>)
-4. [Java并发编程的艺术](https://www.amazon.cn/dp/B012QIKPGM/ref=sr_1_3?ie=UTF8&qid=1516341619&sr=8-3&keywords=java%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E5%AE%9E%E6%88%98)
+4. [Java 并发编程的艺术](https://www.amazon.cn/dp/B012QIKPGM/ref=sr_1_3?ie=UTF8&qid=1516341619&sr=8-3&keywords=java%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E5%AE%9E%E6%88%98)

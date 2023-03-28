@@ -29,7 +29,6 @@ curl 默认的 HTTP 动词是 GET，使用 -X 参数可以支持其他动词。
 **显示响应 header 信息**
 `$ curl -i www.qq.com`
 -i 参数可以显示 http response 的头信息，连同网页代码一起。
--I 参数则只显示 http response 的头信息。
 
 **增加头信息**
 `$ curl --header "Content-Type:application/json" http://example.com`

@@ -1,11 +1,11 @@
 通常 Linux 上的软件安装主要有四种方式：
 
 * 在线安装
-* 从磁盘安装 deb 软件包
+* 从磁盘安装软件包
 * 从二进制软件包安装
 * 从源代码编译安装
 
-在不同的 linux 发行版上面在线安装方式会有一些差异包括使用的命令及它们的包管理工具，因为我们的开发环境是基于 ubuntu 的，所以这里我们涉及的在线安装方式将只适用于 ubuntu 发行版，或其它基于 ubuntu 的发行版如国内的 ubuntukylin(优麒麟)，**ubuntu 又是基于 debian** 的发行版，它使用的是 debian 的包管理工具 dpkg，所以一些操作也适用与 debian。而在一些采用其它包管理工具的发行版如 redhat，centos,fedora 等将不适用(redhat 和 centos 使用 rpm)。
+在不同的 linux 发行版上面在线安装方式会有一些差异包括使用的命令及它们的包管理工具，因为我们的开发环境是基于 ubuntu 的，所以这里我们涉及的在线安装方式将只适用于 ubuntu 发行版，或其它基于 ubuntu 的发行版如国内的 ubuntukylin(优麒麟)，**ubuntu 又是基于 debian** 的发行版，它使用的是 debian 的包管理工具 dpkg，所以一些操作也适用与 debian。而在一些采用其它包管理工具的发行版如 redhat，centos, fedora 等将不适用(redhat 和 centos 使用 rpm)。
 
 比如我们想安装一个软件，名字叫做 w3m(w3m 是一个命令行的简易网页浏览器)，那么输入如下命令：
 
@@ -64,10 +64,10 @@ sudo apt-get --reinstall install w3m
 
 ```sh
 # 不保留配置文件的移除
-$ sudo apt-get purge w3m
+sudo apt-get purge w3m
 # 或者 sudo apt-get --purge remove
 # 移除不再需要的被依赖的软件包
-$ sudo apt-get autoremove
+sudo apt-get autoremove
 ```
 
 ## 软件搜索

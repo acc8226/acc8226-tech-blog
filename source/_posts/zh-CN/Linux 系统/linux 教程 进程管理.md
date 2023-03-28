@@ -1,3 +1,11 @@
+---
+title: linux 教程 进程管理
+date: 2019-03-17 17:27:17
+updated: 2022-11-05 13:45:00
+categories:
+  - linux
+---
+
 `top` 工具是我们常用的一个查看工具，能实时的查看我们系统的一些关键信息的变化:
 
 ```sh
@@ -335,4 +343,13 @@ ps -afxo user,ppid,pid,stat,pri,ni,time,command | grep vim
 
 ```sh
 renice -5 pid
+```
+
+### linux 根据 pid 查找是哪个程序占用
+
+使用 Linux 命令 pwdx pid
+
+```sh
+pwdx 6043
+kill 6043
 ```

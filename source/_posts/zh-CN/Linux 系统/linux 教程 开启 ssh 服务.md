@@ -43,11 +43,16 @@ ssh-keygen -t ed25519
 
 你可以按 Enter 来接受默认值，或指定要在其中生成密钥的路径和/或文件名。 此时，系统会提示你使用密码来加密你的私钥文件。 这可为空，但不建议这样做。 将密码与密钥文件一起使用来提供双因素身份验证。
 
-现在，指定位置已有一个公共/专用 Ed25519 密钥对。 .pub 文件是公钥，没有扩展名的文件是私钥。
+现在，指定位置已有一个公共/专用 Ed25519 密钥对。 `.pub` 文件是公钥，没有扩展名的文件是私钥。
 
-### 总结
+**总结**
+优先选择 ed25519，否则选择 rsa。
 
-优先选择 ed25519，否则选择 rsa
+## 使用
+
+```sh
+ssh root@xxx.xx.xx.xx
+```
 
 ## 总结遇到的问题
 
@@ -82,9 +87,20 @@ ssh-keygen -t ed25519
 SFTP 是 SSH 服务或守护程序的子系统。 因此，这使 SFTP 侦听 TCP 22 端口。 我们可以使用以下 sftp 命令来连接远程系统 SFTP 服务。
 
 更改默认的SFTP端口 (Change Default SFTP Port)
-如果要更改默认的SFTP端口，则需要更改SSH配置，这也将更改默认的SSH端口。 我们需要打开 SSH 配置文件 /etc/ssh/sshd_config 并进行更改
+如果要更改默认的 SFTP 端口，则需要更改SSH配置，这也将更改默认的 SSH 端口。 我们需要打开 SSH 配置文件 /etc/ssh/sshd_config 并进行更改
 
+```sh
+Port 22
+```
 
+更改配置文件后，我们需要激活新配置。 我们应该重新启动SSH服务，它将重新读取配置文件并使用新的SFTP端口号。 我们将使用systemctl命令，但欢迎使用其他服务管理命令。
 
+systemctl restart sshd
 
-systemctl restart sshd.service
+### 如何为客户端指定不同的SFTP(How To Specify Different SFTP For Client)
+
+在日常使用中，我们可能需要连接远程 SFTP 服务器，该服务器的端口不同于默认端口 TCP/22。 我们必须使用 -P选项和 sftp 命令的端口号显式指定远程 SFTP 服务器端口。
+
+```sh
+sftp -P 2222 poftut.com
+```

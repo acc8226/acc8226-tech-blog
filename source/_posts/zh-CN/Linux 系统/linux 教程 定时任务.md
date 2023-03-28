@@ -66,9 +66,11 @@ crontab -l
 
 ```sh
 ps aux | grep cron
+```
 
 or
 
+```sh
 pgrep cron
 ```
 

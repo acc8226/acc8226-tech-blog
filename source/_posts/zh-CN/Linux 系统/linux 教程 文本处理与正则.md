@@ -1,10 +1,149 @@
-虽然我们这一节的标题是正则表达式，但实际这一节实验只是介绍grep，sed，awk这三个命令，而正则表达式作为这三个命令的一种使用方式（命令输出中可以包含正则表达式）。正则表达式本身的内容很多，要把它说明清楚需要单独一门课程来实现，不过我们这一节中涉及到的相关内容通常也能够满足很多情况下的需求了。
+---
+title: linux 教程 文本处理与正则
+date: 2019-03-17 17:27:17
+updated: 2022-11-05 13:45:00
+categories:
+  - linux
+---
+
+
+这一节我们将介绍这几个命令 tr（注意不是 tar），col，join，paste。实际这一节是上一节关于能实现管道操作的命令的延续，所以我们依然将结合管道来熟悉这些命令的使用。
+
+## tr
+
+tr 命令可以用来删除一段文本信息中的某些文字。或者将其进行转换。
+
+#### 使用方式
+
+```sh
+tr [option]...SET1 [SET2]
+```
+
+#### 常用的选项
+
+| 选项 | 说明 |
+| --- | --- |
+| `-d` | 删除和 set1 匹配的字符，注意不是全词匹配也不是按字符顺序匹配 |
+| `-s` | 去除 set1 指定的在输入文本中连续并重复的字符 |
+
+#### 操作举例
+
+```sh
+# 删除 "hello shiyanlou" 中所有的'o','l','h'
+$ echo 'hello shiyanlou' | tr -d 'olh'
+# 将"hello" 中的ll,去重为一个l
+$ echo 'hello' | tr -s 'l'
+# 将输入文本，全部转换为大写或小写输出
+$ echo 'input some text here' | tr '[:lower:]' '[:upper:]'
+# 上面的'[:lower:]' '[:upper:]'你也可以简单的写作'[a-z]' '[A-Z]',当然反过来将大写变小写也是可以的
+```
+
+![](https://upload-images.jianshu.io/upload_images/1662509-3de4e5045098e0de?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+更多 tr 的使用，你可以使用 `--help` 或者 `man tr` 获得。
+
+## col
+
+col 命令可以将 `Tab` 换成对等数量的空格键，或反转这个操作。
+
+#### 使用方式
+
+```sh
+col [option]
+```
+
+#### 常用的选项有
+
+| 选项 | 说明 |
+| --- | --- |
+| `-x` | 将`Tab`转换为空格 |
+| `-h` | 将空格转换为`Tab`（默认选项） |
+
+#### 操作举例
+
+```sh
+# 查看 /etc/protocols 中的不可见字符，可以看到很多 ^I ，这其实就是 Tab 转义成可见字符的符号
+$ cat -A /etc/protocols
+# 使用 col -x 将 /etc/protocols 中的 Tab 转换为空格,然后再使用 cat 查看，你发现 ^I 不见了
+$ cat /etc/protocols | col -x | cat -A
+```
+
+![](https://upload-images.jianshu.io/upload_images/1662509-fab4f836e505b4e4?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+## join 命令
+
+学过数据库的用户对这个应该不会陌生，这个命令就是用于将两个文件中包含相同内容的那一行合并在一起。
+
+#### 使用方式
+
+```sh
+join [option]... file1 file2
+```
+
+#### 常用的选项有
+
+| 选项 | 说明 |
+| --- | --- |
+| `-t` | 指定分隔符，默认为空格 |
+| `-i` | 忽略大小写的差异 |
+| `-1` | 指明第一个文件要用哪个字段来对比，默认对比第一个字段 |
+| `-2` | 指明第二个文件要用哪个字段来对比，默认对比第一个字段 |
+
+#### 操作举例
+
+```sh
+$ cd /home/shiyanlou
+# 创建两个文件
+$ echo '1 hello' > file1
+$ echo '1 shiyanlou' > file2
+$ join file1 file2
+# 将/etc/passwd与/etc/shadow两个文件合并，指定以':'作为分隔符
+$ sudo join -t':' /etc/passwd /etc/shadow
+# 将/etc/passwd与/etc/group两个文件合并，指定以':'作为分隔符, 分别比对第4和第3个字段
+$ sudo join -t':' -1 4 /etc/passwd -2 3 /etc/group
+```
+
+![](https://upload-images.jianshu.io/upload_images/1662509-ce83130735482804?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![](https://upload-images.jianshu.io/upload_images/1662509-16bbb99239d3433b?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+## paste
+
+`paste`这个命令与`join` 命令类似，它是在不对比数据的情况下，简单地将多个文件合并一起，以`Tab`隔开。
+
+#### 使用方式
+
+```sh
+paste [option] file...
+```
+
+#### 常用的选项有
+
+| 选项 | 说明 |
+| --- | --- |
+| `-d` | 指定合并的分隔符，默认为 Tab |
+| `-s` | 不合并到一行，每个文件为一行 |
+
+#### 操作举例
+
+```sh
+echo hello > file1
+echo shiyanlou > file2
+echo www.shiyanlou.com > file3
+paste -d ':' file1 file2 file3
+paste -s file1 file2 file3
+```
+
+![](https://upload-images.jianshu.io/upload_images/1662509-e7d069ccf27296d8?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+虽然我们这一节的标题是正则表达式，但实际这一节实验只是介绍 grep，sed，awk 这三个命令，而正则表达式作为这三个命令的一种使用方式（命令输出中可以包含正则表达式）。正则表达式本身的内容很多，要把它说明清楚需要单独一门课程来实现，不过我们这一节中涉及到的相关内容通常也能够满足很多情况下的需求了。
 
 什么是正则表达式呢？
 
 正则表达式，又称正规表示式、正规表示法、正规表达式、规则表达式、常规表示法（英语：Regular Expression，在代码中常简写为 regex、regexp 或 RE），计算机科学的一个概念。正则表达式使用单个字符串来描述、匹配一系列符合某个句法规则的字符串。在很多文本编辑器里，正则表达式通常被用来检索、替换那些符合某个模式的文本。
 
 ## 2 基本语法
+
 一个正则表达式通常被称为一个模式（**pattern**），为用来描述或者匹配一系列符合某个句法规则的字符串。
 
 #### 选择
@@ -85,7 +224,7 @@ regex 的思导图：
 
 不过在你没学过 perl 语言的大多数情况下你将只会使用到 `ERE` 和`BRE`,所以我们接下来的内容都不会讨论到 PCRE 中特有的一些正则表达式语法（它们之间大部分内容是存在交集的，所以你不用担心会遗漏多少重要内容）
 
-在通过`grep`命令使用正则表达式之前，先介绍一下它的常用参数：
+在通过 `grep` 命令使用正则表达式之前，先介绍一下它的常用参数：
 
 | 参数 | 说明 |
 | --- | --- |
@@ -112,15 +251,15 @@ regex 的思导图：
 查找`/etc/group`文件中以"shiyanlou"为开头的行
 
 ```sh
-$ grep 'shiyanlou' /etc/group
-$ grep '^shiyanlou' /etc/group
+grep 'shiyanlou' /etc/group
+grep '^shiyanlou' /etc/group
 ```
 
 ![此处输入图片的描述](https://upload-images.jianshu.io/upload_images/1662509-7c70e93da6ad1920?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-*   数量
+* 数量
 
-```
+```sh
 # 将匹配以'z'开头以'o'结尾的所有字符串
 $ echo 'zero\nzo\nzoo' | grep 'z.*o'
 # 将匹配以'z'开头以'o'结尾，中间包含一个任意字符的字符串
@@ -255,7 +394,7 @@ $ sed -i 's/sad/happy/4' test # 4表示指定行中的第四个匹配字符串
 | `p` | 打印指定行，通常与`-n`参数配合使用 |
 | `d` | 删除指定行 |
 
-## sed 操作举例
+### sed 操作举例
 
 我们先找一个用于练习的文本文件：
 
@@ -266,7 +405,7 @@ cp /etc/passwd ~
 #### 打印指定行
 
 ```sh
-# 打印2-5行
+# 打印 2-5 行
 $ nl passwd | sed -n '2,5p'
 # 打印奇数行
 $ nl passwd | sed -n '1~2p'

@@ -8,6 +8,40 @@ categories:
 
 Linux 的软件安装目录是也是有讲究的，理解这一点，在对系统管理是有益的。
 
+## 常用软件
+
+**8081端口**
+Jenkins
+[http://106.75.105.152:8081/](http://106.75.105.152:8081/)
+
+**8089 端口**
+frp 管理端口
+[http://106.75.105.152:8089/](http://106.75.105.152:8089/
+)
+
+安装 frp 服务端
+
+这里配置 frps.ini 后即可.
+
+```ini
+[common]
+bind_port = 7000
+
+# authentication
+token = 346803439
+
+dashboard_port = 8089
+dashboard_user = admin
+dashboard_pwd = admin340
+```
+
+让其在后台一直🏃
+`nohup ./frps -c frps.ini >/dev/null 2>&1 &`
+
+**phpMyAdmin**
+
+<http://106.75.105.152:8080/phpMyAdmin>
+
 ## 查看系统配置
 
 查看 cpu 信息
@@ -42,6 +76,24 @@ whereis hbase
 ```sh
 which oracle
 ```
+
+查看端口占用情况
+
+```sh
+netstat -atunlp
+```
+
+各参数含义如下:
+-t : 指明显示 TCP 端口
+-u : 指明显示 UDP 端口
+-l : 仅显示监听套接字(LISTEN 状态的套接字)
+-p : 显示进程标识符和程序名称，每一个套接字/端口都属于一个程序
+-n : 不进行 DNS 解析
+-a 显示所有连接的端口
+
+或者使用命令
+
+lsof -i:22
 
 ## 记录
 
