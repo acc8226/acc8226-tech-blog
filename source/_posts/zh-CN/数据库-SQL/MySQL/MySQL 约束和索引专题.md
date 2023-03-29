@@ -122,7 +122,7 @@ UNIQUE [indexName] (username(length))
 1. `ALTER TABLE tbl_name ADD PRIMARY KEY (column_list)`: 该语句添加一个主键，这意味着索引值必须是唯一的，且不能为NULL。
 2. `ALTER TABLE tbl_name ADD UNIQUE index_name (column_list)`: 这条语句创建唯一索引的值必须是唯一的（除了NULL外，NULL可能会出现多次）。
 3. `ALTER TABLE tbl_name ADD INDEX index_name (column_list)`: 添加普通索引，索引值可出现多次。
-4. `ALTER TABLE tbl_name ADD FULLTEXT index_name (column_list)`:该语句指定了索引为 FULLTEXT ，用于全文索引。
+4. `ALTER TABLE tbl_name ADD FULLTEXT index_name (column_list)`:该语句指定了索引为 FULLTEXT，用于全文索引。
 
 ## 使用 ALTER 命令删除索引
 

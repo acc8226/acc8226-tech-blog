@@ -2,7 +2,7 @@
 title: 两款在用免费云端-IDE
 date: 2020-05-01 16:28:33
 updated: 2020-05-01 16:28:33
-categories: 文本编辑器-使用
+categories: 文本编辑器
 ---
 
 优点: 无需手动安装；预设常见 Java , Python, JS 等环境, 支持创建网页预览，在线开发调试。

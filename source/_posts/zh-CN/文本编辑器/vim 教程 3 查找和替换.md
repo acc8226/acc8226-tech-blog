@@ -1,6 +1,8 @@
 ---
-title: vim-的查找和替换3
-categories: 文本编辑器-使用
+title: vim 教程 3 查找和替换
+date: 2020-04-05 00:46:21
+updated: 2020-04-05 00:46:21
+categories: 文本编辑器
 ---
 
 ## 字符替换命令

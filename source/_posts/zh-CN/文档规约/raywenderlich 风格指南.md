@@ -43,7 +43,6 @@ In __Editor > Code Style__, choose the __Scheme__ to be __raywenderlich.com__:
 
 From now on, projects you create _should_ follow the correct style guidelines.
 
-
 ## Table of Contents
 
 - [Nomenclature](#nomenclature)
@@ -76,7 +75,6 @@ From now on, projects you create _should_ follow the correct style guidelines.
 - [Smiley Face](#smiley-face)
 - [Credit](#credits)
 
-
 ## Nomenclature
 
 On the whole, naming should follow Java standards.
@@ -101,7 +99,7 @@ com.raywenderlich.funkywidget
 
 ### Classes & Interfaces
 
-Written in __UpperCamelCase__. For example `RadialSlider`. 
+Written in __UpperCamelCase__. For example `RadialSlider`.
 
 ### Methods
 
@@ -260,8 +258,8 @@ Lines should be no longer than 100 characters long.
 
 ### Vertical Spacing
 
-There should be exactly one blank line between methods to aid in visual clarity 
-and organization. Whitespace within methods should separate functionality, but 
+There should be exactly one blank line between methods to aid in visual clarity
+and organization. Whitespace within methods should separate functionality, but
 having too many sections in a method often means you should refactor into
 several methods.
 
@@ -468,23 +466,23 @@ file:
 
     /*
      * Copyright (c) 2017 Razeware LLC
-     * 
+     *
      * Permission is hereby granted, free of charge, to any person obtaining a copy
      * of this software and associated documentation files (the "Software"), to deal
      * in the Software without restriction, including without limitation the rights
      * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
      * copies of the Software, and to permit persons to whom the Software is
      * furnished to do so, subject to the following conditions:
-     * 
+     *
      * The above copyright notice and this permission notice shall be included in
      * all copies or substantial portions of the Software.
-     * 
-     * Notwithstanding the foregoing, you may not use, copy, modify, merge, publish, 
-     * distribute, sublicense, create a derivative work, and/or sell copies of the 
-     * Software in any work that is designed, intended, or marketed for pedagogical or 
-     * instructional purposes related to programming, coding, application development, 
+     *
+     * Notwithstanding the foregoing, you may not use, copy, modify, merge, publish,
+     * distribute, sublicense, create a derivative work, and/or sell copies of the
+     * Software in any work that is designed, intended, or marketed for pedagogical or
+     * instructional purposes related to programming, coding, application development,
      * or information technology.  Permission for such use, copying, modification,
-     * merger, publication, distribution, sublicensing, creation of derivative works, 
+     * merger, publication, distribution, sublicensing, creation of derivative works,
      * or sale is expressly withheld.
      *
      * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR

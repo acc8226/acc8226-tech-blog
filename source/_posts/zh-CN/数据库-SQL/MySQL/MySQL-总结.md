@@ -62,7 +62,7 @@ jdbc.url=jdbc:mysql:///test?characterEncoding=utf-8&serverTimezone=Asia/Shanghai
 
 ## MySQL 报错记录
 
-### 使用 navicat 连接Mysql 8.0 数据库 出现 2095- Authentication plugin 'caching_sha2_password' cannot be loaded
+### 使用 navicat 连接 Mysql 8.0 数据库 出现 2095- Authentication plugin 'caching_sha2_password' cannot be loaded
 
 原因：因为 MySQL 8.0 与以前的版本加密方式不同,需要更改一下加密方法
 
@@ -90,7 +90,7 @@ alter user 'root'@'localhost' identified by '123456';
 
 ### java.sql.SQLException: Field 'id' doesn't have a default value
 
-在 mysql 数据库中，如果自增长 id 没有设为Auto Increment，在 java 程序中就会报 java.sql.SQLException: Field 'id' doesn't have a default value 错误。
+在 mysql 数据库中，如果自增长 id 没有设为 Auto Increment，在 java 程序中就会报 java.sql.SQLException: Field 'id' doesn't have a default value 错误。
 
 ### Mysql is not allowed to connect to this mysql server 报错解决办法
 
@@ -98,7 +98,7 @@ alter user 'root'@'localhost' identified by '123456';
 第一次在服务器上安装 mysql 后，使用客户端连接服务器的 mysql，报错 “host xxx is not allowed to connect to this mysql server”。
 
 **解决方式一**
-如果希望使用用户名为 ”username”，使用密码”password” 从任何主机连接到 mysql 服务器的话：
+如果希望使用用户名为 username ，使用密码”password” 从任何主机连接到 mysql 服务器的话：
 
 ```sql
 mysql> GRANT ALL PRIVILEGES ON *.* TO 'username'@'%' IDENTIFIED BY 'password' WITH GRANT OPTION;
