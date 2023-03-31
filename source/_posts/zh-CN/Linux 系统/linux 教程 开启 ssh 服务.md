@@ -67,16 +67,22 @@ ssh root@xxx.xx.xx.xx
 ### Linux SSH 远程登录错误解决办法 WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED
 
 **报错原因**:
-当我们选择 yes 时，ssh 会把阿里云服务器的公钥(host key)都记录在 ~/.ssh/known_hosts。当下次访问相同服务器时，ssh 会核对 host key。如果 host key不同，ssh 会发出警告，避免你受到中间人攻击。
+当我们选择 yes 时，ssh 会把阿里云服务器的公钥(host key)都记录在 `~/.ssh/known_hosts`。当下次访问相同服务器时，ssh 会核对 host key。如果 host key不同，ssh 会发出警告，避免你受到中间人攻击。
 
 我这里之所以报错，是因为我重置了阿里云服务器，服务器 host key 发生了变化，所以再次登录时会报错。
 
 **解决办法**:
-`ssh-keygen -R YourAliyunServerIp` （YourAliyunServerIp 就是你阿里云服务器的公网ip）
+`ssh-keygen -R YourServerIp` YourServerIp 就是你要通行的公网 ip）
 
 它会更改我们上面说到的 known_hosts 文件，并生成一个 known_hosts.old 文件，known_hosts.old 文件其实就是known_hosts 未修改前的版本。
 
-### likai@localhost: Permission denied (publickey)
+另一种方式是去 `~/.ssh/known_hosts` 删除对应的记录。例如
+
+```text
+github.com ssh-rsa AAAABxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx=
+```
+
+### zhangsan@localhost: Permission denied (publickey)
 
 登录目标机器，打开 /etc/ssh/sshd_config ，修改 PasswordAuthentication no 为：PasswordAuthentication yes。
 
