@@ -93,7 +93,7 @@ Java中有一个系统属性 user.timezone，保存的就是默认时区。系�
 
 系统属性可以在 Java 启动的时候传入参数进行更改。
 
-TimeZone也有静态方法，可以获得任意给定时区的实例。
+TimeZone 也有静态方法，可以获得任意给定时区的实例。
 
 ```java
 TimeZone tz = TimeZone.getTimeZone("GMT+08:00");
@@ -289,8 +289,7 @@ timestamp -> LocalDateTime
 
 原因是 java 代码中将 new Date() 插入到 mysql 的对应 timestamp 类型的字段中
 
-修改 jdbc 链接为：&serverTimezone=Asia/Shanghai
-或 serverTimezone=GMT%2B8
+修改 jdbc 链接为：`&serverTimezone=Asia/Shanghai` 或 `serverTimezone=GMT%2B8`
 
 Java 时间 API 完整案例
 

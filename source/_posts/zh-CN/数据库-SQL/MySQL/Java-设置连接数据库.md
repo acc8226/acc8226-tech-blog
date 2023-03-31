@@ -13,6 +13,18 @@
 
 ### 阿里 druid 连接池
 
+druid 是一个高性能，实时分析数据库，提供亚秒级查询流和批量数据的规模和负载。
+
+```xml
+<dependency>
+    <groupId>com.alibaba</groupId>
+    <artifactId>druid</artifactId>
+    <version>${druid-version}</version>
+</dependency>
+```
+
+druid-version 快照可以为 1.2.16。
+
 ## 如何在 Java Web 中完成分页
 
 待补充
@@ -24,6 +36,18 @@
 
 ## jdbc url
 
+
+
+## 使用 jdbc 连接数据库语法
+
+```properties
+jdbc.url=jdbc:mysql:///test?characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+```
+
+如果使用高版本 mysql-conn 包，则一定需要配置 serverTimezone。
+
+
+
 示例 `jdbc:mysql://localhost:3306/email?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true`
 
 Caused by: javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inapp
@@ -32,30 +56,6 @@ Caused by: javax.net.ssl.SSLHandshakeException: No appropriate protocol (protoco
 
 - - -
 
-mysql 重启之后mybatis链接访问报Public Key Retrieval is not allow异常;
+mysql 重启之后 mybatis 链接访问报 Public Key Retrieval is not allow
 
-在jdbcurl链接串上加allowPublicKeyRetrieval=true
-
-## 连接器 坐标地址
-
-之前是
-
-```xml
-<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
-<dependency>
-    <groupId>mysql</groupId>
-    <artifactId>mysql-connector-java</artifactId>
-    <version>8.0.31</version>
-</dependency>
-```
-
-修改后
-
-```xml
-<!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
-<dependency>
-    <groupId>com.mysql</groupId>
-    <artifactId>mysql-connector-j</artifactId>
-    <version>8.0.31</version>
-</dependency>
-```
+在 jdbcurl 链接串上加 allowPublicKeyRetrieval=true

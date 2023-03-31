@@ -14,7 +14,7 @@
 
 它涉及以下步骤：
 ❑ 用新的列布局创建一个新表；
-❑ 使用 INSERT SELECT 语句（关于这条语句的详细介绍，请参阅第19章）从旧表复制数据到新表。如果有必要，可使用转换函数和计算字段；
+❑ 使用 INSERT SELECT 语句（关于这条语句的详细介绍，请参阅第 19 章）从旧表复制数据到新表。如果有必要，可使用转换函数和计算字段；
 ❑ 检验包含所需数据的新表；
 ❑ 重命名旧表（如果确定，可以删除它）；
 ❑ 用旧表原来的名字重命名新表；
@@ -51,14 +51,6 @@ select * from (
 select count(A) [as](https://www.baidu.com/s?wd=as&tn=SE_PcZhidaonwhc_ngpagmjz&rsv_dl=gh_pc_zhidao) [num](https://www.baidu.com/s?wd=num&tn=SE_PcZhidaonwhc_ngpagmjz&rsv_dl=gh_pc_zhidao) , A from table1 group by A
 ) bb
 where [num](https://www.baidu.com/s?wd=num&tn=SE_PcZhidaonwhc_ngpagmjz&rsv_dl=gh_pc_zhidao) >1
-
-## 使用 jdbc 连接数据库语法
-
-```properties
-jdbc.url=jdbc:mysql:///test?characterEncoding=utf-8&serverTimezone=Asia/Shanghai
-```
-
-如果使用高版本 mysql-conn 包，则一定需要配置 serverTimezone。
 
 ## MySQL 报错记录
 
@@ -105,7 +97,7 @@ mysql> GRANT ALL PRIVILEGES ON *.* TO 'username'@'%' IDENTIFIED BY 'password' WI
 mysql> FLUSH PRIVILEGES;
 ```
 
-如果希望使用用户名为”username”，使用密码 ”password” 从IP地址为 192.168.0.100 的主机连接到mysql服务器的话：
+如果希望使用用户名为 username，使用密码 password 从 IP 地址为 192.168.0.100 的主机连接到 mysql 服务器的话：
 
 ```sql
 GRANT ALL PRIVILEGES ON *.* TO 'username'@'192.168.0.100' IDENTIFIED BY 'password' WITH GRANT OPTION;
@@ -123,7 +115,7 @@ FLUSH PRIVILEGES;
 
 **解决方式二**
 
-报"Host ‘169.254.213.3’ is not allowed to connect to this MySQL server 主要的意思是这个 host 主机不能访问本机的 mysql 服务，原因需要连接非本机的 mysql 的时候，默认 host 是 localhost，我们需要将这个 mysql 连接权限设置成 %，更改方法直接通过软件更改或者命令行更改：选择 mysql 这个数据库，里面有一个 user 表，进入表中有一个 host 字段将 localhost 值更改为 % 这个保存后，刷新或者重启 MySQL 服务都行。
+报 Host ‘169.254.213.3’ is not allowed to connect to this MySQL server 主要的意思是这个 host 主机不能访问本机的 mysql 服务，原因需要连接非本机的 mysql 的时候，默认 host 是 localhost，我们需要将这个 mysql 连接权限设置成 %，更改方法直接通过软件更改或者命令行更改：选择 mysql 这个数据库，里面有一个 user 表，进入表中有一个 host 字段将 localhost 值更改为 % 这个保存后，刷新或者重启 MySQL 服务都行。
 刷新的命令是 flush privileges; 注意这里需要有；号否则不执行。
 
 ## sql 错误码
@@ -168,10 +160,10 @@ select count(*) as sum1 from  retrun_factory_log emp_id='S20190001'
 Mysql is not allowed to connect to this mysql server 报错解决办法_wtopps 的专栏-CSDN 博客
 <https://blog.csdn.net/wtopps/article/details/81626656>
 
-Host 'ip地址' is not allowed to connect to this MySQL server报错解决方法_CXRS_LIU的博客-CSDN博客
+Host 'ip地址' is not allowed to connect to this MySQL server 报错解决方法_CXRS_LIU 的博客-CSDN 博客
 <https://blog.csdn.net/CXRS_LIU/article/details/90478519>
 
-ERROR 1415 (0A000): Not allowed to return a result set from a trigger_学而时‘享’之，乐乎-CSDN博客
+ERROR 1415 (0A000): Not allowed to return a result set from a trigger_学而时‘享’之，乐乎-CSDN 博客
 <https://blog.csdn.net/Mr_Programming_Liu/article/details/89376988>
 
 MySQL 表不能修改、删除等操作，卡死、锁死情况的处理办法 - wqbin - 博客园

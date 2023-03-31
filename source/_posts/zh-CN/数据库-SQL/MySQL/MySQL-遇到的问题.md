@@ -22,7 +22,7 @@ kill processid;
 
 ## lock wait timeout exceeded
 
-MySQL抛出异常：lock wait timeout exceeded解决方案_程序猿微刊的博客-CSDN博客_mysql 抛出异常语句
+MySQL抛出异常：lock wait timeout exceeded 解决方案_程序猿微刊的博客-CSDN博客_mysql 抛出异常语句
 <https://blog.csdn.net/CharlesYooSky/article/details/89084310>
 
 ## com.mysql.cj.jdbc.exceptions.PacketTooBigException: Packet for query is too large问题

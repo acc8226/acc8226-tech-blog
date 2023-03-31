@@ -50,7 +50,6 @@ public interface UserMapper {
     </mappers>
 </configuration>
 
-
 public class MyBatisDemo {
   public static void main(String[] args) throws IOException {
     Reader reader = Resources.getResourceAsReader("mybatis.xml");
@@ -170,7 +169,7 @@ public class XMLConfigBuilder extends BaseBuilder {
   }
 }
 
-// Configuration类的addInterceptor()方法的代码如下所示
+// Configuration类的 addInterceptor()方法的代码如下所示
 public void addInterceptor(Interceptor interceptor) {
   interceptorChain.addInterceptor(interceptor);
 }
@@ -183,7 +182,7 @@ public class Invocation {
   private final Object target;
   private final Method method;
   private final Object[] args;
-  // 省略构造函数和getter方法...
+  // 省略构造函数和 getter 方法...
   public Object proceed() throws InvocationTargetException, IllegalAccessException {
     return method.invoke(target, args);
   }
@@ -528,7 +527,6 @@ public abstract class BaseExecutor implements Executor {
 支持配置文件中编写动态 SQL，是 MyBatis 一个非常强大的功能。所谓动态 SQL，就是在 SQL 中可以包含在 trim、if、#{}等语法标签，在运行时根据条件来生成不同的 SQL。这么说比较抽象，我举个例子解释一下。
 
 ```xml
-
 <update id="update" parameterType="com.xzg.cd.a89.User"
    UPDATE user
    <trim prefix="SET" prefixOverrides=",">

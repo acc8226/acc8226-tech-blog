@@ -43,7 +43,7 @@ MySQL 5 及后期版本 下面将要介绍的聚集函数的 DISTINCT 的使用�
 
 如果指定列名，则 DISTINCT 只能用于 COUNT()。DISTINCT 不能用于COUNT(*)，因此不允许使用 COUNT（DISTINCT），否则会产生错误。类似地，DISTINCT 必须使用列名，不能用于计算或表达式。
 
-将 DISTINCT 用于 MIN()和 MAX() 虽然 DISTINCT 从技术上可用于 MIN()和MAX()，但这样做实际上没有价值。一个列中的最小值和最大值不管是否包含不同值都是相同的。
+将 DISTINCT 用于 MIN()和 MAX() 虽然 DISTINCT 从技术上可用于 MIN()和 MAX()，但这样做实际上没有价值。一个列中的最小值和最大值不管是否包含不同值都是相同的。
 
 ### 其他函数
 
@@ -115,4 +115,4 @@ END
 
 ## 参考
 
-MySQL——条件函数（if、coalesce、ifnull、case...when）_日光咖啡的博客-CSDN博客_mysql条件函数if <https://blog.csdn.net/weixin_39229385/article/details/119982659>
+MySQL ——条件函数（if、coalesce、ifnull、case...when）_日光咖啡的博客-CSDN博客_mysql条件函数if <https://blog.csdn.net/weixin_39229385/article/details/119982659>

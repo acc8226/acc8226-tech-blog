@@ -53,5 +53,3 @@ export PATH=$PATH:$M2_HOME/bin
 # HOMEBREW
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
 ```
-
-## 参考
