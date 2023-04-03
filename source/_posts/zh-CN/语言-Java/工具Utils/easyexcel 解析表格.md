@@ -10,6 +10,13 @@ tags:
 - Excel
 ---
 
+## 已过时 JXL
+
+A Java library for reading/writing Excel - Browse Files at SourceForge.net
+<https://sourceforge.net/projects/jexcelapi/files/>
+
+## easyexcel
+
 alibaba/easyexcel
 <https://github.com/alibaba/easyexcel/>
 
@@ -55,11 +62,10 @@ response.setHeader("Content-disposition", "attachment;filename*=utf-8''" + fileN
 
 ## 遇到过的问题
 
-### excel 导出模板不带表头
+### 导出不带表头的 excel 模板
 
 ```java
 // 加入此行：空 list 解决了此问题
 List<List<Object>> excelDataList = Collections.singletonList(Collections.emptyList());
-
 EasyExcel.write(response.getOutputStream()).head(head).needHead(true).sheet("模板").doWrite(excelDataList);
 ```

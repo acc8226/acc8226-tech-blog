@@ -34,10 +34,6 @@ druid-version 快照可以为 1.2.16。
 当前在第几页
 当前在第几页的数据
 
-## jdbc url
-
-
-
 ## 使用 jdbc 连接数据库语法
 
 ```properties
@@ -46,16 +42,8 @@ jdbc.url=jdbc:mysql:///test?characterEncoding=utf-8&serverTimezone=Asia/Shanghai
 
 如果使用高版本 mysql-conn 包，则一定需要配置 serverTimezone。
 
+如果没有加 useSSL=false 则可能会报 Caused by: javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inapp
 
+mysql 重启之后 mybatis 链接访问报 Public Key Retrieval is not allow，则需要在 jdbcurl 链接串上加 allowPublicKeyRetrieval=true
 
 示例 `jdbc:mysql://localhost:3306/email?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true`
-
-Caused by: javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inapp
-
-如果没有加 useSSL=false 则可能会报
-
-- - -
-
-mysql 重启之后 mybatis 链接访问报 Public Key Retrieval is not allow
-
-在 jdbcurl 链接串上加 allowPublicKeyRetrieval=true

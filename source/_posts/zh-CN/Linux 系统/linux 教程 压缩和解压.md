@@ -10,17 +10,17 @@ categories:
 
 文件后缀名 说明
 
-*.zip	zip 程序打包压缩的文件
-*.rar	rar 程序压缩的文件
-*.7z	7zip 程序压缩的文件
-*.tar	tar 程序打包，未压缩的文件
-*.gz	gzip 程序（GNU zip）压缩的文件
-*.xz	xz 程序压缩的文件
-*.bz2	bzip2 程序压缩的文件
-*.tar.gz	tar 打包，gzip 程序压缩的文件
-*.tar.xz	tar 打包，xz 程序压缩的文件
-*tar.bz2	tar 打包，bzip2 程序压缩的文件
-*.tar.7z	tar 打包，7z 程序压缩的文件
+*.zip zip 程序打包压缩的文件
+*.rar rar 程序压缩的文件
+*.7z 7zip 程序压缩的文件
+*.tar tar 程序打包，未压缩的文件
+*.gz gzip 程序（GNU zip）压缩的文件
+*.xz xz 程序压缩的文件
+*.bz2 bzip2 程序压缩的文件
+*.tar.gz tar 打包，gzip 程序压缩的文件
+*.tar.xz tar 打包，xz 程序压缩的文件
+*tar.bz2 tar 打包，bzip2 程序压缩的文件
+*.tar.7z tar 打包，7z 程序压缩的文件
 
 不过我们一般只需要掌握几个命令即可，包括 zip，tar。
 

@@ -105,7 +105,6 @@ public class Swagger2 {
 @RestController
 @RequestMapping("/test")
 public class PaychangeTotalController {
-
     /**
      * 查询用户列表
      *

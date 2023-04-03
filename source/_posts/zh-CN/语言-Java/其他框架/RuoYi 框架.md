@@ -120,7 +120,7 @@ sentinel >= 1.6.0
 
 配置 nacos 持久化，修改 conf/application.properties 文件，增加支持 mysql 数据源配置
 
-```text
+```properties
 # db mysql
 spring.datasource.platform=mysql
 db.num=1

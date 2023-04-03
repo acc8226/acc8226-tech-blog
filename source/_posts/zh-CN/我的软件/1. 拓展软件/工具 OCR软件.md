@@ -9,20 +9,23 @@ categories:
 
 ## 推荐
 
-umi ocr
+### Umi-OCR【win】
+
+hiroi-sora/Umi-OCR: OCR 图片转文字识别软件，完全离线。截屏/批量导入图片，支持多国语言、合并段落、竖排文字。可排除水印区域，提取干净的文本。基于 PaddleOCR。
+<https://github.com/hiroi-sora/Umi-OCR>
 
 ## 需要会员后才好用
 
-### 数学公式识别-极度扫描【win mac android】【付费】
+### 极度扫描【win mac android】【付费】
 
-极度扫描是一款跨平台的 OCR 工具，支持表格 / 公式识别、图片转文字，并且可以通过截图 / 拍照 / 选择图片 / PDF 等多种方式导入，轻松助你提升办公效率。
+极度扫描是一款跨平台的 OCR 工具，支持表格 / 数学公式识别、图片转文字，并且可以通过截图 / 拍照 / 选择图片 / PDF 等多种方式导入，轻松助你提升办公效率。
 
 下载地址
 <https://jidusm.wrste.com/>
 
 > 主要是因为我有识别 mathpix 数学公式的需要。且我在当时在[数码荔枝](https://store.lizhi.io/) 30 元买了终生版。
 
-### OCR 识别-白描【win mac android web】【部分免费+付费】
+### 白描【win mac android web】【部分免费+付费】
 
 白描 App - 白描官网|简洁高效的 OCR 文字识别与文件扫描软件|拍照取字方便快捷
 <https://baimiao.uzero.cn/>

@@ -20,24 +20,15 @@ Struts2 的体系结构大致如下图所示：
 
 上图是 Struts2 的体系结构。一个请求在 Struts2 框架中的处理大概会经过以下几个步骤：
 
-*   1、客户端发出一个指向 Servlet 容器（例如 Tomcat）的请求。
-
-*   2、这个请求会经过几个过滤器 Filter（ActionContextCleanUp 可选过滤器、其他 Web 过滤器如 SiteMesh 等），最后到达 FilterDispatcher 过滤器。
-
-*   3、接着 FilterDispatcher 过滤器被调用，FilterDispatcher 询问 ActionMapper 来决定这个请求是否需要调用某个 Action。
-
-*   4、如果 ActionMapper 决定需要调用某个 Action，FilterDispatcher 把请求的处理交给 Action 对象的代理（ActionProxy）。
-
-*   5、ActionProxy 通过配置管理器（Configuration Manager）读取框架的相关配置文件（struts.xml 以及它包含的 *.xml 配置文件），找到需要调用的 Action 类。
-
-*   6、找到需要调用的 Action 类后，ActionProxy 会创建一个 ActionInvocation 的实例。
-
-*   7、ActionInvocation 在调用 Action 的过程之前，会先依次调用相关配置拦截器（Intercepter），执行结果返回 结果字符串。
-
-*   8、ActionInvocation 负责查找 结果字符串 对应的 Result，然后执行这个 Result，再返回对应的结果视图（如 JSP 等等）来呈现页面。
-
-*   9、再次调用所用的配置拦截器（调用顺序与第 7 步相反），然后响应（HttpServletResponse）被返回给浏览器。
-
+* 1、客户端发出一个指向 Servlet 容器（例如 Tomcat）的请求。
+* 2、这个请求会经过几个过滤器 Filter（ActionContextCleanUp 可选过滤器、其他 Web 过滤器如 SiteMesh 等），最后到达 FilterDispatcher 过滤器。
+* 3、接着 FilterDispatcher 过滤器被调用，FilterDispatcher 询问 ActionMapper 来决定这个请求是否需要调用某个 Action。
+* 4、如果 ActionMapper 决定需要调用某个 Action，FilterDispatcher 把请求的处理交给 Action 对象的代理（ActionProxy）。
+* 5、ActionProxy 通过配置管理器（Configuration Manager）读取框架的相关配置文件（struts.xml 以及它包含的 *.xml 配置文件），找到需要调用的 Action 类。
+* 6、找到需要调用的 Action 类后，ActionProxy 会创建一个 ActionInvocation 的实例。
+* 7、ActionInvocation 在调用 Action 的过程之前，会先依次调用相关配置拦截器（Intercepter），执行结果返回 结果字符串。
+* 8、ActionInvocation 负责查找 结果字符串 对应的 Result，然后执行这个 Result，再返回对应的结果视图（如 JSP 等等）来呈现页面。
+* 9、再次调用所用的配置拦截器（调用顺序与第 7 步相反），然后响应（HttpServletResponse）被返回给浏览器。
 
 下面列举 Struts2 的一些主要优点。
 
@@ -52,7 +43,8 @@ Struts2 支持多种表现层技术，如 JSP、FreeMarker、Velocity 等。
 Struts2 的输入验证可以对指定的方法进行验证。
 
 项目架构
-```
+
+```text
 HelloStruts2
 ├── pom.xml
 └── src
