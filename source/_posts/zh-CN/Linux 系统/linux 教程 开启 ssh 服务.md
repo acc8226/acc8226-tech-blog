@@ -6,11 +6,11 @@ categories:
   - linux
 ---
 
-## RSA，DSA，ECDSA，EdDSA 和 Ed25519 的区别
+## RSA、DSA、ECDSA、EdDSA 和 Ed25519 的区别
 
 ### 结论
 
-ssh key 的类型有四种，分别是 dsa、rsa、 ecdsa、ed25519。
+ssh key 的类型有四种，分别是 dsa、rsa、ecdsa、ed25519。
 
 根据数学特性，这四种类型又可以分为两大类，dsa/rsa 是一类，ecdsa/ed25519 是一类，后者算法更先进。
 
@@ -92,7 +92,7 @@ github.com ssh-rsa AAAABxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 SFTP 是 SSH 服务或守护程序的子系统。 因此，这使 SFTP 侦听 TCP 22 端口。 我们可以使用以下 sftp 命令来连接远程系统 SFTP 服务。
 
-更改默认的SFTP端口 (Change Default SFTP Port)
+更改默认的 SFTP 端口 (Change Default SFTP Port)
 如果要更改默认的 SFTP 端口，则需要更改SSH配置，这也将更改默认的 SSH 端口。 我们需要打开 SSH 配置文件 /etc/ssh/sshd_config 并进行更改
 
 ```sh
@@ -101,11 +101,13 @@ Port 22
 
 更改配置文件后，我们需要激活新配置。 我们应该重新启动SSH服务，它将重新读取配置文件并使用新的SFTP端口号。 我们将使用systemctl命令，但欢迎使用其他服务管理命令。
 
+```sh
 systemctl restart sshd
+```
 
 ### 如何为客户端指定不同的SFTP(How To Specify Different SFTP For Client)
 
-在日常使用中，我们可能需要连接远程 SFTP 服务器，该服务器的端口不同于默认端口 TCP/22。 我们必须使用 -P选项和 sftp 命令的端口号显式指定远程 SFTP 服务器端口。
+在日常使用中，我们可能需要连接远程 SFTP 服务器，该服务器的端口不同于默认端口 TCP/22。 我们必须使用 -P 选项和 sftp 命令的端口号显式指定远程 SFTP 服务器端口。
 
 ```sh
 sftp -P 2222 poftut.com

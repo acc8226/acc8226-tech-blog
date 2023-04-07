@@ -30,16 +30,20 @@ Stack Builder Installation Directory: C:\Program Files\PostgreSQL\11
 Installation Log: C:\Users\ferder\AppData\Local\Temp\install-postgresql.log
 ```
 
-由此可看出端口号默认为 5432
+由此可看出端口号默认为 5432。
 windows 系统数据文件在 C:\Program Files\PostgreSQL\11\data 目录下。
 
 ### mac 安装 12.10
 
 <https://get.enterprisedb.com/postgresql/postgresql-12.10-2-osx.dmg>
 
+### linux 安装
+
+
+
 ### docker 安装
 
-技巧：可以选择 alpine linux 版本占用空间较小。
+可以选择 alpine linux 版本占用空间较小。
 
 pg 14
 
@@ -59,7 +63,7 @@ docker run --name pg15 \
 -d postgres:15-alpine
 ```
 
-其中默认用户名为 postgres
+其中默认用户名为 `postgres`。
 
 ## 数据库管理软件推荐
 
@@ -286,11 +290,9 @@ PL/pgSQL 是一种用于 PostgreSQL 数据库系统的可载入的过程语言�
 
 pgadmin4 在点击备份数据库时，PgAdmin 出现 Utility file not found. Please correct the Binary Path in the Preferences dialog 的解决办法
 
-1\. 点击顶部菜单栏，File → PreferencesPreferences
-
-2\. 在弹出的窗口中，点击 Paths 下的 Binary paths 操作示例
-
-3\. 右侧内容滚动到最下方，根据自己本地 PostgreSQL 版本，勾选默认，并且在右侧选择对应 PostgreSQ 安装目录下的 bin 文件夹，然后点击保存设置路径
+1. 点击顶部菜单栏，File → PreferencesPreferences
+2. 在弹出的窗口中，点击 Paths 下的 Binary paths 操作示例
+3. 右侧内容滚动到最下方，根据自己本地 PostgreSQL 版本，勾选默认，并且在右侧选择对应 PostgreSQ 安装目录下的 bin 文件夹，然后点击保存设置路径
 
 - - -
 

@@ -39,5 +39,5 @@ echo "第十个参数${10}"
 shell 中脚本参数传递的两种方式
 <https://blog.csdn.net/sinat_36521655/article/details/79296181>
 
-shell 脚本中使用getopts处理多命令行选项
+shell 脚本中使用 getopts 处理多命令行选项
 <https://blog.csdn.net/wdz306ling/article/details/79974377>

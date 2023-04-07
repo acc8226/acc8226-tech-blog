@@ -139,9 +139,9 @@ tar -xzf shiyanlou.tar.gz
 现在我们要使用其它的压缩工具创建或解压相应文件只需要更改一个参数即可：
 
 压缩文件格式 参数
-*.tar.gz	-z
-*.tar.xz	-J
-*tar.bz2	-j
+*.tar.gz -z
+*.tar.xz -J
+*tar.bz2 -j
 
 ## RAR 命令
 

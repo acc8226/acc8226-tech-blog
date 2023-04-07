@@ -18,9 +18,9 @@ categories:
 ```sh
 # 得到这样的结果说明是内建命令，正如上文所说内建命令都是在 bash 源码中的 builtins 的 .def 中
 xxx is a shell builtin
-# 得到这样的结果说明是外部命令，正如上文所说，外部命令在/usr/bin or /usr/sbin等等中
+# 得到这样的结果说明是外部命令，正如上文所说，外部命令在 /usr/bin or /usr/sbin 等等中
 xxx is /usr/bin/xxx
-# 若是得到alias的结果，说明该指令为命令别名所设定的名称；
+# 若是得到 alias 的结果，说明该指令为命令别名所设定的名称；
 xxx is an alias for xx --xxx
 ```
 

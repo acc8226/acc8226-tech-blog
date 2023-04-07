@@ -34,8 +34,8 @@ Debian GNU/Linux 2.0（hamm） — 被淘汰的稳定版
 
 ### 下载
 
-debian-11.6.0-amd64-netinst.iso。
-这是 Debian 11，代号为 bullseye，网络安装，用于 64 位 PC（amd64）
+Debian 11，代号为 bullseye，网络安装，用于 64 位 PC（amd64）
+<https://gemmei.ftp.acc.umu.se/debian-cd/current/amd64/iso-cd/debian-11.6.0-amd64-netinst.iso>
 
 ## ubuntu 系统
 
@@ -57,7 +57,7 @@ debian-11.6.0-amd64-netinst.iso。
 <https://mirrors.tuna.tsinghua.edu.cn/>
 <https://mirrors.aliyun.com/ubuntu/>
 
-Ubuntu 的软件源配置文件是 /etc/apt/sources.list。请将系统自带的该文件做个备份。
+Ubuntu 的软件源配置文件在 `/etc/apt/sources.list`。请将系统自带的该文件做个备份。
 
 方式一：使用 sed 命令进行替换
 
@@ -71,7 +71,7 @@ sudo sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
 
 以 20.04 LTS 为例， copy 内容覆盖掉 /sources.list 即可。
 
-然后请运行 `sudo apt-get update` 更新索引以生效。
+然后旧版本请运行 `sudo apt-get update`，新版本请运行 `sudo apt update` 更新索引以生效。
 
 #### 启用 ssh
 
@@ -110,10 +110,16 @@ sudo apt get install lrzsz
 
 ### 常用命令
 
-查看当前系统版本
+更新和升级包
 
 ```sh
-lsb_release -a
+sudo apt update && sudo apt upgrade
+```
+
+查看当前系统版本，查看版本信息加上 -c 即可。
+
+```sh
+lsb_release -d
 ```
 
 ### dpkg 命令
@@ -152,7 +158,7 @@ systemctl status service_name | service service_name status
 systemctl enable service_name | service service_name on
 systemctl disable service_name | service service_name off
 
-## Raspberry Pi 树莓派系统
+## Raspberry Pi
 
 许多操作系统可用于 [Operating system images – Raspberry Pi]( https://www.raspberrypi.com/software/operating-systems/)，包括 Raspberry Pi OS，我们的官方支持的操作系统，以及来自其他组织的操作系统。
 
@@ -176,12 +182,12 @@ systemctl disable service_name | service service_name off
 
 SDFormatter 是一个简单和有用的 SD 卡修复工具也是内存卡修复工具，专门设计为 TF 卡/手机 SD 卡/ SD 卡 / SDHC 卡 / SDXC 内存卡修复使用，此内存卡修复工具除了可以在 WIN 系统上运行，还支持苹果 MACOSX 系统上运行。
 
->注意：本工具只能格式化修复你的内存卡，不能恢复你的内存卡数据，但可以让你的内存卡起死回生，所以你也可以先进行数据恢复再使用本工具修复！
+注：本工具只能格式化修复你的内存卡，不能恢复你的内存卡数据，但可以让你的内存卡起死回生，所以你也可以先进行数据恢复再使用本工具修复！
 
 ## 参考
 
 dpkg 命令的详细使用教程_阿力 php 的博客-CSDN 博客_dpkg 命令
 <https://blog.csdn.net/qq_18839693/article/details/62229646>
 
-dpkg 命令的用法_小绵羊的学习之路的博客-CSDN博客_dpkg 命令
+dpkg 命令的用法_小绵羊的学习之路的博客-CSDN 博客_dpkg 命令
 <https://blog.csdn.net/yang3572/article/details/80991108>

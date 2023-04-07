@@ -27,7 +27,7 @@ sudo addgroup siatstudent
 ```
 
 删除组
-delgroup 是 delete 和group的缩写，delete 是英语“删除”的意思，group 是英语“群组”的意思。所以 delgroup 命令用于删除一个已存在的群组。
+delgroup 是 delete 和 group 的缩写，delete 是英语“删除”的意思，group 是英语“群组”的意思。所以 delgroup 命令用于删除一个已存在的群组。
 
 查看组
 
@@ -39,6 +39,6 @@ Linux/Unix 的档案调用权限分为三级 : 档案拥有者、群组、其他
 
 ## 总结
 
-su命令 和 su -命令最大的本质区别就是：前者只是切换了root身份，但Shell环境仍然是普通用户的Shell；而后者连用户和 Shell 环境一起切换成 root 身份了。
+su命令 和 su - 命令最大的本质区别就是：前者只是切换了 root 身份，但 Shell 环境仍然是普通用户的 Shell；而后者连用户和 Shell 环境一起切换成 root 身份了。
 
 ## 参考

@@ -12,7 +12,7 @@ tags:
 WGCLOUD - 极简运维监控系统 - 官网
 <https://www.wgstart.com/>
 
-tianshiyeben/wgcloud: Linux运维监控工具
+tianshiyeben/wgcloud: Linux 运维监控工具
 <https://github.com/tianshiyeben/wgcloud>
 
 ## WGCLOUD介绍
@@ -35,17 +35,17 @@ WGCLOUD 基于微服务 springboot 架构开发，是轻量高性能的分布式
 
 v3.4.2 (2022-11-25)更新说明
 
-Linux平台`(amd64或x86_64，包含server和agent)`：[wgcloud-v3.4.2.tar.gz](https://www.wgstart.com/download/3.4.2/wgcloud-v3.4.2.tar.gz)
+Linux平台`(amd64 或 x86_64，包含 server 和 agent)`：[wgcloud-v3.4.2.tar.gz](https://www.wgstart.com/download/3.4.2/wgcloud-v3.4.2.tar.gz)
 
-Windows平台`(amd64或x86_64，包含server和agent)`：[wgcloud-v3.4.2.zip](https://www.wgstart.com/download/3.4.2/wgcloud-v3.4.2.zip)
+Windows平台`(amd64或x86_64，包含serve r和 agent)`：[wgcloud-v3.4.2.zip](https://www.wgstart.com/download/3.4.2/wgcloud-v3.4.2.zip)
 
 ## 安装
 
-WGCLOUD 包括：server为服务端（或主控端），agent为客户端（探针端、被控端）
+WGCLOUD 包括：server 为服务端（或主控端），agent为客户端（探针端、被控端）
 
-WGCLOUD是绿色版本，非侵入式，解压即可运行，是完全自主私有化部署的监控平台，不依赖外网，局域网、内网也可以部署
+WGCLOUD 是绿色版本，非侵入式，解压即可运行，是完全自主私有化部署的监控平台，不依赖外网，局域网、内网也可以部署
 
-server 所在主机需要JDK1.8环境（JDK11也可以），OpenJDK 也可以的，更高版本JDK也支持，但推荐 JDK1.8 或 11
+server 所在主机需要 JDK1.8 环境（JDK11 也可以），OpenJDK 也可以的，更高版本 JDK 也支持，但推荐 JDK1.8 或 11
 
 ### 解压
 
@@ -56,7 +56,7 @@ tar -xvf wgcloud-v3.4.2.tar.gz
 ```
 
 **安装包目录结构说明**
-(1) server/为服务端（或主控端），处理agent上报的主机指标数据，综合处理后，进行展现。其中服务接口、数据监控、数通监测（PING和SNMP）由 server 自主监测，不依赖 agent
+(1) server/为服务端（或主控端），处理 agent 上报的主机指标数据，综合处理后，进行展现。其中服务接口、数据监控、数通监测（PING和SNMP）由 server 自主监测，不依赖 agent
 如果server无法访问到被监控的数据源、服务接口、数通 PING 和 SNMP 设备，怎么办
 (2) agent/为客户端（或探针端、被控端），负责采集主机各种指标（cpu，内存，磁盘，进程，硬件信息，进程，端口，docker，文件防篡改、日志文件等）数据，定时（默认2分钟）上报给 server
 (3) wgcloud-MySQL.sql为MySQL数据库初始化文件，wgcloud-PostgreSQL.sql为PostgreSQL数据库初始化文件，wgcloud-Oracle.sql为oracle初始化文件

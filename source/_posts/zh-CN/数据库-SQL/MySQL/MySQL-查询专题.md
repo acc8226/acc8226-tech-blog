@@ -40,9 +40,9 @@ SELECT语句有一个特殊的 WHERE 子句，可用来检查具有 NULL 值的�
 **计算次序**
 WHERE 可包含任意数目的 AND 和 OR 操作符。允许两者结合以进行复杂和高级的过滤。
 
-SQL（像多数语言一样）在处理OR操作符前，优先处理AND操作符。
+SQL（像多数语言一样）在处理 OR 操作符前，优先处理AND操作符。
 
-> 在WHERE子句中使用圆括号 任何时候使用具有 AND 和 OR 操作符的 WHERE 子句，都应该使用圆括号明确地分组操作符。不要过分依赖默认计算次序，即使它确实是你想要的东西也是如此。使用圆括号没有什么坏处，它能消除歧义。
+> 在 WHERE 子句中使用圆括号 任何时候使用具有 AND 和 OR 操作符的 WHERE 子句，都应该使用圆括号明确地分组操作符。不要过分依赖默认计算次序，即使它确实是你想要的东西也是如此。使用圆括号没有什么坏处，它能消除歧义。
 
 **为什么要使用IN操作符？**
 其优点具体如下。
@@ -65,7 +65,7 @@ GROUP BY 语句根据一个或多个列对结果集进行分组。
 在使用 GROUP BY 子句前，需要知道一些重要的规定。
 ❑ GROUP BY子句可以包含任意数目的列，因而可以对分组进行嵌套，更细致地进行数据分组。
 ❑ 如果在 GROUP BY 子句中嵌套了分组，数据将在最后指定的分组上进行汇总。换句话说，在建立分组时，指定的所有列都一起计算（所以不能从个别的列取回数据）。
-❑ GROUP BY子句中列出的每一列都必须是检索列或有效的表达式（但不能是聚集函数）。如果在 SELECT 中使用表达式，则必须在 GROUP BY 子句中指定相同的表达式。不能使用别名。
+❑ GROUP BY 子句中列出的每一列都必须是检索列或有效的表达式（但不能是聚集函数）。如果在 SELECT 中使用表达式，则必须在 GROUP BY 子句中指定相同的表达式。不能使用别名。
 ❑ 大多数SQL实现不允许 GROUP BY 列带有长度可变的数据类型（如文本或备注型字段）。
 ❑ 除聚集计算语句外，SELECT 语句中的每一列都必须在 GROUP BY 子句中给出。
 ❑ 如果分组列中包含具有 NULL 值的行，则 NULL 将作为一个分组返回。如果列中有多行NULL值，它们将分为一组。
@@ -74,7 +74,7 @@ GROUP BY 语句根据一个或多个列对结果集进行分组。
 WITH ROLLUP：在 GROUP 分组字段的基础上再进行统计数据。示例：
 
 ```sql
-select vend_id , prod_price ,count(*)  from `Products` group by vend_id, prod_price WITH ROLLUP
+SELECT vend_id , prod_price ,count(*)  from `Products` group by vend_id, prod_price WITH ROLLUP
 
 +---------+------------+----------+
 | vend_id | prod_price | count(*) |
@@ -135,8 +135,8 @@ MySQL 5 的 LIMIT语法 LIMIT 3, 4 的含义是从行 3 开始的 4 行，这容
 **子查询通常用于过滤**
 
 ```sql
-select cust_id  from orders where order_num in (
-    select distinct order_num  from orderitems where item_price >= 10
+SELECT cust_id  from orders where order_num in (
+    SELECT distinct order_num  from orderitems where item_price >= 10
 )
 ```
 
@@ -147,9 +147,9 @@ select cust_id  from orders where order_num in (
 **作为计算字段使用的成为相关子查询**
 
 ```sql
-select cust_email from customers where cust_id in
-(select cust_id  from orders where order_num in
-  (select order_num from orderitems where prod_id  = 'BR01'
+SELECT cust_email from customers where cust_id in
+(SELECT cust_id  from orders where order_num in
+  (SELECT order_num from orderitems where prod_id  = 'BR01'
   )
 )
 ```
@@ -179,13 +179,13 @@ select cust_email from customers where cust_id in
 方言版
 
 ```sql
-select xxx列 from 表A, 表b where 条件1=xxx
+SELECT xxx列 from 表A, 表b where 条件1=xxx
 ```
 
 **标准版** 逗号改成inner join, where 改成 on
 
 ```sql
-select xxx列 from 表A inner join 表b on 条件1=xxx
+SELECT xxx列 from 表A inner join 表b on 条件1=xxx
 ```
 
 自然版
@@ -194,18 +194,18 @@ select xxx列 from 表A inner join 表b on 条件1=xxx
 
 子查询
 
-* 有多个 select 关键字
-* 可以出现的位置 select , 表名, where。其中出现在在select位置不推荐
+* 有多个 SELECT 关键字
+* 可以出现的位置 SELECT , 表名, where。其中出现在在select位置不推荐
 * 出现在表名表示是临时表, 出现在where 条件则是作为一个判断条件的一部分
 
-单行单列 select * from 表1 别名1 where 列1 [=, >, <, <=, >=, !=] (select 列 from 表名2 别名2 where 条件)
+单行单列 SELECT * from 表1 别名1 where 列1 [=, >, <, <=, >=, !=] (SELECT 列 from 表名2 别名2 where 条件)
 
-多行单列 select * from 表1 别名1 where 列1 [IN, ALL, ANY] (select 列 from 表名2 别名2 where 条件)
+多行单列 SELECT * from 表1 别名1 where 列1 [IN, ALL, ANY] (SELECT 列 from 表名2 别名2 where 条件)
 
-单行多列 select * from 表1 别名1 where (列1, 列2) in (select 列1, 列2  from 表2 别名2 where 条件)
+单行多列 SELECT * from 表1 别名1 where (列1, 列2) in (SELECT 列1, 列2  from 表2 别名2 where 条件)
 很少见, 看上去像对象
 
-多行多列 select * from 表1 别名1 , (select ... ) 别名2 where 条件
+多行多列 SELECT * from 表1 别名1 , (SELECT ... ) 别名2 where 条件
 
 > 所谓的连接是有针对性的找出关联关系
 

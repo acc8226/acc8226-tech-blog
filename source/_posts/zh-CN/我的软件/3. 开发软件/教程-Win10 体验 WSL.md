@@ -1,5 +1,5 @@
 ---
-title: 使用教程 Win10 体验 WSL 并配置 Zsh
+title: 教程 Win10 体验 WSL
 date: 2020-06-02 22:57:01
 updated: 2022-11-16 13:28:02
 categories:
@@ -17,27 +17,14 @@ categories:
 
 若要使用简化的 --install 命令，必须运行最新版本的 Windows。
 
-如果希望安装除 Ubuntu 以外的 Linux 发行版，或者希望手动完成这些步骤，请参阅 [WSL 安装页](https://docs.microsoft.com/zh-cn/windows/wsl/install)了解更多详细信息。
+### 列出可用的 Linux 发行版
 
-打开 PowerShell（或 Windows 命令提示符）并输入：
+`wsl --list --online` 或者 `wsl.exe -l -o`
 
-```bat
-wsl --install
-```
-
---install 命令执行以下操作：
-
-* 启用可选的 WSL 和虚拟机平台组件
-* 下载并安装最新 Linux 内核
-* 将 WSL 2 设置为默认值
-* 下载并安装 Ubuntu Linux 发行版（可能需要重新启动）
-
-列出可用的 Linux 发行版
-
-```text
->wsl --list --online
+```sh
+wsl --list --online
 以下是可安装的有效分发的列表。
-请使用“wsl --install -d <分发>”安装。
+请使用 “wsl --install -d <分发>” 安装。
 
 NAME            FRIENDLY NAME
 Ubuntu          Ubuntu
@@ -50,17 +37,34 @@ Ubuntu-18.04    Ubuntu 18.04 LTS
 Ubuntu-20.04    Ubuntu 20.04 LTS
 ```
 
-或者 `wsl.exe -l -o`
+### 安装 Linux 发行版
 
-这里我们选择安装 20.04 LTS 版
+打开 PowerShell（或 Windows 命令提示符）并输入：
 
 ```bat
- wsl --install -d Ubuntu-20.04
+wsl --install
 ```
 
-或者 `wsl --install --distribution <Distribution Name>`
+--install 命令执行以下操作：
 
-也可去微软应用商店搜索并下载, 这里我装的是 Ubuntu 20.04。
+* 启用可选的 WSL 和虚拟机平台组件
+* 下载并安装最新 Linux 内核
+* 将 WSL 2 设置为默认值
+* **下载并将默认安装 Ubuntu Linux 发行版**（可能需要重新启动）
+
+如果希望安装除 Ubuntu 以外的 Linux 发行版，或者希望手动完成这些步骤，请参阅 [WSL 安装页](https://docs.microsoft.com/zh-cn/windows/wsl/install)了解更多详细信息。
+
+也可去微软应用商店搜索并下载, 这里我们选择安装 20.04 LTS 版。
+
+```bat
+wsl --install -d Ubuntu-20.04
+```
+
+或者
+
+```bat
+wsl --install --distribution <DistributionName>`
+```
 
 ### 注销或卸载 Linux 发行版
 
@@ -91,7 +95,7 @@ windows 如何访问 wsl 系统下的文件，可以在 wsl 终端输入以下�
 explorer.exe .
 ```
 
-### 子系统 Linux 重启(不需要重启 Win)
+### 子系统 Linux 重启
 
 WSL 子系统是基于 LxssManager 服务运行的。只需要将 LxssManager 重启即可。也可以做成一个 bat 文件。
 
@@ -100,23 +104,9 @@ Using CMD (Administrator)
 ```bat
 net stop LxssManager
 net start LxssManager
-···
+```
 
 ## ubuntu 常用命令
-
-**更新和升级包**
-
-```sh
-sudo apt update && sudo apt upgrade
-```
-
-**查看版本和代码名称**
-
-```sh
-lsb_release -dc
-```
-
-查看版本信息则 -c 即可。
 
 **修改默认源**
 首先将原配置文件备份
@@ -127,7 +117,7 @@ sudo cp /etc/apt/sources.list /etc/apt/sources.list.2021
 
 然后 VIM 打开`sudo vim /etc/apt/sources.list`，替换
 
-```text
+```sh
 :%s/security.ubuntu/mirrors.aliyun/g
 :%s/archive.ubuntu/mirrors.aliyun/g
 ```
@@ -135,7 +125,7 @@ sudo cp /etc/apt/sources.list /etc/apt/sources.list.2021
 更新并升级
 
 ```sh
-sudo apt update
+
 sudo apt-get upgrade
 ```
 
@@ -143,7 +133,7 @@ sudo apt-get upgrade
 
 **WSL ubuntu18.04 忘记密码 后怎么办**
 ubuntu1804 config --default-user root
-进入ubuntu控制台, 之后执行 passwd 输入新密码即可。
+进入 ubuntu 控制台, 之后执行 passwd 输入新密码即可。
 
 ### 搭配 Visual Studio Code
 
@@ -160,7 +150,7 @@ Visual Studio Code 以及 Remote - WSL 扩展使你能够直接从 VS Code 使�
 
 #### [安装 VS Code 和远程 WSL 扩展](https://docs.microsoft.com/zh-cn/windows/wsl/tutorials/wsl-vscode#install-vs-code-and-the-remote-wsl-extension)
 
-* 访问 [VS Code 安装页](https://code.visualstudio.com/download)，选择 32 位或 64 位安装程序。 在 Windows 上（不是在 WSL 文件系统中）安装 Visual Studio Code。
+* 访问 [VS Code 安装页](https://code.visualstudio.com/download)，选择 32 或 64 位安装程序。 在 Windows 上（不是在 WSL 文件系统中）安装 Visual Studio Code。
 
 * 当在安装过程中系统提示“选择其他任务”时，请务必选中“添加到 PATH”选项，以便可以使用代码命令在 WSL 中轻松打开文件夹。
 
@@ -175,9 +165,9 @@ Visual Studio Code 以及 Remote - WSL 扩展使你能够直接从 VS Code 使�
 
 还可以通过使用 VS Code 中的快捷方式 `CTRL+SHIFT+P` 调出命令面板，以访问更多 VS Code 远程选项。 如果随后键入 `Remote-WSL`，将看到可用的 VS Code 远程选项列表，使你可以在远程会话中重新打开文件夹，指定要在哪个发行版中打开，等等。
 
-### WSL常见用法
+### WSL 常见用法
 
-wsl启动ssh
+wsl 启动 ssh
 
 ```sh
 sudo service ssh start
@@ -232,7 +222,7 @@ cat /etc/resolv.conf | grep nameserver | awk '{ print $2 }'
 WSLg 是 Linux GUI 的 Windows 子系统的缩写，该项目的目的是支持在 Windows 上运行 Linux GUI 应用程序(X11 and Wayland) ，提供完全集成的桌面体验。
 
 **先决条件**
-Windows 11(build 22000.*) 或 Windows 11 Insider Preview (builds 21362 +)
+Windows 11(build 22000.*) 或 Windows 11 Insider Preview (builds 21362+)
 
 将会随着即将发布的 Windows 一起普及。要访问 WSLg 的预览版，您需要从 Microsoft Store 安装 Linux 预览版 Windows 子系统。
 
@@ -305,5 +295,5 @@ ZSH_THEME="ys"
 
 ## 参考
 
-同一局域网下windows主机和wsl子系统相互网络服务访问_薛钦亮的博客-CSDN博客_局域网访问wsl
+同一局域网下 windows 主机和 wsl 子系统相互网络服务访问_薛钦亮的博客-CSDN 博客_局域网访问 wsl
 <https://blog.csdn.net/weixin_43997331/article/details/122593312>
