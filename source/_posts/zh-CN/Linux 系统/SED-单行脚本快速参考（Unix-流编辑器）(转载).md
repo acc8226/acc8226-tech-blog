@@ -415,15 +415,15 @@ SED单行脚本快速参考（Unix 流编辑器）
 
 如果你有其他的单行脚本想与大家分享或者你发现了本文档中错误的地方，请发电子邮件给本文档的作者（Eric Pement）。邮件中请记得提供你所使用的sed版本、该sed所运行的操作系统及对问题的适当描述。本文所指的单行脚本指命令行的长度在65个字符或65个以下的sed脚本〔译注1〕。本文档的各种脚本是由以下所列作者所写或提供：
 
- Al Aab                               # 建立了“seders”邮件列表
- Edgar Allen                          # 许多方面
- Yiorgos Adamopoulos                  # 许多方面
- Dale Dougherty                       # 《sed & awk》作者
- Carlos Duarte                        # 《do it with sed》作者
- Eric Pement                          # 本文档的作者
- Ken Pizzini                          # GNU sed v3.02 的作者
- S.G. Ravenhall                       # 去html标签脚本
- Greg Ubben                           # 有诸多贡献并提供了许多帮助
+Al Aab                               # 建立了“seders”邮件列表
+Edgar Allen                          # 许多方面
+Yiorgos Adamopoulos                  # 许多方面
+Dale Dougherty                       # 《sed & awk》作者
+Carlos Duarte                        # 《do it with sed》作者
+Eric Pement                          # 本文档的作者
+Ken Pizzini                          # GNU sed v3.02 的作者
+S.G. Ravenhall                       # 去html标签脚本
+Greg Ubben                           # 有诸多贡献并提供了许多帮助
 -------------------------------------------------------------------------
 
 译注1：大部分情况下，sed 脚本无论多长都能写成单行的形式（通过 `-e' 选项和`;'号）——只要命令解释器支持，所以这里说的单行脚本除了能写成一行还对长度有所限制。因为这些单行脚本的意义不在于它们是以单行的形式出现。而是让用户能方便地在命令行中使用这些紧凑的脚本才是其意义所在。

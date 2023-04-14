@@ -10,28 +10,26 @@ Plugins | JetBrains
 
 以下是介绍顺序按照优先级排序
 
-## Lombok
+## 必备
 
-A plugin that adds first-class support for Project Lombok
+### Lombok
+
+目前 ideaJ 已内置。
 
 Lombok - Plugins | JetBrains
 <https://plugins.jetbrains.com/plugin/6317-lombok/>
 
-> 之所以必备，是因为 spring boot 对 lombok 也不抗拒。项目中也是使用广泛。
+之所以必备，是因为 spring boot 对 lombok 也不抗拒。项目中也是使用广泛。
 
-## GsonFormatPlus
+### GsonFormatPlus
 
 <https://github.com/mars-men/GsonFormatPlus>
 
 使用方法，下载安装后可使用 Generate 的快捷键。
 
-## .ignore
+### .ignore
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-0588a2b95947e6f2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-### Alibaba Cloud Toolkit
-
-供远程服务器文件管理，支持上传和下载
 
 ### Alibaba Java Coding Guidelines
 
@@ -40,7 +38,31 @@ Lombok - Plugins | JetBrains
 这里我解释下 Blocker/Critical/Major 三个等级
 在 Snoar 中对代码规则有五个级别，这是前三个：崩溃/严重/重要 ，也就是说前两级是必须要处理掉的。
 
-## Sonar Lint 代码扫描
+### Spring Boot Assistant
+
+Spring Boot Assistant - IntelliJ IDEA & Android Studio Plugin | Marketplace
+<https://plugins.jetbrains.com/plugin/17747-spring-boot-assistant>
+
+### MyBatisX
+
+MyBatisX - IntelliJ IDEA Plugin | Marketplace
+<https://plugins.jetbrains.com/plugin/10119-mybatisx>
+
+## 可选
+
+### Alibaba Cloud Toolkit
+
+供远程服务器文件管理，支持上传和下载
+
+### Rainbow Brackets
+
+为括号加彩虹。
+
+### Nyan Progress Bar
+
+会产生漂亮进度条。
+
+### Sonar Lint 代码扫描
 
 可所谓是非常的苛刻。但是这种扫描很有必要，有如神助。这里一定要理解背后代码不能这么写的原因。
 
@@ -53,15 +75,21 @@ Lombok - Plugins | JetBrains
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-49a13e6610050975.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-## Rainbow Brackets
+### IntelliJ IDEA 官方对中文支持
 
-为括号加彩虹。
+1\. 确认所安装的 IntelliJ IDEA 是最新版（至少更新至 2020.1.1 版)。
 
-## Nyan Progress Bar
+2\. 更新至最新版后，开启 IntelliJ IDEA，点击右下角 Configure 菜单，选择 Plugins。
 
-会产生漂亮进度条。
+在弹出的 Plugins 窗口里，切换至 Marketplace Tab，以 Chinese 关键字搜索，第一个出现的就是 Chinese (Simplified) Language Pack EAP，点击 Install 后 Restart IDE 即可完成。
 
-## [Jenkins Control Plugin](https://github.com/MCMicS/jenkins-control-plugin/issues)
+![](https://upload-images.jianshu.io/upload_images/1662509-686d31251d1ba700.gif?imageMogr2/auto-orient/strip)
+
+3\. 安装好插件并重启 IntelliJ IDEA 后，UI 就会以简体中文显示啦~
+
+### Jenkins Control Plugin
+
+[Jenkins Control Plugin](https://github.com/MCMicS/jenkins-control-plugin/issues)
 
 下载，重新进入 IDE，设置一下即可。
 
@@ -79,19 +107,7 @@ Lombok - Plugins | JetBrains
 
 ![image](https://upload-images.jianshu.io/upload_images/1662509-0a5ffcb31c451442.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-> 说明：如果不启用 CSRF的话，第二张图 idea 设置的 Crumb Data 则不用填
-
-## IntelliJ IDEA 官方对中文支持
-
-1\. 确认所安装的 IntelliJ IDEA 是最新版（至少更新至 2020.1.1 版)。
-
-2\. 更新至最新版后，开启 IntelliJ IDEA，点击右下角 Configure 菜单，选择 Plugins。
-
-在弹出的 Plugins 窗口里，切换至 Marketplace Tab，以 Chinese 关键字搜索，第一个出现的就是 Chinese (Simplified) Language Pack EAP，点击 Install 后 Restart IDE 即可完成。
-
-![](https://upload-images.jianshu.io/upload_images/1662509-686d31251d1ba700.gif?imageMogr2/auto-orient/strip)
-
-3\. 安装好插件并重启 IntelliJ IDEA 后，UI 就会以简体中文显示啦~
+> 说明：如果不启用 CSRF 的话，第二张图 idea 设置的 Crumb Data 则不用填
 
 ## IntelliJ 自带的一些组件
 

@@ -17,9 +17,15 @@ Logback 打算作为流行的 log4j 项目的继承者，继承 log4j 的不足�
 
 Logback 的体系结构足够通用，可以在不同的情况下应用。 目前，日志回溯分为三个模块: logback-core, logback-classic and logback-access。
 
-Logback-core 模块为其他两个模块奠定了基础。 可以将 logback-classic 模块同化为 log4j 的一个显著改进版本。 此外，logback-classic 本机实现了 SLF4J API，这样您就可以在 logback 和其他日志框架(如 log4j 或 java.util.logging (JUL))之间来回切换。
+Logback-core 模块为其他两个模块奠定了基础。可以将 logback-classic 模块同化为 log4j 的一个显著改进版本。 此外，logback-classic 本机实现了 SLF4J API，这样您就可以在 logback 和其他日志框架(如 log4j 或 java.util.logging (JUL))之间来回切换。
 
 Logback-access 模块与 Servlet 容器(如 Tomcat 和 Jetty)集成，以提供 HTTP-access 日志功能。 注意，您可以轻松地在 logback-core 之上构建自己的模块。
+
+gradle 坐标，要求 jdk 11 及其以上。
+
+```groovy
+    implementation("ch.qos.logback:logback-classic:1.4.6")
+```
 
 一个案例
 

@@ -80,7 +80,7 @@ console.log(`Fifteen is ${a + b} and\nnot ${2 * a + b}.`);
 
 ## 国际化
 
-[Intl](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Intl "Intl 对象是 ECMAScript 国际化 API 的一个命名空间，它提供了精确的字符串对比、数字格式化，和日期时间格式化。Collator，NumberFormat 和 DateTimeFormat 对象的构造函数是 Intl 对象的属性。本页文档内容包括了这些属性，以及国际化使用的构造器和其他语言的方法等常见的功能。") 对象是ECMAScript国际化API的命名空间, 它提供了语言敏感的字符串比较，数字格式化和日期时间格式化功能.  [Collator](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Collator "Intl.Collator 是用于语言敏感字符串比较的 collators构造函数。"), [NumberFormat](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/NumberFormat "Intl.NumberFormat是对语言敏感的格式化数字类的构造器类"), 和 [DateTimeFormat](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat "交互示例的源代码存储在 GitHub 资源库。如果你愿意分布交互示例，请复制https://github.com/mdn/interactive-examples，并向我们发送一个pull请求。") 对象的构造函数是`Intl`对象的属性.
+[Intl](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Intl "Intl 对象是 ECMAScript 国际化 API 的一个命名空间，它提供了精确的字符串对比、数字格式化，和日期时间格式化。Collator，NumberFormat 和 DateTimeFormat 对象的构造函数是 Intl 对象的属性。本页文档内容包括了这些属性，以及国际化使用的构造器和其他语言的方法等常见的功能。") 对象是ECMAScript国际化 API 的命名空间, 它提供了语言敏感的字符串比较，数字格式化和日期时间格式化功能.  [Collator](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Collator "Intl.Collator 是用于语言敏感字符串比较的 collators构造函数。"), [NumberFormat](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/NumberFormat "Intl.NumberFormat是对语言敏感的格式化数字类的构造器类"), 和 [DateTimeFormat](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat "交互示例的源代码存储在 GitHub 资源库。如果你愿意分布交互示例，请复制https://github.com/mdn/interactive-examples，并向我们发送一个pull请求。") 对象的构造函数是`Intl`对象的属性.
 
 ### 日期和时间格式化
 
@@ -91,8 +91,8 @@ var msPerDay = 24 * 60 * 60 * 1000;
 
 // July 17, 2014 00:00:00 UTC.
 var july172014 = new Date(msPerDay * (44 * 365 + 11 + 197));//2014-1970=44年
-//这样创建日期真是醉人。。。还要自己计算天数。。。11是闰年中多出的天数。。。
-//197是6×30+16(7月的16天)+3(3个大月)-2(2月少2天)
+// 这样创建日期真是醉人。。。还要自己计算天数。。。11是闰年中多出的天数。。。
+// 197是6×30+16(7月的16天)+3(3个大月)-2(2月少2天)
 
 var options = { year: "2-digit", month: "2-digit", day: "2-digit",
                 hour: "2-digit", minute: "2-digit", timeZoneName: "short" };

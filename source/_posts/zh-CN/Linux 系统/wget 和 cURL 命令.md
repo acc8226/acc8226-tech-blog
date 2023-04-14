@@ -56,7 +56,7 @@ curl www.qq.com
 ### curl 常用命令总结
 
 ```text
- curl命令  访问网站url
+ curl命令  访问网站 url
  -I/--head 显示响应头信息
  -m/--max-time 访问超时的时间
  -o/--output  记录访问信息到文件

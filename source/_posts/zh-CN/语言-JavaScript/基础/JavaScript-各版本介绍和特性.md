@@ -9,7 +9,7 @@ tags:
 
 ## JavaScript 1.1
 
-Netscape Navigator 3.0在**1996年8月19**发布，是支持 JavaScript 的浏览器的第二个主要的版本。
+Netscape Navigator 3.0在 **1996 年 8 月 19** 发布，是支持 JavaScript 的浏览器的第二个主要的版本。
 
 ## 1.1 新特性
 

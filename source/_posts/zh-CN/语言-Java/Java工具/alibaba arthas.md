@@ -167,7 +167,7 @@ mc /tmp/Test.java
 
 * https://arthas.aliyun.com/doc/retransform
 
-加载外部的`.class`文件，retransform 热更新jvm已加载的类。
+加载外部的`.class`文件，retransform 热更新 jvm 已加载的类。
 
 ```bash
 retransform /tmp/Test.class
@@ -213,9 +213,9 @@ $ sc -d org.springframework.web.context.support.XmlWebApplicationContext
 
 #### vmtool
 
-* https://arthas.aliyun.com/doc/vmtool
+* <https://arthas.aliyun.com/doc/vmtool>
 
-从JVM heap中获取指定类的实例。
+从 JVM heap 中获取指定类的实例。
 
 ```bash
 $ vmtool --action getInstances --className java.lang.String --limit 10
@@ -235,7 +235,7 @@ $ vmtool --action getInstances --className java.lang.String --limit 10
 
 #### stack
 
-* https://arthas.aliyun.com/doc/stack
+<https://arthas.aliyun.com/doc/stack>
 
 查看方法 `test.arthas.TestStack#doGet` 的调用堆栈：
 
@@ -280,7 +280,7 @@ ts=2018-09-18 10:11:45;thread_name=http-bio-8080-exec-10;id=d9;is_daemon=true;pr
 
 #### Watch
 
-* https://arthas.aliyun.com/doc/watch
+<https://arthas.aliyun.com/doc/watch>
 
 观察方法 `test.arthas.TestWatch#doGet` 执行的入参，仅当方法抛出异常时才输出。
 
@@ -340,7 +340,7 @@ Affect(class-cnt:1 , method-cnt:1) cost in 75 ms.
 
 #### Classloader
 
-* https://arthas.aliyun.com/doc/classloader
+<https://arthas.aliyun.com/doc/classloader>
 
 了解当前系统中有多少类加载器，以及每个加载器加载的类数量，帮助您判断是否有类加载器泄露。
 
@@ -361,7 +361,7 @@ $ classloader
 
 #### Web Console
 
-* https://arthas.aliyun.com/doc/web-console
+<https://arthas.aliyun.com/doc/web-console>
 
 ![web console](site/docs/.vuepress/public/images/web-console-local.png)
 

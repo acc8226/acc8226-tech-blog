@@ -90,7 +90,7 @@ Command–上箭头：**向上一级**(打开包含当前文件夹的文件夹)
 Command–下箭头：打开所选项。
 Command-Delete：将所选项移到废纸篓。
 
-### Chrome浏览器的常用快捷键
+### Chrome 浏览器的常用快捷键
 
 Command+R（刷新页面，支持Safari和Chrome)
 Command++ / -/ 0（放大、缩小、还原，支持Safari和Chrome）

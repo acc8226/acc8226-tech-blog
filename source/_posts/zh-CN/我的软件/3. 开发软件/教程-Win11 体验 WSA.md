@@ -92,7 +92,13 @@ adb shell pm list packages
 adb uninstall com.example.xxx
 ```
 
+## 遇到的问题
+
+在应用商店安装 Windows Subsystem for Linux 之后 wsl报0x80040326
+
+我卸载该应用就好了。
+
 ## 参考文档
 
-Android 调试桥 (adb)  |  Android 开发者  |  Android Developers
+Android 调试桥 (adb) | Android 开发者 | Android Developers
 <https://developer.android.google.cn/studio/command-line/adb>

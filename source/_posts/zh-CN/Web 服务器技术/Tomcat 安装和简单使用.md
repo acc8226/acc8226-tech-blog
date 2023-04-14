@@ -48,7 +48,7 @@ mv apache-tomcat-8.5.71 /usr/local/Tomcat8.5
 为 Tomcat 授权。
 chmod +x /usr/local/Tomcat8.5/bin/*.sh
 
-说明： Tomcat 默认端口号为 8080。
+说明：Tomcat 默认端口号为 8080。
 执行以下命令，修改 Tomcat 默认端口号为 80。
 
 ```sh

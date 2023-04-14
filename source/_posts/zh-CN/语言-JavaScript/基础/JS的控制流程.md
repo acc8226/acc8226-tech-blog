@@ -26,7 +26,7 @@ var x = 1;
 console.log(x); // 输出 2
 ```
 
-使用`let`和 `const`
+使用 `let` 和 `const`
 相比之下，使用 [`let`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/let "The source for this interactive example is stored in a GitHub repository. If you'd like to contribute to the interactive examples project, please clone https://github.com/mdn/interactive-examples and send us a pull request.")和[`const`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/const "常量是块级作用域，很像使用 let 语句定义的变量。常量的值不能通过重新赋值来改变，并且不能重新声明。")声明的变量是**有**块级作用域的。
 
 ```js
@@ -45,7 +45,7 @@ console.log(c); // 输出1, 而且不会报错
 
 相比之下，使用 [`let`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/let "The source for this interactive example is stored in a GitHub repository. If you'd like to contribute to the interactive examples project, please clone https://github.com/mdn/interactive-examples and send us a pull request.")和[`const`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/const "常量是块级作用域，很像使用 let 语句定义的变量。常量的值不能通过重新赋值来改变，并且不能重新声明。")声明的变量是**有**块级作用域的。
 
-### 使用`function`
+### 使用 `function`
 
 [函数声明](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)同样被限制在声明他的语句块内:
 
@@ -63,7 +63,7 @@ foo('outside');  // TypeError: foo is not a function
 
 终止当前的循环，switch 或 label 语句，使程序跳到下一个语句执行。
 
-`break`语句包含一个可选的标签，可允许程序摆脱一个被标记的语句。`break`语句需要内嵌在引用的标签中。被标记的语句可以是任何 [`块`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/block "块语句（或其他语言的复合语句）用于组合零个或多个语句。该块由一对大括号界定，可以是labelled：")语句；不一定是循环语句。
+`break` 语句包含一个可选的标签，可允许程序摆脱一个被标记的语句。`break` 语句需要内嵌在引用的标签中。被标记的语句可以是任何 [`块`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/block "块语句（或其他语言的复合语句）用于组合零个或多个语句。该块由一对大括号界定，可以是labelled：")语句；不一定是循环语句。
 
 ```js
 function testBreak(x) {
@@ -113,7 +113,7 @@ outer_block:{
 
 > 提示：在使用空语句的情况下专门写上注释是个不错的主意，因为不是很容易区分空语句和普通的分号。
 
-一个例子：[`if...else`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else) 语句不带花括号（`{}`）。如果`three`为`true`, 不会发生任何事，`four`不会执行，同时`else`从句中的`launchRocket()`函数也不会执行。
+一个例子：[`if...else`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else) 语句不带花括号（`{}`）。如果 `three` 为 `true`, 不会发生任何事，`four` 不会执行，同时 `else` 从句中的`launchRocket()`函数也不会执行。
 
 ```js
 if (one)
@@ -153,7 +153,7 @@ else
 
 * 要在一个从句中执行多条语句，可使用语句块（{ ... }）。通常情况下，一直使用语句块是个好习惯，特别是在涉及嵌套if语句的代码中
 
-不要将原始布尔值的`true`和`false`与[Boolean](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Boolean "en/JavaScript/Reference/Global_Objects/Boolean")对象的真或假混淆。任何一个值，只要它不是 `undefined`、`null`、 `0`、`NaN`或空字符串（`""`），那么无论是任何对象，即使是值为假的Boolean对象，在条件语句中都为真。例如：
+不要将原始布尔值的 `true` 和 `false` 与[Boolean](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Boolean "en/JavaScript/Reference/Global_Objects/Boolean")对象的真或假混淆。任何一个值，只要它不是 `undefined`、`null`、 `0`、`NaN` 或空字符串（`""`），那么无论是任何对象，即使是值为假的Boolean对象，在条件语句中都为真。例如：
 
 ```js
 var b = new Boolean(false);
@@ -193,7 +193,7 @@ switch (expression) {
 
 一个 switch 语句首先会计算其 expression 。然后，它将从第一个 case 子句开始直到寻找到一个其表达式值与所输入的 expression 的值所相等的子句（使用 [严格运算符](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Comparison_Operators)，`===`）并将控制权转给该子句，执行相关语句。（如果多个 case 与提供的值匹配，则选择匹配的第一个 case，即使这些 case 彼此间并不相等。）
 
-如果没有 `case` 子句相匹配，程序则会寻找那个可选的 `default` 子句，如果找到了，将控制权交给它，执行相关语句。若没有 `default` 子句，程序将继续执行直到 `switch` 结束。按照惯例，`default` 子句是最后一个子句，不过也不需要这样做。
+如果没有 `case` 子句相匹配，程序则会寻找那个可选的 `default` 子句，如果找到了，将控制权交给它，执行相关语句。若没有 `default` 子句，程序将继续执行直到 `switch` 结束。按照惯例，`default` 子句是最后一个子句，不过也不需要这样做。
 
 可选的 [break](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/break "JavaScript/Reference/Statements/break") 语句确保程序立即从相关的 case 子句中跳出 switch 并接着执行 switch 之后的语句。若 `break` 被省略，程序会继续执行 `switch` 语句中的下一条语句。
 
@@ -203,19 +203,19 @@ switch (expression) {
 
 标记一个语句块，并指定一个应该抛出异常的反馈。（Marks a block of statements to try, and specifies a response, should an exception be thrown.）
 
-`try`语句包含了由一个或者多个语句组成的`try`块, 和至少一个`catch`子句或者一个`finally`子句的其中一个，或者两个兼有， 下面是三种形式的`try`声明：
+`try` 语句包含了由一个或者多个语句组成的 `try` 块, 和至少一个 `catch` 子句或者一个 `finally` 子句的其中一个，或者两个兼有， 下面是三种形式的 `try` 声明：
 
 1. `try...catch`
 2. `try...finally`
 3. `try...catch...finally`
 
-`catch`子句包含`try`块中抛出异常时要执行的语句。也就是，你想让`try`语句中的内容成功， 如果没成功，你想控制接下来发生的事情，这时你可以在`catch`语句中实现。 如果在`try`块中有任何一个语句（或者从`try`块中调用的函数）抛出异常，控制立即转向`catch`子句。如果在`try`块中没有异常抛出，会跳过`catch`子句。
+`catch` 子句包含 `try` 块中抛出异常时要执行的语句。也就是，你想让 `try` 语句中的内容成功， 如果没成功，你想控制接下来发生的事情，这时你可以在 `catch` 语句中实现。 如果在 `try` 块中有任何一个语句（或者从 `try` 块中调用的函数）抛出异常，控制立即转向 `catch` 子句。如果在 `try` 块中没有异常抛出，会跳过 `catch` 子句。
 
-`finally`子句在`try`块和`catch`块之后执行但是在下一个`try`声明之前执行。无论是否有异常抛出或捕获它总是执行。
+`finally` 子句在 `try` 块和 `catch` 块之后执行但是在下一个 `try` 声明之前执行。无论是否有异常抛出或捕获它总是执行。
 
-你可以嵌套一个或者更多的`try`语句。如果内部的`try`语句没有`catch`子句，那么将会进入包裹它的`try`语句的`catch`子句。
+你可以嵌套一个或者更多的 `try` 语句。如果内部的 `try` 语句没有 `catch` 子句，那么将会进入包裹它的 `try` 语句的 `catch` 子句。
 
-你也可以用`try`语句去处理 JavaScript 异常。参考[JavaScript 指南](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide)了解更多关于 Javascript 异常的信息。
+你也可以用 `try` 语句去处理 JavaScript 异常。参考[JavaScript 指南](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide)了解更多关于 Javascript 异常的信息。
 
 下面用符合 ECMAscript 规范的简单的 JavaScript 来编写相同的“条件catch子句”（显然更加冗长的，但是可以在任何地方运行）：
 

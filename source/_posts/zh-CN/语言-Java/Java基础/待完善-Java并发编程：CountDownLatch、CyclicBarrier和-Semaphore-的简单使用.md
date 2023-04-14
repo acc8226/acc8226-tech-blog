@@ -13,7 +13,7 @@ CountDownLatch 类位于 java.util.concurrent 包下，利用它可以实现类�
 
 CountDownLatch 类只提供了一个构造器：
 `public CountDownLatch(int count) {  };  //参数count为计数值`
-然后下面这3个方法是 CountDownLatch 类中最重要的方法：
+然后下面这 3 个方法是 CountDownLatch 类中最重要的方法：
 
 * public void await() throws InterruptedException { };   // 调用 await()方法的线程会被挂起，它会等待直到count值为0才继续执行
 * public boolean await(long timeout, TimeUnit unit) throws InterruptedException { };  //和await()类似，只不过等待一定的时间后count值还没变为0的话就会继续执行
@@ -23,40 +23,40 @@ CountDownLatch 类只提供了一个构造器：
 
 ```java
 final CountDownLatch latch = new CountDownLatch(2);
-         new Thread(){
-             public void run() {
-                 try {
-                     System.out.println("子线程"+Thread.currentThread().getName()+"正在执行");
-                    Thread.sleep(3000);
-                    System.out.println("子线程"+Thread.currentThread().getName()+"执行完毕");
-                    latch.countDown();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-             };
-         }.start();
+new Thread(){
+    public void run() {
+        try {
+            System.out.println("子线程"+Thread.currentThread().getName()+"正在执行");
+        Thread.sleep(3000);
+        System.out.println("子线程"+Thread.currentThread().getName()+"执行完毕");
+        latch.countDown();
+    } catch (InterruptedException e) {
+        e.printStackTrace();
+    }
+    };
+}.start();
 
-         new Thread(){
-             public void run() {
-                 try {
-                     System.out.println("子线程"+Thread.currentThread().getName()+"正在执行");
-                     Thread.sleep(5000);
-                     System.out.println("子线程"+Thread.currentThread().getName()+"执行完毕");
-                     latch.countDown();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-             };
-         }.start();
+new Thread(){
+    public void run() {
+        try {
+            System.out.println("子线程"+Thread.currentThread().getName()+"正在执行");
+            Thread.sleep(5000);
+            System.out.println("子线程"+Thread.currentThread().getName()+"执行完毕");
+            latch.countDown();
+    } catch (InterruptedException e) {
+        e.printStackTrace();
+    }
+    };
+}.start();
 
-         try {
-            System.out.println("等待2个子线程执行完毕...");
-            latch.await();
-            System.out.println("2个子线程已经执行完毕");
-            System.out.println("继续执行主线程");
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+try {
+    System.out.println("等待 2 个子线程执行完毕...");
+    latch.await();
+    System.out.println("2 个子线程已经执行完毕");
+    System.out.println("继续执行主线程");
+} catch (InterruptedException e) {
+    e.printStackTrace();
+}
 ```
 
 输出结果:
@@ -75,7 +75,7 @@ final CountDownLatch latch = new CountDownLatch(2);
 
 字面意思回环栅栏，通过它可以实现让一组线程等待至某个状态之后再全部同时执行。叫做回环是因为当所有等待线程都被释放以后，CyclicBarrier 可以被重用。我们暂且把这个状态就叫做 barrier，当调用 await() 方法之后，线程就处于 barrier了.
 
-CyclicBarrier类位于java.util.concurrent包下，CyclicBarrier 提供 2 个构造器：
+CyclicBarrier 类位于 java.util.concurrent 包下，CyclicBarrier 提供 2 个构造器：
 
 ```java
 public CyclicBarrier(int parties, Runnable barrierAction) {
@@ -195,7 +195,7 @@ public Semaphore(int permits, boolean fair) {    //这个多了一个参数fair�
 }
 ```
 
-下面说一下Semaphore类中比较重要的几个方法，首先是acquire()、release()方法：
+下面说一下 Semaphore 类中比较重要的几个方法，首先是 acquire()、release()方法：
 
 ```java
 public void acquire() throws InterruptedException {  }     //获取一个许可
@@ -205,7 +205,7 @@ public void release(int permits) { }    //释放permits个许可
 acquire()用来获取一个许可，若无许可能够获得，则会一直等待，直到获得许可。
 ```
 
-release()用来释放许可。注意，在释放许可之前，必须先获获得许可。
+release() 用来释放许可。注意，在释放许可之前，必须先获获得许可。
 
 这4个方法都会被阻塞，如果想立即得到执行结果，可以使用下面几个方法：
 
@@ -282,18 +282,12 @@ public class Test {
 
 2. Semaphore 其实和锁有点类似，它一般用于控制对某组资源的访问权限。
 
-参考资料：
+## 参考
 
 * 《[Java编程思想](http://www.amazon.cn/gp/product/B0011F7WU4/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B0011F7WU4&linkCode=as2&tag=importnew-23 "Java编程思想(第4版) ")》
-
 * [http://www.itzhai.com/the-introduction-and-use-of-a-countdownlatch.html](http://www.itzhai.com/the-introduction-and-use-of-a-countdownlatch.html)
-
 * [http://leaver.me/archives/3220.html](http://leaver.me/archives/3220.html)
-
 * [http://developer.51cto.com/art/201403/432095.htm](http://developer.51cto.com/art/201403/432095.htm)
-
 * [http://blog.csdn.net/yanhandle/article/details/9016329](http://blog.csdn.net/yanhandle/article/details/9016329)
-
 * [http://blog.csdn.net/cutesource/article/details/5780740](http://blog.csdn.net/cutesource/article/details/5780740)
-
 * [http://www.cnblogs.com/whgw/archive/2011/09/29/2195555.html](http://www.cnblogs.com/whgw/archive/2011/09/29/2195555.html)

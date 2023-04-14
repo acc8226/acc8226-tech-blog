@@ -116,10 +116,12 @@ sudo apt get install lrzsz
 sudo apt update && sudo apt upgrade
 ```
 
-查看当前系统版本，查看版本信息加上 -c 即可。
+查看 Description 加上 -d
+查看当前系统版本，查看版本信息加上 -c
+查询全部信息，加上 -a
 
 ```sh
-lsb_release -d
+lsb_release -a
 ```
 
 ### dpkg 命令

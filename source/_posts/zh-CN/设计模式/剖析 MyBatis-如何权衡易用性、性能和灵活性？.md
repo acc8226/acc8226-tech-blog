@@ -169,7 +169,7 @@ public class XMLConfigBuilder extends BaseBuilder {
   }
 }
 
-// Configuration类的 addInterceptor()方法的代码如下所示
+// Configuration 类的 addInterceptor()方法的代码如下所示
 public void addInterceptor(Interceptor interceptor) {
   interceptorChain.addInterceptor(interceptor);
 }

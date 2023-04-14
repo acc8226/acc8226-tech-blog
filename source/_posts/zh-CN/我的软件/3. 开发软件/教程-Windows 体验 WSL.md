@@ -1,5 +1,5 @@
 ---
-title: 教程 Win10 体验 WSL
+title: 教程 Windows 体验 WSL
 date: 2020-06-02 22:57:01
 updated: 2022-11-16 13:28:02
 categories:
