@@ -39,7 +39,39 @@ windows 系统数据文件在 C:\Program Files\PostgreSQL\11\data 目录下。
 
 ### linux 安装
 
+ubuntu 安装 pg12
 
+```sh
+# install **wget** if not already installed:
+sudo apt install -y wget
+
+# import the repository signing key:
+wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+
+# add repository contents to your system:
+RELEASE=$(lsb_release -cs)
+echo "deb http://apt.postgresql.org/pub/repos/apt/ ${RELEASE}"-pgdg main | sudo tee  /etc/apt/sources.list.d/pgdg.list
+
+# install and launch the postgresql service:
+sudo apt update
+sudo apt -y install postgresql-12
+sudo service postgresql start
+```
+
+For CentOS 8:
+
+```sh
+# Install the repository RPM (for CentOS 8):
+sudo yum -y install https://download.postgresql.org/pub/repos/yum/reporpms/EL-8-x86_64/pgdg-redhat-repo-latest.noarch.rpm
+# Install packages
+sudo dnf -qy module disable postgresql
+sudo dnf -y install postgresql12 postgresql12-server
+# Initialize your PostgreSQL DB
+sudo /usr/pgsql-12/bin/postgresql-12-setup initdb
+sudo systemctl start postgresql-12
+# Optional: Configure PostgreSQL to start on boot
+sudo systemctl enable --now postgresql-12
+```
 
 ### docker 安装
 

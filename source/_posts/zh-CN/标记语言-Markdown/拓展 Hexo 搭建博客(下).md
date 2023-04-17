@@ -105,7 +105,7 @@ git push origin master
 
 新建目标项目：<https://gitee.com/kaiLee/kaiLee.git>
 
-我这里可以使用  username + accessToken 方式 clone 等操作。提取一系列私密变量后
+我这里可以使用 username + accessToken 方式 clone 等操作。提取一系列私密变量后
 
 ```text
 userName kaiLee

@@ -28,28 +28,28 @@ Make sure that /usr/local/bin is in your $PATH.
 1.临时使用
 
 ```sh
-npm --registry https://registry.npm.taobao.org install express
+npm --registry --registry=https://registry.npmmirror.com install express
 ```
 
 2.持久使用
 
 ```sh
-npm config set registry https://registry.npm.taobao.org
+npm config set registry https://registry.npmmirror.com
 ```
 
 配置后可通过下面方式来验证是否成功
 
 ```sh
-npm config get registry 或 npm info express
+npm config get registry
 ```
 
 3.通过 cnpm 使用
 
 ```sh
-npm install -g cnpm --registry=https://registry.npm.taobao.org
+npm install -g cnpm --registry=https://registry.npmmirror.com
 ```
 
-有人说 cnpm 可能会遇到奇怪的问题，这时候不妨试试换用 npm 试试。
+有人说 cnpm 可能会遇到奇怪的问题，这时候不妨试试换用只是 npm  进行换源操作。
 
 ## pm2 的使用
 
