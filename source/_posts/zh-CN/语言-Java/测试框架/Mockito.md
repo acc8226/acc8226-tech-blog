@@ -1,10 +1,22 @@
+---
+title: 0. Mockito 快速入门
+date: 2023-04-12 19:12:00
+updated: 2023-04-12 19:12:00
+categories:
+  - 语言-Java
+  - 测试框架
+tags:
+  - Java
+  - Mockito
+---
+
 Mockito framework site
 <https://site.mockito.org/>
 
-Mockito 是 mocking 框架，它让你用简洁的API做测试。而且 Mockito 简单易学，它可读性强和验证语法简洁。
+Mockito 是 mocking 框架，它让你用简洁的 API 做测试。而且 Mockito 简单易学，它可读性强和验证语法简洁。
 
 Mockito教程 - 明-Ming - 博客园
-https://www.cnblogs.com/Ming8006/p/6297333.html
+<https://www.cnblogs.com/Ming8006/p/6297333.html>
 
 除了核心包还需要 3 个 jar 包
 

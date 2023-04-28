@@ -30,7 +30,7 @@ xml 中 或者在 类方法上写的 sql 语句有问题
 
 Consider defining a bean of type 'com.poly.ncl.chargepaychange.mapper.ChargePayChangeMapper' in your configuration.
 
-这是由于 springBoot 启动时，没有扫描到 com.alibaba.dao.EntFileDao，而在 com.alibaba.serviceImpl.EntFileServiceImpl 中又使用了 @autowired private EnfileDao entFileDao 进行装配，所以会发现错误，说没有定义。此时需要在 springBoot 的启动类上，加个注解：@MapperScan("持久层路径")，这样就会扫描到 com.alibaba.dao.EntFileDao 了。
+这是由于 springBoot 启动时，没有扫描到 com.alibaba.dao.EntFileDao，而在 com.alibaba.serviceImpl.EntFileServiceImpl 中又使用了 @Autowired private EnfileDao entFileDao 进行装配，所以会发现错误，说没有定义。此时需要在 springBoot 的启动类上，加个注解：@MapperScan("持久层路径")，这样就会扫描到 com.alibaba.dao.EntFileDao 了。
 
 原文：<https://blog.csdn.net/weixin_39800144/article/details/79176373>
 
@@ -44,7 +44,7 @@ Consider defining a bean of type 'com.poly.ncl.chargepaychange.mapper.ChargePayC
 
 错误原因：参数中带有 emoji 表情，插入数据库时，一些特殊字符如“🌙”，插入报异常
 
-解决思路：因为字符编码集为 utf8,不支持一些 basic multilingual plane 和补充字符，那么如何让 mysql 存储 emoji表情，所以需要改成 utf8mb4.
+解决思路：因为字符编码集为 utf8,不支持一些 basic multilingual plane 和补充字符，那么如何让 mysql 存储 emoji 表情，所以需要改成 utf8mb4.
 
 解决方法：
 
@@ -54,7 +54,6 @@ package com.zhangsan.product.utils;
 import java.util.regex.Pattern;
 
 public class EmojiUtil {
-
     /**
      * emoji表情替换
      *

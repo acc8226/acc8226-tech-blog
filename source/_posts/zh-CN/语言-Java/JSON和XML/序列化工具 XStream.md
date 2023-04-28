@@ -129,16 +129,16 @@ xstream.aliasPackage("my.company.xstream", "com.yiibai.xstream");
 XStream 支持使用注解做同样的任务。在前面的章节中，我们已经看到了下面的代码配置。
 
 ```java
-// 创建一个类的XML完全限定名称的别名
+// 创建一个类的 XML 完全限定名称的别名
 xstream.alias("student", Student.class);
 xstream.alias("note", Note.class);
 
-// 使用的集合是表示在XML无需显示根
+// 使用的集合是表示在 XML 无需显示根
 xstream.addImplicitCollection(Student.class, "notes");
 
-// 成员变量作为XML属性
+// 成员变量作为 XML 属性
 xstream.useAttributeFor(Student.class, "studentName");
-// 用于创建以XML字段的别名
+// 用于创建以 XML 字段的别名
 xstream.aliasField("name", Student.class, "studentName");
 ```
 
@@ -334,6 +334,7 @@ String xml = xstream.toXML(student);
 ```
 
 示例
+
 ```java
         XStream xs = new XStream(new DomDriver());
         System.out.println(xs.toXML(new Object()));
@@ -395,6 +396,7 @@ String xml = xstream.toXML(student);
 **对象转 xml 的注意事项**
 
 1. toXML的时候, 如果字段
+
 * String ppp = "ttt";    表现形式为 <ppp>ttt</ppp>
 * String ppp = "";       表现形式为 <ppp></ppp>
 * String ppp = null;    表现形式为没有该行
@@ -403,7 +405,7 @@ String xml = xstream.toXML(student);
 `xstream.autodetectAnnotations(true);`
 或者`xstream.processAnnotations(Student.class);`
 
-2. xstream对转 int 的处理, 如果标签内非数字,则直接抛出`java.lang.NumberFormatException`, 所以得根据使用情况, 否则得写成string类型，之后再自行处理。
+2\. xstream对转 int 的处理, 如果标签内非数字,则直接抛出`java.lang.NumberFormatException`, 所以得根据使用情况, 否则得写成string类型，之后再自行处理。
 
 ### xml 转实体
 
@@ -414,7 +416,7 @@ String xml = xstream.toXML(student);
 Student student1 = (Student)xstream.fromXML(xml);
 ```
 
-发现对 <list> 标签会处理为 ArrayList, <map> 会被处理为HashMap
+发现对 `<list>` 标签会处理为 ArrayList, `<map>` 会被处理为 HashMap
 
 示例
 
@@ -465,10 +467,10 @@ Student student1 = (Student)xstream.fromXML(xml);
 
 **xml 文本 转 对象注意事项**
 
-1. 需要配置忽略xml多余的元素, 否则会抛异常
+1\. 需要配置忽略xml多余的元素, 否则会抛异常
 mXs.ignoreUnknownElements();
 
-注意：XStream老版本没有这个函数（1.4.5以上版本才有此方法）
+注意：XStream 老版本没有这个函数（1.4.5 以上版本才有此方法）
 
 ## 参考
 

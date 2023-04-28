@@ -12,7 +12,7 @@ tags:
 
 ## mybatis 传递参数的 7 种方法
 
-mybatis 传递参数的7种方法_独钓寒江雪～的博客-CSDN博客_mybatis传入对象参数
+mybatis 传递参数的 7 种方法_独钓寒江雪～的博客-CSDN 博客_mybatis 传入对象参数
 <https://blog.csdn.net/bdqx_007/article/details/94836637>
 
 ## MySQL_插入更新 ON DUPLICATE KEY UPDATE
@@ -40,7 +40,7 @@ if ($row) {
 
 还好 MySQL 为我们解决了这个问题：我们可以通过 ON DUPLICATE KEY UPDATE  达到以上目的, 且能保证操作的原子性和数据的完整性。
 
-**ON DUPLICATE KEY UPDATE **可以达到以下目的:
+**ON DUPLICATE KEY UPDATE** 可以达到以下目的:
 
 向数据库中插入一条记录：
 

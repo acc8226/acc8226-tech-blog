@@ -17,7 +17,7 @@ tags:
 </dependency>
 ```
 
-浏览器访问:localhost:8080/actuator 即可。
+浏览器访问 localhost:8080/actuator 即可。
 
 默认情况下，通过 web 端只可访问 <http://localhost:8080/actuator/health> ，可在 application.properties 中配置访问的 uri、权限、端口等
 
@@ -30,7 +30,7 @@ management.endpoints.web.base-path=/actuator/z
 management.endpoints.web.exposure.include=*
 ```
 
-通过以上配置，开放了web端的所有访问，可通过访问 <http://localhost:8081/actuator/z/beans> 来查看系统中的beans
+通过以上配置，开放了 web 端的所有访问，可通过访问 <http://localhost:8081/actuator/z/beans> 来查看系统中的 beans
 
 ## 参考
 

@@ -95,20 +95,20 @@ apply = function.apply(10);
 System.out.println(apply.length); // 10
 ```
 
-## Optional的用法
+## Optional 的用法
 
 ```java
-// Optional类已经成为Java 8类库的一部分，在Guava中早就有了，可能Oracle是直接拿来使用了
-// Optional用来解决空指针异常，使代码更加严谨，防止因为空指针NullPointerException对代码造成影响
+// Optional 类已经成为 Java 8 类库的一部分，在 Guava 中早就有了，可能 Oracle 是直接拿来使用了
+// Optional 用来解决空指针异常，使代码更加严谨，防止因为空指针 NullPointerException 对代码造成影响
 String msg = "hello";
 Optional<String> optional = Optional.of(msg);
 // 判断是否有值，不为空
 boolean present = optional.isPresent();
 // 如果有值，则返回值，如果等于空则抛异常
 String value = optional.get();
-// 如果为空，返回else指定的值
+// 如果为空，返回 else 指定的值
 String hi = optional.orElse("hi");
-// 如果值不为空，就执行Lambda表达式
+// 如果值不为空，就执行 Lambda 表达式
 optional.ifPresent(opt -> System.out.println(opt));
 ```
 
@@ -313,11 +313,11 @@ Map<String, Integer> nameAgeMap = employList
 
 ## 参考
 
-JDK1.8新特性(三): 方法引用 ::和 Optional
+JDK1.8 新特性(三): 方法引用 ::和 Optional
 <https://blog.csdn.net/vbirdbest/article/details/80207673>
 
 <https://blog.csdn.net/IO_Field/article/details/54971761>
-Java 8 系列之 Stream的基本语法详解
+Java 8 系列之 Stream 的基本语法详解
 
 Java8 新特性 Stream 使用心得之：groupingBy 与 partitioningBy_G_axis 的博客-CSDN博客
 <https://blog.csdn.net/V_Axis/article/details/86095053>
@@ -325,5 +325,5 @@ Java8 新特性 Stream 使用心得之：groupingBy 与 partitioningBy_G_axis �
 这可能是史上最好的 Java8 新特性 Stream 流教程 - osc_bnuaa5jy 的个人空间 - OSCHINA
 <https://my.oschina.net/u/4271175/blog/3265285>
 
-Java8 中使用stream进行分组统计和普通实现的分组统计的性能对比_冯立彬的博客-CSDN博客_java stream 分组统计
+Java8 中使用 stream 进行分组统计和普通实现的分组统计的性能对比_冯立彬的博客-CSDN 博客_java stream 分组统计
 <https://blog.csdn.net/fenglibing/article/details/80238310>

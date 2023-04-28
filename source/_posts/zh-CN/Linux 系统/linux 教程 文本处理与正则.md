@@ -56,8 +56,8 @@ col [option]
 
 | 选项 | 说明 |
 | --- | --- |
-| `-x` | 将`Tab`转换为空格 |
-| `-h` | 将空格转换为`Tab`（默认选项） |
+| `-x` | 将 `Tab` 转换为空格 |
+| `-h` | 将空格转换为 `Tab`（默认选项） |
 
 #### 操作举例
 
@@ -99,7 +99,7 @@ $ echo '1 shiyanlou' > file2
 $ join file1 file2
 # 将/etc/passwd 与/etc/shadow 两个文件合并，指定以':'作为分隔符
 $ sudo join -t':' /etc/passwd /etc/shadow
-# 将/etc/passwd 与/etc/group 两个文件合并，指定以':'作为分隔符, 分别比对第 4 和第 3 个字段
+# 将 /etc/passwd 与 /etc/group 两个文件合并，指定以':'作为分隔符, 分别比对第 4 和第 3 个字段
 $ sudo join -t':' -1 4 /etc/passwd -2 3 /etc/group
 ```
 
@@ -109,7 +109,7 @@ $ sudo join -t':' -1 4 /etc/passwd -2 3 /etc/group
 
 ## paste
 
-`paste`这个命令与`join` 命令类似，它是在不对比数据的情况下，简单地将多个文件合并一起，以`Tab`隔开。
+`paste` 这个命令与`join` 命令类似，它是在不对比数据的情况下，简单地将多个文件合并一起，以`Tab` 隔开。
 
 #### 使用方式
 
@@ -310,7 +310,7 @@ $ echo '1234\nabcd' | grep '[[:alpha:]]'
 | `[:space:]` | 任何会产生空白的字符，包括空白键, [Tab], CR 等等 |
 | `[:xdigit:]` | 代表 16 进位的数字类型，因此包括： 0-9, A-F, a-f 的数字与字节 |
 
-> **注意**：**之所以要使用特殊符号**，是因为上面的[a-z]不是在所有情况下都管用，这还与主机当前的语系有关，即设置在`LANG`环境变量的值，zh_CN.UTF-8 的话[a-z]，即为所有小写字母，其它语系可能是大小写交替的如，"a A b B...z Z"，[a-z]中就可能包含大写字母。所以在使用[a-z]时请确保当前语系的影响，使用[:lower:]则不会有这个问题。
+> **注意**：**之所以要使用特殊符号**，是因为上面的[a-z]不是在所有情况下都管用，这还与主机当前的语系有关，即设置在`LANG` 环境变量的值，zh_CN.UTF-8 的话[a-z]，即为所有小写字母，其它语系可能是大小写交替的如，"a A b B...z Z"，[a-z]中就可能包含大写字母。所以在使用[a-z]时请确保当前语系的影响，使用[:lower:]则不会有这个问题。
 
 ```sh
 # 排除字符
@@ -349,7 +349,7 @@ $ echo 'www.shiyanlou.com\nwww.baidu.com\nwww.google.com' | grep -Ev 'www\.baidu
 
 ![此处输入图片的描述](https://upload-images.jianshu.io/upload_images/1662509-5c018a2a28e5a163?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-关于正则表达式和`grep`命令的内容就介绍这么多，下面会介绍两个更强大的工具`sed`和`awk`，但同样也正是因为这两个工具的强大，我们的内容无法包含它们的全部，这里将只对基本内容作介绍。
+关于正则表达式和`grep` 命令的内容就介绍这么多，下面会介绍两个更强大的工具`sed` 和`awk`，但同样也正是因为这两个工具的强大，我们的内容无法包含它们的全部，这里将只对基本内容作介绍。
 
 ## sed 流编辑器
 

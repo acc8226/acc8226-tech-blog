@@ -5,7 +5,6 @@ updated: 2023-04-12 19:12:00
 categories:
   - 语言-Java
   - 日志框架
-  - sl4f
 tags:
   - Java
   - sl4f

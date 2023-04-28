@@ -211,7 +211,7 @@ public static enum Include {
     }
 ```
 
-> 正常情况下建议不要使用 @JsonInclude(JsonInclude.Include.NON_EMPTY)和 @JsonInclude(JsonInclude.Include.NON_NULL)，因为这样序列化之后的数据无法展现出数据的 schema，对客户端不友好。一般而言使用默认的就行。
+正常情况下建议不要使用 @JsonInclude(JsonInclude.Include.NON_EMPTY)和 @JsonInclude(JsonInclude.Include.NON_NULL)，因为这样序列化之后的数据无法展现出数据的 schema，对客户端不友好。一般而言使用默认的就行。
 
 ### @JsonValue
 

@@ -137,7 +137,7 @@ footer:
   # If not defined, `author` from Hexo `_config.yml` will be used.
   copyright: ac86<br/><a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral"><img src="/images/upyun_logo.png" style="min-width:263px; width:32.3%;"/></a>
   # Powered by Hexo & NexT
-  powered: false
+  powered: true
 
 # Local Search
 # Dependencies: https://github.com/next-theme/hexo-generator-searchdb
@@ -394,11 +394,6 @@ changyan:
   enable: false
   appid: cywdkXKvl
   appkey: e89b1d7850399f6e0d4810a0c48ebe97
-
-# Gitalk
-# For more information: https://gitalk.github.io
-gitalk:
-  enable: false
 
 # Utterances
 # For more information: https://utteranc.es

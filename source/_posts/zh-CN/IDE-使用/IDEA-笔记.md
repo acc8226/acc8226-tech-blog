@@ -154,7 +154,7 @@ Ctrl + 方向键（上 / 下）无效
 Shift + 方向键（左 / 右）选中内容左/右移动一位
 Shift + 方向键（上 / 下）选中内容上 / 下移动一行
 
-当光标在单词首 或者 尾的位置时，可以 Ctrl+Shift+Left/Right 选中靠左/靠右单词
+当光标在单词首 或者 尾的位置时，可以 Ctrl + Shift + Left/Right 选中靠左/靠右单词
 
 单行注释(//) ctrl+/   注释光标所在行代码，会根据当前不同文件类型使用不同的注释符号
 多行注释(//)  注释选中多行
@@ -314,6 +314,10 @@ Postfix Completion 功能本质上也是代码模板，只是它比 Live Templat
 
 IDEA 永久激活方案 (实测可用) - 简书
 <https://www.jianshu.com/p/21aa61bf8b8f>
+
+## 开启 idea 自动提示功能
+
+ctrl+alt+s进入快捷键设置界面。打开 Code Completion / 代码补全，勾选 输入时显示建议 即可。
 
 ## 遇到过的问题
 

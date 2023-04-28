@@ -16,9 +16,9 @@ public interface Serializable
 方法一：排序后输出
 
 ```java
-        Arrays.sort(data);
-        System.out.println(data[0]);
-        System.out.println(data[data.length - 1]);
+Arrays.sort(data);
+System.out.println(data[0]);
+System.out.println(data[data.length - 1]);
 ```
 
 方法二：转成流后获取 max 和 min

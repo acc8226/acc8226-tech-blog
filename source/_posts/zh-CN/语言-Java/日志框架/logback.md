@@ -5,7 +5,6 @@ updated: 2022-08-18 15:15:20
 categories:
   - 语言-Java
   - 日志框架
-  - logback
 tags:
   - Java
   - logback
@@ -24,7 +23,7 @@ Logback-access 模块与 Servlet 容器(如 Tomcat 和 Jetty)集成，以提供 
 gradle 坐标，要求 jdk 11 及其以上。
 
 ```groovy
-    implementation("ch.qos.logback:logback-classic:1.4.6")
+implementation("ch.qos.logback:logback-classic:1.4.6")
 ```
 
 一个案例
@@ -51,7 +50,7 @@ gradle 坐标，要求 jdk 11 及其以上。
             <!-- 按天回滚 daily -->
             <fileNamePattern>logs/product.log%d{yyyy-MM-dd}
             </fileNamePattern>
-            <!-- 日志最大的历史 10天 -->
+            <!-- 日志最大的历史 10 天 -->
             <maxHistory>10</maxHistory>
         </rollingPolicy>
         <encoder charset="UTF-8">

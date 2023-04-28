@@ -29,9 +29,9 @@ System.out.println("RMB:"+fro);
 ## Localizing Number 本地化数字
 
 ```java
-NumberFormat nft1=NumberFormat.getNumberInstance(new Locale("en", "US"));
-NumberFormat nft2=NumberFormat.getNumberInstance(new Locale("zh", "CN"));
-NumberFormat nft3=NumberFormat.getNumberInstance(new Locale("ru", "RU"));
+NumberFormat nft1 = NumberFormat.getNumberInstance(new Locale("en", "US"));
+NumberFormat nft2 = NumberFormat.getNumberInstance(new Locale("zh", "CN"));
+NumberFormat nft3 = NumberFormat.getNumberInstance(new Locale("ru", "RU"));
 String  fro1 = nft1.format(12345600);
 System.out.println("NUM:"+fro1); //美国
 String  fro2 = nft2.format(12345600);
@@ -64,5 +64,5 @@ System.out.println(rbl.getString("message"));
 
 ## 参考
 
-Java本地化的实现_不是常家乐的博客-CSDN博客_java 本地化
+Java 本地化的实现_不是常家乐的博客-CSDN 博客_java 本地化
 <https://blog.csdn.net/m0_52149190/article/details/117307729>

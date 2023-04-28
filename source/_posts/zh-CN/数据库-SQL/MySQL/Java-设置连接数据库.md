@@ -23,8 +23,6 @@ druid 是一个高性能，实时分析数据库，提供亚秒级查询流和�
 </dependency>
 ```
 
-druid-version 快照可以为 1.2.16。
-
 ## 如何在 Java Web 中完成分页
 
 待补充
