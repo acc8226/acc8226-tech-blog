@@ -422,3 +422,11 @@ Mapper.xml
 ```
 
 注意，`${tableName}` 的两边是带了撇的。
+
+## 查询
+
+Mybatis 查询返回 List＜String＞集合
+
+```xml
+<select id="dynamicIfTest" resultType="java.lang.String">
+```

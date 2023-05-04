@@ -30,7 +30,7 @@ Step 3 确认升级完成
 Download Fedora Workstation
 <https://getfedora.org/en/workstation/download/>
 
-Fedora 自带中文输入法，支持 yum 和 dnf 且安装包小于 2 G，外观也做的不错。
+Fedora 自带中文输入法，支持 yum 和 dnf 且安装包小于 2G，外观也做的不错。
 
 ## 命令
 

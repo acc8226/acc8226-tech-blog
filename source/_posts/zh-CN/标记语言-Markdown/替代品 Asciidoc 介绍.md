@@ -189,7 +189,7 @@ Asciidoctor 可以运行在 Linux，OSX (Mac) 和 Windows 系统，但需要安�
 [#installation]
 == 安装
 
-Asciidoctor 可以通过三种方式安装（a）`gem install` 命令；（b）Bundler打包编译；（c）流行的 Linux 发行版的包管理器
+Asciidoctor 可以通过三种方式安装（a）`gem install` 命令；（b）Bundler 打包编译；（c）流行的 Linux 发行版的包管理器
 
 TIP: 使用 Linux 包管理器安装的好处是如果你机器在之前没有安装 Ruby 和 RubyGems 库，当你选择这种方式安装时它们会一并安装上去。
 不利的是在 gem 发布之后，这类安装包并不是立即可用。
