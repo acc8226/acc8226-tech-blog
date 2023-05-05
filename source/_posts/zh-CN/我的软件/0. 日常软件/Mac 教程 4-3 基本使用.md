@@ -112,3 +112,7 @@ defaults write com.apple.dashboard mcx-disabled -boolean NO && killall Dock
 这时可以打开 System Preferences，点开 Accessibility > Display，勾上 Reduce transparency：这会让一些透明的部件（例如菜单栏）的渲染压力减小。可能有些效果。
 
 说明：WindowServer 是 macOS 的核心进程，负责程序的图形化显示，你在屏幕上看到的内容，都是 WindowServer 作用的结果。所以，这个进程是安全的。
+
+### 如果用了战网，Battle.net，在卸载后有一个agent app，启动台删除不掉，应用程序里面没有，怎么办呢？
+
+解决方法：找到这个 app 所在位置，可以通过搜索得到，或者在用户->共享->找到这个文件夹 Battle.net，删除掉即可，这里需要输入管理员密码。
