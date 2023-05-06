@@ -35,6 +35,13 @@ postmanlabs/newman: Newman is a command-line collection runner for Postman
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-d103f87d9e37c7e9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
+## 使用记录
+
+windows 使用 curl 请求数据。
+
+1. 从浏览器中拷贝 curl bash 内容，由于只适用于 linux 所以需要进一步进行加工。
+2. 单引号转成双引号；\ 转成 ^；百分号需要进行转义。
+
 ## 问题总结
 
 **在 postman 的 Collection 请求方式为 Bearer Token 报错 异常信息: `Unable to read JSON value: "`**
