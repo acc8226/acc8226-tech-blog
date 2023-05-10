@@ -99,6 +99,10 @@ defaults write com.apple.dashboard mcx-disabled -boolean NO && killall Dock
 
 它包含个人信息, 导出的时候记得删除。当然不删除的话感觉也作用不大。
 
+### .WEBLOC 文件怎么打开
+
+WEBLOC 文件是由 macOS 系统中的网页浏览器（如 Apple Safari 或 Google Chrome）生成的网页快捷方式。它包含网页的 URL，双击该文件后，直接访问它指定网站。WEBLOC 文件是通过拖拽浏览器地址栏左侧的网址图标到桌面或者硬盘来创建的。WEBLOC 文件类似 .URL 网址快捷方式。
+
 ### 查看本机 IP
 
 输入命令 `ifconfig en0` 查看本机 IP(最后是数字0,而不是字母O)

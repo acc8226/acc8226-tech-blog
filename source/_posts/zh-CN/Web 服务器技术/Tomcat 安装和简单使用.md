@@ -68,8 +68,8 @@ At least one of these environment variable is needed to run this program
 >
 > 解决办法: CentOS 下安装 open-jre8 即可 `su -c "yum install java-1.8.0-openjdk-devel"`
 
-> **mac下查看自己的IP**
-终端输入`ifconfig | grep "inet " | grep -v 127.0.0.1` 代码 显示 ip 地址
+> **mac下查看自己的 IP**
+终端输入 `ifconfig | grep "inet " | grep -v 127.0.0.1` 代码 显示 ip 地址
 或者 `ifconfig en0`
 
 ## 常用操作
@@ -91,7 +91,7 @@ config/logging.properties
 win 控制台乱码的问题, 查看默认编码, 是否没有设置 UTF-8 替换为 gb2312 编码
 
 **修改端口号**
-服务器的默认端口是 8080,也可以将其改成自定义的端口,conf 目录下的 server.xml 文件,将以下语句的 port 值 8080 改为自定义的端口号:(例如 8081)
+服务器的默认端口是 8080,也可以将其改成自定义的端口，conf 目录下的 server.xml 文件，将以下语句的 port 值 8080 改为自定义的端口号:(例如 8081)
 
 ```xml
 <Connector port="8081" protocol="HTTP/1.1"
