@@ -845,8 +845,8 @@ normalize-path@^3.0.0, normalize-path@~3.0.0:
   resolved "https://registry.npmmirror.com/normalize-path/-/normalize-path-3.0.0.tgz"
 
 nunjucks@^3.0.0, nunjucks@^3.1.6, nunjucks@^3.2.2, nunjucks@^3.2.3:
-  version "3.2.3"
-  resolved "https://registry.npmmirror.com/nunjucks/-/nunjucks-3.2.3.tgz"
+  version "3.2.4"
+  resolved "https://registry.yarnpkg.com/nunjucks/-/nunjucks-3.2.4.tgz#f0878eef528ce7b0aa35d67cc6898635fd74649e"
   dependencies:
     a-sync-waterfall "^1.0.0"
     asap "^2.0.3"
