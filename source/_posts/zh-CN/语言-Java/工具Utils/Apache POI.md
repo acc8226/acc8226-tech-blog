@@ -14,8 +14,8 @@ Apache POI 的组件
 Apache POI 包含用于 MS-Office 的所有 OLE2 复合文档的类和方法。 此 API 的组件列表如下:
 
 * POIFS(可疑混淆执行文件系统):此组件是所有其他 POI 元素的基本因素。 它用于显式读取不同的文件。
-* HSSF(可怕的SpreadSheet格式):用于读取和写入 .xls 格式的 MS-Excel 文件。
-* XSSF(XML SpreadSheet格式):用于 MS-Excel 的 .xlsx 文件格式。
+* HSSF(可怕的 SpreadSheet 格式):用于读取和写入 .xls 格式的 MS-Excel 文件。
+* XSSF(XML SpreadSheet 格式):用于 MS-Excel 的 .xlsx 文件格式。
 * HPSF(可怕属性集格式):用于提取 MS-Office 文件的属性集。
 * HWPF(可怕字处理器格式):用于读取和写入 MS-Word 的.doc扩展文件。
 * XWPF(XML 字处理器格式):用于读取和写入 MS-Word 的扩展文件 .docx。
@@ -53,8 +53,8 @@ Poi 之Word 文档结构介绍
 
 之后和正文段落一样。
 
-注：表格的一格相当于一个完整的 docx 文档，只是没有页眉和页脚。里面可以有表格，使用xwpfTableCell.getTables()获取，and so on
-在poi文档中段落和表格是完全分开的，如果在两个段落中有一个表格，在poi中是没办法确定表格在段落中间的。（当然除非你本来知道了，这句是废话）。只有文档的格式固定，才能正确的得到文档的结构
+注：表格的一格相当于一个完整的 docx 文档，只是没有页眉和页脚。里面可以有表格，使用 xwpfTableCell.getTables()获取，and so on
+在 poi 文档中段落和表格是完全分开的，如果在两个段落中有一个表格，在 poi 中是没办法确定表格在段落中间的。（当然除非你本来知道了，这句是废话）。只有文档的格式固定，才能正确的得到文档的结构
 
 3、poi 之 word 文档结构介绍之页眉：
 

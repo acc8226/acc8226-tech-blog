@@ -1,5 +1,5 @@
 ---
-title: Windows 批处理脚本简介
+title: Windows bat 脚本简介
 date: 2022-04-05 14:41:50
 updated: 2022-11-05 09:48:00
 categories: 脚本文件

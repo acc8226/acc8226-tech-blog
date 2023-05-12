@@ -62,10 +62,6 @@ Get-ChildItem -Path C:\Windows\x*
 
 Get-ChildItem -Path C:\Windows\[xz]*
 
-
-
-
-
 复制文件和文件夹
 
 ```powershell
@@ -92,7 +88,7 @@ Copy-Item C:\temp\test1 -Recurse C:\temp\DeleteMe
 New-Item -Path 'C:\temp\New Folder' -ItemType Directory
 ```
 
-此命令创建一个新的空文件C:\temp\New Folder\file.txt
+此命令创建一个新的空文件 C:\temp\New Folder\file.txt
 
 New-Item -Path 'C:\temp\New Folder\file.txt' -ItemType File
 

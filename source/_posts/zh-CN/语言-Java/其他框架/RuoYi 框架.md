@@ -261,7 +261,7 @@ Shiro 的认证注解处理是有内定的处理顺序的，如果有个多个�
 
 新建的 Spring Boot 项目中，一般都会引用 spring-boot-starter 或者 spring-boot-starter-web，而这两个起步依赖中都已经包含了对于 spring-boot-starter-jdbc 或 spring-boot-starter-data-jpa 的依赖。 当我们使用了这两个依赖的时候，框架会自动默认分别注入 DataSourceTransactionManager 或 JpaTransactionManager。 所以我们不需要任何额外配置就可以用 @Transactional 注解进行事务的使用。
 
-Spring 的默认的事务规则是遇到运行异常（RuntimeException）和程序错误（Error）才会回滚。如果想针对检查异常进行事务回滚，可以在 @Transactional 注解里使用 rollbackFor属性明确指定异常。
+Spring 的默认的事务规则是遇到运行异常（RuntimeException）和程序错误（Error）才会回滚。如果想针对检查异常进行事务回滚，可以在 @Transactional 注解里使用 rollbackFor 属性明确指定异常。
 
 ### 参数验证
 

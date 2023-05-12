@@ -6,7 +6,7 @@ categories:
   - linux
 ---
 
-## debain 系统
+## Debian 系统
 
 Debian 发行版本
 Debian 一直维护着至少三个发行版本：稳定版（stable），测试版（testing）和不稳定版（unstable）。

@@ -22,11 +22,11 @@ Netscape Navigator 3.0在 **1996 年 8 月 19** 发布，是支持 JavaScript �
 
 ### 新增的属性
 
-*   [Number.MAX_VALUE](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_VALUE "Number.MAX_VALUE 属性表示在 JavaScript 里所能表示的最大数值。")
-*   [Number.MIN_VALUE](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Number/MIN_VALUE "Number.MIN_VALUE 属性表示在 JavaScript 中所能表示的最小的正值。")
-*   [NaN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/NaN "全局属性 NaN 的值表示不是一个数字（Not-A-Number）。")
-*   [Number.NEGATIVE_INFINITY](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Number/NEGATIVE_INFINITY "Number.NEGATIVE_INFINITY 属性表示负无穷大。")
-*   [Number.POSITIVE_INFINITY](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Number/POSITIVE_INFINITY "Number.POSITIVE_INFINITY 属性表示正无穷大。")
+* [Number.MAX_VALUE](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_VALUE "Number.MAX_VALUE 属性表示在 JavaScript 里所能表示的最大数值。")
+* [Number.MIN_VALUE](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Number/MIN_VALUE "Number.MIN_VALUE 属性表示在 JavaScript 中所能表示的最小的正值。")
+* [NaN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/NaN "全局属性 NaN 的值表示不是一个数字（Not-A-Number）。")
+* [Number.NEGATIVE_INFINITY](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Number/NEGATIVE_INFINITY "Number.NEGATIVE_INFINITY 属性表示负无穷大。")
+* [Number.POSITIVE_INFINITY](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Number/POSITIVE_INFINITY "Number.POSITIVE_INFINITY 属性表示正无穷大。")
 
 ### 新增的方法
 
@@ -47,13 +47,13 @@ Netscape Navigator 3.0在 **1996 年 8 月 19** 发布，是支持 JavaScript �
 
 ### 1.1 修改的功能
 
-*   “对象删除”：你可通过以设置对象的引用为null来删除一个对象。
-*   增加了对象的构造函数和原型属性
-*   [eval()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval) 现在是每一个对象的方法（之前是一个内置函数），它能够在指定对象的上下文执行一个JavaScript代码的字符串。
-*   [Math.random()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)现在能在所有平台上工作。
-*   [toString()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString)：新增了基数作为参数，用于指定表示数值时的进制。
-*   [isNaN()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN) 现在能在所有平台上工作。 (不再是只能在Unix下工作)
-*   当[parseFloat()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat) 和 [parseint()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt)指定的字符串（参数）的第一个字符无法转换为数字时，在所有平台都会返回NaN。（在这之前发布的版本里，在Solaris和Irix下它们会返回NaN，而在其他平台会返回0）
+* “对象删除”：你可通过以设置对象的引用为null来删除一个对象。
+* 增加了对象的构造函数和原型属性
+* [eval()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval) 现在是每一个对象的方法（之前是一个内置函数），它能够在指定对象的上下文执行一个JavaScript代码的字符串。
+* [Math.random()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)现在能在所有平台上工作。
+* [toString()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString)：新增了基数作为参数，用于指定表示数值时的进制。
+* [isNaN()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN) 现在能在所有平台上工作。 (不再是只能在Unix下工作)
+* 当[parseFloat()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat) 和 [parseint()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt)指定的字符串（参数）的第一个字符无法转换为数字时，在所有平台都会返回NaN。（在这之前发布的版本里，在Solaris和Irix下它们会返回NaN，而在其他平台会返回0）
 
 ## JavaScript 1.2
 
@@ -63,9 +63,9 @@ Netscape Navigator 4.0在**1997年6月11日**发布，它是是支持JavaScript�
 
 ### 新增的对象
 
-*   可以使用简明的字面记号来创建对象。（灵感来自Python 1.x的dictionary的简明语法）
-*   数字也可以使用简明的字面记号来创建。（灵感来自Python 1.x的字list的简明语法）
-*   [arguments](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope/arguments)
+* 可以使用简明的字面记号来创建对象。（灵感来自Python 1.x的dictionary的简明语法）
+* 数字也可以使用简明的字面记号来创建。（灵感来自Python 1.x的字list的简明语法）
+* [arguments](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope/arguments)
 
 ### 新增的属性
 

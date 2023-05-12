@@ -1,5 +1,5 @@
 ---
-title: 了解 arch 系
+title: 了解 ArchLinux 系
 date: 2019-03-17 17:27:17
 updated: 2022-11-05 13:45:00
 categories:

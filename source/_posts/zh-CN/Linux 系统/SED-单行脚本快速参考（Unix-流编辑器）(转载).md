@@ -11,12 +11,12 @@ SED单行脚本快速参考（Unix 流编辑器）
    <http://www.pement.org/sed/sed1line.txt>
 
 其他语言版本：
-  中文          - http://sed.sourceforge.net/sed1line_zh-CN.html
-  捷克语        - http://sed.sourceforge.net/sed1line_cz.html
-  荷语          - http://sed.sourceforge.net/sed1line_nl.html
-  法语          - http://sed.sourceforge.net/sed1line_fr.html
-  德语          - http://sed.sourceforge.net/sed1line_de.html
-  葡语          - http://sed.sourceforge.net/sed1line_pt-BR.html
+  中文          - <http://sed.sourceforge.net/sed1line_zh-CN.html>
+  捷克语        - <http://sed.sourceforge.net/sed1line_cz.html>
+  荷语          - <http://sed.sourceforge.net/sed1line_nl.html>
+  法语          - <http://sed.sourceforge.net/sed1line_fr.html>
+  德语          - <http://sed.sourceforge.net/sed1line_de.html>
+  葡语          - <http://sed.sourceforge.net/sed1line_pt-BR.html>
 
 文本间隔
 
@@ -109,7 +109,7 @@ SED单行脚本快速参考（Unix 流编辑器）
  # 以 79 个字符为宽度，将所有文本右对齐
  sed -e :a -e 's/^.\{1,78\}$/ &/;ta'  # 78个字符外加最后的一个空格
 
- # 以79个字符为宽度，使所有文本居中。在方法1中，为了让文本居中每一行的前
+ # 以 79 个字符为宽度，使所有文本居中。在方法1中，为了让文本居中每一行的前
  # 头和后头都填充了空格。 在方法2中，在居中文本的过程中只在文本的前面填充
  # 空格，并且最终这些空格将有一半会被删除。此外每一行的后头并未填充空格。
  sed  -e :a -e 's/^.\{1,77\}$/ & /;ta'                     # 方法1
@@ -128,7 +128,7 @@ SED单行脚本快速参考（Unix 流编辑器）
  # 将“foo”替换成“bar”，并且只在行中未出现字串“baz”的情况下替换
  sed '/baz/!s/foo/bar/g'
 
- # 不管是“scarlet”“ruby”还是“puce”，一律换成“red”
+ # 不管是 “scarlet”“ruby”还是“puce”，一律换成 “red”
  sed 's/scarlet/red/g;s/ruby/red/g;s/puce/red/g'  #对多数的sed都有效
  gsed 's/scarlet\|ruby\|puce/red/g'               # 只对GNU sed有效
 
@@ -220,10 +220,10 @@ SED单行脚本快速参考（Unix 流编辑器）
  # HHsed v1.5 必须在“x;”后加入“G;”，接下来的3个脚本都是这样
  sed -e '/./{H;$!d;}' -e 'x;/AAA/!d;'
 
- # 显示包含“AAA”“BBB”和“CCC”三个字串的段落 （任意次序）
+ # 显示包含“AAA”“BBB”和“CCC” 三个字串的段落 （任意次序）
  sed -e '/./{H;$!d;}' -e 'x;/AAA/!d;/BBB/!d;/CCC/!d'
 
- # 显示包含“AAA”、“BBB”、“CCC”三者中任一字串的段落 （任意次序）
+ # 显示包含 “AAA”、“BBB”、“CCC” 三者中任一字串的段落 （任意次序）
  sed -e '/./{H;$!d;}' -e 'x;/AAA/b' -e '/BBB/b' -e '/CCC/b' -e d
  gsed '/./{H;$!d;};x;/AAA\|BBB\|CCC/b;d'         # 只对GNU sed有效
 
@@ -321,10 +321,10 @@ SED单行脚本快速参考（Unix 流编辑器）
 --------
 
 ```sh
- # 移除手册页（man page）中的nroff标记。在Unix System V或bash shell下使
+ # 移除手册页（man page）中的 nroff 标记。在 Unix System V 或 bash shell 下使
  # 用'echo'命令时可能需要加上 -e 选项。
- sed "s/.`echo \\\b`//g"    # 外层的双括号是必须的（Unix环境）
- sed 's/.^H//g'             # 在bash或tcsh中, 按 Ctrl-V 再按 Ctrl-H
+ sed "s/.`echo \\\b`//g"    # 外层的双括号是必须的（Unix 环境）
+ sed 's/.^H//g'             # 在 bash 或 tcsh 中, 按 Ctrl-V 再按 Ctrl-H
  sed 's/.\x08//g'           # sed 1.5，GNU sed，ssed所使用的十六进制的表示方法
 
  # 提取新闻组或 e-mail 的邮件头

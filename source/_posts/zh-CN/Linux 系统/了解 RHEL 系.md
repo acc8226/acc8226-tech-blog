@@ -46,7 +46,7 @@ cat /etc/centos-release
 cat /etc/redhat-release
 ```
 
-## yum 命令
+### yum 命令
 
 卸载包
 
@@ -91,15 +91,14 @@ yum install -y mariadb-server mariadb
 登录 mariadb
 `mysql -u root -pQcloudLabPASSWORD`
 
-
-## rpm 命令
+### rpm 命令
 
 (01)安装一个包：# rpm -ivh
 (02) 升级一个包：# rpm -Uvh
 (03) 移走一个包：# rpm -e
 (04) 安装参数：
       --force 即使覆盖属于其它包的文件也强迫安装
-      --nodeps 如果该RPM包的安装依赖其它包，即使其它包没装，也强迫安装。
+      --nodeps 如果该 RPM 包的安装依赖其它包，即使其它包没装，也强迫安装。
 (05) 查询一个包是否被安装：# rpm -q < rpm package name>
 (06) 得到被安装的包的信息：# rpm -qi < rpm package name>
 (07) 列出该包中有哪些文件：# rpm -ql < rpm package name>

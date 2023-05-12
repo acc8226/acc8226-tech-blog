@@ -256,7 +256,7 @@ docker pull mysql:5.7
 
 docker run -itd --name mysql-test -p 3306:3306 -e MYSQL_ROOT_PASSWORD=feitangfei mysql:5.7
 
-# 5.7的这个版本竟然 -u 和 -p 之间不能加空格，我也是醉了
+# 5.7的这个版本竟然 -u 和 -p 之间不能加空格
 docker exec -it mysql-test mysql -uroot -pfeitangfei
 ```
 

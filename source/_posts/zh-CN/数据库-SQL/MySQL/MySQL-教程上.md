@@ -136,7 +136,7 @@ DML(数据操作语言, 它是对表记录的操作(增 删 改)。
 简单例句：
 
 ```sql
-INSERT INTO table_name VALUES (value1, value2,...valueN );
+INSERT INTO table_name VALUES (value1, value2, ...valueN );
 
 UPDATE TABLE xxx set key1 = value1, key2 = value2 [where 子句]
 
@@ -167,7 +167,7 @@ INSERT SELECT 中 SELECT 语句可包含 WHERE 子句以过滤插入的数据。
 insert ignore into
 ```
 
-当插入数据时，如出现错误时，如重复数据，将不返回错误，只以警告形式返回。所以使用ignore 请确保语句本身没有问题，否则也会被忽略掉。例如：
+当插入数据时，如出现错误时，如重复数据，将不返回错误，只以警告形式返回。所以使用 ignore 请确保语句本身没有问题，否则也会被忽略掉。例如：
 
 ```sql
 INSERT IGNORE INTO books (name)
@@ -276,7 +276,7 @@ CREATE TABLE IF NOT EXISTS `runoob`(
 
 > 覆盖AUTO_INCREMENT 如果一个列被指定为 AUTO_INCREMENT，则它需要使用特殊的值吗？你可以简单地在 INSERT 语句中指定一个值，只要它是唯一的（至今尚未使用过）即可，该值将被用来替代自动生成的值。后续的增量将开始使用该手工插入的值。
 > 确定 AUTO_INCREMENT 值 让 MySQL 生成（通过自动增量）主键的一个缺点是你不知道这些值都是谁。
-> 考虑这个场景：你正在增加一个新订单。这要求在 orders 表中创建一行，然后在 orderitems 表中对订购的每项物品创建一行。order_num 在 orderitems 表中与订单细节一起存储。这就是为什么orders表和orderitems表为相互关联的表的原因。这显然要求你在插入 orders 行之后，插入 orderitems 行之前知道生成的order_num。
+> 考虑这个场景：你正在增加一个新订单。这要求在 orders 表中创建一行，然后在 orderitems 表中对订购的每项物品创建一行。order_num 在 orderitems 表中与订单细节一起存储。这就是为什么 orders 表和 orderitems 表为相互关联的表的原因。这显然要求你在插入 orders 行之后，插入 orderitems 行之前知道生成的order_num。
 >
 > 那么，如何在使用AUTO_INCREMENT列时获得这个值呢？可使用last_insert_id()函数获得这个值，如下所示：SELECT_last_insert_id()
 >

@@ -94,7 +94,7 @@ adb uninstall com.example.xxx
 
 ## 遇到的问题
 
-在应用商店安装 Windows Subsystem for Linux 之后 wsl报0x80040326
+在应用商店安装 Windows Subsystem for Linux 之后 wsl 报 0x80040326
 
 我卸载该应用就好了。
 

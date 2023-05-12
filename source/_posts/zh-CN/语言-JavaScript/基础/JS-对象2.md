@@ -39,6 +39,7 @@ var person2 = Object.create(person1);
 > **注意**：没有官方的方法用于直接访问一个对象的原型对象——原型链中的“连接”被定义在一个内部属性中，在 JavaScript 语言标准中用 `[[prototype]]` 表示（参见 [ECMAScript](https://developer.mozilla.org/en-US/docs/Glossary/ECMAScript "ECMAScript: ECMAScript is the scripting language on which JavaScript is based. Ecma International is in charge of standardizing ECMAScript.")）。然而，大多数现代浏览器还是提供了一个名为 `[__proto__](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/proto)` （前后各有2个下划线）的属性，其包含了对象的原型。你可以尝试输入 `person1.__proto__` 和 `person1.__proto__.__proto__`，看看代码中的原型链是什么样的！
 
 ### prototype 属性：继承成员被定义的地方
+
 那么，那些继承的属性和方法在哪儿定义呢？如果你查看 `[Object](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object)` 参考页，会发现左侧列出许多属性和方法——大大超过我们在 `person1` 对象中看到的继承成员的数量。某些属性或方法被继承了，而另一些没有——为什么呢？
 
 原因在于，继承的属性和方法是定义在 `prototype` 属性之上的（你可以称之为子命名空间 (sub namespace) ）——那些以 `Object.prototype.` 开头的属性，而非仅仅以 `Object.` 开头的属性。`prototype` 属性的值是一个对象，我们希望被原型链下游的对象继承的属性和方法，都被储存在其中。
@@ -93,38 +94,39 @@ js的原型式的继承
 
 ```js
 function Person(first, last, age, gender, interests) {
-        this.name = {
-          first,
-          last
-        };
-        this.age = age;
-        this.gender = gender;
-        this.interests = interests;
-      };
+    this.name = {
+        first,
+        last
+    };
+    this.age = age;
+    this.gender = gender;
+    this.interests = interests;
+    };
 ```
 
 设置 Student() 的原型和构造器引用
 
 ```js
- // Student class!
-      function Student(first, last, age, gender, interests) {
-        Person.call(this, first, last, age, gender, interests);
-      }
+// Student class!
+    function Student(first, last, age, gender, interests) {
+    Person.call(this, first, last, age, gender, interests);
+    }
 
-      Student.prototype = Object.create(Person.prototype);
-      Student.prototype.constructor = Student;
+    Student.prototype = Object.create(Person.prototype);
+    Student.prototype.constructor = Student;
 
-      Student.prototype.greeting = function() {
+    Student.prototype.greeting = function() {
 
-        alert('Yo! I\'m ' + this.name.first + '.');
-      };
+    alert('Yo! I\'m ' + this.name.first + '.');
+    };
 
-      let student1 = new Student('Liz', 'Sheppard', 17, 'female', ['ninjitsu', 'air cadets']);
+    let student1 = new Student('Liz', 'Sheppard', 17, 'female', ['ninjitsu', 'air cadets']);
 ```
 
 ### 对象成员总结
+
 总结一下，您应该基本了解了以下三种属性或者方法：
 
-1.  那些定义在构造器函数中的、用于给予对象实例的。这些都很容易发现 - 在您自己的代码中，它们是构造函数中使用`this.x = x`类型的行；在内置的浏览器代码中，它们是可用于对象实例的成员（通常通过使用`new`关键字调用构造函数来创建，例如`var myInstance = new myConstructor()`）。
-2.  那些直接在构造函数上定义、仅在构造函数上可用的。这些通常仅在内置的浏览器对象中可用，并通过被直接链接到构造函数而不是实例来识别。 例如`[Object.keys()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/keys)`。
-3.  那些在构造函数原型上定义、由所有实例和对象类继承的。这些包括在构造函数的原型属性上定义的任何成员，如`myConstructor.prototype.x()`。
+1. 那些定义在构造器函数中的、用于给予对象实例的。这些都很容易发现 - 在您自己的代码中，它们是构造函数中使用`this.x = x`类型的行；在内置的浏览器代码中，它们是可用于对象实例的成员（通常通过使用`new`关键字调用构造函数来创建，例如`var myInstance = new myConstructor()`）。
+2. 那些直接在构造函数上定义、仅在构造函数上可用的。这些通常仅在内置的浏览器对象中可用，并通过被直接链接到构造函数而不是实例来识别。 例如`[Object.keys()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/keys)`。
+3. 那些在构造函数原型上定义、由所有实例和对象类继承的。这些包括在构造函数的原型属性上定义的任何成员，如`myConstructor.prototype.x()`。
