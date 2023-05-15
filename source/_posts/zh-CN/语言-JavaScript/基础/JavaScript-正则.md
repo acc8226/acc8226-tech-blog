@@ -1,5 +1,5 @@
 ---
-title: JavaScript-正则
+title: JavaScript 正则
 categories:
   - 语言
   - JavaScript

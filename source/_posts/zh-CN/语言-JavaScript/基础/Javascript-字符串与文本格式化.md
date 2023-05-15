@@ -84,7 +84,7 @@ console.log(`Fifteen is ${a + b} and\nnot ${2 * a + b}.`);
 
 ### 日期和时间格式化
 
-[DateTimeFormat](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat "交互示例的源代码存储在 GitHub 资源库。如果你愿意分布交互示例，请复制https://github.com/mdn/interactive-examples，并向我们发送一个pull请求。") 对象在日期和时间的格式化方面很有用. 下面的代码把一个日期格式化为美式英语格式. (不同时区结果不同.)
+[DateTimeFormat](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat "交互示例的源代码存储在 GitHub 资源库。如果你愿意分布交互示例，请复制 https://github.com/mdn/interactive-examples，并向我们发送一个pull请求。") 对象在日期和时间的格式化方面很有用. 下面的代码把一个日期格式化为美式英语格式. (不同时区结果不同.)
 
 ```js
 var msPerDay = 24 * 60 * 60 * 1000;
@@ -120,4 +120,4 @@ console.log(hanDecimalRMBInChina.format(1314.25)); // ￥ 一,三一四.二五
 
 ### 定序
 
-[Collator](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Collator "Intl.Collator 是用于语言敏感字符串比较的 collators构造函数。") 对象在字符串比较和排序方面很有用.
+[Collator](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Collator "Intl.Collator 是用于语言敏感字符串比较的 collators 构造函数。") 对象在字符串比较和排序方面很有用.

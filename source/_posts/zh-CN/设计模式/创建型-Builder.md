@@ -26,81 +26,81 @@
 package build;
 
 public class ResourcePoolConfig2 {
-	private String name;
-	private int maxTotal;
-	private int maxIdle;
-	private int minIdle;
+  private String name;
+  private int maxTotal;
+  private int maxIdle;
+  private int minIdle;
 
-	// 私有化构造
-	private ResourcePoolConfig2(Builder builder) {
-		this.name = builder.name;
-		this.maxTotal = builder.maxTotal;
-		this.maxIdle = builder.maxIdle;
-		this.minIdle = builder.minIdle;
-	}
+  // 私有化构造
+  private ResourcePoolConfig2(Builder builder) {
+    this.name = builder.name;
+    this.maxTotal = builder.maxTotal;
+    this.maxIdle = builder.maxIdle;
+    this.minIdle = builder.minIdle;
+  }
 
-	public static class Builder {
+  public static class Builder {
 
-		private static final int DEFAULT_MAX_TOTAL = 8;
-		private static final int DEFAULT_MAX_IDLE = 8;
-		private static final int DEFAULT_MIN_IDLE = 0;
+    private static final int DEFAULT_MAX_TOTAL = 8;
+    private static final int DEFAULT_MAX_IDLE = 8;
+    private static final int DEFAULT_MIN_IDLE = 0;
 
-		private String name;
-		private Integer maxTotal = DEFAULT_MAX_TOTAL;
-		private Integer maxIdle = DEFAULT_MAX_IDLE;
-		private Integer minIdle = DEFAULT_MIN_IDLE;
+    private String name;
+    private Integer maxTotal = DEFAULT_MAX_TOTAL;
+    private Integer maxIdle = DEFAULT_MAX_IDLE;
+    private Integer minIdle = DEFAULT_MIN_IDLE;
 
-		public Builder setName(String name) {
-			this.name = name;
-			return this;
-		}
+    public Builder setName(String name) {
+      this.name = name;
+      return this;
+    }
 
-		public Builder setMaxTotal(Integer maxTotal) {
-			this.maxTotal = maxTotal;
-			return this;
-		}
+    public Builder setMaxTotal(Integer maxTotal) {
+      this.maxTotal = maxTotal;
+      return this;
+    }
 
-		public Builder setMaxIdle(Integer maxIdle) {
-			this.maxIdle = maxIdle;
-			return this;
-		}
+    public Builder setMaxIdle(Integer maxIdle) {
+      this.maxIdle = maxIdle;
+      return this;
+    }
 
-		public Builder setMinIdle(Integer minIdle) {
-			this.minIdle = minIdle;
-			return this;
-		}
+    public Builder setMinIdle(Integer minIdle) {
+      this.minIdle = minIdle;
+      return this;
+    }
 
-		public ResourcePoolConfig2 build() {
-			// 校验逻辑放到这里来做，包括必填项校验、依赖关系校验、约束条件校验等
-			if (null == name) {
-				throw new IllegalArgumentException("name should not be empty.");
-			}
-			if (maxTotal != null) {
-				if (maxTotal <= 0) {
-					throw new IllegalArgumentException("maxTotal should be positive.");
-				}
-			}
-			if (maxIdle != null) {
-				if (maxIdle < 0) {
-					throw new IllegalArgumentException("maxIdle should not be negative.");
-				}
-			}
-			if (minIdle != null) {
-				if (minIdle < 0) {
-					throw new IllegalArgumentException("minIdle should not be negative.");
-				}
-			}
-			if (maxIdle > maxTotal) {
-				throw new IllegalArgumentException("...");
-			}
-			if (minIdle > maxTotal || minIdle > maxIdle) {
-				throw new IllegalArgumentException("...");
-			}
+    public ResourcePoolConfig2 build() {
+      // 校验逻辑放到这里来做，包括必填项校验、依赖关系校验、约束条件校验等
+      if (null == name) {
+        throw new IllegalArgumentException("name should not be empty.");
+      }
+      if (maxTotal != null) {
+        if (maxTotal <= 0) {
+          throw new IllegalArgumentException("maxTotal should be positive.");
+        }
+      }
+      if (maxIdle != null) {
+        if (maxIdle < 0) {
+          throw new IllegalArgumentException("maxIdle should not be negative.");
+        }
+      }
+      if (minIdle != null) {
+        if (minIdle < 0) {
+          throw new IllegalArgumentException("minIdle should not be negative.");
+        }
+      }
+      if (maxIdle > maxTotal) {
+        throw new IllegalArgumentException("...");
+      }
+      if (minIdle > maxTotal || minIdle > maxIdle) {
+        throw new IllegalArgumentException("...");
+      }
 
-			return new ResourcePoolConfig2(this);
-		}
+      return new ResourcePoolConfig2(this);
+    }
 
-	}
+  }
 
 }
 ```

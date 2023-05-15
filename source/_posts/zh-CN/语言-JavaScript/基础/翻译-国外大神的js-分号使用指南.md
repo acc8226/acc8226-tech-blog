@@ -48,7 +48,8 @@ function (arg) { /*do this*/ } // NO semicolon after }
 do {...} while (...);
 ```
 
-2. 在 if、 for、 while 或 switch 语句的圆括号后面
+2\. 在 if、 for、 while 或 switch 语句的圆括号后面
+
 这是一个非常糟糕的主意:
 
 ```js

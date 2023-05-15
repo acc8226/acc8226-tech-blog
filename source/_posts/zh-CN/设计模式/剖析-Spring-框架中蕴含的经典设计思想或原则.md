@@ -32,7 +32,7 @@ Spring Boot 是基于 Spring Framework 开发的。它更加专注于微服务�
 
 在 Google Guava 源码讲解中，我们讲到开发通用功能模块的一些比较普适的开发思想，比如产品意识、服务意识、代码质量意识、不要重复早轮子等。今天，我们剖析一下 Spring 框架背后的一些经典设计思想（或开发技巧）。这些设计思想并非 Spring 独有，都比较通用，能借鉴应用在很多通用功能模块的设计开发中。这也是我们学习 Spring 源码的价值所在。
 
-**1. 约定优于配置**
+**1\. 约定优于配置**
 
 在使用 Spring 开发的项目中，配置往往会比较复杂、繁琐。比如，我们利用 Spring MVC 来开发 Web 应用，需要配置每个 Controller 类以及 Controller 类中的接口对应的 URL。
 
@@ -42,7 +42,7 @@ Spring Boot 是基于 Spring Framework 开发的。它更加专注于微服务�
 
 实际上，约定优于配置，很好地体现了“二八法则”。在平时的项目开发中，80% 的配置使用默认配置就可以了，只有 20% 的配置必须用户显式地去设置。所以，基于约定来配置，在没有牺牲配置灵活性的前提下，节省了我们大量编写配置的时间，省掉了很多不动脑子的纯体力劳动，提高了开发效率。除此之外，基于相同的约定来做开发，也减少了项目的学习成本和维护成本。
 
-**2. 低侵入、松耦合**
+**2\. 低侵入、松耦合**
 
 框架的侵入性是衡量框架好坏的重要指标。所谓低侵入指的是，框架代码很少耦合在业务代码中。低侵入意味着，当我们要替换一个框架的时候，对原有的业务代码改动会很少。相反，如果一个框架是高度侵入的，代码高度侵入到业务代码中，那替换成另一个框架的成本将非常高，甚至几乎不可能。这也是一些长期维护的老项目，使用的框架、技术比较老旧，又无法更新的一个很重要的原因。
 
@@ -50,7 +50,7 @@ Spring 提供的 IOC 容器，在不需要 Bean 继承任何父类或者实现�
 
 除此之外，Spring 提供的 AOP 功能，也体现了低侵入的特性。在项目中，对于非业务功能，比如请求日志、数据采点、安全校验、事务等等，我们没必要将它们侵入进业务代码中。因为一旦侵入，这些代码将分散在各个业务代码中，删除、修改的成本就变得很高。而基于 AOP 这种开发模式，将非业务代码集中放到切面中，删除、修改的成本就变得很低了。
 
-**3. 模块化、轻量级**
+**3\. 模块化、轻量级**
 
 我们知道，十几年前，EJB 是 Java 企业级应用的主流开发框架。但是，它非常臃肿、复杂，侵入性、耦合性高，开发、维护和学习成本都不低。所以，为了替代笨重的 EJB，Rod Johnson 开发了一套开源的 Interface21 框架，提供了最基本的 IOC 功能。实际上，Interface21 框架就是 Spring 框架的前身。
 
@@ -102,7 +102,7 @@ public class DemoListener implements ApplicationListener<DemoEvent> {
   }
 }
 
-// Publisher发送者
+// Publisher 发送者
 @Component
 public class DemoPublisher {
   @Autowired
@@ -166,12 +166,12 @@ public interface ApplicationListener<E extends ApplicationEvent> extends EventLi
 ```java
 public abstract class AbstractApplicationContext extends ... {
   private final Set<ApplicationListener<?>> applicationListeners;
-  
+
   public AbstractApplicationContext() {
     this.applicationListeners = new LinkedHashSet();
     //...
   }
-  
+
   public void publishEvent(ApplicationEvent event) {
     this.publishEvent(event, (ResolvableType)null);
   }
@@ -207,25 +207,25 @@ public abstract class AbstractApplicationContext extends ... {
       }
     }
   }
-  
+
   public void addApplicationListener(ApplicationListener<?> listener) {
     Assert.notNull(listener, "ApplicationListener must not be null");
     if (this.applicationEventMulticaster != null) {
     this.applicationEventMulticaster.addApplicationListener(listener);
     } else {
       this.applicationListeners.add(listener);
-    }  
+    }
   }
-  
+
   public Collection<ApplicationListener<?>> getApplicationListeners() {
     return this.applicationListeners;
   }
-  
+
   protected void registerListeners() {
     Iterator var1 = this.getApplicationListeners().iterator();
 
     while(var1.hasNext()) {
-      ApplicationListener<?> listener = (ApplicationListener)var1.next();    
+      ApplicationListener<?> listener = (ApplicationListener)var1.next();
       this.getApplicationEventMulticaster().addApplicationListener(listener);
     }
 
@@ -294,7 +294,7 @@ Spring Bean 的创建过程，可以大致分为两大步：对象的创建和�
 
 public class DemoClass {
   //...
-  
+
   public void initDemo() {
     //...初始化..
   }
@@ -312,7 +312,7 @@ Spring 提供了另外一个定义初始化函数的方法，那就是让类实�
 public class DemoClass implements InitializingBean{
   @Override
   public void afterPropertiesSet() throws Exception {
-    //...初始化...      
+    //...初始化...
   }
 }
 
@@ -364,10 +364,10 @@ public interface BeanPostProcessor {
 public class DemoController {
     @RequestMapping("/employname")
     public ModelAndView getEmployeeName() {
-        ModelAndView model = new ModelAndView("Greeting");        
-        model.addObject("message", "Dinesh");       
-        return model; 
-    }  
+        ModelAndView model = new ModelAndView("Greeting");
+        model.addObject("message", "Dinesh");
+        return model;
+    }
 }
 
 // 方法二：实现Controller接口 + xml配置文件:配置DemoController与URL的对应关系
@@ -386,7 +386,7 @@ public class DemoServlet extends HttpServlet {
   protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
     this.doPost(req, resp);
   }
-  
+
   @Override
   protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
     resp.getWriter().write("Hello World.");
@@ -667,7 +667,7 @@ public class TransactionAwareCacheDecorator implements Cache {
       this.targetCache.put(key, value);
     }
   }
-  
+
   public ValueWrapper putIfAbsent(Object key, Object value) {
     return this.targetCache.putIfAbsent(key, value);
   }
@@ -708,13 +708,13 @@ public class TransactionAwareCacheDecorator implements Cache {
 ```java
 public class StudentFactory {
   private static Map<Long, Student> students = new HashMap<>();
-  
+
   static{
     map.put(1, new Student(1,"wang"));
     map.put(2, new Student(2,"zheng"));
     map.put(3, new Student(3,"xzg"));
   }
- 
+
   public static Student getStudent(long id){
     return students.get(id);
   }
@@ -722,7 +722,7 @@ public class StudentFactory {
 
 // 通过工厂方法getStudent(2)来创建BeanId="zheng""的Bean
 <bean id="zheng" class="com.xzg.cd.StudentFactory" factory-method="getStudent">
-    <constructor-arg value="2"></constructor-arg>           
+    <constructor-arg value="2"></constructor-arg>
 </bean>
 ```
 

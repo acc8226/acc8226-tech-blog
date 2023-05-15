@@ -397,7 +397,7 @@ public class User
 FasterXML Jackson 学习笔记
 <https://www.jianshu.com/p/4bd355715419>
 
-Jackson注解 @JsonFormat_徐海兴的专栏-CSDN 博客
+Jackson 注解 @JsonFormat_徐海兴的专栏-CSDN 博客
 <https://blog.csdn.net/u012326462/article/details/83019681>
 
 《轻松学习 Jackson》教程 - 996 极客教程
