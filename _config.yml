@@ -3,8 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: acc8226
-subtitle: 的博客
+title: 
+subtitle: 'acc8226 的博客'
 description: Stay Simple.
 keywords: blog
 author: acc8226
@@ -16,12 +16,16 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://acc8226.netlify.app
+url: https://acc8226.github.io/
 # 永久链接设置为 | hash of filename (same as :title) and date (12-hexadecimal)
 permalink: :lang/:hash/
+# 永久链接中各部分的默认值	
 permalink_defaults:
+# 改写 permalink 的值来美化 URL	
 pretty_urls:
+  # 是否在永久链接中保留尾部的 index.html，设置为 false 时去除	
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
+  # 是否在永久链接中保留尾部的 .html, 设置为 false 时去除 (对尾部的 index.html无效)	
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
 
 # Directory
