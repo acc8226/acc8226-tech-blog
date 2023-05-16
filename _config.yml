@@ -3,15 +3,20 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 
+# 网站标题
+title: ''
+# 网站副标题
 subtitle: 'acc8226 的博客'
+# 网站描述
 description: Stay Simple.
+# 网站的关键词。支持多个关键词。
 keywords: blog
 author: acc8226
-## 中文简体 zh-CN, 可以选择更改为 en
+# 网站使用的语言。对于简体中文用户来说，使用不同的主题可能需要设置成不同的值，请参考你的主题的文档自行设置，常见的有 zh-Hans和 zh-CN。
 language:
 - zh-CN
 - en
+# 网站时区。Hexo 默认使用您电脑的时区。请参考 时区列表 进行设置，如 America/New_York, Japan, 和 UTC 。一般的，对于中国大陆地区可以使用 Asia/Shanghai。
 timezone: 'Asia/Shanghai'
 
 # URL
