@@ -29,7 +29,7 @@ permalink_defaults:
 # 改写 permalink 的值来美化 URL	
 pretty_urls:
   # 是否在永久链接中保留尾部的 index.html，设置为 false 时去除	
-  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
+  trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
   # 是否在永久链接中保留尾部的 .html, 设置为 false 时去除 (对尾部的 index.html无效)	
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
 
