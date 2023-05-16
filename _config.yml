@@ -3,8 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: kaiLee.gitee.io
-subtitle: 'acc8226 的博客'
+title: 'acc8226 的博客'
+subtitle: '有趣 有知 有爱'
 description: Stay Simple.
 keywords: blog
 author: acc8226
@@ -16,7 +16,7 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://kailee.gitee.io
+url: https://acc8226.netlify.app
 # 永久链接设置为 | hash of filename (same as :title) and date (12-hexadecimal)
 permalink: :lang/:hash/
 permalink_defaults:
