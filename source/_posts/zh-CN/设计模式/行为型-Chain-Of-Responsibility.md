@@ -1,9 +1,3 @@
----
-title: 行为型-责任链模式
-date: 2020-02-16 17:19:15
-updated: 2022-08-13 16:21:00
----
-
 ## 职责链模式的原理和实现
 
 职责链模式的英文翻译是 Chain Of Responsibility Design Pattern。在 GoF 的《设计模式》中，它是这么定义的：
