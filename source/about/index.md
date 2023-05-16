@@ -54,7 +54,7 @@ comments: false
 ## 个人账号
 
 * Github: <https://github.com/acc8226>
-* 技术博客: <https://acc8226.gitee.io>
+* 技术博客: <https://acc8226.netlify.app>
 
 ## 其他信息
 
