@@ -165,7 +165,7 @@ private Date date3;
 shap: 表示序列化后的一种类型
 
 * pattern: 表示日期的格式
-* timezone: 默认是 GMT，中国需要 GMT+8
+* timezone: 默认是 GMT，可以按需是否指定为东八区 GMT+8
 * locale: 根据位置序列化的一种格式
 
 上面三种格式序列化后的结果：
@@ -178,8 +178,55 @@ shap: 表示序列化后的一种类型
 }
 ```
 
-注：如果遇到 JsonFormat 相差8小时问题
-因为我们是东八区（北京时间）。所有需要额外设置 timezone 为 GMT+8。
+注：如果遇到 JsonFormat 相差 8 小时问题
+由于我们是东八区（北京时间）。所有需要额外设置 timezone 为 GMT+8。
+
+下面是一个复杂案例，框架会优先采用子类的 get 方法 > 基类的 get 方法 > 大于字段上的 JsonFormat 设置。
+
+```java
+public class Fly {
+    /**
+     * 创建时间
+     */
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    private Date createTime;
+
+    @JsonFormat(pattern = "yyyy-MM-dd HH")
+    public Date getCreateTime()
+    {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime)
+    {
+        this.createTime = createTime;
+    }
+}
+
+public class FlyAdmin extends Fly {
+
+    @Override
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm")
+    public Date getCreateTime() {
+        return super.getCreateTime();
+    }
+}
+
+...
+
+@PostMapping
+public Fly doFly(@RequestBody FlyAdmin flyAdmin) {
+    return flyAdmin;
+}
+```
+
+最终会输出
+
+```json
+{
+    "createTime": "2011-01-02 02:03"
+}
+```
 
 ### @JsonInclude
 

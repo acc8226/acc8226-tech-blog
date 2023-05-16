@@ -103,15 +103,15 @@ git push origin master
 
 3\. 使用 gitee page 的发布项目
 
-新建目标项目：<https://gitee.com/kaiLee/kaiLee.git>
+新建目标项目：<https://gitee.com/acc8226/acc8226.git>
 
 我这里可以使用 username + accessToken 方式 clone 等操作。提取一系列私密变量后
 
 ```text
-userName kaiLee
+userName acc8226
 accessToken 70e185c4cc2d56418e1d2c8385bca1b7
 hostName gitee.com
-repoPath kaiLee.git
+repoPath acc8226.git
 ```
 
 改造成了这样：
@@ -141,4 +141,4 @@ url: https://ipvb.gitee.io/blog
 root: /blog
 ```
 
-> 当如果是建立与自己个性地址同名的仓库，是不会存在这个问题的。比如 <https://kailee.gitee.io/> 这个地址。
+> 当如果是建立与自己个性地址同名的仓库，是不会存在这个问题的。比如 <https://acc8226.gitee.io/> 这个地址。

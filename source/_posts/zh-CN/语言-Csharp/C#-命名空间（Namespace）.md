@@ -4,19 +4,23 @@
 
 定义命名空间
 命名空间的定义是以关键字 namespace 开始，后跟命名空间的名称，如下所示：
-```
+
+```cs
 namespace namespace_name
 {
    // 代码声明
 }
 ```
+
 为了调用支持命名空间版本的函数或变量，会把命名空间的名称置于前面，如下所示：
-```
+
+```cs
 namespace_name.item_name;
 ```
 
 演示:
-```
+
+```cs
 using System;
 namespace first_space
 {
@@ -38,7 +42,7 @@ namespace second_space
          Console.WriteLine("Inside second_space");
       }
    }
-}   
+}
 
 class TestClass
 {
@@ -54,17 +58,22 @@ class TestClass
 ```
 
 ## using 关键字
+
 using 关键字表明程序使用的是给定命名空间中的名称。例如，我们在程序中使用 System 命名空间，其中定义了类 Console。我们可以只写：
-```
+
+```cs
 Console.WriteLine ("Hello there");
 ```
+
 我们可以写完全限定名称，如下：
-```
+
+```cs
 System.Console.WriteLine("Hello there");
 ```
 
-示例: 
-```
+示例:
+
+```cs
 using System;
 using first_space;
 using second_space;
@@ -88,7 +97,7 @@ namespace second_space
          Console.WriteLine("Inside second_space");
       }
    }
-}   
+}
 class TestClass
 {
    static void Main(string[] args)
@@ -103,12 +112,14 @@ class TestClass
 ```
 
 ### 嵌套命名空间
+
 命名空间可以被嵌套，即您可以在一个命名空间内定义另一个命名空间
-```
-namespace namespace_name1 
+
+```cs
+namespace namespace_name1
 {
    // 代码声明
-   namespace namespace_name2 
+   namespace namespace_name2
    {
      // 代码声明
    }

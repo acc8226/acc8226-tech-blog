@@ -11,18 +11,23 @@ C# 中使用事件机制实现线程间的通信
 **订阅器（subscriber）** 是一个接受事件并提供事件处理程序的对象。在发布器（publisher）类中的委托调用订阅器（subscriber）类中的方法（事件处理程序）。
 
 ### 声明事件（Event）
+
 在类的内部声明事件，首先必须声明该事件的委托类型。例如：
-```
+
+```cs
 public delegate void BoilerLogHandler(string status);
 ```
+
 然后，声明事件本身，使用 event 关键字：
-```
+
+```cs
 // 基于上面的委托定义事件
 public event BoilerLogHandler BoilerEventLog;
 ```
+
 上面的代码定义了一个名为 BoilerLogHandler 的委托和一个名为 BoilerEventLog 的事件，该事件在生成的时候会调用委托。
 
-```
+```cs
 namespace SimpleEvent {
     using System;
     /***********发布器类***********/
@@ -81,7 +86,8 @@ namespace SimpleEvent {
 ```
 
 案例2:
-```
+
+```cs
 using System;
 using System.IO;
 
@@ -171,9 +177,9 @@ namespace BoilerEventAppl
       {
          BoilerInfoLogger filelog = new BoilerInfoLogger("e:\\boiler.txt");
          DelegateBoilerEvent boilerEvent = new DelegateBoilerEvent();
-         boilerEvent.BoilerEventLog += new 
+         boilerEvent.BoilerEventLog += new
          DelegateBoilerEvent.BoilerLogHandler(Logger);
-         boilerEvent.BoilerEventLog += new 
+         boilerEvent.BoilerEventLog += new
          DelegateBoilerEvent.BoilerLogHandler(filelog.Logger);
          boilerEvent.LogProcess();
          Console.ReadLine();

@@ -12,7 +12,6 @@ protected internal：访问限于当前程序集或派生自包含类的类型�
 internal：同一个程序集的对象可以访问；
 private：对象本身在对象内部可以访问；
 
-
 Public 访问修饰符允许一个类将其成员变量和成员函数暴露给其他的函数和对象。任何公有成员可以被外部的类访问。
 
 Protected 访问修饰符允许子类访问它的基类的成员变量和成员函数。这样有助于实现继承。我们将在继承的章节详细讨论这个。更详细地讨论这个。
@@ -23,11 +22,6 @@ Internal 访问说明符允许一个类将其成员变量和成员函数暴露�
 
 Private 访问修饰符允许一个类将其成员变量和成员函数对其他的函数和对象进行隐藏。只有同一个类中的函数可以访问它的私有成员。即使是类的实例也不能访问它的私有成员。
 
-
-
-
-
-
-
 ## 参考
-https://www.runoob.com/csharp/csharp-encapsulation.html
+
+<https://www.runoob.com/csharp/csharp-encapsulation.html>

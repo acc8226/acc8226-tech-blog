@@ -12,7 +12,7 @@ categories:
 
 ## 项目地址
 
-<https://gitee.com/kaiLee/nav>
+<https://gitee.com/acc8226/nav>
 
 ## 网址导航代码修改过程
 

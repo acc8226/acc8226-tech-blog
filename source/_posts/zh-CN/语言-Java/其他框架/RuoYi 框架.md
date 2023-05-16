@@ -279,7 +279,23 @@ spring boot 中可以用 @Validated 来校验数据，如果数据异常则会�
 
 由于后端框架支持分布式存储应用 + api，所以如果有需要类似表格模板的功能可用借助 file 接口进行上传并拿到下载地址即可。形如 `http://sand-mold.foxfirst.cn:9111/mfox/2022/09/20/6a8f52ba-ebb7-43c5-a103-62318bf87e68.xlsx`
 
-## 问题记录
+## 记录
+
+微服务版本设置 local 环境，注意所有的模块都要改。
+
+```yml
+spring:
+  cloud:
+    nacos:
+      discovery:
+        # 服务注册地址
+        server-addr: localhost:8848
+      config:
+        # 配置中心地址
+        server-addr: ${spring.cloud.nacos.discovery.server-addr}
+```
+
+## 问题
 
 ### 提示 "请求访问：/prevention/population/list，认证失败，无法访问系统资源"
 
@@ -294,11 +310,11 @@ spring boot 中可以用 @Validated 来校验数据，如果数据异常则会�
 
 ### excel导出 报错（Invalid row number (1048576) outside allowable range (0..1048575)）
 
-默认的 ruoyi 对 excel 的 yml 配置有行数还是 MB 体积限制，建议还是使用更加强大的阿里 easyexcel。
+默认的 ruoyi 对 excel 的 yml 配置有行数还是 MB 体积限制，如果有需要可以使用阿里 easyexcel。
 
 ### 修改默认密码
 
-修改用户名和密码，将 ry-config 中的 user 表 username 替换成你需要的登录账户，password 改成你需要的密码，密码运行即可得到加密有算法。注意盐值是随机的，所以生成密码每次可能不一样，请不要担心。
+修改用户名和密码，将 ry-config 中的 user 表 username 替换成你需要的登录账户，password 改成你要替换的密码，密码运行即可得到加密有算法。注意盐值是随机的，所以生成密码每次可能不一样，请不要担心。
 
 ```java
 public static void main(String[] args) {

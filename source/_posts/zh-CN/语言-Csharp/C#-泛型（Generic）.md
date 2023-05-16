@@ -2,7 +2,7 @@
 
 您可以通过数据类型的替代参数编写类或方法的规范。当编译器遇到类的构造函数或方法的函数调用时，它会生成代码来处理指定的数据类型。下面这个简单的实例将有助于您理解这个概念：
 
-```
+```cs
 using System;
 using System.Collections.Generic;
 
@@ -24,7 +24,7 @@ namespace GenericApplication
             array[index] = value;
         }
     }
-           
+
     class Tester
     {
         static void Main(string[] args)
@@ -62,6 +62,7 @@ namespace GenericApplication
 ```
 
 ### 泛型（Generic）的特性
+
 使用泛型是一种增强程序功能的技术，具体表现在以下几个方面：
 
 它有助于您最大限度地重用代码、保护类型的安全以及提高性能。
@@ -71,24 +72,28 @@ namespace GenericApplication
 关于泛型数据类型中使用的类型的信息可在运行时通过使用反射获取。
 
 ### 泛型（Generic）方法
-```
-        static void Swap<T>(ref T lhs, ref T rhs)
-        {
-            T temp;
-            temp = lhs;
-            lhs = rhs;
-            rhs = temp;
-        }
+
+```cs
+static void Swap<T>(ref T lhs, ref T rhs)
+{
+    T temp;
+    temp = lhs;
+    lhs = rhs;
+    rhs = temp;
+}
 ```
 
 ### 泛型（Generic）委托
+
 您可以通过类型参数定义泛型委托。例如：
+
 ```
 delegate T NumberChanger<T>(T n);
 ```
 
 实例:
-```
+
+```cs
 using System;
 using System.Collections.Generic;
 

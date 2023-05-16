@@ -2,19 +2,19 @@
 
 语法:
 
-```
-element-type this[int index] 
+```cs
+element-type this[int index]
 {
    // get 访问器
-   get 
+   get
    {
       // 返回 index 指定的值
    }
 
    // set 访问器
-   set 
+   set
    {
-      // 设置 index 指定的值 
+      // 设置 index 指定的值
    }
 }
 ```

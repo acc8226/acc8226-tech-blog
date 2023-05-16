@@ -10,7 +10,7 @@ categories:
 
 ## 项目地址
 
-<https://gitee.com/kaiLee/bing-wallpaper-kotlin>
+<https://gitee.com/acc8226/bing-wallpaper-kotlin>
 
 ![谁在打盹儿？](https://cn.bing.com/th?id=OHR.SandhillSleeping_ZH-CN8483997851_UHD.jpg&w=1000)
 

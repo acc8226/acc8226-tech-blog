@@ -10,7 +10,7 @@ categories:
 
 ## 项目地址
 
-<https://gitee.com/kaiLee/my-cmd>
+<https://gitee.com/acc8226/my-cmd>
 
 ## 介绍
 

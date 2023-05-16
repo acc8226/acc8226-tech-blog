@@ -8,7 +8,8 @@
 为了定义一个结构体，您必须使用 struct 语句。struct 语句为程序定义了一个带有多个成员的新的数据类型。
 
 例如，您可以按照如下的方式声明 Book 结构：
-```
+
+```cs
 struct Books
 {
    public string title;
@@ -42,7 +43,7 @@ struct Books
 ```
 using System;
 using System.Text;
-     
+
 struct Books
 {
    private string title;
@@ -54,7 +55,7 @@ struct Books
       title = t;
       author = a;
       subject = s;
-      book_id =id; 
+      book_id =id;
    }
    public void display()
    {
@@ -64,7 +65,7 @@ struct Books
       Console.WriteLine("Book_id :{0}", book_id);
    }
 
-};  
+};
 
 public class testStructure {
    public static void Main(string[] args) {
@@ -84,7 +85,7 @@ public class testStructure {
       Book1.display();
 
       /* 打印 Book2 信息 */
-      Book2.display(); 
+      Book2.display();
 
       Console.ReadKey();
    }
@@ -98,8 +99,8 @@ public class testStructure {
 C# 枚举是值类型。换句话说，枚举包含自己的值，且不能继承或传递继承。
 ```
 enum <enum_name>
-{ 
-    enumeration list 
+{
+    enumeration list
 };
 ```
 

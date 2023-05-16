@@ -6,9 +6,9 @@
 
 抽象类在某种程度上与接口类似，但是，它们大多只是用在当只有少数方法由基类声明由派生类实现时。
 
-
 接口使用 interface 关键字声明，它与类的声明类似。接口声明默认是 public 的。下面是一个接口声明的实例：
-```
+
+```cs
 interface IMyInterface
 {
     void MethodToImplement();
@@ -20,7 +20,7 @@ interface IMyInterface
 值得注意的是，该方法并没有具体的实现
 
 ### 接口继承: InterfaceInheritance.cs
+
 以下实例定义了两个接口 IMyInterface 和 IParentInterface。
 
 如果一个接口继承其他接口，那么实现类或结构就需要实现所有接口的成员。
-

@@ -14,7 +14,7 @@ categories:
 开始 -> 控制面板 -> 程序和功能点击左边菜单中的‘打开和关闭窗口功能’链接。等待列表加载，然后找到“ Internet 信息服务”
 
 1. World Wide Web Publishing Service服务关闭
-2. SQL Server Reporting Services（MSSQLSERVER)服务 服务关闭
+2. `SQL Server Reporting Services（MSSQLSERVER)` 服务 服务关闭
 3. IIS
 4. Web Deploy 2.0 (Web Deployment Agent Service)
 5. MS Sql Server Reporting service.

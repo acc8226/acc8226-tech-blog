@@ -65,7 +65,7 @@ stages:
 
 详见：
 
-<https://gitee.com/kaiLee/md/blob/master/.workflow/pipeline-20220806.yml>
+<https://gitee.com/acc8226/md/blob/master/.workflow/pipeline-20220806.yml>
 
 同时欢迎 fork 本项目。
 

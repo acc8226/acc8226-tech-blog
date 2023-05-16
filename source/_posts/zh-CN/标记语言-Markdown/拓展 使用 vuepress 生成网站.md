@@ -317,7 +317,7 @@ export default defineUserConfig<DefaultThemeOptions>({
 ```
 
 VuePress Demo 代码地址
-<https://gitee.com/kaiLee/Demo-VuePress>
+<https://gitee.com/acc8226/Demo-VuePress>
 
 ## 总结
 

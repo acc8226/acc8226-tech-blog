@@ -3,6 +3,7 @@
 从根本上说，流是通过通信路径传递的字节序列。有两个主要的流：输入流 和 输出流。输入流用于从文件读取数据（读操作），输出流用于向文件写入数据（写操作）。
 
 ### C# I/O 类
+
 System.IO 命名空间有各种不同的类，用于执行各种文件操作，如创建和删除文件、读取或写入文件，关闭文件等。
 
 下表列出了一些 System.IO 命名空间中常用的非抽象类：
@@ -23,6 +24,7 @@ StringReader	用于读取字符串缓冲区。
 StringWriter	用于写入字符串缓冲区。
 
 ### FileStream 类
+
 System.IO 命名空间中的 FileStream 类有助于文件的读写与关闭。该类派生自抽象类 Stream。
 
 您需要创建一个 FileStream 对象来创建一个新的文件，或打开一个已有的文件。创建 FileStream 对象的语法如下：
@@ -35,7 +37,7 @@ FileStream <object_name> = new FileStream( <file_name>,
 FileStream F = new FileStream("sample.txt", FileMode.Open, FileAccess.Read, FileShare.Read);
 ```
 
-#### FileMode	
+#### FileMode
 FileMode 枚举定义了各种打开文件的方法。FileMode 枚举的成员有：
 
 Append：打开一个已有的文件，并将光标放置在文件的末尾。如果文件不存在，则创建文件。
@@ -45,10 +47,10 @@ Open：打开一个已有的文件。如果文件不存在，则抛出异常。
 OpenOrCreate：指定操作系统应打开一个已有的文件。如果文件不存在，则用指定的名称创建一个新的文件打开。
 Truncate：打开一个已有的文件，文件一旦打开，就将被截断为零字节大小。然后我们可以向文件写入全新的数据，但是保留文件的初始创建日期。如果文件不存在，则抛出异常。
 
-#### FileAccess	
+#### FileAccess
 FileAccess 枚举的成员有：Read、ReadWrite 和 Write。
 
-#### FileShare	
+#### FileShare
 FileShare 枚举的成员有：
 
 Inheritable：允许文件句柄可由子进程继承。Win32 不直接支持此功能。
@@ -60,7 +62,8 @@ Delete：允许随后删除文件。
 
 ### 实例
 下面的程序演示了 FileStream 类的用法：
-```
+
+```cs
 using System;
 using System.IO;
 
@@ -70,7 +73,7 @@ namespace FileIOApplication
     {
         static void Main(string[] args)
         {
-            FileStream F = new FileStream("test.dat", 
+            FileStream F = new FileStream("test.dat",
             FileMode.OpenOrCreate, FileAccess.ReadWrite);
 
             for (int i = 1; i <= 20; i++)
@@ -110,7 +113,8 @@ StreamReader 类继承自抽象基类 **TextReader**，表示Reader 读取一系
 从输入流中读取下一个字符，并把字符位置往前移一个字符。
 
 下面的实例演示了读取名为 Jamaica.txt 的文件。文件如下：
-```
+
+```cs
 using System;
 using System.IO;
 
@@ -122,13 +126,13 @@ namespace FileApplication
         {
             try
             {
-                // 创建一个 StreamReader 的实例来读取文件 
+                // 创建一个 StreamReader 的实例来读取文件
                 // using 语句也能关闭 StreamReader
                 using (StreamReader sr = new StreamReader("c:/jamaica.txt"))
                 {
                     string line;
-                   
-                    // 从文件读取并显示行，直到文件的末尾 
+
+                    // 从文件读取并显示行，直到文件的末尾
                     while ((line = sr.ReadLine()) != null)
                     {
                         Console.WriteLine(line);
@@ -148,10 +152,12 @@ namespace FileApplication
 ```
 
 ### StreamWriter 类
+
 StreamWriter 类继承自抽象类 TextWriter，表示编写器写入一系列字符。
 
 下面的实例演示了使用 StreamWriter 类向文件写入文本数据：
-```
+
+```cs
 using System;
 using System.IO;
 
@@ -188,9 +194,10 @@ namespace FileApplication
 ```
 
 ## C# 二进制文件的读写
+
 BinaryReader 和 BinaryWriter 类用于二进制文件的读写。
 
-```
+```cs
 using System;
 using System.IO;
 
@@ -267,8 +274,10 @@ namespace BinaryFileApplication
 ```
 
 ## C# Windows 文件系统的操作
+
 C# 允许您使用各种目录和文件相关的类来操作目录和文件，比如 DirectoryInfo 类和 FileInfo 类。
-```
+
+```cs
 using System;
 using System.IO;
 
@@ -293,4 +302,3 @@ namespace WindowsFileApplication
     }
 }
 ```
-

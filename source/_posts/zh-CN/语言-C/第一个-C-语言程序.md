@@ -1,22 +1,22 @@
-在右边的实验楼环境 WebIDE 中新建一个文档，命名为 hello.c，输入一下代码：
+创建 hello.c，输入一下代码：
 
 ```c
 #include<stdio.h>
 
 int main(){
-  printf("Hello ShiYanLou\n");
+  printf("Hello C\n");
   return 0;
 }
 ```
 
 完成代码编写后，保存并在下面的终端输入编译命令：
-```
+
+```sh
 gcc -o abc abc.c
 ```
 
 > GCC 是由 GNU 开发的编程语言编译器，用来编译 C 语言程序。
 > gcc -o abc abc.c 命令调用编译器 GCC 对文件 abc.c 进行编译，完成了 “预处理-编译-汇编-链接”，生成了可执行文件 abc。
-
 
 编译
 编译器可以将源代码转换成机器语言，在编译过程中，会找出错误并报告。这个阶段的输入是在编辑期间产生的文件，常称为源文件。

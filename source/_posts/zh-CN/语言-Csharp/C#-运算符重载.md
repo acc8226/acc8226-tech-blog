@@ -1,9 +1,9 @@
 您可以重定义或重载 C# 中内置的运算符。因此，程序员也可以使用用户自定义类型的运算符。重载运算符是具有特殊名称的函数，是通过关键字 operator 后跟运算符的符号来定义的。与其他函数一样，重载运算符有返回类型和参数列表。
 
 例如，请看下面的函数
-```
-public static Box operator+ (Box b, Box c)
-{
+
+```cs
+public static Box operator+ (Box b, Box c) {
    Box box = new Box();
    box.length = b.length + c.length;
    box.breadth = b.breadth + c.breadth;
@@ -13,6 +13,7 @@ public static Box operator+ (Box b, Box c)
 ```
 
 ### 可重载和不可重载运算符
+
 下表描述了 C# 中运算符重载的能力：
 运算符	描述
 +, -, !, ~, ++, --	这些一元运算符只有一个操作数，且可以被重载。
@@ -20,7 +21,8 @@ public static Box operator+ (Box b, Box c)
 ==, !=, <, >, <=, >=	这些比较运算符可以被重载。
 
 实例
-```
+
+```cs
 using System;
 
 namespace OperatorOvlApplication
@@ -30,7 +32,7 @@ namespace OperatorOvlApplication
        private double length;      // 长度
        private double breadth;     // 宽度
        private double height;      // 高度
-      
+
        public double getVolume()
        {
          return length * breadth * height;
@@ -58,11 +60,11 @@ namespace OperatorOvlApplication
           box.height = b.height + c.height;
           return box;
       }
-      
+
       public static bool operator == (Box lhs, Box rhs)
       {
           bool status = false;
-          if (lhs.length == rhs.length && lhs.height == rhs.height 
+          if (lhs.length == rhs.length && lhs.height == rhs.height
              && lhs.breadth == rhs.breadth)
           {
               status = true;
@@ -72,7 +74,7 @@ namespace OperatorOvlApplication
       public static bool operator !=(Box lhs, Box rhs)
       {
           bool status = false;
-          if (lhs.length != rhs.length || lhs.height != rhs.height 
+          if (lhs.length != rhs.length || lhs.height != rhs.height
               || lhs.breadth != rhs.breadth)
           {
               status = true;
@@ -82,7 +84,7 @@ namespace OperatorOvlApplication
       public static bool operator <(Box lhs, Box rhs)
       {
           bool status = false;
-          if (lhs.length < rhs.length && lhs.height 
+          if (lhs.length < rhs.length && lhs.height
               < rhs.height && lhs.breadth < rhs.breadth)
           {
               status = true;
@@ -93,7 +95,7 @@ namespace OperatorOvlApplication
       public static bool operator >(Box lhs, Box rhs)
       {
           bool status = false;
-          if (lhs.length > rhs.length && lhs.height 
+          if (lhs.length > rhs.length && lhs.height
               > rhs.height && lhs.breadth > rhs.breadth)
           {
               status = true;
@@ -104,7 +106,7 @@ namespace OperatorOvlApplication
       public static bool operator <=(Box lhs, Box rhs)
       {
           bool status = false;
-          if (lhs.length <= rhs.length && lhs.height 
+          if (lhs.length <= rhs.length && lhs.height
               <= rhs.height && lhs.breadth <= rhs.breadth)
           {
               status = true;
@@ -115,7 +117,7 @@ namespace OperatorOvlApplication
       public static bool operator >=(Box lhs, Box rhs)
       {
           bool status = false;
-          if (lhs.length >= rhs.length && lhs.height 
+          if (lhs.length >= rhs.length && lhs.height
              >= rhs.height && lhs.breadth >= rhs.breadth)
           {
               status = true;
@@ -126,9 +128,9 @@ namespace OperatorOvlApplication
       {
           return String.Format("({0}, {1}, {2})", length, breadth, height);
       }
-   
+
    }
-    
+
    class Tester
    {
       static void Main(string[] args)
@@ -152,7 +154,7 @@ namespace OperatorOvlApplication
        // 使用重载的 ToString() 显示两个盒子
         Console.WriteLine("Box1： {0}", Box1.ToString());
         Console.WriteLine("Box2： {0}", Box2.ToString());
-        
+
         // Box1 的体积
         volume = Box1.getVolume();
         Console.WriteLine("Box1 的体积： {0}", volume);

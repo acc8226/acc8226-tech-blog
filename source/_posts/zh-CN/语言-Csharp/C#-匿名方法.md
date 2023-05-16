@@ -3,7 +3,8 @@
 **匿名方法（Anonymous methods）** 提供了一种传递代码块作为委托参数的技术。匿名方法是没有名称只有主体的方法。
 
 在匿名方法中您不需要指定返回类型，它是从方法主体内的 return 语句推断的。
-```
+
+```cs
 delegate void NumberChanger(int n);
 ...
 NumberChanger nc = delegate(int x)
@@ -13,7 +14,8 @@ NumberChanger nc = delegate(int x)
 ```
 
 实例:
-```
+
+```cs
 using System;
 
 delegate void NumberChanger (int n);
