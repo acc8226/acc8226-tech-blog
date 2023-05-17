@@ -31,7 +31,7 @@ comments: false
 * 熟练掌握 MySQL 数据库管理系统，掌握数据库设计、SQL 语句优化；
 * 熟悉使用 Redis，单机和集群环境搭建，redis 分布式锁解决方案，高并发下缓存穿透、雪崩问题的解决方案；
 * 熟悉使用 Dubbo、Zookeeper 分布式服务架构；nginx、RabbitMQ 消息中间件使用；
-* 掌握 JS、jQuery、Ajax、JSP、Thymeleaf 等技术，jackson、fastjson 等类库的使用，熟悉邮件发送、短信发送、文件上传下载等应用场景；
+* 掌握 Javascript、jQuery、Ajax、JSP、Thymeleaf 等技术，jackson、fastjson 等类库的使用，熟悉邮件发送、短信发送、文件上传下载等应用场景；
 * 熟练使用 JUnit、Mockito，Postman 等测试工具；
 * 熟练使用 Ant、Maven、Gradle 构建工具，熟悉基于 SVN、Git 的工作流；
 * 熟悉 Linux 系统和常用命令；
@@ -39,13 +39,13 @@ comments: false
 
 ## 项目经历
 
-1. 公司/学校 - XXweb服务器 - 独立开发 - 201508- 201512
+1. 公司/学校 - XXweb 服务器 - 独立开发 - 201508- 201512
     * 具体功能
     * 运用了那些技术，技术难点是
     * 效果如何
     * demo演示地址，github地址
 
-2. 公司/学校 - XX游戏 - 负责后端开发 - 201309- 201401
+2. 公司/学校 - XX 游戏 - 负责后端开发 - 201309- 201401
     * 具体功能
     * 运用了那些技术，技术难点是
     * 效果如何
@@ -54,7 +54,7 @@ comments: false
 ## 个人账号
 
 * Github: <https://github.com/acc8226>
-* 技术博客: <https://blog.likai.eu.org>
+* 技术博客: <https://acc8226.feipig.fun/>
 
 ## 其他信息
 
