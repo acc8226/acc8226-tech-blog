@@ -114,7 +114,6 @@ FLUSH PRIVILEGES;
 注意，执行完赋权后，一定要执行 ”FLUSH PRIVILEGES;”，否则不会生效。
 
 **解决方式二**
-
 报 Host ‘169.254.213.3’ is not allowed to connect to this MySQL server 主要的意思是这个 host 主机不能访问本机的 mysql 服务，原因需要连接非本机的 mysql 的时候，默认 host 是 localhost，我们需要将这个 mysql 连接权限设置成 %，更改方法直接通过软件更改或者命令行更改：选择 mysql 这个数据库，里面有一个 user 表，进入表中有一个 host 字段将 localhost 值更改为 % 这个保存后，刷新或者重启 MySQL 服务都行。
 刷新的命令是 flush privileges; 注意这里需要有；号否则不执行。
 
@@ -145,7 +144,7 @@ FOR EACH ROW SELECT 'Product added';
 
 外连接时，on 条件是在生成临时表时使用的条件，它不管 on 中的条件是否为真，都会返回左边表中的记录。而 where 条件是在临时表生成好后，再对临时表进行过滤的条件。
 
-### mysql 将两张表的count 数据相加
+### mysql 将两张表的 count 数据相加
 
 ```sql
 select sum(sum1) from (

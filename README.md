@@ -1,6 +1,6 @@
 # notes
 
-![build badge](https://github.com/acc8226/page-source/actions/workflows/main.yml/badge.svg)
+![Github Action Status](https://github.com/acc8226/page-source/actions/workflows/main.yml/badge.svg) [![Netlify Status](https://api.netlify.com/api/v1/badges/282bcf1e-d335-48e3-b407-6d77fff9c858/deploy-status)](https://app.netlify.com/sites/acc8226/deploys)
 
 ## My notes
 

@@ -25,6 +25,18 @@ Step 3 确认升级完成
 `cat /etc/centos-release`
 此时会展示升级后的系统版本。
 
+### 问题
+
+Centos7 Failed to start xxx.service: Unit not found
+
+我们先要通过这个命令去查看一下我们系统中是否有这个服务。若在我们有这个服务的情况下，通过命令重启服务。
+
+```sh
+systemctl list-unit-files --type=service //查看服务列表
+systemctl daemon-reload
+systemctl start dhcpd.service
+```
+
 ## Fedora
 
 Download Fedora Workstation

@@ -16,7 +16,7 @@ CountDownLatch 类只提供了一个构造器：
 然后下面这 3 个方法是 CountDownLatch 类中最重要的方法：
 
 * public void await() throws InterruptedException { };   // 调用 await()方法的线程会被挂起，它会等待直到count值为0才继续执行
-* public boolean await(long timeout, TimeUnit unit) throws InterruptedException { };  //和await()类似，只不过等待一定的时间后count值还没变为0的话就会继续执行
+* public boolean await(long timeout, TimeUnit unit) throws InterruptedException { };  //和await()类似，只不过等待一定的时间后 count 值还没变为 0 的话就会继续执行
 * public void countDown() { };  //将count值减1
 
 <!-- more -->
