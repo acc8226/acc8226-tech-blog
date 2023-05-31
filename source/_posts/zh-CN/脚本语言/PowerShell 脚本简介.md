@@ -54,7 +54,7 @@ PS> Get-ChildItem -Path C:\WINDOWS -Name
 Get-ChildItem 命令在要列出的项的路径中接受通配符。
 由于通配符匹配是由 PowerShell 引擎处理的，因此所有接受通配符的 cmdlet 使用相同的符号并具有相同的匹配行为。PowerShell通配符表示法。
 
-要查找Windows目录中以字母x开始的所有文件，请键入以下内容：
+要查找 Windows 目录中以字母 x 开始的所有文件，请键入以下内容：
 
 Get-ChildItem -Path C:\Windows\x*
 
@@ -109,11 +109,6 @@ Remove-Item -Path C:\temp\DeleteMe -Recurse
 
 PS> Get-Content -Path C:\boot.ini
 
-
-
-
-
-
 查询服务名称为 “ssh-agent” 的服务。
 Get-Service ssh-agent
 
@@ -146,3 +141,22 @@ Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
 ```powershell
 Remove-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
 ```
+
+### 设置环境变量
+
+追加当前进程的变量
+
+```powershell
+PS> $env:Path+=";C:PowerShellmyscript"
+```
+
+```powershell
+PS> [environment]::SetEnvironmentvariable("Path", ";c:\powershellscript", "User")
+PS> [environment]::GetEnvironmentvariable("Path", "User")
+;c:\powershellscript
+```
+
+## 参考
+
+PowerShell 中文博客 – 收集和分享 Windows PowerShell 相关教程,技术和最新动态
+<https://www.pstips.net/>
