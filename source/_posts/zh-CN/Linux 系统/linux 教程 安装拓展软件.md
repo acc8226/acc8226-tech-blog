@@ -6,6 +6,12 @@ categories:
   - linux
 ---
 
+## 检测硬件脚本
+
+```sh
+wget -q https://github.com/Aniverse/A/raw/i/a && bash a
+```
+
 ## 搭建 vpn
 
 由于现在的第三方各种原因都不那么好用了，这里就来跟大家分享下如何利用海外服务器搭建自己私人 VPN。
@@ -14,52 +20,17 @@ categories:
 
 **第一步：**首先你要有一台[国外的服务器](https://www.idcbest.com/)，香港服务器也可以；云服务平台有很多，如果只是单纯的搭建 VPN，可以买便宜的服务器。
 
-**第二步：**服务器配置，安装 Shadowsocks Server
-
-1、执行如下命令
-
-```sh
-wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
-```
-
-2、上面的命令执行结束后，执行下面的命令
-
-```sh
-chmod +x shadowsocks-all.sh
-```
-
-3、上面的命令执行结束后，执行下面的命令
-
-```sh
-./shadowsocks-all.sh 2>&1 | tee shadowsocks-all.log
-```
-
-4、执行上述命令会有相关输入提示操作；根据需要选择。不明白的话就直接选1或者直接默认回车；之后会提示你输入密码和端口，对应设置即可，或者直接使用默认的；由于 iPhone 端的 wingy 目前只支持到 cfb，所以加密方式选择 aes-256-cfb 也就是选择 7；全部执行完成之后就会出现如下信息：
-
-```sh
-StartingShadowsocks success
-Congratulations, Shadowsocks-Python server install completed!
-YourServer IP        :  你的IP
-YourServerPort:  在第四步提示设置的端口号
-YourPassword:  在第四步提示设置的密码
-YourEncryptionMethod:  aes-256-cfb
-Your QR Code: (ForShadowsocksWindows, OSX, Androidand iOS clients)
- ss://YWVzLTI1Ni1jZmI6emh1aTA4MTA0MTJaaaccuMjmmLjU1LjE5MTo4tdVg4
-Your QR Code has been saved as a PNG file path:
-/root/shadowsocks_python_qr.png
-Welcome to visit: https://teddysun.com/486.html
-
-Enjoy it!
-```
-
-5、看到以上信息就说明安装完成了，然后根据不同的终端设备进行设置就可以了
+**第二步：**服务器配置，安装 Shadowsocks Server。有心者请自行查找教程。
 
 **第三步、使用 Shadowsocks 终端体验 VPN**
 1、下载对应客户端
 
 Windows：<https://github.com/shadowsocks/shadowsocks-windows/releases>
+
 Mac：<https://github.com/yangfeicheung/Shadowsocks-X/releases>
+
 Android：<https://github.com/shadowsocks/shadowsocks-android/releases>
+
 iPhone：App Store 上下载 ShadowLink，这个要用国外 appid 才可以下载哦。国内的搜不到的，因为 shadowrocket 收费的
 
 2、配置 Shadowsocks
@@ -93,6 +64,13 @@ iPhone：App Store 上下载 ShadowLink，这个要用国外 appid 才可以下�
 ![基于国外服务器搭建自己的 VPN](https://upload-images.jianshu.io/upload_images/1662509-47a5261628aee129.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ![基于国外服务器搭建自己的 VPN](https://upload-images.jianshu.io/upload_images/1662509-a927e0920549a5bc.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+## 搭建 bitwarden
+
+## 配置 nginx
+
+Nginx Proxy Manager
+<https://nginxproxymanager.com/>
 
 ## 搭建 WordPress
 
@@ -159,7 +137,7 @@ server {
 ```
 
 **亮点：可配置 webdav**
-安卓手机搭配 ES浏览器可以倍速播放视频还是不错滴。
+安卓手机搭配 ES 浏览器可以倍速播放视频还是不错滴。
 
 ### seafile
 

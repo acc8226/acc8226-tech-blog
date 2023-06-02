@@ -156,6 +156,11 @@ PS> [environment]::GetEnvironmentvariable("Path", "User")
 ;c:\powershellscript
 ```
 
+## 美化
+
+Home | Oh My Posh
+<https://ohmyposh.dev/>
+
 ## 参考
 
 PowerShell 中文博客 – 收集和分享 Windows PowerShell 相关教程,技术和最新动态
