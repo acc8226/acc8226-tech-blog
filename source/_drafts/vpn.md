@@ -1,12 +1,6 @@
 ---
 title: vpn
-date: 2023-06-01 15:00:00
-updated: 2023-06-01 15:00:00
-categories:
-tags:
--
 ---
-
 
 ## 方式一
 
