@@ -4,6 +4,23 @@ title: vpn
 
 ## 方式一
 
+```sh
+sudo docker run --name ssserver-rust \
+--restart always \
+-p 8388:8388/tcp \
+-p 8388:8388/udp \
+-v /home/ubuntu/zhangsan:/etc/shadowsocks-rust \
+-dit ghcr.io/shadowsocks/ssserver-rust:latest
+
+sudo docker cp sserver-rust:/etc/shadowsocks-rust/config.json  /home/ubuntu/zhangsan
+
+sudo docker run --name sserver-rust \
+--restart always \
+-p 8388:8388/tcp \
+-p 8388:8388/udp \
+-dit ghcr.io/shadowsocks/ssserver-rust:latest
+```
+
 ## 方式二
 
 1、执行如下命令
