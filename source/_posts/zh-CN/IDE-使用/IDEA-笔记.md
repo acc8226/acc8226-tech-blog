@@ -9,7 +9,7 @@ categories: IDE-使用
 
 <https://www.jetbrains.com/idea/download/other.html>
 
-版本推荐：根据我的观察，每年五月份过后去获取上个年度的最新版本应该是最终版本，可下载用纸。
+版本选择：根据我的观察，每年五月份过后获取上个年度的最新版本应该是最终版本，可下载之。
 
 > 若下载的是 2020 之后的版本已不再区分是否 with Bundled JBR 了。直接选择 zip 格式即可。
 
@@ -18,7 +18,7 @@ categories: IDE-使用
 1. 解压
 2. 【可选】添加至环境变量，这样无论在哪个目录下都可启动 IntelliJ IDE
 3. 【可选】调整 JVM 堆大小的值
-4. 打开命令行工具进入安装目录的 bin 文件夹下， 键入 idea.bat . 这个命令同时会在 `${user.home}/. IntelliJIdea2020.3` 目录中初始化一系列的配置文件。
+4. 打开命令行工具进入安装目录的 bin 文件夹下， 键入 idea.bat。这个命令同时会在 `${user.home}/. IntelliJIdea2020.3` 目录中初始化一系列的配置文件。
 
 附原文：
 
@@ -76,9 +76,7 @@ INSTALLATION INSTRUCTIONS
      "C:\Program Files\JetBrains\IntelliJ IDEA 10.0")
 
   3. From "{installation home}" type:
-
        ipr.reg
-
      to add information about "*.ipr" files to registry.
 
 Enjoy!
@@ -98,8 +96,6 @@ File -> Settings… Editor -> Code Style
 
 > JetBrains Runtime 是什么
 > JetBrains Runtime （即 JetBrains 运行时）是一个运行时环境，用于在 Windows，Mac OS X 和 Linux 上 运行 IntelliJ 平台的各种产品。JetBrains Runtime 基于 OpenJDK 项目，并进行了一些修改。这些修改包括：抗锯齿，Linux 上增强的字体渲染，HiDPI 支持，连字，一些官方版本中未提供的针对产品崩溃的修复程序以及其他小的增强功能。
->
-> JetBrains Runtime 不是 OpenJDK 的认证版本。请自己承担风险使用。
 
 ## 快捷键
 
@@ -272,7 +268,7 @@ Postfix Completion 功能本质上也是代码模板，只是它比 Live Templat
 | Shift + Shift         | 查找所有文件                                                 |
 | Ctrl + Alt + L        | 格式化代码，可以对当前文件和整个包目录使用                   |
 | Alt + 7               | 显示当前类中的所有方法、全局常量，方法还包括形参和返回值     |
-| Alt + F7              | 可以查看一个Java类、方法或变量的直接使用情况。               |
+| Alt + F7              | 可以查看一个 Java 类、方法或变量的直接使用情况。               |
 | ctrl + alt +b         | 查看接口的实现类                                             |
 | ctrl + h              | 查看类或接口的继承关系                                       |
 | F7                    | 在 Debug 模式下，进入下一步，如果当前行断点是一个方法，则进入当前方法体内，Step Into |
@@ -300,7 +296,9 @@ Postfix Completion 功能本质上也是代码模板，只是它比 Live Templat
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-6fa8e0b6fa8d533a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-## 非商业用途免费用
+## 记录
+
+### 非商业用途免费用
 
 建议在 github 的项目。
 
@@ -310,16 +308,11 @@ Postfix Completion 功能本质上也是代码模板，只是它比 Live Templat
 
 <https://www.jetbrains.com/shop/eform/opensource?product=ALL>
 
-## idea 激活教程
+### 开启 idea 自动提示功能
 
-IDEA 永久激活方案 (实测可用) - 简书
-<https://www.jianshu.com/p/21aa61bf8b8f>
+ctrl+alt+s 进入快捷键设置界面。打开 Code Completion / 代码补全，勾选 输入时显示建议 即可。
 
-## 开启 idea 自动提示功能
-
-ctrl+alt+s进入快捷键设置界面。打开 Code Completion / 代码补全，勾选 输入时显示建议 即可。
-
-## 遇到过的问题
+## 问题
 
 **@Override is not allowed when implementing interface method**
 @Override从 jdk1.5 开始出现的，是用来标注方法重写；通常方法重写发生在继承父类，重写父类方法，或者实现接口，实现接口方法；
@@ -372,6 +365,10 @@ file --> Invalidate Caches /Restart. --> Invalidate and Restart
 第一步：找到该程序的配置信息编辑处
 第二步：找到修改选项的地方：“Modify options”，按照图中顺序选择
 第三步：再选择具体的 “Shorten command line”选项：classpath 路径
+
+### idea 无法解析 SDK
+
+应该是运行配置有问题
 
 ## 参考
 

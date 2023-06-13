@@ -6,25 +6,25 @@ categories:
   - 语言-Java
   - JSON 和 XML
 tags:
-- Java
-- Json
+  - Java
+  - Json
 ---
 
 老版本的 Jackson 使用的包名为 org.codehaus.jackson，而新版本使用的是 com.fasterxml.jackson。
 
 Jackson 主要包含了 3 个模块
 
-* jackson-core
-* jackson-annotations
-* jackson-databind
+- jackson-core
+- jackson-annotations
+- jackson-databind
 
-其中，jackson-databind 依赖于 jackson-annotations。jackson-annotations 又依赖于 jackson-core，
+其中，jackson-databind 依赖于 jackson-annotations。jackson-annotations 又依赖于 jackson-core。
 
 Jackson 有三种方式处理 json
 
-* 使用底层的基于 Stream 的方式对 Json 的每一个小的组成部分进行控制
-* 使用 Tree Model，通过 JsonNode 处理单个 Json 节点
-* 使用 databind 模块，直接对 Java 对象进行序列化和反序列化
+- 使用底层的基于 Stream 的方式对 Json 的每一个小的组成部分进行控制
+- 使用 Tree Model，通过 JsonNode 处理单个 Json 节点
+- 使用 databind 模块，直接对 Java 对象进行序列化和反序列化
 
 通常来说，我们在日常开发中使用的是第 3 种方式，有时为了简便也会使用第 2 种方式，比如你要从一个很大的 Json 对象中只读取那么一两个字段的时候，采用 databind 方式显得有些重，JsonNode 反而更简单。
 
@@ -59,12 +59,12 @@ String jsonString = objectMapper.writeValueAsString(man);
 System.out.println(jsonString);
 ```
 
-> * 在默认情况下（即不对 ObjectMapper 做任何额外配置，也不对 Java 对象加任何 Annotation），ObjectMapper 依赖于 Java 对象的默认的 **无参构造函数** 进行反序列化，并且严格地通过 getter（序列化依赖 get 方法） 和 setter（反序列化依赖set方法） 的命名(而**非成员变量**)规约进行序列化和反序列化。
-> * ObjectMapper 在序列化时，将所有的字段一一序列化，无论这些字段是否有值 或者 为 null。这一点和阿里巴巴 fastjson 的不同, fastjson 的做法是若字段为 null 则不序列化该字段.
+> - 在默认情况下（即不对 ObjectMapper 做任何额外配置，也不对 Java 对象加任何 Annotation），ObjectMapper 依赖于 Java 对象的默认的 **无参构造函数** 进行反序列化，并且严格地通过 getter（序列化依赖 get 方法） 和 setter（反序列化依赖 set 方法） 的命名(而**非成员变量**)规约进行序列化和反序列化。
+> - ObjectMapper 在序列化时，将所有的字段一一序列化，无论这些字段是否有值 或者 为 null。这一点和阿里巴巴 fastjson 的不同, fastjson 的做法是若字段为 null 则不序列化该字段.
 
 ## json 转对象 (反序列化)
 
-ObjectMapper支持从 byte[]、File、InputStream、字符串等数据的 JSON 反序列化。
+ObjectMapper 支持从 byte[]、File、InputStream、字符串等数据的 JSON 反序列化。
 
 ```java
         // 反序列化对象
@@ -77,9 +77,9 @@ ObjectMapper支持从 byte[]、File、InputStream、字符串等数据的 JSON �
         System.out.println(beanList);
 ```
 
-* 对反序列而言，若报错`(no Creators, like default construct, exist): cannot deserialize from Object value (no delegate- or property-based Creator)`。这个时候说明缺少空构造（无论是默认构造还是手动构造）或者在带参的构造中需要搭配注解 @JsonCreator 进行使用。
-* 在反序列化的时候，默认情况下接受输出信息的实体类的字段不能有输入中不存在的，否则会报 `com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "name2"`。 如果某些输入字段在对应实体类中无匹配，则该字段值为赋予 null 属正常. 或者在class上面加上 `@JsonIgnoreProperties(ignoreUnknown = true)` 注解
-* Jackson 除了处理普通对象，还可以对 Java 集合、数组等进行序列化处理。如果需要”反序列化集合”的元素为非基本类型，可以通过创建一个空实现的 TypeReference 实例，将需要反序列化的集合带上泛型信息传递进去，以解决泛型信息无法传递的问题。
+- 对反序列而言，若报错`(no Creators, like default construct, exist): cannot deserialize from Object value (no delegate- or property-based Creator)`。这个时候说明缺少空构造（无论是默认构造还是手动构造）或者在带参的构造中需要搭配注解 @JsonCreator 进行使用。
+- 在反序列化的时候，默认情况下接受输出信息的实体类的字段不能有输入中不存在的，否则会报 `com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "name2"`。 如果某些输入字段在对应实体类中无匹配，则该字段值为赋予 null 属正常. 或者在 class 上面加上 `@JsonIgnoreProperties(ignoreUnknown = true)` 注解
+- Jackson 除了处理普通对象，还可以对 Java 集合、数组等进行序列化处理。如果需要”反序列化集合”的元素为非基本类型，可以通过创建一个空实现的 TypeReference 实例，将需要反序列化的集合带上泛型信息传递进去，以解决泛型信息无法传递的问题。
 
 ## 注解
 
@@ -87,38 +87,38 @@ ObjectMapper支持从 byte[]、File、InputStream、字符串等数据的 JSON �
 
 可用于方法上 或者 字段上。
 
-* value: 定义逻辑属性的名称, 作用是把该属性的名称序列化为另外一个名称
-* access: 更改序列化和反序列化中逻辑属性的可见性
-* defaultValue: 用于记录预期的默认值
-* index: 定义与 object 指定的其他属性相关的属性的数字索引
-* required: 定义在反序列化期间是否需要属性的值
+- value: 定义逻辑属性的名称, 作用是把该属性的名称序列化为另外一个名称
+- access: 更改序列化和反序列化中逻辑属性的可见性
+- defaultValue: 用于记录预期的默认值
+- index: 定义与 object 指定的其他属性相关的属性的数字索引
+- required: 定义在反序列化期间是否需要属性的值
 
 **value 的用法:**
 默认情况下映射的 JSON 属性与注解的属性名称相同，不过可以使用该注解的 **`value`** 值修改 JSON 属性名, 例如 `value = "mobileNumber"`
 
 **access 的用法:**
 
-* AUTO（默认）：自动确定此属性的读取和/或写入访问权限。
-* READ_ONLY：只允许序列化（get），不允许反序列化（set）
-* READ_WRITE：允许序列化（get）和反序列化（set），无视可见度规则
-* WRITE_ONLY
-只需要在序列化（get）时候忽略,  允许反序列化（set）
-So you could also do something like:
+- AUTO（默认）：自动确定此属性的读取和/或写入访问权限。
+- READ_ONLY：只允许序列化（get），不允许反序列化（set）
+- READ_WRITE：允许序列化（get）和反序列化（set），无视可见度规则
+- WRITE_ONLY
+  只需要在序列化（get）时候忽略, 允许反序列化（set）
+  So you could also do something like:
 
 ```java
 @JsonProperty(access = Access.WRITE_ONLY)
 private String password;
 ```
 
-### @JsonIgnore忽略字段
+### @JsonIgnore 忽略字段
 
- 注解
-注解用于排除某个属性，这样该属性就不会被Jackson序列化和反序列化。
+注解
+注解用于排除某个属性，这样该属性就不会被 Jackson 序列化和反序列化。
 
 ### @JsonIgnoreProperties 注解
 
 @JsonIgnoreProperties(value = {"mobile","name"})
-@JsonIgnoreProperties主要用于类上, 表示该字段在序列化和反序列化的时候都将被忽略。
+@JsonIgnoreProperties 主要用于类上, 表示该字段在序列化和反序列化的时候都将被忽略。
 
 我感觉有硬编码的味道。
 
@@ -136,7 +136,7 @@ public class YourClass {
 
 ### @JsonCreator
 
-当 json 在反序列化时，默认选择类的无参构造函数创建类对象，当没有无参构造函数时会报错，@JsonCreator作用就是指定反序列化时用的无参构造函数。构造方法的参数前面需要加上@JsonProperty,否则会报错。
+当 json 在反序列化时，默认选择类的无参构造函数创建类对象，当没有无参构造函数时会报错，@JsonCreator 作用就是指定反序列化时用的无参构造函数。构造方法的参数前面需要加上@JsonProperty,否则会报错。
 
 ```java
 @JsonCreator
@@ -164,9 +164,9 @@ private Date date3;
 
 shap: 表示序列化后的一种类型
 
-* pattern: 表示日期的格式
-* timezone: 默认是 GMT，可以按需是否指定为东八区 GMT+8
-* locale: 根据位置序列化的一种格式
+- pattern: 表示日期的格式
+- timezone: 默认是 GMT，可以按需是否指定为东八区 GMT+8
+- locale: 根据位置序列化的一种格式
 
 上面三种格式序列化后的结果：
 
@@ -224,7 +224,7 @@ public Fly doFly(@RequestBody FlyAdmin flyAdmin) {
 
 ```json
 {
-    "createTime": "2011-01-02 02:03"
+  "createTime": "2011-01-02 02:03"
 }
 ```
 
@@ -295,10 +295,11 @@ public enum Distance {
 ### JsonPropertyOrder
 
 自定义排序
-@JsonPropertyOrder({ "name", "id" })
+@JsonPropertyOrder({ “code”, “message” })
+code，message 这 2 个属性在其他属性前面
 
 按字母排序
-@JsonPropertyOrder(alphabetic=true)
+@JsonPropertyOrder(alphabetic = true)
 
 ## 使用 Jackson 的推荐配置
 
@@ -315,9 +316,14 @@ objectMapper
 
 mapper.enable(SerializationFeature.INDENT_OUTPUT); // 格式化
 
+其他选项：
+
+WRITE_DATE_KEYS_AS_TIMESTAMPS date 作为 map 的 key 是否系列化为时间戳
+WRITE_CHAR_ARRAYS_AS_JSON_ARRAYS char[]是否转为字符串
+
 ### 处理布尔值的建议
 
-建议 POJO 中布尔值一律定义为 Boolean 类型，且都不要加 is前缀，防止一些框架解析引起的序列化错误。
+建议 POJO 中布尔值一律定义为 Boolean 类型，且都不要加 is 前缀，防止一些框架解析引起的序列化错误。
 
 ```java
 public static class Person {
@@ -356,7 +362,7 @@ public class FieldFromBqRecordDeserializer extends JsonDeserializer<Boolean> {
 }
 ```
 
-用于序列中将字符串  Y 或者 N 转成 boolean
+用于序列中将字符串 Y 或者 N 转成 boolean
 
 ```java
 @Data
@@ -384,7 +390,11 @@ public final class TrialRequest {
 }
 ```
 
-### 枚举值转字符串（待补充）
+### 枚举值转字符串
+
+WRITE_ENUMS_USING_TO_STRING 枚举是否使用 Enum.toString()，否则 Enum.name() 默认值是 false
+WRITE_ENUMS_USING_INDEX 枚举值是否序列化为数字 默认值是 false
+WRITE_ENUM_KEYS_USING_INDEX Map 的 key 是枚举的时候使用数字 默认值是 false
 
 ## 遇到过的问题
 
@@ -444,7 +454,7 @@ public class User
 FasterXML Jackson 学习笔记
 <https://www.jianshu.com/p/4bd355715419>
 
-Jackson 注解 @JsonFormat_徐海兴的专栏-CSDN 博客
+Jackson 注解 @JsonFormat\_徐海兴的专栏-CSDN 博客
 <https://blog.csdn.net/u012326462/article/details/83019681>
 
 《轻松学习 Jackson》教程 - 996 极客教程
