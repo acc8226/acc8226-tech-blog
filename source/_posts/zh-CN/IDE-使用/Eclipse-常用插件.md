@@ -19,7 +19,7 @@ categories: IDE-使用
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-1762de3d71e25490.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-2\. 把关联的类拖进生成的 mg* 文件中，将自动生成关联关系.
+2\. 把关联的类拖进生成的 mg\* 文件中，将自动生成关联关系.
 
 ## 打开文件/文件夹位置插件
 

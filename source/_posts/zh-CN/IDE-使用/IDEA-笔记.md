@@ -94,30 +94,23 @@ File -> Settings… Editor -> Code Style
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-2c28fe32553db645.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-> JetBrains Runtime 是什么
-> JetBrains Runtime （即 JetBrains 运行时）是一个运行时环境，用于在 Windows，Mac OS X 和 Linux 上 运行 IntelliJ 平台的各种产品。JetBrains Runtime 基于 OpenJDK 项目，并进行了一些修改。这些修改包括：抗锯齿，Linux 上增强的字体渲染，HiDPI 支持，连字，一些官方版本中未提供的针对产品崩溃的修复程序以及其他小的增强功能。
+> JetBrains Runtime 是什么 JetBrains Runtime （即 JetBrains 运行时）是一个运行时环境，用于在 Windows，Mac OS X 和 Linux 上 运行 IntelliJ 平台的各种产品。JetBrains Runtime 基于 OpenJDK 项目，并进行了一些修改。这些修改包括：抗锯齿，Linux 上增强的字体渲染，HiDPI 支持，连字，一些官方版本中未提供的针对产品崩溃的修复程序以及其他小的增强功能。
 
 ## 快捷键
 
-Ctrl + N Navigate|Class Open any file in your project 快速打开类
-Ctrl + Shift + N Navigate|File Open any file in your project 快速打开文件
+Ctrl + N Navigate|Class Open any file in your project 快速打开类 Ctrl + Shift + N Navigate|File Open any file in your project 快速打开文件
 
-Ctrl + F  / Cmd + F  意为 find 在当前文件进行文本查找
-Ctrl + Shift + F      在当前项目进行文本查找
+Ctrl + F / Cmd + F 意为 find 在当前文件进行文本查找 Ctrl + Shift + F 在当前项目进行文本查找
 
-Ctrl + R  / Cmd + R 意为 replace 在当前文件进行文本替换
-Ctrl + Shift + R      在当前项目进行文本替换
+Ctrl + R / Cmd + R 意为 replace 在当前文件进行文本替换 Ctrl + Shift + R 在当前项目进行文本替换
 
-Ctrl + Shift + Up/Down 整块代码 范围内向上/下移动
-Alt + Shift + Up/Down 上/下移一行 或者 选中行代码向上/下移动
+Ctrl + Shift + Up/Down 整块代码 范围内向上/下移动 Alt + Shift + Up/Down 上/下移一行 或者 选中行代码向上/下移动
 
 Alt + Up/Down 在方法间快速移动定位
 
-Ctrl + O (Code|Override Methods) 重写方法
-Ctrl + I(Code|Implements Methods) 实现方法
+Ctrl + O (Code|Override Methods) 重写方法 Ctrl + I(Code|Implements Methods) 实现方法
 
-Ctrl + U 转到父类
-Ctrl + Alt + B 跳转到类 / 方法实现处
+Ctrl + U 转到父类 Ctrl + Alt + B 跳转到类 / 方法实现处
 
 Ctrl + Shift + U 大小写转化
 
@@ -127,53 +120,37 @@ Ctrl + Alt + L 格式化代码
 
 Ctrl + G 跳转到行
 
-Ctrl + Alt + 左方向键 | 快速返回上次查看代码的位置（Back）
-Ctrl + Alt + 右方向键 | 快速返回上次查看代码的位置（Forward）
+Ctrl + Alt + 左方向键 | 快速返回上次查看代码的位置（Back） Ctrl + Alt + 右方向键 | 快速返回上次查看代码的位置（Forward）
 
 Alt+F7 (Edit|Find|Find Usages)
 
-Ctrl + Q(View|Quick Documentation)
-Ctrl + B(Navigate|Declaration or Usages) 查看详情
-click the mouse on usages with the CTRL 进入详情
-Ctrl + F12 (Navigate|File Structure) + select element press Enter key
+Ctrl + Q(View|Quick Documentation) Ctrl + B(Navigate|Declaration or Usages) 查看详情 click the mouse on usages with the CTRL 进入详情 Ctrl + F12 (Navigate|File Structure) + select element press Enter key
 
-Ctrl + Shift + 空格 自动补全
-Shift + Click close tabs 还是喜欢用鼠标中键
+Ctrl + Shift + 空格 自动补全 Shift + Click close tabs 还是喜欢用鼠标中键
 
-Alt + Insert (Code|Generate) 自动生成，代码自动生成，如生成对象的 set / get 方法，构造函数，toString() 等
-Alt+F1 查到当前编辑元素
+Alt + Insert (Code|Generate) 自动生成，代码自动生成，如生成对象的 set / get 方法，构造函数，toString() 等 Alt+F1 查到当前编辑元素
 
-Ctrl + W(select word)
-Ctrl + 方向键（左 / 右）跳转到上一个 下一个单词的首位置
-Ctrl + 方向键（上 / 下）无效
+Ctrl + W(select word) Ctrl + 方向键（左 / 右）跳转到上一个 下一个单词的首位置 Ctrl + 方向键（上 / 下）无效
 
-Shift + 方向键（左 / 右）选中内容左/右移动一位
-Shift + 方向键（上 / 下）选中内容上 / 下移动一行
+Shift + 方向键（左 / 右）选中内容左/右移动一位 Shift + 方向键（上 / 下）选中内容上 / 下移动一行
 
 当光标在单词首 或者 尾的位置时，可以 Ctrl + Shift + Left/Right 选中靠左/靠右单词
 
-单行注释(//) ctrl+/   注释光标所在行代码，会根据当前不同文件类型使用不同的注释符号
-多行注释(//)  注释选中多行
-代码块注释   ctrl+shift+/
+单行注释(//) ctrl+/ 注释光标所在行代码，会根据当前不同文件类型使用不同的注释符号多行注释(//) 注释选中多行代码块注释 ctrl+shift+/
 
-Ctrl+X 默认剪切光标当前行。否则为剪切选中内容
-Ctrl+D  默认复制光标当前行到下一行。否则为复制选中内容到下一行
-Ctrl+Y 删除行
+Ctrl+X 默认剪切光标当前行。否则为剪切选中内容 Ctrl+D 默认复制光标当前行到下一行。否则为复制选中内容到下一行 Ctrl+Y 删除行
 
-清除无效包引用  Ctrl + Alt  + O
+清除无效包引用 Ctrl + Alt + O
 
-Alt + 左方向键       向左切换 tab 页
-Alt + 右方向键       向右切换 tab 页
+Alt + 左方向键 向左切换 tab 页 Alt + 右方向键 向右切换 tab 页
 
-抽取函数/方法  Command-Option-M（Ctrl-Alt-M）
+抽取函数/方法 Command-Option-M（Ctrl-Alt-M）
 
-**修改 Project 工具窗口（或其他活动工具窗口）大小**
- Ctrl+Shift+Right（Windows 或 Linux）或 ⇧⌘Right (macOS) 增加工具窗口宽度，按 Ctrl+Shift+Left 或 ⇧⌘Left 减少工具窗口宽度。
+**修改 Project 工具窗口（或其他活动工具窗口）大小** Ctrl+Shift+Right（Windows 或 Linux）或 ⇧⌘Right (macOS) 增加工具窗口宽度，按 Ctrl+Shift+Left 或 ⇧⌘Left 减少工具窗口宽度。
 
 对于其他工具窗口，例如 Run 或 Problems，可以使用 Ctrl+Shift+Up（Windows 或 Linux）或 ⇧⌘Up (macOS) 增加高度，使用 Ctrl+Shift+Down 或 ⇧⌘Down 减少高度。
 
-**使用 Esc 返回编辑器窗口，使用 F12 跳转到上次使用的工具窗口**
-完成 Project 工具窗口、Debug 窗口或 Maven 等工具窗口的操作后，使用 Esc 即可返回编辑器（不必在编辑器窗口中点击鼠标）。
+**使用 Esc 返回编辑器窗口，使用 F12 跳转到上次使用的工具窗口** 完成 Project 工具窗口、Debug 窗口或 Maven 等工具窗口的操作后，使用 Esc 即可返回编辑器（不必在编辑器窗口中点击鼠标）。
 
 还可以使用 F12 将焦点返回上次使用的工具窗口（作为该工具窗口的特定快捷键的替代方法）。
 
@@ -181,7 +158,7 @@ Shift + ESC 隐藏工具窗口 也能和 F12 连用。
 
 ## Live Templates
 
-Java 开发过程经常需要编写有固定格式的代码，例如说声明一个私有变量，logger 或者 bean 等等。对于这种小范围的代码生成，我们可以利用 IDEA 提供的 Live Templates 功能。刚开始觉得它只是一个简单的 Code Snippet，后来发现它支持变量函数配置，可以支持很复杂的代码生成。下面我来介绍一下Live Templates 的用法。
+Java 开发过程经常需要编写有固定格式的代码，例如说声明一个私有变量，logger 或者 bean 等等。对于这种小范围的代码生成，我们可以利用 IDEA 提供的 Live Templates 功能。刚开始觉得它只是一个简单的 Code Snippet，后来发现它支持变量函数配置，可以支持很复杂的代码生成。下面我来介绍一下 Live Templates 的用法。
 
 IDEA 自带很多常用的动态模板，在 Java 代码中输入 fori，回车就会出现
 
@@ -194,8 +171,8 @@ for (int i = 0; i < ; i++) {
 
 ![详见设置页面-Live Templates](https://upload-images.jianshu.io/upload_images/1662509-662f0d4a3c6ed377.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-* **psvm** 生成 main 方法的快捷键
-* **sout** 生成 `System.out.println();`
+- **psvm** 生成 main 方法的快捷键
+- **sout** 生成 `System.out.println();`
 
 ## Postfix Completion
 
@@ -249,7 +226,7 @@ Postfix Completion 功能本质上也是代码模板，只是它比 Live Templat
 
 ## 其他
 
-* 在创建 class 类的时候, 如果是 x.y.z.MyClass 的形式, IEDA 会自动创建 x.y.z 包, 是不是很强大
+- 在创建 class 类的时候, 如果是 x.y.z.MyClass 的形式, IEDA 会自动创建 x.y.z 包, 是不是很强大
 
 ## IntelliJ IDEA 两种 keymap 快捷键方案 Mac OS X 和 Mac OS X 10.5+ 的区别
 
@@ -257,34 +234,31 @@ Postfix Completion 功能本质上也是代码模板，只是它比 Live Templat
 
 因此，如果你有经常更换系统平台进行开发的需求，那么为了快捷键的更快适应，达到体验一致性，就**使用 Mac OS X 方案**；如果想要更爽的利用 mac 系统开发，没有跨平台和协作性的问题的话，就使用 Mac OS X 10.5+ 方案。
 
- 官网：<http://www.jetbrains.com/idea/download/#section=windows>
+官网：<http://www.jetbrains.com/idea/download/#section=windows>
 
 ![设置编码](https://upload-images.jianshu.io/upload_images/1662509-43b4d7de28f46b8b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-| **快捷键**            | **介绍**                                                     |
-| --------------------- | ------------------------------------------------------------ |
-| Alt + Enter           | 根据光标处所在的问题，提供快速修复选择，光标放在的位置不同提示的结果也不同（万能修复快捷键，同时可以帮助我们生成本地变量==eclipse中的ctrl+1）注意：非个人编码问题导致的错误，都可以尝试使用该快捷键修复 |
-| Alt + Insert          | 代码自动生成，如生成对象的 set / get 方法，构造函数，toString() 等 |
-| Shift + Shift         | 查找所有文件                                                 |
-| Ctrl + Alt + L        | 格式化代码，可以对当前文件和整个包目录使用                   |
-| Alt + 7               | 显示当前类中的所有方法、全局常量，方法还包括形参和返回值     |
-| Alt + F7              | 可以查看一个 Java 类、方法或变量的直接使用情况。               |
-| ctrl + alt +b         | 查看接口的实现类                                             |
-| ctrl + h              | 查看类或接口的继承关系                                       |
-| F7                    | 在 Debug 模式下，进入下一步，如果当前行断点是一个方法，则进入当前方法体内，Step Into |
-| F8                    | 在 Debug 模式下，进入下一步，如果当前行断点是一个方法，则不进入当前方法体内，Step Over |
-| F9                    | 在 Debug 模式下，恢复程序运行，但是如果该断点下面代码还有断点则停在下一个断点上，Resume |
+| **快捷键** | **介绍** |
+| --- | --- |
+| Alt + Enter | 根据光标处所在的问题，提供快速修复选择，光标放在的位置不同提示的结果也不同（万能修复快捷键，同时可以帮助我们生成本地变量==eclipse 中的 ctrl+1）注意：非个人编码问题导致的错误，都可以尝试使用该快捷键修复 |
+| Alt + Insert | 代码自动生成，如生成对象的 set / get 方法，构造函数，toString() 等 |
+| Shift + Shift | 查找所有文件 |
+| Ctrl + Alt + L | 格式化代码，可以对当前文件和整个包目录使用 |
+| Alt + 7 | 显示当前类中的所有方法、全局常量，方法还包括形参和返回值 |
+| Alt + F7 | 可以查看一个 Java 类、方法或变量的直接使用情况。 |
+| ctrl + alt +b | 查看接口的实现类 |
+| ctrl + h | 查看类或接口的继承关系 |
+| F7 | 在 Debug 模式下，进入下一步，如果当前行断点是一个方法，则进入当前方法体内，Step Into |
+| F8 | 在 Debug 模式下，进入下一步，如果当前行断点是一个方法，则不进入当前方法体内，Step Over |
+| F9 | 在 Debug 模式下，恢复程序运行，但是如果该断点下面代码还有断点则停在下一个断点上，Resume |
 
 ## Idea 合并 test 分支到主分支
 
-【local branches】本地分支
-【remote branches】远程仓库分支
+【local branches】本地分支【remote branches】远程仓库分支
 
-第一步: 合并到 master 主分支
-切换到 master 分支
+第一步: 合并到 master 主分支切换到 master 分支
 
-第二步: 合并代码到 master 主分支, 在合并的分支上点击 merge
-![点击merge](https://upload-images.jianshu.io/upload_images/1662509-4933ab0ca8f40e7d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+第二步: 合并代码到 master 主分支, 在合并的分支上点击 merge ![点击merge](https://upload-images.jianshu.io/upload_images/1662509-4933ab0ca8f40e7d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## IDEA 设置代理
 
@@ -314,21 +288,19 @@ ctrl+alt+s 进入快捷键设置界面。打开 Code Completion / 代码补全�
 
 ## 问题
 
-**@Override is not allowed when implementing interface method**
-@Override从 jdk1.5 开始出现的，是用来标注方法重写；通常方法重写发生在继承父类，重写父类方法，或者实现接口，实现接口方法；
+**@Override is not allowed when implementing interface method** @Override 从 jdk1.5 开始出现的，是用来标注方法重写；通常方法重写发生在继承父类，重写父类方法，或者实现接口，实现接口方法；
 
 @Override 能够保证你正确重写方法，当重写方法出错时（方法名误写、漏掉参数）编译器会提示编译错误
 
-1.问题出在 idea 得 jdk 版本低于 1.5 ：File → Project Structure → Modules  把JDK版本改成大于 1.5 就可以了
+1.问题出在 idea 得 jdk 版本低于 1.5 ：File → Project Structure → Modules 把 JDK 版本改成大于 1.5 就可以了
 
 ### 让 IDEA 显示标题栏，而不是跟菜单栏合并
 
-新版的 IDEA 默认把标题栏跟菜单栏合并了，变得美观了些，但是非常不方便拖动窗口，影响生产力
-解决方法：
+新版的 IDEA 默认把标题栏跟菜单栏合并了，变得美观了些，但是非常不方便拖动窗口，影响生产力解决方法：
 
-* 打开 Help -> Edit Custom VM Options…
-* 添加 -Dide.win.frame.decoration=false
-* 重启
+- 打开 Help -> Edit Custom VM Options…
+- 添加 -Dide.win.frame.decoration=false
+- 重启
 
 ### 重新分配地址的变量或者参数，IDEA 会默认给它们加上下划线
 
@@ -340,8 +312,7 @@ ctrl+alt+s 进入快捷键设置界面。打开 Code Completion / 代码补全�
 
 ### 提示：Boolean method ‘xxx‘ is always inverted
 
-提示详情：
-一个返回类型为布尔值的方法，被 IDEA 自动高亮，提示为 Boolean method 'xxx' is always inverted。并提供一个 Invert method 的解决方案。
+提示详情：一个返回类型为布尔值的方法，被 IDEA 自动高亮，提示为 Boolean method 'xxx' is always inverted。并提供一个 Invert method 的解决方案。
 
 ### IDEA 突然爆红，但是代码却可以正常运行
 
@@ -351,10 +322,9 @@ ctrl+alt+s 进入快捷键设置界面。打开 Code Completion / 代码补全�
 
 file --> Invalidate Caches /Restart. --> Invalidate and Restart
 
-### command line is too long. shorten command line for xxx的解决方法
+### command line is too long. shorten command line for xxx 的解决方法
 
-方式一：
-打开IDEA，找到项目最上部的 .idea ----- 双击打开 ----- 找到 workspace.xml ---- 双击打开该文件
+方式一：打开 IDEA，找到项目最上部的 .idea ----- 双击打开 ----- 找到 workspace.xml ---- 双击打开该文件
 
 在 workspace.xml 文件中搜索：`<component name="PropertiesComponent">` 包含配置内加上一条：`<property name="dynamic.classpath" value="true" />`
 
@@ -362,9 +332,7 @@ file --> Invalidate Caches /Restart. --> Invalidate and Restart
 
 方式二：
 
-第一步：找到该程序的配置信息编辑处
-第二步：找到修改选项的地方：“Modify options”，按照图中顺序选择
-第三步：再选择具体的 “Shorten command line”选项：classpath 路径
+第一步：找到该程序的配置信息编辑处第二步：找到修改选项的地方：“Modify options”，按照图中顺序选择第三步：再选择具体的 “Shorten command line”选项：classpath 路径
 
 ### idea 无法解析 SDK
 
@@ -372,10 +340,8 @@ file --> Invalidate Caches /Restart. --> Invalidate and Restart
 
 ## 参考
 
-IntelliJ IDEA_ReferenceCard
-<https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf>
+IntelliJ IDEA_ReferenceCard <https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf>
 
-伯乐在线 > 代码生成利器：IDEA 强大的 Live Templates
-ttp://blog.jobbole.com/110607/
+伯乐在线 > 代码生成利器：IDEA 强大的 Live Templates ttp://blog.jobbole.com/110607/
 
-JetBrains 官方发布快捷键技巧：IntelliJ IDEA 中，你完全不需要鼠标的 10 种情况 - IT之家 <https://www.ithome.com/0/573/291.htm>
+JetBrains 官方发布快捷键技巧：IntelliJ IDEA 中，你完全不需要鼠标的 10 种情况 - IT 之家 <https://www.ithome.com/0/573/291.htm>
