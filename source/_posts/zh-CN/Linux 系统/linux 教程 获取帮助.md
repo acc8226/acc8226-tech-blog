@@ -2,8 +2,7 @@
 title: linux 教程 获取帮助
 date: 2019-03-17 17:27:17
 updated: 2022-11-05 13:45:00
-categories:
-  - linux
+categories: linux
 ---
 
 ## 内建命令与外部命令之分

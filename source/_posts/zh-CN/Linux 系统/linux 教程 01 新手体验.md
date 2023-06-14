@@ -2,8 +2,7 @@
 title: linux 教程 01 新手体验
 date: 2019-03-17 17:27:17
 updated: 2022-11-05 13:45:00
-categories:
-  - linux
+categories: linux
 ---
 
 ## 如何学习 Linux

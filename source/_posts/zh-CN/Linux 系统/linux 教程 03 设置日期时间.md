@@ -2,8 +2,7 @@
 title: linux 教程 03 设置日期时间
 date: 2019-03-17 17:27:17
 updated: 2022-11-05 13:45:00
-categories:
-  - linux
+categories: linux
 ---
 
 ## 设置日期和时间

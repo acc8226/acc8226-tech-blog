@@ -2,8 +2,7 @@
 title: linux 教程 进程管理
 date: 2019-03-17 17:27:17
 updated: 2022-11-05 13:45:00
-categories:
-  - linux
+categories: linux
 ---
 
 `top` 工具是我们常用的一个查看工具，能实时的查看我们系统的一些关键信息的变化:

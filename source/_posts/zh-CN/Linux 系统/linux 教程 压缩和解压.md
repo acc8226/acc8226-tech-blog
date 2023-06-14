@@ -2,8 +2,7 @@
 title: linux 教程 压缩和解压
 date: 2019-03-17 17:27:17
 updated: 2022-11-05 13:45:00
-categories:
-  - linux
+categories: linux
 ---
 
 在讲 Linux 上的压缩工具之前，有必要先了解一下常见常用的压缩包文件格式。在 Windows 上最常见的不外乎这两种 .zip，.7z 后缀的压缩文件。而在 Linux 上面常见的格式除了以上两种外，还有 .rar，.gz，.xz，.bz2，.tar，.tar.gz，.tar.xz，.tar.bz2，简单介绍如下：

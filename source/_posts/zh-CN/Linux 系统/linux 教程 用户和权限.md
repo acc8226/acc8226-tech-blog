@@ -2,8 +2,7 @@
 title: linux 教程 用户和权限
 date: 2019-03-17 17:27:17
 updated: 2022-11-05 13:45:00
-categories:
-  - linux
+categories: linux
 ---
 
 ## 用户身份与能力

@@ -2,8 +2,7 @@
 title: linux 教程 02 软件安装
 date: 2019-03-17 17:27:17
 updated: 2022-11-05 13:45:00
-categories:
-  - linux
+categories: linux
 ---
 
 Linux 的软件安装目录是也是有讲究的，理解这一点，在对系统管理是有益的。

@@ -2,8 +2,7 @@
 title: SED单行脚本快速参考（Unix 流编辑器）
 date: 2019-03-17 17:27:17
 updated: 2022-11-05 13:45:00
-categories:
-  - linux
+categories: linux
 ---
 
 英文标题：USEFUL ONE-LINE SCRIPTS FOR SED (Unix stream editor)
