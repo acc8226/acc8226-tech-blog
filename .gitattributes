@@ -1,0 +1,42 @@
+* text=auto eol=lf
+
+# Identify binary files
+*.png binary
+*.jpg binary 
+*.gif binary
+
+# Force svn:eol-style native on .gitignore 
+.gitignore text eol=native
+
+# Force Unix line endings on shell scripts
+*.sh text eol=lf
+
+# Force Unix line endings on Doxygen files
+*.dox text eol=lf
+*.md  text eol=lf
+
+# YAML and JSON always have LF line endings 
+*.yaml text eol=lf
+*.yml  text eol=lf
+*.json text eol=lf
+
+# Markdown files always have LF line endings
+*.md  text eol=lf
+*.markdown text eol=lf 
+
+# SQL files always have LF line endings
+*.sql text eol=lf
+
+# XML always has LF line endings
+*.xml text eol=lf
+
+# Windows C# files should have CRLF line endings   
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.cs text eol=crlf
+
+*.java text eol=lf
+*.js text eol=lf
+*.kt text eol=lf
+*.kotlin text eol=lf
+*.ts text eol=lf

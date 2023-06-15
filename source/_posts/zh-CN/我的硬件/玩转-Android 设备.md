@@ -2,9 +2,7 @@
 title: 玩转-Android 设备
 date: 2017-06-01 08:00:00
 updated: 2023-05-17 22:48:00
-categories:
-  - 收藏
-  - 我的硬件
+categories: [收藏, 我的硬件]
 ---
 
 ## 历程
