@@ -25,6 +25,10 @@ System.out.printf("%d", 123.45);
 
 Exception in thread "main" java.util.IllegalFormatConversionException: d != java.lang.Double
 
+## 提供给前端的富文本
+
+参考已过时的 ueditor实现富文本编辑器，其实就是提供一系列文件上传接口而已。
+
 ## 参考
 
 Java string.format IllegalFormatConversionException_u014515854的博客-CSDN博客

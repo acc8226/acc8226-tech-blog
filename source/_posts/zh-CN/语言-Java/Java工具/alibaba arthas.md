@@ -5,32 +5,31 @@ updated: 2022-09-01 18:13:00
 categories:
   - 语言-Java
   - 工具
-tags:
-- Java
+tags: Java
 ---
 
 ## Arthas
 
 English version goes [here](README.md).
 
-`Arthas` 是Alibaba开源的 Java 诊断工具，深受开发者喜爱。
+`Arthas` 是 Alibaba 开源的 Java 诊断工具，深受开发者喜爱。
 
 当你遇到以下类似问题而束手无策时，`Arthas`可以帮助你解决：
 
-* 这个类从哪个 jar 包加载的？为什么会报各种类相关的 Exception？
-* 我改的代码为什么没有执行到？难道是我没 commit？分支搞错了？
-* 遇到问题无法在线上 debug，难道只能通过加日志再重新发布吗？
-* 线上遇到某个用户的数据处理有问题，但线上同样无法 debug，线下无法重现！
-* 是否有一个全局视角来查看系统的运行状况？
-* 有什么办法可以监控到 JVM 的实时运行状态？
-* 怎么快速定位应用的热点，生成火焰图？
-* 怎样直接从 JVM 内查找某个类的实例？
+- 这个类从哪个 jar 包加载的？为什么会报各种类相关的 Exception？
+- 我改的代码为什么没有执行到？难道是我没 commit？分支搞错了？
+- 遇到问题无法在线上 debug，难道只能通过加日志再重新发布吗？
+- 线上遇到某个用户的数据处理有问题，但线上同样无法 debug，线下无法重现！
+- 是否有一个全局视角来查看系统的运行状况？
+- 有什么办法可以监控到 JVM 的实时运行状态？
+- 怎么快速定位应用的热点，生成火焰图？
+- 怎样直接从 JVM 内查找某个类的实例？
 
-`Arthas`支持 JDK 6+，支持Linux/Mac/Windows，采用命令行交互模式，同时提供丰富的 `Tab` 自动补全功能，进一步方便进行问题的定位和诊断。
+`Arthas`支持 JDK 6+，支持 Linux/Mac/Windows，采用命令行交互模式，同时提供丰富的 `Tab` 自动补全功能，进一步方便进行问题的定位和诊断。
 
 ### [在线教程(推荐)](https://arthas.aliyun.com/doc/arthas-tutorials.html?language=cn)
 
-* [使用方法](tutorials/katacoda/README_CN.md#在线教程使用方法)
+- [使用方法](tutorials/katacoda/README_CN.md#在线教程使用方法)
 
 ### 快速开始
 
@@ -49,7 +48,7 @@ java -jar arthas-boot.jar
 java -jar arthas-boot.jar -h
 ```
 
-* 如果下载速度比较慢，可以使用aliyun的镜像：`java -jar arthas-boot.jar --repo-mirror aliyun --use-http`
+- 如果下载速度比较慢，可以使用 aliyun 的镜像：`java -jar arthas-boot.jar --repo-mirror aliyun --use-http`
 
 #### 使用`as.sh`
 
@@ -61,41 +60,41 @@ curl -L https://arthas.aliyun.com/install.sh | sh
 
 上述命令会下载启动脚本文件 `as.sh` 到当前目录，你可以放在任何地方或将其加入到 `$PATH` 中。
 
-直接在shell下面执行`./as.sh`，就会进入交互界面。
+直接在 shell 下面执行`./as.sh`，就会进入交互界面。
 
 也可以执行`./as.sh -h`来获取更多参数信息。
 
 ### 文档
 
-* [在线教程(推荐)](https://arthas.aliyun.com/doc/arthas-tutorials.html?language=cn)
-* [用户文档](https://arthas.aliyun.com/doc/)
-* [安装](https://arthas.aliyun.com/doc/install-detail.html)
-* [下载](https://arthas.aliyun.com/doc/download.html)
-* [快速入门](https://arthas.aliyun.com/doc/quick-start.html)
-* [进阶使用](https://arthas.aliyun.com/doc/advanced-use.html)
-* [命令列表](https://arthas.aliyun.com/doc/commands.html)
-* [WebConsole](https://arthas.aliyun.com/doc/web-console.html)
-* [Docker](https://arthas.aliyun.com/doc/docker.html)
-* [Arthas Spring Boot Starter](https://arthas.aliyun.com/doc/spring-boot-starter.html)
-* [用户案例](https://github.com/alibaba/arthas/issues?q=label%3Auser-case)
-* [FAQ/常见问题](https://arthas.aliyun.com/doc/faq)
-* [编译调试/参与贡献](https://github.com/alibaba/arthas/blob/master/CONTRIBUTING.md)
-* [Release Notes](https://github.com/alibaba/arthas/releases)
-* [QQ群/钉钉群](https://arthas.aliyun.com/doc/contact-us.html)
+- [在线教程(推荐)](https://arthas.aliyun.com/doc/arthas-tutorials.html?language=cn)
+- [用户文档](https://arthas.aliyun.com/doc/)
+- [安装](https://arthas.aliyun.com/doc/install-detail.html)
+- [下载](https://arthas.aliyun.com/doc/download.html)
+- [快速入门](https://arthas.aliyun.com/doc/quick-start.html)
+- [进阶使用](https://arthas.aliyun.com/doc/advanced-use.html)
+- [命令列表](https://arthas.aliyun.com/doc/commands.html)
+- [WebConsole](https://arthas.aliyun.com/doc/web-console.html)
+- [Docker](https://arthas.aliyun.com/doc/docker.html)
+- [Arthas Spring Boot Starter](https://arthas.aliyun.com/doc/spring-boot-starter.html)
+- [用户案例](https://github.com/alibaba/arthas/issues?q=label%3Auser-case)
+- [FAQ/常见问题](https://arthas.aliyun.com/doc/faq)
+- [编译调试/参与贡献](https://github.com/alibaba/arthas/blob/master/CONTRIBUTING.md)
+- [Release Notes](https://github.com/alibaba/arthas/releases)
+- [QQ 群/钉钉群](https://arthas.aliyun.com/doc/contact-us.html)
 
 ### 案例展示
 
 #### Dashboard
 
-* https://arthas.aliyun.com/doc/dashboard
+- https://arthas.aliyun.com/doc/dashboard
 
 ![dashboard](site/docs/.vuepress/public/images/dashboard.png)
 
 #### Thread
 
-* https://arthas.aliyun.com/doc/thread
+- https://arthas.aliyun.com/doc/thread
 
-一目了然的了解系统的状态，哪些线程比较占cpu？他们到底在做什么？
+一目了然的了解系统的状态，哪些线程比较占 cpu？他们到底在做什么？
 
 ```text
 $ thread -n 3
@@ -123,7 +122,7 @@ $ thread -n 3
 
 #### jad
 
-* https://arthas.aliyun.com/doc/jad
+- https://arthas.aliyun.com/doc/jad
 
 对类进行反编译:
 
@@ -155,7 +154,7 @@ public interface Servlet {
 
 #### mc
 
-* <https://arthas.aliyun.com/doc/mc>
+- <https://arthas.aliyun.com/doc/mc>
 
 Memory Compiler/内存编译器，编译`.java`文件生成`.class`。
 
@@ -165,9 +164,9 @@ mc /tmp/Test.java
 
 #### retransform
 
-* https://arthas.aliyun.com/doc/retransform
+- https://arthas.aliyun.com/doc/retransform
 
-加载外部的`.class`文件，retransform 热更新 jvm 已加载的类。
+加载外部的`.class`文件，retransform  热更新 jvm 已加载的类。
 
 ```bash
 retransform /tmp/Test.class
@@ -176,7 +175,7 @@ retransform -c 327a647b /tmp/Test.class /tmp/Test\$Inner.class
 
 #### sc
 
-* <https://arthas.aliyun.com/doc/sc>
+- <https://arthas.aliyun.com/doc/sc>
 
 查找 JVM 中已经加载的类
 
@@ -213,7 +212,7 @@ $ sc -d org.springframework.web.context.support.XmlWebApplicationContext
 
 #### vmtool
 
-* <https://arthas.aliyun.com/doc/vmtool>
+- <https://arthas.aliyun.com/doc/vmtool>
 
 从 JVM heap 中获取指定类的实例。
 
@@ -272,7 +271,7 @@ ts=2018-09-18 10:11:45;thread_name=http-bio-8080-exec-10;id=d9;is_daemon=true;pr
 
 #### Trace
 
-* <https://arthas.aliyun.com/doc/trace>
+- <https://arthas.aliyun.com/doc/trace>
 
 观察方法执行的时候哪个子调用比较慢:
 
@@ -296,9 +295,9 @@ ts=2018-09-18 10:26:28;result=@ArrayList[
 
 #### Monitor
 
-* https://arthas.aliyun.com/doc/monitor
+- https://arthas.aliyun.com/doc/monitor
 
-监控某个特殊方法的调用统计数据，包括总调用次数，平均rt，成功率等信息，每隔5秒输出一次。
+监控某个特殊方法的调用统计数据，包括总调用次数，平均 rt，成功率等信息，每隔 5 秒输出一次。
 
 ```bash
 $ monitor -c 5 org.apache.dubbo.demo.provider.DemoServiceImpl sayHello
@@ -317,7 +316,7 @@ Affect(class-cnt:1 , method-cnt:1) cost in 109 ms.
 
 #### Time Tunnel(tt)
 
-* <https://arthas.aliyun.com/doc/tt>
+- <https://arthas.aliyun.com/doc/tt>
 
 记录方法调用信息，支持事后查看方法调用的参数，返回值，抛出的异常等信息，仿佛穿越时空隧道回到调用现场一般。
 
@@ -367,7 +366,7 @@ $ classloader
 
 #### Profiler/FlameGraph/火焰图
 
-* https://arthas.aliyun.com/doc/profiler
+- https://arthas.aliyun.com/doc/profiler
 
 ```bash
 $ profiler start
@@ -386,26 +385,26 @@ OK
 
 #### Arthas Spring Boot Starter
 
-* [Arthas Spring Boot Starter](https://arthas.aliyun.com/doc/spring-boot-starter.html)
+- [Arthas Spring Boot Starter](https://arthas.aliyun.com/doc/spring-boot-starter.html)
 
 ### 衍生项目
 
-* [Bistoury: 一个集成了Arthas的项目](https://github.com/qunarcorp/bistoury)
-* [一个使用MVEL脚本的fork](https://github.com/XhinLiang/arthas)
+- [Bistoury: 一个集成了 Arthas 的项目](https://github.com/qunarcorp/bistoury)
+- [一个使用 MVEL 脚本的 fork](https://github.com/XhinLiang/arthas)
 
 ### Credit
 
 #### Projects
 
-* [bytekit](https://github.com/alibaba/bytekit) Java Bytecode Kit，Arthas里字节码增强的内核。
-* [greys-anatomy](https://github.com/oldmanpushcart/greys-anatomy): Arthas代码基于Greys二次开发而来，非常感谢Greys之前所有的工作，以及Greys原作者对Arthas提出的意见和建议！
-* [termd](https://github.com/alibaba/termd): Arthas的命令行实现基于termd开发，是一款优秀的命令行程序开发框架，感谢termd提供了优秀的框架。
-* [crash](https://github.com/crashub/crash): Arthas的文本渲染功能基于crash中的文本渲染功能开发，可以从[这里](https://github.com/crashub/crash/tree/1.3.2/shell)看到源码，感谢crash在这方面所做的优秀工作。
-* [cli](https://github.com/alibaba/cli): Arthas的命令行界面基于vert.x提供的cli库进行开发，感谢vert.x在这方面做的优秀工作。
-* [compiler](https://github.com/skalogs/SkaETL/tree/master/compiler) Arthas里的内存编译器代码来源
-* [Apache Commons Net](https://commons.apache.org/proper/commons-net/) Arthas里的Telnet Client代码来源
-* [async-profiler](https://github.com/jvm-profiling-tools/async-profiler) Arthas's profiler 命令.
+- [bytekit](https://github.com/alibaba/bytekit) Java Bytecode Kit，Arthas 里字节码增强的内核。
+- [greys-anatomy](https://github.com/oldmanpushcart/greys-anatomy): Arthas 代码基于 Greys 二次开发而来，非常感谢 Greys 之前所有的工作，以及 Greys 原作者对 Arthas 提出的意见和建议！
+- [termd](https://github.com/alibaba/termd): Arthas 的命令行实现基于 termd 开发，是一款优秀的命令行程序开发框架，感谢 termd 提供了优秀的框架。
+- [crash](https://github.com/crashub/crash): Arthas 的文本渲染功能基于 crash 中的文本渲染功能开发，可以从[这里](https://github.com/crashub/crash/tree/1.3.2/shell)看到源码，感谢 crash 在这方面所做的优秀工作。
+- [cli](https://github.com/alibaba/cli): Arthas 的命令行界面基于 vert.x 提供的 cli 库进行开发，感谢 vert.x 在这方面做的优秀工作。
+- [compiler](https://github.com/skalogs/SkaETL/tree/master/compiler) Arthas 里的内存编译器代码来源
+- [Apache Commons Net](https://commons.apache.org/proper/commons-net/) Arthas 里的 Telnet Client 代码来源
+- [async-profiler](https://github.com/jvm-profiling-tools/async-profiler) Arthas's profiler 命令.
 
 ### 仓库镜像
 
-* [码云Arthas](https://gitee.com/arthas/arthas)
+- [码云 Arthas](https://gitee.com/arthas/arthas)

@@ -13,7 +13,6 @@
 
 # Force Unix line endings on Doxygen files
 *.dox text eol=lf
-*.md  text eol=lf
 
 # YAML and JSON always have LF line endings 
 *.yaml text eol=lf
@@ -38,5 +37,4 @@
 *.java text eol=lf
 *.js text eol=lf
 *.kt text eol=lf
-*.kotlin text eol=lf
 *.ts text eol=lf

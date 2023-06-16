@@ -5,10 +5,15 @@ semi: false
 tabWidth: 4
 overrides:
   - files:
-      - "*.md"
-      - "*.markdown"
+      - "*.js"
+      - "*.ts"
       - "*.yml"
       - "*.yaml"
+    options:
+      tabWidth: 2
+  - files:
+      - "*.md"
+      - "*.markdown"
     options:
       tabWidth: 2
   - files:
@@ -17,3 +22,7 @@ overrides:
       - "*.cs"
     options:
       endOfLine: crlf
+  - files:
+      - "package.json"
+    options:
+      tabWidth: 2

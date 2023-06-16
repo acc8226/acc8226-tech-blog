@@ -52,6 +52,8 @@ Ctrl + V 粘贴
 显示桌面 Win + D
 切换程序 ALT + Tab
 
+win + shift + s 截屏
+
 **chrome 谷歌系浏览器常用快捷键**
 Ctrl + J 打开下载窗口
 
