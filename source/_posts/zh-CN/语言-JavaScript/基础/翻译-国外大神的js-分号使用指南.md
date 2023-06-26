@@ -3,8 +3,7 @@ title: 翻译-国外大神的 js 分号使用指南
 categories:
   - 语言
   - JavaScript
-tags:
-- js
+tags: js
 ---
 
 * Required: When two statements are on the same line
@@ -32,6 +31,7 @@ alert("hi");                  // function call
 ```
 
 * Avoid!
+
 避免
 1. 你不应该在一个右括号后面加上分号。除了 do while 的形式
 

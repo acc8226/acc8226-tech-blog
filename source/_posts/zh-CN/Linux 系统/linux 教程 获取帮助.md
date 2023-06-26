@@ -39,15 +39,15 @@ man 得到的内容**比用 help 更多更详细**，而且　 man 　没有内�
 在尝试上面这个命令时我们会发现最左上角显示“ LS （1）”，在这里，“ LS ”表示手册名称，而“（1）”表示该手册位于第一章节。这个章节又是什么？在 man 手册中一共有这么几个章节
 
 章节数 说明
-1	Standard commands （标准命令）
-2	System calls （系统调用）
-3	Library functions （库函数）
-4	Special devices （设备说明）
-5	File formats （文件格式）
-6	Games and toys （游戏和娱乐）
-7	Miscellaneous （杂项）
-8	Administrative Commands （管理员命令）
-9	其他（Linux 特定的）， 用来存放内核例行程序的文档。
+1 Standard commands （标准命令）
+2 System calls （系统调用）
+3 Library functions （库函数）
+4 Special devices （设备说明）
+5 File formats （文件格式）
+6 Games and toys （游戏和娱乐）
+7 Miscellaneous （杂项）
+8 Administrative Commands （管理员命令）
+9 其他（Linux 特定的）， 用来存放内核例行程序的文档。
 
 打开手册之后我们可以通过 pgup 与 pgdn 或者上下键来上下翻看，可以按 q 退出当前页面
 

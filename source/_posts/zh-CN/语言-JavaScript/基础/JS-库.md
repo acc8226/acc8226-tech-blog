@@ -3,8 +3,7 @@ title: JS-库
 categories:
   - 语言
   - JavaScript
-tags:
-- js
+tags: js
 ---
 
 JavaScript 框架（库）

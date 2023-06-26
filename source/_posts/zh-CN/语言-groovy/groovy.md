@@ -11,7 +11,7 @@ Download <https://groovy.apache.org/download.html>
 
 Groovy 是基于 JVM 虚拟机的一种动态语言，它的语法和 Java 非常相似，由 Java 入门 Groovy，基本上没有任何障碍。Groovy 完全兼容 Java，又在此基础上增加了很多动态类型和灵活的特性，比如支持闭包，支持 DSL，可以说它是一门非常灵活的动态脚本语言。
 
-Groovy 的特性虽然不多，但也有一些，我们不可能在这里都讲完，在这里我挑一些和 Gradle 有关的知识讲，让大家很快的入门 Groovy，并且能看懂这门脚本语言，知道在 Gradle 为什么这么写。其次是每个 Gradle 的 build 脚本文件都是一个 Groovy 脚本文件，你可以在里面写任何符合 Groovy 的代码，比如定义类，生命函数，定义变量等等，而 Groovy 又完全兼容 Java，这就意味着你可以在 build 脚本文件里写任何的 Java代码，非常灵活方便。
+Groovy 的特性虽然不多，但也有一些，我们不可能在这里都讲完，在这里我挑一些和 Gradle 有关的知识讲，让大家很快的入门 Groovy，并且能看懂这门脚本语言，知道在 Gradle 为什么这么写。其次是每个 Gradle 的 build 脚本文件都是一个 Groovy 脚本文件，你可以在里面写任何符合 Groovy 的代码，比如定义类，生命函数，定义变量等等，而 Groovy 又完全兼容 Java，这就意味着你可以在 build 脚本文件里写任何的 Java 代码，非常灵活方便。
 
 ## 示例
 
@@ -36,8 +36,8 @@ class Example {
 
 在 Groovy 中，**单引号和双引号**都可以定义一个字符串常量（Java 里单引号定义一个字符），不同的是单引号标记的是纯粹的字符串常量，而不是对字符串里的表达式做运算，但是双引号可以。
 
-* 单引号没有运算的能力，它里面的所有都是常量字符串。
-* 双引号可以直接进行表达式计算的这个能力非常好用，我们可以用这种方式进行字符串链接运算，再也不用 Java 中繁琐的 +号了。**记住这个嵌套的规则，一个美元符号紧跟着一对花括号，花括号里放表达式**，比如`${name}`,`${1+1}`等等，**只有一个变量的时候可以省略花括号**，比如 `$name`。
+- 单引号没有运算的能力，它里面的所有都是常量字符串。
+- 双引号可以直接进行表达式计算的这个能力非常好用，我们可以用这种方式进行字符串链接运算，再也不用 Java 中繁琐的 +号了。**记住这个嵌套的规则，一个美元符号紧跟着一对花括号，花括号里放表达式**，比如`${name}`,`${1+1}`等等，**只有一个变量的时候可以省略花括号**，比如 `$name`。
 
 ```groovy
 task printStringVar << {
@@ -91,8 +91,8 @@ task map << {
 
 ### 方法
 
-* 括号是可以省略的
-* return 是可以不写的
+- 括号是可以省略的
+- return 是可以不写的
 
 ```groovy
 task testMethod <<{
@@ -122,7 +122,7 @@ def getMax(int i1, int i2) {
 ```
 
 **代码块是可以作为参数传递的**
-代码块--一段被花括号包围的代码，其实就是我们后面要将的闭包，Groovy 是允许其作为参数传递的，但是结合这我们上面方法的特性，最后的基于闭包的方法调用就会非常优雅、易读。以我们的集合的each方法为例，它接受的参数其实就是一个闭包。
+代码块--一段被花括号包围的代码，其实就是我们后面要将的闭包，Groovy 是允许其作为参数传递的，但是结合这我们上面方法的特性，最后的基于闭包的方法调用就会非常优雅、易读。以我们的集合的 each 方法为例，它接受的参数其实就是一个闭包。
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-72f3bfd7fbf9e588.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -151,11 +151,11 @@ class Person {
 
 ## 闭包
 
-闭包是 Groovy 的一个非常重要的特性，可以说他是 DSL 的基础。闭包不是 Groovy 的首创，但是它支持这一重要特性，这就使用我们的代码灵活、轻量、可复用，再也不用像Java一样动不动就要搞一个类了，虽然 Java 后来有了匿名内部类，但是一样冗余不灵活。
+闭包是 Groovy 的一个非常重要的特性，可以说他是 DSL 的基础。闭包不是 Groovy 的首创，但是它支持这一重要特性，这就使用我们的代码灵活、轻量、可复用，再也不用像 Java 一样动不动就要搞一个类了，虽然 Java 后来有了匿名内部类，但是一样冗余不灵活。
 
 ### 初识闭包
 
-前面我们讲过，闭包其实就是一段代码块，下面我们就一步步实现自己的闭包，了解闭包的it变量的由来。集合的 each 方法我们已经非常熟悉了，我们就以其为例，实现一个类似的闭包功能。
+前面我们讲过，闭包其实就是一段代码块，下面我们就一步步实现自己的闭包，了解闭包的 it 变量的由来。集合的 each 方法我们已经非常熟悉了，我们就以其为例，实现一个类似的闭包功能。
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-a0a4d0333795d2db.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -163,7 +163,7 @@ class Person {
 
 ### 向闭包传递参数
 
-当闭包有一个参数时，默认就是it；当有多个参数是，it就不能表示了，我们需要把参数一一列出。
+当闭包有一个参数时，默认就是 it；当有多个参数是，it 就不能表示了，我们需要把参数一一列出。
 
 ```groovy
 task helloClosure << {
@@ -218,7 +218,7 @@ class Delegate{
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-f46f3240cbd3f674.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-闭包内方法的处理顺序是thisObject > owner > delegate。
+闭包内方法的处理顺序是 thisObject > owner > delegate。
 
 ## DSL
 
@@ -230,7 +230,7 @@ DSL 涉及的东西还有很多，这里我们简单的提一下概念，让大�
 
 ## 参考
 
-Groovy 教程_w3cschool
+Groovy 教程\_w3cschool
 <https://www.w3cschool.cn/groovy/>
 
-本文纯属自学历程 + 一些记录，绝大部分内容来自原书 [Android Gradle权威指南](https://yuedu.baidu.com/ebook/14a722970740be1e640e9a3e)。觉得对你有用，请支持原书。
+本文纯属自学历程 + 一些记录，绝大部分内容来自原书 [Android Gradle 权威指南](https://yuedu.baidu.com/ebook/14a722970740be1e640e9a3e)。觉得对你有用，请支持原书。

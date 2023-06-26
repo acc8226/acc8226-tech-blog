@@ -5,14 +5,13 @@ updated: 2020-01-22 23:20:55
 categories:
   - 语言
   - JavaScript
-tags:
-- js
+tags: js
 ---
 
 JavaScript Window - 浏览器对象模型
 浏览器对象模型 (BOM) 使 JavaScript 有能力与浏览器"对话"。
 
-Window 对象是BOM中所有对象的核心，除了是BOM中所有对象的父对象外，还包含一些窗口控制函数。
+Window 对象是 BOM 中所有对象的核心，除了是 BOM 中所有对象的父对象外，还包含一些窗口控制函数。
 
 ### Window 对象
 
@@ -27,7 +26,7 @@ Window 对象是BOM中所有对象的核心，除了是BOM中所有对象的父�
 甚至 HTML DOM 的 document 也是 window 对象的属性之一
 
 Window 子对象
-Window的**子对象**主要有如下几个：
+Window 的**子对象**主要有如下几个：
 
 1. JavaScript document 对象
 2. JavaScript frames 对象
@@ -39,13 +38,15 @@ Window的**子对象**主要有如下几个：
 ### Window 尺寸
 
 ```javascript
-var w=window.innerWidth
-|| document.documentElement.clientWidth
-|| document.body.clientWidth;
+var w =
+  window.innerWidth ||
+  document.documentElement.clientWidth ||
+  document.body.clientWidth
 
-var h=window.innerHeight
-|| document.documentElement.clientHeight
-|| document.body.clientHeight;
+var h =
+  window.innerHeight ||
+  document.documentElement.clientHeight ||
+  document.body.clientHeight
 ```
 
 ## Window Screen
@@ -59,7 +60,7 @@ window.screen 对象包含有关用户屏幕的信息。
 
 ```html
 <script>
-  document.write("可用宽度: " + screen.availWidth);
+  document.write("可用宽度: " + screen.availWidth)
 </script>
 ```
 
@@ -67,16 +68,16 @@ window.screen 对象包含有关用户屏幕的信息。
 
 window.location 对象用于获得当前页面的地址 (URL)，并把浏览器重定向到新的页面。
 
-这种方法既可以用于具有onclick事件的标签，也可以用于满足某些条件进行跳转，特点是方便且灵活。
+这种方法既可以用于具有 onclick 事件的标签，也可以用于满足某些条件进行跳转，特点是方便且灵活。
 
-**window.location** 对象在编写时可不使用 window 这个前缀。 一些例子：
+**window.location**  对象在编写时可不使用 window 这个前缀。 一些例子：
 
 一些实例:
 
-* [location.hostname](https://www.w3cschool.cn/jsref/prop-loc-hostname.html) 返回 web 主机的域名
-* [location.pathname](https://www.w3cschool.cn/jsref/prop-loc-pathname.html) 返回当前页面的路径和文件名
-* [location.port](https://www.w3cschool.cn/jsref/prop-loc-port.html) 返回 web 主机的端口 （80 或 443）
-* [location.protocol](https://www.w3cschool.cn/jsref/prop-loc-protocol.html) 返回所使用的 web 协议（http:// 或 https://）
+- [location.hostname](https://www.w3cschool.cn/jsref/prop-loc-hostname.html)  返回 web 主机的域名
+- [location.pathname](https://www.w3cschool.cn/jsref/prop-loc-pathname.html)  返回当前页面的路径和文件名
+- [location.port](https://www.w3cschool.cn/jsref/prop-loc-port.html)  返回 web 主机的端口 （80 或 443）
+- [location.protocol](https://www.w3cschool.cn/jsref/prop-loc-protocol.html)  返回所使用的 web 协议（http:// 或 https://）
 
 ## Window History
 
@@ -86,8 +87,8 @@ window.location 对象用于获得当前页面的地址 (URL)，并把浏览器�
 
 一些方法：
 
-* [history.back()](https://www.w3cschool.cn/jsref/met-his-back.html) - 与在浏览器点击后退按钮相同
-* [history.forward()](https://www.w3cschool.cn/jsref/met-his-forward.html) - 与在浏览器中点击向前按钮向前相同
+- [history.back()](https://www.w3cschool.cn/jsref/met-his-back.html) - 与在浏览器点击后退按钮相同
+- [history.forward()](https://www.w3cschool.cn/jsref/met-his-forward.html) - 与在浏览器中点击向前按钮向前相同
 
 ## window.navigator
 
@@ -131,13 +132,13 @@ setInterval() 方法
 setInterval() 间隔指定的毫秒数不停地执行指定的代码
 
 ```js
-window.setInterval("javascript function", milliseconds);
+window.setInterval("javascript function", milliseconds)
 ```
 
 ### 如何停止执行?
 
 clearInterval() 方法用于停止 setInterval() 方法执行的函数代码。
-window.clearInterval() 方法可以不使用window前缀，直接使用函数clearInterval()。
+window.clearInterval() 方法可以不使用 window 前缀，直接使用函数 clearInterval()。
 要使用 clearInterval() 方法, 在创建计时方法时你必须使用全局变量
 
 ```html
@@ -145,17 +146,17 @@ window.clearInterval() 方法可以不使用window前缀，直接使用函数cle
 <button onclick="myStopFunction()">Stop time</button>
 
 <script>
-var myVar=setInterval(function(){myTimer()},1000);
-function myTimer()
-{
-var d=new Date();
-var t=d.toLocaleTimeString();
-document.getElementById("demo").innerHTML=t;
-}
-function myStopFunction()
-{
-clearInterval(myVar);
-}
+  var myVar = setInterval(function () {
+    myTimer()
+  }, 1000)
+  function myTimer() {
+    var d = new Date()
+    var t = d.toLocaleTimeString()
+    document.getElementById("demo").innerHTML = t
+  }
+  function myStopFunction() {
+    clearInterval(myVar)
+  }
 </script>
 ```
 
@@ -164,18 +165,18 @@ clearInterval(myVar);
 语法
 
 ```js
-window.setTimeout("javascript 函数",毫秒数);
+window.setTimeout("javascript 函数", 毫秒数)
 ```
 
-使用和 setInterval()类似, 顺便可以 clearTimeout() 方法用于停止执行setTimeout()方法的函数代码。
+使用和 setInterval()类似, 顺便可以 clearTimeout() 方法用于停止执行 setTimeout()方法的函数代码。
 
 ## JavaScript Cookies
 
 Cookies 用于存储 web 页面的用户信息。
 
-由于 JavaScript 是运行在客户端的脚本，所以可以使用JavaScript来设置运行在客户端的Cookies。
+由于 JavaScript 是运行在客户端的脚本，所以可以使用 JavaScript 来设置运行在客户端的 Cookies。
 
-使用 JavaScript 创建Cookie
+使用 JavaScript 创建 Cookie
 JavaScript 可以使用 document.cookie 属性来创建 、读取、及删除 cookies。
 
 您还可以为 cookie 添加一个过期时间（以 UTC 或 GMT 时间）。
@@ -186,20 +187,19 @@ JavaScript 可以使用 document.cookie 属性来创建 、读取、及删除 co
 ### 使用 JavaScript 删除 Cookie
 
 ```javascript
-document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 GMT";
+document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 GMT"
 ```
 
 注意，当您删除时不必指定 cookie 的值。
 
-### 设置cookies
+### 设置 cookies
 
 ```js
-function setCookie(cname,cvalue,exdays)
-{
-var d = new Date();
-d.setTime(d.getTime()+(exdays*24*60*60*1000));
-var expires = "expires="+d.toGMTString();
-document.cookie = cname + "=" + cvalue + "; " + expires;
+function setCookie(cname, cvalue, exdays) {
+  var d = new Date()
+  d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000)
+  var expires = "expires=" + d.toGMTString()
+  document.cookie = cname + "=" + cvalue + "; " + expires
 }
 ```
 
@@ -208,15 +208,13 @@ document.cookie = cname + "=" + cvalue + "; " + expires;
 然后，我们创建一个函数用户返回指定 cookie 的值：
 
 ```js
-function getCookie(cname)
-{
-var name = cname + "=";
-var ca = document.cookie.split(';');
-for(var i=0; i<ca.length; i++)
-  {
-  var c = ca[i].trim();
-  if (c.indexOf(name)==0) return c.substring(name.length,c.length);
+function getCookie(cname) {
+  var name = cname + "="
+  var ca = document.cookie.split(";")
+  for (var i = 0; i < ca.length; i++) {
+    var c = ca[i].trim()
+    if (c.indexOf(name) == 0) return c.substring(name.length, c.length)
   }
-return "";
+  return ""
 }
 ```

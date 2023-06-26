@@ -5,8 +5,7 @@ updated: 2020-01-22 23:20:55
 categories:
   - 语言
   - JavaScript
-tags:
-- js
+tags: js
 ---
 
 ## 函数定义

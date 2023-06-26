@@ -5,11 +5,10 @@ updated: 2020-01-22 23:20:55
 categories:
   - 语言
   - JavaScript
-tags:
-- js
+tags: js
 ---
 
-> 在 HTML5 中，新加入了一个 localStorage 特性，这个特性主要是用来作为本地存储来使用的，解决了cookie存储空间不足的问题(cookie中每条cookie的存储空间为 4k)，localStorage 中一般浏览器支持的是 5M 大小，这个在不同的浏览器中localStorage会有所不同。
+> 在 HTML5 中，新加入了一个 localStorage 特性，这个特性主要是用来作为本地存储来使用的，解决了cookie存储空间不足的问题(cookie 中每条 cookie 的存储空间为 4k)，localStorage 中一般浏览器支持的是 5M 大小，这个在不同的浏览器中localStorage会有所不同。
 
 localStorage 只支持 string 类型的存储
 

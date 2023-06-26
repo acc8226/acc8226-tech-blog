@@ -3,8 +3,7 @@ title: JavaScript-各版本介绍和特性
 categories:
   - 语言
   - JavaScript
-tags:
-- js
+tags: js
 ---
 
 ## JavaScript 1.1

@@ -3,8 +3,7 @@ title: 在 JavaSctript 中解决问题
 categories:
   - 语言
   - JavaScript
-tags:
-- js
+tags: js
 ---
 
 ## 初学者常见的错误
@@ -14,7 +13,7 @@ tags:
 
 ## 脚本调用策略
 
-最常见的问题就是：HTML 元素是按其在页面中出现的次序调用的，如果用 JavaScript 来管理页面上的元素（更精确的说法是使用 [文档对象模型](https://developer.mozilla.org/zh-CN/docs/Web/API/Document_Object_Model) DOM），若 JavaScript 加载于欲操作的 HTML 元素之前，则代码将出错。
+最常见的问题就是：HTML 元素是按其在页面中出现的次序调用的，如果用 JavaScript 来管理页面上的元素（更精确的说法是使用  [文档对象模型](https://developer.mozilla.org/zh-CN/docs/Web/API/Document_Object_Model) DOM），若 JavaScript 加载于欲操作的 HTML 元素之前，则代码将出错。
 
 解决此问题的旧方法是：把脚本元素放在文档体的底端（</body> 标签之前，与之相邻）
 
@@ -26,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 ```
 
-这是一个事件监听器，它监听浏览器的 "`DOMContentLoaded`" 事件，即 HTML 文档体加载、解释完毕事件。事件触发时将调用 " `. . .`" 处的代码，从而避免了错误发生（[事件](https://developer.mozilla.org/zh-CN/docs/Learn/JavaScript/Building_blocks/Events) 的概念稍后学习）。
+这是一个事件监听器，它监听浏览器的 "`DOMContentLoaded`" 事件，即 HTML 文档体加载、解释完毕事件。事件触发时将调用 " `. . .`" 处的代码，从而避免了错误发生（[事件](https://developer.mozilla.org/zh-CN/docs/Learn/JavaScript/Building_blocks/Events)  的概念稍后学习）。
 
 **async 和 defer**
 上述的脚本阻塞问题实际有两种解决方案 —— async 和 defer。我们来依次讲解。
@@ -54,5 +53,5 @@ document.addEventListener("DOMContentLoaded", function() {
 
 脚本调用策略小结：
 
-* 如果脚本无需等待页面解析，且无依赖独立运行，那么应使用 async。
-* 如果脚本无需等待页面解析，且依赖于其它脚本，调用这些脚本时应使用 defer，将关联的脚本按所需顺序置于 HTML 中。
+- 如果脚本无需等待页面解析，且无依赖独立运行，那么应使用 async。
+- 如果脚本无需等待页面解析，且依赖于其它脚本，调用这些脚本时应使用 defer，将关联的脚本按所需顺序置于 HTML 中。

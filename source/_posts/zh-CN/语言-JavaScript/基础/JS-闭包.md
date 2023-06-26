@@ -3,8 +3,7 @@ title: JS-闭包
 categories:
   - 语言
   - JavaScript
-tags:
-- js
+tags: js
 ---
 
 函数与对其状态即词法环境（lexical environment）的引用共同构成闭包（closure）。也就是说，闭包可以让你从内部函数访问外部函数作用域。在 JavaScript，函数在每次创建时生成闭包。

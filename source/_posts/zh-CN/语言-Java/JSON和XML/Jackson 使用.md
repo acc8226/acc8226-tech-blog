@@ -110,6 +110,24 @@ ObjectMapper 支持从 byte[]、File、InputStream、字符串等数据的 JSON 
 private String password;
 ```
 
+目前的一种折衷方案，对于处理 isXXX 这种成员变量。
+
+```java
+...
+
+private Boolean isAdmin;
+
+@JsonProperty("isAdmin")
+public Boolean getAdmin() {
+    return isAdmin;
+}
+
+public void setAdmin(Boolean admin) {
+    isAdmin = admin;
+}
+...
+```
+
 ### @JsonIgnore 忽略字段
 
 注解

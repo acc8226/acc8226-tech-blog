@@ -9,17 +9,17 @@ categories: linux
 
 文件后缀名 说明
 
-*.zip zip 程序打包压缩的文件
-*.rar rar 程序压缩的文件
-*.7z 7zip 程序压缩的文件
-*.tar tar 程序打包，未压缩的文件
-*.gz gzip 程序（GNU zip）压缩的文件
-*.xz xz 程序压缩的文件
-*.bz2 bzip2 程序压缩的文件
-*.tar.gz tar 打包，gzip 程序压缩的文件
+_.zip zip 程序打包压缩的文件
+_.rar rar 程序压缩的文件
+_.7z 7zip 程序压缩的文件
+_.tar tar 程序打包，未压缩的文件
+_.gz gzip 程序（GNU zip）压缩的文件
+_.xz xz 程序压缩的文件
+_.bz2 bzip2 程序压缩的文件
+_.tar.gz tar 打包，gzip 程序压缩的文件
 *.tar.xz tar 打包，xz 程序压缩的文件
 *tar.bz2 tar 打包，bzip2 程序压缩的文件
-*.tar.7z tar 打包，7z 程序压缩的文件
+\*.tar.7z tar 打包，7z 程序压缩的文件
 
 不过我们一般只需要掌握几个命令即可，包括 zip，tar。
 
@@ -34,7 +34,7 @@ zip -r cc.zip index.html static
 -x<范本样式>：压缩时排除符合条件的文件；
 -o，表示输出文件，需在其后紧跟打包输出文件名。
 
-进行压缩，但不要test目录下的所有文件
+进行压缩，但不要 test 目录下的所有文件
 `zip -r yasuo.zip * -x "test/*"`
 
 `zip -r yasuo.zip * -x "test/*" -x "bbb/*"`
@@ -121,7 +121,7 @@ $ tar -xf shiyanlou.tar -C tardir
 tar -tf shiyanlou.tar
 ```
 
-对于创建不同的压缩格式的文件，对于 tar 来说是相当简单的，需要的只是换一个参数，这里我们就以使用 gzip 工具创建 *.tar.gz 文件为例来说明。
+对于创建不同的压缩格式的文件，对于 tar 来说是相当简单的，需要的只是换一个参数，这里我们就以使用 gzip 工具创建 \*.tar.gz 文件为例来说明。
 
 我们只需要在创建 tar 文件的基础上添加 -z 参数，使用 **gzip** 来压缩文件：
 
@@ -129,7 +129,7 @@ tar -tf shiyanlou.tar
 tar -czf shiyanlou.tar.gz /home/shiyanlou/Desktop
 ```
 
-解压 *.tar.gz 文件：
+解压 \*.tar.gz 文件：
 
 ```sh
 tar -xzf shiyanlou.tar.gz
@@ -138,9 +138,9 @@ tar -xzf shiyanlou.tar.gz
 现在我们要使用其它的压缩工具创建或解压相应文件只需要更改一个参数即可：
 
 压缩文件格式 参数
-*.tar.gz -z
-*.tar.xz -J
-*tar.bz2 -j
+_.tar.gz -z
+_.tar.xz -J
+\*tar.bz2 -j
 
 ## RAR 命令
 

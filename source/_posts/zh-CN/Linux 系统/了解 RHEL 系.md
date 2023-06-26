@@ -9,8 +9,7 @@ categories: linux
 
 ### 更新 CentOS 系统
 
-可查看您当前的系统内核版本。如需要升级，可以进行如下操作：
-`cat /etc/centos-release`
+可查看您当前的系统内核版本。如需要升级，可以进行如下操作：`cat /etc/centos-release`
 
 Step 1 编辑 yum.conf
 在 /etc/yum.conf 中，注释：`exclude kernel* centos-release*`

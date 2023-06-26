@@ -15,7 +15,7 @@ ssh key 的类型有四种，分别是 dsa、rsa、ecdsa、ed25519。
 
 1. dsa 因为安全问题，已不再使用了。
 2. ecdsa 因为政治原因和技术原因，也不推荐使用。
-3. rsa 是目前兼容性最好的，应用最广泛的 key 类型，在用ssh-keygen工具生成 key的时候，默认使用的也是这种类型。不过在生成 key 时，如果指定的 key size 太小的话，也是有安全问题的，推荐 key size 是 3072 或更大。
+3. rsa 是目前兼容性最好的，应用最广泛的 key 类型，在用 ssh-keygen 工具生成 key 的时候，默认使用的也是这种类型。不过在生成 key 时，如果指定的 key size 太小的话，也是有安全问题的，推荐 key size 是 3072 或更大。
 4. ed25519 是目前最安全、加解密速度最快的 key 类型，由于其数学特性，它的 key 的长度比 rsa 小很多，优先推荐使用。它目前唯一的问题就是兼容性，即在旧版本的 ssh 工具集中可能无法使用。不过据我目前测试，还没有发现此类问题。
 
 ## 什么是 OpenSSH
@@ -66,14 +66,14 @@ ssh root@xxx.xx.xx.xx
 ### Linux SSH 远程登录错误解决办法 WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED
 
 **报错原因**:
-当我们选择 yes 时，ssh 会把阿里云服务器的公钥(host key)都记录在 `~/.ssh/known_hosts`。当下次访问相同服务器时，ssh 会核对 host key。如果 host key不同，ssh 会发出警告，避免你受到中间人攻击。
+当我们选择 yes 时，ssh 会把阿里云服务器的公钥(host key)都记录在 `~/.ssh/known_hosts`。当下次访问相同服务器时，ssh 会核对 host key。如果 host key 不同，ssh 会发出警告，避免你受到中间人攻击。
 
 我这里之所以报错，是因为我重置了阿里云服务器，服务器 host key 发生了变化，所以再次登录时会报错。
 
 **解决办法**:
 `ssh-keygen -R YourServerIp` YourServerIp 就是你要通行的公网 ip）
 
-它会更改我们上面说到的 known_hosts 文件，并生成一个 known_hosts.old 文件，known_hosts.old 文件其实就是known_hosts 未修改前的版本。
+它会更改我们上面说到的 known_hosts 文件，并生成一个 known_hosts.old 文件，known_hosts.old 文件其实就是 known_hosts 未修改前的版本。
 
 另一种方式是去 `~/.ssh/known_hosts` 删除对应的记录。例如
 
@@ -92,19 +92,19 @@ github.com ssh-rsa AAAABxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 SFTP 是 SSH 服务或守护程序的子系统。 因此，这使 SFTP 侦听 TCP 22 端口。 我们可以使用以下 sftp 命令来连接远程系统 SFTP 服务。
 
 更改默认的 SFTP 端口 (Change Default SFTP Port)
-如果要更改默认的 SFTP 端口，则需要更改SSH配置，这也将更改默认的 SSH 端口。 我们需要打开 SSH 配置文件 /etc/ssh/sshd_config 并进行更改
+如果要更改默认的 SFTP 端口，则需要更改 SSH 配置，这也将更改默认的 SSH 端口。 我们需要打开 SSH 配置文件 /etc/ssh/sshd_config 并进行更改
 
 ```sh
 Port 22
 ```
 
-更改配置文件后，我们需要激活新配置。 我们应该重新启动SSH服务，它将重新读取配置文件并使用新的SFTP端口号。 我们将使用systemctl命令，但欢迎使用其他服务管理命令。
+更改配置文件后，我们需要激活新配置。 我们应该重新启动 SSH 服务，它将重新读取配置文件并使用新的 SFTP 端口号。 我们将使用 systemctl 命令，但欢迎使用其他服务管理命令。
 
 ```sh
 systemctl restart sshd
 ```
 
-### 如何为客户端指定不同的SFTP(How To Specify Different SFTP For Client)
+### 如何为客户端指定不同的 SFTP(How To Specify Different SFTP For Client)
 
 在日常使用中，我们可能需要连接远程 SFTP 服务器，该服务器的端口不同于默认端口 TCP/22。 我们必须使用 -P 选项和 sftp 命令的端口号显式指定远程 SFTP 服务器端口。
 

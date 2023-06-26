@@ -3,8 +3,7 @@ title: JavaScript-对象入门使用-JSON
 categories:
   - 语言
   - JavaScript
-tags:
-- js
+tags: js
 ---
 
 JavaScript 对象表示法（JSON）是用于将结构化数据表示为 JavaScript 对象的标准格式，通常用于在网站上表示和传输数据

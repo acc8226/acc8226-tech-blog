@@ -7,7 +7,7 @@ ExtClassLoader(扩展类加载器注意：JDK1.8后被修改为平台类加载�
 BootstrapClassLoader(启动类加载器)
 
 获取类加载器
-通过简单的demo来得到类加载器
+通过简单的 demo 来得到类加载器
 
 ```java
 public class User {

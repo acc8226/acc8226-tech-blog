@@ -5,8 +5,7 @@ updated: 2020-01-22 23:20:55
 categories:
   - 语言
   - JavaScript
-tags:
-- js
+tags: js
 ---
 
 ## HTML DOM (文档对象模型)
@@ -26,9 +25,9 @@ HTML DOM 模型被构造为对象的树:
 
 为了做到这件事情，您必须首先找到该元素。有三种方法来做这件事：
 
-* 通过 id 找到 HTML 元素 `document.getElementById("myBtn")`
-* 通过标签名找到 HTML 元素
-* 通过类名找到 HTML 元素
+- 通过 id 找到 HTML 元素 `document.getElementById("myBtn")`
+- 通过标签名找到 HTML 元素
+- 通过类名找到 HTML 元素
 
 <!-- more -->
 
@@ -36,9 +35,9 @@ HTML DOM 模型被构造为对象的树:
 
 改变 HTML 输出流
 JavaScript 能够创建动态的 HTML 内容：
-在 JavaScript 中，[document.write()](https://www.w3cschool.cn/jsref/met-doc-write.html) 可用于直接向 HTML 输出流写内容。如果您在文档加载后使用该方法，会覆盖整个文档。
+在 JavaScript 中，[document.write()](https://www.w3cschool.cn/jsref/met-doc-write.html)  可用于直接向 HTML 输出流写内容。如果您在文档加载后使用该方法，会覆盖整个文档。
 
-修改 HTML 内容的最简单的方法是使用 [innerHTML 属性](https://www.w3cschool.cn/jsref/prop-html-innerhtml.html)。
+修改 HTML 内容的最简单的方法是使用  [innerHTML 属性](https://www.w3cschool.cn/jsref/prop-html-innerhtml.html)。
 
 改变 HTML 属性
 如需改变 HTML 元素的属性，请使用这个语法：
@@ -49,7 +48,7 @@ JavaScript 能够创建动态的 HTML 内容：
 如需改变 HTML 元素的样式，请使用这个语法：
 
 ```js
-document.getElementById(id).style.property=new style
+document.getElementById(id).style.property = new style()
 ```
 
 本例改变了 id="id1" 的 HTML 元素的样式，当用户点击按钮时：
@@ -57,11 +56,15 @@ document.getElementById(id).style.property=new style
 ```html
 <!DOCTYPE html>
 <html>
-
   <body>
     <h1 id="id1">My Heading 1</h1>
-    <button type="button" onclick="document.getElementById('id1').style.color='red'">Click Me!</button></body>
-
+    <button
+      type="button"
+      onclick="document.getElementById('id1').style.color='red'"
+    >
+      Click Me!
+    </button>
+  </body>
 </html>
 ```
 
@@ -69,13 +72,13 @@ document.getElementById(id).style.property=new style
 
 HTML 事件的例子：
 
-* 当用户点击鼠标时
-* 当网页已加载时
-* 当图像已加载时
-* 当鼠标移动到元素上时
-* 当输入字段被改变时
-* 当提交 HTML 表单时
-* 当用户触发按键时
+- 当用户点击鼠标时
+- 当网页已加载时
+- 当图像已加载时
+- 当鼠标移动到元素上时
+- 当输入字段被改变时
+- 当提交 HTML 表单时
+- 当用户触发按键时
 
 ### 使用 HTML DOM 来分配事件
 
@@ -110,13 +113,15 @@ HTML DOM 允许您使用 JavaScript 来向 HTML 元素分配事件：
 但是我如果把
 
 ```js
-document.getElementById("myBtn").onclick=function(){displayDate()};
+document.getElementById("myBtn").onclick = function () {
+  displayDate()
+}
 ```
 
 把匿名的 function 去掉改为
 
 ```js
-document.getElementById("myBtn").onclick=displayDate();
+document.getElementById("myBtn").onclick = displayDate()
 ```
 
 就报错不起作用, 我就不理解了.
@@ -131,7 +136,7 @@ addEventListener() 方法添加的事件句柄不会覆盖已存在的事件句�
 你可以向一个元素添加多个事件句柄。
 你可以向同个元素添加多个同类型的事件句柄，如：两个 "click" 事件。
 你可以向任何 DOM 对象添加事件监听，不仅仅是 HTML 元素。如： window 对象。
-当你使用 addEventListener() 方法时, JavaScript 从 HTML 标记中分离开来，可读性更强， 在没有控制HTML标记时也可以添加事件监听
+当你使用 addEventListener() 方法时, JavaScript 从 HTML 标记中分离开来，可读性更强， 在没有控制 HTML 标记时也可以添加事件监听
 
 语法
 
@@ -173,14 +178,14 @@ nodeType ：节点的类型
 
 ```html
 <script>
-// 添加新元素，您必须首先创建该元素（元素节点)
-var para=document.createElement("p");
-var node=document.createTextNode("This is new.");
-para.appendChild(node);
+  // 添加新元素，您必须首先创建该元素（元素节点)
+  var para = document.createElement("p")
+  var node = document.createTextNode("This is new.")
+  para.appendChild(node)
 
-// 然后向一个已存在的元素追加该元素。
-var element = document.getElementById("div1");
-element.appendChild(para);
+  // 然后向一个已存在的元素追加该元素。
+  var element = document.getElementById("div1")
+  element.appendChild(para)
 </script>
 ```
 
@@ -188,12 +193,12 @@ element.appendChild(para);
 
 ```html
 <div id="div1">
-<p id="p1">This is a paragraph.</p>
-<p id="p2">This is another paragraph.</p>
+  <p id="p1">This is a paragraph.</p>
+  <p id="p2">This is another paragraph.</p>
 </div>
 <script>
-var parent = document.getElementById("div1");
-var child = document.getElementById("p1");
-parent.removeChild(child);
+  var parent = document.getElementById("div1")
+  var child = document.getElementById("p1")
+  parent.removeChild(child)
 </script>
 ```
