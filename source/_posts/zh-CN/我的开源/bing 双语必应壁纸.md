@@ -2,8 +2,7 @@
 title: bing 双语必应壁纸
 date: 2022-08-23 13:33:02
 updated: 2022-08-23 13:33:02
-categories:
-  - 我的开源
+categories: 我的开源
 ---
 
 获取每日必应壁纸并自动输出到 md 文件的 kotlin 应用。

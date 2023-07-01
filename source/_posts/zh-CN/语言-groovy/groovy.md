@@ -2,8 +2,7 @@
 title: Groovy
 date: 2022-08-12 19:06:00
 updated: 2023-01-04 13:25:00
-categories:
-  - 语言-Groovy
+categories: 语言-Groovy
 ---
 
 The Apache Groovy programming language

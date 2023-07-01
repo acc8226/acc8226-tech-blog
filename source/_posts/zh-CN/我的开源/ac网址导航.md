@@ -2,8 +2,7 @@
 title: ac网址导航-争做简洁、高效的网址导航
 date: 2022-07-27 00:00:00
 updated: 2022-07-27 00:00:00
-categories:
-  - 我的开源
+categories: 我的开源
 ---
 
 采用 HTML + CSS + JQ 开发的简单的静态页面，手机上查看效果也正常。搭配 github pages 或者 gitee pages 食用效果更佳！
