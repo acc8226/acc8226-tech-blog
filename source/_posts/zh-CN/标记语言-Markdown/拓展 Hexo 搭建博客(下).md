@@ -122,7 +122,24 @@ git clone https://${userName}:${accessToken}@${hostName}/${userName}/${repoPath}
 
 ## hexo 的痛点
 
-我不想图片资源直接放在 `source/images` 文件夹中。然后通过类似于 ![](/images/image.jpg) 的方法访问它们。对于那些想要更有规律地提供图片和其他资源以及想要将他们的资源分布在各个文章上的人来说，Hexo 提供的方式无法直接使用 markdown 语法，无法灵活引用相对路径的图片。所以 hexo 搭载图床使用可能才是出路。
+我不想图片资源直接放在 `source/images` 文件夹中。然后通过类似于 ![](/images/image.jpg) 的方法访问它们。对于那些想要更有规律地提供图片和其他资源以及想要将他们的资源分布在各个文章上的人来说，Hexo 提供的方式无法直接使用 markdown 语法，无法灵活引用相对路径的图片。所以 hexo 搭载图床使用可能一种最优解。
+
+## hexo 升级
+
+```sh
+hexo install hexo@latest
+
+hexo install hexo-generator-archive@latest
+hexo install hexo-generator-category@latest
+hexo install hexo-generator-index@latest
+hexo install hexo-generator-tag@latest
+
+hexo install hexo-renderer-ejs@latest
+hexo install hexo-renderer-marked@latest
+hexo install hexo-renderer-stylus@latest
+
+hexo install hexo-server@latest
+```
 
 ## 部署 Gitee Pages 遇到过的问题
 
