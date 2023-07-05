@@ -13,6 +13,17 @@ darkmode: true
 # Site Information Settings
 # ---------------------------------------------------------------
 
+favicon:
+  small: /images/favicon-16x16.png
+  medium: /images/favicon-32x32.png
+  # 期望是 180 x 180 pixels
+  apple_touch_icon: /images/blog_logo.png
+  safari_pinned_tab: /images/blog_logo.png
+  #android_manifest: /manifest.json
+
+# Custom Logo (Warning: Do not support scheme Mist)
+custom_logo: #/uploads/custom-logo.png
+
 # Creative Commons 4.0 International License.
 # See: https://creativecommons.org/about/cclicenses/
 creative_commons:
@@ -58,22 +69,15 @@ sidebar:
   # Sidebar Position.
   position: left
 
-  # Manual define the sidebar width. If commented, will be default for:
-  # Muse | Mist: 320
-  # Pisces | Gemini: 240
-  #width: 300
-
-  # Sidebar Display (only for Muse | Mist), available values:
-  #  - post    expand on posts automatically. Default.
-  #  - always  expand for all pages automatically.
-  #  - hide    expand only when click on the sidebar toggle icon.
-  #  - remove  totally remove sidebar including sidebar toggle.
-  display: post
-
-  # Sidebar padding in pixels.
-  padding: 18
-  # Sidebar offset from top menubar in pixels (only for Pisces | Gemini).
-  offset: 12
+# Sidebar Avatar
+avatar:
+  # Replace the default image and set the url here.
+  #url: /images/avatar.gif
+  url: /images/blog.jpg
+  # If true, the avatar will be displayed in circle.
+  # rounded: true
+  # If true, the avatar will be rotated with the cursor.
+  rotated: true
 
 # Posts / Categories / Tags in sidebar.
 site_state: true
@@ -125,7 +129,7 @@ language_switcher: false
 footer:
   # Specify the year when the site was setup. If not defined, current year will be used.
   # 网站开始时间
-  since: 2014
+  since: 2015
   # Icon between year and copyright info.
   icon:
     # Icon name in Font Awesome. See: https://fontawesome.com/icons
