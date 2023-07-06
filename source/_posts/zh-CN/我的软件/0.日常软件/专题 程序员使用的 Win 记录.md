@@ -38,8 +38,11 @@ taskkill /T /F /PID 2448
 ```
 
 3\. 【可选】查看端口被哪个程序给占用了
+
+```bat
 C:\>tasklist|findstr "2448"
 thread.exe                    2016 Console                 0     16,064 K
+```
 
 ### Windows 常用命令
 

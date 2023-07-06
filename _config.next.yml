@@ -14,11 +14,11 @@ darkmode: true
 # ---------------------------------------------------------------
 
 favicon:
-  small: /images/favicon-16x16.png
-  medium: /images/favicon-32x32.png
+  small: /images/favicon-16x16.ico
+  medium: /images/favicon-32x32.ico
   # 期望是 180 x 180 pixels
-  apple_touch_icon: /images/blog_logo.png
-  safari_pinned_tab: /images/blog_logo.png
+  apple_touch_icon: /images/blog_logo.jpg
+  safari_pinned_tab: /images/blog_logo.jpg
   #android_manifest: /manifest.json
 
 # Custom Logo (Warning: Do not support scheme Mist)
