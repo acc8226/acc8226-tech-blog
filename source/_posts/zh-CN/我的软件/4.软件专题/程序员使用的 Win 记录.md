@@ -1,10 +1,10 @@
 ---
-title: 专题 程序员使用的 Win 记录
+title: 软件专题-程序员使用的 Win 记录
 date: 2018-04-07 15:30:24
 updated: 2023-02-16 21:53:00
 categories:
   - 收藏
-  - 日常软件
+  - 软件专题
 ---
 
 ## WAMP 80 端口被 Microsoft-HTTPAPI/2.0 占用的解决办法

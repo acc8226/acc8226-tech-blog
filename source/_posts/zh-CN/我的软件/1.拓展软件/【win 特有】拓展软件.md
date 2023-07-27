@@ -53,11 +53,6 @@ categories:
 The new Windows Terminal and the original Windows console host, all in the same place!
 <https://github.com/microsoft/terminal>
 
-### AntDownload - 免登录的百度网盘不限速下载器工具
-
-免登录的百度网盘不限速下载器工具！免账号/不需会员轻松跑满速 - 异次元软件世界
-<https://www.iplaysoft.com/antdownload.html>
-
 ## 参考
 
 Microsoft PowerToys | Microsoft Learn

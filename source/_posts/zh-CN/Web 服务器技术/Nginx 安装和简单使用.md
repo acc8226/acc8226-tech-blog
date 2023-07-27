@@ -1,7 +1,7 @@
 ---
 title: Nginx 安装和简单使用
 date: 2022-01-01 00:00:00
-updated: 2022-11-05 10:36:00
+updated: 2023-07-27 10:35:00
 categories: Web 服务器技术
 ---
 
@@ -123,7 +123,8 @@ Error: Could not symlink .
 ## 常用命令
 
 Nginx 让新的配置生效  `nginx -s reload`
-关闭命令: `nginx -s stop`
+强制停止: `nginx -s stop`
+处理完请求后停止：`nginx -s quit`
 运行以下命令查看 Nginx 版本。`nginx -v`
 
 ### 如果是通过包管理器进行安装
