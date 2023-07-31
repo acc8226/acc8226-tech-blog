@@ -11,7 +11,7 @@ JetBrains 表示：在当今的大部分时间里，我们作为开发人员都�
 
 因此，在使用 JetBrains Mono 进行开发时，除其他外，重点研究了在长时间使用代码期间可能导致眼睛疲劳的问题。我们考虑了字母的大小和形状等问题；它们之间的空间量，自然以等宽字体设计的平衡；一些看起来不必要的细节和符号之间不清楚的区别，例如 I 和 l；还要和开发字体时的编程连字。
 
-**JetBrainsMono.** A typeface for developers\_
+**JetBrainsMono.** A typeface for developers
 
 - **mac**: Select all font files in the folder and double-click them. Click the “Install Font” button.
 - **windows**: Select all font files in the folder, right-click any of them, then pick “Install” from the menu.

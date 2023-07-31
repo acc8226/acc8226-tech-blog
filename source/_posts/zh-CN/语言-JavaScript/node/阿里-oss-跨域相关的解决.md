@@ -32,17 +32,17 @@ Referer 的作用
 典型配置说明如下。
 所有请求都可以访问。
 
-```
-空Referer：允许Referer为空。
-Referer列表：空。
-带有规定的Referer请求或不带Referer的请求才能访问。
+```text
+空 Referer：允许 Referer 为空。
+Referer 列表：空。
+带有规定的 Referer 请求或不带 Referer 的请求才能访问。
 
 空Referer：不允许Referer为空。
 Referer列表：http://*.oss-cn-beijing.aliyuncs.com，http://*.aliyun.com。
 ```
 
-```
-Referer不在规定范围或者格式错误时，需要确认是否配置http://或者https://，并更正Referer的配置范围，
+```text
+Referer 不在规定范围或者格式错误时，需要确认是否配置http://或者https://，并更正Referer的配置范围，
 比如a.aliyun.com和b.aliyun.com，匹配于http://*.aliyun.com或http://?.aliyun.com。
 domain.com匹配于http://domain.com，而不是http://*.domain.com。
 ```
@@ -51,8 +51,8 @@ domain.com匹配于http://domain.com，而不是http://*.domain.com。
 若设置了不允许 Referer 为空，直接访问则报错为 AccessDenied.
 `curl http://oss.jinxiangtest.com/testoss.txt`
 
-通过 curl 命令加参数-e，传递设置的白名单中 Referer 到访问地址，代表由 oss.jinxiangtest.com 网站传递的请求。没有报错，证明白名单 Referer 设置生效。
+通过 curl 命令加参数 -e，传递设置的白名单中 Referer 到访问地址，代表由 oss.jinxiangtest.com 网站传递的请求。没有报错，证明白名单 Referer 设置生效。
 `curl --referer http://oss.jinxiangtest.com http://oss.jinxiangtest.com/testoss.txt`
 
-通过 curl 命令加参数-e，传递错误的 Refere 到访问地址，由于 oss.jinxiangtest234.com 不在白名单中，系统报错，证明白名单 Referer 设置生效。
+通过 curl 命令加参数 -e，传递错误的 Refere 到访问地址，由于 oss.jinxiangtest234.com 不在白名单中，系统报错，证明白名单 Referer 设置生效。
 `curl -e http://abc.com http://oss.jinxiangtest.com/testoss.txt`
