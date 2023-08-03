@@ -4,7 +4,8 @@
 属性（Property）不会确定存储位置。相反，它们具有可读写或计算它们值的 访问器（accessors）。
 
 例如，有一个名为 Student 的类，带有 age、name 和 code 的私有域。我们不能在类的范围以外直接访问这些域，但是我们可以拥有访问这些私有域的属性。
-```
+
+```cs
 // 声明类型为 string 的 Code 属性
 public string Code
 {
@@ -46,8 +47,10 @@ public int Age
 ```
 
 ### 抽象属性（Abstract Properties）
+
 抽象类可拥有抽象属性，这些属性应在派生类中被实现。下面的程序说明了这点：
-```
+
+```cs
 using System;
 namespace runoob
 {
@@ -136,8 +139,9 @@ namespace runoob
 ```
 
 抽象属性例子代码的简化版（使用C# 6.0 语言新特性）
-```
-sing System;
+
+```cs
+using System;
 namespace Demo.cs
 {
     class Program

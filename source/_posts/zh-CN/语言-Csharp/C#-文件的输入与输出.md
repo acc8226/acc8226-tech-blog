@@ -28,16 +28,20 @@ StringWriter	用于写入字符串缓冲区。
 System.IO 命名空间中的 FileStream 类有助于文件的读写与关闭。该类派生自抽象类 Stream。
 
 您需要创建一个 FileStream 对象来创建一个新的文件，或打开一个已有的文件。创建 FileStream 对象的语法如下：
-```
+
+```cs
 FileStream <object_name> = new FileStream( <file_name>,
 <FileMode Enumerator>, <FileAccess Enumerator>, <FileShare Enumerator>);
 ```
+
 例如，创建一个 FileStream 对象 F 来读取名为 sample.txt 的文件：
-```
+
+```cs
 FileStream F = new FileStream("sample.txt", FileMode.Open, FileAccess.Read, FileShare.Read);
 ```
 
 #### FileMode
+
 FileMode 枚举定义了各种打开文件的方法。FileMode 枚举的成员有：
 
 Append：打开一个已有的文件，并将光标放置在文件的末尾。如果文件不存在，则创建文件。
@@ -48,9 +52,11 @@ OpenOrCreate：指定操作系统应打开一个已有的文件。如果文件�
 Truncate：打开一个已有的文件，文件一旦打开，就将被截断为零字节大小。然后我们可以向文件写入全新的数据，但是保留文件的初始创建日期。如果文件不存在，则抛出异常。
 
 #### FileAccess
+
 FileAccess 枚举的成员有：Read、ReadWrite 和 Write。
 
 #### FileShare
+
 FileShare 枚举的成员有：
 
 Inheritable：允许文件句柄可由子进程继承。Win32 不直接支持此功能。
@@ -61,6 +67,7 @@ Write：允许随后打开文件写入。如果未指定此标志，则文件关
 Delete：允许随后删除文件。
 
 ### 实例
+
 下面的程序演示了 FileStream 类的用法：
 
 ```cs
@@ -95,11 +102,13 @@ namespace FileIOApplication
 ```
 
 当上面的代码被编译和执行时，它会产生下列结果：
+
 ```
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 -1
 ```
 
 ## C# 文本文件的读写
+
 StreamReader 和 StreamWriter 类用于文本文件的数据读写。这些类从抽象基类 Stream 继承，Stream 支持文件流的字节读写。
 
 StreamReader 类继承自抽象基类 **TextReader**，表示Reader 读取一系列字符。

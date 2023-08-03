@@ -3,6 +3,7 @@
 异常提供了一种把程序控制权从某个部分转移到另一个部分的方式。C# 异常处理时建立在四个关键词之上的：try、catch、finally 和 throw。
 
 ### C# 中的异常类
+
 C# 异常是使用类来表示的。C# 中的异常类主要是直接或间接地派生于 System.Exception 类。System.ApplicationException 和 System.SystemException 类是派生于 System.Exception 类的异常类。
 
 System.ApplicationException 类支持由应用程序生成的异常。所以程序员定义的异常都应派生自该类。
@@ -20,8 +21,10 @@ System.OutOfMemoryException	处理空闲内存不足生成的错误。
 System.StackOverflowException	处理栈溢出生成的错误。
 
 ### 创建用户自定义异常
+
 您也可以定义自己的异常。用户自定义的异常类是派生自 ApplicationException 类。下面的实例演示了这点：
-```
+
+```cs
 using System;
 namespace UserDefinedException
 {

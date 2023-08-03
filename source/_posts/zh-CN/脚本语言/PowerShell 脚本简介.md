@@ -9,7 +9,7 @@ tags:
 
 ## 什么是 PowerShell
 
-PowerShell 是一种跨平台的任务自动化解决方案，由命令行 shell、脚本语言和配置管理框架组成。 PowerShell 在 Windows、Linux 和 macOS 上运行。
+PowerShell 是一种跨平台的任务自动化解决方案，由命令行 shell、脚本语言和配置管理框架组成。 PowerShell 目前已经支持在 Windows、Linux 和 macOS 上运行。
 
 ## mac 安装 PowerShell
 
@@ -22,13 +22,15 @@ M1 processors - powershell-7.3.4-osx-arm64.pkg
 
 ## 示例
 
-要确定当前目录位置的路径，请输入命令
-Get-Location
+要确定当前目录位置的路径，请输入命令 Get-Location
 
-设置您的当前位置（设置位置），请使用 Set-Location（cd， chdir、sl）
+设置您的当前位置（设置位置），请使用 Set-Location（cd 或者 chdir 或者 sl）
+
+```ps1
 Set-Location -Path C:\Windows
+```
 
-保存和调用最近的位置（Push-Location和Pop-Location）。当改变地点时，记录你去过的地方并能够返回是很有帮助的 你之前的位置 PowerShell 中的 Push-Location cmdlet 创建有序的历史记录（ “stack”）的目录路径，您可以通过目录路径。
+保存和调用最近的位置（Push-Location 和 Pop-Location）。当改变地点时，记录你去过的地方并能够返回是很有帮助的 你之前的位置 PowerShell 中的 Push-Location cmdlet 创建有序的历史记录（“stack”）的目录路径，您可以通过目录路径。
 
 枚举文件、文件夹和注册表项
 
@@ -38,12 +40,17 @@ Set-Location -Path C:\Windows
 PS> Get-ChildItem -Path C:\Windows
 ```
 
+-Force 参数用于显示隐藏项或系统项
+
 ```powershell
 Get-ChildItem -Path C:\ -Force
 ```
 
-其中 -Force 参数用于显示隐藏项或系统项
 要显示子文件夹中的项目，需要指定 -Recurse 参数
+
+```powershell
+PS> Get-ChildItem -Path C:\WINDOWS -Recurse
+```
 
 要仅显示项目的名称，请使用 Get-Childitem 的 Name 参数：
 
@@ -52,13 +59,13 @@ PS> Get-ChildItem -Path C:\WINDOWS -Name
 ```
 
 Get-ChildItem 命令在要列出的项的路径中接受通配符。
-由于通配符匹配是由 PowerShell 引擎处理的，因此所有接受通配符的 cmdlet 使用相同的符号并具有相同的匹配行为。PowerShell通配符表示法。
+由于通配符匹配是由 PowerShell 引擎处理的，因此所有接受通配符的 cmdlet 使用相同的符号并具有相同的匹配行为。PowerShell 通配符表示法。
 
 要查找 Windows 目录中以字母 x 开始的所有文件，请键入以下内容：
 
 Get-ChildItem -Path C:\Windows\x*
 
-要查找名称以“x”或“z”开始的所有文件，请键入：
+要查找名称以 “x” 或 “z” 开始的所有文件，请键入：
 
 Get-ChildItem -Path C:\Windows\[xz]*
 
@@ -82,7 +89,7 @@ Copy-Item C:\temp\test1 -Recurse C:\temp\DeleteMe
 
 创建文件和文件夹
 
-此命令将创建一个新文件夹C:\temp\New Folder：
+此命令将创建一个新文件夹 C:\temp\New Folder：
 
 ```powershell
 New-Item -Path 'C:\temp\New Folder' -ItemType Directory
@@ -163,5 +170,5 @@ Home | Oh My Posh
 
 ## 参考
 
-PowerShell 中文博客 – 收集和分享 Windows PowerShell 相关教程,技术和最新动态
+PowerShell 中文博客 – 收集和分享 Windows PowerShell 相关教程, 技术和最新动态
 <https://www.pstips.net/>

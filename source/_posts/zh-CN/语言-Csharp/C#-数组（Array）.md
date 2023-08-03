@@ -1,7 +1,8 @@
 ## 基础知识
 
 声明数组
-```
+
+```cs
 datatype[] arrayName;
 ```
 
@@ -9,45 +10,53 @@ datatype[] arrayName;
 声明一个数组不会在内存中初始化数组。当初始化数组变量时，您可以赋值给数组。
 数组是一个引用类型，所以您需要使用 new 关键字来创建数组的实例。
 例如：
-```
+
+```cs
 double[] balance = new double[10];
 ```
 
 您可以在声明数组的同时给数组赋值，比如：
-```
+
+```cs
 double[] balance = { 2340.0, 4523.69, 3421.0};
 ```
+
 您也可以创建并初始化一个数组，比如：
-```
+
+```cs
 int[] marks = new int[5]  { 99,  98, 92, 97, 95};
 ```
+
 在上述情况下，你也可以省略数组的大小，比如：
-```
+
+```cs
 int [] marks = new int[]  { 99,  98, 92, 97, 95};
 ```
+
 您也可以赋值一个数组变量到另一个目标数组变量中。在这种情况下，目标和源会指向相同的内存位置：
-```
+
+```cs
 int[] marks = new int[]  { 99,  98, 92, 97, 95};
 int[] score = marks;
 ```
 
 ### 访问数组元素
 
-```
-       static void Main (string[] args) {
-            // 普通for循环方式
-            int[] array = { 1, 2, 3, }; 
-            for (int i = 0, length = array.Length; i < length; i++) {
-                Console.WriteLine(array[i]);
-            }
+```cs
+static void Main (string[] args) {
+    // 普通for循环方式
+    int[] array = { 1, 2, 3, }; 
+    for (int i = 0, length = array.Length; i < length; i++) {
+        Console.WriteLine(array[i]);
+    }
 
-            /* foreach方式 输出每个数组元素的值 */
-            foreach (int j in array) {
-                Console.WriteLine("{0}", j);
-            }
-            Console.ReadKey();
+    /* foreach方式 输出每个数组元素的值 */
+    foreach (int j in array) {
+        Console.WriteLine("{0}", j);
+    }
+    Console.ReadKey();
 
-        }
+}
 ```
 
 ## C# 二维数组
@@ -72,7 +81,7 @@ int [,] a = new int [3,4] {
 
 声明一个数组不会在内存中创建数组。创建上面的数组：
 
-```
+```cs
 int[][] scores = new int[5][];
 for (int i = 0; i < scores.Length; i++) 
 {
@@ -81,7 +90,8 @@ for (int i = 0; i < scores.Length; i++)
 ```
 
 您可以初始化一个交错数组，如下所示：
-```
+
+```cs
 int[][] scores = new int[2][]{new int[]{92,93,94},new int[]{85,66,87,88}};
 ```
 
@@ -91,7 +101,7 @@ int[][] scores = new int[2][]{new int[]{92,93,94},new int[]{85,66,87,88}};
 
 在 C# 中，您可以传递数组作为函数的参数。您可以通过指定不带索引的数组名称来给函数**传递一个指向数组的指针**。
 
-```
+```cs
     class MyArray {
         double getAverage (int[] arr) {
             int size = arr.Length;
@@ -128,14 +138,15 @@ int[][] scores = new int[2][]{new int[]{92,93,94},new int[]{85,66,87,88}};
 ## params 关键字
 
 在使用数组作为形参时，C# 提供了 params 关键字，使调用数组为形参的方法时，既可以传递数组实参，也可以传递一组数组元素。params 的使用格式为：
-> 类比Java的可变参数` ...`
+> 类比Java的可变参数 ` ...`
+
 ```
 public 返回类型 方法名称( params 类型名称[] 数组名称 )
 ```
 
 下面的实例演示了如何使用参数数组：
 
-```
+```cs
 using System;
 
 namespace ArrayApplication {
@@ -165,7 +176,8 @@ namespace ArrayApplication {
 ## C# Array 类
 
 Array 类是 C# 中所有数组的基类，它是在 System 命名空间中定义。Array 类提供了各种用于数组的属性和方法。
-```
+
+```cs
 using System;
 namespace ArrayApplication
 {
