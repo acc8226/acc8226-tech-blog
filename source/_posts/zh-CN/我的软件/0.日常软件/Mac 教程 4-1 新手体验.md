@@ -72,8 +72,10 @@ Command-Q 退出
 
 ### 文件操作
 
-”拷贝“才是对应 windows 下的”复制“Copy = Command + C
-"粘贴": Command + V
+”拷贝“才是对应 windows 下的
+
+复制 Copy = Command + C
+粘贴 Command + V
 
 ”制作替身“是对应 windows 下的”创建快捷方式“的意思。当您打开替身时，原始项目会打开。
 “复制” 可以理解为在当前目录完成了 CV 操作
@@ -156,5 +158,4 @@ Command + control + F 或者 点击左上角绿色按钮
 ## 参考
 
 * <https://www.zhihu.com/question/20386836/answer/249910835>
-* Mac 键盘快捷键 - Apple 支持
-<https://support.apple.com/zh-cn/HT201236>
+* Mac 键盘快捷键 - Apple 支持 <https://support.apple.com/zh-cn/HT201236>

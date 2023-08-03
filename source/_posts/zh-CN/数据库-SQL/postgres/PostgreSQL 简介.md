@@ -334,6 +334,19 @@ pgadmin4 在点击备份数据库时，PgAdmin 出现 Utility file not found. Pl
 
 ## 官方文档
 
+## 使用语法
+
+CASE WHEN 子查询使用
+
+```sql
+SELECT CASE WHEN 条件 THEN 结果 ELSE 结果 END 
+```
+
+## 增强
+
+timescaledb 数据库
+<https://docs.timescale.com/latest/getting-started/installation/windows/installation-windows>
+
 ## 参考
 
 PostgreSQL 12.2 手册

@@ -7,6 +7,10 @@ categories:
   - 日常软件
 ---
 
+## 浏览器技巧
+
+强制刷新页面：按下 Ctrl + F5（Windows）或 Cmd + Shift + R（Mac）来强制刷新页面。这会清除浏览器缓存，确保页面加载最新的文件。
+
 ## 更改 terminal / cmd 命令行工具的外观
 
 <https://github.com/microsoft/terminal/releases/tag/1904.29002>
@@ -147,7 +151,7 @@ setx -m name "%name%;value"
 %USERPROFILE% 当前用户 Profile 文件位置
 %WINDIR% 操作系统目录的位置
 
-## Win10 设置选项命令大全
+## Win 10 设置选项命令大全
 
 ms-settings打开设置
 ms-settings:batterysaver节电模式

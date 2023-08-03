@@ -38,7 +38,7 @@ categories:
 
 1. 打开 finder(访达) 后前往 /private/etc/hosts
 2. 并将其拉到桌面上，也就是复制一份 hosts 文件到桌面上，修改此文件
-3. 编辑完后就可以把桌面上的 hosts 文件拉回到 “/private/etc文件夹中”，会弹出询问框点击“确认”，并“取代”即可
+3. 编辑完后就可以把桌面上的 hosts 文件拉回到 /private/etc 文件夹中”，会弹出询问框点击“确认”，并“取代”即可
 
 ## 升级了 macOS Sierra 后，command line tools 报错
 
@@ -48,4 +48,4 @@ xcrun: error: invalid active developer path
  /Library/Developer/CommandLineTools/usr/bin/xcrun
 ```
 
-敲入 `xcode-select  --install`  终端输入完美解决
+敲入 `xcode-select  --install` 终端输入完美解决
