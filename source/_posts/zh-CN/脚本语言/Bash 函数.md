@@ -19,8 +19,8 @@ shell 中函数的定义格式如下：
 
 说明：
 
-* 可以带 function fun() 定义，也可以直接fun() 定义,不带任何参数。
-* 参数返回，可以显示加：return 返回，如果不加，将以最后一条命令运行结果，作为返回值。 return 后跟数值n(0-255)
+* 可以带 function fun() 定义，也可以直接 fun() 定义,不带任何参数。
+* 参数返回，可以显示加：return 返回，如果不加，将以最后一条命令运行结果，作为返回值。 return 后跟数值 n(0-255)
 
 下面的例子定义了一个函数并进行调用：
 
@@ -74,7 +74,7 @@ The sum of the two numbers entered is 3 !
 
 ## 二、函数参数
 
-在 Shell 中，调用函数时可以向其传递参数。在函数体内部，通过 `<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><annotation encoding="application/x-tex">` n 的形式来获取参数的值，例如，</annotation></semantics></math>n的形式来获取参数的值，例如，1表示第一个参数，$2表示第二个参数... 带参数的函数示例：
+在 Shell 中，调用函数时可以向其传递参数。在函数体内部，通过 `<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><annotation encoding="application/x-tex">` n 的形式来获取参数的值，例如，</annotation></semantics></math>n 的形式来获取参数的值，例如，1 表示第一个参数，$2 表示第二个参数... 带参数的函数示例：
 
 ```sh
 #!/bin/bash
@@ -103,4 +103,4 @@ Outputs all parameters as a string 1 2 3 4 5 6 7 8 9 34 73 !
 ```
 
 **注意**
-10 不能获取第十个参数，获取第十个参数需要{10}。当 n>=10 时，需要使用 ${n} 来获取参数
+10 不能获取第十个参数，获取第十个参数需要 {10}。当 n>=10 时，需要使用 ${n} 来获取参数

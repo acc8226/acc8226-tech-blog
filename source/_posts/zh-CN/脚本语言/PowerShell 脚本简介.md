@@ -107,7 +107,7 @@ New-Item -Path 'C:\temp\New Folder\file.txt' -ItemType File
 
 Remove-Item -Path C:\temp\DeleteMe
 
-如果您不希望每个包含的项都被提示，请指定Recurse参数：
+如果您不希望每个包含的项都被提示，请指定 Recurse 参数：
 
 Remove-Item -Path C:\temp\DeleteMe -Recurse
 
