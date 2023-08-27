@@ -27,8 +27,8 @@ categories:
 在 windows 命令行窗口下查看被占用端口对应的 PID
 
 ```bat
-C:\>netstat -aon|findstr "80"
-TCP     127.0.0.1:80         0.0.0.0:0               LISTENING       2448
+netstat -aon|findstr "1883"
+TCP     127.0.0.1:1883         0.0.0.0:0               LISTENING       2448
 ```
 
 2\. 可自行选择关掉程序或者杀掉进程

@@ -11,7 +11,7 @@ categories: 文档规约
 2）路径：每一个 API 需对应一个路径，表示 API 具体的请求地址：
 &ensp;a）代表一种资源，只能为名词，推荐使用复数，不能为动词，请求方法已经表达动作意义。
 &ensp;b）URL 路径不能使用大写，单词如果需要分隔，统一使用下划线。
-&ensp;c）路径禁止携带表示请求内容类型的后缀，比如".json"，".xml"，通过 accept 头表达即可。
+&ensp;c）路径禁止携带表示请求内容类型的后缀，比如 ".json"，".xml"，通过 accept 头表达即可。
 3）请求方法：对具体操作的定义，常见的请求方法如下：
 &ensp;a）GET：从服务器取出资源。
 &ensp;b）POST：在服务器新建一个资源。
@@ -71,4 +71,4 @@ response.setHeader("Cache-Control", "s-maxage=" + cacheSeconds);
 
 ## 参考
 
-1. 2022 Java开发手册(黄山版).pdf
+1. 2022 Java 开发手册(黄山版).pdf

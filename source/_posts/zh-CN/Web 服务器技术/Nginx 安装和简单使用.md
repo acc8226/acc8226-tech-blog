@@ -5,18 +5,18 @@ updated: 2023-07-27 10:35:00
 categories: Web 服务器技术
 ---
 
-nginx 特点：
-
 * web 服务器, 轻量级, 能处理大并发量
 * 反向代理服务器(负载均衡)
 
 你可以轻松的在服务器上通过 Nginx 部署 HTTP 静态服务。
 
-## windows 下 Nginx 环境的安装
+## 安装
+
+### windows 下 Nginx 环境的安装
 
 下载压缩包后进行解压，双击里面的 nginx.exe 即可运行
 
-## linux 下 Nginx 环境的安装
+### linux 下 Nginx 环境的安装
 
 **CentOS 下 yum 安装**
 使用 `yum` 来安装 Nginx
@@ -53,14 +53,13 @@ cd nginx-1.17.8
 7\. 命令⾏执⾏ make install，完毕之后在 /usr/local/ 下会产⽣⼀个 nginx ⽬录
 
 > -bash: make: command not found - 解决办法
-一般出现 -bash: make: command not found 提示，是因为安装系统的时候使用的是最小化 mini 安装，系统没有安装 make 等常用命令，直接 yum 安装即可。
-`yum -y install gcc make`
+一般出现 -bash: make: command not found 提示，是因为安装系统的时候使用的是最小化 mini 安装，系统没有安装 make 等常用命令，直接 `yum -y install gcc make` 安装即可。
 
-8\. 进入`/usr/local/nginx/sbin`, 键入 `./nginx` 即可启动默认 80 端口的nginx.
+8\. 进入 `/usr/local/nginx/sbin`, 键入 `./nginx` 即可启动默认 80 端口的 nginx.
 
-## mac 下 nginx 的使用
+### mac 下 nginx 的使用
 
-分别执行下面这两行命令，就会自动安装nginx，等待安装完成即可
+分别执行下面这两行命令，就会自动安装 nginx，等待安装完成即可
 
 ```sh
 brew install nginx
@@ -94,7 +93,7 @@ Or, if you don't want/need a background service you can just run:
 其他命令:
 
 `brew services restart nginx` 重启 nginx 服务
-`brew services stop nginx` 停止nginx服务.
+`brew services stop nginx` 停止 nginx服务.
 
 **mac 安装过程中遇到的问题**
 `$ brew install pcre`
@@ -116,7 +115,7 @@ Error: Could not symlink .
 
 使用`$ sudo chown -R $(whoami):admin /usr/local`发现还是没用, 最终手动创建/user/local/opt 文件夹解决了(**Mac High Sierra 中不能改变 /usr/local 的拥有者的问题**)
 
-## 安装 tengine
+### 安装 tengine
 
 淘宝旗下的 [Tengine](https://tengine.taobao.org/download_cn.html) 项目。
 
@@ -147,13 +146,13 @@ Nginx 让新的配置生效  `nginx -s reload`
 
 ### 如何在 linux 下 安装多个 nginx
 
-./configure --prefix=/home/work/nginx2 ..... // 第二个nginx的安装配置, 用于指定安装目录
+./configure --prefix=/home/work/nginx2 ..... // 第二个 nginx 的安装配置, 用于指定安装目录
 make && make install
 
-./configure --prefix=/home/work/nginx3 ..... // 第三个nginx的安装配置
+./configure --prefix=/home/work/nginx3 ..... // 第三个 nginx 的安装配置
 make && make install
 
-## 功能演示
+## 功能
 
 ### nginx 反向代理
 
@@ -170,7 +169,7 @@ server {
 }
 ```
 
-### nginx 禁止限制某个 IP 地址或网段访问服务器 - 不要学我说话 - 博客园
+### nginx 禁止限制某个 IP 地址或网段访问服务器
 
 <https://www.cnblogs.com/hmycl/p/14416350.html>
 
@@ -237,11 +236,13 @@ server {
 
 ln -s /usr/local/nginx/sbin/nginx /usr/local/bin/
 
-### nginx在windowns下路径
+## 问题
+
+### nginx 在 windowns下路径
 
 实测有效
 
-## 报错总结
+### 1113: No mapping for the Unicode character exists
 
 使用 windows 版本的 nginx 启动时遇到(1113: No mapping for the Unicode character exists in the target multi-byte code page)这个错误
 
@@ -261,8 +262,6 @@ location / {
 }
 ```
 
-## 遇到的问题
-
 ### nginx reload 与 restart 的区别
 
 reload --重新加载，reload 会重新加载配置文件，Nginx 服务不会中断。而且 reload 时会测试 conf 语法等，如果出错会 rollback 用上一次正确配置文件保持正常运行。
@@ -272,6 +271,15 @@ restart --重启（先 stop 后 start），会重启 Nginx 服务。这个重启
 
 还有一点，reload 只是重新加载配置文件，不会清理 nginx 的一些缓存，在有些需要清理缓存的场景需要 restart ，例如 upstream 后端配置的集群服务地址是域名而不是 ip，当后端 IP 变了，就需要清除该域名的解析缓存，此时需要重启而不是 reload。
 
+### could not open error log file: open() "/var/log/nginx/error.log"
+
+[root@server105 log]# nginx
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (2: No such file or directory)
+2023/08/23 13:35:15 [emerg] 56629#56629: open() "/var/log/nginx/error.log" failed (2: No such file or directory)
+
+答
+mkdir -p /var/log/nginx
+
 ## 参考
 
-[《 http状态码301和302详解及区别——辛酸的探索之路》](http://blog.csdn.net/grandPang/article/details/47448395)
+[《http 状态码 301 和 302 详解及区别——辛酸的探索之路》](http://blog.csdn.net/grandPang/article/details/47448395)
