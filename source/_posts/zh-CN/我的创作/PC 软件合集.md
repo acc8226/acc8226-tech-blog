@@ -1,16 +1,107 @@
 ---
-title: 软件专题-软件使用记录
+title: PC 软件合集
 date: 2023-03-22 21:02:00
-updated: 2023-03-22 21:02:00
-categories:
-  - 收藏
-  - 软件专题
+updated: 2023-08-29 23:34:00
+categories: 我的创作
 ---
+
+各类软件收藏。
+
+说明：跨平台 + 特定系统应该可以满足大部分使用场景。
 
 ## 必备
 
+### 电脑管家【win mac】
+
+【mac】腾讯柠檬清理
+<https://lemon.qq.com/>
+
+【win】360安全卫士【安装版】
+https://weishi.360.cn/
+
+【win】火绒安全【安装版】
+https://www.huorong.cn/
+
+【win】腾讯电脑管家【安装版】
+https://guanjia.qq.com/
+
+【win】微软电脑管家【安装版】
+https://pcmanager.microsoft.com/zh-cn
+
+### 工具 鼠标手势【win】
+
+WGestures鼠标手势 | YingDev
+https://www.yingdev.com/projects/wgestures
+
+### 工具 压缩【win mac】
+
+【mac】The Unarchiver【App Store版】
+https://apps.apple.com/cn/app/the-unarchiver/id425424353
+
+【win】7-Zip【备选】
+
+7-Zip 官方中文网站
+https://sparanoid.com/lab/7z/
+
+南大镜像站-NJU Mirror https://mirror.nju.edu.cn/7-zip/
+
+7z2301-x64.exe 表示 64 位安装包
+7z2301.exe 表示 32 位安装包
+
+【win】360压缩【安装版】【首选】
+https://yasuo.360.cn/
+
+### 浏览器类
+
+【linux】360安全浏览器【首选】
+https://browser.360.net/gc/index.html?src=se
+
+【win】360极速浏览器【安装版】【首选】
+https://browser.360.cn/ee/
+
+【全平台】Firefox【备选】
+http://www.firefox.com.cn/
+
+【全平台】Google Chrome【备选】
+https://www.google.cn/chrome/
+
+【全平台】Microsoft Edge【备选】
+https://www.microsoft.com/zh-cn/edge?form=MA13FJ&ch
+
+【全平台】优化版浏览器合集【方案】
+https://www.runningcheese.com/
+
+### 密码 bitwarden
+
+Bitwarden Open Source Password Manager | Bitwarden
+https://bitwarden.com/
+
+### 输入法 搜狗输入法
+
+【win】搜狗输入法智慧版【安装版】
+https://pinyin.sogou.com/zhihui/
+
+linux 搜狗
+https://shurufa.sogou.com/linux
+
+mac 搜狗
+https://pinyin.sogou.com/mac/
+
+### 金山打字通
+
 网易邮箱大师
 能代理 gmail 很强大，但是手机版的有广告就不行了，手机QQ邮箱也是如此
+
+## 游戏
+
+下載 Windows 與 Mac 版本的 Battle.net | Battle.net
+<https://download.battle.net/zh-tw/desktop>
+
+雷神网游加速器-专线加速游戏,按分钟计费可暂停,免费试用
+<https://www.leigod.com/>
+
+迅游网游加速器-为网络游戏加速护航【官方网站】
+<https://www.xunyou.com/index.shtml>
 
 ## 精品
 

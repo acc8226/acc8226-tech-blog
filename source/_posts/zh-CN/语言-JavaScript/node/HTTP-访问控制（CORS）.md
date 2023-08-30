@@ -124,10 +124,10 @@ server {
 ## 参考
 
 HTTP 访问控制（CORS）
-https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Access_control_CORS
+<https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Access_control_CORS>
 
 nginx 解决跨域问题 - 个人文章 - SegmentFault 思否
-https://segmentfault.com/a/1190000019227927?utm_source=tag-newest
+<https://segmentfault.com/a/1190000019227927?utm_source=tag-newest>
 
 JS 中的跨域问题及解决办法汇总\_lareinalove 的博客-CSDN 博客
-https://blog.csdn.net/lareinalove/article/details/84107476
+<https://blog.csdn.net/lareinalove/article/details/84107476>

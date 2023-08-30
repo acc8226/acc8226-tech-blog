@@ -73,7 +73,7 @@ console.log("Server running at http://127.0.0.1:8080/")
 执行 server.js 文件
 `$ node server.js`
 
-接着我们在浏览器中打开地址：http://127.0.0.1:8080/index.html
+接着我们在浏览器中打开地址：<http://127.0.0.1:8080/index.html>
 
 ### 使用 Node 创建 Web 客户端
 

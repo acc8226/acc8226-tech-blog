@@ -132,10 +132,6 @@ var server = app.listen(80, function () {
 
 curl 进行 post 请求
 
-```
-未完成...
-```
-
 ### 静态文件
 
 Express 提供了内置的中间件 `express.static` 来设置静态文件如：图片， CSS, JavaScript 等。

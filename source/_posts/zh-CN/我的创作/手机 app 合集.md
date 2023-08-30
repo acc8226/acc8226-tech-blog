@@ -1,22 +1,20 @@
 ---
-title: 软件专题-App 使用记录
+title: 手机 app 合集
 date: 2023-06-04 13:14:00
-updated: 2023-06-04 13:14:00
-categories:
-  - 收藏
-  - 软件专题
+updated: 2023-08-29 23:34:00
+categories: 我的创作
 ---
 
 ## 必备
 
-* 国家反诈中心 必备
-<https://sj.qq.com/appdetail/com.hicorenational.antifraud?landing_type=yybclient>
-
-* 谷歌-身份验证器 为了安全绝对不过分
+* 安全 认证 Google Authenticator 谷歌-身份验证器 为安全绝对不过分
 <https://google-authenticator.en.softonic.com/android>
 
 * bitwarden 好用的密码管理器
 <https://github.com/bitwarden/mobile/releases>
+
+* 国家反诈中心 必备
+<https://sj.qq.com/appdetail/com.hicorenational.antifraud?landing_type=yybclient>
 
 ```yml
 **社交类**
@@ -33,7 +31,7 @@ qq / tim 二选一
 支付宝
 云闪付 我现在只用云闪付因为有优惠
 
-**云同步类** 按需添加即可
+**云同步类** 可按需添加
 三大网盘 阿里网盘 天翼云 然后坚果云都可以备选，我一般会下载阿里网盘用于看视频
 
 **生活优惠券类**

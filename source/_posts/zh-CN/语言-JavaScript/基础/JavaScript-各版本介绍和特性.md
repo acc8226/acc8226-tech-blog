@@ -85,35 +85,35 @@ Netscape Navigator 4.0在**1997年6月11日**发布，它是是支持JavaScript�
 
 ### 新增的操作符
 
-*   [delete](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete)
-*   [Equality operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_when_to_use_them) (== and !=)
+* [delete](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete)
+* [Equality operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_when_to_use_them) (== and !=)
 
 ### 新增的语句
 
-*   [Labeled](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/label) 语句
-*   [switch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)
-*   [do...while](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while)
-*   [import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
-*   [export](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export)
+* [Labeled](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/label) 语句
+* [switch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)
+* [do...while](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while)
+* [import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
+* [export](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export)
 
 ### 其他新特性
 
-*   [Regular Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
-*   [Signed scripts](https://web.archive.org/web/19971015223714/http://developer.netscape.com/library/documentation/communicator/jsguide/js1_2.htm)
+* [Regular Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
+* [Signed scripts](https://web.archive.org/web/19971015223714/http://developer.netscape.com/library/documentation/communicator/jsguide/js1_2.htm)
 
 ### 1.2 修改的功能
 
-*   现在你可以在函数内部嵌套函数。
-*   Number现在可以将指定的对象转换为数字。
-*   如果x是一个不包含格式良好的数字字面的字符串，Number将会生成一个NaN而不是一个错误。
-*   Stirng现在可以将指定的对象转换为字符串。
-*   [Array.prototype.sort()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/sort "sort() 方法用原地算法对数组的元素进行排序，并返回数组。排序算法现在是稳定的。默认排序顺序是根据字符串Unicode码点。") 现在能在所有平台上工作。它不会再将未定义的元素转换为null并且排序到数组最大的位置。
+* 现在你可以在函数内部嵌套函数。
+* Number 现在可以将指定的对象转换为数字。
+* 如果 x 是一个不包含格式良好的数字字面的字符串，Number 将会生成一个 NaN 而不是一个错误。
+* Stirng现在可以将指定的对象转换为字符串。
+* [Array.prototype.sort()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/sort "sort() 方法用原地算法对数组的元素进行排序，并返回数组。排序算法现在是稳定的。默认排序顺序是根据字符串Unicode码点。") 现在能在所有平台上工作。它不会再将未定义的元素转换为null并且排序到数组最大的位置。
 *   [String.prototype.split()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/split "split() 方法使用指定的分隔符字符串将一个String对象分割成字符串数组，以将字符串分隔为子字符串，以确定每个拆分的位置。")
     *   它即可以带一个确定的字符串参数去分割目标字符串，也可以带一个正则表达式参数。
     *   它可以带一个限制的数量，这样可以让最终的结果数组不再包含在这之后的空元素。
-*   [String.prototype.substring()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/substring "substring() 方法返回一个字符串在开始索引到结束索引之间的一个子集, 或从开始索引直到字符串的末尾的一个子集。"): 不再要求第二个索引值大于第一个。
-*   toString(): 现在可以把对象或者数组转换为文字。
-*   [break](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/break) 和[continue](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/continue) 语句现在可以在带标签的语句中使用。
+* [String.prototype.substring()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/substring "substring() 方法返回一个字符串在开始索引到结束索引之间的一个子集, 或从开始索引直到字符串的末尾的一个子集。"): 不再要求第二个索引值大于第一个。
+* toString(): 现在可以把对象或者数组转换为文字。
+* [break](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/break) 和[continue](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/continue) 语句现在可以在带标签的语句中使用。
 
 ## JavaScript 1.3
 
@@ -123,9 +123,9 @@ Netscape Navigator 4.0在**1997年6月11日**发布，它是是支持JavaScript�
 
 ### 新增的全局变量
 
-*   [NaN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/NaN "全局属性 NaN 的值表示不是一个数字（Not-A-Number）。")
-*   [Infinity](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Infinity "全局属性 Infinity 是一个数值，表示无穷大。")
-*   [undefined](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/undefined "undefined是全局对象的一个属性。也就是说，它是全局作用域的一个变量。undefined的最初值就是原始数据类型undefined。")
+* [NaN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/NaN "全局属性 NaN 的值表示不是一个数字（Not-A-Number）。")
+* [Infinity](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Infinity "全局属性 Infinity 是一个数值，表示无穷大。")
+* [undefined](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/undefined "undefined是全局对象的一个属性。也就是说，它是全局作用域的一个变量。undefined的最初值就是原始数据类型undefined。")
 
 ### 新增的方法
 
@@ -148,17 +148,16 @@ Netscape Navigator 4.0在**1997年6月11日**发布，它是是支持JavaScript�
 *   [Date.prototype.setUTCFullYear()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCFullYear "setUTCFullYear() 方法根据世界标准时间为一个具体日期设置年份。")
 *   [Date.prototype.setUTCMonth()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCMonth "setUTCMonth()方法根据通用的时间来设置一个准确的月份")
 *   [Date.prototype.setUTCDate()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCDate "setUTCDate() 方法就是根据全球时间设置特定date对象的日期。")
-*   [Date.prototype.setUTCHours()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCHours "The setUTCHours() method sets the hour for a specified date according to universal time, and returns the number of milliseconds since 1 January 1970 00:00:00 UTC until the time represented by the updated Date instance.")
-*   [Date.prototype.setUTCMinutes()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCMinutes "setUTCMinutes()方法会根据世界协调时（UTC）来设置指定日期的分钟数。")
-*   [Date.prototype.setUTCSeconds()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCSeconds "此 setUTCSeconds() 方法为一个依据国际通用时间的特定日期设置秒数。")
-*   [Date.prototype.setUTCMilliseconds()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCMilliseconds "setUTCMilliseconds() 方法会根据世界时来设置指定时间的毫秒数。")
+* [Date.prototype.setUTCHours()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCHours "The setUTCHours() method sets the hour for a specified date according to universal time, and returns the number of milliseconds since 1 January 1970 00:00:00 UTC until the time represented by the updated Date instance.")
+* [Date.prototype.setUTCMinutes()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCMinutes "setUTCMinutes()方法会根据世界协调时（UTC）来设置指定日期的分钟数。")
+* [Date.prototype.setUTCSeconds()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCSeconds "此 setUTCSeconds() 方法为一个依据国际通用时间的特定日期设置秒数。")
+* [Date.prototype.setUTCMilliseconds()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCMilliseconds "setUTCMilliseconds() 方法会根据世界时来设置指定时间的毫秒数。")
 
 ### 其他新特性
 
-*   [严格的相等运算符](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators#Using_the_Equality_Operators "JavaScript/Reference/Operators/Comparison_Operators#Using_the_Equality_Operators")
-*   支持Unicode
-*   介绍了一种JavaScript的控制台
-
+* [严格的相等运算符](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators#Using_the_Equality_Operators "JavaScript/Reference/Operators/Comparison_Operators#Using_the_Equality_Operators")
+   支持Unicode
+* 介绍了一种JavaScript的控制台
 
 ### JavaScript 1.3 修改的功能
 
@@ -218,17 +217,17 @@ Netscape Navigator 4.0在**1997年6月11日**发布，它是是支持JavaScript�
 
 ## JavaScript 1.6新特性
 
-*   使用[JavaScript](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript "JavaScript")创建和处理[XML](https://developer.mozilla.org/zh-CN/docs/Glossary/XML "XML")内容的ECMAScript for XML ([E4X](https://developer.mozilla.org/zh-CN/docs/Archive/Web/E4X "E4X")) 的支持文档已经添加。 更多详情：使用E4X处理XML。
-*   [Array.prototype.indexOf()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)
-*   [Array.prototype.lastIndexOf()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf)
-*   [Array.prototype.every()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/every)
-*   [Array.prototype.filter()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
-*   [Array.prototype.forEach()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
-*   [Array.prototype.map()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
-*   [Array.prototype.some()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/some)
-*   [Array generics](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array#Array_generic_methods "https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Array#Array_generics")
-*   [String generics](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String#String_generic_methods "https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/String#String_generics")
-*   [for each...in](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/for_each...in)
+* 使用[JavaScript](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript "JavaScript")创建和处理[XML](https://developer.mozilla.org/zh-CN/docs/Glossary/XML "XML")内容的ECMAScript for XML ([E4X](https://developer.mozilla.org/zh-CN/docs/Archive/Web/E4X "E4X")) 的支持文档已经添加。 更多详情：使用E4X处理XML。
+* [Array.prototype.indexOf()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)
+* [Array.prototype.lastIndexOf()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf)
+* [Array.prototype.every()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/every)
+* [Array.prototype.filter()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+* [Array.prototype.forEach()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
+* [Array.prototype.map()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+* [Array.prototype.some()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/some)
+* [Array generics](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array#Array_generic_methods "https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Array#Array_generics")
+* [String generics](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String#String_generic_methods "https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/String#String_generics")
+* [for each...in](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/for_each...in)
 
 ## JavaScript 1.6 功能变化
 
@@ -248,16 +247,16 @@ JavaScript 1.7是一个引出了一些新特性的语言更新，尤其是genera
 
 * [Iterators and generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators)
 * [Array comprehensions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Array_comprehensions#Differences_to_the_older_JS1.7.2FJS1.8_comprehensions)
-*   [let 声明](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)(Gecko 41中抛弃了 let 声明，见 [bug 1023609](https://bugzilla.mozilla.org/show_bug.cgi?id=1023609 "FIXED: Remove SpiderMonkey support for let expressions"))
+   [let 声明](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)(Gecko 41中抛弃了 let 声明，见 [bug 1023609](https://bugzilla.mozilla.org/show_bug.cgi?id=1023609 "FIXED: Remove SpiderMonkey support for let expressions"))
 * [const 声明](https://developer.mozilla.org/en-US/docs/const)
 * [解构赋值](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)(Gecko 40中不再支持JS1.7风格的for-in解构，见[bug 1083498](https://bugzilla.mozilla.org/show_bug.cgi?id=1083498 "FIXED: Remove SpiderMonkey support for destructuring for-in (JS1.7-only language extension)"))
 
 ## JavaScript 1.8 新特性
 
-*   [Expression Closures](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Expression_Closures "表达式闭包是定义简单函数的一种便捷方式。").
-*   [生成器表达式](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Iterators_and_Generators)。生成器表达式可以让你方便地创建生成器（在JavaScript1.7中引入）。通常你需要创建一个内含yield的自定义函数来得到一个生成器，而生成器表达式可以让你使用类似数组的语法来达到同样的目的。
-*   [`Array.prototype.reduce()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
-*   [`Array.prototype.reduceRight()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/ReduceRight)
+* [Expression Closures](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Expression_Closures "表达式闭包是定义简单函数的一种便捷方式。").
+* [生成器表达式](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Iterators_and_Generators)。生成器表达式可以让你方便地创建生成器（在JavaScript1.7中引入）。通常你需要创建一个内含yield的自定义函数来得到一个生成器，而生成器表达式可以让你使用类似数组的语法来达到同样的目的。
+* [`Array.prototype.reduce()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
+* [`Array.prototype.reduceRight()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/ReduceRight)
 
 ## JavaScript 1.8功能更新
 
