@@ -7,7 +7,7 @@ comments: false
 ## 个人信息
 
 * 性 别：男&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;年 龄：30
-* 手 机：[17090412860](tel:17090412860)&emsp;&emsp;&emsp;&ensp;&ensp;&ensp;&ensp;邮 箱：[acc8226@qq.com](mailto:acc8226@qq.com)
+* 手 机：[17090412860](tel:17090412860)&emsp;&emsp;&emsp;&ensp;&ensp;&ensp;邮 箱：[acc8226@qq.com](mailto:acc8226@qq.com)
 * 专 业：软件工程&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;岗 位：Java 后端开发
 
 ## 教育经历

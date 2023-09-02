@@ -2,15 +2,6 @@ Apache ZooKeeper 是一个开发和维护开源服务器的项目，它支持高
 
 ## 下载地址
 
-北京理工大学 开源软件镜像服务
-<https://mirror.bit.edu.cn/web/>
-
-清华大学开源软件镜像站 | Tsinghua Open Source Mirror
-<https://mirrors.tuna.tsinghua.edu.cn/>
-
-北京外国语大学开源软件镜像站 | BFSU Open Source Mirror
-<https://mirrors.bfsu.edu.cn/>
-
 zookeeper-3.4.14 下载地址
 <https://mirrors.bfsu.edu.cn/apache/zookeeper/zookeeper-3.4.14/zookeeper-3.4.14.tar.gz>
 

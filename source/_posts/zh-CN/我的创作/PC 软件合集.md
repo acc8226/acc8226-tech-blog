@@ -9,31 +9,28 @@ categories: 我的创作
 
 说明：跨平台 + 特定系统应该可以满足大部分使用场景。
 
-## 必备
+## 日常
 
-### 电脑管家【win mac】
+### 必备
 
-【mac】腾讯柠檬清理
-<https://lemon.qq.com/>
+#### 电脑管家【win mac】
 
-【win】360安全卫士【安装版】
-https://weishi.360.cn/
+【mac】腾讯柠檬清理<https://lemon.qq.com/>
 
-【win】火绒安全【安装版】
-https://www.huorong.cn/
+【win】360安全卫士【安装版】https://weishi.360.cn/
 
-【win】腾讯电脑管家【安装版】
-https://guanjia.qq.com/
+【win】火绒安全【安装版】https://www.huorong.cn/
 
-【win】微软电脑管家【安装版】
-https://pcmanager.microsoft.com/zh-cn
+【win】腾讯电脑管家【安装版】https://guanjia.qq.com/
 
-### 工具 鼠标手势【win】
+【win】微软电脑管家【安装版】https://pcmanager.microsoft.com/zh-cn
+
+#### 工具 鼠标手势【win】
 
 WGestures鼠标手势 | YingDev
 https://www.yingdev.com/projects/wgestures
 
-### 工具 压缩【win mac】
+#### 工具 压缩【win mac】
 
 【mac】The Unarchiver【App Store版】
 https://apps.apple.com/cn/app/the-unarchiver/id425424353
@@ -41,9 +38,9 @@ https://apps.apple.com/cn/app/the-unarchiver/id425424353
 【win】7-Zip【备选】
 
 7-Zip 官方中文网站
-https://sparanoid.com/lab/7z/
+<https://sparanoid.com/lab/7z/>
 
-南大镜像站-NJU Mirror https://mirror.nju.edu.cn/7-zip/
+南大镜像站-NJU Mirror <https://mirror.nju.edu.cn/7-zip/>
 
 7z2301-x64.exe 表示 64 位安装包
 7z2301.exe 表示 32 位安装包
@@ -51,7 +48,7 @@ https://sparanoid.com/lab/7z/
 【win】360压缩【安装版】【首选】
 https://yasuo.360.cn/
 
-### 浏览器类
+#### 浏览器类
 
 【linux】360安全浏览器【首选】
 https://browser.360.net/gc/index.html?src=se
@@ -60,23 +57,23 @@ https://browser.360.net/gc/index.html?src=se
 https://browser.360.cn/ee/
 
 【全平台】Firefox【备选】
-http://www.firefox.com.cn/
+<http://www.firefox.com.cn/>
 
 【全平台】Google Chrome【备选】
-https://www.google.cn/chrome/
+<https://www.google.cn/chrome/>
 
 【全平台】Microsoft Edge【备选】
-https://www.microsoft.com/zh-cn/edge?form=MA13FJ&ch
+<https://www.microsoft.com/zh-cn/edge?form=MA13FJ&ch>
 
 【全平台】优化版浏览器合集【方案】
 https://www.runningcheese.com/
 
-### 密码 bitwarden
+#### 密码 bitwarden
 
 Bitwarden Open Source Password Manager | Bitwarden
-https://bitwarden.com/
+<https://bitwarden.com/>
 
-### 输入法 搜狗输入法
+#### 输入法 搜狗输入法
 
 【win】搜狗输入法智慧版【安装版】
 https://pinyin.sogou.com/zhihui/
@@ -87,29 +84,266 @@ https://shurufa.sogou.com/linux
 mac 搜狗
 https://pinyin.sogou.com/mac/
 
-### 金山打字通
+#### 金山打字通
 
 网易邮箱大师
 能代理 gmail 很强大，但是手机版的有广告就不行了，手机QQ邮箱也是如此
+
+### 影音 之 视频类
+
+【win mac】哔哩哔哩【在线】【首选】 哔哩哔哩下载中心 https://app.bilibili.com/
+
+【win mac】爱奇艺【在线】 爱奇艺-在线视频网站-海量正版高清视频在线观看 https://www.iqiyi.com/
+
+【win mac】优酷【在线】优酷客户端下载中心 https://youku.com/product/index
+
+【win mac】腾讯视频【在线】腾讯视频-中国领先的在线视频媒体平台,海量高清视频在线观看 https://v.qq.com/
+
+【win mac】芒果TV【本地】 芒果TV-下载中心 https://www.mgtv.com/app/
+
+【mac linux】VLC【本地】VLC：官方网站 - 全平台的自由多媒体解决方案！ - VideoLAN <https://www.videolan.org/>
+
+【win】PotPlayer【本地】【首选】 PotPlayer高清影音播放器中文绿色版下载-PotPlayer中文网 https://potplayer.org/
+
+【win】荐片 荐片app_荐片安卓版_荐片播放器官网 - 荐片,最新电影,高清电影,免费电影,播放器 https://www.jianpian6.co/
+
+### 影音 之 音频类【win mac】
+
+【win】MusicPlayer2【本地】MusicPlayer2 <https://github.com/zhongyang219/MusicPlayer2>
+
+【win mac】QQ音乐【二选一】【在线】QQ音乐,音乐你的生活! <https://y.qq.com/download/index.html>
+
+【win mac】网易云音乐【二选一】【在线】 网易云音乐 <https://music.163.com/#/download>
+
+### 工具类
+
+#### 护眼
+
+【win mac】【安装版】https://justgetflux.com/
+
+EyesGuard 定时提醒眼睛休息
+
+#### 截图【win mac】
+
+【win mac】Snipaste【首选】 https://zh.snipaste.com/
+
+ShareX-截图 https://getsharex.com/
+
+#### 图像处理
+
+gimp https://www.gimp.org/
+
+#### 下载
+
+【all】motrix【首选】 https://motrix.app/
+
+【win linux】文件蜈蚣 http://www.filecxx.com/zh_CN/index.html
+
+【win mac】迅雷【备选】https://dl.xunlei.com/
+
+### 社交类
+
+【win mac】微信 <https://weixin.qq.com/>
+
+【全平台】QQ <https://im.qq.com/index/>
+
+Tim <https://tim.qq.com/download.html>
+
+### 办公类
+
+钉钉官网下载页面 - 钉钉，让进步发生
+https://page.dingtalk.com/wow/z/dingtalk/simple/ddhomedownload#/
+
+腾讯会议官方——腾讯会议 会开会
+https://meeting.tencent.com/
+
+#### mail 收发
+
+foxmail <https://www.foxmail.com/>
+
+网易邮箱大师 <https://dashi.163.com/>
+
+thunderbird <https://www.thunderbird.net/zh-CN/>
+
+#### office 文档
+
+WPS <https://www.wps.cn/>
+
+libreoffice <https://zh-cn.libreoffice.org/download/libreoffice/>
+
+#### PDF 文档
+
+【win】SumatraPDF【绿色版】
+
+【mac】PDF Expert
+
+#### 思维导图
+
+Xmind思维导图 <https://xmind.cn/>
+
+### 教育类
+
+《欧路词典》【全平台】 <https://www.eudic.net/v4/en/app/download>
+
+每日英语听力 <https://www.eudic.net/v4/en/app/ting>
+
+### 特有：云同步类
+
+阿里云盘 https://www.aliyundrive.com/drive/
+坚果云 https://www.jianguoyun.com/s/downloads
+【win mac】天翼云盘 https://cloud.189.cn/web/static/download-client/index.html
+
+### 特有：远程类
+
+【win】DBAdmin https://www.slser.com/
+
+ToDesk https://www.todesk.com/download.html
+
+not
+向日葵远程控制
+
+## 拓展
+
+### 科学上网
+
+not
+ClearVPN 之前还想，现在不好用了
+
+### 激活类
+
+HEU KMS Activator https://dl.lancdn.com/landian/soft/heu/
+
+### 工具 OCR软件【win mac】
+
+Umi-OCR- OCR图片转文字识别软件【win】https://github.com/hiroi-sora/Umi-OCR
+
+[已购] 工具 极度扫描-文字识别-OCR【win mac】 https://jidusm.wrste.com/
+
+### 绘图软件
+
+键盘按键显示 KeyCastOW
+
+KeyCastr mac用 https://github.com/keycastr/keycastr/releases
+not
+drawio
+
+### 工具 录屏软件【win mac】
+
+EV 录屏
+ScreenToGif 用于录制动图，可选格式 git ，apng 和 webp
+not
+LICEcap1.26 不够强大
+
+### 工具 文件搜索
+
+工具 文件  Everything【绿色版】【win】https://www.voidtools.com/zh-cn/downloads/
+
+文档中搜索关键字 【win】工具 FileSearchEX_v1.1.0.6
+
+### 工具 显示网速 TrafficMonitor【win】
+
+<https://github.com/zhongyang219/TrafficMonitor>
+
+### 工具 DNS切换【win】
+
+YogaDNS 【win】 <https://yogadns.com/>
+
+### 工具 markdown 编辑
+
+marktext <https://github.com/marktext/marktext/releases>
+
+### 工具 大文件分析 wiztree【win】
+
+https://www.diskanalyzer.com/
+
+### 工具 系统 极客卸载【win】
+
+https://geekuninstaller.com/download
+
+### 聊天 内网通【安装版】【win】
+
+http://www.51nwt.com/index.htm
+
+### 影音 酷我音乐 for PC 定制版【win】
+
+https://u9baoku.xyz/1185.html
+
+## 专业
+
+### 虚拟机
+
+【mac】Fusion【首选】<https://www.vmware.com/products/fusion.html>
+
+【mac】Parallels【付费】 <https://www.parallels.cn/>
+
+【win】VMware Workstation Player【首选】 <https://www.vmware.com/products/workstation-player.html>
+
+【全平台】VirtualBox【备选】<https://www.virtualbox.org/wiki/Downloads>
+
+### 网盘搭建
+
+AList文档 <https://alist.nn.ci/zh/>
+
+### 网络代理
+
+shadowsocks-shadowsocks-rust- A Rust port of shadowsocks <https://github.com/shadowsocks/shadowsocks-rust>
+
+shadowsocks-shadowsocks-windows- A C# port of shadowsocks https://github.com/shadowsocks/shadowsocks-windows
+
+shadowsocks-ShadowsocksX-NG- Next Generation of ShadowsocksX https://github.com/shadowsocks/ShadowsocksX-NG
+
+shadowsocks-shadowsocks-android- A shadowsocks client for Android https://github.com/shadowsocks/shadowsocks-android
+
+### 内网转发
+
+frp https://github.com/fatedier/frp/releases
+
+### 网络 Dns 优选
+
+魔方 DNS 优选助手
+
+### 投屏显示
+
+工具 同步显示 scrcpy <https://github.com/Genymobile/scrcpy/releases>
+
+乐播投屏 不听不信，谨防陌生人诈骗
+
+### 工具 文档 pandoc
+
+<https://github.com/jgm/pandoc/releases> 文档转换利器
+
+### 系统工具
+
+工具 系统 傲梅分区助手【win】 <https://www.disktool.cn/download.html>
+
+工具 系统 微PE工具箱【win】https://www.wepe.com.cn/
+
+### 辅助工具
+
+微软优化 Sysinternals【win】 https://learn.microsoft.com/zh-cn/sysinternals/
+
+AutoHotkey 【win】<https://www.autohotkey.com/>
+
+upx-4.0.2 用于辅助 ahk 进行加密
 
 ## 游戏
 
 下載 Windows 與 Mac 版本的 Battle.net | Battle.net
 <https://download.battle.net/zh-tw/desktop>
 
-雷神网游加速器-专线加速游戏,按分钟计费可暂停,免费试用
+雷神网游加速器-专线加速游戏,按分钟计费可暂停
 <https://www.leigod.com/>
 
-迅游网游加速器-为网络游戏加速护航【官方网站】
+迅游网游加速器-为网络游戏加速护航
 <https://www.xunyou.com/index.shtml>
 
-## 精品
+## 镜像
 
-yogadns
-<https://www.yogadns.com/>
+Operating system images – Raspberry Pi
+https://www.raspberrypi.com/software/operating-systems/
 
-clearmymac
-好用不过收费，算了
+https://mirrors.tuna.tsinghua.edu.cn/Adoptium/17/jdk/x64/windows/
+https://mirrors.tuna.tsinghua.edu.cn/Adoptium/17/jdk/x64/windows/OpenJDK17U-jdk_x64_windows_hotspot_17.0.8.1_1.zip
 
 ## 关注中
 
@@ -118,9 +352,6 @@ clearmymac
 
 notepad--【win, mac】
 npp 的一款替代品，在 mac 上试用中还行，干净清爽
-
-monica
-很好用的 ai 回答助手，不过每天才 30 次免费查询
 
 zyplayer--【win, mac】
 2023 据说不再更新，但目前依旧好用
@@ -175,6 +406,8 @@ dism++
 es 文件浏览器【mac】
 mac 版的貌似只有压缩和解压功能，功能严重不足，留观
 
+Espanso 不如 ahk 拓展性高
+
 Fantastical【mac】
 Fantastical 拥有和系统自带日历应用类似界面布局，但界面信息更加直观自然。软件支持 iPhone、iPad、Apple Watch 以及 Mac OS X，除了可以与 iCloud / Google / Yahoo 日历无缝整合同步外，它还解决了系统自带日历 APP 功能的诸多不足。
 
@@ -191,8 +424,13 @@ Lively Wallpaper - Microsoft Store 应用程序
 <https://apps.microsoft.com/store/detail/lively-wallpaper/9NTM2QC6QWS7>
 占用 CPU 资源太大
 
+monica
+很好用的 ai 回答助手，不过每天才 30 次免费查询
+
 paint.net.4.3.11.install.anycpu.web
 一般般，貌似不跨平台
+
+picpick 一般般
 
 quicker
 虽说是效率神器，但是我用不习惯
@@ -237,14 +475,15 @@ mac 版的确实不好用，可能需要配合鼠标使用才行
 万彩录屏大师
 太复杂了
 
-adguard
-免费体验 2 天太少了
+adguard 免费体验 2 天太少了
 
-CleanMy PC
-软件都不更新了
+AuTool-0.1.15-win-x64 暂时不好用
 
-Cursor Setup 0.1.3-x64
-净化的不太完善吧，淘汰
+CleanMy PC 软件都不更新
+
+Cursor Setup 0.1.3-x64 净化的不太完善吧，淘汰
+
+Dawn Launcher 不好用
 
 EncryptoforWin
 厂商专注 mac 已经不更新了
