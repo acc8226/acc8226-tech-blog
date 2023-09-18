@@ -51,10 +51,10 @@ https://yasuo.360.cn/
 #### 浏览器类
 
 【linux】360安全浏览器【首选】
-https://browser.360.net/gc/index.html?src=se
+<https://browser.360.net/gc/index.html?src=se>
 
 【win】360极速浏览器【安装版】【首选】
-https://browser.360.cn/ee/
+<https://browser.360.cn/ee/>
 
 【全平台】Firefox【备选】
 <http://www.firefox.com.cn/>
@@ -66,7 +66,17 @@ https://browser.360.cn/ee/
 <https://www.microsoft.com/zh-cn/edge?form=MA13FJ&ch>
 
 【全平台】优化版浏览器合集【方案】
-https://www.runningcheese.com/
+<https://www.runningcheese.com/>
+
+**firefox 系列**
+
+Tor 浏览器 <https://www.torproject.org/zh-CN/download/>
+
+Waterfox 浏览器 https://www.waterfox.net/en-US/download/
+
+**chrome 系列**
+
+Vivaldi 浏览器 | 强大的个性化和私密化的网络浏览器 https://vivaldi.com/zh-hans/
 
 #### 密码 bitwarden
 
@@ -76,13 +86,13 @@ Bitwarden Open Source Password Manager | Bitwarden
 #### 输入法 搜狗输入法
 
 【win】搜狗输入法智慧版【安装版】
-https://pinyin.sogou.com/zhihui/
+<https://pinyin.sogou.com/zhihui/>
 
 linux 搜狗
-https://shurufa.sogou.com/linux
+<https://shurufa.sogou.com/linux>
 
 mac 搜狗
-https://pinyin.sogou.com/mac/
+<https://pinyin.sogou.com/mac/>
 
 #### 金山打字通
 
@@ -91,9 +101,9 @@ https://pinyin.sogou.com/mac/
 
 ### 影音 之 视频类
 
-【win mac】哔哩哔哩【在线】【首选】 哔哩哔哩下载中心 https://app.bilibili.com/
+【win mac】哔哩哔哩【在线】【首选】 哔哩哔哩下载中心 <https://app.bilibili.com/>
 
-【win mac】爱奇艺【在线】 爱奇艺-在线视频网站-海量正版高清视频在线观看 https://www.iqiyi.com/
+【win mac】爱奇艺【在线】 爱奇艺-在线视频网站-海量正版高清视频在线观看 <https://www.iqiyi.com/>
 
 【win mac】优酷【在线】优酷客户端下载中心 https://youku.com/product/index
 
@@ -119,15 +129,19 @@ https://pinyin.sogou.com/mac/
 
 #### 护眼
 
-【win mac】【安装版】https://justgetflux.com/
+【win mac】【安装版】<https://justgetflux.com/>
 
 EyesGuard 定时提醒眼睛休息
 
 #### 截图【win mac】
 
-【win mac】Snipaste【首选】 https://zh.snipaste.com/
+【win mac】Snipaste【首选】 <https://zh.snipaste.com/>
 
-ShareX-截图 https://getsharex.com/
+ShareX-截图 <https://getsharex.com/>
+
+not
+
+picpick_portable 说不上哪不好
 
 #### 图像处理
 
@@ -135,11 +149,15 @@ gimp https://www.gimp.org/
 
 #### 下载
 
-【all】motrix【首选】 https://motrix.app/
+【all】motrix【首选】 <https://motrix.app/>
 
-【win linux】文件蜈蚣 http://www.filecxx.com/zh_CN/index.html
+【win linux】文件蜈蚣 <http://www.filecxx.com/zh_CN/index.html>
 
-【win mac】迅雷【备选】https://dl.xunlei.com/
+【win mac】迅雷【备选】<https://dl.xunlei.com/>
+
+not
+
+qbittorrent_4.5.5 不好用
 
 ### 社交类
 
@@ -152,10 +170,10 @@ Tim <https://tim.qq.com/download.html>
 ### 办公类
 
 钉钉官网下载页面 - 钉钉，让进步发生
-https://page.dingtalk.com/wow/z/dingtalk/simple/ddhomedownload#/
+<https://page.dingtalk.com/wow/z/dingtalk/simple/ddhomedownload#/>
 
 腾讯会议官方——腾讯会议 会开会
-https://meeting.tencent.com/
+<https://meeting.tencent.com/>
 
 #### mail 收发
 
@@ -189,15 +207,15 @@ Xmind思维导图 <https://xmind.cn/>
 
 ### 特有：云同步类
 
-阿里云盘 https://www.aliyundrive.com/drive/
-坚果云 https://www.jianguoyun.com/s/downloads
-【win mac】天翼云盘 https://cloud.189.cn/web/static/download-client/index.html
+阿里云盘 <https://www.aliyundrive.com/drive/>
+坚果云 <https://www.jianguoyun.com/s/downloads>
+【win mac】天翼云盘 <https://cloud.189.cn/web/static/download-client/index.html>
 
 ### 特有：远程类
 
-【win】DBAdmin https://www.slser.com/
+【win】DBAdmin <https://www.slser.com/>
 
-ToDesk https://www.todesk.com/download.html
+ToDesk <https://www.todesk.com/download.html>
 
 not
 向日葵远程控制
@@ -211,13 +229,13 @@ ClearVPN 之前还想，现在不好用了
 
 ### 激活类
 
-HEU KMS Activator https://dl.lancdn.com/landian/soft/heu/
+HEU KMS Activator <https://dl.lancdn.com/landian/soft/heu/>
 
 ### 工具 OCR软件【win mac】
 
-Umi-OCR- OCR图片转文字识别软件【win】https://github.com/hiroi-sora/Umi-OCR
+Umi-OCR- OCR图片转文字识别软件【win】<https://github.com/hiroi-sora/Umi-OCR>
 
-[已购] 工具 极度扫描-文字识别-OCR【win mac】 https://jidusm.wrste.com/
+[已购] 工具 极度扫描-文字识别-OCR【win mac】 <https://jidusm.wrste.com/>
 
 ### 绘图软件
 
@@ -229,10 +247,15 @@ drawio
 
 ### 工具 录屏软件【win mac】
 
-EV 录屏
+EV 录屏 还可以单独录音
 ScreenToGif 用于录制动图，可选格式 git ，apng 和 webp
 not
 LICEcap1.26 不够强大
+
+### 工具 文字转语音软件【win mac】
+
+tts-vue: 🎤 微软语音合成工具，使用 Electron + Vue + ElementPlus + Vite 构建，将文字转为语音MP3。
+<https://gitee.com/LGW_space/tts-vue>
 
 ### 工具 文件搜索
 
@@ -251,6 +274,10 @@ YogaDNS 【win】 <https://yogadns.com/>
 ### 工具 markdown 编辑
 
 marktext <https://github.com/marktext/marktext/releases>
+
+not
+
+MarkdownPad2 http://markdownpad.com/ 感觉差点意思
 
 ### 工具 大文件分析 wiztree【win】
 

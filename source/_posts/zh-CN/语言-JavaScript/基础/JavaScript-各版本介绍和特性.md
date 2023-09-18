@@ -41,7 +41,7 @@ Netscape Navigator 3.0 在 **1996 年 8 月 19** 发布，是支持 JavaScript �
 
 ### 其他新特性
 
-* [<noscript>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript)
+* [noscript](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript)
 * [LiveConnect](https://developer.mozilla.org/en-US/docs/Archive/Web/LiveConnect). Java and JavaScript之间的通信.
 
 ### 1.1 修改的功能
@@ -161,7 +161,7 @@ Netscape Navigator 4.0在**1997年6月11日**发布，它是是支持JavaScript�
 
 ### JavaScript 1.3 修改的功能
 
-*   修改 [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date "JavaScript/Reference/Global_Objects/Date") 使之符合 ECMA-262
+* 修改 [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date "JavaScript/Reference/Global_Objects/Date") 使之符合 ECMA-262
     *   新的构造函数： Date(year, month, day, [,*hours* [*, minutes* [*, seconds* [*, milliseconds* ]]]])
     *   附加的方法参数
         *   setMonth(month[, date])
@@ -281,22 +281,22 @@ JavaScript1.8中的一个修改是对JavaScript1.7中引入的数组键值结构
 
 ### 新函数
 
-Function	Description
-Object.create()	使用指定的原型对象和属性. bug 492840
-Object.defineProperty()	为对象添加给定的描述信息的属性名.
-Object.defineProperties()	为对象添加多个给定的描述信息的属性名.
-Object.getOwnPropertyDescriptor()	返回对象的指定属性名的描述信息. bug 505587
-Object.keys()	返回由对象的所有可枚举属性组成的数组. bug 307791
-Object.getOwnPropertyNames()	返回由对象的所有可枚举和不可枚举属性组成的数组. bug 518663
-Object.preventExtensions()	防止对象进行任意的扩展. bug 492849
-Object.isExtensible()	判断对象是否可以扩展. bug 492849
-Object.seal()	防止其他代码删除对象的属性. bug 492845
-Object.isSealed()	判断对象是否是密封(即禁止删除属性)的. bug 492845
-Object.freeze()	冻结一个对象: 其他代码不能删除或修改任何属性. bug 492844
-Object.isFrozen()	判断对象是否是冻结的. bug 492844
-Array.isArray()	判断变量是否是数组. bug 510537
-Date.prototype.toJSON()	返回一个Date对象用JSON格式化的字符串.
-Function.prototype.bind()	创建一个新函数,当这个函数被调用时,函数会使用提供的上下文环境(给定的字符序列) bug 429507
+Function Description
+Object.create() 使用指定的原型对象和属性. bug 492840
+Object.defineProperty() 为对象添加给定的描述信息的属性名.
+Object.defineProperties() 为对象添加多个给定的描述信息的属性名.
+Object.getOwnPropertyDescriptor() 返回对象的指定属性名的描述信息. bug 505587
+Object.keys() 返回由对象的所有可枚举属性组成的数组. bug 307791
+Object.getOwnPropertyNames() 返回由对象的所有可枚举和不可枚举属性组成的数组. bug 518663
+Object.preventExtensions() 防止对象进行任意的扩展. bug 492849
+Object.isExtensible() 判断对象是否可以扩展. bug 492849
+Object.seal() 防止其他代码删除对象的属性. bug 492845
+Object.isSealed() 判断对象是否是密封(即禁止删除属性)的. bug 492845
+Object.freeze() 冻结一个对象: 其他代码不能删除或修改任何属性. bug 492844
+Object.isFrozen() 判断对象是否是冻结的. bug 492844
+Array.isArray() 判断变量是否是数组. bug 510537
+Date.prototype.toJSON() 返回一个Date对象用JSON格式化的字符串.
+Function.prototype.bind() 创建一个新函数,当这个函数被调用时,函数会使用提供的上下文环境(给定的字符序列) bug 429507
 
 ### ECMAScript5 新特性
 

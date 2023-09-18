@@ -21,7 +21,9 @@ categories: 我的创作
 
 **生活类**
 美团 https://sj.qq.com/appdetail/com.sankuai.meituan
+
 not
+
 大众点评 https://sj.qq.com/appdetail/com.dianping.v1 和上述重了
 闪送 https://sj.qq.com/appdetail/cn.ishansong 有需要可花钱
 58 同城 https://sj.qq.com/appdetail/com.wuba 假消息太多，注意防范什么引流之类，但也有真实的
@@ -29,7 +31,9 @@ not
 
 **购物类**
 淘宝 https://sj.qq.com/appdetail/com.taobao.taobao
+
 not
+
 咸鱼 有点东西，可选吧
 京东
 天猫
@@ -40,8 +44,10 @@ not
 QQ 音乐 https://sj.qq.com/appdetail/com.tencent.qqmusic
 抖音 https://sj.qq.com/appdetail/com.ss.android.ugc.aweme
 bilibili 无广告版 https://github.com/lucinhu/bili_you/releases
-or bilibili https://sj.qq.com/appdetail/tv.danmaku.bili 原版  
+or bilibili https://sj.qq.com/appdetail/tv.danmaku.bili 原版
+
 not
+
 网易云 https://sj.qq.com/appdetail/com.netease.cloudmusic 和上面那位重复了且歌没这么多，且体验稍微差点
 酷狗 https://sj.qq.com/appdetail/com.kugou.android 和上面那位重复了
 酷我 也是重复了
@@ -54,8 +60,10 @@ m1905 电影网 做的一般般
 
 **阅读类**
 微信读书 https://sj.qq.com/appdetail/com.tencent.weread
-今日头条 https://sj.qq.com/appdetail/com.ss.android.article.news 曾经最爱，但是广告劝退了我，iPhone 付费版的倒是可以考虑。我一般很少关注外界，这得改呀，央视 315 这种节目就很好。
+今日头条 https://sj.qq.com/appdetail/com.ss.android.article.news 曾经最爱，但是广告劝退了我，iPhone 付费版的倒是可以考虑。我一般很少关注外界，这得改呀，央视 315 这种节目就很好
+
 not
+
 京东读书 https://sj.qq.com/appdetail/com.jd.app.reader
 微软 start 不好用
 多看 书太贵
@@ -71,7 +79,9 @@ QQ阅读
 真实好友
 菜鸟 https://sj.qq.com/appdetail/com.cainiao.wireless 好处就是一键查询所有快递
 小度音箱 https://sj.qq.com/appdetail/com.baidu.duer.superapp 硬件绑定的应用，不得不用
+
 not
+
 uc 浏览器 有广告
 QQ 浏览器 有广告
 狐猴浏览器 感觉不完善
@@ -85,7 +95,9 @@ bad
 **社交类**
 tim - 由于 qq 安装包太大 https://sj.qq.com/appdetail/com.tencent.tim
 微信 https://sj.qq.com/appdetail/com.tencent.mm
+
 not
+
 微博 https://sj.qq.com/appdetail/com.sina.weibo 不喜欢玩
 小红书 https://sj.qq.com/appdetail/com.xingin.xhs 感觉不到好玩
 bad
@@ -95,7 +107,9 @@ bad
 钉钉 https://sj.qq.com/appdetail/com.alibaba.android.rimet
 HP 打印服务插件 https://sj.qq.com/appdetail/com.hp.android.printservice 毕竟市场占用率高且方便
 天眼查 https://sj.qq.com/appdetail/com.tianyancha.skyeye 求职中可以反调公司，也适用于查询被服务公司，无良北京树妖国际无所遁形
+
 not
+
 QQ 邮箱 https://sj.qq.com/appdetail/com.tencent.androidqqmail 有广告了
 网易邮箱大师 https://sj.qq.com/appdetail/com.netease.mail 看情况选购
 
@@ -105,9 +119,12 @@ QQ 邮箱 https://sj.qq.com/appdetail/com.tencent.androidqqmail 有广告了
 **支付类** 不要网贷~~~，不要花费超出能力的钱
 支付宝 https://sj.qq.com/appdetail/com.eg.android.AlipayGphone
 云闪付 https://sj.qq.com/appdetail/com.unionpay 云闪付持续有优惠，信用卡还款免手续费
+
 not
+
 数字人民币 现放开了注册，但是生态还不完善，然后 170 的收集也注册不了，现在我是用 153 的号码进行注册的。
 翼支付 因为活动期间送代金券
+
 bad
 
 **交通类**
@@ -116,7 +133,9 @@ bad
 北京一卡通 https://sj.qq.com/appdetail/cn.com.bmac.nfc
 滴滴出行 app / 小程序。可打车可搬家，货运搬家新用户还送券，还行吧
 百度地图
+
 not
+
 高德地图 任选一
 腾讯地图 任选一
 
@@ -125,21 +144,27 @@ not
 去哪儿 https://sj.qq.com/appdetail/com.Qunar 感觉还是去哪儿的票价稍微便宜些 这里由于我没仔细阅读，导致取消订单后重下单付款了 120，长沙金井的老板真黑，当是应该提前和他说我第二天早起会退房的，但我的主要损失还是被商诈和被电诈
 携程 https://sj.qq.com/appdetail/ctrip.android.view
 飞猪 https://sj.qq.com/appdetail/com.taobao.trip
+
 not
+
 同程 重了
 
 **听书类**
 微信听书 https://sj.qq.com/appdetail/com.tencent.wehear
 得到 https://sj.qq.com/appdetail/com.luojilab.player
 极客时间 https://sj.qq.com/appdetail/org.geekbang.geekTime
+
 not
-凤凰FM 偶尔闪退呀 这个 api 到时可以研究下
+
+凤凰 FM 偶尔闪退呀 这个 api 到时可以研究，属于抓包资源
 
 **特有：云同步类** 
 阿里云盘 https://sj.qq.com/appdetail/com.alicloud.databox 一般会下载阿里网盘用于看视频
 坚果云 https://sj.qq.com/appdetail/nutstore.android
 天翼云 https://sj.qq.com/appdetail/com.cn21.ecloud
+
 not
+
 印象笔记 限制 2 台设备
 有道云笔记 限制 2 台设备
 flomo 笔记 用不习惯

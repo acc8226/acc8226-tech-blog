@@ -201,10 +201,10 @@ ms-settings:privacy-backgroundapps后台应用
 ms-settings:privacy-calendar日历
 ms-settings:privacy-callhistory通话记录
 ms-settings:privacy-contacts联系人
-ms-settings:privacy-customdevices其他设备
+ms-settings:privacy-customdevices 其他设备
 ms-settings:privacy-email 电子邮件
-ms-settings:privacy-feedback反馈
-ms-settings:privacy-location位置
+ms-settings:privacy-feedback 反馈
+ms-settings:privacy-location 位置
 ms-settings:privacy-messaging 消息传送
 ms-settings:privacy-microphone麦克风
 ms-settings:privacy-radios 无线电收发器
@@ -214,7 +214,7 @@ ms-settings:windowsinsider更新和安全-获取Insider Preview版本
 ms-settings:windowsupdateWindows更新
 ms-settings:windowsupdate-history 更新历史
 ms-settings:windowsupdate-options 高级设置
-ms-settings:windowsupdate-restartoptions重启选项
+ms-settings:windowsupdate-restartoptions 重启选项
 ms-settings:windowsupdate-action 检查更新
 ms-settings:backup 备份
 ms-settings:activation激活
@@ -246,6 +246,18 @@ ms-settings:pen 笔
 ms-settings:printers 打印机和扫描仪
 ms-settings:typing 输入
 ms-settings:wheel 滚轮
+
+## 问答
+
+### windows-setup.exe 和 windows-legacy-setup.exe 有什么区别吗
+
+"windows-setup.exe" 和 "windows-legacy-setup.exe" 是 Windows 操作系统安装程序的两个不同版本。
+
+"windows-setup.exe" 通常用于安装最新的 Windows 操作系统，例如 Windows 10 或 Windows 11。它支持最新的硬件和软件，并提供了最新的功能和用户界面。
+
+"windows-legacy-setup.exe" 则通常用于安装旧版本的 Windows 操作系统，例如 Windows 7 或 Windows 8。它主要用于为那些不能升级到最新版本 Windows 的用户提供支持。
+
+总的来说，选择使用哪个安装程序取决于您的具体需求和硬件/软件环境。如果您正在安装最新的 Windows 操作系统，则应该使用 "windows-setup.exe"；如果您需要安装旧版本的 Windows 操作系统，则应该使用 "windows-legacy-setup.exe"。
 
 ## 参考
 
