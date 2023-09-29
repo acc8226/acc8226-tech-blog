@@ -8,7 +8,7 @@ The jinahu.com articles will be moved here one by one. This project is built usi
 
 ## Copyright notice
 
-Due to the large number of articles, if there are inappropriate references to publications, web site caused by infringement, please contact me immediately mailto: acc8226@qq.com.
+Due to the large number of articles, if there are inappropriate references to publications, web site caused by infringement, please contact me immediately mailto: <acc8226@qq.com>.
 The source of individual reproduction should be indicated. Commercial reproduction is prohibited without my consent.
 
 ## Blog building steps
@@ -27,7 +27,7 @@ Java back-end development, recently prepared to go to ChangSha-CN to find a job
 
 ## 版权说明
 
-由于文章数多，如有不恰当引用了出版物、网站造成侵权的，请立即联系我 mailto:acc8226@qq.com 进行删除。
+由于文章数多，如有不恰当引用了出版物、网站造成侵权的，请立即联系我 mailto:<acc8226@qq.com> 进行删除。
 
 个人转载需注明来源。未经本人同意禁止商业转载。
 
@@ -39,4 +39,4 @@ Java back-end development, recently prepared to go to ChangSha-CN to find a job
 
 ## 关于我
 
-Java 后端开发一枚，最近准备去长沙找工作
+程序员一枚
