@@ -27,4 +27,4 @@ Export aborted because fatal lint errors were found.These are listed in the Prob
 
 ## 参考
 
-- 删除 eclipse 自动生成的 //TODO Auto-generated - 黄彪博客 - CSDN 博客 <https://blog.csdn.net/hbiao68/article/details/52682823>
+删除 eclipse 自动生成的 //TODO Auto-generated - 黄彪博客 - CSDN 博客 <https://blog.csdn.net/hbiao68/article/details/52682823>

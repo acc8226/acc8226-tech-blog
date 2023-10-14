@@ -7,7 +7,7 @@ categories:
   - 日常软件
 ---
 
-纠结了一阵, 9299 终入手翻新的 13.3 英寸 2017 款 MacBook Pro 2.3GHz 双核 英特尔 [酷睿i5 7360U 处理器](http://detail.zol.com.cn/cpu/index1168451.shtml) ，配备 Retina 显示屏-深空灰色
+纠结了一阵, 9299 终入手翻新的 13.3 英寸 2017 款 MacBook Pro 2.3GHz 双核 英特尔 [酷睿 i5 7360U 处理器](http://detail.zol.com.cn/cpu/index1168451.shtml) ，配备 Retina 显示屏-深空灰色
 
 产品链接: [https://www.apple.com/cn/shop/product/FPXT2CH/A](https://www.apple.com/cn/shop/product/FPXT2CH/A)
 
@@ -149,11 +149,11 @@ Command + control + F 或者 点击左上角绿色按钮
 ### macOS 使用手册
 
 《macOS 使用手册》涵盖了如何使用 MacBook 的大量信息。
-**获得帮助。**点按程序坞中的“访达”图标 ，然后在菜单栏中点按“帮助”菜单并选取“ macOS 帮助”以打开《macOS 使用手册》。或者在搜索栏中键入问题或搜索词，然后在结果列表中选取一个主题。
+**获得帮助。**点按程序坞中的“访达”图标 ，然后在菜单栏中点按“帮助”菜单并选取 “macOS 帮助” 以打开《macOS 使用手册》。或者在搜索栏中键入问题或搜索词，然后在结果列表中选取一个主题。
 
 ## 小知识点
 
-* ”制作替身“是对应 windows 下的”创建快捷方式“的意思。
+* 制作替身“是对应 windows 下的”创建快捷方式“的意思。
 
 ## 参考
 

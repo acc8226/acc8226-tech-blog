@@ -241,16 +241,19 @@ Umi-OCR- OCR图片转文字识别软件【win】<https://github.com/hiroi-sora/U
 
 键盘按键显示 KeyCastOW
 
-KeyCastr mac用 https://github.com/keycastr/keycastr/releases
+KeyCastr mac用 <https://github.com/keycastr/keycastr/releases>
 not
 drawio
 
 ### 工具 录屏软件【win mac】
 
-EV 录屏 还可以单独录音
+EV 录屏 还可以单独录音 <https://www.ieway.cn/evcapture.html>
 ScreenToGif 用于录制动图，可选格式 git ，apng 和 webp
+
 not
+
 LICEcap1.26 不够强大
+Bandicam 班迪录屏 10 分种内才免费，不过体验极好
 
 ### 工具 文字转语音软件【win mac】
 
@@ -565,3 +568,12 @@ UGit
 
 Wox-1.4.1196
 已经不太维护的启动器，界面也一般
+
+录猎
+不好用
+
+Listary
+虽说效率神器但是不好用
+
+万兴喵影2023
+需要登录才能录屏，差评，不过这个公司的产品还行

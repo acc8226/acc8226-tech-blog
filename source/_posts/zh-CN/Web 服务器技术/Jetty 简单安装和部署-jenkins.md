@@ -71,7 +71,7 @@ Starting Jetty: OK Wed Nov 20 10:26:53 MST 2013
 
 ## 遇到过的问题
 
-问题：jetty 隔几天凌晨定时出现 404 错误（linux /tmp/)
+问题：jetty 隔几天凌晨必出现 404 错误（linux /tmp/)
 解决方案：在 $(jetty.home) 下创建一个 work 目录。
 
 ## 参考

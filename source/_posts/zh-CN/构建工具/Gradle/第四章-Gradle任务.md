@@ -42,7 +42,7 @@ Project 中还有一种名字 + Map 参数 + 闭包的的方式，和上面演�
 
 首先呢，我们创建的任务都会作为项目(Project)的一个属性，属性名就是任务名，所以我们可以直接通过该任务名访问和操纵该任务：
 
-通过索引访问的时候，任务名就是我们 Key（关键索引），其实这里说 key 不恰当，因为t asks 并不是一个 Map，这里再顺便扩展下 Groovy 的知识，[]在Groovy中是一个操作符，我们知道Groovy的操作符都有对应的方法让我们重载，a[b]对应的是 a.getAt(b)这个方法.
+通过索引访问的时候，任务名就是我们 Key（关键索引），其实这里说 key 不恰当，因为 tasks 并不是一个 Map，这里再顺便扩展下 Groovy 的知识，[]在Groovy中是一个操作符，我们知道Groovy的操作符都有对应的方法让我们重载，a[b]对应的是 a.getAt(b)这个方法.
 
 ```groovy
 //直接通过该任务名访问和操纵该任务
@@ -61,7 +61,7 @@ tasks['creatTask1'].doLast{
 ```
 
 值得强调的时候，通过路径访问的时候，参数值可以是任务路径也可以是任务的名字，但是通过名字访问的时候，参数值只能是任务的名字，不能为路径。
-通过以上几种方式我们发现访问 Gradle 的任务非常方便，当我们拿到这个任务的引用的时候，我们就可以按我们的业务逻辑去操纵它，比如配置任务依赖，配置任务的一些属性，调用方法呢，这是Ant做不到的，这也是Gradle的灵活之处。
+通过以上几种方式我们发现访问 Gradle 的任务非常方便，当我们拿到这个任务的引用的时候，我们就可以按我们的业务逻辑去操纵它，比如配置任务依赖，配置任务的一些属性，调用方法呢，这是 Ant 做不到的，这也是Gradle的灵活之处。
 
 ### 4.3 任务分组和描述
 
@@ -119,7 +119,7 @@ class CustomTask extends DefaultTask{
 
 结果和我们期望的一样。我们前面讲了，执行Tasks的时候就是在遍历执行 actions List，那么要达到这种 doFirst、doSelf、doLast 顺序的目的，就必须把 doFirst 的 Action s放在 actions List 的最前面，把 doSelf 的 Actions 放在 List 中间，把doLast的Actions放在List最后面，这样才能达到按约定顺序执行的目的。
 
-当我们使用 task 方法创建task1这个任务的时候，Gradle会解析其带有TaskAction标注的方法作为其Task执行的Action，然后通过Task的prependParallelSafeAction方法把该Action添加到actions List里：
+当我们使用 task 方法创建 task1 这个任务的时候，Gradle 会解析其带有 TaskAction 标注的方法作为其 Task 执行的 Action，然后通过Task的prependParallelSafeAction 方法把该 Action 添加到 actions List里：
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-f291b3a5a12702c1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 

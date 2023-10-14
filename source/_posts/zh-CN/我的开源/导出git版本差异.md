@@ -95,7 +95,7 @@ SET t=%theValue%
 :loop4
 FOR /f "tokens=1* delims=/" %%a IN ("%t%") DO (
  SET g_pref=%%a
- @REM 将截取剩下的部分赋给t，其实这里可以使用延迟变量开关
+ @REM 将截取剩下的部分赋给 t，其实这里可以使用延迟变量开关
  SET t=%%b
 )
 IF DEFINED t GOTO :loop4

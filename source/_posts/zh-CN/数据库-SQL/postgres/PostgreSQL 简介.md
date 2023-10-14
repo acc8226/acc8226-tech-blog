@@ -307,6 +307,8 @@ psql -h 127.0.0.1 -p 5432 -U postgres -d thingsx2 < dbname.sql
 
 注：-d 展示的是指向的数据库
 
+至于其他的备份方式，我发现 pgadmin 一点都不好用，然后 navicat 的 工具->数据传输 确实好用。
+
 ## PL/pgSQL 语言
 
 PL/pgSQL 是一种用于 PostgreSQL 数据库系统的可载入的过程语言。PL/pgSQL 的设计目标是创建一种这样的可载入过程语言。

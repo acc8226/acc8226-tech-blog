@@ -10,10 +10,8 @@
 ```cs
 using System;
 
-namespace StringApplication
-{
-    class Program
-    {
+namespace StringApplication {
+    class Program {
         static void Main(string[] args)
         {
            //字符串，字符串连接

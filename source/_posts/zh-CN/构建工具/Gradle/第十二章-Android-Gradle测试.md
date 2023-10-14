@@ -14,7 +14,7 @@ Android 为测试提供了很好的支持，既可以使用传统的 Junit 测�
 
 在androidTest SourceSet 里我们可以依赖各种测试库，写很多方面的测试用例，比如单元测试的、集成测试的，espresso UI测试的，uiautomator自动化测试的等等。
 
-既然它可以生成一个 Apk，那么它一定有Apk的必备属性和文件，比如包名、比如 AndroidManifest.xml 文件等等，那么他们是怎么被配置的呢，还记得我们讲的 ProductFlavor 吗？它里面有很多以test开头的配置，这些就是我们用来配置测试Apk用的。一般测试Apk我们会统一配置，而不是针对每个渠道都配置，所以我们会在defaultConfig里来对测试 Apk 进行配置，让其自动生成所需要的包名、AndroidManifest.xml文件等信息，defaultConfig 也可以这么配置，因为defaultConfig 其实也是一个 ProductFlavor。
+既然它可以生成一个 Apk，那么它一定有 Apk 的必备属性和文件，比如包名、比如 AndroidManifest.xml 文件等等，那么他们是怎么被配置的呢，还记得我们讲的 ProductFlavor 吗？它里面有很多以test开头的配置，这些就是我们用来配置测试Apk用的。一般测试Apk我们会统一配置，而不是针对每个渠道都配置，所以我们会在defaultConfig里来对测试 Apk 进行配置，让其自动生成所需要的包名、AndroidManifest.xml文件等信息，defaultConfig 也可以这么配置，因为defaultConfig 其实也是一个 ProductFlavor。
 
 1. testApplicationId 测试Apk的包名
 2. testFunctionalTest 是否启用功能测试

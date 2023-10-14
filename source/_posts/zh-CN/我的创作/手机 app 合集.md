@@ -42,7 +42,10 @@ not
 
 **影音类**
 QQ 音乐 https://sj.qq.com/appdetail/com.tencent.qqmusic
-抖音 https://sj.qq.com/appdetail/com.ss.android.ugc.aweme
+or 洛雪音乐助手 很强大
+
+抖音 https://sj.qq.com/appdetail/com.ss.android.ugc.aweme 可是会上瘾
+
 bilibili 无广告版 https://github.com/lucinhu/bili_you/releases
 or bilibili https://sj.qq.com/appdetail/tv.danmaku.bili 原版
 
@@ -90,6 +93,7 @@ kiwi 浏览器 一般般，显示国家图片的插件而且不能用，虽然�
 es 文件浏览器 有广告 离线可备用吧，话说如果有电脑为何不直接播放？
 快递 100 https://sj.qq.com/appdetail/com.Kingdee.Express 最近寄快递选【德邦】确实便宜写，不过体积和重量两者对方是按大的来，情有可原吧。第一次用快递 100 我领了一个 5 月的优惠券，赶紧还行，一般足够用
 北京云法庭 <http://sspt.bjcourt.gov.cn/bcourt/onlineCourt/downloadYm> 我在某些情况下会用到 法 yuan 就是垃圾，法 guan 也是，拖了好长时间
+北京法院 一类应用
 bad
 
 **社交类**
@@ -131,7 +135,7 @@ bad
 北京公交 https://sj.qq.com/appdetail/com.tianlutech.ebus 补票用
 亿通行 https://sj.qq.com/appdetail/enfc.metro
 北京一卡通 https://sj.qq.com/appdetail/cn.com.bmac.nfc
-滴滴出行 app / 小程序。可打车可搬家，货运搬家新用户还送券，还行吧
+滴滴出行 app / 小程序。可打车可搬家，货运搬家新用户还送券，还行
 百度地图
 
 not
@@ -156,6 +160,7 @@ not
 
 not
 
+少年得到 太幼稚
 凤凰 FM 偶尔闪退呀 这个 api 到时可以研究，属于抓包资源
 
 **特有：云同步类** 
@@ -182,6 +187,10 @@ kmp 一款中规中矩的播放器，完全免费但没有远程连接功能
 
 rss 阅读器
 还是苹果平台的 redder 好用，安卓平台的 feeder 不好用只能备选了
+
+## 小程序
+
+小鹅通
 
 ## 参考
 

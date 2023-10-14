@@ -28,14 +28,26 @@ categories: linux
 －镜像（Image）：是 ECS 实例运行环境的模板，一般包括操作系统和预装的软件。
 －安全组（Security Group）：是一种虚拟防火墙，具备状态检测包过滤功能。每个实例至少属于一个安全组。同一个安全组内的实例之间网络互通，不同安全组的实例之间默认内网不通，但是可以授权两个安全组之间互访。
 
-国内知名的云主机有 阿里云、腾讯云等。
+国内知名的云主机有 阿里云、腾讯云、华为云。
+
+### 出现云服务器ping不通ip的情况，相关措施有哪些？
+
+1\. 检查是否有公网IP
+
+云主机必须有公网 IP 才能与 Internet 上的其他电子计算机访问和共享。实例没有公网 IP，内部网IP不能直接通过外部。如果无公网 IP 能绑定弹性公网 IP。
+
+2\. 检查安全组的设置
+
+安全组是虚拟服务器防火墙，可以操纵与云服务器实例相关的入口数据流和出口数据流。安全组的标准可以是具体的协议、端口号和对策。因为 ping 应用 ICMP 协议，所以要注意实例关系的安全组是否允许 ICMP。
 
 ## 起步
 
-如果您刚刚接手了一台 Linux 系统，要先确定是否为 RHEL 7 系统。
+如果您刚刚接手了一台 Linux 系统，如果不知道当前系统类型可以进行验证。
+
+确定是否为 RHEL 7 系统的方法
 
 ```bash
-[root@linuxprobe ~]# cat /etc/redhat-release
+cat /etc/redhat-release
 CentOS Linux release 7.6.1810 (Core)
 ```
 
@@ -293,12 +305,12 @@ last 命令用于查看所有系统的登录记录，格式为 “last [参数]�
 
 `cd $HOME/testFolder`
 
-### 移动mv
+### 移动 mv
 
 使用 mv 命令移动目录
 `mv $HOME/testFolder /var/tmp`
 
-### 移除rm
+### 移除 rm
 
 使用 rm -rf 命令删除目录
 `rm -rf /var/tmp/testFolder`
@@ -498,7 +510,7 @@ chmod 600 iphone11
 ```
 
 **adduser 和 useradd 的区别是什么**
-答：useradd 只创建用户，不会创建用户密码和工作目录，创建完了需要使用 passwd <username> 去设置新用户的密码。
+答：useradd 只创建用户，不会创建用户密码和工作目录，创建完了需要使用 `passwd <username>` 去设置新用户的密码。
 adduser 在创建用户的同时，会创建工作目录和密码（提示你设置），做这一系列的操作。
 其实 **useradd、userdel 这类操作更像是一种命令**，执行完了就返回。而 adduser 更像是一种程序，需要你输入、确定等一系列操作。
 

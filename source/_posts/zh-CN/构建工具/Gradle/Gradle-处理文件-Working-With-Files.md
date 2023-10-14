@@ -72,6 +72,7 @@ task copyAllPdfReportsForArchiving(type: Copy) {
 ```
 
 ## [Copying directory hierarchies 复制目录层次结构](https://docs.gradle.org/6.3/userguide/working_with_files.html#sec:copying_directories_example)
+
 您可能不仅需要复制文件，还需要复制它们所在的目录结构。 当您指定一个目录作为 from ()参数时，这是默认行为，如下面的示例所示，该示例将 reports 目录中的所有内容(包括其所有子目录)复制到目标:
 
 ```groovy
