@@ -24,7 +24,7 @@ jsonp(不推荐使用)
 本节列出了可用于发起跨域请求的首部字段。请注意，这些首部字段无须手动设置。 当开发者使用 XMLHttpRequest 对象发起跨域请求时，它们已经被设置就绪。
 举例客户端的请求
 
-```
+```text
 Origin: http://foo.example
 Access-Control-Request-Method: POST
 Access-Control-Request-Headers: X-PINGOTHER, Content-Type
@@ -40,7 +40,7 @@ Access-Control-Request-Headers: X-PINGOTHER, Content-Type
 
 在响应头中添加:
 
-```
+```text
 Access-Control-Allow-Origin: http://foo.example
 Access-Control-Allow-Methods: POST, GET, OPTIONS
 Access-Control-Allow-Headers: X-PINGOTHER, Content-Type
@@ -48,7 +48,7 @@ Access-Control-Allow-Headers: X-PINGOTHER, Content-Type
 
 - [`Access-Control-Allow-Origin`](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Access-Control-Allow-Origin) 如需允许所有资源都可以访问您的资源，其语法如下:
 
-```
+```text
 Access-Control-Allow-Origin: <origin> | *
 ```
 
@@ -59,13 +59,13 @@ Access-Control-Allow-Origin: <origin> | *
 - [`Access-Control-Allow-Headers`](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Access-Control-Allow-Headers "响应首部 Access-Control-Allow-Headers 用于 preflight request （预检请求）中，列出了将会在正式请求的 Access-Control-Request-Headers 字段中出现的首部信息。")  首部字段用于预检请求的响应。其指明了实际请求中允许携带的首部字段。
   支持与客户端商量好的自定义的 header 信息.
 
-```
+```text
 Access-Control-Allow-Headers: <field-name>[, <field-name>]*
 ```
 
 - [`Access-Control-Expose-Headers`](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Access-Control-Expose-Headers "响应首部 Access-Control-Expose-Headers 列出了哪些首部可以作为响应的一部分暴露给外部。")  头让服务器把允许浏览器访问的头放入白名单，例如：
 
-```
+```text
 Access-Control-Expose-Headers: X-My-Custom-Header, X-Another-Custom-Header
 ```
 
@@ -73,17 +73,17 @@ Access-Control-Expose-Headers: X-My-Custom-Header, X-Another-Custom-Header
 
 - [`Access-Control-Max-Age`](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Access-Control-Max-Age "The Access-Control-Max-Age 这个响应头表示 preflight request  （预检请求）的返回结果（即 Access-Control-Allow-Methods 和Access-Control-Allow-Headers 提供的信息） 可以被缓存多久。")  头指定了 preflight 请求的结果能够被缓存多久，请参考本文在前面提到的 preflight 例子。
 
-```
+```text
 Access-Control-Max-Age: <delta-seconds>
 ```
 
 - [`Access-Control-Allow-Credentials`](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Access-Control-Allow-Credentials "Access-Control-Allow-Credentials 响应头表示是否可以将对请求的响应暴露给页面。返回true则可以，其他值均不可以。")  头指定了当浏览器的`credentials`设置为 true 时是否允许浏览器读取 response 的内容。当用在对 preflight 预检测请求的响应中时，它指定了实际的请求是否可以使用`credentials`。请注意：简单 GET 请求不会被预检；如果对此类请求的响应中不包含该字段，这个响应将被忽略掉，并且浏览器也不会将相应内容返回给网页。
 
-```
+```text
 Access-Control-Allow-Credentials: true
 ```
 
-### spring 应用服务器的实现:
+### spring 应用服务器的实现
 
 自定义 filter 实现, 其实还是根据要求, 放置符合条件的请求头.
 
@@ -91,7 +91,7 @@ Access-Control-Allow-Credentials: true
 
 只列举 nginx 的实现
 
-```
+```conf
 server {
     listen       9000;
     server_name  localhost;

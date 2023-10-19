@@ -65,7 +65,7 @@ buf.write(string[, offset[, length]][, encoding])
 
 **实例**
 
-```
+```js
 buf = Buffer.alloc(256);
 len = buf.write("www.runoob.com");
 

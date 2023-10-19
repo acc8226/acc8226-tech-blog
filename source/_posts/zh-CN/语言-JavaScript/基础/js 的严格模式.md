@@ -10,7 +10,7 @@ tags: js
 
 JavaScript 严格模式（strict mode）即在严格的条件下运行。
 
-> "use strict" 指令只允许出现在脚本或函数的开头。
+"use strict" 指令只允许出现在脚本或函数的开头。
 
 ## 为什么使用严格模式
 
@@ -56,7 +56,7 @@ function strict() {
 - with 语句
 - 使用 delete 删除一个变量名(而不是属性名):delete myVariable
 - 使用 eval 或 arguments 作为变量名或函数名
-- 使用未来保留字(也许会在 ECMAScript 6 中使用):implements, interface, let, \* package, private, protected, public, static,和 yield 作为变量名或函数名
+- 使用未来保留字(也许会在 ECMAScript 6 中使用):implements, interface, let, \* package, private, protected, public, static 和 yield 作为变量名或函数名
 - 在语句块中使用函数声明:if(a<b){ function f(){} }
 - 其他错误
   - 对象字面量中使用两个相同的属性名:{a: 1, b: 3, a: 7}

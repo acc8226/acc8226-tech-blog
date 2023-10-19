@@ -125,6 +125,11 @@ mac 搜狗
 
 【win mac】网易云音乐【二选一】【在线】 网易云音乐 <https://music.163.com/#/download>
 
+not
+
+酷狗音乐 没落的不行了
+千千音乐 也是一样
+
 ### 工具类
 
 #### 护眼
@@ -145,7 +150,7 @@ picpick_portable 说不上哪不好
 
 #### 图像处理
 
-gimp https://www.gimp.org/
+gimp <https://www.gimp.org/>
 
 #### 下载
 
@@ -280,15 +285,15 @@ marktext <https://github.com/marktext/marktext/releases>
 
 not
 
-MarkdownPad2 http://markdownpad.com/ 感觉差点意思
+MarkdownPad2 <http://markdownpad.com/> 感觉差点意思
 
 ### 工具 大文件分析 wiztree【win】
 
-https://www.diskanalyzer.com/
+<https://www.diskanalyzer.com/>
 
 ### 工具 系统 极客卸载【win】
 
-https://geekuninstaller.com/download
+<https://geekuninstaller.com/download>
 
 ### 聊天 内网通【安装版】【win】
 
@@ -296,7 +301,7 @@ http://www.51nwt.com/index.htm
 
 ### 影音 酷我音乐 for PC 定制版【win】
 
-https://u9baoku.xyz/1185.html
+<https://u9baoku.xyz/1185.html>
 
 ## 专业
 
@@ -346,11 +351,11 @@ frp https://github.com/fatedier/frp/releases
 
 工具 系统 傲梅分区助手【win】 <https://www.disktool.cn/download.html>
 
-工具 系统 微PE工具箱【win】https://www.wepe.com.cn/
+工具 系统 微PE工具箱【win】<https://www.wepe.com.cn/>
 
 ### 辅助工具
 
-微软优化 Sysinternals【win】 https://learn.microsoft.com/zh-cn/sysinternals/
+微软优化 Sysinternals【win】 <https://learn.microsoft.com/zh-cn/sysinternals/>
 
 AutoHotkey 【win】<https://www.autohotkey.com/>
 

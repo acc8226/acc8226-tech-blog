@@ -162,18 +162,18 @@ Netscape Navigator 4.0在**1997年6月11日**发布，它是是支持JavaScript�
 ### JavaScript 1.3 修改的功能
 
 * 修改 [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date "JavaScript/Reference/Global_Objects/Date") 使之符合 ECMA-262
-    *   新的构造函数： Date(year, month, day, [,*hours* [*, minutes* [*, seconds* [*, milliseconds* ]]]])
-    *   附加的方法参数
-        *   setMonth(month[, date])
-        *   setHours(hours[, min[, sec[, ms]]])
-        *   setMinutes(min[, sec[, ms]])
-        *   setSeconds(sec[, ms])
-*   数组的长度（属性的长度）现在类型为32位 unsigned 整型。
-*   [Array.prototype.push()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/push "push() 方法将一个或多个元素添加到数组的末尾，并返回该数组的新长度。"): 在JavaScript 1.2中， push 方法返回最后一个被添加到数组的元素。在JavaScript 1.3下， push 返回数组新的长度。
-*   [Array.prototype.slice()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/slice "The source for this interactive demo is stored in a GitHub repository. If you'd like to contribute to the interactive demo project, please clone https://github.com/mdn/interactive-examples and send us a pull request."): 在JavaScript 1.2中， 如果只有一个元素被移除（howMany 参数为1，splice方法返回被移除的元素。而在JavaScript 1.3，splice方法通常返回一个包含被删除的元素的数组。如果只有一个元素被移除，则返回一个只包含一个元素的数组。
-*   [String.prototype.replace()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/replace "replace() 方法返回一个由替换值替换一些或所有匹配的模式后的新字符串。模式可以是一个字符串或者一个正则表达式, 替换值可以是一个字符串或者一个每次匹配都要调用的函数。")的[变化](https://web.archive.org/web/20000815081640/http://developer.netscape.com/docs/manuals/communicator/jsref/js13.html#replace)。
-*   [Boolean](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Boolean "此页面仍未被本地化, 期待您的翻译!") 对象的[变化](https://web.archive.org/web/20000815081640/http://developer.netscape.com/docs/manuals/communicator/jsref/js13.html#Boolean)。
-*   toString()的[变化](https://web.archive.org/web/20000815081640/http://developer.netscape.com/docs/manuals/communicator/jsref/js13.html#toString)。
+  * 新的构造函数： Date(year, month, day, [,*hours* [*, minutes* [*, seconds* [*, milliseconds* ]]]])
+  * 附加的方法参数
+     * setMonth(month[, date])
+     * setHours(hours[, min[, sec[, ms]]])
+     * setMinutes(min[, sec[, ms]])
+     * setSeconds(sec[, ms])
+* 数组的长度（属性的长度）现在类型为32位 unsigned 整型。
+* [Array.prototype.push()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/push "push() 方法将一个或多个元素添加到数组的末尾，并返回该数组的新长度。"): 在JavaScript 1.2中， push 方法返回最后一个被添加到数组的元素。在JavaScript 1.3下， push 返回数组新的长度。
+* [Array.prototype.slice()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/slice "The source for this interactive demo is stored in a GitHub repository. If you'd like to contribute to the interactive demo project, please clone https://github.com/mdn/interactive-examples and send us a pull request."): 在JavaScript 1.2中， 如果只有一个元素被移除（howMany 参数为1，splice方法返回被移除的元素。而在JavaScript 1.3，splice方法通常返回一个包含被删除的元素的数组。如果只有一个元素被移除，则返回一个只包含一个元素的数组。
+* [String.prototype.replace()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/replace "replace() 方法返回一个由替换值替换一些或所有匹配的模式后的新字符串。模式可以是一个字符串或者一个正则表达式, 替换值可以是一个字符串或者一个每次匹配都要调用的函数。")的[变化](https://web.archive.org/web/20000815081640/http://developer.netscape.com/docs/manuals/communicator/jsref/js13.html#replace)。
+* [Boolean](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Boolean "此页面仍未被本地化, 期待您的翻译!") 对象的[变化](https://web.archive.org/web/20000815081640/http://developer.netscape.com/docs/manuals/communicator/jsref/js13.html#Boolean)。
+* toString()的[变化](https://web.archive.org/web/20000815081640/http://developer.netscape.com/docs/manuals/communicator/jsref/js13.html#toString)。
 
 ## JavaScript 1.4的新特性
 > 下面是 JavaScript 1.4 的更新记录，它只可用于 1999 年发布的 Netscape 服务端 JavaScript。 旧的 Netscape 文档可在 [archive.org](https://web.archive.org/web/20040802225238/http://developer.netscape.com/docs/manuals/js/core/jsref/index.htm) 找到。
@@ -191,7 +191,7 @@ Netscape Navigator 4.0在**1997年6月11日**发布，它是是支持JavaScript�
 
 ## JavaScript 1.5 新特性
 
-> 以下为JavaScript 1.5 的更新日志。该版本包含在发行于2000年11月14日的Netscape Navigator 6.0中，也在后续的的Netscape Navigator版本和Firefox 1.0中使用。你可以拿JavaScript 1.5 和JScript version 5.5，Internet Explorer 5.5进行比较，后者发行于2000年7月。相应的ECMA 标准是 ECMA-262 Edition 3版 (自1999年12月)。
+> 以下为JavaScript 1.5 的更新日志。该版本包含在发行于2000年11月14日的Netscape Navigator 6.0中，也在后续的的Netscape Navigator版本和Firefox 1.0中使用。你可以拿JavaScript 1.5 和JScript version 5.5，Internet Explorer 5.5 进行比较，后者发行于2000年7月。相应的ECMA 标准是 ECMA-262 Edition 3版 (自1999年12月)。
 
 *   [Number.prototype.toExponential()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Number/toExponential "toExponential() 方法以指数表示法返回该数值字符串表示形式。")
 *   [Number.prototype.toFixed()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed "toFixed() 方法使用定点表示法来格式化一个数。")
@@ -233,23 +233,23 @@ Netscape Navigator 4.0在**1997年6月11日**发布，它是是支持JavaScript�
 
 *   产生了一个[bug](https://bugzilla.mozilla.org/show_bug.cgi?id=292215)，当形参或实参的数量已经固定了，若 [arguments[n]](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/arguments) 中的n大于这个数量，就不能被设置。
 
-> JavaScript 1.7是一个引出了一些新特性的语言更新，尤其是generator，iterator，数组推导式， let 表达式和解构赋值。
+> JavaScript 1.7 是一个引出了一些新特性的语言更新，尤其是 generator，iterator，数组推导式， let 表达式和解构赋值。
 
-为了使用 JavaScript 1.7的一些新特性，你需要明确指出你希望使用 JavaScript 1.7。在HTML 或XUL code中，使用：
+为了使用 JavaScript 1.7 的一些新特性，你需要明确指出你希望使用 JavaScript 1.7。在HTML 或XUL code中，使用：
 
 ## JavaScript 1.7 的新特性
 
-以下是javaScript 1.7版本的更新日志，这个版本被包括在 [Firefox 2](https://developer.mozilla.org/en-US/Firefox/Releases/2) (2006年10月)。
+以下是javaScript 1.7 版本的更新日志，这个版本被包括在 [Firefox 2](https://developer.mozilla.org/en-US/Firefox/Releases/2) (2006年10月)。
 
-JavaScript 1.7是一个引出了一些新特性的语言更新，尤其是generator，iterator，数组推导式， `let` 表达式和解构赋值。
+JavaScript 1.7 是一个引出了一些新特性的语言更新，尤其是generator，iterator，数组推导式， `let` 表达式和解构赋值。
 
 以下JavaScript 1.7的新特性目前还不是ECMA-262标准的一部分。在最近的Firefox版本中会根据ECMAScipt6中的描述来实现这些功能。具体内容见这些参考页面。
 
 * [Iterators and generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators)
 * [Array comprehensions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Array_comprehensions#Differences_to_the_older_JS1.7.2FJS1.8_comprehensions)
-   [let 声明](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)(Gecko 41中抛弃了 let 声明，见 [bug 1023609](https://bugzilla.mozilla.org/show_bug.cgi?id=1023609 "FIXED: Remove SpiderMonkey support for let expressions"))
+   [let 声明](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)(Gecko 41 中抛弃了 let 声明，见 [bug 1023609](https://bugzilla.mozilla.org/show_bug.cgi?id=1023609 "FIXED: Remove SpiderMonkey support for let expressions"))
 * [const 声明](https://developer.mozilla.org/en-US/docs/const)
-* [解构赋值](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)(Gecko 40中不再支持JS1.7风格的for-in解构，见[bug 1083498](https://bugzilla.mozilla.org/show_bug.cgi?id=1083498 "FIXED: Remove SpiderMonkey support for destructuring for-in (JS1.7-only language extension)"))
+* [解构赋值](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)(Gecko 40中不再支持 JS1.7 风格的 for-in 解构，见[bug 1083498](https://bugzilla.mozilla.org/show_bug.cgi?id=1083498 "FIXED: Remove SpiderMonkey support for destructuring for-in (JS1.7-only language extension)"))
 
 ## JavaScript 1.8 新特性
 
@@ -262,7 +262,7 @@ JavaScript 1.7是一个引出了一些新特性的语言更新，尤其是genera
 
 ### 对for..in解构的修改
 
-JavaScript1.8中的一个修改是对JavaScript1.7中引入的数组键值结构相关的bug修复。之前可以用for ( var [key, value] in array )的方式来解构一个数组的键值。但是，这也让对数组的数组的键值解构变得不可能（比如一个迭代器返回一个当前键值对的数组）。现在这个问题可以用for ( var [key, value] in Iterator(array))来解决([bug 366941](https://bugzilla.mozilla.org/show_bug.cgi?id=366941 "FIXED: Get rid of the "for([key, value] in obj)" form so that normal array destructuring works in for..in"))。
+JavaScript1.8中的一个修改是对 JavaScript1.7 中引入的数组键值结构相关的 bug 修复。之前可以用for ( var [key, value] in array )的方式来解构一个数组的键值。但是，这也让对数组的数组的键值解构变得不可能（比如一个迭代器返回一个当前键值对的数组）。现在这个问题可以用for ( var [key, value] in Iterator(array))来解决([bug 366941](https://bugzilla.mozilla.org/show_bug.cgi?id=366941 "FIXED: Get rid of the "for([key, value] in obj)" form so that normal array destructuring works in for..in"))。
 
 ## JavaScript 1.8.1 新特性
 

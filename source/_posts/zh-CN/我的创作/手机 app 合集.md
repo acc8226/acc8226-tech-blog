@@ -92,7 +92,7 @@ kiwi 浏览器 一般般，显示国家图片的插件而且不能用，虽然�
 输入法类 搜狗百度之类的有手机自带合作的，没必要了
 es 文件浏览器 有广告 离线可备用吧，话说如果有电脑为何不直接播放？
 快递 100 https://sj.qq.com/appdetail/com.Kingdee.Express 最近寄快递选【德邦】确实便宜写，不过体积和重量两者对方是按大的来，情有可原吧。第一次用快递 100 我领了一个 5 月的优惠券，赶紧还行，一般足够用
-北京云法庭 <http://sspt.bjcourt.gov.cn/bcourt/onlineCourt/downloadYm> 我在某些情况下会用到 法 yuan 就是垃圾，法 guan 也是，拖了好长时间
+北京云法庭 <http://sspt.bjcourt.gov.cn/bcourt/onlineCourt/downloadYm> 我在某些情况下会用到 法 yuan 就是垃圾，法 guan 也是，拖了好长时间，卸载了吧，我没证据，我理亏，我 100 万没了，以后一定要多读书
 北京法院 一类应用
 bad
 
@@ -119,6 +119,10 @@ QQ 邮箱 https://sj.qq.com/appdetail/com.tencent.androidqqmail 有广告了
 
 **教育类**
 每日音乐听力 https://sj.qq.com/appdetail/com.qianyan2.ting.en
+知乎知学堂
+拉勾教育
+小鹅通
+多邻国
 
 **支付类** 不要网贷~~~，不要花费超出能力的钱
 支付宝 https://sj.qq.com/appdetail/com.eg.android.AlipayGphone
@@ -145,7 +149,7 @@ not
 
 **旅行类**
 12306 app / 小程序
-去哪儿 https://sj.qq.com/appdetail/com.Qunar 感觉还是去哪儿的票价稍微便宜些 这里由于我没仔细阅读，导致取消订单后重下单付款了 120，长沙金井的老板真黑，当是应该提前和他说我第二天早起会退房的，但我的主要损失还是被商诈和被电诈
+去哪儿 https://sj.qq.com/appdetail/com.Qunar 感觉还是去哪儿的票价便宜些 这里由于我没仔细阅读，导致取消订单后重下单付款了 120，长沙金井的老板真黑，我应该提前和他说我第二天早起会退房的，但我的主要损失还是被商诈和被电诈
 携程 https://sj.qq.com/appdetail/ctrip.android.view
 飞猪 https://sj.qq.com/appdetail/com.taobao.trip
 
@@ -191,6 +195,13 @@ rss 阅读器
 ## 小程序
 
 小鹅通
+
+北京通 自从北京通 app 下架后，然后有了它之后北京公积金 app 也几乎不用装了，一般我也用网站，想不到提取公积金特简单，简单申请当日到账
+
+## 其他
+
+天翼防骚扰的 app 就是个收费的主，一般微信上关注公众号就够用
+爱音乐 不好用，现在周杰伦的歌都没了，也不知道以前有没有
 
 ## 参考
 
