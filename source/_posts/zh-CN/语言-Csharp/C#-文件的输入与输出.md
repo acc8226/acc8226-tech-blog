@@ -7,7 +7,7 @@
 System.IO 命名空间有各种不同的类，用于执行各种文件操作，如创建和删除文件、读取或写入文件，关闭文件等。
 
 下表列出了一些 System.IO 命名空间中常用的非抽象类：
-BinaryReader	从二进制流读取原始数据。
+BinaryReader 从二进制流读取原始数据。
 BinaryWriter	以二进制格式写入原始数据。
 BufferedStream	字节流的临时存储。
 Directory	有助于操作目录结构。

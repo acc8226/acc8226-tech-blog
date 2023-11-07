@@ -10,8 +10,8 @@ tags:
 - 鉴权
 ---
 
-Java中Json web token (JWT)的使用_UserGuan 的博客-CSDN 博客_java jsonwebtoken 使用
+Java 中 Json web token (JWT)的使用_UserGuan 的博客-CSDN 博客_java jsonwebtoken 使用
 <https://blog.csdn.net/AdminGuan/article/details/100147488>
 
-JWT解析库-nimbus-jose-jwt_jose-jwt maven_晴城丶的博客-CSDN博客
-https://blog.csdn.net/WNX10086/article/details/122316658
+JWT解析库-nimbus-jose-jwt_jose-jwt maven_晴城丶的博客-CSDN 博客
+<https://blog.csdn.net/WNX10086/article/details/122316658>

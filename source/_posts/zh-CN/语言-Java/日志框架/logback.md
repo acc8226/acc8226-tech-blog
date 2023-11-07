@@ -20,10 +20,16 @@ Logback-core 模块为其他两个模块奠定了基础。可以将 logback-clas
 
 Logback-access 模块与 Servlet 容器(如 Tomcat 和 Jetty)集成，以提供 HTTP-access 日志功能。 注意，您可以轻松地在 logback-core 之上构建自己的模块。
 
-gradle 坐标，要求 jdk 11 及其以上。
+当前正在积极开发的支持 JavaEE 的 logback 版本(Java。* 名称空间)是1.3.11。它需要 SLF4J 版本 2.0.7和 JDK 8。
 
 ```groovy
-implementation("ch.qos.logback:logback-classic:1.4.6")
+implementation("ch.qos.logback:logback-classic:1.3.11")
+```
+
+当前正在积极开发的支持 JakartaEE (jakartaEE)的 logback 版本。* 名称空间)是1.4.11。它需要 SLF4J 版本 2.0.7 和 JDK 11。
+
+```groovy
+implementation("ch.qos.logback:logback-classic:1.4.11")
 ```
 
 一个案例

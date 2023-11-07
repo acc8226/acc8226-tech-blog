@@ -11,14 +11,14 @@ System.ApplicationException 类支持由应用程序生成的异常。所以程�
 System.SystemException 类是所有预定义的系统异常的基类。
 
 下表列出了一些派生自 Sytem.SystemException 类的预定义的异常类：
-System.IO.IOException	处理 I/O 错误。
-System.IndexOutOfRangeException	处理当方法指向超出范围的数组索引时生成的错误。
-System.ArrayTypeMismatchException	处理当数组类型不匹配时生成的错误。
-System.NullReferenceException	处理当依从一个空对象时生成的错误。
-System.DivideByZeroException	处理当除以零时生成的错误。
-System.InvalidCastException	处理在类型转换期间生成的错误。
-System.OutOfMemoryException	处理空闲内存不足生成的错误。
-System.StackOverflowException	处理栈溢出生成的错误。
+System.IO.IOException 处理 I/O 错误。
+System.IndexOutOfRangeException 处理当方法指向超出范围的数组索引时生成的错误。
+System.ArrayTypeMismatchException 处理当数组类型不匹配时生成的错误。
+System.NullReferenceException 处理当依从一个空对象时生成的错误。
+System.DivideByZeroException 处理当除以零时生成的错误。
+System.InvalidCastException 处理在类型转换期间生成的错误。
+System.OutOfMemoryException 处理空闲内存不足生成的错误。
+System.StackOverflowException 处理栈溢出生成的错误。
 
 ### 创建用户自定义异常
 

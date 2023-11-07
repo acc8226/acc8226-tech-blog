@@ -54,9 +54,4 @@ windows 使用 curl 请求数据。
 将录入框中去掉 Bearer 就好了。
 
 **解决 postman 报错：Error: Maximum response size reached**
-修改Postman设置：通用-max response size in MB
-
-## 目前不好用软件
-
-apifox
-用得我不知所云
+修改Postman设置：通用 -max response size in MB

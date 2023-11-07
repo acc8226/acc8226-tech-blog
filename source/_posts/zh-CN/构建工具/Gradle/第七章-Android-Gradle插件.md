@@ -51,11 +51,11 @@ Android Gradle 插件继承于 Java 插件，具有所有 Java 插件的特性�
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-fd646eb56624247c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-其目录结构和 Java 工程相比没有太大的变化，proguard-rules.pro 是一个混淆配置文件；src目录下的androidTest、main、test 分别是三个 SourceSet，分别对应 Android 单元测试代码、Android App主代码和资源、普通的单元测试代码。我们注意到 main 文件夹，相比 Java 的，多了 AndroidManifest.xml，res这两个属于Android 特有的文件目录，用于描述 Android App 的配置和资源文件。
+其目录结构和 Java 工程相比没有太大的变化，proguard-rules.pro 是一个混淆配置文件；src 目录下的 androidTest、main、test 分别是三个 SourceSet，分别对应 Android 单元测试代码、Android App主代码和资源、普通的单元测试代码。我们注意到 main 文件夹，相比 Java 的，多了 AndroidManifest.xml，res这两个属于Android 特有的文件目录，用于描述 Android App 的配置和资源文件。
 
 下面我们来看看 Android Gradle的build.gradle 配置文件
 
-Android Gradle 工程的配置，都是在 android{}中，这是唯一的一个入口，通过它，可以对 Android Gradle 工程进行自定义的配置，其具体实现是 com.android.build.gradle.AppExtension，是 Project 的一个扩展，创建原型如下：
+Android Gradle 工程的配置，都是在 android{} 中，这是唯一的一个入口，通过它，可以对 Android Gradle 工程进行自定义的配置，其具体实现是 com.android.build.gradle.AppExtension，是 Project 的一个扩展，创建原型如下：
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-d12f94b1ffa83930.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -87,7 +87,7 @@ buildToolsVersion "23.0.1"表示我们使用的Android 构建工具的版本，�
 
 ##### 7.4.3 defaultConfig
 
-defaultConfig 是默认的配置，它是一个 ProductFlavor，ProductFlavor 允许我们根据不同的情况同时生成多个不同的APK包，比如我们后面介绍的多渠道打包。如果不针对我们自定义的ProductFlavor 单独配置的话，会为这个ProductFlavor使用**默认的defaultConfig**的配置。
+defaultConfig 是默认的配置，它是一个 ProductFlavor，ProductFlavor 允许我们根据不同的情况同时生成多个不同的APK包，比如我们后面介绍的多渠道打包。如果不针对我们自定义的 ProductFlavor 单独配置的话，会为这个ProductFlavor使用**默认的defaultConfig**的配置。
 
 例子中applicationId是配置我们的包名，这里是 org.flysnow.app.example74
 
@@ -100,13 +100,13 @@ versionName 我们的 App 应用的版本名称，用户可以看到，就是我
 
 ##### 7.4.4 buildTypes
 
-buildTypes是一个NamedDomainObjectContainer类型，是一个域对象，还记得我们讲的SourceSet吗？这个和那个一样。SourceSet里有main、test等，同样的buildTypes里有release，debug等，我们可以在buildTypes{}里新增任意多个我们需要构建的类型，比如debug，Gradle会帮我们自动创建一个对应的BuildType，名字就是我们定义的名字。
+buildTypes 是一个 NamedDomainObjectContainer 类型，是一个域对象，还记得我们讲的 SourceSet 吗？这个和那个一样。SourceSet里有main、test 等，同样的 buildTypes 里有 release，debug 等，我们可以在 buildTypes{}里新增任意多个我们需要构建的类型，比如debug，Gradle会帮我们自动创建一个对应的BuildType，名字就是我们定义的名字。
 
 release 就是一个 BuildType，后面章节我们会详细介绍BuildType，例子中我们用到了两个配置
 
 minifyEnabled 是否为该构建类型启用混淆，我们这里是 false 表示不启用，如果想要启用可以设置为true
 
-proguardFiles，当我们启用混淆时，所使用的proguard 的配置文件，我们可以通过它配置我们如何进行proguard混淆，比如混淆的级别，哪些类或者方法不进行混淆等等。它对应 BuildType的proguardFiles方法，可以接受一个可变参数，所以我们同时可以配置多个配置文件，比如我们例子中的
+proguardFiles，当我们启用混淆时，所使用的 proguard 的配置文件，我们可以通过它配置我们如何进行proguard混淆，比如混淆的级别，哪些类或者方法不进行混淆等等。它对应 BuildType的proguardFiles 方法，可以接受一个可变参数，所以我们同时可以配置多个配置文件，比如我们例子中的
 `proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'`
 
 getDefaultProguardFile 是 android 扩展的一个方法，它可以获取你的 Android SDK 目录下的默认的 proguard 配置文件，在android-sdk/tools/proguard/ 目录下，文件名就是我们传入的参数的名字proguard-android.txt。
@@ -115,7 +115,7 @@ getDefaultProguardFile 是 android 扩展的一个方法，它可以获取你的
 
 ### 7.5 Android Gradle任务
 
-我们说过Android插件是基于Java插件，所以Android插件基本上包含里所有 Java 插件的功能，包括继承的任务，比如assemble、check、build等等，除此之外，Android在大类上还添加了 connectedCheck、deviceCheck、lint、install、uninstall等任务，这些是属于 Android 特有的功能。
+我们说过 Android 插件是基于 Java 插件，所以 Android 插件基本上包含里所有 Java 插件的功能，包括继承的任务，比如assemble、check、build 等等，除此之外，Android 在大类上还添加了 connectedCheck、deviceCheck、lint、install、uninstall等任务，这些是属于 Android 特有的功能。
 
 connectedCheck 在所有链接的设备或者模拟器上运行 check 检查
 
@@ -137,9 +137,9 @@ install 和 uninstall 类的任务可以直接在我们已链接的设备上安�
 
 ##### 7.6.1 使用Android Studio 导入
 
-这种方式比较简单，要导入到 Android Studio，我们打开 Android Studio，选择 File->Import Project,然后会弹出一个对话框，选择我们的 Eclipse ADT 工程的目录，然后就会打开一个向导，按向导一步步操作，最后完成的时候，会打开一个 "import-summary.txt" 文件，里面描述的我们这次导入涉及到的文件迁移和改变等等，我们再根据我们上面讲的Android Gradle工程结构做调整即可。
+这种方式比较简单，要导入到 Android Studio，我们打开 Android Studio，选择 File->Import Project,然后会弹出一个对话框，选择我们的 Eclipse ADT 工程的目录，然后就会打开一个向导，按向导一步步操作，最后完成的时候，会打开一个 "import-summary.txt" 文件，里面描述的我们这次导入涉及到的文件迁移和改变等等，我们再根据我们上面讲的 Android Gradle 工程结构做调整即可。
 
-以上是我导入的一个例子生成的import-summary.txt，我们可以看到有一段Moved Files，也就是说，这种导入方式，会把我们原来Eclipse+ADT项目的目录结构转换成了Android Studio 的目录结构，破坏了原来的目录结构，如果对于目录结构有严格要求的，就不要使用这种方式了，可以使用我们下面讲的第二种方式，如果没有严格要求的，建议采用这种方式，因为这是Android Studio默认推荐的目录结构，也可以熟悉下，为以后的新的功能，甚至团队间的协作也方便，因为它毕竟是 Android Studio 的一种默认的约定，大家都熟悉，沟通交流简单。
+以上是我导入的一个例子生成的 import-summary.txt，我们可以看到有一段 Moved Files，也就是说，这种导入方式，会把我们原来Eclipse+ADT项目的目录结构转换成了 Android Studio 的目录结构，破坏了原来的目录结构，如果对于目录结构有严格要求的，就不要使用这种方式了，可以使用我们下面讲的第二种方式，如果没有严格要求的，建议采用这种方式，因为这是Android Studio默认推荐的目录结构，也可以熟悉下，为以后的新的功能，甚至团队间的协作也方便，因为它毕竟是 Android Studio 的一种默认的约定，大家都熟悉，沟通交流简单。
 
 ##### 7.6.2 从Eclipse+ADT中导出
 
@@ -149,13 +149,13 @@ install 和 uninstall 类的任务可以直接在我们已链接的设备上安�
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-68b5b214364c9aad.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-最后我们再打开Android Studio，然后选择 File->Import Project，选择我们刚刚导出的 Android 工程目录，然后Next，一步步即可导入到Android Studio中。
+最后我们再打开Android Studio，然后选择 File->Import Project，选择我们刚刚导出的 Android 工程目录，然后 Next，一步步即可导入到Android Studio中。
 
 下面我们看下这种方式生成的build.gradle脚本示例
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-9d14dbea29f95d5f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-这种方式保留了原来项目的目录结构，为了达到这个目的，又让Android Studio可以识别该项目，所以Eclipse Export功能对生成的 build.gradle 脚本文件做了处理，从上面的例子中我们可以看到，重写了main这个SourceSet，为Android Studio 指明我们的 java 文件、res 资源文件、assets 文件、aidl 文件以及 manifest文件在项目中的位置，这中Android Studio 才能识别他们，进而作为一个 Android 工程进行编译构建。
+这种方式保留了原来项目的目录结构，为了达到这个目的，又让Android Studio可以识别该项目，所以 Eclipse Export 功能对生成的 build.gradle 脚本文件做了处理，从上面的例子中我们可以看到，重写了main这个SourceSet，为Android Studio 指明我们的 java 文件、res 资源文件、assets 文件、aidl 文件以及 manifest 文件在项目中的位置，这中Android Studio 才能识别他们，进而作为一个 Android 工程进行编译构建。
 
 以前的 Eclipse+ADT 的工程结构，单元测试是放在 tests 目录下的，所以在这里对其单元测试目录进行了重新设置，指定我们原来的 tests 目录为其单元测试根目录。debug、和 release 这两个 Build Type 也类似。
 

@@ -159,34 +159,34 @@ ms-settings:batterysaver-settings节电模式设置
 ms-settings:batterysaver-usagedetails电池用量
 ms-settings:personalization个性化
 ms-settings:colors个性化-颜色
-ms-settings:personalization-colors个性化-颜色
-ms-settings:personalization-background个性化-背景
+ms-settings:personalization-colors 个性化-颜色
+ms-settings:personalization-background 个性化-背景
 ms-settings:lockscreen个性化-锁屏
-ms-settings:personalization-start个性化-开始
-ms-settings:taskbar个性化-任务栏
-ms-settings:themes个性化-主题
+ms-settings:personalization-start 个性化-开始
+ms-settings:taskbar 个性化-任务栏
+ms-settings:themes 个性化-主题
 ms-settings:network 网络和Internet
-ms-settings:datausage数据使用量
+ms-settings:datausage 数据使用量
 ms-settings:network-mobilehotspot 移动热点
 ms-settings:mobilehotspot移动热点
-ms-settings:network-proxy代理
-ms-settings:network-vpnVPN
+ms-settings:network-proxy 代理
+ms-settings:network-vpn VPN
 ms-settings:network-airplanemode飞行模式
 ms-settings:airplanemode 飞行模式
-ms-settings:network-dialup拨号
-ms-settings:network-ethernet以太网
-ms-settings:network-status状态
+ms-settings:network-dialup 拨号
+ms-settings:network-ethernet 以太网
+ms-settings:network-status 状态
 ms-settings:network-wifi WiFi
 ms-settings:wifiWiFi
-ms-settings:network-wifisettings管理已知网络
-ms-settings:dateandtime时间和语言-日期和时间
-ms-settings:speech语音
-ms-settings:regionlanguage区域和语言
-ms-settings:easeofaccess-closedcaptioning轻松使用-隐藏式字幕
-ms-settings:easeofaccess-highcontrast高对比度
-ms-settings:easeofaccess-magnifier放大镜
-ms-settings:easeofaccess-narrator讲述人
-ms-settings:easeofaccess-otheroptions其他选项
+ms-settings:network-wifisettings 管理已知网络
+ms-settings:dateandtime 时间和语言-日期和时间
+ms-settings:speech 语音
+ms-settings:regionlanguage 区域和语言
+ms-settings:easeofaccess-closedcaptioning 轻松使用-隐藏式字幕
+ms-settings:easeofaccess-highcontrast 高对比度
+ms-settings:easeofaccess-magnifier 放大镜
+ms-settings:easeofaccess-narrator 讲述人
+ms-settings:easeofaccess-otheroptions 其他选项
 ms-settings:easeofaccess-keyboard键盘
 ms-settings:easeofaccess-mouse鼠标
 ms-settings:emailandaccounts 账户-电子邮件和应用账户

@@ -4,11 +4,11 @@
 
 我们已经讨论了各种数据类型。C# 中提供的基本的值类型大致可以分为以下几类：
 
-* 整数类型	sbyte、byte、short、ushort、int、uint、long、ulong 和 char
-* 浮点型	float 和 double
-* 十进制类型	decimal
-* 布尔类型	true 或 false 值，指定的值
-* 空类型	可为空值的数据类型
+* 整数类型 sbyte、byte、short、ushort、int、uint、long、ulong 和 char
+* 浮点型 float 和 double
+* 十进制类型 decimal
+* 布尔类型 true 或 false 值，指定的值
+* 空类型 可为空值的数据类型
 
 C# 中变量定义的语法：
 

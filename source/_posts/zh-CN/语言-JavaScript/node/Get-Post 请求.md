@@ -1,4 +1,4 @@
-### 获取 GET 请求内容
+## 获取 GET 请求内容
 
 ```js
 var http = require("http")
@@ -19,7 +19,7 @@ http
   .listen(3000)
 ```
 
-### 获取 POST 请求内容
+## 获取 POST 请求内容
 
 POST 请求的内容全部的都在请求体中，http.ServerRequest 并没有一个属性内容为请求体，原因是等待请求体传输可能是一件耗时的工作。
 

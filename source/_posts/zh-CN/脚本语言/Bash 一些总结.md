@@ -42,6 +42,17 @@ Linux 中默认的 shell 如何切换为其他类型的 shell
 chsh -s /bin/zsh
 ```
 
+## 问题
+
+linux 命令终端提示符显示-bash-4.2#解决方法
+
+原因是 root 在 /root 下面的几个配置文件丢失，丢失文件如下：
+
+cp /etc/skel/.bashrc /root/
+cp /etc/skel/.bash_profile /root/
+
+注销 root，重新登录就可以恢复正常。
+
 ## 参考
 
 shell 中脚本参数传递的两种方式

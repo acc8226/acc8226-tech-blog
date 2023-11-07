@@ -125,6 +125,11 @@ mac 搜狗
 
 【win mac】网易云音乐【二选一】【在线】 网易云音乐 <https://music.163.com/#/download>
 
+not
+
+酷狗音乐 没落的不行了
+千千音乐 也是一样
+
 ### 工具类
 
 #### 护眼
@@ -145,7 +150,7 @@ picpick_portable 说不上哪不好
 
 #### 图像处理
 
-gimp https://www.gimp.org/
+gimp <https://www.gimp.org/>
 
 #### 下载
 
@@ -248,16 +253,19 @@ Umi-OCR- OCR图片转文字识别软件【win】<https://github.com/hiroi-sora/U
 
 键盘按键显示 KeyCastOW
 
-KeyCastr mac用 https://github.com/keycastr/keycastr/releases
+KeyCastr mac用 <https://github.com/keycastr/keycastr/releases>
 not
 drawio
 
 ### 工具 录屏软件【win mac】
 
-EV 录屏 还可以单独录音
+EV 录屏 还可以单独录音 <https://www.ieway.cn/evcapture.html>
 ScreenToGif 用于录制动图，可选格式 git ，apng 和 webp
+
 not
+
 LICEcap1.26 不够强大
+Bandicam 班迪录屏 10 分种内才免费，不过体验极好
 
 ### 工具 文字转语音软件【win mac】
 
@@ -284,15 +292,15 @@ marktext <https://github.com/marktext/marktext/releases>
 
 not
 
-MarkdownPad2 http://markdownpad.com/ 感觉差点意思
+MarkdownPad2 <http://markdownpad.com/> 感觉差点意思
 
 ### 工具 大文件分析 wiztree【win】
 
-https://www.diskanalyzer.com/
+<https://www.diskanalyzer.com/>
 
 ### 工具 系统 极客卸载【win】
 
-https://geekuninstaller.com/download
+<https://geekuninstaller.com/download>
 
 ### 聊天 内网通【安装版】【win】
 
@@ -300,7 +308,7 @@ http://www.51nwt.com/index.htm
 
 ### 影音 酷我音乐 for PC 定制版【win】
 
-https://u9baoku.xyz/1185.html
+<https://u9baoku.xyz/1185.html>
 
 ## 专业
 
@@ -350,11 +358,11 @@ frp https://github.com/fatedier/frp/releases
 
 工具 系统 傲梅分区助手【win】 <https://www.disktool.cn/download.html>
 
-工具 系统 微PE工具箱【win】https://www.wepe.com.cn/
+工具 系统 微PE工具箱【win】<https://www.wepe.com.cn/>
 
 ### 辅助工具
 
-微软优化 Sysinternals【win】 https://learn.microsoft.com/zh-cn/sysinternals/
+微软优化 Sysinternals【win】 <https://learn.microsoft.com/zh-cn/sysinternals/>
 
 AutoHotkey 【win】<https://www.autohotkey.com/>
 
@@ -495,7 +503,16 @@ webviewdebug
 wgestures
 mac 版的确实不好用，可能需要配合鼠标使用才行
 
+方格音乐
+2023.9.28 1.0 版本暂时不成熟
+
+汽水音乐
+2023.9.28 PC 版暂不完善
+
 ## 已出局
+
+火绒应用商店
+对于高级玩家，还是官网下载比较好
 
 炉石官方插件
 随之国服没了已经落幕
@@ -563,3 +580,12 @@ UGit
 
 Wox-1.4.1196
 已经不太维护的启动器，界面也一般
+
+录猎
+不好用
+
+Listary
+虽说效率神器但是不好用
+
+万兴喵影2023
+需要登录才能录屏，差评，不过这个公司的产品还行

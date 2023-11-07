@@ -78,7 +78,7 @@ Solution1 step7: 4-->4-->0
 
 三角输出
 
-编写bash脚本输出如图的三角
+编写 bash 脚本输出如图的三角
 
 ![6-10-1](https://upload-images.jianshu.io/upload_images/1662509-5e77d2f80b1dbc9b?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 

@@ -1,4 +1,5 @@
 ## C# 属性（Property）
+
 属性（Property） 是类（class）、结构（structure）和接口（interface）的命名（named）成员。类或结构中的成员变量或方法称为 域（Field）。属性（Property）是域（Field）的扩展，且可使用相同的语法来访问。它们使用 访问器（accessors） 让私有域的值可被读写或操作。
 
 属性（Property）不会确定存储位置。相反，它们具有可读写或计算它们值的 访问器（accessors）。
@@ -7,8 +8,7 @@
 
 ```cs
 // 声明类型为 string 的 Code 属性
-public string Code
-{
+public string Code {
    get
    {
       return code;

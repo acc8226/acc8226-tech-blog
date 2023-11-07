@@ -1,7 +1,7 @@
 ---
 title: Markdown-拓展 使用 Hugo 生成网站
 date: 2022-07-01 00:00:00
-updated: 2022-11-05 10:09:00
+updated: 2023-10-07 22:17:00
 categories:
   - 标记语言
   - Markdown
@@ -10,10 +10,22 @@ tags: Markdown
 
 ## 快速开始
 
-### 安装 Hugo（windows 版本）
+### 安装 Hugo
+
+windows 平台
+
+Winget 是微软 Windows 的官方免费开源软件包管理器，它将安装 Hugo 的扩展版:
 
 ```sh
-choco install hugo -confirm
+winget install Hugo.Hugo.Extended
+```
+
+linux 平台
+
+Snap 是一个用于 Linux 的免费开源软件包管理器。对于大多数发行版来说，管理单元包安装简单，并且可以自动更新。
+
+```sh
+sudo snap install hugo
 ```
 
 为验证您的新安装:
@@ -24,7 +36,9 @@ hugo version
 
 ### 创建项目
 
+```sh
 hugo new site quickstart
+```
 
 ### 添加主题
 
@@ -48,7 +62,7 @@ draft: true
 ---
 ```
 
-> 草稿不会被部署; 一旦你完成了一篇文章，更新文章的标题 `draft: false`。
+注意：草稿不会被部署; 一旦你完成了一篇文章，您应该将修改草稿状态 `draft: false`。
 
 ### 启动服务
 
@@ -83,10 +97,10 @@ theme = "ananke"
 ### 构建静态页面
 
 ```sh
-hugo -D
+hugo --buildDrafts # or -D
 ```
 
-默认情况下输出将位于 `./public/` 目录中(你可以通过 -d /--destination 标志来更改它，或者在配置文件中设置 publishdir)。
+这将构建您的站点，并将文件发布到 public 目录。当然你可以通过 -d /--destination 标志来更改它，或者在配置文件中设置 publishdir。
 
 ## 参考
 
