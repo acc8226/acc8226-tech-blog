@@ -167,12 +167,16 @@ qbittorrent_4.5.5 不好用
 
 Tim <https://tim.qq.com/download.html>
 
+not
+
+阿里旺旺 mac 版的不好用
+
 ### 办公类
 
-钉钉官网下载页面 - 钉钉，让进步发生
+钉钉
 <https://page.dingtalk.com/wow/z/dingtalk/simple/ddhomedownload#/>
 
-腾讯会议官方——腾讯会议 会开会
+腾讯会议
 <https://meeting.tencent.com/>
 
 #### mail 收发
@@ -218,7 +222,10 @@ Xmind思维导图 <https://xmind.cn/>
 ToDesk <https://www.todesk.com/download.html>
 
 not
+
 向日葵远程控制
+
+阿里无影云桌面 mac 版有点卡
 
 ## 拓展
 
