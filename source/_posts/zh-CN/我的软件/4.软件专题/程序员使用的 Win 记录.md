@@ -11,9 +11,9 @@ categories:
 
 好的，这意味着你的系统已经安装了 Microsoft IIS 或者其他一些 MS 技术来报告这个签名---- 出于某种原因，他们正在 Windows 的后续版本中这样做。如果你不打算使用它，你可以卸载它，它不是 windows 的一个组成部分，所以它被卸载不会影响窗口的正常操作，如果你需要稍后再安装它，它作为标准操作系统的一部分，所以你不需要做任何精心设计的聪明。
 
-开始 -> 控制面板 -> 程序和功能点击左边菜单中的‘打开和关闭窗口功能’链接。等待列表加载，然后找到“ Internet 信息服务”
+开始 -> 控制面板 -> 程序和功能点击左边菜单中的‘打开和关闭窗口功能’链接。等待列表加载，然后找到 “Internet 信息服务”
 
-1. World Wide Web Publishing Service服务关闭
+1. World Wide Web Publishing Service 务关闭
 2. `SQL Server Reporting Services（MSSQLSERVER)` 服务 服务关闭
 3. IIS
 4. Web Deploy 2.0 (Web Deployment Agent Service)
@@ -34,7 +34,7 @@ TCP     127.0.0.1:1883         0.0.0.0:0               LISTENING       2448
 2\. 可自行选择关掉程序或者杀掉进程
 
 ```bat
-taskkill /T /F /PID 2448
+taskkill /T /F /PID 2448 
 ```
 
 3\. 【可选】查看端口被哪个程序给占用了

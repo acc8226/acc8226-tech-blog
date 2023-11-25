@@ -64,7 +64,7 @@ ProGuard 技术的功能概括为以下 4 项：
 3）seeds.txt          列出了没有被混淆的类和属性
 4）usage.txt           列出了没有被打到 apk 文件中的代码
 
-这些文件置于 `<project_root>/bin/projuard` 目录下,如果您使用 ant 工具；如果使用 eclipse，则置于`<project_root>/proguard` 目录下面
+这些文件置于 `<project_root>/bin/projuard` 目录下，如果您使用 ant 工具；如果使用 eclipse，则置于`<project_root>/proguard` 目录下面
 
 ### Proguard 通配符
 
@@ -91,7 +91,7 @@ ProGuard 技术的功能概括为以下 4 项：
 ```
 
 ```sh
-# 代码混淆压缩比，在0~7之间，默认为5
+# 代码混淆压缩比，在 0~7 之间，默认为5
 -optimizationpasses 5
 
 # 混淆时不使用大小写混合，由于windows对大小写不敏感, 混淆后的类名为小写

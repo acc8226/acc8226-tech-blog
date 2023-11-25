@@ -5,6 +5,8 @@ updated: 2022-11-05 13:45:00
 categories: linux
 ---
 
+## iptables
+
 在 RHEL7 之前的版本中关闭防火墙等服务的命令是
 
 ```sh
@@ -13,7 +15,9 @@ service iptables stop
 
 /etc/init.d/iptables stop
 
-redhat7 中使用了 firewalld 代替了原来的 iptables。
+## firewalld
+
+redhat7 之后使用了 firewalld 代替了原来的 iptables。
 
 查看防火墙状态：systemctl status firewalld
 
@@ -23,7 +27,7 @@ redhat7 中使用了 firewalld 代替了原来的 iptables。
 启动防火墙：systemctl start firewalld
 关闭防火墙。如果防火墙为关闭状态可以忽略此步骤。
 
-* 如果您想临时关闭防火墙，运行命令`systemctl stop firewalld`。
+* 如果您想临时关闭防火墙，运行命令 `systemctl stop firewalld`。
 
 **说明** 这只是暂时关闭防火墙，下次重启 Linux 后，防火墙还会开启。
 
@@ -46,12 +50,12 @@ redhat7 中使用了 firewalld 代替了原来的 iptables。
 （1）查看防火墙状态：firewall-cmd --state
 （2）重新加载配置：firewall-cmd --reload
 （3）查看开放的端口：firewall-cmd --list-ports
-（4）开启防火墙端口：firewall-cmd --zone=public --add-port=9002/tcp --permanent
+（4）开启防火墙端口：`firewall-cmd --zone=public --add-port=9002/tcp --permanent`
 　　命令含义：
 　　–zone #作用域
 　　–add-port=9200/tcp #添加端口，格式为：端口/通讯协议
 　　–permanent #永久生效，没有此参数重启后失效
-　　注意：添加端口后，必须用命令 firewall-cmd --reload 重新加载一遍才会生效
+　　注意：添加端口后，必须用命令 `firewall-cmd --reload` 重新加载一遍才会生效
 （5）关闭防火墙端口：firewall-cmd --zone=public --remove-port=9200/tcp --permanent
 
 设置黑/白名单 ip
@@ -59,6 +63,11 @@ firewall-cmd --permanent --zone=trusted --add-source=ip 执行结果 success
 
 列出白名单 ip
 firewall-cmd --permanent --zone=trusted --list-sources
+
+firewall-cmd --permanent --zone=public --list-ports
+
+--zone=trusted 参数表示将防火墙配置为信任区域。在信任区域中，防火墙通常会放宽对网络流量的限制，允许来自信任网络或设备的流量自由通过。信任区域通常用于内部网络或受信任的网络。
+--zone=public 参数表示将防火墙配置为公共区域。在公共区域中，防火墙通常会实施更严格的安全策略，限制来自公共网络或未经验证的设备的流量。公共区域通常用于连接到互联网或外部网络。
 
 删除指定
 firewall-cmd --permanent --zone=drop --remove-source=ip 需要重新加载配置

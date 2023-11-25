@@ -323,3 +323,125 @@ public static void main(String[] args) {
     System.out.println(new BCryptPasswordEncoder().encode("ruoyi"));
 }
 ```
+
+## 亮点
+
+数据权限
+
+@DataScope(deptAlias ="d",userAlias = "u")
+
+全部数据权限
+DATA_SCOPE_ALL = "1";
+
+自定数据权限
+DATA_SCOPE_CUSTOM = "2";
+从链接的部门表中查询改角色的所有部门
+" OR {}.dept_id IN ( SELECT dept_id FROM sys_role_dept WHERE role_id = {} ) ", deptAlias,
+
+
+部门数据权限
+DATA_SCOPE_DEPT = "3";
+" OR {}.dept_id = {} ", deptAlias, user.getDeptId()
+
+
+部门及以下数据权限
+DATA_SCOPE_DEPT_AND_CHILD = "4";
+" OR {}.dept_id IN ( SELECT dept_id FROM sys_dept WHERE dept_id = {} or find_in_set( {} , ancestors ) )",
+OR {}.dept_id IN ( SELECT dept_id FROM sys_dept WHERE dept_id = '12345' or find_in_set( '12345' , ancestors ) )
+
+
+仅本人数据权限
+DATA_SCOPE_SELF = "5"
+" OR {}.user_id = {} ", userAlias, user.getUserId())
+
+
+
+
+driver-class-name: com.mysql.cj.jdbc.Driver
+url: jdbc:mysql://192.168.0.27:3306/weihai-test?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+            username: dbadmin2
+            password: Db190hw0a2zk4Gms2O19_hw2Db
+
+改为
+
+数据库8.0
+192.168.18.141:3306  程序账户：dbadmin2  程序密码：Db190hw0a2zk4Gms2O19_hw2Db
+
+
+
+
+    <select id="selectUserList" parameterType="SysUser" resultMap="SysUserResult">
+        select u.user_id, u.dept_id, u.nick_name, u.user_name, u.email, u.avatar, u.phonenumber,
+        u.sex, u.status, u.del_flag, u.login_ip, u.login_date, u.create_by, u.create_time,
+        u.remark, d.dept_name, d.leader,u.user_type
+        from sys_user u
+        left join sys_dept d on u.dept_id = d.dept_id
+
+
+    @DataScope(deptAlias = "d", userAlias = "u")
+
+
+
+
+
+    </if>
+    <!-- 数据范围过滤 -->
+    ${params.dataScope}
+</select>
+
+
+
+
+向需要有数据权限的表中添加user_id 和 dept_id
+向业务层加此注解 @DataScope(deptAlias = “t”, userAlias = “u”)
+
+
+
+查询改用户 或者 部门的数据范围
+
+
+创建的这个人，查询所有角色，每个角色分配的数据权限
+
+
+
+	        left join sys_user_role ur on ur.role_id = r.role_id
+
+
+	        left join sys_user u on ur.user_id = u.user_id
+	        left join sys_dept d on u.dept_id = d.dept_id
+
+zdc
+
+
+
+
+          
+
+
+124.207.66.130
+ssh 端口 22812
+用户名 root
+密码 mfox_3edc$RFV
+
+
+	`user_id` BIGINT(19) NOT NULL COMMENT '用户ID',
+	`dept_id` BIGINT(19) NOT NULL COMMENT '部门ID',
+
+
+
+party-build:mailbox:query 查询
+party-build:mailbox:view 查看
+party-build:mailbox:add 新增
+party-build:mailbox:reply 回复
+party-build:mailbox:feedback 反馈
+
+
+nickName
+
+
+
+http://192.168.18.125:8312/Fox_AIoT/rainalot-thingsx.git
+
+
+
+SELECT count(*) FROM device d WHERE d.tenant_id = 'b8463290-fe5b-11ec-8a2c-593e73526868'

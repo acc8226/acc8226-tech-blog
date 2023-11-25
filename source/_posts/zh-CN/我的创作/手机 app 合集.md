@@ -7,13 +7,26 @@ categories: 我的创作
 
 ## 必备
 
-* 安全 认证 Google Authenticator - 为安全绝对不过分
+1\. 国家反诈中心 <https://sj.qq.com/appdetail/com.hicorenational.antifraud>
+
+2\. 安全 认证 Google Authenticator - 为安全绝对不过分
 <https://google-authenticator.en.softonic.com/android>
 
-* 必备 国家反诈中心 <https://sj.qq.com/appdetail/com.hicorenational.antifraud>
-
-* 必备 密码 bitwarden - 好用的密码管理器  
+3\. 密码 bitwarden - 好用的密码管理器  
 <https://github.com/bitwarden/mobile/releases>
+
+4\. 微信读书
+平替 京东读书
+
+5\. 阿里网盘
+平替 天翼云盘
+
+6\. 得到
+
+7\. 倒数日
+多端同步，除了苹果端、安卓端还有手表端。
+
+8\. 微信输入法
 
 ```yml
 
@@ -27,24 +40,27 @@ not
 大众点评 https://sj.qq.com/appdetail/com.dianping.v1 和上述重了
 闪送 https://sj.qq.com/appdetail/cn.ishansong 有需要可花钱
 58 同城 https://sj.qq.com/appdetail/com.wuba 假消息太多，注意防范什么引流之类，但也有真实的
-安居客 https://sj.qq.com/appdetail/com.anjuke.android.app 直接不装了，低价诱导消费者租房买房，但也有真的
+安居客 https://sj.qq.com/appdetail/com.anjuke.android.app 直接不装了，低价诱导消费者租房买房
 
 **购物类**
 淘宝 https://sj.qq.com/appdetail/com.taobao.taobao
+
+or
+
+唯品会 小米手机预装的，买衣服的优惠还行
 
 not
 
 咸鱼 有点东西，可选吧
 京东
 天猫
-唯品会 小米手机预装的，但应该不差
 拼多多
 
 **影音类**
 QQ 音乐 https://sj.qq.com/appdetail/com.tencent.qqmusic
 or 洛雪音乐助手 很强大
 
-抖音 https://sj.qq.com/appdetail/com.ss.android.ugc.aweme 可是会上瘾
+抖音 https://sj.qq.com/appdetail/com.ss.android.ugc.aweme 停不下来
 
 bilibili 无广告版 https://github.com/lucinhu/bili_you/releases
 or bilibili https://sj.qq.com/appdetail/tv.danmaku.bili 原版
@@ -207,3 +223,6 @@ rss 阅读器
 
 应用宝官网-全网最新最热手机应用游戏下载
 <https://sj.qq.com/>
+
+APKTurbo – Fast Android APK Downloader
+<https://www.apkturbo.com/>

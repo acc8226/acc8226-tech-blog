@@ -68,7 +68,7 @@ NumberFormatException 来实现。
 
 5\.【强制】事务场景中，抛出异常被 catch 后，如果需要回滚，一定要注意手动回滚事务。
 
-6\.【强制】finally 块必须对资源对象、流对象进行关闭，有异常也要做 try-catch。
+6\.【强制】finally 块必须对资源对象、流对象进行关闭，有异常也要做 try catch。
 说明：如果 JDK7，可以使用 try-with-resources 方式。
 
 7\. 【强制】不要在 finally 块中使用 return
