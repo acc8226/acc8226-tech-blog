@@ -13,27 +13,29 @@ categories: 我的创作
 
 ### 必备
 
-#### 电脑管家【win mac】
+#### 电脑管家
 
 【mac】腾讯柠檬清理<https://lemon.qq.com/>
 
-【win】360安全卫士【安装版】https://weishi.360.cn/
+【win】火绒安全【安装版】<https://www.huorong.cn/>
 
-【win】火绒安全【安装版】https://www.huorong.cn/
+【win】微软电脑管家【安装版】<https://pcmanager.microsoft.com/zh-cn>
 
-【win】腾讯电脑管家【安装版】https://guanjia.qq.com/
+not
 
-【win】微软电脑管家【安装版】https://pcmanager.microsoft.com/zh-cn
+【win】腾讯电脑管家【安装版】<https://guanjia.qq.com/>
 
-#### 工具 鼠标手势【win】
+【win】360安全卫士【安装版】<https://weishi.360.cn/>
 
-WGestures鼠标手势 | YingDev
-https://www.yingdev.com/projects/wgestures
+#### 工具 鼠标手势
 
-#### 工具 压缩【win mac】
+WGestures 2 鼠标手势 | YingDev
+<https://www.yingdev.com/projects/wgestures2>
 
-【mac】The Unarchiver【App Store版】
-https://apps.apple.com/cn/app/the-unarchiver/id425424353
+#### 工具 压缩
+
+【win】360压缩【安装版】【首选】
+<https://yasuo.360.cn/>
 
 【win】7-Zip【备选】
 
@@ -45,8 +47,11 @@ https://apps.apple.com/cn/app/the-unarchiver/id425424353
 7z2301-x64.exe 表示 64 位安装包
 7z2301.exe 表示 32 位安装包
 
-【win】360压缩【安装版】【首选】
-https://yasuo.360.cn/
+The Unarchiver | Top Free Unarchiving Software for macOS
+<https://theunarchiver.com/>
+
+【mac】The Unarchiver【App Store版】 <https://apps.apple.com/cn/app/the-unarchiver/id425424353>
+or 安装包 <https://dl.devmate.com/com.macpaw.site.theunarchiver/TheUnarchiver.dmg>
 
 #### 浏览器类
 
@@ -78,56 +83,101 @@ Waterfox 浏览器 https://www.waterfox.net/en-US/download/
 
 Vivaldi 浏览器 | 强大的个性化和私密化的网络浏览器 https://vivaldi.com/zh-hans/
 
-#### 密码 bitwarden
+#### 密码管理
 
 Bitwarden Open Source Password Manager | Bitwarden
 <https://bitwarden.com/>
 
-#### 输入法 搜狗输入法
+#### 输入法
 
-【win】搜狗输入法智慧版【安装版】
-<https://pinyin.sogou.com/zhihui/>
+微信输入法
+<https://z.weixin.qq.com/>
 
-linux 搜狗
-<https://shurufa.sogou.com/linux>
+#### 网盘类
 
-mac 搜狗
-<https://pinyin.sogou.com/mac/>
+阿里云盘
 
-#### 金山打字通
+#### 音乐播放
 
-网易邮箱大师
+主要【win】【魔法】Spotify
+
+【备用】方格音乐
+<http://morin.vin/>
+
+### 办公类
+
+钉钉
+<https://page.dingtalk.com/wow/z/dingtalk/simple/ddhomedownload#/>
+
+腾讯会议
+<https://meeting.tencent.com/>
+
+#### mail 收发
+
+网易邮箱大师 <https://dashi.163.com/>
+
 能代理 gmail 很强大，但是手机版的有广告就不行了，手机QQ邮箱也是如此
 
-### 影音 之 视频类
+not
+
+thunderbird <https://www.thunderbird.net/zh-CN/>
+
+foxmail <https://www.foxmail.com/> 对 mac 用户重视不够，进场不更新
+
+#### Office 文档
+
+【主要】WPS <https://www.wps.cn/>
+
+【备用】libreoffice <https://zh-cn.libreoffice.org/download/libreoffice/>
+
+#### PDF 文档
+
+【win】SumatraPDF【绿色版】
+
+【mac】PDF 如果站在只读角度直接用浏览器即可
+
+not
+
+【win】PDF_XChangeViewer 貌似免费版只能查看
+
+#### 思维导图
+
+Xmind思维导图 <https://xmind.cn/>
+
+### 视频类
 
 【win mac】哔哩哔哩【在线】【首选】 哔哩哔哩下载中心 <https://app.bilibili.com/>
+bili 的 mac 版的本地播放能力也挺强的
+
+【win】荐片 荐片app_荐片安卓版_荐片播放器官网 - 荐片,最新电影,高清电影,免费电影,播放器 <https://www.jianpian6.co/>
+
+【win】PotPlayer【本地】【首选】 PotPlayer高清影音播放器中文绿色版下载-PotPlayer中文网 <https://potplayer.org/>
+【mac linux】VLC【本地】VLC：官方网站 - 全平台的自由多媒体解决方案！ - VideoLAN <https://www.videolan.org/>
+
+not
 
 【win mac】爱奇艺【在线】 爱奇艺-在线视频网站-海量正版高清视频在线观看 <https://www.iqiyi.com/>
 
-【win mac】优酷【在线】优酷客户端下载中心 https://youku.com/product/index
+【win mac】优酷【在线】优酷客户端下载中心 <https://youku.com/product/index>
 
 【win mac】腾讯视频【在线】腾讯视频-中国领先的在线视频媒体平台,海量高清视频在线观看 https://v.qq.com/
 
-【win mac】芒果TV【本地】 芒果TV-下载中心 https://www.mgtv.com/app/
+【win mac】芒果TV【本地】 芒果TV-下载中心 <https://www.mgtv.com/app/>
 
-【mac linux】VLC【本地】VLC：官方网站 - 全平台的自由多媒体解决方案！ - VideoLAN <https://www.videolan.org/>
+### 音频类
 
-【win】PotPlayer【本地】【首选】 PotPlayer高清影音播放器中文绿色版下载-PotPlayer中文网 https://potplayer.org/
-
-【win】荐片 荐片app_荐片安卓版_荐片播放器官网 - 荐片,最新电影,高清电影,免费电影,播放器 https://www.jianpian6.co/
-
-### 影音 之 音频类【win mac】
+【魔法】Spotify
 
 【win】MusicPlayer2【本地】MusicPlayer2 <https://github.com/zhongyang219/MusicPlayer2>
+
+not
 
 【win mac】QQ音乐【二选一】【在线】QQ音乐,音乐你的生活! <https://y.qq.com/download/index.html>
 
 【win mac】网易云音乐【二选一】【在线】 网易云音乐 <https://music.163.com/#/download>
 
-not
-
 酷狗音乐 没落的不行了
+
 千千音乐 也是一样
 
 ### 工具类
@@ -175,38 +225,6 @@ Tim <https://tim.qq.com/download.html>
 not
 
 阿里旺旺 mac 版的不好用
-
-### 办公类
-
-钉钉
-<https://page.dingtalk.com/wow/z/dingtalk/simple/ddhomedownload#/>
-
-腾讯会议
-<https://meeting.tencent.com/>
-
-#### mail 收发
-
-foxmail <https://www.foxmail.com/>
-
-网易邮箱大师 <https://dashi.163.com/>
-
-thunderbird <https://www.thunderbird.net/zh-CN/>
-
-#### office 文档
-
-WPS <https://www.wps.cn/>
-
-libreoffice <https://zh-cn.libreoffice.org/download/libreoffice/>
-
-#### PDF 文档
-
-【win】SumatraPDF【绿色版】
-
-【mac】PDF Expert
-
-#### 思维导图
-
-Xmind思维导图 <https://xmind.cn/>
 
 ### 教育类
 
