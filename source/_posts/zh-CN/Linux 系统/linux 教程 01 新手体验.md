@@ -418,7 +418,11 @@ netstat -atunlp，各参数含义如下:
 vim /etc/resolv.conf
 
 2、添加 DNS 配置信息：
+
+```conf
 nameserver 114.114.114.114
+nameserver 8.8.8.8
+```
 
 3、然后执行重启
 systemctl restart network

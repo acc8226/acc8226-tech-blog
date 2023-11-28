@@ -107,6 +107,10 @@ service ssh stop
 sudo apt get install lrzsz
 ```
 
+centos 中
+
+sudo yum install lrzsz
+
 ### 常用命令
 
 更新和升级包

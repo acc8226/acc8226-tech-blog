@@ -17,5 +17,5 @@ pacman {-U --upgrade}  [选项] <文件>   //更新安装包
 
 ## 参考
 
-最受欢迎的 Linux 发行版, Manjaro折腾全记录（超长超详细） - 腾讯云开发者社区-腾讯云
+最受欢迎的 Linux 发行版, Manjaro 折腾全记录（超长超详细） - 腾讯云开发者社区-腾讯云
 <https://cloud.tencent.com/developer/article/1390999>
