@@ -66,12 +66,18 @@ docker run -d --name emqx \
 emqx/emqx:5.0.17
 ```
 
+可按需开启端口，例如
+
+```sh
+docker run -d --name emqx \
+-p 1883:1883 \
+-p 18083:18083 \
+emqx/emqx:5.0.17
+```
+
 通过浏览器访问 <http://localhost:18083/> localhost 可替换为您的实际 IP 地址）以访问 EMQX Dashboard 管理控制台，进行设备连接与相关指标监控管理。
 
-默认用户名及密码：
-
-admin
-public
+默认用户名及密码：admin / public
 
 ## 客户端
 

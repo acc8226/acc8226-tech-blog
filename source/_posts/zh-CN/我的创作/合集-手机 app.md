@@ -1,5 +1,5 @@
 ---
-title: 手机 app 合集
+title: 合集-手机 app
 date: 2023-06-04 13:14:00
 updated: 2023-06-04 13:14:00
 ---
@@ -76,6 +76,8 @@ Shadowsocks 魔法上网用
 快递 100 查和寄快递
 小度音箱 <https://sj.qq.com/appdetail/com.baidu.duer.superapp> 硬件绑定的应用，不得不用
 
+wifi 万能密钥 偶尔可以来一下
+
 not
 
 uc 浏览器 有广告
@@ -130,6 +132,12 @@ not
 ## 生活类
 
 美团 <https://sj.qq.com/appdetail/com.sankuai.meituan>
+
+or
+
+便利蜂 有小程序 和 app 端口，但是优惠力度确实不一样，属于可有可无吧
+
+建行生活 曾经和北京疫情优惠券一起有活动，但是我没 k 了
 
 not
 
@@ -254,5 +262,8 @@ rss 阅读器
 应用宝官网-全网最新最热手机应用游戏下载
 <https://sj.qq.com/>
 
-APKTurbo – Fast Android APK Downloader
+【主要】在APKPure使用免费在线APK下载器下载APK到安卓
+<https://apkpure.com/cn/>
+
+【备用】不是最新的应用 APKTurbo – Fast Android APK Downloader
 <https://www.apkturbo.com/>

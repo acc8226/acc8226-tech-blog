@@ -11,11 +11,30 @@ categories: linux
 wget -q https://github.com/Aniverse/A/raw/i/a && bash a
 ```
 
+## 服务器面板
+
+### 宝塔面板
+
+注意：必须为没装过其它环境如 Apache/Nginx/php/MySQL 的新系统，推荐使用 centos 7.X 的系统安装宝塔面板
+
+### WDCP 面板
+
+WDCP - 下载安装
+<https://www.wdcp.net/download.html>
+
+yum install -y wget && wget -O install.sh http://dl.wdcp.net/install/install.sh && sh install.sh cus
+
+一般而言须要会安装 LAMP (apache + php + mysql + zend +  pureftpd + phpmyadmin)，所以我不推荐了
+
+### AMH 面板
+
+依旧是 apache + php + mysql 的组合，所以我不推荐了
+
 ## 搭建 vpn
 
 由于现在的第三方各种原因都不那么好用了，这里就来跟大家分享下如何利用海外服务器搭建自己私人 VPN。
 
-说明这个方法不是免费的。
+说明：这个方法不是免费的。
 
 **第一步：**首先你要有一台[国外的服务器](https://www.idcbest.com/)，香港服务器也可以；云服务平台有很多，如果只是单纯的搭建 VPN，可以买便宜的服务器。
 
@@ -46,7 +65,7 @@ iPhone：App Store 上下载 ShadowLink，这个要用国外 appid 才可以下�
 
 ### android 手机
 
-安装好上面对应的客户端如下图左边的填写对应的服务ip、端口、密码、加密方式然后保存；然后点击中间图下面的小飞机，看到手机上面有个钥匙的就是成功了，然后你就可以用浏览器访问 Google。
+安装好上面对应的客户端如下图左边的填写对应的服务 ip、端口、密码、加密方式然后保存；然后点击中间图下面的小飞机，看到手机上面有个钥匙的就是成功了，然后你就可以用浏览器访问 Google。
 
 ![基于国外服务器搭建自己的VPN](https://upload-images.jianshu.io/upload_images/1662509-1ce1a4ee13840bf2.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -65,6 +84,35 @@ iPhone：App Store 上下载 ShadowLink，这个要用国外 appid 才可以下�
 ![基于国外服务器搭建自己的 VPN](https://upload-images.jianshu.io/upload_images/1662509-a927e0920549a5bc.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## 搭建 bitwarden
+
+sudo adduser bitwarden
+sudo passwd bitwarden wHeifjiewo3f8989fu
+sudo groupadd docker
+sudo usermod -aG docker bitwarden
+sudo mkdir /opt/bitwarden
+sudo chmod -R 700 /opt/bitwarden
+sudo chown -R bitwarden:bitwarden /opt/bitwarden
+
+curl -Lso bitwarden.sh "https://func.bitwarden.com/api/dl/?app=self-host&platform=linux" && chmod 700 bitwarden.sh
+./bitwarden.sh install
+
+## alist 网盘
+
+```sh
+docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name="alist" xhofe/alist:latest
+```
+
+随机生成一个密码 `docker exec -it alist ./alist admin random`
+
+```sh
+[root@iZf2zeiwk04Z ~]# docker exec -it alist ./alist admin random
+INFO[2023-11-30 14:58:28] reading config file: data/config.json        
+INFO[2023-11-30 14:58:28] load config from env with prefix: ALIST_     
+INFO[2023-11-30 14:58:28] init logrus...                               
+INFO[2023-11-30 14:58:28] admin user has been updated:                 
+INFO[2023-11-30 14:58:28] username: admin                              
+INFO[2023-11-30 14:58:28] password: 1MEP7Yql   
+```
 
 ## 配置 nginx
 

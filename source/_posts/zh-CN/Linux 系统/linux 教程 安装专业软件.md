@@ -15,6 +15,6 @@ mysql -u root -p
 use mysql;
 -- 更改要登录用户的 host 为“%”
 update user set host = '%' where user ='root';
--- 刷新MySQL的系统权限相关表
+-- 刷新 MySQL 的系统权限相关表
 flush privileges;
 ```

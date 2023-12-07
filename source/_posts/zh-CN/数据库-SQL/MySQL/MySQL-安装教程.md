@@ -260,10 +260,10 @@ docker run -itd --name mysql-test -p 3306:3306 -e MYSQL_ROOT_PASSWORD=feitangfei
 docker exec -it mysql-test mysql -uroot -pfeitangfei
 ```
 
-## docker 下安装 mysql 8.0.18
+## docker 下安装 mysql 8
 
 ```sh
-docker pull mysql:8.0.18
+docker pull mysql:8
 ```
 
 如果是此句, 则是拉取最新版本 `$ docker pull mysql:latest`
@@ -278,32 +278,33 @@ mysql               8.0.18              ed1ffcb5eff3        6 months ago        
 ```
 
 ```sh
-docker run -itd --name mysql-test -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 ed1ffcb5eff3
+docker run -itd --name mysql8 -p 3316:3306 -e MYSQL_ROOT_PASSWORD=98763112 mysql:8
 ```
 
 进入 CONTAINER ID 然后加载 bash
 
 ```sh
-docker exec -it mysql-test bash
+docker exec -it mysql8 bash
 ```
 
 或者一步到位
 
 ```sh
-docker exec -it mysql-test mysql -uroot -p123456
+docker exec -it mysql8 mysql -uroot -p98763112
 ```
 
 ## 配置说明
 
 MySQL 在 Linux 下数据库名、表名、列名、别名大小写规则是这样的：
+
 1、数据库名与表名是严格区分大小写的；
 2、表的别名是严格区分大小写的；
 3、列名与列的别名在所有的情况下均是忽略大小写的；
 4、变量名也是严格区分大小写的；
 
-MySQL默认情况下是否区分大小写，使用 show Variables like '%table_names'查看 lower_case_table_names 的值，0 代表区分，1代表不区分。
+MySQL 默认情况下是否区分大小写，使用 `show Variables like '%table_names';` 查看 lower_case_table_names 的值，0 代表区分，1代表不区分。
 
-为了使修改区分大小写，可以在 my.cnf 中的[mysqld]后面添加 lower_case_table_names=1，重启 MYSQL 服务。
+为了使修改区分大小写，可以在 my.cnf 中的[mysqld]后面添加 lower_case_table_names = 1，重启 MYSQL 服务。
 
 ### 通过 Docker 安装 mysql 后修改 my.cnf 配置文件
 
@@ -311,16 +312,16 @@ vim /etc/mysql/my.cnf
 
 在使用 docker 容器时，有时候里边没有安装 vim，运行vim命令时提示说：vim: command not found，这个时候就需要安装 vim，当运行以下安装命令时：
 
-apt-get install vim
+apt get install vim
 
-如果 Error 报错提示：E: Unable to locate package vim，根据 apt 命令下载并安装软件的惯例，我们需要对 apt进行更新！
+如果 Error 报错提示：E: Unable to locate package vim，根据 apt 命令下载并安装软件的惯例，我们需要对 apt 进行更新！
 
 apt-get update
 
 ## 登录 MySQL
 
 本地登录 MySQL
-命令：mysql -u root -p   //root是用户名，输入这条命令按回车键后系统会提示你输入密码
+命令：mysql -u root -p   // root 是用户名，输入这条命令按回车键后系统会提示你输入密码
 
 指定端口号登录 MySQL 数据库
 将以上命令：mysql -u root -p -P 3306 即可，注意指定端口的字母 P 为大写，
@@ -348,18 +349,18 @@ mysql -uroot -p123456
 use mysql;
 
 -- 查询当前数据库相关信息
-select host,user,authentication_string,plugin from user;
+select host, user, authentication_string, plugin from user;
 
--- 若不存在 `root@%`  将root用户设置为所有地址可登录，原来是localhost表示只用本机可登录
+-- 若不存在 `root@%`  将 root 用户设置为所有地址可登录，原来是 localhost 表示只用本机可登录
 UPDATE USER SET host = '%' WHERE user = 'root';
 -- 并刷新权限
 flush privileges;
 
---将用户root密码设置为永不过期
+--将用户 root 密码设置为永不过期
 mysql> alter user 'root'@'%' identified by '123456' password expire never;
 Query OK, 0 rows affected (0.01 sec)
 
---将 root 用户密码加密方式改为 mysql_native_password ，上面查到 root 用户密码的加密方式为caching_sha2_password
+--将 root 用户密码加密方式改为 mysql_native_password ，上面查到 root 用户密码的加密方式为 caching_sha2_password
 mysql> alter user 'root'@'%' identified with mysql_native_password by '123456';
 Query OK, 0 rows affected (0.00 sec)
 
@@ -369,12 +370,12 @@ mysql> flush privileges;
 
 ```sh
 -- 可以添加远程登录用户
-CREATE USER 'xiaobudian'@'%' IDENTIFIED WITH mysql_native_password BY '123456';
+CREATE USER 'xiaobudian'@'%' IDENTIFIED WITH mysql_native_password BY '737834fiejfiejilfejfhek';
 GRANT ALL PRIVILEGES ON *.* TO 'xiaobudian'@'%';
 ```
 
 现在可以任意客户端尝试登录
 
 ```sh
-mysql  -uroot -p123456 -h 117.xxx.xx.xx
+mysql -uroot -p123456 -h 117.xxx.xx.xx
 ```

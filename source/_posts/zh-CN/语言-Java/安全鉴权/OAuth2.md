@@ -11,7 +11,7 @@ tags:
 - 鉴权
 ---
 
-授权码模式
+用的最多的就是授权码模式
 
 是否允许将信息授权给百度，这要可以拿到一个授权码
 根据授权码解密后向授权服务器申请令牌，这样就可以拿到访问令牌 token 和更新令牌
@@ -58,57 +58,22 @@ http://127.0.0.1:8443/oauth/callback/ye?code=2rS%2B9foJFAuv54cVWeekaT0Ji%2BRyjhc
 第二步
 http://119.3.255.138/api/decodeTicket?ticket=zozu%2BrR4aUzIBObbouvqKvNIuVFeaZGBJjIametwbPvjyxxPPZDLlb5xm1CzK5qEgakgBthfK1dw5UH8yaV383CramDGZngHc9iOxnBPOP4%3D
 
+
+编码后 
+
+http://119.3.255.138/api/decodeTicket?ticket=jN902n7AHy4fkR%2Bw%2F0WivJ6ruNUBXs0CaJ0QUb6BVJK4KLGk%2B1UBCX8psRSZBd2o%2BR3rLMb2iw%2F20MnI2vh9CE2MfvChFHzVgP3gD4YSrw7ZA2xY%2B0LgCjL%2FNkn2z47w
+
 第三步
 
 把 token 放到header里就可以请求用户信息接口了
 http://119.3.255.138/api/getInfo
 Authorization Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsb2dpblR5cGUiOiJsb2dpbiIsImxvZ2luSWQiOiJzeXNfdXNlcjoxIiwicm5TdHIiOiJNV0RqeHJ6Y1RISmtvRU9UTDZBOTZzMndoNFAyb0tGbyIsImlkIjoxfQ.sLP5wfMz2ZCIKfxVxTlX-IDbeQzom6BQm-M-9eaLdvE
 
-
-
-
-http://124.207.66.131:7055/#/sign?ticket=2rS%2B9foJFAuv54cVWeekabkH%2B1A4FPtOY5dC5OqMGLv7aJod6ZuSTvmDAnk1eg0J
-
-
-
-
 oauth2_domain 作为 oauth2 的设置
 
-
-默认的回调页面，可以拿到授权码
-http://192.168.18.105:9002/login/oauth2/code/
-
-http://124.207.66.131:7055/login?loginError=%5Binvalid_request%5D+
-
-
-
-http://192.168.18.105:9002/oauth2/authorization/0841f820-753d-11ee-94ab-03e0b675d1ef
-
-将跳转到
-
-https://github.com/login?client_id=Iv1.6f265c4a5f7bed6c&return_to=%2Flogin%2Foauth%2Fauthorize%3Fclient_id%3DIv1.6f265c4a5f7bed6c%26redirect_uri%3Dhttp%253A%252F%252F192.168.18.105%253A9002%252Flogin%252Foauth2%252Fcode%252F%26response_type%3Dcode%26scope%3Dread%253Auser%2Buser%253Aemail%26state%3DYSH_CWeAgIZASYGipAA-xpAO1rTCv0Rx0IJrGk6-jdw%253D
-
-
-http://192.168.18.105:9002/login/oauth2/code/?code=b22449f50b58ec0ee248&state=u2nJfAxCPwa_54WzeK9vkdt5FPpfLtGayu9AeHuWGss%3D
-
-
-http://192.168.18.105:9002/login/oauth2/code/?code=b22449f50b58ec0ee248&state=u2nJfAxCPwa_54WzeK9vkdt5FPpfLtGayu9AeHuWGss%3D
-
-
-
-404 Not Found
-http://124.207.66.131:7055/login?loginError=User+not+found%3A+acc8226%40qq.com
-
-
-https://github.com/login/oauth/authorize?response_type=code&client_id=Iv1.6f265c4a5f7bed6c&scope=read:user%20user:email&state=GihDv7SfbgBxn0dR_ZTVjPAUSwxsaxRL6mMZeTawWqQ%3D&redirect_uri=http://192.168.18.105:9002/login/oauth2/code/
-
-
-
-
+键入
 http://localhost:8080/oauth2/authorization/f6f14780-755d-11ee-94ab-03e0b675d1ef
-
-转到
-
+将转到
 https://github.com/login/oauth/authorize?response_type=code&client_id=Iv1.6f265c4a5f7bed6c&scope=read:user%20user:email&state=Kvdbppq9e9EUk8kfRxI6EwB3ysfd_XrguHNMXpk3Gyk%3D&redirect_uri=http://localhost:8080/login/oauth2/code/
 
 回调错误收到
@@ -116,15 +81,10 @@ http://192.168.18.105:9002/login/oauth2/code/?error=redirect_uri_mismatch&error_
 收到正确回调
 http://localhost:8080/login/oauth2/code/?code=e795a18f65b57aa5cb23&state=dR4LZI4IFL2mqokryhx181A0pRhrB3SvsZY966bllOU=
 
-
+提示用户不存在或者授权失败
 http://124.207.66.131:7055/login?loginError=%5Bauthorization_request_not_found%5D+
-
-
-
 http://localhost:8080/login?loginError=User+not+found%3A+acc8226%40qq.com 用户不存在User not found: acc8226@qq.com
+404 Not Found
+http://124.207.66.131:7055/login?loginError=User+not+found%3A+acc8226%40qq.com
 
-
-
-
-
-去除单引号
+加一些限制条件，只能是三方登录，如果该邮箱未注册则跳转到注册页面
