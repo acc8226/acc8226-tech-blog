@@ -15,13 +15,11 @@ updated: 2023-06-04 13:14:00
 <https://github.com/bitwarden/mobile/releases>
 
 3\. 微信读书 <https://sj.qq.com/appdetail/com.tencent.weread>
-平替 京东读书
 
-4\. 知乎 <https://sj.qq.com/appdetail/com.zhihu.android>
-学知识
+4\. 果壳
+学知识呢
 
 5\. 阿里网盘
-平替 天翼云盘
 
 6\. 得到
 
@@ -36,6 +34,7 @@ updated: 2023-06-04 13:14:00
 
 bilibili 无广告版 <https://github.com/lucinhu/bili_you/releases>
 or bilibili <https://sj.qq.com/appdetail/tv.danmaku.bili> 原版 还能创作
+or bilibili 国际版 因为清爽呀
 
 西瓜视频 无广告 还能创作
 
@@ -98,11 +97,11 @@ bad
 or
 
 唯品会 小米手机预装的，买衣服的优惠还行
+京东
 
 not
 
 咸鱼 有点东西，可选吧
-京东
 天猫
 拼多多
 
@@ -182,12 +181,17 @@ QQ 邮箱 <https://sj.qq.com/appdetail/com.tencent.androidqqmail> 有广告
 
 ## 阅读类
 
-今日热榜 App 下载
-<https://tophub.today/app>
+
 
 not
 
-除了必备提到的微信读书就属今日头条了 <https://sj.qq.com/appdetail/com.ss.android.article.news> 曾经最爱，但是广告劝退了我，iPhone 付费版的倒是可以考虑。我一般很少关注外界，这得改呀，央视 315 这种节目就很好
+知乎 <https://sj.qq.com/appdetail/com.zhihu.android>
+学知识
+
+今日热榜 App 下载
+<https://tophub.today/app>
+
+除了必备提到的微信读书就属今日头条了，但是安卓版的有广告。 <https://sj.qq.com/appdetail/com.ss.android.article.news> 曾经最爱，但是广告劝退了我，iPhone 付费版的倒是可以考虑。我一般很少关注外界，这得改呀，央视 315 这种节目就很好
 
 京东读书 <https://sj.qq.com/appdetail/com.jd.app.reader>
 微软 start 不好用
