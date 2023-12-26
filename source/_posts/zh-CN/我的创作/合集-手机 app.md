@@ -19,7 +19,7 @@ updated: 2023-06-04 13:14:00
 4\. 果壳
 学知识呢
 
-5\. 阿里网盘
+5\. spotify
 
 6\. 得到
 
@@ -27,8 +27,6 @@ updated: 2023-06-04 13:14:00
 多端同步，除了苹果端、安卓端还有手表端。
 
 8\. 微信输入法
-
-9\. spotify
 
 ## 影音类
 
@@ -38,11 +36,9 @@ or bilibili 国际版 因为清爽呀
 
 西瓜视频 无广告 还能创作
 
-【本地】
-阿里云盘分享 - reex
-<https://www.aliyundrive.com/s/cf3p39UXkxa/folder/63e8e0027b7473f82cc64bbb9be0a34794c32c07>
-
 not
+
+reex 的使用： url 可以填写微 `http://xx.xx.xx.xxx:5244/dav` 然后用户名 和 密码填写 alist 的信息即可。但是一段时间没更新了，然后官网我也没找到 <https://www.aliyundrive.com/s/cf3p39UXkxa/folder/63e8e0027b7473f82cc64bbb9be0a34794c32c07>
 
 QQ 音乐 <https://sj.qq.com/appdetail/com.tencent.qqmusic> 有广告
 洛雪音乐助手 废了
@@ -58,16 +54,15 @@ m1905 电影网 做的一般般
 快手 和抖音重了
 
 not
-es 文件浏览器 好用但是有广告
+es 文件浏览器 也可称之为万能播放器 好用但是有广告
 nPlayer 不能跳倍速
+vlc 在 webdav 方面自定义选项不足
 
 ## 工具类
 
-豆包 好用的 ai 助手
-
-李跳跳
-
+AdGuard 安全和去部分广告和去骚扰信息三重加成 <https://adguard.info/zh_cn/adguard-android/overview.html>
 Shadowsocks 魔法上网用
+豆包 好用的 ai 助手
 
 360 浏览器 <https://sj.qq.com/appdetail/com.qihoo.browser> 安全第一位，但是只要不要慌，陌生的东西一定不要点
 真实好友
@@ -75,11 +70,16 @@ Shadowsocks 魔法上网用
 快递 100 查和寄快递
 小度音箱 <https://sj.qq.com/appdetail/com.baidu.duer.superapp> 硬件绑定的应用，不得不用
 
-wifi 万能密钥 偶尔可以来一下
+wifi 万能密钥 偶尔可以来一下，不过现在确实能搜到的热点不多了
+
+or
+
+uc 浏览器 有广告但是免流呀
 
 not
 
-uc 浏览器 有广告
+李跳跳 已过时
+
 QQ 浏览器 有广告
 狐猴浏览器 感觉不完善
 kiwi 浏览器 一般般，显示国家图片的插件而且不能用，虽然说支持谷歌插件没错
@@ -107,12 +107,17 @@ not
 
 ## 交通类
 
-滴滴出行 app / 小程序。可打车可搬家，货运搬家新用户还送券，还行
-百度地图 高德地图 腾讯地图
+百度地图关怀版
+
+滴滴出行 app / 小程序。可打车可搬家，货运搬家新用户还送券，还行。
+货拉拉搬家也还行，车比滴滴多
 
 当然也可借助 支付宝 / 云闪付 的交通功能
 
 not
+
+广告太多了
+百度地图 高德地图 腾讯地图
 
 由于重复了
 
@@ -122,15 +127,22 @@ not
 
 ## 教育类
 
+多邻国
+
 每日音乐听力 <https://sj.qq.com/appdetail/com.qianyan2.ting.en>
 知乎知学堂
 拉勾教育
 小鹅通
-多邻国
 
 ## 生活类
 
 美团 <https://sj.qq.com/appdetail/com.sankuai.meituan>
+
+永辉生活
+
+多点
+
+卢米埃 毕竟办过会员卡，不过年费 10 元需要进行激活，暂时不用了
 
 or
 
@@ -151,6 +163,8 @@ not
 去哪儿 <https://sj.qq.com/appdetail/com.Qunar> 感觉还是去哪儿的票价便宜些 这里由于我没仔细阅读，导致取消订单后重下单付款了 120，长沙金井的老板真黑，我应该提前和他说我第二天早起会退房的，但我的主要损失还是被商诈和被电诈
 携程 <https://sj.qq.com/appdetail/ctrip.android.view>
 飞猪 <https://sj.qq.com/appdetail/com.taobao.trip>
+
+格林豪泰 比较当年办了一个金卡会员，虽然很久没用了，但可能有些优惠吧
 
 not
 
@@ -179,9 +193,14 @@ not
 QQ 邮箱 <https://sj.qq.com/appdetail/com.tencent.androidqqmail> 有广告
 网易邮箱大师 <https://sj.qq.com/appdetail/com.netease.mail> 有广告
 
-## 阅读类
+## 阅读 or 听书类
 
+阅读
+<https://github.com/gedoor/legado/releases/>
 
+微信听书 <https://sj.qq.com/appdetail/com.tencent.wehear>
+得到 <https://sj.qq.com/appdetail/com.luojilab.player>
+极客时间 <https://sj.qq.com/appdetail/org.geekbang.geekTime>
 
 not
 
@@ -201,24 +220,8 @@ QQ 阅读
 起点读数 有独家
 七猫
 
-## 听书类
-
-微信听书 <https://sj.qq.com/appdetail/com.tencent.wehear>
-得到 <https://sj.qq.com/appdetail/com.luojilab.player>
-极客时间 <https://sj.qq.com/appdetail/org.geekbang.geekTime>
-
-not
-
 少年得到 太幼稚
 凤凰 FM 偶尔闪退呀 这个 api 到时可以研究，属于抓包资源
-
-```yml
-**特有：播放器类**
-kmp 一款中规中矩的播放器，完全免费但没有远程连接功能
-
-**特有：微信小程序**
-北京健康宝 疫情已落幕
-```
 
 ## 云同步类
 
@@ -252,9 +255,9 @@ rss 阅读器
 
 ## 小程序
 
-小鹅通
-
 北京通 自从北京通 app 下架后，然后有了它之后北京公积金 app 也几乎不用装了，一般我也用网站，想不到提取公积金特简单，简单申请当日到账
+
+北京健康宝 疫情已落幕
 
 ## 其他
 
@@ -266,7 +269,7 @@ rss 阅读器
 应用宝官网-全网最新最热手机应用游戏下载
 <https://sj.qq.com/>
 
-【主要】在APKPure使用免费在线APK下载器下载APK到安卓
+【主要】在 APKPure 使用免费在线 APK 下载器下载 APK 到安卓
 <https://apkpure.com/cn/>
 
 【备用】不是最新的应用 APKTurbo – Fast Android APK Downloader

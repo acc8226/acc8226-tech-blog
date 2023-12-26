@@ -82,7 +82,7 @@ pg 14
 ```sh
 docker run --name pg14 \
 -p 5430:5432 \
--e POSTGRES_PASSWORD=abc \
+-e POSTGRES_PASSWORD=abcfeitangfei \
 -d postgres:14-alpine
 ```
 
@@ -91,7 +91,7 @@ pg 15
 ```sh
 docker run --name pg15 \
 -p 5431:5432 \
--e POSTGRES_PASSWORD=bcd \
+-e POSTGRES_PASSWORD=tangfeitangbcd \
 -d postgres:15-alpine
 ```
 
@@ -227,7 +227,7 @@ export PGPASSWORD=password
 
 ### pg_hba.conf 配置文件讲解
 
-pg_hba.conf 为 PostgreSQL 的访问策略配置文件，默认位于 `/var/lib/pgsql/10/data/` 目录（以 PostgreSQL 10 为例）。
+pg_hba.conf 为 PostgreSQL 的访问策略配置文件，以 PostgreSQL 10 举例，默认位于 `/var/lib/pgsql/10/data/` 目录下。
 
 TYPE 参数设置
 TYPE 表示主机类型，值可能为：
@@ -235,43 +235,38 @@ TYPE 表示主机类型，值可能为：
 若为 `host` 是 TCP/IP socket
 若为 `hostssl` 是 SSL 加密的 TCP/IP socket
 
-DATABASE 参数设置
 DATABASE 表示数据库名称,值可能为：
-`all`，`sameuser`，`samerole`，`replication`，`数据库名称` ,或者多个
-数据库名称用逗号，注意 ALL 不匹配 replication
+`all`，`sameuser`，`samerole`，`replication`，`数据库名称` ,或者多个数据库名称用逗号，注意 ALL 不匹配 replication
 
-USER 参数设置
- USER 表示用户名称，值可以为：
- `all`,`一个用户名`，`一组用户名` ，多个用户时，可以用 `,` 逗号隔开，
- 或者在用户名称前缀 `+` ; 在 USER 和 DATABASE 字段，也可以写一个单独的
- 文件名称用 `@` 前缀，该文件包含数据库名称或用户名称
+USER 表示用户名称，值可以为：
+`all`,`一个用户名`，`一组用户名` ，多个用户时，可以用 `,` 逗号隔开，
+或者在用户名称前缀 `+` ; 在 USER 和 DATABASE 字段，也可以写一个单独的文件名称用 `@` 前缀，该文件包含数据库名称或用户名称
 
 ADDRESS 参数设置
-该参数可以为 `主机名称` 或者 `IP/32(IPV4)` 或 `IP/128(IPV6)`，主机
-名称以 `.`开头，`samehost` 或 `samenet` 匹配任意Ip地址
+该参数可以为 `主机名称` 或者 `IP/32(IPV4)` 或 `IP/128(IPV6)`，主机名称以 `.` 开头，`samehost` 或 `samenet` 匹配任意Ip地址
 
 METHOD 参数设置
 该值可以为 "trust", "reject", "md5", "password", "scram-sha-256","gss", "sspi", "ident", "peer", "pam", "ldap", "radius" or "cert"
 
-注意 若为 `password` 则发送的为明文密码。
+注意 若为 `password` 则发送的是明文密码。
 
 ### PgSQL 设置远程连接
 
-1\. 安装目录 /data/pg_hba.conf，将 0.0.0.0/0  进行开启。
+1\. 修改 `/data/pg_hba.conf`，将 0.0.0.0/0  进行开启。
 
 详细释义如下：
 
 ```conf
- host    all    all    192.168.1.1/32   md5 --/32 代表只允许 192.168.1.1 访问
- host    all    all    192.168.1.0/24   md5 --/24 代表 192.168.1.1~192.168.1.255 都允许访问
- host    all    all    192.168.0.0/16   md5 --/16 代表 192.168.1.1~192.168.255.255 都允许访问
- host    all    all    192.0.0.0/8      md5 --/8 代表 192.1.1.1~192.255.255.255 都允许访问
- host    all    all    0.0.0.0/0        md5 --/0 代表所有 ip 地址都允许访问
+host    all    all    192.168.1.1/32   md5 --/32 代表只允许 192.168.1.1 访问
+host    all    all    192.168.1.0/24   md5 --/24 代表 192.168.1.1~192.168.1.255 都允许访问
+host    all    all    192.168.0.0/16   md5 --/16 代表 192.168.1.1~192.168.255.255 都允许访问
+host    all    all    192.0.0.0/8      md5 --/8 代表 192.1.1.1~192.255.255.255 都允许访问
+host    all    all    0.0.0.0/0        md5 --/0 代表所有 ip 地址都允许访问
 ```
 
 2\. 修改监听的 IP 和端口。
 
-打开 postgresql.conf。找到以下内容：
+修改 `postgresql.conf`。找到以下内容：
 
 ```sh
 listen_addresses = 'localhost' # what IP address(es) to listen on;

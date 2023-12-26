@@ -229,7 +229,7 @@ DSL 涉及的东西还有很多，这里我们简单的提一下概念，让大�
 
 ## 参考
 
-Groovy 教程\_w3cschool
+Groovy 教程 w3cschool
 <https://www.w3cschool.cn/groovy/>
 
 本文纯属自学历程 + 一些记录，绝大部分内容来自原书 [Android Gradle 权威指南](https://yuedu.baidu.com/ebook/14a722970740be1e640e9a3e)。觉得对你有用，请支持原书。

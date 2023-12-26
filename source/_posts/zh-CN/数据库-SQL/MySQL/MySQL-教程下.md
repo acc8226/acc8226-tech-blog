@@ -314,7 +314,7 @@ INSERT INTO targetTable SELECT * FROM sourceTable;
 
 以下命令语句可以在 MySQL 的命令提示符使用，也可以在脚本中 使用，如 PHP 脚本。
 
-命令	描述
+命令 描述
 SELECT VERSION( ) 服务器版本信息
 SELECT DATABASE( ) 当前数据库名 (或者返回空)
 SELECT USER( ) 当前用户名

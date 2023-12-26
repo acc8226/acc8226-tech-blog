@@ -83,37 +83,6 @@ iPhone：App Store 上下载 ShadowLink，这个要用国外 appid 才可以下�
 
 ![基于国外服务器搭建自己的 VPN](https://upload-images.jianshu.io/upload_images/1662509-a927e0920549a5bc.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-## 搭建 bitwarden
-
-sudo adduser bitwarden
-sudo passwd bitwarden wHeifjiewo3f8989fu
-sudo groupadd docker
-sudo usermod -aG docker bitwarden
-sudo mkdir /opt/bitwarden
-sudo chmod -R 700 /opt/bitwarden
-sudo chown -R bitwarden:bitwarden /opt/bitwarden
-
-curl -Lso bitwarden.sh "https://func.bitwarden.com/api/dl/?app=self-host&platform=linux" && chmod 700 bitwarden.sh
-./bitwarden.sh install
-
-## alist 网盘
-
-```sh
-docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name="alist" xhofe/alist:latest
-```
-
-随机生成一个密码 `docker exec -it alist ./alist admin random`
-
-```sh
-[root@iZf2zeiwk04Z ~]# docker exec -it alist ./alist admin random
-INFO[2023-11-30 14:58:28] reading config file: data/config.json        
-INFO[2023-11-30 14:58:28] load config from env with prefix: ALIST_     
-INFO[2023-11-30 14:58:28] init logrus...                               
-INFO[2023-11-30 14:58:28] admin user has been updated:                 
-INFO[2023-11-30 14:58:28] username: admin                              
-INFO[2023-11-30 14:58:28] password: 1MEP7Yql   
-```
-
 ## 配置 nginx
 
 Nginx Proxy Manager

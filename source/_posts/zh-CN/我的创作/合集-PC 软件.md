@@ -146,15 +146,24 @@ EyesGuard 定时提醒眼睛休息 微软商店有下载
 
 gimp <https://www.gimp.org/>
 
+or
+
+jpegview 小巧
+<https://github.com/sylikc/jpegview/>
+
 not
 
+Honeyview 只能查看，没有一丁点的编辑功能
+
 光影魔术手 不在维护了
+
+eagle 不好用
 
 ### 办公类
 
 #### 移动办公
 
-> 防诈骗！！！防止屏幕共享
+> 防诈骗！！！一定不要开启屏幕共享
 
 飞书——先进企业协作与管理平台，一站式无缝办公协作，团队上下对齐目标，全面激活组织和个人。先进团队，先用飞书。
 <https://www.feishu.cn/>
@@ -322,14 +331,19 @@ tts-vue: 🎤 微软语音合成工具，使用 Electron + Vue + ElementPlus + V
 
 ### DNS 相关【win】
 
-DNS 优选
+**DNS 优选**
+
 1\. Dns Jumper v2.3 - A Free DNS Changer
 <https://www.sordum.org/7952/dns-jumper-v2-3/>
+
 2\. 魔方 DNS 优选助手
 
-DNS 切换 YogaDNS 【win】 <https://yogadns.com/>
+**DNS 切换**
 
-DNS server
+YogaDNS 【win】 <https://yogadns.com/> 免费版只能设置一个 dns，可能有点用
+
+**DNS server**
+
 1\. SmartDNS
 <https://pymumu.github.io/smartdns/>
 2\. AdGuard Home| 适用于任何操作系统（Windows，macOS，Linux）的网络软件
