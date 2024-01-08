@@ -88,6 +88,20 @@ WGestures 2 鼠标手势 | YingDev
 微信输入法
 <https://z.weixin.qq.com/>
 
+#### 密码管理
+
+Bitwarden Open Source Password Manager | Bitwarden
+<https://bitwarden.com/>
+
+Releases · bitwarden/mobile
+<https://github.com/bitwarden/mobile/releases>
+
+Windows 客户端
+<https://github.com/bitwarden/clients/releases/download/desktop-v2023.12.1/Bitwarden-Portable-2023.12.1.exe>
+
+Android 客户端
+<https://github.com/bitwarden/mobile/releases/download/v2023.12.0/com.x8bit.bitwarden-fdroid.apk>
+
 #### 网盘类
 
 阿里云盘 <https://www.aliyundrive.com/drive/>
@@ -96,27 +110,18 @@ WGestures 2 鼠标手势 | YingDev
 
 【补充】【win mac】天翼云盘 <https://cloud.189.cn/web/static/download-client/index.html>
 
-#### 音乐播放
-
-主要【win】【魔法】Spotify
-
-【备用】方格音乐
-<http://morin.vin/>
-
-#### 密码管理
-
-Bitwarden Open Source Password Manager | Bitwarden
-<https://bitwarden.com/>
-
 ### 工具类
 
 #### 截图
 
-【win mac】Snipaste【首选】 <https://zh.snipaste.com/>
+【win】PixPin【首选】 <https://pixpinapp.com/> mac 版即将推出
+<https://download.pixpinapp.com/PixPin_1.3.1.0.exe>
 
-ShareX-截图 <https://getsharex.com/>
+【win mac】Snipaste【备选】 <https://zh.snipaste.com/>
 
 or
+
+ShareX-截图 <https://getsharex.com/>
 
 截图 FSCapture 备用
 
@@ -126,11 +131,28 @@ picpick_portable 说不上哪不好
 
 #### 下载
 
-【all】motrix【首选】 <https://motrix.app/> 颜值高
+【all】motrix【首选】 <https://motrix.app/zh-CN/> 颜值高。支持下载 HTTP、FTP、BT、磁力链接等资源
 
-【win linux】文件蜈蚣 <http://www.filecxx.com/zh_CN/index.html> 免费版功能也够
+和
+
+【win linux】文件蜈蚣 <http://www.filecxx.com/zh_CN/index.html> 免费版功能也够，提供插件可以下载网页中的视频
+
+- - -
+
+视频下载工具 lux
+<https://github.com/iawia002/lux/releases/download/v0.22.0/lux_0.22.0_Windows_x86_64.zip>
+
+搭配 ffmpeg
+<https://www.gyan.dev/ffmpeg/builds/packages/ffmpeg-6.1.1-essentials_build.7z>
+
+和
+
+猫抓(cat catch) 浏览器拓展- 猫抓(cat catch)文档
+<https://o2bmm.gitbook.io/cat-catch/>
 
 not
+
+VidJuice UniTube 可以图形化下载视频和音频很好用，就是付费啦
 
 【win mac】迅雷<https://dl.xunlei.com/> 有广告
 
@@ -140,16 +162,22 @@ qbittorrent_4.5.5 不好用
 
 【win mac】【安装版】<https://justgetflux.com/>
 
-EyesGuard 定时提醒眼睛休息 微软商店有下载
+EyesGuard 定时提醒眼睛休息
+~~由于作者说微软商店不再提供更新~~
+还是去 github 下载最新版本 <https://github.com/avestura/EyesGuard/releases/>
 
 #### 图像处理
 
-gimp <https://www.gimp.org/>
+GIMP 【PS 的替代品且免费】 <https://www.gimp.org/>
+
+和
+
+jpegview 特点是小巧
+<https://github.com/sylikc/jpegview/>
 
 or
 
-jpegview 小巧
-<https://github.com/sylikc/jpegview/>
+美图秀秀【免费】
 
 not
 
@@ -158,6 +186,14 @@ Honeyview 只能查看，没有一丁点的编辑功能
 光影魔术手 不在维护了
 
 eagle 不好用
+
+PS 【收费软件】
+
+#### 常规辅助
+
+MyKeymap-2.0 效率工具 | 咸鱼阿康
+<https://xianyukang.com/MyKeymap.html>
+GitHub 地址 <https://github.com/xianyukang/MyKeymap>
 
 ### 办公类
 
@@ -183,9 +219,9 @@ eagle 不好用
 
 #### mail 收发
 
-【win mac】网易邮箱大师 <https://dashi.163.com/>
+【win mac】mac 上建议选择网易邮箱大师 <https://dashi.163.com/>
 
-【备用】【win】foxmail <https://www.foxmail.com/> 对 mac 用户重视不够，进场不更新。能代理 gmail 很强大，但是手机版的有广告就不行了，手机QQ邮箱也是如此
+【win】 windows 上建议选择 foxmail <https://www.foxmail.com/> 。我感觉该软件对 mac 用户不够重视，经常不更新。
 
 not
 
@@ -213,15 +249,22 @@ Xmind思维导图 <https://xmind.cn/>
 
 ### 音频类
 
-【魔法】Spotify
+【win mac 主要】QQ音乐【在线】QQ音乐,音乐你的生活! <https://y.qq.com/download/index.html>
+
+【备用】方格音乐 由于可以下载歌曲呢
+<http://morin.vin/>
 
 【win】MusicPlayer2【本地】MusicPlayer2 <https://github.com/zhongyang219/MusicPlayer2>
 
+【win】普听音乐。在阿里云盘的加持下很好用
+
+建议修改下快捷键。设置上一首和下一首的快捷键分别为 ctrl + left / right
+
 not
 
-【win mac】QQ音乐【二选一】【在线】QQ音乐,音乐你的生活! <https://y.qq.com/download/index.html>
+【魔法】Spotify PC 版 曲库很全，但是非会员稍有限制，需要魔法才好
 
-【win mac】网易云音乐【二选一】【在线】 网易云音乐 <https://music.163.com/#/download>
+【win mac】网易云音乐【在线】 网易云音乐 <https://music.163.com/#/download>
 
 酷狗音乐 没落的不行了
 
@@ -285,7 +328,17 @@ not
 
 【Win】 utools 差点意思
 
+### 阅读类
+
+Fluent Reader
+在 win 平台一款好用的 rss 阅读器
+<https://github.com/yang991178/fluent-reader/releases/>
+
 ## 拓展
+
+### 驱动管理
+
+驱动管理：[驱动精灵](http://www.drivergenius.com/) / [驱动人生](https://www.160.com/) 二选一。从此不用担心驱动光盘📀丢失。
 
 ### 激活类
 
@@ -336,8 +389,6 @@ tts-vue: 🎤 微软语音合成工具，使用 Electron + Vue + ElementPlus + V
 1\. Dns Jumper v2.3 - A Free DNS Changer
 <https://www.sordum.org/7952/dns-jumper-v2-3/>
 
-2\. 魔方 DNS 优选助手
-
 **DNS 切换**
 
 YogaDNS 【win】 <https://yogadns.com/> 免费版只能设置一个 dns，可能有点用
@@ -374,6 +425,18 @@ MarkdownPad2 <http://markdownpad.com/> 感觉差点意思
 
 内网通【安装版】【win】有广告但是没招，目前较为好用的软件
 <http://www.51nwt.com/index.htm>
+
+### 手机助手
+
+Android 用户可选择 [腾讯应用宝 PC 版](https://sj.qq.com/) / [360 手机助手PC版](http://sj.360.cn/index.html)
+
+iOS 用户可下载 iTunes 或者某些国产助手。
+
+### 光驱刻录
+
+win 11 自带一般够用，现在光驱都淘汰了。
+
+虚拟光驱可用于加载 iso 文件到我的电脑，这里推荐 软媒魔方套件。
 
 ## 专业
 
@@ -426,18 +489,17 @@ pandoc 文档转换利器
 
 工具 系统 傲梅分区助手【win】 <https://www.disktool.cn/download.html>
 
+diskgenius
+
 工具 系统 微 PE 工具箱【win】<https://www.wepe.com.cn/>
 
-### 辅助工具
+### 系统辅助
 
 微软优化 Sysinternals【win】 <https://learn.microsoft.com/zh-cn/sysinternals/>
 
 AutoHotkey 【win】<https://www.autohotkey.com/>
 
 upx-4.0.2 用于辅助 ahk 进行加密
-
-MyKeymap-2.0 效率工具 | 咸鱼阿康
-<https://xianyukang.com/MyKeymap.html>
 
 ### 包管理器
 
@@ -453,7 +515,12 @@ sdkman
 
 ### nas 或软路由
 
+proxmox-ve_8.0-2
+
 ### U 盘引导
+
+微PE工具箱 - 超好用的装机维护工具。主打纯净
+<https://www.wepe.com.cn/>
 
 ### 操作系统
 
