@@ -16,10 +16,10 @@ updated: 2023-06-04 13:14:00
 
 3\. 微信读书 <https://sj.qq.com/appdetail/com.tencent.weread>
 
-4\. 果壳
-学知识呢
+4\. 正在寻找一个学知识的平台，也许是知乎吧，但广告太多
 
-5\. spotify
+5\. 普听音乐，由于搭配阿里云盘有新玩法，适合高级用户，普通用户还是选择 QQ 音乐吧。
+不是 spotify，因为必须开会员才好使
 
 6\. 得到
 
@@ -29,6 +29,9 @@ updated: 2023-06-04 13:14:00
 8\. 微信输入法
 
 ## 影音类
+
+主推 es 文件浏览器 也可称之为万能播放器，在搭配 nas 和本地资源的情况下。好用但是有广告
+<http://www.estrongs.com/>
 
 bilibili 无广告版 <https://github.com/lucinhu/bili_you/releases>
 or bilibili <https://sj.qq.com/appdetail/tv.danmaku.bili> 原版 还能创作
@@ -54,15 +57,17 @@ m1905 电影网 做的一般般
 快手 和抖音重了
 
 not
-es 文件浏览器 也可称之为万能播放器 好用但是有广告
+
 nPlayer 不能跳倍速
 vlc 在 webdav 方面自定义选项不足
 
 ## 工具类
 
 AdGuard 安全和去部分广告和去骚扰信息三重加成 <https://adguard.info/zh_cn/adguard-android/overview.html>
-Shadowsocks 魔法上网用
+
 豆包 好用的 ai 助手
+
+Shadowsocks 魔法上网用
 
 360 浏览器 <https://sj.qq.com/appdetail/com.qihoo.browser> 安全第一位，但是只要不要慌，陌生的东西一定不要点
 真实好友
@@ -73,6 +78,8 @@ Shadowsocks 魔法上网用
 wifi 万能密钥 偶尔可以来一下，不过现在确实能搜到的热点不多了
 
 or
+
+纯纯写作 很好用，但是收费就算了
 
 uc 浏览器 有广告但是免流呀
 
@@ -110,9 +117,7 @@ not
 百度地图关怀版
 
 滴滴出行 app / 小程序。可打车可搬家，货运搬家新用户还送券，还行。
-货拉拉搬家也还行，车比滴滴多
-
-当然也可借助 支付宝 / 云闪付 的交通功能
+货拉拉搬家也还行，车比滴滴多。当然也可借助 支付宝 / 云闪付 的交通功能
 
 not
 
@@ -138,6 +143,8 @@ not
 
 美团 <https://sj.qq.com/appdetail/com.sankuai.meituan>
 
+抖音的团购确实优惠
+
 永辉生活
 
 多点
@@ -160,8 +167,11 @@ not
 ## 旅行类
 
 12306 app / 小程序
+
 去哪儿 <https://sj.qq.com/appdetail/com.Qunar> 感觉还是去哪儿的票价便宜些 这里由于我没仔细阅读，导致取消订单后重下单付款了 120，长沙金井的老板真黑，我应该提前和他说我第二天早起会退房的，但我的主要损失还是被商诈和被电诈
+
 携程 <https://sj.qq.com/appdetail/ctrip.android.view>
+
 飞猪 <https://sj.qq.com/appdetail/com.taobao.trip>
 
 格林豪泰 比较当年办了一个金卡会员，虽然很久没用了，但可能有些优惠吧
@@ -172,8 +182,11 @@ not
 
 ## 社交类
 
-tim - 由于 qq 安装包太大 <https://sj.qq.com/appdetail/com.tencent.tim>
+**一句话，不要轻信陌生人的任何行为**
+
 微信 <https://sj.qq.com/appdetail/com.tencent.mm>
+
+tim - 由于 qq 安装包太大 <https://sj.qq.com/appdetail/com.tencent.tim>
 
 not
 
@@ -182,7 +195,7 @@ not
 
 ## 办公类
 
-天眼查 <https://sj.qq.com/appdetail/com.tianyancha.skyeye> 求职中可以反调公司，也适用于查询被服务公司，无良北京树妖国际无所遁形
+天眼查 <https://sj.qq.com/appdetail/com.tianyancha.skyeye> 求职中可以**反调公司**，也适用于查询被服务公司，**使无良北京树妖国际无所遁形**
 
 飞书 <https://sj.qq.com/appdetail/com.ss.android.lark>
 钉钉 <https://sj.qq.com/appdetail/com.alibaba.android.rimet>
@@ -200,6 +213,7 @@ QQ 邮箱 <https://sj.qq.com/appdetail/com.tencent.androidqqmail> 有广告
 
 微信听书 <https://sj.qq.com/appdetail/com.tencent.wehear>
 得到 <https://sj.qq.com/appdetail/com.luojilab.player>
+帆书 有时候可以捡些限免视频，开会员是不可能的
 极客时间 <https://sj.qq.com/appdetail/org.geekbang.geekTime>
 
 not
@@ -237,14 +251,15 @@ flomo 笔记 用不习惯
 
 ## 支付类
 
-一定不要网贷~~~，不要花费超出能力的钱
+**一定不要网贷~**~~，不要花费超出能力的钱
 支付宝 <https://sj.qq.com/appdetail/com.eg.android.AlipayGphone>
 云闪付 <https://sj.qq.com/appdetail/com.unionpay> 云闪付持续有优惠，信用卡还款免手续费
+
+翼支付 因为活动期间送代金券
 
 not
 
 数字人民币 现放开了注册，但是生态还不完善，然后 170 的收集也注册不了，现在我是用 153 的号码进行注册的。
-翼支付 因为活动期间送代金券
 
 ## 关注中
 
