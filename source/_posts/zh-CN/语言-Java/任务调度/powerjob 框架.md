@@ -9,6 +9,16 @@ tags:
 - Java
 ---
 
+PowerJob
+<http://www.powerjob.tech/>
+
+PowerJob 产品手册
+<https://www.yuque.com/powerjob/guidence>
+
+appName 等于一个业务集群，也就是实际的一个 Java 项目。
+
+powerjob-server 调度服务器
+
 ## 问题
 
 PowerJob连接Postgres数据库出现org.springframework.orm.jpa.JpaSystemException: Unable to access lob stream; nested exception is org.hibernate.HibernateException: Unable to access lob stream · Issue #153 · PowerJob/PowerJob

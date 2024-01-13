@@ -252,7 +252,7 @@ METHOD 参数设置
 
 ### PgSQL 设置远程连接
 
-1\. 修改 `/data/pg_hba.conf`，将 0.0.0.0/0  进行开启。
+1\. 修改 `/data/pg_hba.conf`，将 0.0.0.0/0  进行开启。  /etc/postgresql/12/main/pg_hba.conf
 
 详细释义如下：
 
@@ -266,7 +266,9 @@ host    all    all    0.0.0.0/0        md5 --/0 代表所有 ip 地址都允许�
 
 2\. 修改监听的 IP 和端口。
 
-修改 `postgresql.conf`。找到以下内容：
+修改 `/etc/postgresql/12/main/postgresql.conf`。
+
+找到以下内容：
 
 ```sh
 listen_addresses = 'localhost' # what IP address(es) to listen on;
@@ -279,6 +281,12 @@ listen_addresses = '*' # what IP address(es) to listen on;
 ```
 
 3\. 重启服务
+
+### 修改密码
+
+将密码修改为 postgres
+
+alter user postgres with password 'postgres';
 
 ## 导入和导出功能
 

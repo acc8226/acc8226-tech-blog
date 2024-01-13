@@ -51,7 +51,22 @@ https://gitee.com/api/v5/user?access_token=bd7a1d253264d39be9cacde608afe63e
 
 改成 code 才算优秀且足够通用
 
+http://127.0.0.1:8443/test/callback/ye?code=2rS%2B9foJFAuv54cVWeekaT0Ji%2BRyjhc5DTptYiHGmC3a9VMXzdyRKvAIq1BwevgE
+
 http://127.0.0.1:8443/oauth/callback/ye?code=2rS%2B9foJFAuv54cVWeekaT0Ji%2BRyjhc5DTptYiHGmC3a9VMXzdyRKvAIq1BwevgE
+
+
+
+
+
+
+
+http://127.0.0.1:8080/yhOauth/callback/ye?code=2rS%2B9foJFAuv54cVWeekaT0Ji%2BRyjhc5DTptYiHGmC3a9VMXzdyRKvAIq1BwevgE
+
+
+
+
+
 
 内部是
 
@@ -88,3 +103,89 @@ http://localhost:8080/login?loginError=User+not+found%3A+acc8226%40qq.com 用户
 http://124.207.66.131:7055/login?loginError=User+not+found%3A+acc8226%40qq.com
 
 加一些限制条件，只能是三方登录，如果该邮箱未注册则跳转到注册页面
+
+
+
+http://wlw.workease.wang:9002/login/oauth2/code/?code=c19Sop1F7NUBXgoDn91_OwZ9K8Pju_dB0O_27H2OvO40B
+
+
+http://wlw.workease.wang:9002/login/oauth2/code/?code=c19Sop1F7NUBXgoDn91_OwZ9K8Pju_dB0O_27H2OvO40B&state=vksQpPfrD__Q0ly1GXBWSxGmEg5WtjVsKaHawUjzNbg%3D
+
+
+
+
+
+https://dev-qh15x1ndnqql7epx.us.auth0.com/userinfo
+
+
+
+select * from oauth2_domain
+where oauth2_params_id = 'a69fa160-9802-11ee-9492-e5a6dee1c59b'
+
+和
+
+select * from oauth2_registration
+where id = 'a6a28790-9802-11ee-9492-e5a6dee1c59b'
+
+
+底层
+
+http://localhost:8080/api/oauth2/loginProcessingUrl
+将返回
+http://localhost:8080/login/oauth2/code/
+
+
+
+
+在页面上点击
+
+http://localhost:8080/oauth2/authorization/a6a28790-9802-11ee-9492-e5a6dee1c59b
+
+将 302 重定向到
+
+http://119.3.255.138/api/mmmmeiyoune?response_type=code&client_id=woshi&scope=abc&state=_50w4dPQfd81y8sjg1BS0CyVpirF13Cyr9soxIp9SD4%3D&redirect_uri=http://localhost:8080/login/oauth2/code/
+
+如果登录成功讲跳转到
+
+http://localhost:8080/login/oauth2/code/?code=c19Sop1F7NUBXgoDn91_OwZ9K8Pju_dB0O_27H2OvO40B&state=vksQpPfrD__Q0ly1GXBWSxGmEg5WtjVsKaHawUjzNbg%3D
+
+这时系统拿到 code 去换取 access_token，接着用 access_token 换取用户信息，然后 302 重定向登录，关键字有 accessToken 和 refreshToken
+
+http://wlw.workease.wang:9002/?accessToken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZ3JpY3VsdHVyZWN1c3RvbWVyQG1mb3guY24iLCJzY29wZXMiOlsiVEVOQU5UX0FETUlOIl0sInVzZXJJZCI6ImY0N2JlMDcwLTk1NzctMTFlZS1iYjZkLTdkYTA5NmJlZDFhZCIsImVuYWJsZWQiOnRydWUsImlzUHVibGljIjpmYWxzZSwidGVuYW50SWQiOiIwZjE2YzZlMC1lOTRjLTExZWMtYjg0Ny0wZGU4OTkxZGZmZTMiLCJjdXN0b21lcklkIjoiMTM4MTQwMDAtMWRkMi0xMWIyLTgwODAtODA4MDgwODA4MDgwIiwiaXNzIjoidGhpbmdzeC5pbyIsImlhdCI6MTcwMjAxNjA5MywiZXhwIjoxNzAyMDI1MDkzfQ.877zCCBAYfdBhBu4hw3ZVABqLJxebKQGldx-bNP56khK6hWLEcOWROBAH3Vz-arBAdSyLbx46JH6cCl-6RS7lw&refreshToken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZ3JpY3VsdHVyZWN1c3RvbWVyQG1mb3guY24iLCJzY29wZXMiOlsiUkVGUkVTSF9UT0tFTiJdLCJ1c2VySWQiOiJmNDdiZTA3MC05NTc3LTExZWUtYmI2ZC03ZGEwOTZiZWQxYWQiLCJpc1B1YmxpYyI6ZmFsc2UsImlzcyI6InRoaW5nc3guaW8iLCJqdGkiOiI0MDJhNjQ4Yi1iNDNkLTQzNTgtOWI4OC00ZTRkNzVhZThlZmEiLCJpYXQiOjE3MDIwMTYwOTMsImV4cCI6MTcwMjYyMDg5M30.ibb6AdetkmnTkhQ98VvefSq2MrvzW1jNC5m4WIpX4qJbHbCwOekj1fohRpVusyf1S57bFFYj6IPQadoVzgpBSg
+
+
+
+
+http://119.3.255.138/api/mmmmeiyoune?response_type=code&client_id=woshi&scope=abc&state=pcGNfXem5BF7G-mDvaOfxb7yvbqISDK_8i_VWJmoYU0%3D&redirect_uri=http://localhost:8080/login/oauth2/code/
+
+
+http://119.3.255.138/api/mmmmeiyoune?response_type=code&client_id=woshi&scope=abc&state=oIdYIqR5P7tCWrViVPZZR0Fqj6plkBo6ZNA5NLtyByA%3D&redirect_uri=http://localhost:8080/login/oauth2/code/
+
+
+
+
+
+
+
+
+
+
+http://localhost:8080/oauth2/authorization/a26d75e0-9b22-11ee-8c3e-fd729a0dc34b
+
+http://119.3.255.138/api/mmmmeiyoune?response_type=code&client_id=myclientId&scope=abc&state=vwsHVUR1X_CM836rz9REvxgKHPcRpEdXAMRHpTGjrUQ%3D&redirect_uri=http://localhost:8080/login/oauth2/code/
+
+http://localhost:8080/login/oauth2/code/?code=IdoxGNxYGfnWGeoufVKcL7sSsP3WOqRvssvLuUFxr69O9&state=_8cgTZbIrK_1F-ZkLEgnerojSH0AC-e9OdPhakyL9N8%3D
+
+关于免密登录还需要你联调两个页面，我先跟你说下。
+
+如果从业务平台跳转到咱们物联网平台，会出现两种情况。我参考了 tb 关于三方登录的已有实现，一共要考虑两种情况。
+
+一种是业务平台存在的账号在我这边不存在，形如 http://wlw.workease.wang:9002/login?loginError=xxx 这种形式,需要在页面上有一个提示.
+
+举例： http://wlw.workease.wang:9002/login?loginError=该用户不存在
+
+另一种是我会返给你 accessToken 和 refreshToken ，形如 http://wlw.workease.wang:9002/?accessToken=xxx&refreshToken=yyy，要求平台就能正常跳转并登录。
+
+举例：http://wlw.workease.wang:9002/?accessToken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhY2M4MjI2QGdtYWlsLmNvbSIsInNjb3BlcyI6WyJURU5BTlRfQURNSU4iXSwidXNlcklkIjoiOTNkM2UwYzAtOTU3Ni0xMWVlLWJiNmQtN2RhMDk2YmVkMWFkIiwiZW5hYmxlZCI6dHJ1ZSwiaXNQdWJsaWMiOmZhbHNlLCJ0ZW5hbnRJZCI6IjkzYmMzYTEwLTk1NzYtMTFlZS1iYjZkLTdkYTA5NmJlZDFhZCIsImN1c3RvbWVySWQiOiIxMzgxNDAwMC0xZGQyLTExYjItODA4MC04MDgwODA4MDgwODAiLCJpc3MiOiJ0aGluZ3N4LmlvIiwiaWF0IjoxNzAyODg5NDg5LCJleHAiOjE3MDI4OTg0ODl9.lj1uCKXNxT3mJK5XfuPaP9jxgPkfWyd940Zt22sgPk8ddiBwkxVPtomlyDdeZIhYLPRCYdleUOUPrUUnkt33Ew&refreshToken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhY2M4MjI2QGdtYWlsLmNvbSIsInNjb3BlcyI6WyJSRUZSRVNIX1RPS0VOIl0sInVzZXJJZCI6IjkzZDNlMGMwLTk1NzYtMTFlZS1iYjZkLTdkYTA5NmJlZDFhZCIsImlzUHVibGljIjpmYWxzZSwiaXNzIjoidGhpbmdzeC5pbyIsImp0aSI6IjBiYTM2NTc3LWRkYmQtNGE4My1iN2Q3LWVlYjEzZTg3MDViZiIsImlhdCI6MTcwMjg4OTQ4OSwiZXhwIjoxNzAzNDk0Mjg5fQ.63ZT-0IlwNBNPsr3PkiYSMQRFIAJutftQpiKB4nEXE2QzsQ3Sk50UgrsKnnwKrfbhWDn8ZITuZNIxfOMwyVZAw
+
+所以，你看你的页面需要怎么改造。

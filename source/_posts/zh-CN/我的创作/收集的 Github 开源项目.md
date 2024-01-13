@@ -21,8 +21,6 @@ https://github.com/bitwarden/mobile/releases/download/v2023.9.1/com.x8bit.bitwar
 bitwarden-clients <https://github.com/bitwarden/clients>
 
 https://github.com/bitwarden/clients/releases/download/desktop-v2023.10.1/Bitwarden-Portable-2023.10.1.exe
-https://github.com/bitwarden/clients/releases/download/desktop-v2023.10.0/Bitwarden-Portable-2023.10.0.exe
-https://github.com/bitwarden/clients/releases/download/desktop-v2023.10.0/Bitwarden-Portable-2023.10.0.exe
 
 shadowsocks/shadowsocks-android: A shadowsocks client for Android
 https://github.com/shadowsocks/shadowsocks-android

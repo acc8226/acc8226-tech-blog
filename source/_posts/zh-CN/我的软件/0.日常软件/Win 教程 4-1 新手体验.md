@@ -48,6 +48,56 @@ Windows 什么是小组件？
 
 通过官网或者光盘下载驱动后安装即可。
 
+### 按键的英文
+
+` backtick
+~ tilde
+
+`! exclamation mark`
+`@ at`
+`# pound / hash / hashtag`
+`$ dollar sign`
+`% percent`
+
+^ caret
+& ampersand, and, reference, ref
+`*` asterisk, multiply, star, pointer 星号
+() brakets, parenthesis 单数形式 parentheses 复数形式 圆括号
+( open parenthesis, open paren，open bracket 左圆括号
+) close parenthesis, close paren，close bracket 右圆括号
+
+`- hyphen` 连字符
+`_ underscore` 下划线
+
+`= equals`
+`+ plus sign`
+
+[] square brackets
+[ open bracket 左方括号
+] close bracket 右方括号
+
+{}
+{ open brace, open curly 左花括号
+} close brace, close curly 右花括号
+
+\ backslash / backward slash反斜线
+| vertical bar, vertical virgule
+
+; semicolon
+: colon
+
+' single quote
+" double quote
+
+, comma 逗号
+< less than
+
+. dot / period 句号
+`> greater than`
+
+/ slash, divide, oblique 斜线，斜杠，除号
+? question mark
+
 ## 遇到过的问题
 
 ### win11 打开文件夹卡顿 win11 打开文件夹很慢的解决办法

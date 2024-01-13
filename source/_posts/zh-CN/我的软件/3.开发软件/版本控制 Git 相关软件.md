@@ -34,7 +34,7 @@ plink 介绍：plink 可以让我们直接在命令行制定好命令，然后�
 
 1. 在 “启动” 菜单中打开“启动”目录
 2. 右键空白处，选择新建快捷方式
-3. 选择 pageant 的位置，并按填入 ppk 的位置，例如 `"C:\Program Files\TortoiseGit\bin\pageant.exe" C:\Users\hairong\.ssh\id_rsa.ppk`
+3. 选择 pageant 的位置，并按填入 ppk 的位置，例如 `"C:\Program Files\TortoiseGit\bin\pageant.exe" C:\Users\zhangsan\.ssh\id_rsa.ppk`
 
 这样系统每次启动后就会自动加载 ppk 了
 

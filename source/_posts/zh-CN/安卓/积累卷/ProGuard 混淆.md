@@ -14,7 +14,7 @@ ProGuard 技术的功能概括为以下 4 项：
 1.压缩（shrinks）  ：检查并移除代码中无用的类，字段，方法，属性。
 2.优化（optimizes）：对字节码进行优化，移除无用的指令。
 3.混淆（obfuscates）：使用a，b，c，d等简短而无意义的名称，对类，字段和方法进行重名，这样即使代码被逆向工程，对方也比较难以读懂。
-4.预检测（Preveirfy）：在java平台上对处理后的代码进行再次检测。
+4.预检测（Preveirfy）：在 java 平台上对处理后的代码进行再次检测。
 
 ## 详细介绍
 
@@ -57,7 +57,7 @@ ProGuard 技术的功能概括为以下 4 项：
 4. 预检测
 -dontpreverify
 
-### 执行ProGuard后会生成的文件
+### 执行 ProGuard 后会生成的文件
 
 1）dump.txt          描述 apk 文件里的所以类的内部结构
 2）mapping.txt     列出了原始的和混淆后的类、方法和属性的对应关系
@@ -206,7 +206,7 @@ ProGuard 技术的功能概括为以下 4 项：
     @android.support.annotation.Keep <init>(...);
 }
 
-# 对于带有回调函数onXXEvent的，不能被混淆
+# 对于带有回调函数 onXXEvent 的，不能被混淆
 -keepclassmembers class * {
     void *(**On*Event);}
 -keepclassmembers class * {

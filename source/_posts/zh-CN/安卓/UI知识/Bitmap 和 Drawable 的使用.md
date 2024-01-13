@@ -56,7 +56,7 @@ public static int calculateInSampleSize(
 }
 ```
 
-> * 设置 [inSampleSize](http://developer.android.com/reference/android/graphics/BitmapFactory.Options.html#inSampleSize) 为2对于decoder会更加的有效率，然而，如果你打算把调整过大小的图片缓存到磁盘上，设置为2也能够很有效的节省缓存的空间.
+> * 设置 [inSampleSize](http://developer.android.com/reference/android/graphics/BitmapFactory.Options.html#inSampleSize) 为 2 对于 decoder会更加的有效率，然而，如果你打算把调整过大小的图片缓存到磁盘上，设置为2也能够很有效的节省缓存的空间.
 > * 首先需要设置[inJustDecodeBounds](http://developer.android.com/reference/android/graphics/BitmapFactory.Options.html#inJustDecodeBounds) 为`true`, 把options的值传递过来，然后使用[inSampleSize](http://developer.android.com/reference/android/graphics/BitmapFactory.Options.html#inSampleSize)`的值并设置[inJustDecodeBounds](http://developer.android.com/reference/android/graphics/BitmapFactory.Options.html#inJustDecodeBounds) 为false 重新Decode一遍。
 
 Bitmap 在内存当中占用的大小其实取决于：
@@ -68,7 +68,7 @@ Bitmap 在内存当中占用的大小其实取决于：
 ### recycle()方法
 
 从 3.0 开始，Bitmap 像素数据和 Bitmap 对象一起存放在 Dalvik 堆中，而在 3.0 之前，Bitmap 像素数据存放在 Native 内存中。
-所以，在3.0之前，Bitmap 像素数据在Nativie内存的释放是不确定的，容易内存溢出而Crash，官方强烈建议调用recycle()（当然是在确定不需要的时候）；而在3.0之后，则无此要求。
+所以，在3.0之前，Bitmap 像素数据在 Nativie 内存的释放是不确定的，容易内存溢出而Crash，官方强烈建议调用recycle()（当然是在确定不需要的时候）；而在 3.0 之后，则无此要求。
 
 遇到过 Bitmap 的 recycle 后 Canvas: trying to use a recycled bitmap android.graphics.Bitmap 问题.
 解决办法:

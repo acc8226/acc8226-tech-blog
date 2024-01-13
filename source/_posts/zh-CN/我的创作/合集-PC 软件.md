@@ -5,9 +5,9 @@ updated: 2023-08-29 23:34:00
 categories: 我的创作
 ---
 
-各类软件收藏。
+注：以下开发用软件, 谨代表个人观点。
 
-说明：跨平台 + 特定系统应该可以满足大部分使用场景。
+说明：尽量选择跨平台在搭配特定系统特有软件即可满足大部分使用场景。
 
 ## 日常
 
@@ -15,9 +15,9 @@ categories: 我的创作
 
 #### 电脑管家
 
-【mac】腾讯柠檬清理<https://lemon.qq.com/>
-
 【win】火绒安全【安装版】<https://www.huorong.cn/>
+
+and
 
 【win】微软电脑管家【安装版】<https://pcmanager.microsoft.com/zh-cn>
 
@@ -27,70 +27,77 @@ not
 
 【win】360 安全卫士【安装版】<https://weishi.360.cn/>
 
+- - -
+
+【mac】腾讯柠檬清理<https://lemon.qq.com/>
+
 #### 浏览器类
 
-【linux】360 安全浏览器【首选】
-<https://browser.360.net/gc/index.html?src=se>
-
-【win】360 极速浏览器【安装版】【首选】
+【win mac】【安装版】360 极速浏览器由于有难得的鼠标悬停切换标签功能
 <https://browser.360.cn/ee/>
 
-【全平台】Firefox【备选】
-<http://www.firefox.com.cn/>
+not
 
-【全平台】Google Chrome【备选】
-<https://www.google.cn/chrome/>
+**Firefox 内核系列**
 
-【全平台】Microsoft Edge【备选】
-<https://www.microsoft.com/zh-cn/edge?form=MA13FJ&ch>
-
-【全平台】优化版浏览器合集【方案】
-<https://www.runningcheese.com/>
-
-**Firefox 系列**
+【全平台】Firefox <http://www.firefox.com.cn/>
 
 Tor 浏览器 <https://www.torproject.org/zh-CN/download/>
 
 Waterfox 浏览器 <https://www.waterfox.net/en-US/download/>
 
-**Chrome 系列**
+**Chrome 内核系列**
+
+【全平台】Google Chrome <https://www.google.cn/chrome/>
 
 Vivaldi 浏览器 | 强大的个性化和私密化的网络浏览器 <https://vivaldi.com/zh-hans/>
 
+【全平台】Microsoft Edge
+<https://www.microsoft.com/zh-cn/edge?form=MA13FJ&ch>
+
+其他：[【全平台】优化版浏览器合集【方案】](https://www.runningcheese.com/)
+
+- - -
+
+【linux】360 安全浏览器
+<https://browser.360.net/gc/index.html?src=se>
+
 #### 工具 压缩
 
-【win】360压缩【安装版】【首选】
+【win】360压缩【安装版】
 <https://yasuo.360.cn/>
 
-【win】7-Zip【备选】
+or
 
-7-Zip 官方中文网站
-<https://sparanoid.com/lab/7z/>
+【win】7-Zip
 
-南大镜像站-NJU Mirror <https://mirror.nju.edu.cn/7-zip/>
+[7-Zip 官方中文网站](https://sparanoid.com/lab/7z/) | [7-Zip 南大镜像站-NJU Mirror](https://mirror.nju.edu.cn/7-zip/)
 
-7z2301-x64.exe 表示 64 位安装包
-7z2301.exe 表示 32 位安装包
+注：其中 7z2301-x64.exe 表示 64 位安装包，7z2301.exe 表示 32 位安装包。
 
-The Unarchiver | Top Free Unarchiving Software for macOS
+- - -
+
+【mac】The Unarchiver
 <https://theunarchiver.com/>
+
+- - -
 
 【mac】The Unarchiver【App Store版】 <https://apps.apple.com/cn/app/the-unarchiver/id425424353>
 or 安装包 <https://dl.devmate.com/com.macpaw.site.theunarchiver/TheUnarchiver.dmg>
 
 #### 工具 鼠标手势
 
-WGestures 2 鼠标手势 | YingDev
+【win mac】WGestures 2 鼠标手势 | YingDev
 <https://www.yingdev.com/projects/wgestures2>
 
 #### 输入法
 
-微信输入法
+【win mac】微信输入法
 <https://z.weixin.qq.com/>
 
 #### 密码管理
 
-Bitwarden Open Source Password Manager | Bitwarden
+【全平台】Bitwarden Open Source Password Manager | Bitwarden
 <https://bitwarden.com/>
 
 Releases · bitwarden/mobile
@@ -104,9 +111,13 @@ Android 客户端
 
 #### 网盘类
 
-阿里云盘 <https://www.aliyundrive.com/drive/>
+【win mac】阿里云盘 <https://www.aliyundrive.com/drive/>
 
-【补充】坚果云 <https://www.jianguoyun.com/s/downloads>
+and
+
+【全平台】坚果云 <https://www.jianguoyun.com/s/downloads>
+
+or
 
 【补充】【win mac】天翼云盘 <https://cloud.189.cn/web/static/download-client/index.html>
 
@@ -114,49 +125,47 @@ Android 客户端
 
 #### 截图
 
-【win】PixPin【首选】 <https://pixpinapp.com/> mac 版即将推出
+【win】PixPin <https://pixpinapp.com/> mac 版即将推出
 <https://download.pixpinapp.com/PixPin_1.3.1.0.exe>
-
-【win mac】Snipaste【备选】 <https://zh.snipaste.com/>
 
 or
 
-ShareX-截图 <https://getsharex.com/>
-
-截图 FSCapture 备用
+【win mac】Snipaste <https://zh.snipaste.com/>
 
 not
 
-picpick_portable 说不上哪不好
+【win】【新版收费】 FSCapture
+
+【win】picpick_portable 说不上哪不好
 
 #### 下载
 
-【all】motrix【首选】 <https://motrix.app/zh-CN/> 颜值高。支持下载 HTTP、FTP、BT、磁力链接等资源
+【全平台】motrix【首选】 <https://motrix.app/zh-CN/> 颜值高。支持下载 HTTP、FTP、BT、磁力链接等资源。即使 Github 资源也不在话下。
 
-和
+and
 
-【win linux】文件蜈蚣 <http://www.filecxx.com/zh_CN/index.html> 免费版功能也够，提供插件可以下载网页中的视频
+【win linux】文件蜈蚣 <http://www.filecxx.com/zh_CN/index.html> 免费版功能也够，提供插件可以嗅探网页中的视频
 
-- - -
+and
 
-视频下载工具 lux
+【全平台】视频下载工具 lux
 <https://github.com/iawia002/lux/releases/download/v0.22.0/lux_0.22.0_Windows_x86_64.zip>
 
 搭配 ffmpeg
 <https://www.gyan.dev/ffmpeg/builds/packages/ffmpeg-6.1.1-essentials_build.7z>
 
-和
+or
 
-猫抓(cat catch) 浏览器拓展- 猫抓(cat catch)文档
+【浏览器拓展】猫抓(cat catch) - 猫抓(cat catch)文档
 <https://o2bmm.gitbook.io/cat-catch/>
 
 not
 
-VidJuice UniTube 可以图形化下载视频和音频很好用，就是付费啦
+【win】VidJuice UniTube 可以图形化下载视频和音频很好用，就是付费啦
 
 【win mac】迅雷<https://dl.xunlei.com/> 有广告
 
-qbittorrent_4.5.5 不好用
+【win】qbittorrent_4.5.5 不好用
 
 #### 护眼
 
@@ -164,20 +173,23 @@ qbittorrent_4.5.5 不好用
 
 EyesGuard 定时提醒眼睛休息
 ~~由于作者说微软商店不再提供更新~~
-还是去 github 下载最新版本 <https://github.com/avestura/EyesGuard/releases/>
+还是去 github 下载最新版本吧 <https://github.com/avestura/EyesGuard/releases/>
 
-#### 图像处理
-
-GIMP 【PS 的替代品且免费】 <https://www.gimp.org/>
-
-和
+#### 看图
 
 jpegview 特点是小巧
 <https://github.com/sylikc/jpegview/>
 
+#### 图像处理
+
+【win】【轻量】ShareX <https://getsharex.com/> 也可以贴图，不过我更当是一个图片编辑器
+[ShareX-15.0.0-portable 下载](https://github.com/ShareX/ShareX/releases/download/v15.0.0/ShareX-15.0.0-portable.zip)
+
+【全平台】【重量】GIMP 【PS 的替代品且免费】 <https://www.gimp.org/>
+
 or
 
-美图秀秀【免费】
+【免费】美图秀秀的网页版
 
 not
 
@@ -194,6 +206,10 @@ PS 【收费软件】
 MyKeymap-2.0 效率工具 | 咸鱼阿康
 <https://xianyukang.com/MyKeymap.html>
 GitHub 地址 <https://github.com/xianyukang/MyKeymap>
+
+not
+
+uTools 感觉有点重
 
 ### 办公类
 
@@ -251,7 +267,7 @@ Xmind思维导图 <https://xmind.cn/>
 
 【win mac 主要】QQ音乐【在线】QQ音乐,音乐你的生活! <https://y.qq.com/download/index.html>
 
-【备用】方格音乐 由于可以下载歌曲呢
+【备用】方格音乐 由于可以下载歌曲
 <http://morin.vin/>
 
 【win】MusicPlayer2【本地】MusicPlayer2 <https://github.com/zhongyang219/MusicPlayer2>
@@ -519,23 +535,29 @@ proxmox-ve_8.0-2
 
 ### U 盘引导
 
-微PE工具箱 - 超好用的装机维护工具。主打纯净
+微 PE 工具箱 - 超好用的装机维护工具。主打纯净
 <https://www.wepe.com.cn/>
 
 ### 操作系统
 
-Operating system images – Raspberry Pi
+乌班图 ubuntu-23.10.1-desktop-amd64.iso
+<https://releases.ubuntu.com/23.10.1/ubuntu-23.10.1-desktop-amd64.iso>
+
+树莓派 Raspberry Pi
 <https://www.raspberrypi.com/software/operating-systems/>
+
+深度操作系统 deepin-desktop-community-20.9-amd64.iso
+<https://mirrors.tuna.tsinghua.edu.cn/deepin-cd/20.9/deepin-desktop-community-20.9-amd64.iso>
 
 ## 游戏
 
-下載 Windows 與 Mac 版本的 Battle.net | Battle.net
+战网 | Battle.net
 <https://download.battle.net/zh-tw/desktop>
 
-雷神网游加速器-专线加速游戏,按分钟计费可暂停
+雷神网游加速器-专线加速游戏，按分钟计费可暂停
 <https://www.leigod.com/>
 
-迅游网游加速器-为网络游戏加速护航
+迅游网游加速器
 <https://www.xunyou.com/index.shtml>
 
 ## 关注中

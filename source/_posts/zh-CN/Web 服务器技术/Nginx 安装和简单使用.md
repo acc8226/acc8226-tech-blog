@@ -230,6 +230,17 @@ server {
 
 再 `nginx -s reload` 即可。[Nginx](http://www.nowamagic.net/academy/tag/Nginx) 的 301 配置还是很简单的。
 
+### alias 用法
+
+豆包 ai 说这货很灵活，举例：
+
+```conf
+ location / {
+     alias /path/to/dir/of/docs;
+     index index.html index.htm;
+ }
+```
+
 ## 记录
 
 ### 如何将 nginx 添加到全局变量中（环境变量）
