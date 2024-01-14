@@ -6,27 +6,54 @@ updated: 2023-06-04 13:14:00
 
 ## 必备
 
-0\. 国家反诈中心 <https://sj.qq.com/appdetail/com.hicorenational.antifraud>
+### 手机管家
 
-1\. 安全 认证 Google Authenticator - 为安全绝对不过分
+安卓自带的就行。否则可以选择腾讯和 360 两家瓜分了大部分用户。
+
+iOS 用户则必须安装其中一个，防诈骗。骗子和一些无量商家都盯着人们口袋里的钱。
+
+最终，我添加了[国家反诈中心 app](https://sj.qq.com/appdetail/com.hicorenational.antifraud)实乃装机必备！！！
+
+### 安全 认证
+
+Google Authenticator - 为安全绝对不过分
 <https://google-authenticator.en.softonic.com/android>
 
-2\. 密码 bitwarden - 好用的密码管理器  
+### 密码管理
+
+密码 bitwarden - 好用的密码管理器  
 <https://github.com/bitwarden/mobile/releases>
 
-3\. 微信读书 <https://sj.qq.com/appdetail/com.tencent.weread>
+### 微信读书
 
-4\. 正在寻找一个学知识的平台，也许是知乎吧，但广告太多
+活动玩法多。
 
-5\. 普听音乐，由于搭配阿里云盘有新玩法，适合高级用户，普通用户还是选择 QQ 音乐吧。
+[下载地址](https://sj.qq.com/appdetail/com.tencent.weread)
+
+### 坚果云同步
+
+属于同步文档小帮手了
+
+### 普听音乐
+
+由于搭配阿里云盘有新玩法，适合高级用户，普通用户还是选择 QQ 音乐吧。
 不是 spotify，因为必须开会员才好使
 
-6\. 得到
+### 得到
 
-7\. 倒数日
+### 倒数日
+
 多端同步，除了苹果端、安卓端还有手表端。
 
-8\. 微信输入法
+### 微信输入法
+
+其中的跨设备粘贴真的绝了。否则还是下面三家。
+
+android
+由于现在手机预装已经很不错了。基本是由搜狗或百度、讯飞三家提供。
+
+iOS
+自带的也不错，否则依旧上面三家。
 
 ## 影音类
 
@@ -37,13 +64,16 @@ bilibili 无广告版 <https://github.com/lucinhu/bili_you/releases>
 or bilibili <https://sj.qq.com/appdetail/tv.danmaku.bili> 原版 还能创作
 or bilibili 国际版 因为清爽呀
 
+QQ 音乐 <https://sj.qq.com/appdetail/com.tencent.qqmusic> 比某抑云的广告少太多，资源也算丰富
+
 西瓜视频 无广告 还能创作
+
+慕课网 主打 IT 课程，且有一部分免费资源可以离线下载
 
 not
 
 reex 的使用： url 可以填写微 `http://xx.xx.xx.xxx:5244/dav` 然后用户名 和 密码填写 alist 的信息即可。但是一段时间没更新了，然后官网我也没找到 <https://www.aliyundrive.com/s/cf3p39UXkxa/folder/63e8e0027b7473f82cc64bbb9be0a34794c32c07>
 
-QQ 音乐 <https://sj.qq.com/appdetail/com.tencent.qqmusic> 有广告
 洛雪音乐助手 废了
 抖音 <https://sj.qq.com/appdetail/com.ss.android.ugc.aweme> 有广告
 网易云 <https://sj.qq.com/appdetail/com.netease.cloudmusic> 和上面那位重复了且歌没这么多，且体验稍微差点
@@ -54,7 +84,7 @@ m1905 电影网 做的一般般
 爱奇艺 有广告呀
 优酷
 腾讯视频
-快手 和抖音重了
+快手 不太喜欢用
 
 not
 
@@ -143,7 +173,7 @@ not
 
 美团 <https://sj.qq.com/appdetail/com.sankuai.meituan>
 
-抖音的团购确实优惠
+抖音的团购确实优惠，属于超级 app，生活、超市、优惠、直播、片段都有
 
 永辉生活
 
@@ -216,26 +246,24 @@ QQ 邮箱 <https://sj.qq.com/appdetail/com.tencent.androidqqmail> 有广告
 帆书 有时候可以捡些限免视频，开会员是不可能的
 极客时间 <https://sj.qq.com/appdetail/org.geekbang.geekTime>
 
+maybe
+
+京东读书 <https://sj.qq.com/appdetail/com.jd.app.reader> 送了影响力 和 乌合之众几本书，可以看一段时间
+番茄免费小说 有的想看的书可以免费离线下载，很好，很适合离线用
+
 not
 
-知乎 <https://sj.qq.com/appdetail/com.zhihu.android>
-学知识
-
-今日热榜 App 下载
-<https://tophub.today/app>
-
-除了必备提到的微信读书就属今日头条了，但是安卓版的有广告。 <https://sj.qq.com/appdetail/com.ss.android.article.news> 曾经最爱，但是广告劝退了我，iPhone 付费版的倒是可以考虑。我一般很少关注外界，这得改呀，央视 315 这种节目就很好
-
-京东读书 <https://sj.qq.com/appdetail/com.jd.app.reader>
-微软 start 不好用
-多看 书太贵
-百度阅读 没起来
-QQ 阅读
-起点读数 有独家
-七猫
-
-少年得到 太幼稚
-凤凰 FM 偶尔闪退呀 这个 api 到时可以研究，属于抓包资源
+* 知乎 <https://sj.qq.com/appdetail/com.zhihu.android> 广告多
+* 今日热榜 App <https://tophub.today/app> 资源感觉不太丰富
+* 今日头条了，安卓版的有广告。 <https://sj.qq.com/appdetail/com.ss.android.article.news> 曾经最爱，但是广告劝退了我，iPhone * 付费版的倒是可以考虑。我一般很少关注外界，这得改呀，央视 315 这种节目就很好
+* 微软 start 不好用
+* 多看 书太贵
+* 百度阅读 没起来
+* QQ 阅读
+* 起点读数 有独家
+* 七猫
+* 少年得到 太幼稚
+* 凤凰 FM 偶尔闪退
 
 ## 云同步类
 

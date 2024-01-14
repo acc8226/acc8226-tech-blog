@@ -7,53 +7,26 @@ categories:
   - 日常软件
 ---
 
-拿到新电脑后肯定需要安装一些常用软件，于是有了此文。
+## 装机必备
 
-记住安全永远是第一要务。下载软件也尽量从官网下载，这样更安全，也避免从其他渠道下载到恶意软件。
+普通用户可以：[【win】腾讯电脑管家【安装版】](https://guanjia.qq.com/) 或 [【win】360 安全卫士【安装版】](https://weishi.360.cn/)二选一
+进阶玩家我推荐[【win】火绒安全【安装版】](https://www.huorong.cn/) + [【win】微软电脑管家【安装版】](https://pcmanager.microsoft.com/zh-cn)
 
-## 电脑管家
+【win】【安装版】360 极速浏览器。安全防护永远要放在第一位，且有难得的鼠标悬停切换标签功能。
+<https://browser.360.cn/ee/>
 
-普通用户可以二选一：腾讯电脑管家和 360安全卫士。
+[【win】360压缩【安装版】](http://yasuo.360.cn/), 永久免费, 无广告弹窗
 
-进阶玩家我推荐火绒 + 微软电脑管家。
-
-## 浏览器
-
-安全防护永远要放在第一位，这里推荐 [360 极速浏览器](https://browser.360.cn/ee/index.html)
-
-吹爆其中的鼠标手势和鼠标悬停玩法，同时支持书签云端同步和丰富的 chrome 拓展。
-
-鼠标手势：长按鼠标右键，手势即动作
-
-鼠标悬停：在标签上滚动鼠标滚轮，可自动激活该标签
-
-## 解压缩软件
-
-推荐 [360 压缩](http://yasuo.360.cn/), 永久免费, 无广告弹窗
-
-## 工具 鼠标手势
-
-WGestures 1 免费
-
-WGestures 2 鼠标手势收费
+【win mac】【收费】WGestures 2 鼠标手势 | YingDev
 <https://www.yingdev.com/projects/wgestures2>
 
-## 输入法
-
-如果你 Win11 自带的输入法也不错，当你用起来很顺心可不用安装额外输入法。
-
-另外我这里推荐微信输入法，特有云粘贴板功能。
+【win mac】微信输入法 特有云粘贴板功能。
 <https://z.weixin.qq.com/>
 
-## 密码管理
+【全平台】Bitwarden Open Source Password Manager | Bitwarden
+<https://bitwarden.com/>
 
-bitwarden【全平台】
-
-它开源免费，跨平台支持 Windows、Mac、Linux、iOS、Android 平台，同时也提供了 Chrome、Edge、Firefox、Safari 等浏览器扩展可实现快速填充帐号密码一键登录网站，是一款非常不错的 1Password 免费替代品。
-
-## 网盘类
-
-阿里云盘 <https://www.aliyundrive.com/drive/>
+【win mac】阿里云盘 <https://www.aliyundrive.com/drive/>
 
 ## 结束语
 

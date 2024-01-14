@@ -19,9 +19,39 @@ rm -rf html.zip && zip -q -r html.zip *
 
 rm -rf html.tar.gz && tar czvf html.tar.gz *
 
-## 搭建 bitwarden
+## 拓展软件使用
 
-最低系统要求 2GB 内存 + 12GB 磁盘空间
+貌似拓展即是专业
+
+### 网盘搭建
+
+alist
+
+需要至少 2 m 带宽，否则就很鸡肋，只能作为离线下载
+
+5244
+
+正常发行版
+
+```sh
+docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name="alist" xhofe/alist:latest
+```
+
+自带 aria2 离线下载功能的版本
+
+```sh
+docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name="alist-aria2" xhofe/alist-aria2:latest
+```
+
+手动设置一个密码, 其中 `myPASSWORDForTang` 是指你需要设置的密码，alist 是容器名
+
+```sh
+docker exec -it alist ./alist admin set myPASSWORDForTang
+```
+
+### 密码管理 server
+
+bitwarden 最低系统要求 2GB 内存 + 12GB 磁盘空间
 
 ```sh
 sudo adduser bitwarden
@@ -36,8 +66,9 @@ curl -Lso bitwarden.sh "https://func.bitwarden.com/api/dl/?app=self-host&platfor
 ./bitwarden.sh install
 ```
 
-## DNS 服务 AdGuardHome
+### DNS 服务
 
+AdGuardHome
 github.com/AdguardTeam/AdGuardHome
 <https://github.com/AdguardTeam/AdGuardHome>
 
@@ -64,33 +95,11 @@ sudo /opt/AdGuardHome/AdGuardHome -s install
 DNS 服务器监听端口 53 至少用到了 udp，但是 tcp 也建议开启。 只能固定不变，否则 windows 系统改不了此项
 admin / minniadm8011s
 
-## 网盘搭建 alist
+## 开发软件使用
 
-需要至少 2 m 带宽，否则就很鸡肋，只能作为离线下载
+### 代码仓库
 
-5244
-
-正常发行版
-
-```sh
-docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name="alist" xhofe/alist:latest
-```
-
-自带 aria2 离线下载功能的版本
-
-```sh
-docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name="alist-aria2" xhofe/alist-aria2:latest
-```
-
-手动设置一个密码, 其中 `myPASSWORDForTang` 是指你需要设置的密码，alist 是容器名
-
-```sh
-docker exec -it alist ./alist admin set myPASSWORDForTang
-```
-
-## 代码仓库 gitea
-
-### gitea【低内存福音】
+#### gitea【低内存福音】
 
 3000
 
@@ -101,7 +110,7 @@ Gitea 最初是从 Gogs 分叉而来的，几乎所有的代码都已更改。
 
 环境要求：2 个 CPU 内核和 1GB RAM 通常足以满足小型团队/项目的需求。
 
-#### 镜像安装
+##### 镜像安装
 
 新建 docker-compose.yml 文件
 
@@ -144,20 +153,24 @@ gitea 如何关闭用户注册
 DISABLE_REGISTRATION = true
 ```
 
-#### 手动安装
+##### 手动安装
 
+```sh
 wget -O gitea https://dl.gitea.com/gitea/1.21.1/gitea-1.21.1-linux-amd64
 chmod +x gitea
+```
 
 详见
 docs.gitea.com/zh-cn/installation/install-from-binary
 https://docs.gitea.com/zh-cn/installation/install-from-binary
 
+```sh
 systemctl restart gitea
 systemctl status gitea
 systemctl stop gitea
+```
 
-### gitlab
+#### gitlab
 
 GitLab 软件包需要大约 2.5 GB 的存储空间用于安装。
 
@@ -169,9 +182,9 @@ GitLab 软件包需要大约 2.5 GB 的存储空间用于安装。
 
 PostgreSQL 是唯一支持的数据库
 
-## 数据库
+### 数据库
 
-### pg
+#### postgres
 
 端口 5430
 
@@ -192,7 +205,7 @@ vi /var/lib/postgresql/data/pg_hba.conf
 
 docker restart pg14
 
-### mysql
+#### mysql
 
 3316
 
@@ -215,7 +228,7 @@ CREATE USER 'kait'@'%' IDENTIFIED WITH mysql_native_password BY '737834EooPoiyfj
 GRANT ALL PRIVILEGES ON *.* TO 'kait'@'%';
 ```
 
-### redis
+#### redis
 
 6383
 
@@ -309,3 +322,44 @@ rdb-save-incremental-fsync yes
 #  加 -a 表示通过密码登录
 docker exec -it redis5 redis-cli -a useaverystrongpasswordfoobared666useaverystrongpassword888useaverystrongpassword999useaverystrongpassword110
 ```
+
+## 免费云服务
+
+为了免于搭建 linux 或者说节省云服务器的钱，使劲薅
+
+### 免费 网盘
+
+阿里云盘 功能强大，可以一键转存，不过分享的有的软件会被屏蔽，适合私人存储
+
+### 免费 私人 DNS
+
+可以申请 OneDNS 的公益版
+
+### 免费 git 仓库
+
+CSDN 旗下的 GitCode - 开发者的代码家园
+<https://gitcode.com/>
+
+not
+
+码云 gitee 由于判定我的 readme 可能违规不给展示
+
+### 免费 redis
+
+<https://redis.com/try-free/>
+
+redis-13862.c322.us-east-1-2.ec2.cloud.redislabs.com:13862
+数据库 test123
+default / 6N1HJuqj6GrCy4DwMTJP5JZHzzfaCrrb
+
+### 免费 postgres
+
+MemFireDB
+<https://memfiredb.com/>
+
+个人存储信息 47.102.127.65:5433  数据库名保密 kai / newPwsword231
+
+### 免费图形数据库
+
+Fully Managed Graph Database Service | Neo4j AuraDB
+<https://neo4j.com/cloud/platform/aura-graph-database/>

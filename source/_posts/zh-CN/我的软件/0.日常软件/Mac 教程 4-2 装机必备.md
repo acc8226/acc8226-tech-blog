@@ -11,58 +11,20 @@ categories:
 
 记住安全永远是第一要务。下载软件也尽量从官网下载或者应用商店安装，这样更安全，也避免从其他渠道下载到恶意软件。
 
-## 电脑管家
+## 装机必备
 
-腾讯柠檬清理
-<https://lemon.qq.com/>
+1. 腾讯柠檬清理<https://lemon.qq.com/>
+2. [360 极速浏览器](https://browser.360.cn/ee/mac/index.html)
+3. The Unarchiver <https://theunarchiver.com/>
+4. WGestures 2 鼠标手势 | YingDev <https://www.yingdev.com/projects/wgestures2>
+5. 微信输入法 <https://z.weixin.qq.com/>
+6. Bitwarden Open Source Password Manager | Bitwarden <https://bitwarden.com/>
+7. 阿里云盘 <https://www.aliyundrive.com/drive/>
 
-## 浏览器
-
-安全防护永远要放在第一位，这里推荐国民的 [360 极速浏览器](https://browser.360.cn/ee/mac/index.html))
-
-它还特别包含鼠标手势和鼠标悬停功能，同时拥有书签云端同步和丰富的 chrome 插件体系。
-
-> 鼠标手势：长按鼠标右键，手势即动作
-> 鼠标悬停：在标签上滚动鼠标滚轮，可自动激活该标签
-
-其实自带的 Safari 其实也不错，苹果也说自家的更加省电。点击 ‘Safari 浏览器拓展...’ 将跳转到 App Store 商店查看浏览器拓展
-
-## 输入法
-
-[搜狗输入法](https://pinyin.sogou.com/mac/)
-
-由于百度不好用, 19 年初装上后还会偶尔 bug 资源占用率居高不下。反观我的要求是要有同步词库，无广告且需要支持中文下输入英文标点的功能。然后有单行模式更好。
-
-## 解压缩软件
-
-推荐 [360 压缩](http://yasuo.360.cn/), 永久免费, 无广告弹窗。
-
-## 同步密码软件
-
-bitwarden【全平台】
-
-它开源免费，跨平台支持 Windows、Mac、Linux、iOS、Android 平台，同时也提供了 Chrome、Edge、Firefox、Safari 等浏览器扩展可实现快速填充帐号密码一键登录网站，是一款非常不错的 1Password 免费替代品。
-
-## 其他软件
-
-**记笔记**
-印象笔记 or 有道云笔记
-
-**截图**
-Snipaste - 截图 + 贴图
-<https://zh.snipaste.com/>
+## 其他精品软件
 
 rss 阅读器
 Reeder 热门的 Rss 订阅
-
-## 软件资源站
-
-苹果软件下载_mac 软件_mac 游戏下载_免费苹果电脑软件下载网站
-<http://www.pc6.com/mac/>
-
-## 软件回收站
-
-抖音 appstore 版
 
 ## 参考
 

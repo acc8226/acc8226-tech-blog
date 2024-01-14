@@ -7,6 +7,8 @@ categories: 我的创作
 
 注：以下开发用软件, 谨代表个人观点。
 
+安全永远是第一要务。下载软件也尽量从官网下载，这样更安全，也避免从其他渠道下载到恶意软件。
+
 说明：尽量选择跨平台在搭配特定系统特有软件即可满足大部分使用场景。
 
 ## 日常
@@ -15,26 +17,31 @@ categories: 我的创作
 
 #### 电脑管家
 
-【win】火绒安全【安装版】<https://www.huorong.cn/>
+普通用户可以：[【win】腾讯电脑管家【安装版】](https://guanjia.qq.com/) 或 [【win】360 安全卫士【安装版】](https://weishi.360.cn/)二选一
 
-and
+进阶玩家我推荐[【win】火绒安全【安装版】](https://www.huorong.cn/) + [【win】微软电脑管家【安装版】](https://pcmanager.microsoft.com/zh-cn)
 
-【win】微软电脑管家【安装版】<https://pcmanager.microsoft.com/zh-cn>
+maybe
 
-not
-
-【win】腾讯电脑管家【安装版】<https://guanjia.qq.com/>
-
-【win】360 安全卫士【安装版】<https://weishi.360.cn/>
+搭配【win】`dism++` 据说这货优化功能挺强，不过适合高级用户。
 
 - - -
 
 【mac】腾讯柠檬清理<https://lemon.qq.com/>
 
+主打清理电脑垃圾文件，一键释放磁盘空间。
+
+因 App Store 审核限制，完整版内部分功能无法上架（例如应用卸载等）。建议下载完整版。
+
 #### 浏览器类
 
-【win mac】【安装版】360 极速浏览器由于有难得的鼠标悬停切换标签功能
+【win】【安装版】360 极速浏览器。安全防护永远要放在第一位，且有难得的鼠标悬停切换标签功能。
 <https://browser.360.cn/ee/>
+
+包含了鼠标手势和鼠标悬停功能，同时拥有书签云端同步和丰富的 chrome 插件。
+
+> 鼠标手势：长按鼠标右键，手势即动作
+> 鼠标悬停：在标签上滚动鼠标滚轮，可自动激活该标签
 
 not
 
@@ -59,13 +66,18 @@ Vivaldi 浏览器 | 强大的个性化和私密化的网络浏览器 <https://vi
 
 - - -
 
+【mac】【安装版】[360 极速浏览器](https://browser.360.cn/ee/mac/index.html)
+
+其实自带的 Safari 其实也不错，苹果也说自家的更加省电。点击 ‘Safari 浏览器拓展...’ 将跳转到 App Store 商店查看浏览器拓展。
+
+- - -
+
 【linux】360 安全浏览器
 <https://browser.360.net/gc/index.html?src=se>
 
 #### 工具 压缩
 
-【win】360压缩【安装版】
-<https://yasuo.360.cn/>
+推荐 [【win】360压缩【安装版】](http://yasuo.360.cn/), 永久免费, 无广告弹窗
 
 or
 
@@ -75,10 +87,18 @@ or
 
 注：其中 7z2301-x64.exe 表示 64 位安装包，7z2301.exe 表示 32 位安装包。
 
+not
+
+bandzip 免费版有广告
+winrar 免费版有广告
+
 - - -
 
-【mac】The Unarchiver
-<https://theunarchiver.com/>
+【mac】The Unarchiver <https://theunarchiver.com/>
+
+or
+
+[360 压缩](http://yasuo.360.cn/), 永久免费, 无广告弹窗。
 
 - - -
 
@@ -87,18 +107,44 @@ or 安装包 <https://dl.devmate.com/com.macpaw.site.theunarchiver/TheUnarchiver
 
 #### 工具 鼠标手势
 
-【win mac】WGestures 2 鼠标手势 | YingDev
+【win mac】【收费】WGestures 2 鼠标手势 | YingDev
 <https://www.yingdev.com/projects/wgestures2>
+
+or
+
+【win】WGestures 1 免费
 
 #### 输入法
 
-【win mac】微信输入法
+如果你 Win11 自带的输入法也不错，当你用起来很顺心可不用安装额外输入法。
+
+【win mac】微信输入法 特有云粘贴板功能。
 <https://z.weixin.qq.com/>
+
+maybe
+
+[搜狗输入法智慧版](https://pinyin.sogou.com/zhihui/), 无广告不解释。处理日常使用外还能表情斗图。
+
+- - -
+
+【mac win】微信输入法 特有云粘贴板功能。
+
+not
+
+* [mac 版搜狗输入法](https://pinyin.sogou.com/mac/) 和微信输入法比起来没啥优势
+* mac 百度输入法曾经卡过一次，体验不太好，颜值还行。
+
+- - -
+
+linux 还得是搜狗
+<https://shurufa.sogou.com/linux>
 
 #### 密码管理
 
 【全平台】Bitwarden Open Source Password Manager | Bitwarden
 <https://bitwarden.com/>
+
+它开源免费，跨平台支持 Windows、Mac、Linux、iOS、Android 平台，同时也提供了 Chrome、Edge、Firefox、Safari 等浏览器扩展可实现快速填充帐号密码一键登录网站，是一款非常不错的 1Password 免费替代品。
 
 Releases · bitwarden/mobile
 <https://github.com/bitwarden/mobile/releases>
@@ -117,9 +163,9 @@ and
 
 【全平台】坚果云 <https://www.jianguoyun.com/s/downloads>
 
-or
+not
 
-【补充】【win mac】天翼云盘 <https://cloud.189.cn/web/static/download-client/index.html>
+【win mac】天翼云盘 <https://cloud.189.cn/web/static/download-client/index.html> 由于对 mac 端同步功能缺失
 
 ### 工具类
 
@@ -140,13 +186,13 @@ not
 
 #### 下载
 
-【全平台】motrix【首选】 <https://motrix.app/zh-CN/> 颜值高。支持下载 HTTP、FTP、BT、磁力链接等资源。即使 Github 资源也不在话下。
+【全平台】motrix【首选】 <https://motrix.app/zh-CN/> | [下载页](https://motrix.app/zh-CN/download) 颜值高。支持下载 HTTP、FTP、BT、磁力链接等资源。即使 Github 资源也不在话下。
 
 and
 
 【win linux】文件蜈蚣 <http://www.filecxx.com/zh_CN/index.html> 免费版功能也够，提供插件可以嗅探网页中的视频
 
-and
+maybe
 
 【全平台】视频下载工具 lux
 <https://github.com/iawia002/lux/releases/download/v0.22.0/lux_0.22.0_Windows_x86_64.zip>
@@ -154,18 +200,22 @@ and
 搭配 ffmpeg
 <https://www.gyan.dev/ffmpeg/builds/packages/ffmpeg-6.1.1-essentials_build.7z>
 
-or
+maybe
 
 【浏览器拓展】猫抓(cat catch) - 猫抓(cat catch)文档
 <https://o2bmm.gitbook.io/cat-catch/>
 
+maybe
+
+[Free Download Manager](https://www.freedownloadmanager.org/zh/) (**FDM**) 是一款[经典](https://www.iplaysoft.com/tag/%E7%BB%8F%E5%85%B8)免费纯粹的下载软件，它[开源](https://www.iplaysoft.com/tag/%E5%BC%80%E6%BA%90)无广告，界面简洁清爽，支持 [BT](https://www.iplaysoft.com/tag/bt)、[FTP](https://www.iplaysoft.com/tag/ftp) 下载，支持批量下载、断点续传、捕获 HTTP 链接、FTP 目录浏览等功能，还跨平台支持 Windows 与 macOS，可以说是一款相当优秀的免费全能型下载工具。
+
 not
 
-【win】VidJuice UniTube 可以图形化下载视频和音频很好用，就是付费啦
-
-【win mac】迅雷<https://dl.xunlei.com/> 有广告
-
-【win】qbittorrent_4.5.5 不好用
+* 【win】VidJuice UniTube 可以图形化下载视频和音频很好用，就是付费啦
+* 【win mac】迅雷<https://dl.xunlei.com/> 有广告，但是很多资源都挂在迅雷上了，只有它才有加速效果。
+* 【win】qbittorrent_4.5.5 不好用
+* [IDM](https://www.internetdownloadmanager.com/), 功能还行但收费。
+* neat download manager 虽然体积小，但是外观不如 fdm。也不支持磁力。
 
 #### 护眼
 
