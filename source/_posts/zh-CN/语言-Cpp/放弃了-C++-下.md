@@ -1,10 +1,10 @@
-C++语言程序设计（下）——从C到C++
+C++语言程序设计（下）——从 C 到 C++
 
 来不及了, 报名下一次吧
-https://www.icourse163.org/course/0809CAU007-432001
+<https://www.icourse163.org/course/0809CAU007-432001>
 
 C++ 教程 | 菜鸟教程
-https://www.runoob.com/cplusplus/cpp-tutorial.html
+<https://www.runoob.com/cplusplus/cpp-tutorial.html>
 
 ```cpp
 cout<<1<<'\t'<<1<<endl;

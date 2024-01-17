@@ -341,21 +341,20 @@ not
 【win mac】哔哩哔哩【在线】【本地】【首选】 哔哩哔哩下载中心 <https://app.bilibili.com/>
 bili 的 mac 版的本地播放能力也挺强的
 
-【win】荐片播放器官网 - 最新电影,高清电影,免费电影,播放器 <https://www.jianpian6.co/>
+【win】荐片播放器官网 - 最新电影,播放器 <https://www.jianpian6.co/>
 
 【win】PotPlayer【本地】【首选】 PotPlayer高清影音播放器中文绿色版下载-PotPlayer中文网 <https://potplayer.org/>
 
 not
 
-【win mac】爱奇艺【在线】 爱奇艺-在线视频网站-海量正版高清视频在线观看 <https://www.iqiyi.com/>
-
-【win mac】优酷【在线】优酷客户端下载中心 <https://youku.com/product/index>
-
-【win mac】腾讯视频【在线】腾讯视频-中国领先的在线视频媒体平台,海量高清视频在线观看 https://v.qq.com/
-
-【win mac】芒果TV【在线】 芒果TV <https://www.mgtv.com/app/>
-
-【mac linux】VLC【本地】VLC：官方网站 颜值不够 - VideoLAN <https://www.videolan.org/>
+* 【win mac】爱奇艺【在线】 爱奇艺-在线视频网站-海量正版高清视频在线观看 <https://www.iqiyi.com/>
+* 【win mac】优酷【在线】优酷客户端下载中心 <https://youku.com/product/index>
+* 【win mac】腾讯视频【在线】腾讯视频-中国领先的在线视频媒体平台,海量高清视频在线观看 https://v.qq.com/
+* 【win mac】芒果 TV【在线】 芒果TV <https://www.mgtv.com/app/>
+* 【win mac linux】【本地】VLC：官方网站 颜值不够 - VideoLAN <https://www.videolan.org/>
+* 【win】【本地】kmplayer 没有便携版
+* 【win】【本地】恒星播放器 广告太多
+* 【win】【本地】mpv 足够清爽，可是功能太单一
 
 ### 社交类
 

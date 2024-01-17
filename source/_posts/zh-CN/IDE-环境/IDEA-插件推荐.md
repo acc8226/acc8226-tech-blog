@@ -105,7 +105,7 @@ MyBatisX - IntelliJ IDEA Plugin | Marketplace <https://plugins.jetbrains.com/plu
 
 ## IntelliJ 自带的一些组件
 
-### IntelliJ 自带 maven
+### IntelliJ 其实自带了 maven
 
 - C:\Users\zhangsan\Documents\mysoft\ideaIU-2019.3.5-jbr8.win\plugins\maven\lib\maven2
 - C:\Users\zhangsan\Documents\mysoft\ideaIU-2019.3.5-jbr8.win\plugins\maven\lib\maven3

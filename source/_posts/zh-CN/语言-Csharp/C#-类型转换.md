@@ -5,7 +5,7 @@
 * **隐式类型转换** - 这些转换是 C# 默认的以安全方式进行的转换, 不会导致数据丢失。例如，从小的整数类型转换为大的整数类型，从派生类转换为基类。
 * **显式类型转换** - 显式类型转换，即强制类型转换。显式转换需要强制转换运算符，而且强制转换会造成数据丢失。
 
-```
+```cs
 double d = 5673.74;
 int i;
 
@@ -14,14 +14,17 @@ i = (int)d;
 ```
 
 ### C# 类型转换方法
+
 C# 提供了下列内置的类型转换方法：
-```
+
+```cs
 double d = Convert.ToDouble(3456);
 Console.WriteLine(d);
 ```
 
-示例: 
-```
+示例:
+
+```cs
 namespace TypeConversionApplication
 {
     class StringConversion

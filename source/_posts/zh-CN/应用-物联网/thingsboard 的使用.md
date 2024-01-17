@@ -11,8 +11,8 @@ categories:
 
 调用可以分为单向和双向：
 
-* 单向RPC请求直接发送请求，并且不对设备响应做任何处理。
-* 双向RPC请求会发送到设备，并且超时期间内接收到来自设备的响应。
+* 单向 RPC 请求直接发送请求，并且不对设备响应做任何处理。
+* 双向 RPC 请求会发送到设备，并且超时期间内接收到来自设备的响应。
 
 可通过规则链、面板控件或 REST API 方式，向设备下发指令。
 
@@ -53,3 +53,25 @@ $request_id表示请求的整型标识符。
 
 客户端PUBLISH下面主题进行响应：
 v1/devices/me/rpc/response/$request_id
+
+双向 rpc 之 客户端 js 示例
+
+```js
+var mqtt = require('mqtt');
+var client  = mqtt.connect('mqtt://192.168.18.107',{
+    username: '9SOy5KgGNbg8AOsXOGVu'
+});
+
+client.on('connect', function () {
+    console.log('connected');
+    client.subscribe('v1/devices/me/rpc/request/+')
+});
+
+client.on('message', function (topic, message) {
+    console.log('request.topic: ' + topic);
+    console.log('request.body: ' + message.toString());
+    var requestId = topic.slice('v1/devices/me/rpc/request/'.length);
+    //client acts as an echo service
+    client.publish('v1/devices/me/rpc/response/' + requestId, ' {"result" : "ok"}');
+});
+```

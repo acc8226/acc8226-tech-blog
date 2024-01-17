@@ -107,7 +107,7 @@ ProGuard 技术的功能概括为以下 4 项：
 
 # 有了 verbose 这句话，混淆后就会生成映射文件
 -verbose
-# 包含有类名->混淆后类名的前后映射关系, 然后使用printmapping指定映射文件的名称
+# 包含有类名->混淆后类名的前后映射关系, 然后使用 printmapping 指定映射文件的名称
 -printmapping proguardMapping.txt
 #列出从 apk 中删除的代码
 # -printusage unused.txt
@@ -128,10 +128,10 @@ ProGuard 技术的功能概括为以下 4 项：
 -keepattributes Signature
 -keepattributes EnclosingMethod
 
-# 抛出异常时保留代码行号，在第6章异常分析中我们提到过
+# 抛出异常时保留代码行号，在第 6 章异常分析中我们提到过
 -keepattributes SourceFile,LineNumberTable
 
-# 保留所有的本地native方法不被混淆
+# 保留所有的本地 native 方法不被混淆
 -keepclasseswithmembernames class * {
     native <methods>;}
 
@@ -151,7 +151,7 @@ ProGuard 技术的功能概括为以下 4 项：
 -keep class android.os.** {*;}
 
 
-# 如果有引用android-support-v4.jar包，可以添加下面这行
+# 如果有引用 android-support-v4.jar 包，可以添加下面这行
 # -keep public class com.tuniu.app.ui.fragment.** {*;}
 
 # 保留在 Activity 中的方法参数是view的方法，
@@ -238,7 +238,7 @@ ProGuard 技术的功能概括为以下 4 项：
 }
 
 # 对JavaScript的处理
-# 请在项目中搜索addJavascriptInterface，我们要对所有使用的地方设置保留指令。
+# 请在项目中搜索 addJavascriptInterface，我们要对所有使用的地方设置保留指令。
 -keepclassmembers class com.example.youngheart.MainActivity$JSInterface1 {
     <methods>;}
 
@@ -251,10 +251,10 @@ ProGuard 技术的功能概括为以下 4 项：
 # 凡是在 layout 目录下的 xml 布局文件中配置的自定义View，都不能进行混淆。
 
 # 针对第三方jar包的解决方案
-# 一般而言，这些SDK都是经过ProGuard混淆了的。
-# 而我们所要做的，是避免这些SDK的类和方法在我们的App中被混淆。
+# 一般而言，这些SDK都是经过 ProGuard 混淆了的。
+# 而我们所要做的，是避免这些 SDK 的类和方法在我们的 App 中被混淆。
 
-# 针对android-support-v4.jar的解决方案
+# 针对android-support-v4.jar 的解决方案
 -libraryjars libs/android-support-v4.jar
 -dontwarn android.support.v4.**
 -keep class android.support.v4.** { *; }

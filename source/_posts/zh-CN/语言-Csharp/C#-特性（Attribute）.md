@@ -20,7 +20,8 @@ AttributeUsage
 预定义特性 AttributeUsage 描述了如何使用一个**自定义特性类**。它规定了特性可应用到的项目的类型。
 
 规定该特性的语法如下：
-```
+
+```cs
 [AttributeUsage(
    validon,
    AllowMultiple=allowmultiple,
@@ -31,7 +32,7 @@ AttributeUsage
 其中：
 * 参数 validon 规定特性可被放置的语言元素。它是枚举器 AttributeTargets 的值的组合。默认值是 AttributeTargets.All。
 
-```
+```cs
 [AttributeUsage(AttributeTargets.Class |
 AttributeTargets.Constructor |
 AttributeTargets.Field |
@@ -39,22 +40,26 @@ AttributeTargets.Method |
 AttributeTargets.Property,
 AllowMultiple = true)]
 ```
+
 * 参数 allowmultiple（可选的）为该特性的 AllowMultiple 属性（property）提供一个布尔值。如果为 true，则该特性是多用的。默认值是 **false**（单用的）。
 * 参数 inherited（可选的）为该特性的 Inherited 属性（property）提供一个布尔值。如果为 true，则该特性可被派生类继承。默认值是 **false**（不被继承）。
 
 ### Conditional
+
 这个预定义特性标记了一个条件方法，其执行依赖于指定的预处理标识符。
 
 它会引起方法调用的条件编译，取决于指定的值，比如 **Debug** 或 **Trace**。例如，当调试代码时显示变量的值。
 
 规定该特性的语法如下：
-```
+
+```cs
 [Conditional(
    conditionalSymbol
 )]
 ```
 例如：
-```
+
+```cs
 [Conditional("DEBUG")]
 ```
 

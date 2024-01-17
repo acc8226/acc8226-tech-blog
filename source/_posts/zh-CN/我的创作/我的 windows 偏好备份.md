@@ -7,8 +7,8 @@ categories: 我的创作
 
 ## 任务栏
 
-极速浏览器 资源管理器 微信 终端 vscode
-IDEA termius
+极速浏览器 资源管理器 微信 vscode IDEA
+终端 termius
 
 ## 开机自启
 
