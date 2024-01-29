@@ -1,5 +1,5 @@
 ---
-title: 合集-Linux 软件
+title: 合集-Linux 服务器用软件
 date: 2023-11-29 12:38:00
 updated: 2023-11-29 12:38:00
 categories: 我的创作
@@ -334,6 +334,7 @@ docker exec -it redis5 redis-cli -a useaverystrongpasswordfoobared666useaverystr
 ### 免费 私人 DNS
 
 可以申请 OneDNS 的公益版
+<https://www.onedns.net/publicWelfareVersion>
 
 ### 免费 git 仓库
 
@@ -342,7 +343,7 @@ CSDN 旗下的 GitCode - 开发者的代码家园
 
 not
 
-码云 gitee 由于判定我的 readme 可能违规不给展示
+码云 由于判定我的 readme 可能违规不给展示，所以我不推荐
 
 ### 免费 redis
 
@@ -363,3 +364,27 @@ MemFireDB
 
 Fully Managed Graph Database Service | Neo4j AuraDB
 <https://neo4j.com/cloud/platform/aura-graph-database/>
+
+### 免费域名 eu.org
+
+注册地址：EU.org
+
+注册完后点击登录，然后点击：New domain
+
+填写理想的完整域名例如：zxcv.eu.org 同意协议；
+
+域名服务器建议填写下面两个 dnspod
+
+edmund.dnspod.net
+dempsey.dnspod.net
+
+这里先只选择server names，然后Submit，注意看检查页面，如果出现 No error,Done.说明成功了~
+
+如果有错误，请返回修改！
+
+域名审核 1 天 —— 30 天都有可能，所以慢慢等吧，经过我的测试，一个账号内最多可以申请4个免费域名。
+
+- - -
+
+作者：DG 阿炮 <https://www.bilibili.com/read/cv17610845/>
+出处：bilibili

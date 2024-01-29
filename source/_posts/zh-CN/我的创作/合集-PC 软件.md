@@ -17,9 +17,9 @@ categories: 我的创作
 
 #### 电脑管家
 
-普通用户可以：[【win】腾讯电脑管家【安装版】](https://guanjia.qq.com/) 或 [【win】360 安全卫士【安装版】](https://weishi.360.cn/)二选一
+普通 windows 用户可选择：[【win】腾讯电脑管家【安装版】](https://guanjia.qq.com/) 或 [【win】360 安全卫士【安装版】](https://weishi.360.cn/)二选一
 
-进阶玩家我推荐[【win】火绒安全【安装版】](https://www.huorong.cn/) + [【win】微软电脑管家【安装版】](https://pcmanager.microsoft.com/zh-cn)
+进阶玩家推荐[【win】火绒安全【安装版】](https://www.huorong.cn/) + [【win】微软电脑管家【安装版】](https://pcmanager.microsoft.com/zh-cn)
 
 maybe
 
@@ -29,21 +29,27 @@ maybe
 
 【mac】腾讯柠檬清理<https://lemon.qq.com/>
 
-主打清理电脑垃圾文件，一键释放磁盘空间。
+主打清理电脑垃圾文件，一键释放磁盘空间。因 App Store 审核限制，完整版内部分功能无法上架（例如应用卸载等）。建议下载完整版。
 
-因 App Store 审核限制，完整版内部分功能无法上架（例如应用卸载等）。建议下载完整版。
+- - -
+
+【linux】 是否需要
 
 #### 浏览器类
 
-【win】【安装版】360 极速浏览器。安全防护永远要放在第一位，且有难得的鼠标悬停切换标签功能。
+【win】【安装版】360 极速浏览器
 <https://browser.360.cn/ee/>
 
-包含了鼠标手势和鼠标悬停功能，同时拥有书签云端同步和丰富的 chrome 插件。
+记住安全防护永远要放在第一位，且有难得的鼠标悬停切换标签功能。包含了鼠标手势和鼠标悬停功能，同时拥有书签云端同步和丰富的 chrome 插件。
 
 > 鼠标手势：长按鼠标右键，手势即动作
 > 鼠标悬停：在标签上滚动鼠标滚轮，可自动激活该标签
 
-not
+or
+
+【全平台】微软 edge 浏览器，毕竟难得国内拓展商店可以访问
+
+其他系列就不推荐了
 
 **Firefox 内核系列**
 
@@ -64,16 +70,34 @@ Vivaldi 浏览器 | 强大的个性化和私密化的网络浏览器 <https://vi
 
 其他：[【全平台】优化版浏览器合集【方案】](https://www.runningcheese.com/)
 
+not
+
+猎豹浏览器 体验一般
+猎鹰浏览器 体验一般
+飞牛浏览器 体验一般
+无极浏览器 体验极差
+
 - - -
 
 【mac】【安装版】[360 极速浏览器](https://browser.360.cn/ee/mac/index.html)
 
-其实自带的 Safari 其实也不错，苹果也说自家的更加省电。点击 ‘Safari 浏览器拓展...’ 将跳转到 App Store 商店查看浏览器拓展。
+or
+
+自带的 Safari 其实也不错。
+苹果说自家的更加省电。点击 ‘Safari 浏览器拓展...’ 跳转到 App Store 商店也可查看安装拓展。
 
 - - -
 
-【linux】360 安全浏览器
+linux 平台
+
+【全平台】edge 浏览器
+
+or
+
+【linux win】360 安全浏览器
 <https://browser.360.net/gc/index.html?src=se>
+
+【全平台】火狐浏览器
 
 #### 工具 压缩
 
@@ -90,11 +114,16 @@ or
 not
 
 bandzip 免费版有广告
+breezip 充斥着会员服务的弹窗
 winrar 免费版有广告
 
 - - -
 
 【mac】The Unarchiver <https://theunarchiver.com/>
+
+也提供了【mac】The Unarchiver【App Store版】 <https://apps.apple.com/cn/app/the-unarchiver/id425424353>
+
+安装包 <https://dl.devmate.com/com.macpaw.site.theunarchiver/TheUnarchiver.dmg>
 
 or
 
@@ -102,8 +131,7 @@ or
 
 - - -
 
-【mac】The Unarchiver【App Store版】 <https://apps.apple.com/cn/app/the-unarchiver/id425424353>
-or 安装包 <https://dl.devmate.com/com.macpaw.site.theunarchiver/TheUnarchiver.dmg>
+linux 系统一般自带 tar 或 zip 命令。
 
 #### 工具 鼠标手势
 
@@ -113,6 +141,14 @@ or 安装包 <https://dl.devmate.com/com.macpaw.site.theunarchiver/TheUnarchiver
 or
 
 【win】WGestures 1 免费
+
+- - -
+
+linux 平台据说 easystroke 还能用。
+
+```sh
+apt install easystroke
+```
 
 #### 输入法
 
@@ -136,15 +172,19 @@ not
 
 - - -
 
-linux 还得是搜狗
+linux 平台
+
+搜狗
 <https://shurufa.sogou.com/linux>
 
-#### 密码管理
+百度和讯飞都有支持，据说还有个 ibus。
+
+#### 密码管理 Bitwarden
 
 【全平台】Bitwarden Open Source Password Manager | Bitwarden
 <https://bitwarden.com/>
 
-它开源免费，跨平台支持 Windows、Mac、Linux、iOS、Android 平台，同时也提供了 Chrome、Edge、Firefox、Safari 等浏览器扩展可实现快速填充帐号密码一键登录网站，是一款非常不错的 1Password 免费替代品。
+开源免费，跨平台支持 Windows、Mac、Linux、iOS、Android 平台，同时也提供了 Chrome、Edge、Firefox、Safari 等浏览器扩展可实现快速填充帐号密码一键登录网站。
 
 Releases · bitwarden/mobile
 <https://github.com/bitwarden/mobile/releases>
@@ -165,7 +205,14 @@ and
 
 not
 
-【win mac】天翼云盘 <https://cloud.189.cn/web/static/download-client/index.html> 由于对 mac 端同步功能缺失
+* 【win mac】天翼云盘 <https://cloud.189.cn/web/static/download-client/index.html> 由于对 mac 端同步功能缺失
+* 【win】夸克网盘 手机端还行
+
+- - -
+
+linux 平台
+
+暂时没找到好用的
 
 ### 工具类
 
@@ -239,23 +286,22 @@ jpegview 特点是小巧
 
 or
 
-【免费】美图秀秀的网页版
+【免费】【网页版】美图秀秀在线版
 
 not
 
-Honeyview 只能查看，没有一丁点的编辑功能
+【win】Honeyview 只能查看，没有一丁点的编辑功能
 
-光影魔术手 不在维护了
+【win】光影魔术手 不在维护了
 
-eagle 不好用
+【win mac】eagle 感觉不好用
 
 PS 【收费软件】
 
 #### 常规辅助
 
-MyKeymap-2.0 效率工具 | 咸鱼阿康
-<https://xianyukang.com/MyKeymap.html>
-GitHub 地址 <https://github.com/xianyukang/MyKeymap>
+MyKeymap-2.0
+<https://xianyukang.com/MyKeymap.html> | GitHub 地址 <https://github.com/xianyukang/MyKeymap>
 
 not
 
@@ -265,7 +311,7 @@ uTools 感觉有点重
 
 #### 移动办公
 
-> 防诈骗！！！一定不要开启屏幕共享
+防诈骗！！！一定不要开启屏幕共享
 
 飞书——先进企业协作与管理平台，一站式无缝办公协作，团队上下对齐目标，全面激活组织和个人。先进团队，先用飞书。
 <https://www.feishu.cn/>
@@ -285,29 +331,54 @@ uTools 感觉有点重
 
 #### mail 收发
 
-【win mac】mac 上建议选择网易邮箱大师 <https://dashi.163.com/>
+【win mac】网易邮箱大师 <https://dashi.163.com/>
 
-【win】 windows 上建议选择 foxmail <https://www.foxmail.com/> 。我感觉该软件对 mac 用户不够重视，经常不更新。
+or
+
+【win】 windows 上建议选择 foxmail <https://www.foxmail.com/> 。但我感觉该软件对 mac 用户不够重视，经常不更新。
 
 not
 
 thunderbird <https://www.thunderbird.net/zh-CN/>
 
+- - -
+
+【mac win】网易邮箱大师 <https://dashi.163.com/>
+
 #### Office 文档
 
-【主要】WPS <https://www.wps.cn/>
+【主要】【全平台】WPS <https://www.wps.cn/>
 
-【备用】libreoffice <https://zh-cn.libreoffice.org/download/libreoffice/>
+【备用】【全平台】libreoffice <https://zh-cn.libreoffice.org/download/libreoffice/>
 
 #### PDF 文档
 
 【win】SumatraPDF【绿色版】
 
-【mac】PDF 如果站在只读角度直接用浏览器即可
+or
+
+* 【win】极速 PDF 阅读器
+
+中规中矩
+
+* 【win】Right PDF Reader
+* 【win】迅读 PDF
+* 【win】福昕 PDF 编辑器
 
 not
 
-【win】PDF_XChangeViewer 貌似免费版只能查看
+* 【win】PDF_XChangeViewer 貌似免费版只能查看
+* 【win】金山PDF独立版 ctrl + n 快捷键不好使，差评
+* 【win mac】UPDF ctrl + w 又是不好用，差评
+* 【win】迅捷PDF阅读器 体验极差，快捷键几乎不支持
+
+- - -
+
+【mac】PDF 如果站在简单读取的角度直接用浏览器即可
+
+- - -
+
+【linux】PDF 如果站在简单读取的角度直接用浏览器即可
 
 #### 思维导图
 
@@ -334,7 +405,7 @@ not
 
 酷狗音乐 没落的不行了
 
-千千音乐 也是一样
+千千音乐 快捷键都不支持，体验极差
 
 ### 视频类
 
@@ -355,6 +426,7 @@ not
 * 【win】【本地】kmplayer 没有便携版
 * 【win】【本地】恒星播放器 广告太多
 * 【win】【本地】mpv 足够清爽，可是功能太单一
+* 【win】【本地】暴风影音5 不太好用
 
 ### 社交类
 
@@ -378,25 +450,35 @@ not
 
 【主要】ToDesk <https://www.todesk.com/download.html>
 
-【备用】【win】DBAdmin <https://www.slser.com/>
+or
+
+【全平台】RustDesk – The Open Source Remote Desktop Access Software
+<https://rustdesk.com/index.html>
+
+or
+
+【win】DBAdmin <https://www.slser.com/>
 
 not
 
 向日葵远程控制
 
-阿里无影云桌面 mac 版有点卡
+其他
+
+【云桌面】阿里无影云桌面 mac 版有点卡
 
 ### 启动器
+
+【Win】 utools 差点意思
+
+- - -
 
 【mac】Raycast
 <https://www.raycast.com/>
 
-【Win】 utools 差点意思
-
 ### 阅读类
 
-Fluent Reader
-在 win 平台一款好用的 rss 阅读器
+【win】Fluent Reader 一款 rss 阅读器
 <https://github.com/yang991178/fluent-reader/releases/>
 
 ## 拓展
@@ -411,13 +493,14 @@ HEU KMS Activator <https://dl.lancdn.com/landian/soft/heu/>
 
 ### 工具 OCR 软件
 
-【win】Umi-OCR-OCR图片转文字识别软件<https://github.com/hiroi-sora/Umi-OCR>
+【win】Umi-OCR-OCR 图片转文字识别软件 <https://github.com/hiroi-sora/Umi-OCR>
 
 【win mac】[已购] 工具 极度扫描-文字识别-OCR <https://jidusm.wrste.com/>
 
 ### 工具 录屏软件
 
 EV 录屏 还可以单独录音 <https://www.ieway.cn/evcapture.html>
+
 ScreenToGif 用于录制动图，可选格式 git ，apng 和 webp
 
 【键盘显示】键盘按键显示 KeyCastOW
@@ -427,10 +510,10 @@ ScreenToGif 用于录制动图，可选格式 git ，apng 和 webp
 not
 
 LICEcap1.26 不够强大
+
 Bandicam 班迪录屏 10 分种内才免费，不过体验极好
 
-obs
-有点卡
+obs 有点卡
 
 ### 文字转语音软件
 
@@ -462,6 +545,7 @@ YogaDNS 【win】 <https://yogadns.com/> 免费版只能设置一个 dns，可�
 
 1\. SmartDNS
 <https://pymumu.github.io/smartdns/>
+
 2\. AdGuard Home| 适用于任何操作系统（Windows，macOS，Linux）的网络软件
 <https://adguard.com/zh_cn/adguard-home/overview.html>
 github AdguardHome

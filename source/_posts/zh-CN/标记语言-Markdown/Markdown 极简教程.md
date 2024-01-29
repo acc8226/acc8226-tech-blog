@@ -10,7 +10,7 @@ tags: Markdown
 
 Markdown 的目标是实现「易读易写」。也是兼容 HTML 的, 是一种适用于网络的书写语言。
 
-> Markdown is a way to style text on the web. You control the display of the document; formating words as bold or italic, adding images, and creating lists are just a few of the things we can do with Markdown. Mostly, Markdown is just regular text with a few non-alphabetic characters thrown in, like # or *.
+Markdown is a way to style text on the web. You control the display of the document; formating words as bold or italic, adding images, and creating lists are just a few of the things we can do with Markdown. Mostly, Markdown is just regular text with a few non-alphabetic characters thrown in, like `#` or `*`.
 
 ## 文本 (Text)
 
@@ -53,12 +53,14 @@ It's very easy to make some words **bold** and other words *italic* with Markdow
 ## 引用(BLOCKQUOTES)
 
 源码:
+
 `As Kanye West said:`
 
 `> We're living the future so`
 `> the present is our past.`
 
 效果:
+
 As Kanye West said:
 
 > We're living the future so
@@ -104,18 +106,31 @@ As Kanye West said:
 > Markdown 支持两种形式的链接语法： **行内** 和 **参考** 两种形式，两种都是使用小括号来把文字转成链接。
 
 ```md
-# 行内式: 直接在后面用括号直接接上链接
-http://github.com - automatic!
-[GitHub](http://github.com)
+# 行内式: 要建立一个行内式的链接，只要在方块括号后面紧接着圆括号并插入网址链接即可，如果你还想要加上链接的 title 文字，只要在网址后面，用双引号把 title 文字包起来即可
+
+This is [an example](http://example.com/ "Title") inline link.
+
+[This link](http://example.net/) has no title attribute.
 
 # 参考式: 这种链接让你可以为链接定一个名称，之后你可以在文件的其他地方定义该链接的内容。
-This is an [example link](http://example.com/)
-# 由于链接文字可能包含空白，所以这种简化型的标记内也许包含多个单词：
-Visit [Daring Fireball][] for more information.
-...
-...
-...
-然后接着定义链接：[Daring Fireball]: http://daringfireball.net/
+
+下面是一个参考式链接的范例
+
+I get 10 times more traffic from [Google] [1] than from
+[Yahoo] [2] or [MSN] [3].
+
+  [1]: http://google.com/        "Google"
+  [2]: http://search.yahoo.com/  "Yahoo Search"
+  [3]: http://search.msn.com/    "MSN Search"
+
+如果改成用链接名称的方式写
+
+I get 10 times more traffic from [Google][] than from
+[Yahoo][] or [MSN][].
+
+  [google]: http://google.com/        "Google"
+  [yahoo]:  http://search.yahoo.com/  "Yahoo Search"
+  [msn]:    http://search.msn.com/    "MSN Search"
 ```
 
 > * 其实参考式的链接重点不在于它比较好写，而是它比较好读.

@@ -107,8 +107,14 @@ Windows 版本可使用自带的 pgAdmin 4。也可使用通用且免费的 DBea
 
 创建数据库 `CREATE DATABASE runoobdb;`
 
+接入 PostgreSQL 数据库
+
+```sh
+psql -h IP地址 -p 端口 -U 数据库名
+```
+
 `psql -d postgres` 连接 postgres 数据库
-`psql -d abc` 连接 abc 数据库
+`psql -d xxx` 连接 xxx 数据库
 
 **`\l` 用于查看已经存在的数据库**
 
@@ -178,11 +184,13 @@ runoobdb=# \d company
 
 `\password` 重新设置用户的密码，之后然后需要 \q 退出后才生效
 
-`\c +数据库名` 切换数据库（相当于 mysql 中 ，use 数据库）
+`\c + 数据库名` 切换数据库（相当于 mysql 中 ，use 数据库）
 
 `\d` 查看库中表
 
 `\conninfo` 查看连接信息
+
+显示字符集：\encoding
 
 `\q` 退出。
 
