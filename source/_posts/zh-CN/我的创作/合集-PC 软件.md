@@ -80,11 +80,12 @@ not
 - - -
 
 【mac】【安装版】[360 极速浏览器](https://browser.360.cn/ee/mac/index.html)
+因为鼠标悬停很好用
 
 or
 
-自带的 Safari 其实也不错。
-苹果说自家的更加省电。点击 ‘Safari 浏览器拓展...’ 跳转到 App Store 商店也可查看安装拓展。
+自带的 Safari
+苹果自称自家的更省电。点击 ‘Safari 浏览器拓展...’ 跳转到 App Store 也能安装拓展。
 
 - - -
 
@@ -127,7 +128,7 @@ winrar 免费版有广告
 
 or
 
-[360 压缩](http://yasuo.360.cn/), 永久免费, 无广告弹窗。
+[360 压缩](http://yasuo.360.cn/), 永久免费, 无广告弹窗
 
 - - -
 
@@ -152,9 +153,9 @@ apt install easystroke
 
 #### 输入法
 
-如果你 Win11 自带的输入法也不错，当你用起来很顺心可不用安装额外输入法。
+如果你 Win11 自带的输入法也不错，当你用起来很顺心可不用安装额外输入法
 
-【win mac】微信输入法 特有云粘贴板功能。
+【win mac】微信输入法，特有云粘贴板功能，现已支持跨设备粘贴文字和图片
 <https://z.weixin.qq.com/>
 
 maybe
@@ -214,6 +215,14 @@ linux 平台
 
 暂时没找到好用的
 
+- - -
+
+mac 平台
+
+依旧阿里云
+
+not 天翼云 犹豫一直都没更新了
+
 ### 工具类
 
 #### 截图
@@ -221,15 +230,25 @@ linux 平台
 【win】PixPin <https://pixpinapp.com/> mac 版即将推出
 <https://download.pixpinapp.com/PixPin_1.3.1.0.exe>
 
-or
-
-【win mac】Snipaste <https://zh.snipaste.com/>
-
 not
+
+【win mac】Snipaste <https://zh.snipaste.com/> 免费版不支持长截图
 
 【win】【新版收费】 FSCapture
 
 【win】picpick_portable 说不上哪不好
+
+- - -
+
+mac 平台
+
+等待 PixPin mac 版发布
+
+not
+
+ishot 免费版有水印
+
+Snipaste 免费版功能有限
 
 #### 下载
 
@@ -298,7 +317,7 @@ not
 
 PS 【收费软件】
 
-#### 常规辅助
+#### 辅助
 
 MyKeymap-2.0
 <https://xianyukang.com/MyKeymap.html> | GitHub 地址 <https://github.com/xianyukang/MyKeymap>
@@ -306,6 +325,12 @@ MyKeymap-2.0
 not
 
 uTools 感觉有点重
+
+- - -
+
+mac 平台
+
+hammerspoon
 
 ### 办公类
 
@@ -347,9 +372,21 @@ thunderbird <https://www.thunderbird.net/zh-CN/>
 
 #### Office 文档
 
-【主要】【全平台】WPS <https://www.wps.cn/>
+【全平台】libreoffice <https://zh-cn.libreoffice.org/download/libreoffice/>
 
-【备用】【全平台】libreoffice <https://zh-cn.libreoffice.org/download/libreoffice/>
+libreoffice 源1 - 清华
+<https://mirrors.tuna.tsinghua.edu.cn/libreoffice/libreoffice/stable/>
+
+libreoffice 源2 - 腾讯
+<https://mirrors.cloud.tencent.com/libreoffice/libreoffice/stable/>
+
+or
+
+【全平台】WPS <https://www.wps.cn/>
+
+- - -
+
+除了 libreoffice，mac 平台的 iWork 系列也不错
 
 #### PDF 文档
 
@@ -376,13 +413,15 @@ not
 
 【mac】PDF 如果站在简单读取的角度直接用浏览器即可
 
+或者 pdf expert
+
 - - -
 
 【linux】PDF 如果站在简单读取的角度直接用浏览器即可
 
 #### 思维导图
 
-Xmind思维导图 <https://xmind.cn/>
+Xmind 思维导图 <https://xmind.cn/>
 
 ### 音频类
 
@@ -407,6 +446,12 @@ not
 
 千千音乐 快捷键都不支持，体验极差
 
+- - -
+
+mac 平台的本地音乐播放器 可能是 foobar2000 吧
+
+但是歌词搜索呢
+
 ### 视频类
 
 【win mac】哔哩哔哩【在线】【本地】【首选】 哔哩哔哩下载中心 <https://app.bilibili.com/>
@@ -428,23 +473,33 @@ not
 * 【win】【本地】mpv 足够清爽，可是功能太单一
 * 【win】【本地】暴风影音5 不太好用
 
+- - -
+
+mac 平台使用 哔哩哔哩
+
 ### 社交类
 
 【win mac】微信 <https://weixin.qq.com/>
 
 【全平台】QQ <https://im.qq.com/index/>
 
-Tim <https://tim.qq.com/download.html>
+【win】Tim <https://tim.qq.com/download.html>
 
 not
 
 阿里旺旺 mac 版的不好用
 
+- - -
+
+mac 平台
+
+依旧 QQ 和 微信
+
 ### 教育类
 
-欧路词典【全平台】 <https://www.eudic.net/v4/en/app/download>
+【全平台】欧路词典 <https://www.eudic.net/v4/en/app/download>
 
-每日英语听力 <https://www.eudic.net/v4/en/app/ting>
+【全平台】每日英语听力 <https://www.eudic.net/v4/en/app/ting>
 
 ### 远程类
 
@@ -463,7 +518,19 @@ not
 
 向日葵远程控制
 
-其他
+- - -
+
+mac 平台
+
+todesk
+
+or
+
+vnc viewer 用于连接树莓派
+
+微软远程桌面 用户连接 windows 电脑
+
+not
 
 【云桌面】阿里无影云桌面 mac 版有点卡
 
@@ -480,6 +547,14 @@ not
 
 【win】Fluent Reader 一款 rss 阅读器
 <https://github.com/yang991178/fluent-reader/releases/>
+
+- - -
+
+mac 平台
+
+reeder 用于 rss
+
+kindle 是否已经都没了
 
 ## 拓展
 
@@ -515,9 +590,13 @@ Bandicam 班迪录屏 10 分种内才免费，不过体验极好
 
 obs 有点卡
 
+- - -
+
+mac 很多人推荐免费的 Omi录屏专家
+
 ### 文字转语音软件
 
-tts-vue: 🎤 微软语音合成工具，使用 Electron + Vue + ElementPlus + Vite 构建，将文字转为语音 MP3。
+【win】tts-vue: 🎤 微软语音合成工具，使用 Electron + Vue + ElementPlus + Vite 构建，将文字转为语音 MP3。
 <https://gitee.com/LGW_space/tts-vue>
 
 ### 文件搜索
@@ -529,6 +608,10 @@ tts-vue: 🎤 微软语音合成工具，使用 Electron + Vue + ElementPlus + V
 ### 显示网速 TrafficMonitor【win】
 
 <https://github.com/zhongyang219/TrafficMonitor>
+
+- - -
+
+mac 的腾讯柠檬清理已经自带了该功能
 
 ### DNS 相关【win】
 
@@ -561,6 +644,10 @@ typora 收费就算了，但是很适合初学者
 
 MarkdownPad2 <http://markdownpad.com/> 感觉差点意思
 
+- - -
+
+mac 平台据说 ulysses 评价很高
+
 ### 大文件分析 wiztree【win】
 
 <https://www.diskanalyzer.com/>
@@ -570,16 +657,24 @@ MarkdownPad2 <http://markdownpad.com/> 感觉差点意思
 极客卸载【win】
 <https://geekuninstaller.com/download>
 
+- - -
+
+mac 的腾讯柠檬清理已经自带了该功能
+
 ### 内网通讯
 
 内网通【安装版】【win】有广告但是没招，目前较为好用的软件
 <http://www.51nwt.com/index.htm>
 
+- - -
+
+mac 平台暂时没找到好用的
+
 ### 手机助手
 
 Android 用户可选择 [腾讯应用宝 PC 版](https://sj.qq.com/) / [360 手机助手PC版](http://sj.360.cn/index.html)
 
-iOS 用户可下载 iTunes 或者某些国产助手。
+iOS 用户可下载 iTunes 或者某些国产助手
 
 ### 光驱刻录
 
@@ -605,17 +700,17 @@ AList 文档 <https://alist.nn.ci/zh/>
 
 ### 网络代理
 
-shadowsocks-shadowsocks-rust- A Rust port of shadowsocks <https://github.com/shadowsocks/shadowsocks-rust>
+【server】shadowsocks-shadowsocks-rust- A Rust port of shadowsocks <https://github.com/shadowsocks/shadowsocks-rust>
 
-shadowsocks-shadowsocks-windows- A C# port of shadowsocks <https://github.com/shadowsocks/shadowsocks-windows>
+【win】shadowsocks-shadowsocks-windows- A C# port of shadowsocks <https://github.com/shadowsocks/shadowsocks-windows>
 
-shadowsocks-ShadowsocksX-NG- Next Generation of ShadowsocksX <https://github.com/shadowsocks/ShadowsocksX-NG>
+【mac】shadowsocks-ShadowsocksX-NG- Next Generation of ShadowsocksX <https://github.com/shadowsocks/ShadowsocksX-NG>
 
-shadowsocks-shadowsocks-android- A shadowsocks client for Android <https://github.com/shadowsocks/shadowsocks-android>
+【android】shadowsocks-shadowsocks-android- A shadowsocks client for Android <https://github.com/shadowsocks/shadowsocks-android>
 
 not
 
-ClearVPN 之前还想，现在不好用了
+ClearVPN 免费版的套餐基本废了
 
 ### 内网转发
 
@@ -659,6 +754,12 @@ choco
 ms winget
 
 sdkman
+
+- - -
+
+mac 平台
+
+brew
 
 ## 系统镜像
 
