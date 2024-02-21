@@ -2,7 +2,7 @@
 title: zsh 脚本简介
 date: 2023-05-11 13:38:00
 updated: 2023-05-11 13:38:00
-categories: 脚本文件
+categories: 脚本文件与自动化
 tags:
 - zsh
 ---

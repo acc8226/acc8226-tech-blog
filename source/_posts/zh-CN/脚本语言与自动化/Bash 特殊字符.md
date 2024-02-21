@@ -1,6 +1,6 @@
 ---
 title: Bash 特殊字符
-categories: 脚本文件
+categories: 脚本文件与自动化
 tags:
 - Bash
 ---

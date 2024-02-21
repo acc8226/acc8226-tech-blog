@@ -1,6 +1,6 @@
 ---
 title: Bash 介绍和入门
-categories: 脚本文件
+categories: 脚本文件与自动化
 tags:
 - Bash
 ---

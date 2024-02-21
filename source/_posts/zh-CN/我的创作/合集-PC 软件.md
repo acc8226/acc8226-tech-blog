@@ -104,9 +104,11 @@ or
 
 #### 工具 压缩
 
-推荐 [【win】360压缩【安装版】](http://yasuo.360.cn/), 永久免费, 无广告弹窗
+推荐 bandzip 7 据说有广告，但是我没看到过，特别是智能解压功能特别好使，好用才是第一条。且压缩菜单未被折叠到更多选项
 
 or
+
+[【win】360压缩【安装版】](http://yasuo.360.cn/), 永久免费, 无广告弹窗，压缩菜单未被折叠到更多选项，但是不要乱点击，
 
 【win】7-Zip
 
@@ -116,9 +118,12 @@ or
 
 not
 
-* bandzip 免费版有广告
+* 360 压缩国际版 压缩菜单被折叠到了更多选项
 * breezip 充斥着会员服务的弹窗
 * winrar 免费版有广告
+* winzip 界面复杂还不好用且付费
+* PeaZip 颜值太低
+* 可牛压缩 很复杂，安装包体积大，有付费专属内容
 
 - - -
 
@@ -298,8 +303,20 @@ EyesGuard 定时提醒眼睛休息
 
 #### 看图
 
-jpegview 特点是小巧
-<https://github.com/sylikc/jpegview/>
+菠萝看图 BLumia/pineapple-pictures: A homebrew lightweight image viewer.
+<https://github.com/BLumia/pineapple-pictures>
+
+or
+
+ImageGlass 界面很现代
+<https://github.com/d2phap/ImageGlass>
+
+not
+
+* acdsee 免费版都需要注册，差评
+* Honeyview https://www.bandisoft.com/honeyview/ 页面太丑了
+* jpegview 特点是小巧，但操作不顺手 <https://github.com/sylikc/jpegview/> 下载链接 <https://github.com/sylikc/jpegview/releases/download/v1.3.46/JPEGView32_1.3.46.7z>
+* XnView 界面不那么现代 <https://www.xnview.com/en/xnview/#downloads>
 
 #### 图像处理
 
@@ -428,9 +445,11 @@ Xmind 思维导图 <https://xmind.cn/>
 
 ### 音频类
 
-【win mac】普通用户推荐QQ音乐【在线】QQ音乐 <https://y.qq.com/download/index.html>
+【win mac】普通用户推荐【在线】QQ 音乐 <https://y.qq.com/download/index.html>
 
 【魔法】高级用户推荐Spotify PC 版 曲库很全，但是非会员稍有限制，需要魔法才好
+
+【win mac】汽水音乐也能优秀，不过 vip 的体验更好
 
 or
 
@@ -439,7 +458,7 @@ or
 
 【win】MusicPlayer2【本地】MusicPlayer2 <https://github.com/zhongyang219/MusicPlayer2>
 
-【win】普听音乐。在阿里云盘的加持下很好用
+【win】普听音乐。在阿里云盘的加持下很好用，前提是有自己的曲库
 
 建议修改下快捷键。设置上一首和下一首的快捷键分别为 ctrl + left / right
 
@@ -587,17 +606,22 @@ EV 录屏 还可以单独录音 <https://www.ieway.cn/evcapture.html>
 
 ScreenToGif 用于录制动图，可选格式 git ，apng 和 webp
 
-【键盘显示】键盘按键显示 KeyCastOW
+键盘显示
 
-【键盘显示】KeyCastr mac用 <https://github.com/keycastr/keycastr/releases>
+【win】mulaRahul/keyviz: Keyviz is a free and open-source tool to visualize your keystrokes ⌨️ and 🖱️ mouse actions in real-time.
+<https://github.com/mulaRahul/keyviz>
+
+【mac】KeyCastr <https://github.com/keycastr/keycastr/releases>
 
 not
 
-LICEcap1.26 不够强大
+LICEcap 1.26 不够强大
 
 Bandicam 班迪录屏 10 分种内才免费，不过体验极好
 
 obs 有点卡
+
+【win】KeyCastOW 颜值差点意思
 
 - - -
 
@@ -668,8 +692,12 @@ mac 平台据说 ulysses 评价很高
 
 ### 清理卸载
 
-极客卸载【win】
+【win】极客卸载 简单清爽
 <https://geekuninstaller.com/download>
+
+or
+
+【win】[HiBitSoftware](https://www.hibitsoft.ir/) 功能强大
 
 not
 
@@ -848,8 +876,7 @@ proxmox-ve_8.0-2
 
 ## 已出局
 
-* 火绒应用商店 体验一般
-* 对于高级玩家，还是官网下载比较好
+* 火绒应用商店 体验一般。但对于高级玩家，还是官网下载比较好
 * 炉石官方插件 随之国服没了已经落幕
 * 录猎 不好用
 * 芒果加速 啥玩意，也是此类，只能体验 2 小时
