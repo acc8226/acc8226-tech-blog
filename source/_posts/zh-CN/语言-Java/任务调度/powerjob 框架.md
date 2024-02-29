@@ -21,7 +21,7 @@ powerjob-server 调度服务器
 
 ## 问题
 
-PowerJob连接Postgres数据库出现org.springframework.orm.jpa.JpaSystemException: Unable to access lob stream; nested exception is org.hibernate.HibernateException: Unable to access lob stream · Issue #153 · PowerJob/PowerJob
+PowerJob 连接 Postgres 数据库出现 org.springframework.orm.jpa.JpaSystemException: Unable to access lob stream; nested exception is org.hibernate.HibernateException: Unable to access lob stream · Issue #153 · PowerJob/PowerJob
 <https://github.com/PowerJob/PowerJob/issues/153>
 
 我的方法是

@@ -16,23 +16,39 @@ iOS 用户则必须安装其中一个，防诈骗。骗子和一些无量商家�
 
 ### 安全 认证
 
-Google Authenticator - 为安全绝对不过分
+Google Authenticator 为安全绝对不过分
 <https://google-authenticator.en.softonic.com/android>
 
 ### 密码管理
 
-密码 bitwarden - 好用的密码管理器  
+密码 bitwarden 好用的可云端存储的密码管理器  
 <https://github.com/bitwarden/mobile/releases>
 
 ### 微信读书
 
-活动玩法多。
+活动玩法多
 
 [下载地址](https://sj.qq.com/appdetail/com.tencent.weread)
 
-### 坚果云同步
+or
 
-属于同步文档小帮手了
+alook
+
+or **网易邮箱大师**
+
+### 云同步类
+
+123 网盘，文叔叔
+
+**阿里云盘** <https://sj.qq.com/appdetail/com.alicloud.databox> 一般会下载阿里网盘用于看视频
+坚果云 <https://sj.qq.com/appdetail/nutstore.android> 属于同步文档小帮手
+天翼云 <https://sj.qq.com/appdetail/com.cn21.ecloud>
+
+not
+
+印象笔记 限制 2 台设备
+有道云笔记 限制 2 台设备
+flomo 笔记 用不习惯
 
 ### 普听音乐
 
@@ -50,14 +66,14 @@ Google Authenticator - 为安全绝对不过分
 其中的跨设备粘贴真的绝了。否则还是下面三家。
 
 android
-由于现在手机预装已经很不错了。基本是由搜狗或百度、讯飞三家提供。
+由于现在手机预装已经很不错了。且基本是由搜狗或百度、讯飞三家提供。
 
 iOS
 自带的也不错，否则依旧上面三家。
 
 ## 影音类
 
-主推 es 文件浏览器 也可称之为万能播放器，在搭配 nas 和本地资源的情况下。好用但是有广告
+主推 **es 文件浏览器** 我称之为万能播放器，在搭配 nas 和本地资源的情况下。好用除了有广告
 <http://www.estrongs.com/>
 
 bilibili 无广告版 <https://github.com/lucinhu/bili_you/releases>
@@ -97,6 +113,8 @@ AdGuard 安全和去部分广告和去骚扰信息三重加成 <https://adguard.
 
 豆包 好用的 ai 助手
 
+**wifi 万能密钥** 偶尔可以来一下，不过现在确实能搜到的热点不多了
+
 Shadowsocks 魔法上网用
 
 360 浏览器 <https://sj.qq.com/appdetail/com.qihoo.browser> 安全第一位，但是只要不要慌，陌生的东西一定不要点
@@ -105,7 +123,6 @@ Shadowsocks 魔法上网用
 快递 100 查和寄快递
 小度音箱 <https://sj.qq.com/appdetail/com.baidu.duer.superapp> 硬件绑定的应用，不得不用
 
-wifi 万能密钥 偶尔可以来一下，不过现在确实能搜到的热点不多了
 
 or
 
@@ -142,12 +159,17 @@ not
 天猫
 拼多多
 
+辣品 优惠券系列的啦
+
 ## 交通类
+
+其实当然支付宝 / 云闪付也有对应的交通模块。
 
 百度地图关怀版
 
-滴滴出行 app / 小程序。可打车可搬家，货运搬家新用户还送券，还行。
-货拉拉搬家也还行，车比滴滴多。当然也可借助 支付宝 / 云闪付 的交通功能
+滴滴出行 app / 小程序。可打车可搬家，货运搬家新用户还送券，还行
+
+货拉拉 app / 小程序 也还行，车比滴滴多
 
 not
 
@@ -162,7 +184,7 @@ not
 
 ## 教育类
 
-多邻国
+**多邻国**
 
 每日音乐听力 <https://sj.qq.com/appdetail/com.qianyan2.ting.en>
 知乎知学堂
@@ -173,7 +195,7 @@ not
 
 美团 <https://sj.qq.com/appdetail/com.sankuai.meituan>
 
-抖音的团购确实优惠，属于超级 app，生活、超市、优惠、直播、片段都有
+抖音的团购确实优惠，属于超级 app，生活、超市、优惠、直播都有
 
 永辉生活
 
@@ -185,7 +207,7 @@ or
 
 便利蜂 有小程序 和 app 端口，但是优惠力度确实不一样，属于可有可无吧
 
-建行生活 曾经和北京疫情优惠券一起有活动，但是我没 k 了
+建行生活 曾经和北京疫情优惠券一起有活动，可是我没钱了
 
 not
 
@@ -265,22 +287,11 @@ not
 * 少年得到 太幼稚
 * 凤凰 FM 偶尔闪退
 
-## 云同步类
-
-阿里云盘 <https://sj.qq.com/appdetail/com.alicloud.databox> 一般会下载阿里网盘用于看视频
-坚果云 <https://sj.qq.com/appdetail/nutstore.android>
-天翼云 <https://sj.qq.com/appdetail/com.cn21.ecloud>
-
-not
-
-印象笔记 限制 2 台设备
-有道云笔记 限制 2 台设备
-flomo 笔记 用不习惯
-
 ## 支付类
 
 **一定不要网贷~**~~，不要花费超出能力的钱
 支付宝 <https://sj.qq.com/appdetail/com.eg.android.AlipayGphone>
+
 云闪付 <https://sj.qq.com/appdetail/com.unionpay> 云闪付持续有优惠，信用卡还款免手续费
 
 翼支付 因为活动期间送代金券
