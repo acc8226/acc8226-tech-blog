@@ -17,13 +17,13 @@ categories: 我的创作
 
 #### 电脑管家
 
-普通 windows 用户可选择：[【win】腾讯电脑管家【安装版】](https://guanjia.qq.com/) 或 [【win】360 安全卫士【安装版】](https://weishi.360.cn/)二选一
+普通 windows 用户可二选一：[【win】腾讯电脑管家【安装版】](https://guanjia.qq.com/) 或 [【win】360 安全卫士【安装版】](https://weishi.360.cn/)
 
-进阶玩家推荐[【win】火绒安全【安装版】](https://www.huorong.cn/) + [【win】微软电脑管家【安装版】](https://pcmanager.microsoft.com/zh-cn)
+进阶玩家推荐[【win】火绒安全【安装版】](https://www.huorong.cn/) + [【win】微软电脑管家【安装版】](https://pcmanager.microsoft.com/zh-cn) 的套装
 
 maybe
 
-搭配【win】`dism++` 据说这货优化功能挺强，不过适合高级用户。
+搭配【win】`dism++` 据说这货优化功能挺强，不过仅适合高级用户。
 
 - - -
 
@@ -37,128 +37,19 @@ maybe
 
 #### 浏览器类
 
-【win】【安装版】360 极速浏览器
-<https://browser.360.cn/ee/>
+【win】【安装版】360 极速浏览器 安全防护永远要放在第一位，鼠标悬停切换标签功能值得点赞。
 
-记住安全防护永远要放在第一位，且有难得的鼠标悬停切换标签功能。包含了鼠标手势和鼠标悬停功能，同时拥有书签云端同步和丰富的 chrome 插件。
+【mac】360 极速浏览器
 
-> 鼠标手势：长按鼠标右键，手势即动作
-> 鼠标悬停：在标签上滚动鼠标滚轮，可自动激活该标签
-
-or
-
-【全平台】微软 edge 浏览器，毕竟难得国内拓展商店可以访问
-
-其他系列就不推荐了
-
-**Firefox 内核系列**
-
-【全平台】Firefox <http://www.firefox.com.cn/>
-
-Tor 浏览器 <https://www.torproject.org/zh-CN/download/>
-
-Waterfox 浏览器 <https://www.waterfox.net/en-US/download/>
-
-**Chrome 内核系列**
-
-【全平台】Google Chrome <https://www.google.cn/chrome/>
-
-Vivaldi 浏览器 | 强大的个性化和私密化的网络浏览器 <https://vivaldi.com/zh-hans/>
-
-【全平台】Microsoft Edge
-<https://www.microsoft.com/zh-cn/edge?form=MA13FJ&ch>
-
-其他：[【全平台】优化版浏览器合集【方案】](https://www.runningcheese.com/)
-
-not
-
-* 猎豹浏览器 体验一般
-* 猎鹰浏览器 体验一般
-* 飞牛浏览器 体验一般
-* 无极浏览器 体验极差
-
-- - -
-
-mac 平台
-
-【mac】【安装版】[360 极速浏览器](https://browser.360.cn/ee/mac/index.html)
-因为鼠标悬停很好用
-
-or
-
-自带的 Safari
-苹果自称自家的更省电。点击 ‘Safari 浏览器拓展...’ 跳转到 App Store 也能安装拓展。
-
-- - -
-
-linux 平台
-
-【全平台】edge 浏览器
-
-or
-
-【linux win】360 安全浏览器
-<https://browser.360.net/gc/index.html?src=se>
-
-【全平台】火狐浏览器
+【linux】360 安全浏览器
 
 #### 工具 压缩
 
-推荐 bandzip 7 据说有广告，但是我没看到过，特别是智能解压功能特别好使，好用才是第一条。且压缩菜单未被折叠到更多选项
+【win】【安装版】bandzip 智能解压特别好用
 
-or
+【mac】The Unarchiver【App Store版】
 
-[【win】360压缩【安装版】](http://yasuo.360.cn/), 永久免费, 无广告弹窗，压缩菜单未被折叠到更多选项，但是不要乱点击，
-
-【win】7-Zip
-
-[7-Zip 官方中文网站](https://sparanoid.com/lab/7z/) | [7-Zip 南大镜像站-NJU Mirror](https://mirror.nju.edu.cn/7-zip/)
-
-注：其中 7z2301-x64.exe 表示 64 位安装包，7z2301.exe 表示 32 位安装包。
-
-not
-
-* 360 压缩国际版 压缩菜单被折叠到了更多选项
-* breezip 充斥着会员服务的弹窗
-* winrar 免费版有广告
-* winzip 界面复杂还不好用且付费
-* PeaZip 颜值太低
-* 可牛压缩 很复杂，安装包体积大，有付费专属内容
-
-- - -
-
-【mac】The Unarchiver <https://theunarchiver.com/>
-
-也提供了【mac】The Unarchiver【App Store版】 <https://apps.apple.com/cn/app/the-unarchiver/id425424353>
-
-安装包 <https://dl.devmate.com/com.macpaw.site.theunarchiver/TheUnarchiver.dmg>
-
-or
-
-[360 压缩](http://yasuo.360.cn/), 永久免费, 无广告弹窗
-
-- - -
-
-linux 系统一般自带 tar 或 zip 命令。
-
-#### 工具 鼠标手势
-
-win 和 mac 平台
-
-【收费】WGestures 2 鼠标手势 | YingDev
-<https://www.yingdev.com/projects/wgestures2>
-
-or
-
-【win】【免费】WGestures 1
-
-- - -
-
-linux 平台据说 easystroke 还能用。
-
-```sh
-apt install easystroke
-```
+linux 系统一般用 tar 或 zip 命令。
 
 #### 输入法
 
@@ -191,24 +82,9 @@ linux 平台
 
 百度和讯飞都有支持，据说还有个 ibus。
 
-#### 密码管理 Bitwarden
-
-【全平台】Bitwarden Open Source Password Manager | Bitwarden
-<https://bitwarden.com/>
-
-开源免费，跨平台支持 Windows、Mac、Linux、iOS、Android 平台，同时也提供了 Chrome、Edge、Firefox、Safari 等浏览器扩展可实现快速填充帐号密码一键登录网站。
-
-[bitwarden/desktop](https://github.com/bitwarden/clients/releases)
-[bitwarden/mobile](https://github.com/bitwarden/mobile/releases)
-
-[Windows 客户端 desktop-2024.1](https://github.com/bitwarden/clients/releases/download/desktop-v2024.1.0/Bitwarden-Portable-2024.1.0.exe)
-[Windows 客户端 desktop-2023.12.1](https://github.com/bitwarden/clients/releases/download/desktop-v2023.12.1/Bitwarden-Portable-2023.12.1.exe)
-[Android 客户端 2024.1.1](https://github.com/bitwarden/mobile/releases/download/v2024.1.1/com.x8bit.bitwarden-fdroid.apk)
-[Android 客户端 2023.12.0](https://github.com/bitwarden/mobile/releases/download/v2023.12.0/com.x8bit.bitwarden-fdroid.apk)
-
 #### 网盘类
 
-【win mac】阿里云盘 <https://www.aliyundrive.com/drive/>
+【win mac】阿里云盘 <https://www.aliyundrive.com/drive/> 良心免费的网盘，大容量，高峰时段限速但一般没感觉。
 
 and
 
@@ -233,6 +109,33 @@ mac 平台
 
 not 天翼云 犹豫一直都没更新了
 
+#### 工具 鼠标手势
+
+win 平台
+
+【收费】WGestures 2 鼠标手势 | YingDev
+<https://www.yingdev.com/projects/wgestures2>
+
+如果不想买 wg 2 可以使用【win】【免费】WGestures 1。这绝对是效率神器。quciker 也是此类效率软件可自行研究。
+
+- - -
+
+mac 平台
+
+betterAndBetter 免费且比目前付费的 wg 2 功能更加强大。
+
+- - -
+
+linux 平台据说 easystroke 还能用。
+
+```sh
+apt install easystroke
+```
+
+#### 密码管理 Bitwarden
+
+【全平台】[BitWarden](https://bitwarden.com/)  一款全平台的密码管理软件。
+
 ### 工具类
 
 #### 截图
@@ -252,13 +155,13 @@ not
 
 mac 平台
 
-等待 PixPin mac 版发布
+我目前是 ishot + Snipaste 两者都用。其实我一直在等待 PixPin mac 版发布。
 
 not
 
-ishot 免费版有水印
+单独的 ishot 免费版有水印，且免费版不能贴图
 
-Snipaste 免费版功能有限
+单独的 Snipaste 免费版功能有限
 
 #### 下载
 
@@ -293,13 +196,28 @@ not
 * [IDM](https://www.internetdownloadmanager.com/), 功能还行但收费。
 * neat download manager 虽然体积小，但是外观不如 fdm。也不支持磁力。
 
+- - -
+
+mac 平台
+
+motrix
+
+not
+
+downie 收费
+
 #### 护眼
 
-【win mac】【安装版】<https://justgetflux.com/>
+【win mac】【安装版】flux <https://justgetflux.com/>
 
-EyesGuard 定时提醒眼睛休息
-~~由于作者说微软商店不再提供更新~~
-还是去 github 下载最新版本吧 <https://github.com/avestura/EyesGuard/releases/>
+EyesGuard 定时提醒眼睛休息 ~~由于作者说微软商店不再提供更新~~，所以还是去 github 下载最新版本
+<https://github.com/avestura/EyesGuard/releases/>
+
+- - -
+
+mac 平台
+
+【mac win】依旧 flux <https://justgetflux.com/>
 
 #### 看图
 
@@ -314,9 +232,15 @@ ImageGlass 界面很现代
 not
 
 * acdsee 免费版都需要注册，差评
-* Honeyview https://www.bandisoft.com/honeyview/ 页面太丑了
+* Honeyview <https://www.bandisoft.com/honeyview/> 页面太丑了
 * jpegview 特点是小巧，但操作不顺手 <https://github.com/sylikc/jpegview/> 下载链接 <https://github.com/sylikc/jpegview/releases/download/v1.3.46/JPEGView32_1.3.46.7z>
 * XnView 界面不那么现代 <https://www.xnview.com/en/xnview/#downloads>
+
+- - -
+
+mac 平台
+
+picview <https://wl879.github.io/apps/picview/index.html>
 
 #### 图像处理
 
@@ -338,6 +262,12 @@ not
 【win mac】eagle 感觉不好用
 
 PS 【收费软件】
+
+- - -
+
+mac 平台
+
+依旧【全平台】【重量】GIMP
 
 #### 键鼠增强
 
@@ -372,8 +302,6 @@ hammerspoon
 网易会议
 <https://meeting.163.com/>
 
-[TIM](https://office.qq.com/) 只有 windows 版
-
 #### mail 收发
 
 【win mac】网易邮箱大师 <https://dashi.163.com/>
@@ -406,7 +334,9 @@ or
 
 - - -
 
-除了 libreoffice，mac 平台的 iWork 系列也不错
+mac 平台
+
+在除了 iWork 系列 外还是选择 libreoffice
 
 #### PDF 文档
 
@@ -431,9 +361,9 @@ not
 
 - - -
 
-【mac】PDF 如果站在简单读取的角度直接用浏览器即可
+mac 平台
 
-或者 pdf expert
+【mac】PDF 如果站在简单读取的角度直接用浏览器即可。否则可以选择 pdf expert
 
 - - -
 
@@ -564,7 +494,13 @@ not
 
 ### 启动器
 
-【Win】 utools 差点意思，还是用 mykeymap 吧
+【Win】自制的捷键
+
+not
+
+utools 差点意思
+
+mykeymap 也不是此类软件
 
 - - -
 
@@ -625,7 +561,11 @@ obs 有点卡
 
 - - -
 
-mac 很多人都推荐免费的 Omi 录屏专家
+mac 很多人都推荐免费的 Omi 录屏专家 或者用国产 ishot 的录屏功能就行
+
+not
+
+ev 录屏 由于很久都没更新了，然后鼠标左键邮件点击没有点击效果
 
 ### 文字转语音软件
 
@@ -684,7 +624,7 @@ MarkdownPad2 <http://markdownpad.com/> 感觉差点意思
 
 - - -
 
-mac 平台据说 ulysses 评价很高
+mac 平台据说 ulysses 评价很高，但是收费就算了
 
 ### 大文件分析 wiztree【win】
 

@@ -98,7 +98,7 @@ Windows 什么是小组件？
 / slash, divide, oblique 斜线，斜杠，除号
 ? question mark
 
-## 遇到过的问题
+## 问题记录
 
 ### win11 打开文件夹卡顿 win11 打开文件夹很慢的解决办法
 
