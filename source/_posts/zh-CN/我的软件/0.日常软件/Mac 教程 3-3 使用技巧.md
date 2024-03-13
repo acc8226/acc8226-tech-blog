@@ -1,5 +1,5 @@
 ---
-title: Mac 教程 4-4 高级使用
+title: Mac 教程 3-3 使用技巧
 date: 2019-10-01 12:34:26
 updated: 2022-11-05 13:45:00
 categories:
@@ -13,7 +13,7 @@ categories:
 
 ## 压缩文件的时候不想要带 .DS_Store
 
-我的方法很简单, 压缩软件下载安装第三方工具. 例如我使用的 eZip,按住 command 选中后右键 -> 服务 -> eZip 压缩即可
+我的方法很简单, 压缩软件下载安装第三方工具. 例如我使用的 eZip，按住 command 选中后右键 -> 服务 -> eZip 压缩即可
 
 ## 如何在 Mac 上启用 root 用户或更改 root 密码
 

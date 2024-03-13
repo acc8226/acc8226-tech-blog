@@ -1,5 +1,5 @@
 ---
-title: 合集-开发用软件
+title: 合集-PC用开发软件
 date: 2020-06-03 00:22:53
 updated: 2023-11-26 10:49:00
 categories: 我的创作
@@ -92,17 +92,23 @@ not
 
 【win mac】pgAdmin <https://www.pgadmin.org/download/> 使用不习惯，且只支持 pg
 
-【全平台】DBeaver Community <https://dbeaver.io/download/> 颜值不高
+【全平台】DBeaver Community <https://dbeaver.io/download/> 颜值太低
 
 【全平台】DbVisualizer <https://www.dbvis.com/> 付费版才好用
+
+- - -
+
+mac 平台
+
+我是 jetbrain 认证的开源项目相关人员，因此暂时选择 dg。
 
 ## 3. Docker
 
 【全平台】Docker <https://www.docker.com/products/docker-desktop/>
 
-## 4. editor 编辑器
+## 4. Editor 编辑器
 
-主推 VS Code <https://code.visualstudio.com/>
+【主推】VS Code <https://code.visualstudio.com/>
 
 vscode 插件推荐
 
@@ -128,9 +134,8 @@ not
 
 ## 5. file compare 文件对比
 
-WinMerge 可以比较文件夹和文件，以便于理解和处理的可视文本格式呈现差异。
-
-【Win】 [WinMerge](https://winmerge.org/) | [下载页](https://winmerge.org/downloads/?lang=en)
+【Win】WinMerge 可以比较文件夹和文件，以便于理解和处理的可视文本格式呈现差异。是我离不开 windows 的一个精品软件
+ [WinMerge](https://winmerge.org/) | [下载页](https://winmerge.org/downloads/?lang=en)
 
 直链下载
 [winmerge-2.16.36-x64-exe.zip](https://downloads.sourceforge.net/winmerge/winmerge-2.16.36-x64-exe.zip)
@@ -142,6 +147,12 @@ or
 not
 
 FreeFileSync_12.5 界面太不美观
+
+- - -
+
+mac 平台
+
+求 【Win】WinMerge 的免费平替
 
 ## 6. IDE 集成开发环境
 
@@ -201,9 +212,6 @@ httpie/desktop: 🚀 HTTPie Desktop — cross-platform API testing client for hu
 SoapUI
 <https://www.soapui.org/downloads/soapui/>
 
-【mac】RapidAPI for Mac – The most advanced API tool for Mac
-<https://paw.cloud/>
-
 not
 
 * ApiPost 功能缺失，不能导入 curl 请求
@@ -212,6 +220,13 @@ not
 * Postman【不好用 必须登录】支持模拟 POST、GET、PUT 等常见请求
 * Insomnia 不是多标签风格的软件，不太考虑
 * Postcat 功能还不太完善
+
+- - -
+
+mac 平台
+
+【mac】RapidAPI for Mac – The most advanced API tool for Mac
+<https://paw.cloud/>
 
 ### mqtt 调试
 
@@ -257,6 +272,10 @@ zeal
 Zeal - Offline Documentation Browser
 <https://zealdocs.org/>
 
+- - -
+
+mac 平台
+
 Dash for macOS - API Documentation Browser, Snippet Manager - Kapeli
 <https://kapeli.com/dash>
 
@@ -264,29 +283,33 @@ Dash for macOS - API Documentation Browser, Snippet Manager - Kapeli
 
 ### svn
 
-#### 【便携版】**SVN 命令行工具**
-
-Apache Subversion command line tools
-[Apache-Subversion-1.13.0](https://www.visualsvn.com/files/Apache-Subversion-1.13.0.zip)
-
-#### 【安装版】svn 增强工具
-
+【安装版】svn 增强工具，是我离不开 windows 的一个精品软件
 [TortoiseSVN 官网下载地址](https://tortoisesvn.net/downloads.html)
 
-#### 【gui】【mac】snailSVN
+not
 
-snailSVN 一般般，但没得选，否则用 ide 自带的就行了。
+【便携版】**SVN 命令行工具** Apache Subversion command line tools [Apache-Subversion-1.13.0](https://www.visualsvn.com/files/Apache-Subversion-1.13.0.zip)
+
+- - -
+
+mac 平台
+
+求 【Win】TortoiseSVN 的免费平替
+
+not
+
+【gui】【mac】snailSVN
 
 ### git
 
 【cli】**[Git](https://git-scm.com/downloads)**
 默认苹果自带 git, 如果想要体验最新版本, 可以去 Git 官网下载即可。
 
-Git-阿里源 加速地址 <https://registry.npmmirror.com/binary.html?path=git-for-windows/>
+[Git-阿里源 加速地址](https://registry.npmmirror.com/binary.html?path=git-for-windows/)
 
-#### Git 增强工具
+and
 
-一般而言 IDE 可能会自带 git 功能, 正常情况下足够满足日常使用。
+我使用的 IDEA 会自带 git 功能, 一般足够日常使用
 
  [小乌龟 TortoiseGit – Windows Shell Interface to Git 官网下载地址](https://tortoisegit.org/download/)
 
@@ -329,8 +352,8 @@ or
 
 not
 
-* [FileZilla](https://www.filezilla.cn/) 虽说跨平台使用，但是界面我不太喜欢。
-* flashfxp 是付费产品我就不推荐了。
+* [FileZilla](https://www.filezilla.cn/) 虽说跨平台使用，但是界面我不太喜欢
+* flashfxp 是付费产品我就不推荐了
 * Bitvise SSH Client 直接不好用
 * 【全平台】tabby 界面不够友好
 * 【Mac AppStore 版】App Store 搜索 Zen Term
@@ -339,6 +362,12 @@ not
 * 【win mac】XTerminal 颜值不够高
 * 【win】VanDyke SecureCRT 卡死了且界面老旧还付费
 
+- - -
+
+mac 平台
+
+依旧 termius <https://www.termius.com/> 的免费版套餐
+
 ### 手机端
 
 Android JuiceSSH-Free SSH client for Android
@@ -346,7 +375,30 @@ Android JuiceSSH-Free SSH client for Android
 
 ## 15. terminal 终端
 
-### PowerShell
+### 【win】微软 terminal
+
+<https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701>
+
+Release Windows Terminal
+<https://github.com/microsoft/terminal/releases/>
+
+Windows 终端是一个新式主机应用程序，它面向你喜爱的命令行 shell，如命令提示符、PowerShell 和 bash（通过适用于 Linux 的 Windows 子系统 (WSL)）。 它的主要功能包括多个选项卡、窗格、Unicode 和 UTF-8 字符支持、GPU 加速文本呈现引擎，你还可用它来创建你自己的主题并自定义文本、颜色、背景和快捷方式。
+
+如何更改默认启动终端为 powershell
+
+添加新的配置文件即可，在命令行需要指定路径，例如我默认让其打开 D 盘 `C:\Program Files\PowerShell\7\pwsh.exe -WorkingDirectory D:`，最后记得保存即可。
+
+### 【mac】iTerm 2
+
+<https://www.iterm2.com/downloads.html>
+mac 下终端的替代品。该工具结合 Oh My Zsh 会有舒适的终端体验
+
+mac 下 Oh my zsh + iTerm2 初体验 - 简书
+<https://www.jianshu.com/p/b5e7fa6ad495>
+
+### 其他
+
+【跨平台 shell】PowerShell
 
 PowerShell | Microsoft Learn
 <https://learn.microsoft.com/zh-cn/powershell/scripting/overview>
@@ -360,32 +412,10 @@ PowerShell 是一种跨平台的任务自动化解决方案，由命令行 shell
 高级用户可下载
 <https://github.com/PowerShell/PowerShell/releases/download/v7.4.0/PowerShell-7.4.0-win-x64.zip>
 
-### windows terminal
+- - -
 
-<https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701>
-
-Release Windows Terminal
-<https://github.com/microsoft/terminal/releases/>
-
-Windows 终端是一个新式主机应用程序，它面向你喜爱的命令行 shell，如命令提示符、PowerShell 和 bash（通过适用于 Linux 的 Windows 子系统 (WSL)）。 它的主要功能包括多个选项卡、窗格、Unicode 和 UTF-8 字符支持、GPU 加速文本呈现引擎，你还可用它来创建你自己的主题并自定义文本、颜色、背景和快捷方式。
-
-如何更改默认启动终端为 powershell
-
-添加新的配置文件即可，在命令行需要指定路径，例如我默认让其打开 D 盘 `C:\Program Files\PowerShell\7\pwsh.exe -WorkingDirectory D:`，最后记得保存即可。
-
-### iTerm 2
-
-<https://www.iterm2.com/downloads.html>
-mac 下终端的替代品。该工具结合 Oh My Zsh 会有舒适的终端体验
-
-mac 下 Oh my zsh + iTerm2 初体验 - 简书
-<https://www.jianshu.com/p/b5e7fa6ad495>
-
-### 【win】msys2
-
-MSYS2 <https://www.msys2.org/>
-
-很奇怪。算是一个包管理器 还是一个终端 还兼容 linux 命令，可以安装 c 编译器 gcc 等。
+【win】MSYS2 <https://www.msys2.org/>
+算是一个包管理器 还是一个终端 还兼容 linux 命令，可以安装 c 编译器 gcc 等。
 
 ## 16. 特定 jar 相关
 
@@ -405,7 +435,7 @@ MSYS2 <https://www.msys2.org/>
 * Zookeeper 一个用于分布式应用程序的协调服务。
 * sonarqube 代码质量检测 一个用于代码质量检测的工具。
 
-## 其他
+## 其他软件
 
 ### 手机抓包 HttpCanary
 

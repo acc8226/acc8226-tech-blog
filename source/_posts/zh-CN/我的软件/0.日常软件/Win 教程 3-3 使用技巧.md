@@ -1,5 +1,5 @@
 ---
-title: Win 教程 4-4 高级使用
+title: Win 教程 3-3 使用技巧
 date: 2021-06-03 21:27:25
 updated: 2022-11-05 13:45:00
 categories:
@@ -7,23 +7,88 @@ categories:
   - 日常软件
 ---
 
-## 浏览器技巧
+## 技巧
+
+### 善用浏览器
+
+目前浏览器也能做很多事儿。若用好浏览器，可以少装很多软件。例如：
+
+* 订火车票可以选择 12306
+* 携程 / 飞猪订个票
+* 使用优爱腾看视频
+* 听歌可选 [网易云音乐](https://music.163.com)
+* 看个新闻可选 今日头条 或者 网易新闻，[腾讯网](https://www.qq.com/)
+
+### 浏览器技巧
 
 强制刷新页面：按下 Ctrl + F5（Windows）或 Cmd + Shift + R（Mac）来强制刷新页面。这会清除浏览器缓存，确保页面加载最新的文件。
 
-## 更改 terminal / cmd 命令行工具的外观
+### 超酷的滑动关机
 
-<https://github.com/microsoft/terminal/releases/tag/1904.29002>
+打开 C 盘，定位到 C:\Windows\System32 目录，查询是否有一个 SlideToShutDown.exe 应用程序。接着右键点击该应用程序，选择发送到桌面快捷方式，这样就在桌面建立了一个快捷方式。
 
-```bat
-colortool.exe -b OneHalfDark.itermcolors
-```
+选择刚刚创建的快捷方式，你可以重命名为自己喜欢的名字，这里我改为“滑动关机”。
 
-当然还可以手动修改字体样式
+### 学会盲打
 
-![手动修改字体样式](/images/收藏-技术软件/Win-系统相关设置/手动修改字体样式.png)
+**为了更好的录入文字和代码，一定要学会盲打。**
 
-## 修改 host 文件
+打字通 2016 官方免费下载_打字练习软件下载_金山打字通官方网站
+<https://www.51dzt.com/>
+
+## 记录
+
+### 按键的英文
+
+` backtick
+~ tilde
+
+`! exclamation mark`
+`@ at`
+`# pound / hash / hashtag`
+`$ dollar sign`
+`% percent`
+
+^ caret
+& ampersand, and, reference, ref
+`*` asterisk, multiply, star, pointer 星号
+() brakets, parenthesis 单数形式 parentheses 复数形式 圆括号
+( open parenthesis, open paren，open bracket 左圆括号
+) close parenthesis, close paren，close bracket 右圆括号
+
+`- hyphen` 连字符
+`_ underscore` 下划线
+
+`= equals`
+`+ plus sign`
+
+[] square brackets
+[ open bracket 左方括号
+] close bracket 右方括号
+
+{}
+{ open brace, open curly 左花括号
+} close brace, close curly 右花括号
+
+\ backslash / backward slash反斜线
+| vertical bar, vertical virgule
+
+; semicolon
+: colon
+
+' single quote
+" double quote
+
+, comma 逗号
+< less than
+
+. dot / period 句号
+`> greater than`
+
+/ slash, divide, oblique 斜线，斜杠，除号
+? question mark
+
+### 修改 host 文件
 
 hosts 文件是操作系统中一个负责 IP 地址与域名快递解析的文件。计算机在键入域名的时候，首先会去看看 hosts 文件汇总有没有关于此域名 IP 地址的记录。
 
@@ -61,7 +126,7 @@ C:\Windows\System32\drivers\etc
 * 在 macOS 下执行命令：sudo killall -HUP mDNSResponder
 * 如果你使用 Chrome 浏览器，那么可以访问：chrome://net-internals/#dns，然后点击「Clear host cache」按钮来清空浏览器里的 DNS 缓存。
 
-## 代理设置
+### 设置代理
 
 **windows下 Dos 命令行设置代理**
 按需设置对应的地址 + 端口信息，以下为举例：
@@ -87,7 +152,7 @@ function FindProxyForURL(url, host) {
 }
 ```
 
-## 设置环境变量
+### 设置环境变量
 
 在哪进行设置：右击我的电脑->系统属性->高级->环境变量
 
@@ -106,13 +171,19 @@ setx /m name "value"
 2\. 永久追加环境变量
 setx -m name "%name%;value"
 
-## 设置软件开机启动
+### 设置软件开机启动
 
 同样也可以用系统命令来打开“启动文件夹”。
 
 在运行里面输入 `shell:startup`，打开之后把要启动的快捷方式放进窗口即可。
 
-## Windows 系统环境变量大全
+### win11 打开文件夹卡顿 win11 打开文件夹很慢的解决办法
+
+1. 双击打开此电脑
+2. 点击此电脑顶部的更多
+3. 点击查看，在下面找到”在单独的进程中打开文件夹窗口，点击确定即可。
+
+### Windows 系统环境变量大全
 
 环境变量 详细信息
 %ALLUSERSPROFILE% 所有用户 Profile 文件位置
@@ -151,7 +222,7 @@ setx -m name "%name%;value"
 %USERPROFILE% 当前用户 Profile 文件位置
 %WINDIR% 操作系统目录的位置
 
-## Win 10 设置选项命令大全
+### Win 10 设置选项命令大全
 
 ms-settings打开设置
 ms-settings:batterysaver节电模式
@@ -222,42 +293,47 @@ ms-settings:developers针对开发人员
 ms-settings:recovery 恢复
 ms-settings:windowsdefender Windows Defender
 ms-settings:appsfeatures 系统-应用和功能
-ms-settings:notifications通知和操作
-ms-settings:powersleep电源和睡眠
-ms-settings:defaultapps默认应用
+ms-settings:notifications 通知和操作
+ms-settings:powersleep 电源和睡眠
+ms-settings:defaultapps 默认应用
 ms-settings:phone-defaultapps 默认应用(Win10 Mobile)
-ms-settings:deviceencryption关于
-ms-settings:about关于
-ms-settings:display显示
-ms-settings:screenrotation显示
-ms-settings:multitasking多任务
+ms-settings:deviceencryption 关于
+ms-settings:about 关于
+ms-settings:display 显示
+ms-settings:screenrotation 显示
+ms-settings:multitasking 多任务
 ms-settings:maps离线地图
-ms-settings:maps-downloadmaps下载地图
+ms-settings:maps-downloadmaps 下载地图
 ms-settings:storagesense存储
-ms-settings:optionalfeatures管理可选功能
+ms-settings:optionalfeatures 管理可选功能
 ms-settings:project投影到这台电脑
 ms-settings:tabletmode平板模式
 ms-settings:autoplay 自动播放
-ms-settings:bluetooth蓝牙
-ms-settings:connecteddevices已连接设备
-ms-settings:mousetouchpad鼠标和触摸板
+ms-settings:bluetooth 蓝牙
+ms-settings:connecteddevices 已连接设备
+ms-settings:mousetouchpad 鼠标和触摸板
 ms-settings:usb USB
 ms-settings:pen 笔
 ms-settings:printers 打印机和扫描仪
 ms-settings:typing 输入
 ms-settings:wheel 滚轮
 
-## 问答
+### 更改 cmd 命令行工具的外观【已废弃】
 
-### windows-setup.exe 和 windows-legacy-setup.exe 有什么区别吗
+<https://github.com/microsoft/terminal/releases/tag/1904.29002>
 
-"windows-setup.exe" 和 "windows-legacy-setup.exe" 是 Windows 操作系统安装程序的两个不同版本。
+```bat
+colortool.exe -b OneHalfDark.itermcolors
+```
 
-"windows-setup.exe" 通常用于安装最新的 Windows 操作系统，例如 Windows 10 或 Windows 11。它支持最新的硬件和软件，并提供了最新的功能和用户界面。
+当然还可以手动修改字体样式
 
-"windows-legacy-setup.exe" 则通常用于安装旧版本的 Windows 操作系统，例如 Windows 7 或 Windows 8。它主要用于为那些不能升级到最新版本 Windows 的用户提供支持。
+![手动修改字体样式](/images/收藏-技术软件/Win-系统相关设置/手动修改字体样式.png)
 
-总的来说，选择使用哪个安装程序取决于您的具体需求和硬件/软件环境。如果您正在安装最新的 Windows 操作系统，则应该使用 "windows-setup.exe"；如果您需要安装旧版本的 Windows 操作系统，则应该使用 "windows-legacy-setup.exe"。
+### WSA 安卓子系统【已废弃】
+
+教程 - Win 11 安装 wsa 安卓虚拟机 - 简书
+<https://www.jianshu.com/p/5e07a0e97a27>
 
 ## 参考
 

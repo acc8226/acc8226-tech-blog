@@ -1,5 +1,5 @@
 ---
-title: 合集-PC 软件
+title: 合集-PC用日常软件
 date: 2023-03-22 21:02:00
 updated: 2024-01-30 22:50:00
 categories: 我的创作
@@ -35,7 +35,7 @@ maybe
 
 【linux】 是否需要
 
-#### 浏览器类
+#### 浏览器类-360 极速
 
 【win】【安装版】360 极速浏览器 安全防护永远要放在第一位，鼠标悬停切换标签功能值得点赞。
 
@@ -43,7 +43,7 @@ maybe
 
 【linux】360 安全浏览器
 
-#### 工具 压缩
+#### 压缩解压-Bandzip
 
 【win】【安装版】bandzip 智能解压特别好用
 
@@ -51,11 +51,11 @@ maybe
 
 linux 系统一般用 tar 或 zip 命令。
 
-#### 输入法
+#### 输入法-微信输入法
 
 如果你 Win11 自带的输入法也不错，当你用起来很顺心可不用安装额外输入法
 
-【win mac】微信输入法，特有云粘贴板功能，现已支持跨设备粘贴文字和图片
+【win mac】**微信输入法**，特有云粘贴板功能，现已支持跨设备粘贴文字和图片
 <https://z.weixin.qq.com/>
 
 maybe
@@ -82,18 +82,14 @@ linux 平台
 
 百度和讯飞都有支持，据说还有个 ibus。
 
-#### 网盘类
+#### Office 或者 WPS
 
-【win mac】阿里云盘 <https://www.aliyundrive.com/drive/> 良心免费的网盘，大容量，高峰时段限速但一般没感觉。
+文字处理等办公必不可少。
 
-and
+### 网盘类
 
-【全平台】坚果云 <https://www.jianguoyun.com/s/downloads>
-
-not
-
-* 【win mac】天翼云盘 <https://cloud.189.cn/web/static/download-client/index.html> 由于对 mac 端同步功能缺失
-* 【win】夸克网盘 手机端还行
+1. 【win mac】阿里云盘 <https://www.aliyundrive.com/drive/> 主打大容量 + 同步功能，高峰时段限速但一般没感觉。
+2. 【全平台】坚果云 <https://www.jianguoyun.com/s/downloads> 主要用于文档
 
 - - -
 
@@ -105,11 +101,19 @@ linux 平台
 
 mac 平台
 
-依旧阿里云
+依旧阿里云 + 坚果云的组合。
 
-not 天翼云 犹豫一直都没更新了
+### 密码管理
 
-#### 工具 鼠标手势
+【全平台】[BitWarden](https://bitwarden.com/)  一款全平台的密码管理软件。
+
+bitwarden-clients <https://github.com/bitwarden/clients>
+
+<https://github.com/bitwarden/clients/releases/download/desktop-v2023.10.1/Bitwarden-Portable-2023.10.1.exe>
+
+### 工具类
+
+#### 鼠标手势
 
 win 平台
 
@@ -122,7 +126,7 @@ win 平台
 
 mac 平台
 
-betterAndBetter 免费且比目前付费的 wg 2 功能更加强大。
+betterAndBetter 免费且比目前付费的 wg 2 功能更加强大，还自带 mac 上需要的翻转鼠标功能，于是我卸载了 Scroll Reverser。
 
 - - -
 
@@ -132,11 +136,16 @@ linux 平台据说 easystroke 还能用。
 apt install easystroke
 ```
 
-#### 密码管理 Bitwarden
+#### 键盘增强
 
-【全平台】[BitWarden](https://bitwarden.com/)  一款全平台的密码管理软件。
+MyKeymap-2.0
+<https://xianyukang.com/MyKeymap.html> | GitHub 地址 <https://github.com/xianyukang/MyKeymap>
 
-### 工具类
+- - -
+
+mac 平台
+
+hammerspoon
 
 #### 截图
 
@@ -268,17 +277,6 @@ PS 【收费软件】
 mac 平台
 
 依旧【全平台】【重量】GIMP
-
-#### 键鼠增强
-
-MyKeymap-2.0
-<https://xianyukang.com/MyKeymap.html> | GitHub 地址 <https://github.com/xianyukang/MyKeymap>
-
-- - -
-
-mac 平台
-
-hammerspoon
 
 ### 办公类
 
@@ -413,7 +411,7 @@ bili 的 mac 版的本地播放能力也挺强的
 
 【win】荐片播放器官网 - 最新电影,播放器 <https://www.jianpian6.co/>
 
-【win】PotPlayer【本地】【首选】 PotPlayer高清影音播放器中文绿色版下载-PotPlayer中文网 <https://potplayer.org/>
+【win】PotPlayer【本地】【首选】 PotPlayer 高清影音播放器中文绿色版下载-PotPlayer中文网 <https://potplayer.org/>
 
 not
 
@@ -542,12 +540,8 @@ EV 录屏 还可以单独录音 <https://www.ieway.cn/evcapture.html>
 
 ScreenToGif 用于录制动图，可选格式 git ，apng 和 webp
 
-键盘显示
-
-【win】mulaRahul/keyviz: Keyviz is a free and open-source tool to visualize your keystrokes ⌨️ and 🖱️ mouse actions in real-time.
+键盘显示用【win】mulaRahul/keyviz: Keyviz is a free and open-source tool to visualize your keystrokes ⌨️ and 🖱️ mouse actions in real-time.
 <https://github.com/mulaRahul/keyviz>
-
-【mac】KeyCastr <https://github.com/keycastr/keycastr/releases>
 
 not
 
@@ -563,9 +557,11 @@ obs 有点卡
 
 mac 很多人都推荐免费的 Omi 录屏专家 或者用国产 ishot 的录屏功能就行
 
+键盘显示用【mac】KeyCastr <https://github.com/keycastr/keycastr/releases>
+
 not
 
-ev 录屏 由于很久都没更新了，然后鼠标左键邮件点击没有点击效果
+ev 录屏 由于很久都没更新了，然后鼠标点击也不体现点击效果，差评
 
 ### 文字转语音软件
 
@@ -632,7 +628,7 @@ mac 平台据说 ulysses 评价很高，但是收费就算了
 
 ### 清理卸载
 
-【win】极客卸载 简单清爽
+【win】极客卸载 Geek Uninstaller 简单清爽
 <https://geekuninstaller.com/download>
 
 or
@@ -767,13 +763,17 @@ proxmox-ve_8.0-2
 战网 | Battle.net
 <https://download.battle.net/zh-tw/desktop>
 
-雷神网游加速器-专线加速游戏，按分钟计费可暂停
+雷神网游加速器-专线加速游戏，按分钟计费可暂停 4600 小时才 139 元，虽然事后又搞活动是 139 元 5200 小时
 <https://www.leigod.com/>
 
-迅游网游加速器
-<https://www.xunyou.com/index.shtml>
+not
 
-## 关注中
+奇游加速器
+
+uu 太贵
+
+迅游网游加速器 太贵了
+<https://www.xunyou.com/index.shtml>
 
 ## 留观中
 
@@ -789,7 +789,7 @@ proxmox-ve_8.0-2
 * 迅雷影音 貌似会挂载后台默默上传资源，不太好，卸载了吧，即使字幕功能貌似还算好用
 * 央视影音【mac】 看直播还能一用，但是感觉有点卡
 * 猿如意 不让人满意
-* betterAndbetter【mac】 一款全局鼠标手势软件，还有一些其他功能，用了一会儿感觉不好用
+* [Advanced IP Scanner](https://www.advanced-ip-scanner.com/cn/) – 免费下载网络扫描程序 我不太喜欢安装版的
 * cursor 一款智能提示编写代码片段，现阶段暂时不好用
 * chrome【win, mac】没有鼠标手势
 * DisplayFusion【win】 可以管理拓展屏幕，留存吧。<https://www.displayfusion.com/>
@@ -800,7 +800,8 @@ proxmox-ve_8.0-2
 * finalshell 只有安装版，不好用
 * HiBitUninstaller-Portable【win】从界面上就觉得不太好用
 * JupyterLab 感觉不好用
-* Lively Wallpaper - Microsoft Store 应用程序 <https://apps.microsoft.com/store/detail/lively-wallpaper/* 9NTM2QC6QWS7> 占用 CPU 资源太大
+* Lively Wallpaper - Microsoft Store 应用程序 <<https://apps.microsoft.com/store/detail/lively-wallpaper/> 占用 CPU 资源太大
+* [Microsoft PowerToys | Microsoft Learn](https://learn.microsoft.com/zh-cn/windows/powertoys/)
 * monica 很好用的 ai 回答助手，不过每天才 30 次免费查询
 * paint.net.4.3.11.install.anycpu.web 一般般，貌似不跨平台
 * picpick 一般般
