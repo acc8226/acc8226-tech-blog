@@ -17,19 +17,19 @@ package pattern.structural.composite;
 
 public abstract class FileSystemNode {
 
-	protected String path;
+    protected String path;
 
-	public FileSystemNode(String path) {
-		this.path = path;
-	}
+    public FileSystemNode(String path) {
+        this.path = path;
+    }
 
-	public abstract long countNumOfFiles();
+    public abstract long countNumOfFiles();
 
-	public abstract long countSizeOfFiles();
+    public abstract long countSizeOfFiles();
 
-	public String getPath() {
-		return path;
-	}
+    public String getPath() {
+        return path;
+    }
 
 }
 ```
@@ -40,27 +40,27 @@ package pattern.structural.composite;
 
 public class File extends FileSystemNode {
 
-	public File(String path) {
-		super(path);
-	}
+    public File(String path) {
+        super(path);
+    }
 
-	@Override
-	public long countNumOfFiles() {
-		java.io.File file = new java.io.File(super.path);
-		if (file.exists()) {
-			return 1;
-		}
-		return 0;
-	}
+    @Override
+    public long countNumOfFiles() {
+        java.io.File file = new java.io.File(super.path);
+        if (file.exists()) {
+            return 1;
+        }
+        return 0;
+    }
 
-	@Override
-	public long countSizeOfFiles() {
-		java.io.File file = new java.io.File(super.path);
-		if (file.exists()) {
-			return file.length();
-		}
-		return 0;
-	}
+    @Override
+    public long countSizeOfFiles() {
+        java.io.File file = new java.io.File(super.path);
+        if (file.exists()) {
+            return file.length();
+        }
+        return 0;
+    }
 
 }
 ```
@@ -75,46 +75,46 @@ import java.util.List;
 
 public class Directory extends FileSystemNode {
 
-	private List<FileSystemNode> subNodes = new ArrayList<>();
+    private List<FileSystemNode> subNodes = new ArrayList<>();
 
-	public Directory(String path) {
-		super(path);
-	}
+    public Directory(String path) {
+        super(path);
+    }
 
-	@Override
-	public long countNumOfFiles() {
-		int countNum = 0;
-		for (int i = 0; i < this.subNodes.size(); i++) {
-			countNum += this.subNodes.get(i).countNumOfFiles();
-		}
-		return countNum;
-	}
+    @Override
+    public long countNumOfFiles() {
+        int countNum = 0;
+        for (int i = 0; i < this.subNodes.size(); i++) {
+            countNum += this.subNodes.get(i).countNumOfFiles();
+        }
+        return countNum;
+    }
 
-	@Override
-	public long countSizeOfFiles() {
-		int countSize = 0;
-		for (int i = 0; i < this.subNodes.size(); i++) {
-			countSize += this.subNodes.get(i).countSizeOfFiles();
-		}
-		return countSize;
-	}
+    @Override
+    public long countSizeOfFiles() {
+        int countSize = 0;
+        for (int i = 0; i < this.subNodes.size(); i++) {
+            countSize += this.subNodes.get(i).countSizeOfFiles();
+        }
+        return countSize;
+    }
 
-	public void addSubNode(FileSystemNode fileOrDir) {
-		this.subNodes.add(fileOrDir);
-	}
+    public void addSubNode(FileSystemNode fileOrDir) {
+        this.subNodes.add(fileOrDir);
+    }
 
-	public void removeSubNode(FileSystemNode fileOrDir) {
-		int size = subNodes.size();
-		int i = 0;
-		for (; i < size; ++i) {
-			if (subNodes.get(i).getPath().equalsIgnoreCase(fileOrDir.getPath())) {
-				break;
-			}
-		}
-		if (i < size) {
-			subNodes.remove(i);
-		}
-	}
+    public void removeSubNode(FileSystemNode fileOrDir) {
+        int size = subNodes.size();
+        int i = 0;
+        for (; i < size; ++i) {
+            if (subNodes.get(i).getPath().equalsIgnoreCase(fileOrDir.getPath())) {
+                break;
+            }
+        }
+        if (i < size) {
+            subNodes.remove(i);
+        }
+    }
 }
 ```
 
@@ -125,26 +125,26 @@ package pattern.structural.composite;
 
 public class Main {
 
-	public static void main(String[] args) {
-		Directory rootDir = new Directory("D:\\K_Workspace\\111\\src\\demo");
-		buildFileSystemNode(rootDir);
+    public static void main(String[] args) {
+        Directory rootDir = new Directory("D:\\K_Workspace\\111\\src\\demo");
+        buildFileSystemNode(rootDir);
 
-		System.out.println(rootDir.countNumOfFiles());
-		System.out.println(rootDir.countSizeOfFiles());
-	}
+        System.out.println(rootDir.countNumOfFiles());
+        System.out.println(rootDir.countSizeOfFiles());
+    }
 
-	private static void buildFileSystemNode(Directory dir) {
-		java.io.File file = new java.io.File(dir.getPath());
-		for (java.io.File f : file.listFiles()) {
-			if (f.isFile()) {
-				dir.addSubNode(new File(f.getPath()));
-			} else if (f.isDirectory()) {
-				Directory directory = new Directory(f.getPath());
-				dir.addSubNode(directory);
-				buildFileSystemNode(directory);
-			}
-		}
-	}
+    private static void buildFileSystemNode(Directory dir) {
+        java.io.File file = new java.io.File(dir.getPath());
+        for (java.io.File f : file.listFiles()) {
+            if (f.isFile()) {
+                dir.addSubNode(new File(f.getPath()));
+            } else if (f.isDirectory()) {
+                Directory directory = new Directory(f.getPath());
+                dir.addSubNode(directory);
+                buildFileSystemNode(directory);
+            }
+        }
+    }
 
 }
 ```

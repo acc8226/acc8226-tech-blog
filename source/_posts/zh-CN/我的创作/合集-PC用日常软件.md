@@ -164,7 +164,7 @@ not
 
 mac 平台
 
-我目前是 ishot + Snipaste 两者都用。其实我一直在等待 PixPin mac 版发布。
+我目前一直 Snipaste。其实我一直在等待 PixPin mac 版发布。
 
 not
 
@@ -241,7 +241,8 @@ ImageGlass 界面很现代
 not
 
 * acdsee 免费版都需要注册，差评
-* Honeyview <https://www.bandisoft.com/honeyview/> 页面太丑了
+* Honeyview <https://www.bandisoft.com/honeyview/> 页面太丑了，已过时
+* Bandiview <https://www.bandisoft.com/bandiview/> Honeyview 的升级版
 * jpegview 特点是小巧，但操作不顺手 <https://github.com/sylikc/jpegview/> 下载链接 <https://github.com/sylikc/jpegview/releases/download/v1.3.46/JPEGView32_1.3.46.7z>
 * XnView 界面不那么现代 <https://www.xnview.com/en/xnview/#downloads>
 
@@ -498,12 +499,14 @@ not
 
 utools 差点意思
 
-mykeymap 也不是此类软件
-
 - - -
 
 【mac】Raycast
 <https://www.raycast.com/>
+
+not
+
+rubick 还不够完整
 
 ### 阅读类
 
@@ -624,7 +627,11 @@ mac 平台据说 ulysses 评价很高，但是收费就算了
 
 ### 大文件分析 wiztree【win】
 
-<https://www.diskanalyzer.com/>
+[wiztree【win】](https://www.diskanalyzer.com/)
+
+or
+
+[SpaceSniffer](http://www.uderzo.it/main_products/space_sniffer/index.html)
 
 ### 清理卸载
 
@@ -642,6 +649,14 @@ ccleaner 只有安装版差评
 - - -
 
 mac 的腾讯柠檬清理已带了该功能
+
+or
+
+CCleaner mac 版目前免费呢
+
+not
+
+cleanmymac x 付费
 
 ### 内网通讯
 

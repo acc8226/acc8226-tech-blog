@@ -5,8 +5,7 @@ updated: 2022-11-16 17:47:00
 categories:
   - 安卓
   - UI 知识
-tags:
-- android
+tags: Android
 ---
 
 > View 的工作流程主要是指 measure、layout、draw 这三大流程，即测量、布局和绘制，其中 measure 确定 View 的测量宽/高，layout 确定 View 的最终宽/高和四个顶点的位置，而 draw 则将View绘制到屏幕上。

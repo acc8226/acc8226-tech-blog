@@ -134,7 +134,7 @@ class OnlineWork {
     public static void main(String[] args) {
         //对于嵌套的 for循环，如果在内循环内使用break语句有办法直接跳出外层循环吗？
 
-        // 比如我自创了这个问题: 找出标号为5的数,并返回查找次数
+        // 比如我自创了这个问题: 找出标号为 5 的数,并返回查找次数
         final int[][] array = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
         // 寻找次数
         int count, findNumber;

@@ -3,6 +3,7 @@ title: 安卓-教程 adb 命令参考
 date: 2017-01-03 13:04:14
 updated: 2022-11-16 17:47:00
 categories: IDE-使用
+tags: Android
 ---
 
 adb 工具位于 SDK 的 **platform-tools** 目录下，因此在命令行中使用 adb 的时候，需要通过 cd 命令，切换到该目录下，或者将 platform-tools 的路径添加到系统环境变量中，这样就可以直接使用了。

@@ -5,8 +5,7 @@ updated: 2022-10-06 20:35:00
 categories:
   - 安卓
   - 官方抄录
-tags:
-- android
+tags: Android
 ---
 
 <https://developer.android.google.cn/training/permissions/index.html>

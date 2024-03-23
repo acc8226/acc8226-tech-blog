@@ -1,5 +1,5 @@
 ---
-title: 合集-安卓软件
+title: 合集-安卓 App
 date: 2017-06-01 08:00:00
 updated: 2024-03-12 22:53:00
 ---
@@ -60,7 +60,7 @@ VLC (可倍速播放视频)
 
 ## 手机-必备
 
-### 手机管家
+### 手机管家 手机自带
 
 安卓自带的就行。否则可以选择腾讯和 360 两家瓜分了大部分用户。
 
@@ -77,27 +77,42 @@ and
 
 QQ 安全中心
 
-### 密码管理 bitwarden
+### Bitwarden
 
-密码 bitwarden 好用的可云端存储的密码管理器  
+密码管理  Bitwarden 可云端存储的密码管理器  
 <https://github.com/bitwarden/mobile/releases>
 
 <https://github.com/bitwarden/mobile/releases/download/v2023.10.0/com.x8bit.bitwarden-fdroid.apk>
 
-### 网易邮箱大师
+### QQ 邮箱
 
-相对 QQ 邮箱而言无广告
+QQ 邮箱
 
-### 讯飞有声
+or
 
-难道有免费收听时长的可听本地图书和 pdf 的 app。
+网易邮箱大师 可能 相对 QQ 邮箱而言无广告
 
-### 普听音乐
+### 看书
 
-由于搭配阿里云盘有新玩法，适合高级用户，普通用户还是选择 QQ 音乐吧。
-不是 spotify，因为必须开会员才好使
+讯飞有声 难道有免费收听时长的可听本地图书和 pdf 的 app，这可能是目前的一个较好的方案
 
-### 得到
+### 听歌
+
+普听音乐
+
+由于搭配阿里云盘有新玩法，适合高级用户，普通用户还是选择 QQ 音乐吧
+
+not
+
+spotify，因为必须开会员才好使
+
+### 听书
+
+得到非常好
+
+帆书 的限免还行
+
+极客时间 程序员必备
 
 ### 倒数日
 
@@ -158,7 +173,7 @@ AdGuard 安全和去部分广告和去骚扰信息三重加成 <https://adguard.
 
 GKD 搞快点 用于跳过广告 [下载地址](https://gkd.li/)
 
-**wifi 万能密钥** 偶尔可以来一下，不过现在确实能搜到的热点不多了
+**wifi 万能密钥** 偶尔可以用下，虽说现在的能用的热点不多了
 
 [shadowsocks](https://github.com/shadowsocks/shadowsocks-android)魔法上网用
 
@@ -348,10 +363,14 @@ not
 
 ## 云同步类
 
-123 网盘，文叔叔
 
 **阿里云盘** <https://sj.qq.com/appdetail/com.alicloud.databox> 一般会下载阿里网盘用于看视频
 坚果云 <https://sj.qq.com/appdetail/nutstore.android> 属于同步文档小帮手
+
+or
+
+* 文叔叔 匿名分享盘
+* 123 网盘 中规中矩
 
 not
 
@@ -399,42 +418,26 @@ apkpure 国外应用商店
 
 ### 其他记录
 
-```yml
-### 家庭必备
+```text
+家庭必备
 
-1.0 版本
-
-360 手机助手
-lbe 安全大师
+国家反诈中心
 qq 音乐
 uc 浏览器
 中华万年历
 凤凰视频
-小米遥控器
 我查查
 用药助手
-百度输入法
-
-2.0 版本
-
-国家反诈中心
 
 ### 备用机必备
 
-1.0 版本
-
-lbe 安全大师
-link2sd
-uc 经典版
+国家反诈中心
 vplayer 可变速播放
 wps
 智器阅读 当时很棒的可以裁掉白边
-百度云
-百度输入法 当时很棒的输入法
-
-2.0 版本
-
-国家反诈中心
+lbe 安全大师 已过时
+link2sd 已过时
+uc 经典版 目前浏览器几乎用不太到
 ```
 
 ## 参考

@@ -5,8 +5,7 @@ updated: 2022-11-16 17:47:00
 categories:
   - 安卓
   - 积累卷
-tags:
-- android
+tags: Android
 ---
 
 * 创建 Entry 的内部类, 该类实现 BaseColumns

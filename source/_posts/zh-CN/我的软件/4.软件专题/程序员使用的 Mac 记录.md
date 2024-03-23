@@ -19,20 +19,6 @@ macOS 缺失的软件包的管理器 — macOS 缺失的软件包的管理器
 > Homebrew：命令行效率工具的敲门砖 - 少数派
 <https://sspai.com/post/43021>
 
-抓包工具
-Charles Web Debugging Proxy
-<https://www.charlesproxy.com/>
-
-SVN 客户端
-Cornerstone for mac|Cornerstone Mac 版下载 V3.0.3 - PC6 苹果网
-<http://www.pc6.com/mac/111958.html>
-
-Dash for macOS - API Documentation Browser, Snippet Manager - Kapeli
-<https://kapeli.com/dash>
-
-Android Studio
-<https://developer.android.google.cn/studio>
-
 **mac 下个人 `bash_profile` 留存备份**
 
 `~/.bash_profile` 下这里记录我目前的配置

@@ -1,7 +1,7 @@
 ---
 title: Derby 简介
-date:
-categories:
+date: 2023-04-26 09:00:00
+updated: 2023-04-26 09:00:00
 ---
 
 Apache Derby 是一个 Apache DB 子项目，是一个完全用 Java 实现的开源关系数据库，可以在 Apache License 2.0 版本下使用。一些主要特点包括:

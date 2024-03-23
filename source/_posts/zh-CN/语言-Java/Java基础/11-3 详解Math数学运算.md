@@ -1,5 +1,5 @@
 ---
-title: 11-3 Java 数值类
+title: 详解 Java 的 Math 数学运算
 date: 2021.04.23 21:49:44
 updated: 2022-10-06 20:35:00
 categories:
@@ -291,7 +291,7 @@ int j = Math.round(12.34)
 int 转 char
 char c = (char)c;
 
-字符串转 int, 出错会抛  java.lang.NumberFormatException 运行时异常
+字符串转 int 出错会抛 java.lang.NumberFormatException 运行时异常
 int i=Integer.parseInt(s);
 
 int 转字符串

@@ -1,5 +1,5 @@
 ---
-title: Win 教程 4-3 基本使用
+title: Win 教程 3-2 基本使用
 date: 2019-10-01 22:08:33
 updated: 2022-11-05 13:45:00
 categories:
@@ -8,6 +8,10 @@ categories:
 ---
 
 ## 基本使用
+
+### 如何连接打印机
+
+通过官网或者光盘下载驱动后安装即可。
 
 ### windows 设置-设备(蓝牙、打印机、鼠标)
 
@@ -85,18 +89,36 @@ alt + 方向右 前进
 alt + 方向上 返回到上级/向上
 
 **浏览器类**
+Ctrl + D 添加到收藏
+Ctrl + N 新建窗口
 Ctrl + T：新建标签页（Tab）
 Ctrl + Shift + T：恢复关闭标签页（Tab）
 Ctrl + F：查找网页（Find）
-Ctrl + W：关闭标签页（Close Window）
+Ctrl + W / Ctrl + F4：关闭标签页（Close Window）
 Ctrl + R：刷新网页（Refresh）
 Ctrl + Tab：下一个标签页
 Ctrl + Shift + Tab：上一个标签页
 Ctrl + 1~8：第一到第八个标签页
 Ctrl + 9：最后一个标签页
 Ctrl + H：历史记录（History）
-Ctrl + J：打开下载窗口
+Ctrl + J：打开下载
 Ctrl + L：定位到地址栏（Location，Alt + D、F6 等效）
+向下翻页 空格键 或者 pageDown 键
+向上翻页 Shift + 空格键 或者 pageUp 键
+
+放大/缩小以及还原为默认缩放比例等操作。
+Windows, Chrome OS & Linux: Ctrl and +
+Windows, Chrome OS & Linux: Ctrl and -
+Windows, Chrome OS & Linux: Ctrl and 0
+
+反方向切换标签页
+Ctrl + Alt + TAB / control + alt + tab
+
+前进 / 后退
+Alt + 左方向键 / Alt + 右方向键
+
+借助此快捷键，您可以瞬间清除自己的浏览数据。
+Windows, Chrome OS & Linux: Ctrl + Shift + Delete
 
 ### 适用于 Windows 10/11 的触摸板手势
 
@@ -115,7 +137,7 @@ Ctrl + L：定位到地址栏（Location，Alt + D、F6 等效）
 
 ### 几种替代式 windows 快捷操作
 
-相对于鼠标点点点，有时候用键盘快捷键操作在执行效率上会更高一些，网上关于 windows 快捷键相关的文章非常多，而且都是非常常用的一些快捷操作。虽然如此，但还是有一些快捷操作你可能不知道的，下面IT技术资料分享网小编就给大家分享几种替代式的 windows 快捷操作，进一步丰富大家对快捷键操作的认识。
+相对于鼠标点点点，有时候用键盘快捷键操作在执行效率上会更高一些，网上关于 windows 快捷键相关的文章非常多，而且都是非常常用的一些快捷操作。虽然如此，但还是有一些快捷操作你可能不知道的，大家分享几种替代式的 windows 快捷操作，进一步丰富大家对快捷键操作的认识。
 
 Backspace
 即“退格键”，在编辑内容时可通过 Backspace 键进行删除。不过，你知道吗？除此之外，在“我的电脑”或 “windows 资源管理器”中可以通过 Backspace 键查看上一级文件夹而不删除任何内容。

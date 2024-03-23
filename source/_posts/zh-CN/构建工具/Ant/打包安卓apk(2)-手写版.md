@@ -5,8 +5,7 @@ updated: 2022-06-24 14:58:31
 categories:
   - 构建工具
   - Ant
-tags:
-- Ant
+tags: Ant
 ---
 
 接着上文, 直接上 ant 脚本

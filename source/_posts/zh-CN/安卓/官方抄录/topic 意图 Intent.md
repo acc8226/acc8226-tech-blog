@@ -5,8 +5,7 @@ updated: 2022-11-16 17:47:00
 categories:
   - 安卓
   - 官方抄录
-tags:
-- android
+tags: Android
 ---
 
 **意图**是安卓中重要核心组件之一。

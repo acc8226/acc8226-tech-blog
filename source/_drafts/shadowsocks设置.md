@@ -84,9 +84,6 @@ server 修改为 0.0.0.0
 server_port 修改为想使用的端口号
 password 修改为你自己的密码
 
-```json
-```
-
 ## 客户端使用
 
 shadowsocks/shadowsocks-windows: A C# port of shadowsocks
@@ -103,10 +100,8 @@ shadowsocks/ShadowsocksX-NG: Next Generation of ShadowsocksX
 3、关于 PAC 更新，你可以直接从 GFWList （由第三方维护）更新 PAC 文件，或者你可以手动编辑本地 pac 文件。需要更新 PAC：依次操作：PAC ->从 GFW List 更新 PAC （等待更新完毕后）->使用本地 PAC->启动系统代理。
 
 **服务器自动切换**
-
 负载均衡：随机选择服务器
 高可用：根据延迟和丢包率自动选择服务器
 
 **多实例**
-
 如果想使用其它工具如 SwitchyOmega 管理多个服务器，可以启动多个 Shadowsocks。 为了避免配置产生冲突，把 Shadowsocks 复制到一个新目录里，并给它设置一个新的本地端口。

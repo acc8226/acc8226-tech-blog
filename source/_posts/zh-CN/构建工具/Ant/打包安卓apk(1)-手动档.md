@@ -5,8 +5,7 @@ updated: 2022-06-23 10:53:12
 categories:
   - 构建工具
   - Ant
-tags:
-- Ant
+tags: Ant
 ---
 
 ![图](https://upload-images.jianshu.io/upload_images/1662509-e6e38c5ec874cd32.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)

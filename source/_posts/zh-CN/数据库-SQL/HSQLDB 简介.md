@@ -1,7 +1,7 @@
 ---
 title: HSQLDB 简介
-date:
-categories:
+date: 2023-04-26 09:00:00
+updated: 2023-04-26 09:00:00
 ---
 
 ## 参考

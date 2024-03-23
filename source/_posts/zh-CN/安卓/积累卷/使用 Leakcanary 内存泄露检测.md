@@ -5,8 +5,7 @@ updated: 2022-11-16 17:47:00
 categories:
   - 安卓
   - 积累卷
-tags:
-- android
+tags: Android
 ---
 
 ## 导入

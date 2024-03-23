@@ -5,8 +5,7 @@ updated: 2022-11-16 17:47:00
 categories:
   - 安卓
   - UI 知识
-tags:
-- android
+tags: Android
 ---
 
 ![ContentProvider](/images/安卓-UI知识/安卓-ContentProvider-详解/1.png)

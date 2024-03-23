@@ -224,11 +224,11 @@ setx -m name "%name%;value"
 
 ### Win 10 设置选项命令大全
 
-ms-settings打开设置
-ms-settings:batterysaver节电模式
-ms-settings:batterysaver-settings节电模式设置
-ms-settings:batterysaver-usagedetails电池用量
-ms-settings:personalization个性化
+ms-settings 打开设置
+ms-settings:batterysaver 节电模式
+ms-settings:batterysaver-settings 节电模式设置
+ms-settings:batterysaver-usagedetails 电池用量
+ms-settings:personalization 个性化
 ms-settings:colors个性化-颜色
 ms-settings:personalization-colors 个性化-颜色
 ms-settings:personalization-background 个性化-背景
@@ -236,7 +236,7 @@ ms-settings:lockscreen个性化-锁屏
 ms-settings:personalization-start 个性化-开始
 ms-settings:taskbar 个性化-任务栏
 ms-settings:themes 个性化-主题
-ms-settings:network 网络和Internet
+ms-settings:network 网络和 Internet
 ms-settings:datausage 数据使用量
 ms-settings:network-mobilehotspot 移动热点
 ms-settings:mobilehotspot移动热点
@@ -267,11 +267,11 @@ ms-settings:otherusers家庭和其他人员
 ms-settings:signinoptions 登录选项
 ms-settings:workplace访问工作单位或学校
 ms-settings:privacy隐私
-ms-settings:privacy-accountinfo账户信息
-ms-settings:privacy-backgroundapps后台应用
-ms-settings:privacy-calendar日历
-ms-settings:privacy-callhistory通话记录
-ms-settings:privacy-contacts联系人
+ms-settings:privacy-accountinfo 账户信息
+ms-settings:privacy-backgroundapps 后台应用
+ms-settings:privacy-calendar 日历
+ms-settings:privacy-callhistory 通话记录
+ms-settings:privacy-contacts 联系人
 ms-settings:privacy-customdevices 其他设备
 ms-settings:privacy-email 电子邮件
 ms-settings:privacy-feedback 反馈
@@ -279,10 +279,10 @@ ms-settings:privacy-location 位置
 ms-settings:privacy-messaging 消息传送
 ms-settings:privacy-microphone麦克风
 ms-settings:privacy-radios 无线电收发器
-ms-settings:privacy-speechtyping语音、墨迹书写和键入
-ms-settings:privacy-webcam相机
-ms-settings:windowsinsider更新和安全-获取Insider Preview版本
-ms-settings:windowsupdateWindows更新
+ms-settings:privacy-speechtyping 语音、墨迹书写和键入
+ms-settings:privacy-webcam 相机
+ms-settings:windowsinsider 更新和安全-获取 Insider Preview 版本
+ms-settings:windowsupdateWindows 更新
 ms-settings:windowsupdate-history 更新历史
 ms-settings:windowsupdate-options 高级设置
 ms-settings:windowsupdate-restartoptions 重启选项
