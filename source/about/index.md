@@ -6,8 +6,8 @@ comments: false
 
 ## 个人信息
 
-* 性 别：男&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;年 龄：30
-* 手 机：[17090412860](tel:17090412860)&emsp;&emsp;&emsp;&ensp;&ensp;&ensp;邮 箱：[acc8226@qq.com](mailto:acc8226@qq.com)
+* 性 别：男&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;年 龄：31
+* 手 机：[15313887091](tel:15313887091)&emsp;&emsp;&emsp;&ensp;&ensp;&ensp;邮 箱：[acc8226@qq.com](mailto:acc8226@qq.com)
 * 专 业：软件工程&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;岗 位：Java 后端开发
 
 ## 教育经历
@@ -20,8 +20,8 @@ comments: false
 
 * 北京云狐时代科技&emsp;&emsp;&emsp;2022.03~至今&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;软件部门-物联网后端 Java 开发
 * 宝利信通（北京）软件&emsp;2017.05~2022.03&emsp;&emsp;&emsp;&emsp; 金融事业部-新华项目组-后端 Java 开发
-* 北京云漾科技&emsp;&emsp;&emsp;&emsp;&emsp;2015.11~2017.03&emsp;&emsp;&emsp;&emsp; 移动部门-安卓开发
-* 北京盈合科技&emsp;&emsp;&emsp;&emsp;&emsp;2015.03~2015.09&emsp;&emsp;&emsp;&emsp; 移动部门-安卓开发
+* 北京云漾科技&emsp;&emsp;&emsp;&emsp;&emsp;2015.11~2017.03&emsp;&emsp;&emsp;&emsp; 软件部门-安卓 App 开发
+* 北京盈合科技&emsp;&emsp;&emsp;&emsp;&emsp;2015.03~2015.09&emsp;&emsp;&emsp;&emsp; 软件部门-安卓 App 开发
 
 ## 专业技能
 

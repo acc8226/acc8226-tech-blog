@@ -29,7 +29,7 @@ updated: 2024-03-12 22:53:00
 * 哔哩哔哩 HD
 * 央视影音 HD
 * 爱奇艺 HD
-* WPS 可以做到 Office 文档和 Pdf 通吃
+* WPS 可以做到 Office 文档和 PDF 通吃
 * QQ 音乐 HD
 * 阿里云盘
 
@@ -69,7 +69,7 @@ iOS 用户则必须安装其中一个，防诈骗。骗子和一些无量商家�
 
 最终，我添加了[国家反诈中心 app](https://sj.qq.com/appdetail/com.hicorenational.antifraud)实乃装机必备！！！
 
-### 安全
+### 1. 安全
 
 安全认证 Google Authenticator 为安全绝对不过分
 <https://google-authenticator.en.softonic.com/android>
@@ -80,14 +80,14 @@ QQ 安全中心
 
 天翼防骚扰 一般微信上关注公众号就够用，移动和联通也有对应的公众号关注后可以屏蔽国外来电
 
-### Bitwarden
+### 2. Bitwarden
 
 密码管理  Bitwarden 可云端存储的密码管理器  
 <https://github.com/bitwarden/mobile/releases>
 
 <https://github.com/bitwarden/mobile/releases/download/v2023.10.0/com.x8bit.bitwarden-fdroid.apk>
 
-### QQ 邮箱
+### 3. QQ 邮箱
 
 [QQ 邮箱](https://sj.qq.com/appdetail/com.tencent.androidqqmail) 不好之处是有点广告
 
@@ -95,7 +95,7 @@ or
 
 [网易邮箱大师](https://sj.qq.com/appdetail/com.netease.mail) 可能相对 QQ 邮箱而言无广告些吧
 
-### 阅读
+### 4. 阅读
 
 一款离线阅读器，可以读电子书，最好还要有订阅 rss 的功能，好难找目前没找到呢
 
@@ -121,42 +121,38 @@ not
 * 七猫
 * 少年得到 太幼稚
 * 凤凰 FM 偶尔闪退
-* 好用，安卓平台的 feeder 不好用只能做备选，看来rss 阅读器还是苹果平台的 redder
+* 安卓平台的 feeder 不好用只能做备选，看来rss 阅读器还是苹果平台的 redder
 
-### 听歌
+### 5. 音乐
 
-[普听音乐](https://music.codepublic.top/)
-
-由于搭配阿里云盘有新玩法，适合高级用户，普通用户还是选择 QQ 音乐吧
+* 洛雪音乐助手
+* [普听音乐](https://music.codepublic.top/) 由于搭配阿里云盘有新玩法，适合高级用户
 
 not
 
-spotify，因为必须开会员才好使
+* QQ 音乐 <https://sj.qq.com/appdetail/com.tencent.qqmusic> 比某抑云的广告少太多，资源也算丰富
+* spotify，因为必须开会员才好使
 
-### 听书
+### 6. 听书
 
 * 得到 <https://sj.qq.com/appdetail/com.luojilab.player> 非常好
 * 帆书 有时候可以捡些限免视频，开会员是不可能的
 * 极客时间 <https://sj.qq.com/appdetail/org.geekbang.geekTime> 程序员必备
 * 微信听书 <https://sj.qq.com/appdetail/com.tencent.wehear> 活动玩法多
 
-### 倒数日
+### 7. 倒数日
+
+[倒数日 · Days Matter](https://app.ipad.ly/idays)
 
 多端同步，除了苹果端、安卓端还有手表端。
 
-### 微信输入法
+### 8. 要知
 
-其中的跨设备粘贴真的绝了。
+阅读和听一些热点新闻
 
-android
-由于现在手机预装已经很不错了。且基本是由搜狗或百度、讯飞三家提供。
+## 2. 视频类
 
-iOS
-自带的也不错，否则依旧上面三家。
-
-## 2. 影音类
-
-* 主推 [猫头鹰文件](https://www.skyjos.cn/owlfiles/index.html)
+* [猫头鹰文件](https://www.skyjos.cn/owlfiles/index.html)
 
 es 文件浏览器 我称之为万能播放器，也有连接来自 alist 挂载的网盘和一定的音视频播放能力呢，在搭配 nas 和本地资源的情况下。好用除了有广告
 <http://www.estrongs.com/>
@@ -164,8 +160,6 @@ es 文件浏览器 我称之为万能播放器，也有连接来自 alist 挂载
 bilibili 无广告版 <https://github.com/lucinhu/bili_you/releases>
 or bilibili <https://sj.qq.com/appdetail/tv.danmaku.bili> 原版 还能创作
 or bilibili 国际版 因为清爽呀
-
-QQ 音乐 <https://sj.qq.com/appdetail/com.tencent.qqmusic> 比某抑云的广告少太多，资源也算丰富
 
 西瓜视频 无广告 还能创作
 
@@ -177,7 +171,6 @@ not
 
 reex 的使用： url 可以填写微 `http://xx.xx.xx.xxx:5244/dav` 然后用户名 和 密码填写 alist 的信息即可。但是一段时间没更新了，然后官网我也没找到 <https://www.aliyundrive.com/s/cf3p39UXkxa/folder/63e8e0027b7473f82cc64bbb9be0a34794c32c07>
 
-* 洛雪音乐助手 废了
 * [网易云](https://sj.qq.com/appdetail/com.netease.cloudmusic) 和上面那位重复了且歌没这么多，且体验稍微差点
 * 酷狗 <https://sj.qq.com/appdetail/com.kugou.android> 和上面那位重复了
 * 酷我 也是重复了
@@ -196,8 +189,21 @@ vlc 在 webdav 方面自定义选项不足
 
 ## 3. 工具类
 
-* [shadow socks](https://github.com/shadowsocks/shadowsocks-android) 魔法上网用
 * GKD 搞快点 用于跳过广告 [下载地址](https://gkd.li/)
+* [shadow socks](https://github.com/shadowsocks/shadowsocks-android) 魔法上网用
+* 微信输入法
+
+其中的跨设备粘贴绝了
+
+android
+由于现在手机预装已经很不错了。且基本是由搜狗或百度、讯飞三家提供
+
+iOS
+自带的也不错，否则依旧上面三家
+
+备用
+
+火狐浏览器 目前还不算完善呢
 
 **wifi 万能密钥** 偶尔可以用下，虽说现在的能用的热点不多了
 
@@ -206,23 +212,19 @@ vlc 在 webdav 方面自定义选项不足
 快递 100 查和寄快递
 [小度音箱](https://sj.qq.com/appdetail/com.baidu.duer.superapp) 硬件绑定的应用，不得不用
 
-or
-
-* 纯纯写作 很好用，但是收费就算了
-* uc 浏览器 有广告但是免流呀
-
 not
 
+* 纯纯写作 很好用，但是收费就算了
+* uc 浏览器 有广告 虽免流也要 1 天 1 元呢
 * 李跳跳 已下架
 * 真实好友 最新版没适配住
-
-QQ 浏览器 有广告
-狐猴浏览器 感觉不完善
-kiwi 浏览器 一般般，显示国家图片的插件而且不能用，虽然说支持谷歌插件没错
-输入法类 搜狗百度之类的有手机自带合作的，没必要了
-快递 100 https://sj.qq.com/appdetail/com.Kingdee.Express 最近寄快递选【德邦】确实便宜写，不过体积和重量两者对方是按大的来，情有可原吧。第一次用快递 100 我领了一个 5 月的优惠券，赶紧还行，一般足够用
-[北京云法庭](http://sspt.bjcourt.gov.cn/bcourt/onlineCourt/downloadYm)  我在某些情况下会用到 法 yuan 就是垃圾，法 guan 也是，拖了好长时间，卸载了吧，我没证据，我理亏，我 b 万没了，以后一定要多思考
-北京法院 一类应用
+* QQ 浏览器 有广告
+* 狐猴浏览器 感觉不完善
+* kiwi 浏览器 一般般，显示国家图片的插件而且不能用，虽然说支持谷歌插件没错
+* 输入法类 搜狗百度之类的有手机自带合作的，没必要了
+* 快递 100 https://sj.qq.com/appdetail/com.Kingdee.Express 最近寄快递选【德邦】确实便宜写，不过体积和重* 量两者对方是按大的来，情有可原吧。第一次用快递 100 我领了一个 5 月的优惠券，赶紧还行，一般足够用
+* [北京云法庭](http://sspt.bjcourt.gov.cn/bcourt/onlineCourt/downloadYm)  我在某些情况下会用到 法  yuan 就是垃圾，法 guan 也是，拖了好长时间，卸载了吧，我没证据，我理亏，我 b 万没了，以后一定要多思考
+* 北京法院 一类应用
 
 ## 4. 购物类
 
@@ -338,7 +340,7 @@ or
 
 数字人民币 现放开了注册，但是生态还不完善，然后 170 的收集也注册不了，现在我是用 153 的号码进行注册的。
 
-## 12. 云同步
+## 12. 云端
 
 * [**阿里云盘**](https://sj.qq.com/appdetail/com.alicloud.databox) 一般会下载阿里网盘用于看视频
 * 坚果云 <https://sj.qq.com/appdetail/nutstore.android> 属于同步文档小帮手
@@ -356,7 +358,11 @@ not
 * 有道云笔记 限制 2 台设备
 * flomo 笔记 用不习惯
 
-## 13. 应用商店类
+##  13. 效率类
+
+TODO 清单
+
+## 14. 应用商店类
 
 * 国际服游戏下载-GamesToday 官网 <https://www.hotplaygames.com/>
 * [apkpure](https://apkpure.com/cn/) 一个有国外的应用商店

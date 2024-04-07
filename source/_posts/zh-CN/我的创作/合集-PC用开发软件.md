@@ -174,6 +174,9 @@ not
 
 ## 7. lang 编程语言
 
+### ahk
+
+
 ### java
 
 【cli】[Java](https://www.oracle.com/java/technologies/javase-downloads.html) 程序员当然选它了。

@@ -1,5 +1,5 @@
 ---
-title: Java 编程规约【10】-前后端规约
+title: Java 编程规约【10】前后端规约
 date: 2022-05-16 11:09:19
 updated: 2022-11-05 10:46:00
 categories: 文档规约

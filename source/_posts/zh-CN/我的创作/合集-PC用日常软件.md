@@ -15,7 +15,7 @@ categories: 我的创作
 
 ### 必备
 
-#### 电脑管家
+#### 1. 电脑管家
 
 普通 windows 用户可二选一：[【win】腾讯电脑管家【安装版】](https://guanjia.qq.com/) 或 [【win】360 安全卫士【安装版】](https://weishi.360.cn/)
 
@@ -35,23 +35,19 @@ maybe
 
 【linux】 是否需要
 
-#### 浏览器类-360 极速
+#### 2. 浏览器类-360 极速
 
-【win】【安装版】360 极速浏览器 安全防护永远要放在第一位，鼠标悬停切换标签功能值得点赞。
+* 【win】【安装版】360 极速浏览器 安全防护永远要放在第一位，鼠标悬停切换标签功能值得点赞。
+* 【mac】360 极速浏览器
+* 【linux】360 安全浏览器
 
-【mac】360 极速浏览器
+#### 3. 压缩解压
 
-【linux】360 安全浏览器
+* [【win】【安装版】bandzip](https://www.bandisoft.com/) 智能解压特别好用
+* [【mac】The Unarchiver【App Store版】](https://theunarchiver.com/)
+* linux 系统一般用 tar 或 zip 命令。
 
-#### 压缩解压-Bandzip
-
-【win】【安装版】bandzip 智能解压特别好用
-
-【mac】The Unarchiver【App Store版】
-
-linux 系统一般用 tar 或 zip 命令。
-
-#### 输入法-微信输入法
+#### 4. 输入法-微信输入法
 
 如果你 Win11 自带的输入法也不错，当你用起来很顺心可不用安装额外输入法
 
@@ -77,18 +73,33 @@ not
 
 linux 平台
 
-搜狗
-<https://shurufa.sogou.com/linux>
+搜狗 <https://shurufa.sogou.com/linux>
 
 百度和讯飞都有支持，据说还有个 ibus。
 
-#### Office 或者 WPS
+#### 5. Office
 
-文字处理等办公必不可少。
+【全平台】libreoffice <https://zh-cn.libreoffice.org/download/libreoffice/>
 
-### 网盘类
+libreoffice 源1 - 清华源
+<https://mirrors.tuna.tsinghua.edu.cn/libreoffice/libreoffice/stable/>
 
-1. 【win mac】阿里云盘 <https://www.aliyundrive.com/drive/> 主打大容量 + 同步功能，高峰时段限速但一般没感觉。
+libreoffice 源2 - 腾讯源
+<https://mirrors.cloud.tencent.com/libreoffice/libreoffice/stable/>
+
+or
+
+【全平台】WPS <https://www.wps.cn/>
+
+- - -
+
+mac 平台
+
+在除了 iWork 系列 外还是选择 libreoffice 和 WPS
+
+### 网盘
+
+1. 【win mac】阿里云盘 <https://www.aliyundrive.com/drive/> 主打大容量 + 同步功能，高峰时段限速但一般没感觉。 + 猫头鹰文件
 2. 【全平台】坚果云 <https://www.jianguoyun.com/s/downloads> 主要用于文档
 
 - - -
@@ -107,15 +118,9 @@ mac 平台
 
 【全平台】[BitWarden](https://bitwarden.com/)  一款全平台的密码管理软件。
 
-bitwarden-clients <https://github.com/bitwarden/clients>
-
-<https://github.com/bitwarden/clients/releases/download/desktop-v2023.10.1/Bitwarden-Portable-2023.10.1.exe>
-
 ### 工具类
 
-#### 鼠标手势
-
-win 平台
+#### 1. 鼠标手势
 
 【收费】WGestures 2 鼠标手势 | YingDev
 <https://www.yingdev.com/projects/wgestures2>
@@ -136,29 +141,31 @@ linux 平台据说 easystroke 还能用。
 apt install easystroke
 ```
 
-#### 键盘增强
+#### 2. 键盘增强
 
-MyKeymap-2.0
-<https://xianyukang.com/MyKeymap.html> | GitHub 地址 <https://github.com/xianyukang/MyKeymap>
+1. 【win】【自制】捷键
+2. 【win】MyKeymap-2.0 <https://xianyukang.com/MyKeymap.html> | GitHub 地址 <https://github.com/xianyukang/MyKeymap>
 
 - - -
 
 mac 平台
 
-hammerspoon
+【mac】hammerspoon + 自制脚本
 
-#### 截图
+#### 3. 截图
 
 【win】PixPin <https://pixpinapp.com/> mac 版即将推出
 <https://download.pixpinapp.com/PixPin_1.3.1.0.exe>
 
+or
+
+[sharex](https://getsharex.com/) 留存，这家伙还可以截图和简单编辑图
+
 not
 
-【win mac】Snipaste <https://zh.snipaste.com/> 免费版不支持长截图
-
-【win】【新版收费】 FSCapture
-
-【win】picpick_portable 说不上哪不好
+* 【win mac】Snipaste <https://zh.snipaste.com/> 免费版不支持长截图
+* 【win】【新版收费】 FSCapture
+* 【win】picpick_portable 说不上哪不好
 
 - - -
 
@@ -168,13 +175,12 @@ mac 平台
 
 not
 
-单独的 ishot 免费版有水印，且免费版不能贴图
+* 单独的 ishot 免费版有水印，且免费版不能贴图
+* 单独的 Snipaste 免费版功能有限
 
-单独的 Snipaste 免费版功能有限
+#### 4. 下载
 
-#### 下载
-
-【全平台】motrix【首选】 <https://motrix.app/zh-CN/> | [下载页](https://motrix.app/zh-CN/download) 颜值高。支持下载 HTTP、FTP、BT、磁力链接等资源。即使 Github 资源也不在话下。
+【全平台】motrix【首选】 <https://motrix.app/zh-CN/> | [下载页](https://motrix.app/zh-CN/download) 颜值高。支持下载 HTTP、FTP、BT、磁力链接等资源。即使 Github 资源也不在话下
 
 and
 
@@ -213,22 +219,27 @@ motrix
 
 not
 
-downie 收费
+* downie 收费
+* vdown 暂时不完善
 
-#### 护眼
+#### 5. 护眼
 
-【win mac】【安装版】flux <https://justgetflux.com/>
-
-EyesGuard 定时提醒眼睛休息 ~~由于作者说微软商店不再提供更新~~，所以还是去 github 下载最新版本
+1. 【win mac】【安装版】flux <https://justgetflux.com/>
+2. EyesGuard 定时提醒眼睛休息 ~~由于作者说微软商店不再提供更新~~，所以还是去 github 下载最新版本
 <https://github.com/avestura/EyesGuard/releases/>
 
 - - -
 
 mac 平台
 
-【mac win】依旧 flux <https://justgetflux.com/>
+1. 【mac win】依旧 flux <https://justgetflux.com/>
+2. 【appstore】一休 定时提醒
 
-#### 看图
+not
+
+stretchly 图标每次突然弹出很突兀且选项太多了
+
+#### 6. 看图
 
 菠萝看图 BLumia/pineapple-pictures: A homebrew lightweight image viewer.
 <https://github.com/BLumia/pineapple-pictures>
@@ -250,9 +261,9 @@ not
 
 mac 平台
 
-picview <https://wl879.github.io/apps/picview/index.html>
+[Picture View](https://wl879.github.io/apps/picview/index.html)
 
-#### 图像处理
+#### 7. 图像处理
 
 【win】【轻量】ShareX <https://getsharex.com/> 也可以贴图，不过我更当是一个图片编辑器
 [ShareX-15.0.0-portable 下载](https://github.com/ShareX/ShareX/releases/download/v15.0.0/ShareX-15.0.0-portable.zip)
@@ -281,7 +292,7 @@ mac 平台
 
 ### 办公类
 
-#### 移动办公
+#### 办公
 
 防诈骗！！！一定不要开启屏幕共享
 
@@ -316,26 +327,6 @@ thunderbird <https://www.thunderbird.net/zh-CN/>
 - - -
 
 【mac win】网易邮箱大师 <https://dashi.163.com/>
-
-#### Office 文档
-
-【全平台】libreoffice <https://zh-cn.libreoffice.org/download/libreoffice/>
-
-libreoffice 源1 - 清华
-<https://mirrors.tuna.tsinghua.edu.cn/libreoffice/libreoffice/stable/>
-
-libreoffice 源2 - 腾讯
-<https://mirrors.cloud.tencent.com/libreoffice/libreoffice/stable/>
-
-or
-
-【全平台】WPS <https://www.wps.cn/>
-
-- - -
-
-mac 平台
-
-在除了 iWork 系列 外还是选择 libreoffice
 
 #### PDF 文档
 
@@ -374,22 +365,14 @@ Xmind 思维导图 <https://xmind.cn/>
 
 ### 音频类
 
-【win mac】普通用户推荐【在线】QQ 音乐 <https://y.qq.com/download/index.html>
-
-【魔法】高级用户推荐Spotify PC 版 曲库很全，但是非会员稍有限制，需要魔法才好
-
-【win mac】汽水音乐也能优秀，不过 vip 的体验更好
+1. 【win mac】普通用户推荐【在线】QQ 音乐 <https://y.qq.com/download/index.html>
+2. 【备用】方格音乐 由于可以下载歌曲 <http://morin.vin/>
+3. 【win】MusicPlayer2【本地】MusicPlayer2 <https://github.com/zhongyang219/MusicPlayer2>
+4. 【win】普听音乐。在阿里云盘的加持下很好用，前提是有自己的曲库
 
 or
 
-【备用】方格音乐 由于可以下载歌曲
-<http://morin.vin/>
-
-【win】MusicPlayer2【本地】MusicPlayer2 <https://github.com/zhongyang219/MusicPlayer2>
-
-【win】普听音乐。在阿里云盘的加持下很好用，前提是有自己的曲库
-
-建议修改下快捷键。设置上一首和下一首的快捷键分别为 ctrl + left / right
+【win mac】汽水音乐也能优秀，不过 vip 的体验更好
 
 not
 
@@ -397,22 +380,21 @@ not
 * 酷狗音乐 没落的不行了
 * 千千音乐 快捷键都不支持，体验极差
 * Spotube 开了魔法也不好用
+* Spotify PC 版 曲库很全，但是非会员稍有限制，需要魔法
 
 - - -
 
-mac 平台的本地音乐播放器 可能是 foobar2000 吧
-<https://www.foobar2000.org/>
+mac 平台
 
-但是歌词搜索呢
+本地音乐播放器 可能是 [foobar2000](https://www.foobar2000.org/) 吧，但是歌词搜索呢，差很多意思
+在线选 QQ 音乐
 
 ### 视频类
 
-【win mac】哔哩哔哩【在线】【本地】【首选】 哔哩哔哩下载中心 <https://app.bilibili.com/>
+1. [【win mac】哔哩哔哩](https://app.bilibili.com/)在线【本地】【首选】 哔哩哔哩下载中心  
 bili 的 mac 版的本地播放能力也挺强的
-
-【win】荐片播放器官网 - 最新电影,播放器 <https://www.jianpian6.co/>
-
-【win】PotPlayer【本地】【首选】 PotPlayer 高清影音播放器中文绿色版下载-PotPlayer中文网 <https://potplayer.org/>
+2. [【win】荐片播放器官网](https://www.jianpian6.co/) - 最新电影,播放器 
+3. [【win】PotPlayer](https://potplayer.org/)【本地】【首选】 PotPlayer 高清影音播放器中文绿色版下载-PotPlayer中文网
 
 not
 
@@ -428,15 +410,19 @@ not
 
 - - -
 
-mac 平台使用 哔哩哔哩
+mac 平台
+
+1. 哔哩哔哩
+2. vidhub
+3. 优酷 可以免费看很多剧
 
 ### 社交类
 
-【win mac】微信 <https://weixin.qq.com/>
+[【win mac】微信](https://weixin.qq.com/)
 
-【全平台】QQ <https://im.qq.com/index/>
+[【全平台】QQ](https://im.qq.com/index)
 
-【win】Tim <https://tim.qq.com/download.html>
+[【win】Tim](https://tim.qq.com/download.html)
 
 not
 
@@ -450,9 +436,8 @@ mac 平台
 
 ### 教育类
 
-【全平台】欧路词典 <https://www.eudic.net/v4/en/app/download>
-
-【全平台】每日英语听力 <https://www.eudic.net/v4/en/app/ting>
+1. [【全平台】每日英语听力 ](https://www.eudic.net/v4/en/app/ting)
+2. [【全平台】欧路词典](https://www.eudic.net/v4/en/app/download)
 
 ### 远程类
 
@@ -497,7 +482,7 @@ not
 
 not
 
-utools 差点意思
+utools【win, mac】 总感觉美中不足，让我弃用了它。
 
 - - -
 
@@ -517,80 +502,77 @@ rubick 还不够完整
 
 mac 平台
 
-Reeder 用于 rss
-
-kindle 似乎已经都没了
+1. kindle
+2. Reeder 用于 rss
+3. 杂志天下
 
 ## 拓展
 
-### 驱动管理
+### 0. 驱动管理
 
 驱动管理：[驱动精灵](http://www.drivergenius.com/) / [驱动人生](https://www.160.com/) 二选一。从此不用担心驱动光盘📀丢失。
 
-### 激活类
+### 1. 激活类
 
 HEU KMS Activator <https://dl.lancdn.com/landian/soft/heu/>
 
-### 工具 OCR 软件
+### 2. OCR 软件
 
-【win】Umi-OCR-OCR 图片转文字识别软件 <https://github.com/hiroi-sora/Umi-OCR>
+[【win】Umi-OCR-OCR](https://github.com/hiroi-sora/Umi-OCR) 图片转文字识别软件
 
 【win mac】[已购] 工具 极度扫描-文字识别-OCR <https://jidusm.wrste.com/>
 
-### 工具 录屏软件
+### 3. 录屏软件
 
-EV 录屏 还可以单独录音 <https://www.ieway.cn/evcapture.html>
-
-ScreenToGif 用于录制动图，可选格式 git ，apng 和 webp
-
-键盘显示用【win】mulaRahul/keyviz: Keyviz is a free and open-source tool to visualize your keystrokes ⌨️ and 🖱️ mouse actions in real-time.
-<https://github.com/mulaRahul/keyviz>
+1. [EV 录屏](https://www.ieway.cn/evcapture.html) 选项中规中矩，足够正常使用，譬如可以单独录制声音，录制时鼠标有黄色光晕标识
+2. [ScreenToGif](https://www.screentogif.com/) 录屏可导出为 gif、apng 或 webp 动图
+3. [keyviz](https://github.com/mulaRahul/keyviz)是一个免费的开源工具，能够可视化键盘击键和鼠标实时动作，我一般搭配录屏软件使用
 
 not
 
-LICEcap 1.26 不够强大
-
-Bandicam 班迪录屏 10 分种内才免费，不过体验极好
-
-obs 有点卡
-
-【win】KeyCastOW 颜值差点意思
+* 【win】Bandicam 班迪录屏 10 分种内才免费，不过体验极好
+* 【win mac】LICEcap 没 ScreenToGif 强大，但是也非常有特色
+* 【全平台】obs 有点卡
+* 【win】KeyCastOW 颜值差点意思
 
 - - -
 
-mac 很多人都推荐免费的 Omi 录屏专家 或者用国产 ishot 的录屏功能就行
+mac
 
-键盘显示用【mac】KeyCastr <https://github.com/keycastr/keycastr/releases>
+1. Omi 录屏专家 只能说基本够用
+2. 【mac win】[LICEcap](https://www.cockos.com/licecap/) 用于录制 gif
+3. 键盘显示用[【mac】KeyCastr](https://github.com/keycastr/keycastr/releases)
 
 not
 
-ev 录屏 由于很久都没更新了，然后鼠标点击也不体现点击效果，差评
+* 国产 ishot 的录屏
+* ev 录屏 由于很久都没更新了，然后鼠标点击也不体现点击效果，差评
+* FocuSee 需要登录账号
 
-### 文字转语音软件
+### 4. tts 文字转语音软件
 
 【win】tts-vue: 🎤 微软语音合成工具，使用 Electron + Vue + ElementPlus + Vite 构建，将文字转为语音 MP3。
 <https://gitee.com/LGW_space/tts-vue>
 
-### 文件搜索
+### 5. 文件搜索
 
-工具 文件  Everything【绿色版】【win】<https://www.voidtools.com/zh-cn/downloads/>
+工具 文件 Everything【绿色版】【win】<https://www.voidtools.com/zh-cn/downloads/>
 
 文档中搜索关键字 【win】工具 FileSearchEX_v1.1.0.6
 
-### 显示网速 TrafficMonitor【win】
+### 6. 显示网速
 
-<https://github.com/zhongyang219/TrafficMonitor>
+[TrafficMonitor【win】](https://github.com/zhongyang219/TrafficMonitor)
 
 - - -
 
 mac 的腾讯柠檬清理已经自带了该功能
 
-### DNS 相关【win】
+### 7. DNS 相关【win】
 
 **DNS 优选**
 
-Dns Jumper v2.3 - A Free DNS Changer
-<https://www.sordum.org/7952/dns-jumper-v2-3/>
+[Dns Jumper v2.3 - A Free DNS Changer](https://www.sordum.org/7952/dns-jumper-v2-3/)
 
 or
 
@@ -611,21 +593,20 @@ YogaDNS 【win】 <https://yogadns.com/> 但免费版只允许设置一个 dns�
 github AdguardHome
 <https://github.com/AdguardTeam/AdguardHome>
 
-### markdown 编辑
+### 8. markdown 编辑
 
 marktext <https://github.com/marktext/marktext/releases>
 
 not
 
-typora 收费就算了，但是很适合初学者
-
-MarkdownPad2 <http://markdownpad.com/> 感觉差点意思
+* typora 收费就算了，但是很适合初学者
+* 【win】MarkdownPad2 <http://markdownpad.com/> 感觉差点意思
 
 - - -
 
 mac 平台据说 ulysses 评价很高，但是收费就算了
 
-### 大文件分析 wiztree【win】
+### 9. 大文件分析
 
 [wiztree【win】](https://www.diskanalyzer.com/)
 
@@ -633,14 +614,13 @@ or
 
 [SpaceSniffer](http://www.uderzo.it/main_products/space_sniffer/index.html)
 
-### 清理卸载
+### 10. 清理卸载
 
-【win】极客卸载 Geek Uninstaller 简单清爽
-<https://geekuninstaller.com/download>
+【win】极客卸载 Geek Uninstaller 简单清爽 <https://geekuninstaller.com/download>
 
 or
 
-【win】[HiBitSoftware](https://www.hibitsoft.ir/) 功能强大
+[【win】HiBitUninstaller](https://www.hibitsoft.ir/Uninstaller.html) 卸载功能更强大
 
 not
 
@@ -650,15 +630,13 @@ ccleaner 只有安装版差评
 
 mac 的腾讯柠檬清理已带了该功能
 
-or
-
-CCleaner mac 版目前免费呢
-
 not
 
-cleanmymac x 付费
+* CCleaner mac 版目前免费版功能有限
+* cleanmymac x 付费
+* app cleaner & unstall 付费
 
-### 内网通讯
+### 11. 内网通讯
 
 内网通【安装版】【win】有广告但是没招，目前较为好用的软件
 <http://www.51nwt.com/index.htm>
@@ -667,83 +645,99 @@ cleanmymac x 付费
 
 mac 平台暂时没找到好用的
 
-### 手机助手
+### 12. 手机助手
 
 Android 用户可选择 [腾讯应用宝 PC 版](https://sj.qq.com/) / [360 手机助手PC版](http://sj.360.cn/index.html)
 
-iOS 用户可下载 iTunes 或者某些国产助手
+iOS 用户可下载 iTunes 或者某国产助手
 
-### 光驱刻录
+### 13. 光驱镜像
 
-win 11 自带一般够用，现在光驱都淘汰了。
+如果要刻录的话，win 11 自带一般够用，现在光驱都淘汰了。
 
-虚拟光驱可用于加载 iso 文件到我的电脑，这里推荐 软媒魔方套件。
+虚拟光驱可用于加载 iso 文件到我的电脑，这里我推荐软媒魔方套件。
 
-### 磁盘工具
+### 14. 磁盘工具
 
-工具 系统 傲梅分区助手【win】 <https://www.disktool.cn/download.html>
+* 工具 系统 傲梅分区助手【win】 <https://www.disktool.cn/download.html>
+* diskgenius
 
-diskgenius
-
-### U 盘引导
-
-微 PE 工具箱 - 超好用的装机维护工具。主打纯净
-<https://www.wepe.com.cn/>
-
-or
+### 15. U 盘引导
 
 [Ventoy](https://www.ventoy.net/cn/index.html)
 
-### 系统辅助
+【win】【备用】微 PE 工具箱 - 超好用的装机维护工具。主打纯净 <https://www.wepe.com.cn/>
 
-微软 Sysinternals【win】 <https://learn.microsoft.com/zh-cn/sysinternals/>
+### 16. 微软 buff
 
-AutoHotkey 【win】<https://www.autohotkey.com/> + upx-4.0.2 用于辅助 ahk 进行加密
+* [【win】【备用】微软 Sysinternals](https://learn.microsoft.com/zh-cn/sysinternals/)
+* [Microsoft PowerToys](https://learn.microsoft.com/zh-cn/windows/powertoys/)
 
-## 专业
+### 17. 效率工具
 
-### 虚拟机
-
-* 【mac】Fusion【首选】<https://www.vmware.com/products/fusion.html>
-* 【mac】Parallels【付费】 <https://www.parallels.cn/>
-* 【win】VMware Workstation Player【首选】 <https://www.vmware.com/products/workstation-player.html>
-* 【全平台】VirtualBox【备选】<https://www.virtualbox.org/wiki/Downloads>
-
-### 网盘搭建
-
-AList 文档 <https://alist.nn.ci/zh/>
-
-### 网络代理
-
-【server】shadowsocks-shadowsocks-rust- A Rust port of shadowsocks <https://github.com/shadowsocks/shadowsocks-rust>
-
-【win】shadowsocks-shadowsocks-windows- A C# port of shadowsocks <https://github.com/shadowsocks/shadowsocks-windows>
-
-【mac】shadowsocks-ShadowsocksX-NG- Next Generation of ShadowsocksX <https://github.com/shadowsocks/ShadowsocksX-NG>
-
-【android】shadowsocks-shadowsocks-android- A shadowsocks client for Android <https://github.com/shadowsocks/shadowsocks-android>
+* [【跨平台】Espanso](https://espanso.org/)文字输入增强
 
 not
 
-ClearVPN 免费版的套餐基本废了
+* Listary 虽说效率神器但是不好用
+* quicker 虽说是效率神器，但是我用不习惯
 
-### 内网转发
+### 18. mac 特有
+
+#### 鼠标翻转
+
+bab 可以开启该功能
+ 
+【备用】[【mac】scrollreverser](https://pilotmoon.com/scrollreverser/)
+
+#### 电源管理
+
+[【mac】AlDente - 负载限制器](https://apphousekitchen.com/)
+
+## 专业
+
+### 00. 虚拟机
+
+* 【mac】Fusion【首选】<https://www.vmware.com/products/fusion.html>
+* 【win】VMware Workstation Player【首选】 <https://www.vmware.com/products/workstation-player.html>
+* 【全平台】VirtualBox【备选】<https://www.virtualbox.org/wiki/Downloads>
+
+not
+
+* 【mac】Parallels【付费】 <https://www.parallels.cn/> 买断只能买一个大版本
+
+### 01. 网盘搭建
+
+AList 文档 <https://alist.nn.ci/zh/>
+
+### 02. 网络代理
+
+* 【server】shadowsocks-shadowsocks-rust- A Rust port of shadowsocks <https://github.com/* shadowsocks/shadowsocks-rust>
+* 【win】shadowsocks-shadowsocks-windows- A C# port of shadowsocks <https://github.com/* shadowsocks/shadowsocks-windows>
+* 【mac】shadowsocks-ShadowsocksX-NG- Next Generation of ShadowsocksX <https://github.com/* shadowsocks/ShadowsocksX-NG>
+* 【android】shadowsocks-shadowsocks-android- A shadowsocks client for Android <https://github.com/shadowsocks/shadowsocks-android>
+
+not
+
+ClearVPN 免费版基本废了
+
+### 03. 内网转发
 
 frp <https://github.com/fatedier/frp/releases>
 
-### 投屏显示
+### 04. 投屏显示
 
-注：不听不信，谨防被陌生人诈骗！！！
+提醒：不听不信，谨防被陌生人诈骗！！！
 
 工具 同步显示 scrcpy <https://github.com/Genymobile/scrcpy/releases>
 
 【备用】乐播投屏
 
-### 文档转换
+### 05. 文档转换
 
 [pandoc 文档转换利器](https://github.com/jgm/pandoc/releases)
 
-### 包管理器
+### 06. 包管理器
 
 * scoop
 * choco
@@ -756,39 +750,18 @@ mac 平台
 
 brew
 
-## 系统镜像
-
-### nas 或软路由
-
-proxmox-ve_8.0-2
-
-### 操作系统
-
-乌班图 ubuntu-23.10.1-desktop-amd64.iso
-<https://releases.ubuntu.com/23.10.1/ubuntu-23.10.1-desktop-amd64.iso>
-
-树莓派 Raspberry Pi
-<https://www.raspberrypi.com/software/operating-systems/>
-
-深度操作系统 deepin-desktop-community-20.9-amd64.iso
-<https://mirrors.tuna.tsinghua.edu.cn/deepin-cd/20.9/deepin-desktop-community-20.9-amd64.iso>
-
 ## 游戏
 
-战网 | Battle.net
-<https://download.battle.net/zh-tw/desktop>
+[战网 | Battle.net](https://download.battle.net/zh-tw/desktop)
 
 雷神网游加速器-专线加速游戏，按分钟计费可暂停 4600 小时才 139 元，虽然事后又搞活动是 139 元 5200 小时
 <https://www.leigod.com/>
 
 not
 
-奇游加速器
-
-uu 太贵
-
-迅游网游加速器 太贵了
-<https://www.xunyou.com/index.shtml>
+* 奇游加速器 太贵
+* uu 太贵
+* [迅游网游加速器](https://www.xunyou.com/index.shtml) 太贵了
 
 ## 留观中
 
@@ -806,34 +779,28 @@ uu 太贵
 * 猿如意 不让人满意
 * [Advanced IP Scanner](https://www.advanced-ip-scanner.com/cn/) – 免费下载网络扫描程序 我不太喜欢安装版的
 * cursor 一款智能提示编写代码片段，现阶段暂时不好用
-* chrome【win, mac】没有鼠标手势
 * DisplayFusion【win】 可以管理拓展屏幕，留存吧。<https://www.displayfusion.com/>
 * dism++ 一款优化软件，没有想象的好用，适合高级用户
 * es 文件浏览器【mac】貌似只有压缩和解压功能，功能严重不足，留观
-* Espanso 不如 ahk 拓展性高
-* Fantastical【mac】 Fantastical 拥有和系统自带日历应用类似界面布局，但界面信息更加直观自然。软件支持苹果各个平台，除了可以与 iCloud / Google / Yahoo 日历无缝整合同步外，它还解决了系统自带日历 APP 功能的诸多不足。
+* Fantastical【mac】Fantastical 拥有和系统自带日历应用类似界面布局，但界面信息更加直观自然。软件支持苹果各个平台，除了可以与 iCloud / Google / Yahoo 日历无缝整合同步外，它还解决了系统自带日历 APP 功能的诸多不足。
 * finalshell 只有安装版，不好用
-* HiBitUninstaller-Portable【win】从界面上就觉得不太好用
 * JupyterLab 感觉不好用
 * Lively Wallpaper - Microsoft Store 应用程序 <<https://apps.microsoft.com/store/detail/lively-wallpaper/> 占用 CPU 资源太大
-* [Microsoft PowerToys | Microsoft Learn](https://learn.microsoft.com/zh-cn/windows/powertoys/)
 * monica 很好用的 ai 回答助手，不过每天才 30 次免费查询
 * paint.net.4.3.11.install.anycpu.web 一般般，貌似不跨平台
 * picpick 一般般
-* quicker 虽说是效率神器，但是我用不习惯
 * Raspberry Pi Imager 用于制作 U 盘系统镜像。
 * starUML 一个画 uml 的工具，还行，可能不够通用吧
 * Thunderbird 很强大，识别日历文件，还支持 rss，可能我用不习惯
 * updf 中规中矩，如果编辑要钱，虽说是跨平台，卸之
-* utools【win, mac】 可能是由于 windows 的一个 bug，总之暂时美中不足，让我弃用了它。
-* uu加速器 免费学术资源没有 github 加速，差评
+* uu 加速器 免费学术资源没有 github 加速，差评
 * verycapture【win】 一款截图软件，我感觉界面和操作不太适合我
 * webviewdebug
 
 ## 已出局
 
 * 火绒应用商店 体验一般。但对于高级玩家，还是官网下载比较好
-* 炉石官方插件 随之国服没了已经落幕
+* 网易炉石官方插件 随之国服没了已经落幕
 * 录猎 不好用
 * 芒果加速 啥玩意，也是此类，只能体验 2 小时
 * 万彩录屏大师 太复杂了
@@ -848,7 +815,6 @@ uu 太贵
 * listen1【mac】 2023年初好多歌曲都不能播放了，无奈放弃
 * LocalSend-1.8.0-windows 搜不到设备，不好用
 * lx-music-desktop 不能按照歌手进行搜索，没资源了
-* Listary 虽说效率神器但是不好用
 * MQTT.FX 很久没更新了，淘汰
 * OfficeBox官方绿色版v_3.1.2 颜值太低且功能不强大，差评
 * OneAuth Win 商店版 需要先登录的二步验证，差评

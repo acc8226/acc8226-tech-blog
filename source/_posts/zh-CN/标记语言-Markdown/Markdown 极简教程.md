@@ -106,27 +106,31 @@ As Kanye West said:
 > Markdown 支持两种形式的链接语法： **行内** 和 **参考** 两种形式，两种都是使用小括号来把文字转成链接。
 
 ```md
-# 行内式: 要建立一个行内式的链接，只要在方块括号后面紧接着圆括号并插入网址链接即可，如果你还想要加上链接的 title 文字，只要在网址后面，用双引号把 title 文字包起来即可
+## 行内式
+
+要建立一个行内式的链接，只要在方块括号后面紧接着圆括号并插入网址链接即可，如果你还想要加上链接的 title 文字，只要在网址后面，用双引号把 title 文字包起来即可
 
 This is [an example](http://example.com/ "Title") inline link.
 
 [This link](http://example.net/) has no title attribute.
 
-# 参考式: 这种链接让你可以为链接定一个名称，之后你可以在文件的其他地方定义该链接的内容。
+## 参考式
 
-下面是一个参考式链接的范例
+这种链接让你可以为链接定一个名称，之后你可以在文件的其他地方定义该链接的内容。
 
-I get 10 times more traffic from [Google] [1] than from
-[Yahoo] [2] or [MSN] [3].
+下面是一个参考式链接的示例
 
-  [1]: http://google.com/        "Google"
+I get 10 times more traffic from [Google][1] than from
+[Yahoo][2] or [MSN][3].
+
+  [1]: http://google.com/        'Google'
   [2]: http://search.yahoo.com/  "Yahoo Search"
   [3]: http://search.msn.com/    "MSN Search"
 
-如果改成用链接名称的方式写
+也可直接只用链接名称，甚至省略方括号。
 
 I get 10 times more traffic from [Google][] than from
-[Yahoo][] or [MSN][].
+[Yahoo][] or [MSN].
 
   [google]: http://google.com/        "Google"
   [yahoo]:  http://search.yahoo.com/  "Yahoo Search"
