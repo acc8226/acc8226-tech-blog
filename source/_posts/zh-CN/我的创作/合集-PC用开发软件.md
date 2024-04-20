@@ -106,7 +106,7 @@ mac 平台
 
 【全平台】Docker <https://www.docker.com/products/docker-desktop/>
 
-## 4. Editor 编辑器
+## 4. 【常用】Editor 编辑器
 
 【主推】VS Code <https://code.visualstudio.com/>
 
@@ -137,9 +137,6 @@ not
 【Win】WinMerge 可以比较文件夹和文件，以便于理解和处理的可视文本格式呈现差异。是我离不开 windows 的一个精品软件
  [WinMerge](https://winmerge.org/) | [下载页](https://winmerge.org/downloads/?lang=en)
 
-直链下载
-[winmerge-2.16.36-x64-exe.zip](https://downloads.sourceforge.net/winmerge/winmerge-2.16.36-x64-exe.zip)
-
 or
 
 【全平台】Beyond Compare 4【付费】 <https://www.beyondcompare.cc/>
@@ -154,14 +151,14 @@ mac 平台
 
 求 【Win】WinMerge 的免费平替
 
-## 6. IDE 集成开发环境
+## 6. 【常用】IDE 集成开发环境
 
 * Jetbrains 全家桶，包含了 [IntelliJ IDEA](https://www.jetbrains.com/idea/)，其中的 [epa 版本](https://www.jetbrains.com/resources/eap/)更新太频繁了，不太推荐
 * HBuilderX【web】 <https://www.dcloud.io/hbuilderx.html>
 * PyCharm <https://www.jetbrains.com/zh-cn/pycharm/download/#section=windows>
 * SpringTools <https://spring.io/tools>
 * [前端-微信开发者工具】](https://developers.weixin.qq.com/miniprogram/dev/devtools/devtools.html)
-* c/c++ 用 <https://github.com/Embarcadero/Dev-Cpp>
+* c/c++ 用 <https://github.com/Embarcadero/Dev-Cpp> 或 [C-Free](http://www.programarts.com/cfree_ch/index.htm)
   
 maybe
 
@@ -172,23 +169,21 @@ not
 * CodeBlocks 界面太古老
 * Writerside 虽然是 jetbrains 出品，但操作太复杂了，不太好用
 
-## 7. lang 编程语言
+## 7. 【常用】lang 编程语言
 
 ### ahk
 
+[autohotkey](https://www.autohotkey.com/download/) + upx
 
 ### java
 
 【cli】[Java](https://www.oracle.com/java/technologies/javase-downloads.html) 程序员当然选它了。
 
 * corretto <https://aws.amazon.com/cn/corretto/>
-* <https://bell-sw.com/pages/downloads/>
+* Liberica JDK <https://bell-sw.com/pages/downloads/>
 * ms openjdk <https://docs.microsoft.com/zh-cn/java/openjdk/download>
 * temurin <https://adoptium.net/temurin/releases/>
 * GraalVM <https://www.graalvm.org/downloads/>
-
-* graalvm-jdk 17 <https://download.oracle.com/graalvm/17/latest/graalvm-jdk-17_windows-x64_bin.zip>
-* graalvm-jdk 21 <https://download.oracle.com/graalvm/21/latest/graalvm-jdk-21_windows-x64_bin.zip>
 
 如果是 windows 版本注意：
 临时使用，需要在命令行界面键入 `set path=java` 所在的 bin 目录
@@ -250,7 +245,11 @@ Charles is an HTTP proxy / HTTP monitor / Reverse Proxy
 
 【linux】AppImage <https://appimage.org/>
 
-【win】Scoop <https://scoop.sh/#/>
+* 【win】Scoop <https://scoop.sh/#/>
+* ms winget
+* choco
+* sdkman
+* scoop
 
 ## 10. redis
 
@@ -271,7 +270,6 @@ QuickRedis 发行版 - Gitee.com
 
 ## 11. ref 参考
 
-zeal
 Zeal - Offline Documentation Browser
 <https://zealdocs.org/>
 
@@ -282,7 +280,24 @@ mac 平台
 Dash for macOS - API Documentation Browser, Snippet Manager - Kapeli
 <https://kapeli.com/dash>
 
-## 12. revision control 版本控制
+## 12. 【常用】revision control 版本控制
+
+### git
+
+苹果 和 linux 系统一般都自带 git, 如果想要体验新版, 可以去 Git 官网 https://git-scm.com/ 看看，我推荐使用 [Git 阿里源加速地址](https://registry.npmmirror.com/binary.html?path=git-for-windows/)
+
+特别的如果是 windows 系统推荐搭配  [小乌龟 TortoiseGit – Windows Shell Interface to Git 官网下载地址](https://tortoisegit.org/download/)
+
+不喜欢小乌龟可以试试 【win mac】[Sourcetree](https://www.sourcetreeapp.com/)
+
+同时 VSCode 和 IDEA 会自带 git 功能
+
+not
+
+* 【win mac】[gitkraken](https://www.gitkraken.com/) 付费才好用
+* 【win mac】【付费】smartgit 且我不太喜欢用
+* 【win mac】Fork 自从用了小乌龟，还是不喜欢这种风格
+* 【win mac】sublime merge 感觉不好用
 
 ### svn
 
@@ -302,27 +317,6 @@ mac 平台
 not
 
 【gui】【mac】snailSVN
-
-### git
-
-【cli】**[Git](https://git-scm.com/downloads)**
-默认苹果自带 git, 如果想要体验最新版本, 可以去 Git 官网下载即可。
-
-[Git-阿里源 加速地址](https://registry.npmmirror.com/binary.html?path=git-for-windows/)
-
-and
-
-我使用的 IDEA 会自带 git 功能, 一般足够日常使用
-
- [小乌龟 TortoiseGit – Windows Shell Interface to Git 官网下载地址](https://tortoisegit.org/download/)
-
-not
-
-* 【win mac】[gitkraken](https://www.gitkraken.com/) 付费才好用
-* 【win mac】【付费】smartgit 感觉不好用
-* 【win mac】Fork 自从用了小乌龟，还是不喜欢这种风格
-* 【win mac】[Sourcetree](https://www.sourcetreeapp.com/) 也是此类
-* 【win mac】sublime merge 感觉不好用
 
 ## 13. server 服务器
 
@@ -350,7 +344,6 @@ or
 【win 便携】putty
 
 * 【win】putty 下载 <https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html>
-* 【win】putty 直接下载 <https://winscp.net/download/putty.exe>
 * 【win】kitty 下载 <https://github.com/cyd01/KiTTY/releases>
 
 not
@@ -379,6 +372,10 @@ Android JuiceSSH-Free SSH client for Android
 ## 15. terminal 终端
 
 ### 【win】微软 terminal
+
+Note: requires Windows 10 2004 (build 19041) or later
+
+因此如果是 win 10 以下建议使用 git-bash 就行。
 
 <https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701>
 

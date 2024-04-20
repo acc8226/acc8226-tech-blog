@@ -11,6 +11,8 @@ categories:
 
 <https://git-scm.com/downloads>
 
+我一般会下载便捷版。
+
 ## 图形化软件
 
 windows 环境下已经自带了 gitk，如果觉得还是不好使的话。Java 开发者使用的 ide 也有相应的支持，一般足够使用。
