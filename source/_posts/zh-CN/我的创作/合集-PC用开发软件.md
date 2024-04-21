@@ -108,11 +108,10 @@ mac 平台
 
 ## 4. 【常用】Editor 编辑器
 
-【主推】VS Code <https://code.visualstudio.com/>
+【主推】VSCode <https://code.visualstudio.com/>
 
 vscode 插件推荐
 
-* [Draw.io Integration](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)
 * [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
 
 or
@@ -153,16 +152,16 @@ mac 平台
 
 ## 6. 【常用】IDE 集成开发环境
 
-* Jetbrains 全家桶，包含了 [IntelliJ IDEA](https://www.jetbrains.com/idea/)，其中的 [epa 版本](https://www.jetbrains.com/resources/eap/)更新太频繁了，不太推荐
+* Jetbrains 全家桶，包含了 [IntelliJ IDEA](https://www.jetbrains.com/idea/)，其中的 [EPA 版本](https://www.jetbrains.com/resources/eap/)更新太频繁了，不太推荐
 * HBuilderX【web】 <https://www.dcloud.io/hbuilderx.html>
 * PyCharm <https://www.jetbrains.com/zh-cn/pycharm/download/#section=windows>
 * SpringTools <https://spring.io/tools>
 * [前端-微信开发者工具】](https://developers.weixin.qq.com/miniprogram/dev/devtools/devtools.html)
-* c/c++ 用 <https://github.com/Embarcadero/Dev-Cpp> 或 [C-Free](http://www.programarts.com/cfree_ch/index.htm)
+* c/c++ <https://github.com/Embarcadero/Dev-Cpp> 或 [C-Free](http://www.programarts.com/cfree_ch/index.htm)
   
 maybe
 
-eclipse <https://www.eclipse.org/downloads/> 貌似不太受欢迎了
+eclipse <https://www.eclipse.org/downloads/> 貌似不太受欢迎且目前看内存占用至少 1 个 G
 
 not
 
@@ -175,15 +174,15 @@ not
 
 [autohotkey](https://www.autohotkey.com/download/) + upx
 
-### java
+### Java
 
 【cli】[Java](https://www.oracle.com/java/technologies/javase-downloads.html) 程序员当然选它了。
 
-* corretto <https://aws.amazon.com/cn/corretto/>
-* Liberica JDK <https://bell-sw.com/pages/downloads/>
-* ms openjdk <https://docs.microsoft.com/zh-cn/java/openjdk/download>
-* temurin <https://adoptium.net/temurin/releases/>
+* Amazon corretto <https://aws.amazon.com/cn/corretto/>
 * GraalVM <https://www.graalvm.org/downloads/>
+* Liberica JDK <https://bell-sw.com/pages/downloads/>
+* Microsoft openjdk <https://docs.microsoft.com/zh-cn/java/openjdk/download>
+* Temurin <https://adoptium.net/temurin/releases/>
 
 如果是 windows 版本注意：
 临时使用，需要在命令行界面键入 `set path=java` 所在的 bin 目录
@@ -194,10 +193,10 @@ not
 Node.js
 <https://nodejs.org/en>
 
-<https://cdn.npmmirror.com/binaries/node/v20.11.0/node-v20.11.0-win-x64.zip>
-<https://cdn.npmmirror.com/binaries/node/v18.19.0/node-v18.19.0-win-x64.zip>
-<https://cdn.npmmirror.com/binaries/node/v16.20.2/node-v16.20.2-win-x64.zip>
-<https://cdn.npmmirror.com/binaries/node/v14.21.3/node-v14.21.3-win-x64.zip>
+* <https://cdn.npmmirror.com/binaries/node/v20.11.0/node-v20.11.0-win-x64.zip>
+* <https://cdn.npmmirror.com/binaries/node/v18.19.0/node-v18.19.0-win-x64.zip>
+* <https://cdn.npmmirror.com/binaries/node/v16.20.2/node-v16.20.2-win-x64.zip>
+* <https://cdn.npmmirror.com/binaries/node/v14.21.3/node-v14.21.3-win-x64.zip>
 
 ## 8. network tool 网络工具
 

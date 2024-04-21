@@ -19,7 +19,7 @@ categories: 我的创作
 
 win 7/8：[【win】腾讯电脑管家【安装版】](https://guanjia.qq.com/) 或 [【win】360 安全卫士极速版【安装版】](https://weishi.360.cn/)
 
-win 10/11：普通 windows 用户依旧可以选择安装一个管家即可，由于最新版 win 10 自带了[【win】微软电脑管家【安装版】](https://pcmanager.microsoft.com/zh-cn)，再加一个[【win】火绒安全【安装版】](https://www.huorong.cn/)即可。
+win 10/11：普通 windows 用户依旧可以选择安装管家或者卫士，且由于现在最新版 win 10 自带了[【win】微软电脑管家【安装版】](https://pcmanager.microsoft.com/zh-cn)，再搭配[【win 安装版】火绒安全软件](https://www.huorong.cn/)即可。
 
 - - -
 
@@ -33,7 +33,7 @@ win 10/11：普通 windows 用户依旧可以选择安装一个管家即可，�
 
 #### 2. 浏览器
 
-* [【win】【安装版】360 极速浏览器](https://browser.360.cn/ee/) 安全防护永远要放在第一位，鼠标悬停切换标签功能值得点赞 或者 火狐 
+* [【win 安装版】360 极速浏览器X](https://browser.360.cn/ee/) 安全防护永远要放在第一位，鼠标悬停切换标签功能值得点赞 或者 火狐 
 * [【mac】360 极速浏览器](https://browser.360.cn/ee/mac/index.html) 或者 火狐
 * 【linux】360 安全浏览器
 
@@ -41,11 +41,11 @@ Firefox 可作为有效补充，由于其出色的播放视频的稳定性。且
 
 #### 3. 压缩解压
 
-* [【win】【安装版】bandzip](https://www.bandisoft.com/) 智能解压特别好用
-* [【mac】The Unarchiver【App Store版】] 或者官网直装版(https://theunarchiver.com/)
-* linux 系统一般用 tar 或 zip 命令。
+* [【win 安装版】Bandizip](https://www.bandisoft.com/) 智能解压和压缩文件预览功能特别好用
+* [【mac】The Unarchiver【App Store版】](https://theunarchiver.com/)或者官网直装版
+* linux 系统一般自带 tar 和 zip 命令。
 
-#### 4. 输入法-微信输入法
+#### 4. 输入法
 
 如果你 Win11 自带的输入法也不错，当你用起来很顺心可不用安装额外输入法。
 
@@ -53,6 +53,10 @@ Firefox 可作为有效补充，由于其出色的播放视频的稳定性。且
 
 
 [搜狗输入法智慧版](https://pinyin.sogou.com/zhihui/)  无广告。处理日常使用外还能表情斗图。
+
+not
+
+手心输入法  已经几年没有再更新了且对 4G 内存的 win 7 而言有点卡
 
 - - -
 
@@ -73,52 +77,13 @@ linux 平台
 
 百度和讯飞都有支持，据说还有个 ibus。
 
-#### 5. Office
-
-一般品牌笔记本都会赠送微软 Office 套件。否则我会选择免费的 wps 加 LibreOffice 的组合。
-
-【全平台】libreoffice <https://zh-cn.libreoffice.org/download/libreoffice/> [libreoffice 源1 - 清华源](https://mirrors.tuna.tsinghua.edu.cn/libreoffice/libreoffice/stable/) | [libreoffice 源2 - 腾讯源](<https://mirrors.cloud.tencent.com/libreoffice/libreoffice/stable/>)
-
-or
-
-【全平台】WPS <https://www.wps.cn/>
-
-- - -
-
-mac 平台
-
-除了 office 和 iWork 系列外我还是会选择 libreoffice 加 WPS 的组合
-
-### 网盘
-
-1. 【win mac】阿里云盘 <https://www.aliyundrive.com/drive/> 主打大容量 + 同步功能，高峰时段限速但一般没感觉。 + 猫头鹰文件
-2. 【全平台】坚果云 <https://www.jianguoyun.com/s/downloads> 主要用于文档
-
-- - -
-
-linux 平台
-
-暂时没找到好用的
-
-- - -
-
-mac 平台
-
-依旧阿里云 + 坚果云的组合。
-
-### 密码管理
-
-【全平台】[BitWarden](https://bitwarden.com/)  一款全平台的密码管理软件。轻度使用安装浏览器插件即可，重度使用可以安装该软件。
-
 ### 1. 工具类
 
 #### 1. 鼠标手势
 
-首推【绿色版】的 [FastGestures 鼠标/触控板/屏手势](https://fg.zhaokeli.com/)
+首推【绿色版】的 [FastGestures 鼠标/触控板/屏手势](https://fg.zhaokeli.com/)，如果提示 dll 缺失，则可以换成 【win 免费 安装版】WGestures 1 或者【收费 安装版 win mac】WGestures 2 鼠标手势 <https://www.yingdev.com/projects/wgestures2>
 
-其次是【收费】【安装版】【win mac】WGestures 2 鼠标手势 <https://www.yingdev.com/projects/wgestures2>
-
-如果不想买 wg 2 可以使用【win】【免费】【安装版】WGestures 1。这绝对是效率神器。
+这绝对是效率神器。
 
 - - -
 
@@ -152,7 +117,7 @@ mac 平台
 
 #### 3. 截图
 
-【win】PixPin <https://pixpinapp.com/> 据说 mac 版即将推出
+[【win】PixPin](https://pixpinapp.com/) 顺便期待 mac 版的推出
 
 or
 
@@ -175,7 +140,26 @@ not
 * 单独的 ishot 免费版有水印，且免费版不能贴图
 * 单独的 Snipaste 免费版功能有限
 
-#### 4. 【常用】下载
+#### 4. 护眼
+
+1. 【win mac】【安装版】flux <https://justgetflux.com/>
+2. EyesGuard 定时提醒眼睛休息 ~~由于作者说微软商店不再提供更新~~，所以还是去 github 下载最新版本
+<https://github.com/avestura/EyesGuard/releases/>
+
+EyesGuard 需要 .Net 4.8 以上，老款 win 7 只能选择 [FadeTop](http://www.fadetop.com/) 或者 eyerelax
+
+- - -
+
+mac 平台
+
+1. 【mac win】依旧 flux <https://justgetflux.com/>
+2. 【appstore】一休 定时提醒
+
+not
+
+stretchly 图标每次突然弹出很突兀且选项太多了
+
+#### 5. 下载
 
 【全平台】motrix【首选】 <https://motrix.app/zh-CN/> | [下载页](https://motrix.app/zh-CN/download) 颜值高。支持下载 HTTP、FTP、BT、磁力链接等资源。即使 Github 资源也不在话下
 
@@ -218,25 +202,6 @@ not
 
 * downie 收费
 * vdown 暂时不完善
-
-#### 5. 护眼
-
-1. 【win mac】【安装版】flux <https://justgetflux.com/>
-2. EyesGuard 定时提醒眼睛休息 ~~由于作者说微软商店不再提供更新~~，所以还是去 github 下载最新版本
-<https://github.com/avestura/EyesGuard/releases/>
-
-EyesGuard 需要 .Net 4.8 以上，老款 win 7 只能选择 [FadeTop](http://www.fadetop.com/) 或者 eyerelax
-
-- - -
-
-mac 平台
-
-1. 【mac win】依旧 flux <https://justgetflux.com/>
-2. 【appstore】一休 定时提醒
-
-not
-
-stretchly 图标每次突然弹出很突兀且选项太多了
 
 #### 6. 看图
 
@@ -285,9 +250,47 @@ mac 平台
 
 依旧【全平台】【重量】GIMP
 
+#### 8. 网盘
+
+1. 【win mac】阿里云盘 <https://www.aliyundrive.com/drive/> 主打大容量 + 同步功能，高峰时段限速但一般没感觉。 + 猫头鹰文件
+2. 【全平台】坚果云 <https://www.jianguoyun.com/s/downloads> 主要用于文档
+
+- - -
+
+linux 平台
+
+暂时没找到好用的
+
+- - -
+
+mac 平台
+
+依旧阿里云 + 坚果云的组合。
+
+#### 9. 密码管理
+
+【全平台】[BitWarden](https://bitwarden.com/)  一款全平台的密码管理软件。轻度使用安装浏览器插件即可，重度使用可以安装该软件。
+
+
 ### 2. 办公类
 
-#### 【常用】PDF 文档
+#### 1. 【常用】Office
+
+一般品牌笔记本都会赠送微软 Office 套件。否则我会选择免费的 wps 加 LibreOffice 的组合。
+
+【全平台】LibreOffice <https://zh-cn.libreoffice.org/download/libreoffice/> [libreoffice 源1 - 清华源](https://mirrors.tuna.tsinghua.edu.cn/libreoffice/libreoffice/stable/) | [libreoffice 源2 - 腾讯源](<https://mirrors.cloud.tencent.com/libreoffice/libreoffice/stable/>)
+
+or
+
+【全平台】WPS <https://www.wps.cn/>
+
+- - -
+
+mac 平台
+
+除了 office 和 iWork 系列外我还是会选择 libreoffice 加 WPS 的组合
+
+#### 2. 【常用】PDF 文档
 
 [【win】SumatraPDF【绿色版】](https://www.sumatrapdfreader.org/)
 
@@ -318,7 +321,7 @@ mac 平台
 
 【linux】PDF 如果站在简单读取的角度直接用浏览器即可
 
-#### mail 收发
+#### 3. mail 收发
 
 【win mac】网易邮箱大师 <https://dashi.163.com/>
 
@@ -334,7 +337,7 @@ not
 
 [【mac win】网易邮箱大师](https://dashi.163.com/)
 
-#### 办公通讯
+#### 4. 办公通讯
 
 防诈骗！！！一定不要开启屏幕共享！！！
 
@@ -352,13 +355,13 @@ not
 
 [网易会议](https://meeting.163.com/)
 
-#### 思维导图
+#### 5. 思维导图
 
 [Xmind 思维导图](https://xmind.cn/)
 
-### 3. 音频类
+### 3. 【常用】音频类
 
-普通用户推荐在线播放推荐 【win mac】QQ 音乐 <https://y.qq.com/download/index.html>，而我更喜欢 lx-music
+普通用户推荐在线播放推荐 【win mac】QQ 音乐 <https://y.qq.com/download/index.html>，而我更喜欢 lx-music-desktop 但是需要自行找资源
 
 可选
 
@@ -383,7 +386,7 @@ mac 平台
 本地音乐播放器 可能是 [foobar2000](https://www.foobar2000.org/) 吧，但是歌词搜索呢，差很多意思
 在线选 QQ 音乐
 
-### 4. 视频类
+### 4. 【常用】视频类
 
 本地 + 网络流播放 [【win】PotPlayer](https://potplayer.org/)【本地】【首选】 PotPlayer 高清影音播放器 或者开源的 VLC 也很不错
 
@@ -412,7 +415,7 @@ mac 平台
 2. vidhub
 3. 优酷 可以免费看很多剧
 
-### 5. 社交类
+### 5. 【常用】社交类
 
 [【win mac】微信](https://weixin.qq.com/)
 
@@ -510,7 +513,9 @@ softpedia https://www.softpedia.com/
 
 ### 0. 驱动运行库硬件检测
 
-[鲁大师](https://www.ludashi.com/) 驱动管理+硬件检测
+[鲁大师](https://www.ludashi.com/) 高速率的驱动管理+硬件检测，可解决未安装任何音频输出设备的问题
+
+万能网卡驱动 装系统记得备份原有驱动或者认准主板官网
 
 [星空运行库修复大师](https://stardll.160.com/)
 
@@ -631,7 +636,7 @@ or
 
 [【win】【备用】SpaceSniffer](http://www.uderzo.it/main_products/space_sniffer/index.html)
 
-### 10. 清理卸载
+### 10. 【常用】清理卸载
 
 [【win】极客卸载 Geek Uninstaller](https://geekuninstaller.com/download) 简单清爽
 
@@ -680,9 +685,9 @@ iOS 用户可下载 iTunes 或者某国产助手
 
 ### 15. U 盘引导
 
-[Ventoy](https://www.ventoy.net/cn/index.html)
+[Ventoy](https://www.ventoy.net/cn/index.html) linux 和 windows 二合一，且不妨碍 U 盘正常使用
 
-【win】【备用】微 PE 工具箱 - 超好用的装机维护工具。主打纯净 <https://www.wepe.com.cn/>
+【win】【备用】微 PE 工具箱 - 装机维护工具。无广主打纯净 <https://www.wepe.com.cn/>
 
 ### 16. 微软 buff
 
@@ -852,7 +857,6 @@ not
 * EncryptoforWin 厂商专注 mac 已经不更新了
 * listen1【mac】 2023年初好多歌曲都不能播放了，无奈放弃
 * LocalSend-1.8.0-windows 搜不到设备，不好用
-* lx-music-desktop 不能按照歌手进行搜索，没资源了
 * MQTT.FX 很久没更新了，淘汰
 * OfficeBox官方绿色版v_3.1.2 颜值太低且功能不强大，差评
 * OneAuth Win 商店版 需要先登录的二步验证，差评
