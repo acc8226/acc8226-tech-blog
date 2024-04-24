@@ -281,9 +281,11 @@ Dash for macOS - API Documentation Browser, Snippet Manager - Kapeli
 
 ## 12. 【常用】revision control 版本控制
 
-### git
+### Git
 
-苹果 和 linux 系统一般都自带 git, 如果想要体验新版, 可以去 Git 官网 https://git-scm.com/ 看看，我推荐使用 [Git 阿里源加速地址](https://registry.npmmirror.com/binary.html?path=git-for-windows/)
+
+
+苹果 和 linux 系统一般都自带 git, 如果想要体验新版, 可以去[Git 官网](https://git-scm.com)下载体验。通常更推荐[Git 阿里源地址](https://registry.npmmirror.com/binary.html?path=git-for-windows/)
 
 特别的如果是 windows 系统推荐搭配  [小乌龟 TortoiseGit – Windows Shell Interface to Git 官网下载地址](https://tortoisegit.org/download/)
 
@@ -298,7 +300,7 @@ not
 * 【win mac】Fork 自从用了小乌龟，还是不喜欢这种风格
 * 【win mac】sublime merge 感觉不好用
 
-### svn
+### SVN
 
 【安装版】svn 增强工具，是我离不开 windows 的一个精品软件
 [TortoiseSVN 官网下载地址](https://tortoisesvn.net/downloads.html)
