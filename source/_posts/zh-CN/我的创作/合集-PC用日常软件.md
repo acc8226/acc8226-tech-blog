@@ -51,12 +51,15 @@ Firefox 可作为有效补充，由于其出色的播放视频的稳定性。且
 
 【mac mac】[微信输入法](https://z.weixin.qq.com/)，特有云粘贴板功能，现已支持跨设备粘贴文字和图片，但如果是 win 7 老系统则搜狗可能是更好的选择。
 
-
+ 
 [搜狗输入法智慧版](https://pinyin.sogou.com/zhihui/) 无广告。处理日常使用外还能表情斗图。
 
 not
 
-手心输入法  已经几年没有再更新了且对 4G 内存的 win 7 而言有点卡
+* 手心输入法  已经几年没有再更新了且对 4G 内存的 win 7 而言有点卡
+* 紫光华宇输入法 对 4G 内存的 win 7 而言有点卡
+* QQ输入法 几年没更新了 且 打出的字没有在屏幕
+* 百度输入法 不想用新版本但我找不到旧版本差评
 
 - - -
 
@@ -388,12 +391,16 @@ mac 平台
 
 ### 4. 【常用】视频类
 
-本地 + 网络流播放 [【win】PotPlayer](https://potplayer.org/)【本地】【首选】 PotPlayer 高清影音播放器 或者开源的 VLC 也很不错
+本地 + 网络流播放 [【本地 首选 win 官方安装版】PotPlayer](https://potplayer.tv/?lang=zh_CN) 高清影音播放器 或者开源的 VLC 也很不错
 
 在线平台  2. [【win】荐片播放器官网](https://www.jianpian6.co/) - 最新电影，播放器
 
 本地 +  在线通吃 [【win mac】哔哩哔哩](https://app.bilibili.com/)在线【本地】【首选】，播放效果比网页好很多，特别是 win
 bili 的 mac 版的本地播放能力也挺强的
+
+or
+
+西瓜视频 PC 版 比较软件比网站要流畅些
 
 not
 
@@ -543,7 +550,7 @@ Speccy 虽说是 ccleaner 出品但是没有便携版
 
 1. [EV 录屏](https://www.ieway.cn/evcapture.html) 选项中规中矩，足够正常使用，可以单独录制声音，录制时鼠标有黄色光晕标识
 2. [ScreenToGif](https://www.screentogif.com/) 录屏可导出为 gif、apng 或 webp 动图
-3. [keyviz](https://github.com/mulaRahul/keyviz) 是一个免费的开源工具，能够可视化键盘击键和鼠标实时动作，我一般搭配录屏软件使用
+3. [keyviz](https://github.com/mulaRahul/keyviz) 免费开源工具，能够可视化键盘击键和鼠标实时动作，我一般搭配录屏软件使用
 4. [ClickShow](https://github.com/cuiliang/ClickShow/releases) 用于提示鼠标点击、鼠标位置。
 
 not
@@ -567,7 +574,7 @@ not
 * ev 录屏 由于很久都没更新了，然后鼠标点击也不体现点击效果，差评
 * FocuSee 需要登录账号
 
-### 4. tts 文字转语音软件
+### 4. TTS 文字转语音软件
 
 [【win】tts-vue: 🎤 微软语音合成工具](https://gitee.com/LGW_space/tts-vue)，使用 Electron + Vue + ElementPlus + Vite 构建，将文字转为语音 MP3。
 
@@ -577,7 +584,7 @@ not
 
 or
 
-[【绿色版】【win】文件 Everything](https://www.voidtools.com/zh-cn/downloads/)
+[【绿色版 win】文件 Everything](https://www.voidtools.com/zh-cn/downloads/)
 
 and
 
@@ -585,7 +592,7 @@ and
 
 ### 6. 显示网速
 
-[TrafficMonitor【win】](https://github.com/zhongyang219/TrafficMonitor)
+[【win】TrafficMonitor](https://github.com/zhongyang219/TrafficMonitor)
 
 - - -
 
@@ -595,7 +602,7 @@ mac 的腾讯柠檬清理已经自带了该功能
 
 **DNS 优选**
 
-[Dns Jumper v2.3 - A Free DNS Changer](https://www.sordum.org/7952/dns-jumper-v2-3/)
+[【win】Dns Jumper v2.3 - A Free DNS Changer](https://www.sordum.org/7952/dns-jumper-v2-3/)
 
 or
 
@@ -604,7 +611,7 @@ https://www.grc.com/dns/benchmark.htm
 
 **DNS 切换**
 
-[YogaDNS 【win】](https://yogadns.com)  但免费版只允许设置一个 dns，可能有用
+[【win】YogaDNS](https://yogadns.com)  但免费版只允许设置一个 dns，可能有用
 
 **DNS server**
 
@@ -621,12 +628,12 @@ github AdguardHome
 
 not
 
-* typora 收费就算了，但是很适合初学者
+* typora 虽然功能强大，且适合初学者，收费有条件支持下
 * [【win】MarkdownPad2](http://markdownpad.com/) 感觉差点意思
 
 - - -
 
-mac 平台据说 ulysses 评价很高，但是收费就算了
+mac 平台据说 ulysses 评价很高，但收费就算了
 
 ### 9. 大文件分析
 
@@ -810,10 +817,11 @@ not
 
 一些用过的软件但主观关键明显不好用的记录，说不定下版会优化，所以仅供参考
 
-* 暴雪战网【mac】 mac 上玩炉石会风扇狂转，临时卸载，继续用 windows 玩
+* 暴雪战网【mac】 在苹果上玩炉石风扇狂转，临时卸载，继续用 windows 玩
 * 北京云法庭当事人端 涉案需要，哎，一次性卸了得了
 * 抖音【mac appstore】该版本我用不习惯且电扇呼呼的，可能西瓜视频更好但是 mac 平台上目前没有
 * 方格音乐 2023.9.28 1.0 版本暂时不成熟
+* 火绒应用商店 体验一般。对于高级玩家，感觉官网下载比较好
 * 芒果壁纸 时间长了会白屏
 * 汽水音乐 2023.9.28 PC 版暂不完善
 * 网易云音乐 windows 版的非会员不能跳过付费歌曲，卸载之
@@ -837,29 +845,28 @@ not
 * Thunderbird 很强大，识别日历文件，还支持 rss，可能我用不习惯
 * updf 中规中矩，如果编辑要钱，虽说是跨平台，卸之
 * uu 加速器 免费学术资源没有 github 加速，差评
-* verycapture【win】 一款截图软件，我感觉界面和操作不太适合我
+* verycapture【win】 一款截图软件，感觉界面和操作不太适合我
 * webviewdebug
 
 ## 已出局
 
-* 火绒应用商店 体验一般。但对于高级玩家，还是官网下载比较好
 * 网易炉石官方插件 随之国服没了已经落幕
 * 录猎 不好用
 * 芒果加速 啥玩意，也是此类，只能体验 2 小时
 * 万彩录屏大师 太复杂了
 * 万兴喵影 2023 需要登录才能录屏，差评，不过这个公司的产品还行
-* 星星加速 可以谷歌，但是一来界面不好看，而来可以限时体验 3 天已经是很良心了。
+* 星星加速 可以访问谷歌，但是一来界面不好看，限时体验 3 天已经是很良心了
 * adguard 免费体验 2 天太少了
 * AuTool-0.1.15-win-x64 暂时不好用
 * CleanMy PC 软件都不更新
 * Cursor Setup 0.1.3-x64 净化的不太完善吧，淘汰
 * Dawn Launcher 不好用
 * EncryptoforWin 厂商专注 mac 已经不更新了
-* listen1【mac】 2023年初好多歌曲都不能播放了，无奈放弃
+* listen1【mac】 2023 年初好多歌曲都不能播放了，无奈放弃
 * LocalSend-1.8.0-windows 搜不到设备，不好用
 * MQTT.FX 很久没更新了，淘汰
-* OfficeBox官方绿色版v_3.1.2 颜值太低且功能不强大，差评
-* OneAuth Win 商店版 需要先登录的二步验证，差评
+* OfficeBox 官方绿色版v_3.1.2 颜值太低且功能不强大，差评
+* OneAuth 【Win 商店版】需要先登录的二步验证，差评
 * Parallels desktop 属于买断制，新版本不能用，啥玩意，再也不买了
 * Parallels Toolbox 收费就算了，功能还行
 * PDF Shaper Professional v13.3 只有些页面功能而已

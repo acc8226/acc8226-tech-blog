@@ -148,11 +148,7 @@ build completed
 记录器可以实现下面列出的任何侦听器接口。 注册日志程序时，只替换它实现的接口的日志记录。 其他接口的日志记录保持不变。 您可以在 Build 生命周期事件中找到关于侦听器接口的更多信息。
 
 * [BuildListener](https://docs.gradle.org/6.3/javadoc/org/gradle/BuildListener.html)
-
 * [ProjectEvaluationListener](https://docs.gradle.org/6.3/javadoc/org/gradle/api/ProjectEvaluationListener.html)
-
 * [TaskExecutionGraphListener](https://docs.gradle.org/6.3/javadoc/org/gradle/api/execution/TaskExecutionGraphListener.html)
-
 * [TaskExecutionListener](https://docs.gradle.org/6.3/javadoc/org/gradle/api/execution/TaskExecutionListener.html)
-
 * [TaskActionListener](https://docs.gradle.org/6.3/javadoc/org/gradle/api/execution/TaskActionListener.html)

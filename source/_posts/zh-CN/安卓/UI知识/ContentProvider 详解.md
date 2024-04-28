@@ -10,7 +10,7 @@ tags: Android
 
 ![ContentProvider](/images/安卓-UI知识/安卓-ContentProvider-详解/1.png)
 
-## 构建content URI
+## 构建 content URI
 
 ```java
 public class TaskContract {
@@ -71,7 +71,7 @@ public class TaskContract {
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-92baccbc411c61b8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-## 构建URiMatcher
+## 构建 URiMatcher
 
 1. 为多行和单行数据定义final整型常量
 2. 为完整的UriMatcher声明静态全局变量

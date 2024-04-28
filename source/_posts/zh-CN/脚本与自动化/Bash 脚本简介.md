@@ -2,7 +2,7 @@
 title: Bash 脚本简介
 date: 2022-04-05 14:41:50
 updated: 2022-11-05 09:48:00
-categories: 脚本文件与自动化
+categories: 脚本与自动化
 tags: Bash
 ---
 

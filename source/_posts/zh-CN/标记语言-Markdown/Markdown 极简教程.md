@@ -137,7 +137,7 @@ I get 10 times more traffic from [Google][] than from
   [msn]:    http://search.msn.com/    "MSN Search"
 ```
 
-> * 其实参考式的链接重点不在于它比较好写，而是它比较好读.
+> * 参考式的链接重点不在于它比较好写，而是它比较好读。
 > * 使用 Markdown 的参考式链接，可以让文件更像是浏览器最后产生的结果，让你可以把一些标记相关的元数据移到段落文字之外，你就可以增加链接而不让文章的阅读感觉被打断。
 
 ## 图像(IMAGES)
@@ -159,6 +159,14 @@ I think you should use an `<addr>` element here instead.
 ```
 
 I think you should use an `<addr>` element here instead.
+
+## 支持 html
+
+```html
+<u>支持下滑线</u>
+```
+
+<u>支持下滑线了</u>
 
 ## 反斜线转义
 
@@ -223,7 +231,7 @@ Content column 1 | Content column 2
 
 ### 再谈谈特殊字符转换
 
-Markdown 让你可以自然地书写字符，需要转换的会由它自行处理。如果你使用的 `&`字符是 HTML 字符实体的一部分，它会保留原状，否则它会被转换成 `&`。
+Markdown 让你可以自然地书写字符，需要转换的会由它自行处理。如果你使用的 `&` 字符是 HTML 字符实体的一部分，它会保留原状，否则它会被转换成 `&`。
 
 ```text
 char glyph | HTML tag
@@ -240,8 +248,8 @@ char glyph | HTML tag
 
 ## 关于现代网页分段的思考
 
-> * 目前中文段落开头空格 2 个字的需求，以前用转义字符, 现在网站流行不空格, 段落划分建议通过空行实现。
-> * 段落以自然 **回车** 作为标记。
+* 目前中文段落开头空格 2 个字的需求，以前用转义字符, 现在网站流行不空格, 段落划分建议通过空行实现。
+* 段落以自然 **回车** 作为标记。
 
 ![段落分割示例](http://upload-images.jianshu.io/upload_images/1662509-fe0c4340501096a0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -250,5 +258,5 @@ char glyph | HTML tag
 1. [Markdown 语法说明(简体中文版)][1]
 2. [Mastering Markdown · GitHub Guides][2]
 
-[1]: http://wowubuntu.com/markdown/index.html
-[2]: https://guides.github.com/features/mastering-markdown/
+  [1]: http://wowubuntu.com/markdown/index.html
+  [2]: https://guides.github.com/features/mastering-markdown/

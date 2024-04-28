@@ -1,6 +1,6 @@
 ---
 title: Bash-参数和变量
-categories: 脚本文件与自动化
+categories: 脚本与自动化
 tags:
 - Bash
 ---

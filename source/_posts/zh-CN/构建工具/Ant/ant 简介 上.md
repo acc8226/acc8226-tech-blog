@@ -13,9 +13,9 @@ Apache Ant 是由 Java 语言开发的工具，由 Apache 软件基金会所提�
 1\. 下载到某个目录解压到, 例如安装路径 `C:\L_Executable\apache-ant-1.10.5`
 2\. 配置环境变量
 
-```text
-ANT_HOME C:\L_Executable\apache-ant-1.10.5
-Path %ANT_HOME%\bin
+```bat
+ANT_HOME=C:\L_Executable\apache-ant-1.10.5
+Path=%ANT_HOME%\bin
 ```
 
 3\. 运行 `ant -version` 查看是否安装成功 `Apache Ant(TM) version 1.10.5 compiled on July 10 2018`
@@ -58,7 +58,7 @@ Path %ANT_HOME%\bin
 java会基于提供的classpath（缩写成cp）路径去搜索。
 `java -classpath bin com.tt.Hello`
 
-将 `bin/`目录中的所有文件归档到 'classes.jar' 中:
+将 `bin/` 目录中的所有文件归档到 'classes.jar' 中:
 
 * 方法一: 指定`MANIFEST.MF`文件的命令:  `jar vcfm classes.jar MANIFEST.MF -C bin/ .`
 * 方法二: 先直接生成
@@ -137,7 +137,7 @@ java会基于提供的classpath（缩写成cp）路径去搜索。
 
 OS: win10 64bit
 
-```text
+```sh
 >ant -help
 ant [options] [target [target2 [target3] ...]]
 Options:

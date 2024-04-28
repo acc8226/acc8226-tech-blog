@@ -8,7 +8,7 @@
 
 在Gradle中，定义了一个设置文件，用于初始化以及工程树的配置。设置文件的默认名字是 settings.gradle，放在根工程目录下。
 
-设置文件大多数的作用都是为了配置子工程。在Gradle多工程是通过工程树表示的，就相当于我们在 Android Studio 看到的Project 和 Module 概念一样。根工程相当于 Android Studio 中的 Project，一个根工程可以有很多子工程，也就是很多Module，这样就和 Android Studio 定义的 Module 概念对应上了。
+设置文件大多数的作用都是为了配置子工程。在Gradle多工程是通过工程树表示的，就相当于我们在 Android Studio 看到的Project 和 Module 概念一样。根工程相当于 Android Studio 中的 Project，一个根工程可以有很多子工程，也就是很多 Module，这样就和 Android Studio 定义的 Module 概念对应上了。
 
 ### 3.2 Build文件
 
@@ -61,8 +61,9 @@ tasks.create('customTask2') {
 
 ### 3.5 任务依赖
 
-任务之间使可以有依赖关系的，这样我们就能控制哪些任务先于哪些任务执行，哪些任务执行后，其他任务才能执行。比如我们运行jar任务之前，compile任务一定要执行过，也就是jar依赖于compile；Android的install任务一定要一来package任务进行打包生成apk，然后才能install设备里。
-```
+任务之间使可以有依赖关系的，这样我们就能控制哪些任务先于哪些任务执行，哪些任务执行后，其他任务才能执行。比如我们运行jar任务之前，compile任务一定要执行过，也就是jar依赖于compile；Android的install 任务一定要一来 package 任务进行打包生成 apk，然后才能 install 设备里。
+
+```groovy
 task hello {
 	doLast{
 		println 'hello'

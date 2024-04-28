@@ -2,7 +2,7 @@
 title: AutoIt 3 学习
 date: 2024-02-19 15:32:00
 updated: 2024-02-19 15:32:00
-categories: 脚本文件与自动化
+categories: 脚本与自动化
 tags:
 - AutoIt
 ---
