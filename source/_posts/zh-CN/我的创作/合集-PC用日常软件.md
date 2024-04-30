@@ -520,15 +520,17 @@ softpedia https://www.softpedia.com/
 
 ### 0. 驱动运行库硬件检测
 
-[鲁大师](https://www.ludashi.com/) 高速率的驱动管理+硬件检测，可解决未安装任何音频输出设备的问题
-
-万能网卡驱动 装系统记得备份原有驱动或者认准主板官网
-
-[星空运行库修复大师](https://stardll.160.com/)
-
+硬件检测
 [CPU-Z | Softwares | CPUID](https://www.cpuid.com/softwares/cpu-z.html)
 
+驱动管理
+万能网卡驱动 装系统记得备份原有驱动或者认准主板官网 + [鲁大师](https://www.ludashi.com/) 高速率的驱动管理+硬件检测，可解决未安装任何音频输出设备的问题
+
+运行库
 [Download Visual C++ Redistributable Runtimes All-in-One Feb 2024 | TechPowerUp](https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/)
+
+用于监控无线适配器和 WiFi 接入点的 Windows 软件
+WirelessMon 4.0
 
 not
 

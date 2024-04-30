@@ -32,15 +32,13 @@ for java and more
 
 ### 【cli】Maven
 
-for java
+Java 用
 
 [Maven](https://maven.apache.org/)
 
 Maven 加速地址-华为源 <https://repo.huaweicloud.com/apache/maven/maven-3/>
 
-* [maven-3.9.5-bin.tar.gz](https://repo.huaweicloud.com/apache/maven/maven-3/3.9.5/binaries/apache-maven-3.9.5-bin.tar.gz)
-* [maven-3.8.6-bin.tar.gz](https://repo.huaweicloud.com/apache/maven/maven-3/3.8.6/binaries/apache-maven-3.9.5-bin.tar.gz)
-* [maven-3.6.3-bin.tar.gz](https://repo.huaweicloud.com/apache/maven/maven-3/3.6.3/binaries/apache-maven-3.9.5-bin.tar.gz)
+* [maven-3.9.6](https://repo.huaweicloud.com/apache/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.zip)
 
 - - -
 
@@ -48,13 +46,13 @@ Maven 加速地址-华为源 <https://repo.huaweicloud.com/apache/maven/maven-3/
 
 ### 【cli】Gradle
 
-for java and more
+Java 用
 
 [Gradle](https://gradle.org/)
 
 gradle 加速地址-腾讯源 <https://mirrors.cloud.tencent.com/gradle/>
 
-* [gradle-8.5-all.zip](https://mirrors.cloud.tencent.com/gradle/gradle-8.5-all.zip)
+* [gradle-8.7-all.zip](https://mirrors.cloud.tencent.com/gradle/gradle-8.7-all.zip)
 * [gradle-7.6.3-bin.zip](https://downloads.gradle.org/distributions/gradle-7.6.3-bin.zip)
 * [gradle-6.9.1-all.zip](https://mirrors.cloud.tencent.com/gradle/gradle-6.9.1-all.zip)
 
@@ -374,7 +372,7 @@ Android JuiceSSH-Free SSH client for Android
 
 ### 【win】微软 terminal
 
-Note: requires Windows 10 2004 (build 19041) or later
+要求: requires Windows 10 2004 (build 19041) or later
 
 因此如果是 win 10 以下建议使用 git-bash 就行。
 

@@ -27,7 +27,7 @@ Exception in thread "main" java.util.IllegalFormatConversionException: d != java
 
 ## 提供给前端的富文本
 
-参考已过时的 ueditor实现富文本编辑器，其实就是提供一系列文件上传接口而已。
+参考已过时的 ueditor 实现富文本编辑器，其实就是提供一系列文件上传接口而已。
 
 ## 参考
 

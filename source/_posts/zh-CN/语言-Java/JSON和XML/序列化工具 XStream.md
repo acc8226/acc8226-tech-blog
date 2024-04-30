@@ -31,8 +31,7 @@ tags:
 
 ### 下载
 
-官网下载
-<http://x-stream.github.io/download.html>
+官网下载 <http://x-stream.github.io/download.html>
 
 或者 maven 引入
 
@@ -45,7 +44,7 @@ tags:
 </dependency>
 ```
 
-### 记住以下步骤
+### 步骤
 
 1. 创建 XStream 对象
 

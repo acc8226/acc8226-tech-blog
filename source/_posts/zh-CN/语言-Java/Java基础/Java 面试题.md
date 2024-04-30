@@ -25,5 +25,4 @@ Java内存模型规定了所有的变量都存储在主内存（Main Memory）�
 
 ## 参考
 
-Java内存模型 - 郑斌blog - 博客园
-<https://www.cnblogs.com/zhengbin/p/6407137.html>
+Java 内存模型 - 郑斌blog - 博客园 <https://www.cnblogs.com/zhengbin/p/6407137.html>
