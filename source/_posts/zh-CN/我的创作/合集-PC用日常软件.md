@@ -5,11 +5,11 @@ updated: 2024-01-30 22:50:00
 categories: 我的创作
 ---
 
-注：以下对各软件的评论, 谨代表个人观点。
-
 安全永远是第一要务。下载软件也尽量从官网下载，这样更安全，也避免从其他渠道下载到恶意软件。
 
-说明：尽量选择跨平台在搭配特定系统特有软件即可满足大部分使用场景。
+注：
+以下内容谨代表个人观点。
+软件上尽量选择跨平台在搭配特定系统特有软件即可满足大部分使用场景。
 
 ## 日常
 
@@ -124,7 +124,7 @@ mac 平台
 
 or
 
-[sharex](https://getsharex.com/) 留存，可以截图和简单编辑图
+[sharex](https://getsharex.com/) 留存，可以截图和简单编辑图还有 OCR 识别
 
 not
 
@@ -208,13 +208,11 @@ not
 
 #### 6. 看图
 
-菠萝看图 BLumia/pineapple-pictures: A homebrew lightweight image viewer.
-<https://github.com/BLumia/pineapple-pictures>
+[菠萝看图 BLumia/pineapple-pictures: A homebrew lightweight image viewer](https://github.com/BLumia/pineapple-pictures)
 
 or
 
-ImageGlass 界面很现代
-<https://github.com/d2phap/ImageGlass>
+[ImageGlass](https://github.com/d2phap/ImageGlass) 界面很现代
 
 not
 
@@ -232,7 +230,7 @@ mac 平台
 
 #### 7. 图像处理
 
-【win】【轻量】ShareX <https://getsharex.com/> 也可以贴图，不过我更当是一个图片编辑器
+[【win】【轻量】ShareX](https://getsharex.com/) 也可以贴图，不过我更当是一个图片编辑器，还可以录屏
 [ShareX-15.0.0-portable 下载](https://github.com/ShareX/ShareX/releases/download/v15.0.0/ShareX-15.0.0-portable.zip)
 
 【全平台】【重量】GIMP 【PS 的替代品且免费】 <https://www.gimp.org/>
@@ -255,8 +253,8 @@ mac 平台
 
 #### 8. 网盘
 
-1. 【win mac】阿里云盘 <https://www.aliyundrive.com/drive/> 主打大容量 + 同步功能，高峰时段限速但一般没感觉。 + 猫头鹰文件
-2. 【全平台】坚果云 <https://www.jianguoyun.com/s/downloads> 主要用于文档
+1. [【win mac】阿里云盘](https://www.aliyundrive.com/drive/) 主打大容量 + 同步功能，高峰时段限速但一般没感觉。 然后再搭配猫头鹰文件。看视频搭配搜狐视频也不错，可以读取阿里网盘的视频文件。
+2. [【全平台】坚果云](https://www.jianguoyun.com/s/downloads) 主要用于存少量文档
 
 - - -
 
@@ -295,11 +293,13 @@ mac 平台
 
 #### 2. 【常用】PDF 文档
 
-[【win】SumatraPDF【绿色版】](https://www.sumatrapdfreader.org/)
+阅读器 [【win 绿色版】SumatraPDF](https://www.sumatrapdfreader.org/)
+
+编辑器 [【win 安装版】PDFgear](https://www.pdfgear.com/download/)
 
 or
 
-* 【win】极速 PDF 阅读器
+* [【win】极速 PDF 阅读器](https://jisupdf.com/zh-cn/)
 
 中规中矩
 
@@ -309,16 +309,16 @@ or
 
 not
 
-* 【win】PDF_XChangeViewer 貌似免费版只能查看
+* 【win】PDF XChangeViewer 貌似免费版只能查看
 * 【win】金山 PDF 独立版 ctrl + n 快捷键不好使，差评
 * 【win mac】UPDF ctrl + w 又是不好用，差评
-* 【win】迅捷PDF阅读器 体验极差，快捷键几乎不支持
+* 【win】迅捷 PDF 阅读器 体验极差，快捷键几乎不支持
 
 - - -
 
 mac 平台
 
-【mac】PDF 如果站在简单读取的角度直接用浏览器即可。否则可以选择 pdf expert
+【mac】PDF 如果站在简单读取的角度直接用浏览器即可。否则可以选择付费的 pdf expert
 
 - - -
 
@@ -520,11 +520,12 @@ softpedia https://www.softpedia.com/
 
 ### 0. 驱动运行库硬件检测
 
-硬件检测
-[CPU-Z | Softwares | CPUID](https://www.cpuid.com/softwares/cpu-z.html)
+理论上鲁大师一个就够用了，驱动可以认准主板官网或者用 dism++ 备份原有驱动
 
-驱动管理
-万能网卡驱动 装系统记得备份原有驱动或者认准主板官网 + [鲁大师](https://www.ludashi.com/) 高速率的驱动管理+硬件检测，可解决未安装任何音频输出设备的问题
+硬件检测
+* [CPU-Z | Softwares | CPUID](https://www.cpuid.com/softwares/cpu-z.html)
+* [GUP-Z](https://www.techpowerup.com/download/techpowerup-gpu-z/)
+* [鲁大师](https://www.ludashi.com/) 驱动管理+硬件检测，可解决未安装任何音频输出设备的问题
 
 运行库
 [Download Visual C++ Redistributable Runtimes All-in-One Feb 2024 | TechPowerUp](https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/)
@@ -536,7 +537,7 @@ not
 
 Speccy 虽说是 ccleaner 出品但是没有便携版
 
-[驱动精灵](http://www.drivergenius.com/) / [驱动人生](https://www.160.com/) 下载驱动限速严重，虽然现在已经不用担心驱动光盘📀丢失了
+[驱动精灵](http://www.drivergenius.com/) / [驱动人生](https://www.160.com/) 下载驱动限速严重
 
 ### 1. 激活类
 
@@ -550,25 +551,42 @@ Speccy 虽说是 ccleaner 出品但是没有便携版
 
 ### 3. 录屏软件
 
-1. [EV 录屏](https://www.ieway.cn/evcapture.html) 选项中规中矩，足够正常使用，可以单独录制声音，录制时鼠标有黄色光晕标识
-2. [ScreenToGif](https://www.screentogif.com/) 录屏可导出为 gif、apng 或 webp 动图
-3. [keyviz](https://github.com/mulaRahul/keyviz) 免费开源工具，能够可视化键盘击键和鼠标实时动作，我一般搭配录屏软件使用
-4. [ClickShow](https://github.com/cuiliang/ClickShow/releases) 用于提示鼠标点击、鼠标位置。
+视频录制
+
+【win 安装版 免费】[EV 录屏](https://www.ieway.cn/evcapture.html) 选项中规中矩，足够正常使用，可以单独录制声音，录制时鼠标有黄色光晕标识。美中不足就是没有绿色版的。
+
+动图录制
+
+[ScreenToGif](https://www.screentogif.com/) 录屏可导出为 gif、apng 或 webp 动图
+
+录制辅助工具
+
+1. [keyviz](https://github.com/mulaRahul/keyviz) 免费开源，能够可视化键盘击键和鼠标实时动作
+2. [ClickShow](https://github.com/cuiliang/ClickShow/releases) 用于提示鼠标点击、鼠标位置
 
 not
 
-* 【win】Bandicam 班迪录屏 10 分种内才免费，不过体验极好
+* 【win】Bandicam 班迪录屏 10 分种内才免费，不过体验很好
 * 【win mac】LICEcap 没 ScreenToGif 强大，但是也非常有特色
 * 【全平台】obs 有点卡
+* Captura 已过时
 * 【win】KeyCastOW 颜值差点意思
 
 - - -
 
 mac
 
-1. Omi 录屏专家 只能说基本够用
-2. 【mac win】[LICEcap](https://www.cockos.com/licecap/) 用于录制 gif
-3. 键盘显示用[【mac】KeyCastr](https://github.com/keycastr/keycastr/releases)
+视频录制
+
+Omi 录屏专家 只能说基本够用
+
+动图录制
+
+【mac win】[LICEcap](https://www.cockos.com/licecap/) 用于录制 gif
+
+录制辅助工具
+
+键盘显示用[【mac】KeyCastr](https://github.com/keycastr/keycastr/releases)
 
 not
 
@@ -732,11 +750,11 @@ bab 可以开启该功能
 
 not
 
-Seer 收费
+Seer 收费就算了
 
 #### WizMouse
 
-[【win】WizMouse](https://antibody-software.com/wizmouse)
+[【win】WizMouse](https://antibody-software.com/wizmouse) 一款鼠标增强工具
 
 特点：
 
@@ -745,7 +763,7 @@ Seer 收费
 
 #### windows 系统优化
 
-【win】`dism++` 优化功能挺强，能注入驱动还能辅助装系统。但只适合高级用户。
+【win】[dism++](https://github.com/Chuyu-Team/Dism-Multi-language) 优化功能挺强，能注入驱动还能辅助装系统。适合高级用户。
 
 ## 专业
 
@@ -833,7 +851,6 @@ not
 * [Advanced IP Scanner](https://www.advanced-ip-scanner.com/cn/) – 免费下载网络扫描程序 我不太喜欢安装版的
 * cursor 一款智能提示编写代码片段，现阶段暂时不好用
 * DisplayFusion【win】 可以管理拓展屏幕，留存吧。<https://www.displayfusion.com/>
-* dism++ 一款优化软件，没有想象的好用，适合高级用户
 * es 文件浏览器【mac】貌似只有压缩和解压功能，功能严重不足，留观
 * Fantastical【mac】Fantastical 拥有和系统自带日历应用类似界面布局，但界面信息更加直观自然。软件支持苹果各个平台，除了可以与 iCloud / Google / Yahoo 日历无缝整合同步外，它还解决了系统自带日历 APP 功能的诸多不足。
 * finalshell 只有安装版，不好用
@@ -849,6 +866,7 @@ not
 * uu 加速器 免费学术资源没有 github 加速，差评
 * verycapture【win】 一款截图软件，感觉界面和操作不太适合我
 * webviewdebug
+* [flowlauncher](https://www.flowlauncher.com/docs/) 作为一款启动器 有点儿卡
 
 ## 已出局
 

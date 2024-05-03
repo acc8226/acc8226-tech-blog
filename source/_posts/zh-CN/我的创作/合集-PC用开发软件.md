@@ -64,7 +64,7 @@ Apache Derby <https://db.apache.org/derby/index.html>
 
 MariaDB <https://mariadb.com/downloads/community/community-server/>
 
-MongoDB：应用程序数据平台 | MongoDB <https://www.mongodb.com/zh-cn>
+MongoDB 应用程序数据平台 <https://www.mongodb.com/zh-cn>
 
 MySQL <https://www.mysql.com/>
 
@@ -154,7 +154,7 @@ mac 平台
 * HBuilderX【web】 <https://www.dcloud.io/hbuilderx.html>
 * PyCharm <https://www.jetbrains.com/zh-cn/pycharm/download/#section=windows>
 * SpringTools <https://spring.io/tools>
-* [前端-微信开发者工具】](https://developers.weixin.qq.com/miniprogram/dev/devtools/devtools.html)
+* [前端-微信开发者工具](https://developers.weixin.qq.com/miniprogram/dev/devtools/devtools.html)
 * c/c++ <https://github.com/Embarcadero/Dev-Cpp> 或 [C-Free](http://www.programarts.com/cfree_ch/index.htm)
   
 maybe
@@ -374,7 +374,7 @@ Android JuiceSSH-Free SSH client for Android
 
 要求: requires Windows 10 2004 (build 19041) or later
 
-因此如果是 win 10 以下建议使用 git-bash 就行。
+因此如果是 win 10 以下系统只能用 git-bash 了。
 
 <https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701>
 
@@ -397,24 +397,21 @@ mac 下 Oh my zsh + iTerm2 初体验 - 简书
 
 ### 其他
 
-【跨平台 shell】PowerShell
+【跨平台】PowerShell
 
 PowerShell | Microsoft Learn
 <https://learn.microsoft.com/zh-cn/powershell/scripting/overview>
 
 PowerShell 是一种跨平台的任务自动化解决方案，由命令行 shell、脚本语言和配置管理框架组成。 PowerShell 在 Windows、Linux 和 macOS 上运行。
-特别是命令行历史记录功能完善，还包含丰富的定制项。可作为 bash 的完美替代品。
+完善了命令行历史记录功能，还包含丰富的定制项。可作为 bash 的替代品。
 
-初学者建议下载
-<https://github.com/PowerShell/PowerShell/releases/download/v7.4.0/PowerShell-7.4.0-win-x64.msi>
-
-高级用户可下载
+高级用户可使用 zip 压缩包解压即用。
 <https://github.com/PowerShell/PowerShell/releases/download/v7.4.0/PowerShell-7.4.0-win-x64.zip>
 
 - - -
 
 【win】MSYS2 <https://www.msys2.org/>
-算是一个包管理器 还是一个终端 还兼容 linux 命令，可以安装 c 编译器 gcc 等。
+可以当做一个包管理器 一个终端 还兼容 linux 命令，可以安装 c 编译器 gcc 等。
 
 ## 16. 特定 jar 相关
 
@@ -431,8 +428,8 @@ PowerShell 是一种跨平台的任务自动化解决方案，由命令行 shell
 * Nacos <https://nacos.io/zh-cn/docs/v2/quickstart/quick-start.html> 一个开源的服务注册与发现、配置管理和服务治理平台。
 * ruoyi 一个基于 Java 的开发框架。
 * Sentinel <https://github.com/alibaba/Sentinel/releases> 一个用于流量控制、熔断、降级等功能的微服务保护框架。
-* Zookeeper 一个用于分布式应用程序的协调服务。
 * sonarqube 代码质量检测 一个用于代码质量检测的工具。
+* Zookeeper 一个用于分布式应用程序的协调服务。
 
 ## 其他软件
 
