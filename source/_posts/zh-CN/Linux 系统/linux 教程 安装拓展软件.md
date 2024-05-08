@@ -28,7 +28,11 @@ yum install -y wget && wget -O install.sh http://dl.wdcp.net/install/install.sh 
 
 ### AMH 面板
 
-依旧是 apache + php + mysql 的组合，所以我不推荐了
+依旧是 apache + php + mysql 的组合
+
+### 1Panel 面板
+
+[1Panel](https://1panel.cn/index.html)
 
 ## 搭建 vpn
 

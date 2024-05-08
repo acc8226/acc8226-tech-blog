@@ -24,35 +24,29 @@ categories: 我的创作
 
 ## 1. build tool 构建工具
 
-### 【cli】Ant
+### Ant
 
-for java and more
+[Ant 官网](https://ant.apache.org/)
 
-[Ant](https://ant.apache.org/)
+### Maven
 
-### 【cli】Maven
+[Maven 官网](https://maven.apache.org/) | [镜像下载](https://repo.huaweicloud.com/apache/maven/maven-3/)
 
-Java 用
+直链下载
 
-[Maven](https://maven.apache.org/)
+* [maven-3.9.6-bin.zip](https://repo.huaweicloud.com/apache/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.zip)
 
-Maven 加速地址-华为源 <https://repo.huaweicloud.com/apache/maven/maven-3/>
+另一增强工具
 
-* [maven-3.9.6](https://repo.huaweicloud.com/apache/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.zip)
+[maven-mvnd](https://github.com/apache/maven-mvnd)
 
-- - -
+### Gradle
 
-另一增强工具 [maven-mvnd](https://github.com/apache/maven-mvnd)
+[Gradle 官网](https://gradle.org/) | [镜像下载](https://mirrors.cloud.tencent.com/gradle/)
 
-### 【cli】Gradle
+直链下载
 
-Java 用
-
-[Gradle](https://gradle.org/)
-
-gradle 加速地址-腾讯源 <https://mirrors.cloud.tencent.com/gradle/>
-
-* [gradle-8.7-all.zip](https://mirrors.cloud.tencent.com/gradle/gradle-8.7-all.zip)
+* [gradle-8.7-all.zip ](https://mirrors.cloud.tencent.com/gradle/gradle-8.7-all.zip)
 * [gradle-7.6.3-bin.zip](https://downloads.gradle.org/distributions/gradle-7.6.3-bin.zip)
 * [gradle-6.9.1-all.zip](https://mirrors.cloud.tencent.com/gradle/gradle-6.9.1-all.zip)
 
@@ -60,74 +54,67 @@ gradle 加速地址-腾讯源 <https://mirrors.cloud.tencent.com/gradle/>
 
 ### 各类数据库
 
-Apache Derby <https://db.apache.org/derby/index.html>
+* [Apache Derby](https://db.apache.org/derby/index.html)
+* [H2 Database](https://www.h2database.com/html/main.html)
+* [MariaDB community server](https://mariadb.com/downloads/community/community-server/)
+* [MongoDB](https://www.mongodb.com/zh-cn)
+* [MySQL](https://www.mysql.com/)
+* PostgreSQL [官网](https://www.postgresql.org/) | [下载](https://www.postgresql.org/download/)
 
-MariaDB <https://mariadb.com/downloads/community/community-server/>
-
-MongoDB 应用程序数据平台 <https://www.mongodb.com/zh-cn>
-
-MySQL <https://www.mysql.com/>
-
-PostgreSQL [官网](https://www.postgresql.org/) | [下载](https://www.postgresql.org/download/)
 
 ### 数据库设计
 
-PDManer <https://gitee.com/robergroup/pdmaner/releases>
+[PDManer](https://gitee.com/robergroup/pdmaner/releases)
 
 ### 数据库管理
 
-【win】【免费】【for mysql】HeidiSQL <https://www.heidisql.com/download.php?download=portable-64>
+【win】【免费】【for mysql】[HeidiSQL](https://www.heidisql.com/download.php?download=portable-64)
 
-【全平台】【付费】DataGrip <https://www.jetbrains.com/datagrip/>
+【全平台】【付费】[DataGrip](https://www.jetbrains.com/datagrip)
 
-【全平台】【预览版限免】JetBrains Aqua <https://www.jetbrains.com/aqua/>
+【全平台】【预览版限免】[JetBrains Aqua](https://www.jetbrains.com/aqua/)
 
 maybe
 
-【win mac】Beekeeper Studio <https://github.com/beekeeper-studio/beekeeper-studio/releases> 社区版功能一般，除非付费版
+[【win mac】Beekeeper Studio](https://github.com/beekeeper-studio/beekeeper-studio/releases) 社区版功能一般，除非付费版
 
 not
 
-【win mac】pgAdmin <https://www.pgadmin.org/download/> 使用不习惯，且只支持 pg
-
-【全平台】DBeaver Community <https://dbeaver.io/download/> 颜值太低
-
-【全平台】DbVisualizer <https://www.dbvis.com/> 付费版才好用
+* [【win mac】pgAdmin](https://www.pgadmin.org/download/) 使用不习惯，且只支持 pg
+* [【全平台】DBeaver Community](https://dbeaver.io/download/) 颜值太低
+* [【全平台】DbVisualizer](https://www.dbvis.com/) 付费版才好用
 
 - - -
 
 mac 平台
 
-我是 jetbrain 认证的开源项目相关人员，因此暂时选择 dg。
+如果有 jetbrain 认证开源项目认证，暂时选择 dg。
 
 ## 3. Docker
 
-【全平台】Docker <https://www.docker.com/products/docker-desktop/>
+[【全平台】Docker](https://www.docker.com/products/docker-desktop)
 
 ## 4. 【常用】Editor 编辑器
 
-【主推】VSCode <https://code.visualstudio.com/>
+[VSCode](https://code.visualstudio.com)
 
 vscode 插件推荐
 
 * [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
 
-or
-
-[notepad--](https://gitee.com/cxasm/notepad--)
-
 not
 
 * Atom 已被官方标记为过时
-* Brackets - A modern, open source code editor that understands web design. <https://brackets.io/> 不好用
-* EverEdit <https://www.everedit.net/?lang=zh> 不好用
+* [Brackets](https://brackets.io/) - A modern, open source code editor that understands web design. 不好用
+* [EverEdit](https://www.everedit.net/?lang=zh) 不好用
 * Fleet 还是不太好用
-* Geany <https://www.geany.org/> 只有安装版的差评，且 UI 目前差点意思
+* [Geany【win】](https://www.geany.org/) 只有安装版的差评，且 UI 目前差点意思
 * 【便携版】轻量级: notepad++ 不选择是由于作者的不当言论，不考虑了。
-* SimpleNotePad <https://github.com/zhongyang219/SimpleNotePad> 很清爽，可惜先入为主
+* [SimpleNotePad](https://github.com/zhongyang219/SimpleNotePad) 很清爽，可惜先入为主
 * Sublime Text 不太喜欢用
 * Skylark 没有切换到上个标签
-* notepadnext 还不太完善 <https://www.notepadnext.com/>
+* [notepadnext](https://www.notepadnext.com/) 还不太完善
+* [notepad--](https://gitee.com/cxasm/notepad--) 还不太完善
 
 ## 5. file compare 文件对比
 
@@ -136,7 +123,7 @@ not
 
 or
 
-【全平台】Beyond Compare 4【付费】 <https://www.beyondcompare.cc/>
+[【全平台 付费】Beyond Compare 4](https://www.beyondcompare.cc/)
 
 not
 
@@ -150,16 +137,16 @@ mac 平台
 
 ## 6. 【常用】IDE 集成开发环境
 
-* Jetbrains 全家桶，包含了 [IntelliJ IDEA](https://www.jetbrains.com/idea/)，其中的 [EPA 版本](https://www.jetbrains.com/resources/eap/)更新太频繁了，不太推荐
-* HBuilderX【web】 <https://www.dcloud.io/hbuilderx.html>
-* PyCharm <https://www.jetbrains.com/zh-cn/pycharm/download/#section=windows>
-* SpringTools <https://spring.io/tools>
+* Jetbrains 全家桶，包含了 [IntelliJ IDEA](https://www.jetbrains.com/idea/)，其中 [EPA 版本](https://www.jetbrains.com/resources/eap/)更新太频繁就不推荐了
+* [HBuilderX【web】](https://www.dcloud.io/hbuilderx.html)
+* [PyCharm](https://www.jetbrains.com/zh-cn/pycharm/download)
+* [SpringTools](https://spring.io/tools)
 * [前端-微信开发者工具](https://developers.weixin.qq.com/miniprogram/dev/devtools/devtools.html)
 * c/c++ <https://github.com/Embarcadero/Dev-Cpp> 或 [C-Free](http://www.programarts.com/cfree_ch/index.htm)
   
 maybe
 
-eclipse <https://www.eclipse.org/downloads/> 貌似不太受欢迎且目前看内存占用至少 1 个 G
+[eclipse](https://www.eclipse.org/downloads/) 貌似不太受欢迎且目前看内存占用至少 1 个 G
 
 not
 
@@ -168,33 +155,56 @@ not
 
 ## 7. 【常用】lang 编程语言
 
-### ahk
+### Autohotkey
 
-[autohotkey](https://www.autohotkey.com/download/) + upx
+【win】[Autohotkey](https://www.autohotkey.com/download/) 脚本语言
+
+### Dart
+
+[Dart 编程语言主页 | Dart 中文文档 | Dart](https://dart.cn/)
+
+### Go
+
+[The Go Programming Language](https://golang.google.cn/)
 
 ### Java
 
-【cli】[Java](https://www.oracle.com/java/technologies/javase-downloads.html) 程序员当然选它了。
+* [oracle Java](https://www.oracle.com/java/technologies/javase-downloads.html)
+* [Amazon corretto](https://aws.amazon.com/cn/corretto/)
+* [GraalVM](https://www.graalvm.org/downloads/)
+* [Liberica JDK](https://bell-sw.com/pages/downloads/)
+* [Microsoft openjdk](https://docs.microsoft.com/zh-cn/java/openjdk/download)
+* [Temurin](https://adoptium.net/temurin/releases/)
 
-* Amazon corretto <https://aws.amazon.com/cn/corretto/>
-* GraalVM <https://www.graalvm.org/downloads/>
-* Liberica JDK <https://bell-sw.com/pages/downloads/>
-* Microsoft openjdk <https://docs.microsoft.com/zh-cn/java/openjdk/download>
-* Temurin <https://adoptium.net/temurin/releases/>
+如果是 windows 版本注意：临时使用，需要在命令行界面键入 `set path=java` 所在的 bin 目录。长期使用，建议设置环境变量到 path。
 
-如果是 windows 版本注意：
-临时使用，需要在命令行界面键入 `set path=java` 所在的 bin 目录
-长期使用，建议设置环境变量到 path。
+### Kotlin
 
-### node
+[Kotlin Programming Language](https://kotlinlang.org/)
 
-Node.js
-<https://nodejs.org/en>
+### Node.js
 
-* <https://cdn.npmmirror.com/binaries/node/v20.11.0/node-v20.11.0-win-x64.zip>
-* <https://cdn.npmmirror.com/binaries/node/v18.19.0/node-v18.19.0-win-x64.zip>
-* <https://cdn.npmmirror.com/binaries/node/v16.20.2/node-v16.20.2-win-x64.zip>
-* <https://cdn.npmmirror.com/binaries/node/v14.21.3/node-v14.21.3-win-x64.zip>
+[Node.js 官网](https://nodejs.org/en)
+
+* [node-v20.11.0-win-x64.zip](https://cdn.npmmirror.com/binaries/node/v16.20.2/v18.19.0/node-v20.11.0-win-x64.zip)
+* [node-v18.19.0-win-x64.zip](https://cdn.npmmirror.com/binaries/node/v16.20.2/v18.19.0/node-v18.19.0-win-x64.zip)
+* [node-v16.20.2-win-x64.zip](https://cdn.npmmirror.com/binaries/node/v16.20.2/node-v16.20.2-win-x64.zip)
+* [node-v14.21.3-win-x64.zip](https://cdn.npmmirror.com/binaries/node/v14.21.3/node-v14.21.3-win-x64.zip)
+
+### Python
+
+[Python.org](https://www.python.org/)
+
+特点是简单易学
+
+### Rust
+
+[Rust 程序设计语言](https://www.rust-lang.org/zh-CN/)
+
+### TypeScript
+
+[TypeScript](https://www.typescriptlang.org/zh/): JavaScript With Syntax For Types.
+
 
 ## 8. network tool 网络工具
 
@@ -204,8 +214,7 @@ HTTPie 有桌面版和 cli 版
 httpie/desktop: 🚀 HTTPie Desktop — cross-platform API testing client for humans. Painlessly test REST, GraphQL, and HTTP APIs.
 [官网下载](https://httpie.io/download) | [Releases · httpie/desktop](https://github.com/httpie/desktop/releases)
 
-SoapUI
-<https://www.soapui.org/downloads/soapui/>
+[SoapUI](https://www.soapui.org/downloads/soapui/)
 
 not
 
@@ -220,16 +229,15 @@ not
 
 mac 平台
 
-【mac】RapidAPI for Mac – The most advanced API tool for Mac
-<https://paw.cloud/>
+[【mac】RapidAPI for Mac](https://paw.cloud/) – The most advanced API tool for Mac
 
 ### mqtt 调试
 
-mqtt 调试工具 <https://mqttx.app/>
+[mqttx](https://mqttx.app/)
 
 ### Packet capture
 
-【win mac】【安装版】Charles Web 抓包用。 <https://www.charlesproxy.com/>
+[【win mac】【安装版】Charles Web](https://www.charlesproxy.com/) 抓包用。
 Charles is an HTTP proxy / HTTP monitor / Reverse Proxy
 
 【win mac】fidder
@@ -238,11 +246,11 @@ Charles is an HTTP proxy / HTTP monitor / Reverse Proxy
 
 ## 9. package manager 包管理器
 
-【mac】Homebrew <https://brew.sh/index_zh-cn>
+[【mac】Homebrew](https://brew.sh/index_zh-cn)
 
-【linux】AppImage <https://appimage.org/>
+[【linux】AppImage](https://appimage.org/)
 
-* 【win】Scoop <https://scoop.sh/#/>
+* [【win】Scoop](https://scoop.sh/#/)
 * ms winget
 * choco
 * sdkman
@@ -250,38 +258,31 @@ Charles is an HTTP proxy / HTTP monitor / Reverse Proxy
 
 ## 10. redis
 
-<https://redis.io/download/>
+[redis download](https://redis.io/download/)
 
 ### redis for windows
 
-tporadowski/redis: Native port of Redis for Windows. Redis is an in-memory database that persists on disk. The data model is key-value, but many different kind of values are supported: Strings, Lists, Sets, Sorted Sets, Hashes, Streams, HyperLogLogs. This repository contains unofficial port of Redis to Windows.
+[tporadowski/redis: Native port of Redis for Windows](https://github.com/tporadowski/redis)
 
-<https://github.com/tporadowski/redis>
+Redis is an in-memory database that persists on disk. The data model is key-value, but many different kind of values are supported: Strings, Lists, Sets, Sorted Sets, Hashes, Streams, HyperLogLogs. This repository contains unofficial port of Redis to Windows.
 
 ### QuickRedis
 
-一款国人开源、免费、功能强大的 Redis 可视化管理工具。
+[QuickRedis 发行版 - Gitee.com](https://gitee.com/quick123official/quick_redis_blog/releases/) 国产开源、免费、功能强大的 Redis 可视化管理工具。
 
-QuickRedis 发行版 - Gitee.com
-<https://gitee.com/quick123official/quick_redis_blog/releases/>
+## 11. ref 参考文档
 
-## 11. ref 参考
-
-Zeal - Offline Documentation Browser
-<https://zealdocs.org/>
+[Zeal](https://zealdocs.org/) - Offline Documentation Browser
 
 - - -
 
 mac 平台
 
-Dash for macOS - API Documentation Browser, Snippet Manager - Kapeli
-<https://kapeli.com/dash>
+[Dash for macOS](https://kapeli.com/dash) - API Documentation Browser, Snippet Manager - Kapeli
 
 ## 12. 【常用】revision control 版本控制
 
 ### Git
-
-
 
 苹果 和 linux 系统一般都自带 git, 如果想要体验新版, 可以去[Git 官网](https://git-scm.com)下载体验。通常更推荐[Git 阿里源地址](https://registry.npmmirror.com/binary.html?path=git-for-windows/)
 
@@ -328,22 +329,20 @@ not
 
 ### PC 端
 
-首推 termius <https://www.termius.com/>
+首推 [termius](https://www.termius.com/)
 
 and
 
-【便携版】 WinSCP :: Free SFTP and FTP client for Windows
-<https://winscp.net/eng/index.php> <https://winscp.net/eng/downloads.php>
+[【便携版】 WinSCP :: Free SFTP and FTP client for Windows](https://winscp.net/eng/index.php) | [下载页面](https://winscp.net/eng/downloads.php)
 
 or
 
-【win】【免费】xshell 家庭/学校免费版 - NetSarang Website
-<https://www.xshell.com/zh/free-for-home-school/>
+[【win】【免费】xshell 家庭/学校免费版 - NetSarang Website](https://www.xshell.com/zh/free-for-home-school/)
 
 【win 便携】putty
 
-* 【win】putty 下载 <https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html>
-* 【win】kitty 下载 <https://github.com/cyd01/KiTTY/releases>
+* [【win】putty 下载](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
+* [【win】kitty 下载](https://github.com/cyd01/KiTTY/releases)
 
 not
 
@@ -353,7 +352,7 @@ not
 * 【全平台】tabby 界面不够友好
 * 【Mac AppStore 版】App Store 搜索 Zen Term
 * 【win】mobaxterm 界面有点丑
-* 【web】sshwifty <https://github.com/nirui/sshwifty/releases> 功能不太全，且目前不太好用
+* [【web】sshwifty](https://github.com/nirui/sshwifty/releases) 功能不太全，且目前不太好用
 * 【win mac】XTerminal 颜值不够高
 * 【win】VanDyke SecureCRT 卡死了且界面老旧还付费
 
@@ -361,12 +360,11 @@ not
 
 mac 平台
 
-依旧 termius <https://www.termius.com/> 的免费版套餐
+依旧 [termius](https://www.termius.com/) 的免费版套餐
 
 ### 手机端
 
-Android JuiceSSH-Free SSH client for Android
-<https://juicessh.com/>
+[Android JuiceSSH-Free SSH client for Android](https://juicessh.com/)
 
 ## 15. terminal 终端
 
@@ -376,10 +374,7 @@ Android JuiceSSH-Free SSH client for Android
 
 因此如果是 win 10 以下系统只能用 git-bash 了。
 
-<https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701>
-
-Release Windows Terminal
-<https://github.com/microsoft/terminal/releases/>
+[应用商店版](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701) | [Release 下载](https://github.com/microsoft/terminal/releases/)
 
 Windows 终端是一个新式主机应用程序，它面向你喜爱的命令行 shell，如命令提示符、PowerShell 和 bash（通过适用于 Linux 的 Windows 子系统 (WSL)）。 它的主要功能包括多个选项卡、窗格、Unicode 和 UTF-8 字符支持、GPU 加速文本呈现引擎，你还可用它来创建你自己的主题并自定义文本、颜色、背景和快捷方式。
 
@@ -389,45 +384,42 @@ Windows 终端是一个新式主机应用程序，它面向你喜爱的命令行
 
 ### 【mac】iTerm 2
 
-<https://www.iterm2.com/downloads.html>
-mac 下终端的替代品。该工具结合 Oh My Zsh 会有舒适的终端体验
+[iTerm 2](https://www.iterm2.com/downloads.html)
 
-mac 下 Oh my zsh + iTerm2 初体验 - 简书
-<https://www.jianshu.com/p/b5e7fa6ad495>
+mac 下终端的替代品。该工具结合 Oh My Zsh 会有舒适的终端体验
 
 ### 其他
 
 【跨平台】PowerShell
 
-PowerShell | Microsoft Learn
-<https://learn.microsoft.com/zh-cn/powershell/scripting/overview>
+[PowerShell | Microsoft Learn](https://learn.microsoft.com/zh-cn/powershell/scripting/overview)
 
 PowerShell 是一种跨平台的任务自动化解决方案，由命令行 shell、脚本语言和配置管理框架组成。 PowerShell 在 Windows、Linux 和 macOS 上运行。
 完善了命令行历史记录功能，还包含丰富的定制项。可作为 bash 的替代品。
 
 高级用户可使用 zip 压缩包解压即用。
-<https://github.com/PowerShell/PowerShell/releases/download/v7.4.0/PowerShell-7.4.0-win-x64.zip>
+
+[PowerShell-7.4.0-win-x64.zip](https://github.com/PowerShell/PowerShell/releases/download/v7.4.0/PowerShell-7.4.0-win-x64.zip)
 
 - - -
 
-【win】MSYS2 <https://www.msys2.org/>
-可以当做一个包管理器 一个终端 还兼容 linux 命令，可以安装 c 编译器 gcc 等。
+[【win】MSYS2](https://www.msys2.org/) 可以当做一个包管理器 一个终端 还兼容 linux 命令，可以安装 c 编译器 gcc 等。
 
 ## 16. 特定 jar 相关
 
-所列的这些工具和框架在不同的领域和开发过程中都有各自的用途，可以帮助开发人员进行各种任务，如逆向工程、数据库连接管理、性能测试、代码覆盖率分析、持续集成等。具体使用取决于具体的需求和项目要求。
+这些工具和框架在不同的领域和开发过程中都有各自的用途，可以帮助开发人员进行各种任务，如逆向工程、数据库连接管理、性能测试、代码覆盖率分析、持续集成等。具体使用取决于具体的需求和项目要求。
 
-* Apktool <https://ibotpeaches.github.io/Apktool/> 一个用于安卓应用程序逆向工程的工具。
-* c3p0 <https://sourceforge.net/projects/c3p0/files/latest/download?source=files> 一个用于安卓应用程序逆向工程的工具。
-* DBCP <https://commons.apache.org/proper/commons-dbcp/index.html> 另一个常用的 Java 数据库连接池库。
+* [Apktool](https://ibotpeaches.github.io/Apktool/) 一个用于安卓应用程序逆向工程的工具。
+* [c3p0](https://sourceforge.net/projects/c3p0/files/latest/download?source=files) 一个用于安卓应用程序逆向工程的工具。
+* [DBCP](https://commons.apache.org/proper/commons-dbcp/index.html) 另一个常用的 Java 数据库连接池库。
 * dex2jar-2.0 一个用于将 Dalvik 字节码转换为 Java 字节码的工具。
-* Jd-gui <http://java-decompiler.github.io/> 一个 Java 反编译器工具。
-* JMeter <https://jmeter.apache.org/download_jmeter.cgi> 一个流行的性能测试工具，用于测量和分析软件的性能。
+* [Jd-gui](http://java-decompiler.github.io/) 一个 Java 反编译器工具。
+* [JMeter](https://jmeter.apache.org/download_jmeter.cgi) 一个流行的性能测试工具，用于测量和分析软件的性能。
 * jacoco 一个用于代码覆盖率分析的工具。
 * jenkins 一个持续集成和持续交付（CI/CD）工具。
-* Nacos <https://nacos.io/zh-cn/docs/v2/quickstart/quick-start.html> 一个开源的服务注册与发现、配置管理和服务治理平台。
+* [Nacos](https://nacos.io/zh-cn/docs/v2/quickstart/quick-start.html) 一个开源的服务注册与发现、配置管理和服务治理平台。
 * ruoyi 一个基于 Java 的开发框架。
-* Sentinel <https://github.com/alibaba/Sentinel/releases> 一个用于流量控制、熔断、降级等功能的微服务保护框架。
+* [Sentinel](https://github.com/alibaba/Sentinel/releases) 一个用于流量控制、熔断、降级等功能的微服务保护框架。
 * sonarqube 代码质量检测 一个用于代码质量检测的工具。
 * Zookeeper 一个用于分布式应用程序的协调服务。
 

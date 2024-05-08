@@ -17,9 +17,9 @@ categories: 我的创作
 
 #### 1. 电脑管家
 
-win 7/8：[【win】腾讯电脑管家【安装版】](https://guanjia.qq.com/) 或 [【win】360 安全卫士极速版【安装版】](https://weishi.360.cn/)
+win 7/8：[【win 安装版】腾讯电脑管家](https://guanjia.qq.com/) 或 [【win 安装版】360 安全卫士极速版](https://weishi.360.cn/)
 
-win 10/11：普通 windows 用户依旧可以选择安装管家或者卫士，且由于现在最新版 win 10 自带了[【win】微软电脑管家【安装版】](https://pcmanager.microsoft.com/zh-cn)，再搭配[【win 安装版】火绒安全软件](https://www.huorong.cn/)即可。
+win 10/11：普通 windows 用户依旧可以选择安装管家或者卫士，且由于现在最新版 win 10 自带了[【win 安装版】微软电脑管家](https://pcmanager.microsoft.com/zh-cn)，再搭配[【win 安装版】火绒安全软件](https://www.huorong.cn/)即可。
 
 - - -
 
@@ -49,17 +49,19 @@ Firefox 可作为有效补充，由于其出色的播放视频的稳定性。且
 
 如果你 Win11 自带的输入法也不错，当你用起来很顺心可不用安装额外输入法。
 
-【mac mac】[微信输入法](https://z.weixin.qq.com/)，特有云粘贴板功能，现已支持跨设备粘贴文字和图片，但如果是 win 7 老系统则搜狗可能是更好的选择。
+【win mac】[微信输入法](https://z.weixin.qq.com/)，特有云粘贴板功能，现已支持跨设备粘贴文字和图片，但如果是老系统我会选择体积更小的小狼毫输入法。
 
- 
-[搜狗输入法智慧版](https://pinyin.sogou.com/zhihui/) 无广告。处理日常使用外还能表情斗图。
+or
+
+* [RIME 小狼毫输入法](https://rime.im/) 不到 10M 的体积非常清爽
+* QQ 输入法 几年没更新了但依旧非常的清爽。注意：打出的字没有在屏幕
 
 not
 
 * 手心输入法  已经几年没有再更新了且对 4G 内存的 win 7 而言有点卡
 * 紫光华宇输入法 对 4G 内存的 win 7 而言有点卡
-* QQ输入法 几年没更新了 且 打出的字没有在屏幕
 * 百度输入法 不想用新版本但我找不到旧版本差评
+* [搜狗输入法智慧版](https://pinyin.sogou.com/zhihui/) 臃肿
 
 - - -
 
@@ -510,17 +512,11 @@ mac 平台
 2. Reeder 用于 rss
 3. 杂志天下
 
-### 10. 应用商店类
-
-网址
-
-softpedia https://www.softpedia.com/
-
 ## 拓展
 
 ### 0. 驱动运行库硬件检测
 
-理论上鲁大师一个就够用了，驱动可以认准主板官网或者用 dism++ 备份原有驱动
+理论上安装鲁大师一个就够用了，驱动可以认准主板官网或者用 dism++ 备份原有驱动，如果不能连接网络我通常会安装 [驱动总裁万能网卡绿色版](https://www.sysceo.com/Software)
 
 硬件检测
 * [CPU-Z | Softwares | CPUID](https://www.cpuid.com/softwares/cpu-z.html)
@@ -530,46 +526,51 @@ softpedia https://www.softpedia.com/
 运行库
 [Download Visual C++ Redistributable Runtimes All-in-One Feb 2024 | TechPowerUp](https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/)
 
-用于监控无线适配器和 WiFi 接入点的 Windows 软件
-WirelessMon 4.0
+WirelessMon 4.0 用于监控无线适配器和 WiFi 接入点的 Windows 软件
 
 not
 
-Speccy 虽说是 ccleaner 出品但是没有便携版
-
-[驱动精灵](http://www.drivergenius.com/) / [驱动人生](https://www.160.com/) 下载驱动限速严重
+* Speccy 虽说是 ccleaner 出品但是没有便携版
+* [驱动精灵](http://www.drivergenius.com/)
+* [驱动人生](https://www.160.com/) 下载驱动限速严重
 
 ### 1. 激活类
 
-[HEU KMS Activator](https://dl.lancdn.com/landian/soft/heu/)
+[GitHub - zbezj/HEU_KMS_Activator](https://dl.lancdn.com/landian/soft/heu/) | [备份站](https://dl.lancdn.com/landian/soft/heu/)
+
+[云萌 Windows 激活工具](https://cmwtat.cloudmoe.com/cn.html)
 
 ### 2. OCR 软件
 
-[【win】Umi-OCR-OCR](https://github.com/hiroi-sora/Umi-OCR) 图片转文字识别软件
+【win】[Umi-OCR-OCR](https://github.com/hiroi-sora/Umi-OCR) 图片转文字识别软件
 
-[【win mac】[已购] 工具 极度扫描-文字识别-OCR](https://jidusm.wrste.com/)
+【win mac 已购】[极度扫描-文字识别-OCR](https://jidusm.wrste.com/)
 
 ### 3. 录屏软件
 
 视频录制
 
-【win 安装版 免费】[EV 录屏](https://www.ieway.cn/evcapture.html) 选项中规中矩，足够正常使用，可以单独录制声音，录制时鼠标有黄色光晕标识。美中不足就是没有绿色版的。
+【win 安装版 免费】[EV 录屏](https://www.ieway.cn/evcapture.html) 选项中规中矩，足够正常使用，可以单独录制声音，录制时鼠标有黄色光晕标识。美中不足没有绿色版。
 
 动图录制
 
 [ScreenToGif](https://www.screentogif.com/) 录屏可导出为 gif、apng 或 webp 动图
 
+or
+
+* 【win mac】[LICEcap](https://www.cockos.com/licecap/) 没 ScreenToGif 强大，但是也非常有特色
+* 【win】Gif123
+
 录制辅助工具
 
 1. [keyviz](https://github.com/mulaRahul/keyviz) 免费开源，能够可视化键盘击键和鼠标实时动作
-2. [ClickShow](https://github.com/cuiliang/ClickShow/releases) 用于提示鼠标点击、鼠标位置
+2. 【win】[ClickShow](https://github.com/cuiliang/ClickShow/releases) 用于提示鼠标点击、鼠标位置
 
 not
 
-* 【win】Bandicam 班迪录屏 10 分种内才免费，不过体验很好
-* 【win mac】LICEcap 没 ScreenToGif 强大，但是也非常有特色
+* 【win】Bandicam 班迪录屏 10 分种内免费，不过体验很好
 * 【全平台】obs 有点卡
-* Captura 已过时
+* 【win】Captura 已过时
 * 【win】KeyCastOW 颜值差点意思
 
 - - -
@@ -578,7 +579,7 @@ mac
 
 视频录制
 
-Omi 录屏专家 只能说基本够用
+Omi 录屏专家 基本够用
 
 动图录制
 
@@ -586,7 +587,7 @@ Omi 录屏专家 只能说基本够用
 
 录制辅助工具
 
-键盘显示用[【mac】KeyCastr](https://github.com/keycastr/keycastr/releases)
+键盘显示用 【mac】[KeyCastr](https://github.com/keycastr/keycastr/releases)
 
 not
 
@@ -600,11 +601,11 @@ not
 
 ### 5. 文件搜索
 
-[【win】WizFile](https://antibody-software.com/wizfile/download) 颜值比 Everything 高不少
+【win】[WizFile](https://antibody-software.com/wizfile/download) 颜值比 Everything 高不少
 
 or
 
-[【绿色版 win】文件 Everything](https://www.voidtools.com/zh-cn/downloads/)
+【绿色版 win】[Everything](https://www.voidtools.com/zh-cn/downloads/)
 
 and
 
@@ -612,7 +613,7 @@ and
 
 ### 6. 显示网速
 
-[【win】TrafficMonitor](https://github.com/zhongyang219/TrafficMonitor)
+【win】[TrafficMonitor](https://github.com/zhongyang219/TrafficMonitor)
 
 - - -
 
@@ -622,12 +623,11 @@ mac 的腾讯柠檬清理已经自带了该功能
 
 **DNS 优选**
 
-[【win】Dns Jumper v2.3 - A Free DNS Changer](https://www.sordum.org/7952/dns-jumper-v2-3/)
+【win】[Dns Jumper v2.3 - A Free DNS Changer](https://www.sordum.org/7952/dns-jumper-v2-3/)
 
 or
 
-GRC's | DNS Nameserver Performance Benchmark
-https://www.grc.com/dns/benchmark.htm
+[GRC's | DNS Nameserver Performance Benchmark](https://www.grc.com/dns/benchmark.htm)
 
 **DNS 切换**
 
@@ -637,10 +637,9 @@ https://www.grc.com/dns/benchmark.htm
 
 1\. [SmartDNS](https://pymumu.github.io/smartdns/)
 
-2\. AdGuard Home| 适用于任何操作系统（Windows，macOS，Linux）的网络软件
-<https://adguard.com/zh_cn/adguard-home/overview.html>
-github AdguardHome
-<https://github.com/AdguardTeam/AdguardHome>
+2\. AdGuard Home | 适用于任何操作系统（Windows，macOS，Linux）的网络软件
+
+[AdGuard Home 官网 ](https://adguard.com/zh_cn/adguard-home/overview.html) | [github AdguardHome](https://github.com/AdguardTeam/AdguardHome)
 
 ### 8. markdown 编辑
 
@@ -707,8 +706,8 @@ iOS 用户可下载 iTunes 或者某国产助手
 
 ### 14. 磁盘工具
 
-* 傲梅分区助手【win】 <https://www.disktool.cn/download.html>
-* diskgenius
+* [【win】傲梅分区助手](https://www.disktool.cn/download.html)
+* 【win】diskgenius
 
 ### 15. U 盘引导
 
@@ -775,11 +774,11 @@ Seer 收费就算了
 
 not
 
-* 【mac】Parallels【付费】 <https://www.parallels.cn/> 买断只能买一个大版本
+* [【mac 付费】Parallels](https://www.parallels.cn/) 买断只能买一个大版本
 
 ### 01. 网盘搭建
 
-AList 文档 <https://alist.nn.ci/zh/>
+[AList](https://alist.nn.ci/zh/)
 
 ### 02. 网络代理
 
@@ -794,13 +793,13 @@ ClearVPN 免费版基本废了
 
 ### 03. 内网转发
 
-frp <https://github.com/fatedier/frp/releases>
+[frp](https://github.com/fatedier/frp/releases)
 
 ### 04. 投屏显示
 
 提醒：不听不信，谨防陌生人诈骗！！！
 
-工具 同步显示 scrcpy <https://github.com/Genymobile/scrcpy/releases>
+工具 同步显示 [scrcpy](https://github.com/Genymobile/scrcpy/releases)
 
 【备用】乐播投屏
 
@@ -810,12 +809,12 @@ frp <https://github.com/fatedier/frp/releases>
 
 ### 06. 包管理器
 
-【mac】Homebrew <https://brew.sh/index_zh-cn>
+[【mac】Homebrew](https://brew.sh/index_zh-cn)
 
-【linux】AppImage <https://appimage.org/>
+[【linux】AppImage](https://appimage.org)
 
 * 【win】Scoop <https://scoop.sh/#/>
-* ms winget
+* 【win】微软 winget
 * choco
 * sdkman
 * scoop
@@ -844,6 +843,7 @@ not
 * 火绒应用商店 体验一般。对于高级玩家，感觉官网下载比较好
 * 芒果壁纸 时间长了会白屏
 * 汽水音乐 2023.9.28 PC 版暂不完善
+* 图吧工具箱 中规中矩，功能挺强大
 * 网易云音乐 windows 版的非会员不能跳过付费歌曲，卸载之
 * 迅雷影音 貌似会挂载后台默默上传资源，不太好，卸载了吧，即使字幕功能貌似还算好用
 * 央视影音【mac】 看直播还能一用，但是感觉有点卡
@@ -855,7 +855,7 @@ not
 * Fantastical【mac】Fantastical 拥有和系统自带日历应用类似界面布局，但界面信息更加直观自然。软件支持苹果各个平台，除了可以与 iCloud / Google / Yahoo 日历无缝整合同步外，它还解决了系统自带日历 APP 功能的诸多不足。
 * finalshell 只有安装版，不好用
 * JupyterLab 感觉不好用
-* Lively Wallpaper - Microsoft Store 应用程序 <<https://apps.microsoft.com/store/detail/lively-wallpaper/> 占用 CPU 资源太大
+* [Lively Wallpaper - Microsoft Store 应用程序](https://apps.microsoft.com/store/detail/lively-wallpaper/) 占用 CPU 资源太大
 * monica 很好用的 ai 回答助手，不过每天才 30 次免费查询
 * paint.net.4.3.11.install.anycpu.web 一般般，貌似不跨平台
 * picpick 一般般
