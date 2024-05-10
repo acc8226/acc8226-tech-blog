@@ -133,7 +133,7 @@ not
 
 not
 
-* QQ 音乐 <https://sj.qq.com/appdetail/com.tencent.qqmusic> 比某抑云的广告少太多，资源也算丰富
+* [QQ 音乐](https://sj.qq.com/appdetail/com.tencent.qqmusic) 比某抑云的广告少太多，资源也算丰富
 * [网易云](https://sj.qq.com/appdetail/com.netease.cloudmusic) 广告太多且现在太繁杂了
 * 酷狗 和 酷我 差一点意思
 * 爱音乐 不好用，现在周杰伦的歌都没了，也不知道以前有没有
@@ -166,10 +166,11 @@ not
 
 可选
 
-* [es 文件浏览器](http://www.estrongs.com/) 我称之为万能播放器，可以通过 alist 挂载的网盘和本身具备音视频播放能力呢，在搭配 nas 和本地资源的情况下。好用除了有广告要开会员
-
-* bilibili 国际版 因为清爽呀
+* [es 文件浏览器](http://www.estrongs.com/) 我称之为万能播放器，可以通过 alist 挂载的网盘和本身具备音视频播放能力呢，特别是搭配 nas 或服务器使用，除了有广告要开会员
+* bilibili 国际版 [下载地址一](https://apkpure.com/cn/bilibili-cn/com.bilibili.app.in/download) |
+  [下载地址二](https://com-bilibili-app-in.en.uptodown.com/android) 因为清爽呀
 * 西瓜视频 广告不多 还能创作
+* NewPipe [官网](https://newpipe.net/) | [NewPipe_v0.27.0.apk](https://archive.newpipe.net/fdroid/repo/NewPipe_v0.27.0.apk) NewPipe - a free YouTube client
 
 not
 
@@ -177,8 +178,8 @@ not
 * nPlayer 不能跳倍速
 * vlc 在 webdav 方面自定义选项不足
 
-* bilibili 无广告版 <https://github.com/lucinhu/bili_you/releases> 作者已经不再维护了
-* bilibili 标准版 <https://sj.qq.com/appdetail/tv.danmaku.bili> 没以前清爽了
+* [bili_you](https://github.com/lucinhu/bili_you/releases) bilibili 无广告版，但是作者已经不再维护了
+* [bilibili 标准版](https://sj.qq.com/appdetail/tv.danmaku.bili) 没以前清爽了
 * [抖音](https://sj.qq.com/appdetail/com.ss.android.ugc.aweme) 稍有广告
 * m1905 电影网 做的一般般
 * 爱奇艺 有广告呀
@@ -251,16 +252,13 @@ not
 
 ## 6. 教育类
 
-知乎知学堂 无广告
-
-备用
-
 * 多邻国 多国语言学习
 * [每日音乐听力](https://sj.qq.com/appdetail/com.qianyan2.ting.en)
 * 拉勾教育
 * 小鹅通
 * 慕课网 主打 IT 课程，且有一部分免费资源可以离线下载
 * 学堂在线 和 中国 MOOC 也都还行
+* 知乎知学堂 无广告
 
 ## 7. 生活类
 
@@ -341,7 +339,7 @@ not
 特色网盘
 
 * 文叔叔 匿名分享盘
-* 小飞机网盘去不错，然后 123 网盘稍微差点意思但优先级我还是选择小飞机
+* 小飞机网盘很不错，然后 123 网盘稍微差点意思但优先级我还是选择小飞机
 
 not
 
@@ -360,6 +358,10 @@ TODO 清单
 * [apkpure](https://apkpure.com/cn/) 一个有国外的应用商店
 * [Google Play](https://play.google.com/)
 * <https://sj.qq.com/> 应用宝-全网最新最热手机应用游戏下载
+
+## 15. 桌面启动器
+
+* [微软桌面](https://apkpure.com/cn/microsoft-launcher/com.microsoft.launcher/download) 不喜欢系统桌面可以试试
 
 ## 其他
 
