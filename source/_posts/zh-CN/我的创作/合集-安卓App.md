@@ -103,20 +103,23 @@ not
 
 我还在寻找一款可以订阅 rss 的好用 app
 
+可选
+
+* 微信读书 除了现在很多内容收费了
+* [京东读书](https://sj.qq.com/appdetail/com.jd.app.reader) 送了影响力 和 乌合之众几本书，可以看一段时间
+* 番茄免费小说 有的想看的书可以免费离线下载，很好，很适合离线用
+
 not
 
 * [阅读](https://github.com/gedoor/legado/releases) 不支持 mobi 格式
-* [京东读书](https://sj.qq.com/appdetail/com.jd.app.reader) 送了影响力 和 乌合之众几本书，可以看一段时间
-* 番茄免费小说 有的想看的书可以免费离线下载，很好，很适合离线用
-* [知乎](https://sj.qq.com/appdetail/com.zhihu.android) 广告多
 * [今日热榜](https://tophub.today/app) 资源感觉不太丰富
-* [今日头条](https://sj.qq.com/appdetail/com.ss.android.article.news)，安卓版的有广告。  曾经最爱，但是广告劝退了我，iPhone * 付费版的倒是可以考虑。我一般很少关注外界，这得改呀，央视 315 这种节目就很好
+* [今日头条](https://sj.qq.com/appdetail/com.ss.android.article.news)，安卓版的有广告。  曾经最爱，但是广告劝退了我。话说 iPhone 的付费版的倒是可以考虑。我一般很少关注外界，这得改呀，央视 315 这种节目就很好
 * 微软 start 用于看新闻但不好用
-* 多看 书太贵
+* 多看阅读 书太贵
 * 百度阅读 没起来
-* QQ 阅读
+* QQ 阅读 有广告
 * 起点读书 可能有些独家资源
-* 七猫
+* 七猫 免费看小说但是有广告
 * 凤凰 FM 偶尔闪退
 * 安卓平台的 feeder 不好用只能做备选，看来 rss 阅读器还是苹果平台的 reeder
 
@@ -127,9 +130,8 @@ not
 
 可选
 
-1. 我现在使用的咪咕音乐可以免费听 1 年
-2. 洛雪音乐助手
-3. k 歌软件暂定 全民 K 歌
+1. k 歌软件暂定 全民 K 歌
+2. 洛雪音乐助手 作为 Spotify 的替代品，我一般很少用，因为同步歌单是个问题
 
 not
 
@@ -137,11 +139,13 @@ not
 * [网易云](https://sj.qq.com/appdetail/com.netease.cloudmusic) 广告太多且现在太繁杂了
 * 酷狗 和 酷我 差一点意思
 * 爱音乐 不好用，现在周杰伦的歌都没了，也不知道以前有没有
+* 咪咕音乐可以免费听 1 年，但是之后呢，不符合我白嫖原则
 
 ### 6. 听书
 
-1. 得到 <https://sj.qq.com/appdetail/com.luojilab.player> 非常好
+1. [得到](https://sj.qq.com/appdetail/com.luojilab.player) 非常好
 2. 帆书 有时候可以蹭一些限免资源，开会员我是不会的
+3. 云听 央视出品，虽然有写广告，但是精品资源很多
 
 可选
 
@@ -166,11 +170,10 @@ not
 
 可选
 
-* [es 文件浏览器](http://www.estrongs.com/) 我称之为万能播放器，可以通过 alist 挂载的网盘和本身具备音视频播放能力呢，特别是搭配 nas 或服务器使用，除了有广告要开会员
-* bilibili 国际版 [下载地址一](https://apkpure.com/cn/bilibili-cn/com.bilibili.app.in/download) |
-  [下载地址二](https://com-bilibili-app-in.en.uptodown.com/android) 因为清爽呀
 * 西瓜视频 广告不多 还能创作
-* NewPipe [官网](https://newpipe.net/) | [NewPipe_v0.27.0.apk](https://archive.newpipe.net/fdroid/repo/NewPipe_v0.27.0.apk) NewPipe - a free YouTube client
+* bilibili 国际版 [下载地址一](https://apkpure.com/cn/bilibili-cn/com.bilibili.app.in/download) | [下载地址二](https://com-bilibili-app-in.en.uptodown.com/android) 因为清爽呀
+* [es 文件浏览器](http://www.estrongs.com/) 我称之为万能播放器，可以通过 alist 挂载的网盘和本身具备音视频播放能力呢，特别是搭配 nas 或服务器使用，除了有广告要开会员
+* NewPipe- a free YouTube client [官网](https://newpipe.net/) | [NewPipe_v0.27.0.apk](https://archive.newpipe.net/fdroid/repo/NewPipe_v0.27.0.apk)
 
 not
 
@@ -192,7 +195,7 @@ not
 * 浏览器 [火狐浏览器](https://firefox.en.uptodown.com/android)很好，期待将来支持更多拓展，然后 edge 也是一样text
 * 微信输入法 其中的跨设备粘贴绝了
 * [GKD 搞快点](https://gkd.li/) 用于跳过广告
-* 魔法上网工具
+* 魔法上网工具 例如 ssr 粉色的小飞机（酸酸乳） 或者 v2rayNG
 
 可选
 
@@ -250,15 +253,26 @@ not
 * [亿通行](https://sj.qq.com/appdetail/enfc.metro)  北京专用 旅行几日游专用
 * [北京一卡通](https://sj.qq.com/appdetail/cn.com.bmac.nfc)
 
-## 6. 教育类
+## 6. 学习类
 
 * 多邻国 多国语言学习
+
+可选
+
 * [每日音乐听力](https://sj.qq.com/appdetail/com.qianyan2.ting.en)
 * 拉勾教育
 * 小鹅通
 * 慕课网 主打 IT 课程，且有一部分免费资源可以离线下载
 * 学堂在线 和 中国 MOOC 也都还行
 * 知乎知学堂 无广告
+* [知乎](https://sj.qq.com/appdetail/com.zhihu.android) 广告多但是可以做任务、
+* LeetCode 学算法用 至少没广告
+* 牛客 和上面提到的力扣网类似，面试 + 学算法
+* 稀土掘金 很清爽
+
+not
+
+* csdn 广告太多，不如 pc 上网页版的
 
 ## 7. 生活类
 
