@@ -8,7 +8,7 @@ updated: 2024-03-12 22:53:00
 
 安全永远第一条
 
-不要让陌生人开启做出来电转接 ##**21 这种可能很可能有害的行为。不要共享屏幕，不要转账。预防电信网络诈骗。千万不能好奇。大部分人用不到
+不要让陌生人开启做出来电转接 `##*21` 这种可能很可能有害的行为。绝对不要共享屏幕，不要转账。预防电信网络诈骗。千万不能好奇。一定要做到**不贪心不恐惧**。
 
 ## 关注中
 
@@ -36,7 +36,7 @@ updated: 2024-03-12 22:53:00
 
 更多待尝试：
 
-游戏类的 App 而言一般都不太用关心适配, 可理解为一个放大版的手机
+游戏类的 App 而言一般都不太用关心适配, 可理解为一个放大版的手机。
 
 Flipboard HD 中国版 （红板报）
 尝试了网易新闻等各种新闻 App, 可惜没做适配, 好不容易找个了可用的
@@ -44,7 +44,7 @@ Flipboard HD 中国版 （红板报）
 阅读星 Pro
 这是手机版的, Pad 版本的几年都没更新了, 但是不影响使用, 是阅读必备神器, 能读取各种格式的阅读格式文件。
 
-为了获得专业的**阅读 Pdf **体验, 可选择** Adobe Acrobat**, 这款 App 是通用版, 平板也做了适配。
+为了获得专业的**阅读 Pdf **体验, 可选择**Adobe Acrobat**, 这款 App 是通用版, 平板也做了适配。
 
 现在直播很多, 之前斗鱼 有 HD 版本，不知道现在有没有
 
@@ -64,13 +64,13 @@ VLC (可倍速播放视频)
 
 ### 0. 安全中心
 
-安卓一般可以选择自带的手机管家。否则可以选择腾讯和 360 两家瓜分了大部分用户。
+安卓一般可以选择自带的手机管家。否则可以选择腾讯和 360 两家。
 
-iOS 用户则必须安装其中一个，防诈骗，防骗子，防止一些无良商家盯着你口袋里的钱。
+iOS 用户则必须安装其中一个，防诈骗和无良商家骗取钱财。
 
-最终，我添加了[国家反诈中心 app](https://sj.qq.com/appdetail/com.hicorenational.antifraud)作为装机必备！！！
+最终，我选择了通用的[国家反诈中心 app](https://sj.qq.com/appdetail/com.hicorenational.antifraud)作为装机必备！！！
 
-### 1. 安全
+### 1. 认证
 
 1. [Aegis Authenticator](https://getaegis.app/) | [下载地址](https://github.com/beemdevelopment/Aegis/releases) 软件包体积稍大 且 国内云同步功能没法使用
 2. QQ 安全中心
@@ -141,7 +141,7 @@ not
 * 爱音乐 不好用，现在周杰伦的歌都没了，也不知道以前有没有
 * 咪咕音乐可以免费听 1 年，但是之后呢，不符合我白嫖原则
 
-### 6. 听书
+### 6. 有声读物
 
 1. [得到](https://sj.qq.com/appdetail/com.luojilab.player) 非常好
 2. 帆书 有时候可以蹭一些限免资源，开会员我是不会的
@@ -192,13 +192,13 @@ not
 
 ## 3. 工具类
 
-* 浏览器 [火狐浏览器](https://firefox.en.uptodown.com/android)很好，期待将来支持更多拓展，然后 edge 也是一样text
 * 微信输入法 其中的跨设备粘贴绝了
 * [GKD 搞快点](https://gkd.li/) 用于跳过广告
 * 魔法上网工具 例如 ssr 粉色的小飞机（酸酸乳） 或者 v2rayNG
 
 可选
 
+* 浏览器 [火狐浏览器](https://firefox.en.uptodown.com/android)很好，期待将来支持更多拓展，然后 edge 也是一样
 * wifi 万能密钥 偶尔可以用下，虽说现在的能用的热点不多了
 * [360 浏览器](https://sj.qq.com/appdetail/com.qihoo.browser) 安全第一位，但是只要不要慌，陌生的东西一定不要点
 * [菜鸟](https://sj.qq.com/appdetail/com.cainiao.wireless) 好处就是一键查询所有快递
@@ -257,6 +257,8 @@ not
 
 * 多邻国 多国语言学习
 
+其实 好看视频 也能学知识
+
 可选
 
 * [每日音乐听力](https://sj.qq.com/appdetail/com.qianyan2.ting.en)
@@ -290,7 +292,7 @@ or
 
 not
 
-* 大众点评 <https://sj.qq.com/appdetail/com.dianping.v1> 和上述重了
+* [大众点评](https://sj.qq.com/appdetail/com.dianping.v1) 和上述重了
 * [闪送](https://sj.qq.com/appdetail/cn.ishansong)
 * [58 同城](https://sj.qq.com/appdetail/com.wuba) 假消息太多，注意防范什么引流之类，但也有真实的
 * [安居客](https://sj.qq.com/appdetail/com.anjuke.android.app)
@@ -303,7 +305,7 @@ not
 
 可选
 
-* 去哪儿 <https://sj.qq.com/appdetail/com.Qunar> 感觉还是去哪儿的票价便宜些 这里由于我没仔细阅读，导致取消订单后重下单付款了 120，长沙金井的老板真黑，我应该提前和他说我第二天早起会退房的，但我的主要损失还是被商诈和被电诈
+* [去哪儿](https://sj.qq.com/appdetail/com.Qunar) 感觉还是去哪儿的票价便宜些 这里由于我没仔细阅读，导致取消订单后重下单付款了 120，长沙金井的老板真黑，我应该提前和他说我第二天早起会退房的，但我的主要损失还是被商诈和被电诈
 * [携程](https://sj.qq.com/appdetail/ctrip.android.view)
 * 同程
 
@@ -321,11 +323,13 @@ not
 
 ## 10. 办公类
 
-* 天眼查 <https://sj.qq.com/appdetail/com.tianyancha.skyeye> 求职中可以**反调公司**，也适用于查询被服务公司，**无良北京丰台万达舒窈瑶国际无所遁**
+* [天眼查](https://sj.qq.com/appdetail/com.tianyancha.skyeye) 求职中可以**反调公司**，也适用于查询被服务公司，**无良北京丰台万达舒窈瑶国际无所遁**
+
+可选
 
 * 企业微信
 * [飞书](https://sj.qq.com/appdetail/com.ss.android.lark)
-* 钉钉 <https://sj.qq.com/appdetail/com.alibaba.android.rimet>
+* [钉钉](https://sj.qq.com/appdetail/com.alibaba.android.rimet)
 
 * [HP 打印服务](https://sj.qq.com/appdetail/com.hp.android.printservice) 毕竟市场占用率高且方便
 
@@ -343,7 +347,7 @@ not
 
 ## 12. 云端
 
-* [pikpak](https://mypikpak.com/zh-CN) 免费版 6G 空间。网页版需要魔法登录后就可以断掉了 手机版建议邮箱登录可正常使用
+* [pikpak](https://mypikpak.com/zh-CN) 免费版只有 6G 空间，每天可以添加 3 个云下载任务。网页版建议使用油猴脚本可以做到免魔法登录，否则需要魔法登录后才能断掉。而手机版建议邮箱登录可正常使用
 
 可选
 
@@ -352,7 +356,7 @@ not
 
 特色网盘
 
-* 文叔叔 匿名分享盘
+* [文叔叔](https://www.wenshushu.cn/) 匿名分享盘
 * 小飞机网盘很不错，然后 123 网盘稍微差点意思但优先级我还是选择小飞机
 
 not
@@ -368,10 +372,10 @@ TODO 清单
 
 ## 14. 应用商店类
 
-* 国际服游戏下载-GamesToday 官网 <https://www.hotplaygames.com/>
+* 国际服游戏下载-GamesToday [官网](https://www.hotplaygames.com/)
 * [apkpure](https://apkpure.com/cn/) 一个有国外的应用商店
 * [Google Play](https://play.google.com/)
-* <https://sj.qq.com/> 应用宝-全网最新最热手机应用游戏下载
+* [腾讯应用宝](https://sj.qq.com/)-全网最新最热手机应用游戏下载
 
 ## 15. 桌面启动器
 
@@ -403,21 +407,20 @@ TODO 清单
 ```text
 家庭必备
 
-国家反诈中心
-qq 音乐
-uc 浏览器
-中华万年历
+国家反诈中心 安全永远第一位
 凤凰视频
+中华万年历 顺便可以查询天气
 我查查
 用药助手
 
 ### 备用机必备
 
-国家反诈中心
+国家反诈中心 安全永远第一位
 vplayer 可变速播放
-wps
 智器阅读 当时很棒的可以裁掉白边
+uc 浏览器老版 由于很清爽的缘故
+
 lbe 安全大师 已过时
-link2sd 已过时
-uc 经典版 目前浏览器几乎用不太到
+
+link2sd 现在几乎用不到了
 ```

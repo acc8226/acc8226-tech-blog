@@ -23,7 +23,7 @@ win 10/11：普通 windows 用户依旧可以选择安装管家或者卫士，�
 
 - - -
 
-【mac】腾讯柠檬清理<https://lemon.qq.com/>
+【mac】[腾讯柠檬清理](https://lemon.qq.com/)
 
 主打清理电脑垃圾文件，一键释放磁盘空间。因 App Store 审核限制，完整版内部分功能无法上架（例如应用卸载等）。建议去官网下载完整版。
 
@@ -42,7 +42,7 @@ Firefox 可作为有效补充，由于其出色的播放视频的稳定性。且
 #### 3. 压缩解压
 
 * [【win 安装版】Bandizip](https://www.bandisoft.com/) 智能解压和压缩文件预览功能特别好用
-* [【mac】The Unarchiver【App Store版】](https://theunarchiver.com/)或者官网直装版
+* [【mac App Store版】The Unarchiver](https://theunarchiver.com/)或者官网直装版
 * linux 系统一般自带 tar 和 zip 命令。
 
 #### 4. 输入法
@@ -78,15 +78,17 @@ not
 
 linux 平台
 
-搜狗 <https://shurufa.sogou.com/linux>
+[搜狗输入法 for linux](https://shurufa.sogou.com/linux)
 
 百度和讯飞都有支持，据说还有个 ibus。
 
-### 1. 工具类
+### 1.工具类
 
-#### 1. 鼠标手势
+#### 1.鼠标手势
 
-首推【绿色版】的 [FastGestures 鼠标/触控板/屏手势](https://fg.zhaokeli.com/)，如果提示 dll 缺失，则可以换成 【win 免费 安装版】WGestures 1 或者【收费 安装版 win mac】WGestures 2 鼠标手势 <https://www.yingdev.com/projects/wgestures2>
+首推【绿色版】的 [FastGestures 鼠标/触控板/屏手势](https://fg.zhaokeli.com/)，如果提示 dll 缺失，则可以通过使用安装版的进行解决。
+
+否则可以换成 【win 免费 安装版】WGestures 1 或者【收费 安装版 win mac】WGestures 2 鼠标手势 <https://www.yingdev.com/projects/wgestures2>
 
 这绝对是效率神器。
 
@@ -110,7 +112,7 @@ apt install easystroke
 
 or
 
-【win】MyKeymap-2.0 <https://xianyukang.com/MyKeymap.html> | GitHub 地址 <https://github.com/xianyukang/MyKeymap>
+【win】[MyKeymap-2.0](https://xianyukang.com/MyKeymap.html) | [GitHub 地址](https://github.com/xianyukang/MyKeymap)
 
 槽点是 win 7 用不了
 
@@ -122,7 +124,7 @@ mac 平台
 
 #### 3. 截图
 
-[【win】PixPin](https://pixpinapp.com/) 顺便期待 mac 版的推出
+【win】[PixPin](https://pixpinapp.com/) 顺便期待 mac 版的推出
 
 or
 
@@ -166,11 +168,11 @@ stretchly 图标每次突然弹出很突兀且选项太多了
 
 #### 5. 下载
 
-【全平台】motrix【首选】 <https://motrix.app/zh-CN/> | [下载页](https://motrix.app/zh-CN/download) 颜值高。支持下载 HTTP、FTP、BT、磁力链接等资源。即使 Github 资源也不在话下
+【全平台 首选】[motrix](https://motrix.app/zh-CN/) | [下载页](https://motrix.app/zh-CN/download) 颜值高。支持下载 HTTP、FTP、BT、磁力链接等资源。即使 Github 资源也不在话下
 
 或者
 
-【win linux】文件蜈蚣 <http://www.filecxx.com/zh_CN/index.html> 免费版功能也够，提供插件可以嗅探网页中的视频
+【win linux】[文件蜈蚣](http://www.filecxx.com/zh_CN/index.html) 免费版功能也够，提供插件可以嗅探网页中的视频
 
 maybe
 
@@ -182,8 +184,7 @@ maybe
 
 maybe
 
-【浏览器拓展】猫抓(cat catch) - 猫抓(cat catch)文档
-<https://o2bmm.gitbook.io/cat-catch/>
+【浏览器拓展】[猫抓(cat catch) - 猫抓(cat catch)文档](https://o2bmm.gitbook.io/cat-catch/)
 
 maybe
 
@@ -219,8 +220,8 @@ or
 not
 
 * acdsee 免费版都需要注册，差评
-* Honeyview <https://www.bandisoft.com/honeyview/> 页面太丑了，已过时
-* Bandiview <https://www.bandisoft.com/bandiview/> Honeyview 的升级版
+* [Honeyview](https://www.bandisoft.com/honeyview/) 页面太丑了，已过时
+* [Bandiview](https://www.bandisoft.com/bandiview/) Honeyview 的升级版
 * jpegview 特点是小巧，但操作不顺手 <https://github.com/sylikc/jpegview/> 下载链接 <https://github.com/sylikc/jpegview/releases/download/v1.3.46/JPEGView32_1.3.46.7z>
 * XnView 界面不那么现代 <https://www.xnview.com/en/xnview/#downloads>
 
@@ -232,14 +233,14 @@ mac 平台
 
 #### 7. 图像处理
 
-[【win】【轻量】ShareX](https://getsharex.com/) 也可以贴图，不过我更当是一个图片编辑器，还可以录屏
+[【win 轻量】ShareX](https://getsharex.com/) 也可以贴图，不过我更当是一个图片编辑器，还可以录屏
 [ShareX-15.0.0-portable 下载](https://github.com/ShareX/ShareX/releases/download/v15.0.0/ShareX-15.0.0-portable.zip)
 
-【全平台】【重量】GIMP 【PS 的替代品且免费】 <https://www.gimp.org/>
+【全平台 重量】GIMP 【PS 的替代品且免费】 <https://www.gimp.org/>
 
 or
 
-【免费】【网页版】美图秀秀在线版
+【免费 网页版】美图秀秀在线版
 
 not
 
@@ -251,7 +252,7 @@ not
 
 mac 平台
 
-依旧【全平台】【重量】GIMP
+依旧【全平台 重量】GIMP
 
 #### 8. 网盘
 
@@ -277,7 +278,7 @@ mac 平台
 
 ### 2. 办公类
 
-#### 1. 【常用】Office
+#### 1.【常用】Office
 
 一般品牌笔记本都会赠送微软 Office 套件。否则我会选择免费的 wps 加 LibreOffice 的组合。
 
@@ -285,7 +286,7 @@ mac 平台
 
 or
 
-【全平台】WPS <https://www.wps.cn/>
+【全平台】[WPS](https://www.wps.cn/)
 
 - - -
 
@@ -293,11 +294,11 @@ mac 平台
 
 除了 office 和 iWork 系列外我还是会选择 libreoffice 加 WPS 的组合
 
-#### 2. 【常用】PDF 文档
+#### 2.【常用】PDF 文档
 
-阅读器 [【win 绿色版】SumatraPDF](https://www.sumatrapdfreader.org/)
+阅读器 【win 绿色版】[SumatraPDF](https://www.sumatrapdfreader.org/)
 
-编辑器 [【win 安装版】PDFgear](https://www.pdfgear.com/download/)
+编辑器 【win 安装版】[PDFgear](https://www.pdfgear.com/download/)
 
 or
 
@@ -326,9 +327,9 @@ mac 平台
 
 【linux】PDF 如果站在简单读取的角度直接用浏览器即可
 
-#### 3. mail 收发
+#### 3.mail 收发
 
-【win mac】网易邮箱大师 <https://dashi.163.com/>
+【win mac】[网易邮箱大师](https://dashi.163.com/)
 
 or
 
@@ -364,21 +365,21 @@ not
 
 [Xmind 思维导图](https://xmind.cn/)
 
-### 3. 【常用】音频类
+### 3.【常用】音频类
 
-普通用户推荐在线播放推荐 【win mac】QQ 音乐 <https://y.qq.com/download/index.html>，而我更喜欢 lx-music-desktop 但是需要自行找资源
+普通用户推荐在线播放推荐 【win mac】[QQ 音乐](https://y.qq.com/download/index.html)，而我更喜欢 lx-music-desktop 但是需要自行找资源
 
 可选
 
-本地播放可以安装一个 【win】MusicPlayer2 <https://github.com/zhongyang219/MusicPlayer2>
+本地播放可以安装一个 【win】[MusicPlayer2](https://github.com/zhongyang219/MusicPlayer2)
 
 远端播放 【win】普听音乐。在阿里云盘的加持下很好用，用于打造自己的曲库
 
 not
 
 * 【win mac】汽水音乐推荐算法很优秀，不过 vip 的体验更好
-* 方格音乐 由于可以下载歌曲 <http://morin.vin/> 但偶尔好用
-* 【win mac】网易云音乐【在线】 网易云音乐 <https://music.163.com/#/download>
+* [方格音乐](http://morin.vin/) 由于可以下载歌曲 但偶尔好用
+* 【win mac 在线】[网易云音乐](https://music.163.com/#/download)
 * 酷狗音乐 没落的不行了
 * 千千音乐 快捷键都不支持，体验极差
 * Spotube 开了魔法也不好用
@@ -391,13 +392,13 @@ mac 平台
 本地音乐播放器 可能是 [foobar2000](https://www.foobar2000.org/) 吧，但是歌词搜索呢，差很多意思
 在线选 QQ 音乐
 
-### 4. 【常用】视频类
+### 4.【常用】视频类
 
 本地 + 网络流播放 [【本地 首选 win 官方安装版】PotPlayer](https://potplayer.tv/?lang=zh_CN) 高清影音播放器 或者开源的 VLC 也很不错
 
 在线平台  2. [【win】荐片播放器官网](https://www.jianpian6.co/) - 最新电影，播放器
 
-本地 +  在线通吃 [【win mac】哔哩哔哩](https://app.bilibili.com/)在线【本地】【首选】，播放效果比网页好很多，特别是 win
+本地 +  在线通吃 【win mac】[哔哩哔哩](https://app.bilibili.com/)在线【本地】【首选】，播放效果比网页好很多，特别是 win
 bili 的 mac 版的本地播放能力也挺强的
 
 or
@@ -406,11 +407,11 @@ or
 
 not
 
-* 【win mac】爱奇艺【在线】 在线视频网站 <https://www.iqiyi.com/>
-* 【win mac】优酷【在线】客户端下载 <https://youku.com/product/index>
-* 【win mac】腾讯视频【在线】中国领先的在线视频媒体平台 https://v.qq.com/
-* 【win mac】芒果 TV【在线】 <https://www.mgtv.com/app/>
-* 【win mac linux】【本地】VLC 官方网站 颜值不够 - VideoLAN <https://www.videolan.org/>
+* 【win mac 在线】爱奇艺 <https://www.iqiyi.com/>
+* 【win mac 在线】优酷 客户端下载 <https://youku.com/product/index>
+* 【win mac 在线】[腾讯视频](https://v.qq.com/)
+* 【win mac 在线】[芒果 TV](https://www.mgtv.com/app/)
+* 【win mac linux】【本地】VLC -  [VideoLAN](https://www.videolan.org/) 颜值不够
 * 【win】【本地】kmplayer 没有便携版
 * 【win】【本地】恒星播放器 广告太多
 * 【win】【本地】mpv 足够清爽，可是功能太单一
@@ -424,7 +425,7 @@ mac 平台
 2. vidhub
 3. 优酷 可以免费看很多剧
 
-### 5. 【常用】社交类
+### 5.【常用】社交类
 
 [【win mac】微信](https://weixin.qq.com/)
 
@@ -442,23 +443,23 @@ mac 平台
 
 依旧 QQ 和 微信
 
-### 6. 教育类
+### 6.教育类
 
 1. [【全平台】每日英语听力 ](https://www.eudic.net/v4/en/app/ting)
 2. [【全平台】欧路词典](https://www.eudic.net/v4/en/app/download)
 
-### 7. 远程类
+### 7.远程类
 
 【全平台】RustDesk – The Open Source Remote Desktop Access Software
 <https://rustdesk.com/index.html>
 
 or
 
-ToDesk <https://www.todesk.com/download.html>
+[ToDesk](https://www.todesk.com/download.html)
 
 or
 
-[【win】DBAdmin](https://www.slser.com/)
+【win】[DBAdmin](https://www.slser.com/)
 
 not
 
@@ -484,7 +485,7 @@ not
 
 【云桌面】阿里无影云桌面 mac 版有点卡
 
-### 8. 启动器
+### 8.启动器
 
 【Win】自制的捷键
 
@@ -500,7 +501,7 @@ not
 
 rubick 还不够完整
 
-### 9. 阅读类
+### 9.阅读类
 
 [【win】Fluent Reader 一款 rss 阅读器](https://github.com/yang991178/fluent-reader/releases/)
 
@@ -512,9 +513,13 @@ mac 平台
 2. Reeder 用于 rss
 3. 杂志天下
 
+### 10.桌面美化
+
+[拾光壁纸](https://app.nguaduot.cn/timeline) 干净、舒适、流畅的壁纸网站
+
 ## 拓展
 
-### 0. 驱动运行库硬件检测
+### 0.驱动运行库硬件检测
 
 理论上安装鲁大师一个就够用了，驱动可以认准主板官网或者用 dism++ 备份原有驱动，如果不能连接网络我通常会安装 [驱动总裁万能网卡绿色版](https://www.sysceo.com/Software)
 
@@ -534,19 +539,19 @@ not
 * [驱动精灵](http://www.drivergenius.com/)
 * [驱动人生](https://www.160.com/) 下载驱动限速严重
 
-### 1. 激活类
+### 1.激活类
 
 [GitHub - zbezj/HEU_KMS_Activator](https://dl.lancdn.com/landian/soft/heu/) | [备份站](https://dl.lancdn.com/landian/soft/heu/)
 
 [云萌 Windows 激活工具](https://cmwtat.cloudmoe.com/cn.html)
 
-### 2. OCR 软件
+### 2.OCR 软件
 
 【win】[Umi-OCR-OCR](https://github.com/hiroi-sora/Umi-OCR) 图片转文字识别软件
 
 【win mac 已购】[极度扫描-文字识别-OCR](https://jidusm.wrste.com/)
 
-### 3. 录屏软件
+### 3.录屏软件
 
 视频录制
 
@@ -597,7 +602,7 @@ not
 
 ### 4. TTS 文字转语音软件
 
-[【win】tts-vue: 🎤 微软语音合成工具](https://gitee.com/LGW_space/tts-vue)，使用 Electron + Vue + ElementPlus + Vite 构建，将文字转为语音 MP3。
+【win】[tts-vue: 🎤 微软语音合成工具](https://gitee.com/LGW_space/tts-vue)，使用 Electron + Vue + ElementPlus + Vite 构建，将文字转为语音 MP3。
 
 ### 5. 文件搜索
 
@@ -611,7 +616,7 @@ and
 
 文档中搜索关键字 【win】工具 FileSearchEX_v1.1.0.6
 
-### 6. 显示网速
+### 6.显示网速
 
 【win】[TrafficMonitor](https://github.com/zhongyang219/TrafficMonitor)
 
@@ -619,7 +624,7 @@ and
 
 mac 的腾讯柠檬清理已经自带了该功能
 
-### 7. DNS 相关【win】
+### 7.DNS 相关【win】
 
 **DNS 优选**
 
@@ -641,7 +646,7 @@ or
 
 [AdGuard Home 官网 ](https://adguard.com/zh_cn/adguard-home/overview.html) | [github AdguardHome](https://github.com/AdguardTeam/AdguardHome)
 
-### 8. markdown 编辑
+### 8.markdown 编辑
 
 [marktext](https://github.com/marktext/marktext/releases 'markdown 编辑')
 
@@ -654,7 +659,7 @@ not
 
 mac 平台据说 ulysses 评价很高，但收费就算了
 
-### 9. 大文件分析
+### 9.大文件分析
 
 [【win】【推荐】】wiztree](https://www.diskanalyzer.com/)
 
@@ -662,7 +667,7 @@ or
 
 [【win】【备用】SpaceSniffer](http://www.uderzo.it/main_products/space_sniffer/index.html)
 
-### 10. 【常用】清理卸载
+### 10.【常用】清理卸载
 
 [【win】极客卸载 Geek Uninstaller](https://geekuninstaller.com/download) 简单清爽
 
@@ -704,23 +709,23 @@ iOS 用户可下载 iTunes 或者某国产助手
 
 虚拟光驱可用于加载 iso 文件到我的电脑，这里我推荐软媒魔方套件。
 
-### 14. 磁盘工具
+### 14.磁盘工具
 
 * [【win】傲梅分区助手](https://www.disktool.cn/download.html)
 * 【win】diskgenius
 
-### 15. U 盘引导
+### 15.U 盘引导
 
 [Ventoy](https://www.ventoy.net/cn/index.html) linux 和 windows 二合一，且不妨碍 U 盘正常使用
 
 【win】【备用】微 PE 工具箱 - 装机维护工具。无广主打纯净 <https://www.wepe.com.cn/>
 
-### 16. 微软 buff
+### 16.微软 buff
 
 * [【win】【备用】微软 Sysinternals](https://learn.microsoft.com/zh-cn/sysinternals/)
 * [Microsoft PowerToys](https://learn.microsoft.com/zh-cn/windows/powertoys/)
 
-### 17. 效率工具
+### 17.效率工具
 
 * [【跨平台】Espanso](https://espanso.org/)文字输入增强
 
@@ -729,7 +734,7 @@ not
 * Listary 虽说效率神器但是不好用
 * quicker 虽说是效率神器，但是我用不习惯
 
-### 18. mac 特有
+### 18.mac 特有
 
 #### 鼠标翻转
 
@@ -741,7 +746,7 @@ bab 可以开启该功能
 
 [【mac】AlDente - 负载限制器](https://apphousekitchen.com/)
 
-### 19. windows 也要有
+### 19.windows 也要有
 
 #### 空格预览文件
 
@@ -768,13 +773,18 @@ Seer 收费就算了
 
 ### 00. 虚拟机
 
-* 【mac】Fusion【首选】<https://www.vmware.com/products/fusion.html>
-* 【win】VMware Workstation Player【首选】 <https://www.vmware.com/products/workstation-player.html>
-* 【全平台】VirtualBox【备选】<https://www.virtualbox.org/wiki/Downloads>
+2024/5/15 消息，VMware 做出了一个小小的但很有诚意的让步：Workstation Pro 和 Fusion Pro 产品现在起将免费供个人用户使用。
+
+* 【mac 首选】[VMware Fusion Pro for Mac](https://support.broadcom.com/group/ecx/productdownloads?subfamily=VMware+Fusion) 可供基于 Intel CPU 或 Apple M 系列处理器的 Mac 电脑使用
+* 【win 首选】[VMware Workstation Pro for PC](https://support.broadcom.com/group/ecx/productdownloads?subfamily=VMware+Workstation+Pro)
+
+备选
+
+【全平台】[VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 
 not
 
-* [【mac 付费】Parallels](https://www.parallels.cn/) 买断只能买一个大版本
+* 【mac 付费】[Parallels](https://www.parallels.cn/) 买断只能买一个大版本
 
 ### 01. 网盘搭建
 
@@ -813,8 +823,8 @@ ClearVPN 免费版基本废了
 
 [【linux】AppImage](https://appimage.org)
 
-* 【win】Scoop <https://scoop.sh/#/>
-* 【win】微软 winget
+* 【win】[Scoop](https://scoop.sh/#/)
+* 【win】微软 winget 属于系统内置
 * choco
 * sdkman
 * scoop

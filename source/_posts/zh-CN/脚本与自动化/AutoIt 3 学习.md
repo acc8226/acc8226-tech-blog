@@ -69,11 +69,8 @@ AU3Info 是顶层窗口, 以便在任何时候都可以阅读它获取的信息.
 
 ## 参考
 
-Home - AutoIt
-<https://www.autoitscript.com/site/>
+Home - AutoIt <https://www.autoitscript.com/site/>
 
-AutoIt 在线文档 脚本之家
-<https://www.jb51.net/shouce/autoit3/>
+AutoIt 在线文档 脚本之家 <https://www.jb51.net/shouce/autoit3/>
 
-autoit3 下载地址
-<https://www.autoitscript.com/files/autoit3/autoit-v3-setup.zip>
+autoit3 下载地址 <https://www.autoitscript.com/files/autoit3/autoit-v3-setup.zip>

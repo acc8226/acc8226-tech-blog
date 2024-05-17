@@ -51,9 +51,9 @@ Run('jiejian64.exe /script lib\ChangeBrightness.ahk')
 
 ```ahk
 ; 插入 email
-:C*:xem::acc8227@abc.com
+:C*:xem::acc8227@sina.com
 ; 插入 qq
-:C*:xqq::133459846
+:C*:xqq::133459866
 
 ; 快捷操作-插入双引号 ctrl + shift + "
 ^+"::Send '""{Left}'
@@ -108,7 +108,7 @@ C 区分大小写，`*` 表示不需要额外键入终止符
 
 ### dll 使用示例
 
-```ahk
+```autohotkey
 WhichButton := DllCall("MessageBox", "Int", 0, "Str", "Press Yes or No", "Str", "Title of box", "Int", 4)
 MsgBox "You pressed button #" WhichButton
 ```

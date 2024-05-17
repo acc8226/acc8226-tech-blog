@@ -102,5 +102,4 @@ f()
 
 ## 参考
 
-向严格模式过渡 - JavaScript | MDN
-<https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Strict_mode/Transitioning_to_strict_mode>
+向严格模式过渡 - JavaScript | MDN <https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Strict_mode/Transitioning_to_strict_mode>

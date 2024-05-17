@@ -7,8 +7,7 @@ categories:
   - 框架
 ---
 
-MinIO | Code and downloads to create high performance object storage
-<https://min.io/download#/>
+[MinIO](https://min.io/download#/) | Code and downloads to create high performance object storage
 
 下载和启动
 
@@ -20,3 +19,15 @@ PS> D:\minio.exe server E:\Data --console-address ":9001"
 ```
 
 minio 提供了一个可视化的管理控制平台，安装好之后，在浏览器中输入(<http://localhost:9000/> (opens new window))就可以访问了。
+
+客户端 cli 支持
+
+mc.exe
+
+## Software Development Kits (SDK)
+
+```groovy
+dependencies {
+    implementation("io.minio:minio:8.5.10")
+}
+```

@@ -50,6 +50,15 @@ categories: 我的创作
 * [gradle-7.6.3-bin.zip](https://downloads.gradle.org/distributions/gradle-7.6.3-bin.zip)
 * [gradle-6.9.1-all.zip](https://mirrors.cloud.tencent.com/gradle/gradle-6.9.1-all.zip)
 
+build.gradle.kts 设置 maven 国内源
+
+```kts
+repositories {
+    maven("https://mirrors.cloud.tencent.com/nexus/repository/maven-public/")
+    mavenCentral()
+}
+```
+
 ## 2. DB 数据库
 
 ### 各类数据库
@@ -68,11 +77,11 @@ categories: 我的创作
 
 ### 数据库管理
 
-【win】【免费】【for mysql】[HeidiSQL](https://www.heidisql.com/download.php?download=portable-64)
+【win 免费】[HeidiSQL](https://www.heidisql.com/download.php?download=portable-64) mysql 免费客户端
 
-【全平台】【付费】[DataGrip](https://www.jetbrains.com/datagrip)
+【全平台 付费】[DataGrip](https://www.jetbrains.com/datagrip)
 
-【全平台】【预览版限免】[JetBrains Aqua](https://www.jetbrains.com/aqua/)
+【全平台 预览版限免】[JetBrains Aqua](https://www.jetbrains.com/aqua/)
 
 maybe
 
@@ -80,23 +89,23 @@ maybe
 
 not
 
-* [【win mac】pgAdmin](https://www.pgadmin.org/download/) 使用不习惯，且只支持 pg
-* [【全平台】DBeaver Community](https://dbeaver.io/download/) 颜值太低
-* [【全平台】DbVisualizer](https://www.dbvis.com/) 付费版才好用
+* 【win mac】[pgAdmin](https://www.pgadmin.org/download/) 使用不习惯，且只支持 pg
+* 【全平台】[DBeaver Community](https://dbeaver.io/download/) 颜值太低
+* 【全平台】[DbVisualizer](https://www.dbvis.com/) 付费版才好用
 
 - - -
 
 mac 平台
 
-如果有 jetbrain 认证开源项目认证，暂时选择 dg。
+如果有 Jetbrain 认证开源项目认证，暂时选择 dg。
 
 ## 3. Docker
 
-[【全平台】Docker](https://www.docker.com/products/docker-desktop)
+【全平台】[Docker](https://www.docker.com/products/docker-desktop)
 
-## 4. 【常用】Editor 编辑器
+## 4.【常用】Editor 编辑器
 
-[VSCode](https://code.visualstudio.com)
+【全平台】[VSCode](https://code.visualstudio.com)
 
 vscode 插件推荐
 
@@ -104,17 +113,18 @@ vscode 插件推荐
 
 not
 
-* Atom 已被官方标记为过时
 * [Brackets](https://brackets.io/) - A modern, open source code editor that understands web design. 不好用
 * [EverEdit](https://www.everedit.net/?lang=zh) 不好用
 * Fleet 还是不太好用
-* [Geany【win】](https://www.geany.org/) 只有安装版的差评，且 UI 目前差点意思
-* 【便携版】轻量级: notepad++ 不选择是由于作者的不当言论，不考虑了。
+* 【win】[Geany](https://www.geany.org/) 只有安装版的差评，且 UI 目前差点意思
+* 【便携版】轻量级: notepad++ 由于作者的不当言论
 * [SimpleNotePad](https://github.com/zhongyang219/SimpleNotePad) 很清爽，可惜先入为主
 * Sublime Text 不太喜欢用
 * Skylark 没有切换到上个标签
 * [notepadnext](https://www.notepadnext.com/) 还不太完善
 * [notepad--](https://gitee.com/cxasm/notepad--) 还不太完善
+
+* 【已过时】Atom
 
 ## 5. file compare 文件对比
 
@@ -123,7 +133,7 @@ not
 
 or
 
-[【全平台 付费】Beyond Compare 4](https://www.beyondcompare.cc/)
+【全平台 付费】[Beyond Compare 4](https://www.beyondcompare.cc/)
 
 not
 
@@ -138,10 +148,10 @@ mac 平台
 ## 6. 【常用】IDE 集成开发环境
 
 * Jetbrains 全家桶，包含了 [IntelliJ IDEA](https://www.jetbrains.com/idea/)，其中 [EPA 版本](https://www.jetbrains.com/resources/eap/)更新太频繁就不推荐了
-* [HBuilderX【web】](https://www.dcloud.io/hbuilderx.html)
+* [HBuilder X](https://www.dcloud.io/hbuilderx.html)
 * [PyCharm](https://www.jetbrains.com/zh-cn/pycharm/download)
 * [SpringTools](https://spring.io/tools)
-* [前端-微信开发者工具](https://developers.weixin.qq.com/miniprogram/dev/devtools/devtools.html)
+* [微信开发者工具](https://developers.weixin.qq.com/miniprogram/dev/devtools/devtools.html)
 * c/c++ <https://github.com/Embarcadero/Dev-Cpp> 或 [C-Free](http://www.programarts.com/cfree_ch/index.htm)
   
 maybe
@@ -153,15 +163,15 @@ not
 * CodeBlocks 界面太古老
 * Writerside 虽然是 jetbrains 出品，但操作太复杂了，不太好用
 
-## 7. 【常用】lang 编程语言
+## 7.【常用】lang 编程语言
 
 ### Autohotkey
 
-【win】[Autohotkey](https://www.autohotkey.com/download/) 脚本语言
+【win】Autohotkey - The ultimate automation scripting language. [官网](https://www.autohotkey.com/) | [下载](https://www.autohotkey.com/download/)
 
 ### Dart
 
-[Dart 编程语言主页 | Dart 中文文档 | Dart](https://dart.cn/)
+[Dart](https://dart.cn/)
 
 ### Go
 
@@ -169,61 +179,88 @@ not
 
 ### Java
 
-* [oracle Java](https://www.oracle.com/java/technologies/javase-downloads.html)
 * [Amazon corretto](https://aws.amazon.com/cn/corretto/)
 * [GraalVM](https://www.graalvm.org/downloads/)
 * [Liberica JDK](https://bell-sw.com/pages/downloads/)
 * [Microsoft openjdk](https://docs.microsoft.com/zh-cn/java/openjdk/download)
+* [Oracle Java](https://www.oracle.com/java/technologies/javase-downloads.html)
 * [Temurin](https://adoptium.net/temurin/releases/)
 
 如果是 windows 版本注意：临时使用，需要在命令行界面键入 `set path=java` 所在的 bin 目录。长期使用，建议设置环境变量到 path。
 
 ### Kotlin
 
-[Kotlin Programming Language](https://kotlinlang.org/)
+[Kotlin](https://kotlinlang.org/)
 
 ### Node.js
 
-[Node.js 官网](https://nodejs.org/en)
+[Node.js](https://nodejs.org/en) | [Mirror](https://registry.npmmirror.com/binary.html?path=node/)
 
-* [node-v20.11.0-win-x64.zip](https://cdn.npmmirror.com/binaries/node/v16.20.2/v18.19.0/node-v20.11.0-win-x64.zip)
-* [node-v18.19.0-win-x64.zip](https://cdn.npmmirror.com/binaries/node/v16.20.2/v18.19.0/node-v18.19.0-win-x64.zip)
+* [node-v20.12.2-win-x64.zip](https://registry.npmmirror.com/-/binary/node/latest-v20.x/node-v20.12.2-win-x64.zip)
+* [node-v18.20.1-win-x64.zip](https://registry.npmmirror.com/-/binary/node/latest-v18.x/node-v18.20.1-win-x64.zip)
 * [node-v16.20.2-win-x64.zip](https://cdn.npmmirror.com/binaries/node/v16.20.2/node-v16.20.2-win-x64.zip)
 * [node-v14.21.3-win-x64.zip](https://cdn.npmmirror.com/binaries/node/v14.21.3/node-v14.21.3-win-x64.zip)
 
+配置 registry 加速
+
+```sh
+npm config set registry https://registry.npmmirror.com
+```
+
 ### Python
 
-[Python.org](https://www.python.org/)
+[Python](https://www.python.org/)
 
-特点是简单易学
+设置 pip 镜像源
+
+```sh
+# 临时使用
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple xxxxx
+# 永久设置
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+```
 
 ### Rust
 
-[Rust 程序设计语言](https://www.rust-lang.org/zh-CN/)
+[Rust](https://www.rust-lang.org/zh-CN/)
 
 ### TypeScript
 
-[TypeScript](https://www.typescriptlang.org/zh/): JavaScript With Syntax For Types.
+[TypeScript](https://www.typescriptlang.org/zh/) JavaScript With Syntax For Types.
 
+## 8. MQ 和 OSS
 
-## 8. network tool 网络工具
+**消息队列**
+
+* [Apache Kafka](https://kafka.apache.org/)
+* [RabbitMQ](https://www.rabbitmq.com/)
+* [Apache ActiveMQ](https://activemq.apache.org/)
+* [Apache RocketMQ](https://rocketmq.apache.org/)
+
+**Object Storage Service**
+
+[MinIO](https://min.io/) | S3 & Kubernetes Native Object Storage for AI
+
+## 9. network tool 网络工具
 
 ### http 调试
 
 HTTPie 有桌面版和 cli 版
-httpie/desktop: 🚀 HTTPie Desktop — cross-platform API testing client for humans. Painlessly test REST, GraphQL, and HTTP APIs.
-[官网下载](https://httpie.io/download) | [Releases · httpie/desktop](https://github.com/httpie/desktop/releases)
+
+httpie/desktop [官网下载](https://httpie.io/download) | [Releases](https://github.com/httpie/desktop/releases)
+
+🚀 HTTPie Desktop — cross-platform API testing client for humans. Painlessly test REST, GraphQL, and HTTP APIs.
 
 [SoapUI](https://www.soapui.org/downloads/soapui/)
 
 not
 
-* ApiPost 功能缺失，不能导入 curl 请求
 * Apifox 必须联网才能登录，不过功能还是很多的
+* ApiPost 功能缺失，不能导入 curl 请求
 * Eolink Apikit 需要注册
-* Postman【不好用 必须登录】支持模拟 POST、GET、PUT 等常见请求
 * Insomnia 不是多标签风格的软件，不太考虑
 * Postcat 功能还不太完善
+* Postman 不好用 必须登录
 
 - - -
 
@@ -237,26 +274,28 @@ mac 平台
 
 ### Packet capture
 
-[【win mac】【安装版】Charles Web](https://www.charlesproxy.com/) 抓包用。
+【win mac 安装版】[Charles Web](https://www.charlesproxy.com/) 抓包用。
 Charles is an HTTP proxy / HTTP monitor / Reverse Proxy
 
 【win mac】fidder
 
 【安卓版】httpcanary
 
-## 9. package manager 包管理器
+## 10. package manager 包管理器
 
-[【mac】Homebrew](https://brew.sh/index_zh-cn)
+【全平台】[sdkman](https://sdkman.io/) The Software Development Kit Manager
 
-[【linux】AppImage](https://appimage.org/)
+【mac linux】[Homebrew](https://brew.sh/zh-cn/) The Missing Package Manager for macOS (or Linux)
 
-* [【win】Scoop](https://scoop.sh/#/)
-* ms winget
-* choco
-* sdkman
-* scoop
+【linux】[AppImage](https://appimage.org/) 让 Linux 应用随处运行
 
-## 10. redis
+* 【win】[Scoop](https://scoop.sh/#/)
+* 【win】winget 微软 Windows 程序包管理器
+* 【win】[chocolatey](https://chocolatey.org/) The Package Manager for Windows
+* 【win】[scoop](https://scoop.sh/) A command-line installer for Windows
+
+
+## 11. redis
 
 [redis download](https://redis.io/download/)
 
@@ -268,9 +307,9 @@ Redis is an in-memory database that persists on disk. The data model is key-valu
 
 ### QuickRedis
 
-[QuickRedis 发行版 - Gitee.com](https://gitee.com/quick123official/quick_redis_blog/releases/) 国产开源、免费、功能强大的 Redis 可视化管理工具。
+[QuickRedis 发行版 - Gitee.com](https://gitee.com/quick123official/quick_redis_blog/releases/) 国产开源、免费、功能强大的 Redis 可视化管理工具
 
-## 11. ref 参考文档
+## 12. ref 参考文档
 
 [Zeal](https://zealdocs.org/) - Offline Documentation Browser
 
@@ -280,13 +319,13 @@ mac 平台
 
 [Dash for macOS](https://kapeli.com/dash) - API Documentation Browser, Snippet Manager - Kapeli
 
-## 12. 【常用】revision control 版本控制
+## 13.【常用】revision control 版本控制
 
 ### Git
 
 苹果 和 linux 系统一般都自带 git, 如果想要体验新版, 可以去[Git 官网](https://git-scm.com)下载体验。通常更推荐[Git 阿里源地址](https://registry.npmmirror.com/binary.html?path=git-for-windows/)
 
-特别的如果是 windows 系统推荐搭配  [小乌龟 TortoiseGit – Windows Shell Interface to Git 官网下载地址](https://tortoisegit.org/download/)
+特别的如果是 windows 系统推荐搭配  [小乌龟 TortoiseGit – Windows Shell Interface to Git 下载地址](https://tortoisegit.org/download/)
 
 不喜欢小乌龟可以试试 【win mac】[Sourcetree](https://www.sourcetreeapp.com/)
 
@@ -294,10 +333,10 @@ mac 平台
 
 not
 
-* 【win mac】[gitkraken](https://www.gitkraken.com/) 付费才好用
-* 【win mac】【付费】smartgit 且我不太喜欢用
-* 【win mac】Fork 自从用了小乌龟，还是不喜欢这种风格
-* 【win mac】sublime merge 感觉不好用
+* 【win mac 付费】[Fork](https://fork.dev/) 自从用了小乌龟，还是不喜欢这种风格
+* 【全平台 付费】[GitKraken](https://www.gitkraken.com/) 付费才好用
+* 【全平台 付费】[SmartGit](https://www.syntevo.com/smartgit/) 且我不太喜欢用
+* 【全平台】[Sublime Merge](https://www.sublimemerge.com/) 感觉不好用
 
 ### SVN
 
@@ -318,43 +357,43 @@ not
 
 【gui】【mac】snailSVN
 
-## 13. server 服务器
+## 14. server 服务器
 
 * [Apache Tomcat](https://tomcat.apache.org)
 * [Eclipse Jetty](https://www.eclipse.org/jetty)
 * [nginx-download](https://nginx.org/en/download.html)
-* [tengine-download](https://tengine.taobao.org/download_cn.html)
+* [tengine-download](https://tengine.taobao.org/download_cn.html) Tengine 是由淘宝发起的Web服务器项目。它在 Nginx 的基础上，针对大访问量网站的需求，添加了很多高级功能和特性。
 
-## 14. ssh & ftp 文件传输
+## 15. ssh & ftp 文件传输
 
 ### PC 端
 
-首推 [termius](https://www.termius.com/)
+首推【全平台】[Termius](https://www.termius.com/)
 
 and
 
-[【便携版】 WinSCP :: Free SFTP and FTP client for Windows](https://winscp.net/eng/index.php) | [下载页面](https://winscp.net/eng/downloads.php)
+【Windows 便携版】WinSCP - Free SFTP and FTP client [官网](https://winscp.net/eng/index.php) | [下载页面](https://winscp.net/eng/downloads.php)
 
 or
 
-[【win】【免费】xshell 家庭/学校免费版 - NetSarang Website](https://www.xshell.com/zh/free-for-home-school/)
+【win 免费】[xshell 家庭/学校免费版 - NetSarang Website](https://www.xshell.com/zh/free-for-home-school/)
 
 【win 便携】putty
 
-* [【win】putty 下载](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
-* [【win】kitty 下载](https://github.com/cyd01/KiTTY/releases)
+* 【win】[putty 下载](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
+* 【win】[kitty 下载](https://github.com/cyd01/KiTTY/releases)
 
 not
 
 * [FileZilla](https://www.filezilla.cn/) 虽说跨平台使用，但是界面我不太喜欢
 * flashfxp 是付费产品我就不推荐了
 * Bitvise SSH Client 直接不好用
-* 【全平台】tabby 界面不够友好
+* 【全平台】[tabby](https://github.com/Eugeny/tabby) 界面不够友好
 * 【Mac AppStore 版】App Store 搜索 Zen Term
-* 【win】mobaxterm 界面有点丑
-* [【web】sshwifty](https://github.com/nirui/sshwifty/releases) 功能不太全，且目前不太好用
+* 【win】[mobaxterm](https://mobaxterm.mobatek.net/) 界面有点丑
+* 【web】[sshwifty](https://github.com/nirui/sshwifty/releases) 功能不太全，且目前不太好用
 * 【win mac】XTerminal 颜值不够高
-* 【win】VanDyke SecureCRT 卡死了且界面老旧还付费
+* 【win】[VanDyke SecureCRT](https://www.vandyke.com/products/securecrt/index.html) 卡死了且界面老旧还付费
 
 - - -
 
@@ -366,7 +405,7 @@ mac 平台
 
 [Android JuiceSSH-Free SSH client for Android](https://juicessh.com/)
 
-## 15. terminal 终端
+## 16.terminal 终端
 
 ### 【win】微软 terminal
 
@@ -405,7 +444,9 @@ PowerShell 是一种跨平台的任务自动化解决方案，由命令行 shell
 
 [【win】MSYS2](https://www.msys2.org/) 可以当做一个包管理器 一个终端 还兼容 linux 命令，可以安装 c 编译器 gcc 等。
 
-## 16. 特定 jar 相关
+## 17.框架
+
+### Java 相关
 
 这些工具和框架在不同的领域和开发过程中都有各自的用途，可以帮助开发人员进行各种任务，如逆向工程、数据库连接管理、性能测试、代码覆盖率分析、持续集成等。具体使用取决于具体的需求和项目要求。
 
@@ -415,37 +456,25 @@ PowerShell 是一种跨平台的任务自动化解决方案，由命令行 shell
 * dex2jar-2.0 一个用于将 Dalvik 字节码转换为 Java 字节码的工具。
 * [Jd-gui](http://java-decompiler.github.io/) 一个 Java 反编译器工具。
 * [JMeter](https://jmeter.apache.org/download_jmeter.cgi) 一个流行的性能测试工具，用于测量和分析软件的性能。
-* jacoco 一个用于代码覆盖率分析的工具。
-* jenkins 一个持续集成和持续交付（CI/CD）工具。
+* [jacoco](https://www.jacoco.org/jacoco/) 一个用于代码覆盖率分析的工具。
+* [jenkins](https://www.jenkins.io/) 一个持续集成和持续交付（CI/CD）工具。
 * [Nacos](https://nacos.io/zh-cn/docs/v2/quickstart/quick-start.html) 一个开源的服务注册与发现、配置管理和服务治理平台。
 * ruoyi 一个基于 Java 的开发框架。
 * [Sentinel](https://github.com/alibaba/Sentinel/releases) 一个用于流量控制、熔断、降级等功能的微服务保护框架。
-* sonarqube 代码质量检测 一个用于代码质量检测的工具。
-* Zookeeper 一个用于分布式应用程序的协调服务。
+* [sonarqube](https://www.sonarsource.com/products/sonarqube/) 代码质量检测 一个用于代码质量检测的工具。
+* [Zookeeper](https://zookeeper.apache.org/) 用于分布式应用程序的协调服务。
+
+### 跨平台应用框架
+
+* [Electron](https://www.electronjs.org/zh/) Build cross-platform desktop apps with JavaScript, HTML, and CSS
+* [Flutter](https://flutter.dev/) Build apps for any screen
+* [Tauri](https://v2.tauri.app/)
 
 ## 其他软件
 
 ### 手机抓包 HttpCanary
 
 HttpCanary 专业版破解版是一款手机抓包专用[工具](http://www.fxsw.net/k/zqssygjhj/)，HttpCanary 专业版破解版为客户出示爬取和分析安卓机 https 网络请求[服务](http://www.fxsw.net/k/tcshfw/)项目，HttpCanary 专业版破解版针对安卓编程者，HttpCanary 专业版破解版在调节网络请求的时十分有用，而 HttpCanary 专业版破解版针对普通用户来讲，HttpCanary 专业版破解版能全自动储存您访问的全部网络信息内容、包含图片。
-
-软件特色
-
-1、针对安卓手机 https 互联网技术请求的一个抓取以及剖析。
-2、可以自动式的存储 http 和 https 请求，而且不用 ROOT。
-3、还能够进行悬浮球功效设置允许此外去运用要抓的应用。
-4、观看抓包软件的結果还能抓取音频以及视频。
-
-操作指引
-
-* 点一下右下方按键刚开始抓包
-* 抓包以前请安装 CA 资格证书才可一切正常爬取 HTTPS [数据](http://www.fxsw.net/k/sjcxgl/)加密包
-* 灵活运用高级检索作用
-* 能够对于 HTTP 网络服务器等有关设置迅速抓包
-* 设定中能够调节手机软件软件
-
-httpcanary 专业版下载
-<http://www.2265.com/soft/244552.html>
 
 ### xshell 设置
 
