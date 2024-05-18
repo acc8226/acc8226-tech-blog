@@ -24,11 +24,35 @@ categories: 我的创作
 
 ## 1. build tool 构建工具
 
-### Ant
+### Web 构建工具
+
+#### Parcel
+
+[Parcel](https://parceljs.org/) 以其零配置和快速的构建速度而受到开发者的喜爱，适合快速开发。
+
+#### Turbo
+
+[Turbo](https://turbo.build/) - Turbo is an incremental bundler and build system optimized for JavaScript and TypeScript, written in Rust.
+
+#### Vite
+
+[Vite](https://cn.vitejs.dev/) - 下一代的前端工具链
+
+#### Webpack
+
+[Webpack](https://www.webpackjs.com/) 功能强大，适用于各种规模的前端项目，支持复杂的构建流程和优化。
+
+### Java 应用构建工具
+
+#### Ant
+
+Ant 在早期的 Java 项目中非常流行，它被设计用来驱动软件项目的构建过程，类似于 Make 工具，但它使用 XML（Extensible Markup Language）来描述构建过程和依赖关系，而不是传统的 Makefile。
 
 [Ant 官网](https://ant.apache.org/)
 
-### Maven
+#### Maven
+
+Maven 是一个构建工具，但它主要针对 Java 应用程序。Maven 由 Apache 软件基金会维护，它使用一个名为 POM（Project Object Model）的 XML 文件来描述项目的构建过程、依赖关系和其他配置信息。
 
 [Maven 官网](https://maven.apache.org/) | [镜像下载](https://repo.huaweicloud.com/apache/maven/maven-3/)
 
@@ -40,7 +64,9 @@ categories: 我的创作
 
 [maven-mvnd](https://github.com/apache/maven-mvnd)
 
-### Gradle
+#### Gradle
+
+Gradle 是一个开源的自动化构建系统，它被设计用来支持多语言和多平台的软件项目，尤其是 Java 项目。Gradle 是用 Groovy 和 Kotlin 编写的，它提供了一个基于 Apache Ant 和 Maven 的强大而灵活的构建自动化功能。
 
 [Gradle 官网](https://gradle.org/) | [镜像下载](https://mirrors.cloud.tencent.com/gradle/)
 
@@ -247,11 +273,9 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
 HTTPie 有桌面版和 cli 版
 
-httpie/desktop [官网下载](https://httpie.io/download) | [Releases](https://github.com/httpie/desktop/releases)
-
-🚀 HTTPie Desktop — cross-platform API testing client for humans. Painlessly test REST, GraphQL, and HTTP APIs.
-
-[SoapUI](https://www.soapui.org/downloads/soapui/)
+* httpie/desktop [官网下载](https://httpie.io/download) | [Releases](https://github.com/httpie/desktop/releases)  — cross-platform API testing client for humans. Painlessly test REST, GraphQL, and HTTP APIs.
+* [SoapUI](https://www.soapui.org/downloads/soapui/)
+* [Reqable](https://reqable.com/zh-CN/)
 
 not
 
@@ -266,7 +290,7 @@ not
 
 mac 平台
 
-[【mac】RapidAPI for Mac](https://paw.cloud/) – The most advanced API tool for Mac
+【mac】[RapidAPI for Mac](https://paw.cloud/) – The most advanced API tool for Mac
 
 ### mqtt 调试
 
@@ -294,42 +318,39 @@ Charles is an HTTP proxy / HTTP monitor / Reverse Proxy
 * 【win】[chocolatey](https://chocolatey.org/) The Package Manager for Windows
 * 【win】[scoop](https://scoop.sh/) A command-line installer for Windows
 
+【JavaScript】[Yarn](https://www.yarnpkg.cn/) - JavaScript 软件包管理器
 
-## 11. redis
+## 11. Redis
 
-[redis download](https://redis.io/download/)
+### Redis 数据库
 
-### redis for windows
+Redis is an in-memory database that persists on disk. The data model is key-value, but many different kind of values are supported: Strings, Lists, Sets, Sorted Sets, Hashes, Streams, HyperLogLogs. 
 
-[tporadowski/redis: Native port of Redis for Windows](https://github.com/tporadowski/redis)
-
-Redis is an in-memory database that persists on disk. The data model is key-value, but many different kind of values are supported: Strings, Lists, Sets, Sorted Sets, Hashes, Streams, HyperLogLogs. This repository contains unofficial port of Redis to Windows.
+[download](https://redis.io/download/) | [tporadowski/redis: Native port of Redis for Windows](https://github.com/tporadowski/redis) 
 
 ### QuickRedis
 
-[QuickRedis 发行版 - Gitee.com](https://gitee.com/quick123official/quick_redis_blog/releases/) 国产开源、免费、功能强大的 Redis 可视化管理工具
+一款国产开源、免费、功能强大的 Redis 可视化管理工具
+
+[发行版下载](https://gitee.com/quick123official/quick_redis_blog/releases/)
 
 ## 12. ref 参考文档
 
-[Zeal](https://zealdocs.org/) - Offline Documentation Browser
+【win】[Zeal](https://zealdocs.org/) - Offline Documentation Browser
 
-- - -
-
-mac 平台
-
-[Dash for macOS](https://kapeli.com/dash) - API Documentation Browser, Snippet Manager - Kapeli
+【macOS】[Dash](https://kapeli.com/dash) - API Documentation Browser, Snippet Manager - Kapeli
 
 ## 13.【常用】revision control 版本控制
 
 ### Git
 
-苹果 和 linux 系统一般都自带 git, 如果想要体验新版, 可以去[Git 官网](https://git-scm.com)下载体验。通常更推荐[Git 阿里源地址](https://registry.npmmirror.com/binary.html?path=git-for-windows/)
+macOS 和 linux 系统一般都自带 git, 如果想要体验最新版, 可以去[Git 官网](https://git-scm.com)下载体验。通常更推荐 [Git 阿里源地址](https://registry.npmmirror.com/binary.html?path=git-for-windows/)
 
-特别的如果是 windows 系统推荐搭配  [小乌龟 TortoiseGit – Windows Shell Interface to Git 下载地址](https://tortoisegit.org/download/)
+特别的如果是 windows 系统推荐搭配  [TortoiseGit – Windows Shell Interface to Git](https://tortoisegit.org/download/) 简称小乌龟。
 
-不喜欢小乌龟可以试试 【win mac】[Sourcetree](https://www.sourcetreeapp.com/)
+不喜欢 TortoiseGit 的用户可以试试 【win mac】[Sourcetree](https://www.sourcetreeapp.com/)
 
-同时 VSCode 和 IDEA 会自带 git 功能
+VSCode 和 IDEA 会自带简单操作 Git 的功能。
 
 not
 
@@ -355,7 +376,7 @@ mac 平台
 
 not
 
-【gui】【mac】snailSVN
+【gui mac】snailSVN
 
 ## 14. server 服务器
 
@@ -372,7 +393,9 @@ not
 
 and
 
-【Windows 便携版】WinSCP - Free SFTP and FTP client [官网](https://winscp.net/eng/index.php) | [下载页面](https://winscp.net/eng/downloads.php)
+【Windows 便携版】WinSCP - Free SFTP and FTP client
+
+[官网](https://winscp.net/eng/index.php) | [下载页面](https://winscp.net/eng/downloads.php)
 
 or
 
@@ -399,7 +422,7 @@ not
 
 mac 平台
 
-依旧 [termius](https://www.termius.com/) 的免费版套餐
+依旧 [termius](https://www.termius.com/) 免费订阅模式
 
 ### 手机端
 
@@ -427,7 +450,33 @@ Windows 终端是一个新式主机应用程序，它面向你喜爱的命令行
 
 mac 下终端的替代品。该工具结合 Oh My Zsh 会有舒适的终端体验
 
-### 其他
+## 17.框架
+
+### 数据库连接池
+
+* 【Jar】[c3p0](https://sourceforge.net/projects/c3p0/files/latest/download?source=files) 一个用于 Java 应用程序的数据库连接池库。
+* 【Jar】[DBCP](https://commons.apache.org/proper/commons-dbcp/index.html) 另一个常用的 Java 数据库连接池库，提供基本的数据库连接池功能。
+
+### 网络请求库
+
+【js】[Axios](https://www.axios-http.cn/)
+
+### UI 框架
+
+* [Element](https://element.eleme.cn/#/zh-CN) 一套为开发者、设计师和产品经理准备的基于 Vue 2.0 的桌面端组件库
+* [Element Plus](https://cn.element-plus.org/zh-CN/) 一个 Vue 3 UI 框架 | [指南](https://element-plus.org/zh-CN/guide/design.html)
+
+### 跨平台应用程序框架
+
+* [Electron](https://www.electronjs.org/zh/) 一个使用 JavaScript, HTML 和 CSS 开发跨平台桌面应用程序的框架，它允许开发者通过 Web 技术构建桌面软件，并提供丰富的 API 来调用操作系统的功能。
+* 【Dart】[Flutter](https://flutter.dev/) 一个由 Google 支持的开源框架，允许开发者使用 Dart 语言编写一次代码，然后编译成适用于 Android、iOS、Web 和桌面平台的高性能、可定制的原生界面应用程序。
+* [Tauri](https://v2.tauri.app/) 用于构建适用于所有主要桌面和移动平台的小巧、快速的二进制文件的框架
+
+### Java Web 应用程序框架
+
+* RuoYi 是一个基于 Spring Boot 的权限和流程管理的 Java Web 应用程序框架。它旨在简化企业应用程序的开发，提供一个通用的后台管理框架，使得开发者可以快速构建出功能完备的后台管理系统。
+
+## 18.其他
 
 【跨平台】PowerShell
 
@@ -444,37 +493,38 @@ PowerShell 是一种跨平台的任务自动化解决方案，由命令行 shell
 
 [【win】MSYS2](https://www.msys2.org/) 可以当做一个包管理器 一个终端 还兼容 linux 命令，可以安装 c 编译器 gcc 等。
 
-## 17.框架
+### 性能测试和分析
 
-### Java 相关
+【Java】[JMeter](https://jmeter.apache.org/download_jmeter.cgi) 一个流行的性能测试工具，用于测量和分析软件的性能。
 
-这些工具和框架在不同的领域和开发过程中都有各自的用途，可以帮助开发人员进行各种任务，如逆向工程、数据库连接管理、性能测试、代码覆盖率分析、持续集成等。具体使用取决于具体的需求和项目要求。
+### 代码质量与覆盖率分析
 
-* [Apktool](https://ibotpeaches.github.io/Apktool/) 一个用于安卓应用程序逆向工程的工具。
-* [c3p0](https://sourceforge.net/projects/c3p0/files/latest/download?source=files) 一个用于安卓应用程序逆向工程的工具。
-* [DBCP](https://commons.apache.org/proper/commons-dbcp/index.html) 另一个常用的 Java 数据库连接池库。
-* dex2jar-2.0 一个用于将 Dalvik 字节码转换为 Java 字节码的工具。
-* [Jd-gui](http://java-decompiler.github.io/) 一个 Java 反编译器工具。
-* [JMeter](https://jmeter.apache.org/download_jmeter.cgi) 一个流行的性能测试工具，用于测量和分析软件的性能。
-* [jacoco](https://www.jacoco.org/jacoco/) 一个用于代码覆盖率分析的工具。
-* [jenkins](https://www.jenkins.io/) 一个持续集成和持续交付（CI/CD）工具。
-* [Nacos](https://nacos.io/zh-cn/docs/v2/quickstart/quick-start.html) 一个开源的服务注册与发现、配置管理和服务治理平台。
-* ruoyi 一个基于 Java 的开发框架。
+* 【Java】[jacoco](https://www.jacoco.org/jacoco/) 用于代码覆盖率分析，帮助开发者了解测试覆盖情况。
+* 【Java】[sonarqube](https://www.sonarsource.com/products/sonarqube/) 用于代码质量检测，提供代码审查和持续的代码质量检测。
+
+### 持续集成与持续交付 (CI/CD)
+
+* 【Java】[jenkins](https://www.jenkins.io/) 一个流行的开源自动化服务器，用于自动化各种任务，包括构建、测试和部署
+
+### 微服务架构与服务治理
+
+* 【Java】[Nacos](https://nacos.io/zh-cn/docs/v2/quickstart/quick-start.html) 一个更易于构建云原生应用的动态服务发现、配置管理和服务管理平台。
 * [Sentinel](https://github.com/alibaba/Sentinel/releases) 一个用于流量控制、熔断、降级等功能的微服务保护框架。
-* [sonarqube](https://www.sonarsource.com/products/sonarqube/) 代码质量检测 一个用于代码质量检测的工具。
-* [Zookeeper](https://zookeeper.apache.org/) 用于分布式应用程序的协调服务。
 
-### 跨平台应用框架
+### 分布式协调服务
 
-* [Electron](https://www.electronjs.org/zh/) Build cross-platform desktop apps with JavaScript, HTML, and CSS
-* [Flutter](https://flutter.dev/) Build apps for any screen
-* [Tauri](https://v2.tauri.app/)
+* 【Java】[Zookeeper](https://zookeeper.apache.org/) 用于分布式应用程序的协调服务，常用于管理分布式环境中的配置信息、命名、提供分布式同步和提供组服务等。
+
+### Android 逆向工程
+
+* 【Java】[Apktool](https://ibotpeaches.github.io/Apktool/)用于安卓应用程序逆向工程的工具，可以分析和修改 Android APK 文件。
+* 【Java】dex2jar-2.0 一个用于将 Dalvik 字节码转换为 Java 字节码的工具，常用于 Android 应用的逆向工程。
+
+### Java 反编译
+
+* 【Java】[Jd-gui](http://java-decompiler.github.io/) 一个 Java 反编译器工具，允许用户查看 Java 编译后的字节码中的源代码
 
 ## 其他软件
-
-### 手机抓包 HttpCanary
-
-HttpCanary 专业版破解版是一款手机抓包专用[工具](http://www.fxsw.net/k/zqssygjhj/)，HttpCanary 专业版破解版为客户出示爬取和分析安卓机 https 网络请求[服务](http://www.fxsw.net/k/tcshfw/)项目，HttpCanary 专业版破解版针对安卓编程者，HttpCanary 专业版破解版在调节网络请求的时十分有用，而 HttpCanary 专业版破解版针对普通用户来讲，HttpCanary 专业版破解版能全自动储存您访问的全部网络信息内容、包含图片。
 
 ### xshell 设置
 
