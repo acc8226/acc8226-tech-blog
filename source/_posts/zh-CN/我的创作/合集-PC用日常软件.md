@@ -17,9 +17,9 @@ categories: 我的创作
 
 #### 1. 电脑管家
 
-win 7/8：[【win 安装版】腾讯电脑管家](https://guanjia.qq.com/) 或 [【win 安装版】360 安全卫士极速版](https://weishi.360.cn/)
+win 7/8：【win 安装版】[腾讯电脑管家](https://guanjia.qq.com/) 或 【win 安装版】[360 安全卫士极速版](https://weishi.360.cn/)
 
-win 10/11：普通 windows 用户依旧可以选择安装管家或者卫士，且由于现在最新版 win 10 自带了[【win 安装版】微软电脑管家](https://pcmanager.microsoft.com/zh-cn)，再搭配[【win 安装版】火绒安全软件](https://www.huorong.cn/)即可。
+win 10/11：普通 windows 用户依旧可以选择安装管家或者卫士，且由于现在最新版 win 10 自带了【win 安装版】[微软电脑管家](https://pcmanager.microsoft.com/zh-cn)，再搭配【win 安装版】[火绒安全软件](https://www.huorong.cn/)即可。
 
 - - -
 
@@ -33,35 +33,39 @@ win 10/11：普通 windows 用户依旧可以选择安装管家或者卫士，�
 
 #### 2. 浏览器
 
-* [【win 安装版】360 极速浏览器X](https://browser.360.cn/ee/) 安全防护永远要放在第一位，鼠标悬停切换标签功能值得点赞 或者 火狐 
-* [【mac】360 极速浏览器](https://browser.360.cn/ee/mac/index.html) 或者 火狐
+* 【win 安装版】[360 极速浏览器](https://browser.360.cn/ee/) 安全防护永远要放在第一位，鼠标悬停切换标签功能值得点赞 或者 火狐 
+* 【mac】[360 极速浏览器](https://browser.360.cn/ee/mac/index.html) 或者 火狐
 * 【linux】360 安全浏览器
 
 Firefox 可作为有效补充，由于其出色的播放视频的稳定性。且对 win 7 依旧有支持的 ESR 版本。
 
 #### 3. 压缩解压
 
-* [【win 安装版】Bandizip](https://www.bandisoft.com/) 智能解压和压缩文件预览功能特别好用
-* [【mac App Store版】The Unarchiver](https://theunarchiver.com/)或者官网直装版
+* 【win 安装版优先 绿色版次之】[PeaZip](https://peazip.github.io/) 智能解压很稀有 | [软件介绍](https://www.iplaysoft.com/peazip.html)
+* 【mac AppStore 版】[The Unarchiver](https://theunarchiver.com/)或者官网直装版 | [软件介绍](https://www.iplaysoft.com/the-unarchiver.html)
 * linux 系统一般自带 tar 和 zip 命令。
+
+not
+
+* 【win 安装版】[Bandizip](https://www.bandisoft.com/) 虽然智能解压和压缩文件预览功能很好用，但是新版本偶尔有广告弹窗
 
 #### 4. 输入法
 
-如果你是 Win11 用户，那么自带的微软输入法非常不错，如果趁手的话不需要安装额外输入法。
+如果你是 Win11 用户，自带的微软输入法已经很不错了。
 
-额外的，我会推荐【win mac】[微信输入法](https://z.weixin.qq.com/)，特有云粘贴板功能，现已支持跨设备粘贴文字和图片，但如果是老系统我会选择体积更小的小狼毫输入法。
+额外的，我会推荐【win mac】[微信输入法](https://z.weixin.qq.com/)，特有云粘贴板功能，现已支持跨设备粘贴文字和图片
 
 or
 
-* QQ 输入法 几年没更新了但依旧非常的清爽。注意：打出的字没有在屏幕
-* [RIME 小狼毫输入法](https://rime.im/) 不到 10M 的体积非常清爽，但是偶有 bug 谨慎使用
+* QQ 输入法 几年没更新了，缺点词库有点滞后，优点是界面非常清爽
+* [RIME 小狼毫输入法](https://rime.im/) 不到 10M 的体积非常清爽，对硬件配置差点的电脑很友好，但是受众少，维护方面可能不足，适合喜欢折腾输入法的用户
 
 not
 
 * 手心输入法  已经几年没有再更新了且对 4G 内存的 win 7 而言有点卡
 * 紫光华宇输入法 对 4G 内存的 win 7 而言有点卡
-* 百度输入法 不想用新版本但我找不到旧版本差评
-* [搜狗输入法智慧版](https://pinyin.sogou.com/zhihui/) 臃肿
+* 百度输入法 不想用新版本但我找不到旧版本，差评
+* 搜狗的弹窗我就不多说了，另外[搜狗输入法智慧版](https://pinyin.sogou.com/zhihui/) 附带斗图功能，非常臃肿
 
 - - -
 
@@ -100,21 +104,17 @@ mac 平台
 
 - - -
 
-linux 平台据说 easystroke 还能用。
+linux 平台
 
-```sh
-apt install easystroke
-```
+由于 easystroke 的作者已经停止维护，并推荐了更加现代的 [jersou/mouse-actions](https://github.com/jersou/mouse-actions)
 
 #### 2. 键盘增强
 
-【win】【自制】捷键
+【win】【自制】[捷键](https://atomgit.com/acc8226/jiejian/tags?tab=release)
 
 or
 
-【win】[MyKeymap-2.0](https://xianyukang.com/MyKeymap.html) | [GitHub 地址](https://github.com/xianyukang/MyKeymap)
-
-槽点是 win 7 用不了
+【win】MyKeymap [官网](https://xianyukang.com/MyKeymap.html) | [源码](https://github.com/xianyukang/MyKeymap) 槽点是 win 7 用不了
 
 - - -
 
@@ -146,6 +146,12 @@ not
 
 * 单独的 ishot 免费版有水印，且免费版不能贴图
 * 单独的 Snipaste 免费版功能有限
+
+- - -
+
+linux 平台
+
+自带 或者 [flameshot-org/flameshot](https://github.com/flameshot-org/flameshot) Powerful yet simple to use screenshot software
 
 #### 4. 护眼
 
@@ -188,11 +194,12 @@ maybe
 
 maybe
 
-[Free Download Manager](https://www.freedownloadmanager.org/zh/) (**FDM**) 是一款[经典](https://www.iplaysoft.com/tag/%E7%BB%8F%E5%85%B8)免费纯粹的下载软件，它[开源](https://www.iplaysoft.com/tag/%E5%BC%80%E6%BA%90)无广告，界面简洁清爽，支持 [BT](https://www.iplaysoft.com/tag/bt)、[FTP](https://www.iplaysoft.com/tag/ftp) 下载，支持批量下载、断点续传、捕获 HTTP 链接、FTP 目录浏览等功能，还跨平台支持 Windows 与 macOS，可以说是一款相当优秀的免费全能型下载工具。
+【全平台】[Free Download Manager](https://www.freedownloadmanager.org/zh/) (**FDM**) 是一款[经典](https://www.iplaysoft.com/tag/%E7%BB%8F%E5%85%B8)免费纯粹的下载软件，它[开源](https://www.iplaysoft.com/tag/%E5%BC%80%E6%BA%90)无广告，界面简洁清爽，支持 BT、FTP 支持批量下载、断点续传、捕获 HTTP 链接、FTP 目录浏览等功能，还跨平台支持 Windows 与 macOS，可以说是一款相当优秀的免费全能型下载工具。
 
 not
 
 * 【win】VidJuice UniTube 可以图形化下载视频和音频很好用，就是付费啦
+* [Downie 4 ](https://www.iplaysoft.com/downie.html) 超简单好用的视频下载工具神器 就是付费
 * 【win mac】迅雷<https://dl.xunlei.com/> 有广告，但是很多资源都挂在迅雷上了，只有它才有加速效果。
 * 【win】qbittorrent_4.5.5 不好用
 * [IDM](https://www.internetdownloadmanager.com/), 功能还行但收费。
@@ -282,7 +289,7 @@ mac 平台
 
 一般品牌笔记本都会赠送微软 Office 套件。否则我会选择免费的 wps 加 LibreOffice 的组合。
 
-【全平台】LibreOffice <https://zh-cn.libreoffice.org/download/libreoffice/> [libreoffice 源1 - 清华源](https://mirrors.tuna.tsinghua.edu.cn/libreoffice/libreoffice/stable/) | [libreoffice 源2 - 腾讯源](<https://mirrors.cloud.tencent.com/libreoffice/libreoffice/stable/>)
+【全平台】LibreOffice [官网](https://zh-cn.libreoffice.org/download/libreoffice/) | [libreoffice 源1 - 清华源](https://mirrors.tuna.tsinghua.edu.cn/libreoffice/libreoffice/stable/) | [libreoffice 源2 - 腾讯源](<https://mirrors.cloud.tencent.com/libreoffice/libreoffice/stable/>)
 
 or
 
@@ -294,6 +301,10 @@ mac 平台
 
 除了 office 和 iWork 系列外我还是会选择 libreoffice 加 WPS 的组合
 
+- - -
+
+在线平台我推荐[腾讯文档](https://docs.qq.com/)，非常适合文档分享。但千万记得加水印和是设置只读访问权限，防止资料泄漏和被非法买卖。
+
 #### 2.【常用】PDF 文档
 
 阅读器 【win 绿色版】[SumatraPDF](https://www.sumatrapdfreader.org/)
@@ -302,7 +313,7 @@ mac 平台
 
 or
 
-* [【win】极速 PDF 阅读器](https://jisupdf.com/zh-cn/)
+* 【win】[极速 PDF 阅读器](https://jisupdf.com/zh-cn/)
 
 中规中矩
 
@@ -394,7 +405,7 @@ mac 平台
 
 ### 4.【常用】视频类
 
-本地 + 网络流播放 [【本地 首选 win 官方安装版】PotPlayer](https://potplayer.tv/?lang=zh_CN) 高清影音播放器 或者开源的 VLC 也很不错
+本地 + 网络流播放首选【本地 win 官方安装版】[PotPlayer](https://potplayer.tv/?lang=zh_CN) 高清影音播放器
 
 在线平台  2. [【win】荐片播放器官网](https://www.jianpian6.co/) - 最新电影，播放器
 
@@ -407,14 +418,16 @@ or
 
 not
 
+* 【全平台】VLC 的 windows 版太难用了
 * 【win mac 在线】爱奇艺 <https://www.iqiyi.com/>
 * 【win mac 在线】优酷 客户端下载 <https://youku.com/product/index>
 * 【win mac 在线】[腾讯视频](https://v.qq.com/)
 * 【win mac 在线】[芒果 TV](https://www.mgtv.com/app/)
 * 【win mac linux】【本地】VLC -  [VideoLAN](https://www.videolan.org/) 颜值不够
-* 【win】【本地】kmplayer 没有便携版
+* 【win】【本地】kmplayer 没有便携版 且 不够强大
 * 【win】【本地】恒星播放器 广告太多
-* 【win】【本地】mpv 足够清爽，可是功能太单一
+* 【win】【本地】mpv 功能太单一
+* 【win】【本地】MPC-HC 变速会变调 差评
 * 【win】【本地】暴风影音 5 不太好用
 
 - - -
@@ -569,13 +582,14 @@ or
 录制辅助工具
 
 1. [keyviz](https://github.com/mulaRahul/keyviz) 免费开源，能够可视化键盘击键和鼠标实时动作
-2. 【win】[ClickShow](https://github.com/cuiliang/ClickShow/releases) 用于提示鼠标点击、鼠标位置
+2. 【win】[ClickShow](https://github.com/cuiliang/ClickShow/releases) 用于显示鼠标点击、鼠标位置
 
 not
 
 * 【win】Bandicam 班迪录屏 10 分种内免费，不过体验很好
 * 【全平台】obs 有点卡
 * 【win】Captura 已过时
+
 * 【win】KeyCastOW 颜值差点意思
 
 - - -
@@ -640,20 +654,21 @@ or
 
 **DNS server**
 
-1\. [SmartDNS](https://pymumu.github.io/smartdns/)
+1. [SmartDNS](https://pymumu.github.io/smartdns/)
+2. [AdGuard Home](https://adguard.com/zh_cn/adguard-home/overview.html) - 适用于任何操作系统（Windows，macOS，Linux）的网络软件 | [github AdguardHome](https://github.com/AdguardTeam/AdguardHome)
 
-2\. AdGuard Home | 适用于任何操作系统（Windows，macOS，Linux）的网络软件
+**网络广告拦截工具**
 
-[AdGuard Home 官网 ](https://adguard.com/zh_cn/adguard-home/overview.html) | [github AdguardHome](https://github.com/AdguardTeam/AdguardHome)
+[Pi-hole](https://github.com/pi-hole/pi-hole) 是一个网络广告拦截工具
 
 ### 8.markdown 编辑
 
-[marktext](https://github.com/marktext/marktext/releases 'markdown 编辑')
+【全平台】[marktext](https://github.com/marktext/marktext/releases 'markdown 编辑')
 
 not
 
 * typora 虽然功能强大，且适合初学者，收费有条件支持下
-* [【win】MarkdownPad2](http://markdownpad.com/) 感觉差点意思
+* 【win】[MarkdownPad2](http://markdownpad.com/) 感觉差点意思
 
 - - -
 
@@ -661,23 +676,28 @@ mac 平台据说 ulysses 评价很高，但收费就算了
 
 ### 9.大文件分析
 
-[【win】【推荐】】wiztree](https://www.diskanalyzer.com/)
+【win 推荐】[wiztree](https://www.diskanalyzer.com/)
 
 or
 
-[【win】【备用】SpaceSniffer](http://www.uderzo.it/main_products/space_sniffer/index.html)
+【win 备用】[SpaceSniffer](http://www.uderzo.it/main_products/space_sniffer/index.html)
+
+or
+
+【win 备用 安装版】[treesize](https://www.jam-software.com/treesize/editions.shtml)
 
 ### 10.【常用】清理卸载
 
-[【win】极客卸载 Geek Uninstaller](https://geekuninstaller.com/download) 简单清爽
+【win】[极客卸载 Geek Uninstaller](https://geekuninstaller.com/download) 简单清爽
 
 or
 
-[【win】HiBitUninstaller](https://www.hibitsoft.ir/Uninstaller.html) 卸载功能更强大
+【win】[HiBitUninstaller](https://www.hibitsoft.ir/Uninstaller.html) 卸载功能更强大
 
 not
 
-ccleaner 只有安装版差评
+* 【win mac】ccleaner 只有安装版差评
+* 【绿色版】[RevoUninstaller](https://www.revouninstaller.com/products/revo-uninstaller-free/) 界面太旧了
 
 - - -
 
@@ -685,9 +705,9 @@ mac 的腾讯柠檬清理已带了该功能
 
 not
 
-* CCleaner mac 版目前免费版功能有限
-* cleanmymac x 付费
-* app cleaner & unstall 付费
+* 【mac linux】CCleaner mac 版目前免费版功能有限
+* 【mac】cleanmymac x 付费
+* 【mac】app cleaner & unstall 付费
 
 ### 11. 内网通讯
 
@@ -709,7 +729,7 @@ iOS 用户可下载 iTunes 或者某国产助手
 
 虚拟光驱可用于加载 iso 文件到我的电脑，这里我推荐软媒魔方套件。
 
-### 14.磁盘工具
+### 14.磁盘分区
 
 * [【win】傲梅分区助手](https://www.disktool.cn/download.html)
 * 【win】diskgenius
@@ -734,7 +754,19 @@ not
 * Listary 虽说效率神器但是不好用
 * quicker 虽说是效率神器，但是我用不习惯
 
-### 18.mac 特有
+### 18.文件加密
+
+Encrypto - 优雅地给文件加个密！精致的 PC / Mac 免费文件夹加密工具软件 - 异次元软件下载
+https://www.iplaysoft.com/encrypto.html
+
+### 19.磁盘加密
+
+VeraCrypt - 最佳免费开源跨平台的文件加密工具 (支持U盘加密/硬盘分区加密) - 异次元软件下载
+https://www.iplaysoft.com/veracrypt.html
+
+[官网](https://veracrypt.fr/en/Home.html)
+
+### 20.mac 特有
 
 #### 鼠标翻转
 
@@ -746,7 +778,7 @@ bab 可以开启该功能
 
 [【mac】AlDente - 负载限制器](https://apphousekitchen.com/)
 
-### 19.windows 也要有
+### 21.windows 也要有
 
 #### 空格预览文件
 
@@ -792,14 +824,18 @@ not
 
 ### 02. 网络代理
 
-* 【server】shadowsocks-shadowsocks-rust- A Rust port of shadowsocks <https://github.com/* shadowsocks/shadowsocks-rust>
-* 【win】shadowsocks-shadowsocks-windows- A C# port of shadowsocks <https://github.com/* shadowsocks/shadowsocks-windows>
-* 【mac】shadowsocks-ShadowsocksX-NG- Next Generation of ShadowsocksX <https://github.com/* shadowsocks/ShadowsocksX-NG>
-* 【android】shadowsocks-shadowsocks-android- A shadowsocks client for Android <https://github.com/shadowsocks/shadowsocks-android>
+【首推 全平台】[protonvpn](https://protonvpn.com/) 某外媒推荐排名第一的免费魔法平台。软件代码开源，无限免费杯，免费版仅供一台设备，但是可以注册多个邮箱号
+
+自己搭代理 缺点是无法限制每月总流量
+
+* 【server】shadowsocks-rust- A Rust port of shadowsocks <https://github.com/* shadowsocks/shadowsocks-rust>
+* 【win】shadowsocks-windows- A C# port of shadowsocks <https://github.com/* shadowsocks/shadowsocks-windows>
+* 【mac】ShadowsocksX-NG- Next Generation of ShadowsocksX <https://github.com/* shadowsocks/ShadowsocksX-NG>
+* 【android】shadowsocks-android- A shadowsocks client for Android <https://github.com/shadowsocks/shadowsocks-android>
 
 not
 
-ClearVPN 免费版基本废了
+* ClearVPN 免费版废了
 
 ### 03. 内网转发
 
@@ -813,9 +849,13 @@ ClearVPN 免费版基本废了
 
 【备用】乐播投屏
 
-### 05. 文档转换
+### 05. 文件转换
 
-[pandoc 文档转换利器](https://github.com/jgm/pandoc/releases)
+【安装版】[File Converter](https://file-converter.org/) - 完备的文件转换利器，支持对文档、图片、视频、音乐、电子书、CAD、压缩包等文件进行格式转换
+
+【cli】[pandoc 文档转换利器](https://github.com/jgm/pandoc/releases) 文档转换
+
+【绿色版】[HandBrake](https://handbrake.fr/) 视频转换
 
 ### 06. 包管理器
 

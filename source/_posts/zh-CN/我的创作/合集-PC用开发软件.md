@@ -52,7 +52,7 @@ Ant 在早期的 Java 项目中非常流行，它被设计用来驱动软件项�
 
 #### Maven
 
-Maven 是一个构建工具，但它主要针对 Java 应用程序。Maven 由 Apache 软件基金会维护，它使用一个名为 POM（Project Object Model）的 XML 文件来描述项目的构建过程、依赖关系和其他配置信息。
+Maven 是一个构建工具，主要用于 Java 应用程序。由 Apache 软件基金会维护，它使用一个名为 POM（Project Object Model）的 XML 文件来描述项目的构建过程、依赖关系和其他配置信息。
 
 [Maven 官网](https://maven.apache.org/) | [镜像下载](https://repo.huaweicloud.com/apache/maven/maven-3/)
 
@@ -62,7 +62,7 @@ Maven 是一个构建工具，但它主要针对 Java 应用程序。Maven 由 A
 
 另一增强工具
 
-[maven-mvnd](https://github.com/apache/maven-mvnd)
+[mvnd](https://github.com/apache/maven-mvnd) - embeds Maven (so there is no need to install Maven separately).
 
 #### Gradle
 
@@ -111,11 +111,11 @@ repositories {
 
 maybe
 
-[【win mac】Beekeeper Studio](https://github.com/beekeeper-studio/beekeeper-studio/releases) 社区版功能一般，除非付费版
+【win mac】[Beekeeper Studio](https://github.com/beekeeper-studio/beekeeper-studio/releases) 社区版功能一般，除非付费版
 
 not
 
-* 【win mac】[pgAdmin](https://www.pgadmin.org/download/) 使用不习惯，且只支持 pg
+* 【win mac】[PGAdmin](https://www.pgadmin.org/download/) 使用不习惯，且只支持 pg
 * 【全平台】[DBeaver Community](https://dbeaver.io/download/) 颜值太低
 * 【全平台】[DbVisualizer](https://www.dbvis.com/) 付费版才好用
 
@@ -131,26 +131,31 @@ mac 平台
 
 ## 4.【常用】Editor 编辑器
 
-【全平台】[VSCode](https://code.visualstudio.com)
+【全平台】[VSCode](https://code.visualstudio.com) windows 推荐使用安装版而非便携版，这样可以获得及时更新
 
 vscode 插件推荐
 
 * [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
 
+or
+
+【win】[Notepad++](https://www.notepadnext.com/) 侯今吾（Don HO）蚍蜉撼大树，可笑不自量。想用就用，能抵制就抵制。
+
 not
 
-* [Brackets](https://brackets.io/) - A modern, open source code editor that understands web design. 不好用
-* [EverEdit](https://www.everedit.net/?lang=zh) 不好用
-* Fleet 还是不太好用
+* 【全平台】[Brackets](https://brackets.io/) - A modern, open source code editor that understands web design
+* 【win】[EverEdit](https://www.everedit.net/) 不好用
+* 【全平台】[Fleet](https://www.jetbrains.com/fleet/) 还是不太好用
 * 【win】[Geany](https://www.geany.org/) 只有安装版的差评，且 UI 目前差点意思
 * 【便携版】轻量级: notepad++ 由于作者的不当言论
-* [SimpleNotePad](https://github.com/zhongyang219/SimpleNotePad) 很清爽，可惜先入为主
-* Sublime Text 不太喜欢用
+* 【win】[SimpleNotePad](https://github.com/zhongyang219/SimpleNotePad) 很清爽，可惜先入为主
+* 【全平台】[Sublime Text](https://www.sublimetext.com/) 不太喜欢用
 * Skylark 没有切换到上个标签
-* [notepadnext](https://www.notepadnext.com/) 还不太完善
-* [notepad--](https://gitee.com/cxasm/notepad--) 还不太完善
+* 【全平台】[notepadnext](https://www.notepadnext.com/) A cross-platform, reimplementation of Notepad++. 还不太完善
+* 【全平台】[notepad--](https://gitee.com/cxasm/notepad--) 还不太完善
+* 【全平台】[Phoenix Code](https://phcode.io/#/home) 还不太完善
 
-* 【已过时】Atom
+* 【已过时】[Atom](https://github.com/atom/atom/)
 
 ## 5. file compare 文件对比
 
@@ -161,9 +166,9 @@ or
 
 【全平台 付费】[Beyond Compare 4](https://www.beyondcompare.cc/)
 
-not
+or
 
-FreeFileSync_12.5 界面太不美观
+【全平台 免费】[FreeFileSync](https://freefilesync.org/) 除了界面太不美观
 
 - - -
 
@@ -258,10 +263,10 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
 **消息队列**
 
-* [Apache Kafka](https://kafka.apache.org/)
-* [RabbitMQ](https://www.rabbitmq.com/)
 * [Apache ActiveMQ](https://activemq.apache.org/)
+* [Apache Kafka](https://kafka.apache.org/)
 * [Apache RocketMQ](https://rocketmq.apache.org/)
+* [RabbitMQ](https://www.rabbitmq.com/)
 
 **Object Storage Service**
 
@@ -296,14 +301,10 @@ mac 平台
 
 [mqttx](https://mqttx.app/)
 
-### Packet capture
+### Packet capture 抓包
 
-【win mac 安装版】[Charles Web](https://www.charlesproxy.com/) 抓包用。
-Charles is an HTTP proxy / HTTP monitor / Reverse Proxy
-
-【win mac】fidder
-
-【安卓版】httpcanary
+* 【win mac 安装版】[Charles](https://www.charlesproxy.com/) - is an HTTP proxy / HTTP monitor / Reverse Proxy
+* 【win mac】fidder
 
 ## 10. package manager 包管理器
 
@@ -326,7 +327,7 @@ Charles is an HTTP proxy / HTTP monitor / Reverse Proxy
 
 Redis is an in-memory database that persists on disk. The data model is key-value, but many different kind of values are supported: Strings, Lists, Sets, Sorted Sets, Hashes, Streams, HyperLogLogs. 
 
-[download](https://redis.io/download/) | [tporadowski/redis: Native port of Redis for Windows](https://github.com/tporadowski/redis) 
+[下载](https://redis.io/download/) | [tporadowski/redis: Native port of Redis for Windows](https://github.com/tporadowski/redis) 
 
 ### QuickRedis
 
@@ -393,13 +394,11 @@ not
 
 and
 
-【Windows 便携版】WinSCP - Free SFTP and FTP client
-
-[官网](https://winscp.net/eng/index.php) | [下载页面](https://winscp.net/eng/downloads.php)
+【Windows 便携版】WinSCP [官网](https://winscp.net/eng/index.php) | [下载](https://winscp.net/eng/downloads.php) - Free SFTP and FTP client
 
 or
 
-【win 免费】[xshell 家庭/学校免费版 - NetSarang Website](https://www.xshell.com/zh/free-for-home-school/)
+【win 免费】[xshell 家庭/学校免费版](https://www.xshell.com/zh/free-for-home-school/)
 
 【win 便携】putty
 
@@ -426,7 +425,7 @@ mac 平台
 
 ### 手机端
 
-[Android JuiceSSH-Free SSH client for Android](https://juicessh.com/)
+【Android】[JuiceSSH-Free SSH client](https://juicessh.com/)
 
 ## 16.terminal 终端
 
@@ -446,9 +445,7 @@ Windows 终端是一个新式主机应用程序，它面向你喜爱的命令行
 
 ### 【mac】iTerm 2
 
-[iTerm 2](https://www.iterm2.com/downloads.html)
-
-mac 下终端的替代品。该工具结合 Oh My Zsh 会有舒适的终端体验
+【mac】[iTerm 2](https://www.iterm2.com/downloads.html) 该工具结合 Oh My Zsh 可能会带来不一样的体验
 
 ## 17.框架
 
