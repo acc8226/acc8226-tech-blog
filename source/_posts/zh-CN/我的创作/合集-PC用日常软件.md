@@ -42,8 +42,8 @@ Firefox 可作为有效补充，由于其出色的播放视频的稳定性。且
 #### 3. 压缩解压
 
 * 【win 安装版优先 绿色版次之】[PeaZip](https://peazip.github.io/) 智能解压很稀有 | [软件介绍](https://www.iplaysoft.com/peazip.html)
-* 【mac AppStore 版】[The Unarchiver](https://theunarchiver.com/)或者官网直装版 | [软件介绍](https://www.iplaysoft.com/the-unarchiver.html)
-* linux 系统一般自带 tar 和 zip 命令。
+* 【mac AppStore 版】[The Unarchiver](https://theunarchiver.com/)或者也可以直接下载并使用[安装包](https://dl.devmate.com/com.macpaw.site.theunarchiver/TheUnarchiver.dmg) | [软件介绍](https://www.iplaysoft.com/the-unarchiver.html)
+* linux 系统一般自带 tar 或 zip 命令。
 
 not
 
@@ -584,6 +584,17 @@ or
 1. [keyviz](https://github.com/mulaRahul/keyviz) 免费开源，能够可视化键盘击键和鼠标实时动作
 2. 【win】[ClickShow](https://github.com/cuiliang/ClickShow/releases) 用于显示鼠标点击、鼠标位置
 
+字幕制作
+[ArcTime Pro](https://arctime.org/index.html)
+
+视频剪辑
+
+* [剪映](https://www.capcut.cn/) - 全能易用的桌面端剪辑软件
+* [必剪](https://bcut.bilibili.cn/) - 让创作更有趣
+* [Kdenlive](https://kdenlive.org/zh/) - Video Editing Freedom
+* [Shotcut](https://www.shotcut.org/)
+* [Bandicut](https://www.bandicam.cn/bandicut-video-cutter/)（班迪剪辑）- 视频无损分割和拼接工具
+
 not
 
 * 【win】Bandicam 班迪录屏 10 分种内免费，不过体验很好
@@ -822,7 +833,7 @@ not
 
 [AList](https://alist.nn.ci/zh/)
 
-### 02. 网络代理
+### 02. 网络加速
 
 【首推 全平台】[protonvpn](https://protonvpn.com/) 某外媒推荐排名第一的免费魔法平台。软件代码开源，无限免费杯，免费版仅供一台设备，但是可以注册多个邮箱号
 
@@ -835,7 +846,8 @@ not
 
 not
 
-* ClearVPN 免费版废了
+* AdGuard VPN 每月 3G 貌似不够用
+* ClearVPN 免费版貌似废了
 
 ### 03. 内网转发
 

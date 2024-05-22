@@ -139,7 +139,7 @@ vscode 插件推荐
 
 or
 
-【win】[Notepad++](https://www.notepadnext.com/) 侯今吾（Don HO）蚍蜉撼大树，可笑不自量。想用就用，能抵制就抵制。
+【win 绿色版优先】[Notepad++](https://www.notepadnext.com/) 侯今吾（Don HO）蚍蜉撼大树，可笑不自量。想用就用，能抵制就抵制。
 
 not
 
@@ -147,20 +147,18 @@ not
 * 【win】[EverEdit](https://www.everedit.net/) 不好用
 * 【全平台】[Fleet](https://www.jetbrains.com/fleet/) 还是不太好用
 * 【win】[Geany](https://www.geany.org/) 只有安装版的差评，且 UI 目前差点意思
-* 【便携版】轻量级: notepad++ 由于作者的不当言论
 * 【win】[SimpleNotePad](https://github.com/zhongyang219/SimpleNotePad) 很清爽，可惜先入为主
 * 【全平台】[Sublime Text](https://www.sublimetext.com/) 不太喜欢用
 * Skylark 没有切换到上个标签
-* 【全平台】[notepadnext](https://www.notepadnext.com/) A cross-platform, reimplementation of Notepad++. 还不太完善
 * 【全平台】[notepad--](https://gitee.com/cxasm/notepad--) 还不太完善
+* 【全平台】[notepadnext](https://www.notepadnext.com/) A cross-platform, reimplementation of Notepad++. 还不太完善
 * 【全平台】[Phoenix Code](https://phcode.io/#/home) 还不太完善
 
 * 【已过时】[Atom](https://github.com/atom/atom/)
 
 ## 5. file compare 文件对比
 
-【Win】WinMerge 可以比较文件夹和文件，以便于理解和处理的可视文本格式呈现差异。是我离不开 windows 的一个精品软件
- [WinMerge](https://winmerge.org/) | [下载页](https://winmerge.org/downloads/?lang=en)
+【Win】WinMerge [官网](https://winmerge.org/) | [下载页](https://winmerge.org/downloads/?lang=en) 用于比较文件夹和文件，以便于理解和处理的可视文本格式呈现差异。是我离不开 windows 的一个重要原因
 
 or
 
@@ -178,16 +176,13 @@ mac 平台
 
 ## 6. 【常用】IDE 集成开发环境
 
-* Jetbrains 全家桶，包含了 [IntelliJ IDEA](https://www.jetbrains.com/idea/)，其中 [EPA 版本](https://www.jetbrains.com/resources/eap/)更新太频繁就不推荐了
+* [eclipse](https://www.eclipse.org/downloads/) 貌似不太受欢迎且目前看内存占用至少 1 个 G
 * [HBuilder X](https://www.dcloud.io/hbuilderx.html)
+* [IntelliJ IDEA](https://www.jetbrains.com/idea/)，其中 [EPA 版本](https://www.jetbrains.com/resources/eap/)更新太频繁就不推荐了
 * [PyCharm](https://www.jetbrains.com/zh-cn/pycharm/download)
 * [SpringTools](https://spring.io/tools)
 * [微信开发者工具](https://developers.weixin.qq.com/miniprogram/dev/devtools/devtools.html)
 * c/c++ <https://github.com/Embarcadero/Dev-Cpp> 或 [C-Free](http://www.programarts.com/cfree_ch/index.htm)
-  
-maybe
-
-[eclipse](https://www.eclipse.org/downloads/) 貌似不太受欢迎且目前看内存占用至少 1 个 G
 
 not
 
@@ -198,15 +193,15 @@ not
 
 ### Autohotkey
 
-【win】Autohotkey - The ultimate automation scripting language. [官网](https://www.autohotkey.com/) | [下载](https://www.autohotkey.com/download/)
+【win】Autohotkey [官网](https://www.autohotkey.com/) | [下载](https://www.autohotkey.com/download/) - The ultimate automation scripting language. 
 
 ### Dart
 
-[Dart](https://dart.cn/)
+Dart [官网](https://dart.cn/)
 
 ### Go
 
-[The Go Programming Language](https://golang.google.cn/)
+Go[官网](https://golang.google.cn/)
 
 ### Java
 
@@ -217,11 +212,11 @@ not
 * [Oracle Java](https://www.oracle.com/java/technologies/javase-downloads.html)
 * [Temurin](https://adoptium.net/temurin/releases/)
 
-如果是 windows 版本注意：临时使用，需要在命令行界面键入 `set path=java` 所在的 bin 目录。长期使用，建议设置环境变量到 path。
+windows 版本如果是临时使用，可以在命令行界面键入 `set path=java` 所在的 bin 目录。长期使用则建议设置环境变量到 path。
 
 ### Kotlin
 
-[Kotlin](https://kotlinlang.org/)
+Kotlin [官网](https://kotlinlang.org/)
 
 ### Node.js
 
@@ -362,12 +357,11 @@ not
 
 ### SVN
 
-【安装版】svn 增强工具，是我离不开 windows 的一个精品软件
-[TortoiseSVN 官网下载地址](https://tortoisesvn.net/downloads.html)
+【安装版】TortoiseSVN [下载](https://tortoisesvn.net/downloads.html) - 一款 svn 增强工具，是我离不开 windows 的一个重要原因
 
 not
 
-【便携版】**SVN 命令行工具** Apache Subversion command line tools [Apache-Subversion-1.13.0](https://www.visualsvn.com/files/Apache-Subversion-1.13.0.zip)
+【便携版】SVN 命令行工具 [Apache-Subversion-1.14.3](https://www.visualsvn.com/files/Apache-Subversion-1.14.3.zip)
 
 - - -
 
@@ -477,7 +471,7 @@ Windows 终端是一个新式主机应用程序，它面向你喜爱的命令行
 
 【跨平台】PowerShell
 
-[PowerShell | Microsoft Learn](https://learn.microsoft.com/zh-cn/powershell/scripting/overview)
+[PowerShell](https://learn.microsoft.com/zh-cn/powershell/scripting/overview)
 
 PowerShell 是一种跨平台的任务自动化解决方案，由命令行 shell、脚本语言和配置管理框架组成。 PowerShell 在 Windows、Linux 和 macOS 上运行。
 完善了命令行历史记录功能，还包含丰富的定制项。可作为 bash 的替代品。
