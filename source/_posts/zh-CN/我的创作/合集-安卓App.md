@@ -179,7 +179,8 @@ not
 
 * reex 的使用： url 可以填写微 `http://xx.xx.xx.xxx:5244/dav` 然后用户名 和 密码填写 alist 的信息即可。但是一段时间没更新了，然后官网我也没找到，代码不透明我就不太敢用
 * nPlayer 不能跳倍速
-* vlc 在 webdav 方面自定义选项不足
+* vlc 在 webdav 方面自定义选项不足，但依旧足够强大
+* xplayer 太丑了
 
 * [bili_you](https://github.com/lucinhu/bili_you/releases) bilibili 无广告版，但是作者已经不再维护了
 * [bilibili 标准版](https://sj.qq.com/appdetail/tv.danmaku.bili) 没以前清爽了
@@ -217,7 +218,7 @@ not
 * 纯纯写作 很好用，但是收费版才好用就算了
 * 李跳跳 已主动下架 真实好友 最新版没适配
 * [快递 100](https://sj.qq.com/appdetail/com.Kingdee.Express) 最近寄快递选【德邦】确实便宜写，不过体积和重* 量两者对方是按大的来，情有可原吧。第一次用快递 100 我领了一个 5 月的优惠券，赶紧还行，一般足够用
-* [北京云法庭](http://sspt.bjcourt.gov.cn/bcourt/onlineCourt/downloadYm)  我在某些情况下会用到 法  yuan 就是垃圾，法 guan 也是，拖了好长时间，卸载了吧，我没证据，我理亏，我 b 万没了，以后一定要多思考
+* [北京云法庭](http://sspt.bjcourt.gov.cn/bcourt/onlineCourt/downloadYm)  我在某些情况下会用到 法 yuan 就 TM 是垃圾，法 guan 也是，拖了好长时间，卸了，我没证据，我理亏，我 b 万没了，思考思考思考
 * 北京法院 一类无力应用
 
 ## 4. 购物类

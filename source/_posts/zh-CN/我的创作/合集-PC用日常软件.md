@@ -848,6 +848,7 @@ not
 
 * AdGuard VPN 每月 3G 貌似不够用
 * ClearVPN 免费版貌似废了
+* hide.me 不可用
 
 ### 03. 内网转发
 

@@ -58,6 +58,7 @@ menu:
 
 # Enable / Disable menu icons / item badges.
 menu_settings:
+  icons: true
   badges: false
 
 # ---------------------------------------------------------------
@@ -66,8 +67,28 @@ menu_settings:
 # ---------------------------------------------------------------
 
 sidebar:
-  # Sidebar Position.
+  # Sidebar position. Available values: left | right
   position: left
+
+  # Sidebar width.
+  # Applicable to Muse | Mist and mobile of Pisces | Gemini.
+  width_expanded: 320
+  # Applicable to desktop of Pisces | Gemini.
+  width_dual_column: 240
+
+  # Sidebar display.
+  # Applicable to Muse | Mist and mobile of Pisces | Gemini.
+  # Available values:
+  #  - post    expand on posts automatically. Default.
+  #  - always  expand for all pages automatically.
+  #  - hide    expand only when click on the sidebar toggle icon.
+  #  - remove  totally remove sidebar including sidebar toggle.
+  display: post
+
+  # Sidebar padding in pixels.
+  padding: 18
+  # Sidebar offset from top menubar in pixels (only for Pisces | Gemini).
+  offset: 12
 
 # Sidebar Avatar
 avatar:
@@ -75,7 +96,7 @@ avatar:
   #url: /images/avatar.gif
   url: /images/blog.jpg
   # If true, the avatar will be displayed in circle.
-  # rounded: true
+  rounded: false
   # If true, the avatar will be rotated with the cursor.
   rotated: true
 
@@ -94,11 +115,11 @@ social:
 social_icons:
   enable: true
   icons_only: true
+  transition: false
 
 # Blog rolls
 links_settings:
   icon: fa fa-globe
-  title: Links
   # Available values: block | inline
   layout: block
 
@@ -116,7 +137,7 @@ toc:
   # If true, all level of TOC in a post will be displayed, rather than the activated part of it.
   expand_all: true
   # Maximum heading depth of generated toc.
-  max_depth: 4
+  max_depth: 5
 
 # ---------------------------------------------------------------
 # Footer Settings
@@ -166,17 +187,12 @@ reward:
 # Subscribe through Telegram Channel, Twitter, etc.
 # Usage: `Key: permalink || icon` (Font Awesome)
 follow_me:
-  #Twitter: https://twitter.com/username || fab fa-twitter
-  #Telegram: https://t.me/channel_name || fab fa-telegram
-  #WeChat: /images/wechat_channel.jpg || fab fa-weixin
-  #RSS: /atom.xml || fa fa-rss
 
 # Related popular posts
 # Dependencies: https://github.com/sergeyzwezdin/hexo-related-posts
 related_posts:
   enable: false
-  title: # Custom header, leave empty to use the default one
-  display_in_home: false
+  icon: fa fa-signs-post
 
 # Post edit
 # Easily browse and edit blog source code online.
@@ -244,6 +260,12 @@ codeblock:
   # Add copy button on codeblock
   copy_button:
     enable: true
+    # Available values: default | flat | mac
+    style:
+  # Fold code block
+  fold:
+    enable: true
+    height: 500
 
 back2top:
   enable: true
@@ -264,7 +286,6 @@ bookmark:
 github_banner:
   enable: true
   permalink: https://github.com/acc8226/
-  title: Follow me on GitHub
 
 # ---------------------------------------------------------------
 # Font Settings
@@ -359,6 +380,25 @@ quicklink:
   timeout: 3000
   # Default (true) will attempt to use the fetch() API if supported (rather than link[rel=prefetch]).
   priority: true
+
+# ---------------------------------------------------------------
+# Animation Settings
+# ---------------------------------------------------------------
+
+# Use Animate.css to animate everything.
+# For more information: https://animate.style
+motion:
+  enable: true
+  async: false
+  transition:
+    # All available transition variants: https://theme-next.js.org/animate/
+    menu_item: fadeInDown
+    post_block: fadeIn
+    post_header: fadeInDown
+    post_body: fadeInDown
+    coll_header: fadeInLeft
+    # Only for Pisces | Gemini.
+    sidebar: fadeInUp
 
 # Canvas ribbon 丝带效果
 # For more information: https://github.com/hustcc/ribbon.js
