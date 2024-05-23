@@ -57,6 +57,7 @@ external_link:
 filename_case: 0
 # 使草稿默认发布到站点中设为 false
 render_drafts: false
+# 创建新文章时自动创建一个文件夹。这个资源文件夹将会有与这个文章文件一样的名字。将所有与你的文章有关的资源放在这个关联文件夹中之后
 post_asset_folder: true
 relative_link: false
 future: true

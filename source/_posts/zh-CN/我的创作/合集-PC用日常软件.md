@@ -92,7 +92,7 @@ linux 平台
 
 首推【绿色版】的 [FastGestures 鼠标/触控板/屏手势](https://fg.zhaokeli.com/)，如果提示 dll 缺失，则可以通过使用安装版的进行解决。
 
-否则可以换成 【win 免费 安装版】WGestures 1 或者【收费 安装版 win mac】WGestures 2 鼠标手势 <https://www.yingdev.com/projects/wgestures2>
+否则可以换成 【win 免费 安装版】WGestures 1 或者【收费 安装版 win mac】[WGestures 2](https://www.yingdev.com/projects/wgestures2) 鼠标手势
 
 这绝对是效率神器。
 
@@ -194,7 +194,7 @@ maybe
 
 maybe
 
-【全平台】[Free Download Manager](https://www.freedownloadmanager.org/zh/) (**FDM**) 是一款[经典](https://www.iplaysoft.com/tag/%E7%BB%8F%E5%85%B8)免费纯粹的下载软件，它[开源](https://www.iplaysoft.com/tag/%E5%BC%80%E6%BA%90)无广告，界面简洁清爽，支持 BT、FTP 支持批量下载、断点续传、捕获 HTTP 链接、FTP 目录浏览等功能，还跨平台支持 Windows 与 macOS，可以说是一款相当优秀的免费全能型下载工具。
+【全平台】[Free Download Manager](https://www.freedownloadmanager.org/zh/) (**FDM**) 是一款经典免费纯粹的下载软件，它开源无广告，界面简洁清爽，支持 BT、FTP 支持批量下载、断点续传、捕获 HTTP 链接、FTP 目录浏览等功能，还跨平台支持 Windows 与 macOS，可以说是一款相当优秀的免费全能型下载工具。
 
 not
 
@@ -229,8 +229,8 @@ not
 * acdsee 免费版都需要注册，差评
 * [Honeyview](https://www.bandisoft.com/honeyview/) 页面太丑了，已过时
 * [Bandiview](https://www.bandisoft.com/bandiview/) Honeyview 的升级版
-* jpegview 特点是小巧，但操作不顺手 <https://github.com/sylikc/jpegview/> 下载链接 <https://github.com/sylikc/jpegview/releases/download/v1.3.46/JPEGView32_1.3.46.7z>
-* XnView 界面不那么现代 <https://www.xnview.com/en/xnview/#downloads>
+* [jpegview](https://github.com/sylikc/jpegview/) 特点是小巧，但操作不顺手 下载链接 <https://github.com/sylikc/jpegview/releases/download/v1.3.46/JPEGView32_1.3.46.7z>
+* [XnView](https://www.xnview.com/en/xnview/#downloads) 界面不那么现代
 
 - - -
 
@@ -281,7 +281,6 @@ mac 平台
 #### 9. 密码管理
 
 【全平台】[BitWarden](https://bitwarden.com/)  一款全平台的密码管理软件。轻度使用安装浏览器插件即可，重度使用可以安装该软件。
-
 
 ### 2. 办公类
 
