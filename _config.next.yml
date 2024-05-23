@@ -10,11 +10,11 @@ custom_file_path:
   #postMeta: source/_data/post-meta.njk
   #postBodyStart: source/_data/post-body-start.njk
   #postBodyEnd: source/_data/post-body-end.njk
-  #footer: source/_data/footer.njk
   #bodyEnd: source/_data/body-end.njk
   #variable: source/_data/variables.styl
   #mixin: source/_data/mixins.styl
   #style: source/_data/styles.styl
+  footer: source/_data/footer.njk
 
 # Schemes
 scheme: Gemini
@@ -174,7 +174,7 @@ footer:
     color: "#808080"
   # If not defined, `author` from Hexo `_config.yml` will be used.
   # 我通过观察元素得知上面的字体是 14px ，然后图片宽度我给了 17 px，然后得到宽度大概是 272px 然后再加上 display:inline-block 才使得宽度生效，呵呵 蹩脚的写法
-  copyright: ac86<br/><a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" style="width:272px;display:inline-block;border-bottom:none;"><img src="/images/upyun_logo.png" style="height:17px;"/></a>
+  copyright: acc8226 &amp; Hexo &amp; NexT theme 
   # Powered by Hexo & NexT
   powered: false
 
@@ -279,7 +279,7 @@ codeblock:
   # Fold code block
   fold:
     enable: true
-    height: 500
+    height: 389
 
 back2top:
   enable: true
@@ -314,7 +314,11 @@ github_banner:
 # ---------------------------------------------------------------
 
 font:
-  enable: false
+  enable: true
+  # Font settings for <code> and code blocks.
+  codes:
+    external: true
+    family: Inconsolata  
 
 # ---------------------------------------------------------------
 # SEO Settings
@@ -353,9 +357,6 @@ math:
 
   mathjax:
     enable: false
-    # Available values: none | ams | all
-    tags: none
-
   katex:
     enable: true
     # See: https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex
@@ -403,22 +404,13 @@ quicklink:
 # For more information: https://animate.style
 motion:
   enable: true
-  async: false
-  transition:
-    # All available transition variants: https://theme-next.js.org/animate/
-    menu_item: fadeInDown
-    post_block: fadeIn
-    post_header: fadeInDown
-    post_body: fadeInDown
-    coll_header: fadeInLeft
-    # Only for Pisces | Gemini.
-    sidebar: fadeInUp
+  async: true
 
 # Canvas ribbon 丝带效果
 # For more information: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
   enable: true
-  size: 150 # The width of the ribbon
+  size: 139 # The width of the ribbon
   alpha: 0.28 # The transparency of the ribbon
   zIndex: -1 # The display level of the ribbon
 
@@ -471,3 +463,10 @@ utterances:
 # Baidu Analytics
 # See: https://tongji.baidu.com
 baidu_analytics: ba33b029a738493af9be3f79736957d7
+
+# ============================================================= #
+# ======================= CDN Settings ======================== #
+# ============================================================= #
+vendors:
+  # if most of your visits come from China, please note that the CDNJS is blocked in some parts of China, don't use it as your CDN provider.
+  plugins: jsdelivr
