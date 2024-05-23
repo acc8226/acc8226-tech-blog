@@ -3,6 +3,19 @@
 # See: https://theme-next.js.org/docs/theme-settings/
 # ---------------------------------------------------------------
 
+custom_file_path:
+  head: source/_data/head.njk
+  #header: source/_data/header.njk
+  sidebar: source/_data/sidebar.njk
+  #postMeta: source/_data/post-meta.njk
+  #postBodyStart: source/_data/post-body-start.njk
+  #postBodyEnd: source/_data/post-body-end.njk
+  #footer: source/_data/footer.njk
+  #bodyEnd: source/_data/body-end.njk
+  #variable: source/_data/variables.styl
+  #mixin: source/_data/mixins.styl
+  #style: source/_data/styles.styl
+
 # Schemes
 scheme: Gemini
 
@@ -160,7 +173,8 @@ footer:
     # 爱心的颜色
     color: "#808080"
   # If not defined, `author` from Hexo `_config.yml` will be used.
-  copyright: ac86<br/><a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral"><img src="/images/upyun_logo.png" style="min-width:263px; width:32.3%;"/></a>
+  # 我通过观察元素得知上面的字体是 14px ，然后图片宽度我给了 17 px，然后得到宽度大概是 272px 然后再加上 display:inline-block 才使得宽度生效，呵呵 蹩脚的写法
+  copyright: ac86<br/><a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" style="width:272px;display:inline-block;border-bottom:none;"><img src="/images/upyun_logo.png" style="height:17px;"/></a>
   # Powered by Hexo & NexT
   powered: false
 
