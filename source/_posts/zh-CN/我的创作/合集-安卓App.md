@@ -1,7 +1,8 @@
 ---
 title: 合集-安卓 App
 date: 2017-06-01 08:00:00
-updated: 2024-03-12 22:53:00
+updated: 2024-05-24 21:52:39
+categories: 我的创作
 ---
 
 ## 置顶
@@ -96,7 +97,7 @@ not
 
 [网易邮箱大师](https://sj.qq.com/appdetail/com.netease.mail) 对 QQ 邮箱还需要授权码，操作上我更偏爱 QQ 邮箱一些
 
-### 4. 图书
+### 4. 阅读
 
 1. [静读天下](http://www.moondownload.com/download.html)
 2. 讯飞有声 难得的免费收听时长的可听本地图书和 pdf 的 app，这可能是目前的一个较好的方案
@@ -108,19 +109,18 @@ not
 * 微信读书 除了现在很多内容收费了
 * [京东读书](https://sj.qq.com/appdetail/com.jd.app.reader) 送了影响力 和 乌合之众几本书，可以看一段时间
 * 番茄免费小说 有的想看的书可以免费离线下载，很好，很适合离线用
+* [今日头条](https://sj.qq.com/appdetail/com.ss.android.article.news)，安卓版的有广告。 话说 iPhone 的付费版的倒是可以考虑。我一般很少关注外界，这得改呀，央视 315 这种节目就很好
 
 not
 
 * [阅读](https://github.com/gedoor/legado/releases) 不支持 mobi 格式
 * [今日热榜](https://tophub.today/app) 资源感觉不太丰富
-* [今日头条](https://sj.qq.com/appdetail/com.ss.android.article.news)，安卓版的有广告。  曾经最爱，但是广告劝退了我。话说 iPhone 的付费版的倒是可以考虑。我一般很少关注外界，这得改呀，央视 315 这种节目就很好
 * 微软 start 用于看新闻但不好用
 * 多看阅读 书太贵
 * 百度阅读 没起来
 * QQ 阅读 有广告
 * 起点读书 可能有些独家资源
 * 七猫 免费看小说但是有广告
-* 凤凰 FM 偶尔闪退
 * 安卓平台的 feeder 不好用只能做备选，看来 rss 阅读器还是苹果平台的 reeder
 
 ### 5. 音乐
@@ -141,7 +141,7 @@ not
 * 爱音乐 不好用，现在周杰伦的歌都没了，也不知道以前有没有
 * 咪咕音乐可以免费听 1 年，但是之后呢，不符合我白嫖原则
 
-### 6. 有声读物
+### 6. 听书 和 FM
 
 1. [得到](https://sj.qq.com/appdetail/com.luojilab.player) 非常好
 2. 帆书 有时候可以蹭一些限免资源，开会员我是不会的
@@ -155,6 +155,7 @@ not
 not
 
 * 少年得到 更适合中学生
+* 凤凰 FM 偶尔闪退
 
 ### 7. 倒数日
 
@@ -162,7 +163,7 @@ not
 
 ### 8. 要知
 
-可以阅读和听一些热点新闻
+听新闻用
 
 ## 2. 视频类
 
@@ -199,19 +200,12 @@ not
 
 可选
 
-* 浏览器 [火狐浏览器](https://firefox.en.uptodown.com/android)很好，期待将来支持更多拓展，然后 edge 也是一样
 * wifi 万能密钥 偶尔可以用下，虽说现在的能用的热点不多了
-* [360 浏览器](https://sj.qq.com/appdetail/com.qihoo.browser) 安全第一位，但是只要不要慌，陌生的东西一定不要点
 * [菜鸟](https://sj.qq.com/appdetail/com.cainiao.wireless) 好处就是一键查询所有快递
 * 快递 100 查和寄快递
 * [小度音箱](https://sj.qq.com/appdetail/com.baidu.duer.superapp) 硬件绑定的应用，不得不用
 
 not
-
-* UC 浏览器 有广告 虽免流也要 1 天 1 元呢
-* QQ 浏览器 有广告
-* 狐猴浏览器 感觉不完善
-* kiwi 浏览器 一般般，显示国家图片的插件而且不能用，虽然说支持谷歌插件没错
 
 * 输入法类 搜狗百度之类的有手机自带合作的，没必要了
 
@@ -382,6 +376,24 @@ TODO 清单
 
 * [微软桌面](https://apkpure.com/cn/microsoft-launcher/com.microsoft.launcher/download) 不喜欢系统桌面可以试试
 
+## 16. 浏览器
+
+[firefox 火狐浏览器](https://firefox.en.uptodown.com/android)很好，期待将来支持更多拓展
+
+edge 还是可以的
+
+可选
+
+* [360 浏览器](https://sj.qq.com/appdetail/com.qihoo.browser) 安全第一位，但是只要不要慌，陌生的东西一定不要点
+
+not
+
+* UC 浏览器 有广告 虽免流也要 1 天 1 元呢
+* QQ 浏览器 有广告
+* 狐猴浏览器 感觉不完善
+* kiwi 浏览器 一般般，显示国家图片的插件而且不能用，虽然说支持谷歌插件没错
+* chrome 不太适合国内环境
+
 ## 其他
 
 京通 自从北京通 app 下架后，然后有了它之后北京公积金 app 也几乎不用装了，一般我也用网站，想不到提取公积金特简单，简单申请当日到账
@@ -425,3 +437,7 @@ lbe 安全大师 已过时
 
 link2sd 现在几乎用不到了
 ```
+
+## 回收站
+
+InsTube 不能下载油管视频 且 太丑了
