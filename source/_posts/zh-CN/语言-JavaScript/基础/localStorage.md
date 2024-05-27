@@ -42,3 +42,5 @@ var json = storage.getItem("data");
 var jsonObj = JSON.parse(json);
 console.log(typeof jsonObj);
 ```
+
+<!-- more -->

@@ -217,7 +217,7 @@ parseInt("D") // 默认为 10 进制, 结果为 NaN
 
 令人费解的短路逻辑 o(>﹏<)o 不要
 
-```Javascript
+```js
 console.log("abc" && "edf") // "edf"
 console.log(null && undefined) // null
 console.log(undefined && null) // undefined
@@ -229,7 +229,7 @@ console.log(undefined || null) // null
 
 然而这种写法, 保底取 `0` 也是厉害
 
-```Javascript
+```js
 function sum(n1, n2) {
     // 这种写法, 保底取 0 也是厉害
     n1 = n1 || 0
@@ -242,4 +242,4 @@ if 语句
 包含只有 if, 只有 if 和 else, 和 if elseif 嵌套语句三种情况
 
 switch 语句
-用的是`===`全等号
+用的是 `===` 全等号

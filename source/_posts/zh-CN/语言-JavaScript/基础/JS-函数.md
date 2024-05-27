@@ -58,6 +58,8 @@ function myGreeting() {
 
 > 匿名函数也称为函数表达式。函数表达式与函数声明有一些区别。函数声明会进行声明提升（declaration hoisting），而函数表达式不会。
 
+<!-- more -->
+
 ### 箭头函数表达式 (=>)
 
 函数声明有一种特殊的语法 (详情请查阅[`function* statement`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/function* "function* 这种声明方式(function关键字后跟一个星号）会定义一个生成器函数 (generator function)，它返回一个  Generator  对象。") )：

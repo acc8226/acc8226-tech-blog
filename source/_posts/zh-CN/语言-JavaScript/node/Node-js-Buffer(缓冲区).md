@@ -72,6 +72,8 @@ len = buf.write("www.runoob.com");
 console.log("写入字节数 : "+  len);
 ```
 
+<!-- more -->
+
 ### 从缓冲区读取数据
 
 语法

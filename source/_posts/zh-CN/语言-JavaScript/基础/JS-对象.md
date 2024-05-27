@@ -65,6 +65,8 @@ var myDataValue = nameValue.value
 person[myDataName] = myDataValue
 ```
 
+<!-- more -->
+
 > 这是使用点表示法无法做到的，点表示法只能接受字面量的成员的名字，不接受变量作为名字。
 
 ### 创建新对象方式二: 使用对象构造器

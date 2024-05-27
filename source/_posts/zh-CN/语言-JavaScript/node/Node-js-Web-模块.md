@@ -75,6 +75,8 @@ console.log("Server running at http://127.0.0.1:8080/")
 
 接着我们在浏览器中打开地址：<http://127.0.0.1:8080/index.html>
 
+<!-- more -->
+
 ### 使用 Node 创建 Web 客户端
 
 Node 创建 Web 客户端需要引入 http 模块，创建 client.js 文件，代码如下所示：

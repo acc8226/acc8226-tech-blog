@@ -63,6 +63,8 @@ Access-Control-Allow-Origin: <origin> | *
 Access-Control-Allow-Headers: <field-name>[, <field-name>]*
 ```
 
+<!-- more -->
+
 - [`Access-Control-Expose-Headers`](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Access-Control-Expose-Headers "响应首部 Access-Control-Expose-Headers 列出了哪些首部可以作为响应的一部分暴露给外部。")  头让服务器把允许浏览器访问的头放入白名单，例如：
 
 ```text

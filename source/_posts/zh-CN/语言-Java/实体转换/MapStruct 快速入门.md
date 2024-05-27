@@ -1,5 +1,5 @@
 ---
-title: 0. MapStruct 快速入门
+title: MapStruct 快速入门
 date: 2022-08-18 15:15:20
 updated: 2022-08-18 15:15:20
 categories:
@@ -10,3 +10,6 @@ tags:
   - Java
   - MapStruct
 ---
+
+MapStruct – Java bean mappings, the easy way!
+https://mapstruct.org/

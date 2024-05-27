@@ -59,8 +59,9 @@ xmlhttp.send("fname=Bill&lname=Gates");
 
 XMLHttpRequest 对象如果要用于 AJAX 的话，其 open() 方法的 async 参数必须设置为 **true**。
 
-## fetch
+<!-- more -->
 
+## fetch
 
 <https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API/Using_Fetch>
 

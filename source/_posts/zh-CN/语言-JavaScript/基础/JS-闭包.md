@@ -65,6 +65,8 @@ var size14 = makeSizer(14);
 var size16 = makeSizer(16);
 ```
 
+<!-- more -->
+
 size12，size14 和 size16 三个函数将分别把 body 文本调整为 12，14，16 像素。我们可以将它们分别添加到按钮的点击事件上。如下所示：
 
 ```js

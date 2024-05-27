@@ -58,6 +58,8 @@ window.screen 对象包含有关用户屏幕的信息。
 
 返回屏幕的可用宽度
 
+<!-- more -->
+
 ```html
 <script>
   document.write("可用宽度: " + screen.availWidth)

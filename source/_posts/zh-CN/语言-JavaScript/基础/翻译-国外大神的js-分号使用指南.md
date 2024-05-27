@@ -68,6 +68,8 @@ for (var i=0; i < 10; i++)  {/*actions*/}       // correct
 for (var i=0; i < 10; i++;) {/*actions*/}       // SyntaxError
 ```
 
+<!-- more -->
+
 ## 参考
 
 Your Guide to Semicolons in JavaScript

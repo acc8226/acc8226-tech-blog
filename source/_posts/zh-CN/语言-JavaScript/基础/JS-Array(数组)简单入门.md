@@ -61,6 +61,8 @@ dogNames.toString(); //Rocket,Flash,Bella,Slugger
 push方法调用完成时，将返回数组的新长度
 `var newLength = myArray.push('Bristol');`
 
+<!-- more -->
+
 pop方法调用完成时，将返回已删除的项目
 `let removedItem = myArray.pop();`
 

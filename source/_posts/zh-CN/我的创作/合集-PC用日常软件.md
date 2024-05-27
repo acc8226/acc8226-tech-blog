@@ -851,13 +851,13 @@ not
 
 ### 03. 内网转发
 
-[frp](https://github.com/fatedier/frp/releases)
+【全平台】[frp](https://github.com/fatedier/frp/releases)
 
 ### 04. 投屏显示
 
 提醒：不听不信，谨防陌生人诈骗！！！
 
-工具 同步显示 [scrcpy](https://github.com/Genymobile/scrcpy/releases)
+工具 同步显示【全平台】 [scrcpy](https://github.com/Genymobile/scrcpy/releases)
 
 【备用】乐播投屏
 
@@ -919,18 +919,21 @@ not
 * JupyterLab 感觉不好用
 * [Lively Wallpaper - Microsoft Store 应用程序](https://apps.microsoft.com/store/detail/lively-wallpaper/) 占用 CPU 资源太大
 * monica 很好用的 ai 回答助手，不过每天才 30 次免费查询
-* paint.net.4.3.11.install.anycpu.web 一般般，貌似不跨平台
-* picpick 一般般
+* paint.net 画图软件 一般般，貌似不跨平台
+* picpick 截图软件 一般般
 * Raspberry Pi Imager 用于制作 U 盘系统镜像。
 * starUML 一个画 uml 的工具，还行，可能不够通用吧
 * Thunderbird 很强大，识别日历文件，还支持 rss，可能我用不习惯
-* updf 中规中矩，如果编辑要钱，虽说是跨平台，卸之
+* updf【全平台】中规中矩，如果编辑要钱，虽说是跨平台，卸之
 * uu 加速器 免费学术资源没有 github 加速，差评
-* verycapture【win】 一款截图软件，感觉界面和操作不太适合我
+* verycapture【win】一款截图软件，感觉界面和操作不太适合我
 * webviewdebug
 * [flowlauncher](https://www.flowlauncher.com/docs/) 作为一款启动器 有点儿卡
 
-## 已出局
+* pear-rec 录屏软件 至少我在 windows 上体验不佳
+* [水豚鼠标助手](https://shuitunapp.com/) - 鼠标换肤/屏幕画笔/放大镜/聚光灯/屏幕放大/倒计时/白板 不太好用
+
+## 不再犹豫
 
 * 网易炉石官方插件 随之国服没了已经落幕
 * 录猎 不好用
@@ -945,15 +948,15 @@ not
 * Dawn Launcher 不好用
 * EncryptoforWin 厂商专注 mac 已经不更新了
 * listen1【mac】 2023 年初好多歌曲都不能播放了，无奈放弃
-* LocalSend-1.8.0-windows 搜不到设备，不好用
+* LocalSend 局域网文件传输，但是总不好用
 * MQTT.FX 很久没更新了，淘汰
-* OfficeBox 官方绿色版v_3.1.2 颜值太低且功能不强大，差评
+* OfficeBox 官方绿色版 颜值太低且功能不强大，差评
 * OneAuth 【Win 商店版】需要先登录的二步验证，差评
 * Parallels desktop 属于买断制，新版本不能用，啥玩意，再也不买了
 * Parallels Toolbox 收费就算了，功能还行
 * PDF Shaper Professional v13.3 只有些页面功能而已
-* QOwnNotes【win mac linux】 不好用，淘汰
-* StrokesPlus.net_Portable_0.5.7.4【win】 不好用，太复杂了
+* QOwnNotes 【win mac linux】不好用，淘汰
+* StrokesPlus.net 【win】 一款鼠标手势软件，可是我认为不好用，太复杂了
 * Transmission【win mac linux】 只能下载 bt 种子，淘汰
 * Typora 没有想象中强大，的导出 pdf 带目录功能，且还有有同类免费软件可以替代，但是不更新了，不如 vscode + 插件
 * UGit 腾讯 git 代码客户端，就是感觉不好用

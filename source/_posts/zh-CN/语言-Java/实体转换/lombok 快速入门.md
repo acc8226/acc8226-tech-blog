@@ -1,5 +1,5 @@
 ---
-title: 0. lombok 快速入门
+title: lombok 快速入门
 date: 2022-08-18 15:15:20
 updated: 2022-08-18 15:15:20
 categories:

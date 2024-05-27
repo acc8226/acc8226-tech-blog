@@ -1,5 +1,7 @@
 ---
-title: JavaScript-对象入门使用-JSON
+title: JavaScript 使用 JSON 对象
+date: 2024-01-01 21:50:28
+updated: 2024-05-26 21:50:28
 categories:
   - 语言
   - JavaScript
@@ -8,11 +10,11 @@ tags: js
 
 JavaScript 对象表示法（JSON）是用于将结构化数据表示为 JavaScript 对象的标准格式，通常用于在网站上表示和传输数据
 
-### 什么是 JSON
+## 什么是 JSON
 
 [JSON](https://developer.mozilla.org/en-US/docs/Glossary/JSON "JSON: JavaScript Object Notation (JSON) is a data-interchange format.  Although not a strict subset, JSON closely resembles a subset of JavaScript syntax. Though many programming languages support JSON, JSON is especially useful for JavaScript-based apps, including websites and browser extensions.") 是一种按照JavaScript对象语法的数据格式，这是 [Douglas Crockford](https://en.wikipedia.org/wiki/Douglas_Crockford) 推广的。虽然它是基于 JavaScript 语法，但它独立于JavaScript，这也是为什么许多程序环境能够读取（解读）和生成 JSON。
 
-JSON可以作为一个对象或者字符串存在，前者用于解读 JSON 中的数据，后者用于通过网络传输 JSON 数据。 这不是一个大事件——JavaScript 提供一个全局的 可访问的 [JSON](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON) 对象来对这两种数据进行转换。
+JSON 可以作为一个对象或者字符串存在，前者用于解读 JSON 中的数据，后者用于通过网络传输 JSON 数据。 这不是一个大事件——JavaScript 提供一个全局的 可访问的 [JSON](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON) 对象来对这两种数据进行转换。
 
 一个 JSON 对象可以被储存在它自己的文件中，这基本上就是一个文本文件，扩展名为 `.json`， 还有 [MIME type](https://developer.mozilla.org/en-US/docs/Glossary/MIME_type "MIME type: A MIME type (now properly called "media type", but also sometimes "content type") is a string sent along with a file indicating the type of the file (describing the content format, for example, a sound file might be labeled audio/ogg, or an image file image/png).") 用于 `application/json`.
 
@@ -50,6 +52,8 @@ JSON可以作为一个对象或者字符串存在，前者用于解读 JSON 中�
 }
 ```
 
+<!-- more -->
+
 JSON 数组
 前面我们已经说过，我们已经可以推测出 JSON 对象就是基于 JavaScript 对象，而且这几乎是正确的“——我们说几乎正确的原因是数组对象也是一种合法的 JSON 对象，例如：
 
@@ -78,7 +82,7 @@ JSON 数组
 ]
 ```
 
-#### 其他注意事项
+### 其他注意事项
 
 * JSON 是一种纯数据格式，它只包含属性，没有方法。
 * JSON 要求有两头的 { } 来使其合法。最安全的写法是有两边的括号，而不是一边。
@@ -88,8 +92,8 @@ JSON 数组
 
 ## 对象和文本间的转换
 
-* [parse()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse): 以文本字符串形式接受JSON对象作为参数，并返回相应的对象。。
-* [stringify()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify): 接收一个对象作为参数，返回一个对应的JSON字符串。
+* [parse()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse): 以文本字符串形式接受 JSON 对象作为参数，并返回相应的对象。。
+* [stringify()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify): 接收一个对象作为参数，返回一个对应的 JSON 字符串。
 
 parse举例:
 
@@ -102,10 +106,9 @@ console.log(obj.count);
 
 console.log(obj.result);
 // expected output: true
-
 ```
 
-stringify举例:
+stringify 举例:
 尝试将下面的代码输入您的浏览器 JS 控制台来看看会发生什么：
 
 ```js
@@ -118,7 +121,7 @@ myString
 ### JSON.parse(text[, reviver]) 语法
 
 text
-要被解析成 JavaScript 值的字符串，关于JSON的语法格式,请参考：JSON。
+要被解析成 JavaScript 值的字符串，关于 JSON 的语法格式,请参考：JSON。
 reviver 可选
 转换器, 如果传入该参数(函数)，可以用来修改解析生成的原始值，调用时机在 parse 函数返回之前。
 
@@ -199,5 +202,4 @@ console.log(restoredSession);
 
 ## 参考
 
-使用JSON
-<https://developer.mozilla.org/zh-CN/docs/Learn/JavaScript/Objects/JSON>
+使用 JSON <https://developer.mozilla.org/zh-CN/docs/Learn/JavaScript/Objects/JSON>

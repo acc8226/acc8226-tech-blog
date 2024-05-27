@@ -67,6 +67,8 @@ console.log("Fifteen is " + (a + b) + " and\nnot " + (2 * a + b) + ".")
 // not 20."
 ```
 
+<!-- more -->
+
 使用模板字符串, 可以使用语法糖让类似功能的实现代码更具可读性:
 
 ```js

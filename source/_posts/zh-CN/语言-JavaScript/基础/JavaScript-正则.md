@@ -60,6 +60,8 @@ document.write(!reg.test('史飞机a周'));
 3.CJK 标点符号
 范围：\u3000-\u303F
 
+<!-- more -->
+
 ## 参考
 
 JavaScript 正则表达式 | 菜鸟教程

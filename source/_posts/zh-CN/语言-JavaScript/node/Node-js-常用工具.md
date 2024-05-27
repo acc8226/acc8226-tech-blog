@@ -70,6 +70,8 @@ console.log(util.inspect(obj))
 console.log(util.inspect(obj, true))
 ```
 
+<!-- more -->
+
 运行结果是：
 
 ```js

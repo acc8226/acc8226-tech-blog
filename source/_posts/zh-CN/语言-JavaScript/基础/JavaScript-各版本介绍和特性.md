@@ -83,6 +83,8 @@ Netscape Navigator 4.0在**1997年6月11日**发布，它是是支持JavaScript�
 *   [String.prototype.slice()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/slice "slice() 方法提取一个字符串的一部分，并返回一新的字符串。")
 *   [String.prototype.substr()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/substr "substr() 方法返回一个字符串中从指定位置开始到指定字符数的字符。")
 
+<!-- more -->
+
 ### 新增的操作符
 
 * [delete](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete)

@@ -58,6 +58,8 @@ foo('outside');  // TypeError: foo is not a function
 }
 ```
 
+<!-- more -->
+
 ## break
 
 终止当前的循环，switch 或 label 语句，使程序跳到下一个语句执行。

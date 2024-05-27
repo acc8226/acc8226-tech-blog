@@ -59,6 +59,8 @@ console.log(a, b); // 抛出ReferenceError。
 
 由于这三个差异，未能声明变量将很可能导致意想不到的结果。因此，**建议始终声明变量，无论它们是在函数还是全局作用域内**。 而且，在 ECMAScript 5 [严格模式](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Strict_mode)下，分配给未声明的变量会引发错误。
 
+<!-- more -->
+
 ### 变量提升
 
 由于变量声明（以及其他声明）总是在任意代码执行之前处理的，所以在代码中的任意位置声明变量总是等效于在代码开头声明。这意味着变量可以在声明之前使用，这个行为叫做“hoisting”。“hoisting”就像是把所有的变量声明移动到函数或者全局代码的开头位置。

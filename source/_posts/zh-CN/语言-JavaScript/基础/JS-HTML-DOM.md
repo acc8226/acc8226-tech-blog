@@ -84,7 +84,7 @@ HTML 事件的例子：
 
 HTML DOM 允许您使用 JavaScript 来向 HTML 元素分配事件：
 
-```xml
+```html
 <!DOCTYPE html>
 <html>
 
@@ -176,17 +176,15 @@ nodeName : 节点的名称
 nodeValue ：节点的值
 nodeType ：节点的类型
 
-```html
-<script>
-  // 添加新元素，您必须首先创建该元素（元素节点)
-  var para = document.createElement("p")
-  var node = document.createTextNode("This is new.")
-  para.appendChild(node)
+```js
+// 添加新元素，您必须首先创建该元素（元素节点)
+var para = document.createElement("p")
+var node = document.createTextNode("This is new.")
+para.appendChild(node)
 
-  // 然后向一个已存在的元素追加该元素。
-  var element = document.getElementById("div1")
-  element.appendChild(para)
-</script>
+// 然后向一个已存在的元素追加该元素。
+var element = document.getElementById("div1")
+element.appendChild(para)
 ```
 
 ### 删除已有的 HTML 元素
