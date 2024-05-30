@@ -24,26 +24,24 @@ categories: 我的创作
 * 内容为王
 * 是否适配了平板, 除非缺你不可
 * 一般互联网大厂推出的 App 都不会太差
+* 游戏类的 App 而言一般都不太用关心适配, 可理解为一个放大版的手机
 
 * [抖音](https://sj.qq.com/appdetail/com.ss.android.ugc.aweme)
 * [西瓜视频](https://sj.qq.com/appdetail/com.ss.android.article.video)
 * [哔哩哔哩 HD](https://sj.qq.com/appdetail/tv.danmaku.bilibilihd)
 * 央视影音 HD
-* [腾讯视频](https://sj.qq.com/appdetail/com.tencent.qqlive) 通用版也适配了平板
+* [腾讯视频](https://sj.qq.com/appdetail/com.tencent.qqlive)
 * [爱奇艺 PAD](https://sj.qq.com/appdetail/com.qiyi.video.pad)
 * [WPS](https://sj.qq.com/appdetail/cn.wps.moffice_eng) 可以做到 Office 文档和 PDF 通吃
 * [QQ 音乐 HD](https://sj.qq.com/appdetail/com.tencent.qqmusicpad)
 * [阿里云盘](https://sj.qq.com/appdetail/com.alicloud.databox)
+* [Edge](https://sj.qq.com/appdetail/com.microsoft.emmx)
 
-更多待尝试：
+已过时
 
-游戏类的 App 而言一般都不太用关心适配, 可理解为一个放大版的手机。
+* Flipboard HD 中国版 不再更新
+* 阅读星 Pro  Pad 版本的几年都没更新了 是阅读必备神器, 能读取各种格式的阅读格式文件。
 
-Flipboard HD 中国版 （红板报）
-尝试了网易新闻等各种新闻 App, 可惜没做适配, 好不容易找个了可用的
-
-阅读星 Pro
-这是手机版的, Pad 版本的几年都没更新了, 但是不影响使用, 是阅读必备神器, 能读取各种格式的阅读格式文件。
 
 为了获得专业的**阅读 Pdf **体验, 可选择**Adobe Acrobat**, 这款 App 是通用版, 平板也做了适配。
 
@@ -51,15 +49,13 @@ Flipboard HD 中国版 （红板报）
 
 QQ HD 不知道现在是否还在更新
 
-如果你想同步手机通讯录, 可以选择 **QQ 同步助手**
+如果你想同步手机通讯录, 可以选择 [QQ 同步助手](https://sj.qq.com/appdetail/com.tencent.qqpim)
 
 泰捷视频(免费看 1080p) 这款 App, 非常好用, 其他视频 App 都需要开会员
 
 [VLC](https://www.videolan.org/vlc/download-android.html) (可倍速播放视频)
 
-如果你想**免费看电影** 目前热门高清那种, 可以选择 **百度云** (T喵的没做适配), 里面有一个 *离线下载* 功能, 你可以从类似电影天堂的网站找到并添加加下载地址(还支持磁力链), 不出意外十秒就能下载下来, 然后点击播放啦!
-
-![百度云](https://upload-images.jianshu.io/upload_images/1662509-3651649a79dfee81.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+如果你想**免费看电影** 目前热门高清那种, 可以选择 pikpak, 里面有一个 *离线下载* 功能, 你可以从类似电影天堂的网站找到并添加加下载地址(还支持磁力链), 不出意外十秒就能下载下来, 然后点击播放啦!
 
 ## 手机-必备
 
@@ -380,21 +376,7 @@ not
 
 ## 16. 浏览器
 
-[firefox 火狐浏览器](https://firefox.en.uptodown.com/android)很好，期待将来支持更多拓展
-
-[edge](https://sj.qq.com/appdetail/com.microsoft.emmx) 还是可以的
-
-可选
-
-* [360 浏览器](https://sj.qq.com/appdetail/com.qihoo.browser) 安全第一位，但是只要不要慌，陌生的东西一定不要点
-
-not
-
-* [UC 浏览器](https://sj.qq.com/appdetail/com.UCMobile) 有广告 虽免流也要 1 天 1 元呢
-* [QQ 浏览器](https://sj.qq.com/appdetail/com.tencent.mtt) 有广告
-* [狐猴浏览器](https://sj.qq.com/appdetail/com.lemurbrowser.exts) 感觉不完善
-* kiwi 浏览器 一般般，显示国家图片的插件而且不能用，虽然说支持谷歌插件没错
-* [Google Chrome](https://sj.qq.com/appdetail/com.android.chrome) 不太适合国内环境
+[firefox 火狐浏览器](https://firefox.en.uptodown.com/android)
 
 ## 其他
 

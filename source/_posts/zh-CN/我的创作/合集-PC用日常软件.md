@@ -45,72 +45,22 @@ Firefox 可作为有效补充，由于其出色的播放视频的稳定性。且
 * 【mac AppStore 版】[The Unarchiver](https://theunarchiver.com/)或者也可以直接下载并使用[安装包](https://dl.devmate.com/com.macpaw.site.theunarchiver/TheUnarchiver.dmg) | [软件介绍](https://www.iplaysoft.com/the-unarchiver.html)
 * linux 系统一般自带 tar 或 zip 命令。
 
-not
-
-* 【win 安装版】[Bandizip](https://www.bandisoft.com/) 虽然智能解压和压缩文件预览功能很好用，但是新版本偶尔有广告弹窗
-
 #### 4. 输入法
 
-如果你是 Win11 用户，自带的微软输入法已经很不错了。
+* 【win mac】[微信输入法](https://z.weixin.qq.com/) 特有云粘贴板功能，现已支持跨设备粘贴文字和图片
+* [搜狗输入法 for linux](https://shurufa.sogou.com/linux)
 
-额外的，我会推荐【win mac】[微信输入法](https://z.weixin.qq.com/)，特有云粘贴板功能，现已支持跨设备粘贴文字和图片
+### 1. 工具类
 
-or
+#### 1. 鼠标手势
 
-* QQ 输入法 几年没更新了，缺点词库有点滞后，优点是界面非常清爽
-* [RIME 小狼毫输入法](https://rime.im/) 不到 10M 的体积非常清爽，对硬件配置差点的电脑很友好，但是受众少，维护方面可能不足，适合喜欢折腾输入法的用户
-
-not
-
-* 手心输入法  已经几年没有再更新了且对 4G 内存的 win 7 而言有点卡
-* 紫光华宇输入法 对 4G 内存的 win 7 而言有点卡
-* 百度输入法 不想用新版本但我找不到旧版本，差评
-* 搜狗的弹窗我就不多说了，另外[搜狗输入法智慧版](https://pinyin.sogou.com/zhihui/) 附带斗图功能，非常臃肿
-
-- - -
-
-mac 平台
-
-【mac win】[微信输入法](https://z.weixin.qq.com/) 特有云粘贴板功能。
-
-not
-
-* [mac 版搜狗输入法](https://pinyin.sogou.com/mac/) 和微信输入法比起来没啥优势
-* mac 版百度输入法，曾经卡过一次，体验不太好，颜值不过可以
-
-- - -
-
-linux 平台
-
-[搜狗输入法 for linux](https://shurufa.sogou.com/linux)
-
-百度和讯飞都有支持，据说还有个 ibus。
-
-### 1.工具类
-
-#### 1.鼠标手势
-
-首推【绿色版】的 [FastGestures 鼠标/触控板/屏手势](https://fg.zhaokeli.com/)，如果提示 dll 缺失，则可以通过使用安装版的进行解决。
-
-否则可以换成 【win 免费 安装版】WGestures 1 或者【收费 安装版 win mac】[WGestures 2](https://www.yingdev.com/projects/wgestures2) 鼠标手势
-
-这绝对是效率神器。
-
-- - -
-
-mac 平台
-
-【mac】betterAndBetter 免费且比目前付费的 wg 2 功能更加强大，还自带 mac 上需要的翻转鼠标功能，于是我卸载了 Scroll Reverser。
-
-- - -
-
-linux 平台
-
-由于 easystroke 的作者已经停止维护，并推荐了更加现代的 [jersou/mouse-actions](https://github.com/jersou/mouse-actions)
+* 【绿色版】的 [FastGestures 鼠标/触控板/屏手势](https://fg.zhaokeli.com/)，如果提示 dll 缺失，则可以通过使用安装版的进行解决。
+* 【mac】betterAndBetter 免费且比目前付费的 wg 2 功能更加强大，还自带 mac 上需要的翻转鼠标功能，于是我卸载了 Scroll Reverser。
+* [jersou/mouse-actions for linux](https://github.com/jersou/mouse-actions)
 
 #### 2. 键盘增强
 
-【win】【自制】[捷键](https://atomgit.com/acc8226/jiejian/tags?tab=release)
+【win】[捷键](https://atomgit.com/acc8226/jiejian/tags?tab=release)
 
 or
 
@@ -124,97 +74,25 @@ mac 平台
 
 #### 3. 截图
 
-【win】[PixPin](https://pixpinapp.com/) 顺便期待 mac 版的推出
-
-or
-
-[sharex](https://getsharex.com/) 留存，可以截图和简单编辑图还有 OCR 识别
-
-not
-
-* 【win mac】Snipaste <https://zh.snipaste.com/> 免费版不支持长截图
-* 【win】【新版收费】 FSCapture
-* 【win】picpick_portable 说不上哪不好
-
-- - -
-
-mac 平台
-
-我目前一直 Snipaste。其实我一直在等待 PixPin mac 版发布。
-
-not
-
-* 单独的 ishot 免费版有水印，且免费版不能贴图
-* 单独的 Snipaste 免费版功能有限
-
-- - -
-
-linux 平台
-
-自带 或者 [flameshot-org/flameshot](https://github.com/flameshot-org/flameshot) Powerful yet simple to use screenshot software
+* 【win mac】[PixPin](https://pixpinapp.com/) 顺便期待 mac 版的推出
+* 【mac】[Snipaste](https://zh.snipaste.com/)
+* liunx 可以使用系统自带 或者 [flameshot-org/flameshot](https://github.com/flameshot-org/flameshot) Powerful yet simple to use screenshot software
 
 #### 4. 护眼
 
-1. 【win mac】【安装版】flux <https://justgetflux.com/>
-2. EyesGuard 定时提醒眼睛休息 ~~由于作者说微软商店不再提供更新~~，所以还是去 github 下载最新版本
-<https://github.com/avestura/EyesGuard/releases/>
-
-EyesGuard 需要 .Net 4.8 以上，老款 win 7 只能选择 [FadeTop](http://www.fadetop.com/) 或者 eyerelax
+1. 【win mac】【安装版】f.lux <https://justgetflux.com/>
+2. EyesGuard 定时提醒眼睛休息 ~~由于作者说微软商店不再提供更新~~，所以还是去 [github](https://github.com/avestura/EyesGuard/releases/) 下载最新版本。注：EyesGuard 需要 .Net 4.8 以上，老款 win 7 只能选择 [FadeTop](http://www.fadetop.com/)
 
 - - -
 
 mac 平台
 
-1. 【mac win】依旧 flux <https://justgetflux.com/>
-2. 【appstore】一休 定时提醒
-
-not
-
-stretchly 图标每次突然弹出很突兀且选项太多了
+1. 【mac win】依旧 [f.lux](https://justgetflux.com/)
+2. 【appstore】一休 用于定时提醒
 
 #### 5. 下载
 
 【全平台 首选】[motrix](https://motrix.app/zh-CN/) | [下载页](https://motrix.app/zh-CN/download) 颜值高。支持下载 HTTP、FTP、BT、磁力链接等资源。即使 Github 资源也不在话下
-
-或者
-
-【win linux】[文件蜈蚣](http://www.filecxx.com/zh_CN/index.html) 免费版功能也够，提供插件可以嗅探网页中的视频
-
-maybe
-
-【全平台】视频下载工具 lux
-<https://github.com/iawia002/lux/releases/download/v0.22.0/lux_0.22.0_Windows_x86_64.zip>
-
-搭配 ffmpeg
-<https://www.gyan.dev/ffmpeg/builds/packages/ffmpeg-6.1.1-essentials_build.7z>
-
-maybe
-
-【浏览器拓展】[猫抓(cat catch) - 猫抓(cat catch)文档](https://o2bmm.gitbook.io/cat-catch/)
-
-maybe
-
-【全平台】[Free Download Manager](https://www.freedownloadmanager.org/zh/) (**FDM**) 是一款经典免费纯粹的下载软件，它开源无广告，界面简洁清爽，支持 BT、FTP 支持批量下载、断点续传、捕获 HTTP 链接、FTP 目录浏览等功能，还跨平台支持 Windows 与 macOS，可以说是一款相当优秀的免费全能型下载工具。
-
-not
-
-* 【win】VidJuice UniTube 可以图形化下载视频和音频很好用，就是付费啦
-* [Downie 4 ](https://www.iplaysoft.com/downie.html) 超简单好用的视频下载工具神器 就是付费
-* 【win mac】迅雷<https://dl.xunlei.com/> 有广告，但是很多资源都挂在迅雷上了，只有它才有加速效果。
-* 【win】qbittorrent_4.5.5 不好用
-* [IDM](https://www.internetdownloadmanager.com/), 功能还行但收费。
-* neat download manager 虽然体积小，但是外观不如 fdm。也不支持磁力。
-
-- - -
-
-mac 平台
-
-motrix
-
-not
-
-* downie 收费
-* vdown 暂时不完善
 
 #### 6. 看图
 
@@ -627,6 +505,8 @@ not
 ### 4. TTS 文字转语音软件
 
 【win】[tts-vue: 🎤 微软语音合成工具](https://gitee.com/LGW_space/tts-vue)，使用 Electron + Vue + ElementPlus + Vite 构建，将文字转为语音 MP3。
+
+注：edge 其实也有网页 和 pdf 朗读能力，也能好用，如果不需要转语言的话还是很有用的。
 
 ### 5. 文件搜索
 
