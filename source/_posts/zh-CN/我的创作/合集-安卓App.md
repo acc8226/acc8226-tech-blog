@@ -154,6 +154,7 @@ not
 
 * [少年得到](https://sj.qq.com/appdetail/com.dedao.juvenile) 更适合中学生
 * [凤凰 FM](https://sj.qq.com/appdetail/com.ifeng.fhdt) 偶尔闪退
+* 喜马拉雅 有些广告
 
 ### 7. 倒数日
 
