@@ -1,5 +1,5 @@
 ---
-title: 工具 OCR 软件
+title: OCR 软件 推荐
 date: 2022-11-05 13:45:00
 updated: 2024-05-31 17:44:23
 categories:

@@ -185,8 +185,8 @@ mac 平台
 
 ### 6.教育类
 
-1. [【全平台】每日英语听力 ](https://www.eudic.net/v4/en/app/ting)
-2. [【全平台】欧路词典](https://www.eudic.net/v4/en/app/download)
+1. 【全平台】[每日英语听力 ](https://www.eudic.net/v4/en/app/ting)
+2. 【全平台】[欧路词典](https://www.eudic.net/v4/en/app/download)
 
 ### 7.远程类
 
@@ -482,17 +482,17 @@ https://www.iplaysoft.com/veracrypt.html
 
 bab 可以开启该功能
  
-【备用】[【mac】scrollreverser](https://pilotmoon.com/scrollreverser/)
+【备用 mac】[scrollreverser](https://pilotmoon.com/scrollreverser/)
 
 #### 电源管理
 
-[【mac】AlDente - 负载限制器](https://apphousekitchen.com/)
+【mac】[AlDente - 负载限制器](https://apphousekitchen.com/)
 
 ### 21.windows 也要有
 
 #### 空格预览文件
 
-[【win】quicklook](https://github.com/QL-Win/QuickLook/releases)
+【win】[quicklook](https://github.com/QL-Win/QuickLook/releases)
 
 not
 
@@ -500,7 +500,7 @@ Seer 收费就算了
 
 #### WizMouse
 
-[【win】WizMouse](https://antibody-software.com/wizmouse) 一款鼠标增强工具
+【win】[WizMouse](https://antibody-software.com/wizmouse) 一款鼠标增强工具
 
 特点：
 
@@ -515,8 +515,6 @@ Seer 收费就算了
 
 ### 00. 虚拟机
 
-2024/5/15 消息，VMware 做出了一个小小的但很有诚意的让步：Workstation Pro 和 Fusion Pro 产品现在起将免费供个人用户使用。
-
 * 【mac 首选】[VMware Fusion Pro for Mac](https://support.broadcom.com/group/ecx/productdownloads?subfamily=VMware+Fusion) 可供基于 Intel CPU 或 Apple M 系列处理器的 Mac 电脑使用
 * 【win 首选】[VMware Workstation Pro for PC](https://support.broadcom.com/group/ecx/productdownloads?subfamily=VMware+Workstation+Pro)
 
@@ -526,7 +524,7 @@ Seer 收费就算了
 
 not
 
-* 【mac 付费】[Parallels](https://www.parallels.cn/) 买断只能买一个大版本
+【mac 付费】[Parallels](https://www.parallels.cn/) 买断只能买一个大版本，差评
 
 ### 01. 网盘搭建
 
@@ -534,20 +532,6 @@ not
 
 ### 02. 网络加速
 
-【首推 全平台】[protonvpn](https://protonvpn.com/) 某外媒推荐排名第一的免费魔法平台。软件代码开源，无限免费杯，免费版仅供一台设备，但是可以注册多个邮箱号
-
-自己搭代理 缺点是无法限制每月总流量
-
-* 【server】shadowsocks-rust- A Rust port of shadowsocks <https://github.com/* shadowsocks/shadowsocks-rust>
-* 【win】shadowsocks-windows- A C# port of shadowsocks <https://github.com/* shadowsocks/shadowsocks-windows>
-* 【mac】ShadowsocksX-NG- Next Generation of ShadowsocksX <https://github.com/* shadowsocks/ShadowsocksX-NG>
-* 【android】shadowsocks-android- A shadowsocks client for Android <https://github.com/shadowsocks/shadowsocks-android>
-
-not
-
-* AdGuard VPN 每月 3G 貌似不够用
-* ClearVPN 免费版貌似废了
-* hide.me 不可用
 
 ### 03. 内网转发
 
@@ -557,7 +541,7 @@ not
 
 **提醒：不听不信，谨防陌生人诈骗！！！**
 
-* 【全平台】 [scrcpy](https://github.com/Genymobile/scrcpy/releases)  开源免费（投屏/录屏/免 Root）
+* 【全平台】 [scrcpy](https://github.com/Genymobile/scrcpy/releases) 开源免费（投屏/录屏/免 Root）
 * 【Win & Mac & Android & iOS】[ApowerMirror](https://www.apowersoft.cn/phone-mirror)
 * 【备用】乐播投屏
 

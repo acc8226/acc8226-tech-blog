@@ -21,7 +21,7 @@ categories:
 
 ### win11 底部任务栏靠左
 
-![win11底部任务栏靠左](./imgs/Win%E6%95%99%E7%A8%8B%E5%8A%A0%E9%A4%90-%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/win11%E5%BA%95%E9%83%A8%E4%BB%BB%E5%8A%A1%E6%A0%8F%E9%9D%A0%E5%B7%A6.png)
+![win11 底部任务栏靠左](./imgs/Win%E6%95%99%E7%A8%8B%E5%8A%A0%E9%A4%90-%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/win11%E5%BA%95%E9%83%A8%E4%BB%BB%E5%8A%A1%E6%A0%8F%E9%9D%A0%E5%B7%A6.png)
 
 ### 查看已知网络的密码
 

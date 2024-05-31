@@ -108,6 +108,7 @@ not
 * [京东读书](https://sj.qq.com/appdetail/com.jd.app.reader) 送了影响力 和 乌合之众几本书，可以看一段时间
 * [番茄免费小说](https://sj.qq.com/appdetail/com.dragon.read) 有的想看的书可以免费离线下载，很好，很适合离线用
 * [今日头条](https://sj.qq.com/appdetail/com.ss.android.article.news)，安卓版的有广告。 话说 iPhone 的付费版的倒是可以考虑。我一般很少关注外界，这得改呀，央视 315 这种节目就很好
+* 网易蜗牛阅读 每天可以免费看 1 个小时任何付费书籍
 
 not
 
@@ -171,9 +172,8 @@ not
 可选
 
 * [西瓜视频](https://sj.qq.com/appdetail/com.ss.android.article.video) 广告不多 还能创作
-* bilibili 国际版 [下载地址一](https://apkpure.com/cn/bilibili-cn/com.bilibili.app.in/download) | [下载地址二](https://com-bilibili-app-in.en.uptodown.com/android) 因为清爽呀
-* [es 文件浏览器](http://www.estrongs.com/) 我称之为万能播放器，可以通过 alist 挂载的网盘和本身具备音视频播放能力呢，特别是搭配 nas 或服务器使用，除了有广告要开会员
-* [NewPipe](https://newpipe.net/)- a free YouTube client
+* bilibili 国际版 [下载地址一](https://apkpure.com/cn/bilibili-cn/com.bilibili.app.in/download) | [下载地址二](https://com-bilibili-app-in.en.uptodown.com/android) 因为清爽
+* [es 文件浏览器](http://www.estrongs.com/) 可以当做播放器，可以通过 alist 挂载的网盘和本身具备音视频播放能力呢，特别是搭配 nas 或服务器使用，除了有广告要开会员
 
 not
 
@@ -190,6 +190,7 @@ not
 * [优酷视频](https://sj.qq.com/appdetail/com.youku.phone)
 * [腾讯视频](https://sj.qq.com/appdetail/com.tencent.qqlive)
 * [快手](https://sj.qq.com/appdetail/com.smile.gifmaker) 不太喜欢用
+* [NewPipe](https://newpipe.net/)- a free YouTube client 不太好用
 
 ## 3. 工具类【常用】
 
@@ -251,20 +252,24 @@ not
 
 * [多邻国](https://sj.qq.com/appdetail/com.duolingo) 多国语言学习
 
-其实 [好看视频](https://sj.qq.com/appdetail/com.baidu.haokan) 也能学知识
+[好看视频](https://sj.qq.com/appdetail/com.baidu.haokan) 也能学知识
 
 可选
 
 * [每日音乐听力](https://sj.qq.com/appdetail/com.qianyan2.ting.en)
 * 拉勾教育
 * [小鹅通](https://sj.qq.com/appdetail/com.xiaoe.client)
-* [慕课网](https://sj.qq.com/appdetail/cn.com.open.mooc) 主打 IT 课程，且有一部分免费资源可以离线下载
-* [学堂在线](https://sj.qq.com/appdetail/com.xuetangx.mobile) 和 中国 MOOC 也都还行
-* [知乎知学堂](https://sj.qq.com/appdetail/com.zhihu.zhixuetang.android) 无广告
 * [知乎](https://sj.qq.com/appdetail/com.zhihu.android) 广告多但是可以做任务、
 * [LeetCode](https://sj.qq.com/appdetail/com.lingkou.leetcode) 学算法用 至少没广告
 * [牛客](https://sj.qq.com/appdetail/com.nowcoder.app.florida) 和上面提到的力扣网类似，面试 + 学算法
 * [稀土掘金](https://sj.qq.com/appdetail/com.daimajia.gold) 很清爽
+
+* [慕课网](https://sj.qq.com/appdetail/cn.com.open.mooc) 主打 IT 课程，且有一部分免费资源可以离线下载
+* [知乎知学堂](https://sj.qq.com/appdetail/com.zhihu.zhixuetang.android) 无广告
+* 希塞网
+* 51CTO
+* [学堂在线](https://sj.qq.com/appdetail/com.xuetangx.mobile) 和 中国 MOOC 也都还行
+* [中国大学 MOOC]
 
 not
 
@@ -341,7 +346,7 @@ not
 
 ## 12. 云端
 
-* [pikpak](https://mypikpak.com/zh-CN) 免费版只有 6G 空间，每天可以添加 3 个云下载任务。网页版建议使用油猴脚本可以做到免魔法登录，否则需要魔法登录后才能断掉。而手机版建议邮箱登录可正常使用
+[pikpak](https://mypikpak.com/zh-CN) 免费版只有 6G 空间，每天可以添加 3 个云下载任务。网页版建议使用油猴脚本可以做到免魔法登录，否则需要魔法登录后才能断掉。而手机版建议邮箱登录可正常使用
 
 可选
 
