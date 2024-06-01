@@ -468,5 +468,13 @@ baidu_analytics: ba33b029a738493af9be3f79736957d7
 # ======================= CDN Settings ======================== #
 # ============================================================= #
 vendors:
-  # if most of your visits come from China, please note that the CDNJS is blocked in some parts of China, don't use it as your CDN provider.
-  plugins: jsdelivr
+  internal: local
+  # 目前测试国内网络环境 cdnjs 好于 unpkg 好于 jsdelivr
+  plugins: custom
+  # Custom CDN URL
+  # For example:
+  # custom_cdn_url: https://cdn.jsdelivr.net/npm/${npm_name}@${version}/${minified} 举例 https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js jsdelivr
+  # custom_cdn_url: https://cdnjs.cloudflare.com/ajax/libs/${cdnjs_name}/${version}/${cdnjs_file} 举例 https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js cdnjs
+  # custom_cdn_url: https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/${cdnjs_name}/${version}/${cdnjs_file} 南科大
+  # 静态资源 Zstatic.net
+  custom_cdn_url: https://s4.zstatic.net/ajax/libs/${cdnjs_name}/${version}/${cdnjs_file}

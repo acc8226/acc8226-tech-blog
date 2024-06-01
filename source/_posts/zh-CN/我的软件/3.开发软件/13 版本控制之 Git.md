@@ -1,5 +1,5 @@
 ---
-title: 版本控制 Git 相关软件
+title: 版本控制之 Git 软件推荐
 date: 2022-12-13 14:16:00
 updated: 2023-02-16 20:31:00
 categories:
@@ -9,18 +9,17 @@ categories:
 
 ## 终端软件
 
-<https://git-scm.com/downloads>
+<https://git-scm.com/downloads> | [Git-for-windows 阿里源地址](https://registry.npmmirror.com/binary.html?path=git-for-windows/)
 
-我一般会下载便捷版。
+windows 平台我一般会下载便捷版。
 
 ## 图形化软件
 
 windows 环境下已经自带了 gitk，如果觉得还是不好使的话。Java 开发者使用的 ide 也有相应的支持，一般足够使用。
 
-### TortoiseGit【windows】【推荐】
+### 【windows 推荐】TortoiseGit
 
-TortoiseGit 和 windows 资源管理器有很好的集成
-[Download – TortoiseGit – Windows Shell Interface to Git](https://tortoisegit.org/download/)
+[TortoiseGit](https://tortoisegit.org/download/) 和 windows 资源管理器有很好的集成
 
 #### 使用 ppk 密钥
 
@@ -38,21 +37,24 @@ plink 介绍：plink 可以让我们直接在命令行制定好命令，然后�
 2. 右键空白处，选择新建快捷方式
 3. 选择 pageant 的位置，并按填入 ppk 的位置，例如 `"C:\Program Files\TortoiseGit\bin\pageant.exe" C:\Users\zhangsan\.ssh\id_rsa.ppk`
 
-这样系统每次启动后就会自动加载 ppk 了
+这样系统每次启动就会自动加载 ppk 了
 
 #### TortoiseGit 技巧 之 导出变更后的文件
 
 ![TortoiseGit 技巧 之 导出变更后的文件](https://upload-images.jianshu.io/upload_images/1662509-4bf5ccfaf3cb4115.gif?imageMogr2/auto-orient/strip)
 
-### GitHub Desktop【全平台】【备选】
+### GitHub Desktop【全平台】
 
 GitHub 官方客户端工具，可管理 git。
 
-### SourceTree【全平台】【备选】
+### SourceTree【全平台】
 
 Sourcetree | Free Git GUI for Mac and Windows
 <https://www.sourcetreeapp.com/>
 
-### smartgit【全平台】【备选】
+not
 
-付费不推荐。
+* 【win mac 付费】[Fork](https://fork.dev/) 自从用了小乌龟，还是不喜欢这种风格
+* 【全平台 付费】[GitKraken](https://www.gitkraken.com/) 付费才好用
+* 【全平台 付费】[SmartGit](https://www.syntevo.com/smartgit/) 付费不推荐
+* 【全平台】[Sublime Merge](https://www.sublimemerge.com/) 感觉不好用

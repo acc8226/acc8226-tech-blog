@@ -26,21 +26,10 @@ categories: 我的创作
 
 ### Web 构建工具
 
-#### Parcel
-
-[Parcel](https://parceljs.org/) 以其零配置和快速的构建速度而受到开发者的喜爱，适合快速开发。
-
-#### Turbo
-
-[Turbo](https://turbo.build/) - Turbo is an incremental bundler and build system optimized for JavaScript and TypeScript, written in Rust.
-
-#### Vite
-
-[Vite](https://cn.vitejs.dev/) - 下一代的前端工具链
-
-#### Webpack
-
-[Webpack](https://www.webpackjs.com/) 功能强大，适用于各种规模的前端项目，支持复杂的构建流程和优化。
+* [Parcel](https://parceljs.org/) 以其零配置和快速的构建速度而受到开发者的喜爱，适合快速开发。
+* [Turbo](https://turbo.build/) - Turbo is an incremental bundler and build system optimized for JavaScript and TypeScript, written in Rust.
+* [Vite](https://cn.vitejs.dev/) - 下一代的前端工具链
+* [Webpack](https://www.webpackjs.com/) 功能强大，适用于各种规模的前端项目，支持复杂的构建流程和优化。
 
 ### Java 应用构建工具
 
@@ -135,7 +124,7 @@ mac 平台
 
 vscode 插件推荐
 
-* [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
+[markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
 
 or
 
@@ -340,20 +329,11 @@ Redis is an in-memory database that persists on disk. The data model is key-valu
 
 ### Git
 
-macOS 和 linux 系统一般都自带 git, 如果想要体验最新版, 可以去[Git 官网](https://git-scm.com)下载体验。通常更推荐 [Git 阿里源地址](https://registry.npmmirror.com/binary.html?path=git-for-windows/)
+macOS 和 linux 系统一般都自带 git, 如果想要体验最新版, 可以去 [Git 官网](https://git-scm.com)下载体验。通常更推荐 [Git 阿里源地址](https://registry.npmmirror.com/binary.html?path=git-for-windows/)
 
-特别的如果是 windows 系统推荐搭配  [TortoiseGit – Windows Shell Interface to Git](https://tortoisegit.org/download/) 简称小乌龟。
+VSCode 和 IDEA 会自带 Git 功能。特别的如果是 windows 系统推荐搭配 [TortoiseGit](https://tortoisegit.org/download/) 简称小乌龟。
 
 不喜欢 TortoiseGit 的用户可以试试 【win mac】[Sourcetree](https://www.sourcetreeapp.com/)
-
-VSCode 和 IDEA 会自带简单操作 Git 的功能。
-
-not
-
-* 【win mac 付费】[Fork](https://fork.dev/) 自从用了小乌龟，还是不喜欢这种风格
-* 【全平台 付费】[GitKraken](https://www.gitkraken.com/) 付费才好用
-* 【全平台 付费】[SmartGit](https://www.syntevo.com/smartgit/) 且我不太喜欢用
-* 【全平台】[Sublime Merge](https://www.sublimemerge.com/) 感觉不好用
 
 ### SVN
 
@@ -482,7 +462,7 @@ PowerShell 是一种跨平台的任务自动化解决方案，由命令行 shell
 
 - - -
 
-[【win】MSYS2](https://www.msys2.org/) 可以当做一个包管理器 一个终端 还兼容 linux 命令，可以安装 c 编译器 gcc 等。
+【win】[MSYS2](https://www.msys2.org/) 可以当做一个包管理器 一个终端 还兼容 linux 命令，可以安装 c 编译器 gcc 等。
 
 ### 性能测试和分析
 
