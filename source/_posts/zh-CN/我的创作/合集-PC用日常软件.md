@@ -640,7 +640,6 @@ not
 * Parallels Toolbox 收费就算了，功能还行
 * PDF Shaper Professional v13.3 只有些页面功能而已
 * QOwnNotes 【win mac linux】不好用，淘汰
-* StrokesPlus.net 【win】 一款鼠标手势软件，可是我认为不好用，太复杂了
 * Transmission【win mac linux】 只能下载 bt 种子，淘汰
 * Typora 没有想象中强大，的导出 pdf 带目录功能，且还有有同类免费软件可以替代，但是不更新了，不如 vscode + 插件
 * UGit 腾讯 git 代码客户端，就是感觉不好用
