@@ -7,13 +7,12 @@ categories: 我的创作
 
 安全永远是第一要务。下载软件也尽量从官网下载，这样更安全，也避免从其他渠道下载到恶意软件。
 
-注：
-以下内容谨代表个人观点。
+注：以下内容谨代表个人观点。
 软件上尽量选择跨平台在搭配特定系统特有软件即可满足大部分使用场景。
 
 ## 日常
 
-### 必备
+### 0. 必备
 
 #### 1. 电脑管家
 
@@ -42,8 +41,8 @@ categories: 我的创作
 
 #### 1. 鼠标手势
 
-* 【绿色版】的 [FastGestures 鼠标/触控板/屏手势](https://fg.zhaokeli.com/)，如果提示 dll 缺失，则可以通过使用安装版的进行解决。
-* 【mac】betterAndBetter 免费且比目前付费的 wg 2 功能更加强大，还自带 mac 上需要的翻转鼠标功能，于是我卸载了 Scroll Reverser。
+* 【win 免费】WGestures 1 或者【win 付费】WGestures 2
+* 【mac】betterAndBetter 免费且比目前付费的 wg 2 功能更加强大，还自带 mac 上需要的翻转鼠标功能，于是我卸载了 Scroll Reverser
 * 【linux】[jersou/mouse-actions](https://github.com/jersou/mouse-actions)
 
 #### 2. 键盘增强
@@ -197,7 +196,7 @@ mac 平台
 
 ### 8.启动器
 
-【Win】自制的捷键
+【Win】[捷键](https://atomgit.com/acc8226/jiejian/tags?tab=release) 已经包含了该功能，使用 alt + 空格可以呼出
 
 备用
 

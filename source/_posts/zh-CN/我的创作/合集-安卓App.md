@@ -59,7 +59,9 @@ QQ HD 不知道现在是否还在更新
 
 ## 手机-必备
 
-评选标准：尽量挑选些无广告且小巧的 app，不推荐一些满大街的大厂出品 app
+以下观点谨代表个人当时在使用 app 后的主观个人意见，没有任何挤踩成分，只是可能不适合我个人使用。
+
+挑选原则：尽量挑选些无广告且小巧的 app，不推荐一些满大街的大厂出品 app。
 
 ### 0. 安全中心
 
@@ -67,9 +69,9 @@ QQ HD 不知道现在是否还在更新
 
 iOS 用户则必须安装其中一个，防诈骗和无良商家骗取钱财。
 
-[国家反诈中心 app](https://sj.qq.com/appdetail/com.hicorenational.antifraud)作为装机必备！！！
+[国家反诈中心](https://sj.qq.com/appdetail/com.hicorenational.antifraud) 作为装机必备！！！
 
-### 1. 认证
+### 1. 密码认证
 
 1. [Aegis Authenticator](https://getaegis.app/) | [下载地址](https://github.com/beemdevelopment/Aegis/releases)
 2. [QQ 安全中心](https://sj.qq.com/appdetail/com.tencent.token)
@@ -81,13 +83,13 @@ not
 * Bitwarden authenticator 目前还有待完善
 * [Google Authenticator](https://google-authenticator.en.softonic.com/android) 虽说是大厂，但是软件包体积稍大 且 国内云同步功能没法使用
 
-### 2. Bitwarden
+### 2. 密码管理-Bitwarden
 
 [Bitwarden](https://github.com/bitwarden/mobile/releases) 一款可以云端存储的密码管理器，也支持本地导入导出密码
 
-选择 fdroid 和 普通版均可。
+选择 f-droid 和 普通版均可。
 
-### 3. QQ 邮箱
+### 3. 邮件收发-QQ 邮箱
 
 [QQ 邮箱](https://sj.qq.com/appdetail/com.tencent.androidqqmail) 不好之处是有点广告
 
@@ -97,30 +99,34 @@ not
 
 ### 4. 阅读
 
-1. [静读天下](http://www.moondownload.com/download.html)
-2. [讯飞有声](https://sj.qq.com/appdetail/com.iflytek.readassistant) 难得的免费收听时长的可听本地图书和 pdf 的 app，这可能是目前的一个较好的方案
+1. [FBReader](https://fbreader.org/android#download) 阅读器：一款本地电子书阅读器，同时也支持 pdf
+2. [简讯](https://sj.qq.com/appdetail/com.tipsoon.android) 浅阅读：一款主张利用极短的碎片时间涉猎全行业领域的浅阅读产品
+3. [今日热榜](https://tophub.today/app) 读新闻：资源感觉不太丰富
 
-我还在寻找一款可以订阅 rss 的好用 app
+rss 阅读器：暂定为 [Agr Reader](https://www.agrreader.xyz/) ，但它对 it 之家的解析不够友好
 
 可选
 
-* [微信读书](https://sj.qq.com/appdetail/com.tencent.weread) 除了现在很多内容收费了
+* [静读天下](http://www.moondownload.com/download.html) 免费版有广告
+
 * [京东读书](https://sj.qq.com/appdetail/com.jd.app.reader) 送了影响力 和 乌合之众几本书，可以看一段时间
 * [番茄免费小说](https://sj.qq.com/appdetail/com.dragon.read) 有的想看的书可以免费离线下载，很好，很适合离线用
 * [今日头条](https://sj.qq.com/appdetail/com.ss.android.article.news)，安卓版的有广告。 话说 iPhone 的付费版的倒是可以考虑。我一般很少关注外界，这得改呀，央视 315 这种节目就很好
-* 网易蜗牛阅读 每天可以免费看 1 个小时任何付费书籍
+* [微信读书](https://sj.qq.com/appdetail/com.tencent.weread) 除了现在很多内容收费了
+* [网易蜗牛阅读](https://sj.qq.com/appdetail/com.netease.snailread) 每天可以免费看 1 个小时付费书籍
 
 not
 
 * [阅读](https://github.com/gedoor/legado/releases) 不支持 mobi 格式
-* [今日热榜](https://tophub.today/app) 资源感觉不太丰富
-* 微软 start 用于看新闻但不好用
+* 安卓平台的 feeder 不好用只能做备选，看来 rss 阅读器还是苹果平台的 reeder
+
+* [QQ 阅读](https://sj.qq.com/appdetail/com.qq.reader) 有广告
 * [多看阅读](https://sj.qq.com/appdetail/com.duokan.reader) 书太贵
 * [百度阅读](https://sj.qq.com/appdetail/com.baidu.yuedu) 没起来
-* [QQ 阅读](https://sj.qq.com/appdetail/com.qq.reader) 有广告
 * [起点读书](https://sj.qq.com/appdetail/com.qidian.QDReader) 可能有些独家资源
 * [七猫免费小说](https://sj.qq.com/appdetail/com.kmxs.reader) 免费看小说但是有广告
-* 安卓平台的 feeder 不好用只能做备选，看来 rss 阅读器还是苹果平台的 reeder
+
+* 微软 start 看新闻用，但不好用
 
 ### 5. 音乐
 
@@ -129,8 +135,9 @@ not
 
 可选
 
-1. k 歌软件暂定 [全民 K 歌](https://sj.qq.com/appdetail/com.tencent.karaoke)
+1. [全民 K 歌](https://sj.qq.com/appdetail/com.tencent.karaoke) k 歌软件暂定它了
 2. [洛雪音乐助手](https://github.com/lyswhut/lx-music-mobile/releases/) 作为 Spotify 的替代品，我一般很少用，因为同步歌单是个问题
+3. [咪咕音乐](https://sj.qq.com/appdetail/cmccwm.mobilemusic) 的极速版可以免费听 1 年，但是之后呢
 
 not
 
@@ -138,32 +145,32 @@ not
 * [网易云](https://sj.qq.com/appdetail/com.netease.cloudmusic) 广告太多且现在太繁杂了
 * [酷狗](https://sj.qq.com/appdetail/com.kugou.android) 和 酷我 差一点意思
 * [爱音乐](https://sj.qq.com/appdetail/com.gwsoft.imusic.controller) 不好用，现在周杰伦的歌都没了，也不知道以前有没有
-* [咪咕音乐](https://sj.qq.com/appdetail/cmccwm.mobilemusic) 的极速版可以免费听 1 年，但是之后呢，不符合我白嫖原则
 
 ### 6. 听书 和 FM
 
 1. [得到](https://sj.qq.com/appdetail/com.luojilab.player) 非常好
-2. [帆书](https://sj.qq.com/appdetail/io.dushu.fandengreader) 有时候可以蹭一些限免资源，开会员我是不会的
-3. [云听](https://sj.qq.com/appdetail/com.shinyv.cnr) 央视出品，虽然有写广告，但是精品资源很多
+2. [云听](https://sj.qq.com/appdetail/com.shinyv.cnr) 央视出品，虽然有写广告，但是精品资源很多
+3. [讯飞有声](https://sj.qq.com/appdetail/com.iflytek.readassistant) 难得的免费收听时长的可听本地图书和 pdf 的 app，这可能是目前的一个较好的方案
 
 可选
 
 1. [极客时间](https://sj.qq.com/appdetail/org.geekbang.geekTime) 程序员才需要
 2. [微信听书](https://sj.qq.com/appdetail/com.tencent.wehear) 活动玩法多，可以换取收听时长
+3. [帆书](https://sj.qq.com/appdetail/io.dushu.fandengreader) 有时候可以蹭一些限免资源，但特别少，很多都是付费的
 
 not
 
-* [少年得到](https://sj.qq.com/appdetail/com.dedao.juvenile) 更适合中学生
+* [少年得到](https://sj.qq.com/appdetail/com.dedao.juvenile) 更适合中小学生
 * [凤凰 FM](https://sj.qq.com/appdetail/com.ifeng.fhdt) 偶尔闪退
-* 喜马拉雅 有些广告
 
 ### 7. 倒数日
 
 [倒数日 · Days Matter](https://app.ipad.ly/idays) 多端同步，除了苹果端，还支持安卓端还有手表端
 
-### 8. 要知
+### 8. 听新闻-要知
 
-[要知](https://sj.qq.com/appdetail/com.ruanmei.yaozhi) 听新闻用
+* [要知](https://sj.qq.com/appdetail/com.ruanmei.yaozhi) 暂用它听新闻用，目前定制项不太多，以后我可能会换成 ai 收集 + 听新闻了
+* [喜马拉雅](https://sj.qq.com/appdetail/com.ximalaya.ting.android) 有些广告
 
 ## 2. 视频类【常用】
 
@@ -172,7 +179,7 @@ not
 可选
 
 * [西瓜视频](https://sj.qq.com/appdetail/com.ss.android.article.video) 广告不多 还能创作
-* bilibili 国际版 [下载地址一](https://apkpure.com/cn/bilibili-cn/com.bilibili.app.in/download) | [下载地址二](https://com-bilibili-app-in.en.uptodown.com/android) 因为清爽
+* bilibili 哔哩哔哩国际版 [下载地址一](https://apkpure.com/cn/bilibili-cn/com.bilibili.app.in/download) | [下载地址二](https://com-bilibili-app-in.en.uptodown.com/android) 因为清爽
 * [es 文件浏览器](http://www.estrongs.com/) 可以当做播放器，可以通过 alist 挂载的网盘和本身具备音视频播放能力呢，特别是搭配 nas 或服务器使用，除了有广告要开会员
 
 not
@@ -182,25 +189,28 @@ not
 * [VLC](https://www.videolan.org/vlc/download-android.html) 在 webdav 方面自定义选项不足，但依旧足够强大
 * xplayer 太丑了
 
-* [bili_you](https://github.com/lucinhu/bili_you/releases) bilibili 无广告版，但是作者已经不再维护了
 * [bilibili 标准版](https://sj.qq.com/appdetail/tv.danmaku.bili) 没以前清爽了
-* [抖音](https://sj.qq.com/appdetail/com.ss.android.ugc.aweme) 稍有广告
 * [1905 电影网](https://sj.qq.com/appdetail/com.m1905.mobilefree) 做的一般般
 * [爱奇艺](https://sj.qq.com/appdetail/com.qiyi.video) 有广告呀
 * [优酷视频](https://sj.qq.com/appdetail/com.youku.phone)
 * [腾讯视频](https://sj.qq.com/appdetail/com.tencent.qqlive)
+
+* [抖音](https://sj.qq.com/appdetail/com.ss.android.ugc.aweme) 稍有广告
 * [快手](https://sj.qq.com/appdetail/com.smile.gifmaker) 不太喜欢用
-* [NewPipe](https://newpipe.net/)- a free YouTube client 不太好用
+
+* [NewPipe](https://newpipe.net/) - a free YouTube client 不太好用
+
+* ~~[bili_you](https://github.com/lucinhu/bili_you/releases) bilibili 无广告版，但是作者已经不再维护了~~
 
 ## 3. 工具类【常用】
 
 * [微信输入法](https://sj.qq.com/appdetail/com.tencent.wetype) 其中的跨设备粘贴绝了
-* [GKD 搞快点](https://gkd.li/) 用于跳过广告
+* [GKD 搞快点](https://gkd.li/) 预设了跳广告规则，开箱即用
 * 魔法上网工具 例如 ssr 粉色的小飞机（酸酸乳） 或者 v2rayNG 或者无限免费的 [Proton VPN](https://protonvpn.com/)
 
 可选
 
-* [WiFi万能钥匙](https://sj.qq.com/appdetail/com.snda.lantern.wifilocating) 偶尔可以用下，虽说现在的能用的热点不多了
+* [WiFi 万能钥匙](https://sj.qq.com/appdetail/com.snda.lantern.wifilocating) 偶尔可以用下，虽说现在的能用的热点不多了
 * [菜鸟](https://sj.qq.com/appdetail/com.cainiao.wireless) 好处就是一键查询所有快递
 * [快递 100](https://sj.qq.com/appdetail/com.Kingdee.Express) 查和寄快递
 * [小度音箱](https://sj.qq.com/appdetail/com.baidu.duer.superapp) 硬件绑定的应用，不得不用
@@ -210,7 +220,7 @@ not
 * 输入法类 搜狗百度之类的有手机自带合作的，没必要了
 
 * [纯纯写作](https://sj.qq.com/appdetail/com.drakeet.purewriter) 很好用，但是收费版才好用就算了
-* [快递 100](https://sj.qq.com/appdetail/com.Kingdee.Express) 最近寄快递选【德邦】确实便宜写，不过体积和重* 量两者对方是按大的来，情有可原吧。第一次用快递 100 我领了一个 5 月的优惠券，赶紧还行，一般足够用
+* [快递 100](https://sj.qq.com/appdetail/com.Kingdee.Express) 最近寄快递选【德邦】确实便宜写，不过**体积和重量**是按两者最大的来，情有可原吧。第一次用快递 100 我领了一个 5 月的优惠券，感觉还行，一般足够用
 * [北京云法庭](http://sspt.bjcourt.gov.cn/bcourt/onlineCourt/downloadYm)  我在某些情况下会用到 法 yuan 就 TM 是垃圾，法 guan 也是，拖了好长时间，卸了，我没证据，我理亏，我 b 万没了，思考思考思考
 * 北京法院 一类无力应用
 * ~~李跳跳 已主动下架 真实好友 最新版没适配~~
@@ -252,28 +262,29 @@ not
 
 * [多邻国](https://sj.qq.com/appdetail/com.duolingo) 多国语言学习
 
-[好看视频](https://sj.qq.com/appdetail/com.baidu.haokan) 也能学知识
-
 可选
 
+* [好看视频](https://sj.qq.com/appdetail/com.baidu.haokan) 一些视频也能学到知识
+
 * [每日音乐听力](https://sj.qq.com/appdetail/com.qianyan2.ting.en)
-* 拉勾教育
+
 * [小鹅通](https://sj.qq.com/appdetail/com.xiaoe.client)
-* [知乎](https://sj.qq.com/appdetail/com.zhihu.android) 广告多但是可以做任务、
+
 * [LeetCode](https://sj.qq.com/appdetail/com.lingkou.leetcode) 学算法用 至少没广告
 * [牛客](https://sj.qq.com/appdetail/com.nowcoder.app.florida) 和上面提到的力扣网类似，面试 + 学算法
 * [稀土掘金](https://sj.qq.com/appdetail/com.daimajia.gold) 很清爽
 
 * [慕课网](https://sj.qq.com/appdetail/cn.com.open.mooc) 主打 IT 课程，且有一部分免费资源可以离线下载
 * [知乎知学堂](https://sj.qq.com/appdetail/com.zhihu.zhixuetang.android) 无广告
-* 希塞网
-* 51CTO
+* [希赛网](https://sj.qq.com/appdetail/com.xuesaieducation)
+* [51 CTO](https://sj.qq.com/appdetail/com.cto51.student)
 * [学堂在线](https://sj.qq.com/appdetail/com.xuetangx.mobile) 和 中国 MOOC 也都还行
-* [中国大学 MOOC]
+* [中国大学 MOOC](https://sj.qq.com/appdetail/com.netease.edu.ucmooc)
 
 not
 
 * csdn 广告太多，不如 pc 上网页版的
+* ~~拉勾教育 一个 IT 培训机构网站，但现在应用商店已下架~~
 
 ## 7. 生活类
 
@@ -317,7 +328,6 @@ not
 
 可选
 
-* [小红书](https://sj.qq.com/appdetail/com.xingin.xhs)
 * [微博](https://sj.qq.com/appdetail/com.sina.weibo)
 
 ## 10. 办公类
@@ -372,7 +382,7 @@ not
 ## 14. 应用商店类
 
 * 国际服游戏下载-GamesToday [官网](https://www.hotplaygames.com/)
-* [apkpure](https://apkpure.com/cn/) 一个有国外的应用商店
+* [apkpure](https://apkpure.com/cn/) 一个有国外的应用商店 需魔法
 * [Google Play](https://play.google.com/)
 * [腾讯应用宝](https://sj.qq.com/)-全网最新最热手机应用游戏下载
 
@@ -383,6 +393,28 @@ not
 ## 16. 浏览器
 
 [firefox 火狐浏览器](https://firefox.en.uptodown.com/android)
+
+备用
+
+* edge
+* chrome
+* uc 国际版
+
+## 17. 问答知识社区
+
+* [豆瓣](https://sj.qq.com/appdetail/com.douban.frodo) 不是很喜欢
+* [小红书](https://sj.qq.com/appdetail/com.xingin.xhs)
+* [知乎](https://sj.qq.com/appdetail/com.zhihu.android) 广告多但是可以做任务
+
+## 18. AI 助手
+
+* kimi
+* 豆包
+
+not
+
+* 文心一言 审核不过是什么玩意
+* 讯飞星火 感觉还差点意思
 
 ## 其他
 
@@ -407,7 +439,6 @@ not
 
 ### 其他记录
 
-
 #### 家庭必备
 
 * 国家反诈中心 安全永远第一位
@@ -419,15 +450,11 @@ not
 
 ### 备用机必备
 
-* vplayer 可变速播放 但是现在基本系统本地播放器已经很强，除非有特殊连接 nas 等设备或者网盘的需求
+* link2sd 时代的眼泪，当年 apk 可以选择安装或者迁移到 sd 卡，现在几乎淘汰了
 * pdf 阅读器 想当年智器阅读 当时可以裁掉白边，现在一般安卓系统自带了文档阅读器基本也够用了
+* vplayer 可变速播放 但是现在基本系统本地播放器已经很强，除非有特殊连接 nas 等设备或者网盘的需求
 * 浏览器已被边缘化，app 才是主流，虽然浏览器也是一个app 之前的 uc 浏览器老版 由于很清爽无广告甚至好用
 * 安全管家 系统内置一般就够了，lbe 安全大师 已过时
-* link2sd 时代的眼泪，当年 apk 可以选择安装或者迁移到 sd 卡，现在几乎用不到了
-
-## 留观中
-
-* [Agr Reader](https://www.agrreader.xyz/) rss 阅读器，但是对 ithome 之家解析不够友好
 
 ## 回收站
 

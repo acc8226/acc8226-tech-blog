@@ -85,18 +85,15 @@ repositories {
 * [MySQL](https://www.mysql.com/)
 * PostgreSQL [官网](https://www.postgresql.org/) | [下载](https://www.postgresql.org/download/)
 
-
 ### 数据库设计
 
 [PDManer](https://gitee.com/robergroup/pdmaner/releases)
 
 ### 数据库管理
 
-【win 免费】[HeidiSQL](https://www.heidisql.com/download.php?download=portable-64) mysql 免费客户端
-
-【全平台 付费】[DataGrip](https://www.jetbrains.com/datagrip)
-
-【全平台 预览版限免】[JetBrains Aqua](https://www.jetbrains.com/aqua/)
+* 【win 免费】[HeidiSQL](https://www.heidisql.com/download.php?download=portable-64) mysql 免费客户端
+* 【全平台 付费】[DataGrip](https://www.jetbrains.com/datagrip)
+* 【全平台 预览版限免】[JetBrains Aqua](https://www.jetbrains.com/aqua/)
 
 maybe
 
@@ -112,7 +109,7 @@ not
 
 mac 平台
 
-如果有 Jetbrain 认证开源项目认证，暂时选择 dg。
+因为我有 Jetbrain 开源认证，暂时选用 DataGrip。
 
 ## 3. Docker
 
@@ -120,11 +117,9 @@ mac 平台
 
 ## 4.【常用】Editor 编辑器
 
-【全平台】[VSCode](https://code.visualstudio.com) windows 推荐使用安装版而非便携版，这样可以获得及时更新
+【全平台】[VSCode](https://code.visualstudio.com) windows 推荐使用**安装版**而非便携版，这样能及时获得更新
 
-vscode 插件推荐
-
-[markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
+vscode 插件推荐：[markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
 
 or
 
@@ -209,7 +204,7 @@ Kotlin [官网](https://kotlinlang.org/)
 
 ### Node.js
 
-[Node.js](https://nodejs.org/en) | [Mirror](https://registry.npmmirror.com/binary.html?path=node/)
+[Node.js](https://nodejs.org/en) | [npmjs.com 镜像站](https://registry.npmmirror.com/binary.html?path=node/)
 
 * [node-v20.12.2-win-x64.zip](https://registry.npmmirror.com/-/binary/node/latest-v20.x/node-v20.12.2-win-x64.zip)
 * [node-v18.20.1-win-x64.zip](https://registry.npmmirror.com/-/binary/node/latest-v18.x/node-v18.20.1-win-x64.zip)
@@ -219,6 +214,9 @@ Kotlin [官网](https://kotlinlang.org/)
 配置 registry 加速
 
 ```sh
+# 临时使用
+npm install xxxxx --registry=https://registry.npmmirror.com
+# 永久设置
 npm config set registry https://registry.npmmirror.com
 ```
 
@@ -245,14 +243,14 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
 ## 8. MQ 和 OSS
 
-**消息队列**
+**MQ 消息队列**
 
 * [Apache ActiveMQ](https://activemq.apache.org/)
 * [Apache Kafka](https://kafka.apache.org/)
 * [Apache RocketMQ](https://rocketmq.apache.org/)
 * [RabbitMQ](https://www.rabbitmq.com/)
 
-**Object Storage Service**
+**OSS Object Storage Service 对象存储**
 
 [MinIO](https://min.io/) | S3 & Kubernetes Native Object Storage for AI
 
@@ -260,9 +258,7 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
 ### http 调试
 
-HTTPie 有桌面版和 cli 版
-
-* httpie/desktop [官网下载](https://httpie.io/download) | [Releases](https://github.com/httpie/desktop/releases)  — cross-platform API testing client for humans. Painlessly test REST, GraphQL, and HTTP APIs.
+* httpie/desktop [官网下载](https://httpie.io/download) | [Releases](https://github.com/httpie/desktop/releases) HTTPie 有桌面版和 cli 版，cross-platform API testing client for humans. Painlessly test REST, GraphQL, and HTTP APIs. 
 * [SoapUI](https://www.soapui.org/downloads/soapui/)
 * [Reqable](https://reqable.com/zh-CN/)
 
