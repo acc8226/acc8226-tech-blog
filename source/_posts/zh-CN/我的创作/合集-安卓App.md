@@ -1,7 +1,7 @@
 ---
 title: 合集-安卓 App
 date: 2017-06-01 08:00:00
-updated: 2024-05-24 21:52:39
+updated: 2024-06-13 11:18:41
 categories: 我的创作
 ---
 
@@ -97,13 +97,10 @@ not
 
 [网易邮箱大师](https://sj.qq.com/appdetail/com.netease.mail) 对 QQ 邮箱还需要授权码，操作上我更偏爱 QQ 邮箱一些
 
-### 4. 阅读
+### 4. 电子书
 
 1. [FBReader](https://fbreader.org/android#download) 阅读器：一款本地电子书阅读器，同时也支持 pdf
-2. [简讯](https://sj.qq.com/appdetail/com.tipsoon.android) 浅阅读：一款主张利用极短的碎片时间涉猎全行业领域的浅阅读产品
-3. [今日热榜](https://tophub.today/app) 读新闻：资源感觉不太丰富
-
-rss 阅读器：暂定为 [Agr Reader](https://www.agrreader.xyz/) ，但它对 it 之家的解析不够友好
+2. [微信读书](https://sj.qq.com/appdetail/com.tencent.weread) 除了现在很多内容收费了
 
 可选
 
@@ -112,7 +109,6 @@ rss 阅读器：暂定为 [Agr Reader](https://www.agrreader.xyz/) ，但它对 
 * [京东读书](https://sj.qq.com/appdetail/com.jd.app.reader) 送了影响力 和 乌合之众几本书，可以看一段时间
 * [番茄免费小说](https://sj.qq.com/appdetail/com.dragon.read) 有的想看的书可以免费离线下载，很好，很适合离线用
 * [今日头条](https://sj.qq.com/appdetail/com.ss.android.article.news)，安卓版的有广告。 话说 iPhone 的付费版的倒是可以考虑。我一般很少关注外界，这得改呀，央视 315 这种节目就很好
-* [微信读书](https://sj.qq.com/appdetail/com.tencent.weread) 除了现在很多内容收费了
 * [网易蜗牛阅读](https://sj.qq.com/appdetail/com.netease.snailread) 每天可以免费看 1 个小时付费书籍
 
 not
@@ -126,7 +122,7 @@ not
 * [起点读书](https://sj.qq.com/appdetail/com.qidian.QDReader) 可能有些独家资源
 * [七猫免费小说](https://sj.qq.com/appdetail/com.kmxs.reader) 免费看小说但是有广告
 
-* 微软 start 看新闻用，但不好用
+* [Agr Reader](https://www.agrreader.xyz/) ，但它对 it 之家的解析不够友好
 
 ### 5. 音乐
 
@@ -137,7 +133,7 @@ not
 
 1. [全民 K 歌](https://sj.qq.com/appdetail/com.tencent.karaoke) k 歌软件暂定它了
 2. [洛雪音乐助手](https://github.com/lyswhut/lx-music-mobile/releases/) 作为 Spotify 的替代品，我一般很少用，因为同步歌单是个问题
-3. [咪咕音乐](https://sj.qq.com/appdetail/cmccwm.mobilemusic) 的极速版可以免费听 1 年，但是之后呢
+3. [咪咕音乐](https://sj.qq.com/appdetail/cmccwm.mobilemusic) 其中极速版可以免费听 1 年，但是之后呢
 
 not
 
@@ -167,10 +163,22 @@ not
 
 [倒数日 · Days Matter](https://app.ipad.ly/idays) 多端同步，除了苹果端，还支持安卓端还有手表端
 
-### 8. 听新闻-要知
+### 8. 新闻简讯
 
-* [要知](https://sj.qq.com/appdetail/com.ruanmei.yaozhi) 暂用它听新闻用，目前定制项不太多，以后我可能会换成 ai 收集 + 听新闻了
+1. [简讯](https://sj.qq.com/appdetail/com.tipsoon.android) 浅阅读：一款主张利用极短的碎片时间涉猎全行业领域的浅阅读产品
+2. [界面新闻](https://sj.qq.com/appdetail/com.jiemian.news) 看新闻
+3. [要知](https://sj.qq.com/appdetail/com.ruanmei.yaozhi) 暂用它听新闻用，目前定制项不太多，以后我可能会换成 ai 收集 + 听新闻了
+
+备用
+
+* [今日热榜](https://tophub.today/app) 能看新闻，但是我部分情况下把它当初类 rss 收集器
+
+not
+
 * [喜马拉雅](https://sj.qq.com/appdetail/com.ximalaya.ting.android) 有些广告
+* 微软 start 看新闻用，但不好用
+* 央视新闻 界面不太喜欢
+* 腾讯新闻 有广告
 
 ## 2. 视频类【常用】
 
@@ -178,9 +186,12 @@ not
 
 可选
 
-* [西瓜视频](https://sj.qq.com/appdetail/com.ss.android.article.video) 广告不多 还能创作
-* bilibili 哔哩哔哩国际版 [下载地址一](https://apkpure.com/cn/bilibili-cn/com.bilibili.app.in/download) | [下载地址二](https://com-bilibili-app-in.en.uptodown.com/android) 因为清爽
 * [es 文件浏览器](http://www.estrongs.com/) 可以当做播放器，可以通过 alist 挂载的网盘和本身具备音视频播放能力呢，特别是搭配 nas 或服务器使用，除了有广告要开会员
+
+* bilibili 哔哩哔哩国际版 [下载地址一](https://apkpure.com/cn/bilibili-cn/com.bilibili.app.in/download) | [下载地址二](https://com-bilibili-app-in.en.uptodown.com/android) 因为清爽
+
+* [抖音](https://sj.qq.com/appdetail/com.ss.android.ugc.aweme) 稍有广告，同时它又是个超级 app，生活、超市、优惠、直播和团购都有
+* [西瓜视频](https://sj.qq.com/appdetail/com.ss.android.article.video) 广告不多 还能创作
 
 not
 
@@ -195,8 +206,8 @@ not
 * [优酷视频](https://sj.qq.com/appdetail/com.youku.phone)
 * [腾讯视频](https://sj.qq.com/appdetail/com.tencent.qqlive)
 
-* [抖音](https://sj.qq.com/appdetail/com.ss.android.ugc.aweme) 稍有广告
 * [快手](https://sj.qq.com/appdetail/com.smile.gifmaker) 不太喜欢用
+* [好看视频](https://sj.qq.com/appdetail/com.baidu.haokan) 一些视频也能学到知识
 
 * [NewPipe](https://newpipe.net/) - a free YouTube client 不太好用
 
@@ -240,13 +251,14 @@ not
 
 ## 5. 交通类
 
-* [百度地图关怀版](https://sj.qq.com/appdetail/com.baidu.maps.caring)
+* [高德地图](https://sj.qq.com/appdetail/com.autonavi.minimap)
 * [滴滴出行 app](https://sj.qq.com/appdetail/com.sdu.didi.psnger) / 小程序。可打车可搬家，货运搬家新用户还送券，还行
 * 腾讯乘车码 小程序。其实如果我是公交，一般会用支付类软件，例如支付宝；地铁可选择云闪付
 
 可选
 
 * [货拉拉 app](https://sj.qq.com/appdetail/com.lalamove.huolala.client) / 小程序 也还行，车比滴滴搬家多，一年或者几年采用一次
+* [百度地图关怀版](https://sj.qq.com/appdetail/com.baidu.maps.caring) 长辈手机可以用
 
 not
 
@@ -264,8 +276,6 @@ not
 
 可选
 
-* [好看视频](https://sj.qq.com/appdetail/com.baidu.haokan) 一些视频也能学到知识
-
 * [每日音乐听力](https://sj.qq.com/appdetail/com.qianyan2.ting.en)
 
 * [小鹅通](https://sj.qq.com/appdetail/com.xiaoe.client)
@@ -274,10 +284,10 @@ not
 * [牛客](https://sj.qq.com/appdetail/com.nowcoder.app.florida) 和上面提到的力扣网类似，面试 + 学算法
 * [稀土掘金](https://sj.qq.com/appdetail/com.daimajia.gold) 很清爽
 
+* [51 CTO](https://sj.qq.com/appdetail/com.cto51.student)
 * [慕课网](https://sj.qq.com/appdetail/cn.com.open.mooc) 主打 IT 课程，且有一部分免费资源可以离线下载
 * [知乎知学堂](https://sj.qq.com/appdetail/com.zhihu.zhixuetang.android) 无广告
 * [希赛网](https://sj.qq.com/appdetail/com.xuesaieducation)
-* [51 CTO](https://sj.qq.com/appdetail/com.cto51.student)
 * [学堂在线](https://sj.qq.com/appdetail/com.xuetangx.mobile) 和 中国 MOOC 也都还行
 * [中国大学 MOOC](https://sj.qq.com/appdetail/com.netease.edu.ucmooc)
 
@@ -288,12 +298,11 @@ not
 
 ## 7. 生活类
 
-* [美团](https://sj.qq.com/appdetail/com.sankuai.meituan) 【有小程序】
-* 卢米埃【有小程序】 毕竟办过会员卡，不过每年都需要年费 10 元需要进行激活，暂时不用了，不过目前我还有 31 的余额，但想起我浪费了 1 张还是 2 张兑换票我就心疼，可惜过期了
+* [美团](https://sj.qq.com/appdetail/com.sankuai.meituan)
+* [卢米埃影城 App](https://sj.qq.com/appdetail/com.lumiai.XXXXX) / 小程序 毕竟办过会员卡，不过每年都需要年费 10 元需要进行激活，暂时不用了，不过目前我还有 31 的余额，但想起我浪费了 1 张还是 2 张兑换票我就心疼，可惜过期了
 
 or
 
-* [抖音](https://sj.qq.com/appdetail/com.ss.android.ugc.aweme) 的团购确实优惠，属于超级 app，生活、超市、优惠、直播都有
 * 便利蜂 有小程序 和 app 端口，但是优惠力度确实不一样，属于可有可无吧
 * [建行生活](https://sj.qq.com/appdetail/com.ccb.longjiLife) 曾经和北京疫情优惠券一起有活动，可是我没钱
 
@@ -302,16 +311,16 @@ or
 
 not
 
-* [大众点评](https://sj.qq.com/appdetail/com.dianping.v1) 和上述重了
+* [大众点评](https://sj.qq.com/appdetail/com.dianping.v1) 和美团重了
 * [闪送](https://sj.qq.com/appdetail/cn.ishansong)
 * [58 同城](https://sj.qq.com/appdetail/com.wuba) 假消息太多，注意防范什么引流之类，但也有真实的
 * [安居客](https://sj.qq.com/appdetail/com.anjuke.android.app)
 
 ## 8. 旅行类
 
-1. [铁路 12306](https://sj.qq.com/appdetail/com.MobileTicket) 【推荐】app/小程序
-2. [格林](https://sj.qq.com/appdetail/com.greentree.android) app/小程序 由于当年办了一个金卡会员，虽然很久没用了，但可能有些优惠吧
-3. [飞猪](https://sj.qq.com/appdetail/com.taobao.trip) app/小程序
+1. [铁路 12306 app](https://sj.qq.com/appdetail/com.MobileTicket) / 小程序
+2. [格林 app](https://sj.qq.com/appdetail/com.greentree.android) / 小程序 由于当年办了一个金卡会员，虽然很久没用了，但可能有些优惠吧
+3. [飞猪 app](https://sj.qq.com/appdetail/com.taobao.trip) / 小程序
 
 可选
 
@@ -332,7 +341,7 @@ not
 
 ## 10. 办公类
 
-* [天眼查](https://sj.qq.com/appdetail/com.tianyancha.skyeye) 求职中可以**反调公司**，也适用于查询被服务公司，**无良北京丰台万达舒窈瑶国际无所遁**
+* [天眼查 app](https://sj.qq.com/appdetail/com.tianyancha.skyeye) / 小程序 求职中可以**反调公司**，也适用于查询被服务公司，**无良北京丰台万达舒窈瑶国际**
 
 可选
 
