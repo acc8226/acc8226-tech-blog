@@ -148,8 +148,5 @@ DROP INDEX [indexName] ON mytable;
 
 ## 参考
 
-SQL 必知必会（第5版）-本·福达-微信读书
-<https://weread.qq.com/web/reader/f7632a30720befadf7636bb>
-
-Mysql 中索引 key 、primary key 、unique key 与 index 区别_凡心所向，素履所往，生如逆旅，一苇以航-CSDN博客_key 索引
-<https://blog.csdn.net/rnzhiw/article/details/82084331>
+* SQL 必知必会（第5版）-本·福达-微信读书 <https://weread.qq.com/web/reader/f7632a30720befadf7636bb>
+* Mysql 中索引 key 、primary key 、unique key 与 index 区别_凡心所向，素履所往，生如逆旅，一苇以航-CSDN博客_key 索引 <https://blog.csdn.net/rnzhiw/article/details/82084331>

@@ -83,7 +83,7 @@ not
 * Bitwarden authenticator 目前还有待完善
 * [Google Authenticator](https://google-authenticator.en.softonic.com/android) 虽说是大厂，但是软件包体积稍大 且 国内云同步功能没法使用
 
-### 2. 密码管理-Bitwarden
+### 2. 密码管理
 
 [Bitwarden](https://github.com/bitwarden/mobile/releases) 一款可以云端存储的密码管理器，也支持本地导入导出密码
 
@@ -163,7 +163,7 @@ not
 
 [倒数日 · Days Matter](https://app.ipad.ly/idays) 多端同步，除了苹果端，还支持安卓端还有手表端
 
-### 8. 新闻简讯
+### 8. 新闻资讯
 
 1. [简讯](https://sj.qq.com/appdetail/com.tipsoon.android) 浅阅读：一款主张利用极短的碎片时间涉猎全行业领域的浅阅读产品
 2. [界面新闻](https://sj.qq.com/appdetail/com.jiemian.news) 看新闻
@@ -189,6 +189,7 @@ not
 * [es 文件浏览器](http://www.estrongs.com/) 可以当做播放器，可以通过 alist 挂载的网盘和本身具备音视频播放能力呢，特别是搭配 nas 或服务器使用，除了有广告要开会员
 
 * bilibili 哔哩哔哩国际版 [下载地址一](https://apkpure.com/cn/bilibili-cn/com.bilibili.app.in/download) | [下载地址二](https://com-bilibili-app-in.en.uptodown.com/android) 因为清爽
+* [NewPipe](https://newpipe.net/) - a free YouTube client 太过于简洁
 
 * [抖音](https://sj.qq.com/appdetail/com.ss.android.ugc.aweme) 稍有广告，同时它又是个超级 app，生活、超市、优惠、直播和团购都有
 * [西瓜视频](https://sj.qq.com/appdetail/com.ss.android.article.video) 广告不多 还能创作
@@ -208,8 +209,6 @@ not
 
 * [快手](https://sj.qq.com/appdetail/com.smile.gifmaker) 不太喜欢用
 * [好看视频](https://sj.qq.com/appdetail/com.baidu.haokan) 一些视频也能学到知识
-
-* [NewPipe](https://newpipe.net/) - a free YouTube client 不太好用
 
 * ~~[bili_you](https://github.com/lucinhu/bili_you/releases) bilibili 无广告版，但是作者已经不再维护了~~
 
@@ -293,7 +292,7 @@ not
 
 not
 
-* csdn 广告太多，不如 pc 上网页版的
+* csdn 广告太多，不如网页版
 * ~~拉勾教育 一个 IT 培训机构网站，但现在应用商店已下架~~
 
 ## 7. 生活类
@@ -363,7 +362,7 @@ not
 * [翼支付](https://sj.qq.com/appdetail/com.chinatelecom.bestpayclient) 由于我办理业务期间会每月会赠送代金券
 * [数字人民币](https://sj.qq.com/appdetail/cn.gov.pbc.dcep) 现放开了注册，但是生态还不完善，然后 170 的收集也注册不了，现在我是用 153 的号码进行注册的。
 
-## 12. 云端
+## 12. 网盘
 
 [pikpak](https://mypikpak.com/zh-CN) 免费版只有 6G 空间，每天可以添加 3 个云下载任务。网页版建议使用油猴脚本可以做到免魔法登录，否则需要魔法登录后才能断掉。而手机版建议邮箱登录可正常使用
 
@@ -390,10 +389,13 @@ not
 
 ## 14. 应用商店类
 
-* 国际服游戏下载-GamesToday [官网](https://www.hotplaygames.com/)
-* [apkpure](https://apkpure.com/cn/) 一个有国外的应用商店 需魔法
-* [Google Play](https://play.google.com/)
 * [腾讯应用宝](https://sj.qq.com/)-全网最新最热手机应用游戏下载
+* [国际服游戏下载-GamesToday](https://www.hotplaygames.com/)
+* [apkpure](https://apkpure.com/cn/) 一个有国外的应用商店 需魔法
+
+备用
+
+* [Google Play](https://play.google.com/) 需魔法 和 谷歌框架
 
 ## 15. 桌面启动器
 
@@ -401,15 +403,22 @@ not
 
 ## 16. 浏览器
 
-[firefox 火狐浏览器](https://firefox.en.uptodown.com/android)
+360 极速浏览器 内置安全大脑非常安全，毕竟安全第一位
 
 备用
 
-* edge
-* chrome
-* uc 国际版
+* [Firefox 火狐浏览器](https://firefox.en.uptodown.com/android)
+* 微软 edge
 
-## 17. 问答知识社区
+not
+
+* 360 安全浏览器手机版 广告太多
+* chrome 国内不好用
+* uc 标准版 太臃肿了
+* uc 国际版 可能会屏蔽某些网站
+* 夸克浏览器 越来越臃肿了，和 UC 一个样
+
+## 17. 知识
 
 * [豆瓣](https://sj.qq.com/appdetail/com.douban.frodo) 不是很喜欢
 * [小红书](https://sj.qq.com/appdetail/com.xingin.xhs)
@@ -419,11 +428,29 @@ not
 
 * kimi
 * 豆包
+* 通义
 
 not
 
 * 文心一言 审核不过是什么玩意
 * 讯飞星火 感觉还差点意思
+
+## 19. 智能家居
+
+博联智能 可以搭配天猫插座 不过要求 2.4 和 5G Hz 的网络要分开
+
+## 20. 专业工具
+
+[泰尔网测](https://sj.qq.com/appdetail/com.knowyou.perception) 用于网速测试 和 查看是哪家宽带
+
+## 21. 局域网通讯
+
+[LocalSend](https://localsend.org/) Share files to nearby devices
+
+## 22. 刷题
+
+* 疯狂刷题
+* 粉笔
 
 ## 其他
 

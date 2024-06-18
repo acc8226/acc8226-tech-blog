@@ -169,14 +169,7 @@ date 和 datetime 在插入的时候可以用 NOW() 函数。
 
 ## 参考
 
-MySQL 简介 | 菜鸟教程
-<https://www.runoob.com/mysql/mysql-tutorial.html>
-
-官网 5.7 参考手册
-<https://dev.mysql.com/doc/refman/5.7/en/>
-
-官网 8.0 参考手册
-<https://dev.mysql.com/doc/refman/8.0/en/>
-
-MySQL timestamp和datetime的区别 - 七彩鱼丸 - 博客园
-<https://www.cnblogs.com/starfish29/p/10627953.html>
+* MySQL 简介 | 菜鸟教程 <https://www.runoob.com/mysql/mysql-tutorial.html>
+* 官网 5.7 参考手册 <https://dev.mysql.com/doc/refman/5.7/en/>
+* 官网 8.0 参考手册 <https://dev.mysql.com/doc/refman/8.0/en/>
+* MySQL timestamp和datetime的区别 - 七彩鱼丸 - 博客园 <https://www.cnblogs.com/starfish29/p/10627953.html>
