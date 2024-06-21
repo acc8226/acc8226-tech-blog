@@ -145,14 +145,15 @@ not
 ### 6. 听书 和 FM
 
 1. [得到](https://sj.qq.com/appdetail/com.luojilab.player) 非常好
-2. [云听](https://sj.qq.com/appdetail/com.shinyv.cnr) 央视出品，虽然有写广告，但是精品资源很多
-3. [讯飞有声](https://sj.qq.com/appdetail/com.iflytek.readassistant) 难得的免费收听时长的可听本地图书和 pdf 的 app，这可能是目前的一个较好的方案
+2. [讯飞有声](https://sj.qq.com/appdetail/com.iflytek.readassistant) 难得的免费收听时长的可听本地图书和 pdf 的 app，这可能是目前的一个较好的方案
 
 可选
 
 1. [极客时间](https://sj.qq.com/appdetail/org.geekbang.geekTime) 程序员才需要
 2. [微信听书](https://sj.qq.com/appdetail/com.tencent.wehear) 活动玩法多，可以换取收听时长
-3. [帆书](https://sj.qq.com/appdetail/io.dushu.fandengreader) 有时候可以蹭一些限免资源，但特别少，很多都是付费的
+3. [番茄畅听](https://sj.qq.com/appdetail/com.xs.fm) 有些免费资源
+4. [云听](https://sj.qq.com/appdetail/com.shinyv.cnr) 央视有些资源而已
+5. [帆书](https://sj.qq.com/appdetail/io.dushu.fandengreader) 限免资源特别少，很多都是付费的
 
 not
 

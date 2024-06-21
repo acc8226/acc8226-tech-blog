@@ -258,6 +258,13 @@ rp 文件可以通过 Axure8 导入打开，具体方式如下：
 
 请检查下载文件的完整性。
 
+###  Windows下安装Linux子系统的 0x8007019e 错误
+
+提示说错误代码0x8007019e 没有办法安装打开？！
+
+解决方法
+开启Windows功能-适用于Linux的Windows子系统，安装完重启就可以解决这个问题了
+
 ## 参考
 
 * [《Win 7 宝典 / Windows 7 宝典》](http://www.win7china.com/html/6351.html)
