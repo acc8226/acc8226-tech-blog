@@ -84,9 +84,12 @@ not
 
 #### iPhone
 
-1. [QQ 安全中心](https://sj.qq.com/appdetail/com.tencent.token)
+1. 暂时选用 Google Authenticator
+2. [QQ 安全中心](https://sj.qq.com/appdetail/com.tencent.token)
 
 ### 2. 密码管理
+
+#### 安卓和 iPhone
 
 [Bitwarden](https://github.com/bitwarden/mobile/releases) 一款可以云端存储的密码管理器，也支持本地导入导出密码
 
@@ -124,6 +127,7 @@ not [网易邮箱大师](https://sj.qq.com/appdetail/com.netease.mail) 其对 QQ
 not
 
 * [阅读](https://github.com/gedoor/legado/releases) 不支持 mobi 格式
+* 云虫爱看 已下架，应用也不再更新
 
 * [QQ 阅读](https://sj.qq.com/appdetail/com.qq.reader) 有广告
 * [多看阅读](https://sj.qq.com/appdetail/com.duokan.reader) 书太贵
@@ -135,14 +139,15 @@ not
 
 #### iPhone
 
-* Kindle【已过时】(现支持打开 epub 类型的文件了, txt文本也不在话下,至少我觉得比 iBook 靠谱)
+1. Kindle【已过时】(现支持打开 epub 类型的文件了, txt文本也不在话下,至少我觉得比 iBook 靠谱)
+2. [微信读书](https://sj.qq.com/appdetail/com.tencent.weread) 除了现在很多内容收费了
 
 #### iPad
 
 本地
 
 * Anyview阅读 yyds
-* 阅读星Pro yydd 阅读必备神器, 能读取各种格式的阅读格式文件
+* 阅读星Pro yydd 阅读必备神器, 能读取各种格式的阅读格式文件 后 app 名字更新为云虫爱看，现在已经绝版了
 * kindle 及时在线功能停止了，本地也很好用
 
 在线
@@ -169,10 +174,15 @@ not
 * [网易云](https://sj.qq.com/appdetail/com.netease.cloudmusic) 广告太多且现在太繁杂了
 * [酷狗](https://sj.qq.com/appdetail/com.kugou.android) 和 酷我 差一点意思
 * [爱音乐](https://sj.qq.com/appdetail/com.gwsoft.imusic.controller) 不好用，现在周杰伦的歌都没了，也不知道以前有没有
+* 虾米音乐 已宣布停止服务
 
 #### iPad
 
 QQ 音乐和网易云，其中 21 版本的 QQ 音乐 有点卡，但是网易云依旧好使，值得推荐
+
+#### iPhone
+
+[Spotify](https://www.spotify.com/)
 
 #### aPad
 
@@ -205,9 +215,9 @@ not
 
 ### iPad
 
-酷FM 酷狗官方推出的一款免费音乐FM电台app，可以已经没了
-得到
-极客时间
+* 酷FM 酷狗官方推出的一款免费音乐FM电台app，可以已经没了
+* 得到
+* 极客时间
 
 ### 7. 倒数日
 
@@ -304,7 +314,7 @@ not
 
 [泰捷视频](https://www.51togic.com/%e6%b3%b0%e6%8d%b7%e8%a7%86%e9%a2%91/)
 
-## 3. productivity 生产力工具【常用】
+## 3. productivity（生产力） 工具【常用】
 
 ### 安卓
 
@@ -333,14 +343,24 @@ not
 * 北京法院 一类无力应用
 * ~~李跳跳 已主动下架 真实好友 最新版没适配~~
 
+* 雨时 看天气 有广告
+* 彩云天气 提示开会员 
+
 ### iPhone
 
 * Document (或者 GoodReader 苹果管理文件神器, 需付费)
-* 雨时 看天气很文雅
+* 雨时 看天气 或者 彩云天气Pro（需付费）
+* 百度输入法 当时 iOS 7 推出的时候就很好用
+
+* WIFI万能钥匙Pro
+
+换机只用一次
+
+同步手机通讯录, [QQ 同步助手](https://sj.qq.com/appdetail/com.tencent.qqpim)
 
 ### iPad
 
-* Documents
+* Documents (或者 GoodReader 苹果管理文件神器, 需付费)
 * ES File Explorer
 * 中华万年历 现在已经更新为 微鲤万年历
 
@@ -391,6 +411,8 @@ not
 * 朗思易听 英语学习
 * 不背单词 英语学习
 
+* 英语流利说
+
 * [小鹅通](https://sj.qq.com/appdetail/com.xiaoe.client)
 
 * [LeetCode](https://sj.qq.com/appdetail/com.lingkou.leetcode) 学算法用 至少没广告
@@ -403,6 +425,10 @@ not
 * [希赛网](https://sj.qq.com/appdetail/com.xuesaieducation)
 * [学堂在线](https://sj.qq.com/appdetail/com.xuetangx.mobile) 和 中国 MOOC 也都还行
 * [中国大学 MOOC](https://sj.qq.com/appdetail/com.netease.edu.ucmooc)
+* 网易云课堂
+* 腾讯课堂
+
+
 
 not
 
@@ -454,7 +480,7 @@ not
 
 ### iPad
 
-* 什么值得买 该 app 颜值很高且存活了很多年
+* 什么值得买HD 该 app 颜值很高且存活了很多年
 
 ## 8. 旅行类
 
@@ -650,6 +676,14 @@ not
 交通银行 的 [买单吧](https://sj.qq.com/appdetail/com.bankcomm.maidanba)
 招商 的 [掌上生活](https://sj.qq.com/appdetail/com.cmbchina.ccd.pluto.cmbActivity)
 
+网商银行 可以支付宝提现免费，幸好我抢到资格比较早，但是用处不大
+
+微众银行 垃圾微粒贷，网贷审核不严格有漏洞
+
+## 25. 移动营业厅 app
+
+移动电信等三家营业厅
+
 ### 安卓
 
 挖财宝 一直在用
@@ -658,15 +692,25 @@ not
 
 钱袋子 曾经 2014年 很火的货币基金
 
-## 24. 游戏
+## 26. 匿名应用
+
+阿里小号、联通小号 不知道现在哪个软件存活着，要记得及时续费
+
+## 27. 政务
+
+### 安卓和 iOS
+
+个人所得税 
+
+not
+
+北京公积金 网站其实挺强大，一般 app 甚至都用不到
+
+## 28. 游戏
 
 ### iPad
 
-我一般会玩经典的
-
-王国保卫战系列，比如 4-复仇
-割绳子系列
-小鳄鱼洗澡系列
+我一般会玩经典的，比如王国保卫战系列、割绳子系列、小鳄鱼洗澡系列
 
 ## 其他
 
@@ -712,6 +756,6 @@ iPad 截图留恋
 
 ![iPad 截图留恋](/images/收藏-我的硬件/玩转-iOS-设备/1662509-0daad5d880393ba9.png)
 
-小米 5X 截图留恋
+备用机 小米 5X 截图留恋
 
-![小米 5X 截图留恋](/images/收藏-我的硬件/玩转-Android-设备/1662509-3b1988671c31fc11.png '小米 5X')
+![5X 截图留恋](/images/收藏-我的硬件/玩转-Android-设备/1662509-3b1988671c31fc11.png '小米 5X')
