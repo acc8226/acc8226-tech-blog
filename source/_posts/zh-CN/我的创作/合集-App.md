@@ -184,6 +184,10 @@ QQ 音乐和网易云，其中 21 版本的 QQ 音乐 有点卡，但是网易�
 
 [Spotify](https://www.spotify.com/)
 
+留存
+
+QQ 音乐 或者 网易云音乐
+
 #### aPad
 
 [Spotify](https://www.spotify.com/) 内容为王
@@ -213,6 +217,8 @@ not
 
 得到
 
+极客时间
+
 ### iPad
 
 * 酷FM 酷狗官方推出的一款免费音乐FM电台app，可以已经没了
@@ -230,7 +236,7 @@ not
 #### 安卓
 
 1. [简讯](https://sj.qq.com/appdetail/com.tipsoon.android) 浅阅读：一款主张利用极短的碎片时间涉猎全行业领域的浅阅读产品
-2. [界面新闻](https://sj.qq.com/appdetail/com.jiemian.news) 看新闻
+2. [界面新闻](https://sj.qq.com/appdetail/com.jiemian.news) 看新闻 或者 [ZAKER](https://sj.qq.com/appdetail/com.myzaker.ZAKER_Phone)
 3. [要知](https://sj.qq.com/appdetail/com.ruanmei.yaozhi) 暂用它听新闻用，目前定制项不太多，以后我可能会换成 ai 收集 + 听新闻了
 
 备用
@@ -250,7 +256,10 @@ not
 
 #### iPhone
 
-* 今日头条Pro 无广告
+* 今日头条 Pro 无广告
+* 网易新闻 Pro 无广告
+* ZAKER 专业版 无广告
+* 凤凰新闻 专业版 无广告
 
 #### iPad
 
@@ -278,6 +287,10 @@ not
 * [抖音](https://sj.qq.com/appdetail/com.ss.android.ugc.aweme) 稍有广告，同时它又是个超级 app，生活、超市、优惠、直播和团购都有
 * [西瓜视频](https://sj.qq.com/appdetail/com.ss.android.article.video) 广告不多 还能创作
 
+* [优酷视频](https://sj.qq.com/appdetail/com.youku.phone)
+* [腾讯视频](https://sj.qq.com/appdetail/com.tencent.qqlive)
+* 芒果 TV
+
 not
 
 * reex 的使用： url 可以填写微 `http://xx.xx.xx.xxx:5244/dav` 然后用户名 和 密码填写 alist 的信息即可。但是一段时间没更新了，然后官网我也没找到，代码不透明我就不太敢用
@@ -287,13 +300,19 @@ not
 * [bilibili 标准版](https://sj.qq.com/appdetail/tv.danmaku.bili) 没以前清爽了
 * [1905 电影网](https://sj.qq.com/appdetail/com.m1905.mobilefree) 做的一般般
 * [爱奇艺](https://sj.qq.com/appdetail/com.qiyi.video) 有广告呀
-* [优酷视频](https://sj.qq.com/appdetail/com.youku.phone)
-* [腾讯视频](https://sj.qq.com/appdetail/com.tencent.qqlive)
 
 * [快手](https://sj.qq.com/appdetail/com.smile.gifmaker) 不太喜欢用
 * [好看视频](https://sj.qq.com/appdetail/com.baidu.haokan) 一些视频也能学到知识
 
 * ~~[bili_you](https://github.com/lucinhu/bili_you/releases) bilibili 无广告版，但是作者已经不再维护了~~
+
+### iPhone
+
+VLC
+
+芒果 TV 和 优爱腾
+
+抖音
 
 ### iPad
 
@@ -351,6 +370,7 @@ not
 * Document (或者 GoodReader 苹果管理文件神器, 需付费)
 * 雨时 看天气 或者 彩云天气Pro（需付费）
 * 百度输入法 当时 iOS 7 推出的时候就很好用
+* 智能工具箱 可以用来听分贝 测距离啥的
 
 * WIFI万能钥匙Pro
 
@@ -428,12 +448,18 @@ not
 * 网易云课堂
 * 腾讯课堂
 
-
-
 not
 
 * csdn 广告太多，不如网页版
 * ~~拉勾教育 一个 IT 培训机构网站，但现在应用商店已下架~~
+
+### iPhone
+
+每日英语听力
+
+欧路词典
+
+算法动画图解
 
 ### iPad
 
@@ -504,7 +530,7 @@ not
 
 **一句话，不轻信陌生人的任何行为**
 
-### 安卓和 iPhone
+### iPhone
 
 * [QQ](https://sj.qq.com/appdetail/com.tencent.mobileqq) / [Tim](https://sj.qq.com/appdetail/com.tencent.tim) 比 QQ 小巧，但是据说已经不再更新了
 * [微信](https://sj.qq.com/appdetail/com.tencent.mm)
@@ -512,6 +538,12 @@ not
 可选
 
 * [微博](https://sj.qq.com/appdetail/com.sina.weibo)
+
+### iPhone
+
+QQ 和 微信
+
+weico 下架了，变成了微博国际板，后面又变成轻享版了，结果还有了广告。 weico 4 当年我还开了会员，设计的确实不错。
 
 ## 10. 办公类
 
@@ -618,6 +650,10 @@ not
 * uc 国际版 可能会屏蔽某些网站
 * [夸克浏览器](https://sj.qq.com/appdetail/com.quark.browser) 越来越臃肿了，和 UC 一个样
 
+### iPhone
+
+Alook
+
 ### iPad
 
 Alook 虽然尚且能用，可能火狐和 edge 依旧是更好的选择
@@ -654,7 +690,17 @@ not
 
 ## 20. 专业工具
 
+### 安卓
+
 [泰尔网测](https://sj.qq.com/appdetail/com.knowyou.perception) 用于网速测试 和 查看是哪家宽带
+
+### iPhone
+
+AIDA64 硬件检测
+
+### iPad
+
+AIDA64 硬件检测
 
 ## 21. 局域网通讯
 
@@ -667,7 +713,11 @@ not
 
 ## 23. 投资理财类
 
-理财需谨慎
+注意：理财需谨慎
+
+### iPhone
+
+挖财宝
 
 ## 24. 银行类 app
 
@@ -706,9 +756,21 @@ not
 
 北京公积金 网站其实挺强大，一般 app 甚至都用不到
 
-## 28. 游戏
+## 28. 美食类
 
-### iPad
+### iPhone
+
+美食杰Vip 还有个下厨房应该也不错
+
+## 29. 媒体工具
+
+### iPhone
+
+猫眼专业版 看电影实时票房用
+
+## 30. 游戏
+
+### iPhone 和 iPad
 
 我一般会玩经典的，比如王国保卫战系列、割绳子系列、小鳄鱼洗澡系列
 
