@@ -178,7 +178,9 @@ not
 
 #### iPad
 
-QQ 音乐和网易云，其中 21 版本的 QQ 音乐 有点卡，但是网易云依旧好使，值得推荐
+网易云，其中 21 版本的 QQ 音乐 有点卡，但是网易云依旧好使，值得推荐
+
+QQ 音乐HD 则更新有点不及时
 
 #### iPhone
 
@@ -186,7 +188,11 @@ QQ 音乐和网易云，其中 21 版本的 QQ 音乐 有点卡，但是网易�
 
 留存
 
-QQ 音乐 或者 网易云音乐
+QQ 音乐
+
+not
+
+网易云音乐 有广告
 
 #### aPad
 
@@ -221,9 +227,12 @@ not
 
 ### iPad
 
-* 酷FM 酷狗官方推出的一款免费音乐FM电台app，可以已经没了
 * 得到
 * 极客时间
+
+not
+
+* 酷FM 酷狗官方推出的一款免费音乐FM电台app，可以已经没了
 
 ### 7. 倒数日
 
@@ -236,7 +245,7 @@ not
 #### 安卓
 
 1. [简讯](https://sj.qq.com/appdetail/com.tipsoon.android) 浅阅读：一款主张利用极短的碎片时间涉猎全行业领域的浅阅读产品
-2. [界面新闻](https://sj.qq.com/appdetail/com.jiemian.news) 看新闻 或者 [ZAKER](https://sj.qq.com/appdetail/com.myzaker.ZAKER_Phone)
+2. [ZAKER](https://sj.qq.com/appdetail/com.myzaker.ZAKER_Phone) 看新闻
 3. [要知](https://sj.qq.com/appdetail/com.ruanmei.yaozhi) 暂用它听新闻用，目前定制项不太多，以后我可能会换成 ai 收集 + 听新闻了
 
 备用
@@ -248,18 +257,20 @@ not
 not
 
 * [喜马拉雅](https://sj.qq.com/appdetail/com.ximalaya.ting.android) 有些广告
-* 微软 start 看新闻用，但不好用
 * [央视新闻](https://sj.qq.com/appdetail/cn.cntvnews) 界面不太喜欢
 * [腾讯新闻](https://sj.qq.com/appdetail/com.tencent.news) 有广告
+* [界面新闻](https://sj.qq.com/appdetail/com.jiemian.news) 有广告
+* 微软 start 看新闻用，但不好用
 
 * 安卓平台的 feeder 不好用只能做备选，看来 rss 阅读器还是苹果平台的 reeder
 
 #### iPhone
 
+* ZAKER 专业版 无广告
 * 今日头条 Pro 无广告
 * 网易新闻 Pro 无广告
-* ZAKER 专业版 无广告
 * 凤凰新闻 专业版 无广告
+* Reeder rss 利器
 
 #### iPad
 
@@ -316,7 +327,11 @@ VLC
 
 ### iPad
 
-[VLC](https://www.videolan.org/vlc/download-android.html) (可倍速播放视频) 和 优爱腾
+[VLC](https://www.videolan.org/vlc/download-android.html) (可倍速播放视频) 和 优酷 腾讯视频
+
+not
+
+爱奇艺 有广告
 
 ### aPad
 
@@ -367,7 +382,7 @@ not
 
 ### iPhone
 
-* Document (或者 GoodReader 苹果管理文件神器, 需付费)
+* Documents (或者 GoodReader 苹果管理文件神器, 需付费)
 * 雨时 看天气 或者 彩云天气Pro（需付费）
 * 百度输入法 当时 iOS 7 推出的时候就很好用
 * 智能工具箱 可以用来听分贝 测距离啥的
@@ -455,15 +470,14 @@ not
 
 ### iPhone
 
-每日英语听力
-
-欧路词典
-
-算法动画图解
+* 每日英语听力
+* 欧路词典
+* 算法动画图解
+* [多邻国](https://sj.qq.com/appdetail/com.duolingo) 多国语言学习
 
 ### iPad
 
-* 文本鹦鹉 可以朗读英文文本文件
+* Text Parrot 文本鹦鹉 可以朗读英文文本文件
 * 英语事事通 有很多免费英文材料
 
 * [每日英语听力](https://sj.qq.com/appdetail/com.qianyan2.ting.en)
@@ -503,6 +517,10 @@ not
 * [闪送](https://sj.qq.com/appdetail/cn.ishansong)
 * [58 同城](https://sj.qq.com/appdetail/com.wuba) 假消息太多，注意防范什么引流之类，但也有真实的
 * [安居客](https://sj.qq.com/appdetail/com.anjuke.android.app)
+
+### iPhone
+
+* 什么值得买
 
 ### iPad
 
@@ -656,7 +674,7 @@ Alook
 
 ### iPad
 
-Alook 虽然尚且能用，可能火狐和 edge 依旧是更好的选择
+Alook 虽然尚且能用，但是内核好像还是同内置浏览器。可能火狐和 edge 依旧是更好的选择
 
 ### aPad
 
@@ -703,6 +721,8 @@ AIDA64 硬件检测
 AIDA64 硬件检测
 
 ## 21. 局域网通讯
+
+### 安卓 iPhone iPad APad
 
 [LocalSend](https://localsend.org/) Share files to nearby devices
 

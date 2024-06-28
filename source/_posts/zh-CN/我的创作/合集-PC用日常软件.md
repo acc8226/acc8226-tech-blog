@@ -250,7 +250,7 @@ not
 
 [云萌 Windows 激活工具](https://cmwtat.cloudmoe.com/cn.html)
 
-### 2.OCR 软件
+### 2. OCR 软件
 
 【win】[Umi-OCR-OCR](https://github.com/hiroi-sora/Umi-OCR) 图片转文字识别软件
 
@@ -509,6 +509,10 @@ Seer 收费就算了
 #### windows 系统优化
 
 【win】[dism++](https://github.com/Chuyu-Team/Dism-Multi-language) 优化功能挺强，能注入驱动还能辅助装系统。适合高级用户。
+
+#### windows 蓝屏日志分析
+
+去 microsoft store 搜索 [WinDbg](https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/debugger-download-tools#install-debugging-tools-for-windows)
 
 ## 专业
 
