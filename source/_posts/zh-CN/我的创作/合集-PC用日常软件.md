@@ -24,7 +24,7 @@ categories: 我的创作
 
 * 【win 安装版】[360 极速浏览器](https://browser.360.cn/ee/) 安全防护永远要放在第一位，鼠标悬停切换标签功能值得点赞
 * 【mac】[360 极速浏览器](https://browser.360.cn/ee/mac/index.html) 或者 火狐
-* 【linux】360 安全浏览器
+* 【linux】firefox
 
 #### 3. 压缩解压
 
@@ -35,7 +35,7 @@ categories: 我的创作
 #### 4. 输入法
 
 * 【win mac】[微信输入法](https://z.weixin.qq.com/) 特有云粘贴板功能，现已支持跨设备粘贴文字和图片
-* [搜狗输入法 for linux](https://shurufa.sogou.com/linux)
+* 【linux [rime](https://github.com/rime/home/wiki/RimeWithIBusx) 
 
 ### 1. 工具类
 
@@ -194,6 +194,8 @@ mac 平台
 * 【全平台】[RustDesk](https://rustdesk.com/index.html) – The Open Source Remote Desktop Access Software
 * 备用【win mac】[ToDesk](https://www.todesk.com/download.html)
 
+* LocalSend 局域网文件传输，但是总不好用
+
 ### 8.启动器
 
 【Win】[捷键](https://atomgit.com/acc8226/jiejian/tags?tab=release) 已经包含了该功能，使用 alt + 空格可以呼出
@@ -210,6 +212,12 @@ not
 
 rubick 还不够完整
 
+**linux 平台**
+
+not
+
+albert 安装不上
+
 ### 9.阅读类
 
 * 【win】Sumatra PDF is a PDF, ePub, MOBI, CHM, XPS, DjVu, CBZ, CBR reader for Windows. 且提供安装版和绿色版，小巧好用
@@ -217,6 +225,8 @@ rubick 还不够完整
 
 * 【mac】自带 iBook 可用于阅读电子书
 * 【mac】Reeder 用于 rss
+
+* linux fbreader
 
 ### 10.桌面美化
 
@@ -325,6 +335,10 @@ not
 * 国产 ishot 的录屏
 * ev 录屏 由于很久都没更新了，然后鼠标点击也不体现点击效果，差评
 * FocuSee 需要登录账号
+
+#### linx
+
+* [Shotcut](https://www.shotcut.org/)
 
 ### 4. TTS 文字转语音软件
 
@@ -535,6 +549,7 @@ not
 
 ### 02. 网络加速
 
+hiddify next
 
 ### 03. 内网转发
 
@@ -556,11 +571,11 @@ not
 
 【绿色版】[HandBrake](https://handbrake.fr/) 视频转换
 
-### 06. 包管理器
+### 06. 包管理器 或 应用商店
 
-[【mac】Homebrew](https://brew.sh/index_zh-cn)
+【mac】[Homebrew](https://brew.sh/index_zh-cn)
 
-[【linux】AppImage](https://appimage.org)
+【linux】[AppImage](https://appimage.org)
 
 * 【win】[Scoop](https://scoop.sh/#/)
 * 【win】微软 winget 属于系统内置
@@ -635,7 +650,6 @@ not
 * Dawn Launcher 不好用
 * EncryptoforWin 厂商专注 mac 已经不更新了
 * listen1【mac】 2023 年初好多歌曲都不能播放了，无奈放弃
-* LocalSend 局域网文件传输，但是总不好用
 * MQTT.FX 很久没更新了，淘汰
 * OfficeBox 官方绿色版 颜值太低且功能不强大，差评
 * OneAuth 【Win 商店版】需要先登录的二步验证，差评
