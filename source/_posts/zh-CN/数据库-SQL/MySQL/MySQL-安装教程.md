@@ -310,7 +310,7 @@ MySQL 默认情况下是否区分大小写，使用 `show Variables like '%table
 
 vim /etc/mysql/my.cnf
 
-在使用 docker 容器时，有时候里边没有安装 vim，运行vim命令时提示说：vim: command not found，这个时候就需要安装 vim，当运行以下安装命令时：
+在使用 docker 容器时，有时候里边没有安装 vim，运行 vim 命令时提示说：vim: command not found，这个时候就需要安装 vim，当运行以下安装命令时：
 
 apt get install vim
 

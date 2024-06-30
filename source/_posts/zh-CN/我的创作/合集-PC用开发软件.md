@@ -150,7 +150,8 @@ or
 
 or
 
-【全平台 免费】[FreeFileSync](https://freefilesync.org/) 除了界面太不美观
+* 【全平台 免费】[FreeFileSync](https://freefilesync.org/) 除了界面太不美观
+* 【全平台 免费】[meld](https://meld.app/) 在 ubuntu 上界面和版本都很新和美观xxx
 
 - - -
 
