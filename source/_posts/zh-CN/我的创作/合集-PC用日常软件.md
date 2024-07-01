@@ -30,12 +30,12 @@ categories: 我的创作
 
 * 【win 安装版优先 绿色版次之】[PeaZip](https://peazip.github.io/) 智能解压很好用
 * 【mac AppStore 版】[The Unarchiver](https://theunarchiver.com/)或者也可以直接下载并使用[安装包](https://dl.devmate.com/com.macpaw.site.theunarchiver/TheUnarchiver.dmg)
-* linux 系统一般自带 tar 或 zip 命令。
+* linux 系统一般自带了 tar 或 zip 命令。
 
 #### 4. 输入法
 
 * 【win mac】[微信输入法](https://z.weixin.qq.com/) 特有云粘贴板功能，现已支持跨设备粘贴文字和图片
-* 【linux [rime](https://github.com/rime/home/wiki/RimeWithIBusx) 
+* 【linux [rime](https://github.com/rime/home/wiki/RimeWithIBusx) 或者 ubuntu 自带的 [IBus 智能拼音输入法](https://github.com/libpinyin/ibus-libpinyin)
 
 ### 1. 工具类
 

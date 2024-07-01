@@ -7,31 +7,49 @@ categories:
   - 日常软件
 ---
 
+## 开始
+
+连接网络
+如果是连接 wifi，点击右上角的去设置
+
+选择源
+去 软件与更新 应用
+将 下载自 更改为 位于中国的服务器
+
 更新系统
 sudo apt update
-sudo apt  upgrade -y
+sudo apt upgrade -y
+
+个性化设置
+建议开启夜灯
+
+## 熟悉系统软硬件以及浏览器和输入法
+
+gonme 页面熟悉 和 启动栏上面有帮助文档
+
+浏览器建议选择 firefox 或者自行安装 edge
+
+### 输入法
+
+这里采用自带的 [IBus 智能拼音](https://github.com/libpinyin/ibus-libpinyin) 1.15.7
+
+v 英文模式
+u 用户词库名模式
 
 ## 如何安装软件
 
-###  appimage
+### ubuntu 自带了 snap 商店
 
-```sh
-chmod +x  ./mouse-actions-gui_0.4.4_amd64.AppImage
-./mouse-actions-gui_0.4.4_amd64.AppImage
-```
+例如可以按需安装
 
-###  snap 商店
-
-snap 商店
-ubuntu 自带了
-
-例如可以安装
-
-bitwarden
 spotify
+[NewsFlash](https://gitlab.com/news-flash/news_flash_gtk)
+bitwarden
+powershell
 vscode
 idea
-vlc 安装失败，但是 nala 竟然可以安装成功
+pycharm
+vlc 装系统使用最小化配置竟然安装失败了，但是第二次重装系统选择全量却可以，另外使用 nala 也可以安装成功
 
 ### flathub 商店
 
@@ -39,50 +57,64 @@ vlc 安装失败，但是 nala 竟然可以安装成功
 更换源
 sudo flatpak remote-modify flathub --url=https://mirror.sjtu.edu.cn/flathub
 
+### appimage
+
+```sh
+chmod +x ./zhangsan.AppImage
+./zhangsan.AppImage
+```
+
 ## 安装软件
 
 内置 firefox 已经够用，然后再搭配插件 Vimium C - 全键盘操作浏览器 + Tree Style Tab - 树状标签页管理 + TST Hoverswitch
-官网下载  [rime](https://github.com/rime/home/wiki/RimeWithIBusx)  输入法
+或者选择 [edge](https://www.microsoft.com/zh-cn/edge) 还是不错的
+
+输入法使用自带的
+或者可以选择 [rime](https://github.com/rime/home/wiki/RimeWithIBusx) 输入法
 
 ```sh
 sudo apt-get install ibus-rime
 ```
+其中 rime 是通过 ctrl + ` 选择打字方案的
 
-[edge](https://www.microsoft.com/zh-cn/edge) 还是不错的
-
-然后 ctrl + ` 可以切换输入法
-
-鼠标手势 目前 mouse-actions 不生效
-键盘增强 虚位以待
 截图 自带的挺好用
+
 下载 motrix
-坚果云 安装失败但是最终还是成功了，参考了这篇[博客](https://blog.csdn.net/qq_41100419/article/details/131826132)
+
+坚果云 直接安装会失败，但最终参考了这篇[博客](https://blog.csdn.net/qq_41100419/article/details/131826132) 是成功了的
 
 ```sh
 ar x nautilus_nutstore_amd64.deb
 tar xJf control.tar.xz
 # 修改 control 中的依赖（用文本编辑器就可以），将其中的 libnautilus-extension1a (>= 3.14.1) 依赖删除（因为这个依赖 Ubuntu 23.04 已经没有了）
-tar --ignore-failed-read -cvJf control.tar.xz postinst   postrm  md5sums control
+tar --ignore-failed-read -cvJf control.tar.xz postinst postrm md5sums control
 #   将修改后的文件重新打包为 deb
 ar rcs newpackage.deb debian-binary control.tar.xz data.tar.xz
 # 完成这些步骤后，安装新生成的 newpackage.deb 即可。
-dpkg -i  newpackage.deb
+sudo dpkg -i  newpackage.deb
 ```
 
 bitwarden yyds
-office 中 [wps](https://www.wps.cn/product/wpslinux#) 缺少字体，然后打开一百多少 M 的 pdf 还会卡，由于是用 dpk 安装的，所以可以直接卸载 `sudo dpkg  -P  wps-office`
-pdf 用自带的阅读器就很好 或者 浏览器也不差
+
+[wps](https://www.wps.cn/product/wpslinux#) 缺少字体，然后打开一百多少 M 的 pdf 还会卡，由于是用 dpk 安装的，很不好用。所以可以直接卸载 `sudo dpkg  -P  wps-office`
+
+pdf 用自带的阅读器就很好 或者 浏览器内置功能也不差
+
 [qq](https://im.qq.com) 体验很好
+
 邮件收发由于网易邮箱大师安装失败了，所以还是雷鸟吧
+
 音乐用 spotify
-视频 mpv，本来想着用 vlc 但是打不开
+
+视频 mpv 太过于简陋，本来想着用 vlc 但是打不开，多次尝试后就可以了，否则可以使用 nala 安装 vlc
+
 espanso 尝试 snap 和手动安装都失败了，所以将尝试编译安装，将 17090412860 和 acc8226@qq.com 录入进去
 
 ToDesk 安装失败 因此卸载之
 sudo rm /opt/todesk/config/config.ini
 sudo apt-get remove --purge todesk
 
-[rustdesk](https://github.com/rustdesk/rustdesk/) 还是可以的
+[rustdesk](https://github.com/rustdesk/rustdesk/) 还是可以的，如果需要的可以装一个
 
 Albert 安装失败了
 [ulauncher](https://ulauncher.io/) ok
@@ -188,9 +220,7 @@ sudo dpkg -P microsoft-edge-stable
 
 ## 额外的软件
 
-[NewsFlash](https://gitlab.com/news-flash/news_flash_gtk) snap 商店也有下载
-
-[video-downloader](https://github.com/unrud/video-downloader)
+[video-downloader](https://github.com/unrud/video-downloader) 用不了，差评
 
 ## 技巧
 
@@ -230,7 +260,6 @@ gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
 
 注意：不要使用 sudo，此命令对当前用户生效
 
- 
 3\. 恢复默认设置。
 
 gsettings reset org.gnome.shell.extensions.dash-to-dock click-action
