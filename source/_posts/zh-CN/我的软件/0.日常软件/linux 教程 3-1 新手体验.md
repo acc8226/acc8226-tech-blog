@@ -25,16 +25,34 @@ sudo apt upgrade -y
 
 ## 熟悉系统软硬件以及浏览器和输入法
 
-gonme 页面熟悉 和 启动栏上面有帮助文档
+一般 linux 系统都会有帮助文档，例如 gonme 的文档，kde 的文档等
 
-浏览器建议选择 firefox 或者自行安装 edge
+### 浏览器
+
+uos 自带了 360 研发的基于 Chromium 开源项目的浏览器，支持鼠标手势 和 悬停，目前最为推荐。否则建议选择 firefox 或者 [edge](https://www.microsoft.com/zh-cn/edge)。
+
+插件上可以搭配 Vimium C - 全键盘操作浏览器
+
+目前 firefox 可能是一个比 edge 更好的选择，因为可以通过插件实现鼠标悬停：Tree Style Tab - 树状标签页管理 + TST Hoverswitch
+或者选择 还是不错的
 
 ### 输入法
 
-这里采用自带的 [IBus 智能拼音](https://github.com/libpinyin/ibus-libpinyin) 1.15.7
+系统自带的浏览器如果设置得当还是能用的。例如 ubuntu 和 Fedora 自带了 [IBus 智能拼音](https://github.com/libpinyin/ibus-libpinyin) 1.15.7
 
 v 英文模式
 u 用户词库名模式
+
+如果是国产 uos 自带搜狗浏览器体验也很棒
+
+除此以外，[rime](https://github.com/rime/home/wiki/RimeWithIBusx) 输入法较为推荐。
+
+```sh
+# rime 输入法安装
+sudo apt-get install ibus-rime
+```
+
+rime 默认可通过 ctrl + ` 选择打字方案的
 
 ## 如何安装软件
 
@@ -51,35 +69,33 @@ idea
 pycharm
 vlc 装系统使用最小化配置竟然安装失败了，但是第二次重装系统选择全量却可以，另外使用 nala 也可以安装成功
 
-### flathub 商店
+### fedora 自带了 gonme 家的 flathub 商店
+
+sudo apt install flatpak
+flatpak remote-add --if-not-exists flathub https://mirror.sjtu.edu.cn/flathub
 
 [flathub](https://flathub.org/) 商店
-更换源
+或者更换源
 sudo flatpak remote-modify flathub --url=https://mirror.sjtu.edu.cn/flathub
 
-### appimage
+flatpak remote-add --if-not-exists flathub-origin https://dl.flathub.org/repo/flathub.flatpakrepo
+
+### appimage 分发格式
 
 ```sh
 chmod +x ./zhangsan.AppImage
 ./zhangsan.AppImage
 ```
 
+### uos 可以安装玲珑格式
+
+目前软件还是不丰富
+
 ## 安装软件
 
-内置 firefox 已经够用，然后再搭配插件 Vimium C - 全键盘操作浏览器 + Tree Style Tab - 树状标签页管理 + TST Hoverswitch
-或者选择 [edge](https://www.microsoft.com/zh-cn/edge) 还是不错的
+截图 自带的挺好
 
-输入法使用自带的
-或者可以选择 [rime](https://github.com/rime/home/wiki/RimeWithIBusx) 输入法
-
-```sh
-sudo apt-get install ibus-rime
-```
-其中 rime 是通过 ctrl + ` 选择打字方案的
-
-截图 自带的挺好用
-
-下载 motrix
+下载 一般推荐 motrix，超过 xdm
 
 坚果云 直接安装会失败，但最终参考了这篇[博客](https://blog.csdn.net/qq_41100419/article/details/131826132) 是成功了的
 
@@ -94,7 +110,7 @@ ar rcs newpackage.deb debian-binary control.tar.xz data.tar.xz
 sudo dpkg -i  newpackage.deb
 ```
 
-bitwarden yyds
+bitwarden 依旧好用
 
 [wps](https://www.wps.cn/product/wpslinux#) 缺少字体，然后打开一百多少 M 的 pdf 还会卡，由于是用 dpk 安装的，很不好用。所以可以直接卸载 `sudo dpkg  -P  wps-office`
 
@@ -104,37 +120,58 @@ pdf 用自带的阅读器就很好 或者 浏览器内置功能也不差
 
 邮件收发由于网易邮箱大师安装失败了，所以还是雷鸟吧
 
-音乐用 spotify
+音乐用 spotify，如果系统 libc 版本太低可以选择 lx music
 
-视频 mpv 太过于简陋，本来想着用 vlc 但是打不开，多次尝试后就可以了，否则可以使用 nala 安装 vlc
+视频 mpv 太过于简陋，本来想着用 vlc 但是打不开，多次尝试后就可以了，否则 ubuntu 可以借助 apt 或者 nala 工具安装 vlc
 
-espanso 尝试 snap 和手动安装都失败了，所以将尝试编译安装，将 17090412860 和 acc8226@qq.com 录入进去
+espanso 如果在 ubuntu 上由于 snap 沙箱机制，会导致及时安装成功但是启动服务会失败，无奈可有尝试手动安装 和 编译安装
 
-ToDesk 安装失败 因此卸载之
+ToDesk 安装失败 因此卸载之，否则可以选择 [rustdesk](https://github.com/rustdesk/rustdesk/)
+
+```sh
 sudo rm /opt/todesk/config/config.ini
 sudo apt-get remove --purge todesk
+```
 
-[rustdesk](https://github.com/rustdesk/rustdesk/) 还是可以的，如果需要的可以装一个
-
-Albert 安装失败了
-[ulauncher](https://ulauncher.io/) ok
+Albert 安装失败了，[ulauncher](https://ulauncher.io/) 是可以，但是不好用，linux 平台的启动器令人堪忧
 
 ## 快捷键 的使用
 
 ### 雷柏键盘 专用
 
-fn + f3 打开计算器
-fn + f4 打开预览 同 win
-fn + f5 打开显示器设置
-fn + f6 上一曲
-fn + f7 下一曲
-fn + f8 暂停 播放
-fn + f9 停止
-fn + f10 静音
-fn + f11 降低音量
-fn + f12 升高音量
+fn + f1 打开浏览器 uos
+fn + f2 打开邮箱 uos
+fn + f3 打开计算器 uos、ubuntu
+fn + f4 打开预览 同 win ubuntu
+fn + f5 打开显示器设置 uos、ubuntu
+fn + f6 上一曲 uos、ubuntu
+fn + f7 下一曲 uos、ubuntu
+fn + f8 暂停 播放 uos、ubuntu
+fn + f9 停止 uos、ubuntu
+fn + f10 静音 uos、ubuntu
+fn + f11 降低音量 uos、ubuntu
+fn + f12 升高音量 uos、ubuntu
 
 ### 系统快捷键
+
+#### uos 快捷键
+
+通用
+ctrl  + alt + t 启动终端
+alt + 空格 弹出窗口菜单，就像在标题栏上右键单击一样
+
+alt + ` 切换同类型窗口
+
+启动器 shift + 空格
+
+关闭窗口 ctrl + q
+窗口最小化改为 Super + h
+系统监视器改为 ctrl + shift + esc
+
+Super + m 打开通知
+Super + 空格 快捷搜索
+
+#### ubuntu
 
 启动器
 Super + F1 打开系统帮助
@@ -157,21 +194,21 @@ alt + printScreen 对窗口截图
 win + 空格 切换输入法 再通过 shift 修饰表示切换上一个
 
 窗口
-alt + 空格 弹出窗口菜单，就像在标题栏上右键单击一样。
+alt + 空格 弹出窗口菜单，就像在标题栏上右键单击一样
 alt + f4 关闭窗口
-Alt+F7 来移动窗口
-Alt+F8 改变窗口大小。使用方向键移动或改变窗口大小，然后按 Enter 确定，也可以按 Esc 取消，返回到原来的状态。
+Alt + F7 来移动窗口
+Alt + F8 改变窗口大小。使用方向键移动或改变窗口大小，然后按 Enter 确定，也可以按 Esc 取消，返回到原来的状态。
 Super + 上 / alt + f10 最大化或还原窗口
 Super + h 隐藏当前窗口到任务栏 竟然和最小化是一个意思
-Super + ` 应用程序的窗口之间切换
+Super + ` 切换同类型窗口
 Super + 鼠标左键 拖拽窗口
-Super + D：显示桌面，隐藏所有窗口
+Super + d 显示桌面，隐藏所有窗口
 
 系统
 Super + s 打开快速设置菜单
 Super + L：锁定屏幕
-Super + A：显示全部应用，也可以款素s快速双击 Super
-Super+V 打开通知列表
+Super + a：显示全部应用，也可以款素s快速双击 Super
+Super + v 打开通知列表
 ctrl + alt + del 注销
 
 Docker
@@ -206,6 +243,11 @@ Alt + F4
 新建隐私浏览窗口 	Ctrl + Shift + P
 
 补齐 .com 地址 	Ctrl + Enter
+
+### vscode 的快捷键
+
+ctrl + alt + shift + 向上 向上复制一行
+alt + 向上 向上移动一行
 
 ## 卸载软件
 

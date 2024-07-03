@@ -24,18 +24,18 @@ categories: 我的创作
 
 * 【win 安装版】[360 极速浏览器](https://browser.360.cn/ee/) 安全防护永远要放在第一位，鼠标悬停切换标签功能值得点赞
 * 【mac】[360 极速浏览器](https://browser.360.cn/ee/mac/index.html) 或者 火狐
-* 【linux】firefox
+* 【linux】自带浏览器或者 Firefox
 
 #### 3. 压缩解压
 
 * 【win 安装版优先 绿色版次之】[PeaZip](https://peazip.github.io/) 智能解压很好用
 * 【mac AppStore 版】[The Unarchiver](https://theunarchiver.com/)或者也可以直接下载并使用[安装包](https://dl.devmate.com/com.macpaw.site.theunarchiver/TheUnarchiver.dmg)
-* linux 系统一般自带了 tar 或 zip 命令。
+* liunx 系统自带
 
 #### 4. 输入法
 
 * 【win mac】[微信输入法](https://z.weixin.qq.com/) 特有云粘贴板功能，现已支持跨设备粘贴文字和图片
-* 【linux [rime](https://github.com/rime/home/wiki/RimeWithIBusx) 或者 ubuntu 自带的 [IBus 智能拼音输入法](https://github.com/libpinyin/ibus-libpinyin)
+* 自带的输入法或者【linux】  [rime](https://github.com/rime/home/wiki/RimeWithIBusx) 
 
 ### 1. 工具类
 
@@ -43,19 +43,20 @@ categories: 我的创作
 
 * 【win 免费】WGestures 1 或者【win 付费】WGestures 2
 * 【mac】betterAndBetter 免费且比目前付费的 wg 2 功能更加强大，还自带 mac 上需要的翻转鼠标功能，于是我卸载了 Scroll Reverser
-* 【linux】[jersou/mouse-actions](https://github.com/jersou/mouse-actions)
+* 【linux】虚位以待
 
 #### 2. 键盘增强
 
 * 普通 windows 用户【win】MyKeymap [官网](https://xianyukang.com/MyKeymap.html)
 * 想要更高效率提升的 windows 用户 【win】[捷键](https://atomgit.com/acc8226/jiejian/tags?tab=release)
 * 【mac】hammerspoon + 自制脚本
+* 【linux】[autokey](https://github.com/autokey/autokey) | [帮助文档](https://autokey.github.io/intro.html) [教程1](https://www.lxlinux.net/5396.html) [教程2](https://devpress.csdn.net/linux/62ff35ce7e6682346619371c.html#devmenu16) 最好需要一定编程能力
 
 #### 3. 截图
 
 * 【win mac】[PixPin](https://pixpinapp.com/) 顺便期待 mac 版的推出
 * 【mac】[Snipaste](https://zh.snipaste.com/)
-* liunx 可以使用系统自带 或者 [flameshot-org/flameshot](https://github.com/flameshot-org/flameshot) Powerful yet simple to use screenshot software
+* liunx 系统自带
 
 #### 4. 护眼
 
@@ -69,15 +70,19 @@ mac 平台
 1. 【mac win】依旧 [f.lux](https://justgetflux.com/)
 2. 【appstore】一休 用于定时提醒
 
+【linux】平台虚位以待
+
 #### 5. 下载
 
 * 普通下载：【全平台 首选】[motrix](https://motrix.app/zh-CN/) | [下载页](https://motrix.app/zh-CN/download) 颜值高。支持下载 HTTP、FTP、BT、磁力链接等资源。即使 Github 资源也不在话下
-* 视频资源下载：【win mac】[neat download manager](https://www.neatdownloadmanager.com/index.php/en/) 体积小功能强，不支持磁力但是能配合浏览器拓展下载常见视频网站的任意视频随便下
+* 视频资源下载：【win mac】[neat download manager](https://www.neatdownloadmanager.com/index.php/en/) 体积小功能强，不支持磁力但是能配合浏览器拓展下载常见视频网站的任意视频随便下。
+* 【linux win】[xdm](https://github.com/subhra74/xdm/releases) 可以认为是 linux 环境下的 idm，很强大
 
 #### 6. 看图
 
 * 【win】[菠萝看图 BLumia/pineapple-pictures](https://github.com/BLumia/pineapple-pictures) A homebrew lightweight image viewer
 * 【mac】[Picture View](https://wl879.github.io/apps/picview/index.html)
+* liunx 系统自带
 
 #### 7. 图像处理
 
@@ -97,6 +102,10 @@ mac 平台
 
 依旧阿里云 + 坚果云的组合
 
+linux 平台
+
+坚果云表现良好，百度云很久没更新了
+
 #### 9. 密码管理
 
 【全平台】[BitWarden](https://bitwarden.com/)  一款全平台的密码管理软件。轻度使用安装浏览器插件即可，重度使用可以安装该软件。
@@ -108,7 +117,7 @@ mac 平台
 * 在线平台我推荐[腾讯文档](https://docs.qq.com/)，非常适合文档分享。但千万记得加水印和是设置只读访问权限，防止资料泄漏和被非法买卖。
 * 一般品牌笔记本都会赠送微软 Office 套件则够用了
 * 否则可以选择选择免费的【全平台】[WPS](https://www.wps.cn/)
-* 极客用户可以选择【全平台】 [LibreOffice](https://zh-cn.libreoffice.org/download/libreoffice/)
+* 【全平台】 [LibreOffice](https://zh-cn.libreoffice.org/download/libreoffice/) 作为补充
 
 #### 2.【常用】PDF 文档
 
@@ -116,7 +125,7 @@ mac 平台
 * 阅读器 【win 绿色版】[SumatraPDF](https://www.sumatrapdfreader.org/)
 * 编辑器 【win 安装版】[PDFgear](https://www.pdfgear.com/download/)
 * 【mac】PDF 如果站在简单读取的角度直接用浏览器即可。否则可以选择付费的 pdf expert
-* 【linux】PDF 如果站在简单读取的角度直接用浏览器即可
+* 【linux】自带或者用浏览器读取 pdf
 
 #### 3.mail 收发
 
@@ -146,7 +155,7 @@ mac 平台
 在线播放
 
 * 普通用户推荐在线播放推荐 【win mac】[QQ 音乐](https://y.qq.com/download/index.html) / 【win mac 在线】[网易云音乐](https://music.163.com/#/download)
-* 极客更喜欢 【win mac】lx-music-desktop 但是需要自行找资源
+* 极客更喜欢 【win mac linux】lx-music-desktop 但是需要自行找资源
 * 而我手持梯子，更喜欢 【全平台】Spotify 曲库很全，非会员稍有限制
 * 有本地音乐库存用户 【win】普听音乐。在阿里云盘的加持下很好用，用于打造自己的曲库
 
@@ -155,6 +164,10 @@ mac 平台
 本地音乐播放器 可能会选择 [foobar2000](https://www.foobar2000.org/)，但是歌词搜索呢，差很多意思
 
 在线则参考上面 windows 平台
+
+linux 平台
+
+本地播放自带就够了，平时我也基本不看歌词。在线版首选 Spotify，然后 lx-music-desktop 作为补充
 
 ### 4.【常用】视频类
 
@@ -198,21 +211,19 @@ mac 平台
 
 ### 8.启动器
 
-【Win】[捷键](https://atomgit.com/acc8226/jiejian/tags?tab=release) 已经包含了该功能，使用 alt + 空格可以呼出
-
-备用
-
-【全平台】utools 在 windows 平台我总感觉美中不足，但其他平台可以试试。一款极简、插件化、跨平台、现代化的桌面增强效率软件，它为用户提供了一个可以随时呼出的“看似简单”的输入框 (搜索框)，但这个输入框却蕴含了近乎“无限”的能力。
+【Win】[捷键](https://atomgit.com/acc8226/jiejian/tags?tab=release) 我当然更推荐自己的软件了，并且已经包含了该功能，使用 alt + 空格可以呼出
 
 **mac 平台**
 
-【mac】[Raycast](https://www.raycast.com/)
+【mac】[Raycast](https://www.raycast.com/)，另外 utools 可以备用 
 
 not
 
 rubick 还不够完整
 
 **linux 平台**
+
+utools 算是不错的选择了
 
 not
 
@@ -226,7 +237,8 @@ albert 安装不上
 * 【mac】自带 iBook 可用于阅读电子书
 * 【mac】Reeder 用于 rss
 
-* linux fbreader
+* 【linux w 用于阅读电子书
+* 【linux 】[NewsFlash](https://flathub.org/zh-Hans/apps/io.gitlab.news_flash.NewsFlash) 很棒的一款 rss 阅读器
 
 ### 10.桌面美化
 
@@ -265,6 +277,8 @@ not
 【win】[Umi-OCR-OCR](https://github.com/hiroi-sora/Umi-OCR) 图片转文字识别软件
 
 【win mac 已购】[极度扫描-文字识别-OCR](https://jidusm.wrste.com/)
+
+【linux】目前很多启动器比如 utools 都带了这个小功能
 
 ### 3.录屏软件
 
@@ -336,9 +350,11 @@ not
 * ev 录屏 由于很久都没更新了，然后鼠标点击也不体现点击效果，差评
 * FocuSee 需要登录账号
 
-#### linx
+#### linux
 
-* [Shotcut](https://www.shotcut.org/)
+录屏用自带的
+
+剪辑暂时用 [Shotcut](https://www.shotcut.org/)
 
 ### 4. TTS 文字转语音软件
 

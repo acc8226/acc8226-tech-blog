@@ -148,16 +148,14 @@ or
 
 【全平台 付费】[Beyond Compare 4](https://www.beyondcompare.cc/)
 
-or
+**mac 平台**
+
+虚位以待
+
+**linux 平台**
 
 * 【全平台 免费】[FreeFileSync](https://freefilesync.org/) 除了界面太不美观
-* 【全平台 免费】[meld](https://meld.app/) 在 ubuntu 上界面和版本都很新和美观xxx
-
-- - -
-
-mac 平台
-
-求 【Win】WinMerge 的免费平替
+* 【全平台 免费】[meld](https://meld.app/) 在 linux 系统上也很美观，在 debian 系中可以通过 `apt install meld` 进行安装
 
 ## 6. 【常用】IDE 集成开发环境
 
@@ -326,11 +324,13 @@ Redis is an in-memory database that persists on disk. The data model is key-valu
 
 ### Git
 
-macOS 和 linux 系统一般都自带 git, 如果想要体验最新版, 可以去 [Git 官网](https://git-scm.com)下载体验。通常更推荐 [Git 阿里源地址](https://registry.npmmirror.com/binary.html?path=git-for-windows/)
+macOS 和 linux 系统一般都自带 git, 如果想要体验最新版, 可以去 [Git 官网](https://git-scm.com)下载体验。通常更推荐 [Git 镜像地址](https://registry.npmmirror.com/binary.html?path=git-for-windows/)
 
 VSCode 和 IDEA 会自带 Git 功能。特别的如果是 windows 系统推荐搭配 [TortoiseGit](https://tortoisegit.org/download/) 简称小乌龟。
 
-不喜欢 TortoiseGit 的用户可以试试 【win mac】[Sourcetree](https://www.sourcetreeapp.com/)
+不喜欢 TortoiseGit 的用户可以试试【win mac】[Sourcetree](https://www.sourcetreeapp.com/)
+
+【linux】[sourcegit](https://github.com/sourcegit-scm/sourcegit/releases/) 或者 gnome 风格强烈的 [Gitg](https://wiki.gnome.org/Apps/Gitg) debian 系统可以直接 `apt install gitg` 进行安装
 
 ### SVN
 
