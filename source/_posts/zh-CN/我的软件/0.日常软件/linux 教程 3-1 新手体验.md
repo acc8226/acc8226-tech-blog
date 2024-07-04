@@ -141,20 +141,20 @@ Albert 安装失败了，[ulauncher](https://ulauncher.io/) 是可以，但是�
 
 fn + f1 打开浏览器 uos
 fn + f2 打开邮箱 uos
-fn + f3 打开计算器 uos、ubuntu
-fn + f4 打开预览 同 win ubuntu
-fn + f5 打开显示器设置 uos、ubuntu
-fn + f6 上一曲 uos、ubuntu
-fn + f7 下一曲 uos、ubuntu
-fn + f8 暂停 播放 uos、ubuntu
-fn + f9 停止 uos、ubuntu
-fn + f10 静音 uos、ubuntu
-fn + f11 降低音量 uos、ubuntu
-fn + f12 升高音量 uos、ubuntu
+fn + f3 打开计算器 uos、ubuntu、opensuse
+fn + f4 打开预览 同 win ubuntu 打开搜索 opensuse
+fn + f5 打开显示器设置 uos、ubuntu 打开系统设置 opensuse
+fn + f6 上一曲 uos、ubuntu、opensuse
+fn + f7 下一曲 uos、ubuntu、opensuse
+fn + f8 暂停 播放 uos、ubuntu、opensuse
+fn + f9 停止 uos、ubuntu、opensuse
+fn + f10 静音 uos、ubuntu、opensuse
+fn + f11 降低音量 uos、ubuntu、opensuse
+fn + f12 升高音量 uos、ubuntu、opensuse
 
 ### 系统快捷键
 
-#### uos 快捷键
+#### uos 系统
 
 通用
 ctrl  + alt + t 启动终端
@@ -171,7 +171,7 @@ alt + ` 切换同类型窗口
 Super + m 打开通知
 Super + 空格 快捷搜索
 
-#### ubuntu
+#### ubuntu 系统
 
 启动器
 Super + F1 打开系统帮助
@@ -224,6 +224,24 @@ alt + enter 属性
 enter打开
 delete 删除
 F2 重命名
+
+#### opensuse 系统
+
+通用
+ctrl + alt + t 打开终端
+
+文件系统
+meta + e 打开资源管理器
+ctrl + esc 打开进程管理器
+ctrl + n 新建窗口
+ctrl + alt + c 复制路径
+alt + shift + f4 在此处打开终端
+
+窗口
+alt + ` 切换同类型窗口
+最大化/还原 win + pageUP
+最小化 win + pageDown
+win + 数字 打开任务栏对于数字的窗口并切换
 
 ### firefox 的快捷键
 

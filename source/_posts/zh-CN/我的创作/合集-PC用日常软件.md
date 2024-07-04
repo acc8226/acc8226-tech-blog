@@ -43,7 +43,7 @@ categories: 我的创作
 
 * 【win 免费】WGestures 1 或者【win 付费】WGestures 2
 * 【mac】betterAndBetter 免费且比目前付费的 wg 2 功能更加强大，还自带 mac 上需要的翻转鼠标功能，于是我卸载了 Scroll Reverser
-* 【linux】虚位以待
+* 【linux】建议选择 KDE 桌面的自定义快捷键可以设置鼠标手势
 
 #### 2. 键盘增强
 
@@ -179,6 +179,10 @@ mac 平台
 * 【mac win】哔哩哔哩
 * 在线平台 优酷 可以免费看很多剧且目前是 1080p 免费看
 
+linux 平台
+
+vlc
+
 ### 5.【常用】社交类
 
 * 【win mac】[微信](https://weixin.qq.com/)
@@ -189,9 +193,11 @@ not
 
 阿里旺旺的 mac 版不好用
 
-- - -
+**mac 平台**
 
-mac 平台
+依旧 QQ 和 微信
+
+**linux 平台**
 
 依旧 QQ 和 微信
 
@@ -207,7 +213,7 @@ mac 平台
 * 【全平台】[RustDesk](https://rustdesk.com/index.html) – The Open Source Remote Desktop Access Software
 * 备用【win mac】[ToDesk](https://www.todesk.com/download.html)
 
-* LocalSend 局域网文件传输，但是总不好用
+* [LocalSend](https://localsend.org/download) 局域网文件传输，但是总不好用
 
 ### 8.启动器
 
