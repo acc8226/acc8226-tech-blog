@@ -24,7 +24,7 @@ categories: 我的创作
 
 * 【win 安装版】[360 极速浏览器](https://browser.360.cn/ee/) 安全防护永远要放在第一位，鼠标悬停切换标签功能值得点赞
 * 【mac】[360 极速浏览器](https://browser.360.cn/ee/mac/index.html) 或者 火狐
-* 【linux】自带浏览器或者 Firefox
+* 【linux】自带或者推荐 Firefox
 
 #### 3. 压缩解压
 
@@ -35,7 +35,7 @@ categories: 我的创作
 #### 4. 输入法
 
 * 【win mac】[微信输入法](https://z.weixin.qq.com/) 特有云粘贴板功能，现已支持跨设备粘贴文字和图片
-* 自带的输入法或者【linux】  [rime](https://github.com/rime/home/wiki/RimeWithIBusx) 
+* 自带的输入法或者【linux】 [rime](https://github.com/rime/home/wiki/RimeWithIBusx) 
 
 ### 1. 工具类
 
@@ -43,14 +43,14 @@ categories: 我的创作
 
 * 【win 免费】WGestures 1 或者【win 付费】WGestures 2
 * 【mac】betterAndBetter 免费且比目前付费的 wg 2 功能更加强大，还自带 mac 上需要的翻转鼠标功能，于是我卸载了 Scroll Reverser
-* 【linux】建议选择 KDE 桌面的自定义快捷键可以设置鼠标手势
+* 【linux】建议选择 KDE 桌面内置了鼠标手势
 
 #### 2. 键盘增强
 
 * 普通 windows 用户【win】MyKeymap [官网](https://xianyukang.com/MyKeymap.html)
 * 想要更高效率提升的 windows 用户 【win】[捷键](https://atomgit.com/acc8226/jiejian/tags?tab=release)
 * 【mac】hammerspoon + 自制脚本
-* 【linux】[autokey](https://github.com/autokey/autokey) | [帮助文档](https://autokey.github.io/intro.html) [教程1](https://www.lxlinux.net/5396.html) [教程2](https://devpress.csdn.net/linux/62ff35ce7e6682346619371c.html#devmenu16) 最好需要一定编程能力
+* 【linux】[autokey](https://github.com/autokey/autokey) | [帮助文档](https://autokey.github.io/intro.html) [教程1](https://www.lxlinux.net/5396.html) [教程2](https://devpress.csdn.net/linux/62ff35ce7e6682346619371c.html#devmenu16) 最好要会点 python
 
 #### 3. 截图
 
@@ -65,17 +65,18 @@ windows 平台
 1. 【win mac】【安装版】f.lux <https://justgetflux.com/>
 2. EyesGuard 定时提醒眼睛休息 ~~由于作者说微软商店不再提供更新~~，所以还是去 [github](https://github.com/avestura/EyesGuard/releases/) 下载最新版本。注：EyesGuard 需要 .Net 4.8 以上，老款 win 7 只能选择 [FadeTop](http://www.fadetop.com/)
 
-mac 平台
+**mac 平台**
 
 1. 【mac win】依旧 [f.lux](https://justgetflux.com/)
 2. 【appstore】一休 用于定时提醒
 
-【linux】平台虚位以待
+**linux 平台**
+虚位以待
 
 #### 5. 下载
 
 * 普通下载：【全平台 首选】[motrix](https://motrix.app/zh-CN/) | [下载页](https://motrix.app/zh-CN/download) 颜值高。支持下载 HTTP、FTP、BT、磁力链接等资源。即使 Github 资源也不在话下
-* 视频资源下载：【win mac】[neat download manager](https://www.neatdownloadmanager.com/index.php/en/) 体积小功能强，不支持磁力但是能配合浏览器拓展下载常见视频网站的任意视频随便下。
+* 视频资源下载：【win mac】[neat download manager](https://www.neatdownloadmanager.com/index.php/en/) 体积小功能强，不支持磁力但是能配合浏览器拓展下载常见视频网站的任意视频随便下
 * 【linux win】[xdm](https://github.com/subhra74/xdm/releases) 可以认为是 linux 环境下的 idm，很强大
 
 #### 6. 看图
@@ -159,15 +160,18 @@ linux 平台
 * 而我手持梯子，更喜欢 【全平台】Spotify 曲库很全，非会员稍有限制
 * 有本地音乐库存用户 【win】普听音乐。在阿里云盘的加持下很好用，用于打造自己的曲库
 
-mac 平台
+**mac 平台**
 
 本地音乐播放器 可能会选择 [foobar2000](https://www.foobar2000.org/)，但是歌词搜索呢，差很多意思
 
 在线则参考上面 windows 平台
 
-linux 平台
+**linux 平台**
 
-本地播放自带就够了，平时我也基本不看歌词。在线版首选 Spotify，然后 lx-music-desktop 作为补充
+本地播放自带就够了，平时我也基本不看歌词。
+
+在线版首选 Spotify，然后 lx-music-desktop 作为补充。
+本地音乐选择 kde 组件 [elisa](https://apps.kde.org/zh-cn/elisa/)
 
 ### 4.【常用】视频类
 
@@ -181,7 +185,11 @@ mac 平台
 
 linux 平台
 
-vlc
+vlc 或者 [haruna](https://haruna.kde.org/)
+
+not
+
+mpv 太简陋
 
 ### 5.【常用】社交类
 
@@ -356,7 +364,7 @@ not
 * ev 录屏 由于很久都没更新了，然后鼠标点击也不体现点击效果，差评
 * FocuSee 需要登录账号
 
-#### linux
+**linux 平台**
 
 录屏用自带的
 
@@ -597,7 +605,7 @@ hiddify next
 
 【mac】[Homebrew](https://brew.sh/index_zh-cn)
 
-【linux】[AppImage](https://appimage.org)
+【linux】[AppImage](https://appimage.org)、flatpak、snap
 
 * 【win】[Scoop](https://scoop.sh/#/)
 * 【win】微软 winget 属于系统内置

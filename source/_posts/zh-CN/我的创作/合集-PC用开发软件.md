@@ -330,7 +330,7 @@ VSCode 和 IDEA 会自带 Git 功能。特别的如果是 windows 系统推荐�
 
 不喜欢 TortoiseGit 的用户可以试试【win mac】[Sourcetree](https://www.sourcetreeapp.com/)
 
-【linux】[sourcegit](https://github.com/sourcegit-scm/sourcegit/releases/) 或者 gnome 风格强烈的 [Gitg](https://wiki.gnome.org/Apps/Gitg) debian 系统可以直接 `apt install gitg` 进行安装
+【linux】[sourcegit](https://github.com/sourcegit-scm/sourcegit/releases/) 或者 gnome 家的 [Gitg](https://wiki.gnome.org/Apps/Gitg) 或者 KDE 家的 kommit
 
 ### SVN
 
