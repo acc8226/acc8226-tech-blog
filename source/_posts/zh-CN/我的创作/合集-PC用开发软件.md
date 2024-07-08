@@ -37,7 +37,7 @@ categories: 我的创作
 
 Ant 在早期的 Java 项目中非常流行，它被设计用来驱动软件项目的构建过程，类似于 Make 工具，但它使用 XML（Extensible Markup Language）来描述构建过程和依赖关系，而不是传统的 Makefile。
 
-[Ant 官网](https://ant.apache.org/)
+Ant [官网](https://ant.apache.org/)
 
 #### Maven
 
@@ -105,11 +105,10 @@ not
 * 【全平台】[DBeaver Community](https://dbeaver.io/download/) 颜值太低
 * 【全平台】[DbVisualizer](https://www.dbvis.com/) 付费版才好用
 
-- - -
+**mac 和 linux 平台**
 
-mac 平台
-
-因为我有 Jetbrain 开源认证，暂时选用 DataGrip。
+* [Navicat Premium Lite](https://www.navicat.com.cn/download/navicat-premium-lite) 毕竟免费
+* DataGrip 因为我有 Jetbrain 开源认证，暂时选用
 
 ## 3. Docker
 
@@ -150,12 +149,12 @@ or
 
 **mac 平台**
 
-虚位以待
+暂时使用付费的 Beyond Compare 或者丑陋的 [FreeFileSync](https://freefilesync.org/)
 
 **linux 平台**
 
 * 【全平台 免费】[FreeFileSync](https://freefilesync.org/) 除了界面太不美观
-* 【全平台 免费】[meld](https://meld.app/) 在 linux 系统上也很美观，在 debian 系中可以通过 `apt install meld` 进行安装
+* 【全平台 免费】[meld](https://meld.app/) 在 linux 系统上也很美观
 
 ## 6. 【常用】IDE 集成开发环境
 
@@ -184,7 +183,7 @@ Dart [官网](https://dart.cn/)
 
 ### Go
 
-Go[官网](https://golang.google.cn/)
+Go [官网](https://golang.google.cn/)
 
 ### Java
 
@@ -270,11 +269,13 @@ not
 * Postcat 功能还不太完善
 * Postman 不好用 必须登录
 
-- - -
-
-mac 平台
+**mac 平台**
 
 【mac】[RapidAPI for Mac](https://paw.cloud/) – The most advanced API tool for Mac
+
+**linux 平台**
+
+httpie/desktop [官网下载](https://httpie.io/download)
 
 ### mqtt 调试
 
@@ -294,9 +295,9 @@ mac 平台
 【linux】[AppImage](https://appimage.org/) 让 Linux 应用随处运行
 
 * 【win】[Scoop](https://scoop.sh/#/)
-* 【win】winget 微软 Windows 程序包管理器
 * 【win】[chocolatey](https://chocolatey.org/) The Package Manager for Windows
 * 【win】[scoop](https://scoop.sh/) A command-line installer for Windows
+* 【win】winget 微软 Windows 程序包管理器
 
 【JavaScript】[Yarn](https://www.yarnpkg.cn/) - JavaScript 软件包管理器
 
@@ -340,15 +341,17 @@ not
 
 【便携版】SVN 命令行工具 [Apache-Subversion-1.14.3](https://www.visualsvn.com/files/Apache-Subversion-1.14.3.zip)
 
-- - -
+**mac 平台**
 
-mac 平台
-
-求 【Win】TortoiseSVN 的免费平替
+虚位以待
 
 not
 
-【gui mac】snailSVN
+【gui mac】snailSVN 偶有 bug
+
+**linux 平台**
+
+虚位以待
 
 ## 14. server 服务器
 
@@ -388,9 +391,7 @@ not
 * 【win mac】XTerminal 颜值不够高
 * 【win】[VanDyke SecureCRT](https://www.vandyke.com/products/securecrt/index.html) 卡死了且界面老旧还付费
 
-- - -
-
-mac 平台
+**mac 和 linux 平台**
 
 依旧 [termius](https://www.termius.com/) 免费订阅模式
 
@@ -444,22 +445,41 @@ Windows 终端是一个新式主机应用程序，它面向你喜爱的命令行
 
 * RuoYi 是一个基于 Spring Boot 的权限和流程管理的 Java Web 应用程序框架。它旨在简化企业应用程序的开发，提供一个通用的后台管理框架，使得开发者可以快速构建出功能完备的后台管理系统。
 
-## 18.其他
+### 18. 效率工具
 
-【跨平台】PowerShell
+#### uTools
+
+【全平台】uTools 不止是一个启动器
+
+#### MyKeymap
+
+【windows】[MyKeymap](https://xianyukang.com/MyKeymap.html) 是 Windows 下的一款按键映射 / 快捷键增强工具
+
+#### 捷键
+
+【windows】捷键【开发者自荐】基于 Autohotkey2 开发，为简化 Windows 键鼠操作而生的键鼠增强工具。重新定义了一套快捷键方案，并充分发掘带侧键鼠标的潜力。又能作为一个高效启动器，最后还对热字符支持良好。
+[视频演示](https://www.bilibili.com/video/BV19H4y1e7hJ?vd_source=54168537affc2c02555097cb26797d99) | [下载地址](https://share.feijipan.com/s/bAAKufr3)
+
+#### 鼠标手势
+
+【win 免费 安装版】WGestures 1 [官网](https://www.yingdev.com/projects/wgestures)；【mac 免费】**betterAndBetter**；【linux】KDE 自定义快捷键中的鼠标手势。
+
+### 19.其他
+
+### 【跨平台】PowerShell
 
 [PowerShell](https://learn.microsoft.com/zh-cn/powershell/scripting/overview)
 
-PowerShell 是一种跨平台的任务自动化解决方案，由命令行 shell、脚本语言和配置管理框架组成。 PowerShell 在 Windows、Linux 和 macOS 上运行。
+是一种跨平台的任务自动化解决方案，由命令行 shell、脚本语言和配置管理框架组成。 PowerShell 在 Windows、Linux 和 macOS 上运行。
 完善了命令行历史记录功能，还包含丰富的定制项。可作为 bash 的替代品。
 
 高级用户可使用 zip 压缩包解压即用。
 
 [PowerShell-7.4.0-win-x64.zip](https://github.com/PowerShell/PowerShell/releases/download/v7.4.0/PowerShell-7.4.0-win-x64.zip)
 
-- - -
+### 【win】[MSYS2](https://www.msys2.org/)
 
-【win】[MSYS2](https://www.msys2.org/) 可以当做一个包管理器 一个终端 还兼容 linux 命令，可以安装 c 编译器 gcc 等。
+带一个包管理器，可以安装 c 编译器 gcc。也算一个终端吧，还兼容 linux 命令
 
 ### 性能测试和分析
 
