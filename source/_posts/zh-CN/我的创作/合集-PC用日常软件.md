@@ -16,26 +16,26 @@ categories: 我的创作
 
 #### 1. 电脑管家
 
-* win 7/8【win 安装版】或者普通想省心的用户 [360 安全卫士极速版](https://weishi.360.cn/)
-* win 10 以上用户或者想折腾的用户 【win 安装版】[微软电脑管家](https://pcmanager.microsoft.com/zh-cn) + 【win 安装版】[火绒安全软件](https://www.huorong.cn/)
+* 普通或想省心的用户【win 安装版】 [360 安全卫士极速版](https://weishi.360.cn/)
+* 其他则可以选择 【win 安装版】[微软电脑管家](https://pcmanager.microsoft.com/zh-cn) + 【win 安装版】[火绒安全软件](https://www.huorong.cn/)
 * 【mac】[腾讯柠檬清理](https://lemon.qq.com/) 主打清理电脑垃圾文件，一键释放磁盘空间。因 App Store 审核限制，完整版内部分功能无法上架（例如应用卸载等）。建议去官网下载完整版。
 
 #### 2. 浏览器
 
 * 【win 安装版】[360 极速浏览器](https://browser.360.cn/ee/) 安全防护永远要放在第一位，鼠标悬停切换标签功能值得点赞
-* 【mac】[360 极速浏览器](https://browser.360.cn/ee/mac/index.html) 或者 火狐
-* 【linux】自带或者推荐 Firefox
+* 【mac】[360 极速浏览器](https://browser.360.cn/ee/mac/index.html) 或者 [火狐](https://www.firefox.com.cn/)
+* 【linux】一般都自带[火狐](https://www.firefox.com.cn/)
 
 #### 3. 压缩解压
 
-* 【win 安装版优先 绿色版次之】[PeaZip](https://peazip.github.io/) 智能解压很好用
-* 【mac AppStore 版】[The Unarchiver](https://theunarchiver.com/)或者也可以直接下载并使用[安装包](https://dl.devmate.com/com.macpaw.site.theunarchiver/TheUnarchiver.dmg)
+* 【win 安装版优先 绿色版次之】[PeaZip](https://peazip.github.io/) 智能解压很好用，记得切换到中文语言
+* 【mac AppStore 版】[The Unarchiver](https://theunarchiver.com/)，也可以直接下载并使用[安装包](https://dl.devmate.com/com.macpaw.site.theunarchiver/TheUnarchiver.dmg)
 * liunx 系统自带
 
 #### 4. 输入法
 
-* 【win mac】[微信输入法](https://z.weixin.qq.com/) 特有云粘贴板功能，现已支持跨设备粘贴文字和图片
-* 自带的输入法或者【linux】 [rime](https://github.com/rime/home/wiki/RimeWithIBusx) 
+* 【win mac】自带的输入法或者[微信输入法](https://z.weixin.qq.com/) 特有云粘贴板功能，现已支持跨设备粘贴文字和图片
+* 【linux】自带的输入法或者[rime](https://github.com/rime/home/wiki/RimeWithIBusx) 
 
 ### 1. 工具类
 
@@ -47,15 +47,14 @@ categories: 我的创作
 
 #### 2. 键盘增强
 
-* 普通 windows 用户【win】MyKeymap [官网](https://xianyukang.com/MyKeymap.html)
-* 想要更高效率提升的 windows 用户 【win】[捷键](https://atomgit.com/acc8226/jiejian/tags?tab=release)
+* 【win 自荐】[捷键](https://atomgit.com/acc8226/jiejian/tags?tab=release)
 * 【mac】hammerspoon + 自制脚本
 * 【linux】[autokey](https://github.com/autokey/autokey) | [帮助文档](https://autokey.github.io/intro.html) [教程1](https://www.lxlinux.net/5396.html) [教程2](https://devpress.csdn.net/linux/62ff35ce7e6682346619371c.html#devmenu16) 最好要会点 python
 
 #### 3. 截图
 
-* 【win mac】[PixPin](https://pixpinapp.com/) 顺便期待 mac 版的推出
-* 【mac】[Snipaste](https://zh.snipaste.com/)
+* 【win mac】[PixPin](https://pixpinapp.com/)
+* 【mac】[Snipaste](https://zh.snipaste.com/) 其实是期待 PixPin for mac 的推出
 * liunx 系统自带
 
 #### 4. 护眼
@@ -76,7 +75,7 @@ windows 平台
 #### 5. 下载
 
 * 普通下载：【全平台 首选】[motrix](https://motrix.app/zh-CN/) | [下载页](https://motrix.app/zh-CN/download) 颜值高。支持下载 HTTP、FTP、BT、磁力链接等资源。即使 Github 资源也不在话下
-* 视频资源下载：【win mac】[neat download manager](https://www.neatdownloadmanager.com/index.php/en/) 体积小功能强，不支持磁力但是能配合浏览器拓展下载常见视频网站的任意视频随便下
+* 视频资源下载：【win mac】[neat download manager](https://www.neatdownloadmanager.com/index.php/en/) 体积小功能强，不支持磁力但是能配合浏览器拓展下载常见视频网站的视频
 * 【linux win】[xdm](https://github.com/subhra74/xdm/releases) 可以认为是 linux 环境下的 idm，很强大
 
 #### 6. 看图
@@ -221,7 +220,7 @@ not
 
 ### 8.启动器
 
-【Win】[捷键](https://atomgit.com/acc8226/jiejian/tags?tab=release) 我当然更推荐自己的软件了，并且已经包含了该功能，使用 alt + 空格可以呼出
+【Win】[捷键](https://atomgit.com/acc8226/jiejian/tags?tab=release) 我当然更推荐自己的软件，并且已经包含了该功能，使用 alt + 空格可以呼出
 
 **mac 平台**
 
