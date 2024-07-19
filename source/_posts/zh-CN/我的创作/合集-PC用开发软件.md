@@ -116,13 +116,13 @@ not
 
 ## 4.【常用】Editor 编辑器
 
-【全平台】[VSCode](https://code.visualstudio.com) windows 推荐使用**安装版**而非便携版，这样能及时获得更新
+【全平台】[VSCode](https://code.visualstudio.com) windows 推荐使用**安装版**而非便携版，这样能及时获得更新。[win 7 最后一个支持版](https://code.visualstudio.com/updates/v1_70)
 
 vscode 插件推荐：[markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
 
 or
 
-【win 绿色版优先】[Notepad++](https://www.notepadnext.com/) 侯今吾（Don HO）蚍蜉撼大树，可笑不自量。想用就用，能抵制就抵制。
+【win 绿色版】[Notepad++](https://www.notepadnext.com/) 蚍蜉撼大树，用或者抵制
 
 not
 

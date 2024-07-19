@@ -1,7 +1,7 @@
 ---
 title: 合集-PC用日常软件
 date: 2023-03-22 21:02:00
-updated: 2024-01-30 22:50:00
+updated: 2024-07-19 22:00:59
 categories: 我的创作
 ---
 
@@ -14,55 +14,59 @@ categories: 我的创作
 
 ### 0. 必备
 
-#### 1. 电脑管家
+#### 1. 管家杀毒类
 
-* 普通或想省心的用户【win 安装版】 [360 安全卫士极速版](https://weishi.360.cn/)
+* 普通或想省心的用户【win 安装版】 [360 安全卫士极速版](https://weishi.360.cn)
 * 其他则可以选择 【win 安装版】[微软电脑管家](https://pcmanager.microsoft.com/zh-cn) + 【win 安装版】[火绒安全软件](https://www.huorong.cn/)
-* 【mac】[腾讯柠檬清理](https://lemon.qq.com/) 主打清理电脑垃圾文件，一键释放磁盘空间。因 App Store 审核限制，完整版内部分功能无法上架（例如应用卸载等）。建议去官网下载完整版。
+* 【mac】[腾讯柠檬清理](https://lemon.qq.com) 主打清理电脑垃圾文件，一键释放磁盘空间。因 App Store 审核限制，完整版内部分功能无法上架（例如应用卸载等）。建议去官网下载完整版。
 
 #### 2. 浏览器
 
-* 【win 安装版】[360 极速浏览器](https://browser.360.cn/ee/) 安全防护永远要放在第一位，鼠标悬停切换标签功能值得点赞
-* 【mac】[360 极速浏览器](https://browser.360.cn/ee/mac/index.html) 或者 [火狐](https://www.firefox.com.cn/)
-* 【linux】一般都自带[火狐](https://www.firefox.com.cn/)
+* 【win 绿色版】[百分浏览器](http://www.centbrowser.cn) 鼠标悬停切换标签功能值得点赞
+* 【mac】[360 极速浏览器](https://browser.360.cn/ee/mac/index.html)
+* 【linux】一般都会用自带[火狐](https://www.firefox.com.cn)
 
 #### 3. 压缩解压
 
-* 【win 安装版优先 绿色版次之】[PeaZip](https://peazip.github.io/) 智能解压很好用，记得切换到中文语言
-* 【mac AppStore 版】[The Unarchiver](https://theunarchiver.com/)，也可以直接下载并使用[安装包](https://dl.devmate.com/com.macpaw.site.theunarchiver/TheUnarchiver.dmg)
+* 【win 安装版优先 绿色版次之】[PeaZip](https://peazip.github.io) 智能解压很好用，记得切换到中文语言
+* 【mac】The Unarchiver[官网](https://theunarchiver.com) | [安装包](https://dl.devmate.com/com.macpaw.site.theunarchiver/TheUnarchiver.dmg)
 * liunx 系统自带
 
 #### 4. 输入法
 
-* 【win mac】自带的输入法或者[微信输入法](https://z.weixin.qq.com/) 特有云粘贴板功能，现已支持跨设备粘贴文字和图片
+* 【win mac】自带的输入法或者[微信输入法](https://z.weixin.qq.com) 特有云粘贴板功能，支持跨设备粘贴文字和图片
 * 【linux】自带的输入法或者[rime](https://github.com/rime/home/wiki/RimeWithIBusx) 
 
 ### 1. 工具类
 
-#### 1. 鼠标手势
+#### 1. 【常用】鼠标手势
 
-* 【win 免费】WGestures 1 或者【win 付费】WGestures 2
-* 【mac】betterAndBetter 免费且比目前付费的 wg 2 功能更加强大，还自带 mac 上需要的翻转鼠标功能，于是我卸载了 Scroll Reverser
-* 【linux】建议选择 KDE 桌面内置了鼠标手势
+* 【win 免费】WGestures 1 代 或者【win 付费】WGestures 2 代
+* 【mac】betterAndBetter 免费且比目前付费的 wg 2 代功能更强大，还自带 mac 上需要的翻转鼠标功能，于是我顺便卸载了 Scroll Reverser
+* 【linux】KDE 桌面内置了鼠标手势
 
-#### 2. 键盘增强
+#### 2. 【常用】键鼠增强
 
-* 【win 自荐】[捷键](https://atomgit.com/acc8226/jiejian/tags?tab=release)
+* 【win 自荐】[捷键](https://share.feijipan.com/s/bAAKufr3)
 * 【mac】hammerspoon + 自制脚本
 * 【linux】[autokey](https://github.com/autokey/autokey) | [帮助文档](https://autokey.github.io/intro.html) [教程1](https://www.lxlinux.net/5396.html) [教程2](https://devpress.csdn.net/linux/62ff35ce7e6682346619371c.html#devmenu16) 最好要会点 python
 
-#### 3. 截图
+备用
 
-* 【win mac】[PixPin](https://pixpinapp.com/)
-* 【mac】[Snipaste](https://zh.snipaste.com/) 其实是期待 PixPin for mac 的推出
+XMouseButtonControl 简称 [xmbc](https://www.highrez.co.uk/) 配置稍显复杂，竟然还有鼠标自然滚动翻转
+
+#### 3. 【常用】截图
+
+* 【win】[PixPin](https://pixpinapp.com)
+* 【mac】[Snipaste](https://zh.snipaste.com) 其实是期待 PixPin for mac 的推出
 * liunx 系统自带
 
-#### 4. 护眼
+#### 4. 【常用】护眼
 
-windows 平台
+**windows 平台**
 
-1. 【win mac】【安装版】f.lux <https://justgetflux.com/>
-2. EyesGuard 定时提醒眼睛休息 ~~由于作者说微软商店不再提供更新~~，所以还是去 [github](https://github.com/avestura/EyesGuard/releases/) 下载最新版本。注：EyesGuard 需要 .Net 4.8 以上，老款 win 7 只能选择 [FadeTop](http://www.fadetop.com/)
+1. 【win mac】【安装版】**f.lux** <https://justgetflux.com/>
+2. **EyesGuard** 定时提醒眼睛休息 [github](https://github.com/avestura/EyesGuard/releases/) 才提供最新版。注：EyesGuard 需要 .Net 4.8 以上，老款 win 7 需要下载 .net 环境
 
 **mac 平台**
 
@@ -70,41 +74,48 @@ windows 平台
 2. 【appstore】一休 用于定时提醒
 
 **linux 平台**
+
 虚位以待
 
-#### 5. 下载
+#### 5. 【常用】下载
 
-* 普通下载：【全平台 首选】[motrix](https://motrix.app/zh-CN/) | [下载页](https://motrix.app/zh-CN/download) 颜值高。支持下载 HTTP、FTP、BT、磁力链接等资源。即使 Github 资源也不在话下
-* 视频资源下载：【win mac】[neat download manager](https://www.neatdownloadmanager.com/index.php/en/) 体积小功能强，不支持磁力但是能配合浏览器拓展下载常见视频网站的视频
-* 【linux win】[xdm](https://github.com/subhra74/xdm/releases) 可以认为是 linux 环境下的 idm，很强大
+**windows 和 mac 平台**
 
-#### 6. 看图
+1. 普通下载：【全平台 首选】[motrix](https://motrix.app/zh-CN/) | [下载页](https://motrix.app/zh-CN/download) 颜值高。支持下载 HTTP、FTP、BT、磁力链接等资源。即使 Github 资源也不在话下
+2. 视频资源下载：【win mac】[neat download manager](https://www.neatdownloadmanager.com/index.php/en/) 体积小功能强，不支持磁力但是能配合浏览器拓展下载常见视频网站的视频
+
+**linux 平台**
+
+1. [motrix](https://motrix.app/zh-CN/)
+2. 【linux win】[xdm](https://github.com/subhra74/xdm/releases) 可以认为是 linux 环境下的 idm，很强大
+
+#### 6. 【常用】网盘
+
+**windows 平台**
+
+1. 传文件，用网页版的[文叔叔](https://www.wenshushu.cn/)
+2. 【win mac】[**阿里云盘**](https://www.aliyundrive.com/drive/) 主打大容量 + 同步功能，高峰时段限速但一般没感觉。 然后再搭配猫头鹰文件。看视频搭配搜狐视频也不错，可以读取阿里网盘的视频文件。
+3. 【全平台】[**坚果云**](https://www.jianguoyun.com/s/downloads) 主要用于存少量文档
+
+**mac 平台**
+
+依旧阿里云 + 坚果云的组合
+
+**linux 平台**
+
+坚果云表现良好，百度云很久没更新了
+
+#### 7. 看图
 
 * 【win】[菠萝看图 BLumia/pineapple-pictures](https://github.com/BLumia/pineapple-pictures) A homebrew lightweight image viewer
 * 【mac】[Picture View](https://wl879.github.io/apps/picview/index.html)
 * liunx 系统自带
 
-#### 7. 图像处理
+#### 8. 图像处理
 
 * 【免费 网页版】美图秀秀在线版
 * 【win 轻量级】[ShareX](https://getsharex.com/) 也可以贴图，不过我更当是一个图片编辑器，还可以录屏
 * 【全平台 重量级】GIMP 【PS 的替代品且免费】 <https://www.gimp.org/>
-
-#### 8. 网盘
-
-windows 平台
-
-1. 传文件，用网页版的[文叔叔](https://www.wenshushu.cn/)
-2. 【win mac】[阿里云盘](https://www.aliyundrive.com/drive/) 主打大容量 + 同步功能，高峰时段限速但一般没感觉。 然后再搭配猫头鹰文件。看视频搭配搜狐视频也不错，可以读取阿里网盘的视频文件。
-3. 【全平台】[坚果云](https://www.jianguoyun.com/s/downloads) 主要用于存少量文档
-
-mac 平台
-
-依旧阿里云 + 坚果云的组合
-
-linux 平台
-
-坚果云表现良好，百度云很久没更新了
 
 #### 9. 密码管理
 
@@ -114,18 +125,28 @@ linux 平台
 
 #### 1.【常用】Office
 
-* 在线平台我推荐[腾讯文档](https://docs.qq.com/)，非常适合文档分享。但千万记得加水印和是设置只读访问权限，防止资料泄漏和被非法买卖。
-* 一般品牌笔记本都会赠送微软 Office 套件则够用了
-* 否则可以选择选择免费的【全平台】[WPS](https://www.wps.cn/)
-* 【全平台】 [LibreOffice](https://zh-cn.libreoffice.org/download/libreoffice/) 作为补充
+一般品牌笔记本都会赠送微软 Office 套件则够用了，否则主力我用 【全平台】 [LibreOffice](https://zh-cn.libreoffice.org/download/libreoffice/)。
+
+【全平台】[WPS](https://www.wps.cn/) 的需要登录才能解锁基本编辑功能太恶心了。
+
+在线平台我推荐[腾讯文档](https://docs.qq.com/)，非常适合文档分享。但千万记得加水印和是设置只读访问权限，防止资料泄漏和被非法买卖。
 
 #### 2.【常用】PDF 文档
 
-* 【网页版 在线 pdf 工具】[Smallpdf.com - A Free Solution to all your PDF Problems](https://smallpdf.com/)
+**windows 平台**
+
 * 阅读器 【win 绿色版】[SumatraPDF](https://www.sumatrapdfreader.org/)
 * 编辑器 【win 安装版】[PDFgear](https://www.pdfgear.com/download/)
+
+**mac 平台**
+
 * 【mac】PDF 如果站在简单读取的角度直接用浏览器即可。否则可以选择付费的 pdf expert
+
+**linux 平台**
+
 * 【linux】自带或者用浏览器读取 pdf
+
+【网页版 在线 pdf 工具】[Smallpdf.com - A Free Solution to all your PDF Problems](https://smallpdf.com/)
 
 #### 3.mail 收发
 
@@ -148,43 +169,54 @@ linux 平台
 
 ### 3.【常用】音频类
 
-本地播放
+**windows 平台**
 
-【win】[MusicPlayer2](https://github.com/zhongyang219/MusicPlayer2)
+本地播放：【win】[MusicPlayer2](https://github.com/zhongyang219/MusicPlayer2)
 
-在线播放
+在线播放：
 
-* 普通用户推荐在线播放推荐 【win mac】[QQ 音乐](https://y.qq.com/download/index.html) / 【win mac 在线】[网易云音乐](https://music.163.com/#/download)
-* 极客更喜欢 【win mac linux】lx-music-desktop 但是需要自行找资源
-* 而我手持梯子，更喜欢 【全平台】Spotify 曲库很全，非会员稍有限制
+1. 【win mac】[QQ 音乐](https://y.qq.com/download/index.html) / 【win mac 在线】[网易云音乐](https://music.163.com/#/download)
+2. 【win mac linux】lx-music-desktop 但是需要自行找音乐源
+
+备选
+
+* 手持梯子可能会更喜欢 【全平台】Spotify 曲库很全，非会员稍有限制
 * 有本地音乐库存用户 【win】普听音乐。在阿里云盘的加持下很好用，用于打造自己的曲库
 
 **mac 平台**
 
-本地音乐播放器 可能会选择 [foobar2000](https://www.foobar2000.org/)，但是歌词搜索呢，差很多意思
+本地播放：虚位以待
 
-在线则参考上面 windows 平台
+not
+
+[foobar2000](https://www.foobar2000.org/)，但是歌词搜索呢，差很多意思
+
+在线播放：参考 windows 平台
 
 **linux 平台**
 
-本地播放自带就够了，平时我也基本不看歌词。
+本地播放：平时我也基本不看歌词。比如自带的 kde 组件 [elisa](https://apps.kde.org/zh-cn/elisa/)
 
-在线版首选 Spotify，然后 lx-music-desktop 作为补充。
-本地音乐选择 kde 组件 [elisa](https://apps.kde.org/zh-cn/elisa/)
+在线播放：
+
+1. lx-music-desktop 杀疯了
+2. 【全平台】Spotify 则作为补充
 
 ### 4.【常用】视频类
 
-* 本地 + 网络流播放首选【本地 win 官方安装版】[PotPlayer](https://potplayer.tv/?lang=zh_CN) 高清影音播放器
-* 在线平台 【win】[荐片播放器官网](https://www.jianpian6.co/) 最新电影，播放器
+**windows 平台**
 
-mac 平台
+本地播放：【win 官方安装版】[PotPlayer](https://potplayer.tv/?lang=zh_CN) 高清影音播放器
 
-* 【mac win】哔哩哔哩
-* 在线平台 优酷 可以免费看很多剧且目前是 1080p 免费看
+在线平台：【win】[荐片播放器](https://www.jianpian6.co/) 最新电影，播放器 + 哔哩哔哩客户端
 
-linux 平台
+**mac 平台**
 
-vlc 或者 [haruna](https://haruna.kde.org/)
+VLC + 哔哩哔哩客户端
+
+**linux 平台**
+
+本地播放：vlc 或者 [haruna](https://haruna.kde.org/)
 
 not
 
@@ -192,7 +224,7 @@ mpv 太简陋
 
 ### 5.【常用】社交类
 
-* 【win mac】[微信](https://weixin.qq.com/)
+* 【全平台】[微信](https://weixin.qq.com/)
 * 【全平台】[QQ](https://im.qq.com/index)
 * 【win】[Tim](https://tim.qq.com/download.html)
 
@@ -391,7 +423,9 @@ and
 
 mac 的腾讯柠檬清理已经自带了该功能
 
-### 7.DNS 相关【win】
+### 7.DNS 相关
+
+目前仅 windows 平台
 
 **DNS 优选**
 
@@ -441,6 +475,8 @@ or
 
 ### 10.【常用】清理卸载
 
+**windows 平台**
+
 【win】[极客卸载 Geek Uninstaller](https://geekuninstaller.com/download) 简单清爽
 
 or
@@ -452,15 +488,19 @@ not
 * 【win mac】ccleaner 只有安装版差评
 * 【绿色版】[RevoUninstaller](https://www.revouninstaller.com/products/revo-uninstaller-free/) 界面太旧了
 
-- - -
+**mac 平台**
 
-mac 的腾讯柠檬清理已带了该功能
+mac 的腾讯柠檬清理有卸载功能
 
 not
 
 * 【mac linux】CCleaner mac 版目前免费版功能有限
 * 【mac】cleanmymac x 付费
 * 【mac】app cleaner & unstall 付费
+
+**linux 平台**
+
+一些发行版本带了清理功能
 
 ### 11. 内网通讯
 
@@ -574,7 +614,7 @@ not
 
 ### 02. 网络加速
 
-hiddify next
+**hiddify**
 
 ### 03. 内网转发
 
