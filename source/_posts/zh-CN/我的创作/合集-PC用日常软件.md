@@ -53,7 +53,8 @@ categories: 我的创作
 
 备用
 
-XMouseButtonControl 简称 [xmbc](https://www.highrez.co.uk/) 配置稍显复杂，竟然还有鼠标自然滚动翻转
+* XMouseButtonControl 简称 [xmbc](https://www.highrez.co.uk/) 配置稍显复杂，竟然还有鼠标自然滚动翻转
+* Preme for Windows – 方便小巧的桌面增强工具
 
 #### 3. 【常用】截图
 
@@ -127,7 +128,7 @@ XMouseButtonControl 简称 [xmbc](https://www.highrez.co.uk/) 配置稍显复杂
 
 一般品牌笔记本都会赠送微软 Office 套件则够用了，否则主力我用 【全平台】 [LibreOffice](https://zh-cn.libreoffice.org/download/libreoffice/)。
 
-【全平台】[WPS](https://www.wps.cn/) 的需要登录才能解锁基本编辑功能太恶心了。
+【全平台】[WPS](https://www.wps.cn/) 需要登录才能解锁基本编辑功能太恶心
 
 在线平台我推荐[腾讯文档](https://docs.qq.com/)，非常适合文档分享。但千万记得加水印和是设置只读访问权限，防止资料泄漏和被非法买卖。
 
@@ -135,7 +136,7 @@ XMouseButtonControl 简称 [xmbc](https://www.highrez.co.uk/) 配置稍显复杂
 
 **windows 平台**
 
-* 阅读器 【win 绿色版】[SumatraPDF](https://www.sumatrapdfreader.org/)
+* 阅读器 【win 绿色版】[SumatraPDF](https://www.sumatrapdfreader.org/) is a PDF, ePub, MOBI, CHM, XPS, DjVu, CBZ, CBR reader for Windows. 且提供安装版和绿色版，小巧好用
 * 编辑器 【win 安装版】[PDFgear](https://www.pdfgear.com/download/)
 
 **mac 平台**
@@ -252,7 +253,9 @@ not
 
 ### 8.启动器
 
-【Win】[捷键](https://atomgit.com/acc8226/jiejian/tags?tab=release) 我当然更推荐自己的软件，并且已经包含了该功能，使用 alt + 空格可以呼出
+**windows 平台**
+
+【Win】[捷键](https://atomgit.com/acc8226/jiejian/) 我当然更推荐自己开发的软件，已经包含了该功能，使用 alt + 空格可以呼出
 
 **mac 平台**
 
@@ -272,7 +275,6 @@ albert 安装不上
 
 ### 9.阅读类
 
-* 【win】Sumatra PDF is a PDF, ePub, MOBI, CHM, XPS, DjVu, CBZ, CBR reader for Windows. 且提供安装版和绿色版，小巧好用
 * 【win】[Fluent Reader 一款 rss 阅读器](https://github.com/yang991178/fluent-reader/releases/)
 
 * 【mac】自带 iBook 可用于阅读电子书
@@ -287,7 +289,7 @@ albert 安装不上
 
 ## 拓展
 
-### 0.驱动运行库硬件检测
+### 0.【常用】驱动运行库硬件检测
 
 理论上安装鲁大师一个就够用了，驱动可以认准主板官网或者用 dism++ 备份原有驱动，如果不能连接网络我通常会安装 [驱动总裁万能网卡绿色版](https://www.sysceo.com/Software)
 
@@ -299,6 +301,8 @@ albert 安装不上
 运行库
 [Download Visual C++ Redistributable Runtimes All-in-One Feb 2024 | TechPowerUp](https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/)
 
+.net 运行库
+
 WirelessMon 4.0 用于监控无线适配器和 WiFi 接入点的 Windows 软件
 
 not
@@ -307,9 +311,9 @@ not
 * [驱动精灵](http://www.drivergenius.com/)
 * [驱动人生](https://www.160.com/) 下载驱动限速严重
 
-### 1.激活类
+### 1.【常用】激活类
 
-[GitHub - zbezj/HEU_KMS_Activator](https://dl.lancdn.com/landian/soft/heu/) | [备份站](https://dl.lancdn.com/landian/soft/heu/)
+[GitHub - zbezj/HEU_KMS_Activator](https://dl.lancdn.com/landian/soft/heu/) | [备份站](https://dl.lancdn.com/landian/soft/heu/) 支持数字激活LTSC，win11与office2021等激活
 
 [云萌 Windows 激活工具](https://cmwtat.cloudmoe.com/cn.html)
 
@@ -566,7 +570,7 @@ bab 可以开启该功能
 
 【mac】[AlDente - 负载限制器](https://apphousekitchen.com/)
 
-### 21.windows 也要有
+### 21.windows 特有
 
 #### 空格预览文件
 
@@ -576,7 +580,7 @@ not
 
 Seer 收费就算了
 
-#### WizMouse
+#### WizMouse 为 win7 必备
 
 【win】[WizMouse](https://antibody-software.com/wizmouse) 一款鼠标增强工具
 
@@ -592,6 +596,10 @@ Seer 收费就算了
 #### windows 蓝屏日志分析
 
 去 microsoft store 搜索 [WinDbg](https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/debugger-download-tools#install-debugging-tools-for-windows)
+
+#### resource hacker
+
+解析 exe，例如可以轻松查看 preme 的 ahk 源码
 
 ## 专业
 
@@ -612,9 +620,9 @@ not
 
 [AList](https://alist.nn.ci/zh/)
 
-### 02. 网络加速
+### 02. 【常用】网络加速
 
-**hiddify**
+hiddify
 
 ### 03. 内网转发
 

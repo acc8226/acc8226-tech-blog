@@ -48,7 +48,7 @@ categories: 我的创作
 
 过期日期提醒的 app
 
-## 装机必备
+## 1. 装机必备
 
 以下观点谨代表个人当时在使用 app 后的主观个人意见，没有任何挤踩成分，只是可能不适合我个人使用。
 
@@ -441,7 +441,7 @@ not
 * [亿通行](https://sj.qq.com/appdetail/enfc.metro)  北京专用 旅行几日游专用
 * [北京一卡通](https://sj.qq.com/appdetail/cn.com.bmac.nfc)
 
-## 6. education 教育【常用】
+## 6. education 教育
 
 ### 安卓
 
@@ -607,7 +607,7 @@ weico 下架了，变成了微博国际板，后面又变成轻享版了，结�
 * [翼支付](https://sj.qq.com/appdetail/com.chinatelecom.bestpayclient) 由于我办理业务期间会每月会赠送代金券
 * [数字人民币](https://sj.qq.com/appdetail/cn.gov.pbc.dcep) 现放开了注册，但是生态还不完善，然后 170 的收集也注册不了，现在我是用 153 的号码进行注册的。
 
-## 12. 网盘
+## 12. 网盘【常用】
 
 ### 安卓
 
@@ -656,7 +656,7 @@ not 印象笔记 付费内容现在太多了
 
 * [微软桌面](https://apkpure.com/cn/microsoft-launcher/com.microsoft.launcher/download) 不喜欢系统桌面可以试试
 
-## 16. 浏览器
+## 16. 浏览器【常用】
 
 ### 安卓
 
