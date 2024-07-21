@@ -207,7 +207,7 @@ not
 
 ### 6. 听物
 
-### 安卓
+#### 安卓
 
 1. [得到](https://sj.qq.com/appdetail/com.luojilab.player) 非常好
 2. [讯飞有声](https://sj.qq.com/appdetail/com.iflytek.readassistant) 难得的免费收听时长的可听本地图书和 pdf 的 app，这可能是目前的一个较好的方案
@@ -222,13 +222,13 @@ not
 * [少年得到](https://sj.qq.com/appdetail/com.dedao.juvenile) 更适合中小学生
 * [凤凰 FM](https://sj.qq.com/appdetail/com.ifeng.fhdt) 偶尔闪退
 
-### iPhone
+#### iPhone
 
 得到
 
 极客时间
 
-### iPad
+#### iPad
 
 * **得到**
 * 极客时间
