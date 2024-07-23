@@ -207,7 +207,7 @@ not
 
 **windows 平台**
 
-本地播放：【win 官方安装版】[PotPlayer](https://potplayer.tv/?lang=zh_CN) 高清影音播放器
+本地播放：【win 官方安装版】PotPlayer [官网](https://potplayer.tv/?lang=zh_CN) |  [某中文网提供绿色版](https://potplayer.org/) 高清影音播放器
 
 在线平台：【win】[荐片播放器](https://www.jianpian6.co/) 最新电影，播放器 + 哔哩哔哩客户端
 
