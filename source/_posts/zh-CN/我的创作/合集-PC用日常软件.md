@@ -16,58 +16,53 @@ categories: 我的创作
 
 #### 1. 管家杀毒类
 
-* 普通或想省心的用户【win 安装版】 [360 安全卫士极速版](https://weishi.360.cn)
+* 普通用户或者想省心的可以只安装【win 安装版】 [360 安全卫士极速版](https://weishi.360.cn)
 * 其他则可以选择 【win 安装版】[微软电脑管家](https://pcmanager.microsoft.com/zh-cn) + 【win 安装版】[火绒安全软件](https://www.huorong.cn/)
-* 【mac】[腾讯柠檬清理](https://lemon.qq.com) 主打清理电脑垃圾文件，一键释放磁盘空间。因 App Store 审核限制，完整版内部分功能无法上架（例如应用卸载等）。建议去官网下载完整版。
+* 【mac 官网版】[腾讯柠檬清理](https://lemon.qq.com) 主打清理电脑垃圾文件，一键释放磁盘空间。因 App Store 审核限制，完整版内部分功能无法上架（例如应用卸载等）。建议去官网下载完整版。
 
 #### 2. 浏览器
 
 * 【win 绿色版】[百分浏览器](http://www.centbrowser.cn) 鼠标悬停切换标签功能值得点赞
-* 【mac】[360 极速浏览器](https://browser.360.cn/ee/mac/index.html)
-* 【linux】一般都会用自带[火狐](https://www.firefox.com.cn)
+* 【mac 官网版】[360 极速浏览器](https://browser.360.cn/ee/mac/index.html)
+* 【linux】一般用自带[火狐](https://www.firefox.com.cn)
 
 #### 3. 压缩解压
 
-* 【win 安装版优先 绿色版次之】[PeaZip](https://peazip.github.io) 智能解压很好用，记得切换到中文语言
-* 【mac】The Unarchiver[官网](https://theunarchiver.com) | [安装包](https://dl.devmate.com/com.macpaw.site.theunarchiver/TheUnarchiver.dmg)
-* liunx 系统自带
+* 【win 安装版】[PeaZip](https://peazip.github.io) 智能解压很好用，记得切换到中文语言，安装版和右键菜单集成的比较好
+* 【mac 官网版】[The Unarchiver](https://theunarchiver.com)
+* liunx 一般用自带的
 
 #### 4. 输入法
 
-* 【win mac】自带的输入法或者[微信输入法](https://z.weixin.qq.com) 特有云粘贴板功能，支持跨设备粘贴文字和图片
-* 【linux】自带的输入法或者[rime](https://github.com/rime/home/wiki/RimeWithIBusx) 
+* 【win mac】自带 或者[微信输入法](https://z.weixin.qq.com) 特有云粘贴板功能，支持跨设备粘贴文字和图片
+* 【linux】自带 或者[rime](https://github.com/rime/home/wiki/RimeWithIBusx) 
 
 ### 1. 工具类
 
 #### 1. 【常用】鼠标手势
 
-* 【win 免费】WGestures 1 代 或者【win 付费】WGestures 2 代
-* 【mac】betterAndBetter 免费且比目前付费的 wg 2 代功能更强大，还自带 mac 上需要的翻转鼠标功能，于是我顺便卸载了 Scroll Reverser
+* 【win 官网版】WGestures 1 代
+* 【mac 官网版】betterAndBetter 免费且比目前付费的 wg 2 代更强大，还自带 mac 上需要的翻转鼠标功能，于是我顺便卸载了 Scroll Reverser
 * 【linux】KDE 桌面内置了鼠标手势
 
 #### 2. 【常用】键鼠增强
 
 * 【win 自荐】[捷键](https://share.feijipan.com/s/bAAKufr3)
 * 【mac】hammerspoon + 自制脚本
-* 【linux】[autokey](https://github.com/autokey/autokey) | [帮助文档](https://autokey.github.io/intro.html) [教程1](https://www.lxlinux.net/5396.html) [教程2](https://devpress.csdn.net/linux/62ff35ce7e6682346619371c.html#devmenu16) 最好要会点 python
-
-备用
-
-* XMouseButtonControl 简称 [xmbc](https://www.highrez.co.uk/) 配置稍显复杂，竟然还有鼠标自然滚动翻转
-* Preme for Windows – 方便小巧的桌面增强工具
+* 【linux】autokey [Github 地址](https://github.com/autokey/autokey) | [帮助文档](https://autokey.github.io/intro.html) 适用于 qt 和 x11 平台，但总感觉差点意思
 
 #### 3. 【常用】截图
 
 * 【win】[PixPin](https://pixpinapp.com)
-* 【mac】[Snipaste](https://zh.snipaste.com) 其实是期待 PixPin for mac 的推出
+* 【mac】[Xnip](https://zh.xnipapp.com/) 其实我更期待 PixPin for mac 的推出，因为免费的 OCR 识图功能
 * liunx 系统自带
 
 #### 4. 【常用】护眼
 
 **windows 平台**
 
-1. 【win mac】【安装版】**f.lux** <https://justgetflux.com/>
-2. **EyesGuard** 定时提醒眼睛休息 [github](https://github.com/avestura/EyesGuard/releases/) 才提供最新版。注：EyesGuard 需要 .Net 4.8 以上，老款 win 7 需要下载 .net 环境
+1. 【win mac 安装版】**f.lux** <https://justgetflux.com/>
+2. **EyesGuard** 定时提醒眼睛休息 [github](https://github.com/avestura/EyesGuard/releases/) 才提供最新版。注：EyesGuard 需要 .Net 4.8 以上，win 7 也能用，但是需要提前下载安装 .net 环境
 
 **mac 平台**
 
@@ -104,7 +99,7 @@ categories: 我的创作
 
 **linux 平台**
 
-坚果云表现良好，百度云很久没更新了
+坚果云表现良好，百度云则很久没更新了
 
 #### 7. 看图
 
@@ -141,7 +136,7 @@ categories: 我的创作
 
 **mac 平台**
 
-* 【mac】PDF 如果站在简单读取的角度直接用浏览器即可。否则可以选择付费的 pdf expert
+* 【mac】PDF 如果站在简单读取的角度直接用浏览器即可。否则可以选择付费的 PDF Expert
 
 **linux 平台**
 
@@ -181,7 +176,7 @@ categories: 我的创作
 
 备选
 
-* 手持梯子可能会更喜欢 【全平台】Spotify 曲库很全，非会员稍有限制
+* 有梯子可能会更喜欢 【全平台】Spotify 曲库很全，非会员稍有限制
 * 有本地音乐库存用户 【win】普听音乐。在阿里云盘的加持下很好用，用于打造自己的曲库
 
 **mac 平台**
@@ -213,7 +208,11 @@ not
 
 **mac 平台**
 
-VLC + 哔哩哔哩客户端
+VLC/INNA + 哔哩哔哩客户端
+
+not
+
+FigPlayer 目前似乎还不完善
 
 **linux 平台**
 
@@ -280,8 +279,8 @@ albert 安装不上
 * 【mac】自带 iBook 可用于阅读电子书
 * 【mac】Reeder 用于 rss
 
-* 【linux w 用于阅读电子书
-* 【linux 】[NewsFlash](https://flathub.org/zh-Hans/apps/io.gitlab.news_flash.NewsFlash) 很棒的一款 rss 阅读器
+* 【linux】fbreader 用于阅读电子书
+* 【linux】[NewsFlash](https://flathub.org/zh-Hans/apps/io.gitlab.news_flash.NewsFlash) 很棒的一款 rss 阅读器
 
 ### 10.桌面美化
 
@@ -536,6 +535,10 @@ iOS 用户可下载 iTunes 或者某国产助手
 [Ventoy](https://www.ventoy.net/cn/index.html) linux 和 windows 二合一，且不妨碍 U 盘正常使用
 
 【win】【备用】微 PE 工具箱 - 装机维护工具。无广主打纯净 <https://www.wepe.com.cn/>
+
+not
+
+balenaEtcher 不太好用，虽然跨平台
 
 ### 16.微软 buff
 

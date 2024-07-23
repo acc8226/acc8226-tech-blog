@@ -149,12 +149,11 @@ or
 
 **mac 平台**
 
-暂时使用付费的 Beyond Compare 或者丑陋的 [FreeFileSync](https://freefilesync.org/)
+暂时使用付费的 Beyond Compare
 
 **linux 平台**
 
-* 【全平台 免费】[FreeFileSync](https://freefilesync.org/) 除了界面太不美观
-* 【全平台 免费】[meld](https://meld.app/) 在 linux 系统上也很美观
+* 【全平台 免费】[meld](https://meld.app/) 新版本在 linux 系统上颜值很高
 
 ## 6. 【常用】IDE 集成开发环境
 
@@ -391,7 +390,11 @@ not
 * 【win mac】XTerminal 颜值不够高
 * 【win】[VanDyke SecureCRT](https://www.vandyke.com/products/securecrt/index.html) 卡死了且界面老旧还付费
 
-**mac 和 linux 平台**
+**mac 平台**
+
+依旧 [termius](https://www.termius.com/) 免费订阅模式 + ZenTermLite 用于 sz 和 rz
+
+**linux 平台**
 
 依旧 [termius](https://www.termius.com/) 免费订阅模式
 
