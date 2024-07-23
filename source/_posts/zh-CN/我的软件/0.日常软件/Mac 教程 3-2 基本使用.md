@@ -43,18 +43,18 @@ Command + control + F 或者 点击左上角绿色按钮
 ### 善用快捷键
 
 **切换**
-⌘ + Tab：在打开的应用中切换到下一个最近使用的应用。
+⌘ + Tab 在打开的应用中切换到下一个最近使用的应用。
 ⌘ + ` 应用程序中的窗口切换
 
 **通用**
-Command-H：隐藏最前面的应用的窗口 Hide the window
+Command-H 隐藏最前面的应用的窗口 Hide the window
 Command-Option-H 隐藏（Hide）其他应用程序窗口
-Command-M：最小化窗口 Minimize the window
-Command-N 新建 Create a new XXX
+Command-M 最小化窗口 Minimize the window
+Command-N 新建窗口
 Command-O Open
 Command-S Save
 Command-P Print
-Command-W 关闭窗口 close the window
+Command-W 关闭窗口
 Command-Q 退出
 > 要判断一个应用是不是退出了，可以查看 Dock 栏是否有这个应用的图标显示，或者应用图标下方是否有指示灯。
 
