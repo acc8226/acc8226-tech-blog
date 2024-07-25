@@ -42,11 +42,23 @@ Command + control + F 或者 点击左上角绿色按钮
 
 ### 善用快捷键
 
+**窗口**
+
+control + 方向上 缩放
+command + m 最小化
+command + option + m 全部最小化
+
 **切换**
 ⌘ + Tab 在打开的应用中切换到下一个最近使用的应用。
-⌘ + ` 应用程序中的窗口切换
+⌘ + ` 应用程序内的窗口切换
 
 **通用**
+control + command + q 锁定屏幕
+command + , 打开设置
+command + d 复制并粘贴
+command + 空格 打开聚焦搜索
+shift 切换中英文
+
 Command-H 隐藏最前面的应用的窗口 Hide the window
 Command-Option-H 隐藏（Hide）其他应用程序窗口
 Command-M 最小化窗口 Minimize the window
@@ -58,7 +70,7 @@ Command-W 关闭窗口
 Command-Q 退出
 > 要判断一个应用是不是退出了，可以查看 Dock 栏是否有这个应用的图标显示，或者应用图标下方是否有指示灯。
 
-**浏览器的一些快捷键**
+**浏览器**
 打开位置 command + L
 关闭标签页 commond + W
 文件-导出书签：将导出html格式的书签，可以方便再次导入。
@@ -67,13 +79,13 @@ Command-Q 退出
 显示下载项 option + command + L
 shfit + command + R 进入阅读模式
 刷新页面 command + R
-Command+R（刷新页面，支持Safari和Chrome)
-Command++ / -/ 0（放大、缩小、还原，支持Safari和Chrome）
-Command+D：当前页存为书签
-Command+F：搜索
-Command+Shift+J：打开下载（Chrome）
-Command+T（新建标签页，支持Safari 和 Chrome）
-Command+Y（打开历史访问，支持 Safari 和 Chrome）
+Command + R（刷新页面，支持Safari和Chrome)
+Command + + / -/ 0（放大、缩小、还原，支持Safari和Chrome）
+Command + D：当前页存为书签
+Command + F：搜索
+Command + Shift+J：打开下载（Chrome）
+Command + T（新建标签页，支持Safari 和 Chrome）
+Command + Y（打开历史访问，支持 Safari 和 Chrome）
 
 **访达 Finder 和系统快捷键**
 Command-D：复制所选文件。
@@ -83,7 +95,75 @@ Command–左中括号 ([)：前往上一文件夹。
 Command–右中括号 (])：前往下一个文件夹。
 Command–上箭头：**向上一级**(打开包含当前文件夹的文件夹)
 Command–下箭头：打开所选项。
-Command-Delete：将所选项移到废纸篓。
+Command-Delete：将所选项移到废纸篓
+
+**safari**
+
+按住 Command 键点按链接 在新标签页中打开网页
+command + d 加入书签
+command + n 新建窗口
+command + l 定位到地址栏
+command + r 刷新
+command + t 新建标签页
+command + y 打开历史纪录
+command + w 关闭标签页
+command + shift + w 关闭窗口
+control + tab 切换标签页
+option + command + l 打开下载页
+
+**文稿快捷键**
+
+Control-H：删除插入点左边的字符。也可以使用 Delete 键
+Control-D：删除插入点右边的字符。也可以使用 Fn-Delete
+Option-Delete：删除插入点左边的字词
+
+**finder**
+
+command + n 新建文件夹
+command + t 新建标签页
+command + w 关闭标签页
+command + option + w 全部关闭
+command + shift + n 新建文件夹
+control + shift + tab 切换标签页
+command + [ 后退
+command + ] 前进
+command + delete 删除
+Control-Command-A：为所选项制作替身
+
+**鼠标拖动**
+
+默认为移动
+若要拷贝该项目而不移动它，请按住 Option 键进行拖移
+拖移时按住 Option-Command：为拖移的项目制作替身。拖移项目时指针会发生变化
+
+**vscode**
+
+command + z 撤销
+command + shift + z 恢复
+command + n 新建文本文件
+command + c 复制行
+option + 方向上下 移动行
+option + shift + 方向上下 复制并粘贴行
+command + w 关闭编辑器
+command + shift + w 关闭窗口
+command + shift + p 命令面板
+control + shift + ` 打开终端
+
+**常用快捷键**
+
+最大化/还原 不能使用 control + 方向上，看来得另辟蹊径
+最小化 command + m
+前进 command + ]
+后退 command + [
+切换到上一个标签 shift + command + [
+切换到下一个标签 shift + command + ]
+关闭标签 command + w
+撤销已关闭的标签 command + shift + t
+
+快捷键是否需要增强？
+
+z 置顶 ctrl + f7 |
+f 全屏 f11 | control + command + f
 
 ### 快速显示桌面
 
