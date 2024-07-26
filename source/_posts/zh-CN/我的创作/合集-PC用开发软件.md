@@ -143,17 +143,17 @@ not
 
 【Win】WinMerge [官网](https://winmerge.org/) | [下载页](https://winmerge.org/downloads/?lang=en) 用于比较文件夹和文件，以便于理解和处理的可视文本格式呈现差异。是我离不开 windows 的一个重要原因
 
-or
+备用
+
+[meld for windows](https://mirrors.ustc.edu.cn/gnome/binaries/win32/meld/)
+
+not
 
 【全平台 付费】[Beyond Compare 4](https://www.beyondcompare.cc/)
 
-**mac 平台**
+**mac 和 linux 平台**
 
-暂时使用付费的 Beyond Compare
-
-**linux 平台**
-
-* 【全平台 免费】[meld](https://meld.app/) 新版本在 linux 系统上颜值很高
+【全平台 免费】[meld](https://meld.app/) 新版本颜值很高
 
 ## 6. 【常用】IDE 集成开发环境
 
