@@ -57,6 +57,10 @@ categories: 我的创作
 * 【mac】[Xnip](https://zh.xnipapp.com/) 其实我更期待 PixPin for mac 的推出，因为免费的 OCR 识图功能
 * liunx 系统自带
 
+怀旧经典
+
+【win】faststone capture for windows 5.3
+
 #### 4. 【常用】护眼
 
 **windows 平台**
@@ -121,11 +125,15 @@ categories: 我的创作
 
 #### 1.【常用】Office
 
-一般品牌笔记本都会赠送微软 Office 套件则够用了，否则主力我用 【全平台】 [LibreOffice](https://zh-cn.libreoffice.org/download/libreoffice/)。
-
-【全平台】[WPS](https://www.wps.cn/) 需要登录才能解锁基本编辑功能太恶心
+一般品牌笔记本都会赠送微软 Office 套件则够用了
+广大用户还是老老实实【全平台】[WPS](https://www.wps.cn/) 需要登录才能解锁基本编辑功能太恶心
+主力我用 【全平台】 [LibreOffice](https://zh-cn.libreoffice.org/download/libreoffice/)
 
 在线平台我推荐[腾讯文档](https://docs.qq.com/)，非常适合文档分享。但千万记得加水印和是设置只读访问权限，防止资料泄漏和被非法买卖。
+
+怀旧经典
+
+WPS 2013
 
 #### 2.【常用】PDF 文档
 
@@ -240,6 +248,10 @@ not
 
 1. 【全平台】[每日英语听力 ](https://www.eudic.net/v4/en/app/ting)
 2. 【全平台】[欧路词典](https://www.eudic.net/v4/en/app/download)
+
+怀旧经典
+
+[灵格斯词典](http://www.lingoes.cn/index.html)
 
 ### 7.远程类
 
@@ -551,15 +563,12 @@ balenaEtcher 不太好用，虽然跨平台
 
 ### 18.文件加密
 
-Encrypto - 优雅地给文件加个密！精致的 PC / Mac 免费文件夹加密工具软件 - 异次元软件下载
-https://www.iplaysoft.com/encrypto.html
+1. [Encrypto](https://macpaw.com/encrypto) - 优雅地给文件加个密！精致的 PC / Mac 免费文件夹加密工具软件
+2. [PrivateAccess for sandisk](https://support-cn.wd.com/app/products/downloads/softwaredownloads) 闪迪 U 盘专用的加密工具
 
 ### 19.磁盘加密
 
-VeraCrypt - 最佳免费开源跨平台的文件加密工具 (支持U盘加密/硬盘分区加密) - 异次元软件下载
-https://www.iplaysoft.com/veracrypt.html
-
-[官网](https://veracrypt.fr/en/Home.html)
+[VeraCrypt](https://veracrypt.fr/en/Home.html) 最佳免费开源跨平台的文件加密工具 (支持U盘加密/硬盘分区加密)
 
 ### 20.mac 特有
 
@@ -594,7 +603,11 @@ Seer 收费就算了
 
 #### windows 系统优化
 
-【win】[dism++](https://github.com/Chuyu-Team/Dism-Multi-language) 优化功能挺强，能注入驱动还能辅助装系统。适合高级用户。
+* 【win】[dism++](https://github.com/Chuyu-Team/Dism-Multi-language) 优化功能挺强，能注入驱动还能辅助装系统。适合高级用户
+
+怀旧经典
+
+* 【win】软媒魔方优化大师
 
 #### windows 蓝屏日志分析
 
