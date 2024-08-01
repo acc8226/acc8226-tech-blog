@@ -5,24 +5,19 @@ updated: 2024-08-01 10:00:42
 categories: 我的创作
 ---
 
-## 置顶
-
-安全永远第一条
+安全永远是第一要务。下载软件也尽量从应用商店，这样更安全，也避免从其他渠道下载到恶意软件。
 
 不要让陌生人开启做出来电转接 `##*21` 这种可能很可能有害的行为。绝对不要共享屏幕，不要转账。预防电信网络诈骗。千万不能好奇。一定要做到**不贪心不恐惧**。
+
+注：以下内容谨代表个人观点。本次涵盖了安卓和苹果的手机平板四大平台，在挑选 app 上尽量跨平台为主，一定程度保证使用体验一致。主要以安卓手机系统为主。另外“官网收录”模块收录的官网仅供参考。
 
 ## 前言
 
 ### 安卓还是 iOS
 
-或者是现在火热的鸿蒙。
+或者是现在火热的鸿蒙
 
-如果只考虑必要需求，现阶段低于 2000 选安卓手机。
-
-如果有了手机可以考虑买个平板。3000 以上买苹果，2000~3000 综合考虑买苹果（旧版本 iPad mini）还是安卓平板，2000 一下只推荐买安卓平板（例如华为 M3 平板）。
-因为已盖了几年泡面, 有点儿卡的苹果其实不如同等价位的安卓平板
-
-本人沉迷于各种 App, iOS 有优秀的应用生态。首选需要注册一个 Apple ID，可选的需要添加付款方式，方便购买 App。而安卓只要手机号就行。
+如果只考虑必要需求，现阶段低于 2000 选安卓手机，且一般建议有了手机才考虑买个平板
 
 ### 手机还是平板
 
@@ -32,6 +27,8 @@ categories: 我的创作
 * 阅读 PDF、小说更方便
 * 可随时处理 Office 办公、邮件
 * 玩游戏更震撼
+
+关于价格：3000 以上预算请无脑选 iPad，2000~3000 综合考虑买 iPad 还是安卓平板，2000 一下只推荐买安卓平板
 
 ### 怎么挑选平板 Pad App
 
@@ -60,7 +57,9 @@ categories: 我的创作
 
 #### 安卓
 
-一般可以选择自带的手机管家。否则可以选择腾讯和 360 两家。
+一般可以选择自带的手机管家。否则可以选择腾讯和 360 两家
+
+官网收录：[腾讯手机管家](https://sj.qq.com/appdetail/com.tencent.qqpimsecure)
 
 #### iPhone
 
@@ -406,7 +405,7 @@ not
 * ~~李跳跳 已主动下架 真实好友 最新版没适配~~
 
 * 雨时 看天气 有广告
-* 彩云天气 提示开会员 
+* 彩云天气 提示开会员
 
 ### iPhone
 
@@ -470,6 +469,8 @@ not
 * [北京公交](https://sj.qq.com/appdetail/com.tianlutech.ebus) 补票用
 * [亿通行](https://sj.qq.com/appdetail/enfc.metro)  北京专用 旅行几日游专用
 * [北京一卡通](https://sj.qq.com/appdetail/cn.com.bmac.nfc)
+
+官网收录：[花小猪打车](https://sj.qq.com/appdetail/com.huaxiaozhu.rider)
 
 ### aPad
 
@@ -569,6 +570,8 @@ not
 * [58 同城](https://sj.qq.com/appdetail/com.wuba) 假消息太多，注意防范什么引流之类，但也有真实的
 * [安居客](https://sj.qq.com/appdetail/com.anjuke.android.app)
 
+官网收录：[猫眼电影](https://sj.qq.com/appdetail/com.sankuai.movie) | [58同城](https://sj.qq.com/appdetail/com.wuba) | [淘票票](https://sj.qq.com/appdetail/com.taobao.movie.android)
+
 ### iPhone
 
 * [什么值得买](https://sj.qq.com/appdetail/com.smzdm.client.android)
@@ -595,6 +598,8 @@ not
 
 [智行火车票](https://sj.qq.com/appdetail/com.yipiao) 不要用第三方
 
+官网收录：[飞常准](https://sj.qq.com/appdetail/vz.com) | [去哪儿旅行](https://sj.qq.com/appdetail/com.Qunar) | [同程旅行](https://sj.qq.com/appdetail/com.tongcheng.android) | [航班管家](https://sj.qq.com/appdetail/com.flightmanager.view) | [智行火车票](https://sj.qq.com/appdetail/com.yipiao)
+
 ### aPad
 
 [高铁管家](https://sj.qq.com/appdetail/com.gtgj.view) 至少适配了平板
@@ -611,6 +616,8 @@ not
 可选
 
 * [微博](https://sj.qq.com/appdetail/com.sina.weibo)
+
+官网收录：[丁香园](https://sj.qq.com/appdetail/cn.dxy.idxyer)
 
 ### iPhone
 
@@ -726,7 +733,7 @@ not [印象笔记](https://sj.qq.com/appdetail/com.yinxiang) 付费内容现在�
 
 not
 
-* 360 安全浏览器手机版 广告太多
+* [360 手机浏览器](https://mse.360.cn/) 广告太多
 * [Google Chrome](https://sj.qq.com/appdetail/com.android.chrome) 国内不好用
 * [uc 标准版](https://sj.qq.com/appdetail/com.UCMobile) 太臃肿了
 * uc 国际版 可能会屏蔽某些网站
@@ -818,14 +825,13 @@ AIDA64 硬件检测
 
 ## 24. 银行类 app
 
-[招商银行](https://sj.qq.com/appdetail/cmb.pb) 美观和体验还行
+[招商银行](https://sj.qq.com/appdetail/cmb.pb) 以及 [掌上生活](https://sj.qq.com/appdetail/com.cmbchina.ccd.pluto.cmbActivity) 的美观和体验还行
 
 [交通银行](https://sj.qq.com/appdetail/com.bankcomm.Bankcomm) 的 [买单吧](https://sj.qq.com/appdetail/com.bankcomm.maidanba)
-招商 的 [掌上生活](https://sj.qq.com/appdetail/com.cmbchina.ccd.pluto.cmbActivity)
 
 [网商银行](https://sj.qq.com/appdetail/com.mybank.android.phone) 可以支付宝提现免费，幸好我抢到资格比较早，但是用处不大
 
-[微众银行](https://sj.qq.com/appdetail/com.webank.wemoney) TM 垃圾微粒贷，网贷审核不严格立马到账
+【垃圾】微众银行 TM 垃圾微粒贷，网贷审核不严格立马到账
 
 ## 25. 移动营业厅 app
 
