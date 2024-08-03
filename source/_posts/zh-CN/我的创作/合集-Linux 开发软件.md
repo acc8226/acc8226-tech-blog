@@ -1,116 +1,23 @@
 ---
-title: 合集-Linux 服务器用软件
-date: 2023-11-29 12:38:00
-updated: 2023-11-29 12:38:00
+title: 合集-Linux 开发软件
+date: 2024-08-03 16:32:26
+updated: 2024-08-03 16:32:26
 categories: 我的创作
 ---
 
-## 基础软件使用
+## 代码仓库
 
-### zip
+### gitea【低内存福音】
 
-打包
+[Gitea Official Website](https://about.gitea.com/)
 
-rm -rf html.zip && zip -q -r html.zip *
-
-### tar
-
-打包
-
-rm -rf html.tar.gz && tar czvf html.tar.gz *
-
-## 拓展软件使用
-
-貌似拓展即是专业
-
-### 网盘搭建
-
-alist
-
-需要至少 2 m 带宽，否则就很鸡肋，只能作为离线下载
-
-5244
-
-正常发行版
-
-```sh
-docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name="alist" xhofe/alist:latest
-```
-
-自带 aria2 离线下载功能的版本
-
-```sh
-docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name="alist-aria2" xhofe/alist-aria2:latest
-```
-
-手动设置一个密码, 其中 `myPASSWORDForTang` 是指你需要设置的密码，alist 是容器名
-
-```sh
-docker exec -it alist ./alist admin set myPASSWORDForTang
-```
-
-### 密码管理 server
-
-bitwarden 最低系统要求 2GB 内存 + 12GB 磁盘空间
-
-```sh
-sudo adduser bitwarden
-sudo passwd bitwarden wHeifjiewo3dFies989fu
-sudo groupadd docker
-sudo usermod -aG docker bitwarden
-sudo mkdir /opt/bitwarden
-sudo chmod -R 700 /opt/bitwarden
-sudo chown -R bitwarden:bitwarden /opt/bitwarden
-
-curl -Lso bitwarden.sh "https://func.bitwarden.com/api/dl/?app=self-host&platform=linux" && chmod 700 bitwarden.sh
-./bitwarden.sh install
-```
-
-### DNS 服务
-
-AdGuardHome
-github.com/AdguardTeam/AdGuardHome
-<https://github.com/AdguardTeam/AdGuardHome>
-
-```sh
-curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v
-```
-
-or
-
-```sh
-wget --no-verbose -O - https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v
-```
-
-you can control the service status with the following commands:
-sudo /opt/AdGuardHome/AdGuardHome -s start|stop|restart|status|install|uninstall
-
-sudo /opt/AdGuardHome/AdGuardHome -s status
-
-sudo /opt/AdGuardHome/AdGuardHome -s uninstall
-
-sudo /opt/AdGuardHome/AdGuardHome -s install
-
-网页管理界面 8011
-DNS 服务器监听端口 53 至少用到了 udp，但是 tcp 也建议开启。 只能固定不变，否则 windows 系统改不了此项
-admin / minniadm8011s
-
-## 开发软件使用
-
-### 代码仓库
-
-#### gitea【低内存福音】
-
-3000
-
-Gitea Official Website
-<https://about.gitea.com/>
+端口：3000
 
 Gitea 最初是从 Gogs 分叉而来的，几乎所有的代码都已更改。
 
 环境要求：2 个 CPU 内核和 1GB RAM 通常足以满足小型团队/项目的需求。
 
-##### 镜像安装
+#### 镜像安装
 
 新建 docker-compose.yml 文件
 
@@ -153,7 +60,7 @@ gitea 如何关闭用户注册
 DISABLE_REGISTRATION = true
 ```
 
-##### 手动安装
+#### 手动安装
 
 ```sh
 wget -O gitea https://dl.gitea.com/gitea/1.21.1/gitea-1.21.1-linux-amd64
@@ -170,25 +77,22 @@ systemctl status gitea
 systemctl stop gitea
 ```
 
-#### gitlab
+### gitlab
 
 GitLab 软件包需要大约 2.5 GB 的存储空间用于安装。
 
-4 核 是推荐的最小核数，支持多达 500 名用户
-8 核支持多达 1000 名用户
+4 核 是推荐的最小核数，4GB RAM 是必需的最小内存 支持多达 500 名用户
+8 核、8GB RAM 支持多达 1000 名用户
 
-4GB RAM 是必需的最小内存，支持多达 500 名用户
-8GB RAM 支持多达 1000 名用户
+PostgreSQL 是 gitlab 唯一支持的数据库
 
-PostgreSQL 是唯一支持的数据库
+## 数据库
 
-### 数据库
-
-#### postgres
+### postgres
 
 端口 5430
 
-密码 abcfeitangfei
+密码
 
 步骤：
 
@@ -205,7 +109,7 @@ vi /var/lib/postgresql/data/pg_hba.conf
 
 docker restart pg14
 
-#### mysql
+### mysql
 
 3316
 
@@ -228,7 +132,7 @@ CREATE USER 'kait'@'%' IDENTIFIED WITH mysql_native_password BY '737834EooPoiyfj
 GRANT ALL PRIVILEGES ON *.* TO 'kait'@'%';
 ```
 
-#### redis
+### redis
 
 6383
 
