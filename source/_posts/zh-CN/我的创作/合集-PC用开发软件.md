@@ -27,23 +27,21 @@ categories: 我的创作
 ### Web 构建工具
 
 * [Parcel](https://parceljs.org/) 以其零配置和快速的构建速度而受到开发者的喜爱，适合快速开发。
-* [Turbo](https://turbo.build/) - Turbo is an incremental bundler and build system optimized for JavaScript and TypeScript, written in Rust.
-* [Vite](https://cn.vitejs.dev/) - 下一代的前端工具链
+* [Turbo](https://turbo.build/) Turbo is an incremental bundler and build system optimized for JavaScript and TypeScript, written in Rust.
+* [Vite](https://cn.vitejs.dev/) 下一代的前端工具链
 * [Webpack](https://www.webpackjs.com/) 功能强大，适用于各种规模的前端项目，支持复杂的构建流程和优化。
 
 ### Java 应用构建工具
 
 #### Ant
 
-Ant 在早期的 Java 项目中非常流行，它被设计用来驱动软件项目的构建过程，类似于 Make 工具，但它使用 XML（Extensible Markup Language）来描述构建过程和依赖关系，而不是传统的 Makefile。
-
-Ant [官网](https://ant.apache.org/)
+[Ant](https://ant.apache.org/) 在早期的 Java 项目中非常流行，它被设计用来驱动软件项目的构建过程，类似于 Make 工具，但它使用 XML（Extensible Markup Language）来描述构建过程和依赖关系，而不是传统的 Makefile。
 
 #### Maven
 
-Maven 是一个构建工具，主要用于 Java 应用程序。由 Apache 软件基金会维护，它使用一个名为 POM（Project Object Model）的 XML 文件来描述项目的构建过程、依赖关系和其他配置信息。
+[Maven](https://maven.apache.org/) 是一个构建工具，主要用于 Java 应用程序。由 Apache 软件基金会维护，它使用一个名为 POM（Project Object Model）的 XML 文件来描述项目的构建过程、依赖关系和其他配置信息。
 
-[Maven 官网](https://maven.apache.org/) | [镜像下载](https://repo.huaweicloud.com/apache/maven/maven-3/)
+[镜像下载](https://repo.huaweicloud.com/apache/maven/maven-3/)
 
 直链下载
 
@@ -55,9 +53,9 @@ Maven 是一个构建工具，主要用于 Java 应用程序。由 Apache 软件
 
 #### Gradle
 
-Gradle 是一个开源的自动化构建系统，它被设计用来支持多语言和多平台的软件项目，尤其是 Java 项目。Gradle 是用 Groovy 和 Kotlin 编写的，它提供了一个基于 Apache Ant 和 Maven 的强大而灵活的构建自动化功能。
+[Gradle](https://gradle.org/) 是一个开源的自动化构建系统，它被设计用来支持多语言和多平台的软件项目，尤其是 Java 项目。Gradle 是用 Groovy 和 Kotlin 编写的，它提供了一个基于 Apache Ant 和 Maven 的强大而灵活的构建自动化功能。
 
-[Gradle 官网](https://gradle.org/) | [镜像下载](https://mirrors.cloud.tencent.com/gradle/)
+[镜像下载](https://mirrors.cloud.tencent.com/gradle/)
 
 直链下载
 
@@ -83,7 +81,7 @@ repositories {
 * [MariaDB community server](https://mariadb.com/downloads/community/community-server/)
 * [MongoDB](https://www.mongodb.com/zh-cn)
 * [MySQL](https://www.mysql.com/)
-* PostgreSQL [官网](https://www.postgresql.org/) | [下载](https://www.postgresql.org/download/)
+* [PostgreSQL](https://www.postgresql.org) | [下载](https://www.postgresql.org/download/)
 
 ### 数据库设计
 
@@ -108,7 +106,7 @@ not
 **mac 和 linux 平台**
 
 * [Navicat Premium Lite](https://www.navicat.com.cn/download/navicat-premium-lite) 毕竟免费
-* DataGrip 因为我有 Jetbrain 开源认证，暂时选用
+* [DataGrip](https://www.jetbrains.com/datagrip) 因为我有 Jetbrain 开源认证，暂时选用
 
 ## 3. Docker
 
@@ -122,7 +120,7 @@ vscode 插件推荐：[markdownlint](https://marketplace.visualstudio.com/items?
 
 or
 
-【win 绿色版】[Notepad++](https://www.notepadnext.com/) 蚍蜉撼大树，用或者抵制
+【win 绿色版】[Notepad++](https://www.notepadnext.com/) 不良言论
 
 not
 
@@ -141,7 +139,7 @@ not
 
 ## 5. file compare 文件对比
 
-【Win】WinMerge [官网](https://winmerge.org/) | [下载页](https://winmerge.org/downloads/?lang=en) 用于比较文件夹和文件，以便于理解和处理的可视文本格式呈现差异。是我离不开 windows 的一个重要原因
+【Win】[WinMerge](https://winmerge.org/) | [下载页](https://winmerge.org/downloads/?lang=en) 用于比较文件夹和文件，以便于理解和处理的可视文本格式呈现差异。是我离不开 windows 的一个重要原因
 
 备用
 
@@ -155,7 +153,7 @@ not
 
 【全平台 免费】[meld](https://meld.app/) 新版本颜值很高
 
-## 6. 【常用】IDE 集成开发环境
+## 6.【常用】IDE 集成开发环境
 
 * [eclipse](https://www.eclipse.org/downloads/) 貌似不太受欢迎且目前看内存占用至少 1 个 G
 * [HBuilder X](https://www.dcloud.io/hbuilderx.html)
@@ -167,37 +165,41 @@ not
 
 not
 
-* CodeBlocks 界面太古老
-* Writerside 虽然是 jetbrains 出品，但操作太复杂了，不太好用
+* [CodeBlocks](https://www.codeblocks.org/) 界面太古老
+* [Writerside](https://www.jetbrains.com.cn/writerside/) 虽然是 jetbrains 出品，但操作太复杂了，不太好用
 
 ## 7.【常用】lang 编程语言
 
 ### Autohotkey
 
-【win】Autohotkey [官网](https://www.autohotkey.com/) | [下载](https://www.autohotkey.com/download/) - The ultimate automation scripting language. 
+【win】Autohotkey [官网](https://www.autohotkey.com/) | [下载](https://www.autohotkey.com/download/) - The ultimate automation scripting language.
+
+### C#
+
+[C# 指南 - .NET 托管语言](https://learn.microsoft.com/zh-cn/dotnet/csharp/) | Microsoft Learn
 
 ### Dart
 
-Dart [官网](https://dart.cn/)
+Dart [官网](https://dart.cn)
 
 ### Go
 
-Go [官网](https://golang.google.cn/)
+Go [官网](https://golang.google.cn)
 
 ### Java
 
-* [Amazon corretto](https://aws.amazon.com/cn/corretto/)
-* [GraalVM](https://www.graalvm.org/downloads/)
-* [Liberica JDK](https://bell-sw.com/pages/downloads/)
+* [Amazon corretto](https://aws.amazon.com/cn/corretto)
+* [GraalVM](https://www.graalvm.org/downloads)
+* [Liberica JDK](https://bell-sw.com/pages/downloads)
 * [Microsoft openjdk](https://docs.microsoft.com/zh-cn/java/openjdk/download)
 * [Oracle Java](https://www.oracle.com/java/technologies/javase-downloads.html)
-* [Temurin](https://adoptium.net/temurin/releases/)
+* [Temurin](https://adoptium.net/temurin/releases)
 
 windows 版本如果是临时使用，可以在命令行界面键入 `set path=java` 所在的 bin 目录。长期使用则建议设置环境变量到 path。
 
 ### Kotlin
 
-Kotlin [官网](https://kotlinlang.org/)
+Kotlin [官网](https://kotlinlang.org)
 
 ### Node.js
 
@@ -217,9 +219,13 @@ npm install xxxxx --registry=https://registry.npmmirror.com
 npm config set registry https://registry.npmmirror.com
 ```
 
+### PHP
+
+[PHP: Hypertext Preprocessor](https://www.php.net)
+
 ### Python
 
-[Python](https://www.python.org/)
+[Python](https://www.python.org)
 
 设置 pip 镜像源
 
@@ -232,24 +238,24 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
 ### Rust
 
-[Rust](https://www.rust-lang.org/zh-CN/)
+[Rust](https://www.rust-lang.org/zh-CN)
 
 ### TypeScript
 
-[TypeScript](https://www.typescriptlang.org/zh/) JavaScript With Syntax For Types.
+[TypeScript](https://www.typescriptlang.org/zh) JavaScript With Syntax For Types.
 
 ## 8. MQ 和 OSS
 
 **MQ 消息队列**
 
-* [Apache ActiveMQ](https://activemq.apache.org/)
-* [Apache Kafka](https://kafka.apache.org/)
-* [Apache RocketMQ](https://rocketmq.apache.org/)
-* [RabbitMQ](https://www.rabbitmq.com/)
+* [Apache ActiveMQ](https://activemq.apache.org)
+* [Apache Kafka](https://kafka.apache.org)
+* [Apache RocketMQ](https://rocketmq.apache.org)
+* [RabbitMQ](https://www.rabbitmq.com)
 
 **OSS Object Storage Service 对象存储**
 
-[MinIO](https://min.io/) | S3 & Kubernetes Native Object Storage for AI
+[MinIO](https://min.io) | S3 & Kubernetes Native Object Storage for AI
 
 ## 9. network tool 网络工具
 
@@ -261,29 +267,29 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
 not
 
-* Apifox 必须联网才能登录，不过功能还是很多的
-* ApiPost 功能缺失，不能导入 curl 请求
-* Eolink Apikit 需要注册
-* Insomnia 不是多标签风格的软件，不太考虑
-* Postcat 功能还不太完善
-* Postman 不好用 必须登录
+* [Apifox](https://apifox.com/) 必须联网才能登录，不过功能还是很多的
+* [ApiPost](https://www.apipost.cn/) 功能缺失，不能导入 curl 请求
+* [Eolink Apikit](https://www.eolink.com/apikit) 需要注册
+* [Insomnia](https://insomnia.rest/) 不是多标签风格的软件，不太考虑
+* [Postcat](https://postcat.com/) 功能还不太完善
+* [Postman](https://www.postman.com/) 不好用 必须登录
 
 **mac 平台**
 
-【mac】[RapidAPI for Mac](https://paw.cloud/) – The most advanced API tool for Mac
+【mac】[RapidAPI](https://paw.cloud) The most advanced API tool for Mac
 
 **linux 平台**
 
-httpie/desktop [官网下载](https://httpie.io/download)
+[httpie/desktop](https://httpie.io/download)
 
 ### mqtt 调试
 
-[mqttx](https://mqttx.app/)
+[mqttx](https://mqttx.app)
 
 ### Packet capture 抓包
 
-* 【win mac 安装版】[Charles](https://www.charlesproxy.com/) - is an HTTP proxy / HTTP monitor / Reverse Proxy
-* 【win mac】fidder
+* 【win mac 安装版】[Charles](https://www.charlesproxy.com) is an HTTP proxy / HTTP monitor / Reverse Proxy
+* 【win mac】[fidder](https://www.telerik.com/fiddler)
 
 ## 10. package manager 包管理器
 
@@ -296,7 +302,7 @@ httpie/desktop [官网下载](https://httpie.io/download)
 * 【win】[Scoop](https://scoop.sh/#/)
 * 【win】[chocolatey](https://chocolatey.org/) The Package Manager for Windows
 * 【win】[scoop](https://scoop.sh/) A command-line installer for Windows
-* 【win】winget 微软 Windows 程序包管理器
+* 【win】[winget](https://learn.microsoft.com/zh-cn/windows/package-manager/winget/) 微软 Windows 程序包管理器
 
 【JavaScript】[Yarn](https://www.yarnpkg.cn/) - JavaScript 软件包管理器
 
@@ -316,21 +322,21 @@ Redis is an in-memory database that persists on disk. The data model is key-valu
 
 ## 12. ref 参考文档
 
-【win】[Zeal](https://zealdocs.org/) - Offline Documentation Browser
+【win】[Zeal](https://zealdocs.org/) Offline Documentation Browser
 
-【macOS】[Dash](https://kapeli.com/dash) - API Documentation Browser, Snippet Manager - Kapeli
+【macOS】[Dash](https://kapeli.com/dash) API Documentation Browser, Snippet Manager - Kapeli
 
 ## 13.【常用】revision control 版本控制
 
 ### Git
 
-macOS 和 linux 系统一般都自带 git, 如果想要体验最新版, 可以去 [Git 官网](https://git-scm.com)下载体验。通常更推荐 [Git 镜像地址](https://registry.npmmirror.com/binary.html?path=git-for-windows/)
+macOS 和 linux 系统一般都自带 git, 如果想要体验最新版, 可以去 [Git 官网](https://git-scm.com)下载体验。通常更推荐 [Git 镜像地址](https://registry.npmmirror.com/binary.html?path=git-for-windows)
 
 VSCode 和 IDEA 会自带 Git 功能。特别的如果是 windows 系统推荐搭配 [TortoiseGit](https://tortoisegit.org/download/) 简称小乌龟。
 
-不喜欢 TortoiseGit 的用户可以试试【win mac】[Sourcetree](https://www.sourcetreeapp.com/)
+不喜欢 TortoiseGit 的用户可以试试【win mac】[Sourcetree](https://www.sourcetreeapp.com)
 
-【linux】[sourcegit](https://github.com/sourcegit-scm/sourcegit/releases/) 或者 gnome 家的 [Gitg](https://wiki.gnome.org/Apps/Gitg) 或者 KDE 家的 kommit
+【linux】[sourcegit](https://github.com/sourcegit-scm/sourcegit/releases) 或者 gnome 家的 [Gitg](https://wiki.gnome.org/Apps/Gitg) 或者 KDE 家的 kommit
 
 ### SVN
 
@@ -381,13 +387,13 @@ or
 not
 
 * [FileZilla](https://www.filezilla.cn/) 虽说跨平台使用，但是界面我不太喜欢
-* flashfxp 是付费产品我就不推荐了
+* [flashfxp](https://www.flashfxp.com/) 是付费产品我就不推荐了
 * Bitvise SSH Client 直接不好用
 * 【全平台】[tabby](https://github.com/Eugeny/tabby) 界面不够友好
 * 【Mac AppStore 版】App Store 搜索 Zen Term
 * 【win】[mobaxterm](https://mobaxterm.mobatek.net/) 界面有点丑
 * 【web】[sshwifty](https://github.com/nirui/sshwifty/releases) 功能不太全，且目前不太好用
-* 【win mac】XTerminal 颜值不够高
+* 【win mac】[XTerminal](http://xterminal.cn/) 颜值不够高
 * 【win】[VanDyke SecureCRT](https://www.vandyke.com/products/securecrt/index.html) 卡死了且界面老旧还付费
 
 **mac 平台**
@@ -446,7 +452,7 @@ Windows 终端是一个新式主机应用程序，它面向你喜爱的命令行
 
 ### Java Web 应用程序框架
 
-* RuoYi 是一个基于 Spring Boot 的权限和流程管理的 Java Web 应用程序框架。它旨在简化企业应用程序的开发，提供一个通用的后台管理框架，使得开发者可以快速构建出功能完备的后台管理系统。
+RuoYi 是一个基于 Spring Boot 的权限和流程管理的 Java Web 应用程序框架。它旨在简化企业应用程序的开发，提供一个通用的后台管理框架，使得开发者可以快速构建出功能完备的后台管理系统。
 
 ### 18. 效率工具
 
@@ -538,4 +544,14 @@ XShell 拥有较为实用的导入导出配置文件的功能。特别是切换�
 
 ![Xshell 导出功能](./imgs/%E4%B8%93%E9%A2%98-%E7%A0%81%E5%86%9C%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/Xshell%20%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD.png)
 
-> 只有导入时设置主密码的时候要和导出时的主密码一致即可保存所有会话的密码。
+> 只有导入时设置主密码的时候要和导出时的主密码一致即可保存所有会话的密码
+
+## 留观中
+
+* [starUML](https://staruml.io/) 【付费】一个画 uml 的工具，还行，可能不够通用吧
+* [cursor](https://www.cursor.com/) 一款智能提示编写代码片段，现阶段暂时不好用
+* [finalshell](http://www.hostbuf.com/) 只有安装版，不好用
+
+## 回收站
+
+空

@@ -17,7 +17,7 @@ categories: 我的创作
 
 或者是现在火热的鸿蒙
 
-如果只考虑必要需求，现阶段低于 2000 选安卓手机，且一般建议有了手机才考虑买个平板
+如果只考虑必要需求，现阶段低于 2000 选安卓手机，且一般建议有手机后才考虑买平板
 
 ### 手机还是平板
 
@@ -55,6 +55,9 @@ categories: 我的创作
 
 [国家反诈中心](https://sj.qq.com/appdetail/com.hicorenational.antifraud) 作为装机必备！
 
+设置电信防骚扰，电信用户可以设置天翼防骚扰 一般微信上关注公众号就够用，移动和联通也有对应的公众号关注后可以屏蔽国外来电
+iPhone 用户则必须安装其中一个，防诈骗和无良商家骗取钱财。
+
 #### 安卓
 
 一般可以选择自带的手机管家。否则可以选择腾讯和 360 两家
@@ -62,9 +65,6 @@ categories: 我的创作
 官网收录：[腾讯手机管家](https://sj.qq.com/appdetail/com.tencent.qqpimsecure)
 
 #### iPhone
-
-设置电信防骚扰，电信用户可以设置天翼防骚扰 一般微信上关注公众号就够用，移动和联通也有对应的公众号关注后可以屏蔽国外来电
-iPhone 用户则必须安装其中一个，防诈骗和无良商家骗取钱财。
 
 360 防骚扰大师 不知道现在有没有下架
 
@@ -91,7 +91,7 @@ not
 
 [Bitwarden](https://github.com/bitwarden/mobile/releases)【已适配安卓平板】一款可以云端存储的密码管理器，也支持本地导入导出密码
 
-选择 f-droid 和 普通版均可
+选择 f-droid 和 普通版均可，但我一般会选择 fdroid，因为升级不存在的也网络环境也升级不了
 
 ### 3. 邮件收发
 
@@ -132,7 +132,7 @@ not
 not
 
 * [阅读](https://github.com/gedoor/legado/releases) 不支持 mobi 格式
-* 云虫爱看 已下架，应用也不再更新
+* ~~云虫爱看 已下架，应用也不再更新~~
 
 * [QQ 阅读](https://sj.qq.com/appdetail/com.qq.reader) 有广告
 * [多看阅读](https://sj.qq.com/appdetail/com.duokan.reader) 书太贵
@@ -149,8 +149,8 @@ not
 
 本地
 
-* Anyview 阅读 贼好用可惜停止更新了
-* 阅读星 Pro 阅读必备神器, 能读取各种格式的阅读格式文件 后 app 名字更新为云虫爱看，现在已经绝版了
+* ~~Anyview 阅读 贼好用可惜停止更新了~~
+* ~~阅读星 Pro 阅读必备神器, 能读取各种格式的阅读格式文件 后 app 名字更新为云虫爱看，现在已经绝版了~~
 * [kindle](https://sj.qq.com/appdetail/com.amazon.kindlefc) 在线和本地都很强
 
 在线
@@ -162,7 +162,7 @@ not
 #### aPad（安卓平板）
 
 * [FBReader](https://fbreader.org/android#download) 【已适配安卓平板】 本地电子书阅读器，同时也支持 pdf
-* 微信读书【已适配安卓平板】
+* [微信读书](https://sj.qq.com/appdetail/com.tencent.weread)【已适配安卓平板】
 
 ### 5. 音乐
 
@@ -183,11 +183,11 @@ not
 * [QQ 音乐](https://sj.qq.com/appdetail/com.tencent.qqmusic) 比某抑云的广告少太多，资源也算丰富
 * [酷狗](https://sj.qq.com/appdetail/com.kugou.android) 和 酷我 差一点意思
 * [爱音乐](https://sj.qq.com/appdetail/com.gwsoft.imusic.controller) 不好用，现在周杰伦的歌都没了，也不知道以前有没有
-* 虾米音乐 已宣布停止服务
+* ~~虾米音乐 已宣布停止服务~~
 
 #### iPad
 
-**网易云音乐 HD**
+网易云音乐 HD
 
 not 
 
@@ -337,9 +337,9 @@ not
 
 ### iPhone
 
-* VLC
-* 芒果 TV 和 优爱腾
-* 抖音
+* [VLC](https://www.videolan.org/vlc/download-ios.html)
+* [芒果 TV](https://sj.qq.com/appdetail/com.hunantv.imgo.activity) 和 优爱腾
+* [抖音](https://sj.qq.com/appdetail/com.ss.android.ugc.aweme)
 
 ### iPad
 
@@ -453,7 +453,7 @@ not
 
 * [高德地图](https://sj.qq.com/appdetail/com.autonavi.minimap)
 * [滴滴出行 app](https://sj.qq.com/appdetail/com.sdu.didi.psnger) / 小程序。加班、搬家、货运搬家，搬家新用户还送券
-* 腾讯乘车码 小程序。其实如果我是公交，一般会用支付类软件，例如支付宝；地铁可选择云闪付
+* 微信-腾讯乘车码 小程序。其实如果我是公交，一般会用支付类软件，例如支付宝；地铁可选择云闪付
 
 可选
 
@@ -510,7 +510,7 @@ not
 not
 
 * [CSDN](https://sj.qq.com/appdetail/net.csdn.csdnplus) 广告太多，不如网页版
-* 腾讯课堂 已停止运营
+* ~~腾讯课堂 已停止运营~~
 * ~~拉勾教育 一个 IT 培训机构网站，但现在应用商店已下架~~
 
 ### iPhone
@@ -645,6 +645,10 @@ weico 下架了，变成了微博国际板，后面又变成轻享版了，结�
 
 * [HP 打印服务](https://sj.qq.com/appdetail/com.hp.android.printservice) 毕竟市场占用率高且方便
 
+怀旧经典
+
+智器阅读 一款pdf 阅读器 想当年 当时可以裁掉白边，现在一般安卓系统自带了文档阅读器基本也够用了
+
 ### aPad
 
 * [企业微信](https://sj.qq.com/appdetail/com.tencent.wework)
@@ -755,7 +759,7 @@ Alook 虽然尚且能用，但是内核好像还是同内置浏览器。可能�
 
 not
 
-chrome 不太好用
+[chrome](https://sj.qq.com/appdetail/com.android.chrome) 不太好用
 
 ## 17. 知识社区
 
@@ -800,7 +804,7 @@ AIDA64 硬件检测
 
 ## 21. 局域网通讯
 
-### 安卓 iPhone iPad APad
+### 通用
 
 [LocalSend](https://localsend.org/) Share files to nearby devices
 
@@ -847,7 +851,7 @@ AIDA64 硬件检测
 
 ## 26. 匿名应用
 
-阿里小号、[联通小号](https://sj.qq.com/appdetail/com.glhh.chinaunicom.wxh) 不知道现在哪个软件存活着，要记得及时续费
+[阿里小号](https://aliqin.aliyuncs.com/#/xiaohao)、[联通小号](https://sj.qq.com/appdetail/com.glhh.chinaunicom.wxh) 一段时间不用，要记得及时续费
 
 ## 27. 政务
 
@@ -905,18 +909,18 @@ Bean's Quest 算是 1 代 和 Bean Dreams 算是 2 代
 #### 家庭必备
 
 * 国家反诈中心 安全永远第一位
-* 一款视频播放软件 比如西瓜视频，特有高质量军事界面的凤凰视频
-* 一款听歌软件 一般都得开会员才能用得爽，这里免费的可以选择 lx 音乐助手
-* 一款可以查看日历 和 查询天气 以前我安装了中华万年历，但是现在的日历 和 天气 app 已经集成到系统非常好且运行良好
-* [我查查](https://sj.qq.com/appdetail/com.wochacha) 查询商品的价格
+* 一款安全的浏览器，比如 360 安全浏览器
+* 一款内容丰富的视频播放软件 比如[西瓜视频](https://sj.qq.com/appdetail/com.ss.android.article.video)、专门的有高质量军事节目的[凤凰视频](https://sj.qq.com/appdetail/com.ifeng.newvideo)
+* 一款听歌软件 一般都得开会员才能用得爽，这里免费的可以选择 lxmusic
+* 一款可以查看日历查询天气 以前我安装了[中华万年历](https://sj.qq.com/appdetail/cn.etouch.ecalendar.life)，但是系统非常好且运行良好
+* 一款可以查询天气 以前我安装了[中华万年历](https://sj.qq.com/appdetail/cn.etouch.ecalendar.life)，但是系统非常好且运行良好
+* 一款扫描可查询商品的价格 [我查查](https://sj.qq.com/appdetail/com.wochacha)
 * [用药助手](https://sj.qq.com/appdetail/cn.dxy.medicinehelper) 用药对家庭还是很重要的
 
-### 备用机必备
+### 时代的眼泪
 
-* link2sd 时代的眼泪，当年 apk 可以选择安装或者迁移到 sd 卡，现在几乎淘汰了
-* pdf 阅读器 想当年智器阅读 当时可以裁掉白边，现在一般安卓系统自带了文档阅读器基本也够用了
+* link2sd 当年 apk 可以选择安装或者迁移到 sd 卡，现在几乎用不到了
 * vplayer 可变速播放 但是现在基本系统本地播放器已经很强，除非有特殊连接 nas 等设备或者网盘的需求
-* 浏览器已被边缘化，app 才是主流，虽然浏览器也是一个app 之前的 uc 浏览器老版 由于很清爽无广告甚至好用
 * 安全管家 系统内置一般就够了，lbe 安全大师 已过时
 
 ## 回收站
