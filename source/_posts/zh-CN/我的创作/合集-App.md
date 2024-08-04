@@ -335,6 +335,8 @@ not
 
 * ~~[bili_you](https://github.com/lucinhu/bili_you/releases) bilibili 无广告版，但是作者已经不再维护了~~
 
+官网收录：[影视大全](https://sj.qq.com/appdetail/com.le123.ysdq) | [暴风影音](https://sj.qq.com/appdetail/com.storm.smart) | [斗鱼](https://sj.qq.com/appdetail/air.tv.douyu.android) | [百搜视频](https://sj.qq.com/appdetail/com.baidu.video) | [PP视频](https://sj.qq.com/appdetail/com.pplive.androidphone) | [虎牙直播](https://sj.qq.com/appdetail/com.duowan.kiwi) | [搜狐视频](https://sj.qq.com/appdetail/com.sohu.sohuvideo)
+
 ### iPhone
 
 * [VLC](https://www.videolan.org/vlc/download-ios.html)
@@ -446,6 +448,8 @@ not
 * [京东](https://sj.qq.com/appdetail/com.jingdong.app.mall)
 * [闲鱼](https://sj.qq.com/appdetail/com.taobao.idlefish) 有点东西，可选吧
 * [天猫](https://sj.qq.com/appdetail/com.tmall.wireless)
+
+官网收录：[当当](https://sj.qq.com/appdetail/com.dangdang.buy2) | [转转](https://sj.qq.com/appdetail/com.wuba.zhuanzhuan) | [苏宁易购](https://sj.qq.com/appdetail/com.suning.mobile.ebuy) | [小米商城](https://sj.qq.com/appdetail/com.xiaomi.shop)
 
 ## 5. 交通
 
@@ -570,7 +574,7 @@ not
 * [58 同城](https://sj.qq.com/appdetail/com.wuba) 假消息太多，注意防范什么引流之类，但也有真实的
 * [安居客](https://sj.qq.com/appdetail/com.anjuke.android.app)
 
-官网收录：[猫眼电影](https://sj.qq.com/appdetail/com.sankuai.movie) | [58同城](https://sj.qq.com/appdetail/com.wuba) | [淘票票](https://sj.qq.com/appdetail/com.taobao.movie.android)
+官网收录：[猫眼电影](https://sj.qq.com/appdetail/com.sankuai.movie) | [58同城](https://sj.qq.com/appdetail/com.wuba) | [淘票票](https://sj.qq.com/appdetail/com.taobao.movie.android) |
 
 ### iPhone
 
