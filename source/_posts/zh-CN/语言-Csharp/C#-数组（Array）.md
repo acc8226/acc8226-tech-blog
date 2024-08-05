@@ -1,3 +1,12 @@
+---
+title: C#-数组（Array）
+date: 2022-01-01 15:20:00
+updated: 2022-01-01 15:20:00
+categories:
+  - csharp
+tags: csharp
+---
+
 ## 基础知识
 
 声明数组

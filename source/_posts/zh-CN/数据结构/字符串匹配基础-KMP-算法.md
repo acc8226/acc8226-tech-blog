@@ -1,3 +1,10 @@
+---
+title: 字符串匹配基础-KMP-算法
+date: 2021-07-25 21:31:56
+updated: 2022-11-05 15:58:00
+categories: 数据结构
+---
+
 ## KMP 算法基本原理
 
 KMP 算法是根据三位作者（D.E.Knuth，J.H.Morris 和 V.R.Pratt）的名字来命名的，算法的全称是 Knuth Morris Pratt 算法，简称为 KMP 算法。

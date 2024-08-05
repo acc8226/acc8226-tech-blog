@@ -1,3 +1,12 @@
+---
+title: 行为型-Strategy
+date: 2021-06-14 10:25:35
+updated: 2021-06-14 10:25:35
+categories:
+  - 设计模式
+tags: 设计模式
+---
+
 ## 策略模式的原理与实现
 
 策略模式的原理与实现策略模式，英文全称是 Strategy Design Pattern。在 GoF 的《设计模式》一书中，它是这样定义的：

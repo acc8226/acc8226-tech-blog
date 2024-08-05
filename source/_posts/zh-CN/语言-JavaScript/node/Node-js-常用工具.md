@@ -1,3 +1,13 @@
+---
+title: Node-js-常用工具
+date: 2021-01-22 23:20:55
+updated: 2021-01-22 23:20:55
+categories:
+  - 语言
+  - Node.js
+tags: nodeJS
+---
+
 util 是一个 Node.js 核心模块，提供常用函数的集合，用于弥补核心 JavaScript 的功能 过于精简的不足。
 
 util.inherits

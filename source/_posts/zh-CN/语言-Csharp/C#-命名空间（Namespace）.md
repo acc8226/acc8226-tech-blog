@@ -1,3 +1,12 @@
+---
+title: C#-命名空间（Namespace）
+date: 2022-01-01 15:20:00
+updated: 2022-01-01 15:20:00
+categories:
+  - csharp
+tags: csharp
+---
+
 命名空间的设计目的是提供一种让一组名称与其他名称分隔开的方式。在一个命名空间中声明的类的名称与另一个命名空间中声明的相同的类的名称不冲突。
 
 我们举一个计算机系统中的例子，一个文件夹(目录)中可以包含多个文件夹，每个文件夹中不能有相同的文件名，但不同文件夹中的文件可以重名。
@@ -22,10 +31,8 @@ namespace_name.item_name;
 
 ```cs
 using System;
-namespace first_space
-{
-   class namespace_cl
-   {
+namespace first_space {
+   class namespace_cl {
       public void func()
       {
          Console.WriteLine("Inside first_space");
@@ -44,8 +51,7 @@ namespace second_space
    }
 }
 
-class TestClass
-{
+class TestClass {
    static void Main(string[] args)
    {
       first_space.namespace_cl fc = new first_space.namespace_cl();

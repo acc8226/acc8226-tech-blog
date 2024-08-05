@@ -27,7 +27,7 @@ categories: 我的创作
 * 【mac 官网版】[360 极速浏览器](https://browser.360.cn/ee/mac/index.html)
 * 【linux】一般用自带[火狐浏览器](https://www.firefox.com.cn)
 
-官网收录：【win】[搜狗高速浏览器](https://sogou.browser.qq.com/) |【win】[猎豹浏览器](https://www.liebao.cn/) |【全平台】[360 安全浏览器](https://browser.360.cn/) |【win mac】[QQ 浏览器](https://browser.qq.com/) |【全平台】[Edge](https://www.microsoft.com/zh-cn/edge) |【全平台】[Opera](https://www.opera.com/zh-cn) |【全平台】[Chrome](https://www.google.cn/intl/zh-CN/chrome/) |【win mac】[傲游浏览器](https://www.maxthon.cn/)
+官网收录：【win】[搜狗高速浏览器](https://sogou.browser.qq.com/) |【win】[猎豹浏览器](https://www.liebao.cn/) |【全平台】[360 安全浏览器](https://browser.360.cn/) |【win mac】[QQ 浏览器](https://browser.qq.com/) |【全平台】[Edge](https://www.microsoft.com/zh-cn/edge) |【全平台】[Opera](https://www.opera.com/zh-cn) |【全平台】[Chrome](https://www.google.cn/intl/zh-CN/chrome/) |【win mac】[傲游浏览器](https://www.maxthon.cn/) | [Vivaldi](https://vivaldi.com/)
 
 #### 3. 压缩解压
 
@@ -35,12 +35,12 @@ categories: 我的创作
 * 【mac 官网版】[The Unarchiver](https://theunarchiver.com)
 * liunx 一般用自带的
 
-官网收录：【win】[WinRAR](https://www.winrar.com.cn/) | 【win mac】[Bandizip](https://www.bandisoft.com/bandizip/) | 【win】[7zip](https://7-zip.org/)
+官网收录：【win】[WinRAR](https://www.winrar.com.cn/) | 【win mac】[Bandizip](https://www.bandisoft.com/bandizip/) | 【win】[7zip](https://7-zip.org/) | 【mac】[FastZip](https://www.better365.cn/fastzip.html) | 【mac】[Keka](https://www.keka.io/en/)
 
 #### 4. 输入法
 
 * 【win mac】自带 或者[微信输入法](https://z.weixin.qq.com) 特有云粘贴板功能，支持跨设备粘贴文字和图片
-* 【linux】自带 或者[rime](https://github.com/rime/home/wiki/RimeWithIBusx)
+* 【linux】自带 或者[RIME](https://github.com/rime/home/wiki/RimeWithIBusx)
 
 官网收录：[百度输入法](https://shurufa.baidu.com) | [搜狗输入法](https://shurufa.sogou.com) | [讯飞输入法](https://srf.xunfei.cn) | [QQ 输入法](https://qq.pinyin.cn) | [手心输入法](http://www.xinshuru.com)
 
@@ -63,6 +63,8 @@ categories: 我的创作
 * 【win】[PixPin](https://pixpinapp.com)
 * 【mac】[Xnip](https://zh.xnipapp.com/) 其实我更期待 PixPin for mac 的推出，因为免费的 OCR 识图功能
 * liunx 系统自带
+
+官网收录：[iShot](https://www.better365.cn/h-col-134.html) | [Snagit](https://www.techsmith.com/screen-capture.html)
 
 怀旧经典
 
@@ -108,6 +110,8 @@ categories: 我的创作
 2. 【全平台】[坚果云](https://www.jianguoyun.com/s/downloads) 主要用于存少量文档
 3. [小飞机](https://www.feijipan.com) 用于网页分享不限速分享文件 或者 [文叔叔](https://www.wenshushu.cn/)匿名分享用
 
+官网收录：[腾讯微云](https://www.weiyun.com/)
+
 **mac 平台**
 
 依旧【mac linux】[阿里云盘](https://www.aliyundrive.com/drive/) + 【全平台】[坚果云](https://www.jianguoyun.com/s/downloads) 的组合
@@ -121,6 +125,8 @@ categories: 我的创作
 * 【win】[菠萝看图 BLumia/pineapple-pictures](https://github.com/BLumia/pineapple-pictures) A homebrew lightweight image viewer
 * 【mac】[Picture View](https://wl879.github.io/apps/picview/index.html)
 * liunx 系统自带
+
+官网收录：[XnView](https://www.xnview.com/en/)
 
 #### 8. 图像处理
 
@@ -284,7 +290,7 @@ not
 * 【全平台】[LocalSend](https://localsend.org/download) 局域网文件传输，但是总不好用
 * 【win】[飞秋 FeiQ](http://www.feiq18.com)
 
-官网收录：[向日葵](https://sunlogin.oray.com/product/feat)
+官网收录：【全平台】[向日葵](https://sunlogin.oray.com/product/feat)
 
 ### 8.启动器
 
@@ -343,9 +349,11 @@ albert 安装不上
 
 not
 
-* 【win】[Speccy](https://www.ccleaner.com/zh-cn/speccy) 虽说是【win mac】[ccleaner](https://www.ccleaner.com/zh-cn/ccleaner) 出品但是没有便携版
+* 【win】[Speccy](https://www.ccleaner.com/zh-cn/speccy) 虽说是【win mac】[CCleaner](https://www.ccleaner.com/zh-cn/ccleaner) 出品但是没有便携版
 * 【win】[驱动精灵](http://www.drivergenius.com/)
 * 【win】[驱动人生](https://www.160.com/) 下载驱动限速严重
+
+官网收录：【mac】[AppCleaner](https://freemacsoft.net/appcleaner/)
 
 ### 1.【常用】激活类
 
@@ -597,7 +605,11 @@ not
 
 【全平台】[VeraCrypt](https://veracrypt.fr/en/Home.html) 最佳免费开源跨平台的文件加密工具 (支持U盘加密/硬盘分区加密)
 
-### 20.mac 特有
+### 20. 文件重命名
+
+[ReNamer](http://www.den4b.com/products/renamer) « Products « den4b.com
+
+### 21.mac 特有
 
 #### 鼠标翻转
 
@@ -607,7 +619,7 @@ not
 
 【mac】[AlDente - 负载限制器](https://apphousekitchen.com/)
 
-### 21.windows 特有
+### 22.windows 特有
 
 #### 空格预览文件
 

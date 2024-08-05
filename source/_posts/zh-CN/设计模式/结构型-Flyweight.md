@@ -1,3 +1,12 @@
+---
+title: 结构型-Flyweight
+date: 2021-06-14 10:25:35
+updated: 2021-06-14 10:25:35
+categories:
+  - 设计模式
+tags: 设计模式
+---
+
 ## 享元模式原理与实现
 
 享元模式（Flyweight Design Pattern）

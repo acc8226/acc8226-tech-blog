@@ -1,5 +1,5 @@
 ---
-title: 行为型-解释器模式
+title: 行为型-Interpreter
 date: 2021-06-14 10:25:35
 updated: 2021-06-14 10:25:35
 categories:

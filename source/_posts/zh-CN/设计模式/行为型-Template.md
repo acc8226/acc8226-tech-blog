@@ -1,3 +1,12 @@
+---
+title: 行为型-Template
+date: 2021-06-14 10:25:35
+updated: 2021-06-14 10:25:35
+categories:
+  - 设计模式
+tags: 设计模式
+---
+
 ## 模板模式的原理与实现
 
 模板模式，全称是模板方法设计模式，英文是 Template Method Design Pattern。在 GoF 的《设计模式》一书中，它是这么定义的

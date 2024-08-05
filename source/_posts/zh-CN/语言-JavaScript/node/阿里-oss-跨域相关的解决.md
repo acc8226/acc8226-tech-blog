@@ -1,3 +1,13 @@
+---
+title: 阿里-oss-跨域相关的解决
+date: 2021-01-22 23:20:55
+updated: 2021-01-22 23:20:55
+categories:
+  - 语言
+  - Node.js
+tags: nodeJS
+---
+
 ### 设置跨域访问
 
 1. 登录[OSS 管理控制台](https://oss.console.aliyun.com/)。

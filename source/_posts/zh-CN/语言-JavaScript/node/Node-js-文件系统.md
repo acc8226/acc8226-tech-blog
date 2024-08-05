@@ -1,3 +1,13 @@
+---
+title: Node-js-文件系统
+date: 2021-01-22 23:20:55
+updated: 2021-01-22 23:20:55
+categories:
+  - 语言
+  - Node.js
+tags: nodeJS
+---
+
 Node.js 提供一组类似 UNIX（POSIX）标准的文件操作 API。 Node 导入文件系统模块(fs)语法如下所示：
 `var fs = require("fs")`
 

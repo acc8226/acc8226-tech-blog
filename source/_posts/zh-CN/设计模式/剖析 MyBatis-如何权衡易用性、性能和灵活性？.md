@@ -1,3 +1,12 @@
+---
+title: 剖析 MyBatis-如何权衡易用性、性能和灵活性？
+date: 2021-06-14 10:25:35
+updated: 2021-06-14 10:25:35
+categories:
+  - 设计模式
+tags: 设计模式
+---
+
 ## MyBatis 如何权衡代码的易用性、性能和灵活性
 
 ### Mybatis 和 ORM 框架介绍

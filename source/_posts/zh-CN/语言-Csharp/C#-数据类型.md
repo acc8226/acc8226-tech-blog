@@ -1,3 +1,12 @@
+---
+title: C#-数据类型
+date: 2022-01-01 15:20:00
+updated: 2022-01-01 15:20:00
+categories:
+  - csharp
+tags: csharp
+---
+
 在 C# 中，变量分为以下几种类型：
 
 * 值类型（Value types）

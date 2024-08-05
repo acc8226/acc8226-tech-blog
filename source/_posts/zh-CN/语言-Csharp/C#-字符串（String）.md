@@ -1,3 +1,12 @@
+---
+title: C#-字符串（String）
+date: 2022-01-01 15:20:00
+updated: 2022-01-01 15:20:00
+categories:
+  - csharp
+tags: csharp
+---
+
 ### 创建 String 对象
 
 您可以使用以下方法之一来创建 string 对象：
@@ -12,8 +21,7 @@ using System;
 
 namespace StringApplication {
     class Program {
-        static void Main(string[] args)
-        {
+        static void Main(string[] args) {
            //字符串，字符串连接
             string fname, lname;
             fname = "Rowan";

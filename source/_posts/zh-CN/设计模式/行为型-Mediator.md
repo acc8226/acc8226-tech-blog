@@ -1,3 +1,12 @@
+---
+title: 行为型-Mediator
+date: 2021-06-14 10:25:35
+updated: 2021-06-14 10:25:35
+categories:
+  - 设计模式
+tags: 设计模式
+---
+
 ## 中介模式的原理和实现
 
 中介模式的英文翻译是 Mediator Design Pattern。在 GoF 中的《设计模式》一书中，它是这样定义的：

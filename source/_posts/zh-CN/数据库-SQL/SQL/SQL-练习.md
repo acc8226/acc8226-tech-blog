@@ -1,3 +1,10 @@
+---
+title: SQL-练习
+date: 2023-03-01 10:00:00
+updated: 2023-03-01 10:00:00
+categories: sql
+---
+
 1\. 创建 dept 表
 
 ```sql

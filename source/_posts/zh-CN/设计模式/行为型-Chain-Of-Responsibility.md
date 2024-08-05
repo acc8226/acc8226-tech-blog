@@ -1,5 +1,5 @@
 ---
-title: 行为型-职责链模式
+title: 行为型-Chain-Of-Responsibility
 date: 2021-06-14 10:25:35
 updated: 2021-06-14 10:25:35
 categories:

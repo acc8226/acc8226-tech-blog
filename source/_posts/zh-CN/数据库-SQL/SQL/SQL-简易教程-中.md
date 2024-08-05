@@ -1,3 +1,10 @@
+---
+title: SQL-简易教程-中
+date: 2023-03-01 10:00:00
+updated: 2023-03-01 10:00:00
+categories: sql
+---
+
 ## SELECT TOP 子句
 
 用于规定要返回的记录的数目。

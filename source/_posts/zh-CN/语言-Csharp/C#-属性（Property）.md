@@ -1,3 +1,12 @@
+---
+title: C#-属性（Property）
+date: 2022-01-01 15:20:00
+updated: 2022-01-01 15:20:00
+categories:
+  - csharp
+tags: csharp
+---
+
 ## C# 属性（Property）
 
 属性（Property） 是类（class）、结构（structure）和接口（interface）的命名（named）成员。类或结构中的成员变量或方法称为 域（Field）。属性（Property）是域（Field）的扩展，且可使用相同的语法来访问。它们使用 访问器（accessors） 让私有域的值可被读写或操作。

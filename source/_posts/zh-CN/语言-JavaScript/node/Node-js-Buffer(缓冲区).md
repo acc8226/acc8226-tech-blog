@@ -1,3 +1,13 @@
+---
+title: buffer 缓冲
+date: 2021-01-22 23:20:55
+updated: 2021-01-22 23:20:55
+categories:
+  - 语言
+  - Node.js
+tags: nodeJS
+---
+
 JavaScript 语言自身只有字符串数据类型，没有二进制数据类型。
 
 但在处理像 TCP 流或文件流时，必须使用到二进制数据。因此在 Node.js 中，定义了一个 Buffer 类，该类用来创建一个专门存放二进制数据的缓存区。

@@ -1,3 +1,12 @@
+---
+title: C#-可空类型（Nullable）
+date: 2022-01-01 15:20:00
+updated: 2022-01-01 15:20:00
+categories:
+  - csharp
+tags: csharp
+---
+
 ## C# 单问号 ? 与 双问号 ??
 
 ? : 单问号用于对 int,double,bool 等无法直接赋值为 null 的数据类型进行 null 的赋值，意思是这个数据类型是 NullAble 类型的。

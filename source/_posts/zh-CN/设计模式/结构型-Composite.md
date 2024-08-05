@@ -1,3 +1,12 @@
+---
+title: 结构型-Composite
+date: 2021-06-14 10:25:35
+updated: 2021-06-14 10:25:35
+categories:
+  - 设计模式
+tags: 设计模式
+---
+
 组合模式的原理与实现在 GoF 的《设计模式》一书中，组合模式是这样定义的：
 
 > Compose objects into tree structure to represent part-whole hierarchies.Composite lets client treat individual objects and compositions of objects uniformly.

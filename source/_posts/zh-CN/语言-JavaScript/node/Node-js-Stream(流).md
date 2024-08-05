@@ -1,3 +1,13 @@
+---
+title: Node-js-Stream(流)
+date: 2021-01-22 23:20:55
+updated: 2021-01-22 23:20:55
+categories:
+  - 语言
+  - Node.js
+tags: nodeJS
+---
+
 Stream 是一个抽象接口，Node 中有很多对象实现了这个接口。例如，对 http 服务器发起请求的 request 对象就是一个 Stream，还有 stdout（标准输出）。
 
 Node.js，Stream 有四种流类型：

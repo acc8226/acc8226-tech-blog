@@ -1,5 +1,7 @@
 ---
 title: Javascript-字符串与文本格式化
+date: 2021-01-22 23:20:55
+updated: 2021-01-22 23:20:55
 categories:
   - 语言
   - JavaScript

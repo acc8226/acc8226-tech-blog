@@ -1,5 +1,5 @@
 ---
-title: 行为型-命令模式
+title: 行为型-Command
 date: 2021-06-14 10:25:35
 updated: 2021-06-14 10:25:35
 categories:

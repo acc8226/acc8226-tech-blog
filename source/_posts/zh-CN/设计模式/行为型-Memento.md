@@ -1,3 +1,12 @@
+---
+title: 行为型-Memento
+date: 2021-06-14 10:25:35
+updated: 2021-06-14 10:25:35
+categories:
+  - 设计模式
+tags: 设计模式
+---
+
 ## 备忘录模式的原理与实现
 
 备忘录模式，也叫快照（Snapshot）模式，英文翻译是 Memento Design Pattern。在 GoF 的《设计模式》一书中，备忘录模式是这么定义的：

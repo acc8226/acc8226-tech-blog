@@ -1,3 +1,12 @@
+---
+title: C#-结构体（Struct）、-枚举（Enum）
+date: 2022-01-01 15:20:00
+updated: 2022-01-01 15:20:00
+categories:
+  - csharp
+tags: csharp
+---
+
 ## C# 结构体（Struct）
 
 在 C# 中，结构体是值类型数据结构。它使得一个单一变量可以存储各种数据类型的相关数据。struct 关键字用于创建结构体。

@@ -1,3 +1,12 @@
+---
+title: 行为型-Iterator
+date: 2021-06-14 10:25:35
+updated: 2021-06-14 10:25:35
+categories:
+  - 设计模式
+tags: 设计模式
+---
+
 ## 迭代器模式的原理和实现
 
 迭代器模式（Iterator Design Pattern），也叫作游标模式（Cursor Design Pattern）。
