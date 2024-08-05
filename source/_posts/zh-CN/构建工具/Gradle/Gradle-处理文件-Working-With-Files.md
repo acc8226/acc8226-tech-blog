@@ -1,3 +1,14 @@
+---
+title: Gradle-处理文件-Working-With-Files
+date: 2022-12-31 00:00:00
+updated: 2022-12-31 00:00:00
+categories:
+  - 构建工具
+  - Gradle
+tags:
+- Gradle
+---
+
 ## [Copying a single file 复制单个文件](https://docs.gradle.org/6.3/userguide/working_with_files.html#sec:copying_single_file_example)
 
 通过创建 Gradle 的内建 Copy 任务的实例并将其配置为文件的位置和要放置文件的位置，可以复制文件。 这个例子模拟了将生成的报告复制到一个目录中，这个目录将被打包到一个归档文件中，比如 ZIP 或者 TAR:

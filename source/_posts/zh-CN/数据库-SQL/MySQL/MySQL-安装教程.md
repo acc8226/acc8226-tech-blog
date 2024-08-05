@@ -1,3 +1,10 @@
+---
+title: MySQL-安装教程
+date: 2023-03-01 10:00:00
+updated: 2023-03-01 10:00:00
+categories: mysql
+---
+
 ## Windows 上安装 MySQL
 
 MySQL 下载地址为： [MySQL 下载](https://dev.mysql.com/downloads/mysql/) 。 这里我们挑选 *MySQL Community Server*。拿到压缩包后我们将进行解压后配置启动。这里我将解压后的文件夹放在 `C:\web\mysql-8.0.11` 下。

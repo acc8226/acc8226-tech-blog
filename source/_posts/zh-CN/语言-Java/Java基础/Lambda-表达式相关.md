@@ -1,3 +1,14 @@
+---
+title: Lambda-表达式相关
+date: 2017-01-24 18:52:54
+updated: 2022-10-06 20:35:00
+categories:
+  - 语言-Java
+  - 基础
+tags:
+- Java
+---
+
 Java 8 之后推出的 Lambda 表达式开启了 Java 语言支持函数式编程（Functional Programming）的新时代。
 
 Lambda 表达式，也称为闭包（Closure），现在很多语言都支持 Lambda 表达式，如 C++、C#、Swift、Objective-C 和 JavaScript 等。为什么 Lambda 表达式这怎么受欢迎，这是因为 Lambda 表达式是实现支持函数式编程技术基础。

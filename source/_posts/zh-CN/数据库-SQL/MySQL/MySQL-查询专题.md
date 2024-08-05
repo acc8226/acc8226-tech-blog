@@ -1,3 +1,10 @@
+---
+title: MySQL-查询专题
+date: 2023-03-01 10:00:00
+updated: 2023-03-01 10:00:00
+categories: mysql
+---
+
 全量查询语句
 
 ```sql

@@ -1,3 +1,14 @@
+---
+title: 第八章-自定义Android-Gradle工程
+date: 2022-12-31 00:00:00
+updated: 2022-12-31 00:00:00
+categories:
+  - 构建工具
+  - Gradle
+tags:
+- Gradle
+---
+
 Android Gradle 为我们提供了大量的 DSL，我们使用这些 DSL 定义配置我们的工程以满足我们项目中不同的需求。这些DSL有很多，在上一章演示 Android Gradle 工程示例的时候，我们已经大概介绍了 compileSdkVersion、buildToolsVersion以及 defaultConfig 等，这一章我们再详细介绍一些常用的 DSL 配置，这些配有有签名信息、构建类型、代码混淆、zipAlign 对齐压缩等。
 
 ### 8.1 defaultConfig 默认配置

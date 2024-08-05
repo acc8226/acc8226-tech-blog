@@ -1,3 +1,14 @@
+---
+title: Building-Java-Projects-with-Gradle
+date: 2022-12-31 00:00:00
+updated: 2022-12-31 00:00:00
+categories:
+  - 构建工具
+  - Gradle
+tags:
+- Gradle
+---
+
 ## Set up the project
 
 在您选择的项目目录中，创建以下子目录结构; 例如，使用  `mkdir -p src/main/java/hello` on *nix systems.

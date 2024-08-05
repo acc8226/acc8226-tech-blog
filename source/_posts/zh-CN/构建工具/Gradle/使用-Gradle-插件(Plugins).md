@@ -1,3 +1,14 @@
+---
+title: 使用-Gradle-插件(Plugins)
+date: 2022-12-31 00:00:00
+updated: 2022-12-31 00:00:00
+categories:
+  - 构建工具
+  - Gradle
+tags:
+- Gradle
+---
+
 ## [What plugins do 插件的作用](https://docs.gradle.org/6.3/userguide/plugins.html#sec:what_plugins_do)
 
 在项目中应用插件可以扩展项目的能力，它可以做以下事情:

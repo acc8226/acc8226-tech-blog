@@ -1,3 +1,14 @@
+---
+title: 第十章-Android-Gradle多项目构建
+date: 2022-12-31 00:00:00
+updated: 2022-12-31 00:00:00
+categories:
+  - 构建工具
+  - Gradle
+tags:
+- Gradle
+---
+
 Android 的多项目和其他基于 Gradle 构建的多项目是差不多，比如 Java 多项目、Groovy 多项目，他们本身都是 Gradle 的多项目构建，唯一的区别是项目本身属性，比如这个项目是 Java 库、那个是 Android App 项目等等。
 
 这一章我们简单的介绍下 Android 不同类型的项目，他们如何设置，如何引用以及库项目如何单独发布，像因多项目导致的 65535 等问题我们已经在上一章节做了介绍，这里就不再重复了。

@@ -1,3 +1,14 @@
+---
+title: 待完善-Java并发编程：CountDownLatch、CyclicBarrier和-Semaphore-的简单使用
+date: 2017-01-24 18:52:54
+updated: 2022-10-06 20:35:00
+categories:
+  - 语言-Java
+  - 基础
+tags:
+- Java
+---
+
 ## ThreadLocal
 
 ThreadLocal 是 JDK 包提供的，它提供了线程本地变量，也就是如果你创建了一个 ThreadLocal 变量，那么访问这个变量的每个线程都会有这个变量的一个本地副本。当多个线程操作这个变量时，实际操作的是自己本地内存里面的变量，从而避免了线程安全问题。创建一个 ThreadLocal 变量后，每个线程都会复制一个变量到自己的本地内存。

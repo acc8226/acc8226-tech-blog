@@ -1,7 +1,12 @@
 ---
-title:
-date:
+title: Gradle-构建-applications-和-libraries
+date: 2022-12-31 00:00:00
+updated: 2022-12-31 00:00:00
 categories:
+  - 构建工具
+  - Gradle
+tags:
+- Gradle
 ---
 
 ## 构建 Java applications

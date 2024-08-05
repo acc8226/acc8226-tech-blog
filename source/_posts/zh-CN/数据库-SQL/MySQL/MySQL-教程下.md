@@ -1,3 +1,10 @@
+---
+title: MySQL-教程下
+date: 2023-03-01 10:00:00
+updated: 2023-03-01 10:00:00
+categories: mysql
+---
+
 ## AUTO_INCREMENT 详解
 
 MySQL 中最简单使用序列的方法就是使用 AUTO_INCREMENT 来定义序列。

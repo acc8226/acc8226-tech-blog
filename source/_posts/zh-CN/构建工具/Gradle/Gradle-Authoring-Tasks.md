@@ -1,3 +1,14 @@
+---
+title: Gradle-Authoring-Tasks
+date: 2022-12-31 00:00:00
+updated: 2022-12-31 00:00:00
+categories:
+  - 构建工具
+  - Gradle
+tags:
+- Gradle
+---
+
 在入门教程中，您学习了如何创建简单的任务。 稍后您还学习了如何向这些任务添加额外的行为，并学习了如何在任务之间创建依赖关系。 这一切都是关于简单的任务，但 Gradle 把任务的概念更进一步。 Gradle 支持增强型任务，这些任务具有自己的属性和方法。 这与您习惯使用 Ant 目标的情况大不相同。 这些强化的任务要么是你提供的，要么是内置在 Gradle 的。
 
 ## [Task outcomes 任务结果](https://docs.gradle.org/6.3/userguide/more_about_tasks.html#sec:task_outcomes)

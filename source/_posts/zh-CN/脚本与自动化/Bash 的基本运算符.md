@@ -3,6 +3,8 @@ title: Bash 的基本运算符
 categories: 脚本与自动化
 tags:
 - Bash
+date: 2023-05-11 13:38:00
+updated: 2023-05-11 13:38:00
 ---
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-0578a592b6b7b580?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)

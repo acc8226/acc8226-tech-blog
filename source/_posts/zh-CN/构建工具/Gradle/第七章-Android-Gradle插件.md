@@ -1,3 +1,14 @@
+---
+title: 第七章-Android-Gradle插件
+date: 2022-12-31 00:00:00
+updated: 2022-12-31 00:00:00
+categories:
+  - 构建工具
+  - Gradle
+tags:
+- Gradle
+---
+
 从这章开始我们就开始介绍 Android Gradle 插件了，会通过几章由浅入深的详细的介绍 Android Gradle，本章会简单的介绍下 Android Gradle 插件，然后通过一个例子对其有大概的了解，最后讲下如果从原来基于 Eclipse 进行 Android 开发的方式，转到基于 Android Studio，使用 Android Gradle 插件开发的新方式
 
 ### 7.1 Android Gradle插件简介

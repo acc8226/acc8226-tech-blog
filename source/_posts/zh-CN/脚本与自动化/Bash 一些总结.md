@@ -1,6 +1,8 @@
 ---
 title: Bash 一些总结
 categories: 脚本与自动化
+date: 2024-08-05 22:32:48
+updated: 2024-08-05 22:32:48
 tags:
 - Bash
 ---

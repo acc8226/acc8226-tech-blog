@@ -1,3 +1,10 @@
+---
+title: MySQL-教程上
+date: 2023-03-01 10:00:00
+updated: 2023-03-01 10:00:00
+categories: mysql
+---
+
 * DQL:(Data QueryLanguage)数据查询语言(操作数据)
 select ... from ... where
 

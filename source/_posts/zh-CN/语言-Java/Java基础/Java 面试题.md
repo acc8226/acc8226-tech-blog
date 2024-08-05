@@ -1,3 +1,14 @@
+---
+title: Java 面试题
+date: 2017-01-24 18:52:54
+updated: 2022-10-06 20:35:00
+categories:
+  - 语言-Java
+  - 基础
+tags:
+- Java
+---
+
 ## Java 内存模型
 
 Java 虚拟机规范中试图定义一种Java内存模型（Java Memory Model，JMM）来屏蔽掉各种硬件和操作系统的内存访问差异，以实现让 Java 程序在各种平台下都能达到一致的内存访问效果。

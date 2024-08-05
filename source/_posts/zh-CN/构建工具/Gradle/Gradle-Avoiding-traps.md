@@ -1,3 +1,14 @@
+---
+title: Gradle-Avoiding-traps
+date: 2022-12-31 00:00:00
+updated: 2022-12-31 00:00:00
+categories:
+  - 构建工具
+  - Gradle
+tags:
+- Gradle
+---
+
 ## [Groovy script variables 4\. Groovy 脚本变量](https://docs.gradle.org/6.3/userguide/potential_traps.html#sec:groovy_script_variables)
 
 对于 Groovy DSL 的用户来说，了解 Groovy 如何处理脚本变量非常重要。 有两种类型的脚本变量。 一个具有本地作用域，另一个具有脚本范围。

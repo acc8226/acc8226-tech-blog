@@ -1,3 +1,14 @@
+---
+title: Java 本地化的实现
+date: 2017-01-24 18:52:54
+updated: 2022-10-06 20:35:00
+categories:
+  - 语言-Java
+  - 基础
+tags:
+- Java
+---
+
 Localizing Date 本地化时间
 Localizing Currency 本地化货币
 Localizing Number 本地化数字

@@ -1,3 +1,14 @@
+---
+title: Java 常用工具类使用
+date: 2017-01-24 18:52:54
+updated: 2022-10-06 20:35:00
+categories:
+  - 语言-Java
+  - 基础
+tags:
+- Java
+---
+
 ## Random 类
 
 让系统产生随机数使用

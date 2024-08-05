@@ -1,3 +1,10 @@
+---
+title: MySQL-遇到的问题
+date: 2023-03-01 10:00:00
+updated: 2023-03-01 10:00:00
+categories: mysql
+---
+
 ## Integer display width is deprecated and will be removed in a future release
 
 Integer display width is deprecated and will be removed in a future release：整数显示宽度已弃用，将在以后的版本中删除

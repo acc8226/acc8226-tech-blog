@@ -1,3 +1,14 @@
+---
+title: 第三章-Gradle构建脚本基础
+date: 2022-12-31 00:00:00
+updated: 2022-12-31 00:00:00
+categories:
+  - 构建工具
+  - Gradle
+tags:
+- Gradle
+---
+
 本章从整体构建脚本的角度介绍 Gradle，什么是 Settings文件，他有什么作用；什么是 Build 文件，它又有什么作用，我们可以新建多少Build文件。
 
 然后会介绍 Gradle 的两个重要的概念：Project 和 Task，他们有什么作用，又有什么关系，如何创建一个Task，如何对Task进行配置，Task之间如何建立依赖关系；Task如何使用API控制和Task之间的通信等等。

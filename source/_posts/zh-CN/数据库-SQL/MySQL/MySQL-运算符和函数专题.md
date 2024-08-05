@@ -1,3 +1,10 @@
+---
+title: MySQL-运算符和函数专题
+date: 2023-03-01 10:00:00
+updated: 2023-03-01 10:00:00
+categories: mysql
+---
+
 ## MySQL 运算符
 
 ## MySQL 函数

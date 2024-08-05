@@ -1,3 +1,10 @@
+---
+title: MySQL 约束和索引专题
+date: 2023-03-01 10:00:00
+updated: 2023-03-01 10:00:00
+categories: mysql
+---
+
 ## 约束
 
 约束（constraint）管理如何插入或处理数据库数据的规则。

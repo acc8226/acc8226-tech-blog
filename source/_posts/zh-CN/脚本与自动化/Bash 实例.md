@@ -1,5 +1,7 @@
 ---
 title: Bash 实例
+date: 2023-05-11 13:38:00
+updated: 2023-05-11 13:38:00
 categories: 脚本与自动化
 tags:
 - Bash

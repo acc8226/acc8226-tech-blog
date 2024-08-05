@@ -1,3 +1,14 @@
+---
+title: Java 类加载器
+date: 2017-01-24 18:52:54
+updated: 2022-10-06 20:35:00
+categories:
+  - 语言-Java
+  - 基础
+tags:
+- Java
+---
+
 什么是 ClassLoader
 ClassLoader 简称类加载器，主要用于加载和校验编译后的 Java 文件(即：以.class结尾的文件)；
 
