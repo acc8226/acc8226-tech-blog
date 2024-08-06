@@ -77,8 +77,8 @@ Web 服务的调用、PDF 生成和处理、数字签名、文件格式转换、
 
 ## 技术站点
 
-* Github：<https://github.com/acc8226>
-* 技术博客：<https://acc8226.feipig.fun>
+* 技术博客：[自建博客](https://feipig.fun) | [CSDN 博客](https://blog.csdn.net/acc8226)
+* 开源作品：[捷键 for windows](https://github.com/acc8226/jiejian) 键鼠增强效率工具 | [Bing Wallpaper - by kotlin](https://github.com/acc8226/bing-wallpaper-by-kotlin) 每天定时采集中英文 bing 壁纸
 
 ## 其他信息
 
