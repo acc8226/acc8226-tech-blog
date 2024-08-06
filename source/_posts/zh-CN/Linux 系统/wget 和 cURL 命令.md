@@ -1,3 +1,10 @@
+---
+title: wget 和 cURL 命令
+date: 2019-03-17 17:27:17
+updated: 2022-11-05 13:45:00
+categories: linux
+---
+
 ## wget
 
 wget 支持 HTTP，HTTPS 和 FTP 协议，可以使用 HTTP 代理。所谓的自动下载是指，wget 可以在用户退出系统的之后在后台执行。这意味这你可以登录系统，启动一个 wget 下载任务，然后退出系统，wget 将在后台执行直到任务完成

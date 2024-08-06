@@ -1,3 +1,10 @@
+---
+title: linux-小测验
+date: 2019-03-17 17:27:17
+updated: 2022-11-05 13:45:00
+categories: linux
+---
+
 小明是一个服务器管理员，他需要每天备份论坛数据（这里我们用 alternatives.log 日志替代），备份当天的日志并删除之前的日志。而且备份之后文件名是 年-月-日 的格式。alternatives.log 在 /var/log/ 下面。
 
 ```sh

@@ -1,3 +1,10 @@
+---
+title: Linux-环境变量与文件查找
+date: 2019-03-17 17:27:17
+updated: 2022-11-05 13:45:00
+categories: linux
+---
+
 Shell 变量
 
 使用 declare 命令创建一个变量名为 tmp 的变量：
