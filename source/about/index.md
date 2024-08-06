@@ -18,10 +18,10 @@ comments: false
 
 ## 工作经历
 
-* 北京云狐时代科技&emsp;&emsp;&emsp;2022.03~至今&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;软件部门-物联网后端 Java 开发
-* 宝利信通（北京）软件&emsp;2017.05~2022.03&emsp;&emsp;&emsp;&emsp; 金融事业部-新华项目组-后端 Java 开发
-* 北京云漾科技&emsp;&emsp;&emsp;&emsp;&emsp;2015.11~2017.03&emsp;&emsp;&emsp;&emsp; 软件部门-安卓 App 开发
-* 北京盈合科技&emsp;&emsp;&emsp;&emsp;&emsp;2015.03~2015.09&emsp;&emsp;&emsp;&emsp; 软件部门-安卓 App 开发
+* 北京云狐时代&emsp;&emsp;&emsp;&emsp;&emsp;2022.03.21-2024.03.19&emsp;&emsp;&emsp;&emsp;软件部门-物联网后端 Java 开发
+* 宝利信通（北京）软件&emsp;2017.05.12-2022.03.18&emsp;&emsp;&emsp;&emsp; 金融事业部-新华项目组-后端 Java 开发
+* 北京云漾科技&emsp;&emsp;&emsp;&emsp;&emsp;2015.11.06-2016.10.14&emsp;&emsp;&emsp;&emsp; 软件部门-安卓 App 开发
+* 北京盈合科技&emsp;&emsp;&emsp;&emsp;&emsp;2015.03.06-2015.09.11&emsp;&emsp;&emsp;&emsp; 软件部门-安卓 App 开发
 
 ## 专业技能
 
@@ -38,7 +38,7 @@ comments: false
 
 ## 项目经历
 
-1\. 北京云狐科技 - thingsx 物联网平台 - 后端 Java 开发 - 2022/3-至今
+1\. 北京云狐科技 - thingsx 物联网平台 - 后端 Java 开发 - 2022/3-2024/3
 
 * 具体功能：基于 Thingsboard 是二开物联网平台，它提供了设备管理、数据收集、可视化和告警等功能。
 * 技术要点：设备连接中通过基于netty 扩展 MQTT、常规 HTTP 连接协议的原理和实现。数据存储中 postsql 数据库的操作和设计。告警管理可根据预定义的规则对设备数据进行监测，并在异常情况下发出告警通知，告警规则的定义和实现。

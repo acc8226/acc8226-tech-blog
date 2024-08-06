@@ -62,7 +62,7 @@ menu:
   home: / || fa fa-home
   categories: /categories/ || fa fa-th
   archives: /archives/ || fa fa-archive
-  nav: https://nav.feipig.fun || fa fa-compass
+  nav: https://feipig.fun/zh-cn/d0f14ad08d8a || fa fa-compass
   about: /about/ || fa fa-user
   #tags: /tags/ || fa fa-tags
   #schedule: /schedule/ || fa fa-calendar

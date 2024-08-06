@@ -43,6 +43,8 @@ uos 自带了 360 研发的基于 Chromium 开源项目的浏览器，支持鼠�
 v 英文模式
 u 用户词库名模式
 
+<!-- more -->
+
 如果是国产 uos 自带搜狗浏览器体验也很棒
 
 除此以外，[rime](https://github.com/rime/home/wiki/RimeWithIBusx) 输入法较为推荐。

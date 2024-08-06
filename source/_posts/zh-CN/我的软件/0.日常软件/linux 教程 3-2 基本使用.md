@@ -65,8 +65,10 @@ xmodmap -e "keycode  56 =  b"
 
 重点是我看它有图形化界面，它的作用是可以将 按键/快捷键 映射为一个 命令。
 
+```sh
 sudo apt install xbindkeys
 sudo apt install xbindkeys-config
+```
 
 xbindkeys-config 可以启动图形化界面，关机是这个可以 gui 而已
 
@@ -74,7 +76,12 @@ To create the configuration file, just run the following command:
 xbindkeys --defaults > ~/.xbindkeysrc
 
 And we need to edit the file to specify your button's mapping:
+
+```sh
 vim ~/.xbindkeysrc
+```
+
+<!-- more -->
 
 We need to add our button-to-key configurations. For example, I have the following:
 

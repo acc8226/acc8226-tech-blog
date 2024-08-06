@@ -51,6 +51,8 @@ services:
 docker compose up -d
 ```
 
+<!-- more -->
+
 gitea 如何关闭用户注册
 
 找到 gitea 的配置文件 gitea/conf/app.ini，把下面的设置改为 true 即可:
