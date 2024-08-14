@@ -96,11 +96,12 @@ not
 
 #### 通用
 
-readdle 家的 [Spark](https://sparkmailapp.com/zh)【已适配安卓平板】
+简单：Aqua Mail
+华丽：readdle 家的 [Spark](https://sparkmailapp.com/zh)【已适配安卓平板】
 
 备用
 
-[网易邮箱大师](https://sj.qq.com/appdetail/com.netease.mail) 对 QQ 邮箱还需要授权码也属正常，操作上我更偏爱 QQ 邮箱一些
+[网易邮箱大师](https://sj.qq.com/appdetail/com.netease.mail) 操作上我更偏爱 QQ 邮箱一些
 
 not
 
@@ -108,12 +109,10 @@ not
 
 ### 4. Books 书籍
 
-分为读书 和 听书
-
 #### 安卓
 
-1. [阅读](https://github.com/gedoor/legado) + [tts-server](https://jing332.lanzn.com/b09jpjd2d)
-2. [微信读书](https://sj.qq.com/appdetail/com.tencent.weread) 除了现在很多内容收费了
+1. 本地+在线 [阅读](https://github.com/gedoor/legado) + [tts-server](https://jing332.lanzn.com/b09jpjd2d)
+2. 正版在线 [微信读书](https://sj.qq.com/appdetail/com.tencent.weread) 除了现在很多内容收费了
 
 可选
 
@@ -123,10 +122,6 @@ not
 * [京东读书](https://sj.qq.com/appdetail/com.jd.app.reader) 送了影响力 和 乌合之众几本书，可以看一段时间
  * [**番茄免费小说**](https://sj.qq.com/appdetail/com.dragon.read) 有的想看的书可以免费离线下载，很好，很适合离线用
 * [网易蜗牛阅读](https://sj.qq.com/appdetail/com.netease.snailread) 每天可以免费看 1 个小时付费书籍
-
-* [微信听书](https://sj.qq.com/appdetail/com.tencent.wehear) 活动玩法多，可以换取收听时长
-* [**番茄畅听**](https://sj.qq.com/appdetail/com.xs.fm) 有些免费资源
-* [帆书](https://sj.qq.com/appdetail/io.dushu.fandengreader) 限免资源特别少，很多都是付费的
 
 not
 
@@ -168,7 +163,7 @@ not
 #### 安卓
 
 1. 在线 [LX Music 洛雪音乐助手](https://github.com/lyswhut/lx-music-mobile/releases/) 作为 Spotify 的替代品，我一般很少用，因为同步歌单是个问题
-2. 本地 [椒盐音乐](https://www.coolapk.com/apk/284064)
+2. 本地 [椒盐音乐](https://www.coolapk.com/apk/284064) + [海贝音乐](https://sj.qq.com/appdetail/com.hiby.music) 用于在线下载歌词
 
 可选
 
@@ -227,12 +222,15 @@ not
 #### 安卓
 
 1. [得到](https://sj.qq.com/appdetail/com.luojilab.player) 非常好
-2. [讯飞有声](https://sj.qq.com/appdetail/com.iflytek.readassistant) 难得的免费收听时长的可听本地图书和 pdf 的 app，这可能是目前的一个较好的方案
+2. [帆书](https://sj.qq.com/appdetail/io.dushu.fandengreader) 有的时候会有限免资源
+3. [番茄畅听](https://sj.qq.com/appdetail/com.xs.fm) 免费资源较多
 
 可选
 
-1. [极客时间](https://sj.qq.com/appdetail/org.geekbang.geekTime) 程序员才需要
-2. [云听](https://sj.qq.com/appdetail/com.shinyv.cnr) 央视有些资源而已
+* [讯飞有声](https://sj.qq.com/appdetail/com.iflytek.readassistant) 难得的免费收听时长的可听本地图书和 pdf 的 app，这可能是目前的一个较好的方案
+* [微信听书](https://sj.qq.com/appdetail/com.tencent.wehear) 活动玩法多，可以换取收听时长
+* [极客时间](https://sj.qq.com/appdetail/org.geekbang.geekTime) 程序员才需要
+* [云听](https://sj.qq.com/appdetail/com.shinyv.cnr) 央视有些资源而已
 
 not
 
@@ -384,20 +382,17 @@ not
 ### 安卓
 
 * [猫头鹰文件](https://www.skyjos.cn/owlfiles/index.html)
-* [微信输入法](https://sj.qq.com/appdetail/com.tencent.wetype) 其中的跨设备粘贴绝了
 * [GKD 搞快点](https://gkd.li/) 预设了跳广告规则，开箱即用
-* 魔法上网工具 这里只推荐 Hiddify
-
-换机只用一次
-
-同步手机通讯录, [QQ 同步助手](https://sj.qq.com/appdetail/com.tencent.qqpim)
 
 可选
 
+* [微信输入法](https://sj.qq.com/appdetail/com.tencent.wetype) 其中的跨设备粘贴绝了
+* 魔法上网工具 这里只推荐 Hiddify
 * [WiFi 万能钥匙](https://sj.qq.com/appdetail/com.snda.lantern.wifilocating) 偶尔可以用下，虽说现在的能用的热点不多了
 * [菜鸟](https://sj.qq.com/appdetail/com.cainiao.wireless) 好处就是一键查询所有快递
 * [快递 100](https://sj.qq.com/appdetail/com.Kingdee.Express) 查和寄快递
 * [小度音箱](https://sj.qq.com/appdetail/com.baidu.duer.superapp) 硬件绑定的应用，不得不用
+* [QQ 同步助手](https://sj.qq.com/appdetail/com.tencent.qqpim) 同步手机通讯录用 换机只用一次
 
 not
 
@@ -654,6 +649,10 @@ weico 下架了，变成了微博国际板，后面又变成轻享版了，结�
 
 * [HP 打印服务](https://sj.qq.com/appdetail/com.hp.android.printservice) 毕竟市场占用率高且方便
 
+not
+
+Polaris Office 北极星办公 其中安卓版本不是最新版不能用
+
 怀旧经典
 
 智器阅读 一款pdf 阅读器 想当年 当时可以裁掉白边，现在一般安卓系统自带了文档阅读器基本也够用了
@@ -690,9 +689,9 @@ weico 下架了，变成了微博国际板，后面又变成轻享版了，结�
 
 ### 安卓
 
-* [**阿里云盘**](https://sj.qq.com/appdetail/com.alicloud.databox) 功能很多，且不太限速，但是非会员不能看超清适配，但是必须得注册一个
-* [**坚果云**](https://sj.qq.com/appdetail/nutstore.android) 同步文档用
-* [**小飞机网盘**](https://www.feijipan.com/)很不错，然后 [123 云盘](https://sj.qq.com/appdetail/com.mfcloudcalculate.networkdisk)稍微差点意思
+1. [阿里云盘](https://sj.qq.com/appdetail/com.alicloud.databox) 功能很多，且不太限速，但是非会员不能看超清适配，但是必须得注册一个
+2. [坚果云](https://sj.qq.com/appdetail/nutstore.android) 同步文档用
+3. [小飞机网盘](https://www.feijipan.com/)很不错，然后 [123 云盘](https://sj.qq.com/appdetail/com.mfcloudcalculate.networkdisk)稍微差点意思
 
 not
 
@@ -901,7 +900,7 @@ not
 
 ### iPhone 和 iPad
 
-我一般会玩经典的，比如王国保卫战、割绳子、小鳄鱼洗澡、糖果粉碎传奇 系列
+我一般会玩经典系列，比如王国保卫战、割绳子、小鳄鱼洗澡、糖果粉碎传奇、滑雪大冒险、愤怒的小鸟 
 
 Bean's Quest 算是 1 代 和 Bean Dreams 算是 2 代
 
@@ -909,7 +908,7 @@ Bean's Quest 算是 1 代 和 Bean Dreams 算是 2 代
 
 京通 自从北京通 app 下架后，然后有了它之后[北京公积金](https://sj.qq.com/appdetail/cn.gov.bjgjj.gjjapp) app 也几乎不用装了，一般我也用网站，想不到提取公积金特简单，简单申请当日到账
 
-北京健康宝 疫情已落幕
+~~北京健康宝 疫情已落幕~~
 
 ## 手机使用 tips
 
