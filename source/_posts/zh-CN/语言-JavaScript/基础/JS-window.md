@@ -23,6 +23,8 @@ Window 对象是 BOM 中所有对象的核心，除了是 BOM 中所有对象的
 
 全局函数是 window 对象的方法。
 
+<!-- more -->
+
 甚至 HTML DOM 的 document 也是 window 对象的属性之一
 
 Window 子对象

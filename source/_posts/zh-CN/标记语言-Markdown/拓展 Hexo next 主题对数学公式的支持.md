@@ -35,6 +35,8 @@ math:
     copy_tex: false
 ```
 
+<!-- more -->
+
 `per_page` 是控制是否每页呈现数学方程式。
 
 * true → Equations will be processed on 每一页. Even if they not exists on one or another page。

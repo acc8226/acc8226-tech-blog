@@ -25,6 +25,8 @@ console.log(shopping[0]);
 shopping[0] = 'tahini';
 ```
 
+<!-- more -->
+
 获取数组长度
 `sequence.length;`
 

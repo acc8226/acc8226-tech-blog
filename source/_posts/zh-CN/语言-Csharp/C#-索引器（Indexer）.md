@@ -11,6 +11,8 @@ tags: csharp
 
 语法:
 
+<!-- more -->
+
 ```cs
 element-type this[int index]
 {

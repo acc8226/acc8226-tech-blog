@@ -27,6 +27,8 @@ cache.get(key);
 正例：`public static final double HEIGHT = 175.5D;`
 `public static final float WEIGHT = 150.3F;`
 
+<!-- more -->
+
 4\. 【推荐】不要使用一个常量类维护所有常量，要按常量功能进行归类，分开维护。
 
 说明：大而全的常量类，杂乱无章，使用查找功能才能定位到要修改的常量，不利于理解，也不利于维护。

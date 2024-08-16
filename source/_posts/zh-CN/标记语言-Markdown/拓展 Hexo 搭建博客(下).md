@@ -49,6 +49,8 @@ per_page: 15
 pagination_dir: page
 ```
 
+<!-- more -->
+
 ## 部署自动化
 
 1. hexo-src 构建项目的地址

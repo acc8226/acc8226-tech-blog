@@ -27,6 +27,8 @@ cd myblog
 bundle exec jekyll serve
 ```
 
+<!-- more -->
+
 Browse to <http://localhost:4000>
 
 ## 参考

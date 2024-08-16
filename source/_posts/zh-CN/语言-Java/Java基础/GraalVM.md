@@ -15,6 +15,8 @@ GraalVM 这是一个高性能的 JDK，旨在加快 Java 应用程序的性能�
 什么是 GraalVM Native Image?
 GraalVM Native Images 是独立的可执行文件，可以通过提前处理编译的 Java 应用程序来生成。本机映像通常比 JVM 映像占用的内存更少，启动速度更快。
 
+<!-- more -->
+
 ## 参考
 
 GraalVM

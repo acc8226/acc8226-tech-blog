@@ -15,6 +15,8 @@ tags:
 
 Apache Commons Lang 包括一系列工具类，有字符串相关的、时间处理的、反射的、并发包的等等，Apache Commons Collections 专门用作集合处理。
 
+<!-- more -->
+
 ## 参考
 
 Apache Commons – Apache Commons

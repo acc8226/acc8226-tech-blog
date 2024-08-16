@@ -27,6 +27,8 @@ tags:
 </dependency>
 ```
 
+<!-- more -->
+
 或者 gradle
 
 ```groovy

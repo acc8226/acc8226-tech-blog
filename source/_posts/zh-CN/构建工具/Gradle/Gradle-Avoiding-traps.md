@@ -17,6 +17,8 @@ tags:
 
 scope.groovy
 
+<!-- more -->
+
 ```groovy
 String localScope1 = 'localScope1'
 def localScope2 = 'localScope2'

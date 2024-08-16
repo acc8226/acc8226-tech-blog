@@ -13,6 +13,8 @@ Mycli 是 MySQL、 MariaDB 和 Percona 的命令行界面，具有自动补全�
 
 Usage
 
+<!-- more -->
+
 ```sh
 $ mycli --help
 Usage: mycli [OPTIONS] [DATABASE]

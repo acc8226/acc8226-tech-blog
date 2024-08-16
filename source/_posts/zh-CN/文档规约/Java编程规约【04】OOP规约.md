@@ -23,6 +23,8 @@ categories: 文档规约
 
 5\. 【强制】不能使用过时的类或方法。
 
+<!-- more -->
+
 说明：`java.net.URLDecoder` 中的方法 `decode(String encodeStr)` 这个方法已经过时，应该使用双参数 `decode(String source, String encode)`。接口提供方既然明确是过时接口，那么有义务同时提供新的接口；作为调用方来说，有义务去考证过时方法的新实现是什么。
 
 6\. 【强制】Object 的 equals 方法容易抛空指针异常，应使用常量或确定有值的对象来调用 equals。

@@ -23,6 +23,8 @@ plantuml/plantuml-server: PlantUML Online Server
 
 plantuml-server 启动完成后，需要在 GitLab 上配置开启 PlantUML，管理员登录 -> Admin Area -> Settings，复选框选中 Enable PlantUML，输入 PlantUML URL（就是刚刚启动的 PlantUML Server 服务监听地址）。好了现在可以开始 PlantUML 之旅了。
 
+<!-- more -->
+
 ### gitlab 配置 Mermaid
 
 在 GitLab 10.3 中[引入](https://gitlab.com/gitlab-org/gitlab-foss/-/merge_requests/15107) 。您可以访问官方页面以获取更多详细信息。

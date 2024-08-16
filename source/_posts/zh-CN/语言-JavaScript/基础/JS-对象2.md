@@ -25,6 +25,8 @@ JavaScript 用一种称为构建函数的特殊函数来定义对象和它们的
 var person1 = new Object();
 ```
 
+<!-- more -->
+
 **使用create()方法**
 
 ```js

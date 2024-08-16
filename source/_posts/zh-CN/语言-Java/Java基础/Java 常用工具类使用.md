@@ -27,6 +27,8 @@ tags:
 
 其实 Math 的 random 方法用的就是 util 包中的 Random 类。因此可以 Random.nextDouble() 替换 Math.random(), 但是这样说不太准确。
 
+<!-- more -->
+
 ## Objects 类
 
 ## Arrays 类

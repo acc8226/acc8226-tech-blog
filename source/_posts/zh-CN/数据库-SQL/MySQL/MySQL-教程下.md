@@ -28,6 +28,8 @@ CREATE TABLE insect
 ) engine = innodb auto_increment = 100;
 ```
 
+<!-- more -->
+
 则下一个插入的值为 100。
 
 你也可以在表创建成功后，通过以下语句来实现：

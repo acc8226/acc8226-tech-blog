@@ -25,6 +25,8 @@ LIKE 操作符用于在 WHERE 子句中搜索列中的指定模式。其中 % �
 | %    | 替代 0 个或多个字符 |
 | _   | 替代一个字符  |
 
+<!-- more -->
+
 ```sql
 SELECT * FROM Websites
 WHERE name LIKE 'G%';

@@ -20,6 +20,8 @@ tags: Android
 
 所有字符串都能应用某些样式设置标记和格式设置参数。如需了解有关样式和格式设置字符串的信息，请参阅有关[格式和样式设置](http://developer.android.youdaxue.com/guide/topics/resources/string-resource.html#FormattingAndStyling)的部分
 
+<!-- more -->
+
 ### String
 
 可从应用或从其他资源文件（如 XML 布局）引用的单个字符串。

@@ -32,6 +32,8 @@ tags:
 6、输出成绩大于 90 的人数
 7、计算平均成绩并输出
 
+<!-- more -->
+
 ![](https://upload-images.jianshu.io/upload_images/1662509-7dea1f33b157bd88.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ```java

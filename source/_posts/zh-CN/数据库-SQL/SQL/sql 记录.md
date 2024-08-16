@@ -14,6 +14,8 @@ where 1=0; 这个条件始终为 false，结果不会返回任何数据，只有
 
 用法，可用于创建一个新表，而新表的结构与查询的表的结构是一样的。
 
+<!-- more -->
+
 ```sql
 CREATE TABLE newtable AS SELECT * FROM oldtable WHERE 1 = 0;
 ```

@@ -42,6 +42,8 @@ jQuery(document).ready(function($) {
 </script>
 ```
 
+<!-- more -->
+
 ## 鼠标样式
 
 ```xml

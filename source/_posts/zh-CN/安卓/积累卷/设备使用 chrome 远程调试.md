@@ -23,6 +23,8 @@ tags: Android
 使用 Chrome 开发者工具在您的原生 Android 应用中调试 WebView。
 在 Android 4.4 (KitKat) 或更高版本中，使用 DevTools 可以在原生 Android 应用中调试 WebView 内容。
 
+<!-- more -->
+
 * 在您的原生 Android 应用中启用 WebView 调试；在 Chrome DevTools 中调试 WebView。
 * 通过 **chrome://inspect** 访问已启用调试的 WebView 列表。
 * 调试 WebView 与通过[远程调试](https://developers.google.com/web/tools/chrome-devtools/debug/remote-debugging)调试网页相同。

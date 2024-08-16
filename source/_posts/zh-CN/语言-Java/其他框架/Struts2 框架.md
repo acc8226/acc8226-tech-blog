@@ -30,6 +30,8 @@ Struts2 的体系结构大致如下图所示：
 * 8、ActionInvocation 负责查找 结果字符串 对应的 Result，然后执行这个 Result，再返回对应的结果视图（如 JSP 等等）来呈现页面。
 * 9、再次调用所用的配置拦截器（调用顺序与第 7 步相反），然后响应（HttpServletResponse）被返回给浏览器。
 
+<!-- more -->
+
 下面列举 Struts2 的一些主要优点。
 
 Struts2 是非侵入式设计，即不依赖于 Servlet API 和 Struts API.

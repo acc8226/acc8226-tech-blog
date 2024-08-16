@@ -24,6 +24,8 @@ and the
 Alterations to support additional readability in tutorials were inspired by the
 [raywenderlich.com Swift style guide](https://github.com/raywenderlich/swift-style-guide).
 
+<!-- more -->
+
 ## Android Studio Coding Style
 
 It is possible to get Android Studio to adhere to these style guidelines, via

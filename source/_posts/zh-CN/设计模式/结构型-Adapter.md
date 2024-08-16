@@ -17,6 +17,8 @@ tags: 设计模式
 
 ![对象适配器类图](https://upload-images.jianshu.io/upload_images/1662509-62db62f19a65728d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
+<!-- more -->
+
 ```java
 // 类适配器: 基于继承
 public interface ITarget {

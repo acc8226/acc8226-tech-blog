@@ -27,6 +27,8 @@ categories: 我的创作
 * 【mac 官网版】[360 极速浏览器](https://browser.360.cn/ee/mac/index.html)
 * 【linux】一般用自带[火狐浏览器](https://www.firefox.com.cn)
 
+<!-- more -->
+
 官网收录：【win】[搜狗高速浏览器](https://sogou.browser.qq.com/) |【win】[猎豹浏览器](https://www.liebao.cn/) |【全平台】[360 安全浏览器](https://browser.360.cn/) |【win mac】[QQ 浏览器](https://browser.qq.com/) |【全平台】[Edge](https://www.microsoft.com/zh-cn/edge) |【全平台】[Opera](https://www.opera.com/zh-cn) |【全平台】[Chrome](https://www.google.cn/intl/zh-CN/chrome/) |【win mac】[傲游浏览器](https://www.maxthon.cn/) | [Vivaldi](https://vivaldi.com/)
 
 #### 3. 压缩解压

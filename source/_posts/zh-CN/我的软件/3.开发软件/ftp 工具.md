@@ -23,6 +23,8 @@ categories:
 开源免费。可以像访问 FTP 一样访问 WebDAV 服务器。
 因为经常要连 SCP 服务器所以电脑里有，临时访问 WebDAV 服务器并且正好有这个软件的话拿来就可以用，还是挺顺手的。缺点是大文件无法续传。
 
+<!-- more -->
+
 WinSCP 下载地址
 <https://winscp.net/eng/index.php>
 

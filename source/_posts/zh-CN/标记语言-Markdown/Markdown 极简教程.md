@@ -17,6 +17,8 @@ Markdown is a way to style text on the web. You control the display of the docum
 源码:
 `It's very easy to make some words **bold** and other words *italic* with Markdown. You can even [link to Google!](http://google.com)`
 
+<!-- more -->
+
 效果:
 It's very easy to make some words **bold** and other words *italic* with Markdown. You can even [link to Google!](http://google.com)
 

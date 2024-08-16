@@ -18,6 +18,8 @@ categories: mysql
 官网 <https://www.mchange.com/projects/c3p0/>
 下载 C3P0 工具包：<https://sourceforge.net/projects/c3p0/files/latest/download?source=files>
 
+<!-- more -->
+
 ### 阿里 druid 连接池
 
 druid 是一个高性能，实时分析数据库，提供亚秒级查询流和批量数据的规模和负载。

@@ -25,6 +25,8 @@ implementation("org.slf4j:slf4j-api:2.0.7")
 implementation("org.slf4j:slf4j-simple:2.0.7")
 ```
 
+<!-- more -->
+
 slf4j-nop-2.0.9.jar
 NOP 的绑定/提供程序，静默地丢弃所有日志记录。
 

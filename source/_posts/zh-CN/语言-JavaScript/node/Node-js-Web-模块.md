@@ -25,6 +25,8 @@ Web 服务器一般指网站服务器，是指驻留于因特网上某种类型�
 
 Node.js 提供了 http 模块，http 模块主要用于搭建 HTTP 服务端和客户端，使用 HTTP 服务器或客户端功能必须调用 http 模块，代码如下：
 
+<!-- more -->
+
 ```js
 var http = require("http")
 var fs = require("fs")

@@ -17,6 +17,8 @@ select version();
 show server_version;
 ```
 
+<!-- more -->
+
 获取目前支持的标准 PostgreSQL 扩展
 
 ```sql

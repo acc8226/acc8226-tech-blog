@@ -24,6 +24,8 @@ docsify 是一个动态生成文档网站的工具。不同于 GitBook、Hexo �
 npm i docsify-cli -g
 ```
 
+<!-- more -->
+
 如果想在项目的 `./docs` 目录里写文档，直接通过 `init` 初始化项目。
 
 ```sh

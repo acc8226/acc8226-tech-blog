@@ -27,6 +27,8 @@ namespace namespace_name
 namespace_name.item_name;
 ```
 
+<!-- more -->
+
 演示:
 
 ```cs

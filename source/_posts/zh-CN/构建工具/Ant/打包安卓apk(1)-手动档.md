@@ -27,6 +27,8 @@ set path=%path%;D:\Android\android-sdk\build-tools\25.0.2
 aapt package -f -m -M AndroidManifest.xml -I D:/Android/android-sdk/platforms/android-22/android.jar -S res -J gen
 ```
 
+<!-- more -->
+
 参数的含义如下：
 　　-f : 如果编译出来的文件已经存在，强制覆盖
 　　-m : 使得生成的包的目录放在 -J 参数指定的目录

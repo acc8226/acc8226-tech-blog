@@ -21,7 +21,8 @@ Intent 分为两种类型：
 * 显式 Intent：按名称（完全限定类名）指定要启动的组件。 通常，您会在自己的应用中使用显式 Intent 来启动组件，这是因为您知道要启动的 Activity 或服务的类名。例如，启动新 Activity 以响应用户操作，或者启动服务以在后台下载文件。
 * 隐式 Intent ：不会指定特定的组件，而是声明要执行的常规操作，从而允许其他应用中的组件来处理它。 例如，如需在地图上向用户显示位置，则可以使用隐式 Intent，请求另一具有此功能的应用在地图上显示指定的位置。
 
-[图片上传失败...(image-976dbc-1640352429584)]
+<!-- more -->
+
 ，并将其传递给 [startActivity()](http://developer.android.youdaxue.com/reference/android/content/Context.html#startActivity(android.content.Intent))。**[2]**Android 系统搜索所有应用中与 Intent 匹配的 Intent 过滤器。找到匹配项之后，**[3]** 该系统通过调用匹配 Activity（Activity B）的 [onCreate()](http://developer.android.youdaxue.com/reference/android/app/Activity.html#onCreate(android.os.Bundle)) 方法并将其传递给 [Intent](http://developer.android.youdaxue.com/reference/android/content/Intent.html)，以此启动匹配 Activity](http://upload-images.jianshu.io/upload_images/1662509-6496761370a9e66c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 > **注意：**为了确保应用的安全性，启动 [Service](http://developer.android.youdaxue.com/reference/android/app/Service.html)

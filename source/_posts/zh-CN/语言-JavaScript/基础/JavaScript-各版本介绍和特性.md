@@ -21,6 +21,8 @@ Netscape Navigator 3.0 在 **1996 年 8 月 19** 发布，是支持 JavaScript �
 * [Function](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Function "此页面仍未被本地化, 期待您的翻译!")
 * [Number](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Number "JavaScript 的 Number 对象是经过封装的能让你处理数字值的对象。Number 对象由 Number() 构造器创建。")
 
+<!-- more -->
+
 ### 新增的属性
 
 * [Number.MAX_VALUE](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_VALUE "Number.MAX_VALUE 属性表示在 JavaScript 里所能表示的最大数值。")

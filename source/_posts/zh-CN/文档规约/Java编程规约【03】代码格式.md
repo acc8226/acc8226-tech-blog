@@ -25,6 +25,8 @@ categories: 文档规约
 IDEA 设置 Tab 为 4 个空格时，请勿勾选 Use tab character；
 Eclipse 设置中，找到 tab policy 设置为 Spaces only，Tab size：4，最后必须勾选 insert spaces for tabs
 
+<!-- more -->
+
 正例：（涉及上述中的 1-5 点）
 
 ```java

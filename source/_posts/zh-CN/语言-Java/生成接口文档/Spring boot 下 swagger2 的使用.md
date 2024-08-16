@@ -28,6 +28,8 @@ swagger 通过注解表明该接口会生成文档，包括接口名、请求方
 @ApiImplicitParam：
 作用在方法上，表示单独的请求参数, 一个非常强大且重要的注解, 作用和 ApiParam 类似
 
+<!-- more -->
+
 ## 开始使用
 
 pom 中导入 dependency

@@ -27,6 +27,8 @@ dependencies {
 }
 ```
 
+<!-- more -->
+
 log4j-slf4j2-impl should be used with SLF4J 2.0.x releases or newer.
 
 ```groovy

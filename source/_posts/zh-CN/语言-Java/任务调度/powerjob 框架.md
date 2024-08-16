@@ -19,6 +19,8 @@ appName 等于一个业务集群，也就是实际的一个 Java 项目。
 
 powerjob-server 调度服务器
 
+<!-- more -->
+
 ## 问题
 
 PowerJob 连接 Postgres 数据库出现 org.springframework.orm.jpa.JpaSystemException: Unable to access lob stream; nested exception is org.hibernate.HibernateException: Unable to access lob stream · Issue #153 · PowerJob/PowerJob

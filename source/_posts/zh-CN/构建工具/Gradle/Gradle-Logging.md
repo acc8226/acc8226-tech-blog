@@ -23,6 +23,8 @@ Warning messages
 LIFECYCLE
 Progress information messages
 
+<!-- more -->
+
 INFO
 Information messages
 

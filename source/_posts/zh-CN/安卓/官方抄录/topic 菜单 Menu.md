@@ -24,6 +24,8 @@ tags: Android
 * **弹出菜单**
 弹出菜单将以垂直列表形式显示一系列项目，这些项目将锚定到调用该菜单的视图中。 它特别适用于提供与特定内容相关的大量操作，或者为命令的另一部分提供选项。 弹出菜单中的操作**不会**直接影响对应的内容，而上下文操作则会影响。 相反，弹出菜单适用于与您 Activity 中的内容区域相关的扩展操作。请参阅[创建弹出菜单](http://developer.android.youdaxue.com/guide/topics/ui/menus.html#PopupMenu)部分。
 
+<!-- more -->
+
 ### 使用 XML 定义菜单
 
 对于所有菜单类型，Android 提供了标准的 XML 格式来定义菜单项。您应在 XML [菜单资源](http://developer.android.youdaxue.com/guide/topics/resources/menu-resource.html)中定义菜单及其所有项，而不是在 Activity 的代码中构建菜单。定义后，您可以在 Activity 或片段中扩充菜单资源（将其作为 [Menu](http://developer.android.youdaxue.com/reference/android/view/Menu.html)

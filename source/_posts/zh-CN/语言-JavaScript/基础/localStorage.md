@@ -24,6 +24,8 @@ var storage=window.localStorage;
             storage.setItem("c",3);
 ```
 
+<!-- more -->
+
 JSON.stringify()这个方法，来将JSON转换成为 JSON 字符串
 
 ```js

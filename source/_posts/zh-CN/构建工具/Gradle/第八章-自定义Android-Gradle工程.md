@@ -21,6 +21,8 @@ defaultConfig 是 android 对象中的一个配置块，负责定义所有的默
 
 以上示例配置了Android 开发的基本信息，可以满足一个基本的Android App开发，下面我们对它的一些配置进行一个详细的说明。
 
+<!-- more -->
+
 ##### 8.1.1 applicationId
 
 applicationId 是 ProductFlavor 的一个属性，用于指定生成的 App 的包名，默认情况下是 null，这时候在构建的时候，会从我们的 AndroidManifest.xml 文件中读取，也就是我们在 AndroidManifest.xml 文件中配置的 manifest 标签的package属性值。

@@ -26,6 +26,8 @@ rollback、commit、savepoint
 
 查询语句示例：
 
+<!-- more -->
+
 ```sql
 SELECT column_name,column_name
 FROM table_name

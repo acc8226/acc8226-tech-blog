@@ -21,6 +21,8 @@ tags: 设计模式
 * 统计指定目录下的文件个数；
 * 统计指定目录下的文件总大小。
 
+<!-- more -->
+
 ```java
 package pattern.structural.composite;
 

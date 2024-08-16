@@ -23,6 +23,8 @@ https://jhildenbiddle.github.io/docsify-themeable/#/
 
 1. [Create a docsify site](//docsify.js.org/#/quickstart) by following the instructions on the [docsify.js](//docsify.js.org) website.
 
+<!-- more -->
+
 1. Select a theme from the [Themes](themes) section and replace the `<link>` in your `index.html`.
 
    ```html

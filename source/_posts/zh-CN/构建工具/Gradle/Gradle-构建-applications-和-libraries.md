@@ -60,6 +60,7 @@ Get more help with your project: https://docs.gradle.org/5.4.1/userguide/tutoria
 BUILD SUCCESSFUL
 2 actionable tasks: 2 executed
 ```
+<!-- more -->
 
 ### [Execute the build 执行构建](https://guides.gradle.org/building-java-applications/#execute_the_build)
 

@@ -29,6 +29,8 @@ tags:
 
 传输, 持久化, 配置, 单元测试
 
+<!-- more -->
+
 ### 下载
 
 官网下载 <http://x-stream.github.io/download.html>

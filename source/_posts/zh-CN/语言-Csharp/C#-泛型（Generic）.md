@@ -11,6 +11,8 @@ tags: csharp
 
 您可以通过数据类型的替代参数编写类或方法的规范。当编译器遇到类的构造函数或方法的函数调用时，它会生成代码来处理指定的数据类型。下面这个简单的实例将有助于您理解这个概念：
 
+<!-- more -->
+
 ```cs
 using System;
 using System.Collections.Generic;

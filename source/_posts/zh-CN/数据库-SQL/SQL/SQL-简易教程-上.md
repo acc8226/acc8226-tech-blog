@@ -17,6 +17,8 @@ categories: sql
 
 SQL（发音为字母S-Q-L或sequel）是 Structured Query Language（结构化查询语言）的缩写。SQL 是一种专门用来与数据库沟通的语言。
 
+<!-- more -->
+
 **SQL 的扩展**
 许多 DBMS 厂商通过增加语句或指令，对 SQL 进行了扩展。这种扩展的目的是提供执行特定操作的额外功能或简化方法。虽然这种扩展很有用，但一般都是针对个别 DBMS 的，很少有两个厂商同时支持这种扩展。标准 SQL 由 ANSI 标准委员会管理，从而称为 ANSI SQL。所有主要的 DBMS，即使有自己的扩展，也都支持ANSI SQL。各个实现有自己的名称，如 Oracle 的 PL/SQL、微软 SQL Server用的 Transact-SQL 等。
 

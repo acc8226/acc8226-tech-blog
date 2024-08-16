@@ -17,6 +17,8 @@ tags: 设计模式
 
 为了方便接下来的讲解，我对游戏背景做了简化，只保留了部分状态和事件。简化之后的状态转移如下图所示：
 
+<!-- more -->
+
 ![](https://upload-images.jianshu.io/upload_images/1662509-135261223c4b7cd7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 **状态机实现方式一：分支逻辑法**

@@ -21,6 +21,8 @@ JavaScript 中的  [String](https://developer.mozilla.org/en-US/docs/Glossary/S
 `\x`之后的数值将被认为是一个 16 进制数.
 `'\xA9' // "©"`
 
+<!-- more -->
+
 Unicode 转义序列
 Unicode 转义序列在\u 之后需要至少 4 个字符.
 `'\u00A9' // "©"`

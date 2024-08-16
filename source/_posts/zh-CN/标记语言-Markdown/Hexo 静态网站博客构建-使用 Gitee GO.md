@@ -63,6 +63,8 @@ stages:
           retry: '0'
 ```
 
+<!-- more -->
+
 详见：
 
 <https://gitee.com/acc8226/md/blob/master/.workflow/pipeline-20220806.yml>

@@ -34,6 +34,8 @@ exit
 > 为什么 cleanlogs.sh 可以将 log 文件清除？
 因为/dev/null ，里面是空的，重定向到 /var/log/wtmp 文件后，就清空了 wtmp 文件的内容。
 
+<!-- more -->
+
 ## 题目一
 
 写一个脚本

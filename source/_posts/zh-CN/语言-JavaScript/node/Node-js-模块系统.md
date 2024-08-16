@@ -23,6 +23,8 @@ exports.world = function () {
 }
 ```
 
+<!-- more -->
+
 如下我们创建一个 main.js 文件，代码如下:
 
 ```js

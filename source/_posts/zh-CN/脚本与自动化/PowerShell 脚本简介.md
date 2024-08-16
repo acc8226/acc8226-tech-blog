@@ -24,6 +24,8 @@ M1 processors - powershell-7.3.4-osx-arm64.pkg
 
 要确定当前目录位置的路径，请输入命令 Get-Location
 
+<!-- more -->
+
 设置您的当前位置（设置位置），请使用 Set-Location（cd 或者 chdir 或者 sl）
 
 ```ps1

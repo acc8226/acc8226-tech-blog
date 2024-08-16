@@ -32,6 +32,8 @@ System.out.println(data[0]);
 System.out.println(data[data.length - 1]);
 ```
 
+<!-- more -->
+
 方法二：转成流后获取 max 和 min
 
 ```java

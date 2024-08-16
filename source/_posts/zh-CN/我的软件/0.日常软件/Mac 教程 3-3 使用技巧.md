@@ -32,6 +32,8 @@ categories:
 * 选取“编辑” > “启用 Root 用户”，然后输入要用于 root 用户的密码。
 * 或者选取“编辑”>“停用 Root 用户”。
 
+<!-- more -->
+
 ![](https://upload-images.jianshu.io/upload_images/1662509-fe39046c1543ff67.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 > root 用户帐户不适合日常使用。它的权限允许更改 Mac 所必需的文件。要撤销此类更改，您可能需要[重新安装系统软件](https://support.apple.com/zh-cn/HT204904)。您应在完成任务后停用 root 用户。

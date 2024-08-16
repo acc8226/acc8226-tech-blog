@@ -24,6 +24,8 @@ datatype[] arrayName;
 double[] balance = new double[10];
 ```
 
+<!-- more -->
+
 您可以在声明数组的同时给数组赋值，比如：
 
 ```cs

@@ -23,6 +23,8 @@ RDBMS 即关系数据库管理系统(Relational Database Management System)的�
 
 > 此外,你也可以使用 MariaDB 代替，MariaDB 数据库管理系统是 MySQL 的一个分支，主要由开源社区在维护，采用 GPL 授权许可。开发这个分支的原因之一是：甲骨文公司收购了 MySQL 后，有将 MySQL 闭源的潜在风险，因此社区采用分支的方式来避开这个风险。MariaDB 的目的是完全兼容 MySQL，包括 API 和命令行，使之能轻松成为 MySQL 的代替品。
 
+<!-- more -->
+
 ## MySQL 版本
 
 ❑ 4——InnoDB 引擎，增加事务处理、并、改进全文本搜索等的支持。

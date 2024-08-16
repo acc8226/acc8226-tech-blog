@@ -21,6 +21,8 @@ windows 环境下已经自带了 gitk，如果觉得还是不好使的话。Java
 
 [TortoiseGit](https://tortoisegit.org/download/) 和 windows 资源管理器有很好的集成
 
+<!-- more -->
+
 #### 使用 ppk 密钥
 
 默认安装 tortoisegit，会使用 PuTTY（plink）作为默认的 ssh 方式，声称对 windows 集成更好。

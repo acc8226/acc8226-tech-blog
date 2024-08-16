@@ -26,6 +26,8 @@ JavaScript 严格模式（strict mode）即在严格的条件下运行。
 
 为整个脚本文件开启严格模式，需要在所有语句之前放一个特定语句 "use strict"; （或 'use strict';）
 
+<!-- more -->
+
 ```js
 // 整个脚本都开启严格模式的语法
 "use strict"

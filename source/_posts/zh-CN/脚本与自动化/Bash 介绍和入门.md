@@ -24,6 +24,8 @@ Bash之Hello World
 
 使用 vim 编辑 hello.sh，输入如下代码并保存：
 
+<!-- more -->
+
 ```sh
 #!/bin/bash
 # This is a comment

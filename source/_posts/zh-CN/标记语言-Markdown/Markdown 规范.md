@@ -24,6 +24,8 @@ Aliases: heading-increment, header-increment
 This rule is triggered when you skip heading levels in a markdown document, for
 example:
 
+<!-- more -->
+
 ```markdown
 # Heading 1
 

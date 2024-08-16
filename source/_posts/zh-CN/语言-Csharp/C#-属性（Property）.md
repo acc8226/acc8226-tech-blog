@@ -15,6 +15,8 @@ tags: csharp
 
 例如，有一个名为 Student 的类，带有 age、name 和 code 的私有域。我们不能在类的范围以外直接访问这些域，但是我们可以拥有访问这些私有域的属性。
 
+<!-- more -->
+
 ```cs
 // 声明类型为 string 的 Code 属性
 public string Code {

@@ -29,6 +29,8 @@ variable 事实上只是 variable事实上只是{variable} 的简写形式。在
 不能使用 bash 里的关键字（可用 help 命令查看保留关键字）。
 除了直接赋值，还可以用语句给变量赋值，如：for file in `ls /etc`
 
+<!-- more -->
+
 ## 使用变量
 
 变量名前加**美元符号**，如：

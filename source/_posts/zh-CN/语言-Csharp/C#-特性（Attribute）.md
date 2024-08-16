@@ -25,6 +25,8 @@ element
 * Conditional
 * Obsolete
 
+<!-- more -->
+
 AttributeUsage
 预定义特性 AttributeUsage 描述了如何使用一个**自定义特性类**。它规定了特性可应用到的项目的类型。
 

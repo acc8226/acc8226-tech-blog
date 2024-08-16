@@ -23,6 +23,8 @@ tags: nodeJS
 
 暴露 Headers: 默认不填即可
 
+<!-- more -->
+
 缓存时间: 指定浏览器对特定资源的预取（OPTIONS）请求返回结果的缓存时间。没有特殊要求可以填写长一点的时间, 例如选择为 600(秒) = 10 分钟.
 
 返回 Vary: Origin 勾选后选择是否返回 Vary: Origin Header。

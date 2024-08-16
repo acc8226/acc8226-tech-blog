@@ -21,6 +21,8 @@ INSERT INTO dept VALUES (30,'SALES','CHICAGO');
 INSERT INTO dept VALUES (40,'OPERATIONS','BOSTON');
 ```
 
+<!-- more -->
+
 2\. 创建 emp 表
 
 ```sql

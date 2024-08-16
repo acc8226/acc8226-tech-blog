@@ -20,6 +20,8 @@ javax.mail-api.jar | [mail](http://ant.apache.org/manual/Tasks/mail.html) task 
 
 否则会报错
 
+<!-- more -->
+
 ```sh
 D:\Ant\AutoPackage\build.xml:144: java.lang.NoClassDefFoundError: com/sun/mail/util/FolderClosedIOException
         at java.lang.Class.forName0(Native Method)

@@ -27,6 +27,8 @@ categories:
 
 强制刷新页面：按下 Ctrl + F5（Windows）或 Cmd + Shift + R（Mac）来强制刷新页面。这会清除浏览器缓存，确保页面加载最新的文件。
 
+<!-- more -->
+
 ### 超酷的滑动关机
 
 打开 C 盘，定位到 C:\Windows\System32 目录，查询是否有一个 SlideToShutDown.exe 应用程序。接着右键点击该应用程序，选择发送到桌面快捷方式，这样就在桌面建立了一个快捷方式。

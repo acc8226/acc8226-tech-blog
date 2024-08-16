@@ -15,6 +15,8 @@ tags: Android
 To create a custom layout, define a View layout, in XML or in your application code, and pass the root [View](http://developer.android.youdaxue.com/reference/android/view/View.html) object to the [setView(View)](http://developer.android.youdaxue.com/reference/android/widget/Toast.html#setView(android.view.View)) method.
 For example, you can create the layout for the toast visible in the screenshot to the right with the following XML (saved as *layout/custom_toast.xml*):
 
+<!-- more -->
+
 ```xml
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:id="@+id/custom_toast_container"

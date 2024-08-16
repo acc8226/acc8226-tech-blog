@@ -26,6 +26,8 @@ console.log(buf.toString("hex"))
 console.log(buf.toString("base64"))
 ```
 
+<!-- more -->
+
 Node.js 目前支持的字符编码包括：
 
 - ascii - 仅支持 7 位 ASCII 数据。如果设置去掉高位的话，这种编码是非常快的。

@@ -20,6 +20,8 @@ tags: csharp
 
 > 如需得到一个类型或一个变量在特定平台上的准确尺寸，可以使用 sizeof 方法。表达式 sizeof(type) 产生以字节为单位存储对象或类型的存储尺寸。下面举例获取任何机器上 int 类型的存储尺寸：
 
+<!-- more -->
+
 ```cs
 using System;
 

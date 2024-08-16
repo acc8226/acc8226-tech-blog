@@ -26,6 +26,8 @@ public class HelloWorld {
 }
 ```
 
+<!-- more -->
+
 `src/main/java/hello/Greeter.java`
 
 ```java

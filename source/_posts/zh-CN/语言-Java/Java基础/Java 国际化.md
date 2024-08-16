@@ -15,3 +15,5 @@ native2ascii.exe 是 Java 的一个文件转码工具，是将特殊各异的内
 
 中文转Unicode：native2ascii -encoding GBK D:\zh.txt D:\zh_gbk.txt //GB2312也可以
 Unicode转中文：native2ascii -reverse -encoding GBK D:\cn_gbk.txt D:\gbk_back.txt
+
+<!-- more -->

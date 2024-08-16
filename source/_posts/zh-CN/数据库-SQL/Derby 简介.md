@@ -13,5 +13,7 @@ Derby 还通过 Derby Network Client JDBC 驱动程序和 Derby Network Server �
 Derby 易于安装、部署和使用。
 如果您刚接触 Derby，请查看“快速入门”页面。
 
+<!-- more -->
+
 Apache Derby
 <https://db.apache.org/derby/index.html>

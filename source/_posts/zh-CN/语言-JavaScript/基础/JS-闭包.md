@@ -25,6 +25,8 @@ var myFunc = makeFunc();
 myFunc();
 ```
 
+<!-- more -->
+
 下面是一个更有意思的示例 — makeAdder 函数：
 
 ```js

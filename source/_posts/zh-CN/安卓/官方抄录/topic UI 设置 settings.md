@@ -20,6 +20,8 @@ https://developer.android.google.cn/guide/topics/ui/settings.html
 
 设置是使用您在 XML 文件中声明的 [Preference](https://developer.android.google.cn/reference/android/preference/Preference.html) 类的各种子类构建而成，而不是使用 [View](https://developer.android.google.cn/reference/android/view/View.html) 对象构建用户界面。
 
+<!-- more -->
+
 [Preference](https://developer.android.google.cn/reference/android/preference/Preference.html) 对象是单个设置的构建基块。每个 [Preference](https://developer.android.google.cn/reference/android/preference/Preference.html) 均作为项目显示在列表中，并提供适当的 UI 供用户修改设置。例如，[CheckBoxPreference](https://developer.android.google.cn/reference/android/preference/CheckBoxPreference.html) 可创建一个列表项用于显示复选框，[ListPreference](https://developer.android.google.cn/reference/android/preference/ListPreference.html) 可创建一个项目用于打开包含选择列表的对话框。
 
 您添加的每个 [Preference](https://developer.android.google.cn/reference/android/preference/Preference.html) 都有一个相应的键值对，可供系统用来将设置保存在应用设置的默认[SharedPreferences](https://developer.android.google.cn/reference/android/content/SharedPreferences.html) 文件中。当用户更改设置时，系统会为您更新 [SharedPreferences](https://developer.android.google.cn/reference/android/content/SharedPreferences.html) 文件中的相应值。您只应在需要读取值以根据用户设置确定应用的行为时，才与关联的 [SharedPreferences](https://developer.android.google.cn/reference/android/content/SharedPreferences.html) 文件直接交互。

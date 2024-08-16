@@ -24,6 +24,8 @@ config.bool = false
 
 然后从代码中读取需要的字段即可
 
+<!-- more -->
+
 ### 探测敌情
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-090b0f1ff9def401.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)

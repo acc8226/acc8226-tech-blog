@@ -20,6 +20,8 @@ Path=%ANT_HOME%\bin
 
 3\. 运行 `ant -version` 查看是否安装成功 `Apache Ant(TM) version 1.10.5 compiled on July 10 2018`
 
+<!-- more -->
+
 ```xml
 <!-- copy -->
 <!-- 拷贝文件 -->

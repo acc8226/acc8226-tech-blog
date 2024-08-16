@@ -27,6 +27,8 @@ categories: mysql
 ❑ 用旧表原来的名字重命名新表；
 ❑ 根据需要，重新创建触发器、存储过程、索引和外键。
 
+<!-- more -->
+
 ## 乱码解决办法
 
 default-character-client 客户端发送什么编码的数据

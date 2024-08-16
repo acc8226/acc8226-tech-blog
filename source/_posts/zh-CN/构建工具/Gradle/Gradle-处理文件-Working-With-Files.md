@@ -24,6 +24,8 @@ task copyReport(type: Copy) {
 
 你甚至可以不使用 File ()方法直接使用这个路径，正如在文件复制深度部分前面解释的那样:
 
+<!-- more -->
+
 2.
 
 ```groovy

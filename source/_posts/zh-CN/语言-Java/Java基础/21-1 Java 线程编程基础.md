@@ -25,6 +25,8 @@ tags:
 
 Java 中表示线程，用到了 Thread 类。其构造方法如下:
 
+<!-- more -->
+
 ```java
 public Thread（）；
 public Thread （ThreadGroup group，Runnable target，String name）;

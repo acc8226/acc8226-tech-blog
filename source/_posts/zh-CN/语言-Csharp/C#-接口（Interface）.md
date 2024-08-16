@@ -24,6 +24,8 @@ interface IMyInterface
 }
 ```
 
+<!-- more -->
+
 以上代码定义了接口 IMyInterface。通常接口命令以 I 字母开头，这个接口只有一个方法 MethodToImplement()，没有参数和返回值，当然我们可以按照需求设置参数和返回值。
 
 值得注意的是，该方法并没有具体的实现

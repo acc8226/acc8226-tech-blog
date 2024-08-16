@@ -21,6 +21,8 @@ categories:
 
 `wsl --list --online` 或者 `wsl.exe -l -o`
 
+<!-- more -->
+
 ```sh
 wsl --list --online
 以下是可安装的有效分发的列表。

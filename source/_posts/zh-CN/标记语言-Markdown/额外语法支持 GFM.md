@@ -22,6 +22,8 @@ function fancyAlert(arg) {
 
 您也可以简单地将代码缩进四个空格:
 
+<!-- more -->
+
 ```js
     function fancyAlert(arg) {
       if(arg) {

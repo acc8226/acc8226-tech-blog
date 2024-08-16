@@ -30,6 +30,8 @@ JavaScript 是一种客户端的脚本语言, 也是一种弱类型的脚本语�
 3. BOM
    操作浏览器部分功能的 API
 
+<!-- more -->
+
 script 标签的属性
 
 - type

@@ -25,6 +25,8 @@ sudo dnf install zsh
 sudo apt install zsh
 ```
 
+<!-- more -->
+
 ## 参考
 
 技术|Zsh 入门 <https://linux.cn/article-11378-1.html>

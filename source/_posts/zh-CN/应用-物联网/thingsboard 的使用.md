@@ -26,6 +26,8 @@ http(s)://host:port 表示 ThingsBoard 服务器URL，例如 https://thingsboard
 callType 表示 oneway 或者 twoway
 deviceId 表示设备 ID
 
+<!-- more -->
+
 请求正文是一个有效的 JSON 参见上面的 RPC 请求对象。
 例如：
 

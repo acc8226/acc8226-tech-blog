@@ -19,6 +19,8 @@ adb 工具位于 SDK 的 **platform-tools** 目录下，因此在命令行中使
 
 - - - - -
 
+<!-- more -->
+
 调用 Activity Manager (am)
 
 调用软件包管理器 (pm)

@@ -17,6 +17,8 @@ tags: 设计模式
 
 翻译成中文就是：在对象之间定义一个一对多的依赖，当一个对象状态改变的时候，所有依赖的对象都会自动收到通知。
 
+<!-- more -->
+
 ```java
 public interface Subject {
   void registerObserver(Observer observer);

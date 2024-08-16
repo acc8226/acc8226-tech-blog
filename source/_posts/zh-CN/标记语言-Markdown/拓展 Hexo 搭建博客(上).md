@@ -27,6 +27,8 @@ Node.js 版本限制：我们强烈建议永远安装最新版本的 Hexo，以�
 
 如果您的电脑中已经安装上述必备程序，那么恭喜您！接下来只需要使用 npm 即可完成 Hexo 的安装。
 
+<!-- more -->
+
 ```bash
 npm install -g hexo-cli
 ```

@@ -19,6 +19,8 @@ Integer display width is deprecated and will be removed in a future release：�
 show full processlist;
 ```
 
+<!-- more -->
+
 列出当前的操作 process，看到很多处于 waiting 的 process ，说明已经有卡住的 proces。假如说这里我们看到是 sending data 的这条语句卡住了 mysql。
 
 找出 id 后，我们再执行：

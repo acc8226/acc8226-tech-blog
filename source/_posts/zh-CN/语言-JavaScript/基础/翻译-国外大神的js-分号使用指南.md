@@ -32,6 +32,8 @@ var fun = function() {...};   // var decl., assignmt, and func. defin.
 alert("hi");                  // function call
 ```
 
+<!-- more -->
+
 * Avoid!
 
 避免

@@ -19,6 +19,8 @@ System.ApplicationException 类支持由应用程序生成的异常。所以程�
 
 System.SystemException 类是所有预定义的系统异常的基类。
 
+<!-- more -->
+
 下表列出了一些派生自 Sytem.SystemException 类的预定义的异常类：
 System.IO.IOException 处理 I/O 错误。
 System.IndexOutOfRangeException 处理当方法指向超出范围的数组索引时生成的错误。

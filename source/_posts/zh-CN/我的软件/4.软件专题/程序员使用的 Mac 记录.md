@@ -23,6 +23,8 @@ macOS 缺失的软件包的管理器 — macOS 缺失的软件包的管理器
 
 `~/.bash_profile` 下这里记录我目前的配置
 
+<!-- more -->
+
 ```sh
 # java
 export CLASSPATH=$JAVA_HOME/lib/tools.jar:$JAVA_HOME/lib/dt.jar:.

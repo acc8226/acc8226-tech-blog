@@ -33,6 +33,8 @@ Installation Log: C:\Users\ferder\AppData\Local\Temp\install-postgresql.log
 由此可看出端口号默认为 5432。
 windows 系统数据文件在 C:\Program Files\PostgreSQL\11\data 目录下。
 
+<!-- more -->
+
 ### mac 安装 12.10
 
 <https://get.enterprisedb.com/postgresql/postgresql-12.10-2-osx.dmg>

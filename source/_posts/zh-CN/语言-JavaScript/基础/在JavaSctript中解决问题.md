@@ -27,6 +27,8 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 ```
 
+<!-- more -->
+
 这是一个事件监听器，它监听浏览器的 "`DOMContentLoaded`" 事件，即 HTML 文档体加载、解释完毕事件。事件触发时将调用 " `. . .`" 处的代码，从而避免了错误发生（[事件](https://developer.mozilla.org/zh-CN/docs/Learn/JavaScript/Building_blocks/Events)  的概念稍后学习）。
 
 **async 和 defer**

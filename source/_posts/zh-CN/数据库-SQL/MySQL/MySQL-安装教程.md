@@ -31,6 +31,8 @@ character-set-server=utf8
 default-storage-engine=INNODB
 ```
 
+<!-- more -->
+
 接下来我们来启动下 MySQL 数据库：
 
 以管理员身份打开 cmd 命令行工具，切换目录：

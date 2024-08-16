@@ -26,6 +26,8 @@ github 地址
 * 操作系统下安装 nodejs
 * 使用 npm 安装 hexo: `npm install hexo --save`
 
+<!-- more -->
+
 ## 安装 NexT
 
 ### 获取 NexT

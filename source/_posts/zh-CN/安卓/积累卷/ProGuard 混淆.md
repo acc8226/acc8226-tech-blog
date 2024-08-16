@@ -26,6 +26,8 @@ ProGuard 技术的功能概括为以下 4 项：
 -dontskipnonpubliclibraryclasses：不忽略对非公开类的处理，默认是跳过
 -dontskipnonpubliclibraryclassmembers：不忽略对非公开类的类库的成员
 
+<!-- more -->
+
 （2） 保留 选项
 `-keep{Modifier}{class_specification}`: 保护**指定的类文件(类名)和类成员**, 防止被混淆或移除
 `-keepclassmembers{Modifier}{class_specification}`: **通过成员来指定**来只保护指定**类的某些成员**, 防止被混淆或移除, 注意**类名还是会被混淆**

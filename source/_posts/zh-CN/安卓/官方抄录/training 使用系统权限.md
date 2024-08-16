@@ -20,6 +20,8 @@ tags: Android
 
 开发应用时，您应注意应用何时使用需要权限的功能。通常，在使用并非由自身创建的信息资源、执行会影响设备或其他应用行为的操作时，应用都需要获得相应的权限。例如，如果应用需要访问互联网、使用设备摄像头或者打开或关闭 WLAN，应用需要获得相应的权限。要查看系统权限的列表，请参阅[正常权限和危险权限](http://developer.android.youdaxue.com/guide/topics/security/permissions.html#normal-dangerous)。
 
+<!-- more -->
+
 您的应用仅需要获得其直接执行的操作的权限。如果应用请求另一应用执行任务或提供信息，则不需要获得相应权限。例如，如果您的应用需要读取用户的地址簿，则需要 [READ_CONTACTS](http://developer.android.youdaxue.com/reference/android/Manifest.permission.html#READ_CONTACTS) 权限。但如果您的应用使用一个 *intent* 从用户的“联系人”应用中请求信息，则您的应用不需要任何权限，但“联系人”应用*确实*需要该权限。如需了解详细信息，请参阅[考虑使用 intent](http://developer.android.youdaxue.com/training/permissions/best-practices.html#perms-vs-intents)。
 
 ### 向清单添加权限

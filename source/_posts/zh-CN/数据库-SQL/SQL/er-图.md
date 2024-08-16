@@ -15,6 +15,8 @@ categories: sql
 
 E-R 图也称实体-联系图(Entity Relationship Diagram)，提供了表示实体类型、属性和联系的方法，用来描述现实世界的[概念模型](https://baike.so.com/doc/5826746-6039565.html)。
 
+<!-- more -->
+
 ## 数据库模型图
 
 将各实体转换为对应的表，将各属性转换为各表对应的列

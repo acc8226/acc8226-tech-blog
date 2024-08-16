@@ -24,6 +24,8 @@ public delegate int MyDelegate (string s);
 
 声明委托的语法如下：
 
+<!-- more -->
+
 ```cs
 delegate <return type> <delegate-name> <parameter list>
 ```

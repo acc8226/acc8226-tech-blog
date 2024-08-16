@@ -24,6 +24,8 @@ categories: 文档规约
 5\. 【强制】方法名、参数名、成员变量、局部变量都统一使用 lowerCamelCase 风格。
 正例：`localValue / getHttpMessage() / inputUserId`
 
+<!-- more -->
+
 6\. 【强制】常量命名应该全部大写，单词间用下划线隔开，力求语义表达完整清楚，不要嫌名字长。
 正例：`MAX_STOCK_COUNT / CACHE_EXPIRED_TIME`
 反例：`MAX_COUNT / EXPIRED_TIME`

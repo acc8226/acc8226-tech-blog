@@ -29,6 +29,8 @@ DateTimeFormatter.ofPattern("yyyy/MM/dd E a HH:mm:ss", new Locale("en", "US"));
 System.out.println(LocalDateTime.now().format(localFormater));
 ```
 
+<!-- more -->
+
 ## Localizing Currency 本地化货币
 
 ```java

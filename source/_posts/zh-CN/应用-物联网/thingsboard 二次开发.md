@@ -32,9 +32,6 @@ userId
   }
 }
 
-
-
-
 {
   "method": "TwoWay",
   "params": {
@@ -43,13 +40,6 @@ userId
   }
 }
 
-
-
-202401050001，这台测试设备是你加的么@吴qy 
-
-
-
-
 "{
   "method"": ""EleDevice"",
   "params"": {
@@ -57,8 +47,6 @@ userId
     "reboot":true
   }
 }"
-
-
 
 "{
   ""method"": ""EleDevice"",

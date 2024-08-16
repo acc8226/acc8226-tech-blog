@@ -22,6 +22,8 @@ NumberChanger nc = delegate(int x)
 };
 ```
 
+<!-- more -->
+
 实例:
 
 ```cs

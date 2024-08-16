@@ -31,6 +31,8 @@ public class WaitlistContract {
 }
 ```
 
+<!-- more -->
+
 ### 创建数据库
 
 ``` java

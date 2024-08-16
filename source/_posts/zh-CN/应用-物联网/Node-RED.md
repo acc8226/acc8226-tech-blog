@@ -14,6 +14,8 @@ docker run -it -p 1880:1880 -v D:\alee\docker\node_red\node_red_data:/data --nam
 Node-RED 访问地址
 <http://127.0.0.1:1880/>
 
+<!-- more -->
+
 以下教程将帮助您开始使用 Node-RED，并学习如何充分利用它。
 Tutorials : Node-RED
 <https://nodered.org/docs/tutorials/>

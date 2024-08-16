@@ -24,6 +24,8 @@ int? ii; //默认值null
 
 C# 提供了一个特殊的数据类型，nullable 类型（可空类型），可空类型可以表示其基础值类型正常范围内的值，再加上一个 null 值。
 
+<!-- more -->
+
 ```cs
 int? num1 = null;
 int? num2 = 45;

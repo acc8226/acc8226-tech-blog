@@ -25,6 +25,8 @@ AutoHotkey 程序本身不做任何事情; 它需要一个脚本来告诉它该�
 #z::Run "https://www.autohotkey.com" ; Win+Z
 ```
 
+<!-- more -->
+
 ### 运行程序
 
 ```ahk

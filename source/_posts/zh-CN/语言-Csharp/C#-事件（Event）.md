@@ -27,6 +27,8 @@ C# 中使用事件机制实现线程间的通信
 public delegate void BoilerLogHandler(string status);
 ```
 
+<!-- more -->
+
 然后，声明事件本身，使用 event 关键字：
 
 ```cs

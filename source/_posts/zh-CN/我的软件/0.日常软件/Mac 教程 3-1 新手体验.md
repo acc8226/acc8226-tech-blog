@@ -25,6 +25,8 @@ categories:
 
 macOS 一个很好用的原因，就是在于支持多点触控的触控板包含丰富的预设手势，可以很方便的帮助我们在没有鼠标的情况下完成很多操作。想要了解这些手势的话，最简单的方式是进入「系统偏好设置 - 触控板」，在这里面，可以查看当前已经开启的手势，并且每个手势都有对应的演示动画，你也可以自己设置某些操作手势。
 
+<!-- more -->
+
 ![触控板](https://upload-images.jianshu.io/upload_images/1662509-5e4d42f52a0a0296.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### 键盘输入

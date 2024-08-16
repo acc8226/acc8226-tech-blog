@@ -28,6 +28,8 @@ echo "第十个参数${10}"
 方式二: shell 脚本中使用 getopts 处理多命令行选项
 <https://blog.csdn.net/wdz306ling/article/details/79974377>
 
+<!-- more -->
+
 ## 脚本调用
 
 直接调即可

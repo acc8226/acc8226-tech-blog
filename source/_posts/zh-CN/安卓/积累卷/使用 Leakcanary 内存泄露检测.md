@@ -16,6 +16,8 @@ tags: Android
 
 打开当前的 AndroidManifest 添加下面的代码。
 
+<!-- more -->
+
 ```xml
 <!-- Leakcanary config start -->
 <service

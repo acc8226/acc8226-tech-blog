@@ -27,6 +27,8 @@ then
 fi
 ```
 
+<!-- more -->
+
 ### 2.if else
 
 if else 语法格式：

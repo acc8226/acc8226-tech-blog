@@ -29,6 +29,8 @@ docsify run ./docs
     ├── guide.md
 ```
 
+<!-- more -->
+
 **开启字数统计**功能
 add js
 

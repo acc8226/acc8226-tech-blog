@@ -30,6 +30,8 @@ fastjson 是阿里巴巴的开源 JSON 解析库，它可以解析 JSON 格式�
 
 我们可以把 JSONObject 当成一个 **Map<String,Object>** 来看，只是 JSONObject 提供了更为丰富便捷的方法，方便我们对于对象属性的操作。
 
+<!-- more -->
+
 1. 直接构造
 
 ```java

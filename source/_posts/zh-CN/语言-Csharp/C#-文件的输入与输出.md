@@ -32,6 +32,8 @@ StreamWriter	用于向一个流中写入字符。
 StringReader	用于读取字符串缓冲区。
 StringWriter	用于写入字符串缓冲区。
 
+<!-- more -->
+
 ### FileStream 类
 
 System.IO 命名空间中的 FileStream 类有助于文件的读写与关闭。该类派生自抽象类 Stream。

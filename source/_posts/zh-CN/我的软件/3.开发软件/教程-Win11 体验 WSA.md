@@ -25,6 +25,8 @@ Windows Subsystem for Android 可用于 Windows 11 上的公共预览版。
 
 在 Microsoft Store 上搜索移动应用。Amazon Appstore 和适用于 Android 的 Windows 子系统将在安装移动应用程序之前安装。
 
+<!-- more -->
+
 ## Windows Subsystem for Android™“设置”应用
 
 要访问适用于 Android 的 Windows 子系统“设置”应用，请转到：“开始”>“所有应用”>“适用于 Android 的 Windows 子系统™️ 设置”**>>**。 了解有关特定设置应用功能的详细信息：[管理 Windows 移动应用的设置](https://support.microsoft.com/windows/000f97e8-8c20-490e-9ef4-cd90d903f847)。

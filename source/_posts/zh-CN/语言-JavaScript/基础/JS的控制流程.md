@@ -25,6 +25,8 @@ var x = 1;
 console.log(x); // 输出 2
 ```
 
+<!-- more -->
+
 使用 `let` 和 `const`
 相比之下，使用 [`let`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/let "The source for this interactive example is stored in a GitHub repository. If you'd like to contribute to the interactive examples project, please clone https://github.com/mdn/interactive-examples and send us a pull request.")和[`const`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/const "常量是块级作用域，很像使用 let 语句定义的变量。常量的值不能通过重新赋值来改变，并且不能重新声明。")声明的变量是**有**块级作用域的。
 

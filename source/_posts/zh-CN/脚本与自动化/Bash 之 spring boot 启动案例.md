@@ -31,6 +31,8 @@ nohup java -Xmx512m -Xms128m -jar $JARFILE --spring.profiles.active=dev  > out.l
 rm -rf out.log
 ```
 
+<!-- more -->
+
 ## 复杂启动脚本
 
 ```sh

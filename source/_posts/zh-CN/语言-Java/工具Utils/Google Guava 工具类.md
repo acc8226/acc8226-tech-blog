@@ -22,6 +22,8 @@ ImmutableSet
 compile 'com.google.guava:guava:30.0-jre'
 ```
 
+<!-- more -->
+
 ## 参考
 
 google/guava: Google core libraries for Java

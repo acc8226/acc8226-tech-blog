@@ -20,6 +20,8 @@ tags: js
 
 1\. 声明变量的作用域限制在其声明位置的上下文中，而非声明变量总是全局的。
 
+<!-- more -->
+
 ```js
 function x() {
   y = 1;   // 在严格模式（strict mode）下会抛出 ReferenceError 异常

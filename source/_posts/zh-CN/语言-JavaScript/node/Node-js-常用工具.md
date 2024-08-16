@@ -43,6 +43,8 @@ objSub.showName()
 console.log(objSub)
 ```
 
+<!-- more -->
+
 我们定义了一个基础对象 Base 和一个继承自 Base 的 Sub，Base 有三个在构造函数内定义的属性和一个原型中定义的函数，通过 util.inherits 实现继承。运行结果如下：
 
 ```js

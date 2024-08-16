@@ -26,6 +26,8 @@ Java内存模型规定了所有的变量都存储在主内存（Main Memory）�
 
 并且，不同的线程之间也无法直接访问对方工作内存中的变量，线程间变量值得传递均需要通过主内存来完成，线程、主内存、工作内存关系如下图：
 
+<!-- more -->
+
 ![image](https://upload-images.jianshu.io/upload_images/1662509-dc64f873a3898f34.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 也可以把这里的主内存与工作内存概念与 JVM 运行时数据区进行对应，主内存主要对应 Java 堆中的对象实例数据部分，工作内存对应于虚拟机栈中的部分区域。

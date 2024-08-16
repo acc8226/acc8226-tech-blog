@@ -28,6 +28,8 @@ bind_address 0.0.0.0
 password_file /etc/mosquitto/pwfile.conf
 ```
 
+<!-- more -->
+
 注意这里 bind_address 如果是 0.0.0.0 则表示才可以允许外网访问，否则可以写成实际 ip。
 
 生成配置文件中指定的 pwfile.conf 文件。

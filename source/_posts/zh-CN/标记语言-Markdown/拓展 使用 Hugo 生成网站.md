@@ -28,6 +28,8 @@ Snap 是一个用于 Linux 的免费开源软件包管理器。对于大多数�
 sudo snap install hugo
 ```
 
+<!-- more -->
+
 为验证您的新安装:
 
 ```sh

@@ -22,6 +22,8 @@ categories: 文档规约
 
 3.【强制】在使用 java.util.stream.Collectors 类的 toMap() 方法转为 Map 集合时，一定要使用参数类型 为 BinaryOperator，参数名为 mergeFunction 的方法，否则当出现相同 key 时会抛出 IllegalStateException 异常。
 
+<!-- more -->
+
 说明：参数 mergeFunction 的作用是当出现 key 重复时，自定义对 value 的处理策略。 正例：
 
 ```java

@@ -12,3 +12,5 @@ tags:
 
 Parsing YAML with SnakeYAML | Baeldung
 <https://www.baeldung.com/java-snake-yaml>
+
+<!-- more -->

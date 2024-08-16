@@ -32,6 +32,8 @@ public class User {
 }
 ```
 
+<!-- more -->
+
 结果显示：
 `sun.misc.Launcher$AppClassLoader@73d16e93`
 `sun.misc.Launcher$ExtClassLoader@15db9742`

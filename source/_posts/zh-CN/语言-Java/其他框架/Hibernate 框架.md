@@ -21,6 +21,8 @@ Hibernate 不仅管理 Java 类到数据库表的映射（包括从 Java 数据�
 4.1.1 SessionFactory 对象
 SessionFactory 接口负责初始化 Hibernate。它充当数据存储源的代理，并负责创建 Session 对象。这里用到了工厂模式。需要注意的是 SessionFactory 并不是轻量级的，因为一般情况下，一个项目通常只需要一个 SessionFactory 就够，当需要操作多个数据库时，可以为每个数据库指定一个 SessionFactory。
 
+<!-- more -->
+
 4.1.2 Session 对象
 Session 接口对于 Hibernate 开发人员来说是一个最重要的接口。然而在 Hibernate 中，实例化的 Session 是一个轻量级的类，创建和销毁它都不会占用很多资源。这在实际项目 中确实很重要，因为在客户程序中，可能会不断地创建以及销毁 Session 对象，如果 Session 的开销太大，会给系统带来不良影响。但值得注意的是 Session 对象是非线程安全的，因此在你的设计中，最好是一个线程只创建一个 Session 对象。
 

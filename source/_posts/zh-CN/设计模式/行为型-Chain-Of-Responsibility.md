@@ -19,6 +19,8 @@ tags: 设计模式
 
 第一种实现方式如下所示。
 
+<!-- more -->
+
 ```java
 public abstract class Handler {
   protected Handler successor = null;

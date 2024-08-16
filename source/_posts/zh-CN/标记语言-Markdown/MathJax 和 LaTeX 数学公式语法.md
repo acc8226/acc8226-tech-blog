@@ -20,6 +20,8 @@ You can render LaTeX mathematical expressions using [KaTeX](https://khan.github
 
 特殊字符
 
+<!-- more -->
+
 圆周率 $\pi$
 
 ```math

@@ -26,6 +26,8 @@ newman -version
 newman run D:\postman_collection.json
 ```
 
+<!-- more -->
+
 运行 json
 
 ## postmanlabs/newman

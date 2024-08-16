@@ -24,6 +24,8 @@ windows 是 徽标键 + 方向上, mac 这是**按住 Option**的同时**点击�
 或者实在不行可以试试"全屏"模式
 Command + control + F 或者 点击左上角绿色按钮
 
+<!-- more -->
+
 ### 根据路径跳转到目录
 
 在 findler 中可以使用快捷键: `Shift + Command + G`, 可是感觉还是不如 Win 系统的 `Win + E` + 选定地址栏 + 粘贴 + 敲回车方便

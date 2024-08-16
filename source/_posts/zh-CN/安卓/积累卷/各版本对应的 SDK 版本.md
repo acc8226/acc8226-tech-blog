@@ -38,6 +38,8 @@ Android 开发所需的 SDK，下载并解压后，将解压出的整个文件�
 3.0.X | 11  | HONEYCOMB
 2.3.3 2.3.4 | 10 | GINGERBREAD_MR1
 
+<!-- more -->
+
 ## 参考
 
 信息中心 | Android Developers

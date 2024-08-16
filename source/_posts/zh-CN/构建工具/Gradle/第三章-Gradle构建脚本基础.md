@@ -21,6 +21,8 @@ tags:
 
 设置文件大多数的作用都是为了配置子工程。在Gradle多工程是通过工程树表示的，就相当于我们在 Android Studio 看到的Project 和 Module 概念一样。根工程相当于 Android Studio 中的 Project，一个根工程可以有很多子工程，也就是很多 Module，这样就和 Android Studio 定义的 Module 概念对应上了。
 
+<!-- more -->
+
 ### 3.2 Build文件
 
 每个 Project 都会有一个 build 文件，该文件是该 Project 构建的入口，可以在这里针对该 Project 进行配置，比如配置版本，需要哪些插件，依赖哪些库等等。

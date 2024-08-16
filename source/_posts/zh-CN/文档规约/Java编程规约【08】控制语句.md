@@ -36,6 +36,8 @@ public class SwitchString {
 }
 ```
 
+<!-- more -->
+
 3\.【强制】在 if / else / for / while / do 语句中必须使用大括号。
 反例： `if (condition) statements;`
 说明：即使只有一行代码，也要采用大括号的编码方式。

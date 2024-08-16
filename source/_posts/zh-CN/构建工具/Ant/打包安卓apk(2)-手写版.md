@@ -10,6 +10,8 @@ tags: Ant
 
 接着上文, 直接上 ant 脚本
 
+<!-- more -->
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <project default="package resources" basedir=".">

@@ -23,6 +23,8 @@ docker run -it \
 thingsboard/tb-gateway
 ```
 
+<!-- more -->
+
 ## 升级
 
 ```sh

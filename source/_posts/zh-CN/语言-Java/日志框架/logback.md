@@ -26,6 +26,8 @@ Logback-access 模块与 Servlet 容器(如 Tomcat 和 Jetty)集成，以提供 
 implementation("ch.qos.logback:logback-classic:1.3.11")
 ```
 
+<!-- more -->
+
 当前正在积极开发的支持 JakartaEE (jakartaEE)的 logback 版本。* 名称空间)是1.4.11。它需要 SLF4J 版本 2.0.7 和 JDK 11。
 
 ```groovy

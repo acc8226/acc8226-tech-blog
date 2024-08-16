@@ -21,6 +21,8 @@ Gitea 最初是从 Gogs 分叉而来的，几乎所有的代码都已更改。
 
 新建 docker-compose.yml 文件
 
+<!-- more -->
+
 ```yml
 version: "3"
 

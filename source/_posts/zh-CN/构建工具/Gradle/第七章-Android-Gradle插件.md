@@ -22,6 +22,8 @@ tags:
 
 上面说的 IDE 就是 Android Studio，真是 Android Gradle + Android Studio 搭配，工作不累。
 
+<!-- more -->
+
 ### 7.2 Android Gradle插件分类
 
 Android Gradle 插件的分类其实是根据 Android工程的属性分类的，在Android中有三类工程，一类是App应用工程，它可以生成一个可运行的 APK 应用；一类是 Library 库工程，它可以生成AAR包给其他的App工程公用，就和我们的Jar 一样，但是它包含了 Android 的资源等信息，是一个特殊的 Jar 包；最后一类是Test测试工程，用于对App工程或者 Library 库工程进行单元测试。

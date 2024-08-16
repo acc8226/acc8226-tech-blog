@@ -22,6 +22,8 @@ minio 提供了一个可视化的管理控制平台，安装好之后，在浏�
 
 客户端 cli 支持
 
+<!-- more -->
+
 mc.exe
 
 ## Software Development Kits (SDK)

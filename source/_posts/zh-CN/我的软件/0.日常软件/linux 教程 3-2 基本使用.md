@@ -27,6 +27,8 @@ xev | grep button 弹出检测框（过滤 button 关键字）
 a 38
 b 39
 
+<!-- more -->
+
 ### 简单映射
 
 #### xmodmap

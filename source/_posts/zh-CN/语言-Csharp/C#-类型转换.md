@@ -26,6 +26,8 @@ i = (int)d;
 
 C# 提供了下列内置的类型转换方法：
 
+<!-- more -->
+
 ```cs
 double d = Convert.ToDouble(3456);
 Console.WriteLine(d);

@@ -23,6 +23,8 @@ creatTask1.doLast{
 }
 ```
 
+<!-- more -->
+
 第二种是以一个任务名字 + 一个对该任务配置的Map对象来创建任务：
 
 ```groovy

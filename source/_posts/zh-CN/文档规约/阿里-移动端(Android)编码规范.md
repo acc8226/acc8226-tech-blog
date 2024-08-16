@@ -23,7 +23,7 @@ categories: 文档规约
 
 2\. 【推荐】layout 文件的命名方式。
 
-```java
+```text
 Activity 的 layout 以 module_activity 开头
 Fragment 的 layout 以 module_fragment 开头
 Dialog 的 layout 以 module_dialog 开头
@@ -32,6 +32,8 @@ ListView 的行 layout 以 module_list_item 开头
 RecyclerView 的 item layout 以 module_recycle_item 开头
 GridView 的行 layout 以 module_grid_item 开头
 ```
+
+<!-- more -->
 
 3\. 【推荐】 drawable 资源名称以小写单词+下划线的方式命名，根据分辨率不同存放在不同的 drawable 目录下，建议只使用一套,例如 drawable-xhdpi。采用规则如下: **`模块名_业务功能描述_控件描述_控件状态限定词`**
 如：`module_login_btn_pressed,module_tabs_icon_home_normal`

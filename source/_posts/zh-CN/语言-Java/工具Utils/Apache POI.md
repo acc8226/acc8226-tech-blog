@@ -25,6 +25,8 @@ Apache POI 包含用于 MS-Office 的所有 OLE2 复合文档的类和方法。 
 
 本教程将指导您完成使用 Java 处理 MS-Word 文件的过程。 因此，讨论仅限于 HWPF 和 XWPF 组件。
 
+<!-- more -->
+
 ## 安装
 
 ```groovy
