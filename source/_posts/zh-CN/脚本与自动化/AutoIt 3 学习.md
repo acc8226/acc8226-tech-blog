@@ -30,6 +30,8 @@ AutoIt 最初是为 PC“推出”情况而设计的，以可靠地自动化和�
 MsgBox($MB_SYSTEMMODAL, "My First Script!", "Hello World!") 
 ```
 
+<!-- more -->
+
 ### 指南 - 记事本操作
 
 ```au3

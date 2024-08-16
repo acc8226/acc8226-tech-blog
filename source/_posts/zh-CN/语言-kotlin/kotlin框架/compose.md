@@ -20,3 +20,5 @@ Kotlin 和 Android | Android 开发者 | Android Developers
 
 Android Jetpack 开发资源 - Android 开发者 | Android Developers
 <https://developer.android.google.cn/jetpack?hl=zh-cn>
+
+<!-- more -->

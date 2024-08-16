@@ -13,6 +13,4 @@ docker run --name teamcity-server-instance \
 jetbrains/teamcity-server
 ```
 
-管理员账号
-tq
-tqtqtqtq1234564321
+<!-- more -->

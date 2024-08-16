@@ -23,6 +23,8 @@ Express 框架核心特性：
 
 以下实例中我们引入了 express 模块，并在客户端发起请求后，响应 "Hello World" 字符串。
 
+<!-- more -->
+
 创建 express_demo.js 文件，代码如下所示：
 
 ```js

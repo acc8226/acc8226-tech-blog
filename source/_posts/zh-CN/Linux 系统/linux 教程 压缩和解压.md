@@ -23,6 +23,8 @@ _.tar.gz tar 打包，gzip 程序压缩的文件
 
 不过我们一般只需要掌握几个命令即可，包括 zip，tar。
 
+<!-- more -->
+
 ## linux 下 zip 命令
 
 ```sh

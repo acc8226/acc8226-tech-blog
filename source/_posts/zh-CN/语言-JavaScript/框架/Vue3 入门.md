@@ -24,6 +24,8 @@ npm install
 npm run dev
 ```
 
+<!-- more -->
+
 IDE 支持​
 推荐使用的 IDE 是 VS Code，配合 [Vue - Official 扩展](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (之前是 Volar)。该插件提供了语法高亮、TypeScript 支持，以及模板内表达式与组件 props 的智能提示。
 

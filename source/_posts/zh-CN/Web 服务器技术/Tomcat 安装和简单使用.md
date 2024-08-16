@@ -22,6 +22,8 @@ Apache Tomcat 是 Jakarta EE (正式的 Java EE)技术的一个子集的开放�
 | 2.3              | 1.2          | N/A         | N/A                | N/A                              | 4.1.x (archived)          | 4.1.40 (archived)           | 1.3 and later                              |
 | 2.2              | 1.1          | N/A         | N/A                | N/A                              | 3.3.x (archived)          | 3.3.2 (archived)            | 1.1 and later                              |
 
+<!-- more -->
+
 ## mac / linux 下 tomcat 安装
 
 需要预先配置 Java 环境, 并选择对应的版本, 我选择的是 Tomcat 8.5。

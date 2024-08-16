@@ -31,6 +31,8 @@ Ctrl+r redo，即撤销undo的操作
 设置缩进为 10 个字符
 `:set shiftwidth=10`
 
+<!-- more -->
+
 ### 调整文本位置
 
 * : ce == center

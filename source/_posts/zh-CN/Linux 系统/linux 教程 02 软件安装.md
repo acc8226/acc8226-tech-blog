@@ -20,7 +20,9 @@ frp 管理端口
 
 安装 frp 服务端
 
-这里配置 frps.ini 后即可.
+这里配置 frps.ini 后即可
+
+<!-- more -->
 
 ```ini
 [common]

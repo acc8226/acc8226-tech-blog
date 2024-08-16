@@ -19,6 +19,8 @@ categories: IDE-使用
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-fb72d70d64cc54d2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
+<!-- more -->
+
 ## Eclipse 常用快捷键
 
 ### Ctrl + Shift + R：打开资源

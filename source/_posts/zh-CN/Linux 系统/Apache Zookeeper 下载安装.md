@@ -39,6 +39,8 @@ admin.serverPort=8888
 listint and issuing commands
 <http://localhost:8888/commands>
 
+<!-- more -->
+
 ## 第三方工具：数据查看工具 ZooInspector
 
 1. 下载 <https://issues.apache.org/jira/secure/attachment/12436620/ZooInspector.zip>

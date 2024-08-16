@@ -29,6 +29,8 @@ Lombok - Plugins | JetBrains <https://plugins.jetbrains.com/plugin/6317-lombok/>
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-0588a2b95947e6f2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
+<!-- more -->
+
 ### Alibaba Java Coding Guidelines
 
 可以对代码进行编码规约扫描，代码扫描的宽松程度适中。

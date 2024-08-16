@@ -29,6 +29,8 @@ load average 在 wikipedia 中的解释是 the system load is a measure of the a
 
 我们该如何看待这个 load average 数据呢？
 
+<!-- more -->
+
 假设我们的系统是单 CPU、单内核的，把它比喻成是一条单向的桥，把 CPU 任务比作汽车。
 
 * load = 0 的时候意味着这个桥上并没有车，cpu 没有任何任务；

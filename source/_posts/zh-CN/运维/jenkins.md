@@ -17,3 +17,5 @@ Index of /war-stable/2.346.1
 
 Jenkins
 <https://www.jenkins.io/>
+
+<!-- more -->

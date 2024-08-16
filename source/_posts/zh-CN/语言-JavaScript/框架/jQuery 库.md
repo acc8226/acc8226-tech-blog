@@ -28,6 +28,8 @@ $().ready(function(){});
 $(function(){});
 ```
 
+<!-- more -->
+
 示例1:
 
 ```html

@@ -23,6 +23,8 @@ IntelliJ IDEA 键盘映射
 markdownlint
 <https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint>
 
+<!-- more -->
+
 ## VS code 更改字体
 
 两种字体的介绍:

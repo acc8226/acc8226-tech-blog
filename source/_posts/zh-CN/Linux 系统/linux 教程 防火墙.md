@@ -33,6 +33,8 @@ redhat7 之后使用了 firewalld 代替了原来的 iptables。
 
 * 如果您想永久关闭防火墙，运行命令 `systemctl disable firewalld`。
 
+<!-- more -->
+
 **说明** 如果您想重新开启防火墙，请参见[firewalld 官网信息](https://firewalld.org/)。
 
 2\. 防火墙常用命令：

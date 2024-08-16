@@ -22,6 +22,8 @@ categories: IDE-使用
 
 附原文：
 
+<!-- more -->
+
 ```text
 IntelliJ IDEA
 

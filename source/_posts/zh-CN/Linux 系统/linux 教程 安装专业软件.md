@@ -18,3 +18,5 @@ update user set host = '%' where user ='root';
 -- 刷新 MySQL 的系统权限相关表
 flush privileges;
 ```
+
+<!-- more -->

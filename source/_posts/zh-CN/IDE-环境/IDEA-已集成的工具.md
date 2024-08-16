@@ -21,6 +21,8 @@ Following HTTP Request Live Templates are available:
 - 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
 - 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
 
+<!-- more -->
+
 ```md
 ### GET 请求
 

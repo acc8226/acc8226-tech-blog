@@ -26,6 +26,8 @@ yum install -y wget && wget -O install.sh http://dl.wdcp.net/install/install.sh 
 
 一般而言须要会安装 LAMP (apache + php + mysql + zend +  pureftpd + phpmyadmin)，所以我不推荐了
 
+<!-- more -->
+
 ### AMH 面板
 
 依旧是 apache + php + mysql 的组合

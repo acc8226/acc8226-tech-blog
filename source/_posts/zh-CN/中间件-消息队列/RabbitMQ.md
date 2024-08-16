@@ -30,6 +30,8 @@ docker run -it --rm --name rabbitmq \
 rabbitmq:3.10-management
 ```
 
+<!-- more -->
+
 ## 使用
 
 RabbitMQ Management 管理页面

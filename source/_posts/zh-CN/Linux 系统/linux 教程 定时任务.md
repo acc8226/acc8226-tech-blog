@@ -28,6 +28,8 @@ crontab 命令从输入设备读取指令，并将其存放于 crontab 文件中
 # *  *  *  *  * user-name command to be executed
 ```
 
+<!-- more -->
+
 在本实验环境中 crontab 也是不被默认启动的，同时不能在后台由 upstart 来管理，所以需要我们手动来启动它:
 
 ```sh

@@ -22,6 +22,8 @@ FHS（英文：Filesystem Hierarchy Standard 中文：文件系统层次结构�
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-a084bf9f01cae3d1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
+<!-- more -->
+
 ## 目录路径
 
 ```sh

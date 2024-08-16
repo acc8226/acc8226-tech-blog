@@ -29,6 +29,8 @@ categories: Web 服务器技术
 请参考教程: Docker 安装 Nginx | 菜鸟教程
 <https://www.runoob.com/docker/docker-install-nginx.html>
 
+<!-- more -->
+
 **linux 环境手动安装 nginx**
 1\. 从 nginx 官网下载稳定版 Stable version 安装包
 <http://nginx.org/en/download.html>

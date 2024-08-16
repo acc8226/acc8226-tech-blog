@@ -25,6 +25,8 @@ Angular 是一个基于 [TypeScript](https://www.typescriptlang.org/) 构建�
 * 一组完美集成的库，涵盖各种功能，包括路由、表单管理、客户端-服务器通信等
 * 一套开发工具，可帮助你开发、构建、测试和更新代码
 
+<!-- more -->
+
 npm install -g @angular/cli
 ng new my-app
 cd my-app

@@ -26,6 +26,8 @@ npm install -g @vue/cli --registry=https://registry.npmmirror.com
 yarn global add @vue/cli
 ```
 
+<!-- more -->
+
 你可以用这个命令来检查其版本是否正确：
 
 ```sh

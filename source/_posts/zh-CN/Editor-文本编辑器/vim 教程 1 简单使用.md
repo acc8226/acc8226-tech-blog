@@ -23,6 +23,8 @@ https://github.com/vim/vim-win32-installer/releases
 vim 键盘图：
 ![](https://upload-images.jianshu.io/upload_images/1662509-fb00bf307e6290d9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
+<!-- more -->
+
 ## vi/vim 的使用
 
 基本上 vi/vim 共分为三种模式，分别是命令模式（Command mode），输入模式（Insert mode）和底线命令模式（Last line mode）。

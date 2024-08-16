@@ -32,6 +32,8 @@ Android Studio 是基于 IntelliJ IDEA 的官方 Android 应用开发集成开�
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-4714063434aef134.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
+<!-- more -->
+
 ### 设置向导
 
 安装完毕后，设置向导将下载并安装附加组件。该过程可能需要一段时间，具体取决于你的网速，请耐心等待。

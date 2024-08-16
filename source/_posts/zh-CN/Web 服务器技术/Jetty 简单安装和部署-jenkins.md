@@ -20,6 +20,8 @@ service jetty start
 service jetty stop
 ```
 
+<!-- more -->
+
 ## 在 Jetty 中部署 Jenkins
 
 1. Jenkins 2.332.3 由于是搭配 jetty 9.4。所有这里先行安装 jetty 9.4。
