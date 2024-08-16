@@ -319,10 +319,8 @@ albert 安装不上
 ### 9.阅读类
 
 * 【win】[Fluent Reader 一款 rss 阅读器](https://github.com/yang991178/fluent-reader/releases/)
-
 * 【mac】自带【mac】iBook 可用于阅读电子书
 * 【mac】[Reeder](https://apps.apple.com/mo/app/reeder-5/id1529448980) 用于 rss
-
 * 【linux】[fbreader](https://fbreader.org/) 用于阅读电子书
 * 【linux】[NewsFlash](https://flathub.org/zh-Hans/apps/io.gitlab.news_flash.NewsFlash) 很棒的一款 rss 阅读器
 

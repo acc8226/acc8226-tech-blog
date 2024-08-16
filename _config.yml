@@ -28,7 +28,7 @@ permalink: :lang/:hash/
 permalink_defaults:
 # 改写 permalink 的值来美化 URL	
 pretty_urls:
-  # 是否在永久链接中保留尾部的 index.html，设置为 false 时去除	
+  # 是否在永久链接中保留尾部的 index.html, 设置为 false 时去除	
   trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
   # 是否在永久链接中保留尾部的 .html, 设置为 false 时去除 (对尾部的 index.html无效)	
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
@@ -84,7 +84,7 @@ prismjs:
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
-  per_page: 4
+  per_page: 5
   order_by: -date
 
 # Category & Tag
@@ -107,7 +107,7 @@ updated_option: 'mtime'
 
 # Pagination
 ## Set per_page to 0 to disable pagination
-per_page: 12
+per_page: 15
 pagination_dir: page
 
 # Include / Exclude file(s)

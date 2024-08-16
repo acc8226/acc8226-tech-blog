@@ -179,7 +179,6 @@ not
 * [Musicolet](https://krosbits.in/musicolet/) 本地音乐
 * AIMP 音乐 太简陋
 * [飞傲音乐](https://sj.qq.com/appdetail/com.fiio.music) 界面适配不完善
-* [海贝音乐](https://sj.qq.com/appdetail/com.hiby.music) 界面适配不完善
 
 * [网易云](https://sj.qq.com/appdetail/com.netease.cloudmusic) 广告太多且现在太繁杂了
 * [QQ 音乐](https://sj.qq.com/appdetail/com.tencent.qqmusic) 比某抑云的广告少太多，资源也算丰富

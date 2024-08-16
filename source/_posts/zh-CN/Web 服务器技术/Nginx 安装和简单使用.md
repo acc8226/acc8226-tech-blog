@@ -26,8 +26,7 @@ categories: Web 服务器技术
 `apt-get install nginx`
 
 **使用 docker 安装 nginx**
-请参考教程: Docker 安装 Nginx | 菜鸟教程
-<https://www.runoob.com/docker/docker-install-nginx.html>
+请参考教程: [Docker 安装 Nginx | 菜鸟教程](https://www.runoob.com/docker/docker-install-nginx.html)
 
 <!-- more -->
 
