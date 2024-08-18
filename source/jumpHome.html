@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自动跳转页面</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column; /* 垂直排列 */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f7f7f7;
+        }
+        p {
+            font-size: 1em;
+            color: #666;
+        }
+        h1 {
+            font-size: 2em;
+            color: #333;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <h1>跳转中...</h1>
+    <p id="no-js-message">如果页面没有自动跳转，请<a href="https://feipig.fun">点击这里</a>。</p>
+    <script>
+        // 尝试隐藏无JavaScript消息
+        document.getElementById('no-js-message').style.display = 'none'
+
+        window.onload = function() {
+            var feipigUrl = 'https://feipig.fun'
+            var qqUrl = 'https://acc8226.atomgit.net/s'
+            var testUrl = feipigUrl; // 测试 URL，这里使用网站根 URL 进行HEAD请求
+
+            // 创建一个 XMLHttpRequest 对象
+            var xhr = new XMLHttpRequest();
+            xhr.open('HEAD', testUrl, true);
+            xhr.onreadystatechange = function() {
+                // 检查请求状态和响应状态码
+                console.log(xhr.status);
+                if (xhr.readyState === 4) {
+                    if (xhr.status === 200) {
+                        window.location = feipigUrl; // 网站响应正常，跳转
+                    } else {
+                        window.location = qqUrl; // 响应异常，跳转到备用网站
+                    }
+                }
+            };
+            xhr.send()
+        }
+    </script>
+</body>
+</html>
