@@ -30,6 +30,7 @@
     </style>
 </head>
 <body>
+    <!-- https://acc8226.pages.dev/mypage/jumpHome -->
     <h1>跳转中...</h1>
     <p id="no-js-message">如果页面没有自动跳转，请<a href="https://feipig.fun">点击这里</a>。</p>
     <script>
@@ -37,8 +38,8 @@
         document.getElementById('no-js-message').style.display = 'none'
 
         window.onload = function() {
-            var url1 = 'https://feipig.fun/'
-            var url2 = 'https://acc8226.atomgit.net/s/'
+            var url1 = 'https://feipig.fun/'// 时好时坏
+            var url2 = 'https://acc8226.atomgit.net/s/'// 不稳定
 
             // 创建一个Image对象来测试网站图标的加载情况
             var img = new Image();
@@ -50,7 +51,7 @@
                 // 图标加载失败，跳转到备用网站
                 window.location.href = url2;
             };
-            img.src = 'https://feipig.fun/images/upyun_logo.png'; // 开始加载图标          
+            img.src = 'https://feipig.fun/images/favicon-16x16.ico'; // 开始加载图标          
         }
     </script>
 </body>
