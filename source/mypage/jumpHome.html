@@ -37,25 +37,20 @@
         document.getElementById('no-js-message').style.display = 'none'
 
         window.onload = function() {
-            var feipigUrl = 'https://feipig.fun'
-            var qqUrl = 'https://acc8226.atomgit.net/s'
-            var testUrl = feipigUrl; // 测试 URL，这里使用网站根 URL 进行HEAD请求
+            var url1 = 'https://feipig.fun/'
+            var url2 = 'https://acc8226.atomgit.net/s/'
 
-            // 创建一个 XMLHttpRequest 对象
-            var xhr = new XMLHttpRequest();
-            xhr.open('HEAD', testUrl, true);
-            xhr.onreadystatechange = function() {
-                // 检查请求状态和响应状态码
-                console.log(xhr.status);
-                if (xhr.readyState === 4) {
-                    if (xhr.status === 200) {
-                        window.location = feipigUrl; // 网站响应正常，跳转
-                    } else {
-                        window.location = qqUrl; // 响应异常，跳转到备用网站
-                    }
-                }
+            // 创建一个Image对象来测试网站图标的加载情况
+            var img = new Image();
+            img.onload = function() {
+                // 图标加载成功，跳转到原网站
+                window.location.href = url1;
             };
-            xhr.send()
+            img.onerror = function() {
+                // 图标加载失败，跳转到备用网站
+                window.location.href = url2;
+            };
+            img.src = 'https://feipig.fun/images/upyun_logo.png'; // 开始加载图标          
         }
     </script>
 </body>
