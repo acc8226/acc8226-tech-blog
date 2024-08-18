@@ -721,6 +721,7 @@ not [印象笔记](https://sj.qq.com/appdetail/com.yinxiang) 付费内容现在�
 * [腾讯应用宝](https://sj.qq.com/)-全网最新最热手机应用游戏下载
 * [国际服游戏下载-GamesToday](https://www.hotplaygames.com/)
 * [apkpure](https://apkpure.com/cn/) 一个有国外的应用商店 需魔法
+* [Uptodown](en.uptodown.com) 一个有国外的应用商店 需魔法
 
 备用
 
