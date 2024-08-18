@@ -43,7 +43,7 @@ code_dir: downloads/code
 # Hexo 会捕获网址中的第一段以检测语言
 i18n_dir: :lang
 # 指定不进行渲染的文件或文件夹
-skip_render:
+skip_render: "mypage/**"
 
 # Writing
 # File name of new posts
