@@ -41,16 +41,28 @@
             var url1 = 'https://feipig.fun/zh-cn/4c2b72aaa7d0'// 时好时坏 
             var url2 = 'https://www.cnblogs.com/elaa/p/17994004'// 博客园雄起
 
+            // 设置超时时间，单位为毫秒
+            var timeout = 5000// 5秒
+
             // 创建一个Image对象来测试网站图标的加载情况
-            var img = new Image();
+            var img = new Image()
             img.onload = function() {
+                console.log('onload');
+                clearTimeout(timer); // 如果图标加载成功，清除超时定时器
                 // 图标加载成功，跳转到原网站
-                window.location.href = url1;
+                window.location.href = url1
             };
             img.onerror = function() {
+                console.log('onerror');
+                clearTimeout(timer); // 如果图标加载成功，清除超时定时器
                 // 图标加载失败，跳转到备用网站
-                window.location.href = url2;
+                window.location.href = url2
             };
+            // 设置一个定时器，如果在指定时间内图标没有加载完成，则触发超时
+            var timer = setTimeout(function() {
+                console.log('timeout')
+                img.onerror()// 触发onerror事件处理函数
+            }, timeout)
             img.src = 'https://feipig.fun/images/favicon-16x16.ico'; // 开始加载图标          
         }
     </script>

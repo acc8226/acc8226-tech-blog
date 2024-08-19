@@ -318,10 +318,11 @@ albert 安装不上
 
 ### 9.阅读类
 
+* 【全平台】[Koodo Reader](https://www.koodoreader.com/zh) 开源的电子书阅读器，支持多达15种主流电子书格式， 内置笔记、高亮、翻译功能，助力高效书籍阅读和学习
 * 【win】[Fluent Reader 一款 rss 阅读器](https://github.com/yang991178/fluent-reader/releases/)
 * 【mac】自带【mac】iBook 可用于阅读电子书
 * 【mac】[Reeder](https://apps.apple.com/mo/app/reeder-5/id1529448980) 用于 rss
-* 【linux】[fbreader](https://fbreader.org/) 用于阅读电子书
+* 【linux】[FBReader](https://fbreader.org/) 用于阅读电子书
 * 【linux】[NewsFlash](https://flathub.org/zh-Hans/apps/io.gitlab.news_flash.NewsFlash) 很棒的一款 rss 阅读器
 
 ### 10.桌面美化
@@ -531,12 +532,12 @@ or
 
 or
 
-【win】[HiBitUninstaller](https://www.hibitsoft.ir/Uninstaller.html) 卸载功能更强大
+【win】[HiBitUninstaller](https://www.hibitsoft.ir/Uninstaller.html) 体积小巧+卸载功能强大
 
 not
 
 * 【win mac】[ccleaner](https://www.ccleaner.com/zh-cn/ccleaner) 只有安装版差评
-* 【绿色版】[RevoUninstaller](https://www.revouninstaller.com/products/revo-uninstaller-free/) 界面太旧了
+* 【绿色版】[RevoUninstaller 免费版](https://www.revouninstaller.com/products/revo-uninstaller-free/) 界面有点旧
 
 **mac 平台**
 
