@@ -191,8 +191,6 @@ SDFormatter 是一个简单和有用的 SD 卡修复工具也是内存卡修复�
 
 ## 参考
 
-dpkg 命令的详细使用教程_阿力 php 的博客-CSDN 博客_dpkg 命令
-<https://blog.csdn.net/qq_18839693/article/details/62229646>
+[dpkg 命令的详细使用教程_阿力 php 的博客-CSDN 博客_dpkg 命令](https://blog.csdn.net/qq_18839693/article/details/62229646)
 
-dpkg 命令的用法_小绵羊的学习之路的博客-CSDN 博客_dpkg 命令
-<https://blog.csdn.net/yang3572/article/details/80991108>
+[dpkg 命令的用法_小绵羊的学习之路的博客-CSDN 博客_dpkg 命令](https://blog.csdn.net/yang3572/article/details/80991108)

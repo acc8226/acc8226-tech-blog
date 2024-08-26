@@ -265,7 +265,7 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
 * httpie/desktop [官网下载](https://httpie.io/download) | [Releases](https://github.com/httpie/desktop/releases) HTTPie 有桌面版和 cli 版，cross-platform API testing client for humans. Painlessly test REST, GraphQL, and HTTP APIs. 
 * [SoapUI](https://www.soapui.org/downloads/soapui/)
-* [Reqable](https://reqable.com/zh-CN/)
+* [Reqable](https://reqable.com/zh-CN/) 也可用于抓包
 
 not
 

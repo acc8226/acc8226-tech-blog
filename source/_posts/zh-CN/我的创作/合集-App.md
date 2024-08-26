@@ -310,15 +310,15 @@ not
 ### 安卓
 
 * 在线 bilibili 哔哩哔哩国际版 [下载地址一](https://apkpure.com/cn/bilibili-cn/com.bilibili.app.in/download) | [下载地址二](https://com-bilibili-app-in.en.uptodown.com/android) 因为清爽
-* 本地 [VLC](https://www.videolan.org/vlc/download-android.html) 在 webdav 方面自定义选项不足，但依旧足够强大
+* 本地 [VLC](https://www.videolan.org/vlc/download-android.html) / MPV
 
 可选
 
 * [NewPipe](https://newpipe.net/) - a free YouTube client 太过于简洁
-
+* ——————— ฅ՞• •՞ฅ ———————
 * [抖音](https://sj.qq.com/appdetail/com.ss.android.ugc.aweme) 稍有广告，同时它又是个超级 app，生活、超市、优惠、直播和团购都有
 * [西瓜视频](https://sj.qq.com/appdetail/com.ss.android.article.video) 广告不多 还能创作
-
+* ——————— ฅ՞• •՞ฅ ———————
 * [优酷视频](https://sj.qq.com/appdetail/com.youku.phone)
 * [腾讯视频](https://sj.qq.com/appdetail/com.tencent.qqlive)
 * [芒果TV](https://sj.qq.com/appdetail/com.hunantv.imgo.activity)
@@ -326,16 +326,17 @@ not
 not
 
 * reex 的使用： url 可以填写微 `http://xx.xx.xx.xxx:5244/dav` 然后用户名 和 密码填写 alist 的信息即可。但是一段时间没更新了，然后官网我也没找到，代码不透明我就不太敢用
-* nPlayer 不能跳倍速
+* nPlayer 不能调整倍速
 * xplayer 太丑了
-
+* mxplayer 超过百M内容过于丰富
+* ——————— ฅ՞• •՞ฅ ———————
 * [bilibili 标准版](https://sj.qq.com/appdetail/tv.danmaku.bili) 没以前清爽了
 * [1905 电影网](https://sj.qq.com/appdetail/com.m1905.mobilefree) 做的一般般
 * [爱奇艺](https://sj.qq.com/appdetail/com.qiyi.video) 有广告呀
-
+* ——————— ฅ՞• •՞ฅ ———————
 * [快手](https://sj.qq.com/appdetail/com.smile.gifmaker) 不太喜欢用
 * [好看视频](https://sj.qq.com/appdetail/com.baidu.haokan) 一些视频也能学到知识
-
+* ——————— ฅ՞• •՞ฅ ———————
 * ~~[bili_you](https://github.com/lucinhu/bili_you/releases) bilibili 无广告版，但是作者已经不再维护了~~
 
 官网收录：[影视大全](https://sj.qq.com/appdetail/com.le123.ysdq) | [暴风影音](https://sj.qq.com/appdetail/com.storm.smart) | [斗鱼](https://sj.qq.com/appdetail/air.tv.douyu.android) | [百搜视频](https://sj.qq.com/appdetail/com.baidu.video) | [PP视频](https://sj.qq.com/appdetail/com.pplive.androidphone) | [虎牙直播](https://sj.qq.com/appdetail/com.duowan.kiwi) | [搜狐视频](https://sj.qq.com/appdetail/com.sohu.sohuvideo)
@@ -639,7 +640,7 @@ weico 下架了，变成了微博国际板，后面又变成轻享版了，结�
 
 ### 安卓
 
-* [WPS Office](https://sj.qq.com/appdetail/cn.wps.moffice_eng) 如果手机内置的 office 模块且不好用的情况下可以安装该软件
+* [WPS Office](https://sj.qq.com/appdetail/cn.wps.moffice_eng) 如果手机内置的 office 不好用的情况下可以试试这个，同时还是一个 pdf 阅读器
 * [天眼查 app](https://sj.qq.com/appdetail/com.tianyancha.skyeye) / 小程序 求职中可以**反调公司**，也适用于查询被服务公司，**无良北京丰台万达舒窈瑶国际**
 
 可选
@@ -656,12 +657,7 @@ Polaris Office 北极星办公 其中安卓版本不是最新版不能用
 
 怀旧经典
 
-智器阅读 一款pdf 阅读器 想当年 当时可以裁掉白边，现在一般安卓系统自带了文档阅读器基本也够用了
-
-### aPad
-
-* [企业微信](https://sj.qq.com/appdetail/com.tencent.wework)
-* [钉钉](https://sj.qq.com/appdetail/com.alibaba.android.rimet)
+智器阅读 一款 pdf 阅读器 想当年 当时可以裁掉白边，现在一般安卓系统自带了文档阅读器基本也够用了
 
 ### iPad
 
@@ -670,13 +666,15 @@ Polaris Office 北极星办公 其中安卓版本不是最新版不能用
 
 ### aPad
 
+* [企业微信](https://sj.qq.com/appdetail/com.tencent.wework)
+* [钉钉](https://sj.qq.com/appdetail/com.alibaba.android.rimet)
 * [WPS](https://sj.qq.com/appdetail/cn.wps.moffice_eng) 可以做到 Office 文档和 PDF 通吃
 * [福昕阅读器](https://sj.qq.com/appdetail/com.foxit.mobile.pdf.lite)
 * Adobe Acrobat Reader 为了获得专业的**阅读 Pdf** 体验, 这款 App 是通用版, 平板也做了适配
 
 ## 11. 支付类
 
-**一定不要网贷**，克制使用信用卡。不要花费超出能力范围的钱
+**一定不要网贷**，信用卡合规使用。不要花费超出能力范围的钱
 
 * [支付宝](https://sj.qq.com/appdetail/com.eg.android.AlipayGphone)
 * [云闪付](https://sj.qq.com/appdetail/com.unionpay) 云闪付持续有优惠，信用卡还款免手续费
@@ -898,7 +896,18 @@ not
 
 [Canva 可画](https://sj.qq.com/appdetail/cn.canva.editor)
 
-## 32. 游戏
+## 32. 电视直播
+
+### 安卓
+
+IPTV
+作者 Alexander Sofronov
+
+### 苹果
+
+APTV
+
+## 33. 游戏
 
 ### iPhone 和 iPad
 

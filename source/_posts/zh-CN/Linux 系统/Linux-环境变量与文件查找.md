@@ -106,5 +106,4 @@ source 命令还有一个别名就是 .，上面的命令如果替换成 . 的�
 
 ## 参考
 
-Linux 基础入门（新版）_Linux - 实验楼
-<https://www.shiyanlou.com/courses/1>
+[Linux 基础入门（新版）_Linux - 实验楼](https://www.shiyanlou.com/courses/1)

@@ -324,6 +324,12 @@ ms-settings:printers 打印机和扫描仪
 ms-settings:typing 输入
 ms-settings:wheel 滚轮
 
+### SHA256 校验码检查文件的完整性
+
+在 Windows 系统中，您可能需要使用PowerShell，并输入以下命令：
+
+Get-FileHash -Algorithm SHA256 文件的路径
+
 ### 更改 cmd 命令行工具的外观【已废弃】
 
 <https://github.com/microsoft/terminal/releases/tag/1904.29002>

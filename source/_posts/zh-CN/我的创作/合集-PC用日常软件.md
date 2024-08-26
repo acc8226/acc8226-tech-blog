@@ -205,7 +205,7 @@ WPS 2013
 在线播放：
 
 1. 【win mac】[QQ 音乐](https://y.qq.com/download/index.html) / 【全平台】[网易云音乐](https://music.163.com/#/download)
-2. 【全平台】[lx-music-desktop](https://github.com/lyswhut/lx-music-desktop) 但是需要自行找音乐源
+2. 【全平台】lx-music-desktop [项目主页](https://github.com/lyswhut/lx-music-desktop) | [发行版](https://github.com/lyswhut/lx-music-desktop/releases) 但是需要自行找音乐源
 
 备选
 
@@ -237,15 +237,14 @@ not
 
 **windows 平台**
 
-本地播放：【win 官方安装版】PotPlayer [官网](https://potplayer.tv/?lang=zh_CN) | [某中文网提供绿色版](https://potplayer.org) 高清影音播放器
-
-在线平台：【win】[荐片播放器](https://www.jianpian6.co/) 最新电影，播放器 +【win mac】[哔哩哔哩客户端](https://app.bilibili.com)
+1. 本地播放：【win 官方安装版】PotPlayer [官网](https://potplayer.tv/?lang=zh_CN) | [绿色版](https://potplayer.org) 高清影音播放器
+2. 在线平台：【win】[荐片播放器](https://www.jianpian6.co/) 最新电影，播放器 +【win mac】[哔哩哔哩客户端](https://app.bilibili.com)
 
 官网收录：【win mac】[迅雷影音](https://video.xunlei.com/pc.html) | 【win】[射手影音](https://www.splayer.org/) | 【win mac】[抖音电脑版](https://www.douyin.com) | 【win mac】[爱奇艺客户端](https://www.iqiyi.com/appstore.html) | 【win mac】[腾讯视频客户端](https://v.qq.com/download.html#Windows) | 【win mac】[优酷客户端](https://youku.com/product/index) | 【win mac】[央视影音](https://app.cctv.com)
 
 **mac 平台**
 
-【全平台】[VLC](https://www.videolan.org/)/【mac】[INNA](https://iina.io/) + 【win mac】[哔哩哔哩客户端](https://app.bilibili.com)
+【全平台】[VLC](https://www.videolan.org) /【mac】[INNA](https://iina.io) + 【win mac】[哔哩哔哩客户端](https://app.bilibili.com)
 
 not
 
@@ -253,11 +252,7 @@ not
 
 **linux 平台**
 
-本地播放：【全平台】[vlc](https://www.videolan.org) 或者【linux】[haruna](https://haruna.kde.org)
-
-not
-
-mpv 太简陋
+本地播放：【全平台】[vlc](https://www.videolan.org) 或【linux】[haruna](https://haruna.kde.org) 或简洁的 [mpv](https://mpv.io/)
 
 ### 5.【常用】社交类
 
@@ -578,13 +573,14 @@ iOS 用户可下载【win mac】 [iTunes](https://www.apple.com.cn/itunes/) 或�
 
 ### 15.U 盘引导
 
+推荐
+
 【win linux】[Ventoy](https://www.ventoy.net/cn/index.html) linux 和 windows 二合一，且不妨碍 U 盘正常使用
 
-【win 备用】[微 PE 工具箱](https://www.wepe.com.cn/) - 装机维护工具。无广主打纯净
+备用
 
-not
-
-【全平台】[balenaEtcher](https://etcher.balena.io/) 不太好用，虽然跨平台
+【win 备用】[微 PE 工具箱](https://www.wepe.com.cn/) - 装机维护工具。无广主打纯
+【全平台】[balenaEtcher](https://etcher.balena.io/) 还可以烧录树莓派
 
 ### 16.微软 buff
 
