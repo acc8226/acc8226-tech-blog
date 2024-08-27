@@ -2,7 +2,8 @@
 # the translation you perfer
 zh-CN:
   menu:
-    nav: 导航
+    nav: 网址导航
+    nav2: 外部导航
     about: 简历
   post:
     copyright:
