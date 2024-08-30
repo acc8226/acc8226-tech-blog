@@ -49,7 +49,7 @@ Send("!n")
 
 AutoIt 窗口信息工具
 
-AutoIt v3 提供一个名叫 AutoIt 窗口信息工具 的独立工具 (汉化版默认安装在: E:\AutoIt3\AU3Info.exe).
+AutoIt v3 提供一个名叫 AutoIt 窗口信息工具 的独立工具 (汉化版默认安装在: E:\AutoIt3\AU3Info.exe)
 
 AU3Info 可帮助您获取指定窗口的详细信息. 主要包含了下列信息:
 

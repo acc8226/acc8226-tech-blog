@@ -178,7 +178,7 @@ not
 
 ### C#
 
-[C# 指南 - .NET 托管语言](https://learn.microsoft.com/zh-cn/dotnet/csharp/) | Microsoft Learn
+[C# 指南-.NET 托管语言](https://learn.microsoft.com/zh-cn/dotnet/csharp/) | Microsoft Learn
 
 ### Dart
 

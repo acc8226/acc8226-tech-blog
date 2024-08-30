@@ -900,8 +900,8 @@ not
 
 ### 安卓
 
-IPTV
-作者 Alexander Sofronov
+* IPTV 作者 Alexander Sofronov
+* 央视频
 
 ### 苹果
 

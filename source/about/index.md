@@ -10,18 +10,17 @@ comments: false
 * 手 机：[15313887091](tel:15313887091)&emsp;&emsp;&emsp;&ensp;&ensp;&ensp;邮 箱：[acc8226@qq.com](mailto:acc8226@qq.com)
 * 专 业：软件工程&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;岗 位：Java 后端开发
 
-## 教育经历
+## 教育(工作)经历
 
-华东交通大学-本科&emsp;&emsp;&emsp;&emsp;&emsp;2010/09-2014/07&emsp;&emsp;&emsp;&emsp; 软件工程
+2010.09-2014.07 华东交通大学 软件工程（本科）
+2015.03.06-2015.09.11 北京盈合科技 软件部门 安卓App开发工程师
+2015.11.06-2016.10.14 北京云漾科技 软件部门 安卓App开发工程师
+2017.05.12-2022.03.18 宝利信通（北京）软件 金融事业部 后端 Java 开发工程师
+2022.03.21-2024.03.19 北京云狐时代科技有限公司 软件部门 后端 Java 开发工程师
 
-证书：大学英语四级、计算机二级（Java 方向）
+## 证书
 
-## 工作经历
-
-* 北京云狐时代&emsp;&emsp;&emsp;&emsp;&emsp;2022.03.21-2024.03.19&emsp;&emsp;&emsp;&emsp;软件部门-物联网后端 Java 开发
-* 宝利信通（北京）软件&emsp;2017.05.12-2022.03.18&emsp;&emsp;&emsp;&emsp; 金融事业部-新华项目组-后端 Java 开发
-* 北京云漾科技&emsp;&emsp;&emsp;&emsp;&emsp;2015.11.06-2016.10.14&emsp;&emsp;&emsp;&emsp; 软件部门-安卓 App 开发
-* 北京盈合科技&emsp;&emsp;&emsp;&emsp;&emsp;2015.03.06-2015.09.11&emsp;&emsp;&emsp;&emsp; 软件部门-安卓 App 开发
+大学英语四级、计算机二级（Java 方向）
 
 ## 专业技能
 

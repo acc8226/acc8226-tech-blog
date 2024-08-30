@@ -668,7 +668,7 @@ not
 
 ### 01. 网盘搭建
 
-【全平台】[AList](https://alist.nn.ci/zh)
+【全平台】[AList](https://alist.nn.ci/zh) | [Releases](https://github.com/alist-org/alist/releases)
 
 ### 02. 【常用】网络加速
 
