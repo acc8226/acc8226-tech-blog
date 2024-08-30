@@ -488,13 +488,13 @@ not
 ### 安卓
 
 1. [多邻国](https://sj.qq.com/appdetail/com.duolingo) 多国语言学习
-2. [轻听英语](https://sj.qq.com/appdetail/cn.com.langeasy.EasyListen)
 
 可选
 
 * [英语流利说](https://sj.qq.com/appdetail/com.liulishuo.engzo)
 * [每日英语听力](https://sj.qq.com/appdetail/com.qianyan2.ting.en)
 * [朗思易听](https://sj.qq.com/appdetail/cn.com.langeasy.LangEasyLrc) 英语学习
+* [轻听英语](https://sj.qq.com/appdetail/cn.com.langeasy.EasyListen)
 
 * [不背单词](https://sj.qq.com/appdetail/cn.com.langeasy.LangEasyLexis)
 * [扇贝单词](https://sj.qq.com/appdetail/com.shanbay.sentence)
@@ -640,7 +640,8 @@ weico 下架了，变成了微博国际板，后面又变成轻享版了，结�
 
 ### 安卓
 
-* [WPS Office](https://sj.qq.com/appdetail/cn.wps.moffice_eng) 如果手机内置的 office 不好用的情况下可以试试这个，同时还是一个 pdf 阅读器
+* LibreOffice Viewer - [Google Play 上的应用](https://play.google.com/store/apps/details?id=org.documentfoundation.libreoffice) | [F-Droid - Free and Open Source Android App Repository](https://f-droid.org/packages/org.documentfoundation.libreoffice/)
+* [PDF Reader - Hi Read](https://apkpure.com/cn/pdf-reader-pdf-viewer/pdf.reader.pdfviewer.pdfeditor) 有一定的 PDF 编辑器功能，体积小，简单又免费
 * [天眼查 app](https://sj.qq.com/appdetail/com.tianyancha.skyeye) / 小程序 求职中可以**反调公司**，也适用于查询被服务公司，**无良北京丰台万达舒窈瑶国际**
 
 可选
@@ -653,7 +654,8 @@ weico 下架了，变成了微博国际板，后面又变成轻享版了，结�
 
 not
 
-Polaris Office 北极星办公 其中安卓版本不是最新版不能用
+* [WPS Office](https://sj.qq.com/appdetail/cn.wps.moffice_eng) 不够清爽
+* Polaris Office 北极星办公 其中安卓版本不是最新版不能用
 
 怀旧经典
 
@@ -688,12 +690,18 @@ Polaris Office 北极星办公 其中安卓版本不是最新版不能用
 
 ### 安卓
 
-1. [阿里云盘](https://sj.qq.com/appdetail/com.alicloud.databox) 功能很多，且不太限速，但是非会员不能看超清适配，但是必须得注册一个
-2. [坚果云](https://sj.qq.com/appdetail/nutstore.android) 同步文档用
-3. [小飞机网盘](https://www.feijipan.com/)很不错，然后 [123 云盘](https://sj.qq.com/appdetail/com.mfcloudcalculate.networkdisk)稍微差点意思
+1. [坚果云](https://sj.qq.com/appdetail/nutstore.android) 同步文档用
+
+备用
+
+1. [小飞机网盘](https://www.feijipan.com/)很不错
+2. [阿里云盘](https://sj.qq.com/appdetail/com.alicloud.databox) 功能很多，且不太限速，但是非会员不能看超清适配，但是必须得注册一个
+3. [百度网盘](https://sj.qq.com/appdetail/com.baidu.netdisk) 720p 视频限免播放
+4. pikpak 免费用户总共 6GB，每天可以添加 3 个离线任务还是不错的
 
 not
 
+* [123 云盘](https://sj.qq.com/appdetail/com.mfcloudcalculate.networkdisk) app 内广告漫天
 * [文叔叔](https://www.wenshushu.cn/) 匿名分享盘
 * [天翼云](https://sj.qq.com/appdetail/com.cn21.ecloud) 在 mac 上的同步还差点意思
 * [印象笔记](https://sj.qq.com/appdetail/com.yinxiang) 限制 2 台设备
@@ -742,6 +750,7 @@ not
 
 备用
 
+* [X 浏览器](https://sj.qq.com/appdetail/com.mmbox.xbrowser) 只有1M大小，占用极少的资源，启动速度飞快。其中扫描二维码会自动复制到粘贴功能非常好使
 * Firefox 火狐浏览器 [应用宝版本](https://sj.qq.com/appdetail/org.mozilla.firefox) | [国外商店版](https://firefox.en.uptodown.com/android)
 * [微软 Edge](https://sj.qq.com/appdetail/com.microsoft.emmx)
 
@@ -903,11 +912,16 @@ not
 * IPTV 作者 Alexander Sofronov
 * 央视频
 
+## 33. 远程
+
+* Kore 一个用于 kdox 的远程遥控器
+* VNC Viewer 操控树莓派用
+
 ### 苹果
 
 APTV
 
-## 33. 游戏
+## 34. 游戏
 
 ### iPhone 和 iPad
 
