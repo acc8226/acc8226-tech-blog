@@ -120,9 +120,9 @@ not
 
 * [FBReader](https://fbreader.org/android#download) 一款本地电子书阅读器，同时也支持 pdf
 * [静读天下](http://www.moondownload.com/download.html) 免费版有广告
-
+* ——————— ฅ՞• •՞ฅ ———————
+* [**番茄免费小说**](https://sj.qq.com/appdetail/com.dragon.read) 有的想看的书可以免费离线下载，很好，很适合离线用
 * [京东读书](https://sj.qq.com/appdetail/com.jd.app.reader) 送了影响力 和 乌合之众几本书，可以看一段时间
- * [**番茄免费小说**](https://sj.qq.com/appdetail/com.dragon.read) 有的想看的书可以免费离线下载，很好，很适合离线用
 * [网易蜗牛阅读](https://sj.qq.com/appdetail/com.netease.snailread) 每天可以免费看 1 个小时付费书籍
 
 not
@@ -179,7 +179,7 @@ not
 * [Musicolet](https://krosbits.in/musicolet/) 本地音乐
 * AIMP 音乐 太简陋
 * [飞傲音乐](https://sj.qq.com/appdetail/com.fiio.music) 界面适配不完善
-
+* ——————— ฅ՞• •՞ฅ ———————
 * [网易云](https://sj.qq.com/appdetail/com.netease.cloudmusic) 广告太多且现在太繁杂了
 * [QQ 音乐](https://sj.qq.com/appdetail/com.tencent.qqmusic) 比某抑云的广告少太多，资源也算丰富
 * [酷狗](https://sj.qq.com/appdetail/com.kugou.android) 和 酷我 差一点意思
@@ -310,7 +310,7 @@ not
 ### 安卓
 
 * 在线 bilibili 哔哩哔哩国际版 [下载地址一](https://apkpure.com/cn/bilibili-cn/com.bilibili.app.in/download) | [下载地址二](https://com-bilibili-app-in.en.uptodown.com/android) 因为清爽
-* 本地 [VLC](https://www.videolan.org/vlc/download-android.html) / MPV
+* 本地 [VLC](https://www.videolan.org/vlc/download-android.html)
 
 可选
 
@@ -325,10 +325,11 @@ not
 
 not
 
-* reex 的使用： url 可以填写微 `http://xx.xx.xx.xxx:5244/dav` 然后用户名 和 密码填写 alist 的信息即可。但是一段时间没更新了，然后官网我也没找到，代码不透明我就不太敢用
+* reex 如果要使用 webDav，url 可以填写微 `http://xx.xx.xx.xxx:5244/dav` 然后用户名 和 密码填写 alist 的信息即可。但是一段时间没更新了，然后官网我也没找到，代码不透明我就不太敢用
 * nPlayer 不能调整倍速
 * xplayer 太丑了
-* mxplayer 超过百M内容过于丰富
+* mxplayer 超过百 M 且内容过于丰富
+* MPV 没有 vlc 简洁但是内容很清爽
 * ——————— ฅ՞• •՞ฅ ———————
 * [bilibili 标准版](https://sj.qq.com/appdetail/tv.danmaku.bili) 没以前清爽了
 * [1905 电影网](https://sj.qq.com/appdetail/com.m1905.mobilefree) 做的一般般
@@ -558,7 +559,7 @@ not
 or
 
 * 便利蜂 有小程序 和 app 端口，但是优惠力度确实不一样，属于可有可无吧
-* [建行生活](https://sj.qq.com/appdetail/com.ccb.longjiLife) 曾经和北京疫情优惠券一起有活动，可是我没钱
+* [建行生活](https://sj.qq.com/appdetail/com.ccb.longjiLife) 曾经留京疫情送优惠券，可是我没钱
 
 * [永辉生活](https://sj.qq.com/appdetail/cn.yonghui.hyd)【有小程序】北京专用
 * [多点](https://sj.qq.com/appdetail/com.wm.dmall)【有小程序】 北京专用
