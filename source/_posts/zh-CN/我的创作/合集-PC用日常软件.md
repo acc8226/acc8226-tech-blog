@@ -106,19 +106,20 @@ categories: 我的创作
 
 #### 6. 【常用】网盘
 
-**windows 平台**
+##### windows 平台
 
-1. 【win mac】[阿里云盘](https://www.aliyundrive.com/drive/) 主打大容量 + 同步功能，高峰时段限速但一般没感觉。 然后再搭配猫头鹰文件。看视频搭配搜狐视频也不错，可以读取阿里网盘的视频文件
-2. 【全平台】[坚果云](https://www.jianguoyun.com/s/downloads) 主要用于存少量文档
-3. [小飞机](https://www.feijipan.com) 用于网页分享不限速分享文件 或者 [文叔叔](https://www.wenshushu.cn/)匿名分享用
+1. 【全平台】[坚果云](https://www.jianguoyun.com/s/downloads) 主要用于存少量文档
+2. [小飞机](https://www.feijipan.com) 用于网页分享不限速分享文件
+3. 【win mac】[阿里云盘](https://www.aliyundrive.com/drive/) 主打大容量 + 同步功能，高峰时段限速但一般没感觉。然后再搭配猫头鹰文件。可以读取阿里网盘的视频文件
+4. 【win】[pikpak](https://mypikpak.com/zh-CN) 免费用户总共 6GB，每天可以添加 3 个离线任务还是不错的
 
 官网收录：[腾讯微云](https://www.weiyun.com/)
 
-**mac 平台**
+##### mac 平台
 
 依旧【mac linux】[阿里云盘](https://www.aliyundrive.com/drive/) + 【全平台】[坚果云](https://www.jianguoyun.com/s/downloads) 的组合
 
-**linux 平台**
+##### linux 平台
 
 【全平台】[坚果云](https://www.jianguoyun.com/s/downloads)表现良好，【全平台】[百度网盘](https://yun.baidu.com)则很久没更新了
 
@@ -564,14 +565,14 @@ iOS 用户可下载【win mac】 [iTunes](https://www.apple.com.cn/itunes/) 或�
 
 如果要刻录的话，win 11 自带一般够用，现在光驱都淘汰了
 
-虚拟光驱可用于加载 iso 文件到我的电脑，这里我推荐软媒魔方套件
+虚拟光驱可用于加载 iso 文件，但现实是一般难得用到了，实在不行可以将后缀改成 zip 然后进行解压也不耽误很多事
 
-### 14.磁盘分区
+### 14. 磁盘分区
 
 * 【win】[傲梅分区助手](https://www.disktool.cn/download.html)
 * 【win】[diskgenius](https://www.diskgenius.cn)
 
-### 15.U 盘引导
+### 15. 刻录烧录
 
 推荐
 
@@ -579,8 +580,9 @@ iOS 用户可下载【win mac】 [iTunes](https://www.apple.com.cn/itunes/) 或�
 
 备用
 
-【win 备用】[微 PE 工具箱](https://www.wepe.com.cn/) - 装机维护工具。无广主打纯
-【全平台】[balenaEtcher](https://etcher.balena.io/) 还可以烧录树莓派
+* 【win 备用】[微 PE 工具箱](https://www.wepe.com.cn/) - 装机维护工具。无广主打纯
+* 【全平台】[balenaEtcher](https://etcher.balena.io/) 还可以烧录树莓派
+* [Raspberry Pi Imager](https://www.raspberrypi.com/for-home/) 树莓派专用烧录到 SD 卡的工具
 
 ### 16.微软 buff
 

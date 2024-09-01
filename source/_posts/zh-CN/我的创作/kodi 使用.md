@@ -7,7 +7,7 @@ categories: 我的创作
 
 ## IPTV 收集
 
-wtv工具箱- 检测直播源的可用性和速度
+wtv 工具箱- 检测直播源的可用性和速度
 作者的博客 [一个橙子,软件开发,软件制作,软件运维,软件推荐|www.yigechengzi.com](https://yigechengzi.com/)
 
 工具
@@ -16,6 +16,7 @@ https://guihet.com/convert-m3u-js.html
 
 直播源
 
+* [Kodi IPTV m3u8直播源下载](http://www.kodiplayer.cn/movie/2898.html) 2024年最新m3u直播源 - 影视资源 - Kodi中文网
 * [直播源-michael的小站](http://michael007js.cn/news/news.php?class2=184)
 * [iptv-org/iptv: Collection of publicly available IPTV channels from all over the world](https://github.com/iptv-org/iptv)
 * [Ftindy/IPTV-URL](https://github.com/Ftindy/IPTV-URL)

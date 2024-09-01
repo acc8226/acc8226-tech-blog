@@ -34,7 +34,7 @@
     <h1>跳转中...</h1>
     <p id="no-js-message">如果页面没有自动跳转，请<a href="https://feipig.fun">点击这里</a>。</p>
     <script>
-        // 尝试隐藏无JavaScript消息
+        // 尝试隐藏无 JavaScript 消息
         document.getElementById('no-js-message').style.display = 'none'
 
         window.onload = function() {
@@ -42,15 +42,15 @@
             var url2 = 'https://acc8226.onrender.com/'// 备用站
 
             // 创建一个Image对象来测试网站图标的加载情况
-            var img = new Image();
+            var img = new Image()
             img.onload = function() {
                 // 图标加载成功，跳转到原网站
-                window.location.href = url1;
-            };
+                window.location.href = url1
+            }
             img.onerror = function() {
                 // 图标加载失败，跳转到备用网站
-                window.location.href = url2;
-            };
+                window.location.href = url2
+            }
             img.src = 'https://feipig.fun/images/favicon-16x16.ico'; // 开始加载图标          
         }
     </script>

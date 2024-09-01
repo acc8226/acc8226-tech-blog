@@ -228,7 +228,7 @@ not
 
 可选
 
-* [讯飞有声](https://sj.qq.com/appdetail/com.iflytek.readassistant) 难得的免费收听时长的可听本地图书和 pdf 的 app，这可能是目前的一个较好的方案
+* [讯飞有声](https://sj.qq.com/appdetail/com.iflytek.readassistant) 难得的免费收听时长的可听本地图书和 pdf、doc、mobi 的 app，是目前的一个较好的方案
 * [微信听书](https://sj.qq.com/appdetail/com.tencent.wehear) 活动玩法多，可以换取收听时长
 * [极客时间](https://sj.qq.com/appdetail/org.geekbang.geekTime) 程序员才需要
 * [云听](https://sj.qq.com/appdetail/com.shinyv.cnr) 央视有些资源而已
@@ -261,13 +261,14 @@ not
 
 #### 安卓和 iPhone
 
-[倒数日 · Days Matter](https://app.ipad.ly/idays) 倒计时神器, 还有各种纪念日提醒。多端同步，除了苹果端，还支持安卓端还有手表端
+* [倒数日 · Days Matter](https://app.ipad.ly/idays) 倒计时神器, 还有各种纪念日提醒。多端同步，除了苹果端，还支持安卓端还有手表端
 
 ### 8. 新闻
 
 #### 安卓
 
-[要知](https://sj.qq.com/appdetail/com.ruanmei.yaozhi) 暂用它听新闻用，目前定制项不太多，以后我可能会换成 ai 收集 + 听新闻了
+* [要知](https://sj.qq.com/appdetail/com.ruanmei.yaozhi) 暂用它听新闻用，目前定制项不太多，以后我可能会换成 ai 收集 + 听新闻了
+* [北京时间](https://sj.qq.com/appdetail/com.btime.bjtime) 投诉用，顺便看看和听听新闻
 
 备用
 
@@ -689,30 +690,23 @@ not
 
 ## 12. 网盘【常用】
 
-### 安卓
+### 安卓/iPhone
 
 1. [坚果云](https://sj.qq.com/appdetail/nutstore.android) 同步文档用
-
-备用
-
-1. [小飞机网盘](https://www.feijipan.com/)很不错
-2. [阿里云盘](https://sj.qq.com/appdetail/com.alicloud.databox) 功能很多，且不太限速，但是非会员不能看超清适配，但是必须得注册一个
-3. [百度网盘](https://sj.qq.com/appdetail/com.baidu.netdisk) 720p 视频限免播放
-4. pikpak 免费用户总共 6GB，每天可以添加 3 个离线任务还是不错的
+2. [小飞机网盘](https://www.feijipan.com/) 分享用
+3. [阿里云盘](https://sj.qq.com/appdetail/com.alicloud.databox) 功能很多，且不太限速，但是非会员不能看超清适配，但是可以搭配猫头鹰文件
+4. [pikpak](https://mypikpak.com/zh-CN) 免费用户总共 6GB，每天可以添加 3 个离线任务还是不错的
 
 not
 
-* [123 云盘](https://sj.qq.com/appdetail/com.mfcloudcalculate.networkdisk) app 内广告漫天
-* [文叔叔](https://www.wenshushu.cn/) 匿名分享盘
-* [天翼云](https://sj.qq.com/appdetail/com.cn21.ecloud) 在 mac 上的同步还差点意思
+* [百度网盘](https://sj.qq.com/appdetail/com.baidu.netdisk) 720p 视频限免播放，且空间够大
+* [123 云盘](https://sj.qq.com/appdetail/com.mfcloudcalculate.networkdisk) app 内都是广告
+* [文叔叔](https://www.wenshushu.cn/) 匿名分享盘，现在依旧被小飞机取代
+* [天翼云](https://sj.qq.com/appdetail/com.cn21.ecloud) 在 mac 上的同步还差点意思，优点是原画质视频播放，但是非会员不能倍速
+* ——————— ฅ՞• •՞ฅ ———————
 * [印象笔记](https://sj.qq.com/appdetail/com.yinxiang) 限制 2 台设备
 * [有道云笔记](https://sj.qq.com/appdetail/com.youdao.note) 限制 2 台设备
 * [flomo 笔记](https://sj.qq.com/appdetail/com.flomo.app) 用不习惯
-* [pikpak](https://mypikpak.com/zh-CN) 免费版额度有限，付费可以考虑
-
-### iPhone
-
-not [印象笔记](https://sj.qq.com/appdetail/com.yinxiang) 付费内容现在太多了
 
 ### aPad
 
