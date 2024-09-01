@@ -684,9 +684,16 @@ not
 
 **提醒：不听不信，谨防陌生人诈骗！**
 
-* 【全平台】 [scrcpy](https://github.com/Genymobile/scrcpy/releases) 开源免费（投屏/录屏/免 Root）
-* 【Win & Mac & Android & iOS】[ApowerMirror](https://www.apowersoft.cn/phone-mirror)
-* 【备用】[乐播投屏](https://www.lebo.cn/)
+[Macast](https://github.com/xfangfang/Macast/releases) 用于便捷的 DLNA 投屏
+
+备用
+
+* 【全平台】 [scrcpy](https://github.com/Genymobile/scrcpy/releases) 开源免费（投屏/录屏/免 Root） 适合连接 USB 或者无线连接的情况
+* 【Win & Mac & Android & iOS】[ApowerMirror](https://www.apowersoft.cn/phone-mirror) 需要和手机 app 搭配使用
+
+not
+
+* [乐播投屏](https://www.lebo.cn/) 太臃肿
 
 ### 05. 文件转换
 

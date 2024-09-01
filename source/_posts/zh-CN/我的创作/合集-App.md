@@ -907,16 +907,20 @@ not
 * IPTV 作者 Alexander Sofronov
 * 央视频
 
-## 33. 远程
+## 33. 远程控制
 
 * Kore 一个用于 kdox 的远程遥控器
 * VNC Viewer 操控树莓派用
+
+## 34. 投屏
+
+[AlookDLNA](https://alookweb.com/AlookDLNA.apk) 可以投屏到 电视 或者 安卓手机
 
 ### 苹果
 
 APTV
 
-## 34. 游戏
+## 35. 游戏
 
 ### iPhone 和 iPad
 
