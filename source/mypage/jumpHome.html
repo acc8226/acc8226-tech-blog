@@ -41,6 +41,9 @@
             var url1 = 'https://feipig.fun/'// 时好时坏
             var url2 = 'https://acc8226.onrender.com/'// 备用站
 
+            // 设置超时时间，单位为 6000 毫秒
+            var timeout = 6000
+
             // 创建一个Image对象来测试网站图标的加载情况
             var img = new Image()
             img.onload = function() {
@@ -51,6 +54,11 @@
                 // 图标加载失败，跳转到备用网站
                 window.location.href = url2
             }
+            // 设置一个定时器，如果在指定时间内图标没有加载完成，则触发超时
+            var timer = setTimeout(function() {
+                console.log('timeout')
+                img.onerror() // 触发 onerror 事件处理函数
+            }, timeout)
             img.src = 'https://feipig.fun/images/favicon-16x16.ico'; // 开始加载图标          
         }
     </script>

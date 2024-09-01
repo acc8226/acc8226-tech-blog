@@ -606,9 +606,13 @@ iOS 用户可下载【win mac】 [iTunes](https://www.apple.com.cn/itunes/) 或�
 
 ### 20. 文件重命名
 
-[ReNamer](http://www.den4b.com/products/renamer) « Products « den4b.com
+[ReNamer](http://www.den4b.com/products/renamer)
 
-### 21.mac 特有
+### 21. IPTV 相关
+
+[IPTV+Checker+2.5汉化版](https://www.mediafire.com/file/y7edgxkydtp728o/IPTV+Checker+2.5%E6%B1%89%E5%8C%96%E7%89%88.rar/file)
+
+### 22.mac 特有
 
 #### 鼠标翻转
 
@@ -618,7 +622,7 @@ iOS 用户可下载【win mac】 [iTunes](https://www.apple.com.cn/itunes/) 或�
 
 【mac】[AlDente - 负载限制器](https://apphousekitchen.com/)
 
-### 22.windows 特有
+### 23.windows 特有
 
 #### 空格预览文件
 
