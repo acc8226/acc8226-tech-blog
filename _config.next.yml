@@ -60,11 +60,11 @@ creative_commons:
 # External url should start with http:// or https://
 menu:
   home: / || fa fa-home
-  categories: /categories/ || fa fa-th
-  archives: /archives/ || fa fa-archive
-  nav: /zh-cn/d0f14ad08d8a || fa fa-compass
-  nav2: https://nav.feipig.fun/ || fa fa-compass
-  about: /about/ || fa fa-user
+  categories: /categories || fa fa-th
+  archives: /archives || fa fa-archive
+  nav: /zh-CN/d0f14ad08d8a || fa fa-compass
+  nav2: https://nav.feipig.fun || fa fa-compass
+  about: /about || fa fa-user
   #tags: /tags/ || fa fa-tags
   #schedule: /schedule/ || fa fa-calendar
   #sitemap: /sitemap.xml || fa fa-sitemap
