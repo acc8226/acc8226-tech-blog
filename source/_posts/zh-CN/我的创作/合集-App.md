@@ -756,6 +756,7 @@ not
 * [uc 标准版](https://sj.qq.com/appdetail/com.UCMobile) 太臃肿了
 * uc 国际版 可能会屏蔽某些网站
 * [夸克浏览器](https://sj.qq.com/appdetail/com.quark.browser) 越来越臃肿了，和 UC 一个样
+* [via 浏览器](https://sj.qq.com/appdetail/mark.via) 比 x 浏览器体积更大且某些方面体验不如
 
 ### iPhone
 
