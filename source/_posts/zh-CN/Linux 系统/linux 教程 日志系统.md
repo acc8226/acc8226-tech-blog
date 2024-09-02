@@ -64,7 +64,7 @@ update-alternatives 2016-07-02 13:36:16: run with --install /usr/bin/google-chro
 less auth.log
 ```
 
-![实验楼](https://upload-images.jianshu.io/upload_images/1662509-170884c21b0cc187?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/1662509-170884c21b0cc187?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 我们可以从中得到的信息有日期与 ip 地址的来源以及的用户与工具
 
@@ -78,9 +78,9 @@ less /var/log/apt/history.log
 less /var/log/apt/term.log
 ```
 
-![实验楼](https://upload-images.jianshu.io/upload_images/1662509-07a094f8873c12eb?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/1662509-07a094f8873c12eb?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-![实验楼](https://upload-images.jianshu.io/upload_images/1662509-2aa20a52bb7580e4?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/1662509-2aa20a52bb7580e4?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 然后我们来安装 git 这个程序，因为本实验环境中本有预装 git 所以这里真正执行的操作是一个更新的操作，但这并不影响
 

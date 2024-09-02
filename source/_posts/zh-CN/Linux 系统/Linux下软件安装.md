@@ -65,7 +65,7 @@ sudo apt-get --reinstall install w3m
 
 如果你现在觉得 `w3m` 这个软件不合自己的胃口，或者是找到了更好的，你需要卸载它，那么简单！同样是一个命令加回车 `sudo apt-get remove w3m` ，系统会有一个确认的操作，之后这个软件便“滚蛋了”。
 
-![此处输入图片的描述](https://upload-images.jianshu.io/upload_images/1662509-cdf44d1f753a5804?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/1662509-cdf44d1f753a5804?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 或者，你可以执行
 

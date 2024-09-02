@@ -91,7 +91,7 @@ else
 
 如图中第四列标题是 S，S 表示的是进程的状态，而在下属的第三行的 Z 表示的是 Zombie 的意思。（ ps 命令将在后续详解）
 
-![实验楼](https://upload-images.jianshu.io/upload_images/1662509-719632e8813d57e5?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/1662509-719632e8813d57e5?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 正常情况下，父进程会收到两个返回值：exit code（SIGCHLD 信号）与 `reason for termination` 。之后，父进程会使用 `wait(&status)` 系统调用以获取子进程的退出状态，然后内核就可以从内存中释放已结束的子进程的 PCB；而如若父进程没有这么做的话，子进程的 PCB 就会一直驻留在内存中，一直留在系统中成为僵尸进程（Zombie）。
 
@@ -107,11 +107,11 @@ else
 pstree
 ```
 
-![实验楼](https://upload-images.jianshu.io/upload_images/1662509-ca147bf00ffde31f?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/1662509-ca147bf00ffde31f?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 或者从此图我们可以更加形象的看清子父进程的关系
 
-![实验楼](https://upload-images.jianshu.io/upload_images/1662509-b9293e8c5ad14318?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/1662509-b9293e8c5ad14318?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 通过以上的显示结果我们可以看的很清楚，init 为所有进程的父进程或者说是祖先进程
 
@@ -121,7 +121,7 @@ pstree
 ps －fxo user,ppid,pid,pgid,command
 ```
 
-![实验楼](https://upload-images.jianshu.io/upload_images/1662509-74b86d31f71ee3f1?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/1662509-74b86d31f71ee3f1?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 可以在图中看见我们执行的 ps 就是由 zsh 通过 fork-exec 创建的子进程而执行的
 
@@ -157,13 +157,13 @@ bash(Bourne-Again shell)支持工作控制（job control）,而 sh（Bourne shel
 ls &
 ```
 
-![实验楼](https://upload-images.jianshu.io/upload_images/1662509-d94aba34d9a4b198?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/1662509-d94aba34d9a4b198?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 图中所显示的 `[1] 236`分别是该 job 的 job number 与该进程的 PID，而最后一行的 Done 表示该命令已经在后台执行完毕。
 
 我们还可以通过 `ctrl + z` 使我们的当前工作停止并丢到后台中去
 
-![实验楼](https://upload-images.jianshu.io/upload_images/1662509-92290ea8c019b10a?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/1662509-92290ea8c019b10a?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 被停止并放置在后台的工作我们可以使用这个命令来查看
 
@@ -171,7 +171,7 @@ ls &
 jobs
 ```
 
-![实验楼](https://upload-images.jianshu.io/upload_images/1662509-6958df365d17e520?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/1662509-6958df365d17e520?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 其中第一列显示的为被放置后台 job 的编号，而第二列的 `＋` 表示最近(刚刚、最后)被放置后台的 job，同时也表示预设的工作，也就是若是有什么针对后台 job 的操作，首先对预设的 job，`-` 表示倒数第二（也就是在预设之前的一个）被放置后台的工作，倒数第三个（再之前的）以后都不会有这样的符号修饰，第三列表示它们的状态，而最后一列表示该进程执行的命令
 
@@ -183,9 +183,9 @@ jobs
 fg [%jobnumber]
 ```
 
-![实验楼](https://upload-images.jianshu.io/upload_images/1662509-b1a9b9752ee45420?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/1662509-b1a9b9752ee45420?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-![实验楼](https://upload-images.jianshu.io/upload_images/1662509-4a9eb6a626c82912?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/1662509-4a9eb6a626c82912?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 之前我们通过 `ctrl + z` 使得工作停止放置在后台，若是我们想让其在后台运作我们就使用这样一个命令
 
@@ -194,7 +194,7 @@ fg [%jobnumber]
 bg [%jobnumber]
 ```
 
-![实验楼](https://upload-images.jianshu.io/upload_images/1662509-81f00140d258d303?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/1662509-81f00140d258d303?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 既然有方法将被放置在后台的工作提至前台或者让它从停止变成继续运行在后台，当然也有方法删除一个工作，或者重启等等
 
@@ -215,7 +215,7 @@ kill －l
 | -9 | 强制终止该任务 |
 | -15 | 正常的方式终止该任务 |
 
-![实验楼](https://upload-images.jianshu.io/upload_images/1662509-72c572c52658c512?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/1662509-72c572c52658c512?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 > **注意**
 > 若是在使用 kill ＋ 信号值然后直接加 pid，你将会对 pid 对应的进程进行操作
