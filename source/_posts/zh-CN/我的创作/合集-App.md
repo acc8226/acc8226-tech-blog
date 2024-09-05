@@ -73,13 +73,14 @@ iPhone 用户则必须安装其中一个，防诈骗和无良商家骗取钱财�
 
 #### 安卓
 
-1. [Aegis Authenticator](https://getaegis.app/) | [下载地址](https://github.com/beemdevelopment/Aegis/releases) 记得做好定时的密码导出工作
-2. [QQ 安全中心](https://sj.qq.com/appdetail/com.tencent.token)
+[Aegis Authenticator](https://getaegis.app/) | [下载地址](https://github.com/beemdevelopment/Aegis/releases) 记得做好定时的密码导出工作
 
 not
 
 * Bitwarden authenticator 目前还有待完善
 * [Google Authenticator](https://google-authenticator.en.softonic.com/android) 虽说是大厂，但是软件包体积稍大 且 国内云同步功能没法使用
+* ——————— ฅ՞• •՞ฅ ———————
+* [QQ 安全中心](https://sj.qq.com/appdetail/com.tencent.token) 至尊宝没了，属于半死不活，新版本一直转圈
 
 #### iPhone
 
@@ -90,20 +91,20 @@ not
 
 #### 通用
 
-[Bitwarden](https://github.com/bitwarden/mobile/releases)【已适配安卓平板】一款可以云端存储的密码管理器，也支持本地导入导出密码
+[Bitwarden](https://github.com/bitwarden/android/releases)【已适配安卓平板】一款可以云端存储的密码管理器，也支持本地导入导出密码
 
-选择 f-droid 和 普通版均可，但我一般会选择 fdroid，因为升级不存在的也网络环境也升级不了
+选择 f-droid 和 普通版均可，但我一般会选择 fdroid，因为反正国内环境监测升级不存在的
 
 ### 3. 邮件收发
 
 #### 通用
 
-简单：Aqua Mail
-华丽：readdle 家的 [Spark](https://sparkmailapp.com/zh)【已适配安卓平板】
+Aqua Mail [官网](https://www.aqua-mail.com/) | [play 版](https://play.google.com/store/apps/details?id=org.kman.AquaMail) | [apkpure 版](https://apkpure.com/cn/email-aqua-mail-fast-secure/org.kman.AquaMail) 简单清爽
 
 备用
 
-[网易邮箱大师](https://sj.qq.com/appdetail/com.netease.mail) 操作上我更偏爱 QQ 邮箱一些
+* readdle 家华丽的 [Spark](https://sparkmailapp.com/zh)【已适配安卓平板】
+* [网易邮箱大师](https://sj.qq.com/appdetail/com.netease.mail) 操作上我更偏爱 QQ 邮箱一些
 
 not
 
@@ -261,7 +262,7 @@ not
 
 #### 安卓和 iPhone
 
-* [倒数日 · Days Matter](https://app.ipad.ly/idays) 倒计时神器, 还有各种纪念日提醒。多端同步，除了苹果端，还支持安卓端还有手表端
+[倒数日 · Days Matter](https://app.ipad.ly/idays) 倒计时神器, 还有各种纪念日提醒。多端同步，除了苹果端，还支持安卓端还有手表端
 
 ### 8. 新闻
 
@@ -311,14 +312,15 @@ not
 ### 安卓
 
 * 在线 bilibili 哔哩哔哩国际版 [下载地址一](https://apkpure.com/cn/bilibili-cn/com.bilibili.app.in/download) | [下载地址二](https://com-bilibili-app-in.en.uptodown.com/android) 因为清爽
-* 本地 [VLC](https://www.videolan.org/vlc/download-android.html)
+* [西瓜视频](https://sj.qq.com/appdetail/com.ss.android.article.video) 广告不多 还能创作
 
 可选
 
+* 本地 [VLC](https://www.videolan.org/vlc/download-android.html)
+* ——————— ฅ՞• •՞ฅ ———————
 * [NewPipe](https://newpipe.net/) - a free YouTube client 太过于简洁
 * ——————— ฅ՞• •՞ฅ ———————
 * [抖音](https://sj.qq.com/appdetail/com.ss.android.ugc.aweme) 稍有广告，同时它又是个超级 app，生活、超市、优惠、直播和团购都有
-* [西瓜视频](https://sj.qq.com/appdetail/com.ss.android.article.video) 广告不多 还能创作
 * ——————— ฅ՞• •՞ฅ ———————
 * [优酷视频](https://sj.qq.com/appdetail/com.youku.phone)
 * [腾讯视频](https://sj.qq.com/appdetail/com.tencent.qqlive)
@@ -386,13 +388,14 @@ not
 ### 安卓
 
 * [猫头鹰文件](https://www.skyjos.cn/owlfiles/index.html)
-* [GKD 搞快点](https://gkd.li/) 预设了跳广告规则，开箱即用
+* [GKD 搞快点](https://gkd.li) 预设了跳广告规则，开箱即用
+* [WiFi 万能钥匙极速版](https://sj.qq.com/appdetail/com.snda.lantern.wifilocating) 偶尔可以用下，虽说现在的能用的热点不多了
 
 可选
 
-* [微信输入法](https://sj.qq.com/appdetail/com.tencent.wetype) 其中的跨设备粘贴绝了
 * 魔法上网工具 这里只推荐 Hiddify
-* [WiFi 万能钥匙](https://sj.qq.com/appdetail/com.snda.lantern.wifilocating) 偶尔可以用下，虽说现在的能用的热点不多了
+* [微信输入法](https://sj.qq.com/appdetail/com.tencent.wetype) 其中的跨设备粘贴绝了
+* ——————— ฅ՞• •՞ฅ ———————
 * [菜鸟](https://sj.qq.com/appdetail/com.cainiao.wireless) 好处就是一键查询所有快递
 * [快递 100](https://sj.qq.com/appdetail/com.Kingdee.Express) 查和寄快递
 * [小度音箱](https://sj.qq.com/appdetail/com.baidu.duer.superapp) 硬件绑定的应用，不得不用
@@ -427,7 +430,7 @@ not
 
 ### iPad
 
-* Documents (或者 GoodReader 苹果管理文件神器, 需付费)
+* [Documents](https://readdle.com/zh/documents) (或者 GoodReader 苹果管理文件神器, 需付费)
 * ES File Explorer
 * 中华万年历 HD 现在已经更新为 微鲤万年历
 
@@ -440,17 +443,17 @@ not
 
 [ES 文件管理器](http://www.estrongs.com/) 适配了平板但是有广告，还是 猫头鹰 用的更舒服
 
-## 4. 购物类
+## 4. 购物
 
-[拼多多](https://sj.qq.com/appdetail/com.xunmeng.pinduoduo)
+* 拼多多 [app](https://sj.qq.com/appdetail/com.xunmeng.pinduoduo) / 微信小程序
 
 可选
 
 * [淘宝](https://sj.qq.com/appdetail/com.taobao.taobao)
 * [唯品会](https://sj.qq.com/appdetail/com.achievo.vipshop) 小米手机预装的，买衣服的优惠还行
 * [京东](https://sj.qq.com/appdetail/com.jingdong.app.mall)
-* [闲鱼](https://sj.qq.com/appdetail/com.taobao.idlefish) 有点东西，可选吧
 * [天猫](https://sj.qq.com/appdetail/com.tmall.wireless)
+* [闲鱼](https://sj.qq.com/appdetail/com.taobao.idlefish) 有点东西，可选吧
 
 官网收录：[当当](https://sj.qq.com/appdetail/com.dangdang.buy2) | [转转](https://sj.qq.com/appdetail/com.wuba.zhuanzhuan) | [苏宁易购](https://sj.qq.com/appdetail/com.suning.mobile.ebuy) | [小米商城](https://sj.qq.com/appdetail/com.xiaomi.shop)
 
@@ -458,18 +461,14 @@ not
 
 ### 安卓和 iPhone
 
-* [高德地图](https://sj.qq.com/appdetail/com.autonavi.minimap)
-* [滴滴出行 app](https://sj.qq.com/appdetail/com.sdu.didi.psnger) / 小程序。加班、搬家、货运搬家，搬家新用户还送券
+* [百度地图](https://sj.qq.com/appdetail/com.baidu.BaiduMap) / [高德地图](https://sj.qq.com/appdetail/com.autonavi.minimap) 二选一
+* 滴滴出行 [app](https://sj.qq.com/appdetail/com.sdu.didi.psnger) / 小程序。加班、搬家、货运搬家，搬家新用户还送券
 * 微信-腾讯乘车码 小程序。其实如果我是公交，一般会用支付类软件，例如支付宝；地铁可选择云闪付
 
 可选
 
-* [货拉拉 app](https://sj.qq.com/appdetail/com.lalamove.huolala.client) / 小程序 也还行，车比滴滴搬家多，一年或者几年采用一次
+* [货拉拉 app](https://sj.qq.com/appdetail/com.lalamove.huolala.client) / 小程序 也还行，车比滴滴搬家多，一年或者几年才用一次
 * [百度地图关怀版](https://sj.qq.com/appdetail/com.baidu.maps.caring) 长辈手机可以用
-
-not
-
-[百度地图](https://sj.qq.com/appdetail/com.baidu.BaiduMap) [高德地图](https://sj.qq.com/appdetail/com.autonavi.minimap) [腾讯地图](https://sj.qq.com/appdetail/com.tencent.map) 这三家广告太多了
 
 重复了
 
@@ -477,7 +476,7 @@ not
 * [亿通行](https://sj.qq.com/appdetail/enfc.metro)  北京专用 旅行几日游专用
 * [北京一卡通](https://sj.qq.com/appdetail/cn.com.bmac.nfc)
 
-官网收录：[花小猪打车](https://sj.qq.com/appdetail/com.huaxiaozhu.rider)
+官网收录：[腾讯地图](https://sj.qq.com/appdetail/com.tencent.map) | [花小猪打车](https://sj.qq.com/appdetail/com.huaxiaozhu.rider)
 
 ### aPad
 
@@ -547,13 +546,18 @@ not
 * [每日英语听力](https://sj.qq.com/appdetail/com.qianyan2.ting.en)
 * [每日英语阅读](https://sj.qq.com/appdetail/lexue.mryyyd)
 * [欧路词典](https://sj.qq.com/appdetail/com.eusoft.eudic)
-* [不背单词](https://sj.qq.com/appdetail/cn.com.langeasy.LangEasyLexis) 都适配了平板
+* [不背单词](https://sj.qq.com/appdetail/cn.com.langeasy.LangEasyLexis) 甚至适配了平板
 
 ## 7. 生活类
 
 ### 安卓
 
 * [美团](https://sj.qq.com/appdetail/com.sankuai.meituan)
+* [最会买](https://sj.qq.com/appdetail/com.ruanmei.zuihuimai)
+* 保利电影 [app](https://sj.qq.com/appdetail/com.zhonglan.polyapp) / 小程序
+
+备用
+
 * [卢米埃影城 App](https://sj.qq.com/appdetail/com.lumiai.XXXXX) / 小程序 毕竟办过会员卡，不过每年都需要年费 10 元需要进行激活，暂时不用了，不过目前我还有 31 的余额，但想起我浪费了 1 张还是 2 张兑换票我就心疼，可惜过期了
 * [什么值得买](https://sj.qq.com/appdetail/com.smzdm.client.android) 颜值很高且存活了很多年
 
@@ -642,9 +646,10 @@ weico 下架了，变成了微博国际板，后面又变成轻享版了，结�
 
 ### 安卓
 
-* LibreOffice Viewer - [Google Play 上的应用](https://play.google.com/store/apps/details?id=org.documentfoundation.libreoffice) | [F-Droid - Free and Open Source Android App Repository](https://f-droid.org/packages/org.documentfoundation.libreoffice/)
-* [PDF Reader - Hi Read](https://apkpure.com/cn/pdf-reader-pdf-viewer/pdf.reader.pdfviewer.pdfeditor) 有一定的 PDF 编辑器功能，体积小，简单又免费
 * [天眼查 app](https://sj.qq.com/appdetail/com.tianyancha.skyeye) / 小程序 求职中可以**反调公司**，也适用于查询被服务公司，**无良北京丰台万达舒窈瑶国际**
+* ——————— ฅ՞• •՞ฅ ———————
+* [永中 Office](https://sj.qq.com/appdetail/com.yozo.office) 不足百兆且较为清爽
+* [PDF Reader - Hi Read](https://apkpure.com/cn/pdf-reader-pdf-viewer/pdf.reader.pdfviewer.pdfeditor) 有一定的 PDF 编辑器功能，体积小，简单又免费
 
 可选
 
@@ -656,7 +661,8 @@ weico 下架了，变成了微博国际板，后面又变成轻享版了，结�
 
 not
 
-* [WPS Office](https://sj.qq.com/appdetail/cn.wps.moffice_eng) 不够清爽
+* LibreOffice Viewer - [Google Play 上的应用](https://play.google.com/store/apps/details?id=org.documentfoundation.libreoffice) | [F-Droid - Free and Open Source Android App Repository](https://f-droid.org/packages/org.documentfoundation.libreoffice/) 功能不太完善
+* [WPS Office](https://sj.qq.com/appdetail/cn.wps.moffice_eng) 功能强大但是不够清爽，杂七杂八内容太多
 * Polaris Office 北极星办公 其中安卓版本不是最新版不能用
 
 怀旧经典
@@ -678,9 +684,9 @@ not
 
 ## 11. 支付类
 
-**一定不要网贷**，信用卡合规使用。不要花费超出能力范围的钱
+**一定不要网贷，信用卡合规使用。不要花费超出能力范围的钱**
 
-* [支付宝](https://sj.qq.com/appdetail/com.eg.android.AlipayGphone)
+* [支付宝](https://sj.qq.com/appdetail/com.eg.android.AlipayGphone) 杂乱无章
 * [云闪付](https://sj.qq.com/appdetail/com.unionpay) 云闪付持续有优惠，信用卡还款免手续费
 
 可选
