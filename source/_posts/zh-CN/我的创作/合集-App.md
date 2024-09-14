@@ -114,15 +114,15 @@ not
 
 #### 安卓
 
-1. 本地+在线 [阅读](https://github.com/gedoor/legado) + [tts-server](https://jing332.lanzn.com/b09jpjd2d)
-2. 正版在线 [微信读书](https://sj.qq.com/appdetail/com.tencent.weread) 除了现在很多内容收费了
+1. [FBReader](https://fbreader.org/android#download) 一款本地电子书阅读器，同时也支持 pdf
+2. [番茄免费小说](https://sj.qq.com/appdetail/com.dragon.read) 有的想看的书可以免费离线下载，很好，很适合离线用
 
 可选
 
-* [FBReader](https://fbreader.org/android#download) 一款本地电子书阅读器，同时也支持 pdf
+* 本地+在线 [阅读](https://github.com/gedoor/legado) + [tts-server](https://jing332.lanzn.com/b09jpjd2d)
 * [静读天下](http://www.moondownload.com/download.html) 免费版有广告
 * ——————— ฅ՞• •՞ฅ ———————
-* [**番茄免费小说**](https://sj.qq.com/appdetail/com.dragon.read) 有的想看的书可以免费离线下载，很好，很适合离线用
+* 正版在线 [微信读书](https://sj.qq.com/appdetail/com.tencent.weread) 除了现在很多内容收费了
 * [京东读书](https://sj.qq.com/appdetail/com.jd.app.reader) 送了影响力 和 乌合之众几本书，可以看一段时间
 * [网易蜗牛阅读](https://sj.qq.com/appdetail/com.netease.snailread) 每天可以免费看 1 个小时付费书籍
 
@@ -166,7 +166,7 @@ not
 #### 安卓
 
 1. 在线 [LX Music 洛雪音乐助手](https://github.com/lyswhut/lx-music-mobile/releases/) 作为 Spotify 的替代品，我一般很少用，因为同步歌单是个问题
-2. 本地 [椒盐音乐](https://www.coolapk.com/apk/284064) + [海贝音乐](https://sj.qq.com/appdetail/com.hiby.music) 用于在线下载歌词
+2. 本地 [椒盐音乐(Salt Player)](https://www.coolapk.com/apk/284064) + [海贝音乐](https://sj.qq.com/appdetail/com.hiby.music) 用于在线下载歌词
 
 可选
 
@@ -225,11 +225,11 @@ not
 
 1. [得到](https://sj.qq.com/appdetail/com.luojilab.player) 非常好
 2. [帆书](https://sj.qq.com/appdetail/io.dushu.fandengreader) 有的时候会有限免资源
-3. [番茄畅听](https://sj.qq.com/appdetail/com.xs.fm) 免费资源较多
 
 可选
 
 * [讯飞有声](https://sj.qq.com/appdetail/com.iflytek.readassistant) 难得的免费收听时长的可听本地图书和 pdf、doc、mobi 的 app，是目前的一个较好的方案
+* [番茄畅听](https://sj.qq.com/appdetail/com.xs.fm) 免费资源较多 和 番茄免费小说 的部分功能重合了
 * [微信听书](https://sj.qq.com/appdetail/com.tencent.wehear) 活动玩法多，可以换取收听时长
 * [极客时间](https://sj.qq.com/appdetail/org.geekbang.geekTime) 程序员才需要
 * [云听](https://sj.qq.com/appdetail/com.shinyv.cnr) 央视有些资源而已
@@ -278,7 +278,6 @@ not
 * [ZAKER](https://sj.qq.com/appdetail/com.myzaker.ZAKER_Phone) 看新闻
 * [今日头条](https://sj.qq.com/appdetail/com.ss.android.article.news)，安卓版的有广告。 话说 iPhone 的付费版的倒是可以考虑。我一般很少关注外界，这得改呀，央视 315 这种节目就很好
 * [今日热榜](https://tophub.today/app) 能看新闻，但是我部分情况下把它当初类 rss 收集器
-* [学习强国](https://sj.qq.com/appdetail/cn.xuexi.android) 无广告而已
 
 not
 
@@ -701,7 +700,7 @@ not
 1. [坚果云](https://sj.qq.com/appdetail/nutstore.android) 同步文档用
 2. [小飞机网盘](https://www.feijipan.com/) 分享用
 3. [阿里云盘](https://sj.qq.com/appdetail/com.alicloud.databox) 功能很多，且不太限速，但是非会员不能看超清适配，但是可以搭配猫头鹰文件
-4. [pikpak](https://mypikpak.com/zh-CN) 免费用户总共 6GB，每天可以添加 3 个离线任务还是不错的
+4. [PikPak](https://mypikpak.com/zh-CN) 免费用户总共 6GB，每天可以添加 3 个离线任务还是不错的
 
 not
 
@@ -719,7 +718,7 @@ not
 * [阿里云盘](https://sj.qq.com/appdetail/com.alicloud.databox) 适配了平板
 * [百度网盘](https://sj.qq.com/appdetail/com.baidu.netdisk) 适配了平板
 
-##  13. 效率类
+## 13. 效率类
 
 [TODO 清单](https://sj.qq.com/appdetail/com.eve.todolist)
 
@@ -916,7 +915,7 @@ not
 
 ## 33. 远程控制
 
-* Kore 一个用于 kdox 的远程遥控器
+* Kore 一个用于 Kodi 系统/程序 的 远程遥控器
 * VNC Viewer 操控树莓派用
 
 ## 34. 投屏
@@ -927,7 +926,19 @@ not
 
 APTV
 
-## 35. 游戏
+## 35. 智能家居
+
+### 安卓 和 苹果
+
+[米家](https://sj.qq.com/appdetail/com.xiaomi.smarthome)
+
+## 36. 理论学习
+
+* [学习强国](https://sj.qq.com/appdetail/cn.xuexi.android) 由中共中央宣传部主管的学习平台，它提供了丰富多样的学习资源
+* [半月谈](https://sj.qq.com/appdetail/com.bytxmt.banyuetan) 新华社半月谈出品的公务员公考学习平台，新华社时评员讲申论，公考名师讲行测
+* [人民日报](https://sj.qq.com/appdetail/com.peopledailychina.activity) 有广告
+
+## 37. 游戏
 
 ### iPhone 和 iPad
 
