@@ -55,7 +55,7 @@ docker exec -it alist ./alist admin set myPASSWORDForTang
 
 ### 密码管理 server
 
-bitwarden 最低系统要求 2GB 内存 + 12GB 磁盘空间
+bitwarden 最低系统要求 2GB 内存 + 12GB 磁盘空间。
 
 ```sh
 sudo adduser bitwarden
@@ -68,6 +68,15 @@ sudo chown -R bitwarden:bitwarden /opt/bitwarden
 
 curl -Lso bitwarden.sh "https://func.bitwarden.com/api/dl/?app=self-host&platform=linux" && chmod 700 bitwarden.sh
 ./bitwarden.sh install
+```
+
+小内存机器是根本跑不起来的，一般推荐使用第三方开发的 [Vaultwarden](https://github.com/dani-garcia/vaultwarden)。Vaultwarden 是 Bitwarden 的轻量级版本，原名 bitwarden_rs，后来为了与“大哥” Bitwarden 区分开来，遂改名为 Vaultwarden。貌似这个只要 128 内存就能使用。
+
+```sh
+docker run -d --name vaultwarden \
+-e SIGNUPS_ALLOWED=false \
+-e ADMIN_TOKEN=fuckzhaojiesqqba/3ji1223/efl1 \
+-v /vw-data/:/data/ --restart unless-stopped -p 8021:80 vaultwarden/server:latest
 ```
 
 ### DNS 服务
@@ -88,14 +97,8 @@ you can control the service status with the following commands:
 
 ```sh
 sudo /opt/AdGuardHome/AdGuardHome -s start|stop|restart|status|install|uninstall
-
-sudo /opt/AdGuardHome/AdGuardHome -s status
-
-sudo /opt/AdGuardHome/AdGuardHome -s uninstall
-
-sudo /opt/AdGuardHome/AdGuardHome -s install
 ```
 
-网页管理界面 8011
+网页管理界面需要设置以下，不建议使用 80
 DNS 服务器监听端口 53 至少用到了 udp，但是 tcp 也建议开启。 只能固定不变，否则 windows 系统改不了此项
-admin / minniadm8011s
+用户名和密码可以分别设置为 admin / minniadm8011s

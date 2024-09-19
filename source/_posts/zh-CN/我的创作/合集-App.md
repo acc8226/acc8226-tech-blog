@@ -278,6 +278,8 @@ not
 * [ZAKER](https://sj.qq.com/appdetail/com.myzaker.ZAKER_Phone) 看新闻
 * [今日头条](https://sj.qq.com/appdetail/com.ss.android.article.news)，安卓版的有广告。 话说 iPhone 的付费版的倒是可以考虑。我一般很少关注外界，这得改呀，央视 315 这种节目就很好
 * [今日热榜](https://tophub.today/app) 能看新闻，但是我部分情况下把它当初类 rss 收集器
+* ——————— ฅ՞• •՞ฅ ———————
+* 台湾旺旺中时
 
 not
 
@@ -808,11 +810,7 @@ not
 
 博联智能 可以搭配天猫插座 不过要求 2.4 和 5G Hz 的网络要分开
 
-## 20. 专业工具
-
-### 安卓
-
-[泰尔网测](https://sj.qq.com/appdetail/com.knowyou.perception) 用于网速测试 和 查看是哪家宽带
+## 20. 硬件检测
 
 ### iPhone
 
@@ -936,9 +934,20 @@ APTV
 
 * [学习强国](https://sj.qq.com/appdetail/cn.xuexi.android) 由中共中央宣传部主管的学习平台，它提供了丰富多样的学习资源
 * [半月谈](https://sj.qq.com/appdetail/com.bytxmt.banyuetan) 新华社半月谈出品的公务员公考学习平台，新华社时评员讲申论，公考名师讲行测
-* [人民日报](https://sj.qq.com/appdetail/com.peopledailychina.activity) 有广告
 
-## 37. 游戏
+not
+
+* [人民日报](https://sj.qq.com/appdetail/com.peopledailychina.activity) 有广告，所以我不太喜欢
+
+
+## 37. 网络检测
+
+### 安卓
+
+1. [泰尔网测](https://sj.qq.com/appdetail/com.knowyou.perception) 用于网速测试 和 查看是哪家宽带
+2. [WiFiAnalyzer](https://f-droid.org/packages/com.vrem.wifianalyzer/) | [GitHub 源](https://github.com/VREMSoftwareDevelopment/WiFiAnalyzer) 优化您的WiFi网络
+
+## 38. 游戏
 
 ### iPhone 和 iPad
 

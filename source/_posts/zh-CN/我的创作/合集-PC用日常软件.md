@@ -238,7 +238,7 @@ not
 
 **windows 平台**
 
-1. 本地播放：【win 官方安装版】PotPlayer [官网](https://potplayer.tv/?lang=zh_CN) | [绿色版](https://potplayer.org) 高清影音播放器
+1. 本地播放：【win 官方安装版】PotPlayer [官网](https://potplayer.tv/?lang=zh_CN) | [绿色版](https://potplayer.org) 再搭配 HEVC 解码器 [LAVFilters](https://github.com/Nevcairiel/LAVFilters/releases)
 2. 在线平台：【win】[荐片播放器](https://www.jianpian6.co/) 最新电影，播放器 +【win mac】[哔哩哔哩客户端](https://app.bilibili.com)
 
 官网收录：【win mac】[迅雷影音](https://video.xunlei.com/pc.html) | 【win】[射手影音](https://www.splayer.org/) | 【win mac】[抖音电脑版](https://www.douyin.com) | 【win mac】[爱奇艺客户端](https://www.iqiyi.com/appstore.html) | 【win mac】[腾讯视频客户端](https://v.qq.com/download.html#Windows) | 【win mac】[优酷客户端](https://youku.com/product/index) | 【win mac】[央视影音](https://app.cctv.com)
@@ -336,6 +336,7 @@ albert 安装不上
 * 【win】[GUP-Z](https://www.techpowerup.com/download/techpowerup-gpu-z/)
 * 【win】[鲁大师](https://www.ludashi.com/) 驱动管理+硬件检测，可解决未安装任何音频输出设备的问题
 * 【win】[360 驱动大师](http://dm.weishi.360.cn/home.html)
+* [CrystalDiskInfo](https://crystalmark.info/en/) 磁盘检测
 
 运行库
 [Download Visual C++ Redistributable Runtimes All-in-One Feb 2024 | TechPowerUp](https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/)
@@ -701,13 +702,10 @@ not
 
 ### 05. 文件转换
 
-【安装版】[File Converter](https://file-converter.org/) - 完备的文件转换利器，支持对文档、图片、视频、音乐、电子书、CAD、压缩包等文件进行格式转换
+* 【win 安装版】[格式工厂](http://www.pcgeshi.com/index.html) 全功能转换
+* 【全平台】[HandBrake](https://handbrake.fr/) 视频转换
 
-【cli】[pandoc 文档转换利器](https://github.com/jgm/pandoc/releases) 文档转换
-
-【全平台】[HandBrake](https://handbrake.fr/) 视频转换
-
-官网收录：【win 安装版】[格式工厂](http://www.pcgeshi.com/index.html) |【mac】[即刻转换](https://zh.okaapps.com/product/1637557903)
+官网收录：mac】[即刻转换](https://zh.okaapps.com/product/1637557903)
 
 ### 06. 包管理器 或 应用商店
 

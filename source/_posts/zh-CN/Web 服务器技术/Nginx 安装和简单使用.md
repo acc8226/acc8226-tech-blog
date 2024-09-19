@@ -179,15 +179,16 @@ server {
 1. 申请证书 todo
 2. 安装证书
 
-首先找到 Nginx 配置目录.例如我的目录在`/etc/nginx`
+首先找到 Nginx 配置目录.例如我的目录在 `/etc/nginx`
 
-在证书控制台下载Nginx版本证书。下载到本地的压缩文件包解压后包含：
+在证书控制台下载 Nginx 版本证书。下载到本地的压缩文件包解压后包含：
 
-.crt 文件：是证书文件，crt是**pem**文件的扩展名。
-.key 文件：证书的私钥文件（申请证书时如果没有选择自动创建CSR，则没有该文件）。
-> 友情提示： .pem扩展名的证书文件采用Base64-encoded的PEM格式文本文件，可根据需要修改扩展名。
+.crt 文件：是证书文件，crt是 **pem** 文件的扩展名。
+.key 文件：证书的私钥文件（申请证书时如果没有选择自动创建 CSR，则没有该文件）。
+> 友情提示： .pem扩展名的证书文件采用 Base64-encoded 的PEM 格式文本文件，可根据需要修改扩展名。
 
 1\. 放置 crt 证书文件和 key 私钥文件并打开 Nginx 安装目录下 conf 目录中的 nginx.conf 文件. 将其修改为 (以下属性中 **ssl 开头的属性与证书配置有直接关系**，其它属性请结合自己的实际情况复制或调整) :
+
 /etc/pki/nginx/private/www.abc.com.key
 /etc/pki/nginx/server/www.abc.com.crt.pem
 
