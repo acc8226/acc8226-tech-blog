@@ -23,13 +23,13 @@ categories: 我的创作
 
 #### 2. 浏览器
 
-* 【win 绿色版】[百分浏览器](http://www.centbrowser.cn) 鼠标悬停切换标签功能值得点赞
+* 【win 绿色版】[Catsxp 猫眼浏览器](http://www.centbrowser.cn) 鼠标悬停切换标签功能值得点赞。保护隐私、更快捷、更安全
 * 【mac 官网版】[360 极速浏览器](https://browser.360.cn/ee/mac/index.html)
 * 【linux】一般用自带[火狐浏览器](https://www.firefox.com.cn)
 
 <!-- more -->
 
-官网收录：【win】[搜狗高速浏览器](https://sogou.browser.qq.com/) |【win】[猎豹浏览器](https://www.liebao.cn/) |【全平台】[360 安全浏览器](https://browser.360.cn/) |【win mac】[QQ 浏览器](https://browser.qq.com/) |【全平台】[Edge](https://www.microsoft.com/zh-cn/edge) |【全平台】[Opera](https://www.opera.com/zh-cn) |【全平台】[Chrome](https://www.google.cn/intl/zh-CN/chrome/) |【win mac】[傲游浏览器](https://www.maxthon.cn/) | [Vivaldi](https://vivaldi.com/)
+官网收录：【win】[搜狗高速浏览器](https://sogou.browser.qq.com/) |【win】[猎豹浏览器](https://www.liebao.cn/) |【全平台】[360 安全浏览器](https://browser.360.cn/) |【win mac】[QQ 浏览器](https://browser.qq.com) |【全平台】[Edge](https://www.microsoft.com/zh-cn/edge) |【全平台】[Opera](https://www.opera.com/zh-cn) |【全平台】[Chrome](https://www.google.cn/intl/zh-CN/chrome) |【win mac】[傲游浏览器](https://www.maxthon.cn) | [Vivaldi](https://vivaldi.com) | [百分浏览器](http://www.centbrowser.cn)
 
 #### 3. 压缩解压
 
@@ -54,6 +54,8 @@ categories: 我的创作
 * 【mac 官网版】[betterAndBetter](https://www.better365.cn/bab2.html) 免费且比目前付费的 [WGestures 2 代](https://www.yingdev.com/projects/wgestures2) 更强大，还自带 mac 上需要的翻转鼠标功能，于是我顺便卸载了 [Scroll Reverser](https://pilotmoon.com/scrollreverser/)
 * 【linux】KDE 桌面内置了鼠标手势
 
+官网收录：【win】[FastGestures](https://fg.zhaokeli.com/) 鼠标/触控板/屏手势
+
 #### 2. 【常用】键鼠增强
 
 * 【win 自荐】[**捷键**](https://feipig.fun/zh-cn/4c2b72aaa7d0)
@@ -66,13 +68,9 @@ categories: 我的创作
 * 【mac】[Xnip](https://zh.xnipapp.com/) 其实我更期待 PixPin for mac 的推出，因为免费的 OCR 识图功能
 * liunx 系统自带
 
-官网收录：[iShot](https://www.better365.cn/h-col-134.html) | [Snagit](https://www.techsmith.com/screen-capture.html)
+怀旧经典：【win】faststone capture for windows 5.3
 
-怀旧经典
-
-【win】faststone capture for windows 5.3
-
-官网收录：【全平台】[Snipaste](https://zh.snipaste.com) |【win】[PicPick](https://picpick.app/zh/) |【win】[verycapture](https://verycapture.com/cn/index.html)
+官网收录：【全平台】[Snipaste](https://zh.snipaste.com) |【win】[PicPick](https://picpick.app/zh/) |【win】[verycapture](https://verycapture.com/cn/index.html) | 【mac】[iShot](https://www.better365.cn/h-col-134.html)
 
 #### 4. 【常用】护眼
 
@@ -94,10 +92,9 @@ categories: 我的创作
 
 **windows 和 mac 平台**
 
-1. 普通下载：【全平台 首选】[Motrix](https://motrix.app/zh-CN/) | [下载页](https://motrix.app/zh-CN/download) 颜值高。支持下载 HTTP、FTP、BT、磁力链接等资源。即使 Github 资源也不在话下
+1. 普通下载：【全平台】Motrix [官网](https://motrix.app/zh-CN/) | [下载页](https://motrix.app/zh-CN/download) 颜值高。支持下载 HTTP、FTP、BT、磁力链接等资源。即使 Github 资源也不在话下
 2. 视频资源下载：【win mac】[Neat Download Manager](https://www.neatdownloadmanager.com/index.php/en/) 体积小功能强，不支持磁力但是能配合浏览器拓展下载常见视频网站的视频
-
-[Bilidown for windows-哔哩哔哩视频下载](https://zhouql.vip/bilibili/pc/) | [DownKyi](https://www.colostar.cn/links/13486.html)（哔哩下载姬）
+3. 哔哩哔哩专用下载器：[Bilidown for windows-哔哩哔哩视频下载](https://zhouql.vip/bilibili/pc/) | [DownKyi](https://www.colostar.cn/links/13486.html)（哔哩下载姬）
 
 **linux 平台**
 
@@ -106,20 +103,20 @@ categories: 我的创作
 
 #### 6. 【常用】网盘
 
-##### windows 平台
+**windows 平台**
 
 1. 【全平台】[坚果云](https://www.jianguoyun.com/s/downloads) 主要用于存少量文档
-2. [小飞机](https://www.feijipan.com) 用于网页分享不限速分享文件
+2. 【网页版】[小飞机](https://www.feijipan.com) 用于网页分享不限速分享文件
 3. 【win mac】[阿里云盘](https://www.aliyundrive.com/drive/) 主打大容量 + 同步功能，高峰时段限速但一般没感觉。然后再搭配猫头鹰文件。可以读取阿里网盘的视频文件
 4. 【win】[pikpak](https://mypikpak.com/zh-CN) 免费用户总共 6GB，每天可以添加 3 个离线任务还是不错的
 
-官网收录：[腾讯微云](https://www.weiyun.com/)
+官网收录：【win mac】[腾讯微云](https://www.weiyun.com/)
 
-##### mac 平台
+**mac 平台**
 
 依旧【mac linux】[阿里云盘](https://www.aliyundrive.com/drive/) + 【全平台】[坚果云](https://www.jianguoyun.com/s/downloads) 的组合
 
-##### linux 平台
+**linux 平台**
 
 【全平台】[坚果云](https://www.jianguoyun.com/s/downloads)表现良好，【全平台】[百度网盘](https://yun.baidu.com)则很久没更新了
 
@@ -129,7 +126,7 @@ categories: 我的创作
 * 【mac】[Picture View](https://wl879.github.io/apps/picview/index.html)
 * liunx 系统自带
 
-官网收录：[XnView](https://www.xnview.com/en/)
+官网收录：【win】[XnView](https://www.xnview.com/en/)
 
 #### 8. 图像处理
 
@@ -585,6 +582,10 @@ iOS 用户可下载【win mac】 [iTunes](https://www.apple.com.cn/itunes/) 或�
 * 【全平台】[balenaEtcher](https://etcher.balena.io/) 还可以烧录树莓派
 * [Raspberry Pi Imager](https://www.raspberrypi.com/for-home/) 树莓派专用烧录到 SD 卡的工具
 
+not
+
+[Rufus](https://rufus.ie/zh/) 其实还不错，但是和 Ventoy 相比我更偏爱 Ventoy
+
 ### 16.微软 buff
 
 * 【win】[微软 Sysinternals](https://learn.microsoft.com/zh-cn/sysinternals/)
@@ -749,21 +750,21 @@ not
 
 ## 回收站
 
-* 猿如意 不让人满意
-* 芒果壁纸 时间长了会白屏
+* 猿如意【浏览器插件】 不让人满意
+* 芒果壁纸【win】 时间长了会白屏
 * 网易炉石官方插件 随之国服没了已经落幕
 * 录猎 不好用
-* 芒果加速 啥玩意，也是此类，只能体验 2 小时
+* 芒果加速【win】 啥玩意，也是此类，只能体验 2 小时
 * 万彩录屏大师 太复杂了
 * 万兴喵影 2023 需要登录才能录屏，差评，不过这个公司的产品还行
 * 星星加速 可以访问谷歌，但是一来界面不好看，限时体验 3 天已经是很良心了
 * adguard 免费体验 2 天太少了
 * AuTool-0.1.15-win-x64 暂时不好用
-* CleanMy PC 软件都不更新
-* Cursor Setup 0.1.3-x64 净化的不太完善吧，淘汰
+* CleanMy PC【win】 软件都不更新
+* Cursor Setup 0.1.3-x64 不太完善，淘汰
 * Dawn Launcher 不好用
 * EncryptoforWin 厂商专注 mac 已经不更新了
-* listen1【mac】 2023 年初好多歌曲都不能播放了，无奈放弃
+* listen1【win mac】 2023 年初好多歌曲都不能播放了，无奈放弃
 * MQTT.FX 很久没更新了，淘汰
 * OfficeBox 官方绿色版 颜值太低且功能不强大，差评
 * OneAuth 【Win 商店版】需要先登录的二步验证，差评
@@ -772,8 +773,8 @@ not
 * PDF Shaper Professional v13.3 只有些页面功能而已
 * QOwnNotes 【win mac linux】不好用，淘汰
 * Transmission【win mac linux】 只能下载 bt 种子，淘汰
-* Typora 没有想象中强大，的导出 pdf 带目录功能，且还有有同类免费软件可以替代，但是不更新了，不如 vscode + 插件
+* Typora【win mac】 没有想象中强大。有导出 pdf 带目录功能。我大部分会使用 vscode + 插件
 * UGit 腾讯 git 代码客户端，就是感觉不好用
 * Wox-1.4.1196 已经不太维护的启动器，界面也一般
-* zyplayer--【win, mac】2023 据说不再更新，但是将逐渐不好用了
+* zyplayer--【win mac】2023 据说不再更新，但是将逐渐不好用了
 * oblivion-desktop 魔法没有一次连成功的

@@ -326,7 +326,7 @@ ms-settings:wheel 滚轮
 
 ### SHA256 校验码检查文件的完整性
 
-在 Windows 系统中，您可能需要使用PowerShell，并输入以下命令：
+在 Windows 系统中，您可能需要使用 PowerShell，并输入以下命令：
 
 Get-FileHash -Algorithm SHA256 文件的路径
 
