@@ -11,7 +11,7 @@ wtv 工具箱- 检测直播源的可用性和速度
 作者的博客 [一个橙子,软件开发,软件制作,软件运维,软件推荐|www.yigechengzi.com](https://yigechengzi.com/)
 
 工具
-M3U列表格式转换 - 黑鸟博客
+M3U 列表格式转换 - 黑鸟博客
 https://guihet.com/convert-m3u-js.html
 
 直播源
@@ -62,3 +62,15 @@ https://github.com/o0HalfLife0o/TVBoxOSC | [releases](https://github.com/o0HalfL
 * https://github.moeyy.xyz/https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json
 * http://www.weetai.cn/tvbox.json
 * https://raw.liucn.cc/box/m.json
+
+## 我的直播源
+
+iptv.m3u8 作为主打，适用于湖南祁阳广电网，资料均为网络上收集整理，仅供学习。
+
+由于严重依赖于地区网络环境，可能湖南联通网络也能正常播放，如很多链接失效属于正常现象，请检测后进行增删后使用。
+
+由于上传到仓库，因此可以得到直链了。
+
+tv https://raw.githubusercontent.com/acc8226/iptvForQiyang/main/iptv.m3u8
+fm1 https://raw.githubusercontent.com/acc8226/iptvForQiyang/main/fm.m3u8
+fm2 https://raw.githubusercontent.com/acc8226/iptvForQiyang/main/其他fm收集/collections.m3u8

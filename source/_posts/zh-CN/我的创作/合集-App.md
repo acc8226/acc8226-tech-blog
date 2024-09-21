@@ -679,6 +679,7 @@ not
 
 * [企业微信](https://sj.qq.com/appdetail/com.tencent.wework)
 * [钉钉](https://sj.qq.com/appdetail/com.alibaba.android.rimet)
+* ——————— ฅ՞• •՞ฅ ———————
 * [WPS](https://sj.qq.com/appdetail/cn.wps.moffice_eng) 可以做到 Office 文档和 PDF 通吃
 * [福昕阅读器](https://sj.qq.com/appdetail/com.foxit.mobile.pdf.lite)
 * Adobe Acrobat Reader 为了获得专业的**阅读 Pdf** 体验, 这款 App 是通用版, 平板也做了适配
@@ -742,7 +743,7 @@ not
 
 not
 
-* Apex Launcher 可选 pro 服务是何物
+* Apex Launcher 还有付费的 pro 服务
 
 ## 16. 浏览器【常用】
 
@@ -767,21 +768,21 @@ not
 
 ### iPhone
 
-Alook
+[Alook](https://sj.qq.com/appdetail/alook.browser)
 
 ### iPad
 
-Alook 虽然尚且能用，但是内核好像还是同内置浏览器。可能火狐和 edge 依旧是更好的选择
+[Alook](https://sj.qq.com/appdetail/alook.browser) 尚且能用，但是内核好像还是同内置浏览器。可能火狐和 edge 依旧是更好的选择
 
 ### aPad
 
 * [Edge](https://sj.qq.com/appdetail/com.microsoft.emmx)
 * [火狐浏览器](https://sj.qq.com/appdetail/org.mozilla.firefox)
-* UC 浏览器国际版 适配了平板
+* UC 浏览器国际版
 
 not
 
-[chrome](https://sj.qq.com/appdetail/com.android.chrome) 不太好用
+[Chrome](https://sj.qq.com/appdetail/com.android.chrome) 不太好用
 
 ## 17. 知识社区
 
@@ -853,7 +854,9 @@ AIDA64 硬件检测
 
 [网商银行](https://sj.qq.com/appdetail/com.mybank.android.phone) 可以支付宝提现免费，幸好我抢到资格比较早，但是用处不大
 
-【垃圾】微众银行 TM 垃圾微粒贷，网贷审核不严格立马到账
+not
+
+~~【垃圾】[微众银行](https://sj.qq.com/appdetail/com.webank.wemoney) TM 垃圾微粒贷，网贷审核不严格立马到账，诈骗帮凶~~
 
 ## 25. 移动营业厅 app
 
@@ -909,7 +912,11 @@ not
 ### 安卓
 
 * IPTV apkpure 版 作者 Alexander Sofronov
-* 央视频
+* [央视频](https://sj.qq.com/appdetail/com.cctv.yangshipin.app.androidp)
+
+### 苹果
+
+APTV
 
 ## 33. 远程控制
 
@@ -920,20 +927,18 @@ not
 
 [AlookDLNA](https://alookweb.com/AlookDLNA.apk) 可以投屏到 电视 或者 安卓手机
 
-### 苹果
-
-APTV
-
 ## 35. 智能家居
 
 ### 安卓 和 苹果
 
 [米家](https://sj.qq.com/appdetail/com.xiaomi.smarthome)
 
-## 36. 理论学习
+## 36. 考公必备
 
 * [学习强国](https://sj.qq.com/appdetail/cn.xuexi.android) 由中共中央宣传部主管的学习平台，它提供了丰富多样的学习资源
 * [半月谈](https://sj.qq.com/appdetail/com.bytxmt.banyuetan) 新华社半月谈出品的公务员公考学习平台，新华社时评员讲申论，公考名师讲行测
+* [新华社](https://sj.qq.com/appdetail/net.xinhuamm.mainclient)
+* [新华网](https://sj.qq.com/appdetail/com.foundao.xinhua_android)
 
 not
 
