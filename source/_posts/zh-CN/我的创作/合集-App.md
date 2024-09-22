@@ -73,11 +73,11 @@ iPhone 用户则必须安装其中一个，防诈骗和无良商家骗取钱财�
 
 #### 安卓
 
-[Aegis Authenticator](https://getaegis.app/) | [下载地址](https://github.com/beemdevelopment/Aegis/releases) 记得做好定时的密码导出工作
+Aegis Authenticator [官网](https://getaegis.app) | [下载地址](https://github.com/beemdevelopment/Aegis/releases) 记得做好定时的密码导出工作
 
 not
 
-* Bitwarden authenticator 目前还有待完善
+* [Bitwarden authenticator](https://bitwarden.com/download/#bitwarden-authenticator-mobile) 目前还有待完善
 * [Google Authenticator](https://google-authenticator.en.softonic.com/android) 虽说是大厂，但是软件包体积稍大 且 国内云同步功能没法使用
 * ——————— ฅ՞• •՞ฅ ———————
 * [QQ 安全中心](https://sj.qq.com/appdetail/com.tencent.token) 至尊宝没了，属于半死不活，新版本一直转圈
@@ -99,7 +99,7 @@ not
 
 #### 通用
 
-Aqua Mail [官网](https://www.aqua-mail.com/) | [play 版](https://play.google.com/store/apps/details?id=org.kman.AquaMail) | [apkpure 版](https://apkpure.com/cn/email-aqua-mail-fast-secure/org.kman.AquaMail) 简单清爽
+Aqua Mail [官网](https://www.aqua-mail.com) | [play 版](https://play.google.com/store/apps/details?id=org.kman.AquaMail) | [apkpure 版](https://apkpure.com/cn/email-aqua-mail-fast-secure/org.kman.AquaMail) 简单清爽
 
 备用
 
@@ -128,11 +128,10 @@ not
 
 not
 
-* [阅读](https://github.com/gedoor/legado/releases) 不支持 mobi 格式
 * ~~云虫爱看 已下架，应用也不再更新~~
 * ——————— ฅ՞• •՞ฅ ———————
 * [QQ 阅读](https://sj.qq.com/appdetail/com.qq.reader) 有广告
-* [多看阅读](https://sj.qq.com/appdetail/com.duokan.reader) 书太贵
+* [多看](https://sj.qq.com/appdetail/com.duokan.reader) 书太贵
 * [百度阅读](https://sj.qq.com/appdetail/com.baidu.yuedu) 没起来
 * [起点读书](https://sj.qq.com/appdetail/com.qidian.QDReader) 可能有些独家资源
 * [七猫免费小说](https://sj.qq.com/appdetail/com.kmxs.reader) 免费看小说但是有广告
@@ -146,15 +145,15 @@ not
 
 本地
 
+* [kindle](https://sj.qq.com/appdetail/com.amazon.kindlefc) 在线和本地都很强
 * ~~Anyview 阅读 贼好用可惜停止更新了~~
 * ~~阅读星 Pro 阅读必备神器, 能读取各种格式的阅读格式文件 后 app 名字更新为云虫爱看，现在已经绝版了~~
-* [kindle](https://sj.qq.com/appdetail/com.amazon.kindlefc) 在线和本地都很强
 
 在线
 
 * [**微信读书**](https://sj.qq.com/appdetail/com.tencent.weread) 除了现在很多内容收费了
-* [百度阅读](https://sj.qq.com/appdetail/com.baidu.yuedu) 竟然无广告
-* 多看阅读 也无广告
+* [百度阅读](https://sj.qq.com/appdetail/com.baidu.yuedu) 老版本无广告
+* [多看](https://sj.qq.com/appdetail/com.duokan.reader) 老版本无广告
 
 #### aPad（安卓平板）
 
@@ -181,11 +180,14 @@ not
 * AIMP 音乐 太简陋
 * [飞傲音乐](https://sj.qq.com/appdetail/com.fiio.music) 界面适配不完善
 * ——————— ฅ՞• •՞ฅ ———————
-* [网易云](https://sj.qq.com/appdetail/com.netease.cloudmusic) 广告太多且现在太繁杂了
+* [网易云](https://sj.qq.com/appdetail/com.netease.cloudmusic) 广告太多且内容太多
 * [QQ 音乐](https://sj.qq.com/appdetail/com.tencent.qqmusic) 比某抑云的广告少太多，资源也算丰富
-* [酷狗](https://sj.qq.com/appdetail/com.kugou.android) 和 酷我 差一点意思
+* [酷狗音乐](https://sj.qq.com/appdetail/com.kugou.android) 和 酷我 差一点意思
+* [酷我音乐](https://sj.qq.com/appdetail/cn.kuwo.player) 和 酷狗 差一点意思
 * [爱音乐](https://sj.qq.com/appdetail/com.gwsoft.imusic.controller) 不好用，现在周杰伦的歌都没了，也不知道以前有没有
-* ~~虾米音乐 已宣布停止服务~~
+* [汽水音乐](https://sj.qq.com/appdetail/com.luna.music) 体验还行，对免费用户不太友好
+* ——————— ฅ՞• •՞ฅ ———————
+* 虾米音乐 已宣布停止服务
 
 #### iPad
 
@@ -193,7 +195,7 @@ not
 
 not 
 
-QQ 音乐 HD 首先更新不及时，其次其中 21 版本的 QQ 音乐 有点卡
+[QQ音乐HD](https://sj.qq.com/appdetail/com.tencent.qqmusicpad) 首先更新不及时，其次其中 21 版本的 QQ 音乐 有点卡
 
 #### iPhone
 
@@ -217,14 +219,14 @@ not
 
 not
 
-[QQ 音乐 HD](https://sj.qq.com/appdetail/com.tencent.qqmusicpad) 字太小且和手机版没法比
+[QQ音乐HD](https://sj.qq.com/appdetail/com.tencent.qqmusicpad) 字太小且和手机版没法比
 
 ### 6. 听物
 
 #### 安卓
 
 1. [得到](https://sj.qq.com/appdetail/com.luojilab.player) 非常好
-2. [帆书](https://sj.qq.com/appdetail/io.dushu.fandengreader) 有的时候会有限免资源
+2. [帆书](https://sj.qq.com/appdetail/io.dushu.fandengreader) 有时会有限免资源
 
 可选
 
@@ -241,18 +243,17 @@ not
 
 #### iPhone
 
-[得到](https://sj.qq.com/appdetail/com.luojilab.player)
-
-[极客时间](https://sj.qq.com/appdetail/org.geekbang.geekTime)
+* [得到](https://sj.qq.com/appdetail/com.luojilab.player)
+* [极客时间](https://sj.qq.com/appdetail/org.geekbang.geekTime)
 
 #### iPad
 
-* **得到**
+* 得到
 * [极客时间](https://sj.qq.com/appdetail/org.geekbang.geekTime)
 
 not
 
-* 酷 FM 酷狗官方推出的一款免费音乐 FM 电台 app，可以已经没了
+* 酷 FM 酷狗官方推出的一款免费音乐 FM 电台 app，现在已经停止更新了
 
 #### aPad（安卓平板）
 
@@ -278,8 +279,6 @@ not
 * [ZAKER](https://sj.qq.com/appdetail/com.myzaker.ZAKER_Phone) 看新闻
 * [今日头条](https://sj.qq.com/appdetail/com.ss.android.article.news)，安卓版的有广告。 话说 iPhone 的付费版的倒是可以考虑。我一般很少关注外界，这得改呀，央视 315 这种节目就很好
 * [今日热榜](https://tophub.today/app) 能看新闻，但是我部分情况下把它当初类 rss 收集器
-* ——————— ฅ՞• •՞ฅ ———————
-* 台湾旺旺中时
 
 not
 
@@ -405,16 +404,17 @@ not
 not
 
 * [es 文件浏览器](http://www.estrongs.com/) 由于我习惯了猫头鹰文件，这个不开会员还有广告
-* 输入法类 搜狗百度之类的有手机自带合作的，没必要了
 * ——————— ฅ՞• •՞ฅ ———————
 * [纯纯写作](https://sj.qq.com/appdetail/com.drakeet.purewriter) 很好用，但是收费版才好用就算了
 * [快递 100](https://sj.qq.com/appdetail/com.Kingdee.Express) 最近寄快递选【德邦】确实便宜写，不过**体积和重量**是按两者最大的来，情有可原吧。第一次用快递 100 我领了一个 5 月的优惠券，感觉还行，一般足够用
 * [北京云法庭](http://sspt.bjcourt.gov.cn/bcourt/onlineCourt/downloadYm)  我在某些情况下会用到 法 yuan 就 TM 是垃圾，法 guan 也是，拖了好长时间，卸了，我没证据，我理亏，我 b 万没了，思考思考思考
 * 北京法院 一类无力应用
-* ~~李跳跳 已主动下架 真实好友 最新版没适配~~
 * ——————— ฅ՞• •՞ฅ ———————
 * 雨时 看天气 有广告
-* 彩云天气 提示开会员
+* [彩云天气](https://sj.qq.com/appdetail/com.nowcasting.activity) 提示开会员
+* ——————— ฅ՞• •՞ฅ ———————
+* 李跳跳 已主动下架
+* 真实好友 最新版没适配
 
 ### iPhone
 
@@ -422,17 +422,14 @@ not
 * 雨时 看天气 或者 彩云天气Pro（需付费）
 * [百度输入法](https://sj.qq.com/appdetail/com.baidu.input) 当时 iOS 7 推出的时候就很好用
 * 智能工具箱 可以用来听分贝 测距离啥的
-
 * WIFI 万能钥匙 Pro
-
-换机只用一次
-
-同步手机通讯录, [QQ 同步助手](https://sj.qq.com/appdetail/com.tencent.qqpim)
+* ——————— ฅ՞• •՞ฅ ———————
+* [QQ 同步助手](https://sj.qq.com/appdetail/com.tencent.qqpim) 换机只用一次，同步手机通讯录
 
 ### iPad
 
 * [Documents](https://readdle.com/zh/documents) (或者 GoodReader 苹果管理文件神器, 需付费)
-* ES File Explorer
+* ES 文件管理器
 * 中华万年历 HD 现在已经更新为 微鲤万年历
 
 ### aPad
@@ -463,8 +460,8 @@ not
 ### 安卓和 iPhone
 
 * [百度地图](https://sj.qq.com/appdetail/com.baidu.BaiduMap) / [高德地图](https://sj.qq.com/appdetail/com.autonavi.minimap) 二选一
-* 滴滴出行 [app](https://sj.qq.com/appdetail/com.sdu.didi.psnger) / 小程序。加班、搬家、货运搬家，搬家新用户还送券
-* 微信-腾讯乘车码 小程序。其实如果我是公交，一般会用支付类软件，例如支付宝；地铁可选择云闪付
+* 滴滴出行 [app](https://sj.qq.com/appdetail/com.sdu.didi.psnger) / 小程序 加班、搬家、货运搬家，搬家新用户还送券
+* 微信-腾讯乘车码小程序 其实如果我是公交，一般会用支付类软件，例如支付宝；地铁可选择云闪付
 
 可选
 
@@ -481,9 +478,9 @@ not
 
 ### aPad
 
-[高德地图](https://sj.qq.com/appdetail/com.autonavi.minimap)
-[腾讯地图](https://sj.qq.com/appdetail/com.tencent.map)
-[百度地图](https://sj.qq.com/appdetail/com.baidu.BaiduMap) 都适配了平板
+* [高德地图](https://sj.qq.com/appdetail/com.autonavi.minimap)
+* [腾讯地图](https://sj.qq.com/appdetail/com.tencent.map)
+* [百度地图](https://sj.qq.com/appdetail/com.baidu.BaiduMap) 都适配了平板
 
 ## 6. education 教育
 
@@ -553,7 +550,7 @@ not
 
 ### 安卓
 
-* [美团](https://sj.qq.com/appdetail/com.sankuai.meituan)
+* 美团 [app](https://sj.qq.com/appdetail/com.sankuai.meituan) / 小程序
 * [最会买](https://sj.qq.com/appdetail/com.ruanmei.zuihuimai)
 * 保利电影 [app](https://sj.qq.com/appdetail/com.zhonglan.polyapp) / 小程序
 
@@ -759,10 +756,11 @@ not
 
 not
 
+* [Alook](https://sj.qq.com/appdetail/alook.browser) 有点臃肿，但是功能性还行，界面也有点差
 * [360 手机浏览器](https://mse.360.cn/) 广告太多
 * [Google Chrome](https://sj.qq.com/appdetail/com.android.chrome) 国内不好用
 * [uc 标准版](https://sj.qq.com/appdetail/com.UCMobile) 太臃肿了
-* uc 国际版 可能会屏蔽某些网站
+* uc 国际版
 * [夸克浏览器](https://sj.qq.com/appdetail/com.quark.browser) 越来越臃肿了，和 UC 一个样
 * [via 浏览器](https://sj.qq.com/appdetail/mark.via) 比 x 浏览器体积更大且某些方面体验不如
 
@@ -782,13 +780,13 @@ not
 
 not
 
-[Chrome](https://sj.qq.com/appdetail/com.android.chrome) 不太好用
+* [Chrome](https://sj.qq.com/appdetail/com.android.chrome) 不太好用
 
 ## 17. 知识社区
 
 ### 通用
 
-* [**知乎**](https://sj.qq.com/appdetail/com.zhihu.android) 广告多但是可以做任务
+* [知乎](https://sj.qq.com/appdetail/com.zhihu.android) 有广告但是可以得盐粒
 * [豆瓣](https://sj.qq.com/appdetail/com.douban.frodo) 不是很喜欢
 * [小红书](https://sj.qq.com/appdetail/com.xingin.xhs)
 
@@ -844,15 +842,15 @@ AIDA64 硬件检测
 
 ### 通用
 
-[挖财宝](https://sj.qq.com/appdetail/com.hangzhoucaimi.financial)
+* [挖财宝](https://sj.qq.com/appdetail/com.hangzhoucaimi.financial)
 
 ## 24. 银行类 app
 
-[招商银行](https://sj.qq.com/appdetail/cmb.pb) 以及 [掌上生活](https://sj.qq.com/appdetail/com.cmbchina.ccd.pluto.cmbActivity) 的美观和体验还行
-
-[交通银行](https://sj.qq.com/appdetail/com.bankcomm.Bankcomm) 的 [买单吧](https://sj.qq.com/appdetail/com.bankcomm.maidanba)
-
-[网商银行](https://sj.qq.com/appdetail/com.mybank.android.phone) 可以支付宝提现免费，幸好我抢到资格比较早，但是用处不大
+* [招商银行](https://sj.qq.com/appdetail/cmb.pb)
+* [掌上生活](https://sj.qq.com/appdetail/com.cmbchina.ccd.pluto.cmbActivity) 的美观和体验还行
+* [交通银行](https://sj.qq.com/appdetail/com.bankcomm.Bankcomm)
+* [买单吧](https://sj.qq.com/appdetail/com.bankcomm.maidanba)
+* [网商银行](https://sj.qq.com/appdetail/com.mybank.android.phone) 可以支付宝提现免费，幸好我抢到资格比较早，但是用处不大
 
 not
 
@@ -888,7 +886,8 @@ not
 
 ### iPhone
 
-[美食杰](https://sj.qq.com/appdetail/com.jesson.meishi) 还有个[下厨房](https://sj.qq.com/appdetail/com.xiachufang)应该也不错
+* [美食杰](https://sj.qq.com/appdetail/com.jesson.meishi)
+* [下厨房](https://sj.qq.com/appdetail/com.xiachufang) 应该也不错
 
 ## 29. 媒体工具
 
@@ -933,17 +932,16 @@ APTV
 
 [米家](https://sj.qq.com/appdetail/com.xiaomi.smarthome)
 
-## 36. 考公必备
+## 36. 面试申论
 
 * [学习强国](https://sj.qq.com/appdetail/cn.xuexi.android) 由中共中央宣传部主管的学习平台，它提供了丰富多样的学习资源
 * [半月谈](https://sj.qq.com/appdetail/com.bytxmt.banyuetan) 新华社半月谈出品的公务员公考学习平台，新华社时评员讲申论，公考名师讲行测
 * [新华社](https://sj.qq.com/appdetail/net.xinhuamm.mainclient)
-* [新华网](https://sj.qq.com/appdetail/com.foundao.xinhua_android)
 
 not
 
 * [人民日报](https://sj.qq.com/appdetail/com.peopledailychina.activity) 有广告，所以我不太喜欢
-
+* [新华网](https://sj.qq.com/appdetail/com.foundao.xinhua_android) 开屏有广告
 
 ## 37. 网络检测
 
@@ -992,7 +990,7 @@ Bean's Quest 算是 1 代 和 Bean Dreams 算是 2 代
 
 * link2sd 当年 apk 可以选择安装或者迁移到 sd 卡，现在几乎用不到了
 * vplayer 可变速播放 但是现在基本系统本地播放器已经很强，除非有特殊连接 nas 等设备或者网盘的需求
-* 安全管家 系统内置一般就够了，lbe 安全大师 已过时
+* 安全管家类app 一般系统内置就够了，lbe 安全大师 已过时
 
 ## 回收站
 
@@ -1001,11 +999,9 @@ Bean's Quest 算是 1 代 和 Bean Dreams 算是 2 代
 ## 截图留恋
 
 iPad 截图留恋
-
 ![iPad 截图留恋](/images/收藏-我的硬件/玩转-iOS-设备/1662509-0daad5d880393ba9.png)
 
 备用机 小米 5X 截图留恋
-
 ![5X 截图留恋](/images/收藏-我的硬件/玩转-Android-设备/1662509-3b1988671c31fc11.png '小米 5X')
 
 安卓平板留恋
@@ -1013,7 +1009,4 @@ iPad 截图留恋
 
 ## 软件分享
 
-分享文件 - 小飞机网盘
-https://share.feijipan.com/s/CxBFaIwv
-
-总结了常用的 8 类软件，分别见 `1.0 国家反诈中心`~`1.6 听物` 和 `2 视频` 文件夹
+[App 分享（不定期更新）](https://share.feijipan.com/s/CxBFaIwv)，我总结了常用的 8 类软件，分别见 `1.0 国家反诈中心`~`1.6 听物` 和 `2 视频` 文件夹
