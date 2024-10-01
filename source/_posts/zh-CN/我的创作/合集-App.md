@@ -666,7 +666,7 @@ not
 
 怀旧经典
 
-智器阅读 一款 pdf 阅读器 想当年 当时可以裁掉白边，现在一般安卓系统自带了文档阅读器基本也够用了
+智器阅读 一款 pdf 阅读器 想当年 当时可以裁掉白边
 
 ### iPad
 
@@ -680,7 +680,7 @@ not
 * ——————— ฅ՞• •՞ฅ ———————
 * [WPS](https://sj.qq.com/appdetail/cn.wps.moffice_eng) 可以做到 Office 文档和 PDF 通吃
 * [福昕阅读器](https://sj.qq.com/appdetail/com.foxit.mobile.pdf.lite)
-* Adobe Acrobat Reader 为了获得专业的**阅读 Pdf** 体验, 这款 App 是通用版, 平板也做了适配
+* Adobe Acrobat Reader 为了获得专业的阅读 Pdf体验, 这款 App 是通用版, 平板也做了适配
 
 ## 11. 支付类
 
@@ -957,7 +957,12 @@ not
 2. [WiFiAnalyzer](https://f-droid.org/packages/com.vrem.wifianalyzer/) | [GitHub 源](https://github.com/VREMSoftwareDevelopment/WiFiAnalyzer) 优化您的WiFi网络
 3. [网络百宝箱](https://wap.tplinkcloud.com.cn/appdown/wifitool) TPLINK 出品。为网络工程师、安防工程师、IT 技术支持、工程商、集成商、电信装维等从业人员以及家庭用户提供更高效，更便捷的网络测试功能
 
-## 38. 游戏
+## 38. 服务器运营
+
+* [华为云App](https://www.huaweicloud.com/mobile_app/hwapp.html) 关注云资讯，随时随地管控云服务
+* [阿里云](https://sj.qq.com/appdetail/com.alibaba.aliyun) 随时随地 移动运维 技术干货 学习成长
+
+## 39. 游戏
 
 ### iPhone 和 iPad
 
