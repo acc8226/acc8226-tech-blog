@@ -114,7 +114,7 @@ not
 
 #### 安卓
 
-1. [FBReader](https://fbreader.org/android#download) 一款本地电子书阅读器，同时也支持 pdf
+1. [FBReader](https://fbreader.org/android#download) 一款本地电子书阅读器，但是支持 pdf 需要付费且我也用不到
 2. [番茄免费小说](https://sj.qq.com/appdetail/com.dragon.read) 有的想看的书可以免费离线下载，很好，很适合离线用
 
 可选
@@ -226,7 +226,7 @@ not
 #### 安卓
 
 1. [得到](https://sj.qq.com/appdetail/com.luojilab.player) 非常好
-2. [帆书](https://sj.qq.com/appdetail/io.dushu.fandengreader) 有时会有限免资源
+2. [云听](https://sj.qq.com/appdetail/com.shinyv.cnr) 央视的资源还是很丰富的
 
 可选
 
@@ -234,7 +234,7 @@ not
 * [番茄畅听](https://sj.qq.com/appdetail/com.xs.fm) 免费资源较多 和 番茄免费小说 的部分功能重合了
 * [微信听书](https://sj.qq.com/appdetail/com.tencent.wehear) 活动玩法多，可以换取收听时长
 * [极客时间](https://sj.qq.com/appdetail/org.geekbang.geekTime) 程序员才需要
-* [云听](https://sj.qq.com/appdetail/com.shinyv.cnr) 央视有些资源而已
+* [帆书](https://sj.qq.com/appdetail/io.dushu.fandengreader) 限免资源有点少，且对旧手机有点卡
 
 not
 
@@ -600,13 +600,14 @@ not
 
 可选
 
-* [去哪儿旅行](https://sj.qq.com/appdetail/com.Qunar) 感觉还是去哪儿的票价便宜些 这里由于我没仔细阅读，导致取消订单后重下单付款了 120，长沙金井的老板真黑，我应该提前和他说我第二天早起会退房的，但an 的主要损失还是被无良商户 和 无良信贷中介 和 被 dzha
+* [去哪儿旅行](https://sj.qq.com/appdetail/com.Qunar) 感觉还是去哪儿的票价便宜些 这里由于我没仔细阅读，导致取消订单后重下单付款了 120，长沙金井的老板真黑，我应该提前和他说我第二天早起会退房的，但主要损失还是被无良商户 和 无良信贷中介 和 被 zha
 * [携程旅行](https://sj.qq.com/appdetail/ctrip.android.view)
 * [同程旅行](https://sj.qq.com/appdetail/com.tongcheng.android)
 
 not
 
-[智行火车票](https://sj.qq.com/appdetail/com.yipiao) 不要用第三方
+* 国铁吉迅 广告满天飞，还要用手机号注册，且我以及注册过 12306 了，所以没必要
+*[智行火车票](https://sj.qq.com/appdetail/com.yipiao) 用的还行，不过还是尽量不要用第三方的
 
 官网收录：[飞常准](https://sj.qq.com/appdetail/vz.com) | [去哪儿旅行](https://sj.qq.com/appdetail/com.Qunar) | [同程旅行](https://sj.qq.com/appdetail/com.tongcheng.android) | [航班管家](https://sj.qq.com/appdetail/com.flightmanager.view) | [智行火车票](https://sj.qq.com/appdetail/com.yipiao)
 
@@ -637,8 +638,8 @@ weico 下架了，变成了微博国际板，后面又变成轻享版了，结�
 
 ### aPad
 
-* [微信](https://sj.qq.com/appdetail/com.tencent.mm)
-* [QQ](https://sj.qq.com/appdetail/com.tencent.mobileqq) 都适配了平板
+* [QQ](https://sj.qq.com/appdetail/com.tencent.mobileqq) 标准版也适配了平板
+* [微信](https://sj.qq.com/appdetail/com.tencent.mm) 按需安装
 
 ## 10. 办公类
 
@@ -910,8 +911,11 @@ not
 
 ### 安卓
 
-* IPTV apkpure 版 作者 Alexander Sofronov
 * [央视频](https://sj.qq.com/appdetail/com.cctv.yangshipin.app.androidp)
+
+备用
+
+IPTV apkpure 版 作者 Alexander Sofronov
 
 ### 苹果
 
@@ -926,17 +930,19 @@ APTV
 
 [AlookDLNA](https://alookweb.com/AlookDLNA.apk) 可以投屏到 电视 或者 安卓手机
 
-## 35. 智能家居
+## 35. 设备管理
 
 ### 安卓 和 苹果
 
-[米家](https://sj.qq.com/appdetail/com.xiaomi.smarthome)
+* [米家](https://sj.qq.com/appdetail/com.xiaomi.smarthome)
+* [TP-LINK 物联](https://wap.tplinkcloud.com.cn/appdown) 管理路由器及更多智能设备
+* [贝锐蒲公英户端](https://pgy.oray.com/download/) 向日葵家族，可实现快速组网
 
 ## 36. 面试申论
 
-* [学习强国](https://sj.qq.com/appdetail/cn.xuexi.android) 由中共中央宣传部主管的学习平台，它提供了丰富多样的学习资源
+* [学习强国](https://sj.qq.com/appdetail/cn.xuexi.android) 由中共中央宣传部主管的学习平台，它提供了丰富多样的学习资源，还能看电视，学慕课，听广播
 * [半月谈](https://sj.qq.com/appdetail/com.bytxmt.banyuetan) 新华社半月谈出品的公务员公考学习平台，新华社时评员讲申论，公考名师讲行测
-* [新华社](https://sj.qq.com/appdetail/net.xinhuamm.mainclient)
+* [新华社](https://sj.qq.com/appdetail/net.xinhuamm.mainclient) 旧手机使用有点卡
 
 not
 
@@ -949,6 +955,7 @@ not
 
 1. [泰尔网测](https://sj.qq.com/appdetail/com.knowyou.perception) 用于网速测试 和 查看是哪家宽带
 2. [WiFiAnalyzer](https://f-droid.org/packages/com.vrem.wifianalyzer/) | [GitHub 源](https://github.com/VREMSoftwareDevelopment/WiFiAnalyzer) 优化您的WiFi网络
+3. [网络百宝箱](https://wap.tplinkcloud.com.cn/appdown/wifitool) TPLINK 出品。为网络工程师、安防工程师、IT 技术支持、工程商、集成商、电信装维等从业人员以及家庭用户提供更高效，更便捷的网络测试功能
 
 ## 38. 游戏
 

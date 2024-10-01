@@ -5,7 +5,7 @@ updated: 2022-05-07 09:42:38
 categories: 文本编辑器
 ---
 
-作为一款开箱即用的产物，尽量不做过多额外配置。
+作为一款开箱即用的产物，基本上不用过多额外配置。
 
 ## 设置 vscode 换行符 （\n）
 
@@ -61,9 +61,7 @@ markdownlint
 
 ### Prerequisites
 
-<https://code.visualstudio.com/docs/python/python-tutorial#_prerequisites>
-
-To successfully complete this tutorial, you need to first setup your Python development environment. Specifically, this tutorial requires:
+[prerequisites](https://code.visualstudio.com/docs/python/python-tutorial#_prerequisites). To successfully complete this tutorial, you need to first setup your Python development environment. Specifically, this tutorial requires:
 
 * VS Code
 * VS Code Python extension
@@ -85,7 +83,7 @@ py -3 --version
 
 ### Select a Python interpreter
 
-<https://code.visualstudio.com/docs/python/python-tutorial#_select-a-python-interpreter>
+[Select a Python interpreter](https://code.visualstudio.com/docs/python/python-tutorial#_select-a-python-interpreter)
 
 Python is an interpreted language, and in order to run Python code and get Python IntelliSense, you must tell VS Code which interpreter to use.
 
