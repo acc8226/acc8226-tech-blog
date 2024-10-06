@@ -37,7 +37,7 @@ categories: 我的创作
 * 【mac 官网版】[The Unarchiver](https://theunarchiver.com)
 * liunx 一般用自带的
 
-官网收录：【win】[WinRAR](https://www.winrar.com.cn/) | 【win mac】[Bandizip](https://www.bandisoft.com/bandizip/) | 【win】[7zip](https://7-zip.org/) | 【mac】[FastZip](https://www.better365.cn/fastzip.html) | 【mac】[Keka](https://www.keka.io/en/)
+官网收录：【win】[WinRAR](https://www.winrar.com.cn/) | 【win mac】[Bandizip](https://www.bandisoft.com/bandizip/) | 【win】[7zip](https://7-zip.org) | 【mac】[FastZip](https://www.better365.cn/fastzip.html) | 【mac】[Keka](https://www.keka.io/en)
 
 #### 4. 输入法
 
@@ -51,10 +51,10 @@ categories: 我的创作
 #### 1. 【常用】鼠标手势
 
 * 【win 官网版】[WGestures 1 代](https://www.yingdev.com/projects/wgestures)
-* 【mac 官网版】[betterAndBetter](https://www.better365.cn/bab2.html) 免费且比目前付费的 [WGestures 2 代](https://www.yingdev.com/projects/wgestures2) 更强大，还自带 mac 上需要的翻转鼠标功能，于是我顺便卸载了 [Scroll Reverser](https://pilotmoon.com/scrollreverser/)
+* 【mac 官网版】[betterAndBetter](https://www.better365.cn/bab2.html) 免费且比目前付费的 [WGestures 2 代](https://www.yingdev.com/projects/wgestures2) 更强大，还自带 mac 上需要的翻转鼠标功能，于是我顺便卸载了 [Scroll Reverser](https://pilotmoon.com/scrollreverser)
 * 【linux】KDE 桌面内置了鼠标手势
 
-官网收录：【win】[FastGestures](https://fg.zhaokeli.com/) 鼠标/触控板/屏手势
+官网收录：【win】[FastGestures](https://fg.zhaokeli.com) 鼠标/触控板/屏手势
 
 #### 2. 【常用】键鼠增强
 
@@ -146,15 +146,17 @@ categories: 我的创作
 
 #### 1.【常用】Office
 
-一般品牌笔记本都会赠送微软 Office 套件则够用了
-广大用户还是老老实实【全平台】[WPS](https://www.wps.cn) 需要登录才能解锁基本编辑功能太恶心
-主力我用 【全平台】 [LibreOffice](https://zh-cn.libreoffice.org/download/libreoffice)
+一般品牌笔记本都会赠送[微软 Office](https://www.microsoftstore.com.cn/software/office) 套件
+否则广大用户还是老实试用【全平台】[WPS](https://www.wps.cn) 需要登录才能解锁基本编辑功能太恶心
+主力目前我在用【全平台】 [LibreOffice](https://zh-cn.libreoffice.org/download/libreoffice)
 
 在线平台我推荐[腾讯文档](https://docs.qq.com)和[金山文档](https://www.kdocs.cn)，非常适合文档分享。但千万记得加水印和是设置只读访问权限，防止资料泄漏和被非法买卖。
 
 怀旧经典
 
 WPS 2013
+
+官网收录：【win】[永中 Office](https://www.yozosoft.com)
 
 #### 2.【常用】PDF 文档
 
@@ -235,8 +237,8 @@ not
 
 **windows 平台**
 
-1. 本地播放：【win 官方安装版】PotPlayer [官网](https://potplayer.tv/?lang=zh_CN) | [绿色版](https://potplayer.org) 再搭配 HEVC 解码器 [LAVFilters](https://github.com/Nevcairiel/LAVFilters/releases)
-2. 在线平台：【win】[荐片播放器](https://www.jianpian6.co/) 最新电影，播放器 +【win mac】[哔哩哔哩客户端](https://app.bilibili.com)
+1. 本地播放：[VLC](https://www.videolan.org) /【win 官方安装版】PotPlayer [官网](https://potplayer.tv/?lang=zh_CN) | [绿色版](https://potplayer.org) 再搭配 HEVC 解码器 [LAVFilters](https://github.com/Nevcairiel/LAVFilters/releases)
+2. 在线平台：【win】[荐片播放器](https://www.jianpian6.co/) 可观看最新电影 +【win mac】[哔哩哔哩客户端](https://app.bilibili.com)
 
 官网收录：【win mac】[迅雷影音](https://video.xunlei.com/pc.html) | 【win】[射手影音](https://www.splayer.org/) | 【win mac】[抖音电脑版](https://www.douyin.com) | 【win mac】[爱奇艺客户端](https://www.iqiyi.com/appstore.html) | 【win mac】[腾讯视频客户端](https://v.qq.com/download.html#Windows) | 【win mac】[优酷客户端](https://youku.com/product/index) | 【win mac】[央视影音](https://app.cctv.com)
 
@@ -244,13 +246,9 @@ not
 
 【全平台】[VLC](https://www.videolan.org) /【mac】[INNA](https://iina.io) + 【win mac】[哔哩哔哩客户端](https://app.bilibili.com)
 
-not
-
-【mac】[Fig Player](https://zh.okaapps.com/product/1612400976) 目前似乎还不完善
-
 **linux 平台**
 
-本地播放：【全平台】[vlc](https://www.videolan.org) 或【linux】[haruna](https://haruna.kde.org) 或简洁的 [mpv](https://mpv.io/)
+本地播放：【全平台】[vlc](https://www.videolan.org)
 
 ### 5.【常用】社交类
 
@@ -540,7 +538,7 @@ mac 的腾讯柠檬清理有卸载功能
 not
 
 * 【mac linux】[CCleaner for mac](https://www.ccleaner.com/zh-cn/ccleaner-mac) 版目前免费版功能有限
-* 【mac】[CleanMyMac X](https://www.cleanmymac.cn/) 付费
+* 【mac】[CleanMyMac X](https://www.cleanmymac.cn) 付费
 * 【mac】[app cleaner & unstall](https://nektony.com/mac-app-cleaner) 付费
 
 **linux 平台**
@@ -555,9 +553,9 @@ mac 平台暂时没找到好用的
 
 ### 12. 手机助手
 
-Android 用户可选择 【win】[腾讯应用宝 PC 版](https://sj.qq.com/) /【win】[360 手机助手 PC 版](http://sj.360.cn/index.html)
+Android 用户可选择 【win】[腾讯应用宝 PC 版](https://sj.qq.com) /【win】[360 手机助手 PC 版](http://sj.360.cn/index.html)
 
-iOS 用户可下载【win mac】 [iTunes](https://www.apple.com.cn/itunes/) 或者某国产助手
+iOS 用户可下载【win mac】 [iTunes](https://www.apple.com.cn/itunes) 或者某国产助手
 
 ### 13. 光驱镜像
 
@@ -578,9 +576,9 @@ iOS 用户可下载【win mac】 [iTunes](https://www.apple.com.cn/itunes/) 或�
 
 备用
 
-* 【win 备用】[微 PE 工具箱](https://www.wepe.com.cn/) - 装机维护工具。无广主打纯
-* 【全平台】[balenaEtcher](https://etcher.balena.io/) 还可以烧录树莓派
-* [Raspberry Pi Imager](https://www.raspberrypi.com/for-home/) 树莓派专用烧录到 SD 卡的工具
+* 【win 备用】[微 PE 工具箱](https://www.wepe.com.cn) - 装机维护工具。无广主打纯
+* 【全平台】[balenaEtcher](https://etcher.balena.io) 还可以烧录树莓派
+* [Raspberry Pi Imager](https://www.raspberrypi.com/for-home) 树莓派专用烧录到 SD 卡的工具
 
 not
 
@@ -588,14 +586,14 @@ not
 
 ### 16.微软 buff
 
-* 【win】[微软 Sysinternals](https://learn.microsoft.com/zh-cn/sysinternals/)
-* 【win】[Microsoft PowerToys](https://learn.microsoft.com/zh-cn/windows/powertoys/)
+* 【win】[微软 Sysinternals](https://learn.microsoft.com/zh-cn/sysinternals)
+* 【win】[Microsoft PowerToys](https://learn.microsoft.com/zh-cn/windows/powertoys)
 
 ### 17.效率工具
 
-【跨平台】[Espanso](https://espanso.org/) 一款文字输入增强工具
+【跨平台】[Espanso](https://espanso.org) 一款文字输入增强工具
 
-官网收录：【win】[Quicker](https://getquicker.net/) |【win】[Ditto](https://ditto-cp.sourceforge.io/) 口碑很高的增强剪切板 我感觉不好用 |【win】[Listary](https://www.listary.net/)
+官网收录：【win】[Quicker](https://getquicker.net) |【win】[Ditto](https://ditto-cp.sourceforge.io) 口碑很高的增强剪切板 我感觉不好用 |【win】[Listary](https://www.listary.net/)
 
 ### 18.文件加密
 

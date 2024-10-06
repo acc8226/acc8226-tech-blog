@@ -9,9 +9,9 @@ categories: linux
 
 中科大源、清华源或阿里源可任意选择一。
 
-<https://mirrors.ustc.edu.cn/>
-<https://mirrors.tuna.tsinghua.edu.cn/>
-<https://mirrors.aliyun.com/ubuntu/>
+https://mirrors.ustc.edu.cn
+https://mirrors.tuna.tsinghua.edu.cn
+https://mirrors.aliyun.com/ubuntu
 
 Ubuntu 的软件源配置文件在 `/etc/apt/sources.list`。请将系统自带的该文件做个备份。
 

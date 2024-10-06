@@ -1,5 +1,5 @@
 ---
-title: ahk 学习
+title: ahk 初识
 date: 2024-02-19 15:32:00
 updated: 2024-08-31 17:25:37
 categories: 脚本与自动化

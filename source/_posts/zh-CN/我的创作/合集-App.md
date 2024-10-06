@@ -287,7 +287,7 @@ not
 * [腾讯新闻](https://sj.qq.com/appdetail/com.tencent.news) 有广告
 * [界面新闻](https://sj.qq.com/appdetail/com.jiemian.news) 有广告
 * 微软 start 看新闻用，但不好用
-
+* ——————— ฅ՞• •՞ฅ ———————
 * 安卓平台的 feeder 和 [Agr Reader](https://www.agrreader.xyz/) 不好用只能做备选，看来 rss 阅读器还是苹果平台的 reeder
 
 #### iPhone
@@ -348,13 +348,13 @@ not
 ### iPhone
 
 * [VLC](https://www.videolan.org/vlc/download-ios.html)
-* [芒果 TV](https://sj.qq.com/appdetail/com.hunantv.imgo.activity) 和 优爱腾
+* [芒果 TV](https://sj.qq.com/appdetail/com.hunantv.imgo.activity) 和 优爱腾之类
 * [抖音](https://sj.qq.com/appdetail/com.ss.android.ugc.aweme)
 
 ### iPad
 
 * [VLC](https://www.videolan.org/vlc/download-android.html) (可倍速播放视频)
-* **bilibili** 比较内容丰富
+* 哔哩哔哩 内容较丰富
 
 留存
 
@@ -363,17 +363,22 @@ not
 
 not
 
-爱奇艺 有广告
+爱奇艺 广告有点烦人
 
 ### aPad
 
 * [抖音](https://sj.qq.com/appdetail/com.ss.android.ugc.aweme)【已适配安卓平板】
 * [西瓜视频](https://sj.qq.com/appdetail/com.ss.android.article.video)【已适配安卓平板】
 * [哔哩哔哩 HD](https://sj.qq.com/appdetail/tv.danmaku.bilibilihd)
-* 央视影音 HD
+* [央视频](https://sj.qq.com/appdetail/com.cctv.yangshipin.app.androidp)【已适配安卓平板】
 * [腾讯视频](https://sj.qq.com/appdetail/com.tencent.qqlive)【已适配安卓平板】
 * [爱奇艺 PAD](https://sj.qq.com/appdetail/com.qiyi.video.pad)
 * [芒果TV HD](https://sj.qq.com/appdetail/com.imgo.pad)
+
+not
+
+* 央视影音 HD 适配平板不彻底，还不如央视频
+
 
 ### 安卓盒子
 
@@ -398,7 +403,6 @@ not
 * ——————— ฅ՞• •՞ฅ ———————
 * [菜鸟](https://sj.qq.com/appdetail/com.cainiao.wireless) 好处就是一键查询所有快递
 * [快递 100](https://sj.qq.com/appdetail/com.Kingdee.Express) 查和寄快递
-* [小度音箱](https://sj.qq.com/appdetail/com.baidu.duer.superapp) 硬件绑定的应用，不得不用
 * [QQ 同步助手](https://sj.qq.com/appdetail/com.tencent.qqpim) 同步手机通讯录用 换机只用一次
 
 not
@@ -508,7 +512,7 @@ not
 * [慕课网](https://sj.qq.com/appdetail/cn.com.open.mooc) 主打 IT 课程，且有一部分免费资源可以离线下载
 * [知乎知学堂](https://sj.qq.com/appdetail/com.zhihu.zhixuetang.android) 无广告
 * [希赛网](https://sj.qq.com/appdetail/com.xuesaieducation)
-* [学堂在线](https://sj.qq.com/appdetail/com.xuetangx.mobile) 和 中国 MOOC 也都还行
+* [学堂在线](https://sj.qq.com/appdetail/com.xuetangx.mobile)
 * [中国大学 MOOC](https://sj.qq.com/appdetail/com.netease.edu.ucmooc)
 * [网易云课堂](https://sj.qq.com/appdetail/com.netease.edu.study)
 
@@ -556,7 +560,7 @@ not
 
 备用
 
-* [卢米埃影城 App](https://sj.qq.com/appdetail/com.lumiai.XXXXX) / 小程序 毕竟办过会员卡，不过每年都需要年费 10 元需要进行激活，暂时不用了，不过目前我还有 31 的余额，但想起我浪费了 1 张还是 2 张兑换票我就心疼，可惜过期了
+* 卢米埃影城 [App](https://sj.qq.com/appdetail/com.lumiai.XXXXX) / 小程序 毕竟办过会员卡，不过每年都需要年费 10 元需要进行激活，暂时不用了，不过目前我还有 31 的余额，但想起我浪费了 1 张还是 2 张兑换票我就心疼，可惜过期了
 * [什么值得买](https://sj.qq.com/appdetail/com.smzdm.client.android) 颜值很高且存活了很多年
 
 or
@@ -594,9 +598,9 @@ not
 
 ### 安卓和 iPhone
 
-1. [铁路 12306 app](https://sj.qq.com/appdetail/com.MobileTicket) / 小程序
-2. [格林 app](https://sj.qq.com/appdetail/com.greentree.android) / 小程序 由于当年办了一个金卡会员，虽然很久没用了，但可能有些优惠吧
-3. [飞猪 app](https://sj.qq.com/appdetail/com.taobao.trip) / 小程序
+1. 铁路 12306 [app](https://sj.qq.com/appdetail/com.MobileTicket) / 小程序
+2. 格林 [app](https://sj.qq.com/appdetail/com.greentree.android) / 小程序 由于当年办了一个金卡会员，虽然很久没用了，但可能有些优惠吧
+3. 飞猪 [app](https://sj.qq.com/appdetail/com.taobao.trip) / 小程序
 
 可选
 
@@ -613,15 +617,15 @@ not
 
 ### aPad
 
-[高铁管家](https://sj.qq.com/appdetail/com.gtgj.view) 至少适配了平板
+* [高铁管家](https://sj.qq.com/appdetail/com.gtgj.view) 至少适配了平板
 
 ## 9. 社交类
 
-**不要轻信陌生人的任何行为**
+**注意：不要轻信陌生人的任何话术**
 
 ### 安卓
 
-* [QQ](https://sj.qq.com/appdetail/com.tencent.mobileqq) / [Tim](https://sj.qq.com/appdetail/com.tencent.tim) 比 QQ 小巧，但是据说已经不再更新了
+* [Tim](https://sj.qq.com/appdetail/com.tencent.tim) 比 [QQ](https://sj.qq.com/appdetail/com.tencent.mobileqq) 小巧
 * [微信](https://sj.qq.com/appdetail/com.tencent.mm)
 
 可选
@@ -648,7 +652,7 @@ weico 下架了，变成了微博国际板，后面又变成轻享版了，结�
 * [天眼查 app](https://sj.qq.com/appdetail/com.tianyancha.skyeye) / 小程序 求职中可以**反调公司**，也适用于查询被服务公司，**无良北京丰台万达舒窈瑶国际**
 * ——————— ฅ՞• •՞ฅ ———————
 * [永中 Office](https://sj.qq.com/appdetail/com.yozo.office) 不足百兆且较为清爽
-* [PDF Reader - Hi Read](https://apkpure.com/cn/pdf-reader-pdf-viewer/pdf.reader.pdfviewer.pdfeditor) 有一定的 PDF 编辑器功能，体积小，简单又免费
+* [PDF Reader-Hi Read](https://apkpure.com/cn/pdf-reader-pdf-viewer/pdf.reader.pdfviewer.pdfeditor) 有一定的 PDF 编辑器功能，体积小，简单又免费
 
 可选
 
@@ -660,11 +664,11 @@ weico 下架了，变成了微博国际板，后面又变成轻享版了，结�
 
 not
 
-* LibreOffice Viewer - [Google Play 上的应用](https://play.google.com/store/apps/details?id=org.documentfoundation.libreoffice) | [F-Droid - Free and Open Source Android App Repository](https://f-droid.org/packages/org.documentfoundation.libreoffice/) 功能不太完善
+* LibreOffice Viewer [Google Play 上的应用](https://play.google.com/store/apps/details?id=org.documentfoundation.libreoffice) | [F-Droid - Free and Open Source Android App Repository](https://f-droid.org/packages/org.documentfoundation.libreoffice/) 功能不太完善
 * [WPS Office](https://sj.qq.com/appdetail/cn.wps.moffice_eng) 功能强大但是不够清爽，杂七杂八内容太多
 * Polaris Office 北极星办公 其中安卓版本不是最新版不能用
 
-怀旧经典
+**怀旧经典**
 
 智器阅读 一款 pdf 阅读器 想当年 当时可以裁掉白边
 
@@ -726,8 +730,8 @@ not
 ## 14. 应用商店类
 
 * [腾讯应用宝](https://sj.qq.com/)-全网最新最热手机应用游戏下载
-* [国际服游戏下载-GamesToday](https://www.hotplaygames.com/)
-* [apkpure](https://apkpure.com/cn/) 一个有国外的应用商店 需魔法
+* [国际服游戏下载-GamesToday](https://www.hotplaygames.com)
+* [apkpure](https://apkpure.com/cn) 一个有国外的应用商店 需魔法
 * [Uptodown](en.uptodown.com) 一个有国外的应用商店 需魔法
 
 备用
@@ -803,7 +807,7 @@ not
 
 not
 
-* [文心一言](https://sj.qq.com/appdetail/com.baidu.newapp) 审核不过是什么玩意
+* [文心一言](https://sj.qq.com/appdetail/com.baidu.newapp) 个人体审核不过是什么玩意
 * [讯飞星火](https://sj.qq.com/appdetail/com.iflytek.spark) 感觉还差点意思
 
 ## 19. 智能家居
@@ -830,7 +834,7 @@ AIDA64 硬件检测
 
 ### 通用
 
-* [**粉笔**](https://sj.qq.com/appdetail/com.fenbi.android.servant) 公考、教师、法考、考研、建造、会计考试的提分利器
+* [粉笔](https://sj.qq.com/appdetail/com.fenbi.android.servant) 公考、教师、法考、考研、建造、会计考试的提分利器
 * [疯狂刷题](https://sj.qq.com/appdetail/com.yaerxing.fkst) 汇聚大量包括了直至大学、考研优题、真题、好题
 
 ### aPad
@@ -890,7 +894,7 @@ not
 * [美食杰](https://sj.qq.com/appdetail/com.jesson.meishi)
 * [下厨房](https://sj.qq.com/appdetail/com.xiachufang) 应该也不错
 
-## 29. 媒体工具
+## 29. 新媒体运营
 
 ### 通用
 
@@ -937,6 +941,7 @@ APTV
 * [米家](https://sj.qq.com/appdetail/com.xiaomi.smarthome)
 * [TP-LINK 物联](https://wap.tplinkcloud.com.cn/appdown) 管理路由器及更多智能设备
 * [贝锐蒲公英户端](https://pgy.oray.com/download/) 向日葵家族，可实现快速组网
+* [小度](https://sj.qq.com/appdetail/com.baidu.duer.superapp) 小度打造的一款智能助手APP，能够连接多款百度旗下智能设备及合作设备，不得不用
 
 ## 36. 面试申论
 
@@ -1011,13 +1016,13 @@ Bean's Quest 算是 1 代 和 Bean Dreams 算是 2 代
 ## 截图留恋
 
 iPad 截图留恋
-![iPad 截图留恋](/images/收藏-我的硬件/玩转-iOS-设备/1662509-0daad5d880393ba9.png)
+![iPad 截图留恋](/images/收藏-我的硬件/玩转-iOS-设备/1662509-0daad5d880393ba9.png 'iPad mini1')
 
 备用机 小米 5X 截图留恋
 ![5X 截图留恋](/images/收藏-我的硬件/玩转-Android-设备/1662509-3b1988671c31fc11.png '小米 5X')
 
 安卓平板留恋
-![安卓平板留恋](./aPad.jpg)
+![安卓平板留恋](./aPad.jpg 'vivo pad 1代')
 
 ## 软件分享
 
