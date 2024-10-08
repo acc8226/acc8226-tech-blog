@@ -20,7 +20,7 @@ settingLanguage := RegRead(REG_KEY_NAME, REG_LANG, 'zh-cn')
 
 在 lang 文件夹下新增国际化 ini 文件
 
-zh-cn.ini
+zh-Hans.ini
 
 ```ini
 [Tray]
@@ -47,7 +47,9 @@ switchLang=🌏语言
 exit=退出(&X)
 ```
 
-en-us.ini
+<!-- more -->
+
+en.ini
 
 ```ini
 [Tray]

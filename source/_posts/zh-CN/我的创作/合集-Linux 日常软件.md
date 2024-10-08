@@ -11,13 +11,17 @@ categories: 我的创作
 
 打包
 
+```sh
 rm -rf html.zip && zip -q -r html.zip *
+```
 
 ### tar
 
 打包
 
+```sh
 rm -rf html.tar.gz && tar czvf html.tar.gz *
+```
 
 ## 拓展软件使用
 
