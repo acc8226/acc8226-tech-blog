@@ -1,5 +1,5 @@
 ---
-title: 合集-kodi 使用
+title: 合集-kodi 和直播软件的使用
 date: 2024-08-23 10:52:50
 updated: 2024-08-26 09:00:06
 categories: 我的创作
@@ -10,9 +10,7 @@ categories: 我的创作
 wtv 工具箱- 检测直播源的可用性和速度
 作者的博客 [一个橙子,软件开发,软件制作,软件运维,软件推荐|www.yigechengzi.com](https://yigechengzi.com/)
 
-工具
-M3U 列表格式转换 - 黑鸟博客
-https://guihet.com/convert-m3u-js.html
+[M3U 列表格式转换](https://guihet.com/convert-m3u-js.html) - 黑鸟博客
 
 直播源
 
@@ -28,7 +26,9 @@ https://guihet.com/convert-m3u-js.html
 安卓 tv 版
 [我的电视（MY TV）](https://lyrics.run/my-tv.html)-[lizongying (李宗英)](https://github.com/lizongying)
 
-默认登录用户和密码为：root/libreelec
+<!-- more -->
+
+libreelec 系统的默认登录用户和密码为：root/libreelec
 
 ```sh
 ssh root@LibreELEC
@@ -38,7 +38,6 @@ ssh root@LibreELEC
 
 TVBOX 系列是一款在 Github 上开源的视频播放软件，其前身就是之前很火的猫影视TV，延续了猫影视采用的「套壳」与「视频源」分离的结构形式；作者将TVbox开源后，很快受到了众多创作者的关注。此后，以TVbox为参照的各种 TVbox 改版，开始陆续发布上线。
 
-o0HalfLife0o/TVBoxOSC
 https://github.com/o0HalfLife0o/TVBoxOSC | [releases](https://github.com/o0HalfLife0o/TVBoxOSC/releases)
 
 接口

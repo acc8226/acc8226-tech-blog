@@ -1,7 +1,7 @@
 ---
 title: 合集-App
 date: 2017-04-13 22:07:33
-updated: 2024-08-01 10:00:42
+updated: 2024-10-09 10:34:34
 categories: 我的创作
 ---
 
@@ -12,15 +12,13 @@ categories: 我的创作
 
 ## 前言
 
-### 安卓还是 iOS
+### 安卓还是 iOS、鸿蒙
 
-或者是现在火热的鸿蒙
-
-如果只考虑必要需求，现阶段低于 2000 选安卓手机，且一般建议有手机后才考虑买平板
+如果只考虑必要需求，现阶段低于 2000 选安卓手机
 
 ### 手机还是平板
 
-平板的大屏幕大扬声器拥有更好的体验。
+一般建议有手机后才考虑买平板。平板会有良好的影音体验。
 
 * 看视频、漫画更爽
 * 阅读 PDF、小说更方便
@@ -29,7 +27,7 @@ categories: 我的创作
 
 <!-- more -->
 
-关于价格：3000 以上预算请无脑选 iPad，2000~3000 综合考虑买 iPad 还是安卓平板，2000 一下只推荐买安卓平板
+关于价格：3000 以上预算请无脑选 iPad，2000~3000 综合考虑买 iPad 还是安卓平板，2000 以下只推荐购买安卓平板。
 
 ### 怎么挑选平板 Pad App
 
@@ -56,7 +54,7 @@ categories: 我的创作
 
 [国家反诈中心](https://sj.qq.com/appdetail/com.hicorenational.antifraud) 作为装机必备！
 
-设置电信防骚扰，电信用户可以设置天翼防骚扰 一般微信上关注公众号就够用，移动和联通也有对应的公众号关注后可以屏蔽国外来电
+设置电信防骚扰，电信用户可以设置天翼防骚扰 一般微信上关注公众号就够用，移动和联通也有对应的公众号关注后可以屏蔽国外来电。
 iPhone 用户则必须安装其中一个，防诈骗和无良商家骗取钱财。
 
 #### 安卓
@@ -99,11 +97,11 @@ not
 
 #### 通用
 
-Aqua Mail [官网](https://www.aqua-mail.com) | [play 版](https://play.google.com/store/apps/details?id=org.kman.AquaMail) | [apkpure 版](https://apkpure.com/cn/email-aqua-mail-fast-secure/org.kman.AquaMail) 简单清爽
+Aqua Mail [官网](https://www.aqua-mail.com) | [Google play 版](https://play.google.com/store/apps/details?id=org.kman.AquaMail) | [apkpure 版](https://apkpure.com/cn/email-aqua-mail-fast-secure/org.kman.AquaMail) 简单清爽
 
 备用
 
-* readdle 家华丽的 [Spark](https://sparkmailapp.com/zh)【已适配安卓平板】
+* [Spark](https://sparkmailapp.com/zh)【已适配安卓平板】readdle 家的华丽邮箱客户端
 * [网易邮箱大师](https://sj.qq.com/appdetail/com.netease.mail) 操作上我更偏爱 QQ 邮箱一些
 
 not
@@ -119,10 +117,10 @@ not
 
 可选
 
-* 本地+在线 [阅读](https://github.com/gedoor/legado) + [tts-server](https://jing332.lanzn.com/b09jpjd2d)
+* [阅读](https://github.com/gedoor/legado) + [tts-server](https://jing332.lanzn.com/b09jpjd2d) 本地+在线用
 * [静读天下](http://www.moondownload.com/download.html) 免费版有广告
 * ——————— ฅ՞• •՞ฅ ———————
-* 正版在线 [微信读书](https://sj.qq.com/appdetail/com.tencent.weread) 除了现在很多内容收费了
+* [微信读书](https://sj.qq.com/appdetail/com.tencent.weread) 正版在线用，除了现在很多内容收费了
 * [京东读书](https://sj.qq.com/appdetail/com.jd.app.reader) 送了影响力 和 乌合之众几本书，可以看一段时间
 * [网易蜗牛阅读](https://sj.qq.com/appdetail/com.netease.snailread) 每天可以免费看 1 个小时付费书籍
 
@@ -180,10 +178,8 @@ not
 * AIMP 音乐 太简陋
 * [飞傲音乐](https://sj.qq.com/appdetail/com.fiio.music) 界面适配不完善
 * ——————— ฅ՞• •՞ฅ ———————
+* [QQ 音乐](https://sj.qq.com/appdetail/com.tencent.qqmusic) | [酷狗音乐](https://sj.qq.com/appdetail/com.kugou.android) | [酷我音乐](https://sj.qq.com/appdetail/cn.kuwo.player) 除了要开会员
 * [网易云](https://sj.qq.com/appdetail/com.netease.cloudmusic) 广告太多且内容太多
-* [QQ 音乐](https://sj.qq.com/appdetail/com.tencent.qqmusic) 比某抑云的广告少太多，资源也算丰富
-* [酷狗音乐](https://sj.qq.com/appdetail/com.kugou.android) 和 酷我 差一点意思
-* [酷我音乐](https://sj.qq.com/appdetail/cn.kuwo.player) 和 酷狗 差一点意思
 * [爱音乐](https://sj.qq.com/appdetail/com.gwsoft.imusic.controller) 不好用，现在周杰伦的歌都没了，也不知道以前有没有
 * [汽水音乐](https://sj.qq.com/appdetail/com.luna.music) 体验还行，对免费用户不太友好
 * ——————— ฅ՞• •՞ฅ ———————
@@ -211,7 +207,8 @@ not
 
 #### aPad（安卓平板）
 
-[网易云音乐](https://sj.qq.com/appdetail/com.netease.cloudmusic)【已适配安卓平板】日常有开屏广告
+* [酷狗音乐](https://sj.qq.com/appdetail/com.kugou.android) 通用版，已适配平板
+* [网易云音乐](https://sj.qq.com/appdetail/com.netease.cloudmusic) 通用版，已适配平板，日常有开屏广告
 
 备用
 
@@ -235,6 +232,7 @@ not
 * [微信听书](https://sj.qq.com/appdetail/com.tencent.wehear) 活动玩法多，可以换取收听时长
 * [极客时间](https://sj.qq.com/appdetail/org.geekbang.geekTime) 程序员才需要
 * [帆书](https://sj.qq.com/appdetail/io.dushu.fandengreader) 限免资源有点少，且对旧手机有点卡
+* [喜马拉雅](https://sj.qq.com/appdetail/com.ximalaya.ting.android) 有些广告
 
 not
 
@@ -265,7 +263,7 @@ not
 
 [倒数日 · Days Matter](https://app.ipad.ly/idays) 倒计时神器, 还有各种纪念日提醒。多端同步，除了苹果端，还支持安卓端还有手表端
 
-### 8. 新闻
+### 8. 资讯类
 
 #### 安卓
 
@@ -274,19 +272,26 @@ not
 
 备用
 
-* [简讯](https://sj.qq.com/appdetail/com.tipsoon.android) 浅阅读：一款主张利用极短的碎片时间涉猎全行业领域的浅阅读产品
-* [红板报](https://sj.qq.com/appdetail/flipboard.cn)
-* [ZAKER](https://sj.qq.com/appdetail/com.myzaker.ZAKER_Phone) 看新闻
-* [今日头条](https://sj.qq.com/appdetail/com.ss.android.article.news)，安卓版的有广告。 话说 iPhone 的付费版的倒是可以考虑。我一般很少关注外界，这得改呀，央视 315 这种节目就很好
+* [知乎日报](https://sj.qq.com/appdetail/com.zhihu.daily.android) 精选高质量资讯
+* [简讯](https://sj.qq.com/appdetail/com.tipsoon.android) 一款主张利用极短的碎片时间涉猎全行业领域的浅阅读产品
+* ——————— ฅ՞• •՞ฅ ———————
+* [红板报](https://sj.qq.com/appdetail/flipboard.cn) 聚合资讯类
 * [今日热榜](https://tophub.today/app) 能看新闻，但是我部分情况下把它当初类 rss 收集器
+* ——————— ฅ՞• •՞ฅ ———————
+* [新周刊](https://sj.qq.com/appdetail/com.newsweekly.livepi) 交互做得很好，也有质量
+* ——————— ฅ՞• •՞ฅ ———————
+* [IT之家](https://sj.qq.com/appdetail/com.ruanmei.ithome) 精选泛科技新闻，即时分享行业新闻动态
+* [汽车之家](https://sj.qq.com/appdetail/com.cubic.autohome) 汽车资讯论坛
 
 not
 
-* [喜马拉雅](https://sj.qq.com/appdetail/com.ximalaya.ting.android) 有些广告
+* [今日头条](https://sj.qq.com/appdetail/com.ss.android.article.news) 安卓版的有广告。 话说 iPhone 的付费版的倒是可以考虑
+* [ZAKER](https://sj.qq.com/appdetail/com.myzaker.ZAKER_Phone) 有了些广告
+* 微软 start 看新闻用，但不好用
+* ——————— ฅ՞• •՞ฅ ———————
 * [央视新闻](https://sj.qq.com/appdetail/cn.cntvnews) 界面不太喜欢
 * [腾讯新闻](https://sj.qq.com/appdetail/com.tencent.news) 有广告
 * [界面新闻](https://sj.qq.com/appdetail/com.jiemian.news) 有广告
-* 微软 start 看新闻用，但不好用
 * ——————— ฅ՞• •՞ฅ ———————
 * 安卓平台的 feeder 和 [Agr Reader](https://www.agrreader.xyz/) 不好用只能做备选，看来 rss 阅读器还是苹果平台的 reeder
 
@@ -306,6 +311,10 @@ not
 not
 
 今天头条竟然有点卡
+
+#### aPad（安卓平板）
+
+我从 vivo pad 导出的原子阅读 简直完美
 
 ## 2. 视频类【常用】
 
@@ -779,8 +788,8 @@ not
 
 ### aPad
 
-* [Edge](https://sj.qq.com/appdetail/com.microsoft.emmx)
-* [火狐浏览器](https://sj.qq.com/appdetail/org.mozilla.firefox)
+* [Edge](https://sj.qq.com/appdetail/com.microsoft.emmx) 通用版，已适配平板
+* [火狐浏览器](https://sj.qq.com/appdetail/org.mozilla.firefox) 通用版，已适配平板
 * UC 浏览器国际版
 
 not
@@ -791,7 +800,7 @@ not
 
 ### 通用
 
-* [知乎](https://sj.qq.com/appdetail/com.zhihu.android) 有广告但是可以得盐粒
+* [知乎](https://sj.qq.com/appdetail/com.zhihu.android) 广告不明显，还可以得盐粒 | [知乎极速版](https://sj.qq.com/appdetail/com.zhihu.android.lite) 算是做得很好的极速版，无广告无圆环挑战可以选择
 * [豆瓣](https://sj.qq.com/appdetail/com.douban.frodo) 不是很喜欢
 * [小红书](https://sj.qq.com/appdetail/com.xingin.xhs)
 
@@ -830,16 +839,17 @@ AIDA64 硬件检测
 
 [LocalSend](https://localsend.org/) Share files to nearby devices
 
-## 22. 刷题
+## 22. 考公考编
 
 ### 通用
 
 * [粉笔](https://sj.qq.com/appdetail/com.fenbi.android.servant) 公考、教师、法考、考研、建造、会计考试的提分利器
+* [高途公考](https://sj.qq.com/appdetail/com.gaotu100.gongkao) 致力于服务备考公务员、事业单位、央国企和军队文职的学员
 * [疯狂刷题](https://sj.qq.com/appdetail/com.yaerxing.fkst) 汇聚大量包括了直至大学、考研优题、真题、好题
 
 ### aPad
 
-* [**粉笔**](https://sj.qq.com/appdetail/com.fenbi.android.servant) 公考、教师、法考、考研、建造、会计考试的提分利器
+* [粉笔](https://sj.qq.com/appdetail/com.fenbi.android.servant) 公考、教师、法考、考研、建造、会计考试的提分利器
 
 ## 23. 投资理财类
 
@@ -915,7 +925,7 @@ not
 
 ### 安卓
 
-* [央视频](https://sj.qq.com/appdetail/com.cctv.yangshipin.app.androidp)
+[央视频](https://sj.qq.com/appdetail/com.cctv.yangshipin.app.androidp)
 
 备用
 
@@ -943,7 +953,7 @@ APTV
 * [贝锐蒲公英户端](https://pgy.oray.com/download/) 向日葵家族，可实现快速组网
 * [小度](https://sj.qq.com/appdetail/com.baidu.duer.superapp) 小度打造的一款智能助手APP，能够连接多款百度旗下智能设备及合作设备，不得不用
 
-## 36. 面试申论
+## 36. 政治学习
 
 * [学习强国](https://sj.qq.com/appdetail/cn.xuexi.android) 由中共中央宣传部主管的学习平台，它提供了丰富多样的学习资源，还能看电视，学慕课，听广播
 * [半月谈](https://sj.qq.com/appdetail/com.bytxmt.banyuetan) 新华社半月谈出品的公务员公考学习平台，新华社时评员讲申论，公考名师讲行测
