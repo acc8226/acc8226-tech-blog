@@ -32,7 +32,7 @@ categories: 我的创作
 
 <!-- more -->
 
-官网收录：【win】[搜狗浏览器](https://sogou.browser.qq.com) |【win】[猎豹浏览器](https://www.liebao.cn) |【全平台】[360 浏览器](https://browser.360.cn) |【win mac】[QQ 浏览器](https://browser.qq.com) |【全平台】[Edge](https://www.microsoft.com/zh-cn/edge) |【全平台】[Opera](https://www.opera.com/zh-cn) |【全平台】[Chrome](https://www.google.cn/intl/zh-CN/chrome) |【win mac】[傲游浏览器](https://www.maxthon.cn) | [Vivaldi](https://vivaldi.com) | [百分浏览器](http://www.centbrowser.cn)
+官网收录：【win】[搜狗浏览器](https://sogou.browser.qq.com) |【win】[猎豹浏览器](https://www.liebao.cn) |【全平台】[360 安全浏览器](https://browser.360.cn) |【win mac】[QQ 浏览器](https://browser.qq.com) |【全平台】[微软 Edge](https://www.microsoft.com/zh-cn/edge) |【全平台】[Opera](https://www.opera.com/zh-cn) |【全平台】[谷歌 Chrome 浏览器](https://www.google.cn/intl/zh-CN/chrome) |【win mac】[傲游浏览器](https://www.maxthon.cn) | [Vivaldi](https://vivaldi.com) |【win】[百分浏览器](http://www.centbrowser.cn)
 
 #### 3. 压缩解压
 
@@ -714,7 +714,7 @@ not
 * 【win 安装版】[格式工厂](http://www.pcgeshi.com/index.html) 全功能转换
 * 【全平台】[HandBrake](https://handbrake.fr/) 视频转换
 
-官网收录：mac】[即刻转换](https://zh.okaapps.com/product/1637557903)
+官网收录：【mac】[即刻转换](https://zh.okaapps.com/product/1637557903)
 
 ### 06. 包管理器 或 应用商店
 
@@ -725,7 +725,7 @@ not
 * 【win】[Scoop](https://scoop.sh/)
 * 【win】[winget](https://learn.microsoft.com/zh-cn/windows/package-manager/winget/) 微软家，属于系统内置
 * 【win】[Chocolatey](https://chocolatey.org/) - the package manager for Windows
-* [sdkman](https://sdkman.io/)
+* [sdkman](https://sdkman.io)
 
 ## 游戏
 
@@ -735,8 +735,8 @@ not
 
 not
 
-* 【win mac】[奇游加速器](https://www.qiyou.cn/) 太贵
-* 【win mac】[uu 加速器](https://uu.163.com/) 太贵
+* 【win mac】[奇游加速器](https://www.qiyou.cn) 太贵
+* 【win mac】[uu 加速器](https://uu.163.com) 太贵
 * 【win】[迅游网游加速器](https://www.xunyou.com/index.shtml) 太贵了
 
 ## 留观中

@@ -162,19 +162,20 @@ not
 
 #### 安卓
 
-1. 在线 [LX Music 洛雪音乐助手](https://github.com/lyswhut/lx-music-mobile/releases/) 作为 Spotify 的替代品，我一般很少用，因为同步歌单是个问题
-2. 本地 [椒盐音乐(Salt Player)](https://www.coolapk.com/apk/284064) + [海贝音乐](https://sj.qq.com/appdetail/com.hiby.music) 用于在线下载歌词
+1. 本地 [椒盐音乐 Salt Player](https://www.coolapk.com/apk/284064)
+2. 在线 [LX Music 洛雪音乐助手](https://github.com/lyswhut/lx-music-mobile/releases) 作为 Spotify 的替代品，我一般很少用，因为同步歌单是个问题
 
 可选
 
-1. [全民 K 歌](https://sj.qq.com/appdetail/com.tencent.karaoke) k 歌软件暂定它了
-2. [Spotify](https://www.spotify.com/) 需要魔法 和 不开会员也啥歌能听
-3. [咪咕音乐](https://sj.qq.com/appdetail/cmccwm.mobilemusic) 其中极速版可以免费听 1 年，但是之后呢
-4. [普听音乐](https://music.codepublic.top/) 由于搭配阿里云盘有新玩法，适合高级用户
+1. 本地 [海贝音乐](https://sj.qq.com/appdetail/com.hiby.music) 一个本地音乐播放器，也用于在线下载歌词
+2. 在线 [Spotify](https://www.spotify.com) 需要魔法 和 不开会员也啥歌能听
+3. 在线 [咪咕音乐](https://sj.qq.com/appdetail/cmccwm.mobilemusic) 其中极速版可以免费听 1 年，但是之后呢
+4. 在线 [普听音乐](https://music.codepublic.top) 由于搭配阿里云盘有新玩法，适合高级用户
+5. [全民 K 歌](https://sj.qq.com/appdetail/com.tencent.karaoke) k 歌软件暂定它了
 
 not
 
-* [Musicolet](https://krosbits.in/musicolet/) 本地音乐
+* [Musicolet](https://krosbits.in/musicolet) 本地音乐
 * AIMP 音乐 太简陋
 * [飞傲音乐](https://sj.qq.com/appdetail/com.fiio.music) 界面适配不完善
 * ——————— ฅ՞• •՞ฅ ———————
@@ -195,7 +196,7 @@ not
 
 #### iPhone
 
-[Spotify](https://www.spotify.com/)
+[Spotify](https://www.spotify.com)
 
 留存
 
@@ -212,7 +213,7 @@ not
 
 备用
 
-[Spotify](https://www.spotify.com/) 虽然内容为王，但是不一定能访问
+[Spotify](https://www.spotify.com) 虽然内容为王，但是不一定能访问
 
 not
 
@@ -224,14 +225,14 @@ not
 
 1. [得到](https://sj.qq.com/appdetail/com.luojilab.player) 非常好
 2. [云听](https://sj.qq.com/appdetail/com.shinyv.cnr) 央视的资源还是很丰富的
+3. [帆书（原樊登读书）](https://sj.qq.com/appdetail/io.dushu.fandengreader) 稍有限免资源，但旧手机有点卡
 
 可选
 
 * [讯飞有声](https://sj.qq.com/appdetail/com.iflytek.readassistant) 难得的免费收听时长的可听本地图书和 pdf、doc、mobi 的 app，是目前的一个较好的方案
-* [番茄畅听](https://sj.qq.com/appdetail/com.xs.fm) 免费资源较多 和 番茄免费小说 的部分功能重合了
+* [番茄畅听](https://sj.qq.com/appdetail/com.xs.fm) 免费资源较多，和番茄免费小说部分功能重合了
 * [微信听书](https://sj.qq.com/appdetail/com.tencent.wehear) 活动玩法多，可以换取收听时长
 * [极客时间](https://sj.qq.com/appdetail/org.geekbang.geekTime) 程序员才需要
-* [帆书](https://sj.qq.com/appdetail/io.dushu.fandengreader) 限免资源有点少，且对旧手机有点卡
 * [喜马拉雅](https://sj.qq.com/appdetail/com.ximalaya.ting.android) 有些广告
 
 not
@@ -293,7 +294,7 @@ not
 * [腾讯新闻](https://sj.qq.com/appdetail/com.tencent.news) 有广告
 * [界面新闻](https://sj.qq.com/appdetail/com.jiemian.news) 有广告
 * ——————— ฅ՞• •՞ฅ ———————
-* 安卓平台的 feeder 和 [Agr Reader](https://www.agrreader.xyz/) 不好用只能做备选，看来 rss 阅读器还是苹果平台的 reeder
+* 安卓平台的 feeder 和 [Agr Reader](https://www.agrreader.xyz) 不好用只能做备选，看来 rss 阅读器还是苹果平台的 reeder
 
 #### iPhone
 
@@ -327,7 +328,7 @@ not
 
 * 本地 [VLC](https://www.videolan.org/vlc/download-android.html)
 * ——————— ฅ՞• •՞ฅ ———————
-* [NewPipe](https://newpipe.net/) - a free YouTube client 太过于简洁
+* [NewPipe](https://newpipe.net) - a free YouTube client 太过于简洁
 * ——————— ฅ՞• •՞ฅ ———————
 * [抖音](https://sj.qq.com/appdetail/com.ss.android.ugc.aweme) 稍有广告，同时它又是个超级 app，生活、超市、优惠、直播和团购都有
 * ——————— ฅ՞• •՞ฅ ———————
@@ -395,7 +396,7 @@ not
 
 not
 
-[泰捷视频](https://www.51togic.com/%e6%b3%b0%e6%8d%b7%e8%a7%86%e9%a2%91/)
+* [泰捷视频](https://www.51togic.com/%e6%b3%b0%e6%8d%b7%e8%a7%86%e9%a2%91)
 
 ## 3. 工具【常用】
 
@@ -416,7 +417,7 @@ not
 
 not
 
-* [es 文件浏览器](http://www.estrongs.com/) 由于我习惯了猫头鹰文件，这个不开会员还有广告
+* [es 文件浏览器](http://www.estrongs.com) 由于我习惯了猫头鹰文件，这个不开会员还有广告
 * ——————— ฅ՞• •՞ฅ ———————
 * [纯纯写作](https://sj.qq.com/appdetail/com.drakeet.purewriter) 很好用，但是收费版才好用就算了
 * [快递 100](https://sj.qq.com/appdetail/com.Kingdee.Express) 最近寄快递选【德邦】确实便宜写，不过**体积和重量**是按两者最大的来，情有可原吧。第一次用快递 100 我领了一个 5 月的优惠券，感觉还行，一般足够用
@@ -447,12 +448,12 @@ not
 
 ### aPad
 
-* [猫头鹰文件](https://www.skyjos.cn/owlfiles/index.html) 适配了平板
-* [微信输入法](https://sj.qq.com/appdetail/com.tencent.wetype)
+* [猫头鹰文件](https://www.skyjos.cn/owlfiles/index.html) 通用版【已适配平板】
+* [微信输入法](https://sj.qq.com/appdetail/com.tencent.wetype) 通用版【已适配平板】
 
 not
 
-[ES 文件管理器](http://www.estrongs.com/) 适配了平板但是有广告，还是 猫头鹰 用的更舒服
+[ES 文件管理器](http://www.estrongs.com) 通用版【已适配平板】但有广告
 
 ## 4. 购物
 
@@ -491,9 +492,9 @@ not
 
 ### aPad
 
-* [高德地图](https://sj.qq.com/appdetail/com.autonavi.minimap)
-* [腾讯地图](https://sj.qq.com/appdetail/com.tencent.map)
-* [百度地图](https://sj.qq.com/appdetail/com.baidu.BaiduMap) 都适配了平板
+* [高德地图](https://sj.qq.com/appdetail/com.autonavi.minimap) 通用版【已适配平板】
+* [腾讯地图](https://sj.qq.com/appdetail/com.tencent.map) 通用版【已适配平板】
+* [百度地图](https://sj.qq.com/appdetail/com.baidu.BaiduMap) 通用版【已适配平板】
 
 ## 6. education 教育
 
@@ -554,10 +555,10 @@ not
 
 ### aPad
 
-* [每日英语听力](https://sj.qq.com/appdetail/com.qianyan2.ting.en)
+* [每日英语听力](https://sj.qq.com/appdetail/com.qianyan2.ting.en) 通用版【已适配平板】
 * [每日英语阅读](https://sj.qq.com/appdetail/lexue.mryyyd)
 * [欧路词典](https://sj.qq.com/appdetail/com.eusoft.eudic)
-* [不背单词](https://sj.qq.com/appdetail/cn.com.langeasy.LangEasyLexis) 甚至适配了平板
+* [不背单词](https://sj.qq.com/appdetail/cn.com.langeasy.LangEasyLexis) 通用版【已适配平板】
 
 ## 7. 生活类
 
@@ -651,8 +652,8 @@ weico 下架了，变成了微博国际板，后面又变成轻享版了，结�
 
 ### aPad
 
-* [QQ](https://sj.qq.com/appdetail/com.tencent.mobileqq) 标准版也适配了平板
-* [微信](https://sj.qq.com/appdetail/com.tencent.mm) 按需安装
+* [QQ](https://sj.qq.com/appdetail/com.tencent.mobileqq) 通用版【已适配平板】
+* [微信](https://sj.qq.com/appdetail/com.tencent.mm) 请按需安装
 
 ## 10. 办公类
 
@@ -673,7 +674,7 @@ weico 下架了，变成了微博国际板，后面又变成轻享版了，结�
 
 not
 
-* LibreOffice Viewer [Google Play 上的应用](https://play.google.com/store/apps/details?id=org.documentfoundation.libreoffice) | [F-Droid - Free and Open Source Android App Repository](https://f-droid.org/packages/org.documentfoundation.libreoffice/) 功能不太完善
+* LibreOffice Viewer [Google Play 上的应用](https://play.google.com/store/apps/details?id=org.documentfoundation.libreoffice) | [F-Droid - Free and Open Source Android App Repository](https://f-droid.org/packages/org.documentfoundation.libreoffice) 功能不太完善
 * [WPS Office](https://sj.qq.com/appdetail/cn.wps.moffice_eng) 功能强大但是不够清爽，杂七杂八内容太多
 * Polaris Office 北极星办公 其中安卓版本不是最新版不能用
 
@@ -712,7 +713,7 @@ not
 ### 安卓/iPhone
 
 1. [坚果云](https://sj.qq.com/appdetail/nutstore.android) 同步文档用
-2. [小飞机网盘](https://www.feijipan.com/) 分享用
+2. [小飞机网盘](https://www.feijipan.com) 分享用
 3. [阿里云盘](https://sj.qq.com/appdetail/com.alicloud.databox) 功能很多，且不太限速，但是非会员不能看超清适配，但是可以搭配猫头鹰文件
 4. [PikPak](https://mypikpak.com/zh-CN) 免费用户总共 6GB，每天可以添加 3 个离线任务还是不错的
 
@@ -720,7 +721,7 @@ not
 
 * [百度网盘](https://sj.qq.com/appdetail/com.baidu.netdisk) 720p 视频限免播放，且空间够大
 * [123 云盘](https://sj.qq.com/appdetail/com.mfcloudcalculate.networkdisk) app 内都是广告
-* [文叔叔](https://www.wenshushu.cn/) 匿名分享盘，现在依旧被小飞机取代
+* [文叔叔](https://www.wenshushu.cn) 匿名分享盘，现在依旧被小飞机取代
 * [天翼云](https://sj.qq.com/appdetail/com.cn21.ecloud) 在 mac 上的同步还差点意思，优点是原画质视频播放，但是非会员不能倍速
 * ——————— ฅ՞• •՞ฅ ———————
 * [印象笔记](https://sj.qq.com/appdetail/com.yinxiang) 限制 2 台设备
@@ -738,14 +739,14 @@ not
 
 ## 14. 应用商店类
 
-* [腾讯应用宝](https://sj.qq.com/)-全网最新最热手机应用游戏下载
+* [腾讯应用宝](https://sj.qq.com)-全网最新最热手机应用游戏下载
 * [国际服游戏下载-GamesToday](https://www.hotplaygames.com)
 * [apkpure](https://apkpure.com/cn) 一个有国外的应用商店 需魔法
 * [Uptodown](en.uptodown.com) 一个有国外的应用商店 需魔法
 
 备用
 
-* [Google Play](https://play.google.com/) 需魔法 和 谷歌框架
+* [Google Play](https://play.google.com) 需魔法 和 谷歌框架
 
 ## 15. 桌面启动器
 
@@ -760,36 +761,39 @@ not
 
 ### 安卓
 
-[360 极速浏览器](https://sj.qq.com/appdetail/com.qihoo.contents) 内置了安全大脑非常好用，毕竟安全第一位
+* [360 极速浏览器](https://sj.qq.com/appdetail/com.qihoo.contents) 内置了安全大脑非常好用，毕竟安全第一位
 
 备用
 
 * [X 浏览器](https://sj.qq.com/appdetail/com.mmbox.xbrowser) 只有1M大小，占用极少的资源，启动速度飞快。其中扫描二维码会自动复制到粘贴功能非常好使
-* Firefox 火狐浏览器 [应用宝版本](https://sj.qq.com/appdetail/org.mozilla.firefox) | [国外商店版](https://firefox.en.uptodown.com/android)
+* Firefox 火狐浏览器 [应用宝版](https://sj.qq.com/appdetail/org.mozilla.firefox) | [国外商店版](https://firefox.en.uptodown.com/android)
 * [微软 Edge](https://sj.qq.com/appdetail/com.microsoft.emmx)
 
 not
 
 * [Alook](https://sj.qq.com/appdetail/alook.browser) 有点臃肿，但是功能性还行，界面也有点差
-* [360 手机浏览器](https://mse.360.cn/) 广告太多
+* [360 手机浏览器](https://mse.360.cn) 广告太多
 * [Google Chrome](https://sj.qq.com/appdetail/com.android.chrome) 国内不好用
 * [uc 标准版](https://sj.qq.com/appdetail/com.UCMobile) 太臃肿了
-* uc 国际版
 * [夸克浏览器](https://sj.qq.com/appdetail/com.quark.browser) 越来越臃肿了，和 UC 一个样
-* [via 浏览器](https://sj.qq.com/appdetail/mark.via) 比 x 浏览器体积更大且某些方面体验不如
+* [via 浏览器](https://sj.qq.com/appdetail/mark.via) 比 X 浏览器体积更大且某些方面体验不如
+* ——————— ฅ՞• •՞ฅ ———————
+* uc 国际版
+
+官网收录：[欧朋浏览器](https://sj.qq.com/appdetail/com.oupeng.mini.android)
 
 ### iPhone
 
-[Alook](https://sj.qq.com/appdetail/alook.browser)
+* [Alook](https://sj.qq.com/appdetail/alook.browser)
 
 ### iPad
 
-[Alook](https://sj.qq.com/appdetail/alook.browser) 尚且能用，但是内核好像还是同内置浏览器。可能火狐和 edge 依旧是更好的选择
+* [Alook](https://sj.qq.com/appdetail/alook.browser) 尚且能用，但是内核好像还是同内置浏览器。可能火狐和 edge 依旧是更好的选择
 
 ### aPad
 
-* [Edge](https://sj.qq.com/appdetail/com.microsoft.emmx) 通用版，已适配平板
-* [火狐浏览器](https://sj.qq.com/appdetail/org.mozilla.firefox) 通用版，已适配平板
+* [Edge](https://sj.qq.com/appdetail/com.microsoft.emmx) 通用版【已适配平板】
+* [火狐浏览器](https://sj.qq.com/appdetail/org.mozilla.firefox) 通用版【已适配平板】
 * UC 浏览器国际版
 
 not
@@ -837,21 +841,9 @@ AIDA64 硬件检测
 
 ### 通用
 
-[LocalSend](https://localsend.org/) Share files to nearby devices
+[LocalSend](https://localsend.org) Share files to nearby devices
 
-## 22. 考公考编
-
-### 通用
-
-* [粉笔](https://sj.qq.com/appdetail/com.fenbi.android.servant) 公考、教师、法考、考研、建造、会计考试的提分利器
-* [高途公考](https://sj.qq.com/appdetail/com.gaotu100.gongkao) 致力于服务备考公务员、事业单位、央国企和军队文职的学员
-* [疯狂刷题](https://sj.qq.com/appdetail/com.yaerxing.fkst) 汇聚大量包括了直至大学、考研优题、真题、好题
-
-### aPad
-
-* [粉笔](https://sj.qq.com/appdetail/com.fenbi.android.servant) 公考、教师、法考、考研、建造、会计考试的提分利器
-
-## 23. 投资理财类
+## 22. 投资理财类
 
 注意：理财需谨慎
 
@@ -859,7 +851,7 @@ AIDA64 硬件检测
 
 * [挖财宝](https://sj.qq.com/appdetail/com.hangzhoucaimi.financial)
 
-## 24. 银行类 app
+## 23. 银行类
 
 * [招商银行](https://sj.qq.com/appdetail/cmb.pb)
 * [掌上生活](https://sj.qq.com/appdetail/com.cmbchina.ccd.pluto.cmbActivity) 的美观和体验还行
@@ -871,7 +863,7 @@ not
 
 ~~【垃圾】[微众银行](https://sj.qq.com/appdetail/com.webank.wemoney) TM 垃圾微粒贷，网贷审核不严格立马到账，诈骗帮凶~~
 
-## 25. 移动营业厅 app
+## 24. 移动营业厅
 
 [移动](https://sj.qq.com/appdetail/com.greenpoint.android.mc10086.activity)、[电信](https://sj.qq.com/appdetail/com.ct.client)等三家营业厅
 
@@ -883,11 +875,11 @@ not
 
 钱袋子 曾经 2014年 很火的货币基金
 
-## 26. 匿名应用
+## 25. 匿名应用
 
 [阿里小号](https://aliqin.aliyuncs.com/#/xiaohao)、[联通小号](https://sj.qq.com/appdetail/com.glhh.chinaunicom.wxh) 一段时间不用，要记得及时续费
 
-## 27. 政务
+## 26. 政务
 
 ### 安卓和 iOS
 
@@ -897,31 +889,31 @@ not
 
 [北京公积金](https://sj.qq.com/appdetail/cn.gov.bjgjj.gjjapp) 网站其实挺强大，一般 app 甚至都用不到
 
-## 28. 美食类
+## 27. 美食类
 
 ### iPhone
 
 * [美食杰](https://sj.qq.com/appdetail/com.jesson.meishi)
 * [下厨房](https://sj.qq.com/appdetail/com.xiachufang) 应该也不错
 
-## 29. 新媒体运营
+## 28. 新媒体运营
 
 ### 通用
 
 [猫眼专业版](https://sj.qq.com/appdetail/com.sankuai.moviepro) 看电影实时票房用
 
-## 30. 拍照和身份证扫描工具
+## 29. 拍照和身份证扫描工具
 
 1. [白描](https://sj.qq.com/appdetail/com.uzero.baimiao) 快捷免费制作身份证正反面 A4 扫描件，自由保存与打印
 2. [白描证件照](https://sj.qq.com/appdetail/com.uzero.cn.zhengjianzhao) 一款自动扣人像制作证件照的App，支持多种尺寸证件照的制作以及自定义尺寸证件照的制作
 
-## 31. 手写类
+## 30. 手写类
 
 ### aPad
 
 [Canva 可画](https://sj.qq.com/appdetail/cn.canva.editor)
 
-## 32. 电视直播
+## 31. 电视直播
 
 ### 安卓
 
@@ -935,25 +927,40 @@ IPTV apkpure 版 作者 Alexander Sofronov
 
 APTV
 
-## 33. 远程控制
+## 32. 远程控制
 
 * Kore 一个用于 Kodi 系统/程序 的 远程遥控器
-* VNC Viewer 操控树莓派用
+* [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer) 操控树莓派用
 
-## 34. 投屏
+## 33. 投屏
 
 [AlookDLNA](https://alookweb.com/AlookDLNA.apk) 可以投屏到 电视 或者 安卓手机
 
-## 35. 设备管理
+## 34. 设备管理
 
 ### 安卓 和 苹果
 
 * [米家](https://sj.qq.com/appdetail/com.xiaomi.smarthome)
 * [TP-LINK 物联](https://wap.tplinkcloud.com.cn/appdown) 管理路由器及更多智能设备
-* [贝锐蒲公英户端](https://pgy.oray.com/download/) 向日葵家族，可实现快速组网
+* [贝锐蒲公英户端](https://pgy.oray.com/download) 向日葵家族，可实现快速组网
 * [小度](https://sj.qq.com/appdetail/com.baidu.duer.superapp) 小度打造的一款智能助手APP，能够连接多款百度旗下智能设备及合作设备，不得不用
 
-## 36. 政治学习
+## 35. 考公考编
+
+### 通用
+
+* [粉笔](https://sj.qq.com/appdetail/com.fenbi.android.servant)
+* [高途公考](https://sj.qq.com/appdetail/com.gaotu100.gongkao)
+* [华图在线](https://sj.qq.com/appdetail/com.huatu.handheld_huatu)
+* [中公教育](https://sj.qq.com/appdetail/com.offcn.android.offcn)
+* ——————— ฅ՞• •՞ฅ ———————
+* [疯狂刷题](https://sj.qq.com/appdetail/com.yaerxing.fkst) 汇聚大量包括了直至大学、考研优题、真题、好题
+
+### aPad
+
+* [粉笔](https://sj.qq.com/appdetail/com.fenbi.android.servant) 公考、教师、法考、考研、建造、会计考试的提分利器
+
+## 36. 申论面试
 
 * [学习强国](https://sj.qq.com/appdetail/cn.xuexi.android) 由中共中央宣传部主管的学习平台，它提供了丰富多样的学习资源，还能看电视，学慕课，听广播
 * [半月谈](https://sj.qq.com/appdetail/com.bytxmt.banyuetan) 新华社半月谈出品的公务员公考学习平台，新华社时评员讲申论，公考名师讲行测
@@ -969,7 +976,7 @@ not
 ### 安卓
 
 1. [泰尔网测](https://sj.qq.com/appdetail/com.knowyou.perception) 用于网速测试 和 查看是哪家宽带
-2. [WiFiAnalyzer](https://f-droid.org/packages/com.vrem.wifianalyzer/) | [GitHub 源](https://github.com/VREMSoftwareDevelopment/WiFiAnalyzer) 优化您的WiFi网络
+2. [WiFiAnalyzer](https://f-droid.org/packages/com.vrem.wifianalyzer) | [GitHub 源](https://github.com/VREMSoftwareDevelopment/WiFiAnalyzer) 优化您的WiFi网络
 3. [网络百宝箱](https://wap.tplinkcloud.com.cn/appdown/wifitool) TPLINK 出品。为网络工程师、安防工程师、IT 技术支持、工程商、集成商、电信装维等从业人员以及家庭用户提供更高效，更便捷的网络测试功能
 
 ## 38. 服务器运营
