@@ -15,11 +15,14 @@ categories: 我的创作
 
 #### 1. 管家杀毒类
 
-* 普通用户或者想省心的可以只安装【win 安装版】[360 安全卫士极速版](https://weishi.360.cn)
+* 普通用户或者想省心的可以只安装【win 安装版】[360 安全卫士-极速版](https://weishi.360.cn)
 * 其他则可以选择【win 安装版】[微软电脑管家](https://pcmanager.microsoft.com/zh-cn) +【win 安装版】[火绒安全软件](https://www.huorong.cn/)
 * 【mac 官网版】[腾讯柠檬清理](https://lemon.qq.com) 主打清理电脑垃圾文件，一键释放磁盘空间。因 App Store 审核限制，完整版内部分功能无法上架（例如应用卸载等）。建议去官网下载完整版。
 
-官网收录：[腾讯电脑管家](https://guanjia.qq.com/)
+官网收录：
+管家类 [腾讯电脑管家](https://guanjia.qq.com)
+杀毒类 [norton](https://cn.norton.com/) | [mcafee](https://www.mcafee.com/zh-cn/index.html) | [金山毒霸](https://www.ijinshan.com)
+软件管家 [火绒应用商店](https://www.huorong.cn/appstore)
 
 #### 2. 浏览器
 
@@ -29,7 +32,7 @@ categories: 我的创作
 
 <!-- more -->
 
-官网收录：【win】[搜狗高速浏览器](https://sogou.browser.qq.com/) |【win】[猎豹浏览器](https://www.liebao.cn/) |【全平台】[360 安全浏览器](https://browser.360.cn/) |【win mac】[QQ 浏览器](https://browser.qq.com) |【全平台】[Edge](https://www.microsoft.com/zh-cn/edge) |【全平台】[Opera](https://www.opera.com/zh-cn) |【全平台】[Chrome](https://www.google.cn/intl/zh-CN/chrome) |【win mac】[傲游浏览器](https://www.maxthon.cn) | [Vivaldi](https://vivaldi.com) | [百分浏览器](http://www.centbrowser.cn)
+官网收录：【win】[搜狗浏览器](https://sogou.browser.qq.com) |【win】[猎豹浏览器](https://www.liebao.cn) |【全平台】[360 浏览器](https://browser.360.cn) |【win mac】[QQ 浏览器](https://browser.qq.com) |【全平台】[Edge](https://www.microsoft.com/zh-cn/edge) |【全平台】[Opera](https://www.opera.com/zh-cn) |【全平台】[Chrome](https://www.google.cn/intl/zh-CN/chrome) |【win mac】[傲游浏览器](https://www.maxthon.cn) | [Vivaldi](https://vivaldi.com) | [百分浏览器](http://www.centbrowser.cn)
 
 #### 3. 压缩解压
 
@@ -37,7 +40,7 @@ categories: 我的创作
 * 【mac 官网版】[The Unarchiver](https://theunarchiver.com)
 * liunx 一般用自带的
 
-官网收录：【win】[WinRAR](https://www.winrar.com.cn/) | 【win mac】[Bandizip](https://www.bandisoft.com/bandizip/) | 【win】[7zip](https://7-zip.org) | 【mac】[FastZip](https://www.better365.cn/fastzip.html) | 【mac】[Keka](https://www.keka.io/en)
+官网收录：【win】[WinRAR](https://www.winrar.com.cn) | 【win mac】[Bandizip](https://www.bandisoft.com/bandizip) | 【win】[7-Zip](https://7-zip.org) | 【mac】[FastZip](https://www.better365.cn/fastzip.html) | 【mac】[Keka](https://www.keka.io/en) | 【win mac】[360 压缩](https://yasuo.360.cn)
 
 #### 4. 输入法
 
@@ -165,8 +168,6 @@ WPS 2013
 * 阅读器 【win 绿色版】[SumatraPDF](https://www.sumatrapdfreader.org) is a PDF, ePub, MOBI, CHM, XPS, DjVu, CBZ, CBR reader for Windows 提供安装版和绿色版，小巧好用
 * 编辑器 【win 安装版】[PDFgear](https://www.pdfgear.com/download)
 
-官网收录：【win mac】[updf](https://www.updf.cn) | 【win mac】[福昕阅读器](https://www.foxitsoftware.cn/pdf-reader)
-
 **mac 平台**
 
 * 【mac】PDF 如果站在简单读取的角度直接用浏览器即可。否则可以选择付费的 [PDF Expert](https://www.pdfexpert.cn)
@@ -177,10 +178,14 @@ WPS 2013
 
 【网页版 在线 pdf 工具】[Smallpdf.com](https://smallpdf.com) A Free Solution to all your PDF Problems
 
-#### 3.mail 收发
+官网收录：【win mac】[UPDF](https://www.updf.cn) | 【win mac】[福昕阅读器](https://www.foxitsoftware.cn/pdf-reader) | [Adobe Acrobat Reader](https://get.adobe.com/cn/reader)
+
+#### 3. 邮件收发
 
 * win、mac 用户 [网易邮箱大师](https://dashi.163.com)
 * linux 用户 [Thunderbird](https://www.thunderbird.net/zh-CN)
+
+官网收录：【win mac】[Foxmail](https://www.foxmail.com)
 
 #### 4. 办公通讯
 
@@ -212,8 +217,6 @@ WPS 2013
 * 有梯子可能会更喜欢 【全平台】[Spotify](https://www.spotify.com) 曲库很全，非会员稍有限制
 * 有本地音乐库存用户 【win】普听音乐。在阿里云盘的加持下很好用，用于打造自己的曲库
 
-官网收录：【win mac】[汽水音乐](https://www.qishui.com) |【win】[方格音乐](http://morin.vin)
-
 **mac 平台**
 
 本地播放：虚位以待
@@ -230,25 +233,28 @@ not
 
 在线播放：
 
-1. 【全平台】[lx-music-desktop](https://github.com/lyswhut/lx-music-desktop)
+1. 【全平台】[lx-music 洛雪音乐桌面版](https://github.com/lyswhut/lx-music-desktop)
 2. 【全平台】[Spotify](https://www.spotify.com) 则作为补充
+
+官网收录：【win mac】[汽水音乐](https://www.qishui.com) |【win】[方格音乐](http://morin.vin) | 【win mac】[itunes](https://www.apple.com.cn/itunes)
 
 ### 4.【常用】视频类
 
 **windows 平台**
 
-1. 本地播放：[VLC](https://www.videolan.org) /【win 官方安装版】PotPlayer [官网](https://potplayer.tv/?lang=zh_CN) | [绿色版](https://potplayer.org) 再搭配 HEVC 解码器 [LAVFilters](https://github.com/Nevcairiel/LAVFilters/releases)
-2. 在线平台：【win】[荐片播放器](https://www.jianpian6.co/) 可观看最新电影 +【win mac】[哔哩哔哩客户端](https://app.bilibili.com)
-
-官网收录：【win mac】[迅雷影音](https://video.xunlei.com/pc.html) | 【win】[射手影音](https://www.splayer.org/) | 【win mac】[抖音电脑版](https://www.douyin.com) | 【win mac】[爱奇艺客户端](https://www.iqiyi.com/appstore.html) | 【win mac】[腾讯视频客户端](https://v.qq.com/download.html#Windows) | 【win mac】[优酷客户端](https://youku.com/product/index) | 【win mac】[央视影音](https://app.cctv.com)
+1. 本地播放：【全平台】[VLC](https://www.videolan.org) /【win 官方安装版】PotPlayer [官网](https://potplayer.tv/?lang=zh_CN) | [绿色版](https://potplayer.org) 再搭配 HEVC 解码器 [LAVFilters](https://github.com/Nevcairiel/LAVFilters/releases)
+2. 在线平台：【win】[荐片播放器](https://www.jianpian6.co) 可观看最新电影 +【win mac】[哔哩哔哩客户端](https://app.bilibili.com)
 
 **mac 平台**
 
-【全平台】[VLC](https://www.videolan.org) /【mac】[INNA](https://iina.io) + 【win mac】[哔哩哔哩客户端](https://app.bilibili.com)
+1. 本地播放：【全平台】[VLC](https://www.videolan.org) /【mac】[INNA](https://iina.io)
+2. 在线平台：【win mac】[哔哩哔哩客户端](https://app.bilibili.com) 其实本地播放也很强
 
 **linux 平台**
 
-本地播放：【全平台】[vlc](https://www.videolan.org)
+本地播放：【全平台】[VLC](https://www.videolan.org)
+
+官网收录：【win mac】[迅雷影音](https://video.xunlei.com/pc.html) | 【win】[射手影音](https://www.splayer.org) | 【win mac】[抖音电脑版](https://www.douyin.com) | 【win mac】[爱奇艺客户端](https://www.iqiyi.com/appstore.html) | 【win mac】[腾讯视频](https://v.qq.com/download.html) | 【win mac】[优酷客户端](https://youku.com/product/index) | 【win mac】[央视影音](https://app.cctv.com)
 
 ### 5.【常用】社交类
 
@@ -612,7 +618,11 @@ not
 
 [IPTV+Checker+2.5汉化版](https://www.mediafire.com/file/y7edgxkydtp728o/IPTV+Checker+2.5%E6%B1%89%E5%8C%96%E7%89%88.rar/file)
 
-### 22.mac 特有
+### 22. 备份恢复
+
+[傲梅备份](https://www.abackup.com)
+
+### 23.mac 特有
 
 #### 鼠标翻转
 
@@ -622,7 +632,7 @@ not
 
 【mac】[AlDente - 负载限制器](https://apphousekitchen.com/)
 
-### 23.windows 特有
+### 24.windows 特有
 
 #### 空格预览文件
 
@@ -697,7 +707,7 @@ not
 
 not
 
-* [乐播投屏](https://www.lebo.cn/) 太臃肿
+* [乐播投屏](https://www.lebo.cn/) 太臃肿且要注意远程屏幕共享骗局
 
 ### 05. 文件转换
 
