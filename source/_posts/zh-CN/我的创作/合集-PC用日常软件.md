@@ -22,7 +22,6 @@ categories: 我的创作
 官网收录：
 管家类 [腾讯电脑管家](https://guanjia.qq.com)
 杀毒类 [norton](https://cn.norton.com/) | [mcafee](https://www.mcafee.com/zh-cn/index.html) | [金山毒霸](https://www.ijinshan.com)
-软件管家 [火绒应用商店](https://www.huorong.cn/appstore)
 
 #### 2. 浏览器
 
@@ -592,14 +591,16 @@ not
 
 ### 16.微软 buff
 
-* 【win】[微软 Sysinternals](https://learn.microsoft.com/zh-cn/sysinternals)
-* 【win】[Microsoft PowerToys](https://learn.microsoft.com/zh-cn/windows/powertoys)
+* 【win】[微软 Sysinternals](https://learn.microsoft.com/zh-cn/sysinternals) 帮助管理、排查 Windows 和 Linux 系统与应用程序的问题并进行诊断
+* 【win】[Microsoft PowerToys](https://learn.microsoft.com/zh-cn/windows/powertoys) 用于自定义 Windows 的实用工具
 
 ### 17.效率工具
 
-【跨平台】[Espanso](https://espanso.org) 一款文字输入增强工具
+*【跨平台】[Espanso](https://espanso.org) 一款文字输入增强工具
 
-官网收录：【win】[Quicker](https://getquicker.net) |【win】[Ditto](https://ditto-cp.sourceforge.io) 口碑很高的增强剪切板 我感觉不好用 |【win】[Listary](https://www.listary.net/)
+官网收录：【win】[Quicker](https://getquicker.net) |【win】[Listary](https://www.listary.net)
+|【win】[Ditto](https://ditto-cp.sourceforge.io) 口碑很高的增强剪切板
+|【win 自荐】[**捷键**](https://feipig.fun/zh-cn/4c2b72aaa7d0) 不仅仅是增强快捷键
 
 ### 18.文件加密
 
@@ -622,7 +623,12 @@ not
 
 [傲梅备份](https://www.abackup.com)
 
-### 23.mac 特有
+### 23.软件管家
+
+* [火绒应用商店](https://www.huorong.cn/appstore)
+* [联想应用商店](https://lestore.lenovo.com)
+
+### 24.mac 特有
 
 #### 鼠标翻转
 
@@ -632,7 +638,7 @@ not
 
 【mac】[AlDente - 负载限制器](https://apphousekitchen.com/)
 
-### 24.windows 特有
+### 25.windows 特有
 
 #### 空格预览文件
 
@@ -648,7 +654,7 @@ not
 
 特点：
 
-1. win 8, 7, Vista 缺失的非激活的窗口下使用滚轮
+1. win Vista/7/8 缺失的非激活的窗口下使用滚轮滚动
 2. 反转鼠标滚动方向，类似苹果的自然滚动
 
 #### windows 系统优化
@@ -716,7 +722,7 @@ not
 
 官网收录：【mac】[即刻转换](https://zh.okaapps.com/product/1637557903)
 
-### 06. 包管理器 或 应用商店
+### 06. 包管理器
 
 【mac】[Homebrew](https://brew.sh/index_zh-cn)
 
@@ -745,7 +751,6 @@ not
 
 * [暴雪战网](https://www.blizzard.com/zh-tw/)【win mac】 在苹果上玩炉石风扇狂转，临时卸载，继续用 windows 玩
 * [抖音](https://www.douyin.com/)【win mac】该版本我用不习惯且电扇呼呼的，可能西瓜视频更好但是 mac 平台上目前没有
-* [火绒应用商店](https://huorong.cn/app_store.html) 体验一般。对于高级玩家，感觉官网下载比较好
 * [图吧工具箱](https://www.tbtool.cn/) 中规中矩，功能挺强大
 * [Advanced IP Scanner](https://www.advanced-ip-scanner.com/cn/) – 免费下载网络扫描程序 我不太喜欢安装版的
 * [DisplayFusion](https://www.displayfusion.com)【win】

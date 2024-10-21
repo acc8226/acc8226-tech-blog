@@ -7,7 +7,7 @@ tags:
 - Autohotkey
 ---
 
-根据我以往 Java 的编程习惯，参考 Python 的一些思路，自己总结了一套自己的使用规范。
+根据我以往 Java 的编程习惯，并借鉴 Python 的一些思路，自己总结了一套自己的使用规范。
 
 ## 函数调用
 
@@ -30,6 +30,8 @@ MyGui := Gui('+AlwaysOnTop -Caption +ToolWindow')
 ## if 语句 和 for 语句
 
 只有一条语句则不加括号
+
+<!-- more -->
 
 ```ahk
 if title = 'hello'

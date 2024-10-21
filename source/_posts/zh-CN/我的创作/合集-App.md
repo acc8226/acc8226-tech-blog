@@ -342,7 +342,7 @@ not
 * nPlayer 不能调整倍速
 * xplayer 太丑了
 * mxplayer 超过百 M 且内容过于丰富
-* MPV 没有 vlc 简洁但是内容很清爽
+* MPV 没有 vlc 简洁
 * ——————— ฅ՞• •՞ฅ ———————
 * [bilibili 标准版](https://sj.qq.com/appdetail/tv.danmaku.bili) 没以前清爽了
 * [1905 电影网](https://sj.qq.com/appdetail/com.m1905.mobilefree) 做的一般般
@@ -417,7 +417,7 @@ not
 
 not
 
-* [es 文件浏览器](http://www.estrongs.com) 由于我习惯了猫头鹰文件，这个不开会员还有广告
+* [es 文件浏览器](http://www.estrongs.com) 由于我习惯了[猫头鹰文件](https://www.skyjos.cn/owlfiles/index.html)，这个不开会员还有广告
 * ——————— ฅ՞• •՞ฅ ———————
 * [纯纯写作](https://sj.qq.com/appdetail/com.drakeet.purewriter) 很好用，但是收费版才好用就算了
 * [快递 100](https://sj.qq.com/appdetail/com.Kingdee.Express) 最近寄快递选【德邦】确实便宜写，不过**体积和重量**是按两者最大的来，情有可原吧。第一次用快递 100 我领了一个 5 月的优惠券，感觉还行，一般足够用
@@ -706,7 +706,7 @@ not
 可选
 
 * [翼支付](https://sj.qq.com/appdetail/com.chinatelecom.bestpayclient) 由于我办理业务期间会每月会赠送代金券
-* [数字人民币](https://sj.qq.com/appdetail/cn.gov.pbc.dcep) 现放开了注册，但是生态还不完善，然后 170 的收集也注册不了，现在我是用 153 的号码进行注册的。
+* [数字人民币](https://sj.qq.com/appdetail/cn.gov.pbc.dcep) 生态还不完善，然后 170 的收集也注册不了，目前我是用 153 的号码进行注册的
 
 ## 12. 网盘【常用】
 
@@ -714,13 +714,15 @@ not
 
 1. [坚果云](https://sj.qq.com/appdetail/nutstore.android) 同步文档用
 2. [小飞机网盘](https://www.feijipan.com) 分享用
-3. [阿里云盘](https://sj.qq.com/appdetail/com.alicloud.databox) 功能很多，且不太限速，但是非会员不能看超清适配，但是可以搭配猫头鹰文件
+3. [阿里云盘](https://sj.qq.com/appdetail/com.alicloud.databox) 功能很多，且不太限速，但是非会员不能看超清适配，但是可以搭配[猫头鹰文件](https://www.skyjos.cn/owlfiles/index.html)
 4. [PikPak](https://mypikpak.com/zh-CN) 免费用户总共 6GB，每天可以添加 3 个离线任务还是不错的
+* ——————— ฅ՞• •՞ฅ ———————
+5. [AListFlutter](https://github.com/jing332/AListFlutter) 聚合网盘工具
 
 not
 
 * [百度网盘](https://sj.qq.com/appdetail/com.baidu.netdisk) 720p 视频限免播放，且空间够大
-* [123 云盘](https://sj.qq.com/appdetail/com.mfcloudcalculate.networkdisk) app 内都是广告
+* [123云盘](https://sj.qq.com/appdetail/com.mfcloudcalculate.networkdisk) app 内都是广告
 * [文叔叔](https://www.wenshushu.cn) 匿名分享盘，现在依旧被小飞机取代
 * [天翼云](https://sj.qq.com/appdetail/com.cn21.ecloud) 在 mac 上的同步还差点意思，优点是原画质视频播放，但是非会员不能倍速
 * ——————— ฅ՞• •՞ฅ ———————
@@ -907,7 +909,7 @@ not
 1. [白描](https://sj.qq.com/appdetail/com.uzero.baimiao) 快捷免费制作身份证正反面 A4 扫描件，自由保存与打印
 2. [白描证件照](https://sj.qq.com/appdetail/com.uzero.cn.zhengjianzhao) 一款自动扣人像制作证件照的App，支持多种尺寸证件照的制作以及自定义尺寸证件照的制作
 
-## 30. 手写类
+## 30.手写类
 
 ### aPad
 
@@ -927,16 +929,16 @@ IPTV apkpure 版 作者 Alexander Sofronov
 
 APTV
 
-## 32. 远程控制
+## 32.远程控制
 
 * Kore 一个用于 Kodi 系统/程序 的 远程遥控器
 * [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer) 操控树莓派用
 
-## 33. 投屏
+## 33.投屏
 
 [AlookDLNA](https://alookweb.com/AlookDLNA.apk) 可以投屏到 电视 或者 安卓手机
 
-## 34. 设备管理
+## 34.设备管理
 
 ### 安卓 和 苹果
 
@@ -945,7 +947,7 @@ APTV
 * [贝锐蒲公英户端](https://pgy.oray.com/download) 向日葵家族，可实现快速组网
 * [小度](https://sj.qq.com/appdetail/com.baidu.duer.superapp) 小度打造的一款智能助手APP，能够连接多款百度旗下智能设备及合作设备，不得不用
 
-## 35. 考公考编
+## 35.考公考编
 
 ### 通用
 
@@ -960,7 +962,7 @@ APTV
 
 * [粉笔](https://sj.qq.com/appdetail/com.fenbi.android.servant) 公考、教师、法考、考研、建造、会计考试的提分利器
 
-## 36. 申论面试
+## 36.申论面试
 
 * [学习强国](https://sj.qq.com/appdetail/cn.xuexi.android) 由中共中央宣传部主管的学习平台，它提供了丰富多样的学习资源，还能看电视，学慕课，听广播
 * [半月谈](https://sj.qq.com/appdetail/com.bytxmt.banyuetan) 新华社半月谈出品的公务员公考学习平台，新华社时评员讲申论，公考名师讲行测
@@ -971,7 +973,7 @@ not
 * [人民日报](https://sj.qq.com/appdetail/com.peopledailychina.activity) 有广告，所以我不太喜欢
 * [新华网](https://sj.qq.com/appdetail/com.foundao.xinhua_android) 开屏有广告
 
-## 37. 网络检测
+## 37.网络检测
 
 ### 安卓
 
@@ -979,12 +981,16 @@ not
 2. [WiFiAnalyzer](https://f-droid.org/packages/com.vrem.wifianalyzer) | [GitHub 源](https://github.com/VREMSoftwareDevelopment/WiFiAnalyzer) 优化您的WiFi网络
 3. [网络百宝箱](https://wap.tplinkcloud.com.cn/appdown/wifitool) TPLINK 出品。为网络工程师、安防工程师、IT 技术支持、工程商、集成商、电信装维等从业人员以及家庭用户提供更高效，更便捷的网络测试功能
 
-## 38. 服务器运营
+## 38.服务器运营
 
 * [华为云App](https://www.huaweicloud.com/mobile_app/hwapp.html) 关注云资讯，随时随地管控云服务
 * [阿里云](https://sj.qq.com/appdetail/com.alibaba.aliyun) 随时随地 移动运维 技术干货 学习成长
 
-## 39. 游戏
+## 39.Linux 环境
+
+[Termux](https://github.com/termux/termux-app) 是一个 Android 终端应用程序和 Linux 环境
+
+## 40. 游戏
 
 ### iPhone 和 iPad
 
