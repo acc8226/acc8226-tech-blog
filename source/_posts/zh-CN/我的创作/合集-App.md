@@ -389,10 +389,9 @@ not
 
 * 央视影音 HD 适配平板不彻底，还不如央视频
 
+### 安卓TV
 
-### 安卓盒子
-
-虚位以待
+[云视小电视（哔哩哔哩）](https://app.bilibili.com) | [鲜时光TV（西瓜视频）](https://www.ixigua.com/app) | [腾讯视频 TV 客户端](https://v.qq.com/download.html#TV) | [酷喵TV版（优酷）](https://youku.com/product/index) | [奇异果TV（爱奇艺）](https://app.iqiyi.com/tv/player/index.html) | [央视网TV](https://app.cctv.com/#page7) | [我的电视 mytv](https://lyrics.run/my-tv.html)
 
 not
 
@@ -951,10 +950,7 @@ APTV
 
 ### 通用
 
-* [粉笔](https://sj.qq.com/appdetail/com.fenbi.android.servant)
-* [高途公考](https://sj.qq.com/appdetail/com.gaotu100.gongkao)
-* [华图在线](https://sj.qq.com/appdetail/com.huatu.handheld_huatu)
-* [中公教育](https://sj.qq.com/appdetail/com.offcn.android.offcn)
+* [粉笔](https://sj.qq.com/appdetail/com.fenbi.android.servant) | [高途公考](https://sj.qq.com/appdetail/com.gaotu100.gongkao) | [华图在线](https://sj.qq.com/appdetail/com.huatu.handheld_huatu) | [中公教育](https://sj.qq.com/appdetail/com.offcn.android.offcn)
 * ——————— ฅ՞• •՞ฅ ———————
 * [疯狂刷题](https://sj.qq.com/appdetail/com.yaerxing.fkst) 汇聚大量包括了直至大学、考研优题、真题、好题
 
