@@ -42,8 +42,6 @@ categories: 我的创作
 
 测量快递体积的免费 app
 
-过期日期提醒的 app
-
 ## 1. 装机必备
 
 以下观点谨代表个人当时在使用 app 后的主观个人意见，没有任何挤踩成分，只是可能不适合我个人使用。
@@ -223,17 +221,18 @@ not
 
 #### 安卓
 
-1. [得到](https://sj.qq.com/appdetail/com.luojilab.player) 非常好
+1. [得到](https://sj.qq.com/appdetail/com.luojilab.player) 免费和付费资源共存
 2. [云听](https://sj.qq.com/appdetail/com.shinyv.cnr) 央视的资源还是很丰富的
 3. [帆书（原樊登读书）](https://sj.qq.com/appdetail/io.dushu.fandengreader) 稍有限免资源，但旧手机有点卡
 
 可选
 
-* [讯飞有声](https://sj.qq.com/appdetail/com.iflytek.readassistant) 难得的免费收听时长的可听本地图书和 pdf、doc、mobi 的 app，是目前的一个较好的方案
+* [讯飞有声](https://sj.qq.com/appdetail/com.iflytek.readassistant) 主打播放本地图书和 pdf、doc、mobi 格式的文本，是目前的一个本地解决方案，非会员有是时长限制
 * [番茄畅听](https://sj.qq.com/appdetail/com.xs.fm) 免费资源较多，和番茄免费小说部分功能重合了
 * [微信听书](https://sj.qq.com/appdetail/com.tencent.wehear) 活动玩法多，可以换取收听时长
 * [极客时间](https://sj.qq.com/appdetail/org.geekbang.geekTime) 程序员才需要
 * [喜马拉雅](https://sj.qq.com/appdetail/com.ximalaya.ting.android) 有些广告
+* [蜻蜓FM](https://sj.qq.com/appdetail/fm.qingting.qtradio) 有些广告
 
 not
 
@@ -262,7 +261,7 @@ not
 
 #### 安卓和 iPhone
 
-[倒数日 · Days Matter](https://app.ipad.ly/idays) 倒计时神器, 还有各种纪念日提醒。多端同步，除了苹果端，还支持安卓端还有手表端
+[倒数日 · Days Matter](https://app.ipad.ly/idays) 倒计时神器, 可设置过期日提醒，还有各种纪念日提醒。多端同步，除了苹果端，还支持安卓端还有手表端
 
 ### 8. 资讯类
 
