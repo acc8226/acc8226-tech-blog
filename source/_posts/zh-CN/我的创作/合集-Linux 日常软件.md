@@ -35,7 +35,7 @@ rm -rf html.tar.gz && tar czvf html.tar.gz *
 
 alist
 
-需要至少 2MB 带宽，否则就很鸡肋，只能作为离线下载
+播放本地盘视频，建议至少 2MB 带宽。如果只是连接网盘则 1MB 带宽够用了。
 
 默认端口 5244
 
@@ -51,10 +51,10 @@ docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 -e PUI
 docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name="alist-aria2" xhofe/alist-aria2:latest
 ```
 
-手动设置一个密码, 其中 `myPASSWORDForTang` 是指你需要设置的密码，alist 是容器名
+手动设置一个密码, 其中 `myPASSWORDForTxng` 是指你需要设置的密码，alist 是容器名
 
 ```sh
-docker exec -it alist ./alist admin set myPASSWORDForTang
+docker exec -it alist ./alist admin set myPASSWORDForTxng
 ```
 
 ### 密码管理 server

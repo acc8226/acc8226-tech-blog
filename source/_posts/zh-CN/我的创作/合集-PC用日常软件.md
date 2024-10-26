@@ -1,7 +1,7 @@
 ---
 title: 合集-PC用日常软件
 date: 2023-03-22 21:02:00
-updated: 2024-08-01 10:00:31
+updated: 2024-10-26 19:03:06
 categories: 我的创作
 ---
 
@@ -791,3 +791,7 @@ not
 * Wox-1.4.1196 已经不太维护的启动器，界面也一般
 * zyplayer--【win mac】2023 据说不再更新，但是将逐渐不好用了
 * oblivion-desktop 魔法没有一次连成功的
+
+## 软件分享
+
+[软件分享（不定期更新）](https://share.feijipan.com/s/aABFaK0s)
