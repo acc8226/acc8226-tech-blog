@@ -66,8 +66,7 @@ categories: 我的创作
 
 #### 3. 【常用】截图
 
-* 【win】[PixPin](https://pixpinapp.com)
-* 【mac】[Xnip](https://zh.xnipapp.com/) 其实我更期待 PixPin for mac 的推出，因为免费的 OCR 识图功能
+* 【win mac】[PixPin](https://pixpinapp.com) 不付费也能体验免费的 OCR 和长截图功能
 * liunx 系统自带
 
 怀旧经典：【win】faststone capture for windows 5.3
@@ -78,13 +77,11 @@ categories: 我的创作
 
 **windows 平台**
 
-1. 【win mac 安装版】[f.lux](https://justgetflux.com/)
-2. 【win】[EyesGuard](https://github.com/avestura/EyesGuard/releases/) 定时提醒眼睛休息。注：EyesGuard 需要 .Net 4.8 以上，win 7 也能用，但是需要提前下载安装 .net 环境
+【安装版】[f.lux](https://justgetflux.com/) + [捷键-定时提醒](https://feipig.fun/zh-cn/4c2b72aaa7d0)
 
 **mac 平台**
 
-1. 【mac win】依旧 [f.lux](https://justgetflux.com/)
-2. 【appstore】[一休](https://apps.apple.com/cn/app/%E4%B8%80%E4%BC%91-%E4%BC%91%E6%81%AF%E4%B8%80%E4%B8%8B/id6467176005) 用于定时提醒
+[f.lux](https://justgetflux.com/) +【appstore】[一休](https://apps.apple.com/cn/app/%E4%B8%80%E4%BC%91-%E4%BC%91%E6%81%AF%E4%B8%80%E4%B8%8B/id6467176005) 用于定时提醒
 
 **linux 平台**
 
@@ -105,22 +102,15 @@ categories: 我的创作
 
 #### 6. 【常用】网盘
 
-**windows 平台**
+**windows 和 mac 平台**
 
-1. 【全平台】[坚果云](https://www.jianguoyun.com/s/downloads) 主要用于存少量文档
-2. 【网页版】[小飞机](https://www.feijipan.com) 用于网页分享不限速分享文件
-3. 【win mac】[阿里云盘](https://www.aliyundrive.com/drive/) 主打大容量 + 同步功能，高峰时段限速但一般没感觉。然后再搭配猫头鹰文件。可以读取阿里网盘的视频文件
-4. 【win】[pikpak](https://mypikpak.com/zh-CN) 免费用户总共 6GB，每天可以添加 3 个离线任务还是不错的
-
-官网收录：【win mac】[腾讯微云](https://www.weiyun.com/)
-
-**mac 平台**
-
-依旧【mac linux】[阿里云盘](https://www.aliyundrive.com/drive/) + 【全平台】[坚果云](https://www.jianguoyun.com/s/downloads) 的组合
+[坚果云](https://www.jianguoyun.com/s/downloads) 用于存少量文档 + [阿里云盘](https://www.aliyundrive.com/drive/) 主打大容量 + 同步功能，高峰时段限速但一般没感觉。然后再搭配猫头鹰文件。可以读取阿里网盘的视频文件
 
 **linux 平台**
 
-【全平台】[坚果云](https://www.jianguoyun.com/s/downloads)表现良好，【全平台】[百度网盘](https://yun.baidu.com)则很久没更新了
+【全平台】[坚果云](https://www.jianguoyun.com/s/downloads) + 【全平台】[百度网盘](https://yun.baidu.com)则很久没更新了
+
+官网收录：【win mac】[腾讯微云](https://www.weiyun.com)
 
 #### 7. 看图
 
@@ -149,10 +139,10 @@ categories: 我的创作
 #### 1.【常用】Office
 
 一般品牌笔记本都会赠送[微软 Office](https://www.microsoftstore.com.cn/software/office) 套件
-否则广大用户还是老实试用【全平台】[WPS](https://www.wps.cn) 需要登录才能解锁基本编辑功能太恶心
-主力目前我在用【全平台】 [LibreOffice](https://zh-cn.libreoffice.org/download/libreoffice)
 
-在线平台我推荐[腾讯文档](https://docs.qq.com)和[金山文档](https://www.kdocs.cn)，非常适合文档分享。但千万记得加水印和是设置只读访问权限，防止资料泄漏和被非法买卖。
+否则还是推荐【全平台】[WPS](https://www.wps.cn) 需登录才能解锁编辑太恶心 + 【全平台】 [LibreOffice](https://zh-cn.libreoffice.org/download/libreoffice)
+
+在线平台我推荐[腾讯文档](https://docs.qq.com)和[金山文档](https://www.kdocs.cn)，非常适合文档分享。但千万记得加水印和是设置只读访问权限，防止资料泄漏和被非法买卖
 
 怀旧经典
 
@@ -222,7 +212,7 @@ WPS 2013
 
 not
 
-【mac linux】[foobar2000](https://www.foobar2000.org)，但是歌词搜索呢，差很多意思
+【mac linux】[foobar2000](https://www.foobar2000.org) 缺少歌词搜索，且差很多意思
 
 在线播放：参考 windows 平台
 
@@ -294,11 +284,11 @@ not
 
 **windows 平台**
 
-【Win】[捷键](https://atomgit.com/acc8226/jiejian/) 我当然更推荐自己开发的软件，已经包含了该功能，使用 alt + 空格可以呼出
+【Win】[捷键](https://feipig.fun/zh-cn/4c2b72aaa7d0) 我当然更推荐自己开发的软件，已经包含了该功能，使用 alt + 空格可以呼出
 
 **mac 平台**
 
-【mac】[Raycast](https://www.raycast.com/)，另外 【全平台】[utools](https://u.tools/) 可以备用 
+【mac】[Raycast](https://www.raycast.com/)，另外【全平台】[utools](https://u.tools/) 可以备用 
 
 not
 
@@ -632,11 +622,15 @@ not
 
 #### 鼠标翻转
 
-【mac】[BetterAndBette](https://www.better365.cn/bab2.html) 可以开启该功能 
+[BetterAndBette](https://www.better365.cn/bab2.html) 
 
 #### 电源管理
 
-【mac】[AlDente - 负载限制器](https://apphousekitchen.com/)
+[AlDente](https://apphousekitchen.com/) 电池🔋负载限制器
+
+#### 键指如飞 FlyKey
+
+[键指如飞](https://www.better365.cn/FlyKey.html) 一键展示Mac快捷键，超强的Mac快捷键大全
 
 ### 25.windows 特有
 
