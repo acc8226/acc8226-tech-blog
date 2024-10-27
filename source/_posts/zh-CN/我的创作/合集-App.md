@@ -151,7 +151,7 @@ not
 * [百度阅读](https://sj.qq.com/appdetail/com.baidu.yuedu) 老版本无广告
 * [多看](https://sj.qq.com/appdetail/com.duokan.reader) 老版本无广告
 
-#### aPad（安卓平板）
+#### 安卓平板
 
 * [FBReader](https://fbreader.org/android#download) 【已适配安卓平板】 本地电子书阅读器，同时也支持 pdf
 * [微信读书](https://sj.qq.com/appdetail/com.tencent.weread)【已适配安卓平板】
@@ -173,8 +173,9 @@ not
 
 not
 
-* [Musicolet](https://krosbits.in/musicolet) 本地音乐
+* [Poweramp](https://powerampapp.com/) 免费版只能试用 15 天，只适合付费用户极好
 * AIMP 音乐 太简陋
+* [Musicolet](https://krosbits.in/musicolet) 个人不是很喜欢
 * [飞傲音乐](https://sj.qq.com/appdetail/com.fiio.music) 界面适配不完善
 * ——————— ฅ՞• •՞ฅ ———————
 * [QQ 音乐](https://sj.qq.com/appdetail/com.tencent.qqmusic) | [酷狗音乐](https://sj.qq.com/appdetail/com.kugou.android) | [酷我音乐](https://sj.qq.com/appdetail/cn.kuwo.player) 除了要开会员
@@ -204,7 +205,7 @@ not
 
 网易云音乐 有广告
 
-#### aPad（安卓平板）
+#### 安卓平板
 
 * [酷狗音乐](https://sj.qq.com/appdetail/com.kugou.android) 通用版，已适配平板
 * [网易云音乐](https://sj.qq.com/appdetail/com.netease.cloudmusic) 通用版，已适配平板，日常有开屏广告
@@ -253,7 +254,7 @@ not
 
 * 酷 FM 酷狗官方推出的一款免费音乐 FM 电台 app，现在已经停止更新了
 
-#### aPad（安卓平板）
+#### 安卓平板
 
 虚位以待
 
@@ -312,7 +313,7 @@ not
 
 今天头条竟然有点卡
 
-#### aPad（安卓平板）
+#### 安卓平板
 
 我从 vivo pad 导出的原子阅读 简直完美
 
@@ -322,10 +323,12 @@ not
 
 * 在线 bilibili 哔哩哔哩国际版 [下载地址一](https://apkpure.com/cn/bilibili-cn/com.bilibili.app.in/download) | [下载地址二](https://com-bilibili-app-in.en.uptodown.com/android) 因为清爽
 * [西瓜视频](https://sj.qq.com/appdetail/com.ss.android.article.video) 广告不多 还能创作
+* [网易 Filmly](https://sj.qq.com/appdetail/com.netease.filmlytv) 视频刮削神器，暂时免费
 
 可选
 
-* 本地 [VLC](https://www.videolan.org/vlc/download-android.html)
+* 本地 [VLC](https://www.videolan.org/vlc/download-android.html) 本地视频播放利器且体积小巧
+* Reex 可连接 webdav 但是一段时间没更新了，个人开发者，发布在酷安上
 * ——————— ฅ՞• •՞ฅ ———————
 * [NewPipe](https://newpipe.net) - a free YouTube client 太过于简洁
 * ——————— ฅ՞• •՞ฅ ———————
@@ -337,11 +340,11 @@ not
 
 not
 
-* reex 如果要使用 webDav，url 可以填写微 `http://xx.xx.xx.xxx:5244/dav` 然后用户名 和 密码填写 alist 的信息即可。但是一段时间没更新了，然后官网我也没找到，代码不透明我就不太敢用
-* nPlayer 不能调整倍速
+* [NOVA Video Player](https://github.com/nova-video-player/aos-AVP) 没找到如何倍速播放
+* nPlayer 没找到如何倍速播放
 * xplayer 太丑了
 * mxplayer 超过百 M 且内容过于丰富
-* MPV 没有 vlc 简洁
+* MPV 没有 vlc 简洁且体积大
 * ——————— ฅ՞• •՞ฅ ———————
 * [bilibili 标准版](https://sj.qq.com/appdetail/tv.danmaku.bili) 没以前清爽了
 * [1905 电影网](https://sj.qq.com/appdetail/com.m1905.mobilefree) 做的一般般
@@ -374,7 +377,7 @@ not
 
 爱奇艺 广告有点烦人
 
-### aPad
+### 安卓平板
 
 * [抖音](https://sj.qq.com/appdetail/com.ss.android.ugc.aweme)【已适配安卓平板】
 * [西瓜视频](https://sj.qq.com/appdetail/com.ss.android.article.video)【已适配安卓平板】
@@ -388,13 +391,17 @@ not
 
 * 央视影音 HD 适配平板不彻底，还不如央视频
 
-### 安卓TV
+### 安卓 TV
 
 [云视小电视（哔哩哔哩）](https://app.bilibili.com) | [鲜时光TV（西瓜视频）](https://www.ixigua.com/app) | [腾讯视频 TV 客户端](https://v.qq.com/download.html#TV) | [酷喵TV版（优酷）](https://youku.com/product/index) | [奇异果TV（爱奇艺）](https://app.iqiyi.com/tv/player/index.html) | [央视网TV](https://app.cctv.com/#page7) | [我的电视 mytv](https://lyrics.run/my-tv.html)
 
 not
 
 * [泰捷视频](https://www.51togic.com/%e6%b3%b0%e6%8d%b7%e8%a7%86%e9%a2%91)
+
+### Apple TV
+
+[网易Filmly-智能多媒体管家，全能影视播放器](https://apps.apple.com/us/app/%E7%BD%91%E6%98%93filmly-%E6%99%BA%E8%83%BD%E5%A4%9A%E5%AA%92%E4%BD%93%E7%AE%A1%E5%AE%B6-%E5%85%A8%E8%83%BD%E5%BD%B1%E8%A7%86%E6%92%AD%E6%94%BE%E5%99%A8/id6670539829)
 
 ## 3. 工具【常用】
 
@@ -444,7 +451,7 @@ not
 * ES 文件管理器
 * 中华万年历 HD 现在已经更新为 微鲤万年历
 
-### aPad
+### 安卓平板
 
 * [猫头鹰文件](https://www.skyjos.cn/owlfiles/index.html) 通用版【已适配平板】
 * [微信输入法](https://sj.qq.com/appdetail/com.tencent.wetype) 通用版【已适配平板】
@@ -488,7 +495,7 @@ not
 
 官网收录：[腾讯地图](https://sj.qq.com/appdetail/com.tencent.map) | [花小猪打车](https://sj.qq.com/appdetail/com.huaxiaozhu.rider)
 
-### aPad
+### 安卓平板
 
 * [高德地图](https://sj.qq.com/appdetail/com.autonavi.minimap) 通用版【已适配平板】
 * [腾讯地图](https://sj.qq.com/appdetail/com.tencent.map) 通用版【已适配平板】
@@ -551,7 +558,7 @@ not
 * TEDiSUB 看 TED 视频用
 * 新概念英语 付费的离线版本，当时我好像花了 6 元钱
 
-### aPad
+### 安卓平板
 
 * [每日英语听力](https://sj.qq.com/appdetail/com.qianyan2.ting.en) 通用版【已适配平板】
 * [每日英语阅读](https://sj.qq.com/appdetail/lexue.mryyyd)
@@ -623,7 +630,7 @@ not
 
 官网收录：[飞常准](https://sj.qq.com/appdetail/vz.com) | [去哪儿旅行](https://sj.qq.com/appdetail/com.Qunar) | [同程旅行](https://sj.qq.com/appdetail/com.tongcheng.android) | [航班管家](https://sj.qq.com/appdetail/com.flightmanager.view) | [智行火车票](https://sj.qq.com/appdetail/com.yipiao)
 
-### aPad
+### 安卓平板
 
 * [高铁管家](https://sj.qq.com/appdetail/com.gtgj.view) 至少适配了平板
 
@@ -648,7 +655,7 @@ not
 
 weico 下架了，变成了微博国际板，后面又变成轻享版了，结果还有了广告。 weico 4 当年我还开了会员，设计的确实不错。
 
-### aPad
+### 安卓平板
 
 * [QQ](https://sj.qq.com/appdetail/com.tencent.mobileqq) 通用版【已适配平板】
 * [微信](https://sj.qq.com/appdetail/com.tencent.mm) 请按需安装
@@ -685,7 +692,7 @@ not
 1. WPS Office
 2. **Foxit PDF** 福昕阅读器暂且可用 或者 PDF Expert
 
-### aPad
+### 安卓平板
 
 * [企业微信](https://sj.qq.com/appdetail/com.tencent.wework)
 * [钉钉](https://sj.qq.com/appdetail/com.alibaba.android.rimet)
@@ -728,7 +735,7 @@ not
 * [有道云笔记](https://sj.qq.com/appdetail/com.youdao.note) 限制 2 台设备
 * [flomo 笔记](https://sj.qq.com/appdetail/com.flomo.app) 用不习惯
 
-### aPad
+### 安卓平板
 
 * [阿里云盘](https://sj.qq.com/appdetail/com.alicloud.databox) 适配了平板
 * [百度网盘](https://sj.qq.com/appdetail/com.baidu.netdisk) 适配了平板
@@ -790,7 +797,7 @@ not
 
 * [Alook](https://sj.qq.com/appdetail/alook.browser) 尚且能用，但是内核好像还是同内置浏览器。可能火狐和 edge 依旧是更好的选择
 
-### aPad
+### 安卓平板
 
 * [Edge](https://sj.qq.com/appdetail/com.microsoft.emmx) 通用版【已适配平板】
 * [火狐浏览器](https://sj.qq.com/appdetail/org.mozilla.firefox) 通用版【已适配平板】
@@ -808,7 +815,7 @@ not
 * [豆瓣](https://sj.qq.com/appdetail/com.douban.frodo) 不是很喜欢
 * [小红书](https://sj.qq.com/appdetail/com.xingin.xhs)
 
-### aPad
+### 安卓平板
 
 * [小红书](https://sj.qq.com/appdetail/com.xingin.xhs) 适配了平板
 
@@ -909,7 +916,7 @@ not
 
 ## 30.手写类
 
-### aPad
+### 安卓平板
 
 [Canva 可画](https://sj.qq.com/appdetail/cn.canva.editor)
 
@@ -953,7 +960,7 @@ APTV
 * ——————— ฅ՞• •՞ฅ ———————
 * [疯狂刷题](https://sj.qq.com/appdetail/com.yaerxing.fkst) 汇聚大量包括了直至大学、考研优题、真题、好题
 
-### aPad
+### 安卓平板
 
 * [粉笔](https://sj.qq.com/appdetail/com.fenbi.android.servant) 公考、教师、法考、考研、建造、会计考试的提分利器
 

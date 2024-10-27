@@ -15,12 +15,14 @@ categories: 我的创作
 
 #### 1. 管家杀毒类
 
-* 普通用户或者想省心的可以只安装【win 安装版】[360 安全卫士极速版](https://weishi.360.cn)
-* 其他则可以选择【win 安装版】[微软电脑管家](https://pcmanager.microsoft.com/zh-cn) +【win 安装版】[火绒安全软件](https://www.huorong.cn/)
-* 【mac】[腾讯柠檬清理](https://lemon.qq.com) 主打清理电脑垃圾文件，一键释放磁盘空间。因 App Store 审核限制，完整版内部分功能无法上架（例如应用卸载等）。建议去官网下载完整版。
+普通用户或者想省心的可以只安装【win 安装版】[360 安全卫士极速版](https://weishi.360.cn)
 
-官网收录：管家类【win 安装版】[腾讯电脑管家](https://guanjia.qq.com)
-杀毒类：[norton](https://cn.norton.com/) | [mcafee](https://www.mcafee.com/zh-cn/index.html) |【win 安装版】[金山毒霸](https://www.ijinshan.com)
+其他 
+
+* 如果是 win 平台推荐【win 安装版】[微软电脑管家](https://pcmanager.microsoft.com/zh-cn) +【win 安装版】[火绒安全软件](https://www.huorong.cn)
+* 如果是 mac 平台则推荐【mac】[腾讯柠檬清理](https://lemon.qq.com) 主打清理电脑垃圾文件，一键释放磁盘空间。因 App Store 审核限制，完整版内部分功能无法上架（例如应用卸载等）。建议去官网下载完整版。
+
+官网收录：管家类【win 安装版】[腾讯电脑管家](https://guanjia.qq.com) | 杀毒类：[norton](https://cn.norton.com) | [mcafee](https://www.mcafee.com/zh-cn/index.html) |【win 安装版】[金山毒霸](https://www.ijinshan.com)
 
 #### 2. 浏览器
 
@@ -60,7 +62,7 @@ categories: 我的创作
 #### 2. 【常用】键鼠增强
 
 * 【win 自荐】[**捷键**](https://feipig.fun/zh-cn/4c2b72aaa7d0)
-* 【mac】[Hammerspoon](https://www.hammerspoon.org/) 搭配自制脚本
+* 【mac】[Hammerspoon](https://www.hammerspoon.org) 搭配自制脚本
 * 【linux】autokey [Github 地址](https://github.com/autokey/autokey) | [帮助文档](https://autokey.github.io/intro.html) 适用于 qt 和 x11 平台
 
 #### 3. 【常用】截图
@@ -70,17 +72,17 @@ categories: 我的创作
 
 怀旧经典：【win】faststone capture for windows 5.3
 
-官网收录：【全平台】[Snipaste](https://zh.snipaste.com) |【win】[PicPick](https://picpick.app/zh/) |【win】[verycapture](https://verycapture.com/cn/index.html) |【mac】[iShot](https://www.better365.cn/h-col-134.html)
+官网收录：【全平台】[Snipaste](https://zh.snipaste.com) |【win】[PicPick](https://picpick.app/zh) |【win】[verycapture](https://verycapture.com/cn/index.html) |【mac】[iShot](https://www.better365.cn/h-col-134.html)
 
 #### 4. 【常用】护眼
 
 **windows 平台**
 
-【安装版】[f.lux](https://justgetflux.com/) + [捷键-定时提醒](https://feipig.fun/zh-cn/4c2b72aaa7d0)
+【安装版】[f.lux](https://justgetflux.com) + [捷键-定时提醒](https://feipig.fun/zh-cn/4c2b72aaa7d0)
 
 **mac 平台**
 
-[f.lux](https://justgetflux.com/) +【appstore】[一休](https://apps.apple.com/cn/app/%E4%B8%80%E4%BC%91-%E4%BC%91%E6%81%AF%E4%B8%80%E4%B8%8B/id6467176005) 用于定时提醒
+[f.lux](https://justgetflux.com) +【appstore】[一休](https://apps.apple.com/cn/app/%E4%B8%80%E4%BC%91-%E4%BC%91%E6%81%AF%E4%B8%80%E4%B8%8B/id6467176005) 用于定时提醒
 
 **linux 平台**
 
@@ -90,20 +92,20 @@ categories: 我的创作
 
 **windows 和 mac 平台**
 
-1. 普通下载：【全平台】Motrix [官网](https://motrix.app/zh-CN/) | [下载页](https://motrix.app/zh-CN/download) 颜值高。支持下载 HTTP、FTP、BT、磁力链接等资源。即使 Github 资源也不在话下
-2. 视频资源下载：【win mac】[Neat Download Manager](https://www.neatdownloadmanager.com/index.php/en/) 体积小功能强，不支持磁力但是能配合浏览器拓展下载常见视频网站的视频
-3. 哔哩哔哩专用下载器：[Bilidown for windows-哔哩哔哩视频下载](https://zhouql.vip/bilibili/pc/) | [DownKyi](https://www.colostar.cn/links/13486.html)（哔哩下载姬）
+1. 普通下载：【全平台】Motrix [官网](https://motrix.app/zh-CN) | [下载页](https://motrix.app/zh-CN/download) 颜值高。支持下载 HTTP、FTP、BT、磁力链接等资源。即使 Github 资源也不在话下
+2. 视频资源下载：【win mac】[Neat Download Manager](https://www.neatdownloadmanager.com/index.php/en) 体积小功能强，不支持磁力但是能配合浏览器拓展下载常见视频网站的视频
+3. 哔哩哔哩专用下载器：[Bilidown for windows-哔哩哔哩视频下载](https://zhouql.vip/bilibili/pc) | [DownKyi](https://www.colostar.cn/links/13486.html)（哔哩下载姬）
 
 **linux 平台**
 
-1. 【全平台】[Motrix](https://motrix.app/zh-CN/)
+1. 【全平台】[Motrix](https://motrix.app/zh-CN)
 2. 【linux win】[xdm](https://github.com/subhra74/xdm/releases) 可以认为是 linux 环境下的 idm，很强大
 
 #### 6. 【常用】网盘
 
 **windows 和 mac 平台**
 
-[坚果云](https://www.jianguoyun.com/s/downloads) 用于存少量文档 + [阿里云盘](https://www.aliyundrive.com/drive/) 主打大容量 + 同步功能，高峰时段限速但一般没感觉。然后再搭配猫头鹰文件。可以读取阿里网盘的视频文件
+[坚果云](https://www.jianguoyun.com/s/downloads) 用于存少量文档 + [阿里云盘](https://www.aliyundrive.com/drive) 主打大容量 + 同步功能，高峰时段限速但一般没感觉。然后再搭配猫头鹰文件。可以读取阿里网盘的视频文件
 
 **linux 平台**
 
@@ -117,7 +119,7 @@ categories: 我的创作
 * 【mac】[Picture View](https://wl879.github.io/apps/picview/index.html)
 * liunx 系统自带
 
-官网收录：【win】[XnView](https://www.xnview.com/en/) |【win】[BandiView](http://www.bandisoft.com/bandiview)
+官网收录：【win】[XnView](https://www.xnview.com/en) |【win】[BandiView](http://www.bandisoft.com/bandiview)
 
 #### 8. 图像处理
 
@@ -180,7 +182,7 @@ WPS 2013
 防诈骗！一定不要开启屏幕共享！！
 
 * 【全平台】[飞书](https://www.feishu.cn)——先进企业协作与管理平台，一站式无缝办公协作，团队上下对齐目标，全面激活组织和个人。先进团队，先用飞书。
-* 【全平台】[钉钉](https://page.dingtalk.com/wow/z/dingtalk/simple/ddhomedownload#/) 个人版不好用，有点卡
+* 【全平台】[钉钉](https://page.dingtalk.com/wow/z/dingtalk/simple/ddhomedownload#) 个人版不好用，有点卡
 * 【win mac】[企业微信](https://work.weixin.qq.com)
 * 【全平台】[腾讯会议](https://meeting.tencent.com)
 * 【win mac】[网易会议](https://meeting.163.com)
@@ -248,13 +250,12 @@ not
 
 ### 5.【常用】社交类
 
-* 【全平台】[微信](https://weixin.qq.com)
-* 【全平台】[QQ](https://im.qq.com/index)
+* 【全平台】[微信](https://weixin.qq.com) 、【全平台】[QQ](https://im.qq.com/index)
 * 【win】[Tim](https://tim.qq.com/download.html)
 
 not
 
-【win linux】[阿里旺旺](https://wangwang.taobao.com/) 不好用
+【win linux】[阿里旺旺](https://wangwang.taobao.com) 不好用
 
 **mac 和 linux 平台**
 
@@ -280,7 +281,7 @@ not
 
 [如何连接 windows 电脑](https://learn.microsoft.com/zh-cn/windows-server/remote/remote-desktop-services/clients/remote-desktop-clients)
 
-官网收录：【全平台】[向日葵](https://sunlogin.oray.com/product/feat) ｜【全平台】[LocalSend](https://localsend.org/download) 局域网文件传输 | [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer) | [TeamViewer](https://www.teamviewer.cn/cn/)
+官网收录：【全平台】[向日葵](https://sunlogin.oray.com/product/feat) ｜【全平台】[LocalSend](https://localsend.org/download) 局域网文件传输 |【全平台】[VNC Viewer](https://www.realvnc.com/en/connect/download/viewer) | [TeamViewer](https://www.teamviewer.cn/cn)
 
 ### 8.启动器
 
@@ -290,7 +291,11 @@ not
 
 **mac 平台**
 
-【mac】[Raycast](https://www.raycast.com/)，另外【全平台】[utools](https://u.tools/) 可以备用 
+【mac】[Raycast](https://www.raycast.com)
+
+备用
+
+【全平台】[utools](https://u.tools)
 
 not
 
@@ -298,7 +303,7 @@ rubick 还不够完整
 
 **linux 平台**
 
-【全平台】[utools](https://u.tools/) 算是不错的选择了
+【全平台】[utools](https://u.tools) 算是不错的选择了
 
 not
 
@@ -309,10 +314,10 @@ albert 安装不上
 ### 9.阅读类
 
 * 【全平台】[Koodo Reader](https://www.koodoreader.com/zh) 开源的电子书阅读器，支持多达15种主流电子书格式， 内置笔记、高亮、翻译功能，助力高效书籍阅读和学习
-* 【win】[Fluent Reader 一款 rss 阅读器](https://github.com/yang991178/fluent-reader/releases/)
+* 【win】[Fluent Reader 一款 rss 阅读器](https://github.com/yang991178/fluent-reader/releases)
 * 【mac】自带【mac】iBook 可用于阅读电子书
 * 【mac】[Reeder](https://apps.apple.com/mo/app/reeder-5/id1529448980) 用于 rss
-* 【linux】[FBReader](https://fbreader.org/) 用于阅读电子书
+* 【linux】[FBReader](https://fbreader.org) 用于阅读电子书
 * 【linux】[NewsFlash](https://flathub.org/zh-Hans/apps/io.gitlab.news_flash.NewsFlash) 很棒的一款 rss 阅读器
 
 ### 10.桌面美化
@@ -327,13 +332,13 @@ albert 安装不上
 
 硬件检测
 * 【win】[CPU-Z | Softwares | CPUID](https://www.cpuid.com/softwares/cpu-z.html)
-* 【win】[GUP-Z](https://www.techpowerup.com/download/techpowerup-gpu-z/)
-* 【win】[鲁大师](https://www.ludashi.com/) 驱动管理+硬件检测，可解决未安装任何音频输出设备的问题
+* 【win】[GUP-Z](https://www.techpowerup.com/download/techpowerup-gpu-z)
+* 【win】[鲁大师](https://www.ludashi.com) 驱动管理+硬件检测，可解决未安装任何音频输出设备的问题
 * 【win】[360 驱动大师](http://dm.weishi.360.cn/home.html)
-* [CrystalDiskInfo](https://crystalmark.info/en/) 磁盘检测
+* [CrystalDiskInfo](https://crystalmark.info/en) 磁盘检测
 
 运行库
-[Download Visual C++ Redistributable Runtimes All-in-One Feb 2024 | TechPowerUp](https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/)
+[Download Visual C++ Redistributable Runtimes All-in-One Feb 2024 | TechPowerUp](https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one)
 
 .net 运行库
 
@@ -342,14 +347,14 @@ albert 安装不上
 not
 
 * 【win】[Speccy](https://www.ccleaner.com/zh-cn/speccy) 虽说是【win mac】[CCleaner](https://www.ccleaner.com/zh-cn/ccleaner) 出品但是没有便携版
-* 【win】[驱动精灵](http://www.drivergenius.com/)
-* 【win】[驱动人生](https://www.160.com/) 下载驱动限速严重
+* 【win】[驱动精灵](http://www.drivergenius.com)
+* 【win】[驱动人生](https://www.160.com) 下载驱动限速严重
 
-官网收录：【mac】[AppCleaner](https://freemacsoft.net/appcleaner/)
+官网收录：【mac】[AppCleaner](https://freemacsoft.net/appcleaner)
 
 ### 1.【常用】激活类
 
-[GitHub - zbezj/HEU_KMS_Activator](https://dl.lancdn.com/landian/soft/heu) | [备份站](https://dl.lancdn.com/landian/soft/heu/) 支持数字激活LTSC，win11与office2021等激活
+[GitHub - zbezj/HEU_KMS_Activator](https://dl.lancdn.com/landian/soft/heu) | [备份站](https://dl.lancdn.com/landian/soft/heu) 支持数字激活LTSC，win11与office2021等激活
 
 【win】[云萌 Windows 激活工具](https://cmwtat.cloudmoe.com/cn.html)
 
@@ -359,7 +364,7 @@ not
 
 已购【win mac】[极度扫描-文字识别-OCR](https://jidusm.wrste.com)
 
-【linux】目前很多启动器，比如 【全平台】[utools](https://u.tools/) 都带了这个小功能
+【linux】目前很多启动器，比如 【全平台】[utools](https://u.tools) 都带了这个小功能
 
 ### 3.录屏软件
 
@@ -396,7 +401,7 @@ or
 
 not
 
-* 【win】[Bandicam](https://www.bandicam.cn/) 班迪录屏 10 分种内免费，不过体验很好
+* 【win】[Bandicam](https://www.bandicam.cn) 班迪录屏 10 分种内免费，不过体验很好
 * 【全平台】[Open Broadcaster Software | OBS](https://obsproject.com) 有点卡
 * 【win】Captura 已过时
 
@@ -431,7 +436,7 @@ not
 
 * 国产【mac】[ishot](https://www.better365.cn/h-col-134.html) 的录屏
 * ev 录屏 for mac 由于很久都没更新了，然后鼠标点击也不体现点击效果，差评
-* [FocuSee](https://gemoo.com/focusee/) 需要登录账号
+* [FocuSee](https://gemoo.com/focusee) 需要登录账号
 
 **linux 平台**
 
@@ -528,7 +533,7 @@ or
 not
 
 * 【win mac】[ccleaner](https://www.ccleaner.com/zh-cn/ccleaner) 只有安装版差评
-* 【绿色版】[RevoUninstaller 免费版](https://www.revouninstaller.com/products/revo-uninstaller-free/) 界面有点旧
+* 【绿色版】[RevoUninstaller 免费版](https://www.revouninstaller.com/products/revo-uninstaller-free) 界面有点旧
 
 **mac 平台**
 
@@ -581,7 +586,7 @@ iOS 用户可下载【win mac】 [iTunes](https://www.apple.com.cn/itunes) 或�
 
 not
 
-[Rufus](https://rufus.ie/zh/) 其实还不错，但是和 Ventoy 相比我更偏爱 Ventoy
+[Rufus](https://rufus.ie/zh) 其实还不错，但是和 Ventoy 相比我更偏爱 Ventoy
 
 ### 16.微软 buff
 
@@ -630,7 +635,7 @@ not
 
 #### 电源管理
 
-[AlDente](https://apphousekitchen.com/) 电池🔋负载限制器
+[AlDente](https://apphousekitchen.com) 电池🔋负载限制器
 
 #### 键指如飞 FlyKey
 
@@ -661,7 +666,7 @@ not
 
 怀旧经典
 
-* 【win】[软媒魔方](https://mofang.ruanmei.com/)
+* 【win】[软媒魔方](https://mofang.ruanmei.com)
 
 #### windows 蓝屏日志分析
 
@@ -669,7 +674,7 @@ not
 
 #### resource hacker
 
-解析 exe，例如可以轻松查看【win】[Preme](http://www.premeforwindows.com/) 的 ahk 源码
+解析 exe，例如可以轻松查看【win】[Preme](http://www.premeforwindows.com) 的 ahk 源码
 
 ## 专业
 
@@ -711,12 +716,12 @@ not
 
 not
 
-* [乐播投屏](https://www.lebo.cn/) 太臃肿且要注意远程屏幕共享骗局
+* [乐播投屏](https://www.lebo.cn) 太臃肿且要注意远程屏幕共享骗局
 
 ### 05. 文件转换
 
 * 【win 安装版】[格式工厂](http://www.pcgeshi.com/index.html) 全功能转换
-* 【全平台】[HandBrake](https://handbrake.fr/) 视频转换
+* 【全平台】[HandBrake](https://handbrake.fr) 视频转换
 
 官网收录：【mac】[即刻转换](https://zh.okaapps.com/product/1637557903)
 
@@ -724,11 +729,11 @@ not
 
 【mac】[Homebrew](https://brew.sh/index_zh-cn)
 
-【linux】[AppImage](https://appimage.org)、[flatpak](https://flatpak.org/)、snap
+【linux】[AppImage](https://appimage.org)、[flatpak](https://flatpak.org)、snap
 
-* 【win】[Scoop](https://scoop.sh/)
-* 【win】[winget](https://learn.microsoft.com/zh-cn/windows/package-manager/winget/) 微软家，属于系统内置
-* 【win】[Chocolatey](https://chocolatey.org/) - the package manager for Windows
+* 【win】[Scoop](https://scoop.sh)
+* 【win】[winget](https://learn.microsoft.com/zh-cn/windows/package-manager/winget) 微软家，属于系统内置
+* 【win】[Chocolatey](https://chocolatey.org) - the package manager for Windows
 * [sdkman](https://sdkman.io)
 
 ## 游戏
@@ -747,17 +752,17 @@ not
 
 一些用过的软件但主观关键明显不好用的记录，说不定下版会优化，所以仅供参考
 
-* [暴雪战网](https://www.blizzard.com/zh-tw/)【win mac】 在苹果上玩炉石风扇狂转，临时卸载，继续用 windows 玩
-* [抖音](https://www.douyin.com/)【win mac】该版本我用不习惯且电扇呼呼的，可能西瓜视频更好但是 mac 平台上目前没有
-* [图吧工具箱](https://www.tbtool.cn/) 中规中矩，功能挺强大
-* [Advanced IP Scanner](https://www.advanced-ip-scanner.com/cn/) – 免费下载网络扫描程序 我不太喜欢安装版的
+* [暴雪战网](https://www.blizzard.com/zh-tw)【win mac】 在苹果上玩炉石风扇狂转，临时卸载，继续用 windows 玩
+* [抖音](https://www.douyin.com)【win mac】该版本我用不习惯且电扇呼呼的，可能西瓜视频更好但是 mac 平台上目前没有
+* [图吧工具箱](https://www.tbtool.cn) 中规中矩，功能挺强大
+* [Advanced IP Scanner](https://www.advanced-ip-scanner.com/cn) – 免费下载网络扫描程序 我不太喜欢安装版的
 * [DisplayFusion](https://www.displayfusion.com)【win】
-* [es 文件浏览器](http://www.estrongs.com/)【mac】貌似只有压缩和解压功能，功能严重不足，留观
+* [es 文件浏览器](http://www.estrongs.com)【mac】貌似只有压缩和解压功能，功能严重不足，留观
 * [Fantastical](https://apps.apple.com/cn/app/fantastical-calendar/id975937182)【mac】拥有和系统自带日历应用类似界面布局，但界面信息更加直观自然。软件支持苹果各个平台，除了可以与 iCloud / Google / Yahoo 日历无缝整合同步外，它还解决了系统自带日历 APP 功能的诸多不足
-* [paint.net](https://www.getpaint.net/) 画图软件 一般般，貌似不跨平台
-* [Lively Wallpaper - Microsoft Store 应用程序](https://apps.microsoft.com/store/detail/lively-wallpaper/) 占用 CPU 资源太大
-* [pear-rec](https://027xiguapi.github.io/pear-rec/)【全平台】录屏软件 至少我在 windows 上体验不佳
-* [flowlauncher](https://www.flowlauncher.com/docs/) 作为一款启动器 有点儿卡
+* [paint.net](https://www.getpaint.net) 画图软件 一般般，貌似不跨平台
+* [Lively Wallpaper - Microsoft Store 应用程序](https://apps.microsoft.com/store/detail/lively-wallpaper) 占用 CPU 资源太大
+* [pear-rec](https://027xiguapi.github.io/pear-rec)【全平台】录屏软件 至少我在 windows 上体验不佳
+* [flowlauncher](https://www.flowlauncher.com/docs) 作为一款启动器 有点儿卡
 
 ## 回收站
 
