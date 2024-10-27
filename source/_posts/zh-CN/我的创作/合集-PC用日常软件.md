@@ -15,45 +15,44 @@ categories: 我的创作
 
 #### 1. 管家杀毒类
 
-* 普通用户或者想省心的可以只安装【win 安装版】[360 安全卫士-极速版](https://weishi.360.cn)
+* 普通用户或者想省心的可以只安装【win 安装版】[360 安全卫士极速版](https://weishi.360.cn)
 * 其他则可以选择【win 安装版】[微软电脑管家](https://pcmanager.microsoft.com/zh-cn) +【win 安装版】[火绒安全软件](https://www.huorong.cn/)
-* 【mac 官网版】[腾讯柠檬清理](https://lemon.qq.com) 主打清理电脑垃圾文件，一键释放磁盘空间。因 App Store 审核限制，完整版内部分功能无法上架（例如应用卸载等）。建议去官网下载完整版。
+* 【mac】[腾讯柠檬清理](https://lemon.qq.com) 主打清理电脑垃圾文件，一键释放磁盘空间。因 App Store 审核限制，完整版内部分功能无法上架（例如应用卸载等）。建议去官网下载完整版。
 
-官网收录：
-管家类 [腾讯电脑管家](https://guanjia.qq.com)
-杀毒类 [norton](https://cn.norton.com/) | [mcafee](https://www.mcafee.com/zh-cn/index.html) | [金山毒霸](https://www.ijinshan.com)
+官网收录：管家类【win 安装版】[腾讯电脑管家](https://guanjia.qq.com)
+杀毒类：[norton](https://cn.norton.com/) | [mcafee](https://www.mcafee.com/zh-cn/index.html) |【win 安装版】[金山毒霸](https://www.ijinshan.com)
 
 #### 2. 浏览器
 
 * 【win 绿色版】[Catsxp 猫眼浏览器](http://www.centbrowser.cn) 鼠标悬停切换标签功能值得点赞。保护隐私、更快捷、更安全
-* 【mac 官网版】[360 极速浏览器](https://browser.360.cn/ee/mac/index.html)
-* 【linux】一般用自带[火狐浏览器](https://www.firefox.com.cn)
+* 【mac】[360 极速浏览器](https://browser.360.cn/ee/mac/index.html) 而非 App Store 版
+* 【linux】[火狐浏览器](https://www.firefox.com.cn)
 
 <!-- more -->
 
-官网收录：【win】[搜狗浏览器](https://sogou.browser.qq.com) |【win】[猎豹浏览器](https://www.liebao.cn) |【全平台】[360 安全浏览器](https://browser.360.cn) |【win mac】[QQ 浏览器](https://browser.qq.com) |【全平台】[微软 Edge](https://www.microsoft.com/zh-cn/edge) |【全平台】[Opera](https://www.opera.com/zh-cn) |【全平台】[谷歌 Chrome 浏览器](https://www.google.cn/intl/zh-CN/chrome) |【win mac】[傲游浏览器](https://www.maxthon.cn) | [Vivaldi](https://vivaldi.com) |【win】[百分浏览器](http://www.centbrowser.cn)
+官网收录：【win】[搜狗浏览器](https://sogou.browser.qq.com) |【win】[猎豹浏览器](https://www.liebao.cn) |【全平台】[360 安全浏览器](https://browser.360.cn) |【win mac】[QQ 浏览器](https://browser.qq.com) |【全平台】[Edge](https://www.microsoft.com/zh-cn/edge) |【全平台】[Opera](https://www.opera.com/zh-cn) |【全平台】[Chrome](https://www.google.cn/intl/zh-CN/chrome) |【win mac】[傲游浏览器](https://www.maxthon.cn) | [Vivaldi](https://vivaldi.com) |【win】[百分浏览器](http://www.centbrowser.cn)
 
 #### 3. 压缩解压
 
 * 【win 安装版】[PeaZip](https://peazip.github.io) 智能解压很好用，记得切换到中文语言，安装版和右键菜单集成的比较好
-* 【mac 官网版】[The Unarchiver](https://theunarchiver.com)
-* liunx 一般用自带的
+* 【mac】The Unarchiver [官网](https://theunarchiver.com) | [appstore](https://apps.apple.com/cn/app/the-unarchiver/id425424353?mt=12) 或 FastZip [官网](https://www.better365.cn/fastzip.html) ｜ [appstore](https://apps.apple.com/cn/app/fastzip-%E4%B8%93%E4%B8%9A%E7%9A%84-rar-7z-zip-%E8%A7%A3%E5%8E%8B%E7%BC%A9%E5%B7%A5%E5%85%B7/id1565629813?mt=12)
+* liunx 一般都实用自带的 tar 命令
 
-官网收录：【win】[WinRAR](https://www.winrar.com.cn) | 【win mac】[Bandizip](https://www.bandisoft.com/bandizip) | 【win】[7-Zip](https://7-zip.org) | 【mac】[FastZip](https://www.better365.cn/fastzip.html) | 【mac】[Keka](https://www.keka.io/en) | 【win mac】[360 压缩](https://yasuo.360.cn)
+官网收录：【win】[WinRAR](https://www.winrar.com.cn) |【win mac】[Bandizip](https://www.bandisoft.com/bandizip) |【win】[7-Zip](https://7-zip.org) |【mac】[FastZip](https://www.better365.cn/fastzip.html) |【mac】[Keka](https://www.keka.io/en) |【win mac】[360 压缩](https://yasuo.360.cn)
 
 #### 4. 输入法
 
-* 【win mac】自带 或者[微信输入法](https://z.weixin.qq.com) 特有云粘贴板功能，支持跨设备粘贴文字和图片
-* 【linux】自带 或者[RIME](https://github.com/rime/home/wiki/RimeWithIBusx)
+* 【win mac】自带 或者[微信输入法](https://z.weixin.qq.com) 特有云粘贴板功能，支持跨设备粘贴文字、图片
+* 【linux】自带 或者 [RIME](https://github.com/rime/home/wiki/RimeWithIBusx)
 
-官网收录：[百度输入法](https://shurufa.baidu.com) | [搜狗输入法](https://shurufa.sogou.com) | [讯飞输入法](https://srf.xunfei.cn) | [QQ 输入法](https://qq.pinyin.cn) | [手心输入法](http://www.xinshuru.com)
+官网收录：【全平台】[百度输入法](https://shurufa.baidu.com) |【全平台】[搜狗输入法](https://shurufa.sogou.com) |【全平台】[讯飞输入法](https://srf.xunfei.cn) |【win】[QQ 输入法](https://qq.pinyin.cn)
 
 ### 1. 工具类
 
 #### 1. 【常用】鼠标手势
 
-* 【win 官网版】[WGestures 1 代](https://www.yingdev.com/projects/wgestures)
-* 【mac 官网版】[betterAndBetter](https://www.better365.cn/bab2.html) 免费且比目前付费的 [WGestures 2 代](https://www.yingdev.com/projects/wgestures2) 更强大，还自带 mac 上需要的翻转鼠标功能，于是我顺便卸载了 [Scroll Reverser](https://pilotmoon.com/scrollreverser)
+* 【win】[WGestures 1 代](https://www.yingdev.com/projects/wgestures)
+* 【mac】[betterAndBetter](https://www.better365.cn/bab2.html)
 * 【linux】KDE 桌面内置了鼠标手势
 
 官网收录：【win】[FastGestures](https://fg.zhaokeli.com) 鼠标/触控板/屏手势
@@ -66,12 +65,12 @@ categories: 我的创作
 
 #### 3. 【常用】截图
 
-* 【win mac】[PixPin](https://pixpinapp.com) 不付费也能体验免费的 OCR 和长截图功能
+* 【win mac】[PixPin](https://pixpinapp.com) 不付费也能体验 OCR 和长截图功能
 * liunx 系统自带
 
 怀旧经典：【win】faststone capture for windows 5.3
 
-官网收录：【全平台】[Snipaste](https://zh.snipaste.com) |【win】[PicPick](https://picpick.app/zh/) |【win】[verycapture](https://verycapture.com/cn/index.html) | 【mac】[iShot](https://www.better365.cn/h-col-134.html)
+官网收录：【全平台】[Snipaste](https://zh.snipaste.com) |【win】[PicPick](https://picpick.app/zh/) |【win】[verycapture](https://verycapture.com/cn/index.html) |【mac】[iShot](https://www.better365.cn/h-col-134.html)
 
 #### 4. 【常用】护眼
 
@@ -118,7 +117,7 @@ categories: 我的创作
 * 【mac】[Picture View](https://wl879.github.io/apps/picview/index.html)
 * liunx 系统自带
 
-官网收录：【win】[XnView](https://www.xnview.com/en/)
+官网收录：【win】[XnView](https://www.xnview.com/en/) |【win】[BandiView](http://www.bandisoft.com/bandiview)
 
 #### 8. 图像处理
 
@@ -238,6 +237,8 @@ not
 
 1. 本地播放：【全平台】[VLC](https://www.videolan.org) /【mac】[INNA](https://iina.io)
 2. 在线平台：【win mac】[哔哩哔哩客户端](https://app.bilibili.com) 其实本地播放也很强
+3. 电视直播：[APTV](https://apps.apple.com/cn/app/aptv/id1630403500)
+4. 视频刮削 [网易 Filmly](https://apps.apple.com/cn/app/%E7%BD%91%E6%98%93filmly-%E6%99%BA%E8%83%BD%E5%AA%92%E4%BD%93%E5%BA%93-%E5%85%A8%E8%83%BD%E6%92%AD%E6%94%BE%E5%99%A8/id6553989480?mt=12)
 
 **linux 平台**
 
@@ -272,13 +273,14 @@ not
 
 **注意：谨防电信网络诈骗，不要被对方以任何理由下载什么各种投屏、云视讯 app 并要求共享屏幕的。**
 
+远程桌面
+
 * 【全平台】[RustDesk](https://rustdesk.com/index.html) – The Open Source Remote Desktop Access Software
 * 备用【全平台】[ToDesk](https://www.todesk.com/download.html)
 
-* 【全平台】[LocalSend](https://localsend.org/download) 局域网文件传输，但是总不好用
-* 【win】[飞秋 FeiQ](http://www.feiq18.com)
+[如何连接 windows 电脑](https://learn.microsoft.com/zh-cn/windows-server/remote/remote-desktop-services/clients/remote-desktop-clients)
 
-官网收录：【全平台】[向日葵](https://sunlogin.oray.com/product/feat)
+官网收录：【全平台】[向日葵](https://sunlogin.oray.com/product/feat) ｜【全平台】[LocalSend](https://localsend.org/download) 局域网文件传输 | [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer) | [TeamViewer](https://www.teamviewer.cn/cn/)
 
 ### 8.启动器
 
@@ -301,6 +303,8 @@ rubick 还不够完整
 not
 
 albert 安装不上
+
+官网收录：【mac】[HapiGo](http://hapigo.com/index.html)
 
 ### 9.阅读类
 
