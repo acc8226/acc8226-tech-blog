@@ -1,7 +1,7 @@
 ---
 title: 合集-PC用开发软件
 date: 2020-06-03 00:22:53
-updated: 2023-11-26 10:49:00
+updated: 2024-10-28 19:52:00
 categories: 我的创作
 ---
 
@@ -12,13 +12,15 @@ categories: 我的创作
 * 【便携版】(app , dmg 镜像但内部依旧是 app 这种形式) 能选择便携包尽量选择它。
 * 【安装版】(pkg 这种形式) 是便携类软件的补充, 可以按需挑选。如果该软件能做到跨平台, 我会优先推荐。
 * 【应用商店版】
-* 【cli】 为命令行程序
-* 【win】 windows 平台有
-* 【全平台】 win、mac、linux 平台都有
+* 【cli】为命令行程序
+* 【win】覆盖了 windows 平台
+* 【全平台】win、mac、linux 平台都有
 * 【免费】
 * 【有免费版】
 * 【付费】
-* 【预览版限免】
+* 【预览版】
+* 【限免】限时免费
+* 【精品软件】对软件的极高评价
 
 挑选软件我尽量考虑以免费为主。
 
@@ -26,10 +28,10 @@ categories: 我的创作
 
 ### Web 构建工具
 
-* [Parcel](https://parceljs.org/) 以其零配置和快速的构建速度而受到开发者的喜爱，适合快速开发。
-* [Turbo](https://turbo.build/) Turbo is an incremental bundler and build system optimized for JavaScript and TypeScript, written in Rust.
-* [Vite](https://cn.vitejs.dev/) 下一代的前端工具链
-* [Webpack](https://www.webpackjs.com/) 功能强大，适用于各种规模的前端项目，支持复杂的构建流程和优化。
+* [Parcel](https://parceljs.org) 以其零配置和快速的构建速度而受到开发者的喜爱，适合快速开发。
+* [Turbo](https://turbo.build) Turbo is an incremental bundler and build system optimized for JavaScript and TypeScript, written in Rust.
+* [Vite](https://cn.vitejs.dev) 下一代的前端工具链
+* [Webpack](https://www.webpackjs.com) 功能强大，适用于各种规模的前端项目，支持复杂的构建流程和优化。
 
 <!-- more -->
 
@@ -37,11 +39,11 @@ categories: 我的创作
 
 #### Ant
 
-[Ant](https://ant.apache.org/) 在早期的 Java 项目中非常流行，它被设计用来驱动软件项目的构建过程，类似于 Make 工具，但它使用 XML（Extensible Markup Language）来描述构建过程和依赖关系，而不是传统的 Makefile。
+[Ant](https://ant.apache.org) 在早期的 Java 项目中非常流行，它被设计用来驱动软件项目的构建过程，类似于 Make 工具，但它使用 XML（Extensible Markup Language）来描述构建过程和依赖关系，而不是传统的 Makefile。
 
 #### Maven
 
-[Maven](https://maven.apache.org/) 是一个构建工具，主要用于 Java 应用程序。由 Apache 软件基金会维护，它使用一个名为 POM（Project Object Model）的 XML 文件来描述项目的构建过程、依赖关系和其他配置信息。
+[Maven](https://maven.apache.org) 是一个构建工具，主要用于 Java 应用程序。由 Apache 软件基金会维护，它使用一个名为 POM（Project Object Model）的 XML 文件来描述项目的构建过程、依赖关系和其他配置信息。
 
 [镜像下载](https://repo.huaweicloud.com/apache/maven/maven-3/)
 
@@ -55,7 +57,7 @@ categories: 我的创作
 
 #### Gradle
 
-[Gradle](https://gradle.org/) 是一个开源的自动化构建系统，它被设计用来支持多语言和多平台的软件项目，尤其是 Java 项目。Gradle 是用 Groovy 和 Kotlin 编写的，它提供了一个基于 Apache Ant 和 Maven 的强大而灵活的构建自动化功能。
+[Gradle](https://gradle.org) 是一个开源的自动化构建系统，它被设计用来支持多语言和多平台的软件项目，尤其是 Java 项目。Gradle 是用 Groovy 和 Kotlin 编写的，它提供了一个基于 Apache Ant 和 Maven 的强大而灵活的构建自动化功能。
 
 [镜像下载](https://mirrors.cloud.tencent.com/gradle/)
 
@@ -87,28 +89,25 @@ repositories {
 
 ### 数据库设计
 
-[PDManer](https://gitee.com/robergroup/pdmaner/releases)
+【全平台】[PDManer](https://gitee.com/robergroup/pdmaner/releases)
 
 ### 数据库管理
 
-* 【win 免费】[HeidiSQL](https://www.heidisql.com/download.php?download=portable-64) mysql 免费客户端
-* 【全平台 付费】[DataGrip](https://www.jetbrains.com/datagrip)
-* 【全平台 预览版限免】[JetBrains Aqua](https://www.jetbrains.com/aqua/)
+* 【全平台 付费】[DataGrip](https://www.jetbrains.com/datagrip)因 为我有 Jetbrain 开源认证，暂时选用
+* 【全平台 免费】[Navicat Premium Lite](https://www.navicat.com.cn/download/navicat-premium-lite) 毕竟免费
 
 maybe
 
-【win mac】[Beekeeper Studio](https://github.com/beekeeper-studio/beekeeper-studio/releases) 社区版功能一般，除非付费版
+* 【win 免费】[HeidiSQL](https://www.heidisql.com/download.php?download=portable-64) mysql 免费客户端
+* 【win mac】[Beekeeper Studio](https://github.com/beekeeper-studio/beekeeper-studio/releases) 社区版功能一般，除非付费版
+* 【全平台】[Studio 3T](https://studio3t.com/download) for MongoDB
+* 【mac】[Sequel Pro](https://sequelpro.com/)
 
 not
 
-* 【win mac】[PGAdmin](https://www.pgadmin.org/download/) 使用不习惯，且只支持 pg
-* 【全平台】[DBeaver Community](https://dbeaver.io/download/) 颜值太低
-* 【全平台】[DbVisualizer](https://www.dbvis.com/) 付费版才好用
-
-**mac 和 linux 平台**
-
-* [Navicat Premium Lite](https://www.navicat.com.cn/download/navicat-premium-lite) 毕竟免费
-* [DataGrip](https://www.jetbrains.com/datagrip) 因为我有 Jetbrain 开源认证，暂时选用
+* 【win mac】[PGAdmin](https://www.pgadmin.org/download) 使用不习惯，且只支持 postgres
+* 【全平台】[DBeaver Community](https://dbeaver.io/download) 颜值太低
+* 【全平台】[DbVisualizer](https://www.dbvis.com) 付费版才好用
 
 ## 3. Docker
 
@@ -122,63 +121,65 @@ vscode 插件推荐：[markdownlint](https://marketplace.visualstudio.com/items?
 
 or
 
-【win 绿色版】[Notepad++](https://www.notepadnext.com/) 不良言论
+* 【win 精品软件 绿色版】[Notepad++](https://github.com/notepad-plus-plus/notepad-plus-plus) 软件是好软件，除了言论
+* 【全平台】[notepad--](https://gitee.com/cxasm/notepad--) npp 的全平台版本，剔除了不良言论
+* 【全平台】[Zed](https://zed.dev) 据说是新一代编辑器，再等等看
+* 【全平台 公共预览版免费】[JetBrains Fleet](https://www.jetbrains.com/fleet) 还是不太好用
 
 not
 
-* 【全平台】[Brackets](https://brackets.io/) - A modern, open source code editor that understands web design
-* 【win】[EverEdit](https://www.everedit.net/) 不好用
-* 【全平台】[Fleet](https://www.jetbrains.com/fleet/) 还是不太好用
-* 【win】[Geany](https://www.geany.org/) 只有安装版的差评，且 UI 目前差点意思
+* 【全平台】[Brackets](https://brackets.io) - A modern, open source code editor that understands web design
+* 【win】[EverEdit](https://www.everedit.net) 不好用
+* 【win】[Geany](https://www.geany.org) 只有安装版的差评，且 UI 目前差点意思
 * 【win】[SimpleNotePad](https://github.com/zhongyang219/SimpleNotePad) 很清爽，可惜先入为主
-* 【全平台】[Sublime Text](https://www.sublimetext.com/) 不太喜欢用
+* 【全平台】[Sublime Text](https://www.sublimetext.com) 不太喜欢用
 * Skylark 没有切换到上个标签
-* 【全平台】[notepad--](https://gitee.com/cxasm/notepad--) 还不太完善
-* 【全平台】[notepadnext](https://www.notepadnext.com/) A cross-platform, reimplementation of Notepad++. 还不太完善
+* 【win mac】[notepadnext](https://www.notepadnext.com) A cross-platform, reimplementation of Notepad++. 还不太完善
 * 【全平台】[Phoenix Code](https://phcode.io/#/home) 还不太完善
-
+* ——————— ฅ՞• •՞ฅ ———————
 * 【已过时】[Atom](https://github.com/atom/atom/)
 
 ## 5. file compare 文件对比
 
-【Win】[WinMerge](https://winmerge.org/) | [下载页](https://winmerge.org/downloads/?lang=en) 用于比较文件夹和文件，以便于理解和处理的可视文本格式呈现差异。是我离不开 windows 的一个重要原因
+【Win 精品软件】[WinMerge](https://winmerge.org) | [下载页](https://winmerge.org/downloads/?lang=en) 用于比较文件夹和文件，以便于理解和处理的可视文本格式呈现差异。是我离不开 windows 的一个重要原因
 
 备用
 
-[meld for windows](https://mirrors.ustc.edu.cn/gnome/binaries/win32/meld/)
+【全平台 免费】[Meld](https://mirrors.ustc.edu.cn/gnome/binaries/win32/meld)
 
 not
 
-【全平台 付费】[Beyond Compare 4](https://www.beyondcompare.cc/)
+【全平台 付费】[Beyond Compare](https://www.beyondcompare.cc)
 
 **mac 和 linux 平台**
 
-【全平台 免费】[meld](https://meld.app/) 新版本颜值很高
+【全平台 免费】[Meld](https://meld.app) 妥妥的 GNOME 风格，颜值非常 nice
 
 ## 6.【常用】IDE 集成开发环境
 
-* [eclipse](https://www.eclipse.org/downloads/) 貌似不太受欢迎且目前看内存占用至少 1 个 G
-* [HBuilder X](https://www.dcloud.io/hbuilderx.html)
-* [IntelliJ IDEA](https://www.jetbrains.com/idea/)，其中 [EPA 版本](https://www.jetbrains.com/resources/eap/)更新太频繁就不推荐了
-* [PyCharm](https://www.jetbrains.com/zh-cn/pycharm/download)
-* [SpringTools](https://spring.io/tools)
-* [微信开发者工具](https://developers.weixin.qq.com/miniprogram/dev/devtools/devtools.html)
-* c/c++ <https://github.com/Embarcadero/Dev-Cpp> 或 [C-Free](http://www.programarts.com/cfree_ch/index.htm)
-
-not
-
-* [CodeBlocks](https://www.codeblocks.org/) 界面太古老
-* [Writerside](https://www.jetbrains.com.cn/writerside/) 虽然是 jetbrains 出品，但操作太复杂了，不太好用
+* 【win mac 国产】[HBuilder X](https://www.dcloud.io/hbuilderx.html)
+* 【win】[C-Free](http://www.programarts.com/cfree_ch/index.htm)
+* 【win mac】[微信开发者工具](https://developers.weixin.qq.com/miniprogram/dev/devtools/devtools.html)
+* ——————— ฅ՞• •՞ฅ ———————
+* 【全平台】[Eclipse](https://www.eclipse.org/downloads) 貌似不太受欢迎且目前看内存占用至少 1 个 G
+* 【全平台 社区版免费】[IntelliJ IDEA](https://www.jetbrains.com.cn/idea/)，其中 [EPA 版本](https://www.jetbrains.com/resources/eap/) 更新太频繁不推荐
+* 【全平台 社区版免费】[PyCharm](https://www.jetbrains.com.cn/pycharm/)
+* 【全平台 对非商业用途免费】[WebStorm](https://www.jetbrains.com.cn/webstorm/)
+* 【全平台 免费】[SpringTools](https://spring.io/tools)
+* 【全平台 付费】[CLion](https://www.jetbrains.com.cn/clion/) for c/c++
+* 【win】[Dev c++](https://github.com/Embarcadero/Dev-Cpp)
+* 【win mac】[Visual Studio](https://visualstudio.microsoft.com/zh-hans/) 你可以使用 C#、F# 或 Visual Basic 语言编写 .NET 应用
+* 【全平台】[Code::Blocks](https://www.codeblocks.org) 界面不那么现代
 
 ## 7.【常用】lang 编程语言
 
 ### Autohotkey
 
-【win】Autohotkey [官网](https://www.autohotkey.com/) | [下载](https://www.autohotkey.com/download/) - The ultimate automation scripting language.
+【win】[Autohotkey](https://www.autohotkey.com) - [下载](https://www.autohotkey.com/download) 一款自动化脚本语言。
 
 ### C#
 
-[C# 指南-.NET 托管语言](https://learn.microsoft.com/zh-cn/dotnet/csharp/) | Microsoft Learn
+[C# 指南-.NET 托管语言](https://learn.microsoft.com/zh-cn/dotnet/csharp) | Microsoft Learn
 
 ### Dart
 
@@ -263,50 +264,42 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
 ### http 调试
 
-* httpie/desktop [官网下载](https://httpie.io/download) | [Releases](https://github.com/httpie/desktop/releases) HTTPie 有桌面版和 cli 版，cross-platform API testing client for humans. Painlessly test REST, GraphQL, and HTTP APIs. 
-* [SoapUI](https://www.soapui.org/downloads/soapui/)
-* [Reqable](https://reqable.com/zh-CN/) 也可用于抓包
+* 【全平台】[httpie 桌面版](https://httpie.io/download) | [Releases](https://github.com/httpie/desktop/releases) HTTPie 有桌面版和 cli 版，cross-platform API testing client for humans. Painlessly test REST, GraphQL, and HTTP APIs. 
+* 【mac】[RapidAPI](https://paw.cloud) 颜值功能都在线
+* 【win mac】[SoapUI](https://www.soapui.org/downloads/soapui/)
+* 【全平台】[Reqable](https://reqable.com/zh-CN) 也可用于抓包
 
 not
 
-* [Apifox](https://apifox.com/) 必须联网才能登录，不过功能还是很多的
-* [ApiPost](https://www.apipost.cn/) 功能缺失，不能导入 curl 请求
+* [Apifox](https://apifox.com) 必须联网才能登录，不过功能很多
+* [ApiPost](https://www.apipost.cn) 功能缺失，不能导入 curl 请求
 * [Eolink Apikit](https://www.eolink.com/apikit) 需要注册
-* [Insomnia](https://insomnia.rest/) 不是多标签风格的软件，不太考虑
-* [Postcat](https://postcat.com/) 功能还不太完善
-* [Postman](https://www.postman.com/) 不好用 必须登录
-
-**mac 平台**
-
-【mac】[RapidAPI](https://paw.cloud) The most advanced API tool for Mac
-
-**linux 平台**
-
-[httpie/desktop](https://httpie.io/download)
+* [Insomnia](https://insomnia.rest) 不是多标签风格的软件，不太考虑
+* [Postcat](https://postcat.com) 功能还不太完善
+* [Postman](https://www.postman.com) 不好用 必须登录
 
 ### mqtt 调试
 
-[mqttx](https://mqttx.app)
+【全平台】[mqttx](https://mqttx.app)
 
 ### Packet capture 抓包
 
-* 【win mac 安装版】[Charles](https://www.charlesproxy.com) is an HTTP proxy / HTTP monitor / Reverse Proxy
-* 【win mac】[fidder](https://www.telerik.com/fiddler)
+* 【win mac】[Charles](https://www.charlesproxy.com) is an HTTP proxy / HTTP monitor / Reverse Proxy
+* 【win mac】[Fiddler](https://www.telerik.com/fiddler)
 
-## 10. package manager 包管理器
+## 10. Package manager 包管理器
 
-【全平台】[sdkman](https://sdkman.io/) The Software Development Kit Manager
-
-【mac linux】[Homebrew](https://brew.sh/zh-cn/) The Missing Package Manager for macOS (or Linux)
-
-【linux】[AppImage](https://appimage.org/) 让 Linux 应用随处运行
-
+* 【全平台】[sdkman](https://sdkman.io) The Software Development Kit Manager
+* 【mac linux】[Homebrew](https://brew.sh/zh-cn) The Missing Package Manager for macOS (or Linux)
+* 【linux】[AppImage](https://appimage.org) 让 Linux 应用随处运行
 * 【win】[Scoop](https://scoop.sh/#/)
-* 【win】[chocolatey](https://chocolatey.org/) The Package Manager for Windows
-* 【win】[scoop](https://scoop.sh/) A command-line installer for Windows
-* 【win】[winget](https://learn.microsoft.com/zh-cn/windows/package-manager/winget/) 微软 Windows 程序包管理器
+* 【win】[chocolatey](https://chocolatey.org) The Package Manager for Windows
+* 【win】[scoop](https://scoop.sh) A command-line installer for Windows
+* 【win】[winget](https://learn.microsoft.com/zh-cn/windows/package-manager/winget) 微软 Windows 程序
 
-【JavaScript】[Yarn](https://www.yarnpkg.cn/) - JavaScript 软件包管理器
+包管理器
+
+* 【JavaScript】[Yarn](https://www.yarnpkg.cn) - JavaScript 软件包管理器
 
 ## 11. Redis
 
@@ -314,7 +307,7 @@ not
 
 Redis is an in-memory database that persists on disk. The data model is key-value, but many different kind of values are supported: Strings, Lists, Sets, Sorted Sets, Hashes, Streams, HyperLogLogs. 
 
-[下载](https://redis.io/download/) | [tporadowski/redis: Native port of Redis for Windows](https://github.com/tporadowski/redis) 
+[下载](https://redis.io/download) | [tporadowski/redis: Native port of Redis for Windows](https://github.com/tporadowski/redis) 
 
 ### QuickRedis
 
@@ -324,9 +317,8 @@ Redis is an in-memory database that persists on disk. The data model is key-valu
 
 ## 12. ref 参考文档
 
-【win】[Zeal](https://zealdocs.org/) Offline Documentation Browser
-
-【macOS】[Dash](https://kapeli.com/dash) API Documentation Browser, Snippet Manager - Kapeli
+* 【win】[Zeal](https://zealdocs.org) Offline Documentation Browser
+* 【mac】[Dash](https://kapeli.com/dash) API Documentation Browser, Snippet Manager - Kapeli
 
 ## 13.【常用】revision control 版本控制
 
@@ -334,7 +326,7 @@ Redis is an in-memory database that persists on disk. The data model is key-valu
 
 macOS 和 linux 系统一般都自带 git, 如果想要体验最新版, 可以去 [Git 官网](https://git-scm.com)下载体验。通常更推荐 [Git 镜像地址](https://registry.npmmirror.com/binary.html?path=git-for-windows)
 
-VSCode 和 IDEA 会自带 Git 功能。特别的如果是 windows 系统推荐搭配 [TortoiseGit](https://tortoisegit.org/download/) 简称小乌龟。
+VSCode 和 IDEA 会自带 Git 功能。特别的如果是 windows 系统推荐搭配【win 精品软件 安装版】[TortoiseGit](https://tortoisegit.org/download) 简称小乌龟。
 
 不喜欢 TortoiseGit 的用户可以试试【win mac】[Sourcetree](https://www.sourcetreeapp.com)
 
@@ -342,7 +334,7 @@ VSCode 和 IDEA 会自带 Git 功能。特别的如果是 windows 系统推荐�
 
 ### SVN
 
-【安装版】TortoiseSVN [下载](https://tortoisesvn.net/downloads.html) - 一款 svn 增强工具，是我离不开 windows 的一个重要原因
+【 win 精品软件 安装版】TortoiseSVN [下载](https://tortoisesvn.net/downloads.html) - 一款 svn 增强工具，是我离不开 windows 的一个重要原因
 
 not
 
@@ -369,17 +361,15 @@ not
 
 ## 15. ssh & ftp 文件传输
 
-### PC 端
-
-首推【全平台】[Termius](https://www.termius.com/)
+【全平台 精品软件】[Termius](https://www.termius.com/)
 
 and
 
-【Windows 便携版】WinSCP [官网](https://winscp.net/eng/index.php) | [下载](https://winscp.net/eng/downloads.php) - Free SFTP and FTP client
+【Windows 精品软件 免费 便携版】WinSCP [官网](https://winscp.net/eng/index.php) | [下载](https://winscp.net/eng/downloads.php) - Free SFTP and FTP client
 
 or
 
-【win 免费】[xshell 家庭/学校免费版](https://www.xshell.com/zh/free-for-home-school/)
+【win 精品软件 免费】[xshell 家庭/学校免费版](https://www.xshell.com/zh/free-for-home-school/)
 
 【win 便携】putty
 
@@ -388,27 +378,34 @@ or
 
 not
 
-* [FileZilla](https://www.filezilla.cn/) 虽说跨平台使用，但是界面我不太喜欢
-* [flashfxp](https://www.flashfxp.com/) 是付费产品我就不推荐了
+* [FinalShell](http://www.hostbuf.com) 只有安装版，不好用
+* [FileZilla](https://www.filezilla.cn) 虽说跨平台使用，但是界面我不太喜欢
+* [flashfxp](https://www.flashfxp.com) 是付费产品我就不推荐了
 * Bitvise SSH Client 直接不好用
 * 【全平台】[tabby](https://github.com/Eugeny/tabby) 界面不够友好
 * 【Mac AppStore 版】App Store 搜索 Zen Term
-* 【win】[mobaxterm](https://mobaxterm.mobatek.net/) 界面有点丑
+* 【win】[mobaxterm](https://mobaxterm.mobatek.net) 界面有点丑
 * 【web】[sshwifty](https://github.com/nirui/sshwifty/releases) 功能不太全，且目前不太好用
-* 【win mac】[XTerminal](http://xterminal.cn/) 颜值不够高
+* 【win mac】[XTerminal](http://xterminal.cn) 颜值不够高
 * 【win】[VanDyke SecureCRT](https://www.vandyke.com/products/securecrt/index.html) 卡死了且界面老旧还付费
 
 **mac 平台**
 
-依旧 [termius](https://www.termius.com/) 免费订阅模式 + ZenTermLite 用于 sz 和 rz
+依旧 [termius](https://www.termius.com) 免费订阅模式 + ZenTermLite 用于 sz 和 rz
 
 **linux 平台**
 
-依旧 [termius](https://www.termius.com/) 免费订阅模式
+依旧 [termius](https://www.termius.com) 免费订阅模式
 
-### 手机端
+### xshell 设置
 
-【Android】[JuiceSSH-Free SSH client](https://juicessh.com/)
+**xshell 连接断开自动重连的设置**
+
+![xshell 连接断开自动重连的设置](./imgs/%E4%B8%93%E9%A2%98-%E7%A0%81%E5%86%9C%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/xshell%E8%BF%9E%E6%8E%A5%E6%96%AD%E5%BC%80%E8%87%AA%E5%8A%A8%E9%87%8D%E8%BF%9E%E7%9A%84%E8%AE%BE%E7%BD%AE.png)
+
+**保持活动状态**
+
+![保持活动状态](./imgs/%E4%B8%93%E9%A2%98-%E7%A0%81%E5%86%9C%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/%E4%BF%9D%E6%8C%81%E6%B4%BB%E5%8A%A8%E7%8A%B6%E6%80%81.png)
 
 ## 16.terminal 终端
 
@@ -430,7 +427,35 @@ Windows 终端是一个新式主机应用程序，它面向你喜爱的命令行
 
 【mac】[iTerm 2](https://www.iterm2.com/downloads.html) 该工具结合 Oh My Zsh 可能会带来不一样的体验
 
-## 17.框架
+### 【win】MSYS2
+
+[MSYS2](https://www.msys2.org/) 是一个 Windows 软件分发与构建平台
+MSYS2 还是一组工具和库，为您提供了一个易于使用的环境，用于构建、安装和运行本机Windows软件。
+
+带了一个包管理器，可以安装 c 编译器 gcc。也算一个终端，还可以运行 linux 命令
+
+## 17. shell 环境
+
+### 【跨平台】PowerShell
+
+[PowerShell](https://learn.microsoft.com/zh-cn/powershell/scripting/overview)
+
+是一种跨平台的任务自动化解决方案，由命令行 shell、脚本语言和配置管理框架组成。 PowerShell 在 Windows、Linux 和 macOS 上运行。
+完善了命令行历史记录功能，还包含丰富的定制项。可作为 bash 的替代品。
+
+高级用户可使用 zip 压缩包解压即用。
+
+[PowerShell-7.4.0-win-x64.zip](https://github.com/PowerShell/PowerShell/releases/download/v7.4.0/PowerShell-7.4.0-win-x64.zip)
+
+### 【mac linux】zsh
+
+mac 已经将 zsh 取代 bash 作为默认 shell 了
+
+## 18.UML 图绘制
+
+* 【全平台】[StarUML](https://staruml.io)【30 天试用后付费】一个画 uml 的工具，还行，可能不够通用吧
+
+## 19.框架
 
 ### 数据库连接池
 
@@ -444,53 +469,17 @@ Windows 终端是一个新式主机应用程序，它面向你喜爱的命令行
 ### UI 框架
 
 * [Element](https://element.eleme.cn/#/zh-CN) 一套为开发者、设计师和产品经理准备的基于 Vue 2.0 的桌面端组件库
-* [Element Plus](https://cn.element-plus.org/zh-CN/) 一个 Vue 3 UI 框架 | [指南](https://element-plus.org/zh-CN/guide/design.html)
+* [Element Plus](https://cn.element-plus.org/zh-CN) 一个 Vue 3 UI 框架 | [指南](https://element-plus.org/zh-CN/guide/design.html)
 
 ### 跨平台应用程序框架
 
-* [Electron](https://www.electronjs.org/zh/) 一个使用 JavaScript, HTML 和 CSS 开发跨平台桌面应用程序的框架，它允许开发者通过 Web 技术构建桌面软件，并提供丰富的 API 来调用操作系统的功能。
-* 【Dart】[Flutter](https://flutter.dev/) 一个由 Google 支持的开源框架，允许开发者使用 Dart 语言编写一次代码，然后编译成适用于 Android、iOS、Web 和桌面平台的高性能、可定制的原生界面应用程序。
-* [Tauri](https://v2.tauri.app/) 用于构建适用于所有主要桌面和移动平台的小巧、快速的二进制文件的框架
+* [Electron](https://www.electronjs.org/zh) 一个使用 JavaScript, HTML 和 CSS 开发跨平台桌面应用程序的框架，它允许开发者通过 Web 技术构建桌面软件，并提供丰富的 API 来调用操作系统的功能。
+* 【Dart】[Flutter](https://flutter.dev) 一个由 Google 支持的开源框架，允许开发者使用 Dart 语言编写一次代码，然后编译成适用于 Android、iOS、Web 和桌面平台的高性能、可定制的原生界面应用程序。
+* [Tauri](https://v2.tauri.app) 用于构建适用于所有主要桌面和移动平台的小巧、快速的二进制文件的框架
 
 ### Java Web 应用程序框架
 
 RuoYi 是一个基于 Spring Boot 的权限和流程管理的 Java Web 应用程序框架。它旨在简化企业应用程序的开发，提供一个通用的后台管理框架，使得开发者可以快速构建出功能完备的后台管理系统。
-
-### 18. 效率工具
-
-#### uTools
-
-【全平台】uTools 不止是一个启动器
-
-#### MyKeymap
-
-【windows】[MyKeymap](https://xianyukang.com/MyKeymap.html) 是 Windows 下的一款按键映射 / 快捷键增强工具
-
-#### 捷键
-
-【windows】捷键【开发者自荐】基于 Autohotkey2 开发，为简化 Windows 键鼠操作而生的键鼠增强工具。重新定义了一套快捷键方案，并充分发掘带侧键鼠标的潜力。又能作为一个高效启动器，最后还对热字符支持良好。
-[视频演示](https://www.bilibili.com/video/BV19H4y1e7hJ?vd_source=54168537affc2c02555097cb26797d99) | [下载地址](https://share.feijipan.com/s/bAAKufr3)
-
-#### 鼠标手势
-
-【win 免费 安装版】WGestures 1 [官网](https://www.yingdev.com/projects/wgestures)；【mac 免费】**betterAndBetter**；【linux】KDE 自定义快捷键中的鼠标手势。
-
-### 19.其他
-
-### 【跨平台】PowerShell
-
-[PowerShell](https://learn.microsoft.com/zh-cn/powershell/scripting/overview)
-
-是一种跨平台的任务自动化解决方案，由命令行 shell、脚本语言和配置管理框架组成。 PowerShell 在 Windows、Linux 和 macOS 上运行。
-完善了命令行历史记录功能，还包含丰富的定制项。可作为 bash 的替代品。
-
-高级用户可使用 zip 压缩包解压即用。
-
-[PowerShell-7.4.0-win-x64.zip](https://github.com/PowerShell/PowerShell/releases/download/v7.4.0/PowerShell-7.4.0-win-x64.zip)
-
-### 【win】[MSYS2](https://www.msys2.org/)
-
-带一个包管理器，可以安装 c 编译器 gcc。也算一个终端吧，还兼容 linux 命令
 
 ### 性能测试和分析
 
@@ -498,12 +487,12 @@ RuoYi 是一个基于 Spring Boot 的权限和流程管理的 Java Web 应用程
 
 ### 代码质量与覆盖率分析
 
-* 【Java】[jacoco](https://www.jacoco.org/jacoco/) 用于代码覆盖率分析，帮助开发者了解测试覆盖情况。
-* 【Java】[sonarqube](https://www.sonarsource.com/products/sonarqube/) 用于代码质量检测，提供代码审查和持续的代码质量检测。
+* 【Java】[jacoco](https://www.jacoco.org/jacoco) 用于代码覆盖率分析，帮助开发者了解测试覆盖情况。
+* 【Java】[sonarqube](https://www.sonarsource.com/products/sonarqube) 用于代码质量检测，提供代码审查和持续的代码质量检测。
 
 ### 持续集成与持续交付 (CI/CD)
 
-* 【Java】[jenkins](https://www.jenkins.io/) 一个流行的开源自动化服务器，用于自动化各种任务，包括构建、测试和部署
+* 【Java】[jenkins](https://www.jenkins.io) 一个流行的开源自动化服务器，用于自动化各种任务，包括构建、测试和部署
 
 ### 微服务架构与服务治理
 
@@ -512,7 +501,7 @@ RuoYi 是一个基于 Spring Boot 的权限和流程管理的 Java Web 应用程
 
 ### 分布式协调服务
 
-* 【Java】[Zookeeper](https://zookeeper.apache.org/) 用于分布式应用程序的协调服务，常用于管理分布式环境中的配置信息、命名、提供分布式同步和提供组服务等。
+* 【Java】[Zookeeper](https://zookeeper.apache.org) 用于分布式应用程序的协调服务，常用于管理分布式环境中的配置信息、命名、提供分布式同步和提供组服务等。
 
 ### Android 逆向工程
 
@@ -521,24 +510,13 @@ RuoYi 是一个基于 Spring Boot 的权限和流程管理的 Java Web 应用程
 
 ### Java 反编译
 
-* 【Java】[Jd-gui](http://java-decompiler.github.io/) 一个 Java 反编译器工具，允许用户查看 Java 编译后的字节码中的源代码
+* 【Java】[Jd-gui](http://java-decompiler.github.io) 一个 Java 反编译器工具，允许用户查看 Java 编译后的字节码中的源代码
 
-## 其他软件
+## 一些思考
 
-### xshell 设置
+### 软件都应该有导入导出功能
 
-**xshell 连接断开自动重连的设置**
-
-![xshell 连接断开自动重连的设置](./imgs/%E4%B8%93%E9%A2%98-%E7%A0%81%E5%86%9C%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/xshell%E8%BF%9E%E6%8E%A5%E6%96%AD%E5%BC%80%E8%87%AA%E5%8A%A8%E9%87%8D%E8%BF%9E%E7%9A%84%E8%AE%BE%E7%BD%AE.png)
-
-**保持活动状态**
-
-![保持活动状态](./imgs/%E4%B8%93%E9%A2%98-%E7%A0%81%E5%86%9C%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/%E4%BF%9D%E6%8C%81%E6%B4%BB%E5%8A%A8%E7%8A%B6%E6%80%81.png)
-
-### 软件应该都有导入导出功能
-
-XShell 拥有较为实用的导入导出配置文件的功能。特别是切换机器的时候用比较方便。
-同样的，heidisql 和 WinSCP 也有该功能。
+XShell 拥有较为实用的导入导出配置文件的功能。特别是切换机器的时候用比较方便。同样的，heidisql 和 WinSCP 也有该功能。
 
 ![heidisql 导出功能](./imgs/%E4%B8%93%E9%A2%98-%E7%A0%81%E5%86%9C%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/heidisql%20%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD.png)
 
@@ -547,13 +525,3 @@ XShell 拥有较为实用的导入导出配置文件的功能。特别是切换�
 ![Xshell 导出功能](./imgs/%E4%B8%93%E9%A2%98-%E7%A0%81%E5%86%9C%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/Xshell%20%E5%AF%BC%E5%87%BA%E5%8A%9F%E8%83%BD.png)
 
 > 只有导入时设置主密码的时候要和导出时的主密码一致即可保存所有会话的密码
-
-## 留观中
-
-* [starUML](https://staruml.io/) 【付费】一个画 uml 的工具，还行，可能不够通用吧
-* [cursor](https://www.cursor.com/) 一款智能提示编写代码片段，现阶段暂时不好用
-* [finalshell](http://www.hostbuf.com/) 只有安装版，不好用
-
-## 回收站
-
-空
