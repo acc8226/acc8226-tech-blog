@@ -1,7 +1,7 @@
 ---
 title: 合集-PC用日常软件
 date: 2023-03-22 21:02:00
-updated: 2024-10-26 19:03:06
+updated: 2024-10-28 17:07:42
 categories: 我的创作
 ---
 
@@ -22,7 +22,7 @@ categories: 我的创作
 * 如果是 win 平台推荐【win 安装版】[微软电脑管家](https://pcmanager.microsoft.com/zh-cn) +【win 安装版】[火绒安全软件](https://www.huorong.cn)
 * 如果是 mac 平台则推荐【mac】[腾讯柠檬清理（腾讯电脑管家 for mac）](https://lemon.qq.com) 主打清理电脑垃圾文件，一键释放磁盘空间。因 App Store 审核限制，完整版内部分功能无法上架（例如应用卸载等）。建议去官网下载完整版。
 
-官网收录：管家类【win 安装版】[腾讯电脑管家](https://guanjia.qq.com) | 杀毒类：[norton](https://cn.norton.com) | [mcafee](https://www.mcafee.com/zh-cn/index.html) |【win 安装版】[金山毒霸](https://www.ijinshan.com)
+官网收录：管家类【win 安装版】[腾讯电脑管家](https://guanjia.qq.com) | 杀毒类：[Norton](https://cn.norton.com) | [McAfee](https://www.mcafee.com/zh-cn/index.html) |【win 安装版】[金山毒霸](https://www.ijinshan.com)
 
 #### 2. 浏览器
 
@@ -54,7 +54,7 @@ categories: 我的创作
 #### 1.【常用】鼠标手势
 
 * 【win】[WGestures 1 代](https://www.yingdev.com/projects/wgestures)
-* 【mac】[betterAndBetter](https://www.better365.cn/bab2.html)
+* 【mac】[BetterAndBetter](https://www.better365.cn/bab2.html)
 * 【linux】KDE 桌面内置了鼠标手势
 
 官网收录：【win】[FastGestures](https://fg.zhaokeli.com) 鼠标/触控板/屏手势
@@ -67,7 +67,7 @@ categories: 我的创作
 
 #### 3.【常用】截图
 
-* 【win mac】[PixPin](https://pixpinapp.com) 不付费也能体验 OCR 和长截图功能
+* 【win mac】[PixPin](https://pixpinapp.com) 不付费也能使用 OCR 和长截图功能
 * liunx 系统自带
 
 怀旧经典：【win】faststone capture for windows 5.3
@@ -78,7 +78,7 @@ categories: 我的创作
 
 **windows 平台**
 
-【win mac】【安装版】[f.lux](https://justgetflux.com) +【win】[捷键-定时提醒](https://feipig.fun/zh-cn/4c2b72aaa7d0)
+【win mac】[f.lux](https://justgetflux.com) +【win 自荐】[捷键-定时提醒](https://feipig.fun/zh-cn/4c2b72aaa7d0)
 
 **mac 平台**
 
@@ -131,7 +131,7 @@ categories: 我的创作
 
 #### 9. 密码管理
 
-【全平台】【[mac](https://apps.apple.com/cn/app/bitwarden/id1352778147?mt=12)】[BitWarden](https://bitwarden.com) 一款全平台的密码管理软件。轻度使用安装浏览器插件即可，重度使用可以安装该软件
+【全平台】【[mac 版](https://apps.apple.com/cn/app/bitwarden/id1352778147?mt=12)】[BitWarden](https://bitwarden.com) 一款全平台的密码管理软件。轻度使用安装浏览器插件即可，重度使用可以安装该软件
 
 官网收录：付费【全平台】【[mac 版](https://apps.apple.com/cn/app/1password-7-password-manager/id1333542190?mt=12)】[1Password](https://1password.com/zh-cn)
 
@@ -237,10 +237,10 @@ not
 
 **mac 平台**
 
-1. 本地播放：【全平台】[VLC](https://www.videolan.org) /【mac】[INNA](https://iina.io)
-2. 在线平台：【win mac】[哔哩哔哩客户端](https://app.bilibili.com) 其实本地播放也很强
-3. 电视直播：[APTV](https://apps.apple.com/cn/app/aptv/id1630403500)
-4. 视频刮削 [网易 Filmly](https://apps.apple.com/cn/app/%E7%BD%91%E6%98%93filmly-%E6%99%BA%E8%83%BD%E5%AA%92%E4%BD%93%E5%BA%93-%E5%85%A8%E8%83%BD%E6%92%AD%E6%94%BE%E5%99%A8/id6553989480?mt=12)
+1. 本地播放【全平台】[VLC](https://www.videolan.org) /【mac】[INNA](https://iina.io)
+2. 在线平台【win mac】[哔哩哔哩客户端](https://app.bilibili.com) 其实本地播放也很强
+3. 电视直播【mac】[APTV](https://apps.apple.com/cn/app/aptv/id1630403500)
+4. 视频刮削【mac】[网易 Filmly](https://apps.apple.com/cn/app/%E7%BD%91%E6%98%93filmly-%E6%99%BA%E8%83%BD%E5%AA%92%E4%BD%93%E5%BA%93-%E5%85%A8%E8%83%BD%E6%92%AD%E6%94%BE%E5%99%A8/id6553989480?mt=12)
 
 **linux 平台**
 
@@ -283,15 +283,11 @@ not
 
 **windows 平台**
 
-【Win】[捷键](https://feipig.fun/zh-cn/4c2b72aaa7d0) 我当然更推荐自己开发的软件，已经包含了该功能，使用 alt + 空格可以呼出
+【win 自荐】[捷键](https://feipig.fun/zh-cn/4c2b72aaa7d0) 我当然更推荐自己开发的软件，已经包含了该功能，使用 alt + 空格可以呼出
 
 **mac 平台**
 
 【mac】[Raycast](https://www.raycast.com)
-
-备用
-
-【全平台】[utools](https://u.tools)
 
 not
 
@@ -493,20 +489,20 @@ or
 
 ### 8.markdown 编辑
 
-【全平台】[marktext](https://github.com/marktext/marktext/releases 'markdown 编辑')
+【全平台】[MarkText](https://github.com/marktext/marktext/releases 'markdown 编辑')
 
 not
 
-* 【全平台】[typora](https://typoraio.cn) 虽然功能强大，且适合初学者，收费有条件支持下
+* 【全平台】[Typora](https://typoraio.cn) 虽然功能强大，且适合初学者，收费有条件支持下
 * 【win】[MarkdownPad2](http://markdownpad.com) 感觉差点意思
 
 - - -
 
-mac 平台据说 【mac】[ulysses](https://www.ulysses.app/zh) 评价很高，但收费就算了
+mac 平台据说 【mac】[Ulysses](https://www.ulysses.app/zh) 面向 Mac、iPad 和 iPhone 的终极写作应用，但收费就算了
 
 ### 9.大文件分析
 
-推荐【win】[wiztree](https://www.diskanalyzer.com)
+推荐【win】[WizTree](https://www.diskanalyzer.com)
 
 or
 
@@ -514,7 +510,7 @@ or
 
 or
 
-备用【win 安装版】[treesize](https://www.jam-software.com/treesize/editions.shtml)
+备用【win 安装版】[TreeSize](https://www.jam-software.com/treesize/editions.shtml)
 
 ### 10.【常用】清理卸载
 
@@ -528,7 +524,7 @@ or
 
 not
 
-* 【win mac】[ccleaner](https://www.ccleaner.com/zh-cn/ccleaner) 只有安装版差评
+* 【win mac】[CCleaner](https://www.ccleaner.com/zh-cn/ccleaner) 只有安装版差评
 * 【绿色版】[RevoUninstaller 免费版](https://www.revouninstaller.com/products/revo-uninstaller-free) 界面有点旧
 
 **mac 平台**
@@ -566,7 +562,7 @@ iOS 用户可下载【win mac】 [iTunes](https://www.apple.com.cn/itunes) 或�
 ### 14. 磁盘分区
 
 * 【win】[傲梅分区助手](https://www.disktool.cn/download.html)
-* 【win】[diskgenius](https://www.diskgenius.cn)
+* 【win】[DiskGenius](https://www.diskgenius.cn)
 
 ### 15. 刻录烧录
 
@@ -578,11 +574,11 @@ iOS 用户可下载【win mac】 [iTunes](https://www.apple.com.cn/itunes) 或�
 
 * 【win 备用】[微 PE 工具箱](https://www.wepe.com.cn) - 装机维护工具。无广主打纯
 * 【全平台】[balenaEtcher](https://etcher.balena.io) 还可以烧录树莓派
-* [Raspberry Pi Imager](https://www.raspberrypi.com/for-home) 树莓派专用烧录到 SD 卡的工具
+* 【win mac】[Raspberry Pi Imager](https://www.raspberrypi.com/for-home) 树莓派专用烧录到 SD 卡的工具
 
 not
 
-[Rufus](https://rufus.ie/zh) 其实还不错，但是和 Ventoy 相比我更偏爱 Ventoy
+【win】[Rufus](https://rufus.ie/zh) 其实还不错，但是和 Ventoy 相比我更偏爱 Ventoy
 
 ### 16.微软 buff
 
@@ -608,20 +604,20 @@ not
 
 ### 20. 文件重命名
 
-[ReNamer](http://www.den4b.com/products/renamer)
+【win】[ReNamer](http://www.den4b.com/products/renamer)
 
 ### 21. IPTV 相关
 
-[IPTV+Checker+2.5汉化版](https://www.mediafire.com/file/y7edgxkydtp728o/IPTV+Checker+2.5%E6%B1%89%E5%8C%96%E7%89%88.rar/file)
+【win】[IPTV+Checker+2.5汉化版](https://www.mediafire.com/file/y7edgxkydtp728o/IPTV+Checker+2.5%E6%B1%89%E5%8C%96%E7%89%88.rar/file)
 
 ### 22. 备份恢复
 
-[傲梅备份](https://www.abackup.com)
+【win】[傲梅备份](https://www.abackup.com)
 
 ### 23.软件管家
 
-* [火绒应用商店](https://www.huorong.cn/appstore)
-* [联想应用商店](https://lestore.lenovo.com)
+* 【win】[火绒应用商店](https://www.huorong.cn/appstore)
+* 【win】[联想应用商店](https://lestore.lenovo.com)
 
 ### 24.mac 特有
 
@@ -635,7 +631,7 @@ not
 
 #### 键指如飞 FlyKey
 
-[键指如飞](https://www.better365.cn/FlyKey.html) 一键展示Mac快捷键，超强的Mac快捷键大全
+[键指如飞](https://www.better365.cn/FlyKey.html) 一键展示 Mac 快捷键
 
 ### 25.windows 特有
 
@@ -719,7 +715,7 @@ not
 * 【win 安装版】[格式工厂](http://www.pcgeshi.com/index.html) 全功能转换
 * 【全平台】[HandBrake](https://handbrake.fr) 视频转换
 
-官网收录：【mac】[即刻转换](https://zh.okaapps.com/product/1637557903)
+官网收录：【mac】[即刻转换](https://zh.okaapps.com/product/1637557903) 即刻转换是一款功能全面的格式转换软件，支持转换几乎所有主流的多媒体文件格式
 
 ### 06. 包管理器
 
@@ -734,9 +730,8 @@ not
 
 ## 游戏
 
-【win mac】[战网 | Battle.net](https://download.battle.net/zh-tw/desktop)
-
-【win mac】[雷神网游加速器](https://www.leigod.com) 按分钟计费可暂停 4600 小时才 139 元，虽然事后又搞活动是 139 元 5200 小时
+* 【win mac】[战网 | Battle.net](https://download.battle.net)
+* 【win mac】[雷神网游加速器](https://www.leigod.com) 按分钟计费可暂停 4600 小时才 139 元，虽然事后又搞活动是 139 元 5200 小时
 
 not
 
@@ -748,14 +743,12 @@ not
 
 一些用过的软件但主观关键明显不好用的记录，说不定下版会优化，所以仅供参考
 
-* [暴雪战网](https://www.blizzard.com/zh-tw)【win mac】 在苹果上玩炉石风扇狂转，临时卸载，继续用 windows 玩
-* [抖音](https://www.douyin.com)【win mac】该版本我用不习惯且电扇呼呼的，可能西瓜视频更好但是 mac 平台上目前没有
 * [图吧工具箱](https://www.tbtool.cn) 中规中矩，功能挺强大
 * [Advanced IP Scanner](https://www.advanced-ip-scanner.com/cn) – 免费下载网络扫描程序 我不太喜欢安装版的
 * [DisplayFusion](https://www.displayfusion.com)【win】
-* [es 文件浏览器](http://www.estrongs.com)【mac】貌似只有压缩和解压功能，功能严重不足，留观
-* [Fantastical](https://apps.apple.com/cn/app/fantastical-calendar/id975937182)【mac】拥有和系统自带日历应用类似界面布局，但界面信息更加直观自然。软件支持苹果各个平台，除了可以与 iCloud / Google / Yahoo 日历无缝整合同步外，它还解决了系统自带日历 APP 功能的诸多不足
 * [paint.net](https://www.getpaint.net) 画图软件 一般般，貌似不跨平台
+* ——————— ฅ՞• •՞ฅ ———————
+* [Fantastical](https://apps.apple.com/cn/app/fantastical-calendar/id975937182)【mac】拥有和系统自带日历应用类似界面布局，但界面信息更加直观自然。软件支持苹果各个平台，除了可以与 iCloud / Google / Yahoo 日历无缝整合同步外，它还解决了系统自带日历 APP 功能的诸多不足
 * [Lively Wallpaper - Microsoft Store 应用程序](https://apps.microsoft.com/store/detail/lively-wallpaper) 占用 CPU 资源太大
 * [pear-rec](https://027xiguapi.github.io/pear-rec)【全平台】录屏软件 至少我在 windows 上体验不佳
 * [flowlauncher](https://www.flowlauncher.com/docs) 作为一款启动器 有点儿卡
@@ -763,6 +756,7 @@ not
 ## 回收站
 
 * 猿如意【浏览器插件】 不让人满意
+* ——————— ฅ՞• •՞ฅ ———————
 * 芒果壁纸【win】 时间长了会白屏
 * 网易炉石官方插件 随之国服没了已经落幕
 * 录猎 不好用

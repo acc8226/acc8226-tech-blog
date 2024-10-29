@@ -111,12 +111,11 @@ not
 #### 安卓
 
 1. [FBReader](https://fbreader.org/android#download) 一款本地电子书阅读器，但是支持 pdf 需要付费且我也用不到
-2. [番茄免费小说](https://sj.qq.com/appdetail/com.dragon.read) 有的想看的书可以免费离线下载，很好，很适合离线用
+2. [番茄免费小说](https://sj.qq.com/appdetail/com.dragon.read) 有的想看的书可以免费离线下载，很适合离线用
 
 可选
 
 * [阅读](https://github.com/gedoor/legado) + [tts-server](https://jing332.lanzn.com/b09jpjd2d) 本地+在线用
-* [静读天下](http://www.moondownload.com/download.html) 免费版有广告
 * ——————— ฅ՞• •՞ฅ ———————
 * [微信读书](https://sj.qq.com/appdetail/com.tencent.weread) 正版在线用，除了现在很多内容收费了
 * [京东读书](https://sj.qq.com/appdetail/com.jd.app.reader) 送了影响力 和 乌合之众几本书，可以看一段时间
@@ -124,6 +123,7 @@ not
 
 not
 
+* [静读天下](http://www.moondownload.com/download.html) 免费版有广告
 * ~~云虫爱看 已下架，应用也不再更新~~
 * ——————— ฅ՞• •՞ฅ ———————
 * [QQ 阅读](https://sj.qq.com/appdetail/com.qq.reader) 有广告
@@ -321,13 +321,14 @@ not
 
 ### 安卓
 
+* 本地 [VLC](https://www.videolan.org/vlc/download-android.html) 本地视频播放利器且体积小巧
 * 在线 bilibili 哔哩哔哩国际版 [下载地址一](https://apkpure.com/cn/bilibili-cn/com.bilibili.app.in/download) | [下载地址二](https://com-bilibili-app-in.en.uptodown.com/android) 因为清爽
-* [西瓜视频](https://sj.qq.com/appdetail/com.ss.android.article.video) 广告不多 还能创作
+* [西瓜视频](https://sj.qq.com/appdetail/com.ss.android.article.video) 广告较少，资源丰富
+* [央视频](https://sj.qq.com/appdetail/com.cctv.yangshipin.app.androidp) 毕竟比较权威，内容丰富
 * [网易 Filmly](https://sj.qq.com/appdetail/com.netease.filmlytv) 视频刮削神器，暂时免费
 
 可选
 
-* 本地 [VLC](https://www.videolan.org/vlc/download-android.html) 本地视频播放利器且体积小巧
 * Reex 可连接 webdav 但是一段时间没更新了，个人开发者，发布在酷安上
 * ——————— ฅ՞• •՞ฅ ———————
 * [NewPipe](https://newpipe.net) - a free YouTube client 太过于简洁
@@ -401,13 +402,13 @@ not
 
 ### Apple TV
 
-[网易Filmly-智能多媒体管家，全能影视播放器](https://apps.apple.com/us/app/%E7%BD%91%E6%98%93filmly-%E6%99%BA%E8%83%BD%E5%A4%9A%E5%AA%92%E4%BD%93%E7%AE%A1%E5%AE%B6-%E5%85%A8%E8%83%BD%E5%BD%B1%E8%A7%86%E6%92%AD%E6%94%BE%E5%99%A8/id6670539829)
+[网易 Filmly-智能多媒体管家，全能影视播放器](https://apps.apple.com/us/app/%E7%BD%91%E6%98%93filmly-%E6%99%BA%E8%83%BD%E5%A4%9A%E5%AA%92%E4%BD%93%E7%AE%A1%E5%AE%B6-%E5%85%A8%E8%83%BD%E5%BD%B1%E8%A7%86%E6%92%AD%E6%94%BE%E5%99%A8/id6670539829)
 
 ## 3. 工具【常用】
 
 ### 安卓
 
-* [猫头鹰文件](https://www.skyjos.cn/owlfiles/index.html)
+* [CX 文件管理器](https://apkpure.com/cx-file-explorer/com.cxinventor.file.explorer) 小巧且强大，支持 webdav
 * [GKD 搞快点](https://gkd.li) 预设了跳广告规则，开箱即用
 * [WiFi 万能钥匙极速版](https://sj.qq.com/appdetail/com.snda.lantern.wifilocating) 偶尔可以用下，虽说现在的能用的热点不多了
 
@@ -423,6 +424,8 @@ not
 not
 
 * [es 文件浏览器](http://www.estrongs.com) 由于我习惯了[猫头鹰文件](https://www.skyjos.cn/owlfiles/index.html)，这个不开会员还有广告
+* [猫头鹰文件](https://www.skyjos.cn/owlfiles/index.html) 现在似乎对直连阿里云盘降低了清晰度
+* Solid Explorer 有点华而不实，作为备选方案
 * ——————— ฅ՞• •՞ฅ ———————
 * [纯纯写作](https://sj.qq.com/appdetail/com.drakeet.purewriter) 很好用，但是收费版才好用就算了
 * [快递 100](https://sj.qq.com/appdetail/com.Kingdee.Express) 最近寄快递选【德邦】确实便宜写，不过**体积和重量**是按两者最大的来，情有可原吧。第一次用快递 100 我领了一个 5 月的优惠券，感觉还行，一般足够用
@@ -664,10 +667,10 @@ weico 下架了，变成了微博国际板，后面又变成轻享版了，结�
 
 ### 安卓
 
-* [天眼查 app](https://sj.qq.com/appdetail/com.tianyancha.skyeye) / 小程序 求职中可以**反调公司**，也适用于查询被服务公司，**无良北京丰台万达舒窈瑶国际**
-* ——————— ฅ՞• •՞ฅ ———————
 * [永中 Office](https://sj.qq.com/appdetail/com.yozo.office) 不足百兆且较为清爽
 * [PDF Reader-Hi Read](https://apkpure.com/cn/pdf-reader-pdf-viewer/pdf.reader.pdfviewer.pdfeditor) 有一定的 PDF 编辑器功能，体积小，简单又免费
+* ——————— ฅ՞• •՞ฅ ———————
+* [天眼查 app](https://sj.qq.com/appdetail/com.tianyancha.skyeye) / 小程序 求职中可以**反调公司**，也适用于查询被服务公司，**无良北京丰台万达舒窈瑶国际**
 
 可选
 
@@ -992,7 +995,19 @@ not
 
 [Termux](https://github.com/termux/termux-app) 是一个 Android 终端应用程序和 Linux 环境
 
-## 40. 游戏
+## 40. 直播
+
+* [斗鱼](https://sj.qq.com/appdetail/air.tv.douyu.android) 什么俊男靓女精致妆容，现在已经很多去了抖音
+* [虎牙直播](https://sj.qq.com/appdetail/com.duowan.kiwi)
+* [战旗直播](https://sj.qq.com/appdetail/com.gameabc.zhanqiAndroid)
+* [YY](https://sj.qq.com/appdetail/com.duowan.mobile)
+
+## 41. 交友
+
+* [MOMO陌陌](https://sj.qq.com/appdetail/com.immomo.momo)
+* [探探](https://sj.qq.com/appdetail/com.p1.mobile.putong)
+
+## 42. 游戏
 
 ### iPhone 和 iPad
 
