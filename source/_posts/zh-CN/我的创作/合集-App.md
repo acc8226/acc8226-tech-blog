@@ -283,6 +283,8 @@ not
 * ——————— ฅ՞• •՞ฅ ———————
 * [IT之家](https://sj.qq.com/appdetail/com.ruanmei.ithome) 精选泛科技新闻，即时分享行业新闻动态
 * [汽车之家](https://sj.qq.com/appdetail/com.cubic.autohome) 汽车资讯论坛
+* ——————— ฅ՞• •՞ฅ ———————
+* [Agr Reader](https://www.agrreader.xyz) 不好用只能做备选，看来 rss 阅读器还是苹果平台的 reeder
 
 not
 
@@ -294,7 +296,7 @@ not
 * [腾讯新闻](https://sj.qq.com/appdetail/com.tencent.news) 有广告
 * [界面新闻](https://sj.qq.com/appdetail/com.jiemian.news) 有广告
 * ——————— ฅ՞• •՞ฅ ———————
-* 安卓平台的 feeder 和 [Agr Reader](https://www.agrreader.xyz) 不好用只能做备选，看来 rss 阅读器还是苹果平台的 reeder
+* 安卓平台的 feeder 和 [Read You](https://github.com/Ashinch/ReadYou/releases)
 
 #### iPhone
 
@@ -322,6 +324,7 @@ not
 ### 安卓
 
 * 本地 [VLC](https://www.videolan.org/vlc/download-android.html) 本地视频播放利器且体积小巧
+* ——————— ฅ՞• •՞ฅ ———————
 * 在线 bilibili 哔哩哔哩国际版 [下载地址一](https://apkpure.com/cn/bilibili-cn/com.bilibili.app.in/download) | [下载地址二](https://com-bilibili-app-in.en.uptodown.com/android) 因为清爽
 * [西瓜视频](https://sj.qq.com/appdetail/com.ss.android.article.video) 广告较少，资源丰富
 * [央视频](https://sj.qq.com/appdetail/com.cctv.yangshipin.app.androidp) 毕竟比较权威，内容丰富
@@ -329,15 +332,14 @@ not
 
 可选
 
-* Reex 可连接 webdav 但是一段时间没更新了，个人开发者，发布在酷安上
+* Reex 可连接 webdav 但是一段时间没更新了，个人开发者，作者会发布在酷安市场
 * ——————— ฅ՞• •՞ฅ ———————
 * [NewPipe](https://newpipe.net) - a free YouTube client 太过于简洁
 * ——————— ฅ՞• •՞ฅ ———————
 * [抖音](https://sj.qq.com/appdetail/com.ss.android.ugc.aweme) 稍有广告，同时它又是个超级 app，生活、超市、优惠、直播和团购都有
 * ——————— ฅ՞• •՞ฅ ———————
-* [优酷视频](https://sj.qq.com/appdetail/com.youku.phone)
-* [腾讯视频](https://sj.qq.com/appdetail/com.tencent.qqlive)
-* [芒果TV](https://sj.qq.com/appdetail/com.hunantv.imgo.activity)
+* 有广告的 [爱奇艺](https://sj.qq.com/appdetail/com.qiyi.video) | [优酷视频](https://sj.qq.com/appdetail/com.youku.phone) | [腾讯视频](https://sj.qq.com/appdetail/com.tencent.qqlive) | [芒果TV](https://sj.qq.com/appdetail/com.hunantv.imgo.activity)
+* [斗鱼](https://sj.qq.com/appdetail/air.tv.douyu.android) 界面和功能体验都不错
 
 not
 
@@ -349,14 +351,14 @@ not
 * ——————— ฅ՞• •՞ฅ ———————
 * [bilibili 标准版](https://sj.qq.com/appdetail/tv.danmaku.bili) 没以前清爽了
 * [1905 电影网](https://sj.qq.com/appdetail/com.m1905.mobilefree) 做的一般般
-* [爱奇艺](https://sj.qq.com/appdetail/com.qiyi.video) 有广告呀
 * ——————— ฅ՞• •՞ฅ ———————
 * [快手](https://sj.qq.com/appdetail/com.smile.gifmaker) 不太喜欢用
 * [好看视频](https://sj.qq.com/appdetail/com.baidu.haokan) 一些视频也能学到知识
+* [百搜视频](https://sj.qq.com/appdetail/com.baidu.video) 曾用名 百度视频，大不如前了
 * ——————— ฅ՞• •՞ฅ ———————
 * ~~[bili_you](https://github.com/lucinhu/bili_you/releases) bilibili 无广告版，但是作者已经不再维护了~~
 
-官网收录：[影视大全](https://sj.qq.com/appdetail/com.le123.ysdq) | [暴风影音](https://sj.qq.com/appdetail/com.storm.smart) | [斗鱼](https://sj.qq.com/appdetail/air.tv.douyu.android) | [百搜视频](https://sj.qq.com/appdetail/com.baidu.video) | [PP视频](https://sj.qq.com/appdetail/com.pplive.androidphone) | [虎牙直播](https://sj.qq.com/appdetail/com.duowan.kiwi) | [搜狐视频](https://sj.qq.com/appdetail/com.sohu.sohuvideo)
+官网收录：[影视大全](https://sj.qq.com/appdetail/com.le123.ysdq) | [暴风影音](https://sj.qq.com/appdetail/com.storm.smart) | [PP视频](https://sj.qq.com/appdetail/com.pplive.androidphone) | [虎牙直播](https://sj.qq.com/appdetail/com.duowan.kiwi) | [搜狐视频](https://sj.qq.com/appdetail/com.sohu.sohuvideo)
 
 ### iPhone
 
