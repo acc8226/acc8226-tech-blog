@@ -280,7 +280,7 @@ codeblock:
   # Fold code block
   fold:
     enable: true
-    height: 350
+    height: 398
 
 back2top:
   enable: true

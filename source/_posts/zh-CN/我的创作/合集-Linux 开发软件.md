@@ -230,3 +230,25 @@ rdb-save-incremental-fsync yes
 #  加 -a 表示通过密码登录
 docker exec -it redis5 redis-cli -a useaverystrongpasswordfoobared666useaverystrongpassword888useaverystrongpassword999useaverystrongpassword110
 ```
+
+## Github 加速服务
+
+[gh-proxy](https://github.com/hunshcn/gh-proxy)
+github release、archive以及项目文件的加速项目，支持 clone，有 Cloudflare Workers 无服务器版本以及 Python 版本
+
+测试地址
+https://github.com/acc8226/acc8226-tech-blog/archive/refs/tags/tag2022.zip
+
+加速后地址
+https://gh.api.99988866.xyz/https://github.com/acc8226/acc8226-tech-blog/archive/refs/tags/tag2022.zip
+https://hub.gitmirror.com/https://github.com/acc8226/acc8226-tech-blog/archive/refs/tags/tag2022.zip
+https://github.moeyy.xyz/https://github.com/acc8226/acc8226-tech-blog/archive/refs/tags/tag2022.zip
+https://ghproxy.imciel.com/https://github.com/acc8226/acc8226-tech-blog/archive/refs/tags/tag2022.zip
+
+
+网游UU加速器对于经常玩其他国服的游戏来说经常用到！
+该加速器除了提供各种游戏的加速之外，还提供了：学术资源 加速服务！
+学术资源包含：TED，Sci-Hub，Trello，Skype，Teams 等等加速访问服务
+其实它还支持了 GitHub，不过没有明确标注出来！
+
+「[Watt Toolkit](https://steampp.net/)」是一个开源跨平台的多功能 Steam 工具箱。也支持 GitHub 加速
