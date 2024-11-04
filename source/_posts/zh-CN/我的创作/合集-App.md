@@ -752,9 +752,11 @@ not
 ## 14. 应用商店类
 
 * [腾讯应用宝](https://sj.qq.com)-全网最新最热手机应用游戏下载
-* [国际服游戏下载-GamesToday](https://www.hotplaygames.com)
-* [apkpure](https://apkpure.com/cn) 一个有国外的应用商店 需魔法
-* [Uptodown](en.uptodown.com) 一个有国外的应用商店 需魔法
+* ——————— ฅ՞• •՞ฅ ———————
+* [Uptodown](https://en.uptodown.com) 一个国外的应用商店 需魔法
+* [apkpure](https://apkpure.com/cn) 一个国外的应用商店 需魔法
+* ——————— ฅ՞• •՞ฅ ———————
+* [国际服游戏下载-GamesToday](https://www.hotplaygames.com) 不需魔法
 
 备用
 
@@ -762,12 +764,15 @@ not
 
 ## 15. 桌面启动器
 
+* Apex Launcher 免费版的就可以用手势操作且比较省内存
+
+备用
+
 * [微软桌面](https://apkpure.com/cn/microsoft-launcher/com.microsoft.launcher/download) 不喜欢系统桌面可以试试
-* Nova Launcher
 
 not
 
-* Apex Launcher 还有付费的 pro 服务
+* Nova Launcher 的手势操作还需要 pro 付费
 
 ## 16. 浏览器【常用】
 
