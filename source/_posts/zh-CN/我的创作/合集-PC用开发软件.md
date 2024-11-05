@@ -121,7 +121,7 @@ vscode 插件推荐：[markdownlint](https://marketplace.visualstudio.com/items?
 
 or
 
-* 【win 精品软件 绿色版】[Notepad++](https://github.com/notepad-plus-plus/notepad-plus-plus) 软件是好软件，除了言论
+* 【win 精品软件 绿色版】[Notepad++](https://github.com/notepad-plus-plus/notepad-plus-plus) 是好软件，除了言论
 * 【全平台】[notepad--](https://gitee.com/cxasm/notepad--) npp 的全平台版本，剔除了不良言论
 * 【全平台】[Zed](https://zed.dev) 据说是新一代编辑器，再等等看
 * 【全平台 公共预览版免费】[JetBrains Fleet](https://www.jetbrains.com/fleet) 还是不太好用

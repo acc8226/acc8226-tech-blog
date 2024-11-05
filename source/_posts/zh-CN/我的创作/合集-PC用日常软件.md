@@ -689,7 +689,8 @@ not
 
 ### 2. 【常用】网络加速
 
-【全平台】[hiddify](https://hiddify.com)
+1. 【全平台】[hiddify](https://hiddify.com)
+2. 【全平台】[瓦特工具箱 Watt Toolkit「原名 Steam++」](https://steampp.net) 可加速 GitHub
 
 ### 3. 内网转发
 
