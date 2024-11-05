@@ -327,7 +327,6 @@ not
 * ——————— ฅ՞• •՞ฅ ———————
 * 在线 bilibili 哔哩哔哩国际版 [下载地址一](https://apkpure.com/cn/bilibili-cn/com.bilibili.app.in/download) | [下载地址二](https://com-bilibili-app-in.en.uptodown.com/android) 因为清爽
 * [西瓜视频](https://sj.qq.com/appdetail/com.ss.android.article.video) 广告较少，资源丰富
-* [央视频](https://sj.qq.com/appdetail/com.cctv.yangshipin.app.androidp) 毕竟比较权威，内容丰富
 * [网易 Filmly](https://sj.qq.com/appdetail/com.netease.filmlytv) 视频刮削神器，暂时免费
 
 可选
@@ -752,6 +751,7 @@ not
 ## 14. 应用商店类
 
 * [腾讯应用宝](https://sj.qq.com)-全网最新最热手机应用游戏下载
+* [百度手机助手](https://shouji.baidu.com)
 * ——————— ฅ՞• •՞ฅ ———————
 * [Uptodown](https://en.uptodown.com) 一个国外的应用商店 需魔法
 * [apkpure](https://apkpure.com/cn) 一个国外的应用商店 需魔法
@@ -764,7 +764,7 @@ not
 
 ## 15. 桌面启动器
 
-* Apex Launcher 免费版的就可以用手势操作且比较省内存
+* Apex Launcher 免费版就可以用手势操作且比较省内存
 
 备用
 
@@ -772,7 +772,7 @@ not
 
 not
 
-* Nova Launcher 的手势操作还需要 pro 付费
+* Nova Launcher 连基础的手势操作还需要 pro 付费，差评
 
 ## 16. 浏览器【常用】
 
@@ -934,7 +934,7 @@ not
 
 ### 安卓
 
-[央视频](https://sj.qq.com/appdetail/com.cctv.yangshipin.app.androidp)
+* [央视频](https://sj.qq.com/appdetail/com.cctv.yangshipin.app.androidp) 内容权威丰富
 
 备用
 
