@@ -238,15 +238,15 @@ not
 **mac 平台**
 
 1. 本地播放【全平台】[VLC](https://www.videolan.org) /【mac】[INNA](https://iina.io)
-2. 在线平台【win mac】[哔哩哔哩客户端](https://app.bilibili.com) 其实本地播放也很强
+2. 在线平台【mac win】[哔哩哔哩客户端](https://app.bilibili.com) 其实本地播放也很强 / 【mac win】优酷 看视频限时蓝光无广告
 3. 电视直播【mac】[APTV](https://apps.apple.com/cn/app/aptv/id1630403500)
-4. 视频刮削【mac】[网易 Filmly](https://apps.apple.com/cn/app/%E7%BD%91%E6%98%93filmly-%E6%99%BA%E8%83%BD%E5%AA%92%E4%BD%93%E5%BA%93-%E5%85%A8%E8%83%BD%E6%92%AD%E6%94%BE%E5%99%A8/id6553989480?mt=12)
+4. 视频刮削【mac】[网易 Filmly](https://apps.apple.com/cn/app/%E7%BD%91%E6%98%93filmly-%E6%99%BA%E8%83%BD%E5%AA%92%E4%BD%93%E5%BA%93-%E5%85%A8%E8%83%BD%E6%92%AD%E6%94%BE%E5%99%A8/id6553989480?mt=12) / Infuse / Vidhub
 
 **linux 平台**
 
 本地播放：【全平台】[VLC](https://www.videolan.org)
 
-官网收录：【win mac】[迅雷影音](https://video.xunlei.com/pc.html) | 【win】[射手影音](https://www.splayer.org) | 【win mac】[抖音电脑版](https://www.douyin.com) |【win mac】[爱奇艺客户端](https://www.iqiyi.com/appstore.html) | 【win [mac](https://apps.apple.com/cn/app/%E8%85%BE%E8%AE%AF%E8%A7%86%E9%A2%91-%E5%BF%83%E5%8A%A8%E7%9A%84%E4%BF%A1%E5%8F%B77-%E7%8B%AC%E5%AE%B6%E7%83%AD%E6%92%AD/id1231336508?mt=12)】[腾讯视频](https://v.qq.com/download.html) |【win [mac](https://apps.apple.com/cn/app/%E4%BC%98%E9%85%B7%E8%A7%86%E9%A2%91-%E6%83%9C%E8%8A%B1%E8%8A%B7-%E5%85%A8%E7%BD%91%E7%8B%AC%E6%92%AD/id1014945607?mt=12)】[优酷客户端](https://youku.com/product/index) |【win [mac](https://apps.apple.com/cn/app/%E5%A4%AE%E8%A7%86%E5%BD%B1%E9%9F%B3-%E6%B5%B7%E9%87%8F%E5%A4%AE%E8%A7%86%E5%86%85%E5%AE%B9%E9%AB%98%E6%B8%85%E7%9B%B4%E6%92%AD/id1357529089?mt=12)】[央视影音](https://app.cctv.com)
+官网收录：【win mac】[迅雷影音](https://video.xunlei.com/pc.html) | 【win】[射手影音](https://www.splayer.org) | 【win mac】[抖音电脑版](https://www.douyin.com) |【win mac】[爱奇艺客户端](https://www.iqiyi.com/appstore.html) | 【win [mac](https://apps.apple.com/cn/app/%E8%85%BE%E8%AE%AF%E8%A7%86%E9%A2%91-%E5%BF%83%E5%8A%A8%E7%9A%84%E4%BF%A1%E5%8F%B77-%E7%8B%AC%E5%AE%B6%E7%83%AD%E6%92%AD/id1231336508?mt=12)】[腾讯视频](https://v.qq.com/download.html) |【win [mac](https://apps.apple.com/cn/app/%E4%BC%98%E9%85%B7%E8%A7%86%E9%A2%91-%E6%83%9C%E8%8A%B1%E8%8A%B7-%E5%85%A8%E7%BD%91%E7%8B%AC%E6%92%AD/id1014945607?mt=12)】[优酷](https://youku.com/product/index) |【win [mac](https://apps.apple.com/cn/app/%E5%A4%AE%E8%A7%86%E5%BD%B1%E9%9F%B3-%E6%B5%B7%E9%87%8F%E5%A4%AE%E8%A7%86%E5%86%85%E5%AE%B9%E9%AB%98%E6%B8%85%E7%9B%B4%E6%92%AD/id1357529089?mt=12)】[央视影音](https://app.cctv.com)
 
 ### 5.【常用】社交类
 
