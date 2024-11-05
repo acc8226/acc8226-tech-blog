@@ -27,4 +27,4 @@ comments: false
 
 我的开源作品
 
-[捷键 for windows](https://atomgit.com/acc8226/jiejian) 一款实用的 Windows 键鼠增强工具
+[捷键 for windows](http://acc8226.test.upcdn.net) 一款实用的 Windows 键鼠增强工具
