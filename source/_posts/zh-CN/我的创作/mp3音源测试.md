@@ -1,5 +1,5 @@
 ---
-title: mp3 音乐源测试
+title: mp3 音源测试
 date: 2024-11-05 22:31:08
 updated: 2024-11-05 22:31:08
 categories: 我的创作
@@ -7,7 +7,7 @@ categories: 我的创作
 
 借助 The SourceForge.net project web service 提供的直链，虽然速度不快。
 
-可测试移动设备或电脑对 HTML5 的 Audio 标签支持的音频格式（OGG、MP3、WAV）及兼容性。另外额外测试了 flac、ape、wma 等格式的音频文件。
+可测试移动设备或电脑对 HTML5 的 Audio 标签支持音频格式（OGG、MP3、WAV）及兼容性。另外额外测试了 flac、ape、wma 等格式的音频文件。
 
 ## 正文
 
