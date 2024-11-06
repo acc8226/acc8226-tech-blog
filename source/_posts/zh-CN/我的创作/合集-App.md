@@ -95,7 +95,8 @@ not
 
 #### 通用
 
-Aqua Mail [官网](https://www.aqua-mail.com) | [Google play 版](https://play.google.com/store/apps/details?id=org.kman.AquaMail) | [apkpure 版](https://apkpure.com/cn/email-aqua-mail-fast-secure/org.kman.AquaMail) 简单清爽
+* [Aqua Mail](https://www.aqua-mail.com) 非常清爽 [Google play 版](https://play.google.com/store/apps/details?id=org.kman.AquaMail) | [Apkpure 下载](https://apkpure.com/cn/email-aqua-mail-fast-secure/org.kman.AquaMail)
+* [Thunderbird](https://www.thunderbird.net/zh-CN/mobile/) 移动版 [Github 下载](https://github.com/thunderbird/thunderbird-android/releases)
 
 备用
 
@@ -966,9 +967,13 @@ APTV
 
 ### 通用
 
-* [粉笔](https://sj.qq.com/appdetail/com.fenbi.android.servant) | [高途公考](https://sj.qq.com/appdetail/com.gaotu100.gongkao) | [华图在线](https://sj.qq.com/appdetail/com.huatu.handheld_huatu) | [中公教育](https://sj.qq.com/appdetail/com.offcn.android.offcn)
+* [粉笔](https://sj.qq.com/appdetail/com.fenbi.android.servant) | [高途公考](https://sj.qq.com/appdetail/com.gaotu100.gongkao) | [华图在线](https://sj.qq.com/appdetail/com.huatu.handheld_huatu)
 * ——————— ฅ՞• •՞ฅ ———————
 * [疯狂刷题](https://sj.qq.com/appdetail/com.yaerxing.fkst) 汇聚大量包括了直至大学、考研优题、真题、好题
+
+not
+
+* [中公教育](https://sj.qq.com/appdetail/com.offcn.android.offcn) app 做得太烂了，返回都不好使，还有广告
 
 ### 安卓平板
 
