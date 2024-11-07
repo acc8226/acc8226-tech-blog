@@ -95,7 +95,7 @@ Bitwarden【已适配安卓平板】[Github 下载](https://github.com/bitwarden
 
 #### 通用
 
-* [Aqua Mail](https://www.aqua-mail.com) 非常清爽 [Google play 下载](https://play.google.com/store/apps/details?id=org.kman.AquaMail) | [Apkpure 下载](https://apkpure.com/cn/email-aqua-mail-fast-secure/org.kman.AquaMail)
+* [Aqua Mail](https://www.aqua-mail.com) 非常清爽 [Google play 版](https://play.google.com/store/apps/details?id=org.kman.AquaMail) | [Apkpure 版](https://apkpure.com/cn/email-aqua-mail-fast-secure/org.kman.AquaMail)
 * [Thunderbird](https://www.thunderbird.net/zh-CN/mobile/) 移动版 [Github 下载](https://github.com/thunderbird/thunderbird-android/releases)
 
 备用
@@ -330,7 +330,7 @@ not
 
 * 本地 [VLC](https://www.videolan.org/vlc/download-android.html) 本地视频播放利器且体积小巧
 * ——————— ฅ՞• •՞ฅ ———————
-* 在线 bilibili 哔哩哔哩国际版 [下载地址一](https://apkpure.com/cn/bilibili-cn/com.bilibili.app.in/download) | [下载地址二](https://com-bilibili-app-in.en.uptodown.com/android) 因为清爽
+* 在线 bilibili 哔哩哔哩国际版 [Apkpure 版](https://apkpure.com/cn/bilibili-cn/com.bilibili.app.in/download) | [uptodown 版](https://com-bilibili-app-in.en.uptodown.com/android) 因为清爽
 * [西瓜视频](https://sj.qq.com/appdetail/com.ss.android.article.video) 广告较少，资源丰富
 * [网易 Filmly](https://sj.qq.com/appdetail/com.netease.filmlytv) 视频刮削神器，暂时免费
 
@@ -343,7 +343,6 @@ not
 * [抖音](https://sj.qq.com/appdetail/com.ss.android.ugc.aweme) 稍有广告，同时它又是个超级 app，生活、超市、优惠、直播和团购都有
 * ——————— ฅ՞• •՞ฅ ———————
 * 有广告的 [爱奇艺](https://sj.qq.com/appdetail/com.qiyi.video) | [优酷视频](https://sj.qq.com/appdetail/com.youku.phone) | [腾讯视频](https://sj.qq.com/appdetail/com.tencent.qqlive) | [芒果 TV](https://sj.qq.com/appdetail/com.hunantv.imgo.activity)
-* [斗鱼](https://sj.qq.com/appdetail/air.tv.douyu.android) 界面和功能体验都不错
 
 not
 
@@ -471,7 +470,7 @@ not
 
 ## 4. 购物
 
-买自己要用到和喜欢的关系使人快乐？
+买自己想要和喜欢的，会使人快乐？
 
 * [京东](https://sj.qq.com/appdetail/com.jingdong.app.mall) / 微信小程序
 * [淘宝](https://sj.qq.com/appdetail/com.taobao.taobao) 或 [天猫](https://sj.qq.com/appdetail/com.tmall.wireless)
@@ -482,7 +481,7 @@ not
 * [唯品会](https://sj.qq.com/appdetail/com.achievo.vipshop) 小米手机预装的，买衣服的优惠还行
 * [闲鱼](https://sj.qq.com/appdetail/com.taobao.idlefish) 有点东西，可选吧
 
-官网收录：[当当](https://sj.qq.com/appdetail/com.dangdang.buy2) | [转转](https://sj.qq.com/appdetail/com.wuba.zhuanzhuan) | [苏宁易购](https://sj.qq.com/appdetail/com.suning.mobile.ebuy) | [小米商城](https://sj.qq.com/appdetail/com.xiaomi.shop)
+官网收录：[当当](https://sj.qq.com/appdetail/com.dangdang.buy2) | [转转](https://sj.qq.com/appdetail/com.wuba.zhuanzhuan) | [苏宁易购](https://sj.qq.com/appdetail/com.suning.mobile.ebuy) | [小米商城](https://sj.qq.com/appdetail/com.xiaomi.shop) | [盒马](https://sj.qq.com/appdetail/com.wudaokou.hippo)
 
 ## 5.交通
 
@@ -661,9 +660,10 @@ not
 
 ### iPhone
 
-[QQ](https://sj.qq.com/appdetail/com.tencent.mobileqq) 和 [微信](https://sj.qq.com/appdetail/com.tencent.mm)
+* [Tim](https://sj.qq.com/appdetail/com.tencent.tim) 比 [QQ](https://sj.qq.com/appdetail/com.tencent.mobileqq) 小巧，[腾讯 QQ 办公简洁版 TIM 开启安卓 / iOS 4.0 公测](https://www.ithome.com/0/807/708.htm) 升级 NT 架构
+* [微信](https://sj.qq.com/appdetail/com.tencent.mm)
 
-weico 下架了，变成了微博国际板，后面又变成轻享版了，结果还有了广告。 weico 4 当年我还开了会员，设计的确实不错。
+weico 下架了，变成了微博国际板，后面又变成轻享版了，结果还有了广告。 weico 4 当年我还可是花钱买的，确实不错
 
 ### 安卓平板
 
@@ -689,7 +689,7 @@ weico 下架了，变成了微博国际板，后面又变成轻享版了，结�
 
 not
 
-* LibreOffice Viewer [Google Play 上的应用](https://play.google.com/store/apps/details?id=org.documentfoundation.libreoffice) | [F-Droid - Free and Open Source Android App Repository](https://f-droid.org/packages/org.documentfoundation.libreoffice) 功能不太完善
+* LibreOffice Viewer [Google Play 版](https://play.google.com/store/apps/details?id=org.documentfoundation.libreoffice) | [F-Droid - Free and Open Source Android App Repository](https://f-droid.org/packages/org.documentfoundation.libreoffice) 功能不太完善
 * [WPS Office](https://sj.qq.com/appdetail/cn.wps.moffice_eng) 功能强大但是不够清爽，杂七杂八内容太多
 * Polaris Office 北极星办公 其中安卓版本不是最新版不能用
 
@@ -1019,7 +1019,7 @@ not
 
 ## 40.直播
 
-* [斗鱼](https://sj.qq.com/appdetail/air.tv.douyu.android) 什么俊男靓女精致妆容，现在已经很多去了抖音
+* [斗鱼](https://sj.qq.com/appdetail/air.tv.douyu.android) 界面和功能体验都不错。什么俊男靓女精致妆容，现在已经很多去了抖音
 * [虎牙直播](https://sj.qq.com/appdetail/com.duowan.kiwi)
 * [战旗直播](https://sj.qq.com/appdetail/com.gameabc.zhanqiAndroid)
 * [YY 直播](https://sj.qq.com/appdetail/com.duowan.mobile)
@@ -1088,4 +1088,4 @@ iPad 截图留恋
 
 ## 部分资源留存
 
-详见 [《我的网盘-系列》](https://feipig.fun/zh-cn/53e90cff1a21/)
+详见 [《我的网盘-系列》](https://feipig.fun/zh-CN/53e90cff1a21)
