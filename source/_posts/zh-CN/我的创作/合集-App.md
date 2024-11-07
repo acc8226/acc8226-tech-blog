@@ -112,7 +112,7 @@ not
 #### 安卓
 
 1. [FBReader](https://fbreader.org/android#download) 一款本地电子书阅读器，但是支持 pdf 需要付费且我也用不到
-2. [番茄免费小说](https://sj.qq.com/appdetail/com.dragon.read) 有的想看的书可以免费离线下载，很适合离线用
+2. [番茄免费小说](https://sj.qq.com/appdetail/com.dragon.read) 有的想看的书可以免费离线下载，很适合离线用，除了占用空间有点大
 
 可选
 
@@ -227,7 +227,7 @@ not
 
 #### 安卓
 
-1. [得到](https://sj.qq.com/appdetail/com.luojilab.player) 免费和付费资源共存
+1. [得到](https://sj.qq.com/appdetail/com.luojilab.player) 免费资源还行，除了体积大
 2. [云听](https://sj.qq.com/appdetail/com.shinyv.cnr) 央视的资源还是很丰富的
 3. [帆书（原樊登读书）](https://sj.qq.com/appdetail/io.dushu.fandengreader) 稍有限免资源，但旧手机有点卡
 
@@ -906,11 +906,11 @@ not
 
 ### 安卓和 iOS
 
-[个人所得税](https://sj.qq.com/appdetail/cn.gov.tax.its) 
+* [个人所得税](https://sj.qq.com/appdetail/cn.gov.tax.its) 
 
-not
+备用
 
-[北京公积金](https://sj.qq.com/appdetail/cn.gov.bjgjj.gjjapp) 网站其实挺强大，一般 app 甚至都用不到
+* [北京公积金](https://sj.qq.com/appdetail/cn.gov.bjgjj.gjjapp) 网站其实挺强大，一般 app 甚至都用不到
 
 ## 27.美食类
 
@@ -977,7 +977,9 @@ APTV
 
 ### 通用
 
-* [粉笔](https://sj.qq.com/appdetail/com.fenbi.android.servant) | [高途公考](https://sj.qq.com/appdetail/com.gaotu100.gongkao) | [华图在线](https://sj.qq.com/appdetail/com.huatu.handheld_huatu)
+* [高途公考](https://sj.qq.com/appdetail/com.gaotu100.gongkao) 文档附件预览特别好用，查询招信息较为方便但是资源少
+* [粉笔](https://sj.qq.com/appdetail/com.fenbi.android.servant) 比较清新，查询招考信息较为方便
+* [华图在线](https://sj.qq.com/appdetail/com.huatu.handheld_huatu) 不建议用来查询招考信息，每次都得重新选择
 * ——————— ฅ՞• •՞ฅ ———————
 * [疯狂刷题](https://sj.qq.com/appdetail/com.yaerxing.fkst) 汇聚大量包括了直至大学、考研优题、真题、好题
 
