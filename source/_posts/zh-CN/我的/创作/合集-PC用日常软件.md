@@ -1,7 +1,7 @@
 ---
 title: 合集-PC用日常软件
 date: 2023-03-22 21:02:00
-updated: 2024-10-28 17:07:42
+updated: 2024-11-09 17:56:45
 categories: 我的创作
 ---
 
@@ -481,7 +481,7 @@ or
 **DNS server**
 
 1. 【全平台】[SmartDNS](https://pymumu.github.io/smartdns)
-2. 【全平台】[AdGuard Home](https://adguard.com/zh_cn/adguard-home/overview.html) - 适用于任何操作系统（Windows，macOS，Linux）的网络软件 | [github AdguardHome](https://github.com/AdguardTeam/AdguardHome)
+1. 【全平台】[AdGuard Home](https://adguard.com/zh_cn/adguard-home/overview.html) - 适用于任何操作系统（Windows，macOS，Linux）的网络软件 | [github AdguardHome](https://github.com/AdguardTeam/AdguardHome)
 
 **网络广告拦截工具**
 
@@ -489,16 +489,17 @@ or
 
 ### 8.markdown 编辑
 
-【全平台】[MarkText](https://github.com/marktext/marktext/releases 'markdown 编辑')
+1. 【全平台】[MarkText](https://github.com/marktext/marktext/releases '洒洒水啦') 轻度使用的 markdown 编辑器
+1. 【全平台】[obsidian](https://obsidian.md) 设计理念很赞
+
+备用
+
+* 【全平台】[Typora](https://typoraio.cn) 虽然功能强大，且适合初学者，收费有条件支持下
 
 not
 
-* 【全平台】[Typora](https://typoraio.cn) 虽然功能强大，且适合初学者，收费有条件支持下
 * 【win】[MarkdownPad2](http://markdownpad.com) 感觉差点意思
-
-- - -
-
-mac 平台据说 【mac】[Ulysses](https://www.ulysses.app/zh) 面向 Mac、iPad 和 iPhone 的终极写作应用，但收费就算了
+* 【mac】[Ulysses](https://www.ulysses.app/zh) 面向 Mac、iPad 和 iPhone 的终极写作应用，但收费就算了
 
 ### 9.大文件分析
 

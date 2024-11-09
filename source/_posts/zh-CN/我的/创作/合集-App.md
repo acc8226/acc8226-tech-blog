@@ -740,10 +740,6 @@ not
 * [123云盘](https://sj.qq.com/appdetail/com.mfcloudcalculate.networkdisk) app 内都是广告
 * [文叔叔](https://www.wenshushu.cn) 匿名分享盘，现在依旧被小飞机取代
 * [天翼云盘](https://sj.qq.com/appdetail/com.cn21.ecloud) 在 mac 上的同步还差点意思，优点是原画质视频播放，但是非会员不能倍速
-* ——————— ฅ՞• •՞ฅ ———————
-* [印象笔记](https://sj.qq.com/appdetail/com.yinxiang) 限制 2 台设备
-* [有道云笔记](https://sj.qq.com/appdetail/com.youdao.note) 限制 2 台设备
-* [flomo 笔记](https://sj.qq.com/appdetail/com.flomo.app) 用不习惯
 
 官网收录：[中国移动云盘](https://sj.qq.com/appdetail/com.chinamobile.mcloud) | [联通云盘](https://sj.qq.com/appdetail/com.chinaunicom.bol.cloudapp) | [115 网盘](https://115.com/)
 
@@ -1031,7 +1027,19 @@ not
 * [MOMO 陌陌](https://sj.qq.com/appdetail/com.immomo.momo)
 * [探探](https://sj.qq.com/appdetail/com.p1.mobile.putong)
 
-## 42.游戏
+## 42.笔记
+
+我主推 markdown 格式的本地笔记，比如 [obsidian](https://obsidian.md/download)
+
+not
+
+Joplin 我不喜欢这种组织方式
+* ——————— ฅ՞• •՞ฅ ———————
+* [印象笔记](https://sj.qq.com/appdetail/com.yinxiang) 限制 2 台设备
+* [有道云笔记](https://sj.qq.com/appdetail/com.youdao.note) 限制 2 台设备
+* [flomo 笔记](https://sj.qq.com/appdetail/com.flomo.app) 用不习惯
+
+## 43.游戏
 
 ### iPhone 和 iPad
 

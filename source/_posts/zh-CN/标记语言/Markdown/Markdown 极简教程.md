@@ -10,32 +10,41 @@ tags: Markdown
 
 Markdown 的目标是实现「易读易写」。也是兼容 HTML 的, 是一种适用于网络的书写语言。
 
-Markdown is a way to style text on the web. You control the display of the document; formating words as bold or italic, adding images, and creating lists are just a few of the things we can do with Markdown. Mostly, Markdown is just regular text with a few non-alphabetic characters thrown in, like `#` or `*`.
-
 ## 文本 (Text)
 
-源码:
-`It's very easy to make some words **bold** and other words *italic* with Markdown. You can even [link to Google!](http://google.com)`
+源码：
+
+```md
+It's very easy to make some words **bold** and other words *italic* with Markdown. You can even link to [Google!](http://google.com)
+```
 
 <!-- more -->
 
-效果:
-It's very easy to make some words **bold** and other words *italic* with Markdown. You can even [link to Google!](http://google.com)
+效果：
+
+It's very easy to make some words **bold** and other words *italic* with Markdown. You can even link to [Google!](http://google.com)
 
 **文字的强调效果(EMPHASIS)**
-源码:
 
-* `*倾斜*`
-* `**加粗**`
-* `~~中划线效果~~`
-* `_You **can** combine them_`
+要加粗文本，请在单词或短语的前后各添加两个星号或下划线 
 
-效果:
+```md
+*要用斜体显示文本，请在单词或短语前后添加一个星号或下划线*
+**要加粗文本，请在单词或短语的前后各添加两个星号或下划线**
+~~中划线效果~~
+_You **can** combine them_
+```
 
-* *倾斜*
-* **加粗**
-* ~~中划线效果~~
-* _You **can** combine them_
+*要用斜体显示文本，请在单词或短语前后添加一个星号或下划线*<br>
+**要加粗文本，请在单词或短语的前后各添加两个星号或下划线**<br>
+~~中划线效果~~<br>
+_You **can** combine them_
+
+## 段落
+
+要创建段落，请使用空白行将一行或多行文本进行分隔。不要用空格（spaces）或制表符（tabs）缩进段落。
+
+![段落分割示例](http://upload-images.jianshu.io/upload_images/1662509-fe0c4340501096a0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## 标题 (Headers)
 
@@ -56,10 +65,12 @@ It's very easy to make some words **bold** and other words *italic* with Markdow
 
 源码:
 
-`As Kanye West said:`
+```md
+As Kanye West said:
 
-`> We're living the future so`
-`> the present is our past.`
+> We're living the future so
+> the present is our past.
+```
 
 效果:
 
@@ -72,9 +83,13 @@ As Kanye West said:
 
 ## 列表(LISTS)
 
+列表可嵌套其它元素，包括代码块，图片等。<br>
+列表可以嵌套，使用时在嵌套列表前加两个空格。<br>
+使用 `* - +` 中的任一个符号就可创建无序列表，也可以进一步使用 `+ -` 来有层次组织有序和无序列表。
+
 ### 无序列表(Unordered)
 
-```text
+```md
 * Item 1
 * Item 2
   * Item 2a
@@ -90,6 +105,8 @@ As Kanye West said:
 
 ### 有序列表(Ordered)
 
+要创建有序列表，请在每个列表项前添加数字并紧跟一个英文句点。数字不必按数学顺序排列，但是列表应当以数字 1 起始。
+
 ```md
 1. 这是一个有序列表1
 2. 这是一个有序列表2
@@ -99,9 +116,6 @@ As Kanye West said:
 
 1. 这是一个有序列表1
 2. 这是一个有序列表2
-
-> * 列表可以嵌套，使用时在嵌套列表前加两个空格
-> * 使用`* - +`中的任一个符号就可创建无序列表，也可以进一步使用`+ -`来有层次组织有序和无序列表
 
 ## 链接(LINKS)
 
@@ -144,31 +158,36 @@ I get 10 times more traffic from [Google][] than from
 
 ## 图像(IMAGES)
 
-> 像构造链接一样，只需要在前面加！
+要添加图片，请使用感叹号 ( ! ), 然后在方括号增加替代文本，图片链接放在圆括号里，括号里的链接后可以增加一个可选的图片标题文本。
 
 ```md
-![GitHub Logo](/images/logo.png)
-Format: ![Alt Text](url)
+![这是图片](/assets/img/abc.jpg "图片 title")
+```
 
-# 示例
-![图1](http://upload-images.jianshu.io/upload_images/95646-5bfd0cecf587c766.png)
+![这是图片](http://upload-images.jianshu.io/upload_images/95646-5bfd0cecf587c766.png "图片 title")
 ```
 
 ## 内联代码 (Inline code)
 
-```text
+```md
 I think you should use an `<addr>` element here instead.
 ```
 
 I think you should use an `<addr>` element here instead.
 
-## 支持 html
+## HTML 支持
 
-```html
-<u>支持下滑线</u>
-```
+几乎所有支持 Markdown 的地方都支持 HTML，HTML 可以理解为 Markdown 的超集，你可以做出任何炫酷的样式和排版。常用的包括在 Markdwon 中实现：
 
-<u>支持下滑线了</u>
+* 颜色：`<span style="color:red;">红色文本</span>`
+* 文本对齐： `<p style="text-align: right">右对齐文本</p>`
+* 上下标：`10<sup>-6</sup>，H<sub>2</sub>O`
+* 嵌入视频：`<iframe src="视频地址"/>`
+* 第三方 api 嵌入：`<img src="https://contrib.rocks/image?repo=PKM-er/Pkmer-Docs"/>`
+* 可合并的表格
+* …
+
+总而言之，你几乎可以实现任意文本格式和排版。与之相对的，HTML 的可读性并不是很好，通常是用于网页开发，在笔记中如果不在意这种对人来说不那么优雅的语法，完全可以写 HTML 做笔记。
 
 ## 反斜线转义
 
@@ -188,22 +207,22 @@ Markdown 可以利用反斜杠来插入一些在语法中有其它意义的符�
 ### 代码段
 
 * 使用**反单引号**(位于键盘中数字键“1”的左边)包裹一行代码。
-* 使用` ``` `包裹一块代码。
+* 使用 ` ``` ` 包裹一块代码。
 * 或者简单的每行前加四个空格
 
 > you can wrap your code with ``` to create a code block without the leading spaces. Add an **optional language** identifier and your code will get syntax highlighting.
 
 ```js
-// javascript语法高亮
+// javascript
 function test() {
     console.log("look ma’, no spaces");
 }
 ```
 
 ```java
-// java语法高亮
+// java
 protected final void sayHello() {
-    if (true) System.out.println("Hello friend.");
+    if (true) System.out.println("Hello World.");
 }
 ```
 
@@ -235,7 +254,7 @@ Content column 1 | Content column 2
 
 Markdown 让你可以自然地书写字符，需要转换的会由它自行处理。如果你使用的 `&` 字符是 HTML 字符实体的一部分，它会保留原状，否则它会被转换成 `&`。
 
-```text
+```md
 char glyph | HTML tag
 "          |    "
 &          |    &
@@ -248,17 +267,11 @@ char glyph | HTML tag
 
 各 markdown 软件对其进行了一些拓展, 有的支持脚注、有的会定义 checkbox 等操作、使用 toc 展示目录等操作。
 
-## 关于现代网页分段的思考
-
-* 目前中文段落开头空格 2 个字的需求，以前用转义字符, 现在网站流行不空格, 段落划分建议通过空行实现。
-* 段落以自然 **回车** 作为标记。
-
-![段落分割示例](http://upload-images.jianshu.io/upload_images/1662509-fe0c4340501096a0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
 ## 参考
 
 1. [Markdown 语法说明(简体中文版)][1]
-2. [Mastering Markdown · GitHub Guides][2]
+1. [Mastering Markdown · GitHub Guides][2]
+1. [PKMer_Markdown 基础入门](https://pkmer.cn/Pkmer-Docs/02-%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/markdown/markdown/)
 
   [1]: http://wowubuntu.com/markdown/index.html
   [2]: https://guides.github.com/features/mastering-markdown/

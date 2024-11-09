@@ -16,7 +16,7 @@ categories:
 
 可通过规则链、面板控件或 REST API 方式，向设备下发指令。
 
-以  REST 方式为例，当需要发送RPC请求需要使用下面 URL 执行 HTTP POST 请求：
+以 REST 方式为例，当需要发送RPC请求需要使用下面 URL 执行 HTTP POST 请求：
 
 http(s)://host:port/api/plugins/rpc/{callType}/{deviceId}
 
