@@ -1,6 +1,5 @@
 ---
 title: 合集-App
-permalink: :post_title.html
 date: 2017-04-13 22:07:33
 updated: 2024-10-26 19:03:16
 categories: 我的创作

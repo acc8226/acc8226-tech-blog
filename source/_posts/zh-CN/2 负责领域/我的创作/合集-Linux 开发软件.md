@@ -1,6 +1,5 @@
 ---
 title: 合集-Linux 开发软件
-permalink: 合集-Linux 开发软件/
 date: 2024-08-03 16:32:26
 updated: 2024-08-03 16:32:26
 categories: 我的创作

@@ -1,6 +1,5 @@
 ---
 title: 合集-Linux 日常软件
-permalink: 合集-Linux 日常软件/
 date: 2023-11-29 12:38:00
 updated: 2024-08-03 16:07:24
 categories: 我的创作

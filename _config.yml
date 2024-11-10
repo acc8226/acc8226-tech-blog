@@ -23,7 +23,7 @@ timezone: 'Asia/Shanghai'
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://feipig.fun
 # 永久链接设置为 | hash of filename (same as :title) and date (12-hexadecimal)
-permalink: :lang/:hash/
+permalink: :lang/:category/:post_title/
 # 永久链接中各部分的默认值	
 permalink_defaults:
 # 改写 permalink 的值来美化 URL	
