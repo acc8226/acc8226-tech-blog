@@ -1013,7 +1013,7 @@ not
 
 ## 39. Linux 环境
 
-[Termux](https://github.com/termux/termux-app) 是一个 Android 终端应用程序和 Linux 环境
+* [Termux](https://github.com/termux/termux-app) 是一个 Android 终端应用程序和 Linux 环境
 
 ## 40.直播
 
@@ -1038,6 +1038,8 @@ Joplin 我不喜欢这种组织方式
 * [印象笔记](https://sj.qq.com/appdetail/com.yinxiang) 限制 2 台设备
 * [有道云笔记](https://sj.qq.com/appdetail/com.youdao.note) 限制 2 台设备
 * [flomo 笔记](https://sj.qq.com/appdetail/com.flomo.app) 用不习惯
+* ——————— ฅ՞• •՞ฅ ———————
+* [纯纯写作](https://sj.qq.com/appdetail/com.drakeet.purewriter) 这种组织方式我不喜欢而已，但是本身设计很优秀
 
 ## 43.游戏
 
@@ -1088,13 +1090,13 @@ Bean's Quest 算是 1 代 和 Bean Dreams 算是 2 代
 ## 截图留恋
 
 iPad 截图留恋
-![iPad 截图留恋](/images/收藏-我的硬件/玩转-iOS-设备/1662509-0daad5d880393ba9.png 'iPad mini1')
+![iPad 截图留恋](https://feipig.fun/images/收藏-我的硬件/玩转-iOS-设备/1662509-0daad5d880393ba9.png 'iPad mini1')
 
 备用机 小米 5X 截图留恋
-![5X 截图留恋](/images/收藏-我的硬件/玩转-Android-设备/1662509-3b1988671c31fc11.png '小米 5X')
+![5X 截图留恋](https://feipig.fun/images/收藏-我的硬件/玩转-Android-设备/1662509-3b1988671c31fc11.png '小米 5X')
 
 安卓平板留恋
-![安卓平板留恋](./aPad.jpg 'vivo pad 1代')
+![安卓平板留恋](https://feipig.fun/images/我的/创作/合集-App/vivoPad.png 'vivo pad 1代')
 
 ## 部分资源留存
 
