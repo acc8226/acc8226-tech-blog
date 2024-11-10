@@ -82,7 +82,7 @@ fi
 
 Example:
 
-```
+```sh
 #!/bin/bash
 #
 # Perform hot backups of Oracle databases.
@@ -105,7 +105,7 @@ Example:
 
 Example:
 
-```
+```sh
 #######################################
 # Cleanup files from the backup directory.
 # Globals:
@@ -141,7 +141,6 @@ function get_dir() {
 function del_thing() {
   rm "$1"
 }
-
 ```
 
 ### Implementation 注释[](https://google.github.io/styleguide/shellguide.html#implementation-comments)
@@ -160,9 +159,8 @@ This matches the convention in the [C++ Guide](https://google.github.io/stylegu
 
 Examples:
 
-```
+```sh
 # TODO(mrmonkey): Handle the unlikely edge cases (bug ####)
-
 ```
 
 ## 格式化[](https://google.github.io/styleguide/shellguide.html#formatting)
@@ -181,7 +179,7 @@ Examples:
 
 如果你必须要写一个长于80个字符的字符串，那么你应该使用EOF或者嵌入一个新行，如果有一个文字字符串长度超过了80个字符，并且不能合理的分割文字字符串，但是强烈推荐你找到一种办法让它更短一点．
 
-```
+```sh
 # DO use 'here document's
 cat <<END
 I am an exceptionally long
@@ -191,7 +189,6 @@ END
 # Embedded newlines are ok too
 long_string="I am an exceptionally
 long string."
-
 ```
 
 ### 多个管道[](https://google.github.io/styleguide/shellguide.html#pipelines)
@@ -251,7 +248,7 @@ done
 
 The matching expressions are indented one level from the `case` and `esac`. Multiline actions are indented another level. In general, there is no need to quote match expressions. Pattern expressions should not be preceded by an open parenthesis. Avoid the `;&` and `;;&`notations.
 
-```
+```sh
 case "${expression}" in
   a)
     variable="…"
@@ -265,7 +262,6 @@ case "${expression}" in
     error "Unexpected expression '${expression}'"
     ;;
 esac
-
 ```
 
 Simple commands may be put on the same line as the pattern *and* `;;` as long as the expression remains readable. This is often appropriate for single-letter option processing. When the actions don’t fit on a single line, put the pattern on a line on its own, then the actions, then `;;` also on a line of its own. When on the same line as the actions, use a space after the close parenthesis of the pattern and another before the `;;`.
@@ -300,7 +296,8 @@ These are strongly recommended guidelines but not mandatory regulation. Nonethel
 *   3. 不要对单个字符的shell特殊变量或者是位置参数使用括号引用，除非强烈需求或者是为了避免深层次的困惑，优先使用括号引用其它任何变量
 
 优先使用大括号划分所有其他变量。
- ```
+
+```sh
 # Section of *recommended* cases.
 
 # Preferred style for 'special' variables:
@@ -322,7 +319,7 @@ while read -r f; do
 done < <(find /tmp)
 ```
 
-```
+```sh
 # Section of *discouraged* cases
 
 # Unquoted vars, unbraced vars, brace-delimited single letter
@@ -429,16 +426,14 @@ Nested backticks require escaping the inner ones with `\ `. The `$(command)`�
 
 Example:
 
-```
+```sh
 # This is preferred:
 var="$(command "$(command1)")"
-
 ```
 
-```
+```sh
 # This is not:
 var="`command \`command1\``"
-
 ```
 
 ### Test, `[ … ]`, and `[[ … ]]`[](https://google.github.io/styleguide/shellguide.html#test----and---)
@@ -526,7 +521,7 @@ fi
 
 For clarity, use `==` for equality rather than `=` even though both work. The former encourages the use of `[[` and the latter can be confused with an assignment. However, be careful when using `<` and `>` in `[[ … ]]` which performs a lexicographical comparison. Use `(( … ))` or `-lt` and `-gt` for numerical comparison.
 
-```
+```sh
 # Use this
 if [[ "${my_var}" == "val" ]]; then
   do_something
@@ -539,10 +534,9 @@ fi
 if [[ "${my_var}" -gt 3 ]]; then
   do_something
 fi
-
 ```
 
-```
+```sh
 # Instead of this
 if [[ "${my_var}" = "val" ]]; then
   do_something
@@ -553,7 +547,6 @@ if [[ "${my_var}" > 3 ]]; then
   # True for 4, false for 22.
   do_something
 fi
-
 ```
 
 ### Wildcard Expansion of Filenames[](https://google.github.io/styleguide/shellguide.html#wildcard-expansion-of-filenames)
@@ -960,7 +953,7 @@ fi
 
 ### 内置命令 vs 外部命令[](https://google.github.io/styleguide/shellguide.html#builtin-commands-vs-external-commands)
 
-调用shell内置命令和调用一个单独的进程在两者这件做出选择，选择调用内置命令．
+调用 shell 内置命令和调用一个单独的进程在两者这件做出选择，选择调用内置命令．
 
 我更喜欢使用内置命令，例如函数参数扩展 (bash(1)),它更加健壮和更可一致性．(尤其和像sed想比较而言)
 
@@ -984,7 +977,7 @@ substitution="$(echo "${string}" | sed -e 's/^foo/bar/')"
 
 请花几分钟阅读下google code style [C++ Guide](https://google.github.io/styleguide/cppguide.html#Parting_Words) 的Parting words章节. .
 
-修订版2.02
+修订版 2.02
 
 ## 参考
 

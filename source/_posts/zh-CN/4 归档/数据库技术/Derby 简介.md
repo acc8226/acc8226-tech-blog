@@ -15,5 +15,4 @@ Derby 易于安装、部署和使用。
 
 <!-- more -->
 
-Apache Derby
-<https://db.apache.org/derby/index.html>
+[Apache Derby](https://db.apache.org/derby/index.html)

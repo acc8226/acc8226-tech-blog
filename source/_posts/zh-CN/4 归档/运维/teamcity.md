@@ -12,5 +12,3 @@ docker run --name teamcity-server-instance \
 -p 8111:8111 \
 jetbrains/teamcity-server
 ```
-
-<!-- more -->

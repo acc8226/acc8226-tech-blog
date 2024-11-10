@@ -18,5 +18,3 @@ docker exec -it mayfly-go bash
 admin / admin123.
 
 这里不建议使用默认密码，进行新建用户或者可以将密码修改为 `mayfly-go:v1.6.1`。
-
-<!-- more -->

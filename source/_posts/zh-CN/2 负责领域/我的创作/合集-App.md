@@ -1,5 +1,6 @@
 ---
 title: 合集-App
+permalink: :post_title.html
 date: 2017-04-13 22:07:33
 updated: 2024-10-26 19:03:16
 categories: 我的创作
@@ -1096,7 +1097,7 @@ iPad 截图留恋
 ![5X 截图留恋](https://feipig.fun/images/收藏-我的硬件/玩转-Android-设备/1662509-3b1988671c31fc11.png '小米 5X')
 
 安卓平板留恋
-![安卓平板留恋](https://feipig.fun/images/我的/创作/合集-App/vivoPad.png 'vivo pad 1代')
+![安卓平板留恋](https://feipig.fun/images/我的/创作/合集-App/vivoPad.jpg 'vivo pad 1代')
 
 ## 部分资源留存
 

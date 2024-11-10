@@ -7,5 +7,3 @@ categories: 文本编辑器
 
 GNU Emacs - GNU Project
 <https://www.gnu.org/software/emacs/>
-
-<!-- more -->
