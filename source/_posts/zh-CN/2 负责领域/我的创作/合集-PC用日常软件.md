@@ -1,6 +1,6 @@
 ---
 title: 合集-PC用日常软件
-permalink: :post_title.html
+permalink: 合集-PC用日常软件/
 date: 2023-03-22 21:02:00
 updated: 2024-11-09 17:56:45
 categories: 我的创作

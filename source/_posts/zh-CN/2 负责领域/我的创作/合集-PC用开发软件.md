@@ -1,6 +1,6 @@
 ---
 title: 合集-PC用开发软件
-permalink: :post_title.html
+permalink: 合集-PC用开发软件/
 date: 2020-06-03 00:22:53
 updated: 2024-10-28 19:52:00
 categories: 我的创作
