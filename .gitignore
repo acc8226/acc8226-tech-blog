@@ -7,4 +7,7 @@ public/
 .deploy*/
 _multiconfig.yml
 .vscode/
+
 source/_posts/zh-CN/.obsidian/
+source/_posts/en/.obsidian/
+source/_drafts/.obsidian/

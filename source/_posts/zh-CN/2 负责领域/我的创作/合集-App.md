@@ -1,5 +1,6 @@
 ---
 title: 合集-App
+permalink: myapp/
 date: 2017-04-13 22:07:33
 updated: 2024-10-26 19:03:16
 categories: 我的创作
@@ -923,8 +924,12 @@ not
 
 ## 29.拍照和身份证扫描工具
 
-1. [白描](https://sj.qq.com/appdetail/com.uzero.baimiao) 快捷免费制作身份证正反面 A4 扫描件，自由保存与打印
-2. [白描证件照](https://sj.qq.com/appdetail/com.uzero.cn.zhengjianzhao) 一款自动扣人像制作证件照的App，支持多种尺寸证件照的制作以及自定义尺寸证件照的制作
+1. [白描](https://sj.qq.com/appdetail/com.uzero.baimiao) 可以免费制作身份证正反面 A4 扫描键，爆赞
+2. [白描证件照](https://sj.qq.com/appdetail/com.uzero.cn.zhengjianzhao) 支持多种尺寸证件照的制作以及自定义尺寸证件照的制作
+
+not
+
+扫描宝 动不动就要会员，差评
 
 ## 30.手写类
 
@@ -1090,14 +1095,14 @@ Bean's Quest 算是 1 代 和 Bean Dreams 算是 2 代
 ## 截图留恋
 
 iPad 截图留恋
-![iPad 截图留恋](https://feipig.fun/images/收藏-我的硬件/玩转-iOS-设备/1662509-0daad5d880393ba9.png 'iPad mini1')
+![iPad 截图留恋](https://img.feipig.fun/images/收藏-我的硬件/玩转-iOS-设备/1662509-0daad5d880393ba9.png 'iPad mini1')
 
 备用机 小米 5X 截图留恋
-![5X 截图留恋](https://feipig.fun/images/收藏-我的硬件/玩转-Android-设备/1662509-3b1988671c31fc11.png '小米 5X')
+![5X 截图留恋](https://img.feipig.fun/images/收藏-我的硬件/玩转-Android-设备/1662509-3b1988671c31fc11.png '小米 5X')
 
 安卓平板留恋
-![安卓平板留恋](https://feipig.fun/images/我的/创作/合集-App/vivoPad.jpg 'vivo pad 1代')
+![安卓平板留恋](https://img.feipig.fun/images/我的/创作/合集-App/vivoPad.jpg 'vivo pad 1代')
 
 ## 部分资源留存
 
-详见 [《我的网盘-系列》](https://feipig.fun/zh-CN/53e90cff1a21)
+详见 [《我的网盘-系列》](https://feipig.fun/wangpan)
