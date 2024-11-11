@@ -62,7 +62,7 @@ categories: 我的创作
 
 #### 1.2【常用】键鼠增强
 
-* 【win 自荐】[**捷键**](https://feipig.fun/zh-cn/4c2b72aaa7d0)
+* 【win 自荐】[**捷键**](https://feipig.fun/jiejian)
 * 【mac】[Hammerspoon](https://www.hammerspoon.org) 搭配自制脚本
 * 【linux】AutoKey [Github 地址](https://github.com/autokey/autokey) | [帮助文档](https://autokey.github.io/intro.html) 适用于 qt 和 x11 平台
 
@@ -79,7 +79,7 @@ categories: 我的创作
 
 **windows 平台**
 
-【win mac】[f.lux](https://justgetflux.com) +【win 自荐】[捷键-定时提醒](https://feipig.fun/zh-cn/4c2b72aaa7d0)
+【win mac】[f.lux](https://justgetflux.com) +【win 自荐】[捷键-定时提醒](https://feipig.fun/jiejian)
 
 **mac 平台**
 
@@ -284,7 +284,7 @@ not
 
 **windows 平台**
 
-【win 自荐】[捷键](https://feipig.fun/zh-cn/4c2b72aaa7d0) 我当然更推荐自己开发的软件，已经包含了该功能，使用 alt + 空格可以呼出
+【win 自荐】[捷键](https://feipig.fun/jiejian) 我当然更推荐自己开发的软件，已经包含了该功能，使用 alt + 空格可以呼出
 
 **mac 平台**
 
@@ -593,7 +593,7 @@ not
 
 官网收录：【win】[Quicker](https://getquicker.net) |【win】[Listary](https://www.listary.net)
 |【win】[Ditto](https://ditto-cp.sourceforge.io) 口碑很高的增强剪切板
-|【win 自荐】[**捷键**](https://feipig.fun/zh-cn/4c2b72aaa7d0) 不仅仅是增强快捷键
+|【win 自荐】[**捷键**](https://feipig.fun/jiejian) 不仅仅是增强快捷键
 
 ### 18.文件加密
 
