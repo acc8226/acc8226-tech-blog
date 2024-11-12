@@ -1034,11 +1034,12 @@ not
 
 ## 42.笔记
 
-我主推 markdown 格式的本地笔记，比如 [obsidian](https://obsidian.md/download)
+* 本地 [obsidian](https://obsidian.md/download) 我主推得 markdown 本地笔记
+* 在线 [讯飞语记](https://sj.qq.com/appdetail/com.iflytek.vflynote) 支持实时语音听写很好用
 
 not
 
-Joplin 我不喜欢这种组织方式
+* Joplin 我不喜欢这种组织方式
 * ——————— ฅ՞• •՞ฅ ———————
 * [印象笔记](https://sj.qq.com/appdetail/com.yinxiang) 限制 2 台设备
 * [有道云笔记](https://sj.qq.com/appdetail/com.youdao.note) 限制 2 台设备
@@ -1050,8 +1051,7 @@ Joplin 我不喜欢这种组织方式
 
 ### iPhone 和 iPad
 
-我一般会玩经典系列，比如王国保卫战、割绳子、小鳄鱼洗澡、糖果粉碎传奇、滑雪大冒险、愤怒的小鸟 
-
+我一般会玩经典系列，比如王国保卫战、割绳子、小鳄鱼洗澡、糖果粉碎传奇、滑雪大冒险、愤怒的小鸟<br/>
 Bean's Quest 算是 1 代 和 Bean Dreams 算是 2 代
 
 ## 其他
@@ -1095,7 +1095,7 @@ Bean's Quest 算是 1 代 和 Bean Dreams 算是 2 代
 ## 截图留恋
 
 iPad 截图留恋
-![iPad 截图留恋](https://img.feipig.fun/images/收藏-我的硬件/玩转-iOS-设备/1662509-0daad5d880393ba9.png 'iPad mini1')
+![iPad 截图留恋](https://img.feipig.fun/images/收藏-我的硬件/玩转-iOS-设备/1662509-0daad5d880393ba9.png 'iPad mini 1')
 
 备用机 小米 5X 截图留恋
 ![5X 截图留恋](https://img.feipig.fun/images/收藏-我的硬件/玩转-Android-设备/1662509-3b1988671c31fc11.png '小米 5X')

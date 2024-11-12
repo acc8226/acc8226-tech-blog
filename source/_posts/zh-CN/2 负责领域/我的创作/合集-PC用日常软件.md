@@ -14,7 +14,7 @@ categories: 我的创作
 
 ### 0. 必备
 
-#### 0.1管家杀毒类
+#### 0.1管家/杀毒
 
 普通用户或者想省心的可以只安装【win 安装版】[360 安全卫士极速版](https://weishi.360.cn)
 
@@ -39,7 +39,7 @@ categories: 我的创作
 
 * 【win 安装版】[PeaZip](https://peazip.github.io) 智能解压很好用，记得切换到中文语言，安装版和右键菜单集成的比较好
 * 【[mac](https://apps.apple.com/cn/app/the-unarchiver/id425424353?mt=12)】[The Unarchiver](https://theunarchiver.com) 或【[mac](https://apps.apple.com/cn/app/fastzip-%E4%B8%93%E4%B8%9A%E7%9A%84-rar-7z-zip-%E8%A7%A3%E5%8E%8B%E7%BC%A9%E5%B7%A5%E5%85%B7/id1565629813?mt=12)】[FastZip](https://www.better365.cn/fastzip.html)
-* liunx 一般都实用自带的 tar 命令
+* linux 一般都实用自带的 tar 命令
 
 官网收录：【win】[WinRAR](https://www.winrar.com.cn) |【win mac】[Bandizip](https://www.bandisoft.com/bandizip) |【win】[7-Zip](https://7-zip.org) |【mac】[FastZip](https://www.better365.cn/fastzip.html) |【mac】[Keka](https://www.keka.io/en) |【win mac】[360 压缩](https://yasuo.360.cn)
 
@@ -120,13 +120,31 @@ categories: 我的创作
 * 【mac】[Picture View](https://wl879.github.io/apps/picview/index.html)
 * liunx 系统自带
 
+备用
+
+【win】[ImageGlass](https://github.com/d2phap/ImageGlass) 界面很现代，比菠萝看图功能更多，软件体积更大但体积还能接受
+
+not
+
+* acdsee 免费版都需要注册，差评
+* 【只有安装版】[Honeyview](https://www.bandisoft.com/honeyview/) 蜂蜜浏览器 · 免费的图像查看器 页面太丑了，已过时
+* 【付费】【win】[Bandiview](https://www.bandisoft.com/bandiview/) Honeyview 的升级版
+* 【绿色版】【win】[jpegview](https://github.com/sylikc/jpegview/) 特点是小巧，但是我用不惯
+* [XnView](https://www.xnview.com/en/xnview/#downloads) 界面不那么现代
+
 官网收录：【win】[XnView](https://www.xnview.com/en) |【win】[BandiView](http://www.bandisoft.com/bandiview)
 
 #### 1.8 图像处理
 
-* 免费【网页版】[美图秀秀](https://pc.meitu.com) 其实在线版也不错
-* 轻量级【win】[ShareX](https://getsharex.com) 也可以贴图，不过我更当是一个图片编辑器，还可以录屏
-* 重量级【全平台】[Gimp](https://www.gimp.org)【PS 的替代品且免费】
+* 免费【网页版】[美图秀秀](https://pc.meitu.com)
+* 轻量级【win】[Paint.NET](https://www.getpaint.net) 功能强大且有绿色版
+* 重量级【全平台】[Gimp](https://www.gimp.org) PS 的替代品且免费
+
+not
+
+* 【win】光影魔术手 之前版本还行，新版本就不行了
+* 【win mac】eagle 感觉不好用
+* 【win mac 收费】PS 正版太贵, 且版本不能永久买断我也不期望，让人望而却步
 
 官网收录：[Adobe Photoshop](https://www.photoshop.com)
 
@@ -318,6 +336,10 @@ albert 安装不上
 【win】[拾光壁纸](https://app.nguaduot.cn/timeline) 干净、舒适、流畅的壁纸网站
 
 ## 拓展
+
+### 11.打字练习
+
+【win】[金山打字通](https://www.51dzt.com)
 
 ### 0.【常用】驱动运行库硬件检测
 

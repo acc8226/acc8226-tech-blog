@@ -39,21 +39,21 @@ categories:
 
 **为了更好的进行录入，一定要学会盲打。**
 
-打字通 2016 官方免费下载_打字练习软件下载_金山打字通官方网站
-<https://www.51dzt.com/>
+打字通 2016 官方免费下载_打字练习软件下载_[金山打字通官方网站](https://www.51dzt.com)
 
 ## 记录
 
 ### 按键的英文
 
+```text
 ` backtick
 ~ tilde
 
-`! exclamation mark`
-`@ at`
-`# pound / hash / hashtag`
-`$ dollar sign`
-`% percent`
+! exclamation mark
+@ at
+# pound / hash / hashtag
+$ dollar sign
+% percent
 
 ^ caret
 & ampersand, and, reference, ref
@@ -62,11 +62,11 @@ categories:
 ( open parenthesis, open paren，open bracket 左圆括号
 ) close parenthesis, close paren，close bracket 右圆括号
 
-`- hyphen` 连字符
-`_ underscore` 下划线
+- hyphen 连字符
+_ underscore 下划线
 
-`= equals`
-`+ plus sign`
+= equals
++ plus sign
 
 [] square brackets
 [ open bracket 左方括号
@@ -89,10 +89,11 @@ categories:
 < less than
 
 . dot / period 句号
-`> greater than`
+> greater than
 
 / slash, divide, oblique 斜线，斜杠，除号
 ? question mark
+```
 
 ### 修改 host 文件
 
