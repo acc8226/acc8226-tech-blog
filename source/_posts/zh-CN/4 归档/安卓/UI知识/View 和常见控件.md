@@ -74,7 +74,7 @@ Android Button 默认样式高度问题, 去掉可用`android:minHeight="0px"`
 
 ```java
 setTextColor(0xFF0000FF);
-//0xFF0000FF 是 int 类型的数据，分组一下0x|FF|0000FF，0x 是代表颜色整 数的标记，ff是表示透明度，0000FF表示颜色，注意：这里 0xFF0000FF 必须是8个的颜色表示，不接受 0000FF 这种 6 个的颜色表示。
+//0xFF0000FF 是 int 类型的数据，分组一下 0x|FF|0000FF，0x 是代表颜色整 数的标记，ff是表示透明度，0000FF表示颜色，注意：这里 0xFF0000FF 必须是8个的颜色表示，不接受 0000FF 这种 6 个的颜色表示。
 setTextColor(Color.rgb(255, 255, 255));
 setTextColor(Color.parseColor("#FFFFFF"));
 //还有就是使用资源文件进行设置

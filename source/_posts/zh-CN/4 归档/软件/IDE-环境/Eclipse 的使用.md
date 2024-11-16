@@ -23,7 +23,7 @@ categories: IDE-使用
 
 ## Eclipse 常用快捷键
 
-### Ctrl + Shift + R：打开资源
+### Ctrl + Shift + R 打开资源
 
 这可能是所有快捷键组合中最省时间的了。这组快捷键可以让你打开你的工作区中任何一个文件，而你只需要按下文件名或 mask 名中的前几个字母，比如 applic\*.xml。
 

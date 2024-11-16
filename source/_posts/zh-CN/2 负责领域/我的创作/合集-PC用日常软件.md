@@ -10,11 +10,11 @@ categories: 我的创作
 
 注：以下内容谨代表个人观点。软件上尽量选择跨平台在搭配特定系统特有软件即可满足大部分使用场景。另外“官网收录”模块收录的各软件官网地址仅供参考。
 
-## 日常
+## 1 日常
 
-### 0. 必备
+### 0 必备
 
-#### 0.1管家/杀毒
+#### 0.1 管家/杀毒
 
 普通用户或者想省心的可以只安装【win 安装版】[360 安全卫士极速版](https://weishi.360.cn)
 
@@ -25,7 +25,7 @@ categories: 我的创作
 
 官网收录：管家类【win 安装版】[腾讯电脑管家](https://guanjia.qq.com) | 杀毒类：[Norton](https://cn.norton.com) | [McAfee](https://www.mcafee.com/zh-cn/index.html) |【win 安装版】[金山毒霸](https://www.ijinshan.com)
 
-#### 0.2浏览器
+#### 0.2 浏览器
 
 * 【win 绿色版】[Catsxp 猫眼浏览器](http://www.centbrowser.cn) 鼠标悬停切换标签功能值得点赞。保护隐私、更快捷、更安全
 * 【mac】[360 极速浏览器](https://browser.360.cn/ee/mac/index.html) 而非 App Store 版
@@ -35,7 +35,7 @@ categories: 我的创作
 
 官网收录：【win】[搜狗浏览器](https://sogou.browser.qq.com) |【win】[猎豹浏览器](https://www.liebao.cn) |【全平台】[360 安全浏览器](https://browser.360.cn) |【win mac】[QQ 浏览器](https://browser.qq.com) |【全平台】[Edge](https://www.microsoft.com/zh-cn/edge) |【全平台】[Opera](https://www.opera.com/zh-cn) |【全平台】[Chrome](https://www.google.cn/intl/zh-CN/chrome) |【win mac】[傲游浏览器](https://www.maxthon.cn) | [Vivaldi](https://vivaldi.com) |【win】[百分浏览器](http://www.centbrowser.cn)
 
-#### 0.3压缩解压
+#### 0.3 压缩解压
 
 * 【win 安装版】[PeaZip](https://peazip.github.io) 智能解压很好用，记得切换到中文语言，安装版和右键菜单集成的比较好
 * 【[mac](https://apps.apple.com/cn/app/the-unarchiver/id425424353?mt=12)】[The Unarchiver](https://theunarchiver.com) 或【[mac](https://apps.apple.com/cn/app/fastzip-%E4%B8%93%E4%B8%9A%E7%9A%84-rar-7z-zip-%E8%A7%A3%E5%8E%8B%E7%BC%A9%E5%B7%A5%E5%85%B7/id1565629813?mt=12)】[FastZip](https://www.better365.cn/fastzip.html)
@@ -43,14 +43,14 @@ categories: 我的创作
 
 官网收录：【win】[WinRAR](https://www.winrar.com.cn) |【win mac】[Bandizip](https://www.bandisoft.com/bandizip) |【win】[7-Zip](https://7-zip.org) |【mac】[FastZip](https://www.better365.cn/fastzip.html) |【mac】[Keka](https://www.keka.io/en) |【win mac】[360 压缩](https://yasuo.360.cn)
 
-#### 0.4输入法
+#### 0.4 输入法
 
 * 【win mac】自带 或者[微信输入法](https://z.weixin.qq.com) 特有云粘贴板功能，支持跨设备粘贴文字、图片
 * 【linux】自带 或者 [RIME](https://github.com/rime/home/wiki/RimeWithIBusx)
 
 官网收录：【全平台】[百度输入法](https://shurufa.baidu.com) |【全平台】[搜狗输入法](https://shurufa.sogou.com) |【全平台】[讯飞输入法](https://srf.xunfei.cn) |【win】[QQ 输入法](https://qq.pinyin.cn)
 
-### 1. 工具类
+### 1 工具类
 
 #### 1.1【常用】鼠标手势
 
@@ -154,7 +154,7 @@ not
 
 官网收录：付费【全平台】【[mac 版](https://apps.apple.com/cn/app/1password-7-password-manager/id1333542190?mt=12)】[1Password](https://1password.com/zh-cn)
 
-### 2. 办公类
+### 2 办公类
 
 #### 2.1【常用】Office
 
@@ -164,9 +164,9 @@ not
 
 在线平台我推荐【[mac 版](https://apps.apple.com/cn/app/%E8%85%BE%E8%AE%AF%E6%96%87%E6%A1%A3/id1370780836)】[腾讯文档](https://docs.qq.com)和[金山文档](https://www.kdocs.cn)，非常适合文档分享。但千万记得加水印和是设置只读访问权限，防止资料泄漏和被非法买卖
 
-怀旧经典
+linux 除了 wps 和 LibreOffice，可以安装 [WinApps for linux](https://nowsci.com/winapps) | [github 项目地址](https://github.com/Fmstrat/winapps) 安装并使用 office。
 
-WPS 2013
+怀旧经典：WPS 2013
 
 官网收录：【win】[永中 Office](https://www.yozosoft.com)
 
@@ -208,9 +208,13 @@ WPS 2013
 
 #### 2.5 思维导图
 
-【全平台】【[mac 版](https://apps.apple.com/cn/app/xmind-%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/id1327661892?mt=12)】[Xmind 思维导图](https://xmind.cn)
+【全平台】Xmind 思维导图 [官网](https://xmind.cn) | [mac 版](https://apps.apple.com/cn/app/xmind-%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/id1327661892?mt=12)
 
-### 3.【常用】音频类
+not
+
+MindManager 官网直接就显示收费，我不是很喜欢
+
+### 3【常用】音频类
 
 **windows 平台**
 
@@ -247,7 +251,7 @@ not
 
 官网收录：【win [mac](https://apps.apple.com/cn/app/%E6%B1%BD%E6%B0%B4%E9%9F%B3%E4%B9%90-%E6%8A%96%E9%9F%B3%E9%9F%B3%E4%B9%90%E7%89%88/id1605585211)】[汽水音乐](https://www.qishui.com) |【win】[方格音乐](http://morin.vin) |【win mac】[itunes](https://www.apple.com.cn/itunes)
 
-### 4.【常用】视频类
+### 4【常用】视频类
 
 **windows 平台**
 
@@ -267,7 +271,7 @@ not
 
 官网收录：【win mac】[迅雷影音](https://video.xunlei.com/pc.html) | 【win】[射手影音](https://www.splayer.org) | 【win mac】[抖音电脑版](https://www.douyin.com) |【win mac】[爱奇艺客户端](https://www.iqiyi.com/appstore.html) | 【win [mac](https://apps.apple.com/cn/app/%E8%85%BE%E8%AE%AF%E8%A7%86%E9%A2%91-%E5%BF%83%E5%8A%A8%E7%9A%84%E4%BF%A1%E5%8F%B77-%E7%8B%AC%E5%AE%B6%E7%83%AD%E6%92%AD/id1231336508?mt=12)】[腾讯视频](https://v.qq.com/download.html) |【win [mac](https://apps.apple.com/cn/app/%E4%BC%98%E9%85%B7%E8%A7%86%E9%A2%91-%E6%83%9C%E8%8A%B1%E8%8A%B7-%E5%85%A8%E7%BD%91%E7%8B%AC%E6%92%AD/id1014945607?mt=12)】[优酷](https://youku.com/product/index) |【win [mac](https://apps.apple.com/cn/app/%E5%A4%AE%E8%A7%86%E5%BD%B1%E9%9F%B3-%E6%B5%B7%E9%87%8F%E5%A4%AE%E8%A7%86%E5%86%85%E5%AE%B9%E9%AB%98%E6%B8%85%E7%9B%B4%E6%92%AD/id1357529089?mt=12)】[央视影音](https://app.cctv.com)
 
-### 5.【常用】社交类
+### 5【常用】社交类
 
 * 【全平台】【[mac 版](https://apps.apple.com/cn/app/%E5%BE%AE%E4%BF%A1/id836500024?mt=12)】[微信](https://weixin.qq.com) 、【全平台】【[mac 版](https://apps.apple.com/cn/app/qq/id451108668?mt=12)】[QQ](https://im.qq.com/index)
 * 【[win](https://tim.qq.com/download.html)】[Tim](https://tim.qq.com)
@@ -276,7 +280,7 @@ not
 
 【win linux】[阿里旺旺](https://wangwang.taobao.com) 不好用
 
-### 6.教育类
+### 6 教育类
 
 1. 【全平台】【[mac 版](https://apps.apple.com/cn/app/%E6%AF%8F%E6%97%A5%E8%8B%B1%E8%AF%AD%E5%90%AC%E5%8A%9B-%E8%8B%B1%E8%AF%AD%E5%90%AC%E5%8A%9B%E7%9A%84%E6%9C%80%E4%BD%B3%E9%80%94%E5%BE%84/id734383760?mt=12)】[每日英语听力](https://www.eudic.net/v4/en/app/ting)
 2. 【全平台】【[mac 版](https://apps.apple.com/cn/app/eudic-%E6%AC%A7%E8%B7%AF%E8%AF%8D%E5%85%B8/id434350458?mt=12)】[欧路词典](https://www.eudic.net/v4/en/app/download)
@@ -285,7 +289,7 @@ not
 
 【win】[灵格斯词典](http://www.lingoes.cn/index.html)
 
-### 7.远程类
+### 7 远程类
 
 **注意：谨防电信网络诈骗，不要被对方以任何理由下载什么各种投屏、云视讯 app 并要求共享屏幕的。**
 
@@ -298,7 +302,7 @@ not
 
 官网收录：【全平台】[向日葵](https://sunlogin.oray.com/product/feat) ｜【全平台】[LocalSend](https://localsend.org/download) 局域网文件传输 |【全平台】[VNC Viewer](https://www.realvnc.com/en/connect/download/viewer) | [TeamViewer](https://www.teamviewer.cn/cn)
 
-### 8.启动器
+### 8 启动器
 
 **windows 平台**
 
@@ -322,24 +326,25 @@ albert 安装不上
 
 官网收录：【mac】[HapiGo](http://hapigo.com/index.html)
 
-### 9.阅读类
+### 9 阅读类
 
 * 【全平台】[Koodo Reader](https://www.koodoreader.com/zh) 开源的电子书阅读器，支持多达15种主流电子书格式， 内置笔记、高亮、翻译功能，助力高效书籍阅读和学习
 * 【win】[Fluent Reader 一款 rss 阅读器](https://github.com/yang991178/fluent-reader/releases)
+* 【win mac】[Jane Reader](https://janereader.com/) 现代化的 epub 阅读器
 * 【mac】自带【mac】iBook 可用于阅读电子书
 * 【mac】[Reeder](https://apps.apple.com/mo/app/reeder-5/id1529448980) 用于 rss
 * 【linux】[FBReader](https://fbreader.org) 用于阅读电子书
 * 【linux】[NewsFlash](https://flathub.org/zh-Hans/apps/io.gitlab.news_flash.NewsFlash) 很棒的一款 rss 阅读器
 
-### 10.桌面美化
+### 10 桌面美化
 
 【win】[拾光壁纸](https://app.nguaduot.cn/timeline) 干净、舒适、流畅的壁纸网站
 
-## 拓展
-
-### 11.打字练习
+### 11 打字练习
 
 【win】[金山打字通](https://www.51dzt.com)
+
+## 2 拓展
 
 ### 0.【常用】驱动运行库硬件检测
 
@@ -367,13 +372,13 @@ not
 
 官网收录：【mac】[AppCleaner](https://freemacsoft.net/appcleaner)
 
-### 1.【常用】激活类
+### 1【常用】激活类
 
 [GitHub - zbezj/HEU_KMS_Activator](https://dl.lancdn.com/landian/soft/heu) | [备份站](https://dl.lancdn.com/landian/soft/heu) 支持数字激活LTSC，win11与office2021等激活
 
 【win】[云萌 Windows 激活工具](https://cmwtat.cloudmoe.com/cn.html)
 
-### 2. OCR 软件
+### 2 OCR 软件
 
 【win】[Umi-OCR](https://github.com/hiroi-sora/Umi-OCR) 图片转文字识别软件
 
@@ -381,7 +386,7 @@ not
 
 【linux】目前很多启动器，比如【全平台】[utools](https://u.tools) 都带了这个小功能
 
-### 3.录屏软件
+### 3 录屏软件
 
 **视频录制**
 
@@ -459,13 +464,13 @@ not
 
 剪辑暂时用【全平台】[Shotcut](https://www.shotcut.org)
 
-### 4. TTS 文字转语音软件
+### 4 TTS 文字转语音软件
 
 【win】[tts-vue: 🎤 微软语音合成工具](https://gitee.com/LGW_space/tts-vue)，使用 Electron + Vue + ElementPlus + Vite 构建，将文字转为语音 MP3。
 
 注：edge 其实也有网页 和 pdf 朗读能力，也能好用，如果不需要转语言的话还是很有用的。
 
-### 5. 文件搜索
+### 5 文件搜索
 
 【win】[WizFile](https://antibody-software.com/wizfile/download) 颜值比 【win】[Everything](https://www.voidtools.com/zh-cn/downloads) 高不少
 
@@ -477,7 +482,7 @@ and
 
 文档中搜索关键字 【win】工具 FileSearchEX_v1.1.0.6
 
-### 6.显示网速
+### 6 显示网速
 
 【win】[TrafficMonitor](https://github.com/zhongyang219/TrafficMonitor)
 
@@ -485,7 +490,7 @@ and
 
 mac 的腾讯柠檬清理已经自带了该功能
 
-### 7.DNS 相关
+### 7 DNS 相关
 
 目前仅 windows 平台
 
@@ -510,21 +515,21 @@ or
 
 [Pi-hole](https://github.com/pi-hole/pi-hole) 是一个网络广告拦截工具
 
-### 8.markdown 编辑
+### 8 markdown 编辑
 
-1. 【全平台】[MarkText](https://github.com/marktext/marktext/releases '洒洒水啦') 轻度使用的 markdown 编辑器
-1. 【全平台】[obsidian](https://obsidian.md) 设计理念很赞
+1. 【全平台】MarkText [官网](https://www.marktext.cc/) | [GitHub 源](https://github.com/marktext/marktext/releases) 轻度使用的 markdown 编辑器
+1. 【全平台】[obsidian](https://obsidian.md) 功能特强大，玩法多
 
 备用
 
-* 【全平台】[Typora](https://typoraio.cn) 虽然功能强大，且适合初学者，收费有条件支持下
+* 【全平台】[Typora](https://typoraio.cn) 功能强大，容易上手，但收费，有条件可支持下
 
 not
 
 * 【win】[MarkdownPad2](http://markdownpad.com) 感觉差点意思
 * 【mac】[Ulysses](https://www.ulysses.app/zh) 面向 Mac、iPad 和 iPhone 的终极写作应用，但收费就算了
 
-### 9.大文件分析
+### 9 大文件分析
 
 推荐【win】[WizTree](https://www.diskanalyzer.com)
 
@@ -536,7 +541,7 @@ or
 
 备用【win 安装版】[TreeSize](https://www.jam-software.com/treesize/editions.shtml)
 
-### 10.【常用】清理卸载
+### 10【常用】清理卸载
 
 **windows 平台**
 
@@ -565,30 +570,30 @@ not
 
 一些发行版本带了清理功能
 
-### 11.内网通讯
+### 11 内网通讯
 
 【安装版】【win】[内网通](http://www.51nwt.com/index.htm) 有广告但是没招，目前较为好用的软件
 
 mac 平台暂时没找到好用的
 
-### 12.手机助手
+### 12 手机助手
 
 Android 用户可选择 【win】[腾讯应用宝 PC 版](https://sj.qq.com) /【win】[360 手机助手 PC 版](http://sj.360.cn/index.html)
 
 iOS 用户可下载【win mac】 [iTunes](https://www.apple.com.cn/itunes) 或者某国产助手
 
-### 13.光驱镜像
+### 13 光驱镜像
 
 如果要刻录的话，win 11 自带一般够用，现在光驱都淘汰了
 
 虚拟光驱可用于加载 iso 文件，但现实是一般难得用到了，实在不行可以将后缀改成 zip 然后进行解压也不耽误很多事
 
-### 14.磁盘分区
+### 14 磁盘分区
 
 * 【win】[傲梅分区助手](https://www.disktool.cn/download.html)
 * 【win】[DiskGenius](https://www.diskgenius.cn)
 
-### 15. 刻录烧录
+### 15 刻录烧录
 
 推荐
 
@@ -604,12 +609,12 @@ not
 
 【win】[Rufus](https://rufus.ie/zh) 其实还不错，但是和 Ventoy 相比我更偏爱 Ventoy
 
-### 16.微软 buff
+### 16 微软 buff
 
 * 【win】[微软 Sysinternals](https://learn.microsoft.com/zh-cn/sysinternals) 帮助管理、排查 Windows 和 Linux 系统与应用程序的问题并进行诊断
 * 【win】[Microsoft PowerToys](https://learn.microsoft.com/zh-cn/windows/powertoys) 用于自定义 Windows 的实用工具
 
-### 17.效率工具
+### 17 效率工具
 
 *【跨平台】[Espanso](https://espanso.org) 一款文字输入增强工具
 
@@ -617,33 +622,33 @@ not
 |【win】[Ditto](https://ditto-cp.sourceforge.io) 口碑很高的增强剪切板
 |【win 自荐】[**捷键**](https://feipig.fun/jiejian) 不仅仅是增强快捷键
 
-### 18.文件加密
+### 18 文件加密
 
 1. 【win mac】[Encrypto](https://macpaw.com/encrypto) - 优雅地给文件加个密！精致的 PC / Mac 免费文件夹加密工具软件
 2. 【win mac】[PrivateAccess for SanDisk ](https://support-cn.wd.com/app/products/downloads/softwaredownloads) 闪迪 U 盘专用的加密工具
 
-### 19.磁盘加密
+### 19 磁盘加密
 
 【全平台】[VeraCrypt](https://veracrypt.fr/en/Home.html) 最佳免费开源跨平台的文件加密工具 (支持U盘加密/硬盘分区加密)
 
-### 20.文件重命名
+### 20 文件重命名
 
 【win】[ReNamer](http://www.den4b.com/products/renamer)
 
-### 21.IPTV 相关
+### 21 IPTV 相关
 
 【win】[IPTV+Checker+2.5汉化版](https://www.mediafire.com/file/y7edgxkydtp728o/IPTV+Checker+2.5%E6%B1%89%E5%8C%96%E7%89%88.rar/file)
 
-### 22.备份恢复
+### 22 备份恢复
 
 【win】[傲梅备份](https://www.abackup.com)
 
-### 23.软件管家
+### 23 软件管家
 
 * 【win】[火绒应用商店](https://www.huorong.cn/appstore)
 * 【win】[联想应用商店](https://lestore.lenovo.com)
 
-### 24.mac 特有
+### 24 mac 特有
 
 #### 鼠标翻转
 
@@ -657,7 +662,7 @@ not
 
 [键指如飞](https://www.better365.cn/FlyKey.html) 一键展示 Mac 快捷键
 
-### 25.windows 特有
+### 25 windows 特有
 
 #### 空格预览文件
 
@@ -692,9 +697,9 @@ not
 
 解析 exe，例如可以轻松查看【win】[Preme](http://www.premeforwindows.com) 的 ahk 源码
 
-## 专业
+## 3 专业
 
-### 0. 虚拟机
+### 0 虚拟机
 
 * 【mac 首选】[VMware Fusion Pro for Mac](https://support.broadcom.com/group/ecx/productdownloads?subfamily=VMware+Fusion) 可供基于 Intel CPU 或 Apple M 系列处理器的 Mac 电脑使用
 * 【win 首选】[VMware Workstation Pro for PC](https://support.broadcom.com/group/ecx/productdownloads?subfamily=VMware+Workstation+Pro)
@@ -707,20 +712,20 @@ not
 
 付费【mac】[Parallels](https://www.parallels.cn) 买断只能买一个大版本，差评
 
-### 1. 网盘搭建
+### 1 网盘搭建
 
 【全平台】[AList](https://alist.nn.ci/zh) | [Releases](https://github.com/alist-org/alist/releases)
 
-### 2. 【常用】网络加速
+### 2【常用】网络加速
 
 1. 【全平台】[hiddify](https://hiddify.com)
 2. 【全平台】[瓦特工具箱 Watt Toolkit「原名 Steam++」](https://steampp.net) 可加速 GitHub
 
-### 3. 内网转发
+### 3 内网转发
 
 【全平台】[frp](https://github.com/fatedier/frp/releases)
 
-### 4. 投屏显示
+### 4 投屏显示
 
 **提醒：不听不信，谨防陌生人诈骗！**
 
@@ -735,14 +740,14 @@ not
 
 * [乐播投屏](https://www.lebo.cn) 太臃肿且要注意远程屏幕共享骗局
 
-### 5. 文件转换
+### 5 文件转换
 
 * 【win 安装版】[格式工厂](http://www.pcgeshi.com/index.html) 全功能转换
 * 【全平台】[HandBrake](https://handbrake.fr) 视频转换
 
 官网收录：【mac】[即刻转换](https://zh.okaapps.com/product/1637557903) 即刻转换是一款功能全面的格式转换软件，支持转换几乎所有主流的多媒体文件格式
 
-### 6. 包管理器
+### 6 包管理器
 
 【mac】[Homebrew](https://brew.sh/index_zh-cn)
 
