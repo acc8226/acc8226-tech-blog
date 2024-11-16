@@ -53,9 +53,9 @@ categories: 我的创作
 
 ### 0 安全中心【重要】
 
-<a href="https://sj.qq.com/appdetail/com.hicorenational.antifraud" style="color: red;">国家反诈中心</a> 作为装机必备！<br/>
-设置电信防骚扰，电信用户可以设置天翼防骚扰 一般微信上关注公众号就够用，移动和联通也有对应的公众号关注后可以屏蔽国外来电。<br/>
-iPhone 用户则必须安装其中一个，防诈骗和无良商家骗取钱财。
+<a href="https://sj.qq.com/appdetail/com.hicorenational.antifraud" style="color: red;">国家反诈中心</a> 作为装机必备！防诈骗第一
+
+设置电话防骚扰，电信用户可以在微信上关注公众号设置天翼防骚扰，移动和联通也有对应的公众号关注后可以屏蔽国外来电。
 
 #### 安卓
 
@@ -1057,7 +1057,7 @@ not
 
 ## 43 反调公司【重要】
 
-* [天眼查 app](https://sj.qq.com/appdetail/com.tianyancha.skyeye) / 小程序 求职中可以**反调公司**，也适用于查询被服务公司，**无良北京丰台万达舒窈瑶国际**
+* **天眼查** [app](https://sj.qq.com/appdetail/com.tianyancha.skyeye) / 小程序 求职中可以**反调公司**，也适用于查询被服务公司，**无良北京丰台万达舒窈瑶国际**
 * [企查查](https://sj.qq.com/appdetail/com.android.icredit)
 * [爱企查](https://sj.qq.com/appdetail/com.baidu.xin.aiqicha)
 * [水滴信用](https://sj.qq.com/appdetail/com.shuidi.app)
@@ -1084,16 +1084,23 @@ Bean's Quest 算是 1 代 和 Bean Dreams 算是 2 代
 查看 [QQ 音乐](https://sj.qq.com/appdetail/com.tencent.qqmusic) 年度歌单
 查看 [网易云音乐](https://sj.qq.com/appdetail/com.netease.cloudmusic) 年度歌单
 
-### 其他记录
+## 其他记录
 
-#### 家庭必备
+### 一些优秀的应用厂商
+
+Simple Design Ltd.
+出品了 [Notepad, Notes, Easy Notebook](https://notepad-notes-easy-notebook.en.uptodown.com/android)（记事本、便签、清单 - Notein） 带有提醒功能的便签记事本和备忘录应用，可随时随地轻松记笔记、写便签、列待办事项和购物清单等。
+[All Document Reader](https://alldocumentreader-office-viewer-filereader.en.uptodown.com/android)
+[PDF Reader](https://pdf-reader-pdfviewer-pdfeditor.en.uptodown.com/android)
+
+### 家庭必备
 
 * 国家反诈中心 安全永远第一位
 * 一款安全的浏览器，比如 360 安全浏览器
 * 一款内容丰富的视频播放软件 比如[西瓜视频](https://sj.qq.com/appdetail/com.ss.android.article.video)、专门的有高质量军事节目的[凤凰视频](https://sj.qq.com/appdetail/com.ifeng.newvideo)
 * 一款听歌软件
 * 一款可以查看日历的 app 以前我安装了[中华万年历](https://sj.qq.com/appdetail/cn.etouch.ecalendar.life)，但现在系统内置了该功能
-* 一款可以查询天气的 app 以前我安装了[中华万年历](https://sj.qq.com/appdetail/cn.etouch.ecalendar.life)，但现在系统内置了该功能
+* 一款可以查询天气的 app 以前我安装了[中华万年历](https://sj.qq.com/appdetail/cn.etouch.ecalendar.life)
 * 一款扫描可查询商品的价格 [我查查](https://sj.qq.com/appdetail/com.wochacha)
 * [用药助手](https://sj.qq.com/appdetail/cn.dxy.medicinehelper) 用药对家庭还是很重要的
 

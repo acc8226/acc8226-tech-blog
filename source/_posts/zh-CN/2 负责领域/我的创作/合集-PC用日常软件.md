@@ -16,12 +16,8 @@ categories: 我的创作
 
 #### 0.1 管家/杀毒
 
-普通用户或者想省心的可以只安装【win 安装版】[360 安全卫士极速版](https://weishi.360.cn)
-
-其他 
-
-* 如果是 win 平台推荐【win 安装版】[微软电脑管家](https://pcmanager.microsoft.com/zh-cn) +【win 安装版】[火绒安全软件](https://www.huorong.cn)
-* 如果是 mac 平台则推荐【mac】[腾讯柠檬清理（腾讯电脑管家 for mac）](https://lemon.qq.com) 主打清理电脑垃圾文件，一键释放磁盘空间。因 App Store 审核限制，完整版内部分功能无法上架（例如应用卸载等）。建议去官网下载完整版。
+* windows 用户推荐 [360 安全卫士极速版](https://weishi.360.cn) 或【win 安装版】[微软电脑管家](https://pcmanager.microsoft.com/zh-cn) +【win 安装版】[火绒安全软件](https://www.huorong.cn)
+* mac 推荐【mac】[腾讯柠檬清理（腾讯电脑管家 for mac）](https://lemon.qq.com)
 
 官网收录：管家类【win 安装版】[腾讯电脑管家](https://guanjia.qq.com) | 杀毒类：[Norton](https://cn.norton.com) | [McAfee](https://www.mcafee.com/zh-cn/index.html) |【win 安装版】[金山毒霸](https://www.ijinshan.com)
 
@@ -97,6 +93,8 @@ categories: 我的创作
 2. 视频资源下载：【win mac】[Neat Download Manager](https://www.neatdownloadmanager.com/index.php/en) 体积小功能强，不支持磁力但是能配合浏览器拓展下载常见视频网站的视频
 3. 哔哩哔哩专用下载器：【win】[Bilidown-哔哩视频下载](https://zhouql.vip/bilibili/pc) |【win】[DownKyi](https://www.colostar.cn/links/13486.html)（哔哩下载姬）
 
+mac 版迅雷必须去官网下载才是完整版，目前还比较清爽，windows 版就算了
+
 **linux 平台**
 
 1. 【全平台】[Motrix](https://motrix.app/zh-CN)
@@ -127,18 +125,21 @@ categories: 我的创作
 not
 
 * acdsee 免费版都需要注册，差评
-* 【只有安装版】[Honeyview](https://www.bandisoft.com/honeyview/) 蜂蜜浏览器 · 免费的图像查看器 页面太丑了，已过时
-* 【付费】【win】[Bandiview](https://www.bandisoft.com/bandiview/) Honeyview 的升级版
-* 【绿色版】【win】[jpegview](https://github.com/sylikc/jpegview/) 特点是小巧，但是我用不惯
+* 【只有安装版】[Honeyview](https://www.bandisoft.com/honeyview) 蜂蜜浏览器 · 免费的图像查看器 页面太丑了，已过时
+* 【付费】【win】[Bandiview](https://www.bandisoft.com/bandiview) Honeyview 的升级版
+* 【绿色版】【win】[jpegview](https://github.com/sylikc/jpegview) 特点是小巧，但是我用不惯
 * [XnView](https://www.xnview.com/en/xnview/#downloads) 界面不那么现代
 
 官网收录：【win】[XnView](https://www.xnview.com/en) |【win】[BandiView](http://www.bandisoft.com/bandiview)
 
 #### 1.8 图像处理
 
-* 免费【网页版】[美图秀秀](https://pc.meitu.com)
 * 轻量级【win】[Paint.NET](https://www.getpaint.net) 功能强大且有绿色版
 * 重量级【全平台】[Gimp](https://www.gimp.org) PS 的替代品且免费
+
+备用
+
+* 【全平台】[美图秀秀](https://pc.meitu.com)
 
 not
 
@@ -527,7 +528,9 @@ or
 not
 
 * 【win】[MarkdownPad2](http://markdownpad.com) 感觉差点意思
-* 【mac】[Ulysses](https://www.ulysses.app/zh) 面向 Mac、iPad 和 iPhone 的终极写作应用，但收费就算了
+* 【mac】[Ulysses](https://www.ulysses.app/zh) 收费就算了
+* 【mac】[熊掌记](https://bear.app/zh/#price) 免费版不能同步
+* 【win】MWeb 不太喜欢且收费
 
 ### 9 大文件分析
 
@@ -578,9 +581,9 @@ mac 平台暂时没找到好用的
 
 ### 12 手机助手
 
-Android 用户可选择 【win】[腾讯应用宝 PC 版](https://sj.qq.com) /【win】[360 手机助手 PC 版](http://sj.360.cn/index.html)
+安卓用户可选择 【win】[腾讯应用宝 PC 版](https://sj.qq.com) /【win】[360 手机助手 PC 版](http://sj.360.cn/index.html)
 
-iOS 用户可下载【win mac】 [iTunes](https://www.apple.com.cn/itunes) 或者某国产助手
+苹果用户可下载【win mac】 [iTunes](https://www.apple.com.cn/itunes) 或 [爱思助手](https://www.i4.cn)
 
 ### 13 光驱镜像
 
@@ -648,7 +651,11 @@ not
 * 【win】[火绒应用商店](https://www.huorong.cn/appstore)
 * 【win】[联想应用商店](https://lestore.lenovo.com)
 
-### 24 mac 特有
+### 24 打印机伴侣
+
+【全平台】[HP Smart](https://www.hp-smart.cn/cn/zh) 可能造成了垄断吧
+
+### 25 mac 特有
 
 #### 鼠标翻转
 
@@ -662,7 +669,7 @@ not
 
 [键指如飞](https://www.better365.cn/FlyKey.html) 一键展示 Mac 快捷键
 
-### 25 windows 特有
+### 26 windows 特有
 
 #### 空格预览文件
 
@@ -742,10 +749,10 @@ not
 
 ### 5 文件转换
 
-* 【win 安装版】[格式工厂](http://www.pcgeshi.com/index.html) 全功能转换
+* 【精品 win 安装版】[格式工厂](http://www.pcgeshi.com/index.html) 全功能转换，不得不说还得是 windows 版的老牌和强大，实属装机必备
 * 【全平台】[HandBrake](https://handbrake.fr) 视频转换
 
-官网收录：【mac】[即刻转换](https://zh.okaapps.com/product/1637557903) 即刻转换是一款功能全面的格式转换软件，支持转换几乎所有主流的多媒体文件格式
+官网收录：【mac】[即刻转换](https://zh.okaapps.com/product/1637557903) | OmniConverter | 格式工厂 mac 版
 
 ### 6 包管理器
 
