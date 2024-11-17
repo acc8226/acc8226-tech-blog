@@ -290,3 +290,21 @@ makeCircle(r:=100,n:=-1){
 ; Author: Helgef
 ; Date: 2017-04-15
 ```
+
+## 记录
+
+ahk 的版本
+
+```ahk
+; windows 版本
+;
+; Windows 11 [10.1.xxxxx]
+; Windows 10 [10.0.10240] (29.07.2015)
+; Windows 8.1 [6.3.9200]
+; Windows 8 [6.2.9200]
+; Windows 7 service pack 1(SP1) [6.1.7601]
+; Windows 7 [6.1.7600]
+; Windows Vista service pack 2(SP2) [6.0.6002]
+; Windows Vista [6.0.6000]
+; Windows XP service pack 3(SP3) [5.1.2600]
+```

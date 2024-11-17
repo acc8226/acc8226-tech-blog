@@ -378,8 +378,8 @@ or
 
 not
 
-* [FinalShell](http://www.hostbuf.com) 只有安装版，不好用
-* [FileZilla](https://www.filezilla.cn) 虽说跨平台使用，但是界面我不太喜欢
+* 【全平台】[FinalShell](http://www.hostbuf.com) 只有安装版，不好用
+* 【全平台】[FileZilla](https://www.filezilla.cn) 虽说跨平台使用，但是界面我不太喜欢
 * [flashfxp](https://www.flashfxp.com) 是付费产品我就不推荐了
 * Bitvise SSH Client 直接不好用
 * 【全平台】[tabby](https://github.com/Eugeny/tabby) 界面不够友好
@@ -411,13 +411,11 @@ not
 
 ### 【win】微软 terminal
 
-要求: requires Windows 10 2004 (build 19041) or later
+是一个新式主机应用程序，它面向你喜爱的命令行 shell，如命令提示符、PowerShell 和 bash（通过适用于 Linux 的 Windows 子系统 (WSL)）。 它的主要功能包括多个选项卡、窗格、Unicode 和 UTF-8 字符支持、GPU 加速文本呈现引擎，你还可用它来创建你自己的主题并自定义文本、颜色、背景和快捷方式。
 
-因此如果是 win 10 以下系统只能用 git-bash 了。
+要求: Windows 10 2004 (build 19041) 及其以上
 
 [应用商店版](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701) | [Release 下载](https://github.com/microsoft/terminal/releases/)
-
-Windows 终端是一个新式主机应用程序，它面向你喜爱的命令行 shell，如命令提示符、PowerShell 和 bash（通过适用于 Linux 的 Windows 子系统 (WSL)）。 它的主要功能包括多个选项卡、窗格、Unicode 和 UTF-8 字符支持、GPU 加速文本呈现引擎，你还可用它来创建你自己的主题并自定义文本、颜色、背景和快捷方式。
 
 如何更改默认启动终端为 powershell
 

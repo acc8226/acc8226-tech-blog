@@ -76,15 +76,19 @@ Aegis Authenticator [官网](https://getaegis.app) | [下载地址](https://gith
 not
 
 * [Bitwarden authenticator](https://bitwarden.com/download/#bitwarden-authenticator-mobile) 目前还有待完善
-* [Google Authenticator](https://google-authenticator.en.softonic.com/android) 虽说是大厂，但是软件包体积稍大 且 国内云同步功能没法使用
-* 微软Authenticator 有点臃肿
+* [Google Authenticator](https://google-authenticator.en.softonic.com/android) 水土不服
+* 微软 Authenticator 有点臃肿
 * ——————— ฅ՞• •՞ฅ ———————
 * [QQ 安全中心](https://sj.qq.com/appdetail/com.tencent.token) 至尊宝没了，属于半死不活，新版本一直转圈
 
 #### iPhone
 
-1. 暂时选用 Google Authenticator
+1. 暂时选用 微软 Authenticator
 2. [QQ 安全中心](https://sj.qq.com/appdetail/com.tencent.token)
+
+not
+
+* [Google Authenticator](https://google-authenticator.en.softonic.com/android) 水土不服
 
 ### 2 密码管理
 
@@ -231,12 +235,12 @@ not
 #### 安卓
 
 1. [得到](https://sj.qq.com/appdetail/com.luojilab.player) 免费资源还行，除了体积大
-2. [云听](https://sj.qq.com/appdetail/com.shinyv.cnr) 央视的资源还是很丰富的
-3. [帆书（原樊登读书）](https://sj.qq.com/appdetail/io.dushu.fandengreader) 稍有限免资源，但旧手机有点卡
+1. [云听](https://sj.qq.com/appdetail/com.shinyv.cnr) 央视的资源还是很丰富的
+1. [帆书（原樊登读书）](https://sj.qq.com/appdetail/io.dushu.fandengreader) 稍有限免资源，但旧手机有点卡
+1. 【本地】[讯飞有声](https://sj.qq.com/appdetail/com.iflytek.readassistant) 主打播放本地图书和 pdf、doc、mobi 格式的文本，是目前的一个本地解决方案，非会员有是时长限制
 
 可选
 
-* [讯飞有声](https://sj.qq.com/appdetail/com.iflytek.readassistant) 主打播放本地图书和 pdf、doc、mobi 格式的文本，是目前的一个本地解决方案，非会员有是时长限制
 * [番茄畅听](https://sj.qq.com/appdetail/com.xs.fm) 免费资源较多，和番茄免费小说部分功能重合了
 * [微信听书](https://sj.qq.com/appdetail/com.tencent.wehear) 活动玩法多，可以换取收听时长
 * [极客时间](https://sj.qq.com/appdetail/org.geekbang.geekTime) 程序员才需要
@@ -936,11 +940,12 @@ not
 
 扫描宝 动不动就要会员，差评
 
-## 30.手写类
+## 30.绘画手记
 
 ### 安卓平板
 
-[Canva 可画](https://sj.qq.com/appdetail/cn.canva.editor)
+* [Canva 可画](https://sj.qq.com/appdetail/cn.canva.editor)
+* [Notein 笔记](https://sj.qq.com/appdetail/com.orion.notein)
 
 ### iOS
 
@@ -1039,7 +1044,12 @@ not
 
 ## 42 笔记
 
+### 安卓
+
 * 本地 [obsidian](https://obsidian.md/download) 我主推得 markdown 本地笔记
+* [Day One Journal App](https://dayoneapp.com/) 颜值极高，免费版限 1 台设备，建议设置为手机端，电脑端用 web 版即可
+* [Simplenote](https://simplenote.com/) 极简，无限同步，不限设备，仅限纯文本，兼容 markdown 格式
+* [Notepad, Notes, Easy Notebook](https://notepad-notes-easy-notebook.en.uptodown.com/android)（记事本、便签、清单 - Notein）颜值和功能都不错
 
 留存
 
@@ -1055,6 +1065,11 @@ not
 * ——————— ฅ՞• •՞ฅ ———————
 * [纯纯写作](https://sj.qq.com/appdetail/com.drakeet.purewriter) 这种组织方式我不喜欢而已，但是本身设计很优秀
 
+### iOS
+
+* 本地 [obsidian](https://obsidian.md/download) 我主推得 markdown 本地笔记
+* [Simplenote](https://simplenote.com/) 极简，无限同步，不限设备，仅限纯文本，兼容 markdown 格式
+
 ## 43 反调公司【重要】
 
 * **天眼查** [app](https://sj.qq.com/appdetail/com.tianyancha.skyeye) / 小程序 求职中可以**反调公司**，也适用于查询被服务公司，**无良北京丰台万达舒窈瑶国际**
@@ -1062,7 +1077,11 @@ not
 * [爱企查](https://sj.qq.com/appdetail/com.baidu.xin.aiqicha)
 * [水滴信用](https://sj.qq.com/appdetail/com.shuidi.app)
 
-## 44 游戏
+## 44 文件同步
+
+【全平台】[Resilio Sync](https://www.resilio.com/)
+
+## 45 游戏
 
 ### iPhone 和 iPad
 
@@ -1092,6 +1111,9 @@ Simple Design Ltd.
 出品了 [Notepad, Notes, Easy Notebook](https://notepad-notes-easy-notebook.en.uptodown.com/android)（记事本、便签、清单 - Notein） 带有提醒功能的便签记事本和备忘录应用，可随时随地轻松记笔记、写便签、列待办事项和购物清单等。
 [All Document Reader](https://alldocumentreader-office-viewer-filereader.en.uptodown.com/android)
 [PDF Reader](https://pdf-reader-pdfviewer-pdfeditor.en.uptodown.com/android)
+
+Automattic – Making the web a better place
+出品了 [Day One Journal App](https://dayoneapp.com/) 和 [Simplenote](https://simplenote.com/)
 
 ### 家庭必备
 
@@ -1124,7 +1146,3 @@ iPad 截图留恋
 
 安卓平板留恋
 ![安卓平板留恋](https://img.feipig.fun/images/我的/创作/合集-App/vivoPad.jpg 'vivo pad 1代')
-
-## 部分资源留存
-
-详见 [《我的网盘-系列》](https://feipig.fun/wangpan)

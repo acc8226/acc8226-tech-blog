@@ -524,12 +524,12 @@ or
 备用
 
 * 【全平台】[Typora](https://typoraio.cn) 功能强大，容易上手，但收费，有条件可支持下
+* 【mac】[熊掌记](https://bear.app/zh/#price) 颜值和功能不错，免费版功能有限
 
 not
 
 * 【win】[MarkdownPad2](http://markdownpad.com) 感觉差点意思
 * 【mac】[Ulysses](https://www.ulysses.app/zh) 收费就算了
-* 【mac】[熊掌记](https://bear.app/zh/#price) 免费版不能同步
 * 【win】MWeb 不太喜欢且收费
 
 ### 9 大文件分析
@@ -765,6 +765,15 @@ not
 * 【win】[Chocolatey](https://chocolatey.org) - the package manager for Windows
 * [sdkman](https://sdkman.io)
 
+### 7 文件同步
+
+* 【全平台】[Resilio Sync](https://www.resilio.com/) (原名 BT Sync) 是一款极为优秀好用的「文件同步工具」软件，它基于类似 BT 的 P2P 协议同步文件，但由于它“分享文件”过于方便，导致在国内被圭寸
+
+备用
+
+* 【全平台】[Syncthing](https://syncthing.net/) | [Github 源](https://github.com/syncthing/syncthing)
+* 【全平台】[微力同步](http://www.verysync.com/) (VerySync) 是一款国产跨平台文件同步软件，采用了类似 BT 技术的 P2P 协议来实现同步和文件分享，因此文件传送速度极快，也没有文件大小限制或流量限制。既适合自己私人同步文件，或与朋友同事团队间进行办公协作，也适合与更多其他人共享海量大文件 (比如高清电影视频等) 。据了解，微力同步是基于「Syncthing」二次开发而来，尽管只有 WEB 界面，还没有原生UI，但实用性还是不错的，而且做得与 Resilio 基本无异！微力同步支持的平台也非常丰富，无论是电脑/路由器/服务器 (Windows、macOS、Linux)、手机 (Android)、还是 NAS (群晖、威联通 Qnap、WD MyCloud) 等平台都支持
+
 ## 游戏
 
 * 【win mac】[战网 | Battle.net](https://download.battle.net)
@@ -775,6 +784,10 @@ not
 * 【win mac】[奇游加速器](https://www.qiyou.cn) 太贵
 * 【win mac】[uu 加速器](https://uu.163.com) 太贵
 * 【win】[迅游网游加速器](https://www.xunyou.com/index.shtml) 太贵了
+
+## 一些优秀的应用厂商
+
+Data center, cloud, and edge unified | [Resilio](https://www.resilio.com/) 公司提供了免费的​​去中心化网盘 [Resilio Sync](https://www.resilio.com/sync/) 同步软件
 
 ## 留观中
 
@@ -795,7 +808,6 @@ not
 * 猿如意【浏览器插件】 不让人满意
 * ——————— ฅ՞• •՞ฅ ———————
 * 芒果壁纸【win】 时间长了会白屏
-* 网易炉石官方插件 随之国服没了已经落幕
 * 录猎 不好用
 * 芒果加速【win】 啥玩意，也是此类，只能体验 2 小时
 * 万彩录屏大师 太复杂了
@@ -812,16 +824,10 @@ not
 * OfficeBox 官方绿色版 颜值太低且功能不强大，差评
 * OneAuth 【Win 商店版】需要先登录的二步验证，差评
 * Parallels desktop 属于买断制，新版本不能用，啥玩意，再也不买了
-* Parallels Toolbox 收费就算了，功能还行
 * PDF Shaper Professional v13.3 只有些页面功能而已
 * QOwnNotes 【win mac linux】不好用，淘汰
 * Transmission【win mac linux】 只能下载 bt 种子，淘汰
-* Typora【win mac】 没有想象中强大。有导出 pdf 带目录功能。我大部分会使用 vscode + 插件
 * UGit 腾讯 git 代码客户端，就是感觉不好用
 * Wox-1.4.1196 已经不太维护的启动器，界面也一般
 * zyplayer--【win mac】2023 据说不再更新，但是将逐渐不好用了
 * oblivion-desktop 魔法没有一次连成功的
-
-## 软件分享
-
-[软件分享（不定期更新）](https://share.feijipan.com/s/aABFaK0s)

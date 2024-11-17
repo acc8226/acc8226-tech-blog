@@ -9,9 +9,6 @@ categories:
 
 ## 软件记录
 
-Apps - Mac 开发配置手册 - 极客学院 Wiki
-<http://wiki.jikexueyuan.com/project/mac-dev-setup/apps.html>
-
 macOS 缺失的软件包的管理器 — macOS 缺失的软件包的管理器
 <https://brew.sh/index_zh-cn>
 `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
