@@ -11,32 +11,32 @@ categories: 我的创作
 
 ## 正文
 
-avif
+avif<br>
 <picture>
    <img src="https://reachlightspeed.com/img/blog/post-using-avif-images-today-support.avif" alt="avif">
 </picture>
 
-webp
+webp<br>
 <picture>
    <img src="https://reachlightspeed.com/img/blog/post-using-avif-images-today-firefox-avif.webp" alt="webp">
 </picture>
 
-gif
+gif<br>
 <picture>
    <img src="https://atts.w3cschool.cn/attachments/image/cimg/2015-10-01_560ceab38d32d.gif" alt="gif">
 </picture>
 
-png
+png<br>
 <picture>
-   <img src="https://nie.res.netease.com/r/pic/20240919/0426f3da-492b-4007-a03c-6c3077554f3f.png" alt="gif">
+   <img src="https://img.picgo.net/2024/11/18/0426f3da-492b-4007-a03c-6c3077554f3fdaca8b4825f43eff.png" alt="png">
 </picture>
 
-svg
+svg<br>
 <picture>
-   <img src="https://www.w3cschool.cn/statics/demosource/circle1.svg" alt="gif">
+   <img src="https://www.w3cschool.cn/statics/demosource/circle1.svg" alt="svg">
 </picture>
 
-jpg
+jpg<br>
 <picture>
    <img src="https://img.picgo.net/2024/11/18/mate078848e0c6106f8f.jpg" alt="jpg">
 </picture>
