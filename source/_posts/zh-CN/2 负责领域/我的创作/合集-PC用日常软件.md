@@ -653,9 +653,31 @@ not
 
 ### 24 打印机伴侣
 
-【全平台】[HP Smart](https://www.hp-smart.cn/cn/zh) 可能造成了垄断吧
+【全平台】[HP Smart](https://www.hp-smart.cn/cn/zh) 可能造成了垄断
 
-### 25 mac 特有
+### 25 备忘录
+
+TODO 清单 即使是免费版也好用
+
+备用
+
+微软 TODO
+
+not
+
+Todoist 不太喜欢这种风格
+
+Anydo 网络限制 淘汰
+
+### 26 日历
+
+notion calendar
+
+not
+
+fantastical 免费版限制太多
+
+### 27 mac 特有
 
 #### 鼠标翻转
 
@@ -669,7 +691,7 @@ not
 
 [键指如飞](https://www.better365.cn/FlyKey.html) 一键展示 Mac 快捷键
 
-### 26 windows 特有
+### 28 windows 特有
 
 #### 空格预览文件
 
@@ -749,17 +771,17 @@ not
 
 ### 5 文件转换
 
-* 【精品 win 安装版】[格式工厂](http://www.pcgeshi.com/index.html) 全功能转换，不得不说还得是 windows 版的老牌和强大，实属装机必备
+* 【精品 win 安装版】[格式工厂](http://www.pcgeshi.com/index.html) 全功能转换，不得不说还得是 windows 版的老牌和强大，实属装机必备 | [格式工厂 mac 版](https://apps.apple.com/cn/app/%E6%A0%BC%E5%BC%8F%E5%B7%A5%E5%8E%82/id6443540458?mt=12)
 * 【全平台】[HandBrake](https://handbrake.fr) 视频转换
 
-官网收录：【mac】[即刻转换](https://zh.okaapps.com/product/1637557903) | OmniConverter | 格式工厂 mac 版
+官网收录：【mac】[即刻转换](https://zh.okaapps.com/product/1637557903) | OmniConverter
 
 ### 6 包管理器
 
-【mac】[Homebrew](https://brew.sh/index_zh-cn)
-
-【linux】[AppImage](https://appimage.org)、[flatpak](https://flatpak.org)、snap
-
+* 【mac】[Homebrew](https://brew.sh/index_zh-cn)
+* --
+* 【linux】[AppImage](https://appimage.org)、[flatpak](https://flatpak.org)、snap
+* --
 * 【win】[Scoop](https://scoop.sh)
 * 【win】[winget](https://learn.microsoft.com/zh-cn/windows/package-manager/winget) 微软家，属于系统内置
 * 【win】[Chocolatey](https://chocolatey.org) - the package manager for Windows
@@ -767,16 +789,16 @@ not
 
 ### 7 文件同步
 
-* 【全平台】[Resilio Sync](https://www.resilio.com/) (原名 BT Sync) 是一款极为优秀好用的「文件同步工具」软件，它基于类似 BT 的 P2P 协议同步文件，但由于它“分享文件”过于方便，导致在国内被圭寸
+* 【全平台】[Resilio Sync](https://www.resilio.com) (原名 BT Sync) 是一款极为优秀好用的「文件同步工具」软件，它基于类似 BT 的 P2P 协议同步文件，但由于它“分享文件”过于方便，导致在国内被圭寸
 
 备用
 
-* 【全平台】[Syncthing](https://syncthing.net/) | [Github 源](https://github.com/syncthing/syncthing)
-* 【全平台】[微力同步](http://www.verysync.com/) (VerySync) 是一款国产跨平台文件同步软件，采用了类似 BT 技术的 P2P 协议来实现同步和文件分享，因此文件传送速度极快，也没有文件大小限制或流量限制。既适合自己私人同步文件，或与朋友同事团队间进行办公协作，也适合与更多其他人共享海量大文件 (比如高清电影视频等) 。据了解，微力同步是基于「Syncthing」二次开发而来，尽管只有 WEB 界面，还没有原生UI，但实用性还是不错的，而且做得与 Resilio 基本无异！微力同步支持的平台也非常丰富，无论是电脑/路由器/服务器 (Windows、macOS、Linux)、手机 (Android)、还是 NAS (群晖、威联通 Qnap、WD MyCloud) 等平台都支持
+* 【全平台】[Syncthing](https://syncthing.net) | [Github 源](https://github.com/syncthing/syncthing)
+* 【全平台】[微力同步](http://www.verysync.com) (VerySync) 是一款国产跨平台文件同步软件，采用了类似 BT 技术的 P2P 协议来实现同步和文件分享，因此文件传送速度极快，也没有文件大小限制或流量限制。既适合自己私人同步文件，或与朋友同事团队间进行办公协作，也适合与更多其他人共享海量大文件 (比如高清电影视频等) 。据了解，微力同步是基于「Syncthing」二次开发而来，尽管只有 WEB 界面，还没有原生UI，但实用性还是不错的，而且做得与 Resilio 基本无异！微力同步支持的平台也非常丰富，无论是电脑/路由器/服务器 (Windows、macOS、Linux)、手机 (Android)、还是 NAS (群晖、威联通 Qnap、WD MyCloud) 等平台都支持
 
 ## 游戏
 
-* 【win mac】[战网 | Battle.net](https://download.battle.net)
+* 【win mac】[暴雪战网](https://download.battle.net)
 * 【win mac】[雷神网游加速器](https://www.leigod.com) 按分钟计费可暂停 4600 小时才 139 元，虽然事后又搞活动是 139 元 5200 小时
 
 not

@@ -241,11 +241,12 @@ not
 
 可选
 
-* [番茄畅听](https://sj.qq.com/appdetail/com.xs.fm) 免费资源较多，和番茄免费小说部分功能重合了
 * [微信听书](https://sj.qq.com/appdetail/com.tencent.wehear) 活动玩法多，可以换取收听时长
-* [极客时间](https://sj.qq.com/appdetail/org.geekbang.geekTime) 程序员才需要
+* [番茄畅听](https://sj.qq.com/appdetail/com.xs.fm) 免费资源较多，和番茄免费小说部分功能重合了
 * [喜马拉雅](https://sj.qq.com/appdetail/com.ximalaya.ting.android) 有些广告
 * [蜻蜓FM](https://sj.qq.com/appdetail/fm.qingting.qtradio) 有些广告
+* ——————— ฅ՞• •՞ฅ ———————
+* [极客时间](https://sj.qq.com/appdetail/org.geekbang.geekTime) 程序员才需要
 
 not
 
