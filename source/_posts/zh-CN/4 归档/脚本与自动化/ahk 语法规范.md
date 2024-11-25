@@ -21,7 +21,7 @@ tags:
 msg 123 ; 等同于 msg(123)
 ```
 
-创建对象建议加上
+创建对象建议加上括号
 
 ```ahk
 MyGui := Gui('+AlwaysOnTop -Caption +ToolWindow')
@@ -29,7 +29,7 @@ MyGui := Gui('+AlwaysOnTop -Caption +ToolWindow')
 
 ## if 语句 和 for 语句
 
-只有一条语句则不加括号
+只有条件体 或 循环体内只有一条语句则不加括号 和 花括号
 
 <!-- more -->
 
@@ -45,7 +45,7 @@ for k, v in colours.OwnProps()
 
 ## switch 语句
 
-条件体一律不加
+建议都加上
 
 ```ahk
 
@@ -54,8 +54,7 @@ for k, v in colours.OwnProps()
     ih := InputHook("V T5 L4 C", "{enter}.{esc}{tab}", "btw,otoh,fl,ahk,ca")
     ih.Start()
     ih.Wait()
-    switch ih.EndReason
-    {
+    switch ih.EndReason {
     case "Max":
         MsgBox 'You entered "' ih.Input '", which is the maximum length of text'
     case "Timeout":

@@ -45,7 +45,7 @@ categories: linux
  # 在匹配式样“regex”的行之后插入一空行
  sed '/regex/G'
 
- # 在匹配式样“regex”的行之前和之后各插入一空行
+ # 在匹配式样 “regex” 的行之前和之后各插入一空行
  sed '/regex/{x;p;x;G;}'
 ```
 
