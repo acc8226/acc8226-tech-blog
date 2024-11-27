@@ -21,6 +21,8 @@ webp<br>
    <img src="https://reachlightspeed.com/img/blog/post-using-avif-images-today-firefox-avif.webp" alt="webp">
 </picture>
 
+<!-- more -->
+
 gif<br>
 <picture>
    <img src="https://atts.w3cschool.cn/attachments/image/cimg/2015-10-01_560ceab38d32d.gif" alt="gif">

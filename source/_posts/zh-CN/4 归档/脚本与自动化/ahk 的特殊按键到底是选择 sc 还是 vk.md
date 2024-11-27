@@ -27,11 +27,13 @@ tags:
 - **缺点**：
   - 如果你需要控制特定的硬件行为或者处理低级键盘事件，虚拟键码可能不如扫描码直接。
 
+<!-- more -->
+
 ### 推荐使用
 
-对于大多数AutoHotkey用户和脚本来说，推荐使用`VKnn`（虚拟键码）：
+对于大多数AutoHotkey用户和脚本来说，推荐使用 `VKnn`（虚拟键码）：
 - **跨平台兼容性**：如果你的脚本需要在不同的操作系统或键盘布局之间运行，使用虚拟键码可以提供更好的兼容性。
-- **易用性**：AutoHotkey提供了许多预定义的`VK`常量（如`VK_F1`、`VK_F2`等），使得脚本编写更加直观和方便。
+- **易用性**：AutoHotkey 提供了许多预定义的 `VK` 常量（如`VK_F1`、`VK_F2` 等），使得脚本编写更加直观和方便。
 - **大多数用途**：对于大多数日常用途，包括快捷键、宏和自动化任务，虚拟键码已经足够使用。
 
 总结来说，除非你有特定的理由需要使用扫描码（如硬件级别的键盘控制），否则在 AutoHotkey 中使用虚拟键码（`VKnn`）是更推荐的做法。
@@ -40,7 +42,7 @@ tags:
 
 以 Home 按键为例，两者的 vk 虚拟码相同，但是 sc 扫描码不相同表示虚拟按键的功能，sc 表示物理按键的位置。
 
-```
+```sh
 vk sc
 24 147 Home
 24 047 NumpadHome
@@ -54,10 +56,10 @@ vk sc
 
 以 1 按键为例，两者由于是同一物理位置，所以 sc 物理码一致，但是 vk 虚拟码不同，表示按键功能不同
 
-```
+```sh
 vk sc
-61 04F Numpad1  	
-23 04F NumpadEnd	
+61 04F Numpad1
+23 04F NumpadEnd
 ```
 
 详细列表
@@ -66,91 +68,91 @@ vk sc
 VK  SC	Type
 -------------------------------------------------------------------------------------------------------------
 # 第 1 行 13 个按键
-1B  001  	Escape         	
+1B  001  	Escape
 
-70  03B	 F1             	          	
-71  03C	 F2             	           	
-72  03D	 F3             	
-73  03E	 F4             	
-74  03F	 F5             	           	
-75  040	 F6             	           	
-76  041	 F7             	             	
-77  042  F8             	           	
-78  043  F9             	          	
-79  044	 F10            	          	
+70  03B	 F1
+71  03C	 F2
+72  03D	 F3
+73  03E	 F4
+74  03F	 F5
+75  040	 F6
+76  041	 F7
+77  042  F8
+78  043  F9
+79  044	 F10
 7A  057  F11
 7B  058	 F12
 
 # 第 2 行 14 个按键
-C0  029	 `  
-31  002	 1              	
-32  003	 2              	
-33  004	 3              	
-34  005	 4              	
-35  006	 5              	
-36  007	 6              	
-37  008	 7              	
-38  009	 8              	
-39  00A	 9              	
-30  00B	 0              	
-BD  00C	 -              	
-BB  00D	 =              	
-08  00E	 Backspace      	            	
+C0  029	 `
+31  002	 1
+32  003	 2
+33  004	 3
+34  005	 4
+35  006	 5
+36  007	 6
+37  008	 7
+38  009	 8
+39  00A	 9
+30  00B	 0
+BD  00C	 -
+BB  00D	 =
+08  00E	 Backspace
 
 # 26 个字母
 
-51  010	 q              	
-57  011	 w              	
-45  012	 e              	
-52  013	 r              	
-54  014	 t              	
-59  015	 y              	
-55  016	 u              	
-49  017	 i              	
-4F  018	 o              	
-50  019	 p 
+51  010	 q
+57  011	 w
+45  012	 e
+52  013	 r
+54  014	 t
+59  015	 y
+55  016	 u
+49  017	 i
+4F  018	 o
+50  019	 p
 
-41  01E	 a              	
-53  01F	 s              	
-44  020	 d              	
-46  021	 f              	
-47  022	 g              	
-48  023	 h       	
+41  01E	 a
+53  01F	 s
+44  020	 d
+46  021	 f
+47  022	 g
+48  023	 h
 4A  024	 j
-4B  025	 k              	
-4C  026	 l  
+4B  025	 k
+4C  026	 l
 
-5A  02C	 z              	
-58  02D	 x              	
-43  02E	 c              	
-56  02F	 v              	
-42  030	 b              	
-4E  031	 n              	
-4D  032	 m  
+5A  02C	 z
+58  02D	 x
+43  02E	 c
+56  02F	 v
+42  030	 b
+4E  031	 n
+4D  032	 m
 
 # 灯 1
 14  03A  CapsLock
 
 # 修饰键等 9 个
-A0  02A	 LShift         	
-A2  01D	 LControl       	
+A0  02A	 LShift
+A2  01D	 LControl
 5B  15B	 LWin
 A4  038	 LAlt
 A5  138	 RAlt
 5C  15C	 RWin
 5D  15D	 AppsKey
-A3  11D	 RControl  
-A1  136	 RShift  
+A3  11D	 RControl
+A1  136	 RShift
 
 # 其余符号 11
-09  00F	 ab   制表符        	
+09  00F	 Tab   制表符
 0D  01C	 Enter 回车符/回车键
 
-DB  01A	 [              	
-DD  01B	 ]              	
-DC  02B	 \              	
-BA  027	 ;              	
-DE  028	 '     
+DB  01A	 [
+DD  01B	 ]
+DC  02B	 \
+BA  027	 ;
+DE  028	 '
 BC  033	 ,
 BE  034	 .
 BF  035	 /
@@ -171,48 +173,324 @@ printscreen 竟然不识别
 23  14F	 End
 22  151	 PgDn
 
-26  148	 Up             	
-25  14B	 Left           	
-28  150	 Down           	
-27  14D	 Right    
+26  148	 Up
+25  14B	 Left
+28  150	 Down
+27  14D	 Right
 
 # 数字区 共计 17 个，累计为 105 键
-90  145	 	d	4.97	Numlock
+90  145	Numlock
 
-6F  135	 NumpadDiv      	
-6A  037	 NumpadMult    	
-6D  04A	 NumpadSub      	
-6B  04E	 NumpadAdd      	
-0D  11C	 NumpadEnter   
+6F  135	 NumpadDiv
+6A  037	 NumpadMult
+6D  04A	 NumpadSub
+6B  04E	 NumpadAdd
+0D  11C	 NumpadEnter
 
-61  04F	 Numpad1        	
-62  050	 Numpad2        	
-63  051	 Numpad3        	
-64  04B	 Numpad4        	
-65  04C	 Numpad5        	
-66  04D	 Numpad6        	
-67  047	 Numpad7        	
-68  048	 Numpad8        	
+61  04F	 Numpad1
+62  050	 Numpad2
+63  051	 Numpad3
+64  04B	 Numpad4
+65  04C	 Numpad5
+66  04D	 Numpad6
+67  047	 Numpad7
+68  048	 Numpad8
 69  049	 Numpad9
 
-60  052	 Numpad0        	
+60  052	 Numpad0
 6E  053	 NumpadDot
 
 # 当数字键没被激活时
 
-23  04F	 NumpadEnd      	
-28  050	 NumpadDown     	
-22  051	 NumpadPgDn     	
-25  04B	 NumpadLeft     	
-0C  04C	 NumpadClear    	
-27  04D	 NumpadRight    	
-24  047	 NumpadHome     	
-26  048	 NumpadUp       	
-21  049	 NumpadPgUp 	
+23  04F	 NumpadEnd
+28  050	 NumpadDown
+22  051	 NumpadPgDn
+25  04B	 NumpadLeft
+0C  04C	 NumpadClear
+27  04D	 NumpadRight
+24  047	 NumpadHome
+26  048	 NumpadUp
+21  049	 NumpadPgUp
 
-2D  052	 NumpadIns      	
-2E  053	 NumpadDel      	
+2D  052	 NumpadIns
+2E  053	 NumpadDel
 ```
 
+按照 scan 扫描码排序
+
+```sh
+VK  SC	Type
+-------------------------------------------------------------------------------------------------------------
+# 第 1 行 13 个按键
+1B  001  	Escape
+31  002	 1
+32  003	 2
+33  004	 3
+34  005	 4
+35  006	 5
+36  007	 6
+37  008	 7
+38  009	 8
+39  00A	 9
+30  00B	 0
+BD  00C	 -
+BB  00D	 =
+08  00E	 Backspace
+09  00F	 Tab 制表符
+
+51  010	 q
+57  011	 w
+45  012	 e
+52  013	 r
+54  014	 t
+59  015	 y
+55  016	 u
+49  017	 i
+4F  018	 o
+50  019	 p
+DB  01A	 [
+DD  01B	 ]
+0D  01C	 Enter 回车符/回车键
+A2  01D	 LControl
+41  01E	 a
+53  01F	 s
+
+44  020	 d
+46  021	 f
+47  022	 g
+48  023	 h
+4A  024	 j
+4B  025	 k
+4C  026	 l
+BA  027	 ;
+DE  028	 '
+C0  029	 `
+A0  02A	 LShift
+DC  02B	 \
+5A  02C	 z
+58  02D	 x
+43  02E	 c
+56  02F	 v
+
+42  030	 b
+4E  031	 n
+4D  032	 m
+BC  033	 ,
+BE  034	 .
+BF  035	 /
+6A  037	 NumpadMult
+A4  038	 LAlt
+20  039	 Space
+14  03A  CapsLock
+70  03B	 F1
+71  03C	 F2
+72  03D	 F3
+73  03E	 F4
+74  03F	 F5
+
+75  040	 F6
+76  041	 F7
+77  042  F8
+78  043  F9
+79  044	 F10
+13  045	 Pause
+91  046	 ScrollLock
+
+24  047	 NumpadHome
+67  047	 Numpad7
+
+26  048	 NumpadUp
+68  048	 Numpad8
+
+21  049	 NumpadPgUp
+69  049	 Numpad9
+
+6D  04A	 NumpadSub
+
+25  04B	 NumpadLeft
+64  04B	 Numpad4
+
+0C  04C	 NumpadClear
+65  04C	 Numpad5
+
+27  04D	 NumpadRight
+66  04D	 Numpad6
+
+6B  04E	 NumpadAdd
+
+23  04F	 NumpadEnd
+61  04F	 Numpad1
 
 
+28  050	 NumpadDown
+62  050	 Numpad2
+
+22  051	 NumpadPgDn
+63  051	 Numpad3
+
+2D  052	 NumpadIns
+60  052	 Numpad0
+
+2E  053	 NumpadDel
+6E  053	 NumpadDot
+
+7A  057  F11
+7B  058	 F12
+
+0D  11C	 NumpadEnter
+A3  11D	 RControl
+
+6F  135	 NumpadDiv
+A1  136	 RShift
+A5  138	 RAlt
+
+90  145	 Numlock
+24  147	 Home
+26  148	 Up
+21  149	 PgUp
+25  14B	 Left
+27  14D	 Right
+23  14F	 End
+
+28  150	 Down
+22  151	 PgDn
+2D  152	 Insert
+2E  153	 Delete
+5B  15B	 LWin
+5C  15C	 RWin
+5D  15D	 AppsKey
+```
+
+按照 虚拟键码（`VKnn`）排序
+
+```sh
+
+VK  SC	Type
+-------------------------------------------------------------------------------------------------------------
+08  00E	 Backspace
+09  00F	 Tab   制表符
+0C  04C	 NumpadClear
+0D  01C	 Enter 回车符/回车键
+
+13  045	Pause
+14  03A CapsLock
+1B  001 Escape
+
+20  039	 Space
+21  049	 NumpadPgUp
+21  149	 PgUp
+22  051	 NumpadPgDn
+22  151	 PgDn
+23  14F	 End
+23  04F	 NumpadEnd
+24  147	 Home
+24  047	 NumpadHome
+25  14B	 Left
+25  04B	 NumpadLeft
+26  148	 Up
+26  048	 NumpadUp
+27  14D	 Right
+27  04D	 NumpadRight
+28  150	 Down
+28  050	 NumpadDown
+2D  152	 Insert
+2D  052	 NumpadIns
+2E  153	 Delete
+2E  053	 NumpadDel
+
+31  002	 1
+32  003	 2
+33  004	 3
+34  005	 4
+35  006	 5
+36  007	 6
+37  008	 7
+38  009	 8
+39  00A	 9
+30  00B	 0
+
+41  01E	 a
+42  030	 b
+43  02E	 c
+44  020	 d
+45  012	 e
+46  021	 f
+47  022	 g
+48  023	 h
+49  017	 i
+4A  024	 j
+4B  025	 k
+4C  026	 l
+4D  032	 m
+4E  031	 n
+4F  018	 o
+
+50  019	 p
+51  010	 q
+52  013	 r
+53  01F	 s
+54  014	 t
+56  02F	 v
+57  011	 w
+55  016	 u
+58  02D	 x
+59  015	 y
+5A  02C	 z
+5B  15B	 LWin
+5C  15C	 RWin
+5D  15D	 AppsKey
+
+60  052	 Numpad0
+61  04F	 Numpad1
+62  050	 Numpad2
+63  051	 Numpad3
+64  04B	 Numpad4
+65  04C	 Numpad5
+66  04D	 Numpad6
+67  047	 Numpad7
+68  048	 Numpad8
+69  049	 Numpad9
+6A  037	 NumpadMult
+6B  04E	 NumpadAdd
+6D  04A	 NumpadSub
+0D  11C	 NumpadEnter
+6F  135	 NumpadDiv
+6E  053	 NumpadDot
+
+70  03B	 F1
+71  03C	 F2
+72  03D	 F3
+73  03E	 F4
+74  03F	 F5
+75  040	 F6
+76  041	 F7
+77  042  F8
+78  043  F9
+79  044	 F10
+7A  057  F11
+7B  058	 F12
+
+90  145	Numlock
+91  046	ScrollLock
+
+A0  02A	 LShift
+A1  136	 RShift
+A2  01D	 LControl
+A3  11D	 RControl
+A4  038	 LAlt
+A5  138	 RAlt
+
+BA  027	 ;
+BB  00D	 =
+BC  033	 ,
+BD  00C	 -
+BE  034	 .
+BF  035	 /
+
+C0  029	 `
+
+DB  01A	 [
+DC  02B	 \
+DD  01B	 ]
+DE  028	 '
+```
