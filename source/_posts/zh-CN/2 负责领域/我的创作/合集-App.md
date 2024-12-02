@@ -340,7 +340,7 @@ not
 * ——————— ฅ՞• •՞ฅ ———————
 * 在线 bilibili 哔哩哔哩国际版 [Apkpure 版](https://apkpure.com/cn/bilibili-cn/com.bilibili.app.in/download) | [uptodown 版](https://com-bilibili-app-in.en.uptodown.com/android) 因为清爽
 * [西瓜视频](https://sj.qq.com/appdetail/com.ss.android.article.video) 广告较少，资源丰富
-* [网易 Filmly](https://sj.qq.com/appdetail/com.netease.filmlytv) 视频刮削神器，暂时免费
+* [网易爆米花（原网易Filmly）](https://sj.qq.com/appdetail/com.netease.filmlytv) 视频刮削神器，暂时免费
 
 可选
 
@@ -849,6 +849,7 @@ not
 * [Kimi 智能助手](https://sj.qq.com/appdetail/com.moonshot.kimichat)
 * [豆包](https://sj.qq.com/appdetail/com.larus.nova)
 * [通义](https://sj.qq.com/appdetail/com.aliyun.tongyi)
+* [秘塔搜索](https://metaso.cn/) 不需要登录就能搜
 
 not
 
@@ -1007,10 +1008,10 @@ not
 
 * [学习强国](https://sj.qq.com/appdetail/cn.xuexi.android) 由中共中央宣传部主管的学习平台，它提供了丰富多样的学习资源，还能看电视，学慕课，听广播
 * [半月谈](https://sj.qq.com/appdetail/com.bytxmt.banyuetan) 新华社半月谈出品的公务员公考学习平台，新华社时评员讲申论，公考名师讲行测
-* [新华社](https://sj.qq.com/appdetail/net.xinhuamm.mainclient) 旧手机使用有点卡
 
 not
 
+* [新华社](https://sj.qq.com/appdetail/net.xinhuamm.mainclient) 旧手机使用有点卡
 * [人民日报](https://sj.qq.com/appdetail/com.peopledailychina.activity) 有广告，所以我不太喜欢
 * [新华网](https://sj.qq.com/appdetail/com.foundao.xinhua_android) 开屏有广告
 
