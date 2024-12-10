@@ -935,12 +935,16 @@ not
 
 ## 29.拍照和身份证扫描工具
 
-1. [白描](https://sj.qq.com/appdetail/com.uzero.baimiao) 可以免费制作身份证正反面 A4 扫描键，爆赞
-2. [白描证件照](https://sj.qq.com/appdetail/com.uzero.cn.zhengjianzhao) 支持多种尺寸证件照的制作以及自定义尺寸证件照的制作
+[白描](https://sj.qq.com/appdetail/com.uzero.baimiao) 可以免费制作身份证正反面 A4 扫描键
+
+备用
+
+[白描证件照](https://sj.qq.com/appdetail/com.uzero.cn.zhengjianzhao) 基本够用。支持多种尺寸证件照的制作以及自定义尺寸证件照的制作，有次数限制，且 5 寸和 6 寸照片没有将纸张发挥到极致
 
 not
 
-扫描宝 动不动就要会员，差评
+* 扫描宝 印象笔记家的，动不动就要会员，差评
+* 光影证件照 目前不太完善
 
 ## 30.绘画手记
 
@@ -990,11 +994,14 @@ APTV
 
 ### 通用
 
+* [公考雷达](https://sj.qq.com/appdetail/com.maidu.gkld) 非常方便筛选合适岗位
+* ——————— ฅ՞• •՞ฅ ———————
 * [高途公考](https://sj.qq.com/appdetail/com.gaotu100.gongkao) 文档附件预览特别好用，查询招信息较为方便但是资源少
 * [粉笔](https://sj.qq.com/appdetail/com.fenbi.android.servant) 比较清新，查询招考信息较为方便
 * [华图在线](https://sj.qq.com/appdetail/com.huatu.handheld_huatu) 不建议用来查询招考信息，每次都得重新选择
 * ——————— ฅ՞• •՞ฅ ———————
 * [疯狂刷题](https://sj.qq.com/appdetail/com.yaerxing.fkst) 汇聚大量包括了直至大学、考研优题、真题、好题
+* [一起考公](https://sj.qq.com/appdetail/com.zhangshangyiqi.civilserviceexam) 免登录就能刷很多题，还有少量免费视频课
 
 not
 

@@ -139,13 +139,15 @@ not
 
 备用
 
+* 【win】[PhotoDemon](https://photodemon.org/) 足够小巧但功能不差
+* 【win】[光影魔术手](https://www.gymss.cn/) 经典无广告，其中的 1 寸照排版功能很好使
 * 【全平台】[美图秀秀](https://pc.meitu.com)
 
 not
 
-* 【win】光影魔术手 之前版本还行，新版本就不行了
 * 【win mac】eagle 感觉不好用
 * 【win mac 收费】PS 正版太贵, 且版本不能永久买断我也不期望，让人望而却步
+* 【win 收费】神奇证件照片打印软件 199 的价格对我而言是否太高了，虽然好用
 
 官网收录：[Adobe Photoshop](https://www.photoshop.com)
 
@@ -192,10 +194,9 @@ linux 除了 wps 和 LibreOffice，可以安装 [WinApps for linux](https://nows
 
 #### 2.3 邮件收发
 
-* win、[mac](https://apps.apple.com/cn/app/%E7%BD%91%E6%98%93%E9%82%AE%E7%AE%B1%E5%A4%A7%E5%B8%88/id1233593954?mt=12) 用户 [网易邮箱大师](https://dashi.163.com)
+* win 精品软件 [Foxmail](https://www.foxmail.com)
+* 【mac】网易邮箱大师 [AppStore 版](https://apps.apple.com/cn/app/%E7%BD%91%E6%98%93%E9%82%AE%E7%AE%B1%E5%A4%A7%E5%B8%88/id1233593954?mt=12)
 * linux 用户 [Thunderbird](https://www.thunderbird.net/zh-CN)
-
-官网收录：【win [mac](https://apps.apple.com/cn/app/foxmail/id617950461?mt=12)】[Foxmail](https://www.foxmail.com)
 
 #### 2.4 办公通讯
 
@@ -297,7 +298,11 @@ not
 远程桌面
 
 * 【全平台】[RustDesk](https://rustdesk.com/index.html) – The Open Source Remote Desktop Access Software
-* 备用【全平台】[ToDesk](https://www.todesk.com/download.html)
+
+备用
+
+* 【全平台】[ToDesk](https://www.todesk.com/download.html)
+* [魔控](https://monect.com/) 除了远程控制电脑，还能模拟游戏手柄
 
 [如何连接 windows 电脑](https://learn.microsoft.com/zh-cn/windows-server/remote/remote-desktop-services/clients/remote-desktop-clients)
 
@@ -767,7 +772,7 @@ not
 
 not
 
-* [乐播投屏](https://www.lebo.cn) 太臃肿且要注意远程屏幕共享骗局
+* [乐播投屏](https://www.lebo.cn) 太臃肿且要**注意远程屏幕共享诈骗**
 
 ### 5 文件转换
 
@@ -798,7 +803,12 @@ not
 
 ## 游戏
 
+### 客户端
+
 * 【win mac】[暴雪战网](https://download.battle.net)
+
+### 加速器
+
 * 【win mac】[雷神网游加速器](https://www.leigod.com) 按分钟计费可暂停 4600 小时才 139 元，虽然事后又搞活动是 139 元 5200 小时
 
 not
@@ -806,6 +816,10 @@ not
 * 【win mac】[奇游加速器](https://www.qiyou.cn) 太贵
 * 【win mac】[uu 加速器](https://uu.163.com) 太贵
 * 【win】[迅游网游加速器](https://www.xunyou.com/index.shtml) 太贵了
+
+### 红白机模拟器
+
+[小鸡模拟器 windows 经典版](https://dl.xiaoji001.com/download/pc/xiaoji_0.0.30.exe)
 
 ## 一些优秀的应用厂商
 
