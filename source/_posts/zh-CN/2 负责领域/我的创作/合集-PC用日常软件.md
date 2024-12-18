@@ -210,11 +210,12 @@ linux 除了 wps 和 LibreOffice，可以安装 [WinApps for linux](https://nows
 
 #### 2.5 思维导图
 
-【全平台】Xmind 思维导图 [官网](https://xmind.cn) | [mac 版](https://apps.apple.com/cn/app/xmind-%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/id1327661892?mt=12)
+【全平台】Freeplane [官网](https://docs.freeplane.org/) | [下载](https://sourceforge.net/projects/freeplane/)
 
 not
 
-MindManager 官网直接就显示收费，我不是很喜欢
+* MindManager 收费软件我都不喜欢
+* 【全平台】Xmind 思维导图 [官网](https://xmind.cn) 收费才好用
 
 ### 3【常用】音频类
 

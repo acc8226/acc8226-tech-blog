@@ -225,7 +225,7 @@ ctrl + c 复制
 ctrl + x 剪切
 ctrl + v 粘贴
 alt + enter 属性
-enter打开
+enter 打开
 delete 删除
 F2 重命名
 
@@ -266,7 +266,7 @@ Alt + F4
 
 补齐 .com 地址 	Ctrl + Enter
 
-### vscode 的快捷键
+### [vscode 的快捷键](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
 
 ctrl + alt + shift + 向上 向上复制一行
 alt + 向上 向上移动一行

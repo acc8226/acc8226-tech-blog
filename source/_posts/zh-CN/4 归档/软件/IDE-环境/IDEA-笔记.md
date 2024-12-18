@@ -1,7 +1,7 @@
 ---
 title: IDEA 笔记
 date: 2019-06-02 21:41:52
-updated: 2022-11-09 13:56:00
+updated: 2024-12-11 12:42:24
 categories: IDE-使用
 ---
 
@@ -9,16 +9,14 @@ categories: IDE-使用
 
 <https://www.jetbrains.com/idea/download/other.html>
 
-版本选择：根据我的观察，每年五月份过后获取上个年度的最新版本应该是最终版本，可下载之。
-
-> 若下载的是 2020 之后的版本已不再区分是否 with Bundled JBR 了。直接选择 zip 格式即可。
+版本选择：根据我的观察，每年五月份过后获取的上个年度的最新版本应该是最终版本，可下载之。
 
 ## Windows 版的安装说明
 
 1. 解压
-2. 【可选】添加至环境变量，这样无论在哪个目录下都可启动 IntelliJ IDE
-3. 【可选】调整 JVM 堆大小的值
-4. 打开命令行工具进入安装目录的 bin 文件夹下， 键入 idea.bat。这个命令同时会在 `${user.home}/. IntelliJIdea2020.3` 目录中初始化一系列的配置文件。
+1. 【可选】添加至环境变量，这样无论在哪个目录下都可启动 IntelliJ IDEA
+1. 【可选】调整 JVM 堆大小的值
+1. 打开命令行工具进入安装目录的 bin 文件夹下， 键入 idea.bat。这个命令同时会在 `${user.home}/. IntelliJIdea2020.3` 目录中初始化一系列的配置文件。
 
 附原文：
 
@@ -96,57 +94,34 @@ File -> Settings… Editor -> Code Style
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-2c28fe32553db645.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-> JetBrains Runtime 是什么 JetBrains Runtime （即 JetBrains 运行时）是一个运行时环境，用于在 Windows，Mac OS X 和 Linux 上 运行 IntelliJ 平台的各种产品。JetBrains Runtime 基于 OpenJDK 项目，并进行了一些修改。这些修改包括：抗锯齿，Linux 上增强的字体渲染，HiDPI 支持，连字，一些官方版本中未提供的针对产品崩溃的修复程序以及其他小的增强功能。
-
 ## 快捷键
 
-Ctrl + N Navigate|Class Open any file in your project 快速打开类 Ctrl + Shift + N Navigate|File Open any file in your project 快速打开文件
+[官方快捷键参考手册](https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf) | [中文翻译](https://www.cnblogs.com/nzbin/p/18022979)
 
-Ctrl + F / Cmd + F 意为 find 在当前文件进行文本查找 Ctrl + Shift + F 在当前项目进行文本查找
-
-Ctrl + R / Cmd + R 意为 replace 在当前文件进行文本替换 Ctrl + Shift + R 在当前项目进行文本替换
-
-Ctrl + Shift + Up/Down 整块代码 范围内向上/下移动 Alt + Shift + Up/Down 上/下移一行 或者 选中行代码向上/下移动
-
-Alt + Up/Down 在方法间快速移动定位
-
-Ctrl + O (Code|Override Methods) 重写方法 Ctrl + I(Code|Implements Methods) 实现方法
-
-Ctrl + U 转到父类 Ctrl + Alt + B 跳转到类 / 方法实现处
-
-Ctrl + Shift + U 大小写转化
-
-Shift + F6 (Refactor|Rename) 重构–重命名
-
-Ctrl + Alt + L 格式化代码
-
-Ctrl + G 跳转到行
-
-Ctrl + Alt + 左方向键 | 快速返回上次查看代码的位置（Back） Ctrl + Alt + 右方向键 | 快速返回上次查看代码的位置（Forward）
-
-Alt+F7 (Edit|Find|Find Usages)
-
-Ctrl + Q(View|Quick Documentation) Ctrl + B(Navigate|Declaration or Usages) 查看详情 click the mouse on usages with the CTRL 进入详情 Ctrl + F12 (Navigate|File Structure) + select element press Enter key
-
-Ctrl + Shift + 空格 自动补全 Shift + Click close tabs 还是喜欢用鼠标中键
-
-Alt + Insert (Code|Generate) 自动生成，代码自动生成，如生成对象的 set / get 方法，构造函数，toString() 等 Alt+F1 查到当前编辑元素
-
-Ctrl + W(select word) Ctrl + 方向键（左 / 右）跳转到上一个 下一个单词的首位置 Ctrl + 方向键（上 / 下）无效
-
-Shift + 方向键（左 / 右）选中内容左/右移动一位 Shift + 方向键（上 / 下）选中内容上 / 下移动一行
-
-当光标在单词首 或者 尾的位置时，可以 Ctrl + Shift + Left/Right 选中靠左/靠右单词
-
-单行注释(//) ctrl+/ 注释光标所在行代码，会根据当前不同文件类型使用不同的注释符号多行注释(//) 注释选中多行代码块注释 ctrl+shift+/
-
-Ctrl+X 默认剪切光标当前行。否则为剪切选中内容 Ctrl+D 默认复制光标当前行到下一行。否则为复制选中内容到下一行 Ctrl+Y 删除行
-
-清除无效包引用 Ctrl + Alt + O
-
-Alt + 左方向键 向左切换 tab 页 Alt + 右方向键 向右切换 tab 页
-
-抽取函数/方法 Command-Option-M（Ctrl-Alt-M）
+* Ctrl + N Navigate|Class Open any file in your project 快速打开类 Ctrl + Shift + N Navigate|File Open any file in your project 快速打开文件
+* Ctrl + F / Cmd + F 意为 find 在当前文件进行文本查找 Ctrl + Shift + F 在当前项目进行文本查找
+* Ctrl + R / Cmd + R 意为 replace 在当前文件进行文本替换 Ctrl + Shift + R 在当前项目进行文本替换
+* Ctrl + Shift + Up/Down 整块代码 范围内向上/下移动 Alt + Shift + Up/Down 上/下移一行 或者 选中行代码向上/下移动
+* Alt + Up/Down 在方法间快速移动定位
+* Ctrl + O (Code|Override Methods) 重写方法 Ctrl + I(Code|Implements Methods) 实现方法
+* Ctrl + U 转到父类 Ctrl + Alt + B 跳转到类 / 方法实现处
+* Ctrl + Shift + U 大小写转化
+* Shift + F6 (Refactor|Rename) 重构–重命名
+* Ctrl + Alt + L 格式化代码
+* Ctrl + G 跳转到行
+* Ctrl + Alt + 左方向键 | 快速返回上次查看代码的位置（Back） Ctrl + Alt + 右方向键 | 快速返回上次查看代码的位置（Forward）
+* Alt+F7 (Edit|Find|Find Usages)
+* Ctrl + Q(View|Quick Documentation) Ctrl + B(Navigate|Declaration or Usages) 查看详情 click the mouse on usages with the CTRL 进入详情 Ctrl + F12 (Navigate|File Structure) + * select element press Enter key
+* Ctrl + Shift + 空格 自动补全 Shift + Click close tabs 还是喜欢用鼠标中键
+* Alt + Insert (Code|Generate) 自动生成，代码自动生成，如生成对象的 set / get 方法，构造函数，toString() 等 Alt+F1 查到当前编辑元素
+* Ctrl + W(select word) Ctrl + 方向键（左 / 右）跳转到上一个 下一个单词的首位置 Ctrl + 方向键（上 / 下）无效
+* Shift + 方向键（左 / 右）选中内容左/右移动一位 Shift + 方向键（上 / 下）选中内容上 / 下移动一行
+* 当光标在单词首 或者 尾的位置时，可以 Ctrl + Shift + Left/Right 选中靠左/靠右单词
+* 单行注释(//) ctrl+/ 注释光标所在行代码，会根据当前不同文件类型使用不同的注释符号多行注释(//) 注释选中多行代码块注释 ctrl+shift+/
+* Ctrl+X 默认剪切光标当前行。否则为剪切选中内容 Ctrl+D 默认复制光标当前行到下一行。否则为复制选中内容到下一行 Ctrl+Y 删除行
+* 清除无效包引用 Ctrl + Alt + O
+* Alt + 左方向键 向左切换 tab 页 Alt + 右方向键 向右切换 tab 页
+* 抽取函数/方法 Command-Option-M（Ctrl-Alt-M）
 
 **修改 Project 工具窗口（或其他活动工具窗口）大小** Ctrl+Shift+Right（Windows 或 Linux）或 ⇧⌘Right (macOS) 增加工具窗口宽度，按 Ctrl+Shift+Left 或 ⇧⌘Left 减少工具窗口宽度。
 
@@ -226,10 +201,6 @@ Postfix Completion 功能本质上也是代码模板，只是它比 Live Templat
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-1b2405284f52d4fc?imageMogr2/auto-orient/strip)
 
-## 其他
-
-- 在创建 class 类的时候, 如果是 x.y.z.MyClass 的形式, IEDA 会自动创建 x.y.z 包, 是不是很强大
-
 ## IntelliJ IDEA 两种 keymap 快捷键方案 Mac OS X 和 Mac OS X 10.5+ 的区别
 
 就是 Mac OS X 10.5+ 更贴近于 Mac 系统本身快捷键的操作体验，IDE 的快捷键与系统快捷冲突的更少；而 Mac OS X 方案更贴近于 IntelliJ IDEA 固有的设计。
@@ -271,6 +242,24 @@ Postfix Completion 功能本质上也是代码模板，只是它比 Live Templat
 ## Intellij IDEA 打开多个窗口项目
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-6fa8e0b6fa8d533a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+## 已集成的 HTTP Request 工具
+
+![](https://upload-images.jianshu.io/upload_images/1662509-835188162fd7c6bf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+Following HTTP Request Live Templates are available:
+
+- 'gtrp' and 'gtr' create a GET request with or without query parameters;
+- 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+- 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+<!-- more -->
+
+```md
+### GET 请求
+
+GET http://localhost:80/api/item Accept: application/json
+```
 
 ## 记录
 

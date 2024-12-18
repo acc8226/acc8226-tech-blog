@@ -291,7 +291,7 @@ back2top:
 
 # Reading progress bar
 reading_progress:
-  enable: false
+  enable: true
 
 # Bookmark Support
 bookmark:

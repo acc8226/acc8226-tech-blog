@@ -994,14 +994,14 @@ APTV
 
 ### 通用
 
-* [公考雷达](https://sj.qq.com/appdetail/com.maidu.gkld) 非常方便筛选合适岗位
+* 【强烈推荐】[公考雷达](https://sj.qq.com/appdetail/com.maidu.gkld) 选岗神器
 * ——————— ฅ՞• •՞ฅ ———————
 * [高途公考](https://sj.qq.com/appdetail/com.gaotu100.gongkao) 文档附件预览特别好用，查询招信息较为方便但是资源少
 * [粉笔](https://sj.qq.com/appdetail/com.fenbi.android.servant) 比较清新，查询招考信息较为方便
 * [华图在线](https://sj.qq.com/appdetail/com.huatu.handheld_huatu) 不建议用来查询招考信息，每次都得重新选择
 * ——————— ฅ՞• •՞ฅ ———————
 * [疯狂刷题](https://sj.qq.com/appdetail/com.yaerxing.fkst) 汇聚大量包括了直至大学、考研优题、真题、好题
-* [一起考公](https://sj.qq.com/appdetail/com.zhangshangyiqi.civilserviceexam) 免登录就能刷很多题，还有少量免费视频课
+* [一起公考](https://sj.qq.com/appdetail/com.zhangshangyiqi.civilserviceexam) 免登录就能刷很多题，还有少量免费视频课
 
 not
 
