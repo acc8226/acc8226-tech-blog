@@ -194,7 +194,7 @@ linux 除了 wps 和 LibreOffice，可以安装 [WinApps for linux](https://nows
 
 #### 2.3 邮件收发
 
-* win 精品软件 [Foxmail](https://www.foxmail.com)
+* 【win 精品软件】[Foxmail](https://www.foxmail.com)
 * 【mac】网易邮箱大师 [AppStore 版](https://apps.apple.com/cn/app/%E7%BD%91%E6%98%93%E9%82%AE%E7%AE%B1%E5%A4%A7%E5%B8%88/id1233593954?mt=12)
 * linux 用户 [Thunderbird](https://www.thunderbird.net/zh-CN)
 
