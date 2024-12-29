@@ -119,7 +119,7 @@ not
 #### 安卓
 
 1. [FBReader](https://fbreader.org/android#download) 一款本地电子书阅读器，但是支持 pdf 需要付费且我也用不到
-2. [番茄免费小说](https://sj.qq.com/appdetail/com.dragon.read) 有的想看的书可以免费离线下载，很适合离线用，除了占用空间有点大
+2. [番茄免费小说](https://sj.qq.com/appdetail/com.dragon.read) 有的想看的书可以免费离线下载，很适合离线用，**除了占用空间有点大**
 
 可选
 
@@ -612,7 +612,7 @@ or
 
 not
 
-* [大众点评](https://sj.qq.com/appdetail/com.dianping.v1) 和美团重了
+* [大众点评](https://sj.qq.com/appdetail/com.dianping.v1) 和美团重了，且貌似没有以前火了
 * [闪送](https://sj.qq.com/appdetail/cn.ishansong)
 * [58 同城](https://sj.qq.com/appdetail/com.wuba) 假消息太多，注意防范什么引流之类，但也有真实的
 * [安居客](https://sj.qq.com/appdetail/com.anjuke.android.app)

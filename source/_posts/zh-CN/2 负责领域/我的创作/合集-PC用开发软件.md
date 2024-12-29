@@ -94,7 +94,7 @@ repositories {
 ### 数据库管理
 
 * 【全平台 付费】[DataGrip](https://www.jetbrains.com/datagrip)因 为我有 Jetbrain 开源认证，暂时选用
-* 【全平台 免费】[Navicat Premium Lite](https://www.navicat.com.cn/download/navicat-premium-lite) 毕竟免费
+* 【全平台 免费】[Navicat Premium Lite](https://www.navicat.com.cn/download/navicat-premium-lite) 毕竟免费，识别多种数据库，包括本地 sqlite 文件
 
 maybe
 

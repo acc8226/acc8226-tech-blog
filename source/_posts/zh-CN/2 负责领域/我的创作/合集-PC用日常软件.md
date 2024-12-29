@@ -23,7 +23,7 @@ categories: 我的创作
 
 #### 0.2 浏览器
 
-* 【win 绿色版】[Catsxp 猫眼浏览器](http://www.centbrowser.cn) 鼠标悬停切换标签功能值得点赞。保护隐私、更快捷、更安全
+* 【win 绿色版】[Catsxp 猫眼浏览器](https://www.catsxp.com) 鼠标悬停切换标签功能值得点赞。保护隐私、更快捷、更安全
 * 【mac】[360 极速浏览器](https://browser.360.cn/ee/mac/index.html) 而非 App Store 版
 * 【linux】[火狐浏览器](https://www.firefox.com.cn)
 
@@ -210,11 +210,16 @@ linux 除了 wps 和 LibreOffice，可以安装 [WinApps for linux](https://nows
 
 #### 2.5 思维导图
 
+
+
+备用
+
 【全平台】Freeplane [官网](https://docs.freeplane.org/) | [下载](https://sourceforge.net/projects/freeplane/)
 
 not
 
 * MindManager 收费软件我都不喜欢
+* Freeplane 不喜欢
 * 【全平台】Xmind 思维导图 [官网](https://xmind.cn) 收费才好用
 
 ### 3【常用】音频类
