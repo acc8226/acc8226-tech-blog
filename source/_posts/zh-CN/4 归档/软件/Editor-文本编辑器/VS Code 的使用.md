@@ -7,7 +7,7 @@ categories: 文本编辑器
 
 作为一款开箱即用的产物，基本上不用过多额外配置。
 
-## 设置 vscode 换行符 （\n）
+## 统一 vscode 换行符 （\n）
 
 直接搜索 files:eol 进行设置。
 
@@ -17,11 +17,8 @@ categories: 文本编辑器
 
 ## 我的必装插件
 
-IntelliJ IDEA 键盘映射
-<https://marketplace.visualstudio.com/items?itemName=k--kato.intellij-idea-keybindings>
-
-markdownlint
-<https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint>
+* [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
+* [Markmap](https://marketplace.visualstudio.com/items?itemName=gera2ld.markmap-vscode) - Visual Studio Marketplace
 
 <!-- more -->
 
@@ -101,10 +98,6 @@ py -3 -m venv .venv
 ```
 
 Once you are finished, type deactivate in the terminal window to deactivate the virtual environment.
-
-## 下载加速
-
-将域名替换为 vscode.cdn.azure.cn
 
 ## 参考
 

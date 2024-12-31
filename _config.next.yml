@@ -63,7 +63,6 @@ menu:
   categories: /categories || fa fa-th
   archives: /archives || fa fa-archive
   nav: /hao123 || fa fa-compass
-  nav2: https://nav.feipig.fun || fa fa-compass
   about: /about/ || fa fa-user
   #tags: /tags/ || fa fa-tags
   #schedule: /schedule/ || fa fa-calendar

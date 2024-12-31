@@ -25,12 +25,11 @@ hiroi-sora/Umi-OCR: OCR 图片转文字识别软件，完全离线。截屏/批�
 下载地址
 <https://jidusm.wrste.com/>
 
-> 由于我有识别 mathpix 数学公式的需要。且我在当时在[数码荔枝](https://store.lizhi.io/) 30 元买了终生版。
+> 由于我有识别 mathpix 数学公式的需要。且我在当时在[数码荔枝](https://store.lizhi.io) 30 元买了终生版。
 
 ## 白描【win mac android web】【部分免费+付费】
 
-白描 App - 白描官网|简洁高效的 OCR 文字识别与文件扫描软件|拍照取字方便快捷
-<https://baimiao.uzero.cn/>
+[白描 App](https://baimiao.uzero.cn) - 白描官网|简洁高效的 OCR 文字识别与文件扫描软件|拍照取字方便快捷
 
 在使用快捷键进行截图后，你会神奇的发现文字已经复制到剪贴板上了。
 

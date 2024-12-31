@@ -210,7 +210,7 @@ linux 除了 wps 和 LibreOffice，可以安装 [WinApps for linux](https://nows
 
 #### 2.5 思维导图
 
-
+【全平台】Xmind 思维导图 [官网](https://xmind.cn) 免费版功能就不错了且导出的图片的水印没有那么影响使用
 
 备用
 
@@ -218,9 +218,10 @@ linux 除了 wps 和 LibreOffice，可以安装 [WinApps for linux](https://nows
 
 not
 
+* GitMind 功能不够强大，貌似不能从 md 中导入
 * MindManager 收费软件我都不喜欢
 * Freeplane 不喜欢
-* 【全平台】Xmind 思维导图 [官网](https://xmind.cn) 收费才好用
+* scapple 收费就算了
 
 ### 3【常用】音频类
 
