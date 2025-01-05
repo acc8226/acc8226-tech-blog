@@ -2,7 +2,7 @@
 title: 合集-App
 permalink: myapp/
 date: 2017-04-13 22:07:33
-updated: 2024-10-26 19:03:16
+updated: 2025-01-05 22:29:44
 categories: 我的创作
 ---
 
@@ -336,11 +336,11 @@ not
 
 ### 安卓
 
-* 本地 [VLC](https://www.videolan.org/vlc/download-android.html) 本地视频播放利器且体积小巧
+* 本地 [VLC](https://www.videolan.org/vlc/download-android.html) 体积小巧且视频解码功能强大
 * ——————— ฅ՞• •՞ฅ ———————
 * 在线 bilibili 哔哩哔哩国际版 [Apkpure 版](https://apkpure.com/cn/bilibili-cn/com.bilibili.app.in/download) | [uptodown 版](https://com-bilibili-app-in.en.uptodown.com/android) 因为清爽
 * [西瓜视频](https://sj.qq.com/appdetail/com.ss.android.article.video) 广告较少，资源丰富
-* [网易爆米花（原网易Filmly）](https://sj.qq.com/appdetail/com.netease.filmlytv) 视频刮削神器，暂时免费
+* [网易爆米花（原名 网易 Filmly）](https://sj.qq.com/appdetail/com.netease.filmlytv) 视频刮削神器，暂时免费
 
 可选
 
@@ -478,7 +478,7 @@ not
 
 ## 4 购物
 
-买自己想要和喜欢的，会使人快乐？
+买自己想要和喜欢的，购物使人快乐
 
 * [京东](https://sj.qq.com/appdetail/com.jingdong.app.mall) / 微信小程序
 * [淘宝](https://sj.qq.com/appdetail/com.taobao.taobao)
@@ -515,9 +515,12 @@ not
 
 ### 安卓平板
 
-* [高德地图](https://sj.qq.com/appdetail/com.autonavi.minimap) 通用版【已适配平板】
-* [腾讯地图](https://sj.qq.com/appdetail/com.tencent.map) 通用版【已适配平板】
-* [百度地图](https://sj.qq.com/appdetail/com.baidu.BaiduMap) 通用版【已适配平板】
+* [高德地图](https://sj.qq.com/appdetail/com.autonavi.minimap) 通用版【已适配平板】 ，我将其作为主力。查看票价功能很好使
+
+备用
+
+* [百度地图](https://sj.qq.com/appdetail/com.baidu.BaiduMap) 通用版【已适配平板】备用，找便宜宾馆用
+* [腾讯地图](https://sj.qq.com/appdetail/com.tencent.map) 通用版【已适配平板】内置的小程序地图很好用
 
 ## 6 education 教育
 
@@ -631,15 +634,25 @@ not
 
 ### 安卓和 iPhone
 
-1. 铁路 12306 [app](https://sj.qq.com/appdetail/com.MobileTicket) / 小程序
-2. 格林 [app](https://sj.qq.com/appdetail/com.greentree.android) / 小程序 由于当年办了一个金卡会员，虽然很久没用了，但可能有些优惠吧
-3. 飞猪 [app](https://sj.qq.com/appdetail/com.taobao.trip) / 小程序
+#### 订酒店
 
-可选
+用目前最火的[携程旅行](https://sj.qq.com/appdetail/ctrip.android.view) 或者 美团里的酒店频道
 
-* [去哪儿旅行](https://sj.qq.com/appdetail/com.Qunar) 感觉还是去哪儿的票价便宜些 这里由于我没仔细阅读，导致取消订单后重下单付款了 120，长沙金井的老板真黑，我应该提前和他说我第二天早起会退房的，但主要损失还是被无良商户 和 无良信贷中介 和 被 zha
-* [携程旅行](https://sj.qq.com/appdetail/ctrip.android.view)
-* [同程旅行](https://sj.qq.com/appdetail/com.tongcheng.android)
+#### 火车票
+
+铁路 12306 [app](https://sj.qq.com/appdetail/com.MobileTicket) / 小程序 候补功能还行
+如果是路线规划则可以[去哪儿](https://sj.qq.com/appdetail/com.Qunar)、[携程](https://sj.qq.com/appdetail/ctrip.android.view)、[同程](https://sj.qq.com/appdetail/com.tongcheng.android)都差不多，同时我会参考哪个目前有满减活动
+
+#### 飞机票
+
+我不怎么坐，一般用携程够用了
+
+备用
+
+1. 格林 [app](https://sj.qq.com/appdetail/com.greentree.android) / 小程序 由于当年办了一个金卡会员，虽然很久没用了，可能有些优惠
+1. 飞猪 [app](https://sj.qq.com/appdetail/com.taobao.trip) 不怎么用，感觉阿里没做起来
+
+记录：有一次使用去哪儿，感觉还是去哪儿的票价便宜些 这里由于我没仔细阅读，导致取消订单后重下单付款了 120，长沙金井的老板真黑，我应该提前和他说我第二天早起会退房的，但主要损失还是被无良商户 和 无良信贷中介 和 被 zha
 
 not
 
@@ -730,7 +743,7 @@ not
 * [翼支付](https://sj.qq.com/appdetail/com.chinatelecom.bestpayclient) 由于我办理业务期间会每月会赠送代金券
 * [数字人民币](https://sj.qq.com/appdetail/cn.gov.pbc.dcep) 生态还不完善，然后 170 的收集也注册不了，目前我是用 153 的号码进行注册的
 
-## 12.网盘【常用】
+## 12 网盘【常用】
 
 ### 安卓/iPhone
 
@@ -759,11 +772,11 @@ not
 
 [阿里云盘TV版](https://www.alipan.com/download/tvdownload)
 
-## 13.效率类
+## 13 效率类
 
 [TODO 清单](https://sj.qq.com/appdetail/com.eve.todolist)
 
-## 14. 应用商店类
+## 14 应用商店类
 
 * [腾讯应用宝](https://sj.qq.com)-全网最新最热手机应用游戏下载
 * [百度手机助手](https://shouji.baidu.com)
@@ -777,7 +790,7 @@ not
 
 * [Google Play](https://play.google.com) 需魔法 和 谷歌框架
 
-## 15. 桌面启动器
+## 15 桌面启动器
 
 * Apex Launcher 免费版就可以用手势操作且比较省内存
 
@@ -789,7 +802,7 @@ not
 
 * Nova Launcher 连基础的手势操作还需要 pro 付费，差评
 
-## 16. 浏览器【常用】
+## 16 浏览器【常用】
 
 ### 安卓
 
@@ -832,7 +845,7 @@ not
 
 * [Chrome](https://sj.qq.com/appdetail/com.android.chrome) 不太好用
 
-## 17. 知识社区
+## 17 知识社区
 
 ### 通用
 
@@ -844,7 +857,7 @@ not
 
 * [小红书](https://sj.qq.com/appdetail/com.xingin.xhs) 适配了平板
 
-## 18. AI 助手
+## 18 AI 助手
 
 * [Kimi 智能助手](https://sj.qq.com/appdetail/com.moonshot.kimichat)
 * [豆包](https://sj.qq.com/appdetail/com.larus.nova)
@@ -856,11 +869,11 @@ not
 * [文心一言](https://sj.qq.com/appdetail/com.baidu.newapp) 个人体审核不过是什么玩意
 * [讯飞星火](https://sj.qq.com/appdetail/com.iflytek.spark) 感觉还差点意思
 
-## 19. 智能家居
+## 19 智能家居
 
 博联智能 可以搭配天猫插座 不过要求 2.4 和 5G Hz 的网络要分开
 
-## 20. 硬件检测
+## 20 硬件检测
 
 ### iPhone
 
@@ -870,19 +883,19 @@ AIDA64 硬件检测
 
 AIDA64 硬件检测
 
-## 21.局域网通讯
+## 21 局域网通讯
 
 ### 通用
 
 [LocalSend](https://localsend.org) Share files to nearby devices
 
-## 22.投资理财类
+## 22 投资理财类
 
 ### 通用
 
 * [挖财宝](https://sj.qq.com/appdetail/com.hangzhoucaimi.financial) 注意：理财需谨慎
 
-## 23.银行类
+## 23 银行类
 
 * [招商银行](https://sj.qq.com/appdetail/cmb.pb)
 * [掌上生活](https://sj.qq.com/appdetail/com.cmbchina.ccd.pluto.cmbActivity) 的美观和体验还行
@@ -894,7 +907,7 @@ not
 
 ~~【垃圾】微众银行~~ TM 垃圾微粒贷，网贷审核不严格立马到账，诈骗犯帮凶
 
-## 24.移动营业厅
+## 24 移动营业厅
 
 [移动](https://sj.qq.com/appdetail/com.greenpoint.android.mc10086.activity) | [联通](https://sj.qq.com/appdetail/com.sinovatech.unicom.ui) | [电信](https://sj.qq.com/appdetail/com.ct.client)
 
@@ -1055,18 +1068,19 @@ not
 
 ### 安卓
 
-* 本地 [obsidian](https://obsidian.md/download) 我主推得 markdown 本地笔记
-* [Day One Journal App](https://dayoneapp.com/) 颜值极高，免费版限 1 台设备，建议设置为手机端，电脑端用 web 版即可
-* [Simplenote](https://simplenote.com/) 极简，无限同步，不限设备，仅限纯文本，兼容 markdown 格式
-* [Notepad, Notes, Easy Notebook](https://notepad-notes-easy-notebook.en.uptodown.com/android)（记事本、便签、清单 - Notein）颜值和功能都不错
+[flomo 浮墨笔记](https://sj.qq.com/appdetail/com.flomo.app) 可以多台设备同步且不收费
 
 留存
 
 * 在线 [讯飞语记](https://sj.qq.com/appdetail/com.iflytek.vflynote) 支持实时语音听写很好用
+* [Notepad, Notes, Easy Notebook](https://notepad-notes-easy-notebook.en.uptodown.com/android)（记事本、便签、清单 - Notein）颜值和功能都不错
+* 本地 [obsidian](https://obsidian.md/download) 用于打开格式优美的 markdown 本地笔记
 
 not
 
 * Joplin 我不喜欢这种组织方式
+* [Day One Journal App](https://dayoneapp.com/) 颜值高，免费版限 1 台设备，算了
+* [Simplenote](https://simplenote.com/) 极简，无限同步，不限设备，仅限纯文本，兼容 markdown 格式，但是国内网络你懂的
 * ——————— ฅ՞• •՞ฅ ———————
 * [印象笔记](https://sj.qq.com/appdetail/com.yinxiang) 限制 2 台设备
 * [有道云笔记](https://sj.qq.com/appdetail/com.youdao.note) 限制 2 台设备
@@ -1090,7 +1104,15 @@ not
 
 【全平台】[Resilio Sync](https://www.resilio.com/)
 
-## 45 游戏
+## 45 题目解析
+
+[豆包爱学](https://sj.qq.com/appdetail/com.aitutor.hippo) 讲解题目，讲解知识点，解决疑惑
+
+备用
+
+[作业帮](https://sj.qq.com/appdetail/com.baidu.homework) 适合中小学生
+
+## 46 游戏
 
 ### iPhone 和 iPad
 
