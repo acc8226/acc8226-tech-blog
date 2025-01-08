@@ -16,35 +16,25 @@ categories: 我的创作
 
 #### 1.0.1 管家/杀毒
 
-* windows 用户推荐 [360 安全卫士极速版](https://weishi.360.cn) 或【win 安装版】[微软电脑管家](https://pcmanager.microsoft.com/zh-cn) +【win 安装版】[火绒安全软件](https://www.huorong.cn)
-* mac 推荐【mac】[腾讯柠檬清理（腾讯电脑管家 for mac）](https://lemon.qq.com)
-
-官网收录：管家类【win 安装版】[腾讯电脑管家](https://guanjia.qq.com) | 杀毒类：[Norton](https://cn.norton.com) | [McAfee](https://www.mcafee.com/zh-cn/index.html) |【win 安装版】[金山毒霸](https://www.ijinshan.com)
+* 【win 安装版】[360 安全卫士极速版](https://weishi.360.cn) 或 （[微软电脑管家](https://pcmanager.microsoft.com/zh-cn) + [火绒安全软件](https://www.huorong.cn)）
+* 【mac】[腾讯柠檬清理（腾讯电脑管家 for mac）](https://lemon.qq.com)
 
 #### 1.0.2 浏览器
 
-* 【win 绿色版】[Catsxp 猫眼浏览器](https://www.catsxp.com) 鼠标悬停切换标签功能值得点赞。保护隐私、更快捷、更安全
-* 【mac】[360 极速浏览器](https://browser.360.cn/ee/mac/index.html) 而非 App Store 版
+* 【win 绿色版】【mac】[Catsxp 猫眼浏览器](https://www.catsxp.com) 鼠标悬停切换标签功能很好用
 * 【linux】[火狐浏览器](https://www.firefox.com.cn)
-
 <!-- more -->
-
-官网收录：【win】[搜狗浏览器](https://sogou.browser.qq.com) |【win】[猎豹浏览器](https://www.liebao.cn) |【全平台】[360 安全浏览器](https://browser.360.cn) |【win mac】[QQ 浏览器](https://browser.qq.com) |【全平台】[Edge](https://www.microsoft.com/zh-cn/edge) |【全平台】[Opera](https://www.opera.com/zh-cn) |【全平台】[Chrome](https://www.google.cn/intl/zh-CN/chrome) |【win mac】[傲游浏览器](https://www.maxthon.cn) | [Vivaldi](https://vivaldi.com) |【win】[百分浏览器](http://www.centbrowser.cn)
 
 #### 1.0.3 压缩解压
 
-* 【win 安装版】[PeaZip](https://peazip.github.io) 智能解压很好用，记得切换到中文语言，安装版和右键菜单集成的比较好
-* 【[mac](https://apps.apple.com/cn/app/the-unarchiver/id425424353?mt=12)】[The Unarchiver](https://theunarchiver.com) 或【[mac](https://apps.apple.com/cn/app/fastzip-%E4%B8%93%E4%B8%9A%E7%9A%84-rar-7z-zip-%E8%A7%A3%E5%8E%8B%E7%BC%A9%E5%B7%A5%E5%85%B7/id1565629813?mt=12)】[FastZip](https://www.better365.cn/fastzip.html)
-* linux 一般都实用自带的 tar 命令
-
-官网收录：【win】[WinRAR](https://www.winrar.com.cn) |【win mac】[Bandizip](https://www.bandisoft.com/bandizip) |【win】[7-Zip](https://7-zip.org) |【mac】[FastZip](https://www.better365.cn/fastzip.html) |【mac】[Keka](https://www.keka.io/en) |【win mac】[360 压缩](https://yasuo.360.cn)
+* 【win 安装版】[PeaZip](https://peazip.github.io) 智能解压很好用，记得切换到中文语言，安装版和右键菜单集成的比较好 | [Bandizip](https://www.bandisoft.com/bandizip)
+* 【mac [商店版](https://apps.apple.com/cn/app/the-unarchiver/id425424353?mt=12)】[The Unarchiver](https://theunarchiver.com) 或【mac [商店版](<https://apps.apple.com/cn/app/fastzip-%E4%B8%93%E4%B8%9A%E7%9A%84-rar-7z-zip-%E8%A7%A3%E5%8E%8B%E7%BC%A9%E5%B7%A5%E5%85%B7/id1565629813?mt=12)>)】[FastZip](https://www.better365.cn/fastzip.html)
+* linux 一般都带此类工具
 
 #### 1.0.4 输入法
 
-* 【win mac】自带 或者[微信输入法](https://z.weixin.qq.com) 特有云粘贴板功能，支持跨设备粘贴文字、图片
+* 【win mac】自带 或者[微信输入法](https://z.weixin.qq.com) 特有云粘贴板功能，支持跨设备粘贴文字、图片 | [win 搜狗输入法 10](https://www.123pan.com/s/aDE9-hCCyh.html)
 * 【linux】自带 或者 [RIME](https://github.com/rime/home/wiki/RimeWithIBusx)
-
-官网收录：【全平台】[百度输入法](https://shurufa.baidu.com) |【全平台】[搜狗输入法](https://shurufa.sogou.com) |【全平台】[讯飞输入法](https://srf.xunfei.cn) |【win】[QQ 输入法](https://qq.pinyin.cn)
 
 ### 1.1 工具类
 
@@ -832,15 +822,16 @@ not
 
 Data center, cloud, and edge unified | [Resilio](https://www.resilio.com) 公司提供了免费的​​去中心化网盘 [Resilio Sync](https://www.resilio.com/sync/) 同步软件
 
-## xp 专题
+## XP 怀旧专题
 
 1. [补丁合集](https://www.123pan.com/s/aDE9-hCCyh.html)
-1. [360 安全卫士极速版](https://wsdl.360safe.com/setupbeta_jisu.exe)
-1. [360 安全浏览器](https://down.360safe.com/se/360se13.1.6410.0.exe)
-1. [360 压缩](https://sfdl.360safe.com/360zip_setup.exe)
-1. [手心输入法](http://dl.360safe.com/installer/web/PalmInputSetup.exe)
+1. [360 安全卫士极速版](https://wsdl.360safe.com/setupbeta_jisu.exe) | [火绒安全软件 5](https://www.huorong.cn/downloadAllv5.html?status=hrstat&src=18)
+1. [360 安全浏览器 13](https://down.360safe.com/se/360se13.1.6410.0.exe)
+1. [360 压缩](https://sfdl.360safe.com/360zip_setup.exe) | [7-Zip 24.09 x86](https://7-zip.org/a/7z2409.exe) | [Bandizip 5](https://www.bandisoft.com/bandizip/dl.php?xp)
+1. [手心输入法](http://dl.360safe.com/installer/web/PalmInputSetup.exe) | [搜狗输入法 10](https://www.123pan.com/s/aDE9-hCCyh.html)
 1. [QQ 9.7 怀旧版](https://dldir1.qq.com/qqfile/qq/PCQQ9.7.23/QQ9.7.23.29394.exe)
 1. [微信 3.2.1](https://www.123pan.com/s/aDE9-hCCyh.html)
+1. [Potplayer 1.7](https://www.123pan.com/s/aDE9-hCCyh.html)
 
 ## 留观中
 
