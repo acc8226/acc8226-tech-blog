@@ -903,9 +903,9 @@ AIDA64 硬件检测
 * [买单吧](https://sj.qq.com/appdetail/com.bankcomm.maidanba)
 * [网商银行](https://sj.qq.com/appdetail/com.mybank.android.phone) 可以支付宝提现免费，幸好我抢到资格比较早，但是用处不大
 
-not
+never
 
-~~【垃圾】微众银行~~ TM 垃圾微粒贷，网贷审核不严格立马到账，诈骗犯帮凶
+【垃圾】~~微众银行和微粒贷~~ TM 垃圾微粒贷，网贷审核不严格立马就到账，诈骗帮凶
 
 ## 24 移动营业厅
 

@@ -40,11 +40,9 @@ categories: 我的创作
 
 #### 1.1.1【常用】鼠标手势
 
-* 【win】[WGestures 1 代](https://www.yingdev.com/projects/wgestures)
+* 【win】[WGestures 1 代](https://www.yingdev.com/projects/wgestures) | [WGestures 2 代](https://store.lizhi.io/site/products/id/523?cid=46jjayiu)
 * 【mac】[BetterAndBetter](https://www.better365.cn/bab2.html)
 * 【linux】KDE 桌面内置了鼠标手势
-
-官网收录：【win】[FastGestures](https://fg.zhaokeli.com) 鼠标/触控板/屏手势
 
 #### 1.1.2【常用】键鼠增强
 
@@ -56,10 +54,6 @@ categories: 我的创作
 
 * 【win mac】[PixPin](https://pixpinapp.com) 不付费也能使用 OCR 和长截图功能
 * liunx 系统自带
-
-怀旧经典：【win】faststone capture for windows 5.3
-
-官网收录：【全平台】[Snipaste](https://zh.snipaste.com) |【win】[PicPick](https://picpick.app/zh) |【win】[verycapture](https://verycapture.com/cn/index.html) |【mac】[iShot](https://www.better365.cn/h-col-134.html)
 
 #### 1.1.4【常用】护眼
 
@@ -88,19 +82,17 @@ mac 版迅雷必须去官网下载才是完整版，目前还比较清爽，wind
 **linux 平台**
 
 1. 【全平台】[Motrix](https://motrix.app/zh-CN)
-2. 【linux win】[xdm](https://github.com/subhra74/xdm/releases) 可以认为是 linux 环境下的 idm，很强大
+2. 【linux win】[xdm](https://github.com/subhra74/xdm/releases) 可以认为是 linux 环境下的 idm
 
 #### 1.1.6【常用】网盘
 
 **windows 和 mac 平台**
 
-【全平台】[坚果云](https://www.jianguoyun.com/s/downloads) 用于存少量文档 + 【win mac】[阿里云盘](https://www.aliyundrive.com/drive) 主打大容量 + 同步功能，高峰时段限速但一般没感觉。然后再搭配【全平台】【[mac 版](https://apps.apple.com/cn/app/%E7%8C%AB%E5%A4%B4%E9%B9%B0%E6%96%87%E4%BB%B6-%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E5%99%A8/id1638657012)】猫头鹰文件。可以读取阿里网盘的视频文件
+【全平台】[坚果云](https://www.jianguoyun.com/s/downloads) 用于存少量文档 + 【win mac】[阿里云盘](https://www.aliyundrive.com/drive) 主打大容量 + 同步功能，高峰时段限速但不严重
 
 **linux 平台**
 
-【全平台】[坚果云](https://www.jianguoyun.com/s/downloads) + 【全平台】【[mac](https://apps.apple.com/cn/app/%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98/id547166701)】[百度网盘](https://pan.baidu.com/download)则很久没更新了
-
-官网收录：【win mac】[腾讯微云](https://www.weiyun.com)
+【全平台】[坚果云](https://www.jianguoyun.com/s/downloads) + 阿里云盘网页版
 
 #### 1.1.7 看图
 
@@ -108,44 +100,14 @@ mac 版迅雷必须去官网下载才是完整版，目前还比较清爽，wind
 * 【mac】[Picture View](https://wl879.github.io/apps/picview/index.html)
 * liunx 系统自带
 
-备用
-
-【win】[ImageGlass](https://github.com/d2phap/ImageGlass) 界面很现代，比菠萝看图功能更多，软件体积更大但体积还能接受
-
-not
-
-* acdsee 免费版都需要注册，差评
-* 【只有安装版】[Honeyview](https://www.bandisoft.com/honeyview) 蜂蜜浏览器 · 免费的图像查看器 页面太丑了，已过时
-* 【付费】【win】[Bandiview](https://www.bandisoft.com/bandiview) Honeyview 的升级版
-* 【绿色版】【win】[jpegview](https://github.com/sylikc/jpegview) 特点是小巧，但是我用不惯
-* [XnView](https://www.xnview.com/en/xnview/#downloads) 界面不那么现代
-
-官网收录：【win】[XnView](https://www.xnview.com/en) |【win】[BandiView](http://www.bandisoft.com/bandiview)
-
 #### 1.1.8 图像处理
 
 * 轻量级【win】[Paint.NET](https://www.getpaint.net) 功能强大且有绿色版
 * 重量级【全平台】[Gimp](https://www.gimp.org) PS 的替代品且免费
 
-备用
-
-* 【win】[PhotoDemon](https://photodemon.org/) 足够小巧但功能不差
-* 【win】[光影魔术手](https://www.gymss.cn/) 经典无广告，其中的 1 寸照排版功能很好使
-* 【全平台】[美图秀秀](https://pc.meitu.com)
-
-not
-
-* 【win mac】eagle 感觉不好用
-* 【win mac 收费】PS 正版太贵, 且版本不能永久买断我也不期望，让人望而却步
-* 【win 收费】神奇证件照片打印软件 199 的价格对我而言是否太高了，虽然好用
-
-官网收录：[Adobe Photoshop](https://www.photoshop.com)
-
 #### 1.1.9 密码管理
 
-【全平台】【[mac 版](https://apps.apple.com/cn/app/bitwarden/id1352778147?mt=12)】[BitWarden](https://bitwarden.com) 一款全平台的密码管理软件。轻度使用安装浏览器插件即可，重度使用可以安装该软件
-
-官网收录：付费【全平台】【[mac 版](https://apps.apple.com/cn/app/1password-7-password-manager/id1333542190?mt=12)】[1Password](https://1password.com/zh-cn)
+【全平台】【[苹果商店版](https://apps.apple.com/cn/app/bitwarden/id1352778147?mt=12)】[BitWarden](https://bitwarden.com) 一款全平台的密码管理软件。轻度使用安装浏览器插件即可，重度使用可以安装该软件
 
 ### 1.2 办公类
 
@@ -828,7 +790,7 @@ Data center, cloud, and edge unified | [Resilio](https://www.resilio.com) 公司
 1. [360 安全卫士极速版](https://wsdl.360safe.com/setupbeta_jisu.exe) | [火绒安全软件 5](https://www.huorong.cn/downloadAllv5.html?status=hrstat&src=18)
 1. [360 安全浏览器 13](https://down.360safe.com/se/360se13.1.6410.0.exe)
 1. [360 压缩](https://sfdl.360safe.com/360zip_setup.exe) | [7-Zip 24.09 x86](https://7-zip.org/a/7z2409.exe) | [Bandizip 5](https://www.bandisoft.com/bandizip/dl.php?xp)
-1. [手心输入法](http://dl.360safe.com/installer/web/PalmInputSetup.exe) | [搜狗输入法 10](https://www.123pan.com/s/aDE9-hCCyh.html)
+1. [手心输入法](http://dl.360safe.com/installer/web/PalmInputSetup.exe)
 1. [QQ 9.7 怀旧版](https://dldir1.qq.com/qqfile/qq/PCQQ9.7.23/QQ9.7.23.29394.exe)
 1. [微信 3.2.1](https://www.123pan.com/s/aDE9-hCCyh.html)
 1. [Potplayer 1.7](https://www.123pan.com/s/aDE9-hCCyh.html)
