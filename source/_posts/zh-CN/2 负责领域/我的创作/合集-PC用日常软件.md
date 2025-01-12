@@ -25,26 +25,26 @@ categories: 我的创作
 * 【linux】[火狐浏览器](https://www.firefox.com.cn)
 <!-- more -->
 
-#### 1.0.3 压缩解压
-
-* 【win 安装版】[PeaZip](https://peazip.github.io) 智能解压很好用，记得切换到中文语言，安装版和右键菜单集成的比较好 | [Bandizip](https://www.bandisoft.com/bandizip)
-* 【mac [商店版](https://apps.apple.com/cn/app/the-unarchiver/id425424353?mt=12)】[The Unarchiver](https://theunarchiver.com) 或【mac [商店版](<https://apps.apple.com/cn/app/fastzip-%E4%B8%93%E4%B8%9A%E7%9A%84-rar-7z-zip-%E8%A7%A3%E5%8E%8B%E7%BC%A9%E5%B7%A5%E5%85%B7/id1565629813?mt=12)>)】[FastZip](https://www.better365.cn/fastzip.html)
-* linux 一般都带此类工具
-
-#### 1.0.4 输入法
+#### 1.0.3 输入法
 
 * 【win mac】自带 或者[微信输入法](https://z.weixin.qq.com) 特有云粘贴板功能，支持跨设备粘贴文字、图片 | [win 搜狗输入法 10](https://www.123pan.com/s/aDE9-hCCyh.html)
 * 【linux】自带 或者 [RIME](https://github.com/rime/home/wiki/RimeWithIBusx)
 
 ### 1.1 工具类
 
-#### 1.1.1【常用】鼠标手势
+#### 1.1.0【常用】压缩解压
+
+* 【win 安装版】[PeaZip](https://peazip.github.io) 智能解压很好用，记得切换到中文语言，安装版和右键菜单集成的比较好 | [Bandizip](https://www.bandisoft.com/bandizip)
+* 【mac [商店版](https://apps.apple.com/cn/app/the-unarchiver/id425424353?mt=12)】[The Unarchiver](https://theunarchiver.com) 或【mac [商店版](<https://apps.apple.com/cn/app/fastzip-%E4%B8%93%E4%B8%9A%E7%9A%84-rar-7z-zip-%E8%A7%A3%E5%8E%8B%E7%BC%A9%E5%B7%A5%E5%85%B7/id1565629813?mt=12)>)】[FastZip](https://www.better365.cn/fastzip.html)
+* linux 一般都带此类工具
+
+#### 1.1.1【推荐】鼠标手势
 
 * 【win】[WGestures 1 代](https://www.yingdev.com/projects/wgestures) | [WGestures 2 代](https://store.lizhi.io/site/products/id/523?cid=46jjayiu)
 * 【mac】[BetterAndBetter](https://www.better365.cn/bab2.html)
 * 【linux】KDE 桌面内置了鼠标手势
 
-#### 1.1.2【常用】键鼠增强
+#### 1.1.2【推荐】键鼠增强
 
 * 【win 自荐】[**捷键**](https://feipig.fun/jiejian)
 * 【mac】[Hammerspoon](https://www.hammerspoon.org) 搭配自制脚本
@@ -125,7 +125,7 @@ linux 除了 wps 和 LibreOffice，可以安装 [WinApps for linux](https://nows
 
 官网收录：【win】[永中 Office](https://www.yozosoft.com)
 
-#### 1.2.2【常用】PDF 文档
+#### 1.2.2 PDF 文档
 
 **windows 平台**
 
@@ -152,7 +152,7 @@ linux 除了 wps 和 LibreOffice，可以安装 [WinApps for linux](https://nows
 
 #### 1.2.4 办公通讯
 
-防诈骗！一定不要开启屏幕共享！！
+防诈骗！一定不要开启屏幕共享！
 
 * 【全平台】【[mac 版](https://apps.apple.com/cn/app/%E9%A3%9E%E4%B9%A6-%E5%85%88%E8%BF%9B%E5%9B%A2%E9%98%9F-%E5%85%88%E7%94%A8%E9%A3%9E%E4%B9%A6/id1551632588?mt=12)】[飞书](https://www.feishu.cn)——先进企业协作与管理平台，一站式无缝办公协作，团队上下对齐目标，全面激活组织和个人。先进团队，先用飞书。
 * 【全平台】【[mac 版](https://apps.apple.com/cn/app/%E9%92%89%E9%92%89-%E8%AE%A9%E8%BF%9B%E6%AD%A5%E5%8F%91%E7%94%9F/id1435447041?mt=12)】[钉钉](https://page.dingtalk.com/wow/z/dingtalk/simple/ddhomedownload#) 个人版不好用，有点卡
@@ -166,7 +166,8 @@ linux 除了 wps 和 LibreOffice，可以安装 [WinApps for linux](https://nows
 
 备用
 
-【全平台】Freeplane [官网](https://docs.freeplane.org/) | [下载](https://sourceforge.net/projects/freeplane/)
+* 【全平台】Freeplane [官网](https://docs.freeplane.org/) | [下载](https://sourceforge.net/projects/freeplane/)
+* vym 不支持 markdown 输入，备用了
 
 not
 
