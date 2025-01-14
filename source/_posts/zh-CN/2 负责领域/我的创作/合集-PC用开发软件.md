@@ -119,15 +119,15 @@ not
 
 vscode 插件推荐：[markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
 
-or
+备用
 
-* 【win 精品软件 绿色版】[Notepad++](https://github.com/notepad-plus-plus/notepad-plus-plus) 是好软件，除了言论
 * 【全平台】[notepad--](https://gitee.com/cxasm/notepad--) npp 的全平台版本，剔除了不良言论
-* 【全平台】[Zed](https://zed.dev) 据说是新一代编辑器，再等等看
-* 【全平台 公共预览版免费】[JetBrains Fleet](https://www.jetbrains.com/fleet) 还是不太好用
+* 【全平台】[Zed](https://zed.dev) 据说是新一代编辑器，还不完善
 
 not
 
+* 【全平台 公共预览版免费】[JetBrains Fleet](https://www.jetbrains.com/zh-cn/fleet/) 预览版还不太成熟
+* 【win 精品软件 绿色版】[Notepad++](https://github.com/notepad-plus-plus/notepad-plus-plus) 是好软件，除了言论
 * 【全平台】[Brackets](https://brackets.io) - A modern, open source code editor that understands web design
 * 【win】[EverEdit](https://www.everedit.net) 不好用
 * 【win】[Geany](https://www.geany.org) 只有安装版的差评，且 UI 目前差点意思
@@ -260,7 +260,7 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
 [MinIO](https://min.io) | S3 & Kubernetes Native Object Storage for AI
 
-## 9. network tool 网络工具
+## 9. Network tool 网络工具
 
 ### http 调试
 
@@ -330,7 +330,7 @@ VSCode 和 IDEA 会自带 Git 功能。特别的如果是 windows 系统推荐�
 
 不喜欢 TortoiseGit 的用户可以试试【win mac】[Sourcetree](https://www.sourcetreeapp.com)
 
-【linux】[sourcegit](https://github.com/sourcegit-scm/sourcegit/releases) 或者 gnome 家的 [Gitg](https://wiki.gnome.org/Apps/Gitg) 或者 KDE 家的 kommit
+【linux】[sourcegit](https://github.com/sourcegit-scm/sourcegit/releases) 或者 gnome 家的 [Gitg](https://wiki.gnome.org/Apps/Gitg) 或者 KDE 家的 [kommit](https://apps.kde.org/zh-cn/kommit/)
 
 ### SVN
 

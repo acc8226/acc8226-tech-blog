@@ -2,7 +2,7 @@
 title: 合集-App
 permalink: myapp/
 date: 2017-04-13 22:07:33
-updated: 2025-01-05 22:29:44
+updated: 2025-01-14 10:37:51
 categories: 我的创作
 ---
 
@@ -21,7 +21,7 @@ categories: 我的创作
 
 ### 安卓还是 iOS、鸿蒙
 
-如果只考虑必要需求，现阶段低于 2000 选安卓手机
+如果只考虑必要需求，现阶段低于 2000 选安卓手机，目前华为畅享 70X 有待观察
 
 ### 手机还是平板
 
@@ -34,9 +34,9 @@ categories: 我的创作
 
 <!-- more -->
 
-关于价格：3000 以上预算请无脑选 iPad，2000~3000 综合考虑买 iPad 还是安卓平板，2000 以下只推荐购买安卓平板。
+关于价格：3000 以上预算我会无脑选 iPad，2000~3000 综合考虑买 iPad 或安卓平板，2000 以下只推荐购买安卓平板。
 
-### 怎么挑选平板 Pad App
+### 怎么挑选平板 Pad 应用
 
 怎么判断一个 App 是不是一个好 App 呢, 原则上:
 
@@ -51,11 +51,11 @@ categories: 我的创作
 
 ## 1 装机必备
 
-### 0 安全中心【重要】
+### 0 安全类【重要】
 
 <a href="https://sj.qq.com/appdetail/com.hicorenational.antifraud" style="color: red;">国家反诈中心</a> 作为装机必备！防诈骗第一
 
-设置电话防骚扰，电信用户可以在微信上关注公众号设置天翼防骚扰，移动和联通也有对应的公众号关注后可以屏蔽国外来电。
+设置来电防骚扰：电信用户可以在微信上关注公众号设置天翼防骚扰，移动和联通也有对应的公众号关注后可以屏蔽国外来电
 
 #### 安卓
 
@@ -71,7 +71,7 @@ categories: 我的创作
 
 #### 安卓
 
-Aegis Authenticator [官网](https://getaegis.app) | [下载地址](https://github.com/beemdevelopment/Aegis/releases) 记得做好定时的密码导出工作
+Aegis Authenticator [官网](https://getaegis.app) | [下载地址](https://github.com/beemdevelopment/Aegis/releases) 需定期做好密码备份导出工作
 
 not
 
@@ -94,16 +94,16 @@ not
 
 #### 通用
 
-Bitwarden【已适配安卓平板】[Github 下载](https://github.com/bitwarden/android/releases)一款可以云端存储的密码管理器，也支持本地导入导出密码
+Bitwarden【已适配安卓平板】[Github 版](https://github.com/bitwarden/android/releases) 可以云端存储的密码管理器，支持本地导入导出密码
 
-选择 f-droid 和 普通版均可，但我一般会选择 f-droid，因为反正国内环境监测升级不存在的
+选择 f-droid 和 普通版均可，但我一般会选择 f-droid，因为反正国内网络环境堪忧
 
 ### 3 邮件收发
 
 #### 通用
 
 * [Aqua Mail](https://www.aqua-mail.com) 非常清爽 [Google play 版](https://play.google.com/store/apps/details?id=org.kman.AquaMail) | [Apkpure 版](https://apkpure.com/cn/email-aqua-mail-fast-secure/org.kman.AquaMail)
-* [Thunderbird](https://www.thunderbird.net/zh-CN/mobile/) 移动版 [Github 下载](https://github.com/thunderbird/thunderbird-android/releases)
+* [Thunderbird](https://www.thunderbird.net/zh-CN/mobile/) 移动版 [Github 版](https://github.com/thunderbird/thunderbird-android/releases)
 
 备用
 
@@ -112,14 +112,14 @@ Bitwarden【已适配安卓平板】[Github 下载](https://github.com/bitwarden
 
 not
 
-[QQ 邮箱](https://sj.qq.com/appdetail/com.tencent.androidqqmail) 不好之处是有点广告
+[QQ 邮箱](https://sj.qq.com/appdetail/com.tencent.androidqqmail) 现在有广告了
 
 ### 4 Books 书籍
 
 #### 安卓
 
 1. [FBReader](https://fbreader.org/android#download) 一款本地电子书阅读器，但是支持 pdf 需要付费且我也用不到
-2. [番茄免费小说](https://sj.qq.com/appdetail/com.dragon.read) 有的想看的书可以免费离线下载，很适合离线用，**除了占用空间有点大**
+1. [番茄免费小说](https://sj.qq.com/appdetail/com.dragon.read) 有的想看的书可以免费离线下载，很适合离线用，**除了占用空间有点大**
 
 可选
 
@@ -132,7 +132,7 @@ not
 not
 
 * [静读天下](http://www.moondownload.com/download.html) 免费版有广告
-* ~~云虫爱看 已下架，应用也不再更新~~
+* ~~云虫爱看 已下架，应用不再更新~~
 * ——————— ฅ՞• •՞ฅ ———————
 * [QQ 阅读](https://sj.qq.com/appdetail/com.qq.reader) 有广告
 * [多看](https://sj.qq.com/appdetail/com.duokan.reader) 书太贵
@@ -219,16 +219,14 @@ not
 
 #### 安卓平板
 
-* [酷狗音乐](https://sj.qq.com/appdetail/com.kugou.android) 通用版，已适配平板
-* [网易云音乐](https://sj.qq.com/appdetail/com.netease.cloudmusic) 通用版，已适配平板，日常有开屏广告
+* 本地 [椒盐音乐 Salt Player](https://www.coolapk.com/apk/284064)
+* 在线 [酷狗音乐](https://sj.qq.com/appdetail/com.kugou.android) 通用版，已适配平板
+* 在线 [网易云音乐](https://sj.qq.com/appdetail/com.netease.cloudmusic) 通用版，已适配平板，日常有开屏广告
 
 备用
 
 [Spotify](https://www.spotify.com) 虽然内容为王，但是不一定能访问
-
-not
-
-[QQ音乐HD](https://sj.qq.com/appdetail/com.tencent.qqmusicpad) 字太小且和手机版没法比
+[QQ 音乐 HD](https://sj.qq.com/appdetail/com.tencent.qqmusicpad) 字太小且和手机版没法比
 
 ### 6 听物
 
@@ -267,15 +265,11 @@ not
 
 * 酷 FM 酷狗官方推出的一款免费音乐 FM 电台 app，现在已经停止更新了
 
-#### 安卓平板
-
-虚位以待
-
 ### 7 倒数日
 
 #### 安卓和 iPhone
 
-[倒数日 · Days Matter](https://app.ipad.ly/idays) 倒计时神器, 可设置过期日提醒，还有各种纪念日提醒。多端同步，除了苹果端，还支持安卓端还有手表端
+[倒数日](https://app.ipad.ly/idays) 倒计时神器, 可设置过期日提醒，还有各种纪念日提醒。多端同步，除了苹果端，还支持安卓端还有手表端
 
 ### 8 资讯类
 
@@ -294,7 +288,7 @@ not
 * ——————— ฅ՞• •՞ฅ ———————
 * [新周刊](https://sj.qq.com/appdetail/com.newsweekly.livepi) 交互做得很好，也有质量
 * ——————— ฅ՞• •՞ฅ ———————
-* [IT之家](https://sj.qq.com/appdetail/com.ruanmei.ithome) 精选泛科技新闻，即时分享行业新闻动态
+* [IT 之家](https://sj.qq.com/appdetail/com.ruanmei.ithome) 精选泛科技新闻，即时分享行业新闻动态
 * [汽车之家](https://sj.qq.com/appdetail/com.cubic.autohome) 汽车资讯论坛
 * ——————— ฅ՞• •՞ฅ ———————
 * [Agr Reader](https://www.agrreader.xyz) 不好用只能做备选，看来 rss 阅读器还是苹果平台的 reeder
@@ -415,7 +409,7 @@ not
 
 ### Apple TV
 
-[网易 Filmly-智能多媒体管家，全能影视播放器](https://apps.apple.com/us/app/%E7%BD%91%E6%98%93filmly-%E6%99%BA%E8%83%BD%E5%A4%9A%E5%AA%92%E4%BD%93%E7%AE%A1%E5%AE%B6-%E5%85%A8%E8%83%BD%E5%BD%B1%E8%A7%86%E6%92%AD%E6%94%BE%E5%99%A8/id6670539829)
+[网易爆米花](https://apps.apple.com/us/app/%E7%BD%91%E6%98%93filmly-%E6%99%BA%E8%83%BD%E5%A4%9A%E5%AA%92%E4%BD%93%E7%AE%A1%E5%AE%B6-%E5%85%A8%E8%83%BD%E5%BD%B1%E8%A7%86%E6%92%AD%E6%94%BE%E5%99%A8/id6670539829)
 
 ## 3 工具【常用】
 
@@ -443,7 +437,7 @@ not
 * [纯纯写作](https://sj.qq.com/appdetail/com.drakeet.purewriter) 很好用，但是收费版才好用就算了
 * [快递 100](https://sj.qq.com/appdetail/com.Kingdee.Express) 最近寄快递选【德邦】确实便宜写，不过**体积和重量**是按两者最大的来，情有可原吧。第一次用快递 100 我领了一个 5 月的优惠券，感觉还行，一般足够用
 * [北京云法庭](http://sspt.bjcourt.gov.cn/bcourt/onlineCourt/downloadYm)  我在某些情况下会用到 法 yuan 就 TM 是垃圾，法 guan 也是，拖了好长时间，卸了，我没证据，我理亏，我 b 万没了，思考思考思考
-* 北京法院 一类无力应用
+* 北京法院 无力应用
 * ——————— ฅ՞• •՞ฅ ———————
 * 雨时 看天气 有广告
 * [彩云天气](https://sj.qq.com/appdetail/com.nowcasting.activity) 提示开会员
@@ -486,9 +480,9 @@ not
 
 可选
 
-* [唯品会](https://sj.qq.com/appdetail/com.achievo.vipshop) 小米手机预装的，买衣服的优惠还行
+* [唯品会](https://sj.qq.com/appdetail/com.achievo.vipshop) 小米手机预装，买衣服的优惠还行
 * [闲鱼](https://sj.qq.com/appdetail/com.taobao.idlefish) 比如临时购买天眼查的会员
-* [天猫](https://sj.qq.com/appdetail/com.tmall.wireless)
+* [天猫](https://sj.qq.com/appdetail/com.tmall.wireless) 名气不如淘宝
 
 官网收录：[当当](https://sj.qq.com/appdetail/com.dangdang.buy2) | [转转](https://sj.qq.com/appdetail/com.wuba.zhuanzhuan) | [苏宁易购](https://sj.qq.com/appdetail/com.suning.mobile.ebuy) | [小米商城](https://sj.qq.com/appdetail/com.xiaomi.shop) | [盒马](https://sj.qq.com/appdetail/com.wudaokou.hippo)
 
@@ -498,7 +492,7 @@ not
 
 * [百度地图](https://sj.qq.com/appdetail/com.baidu.BaiduMap) 和 [高德地图](https://sj.qq.com/appdetail/com.autonavi.minimap) 两者我都会安装，毕竟里面有些宾馆较便宜
 * 滴滴出行 [app](https://sj.qq.com/appdetail/com.sdu.didi.psnger) / 小程序 加班、搬家、货运搬家，搬家新用户还送券
-* 微信-腾讯乘车码小程序 其实如果我是公交，一般会用支付类软件，例如支付宝；地铁可选择云闪付
+* 微信-腾讯乘车码小程序 我坐公交更加会倾向使用支付宝，其次是微信，最后是银联云闪付
 
 可选
 
@@ -508,14 +502,14 @@ not
 重复了
 
 * [北京公交](https://sj.qq.com/appdetail/com.tianlutech.ebus) 补票用
-* [亿通行](https://sj.qq.com/appdetail/enfc.metro) 北京专用，可以购买 3 日通票
+* [亿通行](https://sj.qq.com/appdetail/enfc.metro) 北京专用，用来购买多日通票很划算
 * [北京一卡通](https://sj.qq.com/appdetail/cn.com.bmac.nfc)
 
 官网收录：[腾讯地图](https://sj.qq.com/appdetail/com.tencent.map) | [花小猪打车](https://sj.qq.com/appdetail/com.huaxiaozhu.rider)
 
 ### 安卓平板
 
-* [高德地图](https://sj.qq.com/appdetail/com.autonavi.minimap) 通用版【已适配平板】 ，我将其作为主力。查看票价功能很好使
+* [高德地图](https://sj.qq.com/appdetail/com.autonavi.minimap) 通用版【已适配平板】，我将其作为主力。查看票价功能很好使
 
 备用
 
@@ -748,15 +742,15 @@ not
 ### 安卓/iPhone
 
 1. [坚果云](https://sj.qq.com/appdetail/nutstore.android) 同步文档用
-2. [小飞机网盘](https://www.feijipan.com) 分享用
-3. [阿里云盘](https://sj.qq.com/appdetail/com.alicloud.databox) 功能很多，且不太限速，但是非会员不能看超清适配，但是可以搭配[猫头鹰文件](https://www.skyjos.cn/owlfiles/index.html)
-4. [PikPak](https://mypikpak.com/zh-CN) 免费用户总共 6GB，每天可以添加 3 个离线任务还是不错的
+1. [阿里云盘](https://sj.qq.com/appdetail/com.alicloud.databox) 功能很多，且不太限速，但是非会员不能看超清适配，但是可以搭配[猫头鹰文件](https://www.skyjos.cn/owlfiles/index.html)
+1. [PikPak](https://mypikpak.com/zh-CN) 免费用户总共 6GB，每天可以添加 3 个离线任务还是不错的
 * ——————— ฅ՞• •՞ฅ ———————
-5. [AListFlutter](https://github.com/jing332/AListFlutter) 网盘聚合工具
+1. [AListFlutter](https://github.com/jing332/AListFlutter) 网盘聚合工具
 
 not
 
 * [百度网盘](https://sj.qq.com/appdetail/com.baidu.netdisk) 720p 视频限免播放，且空间够大
+* [小飞机网盘](https://www.feijipan.com) 初始容量有点少
 * [123云盘](https://sj.qq.com/appdetail/com.mfcloudcalculate.networkdisk) app 内都是广告
 * [文叔叔](https://www.wenshushu.cn) 匿名分享盘，现在依旧被小飞机取代
 * [天翼云盘](https://sj.qq.com/appdetail/com.cn21.ecloud) 在 mac 上的同步还差点意思，优点是原画质视频播放，但是非会员不能倍速
@@ -788,11 +782,11 @@ not
 
 备用
 
-* [Google Play](https://play.google.com) 需魔法 和 谷歌框架
+* [Google Play](https://play.google.com) 需魔法 和 预先谷歌框架支持
 
 ## 15 桌面启动器
 
-* Apex Launcher 免费版就可以用手势操作且比较省内存
+* Apex Launcher 免费版就可以，手势操作便捷，且比较省内存
 
 备用
 
@@ -810,7 +804,7 @@ not
 
 备用
 
-* [X 浏览器](https://sj.qq.com/appdetail/com.mmbox.xbrowser) 只有1M大小，占用极少的资源，启动速度飞快。其中扫描二维码会自动复制到粘贴功能非常好使
+* [X 浏览器](https://sj.qq.com/appdetail/com.mmbox.xbrowser) 只有 1M 大小，占用极少的资源，启动速度飞快。其中扫描二维码会自动复制到粘贴功能很好用
 * Firefox 火狐浏览器 [应用宝版](https://sj.qq.com/appdetail/org.mozilla.firefox) | [国外商店版](https://firefox.en.uptodown.com/android)
 * [微软 Edge](https://sj.qq.com/appdetail/com.microsoft.emmx)
 
@@ -850,12 +844,12 @@ not
 ### 通用
 
 * [知乎](https://sj.qq.com/appdetail/com.zhihu.android) 广告不明显，还可以得盐粒 | [知乎极速版](https://sj.qq.com/appdetail/com.zhihu.android.lite) 算是做得很好的极速版，无广告无圆环挑战可以选择
-* [豆瓣](https://sj.qq.com/appdetail/com.douban.frodo) 不是很喜欢
+* [豆瓣](https://sj.qq.com/appdetail/com.douban.frodo) 我不常用
 * [小红书](https://sj.qq.com/appdetail/com.xingin.xhs)
 
 ### 安卓平板
 
-* [小红书](https://sj.qq.com/appdetail/com.xingin.xhs) 适配了平板
+* [小红书](https://sj.qq.com/appdetail/com.xingin.xhs) 已适配平板
 
 ## 18 AI 助手
 
@@ -866,7 +860,7 @@ not
 
 not
 
-* [文心一言](https://sj.qq.com/appdetail/com.baidu.newapp) 个人体审核不过是什么玩意
+* [文小言（原文心一言）](https://sj.qq.com/appdetail/com.baidu.newapp) 个人体审核不过是什么玩意
 * [讯飞星火](https://sj.qq.com/appdetail/com.iflytek.spark) 感觉还差点意思
 
 ## 19 智能家居
@@ -931,14 +925,14 @@ never
 
 备用
 
-* [北京公积金](https://sj.qq.com/appdetail/cn.gov.bjgjj.gjjapp) 网站其实挺强大，一般 app 甚至都用不到
+* [北京公积金](https://sj.qq.com/appdetail/cn.gov.bjgjj.gjjapp) 北京专用。网站其实挺强大，一般 app 甚至都用不到
 
 ## 27.美食类
 
 ### iPhone
 
 * [美食杰](https://sj.qq.com/appdetail/com.jesson.meishi)
-* [下厨房](https://sj.qq.com/appdetail/com.xiachufang) 应该也不错
+* [下厨房](https://sj.qq.com/appdetail/com.xiachufang)
 
 ## 28.新媒体运营
 
@@ -948,7 +942,7 @@ never
 
 ## 29.拍照和身份证扫描工具
 
-[白描](https://sj.qq.com/appdetail/com.uzero.baimiao) 可以免费制作身份证正反面 A4 扫描键
+[白描](https://sj.qq.com/appdetail/com.uzero.baimiao) 可以免费制作身份证正反面 A4 扫描件
 
 备用
 
@@ -999,7 +993,7 @@ APTV
 ### 安卓 和 苹果
 
 * [米家](https://sj.qq.com/appdetail/com.xiaomi.smarthome)
-* [TP-LINK 物联](https://wap.tplinkcloud.com.cn/appdown) 管理路由器及更多智能设备
+* [TP-LINK 物联](https://wap.tplinkcloud.com.cn/appdown) 管理路由器及其他智能设备
 * [贝锐蒲公英户端](https://pgy.oray.com/download) 向日葵家族，可实现快速组网
 * [小度](https://sj.qq.com/appdetail/com.baidu.duer.superapp) 小度打造的一款智能助手APP，能够连接多款百度旗下智能设备及合作设备，不得不用
 
@@ -1054,26 +1048,26 @@ not
 
 ## 40 直播
 
-* [斗鱼](https://sj.qq.com/appdetail/air.tv.douyu.android) 界面和功能体验都不错。什么俊男靓女精致妆容，现在已经很多去了抖音
+* [斗鱼](https://sj.qq.com/appdetail/air.tv.douyu.android) 界面和功能体验都不错。俊男靓女精致妆容，不过现在抖音比较火
 * [虎牙直播](https://sj.qq.com/appdetail/com.duowan.kiwi)
 * [战旗直播](https://sj.qq.com/appdetail/com.gameabc.zhanqiAndroid)
 * [YY 直播](https://sj.qq.com/appdetail/com.duowan.mobile)
 
 ## 41 交友
 
-* [MOMO 陌陌](https://sj.qq.com/appdetail/com.immomo.momo)
+* [MOMO 陌陌](https://sj.qq.com/appdetail/com.immomo.momo) 交友需谨慎
 * [探探](https://sj.qq.com/appdetail/com.p1.mobile.putong)
 
 ## 42 笔记
 
 ### 安卓
 
-[flomo 浮墨笔记](https://sj.qq.com/appdetail/com.flomo.app) 可以多台设备同步且不收费
+在线 [flomo 浮墨笔记](https://sj.qq.com/appdetail/com.flomo.app) 可以多台设备同步且不收费，适合灵光一闪
 
 留存
 
 * 在线 [讯飞语记](https://sj.qq.com/appdetail/com.iflytek.vflynote) 支持实时语音听写很好用
-* [Notepad, Notes, Easy Notebook](https://notepad-notes-easy-notebook.en.uptodown.com/android)（记事本、便签、清单 - Notein）颜值和功能都不错
+* 本地 [Notepad, Notes, Easy Notebook](https://notepad-notes-easy-notebook.en.uptodown.com/android)（记事本、便签、清单 - Notein）颜值和功能都不错
 * 本地 [obsidian](https://obsidian.md/download) 用于打开格式优美的 markdown 本地笔记
 
 not
@@ -1084,14 +1078,16 @@ not
 * ——————— ฅ՞• •՞ฅ ———————
 * [印象笔记](https://sj.qq.com/appdetail/com.yinxiang) 限制 2 台设备
 * [有道云笔记](https://sj.qq.com/appdetail/com.youdao.note) 限制 2 台设备
-* [flomo 笔记](https://sj.qq.com/appdetail/com.flomo.app) 用不习惯
 * ——————— ฅ՞• •՞ฅ ———————
 * [纯纯写作](https://sj.qq.com/appdetail/com.drakeet.purewriter) 这种组织方式我不喜欢而已，但是本身设计很优秀
 
 ### iOS
 
 * 本地 [obsidian](https://obsidian.md/download) 我主推得 markdown 本地笔记
-* [Simplenote](https://simplenote.com/) 极简，无限同步，不限设备，仅限纯文本，兼容 markdown 格式
+
+not
+
+* [Simplenote](https://simplenote.com/) 极简，无限同步，不限设备，仅限纯文本，兼容 markdown 格式，但是国内网络你懂的
 
 ## 43 反调公司【重要】
 

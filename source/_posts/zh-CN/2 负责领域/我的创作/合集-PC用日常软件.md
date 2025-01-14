@@ -2,7 +2,7 @@
 title: 合集-PC用日常软件
 permalink: mypc/
 date: 2023-03-22 21:02:00
-updated: 2025-01-06 11:24:47
+updated: 2025-01-14 10:59:31
 categories: 我的创作
 ---
 
@@ -14,7 +14,7 @@ categories: 我的创作
 
 ### 1.0 必备
 
-#### 1.0.1 管家/杀毒
+#### 1.0.1 安全类
 
 * 【win 安装版】[360 安全卫士极速版](https://weishi.360.cn) 或 （[微软电脑管家](https://pcmanager.microsoft.com/zh-cn) + [火绒安全软件](https://www.huorong.cn)）
 * 【mac】[腾讯柠檬清理（腾讯电脑管家 for mac）](https://lemon.qq.com)
@@ -34,21 +34,21 @@ categories: 我的创作
 
 #### 1.1.0【常用】压缩解压
 
-* 【win 安装版】[PeaZip](https://peazip.github.io) 智能解压很好用，记得切换到中文语言，安装版和右键菜单集成的比较好 | [Bandizip](https://www.bandisoft.com/bandizip)
+* 【win 安装版】[PeaZip](https://peazip.github.io) 智能解压很好用 | [Bandizip](https://www.bandisoft.com/bandizip)
 * 【mac [商店版](https://apps.apple.com/cn/app/the-unarchiver/id425424353?mt=12)】[The Unarchiver](https://theunarchiver.com) 或【mac [商店版](<https://apps.apple.com/cn/app/fastzip-%E4%B8%93%E4%B8%9A%E7%9A%84-rar-7z-zip-%E8%A7%A3%E5%8E%8B%E7%BC%A9%E5%B7%A5%E5%85%B7/id1565629813?mt=12)>)】[FastZip](https://www.better365.cn/fastzip.html)
-* linux 一般都带此类工具
+* 【linux】自带命令
 
 #### 1.1.1【推荐】鼠标手势
 
-* 【win】[WGestures 1 代](https://www.yingdev.com/projects/wgestures) | [WGestures 2 代](https://store.lizhi.io/site/products/id/523?cid=46jjayiu)
+* 【win 免费】[WGestures 1 代](https://www.yingdev.com/projects/wgestures) |【win 付费】[WGestures 2 代](https://store.lizhi.io/site/products/id/523?cid=46jjayiu)
 * 【mac】[BetterAndBetter](https://www.better365.cn/bab2.html)
-* 【linux】KDE 桌面内置了鼠标手势
+* 【linux】KDE 桌面已内置鼠标手势
 
 #### 1.1.2【推荐】键鼠增强
 
 * 【win 自荐】[**捷键**](https://feipig.fun/jiejian)
-* 【mac】[Hammerspoon](https://www.hammerspoon.org) 搭配自制脚本
-* 【linux】AutoKey [Github 地址](https://github.com/autokey/autokey) | [帮助文档](https://autokey.github.io/intro.html) 适用于 qt 和 x11 平台
+* 【mac】[Hammerspoon](https://www.hammerspoon.org) 可自己写脚本
+* 【linux】AutoKey [Github 地址](https://github.com/autokey/autokey) | [帮助文档](https://autokey.github.io/intro.html) 适用于 x11 和 qt 平台
 
 #### 1.1.3【常用】截图
 
@@ -75,9 +75,10 @@ categories: 我的创作
 
 1. 普通下载：【全平台】[Motrix](https://motrix.app/zh-CN) | [下载页](https://motrix.app/zh-CN/download) 颜值高。支持下载 HTTP、FTP、BT、磁力链接等资源。即使 Github 资源也不在话下
 2. 视频资源下载：【win mac】[Neat Download Manager](https://www.neatdownloadmanager.com/index.php/en) 体积小功能强，不支持磁力但是能配合浏览器拓展下载常见视频网站的视频
-3. 哔哩哔哩专用下载器：【win】[Bilidown-哔哩视频下载](https://zhouql.vip/bilibili/pc) |【win】[DownKyi](https://www.colostar.cn/links/13486.html)（哔哩下载姬）
 
-mac 版迅雷必须去官网下载才是完整版，目前还比较清爽，windows 版就算了
+哔哩哔哩专用下载器：【win】[Bilidown-哔哩视频下载](https://zhouql.vip/bilibili/pc) |【win】[DownKyi](https://www.colostar.cn/links/13486.html)（哔哩下载姬）
+
+mac 版迅雷其实也不错，不过必须去官网下载才是完整版，目前还比较清爽，windows 版就算了
 
 **linux 平台**
 
@@ -88,7 +89,7 @@ mac 版迅雷必须去官网下载才是完整版，目前还比较清爽，wind
 
 **windows 和 mac 平台**
 
-【全平台】[坚果云](https://www.jianguoyun.com/s/downloads) 用于存少量文档 + 【win mac】[阿里云盘](https://www.aliyundrive.com/drive) 主打大容量 + 同步功能，高峰时段限速但不严重
+【全平台】[坚果云](https://www.jianguo1.com/s/downloads) 用于存少量文档 + 【win mac】[阿里云盘](https://www.aliyundrive.com/drive) 主打大容量 + 同步功能，高峰时段限速但不严重
 
 **linux 平台**
 
@@ -97,7 +98,7 @@ mac 版迅雷必须去官网下载才是完整版，目前还比较清爽，wind
 #### 1.1.7 看图
 
 * 【win】[菠萝看图 BLumia/pineapple-pictures](https://github.com/BLumia/pineapple-pictures) A homebrew lightweight image viewer
-* 【mac】[Picture View](https://wl879.github.io/apps/picview/index.html)
+* 【mac】[Picview - 图片浏览器](https://picview.chitaner.com/zh-cn/)
 * liunx 系统自带
 
 #### 1.1.8 图像处理
@@ -107,7 +108,7 @@ mac 版迅雷必须去官网下载才是完整版，目前还比较清爽，wind
 
 #### 1.1.9 密码管理
 
-【全平台】【[苹果商店版](https://apps.apple.com/cn/app/bitwarden/id1352778147?mt=12)】[BitWarden](https://bitwarden.com) 一款全平台的密码管理软件。轻度使用安装浏览器插件即可，重度使用可以安装该软件
+【全平台】【[苹果商店版](https://apps.apple.com/cn/app/bitwarden/id1352778147?mt=12)】[BitWarden](https://bitwarden.com) 一款全平台的密码管理软件。轻度使用安装浏览器插件即可，重度使用可以安装客户端
 
 ### 1.2 办公类
 
@@ -115,7 +116,7 @@ mac 版迅雷必须去官网下载才是完整版，目前还比较清爽，wind
 
 一般品牌笔记本都会赠送[微软 Office](https://www.microsoftstore.com.cn/software/office) 套件
 
-否则还是推荐【全平台】【[mac 版](https://apps.apple.com/cn/app/wps-office-ai%E6%99%BA%E8%83%BD%E5%8A%9E%E5%85%AC%E5%8A%A9%E6%89%8B/id1443749478?mt=12)】[WPS](https://www.wps.cn) 需登录才能解锁编辑太恶心 +【全平台】[LibreOffice](https://zh-cn.libreoffice.org/download/libreoffice)
+否则还是推荐【全平台】【[mac 版](https://apps.apple.com/cn/app/wps-office-ai%E6%99%BA%E8%83%BD%E5%8A%9E%E5%85%AC%E5%8A%A9%E6%89%8B/id1443749478?mt=12)】[WPS](https://www.wps.cn) 不过需登录才能解锁编辑太恶心 +【全平台】[LibreOffice](https://zh-cn.libreoffice.org/download/libreoffice)
 
 在线平台我推荐【[mac 版](https://apps.apple.com/cn/app/%E8%85%BE%E8%AE%AF%E6%96%87%E6%A1%A3/id1370780836)】[腾讯文档](https://docs.qq.com)和[金山文档](https://www.kdocs.cn)，非常适合文档分享。但千万记得加水印和是设置只读访问权限，防止资料泄漏和被非法买卖
 
@@ -134,11 +135,11 @@ linux 除了 wps 和 LibreOffice，可以安装 [WinApps for linux](https://nows
 
 **mac 平台**
 
-* 【mac】PDF 如果站在简单读取的角度直接用浏览器即可。否则可以选择付费的 [PDF Expert](https://www.pdfexpert.cn)
+* 【mac】PDF 如果站在简单读取的角度直接用浏览器即可。否则可以选择有付费选项的 [PDF Expert](https://www.pdfexpert.cn)
 
 **linux 平台**
 
-* 【linux】自带或者用浏览器读取 pdf
+* 【linux】自带或者使用浏览器读取 pdf
 
 【网页版 在线 pdf 工具】[smallpdf.com](https://smallpdf.com) A Free Solution to all your PDF Problems
 
@@ -146,13 +147,13 @@ linux 除了 wps 和 LibreOffice，可以安装 [WinApps for linux](https://nows
 
 #### 1.2.3 邮件收发
 
-* 【win 精品软件】[Foxmail](https://www.foxmail.com)
+* 【**win 精品软件**】[Foxmail](https://www.foxmail.com)
 * 【mac】网易邮箱大师 [AppStore 版](https://apps.apple.com/cn/app/%E7%BD%91%E6%98%93%E9%82%AE%E7%AE%B1%E5%A4%A7%E5%B8%88/id1233593954?mt=12)
 * linux 用户 [Thunderbird](https://www.thunderbird.net/zh-CN)
 
 #### 1.2.4 办公通讯
 
-防诈骗！一定不要开启屏幕共享！
+防诈骗！不轻易共享屏幕！
 
 * 【全平台】【[mac 版](https://apps.apple.com/cn/app/%E9%A3%9E%E4%B9%A6-%E5%85%88%E8%BF%9B%E5%9B%A2%E9%98%9F-%E5%85%88%E7%94%A8%E9%A3%9E%E4%B9%A6/id1551632588?mt=12)】[飞书](https://www.feishu.cn)——先进企业协作与管理平台，一站式无缝办公协作，团队上下对齐目标，全面激活组织和个人。先进团队，先用飞书。
 * 【全平台】【[mac 版](https://apps.apple.com/cn/app/%E9%92%89%E9%92%89-%E8%AE%A9%E8%BF%9B%E6%AD%A5%E5%8F%91%E7%94%9F/id1435447041?mt=12)】[钉钉](https://page.dingtalk.com/wow/z/dingtalk/simple/ddhomedownload#) 个人版不好用，有点卡
@@ -167,7 +168,7 @@ linux 除了 wps 和 LibreOffice，可以安装 [WinApps for linux](https://nows
 备用
 
 * 【全平台】Freeplane [官网](https://docs.freeplane.org/) | [下载](https://sourceforge.net/projects/freeplane/)
-* vym 不支持 markdown 输入，备用了
+* vym 不支持 markdown 输入
 
 not
 
@@ -175,6 +176,10 @@ not
 * MindManager 收费软件我都不喜欢
 * Freeplane 不喜欢
 * scapple 收费就算了
+
+#### 1.2.6 笔记类
+
+在线 [flomo 浮墨笔记](https://sj.qq.com/appdetail/com.flomo.app) 可以多台设备同步且不收费，适合灵光一闪
 
 ### 1.3【常用】音频类
 
@@ -185,11 +190,11 @@ not
 在线播放：
 
 1. 【win [mac](https://apps.apple.com/cn/app/qq%E9%9F%B3%E4%B9%90-%E5%90%AC%E6%88%91%E6%83%B3%E5%90%AC/id595615424?mt=12)】[QQ 音乐](https://y.qq.com/download/index.html) 或【全平台】【[mac 版](https://apps.apple.com/cn/app/%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90/id944848654?mt=12)】[网易云音乐](https://music.163.com/#/download)
-2. 【全平台】lx-music-desktop [项目主页](https://github.com/lyswhut/lx-music-desktop) | [发行版](https://github.com/lyswhut/lx-music-desktop/releases) 但是需要自行找音乐源
+2. 【全平台】lx-music-desktop [项目主页](https://github.com/lyswhut/lx-music-desktop) | [发行版](https://github.com/lyswhut/lx-music-desktop/releases) 需要找音乐源
 
 备选
 
-* 有梯子可能会更喜欢 【全平台】[Spotify](https://www.spotify.com) 曲库很全，非会员稍有限制
+* 有梯子可能会喜欢 【全平台】[Spotify](https://www.spotify.com) 曲库很全，非会员稍有限制
 * 有本地音乐库存用户 【win】普听音乐。在阿里云盘的加持下很好用，用于打造自己的曲库
 
 **mac 平台**
@@ -200,7 +205,7 @@ not
 
 【mac linux】[foobar2000](https://www.foobar2000.org) 缺少歌词搜索，且差很多意思
 
-在线播放：参考 windows 平台
+在线播放：还是网易和 QQ 音乐那套
 
 **linux 平台**
 
@@ -217,15 +222,15 @@ not
 
 **windows 平台**
 
-1. 本地播放：【全平台】[VLC](https://www.videolan.org) /【win 官方安装版】PotPlayer [官网](https://potplayer.tv/?lang=zh_CN) | [绿色版](https://potplayer.org) 再搭配 HEVC 解码器 [LAVFilters](https://github.com/Nevcairiel/LAVFilters/releases)
+1. 本地播放：【全平台】[VLC](https://www.videolan.org) |【win 官方安装版】PotPlayer [官网](https://potplayer.tv/?lang=zh_CN) | [绿色版](https://potplayer.org) 再搭配 HEVC 解码器 [LAVFilters](https://github.com/Nevcairiel/LAVFilters/releases)
 2. 在线平台：【win】[荐片播放器](https://www.jianpian6.co) 可观看最新电影 +【win mac】[哔哩哔哩客户端](https://app.bilibili.com)
 
 **mac 平台**
 
-1. 本地播放【全平台】[VLC](https://www.videolan.org) /【mac】[INNA](https://iina.io)
-2. 在线平台【mac win】[哔哩哔哩客户端](https://app.bilibili.com) 其实本地播放也很强 / 【mac win】优酷 看视频限时蓝光无广告
+1. 本地播放【全平台】[VLC](https://www.videolan.org) |【mac】[INNA](https://iina.io)
+2. 在线平台【mac win】[哔哩哔哩客户端](https://app.bilibili.com) 其实本地播放也很强 |【mac win】优酷 看视频限时蓝光无广告
 3. 电视直播【mac】[APTV](https://apps.apple.com/cn/app/aptv/id1630403500)
-4. 视频刮削【mac】[网易 Filmly](https://apps.apple.com/cn/app/%E7%BD%91%E6%98%93filmly-%E6%99%BA%E8%83%BD%E5%AA%92%E4%BD%93%E5%BA%93-%E5%85%A8%E8%83%BD%E6%92%AD%E6%94%BE%E5%99%A8/id6553989480?mt=12) / Infuse / Vidhub
+4. 视频刮削【mac】[网易 Filmly](https://apps.apple.com/cn/app/%E7%BD%91%E6%98%93filmly-%E6%99%BA%E8%83%BD%E5%AA%92%E4%BD%93%E5%BA%93-%E5%85%A8%E8%83%BD%E6%92%AD%E6%94%BE%E5%99%A8/id6553989480?mt=12) | Infuse | Vidhub
 
 **linux 平台**
 
@@ -272,7 +277,7 @@ not
 
 **windows 平台**
 
-【win 自荐】[捷键](https://feipig.fun/jiejian) 我当然更推荐自己开发的软件，已经包含了该功能，使用 alt + 空格可以呼出
+【win 自荐】[捷键](https://feipig.fun/jiejian) 自己开发的软件，已经包含了该功能，使用 alt + 空格可以呼出
 
 **mac 平台**
 
@@ -280,7 +285,8 @@ not
 
 not
 
-rubick 还不够完整
+* rubick 还不够完整
+* 【mac】[HapiGo](http://hapigo.com/index.html) 不太完善
 
 **linux 平台**
 
@@ -289,8 +295,6 @@ rubick 还不够完整
 not
 
 albert 安装不上
-
-官网收录：【mac】[HapiGo](http://hapigo.com/index.html)
 
 ### 1.9 阅读类
 
@@ -376,22 +380,6 @@ or
 【全平台】[ArcTime Pro](https://arctime.org/index.html)
 
 官网收录：【win】[水豚鼠标助手](https://shuitunapp.com)
-
-**视频剪辑**
-
-* 【win mac】[剪映](https://www.capcut.cn) - 全能易用的桌面端剪辑软件
-* 【win mac】[必剪](https://bcut.bilibili.cn) - 让创作更有趣
-* 【全平台】[Kdenlive](https://kdenlive.org/zh) - Video Editing Freedom
-* 【全平台】[Shotcut](https://www.shotcut.org) 开源免费的剪辑软件
-* 【win】[Bandicut](https://www.bandicam.cn/bandicut-video-cutter)（班迪剪辑）- 视频无损分割和拼接工具
-
-not
-
-* 【win】[Bandicam](https://www.bandicam.cn) 班迪录屏 10 分种内免费，不过体验很好
-* 【全平台】[Open Broadcaster Software | OBS](https://obsproject.com) 有点卡
-* 【win】Captura 已过时
-
-* 【win】KeyCastOW 颜值差点意思 能够让屏幕实时显示键盘鼠标操作, 适合做视频教程的时候使用, 使用时默认设置会在屏幕右下角显示鼠标键盘的键位，可以自行更改延迟、颜色、效果等。此款软件还包含是否开启 `鼠标动作` 的自定义选项。
 
 - - -
 
@@ -586,9 +574,7 @@ not
 
 *【跨平台】[Espanso](https://espanso.org) 一款文字输入增强工具
 
-官网收录：【win】[Quicker](https://getquicker.net) |【win】[Listary](https://www.listary.net)
-|【win】[Ditto](https://ditto-cp.sourceforge.io) 口碑很高的增强剪切板
-|【win 自荐】[**捷键**](https://feipig.fun/jiejian) 不仅仅是增强快捷键
+官网收录：【win】[Quicker](https://getquicker.net) |【win】[Listary](https://www.listary.net) |【win】[Ditto](https://ditto-cp.sourceforge.io) 口碑很高的增强剪切板 |【win 自荐】[**捷键**](https://feipig.fun/jiejian) 不仅仅是增强快捷键
 
 ### 2.18 文件加密
 
@@ -642,7 +628,28 @@ not
 
 fantastical 免费版限制太多
 
-### 2.27 mac 特有
+### 2.27 视频剪辑
+
+* 【win mac】[剪映](https://www.capcut.cn) - 全能易用的桌面端剪辑软件
+* 【win mac】[必剪](https://bcut.bilibili.cn) - 让创作更有趣
+* 【全平台】[Kdenlive](https://kdenlive.org/zh) - Video Editing Freedom
+* 【全平台】[Shotcut](https://www.shotcut.org) 开源免费的剪辑软件
+* 【win】[Bandicut](https://www.bandicam.cn/bandicut-video-cutter)（班迪剪辑）- 视频无损分割和拼接工具
+* 微软 [Clipchamp](https://app.clipchamp.com) - free video editor & video maker 我当成免费的文本转语音工具用
+
+not
+
+* 【win】[Bandicam](https://www.bandicam.cn) 班迪录屏 10 分种内免费，不过体验很好
+* 【全平台】[Open Broadcaster Software | OBS](https://obsproject.com) 有点卡
+* 【win】Captura 已过时
+* ——————— ฅ՞• •՞ฅ ———————
+* 【win】KeyCastOW 颜值差点意思 能够让屏幕实时显示键盘鼠标操作, 适合做视频教程的时候使用, 使用时默认设置会在屏幕右下角显示鼠标键盘的键位，可以自行更改延迟、颜色、效果等。此款软件还包含是否开启 `鼠标动作` 的自定义选项。
+
+### 2.28 音频编辑
+
+[Audacity](https://www.audacityteam.org/) 是一个易用、多轨音频录制和编辑的自由、开源、跨平台音乐软件。可以在 Windows, Mac OS X, GNU/Linux 和其他操作系统上使用。
+
+### 2.29 mac 特有
 
 #### 鼠标翻转
 
@@ -656,7 +663,7 @@ fantastical 免费版限制太多
 
 [键指如飞](https://www.better365.cn/FlyKey.html) 一键展示 Mac 快捷键
 
-### 2.28 windows 特有
+### 2.30 windows 特有
 
 #### 空格预览文件
 
@@ -734,7 +741,7 @@ not
 
 * [乐播投屏](https://www.lebo.cn) 太臃肿且要**注意远程屏幕共享诈骗**
 
-### 3.5 文件转换
+### 3.5 格式转换
 
 * 【精品 win 安装版】[格式工厂](http://www.pcgeshi.com/index.html) 全功能转换，不得不说还得是 windows 版的老牌和强大，实属装机必备 | [格式工厂 mac 版](https://apps.apple.com/cn/app/%E6%A0%BC%E5%BC%8F%E5%B7%A5%E5%8E%82/id6443540458?mt=12)
 * 【全平台】[HandBrake](https://handbrake.fr) 视频转换
