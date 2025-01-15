@@ -407,6 +407,18 @@ motion:
   enable: true
   async: true
 
+# Progress bar in the top during page loading.
+# For more information: https://github.com/CodeByZach/pace
+pace:
+  enable: true
+  # All available colors:
+  # black | blue | green | orange | pink | purple | red | silver | white | yellow
+  color: blue
+  # All available themes:
+  # big-counter | bounce | barber-shop | center-atom | center-circle | center-radar | center-simple
+  # corner-indicator | fill-left | flat-top | flash | loading-bar | mac-osx | material | minimal
+  theme: center-simple
+
 # Canvas ribbon 丝带效果
 # For more information: https://github.com/hustcc/ribbon.js
 canvas_ribbon:

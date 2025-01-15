@@ -291,7 +291,7 @@ not
 * [IT 之家](https://sj.qq.com/appdetail/com.ruanmei.ithome) 精选泛科技新闻，即时分享行业新闻动态
 * [汽车之家](https://sj.qq.com/appdetail/com.cubic.autohome) 汽车资讯论坛
 * ——————— ฅ՞• •՞ฅ ———————
-* [Agr Reader](https://www.agrreader.xyz) 不好用只能做备选，看来 rss 阅读器还是苹果平台的 reeder
+* [Agr Reader](https://www.agrreader.xyz/zh) 不好用只能做备选，看来 rss 阅读器还是苹果平台的 reeder
 
 not
 
