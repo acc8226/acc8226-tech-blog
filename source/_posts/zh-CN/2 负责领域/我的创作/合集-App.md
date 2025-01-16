@@ -51,7 +51,7 @@ categories: 我的创作
 
 ## 1 装机必备
 
-### 0 安全类【重要】
+### 1.0 安全类【重要】
 
 <a href="https://sj.qq.com/appdetail/com.hicorenational.antifraud" style="color: red;">国家反诈中心</a> 作为装机必备！防诈骗第一
 
@@ -67,7 +67,7 @@ categories: 我的创作
 
 360 防骚扰大师 不知道现在有没有下架
 
-### 1 密码认证【重要】
+### 1.1 密码认证【重要】
 
 #### 安卓
 
@@ -90,7 +90,7 @@ not
 
 * [Google Authenticator](https://google-authenticator.en.softonic.com/android) 水土不服
 
-### 2 密码管理
+### 1.2 密码管理
 
 #### 通用
 
@@ -98,7 +98,7 @@ Bitwarden【已适配安卓平板】[Github 版](https://github.com/bitwarden/an
 
 选择 f-droid 和 普通版均可，但我一般会选择 f-droid，因为反正国内网络环境堪忧
 
-### 3 邮件收发
+### 1.3 邮件收发
 
 #### 通用
 
@@ -235,9 +235,8 @@ not
 1. [得到](https://sj.qq.com/appdetail/com.luojilab.player) 免费资源还行，除了体积大
 1. [云听](https://sj.qq.com/appdetail/com.shinyv.cnr) 央视的资源还是很丰富的
 1. [帆书（原樊登读书）](https://sj.qq.com/appdetail/io.dushu.fandengreader) 稍有限免资源，但旧手机有点卡
-1. 【本地】[讯飞有声](https://sj.qq.com/appdetail/com.iflytek.readassistant) 主打播放本地图书和 pdf、doc、mobi 格式的文本，是目前的一个本地解决方案，非会员有是时长限制
 
-可选
+备用
 
 * [微信听书](https://sj.qq.com/appdetail/com.tencent.wehear) 活动玩法多，可以换取收听时长
 * [番茄畅听](https://sj.qq.com/appdetail/com.xs.fm) 免费资源较多，和番茄免费小说部分功能重合了
@@ -245,6 +244,8 @@ not
 * [蜻蜓FM](https://sj.qq.com/appdetail/fm.qingting.qtradio) 有些广告
 * ——————— ฅ՞• •՞ฅ ———————
 * [极客时间](https://sj.qq.com/appdetail/org.geekbang.geekTime) 程序员才需要
+* ——————— ฅ՞• •՞ฅ ———————
+* 【本地】[讯飞有声](https://sj.qq.com/appdetail/com.iflytek.readassistant) 可播放 pdf、doc、mobi 格式的文本，是目前的一个本地解决方案，非会员有是时长限制
 
 not
 
@@ -271,7 +272,7 @@ not
 
 [倒数日](https://app.ipad.ly/idays) 倒计时神器, 可设置过期日提醒，还有各种纪念日提醒。多端同步，除了苹果端，还支持安卓端还有手表端
 
-### 8 资讯类
+### 1.8 资讯类
 
 #### 安卓
 
@@ -806,7 +807,7 @@ not
 
 * [X 浏览器](https://sj.qq.com/appdetail/com.mmbox.xbrowser) 只有 1M 大小，占用极少的资源，启动速度飞快。其中扫描二维码会自动复制到粘贴功能很好用
 * Firefox 火狐浏览器 [应用宝版](https://sj.qq.com/appdetail/org.mozilla.firefox) | [国外商店版](https://firefox.en.uptodown.com/android)
-* [微软 Edge](https://sj.qq.com/appdetail/com.microsoft.emmx)
+* [微软 Edge](https://sj.qq.com/appdetail/com.microsoft.emmx) 大声朗读功能很强大
 
 not
 
