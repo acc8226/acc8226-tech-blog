@@ -13,8 +13,8 @@ comments: false
 - - -
 
 * 邮箱：[acc8226@qq.com](mailto:acc8226@qq.com)
-* 软件工程专业
-* 曾经：手机安卓、Java 后台开发
+* 软件工程（本科）专业
+* 曾经安卓手机应用开发、Java 后台开发
 
 - - -
 

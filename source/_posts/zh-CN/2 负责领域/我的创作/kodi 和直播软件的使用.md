@@ -14,12 +14,12 @@ wtv 工具箱- 检测直播源的可用性和速度
 
 直播源
 
-* [Kodi IPTV m3u8直播源下载](http://www.kodiplayer.cn/movie/2898.html) 2024年最新m3u直播源 - 影视资源 - Kodi中文网
+* [Kodi IPTV m3u8 直播源下载](http://www.kodiplayer.cn/movie/2898.html) 2024年最新m3u直播源 - 影视资源 - Kodi中文网
 * [直播源-michael的小站](http://michael007js.cn/news/news.php?class2=184)
 * [iptv-org/iptv: Collection of publicly available IPTV channels from all over the world](https://github.com/iptv-org/iptv)
 * [Ftindy/IPTV-URL](https://github.com/Ftindy/IPTV-URL)
-* [IPTV直播源汇总，收集于Github，内含IPV6直播源地址 – OZABC](https://www.ozabc.com/free/534647.html)
-* [在美国海外看CCTV5最简单方法 | 美国1888网 Yibababa.com](https://yibababa.com/tv/list.html)
+* [IPTV直播源汇总，收集于 Github，内含IPV6直播源地址 – OZABC](https://www.ozabc.com/free/534647.html)
+* [在美国海外看 CCTV5 最简单方法 | 美国1888网 Yibababa.com](https://yibababa.com/tv/list.html)
 * [Adult IPTV Playlist](https://adultiptv.net/) - Free XXX IPTV Channels - Adult IPTV - Free XXX IPTV Channels - Porn Playlist
 * https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u
 

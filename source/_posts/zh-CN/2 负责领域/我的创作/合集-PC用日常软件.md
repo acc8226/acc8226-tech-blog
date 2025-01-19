@@ -16,8 +16,8 @@ categories: 我的创作
 
 #### 1.0.1 安全类
 
-* 【win 安装版】[360 安全卫士极速版](https://weishi.360.cn) 或 （[微软电脑管家](https://pcmanager.microsoft.com/zh-cn) + [火绒安全软件](https://www.huorong.cn)）
-* 【mac】[腾讯柠檬清理（腾讯电脑管家 for mac）](https://lemon.qq.com)
+* 【win 安装版】[360 安全卫士极速版](https://weishi.360.cn) |（[微软电脑管家](https://pcmanager.microsoft.com/zh-cn) + [火绒安全软件](https://www.huorong.cn)）
+* 【mac】[腾讯柠檬清理](https://lemon.qq.com)-原腾讯电脑管家 for mac
 
 #### 1.0.2 浏览器
 
@@ -34,7 +34,7 @@ categories: 我的创作
 
 #### 1.1.0【常用】压缩解压
 
-* 【win 安装版】[PeaZip](https://peazip.github.io) 智能解压很好用 | [Bandizip](https://www.bandisoft.com/bandizip)
+* 【win 安装版】[PeaZip](https://peazip.github.io) 有智能解压 | [Bandizip](https://www.bandisoft.com/bandizip) 新版有广告
 * 【mac [商店版](https://apps.apple.com/cn/app/the-unarchiver/id425424353?mt=12)】[The Unarchiver](https://theunarchiver.com) 或【mac [商店版](<https://apps.apple.com/cn/app/fastzip-%E4%B8%93%E4%B8%9A%E7%9A%84-rar-7z-zip-%E8%A7%A3%E5%8E%8B%E7%BC%A9%E5%B7%A5%E5%85%B7/id1565629813?mt=12)>)】[FastZip](https://www.better365.cn/fastzip.html)
 * 【linux】自带命令
 
@@ -120,7 +120,7 @@ mac 版迅雷其实也不错，不过必须去官网下载才是完整版，目�
 
 在线平台我推荐【[mac 版](https://apps.apple.com/cn/app/%E8%85%BE%E8%AE%AF%E6%96%87%E6%A1%A3/id1370780836)】[腾讯文档](https://docs.qq.com)和[金山文档](https://www.kdocs.cn)，非常适合文档分享。但千万记得加水印和是设置只读访问权限，防止资料泄漏和被非法买卖
 
-linux 除了 wps 和 LibreOffice，可以安装 [WinApps for linux](https://nowsci.com/winapps) | [github 项目地址](https://github.com/Fmstrat/winapps) 安装并使用 office。
+linux 除了 WPS 和 LibreOffice，可以安装 [WinApps for linux](https://nowsci.com/winapps) | [github 项目地址](https://github.com/Fmstrat/winapps) 安装并使用 office。
 
 怀旧经典：WPS 2013
 
@@ -175,7 +175,7 @@ not
 * GitMind 功能不够强大，貌似不能从 md 中导入
 * MindManager 收费软件我都不喜欢
 * Freeplane 不喜欢
-* scapple 收费就算了
+* Scapple 收费就算了
 
 #### 1.2.6 笔记类
 
@@ -267,7 +267,7 @@ not
 备用
 
 * 【全平台】[ToDesk](https://www.todesk.com/download.html)
-* [魔控](https://monect.com/) 除了远程控制电脑，还能模拟游戏手柄
+* [魔控](https://monect.com) 除了远程控制电脑，还能模拟游戏手柄
 
 [如何连接 windows 电脑](https://learn.microsoft.com/zh-cn/windows-server/remote/remote-desktop-services/clients/remote-desktop-clients)
 
@@ -420,9 +420,7 @@ not
 
 ### 2.4 TTS 文字转语音软件
 
-【win】[tts-vue: 🎤 微软语音合成工具](https://gitee.com/LGW_space/tts-vue)，使用 Electron + Vue + ElementPlus + Vite 构建，将文字转为语音 MP3。
-
-注：edge 其实也有网页 和 pdf 朗读能力，也能好用，如果不需要转语言的话还是很有用的。
+用 edge 的大声朗读或者使用网页版的转语音服务即可
 
 ### 2.5 文件搜索
 
@@ -501,11 +499,7 @@ or
 
 **windows 平台**
 
-【win】[极客卸载 Geek Uninstaller](https://geekuninstaller.com/download) 简单清爽
-
-or
-
-【win】[HiBitUninstaller](https://www.hibitsoft.ir/Uninstaller.html) 体积小巧+卸载功能强大
+【win 绿色版】[极客卸载 Geek Uninstaller](https://geekuninstaller.com/download) 简单清爽 |【win 绿色版】[HiBitUninstaller](https://www.hibitsoft.ir/Uninstaller.html) 体积小巧+卸载功能强大
 
 not
 
@@ -520,7 +514,7 @@ not
 
 * 【mac linux】[CCleaner for mac](https://www.ccleaner.com/zh-cn/ccleaner-mac) 版目前免费版功能有限
 * 【mac】[CleanMyMac X](https://www.cleanmymac.cn) 付费
-* 【mac】[app cleaner & unstall](https://nektony.com/mac-app-cleaner) 付费
+* 【mac】[App Cleaner & Uninstaller](https://nektony.com/mac-app-cleaner) 付费
 
 **linux 平台**
 

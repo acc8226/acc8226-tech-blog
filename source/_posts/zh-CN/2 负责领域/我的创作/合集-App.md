@@ -335,7 +335,8 @@ not
 * ——————— ฅ՞• •՞ฅ ———————
 * 在线 bilibili 哔哩哔哩国际版 [Apkpure 版](https://apkpure.com/cn/bilibili-cn/com.bilibili.app.in/download) | [uptodown 版](https://com-bilibili-app-in.en.uptodown.com/android) 因为清爽
 * [西瓜视频](https://sj.qq.com/appdetail/com.ss.android.article.video) 广告较少，资源丰富
-* [网易爆米花（原名 网易 Filmly）](https://sj.qq.com/appdetail/com.netease.filmlytv) 视频刮削神器，暂时免费
+* [网易爆米花](https://sj.qq.com/appdetail/com.netease.filmlytv) 视频刮削神器，暂时免费
+* [荐片 app](https://www.jianpian9.com)
 
 可选
 
@@ -539,13 +540,14 @@ not
 * [牛客](https://sj.qq.com/appdetail/com.nowcoder.app.florida) 和上面提到的力扣网类似，面试 + 学算法
 * [稀土掘金](https://sj.qq.com/appdetail/com.daimajia.gold) 很清爽
 * ——————— ฅ՞• •՞ฅ ———————
+* [中国大学 MOOC](https://sj.qq.com/appdetail/com.netease.edu.ucmooc)
+* [学堂在线](https://sj.qq.com/appdetail/com.xuetangx.mobile)
+* ——————— ฅ՞• •՞ฅ ———————
 * [51 CTO](https://sj.qq.com/appdetail/com.cto51.student)
 * [慕课网](https://sj.qq.com/appdetail/cn.com.open.mooc) 主打 IT 课程，且有一部分免费资源可以离线下载
-* [知乎知学堂](https://sj.qq.com/appdetail/com.zhihu.zhixuetang.android) 无广告
-* [希赛网](https://sj.qq.com/appdetail/com.xuesaieducation)
-* [学堂在线](https://sj.qq.com/appdetail/com.xuetangx.mobile)
-* [中国大学 MOOC](https://sj.qq.com/appdetail/com.netease.edu.ucmooc)
 * [网易云课堂](https://sj.qq.com/appdetail/com.netease.edu.study)
+* [希赛网](https://sj.qq.com/appdetail/com.xuesaieducation)
+* [知乎知学堂](https://sj.qq.com/appdetail/com.zhihu.zhixuetang.android) 无广告
 
 not
 
@@ -998,9 +1000,11 @@ APTV
 * [贝锐蒲公英户端](https://pgy.oray.com/download) 向日葵家族，可实现快速组网
 * [小度](https://sj.qq.com/appdetail/com.baidu.duer.superapp) 小度打造的一款智能助手APP，能够连接多款百度旗下智能设备及合作设备，不得不用
 
-## 35 考公考编
+## 35 题库刷题
 
 ### 通用
+
+考公考编
 
 * 【强烈推荐】[公考雷达](https://sj.qq.com/appdetail/com.maidu.gkld) 选岗神器
 * ——————— ฅ՞• •՞ฅ ———————
@@ -1010,6 +1014,11 @@ APTV
 * ——————— ฅ՞• •՞ฅ ———————
 * [疯狂刷题](https://sj.qq.com/appdetail/com.yaerxing.fkst) 汇聚大量包括了直至大学、考研优题、真题、好题
 * [一起公考](https://sj.qq.com/appdetail/com.zhangshangyiqi.civilserviceexam) 免登录就能刷很多题，还有少量免费视频课
+
+软考
+
+* [上学吧](https://sj.qq.com/appdetail/com.shangxueba.open.sxb) 考题丰富
+* [希赛网](https://sj.qq.com/appdetail/com.xuesaieducation) 内容稍杂
 
 not
 

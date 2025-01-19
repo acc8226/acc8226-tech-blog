@@ -26,7 +26,7 @@ categories: 我的创作
 
 ## 1. build tool 构建工具
 
-### Web 构建工具
+### 1.1 Web 构建工具
 
 * [Parcel](https://parceljs.org) 以其零配置和快速的构建速度而受到开发者的喜爱，适合快速开发。
 * [Turbo](https://turbo.build) Turbo is an incremental bundler and build system optimized for JavaScript and TypeScript, written in Rust.
@@ -35,13 +35,13 @@ categories: 我的创作
 
 <!-- more -->
 
-### Java 应用构建工具
+### 1.2 Java 应用构建工具
 
-#### Ant
+#### 1.2.1 Ant
 
 [Ant](https://ant.apache.org) 在早期的 Java 项目中非常流行，它被设计用来驱动软件项目的构建过程，类似于 Make 工具，但它使用 XML（Extensible Markup Language）来描述构建过程和依赖关系，而不是传统的 Makefile。
 
-#### Maven
+#### 1.2.2 Maven
 
 [Maven](https://maven.apache.org) 是一个构建工具，主要用于 Java 应用程序。由 Apache 软件基金会维护，它使用一个名为 POM（Project Object Model）的 XML 文件来描述项目的构建过程、依赖关系和其他配置信息。
 
@@ -55,7 +55,7 @@ categories: 我的创作
 
 [mvnd](https://github.com/apache/maven-mvnd) - embeds Maven (so there is no need to install Maven separately).
 
-#### Gradle
+#### 1.2.3 radle
 
 [Gradle](https://gradle.org) 是一个开源的自动化构建系统，它被设计用来支持多语言和多平台的软件项目，尤其是 Java 项目。Gradle 是用 Groovy 和 Kotlin 编写的，它提供了一个基于 Apache Ant 和 Maven 的强大而灵活的构建自动化功能。
 
@@ -78,7 +78,7 @@ repositories {
 
 ## 2. DB 数据库
 
-### 各类数据库
+### 2.1 各类数据库
 
 * [Apache Derby](https://db.apache.org/derby/index.html)
 * [H2 Database](https://www.h2database.com/html/main.html)
@@ -87,11 +87,11 @@ repositories {
 * [MySQL](https://www.mysql.com/)
 * [PostgreSQL](https://www.postgresql.org) | [下载](https://www.postgresql.org/download/)
 
-### 数据库设计
+### 2.2 数据库设计
 
 【全平台】[PDManer](https://gitee.com/robergroup/pdmaner/releases)
 
-### 数据库管理
+### 2.3 数据库管理
 
 * 【全平台 付费】[DataGrip](https://www.jetbrains.com/datagrip)因 为我有 Jetbrain 开源认证，暂时选用
 * 【全平台 免费】[Navicat Premium Lite](https://www.navicat.com.cn/download/navicat-premium-lite) 毕竟免费，识别多种数据库，包括本地 sqlite 文件
@@ -262,7 +262,7 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
 ## 9. Network tool 网络工具
 
-### http 调试
+### 9.1 http 调试
 
 * 【全平台】[httpie 桌面版](https://httpie.io/download) | [Releases](https://github.com/httpie/desktop/releases) HTTPie 有桌面版和 cli 版，cross-platform API testing client for humans. Painlessly test REST, GraphQL, and HTTP APIs. 
 * 【mac】[RapidAPI](https://paw.cloud) 颜值功能都在线
@@ -278,11 +278,11 @@ not
 * [Postcat](https://postcat.com) 功能还不太完善
 * [Postman](https://www.postman.com) 不好用 必须登录
 
-### mqtt 调试
+### 9.2 mqtt 调试
 
 【全平台】[mqttx](https://mqttx.app)
 
-### Packet capture 抓包
+### 9.3 Packet capture 抓包
 
 * 【win mac】[Charles](https://www.charlesproxy.com) is an HTTP proxy / HTTP monitor / Reverse Proxy
 * 【win mac】[Fiddler](https://www.telerik.com/fiddler)
@@ -303,13 +303,13 @@ not
 
 ## 11. Redis
 
-### Redis 数据库
+### 11.1 Redis 数据库
 
 Redis is an in-memory database that persists on disk. The data model is key-value, but many different kind of values are supported: Strings, Lists, Sets, Sorted Sets, Hashes, Streams, HyperLogLogs. 
 
 [下载](https://redis.io/download) | [tporadowski/redis: Native port of Redis for Windows](https://github.com/tporadowski/redis) 
 
-### QuickRedis
+### 11.2 QuickRedis
 
 一款国产开源、免费、功能强大的 Redis 可视化管理工具
 
@@ -322,7 +322,7 @@ Redis is an in-memory database that persists on disk. The data model is key-valu
 
 ## 13.【常用】revision control 版本控制
 
-### Git
+### 13.1 Git
 
 macOS 和 linux 系统一般都自带 git, 如果想要体验最新版, 可以去 [Git 官网](https://git-scm.com)下载体验。通常更推荐 [Git 镜像地址](https://registry.npmmirror.com/binary.html?path=git-for-windows)
 
@@ -332,7 +332,7 @@ VSCode 和 IDEA 会自带 Git 功能。特别的如果是 windows 系统推荐�
 
 【linux】[sourcegit](https://github.com/sourcegit-scm/sourcegit/releases) 或者 gnome 家的 [Gitg](https://wiki.gnome.org/Apps/Gitg) 或者 KDE 家的 [kommit](https://apps.kde.org/zh-cn/kommit/)
 
-### SVN
+### 13.2 SVN
 
 【 win 精品软件 安装版】TortoiseSVN [下载](https://tortoisesvn.net/downloads.html) - 一款 svn 增强工具，是我离不开 windows 的一个重要原因
 
@@ -434,7 +434,7 @@ MSYS2 还是一组工具和库，为您提供了一个易于使用的环境，�
 
 ## 17. shell 环境
 
-### 【跨平台】PowerShell
+### 17.1【跨平台】PowerShell
 
 [PowerShell](https://learn.microsoft.com/zh-cn/powershell/scripting/overview)
 
@@ -445,7 +445,7 @@ MSYS2 还是一组工具和库，为您提供了一个易于使用的环境，�
 
 [PowerShell-7.4.0-win-x64.zip](https://github.com/PowerShell/PowerShell/releases/download/v7.4.0/PowerShell-7.4.0-win-x64.zip)
 
-### 【mac linux】zsh
+### 17.2【mac linux】zsh
 
 mac 已经将 zsh 取代 bash 作为默认 shell 了
 
