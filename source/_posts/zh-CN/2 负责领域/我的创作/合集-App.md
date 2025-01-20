@@ -277,7 +277,6 @@ not
 #### 安卓
 
 * [要知](https://sj.qq.com/appdetail/com.ruanmei.yaozhi) 暂用它听新闻用，目前定制项不太多，以后我可能会换成 ai 收集 + 听新闻了
-* [北京时间](https://sj.qq.com/appdetail/com.btime.bjtime) 投诉用，顺便看看和听听新闻
 
 备用
 
@@ -293,6 +292,8 @@ not
 * [汽车之家](https://sj.qq.com/appdetail/com.cubic.autohome) 汽车资讯论坛
 * ——————— ฅ՞• •՞ฅ ———————
 * [Agr Reader](https://www.agrreader.xyz/zh) 不好用只能做备选，看来 rss 阅读器还是苹果平台的 reeder
+* ——————— ฅ՞• •՞ฅ ———————
+* [北京时间](https://sj.qq.com/appdetail/com.btime.bjtime) 地方投诉用，顺便看看和听听新闻
 
 not
 
@@ -522,7 +523,8 @@ not
 
 ### 安卓
 
-1. [多邻国](https://sj.qq.com/appdetail/com.duolingo) 多国语言学习
+* [多邻国](https://sj.qq.com/appdetail/com.duolingo) 多国语言学习
+* [中国大学 MOOC](https://sj.qq.com/appdetail/com.netease.edu.ucmooc) | [学堂在线](https://sj.qq.com/appdetail/com.xuetangx.mobile) 大学慕课平台
 
 可选
 
@@ -539,9 +541,6 @@ not
 * [LeetCode](https://sj.qq.com/appdetail/com.lingkou.leetcode) 学算法用 至少没广告
 * [牛客](https://sj.qq.com/appdetail/com.nowcoder.app.florida) 和上面提到的力扣网类似，面试 + 学算法
 * [稀土掘金](https://sj.qq.com/appdetail/com.daimajia.gold) 很清爽
-* ——————— ฅ՞• •՞ฅ ———————
-* [中国大学 MOOC](https://sj.qq.com/appdetail/com.netease.edu.ucmooc)
-* [学堂在线](https://sj.qq.com/appdetail/com.xuetangx.mobile)
 * ——————— ฅ՞• •՞ฅ ———————
 * [51 CTO](https://sj.qq.com/appdetail/com.cto51.student)
 * [慕课网](https://sj.qq.com/appdetail/cn.com.open.mooc) 主打 IT 课程，且有一部分免费资源可以离线下载
@@ -1014,11 +1013,17 @@ APTV
 * ——————— ฅ՞• •՞ฅ ———————
 * [疯狂刷题](https://sj.qq.com/appdetail/com.yaerxing.fkst) 汇聚大量包括了直至大学、考研优题、真题、好题
 * [一起公考](https://sj.qq.com/appdetail/com.zhangshangyiqi.civilserviceexam) 免登录就能刷很多题，还有少量免费视频课
+* [一起公考AI课](https://sj.qq.com/appdetail/com.zhihu.gongkao.android)
 
 软考
 
 * [上学吧](https://sj.qq.com/appdetail/com.shangxueba.open.sxb) 考题丰富
 * [希赛网](https://sj.qq.com/appdetail/com.xuesaieducation) 内容稍杂
+
+培训
+
+[橙啦](https://sj.qq.com/appdetail/com.xcgl.chengla) 服务年轻人的高品质学习 App
+[库课网校](https://sj.qq.com/appdetail/com.kuke)
 
 not
 
