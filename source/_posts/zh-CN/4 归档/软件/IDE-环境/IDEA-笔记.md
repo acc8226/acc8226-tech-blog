@@ -349,8 +349,6 @@ file --> Invalidate Caches /Restart. --> Invalidate and Restart
 
 ## 参考
 
-IntelliJ IDEA_ReferenceCard <https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf>
-
-伯乐在线 > 代码生成利器：IDEA 强大的 Live Templates ttp://blog.jobbole.com/110607/
-
-JetBrains 官方发布快捷键技巧：IntelliJ IDEA 中，你完全不需要鼠标的 10 种情况 - IT 之家 <https://www.ithome.com/0/573/291.htm>
+* IntelliJ IDEA_ReferenceCard <https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf>
+* 伯乐在线 > 代码生成利器：IDEA 强大的 Live Templates http://blog.jobbole.com/110607
+* JetBrains 官方发布快捷键技巧：IntelliJ IDEA 中，你完全不需要鼠标的 10 种情况 - IT 之家 <https://www.ithome.com/0/573/291.htm>

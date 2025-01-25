@@ -71,7 +71,8 @@ categories: 我的创作
 
 #### 安卓
 
-Aegis Authenticator [官网](https://getaegis.app) | [下载地址](https://github.com/beemdevelopment/Aegis/releases) 需定期做好密码备份导出工作
+1. Aegis Authenticator [官网](https://getaegis.app) | [下载地址](https://github.com/beemdevelopment/Aegis/releases) 需定期做好密码备份导出工作
+2. [国家网络身份认证](https://sj.qq.com/appdetail/cn.cyberIdentity.certification) 用于互联网账号联合登录
 
 not
 
@@ -84,7 +85,8 @@ not
 #### iPhone
 
 1. 暂时选用 微软 Authenticator
-2. [QQ 安全中心](https://sj.qq.com/appdetail/com.tencent.token)
+1. [国家网络身份认证](https://sj.qq.com/appdetail/cn.cyberIdentity.certification) 用于互联网账号联合登录
+1. [QQ 安全中心](https://sj.qq.com/appdetail/com.tencent.token)
 
 not
 
@@ -913,13 +915,13 @@ never
 
 ### iPhone
 
-钱袋子 曾经 2014年 很火的货币基金
+钱袋子 曾经 2014 年很火的货币基金
 
-## 25.匿名应用
+## 25 匿名应用
 
 [阿里小号](https://aliqin.aliyuncs.com/#/xiaohao)、[联通小号](https://sj.qq.com/appdetail/com.glhh.chinaunicom.wxh) 一段时间不用，要记得及时续费
 
-## 26.政务
+## 26 政务
 
 ### 安卓和 iOS
 
@@ -929,45 +931,45 @@ never
 
 * [北京公积金](https://sj.qq.com/appdetail/cn.gov.bjgjj.gjjapp) 北京专用。网站其实挺强大，一般 app 甚至都用不到
 
-## 27.美食类
+## 27 美食类
 
 ### iPhone
 
 * [美食杰](https://sj.qq.com/appdetail/com.jesson.meishi)
 * [下厨房](https://sj.qq.com/appdetail/com.xiachufang)
 
-## 28.新媒体运营
+## 28 新媒体运营
 
 ### 通用
 
 [猫眼专业版](https://sj.qq.com/appdetail/com.sankuai.moviepro) 看电影实时票房用
 
-## 29.拍照和身份证扫描工具
+## 29 拍照和身份证扫描工具
 
 [白描](https://sj.qq.com/appdetail/com.uzero.baimiao) 可以免费制作身份证正反面 A4 扫描件
 
 备用
 
-[白描证件照](https://sj.qq.com/appdetail/com.uzero.cn.zhengjianzhao) 基本够用。支持多种尺寸证件照的制作以及自定义尺寸证件照的制作，有次数限制，且 5 寸和 6 寸照片没有将纸张发挥到极致
-
-not
+[白描证件照](https://sj.qq.com/appdetail/com.uzero.cn.zhengjianzhao) 基本够用。支持多种尺寸证件照的制作以及自定义尺寸证件照的制作，有次数限制，且 5 寸和 6 寸照片都没有填满空白处
 
 * 扫描宝 印象笔记家的，动不动就要会员，差评
 * 光影证件照 目前不太完善
 
-## 30.绘画手记
+## 30 标注/绘图/笔记
 
 ### 安卓平板
 
 * [Canva 可画](https://sj.qq.com/appdetail/cn.canva.editor)
 * [Notein 笔记](https://sj.qq.com/appdetail/com.orion.notein)
+* [BookxNote](http://www.bookxnote.com) 笔记
 
 ### iOS
 
-* Goodnotes [官网](https://www.goodnotes.com/zh-cn) 能帮你补全句子的笔记本
+* [Goodnotes](https://www.goodnotes.com/zh-cn)
 * [Notability: 笔记, PDF](https://apps.apple.com/cn/app/notability-%E7%AC%94%E8%AE%B0-pdf/id360593530) 标注和手写笔记, 记事本, 笔记本
+* MarginNote 笔记
 
-## 31.电视直播
+## 31 电视直播
 
 ### 安卓
 
@@ -981,12 +983,12 @@ IPTV apkpure 版 作者 Alexander Sofronov
 
 APTV
 
-## 32.远程控制
+## 32 远程控制
 
 * Kore 一个用于 Kodi 系统/程序 的 远程遥控器
 * [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer) 操控树莓派用
 
-## 33.投屏
+## 33 投屏
 
 [AlookDLNA](https://alookweb.com/AlookDLNA.apk) 可以投屏到 电视 或者 安卓手机
 

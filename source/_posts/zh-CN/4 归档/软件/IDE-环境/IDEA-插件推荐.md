@@ -114,6 +114,5 @@ MyBatisX - IntelliJ IDEA Plugin | Marketplace <https://plugins.jetbrains.com/plu
 
 ## 参考
 
-只需三分钟让你的 JetBrains 变身中文界面 - 数码荔枝 <https://www.lizhi.io/blog/41066015>
-
-Java 代码规范与质量检测插件 SonarLint - 废物大师兄 - 博客园 <https://www.cnblogs.com/cjsblog/p/10735800.html>
+* 只需三分钟让你的 JetBrains 变身中文界面 - 数码荔枝 <https://www.lizhi.io/blog/41066015>
+* Java 代码规范与质量检测插件 SonarLint - 废物大师兄 - 博客园 <https://www.cnblogs.com/cjsblog/p/10735800.html>

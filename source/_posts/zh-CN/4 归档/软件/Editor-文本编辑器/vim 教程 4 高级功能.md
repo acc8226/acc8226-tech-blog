@@ -21,13 +21,13 @@ vim 1.txt 2.txt
 ### 进入 vim 后打开新文件
 
 * 命令行模式下输入 `:e 3.txt` 打开新文件 3.txt
-* 命令行模式下输入 `:e#` 回到前一个文件
-* 命令行模式下输入 `:ls`可以列出以前编辑过的文档
-* 命令行模式下输入 `:b 2.txt`（或者编号）可以直接进入文件 2.txt 编辑
-* 命令行模式下输入 `:bd 2.txt`（或者编号）可以删除以前编辑过的列表中的文件项目
-* 命令行模式下输入 `:e! 4.txt`，新打开文件 4.txt，放弃正在编辑的文件
-* 命令行模式下输入 `:f` 显示正在编辑的文件名
-* 命令行模式下输入 `:f new.txt`，改变正在编辑的文件名字为 new.txt
+* `:e#` 回到前一个文件
+* `:ls`可以列出以前编辑过的文档
+* `:b 2.txt`（或者编号）可以直接进入文件 2.txt 编辑
+* `:bd 2.txt`（或者编号）可以删除以前编辑过的列表中的文件项目
+* `:e! 4.txt`，新打开文件 4.txt，放弃正在编辑的文件
+* `:f` 显示正在编辑的文件名
+* `:f new.txt`，改变正在编辑的文件名字为 new.txt
 
 <!-- more -->
 
@@ -74,7 +74,7 @@ vim 可以在一个界面里打开多个窗口进行编辑，这些编辑窗口�
 * 普通模式下`Ctrl+w -` 减小视窗的高度
 * 普通模式下`Ctrl+w +` 增加视窗的高度
 
-### 2.3.2 视窗操作练习
+### 视窗操作练习
 
 打开练习文件
 
@@ -134,6 +134,12 @@ vim -x file1
 最后来一张大图, 课程就到此位置
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-285f0da34f58360a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+## 流行的新一代产品 neovim
+
+[GitHub - neovim/neovim](https://github.com/neovim/neovim): Vim-fork focused on extensibility and usability
+
+[NvChad](https://nvchad.com/)
 
 ## 参考
 

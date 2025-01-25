@@ -132,6 +132,7 @@ linux 除了 WPS 和 LibreOffice，可以安装 [WinApps for linux](https://nows
 
 * 阅读器 【win 绿色版】[SumatraPDF](https://www.sumatrapdfreader.org) is a PDF, ePub, MOBI, CHM, XPS, DjVu, CBZ, CBR reader for Windows 提供安装版和绿色版，小巧好用
 * 编辑器 【win】[PDFgear](https://www.pdfgear.com/download)
+* PDF 标注做笔记 [BookxNote](http://www.bookxnote.com) 非常好用
 
 **mac 平台**
 
@@ -568,7 +569,7 @@ not
 
 *【跨平台】[Espanso](https://espanso.org) 一款文字输入增强工具
 
-官网收录：【win】[Quicker](https://getquicker.net) |【win】[Listary](https://www.listary.net) |【win】[Ditto](https://ditto-cp.sourceforge.io) 口碑很高的增强剪切板 |【win 自荐】[**捷键**](https://feipig.fun/jiejian) 不仅仅是增强快捷键
+官网收录：【win】[Quicker](https://getquicker.net) |【win】[Listary](https://www.listary.net) |【win 自荐】[**捷键**](https://feipig.fun/jiejian) 不仅仅是增强快捷键
 
 ### 2.18 文件加密
 
@@ -642,23 +643,27 @@ not
 
 [Audacity](https://www.audacityteam.org/) 是一个易用、多轨音频录制和编辑的自由、开源、跨平台音乐软件。可以在 Windows, Mac OS X, GNU/Linux 和其他操作系统上使用。
 
-### 2.29 mac 特有
+### 2.29 增强剪切板
 
-#### 鼠标翻转
+【全平台】[EcoPaste](https://ecopaste.cn) |【win】[Ditto](https://ditto-cp.sourceforge.io)
+
+### 2.30 mac 特有
+
+#### 2.30.1 鼠标翻转
 
 [BetterAndBette](https://www.better365.cn/bab2.html) 
 
-#### 电源管理
+#### 2.30.2 电源管理
 
 [AlDente](https://apphousekitchen.com) 电池🔋负载限制器
 
-#### 键指如飞 FlyKey
+#### 2.30.3 键指如飞 FlyKey
 
 [键指如飞](https://www.better365.cn/FlyKey.html) 一键展示 Mac 快捷键
 
-### 2.30 windows 特有
+### 2.31 windows 特有
 
-#### 空格预览文件
+#### 2.31.1 空格预览文件
 
 【win】[QuickLook](https://github.com/QL-Win/QuickLook/releases)
 
@@ -666,7 +671,7 @@ not
 
 【win】[Seer](http://www.1218.io/seer.html) 收费就算了
 
-#### WizMouse 为 win7 必备
+#### 2.31.2 WizMouse 为 win7 必备
 
 【win】[WizMouse](https://antibody-software.com/wizmouse) 一款鼠标增强工具
 
@@ -675,7 +680,7 @@ not
 1. win Vista/7/8 缺失的非激活的窗口下使用滚轮滚动
 2. 反转鼠标滚动方向，类似苹果的自然滚动
 
-#### windows 系统优化
+#### 2.31.3 windows 系统优化
 
 * 【win】[dism++](https://github.com/Chuyu-Team/Dism-Multi-language) 优化功能挺强，能注入驱动还能辅助装系统。适合高级用户
 
@@ -683,13 +688,17 @@ not
 
 * 【win】[软媒魔方](https://mofang.ruanmei.com)
 
-#### windows 蓝屏日志分析
+#### 2.31.4 windows 蓝屏日志分析
 
 去 microsoft store 搜索【win】[WinDbg](https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/debugger-download-tools#install-debugging-tools-for-windows)
 
-#### resource hacker
+#### 2.31.5 resource hacker
 
 解析 exe，例如可以轻松查看【win】[Preme](http://www.premeforwindows.com) 的 ahk 源码
+
+#### 2.31.6 流氓软件禁用
+
+[GitHub - the1812](https://github.com/the1812/Malware-Patch)/Malware-Patch: 阻止中国流氓软件的管理员授权. / Prevent UAC authorization of Chinese malware.
 
 ## 3 专业
 
@@ -781,11 +790,11 @@ not
 
 [小鸡模拟器 windows 经典版](https://dl.xiaoji001.com/download/pc/xiaoji_0.0.30.exe)
 
-## 一些优秀的应用厂商
+## 5 一些优秀的应用厂商
 
 Data center, cloud, and edge unified | [Resilio](https://www.resilio.com) 公司提供了免费的​​去中心化网盘 [Resilio Sync](https://www.resilio.com/sync/) 同步软件
 
-## XP 怀旧专题
+## 6 XP 怀旧专题
 
 1. [补丁合集](https://www.123pan.com/s/aDE9-hCCyh.html)
 1. [360 安全卫士极速版](https://wsdl.360safe.com/setupbeta_jisu.exe) | [火绒安全软件 5](https://www.huorong.cn/downloadAllv5.html?status=hrstat&src=18)
@@ -796,7 +805,7 @@ Data center, cloud, and edge unified | [Resilio](https://www.resilio.com) 公司
 1. [微信 3.2.1](https://www.123pan.com/s/aDE9-hCCyh.html)
 1. [Potplayer 1.7](https://www.123pan.com/s/aDE9-hCCyh.html)
 
-## 留观中
+## 7 留观中
 
 一些用过的软件但主观关键明显不好用的记录，说不定下版会优化，所以仅供参考
 
@@ -810,31 +819,31 @@ Data center, cloud, and edge unified | [Resilio](https://www.resilio.com) 公司
 * [pear-rec](https://027xiguapi.github.io/pear-rec)【全平台】录屏软件 至少我在 windows 上体验不佳
 * [flowlauncher](https://www.flowlauncher.com/docs) 作为一款启动器 有点儿卡
 
-## 回收站
+## 8 回收站
 
-* 猿如意【浏览器插件】 不让人满意
+* 【浏览器插件】CSDN 猿如意 不让人满意
 * ——————— ฅ՞• •՞ฅ ———————
-* 芒果壁纸【win】 时间长了会白屏
-* 录猎 不好用
-* 芒果加速【win】 啥玩意，也是此类，只能体验 2 小时
-* 万彩录屏大师 太复杂了
+* 【win】芒果壁纸 时间长了会白屏
+* 【win】录猎不好用
+* 【win】芒果加速 啥玩意，体验2小时，推广
+* 【win】星星加速 可以访问谷歌，但是一来界面不好看，限时体验 3 天已经是很良心了
+* 【win】万彩录屏大师 太复杂了
 * 万兴喵影 2023 需要登录才能录屏，差评，不过这个公司的产品还行
-* 星星加速 可以访问谷歌，但是一来界面不好看，限时体验 3 天已经是很良心了
 * adguard 免费体验 2 天太少了
 * AuTool-0.1.15-win-x64 暂时不好用
-* CleanMy PC【win】 软件都不更新
+* 【win】CleanMy PC 软件都不更新
 * Cursor Setup 0.1.3-x64 不太完善，淘汰
 * Dawn Launcher 不好用
 * EncryptoforWin 厂商专注 mac 已经不更新了
-* listen1【win mac】 2023 年初好多歌曲都不能播放了，无奈放弃
+* 【win mac】listen1 2023 年初好多歌曲都不能播放了，无奈放弃
 * MQTT.FX 很久没更新了，淘汰
 * OfficeBox 官方绿色版 颜值太低且功能不强大，差评
-* OneAuth 【Win 商店版】需要先登录的二步验证，差评
+* 【Win 商店版】OneAuth 需要先登录的二步验证，差评
 * Parallels desktop 属于买断制，新版本不能用，啥玩意，再也不买了
 * PDF Shaper Professional v13.3 只有些页面功能而已
-* QOwnNotes 【win mac linux】不好用，淘汰
-* Transmission【win mac linux】 只能下载 bt 种子，淘汰
+* 【win mac linux】QOwnNotes 不好用，淘汰
+* 【win mac linux】Transmission 只能下载 bt 种子，淘汰
 * UGit 腾讯 git 代码客户端，感觉不好用
 * Wox-1.4.1196 已经不太维护的启动器，界面也一般
-* zyplayer--【win mac】2023 据说不再更新，但是将逐渐不好用了
+* 【win mac】zyplayer-- 2023 据说不再更新，但是将逐渐不好用了
 * oblivion-desktop 魔法没有一次连成功的
