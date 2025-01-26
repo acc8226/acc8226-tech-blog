@@ -317,15 +317,15 @@ github_banner:
 
 font:
   enable: true
-  # Font settings for posts (.post-body).
-  posts:
+  # Font settings for headlines (<h1> to <h6>).
+  headings:
     external: true
     family: LXGW WenKai TC
   # Font settings for <code> and code blocks.
   codes:
     external: true
-    family: "'Mona Sans', JetBrains Mono, Inconsolata"
-
+    family: "'Mona Sans', PingFang SC, Microsoft YaHei"
+    
 # ---------------------------------------------------------------
 # SEO Settings
 # See: https://theme-next.js.org/docs/theme-settings/seo
