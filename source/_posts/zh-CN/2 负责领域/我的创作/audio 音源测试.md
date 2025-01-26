@@ -27,7 +27,7 @@ categories: 我的创作
   您的浏览器不支持 audio 元素。
 </audio>
 
-[wav-pcm24.wav](https://jiejian.sourceforge.io/NetDisk/mp3/wav-pcm24.wav)
+[pcm24.wav](https://jiejian.sourceforge.io/NetDisk/mp3/wav-pcm24.wav)
 
 <audio controls>
   <source src="https://jiejian.sourceforge.io/NetDisk/mp3/wav-pcm24.wav" type="audio/ogg" title="wav-pcm24.wav">
@@ -81,7 +81,7 @@ categories: 我的创作
 
 6. **WMA (Windows Media Audio)**
    - **特点**：这是微软开发的一种有损压缩音频格式，支持流媒体播放。
-   - **用途**：常用于Windows操作系统和一些在线音乐服务。
+   - **用途**：常用于 Windows 操作系统和一些在线音乐服务。
 
 每种格式都有其特定的优势和局限性，用户可以根据需要选择适合的格式。例如，如果需要在保持音质的同时减少文件大小，可以选择 MP3 或 OGG；如果需要最高音质，可以选择 WAV 或 FLAC。
 

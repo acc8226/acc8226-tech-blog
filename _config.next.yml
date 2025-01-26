@@ -316,12 +316,21 @@ github_banner:
 # ---------------------------------------------------------------
 
 font:
+  # Use custom fonts families or not.
+  # Depended options: `external` and `family`.
   enable: true
-  # Font settings for site title (.site-title).
+  # Font settings for site title (.site-title). 用于主标题
   title:
     external: true
     family: LXGW WenKai TC
-  # Font settings for <code> and code blocks.
+  # Font settings for headlines (<h1> to <h6>). 用于普通标题
+  headings:
+    external: true
+    family: LXGW WenKai TC
+  # Font settings for posts (.post-body). 用于正文
+  posts:
+    external: false
+  # Font settings for <code> and code blocks. 用于代码
   codes:
     external: true
     family: "'Mona Sans', PingFang SC, Microsoft YaHei"
@@ -385,22 +394,14 @@ mediumzoom: false
 # For more information: https://apoorv.pro/lozad.js/demo/
 lazyload: true
 
+# Pangu Support
+pangu: false
+
 # Quicklink Support
 # For more information: https://getquick.link
 # Front-matter variable (nonsupport home archive).
 quicklink:
   enable: false
-  # Home page and archive page can be controlled through home and archive options below.
-  # This configuration item is independent of `enable`.
-  home: false
-  archive: false
-
-  # Default (true) will initialize quicklink after the load event fires.
-  delay: true
-  # Custom a time in milliseconds by which the browser must execute prefetching.
-  timeout: 3000
-  # Default (true) will attempt to use the fetch() API if supported (rather than link[rel=prefetch]).
-  priority: true
 
 # ---------------------------------------------------------------
 # Animation Settings

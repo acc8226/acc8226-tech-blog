@@ -6,10 +6,12 @@ updated: 2025-01-14 10:37:51
 categories: 我的创作
 ---
 
+本日志为[《合集-PC用日常软件》](https://feipig.fun/mypc)的姊妹篇。
+
 ## 前言
 
 1. 记住安全永远是第一要务。下载软件也尽量从应用商店，这样更安全，也避免从其他渠道下载到恶意软件。
-2. 不要让陌生人开启做出来电转接 `##*21` 这种可能很可能有害的行为。绝对不要共享屏幕，不要转账。预防电信网络诈骗。千万不能好奇。一定要做到**不贪心不恐惧**。
+1. 不要让陌生人开启做出来电转接 `##*21` 这种可能很可能有害的行为。绝对不要共享屏幕，不要转账。预防电信网络诈骗。千万不能好奇。一定要做到**不贪心不恐惧**。
 
 注：
 
@@ -72,7 +74,7 @@ categories: 我的创作
 #### 安卓
 
 1. Aegis Authenticator [官网](https://getaegis.app) | [下载地址](https://github.com/beemdevelopment/Aegis/releases) 需定期做好密码备份导出工作
-2. [国家网络身份认证](https://sj.qq.com/appdetail/cn.cyberIdentity.certification) 用于互联网账号联合登录
+1. [国家网络身份认证](https://sj.qq.com/appdetail/cn.cyberIdentity.certification) 用于互联网账号联合登录
 
 not
 
@@ -171,7 +173,7 @@ not
 #### 安卓
 
 1. 本地 [椒盐音乐 Salt Player](https://www.coolapk.com/apk/284064)
-2. 在线 [LX Music 洛雪音乐助手](https://github.com/lyswhut/lx-music-mobile/releases) 作为 Spotify 的替代品，我一般很少用，因为同步歌单是个问题
+2. 在线 [lx-Music 洛雪音乐助手](https://github.com/lyswhut/lx-music-mobile/releases) 作为 Spotify 的替代品，我一般很少用，因为同步歌单是个问题
 
 备用
 
@@ -181,10 +183,10 @@ not
 可选
 
 1. 本地 [海贝音乐](https://sj.qq.com/appdetail/com.hiby.music) 一个本地音乐播放器，也用于在线下载歌词
-2. 在线 [Spotify](https://www.spotify.com) 需要魔法 和 不开会员也啥歌能听
-3. 在线 [咪咕音乐](https://sj.qq.com/appdetail/cmccwm.mobilemusic) 其中极速版可以免费听 1 年，但是之后呢
-4. 在线 [普听音乐](https://music.codepublic.top) 由于搭配阿里云盘有新玩法，适合高级用户
-5. [全民 K 歌](https://sj.qq.com/appdetail/com.tencent.karaoke) k 歌软件暂定它了
+1. 在线 [Spotify](https://www.spotify.com) 需要魔法 和 不开会员也啥歌能听
+1. 在线 [咪咕音乐](https://sj.qq.com/appdetail/cmccwm.mobilemusic) 其中极速版可以免费听 1 年，但是之后呢
+1. 在线 [普听音乐](https://music.codepublic.top) 由于搭配阿里云盘有新玩法，适合高级用户
+1. [全民 K 歌](https://sj.qq.com/appdetail/com.tencent.karaoke) k 歌软件暂定它了
 
 not
 
@@ -320,7 +322,7 @@ not
 #### iPad
 
 1. **网易新闻 Pro** 竟然没广告
-2. **Reeder** 绝对是精品 rss 阅读器
+1. **Reeder** 精品 rss 阅读器
 
 not
 
@@ -733,13 +735,13 @@ not
 
 **一定不要网贷，信用卡合规使用。不要花费超出能力范围的钱**
 
-* [支付宝](https://sj.qq.com/appdetail/com.eg.android.AlipayGphone) 杂乱无章
-* [云闪付](https://sj.qq.com/appdetail/com.unionpay) 云闪付持续有优惠，信用卡还款免手续费
+1. [支付宝](https://sj.qq.com/appdetail/com.eg.android.AlipayGphone) 杂乱无章
+1. [云闪付](https://sj.qq.com/appdetail/com.unionpay) 云闪付持续有优惠，信用卡还款免手续费
 
 可选
 
 * [翼支付](https://sj.qq.com/appdetail/com.chinatelecom.bestpayclient) 由于我办理业务期间会每月会赠送代金券
-* [数字人民币](https://sj.qq.com/appdetail/cn.gov.pbc.dcep) 生态还不完善，然后 170 的收集也注册不了，目前我是用 153 的号码进行注册的
+* [数字人民币](https://sj.qq.com/appdetail/cn.gov.pbc.dcep) 生态还不完善，然后 170 手机号也注册不了
 
 ## 12 网盘【常用】
 
@@ -925,7 +927,7 @@ never
 
 ### 安卓和 iOS
 
-* [个人所得税](https://sj.qq.com/appdetail/cn.gov.tax.its) 
+* [个人所得税](https://sj.qq.com/appdetail/cn.gov.tax.its) 个税抵扣用
 
 备用
 
