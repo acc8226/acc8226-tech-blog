@@ -425,15 +425,8 @@ not
 
 ### 2.5 文件搜索
 
-【win】[WizFile](https://antibody-software.com/wizfile/download) 颜值比 【win】[Everything](https://www.voidtools.com/zh-cn/downloads) 高不少
-
-or
-
-【win 绿色版】[Everything](https://www.voidtools.com/zh-cn/downloads)
-
-and
-
-文档中搜索关键字 【win】工具 FileSearchEX_v1.1.0.6
+1. 【win 绿色版】[WizFile](https://antibody-software.com/wizfile/download) 颜值较高 |【win 绿色版】[Everything](https://www.voidtools.com/zh-cn/downloads)
+1. 文档中搜索关键字 【win】[FileSearchEX](http://goffconcepts.com/products/filesearchex/index.html) | [Anytxt Searcher](https://anytxt.net/download)
 
 ### 2.6 显示网速
 
@@ -500,12 +493,13 @@ or
 
 **windows 平台**
 
-【win 绿色版】[极客卸载 Geek Uninstaller](https://geekuninstaller.com/download) 简单清爽 |【win 绿色版】[HiBitUninstaller](https://www.hibitsoft.ir/Uninstaller.html) 体积小巧+卸载功能强大
+* 【win 绿色版】[极客卸载 Geek Uninstaller](https://geekuninstaller.com/download) 简单清爽
+* 【win 绿色版】[HiBitUninstaller](https://www.hibitsoft.ir/Uninstaller.html) 体积小巧+卸载功能强大
+* 【绿色版】[RevoUninstaller 免费版](https://www.revouninstaller.com/products/revo-uninstaller-free) 界面有点旧
 
 not
 
 * 【win mac】[CCleaner](https://www.ccleaner.com/zh-cn/ccleaner) 只有安装版差评
-* 【绿色版】[RevoUninstaller 免费版](https://www.revouninstaller.com/products/revo-uninstaller-free) 界面有点旧
 
 **mac 平台**
 
@@ -792,7 +786,9 @@ not
 
 ## 5 一些优秀的应用厂商
 
-Data center, cloud, and edge unified | [Resilio](https://www.resilio.com) 公司提供了免费的​​去中心化网盘 [Resilio Sync](https://www.resilio.com/sync/) 同步软件
+1. Data center, cloud, and edge unified | [Resilio](https://www.resilio.com) 提供了免费的​​去中心化网盘 [Resilio Sync](https://www.resilio.com/sync/) 可用作同步
+1. [GOFF Concepts](http://goffconcepts.com/index.html) 主页 --- GOFF Concepts Home Page 提供了 FileSearchEX 等软件
+1. [Sordum.org - Simplify Your computer Usage](https://www.sordum.org) 提供了很多好用小工具，比如 Dns Jumper
 
 ## 6 XP 怀旧专题
 

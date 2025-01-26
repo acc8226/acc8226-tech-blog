@@ -317,8 +317,8 @@ github_banner:
 
 font:
   enable: true
-  # Font settings for headlines (<h1> to <h6>).
-  headings:
+  # Font settings for site title (.site-title).
+  title:
     external: true
     family: LXGW WenKai TC
   # Font settings for <code> and code blocks.
