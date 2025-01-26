@@ -317,10 +317,14 @@ github_banner:
 
 font:
   enable: true
+  # Font settings for posts (.post-body).
+  posts:
+    external: true
+    family: LXGW WenKai TC
   # Font settings for <code> and code blocks.
   codes:
     external: true
-    family: Inconsolata  
+    family: "'Mona Sans', JetBrains Mono, Inconsolata"
 
 # ---------------------------------------------------------------
 # SEO Settings
