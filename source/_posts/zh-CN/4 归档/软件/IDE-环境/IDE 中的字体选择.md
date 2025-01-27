@@ -135,6 +135,38 @@ Cascadia 字体系列的下一个演变，Cascadia Next。我们才华横溢的�
 
 [下载](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/Monaspace.zip) | [preview](https://www.programmingfonts.org/#monaspace-neon)
 
+## 教程
+
+### 如何引用谷歌字体库
+
+Google 中国提供的 Google Fonts 国内镜像
+使用 fonts.googleapis.cn 替换 fonts.googleapis.com
+使用 fonts.gstatic.cn 替换 fonts.gstatic.com
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <style>
+		@import url('https://fonts.font.im/css?family=Ubuntu+Mono');
+		
+        body {
+            font-family: 'Ubuntu Mono', sans-serif;
+            font-size: 16px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mist Hello World</h1>
+</body>
+</html>
+```
+
 ## 一些字体网站
 
 * [Fontsource](https://fontsource.org)
+* [Free Fonts!](https://www.fontsquirrel.com/) Legit Free & Quality » Font Squirrel

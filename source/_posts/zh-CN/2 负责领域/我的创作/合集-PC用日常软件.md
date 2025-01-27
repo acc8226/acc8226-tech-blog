@@ -23,31 +23,31 @@ categories: 我的创作
 
 #### 1.0.1 安全类
 
-* 【win】[360 安全卫士极速版](https://weishi.360.cn) |（[微软电脑管家](https://pcmanager.microsoft.com/zh-cn) + [火绒安全](https://www.huorong.cn)）
+* 【win】[360 安全卫士极速版](https://weishi.360.cn) | [微软电脑管家](https://pcmanager.microsoft.com/zh-cn)+[火绒安全](https://www.huorong.cn)
 * 【mac】[腾讯柠檬清理](https://lemon.qq.com)-原腾讯电脑管家 for mac
 
 #### 1.0.2 浏览器
 
-* 【win 绿色版】【mac】[Catsxp 猫眼浏览器](https://www.catsxp.com) 鼠标悬停切换标签功能很好用
+* 【win 绿色版 mac】[Catsxp 猫眼浏览器](https://www.catsxp.com) 鼠标悬停切换标签功能很好用 | [百分浏览器](http://www.centbrowser.cn)
 * 【linux】[火狐浏览器](https://www.firefox.com.cn)
 <!-- more -->
 
 #### 1.0.3 输入法
 
-* 【win mac】自带 或者[微信输入法](https://z.weixin.qq.com) 特有云粘贴板功能，支持跨设备粘贴文字、图片 |【win】[搜狗输入法 10](https://www.123pan.com/s/aDE9-hCCyh.html)
+* 【win mac】自带 或者[微信输入法](https://z.weixin.qq.com) 特有云粘贴板功能，支持跨设备粘贴文字、图片 | [手心输入法](http://www.xinshuru.com)
 * 【linux】自带 或者 [RIME 输入法](https://rime.im)
 
 ### 1.1 工具类
 
 #### 1.1.0【常用】压缩解压
 
-* 【win 免费】[PeaZip](https://peazip.github.io) 有智能解压 | 【win mac [微软商店版](ms-windows-store://pdp/?ProductId=9P2W3W81SPPB)】[Bandizip](https://www.bandisoft.com/bandizip) 新版有广告
-* 【mac [商店版](https://apps.apple.com/cn/app/the-unarchiver/id425424353?mt=12)】[The Unarchiver](https://theunarchiver.com) 或【mac [商店版](<https://apps.apple.com/cn/app/fastzip-%E4%B8%93%E4%B8%9A%E7%9A%84-rar-7z-zip-%E8%A7%A3%E5%8E%8B%E7%BC%A9%E5%B7%A5%E5%85%B7/id1565629813?mt=12>)】[FastZip](https://www.better365.cn/fastzip.html)
+* 【win 绿色版】[PeaZip](https://peazip.github.io) 有智能解压 | [Bandizip](https://www.bandisoft.com/bandizip)
+* 【mac [苹果商店版](https://apps.apple.com/cn/app/the-unarchiver/id425424353?mt=12)】[The Unarchiver](https://theunarchiver.com) | [FastZip](https://www.better365.cn/fastzip.html)
 * 【linux】自带命令
 
 #### 1.1.1【推荐】鼠标手势
 
-* 【win 免费】[WGestures 1 代](https://www.yingdev.com/projects/wgestures) |【win 付费】[WGestures 2 代](https://store.lizhi.io/site/products/id/523?cid=46jjayiu)
+* 【win】[WGestures 1 代](https://www.yingdev.com/projects/wgestures) | [WGestures 2 代](https://store.lizhi.io/site/products/id/523?cid=46jjayiu) 付费
 * 【mac】[BetterAndBetter](https://www.better365.cn/bab2.html)
 * 【linux】KDE 桌面已内置鼠标手势
 
@@ -55,18 +55,18 @@ categories: 我的创作
 
 * 【win 绿色版 自荐】[**捷键**](https://feipig.fun/jiejian)
 * 【mac】[Hammerspoon](https://www.hammerspoon.org) 可自己写脚本
-* 【linux】AutoKey [Github 地址](https://github.com/autokey/autokey) | [帮助文档](https://autokey.github.io/intro.html) 适用于 x11 和 qt 平台
+* 【linux】AutoKey [Github 地址](https://github.com/autokey/autokey) & [帮助文档](https://autokey.github.io/intro.html) 适用于 x11 和 qt 平台
 
 #### 1.1.3【常用】截图
 
-* 【win mac】[PixPin](https://pixpinapp.com) 不付费也能使用 OCR 和长截图功能
+* 【win mac】[PixPin](https://pixpinapp.com) 不付费也能使用 OCR 和长截图功能 | [ShareX](https://getsharex.com/)
 * liunx 系统自带
 
 #### 1.1.4【常用】护眼
 
 **windows 平台**
 
-【win mac】[f.lux](https://justgetflux.com) +【win 绿色版 自荐】[捷键-定时提醒](https://feipig.fun/jiejian)
+【win mac】[f.lux](https://justgetflux.com) +【win 绿色版 自荐】[捷键](https://feipig.fun/jiejian) 包含了定时提醒
 
 **mac 平台**
 
@@ -111,7 +111,7 @@ mac 版迅雷其实也不错，不过必须去官网下载才是完整版，目�
 #### 1.1.8 图像处理
 
 * 轻量级【win 绿色版】[Paint.NET](https://www.getpaint.net) 功能强大且有绿色版
-* 重量级【全平台】[Gimp](https://www.gimp.org) PS 的替代品且免费
+* 重量级【全平台】[Gimp](https://www.gimp.org) PS 的替代品且免费 | PS 付费
 
 #### 1.1.9 密码管理
 

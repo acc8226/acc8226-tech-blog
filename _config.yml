@@ -4,7 +4,7 @@
 
 # Site
 # 网站标题
-title: '乙巳：桂馥兰馨'
+title: '乙巳年'
 # 网站副标题
 subtitle: 'acc8226 的博客'
 # 网站描述
@@ -30,7 +30,7 @@ permalink_defaults:
 pretty_urls:
   # 是否在永久链接中保留尾部的 index.html, 设置为 false 时去除	
   trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
-  # 是否在永久链接中保留尾部的 .html, 设置为 false 时去除 (对尾部的 index.html无效)	
+  # 是否在永久链接中保留尾部的 .html, 设置为 false 时去除 (对尾部的 index.html 无效)	
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
 
 # Directory
@@ -58,7 +58,7 @@ filename_case: 0
 # 使草稿默认发布到站点中设为 false
 render_drafts: false
 # 创建新文章时自动创建一个文件夹。这个资源文件夹将会有与这个文章文件一样的名字。将所有与你的文章有关的资源放在这个关联文件夹中之后
-post_asset_folder: true
+post_asset_folder: false
 relative_link: false
 future: true
 highlight:
