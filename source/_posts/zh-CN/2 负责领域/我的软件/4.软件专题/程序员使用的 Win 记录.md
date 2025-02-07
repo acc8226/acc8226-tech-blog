@@ -55,9 +55,10 @@ calc：启动计算器
 cmd.exe：CMD 命令提示符
 
 自动关机命令
-　 Shutdown -s -t 600：表示 600 秒后自动关机
-　 shutdown -a ：可取消定时关机
-　 Shutdown -r -t 600：表示 600 秒后自动重启
+
+Shutdown -s -t 600：表示 600 秒后自动关机
+shutdown -a ：可取消定时关机
+Shutdown -r -t 600：表示 600 秒后自动重启
 
 control：控制面版
 devmgmt.msc：设备管理器
@@ -87,9 +88,9 @@ write：写字板
 CHCP 是一个计算机指令，能够显示或设置活动代码页编号。
 
 代码页  描述
-65001 UTF-8代码页
+65001 UTF-8 代码页
 950 繁体中文
-936 简体中文默认的GBK
+936 简体中文默认的 GBK
 437 MS-DOS 美国英语
 
 在 cmd 中输入 CHCP 65001

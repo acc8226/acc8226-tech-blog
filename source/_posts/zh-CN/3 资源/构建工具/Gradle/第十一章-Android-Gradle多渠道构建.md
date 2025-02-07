@@ -84,7 +84,7 @@ Flavor这个单词比较有意思，看字面意思是气味、味道的意思�
 
 ##### 11.3.4 multiDexEnabled
 
-这个属性用来启用多个dex的配置，主要用来突破 65535 方法的问题，大家可以参考9.11一节的介绍，这里不再详细表述。
+这个属性用来启用多个 dex 的配置，主要用来突破 65535 方法的问题，大家可以参考 9.11一节的介绍，这里不再详细表述。
 
 ##### 11.3.5 proguardFiles
 
@@ -108,7 +108,7 @@ Flavor这个单词比较有意思，看字面意思是气味、味道的意思�
 
 ##### 11.3.8 testFunctionalTest和testHandleProfiling
 
-也是和单元测试有关，Boolean型属性，testFunctionalTest表示是否是功能测试，testHandleProfiling表示是否启用分析功能。
+也是和单元测试有关，Boolean 型属性，testFunctionalTest 表示是否是功能测试，testHandleProfiling 表示是否启用分析功能。
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-3d3f61356ebcd2d1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -116,11 +116,11 @@ Boolean型，true和false两个选择，示例表示作为功能测试并且启�
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-546e2330309ebe59.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-以上是这两个属性的源代码配置，他们主要用来控制测试包生成的AndroidManifest.xml,因为他们最终的配置还要体现在AndroidManifest.xml文件中的instrumentation标签的配置上。可以参考
+以上是这两个属性的源代码配置，他们主要用来控制测试包生成的AndroidManifest.xml,因为他们最终的配置还要体现在 AndroidManifest.xml文件中的instrumentation标签的配置上。可以参考
 <http://developer.android.com/intl/zh-cn/guide/topics/manifest/instrumentation-element.html>
 
 ##### 11.3.9 testInstrumentationRunner
-用来配置运行测试使用的Instrumentation Runner的类名，是一个全路径的类名，而且必须是android.app.Instrumentation的子类，一般情况下，我们使用android.test.InstrumentationTestRunner，当然也可以自定义，根据自己的需求。
+用来配置运行测试使用的 Instrumentation Runner的类名，是一个全路径的类名，而且必须是android.app.Instrumentation 的子类，一般情况下，我们使用android.test.InstrumentationTestRunner，当然也可以自定义，根据自己的需求。
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-d0933b3861ec1ad6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -139,11 +139,11 @@ Boolean型，true和false两个选择，示例表示作为功能测试并且启�
 
 ##### 11.3.11 versionCode和versionName
 
-配置渠道的版本号和版本名称，详情参考8.1.4和8.1.5两个小节。
+配置渠道的版本号和版本名称，详情参考 8.1.4 和 8.1.5 两个小节。
 
 ##### 11.3.12 useJack
 
-Boolean类型的属性，用于标记是否启用Jack和Jill这个全新的、高性能的编译器。目前我们使用的是常规的成熟的Android编译框架，这个有个问题，就是太慢，所以Google他们又搞了一个全新的、高性能的编译器，这个就是Jack和Jill，目的就是简化编译的流程，提高编译的速度和性能，不过目前他们还处于实验阶段，有写特性还不支持，比如注解，比如JDK8的特性等等，大家可以自己测试用用，但是正式产品种还是不要使用。要启用Jack编译非常简单，只需要设置useJack为true即可，默认是false。
+Boolean类型的属性，用于标记是否启用Jack和Jill这个全新的、高性能的编译器。目前我们使用的是常规的成熟的Android编译框架，这个有个问题，就是太慢，所以Google他们又搞了一个全新的、高性能的编译器，这个就是 Jack 和 Jill，目的就是简化编译的流程，提高编译的速度和性能，不过目前他们还处于实验阶段，有写特性还不支持，比如注解，比如JDK8的特性等等，大家可以自己测试用用，但是正式产品种还是不要使用。要启用 Jack 编译非常简单，只需要设置useJack为true即可，默认是false。
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-840ae142f7bf6993.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -162,7 +162,7 @@ Boolean类型的属性，用于标记是否启用Jack和Jill这个全新的、�
 
 有时候，我们想基于不同的标准来构建我们的App，比如免费版还是收费版、x86版还是arm版等等，在不考虑BuildType的情况下，这里有4种组合：x86的免费版、x86的收费版、arm的免费版、arm的收费版。对于这种情况，我们有两种方式来构建，第一种是通俗的用法，就是配置4个ProductFlavor，他们分别是x86free、x86paid、armfree、armpaid，然后针对这4个ProductFlavor配置，满足我们的需求即可。这种方式比较通俗易懂，但是有个问题，就是配置脚本的冗余，比如free的配置是有共性的，但是我们要在两个free里把共性的配置写两遍，同样x86这类也是，脚本冗余了，而且每次改动都要一个个去修改，也很麻烦，而且现在才有两个维度，每个维度的可选项都不会有很多，我们还可以忍受，如果有很多种维度呢？每个维度又有很多可选项呢？下面我们来介绍第二种方法，通过dimension多维度的方式来解决这个问题。
 
-dimension是ProductFlavor的一个属性，接受一个字符串，作为该ProductFlavor的维度，其实我们可以简单的理解为对ProductFlavor进行分组，比如free和paid可以认为他们都是属于版本(version),而x86和arm是属于架构(abi)，这样就把他们分成了两组，而dimension接受的参数就是我们分组的组名，也是维度名称。维度名称不是随便指定的，我们在使用他们之前，必须要先声明，这和我们Java的变量差不多，要先定义好才能使用，那么怎么定义的，这个就是使用android对象的flavorDimensions方法声明的。
+dimension是ProductFlavor的一个属性，接受一个字符串，作为该 ProductFlavor 的维度，其实我们可以简单的理解为对 ProductFlavor进行分组，比如free和paid可以认为他们都是属于版本(version),而x86和arm是属于架构(abi)，这样就把他们分成了两组，而 dimension 受的参数就是我们分组的组名，也是维度名称。维度名称不是随便指定的，我们在使用他们之前，必须要先声明，这和我们Java的变量差不多，要先定义好才能使用，那么怎么定义的，这个就是使用 android 对象的 flavorDimensions 方法声明的。
 
 flavorDimensions是我们使用的android{}里的方法，它和productFlavors{}是平级的，一定要先使用flavorDimensions声明维度，我们才能在ProductFlavor使用。
 
@@ -184,7 +184,7 @@ flavorDimensions是我们使用的android{}里的方法，它和productFlavors{}
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-1c727a2d105bd6b8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-通过dimension指定ProductFlavor所属的维度，非常方便，剩下的事情交给Android Gradle即可，它会帮我们生成相应的Task、SourceSet、Dependencies等。以前我们讲一个构建产物(variant)=BuildType+ProductFlavor，现在ProductFlavor这个维度又被我们通过dimension细化分组，所以就多了一些维度，比如示例中的abi和version，现在构建产物(variant)=BuildType+Abi+Version了，所以会生成如下的variant：
+通过 dimension 指定 ProductFlavor 所属的维度，非常方便，剩下的事情交给Android Gradle即可，它会帮我们生成相应的Task、SourceSet、Dependencies等。以前我们讲一个构建产物(variant)=BuildType+ProductFlavor，现在ProductFlavor 这个维度又被我们通过dimension细化分组，所以就多了一些维度，比如示例中的abi和version，现在构建产物(variant)=BuildType+Abi+Version了，所以会生成如下的variant：
 
 1. ArmFreeDebug
 2. ArmFreeRelease
@@ -211,7 +211,7 @@ flavorDimensions是我们使用的android{}里的方法，它和productFlavors{}
 4. 重复2、3生成我们所需的所有的渠道包Apk，这个可以使用Python这类脚本来做
 5. 这样就生成了我们所有发布渠道的Apk包了。
 
-那么我们怎么使用呢，原理也非常简单，我们在Apk启动的时候(Application onCreate)的时候,读取我们写Apk中META-INF目录下的前缀为mtchannel_文件，如果找到的话，把文件名取出来，然后就可以拿到渠道标识(google)了,这里贴一个美团实现的代码，大家可以参考一下：
+那么我们怎么使用呢，原理也非常简单，我们在 Apk 启动的时候(Application onCreate)的时候,读取我们写Apk中META-INF目录下的前缀为mtchannel_文件，如果找到的话，把文件名取出来，然后就可以拿到渠道标识(google)了,这里贴一个美团实现的代码，大家可以参考一下：
 
 ```java
 public static String getChannel(Context context) {
@@ -252,9 +252,9 @@ public static String getChannel(Context context) {
     }
 ```
 
-以上代码逻辑我们可以再优化一下，比如为渠道做个缓存放在SharePreference里，不能总从Apk里读取吧，效率是个问题。
+以上代码逻辑我们可以再优化一下，比如为渠道做个缓存放在 SharePreference 里，不能总从Apk里读取吧，效率是个问题。
 
-对于Python批处理也很简单，这里给出一段美团的Python代码，大家参考补充
+对于Python批处理也很简单，这里给出一段美团的 Python 代码，大家参考补充
 ```
 import zipfile
 zipped = zipfile.ZipFile(your_apk, 'a', zipfile.ZIP_DEFLATED)
@@ -277,4 +277,4 @@ http://tech.meituan.com/mt-apk-packaging.html
 ---
 
 本文属自学历程, 仅供参考
-详情请支持原书 [Android Gradle权威指南](https://yuedu.baidu.com/ebook/14a722970740be1e640e9a3e)
+详情请支持原书 [Android Gradle 权威指南](https://yuedu.baidu.com/ebook/14a722970740be1e640e9a3e)
