@@ -28,7 +28,7 @@ categories: 我的创作
 
 #### 1.0.2 浏览器
 
-* 【win 绿色版 mac】[Catsxp 猫眼浏览器](https://www.catsxp.com) 鼠标悬停切换标签功能很好用 | [百分浏览器](http://www.centbrowser.cn)
+* 【win 绿色版 mac】[Catsxp 猫眼浏览器](https://www.catsxp.com) 鼠标悬停切换标签功能很好用 |【win 绿色版】[百分浏览器](http://www.centbrowser.cn)
 * 【linux】[火狐浏览器](https://www.firefox.com.cn)
 <!-- more -->
 
@@ -41,25 +41,25 @@ categories: 我的创作
 
 #### 1.1.0【常用】压缩解压
 
-* 【win 绿色版】[PeaZip](https://peazip.github.io) 有智能解压 | [Bandizip](https://www.bandisoft.com/bandizip)
+* 【win 开源绿色版】[PeaZip](https://peazip.github.io/peazip-portable.html) 有智能解压 |【win 绿色版】[Bandizip](https://www.bandisoft.com/bandizip/dl.php?portable)
 * 【mac [苹果商店版](https://apps.apple.com/cn/app/the-unarchiver/id425424353?mt=12)】[The Unarchiver](https://theunarchiver.com) | [FastZip](https://www.better365.cn/fastzip.html)
 * 【linux】自带命令
 
 #### 1.1.1【推荐】鼠标手势
 
 * 【win】[WGestures 1 代](https://www.yingdev.com/projects/wgestures) | [WGestures 2 代](https://store.lizhi.io/site/products/id/523?cid=46jjayiu) 付费
-* 【mac】[BetterAndBetter](https://www.better365.cn/bab2.html)
+* 【mac】[BetterAndBetter](https://www.better365.cn/bab2.html) 不仅仅是鼠标手势
 * 【linux】KDE 桌面已内置鼠标手势
 
 #### 1.1.2【推荐】键鼠增强
 
-* 【win 绿色版 自荐】[**捷键**](https://feipig.fun/jiejian)
+* 【win 开源绿色版 自荐】[**捷键**](https://feipig.fun/jiejian)
 * 【mac】[Hammerspoon](https://www.hammerspoon.org) 可自己写脚本
 * 【linux】AutoKey [Github 地址](https://github.com/autokey/autokey) & [帮助文档](https://autokey.github.io/intro.html) 适用于 x11 和 qt 平台
 
 #### 1.1.3【常用】截图
 
-* 【win mac】[PixPin](https://pixpinapp.com) 不付费也能使用 OCR 和长截图功能 | [ShareX](https://getsharex.com/)
+* 【win mac 绿色版】[PixPin](https://pixpinapp.com) 不付费也能使用 OCR 和长截图功能 | [ShareX](https://getsharex.com)
 * liunx 系统自带
 
 #### 1.1.4【常用】护眼
@@ -313,14 +313,6 @@ albert 安装不上
 * 【mac】[Reeder](https://apps.apple.com/mo/app/reeder-5/id1529448980) 用于 rss
 * 【linux】[FBReader](https://fbreader.org) 用于阅读电子书
 * 【linux】[NewsFlash](https://flathub.org/zh-Hans/apps/io.gitlab.news_flash.NewsFlash) 很棒的一款 rss 阅读器
-
-### 1.10 桌面美化
-
-【win】[拾光壁纸](https://app.nguaduot.cn/timeline) 干净、舒适、流畅的壁纸网站
-
-### 1.11 打字练习
-
-【win】[金山打字通](https://www.51dzt.com)
 
 ## 2 拓展
 
@@ -648,23 +640,45 @@ not
 
 【全平台】[EcoPaste](https://ecopaste.cn) |【win】[Ditto](https://ditto-cp.sourceforge.io)
 
-### 2.30 mac 特有
+### 2.30 窗口置顶
 
-#### 2.30.1 鼠标翻转
+* [SmartSystemMenu](https://github.com/AlexanderPro/SmartSystemMenu/blob/master/README_CN.md) 扩展了系统中所有窗口的系统菜单。
+* [SmartContextMenu](https://github.com/AlexanderPro/SmartContextMenu/blob/main/README_CN.md) 为您的操作系统的所有窗口添加了一个上下文菜单。该程序是SmartSystemMenu的改进版
 
-[BetterAndBette](https://www.better365.cn/bab2.html) 
+### 2.31 沙盘程序
 
-#### 2.30.2 电源管理
+[Sandboxie Classic 和 Plus 版](https://sandboxie-plus.com/downloads) 可以运行或安装应用程序而无需永久修改本地或映射驱动器，比如可以软件多开
+
+### 2.32 文本提取器
+
+[WindowTextExtractor](https://github.com/AlexanderPro/WindowTextExtractor/releases) 能够显示大多数 Windows 应用程序中存储在星号 （*****） 后面的密码
+
+### 2.33 桌面壁纸
+
+【win】[拾光壁纸](https://app.nguaduot.cn/timeline) 干净、舒适、流畅的壁纸网站
+
+### 2.34 打字练习
+
+【win】[金山打字通](https://www.51dzt.com)
+
+### 2.35 ai 助手
+
+* [豆包桌面版](https://www.doubao.com/download/desktop)
+* kimi
+
+### 2.36 mac 特有
+
+#### 2.36.1 电源管理
 
 [AlDente](https://apphousekitchen.com) 电池🔋负载限制器
 
-#### 2.30.3 键指如飞 FlyKey
+#### 2.36.2 键指如飞 FlyKey
 
 [键指如飞](https://www.better365.cn/FlyKey.html) 一键展示 Mac 快捷键
 
-### 2.31 windows 特有
+### 2.37 windows 特有
 
-#### 2.31.1 空格预览文件
+#### 2.37.1 空格预览文件
 
 【win】[QuickLook](https://github.com/QL-Win/QuickLook/releases)
 
@@ -672,7 +686,7 @@ not
 
 【win】[Seer](http://www.1218.io/seer.html) 收费就算了
 
-#### 2.31.2 WizMouse 为 win7 必备
+#### 2.37.2 WizMouse 为 win7 必备
 
 【win】[WizMouse](https://antibody-software.com/wizmouse) 一款鼠标增强工具
 
@@ -681,7 +695,7 @@ not
 1. win Vista/7/8 缺失的非激活的窗口下使用滚轮滚动
 2. 反转鼠标滚动方向，类似苹果的自然滚动
 
-#### 2.31.3 windows 系统优化
+#### 2.37.3 windows 系统优化
 
 * 【win】[dism++](https://github.com/Chuyu-Team/Dism-Multi-language) 优化功能挺强，能注入驱动还能辅助装系统。适合高级用户
 
@@ -689,15 +703,15 @@ not
 
 * 【win】[软媒魔方](https://mofang.ruanmei.com)
 
-#### 2.31.4 windows 蓝屏日志分析
+#### 2.37.4 windows 蓝屏日志分析
 
 去 microsoft store 搜索【win】[WinDbg](https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/debugger-download-tools#install-debugging-tools-for-windows)
 
-#### 2.31.5 resource hacker
+#### 2.37.5 resource hacker
 
 解析 exe，例如可以轻松查看【win】[Preme](http://www.premeforwindows.com) 的 ahk 源码
 
-#### 2.31.6 流氓软件禁用
+#### 2.37.6 流氓软件禁用
 
 [GitHub - the1812](https://github.com/the1812/Malware-Patch)/Malware-Patch: 阻止中国流氓软件的管理员授权. / Prevent UAC authorization of Chinese malware.
 

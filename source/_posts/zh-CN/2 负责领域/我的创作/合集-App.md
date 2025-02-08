@@ -224,6 +224,7 @@ not
 #### 安卓平板
 
 * 本地 [椒盐音乐 Salt Player](https://www.coolapk.com/apk/284064)
+* 在线 [lx-Music 洛雪音乐助手](https://github.com/lyswhut/lx-music-mobile/releases)
 * 在线 [酷狗音乐](https://sj.qq.com/appdetail/com.kugou.android) 通用版，已适配平板
 * 在线 [网易云音乐](https://sj.qq.com/appdetail/com.netease.cloudmusic) 通用版，已适配平板，日常有开屏广告
 
