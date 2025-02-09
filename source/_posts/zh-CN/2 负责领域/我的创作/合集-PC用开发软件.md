@@ -24,7 +24,7 @@ categories: 我的创作
 
 挑选软件我尽量考虑以免费为主。
 
-## 1. build tool 构建工具
+## 1 build tool 构建工具
 
 ### 1.1 Web 构建工具
 
@@ -45,7 +45,7 @@ categories: 我的创作
 
 [Maven](https://maven.apache.org) 是一个构建工具，主要用于 Java 应用程序。由 Apache 软件基金会维护，它使用一个名为 POM（Project Object Model）的 XML 文件来描述项目的构建过程、依赖关系和其他配置信息。
 
-[镜像下载](https://repo.huaweicloud.com/apache/maven/maven-3/)
+[镜像下载](https://repo.huaweicloud.com/apache/maven/maven-3)
 
 直链下载
 
@@ -59,7 +59,7 @@ categories: 我的创作
 
 [Gradle](https://gradle.org) 是一个开源的自动化构建系统，它被设计用来支持多语言和多平台的软件项目，尤其是 Java 项目。Gradle 是用 Groovy 和 Kotlin 编写的，它提供了一个基于 Apache Ant 和 Maven 的强大而灵活的构建自动化功能。
 
-[镜像下载](https://mirrors.cloud.tencent.com/gradle/)
+[镜像下载](https://mirrors.cloud.tencent.com/gradle)
 
 直链下载
 
@@ -76,16 +76,16 @@ repositories {
 }
 ```
 
-## 2. DB 数据库
+## 2 DB 数据库
 
 ### 2.1 各类数据库
 
 * [Apache Derby](https://db.apache.org/derby/index.html)
 * [H2 Database](https://www.h2database.com/html/main.html)
-* [MariaDB community server](https://mariadb.com/downloads/community/community-server/)
+* [MariaDB community server](https://mariadb.com/downloads/community/community-server)
 * [MongoDB](https://www.mongodb.com/zh-cn)
 * [MySQL](https://www.mysql.com/)
-* [PostgreSQL](https://www.postgresql.org) | [下载](https://www.postgresql.org/download/)
+* [PostgreSQL](https://www.postgresql.org) | [下载](https://www.postgresql.org/download)
 
 ### 2.2 数据库设计
 
@@ -109,11 +109,11 @@ not
 * 【全平台】[DBeaver Community](https://dbeaver.io/download) 颜值太低
 * 【全平台】[DbVisualizer](https://www.dbvis.com) 付费版才好用
 
-## 3. Docker
+## 3 Docker
 
 【全平台】[Docker](https://www.docker.com/products/docker-desktop)
 
-## 4.【常用】Editor 编辑器
+## 4【常用】Editor 编辑器
 
 【全平台】[VSCode](https://code.visualstudio.com) windows 推荐使用**安装版**而非便携版，这样能及时获得更新。[win 7 最后一个支持版](https://code.visualstudio.com/updates/v1_70)
 
@@ -126,7 +126,7 @@ vscode 插件推荐：[markdownlint](https://marketplace.visualstudio.com/items?
 
 not
 
-* 【全平台 公共预览版免费】[JetBrains Fleet](https://www.jetbrains.com/zh-cn/fleet/) 预览版还不太成熟
+* 【全平台 公共预览版免费】[JetBrains Fleet](https://www.jetbrains.com/zh-cn/fleet) 预览版还不太成熟
 * 【win 精品软件 绿色版】[Notepad++](https://github.com/notepad-plus-plus/notepad-plus-plus) 是好软件，除了言论
 * 【全平台】[Brackets](https://brackets.io) - A modern, open source code editor that understands web design
 * 【win】[EverEdit](https://www.everedit.net) 不好用
@@ -137,9 +137,9 @@ not
 * 【win mac】[notepadnext](https://www.notepadnext.com) A cross-platform, reimplementation of Notepad++. 还不太完善
 * 【全平台】[Phoenix Code](https://phcode.io/#/home) 还不太完善
 * ——————— ฅ՞• •՞ฅ ———————
-* 【已过时】[Atom](https://github.com/atom/atom/)
+* 【已过时】[Atom](https://github.com/atom/atom)
 
-## 5. file compare 文件对比
+## 5 file compare 文件对比
 
 【Win 精品软件】[WinMerge](https://winmerge.org) | [下载页](https://winmerge.org/downloads/?lang=en) 用于比较文件夹和文件，以便于理解和处理的可视文本格式呈现差异。是我离不开 windows 的一个重要原因
 
@@ -155,7 +155,7 @@ not
 
 【全平台 免费】[Meld](https://meld.app) 妥妥的 GNOME 风格，颜值非常 nice
 
-## 6.【常用】IDE 集成开发环境
+## 6【常用】IDE 集成开发环境
 
 * 【win mac 国产】[HBuilder X](https://www.dcloud.io/hbuilderx.html)
 * 【win】[C-Free](http://www.programarts.com/cfree_ch/index.htm)
@@ -168,10 +168,10 @@ not
 * 【全平台 免费】[SpringTools](https://spring.io/tools)
 * 【全平台 付费】[CLion](https://www.jetbrains.com.cn/clion/) for c/c++
 * 【win】[Dev c++](https://github.com/Embarcadero/Dev-Cpp)
-* 【win mac】[Visual Studio](https://visualstudio.microsoft.com/zh-hans/) 你可以使用 C#、F# 或 Visual Basic 语言编写 .NET 应用
+* 【win mac】[Visual Studio](https://visualstudio.microsoft.com/zh-hans) 你可以使用 C#、F# 或 Visual Basic 语言编写 .NET 应用
 * 【全平台】[Code::Blocks](https://www.codeblocks.org) 界面不那么现代
 
-## 7.【常用】lang 编程语言
+## 7【常用】lang 编程语言
 
 ### Autohotkey
 
@@ -247,7 +247,7 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
 [TypeScript](https://www.typescriptlang.org/zh) JavaScript With Syntax For Types.
 
-## 8. MQ 和 OSS
+## 8 MQ 和 OSS
 
 **MQ 消息队列**
 
@@ -266,7 +266,7 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
 * 【全平台】[httpie 桌面版](https://httpie.io/download) | [Releases](https://github.com/httpie/desktop/releases) HTTPie 有桌面版和 cli 版，cross-platform API testing client for humans. Painlessly test REST, GraphQL, and HTTP APIs. 
 * 【mac】[RapidAPI](https://paw.cloud) 颜值功能都在线
-* 【win mac】[SoapUI](https://www.soapui.org/downloads/soapui/)
+* 【win mac】[SoapUI](https://www.soapui.org/downloads/soapui)
 * 【全平台】[Reqable](https://reqable.com/zh-CN) 也可用于抓包
 
 not
@@ -407,7 +407,7 @@ not
 
 ![保持活动状态](./imgs/%E4%B8%93%E9%A2%98-%E7%A0%81%E5%86%9C%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/%E4%BF%9D%E6%8C%81%E6%B4%BB%E5%8A%A8%E7%8A%B6%E6%80%81.png)
 
-## 16.terminal 终端
+## 16. terminal 终端
 
 ### 【win】微软 terminal
 
@@ -462,7 +462,7 @@ mac 已经将 zsh 取代 bash 作为默认 shell 了
 
 ### 网络请求库
 
-【js】[Axios](https://www.axios-http.cn/)
+【js】[Axios](https://www.axios-http.cn)
 
 ### UI 框架
 

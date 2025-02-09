@@ -24,11 +24,11 @@ categories: 我的创作
 #### 1.0.1 安全类
 
 * 【win】[360 安全卫士极速版](https://weishi.360.cn) | [微软电脑管家](https://pcmanager.microsoft.com/zh-cn)+[火绒安全](https://www.huorong.cn)
-* 【mac】[腾讯柠檬清理](https://lemon.qq.com)-原腾讯电脑管家 for mac
+* 【mac】[腾讯柠檬清理](https://lemon.qq.com) 原腾讯电脑管家 for mac
 
 #### 1.0.2 浏览器
 
-* 【win 绿色版 mac】[Catsxp 猫眼浏览器](https://www.catsxp.com) 鼠标悬停切换标签功能很好用 |【win 绿色版】[百分浏览器](http://www.centbrowser.cn)
+* 【win 绿色版 & mac】[Catsxp 猫眼浏览器](https://www.catsxp.com) 鼠标悬停切换标签功能很好用 |【win 绿色版】[百分浏览器](http://www.centbrowser.cn)
 * 【linux】[火狐浏览器](https://www.firefox.com.cn)
 <!-- more -->
 
@@ -47,19 +47,19 @@ categories: 我的创作
 
 #### 1.1.1【推荐】鼠标手势
 
-* 【win】[WGestures 1 代](https://www.yingdev.com/projects/wgestures) | [WGestures 2 代](https://store.lizhi.io/site/products/id/523?cid=46jjayiu) 付费
+* 【win】[WGestures 1 代](https://www.yingdev.com/projects/wgestures) | [WGestures 2](https://store.lizhi.io/site/products/id/523?cid=46jjayiu) 付费
 * 【mac】[BetterAndBetter](https://www.better365.cn/bab2.html) 不仅仅是鼠标手势
 * 【linux】KDE 桌面已内置鼠标手势
 
 #### 1.1.2【推荐】键鼠增强
 
-* 【win 开源绿色版 自荐】[**捷键**](https://feipig.fun/jiejian)
+* 【win 开源绿色版 自荐】[捷键](https://feipig.fun/jiejian)
 * 【mac】[Hammerspoon](https://www.hammerspoon.org) 可自己写脚本
 * 【linux】AutoKey [Github 地址](https://github.com/autokey/autokey) & [帮助文档](https://autokey.github.io/intro.html) 适用于 x11 和 qt 平台
 
 #### 1.1.3【常用】截图
 
-* 【win mac 绿色版】[PixPin](https://pixpinapp.com) 不付费也能使用 OCR 和长截图功能 | [ShareX](https://getsharex.com)
+* 【win 绿色版 & mac】[PixPin](https://pixpinapp.com) 不付费也能使用 OCR 和长截图功能 |【win 开源绿色版】[ShareX](https://getsharex.com)
 * liunx 系统自带
 
 #### 1.1.4【常用】护眼
@@ -137,9 +137,9 @@ linux 除了 WPS 和 LibreOffice，可以安装 [WinApps for linux](https://nows
 
 **windows 平台**
 
-* 阅读器 【win 绿色版】[SumatraPDF](https://www.sumatrapdfreader.org) is a PDF, ePub, MOBI, CHM, XPS, DjVu, CBZ, CBR reader for Windows 提供安装版和绿色版，小巧好用
+* 阅读器 【win 绿色版】[SumatraPDF](https://www.sumatrapdfreader.org) is a PDF, ePub, MOBI, CHM, XPS, DjVu, CBZ, CBR reader for Windows 提供安装版和绿色版，小巧但实用
 * 编辑器 【win】[PDFgear](https://www.pdfgear.com/download)
-* PDF 标注做笔记 [BookxNote](http://www.bookxnote.com) 非常好用
+* PDF 标注做笔记 [BookxNote](http://www.bookxnote.com)
 
 **mac 平台**
 
@@ -661,24 +661,32 @@ not
 
 【win】[金山打字通](https://www.51dzt.com)
 
-### 2.35 ai 助手
+### 2.35 AI 助手
 
 * [豆包桌面版](https://www.doubao.com/download/desktop)
 * kimi
 
-### 2.36 mac 特有
+### 2.36 网盘挂载
 
-#### 2.36.1 电源管理
+【win linux】[raiDrive](https://www.raidrive.com) 像 USB 驱动器一样安装云存储
+
+### 2.37 宏面板
+
+[Macro Deck](https://macrodeck.org) 和带屏幕的小爱是绝配。一款开源的自动化控制软件，可用于流媒体直播、游戏、智能家居等多种场景，支持宏键、复杂逻辑和多设备控制，免费且可通过插件扩展功能。
+
+### 2.38 mac 特有
+
+#### 2.38.1 电源管理
 
 [AlDente](https://apphousekitchen.com) 电池🔋负载限制器
 
-#### 2.36.2 键指如飞 FlyKey
+#### 2.38.2 键指如飞 FlyKey
 
 [键指如飞](https://www.better365.cn/FlyKey.html) 一键展示 Mac 快捷键
 
-### 2.37 windows 特有
+### 2.39 windows 特有
 
-#### 2.37.1 空格预览文件
+#### 2.39.1 空格预览文件
 
 【win】[QuickLook](https://github.com/QL-Win/QuickLook/releases)
 
@@ -686,7 +694,7 @@ not
 
 【win】[Seer](http://www.1218.io/seer.html) 收费就算了
 
-#### 2.37.2 WizMouse 为 win7 必备
+#### 2.39.2 WizMouse 为 win7 必备
 
 【win】[WizMouse](https://antibody-software.com/wizmouse) 一款鼠标增强工具
 
@@ -695,23 +703,21 @@ not
 1. win Vista/7/8 缺失的非激活的窗口下使用滚轮滚动
 2. 反转鼠标滚动方向，类似苹果的自然滚动
 
-#### 2.37.3 windows 系统优化
+#### 2.39.3 windows 系统优化
 
 * 【win】[dism++](https://github.com/Chuyu-Team/Dism-Multi-language) 优化功能挺强，能注入驱动还能辅助装系统。适合高级用户
 
-怀旧经典
+怀旧经典【win】[软媒魔方](https://mofang.ruanmei.com)
 
-* 【win】[软媒魔方](https://mofang.ruanmei.com)
-
-#### 2.37.4 windows 蓝屏日志分析
+#### 2.39.4 windows 蓝屏日志分析
 
 去 microsoft store 搜索【win】[WinDbg](https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/debugger-download-tools#install-debugging-tools-for-windows)
 
-#### 2.37.5 resource hacker
+#### 2.39.5 resource hacker
 
 解析 exe，例如可以轻松查看【win】[Preme](http://www.premeforwindows.com) 的 ahk 源码
 
-#### 2.37.6 流氓软件禁用
+#### 2.39.6 流氓软件禁用
 
 [GitHub - the1812](https://github.com/the1812/Malware-Patch)/Malware-Patch: 阻止中国流氓软件的管理员授权. / Prevent UAC authorization of Chinese malware.
 
@@ -747,7 +753,7 @@ not
 
 **提醒：不听不信，谨防陌生人诈骗！**
 
-[Macast](https://github.com/xfangfang/Macast/releases) 用于便捷的 DLNA 投屏
+[Macast](https://github.com/xfangfang/Macast/releases) DLNA 投屏到电脑
 
 备用
 
@@ -761,6 +767,7 @@ not
 ### 3.5 格式转换
 
 * 【精品 win 安装版】[格式工厂](http://www.pcgeshi.com/index.html) 全功能转换，不得不说还得是 windows 版的老牌和强大，实属装机必备 | [格式工厂 mac 版](https://apps.apple.com/cn/app/%E6%A0%BC%E5%BC%8F%E5%B7%A5%E5%8E%82/id6443540458?mt=12)
+* 曾经限免 [VideoProc Converter AI](https://www.videoproc.com/zh/video-converting-software/?ttpath=site-header-zh)
 * 【全平台】[HandBrake](https://handbrake.fr) 视频转换
 
 官网收录：【mac】[即刻转换](https://zh.okaapps.com/product/1637557903) | OmniConverter
@@ -803,7 +810,7 @@ not
 
 ### 4.3 红白机模拟器
 
-[小鸡模拟器 windows 经典版](https://dl.xiaoji001.com/download/pc/xiaoji_0.0.30.exe)
+[小鸡模拟器 windows 经典版](https://dl.xiaoji001.com/download/pc/xiaoji_0.0.30.exe) | [VirtuaNES](https://www.emulator-zone.com/doc.php/nes/virtuanes.html)
 
 ## 5 一些优秀的应用厂商
 
@@ -827,9 +834,8 @@ not
 一些用过的软件但主观关键明显不好用的记录，说不定下版会优化，所以仅供参考
 
 * [图吧工具箱](https://www.tbtool.cn) 中规中矩，功能挺强大
-* [Advanced IP Scanner](https://www.advanced-ip-scanner.com/cn) – 免费下载网络扫描程序 我不太喜欢安装版的
+* [Advanced IP Scanner](https://www.advanced-ip-scanner.com/cn) – 免费下载网络扫描程序 我不太喜欢安装版
 * [DisplayFusion](https://www.displayfusion.com)【win】
-* [paint.net](https://www.getpaint.net) 画图软件 一般般，貌似不跨平台
 * ——————— ฅ՞• •՞ฅ ———————
 * [Fantastical](https://apps.apple.com/cn/app/fantastical-calendar/id975937182)【mac】拥有和系统自带日历应用类似界面布局，但界面信息更加直观自然。软件支持苹果各个平台，除了可以与 iCloud / Google / Yahoo 日历无缝整合同步外，它还解决了系统自带日历 APP 功能的诸多不足
 * [Lively Wallpaper - Microsoft Store 应用程序](https://apps.microsoft.com/store/detail/lively-wallpaper) 占用 CPU 资源太大
@@ -849,14 +855,14 @@ not
 * adguard 免费体验 2 天太少了
 * AuTool-0.1.15-win-x64 暂时不好用
 * 【win】CleanMy PC 软件都不更新
-* Cursor Setup 0.1.3-x64 不太完善，淘汰
+* Cursor 0.1.3-x64 不太完善，淘汰
 * Dawn Launcher 不好用
 * EncryptoforWin 厂商专注 mac 已经不更新了
 * 【win mac】listen1 2023 年初好多歌曲都不能播放了，无奈放弃
 * MQTT.FX 很久没更新了，淘汰
 * OfficeBox 官方绿色版 颜值太低且功能不强大，差评
 * 【Win 商店版】OneAuth 需要先登录的二步验证，差评
-* Parallels desktop 属于买断制，新版本不能用，啥玩意，再也不买了
+* Parallels desktop 属于买断特定版本，啥玩意，再也不买了
 * PDF Shaper Professional v13.3 只有些页面功能而已
 * 【win mac linux】QOwnNotes 不好用，淘汰
 * 【win mac linux】Transmission 只能下载 bt 种子，淘汰

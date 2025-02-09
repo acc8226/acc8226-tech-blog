@@ -14,7 +14,7 @@ comments: false
 
 * 邮箱：[acc8226@qq.com](mailto:acc8226@qq.com)
 * 软件工程专业（本科）
-* 曾经移动端安卓应用开发、后端 Java 应用开发
+* 曾经安卓移动应用开发、后端 Java 应用开发
 
 - - -
 
