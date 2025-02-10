@@ -6,7 +6,7 @@ updated: 2025-01-14 10:37:51
 categories: 我的创作
 ---
 
-本日志为[《合集-PC用日常软件》](https://feipig.fun/mypc)的姊妹篇。
+本日志为[《合集-PC日常用软件》](https://feipig.fun/mypc)的姊妹篇。
 
 ## 前言
 
@@ -867,7 +867,7 @@ not
 
 not
 
-* [文小言（原文心一言）](https://sj.qq.com/appdetail/com.baidu.newapp) 个人体审核不过是什么玩意
+* [文小言](https://sj.qq.com/appdetail/com.baidu.newapp) 个人体审核不过是什么玩意
 * [讯飞星火](https://sj.qq.com/appdetail/com.iflytek.spark) 感觉还差点意思
 
 ## 19 智能家居
@@ -941,11 +941,12 @@ never
 * [美食杰](https://sj.qq.com/appdetail/com.jesson.meishi)
 * [下厨房](https://sj.qq.com/appdetail/com.xiachufang)
 
-## 28 新媒体运营
+## 28 电影票房分析
 
 ### 通用
 
-[猫眼专业版](https://sj.qq.com/appdetail/com.sankuai.moviepro) 看电影实时票房用
+* [灯塔专业版](https://sj.qq.com/appdetail/com.alipictures.moviepro) 个人认为灯塔比猫眼好用
+* [猫眼专业版](https://sj.qq.com/appdetail/com.sankuai.moviepro)
 
 ## 29 拍照和身份证扫描工具
 
