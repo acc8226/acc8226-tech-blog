@@ -20,7 +20,7 @@ npm uninstall -g yarn
 清理缓存
 yarn cache clean
 
+<!-- more -->
+
 强制清缓存
 npm cache clean --force
-
-<!-- more -->

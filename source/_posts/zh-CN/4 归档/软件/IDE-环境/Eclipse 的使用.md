@@ -123,6 +123,6 @@ Restart Eclipse workbench.
 
 To uninstall, just remove the jar.
 
-## Eclipse 教程 | 菜鸟教程
+## 参考
 
-<https://www.runoob.com/eclipse/eclipse-tutorial.html>
+[Eclipse 教程](https://www.runoob.com/eclipse/eclipse-tutorial.html) | 菜鸟教程

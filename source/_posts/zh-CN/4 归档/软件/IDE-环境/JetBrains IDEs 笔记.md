@@ -5,7 +5,7 @@ updated: 2024-12-11 12:42:24
 categories: IDE-使用
 ---
 
-## 下载和安装
+## 下载和安装（以 IDEA 举例）
 
 <https://www.jetbrains.com/idea/download/other.html>
 
@@ -22,7 +22,7 @@ categories: IDE-使用
 
 <!-- more -->
 
-```text
+```txt
 IntelliJ IDEA
 
 INSTALLATION INSTRUCTIONS

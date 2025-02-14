@@ -1,5 +1,5 @@
 ---
-title: IDE 中的字体选择
+title: IDE 的字体选择
 date: 2025-01-24 10:32:00
 updated: 2025-01-24 10:32:00
 categories: IDE-使用
@@ -7,9 +7,8 @@ categories: IDE-使用
 
 ## 基础知识
 
-Ligatures 是一种将多个字符组合成一个字符的特性，例如将 ==> 显示为一个整体符号。如果你需要这种特性，可以选择支持 Ligatures 的字体。
-
-Nerd Font Mono（或 NFM）： 这是专为等宽字体设计的版本，适合终端使用。等宽字体的特点是每个字符宽度一致，适合代码编辑和命令行操作。
+* Ligatures 连字是一种将多个字符组合成一个字符的特性，例如将 ==> 显示为一个整体符号。如果你需要这种特性，可以选择支持 Ligatures 的字体。
+* Nerd Font Mono（或 NFM 体） 是专为等宽字体设计的版本，适合终端使用。等宽字体的特点是每个字符宽度一致，适合代码编辑和命令行操作。
 
 ## mono 字体
 
@@ -170,3 +169,8 @@ Google 中国提供的 Google Fonts 国内镜像
 
 * [Fontsource](https://fontsource.org)
 * [Free Fonts!](https://www.fontsquirrel.com/) Legit Free & Quality » Font Squirrel
+
+## 总结
+
+* Visual Studio Code 编辑器字体 - `'MonaspiceNe Nerd Font', monospace`
+* 微软终端 -`MonaspiceNe Nerd Font`

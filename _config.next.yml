@@ -319,7 +319,7 @@ font:
   # Use custom fonts families or not.
   # Depended options: `external` and `family`.
   enable: true
-  # Font settings for site title (.site-title). 用于主标题
+  # Font settings for site title (.site-title). 用于主标题 落霞孤鹜
   title:
     external: true
     family: LXGW WenKai TC

@@ -17,8 +17,9 @@ categories: 文本编辑器
 
 ## 我的必装插件
 
-* [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
-* [Markmap](https://marketplace.visualstudio.com/items?itemName=gera2ld.markmap-vscode) - Visual Studio Marketplace
+* [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) markdown 语法规范提示
+* [Markmap](https://marketplace.visualstudio.com/items?itemName=gera2ld.markmap-vscode) 将 markdown 渲染成脑图
+* [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) 运行多种语言的代码片段或代码文件
 
 <!-- more -->
 

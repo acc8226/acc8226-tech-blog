@@ -159,18 +159,19 @@ not
 ## 6【常用】IDE 集成开发环境
 
 * 【win mac 国产】[HBuilder X](https://www.dcloud.io/hbuilderx.html)
-* 【win】[C-Free](http://www.programarts.com/cfree_ch/index.htm)
 * 【win mac】[微信开发者工具](https://developers.weixin.qq.com/miniprogram/dev/devtools/devtools.html)
 * ——————— ฅ՞• •՞ฅ ———————
-* 【全平台】[Eclipse](https://www.eclipse.org/downloads) 貌似不太受欢迎且目前看内存占用至少 1 个 G
+* 【全平台】[Code::Blocks](https://www.codeblocks.org/downloads/binaries/) for c/c++
+* [小熊猫C++（RedPanda C++）](http://royqh.net/redpandacpp/)
+* 【全平台 付费】[CLion](https://www.jetbrains.com.cn/clion/)
+* ——————— ฅ՞• •՞ฅ ———————
+* 【全平台】[Eclipse](https://www.eclipse.org/downloads) 貌似不太受欢迎但占用内存稍小
 * 【全平台 社区版免费】[IntelliJ IDEA](https://www.jetbrains.com.cn/idea/)，其中 [EPA 版本](https://www.jetbrains.com/resources/eap/) 更新太频繁不推荐
+* 【全平台 免费】[SpringTools](https://spring.io/tools)
+* ——————— ฅ՞• •՞ฅ ———————
 * 【全平台 社区版免费】[PyCharm](https://www.jetbrains.com.cn/pycharm/)
 * 【全平台 对非商业用途免费】[WebStorm](https://www.jetbrains.com.cn/webstorm/)
-* 【全平台 免费】[SpringTools](https://spring.io/tools)
-* 【全平台 付费】[CLion](https://www.jetbrains.com.cn/clion/) for c/c++
-* 【win】[Dev c++](https://github.com/Embarcadero/Dev-Cpp)
 * 【win mac】[Visual Studio](https://visualstudio.microsoft.com/zh-hans) 你可以使用 C#、F# 或 Visual Basic 语言编写 .NET 应用
-* 【全平台】[Code::Blocks](https://www.codeblocks.org) 界面不那么现代
 
 ## 7【常用】lang 编程语言
 
@@ -209,10 +210,11 @@ Kotlin [官网](https://kotlinlang.org)
 
 [Node.js](https://nodejs.org/en) | [npmjs.com 镜像站](https://registry.npmmirror.com/binary.html?path=node/)
 
-* [node-v20.12.2-win-x64.zip](https://registry.npmmirror.com/-/binary/node/latest-v20.x/node-v20.12.2-win-x64.zip)
-* [node-v18.20.1-win-x64.zip](https://registry.npmmirror.com/-/binary/node/latest-v18.x/node-v18.20.1-win-x64.zip)
-* [node-v16.20.2-win-x64.zip](https://cdn.npmmirror.com/binaries/node/v16.20.2/node-v16.20.2-win-x64.zip)
-* [node-v14.21.3-win-x64.zip](https://cdn.npmmirror.com/binaries/node/v14.21.3/node-v14.21.3-win-x64.zip)
+lts 下载：
+
+* https://nodejs.org/dist/v22.14.0/node-v22.14.0-win-x64.zip
+* https://nodejs.org/dist/v20.18.3/node-v20.18.3-win-x64.zip
+* https://nodejs.org/dist/v18.20.6/node-v18.20.6-win-x64.zip
 
 配置 registry 加速
 

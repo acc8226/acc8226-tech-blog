@@ -1,5 +1,5 @@
 ---
-title: IDEA 插件推荐
+title: JetBrains IDEs 插件推荐
 date: 2020-12-05 15:33:56
 updated: 2022-11-09 13:56:00
 categories: IDE-使用
@@ -10,14 +10,6 @@ Plugins | JetBrains <https://plugins.jetbrains.com/>
 以下是介绍顺序按照优先级排序
 
 ## 必备
-
-### Lombok
-
-目前 ideaJ 已内置。
-
-Lombok - Plugins | JetBrains <https://plugins.jetbrains.com/plugin/6317-lombok/>
-
-之所以必备，是因为 spring boot 对 lombok 也不抗拒。项目中也是使用广泛。
 
 ### GsonFormatPlus
 
@@ -31,19 +23,31 @@ Lombok - Plugins | JetBrains <https://plugins.jetbrains.com/plugin/6317-lombok/>
 
 <!-- more -->
 
-### Alibaba Java Coding Guidelines
+## 编程语言类
+
+### for java
+
+#### Lombok
+
+目前 ideaJ 已内置。
+
+#### Alibaba Java Coding Guidelines
 
 可以对代码进行编码规约扫描，代码扫描的宽松程度适中。
 
 这里我解释下 Blocker/Critical/Major 三个等级在 Snoar 中对代码规则有五个级别，这是前三个：崩溃/严重/重要 ，也就是说前两级是必须要处理掉的。
 
-### Spring Boot Assistant
+#### Spring Boot Assistant
 
 Spring Boot Assistant - IntelliJ IDEA & Android Studio Plugin | Marketplace <https://plugins.jetbrains.com/plugin/17747-spring-boot-assistant>
 
-### MyBatisX
+#### MyBatisX
 
 MyBatisX - IntelliJ IDEA Plugin | Marketplace <https://plugins.jetbrains.com/plugin/10119-mybatisx>
+
+### for c/c++
+
+如何在一个 c 项目运行多个 main 函数。使用插件 [New Executable C/C++ Plugin for JetBrains IDEs | JetBrains Marketplace](https://plugins.jetbrains.com/plugin/12078-new-executable-c-c-) 即可解决。
 
 ## 可选
 
