@@ -318,13 +318,16 @@ albert 安装不上
 
 ### 2.0【常用】驱动运行库硬件检测
 
-理论上安装鲁大师一个就够用了，驱动可以认准主板官网或者用 dism++ 备份原有驱动，如果不能连接网络我通常会安装【win】 [驱动总裁万能网卡绿色版](https://www.sysceo.com/Software)
+驱动请认准设备官网
+
+驱动备份
+[dism++](https://github.com/Chuyu-Team/Dism-Multi-language)
 
 硬件检测
 * 【win】[CPU-Z | Softwares | CPUID](https://www.cpuid.com/softwares/cpu-z.html)
 * 【win】[GUP-Z](https://www.techpowerup.com/download/techpowerup-gpu-z)
-* 【win】[鲁大师](https://www.ludashi.com) 驱动管理+硬件检测，可解决未安装任何音频输出设备的问题
-* 【win】[360 驱动大师](http://dm.weishi.360.cn/home.html)
+* 【win】[360 驱动大师](https://dm.weishi.360.cn/home.html)
+* 【win】[驱动精灵](http://www.drivergenius.com)
 * [CrystalDiskInfo](https://crystalmark.info/en) 磁盘检测
 
 运行库
@@ -337,14 +340,15 @@ albert 安装不上
 not
 
 * 【win】[Speccy](https://www.ccleaner.com/zh-cn/speccy) 虽说是【win mac】[CCleaner](https://www.ccleaner.com/zh-cn/ccleaner) 出品但是没有便携版
-* 【win】[驱动精灵](http://www.drivergenius.com)
-* 【win】[驱动人生](https://www.160.com) 下载驱动限速严重
+* 【win】[驱动人生](https://www.160.com) 非会员下载驱动限速严重
+* 【win】[鲁大师](https://www.ludashi.com) 广告满天飞
+* 【win】 [驱动总裁](https://www.sysceo.com/Software) 需要微信登录才能下载
 
 官网收录：【mac】[AppCleaner](https://freemacsoft.net/appcleaner)
 
 ### 2.1【常用】激活类
 
-[GitHub - zbezj/HEU_KMS_Activator](https://dl.lancdn.com/landian/soft/heu) | [备份站](https://dl.lancdn.com/landian/soft/heu) 支持数字激活LTSC，win11与office2021等激活
+[GitHub - zbezj/HEU_KMS_Activator](https://dl.lancdn.com/landian/soft/heu) | [备份站](https://dl.lancdn.com/landian/soft/heu) 支持数字激活 LTSC，win11 与 office2021 等激活
 
 【win】[云萌 Windows 激活工具](https://cmwtat.cloudmoe.com/cn.html)
 
@@ -705,7 +709,7 @@ not
 
 #### 2.39.3 windows 系统优化
 
-* 【win】[dism++](https://github.com/Chuyu-Team/Dism-Multi-language) 优化功能挺强，能注入驱动还能辅助装系统。适合高级用户
+* 【win】[Dism++](https://github.com/Chuyu-Team/Dism-Multi-language) 优化功能挺强，能注入驱动还能辅助装系统，还能找回 win 10 旧版图片查看器
 
 怀旧经典【win】[软媒魔方](https://mofang.ruanmei.com)
 

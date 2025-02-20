@@ -331,7 +331,37 @@ ms-settings:wheel 滚轮
 
 Get-FileHash -Algorithm SHA256 文件的路径
 
+### win 10 删除 3D 对象等7个文件夹
+
+注册表管理器regedit
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace
+
+按照需要，删除以下7个文件夹。
+
+[3D 对象]
+0DB7E03F-FC29-4DC6-9020-FF41B59E513A
+
+[视频]
+f86fa3ab-70d2-4fc7-9c99-fcbf05467f3a
+
+[音乐]
+3dfdf296-dbec-4fb4-81d1-6a3438bcf4de
+
+[图片]
+24ad3ad4-a569-4530-98e1-ab02f9417aa8
+
+[下载]
+088e3905-0323-4b02-9826-5d99428e115f
+
+[桌面]
+B4BFCC3A-DB2C-424C-B029-7FE99A87C641
+
+[文档]
+d3162b92-9365-467a-956b-92703aca08af
+
 ### 更改 cmd 命令行工具的外观【已废弃】
+
+windows 新版自带终端是目前最好的选择。
 
 <https://github.com/microsoft/terminal/releases/tag/1904.29002>
 
