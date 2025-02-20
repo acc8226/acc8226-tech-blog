@@ -635,10 +635,6 @@ not
 
 ### 安卓和 iPhone
 
-#### 订酒店
-
-用目前最火的[携程旅行](https://sj.qq.com/appdetail/ctrip.android.view) 或者 美团里的酒店频道
-
 #### 火车票
 
 铁路 12306 [app](https://sj.qq.com/appdetail/com.MobileTicket) / 小程序 候补功能还行
@@ -648,12 +644,17 @@ not
 
 我不怎么坐，一般用携程够用了
 
+#### 订酒店
+
+用目前最火的[携程旅行](https://sj.qq.com/appdetail/ctrip.android.view) 或者 美团里的酒店频道
+
 备用
 
 1. 格林 [app](https://sj.qq.com/appdetail/com.greentree.android) / 小程序 由于当年办了一个金卡会员，虽然很久没用了，可能有些优惠
 1. 飞猪 [app](https://sj.qq.com/appdetail/com.taobao.trip) 不怎么用，感觉阿里没做起来
+1. [马蜂窝](https://sj.qq.com/appdetail/com.mfw.roadbook) 懒人玩法攻略，最近又接入了 ai
 
-记录：有一次使用去哪儿，感觉还是去哪儿的票价便宜些 这里由于我没仔细阅读，导致取消订单后重下单付款了 120，长沙金井的老板真黑，我应该提前和他说我第二天早起会退房的，但主要损失还是被无良商户 和 无良信贷中介 和 被 zha
+记录：有一次使用去哪儿，感觉还是去哪儿的票价便宜些 这里由于我没仔细阅读，导致取消订单后重下单付款了 120，长沙金井的老板真黑，我应该提前和他说我第二天早起会退房的，但主要损失还是被无良商户 和 无良信贷中介 和被诈
 
 not
 
@@ -864,6 +865,12 @@ not
 * [豆包](https://sj.qq.com/appdetail/com.larus.nova)
 * [通义](https://sj.qq.com/appdetail/com.aliyun.tongyi)
 * [秘塔搜索](https://metaso.cn/) 不需要登录就能搜
+* [DeepSeek](https://sj.qq.com/appdetail/com.deepseek.chat) 免费和全球领先 AI 模型互动交流
+
+留存
+
+* [纳米 AI 搜索](https://sj.qq.com/appdetail/com.qihoo.namiso) 一般般
+* [腾讯元宝](https://sj.qq.com/appdetail/com.tencent.hunyuan.app.chat) DeepSeek R1 联网、满血
 
 not
 
@@ -1011,7 +1018,7 @@ APTV
 
 考公考编
 
-* 【强烈推荐】[公考雷达](https://sj.qq.com/appdetail/com.maidu.gkld) 选岗神器
+* 【强烈推荐】[公考雷达](https://sj.qq.com/appdetail/com.maidu.gkld) 实属选岗神器
 * ——————— ฅ՞• •՞ฅ ———————
 * [高途公考](https://sj.qq.com/appdetail/com.gaotu100.gongkao) 文档附件预览特别好用，查询招信息较为方便但是资源少
 * [粉笔](https://sj.qq.com/appdetail/com.fenbi.android.servant) 比较清新，查询招考信息较为方便
@@ -1019,7 +1026,8 @@ APTV
 * ——————— ฅ՞• •՞ฅ ———————
 * [疯狂刷题](https://sj.qq.com/appdetail/com.yaerxing.fkst) 汇聚大量包括了直至大学、考研优题、真题、好题
 * [一起公考](https://sj.qq.com/appdetail/com.zhangshangyiqi.civilserviceexam) 免登录就能刷很多题，还有少量免费视频课
-* [一起公考AI课](https://sj.qq.com/appdetail/com.zhihu.gongkao.android)
+* [一起公考AI课](https://sj.qq.com/appdetail/com.zhihu.gongkao.android) 界面美观
+* [101贝考](https://sj.qq.com/appdetail/com.nd.up91.overall) 覆盖学科全面的手机做题
 
 软考
 
