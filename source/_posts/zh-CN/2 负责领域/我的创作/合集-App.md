@@ -99,7 +99,7 @@ not
 
 Bitwarden【已适配安卓平板】[Github 版](https://github.com/bitwarden/android/releases) 可以云端存储的密码管理器，支持本地导入导出密码
 
-选择 f-droid 和 普通版均可，但我一般会选择 f-droid，因为反正国内网络环境堪忧
+推荐选择 f-droid，因为国内网络环境堪忧
 
 ### 1.3 邮件收发
 
@@ -542,11 +542,9 @@ not
 * [牛客](https://sj.qq.com/appdetail/com.nowcoder.app.florida) 和上面提到的力扣网类似，面试 + 学算法
 * [稀土掘金](https://sj.qq.com/appdetail/com.daimajia.gold) 很清爽
 * ——————— ฅ՞• •՞ฅ ———————
-* [51 CTO](https://sj.qq.com/appdetail/com.cto51.student)
-* [慕课网](https://sj.qq.com/appdetail/cn.com.open.mooc) 主打 IT 课程，且有一部分免费资源可以离线下载
-* [网易云课堂](https://sj.qq.com/appdetail/com.netease.edu.study)
-* [希赛网](https://sj.qq.com/appdetail/com.xuesaieducation)
 * [知乎知学堂](https://sj.qq.com/appdetail/com.zhihu.zhixuetang.android) 无广告
+* [慕课网](https://sj.qq.com/appdetail/cn.com.open.mooc) 主打 IT 课程，且有一部分免费资源可以离线下载
+* [51 CTO](https://sj.qq.com/appdetail/com.cto51.student) | [网易云课堂](https://sj.qq.com/appdetail/com.netease.edu.study) | [希赛网](https://sj.qq.com/appdetail/com.xuesaieducation)
 
 not
 
@@ -556,10 +554,8 @@ not
 
 ### iPhone
 
-* [每日英语听力](https://sj.qq.com/appdetail/com.qianyan2.ting.en)
-* [欧路词典](https://sj.qq.com/appdetail/com.eusoft.eudic)
-* 算法动画图解
 * [多邻国](https://sj.qq.com/appdetail/com.duolingo) 多国语言学习
+* [每日英语听力](https://sj.qq.com/appdetail/com.qianyan2.ting.en) | [欧路词典](https://sj.qq.com/appdetail/com.eusoft.eudic)
 
 ### iPad
 
@@ -586,8 +582,8 @@ not
 ### 安卓
 
 * 美团 [app](https://sj.qq.com/appdetail/com.sankuai.meituan) / 小程序
-* [最会买](https://sj.qq.com/appdetail/com.ruanmei.zuihuimai)
 * 保利电影 [app](https://sj.qq.com/appdetail/com.zhonglan.polyapp) / 小程序
+* [最会买](https://sj.qq.com/appdetail/com.ruanmei.zuihuimai)
 
 备用
 
@@ -659,7 +655,7 @@ not
 
 ### 安卓平板
 
-* [高铁管家](https://sj.qq.com/appdetail/com.gtgj.view) 至少适配了平板
+[高铁管家](https://sj.qq.com/appdetail/com.gtgj.view) 至少适配了平板
 
 ## 9 社交类
 
@@ -802,7 +798,7 @@ not
 
 ### 安卓
 
-* [360 极速浏览器](https://sj.qq.com/appdetail/com.qihoo.contents) 内置了安全大脑非常好用，毕竟安全第一位
+[360 极速浏览器](https://sj.qq.com/appdetail/com.qihoo.contents) 安全第一位
 
 备用
 
@@ -839,7 +835,7 @@ not
 
 not
 
-* [Chrome](https://sj.qq.com/appdetail/com.android.chrome) 不太好用
+[Chrome](https://sj.qq.com/appdetail/com.android.chrome) 不太好用
 
 ## 17 知识社区
 
@@ -1087,7 +1083,7 @@ not
 
 * 在线 [讯飞语记](https://sj.qq.com/appdetail/com.iflytek.vflynote) 支持实时语音听写很好用
 * 本地 [Notepad, Notes, Easy Notebook](https://notepad-notes-easy-notebook.en.uptodown.com/android)（记事本、便签、清单 - Notein）颜值和功能都不错
-* 本地 [obsidian](https://obsidian.md/download) 用于打开格式优美的 markdown 本地笔记
+* 本地 [obsidian](https://obsidian.md/download) 格式排版极佳的 markdown 笔记
 
 not
 
@@ -1095,8 +1091,8 @@ not
 * [Day One Journal App](https://dayoneapp.com/) 颜值高，免费版限 1 台设备，算了
 * [Simplenote](https://simplenote.com/) 极简，无限同步，不限设备，仅限纯文本，兼容 markdown 格式，但是国内网络你懂的
 * ——————— ฅ՞• •՞ฅ ———————
-* [印象笔记](https://sj.qq.com/appdetail/com.yinxiang) 限制 2 台设备
-* [有道云笔记](https://sj.qq.com/appdetail/com.youdao.note) 限制 2 台设备
+* [印象笔记](https://sj.qq.com/appdetail/com.yinxiang) 已限制 2 台设备
+* [有道云笔记](https://sj.qq.com/appdetail/com.youdao.note) 已限制 2 台设备
 * ——————— ฅ՞• •՞ฅ ———————
 * [纯纯写作](https://sj.qq.com/appdetail/com.drakeet.purewriter) 这种组织方式我不喜欢而已，但是本身设计很优秀
 
@@ -1117,7 +1113,7 @@ not
 
 ## 44 文件同步
 
-【全平台】[Resilio Sync](https://www.resilio.com/)
+【全平台】[Resilio Sync](https://www.resilio.com)
 
 ## 45 题目解析
 
@@ -1133,7 +1129,11 @@ not
 
 [清浊](https://www.dircleaner.com)
 
-## 47 游戏
+## 47 格式转换
+
+not 格式工厂
+
+## 48 游戏
 
 ### iPhone 和 iPad
 
@@ -1160,7 +1160,7 @@ Bean's Quest 算是 1 代 和 Bean Dreams 算是 2 代
 ### 一些优秀的应用厂商
 
 Simple Design Ltd.
-出品了 [Notepad, Notes, Easy Notebook](https://notepad-notes-easy-notebook.en.uptodown.com/android)（记事本、便签、清单 - Notein）带有提醒功能的便签记事本和备忘录应用，可随时随地轻松记笔记、写便签、列待办事项和购物清单等。
+出品了 [Notepad, Notes, Easy Notebook](https://notepad-notes-easy-notebook.en.uptodown.com/android)（记事本、便签、清单 - Notein）带有提醒功能的便签记事本和备忘录应用，可随时随地轻松记笔记、写便签、列待办事项和购物清单等
 [All Document Reader](https://alldocumentreader-office-viewer-filereader.en.uptodown.com/android)
 [PDF Reader](https://pdf-reader-pdfviewer-pdfeditor.en.uptodown.com/android)
 
