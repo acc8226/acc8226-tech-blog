@@ -34,7 +34,8 @@ categories: 我的创作
 
 #### 1.0.3 输入法
 
-* 【win mac】自带 或者[微信输入法](https://z.weixin.qq.com) 特有云粘贴板功能，支持跨设备粘贴文字、图片 | [手心输入法](http://www.xinshuru.com)
+* 【win】自带 或者 [RIME 输入法](https://rime.im)
+* 【mac】自带 或者[微信输入法](https://z.weixin.qq.com)
 * 【linux】自带 或者 [RIME 输入法](https://rime.im)
 
 ### 1.1 工具类
@@ -125,7 +126,7 @@ mac 版迅雷其实也不错，不过必须去官网下载才是完整版，目�
 
 否则推荐【全平台】【[mac 版](https://apps.apple.com/cn/app/wps-office-ai%E6%99%BA%E8%83%BD%E5%8A%9E%E5%85%AC%E5%8A%A9%E6%89%8B/id1443749478?mt=12)】[WPS](https://www.wps.cn) 需登录才能解锁编辑太恶心，好在 windows 可以使用 [WPS Office 教育考试专用版](https://ncre.neea.edu.cn/html1/report/1507/861-1.htm)
 
-在线平台我推荐【[mac 版](https://apps.apple.com/cn/app/%E8%85%BE%E8%AE%AF%E6%96%87%E6%A1%A3/id1370780836)】[腾讯文档](https://docs.qq.com)和[金山文档](https://www.kdocs.cn) 适合文档分享。但千万记得加水印和是设置只读访问权限，防止资料泄漏和被非法买卖
+在线平台我推荐【[mac 版](https://apps.apple.com/cn/app/%E8%85%BE%E8%AE%AF%E6%96%87%E6%A1%A3/id1370780836)】[腾讯文档](https://docs.qq.com)和[金山文档](https://www.kdocs.cn) 适合文档分享。但千万记得加水印和设置只读访问权限，防止资料轻易泄漏
 
 linux 除了 WPS 和 LibreOffice，可以安装 [WinApps for linux](https://nowsci.com/winapps) | [github 项目地址](https://github.com/Fmstrat/winapps)
 
@@ -694,7 +695,7 @@ not
 
 【win】[Seer](http://www.1218.io/seer.html) 收费就算了
 
-#### 2.39.2 为 win10 必备
+#### 2.39.2 EarTrumpet【win10 必备】
 
 【win】[EarTrumpet](https://eartrumpet.app) 一款超赞的音量控制应用
 
@@ -714,9 +715,9 @@ not
 
 #### 2.39.6 流氓软件禁用
 
-[GitHub - the1812](https://github.com/the1812/Malware-Patch)/Malware-Patch: 阻止中国流氓软件的管理员授权. / Prevent UAC authorization of Chinese malware.
+[GitHub - the1812](https://github.com/the1812/Malware-Patch)/Malware-Patch: 阻止中国流氓软件的管理员授权 / Prevent UAC authorization of Chinese malware.
 
-#### 2.39.7 WizMouse 为 win7 必备
+#### 2.39.7 WizMouse【win7 必备】
 
 【win】[WizMouse](https://antibody-software.com/wizmouse) 一款鼠标增强工具
 
@@ -789,7 +790,7 @@ not
 
 ### 3.7 文件同步
 
-* 【全平台】[Resilio Sync](https://www.resilio.com) (原名 BT Sync) 是一款极为优秀好用的「文件同步工具」软件，它基于类似 BT 的 P2P 协议同步文件，但由于它“分享文件”过于方便，导致在国内被圭寸
+【全平台】[Resilio Sync](https://www.resilio.com) (原名 BT Sync) 是一款极为优秀好用的「文件同步工具」软件，它基于类似 BT 的 P2P 协议同步文件，但由于它“分享文件”过于方便，导致在国内被圭寸
 
 备用
 
@@ -830,7 +831,7 @@ not
 1. [360 安全卫士极速版](https://wsdl.360safe.com/setupbeta_jisu.exe)
 1. [360 安全浏览器 13](https://down.360safe.com/se/360se13.1.6410.0.exe)
 1. [360 压缩](https://sfdl.360safe.com/360zip_setup.exe) | [7-Zip 24.09 x86](https://7-zip.org/a/7z2409.exe) | [Bandizip 5](https://www.bandisoft.com/bandizip/dl.php?xp)
-1. [手心输入法](http://dl.360safe.com/installer/web/PalmInputSetup.exe)
+1. [QQ 输入法](https://qq.pinyin.cn/download_pc.php?t=py)
 1. [QQ 9.7 怀旧版](https://dldir1.qq.com/qqfile/qq/PCQQ9.7.23/QQ9.7.23.29394.exe)
 1. [微信 3.2.1](https://www.123pan.com/s/aDE9-hCCyh.html)
 1. [Potplayer 1.7](https://www.123pan.com/s/aDE9-hCCyh.html)
@@ -840,7 +841,7 @@ not
 一些用过的软件但主观关键明显不好用的记录，说不定下版会优化，所以仅供参考
 
 * [图吧工具箱](https://www.tbtool.cn) 中规中矩，功能挺强大
-* [Advanced IP Scanner](https://www.advanced-ip-scanner.com/cn) – 免费下载网络扫描程序 我不太喜欢安装版
+* [Advanced IP Scanner](https://www.advanced-ip-scanner.com/cn) 免费下载网络扫描程序 但我不喜欢安装版
 * [DisplayFusion](https://www.displayfusion.com)【win】
 * ——————— ฅ՞• •՞ฅ ———————
 * [Fantastical](https://apps.apple.com/cn/app/fantastical-calendar/id975937182)【mac】拥有和系统自带日历应用类似界面布局，但界面信息更加直观自然。软件支持苹果各个平台，除了可以与 iCloud / Google / Yahoo 日历无缝整合同步外，它还解决了系统自带日历 APP 功能的诸多不足
