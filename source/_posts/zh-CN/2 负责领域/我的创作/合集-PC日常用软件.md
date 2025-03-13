@@ -2,7 +2,7 @@
 title: 合集-PC日常用软件
 permalink: mypc/
 date: 2023-03-22 21:02:00
-updated: 2025-01-14 10:59:31
+updated: 2025-03-13 20:01:14
 categories: 我的创作
 ---
 
@@ -42,7 +42,7 @@ categories: 我的创作
 
 #### 1.1.0【常用】压缩解压
 
-* 【win 开源绿色版】[PeaZip](https://peazip.github.io/peazip-portable.html) 有智能解压 |【win 绿色版】[Bandizip](https://www.bandisoft.com/bandizip/dl.php?portable)
+* 【win 开源绿色版】[PeaZip](https://peazip.github.io/peazip-portable.html) 含智能解压 | [Bandizip v6.25 最后的无广告版](https://www.lanzoup.com/i8av00j) in 2019 含智能解压
 * 【mac [苹果商店版](https://apps.apple.com/cn/app/the-unarchiver/id425424353?mt=12)】[The Unarchiver](https://theunarchiver.com) | [FastZip](https://www.better365.cn/fastzip.html)
 * 【linux】自带命令
 
@@ -91,7 +91,7 @@ mac 版迅雷其实也不错，不过必须去官网下载才是完整版，目�
 **linux 平台**
 
 1. 【全平台】[Motrix](https://motrix.app/zh-CN)
-2. 【linux win】[xdm](https://github.com/subhra74/xdm/releases) 可以认为是 linux 环境下的 idm
+1. 【linux win】[xdm](https://github.com/subhra74/xdm/releases) 可以认为是 linux 环境下的 idm
 
 #### 1.1.6【常用】网盘
 
@@ -105,8 +105,8 @@ mac 版迅雷其实也不错，不过必须去官网下载才是完整版，目�
 
 #### 1.1.7 看图
 
-* 【win 绿色版】[菠萝看图 BLumia/pineapple-pictures](https://github.com/BLumia/pineapple-pictures) A homebrew lightweight image viewer
-* 【mac】[Picview - 图片浏览器](https://picview.chitaner.com/zh-cn)
+* 【win 绿色版】[菠萝看图 pineapple-pictures](https://github.com/BLumia/pineapple-pictures) | [Honeyview 最终绿色版](https://www.bandisoft.com/honeyview/dl.php?portable)
+* 【mac】[Picview-图片浏览器](https://picview.chitaner.com/zh-cn)
 * liunx 系统自带
 
 #### 1.1.8 图像处理
