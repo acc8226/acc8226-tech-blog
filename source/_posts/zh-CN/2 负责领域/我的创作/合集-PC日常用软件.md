@@ -81,8 +81,8 @@ categories: 我的创作
 
 **windows 和 mac 平台**
 
-1. 普通下载：【全平台】[Motrix 绿色版](https://motrix.app/zh-CN) | [下载页](https://motrix.app/zh-CN/download) 颜值高。支持下载 HTTP、FTP、BT、磁力链接等资源。即使 Github 资源也不在话下
-2. 视频资源下载：【win mac】[Neat Download Manager](https://www.neatdownloadmanager.com/index.php/en) 体积小功能强，不支持磁力但是能配合浏览器拓展下载常见视频网站的视频
+1. 普通下载：【全平台】[Motrix 绿色版](https://motrix.app/zh-CN) | [下载页](https://motrix.app/zh-CN/download) 颜值高，并支持下载 HTTP、FTP、BT、磁力链接。Github 资源良好支持
+2. 视频资源下载：【win mac】[NDM-Neat Download Manager](https://www.neatdownloadmanager.com/index.php/en) 体积小功能强，不支持 BT 磁力。[搭配 crx 插件](https://www.crxsoso.com/search?keyword=NeatDownloadManager%20&store=chrome) 支持在线网页视频下载
 
 哔哩哔哩专用下载器：【win】[Bilidown-哔哩视频下载](https://zhouql.vip/bilibili/pc) |【win】[DownKyi](https://www.colostar.cn/links/13486.html)（哔哩下载姬）
 
