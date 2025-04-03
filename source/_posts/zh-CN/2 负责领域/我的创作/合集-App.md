@@ -75,6 +75,7 @@ categories: 我的创作
 
 1. [Aegis Authenticator](https://getaegis.app) [下载地址](https://github.com/beemdevelopment/Aegis/releases) 需定期做好密码备份导出工作
 1. [国家网络身份认证](https://sj.qq.com/appdetail/cn.cyberIdentity.certification) 用于互联网账号联合登录
+1. [网易大神](https://ds.163.com) 曾经的将军令
 
 not
 
@@ -798,13 +799,14 @@ not
 * Firefox 火狐浏览器 [应用宝版](https://sj.qq.com/appdetail/org.mozilla.firefox) | [国外商店版](https://firefox.en.uptodown.com/android)
 * [微软 Edge](https://sj.qq.com/appdetail/com.microsoft.emmx) 大声朗读功能很强大
 
+备用 [夸克](https://sj.qq.com/appdetail/com.quark.browser) 越来越臃肿了，比 UC 稍好
+
 not
 
 * [Alook](https://sj.qq.com/appdetail/alook.browser) 有点臃肿，但是功能性还行，界面也有点差
 * [360 手机浏览器](https://mse.360.cn) 广告太多
 * [Google Chrome](https://sj.qq.com/appdetail/com.android.chrome) 国内不好用
 * [UC 标准版](https://sj.qq.com/appdetail/com.UCMobile) 太臃肿了
-* [夸克浏览器](https://sj.qq.com/appdetail/com.quark.browser) 越来越臃肿了，和 UC 一个样
 * [via 浏览器](https://sj.qq.com/appdetail/mark.via) 比 X 浏览器体积更大且某些方面体验不如
 * ——————— ฅ՞• •՞ฅ ———————
 * UC 国际版
@@ -813,11 +815,12 @@ not
 
 ### iPhone
 
-[Alook](https://sj.qq.com/appdetail/alook.browser)
+[Alook](https://sj.qq.com/appdetail/alook.browser) | [夸克](https://sj.qq.com/appdetail/com.quark.browser)
 
 ### iPad
 
-[Alook](https://sj.qq.com/appdetail/alook.browser) 尚且能用，但是内核好像还是同内置浏览器。可能火狐和 edge 依旧是更好的选择
+* [Alook浏览器 - 8倍速](https://sj.qq.com/appdetail/alook.browser) 尚且能用，但是内核好像还是同内置浏览器
+* [夸克](https://sj.qq.com/appdetail/com.quark.browser)
 
 ### 安卓平板
 
@@ -1012,15 +1015,20 @@ APTV
 
 **公考培训**
 
-* [高途公考](https://sj.qq.com/appdetail/com.gaotu100.gongkao) 文档附件预览特别好用，查询招信息较为方便但是资源少
-* [粉笔](https://sj.qq.com/appdetail/com.fenbi.android.servant) 比较清新，查询招考信息较为方便
-* [华图在线](https://sj.qq.com/appdetail/com.huatu.handheld_huatu) 不建议用来查询招考信息，每次都得重新选择
+[高途公考](https://sj.qq.com/appdetail/com.gaotu100.gongkao) 文档附件预览特别好用，查询招信息较为方便但是资源少
 
-not [中公教育](https://sj.qq.com/appdetail/com.offcn.android.offcn) app 太烂了，返回都不好使，开屏还有不适广告
+备用 [粉笔](https://sj.qq.com/appdetail/com.fenbi.android.servant)
+
+not
+
+* [中公教育](https://sj.qq.com/appdetail/com.offcn.android.offcn) app 太烂了，返回都不好使，开屏还有不适广告
+* [华图在线](https://sj.qq.com/appdetail/com.huatu.handheld_huatu) 不建议用来查询招考信息，每次都得重新选择
 
 **软考**
 
-[软考通](https://sj.qq.com/appdetail/me.hxyfj.rk) | [软考真题](https://sj.qq.com/appdetail/com.doquestion)
+[软考通](https://sj.qq.com/appdetail/me.hxyfj.rk)
+
+备用 [软考真题](https://sj.qq.com/appdetail/com.doquestion) 界面太复古
 
 not
 
@@ -1108,7 +1116,7 @@ not [Simplenote](https://simplenote.com/) 极简，无限同步，不限设备�
 
 ## 43. 反调公司【重要】
 
-* **天眼查** [app](https://sj.qq.com/appdetail/com.tianyancha.skyeye) / 【小程序】 求职中可以**反调公司**，也适用于查询被服务公司，**无良北京丰台万达舒窈瑶国际**
+* **天眼查** [app](https://sj.qq.com/appdetail/com.tianyancha.skyeye) / 【小程序】 求职中可以**反调公司**，也适用于查询被服务公司，**无良北京丰台万达舒瑶(窈)国际(已注销)**
 * [企查查](https://sj.qq.com/appdetail/com.android.icredit)
 * [爱企查](https://sj.qq.com/appdetail/com.baidu.xin.aiqicha)
 * [水滴信用](https://sj.qq.com/appdetail/com.shuidi.app)
@@ -1178,7 +1186,11 @@ not
 
 [网上国网](https://sj.qq.com/appdetail/com.sgcc.wsgw.cn) 缴电费。当然一些银行网站、app 和 微信支付宝也能做到
 
-## 55. 游戏
+## 55. 地震预警
+
+华为手机可以通过“设置-安全-应急预警通知-地震预警”打开功能；小米手机则可以通过“手机管家-家人关怀-地震预警”选择开启功能；OPPO / 一加 / 真我手机可以通过“设定-安全-SOS 紧急联络-自然灾害警报-地震警报开启”入口访问相应功能；苹果 / 三星等手机则可以下载“[地震预警](https://sj.qq.com/appdetail/com.huania.earthquakewarning)”App 或通过“中国地震台网”微信小程序启用相应功能。
+
+## 56. 游戏
 
 ### iPhone 和 iPad
 
