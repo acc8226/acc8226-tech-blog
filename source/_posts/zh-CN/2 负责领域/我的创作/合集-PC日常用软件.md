@@ -2,7 +2,7 @@
 title: 合集-PC日常用软件
 permalink: mypc/
 date: 2023-03-22 21:02:00
-updated: 2025-01-14 10:59:31
+updated: 2025-03-13 20:01:14
 categories: 我的创作
 ---
 
@@ -17,7 +17,7 @@ categories: 我的创作
 * 以下内容谨代表个人观点。软件上尽量选择跨平台在搭配特定系统特有软件即可满足大部分使用场景
 * “官网收录”模块收录的各软件官网地址仅供参考
 
-## 1 日常
+## 1. 日常
 
 ### 1.0 必备
 
@@ -34,14 +34,15 @@ categories: 我的创作
 
 #### 1.0.3 输入法
 
-* 【win mac】自带 或者[微信输入法](https://z.weixin.qq.com) 特有云粘贴板功能，支持跨设备粘贴文字、图片 | [手心输入法](http://www.xinshuru.com)
+* 【win】自带 或者 [RIME 输入法](https://rime.im)
+* 【mac】自带 或者[微信输入法](https://z.weixin.qq.com)
 * 【linux】自带 或者 [RIME 输入法](https://rime.im)
 
 ### 1.1 工具类
 
 #### 1.1.0【常用】压缩解压
 
-* 【win 开源绿色版】[PeaZip](https://peazip.github.io/peazip-portable.html) 有智能解压 |【win 绿色版】[Bandizip](https://www.bandisoft.com/bandizip/dl.php?portable)
+* 【win 开源绿色版】[PeaZip](https://peazip.github.io/peazip-portable.html) 含智能解压 | [Bandizip v6.25 最后的无广告版](https://www.lanzoup.com/i8av00j) in 2019 含智能解压
 * 【mac [苹果商店版](https://apps.apple.com/cn/app/the-unarchiver/id425424353?mt=12)】[The Unarchiver](https://theunarchiver.com) | [FastZip](https://www.better365.cn/fastzip.html)
 * 【linux】自带命令
 
@@ -54,7 +55,7 @@ categories: 我的创作
 #### 1.1.2【推荐】键鼠增强
 
 * 【win 开源绿色版 自荐】[捷键](https://feipig.fun/jiejian)
-* 【mac】[Hammerspoon](https://www.hammerspoon.org) 可自己写脚本
+* 【mac】[Hammerspoon](https://www.hammerspoon.org) 可自己写脚本 + [Karabiner-Elements](https://karabiner-elements.pqrs.org)
 * 【linux】AutoKey [Github 地址](https://github.com/autokey/autokey) & [帮助文档](https://autokey.github.io/intro.html) 适用于 x11 和 qt 平台
 
 #### 1.1.3【常用】截图
@@ -80,8 +81,8 @@ categories: 我的创作
 
 **windows 和 mac 平台**
 
-1. 普通下载：【全平台】[Motrix 绿色版](https://motrix.app/zh-CN) | [下载页](https://motrix.app/zh-CN/download) 颜值高。支持下载 HTTP、FTP、BT、磁力链接等资源。即使 Github 资源也不在话下
-2. 视频资源下载：【win mac】[Neat Download Manager](https://www.neatdownloadmanager.com/index.php/en) 体积小功能强，不支持磁力但是能配合浏览器拓展下载常见视频网站的视频
+1. 普通下载：【全平台】[Motrix 绿色版](https://motrix.app/zh-CN) | [下载页](https://motrix.app/zh-CN/download) 颜值高，并支持下载 HTTP、FTP、BT、磁力链接。Github 资源良好支持
+2. 视频资源下载：【win mac】[NDM-Neat Download Manager](https://www.neatdownloadmanager.com/index.php/en) 体积小功能强，不支持 BT 磁力。[搭配 crx 插件](https://www.crxsoso.com/search?keyword=NeatDownloadManager%20&store=chrome) 支持在线网页视频下载
 
 哔哩哔哩专用下载器：【win】[Bilidown-哔哩视频下载](https://zhouql.vip/bilibili/pc) |【win】[DownKyi](https://www.colostar.cn/links/13486.html)（哔哩下载姬）
 
@@ -90,7 +91,7 @@ mac 版迅雷其实也不错，不过必须去官网下载才是完整版，目�
 **linux 平台**
 
 1. 【全平台】[Motrix](https://motrix.app/zh-CN)
-2. 【linux win】[xdm](https://github.com/subhra74/xdm/releases) 可以认为是 linux 环境下的 idm
+1. 【linux win】[xdm](https://github.com/subhra74/xdm/releases) 可以认为是 linux 环境下的 idm
 
 #### 1.1.6【常用】网盘
 
@@ -104,8 +105,8 @@ mac 版迅雷其实也不错，不过必须去官网下载才是完整版，目�
 
 #### 1.1.7 看图
 
-* 【win 绿色版】[菠萝看图 BLumia/pineapple-pictures](https://github.com/BLumia/pineapple-pictures) A homebrew lightweight image viewer
-* 【mac】[Picview - 图片浏览器](https://picview.chitaner.com/zh-cn)
+* 【win 绿色版】[菠萝看图 pineapple-pictures](https://github.com/BLumia/pineapple-pictures) | [Honeyview 最终绿色版](https://www.bandisoft.com/honeyview/dl.php?portable)
+* 【mac】[Picview-图片浏览器](https://picview.chitaner.com/zh-cn)
 * liunx 系统自带
 
 #### 1.1.8 图像处理
@@ -121,17 +122,15 @@ mac 版迅雷其实也不错，不过必须去官网下载才是完整版，目�
 
 #### 1.2.1【常用】Office
 
-一般品牌笔记本都会赠送[微软 Office](https://www.microsoftstore.com.cn/software/office) 套件
+一般品牌机会赠送[微软 Office](https://www.microsoftstore.com.cn/software/office)
 
-否则还是推荐【全平台】【[mac 版](https://apps.apple.com/cn/app/wps-office-ai%E6%99%BA%E8%83%BD%E5%8A%9E%E5%85%AC%E5%8A%A9%E6%89%8B/id1443749478?mt=12)】[WPS](https://www.wps.cn) 不过需登录才能解锁编辑太恶心 +【全平台】[LibreOffice](https://zh-cn.libreoffice.org/download/libreoffice)
+否则推荐【全平台】【[mac 版](https://apps.apple.com/cn/app/wps-office-ai%E6%99%BA%E8%83%BD%E5%8A%9E%E5%85%AC%E5%8A%A9%E6%89%8B/id1443749478?mt=12)】[WPS](https://www.wps.cn) 需登录才能解锁编辑太恶心，好在 windows 可以使用 [WPS Office 教育考试专用版](https://ncre.neea.edu.cn/html1/report/1507/861-1.htm)
 
-在线平台我推荐【[mac 版](https://apps.apple.com/cn/app/%E8%85%BE%E8%AE%AF%E6%96%87%E6%A1%A3/id1370780836)】[腾讯文档](https://docs.qq.com)和[金山文档](https://www.kdocs.cn)，非常适合文档分享。但千万记得加水印和是设置只读访问权限，防止资料泄漏和被非法买卖
+在线平台我推荐【[mac 版](https://apps.apple.com/cn/app/%E8%85%BE%E8%AE%AF%E6%96%87%E6%A1%A3/id1370780836)】[腾讯文档](https://docs.qq.com)和[金山文档](https://www.kdocs.cn) 适合文档分享。但千万记得加水印和设置只读访问权限，防止资料轻易泄漏
 
-linux 除了 WPS 和 LibreOffice，可以安装 [WinApps for linux](https://nowsci.com/winapps) | [github 项目地址](https://github.com/Fmstrat/winapps) 安装并使用 office。
+linux 除了 WPS 和 LibreOffice，可以安装 [WinApps for linux](https://nowsci.com/winapps) | [github 项目地址](https://github.com/Fmstrat/winapps)
 
-怀旧经典：WPS 2013
-
-官网收录：【win】[永中 Office](https://www.yozosoft.com)
+官网收录：【win】[永中 Office](https://www.yozosoft.com) | 【全平台】[LibreOffice](https://zh-cn.libreoffice.org/download/libreoffice)
 
 #### 1.2.2 PDF 文档
 
@@ -230,7 +229,7 @@ not
 
 **windows 平台**
 
-1. 本地播放：【全平台 绿色版】[VLC](https://www.videolan.org) |【win 官方安装版】PotPlayer [官网](https://potplayer.tv/?lang=zh_CN) | [绿色版](https://potplayer.org) 再搭配 HEVC 解码器 [LAVFilters](https://github.com/Nevcairiel/LAVFilters/releases)
+1. 本地播放：【全平台 绿色版】[VLC](https://www.videolan.org) [Chocolatey](https://community.chocolatey.org/packages/vlc#install) 源 |【win 官方安装版】PotPlayer [官网](https://potplayer.tv/?lang=zh_CN) | [绿色版](https://potplayer.org) 再搭配 HEVC 解码器 [LAVFilters](https://github.com/Nevcairiel/LAVFilters/releases)
 2. 在线平台：【win】[荐片播放器](https://www.jianpian6.co) 可观看最新电影 +【win mac】[哔哩哔哩客户端](https://app.bilibili.com)
 
 **mac 平台**
@@ -314,7 +313,7 @@ albert 安装不上
 * 【linux】[FBReader](https://fbreader.org) 用于阅读电子书
 * 【linux】[NewsFlash](https://flathub.org/zh-Hans/apps/io.gitlab.news_flash.NewsFlash) 很棒的一款 rss 阅读器
 
-## 2 拓展
+## 2. 拓展
 
 ### 2.0【常用】驱动运行库硬件检测
 
@@ -564,7 +563,7 @@ not
 
 ### 2.17 效率工具
 
-*【跨平台】[Espanso](https://espanso.org) 一款文字输入增强工具
+【跨平台】[Espanso](https://espanso.org) 一款文字输入增强工具
 
 官网收录：【win】[Quicker](https://getquicker.net) |【win】[Listary](https://www.listary.net) |【win 自荐】[**捷键**](https://feipig.fun/jiejian) 不仅仅是增强快捷键
 
@@ -591,8 +590,7 @@ not
 
 ### 2.23 软件管家
 
-* 【win】[火绒应用商店](https://www.huorong.cn/appstore)
-* 【win】[联想应用商店](https://lestore.lenovo.com)
+【win】[火绒应用商店](https://www.huorong.cn/appstore) |【win】[联想应用商店](https://lestore.lenovo.com)
 
 ### 2.24 打印机伴侣
 
@@ -667,8 +665,7 @@ not
 
 ### 2.35 AI 助手
 
-* [豆包桌面版](https://www.doubao.com/download/desktop)
-* kimi
+[豆包桌面版](https://www.doubao.com/download/desktop) | [Kimi](https://kimi.moonshot.cn/)
 
 ### 2.36 网盘挂载
 
@@ -698,14 +695,9 @@ not
 
 【win】[Seer](http://www.1218.io/seer.html) 收费就算了
 
-#### 2.39.2 WizMouse 为 win7 必备
+#### 2.39.2 EarTrumpet【win10 必备】
 
-【win】[WizMouse](https://antibody-software.com/wizmouse) 一款鼠标增强工具
-
-特点：
-
-1. win Vista/7/8 缺失的非激活的窗口下使用滚轮滚动
-2. 反转鼠标滚动方向，类似苹果的自然滚动
+【win】[EarTrumpet](https://eartrumpet.app) 一款超赞的音量控制应用
 
 #### 2.39.3 windows 系统优化
 
@@ -723,9 +715,18 @@ not
 
 #### 2.39.6 流氓软件禁用
 
-[GitHub - the1812](https://github.com/the1812/Malware-Patch)/Malware-Patch: 阻止中国流氓软件的管理员授权. / Prevent UAC authorization of Chinese malware.
+[GitHub - the1812](https://github.com/the1812/Malware-Patch)/Malware-Patch: 阻止中国流氓软件的管理员授权 / Prevent UAC authorization of Chinese malware.
 
-## 3 专业
+#### 2.39.7 WizMouse【win7 必备】
+
+【win】[WizMouse](https://antibody-software.com/wizmouse) 一款鼠标增强工具
+
+特点：
+
+1. win Vista/7/8 缺失的非激活的窗口下使用滚轮滚动
+2. 反转鼠标滚动方向，类似苹果的自然滚动
+
+## 3. 专业
 
 ### 3.0 虚拟机
 
@@ -766,7 +767,7 @@ not
 
 not
 
-* [乐播投屏](https://www.lebo.cn) 太臃肿且要**注意远程屏幕共享诈骗**
+[乐播投屏](https://www.lebo.cn) 太臃肿且要**注意远程屏幕共享诈骗**
 
 ### 3.5 格式转换
 
@@ -774,29 +775,33 @@ not
 * 曾经限免 [VideoProc Converter AI](https://www.videoproc.com/zh/video-converting-software/?ttpath=site-header-zh)
 * 【全平台】[HandBrake](https://handbrake.fr) 视频转换
 
-官网收录：【mac】[即刻转换](https://zh.okaapps.com/product/1637557903) | OmniConverter
+官网收录：【mac】OmniConverter
 
 ### 3.6 包管理器
 
 * 【mac】[Homebrew](https://brew.sh/index_zh-cn)
 * ——————— ฅ՞• •՞ฅ ———————
-* 【linux】[AppImage](https://appimage.org)、[flatpak](https://flatpak.org)、snap
+* 【linux】[AppImage](https://appimage.org) | [flatpak](https://flatpak.org) | Snap
 * ——————— ฅ՞• •՞ฅ ———————
+* 【win】[WinGet](https://learn.microsoft.com/zh-cn/windows/package-manager/winget) 微软家，属于系统内置
+* 【win】[Chocolatey](https://chocolatey.org) 在 windows 中较为流行，我可能以后会考虑自制包
 * 【win】[Scoop](https://scoop.sh)
-* 【win】[winget](https://learn.microsoft.com/zh-cn/windows/package-manager/winget) 微软家，属于系统内置
-* 【win】[Chocolatey](https://chocolatey.org) - the package manager for Windows
-* [sdkman](https://sdkman.io)
+* 【全平台】[SDKMAN](https://sdkman.io)
 
 ### 3.7 文件同步
 
-* 【全平台】[Resilio Sync](https://www.resilio.com) (原名 BT Sync) 是一款极为优秀好用的「文件同步工具」软件，它基于类似 BT 的 P2P 协议同步文件，但由于它“分享文件”过于方便，导致在国内被圭寸
+【全平台】[Resilio Sync](https://www.resilio.com) (原名 BT Sync) 是一款极为优秀好用的「文件同步工具」软件，它基于类似 BT 的 P2P 协议同步文件，但由于它“分享文件”过于方便，导致在国内被圭寸
 
 备用
 
 * 【全平台】[Syncthing](https://syncthing.net) | [Github 源](https://github.com/syncthing/syncthing)
 * 【全平台】[微力同步](http://www.verysync.com) (VerySync) 是一款国产跨平台文件同步软件，适合自己私人同步文件，或与朋友同事团队间进行办公协作
 
-## 4 游戏
+### 3.8 FFmpeg
+
+【全平台】[FFmpeg](https://ffmpeg.org) 用于录制、转换和流式传输音频和视频
+
+## 4. 游戏
 
 ### 4.1 游戏平台
 
@@ -804,41 +809,39 @@ not
 
 ### 4.2 加速器
 
-* 【win mac】[雷神网游加速器](https://www.leigod.com) 搞活动是 139 元 5200 小时
+【win mac】[雷神网游加速器](https://www.leigod.com) 搞活动是 139 元 5200 小时
 
 not
 
-* 【win mac】[奇游加速器](https://www.qiyou.cn) 太贵
-* 【win mac】[uu 加速器](https://uu.163.com) 太贵
-* 【win】[迅游网游加速器](https://www.xunyou.com/index.shtml) 太贵
+【win mac】[奇游加速器](https://www.qiyou.cn) | 【win mac】[uu 加速器](https://uu.163.com) | 【win】[迅游网游加速器](https://www.xunyou.com/index.shtml) 太贵了
 
 ### 4.3 红白机模拟器
 
 [小鸡模拟器 windows 经典版](https://dl.xiaoji001.com/download/pc/xiaoji_0.0.30.exe) | [VirtuaNES](https://www.emulator-zone.com/doc.php/nes/virtuanes.html)
 
-## 5 一些优秀的应用厂商
+## 5. 一些优秀的应用厂商
 
 1. Data center, cloud, and edge unified | [Resilio](https://www.resilio.com) 提供了免费的​​去中心化网盘 [Resilio Sync](https://www.resilio.com/sync/) 可用作同步
 1. [GOFF Concepts](http://goffconcepts.com/index.html) 主页 --- GOFF Concepts Home Page 提供了 FileSearchEX 等软件
 1. [Sordum.org - Simplify Your computer Usage](https://www.sordum.org) 提供了很多好用小工具，比如 Dns Jumper
 
-## 6 XP 怀旧专题
+## 6. XP 怀旧专题
 
 1. [补丁合集](https://www.123pan.com/s/aDE9-hCCyh.html)
-1. [360 安全卫士极速版](https://wsdl.360safe.com/setupbeta_jisu.exe) | [火绒安全软件 5](https://www.huorong.cn/downloadAllv5.html?status=hrstat&src=18)
+1. [360 安全卫士极速版](https://wsdl.360safe.com/setupbeta_jisu.exe)
 1. [360 安全浏览器 13](https://down.360safe.com/se/360se13.1.6410.0.exe)
 1. [360 压缩](https://sfdl.360safe.com/360zip_setup.exe) | [7-Zip 24.09 x86](https://7-zip.org/a/7z2409.exe) | [Bandizip 5](https://www.bandisoft.com/bandizip/dl.php?xp)
-1. [手心输入法](http://dl.360safe.com/installer/web/PalmInputSetup.exe)
+1. [QQ 输入法](https://qq.pinyin.cn/download_pc.php?t=py)
 1. [QQ 9.7 怀旧版](https://dldir1.qq.com/qqfile/qq/PCQQ9.7.23/QQ9.7.23.29394.exe)
 1. [微信 3.2.1](https://www.123pan.com/s/aDE9-hCCyh.html)
 1. [Potplayer 1.7](https://www.123pan.com/s/aDE9-hCCyh.html)
 
-## 7 留观中
+## 7. 留观中
 
 一些用过的软件但主观关键明显不好用的记录，说不定下版会优化，所以仅供参考
 
 * [图吧工具箱](https://www.tbtool.cn) 中规中矩，功能挺强大
-* [Advanced IP Scanner](https://www.advanced-ip-scanner.com/cn) – 免费下载网络扫描程序 我不太喜欢安装版
+* [Advanced IP Scanner](https://www.advanced-ip-scanner.com/cn) 免费下载网络扫描程序 但我不喜欢安装版
 * [DisplayFusion](https://www.displayfusion.com)【win】
 * ——————— ฅ՞• •՞ฅ ———————
 * [Fantastical](https://apps.apple.com/cn/app/fantastical-calendar/id975937182)【mac】拥有和系统自带日历应用类似界面布局，但界面信息更加直观自然。软件支持苹果各个平台，除了可以与 iCloud / Google / Yahoo 日历无缝整合同步外，它还解决了系统自带日历 APP 功能的诸多不足
@@ -846,7 +849,7 @@ not
 * [pear-rec](https://027xiguapi.github.io/pear-rec)【全平台】录屏软件 至少我在 windows 上体验不佳
 * [flowlauncher](https://www.flowlauncher.com/docs) 作为一款启动器 有点儿卡
 
-## 8 回收站
+## 8. 回收站
 
 * 【浏览器插件】CSDN 猿如意 不让人满意
 * ——————— ฅ՞• •՞ฅ ———————
