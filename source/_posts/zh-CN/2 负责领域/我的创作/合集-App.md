@@ -15,19 +15,18 @@ categories: 我的创作
 
 注：
 
-* 以下观点谨代表个人当时情况下使用 app 后的主观个人感受，无任何挤踩成分
-* 涵盖了安卓和苹果的手机、平板、TV 三大平台，主要以安卓手机系统为主
-* 在挑选 app 上尽量跨平台为主，一定程度保证使用体验一致
-* 尽量挑选些无广告且小巧的 app
-* “官网收录”模块收录的官网仅供参考
+* 以下观点谨代表个人当时情况下使用 app 后个人主观感受
+* 涵盖手机、平板、TV 三大平台，目前主要以安卓手机为主
+* 在挑选 app 上尽量跨平台、无广告和体积小巧优先，一定程度保证使用体验一致
+* “官网收录”收录了一些 app 的官网，仅供参考，不做推荐
 
-### 安卓还是 iOS、鸿蒙纯血版
+### 安卓还是 iOS、鸿蒙 next
 
-如果只考虑必要需求，现阶段低于 2200 元以下只选安卓，目前华为畅享 70X 有待观察且还不支持纯血
+如果只考虑必要需求，现阶段低于 2000 元以下只选安卓
 
 ### 手机还是平板
 
-一般建议有手机后才考虑买平板，会有良好的影音体验。
+一般建议有手机后才考虑买平板，平板会有良好的影音体验。
 
 * 看视频、漫画更爽
 * 阅读 PDF、小说更方便
@@ -322,11 +321,15 @@ not 今日头条 竟然有点卡
 
 我从 vivo pad 导出的原子阅读 简直完美
 
+#### 鸿蒙
+
+[IT之家](https://appgallery.huawei.com/app/detail?id=com.ruanmei.ithome.hosnext) 前沿科技媒体，人气数码社区
+
 ## 2. 视频类【常用】
 
 ### 安卓
 
-* 本地 [VLC](https://www.videolan.org/vlc/download-android.html) 体积小巧且视频解码功能强大
+* 本地 [VLC](https://www.videolan.org/vlc/download-android.html) [中科大源](https://mirrors.ustc.edu.cn/videolan-ftp/vlc-android/last) 体积小巧且视频解码功能强大
 * ——————— ฅ՞• •՞ฅ ———————
 * 在线 bilibili 哔哩哔哩国际版 [Apkpure 版](https://apkpure.com/cn/bilibili-cn/com.bilibili.app.in/download) | [uptodown 版](https://com-bilibili-app-in.en.uptodown.com/android) 因为清爽
 * [西瓜视频](https://sj.qq.com/appdetail/com.ss.android.article.video) 广告较少，资源丰富
@@ -1046,8 +1049,9 @@ not
 
 ## 36. 申论面试
 
-* [学习强国](https://sj.qq.com/appdetail/cn.xuexi.android) 中共中央宣传部主管的学习平台，提供了丰富多样的学习资源，看电视，学慕课，听广播
-* [半月谈](https://sj.qq.com/appdetail/com.bytxmt.banyuetan) 新华社半月谈出品的公务员公考学习平台，新华社时评员讲申论，公考名师讲行测
+[半月谈](https://sj.qq.com/appdetail/com.bytxmt.banyuetan) 新华社半月谈出品的公务员公考学习平台，新华社时评员讲申论，公考名师讲行测
+
+备用 [学习强国](https://sj.qq.com/appdetail/cn.xuexi.android) 中共中央宣传部主管的学习平台，提供了丰富多样的学习资源，看电视，学慕课，听广播
 
 not
 
@@ -1196,6 +1200,14 @@ not
 
 我一般会玩经典系列，比如王国保卫战、割绳子、小鳄鱼洗澡、糖果粉碎传奇、滑雪大冒险、愤怒的小鸟<br/>
 Bean's Quest 算是 1 代 和 Bean Dreams 算是 2 代
+
+## 专题类
+
+### 公考事考
+
+1. [半月谈](https://sj.qq.com/appdetail/com.bytxmt.banyuetan) 行测和申论、面试课程都有，完成任务后会全额返现
+2. [夸克](https://sj.qq.com/appdetail/com.quark.browser) 倍速播放视频、ai 解题、网盘资料等功能一网打尽
+3. [豆包爱学](https://sj.qq.com/appdetail/com.aitutor.hippo) 同样是解题，对于时政和常识有奇效
 
 ## 其他
 

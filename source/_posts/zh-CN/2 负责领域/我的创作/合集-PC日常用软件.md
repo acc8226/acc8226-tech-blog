@@ -55,7 +55,7 @@ categories: 我的创作
 #### 1.1.2【推荐】键鼠增强
 
 * 【win 开源绿色版 自荐】[捷键](https://feipig.fun/jiejian)
-* 【mac】[Hammerspoon](https://www.hammerspoon.org) 可自己写脚本
+* 【mac】[Hammerspoon](https://www.hammerspoon.org) 可自己写脚本 + [Karabiner-Elements](https://karabiner-elements.pqrs.org)
 * 【linux】AutoKey [Github 地址](https://github.com/autokey/autokey) & [帮助文档](https://autokey.github.io/intro.html) 适用于 x11 和 qt 平台
 
 #### 1.1.3【常用】截图
@@ -229,7 +229,7 @@ not
 
 **windows 平台**
 
-1. 本地播放：【全平台 绿色版】[VLC](https://www.videolan.org) |【win 官方安装版】PotPlayer [官网](https://potplayer.tv/?lang=zh_CN) | [绿色版](https://potplayer.org) 再搭配 HEVC 解码器 [LAVFilters](https://github.com/Nevcairiel/LAVFilters/releases)
+1. 本地播放：【全平台 绿色版】[VLC](https://www.videolan.org) [Chocolatey](https://community.chocolatey.org/packages/vlc#install) 源 |【win 官方安装版】PotPlayer [官网](https://potplayer.tv/?lang=zh_CN) | [绿色版](https://potplayer.org) 再搭配 HEVC 解码器 [LAVFilters](https://github.com/Nevcairiel/LAVFilters/releases)
 2. 在线平台：【win】[荐片播放器](https://www.jianpian6.co) 可观看最新电影 +【win mac】[哔哩哔哩客户端](https://app.bilibili.com)
 
 **mac 平台**
@@ -775,7 +775,7 @@ not
 * 曾经限免 [VideoProc Converter AI](https://www.videoproc.com/zh/video-converting-software/?ttpath=site-header-zh)
 * 【全平台】[HandBrake](https://handbrake.fr) 视频转换
 
-官网收录：【mac】[即刻转换](https://zh.okaapps.com/product/1637557903) | OmniConverter
+官网收录：【mac】OmniConverter
 
 ### 3.6 包管理器
 
@@ -784,7 +784,7 @@ not
 * 【linux】[AppImage](https://appimage.org) | [flatpak](https://flatpak.org) | Snap
 * ——————— ฅ՞• •՞ฅ ———————
 * 【win】[WinGet](https://learn.microsoft.com/zh-cn/windows/package-manager/winget) 微软家，属于系统内置
-* 【win】[Chocolatey](https://chocolatey.org)
+* 【win】[Chocolatey](https://chocolatey.org) 在 windows 中较为流行，我可能以后会考虑自制包
 * 【win】[Scoop](https://scoop.sh)
 * 【全平台】[SDKMAN](https://sdkman.io)
 
