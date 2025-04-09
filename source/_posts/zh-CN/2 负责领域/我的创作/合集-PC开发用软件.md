@@ -25,7 +25,7 @@ categories: 我的创作
 
 挑选软件我尽量考虑以免费为主。
 
-## 1 build tool 构建工具
+## 1. Build tool 构建工具
 
 ### 1.1 Web 构建工具
 
@@ -77,7 +77,7 @@ repositories {
 }
 ```
 
-## 2 DB 数据库
+## 2. DB 数据库
 
 ### 2.1 各类数据库
 
@@ -110,13 +110,13 @@ not
 * 【全平台】[DBeaver Community](https://dbeaver.io/download) 颜值太低
 * 【全平台】[DbVisualizer](https://www.dbvis.com) 付费版才好用
 
-## 3 Docker
+## 3. Docker
 
 【全平台】[Docker](https://www.docker.com/products/docker-desktop)
 
-## 4【常用】Editor 编辑器
+## 4.【常用】Editor 编辑器
 
-【全平台】[VSCode](https://code.visualstudio.com) windows 推荐使用**安装版**而非便携版，这样能及时获得更新。[win 7 最后一个支持版](https://code.visualstudio.com/updates/v1_70)
+【全平台】[VS Code](https://code.visualstudio.com) windows 推荐使用**安装版**而非便携版，这样能及时获得更新。[win 7 最后一个支持版](https://code.visualstudio.com/updates/v1_70)
 
 vscode 插件推荐：[markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
 
@@ -140,29 +140,25 @@ not
 * ——————— ฅ՞• •՞ฅ ———————
 * 【已过时】[Atom](https://github.com/atom/atom)
 
-## 5 file compare 文件对比
+## 5. File compare 文件对比
 
 【Win 精品软件】[WinMerge](https://winmerge.org) | [下载页](https://winmerge.org/downloads/?lang=en) 用于比较文件夹和文件，以便于理解和处理的可视文本格式呈现差异。是我离不开 windows 的一个重要原因
 
-备用
+备用【全平台 免费】[Meld](https://mirrors.ustc.edu.cn/gnome/binaries/win32/meld)
 
-【全平台 免费】[Meld](https://mirrors.ustc.edu.cn/gnome/binaries/win32/meld)
-
-not
-
-【全平台 付费】[Beyond Compare](https://www.beyondcompare.cc)
+not【全平台 付费】[Beyond Compare](https://www.beyondcompare.cc)
 
 **mac 和 linux 平台**
 
 【全平台 免费】[Meld](https://meld.app) 妥妥的 GNOME 风格，颜值非常 nice
 
-## 6【常用】IDE 集成开发环境
+## 6.【常用】IDE 集成开发环境
 
-* 【win mac 国产】[HBuilder X](https://www.dcloud.io/hbuilderx.html)
+* 【win mac】[HBuilder X](https://www.dcloud.io/hbuilderx.html)
 * 【win mac】[微信开发者工具](https://developers.weixin.qq.com/miniprogram/dev/devtools/devtools.html)
 * ——————— ฅ՞• •՞ฅ ———————
 * 【全平台】[Code::Blocks](https://www.codeblocks.org/downloads/binaries/) for c/c++
-* [小熊猫C++（RedPanda C++）](http://royqh.net/redpandacpp/)
+* 【win】[小熊猫 C++（RedPanda C++）](http://royqh.net/redpandacpp/)
 * 【全平台 付费】[CLion](https://www.jetbrains.com.cn/clion/)
 * ——————— ฅ՞• •՞ฅ ———————
 * 【全平台】[Eclipse](https://www.eclipse.org/downloads) 貌似不太受欢迎但占用内存稍小
@@ -173,25 +169,25 @@ not
 * 【全平台 对非商业用途免费】[WebStorm](https://www.jetbrains.com.cn/webstorm/)
 * 【win mac】[Visual Studio](https://visualstudio.microsoft.com/zh-hans) 你可以使用 C#、F# 或 Visual Basic 语言编写 .NET 应用
 
-## 7【常用】lang 编程语言
+## 7.【常用】lang 编程语言
 
-### Autohotkey
+### 7.1 Autohotkey
 
 【win】[Autohotkey](https://www.autohotkey.com) - [下载](https://www.autohotkey.com/download) 一款自动化脚本语言。
 
-### C#
+### 7.2 C#
 
 [C# 指南-.NET 托管语言](https://learn.microsoft.com/zh-cn/dotnet/csharp) | Microsoft Learn
 
-### Dart
+### 7.3 Dart
 
 Dart [官网](https://dart.cn)
 
-### Go
+### 7.4 Go
 
 Go [官网](https://golang.google.cn)
 
-### Java
+### 7.5 Java
 
 * [Amazon corretto](https://aws.amazon.com/cn/corretto)
 * [GraalVM](https://www.graalvm.org/downloads)
@@ -202,11 +198,11 @@ Go [官网](https://golang.google.cn)
 
 windows 版本如果是临时使用，可以在命令行界面键入 `set path=java` 所在的 bin 目录。长期使用则建议设置环境变量到 path。
 
-### Kotlin
+### 7.6 Kotlin
 
 Kotlin [官网](https://kotlinlang.org)
 
-### Node.js
+### 7.7 Node.js
 
 [Node.js](https://nodejs.org/en) | [npmjs.com 镜像站](https://registry.npmmirror.com/binary.html?path=node/)
 
@@ -225,11 +221,11 @@ npm install xxxxx --registry=https://registry.npmmirror.com
 npm config set registry https://registry.npmmirror.com
 ```
 
-### PHP
+### 7.8 PHP
 
 [PHP: Hypertext Preprocessor](https://www.php.net)
 
-### Python
+### 7.9 Python
 
 [Python](https://www.python.org)
 
@@ -242,15 +238,15 @@ pip install -i https://pypi.tuna.tsinghua.edu.cn/simple xxxxx
 pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
-### Rust
+### 7.10 Rust
 
 [Rust](https://www.rust-lang.org/zh-CN)
 
-### TypeScript
+### 7.11 TypeScript
 
 [TypeScript](https://www.typescriptlang.org/zh) JavaScript With Syntax For Types.
 
-## 8 MQ 和 OSS
+## 8. MQ 和 OSS
 
 **MQ 消息队列**
 
@@ -267,7 +263,7 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
 ### 9.1 http 调试
 
-* 【全平台】[httpie 桌面版](https://httpie.io/download) | [Releases](https://github.com/httpie/desktop/releases) HTTPie 有桌面版和 cli 版，cross-platform API testing client for humans. Painlessly test REST, GraphQL, and HTTP APIs. 
+* 【全平台】[HTTPie 桌面版](https://httpie.io/download) | [Releases](https://github.com/httpie/desktop/releases) HTTPie 有桌面版和 cli 版，cross-platform API testing client for humans. Painlessly test REST, GraphQL, and HTTP APIs. 
 * 【mac】[RapidAPI](https://paw.cloud) 颜值功能都在线
 * 【win mac】[SoapUI](https://www.soapui.org/downloads/soapui)
 * 【全平台】[Reqable](https://reqable.com/zh-CN) 也可用于抓包
@@ -283,7 +279,7 @@ not
 
 ### 9.2 mqtt 调试
 
-【全平台】[mqttx](https://mqttx.app)
+【全平台】[MQTTX](https://mqttx.app)
 
 ### 9.3 Packet capture 抓包
 
@@ -308,7 +304,7 @@ not
 
 ### 11.1 Redis 数据库
 
-Redis is an in-memory database that persists on disk. The data model is key-value, but many different kind of values are supported: Strings, Lists, Sets, Sorted Sets, Hashes, Streams, HyperLogLogs. 
+Redis 是一种内存数据库，同时支持磁盘持久化。其数据模型是键值对形式，但支持多种不同类型的数据结构：字符串（Strings）、列表（Lists）、集合（Sets）、有序集合（Sorted Sets）、哈希表（Hashes）、流（Streams）等。
 
 [下载](https://redis.io/download) | [tporadowski/redis: Native port of Redis for Windows](https://github.com/tporadowski/redis) 
 
@@ -394,11 +390,11 @@ not
 
 **mac 平台**
 
-依旧 [termius](https://www.termius.com) 免费订阅模式 + ZenTermLite 用于 sz 和 rz
+依旧 [Termius](https://www.termius.com) 免费订阅模式 + ZenTermLite 用于 sz 和 rz
 
 **linux 平台**
 
-依旧 [termius](https://www.termius.com) 免费订阅模式
+依旧 [Termius](https://www.termius.com) 免费订阅模式
 
 ### xshell 设置
 
@@ -448,15 +444,15 @@ MSYS2 还是一组工具和库，为您提供了一个易于使用的环境，�
 
 [PowerShell-7.4.0-win-x64.zip](https://github.com/PowerShell/PowerShell/releases/download/v7.4.0/PowerShell-7.4.0-win-x64.zip)
 
-### 17.2【mac linux】zsh
+### 17.2【mac linux】Zsh
 
 mac 已经将 zsh 取代 bash 作为默认 shell 了
 
-## 18.UML 图绘制
+## 18. UML 图绘制
 
 * 【全平台】[StarUML](https://staruml.io)【30 天试用后付费】一个画 uml 的工具，还行，可能不够通用吧
 
-## 19.框架
+## 19. 框架
 
 ### 数据库连接池
 

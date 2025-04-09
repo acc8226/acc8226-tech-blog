@@ -20,12 +20,11 @@ export ANT_HOME=/Users/Stay/Desktop/develop/ant/apache-ant-1.8.4
 export PATH=${PATH}:${ANT_HOME}/bin
 ```
 
-3\. 生成一个简单的 build.xml，本身 sdk/tool/ant 下有个完整的 build.xml，我们只要基于它创建一个简单的 build.xml即可。
+3\. 生成一个简单的 build.xml，本身 `sdk/tool/ant` 下有个完整的 build.xml，我们只要基于它创建一个简单的 build.xml即可。
 
 <!-- more -->
 
-首先切换到项目根目录,
-`android update project --path . --name XXX` --path更新的是local.properties, --name更新的是build.xml
+首先切换到项目根目录，`android update project --path . --name XXX` --path更新的是local.properties, --name 更新的是 build.xml
 否则会(must already have an AndroidManifest.xml)
 
 最好需要存在 project.properties 的情况下, 否则会 `Error: The project either has no target set or the target is invalid.`

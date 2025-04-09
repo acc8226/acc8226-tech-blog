@@ -19,22 +19,22 @@ tags: Ant
   <property name="project-dir" location="."/>
 
   <property environment="env" />
-  <!-- JAVA目录(获取操作系统环境变量JAVA_HOME的值) -->
+  <!-- JAVA目录(获取操作系统环境变量 JAVA_HOME 的值) -->
   <property name="java_home" value="${env.JAVA_HOME}"/>
-  <!-- SDK目录(获取操作系统环境变量ANDROID_SDK_HOME的值) -->
+  <!-- SDK目录(获取操作系统环境变量 ANDROID_SDK_HOME 的值) -->
   <property name="sdk-folder" value="${env.ANDROID_HOME}" />
   <!-- SDK指定平台目录 -->
   <property name="sdk-platform-folder" value="${sdk-folder}/platforms/android-22"/>
-  <!-- 指定平台对应的android.jar -->
+  <!-- 指定平台对应的 android.jar -->
   <property name="android-jar" value="${sdk-platform-folder}/android.jar" />
-  <!-- SDK中tools目录 -->
+  <!-- SDK 中 tools 目录 -->
   <property name="sdk-tools" value="${sdk-folder}/tools" />
-  <!-- SDK中build_tools目录 -->
+  <!-- SDK 中 build_tools 目录 -->
   <property name="build-tools" value="${sdk-folder}/build-tools/25.0.2" />
-  <!-- SDK指定平台中tools目录 -->
+  <!-- SDK 指定平台中 tools 目录 -->
   <property name="sdk-platform-tools" value="${sdk-platform-folder}/tools" />
 
-  <!-- 使用到的命令(当前系统为mac) -->
+  <!-- 使用到的命令(当前系统为 mac) -->
   <property name="aapt" value="${build-tools}/aapt" />
   <property name="aidl" value="${build-tools}/aidl" />
   <property name="dx" value="${build-tools}/dx.bat" />
@@ -42,7 +42,7 @@ tags: Ant
   <property name="apkbuilder" value="${sdk-tools}/apkbuilder" />
   <property name="jarsigner" value="${java_home}/bin/jarsigner" />
 
-  <!-- 基本编译路径设置 可定义多个classpath-->
+  <!-- 基本编译路径设置 可定义多个 classpath-->
   <path id="compile.classpath">
     <fileset dir="libs">
       <include name="*.jar" />
@@ -161,7 +161,7 @@ tags: Ant
 </project>
 ```
 
-由于我的项目中用到了 BuildConfig.java 文件, 在第一个生成 R 文件后我手动拷贝到了R.java的同级目录, 否则接下来的操作会报错
+由于我的项目中用到了 BuildConfig.java 文件, 在第一个生成 R 文件后我手动拷贝到了 R.java 的同级目录, 否则接下来的操作会报错
 
 ``` java
 /** Automatically generated file. DO NOT MODIFY */

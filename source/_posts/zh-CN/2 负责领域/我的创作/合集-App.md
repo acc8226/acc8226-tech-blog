@@ -842,6 +842,7 @@ not
 * [知乎](https://sj.qq.com/appdetail/com.zhihu.android) 广告不明显，还可以得盐粒 | [知乎极速版](https://sj.qq.com/appdetail/com.zhihu.android.lite) 算是做得很好的极速版，无广告无圆环挑战可以选择
 * [豆瓣](https://sj.qq.com/appdetail/com.douban.frodo) 我不常用
 * [小红书](https://sj.qq.com/appdetail/com.xingin.xhs)
+* [知识星球](https://sj.qq.com/appdetail/com.unnoo.quan)
 
 ### 安卓平板
 
@@ -1182,9 +1183,7 @@ not
 
 汇付天下满天星商户通 较为正规，存活时间较长
 
-not
-
-上海电银银乾付 已跑路，总之 pos 除非正常交易否则慎用，随意扣款找谁说理去，且一定要当天找他们
+not 上海电银银乾付 已跑路，总之 pos 除非正常交易否则慎用，随意扣款找谁说理去，且一定要当天找他们
 
 ## 54. 充值缴费
 
@@ -1205,9 +1204,10 @@ Bean's Quest 算是 1 代 和 Bean Dreams 算是 2 代
 
 ### 公考事考
 
+1. [公考雷达](https://sj.qq.com/appdetail/com.maidu.gkld) 选岗用
 1. [半月谈](https://sj.qq.com/appdetail/com.bytxmt.banyuetan) 行测和申论、面试课程都有，完成任务后会全额返现
-2. [夸克](https://sj.qq.com/appdetail/com.quark.browser) 倍速播放视频、ai 解题、网盘资料等功能一网打尽
-3. [豆包爱学](https://sj.qq.com/appdetail/com.aitutor.hippo) 同样是解题，对于时政和常识有奇效
+1. [夸克](https://sj.qq.com/appdetail/com.quark.browser) 倍速播放视频、ai 解题、网盘资料等功能一网打尽
+1. [豆包爱学](https://sj.qq.com/appdetail/com.aitutor.hippo) 同样是解题，对于时政和常识有奇效
 
 ## 其他
 

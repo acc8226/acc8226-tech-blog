@@ -109,12 +109,12 @@ tags:
   <target name="zipalignItem" description="对单个文件进行zipalign">
     <echo>取出原始${itemAppName}</echo>
 
-    <!-- 通过${itemAppName}构建${newApkName} -->
+    <!-- 通过${itemAppName}构建 ${newApkName} -->
     <loadresource property="newApkName" encoding="UTF-8">
       <string value="${itemAppName}" />
       <filterchain>
         <tokenfilter>
-          <!-- 巧妙将后缀.apk加上了时间 -->
+          <!-- 巧妙将后缀 .apk 加上了时间 -->
           <replaceregex pattern=".apk" replace="_zipalign.apk" flags="g" />
         </tokenfilter>
       </filterchain>
@@ -133,13 +133,13 @@ tags:
     <!--  0. 清理历史数据 -->
     <antcall target="clean" />
 
-    <!--  1. 根据channels文件进行多渠道打包 -->
+    <!--  1. 根据 channels 文件进行多渠道打包 -->
     <antcall target="makechannels" />
 
     <!--  2. 集体重新签名 -->
     <antcall target="apksigner" />
 
-    <!--  3. 遍历并zipalign -->
+    <!--  3. 遍历并 zipalign -->
     <foreach param="itemAppName" target="zipalignItem">
       <path>
         <fileset dir="${outDir}">

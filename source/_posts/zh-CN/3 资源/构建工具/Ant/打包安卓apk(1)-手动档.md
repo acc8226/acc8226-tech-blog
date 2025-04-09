@@ -33,7 +33,7 @@ aapt package -f -m -M AndroidManifest.xml -I D:/Android/android-sdk/platforms/an
 　　-f : 如果编译出来的文件已经存在，强制覆盖
 　　-m : 使得生成的包的目录放在 -J 参数指定的目录
 　　-M :  <AndroidManifest.xml目录>
-　　-I : 某个版本平台的android.jar的路径
+　　-I : 某个版本平台的 android.jar 的路径
 　　-S : res文件夹路径 resource-sources
 　　-J : R.java的输出目录
 
@@ -45,7 +45,7 @@ aapt package -f -m -M AndroidManifest.xml -I D:/Android/android-sdk/platforms/an
 
 `javac -encoding UTF-8 -source 1.6 -target 1.6 -bootclasspath D:/Android/android-sdk/platforms/android-22/android.jar -sourcepath src -classpath .;libs/android-support-v4.jar;libs/SDMCommon-2.2.3.jar;libs/AnySignV2.0.0.Android.1.1.1.jar;libs/bjca_anysign_tool.jar;libs/DataVaultLib.jar;libs/httpmime-4.1.3.jar;libs/SDMConnectivity-2.2.3.jar;libs/SDMParser-2.2.3.jar;libs/SMPRestClient-2.2.3.jar;libs/sup-client-util.jar;libs/wsecx-android_package-v1.4.jar;libs/xstream-1.4.4.jar -d bin/classes gen/com/nci/insprotection/*.java src/com/nci/insprotection/*.java`
 
-* 我安装的是`1.8.0_91`, 但我知道目标安卓 5.1 是基于 JDK1.6, 所以指定`-source`和`-target`都是1.6
+* 我安装的是 `1.8.0_91`, 但我知道目标安卓 5.1 是基于 JDK1.6, 所以指定`-source`和`-target`都是1.6
 * `-bootclasspath` 覆盖引导类文件的位置, 我设置的编译版本是 22
 * `-sourcepath`指定用以查找类或接口定义的源代码路径, 这是非常重要的一个小技巧, 填写`src`后从而不用列举出`com.nci.insprotection` 下所有的包了
 * 使用 `-classpath/-cp` 标签需要列举出所用用到的 jar 包`.;libs/android-support-v4.jar;xxx.jar;yyy.jar`, 不能使用通配符, 否则会找不到符号。还要注意 jar 包的命名最好不带空格，否则得双引号引起来
@@ -54,8 +54,8 @@ aapt package -f -m -M AndroidManifest.xml -I D:/Android/android-sdk/platforms/an
 
 注意:
 
-> * `-d` 文件夹必须存在, 否则会`javac: 找不到目录: bin/classes`, 所以的手动mkdir
-> * 提示找不到`符号: 类 BuildConfig`, 由于我是从Eclipse拷出的项目, 手动copy一个到`gen`下`R.java`的同级目录即可。
+> * `-d` 文件夹必须存在, 否则会 `javac: 找不到目录: bin/classes`, 所以的手动mkdir
+> * 提示找不到 `符号: 类 BuildConfig`, 由于我是从Eclipse拷出的项目, 手动copy一个到`gen`下`R.java`的同级目录即可。
 
 ``` java
 /** Automatically generated file. DO NOT MODIFY */
@@ -68,7 +68,7 @@ public final class BuildConfig {
 
 ## 4. 打包 class 文件和 jar 包为`classes.dex`
 
-命令`build-tools/安卓某个版本/dx.bat`
+命令 `build-tools/安卓某个版本/dx.bat`
 
 `dx --dex --output=bin/classes.dex bin/classes libs/android-support-v4.jar libs/SDMCommon-2.2.3.jar libs/AnySignV2.0.0.Android.1.1.1.jar libs/bjca_anysign_tool.jar libs/DataVaultLib.jar libs/httpmime-4.1.3.jar libs/SDMConnectivity-2.2.3.jar libs/SDMParser-2.2.3.jar libs/SMPRestClient-2.2.3.jar libs/sup-client-util.jar libs/wsecx-android_package-v1.4.jar libs/xstream-1.4.4.jar`
 
@@ -88,7 +88,7 @@ public final class BuildConfig {
 
 ## 6. 用 sdklib.jar 打包 apk(组合classes.dex和res.zip生成未签名的APK)
 
-老版本可以用 apkbuild.bat 的命令`apkbuilder bin/unsigned.apk -v -u -z bin/res.zip -f bin/classes.dex`
+老版本可以用 apkbuild.bat 的命令 `apkbuilder bin/unsigned.apk -v -u -z bin/res.zip -f bin/classes.dex`
 但是如果如果被移除的话, 可以在安卓 sdk 安装目录 tools\lib 下是否存在 sdklib.jar, 如果存在还是可以打包的。
 
 ```sh
@@ -105,7 +105,7 @@ java com.android.sdklib.build.ApkBuilderMain bin/aaa.apk -u -z bin/resources.ap_
 * -u 创建一个无签名的包 Creates an unsigned package.
 * -z 指定 apk 资源路径 Followed by the path to a zip archive. Adds the content of the application package.
 * -f 指定 dex 文件路径 Followed by the path to a file. Adds the file to the application package.
-* -rf     引用的第三方jar以及其中的资源文件，按照一定的格式放置到apk文件夹中, 一般是`src`, Followed by the path to a source folder.             Adds the java resources found in that folder to the application package, while keeping their path relative to the source folder.
+* -rf     引用的第三方 jar 以及其中的资源文件，按照一定的格式放置到apk文件夹中, 一般是`src`, Followed by the path to a source folder.             Adds the java resources found in that folder to the application package, while keeping their path relative to the source folder.
 * -rj     一般是 `/libs`, Followed by the path to a jar file or a folder containing jar files. Adds the java resources found in the jar file(s) to the application package.
 * -nf     一般是`/libs`, 将主项目libs下面的so库打包 Followed by the root folder containing native libraries to include in the application package.
 
@@ -115,11 +115,11 @@ java com.android.sdklib.build.ApkBuilderMain bin/aaa.apk -u -z bin/resources.ap_
 
 参数含义：
 
-* -verbose  签名/验证时输出详细信息
-* -keystore  密钥库路径
-* -storepass  用于密钥库完整性的口令（密码）
-* -keypass    专用密钥的口令（密码）
-* -signedjar   已签名的 apk 文件的名称 （第一个apk是签名之后的文件， 第二个apk是需要签名的文件）
+* -verbose 签名/验证时输出详细信息
+* -keystore 密钥库路径
+* -storepass 用于密钥库完整性的口令（密码）
+* -keypass 专用密钥的口令（密码）
+* -signedjar 已签名的 apk 文件的名称 （第一个 apk 是签名之后的文件， 第二个 apk 是需要签名的文件）
 
 ## 8. 对签名包进行 zipalign 优化
 
