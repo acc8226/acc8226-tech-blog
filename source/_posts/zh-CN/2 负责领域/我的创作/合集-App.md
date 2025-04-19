@@ -160,7 +160,7 @@ not
 
 在线
 
-* [**微信读书**](https://sj.qq.com/appdetail/com.tencent.weread) 除了现在很多内容收费了
+* [微信读书](https://sj.qq.com/appdetail/com.tencent.weread) 除了现在很多内容收费了
 * [百度阅读](https://sj.qq.com/appdetail/com.baidu.yuedu) 老版本无广告
 * [多看](https://sj.qq.com/appdetail/com.duokan.reader) 老版本无广告
 
@@ -344,7 +344,7 @@ not 今日头条 竟然有点卡
 * ——————— ฅ՞• •՞ฅ ———————
 * [抖音](https://sj.qq.com/appdetail/com.ss.android.ugc.aweme) 稍有广告，同时它又是个超级 app，生活、超市、优惠、直播和团购都有
 * ——————— ฅ՞• •՞ฅ ———————
-* 有广告的 [爱奇艺](https://sj.qq.com/appdetail/com.qiyi.video) | [优酷视频](https://sj.qq.com/appdetail/com.youku.phone) | [腾讯视频](https://sj.qq.com/appdetail/com.tencent.qqlive) | [芒果 TV](https://sj.qq.com/appdetail/com.hunantv.imgo.activity)
+* 有广告的 [爱奇艺](https://sj.qq.com/appdetail/com.qiyi.video) | [优酷视频](https://sj.qq.com/appdetail/com.youku.phone) | [腾讯视频](https://sj.qq.com/appdetail/com.tencent.qqlive) | [芒果 TV](https://sj.qq.com/appdetail/com.hunantv.imgo.activity) ｜ [Z视介](https://sj.qq.com/appdetail/com.chinablue.tv)
 
 not
 
@@ -409,6 +409,7 @@ not [泰捷视频](https://www.51togic.com/%e6%b3%b0%e6%8d%b7%e8%a7%86%e9%a2%91)
 * [WiFi 万能钥匙极速版](https://sj.qq.com/appdetail/com.snda.lantern.wifilocating) 偶尔可以用下，虽说现在的能用的热点不多了
 * [CX 文件管理器](https://apkpure.com/cx-file-explorer/com.cxinventor.file.explorer) 小巧且强大，支持 webdav
 * [GKD 搞快点](https://gkd.li) 预设了跳广告规则，开箱即用
+* [一个木函](https://sj.qq.com/appdetail/com.One.WoodenLetter)
 
 可选
 
@@ -680,6 +681,10 @@ weico 下架了，变成了微博国际板，后面又变成轻享版了，结�
 * [QQ](https://sj.qq.com/appdetail/com.tencent.mobileqq) 通用版【已适配平板】
 * [微信](https://sj.qq.com/appdetail/com.tencent.mm)
 
+### 鸿蒙
+
+[微信](https://appgallery.huawei.com/app/detail?id=com.tencent.wechat)
+
 ## 10. 办公类
 
 ### 安卓
@@ -933,6 +938,7 @@ never
 * [交管 12123](https://sj.qq.com/appdetail/com.tmri.app.main) 交管事项线上办
 * [掌上 12333](https://sj.qq.com/appdetail/com.ylzinfo.chinahrss) 全国人社政务服务 app
 * [国家医保服务平台](https://sj.qq.com/appdetail/cn.hsa.app) 提供参保缴费、信息查询、待遇申请、业务经办等服务
+* [国家政务服务平台](https://sj.qq.com/appdetail/com.service.android.gov.cn)
 
 备用
 
@@ -1012,14 +1018,18 @@ APTV
 
 **公考刷题**
 
-* [疯狂刷题](https://sj.qq.com/appdetail/com.yaerxing.fkst) 汇聚大量包括了直至大学、考研优题、真题、好题
-* [一起公考](https://sj.qq.com/appdetail/com.zhangshangyiqi.civilserviceexam) 免登录就能刷很多题，还有少量免费视频课
-* [一起公考 AI 课](https://sj.qq.com/appdetail/com.zhihu.gongkao.android) 界面美观
 * [101 贝考](https://sj.qq.com/appdetail/com.nd.up91.overall) 覆盖学科全面的手机做题
+* [疯狂刷题](https://sj.qq.com/appdetail/com.yaerxing.fkst) 汇聚大量包括了直至大学、考研优题、真题、好题
+* [一起公考](https://sj.qq.com/appdetail/com.zhangshangyiqi.civilserviceexam) 免登录就能刷很多题
 
 **公考培训**
 
-[高途公考](https://sj.qq.com/appdetail/com.gaotu100.gongkao) 文档附件预览特别好用，查询招信息较为方便但是资源少
+* [高途公考](https://sj.qq.com/appdetail/com.gaotu100.gongkao) 文档附件预览特别好用，查询招信息较为方便但是资源少
+* [一起公考 AI 课](https://sj.qq.com/appdetail/com.zhihu.gongkao.android) 界面美观
+* [橙啦](https://sj.qq.com/appdetail/com.xcgl.chengla) 服务年轻人的高品质学习 App
+* [上岸鸭公考](https://sj.qq.com/appdetail/com.gaodun.apps.shanganya)
+* [金标尺公考](https://sj.qq.com/appdetail/cn.net.tiku.jbcgk.syn)
+* [步知公考](https://sj.qq.com/appdetail/com.chiigu.shake)
 
 备用 [粉笔](https://sj.qq.com/appdetail/com.fenbi.android.servant)
 
@@ -1039,10 +1049,9 @@ not
 * [上学吧](https://sj.qq.com/appdetail/com.shangxueba.open.sxb) 考题丰富但界面复古
 * [希赛网](https://sj.qq.com/appdetail/com.xuesaieducation) 内容稍杂
 
-**专升本|考研**
+**专升本**
 
-* [橙啦](https://sj.qq.com/appdetail/com.xcgl.chengla) 服务年轻人的高品质学习 App
-* [库课网校](https://sj.qq.com/appdetail/com.kuke) 有一些免费课程还不错
+[库课网校](https://sj.qq.com/appdetail/com.kuke) 有一些免费课程还不错
 
 ### 安卓平板
 
@@ -1179,6 +1188,8 @@ not
 * [菜鸟](https://sj.qq.com/appdetail/com.cainiao.wireless) 好处就是一键查询所有快递
 * [快递 100](https://sj.qq.com/appdetail/com.Kingdee.Express) 查和寄快递，最近寄快递选【德邦】确实便宜写，不过**体积和重量**是按两者最大的来，情有可原吧。第一次用快递 100 我领了一个 5 月的优惠券，感觉还行，一般足够用
 
+官网收录：[邮政 EMS](https://sj.qq.com/appdetail/com.kun.ems) ｜ [顺丰速运](https://sj.qq.com/appdetail/com.sf.activity)
+
 ## 53. POS 收款配套
 
 汇付天下满天星商户通 较为正规，存活时间较长
@@ -1193,7 +1204,11 @@ not 上海电银银乾付 已跑路，总之 pos 除非正常交易否则慎用�
 
 华为手机可以通过“设置-安全-应急预警通知-地震预警”打开功能；小米手机则可以通过“手机管家-家人关怀-地震预警”选择开启功能；OPPO / 一加 / 真我手机可以通过“设定-安全-SOS 紧急联络-自然灾害警报-地震警报开启”入口访问相应功能；苹果 / 三星等手机则可以下载“[地震预警](https://sj.qq.com/appdetail/com.huania.earthquakewarning)”App 或通过“中国地震台网”微信小程序启用相应功能。
 
-## 56. 游戏
+## 56. 脑图
+
+[MindLine 思维导图](http://www.mindline.cn) 手机版还算好用，电脑版限制稍多
+
+## 57. 游戏
 
 ### iPhone 和 iPad
 
@@ -1234,7 +1249,7 @@ Simple Design Ltd.
 [PDF Reader](https://pdf-reader-pdfviewer-pdfeditor.en.uptodown.com/android)
 
 Automattic – Making the web a better place
-出品了 [Day One Journal App](https://dayoneapp.com/) 和 [Simplenote](https://simplenote.com/)
+出品了 [Day One Journal App](https://dayoneapp.com) 和 [Simplenote](https://simplenote.com)
 
 ### 家庭必备
 

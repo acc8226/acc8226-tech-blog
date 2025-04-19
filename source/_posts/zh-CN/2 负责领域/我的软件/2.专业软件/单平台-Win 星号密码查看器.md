@@ -24,4 +24,4 @@ categories:
 
 ## 参考
 
-ftp 等远程登录工具的星号密码查看方法_会飞的鱼的博客 <https://blog.csdn.net/wz947324/article/details/80047573>
+[ftp 等远程登录工具的星号密码查看方法_会飞的鱼的博客](https://blog.csdn.net/wz947324/article/details/80047573)

@@ -69,6 +69,7 @@ highlight:
   wrap: true
   hljs: false
 
+  # NexT User Docs – NexT Supported Tags – Mermaid
   exclude_languages:
     - mermaid
 

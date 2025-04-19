@@ -297,8 +297,7 @@ canvas-ribbon.js is a ribbon backgroud of website draw on canvas.
 
 ## 开启 Mermaid 支持
 
-Mermaid | NexT
-<https://theme-next.js.org/docs/tag-plugins/mermaid.html>
+[Mermaid | NexT](https://theme-next.js.org/docs/tag-plugins/mermaid.html)
 
 示例：
 

@@ -34,9 +34,9 @@ categories: 我的创作
 
 #### 1.0.3 输入法
 
-* 【win】自带 或者 [RIME 输入法](https://rime.im)
-* 【mac】自带 或者[微信输入法](https://z.weixin.qq.com)
-* 【linux】自带 或者 [RIME 输入法](https://rime.im)
+* 【win】自带的微软输入法
+* 【mac】自带或[微信输入法](https://z.weixin.qq.com)
+* 【linux】自带或[搜狗输入法](https://shurufa.sogou.com/linux)
 
 ### 1.1 工具类
 
@@ -50,7 +50,7 @@ categories: 我的创作
 
 * 【win】[WGestures 1 代](https://www.yingdev.com/projects/wgestures) | [WGestures 2](https://store.lizhi.io/site/products/id/523?cid=46jjayiu) 付费
 * 【mac】[BetterAndBetter](https://www.better365.cn/bab2.html) 不仅仅是鼠标手势
-* 【linux】KDE 桌面已内置鼠标手势
+* 【linux】KDE 桌面内置的鼠标手势
 
 #### 1.1.2【推荐】键鼠增强
 
