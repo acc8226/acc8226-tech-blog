@@ -12,7 +12,7 @@ tags: Markdown
 
 Next 提供了两个渲染引擎来显示数学方程: MathJax 和 KaTeX。
 
-要使用这个特性，您只需要选择一个渲染引擎并打开它的 `enable`(位于`heme config file`)。 然后你需要安装相应的 Hexo 渲染器来完全支持数学方程式的显示-只开启启用可能不会让你正确地看到显示的方程式。 相应的 Hexo 渲染引擎将提供如下。
+要使用这个特性，您只需要选择一个渲染引擎并打开它的 `enable`(位于 `heme config file`)。 然后你需要安装相应的 Hexo 渲染器来完全支持数学方程式的显示-只开启启用可能不会让你正确地看到显示的方程式。 相应的 Hexo 渲染引擎将提供如下。
 
 ## Settings 设置
 
@@ -166,7 +166,7 @@ e=mc^2
 
 ### Multi-line Equation 多行方程
 
-对于多行方程，在方程式环境中，您可以使用`aligned`将其分割为多行:
+对于多行方程，在方程式环境中，您可以使用 `aligned` 将其分割为多行:
 
 ```md
 $$\begin{equation}
@@ -292,8 +292,5 @@ $\tiny{七号字体(5.25pts)}$
 
 ## 参考
 
-next 主题官网
-<https://theme-next.org/>
-
- theme NexT
-<https://github.com/next-theme/hexo-theme-next>
+* [next 主题官网](https://theme-next.org)
+* [theme NexT](https://github.com/next-theme/hexo-theme-next)
