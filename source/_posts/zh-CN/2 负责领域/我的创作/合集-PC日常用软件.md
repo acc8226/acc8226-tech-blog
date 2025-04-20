@@ -17,7 +17,7 @@ categories: 我的创作
 * 以下内容谨代表个人观点。软件上尽量选择跨平台在搭配特定系统特有软件即可满足大部分使用场景
 * “官网收录”模块收录的各软件官网地址仅供参考
 
-## 1. 日常
+## 1 日常
 
 ### 1.0 必备
 
@@ -309,7 +309,7 @@ not albert 安装不上
 * 【linux】[FBReader](https://fbreader.org) 用于阅读电子书
 * 【linux】[NewsFlash](https://flathub.org/zh-Hans/apps/io.gitlab.news_flash.NewsFlash) 很棒的一款 rss 阅读器
 
-## 2. 拓展
+## 2 拓展
 
 ### 2.0【常用】驱动运行库硬件检测
 
@@ -712,7 +712,7 @@ not【win】[Seer](http://www.1218.io/seer.html) 收费就算了
 1. win Vista/7/8 缺失的非激活的窗口下使用滚轮滚动
 1. 反转鼠标滚动方向，类似苹果的自然滚动
 
-## 3. 专业
+## 3 专业
 
 ### 3.0 虚拟机
 
@@ -781,7 +781,7 @@ not [乐播投屏](https://www.lebo.cn) 太臃肿且要**注意远程屏幕共�
 
 【全平台】[FFmpeg](https://ffmpeg.org) 用于录制、转换和流式传输音频和视频
 
-## 4. 游戏
+## 4 游戏
 
 ### 4.1 游戏平台
 
@@ -799,13 +799,13 @@ not
 
 [小鸡模拟器 windows 经典版](https://dl.xiaoji001.com/download/pc/xiaoji_0.0.30.exe) | [VirtuaNES](https://www.emulator-zone.com/doc.php/nes/virtuanes.html)
 
-## 5. 一些优秀的应用厂商
+## 5 一些优秀的应用厂商
 
 1. Data center, cloud, and edge unified | [Resilio](https://www.resilio.com) 提供了免费的​​去中心化网盘 [Resilio Sync](https://www.resilio.com/sync/) 可用作同步
 1. [GOFF Concepts](http://goffconcepts.com/index.html) 主页 --- GOFF Concepts Home Page 提供了 FileSearchEX 等软件
 1. [Sordum.org - Simplify Your computer Usage](https://www.sordum.org) 提供了很多好用小工具，比如 Dns Jumper
 
-## 6. XP 怀旧专题
+## 6 XP 怀旧专题
 
 1. [补丁合集](https://www.123pan.com/s/aDE9-hCCyh.html)
 1. [360 安全卫士极速版](https://wsdl.360safe.com/setupbeta_jisu.exe)
@@ -816,7 +816,7 @@ not
 1. [微信 3.2.1](https://www.123pan.com/s/aDE9-hCCyh.html)
 1. [Potplayer 1.7](https://www.123pan.com/s/aDE9-hCCyh.html)
 
-## 7. 留观中
+## 7 留观中
 
 一些用过的软件但主观关键明显不好用的记录，说不定下版会优化，所以仅供参考
 
@@ -829,7 +829,7 @@ not
 * [pear-rec](https://027xiguapi.github.io/pear-rec)【全平台】录屏软件 至少我在 windows 上体验不佳
 * [flowlauncher](https://www.flowlauncher.com/docs) 作为一款启动器 有点儿卡
 
-## 8. 回收站
+## 8 回收站
 
 * 【浏览器插件】CSDN 猿如意 不让人满意
 * ——————— ฅ՞• •՞ฅ ———————

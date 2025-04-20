@@ -173,10 +173,10 @@ set 设置临时环境变量
 setx 可以永久设置环境变量
 
 1\. 永久设置环境变量
-setx /m name "value"
+`setx /m name "value"`
 
 2\. 永久追加环境变量
-setx -m name "%name%;value"
+`setx -m name "%name%;value"`
 
 ### 设置软件开机启动
 
@@ -231,6 +231,7 @@ setx -m name "%name%;value"
 
 ### Win 10 设置选项命令大全
 
+```text
 ms-settings 打开设置
 ms-settings:batterysaver 节电模式
 ms-settings:batterysaver-settings 节电模式设置
@@ -324,16 +325,17 @@ ms-settings:pen 笔
 ms-settings:printers 打印机和扫描仪
 ms-settings:typing 输入
 ms-settings:wheel 滚轮
+```
 
 ### SHA256 校验码检查文件的完整性
 
 在 Windows 系统中，您可能需要使用 PowerShell，并输入以下命令：
 
-Get-FileHash -Algorithm SHA256 文件的路径
+`Get-FileHash -Algorithm SHA256 文件的路径`
 
 ### win 10 删除 3D 对象等7个文件夹
 
-注册表管理器regedit
+注册表管理器 regedit
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace
 
 按照需要，删除以下7个文件夹。
@@ -375,9 +377,8 @@ colortool.exe -b OneHalfDark.itermcolors
 
 ### WSA 安卓子系统【已废弃】
 
-教程 - Win 11 安装 wsa 安卓虚拟机 - 简书
-<https://www.jianshu.com/p/5e07a0e97a27>
+[教程 - Win 11 安装 wsa 安卓虚拟机](https://www.jianshu.com/p/5e07a0e97a27) - 简书
 
 ## 参考
 
-你可能不知道的几种替代式 Windows 快捷操作 | IT 技术资料分享 <https://www.lmdouble.com/1424236155.html>
+[你可能不知道的几种替代式 Windows 快捷操作](https://www.lmdouble.com/1424236155.html) | IT 技术资料分享

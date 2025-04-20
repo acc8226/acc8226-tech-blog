@@ -25,7 +25,7 @@ categories: 我的创作
 
 挑选软件我尽量考虑以免费为主。
 
-## 1. Build tool 构建工具
+## 1 Build tool 构建工具
 
 ### 1.1 Web 构建工具
 
@@ -77,7 +77,7 @@ repositories {
 }
 ```
 
-## 2. DB 数据库
+## 2 DB 数据库
 
 ### 2.1 各类数据库
 
@@ -114,7 +114,7 @@ not
 
 【全平台】[Docker](https://www.docker.com/products/docker-desktop)
 
-## 4.【常用】Editor 编辑器
+## 4【常用】Editor 编辑器
 
 【全平台】[VS Code](https://code.visualstudio.com) windows 推荐使用**安装版**而非便携版，这样能及时获得更新。[win 7 最后一个支持版](https://code.visualstudio.com/updates/v1_70)
 
@@ -140,7 +140,7 @@ not
 * ——————— ฅ՞• •՞ฅ ———————
 * 【已过时】[Atom](https://github.com/atom/atom)
 
-## 5. File compare 文件对比
+## 5 File compare 文件对比
 
 【Win 精品软件】[WinMerge](https://winmerge.org) | [下载页](https://winmerge.org/downloads/?lang=en) 用于比较文件夹和文件，以便于理解和处理的可视文本格式呈现差异。是我离不开 windows 的一个重要原因
 
@@ -152,7 +152,7 @@ not【全平台 付费】[Beyond Compare](https://www.beyondcompare.cc)
 
 【全平台 免费】[Meld](https://meld.app) 妥妥的 GNOME 风格，颜值非常 nice
 
-## 6.【常用】IDE 集成开发环境
+## 6【常用】IDE 集成开发环境
 
 * 【win mac】[HBuilder X](https://www.dcloud.io/hbuilderx.html)
 * 【win mac】[微信开发者工具](https://developers.weixin.qq.com/miniprogram/dev/devtools/devtools.html)
@@ -169,7 +169,7 @@ not【全平台 付费】[Beyond Compare](https://www.beyondcompare.cc)
 * 【全平台 对非商业用途免费】[WebStorm](https://www.jetbrains.com.cn/webstorm)
 * 【win mac】[Visual Studio](https://visualstudio.microsoft.com/zh-hans) 你可以使用 C#、F# 或 Visual Basic 语言编写 .NET 应用
 
-## 7.【常用】lang 编程语言
+## 7【常用】lang 编程语言
 
 ### 7.1 Autohotkey
 
@@ -246,7 +246,7 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
 [TypeScript](https://www.typescriptlang.org/zh) JavaScript With Syntax For Types.
 
-## 8. MQ 和 OSS
+## 8 MQ 和 OSS
 
 **MQ 消息队列**
 
@@ -259,7 +259,7 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
 [MinIO](https://min.io) | S3 & Kubernetes Native Object Storage for AI
 
-## 9. Network tool 网络工具
+## 9 Network tool 网络工具
 
 ### 9.1 http 调试
 
@@ -300,7 +300,7 @@ not
 
 * 【JavaScript】[Yarn](https://www.yarnpkg.cn) - JavaScript 软件包管理器
 
-## 11. Redis
+## 11 Redis
 
 ### 11.1 Redis 数据库
 
@@ -314,12 +314,12 @@ Redis 是一种内存数据库，同时支持磁盘持久化。其数据模型�
 
 [发行版下载](https://gitee.com/quick123official/quick_redis_blog/releases/)
 
-## 12. ref 参考文档
+## 12 ref 参考文档
 
 * 【win】[Zeal](https://zealdocs.org) Offline Documentation Browser
 * 【mac】[Dash](https://kapeli.com/dash) API Documentation Browser, Snippet Manager - Kapeli
 
-## 13.【常用】revision control 版本控制
+## 13【常用】revision control 版本控制
 
 ### 13.1 Git
 
@@ -351,14 +351,14 @@ not
 
 虚位以待
 
-## 14. server 服务器
+## 14 server 服务器
 
 * [Apache Tomcat](https://tomcat.apache.org)
 * [Eclipse Jetty](https://www.eclipse.org/jetty)
 * [nginx-download](https://nginx.org/en/download.html)
 * [tengine-download](https://tengine.taobao.org/download_cn.html) Tengine 是由淘宝发起的Web服务器项目。它在 Nginx 的基础上，针对大访问量网站的需求，添加了很多高级功能和特性。
 
-## 15. ssh & ftp 文件传输
+## 15 ssh & ftp 文件传输
 
 【全平台 精品软件】[Termius](https://www.termius.com/)
 
@@ -406,7 +406,7 @@ not
 
 ![保持活动状态](./imgs/%E4%B8%93%E9%A2%98-%E7%A0%81%E5%86%9C%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/%E4%BF%9D%E6%8C%81%E6%B4%BB%E5%8A%A8%E7%8A%B6%E6%80%81.png)
 
-## 16. terminal 终端
+## 16 terminal 终端
 
 ### 【win】微软 terminal
 
@@ -431,7 +431,7 @@ MSYS2 还是一组工具和库，为您提供了一个易于使用的环境，�
 
 带了一个包管理器，可以安装 c 编译器 gcc。也算一个终端，还可以运行 linux 命令
 
-## 17. shell 环境
+## 17 shell 环境
 
 ### 17.1【跨平台】PowerShell
 

@@ -52,7 +52,7 @@ Win 10 现在的版本命名规则是：20H2 = 2020 年下半年版，2021H1 = 2
 字母区
 数字区
 文本编辑区：backspace 退格键（每按一次可删除光标前的一个字符） delete 删除键（向后删一个字符） enter 回车键 esc 退出键/逃逸键
-功能键：Function 按住 FN 键盘再按从 F1 键盘到 F12 键上相应的功能
+功能键：Function 按住 Fn 键盘再按从 F1 键盘到 F12 键上相应的功能
 锁定键：NumLock 数字锁定键，CapsLock （Capitals lock）大小写锁定键，ScrollLock 滚动屏幕键
 
 ## 熟悉 windows 系统
@@ -86,15 +86,12 @@ V 模式 v 键进入后，可快速输入中文年月日时间以及公式运算
 
 edge 浏览器的使用
 
-360 极速浏览器自带的鼠标手势，超级拖拽
-<https://browser.360.cn/ee/>
+[360 极速浏览器](https://browser.360.cn/ee)自带的鼠标手势，超级拖拽
 
 插件:
-uBlock Origin 广告拦截_1.51.0_chrome 扩展插件下载_极简插件
-<https://chrome.zzzmh.cn/info/cjpalhdlnbpafiamejdnhcphjbkeiagm>
+[uBlock Origin 广告拦截_1.51.0_chrome 扩展插件下载_极简插件](https://chrome.zzzmh.cn/info/cjpalhdlnbpafiamejdnhcphjbkeiagm)
 
-Country Flag + :: MyBrowserAddon
-<https://mybrowseraddon.com/flag-plus.html>
+[Country Flag + :: MyBrowserAddon](https://mybrowseraddon.com/flag-plus.html)
 
 技巧：阅读 pdf，可以利用自带的 edge 进行打开。
 

@@ -50,7 +50,7 @@ categories: 我的创作
 
 测量快递体积的免费 app
 
-## 1. 装机必备
+## 1 装机必备
 
 ### 1.0 安全类【重要】
 
@@ -325,7 +325,7 @@ not 今日头条 竟然有点卡
 
 [IT之家](https://appgallery.huawei.com/app/detail?id=com.ruanmei.ithome.hosnext) 前沿科技媒体，人气数码社区
 
-## 2. 视频类【常用】
+## 2 视频类【常用】
 
 ### 安卓
 
@@ -402,7 +402,7 @@ not [泰捷视频](https://www.51togic.com/%e6%b3%b0%e6%8d%b7%e8%a7%86%e9%a2%91)
 
 [网易爆米花](https://apps.apple.com/us/app/%E7%BD%91%E6%98%93filmly-%E6%99%BA%E8%83%BD%E5%A4%9A%E5%AA%92%E4%BD%93%E7%AE%A1%E5%AE%B6-%E5%85%A8%E8%83%BD%E5%BD%B1%E8%A7%86%E6%92%AD%E6%94%BE%E5%99%A8/id6670539829)
 
-## 3. 工具【常用】
+## 3 工具【常用】
 
 ### 安卓
 
@@ -512,7 +512,7 @@ not
 * [百度地图](https://sj.qq.com/appdetail/com.baidu.BaiduMap) 通用版【已适配平板】备用，找便宜宾馆用
 * [腾讯地图](https://sj.qq.com/appdetail/com.tencent.map) 通用版【已适配平板】内置的【小程序】地图很好用
 
-## 6. education 教育
+## 6 education 教育
 
 ### 安卓
 
@@ -570,7 +570,7 @@ not
 * [不背单词](https://sj.qq.com/appdetail/cn.com.langeasy.LangEasyLexis) 通用版【已适配平板】
 * [每日英语阅读](https://sj.qq.com/appdetail/lexue.mryyyd) | [欧路词典](https://sj.qq.com/appdetail/com.eusoft.eudic)
 
-## 7. 生活类
+## 7 生活类
 
 ### 安卓
 
@@ -615,7 +615,7 @@ not
 
 什么值得买HD 颜值很高且存活了很多年
 
-## 8. 旅行类
+## 8 旅行类
 
 ### 安卓和 iPhone
 
@@ -685,7 +685,7 @@ weico 下架了，变成了微博国际板，后面又变成轻享版了，结�
 
 [微信](https://appgallery.huawei.com/app/detail?id=com.tencent.wechat)
 
-## 10. 办公类
+## 10 办公类
 
 ### 安卓
 
@@ -765,11 +765,11 @@ not
 
 [阿里云盘TV版](https://www.alipan.com/download/tvdownload)
 
-## 13. 效率类
+## 13 效率类
 
 [TODO 清单](https://sj.qq.com/appdetail/com.eve.todolist)
 
-## 14. 应用商店类
+## 14 应用商店类
 
 * [腾讯应用宝](https://sj.qq.com)-全网最新最热手机应用游戏下载
 * [百度手机助手](https://shouji.baidu.com)
@@ -795,7 +795,7 @@ not
 
 * Nova Launcher 连基础的手势操作还需要 pro 付费，差评
 
-## 16. 浏览器【常用】
+## 16 浏览器【常用】
 
 ### 安卓
 
@@ -870,11 +870,11 @@ not
 * [文小言](https://sj.qq.com/appdetail/com.baidu.newapp) 个人体审核不过是什么玩意
 * [讯飞星火](https://sj.qq.com/appdetail/com.iflytek.spark) 感觉还差点意思
 
-## 19. 智能家居
+## 19 智能家居
 
 博联智能 可以搭配天猫插座 不过要求 2.4 和 5G Hz 的网络要分开
 
-## 20. 硬件检测
+## 20 硬件检测
 
 ### iPhone
 
@@ -897,7 +897,7 @@ AIDA64 硬件检测
 * [挖财宝](https://sj.qq.com/appdetail/com.hangzhoucaimi.financial) 理财需谨慎
 * [天天基金](https://sj.qq.com/appdetail/com.eastmoney.android.fund) 东方财富旗下
 
-## 23. 银行类
+## 23 银行类
 
 ## 23.1 储蓄卡
 
@@ -944,20 +944,20 @@ never
 
 [北京公积金](https://sj.qq.com/appdetail/cn.gov.bjgjj.gjjapp) 北京专用。网站其实挺强大，一般 app 甚至都用不到
 
-## 27. 美食类
+## 27 美食类
 
 ### iPhone
 
 [美食杰](https://sj.qq.com/appdetail/com.jesson.meishi) | [下厨房](https://sj.qq.com/appdetail/com.xiachufang)
 
-## 28. 电影票房分析
+## 28 电影票房分析
 
 ### 通用
 
 * [灯塔专业版](https://sj.qq.com/appdetail/com.alipictures.moviepro) 个人认为灯塔比猫眼好用
 * [猫眼专业版](https://sj.qq.com/appdetail/com.sankuai.moviepro)
 
-## 29. 扫描
+## 29 扫描
 
 * [极度扫描](https://jidusm.wlhex.com) 跨平台OCR图片转文字 表格识别翻译，免费用户也能用
 
@@ -992,16 +992,16 @@ IPTV apkpure 版 作者 Alexander Sofronov
 
 APTV
 
-## 32. 远程控制
+## 32 远程控制
 
 * Kore 一个用于 Kodi 系统/程序 的 远程遥控器
 * [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer) 操控树莓派用
 
-## 33. 投屏
+## 33 投屏
 
 [AlookDLNA](https://alookweb.com/AlookDLNA.apk) 可以投屏到 电视 或者 安卓手机
 
-## 34. 设备管理
+## 34 设备管理
 
 ### 安卓 和 苹果
 
@@ -1010,7 +1010,7 @@ APTV
 * [贝锐蒲公英户端](https://pgy.oray.com/download) 向日葵家族，可实现快速组网
 * [小度](https://sj.qq.com/appdetail/com.baidu.duer.superapp) 小度打造的一款智能助手APP，能够连接多款百度旗下智能设备及合作设备，不得不用
 
-## 35. 考试类
+## 35 考试类
 
 ### 通用
 
@@ -1040,18 +1040,22 @@ not
 
 **软考**
 
-[软考通](https://sj.qq.com/appdetail/me.hxyfj.rk)
+51cto 软考【小程序】
 
-备用 [软考真题](https://sj.qq.com/appdetail/com.doquestion) 界面太复古
+备用
+
+[软考通](https://sj.qq.com/appdetail/me.hxyfj.rk)
+[软考真题](https://sj.qq.com/appdetail/com.doquestion) 界面太复古
 
 not
 
 * [上学吧](https://sj.qq.com/appdetail/com.shangxueba.open.sxb) 考题丰富但界面复古
-* [希赛网](https://sj.qq.com/appdetail/com.xuesaieducation) 内容稍杂
+* [希赛网](https://sj.qq.com/appdetail/com.xuesaieducation) 界面复古，内容太杂
+* [希赛软考助手](https://sj.qq.com/appdetail/com.xuesaieducation.ruankao)
 
 **专升本**
 
-[库课网校](https://sj.qq.com/appdetail/com.kuke) 有一些免费课程还不错
+[库课网校](https://sj.qq.com/appdetail/com.kuke) 有一些不错的免费课程
 
 ### 安卓平板
 
