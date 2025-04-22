@@ -57,6 +57,24 @@ docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 -e PUI
 docker exec -it alist ./alist admin set myPASSWORDForTxng
 ```
 
+### cloudreve
+
+```sh
+# 首先建立目录
+mkdir -vp cloudreve/{uploads,avatar} \
+&& touch cloudreve/conf.ini \
+&& touch cloudreve/cloudreve.db
+
+# 然后必须使用绝对路径进行映射
+docker run -d \
+-p 5212:5212 \
+--mount type=bind,source=/home/ubuntu/cloudreve/conf.ini,target=/cloudreve/conf.ini \
+--mount type=bind,source=/home/ubuntu/cloudreve/cloudreve.db,target=/cloudreve/cloudreve.db \
+-v /home/ubuntu/cloudreve/uploads:/cloudreve/uploads \
+-v /home/ubuntu/cloudreve/avatar:/cloudreve/avatar \
+cloudreve/cloudreve:latest
+```
+
 ### 密码管理 server
 
 bitwarden 最低系统要求 2GB 内存 + 12GB 磁盘空间。
