@@ -9,25 +9,17 @@ categories: 我的创作
 
 ### zip
 
-打包
-
-```sh
-rm -rf html.zip && zip -q -r html.zip *
-```
+打包 `rm -rf html.zip && zip -q -r html.zip *`
 
 ### tar
 
-打包
-
-```sh
-rm -rf html.tar.gz && tar czvf html.tar.gz *
-```
+打包 `rm -rf html.tar.gz && tar czvf html.tar.gz *`
 
 ## 拓展软件使用
 
 ### rss 订阅
 
-[FreshRSS](https://www.freshrss.org/), a free, self-hostable feeds aggregator
+[FreshRSS](https://www.freshrss.org/) a free, self-hostable feeds aggregator
 
 <!-- more -->
 

@@ -6,7 +6,7 @@ updated: 2025-03-13 20:01:14
 categories: 我的创作
 ---
 
-本文章是[《合集-📱App》](https://feipig.fun/myapp/)的姊妹篇。
+本文章是[《合集-📱App》](https://feipig.fun/myapp)的姊妹篇。
 
 ## 前言
 
@@ -23,14 +23,13 @@ categories: 我的创作
 
 #### 1.0.1 安全类
 
-* 【win】[360 安全卫士极速版](https://weishi.360.cn) | [微软电脑管家](https://pcmanager.microsoft.com/zh-cn)+[火绒安全](https://www.huorong.cn)
+* 【win】[360 安全卫士极速版](https://weishi.360.cn) | [火绒安全](https://www.huorong.cn)
 * 【mac】[腾讯柠檬清理](https://lemon.qq.com) 原腾讯电脑管家 for mac
 
 #### 1.0.2 浏览器
 
 * 【win 绿色版 & mac】[Catsxp 猫眼浏览器](https://www.catsxp.com) 鼠标悬停切换标签功能很好用 |【win 绿色版】[百分浏览器](http://www.centbrowser.cn)
-* 【linux】[火狐浏览器](https://www.firefox.com.cn)
-<!-- more -->
+* 【linux】[火狐浏览器](https://www.firefox.com.cn)<!-- more -->
 
 #### 1.0.3 输入法
 

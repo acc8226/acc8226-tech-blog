@@ -5,7 +5,7 @@ updated: 2024-11-02 10:35:49
 categories: 我的创作
 ---
 
-借助 The SourceForge.net project web service 提供的直链，虽然速度不快。
+借助 The SourceForge.net 的 project web service 当做直链，虽然速度不快。
 
 可测试移动设备或电脑对 HTML5 的 video 标签支持的视频格式 mp4 及兼容性。
 
