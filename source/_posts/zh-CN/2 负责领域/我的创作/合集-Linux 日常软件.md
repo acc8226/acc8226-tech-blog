@@ -19,7 +19,7 @@ categories: 我的创作
 
 ### rss 订阅
 
-[FreshRSS](https://www.freshrss.org/) a free, self-hostable feeds aggregator
+[FreshRSS](https://www.freshrss.org) a free, self-hostable feeds aggregator
 
 <!-- more -->
 
@@ -97,15 +97,7 @@ docker run -d --name vaultwarden \
 
 [AdGuardHome](https://github.com/AdguardTeam/AdGuardHome)
 
-```sh
-curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v
-```
-
-or
-
-```sh
-wget --no-verbose -O - https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v
-```
+`curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v` 或者 `wget --no-verbose -O - https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v`
 
 you can control the service status with the following commands:
 

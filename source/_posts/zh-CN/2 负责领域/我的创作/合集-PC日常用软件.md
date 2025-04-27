@@ -256,9 +256,7 @@ not【win linux】[阿里旺旺](https://wangwang.taobao.com) 不好用
 1. 【全平台】【[mac 版](https://apps.apple.com/cn/app/%E6%AF%8F%E6%97%A5%E8%8B%B1%E8%AF%AD%E5%90%AC%E5%8A%9B-%E8%8B%B1%E8%AF%AD%E5%90%AC%E5%8A%9B%E7%9A%84%E6%9C%80%E4%BD%B3%E9%80%94%E5%BE%84/id734383760?mt=12)】[每日英语听力](https://www.eudic.net/v4/en/app/ting)
 1. 【全平台】【[mac 版](https://apps.apple.com/cn/app/eudic-%E6%AC%A7%E8%B7%AF%E8%AF%8D%E5%85%B8/id434350458?mt=12)】[欧路词典](https://www.eudic.net/v4/en/app/download)
 
-怀旧经典
-
-【win 绿色版】[灵格斯词典](http://www.lingoes.cn/index.html)
+怀旧经典 【win 绿色版】[灵格斯词典](http://www.lingoes.cn/index.html)
 
 ### 1.7 远程类
 
@@ -307,6 +305,14 @@ not albert 安装不上
 * 【mac】[Reeder](https://apps.apple.com/mo/app/reeder-5/id1529448980) 用于 rss
 * 【linux】[FBReader](https://fbreader.org) 用于阅读电子书
 * 【linux】[NewsFlash](https://flathub.org/zh-Hans/apps/io.gitlab.news_flash.NewsFlash) 很棒的一款 rss 阅读器
+
+### 1.10 词典类
+
+[金山词霸](https://cp.iciba.com) 或者 欧路词典
+
+not
+
+网易有道翻译
 
 ## 2 拓展
 
@@ -629,10 +635,15 @@ not
 
 【全平台】[EcoPaste](https://ecopaste.cn) |【win】[Ditto](https://ditto-cp.sourceforge.io)
 
-### 2.30 窗口置顶
+### 2.30 窗口管理
 
-* [SmartSystemMenu](https://github.com/AlexanderPro/SmartSystemMenu/blob/master/README_CN.md) 扩展了系统中所有窗口的系统菜单。
-* [SmartContextMenu](https://github.com/AlexanderPro/SmartContextMenu/blob/main/README_CN.md) 为您的操作系统的所有窗口添加了一个上下文菜单。该程序是SmartSystemMenu的改进版
+【win】[DisplayFusion](https://www.displayfusion.com) | [中文官网](https://displayfusion.cn/)（多屏）显示器管理增强软件
+
+备用
+
+* [AquaSnap](https://www.nurgo-software.com/pricing/aquasnap) 是一款免费的 Windows 界面增强软件
+* [SmartSystemMenu](https://github.com/AlexanderPro/SmartSystemMenu/blob/master/README_CN.md) 扩展了系统中所有窗口的系统菜单，比如提供了窗口置顶功能
+* [SmartContextMenu](https://github.com/AlexanderPro/SmartContextMenu/blob/main/README_CN.md) 为您的操作系统的所有窗口添加了一个上下文菜单。该程序是SmartSystemMenu 的改进版
 
 ### 2.31 沙盘程序
 
@@ -821,7 +832,6 @@ not
 
 * [图吧工具箱](https://www.tbtool.cn) 中规中矩，功能挺强大
 * [Advanced IP Scanner](https://www.advanced-ip-scanner.com/cn) 免费下载网络扫描程序 但我不喜欢安装版
-* [DisplayFusion](https://www.displayfusion.com)【win】
 * ——————— ฅ՞• •՞ฅ ———————
 * [Fantastical](https://apps.apple.com/cn/app/fantastical-calendar/id975937182)【mac】拥有和系统自带日历应用类似界面布局，但界面信息更加直观自然。软件支持苹果各个平台，除了可以与 iCloud / Google / Yahoo 日历无缝整合同步外，它还解决了系统自带日历 APP 功能的诸多不足
 * [Lively Wallpaper - Microsoft Store 应用程序](https://apps.microsoft.com/store/detail/lively-wallpaper) 占用 CPU 资源太大
