@@ -629,7 +629,7 @@ not
 
 ### 2.28 音频编辑
 
-[Audacity](https://www.audacityteam.org/) 是一个易用、多轨音频录制和编辑的自由、开源、跨平台音乐软件。可以在 Windows, Mac OS X, GNU/Linux 和其他操作系统上使用。
+[Audacity](https://www.audacityteam.org) 是一个易用、多轨音频录制和编辑的自由、开源、跨平台音乐软件。可以在 Windows, Mac OS X, GNU/Linux 和其他操作系统上使用。
 
 ### 2.29 增强剪切板
 
