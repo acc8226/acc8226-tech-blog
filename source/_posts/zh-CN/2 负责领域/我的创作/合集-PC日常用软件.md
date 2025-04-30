@@ -14,7 +14,7 @@ categories: 我的创作
 
 注：
 
-* 以下内容谨代表个人观点。软件上尽量选择跨平台在搭配特定系统特有软件即可满足大部分使用场景
+* 以下内容谨代表个人观点。软件上尽量选择跨平台在搭配特定系统特有软件即可满足大部分使用场景 
 * “官网收录”模块收录的各软件官网地址仅供参考
 
 ## 1 日常
@@ -29,7 +29,7 @@ categories: 我的创作
 #### 1.0.2 浏览器
 
 * 【win 绿色版 & mac】[Catsxp 猫眼浏览器](https://www.catsxp.com) 鼠标悬停切换标签功能很好用 |【win 绿色版】[百分浏览器](http://www.centbrowser.cn)
-* 【linux】[火狐浏览器](https://www.firefox.com.cn)<!-- more -->
+* 【linux】[Chrome 谷歌](https://www.google.cn/chrome)<!-- more -->
 
 #### 1.0.3 输入法
 
@@ -43,13 +43,13 @@ categories: 我的创作
 
 * 【win 开源绿色版】[PeaZip](https://peazip.github.io/peazip-portable.html) 含智能解压 | [Bandizip v6.25 最后的无广告版](https://www.lanzoup.com/i8av00j) in 2019 含智能解压
 * 【mac [苹果商店版](https://apps.apple.com/cn/app/the-unarchiver/id425424353?mt=12)】[The Unarchiver](https://theunarchiver.com) | [FastZip](https://www.better365.cn/fastzip.html)
-* 【linux】自带命令
+* 【linux】系统自带
 
 #### 1.1.1【推荐】鼠标手势
 
 * 【win】[WGestures 1 代](https://www.yingdev.com/projects/wgestures) | [WGestures 2](https://store.lizhi.io/site/products/id/523?cid=46jjayiu) 付费
 * 【mac】[BetterAndBetter](https://www.better365.cn/bab2.html) 不仅仅是鼠标手势
-* 【linux】KDE 桌面内置的鼠标手势
+* 【linux】Easystroke | KDE 内置鼠标手势
 
 #### 1.1.2【推荐】键鼠增强
 
@@ -90,7 +90,7 @@ mac 版迅雷其实也不错，不过必须去官网下载才是完整版，目�
 **linux 平台**
 
 1. 【全平台】[Motrix](https://motrix.app/zh-CN)
-1. 【linux win】[xdm](https://github.com/subhra74/xdm/releases) 可以认为是 linux 环境下的 idm
+1. 【linux win】[XDM](https://github.com/subhra74/xdm/releases) 可以认为是 linux 环境下的 idm
 
 #### 1.1.6【常用】网盘
 
