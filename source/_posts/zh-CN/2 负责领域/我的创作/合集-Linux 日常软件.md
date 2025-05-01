@@ -49,7 +49,7 @@ docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 -e PUI
 docker exec -it alist ./alist admin set myPASSWORDForTxng
 ```
 
-### cloudreve
+### [cloudreve](https://cloudreve.org)
 
 ```sh
 # 首先建立目录
