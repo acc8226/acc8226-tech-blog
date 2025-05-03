@@ -120,9 +120,9 @@ JetBrains Mono 采用了开源字体许可证 SIL Open Font License，开源免�
 
 [Inconsolata](http://www.levien.com/type/myfonts/inconsolata.html) 非常漂亮的一款等宽字体。从 2006 年开始它便一直是一款开源和可免费获取的字体。它的创造者 Raph Levien 在设计 Inconsolata 时秉承的一个基本原则是：等宽字体并不应该那么糟糕。使得 Inconsolata 如此优秀的两个原因是：对于 0 和 o 这两个字符它们有很大的不同，另外它还特别地设计了标点符号。
 
-### 0xProto
+### [0xProto](https://gitcode.com/gh_mirrors/0x/0xProto)
 
-[0xProto](https://gitcode.com/gh_mirrors/0x/0xProto) | [GitHub Release](https://github.com/0xType/0xProto/releases) 是一款专注于源代码可读性的编程字体。确保代码清晰易读是你的职责哦！ 😉
+[GitHub Release](https://github.com/0xType/0xProto/releases) 是一款专注于源代码可读性的编程字体。确保代码清晰易读是你的职责哦！ 😉
 
 对于编程字体来说，可识别性至关重要，尤其是每个字母之间的明显区别。保持编码的清晰有助于减少歧义，防止因错误导致软件bug。0xProto 是一款精心设计的统一字体，旨在增强类似字母间的辨识度。
 
@@ -140,30 +140,32 @@ JetBrains Mono 采用了开源字体许可证 SIL Open Font License，开源免�
 
 [下载地址](https://github.com/intel/intel-one-mono/releases)
 
-### IBM Plex 字体家族
+### [IBM Plex 字体家族](https://gitcode.com/gh_mirrors/pl/plex)
 
-[IBM Plex 字体](https://gitcode.com/gh_mirrors/pl/plex/)是一个开源项目，遵循开放字体许可证（OFL）可供下载和多种用途。IBM Plex 字体系列包括无衬线、衬线、等宽和无衬线紧凑四种风格，均配备罗马体和真正的斜体。Plex 字体被设计得能够很好地适用于用户界面（UI）环境和其他介质。此项目提供所有源文件和多种格式，以支持大多数排版需求。目前，IBM Plex Sans 支持扩展拉丁语、阿拉伯语、繁体中文、西里尔语、梵文、希腊语、希伯来语、日语、韩语和泰语。
+IBM Plex 是一个开源项目，遵循开放字体许可证（OFL）可供下载和多种用途。IBM Plex 字体系列包括无衬线、衬线、等宽和无衬线紧凑四种风格，均配备罗马体和真正的斜体。Plex 字体被设计得能够很好地适用于用户界面（UI）环境和其他介质。此项目提供所有源文件和多种格式，以支持大多数排版需求。目前，IBM Plex Sans 支持扩展拉丁语、阿拉伯语、繁体中文、西里尔语、梵文、希腊语、希伯来语、日语、韩语和泰语。
 
 此外，IBM 还推出了 IBM Plex® Math。这个备受期待的版本包含了超过 5,000 个新符号，涵盖广泛的数学符号，如字母数字、双击、Fraktur、运算符、脚本、图标、箭头、希腊字母、语音学、技术性和几何形状——使其成为当今市面上最完整的数学字体之一。IBM Plex Math 提供了 STIX 和 Microsoft Cambria 字体的全新且全面的替代品。它与 IBM Plex Serif Regular 的兼容性，使其成为 IBM 研究人员和数学家的理想选择。
 
 ## 等宽中文
 
-中文字体应该都是等宽的
+中文字体应该都是等宽的。
+字重有小到大：
+Thin、Extralight、Light、**Default**、Medium、Demibold、Bold、Extrabold、Heavy
+Thin、Extralight、Light、**Normal**、Regular、Medium、Demibold、SemiBold、 Bold、Heavy
+Thin、Light、**Regular**、Medium、Bold、Black
 
 ### Adobe 系
 
-#### 思源黑体
+#### [思源黑体](https://github.com/adobe-fonts/source-han-sans)
 
-官网：https://github.com/adobe-fonts/source-han-sans
 开发商：Google & Adobe
 
 思源黑体（也称作 Source Han Sans 或 Noto Sans CJK）是 Google 和 Adobe 合作打造的开源字体，采用了开源字体许可证 SIL Open Font License，免费且可商用。“思源” 二字取自于成语 “饮水思源”。
 
 思源黑体支持简体中文、繁体中文、日文、韩文以及英文；提供了 ExtraLight、Light、Normal、Regular、Medium、Bold 和 Heavy 共 7 种字体粗细，可以满足不同场景下的文字显示需求。适合设计师、开发者，以及普通用户使用。
 
-#### 思源宋体
+#### [思源宋体](https://source.typekit.com/source-han-serif/cn)
 
-官网：https://source.typekit.com/source-han-serif/cn/
 开发商：Google & Adobe
 
 继 “思源黑体” 后，Adobe 和 Google 再度联手创造了 “思源宋体”（称作 Source Han Serif 或 Noto Serif CJK）。思源宋体也采用了开源字体许可证 SIL Open Font License，免费且可商用。
@@ -173,6 +175,14 @@ JetBrains Mono 采用了开源字体许可证 SIL Open Font License，开源免�
 ### 霞鹜文楷 (LXGW WenKai)
 
 [霞鹜文楷](https://github.com/lxgw/LxgwWenKai)是一款开源中文字体，名字取自于王勃的《滕王阁序》——“落霞与孤鹜齐飞，秋水共长天一色”。衍生自开源字体 Klee One，后者是一款日文的教科书字体，由日本著名字体厂商 FONTWORKS 打造，兼有仿宋和楷体的特点。霞鹜文楷基于 Klee One 补全了简繁常用字。
+
+### [OPPO Sans](https://www.coloros.com/article/A00000074)
+
+### [MiSans](https://hyperos.mi.com/font/zh/download)
+
+### [HarmonyOS 字体](https://developer.huawei.com/consumer/cn/doc/design-guides-V1/font-0000001157868583-V1)
+
+### [荣耀 HONOR 字体](https://developer.honor.com/cn/doc/guides/100813)
 
 ## 特殊系列
 
@@ -219,7 +229,7 @@ Cascadia 字体系列的下一个演变，Cascadia Next。我们才华横溢的�
 
 [下载](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/Monaspace.zip) | [preview](https://www.programmingfonts.org/#monaspace-neon)
 
-### FireCode Nerd Font
+#### FireCode Nerd Font
 
 [下载](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/FiraCode.zip)
 
@@ -258,6 +268,10 @@ Google 中国提供的 Google Fonts 国内镜像
 
 * [Fontsource](https://fontsource.org)
 * [Free Fonts!](https://www.fontsquirrel.com) Legit Free & Quality » Font Squirrel
+
+## VS code 字体我的预设配置
+
+"editor.fontFamily": "'SF Pro Text', 'HarmonyOS Sans SC Medium'"
 
 ## 总结
 

@@ -14,7 +14,7 @@ categories: 我的创作
 
 注：
 
-* 以下内容谨代表个人观点。软件上尽量选择跨平台在搭配特定系统特有软件即可满足大部分使用场景 
+* 以下内容谨代表个人观点。软件上尽量选择跨平台在搭配特定系统特有软件即可满足大部分使用场景
 * “官网收录”模块收录的各软件官网地址仅供参考
 
 ## 1 日常
@@ -29,7 +29,7 @@ categories: 我的创作
 #### 1.0.2 浏览器
 
 * 【win 绿色版 & mac】[Catsxp 猫眼浏览器](https://www.catsxp.com) 鼠标悬停切换标签功能很好用 |【win 绿色版】[百分浏览器](http://www.centbrowser.cn)
-* 【linux】[Chrome 谷歌](https://www.google.cn/chrome)<!-- more -->
+* 【linux】[360 安全浏览器](https://browser.360.net/gc/index.html)<!-- more -->
 
 #### 1.0.3 输入法
 
@@ -197,7 +197,7 @@ not
 
 在线播放：
 
-1. 【win [mac](https://apps.apple.com/cn/app/qq%E9%9F%B3%E4%B9%90-%E5%90%AC%E6%88%91%E6%83%B3%E5%90%AC/id595615424?mt=12)】[QQ 音乐](https://y.qq.com/download/index.html) 或【全平台】【[mac 版](https://apps.apple.com/cn/app/%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90/id944848654?mt=12)】[网易云音乐](https://music.163.com/#/download)
+1. 【win [mac](https://apps.apple.com/cn/app/qq%E9%9F%B3%E4%B9%90-%E5%90%AC%E6%88%91%E6%83%B3%E5%90%AC/id595615424?mt=12)】[QQ 音乐](https://y.qq.com/download/index.html)
 1. 【全平台】lx-music-desktop [项目主页](https://github.com/lyswhut/lx-music-desktop) | [发行版](https://github.com/lyswhut/lx-music-desktop/releases) 需自寻音乐源
 
 备选
@@ -211,18 +211,14 @@ not
 
 not【mac linux】[foobar2000](https://www.foobar2000.org) 缺少歌词搜索，且差很多意思
 
-在线播放：还是网易和 QQ 音乐那套
+在线播放：QQ 音乐
 
 **linux 平台**
 
 本地播放：平时我也基本不看歌词。比如自带的 kde 组件 [elisa](https://apps.kde.org/zh-cn/elisa)
+在线播放：【全平台】[lx-music 洛雪音乐桌面版](https://github.com/lyswhut/lx-music-desktop) |【全平台】[QQ 音乐](https://y.qq.com/download/index.html)
 
-在线播放：
-
-1. 【全平台】[lx-music 洛雪音乐桌面版](https://github.com/lyswhut/lx-music-desktop)
-1. 【全平台】[Spotify](https://www.spotify.com) 作为补充
-
-官网收录：【win [mac](https://apps.apple.com/cn/app/%E6%B1%BD%E6%B0%B4%E9%9F%B3%E4%B9%90-%E6%8A%96%E9%9F%B3%E9%9F%B3%E4%B9%90%E7%89%88/id1605585211)】[汽水音乐](https://www.qishui.com) |【win】[方格音乐](http://morin.vin) |【win mac】[iTunes](https://www.apple.com.cn/itunes)
+官网收录：【win [mac](https://apps.apple.com/cn/app/%E6%B1%BD%E6%B0%B4%E9%9F%B3%E4%B9%90-%E6%8A%96%E9%9F%B3%E9%9F%B3%E4%B9%90%E7%89%88/id1605585211)】[汽水音乐](https://www.qishui.com) |【win】[方格音乐](http://morin.vin) |【win mac】[iTunes](https://www.apple.com.cn/itunes) |【全平台】[网易云音乐](https://music.163.com/#/download)
 
 ### 1.4【常用】视频类
 

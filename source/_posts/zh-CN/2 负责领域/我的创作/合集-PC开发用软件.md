@@ -95,7 +95,7 @@ repositories {
 ### 2.3 数据库管理
 
 * 【全平台 付费】[DataGrip](https://www.jetbrains.com/datagrip)因 为我有 Jetbrain 开源认证，暂时选用
-* 【全平台 免费】[Navicat Premium Lite](https://www.navicat.com.cn/download/navicat-premium-lite) 毕竟免费，识别多种数据库，包括本地 sqlite 文件
+* 【全平台 免费】[Navicat Premium Lite](https://www.navicat.com.cn/download/navicat-premium-lite) 毕竟免费，识别多种数据库，包括本地 sqlite
 
 maybe
 
@@ -286,7 +286,7 @@ not
 * 【win mac】[Charles](https://www.charlesproxy.com) is an HTTP proxy / HTTP monitor / Reverse Proxy
 * 【win mac】[Fiddler](https://www.telerik.com/fiddler)
 
-## 10. Package manager 包管理器
+## 10 Package manager 包管理器
 
 * 【全平台】[sdkman](https://sdkman.io) The Software Development Kit Manager
 * 【mac linux】[Homebrew](https://brew.sh/zh-cn) The Missing Package Manager for macOS (or Linux)
@@ -360,7 +360,7 @@ not
 
 ## 15 ssh & ftp 文件传输
 
-【全平台 精品软件】[Termius](https://www.termius.com/)
+【全平台 精品软件】[Termius](https://www.termius.com)
 
 and
 

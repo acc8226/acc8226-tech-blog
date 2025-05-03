@@ -60,6 +60,7 @@ xmodmap -e "keysym b = e E"
 
 a 从 b 还原回去
 xmodmap -e "keycode  38 =  a NoSymbol a"
+
 b 从 e 还原回去
 xmodmap -e "keycode  56 =  b"
 
@@ -125,7 +126,7 @@ X键盘扩展，或 XKB，定义了在 X 中处理键盘代码的方式，并提
 
 ### xautomation
 
-截止到 24年6月30日，最新版本 1.09-5 项目更新日期 2014-01-31
+截止到 24 年 6 月 30 日，最新版本 1.09-5 项目更新日期 2014-01-31
 
 [项目地址](https://www.hoopajoo.net/projects/xautomation.html)
 [手册](https://man.archlinux.org/man/xte.1) 
@@ -140,36 +141,42 @@ xte "keydown Control_L" "key m"  "keyup Control_L"
 
 [手册](http://t-sato.in.coocan.jp/xvkbd/#option)
 
-Latest Official Release
-http://t-sato.in.coocan.jp/xvkbd/xvkbd-4.1.tar.gz
+[Latest Official Release](http://t-sato.in.coocan.jp/xvkbd/xvkbd-4.1.tar.gz)
+
 - source of version 4.1 (2020-05-04)
 
 ### xdo - Perform actions on windows
 
-截止到 24年6月30日，最新版本 0.5.7-2  项目更新日期在 5 年前
+截止到 24 年 6 月 30 日，最新版本 0.5.7-2  项目更新日期在 5 年前
 
 ### xdotool - command-line X11 automation tool
 
 这个工具可以让你模拟键盘输入和鼠标活动，移动和调整窗口大小等。它是通过使用 X11 的 XTEST 扩展和其他Xlib函数来实现这些功能的。
 
-此外，你还可以搜索窗口，并移动、调整大小、隐藏窗口，以及修改窗口属性，如标题。如果你的窗口管理器支持，你还可以使用xdotool来切换桌面、在桌面之间移动窗口以及更改桌面的数量。
+此外，你还可以搜索窗口，并移动、调整大小、隐藏窗口，以及修改窗口属性，如标题。如果你的窗口管理器支持，你还可以使用 xdotool 来切换桌面、在桌面之间移动窗口以及更改桌面的数量。
 
-[官网](https://www.semicomplete.com/projects/xdotool/)
-
-[源码](https://github.com/jordansissel/xdotool/)
+[官网](https://www.semicomplete.com/projects/xdotool) | [源码](https://github.com/jordansissel/xdotool) | [文档](https://man.freebsd.org/cgi/man.cgi?query=xdotool&apropos=0&sektion=1&manpath=FreeBSD+8.1-RELEASE+and+Ports&arch=default&format=html)
 
 3.20211022.1-1
 
 First Submitted:	2018-01-07 17:39 (UTC)
 Last Updated:	2020-06-10 09:24 (UTC)
 
+```sh
+# 降低音量
+xdotool key XF86AudioLowerVolume
+xdotool key XF86AudioRaiseVolume
+xdotool key XF86AudioMute
+# 应触发下一曲操作
+xdotool key XF86AudioNext
+```
+
 ### AutoKey
 
 v0.96.0 Latest
 最新更新日期 Jun 6, 2022
 
-[文档](https://autokey.github.io/intro.html)
-[源码](https://autokey.github.io/index.html)
+[文档](https://autokey.github.io/intro.html) | [源码](https://autokey.github.io/index.html)
 
 dialog.info_dialog("Info dialog", "Test info dialog")
 
@@ -201,10 +208,7 @@ else:
 
 ## 一些额外软件
 
-gitg
-
-uTools
-
-xtreme download manager
-
-[remmnia](https://www.remmina.org/)
+* gitg
+* uTools
+* xtreme download manager
+* [remmnia](https://www.remmina.org)

@@ -25,7 +25,7 @@ sudo sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
 
 方式二：直接覆盖
 
-以 20.04 LTS 为例， copy 内容覆盖掉 /sources.list 即可。
+以 20.04 LTS 为例，copy 内容覆盖掉 /sources.list 即可。
 
 然后旧版本请运行 `sudo apt-get update`，新版本请运行 `sudo apt update` 更新索引以生效。
 
@@ -56,7 +56,7 @@ service ssh status
 service ssh restart
 * 查看 ssh 服务状态
 service ssh stop
-* 生成对应的 rsa, ecdsa, ed25519 三种类型的秘钥：
+* 生成对应的 rsa, ecdsa, ed25519 三种类型的秘钥
 
 #### 启用 lrzsz
 

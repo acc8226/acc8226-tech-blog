@@ -17,8 +17,11 @@ categories:
 将 下载自 更改为 位于中国的服务器
 
 更新系统
+
+```sh
 sudo apt update
 sudo apt upgrade -y
+```
 
 个性化设置
 建议开启夜灯
@@ -27,7 +30,7 @@ sudo apt upgrade -y
 
 ## 熟悉系统软硬件以及浏览器和输入法
 
-一般 linux 系统都会有帮助文档，例如 gonme 的文档，kde 的文档等
+一般 linux 系统都会有帮助文档，例如 gonme 的文档，KDE 的文档等
 
 ### 浏览器
 
@@ -73,25 +76,27 @@ idea
 pycharm
 vlc 装系统使用最小化配置竟然安装失败了，但是第二次重装系统选择全量却可以，另外使用 nala 也可以安装成功
 
-### fedora 自带了 gonme 家的 flathub 商店
+### fedora 自带了 GNOME 家的 flathub 商店
 
+```sh
 sudo apt install flatpak
 flatpak remote-add --if-not-exists flathub https://mirror.sjtu.edu.cn/flathub
+```
 
-[flathub](https://flathub.org/) 商店
+[flathub](https://flathub.org) 商店
 或者更换源
 sudo flatpak remote-modify flathub --url=https://mirror.sjtu.edu.cn/flathub
 
 flatpak remote-add --if-not-exists flathub-origin https://dl.flathub.org/repo/flathub.flatpakrepo
 
-### appimage 分发格式
+### AppImage 分发格式
 
 ```sh
 chmod +x ./zhangsan.AppImage
 ./zhangsan.AppImage
 ```
 
-### uos 可以安装玲珑格式
+### UOS 可以安装玲珑格式
 
 目前软件还是不丰富
 
@@ -128,16 +133,16 @@ pdf 用自带的阅读器就很好 或者 浏览器内置功能也不差
 
 视频 mpv 太过于简陋，本来想着用 vlc 但是打不开，多次尝试后就可以了，否则 ubuntu 可以借助 apt 或者 nala 工具安装 vlc
 
-espanso 如果在 ubuntu 上由于 snap 沙箱机制，会导致及时安装成功但是启动服务会失败，无奈可有尝试手动安装 和 编译安装
+espanso 如果在 ubuntu 上由于 snap 沙箱机制，会导致及时安装成功但是启动服务会失败，无奈可以尝试手动安装 和 编译安装
 
-ToDesk 安装失败 因此卸载之，否则可以选择 [rustdesk](https://github.com/rustdesk/rustdesk/)
+ToDesk 安装失败 因此卸载之，否则可以选择 [rustdesk](https://github.com/rustdesk/rustdesk)
 
 ```sh
 sudo rm /opt/todesk/config/config.ini
 sudo apt-get remove --purge todesk
 ```
 
-Albert 安装失败了，[ulauncher](https://ulauncher.io/) 是可以，但是不好用，linux 平台的启动器令人堪忧
+Albert 安装失败了，[ulauncher](https://ulauncher.io) 是可以，但是不好用，linux 平台的启动器令人堪忧
 
 ## 快捷键 的使用
 
@@ -302,11 +307,9 @@ sudo nala install gnome-shell-extension-manager
 
 ## Web 应用
 
-duolingo
-https://www.duolingo.cn/
+[duolingo](https://www.duolingo.cn)
 
-阿里云盘
-https://www.alipan.com/
+[阿里云盘](https://www.alipan.com)
 
 ## 技巧
 

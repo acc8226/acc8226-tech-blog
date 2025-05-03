@@ -7,11 +7,7 @@ categories: linux
 
 Shell 变量
 
-使用 declare 命令创建一个变量名为 tmp 的变量：
-
-```sh
-declare tmp
-```
+使用 declare 命令创建一个变量名为 tmp 的变量：`declare tmp`
 
 其实也可以不用 declare 预声明一个变量，直接即用即创建，这里只是告诉你 declare 的作用，这在创建其它指定类型的变量（如数组）时会用到。
 
@@ -33,7 +29,7 @@ export 显示从 Shell 中导出成环境变量的变量，也能通过它将自
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-375c259943e7a395.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-export < env < set
+export 小于 env 小于 set
 
 > 注意：为了与普通变量区分，通常我们习惯将环境变量名设为大写。
 
@@ -63,13 +59,10 @@ done
 exit 0
 ```
 
-为文件添加可执行权限，否则执行会报错没有权限：
-`$ chmod 755 hello_shell.sh`
-并执行脚本
-`$ ./hello_shell.sh`
+为文件添加可执行权限，否则执行会报错没有权限：`chmod 755 hello_shell.sh`
+并执行脚本 `./hello_shell.sh`
 
-添加自定义路径到“ PATH ”环境变量, 注意这里一定要使用绝对路径。
-`$ PATH=$PATH:/home/shiyanlou/mybin`
+添加自定义路径到“ PATH ”环境变量, 注意这里一定要使用绝对路径。`PATH=$PATH:/home/shiyanlou/mybin`
 
 在**每个用户的 home** 目录中有一个 Shell 每次启动时会默认执行一个配置脚本，以初始化环境，包括添加一些用户自定义环境变量等等。实验楼的环境使用的 Shell 是 zsh，它的配置文件是 .zshrc，相应的如果使用的 Shell 是 Bash，则配置文件为 .bashrc。它们在 etc 下还都有一个或多个全局的配置文件，不过我们一般只修改用户目录下的配置文件。Shell 的种类有很多，可以使用 cat /etc/shells 命令查看当前系统已安装的 Shell。
 
@@ -101,8 +94,8 @@ source .zshrc
 ```
 
 source 命令还有一个别名就是 .，上面的命令如果替换成 . 的方式就该是：
-在使用.的时候，需要注意与表示当前路径的那个点区分开。
-`$ . ./.zshrc`
+在使用 `.` 的时候，需要注意与表示当前路径的那个点区分开。
+`. ./.zshrc`
 
 ## 参考
 

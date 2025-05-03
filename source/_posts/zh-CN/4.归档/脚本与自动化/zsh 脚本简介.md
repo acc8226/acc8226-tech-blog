@@ -29,4 +29,4 @@ sudo apt install zsh
 
 ## 参考
 
-技术|Zsh 入门 <https://linux.cn/article-11378-1.html>
+[技术|Zsh 入门](https://linux.cn/article-11378-1.html)
