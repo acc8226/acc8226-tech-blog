@@ -401,5 +401,4 @@ public class SnapshotArrayIterator<E> implements Iterator<E> {
 
 ## 参考
 
-设计模式之美_设计模式_代码重构-极客时间
-https://time.geekbang.org/column/intro/250
+[设计模式之美_设计模式_代码重构-极客时间](https://time.geekbang.org/column/intro/250)

@@ -9,12 +9,9 @@ categories:
 
 ## 开始
 
-连接网络
-如果是连接 wifi，点击右上角的去设置
+连接网络 有线网络或者是无线 wifi
 
-选择源
-去 软件与更新 应用
-将 下载自 更改为 位于中国的服务器
+选择源 确定自带源是否速度够快，否则可以尝试更改为 位于中国的服务器
 
 更新系统
 
@@ -23,14 +20,13 @@ sudo apt update
 sudo apt upgrade -y
 ```
 
-个性化设置
-建议开启夜灯
+个性化设置。建议开启夜灯
 
 <!-- more -->
 
 ## 熟悉系统软硬件以及浏览器和输入法
 
-一般 linux 系统都会有帮助文档，例如 gonme 的文档，KDE 的文档等
+linux 系统一般都有官方帮助文档，例如 gonme 的文档，KDE 的文档等
 
 ### 浏览器
 
@@ -39,7 +35,6 @@ uos 自带了 360 研发的基于 Chromium 开源项目的浏览器，支持鼠�
 插件上可以搭配 Vimium C - 全键盘操作浏览器
 
 目前 firefox 可能是一个比 edge 更好的选择，因为可以通过插件实现鼠标悬停：Tree Style Tab - 树状标签页管理 + TST Hoverswitch
-或者选择 还是不错的
 
 ### 输入法
 
@@ -50,16 +45,16 @@ u 用户词库名模式
 
 <!-- more -->
 
-如果是国产 uos 自带搜狗浏览器体验也很棒
+如果是国产 uos 自带搜狗浏览器就很棒
 
 除此以外，[rime](https://github.com/rime/home/wiki/RimeWithIBusx) 输入法较为推荐。
 
 ```sh
 # rime 输入法安装
-sudo apt-get install ibus-rime
+sudo apt install ibus-rime
 ```
 
-rime 默认可通过 ctrl + ` 选择打字方案的
+rime 默认可通过 ctrl + ` 挑选打字方案的
 
 ## 如何安装软件
 
@@ -92,8 +87,8 @@ flatpak remote-add --if-not-exists flathub-origin https://dl.flathub.org/repo/fl
 ### AppImage 分发格式
 
 ```sh
-chmod +x ./zhangsan.AppImage
-./zhangsan.AppImage
+chmod +x ./hello.AppImage
+./hello.AppImage
 ```
 
 ### UOS 可以安装玲珑格式
@@ -104,7 +99,7 @@ chmod +x ./zhangsan.AppImage
 
 截图 自带的挺好
 
-下载 一般推荐 motrix，超过 xdm
+下载 一般推荐 motrix
 
 坚果云 直接安装会失败，但最终参考了这篇[博客](https://blog.csdn.net/qq_41100419/article/details/131826132) 是成功了的
 

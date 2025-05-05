@@ -8,28 +8,28 @@ categories:
 tags: Android
 ---
 
-在 Android 的知识体系中，View 扮演着很重要的角色，简单来理解，View 是 Android 在视觉上的呈现。在界面上 Android 提供了一套 GUI 库，里面有很多控件，但是很多时候我们并不满足于系统提供的控件，因为这样就意味这应用界面的同类化比较严重。那么怎么才能做出与众不同的效果呢？答案是自定义 View，也可以叫自定义控件，通过自定义 View 我们可以实现各种五花八门的效果。但是自定义 View 是有一定难度的，尤其是复杂的自定义 View，大部分时候我们仅仅了解基本控件的使用方法是无法做出复杂的自定义控件的。为了更好地自定义 View，还需要掌握 View 的底层工作原理，比如View 的测量流程、布局流程以及绘制流程，掌握这几个基本流程后，我们就对 View 的底层更加了解，这样我们就可以做出一个比较完善的自定义 View。
+在 Android 的知识体系中，View 扮演着很重要的角色，简单来理解，View 是 Android 在视觉上的呈现。在界面上 Android 提供了一套 GUI 库，里面有很多控件，但是很多时候我们并不满足于系统提供的控件，因为这样就意味这应用界面的同类化比较严重。那么怎么才能做出与众不同的效果呢？答案是自定义 View，也可以叫自定义控件，通过自定义 View 我们可以实现各种五花八门的效果。但是自定义 View 是有一定难度的，尤其是复杂的自定义 View，大部分时候我们仅仅了解基本控件的使用方法是无法做出复杂的自定义控件的。为了更好地自定义 View，还需要掌握 View 的底层工作原理，比如 View 的测量流程、布局流程以及绘制流程，掌握这几个基本流程后，我们就对 View 的底层更加了解，这样我们就可以做出一个比较完善的自定义 View。
 
 ## 初识 ViewRoot 和 DecorView
 
-在正式介绍 View 的三大流程之前，我们必须先介绍一些基本概念，这样才能更好地理解View的measure、layout和draw过程，本节主要介绍 ViewRoot 和 DecorView 的概念。
+在正式介绍 View 的三大流程之前，我们必须先介绍一些基本概念，这样才能更好地理解 View 的 measure、layout 和 draw 过程，本节主要介绍 ViewRoot 和 DecorView 的概念。
 
-ViewRoot 对应于 ViewRootImpl 类，它是连接 Window-Manager 和 DecorView 的纽带，View 的三大流程均是通过 ViewRoot 来完成的。在 ActivityThread 中，当 Activity 对象被创建完毕后，会将 DecorView 添加到 Window中，同时会创建 ViewRootImpl 对象，并将ViewRootImpl对象和DecorView建立关联，这个过程可参看如下源码：
+ViewRoot 对应于 ViewRootImpl 类，它是连接 Window-Manager 和 DecorView 的纽带，View 的三大流程均是通过 ViewRoot 来完成的。在 ActivityThread 中，当 Activity 对象被创建完毕后，会将 DecorView 添加到 Window中，同时会创建 ViewRootImpl 对象，并将 ViewRootImpl 对象和 DecorView 建立关联，这个过程可参看如下源码：
 
 ```java
 root = new ViewRootImpl(view.getContext(),display);
 root.setView(view,wparams,panelParentView);
 ```
 
-View 的绘制流程是从 ViewRoot 的performTraversals 方法开始的，它经过 measure、layout 和 draw 三个过程才能最终将一个 View 绘制出来，其中 measure 用来测量 View 的宽和高，layout 用来确定 View 在父容器中的放置位置，而 draw 则负责将 View 绘制在屏幕上。针对 performTraversals 的大致流程，可用流程图1来表示。
+View 的绘制流程是从 ViewRoot 的 performTraversals 方法开始的，它经过 measure、layout 和 draw 三个过程才能最终将一个 View 绘制出来，其中 measure 用来测量 View 的宽和高，layout 用来确定 View 在父容器中的放置位置，而 draw 则负责将 View 绘制在屏幕上。针对 performTraversals 的大致流程，可用流程图1来表示。
 
 ![图1  performTraversals的工作流程图](http://upload-images.jianshu.io/upload_images/1662509-74760552e98006c1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-如图1 所示，performTraversals 会依次调用 performMea-sure、performLayout 和 performDraw 三个方法，这三个方法分别完成顶级 View 的 measure、layout 和 draw 这三大流程，其中在 performMeasure中会调用 measure 方法，在measure 方法中又会调用 onMeasure方法，在 onMeasure 方法中则会对所有的子元素进行 measure 过程，这个时候 measure 流程就从父容器传递到子元素中了，这样就完成了一次 measure 过程。接着子元素会重复父容器的 measure 过程，如此反复就完成了整个 View 树的遍历。同理，performLayout 和 performDraw 的传递流程和 performMeasure 是类似的，唯一不同的是，performDraw 的传递过程是在 draw 方法中通过 dispatchDraw 来实现的，不过这并没有本质区别。
+如图1 所示，performTraversals 会依次调用 performMea-sure、performLayout 和 performDraw 三个方法，这三个方法分别完成顶级 View 的 measure、layout 和 draw 这三大流程，其中在 performMeasure 中会调用 measure 方法，在measure 方法中又会调用 onMeasure方法，在 onMeasure 方法中则会对所有的子元素进行 measure 过程，这个时候 measure 流程就从父容器传递到子元素中了，这样就完成了一次 measure 过程。接着子元素会重复父容器的 measure 过程，如此反复就完成了整个 View 树的遍历。同理，performLayout 和 performDraw 的传递流程和 performMeasure 是类似的，唯一不同的是，performDraw 的传递过程是在 draw 方法中通过 dispatchDraw 来实现的，不过这并没有本质区别。
 
-measure 过程决定了 View 的宽/高，Measure 完成以后，可以通过**getMeasuredWidth**和**getMeasuredHeight**方法来获取到**View测量后的宽/高**，在几乎所有的情况下它都等同于 View 最终的宽/高，但是特殊情况除外，这点在本章后面会进行说明。Layout过程决定了 View 的四个顶点的坐标和实际的 View 的宽/高，**完成以后，可以通过getTop**、**getBottom**、**getLeft**和**getRight**来拿到View的四个顶点的位置，并可以通过getWidth和getHeight方法来拿到View的最终宽/高。Draw 过程则决定了 View 的显示，只有 draw 方法完成以后View的内容才能呈现在屏幕上。
+measure 过程决定了 View 的宽/高，Measure 完成以后，可以通过**getMeasuredWidth**和**getMeasuredHeight**方法来获取到**View 测量后的宽/高**，在几乎所有的情况下它都等同于 View 最终的宽/高，但是特殊情况除外，这点在本章后面会进行说明。Layout过程决定了 View 的四个顶点的坐标和实际的 View 的宽/高，**完成以后，可以通过 getTop**、**getBottom**、**getLeft**和**getRight**来拿到 View 的四个顶点的位置，并可以通过getWidth 和 getHeight 方法来拿到 View 的最终宽/高。Draw 过程则决定了 View 的显示，只有 draw 方法完成以后 View的内容才能呈现在屏幕上。
 
-如图2 所示，DecorView 作为顶级 View，一般情况下它内部会包含一个竖直方向的 LinearLayout，在这个 LinearLayout 里面有上下两个部分（具体情况和 Android 版本及主题有关），上面是标题栏，下面是内容栏。在 Activity 中我们通过 setContentView所设置的布局文件其实就是被加到内容栏之中的，而内容栏的 id 是 content，因此可以理解为 Activity 指定布局的方法不叫 setview 而叫 setContentView，因为我们的布局的确加到了 id 为 content 的 FrameLayout 中。如何得到 content 呢？可以这样：ViewGroup content = findViewById (R.android.id.content)。如何得到我们设置的 View 呢？可以这样：content.getChildAt(0)。同时，通过源码我们可以知道，DecorView 其实是一个FrameLayout，View 层的事件都先经过 DecorView，然后才传递给我们的 View。
+如图2 所示，DecorView 作为顶级 View，一般情况下它内部会包含一个竖直方向的 LinearLayout，在这个 LinearLayout 里面有上下两个部分（具体情况和 Android 版本及主题有关），上面是标题栏，下面是内容栏。在 Activity 中我们通过 setContentView 所设置的布局文件其实就是被加到内容栏之中的，而内容栏的 id 是 content，因此可以理解为 Activity 指定布局的方法不叫 setview 而叫 setContentView，因为我们的布局的确加到了 id 为 content 的 FrameLayout 中。如何得到 content 呢？可以这样：ViewGroup content = findViewById (R.android.id.content)。如何得到我们设置的 View 呢？可以这样：content.getChildAt(0)。同时，通过源码我们可以知道，DecorView 其实是一个FrameLayout，View 层的事件都先经过 DecorView，然后才传递给我们的 View。
 
 ![图2  顶级View：DecorView 的结构](http://upload-images.jianshu.io/upload_images/1662509-3fafb554334992c2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -109,12 +109,12 @@ SpecMode有三类，每一类都表示特殊的含义，如下所示。
 
 ### 2.2　MeasureSpec和LayoutParams的对应关系
 
-上面提到，系统内部是通过MeasureSpec来进行View的测量，但是正常情况下我们使用View指定MeasureSpec，尽管如此，但是我们可以给View设置LayoutParams。在View测量的时候，**系统会将LayoutParams在父容器的约束下转换成对应的MeasureSpec**，然后再根据这个MeasureSpec来确定View测量后的宽/高。需要注意的是，MeasureSpec不是唯一由LayoutParams决定的，LayoutParams需要和父容器一起才能决定View的MeasureSpec，从而进一步决定View的宽/高。另外，对于顶级View（即DecorView）和普通View来说，MeasureSpec的转换过程略有不同。对于DecorView，其MeasureSpec由窗口的尺寸和其自身的LayoutParams来共同确定；对于普通View，其MeasureSpec由父容器的MeasureSpec和自身的LayoutParams来共同决定，MeasureSpec一旦确定后，onMeasure中就可以确定View的测量宽/高。
+上面提到，系统内部是通过MeasureSpec来进行View的测量，但是正常情况下我们使用View指定MeasureSpec，尽管如此，但是我们可以给View设置LayoutParams。在View测量的时候，**系统会将LayoutParams在父容器的约束下转换成对应的MeasureSpec**，然后再根据这个MeasureSpec来确定View测量后的宽/高。需要注意的是，MeasureSpec不是唯一由LayoutParams决定的，LayoutParams 需要和父容器一起才能决定View的MeasureSpec，从而进一步决定 View 的宽/高。另外，对于顶级 View（即DecorView）和普通View来说，MeasureSpec 的转换过程略有不同。对于 DecorView，其MeasureSpec由窗口的尺寸和其自身的 LayoutParams 来共同确定；对于普通View，其MeasureSpec由父容器的 MeasureSpec 和自身的 LayoutParams 来共同决定，MeasureSpec 一旦确定后，onMeasure 中就可以确定 View 的测量宽/高。
 
 对于DecorView来说，在ViewRootImpl中的measureHierarchy方法中有如下一段代码，它展示了DecorView的MeasureSpec的创建过程，其中desiredWindowWidth和de-sired-WindowHeight是屏幕的尺寸：
 
 ```java
-childWidthMeasureSpec = getRootMeasureSpec(desiredWindowWidth, lp.width);//desireWindowWidth是屏幕的宽度
+childWidthMeasureSpec = getRootMeasureSpec(desiredWindowWidth, lp.width);//desireWindowWidth 是屏幕的宽度
 childHeightMeasureSpec = getRootMeasureSpec(desiredWindowHeight, lp.height);
 performMeasure(childWidthMeasureSpec, childHeightMeasureSpec);
 ```
@@ -142,7 +142,7 @@ private static int getRootMeasureSpec(int windowSize, int rootDimension) {
 }
 ```
 
-通过上述代码，DecorView的MeasureSpec的产生过程就很明确了，具体来说其遵守如下规则，根据它的LayoutParams中的宽/高的参数来划分。
+通过上述代码，DecorView 的 MeasureSpec 的产生过程就很明确了，具体来说其遵守如下规则，根据它的LayoutParams中的宽/高的参数来划分。
 
 * LayoutParams.MATCH_PARENT：精确模式，大小就是窗口的大小；
 * LayoutParams.WRAP_CONTENT：最大模式，大小不定，但是不能超过窗口的大小；
@@ -276,7 +276,7 @@ private static int getRootMeasureSpec(int windowSize, int rootDimension) {
 
 ![表1　普通 View 的 MeasureSpec 的创建规则](http://upload-images.jianshu.io/upload_images/1662509-2475cddd105481b2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-这里再做一下说明。前面已经提到，对于普通 View，其MeasureSpec 由父容器的 MeasureSpec 和自身的LayoutParams 来共同决定，那么针对不同的父容器和 View 本身不同的 LayoutParams，View 就可以有多种MeasureSpec。这里简单说一下，当 View 采用固定宽/高的时候，不管父容器的 MeasureSpec 是什么，View 的 MeasureSpec 都是精确模式并且其大小遵循 Layoutparams 中的大小。当 View 的宽/高是match_parent 时，如果父容器的模式是精准模式，那么View也是精准模式并且其大小是父容器的剩余空间；如果父容器是最大模式，那么 View 也是最大模式并且其大小不会超过父容器的剩余空间。当 View 的宽/高是wrap_content 时，不管父容器的模式是精准还是最大化，View 的模式总是最大化并且大小不能超过父容器的剩余空间。可能读者会发现，在我们的分析中漏掉了UNSPECIFIED 模式，那是因为这个模式主要用于系统内部多次 Measure 的情形，一般来说，我们不需要关注此模式。
+这里再做一下说明。前面已经提到，对于普通 View，其MeasureSpec 由父容器的 MeasureSpec 和自身的LayoutParams 来共同决定，那么针对不同的父容器和 View 本身不同的 LayoutParams，View 就可以有多种 MeasureSpec。这里简单说一下，当 View 采用固定宽/高的时候，不管父容器的 MeasureSpec 是什么，View 的 MeasureSpec 都是精确模式并且其大小遵循 Layoutparams 中的大小。当 View 的宽/高是match_parent 时，如果父容器的模式是精准模式，那么View也是精准模式并且其大小是父容器的剩余空间；如果父容器是最大模式，那么 View 也是最大模式并且其大小不会超过父容器的剩余空间。当 View 的宽/高是 wrap_content 时，不管父容器的模式是精准还是最大化，View 的模式总是最大化并且大小不能超过父容器的剩余空间。可能读者会发现，在我们的分析中漏掉了UNSPECIFIED 模式，那是因为这个模式主要用于系统内部多次 Measure 的情形，一般来说，我们不需要关注此模式。
 
 ## 参考书目
 
