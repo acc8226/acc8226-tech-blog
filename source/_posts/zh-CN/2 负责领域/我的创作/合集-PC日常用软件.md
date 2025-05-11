@@ -211,12 +211,12 @@ not
 
 not【mac linux】[foobar2000](https://www.foobar2000.org) 缺少歌词搜索，且差很多意思
 
-在线播放：QQ 音乐
+在线播放：QQ 音乐 | 网易云音乐
 
 **linux 平台**
 
 本地播放：平时我也基本不看歌词。比如自带的 kde 组件 [elisa](https://apps.kde.org/zh-cn/elisa)
-在线播放：【全平台】[lx-music 洛雪音乐桌面版](https://github.com/lyswhut/lx-music-desktop) |【全平台】[QQ 音乐](https://y.qq.com/download/index.html)
+在线播放：【全平台】[lx-music 洛雪音乐桌面版](https://github.com/lyswhut/lx-music-desktop) |【全平台】[QQ 音乐](https://y.qq.com/download/index.html) | [YesPlayMusic](https://github.com/qier222/YesPlayMusic) 高颜值的第三方网易云播放器
 
 官网收录：【win [mac](https://apps.apple.com/cn/app/%E6%B1%BD%E6%B0%B4%E9%9F%B3%E4%B9%90-%E6%8A%96%E9%9F%B3%E9%9F%B3%E4%B9%90%E7%89%88/id1605585211)】[汽水音乐](https://www.qishui.com) |【win】[方格音乐](http://morin.vin) |【win mac】[iTunes](https://www.apple.com.cn/itunes) |【全平台】[网易云音乐](https://music.163.com/#/download)
 
@@ -316,22 +316,19 @@ not
 
 驱动请认准设备官网
 
-驱动备份
-【win】[dism++](https://github.com/Chuyu-Team/Dism-Multi-language)
+驱动备份【win】[dism++](https://github.com/Chuyu-Team/Dism-Multi-language)
 
 硬件检测
 * 【win】[CPU-Z | Softwares | CPUID](https://www.cpuid.com/softwares/cpu-z.html)
 * 【win】[GUP-Z](https://www.techpowerup.com/download/techpowerup-gpu-z)
+* 【win】[AIDA64 Extreme](https://www.aida64.com/downloads)
 * 【win】[360 驱动大师](https://dm.weishi.360.cn/home.html)
 * 【win】[驱动精灵](http://www.drivergenius.com)
 * [CrystalDiskInfo](https://crystalmark.info/en) 磁盘检测
 
-运行库
-[Download Visual C++ Redistributable Runtimes All-in-One Feb 2024 | TechPowerUp](https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one)
+运行库 [Download Visual C++ Redistributable Runtimes All-in-One Feb 2024 | TechPowerUp](https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one)
 
-.net 运行库
-
-【win】WirelessMon 4.0 用于监控无线适配器和 WiFi 接入点的 Windows 软件
+.net 运行库【win】WirelessMon 4.0 用于监控无线适配器和 WiFi 接入点的 Windows 软件
 
 not
 
@@ -341,6 +338,8 @@ not
 * 【win】 [驱动总裁](https://www.sysceo.com/Software) 需要微信登录才能下载
 
 官网收录：【mac】[AppCleaner](https://freemacsoft.net/appcleaner)
+
+linux [安兔兔](https://www.antutu.com/download.htm)
 
 ### 2.1【常用】激活类
 
@@ -786,6 +785,12 @@ not [乐播投屏](https://www.lebo.cn) 太臃肿且要**注意远程屏幕共�
 ### 3.8 FFmpeg
 
 【全平台】[FFmpeg](https://ffmpeg.org) 用于录制、转换和流式传输音频和视频
+
+### 3.9 游戏串流
+
+[Sunshine | LizardByte](https://app.lizardbyte.dev/Sunshine/?lng=zh-CN)  是 Moonlight 的自托管游戏串流服务端
+
+可搭配 [MOONLIGHT](https://moonlight-stream.org/) 开源游戏串流客户端
 
 ## 4 游戏
 

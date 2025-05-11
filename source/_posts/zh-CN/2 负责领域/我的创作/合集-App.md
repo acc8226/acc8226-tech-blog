@@ -210,9 +210,7 @@ not
 
 [Spotify](https://www.spotify.com)
 
-留存
-
-QQ 音乐
+留存 QQ 音乐
 
 not 网易云音乐 有广告
 
@@ -220,9 +218,7 @@ not 网易云音乐 有广告
 
 网易云音乐 HD
 
-not 
-
-[QQ 音乐 HD](https://sj.qq.com/appdetail/com.tencent.qqmusicpad) 首先更新不及时，其次其中 21 版本的 QQ 音乐有点卡
+not [QQ 音乐 HD](https://sj.qq.com/appdetail/com.tencent.qqmusicpad) 首先更新不及时，其次其中 21 版本的 QQ 音乐有点卡
 
 #### 安卓平板
 
@@ -1281,7 +1277,7 @@ not 上海电银银乾付 已跑路，总之 pos 除非正常交易否则慎用�
 
 ### 安卓平板
 
-[思维导图](https://sj.qq.com/appdetail/czh.mindnode)、[Xmind](https://sj.qq.com/appdetail/net.xmind.doughnut)、[MindMaster](https://sj.qq.com/appdetail/com.edrawsoft.mindmaster)
+[MindLine 思维导图](https://sj.qq.com/appdetail/czh.mindnode)、[Xmind](https://sj.qq.com/appdetail/net.xmind.doughnut)、[MindMaster](https://sj.qq.com/appdetail/com.edrawsoft.mindmaster)
 
 ## 57 幼儿教育
 
