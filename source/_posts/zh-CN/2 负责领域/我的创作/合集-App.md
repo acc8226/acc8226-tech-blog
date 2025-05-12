@@ -929,7 +929,8 @@ not
 
 ### 安卓
 
-[AIDA64 for Android](https://www.aida64.com/downloads/latesta64droid)
+* [AIDA64 for Android](https://www.aida64.com/downloads/latesta64droid)
+* [Geekbench](https://www.geekbench.com)
 
 ### iPhone
 
@@ -1143,11 +1144,13 @@ not
 
 ## 39. Linux 环境
 
+### 安卓 & 安卓平板
+
 [Termux](https://github.com/termux/termux-app) 是一个 Android 终端应用程序和 Linux 环境
 
 ## 40. 直播
 
-* [斗鱼](https://sj.qq.com/appdetail/air.tv.douyu.android) 界面和功能体验都不错。俊男靓女精致妆容，不过现在抖音比较火
+* [斗鱼](https://sj.qq.com/appdetail/air.tv.douyu.android) 界面和功能体验都不错靓女，不过现在抖音比较火
 * [虎牙直播](https://sj.qq.com/appdetail/com.duowan.kiwi)
 * [战旗直播](https://sj.qq.com/appdetail/com.gameabc.zhanqiAndroid)
 * [YY 直播](https://sj.qq.com/appdetail/com.duowan.mobile)
@@ -1202,17 +1205,11 @@ not [Simplenote](https://simplenote.com/) 极简，无限同步，不限设备�
 
 [豆包爱学](https://sj.qq.com/appdetail/com.aitutor.hippo) 讲解题目，讲解知识点，解决疑惑
 
-备用
-
-[作业帮](https://sj.qq.com/appdetail/com.baidu.homework) 适合中小学生
+备用 [作业帮](https://sj.qq.com/appdetail/com.baidu.homework) 适合中小学生
 
 ## 46. 清理
 
-### 安卓
-
-[清浊](https://www.dircleaner.com)
-
-### 安卓平板
+### 安卓 & 安卓平板
 
 [清浊](https://www.dircleaner.com)
 
@@ -1224,9 +1221,7 @@ not 格式工厂
 
 [白描证件照](https://sj.qq.com/appdetail/com.uzero.cn.zhengjianzhao) 基本够用。支持多种尺寸证件照的制作以及自定义尺寸证件照的制作，有次数限制，且 5 寸和 6 寸照片都没有填满空白处
 
-备用
-
-光影证件照 目前不太完善
+备用 光影证件照 目前不太完善
 
 ## 49 在线打印
 
