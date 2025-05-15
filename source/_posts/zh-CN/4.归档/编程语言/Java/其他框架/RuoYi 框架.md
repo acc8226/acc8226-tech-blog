@@ -112,7 +112,7 @@ Mysql >= 5.7.0 (推荐 5.7 版本)
 Redis >= 3.0
 Maven >= 3.0
 Node >= 12
-nacos >= 1.1.0 (ruoyi-cloud >= 3.0.0需要下载nacos >= 2.x.x版本)
+nacos >= 1.1.0 (ruoyi-cloud >= 3.0.0 需要下载 nacos >= 2.x.x 版本)
 sentinel >= 1.6.0
 ```
 
