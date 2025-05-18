@@ -323,7 +323,8 @@ not 今日头条 竟然有点卡
 
 #### 安卓平板
 
-我从 vivo pad 导出的原子阅读 简直完美
+* [要知](https://sj.qq.com/appdetail/com.ruanmei.yaozhi) 暂用它听新闻用，目前定制项不太多，以后我可能会换成 ai 收集 + 听新闻了
+* 我从 vivo pad 导出的原子阅读 简直完美
 
 #### 鸿蒙
 
