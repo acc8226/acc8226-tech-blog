@@ -36,7 +36,7 @@ ssh root@LibreELEC
 
 ## TVBox
 
-TVBOX 系列是一款在 Github 上开源的视频播放软件，其前身就是之前很火的猫影视TV，延续了猫影视采用的「套壳」与「视频源」分离的结构形式；作者将TVbox开源后，很快受到了众多创作者的关注。此后，以TVbox为参照的各种 TVbox 改版，开始陆续发布上线。
+TVBOX 系列是一款在 Github 上开源的视频播放软件，其前身就是之前很火的猫影视 TV，延续了猫影视采用的「套壳」与「视频源」分离的结构形式；作者将 TVbox 开源后，很快受到了众多创作者的关注。此后，以 TVbox 为参照的各种 TVbox 改版，开始陆续发布上线。
 
 https://github.com/o0HalfLife0o/TVBoxOSC | [releases](https://github.com/o0HalfLife0o/TVBoxOSC/releases)
 
