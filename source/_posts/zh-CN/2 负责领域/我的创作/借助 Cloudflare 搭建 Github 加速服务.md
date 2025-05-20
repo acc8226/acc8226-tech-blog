@@ -8,14 +8,15 @@ tags: 0成本开发者套餐
 permalink: ghproxy/
 ---
 
-hunshcn/gh-proxy 是一个 github release、archive 以及项目文件的加速项目
+hunshcn/gh-proxy 是一个 github release、archive 以及项目文件的加速项目，截止该项目可以实现 release 加速下载的效果。
 
-cf worker 版本部署 方式
+## cf worker 版本部署 方式
 
 1. 注册并登录 cloudflare
 2. 计算-Workers 和 Pages-创建-从 Hello World! 开始
 3. 构建完成后点击“编辑代码”
 4. 在 worker.js 编辑区域替换 js 后点击部署
+<!-- more -->
 
 ```js
 'use strict'
@@ -399,3 +400,10 @@ async function proxy(urlObj, reqInit) {
 </html>
 ```
 
+## 演示效果
+
+静态页面 https://ghproxy.feipig.fun
+
+## 参考
+
+项目基于 Cloudflare Workers，前端代码<a href="https://feipig.fun/ghproxy">点此获取</a>，后端源自 <a href="https://github.com/hunshcn/gh-proxy">hunshcn/gh-proxy</a>

@@ -1005,7 +1005,7 @@ never
 
 【垃圾】~~微众银行的垃圾微粒贷~~ TM 垃圾微粒贷，网贷审核不严格立马到账，诈骗帮凶
 
-## 24. 移动营业厅
+## 24 移动营业厅
 
 * [中国电信](https://sj.qq.com/appdetail/com.ct.client) 我主用电信，花里胡哨，除了可以参与特定活动否则早就卸载了
 * [中国移动](https://sj.qq.com/appdetail/com.greenpoint.android.mc10086.activity) | [中国联通](https://sj.qq.com/appdetail/com.sinovatech.unicom.ui)
@@ -1018,11 +1018,11 @@ never
 
 钱袋子 曾经 2014 年很火的货币基金
 
-## 25. 匿名应用
+## 25 匿名应用
 
 [联通小号](https://sj.qq.com/appdetail/com.glhh.chinaunicom.wxh) 一段时间不用，要记得及时续费
 
-## 26. 政务
+## 26 政务
 
 ### 安卓和 iOS
 
@@ -1058,7 +1058,7 @@ never
 * [白描](https://sj.qq.com/appdetail/com.uzero.baimiao) 还可以免费制作身份证正反面 A4 扫描件，免费版有每日次数限制
 * 扫描宝 印象笔记家的，动不动就要会员，差评
 
-## 30. 标注/绘图/笔记
+## 30 标注/绘图/笔记
 
 ### iOS
 
@@ -1070,7 +1070,7 @@ never
 
 [Canva 可画](https://sj.qq.com/appdetail/cn.canva.editor) | [Notein 笔记](https://sj.qq.com/appdetail/com.orion.notein) | [BookxNote 笔记](http://www.bookxnote.com)
 
-## 31. IPTV
+## 31 IPTV
 
 ### 安卓
 
@@ -1154,7 +1154,6 @@ not
 * [粉笔](https://sj.qq.com/appdetail/com.fenbi.android.servant) 公考、教师、法考、考研、建造、会计考试的提分利器
 * [疯狂刷题](https://sj.qq.com/appdetail/com.yaerxing.fkst) 汇聚大量包括了直至大学、考研优题、真题、好题
 
-
 ## 36. 申论面试
 
 [半月谈](https://sj.qq.com/appdetail/com.bytxmt.banyuetan) 新华社半月谈出品的公务员公考学习平台，新华社时评员讲申论，公考名师讲行测
@@ -1180,25 +1179,25 @@ not
 * [华为云App](https://www.huaweicloud.com/mobile_app/hwapp.html) 关注云资讯，随时随地管控云服务
 * [阿里云](https://sj.qq.com/appdetail/com.alibaba.aliyun) 随时随地 移动运维 技术干货 学习成长
 
-## 39. Linux 环境
+## 39 Linux 环境
 
 ### 安卓 & 安卓平板
 
 [Termux](https://github.com/termux/termux-app) 是一个 Android 终端应用程序和 Linux 环境
 
-## 40. 直播
+## 40 直播
 
 * [斗鱼](https://sj.qq.com/appdetail/air.tv.douyu.android) 界面和功能体验都不错靓女，不过现在抖音比较火
 * [虎牙直播](https://sj.qq.com/appdetail/com.duowan.kiwi)
 * [战旗直播](https://sj.qq.com/appdetail/com.gameabc.zhanqiAndroid)
 * [YY 直播](https://sj.qq.com/appdetail/com.duowan.mobile)
 
-## 41. 交友
+## 41 交友
 
 * [MOMO 陌陌](https://sj.qq.com/appdetail/com.immomo.momo) 交友需谨慎
 * [探探](https://sj.qq.com/appdetail/com.p1.mobile.putong)
 
-## 42. 笔记
+## 42 笔记
 
 ### 安卓
 
@@ -1344,7 +1343,11 @@ not 上海电银银乾付 已跑路，总之 pos 除非正常交易否则慎用�
 
 [雷神加速器](https://sj.qq.com/appdetail/com.nn.accelerator.box)
 
-## 60 游戏
+## 60 代码仓库
+
+GitHub App [apkmirror 源](https://www.apkmirror.com/apk/github/) | [apk.gold](https://github.apk.gold/)
+
+## 61 游戏
 
 我一般会玩经典系列，比如王国保卫战、割绳子、小鳄鱼洗澡、糖果粉碎传奇、滑雪大冒险、愤怒的小鸟<br/>
 Bean's Quest 算是 1 代 和 Bean Dreams 算是 2 代
