@@ -181,6 +181,14 @@ pie title 志愿者领养的宠物
     "Rats" : 15
 ```
 
+## ER（实体关系）图
+
+```mermaid
+erDiagram
+    CUSTOMER }|..|{ DELIVERY-ADDRESS : has
+    CUSTOMER ||--o{ ORDER : places
+```
+
 ## 参考
 
 [Mermaid 中文网](https://mermaid.nodejs.cn)

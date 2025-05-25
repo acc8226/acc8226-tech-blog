@@ -110,8 +110,9 @@ Bitwarden【已适配安卓平板】[Github 版](https://github.com/bitwarden/an
 备用
 
 * Spark [官网](https://sparkmailapp.com/zh)【已适配安卓平板】readdle 家的华丽邮箱客户端
-* 网易邮箱大师 [应用宝下载](https://sj.qq.com/appdetail/com.netease.mail) 操作上我更偏爱 QQ 邮箱一些
+* [Outlook](https://sj.qq.com/appdetail/com.microsoft.office.outlook)
 * [Aqua Mail](https://www.aqua-mail.com) [Google play 版](https://play.google.com/store/apps/details?id=org.kman.AquaMail) | [Apkpure 版](https://apkpure.com/cn/email-aqua-mail-fast-secure/org.kman.AquaMail)
+* 网易邮箱大师 [应用宝下载](https://sj.qq.com/appdetail/com.netease.mail) 操作上我更偏爱 QQ 邮箱一些
 
 not
 
@@ -766,6 +767,7 @@ not
 * [飞书](https://sj.qq.com/appdetail/com.ss.android.lark)
 * [钉钉](https://sj.qq.com/appdetail/com.alibaba.android.rimet)
 * [腾讯会议](https://sj.qq.com/appdetail/com.tencent.wemeet.app)
+* [Teams](https://sj.qq.com/appdetail/com.microsoft.teams)
 
 文档办公
 
@@ -1345,7 +1347,7 @@ not 上海电银银乾付 已跑路，总之 pos 除非正常交易否则慎用�
 
 ## 60 代码仓库
 
-GitHub App [apkmirror 源](https://www.apkmirror.com/apk/github/) | [apk.gold](https://github.apk.gold/)
+GitHub App [apkmirror 源](https://www.apkmirror.com/apk/github/) | [apk.gold](https://github.apk.gold)
 
 ## 61 游戏
 

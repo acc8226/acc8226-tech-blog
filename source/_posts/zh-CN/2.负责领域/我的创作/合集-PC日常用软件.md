@@ -2,7 +2,7 @@
 title: 合集-PC日常用软件
 permalink: mypc/
 date: 2023-03-22 21:02:00
-updated: 2025-03-13 20:01:14
+updated: 2025-05-25 18:03:47
 categories: 我的创作
 ---
 
@@ -80,12 +80,15 @@ categories: 我的创作
 
 **windows 和 mac 平台**
 
-1. 普通下载：【全平台】[Motrix 绿色版](https://motrix.app/zh-CN) | [下载页](https://motrix.app/zh-CN/download) 颜值高，并支持下载 HTTP、FTP、BT、磁力链接。Github 资源良好支持
-1. 视频资源下载：【win mac】[NDM-Neat Download Manager](https://www.neatdownloadmanager.com/index.php/en) 体积小功能强，不支持 BT 磁力。[搭配 crx 插件](https://www.crxsoso.com/search?keyword=NeatDownloadManager%20&store=chrome) 支持在线网页视频下载
+* [EagleGet](https://www.eagleget.org) 免费开源，支持视频嗅探
+* [NDM-Neat Download Manager](https://www.neatdownloadmanager.com/index.php/en) 体积小功能强，不支持 BT 磁力。[搭配 crx 插件](https://www.crxsoso.com/search?keyword=NeatDownloadManager%20&store=chrome) 支持在线网页视频下载
+* 哔哩哔哩专用下载器：【win】[Bilidown-哔哩视频下载](https://zhouql.vip/bilibili/pc) |【win】[DownKyi](https://www.colostar.cn/links/13486.html)（哔哩下载姬）
 
-哔哩哔哩专用下载器：【win】[Bilidown-哔哩视频下载](https://zhouql.vip/bilibili/pc) |【win】[DownKyi](https://www.colostar.cn/links/13486.html)（哔哩下载姬）
+**mac 平台**
 
-mac 版迅雷其实也不错，不过必须去官网下载才是完整版，目前还比较清爽，windows 版就算了
+1. 【全平台】[Motrix 绿色版](https://motrix.app/zh-CN) | [下载页](https://motrix.app/zh-CN/download)  颜值高，并支持下载 HTTP、FTP、BT、磁力链接。Github 资源良好支持
+1. 【win mac】[NDM-Neat Download Manager](https://www.neatdownloadmanager.com/index.php/en) 
+1. mac 版迅雷其实也不错，不过必须去官网下载才是完整版
 
 **linux 平台**
 
