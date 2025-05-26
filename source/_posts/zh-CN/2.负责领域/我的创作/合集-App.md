@@ -126,14 +126,14 @@ not
 
 #### 安卓
 
-1. [FBReader](https://fbreader.org/android#download) 一款本地电子书阅读器，但是支持 pdf 需要付费且我也用不到
-1. [番茄免费小说](https://sj.qq.com/appdetail/com.dragon.read) 有的想看的书可以免费离线下载，很适合离线用，**太吃存储空间**
+[FBReader](https://fbreader.org/android#download) 一款本地电子书阅读器，但是支持 pdf 需要付费且我也用不到
 
 可选
 
-* [阅读](https://github.com/gedoor/legado) + [tts-server](https://jing332.lanzn.com/b09jpjd2d) 本地+在线用
+* [阅读](https://github.com/gedoor/legado) + 【本地+在线用】[tts-server](https://jing332.lanzn.com/b09jpjd2d) 密码1234 
 * ——————— ฅ՞• •՞ฅ ———————
 * [微信读书](https://sj.qq.com/appdetail/com.tencent.weread) 正版在线用，除了现在很多内容收费了
+* [番茄免费小说](https://sj.qq.com/appdetail/com.dragon.read) 有的想看的书可以免费离线下载，很适合离线用，**太吃存储空间**
 * [京东读书](https://sj.qq.com/appdetail/com.jd.app.reader) 送了影响力 和 乌合之众几本书，可以看一段时间
 * [网易蜗牛阅读](https://sj.qq.com/appdetail/com.netease.snailread) 每天可以免费看 1 个小时付费书籍
 
@@ -244,6 +244,7 @@ not [QQ 音乐 HD](https://sj.qq.com/appdetail/com.tencent.qqmusicpad) 首先更
 1. [得到](https://sj.qq.com/appdetail/com.luojilab.player) 免费资源还行，除了体积大
 1. [微信听书](https://sj.qq.com/appdetail/com.tencent.wehear) 无广告，活动玩法多，可以换取收听时长
 1. [帆书（原樊登读书）](https://sj.qq.com/appdetail/io.dushu.fandengreader) 稍有限免资源，但旧手机有点卡
+1. 【本地】[讯飞有声](https://sj.qq.com/appdetail/com.iflytek.readassistant) 可播放 pdf、doc、mobi 格式的文本，是目前的一个本地解决方案，非会员有 2 小时时长限制
 
 备用
 
@@ -254,8 +255,6 @@ not [QQ 音乐 HD](https://sj.qq.com/appdetail/com.tencent.qqmusicpad) 首先更
 * [听听 FM](https://sj.qq.com/appdetail/com.audio.tingting)
 * ——————— ฅ՞• •՞ฅ ———————
 * [极客时间](https://sj.qq.com/appdetail/org.geekbang.geekTime) 程序员才需要
-* ——————— ฅ՞• •՞ฅ ———————
-* 【本地】[讯飞有声](https://sj.qq.com/appdetail/com.iflytek.readassistant) 可播放 pdf、doc、mobi 格式的文本，是目前的一个本地解决方案，非会员有是时长限制
 
 not
 
@@ -280,7 +279,7 @@ not 酷FM 一款酷狗推出的的音乐 FM 电台 app，现已停止更新
 
 #### 安卓
 
-* [要知](https://sj.qq.com/appdetail/com.ruanmei.yaozhi) 暂用它听新闻用，目前定制项不太多，以后我可能会换成 ai 收集 + 听新闻了
+[要知](https://sj.qq.com/appdetail/com.ruanmei.yaozhi) 暂用它听新闻用，目前定制项不太多，以后我可能会换成 ai 收集 + 听新闻了
 
 备用
 
@@ -567,6 +566,8 @@ not
 * [知乎知学堂](https://sj.qq.com/appdetail/com.zhihu.zhixuetang.android) 无广告
 * [慕课网](https://sj.qq.com/appdetail/cn.com.open.mooc) 主打 IT 课程，且有一部分免费资源可以离线下载
 * [51 CTO](https://sj.qq.com/appdetail/com.cto51.student) | [网易云课堂](https://sj.qq.com/appdetail/com.netease.edu.study) | [希赛网](https://sj.qq.com/appdetail/com.xuesaieducation)
+* ——————— ฅ՞• •՞ฅ ———————
+* [编程师](https://sj.qq.com/appdetail/cn.w3cschool.app) 800 永久年费能否再便宜些
 
 not
 
@@ -804,15 +805,17 @@ not [福昕 PDF 阅读器](https://sj.qq.com/appdetail/com.foxit.mobile.pdf.lite
 
 ## 12 网盘【常用】
 
-### 安卓/iPhone
+### 安卓 / iPhone
 
-1. [天翼云盘](https://sj.qq.com/appdetail/com.cn21.ecloud) 除了 mac 上的同步还差点意思，每天可以签到容量，原画质是亮点
-1. [阿里云盘](https://sj.qq.com/appdetail/com.alicloud.databox) 功能很多单不太限速，但是非会员不能看超清了
+1. [天翼云盘](https://sj.qq.com/appdetail/com.cn21.ecloud) 除了 mac 端很久不更新，每天签到送容量，不限速和在线原画质是亮点
 1. [PikPak](https://mypikpak.com/zh-CN) 免费用户总共 6GB，每天可以添加 3 个离线任务还是不错的
 * ——————— ฅ՞• •՞ฅ ———————
 1. [AListFlutter](https://github.com/jing332/AListFlutter) 网盘聚合工具
 
-备用 [坚果云](https://sj.qq.com/appdetail/nutstore.android) 同步小文档用
+备用
+
+* [阿里云盘](https://sj.qq.com/appdetail/com.alicloud.databox) 功能很多单不太限速，但是非会员不能看超清了
+* [坚果云](https://sj.qq.com/appdetail/nutstore.android) 同步小文档用
 
 not
 
@@ -1349,7 +1352,12 @@ not 上海电银银乾付 已跑路，总之 pos 除非正常交易否则慎用�
 
 GitHub App [apkmirror 源](https://www.apkmirror.com/apk/github/) | [apk.gold](https://github.apk.gold)
 
-## 61 游戏
+## 61 租房
+
+* [58同城](https://sj.qq.com/appdetail/com.wuba) 信息注意分辨
+* [贝壳找房](https://sj.qq.com/appdetail/com.lianjia.beike)
+
+## 62 游戏
 
 我一般会玩经典系列，比如王国保卫战、割绳子、小鳄鱼洗澡、糖果粉碎传奇、滑雪大冒险、愤怒的小鸟<br/>
 Bean's Quest 算是 1 代 和 Bean Dreams 算是 2 代

@@ -42,7 +42,7 @@ categories: 我的创作
 #### 1.1.0【常用】压缩解压
 
 * 【win 开源绿色版】[PeaZip](https://peazip.github.io/peazip-portable.html) 含智能解压 | [Bandizip v6.25 最后的无广告版](https://www.lanzoup.com/i8av00j) in 2019 含智能解压
-* 【mac [苹果商店版](https://apps.apple.com/cn/app/the-unarchiver/id425424353?mt=12)】[The Unarchiver](https://theunarchiver.com) | [FastZip](https://www.better365.cn/fastzip.html)
+* 【mac [苹果商店版](https://apps.apple.com/cn/app/the-unarchiver/id425424353?mt=12)】[The Unarchiver](https://theunarchiver.com)
 * 【linux】系统自带
 
 #### 1.1.1【推荐】鼠标手势
