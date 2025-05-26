@@ -1,5 +1,5 @@
 ---
-title: 第十章-Android-Gradle多项目构建
+title: 第十章 Android Gradle 多项目构建
 date: 2022-12-31 00:00:00
 updated: 2022-12-31 00:00:00
 categories:
@@ -13,7 +13,7 @@ Android 的多项目和其他基于 Gradle 构建的多项目是差不多，比�
 
 这一章我们简单的介绍下 Android 不同类型的项目，他们如何设置，如何引用以及库项目如何单独发布，像因多项目导致的 65535 等问题我们已经在上一章节做了介绍，这里就不再重复了。
 
-### 10.1 Android项目区别
+### 10.1 Android 项目区别
 
 Android 的项目一般分为 库项目、应用项目、测试项目，Android Gradle 根据他们分别有 3 种插件
 com.android.library、com.android.application、com.android.test。
@@ -24,7 +24,7 @@ com.android.library、com.android.application、com.android.test。
 
 应用项目，一般只有一个，它可以打包成我们可发布的 Apk 包，如果工程太复杂，就像上面说的，它会引用很多的库项目，以便组成一个最终的 App 发布。应用项目有时也会有多个，比如我们发布了不同特色的 App，但是他们又是同类产品，比如 QQ 的标准版、轻聊版，他们是同类产品，只不过轻聊版更简洁，去除了很多冗余的功能，这时候我们就可以创建两个应用项目，让他们引用不用的库项目，然后再分别根据需求做出相应的调整，就可以生成两个不同的 App，满足不同人群的要求。
 
-测试项目是我们为了对我们的 App 进行测试而创建的，比如测试 Activity、Service、Application 等等，他是Android 基于 Junit 提供的一种测试Android项目的框架方法，让我们可以方便的对我们的Android App进行测试，保证质量。
+测试项目是我们为了对我们的 App 进行测试而创建的，比如测试 Activity、Service、Application 等等，他是Android 基于 Junit 提供的一种测试 Android 项目的框架方法，让我们可以方便的对我们的Android App进行测试，保证质量。
 
 ### 10.2 Android 多项目设置
 
@@ -34,7 +34,7 @@ com.android.library、com.android.application、com.android.test。
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-eaeb0bb25c320965.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-严格的说应该是四个项目，还有一个根项目MyProject。根项目会有一个 setting.gradle 配置文件，每个项目里都有一个 build.gradle 文件，所以他们的结构为：
+严格的说应该是四个项目，还有一个根项目 MyProject。根项目会有一个 setting.gradle 配置文件，每个项目里都有一个 build.gradle 文件，所以他们的结构为：
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-0293dafe71129bbe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -64,13 +64,13 @@ Android 库项目引用和 Gradle 的其他引用是一样的，都是通过depe
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-501a0e7e7c95bfbe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-这样我们就改成发布的是 debug 版本的 aar 包了，我们可以通过如上方式配置不同的发布版本，只要我们配置的这个名字是合法存在的即可 -- 也就是 Assemble 任务能够打包出来的aar包。比如你配置了多个 flavor，那么我们发布的就可以针对不同的flavor+buildtype配置，比如：
+这样我们就改成发布的是 debug 版本的 aar 包了，我们可以通过如上方式配置不同的发布版本，只要我们配置的这个名字是合法存在的即可 -- 也就是 Assemble 任务能够打包出来的 aar 包。比如你配置了多个 flavor，那么我们发布的就可以针对不同的flavor+buildtype配置，比如：
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-b1f345ceb9ca780f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 这样我们就发布了 flavor1Debug 这个 aar包以供其他的的项目引用。
 
-有朋友可能要问了，如果想同时发布多个版本的 aar 包以供不同的项目引用怎么办？比如我们要做一个产品，他们有不同的版本，但是都是一个产品，比如一个专业版，一个标版，他们有一些区别，不光是在App项目里体现，在我们的库工程里也要体现(比如库工程里针对这两种版本的资源不一样)，这时候我们需要针对不同的版本，引用不同的发布的aar包。这是可以做到的，默认情况下是不能同时发布多个 aar 包的，我们可以开启。
+有朋友可能要问了，如果想同时发布多个版本的 aar 包以供不同的项目引用怎么办？比如我们要做一个产品，他们有不同的版本，但是都是一个产品，比如一个专业版，一个标版，他们有一些区别，不光是在 App 项目里体现，在我们的库工程里也要体现(比如库工程里针对这两种版本的资源不一样)，这时候我们需要针对不同的版本，引用不同的发布的aar包。这是可以做到的，默认情况下是不能同时发布多个 aar 包的，我们可以开启。
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-fc4d7194bb19d007.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -78,17 +78,17 @@ Android 库项目引用和 Gradle 的其他引用是一样的，都是通过depe
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-d13ca76391523940.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-看到这里大家看明白了把，对于 lib 这个库项目，我们先配置成可以同时发布多个aar，然后我们在其他引用工程里做如上示例的引用，比如 flavor1 这个渠道包就引用 flavor1 这个渠道对应的 lib1 库的 release aar包；flavor2这个渠道就引用flavor2 这个渠道对应的 lib1 库的 release aar包。
+看到这里大家看明白了把，对于 lib 这个库项目，我们先配置成可以同时发布多个 aar，然后我们在其他引用工程里做如上示例的引用，比如 flavor1 这个渠道包就引用 flavor1 这个渠道对应的 lib1 库的 release aar 包；flavor2 这个渠道就引用flavor2 这个渠道对应的 lib1 库的 release aar 包。
 
 以上这些引用都是在项目立直接引用，下一节我们讲如何发布我们的aar包到Maven中心库，以供其他项目引用。
 
 ### 10.4 库项目单独发布
 
-项目直接依赖一般适用于关联比较紧密、不可复用的项目，对于这类项目我们可以直接基于源代码项目的依赖，有时候我们会有一些项目，可以被其他项目所复用，比如我们的公共组件库，工具库等等，这类就可以单独发布出去，被其他项目使用，就像我们引用jcenter上的类库一样方便，这一节我们就讲如何把库项目单独的发布到我们自己的Maven中心库.
+项目直接依赖一般适用于关联比较紧密、不可复用的项目，对于这类项目我们可以直接基于源代码项目的依赖，有时候我们会有一些项目，可以被其他项目所复用，比如我们的公共组件库，工具库等等，这类就可以单独发布出去，被其他项目使用，就像我们引用jcenter上的类库一样方便，这一节我们就讲如何把库项目单独的发布到我们自己的 Maven 中心库.
 
 要搭建自己的 Maven 私服，推荐使用 Nexus Repository Manager，版本选择 2.xx，下载地址： <http://www.sonatype.com/download-oss-sonatype> ，我这里选择的是 2.12.1 版本，我们选择 nexus-2.12.1-01-bundle.tar.gz 包下载解压，然后找到 nexus-2.12.1-01\bin\jsw 这个目录，可以看到有很多以操作系统和 cpu 架构命名的文件夹，你可以根据你的系统选择进入相应的文件夹运行 start-nexus 脚本即可启动 Nexus，启动之后，我们在浏览器里打开 <http://localhost:8081/nexus/> 即可访问，注意看右上角有个 Log In 链接，点击可以登陆管理 Nexus，默认的用户名是 admin，密码是 admin123。关于 Nexus 的搭建和使用，非常简单，大家可以 Google 下相关文章，很容易的就会入门使用，这里不再多讲。
 
-有了部署好的 Nexus Maven 中心库之后，我们就可以把我们的项目发布到我们的中心库了，要想通过Maven发布，首先我们得在 build.gradle 中应用 maven 插件：
+有了部署好的 Nexus Maven 中心库之后，我们就可以把我们的项目发布到我们的中心库了，要想通 Maven 发布，首先我们得在 build.gradle 中应用 maven 插件：
 
 ```sh
 apply plugin: 'com.android.library'
@@ -111,9 +111,9 @@ group 和 version 比较方便，直接指定即可。对于 version 还有一�
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-e5e66e8df430ae0e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-如上所示，我们配置了 uploadArchives，指定对应的 mavenDeployer 配置，这里配置了两个发布的 Maven 库，一个是release 版本的，一个是 snapshot 版本的，并同时配置了他们的密码以及 URL，URL 是 nexus maven 提供的，可以打开Nexus 网页版，点击右侧的 repositorys 菜单查看，里面配置了很多库，我们也可以新增一些自己的repository。
+如上所示，我们配置了 uploadArchives，指定对应的 mavenDeployer 配置，这里配置了两个发布的 Maven 库，一个是release 版本的，一个是 snapshot 版本的，并同时配置了他们的密码以及 URL，URL 是 nexus maven 提供的，可以打开 Nexus 网页版，点击右侧的 repositorys 菜单查看，里面配置了很多库，我们也可以新增一些自己的repository。
 
-发布到 Nexus Maven 库之后，我们就可以像引用 jcenter 中的类库一样引用他们，要使用他们，我们首先得配置我们的仓库，因为我们新增了一个我们自己的私有Maven库，这个使用要告诉Gradle，不然它不知道这个私有Maven仓库的存在。
+发布到 Nexus Maven 库之后，我们就可以像引用 jcenter 中的类库一样引用他们，要使用他们，我们首先得配置我们的仓库，因为我们新增了一个我们自己的私有 Maven 库，这个使用要告诉 Gradle，不然它不知道这个私有Maven仓库的存在。
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-7944387993630556.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -133,7 +133,7 @@ group 和 version 比较方便，直接指定即可。对于 version 还有一�
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-06b1f9085aa79cd9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-这样就方便简洁多了，你可以在 Nexus 里配置 public 这个分组所管理的repository，可以增减，看你的需求，也可以新建其他 group 类型的 repository 来用，比如根据你们公司的事业部来创建不同的 group 给他们使用，很好的分离开了不同权限、不同业务需求的repository。
+这样就方便简洁多了，你可以在 Nexus 里配置 public 这个分组所管理的repository，可以增减，看你的需求，也可以新建其他 group 类型的 repository 来用，比如根据你们公司的事业部来创建不同的 group 给他们使用，很好的分离开了不同权限、不同业务需求的 repository。
 
 ### 10.5 小结
 

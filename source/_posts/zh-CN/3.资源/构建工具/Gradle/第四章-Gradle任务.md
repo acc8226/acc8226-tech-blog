@@ -94,7 +94,7 @@ myTask.doLast{
 ### 4.4 << 操作符
 
 详细读者们已经看到了我们很多例子中使用了这个操作符，这一小节我们就从源代码的角度来讲解下这个操作符，让大家对它有个更深入的了解。
-<<操作符在 Gradle 的 Task 上是 doLast 方法的短标记形式，也就是说<<可以代替doLast
+<< 操作符在 Gradle 的 Task 上是 doLast 方法的短标记形式，也就是说 << 可以代替 doLast
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-3ff6a7cf71d52a50.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -189,9 +189,9 @@ Task 中有个 enabled 属性，用于启用和禁用任务，默认是 true 表
 
 ### 4.9 任务规则
 
-我们通过以上章节知道了我们创建的任务都在 TaskContainer 里，是由其进行管理的。所以我们当我们访问任务的时候时候都是通过TaskContainer进行访问，而 TaskContainer又是一个NamedDomainObjectCollection（继承它），所以我们说的任务规则其实是NamedDomainObjectCollection的规则。
+我们通过以上章节知道了我们创建的任务都在 TaskContainer 里，是由其进行管理的。所以我们当我们访问任务的时候时候都是通过TaskContainer进行访问，而 TaskContainer 又是一个NamedDomainObjectCollection（继承它），所以我们说的任务规则其实是 NamedDomainObjectCollection 的规则。
 
-NamedDomainObjectCollection是一个具有唯一不变名字的域对象的集合，它里面所有的元素都有一个唯一不变的名字，该名字是String类型，所以我们可以通过名字获取该元素，比如我们通过任务的名字获取该任务。
+NamedDomainObjectCollection 是一个具有唯一不变名字的域对象的集合，它里面所有的元素都有一个唯一不变的名字，该名字是String类型，所以我们可以通过名字获取该元素，比如我们通过任务的名字获取该任务。
 
 说完唯一不变的名字，我们再说规则，NamedDomainObjectCollection 的规则有什么用呢？我们上面说了要想获取一个NamedDomainObjectCollection 的元素是通过一个唯一的名字获取的，那么这个唯一的名字可能在 NamedDomainObjectCollection 中并不存在，具体到任务中就是说你想获取的这个任务不存在，这时候就会调用我们添加的规则来处理这种异常情况，我们看下源代码：
 

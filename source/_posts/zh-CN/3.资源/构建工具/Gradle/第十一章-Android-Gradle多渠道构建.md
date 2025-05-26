@@ -10,7 +10,7 @@ tags:
 ---
 
 
-因为我们发布或者推广的渠道不同，就造成了我们的 Android App 可能会有很多个，因为我们需要细分他们，才能针对不同的渠道做不同的处理，比如统计跟踪、是否升级、App 名字是否一致等等。尤其在国内这个各种应用市场百家争鸣的时代，我们需要发布的 App 渠道甚至多个好几百个，而且各有各的特殊处理，所以这就更需要我们有一套自动的满足多渠道构建的工具来帮我们解决这个问题，有了 Android Gradle 的Flavor 后，我们就可以完美的解决以上问题，并且可以实现批量自动化。这一章主要介绍多渠道构建的基本原理，然后使用Flurry和友盟这两个最常用的分析统计平台作为例子来演示多渠道构建，接着我们介绍下 Flavor 的每个配置的用法，让大家可以根据需求定制自己的每个渠道，最后我们会介绍一种快速打包上百个渠道的方法，以提高多渠道构建的效率。
+因为我们发布或者推广的渠道不同，就造成了我们的 Android App 可能会有很多个，因为我们需要细分他们，才能针对不同的渠道做不同的处理，比如统计跟踪、是否升级、App 名字是否一致等等。尤其在国内这个各种应用市场百家争鸣的时代，我们需要发布的 App 渠道甚至多个好几百个，而且各有各的特殊处理，所以这就更需要我们有一套自动的满足多渠道构建的工具来帮我们解决这个问题，有了 Android Gradle 的 Flavor 后，我们就可以完美的解决以上问题，并且可以实现批量自动化。这一章主要介绍多渠道构建的基本原理，然后使用 Flurry 和友盟这两个最常用的分析统计平台作为例子来演示多渠道构建，接着我们介绍下 Flavor 的每个配置的用法，让大家可以根据需求定制自己的每个渠道，最后我们会介绍一种快速打包上百个渠道的方法，以提高多渠道构建的效率。
 
 ### 11.1 多渠道构建的基本原理
 
@@ -20,7 +20,7 @@ tags:
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-818f82ad6a68e4c1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-Android Gradle 为我们提供了 productFlavors 方法来添加不同的渠道，它接受域对象类型的 ProductFlavor 闭包作为其参数，前面章节我们在介绍 Build Type 的时候也介绍过域对象，所以我们可以为 productFlavors{}闭包添加很多的渠道，每一个都是一个 ProductFlavor 类型的渠道，在NamedDomainObjectContainer中的名字就是渠道名，比如baidu，google等。
+Android Gradle 为我们提供了 productFlavors 方法来添加不同的渠道，它接受域对象类型的 ProductFlavor 闭包作为其参数，前面章节我们在介绍 Build Type 的时候也介绍过域对象，所以我们可以为 productFlavors{}闭包添加很多的渠道，每一个都是一个 ProductFlavor 类型的渠道，在 NamedDomainObjectContainer 中的名字就是渠道名，比如baidu，google等。
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-e34610100e6d0944.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -60,7 +60,7 @@ Flavor这个单词比较有意思，看字面意思是气味、味道的意思�
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-ae8ff9b123ec89bb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-如上示例，就可以为 google 这个渠道设置其特有的包名，这样打包的时候 google 渠道使用的是 org.flysnow.app.example112.google这个包名，而其他渠道使用的是org.flysnow.app.example112这个包名。看下它的方法原型实现
+如上示例，就可以为 google 这个渠道设置其特有的包名，这样打包的时候 google 渠道使用的是 org.flysnow.app.example112.google 这个包名，而其他渠道使用的是 org.flysnow.app.example112这个包名。看下它的方法原型实现
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-7c2ee68eb86010e6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -209,7 +209,7 @@ flavorDimensions 是我们使用的 android{}里的方法，它和productFlavors
 2. 然后基于该包拷贝一个，文件名要能区分出来产品、打包时间、版本、渠道等。
 3. 然后对拷贝出来的 Apk 文件进行修改，在其 META-INF 目录下新增空文件，但是空文件的文件名要有意义，必须包含能区分渠道的名字比如 mtchannel_google。
 4. 重复2、3生成我们所需的所有的渠道包 Apk，这个可以使用 Python 这类脚本来做
-5. 这样就生成了我们所有发布渠道的Apk包了。
+5. 这样就生成了我们所有发布渠道的 Apk 包了。
 
 那么我们怎么使用呢，原理也非常简单，我们在 Apk 启动的时候(Application onCreate)的时候,读取我们写Apk中META-INF目录下的前缀为mtchannel_文件，如果找到的话，把文件名取出来，然后就可以拿到渠道标识(google)了,这里贴一个美团实现的代码，大家可以参考一下：
 

@@ -97,26 +97,19 @@ not [Google Authenticator](https://google-authenticator.en.softonic.com/android)
 
 ### 1.2 密码管理【重要】
 
-#### 通用
-
 Bitwarden【已适配安卓平板】[Github 版](https://github.com/bitwarden/android/releases) 可以云端存储的密码管理器，支持本地导入导出密码。推荐选择 f-droid，因为国内网络环境堪忧
 
 ### 1.3 邮件收发
 
-#### 通用
-
-[Thunderbird](https://www.thunderbird.net/zh-CN/mobile/) 移动版 [Github 版](https://github.com/thunderbird/thunderbird-android/releases)
+网易邮箱大师 [应用宝下载](https://sj.qq.com/appdetail/com.netease.mail) 操作上我更偏爱 QQ 邮箱一些
 
 备用
 
-* Spark [官网](https://sparkmailapp.com/zh)【已适配安卓平板】readdle 家的华丽邮箱客户端
+* [QQ 邮箱](https://sj.qq.com/appdetail/com.tencent.androidqqmail) 现在有广告了
+* Spark [官网](https://sparkmailapp.com/zh)【已适配安卓平板】readdle 家华丽的邮箱客户端
 * [Outlook](https://sj.qq.com/appdetail/com.microsoft.office.outlook)
 * [Aqua Mail](https://www.aqua-mail.com) [Google play 版](https://play.google.com/store/apps/details?id=org.kman.AquaMail) | [Apkpure 版](https://apkpure.com/cn/email-aqua-mail-fast-secure/org.kman.AquaMail)
-* 网易邮箱大师 [应用宝下载](https://sj.qq.com/appdetail/com.netease.mail) 操作上我更偏爱 QQ 邮箱一些
-
-not
-
-[QQ 邮箱](https://sj.qq.com/appdetail/com.tencent.androidqqmail) 现在有广告了
+* [Thunderbird](https://www.thunderbird.net/zh-CN/mobile/) 移动版 [Github 版](https://github.com/thunderbird/thunderbird-android/releases)
 
 ### 1.4 倒数日
 
@@ -506,17 +499,12 @@ not [ES 文件管理器](http://www.estrongs.com) 通用版【已适配平板】
 
 ### 安卓 & iPhone
 
-1. 腾讯地图【小程序】 清爽不解释
-1. [百度地图关怀版](https://sj.qq.com/appdetail/com.baidu.maps.caring) 导航用，因为原版广告太多
-1. 滴滴出行 [app](https://sj.qq.com/appdetail/com.sdu.didi.psnger)/【小程序】 加班、搬家、货运搬家，搬家新用户还送券
+1. [高德地图](https://sj.qq.com/appdetail/com.autonavi.minimap) ｜ [百度地图](https://sj.qq.com/appdetail/com.baidu.BaiduMap) ｜ 腾讯地图【小程序】 清爽不解释
+1. 滴滴出行 [app](https://sj.qq.com/appdetail/com.sdu.didi.psnger) /【小程序】 加班、搬家、货运搬家用
 1. 腾讯乘车码【小程序】 通用性较强
-1. 永州电子乘车码【小程序】 适合永州地区公交
-1. 支付宝出行【支付宝小程序】
-
-not
-
-* [百度地图](https://sj.qq.com/appdetail/com.baidu.BaiduMap) 广告满天飞，虽然可以查看周边小吃和宾馆
-* [高德地图](https://sj.qq.com/appdetail/com.autonavi.minimap) 同上
+1. 乐行永州【小程序】 只适合永州地区公交
+1. [云闪付](https://sj.qq.com/appdetail/com.unionpay)-出行
+1. [支付宝](https://sj.qq.com/appdetail/com.eg.android.AlipayGphone)-出行【支付宝小程序】
 
 可选
 
@@ -615,7 +603,7 @@ not
 ### 安卓
 
 1. 美团 [app](https://sj.qq.com/appdetail/com.sankuai.meituan)/【小程序】
-1. [抖音](https://sj.qq.com/appdetail/com.ss.android.ugc.aweme) 稍有广告，同时它又是个超级 app，生活、超市、优惠、直播和团购都有
+1. [抖音](https://sj.qq.com/appdetail/com.ss.android.ugc.aweme) 稍有广告，一个聚合 app， 有生活、超市、优惠、直播和团购频道
 
 备用
 
@@ -669,7 +657,7 @@ not
 
 #### 飞机票
 
-我不怎么坐，一般携程够用了
+我不怎么坐，一般用[携程](https://sj.qq.com/appdetail/ctrip.android.view)够用了
 
 #### 订酒店
 
@@ -679,13 +667,13 @@ not
 
 1. 格林 [app](https://sj.qq.com/appdetail/com.greentree.android) / 【小程序】 由于当年办了一个金卡会员，虽然很久没用了，可能有些优惠
 1. 飞猪 [app](https://sj.qq.com/appdetail/com.taobao.trip) 不怎么用，感觉阿里没做起来
-1. [马蜂窝](https://sj.qq.com/appdetail/com.mfw.roadbook) 懒人玩法攻略，最近又接入了 ai
+1. [马蜂窝](https://sj.qq.com/appdetail/com.mfw.roadbook) 包含懒人玩法攻略
 
-记录：有一次使用去哪儿，感觉还是去哪儿的票价便宜些 这里由于我没仔细阅读，导致取消订单后重下单付款了 120，长沙金井小区的老板真黑，我应该提前和他说我第二天早起会退房的，但主要损失还是被无良商户 和 无良信贷中介 和被诈
+记录：长沙金井小区老板 120 元的房真黑，不要考试当天才订房。我应该提前和他说我第二天早起会退房的，但主要损失还是被无良商户 和 无良信贷中介 和被诈
 
 not
 
-* 国铁吉迅 广告满天飞，还要用手机号注册，且我以及注册过 12306 了，所以没必要
+* [国铁吉迅](https://sj.qq.com/appdetail/com.crgt.ilife) 广告满天飞，还要用手机号注册，且我以及注册过 12306 了，所以没必要
 * [智行火车票](https://sj.qq.com/appdetail/com.yipiao) 用的还行，不过还是尽量不要用第三方的
 
 官网收录：[飞常准](https://sj.qq.com/appdetail/vz.com) | [去哪儿旅行](https://sj.qq.com/appdetail/com.Qunar) | [同程旅行](https://sj.qq.com/appdetail/com.tongcheng.android) | [航班管家](https://sj.qq.com/appdetail/com.flightmanager.view) | [智行火车票](https://sj.qq.com/appdetail/com.yipiao)
@@ -705,7 +693,10 @@ not
 * [Tim](https://sj.qq.com/appdetail/com.tencent.tim) 比 [QQ](https://sj.qq.com/appdetail/com.tencent.mobileqq) 小巧
 * [微信](https://sj.qq.com/appdetail/com.tencent.mm)
 
-社交类 [微博](https://sj.qq.com/appdetail/com.sina.weibo)
+社交类
+
+* [微博](https://sj.qq.com/appdetail/com.sina.weibo) 有广告
+* 社交类 [小红书](https://sj.qq.com/appdetail/com.xingin.xhs)
 
 ### iPhone
 
@@ -714,7 +705,10 @@ not
 * [Tim](https://sj.qq.com/appdetail/com.tencent.tim) 比 [QQ](https://sj.qq.com/appdetail/com.tencent.mobileqq) 小巧，[腾讯 QQ 办公简洁版 TIM 开启安卓 / iOS 4.0 公测](https://www.ithome.com/0/807/708.htm) 升级 NT 架构
 * [微信](https://sj.qq.com/appdetail/com.tencent.mm)
 
-社交类 weico 下架了，变成了微博国际板，后面又变成轻享版了，结果还有了广告。 weico 4 当年我还可是花钱买的，确实不错
+社交类 
+
+* weico 下架了，变成了微博国际板，后面又变成轻享版了，结果还有了广告。 weico 4 当年我还可是花钱买的，确实不错
+* 社交类 [小红书](https://sj.qq.com/appdetail/com.xingin.xhs)
 
 ### 安卓平板
 
@@ -814,7 +808,7 @@ not [福昕 PDF 阅读器](https://sj.qq.com/appdetail/com.foxit.mobile.pdf.lite
 
 备用
 
-* [阿里云盘](https://sj.qq.com/appdetail/com.alicloud.databox) 功能很多单不太限速，但是非会员不能看超清了
+* [阿里云盘](https://sj.qq.com/appdetail/com.alicloud.databox) 功能很多单不太限速，非会员不能看超清
 * [坚果云](https://sj.qq.com/appdetail/nutstore.android) 同步小文档用
 
 not
@@ -926,8 +920,6 @@ not [Chrome](https://sj.qq.com/appdetail/com.android.chrome) 不太好用
 
 ## 17 知识社区
 
-### 通用
-
 * [知乎](https://sj.qq.com/appdetail/com.zhihu.android) 广告不明显，还可以得盐粒 | [知乎极速版](https://sj.qq.com/appdetail/com.zhihu.android.lite) 算是做得很好的极速版，无广告无圆环挑战可以选择
 * [豆瓣](https://sj.qq.com/appdetail/com.douban.frodo) 我不常用
 * [知识星球](https://sj.qq.com/appdetail/com.unnoo.quan)
@@ -983,13 +975,9 @@ not
 
 ## 21. 局域网通讯
 
-### 通用
-
 [LocalSend](https://localsend.org) ｜ [LANDrop](https://landrop.app)
 
 ## 22. 投资理财类
-
-### 通用
 
 * [挖财宝](https://sj.qq.com/appdetail/com.hangzhoucaimi.financial) 理财需谨慎
 * [天天基金](https://sj.qq.com/appdetail/com.eastmoney.android.fund) 东方财富旗下
@@ -1056,7 +1044,7 @@ never
 
 ## 29 扫描
 
-* [极度扫描](https://jidusm.wlhex.com) 跨平台OCR图片转文字 表格识别翻译，免费用户也能用
+[极度扫描](https://jidusm.wlhex.com) 跨平台OCR图片转文字 表格识别翻译，免费用户也能用
 
 备用
 
@@ -1176,7 +1164,7 @@ not
 ### 安卓
 
 1. [泰尔网测](https://sj.qq.com/appdetail/com.knowyou.perception) 用于网速测试 和 查看是哪家宽带
-2. [WiFiAnalyzer](https://f-droid.org/packages/com.vrem.wifianalyzer) | [GitHub 源](https://github.com/VREMSoftwareDevelopment/WiFiAnalyzer) 优化您的WiFi网络
+2. [WiFiAnalyzer](https://f-droid.org/packages/com.vrem.wifianalyzer) | [GitHub 源](https://github.com/VREMSoftwareDevelopment/WiFiAnalyzer) 优化您的 WiFi 网络
 3. [网络百宝箱](https://wap.tplinkcloud.com.cn/appdown/wifitool) TPLINK 出品。为网络工程师、安防工程师、IT 技术支持、工程商、集成商、电信装维等从业人员以及家庭用户提供更高效，更便捷的网络测试功能
 
 ## 38. 服务器运营
@@ -1239,34 +1227,34 @@ not
 
 not [Simplenote](https://simplenote.com/) 极简，无限同步，不限设备，仅限纯文本，兼容 markdown 格式，但是国内网络你懂的
 
-## 43. 反调公司【重要】
+## 43 反调公司【重要】
 
 * **天眼查** [app](https://sj.qq.com/appdetail/com.tianyancha.skyeye) / 【小程序】 求职中可以**反调公司**，也适用于查询被服务公司，**无良北京丰台万达舒瑶(窈)国际(已注销)**
 * [企查查](https://sj.qq.com/appdetail/com.android.icredit)
 * [爱企查](https://sj.qq.com/appdetail/com.baidu.xin.aiqicha)
 * [水滴信用](https://sj.qq.com/appdetail/com.shuidi.app)
 
-## 44. 文件同步
+## 44 文件同步
 
 【全平台】[Resilio Sync](https://www.resilio.com)
 
-## 45. 题目解析
+## 45 题目解析
 
 [豆包爱学](https://sj.qq.com/appdetail/com.aitutor.hippo) 讲解题目，讲解知识点，解决疑惑
 
 备用 [作业帮](https://sj.qq.com/appdetail/com.baidu.homework) 适合中小学生
 
-## 46. 清理
+## 46 清理
 
 ### 安卓 & 安卓平板
 
 [清浊](https://www.dircleaner.com)
 
-## 47. 格式转换
+## 47 格式转换
 
 not 格式工厂
 
-## 48. 证件照
+## 48 证件照
 
 [白描证件照](https://sj.qq.com/appdetail/com.uzero.cn.zhengjianzhao) 基本够用。支持多种尺寸证件照的制作以及自定义尺寸证件照的制作，有次数限制，且 5 寸和 6 寸照片都没有填满空白处
 
@@ -1343,8 +1331,6 @@ not 上海电银银乾付 已跑路，总之 pos 除非正常交易否则慎用�
 [智慧中小学 HD](https://sj.qq.com/appdetail/com.eduyun.app.hd)
 
 ## 59 游戏加速器
-
-### 通用
 
 [雷神加速器](https://sj.qq.com/appdetail/com.nn.accelerator.box)
 

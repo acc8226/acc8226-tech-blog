@@ -84,7 +84,7 @@ config.bool = false
       </meta-data>
 ```
 
-该种方式是目前应用最广的一种，比如友盟统计 sdk，腾讯统计 sdk 等。其中**name和value可以自由定义**，比较灵活。APP 可以利用系统 API，方便的获取渠道信息，示例代码如下：
+该种方式是目前应用最广的一种，比如友盟统计 sdk，腾讯统计 sdk 等。其中**name 和 value 可以自由定义**，比较灵活。APP 可以利用系统 API，方便的获取渠道信息，示例代码如下：
 
 ```java
 ApplicationInfo appInfo = this.getPackageManager().getApplicationInfo(getPackageName(), PackageManager.GET_META_DATA);
