@@ -347,6 +347,8 @@ not 今日头条 竟然有点卡
 * [抖音](https://sj.qq.com/appdetail/com.ss.android.ugc.aweme) 稍有广告，同时它又是个超级 app，生活、超市、优惠、直播和团购都有
 * ——————— ฅ՞• •՞ฅ ———————
 * 有广告的 [爱奇艺](https://sj.qq.com/appdetail/com.qiyi.video) | [优酷视频](https://sj.qq.com/appdetail/com.youku.phone) | [腾讯视频](https://sj.qq.com/appdetail/com.tencent.qqlive) | [芒果 TV](https://sj.qq.com/appdetail/com.hunantv.imgo.activity) ｜ [Z视介](https://sj.qq.com/appdetail/com.chinablue.tv)
+* ——————— ฅ՞• •՞ฅ ———————
+* YouTube
 
 not
 
@@ -367,7 +369,6 @@ not
 
 官网收录：[影视大全](https://sj.qq.com/appdetail/com.le123.ysdq) | [暴风影音](https://sj.qq.com/appdetail/com.storm.smart) | [PP视频](https://sj.qq.com/appdetail/com.pplive.androidphone) | [虎牙直播](https://sj.qq.com/appdetail/com.duowan.kiwi) | [搜狐视频](https://sj.qq.com/appdetail/com.sohu.sohuvideo)
 
-
 ### 安卓平板
 
 读取网盘资源 [网易爆米花](https://bmh.163.com)
@@ -384,6 +385,8 @@ not
 * [腾讯视频](https://sj.qq.com/appdetail/com.tencent.qqlive)【已适配安卓平板】
 * [优酷视频](https://sj.qq.com/appdetail/com.youku.phone)【已适配安卓平板】
 * [爱奇艺 PAD](https://sj.qq.com/appdetail/com.qiyi.video.pad) | [芒果TV HD](https://sj.qq.com/appdetail/com.imgo.pad) | [哔哩哔哩 HD](https://sj.qq.com/appdetail/tv.danmaku.bilibilihd) | [搜狐视频 Pad](https://sj.qq.com/appdetail/com.sohu.tv) | [乐视视频 Pad](https://sj.qq.com/appdetail/com.letv.android.client.pad) | [央视影音 HD](https://sj.qq.com/appdetail/cn.cntvhd)
+* ——————— ฅ՞• •՞ฅ ———————
+* YouTube
 
 本地 VLC
 
@@ -425,7 +428,7 @@ not [泰捷视频](https://www.51togic.com/%e6%b3%b0%e6%8d%b7%e8%a7%86%e9%a2%91)
 
 * [CX 文件管理器](https://apkpure.com/cx-file-explorer/com.cxinventor.file.explorer) 小巧且强大，支持 webdav
 * [GKD 搞快点](https://gkd.li) 预设了跳广告规则，开箱即用
-* Hiddify 魔法上网工具
+* Hiddify 【适配了平板】魔法上网工具
 * [微信输入法](https://sj.qq.com/appdetail/com.tencent.wetype) 其中的跨设备粘贴绝了
 * ——————— ฅ՞• •՞ฅ ———————
 * [QQ 同步助手](https://sj.qq.com/appdetail/com.tencent.qqpim) 同步手机通讯录用 换机只用一次
@@ -602,8 +605,9 @@ not
 
 ### 安卓
 
-1. 美团 [app](https://sj.qq.com/appdetail/com.sankuai.meituan)/【小程序】
-1. [抖音](https://sj.qq.com/appdetail/com.ss.android.ugc.aweme) 稍有广告，一个聚合 app， 有生活、超市、优惠、直播和团购频道
+美团 [app](https://sj.qq.com/appdetail/com.sankuai.meituan)/【小程序】
+
+其实 [抖音](https://sj.qq.com/appdetail/com.ss.android.ugc.aweme) 也包含了生活、超市、优惠、直播和团购频道
 
 备用
 
@@ -802,7 +806,7 @@ not [福昕 PDF 阅读器](https://sj.qq.com/appdetail/com.foxit.mobile.pdf.lite
 ### 安卓 / iPhone
 
 1. [天翼云盘](https://sj.qq.com/appdetail/com.cn21.ecloud) 除了 mac 端很久不更新，每天签到送容量，不限速和在线原画质是亮点
-1. [PikPak](https://mypikpak.com/zh-CN) 免费用户总共 6GB，每天可以添加 3 个离线任务还是不错的
+1. [PikPak](https://mypikpak.com/zh-CN)【适配了安卓平板】免费用户总共 6GB，每天可以添加 3 个离线任务还是不错的
 * ——————— ฅ՞• •՞ฅ ———————
 1. [AListFlutter](https://github.com/jing332/AListFlutter) 网盘聚合工具
 
@@ -832,7 +836,7 @@ not
 
 ### 安卓 TV
 
-[阿里云盘TV版](https://www.alipan.com/download/tvdownload)
+[阿里云盘 TV 版](https://www.alipan.com/download/tvdownload)
 
 ## 13 效率类
 
@@ -849,14 +853,11 @@ not
 * [腾讯应用宝](https://sj.qq.com)-全网最新最热手机应用游戏下载
 * [百度手机助手](https://shouji.baidu.com)
 * ——————— ฅ՞• •՞ฅ ———————
+* [Google Play Store](https://sj.qq.com/appdetail/com.android.vending) 【安卓平板支持】[Play 官网](https://play.google.com) 谷歌应用市场是安卓系统原生官方综合类应用市场，其中包括最新的游戏、应用、音乐、书籍等，非常丰富。需魔法 和 预先谷歌框架支持
 * [Uptodown](https://en.uptodown.com) 一个国外的应用商店 需魔法
 * [apkpure](https://apkpure.com/cn) 一个国外的应用商店 需魔法
 * ——————— ฅ՞• •՞ฅ ———————
 * [国际服游戏下载-GamesToday](https://www.hotplaygames.com) 不需魔法
-
-备用
-
-[Google Play](https://play.google.com) 需魔法 和 预先谷歌框架支持
 
 ## 15. 桌面启动器
 
@@ -1044,12 +1045,17 @@ never
 
 ## 29 扫描
 
-[极度扫描](https://jidusm.wlhex.com) 跨平台OCR图片转文字 表格识别翻译，免费用户也能用
+## 29.1 图片转文字
 
-备用
+[极度扫描](https://jidusm.wlhex.com) 跨平台 OCR 图片转文字 表格识别翻译，免费用户也能用
 
-* [白描](https://sj.qq.com/appdetail/com.uzero.baimiao) 还可以免费制作身份证正反面 A4 扫描件，免费版有每日次数限制
-* 扫描宝 印象笔记家的，动不动就要会员，差评
+## 29.2 制作扫描件
+
+[汉王扫描王](https://sj.qq.com/appdetail/com.hanvonscanner.app)
+
+备用 [白描](https://sj.qq.com/appdetail/com.uzero.baimiao) 可以免费制作身份证正反面 A4 扫描件，免费版有每日次数限制
+
+not 扫描宝和印象笔记，动不动就要会员，差评
 
 ## 30 标注/绘图/笔记
 
@@ -1343,7 +1349,15 @@ GitHub App [apkmirror 源](https://www.apkmirror.com/apk/github/) | [apk.gold](h
 * [58同城](https://sj.qq.com/appdetail/com.wuba) 信息注意分辨
 * [贝壳找房](https://sj.qq.com/appdetail/com.lianjia.beike)
 
-## 62 游戏
+## 62 文件互传
+
+[互传](https://sj.qq.com/appdetail/com.vivo.easyshare) vivo 出品必属精品
+
+## 63 外卖
+
+[饿了么](https://sj.qq.com/appdetail/me.ele)、京东、[美团外卖](https://sj.qq.com/appdetail/com.sankuai.meituan.takeoutnew)
+
+## 64 游戏
 
 我一般会玩经典系列，比如王国保卫战、割绳子、小鳄鱼洗澡、糖果粉碎传奇、滑雪大冒险、愤怒的小鸟<br/>
 Bean's Quest 算是 1 代 和 Bean Dreams 算是 2 代
