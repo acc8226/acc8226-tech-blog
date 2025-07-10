@@ -135,7 +135,7 @@ Windows, Chrome OS & Linux: Ctrl + Shift + Delete
 * 打开操作中心：用四根手指点击触摸板。
 * 切换虚拟桌面：将四根手指放在触摸板上，然后向右或向左轻扫。
 
-> 部分手势仅适用于精确式触摸板，因此当你无法使用某个手势时不必过于担心。
+部分手势仅适用于精确式触摸板，因此当你无法使用某个手势时不必过于担心。
 
 ### 几种替代式 windows 快捷操作
 
@@ -205,8 +205,7 @@ ClearType 是由微软公司在其 Windows 操作系统中提供的荧幕字体�
 
 ### 如何快捷拼图
 
-美图秀秀网页版
-<https://xiuxiu.web.meitu.com/main.html>
+[美图秀秀网页版](https://xiuxiu.web.meitu.com/main.html)
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-ad2c4a0781be7dc9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -214,8 +213,7 @@ ClearType 是由微软公司在其 Windows 操作系统中提供的荧幕字体�
 
 ### 如何卸载 360 天擎
 
-安装目录一般在
-`C:\Program Files (x86)\360\360Safe`
+安装目录一般在 `C:\Program Files (x86)\360\360Safe`
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-e55ab40a8eb7bef8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -260,12 +258,11 @@ rp 文件可以通过 Axure8 导入打开，具体方式如下：
 
 请检查下载文件的完整性。
 
-###  Windows下安装Linux子系统的 0x8007019e 错误
+###  Windows 下安装 Linux 子系统的 0x8007019e 错误
 
-提示说错误代码0x8007019e 没有办法安装打开？！
+提示说错误代码0x8007019e 没有办法安装打开？
 
-解决方法
-开启Windows功能-适用于Linux的Windows子系统，安装完重启就可以解决这个问题了
+解决方法：开启Windows功能-适用于Linux的Windows子系统，安装完重启就可以解决这个问题了
 
 ## 参考
 

@@ -16,9 +16,9 @@ def submit_post(url: str,data: dict):
   """
   Submit a POST request to the given URL withthe given data.
   """
-  return requests.post(url,data=json.dumps(data))
+  return requests.post(url, data=json.dumps(data))
  
-def save_encoded_image(b64_image: str,output_path: str):
+def save_encoded_image(b64_image: str, output_path: str):
   """
   Save the given image to the given outputpath.
   """

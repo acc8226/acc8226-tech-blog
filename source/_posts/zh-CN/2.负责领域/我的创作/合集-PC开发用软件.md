@@ -60,13 +60,13 @@ categories: 我的创作
 
 [Gradle](https://gradle.org) 是一个开源的自动化构建系统，它被设计用来支持多语言和多平台的软件项目，尤其是 Java 项目。Gradle 是用 Groovy 和 Kotlin 编写的，它提供了一个基于 Apache Ant 和 Maven 的强大而灵活的构建自动化功能。
 
-[镜像下载](https://mirrors.cloud.tencent.com/gradle)
+[华为镜像](https://mirrors.huaweicloud.com/gradle/) ｜ [腾讯镜像](https://mirrors.cloud.tencent.com/gradle)
 
 直链下载
 
-* [gradle-8.7-all.zip ](https://mirrors.cloud.tencent.com/gradle/gradle-8.7-all.zip)
-* [gradle-7.6.3-bin.zip](https://downloads.gradle.org/distributions/gradle-7.6.3-bin.zip)
-* [gradle-6.9.1-all.zip](https://mirrors.cloud.tencent.com/gradle/gradle-6.9.1-all.zip)
+* gradle-8.14.2-all.zip [腾讯源](https://mirrors.cloud.tencent.com/gradle/gradle-8.14.2-all.zip) ｜ [华为源](https://mirrors.huaweicloud.com/gradle/gradle-8.14.2-all.zip)
+* gradle-7.6.5-bin.zip [官方源](https://downloads.gradle.org/distributions/gradle-7.6.5-bin.zip)
+* gradle-6.9.4-all.zip [腾讯源](https://mirrors.cloud.tencent.com/gradle/gradle-6.9.4-all.zip) ｜ [华为源](https://mirrors.huaweicloud.com/gradle/gradle-6.9.4-all.zip)
 
 build.gradle.kts 设置 maven 国内源
 
@@ -229,6 +229,8 @@ npm config set registry https://registry.npmmirror.com
 
 [Python](https://www.python.org)
 
+国内第三方镜像 [huaweicloud](https://mirrors.huaweicloud.com/python/) | [npmmirror](https://registry.npmmirror.com/binary.html?path=python/)
+
 设置 pip 镜像源
 
 ```sh
@@ -266,7 +268,7 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 * 【全平台】[HTTPie 桌面版](https://httpie.io/download) | [Releases](https://github.com/httpie/desktop/releases) HTTPie 有桌面版和 cli 版，cross-platform API testing client for humans. Painlessly test REST, GraphQL, and HTTP APIs. 
 * 【mac】[RapidAPI](https://paw.cloud) 颜值功能都在线
 * 【win mac】[SoapUI](https://www.soapui.org/downloads/soapui)
-* 【全平台】[Reqable](https://reqable.com/zh-CN) 也可用于抓包
+* 【全平台】[Reqable](https://reqable.com/zh-CN) 还可用于抓包
 
 not
 
@@ -343,9 +345,7 @@ not
 
 虚位以待
 
-not
-
-【gui mac】snailSVN 偶有 bug
+not 【gui mac】snailSVN 偶有 bug
 
 **linux 平台**
 
@@ -448,11 +448,11 @@ MSYS2 还是一组工具和库，为您提供了一个易于使用的环境，�
 
 mac 已经将 zsh 取代 bash 作为默认 shell 了
 
-## 18. UML 图绘制
+## 18 UML 图绘制
 
-* 【全平台】[StarUML](https://staruml.io)【30 天试用后付费】一个画 uml 的工具，还行，可能不够通用吧
+【全平台】[StarUML](https://staruml.io)【30 天试用后付费】一个画 uml 的工具，还行，可能不够通用吧
 
-## 19. 框架
+## 19 框架
 
 ### 数据库连接池
 
@@ -489,7 +489,7 @@ RuoYi 是一个基于 Spring Boot 的权限和流程管理的 Java Web 应用程
 
 ### 持续集成与持续交付 (CI/CD)
 
-* 【Java】[jenkins](https://www.jenkins.io) 一个流行的开源自动化服务器，用于自动化各种任务，包括构建、测试和部署
+【Java】[jenkins](https://www.jenkins.io) 一个流行的开源自动化服务器，用于自动化各种任务，包括构建、测试和部署
 
 ### 微服务架构与服务治理
 
@@ -498,7 +498,7 @@ RuoYi 是一个基于 Spring Boot 的权限和流程管理的 Java Web 应用程
 
 ### 分布式协调服务
 
-* 【Java】[Zookeeper](https://zookeeper.apache.org) 用于分布式应用程序的协调服务，常用于管理分布式环境中的配置信息、命名、提供分布式同步和提供组服务等。
+【Java】[Zookeeper](https://zookeeper.apache.org) 用于分布式应用程序的协调服务，常用于管理分布式环境中的配置信息、命名、提供分布式同步和提供组服务等。
 
 ### Android 逆向工程
 
@@ -507,7 +507,11 @@ RuoYi 是一个基于 Spring Boot 的权限和流程管理的 Java Web 应用程
 
 ### Java 反编译
 
-* 【Java】[Jd-gui](http://java-decompiler.github.io) 一个 Java 反编译器工具，允许用户查看 Java 编译后的字节码中的源代码
+【Java】[Jd-gui](http://java-decompiler.github.io) 一个 Java 反编译器工具，允许用户查看 Java 编译后的字节码中的源代码
+
+### 接口测试
+
+[REST Assured](https://rest-assured.io) 使用 REST-assured，你可以用非常接近自然语言的方式编写 API 测试。比如，你可以这样写测试代码：`given().param("key1", "value1").when().get("/api/resource").then().statusCode(200)`。是不是感觉很直观？
 
 ## 一些思考
 

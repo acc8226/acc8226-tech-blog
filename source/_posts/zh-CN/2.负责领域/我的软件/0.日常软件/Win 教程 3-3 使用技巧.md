@@ -379,6 +379,10 @@ colortool.exe -b OneHalfDark.itermcolors
 
 [教程 - Win 11 安装 wsa 安卓虚拟机](https://www.jianshu.com/p/5e07a0e97a27) - 简书
 
+### 找不到局域网内打印机驱动
+
+即使知道 IP 也缺少驱动，这里可以借助局域网，登录已可以连接的打印机的计算机然后添加此打印机设备（内部会拷贝对应驱动）。
+
 ## 参考
 
 [你可能不知道的几种替代式 Windows 快捷操作](https://www.lmdouble.com/1424236155.html) | IT 技术资料分享

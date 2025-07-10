@@ -31,6 +31,8 @@ categories: 我的创作
 * 【win 绿色版 & mac】[Catsxp 猫眼浏览器](https://www.catsxp.com) 鼠标悬停切换标签功能很好用 |【win 绿色版】[百分浏览器](http://www.centbrowser.cn)
 * 【linux】[360 安全浏览器](https://browser.360.net/gc/index.html)<!-- more -->
 
+关于浏览器的密码自动填充：三巨头应该都有自动填充的功能。否则我会用 Bitwarden，其次有人推荐 [KeePassXC](https://keepassxc.org/download)。
+
 #### 1.0.3 输入法
 
 * 【win】自带的微软输入法
@@ -41,15 +43,13 @@ categories: 我的创作
 
 #### 1.1.0【常用】压缩解压
 
-* 【win 开源绿色版】[PeaZip](https://peazip.github.io/peazip-portable.html) 含智能解压 | [Bandizip v6.25 最后的无广告版](https://www.lanzoup.com/i8av00j) in 2019 含智能解压
-* 【mac [苹果商店版](https://apps.apple.com/cn/app/the-unarchiver/id425424353?mt=12)】[The Unarchiver](https://theunarchiver.com)
-* 【linux】系统自带
+[PeaZip](https://peazip.github.io/index.html) 含智能解压。其中 windows 还是建议使用安装版
 
 #### 1.1.1【推荐】鼠标手势
 
 * 【win】[WGestures 1 代](https://www.yingdev.com/projects/wgestures) | [WGestures 2](https://store.lizhi.io/site/products/id/523?cid=46jjayiu) 付费
 * 【mac】[BetterAndBetter](https://www.better365.cn/bab2.html) 不仅仅是鼠标手势
-* 【linux】Easystroke | KDE 内置鼠标手势
+* 【linux】Easystroke 或 KDE 内置的鼠标手势
 
 #### 1.1.2【推荐】键鼠增强
 
@@ -144,13 +144,8 @@ linux 除了 WPS 和 LibreOffice，可以安装 [WinApps for linux](https://nows
 * 编辑器 【win】[PDFgear](https://www.pdfgear.com/download)
 * PDF 标注做笔记 [BookxNote](http://www.bookxnote.com)
 
-**mac 平台**
-
-* 【mac】PDF 如果站在简单读取的角度直接用浏览器即可。否则可以选择有付费选项的 [PDF Expert](https://www.pdfexpert.cn) ｜ [PDF Reader Pro](https://www.pdfreaderpro.com)
-
-**linux 平台**
-
-* 【linux】自带或者使用浏览器读取 pdf
+* **mac 平台**【mac】[迅读 PDF](https://www.pdfxd.com/mac.html) 全能好用的 PDF 文件阅读器及编辑器
+* **linux 平台**【linux】自带或者使用浏览器读取 pdf
 
 【网页版 在线 pdf 工具】[smallpdf.com](https://smallpdf.com) A Free Solution to all your PDF Problems
 
@@ -447,9 +442,7 @@ mac 的腾讯柠檬清理已经自带了该功能
 
 or【win】[GRC's | DNS Nameserver Performance Benchmark](https://www.grc.com/dns/benchmark.htm)
 
-**DNS 切换**
-
-【win】[YogaDNS](https://yogadns.com)  但免费版只允许设置一个 dns，可能有用
+**DNS 切换**【win】[YogaDNS](https://yogadns.com)  但免费版只允许设置一个 dns，可能有用
 
 **DNS server**
 
@@ -516,7 +509,7 @@ not
 
 【安装版】【win】[内网通](http://www.51nwt.com/index.htm) 有广告但是没招，目前较为好用的软件
 
-mac 平台暂时没找到好用的
+linux 和 mac 平台暂时没找到好用的
 
 ### 2.12 手机助手
 
@@ -547,9 +540,7 @@ mac 平台暂时没找到好用的
 * 【全平台】[balenaEtcher](https://etcher.balena.io) 还可以烧录树莓派
 * 【win mac】[Raspberry Pi Imager](https://www.raspberrypi.com/for-home) 树莓派专用烧录到 SD 卡的工具
 
-not
-
-【win】[Rufus](https://rufus.ie/zh) 其实还不错，但是和 Ventoy 相比我更偏爱 Ventoy
+not【win】[Rufus](https://rufus.ie/zh) 其实还不错，但是和 Ventoy 相比我更偏爱 Ventoy
 
 ### 2.16 微软 buff
 

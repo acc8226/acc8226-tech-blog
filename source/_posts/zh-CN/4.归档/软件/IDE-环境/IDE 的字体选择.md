@@ -176,6 +176,10 @@ Thin、Light、**Regular**、Medium、Bold、Black
 
 [霞鹜文楷](https://github.com/lxgw/LxgwWenKai)是一款开源中文字体，名字取自于王勃的《滕王阁序》——“落霞与孤鹜齐飞，秋水共长天一色”。衍生自开源字体 Klee One，后者是一款日文的教科书字体，由日本著名字体厂商 FONTWORKS 打造，兼有仿宋和楷体的特点。霞鹜文楷基于 Klee One 补全了简繁常用字。
 
+### 霞鹜新晰黑
+
+霞鹜新晰黑：为清晰而生的免费商用黑体字库 基于IPAex黑体优化-[猫啃网](https://www.maoken.com/freefonts/8999.html)
+
 ### [OPPO Sans](https://www.coloros.com/article/A00000074)
 
 ### [MiSans](https://hyperos.mi.com/font/zh/download)
@@ -268,12 +272,13 @@ Google 中国提供的 Google Fonts 国内镜像
 
 * [Fontsource](https://fontsource.org)
 * [Free Fonts!](https://www.fontsquirrel.com) Legit Free & Quality » Font Squirrel
+* [猫啃网](https://www.maoken.com) 免费商用字体，广州市海锋网络科技有限公司
 
 ## VS code 字体我的预设配置
 
 "editor.fontFamily": "'SF Pro Text', 'HarmonyOS Sans SC Medium'"
+苹果电脑 "editor.fontFamily": "MonaspiceNe Nerd Font, PingFang SC, Menlo, monospace"
 
 ## 总结
 
-* Visual Studio Code 编辑器字体 - `'MonaspiceNe Nerd Font', monospace`
-* 微软终端 -`MonaspiceNe Nerd Font`
+微软终端 -`MonaspiceNe Nerd Font`

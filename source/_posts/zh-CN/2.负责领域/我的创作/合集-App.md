@@ -35,7 +35,7 @@ categories: 我的创作
 
 <!-- more -->
 
-关于价格：3000 以上预算我会无脑选 iPad，2000~3000 综合考虑买 iPad 或安卓平板，2000 以下只推荐购买安卓平板。
+关于价格：3000 以上预算我会无脑选 iPad，2200~3000 综合考虑买 iPad 或安卓平板，2200 以下只推荐购买安卓平板。
 
 ### 怎么挑选平板 Pad 应用
 
@@ -60,9 +60,7 @@ categories: 我的创作
 
 #### 安卓
 
-一般可以选择自带的手机管家。否则可以选择腾讯 或 360 其中一家
-
-官网收录：[腾讯手机管家](https://sj.qq.com/appdetail/com.tencent.qqpimsecure)
+一般可以选择自带的手机管家。否则可以选择[腾讯](https://sj.qq.com/appdetail/com.tencent.qqpimsecure) 或 360 其中一家
 
 #### iPhone
 
@@ -706,7 +704,7 @@ not
 
 通讯类
 
-* [Tim](https://sj.qq.com/appdetail/com.tencent.tim) 比 [QQ](https://sj.qq.com/appdetail/com.tencent.mobileqq) 小巧，[腾讯 QQ 办公简洁版 TIM 开启安卓 / iOS 4.0 公测](https://www.ithome.com/0/807/708.htm) 升级 NT 架构
+* [TIM](https://sj.qq.com/appdetail/com.tencent.tim) 比 [QQ](https://sj.qq.com/appdetail/com.tencent.mobileqq) 小巧，[腾讯 QQ 办公简洁版 TIM 开启安卓 / iOS 4.0 公测](https://www.ithome.com/0/807/708.htm) 升级 NT 架构
 * [微信](https://sj.qq.com/appdetail/com.tencent.mm)
 
 社交类 
@@ -742,7 +740,7 @@ not
 文档办公
 
 * [永中 Office](https://sj.qq.com/appdetail/com.yozo.office) 不足百兆且较为清爽
-* [PDF Reader-Hi Read](https://apkpure.com/cn/pdf-reader-pdf-viewer/pdf.reader.pdfviewer.pdfeditor) 有一定的 PDF 编辑器功能，体积小，简单又免费
+* [迅读 PDF](https://sj.qq.com/appdetail/com.xundupdf.reader)
 
 not
 
@@ -765,16 +763,17 @@ not
 * [企业微信](https://sj.qq.com/appdetail/com.tencent.wework)
 * [飞书](https://sj.qq.com/appdetail/com.ss.android.lark)
 * [钉钉](https://sj.qq.com/appdetail/com.alibaba.android.rimet)
+* ——————— ฅ՞• •՞ฅ ———————
 * [腾讯会议](https://sj.qq.com/appdetail/com.tencent.wemeet.app)
 * [Teams](https://sj.qq.com/appdetail/com.microsoft.teams)
 
 文档办公
 
 * [Microsoft Word](https://sj.qq.com/appdetail/com.microsoft.office.word)、[Excel](https://sj.qq.com/appdetail/com.microsoft.office.excel)、[PowerPoint](https://sj.qq.com/appdetail/com.microsoft.office.powerpoint)
-* [WPS Office](https://sj.qq.com/appdetail/cn.wps.moffice_eng) 可以做到 Office 文档和 PDF 通吃
+* [WPS Office](https://sj.qq.com/appdetail/cn.wps.moffice_eng) 可做到 Office 文档和 PDF 通吃
 * ——————— ฅ՞• •՞ฅ ———————
-* [UPDF](https://sj.qq.com/appdetail/com.superace.updf)
 * [Adobe Acrobat Reader](https://adobe-reader.en.uptodown.com/android/download) 老牌产品, 这款 App 是通用版, 平板也做了适配
+* [UPDF](https://sj.qq.com/appdetail/com.superace.updf)
 
 not [福昕 PDF 阅读器](https://sj.qq.com/appdetail/com.foxit.mobile.pdf.lite) 有广告
 
@@ -807,8 +806,6 @@ not [福昕 PDF 阅读器](https://sj.qq.com/appdetail/com.foxit.mobile.pdf.lite
 
 1. [天翼云盘](https://sj.qq.com/appdetail/com.cn21.ecloud) 除了 mac 端很久不更新，每天签到送容量，不限速和在线原画质是亮点
 1. [PikPak](https://mypikpak.com/zh-CN)【适配了安卓平板】免费用户总共 6GB，每天可以添加 3 个离线任务还是不错的
-* ——————— ฅ՞• •՞ฅ ———————
-1. [AListFlutter](https://github.com/jing332/AListFlutter) 网盘聚合工具
 
 备用
 
@@ -861,7 +858,7 @@ not
 
 ## 15. 桌面启动器
 
-* Apex Launcher 免费版就可以，手势操作便捷，且比较省内存
+Apex Launcher 免费版就可以，手势操作便捷，且比较省内存
 
 备用
 
@@ -1051,7 +1048,7 @@ never
 
 ## 29.2 制作扫描件
 
-[汉王扫描王](https://sj.qq.com/appdetail/com.hanvonscanner.app)
+[汉王扫描王](https://sj.qq.com/appdetail/com.hanvonscanner.app) 还能从图片中提取表格【限免中】
 
 备用 [白描](https://sj.qq.com/appdetail/com.uzero.baimiao) 可以免费制作身份证正反面 A4 扫描件，免费版有每日次数限制
 
@@ -1351,7 +1348,7 @@ GitHub App [apkmirror 源](https://www.apkmirror.com/apk/github/) | [apk.gold](h
 
 ## 62 文件互传
 
-[互传](https://sj.qq.com/appdetail/com.vivo.easyshare) vivo 出品必属精品
+[互传](https://sj.qq.com/appdetail/com.vivo.easyshare) vivo 出品，偶尔一用
 
 ## 63 外卖
 
@@ -1381,12 +1378,19 @@ Bean's Quest 算是 1 代 和 Bean Dreams 算是 2 代
 
 手机可以选择开启 VoLTE 功能。据说这样可以通话上网两不耽误
 
-## 每年必装一次系列
+## 其他记录
+
+### 每年必装一次系列
 
 查看 [QQ 音乐](https://sj.qq.com/appdetail/com.tencent.qqmusic) 年度歌单
 查看 [网易云音乐](https://sj.qq.com/appdetail/com.netease.cloudmusic) 年度歌单
 
-## 其他记录
+### 备用手机必备 app
+
+Aegis ｜ Bitwarden ｜ 倒数日 ｜ 番茄免费小说 ｜FBReader ｜
+LX Music | 米家 ｜ PikPak ｜清浊 ｜Salt Player ｜
+天翼云盘 ｜ TIM ｜ VLC ｜西瓜视频 ｜学堂在线 ｜
+讯飞有声 |
 
 ### 一些优秀的应用厂商
 
