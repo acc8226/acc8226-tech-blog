@@ -117,14 +117,17 @@ Bitwarden【已适配安卓平板】[Github 版](https://github.com/bitwarden/an
 
 #### 安卓
 
-[FBReader](https://fbreader.org/android#download) 一款本地电子书阅读器，但是支持 pdf 需要付费且我也用不到
+* [微信读书](https://sj.qq.com/appdetail/com.tencent.weread) 书库全，但付费书较多
+* [番茄免费小说](https://sj.qq.com/appdetail/com.dragon.read) 书库较全，免费用户会遇到插播广告，有的想看的书可以免费离线下载，很适合离线用，**太吃存储空间**
+* [豆瓣阅读](https://sj.qq.com/appdetail/com.douban.book.reader) 毕竟适配了平板
+* ——————— ฅ՞• •՞ฅ ———————
+* 【本地】[FBReader](https://fbreader.org/android#download) 一款本地电子书阅读器，但是支持 pdf 需要付费估计体验也一般
 
 可选
 
 * [阅读](https://github.com/gedoor/legado) + 【本地+在线用】[tts-server](https://jing332.lanzn.com/b09jpjd2d) 密码1234 
 * ——————— ฅ՞• •՞ฅ ———————
-* [微信读书](https://sj.qq.com/appdetail/com.tencent.weread) 正版在线用，除了现在很多内容收费了
-* [番茄免费小说](https://sj.qq.com/appdetail/com.dragon.read) 有的想看的书可以免费离线下载，很适合离线用，**太吃存储空间**
+* [番茄免费小说](https://sj.qq.com/appdetail/com.dragon.read) 
 * [京东读书](https://sj.qq.com/appdetail/com.jd.app.reader) 送了影响力 和 乌合之众几本书，可以看一段时间
 * [网易蜗牛阅读](https://sj.qq.com/appdetail/com.netease.snailread) 每天可以免费看 1 个小时付费书籍
 
@@ -141,11 +144,14 @@ not
 
 #### 安卓平板
 
-* [番茄免费小说](https://sj.qq.com/appdetail/com.dragon.read)
-* [微信读书](https://sj.qq.com/appdetail/com.tencent.weread)
-* [FBReader](https://fbreader.org/android#download)
+* [微信读书](https://sj.qq.com/appdetail/com.tencent.weread) 书库全，但付费书较多
+* [番茄免费小说](https://sj.qq.com/appdetail/com.dragon.read) 书库较全，免费用户会遇到插播广告
+* [豆瓣阅读](https://sj.qq.com/appdetail/com.douban.book.reader) 毕竟适配了平板
+
+备用
+
 * [Kindle 阅读](https://sj.qq.com/appdetail/com.amazon.kindlefc) 可惜不再更新了
-* [豆瓣阅读](https://sj.qq.com/appdetail/com.douban.book.reader)
+* [FBReader](https://fbreader.org/android#download)
 * [七猫免费小说](https://sj.qq.com/appdetail/com.kmxs.reader)
 
 #### iPhone
@@ -204,10 +210,11 @@ not
 #### 安卓平板
 
 * 在线 [QQ 音乐 HD](https://sj.qq.com/appdetail/com.tencent.qqmusicpad)
-* 在线 [网易云音乐](https://sj.qq.com/appdetail/com.netease.cloudmusic) 通用版，已适配平板，日常有开屏广告
 * 在线 [lx-Music 洛雪音乐助手](https://github.com/lyswhut/lx-music-mobile/releases)
-* 在线 [棉花音乐](https://dkit.caij.xyz/puremusic)
 * 本地 [椒盐音乐 Salt Player](https://www.coolapk.com/apk/284064)
+* ——————— ฅ՞• •՞ฅ ———————
+* 在线 [网易云音乐](https://sj.qq.com/appdetail/com.netease.cloudmusic) 通用版，已适配平板，不仅仅有开屏广告
+* 在线 [棉花音乐](https://dkit.caij.xyz/puremusic) 有时候会要求重新登录
 
 not 
 
@@ -232,14 +239,14 @@ not [QQ 音乐 HD](https://sj.qq.com/appdetail/com.tencent.qqmusicpad) 首先更
 
 #### 安卓
 
+1. [帆书（原樊登读书）](https://sj.qq.com/appdetail/io.dushu.fandengreader) 稍有限免资源，但旧手机有点卡
 1. [得到](https://sj.qq.com/appdetail/com.luojilab.player) 免费资源还行，除了体积大
 1. [微信听书](https://sj.qq.com/appdetail/com.tencent.wehear) 无广告，活动玩法多，可以换取收听时长
-1. [帆书（原樊登读书）](https://sj.qq.com/appdetail/io.dushu.fandengreader) 稍有限免资源，但旧手机有点卡
 1. 【本地】[讯飞有声](https://sj.qq.com/appdetail/com.iflytek.readassistant) 可播放 pdf、doc、mobi 格式的文本，是目前的一个本地解决方案，非会员有 2 小时时长限制
 
 备用
 
-* [云听](https://sj.qq.com/appdetail/com.shinyv.cnr) 央视的资源还是很丰富的
+* [云听](https://sj.qq.com/appdetail/com.shinyv.cnr) 央视的资源还是很丰富，有广告
 * [番茄畅听](https://sj.qq.com/appdetail/com.xs.fm) 免费资源较多，和番茄免费小说部分功能重合了
 * [喜马拉雅](https://sj.qq.com/appdetail/com.ximalaya.ting.android) 有些广告
 * [蜻蜓 FM](https://sj.qq.com/appdetail/fm.qingting.qtradio) 有些广告
@@ -304,7 +311,7 @@ not
 #### 安卓平板
 
 * [要知](https://sj.qq.com/appdetail/com.ruanmei.yaozhi) 暂用它听新闻用，目前定制项不太多，以后我可能会换成 ai 收集 + 听新闻了
-* 我从 vivo pad 导出的原子阅读 简直完美
+* 我从 vivo pad 导出的原子阅读 简直完美【TODO】
 
 #### iPhone
 
@@ -369,7 +376,10 @@ not
 
 ### 安卓平板
 
-读取网盘资源 [网易爆米花](https://bmh.163.com)
+智能媒体库（还能当播放器用）
+
+* [VidHub](https://sj.qq.com/appdetail/com.oumi.utility.media.hub) 目前无需登录，好评
+* [网易爆米花](https://bmh.163.com) 需登录后才可使用
 
 短视频
 
@@ -379,14 +389,18 @@ not
 中长视频
 
 * [西瓜视频](https://sj.qq.com/appdetail/com.ss.android.article.video)【已适配安卓平板】
+* [哔哩哔哩 HD](https://sj.qq.com/appdetail/tv.danmaku.bilibilihd)
+* [央视影音 HD](https://sj.qq.com/appdetail/cn.cntvhd)
 * [央视频](https://sj.qq.com/appdetail/com.cctv.yangshipin.app.androidp) 【已适配安卓平板】部分平板有效
+* [乐视视频 Pad](https://sj.qq.com/appdetail/com.letv.android.client.pad) 无广告
+* ——————— ฅ՞• •՞ฅ ———————
 * [腾讯视频](https://sj.qq.com/appdetail/com.tencent.qqlive)【已适配安卓平板】
 * [优酷视频](https://sj.qq.com/appdetail/com.youku.phone)【已适配安卓平板】
-* [爱奇艺 PAD](https://sj.qq.com/appdetail/com.qiyi.video.pad) | [芒果TV HD](https://sj.qq.com/appdetail/com.imgo.pad) | [哔哩哔哩 HD](https://sj.qq.com/appdetail/tv.danmaku.bilibilihd) | [搜狐视频 Pad](https://sj.qq.com/appdetail/com.sohu.tv) | [乐视视频 Pad](https://sj.qq.com/appdetail/com.letv.android.client.pad) | [央视影音 HD](https://sj.qq.com/appdetail/cn.cntvhd)
+* [爱奇艺 PAD](https://sj.qq.com/appdetail/com.qiyi.video.pad) | [芒果TV HD](https://sj.qq.com/appdetail/com.imgo.pad) | [搜狐视频 Pad](https://sj.qq.com/appdetail/com.sohu.tv) | 
 * ——————— ฅ՞• •՞ฅ ———————
 * YouTube
 
-本地 VLC
+本地 [VLC](https://www.videolan.org/vlc/download-android.html) [中科大源](https://mirrors.ustc.edu.cn/videolan-ftp/vlc-android/last)
 
 ### iPhone
 
