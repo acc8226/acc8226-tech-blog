@@ -514,7 +514,7 @@ not [ES 文件管理器](http://www.estrongs.com) 通用版【已适配平板】
 
 ### 安卓 & iPhone
 
-1. [高德地图](https://sj.qq.com/appdetail/com.autonavi.minimap) ｜ [百度地图](https://sj.qq.com/appdetail/com.baidu.BaiduMap) ｜ 腾讯地图【小程序】 清爽不解释
+1. [高德地图](https://sj.qq.com/appdetail/com.autonavi.minimap) ｜ [百度地图](https://sj.qq.com/appdetail/com.baidu.BaiduMap) ｜ 腾讯地图【小程序】 比 app 更清爽
 1. 滴滴出行 [app](https://sj.qq.com/appdetail/com.sdu.didi.psnger) /【小程序】 加班、搬家、货运搬家用
 1. 腾讯乘车码【小程序】 通用性较强
 1. 乐行永州【小程序】 只适合永州地区公交
@@ -613,7 +613,7 @@ not
 * TEDiSUB 看 TED 视频用
 * 新概念英语 付费的离线版本，当时我好像花了 6 元钱
 
-## 7 生活类
+## 7 生活优惠
 
 ### 安卓
 
@@ -623,10 +623,11 @@ not
 
 备用
 
-* 保利电影 [app](https://sj.qq.com/appdetail/com.zhonglan.polyapp)/【小程序】
-* 卢米埃影城 [App](https://sj.qq.com/appdetail/com.lumiai.XXXXX)/【小程序】 毕竟办过会员卡，不过每年都需要 10 元年费，目前我还有 31 的余额，但想起我浪费了 1 张还是 2 张兑换票没用可惜过期了，心疼
 * [最会买](https://sj.qq.com/appdetail/com.ruanmei.zuihuimai)
 * [什么值得买](https://sj.qq.com/appdetail/com.smzdm.client.android) 颜值很高且存活了很多年
+* ——————— ฅ՞• •՞ฅ ———————
+* 保利电影 [app](https://sj.qq.com/appdetail/com.zhonglan.polyapp)/【小程序】
+* 卢米埃影城 [App](https://sj.qq.com/appdetail/com.lumiai.XXXXX)/【小程序】 毕竟办过会员卡，不过每年都需要 10 元年费，目前我还有 31 的余额，但想起我浪费了 1 张还是 2 张兑换票没用可惜过期了，心疼
 
 or
 
@@ -698,7 +699,7 @@ not
 
 [高铁管家](https://sj.qq.com/appdetail/com.gtgj.view) 部分平板有效
 
-## 9 社交通讯类
+## 9 社交通讯
 
 **注意：不要轻信陌生人的任何话术**
 
@@ -870,17 +871,13 @@ not
 * ——————— ฅ՞• •՞ฅ ———————
 * [国际服游戏下载-GamesToday](https://www.hotplaygames.com) 不需魔法
 
-## 15. 桌面启动器
+## 15 桌面启动器
 
 Apex Launcher 免费版就可以，手势操作便捷，且比较省内存
 
-备用
+备用 [微软桌面](https://apkpure.com/cn/microsoft-launcher/com.microsoft.launcher/download) 不喜欢系统桌面可以试试
 
-* [微软桌面](https://apkpure.com/cn/microsoft-launcher/com.microsoft.launcher/download) 不喜欢系统桌面可以试试
-
-not
-
-* Nova Launcher 连基础的手势操作还需要 pro 付费，差评
+not Nova Launcher 连基础的手势操作还需要 pro 付费，差评
 
 ## 16 浏览器【常用】
 
@@ -894,11 +891,13 @@ not
 * Firefox 火狐浏览器 [应用宝版](https://sj.qq.com/appdetail/org.mozilla.firefox) | [国外商店版](https://firefox.en.uptodown.com/android)
 * [微软 Edge](https://sj.qq.com/appdetail/com.microsoft.emmx) 大声朗读功能很强大
 
-备用 [夸克](https://sj.qq.com/appdetail/com.quark.browser) 越来越臃肿了，比 UC 稍好
+备用
+
+* [夸克](https://sj.qq.com/appdetail/com.quark.browser) 越来越臃肿了，功能多，比 UC 稍好
+* [Alook](https://sj.qq.com/appdetail/alook.browser) 有点臃肿，但是功能性还行，界面也有点差
 
 not
 
-* [Alook](https://sj.qq.com/appdetail/alook.browser) 有点臃肿，但是功能性还行，界面也有点差
 * [360 手机浏览器](https://mse.360.cn) 广告太多
 * [Google Chrome](https://sj.qq.com/appdetail/com.android.chrome) 国内不好用
 * [UC 标准版](https://sj.qq.com/appdetail/com.UCMobile) 太臃肿了
@@ -919,13 +918,13 @@ not
 
 ### 安卓平板
 
-* [Edge](https://sj.qq.com/appdetail/com.microsoft.emmx)
-* [火狐浏览器](https://sj.qq.com/appdetail/org.mozilla.firefox)
-* [夸克](https://sj.qq.com/appdetail/com.quark.browser) 通用版可能对部分平板无效
+* [Edge](https://sj.qq.com/appdetail/com.microsoft.emmx) 对电脑网址解析极好
+* [火狐浏览器](https://sj.qq.com/appdetail/org.mozilla.firefox) 颜值较高
+* [Alook](https://sj.qq.com/appdetail/alook.browser)
 
 备用 
 
-* [Alook](https://sj.qq.com/appdetail/alook.browser)
+* [夸克](https://sj.qq.com/appdetail/com.quark.browser) 通用版可能对部分平板无效
 * UC 浏览器国际版 部分平板有效
 
 not [Chrome](https://sj.qq.com/appdetail/com.android.chrome) 不太好用
@@ -985,11 +984,11 @@ not
 
 [AIDA64 for Android](https://www.aida64.com/downloads/latesta64droid)
 
-## 21. 局域网通讯
+## 21 局域网通讯
 
 [LocalSend](https://localsend.org) ｜ [LANDrop](https://landrop.app)
 
-## 22. 投资理财类
+## 22 投资理财类
 
 * [挖财宝](https://sj.qq.com/appdetail/com.hangzhoucaimi.financial) 理财需谨慎
 * [天天基金](https://sj.qq.com/appdetail/com.eastmoney.android.fund) 东方财富旗下
@@ -1056,11 +1055,11 @@ never
 
 ## 29 扫描
 
-## 29.1 图片转文字
+### 29.1 图片转文字
 
 [极度扫描](https://jidusm.wlhex.com) 跨平台 OCR 图片转文字 表格识别翻译，免费用户也能用
 
-## 29.2 制作扫描件
+### 29.2 制作扫描件
 
 [汉王扫描王](https://sj.qq.com/appdetail/com.hanvonscanner.app) 还能从图片中提取表格【限免中】
 
@@ -1097,7 +1096,7 @@ APTV
 
 ## 33 投屏
 
-[AlookDLNA](https://alookweb.com/AlookDLNA.apk) 可以投屏到 电视 或者 安卓手机
+[AlookDLNA](https://alookweb.com/AlookDLNA.apk) 可以作为投屏软件的接收端
 
 ## 34 设备管理
 
@@ -1261,7 +1260,7 @@ not [Simplenote](https://simplenote.com/) 极简，无限同步，不限设备�
 
 备用 [作业帮](https://sj.qq.com/appdetail/com.baidu.homework) 适合中小学生
 
-## 46 清理
+## 46 垃圾清理
 
 ### 安卓 & 安卓平板
 
@@ -1310,15 +1309,15 @@ not
 
 not 上海电银银乾付 已跑路，总之 pos 除非正常交易否则慎用，随意扣款找谁说理去，且一定要当天找他们
 
-## 54. 充值缴费
+## 54 充值缴费
 
 [网上国网](https://sj.qq.com/appdetail/com.sgcc.wsgw.cn) 缴电费。当然一些银行网站、app 和 微信支付宝也能做到
 
-## 55. 地震预警
+## 55 地震预警
 
 华为手机可以通过“设置-安全-应急预警通知-地震预警”打开功能；小米手机则可以通过“手机管家-家人关怀-地震预警”选择开启功能；OPPO / 一加 / 真我手机可以通过“设定-安全-SOS 紧急联络-自然灾害警报-地震警报开启”入口访问相应功能；苹果 / 三星等手机则可以下载“[地震预警](https://sj.qq.com/appdetail/com.huania.earthquakewarning)”App 或通过“中国地震台网”微信小程序启用相应功能。
 
-## 56. 脑图
+## 56 脑图
 
 ### 通用
 
@@ -1382,13 +1381,21 @@ Bean's Quest 算是 1 代 和 Bean Dreams 算是 2 代
 1. [夸克](https://sj.qq.com/appdetail/com.quark.browser) 倍速播放视频、ai 解题、网盘资料等功能一网打尽
 1. [豆包爱学](https://sj.qq.com/appdetail/com.aitutor.hippo) 同样是解题，对于时政和常识有奇效
 
-## 其他
+### 薅羊毛
+
+拼多多的百亿补贴
+
+### 办公文档
+
+OPPO 自带的文档 app 很好用
+
+## 其他 App
 
 京通 自从北京通 app 下架后，然后有了它之后[北京公积金](https://sj.qq.com/appdetail/cn.gov.bjgjj.gjjapp) app 也几乎不用装，一般我也用网站，想不到提取公积金特简单，简单申请当日到账
 
 ~~北京健康宝 疫情已落幕~~
 
-## 手机使用 tips
+## 手机使用技巧
 
 手机可以选择开启 VoLTE 功能。据说这样可以通话上网两不耽误
 

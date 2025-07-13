@@ -24,19 +24,19 @@ categories: 我的创作
 #### 1.0.1 安全类
 
 * 【win】[360 安全卫士极速版](https://weishi.360.cn) | [火绒安全](https://www.huorong.cn)
-* 【mac】[腾讯柠檬清理](https://lemon.qq.com) 原腾讯电脑管家 for mac
+* 【mac】[腾讯柠檬清理](https://lemon.qq.com) ｜ [360 安全卫士 for mac](https://www.360.cn/mac/index.html)
 
 #### 1.0.2 浏览器
 
-* 【win 绿色版 & mac】[Catsxp 猫眼浏览器](https://www.catsxp.com) 鼠标悬停切换标签功能很好用 |【win 绿色版】[百分浏览器](http://www.centbrowser.cn)
+* 【win 绿色版 & mac】[Catsxp 猫眼浏览器](https://www.catsxp.com) 鼠标悬停切换标签功能很好用，但是默认会自动更新我建议取消
 * 【linux】[360 安全浏览器](https://browser.360.net/gc/index.html)<!-- more -->
 
 关于浏览器的密码自动填充：三巨头应该都有自动填充的功能。否则我会用 Bitwarden，其次有人推荐 [KeePassXC](https://keepassxc.org/download)。
 
 #### 1.0.3 输入法
 
-* 【win】自带的微软输入法
-* 【mac】自带或[微信输入法](https://z.weixin.qq.com)
+* 【win】自带的微软输入法或[微信输入法](https://z.weixin.qq.com)
+* 【mac】自带的苹果输入法或[微信输入法](https://z.weixin.qq.com)
 * 【linux】自带或[搜狗输入法](https://shurufa.sogou.com/linux)
 
 ### 1.1 工具类
@@ -59,7 +59,7 @@ categories: 我的创作
 
 #### 1.1.3【常用】截图
 
-* 【win 绿色版 & mac】[PixPin](https://pixpinapp.com) 不付费也能使用 OCR 和长截图功能 |【win 开源绿色版】[ShareX](https://getsharex.com)
+* 【win 绿色版 & mac】[PixPin](https://pixpinapp.com) 不付费也能使用 OCR 和长截图功能 ｜ [小旺截图](https://www.xiaowang.com)
 * liunx 系统自带
 
 #### 1.1.4【常用】护眼
@@ -78,7 +78,7 @@ categories: 我的创作
 
 #### 1.1.5【常用】下载
 
-**windows 和 mac 平台**
+**windows 平台**
 
 * [EagleGet](https://www.eagleget.org) 免费开源，支持视频嗅探
 * [NDM-Neat Download Manager](https://www.neatdownloadmanager.com/index.php/en) 体积小功能强，不支持 BT 磁力。[搭配 crx 插件](https://www.crxsoso.com/search?keyword=NeatDownloadManager%20&store=chrome) 支持在线网页视频下载
@@ -86,8 +86,8 @@ categories: 我的创作
 
 **mac 平台**
 
-1. 【全平台】[Motrix 绿色版](https://motrix.app/zh-CN) | [下载页](https://motrix.app/zh-CN/download)  颜值高，并支持下载 HTTP、FTP、BT、磁力链接。Github 资源良好支持
-1. 【win mac】[NDM-Neat Download Manager](https://www.neatdownloadmanager.com/index.php/en) 
+1. [Motrix](https://motrix.app/zh-CN) | [下载页](https://motrix.app/zh-CN/download)  颜值高，并支持下载 HTTP、FTP、BT、磁力链接。Github 资源良好支持
+1. [NDM-Neat Download Manager](https://www.neatdownloadmanager.com/index.php/en) 
 1. mac 版迅雷其实也不错，不过必须去官网下载才是完整版
 
 **linux 平台**
@@ -99,13 +99,11 @@ categories: 我的创作
 
 **windows 和 mac 平台**
 
-【全平台】[坚果云](https://www.jianguo1.com/s/downloads) 用于存少量文档 + 【win mac】[阿里云盘](https://www.aliyundrive.com/drive) 主打大容量 + 同步功能，高峰时段限速但不严重
-
-网盘聚合：[猫头鹰文件](https://skyjos.cn/owlfiles/index.html) | 网易爆米花🍿
+天翼云盘
 
 **linux 平台**
 
-【全平台】[坚果云](https://www.jianguoyun.com/s/downloads) + [阿里云盘网页版](https://www.alipan.com)
+天翼云盘不支持，其他的则不好用
 
 #### 1.1.7 看图
 
@@ -120,19 +118,27 @@ categories: 我的创作
 
 #### 1.1.9 密码管理
 
-【全平台】【[苹果商店版](https://apps.apple.com/cn/app/bitwarden/id1352778147?mt=12)】[BitWarden](https://bitwarden.com) 一款全平台的密码管理软件。轻度使用安装浏览器插件即可，重度使用可以安装客户端
+【全平台】【[苹果商店版](https://apps.apple.com/cn/app/bitwarden/id1352778147?mt=12)】[BitWarden](https://bitwarden.com) 一款全平台的密码管理软件。轻度使用那么浏览器插件即可
+
+#### 1.1.10 文件管理
+
+【win mac】[猫头鹰文件](https://skyjos.cn/owlfiles/index.html)
 
 ### 1.2 办公类
 
 #### 1.2.1【常用】Office
 
-一般品牌机会赠送[微软 Office](https://www.microsoftstore.com.cn/software/office) ｜ [Word](https://apps.apple.com/cn/app/microsoft-word/id462054704?mt=12)、[Excel](https://apps.apple.com/cn/app/microsoft-excel/id462058435?mt=12)、[PowerPoint](https://apps.apple.com/cn/app/microsoft-powerpoint/id462062816?mt=12)
+一般品牌机会赠送[微软 Office](https://www.microsoftstore.com.cn/software/office) ｜ [Word for mac](https://apps.apple.com/cn/app/microsoft-word/id462054704?mt=12)、[Excel for mac](https://apps.apple.com/cn/app/microsoft-excel/id462058435?mt=12)、[PowerPoint for mac](https://apps.apple.com/cn/app/microsoft-powerpoint/id462062816?mt=12)
 
-否则推荐【全平台】【[mac 版](https://apps.apple.com/cn/app/wps-office-ai%E6%99%BA%E8%83%BD%E5%8A%9E%E5%85%AC%E5%8A%A9%E6%89%8B/id1443749478?mt=12)】[WPS](https://www.wps.cn) 需登录才能解锁编辑太恶心，好在 windows 可以使用 [WPS Office 教育考试专用版](https://ncre.neea.edu.cn/html1/report/1507/861-1.htm)
+否则一般会用【全平台 [WPS](https://www.wps.cn) 需登录才能解锁编辑太恶心。好在 windows 可以使用 [WPS Office 教育考试专用版](https://ncre.neea.edu.cn/html1/report/1507/861-1.htm)
 
-在线平台我推荐【[mac 版](https://apps.apple.com/cn/app/%E8%85%BE%E8%AE%AF%E6%96%87%E6%A1%A3/id1370780836)】[腾讯文档](https://docs.qq.com)和[金山文档](https://www.kdocs.cn) 适合文档分享。但千万记得加水印和设置只读访问权限，防止资料轻易泄漏
+**Web 平台**
 
-linux 除了 WPS 和 LibreOffice，可以安装 [WinApps for linux](https://nowsci.com/winapps) | [github 项目地址](https://github.com/Fmstrat/winapps)
+我推荐【[mac 版](https://apps.apple.com/cn/app/%E8%85%BE%E8%AE%AF%E6%96%87%E6%A1%A3/id1370780836)】[腾讯文档](https://docs.qq.com)和[金山文档](https://www.kdocs.cn) 适合文档分享。但千万记得加水印和设置只读访问权限，防止资料泄漏
+
+**linux 平台**
+
+除了 WPS 和 LibreOffice，可以安装 [WinApps for linux](https://nowsci.com/winapps) | [github 项目地址](https://github.com/Fmstrat/winapps)
 
 官网收录：【win】[永中 Office](https://www.yozosoft.com) | 【全平台】[LibreOffice](https://zh-cn.libreoffice.org/download/libreoffice)
 
@@ -189,34 +195,23 @@ not
 
 ### 1.3【常用】音频类
 
-**windows 平台**
-
-本地播放：【win 绿色版】[MusicPlayer2](https://github.com/zhongyang219/MusicPlayer2)
+**windows 和 mac 平台**
 
 在线播放：
 
-1. 【win [mac](https://apps.apple.com/cn/app/qq%E9%9F%B3%E4%B9%90-%E5%90%AC%E6%88%91%E6%83%B3%E5%90%AC/id595615424?mt=12)】[QQ 音乐](https://y.qq.com/download/index.html)
-1. 【全平台】lx-music-desktop [项目主页](https://github.com/lyswhut/lx-music-desktop) | [发行版](https://github.com/lyswhut/lx-music-desktop/releases) 需自寻音乐源
+1. [QQ 音乐](https://y.qq.com/download/index.html) | [网易云音乐](https://music.163.com/#/download) | [汽水音乐](https://www.qishui.com)
+1. lx-music-desktop [项目主页](https://github.com/lyswhut/lx-music-desktop) | [发行版](https://github.com/lyswhut/lx-music-desktop/releases) 需自寻音乐源
+1. 听书用[喜马拉雅](https://www.ximalaya.com)
 
-备选
-
-* 有梯子可能会喜欢 【全平台】[Spotify](https://www.spotify.com) 曲库很全，非会员稍有限制
-* 有本地音乐库存用户 【win】普听音乐。在阿里云盘的加持下很好用，用于打造自己的曲库
-
-**mac 平台**
-
-本地播放：虚位以待
-
-not【mac linux】[foobar2000](https://www.foobar2000.org) 缺少歌词搜索，且差很多意思
-
-在线播放：QQ 音乐 | 网易云音乐
+本地播放：【win 绿色版】[MusicPlayer2](https://github.com/zhongyang219/MusicPlayer2)
 
 **linux 平台**
 
 本地播放：平时我也基本不看歌词。比如自带的 kde 组件 [elisa](https://apps.kde.org/zh-cn/elisa)
+
 在线播放：【全平台】[lx-music 洛雪音乐桌面版](https://github.com/lyswhut/lx-music-desktop) |【全平台】[QQ 音乐](https://y.qq.com/download/index.html) | [YesPlayMusic](https://github.com/qier222/YesPlayMusic) 高颜值的第三方网易云播放器
 
-官网收录：【win [mac](https://apps.apple.com/cn/app/%E6%B1%BD%E6%B0%B4%E9%9F%B3%E4%B9%90-%E6%8A%96%E9%9F%B3%E9%9F%B3%E4%B9%90%E7%89%88/id1605585211)】[汽水音乐](https://www.qishui.com) |【win】[方格音乐](http://morin.vin) |【win mac】[iTunes](https://www.apple.com.cn/itunes) |【全平台】[网易云音乐](https://music.163.com/#/download)
+官网收录：【win [mac](https://apps.apple.com/cn/app/%E6%B1%BD%E6%B0%B4%E9%9F%B3%E4%B9%90-%E6%8A%96%E9%9F%B3%E9%9F%B3%E4%B9%90%E7%89%88/id1605585211)】[汽水音乐](https://www.qishui.com) |【win】[方格音乐](http://morin.vin) |【win mac】[iTunes](https://www.apple.com.cn/itunes)
 
 ### 1.4【常用】视频类
 
@@ -224,13 +219,15 @@ not【mac linux】[foobar2000](https://www.foobar2000.org) 缺少歌词搜索，
 
 1. 本地播放：【全平台 绿色版】[VLC](https://www.videolan.org) [Chocolatey](https://community.chocolatey.org/packages/vlc#install) 源 |【win 官方安装版】PotPlayer [官网](https://potplayer.tv/?lang=zh_CN) | [绿色版](https://potplayer.org) 再搭配 HEVC 解码器 [LAVFilters](https://github.com/Nevcairiel/LAVFilters/releases)
 1. 在线平台：【win】[荐片播放器](https://www.jianpian6.co) 可观看最新电影 +【win mac】[哔哩哔哩客户端](https://app.bilibili.com)
+1. 电视直播 vlc 和 potplayer 都能打
+1. 视频刮削+播放器 网易爆米花🍿 用来看片
 
 **mac 平台**
 
 1. 本地播放【全平台 绿色版】[VLC](https://www.videolan.org) |【mac】[INNA](https://iina.io)
 1. 在线平台【mac win】[哔哩哔哩客户端](https://app.bilibili.com) 其实本地播放也很强 |【mac win】优酷 看视频限时蓝光无广告
 1. 电视直播【mac】[APTV](https://apps.apple.com/cn/app/aptv/id1630403500)
-1. 视频刮削【mac】[网易 Filmly](https://apps.apple.com/cn/app/%E7%BD%91%E6%98%93filmly-%E6%99%BA%E8%83%BD%E5%AA%92%E4%BD%93%E5%BA%93-%E5%85%A8%E8%83%BD%E6%92%AD%E6%94%BE%E5%99%A8/id6553989480?mt=12) | Infuse | Vidhub
+1. 视频刮削+播放器 网易爆米花 | Infuse | Vidhub
 
 **linux 平台**
 
@@ -489,21 +486,21 @@ or
 * 【win 绿色版】[HiBitUninstaller](https://www.hibitsoft.ir/Uninstaller.html) 体积小巧+卸载功能强大
 * 【绿色版】[RevoUninstaller 免费版](https://www.revouninstaller.com/products/revo-uninstaller-free) 界面有点旧
 
-not【win mac】[CCleaner](https://www.ccleaner.com/zh-cn/ccleaner) 只有安装版差评
+not [CCleaner](https://www.ccleaner.com/zh-cn/ccleaner) 只有安装版差评
 
 **mac 平台**
 
-mac 的腾讯柠檬清理有卸载功能
+mac 的腾讯柠檬清理就有卸载功能
 
 not
 
-* 【mac linux】[CCleaner for mac](https://www.ccleaner.com/zh-cn/ccleaner-mac) 版目前免费版功能有限
+* 【mac】[CCleaner for mac](https://www.ccleaner.com/zh-cn/ccleaner-mac) 版目前免费版功能有限
 * 【mac】[CleanMyMac X](https://www.cleanmymac.cn) 付费
-* 【mac】[App Cleaner & Uninstaller](https://nektony.com/mac-app-cleaner) 付费
+* 【mac】[App Cleaner & Uninstaller](https://nektony.com/mac-app-cleaner) 让试用 2 天，不付费几乎用不了，极差
 
 **linux 平台**
 
-一些发行版本带了清理功能
+一些发行版本已自带带清理功能
 
 ### 2.11 内网通讯
 

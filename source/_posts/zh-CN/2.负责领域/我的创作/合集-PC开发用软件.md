@@ -102,7 +102,7 @@ maybe
 * 【win 免费】[HeidiSQL](https://www.heidisql.com/download.php?download=portable-64) mysql 免费客户端
 * 【win mac】[Beekeeper Studio](https://github.com/beekeeper-studio/beekeeper-studio/releases) 社区版功能一般，除非付费版
 * 【全平台】[Studio 3T](https://studio3t.com/download) for MongoDB
-* 【mac】[Sequel Pro](https://sequelpro.com/)
+* 【mac】[Sequel Pro](https://sequelpro.com)
 
 not
 
@@ -116,7 +116,7 @@ not
 
 ## 4【常用】Editor 编辑器
 
-【全平台】[VS Code](https://code.visualstudio.com) windows 推荐使用**安装版**而非便携版，这样能及时获得更新。[win 7 最后一个支持版](https://code.visualstudio.com/updates/v1_70)
+【全平台】[Visual Studio Code](https://code.visualstudio.com) windows 推荐使用**安装版**而非便携版，这样能及时获得更新。[win 7 最后一个支持版](https://code.visualstudio.com/updates/v1_70)
 
 vscode 插件推荐：[markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
 
