@@ -66,7 +66,6 @@ python3 -m venv myenv
 source myenv/bin/activate
 deactivate
 
-
 pip install pipenv
 
 或

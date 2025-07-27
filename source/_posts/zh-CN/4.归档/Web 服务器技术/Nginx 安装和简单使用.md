@@ -23,7 +23,7 @@ categories: Web 服务器技术
 `yum install nginx -y`
 
 **ubuntu 下 apt-get 安装**
-`apt-get install nginx`
+`apt install nginx`
 
 **使用 docker 安装 nginx**
 请参考教程: [Docker 安装 Nginx | 菜鸟教程](https://www.runoob.com/docker/docker-install-nginx.html)
@@ -74,8 +74,8 @@ brew install nginx
 mac 下一些重要文件的路径
 
 核心安装目录 `/usr/local/Cellar/nginx/x.y.z`
-启动文件在该目录的bin下面
-欢迎页面在html下面
+启动文件在该目录的 bin 下面
+欢迎页面在 html 下面
 
 Docroot (服务器默认路径）: `/usr/local/var/www`
 
@@ -185,7 +185,7 @@ server {
 
 .crt 文件：是证书文件，crt是 **pem** 文件的扩展名。
 .key 文件：证书的私钥文件（申请证书时如果没有选择自动创建 CSR，则没有该文件）。
-> 友情提示： .pem扩展名的证书文件采用 Base64-encoded 的PEM 格式文本文件，可根据需要修改扩展名。
+> 友情提示： .pem扩展名的证书文件采用 Base64-encoded 的 PEM 格式文本文件，可根据需要修改扩展名。
 
 1\. 放置 crt 证书文件和 key 私钥文件并打开 Nginx 安装目录下 conf 目录中的 nginx.conf 文件. 将其修改为 (以下属性中 **ssl 开头的属性与证书配置有直接关系**，其它属性请结合自己的实际情况复制或调整) :
 
@@ -237,10 +237,10 @@ server {
 豆包 ai 说这货很灵活，举例：
 
 ```conf
- location / {
+location / {
      alias /path/to/dir/of/docs;
      index index.html index.htm;
- }
+}
 ```
 
 ## 记录

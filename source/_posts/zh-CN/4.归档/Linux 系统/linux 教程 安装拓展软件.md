@@ -141,7 +141,6 @@ cd /yourpath/   #(yourpath替换为您文件路径)
 ```
 
 **Nginx 反向代理示例**
-Nginx 反向代理需添加：proxy_set_header X-Forwarded-Proto $scheme;
 
 ```conf
 server {

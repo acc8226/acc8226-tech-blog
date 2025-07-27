@@ -113,7 +113,7 @@ server {
     location / {
         proxy_pass http://localhost/;
 
-        #这里最好做判断，怕麻烦的话就写*，但是不建议
+        # 这里最好做判断，怕麻烦的话就写 *，但是不建议
         if ($http_origin = http://localhost){
             add_header Access-Control-Allow-Origin http://localhost;
         }

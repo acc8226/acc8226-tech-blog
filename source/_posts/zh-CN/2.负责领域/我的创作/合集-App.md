@@ -70,9 +70,9 @@ categories: 我的创作
 
 #### 安卓
 
-1. [Aegis Authenticator](https://getaegis.app) [下载地址](https://github.com/beemdevelopment/Aegis/releases) 需定期做好密码备份导出工作
+1. [Aegis Authenticator](https://getaegis.app) [下载地址](https://github.com/beemdevelopment/Aegis/releases) 需定期做好密码备份导出到天翼云盘
 1. [国家网络身份认证](https://sj.qq.com/appdetail/cn.cyberIdentity.certification) 用于互联网账号联合登录
-1. [网易大神](https://ds.163.com) 曾经的将军令
+1. [网易大神](https://ds.163.com) 网易游戏用
 
 not
 
@@ -119,7 +119,6 @@ Bitwarden【已适配安卓平板】[Github 版](https://github.com/bitwarden/an
 
 * [微信读书](https://sj.qq.com/appdetail/com.tencent.weread) 书库全，但付费书较多
 * [番茄免费小说](https://sj.qq.com/appdetail/com.dragon.read) 书库较全，免费用户会遇到插播广告，有的想看的书可以免费离线下载，很适合离线用，**太吃存储空间**
-* [豆瓣阅读](https://sj.qq.com/appdetail/com.douban.book.reader) 毕竟适配了平板
 * ——————— ฅ՞• •՞ฅ ———————
 * 【本地】[FBReader](https://fbreader.org/android#download) 一款本地电子书阅读器，但是支持 pdf 需要付费估计体验也一般
 
@@ -134,6 +133,7 @@ Bitwarden【已适配安卓平板】[Github 版](https://github.com/bitwarden/an
 not
 
 * [静读天下](http://www.moondownload.com/download.html) 免费版有广告
+* [豆瓣阅读](https://sj.qq.com/appdetail/com.douban.book.reader) 有适配了平板，但绝大多数书都需付费
 * ~~云虫爱看 已下架，应用不再更新~~
 * ——————— ฅ՞• •՞ฅ ———————
 * [QQ 阅读](https://sj.qq.com/appdetail/com.qq.reader) 有广告
@@ -674,7 +674,7 @@ not
 
 #### 飞机票
 
-我不怎么坐，一般用[携程](https://sj.qq.com/appdetail/ctrip.android.view)够用了
+我不怎么坐，通过 [携程](https://sj.qq.com/appdetail/ctrip.android.view) 和 [航旅纵横](https://sj.qq.com/appdetail/com.umetrip.android.msky.app)，哪个便宜买哪个
 
 #### 订酒店
 
@@ -757,10 +757,11 @@ not
 * [永中 Office](https://sj.qq.com/appdetail/com.yozo.office) 不足百兆且较为清爽
 * [迅读 PDF](https://sj.qq.com/appdetail/com.xundupdf.reader)
 
+备用 [WPS Office](https://sj.qq.com/appdetail/cn.wps.moffice_eng) 功能强大但是不够清爽，内容繁多
+
 not
 
 * LibreOffice Viewer [Google Play 版](https://play.google.com/store/apps/details?id=org.documentfoundation.libreoffice) | [F-Droid - Free and Open Source Android App Repository](https://f-droid.org/packages/org.documentfoundation.libreoffice) 功能不太完善
-* [WPS Office](https://sj.qq.com/appdetail/cn.wps.moffice_eng) 功能强大但是不够清爽，杂七杂八内容太多
 * Polaris Office 北极星办公 其中安卓版本不是最新版不能用
 
 **怀旧经典** 智器阅读 一款 pdf 阅读器 想当年 当时可以裁掉白边
@@ -824,17 +825,18 @@ not [福昕 PDF 阅读器](https://sj.qq.com/appdetail/com.foxit.mobile.pdf.lite
 
 备用
 
-* [阿里云盘](https://sj.qq.com/appdetail/com.alicloud.databox) 功能很多单不太限速，非会员不能看超清
 * [坚果云](https://sj.qq.com/appdetail/nutstore.android) 同步小文档用
+* [文叔叔](https://www.wenshushu.cn) 匿名分享盘，现在依旧被小飞机取代
+* [阿里云盘](https://sj.qq.com/appdetail/com.alicloud.databox) 功能很多单不太限速，非会员不能看超清
+* [百度网盘](https://sj.qq.com/appdetail/com.baidu.netdisk) 720p 视频限免播放，且空间够大
 
 not
 
-* [百度网盘](https://sj.qq.com/appdetail/com.baidu.netdisk) 720p 视频限免播放，且空间够大
 * [小飞机网盘](https://www.feijipan.com) 初始容量有点少
 * [123云盘](https://sj.qq.com/appdetail/com.mfcloudcalculate.networkdisk) app 内都是广告
-* [文叔叔](https://www.wenshushu.cn) 匿名分享盘，现在依旧被小飞机取代
+* [中国移动云盘](https://sj.qq.com/appdetail/com.chinamobile.mcloud) 免费用户无法升级空间
 
-官网收录：[中国移动云盘](https://sj.qq.com/appdetail/com.chinamobile.mcloud) | [联通云盘](https://sj.qq.com/appdetail/com.chinaunicom.bol.cloudapp) | [115 网盘](https://115.com/)
+官网收录：[联通云盘](https://sj.qq.com/appdetail/com.chinaunicom.bol.cloudapp) | [115 网盘](https://115.com/)
 
 ### 安卓平板
 
@@ -1063,7 +1065,10 @@ never
 
 [汉王扫描王](https://sj.qq.com/appdetail/com.hanvonscanner.app) 还能从图片中提取表格【限免中】
 
-备用 [白描](https://sj.qq.com/appdetail/com.uzero.baimiao) 可以免费制作身份证正反面 A4 扫描件，免费版有每日次数限制
+备用
+
+* [扫描全能王](https://sj.qq.com/appdetail/com.intsig.camscanner) 巨好用，除了收费
+* [白描](https://sj.qq.com/appdetail/com.uzero.baimiao) 可以免费制作身份证正反面 A4 扫描件，免费版有每日次数限制
 
 not 扫描宝和印象笔记，动不动就要会员，差评
 
@@ -1091,7 +1096,9 @@ APTV
 
 ## 32 远程控制
 
-* Kore 一个用于 Kodi 系统/程序 的 远程遥控器
+* [向日葵](https://sj.qq.com/appdetail/com.oray.sunlogin) | [ToDesk](https://sj.qq.com/appdetail/youqu.android.todesk) ｜ [RustDesk](https://rustdesk.com/index.html)
+* ——————— ฅ՞• •՞ฅ ———————
+* Kore 适用于用于 Kodi 系统/程序 的 远程遥控器
 * [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer) 操控树莓派用
 
 ## 33 投屏
@@ -1286,9 +1293,7 @@ not 格式工厂
 
 ## 51 医疗、保健
 
-not
-
-泰康医生 被代理人打电话让我领取保险，结果投保满 1 年就没了，我还花了往返地铁费
+not 泰康医生 被代理人打电话让我领取保险，结果投保满 1 年就没了，我还花了往返地铁费
 
 ## 52 快递
 
@@ -1365,9 +1370,13 @@ GitHub App [apkmirror 源](https://www.apkmirror.com/apk/github/) | [apk.gold](h
 
 ## 63 外卖
 
-[饿了么](https://sj.qq.com/appdetail/me.ele)、京东、[美团外卖](https://sj.qq.com/appdetail/com.sankuai.meituan.takeoutnew)
+[饿了么](https://sj.qq.com/appdetail/me.ele)、京东的闪购频道、[美团外卖](https://sj.qq.com/appdetail/com.sankuai.meituan.takeoutnew)
 
-## 64 游戏
+## 64 连点器
+
+安卓 [闪指连点器](https://sj.qq.com/appdetail/com.shanzhi.clicker)
+
+## 65 游戏
 
 我一般会玩经典系列，比如王国保卫战、割绳子、小鳄鱼洗澡、糖果粉碎传奇、滑雪大冒险、愤怒的小鸟<br/>
 Bean's Quest 算是 1 代 和 Bean Dreams 算是 2 代
@@ -1408,15 +1417,16 @@ OPPO 自带的文档 app 很好用
 
 ### 备用手机必备 app
 
-Aegis ｜ Bitwarden ｜ 倒数日 ｜ 番茄免费小说 ｜FBReader ｜
-LX Music | 米家 ｜ PikPak ｜清浊 ｜Salt Player ｜
-天翼云盘 ｜ TIM ｜ VLC ｜西瓜视频 ｜学堂在线 ｜
-讯飞有声 |
+Aegis ｜ Bitwarden ｜ 倒数日 ｜ 番茄免费小说 | LX Music |
+米家 ｜ 拼多多 ｜ PikPak ｜ 清浊 ｜Salt Player ｜
+天翼云盘 ｜ TIM ｜ VLC ｜ 微信读书 ｜ 西瓜视频｜
+讯飞有声 | 迅读 PDF ｜ 额外：哔哩哔哩 ｜ 额外：学堂在线 ｜ 额外：高德地图
 
 ### 一些优秀的应用厂商
 
-Simple Design Ltd.
-出品了 [Notepad, Notes, Easy Notebook](https://notepad-notes-easy-notebook.en.uptodown.com/android)（记事本、便签、清单 - Notein）带有提醒功能的便签记事本和备忘录应用，可随时随地轻松记笔记、写便签、列待办事项和购物清单等
+Simple Design Ltd. 出品了
+
+[Notepad, Notes, Easy Notebook](https://notepad-notes-easy-notebook.en.uptodown.com/android)（记事本、便签、清单 - Notein）带有提醒功能的便签记事本和备忘录应用，可随时随地轻松记笔记、写便签、列待办事项和购物清单等
 [All Document Reader](https://alldocumentreader-office-viewer-filereader.en.uptodown.com/android)
 [PDF Reader](https://pdf-reader-pdfviewer-pdfeditor.en.uptodown.com/android)
 

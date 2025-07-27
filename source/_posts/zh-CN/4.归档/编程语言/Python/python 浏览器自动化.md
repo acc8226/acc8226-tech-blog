@@ -43,7 +43,7 @@ elem.send_keys(Keys.ENTER)
 
 浏览器驱动程序，是 Selenium 与所选择的浏览器进行交互的必要组件。
 
-* Chrome:https://developer.chrome.com/docs/chromedriver
+* Chrome:https://developer.chrome.com/docs/chromedriver | [CNPM Binaries Mirror](https://registry.npmmirror.com/binary.html?path=chrome-for-testing/)
 * Edge:https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver
 * Firefox:https://github.com/mozilla/geckodriver
 * Safari:https://webkit.org/blog/6900/webdriver-support-in-safari-10
