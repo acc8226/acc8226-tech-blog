@@ -56,7 +56,7 @@ categories: 我的创作
 
 [mvnd](https://github.com/apache/maven-mvnd) - embeds Maven (so there is no need to install Maven separately).
 
-#### 1.2.3 radle
+#### 1.2.3 Gradle
 
 [Gradle](https://gradle.org) 是一个开源的自动化构建系统，它被设计用来支持多语言和多平台的软件项目，尤其是 Java 项目。Gradle 是用 Groovy 和 Kotlin 编写的，它提供了一个基于 Apache Ant 和 Maven 的强大而灵活的构建自动化功能。
 
@@ -75,6 +75,12 @@ repositories {
     maven("https://mirrors.cloud.tencent.com/nexus/repository/maven-public/")
     mavenCentral()
 }
+```
+
+更换国内 distributionUrl 地址
+
+```properties
+distributionUrl=https\://mirrors.cloud.tencent.com/gradle/gradle-8.11-bin.zip
 ```
 
 ## 2 DB 数据库
@@ -173,7 +179,7 @@ not【全平台 付费】[Beyond Compare](https://www.beyondcompare.cc)
 
 ### 7.1 Autohotkey
 
-【win】[Autohotkey](https://www.autohotkey.com) - [下载](https://www.autohotkey.com/download) 一款自动化脚本语言。
+【win】[Autohotkey](https://www.autohotkey.com) - [下载](https://www.autohotkey.com/download) | [GitHub 地址](https://github.com/AutoHotkey/AutoHotkey) 一款自动化脚本语言。
 
 ### 7.2 C#
 
@@ -414,7 +420,9 @@ not
 
 要求: Windows 10 2004 (build 19041) 及其以上
 
-[应用商店版](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701) | [Release 下载](https://github.com/microsoft/terminal/releases/)
+[应用商店版](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701) | [Release 下载](https://github.com/microsoft/terminal/releases)
+
+[Windows Terminal v1.22.11751.0](https://github.com/microsoft/terminal/releases/download/v1.22.11751.0/Microsoft.WindowsTerminal_1.22.11751.0_x64.zip) 直链
 
 如何更改默认启动终端为 powershell
 
@@ -454,15 +462,6 @@ mac 已经将 zsh 取代 bash 作为默认 shell 了
 
 ## 19 框架
 
-### 数据库连接池
-
-* 【Jar】[c3p0](https://sourceforge.net/projects/c3p0/files/latest/download?source=files) 一个用于 Java 应用程序的数据库连接池库。
-* 【Jar】[DBCP](https://commons.apache.org/proper/commons-dbcp/index.html) 另一个常用的 Java 数据库连接池库，提供基本的数据库连接池功能。
-
-### 网络请求库
-
-【js】[Axios](https://www.axios-http.cn)
-
 ### UI 框架
 
 * [Element](https://element.eleme.cn/#/zh-CN) 一套为开发者、设计师和产品经理准备的基于 Vue 2.0 的桌面端组件库
@@ -500,6 +499,17 @@ RuoYi 是一个基于 Spring Boot 的权限和流程管理的 Java Web 应用程
 
 【Java】[Zookeeper](https://zookeeper.apache.org) 用于分布式应用程序的协调服务，常用于管理分布式环境中的配置信息、命名、提供分布式同步和提供组服务等。
 
+## 20 库
+
+### 数据库连接池
+
+* 【Jar】[c3p0](https://sourceforge.net/projects/c3p0/files/latest/download?source=files) 一个用于 Java 应用程序的数据库连接池库。
+* 【Jar】[DBCP](https://commons.apache.org/proper/commons-dbcp/index.html) 另一个常用的 Java 数据库连接池库，提供基本的数据库连接池功能。
+
+### 网络请求库
+
+【js】[Axios](https://www.axios-http.cn)
+
 ### Android 逆向工程
 
 * 【Java】[Apktool](https://ibotpeaches.github.io/Apktool/)用于安卓应用程序逆向工程的工具，可以分析和修改 Android APK 文件。
@@ -512,6 +522,12 @@ RuoYi 是一个基于 Spring Boot 的权限和流程管理的 Java Web 应用程
 ### 接口测试
 
 [REST Assured](https://rest-assured.io) 使用 REST-assured，你可以用非常接近自然语言的方式编写 API 测试。比如，你可以这样写测试代码：`given().param("key1", "value1").when().get("/api/resource").then().statusCode(200)`。是不是感觉很直观？
+
+[使用 RestAssured 的高级功能](https://juejin.cn/post/7327723383386767411)
+
+## 21 工具
+
+[upx](https://github.com/upx/upx/releases) ｜ [upx-5.0.2-win64](https://github.com/upx/upx/releases/download/v5.0.2/upx-5.0.2-win64.zip)
 
 ## 一些思考
 

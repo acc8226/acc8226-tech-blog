@@ -116,7 +116,7 @@ sudo dpkg -i  newpackage.deb
 
 bitwarden 依旧好用
 
-[wps](https://www.wps.cn/product/wpslinux#) 缺少字体，然后打开一百多少 M 的 pdf 还会卡，由于是用 dpk 安装的，很不好用。所以可以直接卸载 `sudo dpkg  -P  wps-office`
+[wps](https://www.wps.cn/product/wpslinux#) 缺少字体，然后打开一百多少 M 的 pdf 还会卡，由于是用 dpk 安装的，很不好用。所以可以直接卸载 `sudo dpkg -P wps-office`
 
 pdf 用自带的阅读器就很好 或者 浏览器内置功能也不差
 

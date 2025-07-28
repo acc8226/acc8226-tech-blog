@@ -255,7 +255,7 @@ not【win linux】[阿里旺旺](https://wangwang.taobao.com) 不好用
 
 远程桌面
 
-* 【全平台】[RustDesk](https://rustdesk.com/index.html) The Open Source Remote Desktop Access Software
+【全平台】[RustDesk](https://rustdesk.com/index.html) The Open Source Remote Desktop Access Software
 
 备用
 
@@ -818,7 +818,13 @@ not
 1. [微信 3.2.1](https://www.123pan.com/s/aDE9-hCCyh.html)
 1. [Potplayer 1.7](https://www.123pan.com/s/aDE9-hCCyh.html)
 
-## 7 留观中
+## 7 软件推荐网站
+
+[软件推荐 - 入门向导](https://getquicker.net/Guides/Guide?id=9260b229-c617-42f5-378b-08da75b5e519&step=4a095264-4550-4d66-a410-08da7756e1a7)
+
+[软件推荐](https://getquicker.net/Guides/Guide?id=52593d69-c99a-4367-8b98-08d9a65be47e&step=436a0dbd-e10b-4897-c9d6-08dae0ce419c) - 动作坞
+
+## 8 留观中
 
 一些用过的软件但主观关键明显不好用的记录，说不定下版会优化，所以仅供参考
 
@@ -830,7 +836,7 @@ not
 * [pear-rec](https://027xiguapi.github.io/pear-rec)【全平台】录屏软件 至少我在 windows 上体验不佳
 * [flowlauncher](https://www.flowlauncher.com/docs) 作为一款启动器 有点儿卡
 
-## 8 回收站
+## 9 回收站
 
 * 【浏览器插件】CSDN 猿如意 不让人满意
 * ——————— ฅ՞• •՞ฅ ———————

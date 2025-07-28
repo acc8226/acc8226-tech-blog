@@ -21,7 +21,6 @@ Apache Tomcat 是 Jakarta EE (正式的 Java EE)技术的一个子集的开放�
 | 2.4              | 2.0          | N/A         | N/A                | N/A                              | 5.5.x (archived)          | 5.5.36 (archived)           | 1.4 and later                              |
 | 2.3              | 1.2          | N/A         | N/A                | N/A                              | 4.1.x (archived)          | 4.1.40 (archived)           | 1.3 and later                              |
 | 2.2              | 1.1          | N/A         | N/A                | N/A                              | 3.3.x (archived)          | 3.3.2 (archived)            | 1.1 and later                              |
-
 <!-- more -->
 
 ## mac / linux 下 tomcat 安装

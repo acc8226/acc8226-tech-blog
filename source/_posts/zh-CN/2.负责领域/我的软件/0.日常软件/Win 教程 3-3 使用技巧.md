@@ -383,6 +383,10 @@ colortool.exe -b OneHalfDark.itermcolors
 
 即使知道 IP 也缺少驱动，这里可以借助局域网，登录已可以连接的打印机的计算机然后添加此打印机设备（内部会拷贝对应驱动）。
 
+### 快捷键冲突了如何排查
+
+[如何排查](https://getquicker.net/Guides/Guide?id=bb29bbe9-31eb-42b5-235e-08d9afb372ec&step=7edebccd-15fb-45c7-c8ec-08db21405a6f)
+
 ## 参考
 
 [你可能不知道的几种替代式 Windows 快捷操作](https://www.lmdouble.com/1424236155.html) | IT 技术资料分享

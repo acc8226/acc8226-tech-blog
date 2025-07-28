@@ -22,7 +22,6 @@ systemctl start httpd.service
 3\. 测试 Apache 服务是否安装并启动成功。
 
 Apache 默认监听 80 端口，所以只需在浏览器访问即可。
-
 <!-- more -->
 
 ## ubuntu 安装 apache2

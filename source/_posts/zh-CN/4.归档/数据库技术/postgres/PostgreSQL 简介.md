@@ -359,16 +359,10 @@ SELECT CASE WHEN 条件 THEN 结果 ELSE 结果 END
 
 ## 增强
 
-timescaledb 数据库
-<https://docs.timescale.com/latest/getting-started/installation/windows/installation-windows>
+[timescaledb 数据库](https://docs.timescale.com/latest/getting-started/installation/windows/installation-windows)
 
 ## 参考
 
-PostgreSQL 12.2 手册
-<http://www.postgres.cn/docs/12/>
-
-PostgreSQL 的 pg_hba.conf 配置参数详解_将臣三代的博客-CSDN 博客_pg_hba.conf
-<https://blog.csdn.net/yaoqiancuo3276/article/details/80404883>
-
-pg 数据库配置无需交互式输入密码连接服务端_heipacker 的博客-CSDN 博客
-<https://blog.csdn.net/heipacker/article/details/48087699>
+* [PostgreSQL 12.2 手册](http://www.postgres.cn/docs/12)
+* [PostgreSQL 的 pg_hba.conf 配置参数详解](https://blog.csdn.net/yaoqiancuo3276/article/details/80404883)_将臣三代的博客-CSDN 博客_pg_hba.conf
+* [pg 数据库配置无需交互式输入密码连接服务端_heipacker 的博客](https://blog.csdn.net/heipacker/article/details/48087699)-CSDN 博客

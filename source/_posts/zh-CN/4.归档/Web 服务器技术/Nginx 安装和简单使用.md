@@ -159,6 +159,25 @@ make && make install
 
 这里用到了关键字 proxy_pass
 
+示例 1
+
+```conf
+server {
+    listen 80; # 监听 80 端口
+    server_name your_domain.com; # 替换为你的域名或 IP 地址
+
+    location / {
+        proxy_pass http://localhost:1111; # 将请求转发到 1111 端口
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}
+```
+
+示例 2
+
 ```conf
 server {
     listen 9000;
