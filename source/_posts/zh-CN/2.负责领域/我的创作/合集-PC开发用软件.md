@@ -116,7 +116,7 @@ not
 * 【全平台】[DBeaver Community](https://dbeaver.io/download) 颜值太低
 * 【全平台】[DbVisualizer](https://www.dbvis.com) 付费版才好用
 
-## 3. Docker
+## 3 Docker
 
 【全平台】[Docker](https://www.docker.com/products/docker-desktop)
 
@@ -125,6 +125,8 @@ not
 【全平台】[Visual Studio Code](https://code.visualstudio.com) windows 推荐使用**安装版**而非便携版，这样能及时获得更新。[win 7 最后一个支持版](https://code.visualstudio.com/updates/v1_70)
 
 vscode 插件推荐：[markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
+
+[VSCodium](https://vscodium.com) ｜ [清华源](https://mirrors-i.tuna.tsinghua.edu.cn/github-release/VSCodium/vscodium/LatestRelease/) Free/Libre Open Source Software Binaries of VS Code
 
 备用
 

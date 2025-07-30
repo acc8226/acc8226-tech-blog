@@ -301,9 +301,7 @@ not albert 安装不上
 
 [金山词霸](https://cp.iciba.com) 或者 欧路词典
 
-not
-
-网易有道翻译
+not 网易有道翻译
 
 ## 2 拓展
 
@@ -427,7 +425,7 @@ not
 
 - - -
 
-mac 的腾讯柠檬清理已经自带了该功能
+mac 的腾讯柠檬清理 或国产 State 软件。
 
 ### 2.7 DNS 相关
 
@@ -649,7 +647,7 @@ not
 
 ### 2.35 AI 助手
 
-[豆包桌面版](https://www.doubao.com/download/desktop) | [Kimi](https://kimi.moonshot.cn/)
+[豆包桌面版](https://www.doubao.com/download/desktop) | [Kimi](https://kimi.moonshot.cn/) ｜ [Cherry Studio](https://www.cherry-ai.com) 全能的 AI 助手
 
 ### 2.36 网盘挂载
 
@@ -659,47 +657,51 @@ not
 
 [Macro Deck](https://macrodeck.org) 和带屏幕的小爱是绝配。一款开源的自动化控制软件，可用于流媒体直播、游戏、智能家居等多种场景，支持宏键、复杂逻辑和多设备控制，免费且可通过插件扩展功能。
 
-### 2.38 mac 特有
+### 2.38 鼠标跨电脑切换
 
-#### 2.38.1 电源管理
+微软免费神器 Mouse Without Borders
+
+### 2.39 mac 特有
+
+#### 2.39.1 电源管理
 
 [AlDente](https://apphousekitchen.com) 电池🔋负载限制器
 
-#### 2.38.2 键指如飞 FlyKey
+#### 2.39.2 键指如飞 FlyKey
 
 [键指如飞](https://www.better365.cn/FlyKey.html) 一键展示 Mac 快捷键
 
-### 2.39 windows 特有
+### 2.40 windows 特有
 
-#### 2.39.1 空格预览文件
+#### 2.40.1 空格预览文件
 
 【win】[QuickLook](https://github.com/QL-Win/QuickLook/releases)
 
 not【win】[Seer](http://www.1218.io/seer.html) 收费就算了
 
-#### 2.39.2 EarTrumpet【win10 必备】
+#### 2.40.2 EarTrumpet【win10 必备】
 
 【win】[EarTrumpet](https://eartrumpet.app) 一款超赞的音量控制应用
 
-#### 2.39.3 windows 系统优化
+#### 2.40.3 windows 系统优化
 
 【win】[Dism++](https://github.com/Chuyu-Team/Dism-Multi-language) 优化功能挺强，能注入驱动还能辅助装系统，还能找回 win 10 旧版图片查看器
 
 怀旧经典【win】[软媒魔方](https://mofang.ruanmei.com)
 
-#### 2.39.4 windows 蓝屏日志分析
+#### 2.40.4 windows 蓝屏日志分析
 
 去 microsoft store 搜索【win】[WinDbg](https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/debugger-download-tools#install-debugging-tools-for-windows)
 
-#### 2.39.5 resource hacker
+#### 2.40.5 resource hacker
 
 解析 exe，例如可以轻松查看【win】[Preme](http://www.premeforwindows.com) 的 ahk 源码
 
-#### 2.39.6 流氓软件禁用
+#### 2.40.6 流氓软件禁用
 
 [GitHub - the1812](https://github.com/the1812/Malware-Patch)/Malware-Patch: 阻止中国流氓软件的管理员授权 / Prevent UAC authorization of Chinese malware.
 
-#### 2.39.7 WizMouse【win7 必备】
+#### 2.40.7 WizMouse【win7 必备】
 
 【win】[WizMouse](https://antibody-software.com/wizmouse) 一款鼠标增强工具
 
@@ -710,7 +712,7 @@ not【win】[Seer](http://www.1218.io/seer.html) 收费就算了
 
 ## 3 专业
 
-### 3.0 虚拟机
+### 3.1 虚拟机
 
 * 【mac 首选】[VMware Fusion Pro for Mac](https://support.broadcom.com/group/ecx/productdownloads?subfamily=VMware+Fusion) 可供基于 Intel CPU 或 Apple M 系列处理器的 Mac 电脑使用
 * 【win 首选】[VMware Workstation Pro for PC](https://support.broadcom.com/group/ecx/productdownloads?subfamily=VMware+Workstation+Pro)
@@ -719,20 +721,20 @@ not【win】[Seer](http://www.1218.io/seer.html) 收费就算了
 
 not 付费【mac】[Parallels](https://www.parallels.cn) 买断只能买一个大版本，差评
 
-### 3.1 网盘搭建
+### 3.2 网盘搭建
 
-【全平台】[AList](https://alist.nn.ci/zh) | [Releases](https://github.com/alist-org/alist/releases)
+【全平台】[OpenList](https://github.com/OpenListTeam/OpenList)
 
-### 3.2【常用】网络加速
+### 3.3【常用】网络加速
 
 1. 【全平台】[hiddify](https://hiddify.com)
 1. 【全平台】[瓦特工具箱 Watt Toolkit「原名 Steam++」](https://steampp.net) 可加速 GitHub
 
-### 3.3 内网转发
+### 3.4 内网转发
 
 【全平台】[frp](https://github.com/fatedier/frp/releases)
 
-### 3.4 投屏显示
+### 3.5 投屏显示
 
 **提醒：不听不信，谨防陌生人诈骗！**
 
@@ -745,7 +747,7 @@ not 付费【mac】[Parallels](https://www.parallels.cn) 买断只能买一个�
 
 not [乐播投屏](https://www.lebo.cn) 太臃肿且要**注意远程屏幕共享诈骗**
 
-### 3.5 格式转换
+### 3.6 格式转换
 
 * 【精品 win 安装版】[格式工厂](http://www.pcgeshi.com/index.html) 全功能转换，不得不说还得是 windows 版的老牌和强大，实属装机必备 | [格式工厂 mac 版](https://apps.apple.com/cn/app/%E6%A0%BC%E5%BC%8F%E5%B7%A5%E5%8E%82/id6443540458?mt=12)
 * 曾经限免 [VideoProc Converter AI](https://www.videoproc.com/zh/video-converting-software/?ttpath=site-header-zh)
@@ -753,7 +755,7 @@ not [乐播投屏](https://www.lebo.cn) 太臃肿且要**注意远程屏幕共�
 
 官网收录：【mac】OmniConverter
 
-### 3.6 包管理器
+### 3.7 包管理器
 
 * 【mac】[Homebrew](https://brew.sh/index_zh-cn)
 * ——————— ฅ՞• •՞ฅ ———————
@@ -764,7 +766,7 @@ not [乐播投屏](https://www.lebo.cn) 太臃肿且要**注意远程屏幕共�
 * 【win】[Scoop](https://scoop.sh)
 * 【全平台】[SDKMAN](https://sdkman.io)
 
-### 3.7 文件同步
+### 3.8 文件同步
 
 【全平台】[Resilio Sync](https://www.resilio.com) (原名 BT Sync) 是一款极为优秀好用的「文件同步工具」软件，它基于类似 BT 的 P2P 协议同步文件，但由于它“分享文件”过于方便，导致在国内被圭寸
 
@@ -773,11 +775,11 @@ not [乐播投屏](https://www.lebo.cn) 太臃肿且要**注意远程屏幕共�
 * 【全平台】[Syncthing](https://syncthing.net) | [Github 源](https://github.com/syncthing/syncthing)
 * 【全平台】[微力同步](http://www.verysync.com) (VerySync) 是一款国产跨平台文件同步软件，适合自己私人同步文件，或与朋友同事团队间进行办公协作
 
-### 3.8 FFmpeg
+### 3.9 FFmpeg
 
 【全平台】[FFmpeg](https://ffmpeg.org) 用于录制、转换和流式传输音频和视频
 
-### 3.9 游戏串流
+### 3.10 游戏串流
 
 [Sunshine | LizardByte](https://app.lizardbyte.dev/Sunshine/?lng=zh-CN)  是 Moonlight 的自托管游戏串流服务端
 
