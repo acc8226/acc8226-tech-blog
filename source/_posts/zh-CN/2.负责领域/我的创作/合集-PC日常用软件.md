@@ -43,7 +43,7 @@ categories: 我的创作
 
 #### 1.1.0【常用】压缩解压
 
-[PeaZip](https://peazip.github.io/index.html) 含智能解压。其中 windows 还是建议使用安装版
+[PeaZip](https://peazip.github.io/index.html) 含智能解压。其中 windows 建议使用安装版
 
 #### 1.1.1【推荐】鼠标手势
 

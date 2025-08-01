@@ -504,8 +504,6 @@ not [ES 文件管理器](http://www.estrongs.com) 通用版【已适配平板】
 * [闲鱼](https://sj.qq.com/appdetail/com.taobao.idlefish) 比如临时购买天眼查的会员
 * [天猫](https://sj.qq.com/appdetail/com.tmall.wireless) 名气不如淘宝
 
-官网收录：[当当](https://sj.qq.com/appdetail/com.dangdang.buy2) | [转转](https://sj.qq.com/appdetail/com.wuba.zhuanzhuan) | [苏宁易购](https://sj.qq.com/appdetail/com.suning.mobile.ebuy) | [小米商城](https://sj.qq.com/appdetail/com.xiaomi.shop) | [盒马](https://sj.qq.com/appdetail/com.wudaokou.hippo)
-
 ### 安卓平板
 
 [淘宝](https://sj.qq.com/appdetail/com.taobao.taobao)
@@ -535,7 +533,7 @@ not [ES 文件管理器](http://www.estrongs.com) 通用版【已适配平板】
 
 ### 安卓平板
 
-* [高德地图](https://sj.qq.com/appdetail/com.autonavi.minimap) 通用版【已适配平板】，我将其作为主力。查看票价功能很好使
+[高德地图](https://sj.qq.com/appdetail/com.autonavi.minimap) 通用版【已适配平板】，我将其作为主力。查看票价功能很好使
 
 备用
 

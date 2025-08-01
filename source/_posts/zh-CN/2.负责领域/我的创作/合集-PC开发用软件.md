@@ -126,7 +126,7 @@ not
 
 vscode 插件推荐：[markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
 
-[VSCodium](https://vscodium.com) ｜ [清华源](https://mirrors-i.tuna.tsinghua.edu.cn/github-release/VSCodium/vscodium/LatestRelease/) Free/Libre Open Source Software Binaries of VS Code
+[VSCodium](https://vscodium.com) ｜ [清华源](https://mirrors-i.tuna.tsinghua.edu.cn/github-release/VSCodium/vscodium/LatestRelease/) [兰大源](https://mirror.lzu.edu.cn/github-release/VSCodium/vscodium/LatestRelease/) Free/Libre Open Source Software Binaries of VS Code
 
 备用
 
