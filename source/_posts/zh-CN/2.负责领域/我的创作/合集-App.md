@@ -2,7 +2,7 @@
 title: 合集-App
 permalink: myapp/
 date: 2017-04-13 22:07:33
-updated: 2025-03-12 17:31:46
+updated: 2025-08-02 09:51:00
 categories: 我的创作
 ---
 
@@ -637,7 +637,7 @@ or
 * ——————— ฅ՞• •՞ฅ ———————
 * [辣品](https://sj.qq.com/appdetail/com.ruanmei.lapin) 优惠券系列，和什么值得买类似
 * ——————— ฅ՞• •՞ฅ ———————
-* [肯德基](https://sj.qq.com/appdetail/com.yek.android.kfc.activitys) 或者 [麦当劳](https://sj.qq.com/appdetail/com.mcdonalds.gma.cn) app 或者 【小程序】
+* [肯德基](https://sj.qq.com/appdetail/com.yek.android.kfc.activitys) ｜ [麦当劳](https://sj.qq.com/appdetail/com.mcdonalds.gma.cn) app 或者 【小程序】
 * ——————— ฅ՞• •՞ฅ ———————
 * [万达电影](https://sj.qq.com/appdetail/com.wandafilm.app)(有时会有优惠电影票) 现在好像北京一张票至少六七十，买不起了，反而不如保利电影便宜
 
