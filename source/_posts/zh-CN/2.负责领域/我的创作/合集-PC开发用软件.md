@@ -25,63 +25,92 @@ categories: 我的创作
 
 挑选软件我尽量考虑以免费为主。
 
-## 1 Build tool 构建工具
+## 1【常用】lang 编程语言
 
-### 1.1 Web 构建工具
+### 1.1 Autohotkey
 
-* [Parcel](https://parceljs.org) 以其零配置和快速的构建速度而受到开发者的喜爱，适合快速开发。
-* [Turbo](https://turbo.build) Turbo is an incremental bundler and build system optimized for JavaScript and TypeScript, written in Rust.
-* [Vite](https://cn.vitejs.dev) 下一代的前端工具链
-* [Webpack](https://www.webpackjs.com) 功能强大，适用于各种规模的前端项目，支持复杂的构建流程和优化。
+【win】[Autohotkey](https://www.autohotkey.com) - [下载](https://www.autohotkey.com/download) | [GitHub 地址](https://github.com/AutoHotkey/AutoHotkey) 一款自动化脚本语言。
 
-<!-- more -->
+### 1.2 C#
 
-### 1.2 Java 应用构建工具
+[C# 指南-.NET 托管语言](https://learn.microsoft.com/zh-cn/dotnet/csharp) | Microsoft Learn
 
-#### 1.2.1 Ant
+### 1.3 Dart
 
-[Ant](https://ant.apache.org) 在早期的 Java 项目中非常流行，它被设计用来驱动软件项目的构建过程，类似于 Make 工具，但它使用 XML（Extensible Markup Language）来描述构建过程和依赖关系，而不是传统的 Makefile。
+Dart [官网](https://dart.cn)
 
-#### 1.2.2 Maven
+### 1.4 Go
 
-[Maven](https://maven.apache.org) 是一个构建工具，主要用于 Java 应用程序。由 Apache 软件基金会维护，它使用一个名为 POM（Project Object Model）的 XML 文件来描述项目的构建过程、依赖关系和其他配置信息。
+Go [官网](https://golang.google.cn)
 
-[镜像下载](https://repo.huaweicloud.com/apache/maven/maven-3)
+### 1.5 Java
 
-直链下载
+* [Amazon corretto](https://aws.amazon.com/cn/corretto)
+* [GraalVM](https://www.graalvm.org/downloads)
+* [Liberica JDK](https://bell-sw.com/pages/downloads)
+* [Microsoft openjdk](https://docs.microsoft.com/zh-cn/java/openjdk/download)
+* [Oracle Java](https://www.oracle.com/java/technologies/javase-downloads.html)
+* [Temurin](https://adoptium.net/temurin/releases)
+* --国产 JDK--
+* [腾讯 TencentKona-21](https://cnb.cool/tencent/TencentKona/TencentKona-21)
+* [阿里 Dragonwell](https://dragonwell-jdk.io/#/index)
+* [毕昇 JDK](https://www.hikunpeng.com/developer/devkit/download/jdk)
 
-* [maven-3.9.6-bin.zip](https://repo.huaweicloud.com/apache/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.zip)
+windows 版本如果是临时使用，可以在命令行界面键入 `set path=java` 所在的 bin 目录。长期使用则建议设置环境变量到 path。
 
-另一增强工具
+### 1.6 Kotlin
 
-[mvnd](https://github.com/apache/maven-mvnd) - embeds Maven (so there is no need to install Maven separately).
+Kotlin [官网](https://kotlinlang.org)
 
-#### 1.2.3 Gradle
+### 1.7 Node.js
 
-[Gradle](https://gradle.org) 是一个开源的自动化构建系统，它被设计用来支持多语言和多平台的软件项目，尤其是 Java 项目。Gradle 是用 Groovy 和 Kotlin 编写的，它提供了一个基于 Apache Ant 和 Maven 的强大而灵活的构建自动化功能。
+[Node.js](https://nodejs.org/en) | [npmjs.com 镜像站](https://registry.npmmirror.com/binary.html?path=node/)
 
-[华为镜像](https://mirrors.huaweicloud.com/gradle/) ｜ [腾讯镜像](https://mirrors.cloud.tencent.com/gradle)
+lts 下载：
 
-直链下载
+* https://nodejs.org/dist/v22.14.0/node-v22.14.0-win-x64.zip
+* https://nodejs.org/dist/v20.18.3/node-v20.18.3-win-x64.zip
+* https://nodejs.org/dist/v18.20.6/node-v18.20.6-win-x64.zip
 
-* gradle-8.14.2-all.zip [腾讯源](https://mirrors.cloud.tencent.com/gradle/gradle-8.14.2-all.zip) ｜ [华为源](https://mirrors.huaweicloud.com/gradle/gradle-8.14.2-all.zip)
-* gradle-7.6.5-bin.zip [官方源](https://downloads.gradle.org/distributions/gradle-7.6.5-bin.zip)
-* gradle-6.9.4-all.zip [腾讯源](https://mirrors.cloud.tencent.com/gradle/gradle-6.9.4-all.zip) ｜ [华为源](https://mirrors.huaweicloud.com/gradle/gradle-6.9.4-all.zip)
+配置 registry 加速
 
-build.gradle.kts 设置 maven 国内源
-
-```kts
-repositories {
-    maven("https://mirrors.cloud.tencent.com/nexus/repository/maven-public/")
-    mavenCentral()
-}
+```sh
+# 临时使用
+npm install xxxxx --registry=https://registry.npmmirror.com
+# 永久设置
+npm config set registry https://registry.npmmirror.com
 ```
 
-更换国内 distributionUrl 地址
+### 1.8 PHP
 
-```properties
-distributionUrl=https\://mirrors.cloud.tencent.com/gradle/gradle-8.11-bin.zip
+[PHP: Hypertext Preprocessor](https://www.php.net)
+
+### 1.9 Python
+
+[Python](https://www.python.org)
+
+国内第三方镜像 [huaweicloud](https://mirrors.huaweicloud.com/python/) | [npmmirror](https://registry.npmmirror.com/binary.html?path=python/)
+
+设置 pip 镜像源
+
+```sh
+# 临时使用
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple xxxxx
+# 永久设置
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 ```
+
+### 1.10 Rust
+
+[Rust](https://www.rust-lang.org/zh-CN)
+
+### 1.11 TypeScript
+
+[TypeScript](https://www.typescriptlang.org/zh) JavaScript With Syntax For Types.
+
+### 1.12 【国产】仓颉
+
+[仓颉编程语言](https://cangjie-lang.cn/)是一款面向全场景智能的新一代编程语言，主打原生智能化、天生全场景、高性能、强安全。主要应用于鸿蒙原生应用及服务应用等场景中，为开发者提供良好的编程体验。
 
 ## 2 DB 数据库
 
@@ -170,91 +199,72 @@ not【全平台 付费】[Beyond Compare](https://www.beyondcompare.cc)
 * 【全平台 付费】[CLion](https://www.jetbrains.com.cn/clion)
 * ——————— ฅ՞• •՞ฅ ———————
 * 【全平台】[Eclipse](https://www.eclipse.org/downloads) ｜ [aliyun mirror](https://mirrors.aliyun.com/eclipse/technology/epp/downloads/release/) 优点是占用内存稍小
-* 【全平台 社区版免费】[IntelliJ IDEA](https://www.jetbrains.com.cn/idea)，其中 [EPA 版本](https://www.jetbrains.com/resources/eap/) 更新太频繁不推荐
+* 【全平台 对非商业用途免费】[IntelliJ IDEA](https://www.jetbrains.com.cn/idea)，其中 [EPA 版本](https://www.jetbrains.com/resources/eap/) 更新太频繁不推荐
 * 【全平台 免费】[SpringTools](https://spring.io/tools)
 * ——————— ฅ՞• •՞ฅ ———————
-* 【全平台 社区版免费】[PyCharm](https://www.jetbrains.com.cn/pycharm)
+* 【全平台 对非商业用途免费】[PyCharm](https://www.jetbrains.com.cn/pycharm)
 * 【全平台 对非商业用途免费】[WebStorm](https://www.jetbrains.com.cn/webstorm)
 * 【win mac】[Visual Studio](https://visualstudio.microsoft.com/zh-hans) 你可以使用 C#、F# 或 Visual Basic 语言编写 .NET 应用
+* ——————— ฅ՞• •՞ฅ ———————
+* [DevEco Studio](https://developer.huawei.com/consumer/cn/deveco-studio/resources/) 面向 HarmonyOS 应用及元服务开发者提供的集成开发环境
 
-## 7【常用】lang 编程语言
+## 7 Build tool 构建工具
 
-### 7.1 Autohotkey
+### 7.1 Web 构建工具
 
-【win】[Autohotkey](https://www.autohotkey.com) - [下载](https://www.autohotkey.com/download) | [GitHub 地址](https://github.com/AutoHotkey/AutoHotkey) 一款自动化脚本语言。
+* [Parcel](https://parceljs.org) 以其零配置和快速的构建速度而受到开发者的喜爱，适合快速开发。
+* [Turbo](https://turbo.build) Turbo is an incremental bundler and build system optimized for JavaScript and TypeScript, written in Rust.
+* [Vite](https://cn.vitejs.dev) 下一代的前端工具链
+* [Webpack](https://www.webpackjs.com) 功能强大，适用于各种规模的前端项目，支持复杂的构建流程和优化。
 
-### 7.2 C#
+<!-- more -->
 
-[C# 指南-.NET 托管语言](https://learn.microsoft.com/zh-cn/dotnet/csharp) | Microsoft Learn
+### 7.2 Java 应用构建工具
 
-### 7.3 Dart
+#### 7.2.1 Ant
 
-Dart [官网](https://dart.cn)
+[Ant](https://ant.apache.org) 在早期的 Java 项目中非常流行，它被设计用来驱动软件项目的构建过程，类似于 Make 工具，但它使用 XML（Extensible Markup Language）来描述构建过程和依赖关系，而不是传统的 Makefile。
 
-### 7.4 Go
+#### 7.2.2 Maven
 
-Go [官网](https://golang.google.cn)
+[Maven](https://maven.apache.org) 是一个构建工具，主要用于 Java 应用程序。由 Apache 软件基金会维护，它使用一个名为 POM（Project Object Model）的 XML 文件来描述项目的构建过程、依赖关系和其他配置信息。
 
-### 7.5 Java
+[镜像下载](https://repo.huaweicloud.com/apache/maven/maven-3)
 
-* [Amazon corretto](https://aws.amazon.com/cn/corretto)
-* [GraalVM](https://www.graalvm.org/downloads)
-* [Liberica JDK](https://bell-sw.com/pages/downloads)
-* [Microsoft openjdk](https://docs.microsoft.com/zh-cn/java/openjdk/download)
-* [Oracle Java](https://www.oracle.com/java/technologies/javase-downloads.html)
-* [Temurin](https://adoptium.net/temurin/releases)
+直链下载
 
-windows 版本如果是临时使用，可以在命令行界面键入 `set path=java` 所在的 bin 目录。长期使用则建议设置环境变量到 path。
+* [maven-3.9.6-bin.zip](https://repo.huaweicloud.com/apache/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.zip)
 
-### 7.6 Kotlin
+另一增强工具
 
-Kotlin [官网](https://kotlinlang.org)
+[mvnd](https://github.com/apache/maven-mvnd) - embeds Maven (so there is no need to install Maven separately).
 
-### 7.7 Node.js
+#### 7.2.3 Gradle
 
-[Node.js](https://nodejs.org/en) | [npmjs.com 镜像站](https://registry.npmmirror.com/binary.html?path=node/)
+[Gradle](https://gradle.org) 是一个开源的自动化构建系统，它被设计用来支持多语言和多平台的软件项目，尤其是 Java 项目。Gradle 是用 Groovy 和 Kotlin 编写的，它提供了一个基于 Apache Ant 和 Maven 的强大而灵活的构建自动化功能。
 
-lts 下载：
+[华为镜像](https://mirrors.huaweicloud.com/gradle/) ｜ [腾讯镜像](https://mirrors.cloud.tencent.com/gradle)
 
-* https://nodejs.org/dist/v22.14.0/node-v22.14.0-win-x64.zip
-* https://nodejs.org/dist/v20.18.3/node-v20.18.3-win-x64.zip
-* https://nodejs.org/dist/v18.20.6/node-v18.20.6-win-x64.zip
+直链下载
 
-配置 registry 加速
+* gradle-8.14.2-all.zip [腾讯源](https://mirrors.cloud.tencent.com/gradle/gradle-8.14.2-all.zip) ｜ [华为源](https://mirrors.huaweicloud.com/gradle/gradle-8.14.2-all.zip)
+* gradle-7.6.5-bin.zip [官方源](https://downloads.gradle.org/distributions/gradle-7.6.5-bin.zip)
+* gradle-6.9.4-all.zip [腾讯源](https://mirrors.cloud.tencent.com/gradle/gradle-6.9.4-all.zip) ｜ [华为源](https://mirrors.huaweicloud.com/gradle/gradle-6.9.4-all.zip)
 
-```sh
-# 临时使用
-npm install xxxxx --registry=https://registry.npmmirror.com
-# 永久设置
-npm config set registry https://registry.npmmirror.com
+build.gradle.kts 设置 maven 国内源
+
+```kts
+repositories {
+    maven("https://mirrors.cloud.tencent.com/nexus/repository/maven-public/")
+    mavenCentral()
+}
 ```
 
-### 7.8 PHP
+更换国内 distributionUrl 地址
 
-[PHP: Hypertext Preprocessor](https://www.php.net)
-
-### 7.9 Python
-
-[Python](https://www.python.org)
-
-国内第三方镜像 [huaweicloud](https://mirrors.huaweicloud.com/python/) | [npmmirror](https://registry.npmmirror.com/binary.html?path=python/)
-
-设置 pip 镜像源
-
-```sh
-# 临时使用
-pip install -i https://pypi.tuna.tsinghua.edu.cn/simple xxxxx
-# 永久设置
-pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+```properties
+distributionUrl=https\://mirrors.cloud.tencent.com/gradle/gradle-8.11-bin.zip
 ```
-
-### 7.10 Rust
-
-[Rust](https://www.rust-lang.org/zh-CN)
-
-### 7.11 TypeScript
-
-[TypeScript](https://www.typescriptlang.org/zh) JavaScript With Syntax For Types.
 
 ## 8 MQ 和 OSS
 

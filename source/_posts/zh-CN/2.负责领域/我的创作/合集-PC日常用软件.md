@@ -28,16 +28,16 @@ categories: 我的创作
 
 #### 1.0.2 浏览器
 
-* 【win 绿色版 & mac】[Catsxp 猫眼浏览器](https://www.catsxp.com) 鼠标悬停切换标签功能很好用，但是默认会自动更新我建议取消
+* 【win 绿色版 & mac】[Catsxp 猫眼浏览器](https://www.catsxp.com) 鼠标悬停切换标签功能很好用，建议关掉自动更新很烦人
 * 【linux】[360 安全浏览器](https://browser.360.net/gc/index.html)<!-- more -->
 
 关于浏览器的密码自动填充：三巨头应该都有自动填充的功能。否则我会用 Bitwarden，其次有人推荐 [KeePassXC](https://keepassxc.org/download)。
 
 #### 1.0.3 输入法
 
-* 【win】自带的微软输入法或[微信输入法](https://z.weixin.qq.com)
-* 【mac】自带的苹果输入法或[微信输入法](https://z.weixin.qq.com)
-* 【linux】自带或[搜狗输入法](https://shurufa.sogou.com/linux)
+* 【win】自带的微软输入法 或[微信输入法](https://z.weixin.qq.com)
+* 【mac】自带的苹果输入法 或[微信输入法](https://z.weixin.qq.com)
+* 【linux】自带 或[搜狗输入法](https://shurufa.sogou.com/linux)
 
 ### 1.1 工具类
 
@@ -47,7 +47,7 @@ categories: 我的创作
 
 #### 1.1.1【推荐】鼠标手势
 
-* 【win】[WGestures 1 代](https://www.yingdev.com/projects/wgestures) | [WGestures 2](https://store.lizhi.io/site/products/id/523?cid=46jjayiu) 付费
+* 【**win 精品软件**】[WGestures 1 代](https://dl-x-yingdev-x-com.img.addlink.cn/Content/Projects/WGestures/Release/1.8.5.0/Install%20WGestures%201.8.5.0.zip) 免费 | [WGestures 2](https://store.lizhi.io/site/products/id/523?cid=46jjayiu) 付费
 * 【mac】[BetterAndBetter](https://www.better365.cn/bab2.html) 不仅仅是鼠标手势
 * 【linux】Easystroke 或 KDE 内置的鼠标手势
 
@@ -62,7 +62,7 @@ categories: 我的创作
 * 【win 绿色版 & mac】[PixPin](https://pixpinapp.com) 不付费也能使用 OCR 和长截图功能 ｜ [小旺截图](https://www.xiaowang.com)
 * liunx 系统自带
 
-#### 1.1.4【常用】护眼
+#### 1.1.4 护眼
 
 **windows 平台**
 
@@ -80,14 +80,14 @@ categories: 我的创作
 
 **windows 平台**
 
-* [EagleGet](https://www.eagleget.org) 免费开源，支持视频嗅探
-* [NDM-Neat Download Manager](https://www.neatdownloadmanager.com/index.php/en) 体积小功能强，不支持 BT 磁力。[搭配 crx 插件](https://www.crxsoso.com/search?keyword=NeatDownloadManager%20&store=chrome) 支持在线网页视频下载
+* [Motrix](https://motrix.app/zh-CN) | [下载页](https://motrix.app/zh-CN/download) 颜值高，并支持下载 HTTP、FTP、BT、磁力链接。Github 资源良好支持
+* [Neat Download Manager](https://www.neatdownloadmanager.com/index.php/en) 体积小功能强，不支持 BT 磁力。[搭配 crx 插件](https://www.crxsoso.com/search?keyword=NeatDownloadManager%20&store=chrome) 支持在线网页视频下载
 * 哔哩哔哩专用下载器：【win】[Bilidown-哔哩视频下载](https://zhouql.vip/bilibili/pc) |【win】[DownKyi](https://www.colostar.cn/links/13486.html)（哔哩下载姬）
 
 **mac 平台**
 
-1. [Motrix](https://motrix.app/zh-CN) | [下载页](https://motrix.app/zh-CN/download)  颜值高，并支持下载 HTTP、FTP、BT、磁力链接。Github 资源良好支持
-1. [NDM-Neat Download Manager](https://www.neatdownloadmanager.com/index.php/en) 
+1. [Motrix](https://motrix.app/zh-CN) | [下载页](https://motrix.app/zh-CN/download)
+1. [Neat Download Manager](https://www.neatdownloadmanager.com/index.php/en) 
 1. mac 版迅雷其实也不错，不过必须去官网下载才是完整版
 
 **linux 平台**
@@ -95,7 +95,7 @@ categories: 我的创作
 1. 【全平台】[Motrix](https://motrix.app/zh-CN)
 1. 【linux win】[XDM](https://github.com/subhra74/xdm/releases) 可以认为是 linux 环境下的 idm
 
-#### 1.1.6【常用】网盘
+#### 1.1.6 网盘
 
 **windows 和 mac 平台**
 
@@ -103,7 +103,7 @@ categories: 我的创作
 
 **linux 平台**
 
-天翼云盘不支持，其他的则不好用
+天翼云盘不支持，其他则不好用
 
 #### 1.1.7 看图
 
@@ -270,7 +270,7 @@ not【win linux】[阿里旺旺](https://wangwang.taobao.com) 不好用
 
 **windows 平台**
 
-【win 自荐】[捷键](https://feipig.fun/jiejian) 自己开发的软件，已经包含了该功能，使用 alt + 空格可以呼出
+【win 自荐】[捷键](https://feipig.fun/jiejian) 自研，已包含了该功能，按 alt + 空格可呼出
 
 **mac 平台**
 
@@ -305,7 +305,7 @@ not 网易有道翻译
 
 ## 2 拓展
 
-### 2.0【常用】驱动运行库硬件检测
+### 2.0 驱动运行库硬件检测
 
 驱动请认准设备官网
 
@@ -334,7 +334,7 @@ not
 
 linux [安兔兔](https://www.antutu.com/download.htm)
 
-### 2.1【常用】激活类
+### 2.1 激活类
 
 [GitHub - zbezj/HEU_KMS_Activator](https://dl.lancdn.com/landian/soft/heu) | [备份站](https://dl.lancdn.com/landian/soft/heu) 支持数字激活 LTSC，win11 与 office2021 等激活
 
