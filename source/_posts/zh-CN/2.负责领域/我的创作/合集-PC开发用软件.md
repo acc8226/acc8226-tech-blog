@@ -114,7 +114,7 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
 ## 2 DB 数据库
 
-### 2.1 各类数据库
+### 2.1 关系型数据库
 
 * [Apache Derby](https://db.apache.org/derby/index.html)
 * [H2 Database](https://www.h2database.com/html/main.html)
@@ -231,13 +231,9 @@ not【全平台 付费】[Beyond Compare](https://www.beyondcompare.cc)
 
 [镜像下载](https://repo.huaweicloud.com/apache/maven/maven-3)
 
-直链下载
+直链下载 [maven-3.9.6-bin.zip](https://repo.huaweicloud.com/apache/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.zip)
 
-* [maven-3.9.6-bin.zip](https://repo.huaweicloud.com/apache/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.zip)
-
-另一增强工具
-
-[mvnd](https://github.com/apache/maven-mvnd) - embeds Maven (so there is no need to install Maven separately).
+另一增强工具 [mvnd](https://github.com/apache/maven-mvnd) - embeds Maven (so there is no need to install Maven separately).
 
 #### 7.2.3 Gradle
 
@@ -320,19 +316,24 @@ not
 
 * 【JavaScript】[Yarn](https://www.yarnpkg.cn) - JavaScript 软件包管理器
 
-## 11 Redis
 
-### 11.1 Redis 数据库
+## 11 NoSql 数据库
+
+#### 11.1 Redis
 
 Redis 是一种内存数据库，同时支持磁盘持久化。其数据模型是键值对形式，但支持多种不同类型的数据结构：字符串（Strings）、列表（Lists）、集合（Sets）、有序集合（Sorted Sets）、哈希表（Hashes）、流（Streams）等。
 
 [下载](https://redis.io/download) | [tporadowski/redis: Native port of Redis for Windows](https://github.com/tporadowski/redis) 
 
-### 11.2 QuickRedis
+#### 11.2 QuickRedis 客户端
 
 一款国产开源、免费、功能强大的 Redis 可视化管理工具
 
 [发行版下载](https://gitee.com/quick123official/quick_redis_blog/releases/)
+
+### 11.2 MongoDB
+
+[MongoDB](https://www.mongodb.com/) 是一个基于分布式文件存储的数据库。由C++语言编写。旨在为WEB应用提供可扩展的高性能数据存储解决方案。
 
 ## 12 ref 参考文档
 
@@ -345,7 +346,7 @@ Redis 是一种内存数据库，同时支持磁盘持久化。其数据模型�
 
 macOS 和 linux 系统一般都自带 git, 如果想要体验最新版, 可以去 [Git 官网](https://git-scm.com)下载体验。通常更推荐 [Git 镜像地址](https://registry.npmmirror.com/binary.html?path=git-for-windows)
 
-VSCode 和 IDEA 会自带 Git 功能。特别的如果是 windows 系统推荐搭配【win 精品软件 安装版】[TortoiseGit](https://tortoisegit.org/download) 简称小乌龟。
+VSCode 和 IDEA 会自带 Git 功能。特别的如果是 windows 系统推荐搭配【win 精品软件 安装版】[TortoiseGit](https://tortoisegit.org/download) | [镜像](https://mirrors.huaweicloud.com/tortoisegit/) 简称小乌龟。
 
 不喜欢 TortoiseGit 的用户可以试试【win mac】[Sourcetree](https://www.sourcetreeapp.com)
 
@@ -464,13 +465,13 @@ MSYS2 还是一组工具和库，为您提供了一个易于使用的环境，�
 
 [PowerShell-7.4.0-win-x64.zip](https://github.com/PowerShell/PowerShell/releases/download/v7.4.0/PowerShell-7.4.0-win-x64.zip)
 
-### 17.2【mac linux】Zsh
+### 17.2【mac linux】zsh
 
 mac 已经将 zsh 取代 bash 作为默认 shell 了
 
 ## 18 UML 图绘制
 
-【全平台】[StarUML](https://staruml.io)【30 天试用后付费】一个画 uml 的工具，还行，可能不够通用吧
+【全平台】[StarUML](https://staruml.io)【30 天试用后有付费提示】一个画 uml 的工具，还行但不够通用
 
 ## 19 框架
 
@@ -489,34 +490,12 @@ mac 已经将 zsh 取代 bash 作为默认 shell 了
 
 RuoYi 是一个基于 Spring Boot 的权限和流程管理的 Java Web 应用程序框架。它旨在简化企业应用程序的开发，提供一个通用的后台管理框架，使得开发者可以快速构建出功能完备的后台管理系统。
 
-### 性能测试和分析
-
-【Java】[JMeter](https://jmeter.apache.org/download_jmeter.cgi) 一个流行的性能测试工具，用于测量和分析软件的性能。
-
-### 代码质量与覆盖率分析
-
-* 【Java】[jacoco](https://www.jacoco.org/jacoco) 用于代码覆盖率分析，帮助开发者了解测试覆盖情况。
-* 【Java】[sonarqube](https://www.sonarsource.com/products/sonarqube) 用于代码质量检测，提供代码审查和持续的代码质量检测。
-
-### 持续集成与持续交付 (CI/CD)
-
-【Java】[jenkins](https://www.jenkins.io) 一个流行的开源自动化服务器，用于自动化各种任务，包括构建、测试和部署
-
-### 微服务架构与服务治理
-
-* 【Java】[Nacos](https://nacos.io/zh-cn/docs/v2/quickstart/quick-start.html) 一个更易于构建云原生应用的动态服务发现、配置管理和服务管理平台。
-* [Sentinel](https://github.com/alibaba/Sentinel/releases) 一个用于流量控制、熔断、降级等功能的微服务保护框架。
-
-### 分布式协调服务
-
-【Java】[Zookeeper](https://zookeeper.apache.org) 用于分布式应用程序的协调服务，常用于管理分布式环境中的配置信息、命名、提供分布式同步和提供组服务等。
-
 ## 20 库
 
 ### 数据库连接池
 
-* 【Jar】[c3p0](https://sourceforge.net/projects/c3p0/files/latest/download?source=files) 一个用于 Java 应用程序的数据库连接池库。
-* 【Jar】[DBCP](https://commons.apache.org/proper/commons-dbcp/index.html) 另一个常用的 Java 数据库连接池库，提供基本的数据库连接池功能。
+* 【Java】[c3p0](https://sourceforge.net/projects/c3p0/files/latest/download?source=files) 一个用于 Java 应用程序的数据库连接池库。
+* 【Java】[DBCP](https://commons.apache.org/proper/commons-dbcp/index.html) 另一个常用的 Java 数据库连接池库，提供基本的数据库连接池功能。
 
 ### 网络请求库
 
@@ -533,13 +512,49 @@ RuoYi 是一个基于 Spring Boot 的权限和流程管理的 Java Web 应用程
 
 ### 接口测试
 
-[REST Assured](https://rest-assured.io) 使用 REST-assured，你可以用非常接近自然语言的方式编写 API 测试。比如，你可以这样写测试代码：`given().param("key1", "value1").when().get("/api/resource").then().statusCode(200)`。是不是感觉很直观？
+【Java】[REST Assured](https://rest-assured.io) 使用 REST-assured，你可以用非常接近自然语言的方式编写 API 测试。比如，你可以这样写测试代码：`given().param("key1", "value1").when().get("/api/resource").then().statusCode(200)`。是不是感觉很直观。
 
 [使用 RestAssured 的高级功能](https://juejin.cn/post/7327723383386767411)
 
-## 21 工具
+### 代码质量与覆盖率分析
 
-[upx](https://github.com/upx/upx/releases) ｜ [upx-5.0.2-win64](https://github.com/upx/upx/releases/download/v5.0.2/upx-5.0.2-win64.zip)
+* 【Java】[jacoco](https://www.jacoco.org/jacoco) 用于代码覆盖率分析，帮助开发者了解测试覆盖情况。
+* 【Java】[sonarqube](https://www.sonarsource.com/products/sonarqube) 用于代码质量检测，提供代码审查和持续的代码质量检测。
+
+## 21 软件工具
+
+### 打包
+
+【exe 打包】[upx](https://github.com/upx/upx/releases) ｜ [upx-5.0.2-win64](https://github.com/upx/upx/releases/download/v5.0.2/upx-5.0.2-win64.zip)
+
+### 性能测试和分析
+
+【Java】[JMeter](https://jmeter.apache.org/download_jmeter.cgi) 一个流行的性能测试工具，用于测量和分析软件的性能。
+
+## 22 自建服务
+
+### 持续集成与持续交付 (CI/CD)
+
+【Java】[jenkins](https://www.jenkins.io) 一个流行的开源自动化服务器，用于自动化各种任务，包括构建、测试和部署
+
+### 微服务架构与服务治理
+
+* 【Java】[Nacos](https://nacos.io/zh-cn/docs/v2/quickstart/quick-start.html) 一个更易于构建云原生应用的动态服务发现、配置管理和服务管理平台。
+* [Sentinel](https://github.com/alibaba/Sentinel/releases) 一个用于流量控制、熔断、降级等功能的微服务保护框架。
+
+### 分布式协调服务
+
+【Java】[Zookeeper](https://zookeeper.apache.org) 用于分布式应用程序的协调服务，常用于管理分布式环境中的配置信息、命名、提供分布式同步和提供组服务等。
+
+### 代码托管平台
+
+gitlab 社区版
+
+[Gitea Official Website](https://about.gitea.com/) 我认为是低内存服务器的福音
+
+## 23 命令行工具
+
+[curl for windows](https://curl.se/windows/)
 
 ## 一些思考
 
