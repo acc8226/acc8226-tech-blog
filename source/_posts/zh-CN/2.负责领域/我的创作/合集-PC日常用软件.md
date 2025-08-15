@@ -2,7 +2,7 @@
 title: 合集-PC日常用软件
 permalink: mypc/
 date: 2023-03-22 21:02:00
-updated: 2025-08-02 09:50:00
+updated: 2025-08-15 19:35:22
 categories: 我的创作
 ---
 
@@ -29,7 +29,7 @@ categories: 我的创作
 #### 1.0.2 浏览器
 
 * 【win】[百分浏览器](https://www.centbrowser.cn/) 鼠标悬停切换标签功能很好用，普通用户建议使用安装版，否则建议绿色版会更加便携
-* 【mac】[Catsxp 猫眼浏览器](https://www.catsxp.com) 鼠标悬停切换标签功能很好用，建议关掉自动更新很烦人
+* 【mac】[Catsxp 猫眼浏览器](https://www.catsxp.com) 鼠标悬停切换标签功能很好用，建议关掉很烦人的自动更新
 * 【linux】[360 安全浏览器](https://browser.360.net/gc/index.html)<!-- more -->
 
 关于浏览器的密码自动填充：三巨头应该都有自动填充的功能。否则我会用 Bitwarden，其次有人推荐 [KeePassXC](https://keepassxc.org/download)。
@@ -44,8 +44,8 @@ categories: 我的创作
 
 #### 1.1.0【常用】压缩解压
 
-【win】[Bandizip 6](https://dl.bandisoft.com/bandizip/BANDIZIP-SETUP.EXE) 颜值和功能均在线，属于最后一个无广告版本。到了 7 付费才好用
-【mac、linux】[PeaZip](https://peazip.github.io/index.html) 含智能解压。其中 windows 建议使用安装版
+【win 安装版】[Bandizip 6](https://dl.bandisoft.com/bandizip/BANDIZIP-SETUP.EXE) 含自动解压（智能解压）且颜值和功能均在线，属于最后一个无广告版本。到 v7 版本就会偶尔弹广告除了付费
+【mac、linux】[PeaZip](https://peazip.github.io/index.html) 含智能解压
 
 #### 1.1.1【推荐】鼠标手势
 
