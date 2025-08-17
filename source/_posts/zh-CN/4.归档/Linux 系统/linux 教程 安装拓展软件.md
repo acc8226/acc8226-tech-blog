@@ -19,8 +19,7 @@ wget -q https://github.com/Aniverse/A/raw/i/a && bash a
 
 ### WDCP 面板
 
-WDCP - 下载安装
-<https://www.wdcp.net/download.html>
+[WDCP - 下载安装](https://www.wdcp.net/download.html)
 
 yum install -y wget && wget -O install.sh http://dl.wdcp.net/install/install.sh && sh install.sh cus
 
@@ -49,7 +48,7 @@ yum install -y wget && wget -O install.sh http://dl.wdcp.net/install/install.sh 
 **第三步、使用 Shadowsocks 终端体验 VPN**
 1、下载对应客户端
 
-Windows：<https://github.com/shadowsocks/shadowsocks-windows/releases>
+[Windows](https://github.com/shadowsocks/shadowsocks-windows/releases)
 
 Mac：<https://github.com/yangfeicheung/Shadowsocks-X/releases>
 
@@ -91,13 +90,11 @@ iPhone：App Store 上下载 ShadowLink，这个要用国外 appid 才可以下�
 
 ## 配置 nginx
 
-Nginx Proxy Manager
-<https://nginxproxymanager.com/>
+[Nginx Proxy Manager](https://nginxproxymanager.com)
 
 ## 搭建 WordPress
 
-官网
-<https://cn.wordpress.org/download/>
+[官网](https://cn.wordpress.org/download)
 
 ```sh
 wget https://cn.wordpress.org/latest-zh_CN.tar.gz

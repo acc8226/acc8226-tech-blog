@@ -44,7 +44,7 @@ categories: 我的创作
 
 #### 1.1.0【常用】压缩解压
 
-【win 安装版】[Bandizip 6](https://dl.bandisoft.com/bandizip/BANDIZIP-SETUP.EXE) 含自动解压（智能解压）且颜值和功能均在线，属于最后一个无广告版本。到 v7 版本就会偶尔弹广告除了付费
+【win 安装版】[Bandizip 6.xx](https://www.bandisoft.com/bandizip/dl.php?web) 含自动解压（智能解压）且颜值和功能均在线，属于最后一个无广告版本。到 v7 版本就会偶尔弹广告除了付费
 【mac、linux】[PeaZip](https://peazip.github.io/index.html) 含智能解压
 
 #### 1.1.1【推荐】鼠标手势
@@ -148,9 +148,11 @@ categories: 我的创作
 
 **windows 平台**
 
-* 阅读器 【win 绿色版】[SumatraPDF](https://www.sumatrapdfreader.org) is a PDF, ePub, MOBI, CHM, XPS, DjVu, CBZ, CBR reader for Windows 提供安装版和绿色版，小巧但实用
+* 阅读器 【win 绿色版】[SumatraPDF](https://www.sumatrapdfreader.org) is a PDF, ePub, MOBI, CHM, XPS, DjVu, CBZ, CBR reader for Windows 提供安装版和绿色版，小巧但实用。
 * 编辑器 【win】[PDFgear](https://www.pdfgear.com/download)
 * PDF 标注做笔记 [BookxNote](http://www.bookxnote.com)
+
+注：如果觉得 SumatraPDF 太过精简，可以考虑 WPS 自带了 pdf 组件。否则可额外下载功能更多的 【win】[WPS PDF 独立版](https://www.wps.cn/product/kingsoftpdf)
 
 * **mac 平台**【mac】[迅读 PDF](https://www.pdfxd.com/mac.html) 全能好用的 PDF 文件阅读器及编辑器
 * **linux 平台**【linux】自带或者使用浏览器读取 pdf
@@ -261,8 +263,10 @@ not【win linux】[阿里旺旺](https://wangwang.taobao.com) 不好用
 
 备用
 
-* 【全平台】[ToDesk](https://www.todesk.com/download.html) | [向日葵](https://sunlogin.oray.com)
+* [向日葵](https://sunlogin.oray.com)
 * [魔控](https://monect.com) 除了远程控制电脑，还能模拟游戏手柄
+
+not 【全平台】[ToDesk](https://www.todesk.com/download.html) 吃相难看，说检测到异常非要我开会员
 
 [如何连接 windows 电脑](https://learn.microsoft.com/zh-cn/windows-server/remote/remote-desktop-services/clients/remote-desktop-clients)
 
