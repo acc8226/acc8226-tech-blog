@@ -29,7 +29,7 @@ categories: 我的创作
 #### 1.0.2 浏览器
 
 * 【win】[百分浏览器](https://www.centbrowser.cn/) 鼠标悬停切换标签功能很好用，普通用户建议使用安装版，否则建议绿色版会更加便携
-* 【mac】[Catsxp 猫眼浏览器](https://www.catsxp.com) 鼠标悬停切换标签功能很好用，建议关掉很烦人的自动更新
+* 【mac】[Catsxp 猫眼浏览器](https://www.catsxp.com) 鼠标悬停切换标签功能很好用，建议关掉很烦人的自动更新功能
 * 【linux】[360 安全浏览器](https://browser.360.net/gc/index.html)<!-- more -->
 
 关于浏览器的密码自动填充：三巨头应该都有自动填充的功能。否则我会用 Bitwarden，其次有人推荐 [KeePassXC](https://keepassxc.org/download)。
@@ -84,7 +84,7 @@ categories: 我的创作
 
 * [Motrix](https://motrix.app/zh-CN) | [下载页](https://motrix.app/zh-CN/download) 颜值高，并支持下载 HTTP、FTP、BT、磁力链接。Github 资源良好支持
 * [Neat Download Manager](https://www.neatdownloadmanager.com/index.php/en) 体积小功能强，不支持 BT 磁力。[搭配 crx 插件](https://www.crxsoso.com/search?keyword=NeatDownloadManager%20&store=chrome) 支持在线网页视频下载
-* 哔哩哔哩专用下载器：【win】[Bilidown-哔哩视频下载](https://zhouql.vip/bilibili/pc) |【win】[DownKyi](https://www.colostar.cn/links/13486.html)（哔哩下载姬）
+* 哔哩哔哩专用下载器：【win】[Bilidown-哔哩视频下载](https://www.bilibili.com/opus/1024566076286959656) |【win】[DownKyi](https://www.colostar.cn/links/13486.html)（哔哩下载姬）
 
 **mac 平台**
 
