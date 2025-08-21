@@ -59,12 +59,12 @@ mkdir -vp cloudreve/{uploads,avatar} \
 
 # 然后必须使用绝对路径进行映射
 docker run -d \
--p 5212:5212 \
---mount type=bind,source=/home/ubuntu/cloudreve/conf.ini,target=/cloudreve/conf.ini \
---mount type=bind,source=/home/ubuntu/cloudreve/cloudreve.db,target=/cloudreve/cloudreve.db \
--v /home/ubuntu/cloudreve/uploads:/cloudreve/uploads \
--v /home/ubuntu/cloudreve/avatar:/cloudreve/avatar \
-cloudreve/cloudreve:latest
+    -p 5212:5212 \
+    --mount type=bind,source=/home/ubuntu/cloudreve/conf.ini,target=/cloudreve/conf.ini \
+    --mount type=bind,source=/home/ubuntu/cloudreve/cloudreve.db,target=/cloudreve/cloudreve.db \
+    -v /home/ubuntu/cloudreve/uploads:/cloudreve/uploads \
+    -v /home/ubuntu/cloudreve/avatar:/cloudreve/avatar \
+    cloudreve/cloudreve:latest
 ```
 
 ### 密码管理 server
