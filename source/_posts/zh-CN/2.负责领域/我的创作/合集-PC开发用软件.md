@@ -381,17 +381,13 @@ not 【gui mac】snailSVN 偶有 bug
 
 【全平台 精品软件】[Termius](https://www.termius.com)
 
-and
+and 【Windows 精品软件 免费 便携版】WinSCP [官网](https://winscp.net/eng/index.php) | [下载](https://winscp.net/eng/downloads.php) - Free SFTP and FTP client
 
-【Windows 精品软件 免费 便携版】WinSCP [官网](https://winscp.net/eng/index.php) | [下载](https://winscp.net/eng/downloads.php) - Free SFTP and FTP client
-
-or
-
-【win 精品软件 免费】[xshell 家庭/学校免费版](https://www.xshell.com/zh/free-for-home-school/)
+or 【win 精品软件 免费】[xshell 家庭/学校免费版](https://www.xshell.com/zh/free-for-home-school/)
 
 【win 便携】putty
 
-* 【win】[putty 下载](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
+* 【win】[putty 下载](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) | [tuna 镜像站](https://mirrors-i.tuna.tsinghua.edu.cn/putty/latest.html)
 * 【win】[kitty 下载](https://github.com/cyd01/KiTTY/releases)
 
 not
