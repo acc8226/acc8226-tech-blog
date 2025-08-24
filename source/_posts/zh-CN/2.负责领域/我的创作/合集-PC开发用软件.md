@@ -546,11 +546,11 @@ RuoYi 是一个基于 Spring Boot 的权限和流程管理的 Java Web 应用程
 
 gitlab 社区版
 
-[Gitea Official Website](https://about.gitea.com/) 我认为是低内存服务器的福音
+[Gitea Official Website](https://about.gitea.com) 我认为是低内存服务器的福音
 
 ## 23 命令行工具
 
-[curl for windows](https://curl.se/windows/)
+[curl for windows](https://curl.se/windows)
 
 ## 一些思考
 

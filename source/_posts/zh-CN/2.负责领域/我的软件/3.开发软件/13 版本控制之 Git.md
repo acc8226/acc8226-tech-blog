@@ -51,8 +51,7 @@ GitHub 官方客户端工具，可管理 git。
 
 ### SourceTree【全平台】
 
-Sourcetree | Free Git GUI for Mac and Windows
-<https://www.sourcetreeapp.com/>
+[Sourcetree](https://www.sourcetreeapp.com) | Free Git GUI for Mac and Windows
 
 not
 

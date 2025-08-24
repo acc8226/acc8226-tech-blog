@@ -123,7 +123,6 @@ async function fetchHandler(e) {
     }
 }
 
-
 /**
  * @param {Request} req
  * @param {string} pathname
@@ -165,7 +164,6 @@ function httpHandler(req, pathname) {
     }
     return proxy(urlObj, reqInit)
 }
-
 
 /**
  *
