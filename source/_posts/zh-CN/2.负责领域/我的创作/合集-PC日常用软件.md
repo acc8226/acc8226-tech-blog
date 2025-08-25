@@ -2,7 +2,7 @@
 title: 合集-PC日常用软件
 permalink: mypc/
 date: 2023-03-22 21:02:00
-updated: 2025-08-15 19:35:22
+updated: 2025-08-25 17:27:55
 categories: 我的创作
 ---
 
@@ -10,11 +10,12 @@ categories: 我的创作
 
 ## 前言
 
-安全永远是第一要务。下载软件也尽量从官网下载，这样更安全，也避免从其他渠道下载到恶意软件。
+安全永远是第一要务。下载软件也尽量从官网下载，这样更安全，降低了从其他渠道下载到恶意软件的可能性。
 
 注：
 
-* 以下内容谨代表个人观点。软件上尽量选择跨平台在搭配特定系统特有软件即可满足大部分使用场景
+* 以下内容谨代表个人观点。软件上我优先考虑那些跨平台且好用的软件
+* 关于应该选择绿色版还是安装版：若无在他人电脑上的使用需要 或 特定版本不想升级 或 纯粹是绿色软件爱好者，否则默认推荐安装版
 * “官网收录”模块收录的各软件官网地址仅供参考
 
 ## 1 日常
@@ -23,28 +24,27 @@ categories: 我的创作
 
 #### 1.0.1 安全类
 
-* 【win】[360 安全卫士极速版](https://weishi.360.cn) | [火绒安全](https://www.huorong.cn)
-* 【mac】[腾讯柠檬清理](https://lemon.qq.com) ｜ [360 安全卫士 for mac](https://www.360.cn/mac/index.html)
+* 【win】荣耀电脑自带管家（微软电脑管家...） 或 [360 安全卫士极速版](https://weishi.360.cn) 或 [火绒安全](https://www.huorong.cn)
+* 【mac】[腾讯柠檬清理](https://lemon.qq.com) 或 [360 安全卫士](https://www.360.cn/mac/index.html)
 
 #### 1.0.2 浏览器
 
-* 【win】[百分浏览器](https://www.centbrowser.cn/) 鼠标悬停切换标签功能很好用，普通用户建议使用安装版，否则建议绿色版会更加便携
-* 【mac】[Catsxp 猫眼浏览器](https://www.catsxp.com) 鼠标悬停切换标签功能很好用，建议关掉很烦人的自动更新功能
+* 【**win 精品软件**】[百分浏览器](https://www.centbrowser.cn) 鼠标悬停切换标签功能很好用
+* 【mac】[猫眼浏览器](https://www.catsxp.com) 鼠标悬停切换标签功能很好用，建议关掉很烦人的自动更新功能
 * 【linux】[360 安全浏览器](https://browser.360.net/gc/index.html)<!-- more -->
 
 关于浏览器的密码自动填充：三巨头应该都有自动填充的功能。否则我会用 Bitwarden，其次有人推荐 [KeePassXC](https://keepassxc.org/download)。
 
 #### 1.0.3 输入法
 
-* 【win】自带的微软输入法 或[微信输入法](https://z.weixin.qq.com)
-* 【mac】自带的苹果输入法 或[微信输入法](https://z.weixin.qq.com)
+* 【win & mac】自带输入法 或[微信输入法](https://z.weixin.qq.com)
 * 【linux】自带 或[搜狗输入法](https://shurufa.sogou.com/linux)
 
 ### 1.1 工具类
 
 #### 1.1.0【常用】压缩解压
 
-【win 安装版】[Bandizip 6.xx](https://www.bandisoft.com/bandizip/dl.php?web) 含自动解压（智能解压）且颜值和功能均在线，属于最后一个无广告版本。到 v7 版本就会偶尔弹广告除了付费
+【**win 精品软件**】[Bandizip 6.xx](https://www.bandisoft.com/bandizip/dl.php?web) 含自动解压（智能解压）且颜值和功能均在线，属于最后一个无广告版本。到 v7 版本会偶尔弹广告除了付费
 【mac、linux】[PeaZip](https://peazip.github.io/index.html) 含智能解压
 
 #### 1.1.1【推荐】鼠标手势
@@ -66,17 +66,11 @@ categories: 我的创作
 
 #### 1.1.4 护眼
 
-**windows 平台**
+**windows 平台**【win mac】[f.lux](https://justgetflux.com) +【win 绿色版 自荐】[捷键](https://feipig.fun/jiejian) 包含了定时提醒
 
-【win mac】[f.lux](https://justgetflux.com) +【win 绿色版 自荐】[捷键](https://feipig.fun/jiejian) 包含了定时提醒
+**mac 平台**【mac win】[f.lux](https://justgetflux.com) +【mac】[一休](https://apps.apple.com/cn/app/%E4%B8%80%E4%BC%91-%E4%BC%91%E6%81%AF%E4%B8%80%E4%B8%8B/id6467176005) 用于定时提醒
 
-**mac 平台**
-
-【mac win】[f.lux](https://justgetflux.com) +【mac】[一休](https://apps.apple.com/cn/app/%E4%B8%80%E4%BC%91-%E4%BC%91%E6%81%AF%E4%B8%80%E4%B8%8B/id6467176005) 用于定时提醒
-
-**linux 平台**
-
-虚位以待
+**linux 平台** 虚位以待
 
 #### 1.1.5【常用】下载
 
@@ -130,19 +124,13 @@ categories: 我的创作
 
 #### 1.2.1【常用】Office
 
-一般品牌机会赠送[微软 Office](https://www.microsoftstore.com.cn/software/office) ｜ [Word for mac](https://apps.apple.com/cn/app/microsoft-word/id462054704?mt=12)、[Excel for mac](https://apps.apple.com/cn/app/microsoft-excel/id462058435?mt=12)、[PowerPoint for mac](https://apps.apple.com/cn/app/microsoft-powerpoint/id462062816?mt=12)
+一般品牌机会赠送[微软 Office](https://www.microsoftstore.com.cn/software/office)，否则一般会用【全平台 [WPS](https://www.wps.cn) 需登录才能解锁编辑太恶心。好在 windows 可使用 [WPS Office 教育考试专用版](https://ncre.neea.edu.cn/html1/report/1507/861-1.htm)
 
-否则一般会用【全平台 [WPS](https://www.wps.cn) 需登录才能解锁编辑太恶心。好在 windows 可以使用 [WPS Office 教育考试专用版](https://ncre.neea.edu.cn/html1/report/1507/861-1.htm)
+**Web 平台** 暂推荐 [金山文档](https://www.kdocs.cn) 适合文档分享。但千万记得加水印和设置只读访问权限，防止资料泄漏
 
-**Web 平台**
+**linux 平台** 除了 WPS 和 LibreOffice，可以安装 [WinApps for linux](https://nowsci.com/winapps) | [github 项目地址](https://github.com/Fmstrat/winapps)
 
-我推荐【[mac 版](https://apps.apple.com/cn/app/%E8%85%BE%E8%AE%AF%E6%96%87%E6%A1%A3/id1370780836)】[腾讯文档](https://docs.qq.com)和[金山文档](https://www.kdocs.cn) 适合文档分享。但千万记得加水印和设置只读访问权限，防止资料泄漏
-
-**linux 平台**
-
-除了 WPS 和 LibreOffice，可以安装 [WinApps for linux](https://nowsci.com/winapps) | [github 项目地址](https://github.com/Fmstrat/winapps)
-
-官网收录：【win】[永中 Office](https://www.yozosoft.com) | 【全平台】[LibreOffice](https://zh-cn.libreoffice.org/download/libreoffice)
+官网收录：【win】[永中 Office](https://www.yozosoft.com) | 【全平台】[LibreOffice](https://zh-cn.libreoffice.org/download/libreoffice) & [tuna 源](https://mirrors-i.tuna.tsinghua.edu.cn/libreoffice/libreoffice/stable/)
 
 #### 1.2.2 PDF 文档
 
@@ -152,7 +140,7 @@ categories: 我的创作
 * 编辑器 【win】[PDFgear](https://www.pdfgear.com/download)
 * PDF 标注做笔记 [BookxNote](http://www.bookxnote.com)
 
-注：如果觉得 SumatraPDF 太过精简，可以考虑 WPS 自带了 pdf 组件。否则可额外下载功能更多的 【win】[WPS PDF 独立版](https://www.wps.cn/product/kingsoftpdf)
+注：如果觉得 SumatraPDF 太过精简，可考虑 WPS 自带的 pdf 组件。否则可额外下载 【win】[WPS PDF 独立版](https://www.wps.cn/product/kingsoftpdf)
 
 * **mac 平台**【mac】[迅读 PDF](https://www.pdfxd.com/mac.html) 全能好用的 PDF 文件阅读器及编辑器
 * **linux 平台**【linux】自带或者使用浏览器读取 pdf
@@ -301,7 +289,7 @@ not albert 安装不上
 
 ### 1.10 词典类
 
-[金山词霸](https://cp.iciba.com) 或者 欧路词典
+[金山词霸](https://cp.iciba.com) 或者 [欧路词典](https://www.eudic.net)
 
 not 网易有道翻译
 
@@ -472,11 +460,8 @@ not
 
 or
 
-备用【win】[SpaceSniffer](http://www.uderzo.it/main_products/space_sniffer/index.html)
-
-or
-
-备用【win 安装版】[TreeSize](https://www.jam-software.com/treesize/editions.shtml)
+* 备用【win】[SpaceSniffer](http://www.uderzo.it/main_products/space_sniffer/index.html)
+* 备用【win 安装版】[TreeSize](https://www.jam-software.com/treesize/editions.shtml)
 
 ### 2.10【常用】清理卸载
 
@@ -587,8 +572,8 @@ not【win】[Rufus](https://rufus.ie/zh) 其实还不错，但是和 Ventoy 相�
 
 not
 
-* Todoist 不太喜欢这种风格
 * Anydo 网络限制 淘汰
+* Todoist 不太喜欢这种风格
 
 ### 2.26 日历
 

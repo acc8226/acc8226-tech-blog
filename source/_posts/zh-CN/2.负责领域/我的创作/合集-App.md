@@ -2,7 +2,7 @@
 title: 合集-App
 permalink: myapp/
 date: 2017-04-13 22:07:33
-updated: 2025-08-02 09:51:00
+updated: 2025-08-25 17:27:16
 categories: 我的创作
 ---
 
@@ -413,9 +413,7 @@ not
 * [VLC](https://www.videolan.org/vlc/download-android.html) (可倍速播放视频)
 * 哔哩哔哩 内容较丰富
 
-留存
-
-优酷 | 腾讯视频
+留存 优酷 | 腾讯视频
 
 not 爱奇艺 广告有点烦人
 

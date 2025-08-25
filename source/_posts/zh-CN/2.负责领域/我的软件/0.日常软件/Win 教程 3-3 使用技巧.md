@@ -25,9 +25,7 @@ categories:
 
 ### 浏览器技巧
 
-强制刷新页面：按下 Ctrl + F5（Windows）或 Cmd + Shift + R（Mac）来强制刷新页面。这会清除浏览器缓存，确保页面加载最新的文件。
-
-<!-- more -->
+强制刷新页面：按下 Ctrl + F5（Windows）或 Cmd + Shift + R（Mac）来强制刷新页面。这会清除浏览器缓存，确保页面加载最新的文件。<!-- more -->
 
 ### 超酷的滑动关机
 

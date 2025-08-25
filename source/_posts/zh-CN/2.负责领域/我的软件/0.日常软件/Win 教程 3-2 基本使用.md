@@ -242,6 +242,10 @@ rp 文件可以通过 Axure8 导入打开，具体方式如下：
 
 所以建议为了方便预览, 在导出 rp 文件的同事导出再导出一份 html 格式是比较好的做法。
 
+### win 10 的任务栏文件在哪个文件夹
+
+C:\Users（用户文件夹）\用户名\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\ 文件夹下。
+
 ## 问答
 
 ### windows-setup.exe 和 windows-legacy-setup.exe 有什么区别吗
