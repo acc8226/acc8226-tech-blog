@@ -165,7 +165,7 @@ vscode 插件推荐：[markdownlint](https://marketplace.visualstudio.com/items?
 not
 
 * 【全平台 公共预览版免费】[JetBrains Fleet](https://www.jetbrains.com/zh-cn/fleet) 预览版还不太成熟
-* 【win 精品软件 绿色版】[Notepad++](https://github.com/notepad-plus-plus/notepad-plus-plus) 是好软件，除了言论
+* 【win 精品软件 绿色版】[Notepad++](https://github.com/notepad-plus-plus/notepad-plus-plus) | [mirror](https://sourceforge.net/projects/notepadplusplus.mirror/) 是好软件，除了言论
 * 【全平台】[Brackets](https://brackets.io) - A modern, open source code editor that understands web design
 * 【win】[EverEdit](https://www.everedit.net) 不好用
 * 【win】[Geany](https://www.geany.org) 只有安装版的差评，且 UI 目前差点意思
@@ -459,7 +459,8 @@ MSYS2 还是一组工具和库，为您提供了一个易于使用的环境，�
 
 高级用户可使用 zip 压缩包解压即用。
 
-[PowerShell-7.4.0-win-x64.zip](https://github.com/PowerShell/PowerShell/releases/download/v7.4.0/PowerShell-7.4.0-win-x64.zip)
+* [PowerShell-7.5.2-win-x64.msi](https://github.com/PowerShell/PowerShell/releases/download/v7.5.2/PowerShell-7.5.2-win-x64.msi)
+* [PowerShell-7.5.2-win-x64.zip](https://github.com/PowerShell/PowerShell/releases/download/v7.5.2/PowerShell-7.5.2-win-x64.zip)
 
 ### 17.2【mac linux】zsh
 
