@@ -1381,7 +1381,7 @@ Bean's Quest 算是 1 代 和 Bean Dreams 算是 2 代
 
 ### 公考事考
 
-1. [公考雷达](https://sj.qq.com/appdetail/com.maidu.gkld) 选岗用
+1. [公考雷达](https://sj.qq.com/appdetail/com.maidu.gkld) 职位智能匹配很好用
 1. [半月谈](https://sj.qq.com/appdetail/com.bytxmt.banyuetan) 行测和申论、面试课程都有，完成任务后会全额返现
 1. [夸克](https://sj.qq.com/appdetail/com.quark.browser) 倍速播放视频、ai 解题、网盘资料等功能一网打尽
 1. [豆包爱学](https://sj.qq.com/appdetail/com.aitutor.hippo) 同样是解题，对于时政和常识有奇效
