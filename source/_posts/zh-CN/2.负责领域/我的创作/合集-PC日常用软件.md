@@ -44,8 +44,9 @@ categories: 我的创作
 
 #### 1.1.0【常用】压缩解压
 
-【**win 精品软件**】[Bandizip 6.xx](https://www.bandisoft.com/bandizip/dl.php?web) 含自动解压（智能解压）且颜值和功能均在线，属于最后一个无广告版本。到 v7 版本会偶尔弹广告除了付费
-【mac、linux】[PeaZip](https://peazip.github.io/index.html) 含智能解压
+* 【win 11】[PeaZip](https://peazip.github.io/index.html) 可添加智能解压到新版 win 11 右键菜单
+* 【低于 win 11】[Bandizip 6.xx](https://www.bandisoft.com/bandizip/dl.php?web) 含自动解压（智能解压）且颜值和功能均在线，属于最后一个无广告版本。到 v7 版本会偶尔弹广告除了付费
+* 【mac、linux】[PeaZip](https://peazip.github.io/index.html) 含智能解压
 
 #### 1.1.1【推荐】鼠标手势
 
