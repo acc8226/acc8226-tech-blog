@@ -444,16 +444,14 @@ or【win】[GRC's | DNS Nameserver Performance Benchmark](https://www.grc.com/
 1. 【全平台】MarkText [官网](https://www.marktext.cc/) | [GitHub 源](https://github.com/marktext/marktext/releases) 轻度使用的 markdown 编辑器
 1. 【全平台】[obsidian](https://obsidian.md) 功能特强大，玩法多
 
-备用
-
-* 【全平台】[Typora](https://typoraio.cn) 功能强大，容易上手，但收费，有条件可支持下
-* 【mac】[熊掌记](https://bear.app/zh/#price) 颜值和功能不错，免费版功能有限
+备用【全平台 精品软件】[Typora](https://typoraio.cn) 功能强大，容易上手，但收费，有条件可支持下
 
 not
 
 * 【win】[MarkdownPad2](http://markdownpad.com) 感觉差点意思
 * 【mac】[Ulysses](https://www.ulysses.app/zh) 收费就算了
 * 【win】MWeb 不太喜欢且收费
+* 【mac】[熊掌记](https://bear.app/zh/#price) 颜值和功能不错，免费版功能有限
 
 ### 2.9 大文件分析
 
