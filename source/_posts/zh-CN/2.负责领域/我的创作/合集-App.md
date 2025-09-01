@@ -655,6 +655,10 @@ not
 
 什么值得买HD 颜值很高且存活了很多年
 
+### 鸿蒙
+
+[最会买](https://appgallery.huawei.com/app/detail?id=com.ruanmei.zuihuimai.hosnext)
+
 ## 8 旅行类
 
 ### 安卓和 iPhone
