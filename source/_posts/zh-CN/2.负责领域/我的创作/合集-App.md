@@ -1403,6 +1403,7 @@ Bean's Quest 算是 1 代 和 Bean Dreams 算是 2 代
 3. [夸克](https://sj.qq.com/appdetail/com.quark.browser) 倍速播放视频、ai 解题、网盘资料等功能一网打尽
 4. [豆包爱学](https://sj.qq.com/appdetail/com.aitutor.hippo) 同样是解题，擅长时政、常识、数量等
 5. [iHour](https://sj.qq.com/appdetail/com.clover.ihour) 一个帮助你规划、记录自己时间投入的 app
+6. [讯飞有声](https://sj.qq.com/appdetail/com.iflytek.readassistant) txt、pdf、word 资料可随时语音播放
 
 小程序
 
