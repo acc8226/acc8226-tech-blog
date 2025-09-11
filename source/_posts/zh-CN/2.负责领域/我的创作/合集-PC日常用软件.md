@@ -467,10 +467,10 @@ or
 **windows 平台**
 
 * 【win 绿色版】[极客卸载 Geek Uninstaller](https://geekuninstaller.com/download) 简单清爽
-* 【win 绿色版】[HiBitUninstaller](https://www.hibitsoft.ir/Uninstaller.html) 体积小巧+卸载功能强大
+* 【win 绿色版】[HiBitUninstaller](https://www.hibitsoft.ir/Uninstaller.html) 体积小巧 + 卸载功能强大
 * 【绿色版】[RevoUninstaller 免费版](https://www.revouninstaller.com/products/revo-uninstaller-free) 界面有点旧
 
-not [CCleaner](https://www.ccleaner.com/zh-cn/ccleaner) 只有安装版差评
+not [CCleaner](https://www.ccleaner.com/zh-cn/ccleaner) 只有安装版差评，且现在的版本有点卡，奈何功能强大
 
 **mac 平台**
 
