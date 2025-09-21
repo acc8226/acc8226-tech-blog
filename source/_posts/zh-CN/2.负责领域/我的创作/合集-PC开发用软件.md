@@ -196,7 +196,7 @@ not【全平台 付费】[Beyond Compare](https://www.beyondcompare.cc)
 * ——————— ฅ՞• •՞ฅ ———————
 * 【全平台】[Code::Blocks](https://www.codeblocks.org/downloads/binaries) for c/c++
 * 【win】[小熊猫 C++（RedPanda C++）](http://royqh.net/redpandacpp)
-* 【全平台 付费】[CLion](https://www.jetbrains.com.cn/clion)
+* 【全平台】[CLion](https://www.jetbrains.com.cn/clion) 对非商业用途免费
 * ——————— ฅ՞• •՞ฅ ———————
 * 【全平台】[Eclipse](https://www.eclipse.org/downloads) ｜ [aliyun mirror](https://mirrors.aliyun.com/eclipse/technology/epp/downloads/release/) 优点是占用内存稍小
 * 【全平台 对非商业用途免费】[IntelliJ IDEA](https://www.jetbrains.com.cn/idea)，其中 [EPA 版本](https://www.jetbrains.com/resources/eap/) 更新太频繁不推荐
