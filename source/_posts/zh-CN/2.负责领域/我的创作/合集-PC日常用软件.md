@@ -2,7 +2,7 @@
 title: 合集-PC日常用软件
 permalink: mypc/
 date: 2023-03-22 21:02:00
-updated: 2025-08-25 17:27:55
+updated: 2025-09-29 23:11:20
 categories: 我的创作
 ---
 
@@ -202,7 +202,7 @@ not
 
 本地播放：平时我也基本不看歌词。比如自带的 kde 组件 [elisa](https://apps.kde.org/zh-cn/elisa)
 
-在线播放：【全平台】[lx-music 洛雪音乐桌面版](https://github.com/lyswhut/lx-music-desktop) |【全平台】[QQ 音乐](https://y.qq.com/download/index.html) | [YesPlayMusic](https://github.com/qier222/YesPlayMusic) 高颜值的第三方网易云播放器
+在线播放：[lx-music 洛雪音乐桌面版](https://github.com/lyswhut/lx-music-desktop) | [QQ 音乐](https://y.qq.com/download/index.html) | [YesPlayMusic](https://github.com/qier222/YesPlayMusic) 高颜值的第三方网易云播放器 | [AlgerMusicPlayer](https://donate.alger.fun/download)
 
 官网收录：【win [mac](https://apps.apple.com/cn/app/%E6%B1%BD%E6%B0%B4%E9%9F%B3%E4%B9%90-%E6%8A%96%E9%9F%B3%E9%9F%B3%E4%B9%90%E7%89%88/id1605585211)】[汽水音乐](https://www.qishui.com) |【win】[方格音乐](http://morin.vin) |【win mac】[iTunes](https://www.apple.com.cn/itunes)
 
@@ -799,7 +799,7 @@ not
 
 1. [补丁合集](https://www.123pan.com/s/aDE9-hCCyh.html)
 1. [360 安全卫士极速版](https://wsdl.360safe.com/setupbeta_jisu.exe)
-1. [360 安全浏览器 13](https://down.360safe.com/se/360se13.1.6410.0.exe)
+1. [360 安全浏览器 13](https://down.360safe.com/se/360se13.1.6410.0.exe) | [搜狗浏览器](https://sogou.browser.qq.com)
 1. [360 压缩](https://sfdl.360safe.com/360zip_setup.exe) | [7-Zip 24.09 x86](https://7-zip.org/a/7z2409.exe) | [Bandizip 5](https://www.bandisoft.com/bandizip/dl.php?xp)
 1. [QQ 输入法](https://qq.pinyin.cn/download_pc.php?t=py)
 1. [QQ 9.7 怀旧版](https://dldir1.qq.com/qqfile/qq/PCQQ9.7.23/QQ9.7.23.29394.exe)
