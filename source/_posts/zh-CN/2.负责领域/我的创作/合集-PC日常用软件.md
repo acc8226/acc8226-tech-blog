@@ -30,10 +30,11 @@ categories: 我的创作
 #### 1.0.2 浏览器
 
 * 【**win 精品软件**】[百分浏览器](https://www.centbrowser.cn) 鼠标悬停切换标签功能很好用
-* 【mac】[猫眼浏览器](https://www.catsxp.com) 鼠标悬停切换标签功能很好用，建议关掉很烦人的自动更新功能
+* 【mac】[猫眼浏览器](https://www.catsxp.com) 鼠标悬停切换标签功能很好用，建议关掉烦人的自动更新功能
 * 【linux】[360 安全浏览器](https://browser.360.net/gc/index.html)<!-- more -->
+* 【国产 linux】应用商店下载 360 安全浏览器 或 Firefox ESR 版本。
 
-关于浏览器的密码自动填充：三巨头应该都有自动填充的功能。否则我会用 Bitwarden，其次有人推荐 [KeePassXC](https://keepassxc.org/download)。
+关于浏览器的密码自动填充：更完善的，我会用 Bitwarden
 
 #### 1.0.3 输入法
 

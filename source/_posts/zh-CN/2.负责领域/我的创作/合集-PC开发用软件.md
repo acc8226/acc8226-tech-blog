@@ -425,9 +425,9 @@ not
 
 ### 【win】微软 terminal
 
-是一个新式主机应用程序，它面向你喜爱的命令行 shell，如命令提示符、PowerShell 和 bash（通过适用于 Linux 的 Windows 子系统 (WSL)）。 它的主要功能包括多个选项卡、窗格、Unicode 和 UTF-8 字符支持、GPU 加速文本呈现引擎，你还可用它来创建你自己的主题并自定义文本、颜色、背景和快捷方式。
+是一个新式主机应用程序，它面向命令行 shell，如命令提示符、PowerShell 和 bash（通过适用于 Linux 的 Windows 子系统 (WSL)）。 主要功能包括多个选项卡、窗格、Unicode 和 UTF-8 字符支持、GPU 加速文本呈现引擎，你还可用它来创建你自己的主题并自定义文本、颜色、背景和快捷方式。
 
-要求: Windows 10 2004 (build 19041) 及其以上
+要求: Windows 10 2004 (build 19041) 及以上
 
 [应用商店版](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701) | [Release 下载](https://github.com/microsoft/terminal/releases)
 
@@ -461,6 +461,8 @@ MSYS2 还是一组工具和库，为您提供了一个易于使用的环境，�
 
 * [PowerShell-7.5.2-win-x64.msi](https://github.com/PowerShell/PowerShell/releases/download/v7.5.2/PowerShell-7.5.2-win-x64.msi)
 * [PowerShell-7.5.2-win-x64.zip](https://github.com/PowerShell/PowerShell/releases/download/v7.5.2/PowerShell-7.5.2-win-x64.zip)
+
+ubuntu 用户可以通过 apt install 方式安装 powershell，然后使用 ` sudo ln -s /opt/microsoft/powershell/7/pwsh /usr/bin/pwsh` 进行链接。
 
 ### 17.2【mac linux】zsh
 
