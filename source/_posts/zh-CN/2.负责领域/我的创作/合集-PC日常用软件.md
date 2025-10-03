@@ -24,15 +24,14 @@ categories: 我的创作
 
 #### 1.0.1 安全类
 
-* 【win】荣耀电脑自带管家（微软电脑管家...） 或 [360 安全卫士极速版](https://weishi.360.cn) 或 [火绒安全](https://www.huorong.cn)
-* 【mac】[腾讯柠檬清理](https://lemon.qq.com) 或 [360 安全卫士](https://www.360.cn/mac/index.html)
+* 【win】荣耀电脑自带管家（微软电脑管家...）或 [360 安全卫士极速版](https://weishi.360.cn) 或 [火绒安全软件](https://www.huorong.cn/person)
+* 【mac】[腾讯柠檬清理](https://lemon.qq.com) 或 [360 安全卫士 Mac 版](https://www.360.cn/mac/index.html)
 
 #### 1.0.2 浏览器
 
 * 【**win 精品软件**】[百分浏览器](https://www.centbrowser.cn) 鼠标悬停切换标签功能很好用
 * 【mac】[猫眼浏览器](https://www.catsxp.com) 鼠标悬停切换标签功能很好用，建议关掉烦人的自动更新功能
 * 【linux】[360 安全浏览器](https://browser.360.net/gc/index.html)<!-- more -->
-* 【国产 linux】应用商店下载 360 安全浏览器 或 Firefox ESR 版本。
 
 关于浏览器的密码自动填充：更完善的，我会用 Bitwarden
 
@@ -46,7 +45,7 @@ categories: 我的创作
 #### 1.1.0【常用】压缩解压
 
 * 【win 11】[PeaZip](https://peazip.github.io/index.html) 可添加智能解压到新版 win 11 右键菜单
-* 【低于 win 11】[Bandizip 6.xx](https://www.bandisoft.com/bandizip/dl.php?web) 含自动解压（智能解压）且颜值和功能均在线，属于最后一个无广告版本。到 v7 版本会偶尔弹广告除了付费
+* 【低于 win 11】[Bandizip 6.2x](https://www.iplaysoft.com/bandizip.html) 含自动解压（智能解压）且颜值和功能均在线，v6 是最后一个无广告版本。到 v7 版本不付费则会偶尔弹窗
 * 【mac、linux】[PeaZip](https://peazip.github.io/index.html) 含智能解压
 
 #### 1.1.1【推荐】鼠标手势
@@ -64,7 +63,7 @@ categories: 我的创作
 #### 1.1.3【常用】截图
 
 * 【win 绿色版 & mac】[PixPin](https://pixpinapp.com) 不付费也能使用 OCR 和长截图功能 ｜ [小旺截图](https://www.xiaowang.com)
-* liunx 系统自带
+* liunx 系统自带 或 [Snipaste](https://zh.snipaste.com/)
 
 #### 1.1.4 护眼
 
@@ -101,8 +100,8 @@ categories: 我的创作
 
 #### 1.1.7 看图
 
-* 【win 绿色版】[菠萝看图 pineapple-pictures](https://github.com/BLumia/pineapple-pictures) | [Honeyview 最终绿色版](https://www.bandisoft.com/honeyview/dl.php?portable)
-* 【mac】[Picview 图片浏览器](https://picview.chitaner.com/zh-cn)
+* 【win 绿色版】[PicView](https://picview.org) | [菠萝看图 pineapple-pictures](https://github.com/BLumia/pineapple-pictures) | [Honeyview 最终绿色版](https://www.bandisoft.com/honeyview/dl.php?portable)
+* 【mac】[Picview - 图片浏览器](https://picview.chitaner.com/zh-cn) | [PicView - Free and customizable image viewer](https://picview.org)
 * liunx 系统自带
 
 #### 1.1.8 图像处理
@@ -126,7 +125,7 @@ categories: 我的创作
 
 #### 1.2.1【常用】Office
 
-一般品牌机会赠送[微软 Office](https://www.microsoftstore.com.cn/software/office)，否则一般会用【全平台 [WPS](https://www.wps.cn) 需登录才能解锁编辑太恶心。好在 windows 可使用 [WPS Office 教育考试专用版](https://ncre.neea.edu.cn/html1/report/1507/861-1.htm)
+一般品牌机会赠送[微软 Office](https://www.microsoftstore.com.cn/software/office) | 重新安装[已购买 Office](https://account.microsoft.com/services/)，否则一般会用【全平台 [WPS](https://www.wps.cn) 需登录才能解锁编辑太恶心。好在 windows 可使用 [WPS Office 教育考试专用版](https://ncre.neea.edu.cn/html1/report/1507/861-1.htm)
 
 **Web 平台** 暂推荐 [金山文档](https://www.kdocs.cn) 适合文档分享。但千万记得加水印和设置只读访问权限，防止资料泄漏
 
