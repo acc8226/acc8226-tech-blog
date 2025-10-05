@@ -36,3 +36,10 @@ amixer -D pulse sset Master 5%-
 安装 jdk`sudo apt install default-jdk`
 
 添加快捷方式到启动器 `ln -s /home/kai/software/Zotero_linux-x86_64/zotero.desktop  ~/.local/share/applications/zotero.desktop`
+
+‌查看当前的交换空间设置‌：`sudo swapon --show`
+
+临时禁用虚拟内存 `sudo swapoff -a`
+
+为了使更改永久生效，你需要编辑 /etc/fstab 文件来注释掉或删除与交换空间相关的行。
+找到类似于 `UUID=xxxx /swap swap swap defaults 0 0` 的行，将其注释掉或删除。
