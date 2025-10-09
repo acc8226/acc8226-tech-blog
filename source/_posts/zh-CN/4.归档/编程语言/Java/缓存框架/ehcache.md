@@ -20,5 +20,3 @@ Downloads
 
 Downloads
 <http://www.quartz-scheduler.org/downloads/>
-
-<!-- more -->

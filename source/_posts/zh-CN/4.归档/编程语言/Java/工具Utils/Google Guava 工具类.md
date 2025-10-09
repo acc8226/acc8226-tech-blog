@@ -21,7 +21,6 @@ ImmutableSet
 ```groovy
 compile 'com.google.guava:guava:30.0-jre'
 ```
-
 <!-- more -->
 
 ## 参考

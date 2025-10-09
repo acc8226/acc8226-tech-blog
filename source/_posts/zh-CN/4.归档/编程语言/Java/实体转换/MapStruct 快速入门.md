@@ -14,4 +14,3 @@ tags:
 MapStruct – Java bean mappings, the easy way!
 https://mapstruct.org/
 
-<!-- more -->

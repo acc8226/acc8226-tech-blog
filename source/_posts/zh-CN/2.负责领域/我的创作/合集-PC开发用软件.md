@@ -2,7 +2,7 @@
 title: 合集-PC开发用软件
 permalink: mydev/
 date: 2020-06-03 00:22:53
-updated: 2024-10-28 19:52:00
+updated: 2025-10-09 21:11:45
 categories: 我的创作
 ---
 
@@ -437,16 +437,17 @@ not
 
 添加新的配置文件即可，在命令行需要指定路径，例如我默认让其打开 D 盘 `C:\Program Files\PowerShell\7\pwsh.exe -WorkingDirectory D:`，最后记得保存即可。
 
-### 【mac】iTerm 2
+### 【win】cmder
 
-【mac】[iTerm 2](https://www.iterm2.com/downloads.html) 该工具结合 Oh My Zsh 可能会带来不一样的体验
+cmder 是一款 windows 下终端模拟器套件 | [tuna 源](https://mirrors.tuna.tsinghua.edu.cn/github-release/cmderdev/cmder/)
 
 ### 【win】MSYS2
 
-[MSYS2](https://www.msys2.org/) 是一个 Windows 软件分发与构建平台
-MSYS2 还是一组工具和库，为您提供了一个易于使用的环境，用于构建、安装和运行本机Windows软件。
+[MSYS2](https://www.msys2.org/) 是一个 Windows 软件分发与构建平台；MSYS2 还是一组工具和库，为您提供了一个易于使用的环境，用于构建、安装和运行本机Windows软件；带了一个包管理器，可以安装 c 编译器 gcc，可以运行一些 linux 命令
 
-带了一个包管理器，可以安装 c 编译器 gcc。也算一个终端，还可以运行 linux 命令
+### 【mac】iTerm 2
+
+【mac】[iTerm 2](https://www.iterm2.com/downloads.html) 该工具结合 Oh My Zsh 可能会带来不一样的体验
 
 ## 17 shell 环境
 

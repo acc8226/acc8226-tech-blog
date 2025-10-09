@@ -21,7 +21,6 @@ PS> D:\minio.exe server E:\Data --console-address ":9001"
 minio 提供了一个可视化的管理控制平台，安装好之后，在浏览器中输入(<http://localhost:9000/> (opens new window))就可以访问了。
 
 客户端 cli 支持
-
 <!-- more -->
 
 mc.exe

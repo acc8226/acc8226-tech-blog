@@ -67,7 +67,7 @@ alert ("hi");
 * Of course there's an exception...
 一个重要的特点是: 在 for 循环的()中，分号只放在第一个和第二个语句之后，而不放在第三个语句之后:
 
-``` js
+```js
 for (var i=0; i < 10; i++)  {/*actions*/}       // correct
 for (var i=0; i < 10; i++;) {/*actions*/}       // SyntaxError
 ```

@@ -1,5 +1,5 @@
 ---
-title: 系统安装和还原
+title: win 系统安装和还原
 date: 2025-02-03 10:04:01
 updated: 2025-02-07 12:53:07
 categories:
@@ -12,10 +12,15 @@ categories:
 Windows 10 Enterprise LTSC 2021 (x64) - DVD (Chinese-Simplified)	
 `ed2k://|file|SW_DVD9_WIN_ENT_LTSC_2021_64BIT_ChnSimp_MLF_X22-84402.ISO|5044211712|1555B7DCA052B5958EE68DB58A42408D|/`
 
+使用 powershell 键入命令 `irm https://get.activated.win|iex` 后选择 1 进行激活
+
+或者
+
+激活工具
 [HEU_KMS_Activator_v63.2.0.iso](https://github.com/zbezj/HEU_KMS_Activator/releases/download/63.2.0/HEU_KMS_Activator_v63.2.0.iso)
 [HEU_KMS_Activator_v63.2.0.rar](https://github.com/zbezj/HEU_KMS_Activator/releases/download/63.2.0/HEU_KMS_Activator_v63.2.0.rar)
 
-[驱动精灵网卡版](https://file.drivergenius.com/DGSetup_Home_KZ.exe)
+[驱动总裁万能网卡绿色版](https://www.sysceo.com/software-softwarei-id-123.html)
 
 ## 1. 数据备份
 

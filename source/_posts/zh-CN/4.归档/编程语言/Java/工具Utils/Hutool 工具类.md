@@ -22,7 +22,7 @@ Hutool是一个小而全的Java工具类库，通过静态方法封装，降低�
 * hutool-core 核心，包括Bean操作、日期、各种Util等
 * hutool-cron 定时任务模块，提供类 Crontab 表达式的定时任务
 * hutool-crypto 加密解密模块，提供对称、非对称和摘要算法封装
-* hutool-db JDBC 封装后的数据操作，基于 ActiveRecord 思想
+* hutool-db JDBC 封装后的数据操作，基于 ActiveRecord 思想<!-- more -->
 * hutool-dfa 基于 DFA 模型的多关键字查找
 * hutool-extra 扩展模块，对第三方封装（模板引擎、邮件、Servlet、二维码、Emoji、FTP、分词等）
 * hutool-http 基于 HttpUrlConnection 的 Http 客户端封装
@@ -36,7 +36,7 @@ Hutool是一个小而全的Java工具类库，通过静态方法封装，降低�
 * hutool-socket 基于 Java 的 NIO 和 AIO 的 Socket 封装
 * hutool-jwt JSON Web Token (JWT)封装实现
 
-<!-- more -->
+
 
 gradle
 

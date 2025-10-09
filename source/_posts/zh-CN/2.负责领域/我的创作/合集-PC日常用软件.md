@@ -131,7 +131,7 @@ categories: 我的创作
 
 **linux 平台** 除了 WPS 和 LibreOffice，可以安装 [WinApps for linux](https://nowsci.com/winapps) | [github 项目地址](https://github.com/Fmstrat/winapps)
 
-官网收录：【win】[永中 Office](https://www.yozosoft.com) | 【全平台】[LibreOffice](https://zh-cn.libreoffice.org/download/libreoffice) & [tuna 源](https://mirrors-i.tuna.tsinghua.edu.cn/libreoffice/libreoffice/stable/)
+官网收录：【win】[永中 Office](https://www.yozosoft.com) |【全平台】[LibreOffice](https://zh-cn.libreoffice.org/download/libreoffice) & [tuna 源](https://mirrors-i.tuna.tsinghua.edu.cn/libreoffice/libreoffice/stable/)
 
 #### 1.2.2 PDF 文档
 

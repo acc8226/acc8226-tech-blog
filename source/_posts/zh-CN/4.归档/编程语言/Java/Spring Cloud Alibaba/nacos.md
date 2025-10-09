@@ -13,11 +13,9 @@ tags:
 
 ### 项目地址
 
-Nacos 官网
-<https://nacos.io/>
+[Nacos 官网](https://nacos.io/)
 
-Nacos - gitee
-<https://gitee.com/mirrors/Nacos>
+[Nacos - gitee](https://gitee.com/mirrors/Nacos)
 
 alibaba/nacos - GitHub
 <https://github.com/alibaba/nacos/>
@@ -25,7 +23,6 @@ alibaba/nacos - GitHub
 ### 版本选择
 
 您可以在 Nacos 的[release notes](https://github.com/alibaba/nacos/releases)及[博客](https://nacos.io/zh-cn/blog/index.html)中找到每个版本支持的功能的介绍。
-
 <!-- more -->
 
 ### 预备环境准备

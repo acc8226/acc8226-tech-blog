@@ -18,15 +18,13 @@ Logback 的体系结构足够通用，可以在不同的情况下应用。 目�
 
 Logback-core 模块为其他两个模块奠定了基础。可以将 logback-classic 模块同化为 log4j 的一个显著改进版本。 此外，logback-classic 本机实现了 SLF4J API，这样您就可以在 logback 和其他日志框架(如 log4j 或 java.util.logging (JUL))之间来回切换。
 
-Logback-access 模块与 Servlet 容器(如 Tomcat 和 Jetty)集成，以提供 HTTP-access 日志功能。 注意，您可以轻松地在 logback-core 之上构建自己的模块。
+Logback-access 模块与 Servlet 容器(如 Tomcat 和 Jetty)集成，以提供 HTTP-access 日志功能。 注意，您可以轻松地在 logback-core 之上构建自己的模块。<!-- more -->
 
 当前正在积极开发的支持 JavaEE 的 logback 版本(Java。* 名称空间)是1.3.11。它需要 SLF4J 版本 2.0.7和 JDK 8。
 
 ```groovy
 implementation("ch.qos.logback:logback-classic:1.3.11")
 ```
-
-<!-- more -->
 
 当前正在积极开发的支持 JakartaEE (jakartaEE)的 logback 版本。* 名称空间)是1.4.11。它需要 SLF4J 版本 2.0.7 和 JDK 11。
 

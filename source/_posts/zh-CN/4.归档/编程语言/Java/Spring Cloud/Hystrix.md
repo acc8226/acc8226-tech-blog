@@ -10,5 +10,3 @@ tags:
 ---
 
 Hystrix
-
-<!-- more -->

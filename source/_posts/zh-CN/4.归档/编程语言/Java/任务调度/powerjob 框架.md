@@ -18,7 +18,6 @@ PowerJob 产品手册
 appName 等于一个业务集群，也就是实际的一个 Java 项目。
 
 powerjob-server 调度服务器
-
 <!-- more -->
 
 ## 问题
