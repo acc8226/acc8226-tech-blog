@@ -10,18 +10,18 @@ categories: Web 服务器技术
 Apache Tomcat 是 Jakarta EE (正式的 Java EE)技术的一个子集的开放源码软件实现。ApacheTomcat 的不同版本可用于规范的不同版本。规范和相应的 Apache Tomcat 版本之间的映射如下:
 
 | **Servlet Spec** | **JSP Spec** | **EL Spec** | **WebSocket Spec** | **Authentication (JASPIC) Spec** | **Apache Tomcat Version** | **Latest Released Version** | **Supported Java Versions**                |
-| ---------------- | ------------ | ----------- | ------------------ | -------------------------------- | ------------------------- | --------------------------- | ------------------------------------------ |
-| 6.0              | 3.1          | 5.0         | 2.1                | 3.0                              | 10.1.x                    | 10.1.0-M16 (beta)           | 11 and later                               |
-| 5.0              | 3.0          | 4.0         | 2.0                | 2.0                              | 10.0.x                    | 10.0.22                     | 8 and later                                |
-| 4.0              | 2.3          | 3.0         | 1.1                | 1.1                              | 9.0.x                     | 9.0.64                      | 8 and later                                |
-| 3.1              | 2.3          | 3.0         | 1.1                | 1.1                              | 8.5.x                     | 8.5.81                      | 7 and later                                |
-| 3.1              | 2.3          | 3.0         | 1.1                | N/A                              | 8.0.x (superseded)        | 8.0.53 (superseded)         | 7 and later                                |
-| 3.0              | 2.2          | 2.2         | 1.1                | N/A                              | 7.0.x (archived)          | 7.0.109 (archived)          | 6 and later (7 and later for WebSocket) |
-| 2.5              | 2.1          | 2.1         | N/A                | N/A                              | 6.0.x (archived)          | 6.0.53 (archived)           | 5 and later                                |
-| 2.4              | 2.0          | N/A         | N/A                | N/A                              | 5.5.x (archived)          | 5.5.36 (archived)           | 1.4 and later                              |
-| 2.3              | 1.2          | N/A         | N/A                | N/A                              | 4.1.x (archived)          | 4.1.40 (archived)           | 1.3 and later                              |
-| 2.2              | 1.1          | N/A         | N/A                | N/A                              | 3.3.x (archived)          | 3.3.2 (archived)            | 1.1 and later                              |
-<!-- more -->
+| ---------------- | ------------ | ----------- | ------------- | ------------- | ------------------------- | ----------------- | --------- |
+| 6.0 | 3.1 | 5.0 | 2.1 | 3.0 | 10.1.x | 10.1.0-M16 (beta) | 11 and later |
+| 5.0 | 3.0 | 4.0 | 2.0 | 2.0 | 10.0.x | 10.0.22 | 8 and later |
+| 4.0 | 2.3 | 3.0 | 1.1 | 1.1 | 9.0.x | 9.0.64 | 8 and later |
+| 3.1 | 2.3 | 3.0 | 1.1 | 1.1 | 8.5.x | 8.5.81 | 7 and later |
+| 3.1 | 2.3 | 3.0 | 1.1 | N/A | 8.0.x (superseded) | 8.0.53 (superseded) | 7 and later |
+| 3.0 | 2.2 | 2.2 | 1.1 | N/A | 7.0.x (archived) | 7.0.109 (archived) | 6 and later (7 and later for WebSocket) |
+| 2.5 | 2.1 | 2.1 | N/A | N/A | 6.0.x (archived) | 6.0.53 (archived) | 5 and later |
+| 2.4 | 2.0 | N/A | N/A | N/A | 5.5.x (archived) | 5.5.36 (archived) | 1.4 and later |
+| 2.3 | 1.2 | N/A | N/A | N/A | 4.1.x (archived) | 4.1.40 (archived) | 1.3 and later |
+| 2.2 | 1.1 | N/A | N/A | N/A | 3.3.x (archived) | 3.3.2 (archived) | 1.1 and later                              |
+<!-- more --> 
 
 ## mac / linux 下 tomcat 安装
 

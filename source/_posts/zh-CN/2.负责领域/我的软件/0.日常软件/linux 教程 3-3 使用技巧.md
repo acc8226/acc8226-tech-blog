@@ -31,11 +31,11 @@ amixer -D pulse sset Master 5%+
 amixer -D pulse sset Master 5%-
 ```
 
-安装 jre`sudo apt install default-jre`
+安装 jre `sudo apt install default-jre`
 
-安装 jdk`sudo apt install default-jdk`
+安装 jdk `sudo apt install default-jdk`
 
-添加快捷方式到启动器 `ln -s /home/kai/software/Zotero_linux-x86_64/zotero.desktop  ~/.local/share/applications/zotero.desktop`
+添加快捷方式到启动器 `ln -s /home/kai/software/Zotero_linux-x86_64/zotero.desktop ~/.local/share/applications/zotero.desktop`
 
 ‌查看当前的交换空间设置‌：`sudo swapon --show`
 

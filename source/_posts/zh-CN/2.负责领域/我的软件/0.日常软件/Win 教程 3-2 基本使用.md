@@ -84,42 +84,42 @@ Alt + Tab 会切换到上一个应用程序
 
 win + shift + s 截屏
 
-**资源管理器**
-Ctrl + Shift + N：新建文件夹
-alt + 方向左 后退
-alt + 方向右 前进
+**资源管理器**<br>
+Ctrl + Shift + N：新建文件夹<br>
+alt + 方向左 后退<br>
+alt + 方向右 前进<br>
 alt + 方向上 返回到上级/向上
 
-**浏览器类**
-Ctrl + D 添加到收藏
-Ctrl + N 新建窗口
-Ctrl + T：新建标签页（Tab）
-Ctrl + Shift + T：恢复关闭标签页（Tab）
-Ctrl + F：查找网页（Find）
-Ctrl + W / Ctrl + F4：关闭标签页（Close Window）
-Ctrl + R：刷新网页（Refresh）
-Ctrl + Tab：下一个标签页
-Ctrl + Shift + Tab：上一个标签页
-Ctrl + 1~8：第一到第八个标签页
-Ctrl + 9：最后一个标签页
-Ctrl + H：历史记录（History）
-Ctrl + J：打开下载
-Ctrl + L：定位到地址栏（Location，Alt + D、F6 等效）
-向下翻页 空格键 或者 pageDown 键
+**浏览器类**<br>
+Ctrl + D 添加到收藏<br>
+Ctrl + N 新建窗口<br>
+Ctrl + T：新建标签页（Tab）<br>
+Ctrl + Shift + T：恢复关闭标签页（Tab）<br>
+Ctrl + F：查找网页（Find）<br>
+Ctrl + W / Ctrl + F4：关闭标签页（Close Window）<br>
+Ctrl + R：刷新网页（Refresh）<br>
+Ctrl + Tab：下一个标签页<br>
+Ctrl + Shift + Tab：上一个标签页<br>
+Ctrl + 1~8：第一到第八个标签页<br>
+Ctrl + 9：最后一个标签页<br>
+Ctrl + H：历史记录（History）<br>
+Ctrl + J：打开下载<br>
+Ctrl + L：定位到地址栏（Location，Alt + D、F6 等效）<br>
+向下翻页 空格键 或者 pageDown 键<br>
 向上翻页 Shift + 空格键 或者 pageUp 键
 
-放大/缩小以及还原为默认缩放比例等操作。
-Windows, Chrome OS & Linux: Ctrl and +
-Windows, Chrome OS & Linux: Ctrl and -
+放大/缩小以及还原为默认缩放比例等操作。<br>
+Windows, Chrome OS & Linux: Ctrl and +<br>
+Windows, Chrome OS & Linux: Ctrl and -<br>
 Windows, Chrome OS & Linux: Ctrl and 0
 
-反方向切换标签页
+反方向切换标签页<br>
 Ctrl + Alt + TAB / control + alt + tab
 
-前进 / 后退
+前进 / 后退<br>
 Alt + 左方向键 / Alt + 右方向键
 
-借助此快捷键，您可以瞬间清除自己的浏览数据。
+借助此快捷键，您可以瞬间清除自己的浏览数据。<br>
 Windows, Chrome OS & Linux: Ctrl + Shift + Delete
 
 ### 适用于 Windows 10/11 的触摸板手势
@@ -145,7 +145,7 @@ Backspace
 即“退格键”，在编辑内容时可通过 Backspace 键进行删除。不过，你知道吗？除此之外，在“我的电脑”或 “windows 资源管理器”中可以通过 Backspace 键查看上一级文件夹而不删除任何内容。
 
 Ctrl + W
-我们在浏览网页时，如果只想关闭当前标签页就可以通过按 Ctrl+W 组合键快速关闭。你知道吗？Ctrl+W 组合键不单单对于浏览器有效，对于其他的带有“标签页”功能的软件也基本有效，比如 PS，WPS 都是有效的。对于部分不带标签页的单个软件，按 Ctrl + W 可以将其关闭，类似于 Alt + F4
+我们在浏览网页时，如果只想关闭当前标签页就可以通过按 Ctrl+W 组合键快速关闭。你知道吗？Ctrl + W 组合键不单单对于浏览器有效，对于其他的带有“标签页”功能的软件也基本有效，比如 PS，WPS 都是有效的。对于部分不带标签页的单个软件，按 Ctrl + W 可以将其关闭，类似于 Alt + F4
 
 Ctrl+Esc
 除了常用的按 “win键” 打开开始菜单外，我们也可以通过 Ctrl+Esc 组合键打开开始菜单。Emmm... 感觉这个有点鸡肋。
@@ -227,15 +227,15 @@ rp 文件可以通过 Axure8 导入打开，具体方式如下：
 
 ![](./imgs/%E5%B0%8F%E7%9F%A5%E8%AF%86--rp%E6%96%87%E4%BB%B6%E7%94%A8%E4%BB%80%E4%B9%88%E6%89%93%E5%BC%80/1662509-44045d805536673d.jpg)
 
-2、在弹出的下拉菜单中，找到并点击“从 RP 文件导入”的选项。
-3、在弹出页面中，选择需要打开的rp文件，并点击最下方的“打开”。
-4、选择并点击需要导入的文件。
+2、在弹出的下拉菜单中，找到并点击“从 RP 文件导入”的选项。<br>
+3、在弹出页面中，选择需要打开的 rp 文件，并点击最下方的“打开”。<br>
+4、选择并点击需要导入的文件。<br>
 5、点击最下方的 “next”，进入下一步。
 
 ![](./imgs/%E5%B0%8F%E7%9F%A5%E8%AF%86--rp%E6%96%87%E4%BB%B6%E7%94%A8%E4%BB%80%E4%B9%88%E6%89%93%E5%BC%80/1662509-c38ab607fb147e8f.jpg)
 
-6、在弹出页面，确认并点击“next”。
-7、进入到了导入检查的界面当中，看需要添加的内容，及删除的内容的信息。
+6、在弹出页面，确认并点击“next”。<br>
+7、进入到了导入检查的界面当中，看需要添加的内容，及删除的内容的信息。<br>
 8、点击下方的“next”，rp 文件就可以打开了。
 
 ![](./imgs/%E5%B0%8F%E7%9F%A5%E8%AF%86--rp%E6%96%87%E4%BB%B6%E7%94%A8%E4%BB%80%E4%B9%88%E6%89%93%E5%BC%80/1662509-9980b83c1d59c2f5.jpg)
@@ -264,9 +264,9 @@ C:\Users（用户文件夹）\用户名\AppData\Roaming\Microsoft\Internet Explo
 
 ###  Windows 下安装 Linux 子系统的 0x8007019e 错误
 
-提示说错误代码0x8007019e 没有办法安装打开？
+提示说错误代码 0x8007019e 没有办法安装打开？
 
-解决方法：开启Windows功能-适用于Linux的Windows子系统，安装完重启就可以解决这个问题了
+解决方法：开启 Windows 功能-适用于 Linux 的 Windows 子系统，安装完重启就可以解决这个问题了
 
 ## 参考
 

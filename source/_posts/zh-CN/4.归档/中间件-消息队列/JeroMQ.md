@@ -15,5 +15,3 @@ JeroMQ 是其 Java 实现，用起来也是十分方便。
 
 zeromq/jeromq: Pure Java ZeroMQ
 <https://github.com/zeromq/jeromq>
-
-<!-- more -->

@@ -9,7 +9,7 @@ tags:
 - Gradle
 ---
 
-上一章我们已经介绍了 Gradle 脚本的基础，在其中我们也强调了 Gradle 中最要的 Projects 和 Tasks这两个概念，尤其是Tasks，我们的所有 Gradle 的构建工作都是由 Tasks 组合完成的，那么这一章我们就详细的介绍下 Tasks--任务。
+上一章我们已经介绍了 Gradle 脚本的基础，在其中我们也强调了 Gradle 中最要的 Projects 和 Tasks这两个概念，尤其是Tasks，我们的所有 Gradle 的构建工作都是由 Tasks 组合完成的，那么这一章我们就详细的介绍下 Tasks 任务。
 任务的介绍也是从实用性出发，比如如何多种方式创建任务，如果访问任务的方法和属性等信息，如果对任务进行分组、排序，以及任务的一些规则性知识。
 
 第一种是直接以一个任务名字创建任务的方式：
@@ -43,7 +43,7 @@ createTask2.doLast{
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-5db9aaddb91590b3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-因为Map传参配置的方式（第二种）毕竟可配置的项有限，所以可以通过闭包的方式进行更多更灵活的配置，闭包里的委托对象就是 Task，所以你可以使用 Task 对象的任何方法、属性等信息进行配置，比如示例中我们配置了任务的描述和任务执行后要做的事情。
+因为 Map 传参配置的方式（第二种）毕竟可配置的项有限，所以可以通过闭包的方式进行更多更灵活的配置，闭包里的委托对象就是 Task，所以你可以使用 Task 对象的任何方法、属性等信息进行配置，比如示例中我们配置了任务的描述和任务执行后要做的事情。
 
 Project 中还有一种名字 + Map 参数 + 闭包的的方式，和上面演示的非常相似，就不列出了，下面我们说下 TaskContainer 创建任务的方式。如果我们去看 Project 对象中关于上面我们演示的 task 方法的源代码，就会发现其实他们最终都是调用 TaskContainer 对象中的create 方法，其参数和 Project 中的 task 方法基本一样，我们下面看例子，我们使用这种方式重写第三种方式的例子：
 
@@ -55,7 +55,7 @@ Project 中还有一种名字 + Map 参数 + 闭包的的方式，和上面演�
 
 首先呢，我们创建的任务都会作为项目(Project)的一个属性，属性名就是任务名，所以我们可以直接通过该任务名访问和操纵该任务：
 
-通过索引访问的时候，任务名就是我们 Key（关键索引），其实这里说 key 不恰当，因为 tasks 并不是一个 Map，这里再顺便扩展下 Groovy 的知识，[]在Groovy 中是一个操作符，我们知道 Groovy 的操作符都有对应的方法让我们重载，a[b]对应的是 a.getAt(b)这个方法.
+通过索引访问的时候，任务名就是我们 Key（关键索引），其实这里说 key 不恰当，因为 tasks 并不是一个 Map，这里再顺便扩展下 Groovy 的知识，[]在 Groovy 中是一个操作符，我们知道 Groovy 的操作符都有对应的方法让我们重载，a[b]对应的是 a.getAt(b)这个方法.
 
 ```groovy
 //直接通过该任务名访问和操纵该任务
@@ -130,9 +130,9 @@ class CustomTask extends DefaultTask{
 
 ![Output](http://upload-images.jianshu.io/upload_images/1662509-141a96e9aac9773c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-结果和我们期望的一样。我们前面讲了，执行 Tasks 的时候就是在遍历执行 actions List，那么要达到这种 doFirst、doSelf、doLast 顺序的目的，就必须把 doFirst 的 Actions 放在 actions List 的最前面，把 doSelf 的 Actions 放在 List 中间，把 doLast 的A ctions放在List最后面，这样才能达到按约定顺序执行的目的。
+结果和我们期望的一样。我们前面讲了，执行 Tasks 的时候就是在遍历执行 actions List，那么要达到这种 doFirst、doSelf、doLast 顺序的目的，就必须把 doFirst 的 Actions 放在 actions List 的最前面，把 doSelf 的 Actions 放在 List 中间，把 doLast 的 Actions 放在 List 最后面，这样才能达到按约定顺序执行的目的。
 
-当我们使用 task 方法创建 task1 这个任务的时候，Gradle 会解析其带有 TaskAction 标注的方法作为其 Task 执行的 Action，然后通过Task的prependParallelSafeAction 方法把该 Action 添加到 actions List里：
+当我们使用 task 方法创建 task1 这个任务的时候，Gradle 会解析其带有 TaskAction 标注的方法作为其 Task 执行的 Action，然后通过 Task 的 prependParallelSafeAction 方法把该 Action 添加到 actions List 里：
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-f291b3a5a12702c1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -182,23 +182,23 @@ Task 中有个 enabled 属性，用于启用和禁用任务，默认是 true 表
 
 ### 4.8 任务的 onlyIf 断言
 
-断言就是一个条件表达式，Task有一个 onlyIf 方法，它接受一个闭包作为参数，如果该闭包返回 true 则该任务执行，否则则跳过。这有很多用途，比如控制哪些情况下打什么包，什么时候执行单元测试，什么情况下执行单元测试的时候不执行网络c而是等等，现在就以一个打首发包的例子来说明。
+断言就是一个条件表达式，Task 有一个 onlyIf 方法，它接受一个闭包作为参数，如果该闭包返回 true 则该任务执行，否则则跳过。这有很多用途，比如控制哪些情况下打什么包，什么时候执行单元测试，什么情况下执行单元测试的时候不执行网络 c 而是等等，现在就以一个打首发包的例子来说明。
 
 假如我们的首发渠道是应用宝和百度，直接执行 build 会编译出来所有包，这个太慢也不符合我们的需求，现在我们就采用onlyIf的方式通过属性来控制：
 **略**
 
 ### 4.9 任务规则
 
-我们通过以上章节知道了我们创建的任务都在 TaskContainer 里，是由其进行管理的。所以我们当我们访问任务的时候时候都是通过TaskContainer进行访问，而 TaskContainer 又是一个NamedDomainObjectCollection（继承它），所以我们说的任务规则其实是 NamedDomainObjectCollection 的规则。
+我们通过以上章节知道了我们创建的任务都在 TaskContainer 里，是由其进行管理的。所以我们当我们访问任务的时候时候都是通过 TaskContainer 进行访问，而 TaskContainer 又是一个NamedDomainObjectCollection（继承它），所以我们说的任务规则其实是 NamedDomainObjectCollection 的规则。
 
 NamedDomainObjectCollection 是一个具有唯一不变名字的域对象的集合，它里面所有的元素都有一个唯一不变的名字，该名字是String类型，所以我们可以通过名字获取该元素，比如我们通过任务的名字获取该任务。
 
-说完唯一不变的名字，我们再说规则，NamedDomainObjectCollection 的规则有什么用呢？我们上面说了要想获取一个NamedDomainObjectCollection 的元素是通过一个唯一的名字获取的，那么这个唯一的名字可能在 NamedDomainObjectCollection 中并不存在，具体到任务中就是说你想获取的这个任务不存在，这时候就会调用我们添加的规则来处理这种异常情况，我们看下源代码：
+说完唯一不变的名字，我们再说规则，NamedDomainObjectCollection 的规则有什么用呢？我们上面说了要想获取一个 NamedDomainObjectCollection 的元素是通过一个唯一的名字获取的，那么这个唯一的名字可能在 NamedDomainObjectCollection 中并不存在，具体到任务中就是说你想获取的这个任务不存在，这时候就会调用我们添加的规则来处理这种异常情况，我们看下源代码：
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-30925dabf635a35f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-以名字查找的时候，如果没有找到则调用applyRules(name)应用我们添加的规则。
-我们可以通过调用addRule来添加我们自定义的规则，它有两个用法：
+以名字查找的时候，如果没有找到则调用 applyRules(name)应用我们添加的规则。
+我们可以通过调用 addRule 来添加我们自定义的规则，它有两个用法：
 
 ![](http://upload-images.jianshu.io/upload_images/1662509-bdb668ab43a2a984.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 

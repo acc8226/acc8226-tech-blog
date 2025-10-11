@@ -14,7 +14,7 @@ https://developer.android.google.cn/guide/topics/ui/settings.html
 
 若要为应用提供设置，您应该使用 Android 的 [Preference](http://developer.android.youdaxue.com/reference/android/preference/Preference.html) API 构建一个与其他 Android 应用中的用户体验一致的界面（包括系统设置）。本文旨在介绍如何使用 [Preference](http://developer.android.youdaxue.com/reference/android/preference/Preference.html) API 构建应用设置。
 
-[图片上传失败...(image-d1a065-1640352404665)] 定义的项目将打开一个用于更改设置的界面。](http://upload-images.jianshu.io/upload_images/1662509-7d81f5f527202b86.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+[] 定义的项目将打开一个用于更改设置的界面。](http://upload-images.jianshu.io/upload_images/1662509-7d81f5f527202b86.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## 概览
 

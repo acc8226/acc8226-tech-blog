@@ -36,8 +36,7 @@ admin.serverPort=8888
 
 这是 zookeeper 自己搞了一个简易应用服务器，可以查看一些信息
 
-listint and issuing commands
-<http://localhost:8888/commands>
+[listint and issuing commands](http://localhost:8888/commands)
 
 <!-- more -->
 

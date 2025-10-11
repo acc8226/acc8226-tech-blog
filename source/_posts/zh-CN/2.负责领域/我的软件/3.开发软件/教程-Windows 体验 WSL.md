@@ -297,5 +297,4 @@ ZSH_THEME="ys"
 
 ## 参考
 
-同一局域网下 windows 主机和 wsl 子系统相互网络服务访问_薛钦亮的博客-CSDN 博客_局域网访问 wsl
-<https://blog.csdn.net/weixin_43997331/article/details/122593312>
+[同一局域网下 windows 主机和 wsl 子系统相互网络服务访问](https://blog.csdn.net/weixin_43997331/article/details/122593312)_薛钦亮的博客-CSDN 博客_局域网访问 wsl

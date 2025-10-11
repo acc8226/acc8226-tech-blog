@@ -1113,7 +1113,7 @@ APTV
 * [向日葵](https://sj.qq.com/appdetail/com.oray.sunlogin) | [ToDesk](https://sj.qq.com/appdetail/youqu.android.todesk) ｜ [RustDesk](https://rustdesk.com/index.html)
 * ——————— ฅ՞• •՞ฅ ———————
 * Kore 适用于用于 Kodi 系统/程序 的 远程遥控器
-* [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer) 操控树莓派用
+* [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer) 可远程树莓派和国产银河麒麟
 
 ## 33 投屏
 

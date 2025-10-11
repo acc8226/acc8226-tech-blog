@@ -13,5 +13,4 @@ soapUI pro 是 soapUI 的商业非开源版本，实现的功能较开源的 soa
 
 <!-- more -->
 
-官网下载地址
-<https://www.soapui.org/downloads/latest-release/>
+[官网下载地址](https://www.soapui.org/downloads/latest-release/)
