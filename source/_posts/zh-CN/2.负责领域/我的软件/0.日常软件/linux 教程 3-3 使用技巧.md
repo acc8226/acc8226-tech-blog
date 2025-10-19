@@ -15,7 +15,9 @@ ifconfig 或 ip：查看和配置网络接口。
 ping：测试网络连接。
 netstat：显示网络状态。
 
-## deepin 深度操作系统
+## 各系统
+
+### deepin 深度操作系统
 
 升高音量
 

@@ -280,7 +280,7 @@ sudo dpkg -r microsoft-edge-stable
 
 如果软件包已经被卸载，但是它的配置文件仍然存在，您可能还想删除这些配置文件。为此，可以使用 -p 或 --purge 选项加上软件包的名称和版本号，如下：
 sudo dpkg -P microsoft-edge-stable
--P选项已经包含了 -r 的功能，并且额外删除了配置文件
+-P 选项已经包含了 -r 的功能，并且额外删除了配置文件
 
 ## 额外的软件
 

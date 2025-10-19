@@ -125,11 +125,13 @@ categories: 我的创作
 
 #### 1.2.1【常用】Office
 
-一般品牌机会赠送[微软 Office](https://www.microsoftstore.com.cn/software/office) | 重新安装[已购买 Office](https://account.microsoft.com/services/)，否则一般会用【全平台 [WPS](https://www.wps.cn) 需登录才能解锁编辑太恶心。好在 windows 可使用 [WPS Office 教育考试专用版](https://ncre.neea.edu.cn/html1/report/1507/861-1.htm)
+一般品牌机都会赠送[微软 Office](https://www.microsoftstore.com.cn/software/office) | 重新安装[已购买 Office](https://account.microsoft.com/services/)，否则一般会用【全平台 [WPS](https://www.wps.cn) 需登录才能解锁编辑太恶心。好在 windows 可使用 [WPS Office 教育考试专用版](https://ncre.neea.edu.cn/html1/report/1507/861-1.htm)
 
 **Web 平台** 暂推荐 [金山文档](https://www.kdocs.cn) 适合文档分享。但千万记得加水印和设置只读访问权限，防止资料泄漏
 
-**linux 平台** 除了 WPS 和 LibreOffice，可以安装 [WinApps for linux](https://nowsci.com/winapps) | [github 项目地址](https://github.com/Fmstrat/winapps)
+**linux 平台** 除了 WPS 和 LiberOffice，可以安装 [WinApps for linux](https://nowsci.com/winapps) | [github 项目地址](https://github.com/Fmstrat/winapps)
+
+[wps for linux arm](https://365.wps.cn/download365)
 
 官网收录：【win】[永中 Office](https://www.yozosoft.com) |【全平台】[LibreOffice](https://zh-cn.libreoffice.org/download/libreoffice) & [tuna 源](https://mirrors-i.tuna.tsinghua.edu.cn/libreoffice/libreoffice/stable/)
 
@@ -274,7 +276,8 @@ not
 
 **linux 平台**
 
-【全平台】[utools](https://u.tools) 算是不错的选择了
+* 【全平台】[utools](https://u.tools) 算是不错的选择了，目前不支持 arm 架构
+* [Ulauncher](https://ulauncher.io/) — Application launcher for Linux 🐧
 
 not albert 安装不上
 
