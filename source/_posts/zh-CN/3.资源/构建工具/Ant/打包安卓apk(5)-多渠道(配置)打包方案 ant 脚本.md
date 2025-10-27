@@ -9,9 +9,7 @@ tags:
 - Ant
 ---
 
-直接上代码
-
-<!-- more -->
+直接上代码<!-- more -->
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

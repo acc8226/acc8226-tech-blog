@@ -254,7 +254,7 @@ title 新标题              #可以看到 cmd 窗口的标题栏变了
 echo 你好，cmd
 ```
 
-*将参数1，参数2 输入到命令行*
+*将参数 1，参数 2 输入到命令行*
 hello.bat aaa bbb
 
 ```bat
@@ -473,8 +473,6 @@ dp 就是扩充到分区号路径 d:\qq
 
 ## 参考
 
-DOS 批处理中的字符串处理详解(字符串截取)
-<https://blog.csdn.net/xiaoding133/article/details/39253083>
+[DOS 批处理中的字符串处理详解(字符串截取)](https://blog.csdn.net/xiaoding133/article/details/39253083)
 
-cd /d %~dp0 是什么意思 - 海阔天 - 博客园
-<https://www.cnblogs.com/yxsylyh/archive/2012/06/07/dosdp0.html>
+[cd /d %~dp0 是什么意思 - 海阔天](https://www.cnblogs.com/yxsylyh/archive/2012/06/07/dosdp0.html) - 博客园

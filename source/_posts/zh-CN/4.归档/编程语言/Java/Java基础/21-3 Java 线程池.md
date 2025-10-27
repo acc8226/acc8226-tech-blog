@@ -84,7 +84,7 @@ public interface Future<V> {
 * cancel 方法用来取消任务，如果取消任务成功则返回 true，如果取消任务失败则返回 false。
 参数 mayInterruptIfRunning 表示是否允许取消正在执行却没有执行完毕的任务。如果设置 true，则表示可以取消正在执行过程中的任务。
 如果任务还没有执行，则无论 mayInterruptIfRunning 为 true 还是 false，肯定返回 true。
-如果任务正在执行，若 mayInterruptIfRunning 设置为 true，则返回true，若 mayInterruptIfRunning 设置为 false，则返回 false；
+如果任务正在执行，若 mayInterruptIfRunning 设置为 true，则返回 true，若 mayInterruptIfRunning 设置为 false，则返回 false；
 如果任务已经完成，则无论 mayInterruptIfRunning 为 true 还是 false，此方法肯定返回 false。即如果取消已经完成的任务会返回 false。
 
 * isCancelled 方法表示任务是否被取消成功，如果在任务正常完成前被取消成功，则返回 true。
@@ -116,7 +116,7 @@ public interface RunnableFuture<V> extends Runnable, Future<V> {
 
 可以看出 RunnableFuture 继承了 Runnable 接口和 Future 接口，而 FutureTask 实现了 RunnableFuture 接口。所以它既可以作为Runnable 被线程执行，又可以作为 Future 得到 Callable 的返回值。
 
-### [ShutDown和ShutDownNow的区别](https://www.cnblogs.com/clarechen/p/4558825.html)
+### [ShutDown 和 ShutDownNow 的区别](https://www.cnblogs.com/clarechen/p/4558825.html)
 
 从字面意思就能理解，shutdownNow()能立即停止线程池，正在跑的和正在等待的任务都停下了。这样做立即生效，但是风险也比较大；
 
@@ -152,7 +152,7 @@ awaitTermination()并不具有提交的功能, awaitTermination()是阻塞的，
 public ThreadPoolExecutor(
   int corePoolSize, // 线程池长期维持的线程数，即使线程处于 Idle 状态，也不会回收。
   int maximumPoolSize, // 线程数的上限
-  long keepAliveTime, TimeUnit unit, // 超过corePoolSize的线程的 idle 时长，超过这个时间，多余的线程会被回收。
+  long keepAliveTime, TimeUnit unit, // 超过 corePoolSize 的线程的 idle 时长，超过这个时间，多余的线程会被回收。
   BlockingQueue<Runnable> workQueue, // 任务的排队队列
   ThreadFactory threadFactory, // 新线程的产生方式
   RejectedExecutionHandler handler) // 拒绝策略
@@ -164,8 +164,8 @@ If fewer than corePoolSize threads are running, the Executor always prefers addi
 If corePoolSize or more threads are running, the Executor always prefers queuing a request rather than adding a new thread.
 If a request cannot be queued, a new thread is created unless this would exceed maximumPoolSize, in which case, the task will be rejected.
 
-1. 如果运行的线程少于 corePoolSize，则Executor始终首选添加新的线程，而不进行排队。
-2. 如果运行的线程等于或多于 corePoolSize，则Executor始终首选将请求加入队列，而不添加新的线程。
+1. 如果运行的线程少于 corePoolSize，则 Executor 始终首选添加新的线程，而不进行排队。
+2. 如果运行的线程等于或多于 corePoolSize，则Executor 始终首选将请求加入队列，而不添加新的线程。
 3. 如果无法将请求加入队列，则创建新的线程，除非创建此线程超出 maximumPoolSize，在这种情况下，任务将被拒绝（抛出**RejectedExecutionException**）。
 
 ![3种任务的提交方式](https://upload-images.jianshu.io/upload_images/1662509-28b1d3777554e450.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -256,7 +256,7 @@ executorService = new ThreadPoolExecutor(poolSize, poolSize,
 
 #### 获取多个结果
 
-如果向线程池提交了多个任务，要获取这些任务的执行结果，可以依次调用`Future.get()`获得。但对于这种场景，我们更应该使用 [ExecutorCompletionService](https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ExecutorCompletionService.html)，该类的`take()`方法总是阻塞等待某一个任务完成，然后返回该任务的`Future`对象。向`CompletionService`批量提交任务后，只需调用相同次数的`CompletionService.take()`方法，就能获取所有任务的执行结果，获取顺序是任意的，取决于任务的完成顺序：
+如果向线程池提交了多个任务，要获取这些任务的执行结果，可以依次调用 `Future.get()` 获得。但对于这种场景，我们更应该使用 [ExecutorCompletionService](https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ExecutorCompletionService.html)，该类的 `take()` 方法总是阻塞等待某一个任务完成，然后返回该任务的`Future`对象。向`CompletionService`批量提交任务后，只需调用相同次数的`CompletionService.take()` 方法，就能获取所有任务的执行结果，获取顺序是任意的，取决于任务的完成顺序：
 
 ```java
 void solve(Executor e,
@@ -304,8 +304,7 @@ public void testLatch(ExecutorService executorService, List<Runnable> tasks)
 
 ## 参考
 
-深入学习 Java 线程池
-<http://www.importnew.com/29212.html>
+[深入学习 Java 线程池](http://www.importnew.com/29212.html)
 
 threadPoolExecutor 中的 shutdown() 、 shutdownNow() 、 awaitTermination() 的用法和区别
 <https://blog.csdn.net/u012168222/article/details/52790400>

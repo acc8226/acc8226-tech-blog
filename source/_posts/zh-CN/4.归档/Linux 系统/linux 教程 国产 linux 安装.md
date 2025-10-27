@@ -7,7 +7,7 @@ categories: linux
 
 ## 优麒麟
 
-优麒麟(英文名为 Ubuntu Kylin)是基于 Ubuntu 的一款官方衍生版。 它是一款专门为中国市场打造的免费操作系统，而且它已经被录入中国政府采购条例名单中。它包括 Ubuntu 用户期待的各种功能，并配有必备的中文软件及程序。
+优麒麟(英文名为 Ubuntu Kylin)是基于 Ubuntu 的一款官方衍生版。 是一款专门为中国市场打造的免费操作系统，而且它已经被录入中国政府采购条例名单中。它包括 Ubuntu 用户期待的各种功能，并配有必备的中文软件及程序。
 
 - 官方下载地址 <https://www.ubuntukylin.com/downloads/>
 - 阿里云镜像地址 <https://mirrors.aliyun.com/ubuntukylin/>
@@ -18,14 +18,13 @@ categories: linux
 下载镜像优麒麟 <https://www.ubuntukylin.com/downloads/>
 
 准备一个 U 盘要求：U 盘内存大于 4G；
+<!-- more -->
 
 制作启动盘此处推荐 Ventoy，下载链接：<https://www.lanzoui.com/b01bd54gb>
 
 分配空间磁盘分区是为了给优麒麟操作系统分配空间，默认选择分区尾部的磁盘（考虑到机械硬盘的读写特性，尽可能切靠前的分区）
 
 重启电进入 BIOS 系统插入制作好的 U 盘启动盘，重启电脑，在开机时按 “F2” 进入 BIOS 系统直到出现选择安装方式界面，选择“自定义安装”。首先添加根分区，在此处分配的大小是 80 GB，大家可以根据自身需求进行分配，但一定要确保之后有充足的空间可供使用。之后，添加 data 和 backup 分区，作为数据分区和备份还原分区，此处分别分配 20G。全部分配完成后点击“下一步”，开始安装优麒麟开源操作系统。等待安装完成。
-
-<!-- more -->
 
 ## 深度操作系统
 
@@ -46,7 +45,7 @@ categories: linux
 
 ext4 / 建议 20 G 以上
 ext4 /home 建议 8 G 以上
-swap 是可选项，如果内存大于 4 g 则可以不设置，否则设置为 2 g 为宜。
+swap 是可选项，如果内存大于 4g 则可以不设置，否则设置为 2g 为宜。
 
 **如何为主机做备案** 通俗来讲，要开办网站必须先办理网站备案，备案成功后您的域名才可指向接入商处的服务器开通访问。ICP 备案号以工信部网站公共查询为准，查询入口：[http://www.beian.miit.gov.cn](http://www.beian.miit.gov.cn/ "http://www.beian.miit.gov.cn")。
 

@@ -212,10 +212,10 @@ not
 
 **windows 平台**
 
-1. 本地播放：【全平台 绿色版】[VLC](https://www.videolan.org) [Chocolatey](https://community.chocolatey.org/packages/vlc#install) 源 |【win 官方安装版】PotPlayer [官网](https://potplayer.tv/?lang=zh_CN) | [绿色版](https://potplayer.org) 再搭配 HEVC 解码器 [LAVFilters](https://github.com/Nevcairiel/LAVFilters/releases)
+1. 本地播放：【全平台 绿色版】[VLC](https://www.videolan.org) [Chocolatey](https://community.chocolatey.org/packages/vlc#install) 源 或 【win 精品软件 安装版】PotPlayer [官网](https://potplayer.tv/?lang=zh_CN) | [绿色版](https://potplayer.org) 再搭配 HEVC 解码器 [LAVFilters](https://github.com/Nevcairiel/LAVFilters/releases) 
 1. 在线平台：【win】[荐片播放器](https://www.jianpian6.co) 可观看最新电影 +【win mac】[哔哩哔哩客户端](https://app.bilibili.com)
 1. 电视直播 vlc 和 potplayer 都能打
-1. 视频刮削+播放器 网易爆米花🍿 用来看片
+1. 视频刮削+播放器 网易爆米花🍿用来看片
 
 **mac 平台**
 
@@ -247,6 +247,15 @@ not【win linux】[阿里旺旺](https://wangwang.taobao.com) 不好用
 ### 1.7 远程类
 
 **注意：谨防电信网络诈骗，不要被陌生人任何理由要求下载各种投屏和开启共享屏幕。**
+
+**RDP 远程**
+
+windows 平台首推 xshell [校园免费版](https://www.xshell.com/zh/free-for-home-school)，其次是 MobaXterm。
+linux 则为 Remmina。
+
+**VNC 远程**
+
+VNC Viewer
 
 远程桌面
 

@@ -463,14 +463,13 @@ set password = Password('lalalallala');
 
 ## 相关专题
 
-MySQL 简介 - 简书 https://www.jianshu.com/p/b72814256932
+[MySQL 简介](https://www.jianshu.com/p/b72814256932) - 简书 
 
-MySQL 教程下 - 简书 https://www.jianshu.com/p/7c698d95c93f
+[MySQL 教程下](https://www.jianshu.com/p/7c698d95c93f) - 简书 
 
 ## 参考
 
-MySQL 简介 | 菜鸟教程
-<https://www.runoob.com/mysql/mysql-tutorial.html>
+[MySQL 简介 | 菜鸟教程](https://www.runoob.com/mysql/mysql-tutorial.html)
 
 DQL、DML、DDL、DCL、TCL_springlan的博客-CSDN博客
 <https://blog.csdn.net/springlan/article/details/106245872>

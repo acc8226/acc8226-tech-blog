@@ -36,6 +36,16 @@ categories:
 
 打开 C 盘，定位到 `C:\Windows\System32` 目录，查询是否有一个 SlideToShutDown.exe 应用程序。接着右键点击该应用程序，选择发送到桌面快捷方式，这样就在桌面建立了一个快捷方式。这里我;重命名为“滑动关机”。可以双击即用。
 
+### 每次开机同步一下网络时间
+
+```bat
+@echo off
+echo 开始同步网络时间
+w32tm /resync
+echo 已同步
+pause
+```
+
 ## 记录
 
 ### 各个符号按键的英文
