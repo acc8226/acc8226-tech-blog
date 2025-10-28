@@ -1,7 +1,7 @@
 ---
 title: Windows bat 脚本简介
 date: 2022-04-05 14:41:50
-updated: 2022-11-05 09:48:00
+updated: 2025-10-29 00:08:10
 categories: 脚本与自动化
 tags:
 - bat
@@ -464,15 +464,124 @@ cd /d %~dp0 的意思就是cd /d d:\qq
 
 %0代表批处理本身 d:\qq\a.bat
 
-~dp是变量扩充
+~dp 是变量扩充
 d 既是扩充到分区号 d:
 p 就是扩充到路径 \qq
 dp 就是扩充到分区号路径 d:\qq
+
+## 收藏脚本
+
+### 时间同步脚本
+
+用于每次启动电脑，同步网络时间。
+
+注：需要管理员权限。
+
+创建时间同步.cmd，文件编码默认为 ASCI 即可。
+
+```bat
+@echo off
+setlocal enabledelayedexpansion
+
+:: 定义日志文件路径为批处理文件所在的目录
+set LOG_FILE=%~dp0时间同步日志.txt
+
+:: 定义调试开关
+set DEBUG=true
+
+:: 将DEBUG变量值转换为小写
+set DEBUG=%DEBUG:~0,1%%DEBUG:~1,1%%DEBUG:~2,1%%DEBUG:~3,1%%DEBUG:~4,1%
+
+:: 获取当前时间
+set datetime=%date% %time%
+
+:: 记录开始同步时间信息
+echo [%datetime%] 开始同步时间...
+if /i "%DEBUG%"=="true" (
+    echo [%datetime%] 开始同步时间...>> "%LOG_FILE%"
+)
+
+:: 设置要同步时间的服务器
+set TIME_SERVER=ntp.aliyun.com
+
+:: 检查 Windows 时间服务状态。tokens 可能取 3 或者 4，这里我取 4
+for /f "tokens=4" %%a in ('sc query w32time ^| findstr "STATE"') do set service_state=%%a
+echo service_state=%service_state%
+
+:: 根据服务状态决定是否需要启动服务
+if /i "%service_state%"=="STOPPED" (
+    echo [%datetime%] Windows 时间服务未运行，正在启动...
+    net start w32time >nul 2>&1
+    echo errorlevel=%errorlevel%
+    if %errorlevel% neq 0 (
+        echo [%datetime%] 启动 Windows 时间服务失败！
+        if /i "%DEBUG%"=="true" (
+            echo [%datetime%] 启动 Windows 时间服务失败！>> "%LOG_FILE%"
+        )
+        echo [%datetime%] 程序将在 3 秒后自动退出...
+        timeout /t 3 >nul
+        exit /b
+    )
+) else (
+    echo [%datetime%] Windows 时间服务已运行，无需启动。
+)
+
+:: 配置时间服务器
+echo [%datetime%] 配置时间服务器...
+w32tm /config /manualpeerlist:%TIME_SERVER% /syncfromflags:manual /reliable:yes /update >nul 2>&1
+echo errorlevel=%errorlevel%
+if %errorlevel% neq 0 (
+    echo [%datetime%] 配置时间服务器失败，请检查是否以管理员权限运行，以及服务器地址是否有效！
+    if /i "%DEBUG%"=="true" (
+        echo [%datetime%] 配置时间服务器失败，请检查是否以管理员权限运行，以及服务器地址是否有效！>> "%LOG_FILE%"
+    )
+    echo [%datetime%] 程序将在 3 秒后自动退出...
+    timeout /t 3 >nul
+    exit /b
+)
+
+:: 强制同步时间
+echo [%datetime%] 强制同步时间...
+w32tm /resync /force >nul 2>&1
+if %errorlevel% neq 0 (
+    echo [%datetime%] 时间同步失败，请检查网络连接或时间服务器地址！
+    if /i "%DEBUG%"=="true" (
+        echo [%datetime%] 时间同步失败，请检查网络连接或时间服务器地址！>> "%LOG_FILE%"
+    )
+    echo [%datetime%] 程序将在 3 秒后自动退出...
+    timeout /t 3 >nul
+    exit /b
+)
+
+:: 再次获取当前时间以确保同步后的时间被记录
+set datetime=%date% %time%
+
+:: 记录时间同步成功信息
+echo [%datetime%] 时间同步成功！
+if /i "%DEBUG%"=="true" (
+    echo [%datetime%] 时间同步成功！>> "%LOG_FILE%"
+)
+
+:: 程序将在 3 秒后自动退出
+:: echo [%datetime%] 程序将在 3 秒后自动退出...
+:: timeout /t 3 >nul
+```
+
+接下来可以任务计划方式运行该 bat:
+
+键入 taskschd.msc 新建任务计划
+创建基本任务
+名称填写时间同步
+计算机启动时
+启动程序
+程序脚本：选择该 bat
+在完成基本任务就创建后。打开属性对话框，设置为不管用户是否登录都要运行。点击确定，然后输入运行此任务的用户账户的用户名和密码。点击“确定”进行保存。
+
+当然也可通过 SkipUAC [官网下载](https://www.sordum.org/files/download/skip-uac-prompt/SkipUAC.zip) | [123 网盘分享](https://www.123865.com/s/GJ9zVv-7owRv) 小工具来运行该任务并加入开机自启。
 
 ## 遇到过的问题
 
 ## 参考
 
-[DOS 批处理中的字符串处理详解(字符串截取)](https://blog.csdn.net/xiaoding133/article/details/39253083)
-
-[cd /d %~dp0 是什么意思 - 海阔天](https://www.cnblogs.com/yxsylyh/archive/2012/06/07/dosdp0.html) - 博客园
+* [DOS 批处理中的字符串处理详解(字符串截取)](https://blog.csdn.net/xiaoding133/article/details/39253083)
+* [cd /d %~dp0 是什么意思 - 海阔天](https://www.cnblogs.com/yxsylyh/archive/2012/06/07/dosdp0.html) - 博客园
