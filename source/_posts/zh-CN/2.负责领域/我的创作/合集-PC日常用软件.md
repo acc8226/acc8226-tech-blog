@@ -125,7 +125,7 @@ categories: 我的创作
 
 #### 1.2.1【常用】Office
 
-一般品牌机都会赠送[微软 Office](https://www.microsoftstore.com.cn/software/office) | 重新安装[已购买 Office](https://account.microsoft.com/services/)，否则一般会用【全平台 [WPS](https://www.wps.cn) 需登录才能解锁编辑太恶心。好在 windows 可使用 [WPS Office 教育考试专用版](https://ncre.neea.edu.cn/html1/report/1507/861-1.htm)
+一般品牌机都会赠送[微软 Office](https://www.microsoftstore.com.cn/software/office) | 重新安装[已购买 Office](https://account.microsoft.com/services/)，否则一般会用【全平台 [WPS](https://www.wps.cn) 需登录才能解锁编辑太恶心。好在我找到了 [WPS 11.1 旧版本](https://www.123pan.com/s/aDE9-hCCyh.html)
 
 **Web 平台** 暂推荐 [金山文档](https://www.kdocs.cn) 适合文档分享。但千万记得加水印和设置只读访问权限，防止资料泄漏
 
@@ -809,22 +809,40 @@ not
 
 ## 6 XP 怀旧专题
 
-1. [补丁合集](https://www.123pan.com/s/aDE9-hCCyh.html)
+1. [补丁合集](https://www.123pan.com/s/aDE9-hCCyh.html) 包含使 XP 系统支持 4G 以上内存补丁和消除安全证书过期的补丁
 1. [360 安全卫士极速版](https://wsdl.360safe.com/setupbeta_jisu.exe)
-1. [360 安全浏览器 13](https://down.360safe.com/se/360se13.1.6410.0.exe) | [搜狗浏览器](https://sogou.browser.qq.com)
-1. [360 压缩](https://sfdl.360safe.com/360zip_setup.exe) | [7-Zip 24.09 x86](https://7-zip.org/a/7z2409.exe) | [Bandizip 5](https://www.bandisoft.com/bandizip/dl.php?xp)
-1. [QQ 输入法](https://qq.pinyin.cn/download_pc.php?t=py)
+1. [360 安全浏览器 13](https://down.360safe.com/se/360se13.1.6410.0.exe)
+1. [7-Zip 24.09 x86](https://mirrors.nju.edu.cn/7-zip/7z2409.exe) | [Bandizip 5](https://www.bandisoft.com/bandizip/dl.php?xp)
+1. [QQ 输入法 6.6](https://qq.pinyin.cn/download_pc.php?t=py) | [搜狗拼音输入法 10.4](https://www.123pan.com/s/aDE9-hCCyh.html)
 1. [QQ 9.7 怀旧版](https://dldir1.qq.com/qqfile/qq/PCQQ9.7.23/QQ9.7.23.29394.exe)
 1. [微信 3.2.1](https://www.123pan.com/s/aDE9-hCCyh.html)
 1. [Potplayer 1.7](https://www.123pan.com/s/aDE9-hCCyh.html)
+1. [WPS 11.1 旧版本](https://www.123pan.com/s/aDE9-hCCyh.html)
 
-## 7 软件推荐网站
+[天翼云盘-资源分享](https://cloud.189.cn/t/bmAfU33iIFjq)（访问码：5bzb）
+
+## 7 Win 7 怀旧专题
+
+1. [补丁合集](https://www.123pan.com/s/aDE9-eLCyh.html) 包含使 Win 7 支持 Nvme 硬盘的补丁等必备补丁
+1. [360 安全卫士极速版](https://wsdl.360safe.com/setupbeta_jisu.exe)
+1. [百分浏览器](https://www.centbrowser.cn) 安装版 | 绿色版 皆可
+1. [7-Zip](https://mirrors.nju.edu.cn/7-zip/7z2501-x64.exe) | [Bandizip 6](https://www.iplaysoft.com/bandizip.html)
+1. [QQ 输入法 6.6](https://qq.pinyin.cn/download_pc.php?t=py) | [搜狗拼音输入法 10.4](https://www.123pan.com/s/aDE9-hCCyh.html)
+1. [QQ 9.7 怀旧版](https://dldir1.qq.com/qqfile/qq/PCQQ9.7.23/QQ9.7.23.29394.exe)
+1. 微信 3.9.12 最终版 [64 位](https://dldir1v6.qq.com/weixin/Windows/WeChatSetup.exe) | [32 位](https://dldir1v6.qq.com/weixin/Windows/WeChatSetup_x86.exe)
+1. [Potplayer](http://www.potplayercn.com/download/potplayer241212.html)
+1. [WPS 11.1 旧版本](https://www.123pan.com/s/aDE9-hCCyh.html)
+1. 全局鼠标手势 [WGestures 1 代](https://dl-x-yingdev-x-com.img.addlink.cn/Content/Projects/WGestures/Release/1.8.5.0/Install%20WGestures%201.8.5.0.zip) + [捷键](https://jiejian.sourceforge.io/jiejian-beta.7z)
+
+[天翼云盘-资源分享](https://cloud.189.cn/t/vIJBZrqmeYvm)（访问码：qt6b）
+
+## 8 软件推荐网站
 
 [软件推荐 - 入门向导](https://getquicker.net/Guides/Guide?id=9260b229-c617-42f5-378b-08da75b5e519&step=4a095264-4550-4d66-a410-08da7756e1a7)
 
 [软件推荐](https://getquicker.net/Guides/Guide?id=52593d69-c99a-4367-8b98-08d9a65be47e&step=436a0dbd-e10b-4897-c9d6-08dae0ce419c) - 动作坞
 
-## 8 留观中
+## 9 留观中
 
 一些用过的软件但主观关键明显不好用的记录，说不定下版会优化，所以仅供参考
 
@@ -836,7 +854,7 @@ not
 * [pear-rec](https://027xiguapi.github.io/pear-rec)【全平台】录屏软件 至少我在 windows 上体验不佳
 * [flowlauncher](https://www.flowlauncher.com/docs) 作为一款启动器 有点儿卡
 
-## 9 回收站
+## 10 回收站
 
 * 【浏览器插件】CSDN 猿如意 不让人满意
 * ——————— ฅ՞• •՞ฅ ———————
