@@ -2,7 +2,7 @@
 title: 合集-PC日常用软件
 permalink: mypc/
 date: 2023-03-22 21:02:00
-updated: 2025-10-07 21:03:17
+updated: 2025-11-05 22:07:10
 categories: 我的创作
 ---
 
@@ -44,23 +44,24 @@ categories: 我的创作
 
 #### 1.1.0【常用】压缩解压
 
-* 【win 11】[PeaZip](https://peazip.github.io/index.html) 可添加智能解压到新版 win 11 右键菜单
-* 【低于 win 11】[Bandizip 6.2x](https://www.iplaysoft.com/bandizip.html) 含自动解压（智能解压）且颜值和功能均在线，v6 是最后一个无广告版本。到 v7 版本不付费则会偶尔弹窗
+* 【win11】[PeaZip](https://peazip.github.io/index.html) 可添加智能解压到新版 win 11 右键菜单
+* 【win7、8、10】[Bandizip 6.2x](https://www.iplaysoft.com/bandizip.html) 含自动解压（智能解压）且颜值和功能均在线，v6 是最后一个无广告版本。到 v7 版本不付费则会偶尔弹窗
+* 【低于 win7】[7-Zip 24.09 x86](https://mirrors.nju.edu.cn/7-zip/7z2409.exe)
 * 【mac、linux】[PeaZip](https://peazip.github.io/index.html) 含智能解压
 
-#### 1.1.1【推荐】鼠标手势
+#### 1.1.1【常用】鼠标手势
 
 * 【**win 精品软件**】[WGestures 1 代](https://dl-x-yingdev-x-com.img.addlink.cn/Content/Projects/WGestures/Release/1.8.5.0/Install%20WGestures%201.8.5.0.zip) 免费 | [WGestures 2](https://store.lizhi.io/site/products/id/523?cid=46jjayiu) 付费
 * 【mac】[BetterAndBetter](https://www.better365.cn/bab2.html) 不仅仅是鼠标手势
 * 【linux】Easystroke 或 KDE 内置的鼠标手势
 
-#### 1.1.2【推荐】键鼠增强
+#### 1.1.2【可选】键鼠增强
 
 * 【win 开源绿色版 自荐】[捷键](https://feipig.fun/jiejian)
 * 【mac】[Hammerspoon](https://www.hammerspoon.org) 可自己写脚本 + [Karabiner-Elements](https://karabiner-elements.pqrs.org)
 * 【linux】AutoKey [Github 地址](https://github.com/autokey/autokey) & [帮助文档](https://autokey.github.io/intro.html) 适用于 x11 和 qt 平台
 
-#### 1.1.3【常用】截图
+#### 1.1.3 截图
 
 * 【win 绿色版 & mac】[PixPin](https://pixpinapp.com) 不付费也能使用 OCR 和长截图功能 ｜ [小旺截图](https://www.xiaowang.com)
 * liunx 系统自带 或 [Snipaste](https://zh.snipaste.com/)
@@ -73,7 +74,7 @@ categories: 我的创作
 
 **linux 平台** 虚位以待
 
-#### 1.1.5【常用】下载
+#### 1.1.5下载
 
 **windows 平台**
 
@@ -188,7 +189,7 @@ not
 
 在线 [flomo 浮墨笔记](https://sj.qq.com/appdetail/com.flomo.app) 可以多台设备同步且不收费，适合灵光一闪
 
-### 1.3【常用】音频类
+### 1.3 音频类
 
 **windows 和 mac 平台**
 
@@ -230,7 +231,7 @@ not
 
 官网收录：【win mac】[迅雷影音](https://video.xunlei.com/pc.html) | 【win】[射手影音](https://www.splayer.org) | 【win mac】[抖音电脑版](https://www.douyin.com) |【win mac】[爱奇艺客户端](https://www.iqiyi.com/appstore.html) | 【win [mac](https://apps.apple.com/cn/app/%E8%85%BE%E8%AE%AF%E8%A7%86%E9%A2%91-%E5%BF%83%E5%8A%A8%E7%9A%84%E4%BF%A1%E5%8F%B77-%E7%8B%AC%E5%AE%B6%E7%83%AD%E6%92%AD/id1231336508?mt=12)】[腾讯视频](https://v.qq.com/download.html) |【win [mac](https://apps.apple.com/cn/app/%E4%BC%98%E9%85%B7%E8%A7%86%E9%A2%91-%E6%83%9C%E8%8A%B1%E8%8A%B7-%E5%85%A8%E7%BD%91%E7%8B%AC%E6%92%AD/id1014945607?mt=12)】[优酷](https://youku.com/product/index) |【win [mac](https://apps.apple.com/cn/app/%E5%A4%AE%E8%A7%86%E5%BD%B1%E9%9F%B3-%E6%B5%B7%E9%87%8F%E5%A4%AE%E8%A7%86%E5%86%85%E5%AE%B9%E9%AB%98%E6%B8%85%E7%9B%B4%E6%92%AD/id1357529089?mt=12)】[央视影音](https://app.cctv.com)
 
-### 1.5【常用】社交类
+### 1.5 社交类
 
 * 【全平台】【[mac 版](https://apps.apple.com/cn/app/%E5%BE%AE%E4%BF%A1/id836500024?mt=12)】[微信](https://weixin.qq.com)｜【全平台】【[mac 版](https://apps.apple.com/cn/app/qq/id451108668?mt=12)】[QQ](https://im.qq.com/index)
 * 【[win](https://tim.qq.com/download.html)】[Tim](https://tim.qq.com)

@@ -2,7 +2,7 @@
 title: 合集-App
 permalink: myapp/
 date: 2017-04-13 22:07:33
-updated: 2025-08-25 17:27:16
+updated: 2025-11-05 22:07:40
 categories: 我的创作
 ---
 
@@ -72,7 +72,6 @@ categories: 我的创作
 
 1. [Aegis Authenticator](https://getaegis.app) [下载地址](https://github.com/beemdevelopment/Aegis/releases) 需定期做好密码备份导出到天翼云盘
 1. [国家网络身份认证](https://sj.qq.com/appdetail/cn.cyberIdentity.certification) 用于互联网账号联合登录
-1. [网易大神](https://ds.163.com) 网易游戏用
 
 not
 
@@ -210,11 +209,13 @@ not
 #### 安卓平板
 
 * 在线 [QQ 音乐 HD](https://sj.qq.com/appdetail/com.tencent.qqmusicpad)
-* 在线 [LX Music 洛雪音乐助手](https://github.com/lyswhut/lx-music-mobile/releases)
-* 本地 [椒盐音乐 Salt Player](https://www.coolapk.com/apk/284064)
-* ——————— ฅ՞• •՞ฅ ———————
 * 在线 [网易云音乐](https://sj.qq.com/appdetail/com.netease.cloudmusic) 通用版，已适配平板，不仅仅有开屏广告
-* 在线 [棉花音乐](https://dkit.caij.xyz/puremusic) 有时候会要求重新登录
+* 本地 [椒盐音乐 Salt Player](https://www.coolapk.com/apk/284064)
+
+备用
+
+* 在线 [LX Music 洛雪音乐助手](https://github.com/lyswhut/lx-music-mobile/releases) 不能云同步，但好在可以曲库全
+* 在线 [棉花音乐](https://dkit.caij.xyz/puremusic) 有时候会要求重新登录，总之暂不好用
 
 not 
 
@@ -238,18 +239,18 @@ not [QQ 音乐 HD](https://sj.qq.com/appdetail/com.tencent.qqmusicpad) 首先更
 
 ### 1.7 听物
 
-#### 安卓
+#### 安卓 & 安卓平板
 
 1. [帆书（原樊登读书）](https://sj.qq.com/appdetail/io.dushu.fandengreader) 稍有限免资源，但旧手机有点卡
-1. [得到](https://sj.qq.com/appdetail/com.luojilab.player) 免费资源还行，除了体积大
-1. [微信听书](https://sj.qq.com/appdetail/com.tencent.wehear) 无广告，活动玩法多，可以换取收听时长
-1. 【本地】[讯飞有声](https://sj.qq.com/appdetail/com.iflytek.readassistant) 可播放 pdf、doc、mobi 格式的文本，是目前的一个本地解决方案
+1. [喜马拉雅](https://sj.qq.com/appdetail/com.ximalaya.ting.android) 有些广告但可听资源很全
+1. [番茄畅听](https://sj.qq.com/appdetail/com.xs.fm) 免费资源较多
 
 备用
 
+* [微信听书](https://sj.qq.com/appdetail/com.tencent.wehear) 无广告，活动玩法多，可以换取收听时长
+* [得到](https://sj.qq.com/appdetail/com.luojilab.player) 免费资源还行，除了较为臃肿
+* 【本地】[讯飞有声](https://sj.qq.com/appdetail/com.iflytek.readassistant) 可播放 pdf、doc、mobi 格式的文本，是目前的一个本地解决方案。但我日常极少用到
 * [云听](https://sj.qq.com/appdetail/com.shinyv.cnr) 央视的资源还是很丰富，有广告
-* [番茄畅听](https://sj.qq.com/appdetail/com.xs.fm) 免费资源较多，和番茄免费小说部分功能重合了
-* [喜马拉雅](https://sj.qq.com/appdetail/com.ximalaya.ting.android) 有些广告
 * [蜻蜓 FM](https://sj.qq.com/appdetail/fm.qingting.qtradio) 有些广告
 * [听听 FM](https://sj.qq.com/appdetail/com.audio.tingting)
 * ——————— ฅ՞• •՞ฅ ———————
@@ -259,10 +260,6 @@ not
 
 * [少年得到](https://sj.qq.com/appdetail/com.dedao.juvenile) 更适合中小学生
 * [凤凰 FM](https://sj.qq.com/appdetail/com.ifeng.fhdt) 偶尔闪退
-
-#### 安卓平板
-
-虚位以待
 
 #### iPhone
 
@@ -312,7 +309,7 @@ not
 #### 安卓平板
 
 * [要知](https://sj.qq.com/appdetail/com.ruanmei.yaozhi) 暂用它听新闻用，目前定制项不太多，以后我可能会换成 ai 收集 + 听新闻了
-* 我从 vivo pad 导出的原子阅读 简直完美【TODO】
+* 我从 vivo pad 导出的原子阅读 简直完美
 
 #### iPhone
 
@@ -377,31 +374,30 @@ not
 
 ### 安卓平板
 
-智能媒体库（还能当播放器用）
+**智能媒体库**（还能当播放器用）
 
 * [VidHub](https://sj.qq.com/appdetail/com.oumi.utility.media.hub) 目前无需登录，好评
 * [网易爆米花](https://bmh.163.com) 需登录后才可使用
 
-短视频
+**短视频**
 
 * [抖音](https://sj.qq.com/appdetail/com.ss.android.ugc.aweme)【已适配安卓平板】
 * [快手](https://sj.qq.com/appdetail/com.smile.gifmaker)
 
-中长视频
+**中长视频**
 
 * [西瓜视频](https://sj.qq.com/appdetail/com.ss.android.article.video)【已适配安卓平板】
 * [哔哩哔哩 HD](https://sj.qq.com/appdetail/tv.danmaku.bilibilihd)
 * [央视影音 HD](https://sj.qq.com/appdetail/cn.cntvhd)
-* [央视频](https://sj.qq.com/appdetail/com.cctv.yangshipin.app.androidp) 【已适配安卓平板】部分平板有效
 * [乐视视频 Pad](https://sj.qq.com/appdetail/com.letv.android.client.pad) 无广告
 * ——————— ฅ՞• •՞ฅ ———————
-* [腾讯视频](https://sj.qq.com/appdetail/com.tencent.qqlive)【已适配安卓平板】
-* [优酷视频](https://sj.qq.com/appdetail/com.youku.phone)【已适配安卓平板】
-* [爱奇艺 PAD](https://sj.qq.com/appdetail/com.qiyi.video.pad) | [芒果TV HD](https://sj.qq.com/appdetail/com.imgo.pad) | [搜狐视频 Pad](https://sj.qq.com/appdetail/com.sohu.tv) | 
+* [央视频](https://sj.qq.com/appdetail/com.cctv.yangshipin.app.androidp) 【已适配安卓平板】部分平板有效
+* ——————— ฅ՞• •՞ฅ ———————
+* [腾讯视频](https://sj.qq.com/appdetail/com.tencent.qqlive)【已适配安卓平板】| [优酷视频](https://sj.qq.com/appdetail/com.youku.phone)【已适配安卓平板】| [爱奇艺 PAD](https://sj.qq.com/appdetail/com.qiyi.video.pad) | [芒果TV HD](https://sj.qq.com/appdetail/com.imgo.pad) | [搜狐视频 Pad](https://sj.qq.com/appdetail/com.sohu.tv) | 
 * ——————— ฅ՞• •՞ฅ ———————
 * YouTube
 
-本地 [VLC](https://www.videolan.org/vlc/download-android.html) [中科大源](https://mirrors.ustc.edu.cn/videolan-ftp/vlc-android/last)
+**本地** [VLC](https://www.videolan.org/vlc/download-android.html) [中科大源](https://mirrors.ustc.edu.cn/videolan-ftp/vlc-android/last)
 
 ### iPhone
 
@@ -530,7 +526,7 @@ not
 
 ### 安卓平板
 
-[高德地图](https://sj.qq.com/appdetail/com.autonavi.minimap) 通用版【已适配平板】，我将其作为主力。查看票价功能很好使
+[高德地图](https://sj.qq.com/appdetail/com.autonavi.minimap) 通用版【已适配平板】，可以比较多家宾馆价格
 
 备用
 
@@ -575,6 +571,9 @@ not
 
 ### 安卓平板
 
+* [多邻国](https://sj.qq.com/appdetail/com.duolingo) 多国语言学习
+* [英语流利说](https://sj.qq.com/appdetail/com.liulishuo.engzo)
+* ——————— ฅ՞• •՞ฅ ———————
 * [学堂在线](https://sj.qq.com/appdetail/com.xuetangx.mobile) 大学慕课平台【通用版已适配平板】
 * ——————— ฅ՞• •՞ฅ ———————
 * [每日英语听力](https://sj.qq.com/appdetail/com.qianyan2.ting.en)
@@ -698,7 +697,8 @@ not
 
 ### 安卓平板
 
-[高铁管家](https://sj.qq.com/appdetail/com.gtgj.view) 部分平板有效
+* 较为推荐 [携程旅行](https://sj.qq.com/appdetail/ctrip.android.view) 和 美团的酒店频道。虽然没有适配平板
+* [高铁管家](https://sj.qq.com/appdetail/com.gtgj.view) 部分平板有效
 
 ## 9 社交通讯
 
@@ -762,7 +762,7 @@ not
 * [PDF Reader Pro](https://www.pdfreaderpro.com/pdfreaderpro-android)
 * [迅读 PDF](https://sj.qq.com/appdetail/com.xundupdf.reader) 裁剪模式很好用
 
-备用 [WPS Office](https://sj.qq.com/appdetail/cn.wps.moffice_eng) 可做到 Office 文档和 PDF 通吃，功能强大但是不够清爽
+备用 [WPS Office](https://sj.qq.com/appdetail/cn.wps.moffice_eng) 可做到 Office 文档和 PDF 通吃，功能强大但不够清爽
 
 not
 
@@ -1247,8 +1247,8 @@ not
 
 ### 安卓平板
 
-* [印象笔记](https://sj.qq.com/appdetail/com.yinxiang) 已限制 2 台设备
-* [有道云笔记](https://sj.qq.com/appdetail/com.youdao.note) 已限制 2 台设备
+* [印象笔记](https://sj.qq.com/appdetail/com.yinxiang)【已适配安卓平板】免费版限制 2 台设备
+* [有道云笔记](https://sj.qq.com/appdetail/com.youdao.note)【已适配安卓平板】免费版限制 2 台设备
 * [flomo 浮墨笔记](https://sj.qq.com/appdetail/com.flomo.app) 支持多台设备同步且不收费，适合灵光一闪
 * 本地 [obsidian](https://obsidian.md/download)
 
@@ -1261,9 +1261,12 @@ not [Simplenote](https://simplenote.com/) 极简，无限同步，不限设备�
 ## 43 反调公司【重要】
 
 * **天眼查** [app](https://sj.qq.com/appdetail/com.tianyancha.skyeye) / 【小程序】 求职中可以**反调公司**，也适用于查询被服务公司，**无良北京丰台万达舒瑶(窈)国际(已注销)**
+* [水滴信用](https://sj.qq.com/appdetail/com.shuidi.app)
+
+备用（当前收录企业貌似不准）
+
 * [企查查](https://sj.qq.com/appdetail/com.android.icredit)
 * [爱企查](https://sj.qq.com/appdetail/com.baidu.xin.aiqicha)
-* [水滴信用](https://sj.qq.com/appdetail/com.shuidi.app)
 
 ## 44 文件同步
 
