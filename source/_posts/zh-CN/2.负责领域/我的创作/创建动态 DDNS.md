@@ -12,7 +12,8 @@ updated: 2025-08-09 16:41:12
 
 3\. 构建请求
 
-说明：zenoid 填写你的 zone_identifier。dns_record_id 填写你的 dns 记录 id。一般可通过 `https://api.cloudflare.com/client/v4/zones/{zone_identifier}/dns_records` 查询得到。
+说明：ZONE_ID 填写你的 zone_identifier。
+DNS_RECORD_ID 填写你的 dns 记录 id。一般可通过 `https://api.cloudflare.com/client/v4/zones/{zone_identifier}/dns_records` 查询得到。
 <!-- more -->
 
 ```sh

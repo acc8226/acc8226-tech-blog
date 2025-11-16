@@ -2,7 +2,7 @@
 title: 合集-App
 permalink: myapp/
 date: 2017-04-13 22:07:33
-updated: 2025-11-05 22:07:40
+updated: 2025-11-16 13:30:04
 categories: 我的创作
 ---
 
@@ -22,7 +22,7 @@ categories: 我的创作
 
 ### 安卓还是 iOS、鸿蒙 next
 
-如果只考虑必要需求，现阶段低于 2000 元以下只选安卓
+如果只考虑必要需求，现阶段低于 1500 元以下只有安卓设备，否则我推荐逐渐完善的鸿蒙手机
 
 ### 手机还是平板
 
@@ -66,6 +66,10 @@ categories: 我的创作
 
 360 防骚扰大师 不知道现在有没有下架
 
+#### 鸿蒙
+
+[国家反诈中心](https://appgallery.huawei.com/app/detail?id=com.hicorenational.antifraud.hmy)
+
 ### 1.1 密码认证【重要】
 
 #### 安卓
@@ -80,6 +84,10 @@ not
 * ——————— ฅ՞• •՞ฅ ———————
 * [QQ 安全中心](https://sj.qq.com/appdetail/com.tencent.token) 至尊宝没了，属于半死不活，新版本一直转圈
 
+#### 安卓平板
+
+[Aegis Authenticator](https://getaegis.app) [下载地址](https://github.com/beemdevelopment/Aegis/releases) 需定期做好密码备份导出工作
+
 #### iPhone
 
 1. 暂时选用 微软 Authenticator
@@ -88,15 +96,19 @@ not
 
 not [Google Authenticator](https://google-authenticator.en.softonic.com/android) 水土不服
 
-#### 安卓平板
+#### 鸿蒙
 
-[Aegis Authenticator](https://getaegis.app) [下载地址](https://github.com/beemdevelopment/Aegis/releases) 需定期做好密码备份导出工作
+1. [国家网络身份认证](https://appgallery.huawei.com/app/detail?id=cn.cyberIdentity.certificationharmonyos)
+1. [2FA验证器](https://appgallery.huawei.com/app/detail?id=top.bundows.twofas)
+1. [QQ 安全中心](https://sj.qq.com/appdetail/com.tencent.token)
 
 ### 1.2 密码管理【重要】
 
 Bitwarden【已适配安卓平板】[Github 版](https://github.com/bitwarden/android/releases) 可以云端存储的密码管理器，支持本地导入导出密码。推荐选择 f-droid，因为国内网络环境堪忧
 
 ### 1.3 邮件收发
+
+#### 安卓
 
 网易邮箱大师 [应用宝下载](https://sj.qq.com/appdetail/com.netease.mail) 操作上我更偏爱 QQ 邮箱一些
 
@@ -108,9 +120,17 @@ Bitwarden【已适配安卓平板】[Github 版](https://github.com/bitwarden/an
 * [Aqua Mail](https://www.aqua-mail.com) [Google play 版](https://play.google.com/store/apps/details?id=org.kman.AquaMail) | [Apkpure 版](https://apkpure.com/cn/email-aqua-mail-fast-secure/org.kman.AquaMail)
 * [Thunderbird](https://www.thunderbird.net/zh-CN/mobile/) 移动版 [Github 版](https://github.com/thunderbird/thunderbird-android/releases)
 
+#### 鸿蒙
+
+[QQ 邮箱](https://appgallery.huawei.com/app/detail?id=com.tencent.qqmail.hmos)
+
 ### 1.4 倒数日
 
 [倒数日](https://app.ipad.ly/idays) 倒计时神器, 可设置过期日提醒，还有各种纪念日提醒。多端同步，除了苹果端，还支持安卓端还有手表端
+
+#### 鸿蒙
+
+[mDays倒计时](https://appgallery.huawei.com/app/detail?id=com.wtkj.app.counter.hm)
 
 ### 1.5 Books 书籍
 
@@ -133,7 +153,6 @@ not
 
 * [静读天下](http://www.moondownload.com/download.html) 免费版有广告
 * [豆瓣阅读](https://sj.qq.com/appdetail/com.douban.book.reader) 有适配了平板，但绝大多数书都需付费
-* ~~云虫爱看 已下架，应用不再更新~~
 * ——————— ฅ՞• •՞ฅ ———————
 * [QQ 阅读](https://sj.qq.com/appdetail/com.qq.reader) 有广告
 * [多看](https://sj.qq.com/appdetail/com.duokan.reader) 书太贵
@@ -148,7 +167,6 @@ not
 
 备用
 
-* [Kindle 阅读](https://sj.qq.com/appdetail/com.amazon.kindlefc) 可惜不再更新了
 * [豆瓣阅读](https://sj.qq.com/appdetail/com.douban.book.reader) 毕竟适配了平板，但很多付费内容
 * [FBReader](https://fbreader.org/android#download)
 * [七猫免费小说](https://sj.qq.com/appdetail/com.kmxs.reader)
@@ -171,6 +189,11 @@ not
 * [微信读书](https://sj.qq.com/appdetail/com.tencent.weread) 除了现在很多内容收费了
 * [百度阅读](https://sj.qq.com/appdetail/com.baidu.yuedu) 老版本无广告
 * [多看](https://sj.qq.com/appdetail/com.duokan.reader) 老版本无广告
+
+#### 鸿蒙
+
+* [番茄免费小说](https://appgallery.huawei.com/app/detail?id=com.dragon.read.next)
+* [微信读书](https://appgallery.huawei.com/app/detail?id=com.tencent.weread.hmos)
 
 ### 1.6 音乐
 
@@ -237,6 +260,18 @@ not 网易云音乐 有广告
 
 not [QQ 音乐 HD](https://sj.qq.com/appdetail/com.tencent.qqmusicpad) 首先更新不及时，其次其中 21 版本的 QQ 音乐有点卡
 
+#### 安卓 TV
+
+[QQ 音乐](https://y.qq.com/download/download.html) | [网易云音乐](https://music.163.com/#/download)
+
+#### 鸿蒙
+
+* 在线 [QQ音乐](https://appgallery.huawei.com/app/detail?id=com.tencent.hm.qqmusic)
+* 在线 [酷狗音乐](https://appgallery.huawei.com/app/detail?id=com.kugou.hmmusic)
+* 本地 [溏心音乐](https://appgallery.huawei.com/app/detail?id=com.salmon.sweetmusic) 
+
+备用 【在线】[汽水音乐](https://appgallery.huawei.com/app/detail?id=com.luna.hm.music)
+
 ### 1.7 听物
 
 #### 安卓 & 安卓平板
@@ -270,6 +305,16 @@ not
 得到 | [极客时间](https://sj.qq.com/appdetail/org.geekbang.geekTime)
 
 not 酷FM 一款酷狗推出的的音乐 FM 电台 app，现已停止更新
+
+#### 鸿蒙
+
+* [番茄畅听](https://appgallery.huawei.com/app/detail?id=com.xs.fm.next)
+* [喜马拉雅](https://appgallery.huawei.com/app/detail?id=com.ximalaya.ting.xmharmony)
+* [帆书](https://appgallery.huawei.com/app/detail?id=com.fanshu.book)
+* [得到](https://appgallery.huawei.com/app/detail?id=com.luojilab.dedao)
+* [云听](https://appgallery.huawei.com/app/detail?id=com.yt.radioHarmony)
+* [蜻蜓 FM](https://appgallery.huawei.com/app/detail?id=fm.qtradio.hm)
+* [阿基米德](https://appgallery.huawei.com/app/detail?id=org.ajmide.harmonyapp)
 
 ### 1.8 资讯类
 
@@ -328,7 +373,19 @@ not 今日头条 竟然有点卡
 
 #### 鸿蒙
 
-[IT之家](https://appgallery.huawei.com/app/detail?id=com.ruanmei.ithome.hosnext) 前沿科技媒体，人气数码社区
+* [简讯](https://appgallery.huawei.com/app/detail?id=com.tipsoon.harm)
+* [红板报](https://appgallery.huawei.com/app/detail?id=flipboard.cn.light)
+* [今日头条](https://appgallery.huawei.com/app/detail?id=com.ss.hm.article.news)
+
+**科技资讯**
+
+* [要知](https://appgallery.huawei.com/app/detail?id=com.ruanmei.yaozhi.hosnext)
+* [IT之家](https://appgallery.huawei.com/app/detail?id=com.ruanmei.ithome.hosnext) 前沿科技媒体，人气数码社区
+* [快科技](https://appgallery.huawei.com/app/detail?id=com.kkj.news.client)
+* [太平洋科技](https://appgallery.huawei.com/app/detail?id=cn.com.pconline.hm.browser)
+* [36氪](https://appgallery.huawei.com/app/detail?id=com.hm36kr.app)
+
+其他各种新闻、日报可按需添加，在此不一一列出
 
 ## 2 视频类【常用】
 
@@ -416,7 +473,7 @@ not 爱奇艺 广告有点烦人
 
 ### 安卓 TV
 
-[网易爆米花](https://bmh.163.com) | [云视小电视（哔哩哔哩）](https://app.bilibili.com) | [鲜时光TV（西瓜视频）](https://www.ixigua.com/app) | [腾讯视频 TV 客户端](https://v.qq.com/download.html#TV) | [酷喵TV版（优酷）](https://youku.com/product/index) | [奇异果TV（爱奇艺）](https://app.iqiyi.com/tv/player/index.html) | [央视网TV](https://app.cctv.com/#page7) | [我的电视 mytv](https://lyrics.run/my-tv.html)
+[网易爆米花](https://bmh.163.com) | [VidHub - 视频播放器](https://zh.okaapps.com/product/1659622164) | [云视小电视（哔哩哔哩）](https://app.bilibili.com) | [腾讯视频 TV 客户端](https://v.qq.com/download.html#TV) | [酷喵 TV 版（优酷）](https://youku.com/product/index) | [奇异果TV（爱奇艺）](https://app.iqiyi.com/tv/player/index.html) | [央视网 TV](https://app.cctv.com/#page7) | [我的电视 mytv](https://lyrics.run/my-tv.html)
 
 not [泰捷视频](https://www.51togic.com/%e6%b3%b0%e6%8d%b7%e8%a7%86%e9%a2%91)
 
@@ -499,7 +556,7 @@ not
 
 ### 安卓平板
 
-[淘宝](https://sj.qq.com/appdetail/com.taobao.taobao)
+貌似没人适配安卓平板，还是京东、淘宝、拼多多 三件套对付下。
 
 ## 5 交通
 
@@ -664,11 +721,11 @@ not
 
 #### 火车票
 
-铁路 12306 [app](https://sj.qq.com/appdetail/com.MobileTicket)/【支付宝小程序】 官方候补功能挺好使
+铁路 12306 [app](https://sj.qq.com/appdetail/com.MobileTicket) /【支付宝小程序】官方候补功能挺好使
 
 备用
 
-[携程旅行](https://sj.qq.com/appdetail/ctrip.android.view) | [去哪儿](https://sj.qq.com/appdetail/com.Qunar) | [同程](https://sj.qq.com/appdetail/com.tongcheng.android) | [智行火车票](https://sj.qq.com/appdetail/com.yipiao) | [铁友火车票](https://sj.qq.com/appdetail/com.tieyou.train.ark) 会有路线规划，同时我会参考哪个目前有满减活动
+[携程旅行](https://sj.qq.com/appdetail/ctrip.android.view) | [去哪儿](https://sj.qq.com/appdetail/com.Qunar) | [同程](https://sj.qq.com/appdetail/com.tongcheng.android) | [智行火车票](https://sj.qq.com/appdetail/com.yipiao) | [铁友火车票](https://sj.qq.com/appdetail/com.tieyou.train.ark)
 
 #### 飞机票
 
@@ -676,7 +733,7 @@ not
 
 #### 订酒店
 
-较为推荐 [携程旅行](https://sj.qq.com/appdetail/ctrip.android.view) 和 美团的酒店频道
+[携程旅行](https://sj.qq.com/appdetail/ctrip.android.view)、美团的酒店频道、[同程旅行](https://sj.qq.com/appdetail/com.tongcheng.android) 三个哪个便宜就买哪个
 
 备用
 
@@ -684,9 +741,9 @@ not
 1. 飞猪 [app](https://sj.qq.com/appdetail/com.taobao.trip) 不怎么用，感觉阿里没做起来
 1. [马蜂窝](https://sj.qq.com/appdetail/com.mfw.roadbook) 包含懒人玩法攻略
 
-记录：长沙金井小区老板 120 元的房真黑，不要考试当天才订房。我应该提前和他说我第二天早起会退房的，但主要损失还是被无良商户 和 无良信贷中介 和被诈
+记录：长沙金井小区老板 120 元的房真黑，不要考试当天才订房。我应该提前和他说我第二天早起会退房的，但主要损失还是被无良商户、无良信贷中介、被诈
 
-备用 [去哪儿旅行](https://sj.qq.com/appdetail/com.Qunar) | [同程旅行](https://sj.qq.com/appdetail/com.tongcheng.android)
+备用 [去哪儿旅行](https://sj.qq.com/appdetail/com.Qunar)
 
 not
 
@@ -716,6 +773,15 @@ not
 * [微博](https://sj.qq.com/appdetail/com.sina.weibo) 有广告
 * [小红书](https://sj.qq.com/appdetail/com.xingin.xhs)
 
+### 安卓平板
+
+通讯类
+
+* [QQ](https://sj.qq.com/appdetail/com.tencent.mobileqq) 通用版【已适配平板】
+* [微信](https://sj.qq.com/appdetail/com.tencent.mm)
+
+**社交类** [小红书](https://sj.qq.com/appdetail/com.xingin.xhs)
+
 ### iPhone
 
 通讯类
@@ -727,15 +793,6 @@ not
 
 * weico 下架了，变成了微博国际板，后面又变成轻享版了，结果还有了广告。 weico 4 当年我还可是花钱买的，确实不错
 * 社交类 [小红书](https://sj.qq.com/appdetail/com.xingin.xhs)
-
-### 安卓平板
-
-通讯类
-
-* [QQ](https://sj.qq.com/appdetail/com.tencent.mobileqq) 通用版【已适配平板】
-* [微信](https://sj.qq.com/appdetail/com.tencent.mm)
-
-社交类 [小红书](https://sj.qq.com/appdetail/com.xingin.xhs)
 
 ### 鸿蒙
 
@@ -816,7 +873,7 @@ not
 
 ## 11 支付类
 
-**拒绝网贷，信用卡也要合规使用。不要花费超出能力范围的钱**
+**拒绝网贷，信用卡也要合规使用。不要花费超出自己能力范围的钱**
 
 1. [支付宝](https://sj.qq.com/appdetail/com.eg.android.AlipayGphone) 杂乱无章
 1. [云闪付](https://sj.qq.com/appdetail/com.unionpay) 云闪付持续有优惠，信用卡还款免手续费
@@ -879,6 +936,10 @@ not [PikPak](https://mypikpak.com/zh-CN)【适配了安卓平板】免费用户�
 * ——————— ฅ՞• •՞ฅ ———————
 * [国际服游戏下载-GamesToday](https://www.hotplaygames.com) 不需魔法
 
+### 安卓 TV
+
+[当贝市场](https://www.dangbei.com/)
+
 ## 15 桌面启动器
 
 Apex Launcher 免费版就可以，手势操作便捷，且比较省内存
@@ -915,6 +976,19 @@ not
 
 官网收录：[欧朋浏览器](https://sj.qq.com/appdetail/com.oupeng.mini.android)
 
+### 安卓平板
+
+[Edge](https://sj.qq.com/appdetail/com.microsoft.emmx) 对电脑网址解析极好
+
+备用 
+
+* [火狐浏览器](https://sj.qq.com/appdetail/org.mozilla.firefox) 颜值较高
+* [Alook](https://sj.qq.com/appdetail/alook.browser)
+* [夸克](https://sj.qq.com/appdetail/com.quark.browser) 通用版可能对部分平板无效
+* UC 浏览器国际版 部分平板有效
+
+not [Chrome](https://sj.qq.com/appdetail/com.android.chrome) 不太好用
+
 ### iPhone
 
 [Alook](https://sj.qq.com/appdetail/alook.browser) | [夸克](https://sj.qq.com/appdetail/com.quark.browser)
@@ -923,19 +997,6 @@ not
 
 * [Alook浏览器 - 8倍速](https://sj.qq.com/appdetail/alook.browser) 尚且能用，但是内核好像还是同内置浏览器
 * [夸克](https://sj.qq.com/appdetail/com.quark.browser)
-
-### 安卓平板
-
-* [Edge](https://sj.qq.com/appdetail/com.microsoft.emmx) 对电脑网址解析极好
-* [火狐浏览器](https://sj.qq.com/appdetail/org.mozilla.firefox) 颜值较高
-
-备用 
-
-* [Alook](https://sj.qq.com/appdetail/alook.browser)
-* [夸克](https://sj.qq.com/appdetail/com.quark.browser) 通用版可能对部分平板无效
-* UC 浏览器国际版 部分平板有效
-
-not [Chrome](https://sj.qq.com/appdetail/com.android.chrome) 不太好用
 
 ## 17 知识社区
 
@@ -1110,7 +1171,7 @@ APTV
 
 ## 32 远程控制
 
-* [向日葵](https://sj.qq.com/appdetail/com.oray.sunlogin) | [ToDesk](https://sj.qq.com/appdetail/youqu.android.todesk) ｜ [RustDesk](https://rustdesk.com/index.html)
+* [向日葵远程控制](https://sj.qq.com/appdetail/com.oray.sunlogin) | [ToDesk](https://sj.qq.com/appdetail/youqu.android.todesk) ｜ [RustDesk](https://rustdesk.com/index.html)
 * ——————— ฅ՞• •՞ฅ ———————
 * Kore 适用于用于 Kodi 系统/程序 的 远程遥控器
 * [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer) 可远程树莓派和国产银河麒麟
@@ -1395,7 +1456,7 @@ GitHub App [apkmirror 源](https://www.apkmirror.com/apk/github/) | [apk.gold](h
 
 ## 66 游戏
 
-我一般会玩经典系列，比如王国保卫战、割绳子、小鳄鱼洗澡、糖果粉碎传奇、滑雪大冒险、愤怒的小鸟<br/>
+可自行选配，除了应用商店分发渠道则可以去官网下载。我一般会玩经典系列，比如王国保卫战、割绳子、小鳄鱼洗澡、糖果粉碎传奇、滑雪大冒险、愤怒的小鸟<br/>
 Bean's Quest 算是 1 代 和 Bean Dreams 算是 2 代
 
 ## 专题类
