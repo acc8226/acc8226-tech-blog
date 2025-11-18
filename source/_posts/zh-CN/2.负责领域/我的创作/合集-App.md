@@ -281,6 +281,8 @@ not [QQ 音乐 HD](https://sj.qq.com/appdetail/com.tencent.qqmusicpad) 首先更
 1. [帆书（原樊登读书）](https://sj.qq.com/appdetail/io.dushu.fandengreader) 稍有限免资源，但旧手机有点卡
 1. [喜马拉雅](https://sj.qq.com/appdetail/com.ximalaya.ting.android) 有些广告但可听资源很全
 1. [番茄畅听](https://sj.qq.com/appdetail/com.xs.fm) 免费资源较多
+1. [小宇宙](https://sj.qq.com/appdetail/app.podcast.cosmos)
+1. [阿基米德](https://sj.qq.com/appdetail/org.ajmd)
 
 备用
 

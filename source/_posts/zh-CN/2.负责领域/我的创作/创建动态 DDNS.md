@@ -23,6 +23,7 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/dns_records/$DNS_RECORD
     -H "Authorization: $CLOUDFLARE_API_KEY" \
     -d '{
           "name": "example.com",
+          "ttl": 600,
           "type": "A",
           "comment": "Domain verification record",
           "content": "198.51.100.4",
