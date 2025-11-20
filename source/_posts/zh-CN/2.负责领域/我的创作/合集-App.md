@@ -18,7 +18,7 @@ categories: 我的创作
 * 以下观点谨代表个人当时情况下使用 app 后个人主观感受
 * 涵盖手机、平板、TV 三大平台。由于笔者最开始用苹果手机，后面逐渐转到安卓，现已切换到鸿蒙手机。其他平台则以维护为主
 * 在挑选 app 上尽量跨平台、无广告和体积小巧优先，一定程度保证使用体验一致
-* “官网收录”收录了一些 app 的官网，仅供参考，不做推荐
+* “官网收录”收录了一些 app 的官网，仅供参考
 
 ### 安卓还是 iOS、鸿蒙 next
 
@@ -986,7 +986,7 @@ not [PikPak](https://mypikpak.com/zh-CN)【适配了安卓平板】免费用户�
 
 ### 鸿蒙
 
-[TODO 清单](https://appgallery.huawei.com/app/detail?id=com.eve.todolist4next)
+[Todo 清单](https://appgallery.huawei.com/app/detail?id=com.eve.todolist4next)
 
 ## 17 浏览器【常用】
 
@@ -1051,11 +1051,6 @@ not [Chrome](https://sj.qq.com/appdetail/com.android.chrome) 不太好用
 ### 鸿蒙
 
 [知乎](https://appgallery.huawei.com/app/detail?id=com.zhihu.hmos)
-[Kimi](https://appgallery.huawei.com/app/detail?id=com.hos.moonshot.kimichat)
-[千问](https://appgallery.huawei.com/app/detail?id=com.aliyun.tongyi4ohos)
-[讯飞星火](https://appgallery.huawei.com/app/detail?id=com.iflytek.sparkapp)
-[豆包](https://appgallery.huawei.com/app/detail?id=com.larus.nova.hm)
-[文心](https://appgallery.huawei.com/app/detail?id=com.baidu.yiyan)
 
 ## 19 AI 助手
 
@@ -1087,6 +1082,12 @@ not
 * [腾讯元宝](https://sj.qq.com/appdetail/com.tencent.hunyuan.app.chat)
 
 ### 鸿蒙
+
+[Kimi](https://appgallery.huawei.com/app/detail?id=com.hos.moonshot.kimichat)
+[千问](https://appgallery.huawei.com/app/detail?id=com.aliyun.tongyi4ohos)
+[讯飞星火](https://appgallery.huawei.com/app/detail?id=com.iflytek.sparkapp)
+[豆包](https://appgallery.huawei.com/app/detail?id=com.larus.nova.hm)
+[文心](https://appgallery.huawei.com/app/detail?id=com.baidu.yiyan)
 
 ## 20 智能家居
 
@@ -1125,7 +1126,7 @@ not
 * [挖财宝](https://sj.qq.com/appdetail/com.hangzhoucaimi.financial) 理财需谨慎
 * [天天基金](https://sj.qq.com/appdetail/com.eastmoney.android.fund) 东方财富旗下
 
-## 24 银行卡
+## 24 银行
 
 * [招商银行](https://sj.qq.com/appdetail/cmb.pb) 体验好且较为美观
 * [北京银行](https://sj.qq.com/appdetail/com.bankofbeijing.mobilebanking) | [兴业银行](https://sj.qq.com/appdetail/com.cib.cibmb) | [中国建设银行](https://sj.qq.com/appdetail/com.chinamworld.main) 
@@ -1186,8 +1187,8 @@ never
 
 湖南专用
 
-湘易办
-湘办通
+* [湘易办](https://appgallery.huawei.com/app/detail?id=com.szhn.fintech.app.productions.xybga)
+* [湘办通](https://appgallery.huawei.com/app/detail?id=com.xbt.project) 党政智慧办公平台
 
 缺了一个湘医保
 
@@ -1208,7 +1209,7 @@ never
 * [灯塔专业版](https://sj.qq.com/appdetail/com.alipictures.moviepro) 个人认为灯塔比猫眼好用
 * [猫眼专业版](https://sj.qq.com/appdetail/com.sankuai.moviepro)
 
-## 30 OCR提取
+## 30 OCR 提取
 
 [极度扫描](https://jidusm.wlhex.com) 跨平台 OCR 图片转文字 表格识别翻译，免费用户也能用
 
@@ -1220,6 +1221,10 @@ never
 备用 [扫描全能王](https://sj.qq.com/appdetail/com.intsig.camscanner) 巨好用，除了收费
 
 not 扫描宝和印象笔记，动不动就要会员，差评
+
+### 鸿蒙
+
+[扫描全能王](https://appgallery.huawei.com/app/detail?id=com.intsig.camscanner.hap)
 
 ## 32 标注/绘图
 
@@ -1238,10 +1243,6 @@ not 扫描宝和印象笔记，动不动就要会员，差评
 
 * [语雀](https://sj.qq.com/appdetail/com.yuque.mobile.android.app)
 * [Canva 可画](https://sj.qq.com/appdetail/cn.canva.editor) | [Notein 笔记](https://sj.qq.com/appdetail/com.orion.notein) | [BookxNote 笔记](http://www.bookxnote.com)
-
-### 鸿蒙
-
-扫描全能王
 
 ## 33 IPTV
 
@@ -1262,7 +1263,7 @@ APTV
 
 ### 鸿蒙
 
-向日葵远程控制
+[向日葵远程控制](https://appgallery.huawei.com/app/detail?id=com.oray.sunloginclient)
 
 ## 35 投屏
 
@@ -1271,7 +1272,7 @@ APTV
 
 ### 鸿蒙
 
-乐播投屏
+[乐播投屏](https://appgallery.huawei.com/app/detail?id=com.lebo.cast.source)
 
 ## 36 智能家居
 
@@ -1283,10 +1284,10 @@ APTV
 
 ### 鸿蒙
 
-* TP-LINK 物联
-* 贝锐蒲公英
+* [TP-LINK 物联](https://appgallery.huawei.com/app/detail?id=com.tplink.tpp)
+* [贝锐蒲公英](https://appgallery.huawei.com/app/detail?id=com.oray.pgyvpn)
 
-## 35 考试类
+## 37 考试类
 
 ### 通用
 
@@ -1302,7 +1303,7 @@ APTV
 
 * [高途公考](https://sj.qq.com/appdetail/com.gaotu100.gongkao) 文档附件预览特别好用，查询招信息较为方便但是资源少
 * [一起公考 AI 课](https://sj.qq.com/appdetail/com.zhihu.gongkao.android) 界面美观
-* [橙啦](https://sj.qq.com/appdetail/com.xcgl.chengla) 服务年轻人的高品质学习 App
+* [橙啦](https://sj.qq.com/appdetail/com.xcgl.chengla)
 * [上岸鸭公考](https://sj.qq.com/appdetail/com.gaodun.apps.shanganya)
 * [金标尺公考](https://sj.qq.com/appdetail/cn.net.tiku.jbcgk.syn)
 * [步知公考](https://sj.qq.com/appdetail/com.chiigu.shake)
@@ -1337,7 +1338,13 @@ not
 
 [粉笔](https://sj.qq.com/appdetail/com.fenbi.android.servant) 【适配了平板】公考、教师、法考、考研、建造、会计考试的提分利器
 
-## 37 申论面试
+### 鸿蒙
+
+* [公考雷达](https://appgallery.huawei.com/app/detail?id=com.maidu.gkld.hw)
+* [粉笔](https://appgallery.huawei.com/app/detail?id=com.fenbi.gwy)
+* [希赛网](https://appgallery.huawei.com/app/detail?id=com.Csai.CsaiApp)
+
+## 38 申论面试
 
 [半月谈](https://sj.qq.com/appdetail/com.bytxmt.banyuetan) 新华社半月谈出品的公务员公考学习平台，新华社时评员讲申论，公考名师讲行测
 
@@ -1349,6 +1356,14 @@ not
 * [人民日报](https://sj.qq.com/appdetail/com.peopledailychina.activity) 有广告，所以我不太喜欢
 * [新华网](https://sj.qq.com/appdetail/com.foundao.xinhua_android) 开屏有广告
 
+### 鸿蒙
+
+* [半月谈](https://appgallery.huawei.com/app/detail?id=com.bytxmt.banyuetan.hm)
+* [学习强国](https://appgallery.huawei.com/app/detail?id=cn.xuexi.qg4ohos)
+* [新华社](https://appgallery.huawei.com/app/detail?id=net.xinhuamm.xhshos)
+* [人民日报](https://appgallery.huawei.com/app/detail?id=com.peopledailychina.hosactivity)
+* [新华网](https://appgallery.huawei.com/app/detail?id=com.foundao.xinhua_hongmeng)
+
 ## 39 网络检测
 
 ### 安卓
@@ -1356,6 +1371,10 @@ not
 1. [泰尔网测](https://sj.qq.com/appdetail/com.knowyou.perception) 用于网速测试 和 查看是哪家宽带
 2. [WiFiAnalyzer](https://f-droid.org/packages/com.vrem.wifianalyzer) | [GitHub 源](https://github.com/VREMSoftwareDevelopment/WiFiAnalyzer) 优化您的 WiFi 网络
 3. [网络百宝箱](https://wap.tplinkcloud.com.cn/appdown/wifitool) TPLINK 出品。为网络工程师、安防工程师、IT 技术支持、工程商、集成商、电信装维等从业人员以及家庭用户提供更高效，更便捷的网络测试功能
+
+### 鸿蒙
+
+[全球网测](https://appgallery.huawei.com/app/detail?id=com.cnspeedtest.hmos.globalspeed)
 
 ## 40 服务器运营
 
@@ -1417,6 +1436,11 @@ not
 
 not [Simplenote](https://simplenote.com/) 极简，无限同步，不限设备，仅限纯文本，兼容 markdown 格式，但是国内网络你懂的
 
+### 鸿蒙
+
+* [印象笔记](https://appgallery.huawei.com/app/detail?id=com.yinxiang.hm)
+* 【系统自带】备忘录
+
 ## 45 反调公司【重要】
 
 * **天眼查** [app](https://sj.qq.com/appdetail/com.tianyancha.skyeye) / 【小程序】 求职中可以**反调公司**，也适用于查询被服务公司，**无良北京丰台万达舒瑶(窈)国际(已注销)**
@@ -1426,6 +1450,11 @@ not [Simplenote](https://simplenote.com/) 极简，无限同步，不限设备�
 
 * [企查查](https://sj.qq.com/appdetail/com.android.icredit)
 * [爱企查](https://sj.qq.com/appdetail/com.baidu.xin.aiqicha)
+
+### 鸿蒙
+
+* [天眼查](https://appgallery.huawei.com/app/detail?id=com.tianyancha.skyeye.hm)
+* [水滴信用](https://appgallery.huawei.com/app/detail?id=shuidi.app.huawei)
 
 ## 46 文件同步
 
@@ -1453,6 +1482,11 @@ not 格式工厂
 
 备用 光影证件照 目前不太完善
 
+### 鸿蒙
+
+* [免费证件照王](https://appgallery.huawei.com/app/detail?id=com.remxcqwphotoo.camera.hap)
+* [免费证件照片](https://appgallery.huawei.com/app/detail?id=com.pichdxyz.camera.hap)
+
 ## 51 在线打印
 
 刺猬云印【小程序】
@@ -1460,6 +1494,10 @@ not 格式工厂
 ## 52 在线验证
 
 学信网报告在线验证【小程序】
+
+### 鸿蒙
+
+[学信网](https://appgallery.huawei.com/app/detail?id=cn.com.chsi.app)
 
 ## 53 医疗、保健
 
@@ -1480,11 +1518,11 @@ not 泰康医生 被代理人打电话让我领取保险，结果投保满 1 年
 
 ### 鸿蒙
 
-中国邮政
-顺丰速运
-京东快递
-菜鸟
-丰巢
+* [中国邮政](https://appgallery.huawei.com/app/detail?id=com.chinapost.harmonyapp)
+* [顺丰速运](https://appgallery.huawei.com/app/detail?id=com.sfexpress.mainlandapp)
+* [京东快递](https://appgallery.huawei.com/app/detail?id=com.jd.logistic)
+* [菜鸟](https://appgallery.huawei.com/app/detail?id=com.cainiao.cainiao4hmos)
+* [丰巢](https://appgallery.huawei.com/app/detail?id=com.fcbox.hm.hiveconsumer)
 
 ## 55 POS 收款配套
 
@@ -1496,6 +1534,10 @@ not 上海电银银乾付 已跑路，总之 pos 除非正常交易否则慎用�
 
 华为手机可以通过“设置-安全-应急预警通知-地震预警”打开功能；小米手机则可以通过“手机管家-家人关怀-地震预警”选择开启功能；OPPO / 一加 / 真我手机可以通过“设定-安全-SOS 紧急联络-自然灾害警报-地震警报开启”入口访问相应功能；苹果 / 三星等手机则可以下载“[地震预警](https://sj.qq.com/appdetail/com.huania.earthquakewarning)”App 或通过“中国地震台网”微信小程序启用相应功能。
 
+### 鸿蒙
+
+[地震预警](https://appgallery.huawei.com/app/detail?id=com.huania.harmonyearthquake)
+
 ## 57 脑图
 
 ### 通用
@@ -1505,6 +1547,11 @@ not 上海电银银乾付 已跑路，总之 pos 除非正常交易否则慎用�
 ### 安卓平板
 
 [MindLine 思维导图](https://sj.qq.com/appdetail/czh.mindnode)、[Xmind](https://sj.qq.com/appdetail/net.xmind.doughnut)、[MindMaster](https://sj.qq.com/appdetail/com.edrawsoft.mindmaster)
+
+### 鸿蒙
+
+* [Xmind](https://appgallery.huawei.com/app/detail?id=app.xmind.cronut)
+* [思维导图](https://appgallery.huawei.com/app/detail?id=czh.mindnode.app)
 
 ## 58 英语
 
@@ -1579,6 +1626,15 @@ not
 * Memrise 精品学英语软件
 * TEDiSUB 看 TED 视频用
 * 新概念英语 付费的离线版本，当时我好像花了 6 元钱
+
+### 鸿蒙
+
+* [流利说-英语](https://appgallery.huawei.com/app/detail?id=com.liulishuo.ohos_lingodarwin)
+* [每日英语听力](https://appgallery.huawei.com/app/detail?id=com.eusoft.ting.en.hm)
+* [不背单词](https://appgallery.huawei.com/app/detail?id=hos.cn.com.langeasy.bbdc)
+* [扇贝单词英语版](https://appgallery.huawei.com/app/detail?id=com.shanbay.hmsentence)
+* [百词斩](https://appgallery.huawei.com/app/detail?id=com.baicizhan.bcz.hm)
+* [网易有道词典](https://appgallery.huawei.com/app/detail?id=com.hm.youdao)
 
 ## 59 幼教
 
