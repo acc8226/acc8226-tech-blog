@@ -399,6 +399,7 @@ not 今日头条 竟然有点卡
 
 * 直播吧
 * 腾讯体育
+* 央视体育
 
 其他各种新闻、日报可按需添加，在此不一一列出
 
@@ -504,6 +505,7 @@ not [泰捷视频](https://www.51togic.com/%e6%b3%b0%e6%8d%b7%e8%a7%86%e9%a2%91)
 * [哔哩哔哩](https://appgallery.huawei.com/app/detail?id=yylx.danmaku.bili)
 * [央视影音](https://appgallery.huawei.com/app/detail?id=com.cctv.cbox)
 * [央视频](https://appgallery.huawei.com/app/detail?id=com.cctv.yangshipin.app.harmonyp)
+* [CCTV 手机电视](https://appgallery.huawei.com/app/detail?id=com.cctv.yctvharmonyos)
 * [腾讯视频](https://appgallery.huawei.com/app/detail?id=com.tencent.videohm)
 * [优酷视频](https://appgallery.huawei.com/app/detail?id=com.youku.next)
 * [爱奇艺](https://appgallery.huawei.com/app/detail?id=com.qiyi.video.hmy)
@@ -652,6 +654,8 @@ not
 * [货拉拉](https://appgallery.huawei.com/app/detail?id=com.lalamove.huolala.clienthar)
 * [滴滴出行](https://appgallery.huawei.com/app/detail?id=com.sdu.didi.hmos.psnger)
 * [亿通行](https://appgallery.huawei.com/app/detail?id=com.ruubypay.bjyitongxing)
+* 车来了
+* 掌上公交
 
 ## 7 生活服务
 
@@ -1050,7 +1054,8 @@ not [Chrome](https://sj.qq.com/appdetail/com.android.chrome) 不太好用
 
 ### 鸿蒙
 
-[知乎](https://appgallery.huawei.com/app/detail?id=com.zhihu.hmos)
+* [知乎](https://appgallery.huawei.com/app/detail?id=com.zhihu.hmos)
+* 知识星球
 
 ## 19 AI 助手
 
@@ -1399,6 +1404,10 @@ not
 * [MOMO 陌陌](https://sj.qq.com/appdetail/com.immomo.momo) 交友需谨慎
 * [探探](https://sj.qq.com/appdetail/com.p1.mobile.putong)
 
+### 鸿蒙
+
+Soul
+
 ## 44 笔记
 
 ### 安卓
@@ -1635,33 +1644,31 @@ not
 * [扇贝单词英语版](https://appgallery.huawei.com/app/detail?id=com.shanbay.hmsentence)
 * [百词斩](https://appgallery.huawei.com/app/detail?id=com.baicizhan.bcz.hm)
 * [网易有道词典](https://appgallery.huawei.com/app/detail?id=com.hm.youdao)
-
-## 59 幼教
-
-* [少年得到](https://sj.qq.com/appdetail/com.dedao.juvenile)
-* [凯叔讲故事](https://sj.qq.com/appdetail/com.ks.kaishustory)
-
-### 安卓平板
-
-[有道精品课](https://sj.qq.com/appdetail/com.youdao.course) 可以学围棋和国际象棋
-
-### 鸿蒙
-
-少年得到
+* 欧路词典
+* 金山词霸
+* [英语趣配音](https://appgallery.huawei.com/app/detail?id=com.ishowedu.peiyinos)
+* [无痛单词](https://appgallery.huawei.com/app/detail?id=painless.xiangzi.tech)
 
 ## 60 教育
 
 ### 通用
 
-[智慧中小学](https://sj.qq.com/appdetail/com.eduyun.app.factory.ykt)
+* [少年得到](https://sj.qq.com/appdetail/com.dedao.juvenile)
+* [凯叔讲故事](https://sj.qq.com/appdetail/com.ks.kaishustory)
+* [智慧中小学](https://sj.qq.com/appdetail/com.eduyun.app.factory.ykt)
 
 ### 安卓平板
 
 [智慧中小学 HD](https://sj.qq.com/appdetail/com.eduyun.app.hd)
+[有道精品课](https://sj.qq.com/appdetail/com.youdao.course) 可以学围棋和国际象棋
 
-## 59 游戏加速器
+### 鸿蒙
 
-[雷神加速器](https://sj.qq.com/appdetail/com.nn.accelerator.box)
+* 少年得到
+* 凯叔讲故事
+* [智慧中小学](https://appgallery.huawei.com/app/detail?id=com.eduyun.zxx)
+* [智慧教育](https://appgallery.huawei.com/app/detail?id=com.dianjiao.eduyun.hm)
+* [学习通](https://appgallery.huawei.com/app/detail?id=com.xuexitong.study)
 
 ## 60 代码仓库
 
@@ -1669,8 +1676,15 @@ GitHub App [apkmirror 源](https://www.apkmirror.com/apk/github/) | [apk.gold](h
 
 ## 61 房产
 
-* [58同城](https://sj.qq.com/appdetail/com.wuba) 发布的租房等信息注意分辨
+* [58 同城](https://sj.qq.com/appdetail/com.wuba) 发布的租房等信息注意分辨
 * [贝壳找房](https://sj.qq.com/appdetail/com.lianjia.beike)
+
+### 鸿蒙
+
+* [贝壳找房](https://appgallery.huawei.com/app/detail?id=com.beike.hongmeng)
+* [链家](https://appgallery.huawei.com/app/detail?id=com.lianjia.hongmeng)
+* [安居客](https://appgallery.huawei.com/app/detail?id=com.anjuke.home)
+* [58 同城](https://appgallery.huawei.com/app/detail?id=com.wuba.life)
 
 ## 62 文件互传
 
@@ -1678,7 +1692,13 @@ GitHub App [apkmirror 源](https://www.apkmirror.com/apk/github/) | [apk.gold](h
 
 ## 63 外卖
 
+### 通用
+
 [饿了么](https://sj.qq.com/appdetail/me.ele)、京东的闪购频道、[美团外卖](https://sj.qq.com/appdetail/com.sankuai.meituan.takeoutnew)
+
+### 鸿蒙
+
+[饿了么](https://appgallery.huawei.com/app/detail?id=me.ele.eleme)
 
 ## 64 连点器
 
@@ -1713,7 +1733,69 @@ not Nova Launcher 连基础的手势操作还需要 pro 付费，差评
 
 [当贝市场](https://www.dangbei.com/)
 
-## 68 游戏
+## 68 下载器
+
+### 通用
+
+迅雷
+
+### 鸿蒙
+
+[迅雷](https://appgallery.huawei.com/app/detail?id=com.xunlei.thunder)
+
+## 69 运动
+
+### 通用
+
+Keep
+
+### 鸿蒙
+
+[Keep](https://appgallery.huawei.com/app/detail?id=com.gotokeep.hm.keep)
+
+## 70 买菜
+
+### 鸿蒙
+
+* [叮咚买菜](https://appgallery.huawei.com/app/detail?id=com.100mi.ddmc)
+* [盒马](https://appgallery.huawei.com/app/detail?id=com.wudaokou.hippo_hmos)
+* [小象超市](https://appgallery.huawei.com/app/detail?id=com.meituan.hmaicai)
+
+## 71 剪辑
+
+### 通用
+
+* 快影
+* 剪映
+
+### 鸿蒙
+
+* 快影
+* 剪映
+
+## 72 花草
+
+### 鸿蒙
+
+[形色](https://appgallery.huawei.com/app/detail?id=com.xingse.ai)
+
+## 73 求职
+
+Boss 直聘
+
+## 74 开发者
+
+### 鸿蒙
+
+* [开发者联盟](https://appgallery.huawei.com/app/detail?id=com.huawei.hmsapp.alliance)
+* [HMOS 代码工坊](https://appgallery.huawei.com/app/detail?id=com.huawei.hmos.world)
+* [TypeScript趣学](https://appgallery.huawei.com/app/detail?id=cn.lzm.ts)
+
+## 75 游戏加速器
+
+[雷神加速器](https://sj.qq.com/appdetail/com.nn.accelerator.box)
+
+## 76 游戏
 
 可自行选配，除了应用商店分发渠道则可以去官网下载。我一般会玩经典系列，比如王国保卫战、割绳子、小鳄鱼洗澡、糖果粉碎传奇、滑雪大冒险、愤怒的小鸟<br/>
 Bean's Quest 算是 1 代 和 Bean Dreams 算是 2 代
