@@ -24,7 +24,7 @@ categories: 我的创作
 
 #### 1.0.1 安全类
 
-* 【win】荣耀电脑自带管家（微软电脑管家...）或 [360 安全卫士极速版](https://weishi.360.cn) 或 [火绒安全软件](https://www.huorong.cn/person)
+* 【win】自带电脑管家（例如微软电脑管家）或 [360 安全卫士极速版](https://sfdl.360safe.com/setupbeta_jisu.exe) 或 [火绒安全软件](https://www.huorong.cn/person)
 * 【mac】[腾讯柠檬清理](https://lemon.qq.com) 或 [360 安全卫士 Mac 版](https://www.360.cn/mac/index.html)
 
 #### 1.0.2 浏览器
@@ -33,7 +33,7 @@ categories: 我的创作
 * 【mac】[猫眼浏览器](https://www.catsxp.com) 鼠标悬停切换标签功能很好用，建议关掉烦人的自动更新功能
 * 【linux】[360 安全浏览器](https://browser.360.net/gc/index.html)<!-- more -->
 
-关于浏览器的密码自动填充：更完善的，我会用 Bitwarden
+浏览器我都会搭配 Bitwarden 插件，实现密码的自动填充。
 
 #### 1.0.3 输入法
 
@@ -47,23 +47,23 @@ categories: 我的创作
 * 【win11】[PeaZip](https://peazip.github.io/index.html) 可添加智能解压到新版 win 11 右键菜单
 * 【win7、8、10】[Bandizip 6.2x](https://www.iplaysoft.com/bandizip.html) 含自动解压（智能解压）且颜值和功能均在线，v6 是最后一个无广告版本。到 v7 版本不付费则会偶尔弹窗
 * 【低于 win7】[7-Zip 24.09 x86](https://mirrors.nju.edu.cn/7-zip/7z2409.exe)
-* 【mac、linux】[PeaZip](https://peazip.github.io/index.html) 含智能解压
+* 【mac、linux】[PeaZip](https://peazip.github.io/index.html) 包含特别好用的智能解压
 
 #### 1.1.1【常用】鼠标手势
 
 * 【**win 精品软件**】[WGestures 1 代](https://dl-x-yingdev-x-com.img.addlink.cn/Content/Projects/WGestures/Release/1.8.5.0/Install%20WGestures%201.8.5.0.zip) 免费 | [WGestures 2](https://store.lizhi.io/site/products/id/523?cid=46jjayiu) 付费
 * 【mac】[BetterAndBetter](https://www.better365.cn/bab2.html) 不仅仅是鼠标手势
-* 【linux】Easystroke 或 KDE 内置的鼠标手势
+* 【linux】使用 apt install Easystroke 或 KDE 桌面内置的鼠标手势
 
 #### 1.1.2【可选】键鼠增强
 
-* 【win 开源绿色版 自荐】[捷键](https://feipig.fun/jiejian)
+* 【win 开源绿色版 自荐】[捷键](https://blog.feipig.fun/jiejian)
 * 【mac】[Hammerspoon](https://www.hammerspoon.org) 可自己写脚本 + [Karabiner-Elements](https://karabiner-elements.pqrs.org)
 * 【linux】AutoKey [Github 地址](https://github.com/autokey/autokey) & [帮助文档](https://autokey.github.io/intro.html) 适用于 x11 和 qt 平台
 
 #### 1.1.3 截图
 
-* 【win 绿色版 & mac】[PixPin](https://pixpinapp.com) 不付费也能使用 OCR 和长截图功能 ｜ [小旺截图](https://www.xiaowang.com)
+* 【win 绿色版 & mac】[PixPin](https://pixpinapp.com) 不付费也能使用 OCR 和长截图功能 ｜ [Snipaste](https://zh.snipaste.com/) | [小旺截图](https://www.xiaowang.com)
 * liunx 系统自带 或 [Snipaste](https://zh.snipaste.com/)
 
 #### 1.1.4 护眼
@@ -97,7 +97,7 @@ categories: 我的创作
 
 **windows 和 mac 平台** 天翼云盘
 
-**linux 平台** 天翼云盘不支持，其他则不好用
+**linux 平台** 天翼云盘不支持，虚位以待
 
 #### 1.1.7 看图
 
@@ -215,7 +215,7 @@ not
 
 1. 本地播放：【全平台 绿色版】[VLC](https://www.videolan.org) [Chocolatey](https://community.chocolatey.org/packages/vlc#install) 源 或 【win 精品软件 安装版】PotPlayer [官网](https://potplayer.tv/?lang=zh_CN) | [绿色版](https://potplayer.org) 再搭配 HEVC 解码器 [LAVFilters](https://github.com/Nevcairiel/LAVFilters/releases) 
 1. 在线平台：【win】[荐片播放器](https://www.jianpian6.co) 可观看最新电影 +【win mac】[哔哩哔哩客户端](https://app.bilibili.com)
-1. 电视直播 vlc 和 potplayer 都能打
+1. 电视直播 [VLC](https://www.videolan.org) 和 [PotPlayer](https://potplayer.tv/?lang=zh_CN) 都能打
 1. 视频刮削+播放器 网易爆米花🍿用来看片
 
 **mac 平台**
@@ -251,12 +251,10 @@ not【win linux】[阿里旺旺](https://wangwang.taobao.com) 不好用
 
 **RDP 远程**
 
-windows 平台首推 xshell [校园免费版](https://www.xshell.com/zh/free-for-home-school)，其次是 MobaXterm。
-linux 则为 Remmina。
+* windows 平台首推 xshell [校园免费版](https://www.xshell.com/zh/free-for-home-school)，其次是 MobaXterm。
+* linux 则为 Remmina。
 
-**VNC 远程**
-
-VNC Viewer
+**VNC 远程** - VNC Viewer
 
 远程桌面
 
@@ -425,11 +423,8 @@ not
 
 ### 2.6 显示网速
 
-【win】[TrafficMonitor](https://github.com/zhongyang219/TrafficMonitor)
-
-- - -
-
-mac 的腾讯柠檬清理 或国产 State 软件。
+* 【win】[TrafficMonitor](https://github.com/zhongyang219/TrafficMonitor)
+* mac 的腾讯柠檬清理 或国产 State 软件。
 
 ### 2.7 DNS 相关
 
@@ -454,10 +449,10 @@ or【win】[GRC's | DNS Nameserver Performance Benchmark](https://www.grc.com/
 
 ### 2.8 markdown 编辑
 
-1. 【全平台】MarkText [官网](https://www.marktext.cc/) | [GitHub 源](https://github.com/marktext/marktext/releases) 轻度使用的 markdown 编辑器
+1. 【全平台 精品软件】[Typora](https://typoraio.cn) 功能强大，容易上手，但收费，有条件可支持下
 1. 【全平台】[obsidian](https://obsidian.md) 功能特强大，玩法多
 
-备用【全平台 精品软件】[Typora](https://typoraio.cn) 功能强大，容易上手，但收费，有条件可支持下
+备用【全平台】MarkText [官网](https://www.marktext.cc/) | [GitHub 源](https://github.com/marktext/marktext/releases) 轻度使用的 markdown 编辑器
 
 not
 
@@ -480,7 +475,7 @@ or
 **windows 平台**
 
 * 【win 绿色版】[极客卸载 Geek Uninstaller](https://geekuninstaller.com/download) 简单清爽
-* 【win 绿色版】[HiBitUninstaller](https://www.hibitsoft.ir/Uninstaller.html) 体积小巧 + 卸载功能强大
+* 【win 绿色版】[HiBit Uninstaller](https://hibitsoft.ir/Uninstaller.html) 体积小巧 + 卸载功能强大
 * 【绿色版】[RevoUninstaller 免费版](https://www.revouninstaller.com/products/revo-uninstaller-free) 界面有点旧
 
 not [CCleaner](https://www.ccleaner.com/zh-cn/ccleaner) 只有安装版差评，且现在的版本有点卡，奈何功能强大
@@ -574,7 +569,7 @@ not【win】[Rufus](https://rufus.ie/zh) 其实还不错，但是和 Ventoy 相�
 
 ### 2.24 打印机伴侣
 
-【全平台】[HP Smart](https://www.hp-smart.cn/cn/zh) 可能造成了垄断
+【全平台】[HP Smart](https://www.hp-smart.cn/cn/zh) HP 打印机用
 
 ### 2.25 备忘录
 
@@ -591,7 +586,7 @@ not
 
 notion calendar
 
-not fantastical 免费版限制太多
+not 【mac】fantastical 免费版限制太多
 
 ### 2.27 视频剪辑
 
@@ -612,7 +607,7 @@ not
 
 ### 2.28 音频编辑
 
-[Audacity](https://www.audacityteam.org) 是一个易用、多轨音频录制和编辑的自由、开源、跨平台音乐软件。可以在 Windows, Mac OS X, GNU/Linux 和其他操作系统上使用。
+[Audacity](https://www.audacityteam.org) 是一个易用、多轨音频录制和编辑的自由、开源、跨平台音乐软件。适用于 Windows, Mac OS X, GNU/Linux
 
 ### 2.29 增强剪切板
 
@@ -700,7 +695,13 @@ not【win】[Seer](http://www.1218.io/seer.html) 收费就算了
 
 [GitHub - the1812](https://github.com/the1812/Malware-Patch)/Malware-Patch: 阻止中国流氓软件的管理员授权 / Prevent UAC authorization of Chinese malware.
 
-#### 2.40.7 WizMouse【win7 必备】
+#### 2.40.7 Advanced Office Password Recovery
+
+[Advanced Office Password Recovery](https://www.passwords.ru/aopr.html) 是一个功能强大的 Office 文档密码恢复工具，适用于需要解锁各种Office 文档密码的用户。
+
+本资源为网络共享，版权归原作者所有。共享软件序列号：`SN:AOPRP-V400-PZPYF-35736-AZRYL-23297` 请您合理使用本软件，祝您使用愉快！
+
+#### 2.40.8 WizMouse【win7 必备】
 
 【win】[WizMouse](https://antibody-software.com/wizmouse) 一款鼠标增强工具
 

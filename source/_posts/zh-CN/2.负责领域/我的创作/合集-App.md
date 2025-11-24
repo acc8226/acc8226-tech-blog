@@ -60,7 +60,7 @@ categories: 我的创作
 
 #### 安卓
 
-一般可以选择自带的手机管家。否则可以选择[腾讯](https://sj.qq.com/appdetail/com.tencent.qqpimsecure) 或 360 其中一家
+一般可以选择自带的手机管家。否则可以选择[腾讯手机管家](https://sj.qq.com/appdetail/com.tencent.qqpimsecure) 或 360 其中一家
 
 #### iPhone
 
@@ -106,6 +106,10 @@ not [Google Authenticator](https://google-authenticator.en.softonic.com/android)
 
 Bitwarden【已适配安卓平板】[Github 版](https://github.com/bitwarden/android/releases) 可以云端存储的密码管理器，支持本地导入导出密码。推荐选择 f-droid，因为国内网络环境堪忧
 
+#### 鸿蒙
+
+虚位以待
+
 ### 1.3 邮件收发
 
 #### 安卓
@@ -136,16 +140,15 @@ Bitwarden【已适配安卓平板】[Github 版](https://github.com/bitwarden/an
 
 #### 安卓
 
+* [番茄免费小说](https://sj.qq.com/appdetail/com.dragon.read) 书库较全，免费用户会遇到插播广告，有的想看的书可以免费离线下载，很适合离线用，**比较吃外存**
 * [微信读书](https://sj.qq.com/appdetail/com.tencent.weread) 书库全，但付费书较多
-* [番茄免费小说](https://sj.qq.com/appdetail/com.dragon.read) 书库较全，免费用户会遇到插播广告，有的想看的书可以免费离线下载，很适合离线用，**太吃存储空间**
 * ——————— ฅ՞• •՞ฅ ———————
 * 【本地】[FBReader](https://fbreader.org/android#download) 一款本地电子书阅读器，但是支持 pdf 需要付费估计体验也一般
 
 可选
 
-* [阅读](https://github.com/gedoor/legado) + 【本地+在线用】[tts-server](https://jing332.lanzn.com/b09jpjd2d) 密码1234 
+* [阅读](https://github.com/gedoor/legado)
 * ——————— ฅ՞• •՞ฅ ———————
-* [番茄免费小说](https://sj.qq.com/appdetail/com.dragon.read) 
 * [京东读书](https://sj.qq.com/appdetail/com.jd.app.reader) 送了影响力 和 乌合之众几本书，可以看一段时间
 * [网易蜗牛阅读](https://sj.qq.com/appdetail/com.netease.snailread) 每天可以免费看 1 个小时付费书籍
 
@@ -163,7 +166,7 @@ not
 #### 安卓平板
 
 * [番茄免费小说](https://sj.qq.com/appdetail/com.dragon.read) 书库较全，免费用户会遇到插播广告
-* [微信读书](https://sj.qq.com/appdetail/com.tencent.weread) 书库全，但付费书较多
+* [微信读书](https://sj.qq.com/appdetail/com.tencent.weread) 书库全，付费书较多
 
 备用
 
@@ -173,8 +176,8 @@ not
 
 #### iPhone
 
-1. [微信读书](https://sj.qq.com/appdetail/com.tencent.weread) 除了现在很多内容收费了
-1. [Kindle](https://sj.qq.com/appdetail/com.amazon.kindlefc)【已过时】(现支持打开 epub 类型的文件了, txt 文本也不在话下,至少我觉得比 iBook 靠谱)
+* [番茄免费小说](https://sj.qq.com/appdetail/com.dragon.read)
+* [微信读书](https://sj.qq.com/appdetail/com.tencent.weread)
 
 #### iPad
 
@@ -232,12 +235,12 @@ not
 #### 安卓平板
 
 * 在线 [QQ 音乐 HD](https://sj.qq.com/appdetail/com.tencent.qqmusicpad)
-* 在线 [网易云音乐](https://sj.qq.com/appdetail/com.netease.cloudmusic) 通用版，已适配平板，不仅仅有开屏广告
 * 本地 [椒盐音乐 Salt Player](https://www.coolapk.com/apk/284064)
 
 备用
 
 * 在线 [LX Music 洛雪音乐助手](https://github.com/lyswhut/lx-music-mobile/releases) 不能云同步，但好在可以曲库全
+* 在线 [网易云音乐](https://sj.qq.com/appdetail/com.netease.cloudmusic) 通用版，已适配平板，有开屏广告
 * 在线 [棉花音乐](https://dkit.caij.xyz/puremusic) 有时候会要求重新登录，总之暂不好用
 
 not 
@@ -278,20 +281,20 @@ not [QQ 音乐 HD](https://sj.qq.com/appdetail/com.tencent.qqmusicpad) 首先更
 
 #### 安卓 & 安卓平板
 
-1. [帆书（原樊登读书）](https://sj.qq.com/appdetail/io.dushu.fandengreader) 稍有限免资源，但旧手机有点卡
-1. [喜马拉雅](https://sj.qq.com/appdetail/com.ximalaya.ting.android) 有些广告但可听资源很全
-1. [番茄畅听](https://sj.qq.com/appdetail/com.xs.fm) 免费资源较多
-1. [小宇宙](https://sj.qq.com/appdetail/app.podcast.cosmos)
-1. [阿基米德](https://sj.qq.com/appdetail/org.ajmd)
+* [帆书](https://sj.qq.com/appdetail/io.dushu.fandengreader) 稍有限免资源，但旧手机有点卡
+* [得到](https://sj.qq.com/appdetail/com.luojilab.player) 免费资源还行，除了较为臃肿
+* [喜马拉雅](https://sj.qq.com/appdetail/com.ximalaya.ting.android) 有些广告但可听资源很全
+* [番茄畅听](https://sj.qq.com/appdetail/com.xs.fm) 免费资源较多
+* [小宇宙](https://sj.qq.com/appdetail/app.podcast.cosmos)
 
 备用
 
 * [微信听书](https://sj.qq.com/appdetail/com.tencent.wehear) 无广告，活动玩法多，可以换取收听时长
-* [得到](https://sj.qq.com/appdetail/com.luojilab.player) 免费资源还行，除了较为臃肿
 * 【本地】[讯飞有声](https://sj.qq.com/appdetail/com.iflytek.readassistant) 可播放 pdf、doc、mobi 格式的文本，是目前的一个本地解决方案。但我日常极少用到
 * [云听](https://sj.qq.com/appdetail/com.shinyv.cnr) 央视的资源还是很丰富，有广告
 * [蜻蜓 FM](https://sj.qq.com/appdetail/fm.qingting.qtradio) 有些广告
 * [听听 FM](https://sj.qq.com/appdetail/com.audio.tingting)
+* [阿基米德](https://sj.qq.com/appdetail/org.ajmd) 界面有点杂乱
 * ——————— ฅ՞• •՞ฅ ———————
 * [极客时间](https://sj.qq.com/appdetail/org.geekbang.geekTime) 程序员才需要
 
@@ -407,12 +410,12 @@ not 今日头条 竟然有点卡
 
 ### 安卓
 
-* 本地 [VLC](https://www.videolan.org/vlc/download-android.html) [中科大源](https://mirrors.ustc.edu.cn/videolan-ftp/vlc-android/last) 体积小巧且视频解码功能强大
-* ——————— ฅ՞• •՞ฅ ———————
 * 在线 bilibili 哔哩哔哩国际版 [Apkpure 版](https://apkpure.com/cn/bilibili-cn/com.bilibili.app.in/download) | [uptodown 版](https://com-bilibili-app-in.en.uptodown.com/android) 因为清爽
 * [西瓜视频](https://sj.qq.com/appdetail/com.ss.android.article.video) 广告较少，资源丰富
 * [网易爆米花](https://sj.qq.com/appdetail/com.netease.filmlytv) 视频刮削神器，暂时免费
-* [荐片 app](https://www.jianpian9.com)
+* [荐片 app](https://www.jianpian9.com) | [南瓜视频](https://nanguasp.com/)
+
+**本地** [VLC](https://www.videolan.org/vlc/download-android.html) [中科大源](https://mirrors.ustc.edu.cn/videolan-ftp/vlc-android/last) 体积小巧且视频解码功能强大
 
 可选
 
@@ -469,6 +472,8 @@ not
 * [腾讯视频](https://sj.qq.com/appdetail/com.tencent.qqlive)【已适配安卓平板】| [优酷视频](https://sj.qq.com/appdetail/com.youku.phone)【已适配安卓平板】| [爱奇艺 PAD](https://sj.qq.com/appdetail/com.qiyi.video.pad) | [芒果TV HD](https://sj.qq.com/appdetail/com.imgo.pad) | [搜狐视频 Pad](https://sj.qq.com/appdetail/com.sohu.tv) | 
 * ——————— ฅ՞• •՞ฅ ———————
 * YouTube
+* ——————— ฅ՞• •՞ฅ ———————
+* [南瓜视频](https://nanguasp.com/)
 
 **本地** [VLC](https://www.videolan.org/vlc/download-android.html) [中科大源](https://mirrors.ustc.edu.cn/videolan-ftp/vlc-android/last)
 
@@ -598,7 +603,7 @@ not
 
 ### 安卓平板
 
-貌似没人适配安卓平板，还是京东、淘宝、拼多多 三件套对付下
+貌似没人适配安卓平板，依旧京东、淘宝、拼多多三件套
 
 ### 鸿蒙
 
@@ -891,12 +896,9 @@ not
 
 * [福昕 PDF 阅读器](https://sj.qq.com/appdetail/com.foxit.mobile.pdf.lite) 有广告
 * UPDF 越来越臃肿
-
-在线文档
-
+* [语雀](https://sj.qq.com/appdetail/com.yuque.mobile.android.app) 在线文档我都不爱
 * [金山文档](https://sj.qq.com/appdetail/cn.wps.yun)
 * [腾讯文档](https://sj.qq.com/appdetail/com.tencent.docs)
-* [语雀](https://sj.qq.com/appdetail/com.yuque.mobile.android.app)
 
 ### iPad
 
@@ -1747,7 +1749,7 @@ not Nova Launcher 连基础的手势操作还需要 pro 付费，差评
 
 ### 通用
 
-Keep
+[Keep - AI 运动教练](https://sj.qq.com/appdetail/com.gotokeep.keep)
 
 ### 鸿蒙
 
@@ -1765,23 +1767,24 @@ Keep
 
 ### 通用
 
-* 快影
-* 剪映
+* [快影](https://sj.qq.com/appdetail/com.kwai.videoeditor)
+* [剪映](https://sj.qq.com/appdetail/com.lemon.lv)
 
 ### 鸿蒙
 
 * 快影
 * 剪映
 
-## 72 花草
+## 72 识花
 
 ### 鸿蒙
 
-[形色](https://appgallery.huawei.com/app/detail?id=com.xingse.ai)
+* [形色](https://appgallery.huawei.com/app/detail?id=com.xingse.ai)
+* 花伴侣
 
 ## 73 求职
 
-Boss 直聘
+[Boss 直聘](https://sj.qq.com/appdetail/com.hpbr.bosszhipin)
 
 ## 74 开发者
 
@@ -1843,10 +1846,16 @@ OPPO 自带的文档 app 很好用
 
 ### 备用手机必备 app
 
-Aegis ｜ Bitwarden ｜ 倒数日 ｜ 番茄免费小说 | LX Music |
-米家 ｜ 拼多多 ｜ PikPak ｜ 清浊 ｜Salt Player ｜
-天翼云盘 ｜ TIM ｜ VLC ｜ 微信读书 ｜ 西瓜视频｜
-讯飞有声 | 迅读 PDF ｜ 额外：哔哩哔哩 ｜ 额外：学堂在线 ｜ 额外：高德地图
+1. 密码同步：Aegis、Bitwarden
+1. 重要日子：倒数日
+1. 看：哔哩哔哩、西瓜视频、网易爆米花、南瓜视频、【本地】VLC
+1. 听：喜马拉雅、【本地】Salt Player
+1. 读：番茄免费小说、微信读书
+1. 购物：拼多多
+1. 设备互联：米家
+1. 学习:学堂在线
+1. 工具：讯飞有声
+1. 地图：高德地图
 
 ### 一些优秀的应用厂商
 
@@ -1862,7 +1871,7 @@ Automattic – Making the web a better place
 ### 家庭必备
 
 * 国家反诈中心 安全永远第一位
-* 一款安全的浏览器，比如 360 安全浏览器
+* 一款安全的浏览器，比如 360 浏览器
 * 一款内容丰富的视频播放软件 比如[西瓜视频](https://sj.qq.com/appdetail/com.ss.android.article.video)、专门的有高质量军事节目的[凤凰视频](https://sj.qq.com/appdetail/com.ifeng.newvideo)
 * 一款听歌软件
 * 一款可以查看日历的 app 以前我安装了[中华万年历](https://sj.qq.com/appdetail/cn.etouch.ecalendar.life)，但现在系统内置了该功能

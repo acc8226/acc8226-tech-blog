@@ -18,7 +18,7 @@ comments: false
 
 - - -
 
-开源：[捷键 for windows](http://acc8226.test.upcdn.net) 一款实用的 Windows 键鼠增强工具
+开源：[捷键 for windows](http://blog.feipig.fun/jiejian) 一款实用的 Windows 键鼠增强工具
 
 - - -
 
