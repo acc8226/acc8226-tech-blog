@@ -21,14 +21,13 @@ categories: Web 服务器技术
 **CentOS 下 yum 安装**
 使用 `yum` 来安装 Nginx
 `yum install nginx -y`
+<!-- more -->
 
 **ubuntu 下 apt-get 安装**
 `apt install nginx`
 
 **使用 docker 安装 nginx**
 请参考教程: [Docker 安装 Nginx | 菜鸟教程](https://www.runoob.com/docker/docker-install-nginx.html)
-
-<!-- more -->
 
 **linux 环境手动安装 nginx**
 1\. 从 nginx 官网下载稳定版 Stable version 安装包

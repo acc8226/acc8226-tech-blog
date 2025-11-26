@@ -60,7 +60,7 @@ There are too many security issues with shell that make it nearly impossible to 
 
 建议使用一个函数打印出错误消息以及其他状态信息。
 
-```
+```shell
 err() {
   echo "[$(date +'%Y-%m-%dT%H:%M:%S%z')]: $*" >&2
 }
@@ -86,7 +86,6 @@ Example:
 #!/bin/bash
 #
 # Perform hot backups of Oracle databases.
-
 ```
 
 ### Function Comments[](https://google.github.io/styleguide/shellguide.html#function-comments)

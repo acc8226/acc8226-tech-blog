@@ -20,7 +20,7 @@ categories: 文档规约
 
 说明：在某些集合中，前者的时间复杂度为 O(1)，而且可读性更好。
 
-3.【强制】在使用 java.util.stream.Collectors 类的 toMap() 方法转为 Map 集合时，一定要使用参数类型 为 BinaryOperator，参数名为 mergeFunction 的方法，否则当出现相同 key 时会抛出 IllegalStateException 异常。
+3\.【强制】在使用 java.util.stream.Collectors 类的 toMap() 方法转为 Map 集合时，一定要使用参数类型 为 BinaryOperator，参数名为 mergeFunction 的方法，否则当出现相同 key 时会抛出 IllegalStateException 异常。
 
 <!-- more -->
 
@@ -46,7 +46,7 @@ Map<Integer, String> map = Arrays.stream(departments)
     .collect(Collectors.toMap(String::hashCode, str -> str));
 ```
 
-4.【强制】在使用 java.util.stream.Collectors 类的 toMap() 方法转为 Map 集合时，一定要注意当 value 为 null 时会抛 NPE 异常。
+4\.【强制】在使用 java.util.stream.Collectors 类的 toMap() 方法转为 Map 集合时，一定要注意当 value 为 null 时会抛 NPE 异常。
 
 说明：在 java.util.HashMap 的 merge 方法里会进行如下的判断：
 
@@ -67,19 +67,19 @@ Map<String, Double> map = pairArrayList.stream()
     .collect(Collectors.toMap(Pair::getKey, Pair::getValue, (v1, v2) -> v2));
 ```
 
-5.【强制】ArrayList 的 subList 结果不可强转成 ArrayList，否则会抛出 ClassCastException 异常：java.util.RandomAccessSubList cannot be cast to java.util.ArrayList。
+5\.【强制】ArrayList 的 subList 结果不可强转成 ArrayList，否则会抛出 ClassCastException 异常：java.util.RandomAccessSubList cannot be cast to java.util.ArrayList。
 说明：subList() 返回的是 ArrayList 的内部类 SubList，并不是 ArrayList 本身，而是 ArrayList 的一个视图，对于 SubList 的所有操作最终会反映到原列表上。
 
-6.【强制】使用 Map 的方法 keySet() / values() / entrySet() 返回集合对象时，不可以对其进行添加元素 操作，否则会抛出 UnsupportedOperationException 异常。
+6\.【强制】使用 Map 的方法 keySet() / values() / entrySet() 返回集合对象时，不可以对其进行添加元素 操作，否则会抛出 UnsupportedOperationException 异常。
 
 7.【强制】Collections 类返回的对象，如：emptyList() / singletonList() 等都是 immutable list，不可 对其进行添加或者删除元素的操作。
 反例：如果查询无结果，返回 Collections.emptyList() 空集合对象，调用方一旦在返回的集合中进行了添加元素的操作，就会触发 UnsupportedOperationException 异常。
 
-8.【强制】在 subList 场景中，高度注意对父集合元素的增加或删除，均会导致子列表的遍历、增加、删除产生 ConcurrentModificationException 异常。
+8\.【强制】在 subList 场景中，高度注意对父集合元素的增加或删除，均会导致子列表的遍历、增加、删除产生 ConcurrentModificationException 异常。
 
 说明：抽查表明，90% 的程序员对此知识点都有错误的认知。
 
-9.【强制】使用集合转数组的方法，必须使用集合的 toArray(T[] array)，传入的是类型完全一致、长度为 0 的空数组。
+9\.【强制】使用集合转数组的方法，必须使用集合的 toArray(T[] array)，传入的是类型完全一致、长度为 0 的空数组。
 
 反例：直接使用 toArray 无参方法存在问题，此方法返回值只能是 Object[]类，若强转其它类型数组将出现 ClassCastException 错误。 正例：
 
@@ -97,11 +97,11 @@ String[] array = list.toArray(new String[0]);
 3）等于 size，在高并发情况下，数组创建完成之后，size 正在变大的情况下，负面影响与 2 相同。
 4）大于 size，空间浪费，且在 size 处插入 null 值，存在 NPE 隐患。
 
-10.【强制】使用 Collection 接口任何实现类的 addAll() 方法时，要对输入的集合参数进行 NPE 判断。
+10\.【强制】使用 Collection 接口任何实现类的 addAll() 方法时，要对输入的集合参数进行 NPE 判断。
 
 说明：在 ArrayList#addAll 方法的第一行代码即 Object[] a = c.toArray()；其中 c 为输入集合参数，如果为 null， 则直接抛出异常。
 
-11.【强制】使用工具类 Arrays.asList() 把数组转换成集合时，不能使用其修改集合相关的方法，它的 add / remove / clear 方法会抛出 UnsupportedOperationException 异常。
+11\.【强制】使用工具类 Arrays.asList() 把数组转换成集合时，不能使用其修改集合相关的方法，它的 add / remove / clear 方法会抛出 UnsupportedOperationException 异常。
 说明：asList 的返回对象是一个 Arrays 内部类，并没有实现集合的修改方法。Arrays.asList 体现的是适配器模式，只 是转换接口，后台的数据仍是数组。
 
 ```java
@@ -112,10 +112,10 @@ List list = Arrays.asList(str);
 第一种情况：list.add("yangguanbao"); 运行时异常。
 第二种情况：str[0] = "change"; list 中的元素也会随之修改，反之亦然。
 
-12.【强制】泛型通配符<? extends T>来接收返回的数据，此写法的泛型集合不能使用 add 方法， 而<? super T>不能使用 get 方法，两者在接口调用赋值的场景中容易出错。
+12\.【强制】泛型通配符<? extends T>来接收返回的数据，此写法的泛型集合不能使用 add 方法， 而<? super T>不能使用 get 方法，两者在接口调用赋值的场景中容易出错。
 说明：扩展说一下 PECS(Producer Extends Consumer Super) 原则，即频繁往外读取内容的，适合用 <? extends T>，经常往里插入的，适合用<? super T>
 
-13.【强制】在无泛型限制定义的集合赋值给泛型限制的集合时，在使用集合元素时，需要进行 instanceof 判断，避免抛出 ClassCastException 异常。
+13\.【强制】在无泛型限制定义的集合赋值给泛型限制的集合时，在使用集合元素时，需要进行 instanceof 判断，避免抛出 ClassCastException 异常。
 
 说明：毕竟泛型是在 JDK5 后才出现，考虑到向前兼容，编译器是允许非泛型集合与泛型集合互相赋值。 反例：
 
@@ -129,7 +129,7 @@ generics = notGenerics;
 String string = generics.get(0);
 ```
 
-14.【强制】不要在 foreach 循环里进行元素的 remove / add 操作。remove 元素请使用 iterator 方式， 如果并发操作，需要对 iterator 对象加锁。
+14\.【强制】不要在 foreach 循环里进行元素的 remove / add 操作。remove 元素请使用 iterator 方式， 如果并发操作，需要对 iterator 对象加锁。
 
 正例：
 
@@ -160,7 +160,7 @@ for (String item : list) {
 
 我的笔记： 修改一定要使用Iterator。反例中改成2，抛出ConcurrentModificationException，因为2是数组的结束边界。
 
-15.【强制】在 JDK7 版本及以上，Comparator 实现类要满足如下三个条件，不然 Arrays.sort， Collections.sort 会抛 IllegalArgumentException 异常。
+15\.【强制】在 JDK7 版本及以上，Comparator 实现类要满足如下三个条件，不然 Arrays.sort， Collections.sort 会抛 IllegalArgumentException 异常。
 
 说明：三个条件如下
 1）x，y 的比较结果和 y，x 的比较结果相反。
@@ -186,12 +186,12 @@ HashMap<String, String> userCache = new HashMap<>(16);
 ArrayList<User> users = new ArrayList(10);
 ```
 
-17.【推荐】集合初始化时，指定集合初始值大小。
+17\.【推荐】集合初始化时，指定集合初始值大小。
 说明：HashMap 使用构造方法 HashMap(int initialCapacity) 进行初始化时，如果暂时无法确定集合大小，那么指 定默认值（16）即可。
 正例：initialCapacity = (需要存储的元素个数 / 负载因子) + 1。注意负载因子（即 loaderfactor）默认为 0.75，如果 暂时无法确定初始值大小，请设置为 16（即默认值）。
 反例：HashMap 需要放置 1024 个元素，由于没有设置容量初始大小，随着元素增加而被迫不断扩容，resize() 方法 总共会调用 8 次，反复重建哈希表和数据迁移。当放置的集合元素个数达千万级时会影响程序性能。
 
-18.【推荐】使用 entrySet 遍历 Map 类集合 KV，而不是 keySet 方式进行遍历。
+18\.【推荐】使用 entrySet 遍历 Map 类集合 KV，而不是 keySet 方式进行遍历。
 
 说明：keySet 其实是遍历了 2 次，一次是转为 Iterator 对象，另一次是从 hashMap 中取出 key 所对应的 value。而 entrySet 只是遍历了一次就把 key 和 value 都放到了 entry 中，效率更高。如果是 JDK8，使用 Map.forEach 方法。 正例：values() 返回的是 V 值集合，是一个 list 集合对象；keySet() 返回的是 K 值集合，是一个 Set 集合对象； entrySet() 返回的是 K-V 值组合的 Set 集合。
 

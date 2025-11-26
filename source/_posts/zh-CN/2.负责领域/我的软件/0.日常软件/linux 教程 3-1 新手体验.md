@@ -255,7 +255,7 @@ Ctrl + F4
 关闭窗口 	Ctrl + Shift + W
 Alt + F4
 
-退出 	Ctrl + Q
+退出 Ctrl + Q
 
 选择标签页（1到8） 	Alt + 1 到 
 选择最后一个标签页 	Alt + 9

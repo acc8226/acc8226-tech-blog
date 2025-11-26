@@ -28,23 +28,23 @@ categories: linux
 
 | 日志名称           | 记录信息                                                                    |
 | ------------------ | --------------------------------------------------------------------------- |
-| alternatives.log   | 系统的一些更新替代信息记录                                                  |
-| apport.log         | 应用程序崩溃信息记录                                                        |
-| apt/history.log    | 使用 apt-get 安装卸载软件的信息记录                                         |
-| apt/term.log       | 使用 apt-get 时的具体操作，如 package 的下载、打开等                        |
-| auth.log           | 登录认证的信息记录                                                          |
-| boot.log           | 系统启动时的程序服务的日志信息                                              |
-| btmp               | 错误的信息记录                                                              |
-| Consolekit/history | 控制台的信息记录                                                            |
-| dist-upgrade       | dist-upgrade 这种更新方式的信息记录                                         |
-| dmesg              | 启动时，显示屏幕上内核缓冲信息,与硬件有关的信息                             |
-| dpkg.log           | dpkg 命令管理包的日志。                                                     |
-| faillog            | 用户登录失败详细信息记录                                                    |
-| fontconfig.log     | 与字体配置有关的信息记录                                                    |
-| kern.log           | 内核产生的信息记录，在自己修改内核时有很大帮助                              |
-| lastlog            | 用户的最近信息记录                                                          |
-| wtmp               | 登录信息的记录。wtmp 可以找出谁正在进入系统，谁使用命令显示这个文件或信息等 |
-| syslog             | 系统信息记录                                                                |
+| alternatives.log   | 系统的一些更新替代信息记录 |
+| apport.log | 应用程序崩溃信息记录 |
+| apt/history.log | 使用 apt-get 安装卸载软件的信息记录 |
+| apt/term.log | 使用 apt-get 时的具体操作，如 package 的下载、打开等                        |
+| auth.log | 登录认证的信息记录 |
+| boot.log | 系统启动时的程序服务的日志信息 |
+| btmp | 错误的信息记录 |
+| Consolekit/history | 控制台的信息记录 |
+| dist-upgrade       | dist-upgrade 这种更新方式的信息记录 |
+| dmesg | 启动时，显示屏幕上内核缓冲信息,与硬件有关的信息 |
+| dpkg.log | dpkg 命令管理包的日志。 |
+| faillog | 用户登录失败详细信息记录 |
+| fontconfig.log     | 与字体配置有关的信息记录 |
+| kern.log | 内核产生的信息记录，在自己修改内核时有很大帮助 |
+| lastlog | 用户的最近信息记录 |
+| wtmp | 登录信息的记录。wtmp 可以找出谁正在进入系统，谁使用命令显示这个文件或信息等 |
+| syslog | 系统信息记录 |
 
 而在本实验环境中没有 apport.log 是因为 apport 这个应用程序需要读取一些内核的信息来收集判断其他应用程序的信息，从而记录应用程序的崩溃信息。而在本实验环境中我们没有这个权限，所以将 apport 从内置应用值剔除，自然而然就没有它的日志信息了。
 
@@ -169,19 +169,19 @@ Rsyslog 架构如图中所示，从图中我们可以很清楚的看见，rsyslo
 
 | 接口名    | 作用                                              |
 | --------- | ------------------------------------------------- |
-| im3195    | RFC3195 Input Module                              |
-| imfile    | Text File Input Module                            |
-| imgssapi  | GSSAPI Syslog Input Module                        |
-| imjournal | Systemd Journal Input Module                      |
-| imklog    | Kernel Log Input Module                           |
-| imkmsg    | /dev/kmsg Log Input Module                        |
+| im3195    | RFC3195 Input Module |
+| imfile    | Text File Input Module |
+| imgssapi  | GSSAPI Syslog Input Module |
+| imjournal | Systemd Journal Input Module |
+| imklog    | Kernel Log Input Module |
+| imkmsg    | /dev/kmsg Log Input Module |
 | impstats  | Generate Periodic Statistics of Internal Counters |
-| imptcp    | Plain TCP Syslog                                  |
-| imrelp    | RELP Input Module                                 |
-| imsolaris | Solaris Input Module                              |
-| imtcp     | TCP Syslog Input Module                           |
-| imudp     | UDP Syslog Input Module                           |
-| imuxsock  | Unix Socket Input                                 |
+| imptcp    | Plain TCP Syslog |
+| imrelp    | RELP Input Module |
+| imsolaris | Solaris Input Module |
+| imtcp     | TCP Syslog Input Module |
+| imudp     | UDP Syslog Input Module |
+| imuxsock  | Unix Socket Input |
 
 而 Output 中也有许多可用的接口，可以通过 man 或者官方的文档查看
 
@@ -222,32 +222,32 @@ facility.priority　　　　　log_location
 
 rsyslog 通过 Facility 的概念来定义日志消息的来源，以便对日志进行分类，Facility 的种类有：
 
-| 类别     | 解释             |
+| 类别     | 解释 |
 | -------- | ---------------- |
-| kern     | 内核消息         |
-| user     | 用户信息         |
-| mail     | 邮件系统消息     |
+| kern     | 内核消息 |
+| user     | 用户信息 |
+| mail     | 邮件系统消息 |
 | daemon   | 系统服务消息     |
-| auth     | 认证系统         |
-| authpriv | 权限系统         |
+| auth     | 认证系统 |
+| authpriv | 权限系统 |
 | syslog   | 日志系统自身消息 |
-| cron     | 计划安排         |
-| news     | 新闻信息         |
+| cron     | 计划安排 |
+| news     | 新闻信息 |
 | local0~7 | 由自定义程序使用 |
 
 而另外一部分 priority 也称之为 serverity level，除了日志的来源以外，对统一源产生日志消息还需要进行优先级的划分，而优先级的类别有以下几种：
 
 | 类别          | 解释                           |
 | ------------- | ------------------------------ |
-| emergency     | 系统已经无法使用了             |
-| alert         | 必须立即处理的问题             |
-| critical      | 很严重了                       |
-| error         | 错误                           |
-| warning       | 警告信息                       |
-| notice        | 系统正常，但是比较重要         |
-| informational | 正常                           |
-| debug         | debug 的调试信息               |
-| panic         | 很严重但是已淘汰不常用         |
+| emergency     | 系统已经无法使用了 |
+| alert         | 必须立即处理的问题 |
+| critical      | 很严重了 |
+| error         | 错误 |
+| warning       | 警告信息 |
+| notice        | 系统正常，但是比较重要 |
+| informational | 正常 |
+| debug         | debug 的调试信息 |
+| panic         | 很严重但是已淘汰不常用 |
 | none          | 没有优先级，不记录任何日志消息 |
 
 我们来看看系统中的配置
@@ -289,10 +289,10 @@ sudo tail -f /var/log/syslog
 
 我们可以通过 man 来查看 logger 的其他用法，
 
-| 参数 | 内容                            |
+| 参数 | 内容 |
 | ---- | ------------------------------- |
-| -i   | 在每行都记录进程 ID             |
-| -t   | 添加 tag 标签                   |
+| -i   | 在每行都记录进程 ID |
+| -t   | 添加 tag 标签 |
 | -p   | 设置日志的 facility 与 priority |
 
 ## 转存日志

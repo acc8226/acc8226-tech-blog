@@ -74,8 +74,6 @@ firewall-cmd --permanent --zone=public --list-ports
 删除指定
 firewall-cmd --permanent --zone=drop --remove-source=ip 需要重新加载配置
 
-- - -
-
 2\. RHEL7 开始，使用 systemctl 工具来管理服务程序，包括了 service 和 chkconfig
 
 systemctl list-unit-files | grep enabled

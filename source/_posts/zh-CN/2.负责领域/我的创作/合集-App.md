@@ -1274,7 +1274,7 @@ APTV
 
 ## 35 投屏
 
-* 乐播投屏
+* [乐播投屏](https://sj.qq.com/appdetail/com.hpplay.happycast)
 * [AlookDLNA](https://alookweb.com/AlookDLNA.apk) 可以作为 DLNA 的接收端
 
 ### 鸿蒙
@@ -1416,21 +1416,23 @@ Soul
 
 小米手机自带的小米云笔记，当然电脑可以登录[网页版](https://i.mi.com/note/h5#)方便编辑
 
+云笔记依然能打，不过我仅作为临时存储用
+
+* [印象笔记](https://sj.qq.com/appdetail/com.yinxiang) 已限制 2 台设备
+* [有道云笔记](https://sj.qq.com/appdetail/com.youdao.note) 已限制 2 台设备
+
 留存
 
+* 本地 [obsidian](https://obsidian.md/download) 格式排版极佳的 markdown 笔记
 * 在线 [flomo 浮墨笔记](https://sj.qq.com/appdetail/com.flomo.app) 支持多台设备同步且不收费，适合灵光一闪
 * 在线 [讯飞语记](https://sj.qq.com/appdetail/com.iflytek.vflynote) 支持实时语音听写很好用
 * 本地 [Notepad, Notes, Easy Notebook](https://notepad-notes-easy-notebook.en.uptodown.com/android)（记事本、便签、清单 - Notein）颜值和功能都不错
-* 本地 [obsidian](https://obsidian.md/download) 格式排版极佳的 markdown 笔记
 
 not
 
 * Joplin 我不喜欢这种组织方式
 * [Day One Journal App](https://dayoneapp.com/) 颜值高，免费版限 1 台设备，算了
 * [Simplenote](https://simplenote.com/) 极简，无限同步，不限设备，仅限纯文本，兼容 markdown 格式，但是国内网络你懂的
-* ——————— ฅ՞• •՞ฅ ———————
-* [印象笔记](https://sj.qq.com/appdetail/com.yinxiang) 已限制 2 台设备
-* [有道云笔记](https://sj.qq.com/appdetail/com.youdao.note) 已限制 2 台设备
 * ——————— ฅ՞• •՞ฅ ———————
 * [纯纯写作](https://sj.qq.com/appdetail/com.drakeet.purewriter) 这种组织方式我不喜欢而已，但是本身设计很优秀
 

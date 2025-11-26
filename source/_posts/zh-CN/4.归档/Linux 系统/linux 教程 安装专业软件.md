@@ -5,8 +5,7 @@ updated: 2022-11-05 13:45:00
 categories: linux
 ---
 
-宝塔面板 - 简单好用的 Linux/Windows 服务器运维管理面板
-<https://www.bt.cn/new/index.html>
+[宝塔面板](https://www.bt.cn/new/index.html) - 简单好用的 Linux/Windows 服务器运维管理面板
 
 ## root 用户无法远程登录
 

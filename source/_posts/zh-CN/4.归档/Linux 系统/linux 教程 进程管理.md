@@ -7,10 +7,6 @@ categories: linux
 
 top 是我们常用的一个查看工具，能实时的查看我们系统的一些关键信息的变化:
 
-```sh
-top
-```
-
 ![](https://upload-images.jianshu.io/upload_images/1662509-358760c67b9b7348?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 top 是一个在前台执行的程序，所以执行后便进入到这样的一个交互界面，正是因为交互界面我们才可以实时的获取到系统与进程的信息。在交互界面中我们可以通过一些指令来操作和筛选。在此之前我们先来了解显示了哪些信息。

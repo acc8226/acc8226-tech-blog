@@ -14,6 +14,8 @@ Android 开发所需的 SDK，下载并解压后，将解压出的整个文件�
 
 平台版本 | API LeveL | 版本名称
 -----| ----- | -----
+15 | 35  | Android 15 / Vanilla Ice Cream 香草冰淇淋
+14 | 34  | Android 14 / Upside Down Cake 翻转蛋糕
 13 | 33  | Android 13 / Android T/ Tiramisu 提拉米苏
 12 | 32  | Android 12 / S_V2 / sv2 / Snow Cone / 刨冰
 12 | 31  | Android 12 / Android S / Snow Cone / 刨冰
@@ -36,7 +38,7 @@ Android 开发所需的 SDK，下载并解压后，将解压出的整个文件�
 3.2 | 13 | HONEYCOMB_MR2
 3.1.X | 12  | HONEYCOMB_MR1
 3.0.X | 11  | HONEYCOMB
-2.3.3 2.3.4 | 10 | GINGERBREAD_MR1
+2.3.3 2.3.4、2.3.5、2.3.6、2.3.7 | 10 | GINGERBREAD_MR1
 
 <!-- more -->
 

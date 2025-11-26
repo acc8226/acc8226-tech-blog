@@ -11,6 +11,7 @@ categories: linux
 * 从磁盘安装软件包
 * 从二进制软件包安装
 * 从源代码编译安装
+<!-- more -->
 
 在不同的 linux 发行版上面在线安装方式会有一些差异包括使用的命令及它们的包管理工具，因为我们的开发环境是基于 ubuntu 的，所以这里我们涉及的在线安装方式将只适用于 ubuntu 发行版，或其它基于 ubuntu 的发行版如国内的 ubuntukylin(优麒麟)，**ubuntu 又是基于 debian** 的发行版，它使用的是 debian 的包管理工具 dpkg，所以一些操作也适用与 debian。而在一些采用其它包管理工具的发行版如 redhat，centos, fedora 等将不适用(redhat 和 centos 使用 rpm)。
 

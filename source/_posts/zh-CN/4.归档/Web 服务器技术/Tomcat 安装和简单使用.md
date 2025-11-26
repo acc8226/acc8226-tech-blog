@@ -7,7 +7,7 @@ categories: Web 服务器技术
 
 ## tomcat 版本的选择
 
-Apache Tomcat 是 Jakarta EE (正式的 Java EE)技术的一个子集的开放源码软件实现。ApacheTomcat 的不同版本可用于规范的不同版本。规范和相应的 Apache Tomcat 版本之间的映射如下:
+Apache Tomcat 是 Jakarta EE (正式的 Java EE)技术的一个子集的开放源码软件实现。Apache Tomcat 的不同版本可用于规范的不同版本。规范和相应的 Apache Tomcat 版本之间的映射如下:
 
 | **Servlet Spec** | **JSP Spec** | **EL Spec** | **WebSocket Spec** | **Authentication (JASPIC) Spec** | **Apache Tomcat Version** | **Latest Released Version** | **Supported Java Versions**                |
 | ---------------- | ------------ | ----------- | ------------- | ------------- | ------------------------- | ----------------- | --------- |
@@ -106,5 +106,4 @@ win 控制台乱码的问题, 查看默认编码, 是否没有设置 UTF-8 替�
 
 ## 参考
 
-Apache Tomcat® - Welcome!
-<https://tomcat.apache.org/>
+[Apache Tomcat® - Welcome!](https://tomcat.apache.org)

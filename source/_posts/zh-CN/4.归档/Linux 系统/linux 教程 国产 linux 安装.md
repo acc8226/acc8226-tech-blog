@@ -15,7 +15,7 @@ categories: linux
 
 ### Win + 优麒麟双系统安装
 
-下载镜像优麒麟 <https://www.ubuntukylin.com/downloads/>
+[下载镜像优麒麟](https://www.ubuntukylin.com/downloads)
 
 准备一个 U 盘要求：U 盘内存大于 4G；
 <!-- more -->
@@ -24,13 +24,13 @@ categories: linux
 
 分配空间磁盘分区是为了给优麒麟操作系统分配空间，默认选择分区尾部的磁盘（考虑到机械硬盘的读写特性，尽可能切靠前的分区）
 
-重启电进入 BIOS 系统插入制作好的 U 盘启动盘，重启电脑，在开机时按 “F2” 进入 BIOS 系统直到出现选择安装方式界面，选择“自定义安装”。首先添加根分区，在此处分配的大小是 80 GB，大家可以根据自身需求进行分配，但一定要确保之后有充足的空间可供使用。之后，添加 data 和 backup 分区，作为数据分区和备份还原分区，此处分别分配 20G。全部分配完成后点击“下一步”，开始安装优麒麟开源操作系统。等待安装完成。
+重启电进入 BIOS 系统插入制作好的 U 盘启动盘，重启电脑，在开机时按 “F2” 进入 BIOS 系统直到出现选择安装方式界面，选择“自定义安装”。首先添加根分区，在此处分配的大小是 80G，大家可以根据自身需求进行分配，但一定要确保之后有充足的空间可供使用。之后，添加 data 和 backup 分区，作为数据分区和备份还原分区，此处分别分配 20G。全部分配完成后点击“下一步”，开始安装优麒麟开源操作系统。等待安装完成。
 
 ## 深度操作系统
 
 致力于服务全球 Deepin 用户，系统具有极高的易用性、优秀的交互体验、多款自研应用、全面的生态体系、高效的优化反馈机制为用户提供最好的 Linux 开源体验环境。
 
-- 最新版本 – 深度科技社区 <https://www.deepin.org/zh/download/>
+- [最新版本](https://www.deepin.org/zh/download) – 深度科技社区
 - 阿里云镜像地址 <http://mirrors.aliyun.com/deepin-cd/>
 
 ### 统信 UOS
@@ -39,7 +39,7 @@ categories: linux
 
 个人用户提供美观易用的国产操作系统。简化安装方式，一键安装，自动高效；同时支持 Linux 原生、Wine 和安卓应用，软件应用生态更加丰富；优化注册流程，支持微信扫码登陆 UOS ID；新增跨屏协同，电脑与手机互联，轻松管理手机文件，支持文档同步修改；对桌面视觉和交互体验进一步优化。统一桌面环境，统信 UOS 让您开机点亮美好新生活。
 
-资源中心 | 统信 UOS 生态社区 <https://www.chinauos.com/resource/download-home>
+资源中心 | [统信 UOS 生态社区](https://www.chinauos.com/resource/download-home)
 
 ### 分区注意
 
@@ -48,6 +48,51 @@ ext4 /home 建议 8 G 以上
 swap 是可选项，如果内存大于 4g 则可以不设置，否则设置为 2g 为宜。
 
 **如何为主机做备案** 通俗来讲，要开办网站必须先办理网站备案，备案成功后您的域名才可指向接入商处的服务器开通访问。ICP 备案号以工信部网站公共查询为准，查询入口：[http://www.beian.miit.gov.cn](http://www.beian.miit.gov.cn/ "http://www.beian.miit.gov.cn")。
+
+## 银河麒麟
+
+### 环境变量
+
+~/.bashrc 用户级别    
+/etc/bash.bashrc  系统级别
+
+想为自己添加一个 open 别名来代替 xdg-open，可以在自己的 ~/.bashrc 文件中添加：
+alias open='xdg-open'
+然后运行 source ~/.bashrc 使配置生效。
+
+### 制作 .desktop
+
+普通应用
+[Desktop Entry]
+Name=GIMP
+Exec=/home/greatwall/software/GIMP/AppRun
+StartupNotify=true
+Terminal=false
+Icon=/home/greatwall/software/GIMP/org.gimp.GIMP.Stable.svg
+Type=Application
+Categories=Utility;
+
+制作网页快捷方式
+[Desktop Entry]
+Name=百度网
+Exec=xdg-open https://www.baidu.com
+Terminal=false
+Icon=/home/greatwall/桌面/favicon.ico
+Type=Application
+Categories=Utility;
+
+### 额外的软件
+
+以下是一些支持 Linux ARM 架构的应用启动器：
+
+- **Ulauncher** ：一个免费且轻量级的 Linux 启动器，使用 GTK+ 和 Python 编写，功能通过多个扩展可得到极大增强，支持模糊搜索、自定义颜色主题、快捷方式等功能。它支持 ARM 架构，可在 ARM 设备上安装使用。可通过其官网 ulauncher.io
+
+### 问题
+greatwall@greatwall111:~/桌面$ '/home/greatwall/桌面/GIMP-3.0.4-aarch64.AppImage' 
+execv error: Socket not connected
+
+可以尝试使用命令行选项来运行 AppImage 文件，例如：
+/home/greatwall/桌面/GIMP-3.0.4-aarch64.AppImage --appimage-extract，然后进入解压后的目录，再运行其中的可执行文件。
 
 ## 多系统安装工具 Ventoy
 

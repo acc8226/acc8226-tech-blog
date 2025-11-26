@@ -304,9 +304,6 @@ public void testLatch(ExecutorService executorService, List<Runnable> tasks)
 
 ## 参考
 
-[深入学习 Java 线程池](http://www.importnew.com/29212.html)
-
-threadPoolExecutor 中的 shutdown() 、 shutdownNow() 、 awaitTermination() 的用法和区别
-<https://blog.csdn.net/u012168222/article/details/52790400>
-
- [Java线程池详解](https://www.cnblogs.com/CarpenterLee/p/9558026.html)
+* [深入学习 Java 线程池](http://www.importnew.com/29212.html)
+* [threadPoolExecutor 中的 shutdown() 、 shutdownNow() 、 awaitTermination() 的用法和区别](https://blog.csdn.net/u012168222/article/details/52790400)
+* [Java线程池详解](https://www.cnblogs.com/CarpenterLee/p/9558026.html)

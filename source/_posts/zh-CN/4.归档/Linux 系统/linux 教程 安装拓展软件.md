@@ -82,11 +82,11 @@ iPhone：App Store 上下载 ShadowLink，这个要用国外 appid 才可以下�
 
 安装好上面对应的客户端如左边图点击添加线路，然后是中间图填写对应的服务 ip、端口、密码、加密方式然后保存，之后点击左图的开关按钮；看到手机上出现 vpn 的图标就成功了，可以随心所欲看视频了。
 
-![基于国外服务器搭建自己的 VPN](https://upload-images.jianshu.io/upload_images/1662509-18bbe33ad742a89c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![VPN](https://upload-images.jianshu.io/upload_images/1662509-18bbe33ad742a89c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-![基于国外服务器搭建自己的 VPN](https://upload-images.jianshu.io/upload_images/1662509-47a5261628aee129.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![VPN](https://upload-images.jianshu.io/upload_images/1662509-47a5261628aee129.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-![基于国外服务器搭建自己的 VPN](https://upload-images.jianshu.io/upload_images/1662509-a927e0920549a5bc.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![VPN](https://upload-images.jianshu.io/upload_images/1662509-a927e0920549a5bc.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## 配置 nginx
 
