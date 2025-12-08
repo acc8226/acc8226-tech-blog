@@ -96,7 +96,6 @@ public class Demo {
 在上面的代码实现中，我们需要将待遍历的容器对象，通过构造函数传递给迭代器类。实际上，为了封装迭代器的创建细节，我们可以在容器中定义一个 iterator() 方法，来创建对应的迭代器。为了能实现基于接口而非实现编程，我们还需要将这个方法定义在 List 接口中。具体的代码实现和使用示例如下所示：
 
 ```java
-
 public interface List<E> {
   Iterator iterator();
   //...省略其他接口函数...
@@ -139,7 +138,6 @@ public class ArrayList<E> implements List<E> {
 怎么确定在遍历时候，集合有没有增删元素呢？我们在 ArrayList 中定义一个成员变量 modCount，记录集合被修改的次数，集合每调用一次增加或删除元素的函数，就会给 modCount 加 1。当通过调用集合上的 iterator() 函数来创建迭代器的时候，我们把 modCount 值传递给迭代器的 expectedModCount 成员变量，之后每次调用迭代器上的 hasNext()、next()、currentItem() 函数，我们都会检查集合上的 modCount 是否等于 expectedModCount，也就是看，在创建完迭代器之后，modCount 是否改变过。
 
 ```java
-
 public class ArrayIterator implements Iterator {
   private int cursor;
   private ArrayList arrayList;
@@ -198,7 +196,6 @@ public class Demo {
 为什么通过迭代器就能安全的删除集合中的元素呢？源码之下无秘密。我们来看下 remove() 函数是如何实现的，代码如下所示。稍微提醒一下，在 Java 实现中，迭代器类是容器类的内部类，并且 next() 函数不仅将游标后移一位，还会返回当前的元素。
 
 ```java
-
 public class ArrayList<E> {
   transient Object[] elementData;
   private int size;

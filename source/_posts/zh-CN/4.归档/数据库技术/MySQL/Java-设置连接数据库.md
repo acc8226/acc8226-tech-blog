@@ -15,9 +15,8 @@ categories: mysql
 
 ### c3p0 连接池
 
-官网 <https://www.mchange.com/projects/c3p0/>
+[官网](https://www.mchange.com/projects/c3p0/)
 下载 C3P0 工具包：<https://sourceforge.net/projects/c3p0/files/latest/download?source=files>
-
 <!-- more -->
 
 ### 阿里 druid 连接池

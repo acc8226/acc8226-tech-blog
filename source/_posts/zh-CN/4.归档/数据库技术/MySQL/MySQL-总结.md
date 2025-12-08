@@ -157,22 +157,15 @@ FOR EACH ROW SELECT 'Product added';
 
 ```sql
 select sum(sum1) from (
-select count(*) as sum1 from retrun_factory  emp_id='S20190001'
-union all
-select count(*) as sum1 from  retrun_factory_log emp_id='S20190001'
+  select count(*) as sum1 from retrun_factory  emp_id='S20190001'
+    union all
+  select count(*) as sum1 from  retrun_factory_log emp_id='S20190001'
 ) as total
 ```
 
 ## 参考
 
-Mysql is not allowed to connect to this mysql server 报错解决办法_wtopps 的专栏-CSDN 博客
-<https://blog.csdn.net/wtopps/article/details/81626656>
-
-Host 'ip地址' is not allowed to connect to this MySQL server 报错解决方法_CXRS_LIU 的博客-CSDN 博客
-<https://blog.csdn.net/CXRS_LIU/article/details/90478519>
-
-ERROR 1415 (0A000): Not allowed to return a result set from a trigger_学而时‘享’之，乐乎-CSDN 博客
-<https://blog.csdn.net/Mr_Programming_Liu/article/details/89376988>
-
-MySQL 表不能修改、删除等操作，卡死、锁死情况的处理办法 - wqbin - 博客园
-<https://www.cnblogs.com/wqbin/p/11900653.html>
+* [Mysql is not allowed to connect to this mysql server 报错解决办法](https://blog.csdn.net/wtopps/article/details/81626656)_wtopps 的专栏-CSDN 博客
+* [Host 'ip地址' is not allowed to connect to this MySQL server 报错解决方法](https://blog.csdn.net/CXRS_LIU/article/details/90478519)_CXRS_LIU 的博客-CSDN 博客
+* [ERROR 1415 (0A000): Not allowed to return a result set from a trigger](https://blog.csdn.net/Mr_Programming_Liu/article/details/89376988)_学而时‘享’之，乐乎-CSDN 博客
+* [MySQL 表不能修改、删除等操作，卡死、锁死情况的处理办法](https://www.cnblogs.com/wqbin/p/11900653.html)- wqbin - 博客园

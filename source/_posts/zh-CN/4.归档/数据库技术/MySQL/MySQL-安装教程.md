@@ -127,7 +127,7 @@ yum -y install mysql-community-server
 
 重置 root 账号密码。
 
-```text
+```sh
 Enter password for user root: #输入上一步获取的root用户初始密码
 The 'validate_password' plugin is installed on the server.
 The subsequent steps will run with the existing configuration of the plugin.
@@ -142,7 +142,7 @@ Do you wish to continue with the password provided?(Press y|Y for Yes, any other
 
 输入 Y 删除匿名用户账号。
 
-```text
+```sh
 By default, a MySQL installation has an anonymous user, allowing anyone to log into MySQL without having to have a user account created for them. This is intended only for testing, and to make the installation go a bit smoother. You should remove them before moving into a production environment.
 Remove anonymous users? (Press y|Y for Yes, any other key for No) : Y  #是否删除匿名用户，输入Y
 Success.
@@ -157,7 +157,7 @@ Success.
 
 输入 Y 删除 test 库以及对 test 库的访问权限。
 
-```text
+```sh
 Remove test database and access to it? (Press y|Y for Yes, any other key for No) : Y #是否删除test库和对它的访问权限，输入Y
 - Dropping test database...
 Success.
@@ -218,7 +218,7 @@ sudo systemctl start mysql.service
 brew install mysql
 ```
 
-```text
+```sh
 We've installed your MySQL database without a root password. To secure it run:
     mysql_secure_installation
 
@@ -245,16 +245,13 @@ brew services restart mysql
 
 ### 使用套件进行安装
 
-**小皮面板**
-<https://www.xp.cn/>
+**[小皮面板](https://www.xp.cn)**
 
-**MAMP**
+**[MAMP](https://www.mamp.info/)**
 The free web development solution with Apache, Nginx, PHP & MySQL。
-<https://www.mamp.info/>
 
-**XAMPP**
+**[XAMPP](https://www.apachefriends.org/zh_cn/index.html)**
 是完全免费且易于安装的 Apache 发行版，其中包含 MariaDB、PHP 和 Perl。XAMPP 开放源码包的设置让安装和使用出奇容易。
-<https://www.apachefriends.org/zh_cn/index.html>
 
 > 新版本 MariaDB 已经取代了 MySQL，因此需要下载老版本的 XAMPP 或者直接切换成 MySQL 的衍生产品 MariaDB。
 
@@ -306,10 +303,10 @@ docker exec -it mysql8 mysql -uroot -p98763112
 
 MySQL 在 Linux 下数据库名、表名、列名、别名大小写规则是这样的：
 
-1、数据库名与表名是严格区分大小写的；
-2、表的别名是严格区分大小写的；
-3、列名与列的别名在所有的情况下均是忽略大小写的；
-4、变量名也是严格区分大小写的；
+1. 数据库名与表名是严格区分大小写的；
+1. 表的别名是严格区分大小写的；
+1. 列名与列的别名在所有的情况下均是忽略大小写的；
+1. 变量名也是严格区分大小写的；
 
 MySQL 默认情况下是否区分大小写，使用 `show Variables like '%table_names';` 查看 lower_case_table_names 的值，0 代表区分，1代表不区分。
 

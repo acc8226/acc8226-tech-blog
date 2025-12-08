@@ -319,7 +319,7 @@ public class DemoClass {
 
 Spring 提供了另外一个定义初始化函数的方法，那就是让类实现 Initializingbean 接口。这个接口包含一个固定的初始化函数定义（afterPropertiesSet() 函数）。Spring 在初始化 Bean 的时候，可以直接通过 bean.afterPropertiesSet() 的方式，调用 Bean 对象上的这个函数，而不需要使用反射来调用了。我举个例子解释一下，代码如下所示。
 
-```j
+```java
 public class DemoClass implements InitializingBean{
   @Override
   public void afterPropertiesSet() throws Exception {
@@ -410,7 +410,6 @@ public class DemoServlet extends HttpServlet {
 但是，不同方式定义的 Controller，其函数的定义（函数名、入参、返回值等）是不统一的。如上示例代码所示，方法一中的函数的定义很随意、不固定，方法二中的函数定义是 handleRequest()、方法三中的函数定义是 service()（看似是定义了 doGet()、doPost()，实际上，这里用到了模板模式，Servlet 中的 service() 调用了 doGet() 或 doPost() 方法，DispatcherServlet 调用的是 service() 方法）。DispatcherServlet 需要根据不同类型的 Controller，调用不同的函数。下面是具体的伪代码：
 
 ```java
-
 Handler handler = handlerMapping.get(URL);
 if (handler instanceof Controller) {
   ((Controller)handler).handleRequest(...);
@@ -430,7 +429,6 @@ if (handler instanceof Controller) {
 Spring 定义了统一的接口 HandlerAdapter，并且对每种 Controller 定义了对应的适配器类。这些适配器类包括：AnnotationMethodHandlerAdapter、SimpleControllerHandlerAdapter、SimpleServletHandlerAdapter 等。源码我贴到了下面，你可以结合着看下。
 
 ```java
-
 public interface HandlerAdapter {
   boolean supports(Object var1);
 
@@ -439,7 +437,7 @@ public interface HandlerAdapter {
   long getLastModified(HttpServletRequest var1, Object var2);
 }
 
-// 对应实现Controller接口的Controller
+// 对应实现 Controller 接口的 Controller
 public class SimpleControllerHandlerAdapter implements HandlerAdapter {
   public SimpleControllerHandlerAdapter() {
   }
@@ -457,7 +455,7 @@ public class SimpleControllerHandlerAdapter implements HandlerAdapter {
   }
 }
 
-// 对应实现Servlet接口的Controller
+// 对应实现 Servlet 接口的 Controller
 public class SimpleServletHandlerAdapter implements HandlerAdapter {
   public SimpleServletHandlerAdapter() {
   }
@@ -476,8 +474,8 @@ public class SimpleServletHandlerAdapter implements HandlerAdapter {
   }
 }
 
-//AnnotationMethodHandlerAdapter对应通过注解实现的Controller，
-//代码太多了，我就不贴在这里了
+// AnnotationMethodHandlerAdapter 对应通过注解实现的 Controller，
+// 代码太多了，我就不贴在这里了
 ```
 
 在 DispatcherServlet 类中，我们就不需要区分对待不同的 Controller 对象了，统一调用 HandlerAdapter 的 handle() 函数就可以了。按照这个思路实现的伪代码如下所示。你看，这样就没有烦人的 if-else 逻辑了吧？

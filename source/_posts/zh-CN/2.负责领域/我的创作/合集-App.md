@@ -930,17 +930,6 @@ not
 * [支付宝](https://appgallery.huawei.com/app/detail?id=com.alipay.mobile.client)
 * [翼支付](https://appgallery.huawei.com/app/detail?id=com.bestpay.harmonyclient)
 
-
-
-
-
-
-
-
-
-
-
-
 ## 15 网盘【常用】
 
 ### 安卓 / iPhone
@@ -982,7 +971,8 @@ not [PikPak](https://mypikpak.com/zh-CN)【适配了安卓平板】免费用户�
 ### 鸿蒙
 
 * [天翼云盘](https://appgallery.huawei.com/app/detail?id=com.dlife.ecloud)
-* [阿里云盘](https://appgallery.huawei.com/app/detail?id=com.alicloud.hmdatabox)
+
+备用 [阿里云盘](https://appgallery.huawei.com/app/detail?id=com.alicloud.hmdatabox)
 
 ## 16 效率类
 
@@ -1019,8 +1009,6 @@ not
 * [via 浏览器](https://sj.qq.com/appdetail/mark.via) 比 X 浏览器体积更大且某些方面体验不如
 * ——————— ฅ՞• •՞ฅ ———————
 * UC 国际版
-
-官网收录：[欧朋浏览器](https://sj.qq.com/appdetail/com.oupeng.mini.android)
 
 ### 安卓平板
 

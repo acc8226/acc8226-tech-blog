@@ -75,8 +75,7 @@ Options:
 
 ## 参考
 
-mycli 官网
-<https://www.mycli.net/>
+[mycli 官网](https://www.mycli.net/)
 
 Installing & Using MyCli on Windows
 <https://www.codewall.co.uk/installing-using-mycli-on-windows/>
