@@ -81,6 +81,7 @@ public class MyApplication extends Application {
 ## 感谢
 
 * 感谢 [Square](https://github.com/square) 提供的 [Leakcanary](https://github.com/square/leakcanary)。
-* 版权声明：本文为 cekiasoo 原创文章，转载请务必注明[出处](http://blog.csdn.net/cekiasoo/article/details/70880740)！
+* 版权声明：本文为 cekiasoo 原创文章，转载请务必注明[出处](http://blog.csdn.net/cekiasoo/article/details/70880740)
 * [Leakcanary-eclipse 传送门](https://github.com/cekiasoo/Leakcanary-eclipse)
+
 目前是根据 Leakcanary 1.5.1 的版本进行转化的
