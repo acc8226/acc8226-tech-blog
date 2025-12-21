@@ -970,7 +970,7 @@ not [PikPak](https://mypikpak.com/zh-CN)【适配了安卓平板】免费用户�
 
 ### 鸿蒙
 
-* [天翼云盘](https://appgallery.huawei.com/app/detail?id=com.dlife.ecloud)
+[天翼云盘](https://appgallery.huawei.com/app/detail?id=com.dlife.ecloud)
 
 备用 [阿里云盘](https://appgallery.huawei.com/app/detail?id=com.alicloud.hmdatabox)
 
