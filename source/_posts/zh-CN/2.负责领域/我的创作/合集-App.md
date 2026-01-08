@@ -2,7 +2,7 @@
 title: 合集-App
 permalink: myapp/
 date: 2017-04-13 22:07:33
-updated: 2025-11-16 13:30:04
+updated: 2026-01-08 22:28:17
 categories: 我的创作
 ---
 
@@ -20,9 +20,9 @@ categories: 我的创作
 * 在挑选 app 上尽量跨平台、无广告和体积小巧优先，一定程度保证使用体验一致
 * “官网收录”收录了一些 app 的官网，仅供参考
 
-### 安卓还是 iOS、鸿蒙 next
+### 安卓还是 iOS、鸿蒙 6
 
-如果只考虑必要需求，现阶段低于 1500 元以下只有安卓设备，否则我推荐系统日臻完善的鸿蒙系统
+如果只考虑必要需求，现阶段低于 **1500 元**以下只有安卓设备，否则我推荐系统日臻完善的鸿蒙系统。
 
 ### 手机还是平板
 
@@ -108,7 +108,7 @@ Bitwarden【已适配安卓平板】[Github 版](https://github.com/bitwarden/an
 
 #### 鸿蒙
 
-虚位以待
+缺一款全平台的秘密管理软件，例如流行的 Bitwarden。难道现阶段只能卓易通？
 
 ### 1.3 邮件收发
 
@@ -126,7 +126,7 @@ Bitwarden【已适配安卓平板】[Github 版](https://github.com/bitwarden/an
 
 #### 鸿蒙
 
-[QQ 邮箱](https://appgallery.huawei.com/app/detail?id=com.tencent.qqmail.hmos) 趁现在无广告
+[QQ 邮箱](https://appgallery.huawei.com/app/detail?id=com.tencent.qqmail.hmos) 现在已有广告后我暂用自带邮箱客户端
 
 ### 1.4 倒数日
 
@@ -195,8 +195,9 @@ not
 
 #### 鸿蒙
 
+* [微信读书](https://appgallery.huawei.com/app/detail?id=com.tencent.weread.hmos) 目前 0.9 版本有 bug，可以免费看所有付费会员的书
 * [番茄免费小说](https://appgallery.huawei.com/app/detail?id=com.dragon.read.next)
-* [微信读书](https://appgallery.huawei.com/app/detail?id=com.tencent.weread.hmos)
+* 格物阅读 目前完成度很高
 
 ### 1.6 音乐
 
@@ -274,7 +275,7 @@ not [QQ 音乐 HD](https://sj.qq.com/appdetail/com.tencent.qqmusicpad) 首先更
 
 备用
 
-* 在线 [酷狗音乐](https://appgallery.huawei.com/app/detail?id=com.kugou.hmmusic)
+* 【在线】[酷狗音乐](https://appgallery.huawei.com/app/detail?id=com.kugou.hmmusic)
 * 【在线】[汽水音乐](https://appgallery.huawei.com/app/detail?id=com.luna.hm.music)
 
 ### 1.7 听物
@@ -320,9 +321,10 @@ not 酷FM 一款酷狗推出的的音乐 FM 电台 app，现已停止更新
 * [帆书](https://appgallery.huawei.com/app/detail?id=com.fanshu.book)
 * [得到](https://appgallery.huawei.com/app/detail?id=com.luojilab.dedao)
 * [云听](https://appgallery.huawei.com/app/detail?id=com.yt.radioHarmony)
-* [蜻蜓 FM](https://appgallery.huawei.com/app/detail?id=fm.qtradio.hm)
 * [阿基米德](https://appgallery.huawei.com/app/detail?id=org.ajmide.harmonyapp)
 * [小宇宙](https://appgallery.huawei.com/app/detail?id=app.podcast.cosmos.hongmeng)
+
+备用 [蜻蜓 FM](https://appgallery.huawei.com/app/detail?id=fm.qtradio.hm)
 
 ### 1.8 资讯
 
@@ -382,13 +384,20 @@ not 今日头条 竟然有点卡
 #### 鸿蒙
 
 * [简讯](https://appgallery.huawei.com/app/detail?id=com.tipsoon.harm)
-* [红板报](https://appgallery.huawei.com/app/detail?id=flipboard.cn.light)
 * [今日头条](https://appgallery.huawei.com/app/detail?id=com.ss.hm.article.news)
+* 界面资讯
+* 一点资讯
+* 网易新闻
+* 搜狐新闻
+* 新湖南
 
 **科技资讯**
 
 * [IT之家](https://appgallery.huawei.com/app/detail?id=com.ruanmei.ithome.hosnext) 前沿科技媒体，人气数码社区
 * [要知](https://appgallery.huawei.com/app/detail?id=com.ruanmei.yaozhi.hosnext)
+
+备用
+
 * [快科技](https://appgallery.huawei.com/app/detail?id=com.kkj.news.client)
 * [太平洋科技](https://appgallery.huawei.com/app/detail?id=cn.com.pconline.hm.browser)
 * [36氪](https://appgallery.huawei.com/app/detail?id=com.hm36kr.app)
@@ -504,21 +513,24 @@ not [泰捷视频](https://www.51togic.com/%e6%b3%b0%e6%8d%b7%e8%a7%86%e9%a2%91)
 
 ### 鸿蒙
 
-* [抖音](https://appgallery.huawei.com/app/detail?id=com.ss.hm.ugc.aweme)
-* [快手](https://appgallery.huawei.com/app/detail?id=com.kuaishou.hmapp)
-* [西瓜视频](https://appgallery.huawei.com/app/detail?id=com.ss.hm.article.video)
-* [哔哩哔哩](https://appgallery.huawei.com/app/detail?id=yylx.danmaku.bili)
-* [央视影音](https://appgallery.huawei.com/app/detail?id=com.cctv.cbox)
-* [央视频](https://appgallery.huawei.com/app/detail?id=com.cctv.yangshipin.app.harmonyp)
-* [CCTV 手机电视](https://appgallery.huawei.com/app/detail?id=com.cctv.yctvharmonyos)
-* [腾讯视频](https://appgallery.huawei.com/app/detail?id=com.tencent.videohm)
+1. [抖音](https://appgallery.huawei.com/app/detail?id=com.ss.hm.ugc.aweme)
+1. [西瓜视频](https://appgallery.huawei.com/app/detail?id=com.ss.hm.article.video)
+1. [哔哩哔哩](https://appgallery.huawei.com/app/detail?id=yylx.danmaku.bili)
+1. [央视影音](https://appgallery.huawei.com/app/detail?id=com.cctv.cbox)
+1. [央视频](https://appgallery.huawei.com/app/detail?id=com.cctv.yangshipin.app.harmonyp)
+1. [CCTV 手机电视](https://appgallery.huawei.com/app/detail?id=com.cctv.yctvharmonyos)
+1. [乐视视频](https://appgallery.huawei.com/app/detail?id=com.letv.client.huawei)
+1. [埋堆堆](https://appgallery.huawei.com/app/detail?id=com.tvbc.maiduidui.hmos)
+1. [人人视频](https://appgallery.huawei.com/app/detail?id=com.example.rrsp)
+1. [爱奇艺](https://appgallery.huawei.com/app/detail?id=com.qiyi.video.hmy)
+1. [腾讯视频](https://appgallery.huawei.com/app/detail?id=com.tencent.videohm)
+
+备用
+
 * [优酷视频](https://appgallery.huawei.com/app/detail?id=com.youku.next)
-* [爱奇艺](https://appgallery.huawei.com/app/detail?id=com.qiyi.video.hmy)
-* [乐视视频](https://appgallery.huawei.com/app/detail?id=com.letv.client.huawei)
 * [芒果TV](https://appgallery.huawei.com/app/detail?id=com.mgtv.phone1905)
 * [电影网](https://appgallery.huawei.com/app/detail?id=com.m1905.hmmobilefree)
-* [埋堆堆](https://appgallery.huawei.com/app/detail?id=com.tvbc.maiduidui.hmos)
-* [人人视频](https://appgallery.huawei.com/app/detail?id=com.example.rrsp)
+* [快手](https://appgallery.huawei.com/app/detail?id=com.kuaishou.hmapp)
 
 ## 3 工具【常用】
 
@@ -581,11 +593,13 @@ not
 
 ### 鸿蒙
 
-* [WiFi万能钥匙](https://appgallery.huawei.com/app/detail?id=com.wifi.hm)
-* [奇妙工具箱](https://appgallery.huawei.com/app/detail?id=com.magicalstory.toolbox.huawei)
-* [ES文件浏览器](https://appgallery.huawei.com/app/detail?id=com.estrongs.hm.pop)
-* [QQ同步助手](https://appgallery.huawei.com/app/detail?id=com.tencent.qqpim.hos)
-* [万年历](https://appgallery.huawei.com/app/detail?id=com.youloft.calendar.har)
+1. [WiFi万能钥匙](https://appgallery.huawei.com/app/detail?id=com.wifi.hm)
+1. [奇妙工具箱](https://appgallery.huawei.com/app/detail?id=com.magicalstory.toolbox.huawei)
+1. 一个木函
+1. [ES文件浏览器](https://appgallery.huawei.com/app/detail?id=com.estrongs.hm.pop)
+1. 流舟文件
+1. [QQ同步助手](https://appgallery.huawei.com/app/detail?id=com.tencent.qqpim.hos)
+1. [万年历](https://appgallery.huawei.com/app/detail?id=com.youloft.calendar.har)
 
 ## 4 购物
 
@@ -631,7 +645,7 @@ not
 * [高德地图](https://appgallery.huawei.com/app/detail?id=com.amap.hmapp)
 * [百度地图](https://appgallery.huawei.com/app/detail?id=com.baidu.hmmap)
 * [腾讯地图](https://appgallery.huawei.com/app/detail?id=com.tencent.mapohos)
-* [地图](https://appgallery.huawei.com/app/detail?id=com.huawei.hmos.maps.app)【系统自带】
+* 【系统自带】[地图](https://appgallery.huawei.com/app/detail?id=com.huawei.hmos.maps.app)
 
 ## 6 出行
 
@@ -656,11 +670,14 @@ not
 
 ### 鸿蒙
 
-* [货拉拉](https://appgallery.huawei.com/app/detail?id=com.lalamove.huolala.clienthar)
 * [滴滴出行](https://appgallery.huawei.com/app/detail?id=com.sdu.didi.hmos.psnger)
-* [亿通行](https://appgallery.huawei.com/app/detail?id=com.ruubypay.bjyitongxing)
-* 车来了
 * 掌上公交
+
+备用
+
+* [货拉拉](https://appgallery.huawei.com/app/detail?id=com.lalamove.huolala.clienthar) 搬家用
+* [亿通行](https://appgallery.huawei.com/app/detail?id=com.ruubypay.bjyitongxing) 北京地铁多日票用
+* 车来了 感觉现阶段不如掌上公交好
 
 ## 7 生活服务
 
@@ -700,8 +717,11 @@ not
 ### 鸿蒙
 
 * [美团](https://appgallery.huawei.com/app/detail?id=com.sankuai.hmeituan)
-* [最会买](https://appgallery.huawei.com/app/detail?id=com.ruanmei.zuihuimai.hosnext)
-* [建行生活](https://appgallery.huawei.com/app/detail?id=com.ccb.ccblife.hos)
+* [建行生活](https://appgallery.huawei.com/app/detail?id=com.ccb.ccblife.hos) 单位食堂查餐费用
+* ——————— ฅ՞• •՞ฅ ———————
+* [最会买](https://appgallery.huawei.com/app/detail?id=com.ruanmei.zuihuimai.hosnext) IT 之家用多的后遗症
+* 什么值得买
+* 慢慢买
 
 ## 8 美食类
 
@@ -709,13 +729,15 @@ not
 
 ### 鸿蒙
 
-* [德克士](https://appgallery.huawei.com/app/detail?id=com.dicos.hoprod)
-* [肯德基](https://appgallery.huawei.com/app/detail?id=com.yumc.kfc.superapp)
-* [麦当劳](https://appgallery.huawei.com/app/detail?id=com.mcdonalds.cma.hm)
-* [蜜雪冰城](https://appgallery.huawei.com/app/detail?id=com.mxbc.mxsa_oh)
-* [库迪咖啡](https://appgallery.huawei.com/app/detail?id=com.cotticoffee.cotticlient.happ)
-* [瑞幸咖啡](https://appgallery.huawei.com/app/detail?id=com.lucky.luckincoffee)
-* [必胜客](https://appgallery.huawei.com/app/detail?id=com.yumc.ph.superapp)
+1. [德克士](https://appgallery.huawei.com/app/detail?id=com.dicos.hoprod)
+1. [肯德基](https://appgallery.huawei.com/app/detail?id=com.yumc.kfc.superapp)
+1. [麦当劳](https://appgallery.huawei.com/app/detail?id=com.mcdonalds.cma.hm)
+1. [蜜雪冰城](https://appgallery.huawei.com/app/detail?id=com.mxbc.mxsa_oh)
+1. [库迪咖啡](https://appgallery.huawei.com/app/detail?id=com.cotticoffee.cotticlient.happ)
+1. [瑞幸咖啡](https://appgallery.huawei.com/app/detail?id=com.lucky.luckincoffee)
+1. [必胜客](https://appgallery.huawei.com/app/detail?id=com.yumc.ph.superapp)
+
+若没有对应 app，则可以考虑支付宝和微信订餐小程序
 
 ## 9 票务类
 
