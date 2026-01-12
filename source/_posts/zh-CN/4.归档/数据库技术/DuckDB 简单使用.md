@@ -71,28 +71,29 @@ COPY (
 ```sql
 -- 1. 创建目标表 t 的表结构。这是删除现有表然后创建新表的简写形式。
 CREATE OR REPLACE TABLE t (
-    序号 INTEGER NOT NULL,
-    标段编号 VARCHAR PRIMARY KEY,
-    中标人 VARCHAR,
-    是否常德企业 VARCHAR,
-    项目状态 VARCHAR NOT NULL,
+    -- 序号 INTEGER NOT NULL, --A
+    标段编号 VARCHAR PRIMARY KEY, --B
+    -- 中标人 VARCHAR, --C
+    -- 是否常德企业 VARCHAR, --D
+    项目状态 VARCHAR NOT NULL, --E
 
-    保证金 INTEGER,
-    保证金数量 INTEGER,
-    保函数量 INTEGER,
-    保证金总额 INTEGER,
-    保函总额 INTEGER,
+    保证金 INTEGER, --F
+    保证金数量 INTEGER,--G
+    保函数量 INTEGER, --H
+    -- 保证金总额 INTEGER, --I
+    -- 保函总额 INTEGER, --J
 
-    投资主体性质 VARCHAR NOT NULL,
-    交易类别 VARCHAR NOT NULL,
-    开标开始时间 DATE,
-    标段包名称 VARCHAR NOT NULL
+    投资主体性质 VARCHAR NOT NULL, --K
+    所在辖区 VARCHAR, --L
+    交易类别 VARCHAR NOT NULL, --M
+    -- 开标开始时间 DATE, --N
+    -- 标段包名称 VARCHAR NOT NULL --O
 );
 
 -- 2. 先把原始 Excel 读成“裸文本”临时表，避免重复解析
-CREATE TEMP TABLE raw_excel AS (
-    SELECT * FROM read_xlsx('D:/download/机器管手工台账26.1.9.xlsx',
-                            range := 'A:N',
+CREATE OR REPLACE TEMP TABLE raw_excel AS (
+    SELECT * FROM read_xlsx('C:\Users\kk\Desktop\机器管手工台账26.1.12.xlsx',
+                            range := 'B:M',
                             header := false,
                             stop_at_empty := true)
     OFFSET 2
@@ -100,18 +101,17 @@ CREATE TEMP TABLE raw_excel AS (
 
 -- 3. 一次性转换并插入。其中做了部分 字符串 到 integer 的转换、字符串 到 date 类型的转换
 INSERT INTO t
-    SELECT  A, B, C, D, E,
-            F, G, H, I, J,
-            K, L,
+    SELECT  B, E,
+            F, G, H,
+            K, L, M
             -- 把 Excel 序列号转日期，纯算术比 excel_text() 快
-            DATE '1899-12-30' + M::INTEGER,
-            N
+            -- DATE '1899-12-30' + N::INTEGER
     FROM raw_excel;
 
 -- 4. 临时表用完自动回收，也可手动
 DROP TABLE IF EXISTS raw_excel;
 
--- 5. 导出为 xlsx 文件
+-- 5. 【可选】导出为 xlsx 文件
 load excel; -- 在 dbeaver 中貌似需要手动加载一次
 COPY t TO 'C:\Users\zhangsan\Desktop\t_export.xlsx' WITH (FORMAT xlsx, HEADER true);
 -- 当然我们也可以导出指定列
@@ -124,6 +124,7 @@ CREATE OR REPLACE TEMP TABLE raw_csv AS (
     SELECT *
     FROM read_csv('/Users/kk/Desktop/“机器管招投标”项目统计表（已挂网项目）.csv',
       skip = 1,
+      -- encoding = 'gb18030', --指定CSV 文件使用的编码，默认为 utf-8
       header := true
     )
 );
@@ -158,8 +159,8 @@ CREATE OR REPLACE TABLE c AS
     开标结束时间,
     评标开始时间,
     评标结束时间,
-    评委数量,
-    评标办法,
+    --评委数量,
+    --评标办法,
 
     --公告发布责任人,
     --公告发布责任人联系方式,
@@ -175,9 +176,9 @@ CREATE OR REPLACE TABLE c AS
 
     --企业性质,
     "中标价格(元)",
-    是否签订合同,
-    合同签订时间,
-    第一中标候选人,
+    --是否签订合同,
+    --合同签订时间,
+    --第一中标候选人,
 
     --第二中标候选人,
     --第三中标候选人,
@@ -202,49 +203,47 @@ CREATE OR REPLACE TABLE c AS
 --select count(*) from t;
 
 -- 导出目标数据
--- 第一步：定义筛选后的左表 CTE（可复用）
-WITH c_filtered AS (
-    SELECT * 
-    FROM c 
-    WHERE 
-        c.是否复评 = '否'
+COPY (
+	SELECT
+	 	ROW_NUMBER() OVER () AS 序号,  -- A 列：生成 1,2,3...
+	    t.投资主体性质,
+	    '' AS 招标监管部门,
+	    '建设工程' AS 项目交易分类,
+	    (c_filtered."投资预算(万元)" - c_filtered."中标价格(元)" / 10000) AS 节支额（万元）,
+	    
+	    c_filtered.中标人 AS 拟中标单位,
+	    '网银转账,电子保函' AS 保证金递交方式,
+	    c_filtered.代理机构名称,
+	    t.交易类别,
+	    c_filtered.开标开始时间::Date AS 开标日期,
+	    
+	    t.所在辖区, -- K 列
+	    '公开招标' AS 招标方式,
+	    c_filtered.项目分类 AS 项目行业分类,
+	    c_filtered."投资预算(万元)" AS 投资预算（万元）,
+	    c_filtered.项目名称,
+	    
+	    c_filtered."中标价格(元)" / 10000 AS 中标价格（万元）, -- P 列
+	    c_filtered.中标结果公示发布时间::Date AS 中标公告发布时间,
+	    '是' AS 是否电子标,
+	    t.保证金 as '保证金（元）',
+	    c_filtered.标段包名称 AS 标段名称,
+	    
+	    c_filtered.招标人名称, -- U 列
+	    t.项目状态,
+	    t.保证金数量 AS 保证金,
+	    t.保函数量 AS 保函,
+	    t.保函数量 * t.保证金 AS 保函总额（元）,
+	    
+	    t.保证金数量 * t.保证金 AS 保证金总额（元）-- Z列
+    FROM (
+        -- 第一步：筛选左表（核心：只保留需要的行）
+        SELECT * FROM c WHERE c.是否复评 = '否'  -- 核心筛选条件
+    ) AS c_filtered  -- 筛选后的左表子集
+	LEFT OUTER JOIN t 
+	    ON c_filtered.标段编号 = t.标段编号
 )
--- 第二步：用 CTE 做左外连接
-SELECT
- 	ROW_NUMBER() OVER () AS 序号,  -- 生成 1,2,3...
-    t.投资主体性质,
-    '' AS 招标监管部门,
-    '建设工程' AS 项目交易分类,
-    '' AS 节支额（万元）,
-    
-    '' AS 拟中标单位,
-    '' AS 保证金递交方式,
-    '' AS 代理机构名称,
-    '工程' AS 交易类别,
-    '' AS 开标日期,
-    
-    '' AS 所在辖区,
-    '' AS 招标方式,
-    '' AS 项目行业分类,
-    '' AS 投资预算（万元）,
-    c_filtered.项目名称,
-    
-    '' AS 中标价格（万元）,
-    '' AS 中标公告发布时间,
-    '是' AS 是否电子标,
-    t.保证金 as '保证金（元）',
-    c_filtered.标段包名称 AS 标段名称,
-    
-    c_filtered.招标人名称,
-    t.项目状态,
-    t.保证金数量 AS 保证金,
-    t.保函数量 AS 保函,
-    t.保函总额,
-    
-    t.保证金总额
-FROM c_filtered
-LEFT OUTER JOIN t 
-    ON c_filtered.标段编号 = t.标段编号;
+TO 'C:\Users\zhangsan\Desktop\t_export.xlsx' WITH (FORMAT xlsx, HEADER true);
 ```
 
 ## 参考
