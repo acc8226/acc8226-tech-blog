@@ -92,7 +92,7 @@ CREATE OR REPLACE TABLE t (
 
 -- 2. 先把原始 Excel 读成“裸文本”临时表，避免重复解析
 CREATE OR REPLACE TEMP TABLE raw_excel AS (
-    SELECT * FROM read_xlsx('C:\Users\kk\Desktop\机器管手工台账26.1.12.xlsx',
+    SELECT * FROM read_xlsx('C:\Users\kk\Desktop\手工台账.xlsx',
                             range := 'B:M',
                             header := false,
                             stop_at_empty := true)
@@ -122,7 +122,7 @@ COPY (select 项目状态 from t limit 20) TO 'C:\Users\zhangsan\Desktop\t_expor
 -- 1. 新建临时表 raw_csv
 CREATE OR REPLACE TEMP TABLE raw_csv AS (
     SELECT *
-    FROM read_csv('/Users/kk/Desktop/“机器管招投标”项目统计表（已挂网项目）.csv',
+    FROM read_csv('/Users/kk/Desktop/项目统计表.csv',
       skip = 1,
       -- encoding = 'gb18030', --指定CSV 文件使用的编码，默认为 utf-8
       header := true
@@ -248,5 +248,5 @@ TO 'C:\Users\zhangsan\Desktop\t_export.xlsx' WITH (FORMAT xlsx, HEADER true);
 
 ## 参考
 
-[中文官网](https://duckdb.net.cn)
-[DuckDB](https://duckdb.org) – An in-process SQL OLAP database management system
+* [中文官网](https://duckdb.net.cn)
+* [DuckDB](https://duckdb.org) – An in-process SQL OLAP database management system
