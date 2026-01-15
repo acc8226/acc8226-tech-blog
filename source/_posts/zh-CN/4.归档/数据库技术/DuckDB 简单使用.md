@@ -55,7 +55,7 @@ SELECT * FROM read_xlsx('D:\download\统计.xlsx', sheet = 'Sheet1',header = tru
 ## 综合应用
 
 ```sql
--- 整表导出
+-- 整表导出为 csv
 COPY my_table1 TO 'C:/Users/zhangsan/Desktop/b_out.csv' (FORMAT CSV, HEADER);
 
 -- 只导出满足条件行
@@ -64,6 +64,10 @@ COPY (
     FROM my_table1
     WHERE price > 20
 ) TO 'C:/Users/zhangsan/Desktop/b_out.csv' (FORMAT CSV, HEADER);
+
+-- 导出为 excel
+load excel; -- 在 dbeaver 中貌似需要手动加载一次
+COPY my_table1 TO 'C:\Users\zhangsan\Desktop\t_export.xlsx' WITH (FORMAT xlsx, HEADER true);
 ```
 
 ## 综合案例
@@ -71,29 +75,26 @@ COPY (
 ```sql
 -- 1. 创建目标表 t 的表结构。这是删除现有表然后创建新表的简写形式。
 CREATE OR REPLACE TABLE t (
-    -- 序号 INTEGER NOT NULL, --A
-    标段编号 VARCHAR PRIMARY KEY, --B
-    -- 中标人 VARCHAR, --C
-    -- 是否常德企业 VARCHAR, --D
-    项目状态 VARCHAR NOT NULL, --E
+    -- 序号 INTEGER NOT NULL, --A 0
+    标段编号 VARCHAR PRIMARY KEY, --B 1
+    -- 中标人 VARCHAR, --C 2
+    -- 是否常德企业 VARCHAR, --D 3
+    项目状态 VARCHAR NOT NULL, --E 4
 
-    保证金 INTEGER, --F
-    保证金数量 INTEGER,--G
-    保函数量 INTEGER, --H
-    -- 保证金总额 INTEGER, --I
-    -- 保函总额 INTEGER, --J
+    保证金 INTEGER, --F 5
+    保证金数量 INTEGER,--G 6
+    保函数量 INTEGER, --H 7
+    投资主体性质 VARCHAR NOT NULL, --I 8
 
-    投资主体性质 VARCHAR NOT NULL, --K
-    所在辖区 VARCHAR, --L
-    交易类别 VARCHAR NOT NULL, --M
+    所在辖区 VARCHAR, --J 9
+    交易类别 VARCHAR NOT NULL, --K 10
     -- 开标开始时间 DATE, --N
-    -- 标段包名称 VARCHAR NOT NULL --O
 );
 
 -- 2. 先把原始 Excel 读成“裸文本”临时表，避免重复解析
 CREATE OR REPLACE TEMP TABLE raw_excel AS (
     SELECT * FROM read_xlsx('C:\Users\kk\Desktop\手工台账.xlsx',
-                            range := 'B:M',
+                            range := 'B:K',
                             header := false,
                             stop_at_empty := true)
     OFFSET 2
@@ -103,28 +104,22 @@ CREATE OR REPLACE TEMP TABLE raw_excel AS (
 INSERT INTO t
     SELECT  B, E,
             F, G, H,
-            K, L, M
+            I, J, K
             -- 把 Excel 序列号转日期，纯算术比 excel_text() 快
             -- DATE '1899-12-30' + N::INTEGER
     FROM raw_excel;
 
 -- 4. 临时表用完自动回收，也可手动
 DROP TABLE IF EXISTS raw_excel;
-
--- 5. 【可选】导出为 xlsx 文件
-load excel; -- 在 dbeaver 中貌似需要手动加载一次
-COPY t TO 'C:\Users\zhangsan\Desktop\t_export.xlsx' WITH (FORMAT xlsx, HEADER true);
--- 当然我们也可以导出指定列
-COPY (select 项目状态 from t limit 20) TO 'C:\Users\zhangsan\Desktop\t_export.xlsx' WITH (FORMAT xlsx, HEADER true);
 ```
 
 ```sql
--- 1. 新建临时表 raw_csv
+-- 1. 新建临时表 raw_csv。如果是 xls 则不识别，必须先转成 csv 文件或者 xlsx 文件，这里转成了 csv 文件
 CREATE OR REPLACE TEMP TABLE raw_csv AS (
     SELECT *
-    FROM read_csv('/Users/kk/Desktop/项目统计表.csv',
+    FROM read_csv('/Users/kk/Desktop/项目统计表（已挂网项目）.csv',
       skip = 1,
-      -- encoding = 'gb18030', --指定CSV 文件使用的编码，默认为 utf-8
+      -- encoding = 'gb18030', --若报错则需要指定 CSV 文件使用的编码，默认为 utf-8
       header := true
     )
 );
@@ -134,7 +129,7 @@ CREATE OR REPLACE TABLE c AS
     SELECT
     --序号,
     --统一交易编码,
-    招标年度,
+    --招标年度,
     --投资项目统一代码,
     --项目编号,
 
@@ -151,9 +146,10 @@ CREATE OR REPLACE TABLE c AS
     "最高投标限价(万元)", --控制价
 
     "投资预算(万元)",
-    招标文件发售开始时间,
-    招标文件发售截止时间,
-    招标文件递交截止时间,
+    招标（资格预审）公告发布时间,
+    --招标文件发售开始时间,
+    --招标文件发售截止时间,
+    --招标文件递交截止时间,
     开标开始时间,
 
     开标结束时间,
@@ -172,7 +168,7 @@ CREATE OR REPLACE TABLE c AS
     中标结果公示发布时间,
     中标人,
     --中标人统一社会信用代码,
-    省份,
+    --省份,
 
     --企业性质,
     "中标价格(元)",
@@ -199,13 +195,11 @@ CREATE OR REPLACE TABLE c AS
     招标异常
     FROM raw_csv;
 
---select count(*) from c;
---select count(*) from t;
-
 -- 导出目标数据
 COPY (
 	SELECT
-	 	ROW_NUMBER() OVER () AS 序号,  -- A 列：生成 1,2,3...
+	 	ROW_NUMBER() OVER (ORDER BY 招标（资格预审）公告发布时间,
+                              t.标段编号) AS 序号,  -- A 列：生成 1,2,3...
 	    t.投资主体性质,
 	    '' AS 招标监管部门,
 	    '建设工程' AS 项目交易分类,
@@ -235,15 +229,17 @@ COPY (
 	    t.保函数量 AS 保函,
 	    t.保函数量 * t.保证金 AS 保函总额（元）,
 	    
-	    t.保证金数量 * t.保证金 AS 保证金总额（元）-- Z列
+	    t.保证金数量 * t.保证金 AS 保证金总额（元）, -- Z列
     FROM (
         -- 第一步：筛选左表（核心：只保留需要的行）
         SELECT * FROM c WHERE c.是否复评 = '否'  -- 核心筛选条件
     ) AS c_filtered  -- 筛选后的左表子集
 	LEFT OUTER JOIN t 
 	    ON c_filtered.标段编号 = t.标段编号
+--	    ORDER BY 招标（资格预审）公告发布时间,t.标段编号
 )
-TO 'C:\Users\zhangsan\Desktop\t_export.xlsx' WITH (FORMAT xlsx, HEADER true);
+-- TO 'C:\Users\kai\Desktop\merged.csv' WITH (FORMAT csv); -- 导出为 merged.csv
+TO 'C:\Users\kai\Desktop\merged.xlsx' WITH (FORMAT xlsx, HEADER true); -- 导出为 merged.xlsx
 ```
 
 ## 参考
