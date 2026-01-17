@@ -8,7 +8,7 @@ categories:
 tags: python
 ---
 
-## flask 是什么
+## Flask 是什么
 
 Flask 是一个用 Python 编写的轻量级 Web 应用框架。
 
