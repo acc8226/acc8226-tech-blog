@@ -58,5 +58,3 @@ tags: js
     </body>
 </html>
 ```
-
-<!-- more -->

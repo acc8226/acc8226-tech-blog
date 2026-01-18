@@ -18,5 +18,4 @@ Apache Commons Lang 包括一系列工具类，有字符串相关的、时间处
 
 ## 参考
 
-Apache Commons – Apache Commons
-<https://commons.apache.org/>
+[Apache Commons](https://commons.apache.org) – Apache Commons

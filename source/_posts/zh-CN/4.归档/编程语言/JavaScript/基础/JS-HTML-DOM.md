@@ -141,7 +141,7 @@ addEventListener() 方法添加的事件句柄不会覆盖已存在的事件句�
 语法
 
 ```js
- element.addEventListener(event, function, useCapture);
+element.addEventListener(event, function, useCapture);
 ```
 
 第一个参数是事件的类型 (如 "click" 或 "mousedown").

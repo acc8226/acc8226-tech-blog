@@ -13,5 +13,3 @@ tags:
 
 Apache Shiro | Simple. Java. Security.
 <https://shiro.apache.org/index.html>
-
-<!-- more -->

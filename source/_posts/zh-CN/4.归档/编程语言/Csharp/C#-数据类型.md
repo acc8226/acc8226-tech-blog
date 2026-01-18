@@ -25,8 +25,7 @@ tags: csharp
 ```cs
 using System;
 
-namespace DataTypeApplication
-{
+namespace DataTypeApplication {
    class Program
    {
       static void Main(string[] args)

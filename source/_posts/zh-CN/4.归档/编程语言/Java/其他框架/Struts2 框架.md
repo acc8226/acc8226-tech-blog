@@ -32,15 +32,11 @@ Struts2 的体系结构大致如下图所示：
 
 下面列举 Struts2 的一些主要优点。
 
-Struts2 是非侵入式设计，即不依赖于 Servlet API 和 Struts API.
-
-Struts2 提供了强大的拦截器，利用拦截器可以进行 AOP 编程（面向切面的编程），实现如权限拦截等功能。
-
-Struts2 提供了类型转换器，可以很方便地进行类型转换，例如将特殊的请求参数转换成需要的类型。
-
-Struts2 支持多种表现层技术，如 JSP、FreeMarker、Velocity 等。
-
-Struts2 的输入验证可以对指定的方法进行验证。
+* Struts2 是非侵入式设计，即不依赖于 Servlet API 和 Struts API.
+* Struts2 提供了强大的拦截器，利用拦截器可以进行 AOP 编程（面向切面的编程），实现如权限拦截等功能。
+* Struts2 提供了类型转换器，可以很方便地进行类型转换，例如将特殊的请求参数转换成需要的类型。
+* Struts2 支持多种表现层技术，如 JSP、FreeMarker、Velocity 等。
+* Struts2 的输入验证可以对指定的方法进行验证。
 
 项目架构
 

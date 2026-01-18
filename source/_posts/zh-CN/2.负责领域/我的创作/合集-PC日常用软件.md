@@ -76,22 +76,18 @@ categories: 我的创作
 
 #### 1.1.5下载
 
-**windows 平台**
+* **windows 平台**
+  * [Motrix](https://motrix.app/zh-CN) | [下载页](https://motrix.app/zh-CN/download) 颜值高，并支持下载 HTTP、FTP、BT、磁力链接。Github 资源良好支持
+  * [Neat Download Manager](https://www.neatdownloadmanager.com/index.php/en) 体积小功能强，不支持 BT 磁力。[搭配 crx 插件](https://www.crxsoso.com/search?keyword=NeatDownloadManager%20&store=chrome) 支持在线网页视频下载
+  * 哔哩哔哩专用下载器：【win】[Bilidown-哔哩视频下载](https://www.bilibili.com/opus/1024566076286959656) |【win】[DownKyi](https://www.colostar.cn/links/13486.html)（哔哩下载姬）
 
-* [Motrix](https://motrix.app/zh-CN) | [下载页](https://motrix.app/zh-CN/download) 颜值高，并支持下载 HTTP、FTP、BT、磁力链接。Github 资源良好支持
-* [Neat Download Manager](https://www.neatdownloadmanager.com/index.php/en) 体积小功能强，不支持 BT 磁力。[搭配 crx 插件](https://www.crxsoso.com/search?keyword=NeatDownloadManager%20&store=chrome) 支持在线网页视频下载
-* 哔哩哔哩专用下载器：【win】[Bilidown-哔哩视频下载](https://www.bilibili.com/opus/1024566076286959656) |【win】[DownKyi](https://www.colostar.cn/links/13486.html)（哔哩下载姬）
-
-**mac 平台**
-
-1. [Motrix](https://motrix.app/zh-CN) | [下载页](https://motrix.app/zh-CN/download)
-1. [Neat Download Manager](https://www.neatdownloadmanager.com/index.php/en) 
-1. mac 版迅雷其实也不错，不过必须去官网下载才是完整版
-
-**linux 平台**
-
-1. 【全平台】[Motrix](https://motrix.app/zh-CN)
-1. 【linux win】[XDM](https://github.com/subhra74/xdm/releases) 可以认为是 linux 环境下的 idm
+* **mac 平台**
+  1. [Motrix](https://motrix.app/zh-CN) | [下载页](https://motrix.app/zh-CN/download)
+  1. [Neat Download Manager](https://www.neatdownloadmanager.com/index.php/en) 
+  1. mac 版迅雷其实也不错，不过必须去官网下载才是完整版
+* **linux 平台**
+  1. 【全平台】[Motrix](https://motrix.app/zh-CN)
+  1. 【linux win】[XDM](https://github.com/subhra74/xdm/releases) 可以认为是 linux 环境下的 idm
 
 #### 1.1.6 网盘
 
