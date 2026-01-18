@@ -5,32 +5,19 @@ updated: 2023-01-03 20:32:00
 categories: 文档规约
 ---
 
-This style guide is different from other you may see, because the focus is
-centered on readability for print and the web. We created this style guide to
-keep the code in our tutorials consistent.
+This style guide is different from other you may see, because the focus is centered on readability for print and the web. We created this style guide to keep the code in our tutorials consistent.
 
 Our overarching goals are __conciseness__, __readability__ and __simplicity__.
 
-You should also check out out [Swift](https://github.com/raywenderlich/swift-style-guide)
-and [Objective-C](https://github.com/raywenderlich/objective-c-style-guide)
-style guides too.
+You should also check out out [Swift](https://github.com/raywenderlich/swift-style-guide) and [Objective-C](https://github.com/raywenderlich/objective-c-style-guide) style guides too.
 
 ## Inspiration
 
-This style-guide is somewhat of a mash-up between the existing Java language
-style guides, and a tutorial-readability focused Swift style-guide. The language
-guidance is drawn from the
-[Android contributors style guide](https://source.android.com/source/code-style.html)
-and the
-[Google Java Style Guide](https://google-styleguide.googlecode.com/svn/trunk/javaguide.html).
-Alterations to support additional readability in tutorials were inspired by the
-[raywenderlich.com Swift style guide](https://github.com/raywenderlich/swift-style-guide).
+This style-guide is somewhat of a mash-up between the existing Java language style guides, and a tutorial-readability focused Swift style-guide. The language guidance is drawn from the [Android contributors style guide](https://source.android.com/source/code-style.html) and the [Google Java Style Guide](https://google-styleguide.googlecode.com/svn/trunk/javaguide.html).Alterations to support additional readability in tutorials were inspired by the [raywenderlich.com Swift style guide](https://github.com/raywenderlich/swift-style-guide).
 
 ## Android Studio Coding Style
 
-It is possible to get Android Studio to adhere to these style guidelines, via
-a rather complex sequence of menus. To make it easier, we've provided a coding
-style that can be imported into Android Studio.
+It is possible to get Android Studio to adhere to these style guidelines, via a rather complex sequence of menus. To make it easier, we've provided a coding style that can be imported into Android Studio.
 
 First, clone this repository and run `install.sh`.
 
@@ -76,7 +63,6 @@ From now on, projects you create _should_ follow the correct style guidelines.
 - [Copyright Statement](#copyright-statement)
 - [Smiley Face](#smiley-face)
 - [Credit](#credits)
-
 
 ## Nomenclature
 

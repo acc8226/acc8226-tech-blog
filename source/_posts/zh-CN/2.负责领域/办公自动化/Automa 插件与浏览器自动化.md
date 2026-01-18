@@ -12,21 +12,13 @@ Automa 目前仅支持 Google Chrome 和 Firefox。<!-- more -->
 
 ## 功能
 
-日期格式化
+日期格式化 `{{ $date("YYYY-MM-DD HH_mm_ss") }}`
 
-`{{ $date("YYYY-MM-DD HH_mm_ss") }}`
+时间戳 `{{ $date("timestamp") }}`
 
-时间戳
+包含头和尾 `{{ $randint(0, 2) }}`
 
-`{{ $date("timestamp") }}`
-
-包含头和尾
-
-`{{ $randint(0, 2) }}`
-
-取出全局数据中的第 2 个元素
-
-`{{ $getvariables.$$heiha.hobbies.2 }}`
+取出全局数据中的第 2 个元素 `{{ $getvariables.$$heiha.hobbies.2 }}`
 
 ## 参考
 

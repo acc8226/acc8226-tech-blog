@@ -69,7 +69,3 @@ select get_shard_id_for_distribution_column('users', 'hi@test.com');
 行到分片的映射是纯逻辑性的。 分片必须分配给特定工作器节点进行存储，这在 citus 中称为“分片放置”。
 
 可在 pg_dist_placement 中查看分片放置。 将其与我们已看到的其他元数据表联接，可显示每个分片的所在位置。
-
-
-
-

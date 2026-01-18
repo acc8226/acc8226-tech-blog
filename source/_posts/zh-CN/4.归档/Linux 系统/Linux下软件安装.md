@@ -18,7 +18,7 @@ categories: linux
 比如我们想安装一个软件，名字叫做 w3m(w3m 是一个命令行的简易网页浏览器)，那么输入如下命令：
 
 ```sh
-sudo apt-get install w3m
+sudo apt install w3m
 ```
 
 APT 是 Advance Packaging Tool（高级包装工具）的缩写，是 Debian 及其派生发行版的软件包管理器，APT 可以自动下载，配置，安装二进制或者源代码格式的软件包，因此简化了 Unix 系统上管理软件的过程。APT 最早被设计成 dpkg 的前端，用来处理 deb 格式的软件包。现在经过 APT-RPM 组织修改，APT 已经可以安装在支持 RPM 的系统管理 RPM 包。这个包管理器包含以 apt- 开头的多个工具，如 apt-get apt-cache apt-cdrom 等，在 Debian 系列的发行版中使用。

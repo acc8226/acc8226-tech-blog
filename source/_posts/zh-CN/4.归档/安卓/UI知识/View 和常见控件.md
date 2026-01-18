@@ -70,11 +70,11 @@ EditText 主题一般会自带背景,如果需要去掉的话, android:backgroun
 
 Android Button 默认样式高度问题, 去掉可用`android:minHeight="0px"`
 
-### 代码设置textview 字体颜色
+### 代码设置 textview 字体颜色
 
 ```java
 setTextColor(0xFF0000FF);
-//0xFF0000FF 是 int 类型的数据，分组一下 0x|FF|0000FF，0x 是代表颜色整 数的标记，ff是表示透明度，0000FF表示颜色，注意：这里 0xFF0000FF 必须是8个的颜色表示，不接受 0000FF 这种 6 个的颜色表示。
+//0xFF0000FF 是 int 类型的数据，分组一下 0x|FF|0000FF，0x 是代表颜色整 数的标记，ff 是表示透明度，0000FF 表示颜色，注意：这里 0xFF0000FF 必须是8个的颜色表示，不接受 0000FF 这种 6 个的颜色表示。
 setTextColor(Color.rgb(255, 255, 255));
 setTextColor(Color.parseColor("#FFFFFF"));
 //还有就是使用资源文件进行设置
@@ -94,11 +94,11 @@ setTextColor(android.graphics.Color.BLUE);
 
 工作上碰到需要从 xml 中读取尺寸的问题。发现 getResources()下有3个获取方法。
 
-* getDimension()方法，返回类型是float，他是没有做任何处理的数值。
-* getDimensionPixelOffset()，返回类型int，他会把计算结果直接强转成int型。
+* getDimension()方法，返回类型是 float，他是没有做任何处理的数值。
+* getDimensionPixelOffset()，返回类型 int，他会把计算结果直接强转成int型。
 * getDimensionPixelSize()，返回类型 int，他会把计算结果四舍五入。
 
-举个例子就很好明白了，如果getDimension()方法得到的数值是44.5，那么getDimensionPixelOffset()得到的就是44，getDimensionPixelSize()就是45.
+举个例子就很好明白了，如果getDimension()方法得到的数值是 44.5，那么getDimensionPixelOffset()得到的就是 44，getDimensionPixelSize()就是45。
 
 ## [android中getWidth()和getMeasuredWidth()之间的区别](https://www.cnblogs.com/summerpxy/p/4983600.html)
 

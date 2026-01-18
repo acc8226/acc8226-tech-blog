@@ -13,12 +13,12 @@ comments: false
 - - -
 
 * 邮箱：[acc8226@qq.com](mailto:acc8226@qq.com)
-* 软件工程（本科）
-* 曾经安卓移动应用开发、后端 Java 应用开发
+* 软件工程专业
+* 曾经安卓移动应用开发、后端 Java 后台系统开发
 
 - - -
 
-开源：[捷键 for windows](http://blog.feipig.fun/jiejian) 一款实用的 Windows 键鼠增强工具
+开源作品：[捷键 for windows](http://blog.feipig.fun/jiejian) 一款 Windows 键鼠效率增强工具
 
 - - -
 

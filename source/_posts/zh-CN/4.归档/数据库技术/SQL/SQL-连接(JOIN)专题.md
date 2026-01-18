@@ -83,12 +83,12 @@ MariaDB [test]> SELECT * FROM websites;
 +----+---------------+---------------------------+-------+---------+
 | id | name          | url                       | alexa | country |
 +----+---------------+---------------------------+-------+---------+
-|  1 | Google        | https://www.google.cm/    |     1 | USA     |
-|  2 | 淘宝          | https://www.taobao.com/   |    13 | CN      |
-|  3 | 菜鸟学习网    | http://www.runoob.com/    |  5000 | CN      |
-|  4 | 微博          | http://weibo.com/         |    20 | CN      |
+|  1 | Google | https://www.google.cm/    |     1 | USA     |
+|  2 | 淘宝 | https://www.taobao.com/   |    13 | CN      |
+|  3 | 菜鸟学习网 | http://www.runoob.com/    |  5000 | CN      |
+|  4 | 微博 | http://weibo.com/         |    20 | CN      |
 |  5 | Facebook      | https://www.facebook.com/ |     3 | USA     |
-|  6 | 百度          | https://www.baidu.com/    |     4 | CN      |
+|  6 | 百度 | https://www.baidu.com/    |     4 | CN      |
 |  7 | stackoverflow | http://stackoverflow.com/ |     0 | IND     |
 +----+---------------+---------------------------+-------+---------+
 7 rows in set (0.003 sec)
@@ -98,15 +98,15 @@ MariaDB [test]> SELECT * FROM access_log;
 +-----+---------+-------+------------+
 | aid | site_id | count | date       |
 +-----+---------+-------+------------+
-|   1 |       1 |    45 | 2016-05-10 |
-|   2 |       3 |   100 | 2016-05-13 |
-|   3 |       1 |   230 | 2016-05-14 |
-|   4 |       2 |    10 | 2016-05-14 |
-|   5 |       5 |   205 | 2016-05-14 |
-|   6 |       4 |    13 | 2016-05-15 |
-|   7 |       3 |   220 | 2016-05-15 |
-|   8 |       5 |   545 | 2016-05-16 |
-|   9 |       3 |   201 | 2016-05-17 |
+|   1 | 1 |    45 | 2016-05-10 |
+|   2 | 3 |   100 | 2016-05-13 |
+|   3 | 1 |   230 | 2016-05-14 |
+|   4 | 2 |    10 | 2016-05-14 |
+|   5 | 5 |   205 | 2016-05-14 |
+|   6 | 4 |    13 | 2016-05-15 |
+|   7 | 3 |   220 | 2016-05-15 |
+|   8 | 5 |   545 | 2016-05-16 |
+|   9 | 3 |   201 | 2016-05-17 |
 +-----+---------+-------+------------+
 9 rows in set (0.002 sec)
 ```
@@ -149,16 +149,16 @@ MariaDB [test]> SELECT Websites.name, access_log.count, access_log.date
     -> INNER JOIN access_log
     -> ON Websites.id=access_log.site_id;
 +------------+-------+------------+
-| name       | count | date       |
+| name | count | date       |
 +------------+-------+------------+
-| Google     |    45 | 2016-05-10 |
+| Google |    45 | 2016-05-10 |
 | 菜鸟学习网 |   100 | 2016-05-13 |
-| Google     |   230 | 2016-05-14 |
-| 淘宝       |    10 | 2016-05-14 |
-| Facebook   |   205 | 2016-05-14 |
-| 微博       |    13 | 2016-05-15 |
+| Google | 230 | 2016-05-14 |
+| 淘宝 | 10 | 2016-05-14 |
+| Facebook |   205 | 2016-05-14 |
+| 微博 | 13 | 2016-05-15 |
 | 菜鸟学习网 |   220 | 2016-05-15 |
-| Facebook   |   545 | 2016-05-16 |
+| Facebook | 545 | 2016-05-16 |
 | 菜鸟学习网 |   201 | 2016-05-17 |
 +------------+-------+------------+
 9 rows in set (0.002 sec)
@@ -198,16 +198,16 @@ MariaDB [test]> SELECT Websites.name, access_log.count, access_log.date
 +---------------+-------+------------+
 | name          | count | date       |
 +---------------+-------+------------+
-| Google        |    45 | 2016-05-10 |
-| 菜鸟学习网    |   100 | 2016-05-13 |
-| Google        |   230 | 2016-05-14 |
-| 淘宝          |    10 | 2016-05-14 |
-| Facebook      |   205 | 2016-05-14 |
-| 微博          |    13 | 2016-05-15 |
-| 菜鸟学习网    |   220 | 2016-05-15 |
-| Facebook      |   545 | 2016-05-16 |
-| 菜鸟学习网    |   201 | 2016-05-17 |
-| 百度          |  NULL | NULL       |
+| Google |    45 | 2016-05-10 |
+| 菜鸟学习网 |   100 | 2016-05-13 |
+| Google |   230 | 2016-05-14 |
+| 淘宝 |    10 | 2016-05-14 |
+| Facebook |   205 | 2016-05-14 |
+| 微博 |    13 | 2016-05-15 |
+| 菜鸟学习网 |   220 | 2016-05-15 |
+| Facebook |   545 | 2016-05-16 |
+| 菜鸟学习网 |   201 | 2016-05-17 |
+| 百度 |  NULL | NULL       |
 | stackoverflow |  NULL | NULL       |
 +---------------+-------+------------+
 11 rows in set (0.002 sec)
@@ -243,18 +243,18 @@ MariaDB [test]> SELECT Websites.name, access_log.count, access_log.date
     -> RIGHT JOIN  websites
     -> ON Websites.id=access_log.site_id;
 +---------------+-------+------------+
-| name          | count | date       |
+| name | count | date       |
 +---------------+-------+------------+
-| Google        |    45 | 2016-05-10 |
+| Google |    45 | 2016-05-10 |
 | 菜鸟学习网    |   100 | 2016-05-13 |
 | Google        |   230 | 2016-05-14 |
 | 淘宝          |    10 | 2016-05-14 |
 | Facebook      |   205 | 2016-05-14 |
-| 微博          |    13 | 2016-05-15 |
+| 微博 |    13 | 2016-05-15 |
 | 菜鸟学习网    |   220 | 2016-05-15 |
-| Facebook      |   545 | 2016-05-16 |
+| Facebook |   545 | 2016-05-16 |
 | 菜鸟学习网    |   201 | 2016-05-17 |
-| 百度          |  NULL | NULL       |
+| 百度 |  NULL | NULL       |
 | stackoverflow |  NULL | NULL       |
 +---------------+-------+------------+
 11 rows in set (0.002 sec)
@@ -379,7 +379,5 @@ ORDER BY cust_name;
 
 ## 参考
 
-SQL UNION 操作符 | 菜鸟教程
-<https://www.runoob.com/sql/sql-union.html>
-
-SQL必知必会（第5版）-本·福达-微信读书https://weread.qq.com/web/reader/f7632a30720befadf7636bb
+* [SQL UNION 操作符](https://www.runoob.com/sql/sql-union.html) | 菜鸟教程
+* [SQL必知必会（第5版](https://weread.qq.com/web/reader/f7632a30720befadf7636bb)）-本·福达-微信读书

@@ -34,5 +34,4 @@ rabbitmq:3.10-management
 
 ## 使用
 
-RabbitMQ Management 管理页面
-<http://localhost:15672/#/>
+[RabbitMQ Management 管理页面](http://localhost:15672/#/)

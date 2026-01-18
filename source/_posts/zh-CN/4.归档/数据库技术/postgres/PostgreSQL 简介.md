@@ -347,14 +347,30 @@ pgadmin4 在点击备份数据库时，PgAdmin 出现 Utility file not found. Pl
 
 原来是 -h 中的 - 符号用的是中文，改成用英文的就可以了。
 
-## 官方文档
-
 ## 使用语法
 
 CASE WHEN 子查询使用
 
 ```sql
 SELECT CASE WHEN 条件 THEN 结果 ELSE 结果 END 
+```
+
+查看详细信息
+
+```sql
+select version();
+```
+
+查看服务器端版本
+
+```sql
+show server_version;
+```
+
+获取目前支持的标准 PostgreSQL 扩展
+
+```sql
+SELECT * FROM pg_available_extensions;
 ```
 
 ## 增强

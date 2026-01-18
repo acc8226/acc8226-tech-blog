@@ -28,8 +28,8 @@ stages:
           - '# 设置 NPM 源，提升安装速度'
           - npm config set registry https://registry.npmmirror.com
           - '# 执行编译命令'
-          - npm install hexo-cli -g
-          - npm install
+          - npm i hexo-cli -g
+          - npm i
           - hexo clean
           - hexo g
           - git config --global user.name "Gitee-Go"

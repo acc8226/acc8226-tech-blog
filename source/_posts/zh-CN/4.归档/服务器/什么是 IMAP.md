@@ -11,8 +11,7 @@ POP3、IMAP 和 SMTP 是电子邮件系统中使用的三个不同的协议，�
 
 SMTP（Simple Mail Transfer Protocol）：
 用途：用于发送电子邮件。
-特点：当你使用电子邮件客户端（如 Outlook、Thunderbird 等）发送邮件时，SMTP 协议负责将邮件从你的计算机发送到邮件服务器，然后邮件服务器再将邮件发送到收件人的邮箱。
-<!-- more -->
+特点：当你使用电子邮件客户端（如 Outlook、Thunderbird 等）发送邮件时，SMTP 协议负责将邮件从你的计算机发送到邮件服务器，然后邮件服务器再将邮件发送到收件人的邮箱。<!-- more -->
 
 POP3（Post Office Protocol version 3）：
 用途：用于从邮件服务器接收电子邮件。

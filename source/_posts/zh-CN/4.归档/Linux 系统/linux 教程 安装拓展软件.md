@@ -23,9 +23,7 @@ wget -q https://github.com/Aniverse/A/raw/i/a && bash a
 
 yum install -y wget && wget -O install.sh http://dl.wdcp.net/install/install.sh && sh install.sh cus
 
-一般而言须要会安装 LAMP (apache + php + mysql + zend +  pureftpd + phpmyadmin)，所以我不推荐了
-
-<!-- more -->
+一般而言须要会安装 LAMP (apache + php + mysql + zend +  pureftpd + phpmyadmin)，所以我不推荐了<!-- more -->
 
 ### AMH 面板
 

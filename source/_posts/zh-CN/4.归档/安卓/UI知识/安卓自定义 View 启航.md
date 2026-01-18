@@ -17,7 +17,7 @@ tags: Android
 
 我把 3 用[]标出了，所以说 3 不一定是必须的，当然了大部分情况下还是需要重写的。
 
-1. 自定义 View 的属性，首先在 res/values/  下建立一个attrs.xml ， 在里面定义我们的属性和声明我们的整个样式。
+1. 自定义 View 的属性，首先在 res/values/  下建立一个 attrs.xml ， 在里面定义我们的属性和声明我们的整个样式。
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -36,10 +36,10 @@ tags: Android
 </resources>
 ```
 
-> format是值该属性的取值类型:
+> format 是值该属性的取值类型:
 string, color, demension, integer, enum, reference, float,boolean, fraction, flag;不清楚的可以 google
 
-## 自定义View之基础概念之用到的六个工具
+## 自定义 View 之基础概念之用到的六个工具
 
 * Configuration
 
@@ -51,7 +51,7 @@ string, color, demension, integer, enum, reference, float,boolean, fraction, fla
 简化Touch操作
 
 * VelocityTracker
-用于跟踪触摸屏事件(比如: Flingling以及其他手势事件)的速率
+用于跟踪触摸屏事件(比如: Flingling 以及其他手势事件)的速率
 
 ```java
 mVelocityTracker = VelocityTracker.obtain();
@@ -74,7 +74,7 @@ scrollTo() 和 scrollBy()
 mTextView.scrollTo(0, 25)
 
 * ViewDragHelper
-简化View的拖拽操作
+简化 View 的拖拽操作
 
 ```java
 ViewDragHelper mViewDragHelper = ViewDragHelper.create(context, 1.0f, new ViewDragHelper.Callback(){

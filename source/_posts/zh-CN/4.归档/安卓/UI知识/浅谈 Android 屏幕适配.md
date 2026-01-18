@@ -20,7 +20,7 @@ tags: Android
 后来 DPI 的概念也被应用到了计算机屏幕上，**计算机屏幕一般采用 PPI（Pixels Per Inch）来表示一英寸屏幕上显示的像素点的数量，现在 DPI 也被引入。**
 
 为简便起见，Android 将所有屏幕密度分组为六种通用密度
-屏幕像素密度  | `ldpi` | `mdpi` | `hdpi` | `xhdpi` | `xxhdpi` | `xxxhdpi`
+屏幕像素密度 | `ldpi` | `mdpi` | `hdpi` | `xhdpi` | `xxhdpi` | `xxxhdpi`
 ------- | ------- | ------- | ------- | ------- | ------- | -------
 描述 |低密度屏幕 | 中等密度 | 高密度屏幕 | 超高密度屏幕 | - |-
 约为 | ~120dpi | ~160dpi | ~240dpi | ~320dpi | **~480dpi** | ~640dpi
@@ -33,8 +33,8 @@ tags: Android
 
 **密度无关像素 (dp)**
 在定义 UI 布局时应使用的虚拟像素单位，用于以密度无关方式表示布局维度或位置。
-密度无关像素等于 160 dpi 屏幕上的一个物理像素，这是 系统为“中”密度屏幕假设的基线密度。在运行时，系统 根据使用中屏幕的实际密度按需要以透明方式处理 dp 单位的任何缩放 。dp 单位转换为屏幕像素很简单： `px = dp * (dpi / 160)`。
-例如，在 240 dpi 屏幕上，1 dp 等于 1.5 物理像素。**在定义应用的 UI 时应始终使用 dp 单位** ，以确保在不同密度的屏幕上正常显示 UI。
+密度无关像素等于 160dpi 屏幕上的一个物理像素，这是 系统为“中”密度屏幕假设的基线密度。在运行时，系统 根据使用中屏幕的实际密度按需要以透明方式处理 dp 单位的任何缩放 。dp 单位转换为屏幕像素很简单： `px = dp * (dpi / 160)`。
+例如，在 240dpi 屏幕上，1 dp 等于 1.5 物理像素。**在定义应用的 UI 时应始终使用 dp 单位** ，以确保在不同密度的屏幕上正常显示 UI。
 
 
 ![支持每种密度的 位图可绘制对象的相对大小](https://upload-images.jianshu.io/upload_images/1662509-5a39af84b3f75296.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -110,4 +110,4 @@ dependencies{
 
 * <https://developer.android.google.cn/guide/practices/screens_support#density-independence>
 * <http://blog.csdn.net/lfdfhl/article/details/52735103>
-* 一款APP设计的从 0 到 1 之：Android设计规范篇-UI中国-专业用户体验设计平台 <https://www.ui.cn/detail/281292.html>
+* 一款 APP 设计的从 0 到 1 之：Android设计规范篇-UI中国-专业用户体验设计平台 <https://www.ui.cn/detail/281292.html>

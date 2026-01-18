@@ -15,7 +15,6 @@ tags:
 settingLanguage := RegRead(REG_KEY_NAME, REG_LANG, 'zh-cn')
 ```
 
-
 第二步 构建菜单项
 
 在 lang 文件夹下新增国际化 ini 文件
