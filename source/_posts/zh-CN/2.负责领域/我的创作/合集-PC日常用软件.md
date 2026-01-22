@@ -619,6 +619,8 @@ not
 * [SmartSystemMenu](https://github.com/AlexanderPro/SmartSystemMenu/blob/master/README_CN.md) 扩展了系统中所有窗口的系统菜单，比如提供了窗口置顶功能
 * [SmartContextMenu](https://github.com/AlexanderPro/SmartContextMenu/blob/main/README_CN.md) 为您的操作系统的所有窗口添加了一个上下文菜单。该程序是SmartSystemMenu 的改进版
 
+【mac】[BetterDisplay](https://betterdisplay.cn/) 自定义分辨率、XDR/HDR 额外亮度、虚拟屏幕、画中画、软断开连接、配置和 EDID 覆盖、DDC 控制、色彩模式选择、同步、布局保护等
+
 ### 2.31 沙盘程序
 
 [Sandboxie Classic 和 Plus 版](https://sandboxie-plus.com/downloads) 可以运行或安装应用程序而无需永久修改本地或映射驱动器，比如可以软件多开
