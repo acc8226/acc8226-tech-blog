@@ -17,7 +17,7 @@ AutoIt 最初是为 PC “推出”情况而设计的，以可靠地自动化和
 
 此外，还提供名为 AutoItX 的 AutoIt 的 COM 和 DLL 组合版本，允许您将 AutoIt 的独特功能添加到自己喜欢的脚本或编程语言中！
 
-最重要的是，AutoIt 仍然是免费的——但如果您想支持在项目和网络托管上花费的时间、金钱和精力，那么您可以捐款。
+最重要的是，AutoIt 仍然是免费的——但如果您想支持在项目和网络托管上花费的时间、金钱和精力，那么您可以捐款。<!-- more -->
 
 ## 简单使用
 
@@ -29,8 +29,6 @@ AutoIt 最初是为 PC “推出”情况而设计的，以可靠地自动化和
 ; This is my first script
 MsgBox($MB_SYSTEMMODAL, "My First Script!", "Hello World!") 
 ```
-
-<!-- more -->
 
 ### 指南 - 记事本操作
 
@@ -71,6 +69,6 @@ AU3Info 是顶层窗口, 以便在任何时候都可以阅读它获取的信息�
 
 ## 参考
 
-* Home - AutoIt <https://www.autoitscript.com/site/>
+* Home - [AutoIt](https://www.autoitscript.com/site/)
 * AutoIt 在线文档 脚本之家 <https://www.jb51.net/shouce/autoit3/>
 * autoit3 下载地址 <https://www.autoitscript.com/files/autoit3/autoit-v3-setup.zip>

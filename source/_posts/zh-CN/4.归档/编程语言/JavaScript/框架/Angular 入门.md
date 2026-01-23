@@ -10,8 +10,7 @@ tags:
 - Angular
 ---
 
-Angular 中文官网
-<https://angular.cn/>
+[Angular 中文官网](https://angular.cn)
 
 Angular 需要 Node.js 的活跃 LTS 版或维护期 LTS版。
 

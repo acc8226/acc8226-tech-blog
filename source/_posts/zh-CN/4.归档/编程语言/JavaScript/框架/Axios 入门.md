@@ -12,5 +12,3 @@ tags:
 
 起步 | Axios Docs
 <https://axios-http.com/zh/docs/intro>
-
-<!-- more -->

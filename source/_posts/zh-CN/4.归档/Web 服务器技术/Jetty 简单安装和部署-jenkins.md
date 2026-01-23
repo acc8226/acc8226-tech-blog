@@ -24,7 +24,7 @@ service jetty stop
 
 ## 在 Jetty 中部署 Jenkins
 
-1. Jenkins 2.332.3 由于是搭配 jetty 9.4。所有这里先行安装 jetty 9.4。
+1\. Jenkins 2.332.3 由于是搭配 jetty 9.4。所有这里先行安装 jetty 9.4。
 
 ```sh
 [/opt/jetty]# tar -zxf /home/user/downloads/jetty-distribution-{VERSION}.tar.gz
@@ -73,8 +73,8 @@ Starting Jetty: OK Wed Nov 20 10:26:53 MST 2013
 
 ## 遇到过的问题
 
-问题：jetty 隔几天凌晨必出现 404 错误（linux /tmp/)
-解决方案：在 $(jetty.home) 下创建一个 work 目录。
+问题：jetty 隔几天凌晨必出现 404 错误`（linux /tmp/)`
+解决方案：在 `$(jetty.home)` 下创建一个 work 目录。
 
 ## 参考
 

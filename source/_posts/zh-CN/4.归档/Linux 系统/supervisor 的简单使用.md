@@ -16,7 +16,7 @@ sudo apt install supervisor
 ```conf
 [program:mpan]
 command=pipenv run gunicorn -w 1 -b 0.0.0.0:80 app:app
-; command=gunicorn -w 1 -b 0.0.0.0:80 app:app
+; command=/home/greatwall1/code/gitee/easy-upload/venv/bin/gunicorn -w 1 -b 0.0.0.0:5555 app:app
 autostart=true
 autorestart=true
 stopasgroup=true

@@ -30,8 +30,8 @@ categories: linux
 
 致力于服务全球 Deepin 用户，系统具有极高的易用性、优秀的交互体验、多款自研应用、全面的生态体系、高效的优化反馈机制为用户提供最好的 Linux 开源体验环境。
 
-- [最新版本](https://www.deepin.org/zh/download) – 深度科技社区
-- 阿里云镜像地址 <http://mirrors.aliyun.com/deepin-cd/>
+- [最新版本 – 深度科技社区](https://www.deepin.org/zh/download/)
+- [阿里云镜像地址](http://mirrors.aliyun.com/deepin-cd)
 
 ### 统信 UOS
 
@@ -49,7 +49,7 @@ swap 是可选项，如果内存大于 4g 则可以不设置，否则设置为 2
 
 **如何为主机做备案** 通俗来讲，要开办网站必须先办理网站备案，备案成功后您的域名才可指向接入商处的服务器开通访问。ICP 备案号以工信部网站公共查询为准，查询入口：[http://www.beian.miit.gov.cn](http://www.beian.miit.gov.cn/ "http://www.beian.miit.gov.cn")。
 
-## 银河麒麟
+## 银河麒麟操作系统
 
 ### 环境变量
 
@@ -80,6 +80,20 @@ Terminal=false
 Icon=/home/greatwall/桌面/favicon.ico
 Type=Application
 Categories=Utility;
+
+### 设置超过多少秒后系统睡眠
+
+8小时后
+gsettings set org.ukui.power-manager sleep-computer-ac 28800
+
+8个半小时后
+gsettings set org.ukui.power-manager sleep-computer-ac 30600
+
+9小时后
+gsettings set org.ukui.power-manager sleep-computer-ac 32400
+
+设置定时关机-非常傻瓜化
+time-shutdown
 
 ### 额外的软件
 

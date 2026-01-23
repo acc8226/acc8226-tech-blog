@@ -35,6 +35,6 @@ Vue 的浏览器开发者插件使我们可以浏览一个 Vue 应用的组件�
 
 ## 参考
 
-* Vue.js - 渐进式 JavaScript 框架 | Vue.js <https://cn.vuejs.org/>
-* vite 是新一代前端构建工具，官网地址：<https://vitejs.cn>
+* [Vue.js](https://cn.vuejs.org) - 渐进式 JavaScript 框架
+* [vite](https://vitejs.cn) -新一代前端构建工具
 
