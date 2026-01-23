@@ -12,7 +12,7 @@ categories: linux
 9000 被 PHP 占用了
 
 /etc/php-fpm.d/www.conf
-从 9000 改为 9001
+从 9000 改为 9001<!-- more -->
 
 ```conf
 listen = 127.0.0.1:9001

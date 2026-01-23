@@ -73,13 +73,13 @@ h， --human-readable（顾名思义，你可以试试不加的情况）
 ## 使用 unzip 命令解压缩 zip 文件
 
 将 shiyanlou.zip 解压到当前目录：
-$ unzip shiyanlou.zip
+unzip shiyanlou.zip
 
 使用安静模式，将文件解压到指定目录(使用**-d**指定路径)：
-$ unzip -q shiyanlou.zip -d ziptest
+unzip -q shiyanlou.zip -d ziptest
 
 上述指定目录不存在，将会自动创建。如果你不想解压只想查看压缩包的内容你可以使用 -l 参数：
-$ unzip -l shiyanlou.zip
+unzip -l shiyanlou.zip
 
 > 注意： 使用 unzip 解压文件时我们同样应该注意兼容问题，不过这里我们关心的不再是上面的问题，而是中文编码的问题，通常 Windows 系统上面创建的压缩文件，如果有有包含中文的文档或以中文作为文件名的文件时默认会采用 GBK 或其它编码，而 Linux 上面默认使用的是 UTF-8 编码，如果不加任何处理，直接解压的话可能会出现中文乱码的问题（有时候它会自动帮你处理），为了解决这个问题，我们可以在**解压时指定编码类型**。
 
@@ -94,14 +94,14 @@ unzip -O GBK 中文压缩文件.zip
 创建一个 tar 包：
 
 ```sh
-$ cd /home/shiyanlou
-$ tar -P -cf shiyanlou.tar /home/shiyanlou/Desktop # 不建议使用绝对路径
+cd /home/shiyanlou
+tar -P -cf shiyanlou.tar /home/shiyanlou/Desktop # 不建议使用绝对路径
 
 # 而是建议相对路径
-$ tar -cf shiyanlou.tar Desktop/ # 不建议使用绝对路径
+tar -cf shiyanlou.tar Desktop/ # 不建议使用绝对路径
 
 # 建议这么操作, 解压到当前目录
-$ tar -cf shiyanlou.tar
+tar -cf shiyanlou.tar
 ```
 
 上面命令中，-P 保留绝对路径符，-c 表示创建一个 tar 包文件，-f 用于指定创建的文件名，注意文件名必须紧跟在 -f 参数之后，比如不能写成 tar -fc shiyanlou.tar，可以写成 tar -f shiyanlou.tar -c ~。你还可以加上 `-v` 参数以可视的的方式输出打包的文件。
@@ -109,8 +109,8 @@ $ tar -cf shiyanlou.tar
 解压一个文件（-x 参数）到指定路径的已存在目录（**-C**参数指定路径）：
 
 ```sh
-$ mkdir tardir
-$ tar -xf shiyanlou.tar -C tardir
+mkdir tardir
+tar -xf shiyanlou.tar -C tardir
 # 会报警告从成员名中删除开头的“/”,  造成该问题的原因是因为使用相对路径和绝对路径引起的。另外还有一种解决方法是，使用相对路径.
 ```
 

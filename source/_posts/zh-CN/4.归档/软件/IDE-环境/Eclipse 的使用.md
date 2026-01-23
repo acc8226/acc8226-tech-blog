@@ -15,11 +15,9 @@ categories: IDE-使用
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-d6a91d318d8dc401.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-默认编辑区域的字体太小，优先推荐调节为 14 或者 16 号。
+默认编辑区域的字体太小，优先推荐调节为 14 或者 16 号。<!-- more -->
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-fb72d70d64cc54d2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-<!-- more -->
 
 ## Eclipse 常用快捷键
 

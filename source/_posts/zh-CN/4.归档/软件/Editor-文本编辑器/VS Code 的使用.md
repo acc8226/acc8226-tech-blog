@@ -5,7 +5,7 @@ updated: 2022-05-07 09:42:38
 categories: 文本编辑器
 ---
 
-作为一款开箱即用的产物，基本上不用过多额外配置。
+作为一款开箱即用的产物，基本上不用进行过多额外配置呢。
 
 ## 统一 vscode 换行符 （\n）
 
@@ -19,9 +19,7 @@ categories: 文本编辑器
 
 * [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) markdown 语法规范提示
 * [Markmap](https://marketplace.visualstudio.com/items?itemName=gera2ld.markmap-vscode) 将 markdown 渲染成脑图
-* [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) 运行多种语言的代码片段或代码文件
-
-<!-- more -->
+* [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) 运行多种语言的代码片段或代码文件<!-- more -->
 
 ## VS code 更改字体
 

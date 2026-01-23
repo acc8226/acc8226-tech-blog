@@ -97,5 +97,5 @@ public class Adaptor implements ITarget {
 
 ## 参考
 
-设计模式之美_设计模式_代码重构-极客时间
-https://time.geekbang.org/column/intro/250
+[设计模式之美_设计模式_代码重构](https://time.geekbang.org/column/intro/250)-极客时间
+

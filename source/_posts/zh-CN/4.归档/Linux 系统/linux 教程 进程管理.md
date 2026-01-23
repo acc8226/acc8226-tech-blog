@@ -210,8 +210,8 @@ ps axjf
 | TIME | 进程消耗 CPU 的时间 |
 | COMMAND | 命令的名称和参数 |
 
-> **TPGID**栏写着-1 的都是没有控制终端的进程，也就是守护进程
-> **STAT**表示进程的状态，而进程的状态有很多，如下表所示
+> **TPGID** 栏写着-1 的都是没有控制终端的进程，也就是守护进程
+> **STAT** 表示进程的状态，而进程的状态有很多，如下表所示
 
 | 状态 | 解释 |
 | --- | --- |
@@ -239,7 +239,7 @@ ps 工具有许多的参数，下面给大家解释部分常用的参数
 ps -l
 ```
 
-![实验楼](https://upload-images.jianshu.io/upload_images/1662509-edf3da98f96844df?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/1662509-edf3da98f96844df?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 相对来说我们更加常用下面这个命令，他将会罗列出所有的进程信息
 
@@ -247,7 +247,7 @@ ps -l
 ps aux
 ```
 
-![实验楼](https://upload-images.jianshu.io/upload_images/1662509-77ac5114876dd5f0?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/1662509-77ac5114876dd5f0?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 若是查找其中的某个进程的话，我们还可以配合着 grep 和正则表达式一起使用
 
@@ -255,7 +255,7 @@ ps aux
 ps aux | grep zsh
 ```
 
-![实验楼](https://upload-images.jianshu.io/upload_images/1662509-ba7cca957d36be49?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/1662509-ba7cca957d36be49?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 此外我们还可以查看时，将连同部分的进程呈树状显示出来
 
@@ -263,7 +263,7 @@ ps aux | grep zsh
 ps axjf
 ```
 
-![实验楼](https://upload-images.jianshu.io/upload_images/1662509-911d7c9708d2239f?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/1662509-911d7c9708d2239f?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 当然如果你觉得使用这样的此时没有把你想要的信息放在一起，我们也可以是用这样的命令，来自定义我们所需要的参数显示
 
@@ -271,7 +271,7 @@ ps axjf
 ps -afxo user,ppid,pid,pgid,command
 ```
 
-![实验楼](https://upload-images.jianshu.io/upload_images/1662509-a299af3f7dc3e79e?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/1662509-a299af3f7dc3e79e?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 这是一个简单而又实用的工具，想要更灵活的使用，想要知道更多的参数我们可以使用 man 来获取更多相关的信息
 
@@ -294,7 +294,7 @@ pstree -up
 #-u  ：同时列出每个 process 的所屬账户名称。
 ```
 
-![实验楼](https://upload-images.jianshu.io/upload_images/1662509-78f27d81a9270416?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/1662509-78f27d81a9270416?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## kill 命令的掌握
 
@@ -316,7 +316,7 @@ ps aux | grep gedit
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-45b6f3deedb32d39?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-![实验楼](https://upload-images.jianshu.io/upload_images/1662509-12eabbb5147deb0f?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/1662509-12eabbb5147deb0f?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## 进程的执行顺序
 
@@ -327,12 +327,12 @@ ps aux | grep gedit
 而 nice 的值我们是可以通过 nice 命令来修改的，而需要注意的是 nice 值可以调整的范围是 -20 ~ 19，其中 root 有着至高无上的权力，既可以调整自己的进程也可以调整其他用户的程序，并且是所有的值都可以用，而普通用户只可以调制属于自己的进程，并且其使用的范围只能是 0 ~ 19，因为系统为了避免一般用户抢占系统资源而设置的一个限制
 
 ```sh
-#这个实验在环境中无法做，因为权限不够，可以自己在本地尝试
+# 这个实验在环境中无法做，因为权限不够，可以自己在本地尝试
 
-#打开一个程序放在后台，或者用图形界面打开
+# 打开一个程序放在后台，或者用图形界面打开
 nice -n -5 vim &
 
-#用 ps 查看其优先级
+# 用 ps 查看其优先级
 ps -afxo user,ppid,pid,stat,pri,ni,time,command | grep vim
 ```
 

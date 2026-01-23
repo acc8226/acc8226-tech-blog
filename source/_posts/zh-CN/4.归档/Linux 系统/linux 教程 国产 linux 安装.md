@@ -33,7 +33,7 @@ categories: linux
 - [最新版本 – 深度科技社区](https://www.deepin.org/zh/download/)
 - [阿里云镜像地址](http://mirrors.aliyun.com/deepin-cd)
 
-### 统信 UOS
+## 统信 UOS
 
 基于深度 Deepin 进行定制，个人用户推荐使用家庭版。
 
@@ -43,8 +43,8 @@ categories: linux
 
 ### 分区注意
 
-ext4 / 建议 20 G 以上
-ext4 /home 建议 8 G 以上
+ext4 / 建议 20G 以上
+ext4 /home 建议 8G 以上
 swap 是可选项，如果内存大于 4g 则可以不设置，否则设置为 2g 为宜。
 
 **如何为主机做备案** 通俗来讲，要开办网站必须先办理网站备案，备案成功后您的域名才可指向接入商处的服务器开通访问。ICP 备案号以工信部网站公共查询为准，查询入口：[http://www.beian.miit.gov.cn](http://www.beian.miit.gov.cn/ "http://www.beian.miit.gov.cn")。
@@ -107,6 +107,12 @@ execv error: Socket not connected
 
 可以尝试使用命令行选项来运行 AppImage 文件，例如：
 /home/greatwall/桌面/GIMP-3.0.4-aarch64.AppImage --appimage-extract，然后进入解压后的目录，再运行其中的可执行文件。
+
+## 通用常见命令
+
+关机 poweroff
+
+x11 桌面锁屏命令 xset dpms force off
 
 ## 多系统安装工具 Ventoy
 

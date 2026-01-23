@@ -24,7 +24,7 @@ adb 工具位于 SDK 的 **platform-tools** 目录下，因此在命令行中使
 调用 Activity Manager (am)
 
 调用软件包管理器 (pm)
-`$ pm list packages –f` 列出所有的Package。
+`pm list packages –f` 列出所有的 Package。
 
 ## 截图
 
@@ -41,8 +41,7 @@ cd /system/bin/
 screencap -p /sdcard/screenshot.png
 ```
 
-获取到当前设备停在哪个 Activity 上。
-`adb shell dumpsys activity top`
+获取到当前设备停在哪个 Activity 上。`adb shell dumpsys activity top`
 
 ## 参考
 

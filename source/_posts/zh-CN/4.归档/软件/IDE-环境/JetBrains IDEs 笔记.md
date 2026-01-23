@@ -225,7 +225,7 @@ Postfix Completion 功能本质上也是代码模板，只是它比 Live Templat
 | F8 | 在 Debug 模式下，进入下一步，如果当前行断点是一个方法，则不进入当前方法体内，Step Over |
 | F9 | 在 Debug 模式下，恢复程序运行，但是如果该断点下面代码还有断点则停在下一个断点上，Resume |
 
-## Idea 合并 test 分支到主分支
+## IDEA 合并 test 分支到主分支
 
 【local branches】本地分支【remote branches】远程仓库分支
 
@@ -252,8 +252,6 @@ Following HTTP Request Live Templates are available:
 - 'gtrp' and 'gtr' create a GET request with or without query parameters;
 - 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
 - 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
-
-<!-- more -->
 
 ```md
 ### GET 请求

@@ -7,7 +7,7 @@ categories: linux
 
 ## 更换源
 
-中科大源、清华源或阿里源可任意选择一。
+中科大源、清华源或阿里源可任意选择其一：
 
 https://mirrors.ustc.edu.cn
 https://mirrors.tuna.tsinghua.edu.cn

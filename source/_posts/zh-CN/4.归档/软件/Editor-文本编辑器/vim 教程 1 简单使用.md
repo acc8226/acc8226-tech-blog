@@ -12,7 +12,7 @@ Vim 是从 vi 发展出来的一个文本编辑器。代码补完、编译及错
 连 vim 的官方网站 ([http://www.vim.org](http://www.vim.org/)) 自己也说 vim 是一个程序开发工具而不是文字处理软件。
 
 > What Vim Can Do
-Vim is an advanced text editor that seeks to provide the power of the de-facto Unix editor 'Vi', with a more complete feature set. It's useful whether you're [already using vi](https://www.vim.org/viusers.php) or [using a different editor](https://www.vim.org/others.php).
+Vim is an advanced text editor that seeks to provide the power of the de-facto Unix editor 'Vi', with a more complete feature set. It's useful whether you're [already using vi](https://www.vim.org/viusers.php) or [using a different editor](https://www.vim.org/others.php).<!-- more -->
 
 ### Windows版 Vim 下载
 
@@ -22,8 +22,6 @@ https://github.com/vim/vim-win32-installer/releases
 
 vim 键盘图：
 ![](https://upload-images.jianshu.io/upload_images/1662509-fb00bf307e6290d9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-<!-- more -->
 
 ## vi/vim 的使用
 

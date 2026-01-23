@@ -36,7 +36,7 @@ scp.exe 是在 SSH 上运行的文件复制实用工具
 <!-- more -->
 
 **用户密钥生成**
-若要使用基于密钥的身份验证，首先需要为客户端生成公钥/私钥对。 ssh-keygen.exe 用于生成密钥文件，并且可以指定算法 DSA、RSA、ECDSA 或 Ed25519。 如果未指定算法，则使用 RSA。 应使用强算法和密钥长度，例如此示例中的 Ed25519。
+若要使用基于密钥的身份验证，首先需要为客户端生成公钥/私钥对。ssh-keygen.exe 用于生成密钥文件，并且可以指定算法 DSA、RSA、ECDSA 或 Ed25519。 如果未指定算法，则使用 RSA。 应使用强算法和密钥长度，例如此示例中的 Ed25519。
 
 ```sh
 ssh-keygen -t ed25519
@@ -80,7 +80,7 @@ ssh root@xxx.xx.xx.xx
 另一种方式是去 `~/.ssh/known_hosts` 删除对应的记录。例如
 
 ```text
-github.com ssh-rsa AAAABxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx=
+github.com ssh-rsa AAAABxxxxxxxxxxxxxxxxxxxxxxxxxxxxx=
 ```
 
 ### zhangsan@localhost: Permission denied (publickey)
