@@ -1,5 +1,5 @@
 ---
-title: Get-Post 请求
+title: Get 和 Post 请求
 date: 2021-01-22 23:20:55
 updated: 2021-01-22 23:20:55
 categories:

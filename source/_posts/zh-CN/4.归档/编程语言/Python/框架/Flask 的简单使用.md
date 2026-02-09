@@ -5,6 +5,7 @@ updated: 2025-08-26 16:29:40
 categories:
   - 语言
   - Python
+  - 框架
 tags: python
 ---
 
@@ -14,7 +15,7 @@ Flask 是一个用 Python 编写的轻量级 Web 应用框架。
 
 Flask 基于 WSGI（Web Server Gateway Interface）和 Jinja2 模板引擎，旨在帮助开发者快速、简便地创建 Web 应用。
 
-Flask 被称为"微框架"，因为它使用简单的核心，用扩展增加其他功能。
+Flask 被称为"微框架"，因为它使用简单的核心，用扩展增加其他功能。<!-- more -->
 
 ## 极简的基于 falsk 的 上传小程序
 
@@ -233,8 +234,6 @@ if __name__ == '__main__':
 ### gunicorn 不支持在 Windows 系统上直接运行
 
 因为它依赖于 fcntl 模块，而该模块在 Windows 上不可用。因此这里可以使用 Waitress 作为 Windows 上的 WSGI 服务器来运行 Flask 应用。
-
-<!-- more -->
 
 使用方法
 

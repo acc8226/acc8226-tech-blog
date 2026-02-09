@@ -38,14 +38,14 @@ else
 
 简单的请求
 
-```sh
+```js
 xmlhttp.open("GET","demo_get.asp",true);
 xmlhttp.send();
 ```
 
 GET 方法发送信息, 携带信息
 
-```text
+```js
 xmlhttp.open("GET","demo_get2.asp?fname=Bill&lname=Gates",true);
 xmlhttp.send();
 ```
@@ -112,5 +112,4 @@ XMLHttpRequest 对象如果要用于 AJAX 的话，其 open() 方法的 async �
 
 ## 参考
 
-JavaScript Fetch 简单使用指南 - Mr. Ma's Blog
-<https://www.misterma.com/archives/842/>
+[JavaScript Fetch 简单使用指南](https://www.misterma.com/archives/842) - Mr. Ma's Blog
