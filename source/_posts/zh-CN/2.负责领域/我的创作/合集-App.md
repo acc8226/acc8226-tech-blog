@@ -2,7 +2,7 @@
 title: 合集-App
 permalink: myapp/
 date: 2017-04-13 22:07:33
-updated: 2026-01-08 22:28:17
+updated: 2026-02-14 19:32:32
 categories: 我的创作
 ---
 
@@ -126,9 +126,11 @@ Bitwarden【已适配安卓平板】[Github 版](https://github.com/bitwarden/an
 
 #### 鸿蒙
 
-[QQ 邮箱](https://appgallery.huawei.com/app/detail?id=com.tencent.qqmail.hmos) 现在已有广告后我暂用自带邮箱客户端
+[QQ 邮箱](https://appgallery.huawei.com/app/detail?id=com.tencent.qqmail.hmos) 现在已有广告，我暂用自带邮箱客户端
 
 ### 1.4 倒数日
+
+#### 通用
 
 [倒数日](https://app.ipad.ly/idays) 倒计时神器, 可设置过期日提醒，还有各种纪念日提醒。多端同步，除了苹果端，还支持安卓端还有手表端
 
@@ -136,7 +138,7 @@ Bitwarden【已适配安卓平板】[Github 版](https://github.com/bitwarden/an
 
 [mDays倒计时](https://appgallery.huawei.com/app/detail?id=com.wtkj.app.counter.hm)
 
-### 1.5 Books 书籍
+### 1.5 阅读
 
 #### 安卓
 
@@ -197,7 +199,7 @@ not
 
 * [微信读书](https://appgallery.huawei.com/app/detail?id=com.tencent.weread.hmos) 目前 0.9 版本有 bug，可以免费看所有付费会员的书
 * [番茄免费小说](https://appgallery.huawei.com/app/detail?id=com.dragon.read.next)
-* 格物阅读 目前完成度很高
+* [格物阅读](https://appgallery.huawei.com/app/detail?id=com.hm.ultimate.reader) 完成度很高的本地阅读器
 
 ### 1.6 音乐
 
@@ -317,14 +319,16 @@ not 酷FM 一款酷狗推出的的音乐 FM 电台 app，现已停止更新
 #### 鸿蒙
 
 * [番茄畅听](https://appgallery.huawei.com/app/detail?id=com.xs.fm.next)
-* [喜马拉雅](https://appgallery.huawei.com/app/detail?id=com.ximalaya.ting.xmharmony)
 * [帆书](https://appgallery.huawei.com/app/detail?id=com.fanshu.book)
 * [得到](https://appgallery.huawei.com/app/detail?id=com.luojilab.dedao)
+
+备用
+
+* [喜马拉雅](https://appgallery.huawei.com/app/detail?id=com.ximalaya.ting.xmharmony)
 * [云听](https://appgallery.huawei.com/app/detail?id=com.yt.radioHarmony)
 * [阿基米德](https://appgallery.huawei.com/app/detail?id=org.ajmide.harmonyapp)
 * [小宇宙](https://appgallery.huawei.com/app/detail?id=app.podcast.cosmos.hongmeng)
-
-备用 [蜻蜓 FM](https://appgallery.huawei.com/app/detail?id=fm.qtradio.hm)
+* [蜻蜓 FM](https://appgallery.huawei.com/app/detail?id=fm.qtradio.hm)
 
 ### 1.8 资讯
 
@@ -385,11 +389,7 @@ not 今日头条 竟然有点卡
 
 * [简讯](https://appgallery.huawei.com/app/detail?id=com.tipsoon.harm)
 * [今日头条](https://appgallery.huawei.com/app/detail?id=com.ss.hm.article.news)
-* 界面资讯
-* 一点资讯
-* 网易新闻
-* 搜狐新闻
-* 新湖南
+* [界面新闻](https://appgallery.huawei.com/app/detail?id=harm.jiemian.news)
 
 **科技资讯**
 
@@ -522,15 +522,16 @@ not [泰捷视频](https://www.51togic.com/%e6%b3%b0%e6%8d%b7%e8%a7%86%e9%a2%91)
 1. [乐视视频](https://appgallery.huawei.com/app/detail?id=com.letv.client.huawei)
 1. [埋堆堆](https://appgallery.huawei.com/app/detail?id=com.tvbc.maiduidui.hmos)
 1. [人人视频](https://appgallery.huawei.com/app/detail?id=com.example.rrsp)
-1. [爱奇艺](https://appgallery.huawei.com/app/detail?id=com.qiyi.video.hmy)
-1. [腾讯视频](https://appgallery.huawei.com/app/detail?id=com.tencent.videohm)
 
 备用
 
+1. [爱奇艺](https://appgallery.huawei.com/app/detail?id=com.qiyi.video.hmy)
+1. [腾讯视频](https://appgallery.huawei.com/app/detail?id=com.tencent.videohm)
 * [优酷视频](https://appgallery.huawei.com/app/detail?id=com.youku.next)
 * [芒果TV](https://appgallery.huawei.com/app/detail?id=com.mgtv.phone1905)
 * [电影网](https://appgallery.huawei.com/app/detail?id=com.m1905.hmmobilefree)
 * [快手](https://appgallery.huawei.com/app/detail?id=com.kuaishou.hmapp)
+* [咪咕视频](https://appgallery.huawei.com/app/detail?id=com.cmcc.cmvideohm)
 
 ## 3 工具【常用】
 
@@ -595,11 +596,12 @@ not
 
 1. [WiFi万能钥匙](https://appgallery.huawei.com/app/detail?id=com.wifi.hm)
 1. [奇妙工具箱](https://appgallery.huawei.com/app/detail?id=com.magicalstory.toolbox.huawei)
-1. 一个木函
+1. [一个木函](https://appgallery.huawei.com/app/detail?id=com.sakuraft.woodbox)
 1. [ES文件浏览器](https://appgallery.huawei.com/app/detail?id=com.estrongs.hm.pop)
-1. 流舟文件
+1. [流舟文件](https://appgallery.huawei.com/app/detail?id=com.liuzho.file.explorer.hmos)
 1. [QQ同步助手](https://appgallery.huawei.com/app/detail?id=com.tencent.qqpim.hos)
-1. [万年历](https://appgallery.huawei.com/app/detail?id=com.youloft.calendar.har)
+
+备用 [万年历](https://appgallery.huawei.com/app/detail?id=com.youloft.calendar.har)
 
 ## 4 购物
 
@@ -643,9 +645,12 @@ not
 ### 鸿蒙
 
 * [高德地图](https://appgallery.huawei.com/app/detail?id=com.amap.hmapp)
+* 【系统自带】[地图](https://appgallery.huawei.com/app/detail?id=com.huawei.hmos.maps.app)
+
+备用
+
 * [百度地图](https://appgallery.huawei.com/app/detail?id=com.baidu.hmmap)
 * [腾讯地图](https://appgallery.huawei.com/app/detail?id=com.tencent.mapohos)
-* 【系统自带】[地图](https://appgallery.huawei.com/app/detail?id=com.huawei.hmos.maps.app)
 
 ## 6 出行
 
@@ -671,7 +676,9 @@ not
 ### 鸿蒙
 
 * [滴滴出行](https://appgallery.huawei.com/app/detail?id=com.sdu.didi.hmos.psnger)
-* 掌上公交
+* [嘀嗒出行](https://appgallery.huawei.com/app/detail?id=com.didapinche.passenger)
+* [哈啰](https://appgallery.huawei.com/app/detail?id=com.hellobike.app)
+* [掌上公交](https://appgallery.huawei.com/app/detail?id=com.mygolbs.mybus.hm)
 
 备用
 
@@ -718,8 +725,10 @@ not
 
 * [美团](https://appgallery.huawei.com/app/detail?id=com.sankuai.hmeituan)
 * [建行生活](https://appgallery.huawei.com/app/detail?id=com.ccb.ccblife.hos) 单位食堂查餐费用
-* ——————— ฅ՞• •՞ฅ ———————
 * [最会买](https://appgallery.huawei.com/app/detail?id=com.ruanmei.zuihuimai.hosnext) IT 之家用多的后遗症
+
+备用
+
 * 什么值得买
 * 慢慢买
 
@@ -729,13 +738,14 @@ not
 
 ### 鸿蒙
 
-1. [德克士](https://appgallery.huawei.com/app/detail?id=com.dicos.hoprod)
-1. [肯德基](https://appgallery.huawei.com/app/detail?id=com.yumc.kfc.superapp)
-1. [麦当劳](https://appgallery.huawei.com/app/detail?id=com.mcdonalds.cma.hm)
-1. [蜜雪冰城](https://appgallery.huawei.com/app/detail?id=com.mxbc.mxsa_oh)
 1. [库迪咖啡](https://appgallery.huawei.com/app/detail?id=com.cotticoffee.cotticlient.happ)
 1. [瑞幸咖啡](https://appgallery.huawei.com/app/detail?id=com.lucky.luckincoffee)
+1. [蜜雪冰城](https://appgallery.huawei.com/app/detail?id=com.mxbc.mxsa_oh)
 1. [必胜客](https://appgallery.huawei.com/app/detail?id=com.yumc.ph.superapp)
+1. [肯德基](https://appgallery.huawei.com/app/detail?id=com.yumc.kfc.superapp)
+1. [麦当劳](https://appgallery.huawei.com/app/detail?id=com.mcdonalds.cma.hm)
+
+备用 [德克士](https://appgallery.huawei.com/app/detail?id=com.dicos.hoprod)
 
 若没有对应 app，则可以考虑支付宝和微信订餐小程序
 
@@ -800,11 +810,15 @@ not
 
 ### 鸿蒙
 
+* [铁路12306](https://appgallery.huawei.com/app/detail?id=com.chinarailway.ticketingHM)
 * [携程旅行](https://appgallery.huawei.com/app/detail?id=com.ctrip.harmonynext)
 * [同程旅行](https://appgallery.huawei.com/app/detail?id=com.tongcheng.hmos)
-* [去哪儿旅行](https://appgallery.huawei.com/app/detail?id=com.qunar.hos)
-* [铁路12306](https://appgallery.huawei.com/app/detail?id=com.chinarailway.ticketingHM)
 * [智行旅行](https://appgallery.huawei.com/app/detail?id=com.suanya.travel.harmonynext)
+
+备用
+
+* 飞猪
+* [去哪儿旅行](https://appgallery.huawei.com/app/detail?id=com.qunar.hos)
 * [高铁管家](https://appgallery.huawei.com/app/detail?id=com.openet.gtgj)
 * [航旅纵横](https://appgallery.huawei.com/app/detail?id=com.umetrip.hm.app)
 
@@ -871,9 +885,12 @@ not
 
 ### 鸿蒙
 
+[企业微信](https://appgallery.huawei.com/app/detail?id=com.tencent.wework.hmos)
+
+备用
+
 * [飞书](https://appgallery.huawei.com/app/detail?id=com.ss.feishu)
 * [钉钉](https://appgallery.huawei.com/app/detail?id=com.dingtalk.hmos)
-* [企业微信](https://appgallery.huawei.com/app/detail?id=com.tencent.wework.hmos)
 * [腾讯会议](https://appgallery.huawei.com/app/detail?id=com.tencent.meeting.app)
 
 ## 13 办公类
@@ -930,8 +947,11 @@ not
 ### 鸿蒙
 
 * [WPS 移动版](https://appgallery.huawei.com/app/detail?id=cn.wps.mobileoffice.hap)
-* [福昕PDF](https://appgallery.huawei.com/app/detail?id=com.foxit.pdf.reader)
 * [UPDF](https://appgallery.huawei.com/app/detail?id=com.superace.h.updf)
+
+备用
+
+* [福昕PDF](https://appgallery.huawei.com/app/detail?id=com.foxit.pdf.reader)
 * [腾讯文档](https://appgallery.huawei.com/app/detail?id=com.tencent.docsohos)
 
 ## 14 支付类
@@ -950,7 +970,8 @@ not
 
 * [云闪付](https://appgallery.huawei.com/app/detail?id=com.unionpay.hmos.wallet)
 * [支付宝](https://appgallery.huawei.com/app/detail?id=com.alipay.mobile.client)
-* [翼支付](https://appgallery.huawei.com/app/detail?id=com.bestpay.harmonyclient)
+
+备用 [翼支付](https://appgallery.huawei.com/app/detail?id=com.bestpay.harmonyclient)
 
 ## 15 网盘【常用】
 
@@ -992,9 +1013,8 @@ not [PikPak](https://mypikpak.com/zh-CN)【适配了安卓平板】免费用户�
 
 ### 鸿蒙
 
-[天翼云盘](https://appgallery.huawei.com/app/detail?id=com.dlife.ecloud)
-
-备用 [阿里云盘](https://appgallery.huawei.com/app/detail?id=com.alicloud.hmdatabox)
+1. [天翼云盘](https://appgallery.huawei.com/app/detail?id=com.dlife.ecloud)
+1. [阿里云盘](https://appgallery.huawei.com/app/detail?id=com.alicloud.hmdatabox)
 
 ## 16 效率类
 
@@ -1067,9 +1087,9 @@ not [Chrome](https://sj.qq.com/appdetail/com.android.chrome) 不太好用
 ### 鸿蒙
 
 * [知乎](https://appgallery.huawei.com/app/detail?id=com.zhihu.hmos)
-* 知识星球
+* [知识星球](https://appgallery.huawei.com/app/detail?id=com.unnoo.zsxq)
 
-## 19 AI 助手
+## 19 AI
 
 ### 通用
 
@@ -1077,7 +1097,6 @@ not [Chrome](https://sj.qq.com/appdetail/com.android.chrome) 不太好用
 
 备用
 
-* [豆包](https://sj.qq.com/appdetail/com.larus.nova)
 * [Monica](https://sj.qq.com/appdetail/cn.monica.app.monica)
 * [通义](https://sj.qq.com/appdetail/com.aliyun.tongyi)
 * [秘塔搜索](https://metaso.cn/) 不需要登录就能搜
@@ -1100,11 +1119,14 @@ not
 
 ### 鸿蒙
 
-[Kimi](https://appgallery.huawei.com/app/detail?id=com.hos.moonshot.kimichat)
-[千问](https://appgallery.huawei.com/app/detail?id=com.aliyun.tongyi4ohos)
-[讯飞星火](https://appgallery.huawei.com/app/detail?id=com.iflytek.sparkapp)
-[豆包](https://appgallery.huawei.com/app/detail?id=com.larus.nova.hm)
-[文心](https://appgallery.huawei.com/app/detail?id=com.baidu.yiyan)
+* [Kimi](https://appgallery.huawei.com/app/detail?id=com.hos.moonshot.kimichat)
+* [千问](https://appgallery.huawei.com/app/detail?id=com.aliyun.tongyi4ohos)
+* [豆包](https://appgallery.huawei.com/app/detail?id=com.larus.nova.hm)
+
+备用
+
+* [讯飞星火](https://appgallery.huawei.com/app/detail?id=com.iflytek.sparkapp)
+* [文心](https://appgallery.huawei.com/app/detail?id=com.baidu.yiyan)
 
 ## 20 智能家居
 
@@ -1155,8 +1177,8 @@ never
 
 ### 鸿蒙
 
-[中国工商银行](https://appgallery.huawei.com/app/detail?id=com.icbc.harmonyclient)
-[中国建设银行](https://appgallery.huawei.com/app/detail?id=com.ccb.mobilebank.hm)
+* [中国工商银行](https://appgallery.huawei.com/app/detail?id=com.icbc.harmonyclient)
+* [中国建设银行](https://appgallery.huawei.com/app/detail?id=com.ccb.mobilebank.hm)
 
 ## 25 营业厅
 
@@ -1173,8 +1195,8 @@ never
 
 ### 鸿蒙
 
-[中国移动](https://appgallery.huawei.com/app/detail?id=com.chinamobile.cmcc)
-[中国电信](https://appgallery.huawei.com/app/detail?id=com.ct.client.hm)
+* [中国移动](https://appgallery.huawei.com/app/detail?id=com.chinamobile.cmcc)
+* [中国电信](https://appgallery.huawei.com/app/detail?id=com.ct.client.hm)
 
 ## 26 匿名应用
 
@@ -1196,11 +1218,11 @@ never
 
 ### 鸿蒙
 
-[交管12123](https://appgallery.huawei.com/app/detail?id=com.tmri.app.harmony12123)
-[掌上12333](https://appgallery.huawei.com/app/detail?id=com.ylzinfo.chinahrss.hm)
-[国家医保服务平台](https://appgallery.huawei.com/app/detail?id=cn.hsa.app.hos)
-[国家政务服务平台](https://appgallery.huawei.com/app/detail?id=com.service.harmenyos.gov.cn)
-[电子社保卡](https://appgallery.huawei.com/app/detail?id=com.esscard.esscardapp_harmonyos)
+* [交管12123](https://appgallery.huawei.com/app/detail?id=com.tmri.app.harmony12123)
+* [掌上12333](https://appgallery.huawei.com/app/detail?id=com.ylzinfo.chinahrss.hm)
+* [国家医保服务平台](https://appgallery.huawei.com/app/detail?id=cn.hsa.app.hos)
+* [国家政务服务平台](https://appgallery.huawei.com/app/detail?id=com.service.harmenyos.gov.cn)
+* [电子社保卡](https://appgallery.huawei.com/app/detail?id=com.esscard.esscardapp_harmonyos)
 
 湖南专用
 
@@ -1338,8 +1360,8 @@ not
 
 备用
 
-[软考通](https://sj.qq.com/appdetail/me.hxyfj.rk)
-[软考真题](https://sj.qq.com/appdetail/com.doquestion) 界面太复古
+* [软考通](https://sj.qq.com/appdetail/me.hxyfj.rk)
+* [软考真题](https://sj.qq.com/appdetail/com.doquestion) 界面太复古
 
 not
 
@@ -1386,8 +1408,8 @@ not
 ### 安卓
 
 1. [泰尔网测](https://sj.qq.com/appdetail/com.knowyou.perception) 用于网速测试 和 查看是哪家宽带
-2. [WiFiAnalyzer](https://f-droid.org/packages/com.vrem.wifianalyzer) | [GitHub 源](https://github.com/VREMSoftwareDevelopment/WiFiAnalyzer) 优化您的 WiFi 网络
-3. [网络百宝箱](https://wap.tplinkcloud.com.cn/appdown/wifitool) TPLINK 出品。为网络工程师、安防工程师、IT 技术支持、工程商、集成商、电信装维等从业人员以及家庭用户提供更高效，更便捷的网络测试功能
+1. [WiFiAnalyzer](https://f-droid.org/packages/com.vrem.wifianalyzer) | [GitHub 源](https://github.com/VREMSoftwareDevelopment/WiFiAnalyzer) 优化您的 WiFi 网络
+1. [网络百宝箱](https://wap.tplinkcloud.com.cn/appdown/wifitool) TPLINK 出品。为网络工程师、安防工程师、IT 技术支持、工程商、集成商、电信装维等从业人员以及家庭用户提供更高效，更便捷的网络测试功能
 
 ### 鸿蒙
 

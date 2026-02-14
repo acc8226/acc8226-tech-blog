@@ -11,7 +11,7 @@ tags: Office 办公
 
 64 位的 WPS 有了后来居上。比 Office 2024 个人版多了支持 groupby 函数。记得开启离线功能和关闭自动升级。<!-- more -->
 
-## 表格使用
+## Excel 使用
 
 对项目所属地排序
 
@@ -46,6 +46,10 @@ tags: Office 办公
     )
 )
 ```
+
+## 注意事项
+
+如果是文本类型，用鼠标框选对应选取，则不会进行计算。这是个大坑。
 
 ## 自动化办公
 
@@ -185,7 +189,7 @@ leftDf = leftDf[leftDf[filter_col] == '否']
 print(leftDf)
 
 # 读取从表
-rightDf = pd.read_excel(r'C:\Users\kai\Desktop\手工台账.xlsx',
+rightDf = pd.read_excel(r'C:\Users\kk\Desktop\手工台账.xlsx',
                         header=None,
                         skiprows=2,
                         usecols=[1, 4, 5, 6, 7, 8, 9, 10])
