@@ -13,7 +13,7 @@ GUI 程序的开发方式太多了，这里肯定就是Python语言了，至于�
 
 那么基于 Python开 发 GUI 程序的话，也是有多种框架的，常见的有 TKinter、PyQt、PySide、wxPython、Kivy、PyGTK。
 
-PyQt 和 PySide 都是基于 Qt 框架开发的，PyQt 和 PySide 具有相似的 API 和功能，学习难度也都差不多；**另外 PySide 使用 LGPL 许可证，可以免费商业使用。但是 PyQt 使用 GPL 或商业许可证，商业许可证是付费的；**而且 Qt 打算着力培养 PySide，所以 PySide 是更有前途的，所以选择 Pyside 作为 GUI 程序开发的框架。<!-- more -->
+PyQt 和 PySide 都是基于 Qt 框架开发的，PyQt 和 PySide 具有相似的 API 和功能，学习难度也都差不多；**另外 PySide 使用 LGPL 许可证，可以免费商业使用。但是 PyQt 使用 GPL 或商业许可证，商业许可证是付费的**；而且 Qt 打算着力培养 PySide，所以 PySide 是更有前途的，所以选择 Pyside 作为 GUI 程序开发的框架。<!-- more -->
 
 pyside6 要求 3.6 以上的版本，所以这里大家要注意选择，建议新建一个 python 虚拟环境，包的依赖和版本管理更清晰；
 

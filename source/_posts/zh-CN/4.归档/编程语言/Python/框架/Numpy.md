@@ -62,3 +62,7 @@ array([[1.+0.j, 2.+0.j],
 * numpy.zeros_like 返回一个与给定数组具有相同形状和类型的、用 0 填充的新数组。
 * numpy.ones_like 返回一个与给定数组具有相同形状和类型的、用 1 填充的新数组。
 * numpy.full_like 返回一个具有与给定数组相同的形状和类型的完整数组。
+
+## 参考
+
+[NumPy 教程](https://www.runoob.com/numpy/numpy-tutorial.html) | 菜鸟教程
