@@ -27,9 +27,7 @@ Ctrl+r redo，即撤销 undo 的操作
 
 获取目前的设定值 `:set shiftwidth?`
 
-设置缩进为 10 个字符 `:set shiftwidth=10`
-
-<!-- more -->
+设置缩进为 10 个字符 `:set shiftwidth=10`<!-- more -->
 
 ### 调整文本位置
 

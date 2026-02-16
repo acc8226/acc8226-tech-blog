@@ -15,9 +15,7 @@ tags: 设计模式
 
 有限状态机，英文翻译是 Finite State Machine，缩写为 FSM，简称为状态机。状态机有 3 个组成部分：状态（State）、事件（Event）、动作（Action）。其中，事件也称为转移条件（Transition Condition）。事件触发状态的转移及动作的执行。不过，动作不是必须的，也可能只转移状态，不执行任何动作。
 
-为了方便接下来的讲解，我对游戏背景做了简化，只保留了部分状态和事件。简化之后的状态转移如下图所示：
-
-<!-- more -->
+为了方便接下来的讲解，我对游戏背景做了简化，只保留了部分状态和事件。简化之后的状态转移如下图所示：<!-- more -->
 
 ![](https://upload-images.jianshu.io/upload_images/1662509-135261223c4b7cd7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
