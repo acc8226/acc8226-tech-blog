@@ -78,7 +78,7 @@ playwright install chromium
 注：以下代码旨用于学习和研究，承诺不会用于其他任何用途。若频繁抓取可能导致你的 IP 被封禁。
 我们尊重网站的版权，仅在允许的范围内使用和公布源码。如果网站明确禁止抓取和公布源码，我们将立即停止相关行为。
 
-基于 selenium
+### 基于 selenium 的实现
 
 ```py
 import time
@@ -162,7 +162,7 @@ with open('output.csv', mode='w', newline='', encoding='utf-8') as file:
 driver.quit()
 ```
 
-基于 playwright
+### 基于 playwright 的实现
 
 ```py
 import time
