@@ -158,9 +158,24 @@ for row in ws.iter_rows(min_row=1, max_col=3, max_row=2, values_only=True):
 
 ## Data storage
 
+一旦我们拿到 cell 单元格，可以直接赋值。
+d.value = 3.14
+
 ### Saving to a file
 
-### Saving as a stream
+### 以流的形式保存
+
+如果您希望将文件保存到流中，例如在使用 Pyramid、Flask 或 Django 等网络应用程序时，您可以简单地提供一个 NamedTemporaryFile()：
+
+```py
+from tempfile import NamedTemporaryFile
+from openpyxl import Workbook
+wb = Workbook()
+with NamedTemporaryFile() as tmp:
+        wb.save(tmp.name)
+        tmp.seek(0)
+        stream = tmp.read()
+```
 
 ## Loading from a file
 

@@ -20,7 +20,10 @@ categories:
 * 携程订酒店、汽车票
 * 看视频用优爱腾
 * 听歌可选 [网易云音乐](https://music.163.com)
-* 看个新闻可选 今日头条 或者 网易新闻，[腾讯网](https://www.qq.com/)
+* 看个新闻可选 今日头条 或者 网易新闻，[腾讯网](https://www.qq.com)
+
+为 edge 浏览器创建一个特定书签。
+这里可以创建一个快捷方式，并为其凭接网址即可。`"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" http://www.baidu.com`
 
 ### 学会盲打
 

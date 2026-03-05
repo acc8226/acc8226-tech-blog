@@ -99,7 +99,7 @@ not [Google Authenticator](https://google-authenticator.en.softonic.com/android)
 #### 鸿蒙
 
 1. [国家网络身份认证](https://appgallery.huawei.com/app/detail?id=cn.cyberIdentity.certificationharmonyos)
-1. [2FA验证器](https://appgallery.huawei.com/app/detail?id=top.bundows.twofas)
+1. [2FA 验证器](https://appgallery.huawei.com/app/detail?id=top.bundows.twofas)
 1. [QQ 安全中心](https://appgallery.huawei.com/app/detail?id=com.tencent.mqqtoken)
 
 ### 1.2 密码管理【重要】
@@ -126,7 +126,7 @@ Bitwarden【已适配安卓平板】[Github 版](https://github.com/bitwarden/an
 
 #### 鸿蒙
 
-[QQ 邮箱](https://appgallery.huawei.com/app/detail?id=com.tencent.qqmail.hmos) 现在已有广告，我暂用自带邮箱客户端
+[QQ 邮箱](https://appgallery.huawei.com/app/detail?id=com.tencent.qqmail.hmos) 现在已有广告，我暂用自带电子邮件
 
 ### 1.4 倒数日
 
@@ -136,20 +136,20 @@ Bitwarden【已适配安卓平板】[Github 版](https://github.com/bitwarden/an
 
 #### 鸿蒙
 
-[mDays倒计时](https://appgallery.huawei.com/app/detail?id=com.wtkj.app.counter.hm)
+[mDays 倒计时](https://appgallery.huawei.com/app/detail?id=com.wtkj.app.counter.hm)
 
 ### 1.5 阅读
 
 #### 安卓
 
 * [番茄免费小说](https://sj.qq.com/appdetail/com.dragon.read) 书库较全，免费用户会遇到插播广告，有的想看的书可以免费离线下载，很适合离线用，**比较吃外存**
-* [微信读书](https://sj.qq.com/appdetail/com.tencent.weread) 书库全，但付费书较多
 * ——————— ฅ՞• •՞ฅ ———————
 * 【本地】[FBReader](https://fbreader.org/android#download) 一款本地电子书阅读器，但是支持 pdf 需要付费估计体验也一般
 
 可选
 
 * [阅读](https://github.com/gedoor/legado)
+* [微信读书](https://sj.qq.com/appdetail/com.tencent.weread) 书库全，但付费书较多
 * ——————— ฅ՞• •՞ฅ ———————
 * [京东读书](https://sj.qq.com/appdetail/com.jd.app.reader) 送了影响力 和 乌合之众几本书，可以看一段时间
 * [网易蜗牛阅读](https://sj.qq.com/appdetail/com.netease.snailread) 每天可以免费看 1 个小时付费书籍
@@ -525,8 +525,8 @@ not [泰捷视频](https://www.51togic.com/%e6%b3%b0%e6%8d%b7%e8%a7%86%e9%a2%91)
 
 备用
 
-1. [爱奇艺](https://appgallery.huawei.com/app/detail?id=com.qiyi.video.hmy)
-1. [腾讯视频](https://appgallery.huawei.com/app/detail?id=com.tencent.videohm)
+* [爱奇艺](https://appgallery.huawei.com/app/detail?id=com.qiyi.video.hmy)
+* [腾讯视频](https://appgallery.huawei.com/app/detail?id=com.tencent.videohm)
 * [优酷视频](https://appgallery.huawei.com/app/detail?id=com.youku.next)
 * [芒果TV](https://appgallery.huawei.com/app/detail?id=com.mgtv.phone1905)
 * [电影网](https://appgallery.huawei.com/app/detail?id=com.m1905.hmmobilefree)
@@ -631,7 +631,7 @@ not
 
 ### 安卓 & iPhone
 
-1. [高德地图](https://sj.qq.com/appdetail/com.autonavi.minimap) ｜ [百度地图](https://sj.qq.com/appdetail/com.baidu.BaiduMap) ｜ [腾讯地图](https://sj.qq.com/appdetail/com.tencent.map)【小程序】 比 app 更清爽
+[高德地图](https://sj.qq.com/appdetail/com.autonavi.minimap) ｜ [百度地图](https://sj.qq.com/appdetail/com.baidu.BaiduMap) ｜ [腾讯地图](https://sj.qq.com/appdetail/com.tencent.map)【小程序】 比 app 更清爽
 
 ### 安卓平板
 
