@@ -577,7 +577,7 @@ if /i "%DEBUG%"=="true" (
 程序脚本：选择该 bat
 在完成基本任务就创建后。打开属性对话框，设置为不管用户是否登录都要运行。点击确定，然后输入运行此任务的用户账户的用户名和密码。点击“确定”进行保存。
 
-当然也可通过 SkipUAC [官网下载](https://www.sordum.org/files/download/skip-uac-prompt/SkipUAC.zip) | [123 网盘分享](https://www.123865.com/s/GJ9zVv-7owRv) 小工具来运行该任务并加入开机自启。
+当然也可通过 SkipUAC [官网下载](https://www.sordum.org/files/download/skip-uac-prompt/SkipUAC.zip) 小工具来运行该任务并加入开机自启。
 
 ## 遇到过的问题
 
