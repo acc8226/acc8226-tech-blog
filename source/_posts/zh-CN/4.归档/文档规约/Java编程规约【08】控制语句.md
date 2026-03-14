@@ -15,9 +15,11 @@ categories: 文档规约
 
 ```java
 public class SwitchString {
+
     public static void main(String[] args) {
         method(null);
     }
+
     public static void method(String param) {
         switch (param) {
             // 肯定不是进入这里
@@ -82,6 +84,7 @@ return obj;
 
 ```java
 public void findBoyfriend(Man man) {
+
     if (man.isUgly()) {
         System.out.println("本姑娘是外貌协会的资深会员");
         return;
@@ -150,12 +153,12 @@ public Lock getLock(boolean fair) {
 调用方传了一个 1000 的用户 id 数组过来后，查询信息后，内存爆了。
 
 13\.【参考】下列情形，需要进行参数校验：
-1）调用频次低的方法。
-2）执行时间开销很大的方法。此情形中，参数校验时间几乎可以忽略不计，但如果因为参数错误导致中间执行回
-退，或者错误，那得不偿失。
-3）需要极高稳定性和可用性的方法。
-4）对外提供的开放接口，不管是 RPC / API / HTTP 接口。
-5）敏感权限入口。
+
+1. 调用频次低的方法。
+1. 执行时间开销很大的方法。此情形中，参数校验时间几乎可以忽略不计，但如果因为参数错误导致中间执行回退，或者错误，那得不偿失。
+1. 需要极高稳定性和可用性的方法。
+1. 对外提供的开放接口，不管是 RPC / API / HTTP 接口。
+1. 敏感权限入口。
 
 笔记：根据业务适当调整是可以的。
 
@@ -170,6 +173,6 @@ public Lock getLock(boolean fair) {
 
 ## 参考
 
-1. 2022 Java开发手册(黄山版).pdf
+1. 2022 Java 开发手册(黄山版).pdf
 2. 《编写高质量代码：改善 Java 程序的 151 个建议》
 3. 白话阿里巴巴Java开发手册（安全规约） - 李艳鹏 - 简书(<https://www.jianshu.com/p/9528c4ea1504>)

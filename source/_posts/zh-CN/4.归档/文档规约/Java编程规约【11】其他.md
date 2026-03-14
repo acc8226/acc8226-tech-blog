@@ -6,7 +6,7 @@ categories: 文档规约
 ---
 
 1.【强制】在使用正则表达式时，利用好其预编译功能，可以有效加快正则匹配速度。
-说明：不要在方法体内定义：Pattern pattern = Pattern.compile("规则");
+说明：不要在方法体内定义：`Pattern pattern = Pattern.compile("规则")`;
 
 2.【强制】避免用 ApacheBeanutils 进行属性的 copy。
 说明：ApacheBeanUtils 性能较差，可以使用其他方案比如 SpringBeanUtils，CglibBeanCopier，注意均是浅拷贝。

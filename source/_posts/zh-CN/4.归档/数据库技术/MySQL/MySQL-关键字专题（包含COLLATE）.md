@@ -110,7 +110,7 @@ mysql 中和 utf8mb4 相关的所有 COLLATE
 
 **结论：推荐使用`utf8mb4_unicode_ci`**，对于已经用了`utf8mb4_general_ci`的系统，也没有必要花时间改造。
 
-另外需要注意的一点是，从 mysql 8.0 开始，mysql 默认的 `CHARSET` 已经不再是 `Latin1` 了，改为了 `utf8mb4`（[参考链接](https://dev.mysql.com/doc/refman/8.0/en/charset-applications.html)），并且默认的COLLATE也改为了`utf8mb4_0900_ai_ci`。`utf8mb4_0900_ai_ci`大体上就是`unicode`的进一步细分，`0900` 指代 unicode 比较算法的编号（Unicode Collation Algorithm version），`ai`表示accent insensitive（发音无关），例如e, è, é, ê 和 ë是一视同仁的。
+另外需要注意的一点是，从 mysql 8.0 开始，mysql 默认的 `CHARSET` 已经不再是 `Latin1` 了，改为了 `utf8mb4`（[参考链接](https://dev.mysql.com/doc/refman/8.0/en/charset-applications.html)），并且默认的COLLATE也改为了 `utf8mb4_0900_ai_ci`。`utf8mb4_0900_ai_ci`大体上就是`unicode`的进一步细分，`0900` 指代 unicode 比较算法的编号（Unicode Collation Algorithm version），`ai`表示accent insensitive（发音无关），例如e, è, é, ê 和 ë是一视同仁的。
 
 [相关参考链接1](https://www.monolune.com/what-is-the-utf8mb4_0900_ai_ci-collation/)
 [相关参考链接2](https://dev.mysql.com/doc/refman/8.0/en/charset-collation-names.html)
@@ -125,7 +125,7 @@ mysql 中和 utf8mb4 相关的所有 COLLATE
 CREATE DATABASE <db_name> DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ```
 
-如果库级别没有设置 `CHARSET` 和 `COLLATE`，则库级别默认的 `CHARSET` 和 `COLLATE` 使用实例级别的设置。在mysql8.0以下版本中，你如果什么都不修改，默认的 `CHARSET` 是 `Latin1`，默认的`COLLATE` 是`latin1_swedish_ci`。从mysql8.0开始，默认的 `CHARSET` 已经改为了`utf8mb4`，默认的 `COLLATE` 改为了`utf8mb4_0900_ai_ci`。
+如果库级别没有设置 `CHARSET` 和 `COLLATE`，则库级别默认的 `CHARSET` 和 `COLLATE` 使用实例级别的设置。在 mysql8.0 以下版本中，你如果什么都不修改，默认的 `CHARSET` 是 `Latin1`，默认的`COLLATE` 是`latin1_swedish_ci`。从mysql8.0开始，默认的 `CHARSET` 已经改为了`utf8mb4`，默认的 `COLLATE` 改为了`utf8mb4_0900_ai_ci`。
 
 表级别的 `COLLATE` 设置，则是在 `CREATE TABLE` 的时候加上相关设置语句，例如：
 
@@ -171,5 +171,4 @@ SELECT field1, field2 FROM table1 ORDER BY field1 COLLATE utf8mb4_unicode_ci;
 
 ## 参考
 
-MYSQL 中的 COLLATE 是什么？ - 云+社区 - 腾讯云
-<https://cloud.tencent.com/developer/article/1366841?fromSource=waitui>
+[MYSQL 中的 COLLATE 是什么？](https://cloud.tencent.com/developer/article/1366841?fromSource=waitui) - 云+社区 - 腾讯云

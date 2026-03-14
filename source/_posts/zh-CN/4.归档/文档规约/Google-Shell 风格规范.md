@@ -19,9 +19,7 @@ Bash 是唯一允许可执行程序使用的 shell / 脚本语言。
 
 ### When to use Shell[](https://google.github.io/styleguide/shellguide.html#when-to-use-shell)
 
-Shell 应该只用于小型实用程序或简单的包装器脚本。
-
-<!-- more -->
+Shell 应该只用于小型实用程序或简单的包装器脚本。<!-- more -->
 
 虽然 shell 脚本不是一种开发语言，但它用于编写贯穿 Google 的各种实用脚本。 这个样式指南更多的是对其使用的认可，而不是建议将其用于广泛的部署。
 

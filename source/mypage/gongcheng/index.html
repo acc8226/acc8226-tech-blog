@@ -1,269 +1,277 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<head>
-<meta charset="UTF-8">
-<title>工程-开标信息查询</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<style>
-body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;font-size:14px;color:#333;background:#f5f5f5}
-h1{text-align:center;margin:12px 0;font-size:20px}
-.wrap{max-width:1200px;margin:0 auto;padding:10px}
-.bar{display:flex;gap:12px;align-items:center;margin-bottom:10px;flex-wrap:wrap}
+  <head>
+      <meta charset="UTF-8">
+      <title>工程-开标信息查询</title>
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <style>
+        body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;font-size:14px;color:#333;background:#f5f5f5}
+        h1{text-align:center;margin:12px 0;font-size:20px}
+        .wrap{max-width:1200px;margin:0 auto;padding:10px}
+        .bar{display:flex;gap:12px;align-items:center;margin-bottom:10px;flex-wrap:wrap}
 
-button{
-  padding:8px 16px;
-  font-size:16px;
-  min-height:40px;
-}
+        button{
+          padding:8px 16px;
+          font-size:16px;
+          min-height:40px;
+        }
 
-input[type=date] {
-  position: relative;
-  padding: 8px 10px;
-  font-size: 16px;
-  cursor: pointer;
-  background: #fff;
-  /* 关键：把原生图标区域透明化并占满 */
-  &::-webkit-calendar-picker-indicator {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    color: transparent;
-    cursor: pointer;
-  }
-}
+        input[type=date] {
+          position: relative;
+          padding: 8px 10px;
+          font-size: 16px;
+          cursor: pointer;
+          background: #fff;
+          /* 关键：把原生图标区域透明化并占满 */
+          &::-webkit-calendar-picker-indicator {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            color: transparent;
+            cursor: pointer;
+          }
+        }
 
-table{width:100%;border-collapse:collapse;background:#fff}
-th,td{padding:6px 8px;border:1px solid #e0e0e0;text-align:left}
-th{background:#fafafa;position:sticky;top:0;z-index:1}
-tr:nth-child(even){background:#fafafa}
-caption{margin-bottom:6px;font-weight:700}
-small{color:#666}
+        table{width:100%;border-collapse:collapse;background:#fff}
+        th,td{padding:6px 8px;border:1px solid #e0e0e0;text-align:left}
+        th{background:#fafafa;position:sticky;top:0;z-index:1}
+        tr:nth-child(even){background:#fafafa}
+        caption{margin-bottom:6px;font-weight:700}
+        small{color:#666}
 
-/* ===== 全局放大一号 ===== */
-body,
-input,
-button,
-table {
-  font-size: 16px;          /* 基准字号 +1 */
-  line-height: 1.5;         /* 防止行高过挤 */
-}
+        /* ===== 全局放大一号 ===== */
+        body,
+        input,
+        button,
+        table {
+          font-size: 16px;          /* 基准字号 +1 */
+          line-height: 1.5;         /* 防止行高过挤 */
+        }
 
-/* 表格文字同步放大 */
-th,
-td {
-  font-size: 16px;
-  padding: 8px 10px;        /* 同步增加一点内间距，看起来更宽松 */
-}
+        /* 表格文字同步放大 */
+        th,
+        td {
+          font-size: 16px;
+          padding: 8px 10px;        /* 同步增加一点内间距，看起来更宽松 */
+        }
 
-/* 标题再大一点 */
-h1 {
-  font-size: 24px;
-}
+        /* 标题再大一点 */
+        h1 {
+          font-size: 24px;
+        }
 
-/* 按钮/输入框文字 */
-button,
-input[type=date] {
-  font-size: 16px;
-}
+        /* 按钮/输入框文字 */
+        button,
+        input[type=date] {
+          font-size: 16px;
+        }
 
-/* ===== 加载遮罩 ===== */
-#loader{
-  position:fixed;
-  inset:0;                       /* 上下左右全满 */
-  background:rgba(255,255,255,.75);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  z-index:9999;
-  transition:opacity .3s;
-}
-#loader.hidden{opacity:0;pointer-events:none} /* 隐藏时用 */
-.spinner{
-  width:48px;height:48px;
-  border:4px solid #e0e0e0;
-  border-top-color:#0070f3;
-  border-radius:50%;
-  animation:spin 1s linear infinite;
-}
-@keyframes spin{to{transform:rotate(360deg)}}
-</style>
-</head>
-<body>
+        /* ===== 加载遮罩 ===== */
+        #loader{
+          position:fixed;
+          inset:0;                       /* 上下左右全满 */
+          background:rgba(255,255,255,.75);
+          display:flex;
+          align-items:center;
+          justify-content:center;
+          z-index:9999;
+          transition:opacity .3s;
+        }
+        #loader.hidden{opacity:0;pointer-events:none} /* 隐藏时用 */
+        .spinner{
+          width:48px;height:48px;
+          border:4px solid #e0e0e0;
+          border-top-color:#0070f3;
+          border-radius:50%;
+          animation:spin 1s linear infinite;
+        }
+        @keyframes spin{to{transform:rotate(360deg)}}
+      </style>
+    </head>
+  <body>
+    <!-- 加载遮罩 -->
+    <div id="loader">
+      <div class="spinner"></div>
+    </div>
 
-<!-- 加载遮罩 -->
-<div id="loader">
-  <div class="spinner"></div>
-</div>
+    <div class="wrap">
+      <h1>工程项目 · 开标查询</h1>
+      <div class="bar">
+        <label>
+          选择日期：
+          <input type="date" id="datePicker">
+        </label>
+        <button id="btnRefresh">刷新</button>
+        <span id="status"></span>
+      </div>
+      <table id="table">
+        <caption id="caption"></caption>
+        <thead>
+          <tr>
+            <th>序号</th><th>时间</th><th>分类</th><th>标段名</th><th>开标地点</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <script>
+      /* ========== 工具 ========== */
+      const REGION = '4307';
 
-<div class="wrap">
-  <h1>工程项目 · 开标查询</h1>
-  <div class="bar">
-    <label>
-      选择日期：
-      <input type="date" id="datePicker">
-    </label>
-    <button id="btnRefresh">刷新</button>
-    <span id="status"></span>
-  </div>
-  <table id="table">
-    <caption id="caption"></caption>
-    <thead>
-      <tr>
-        <th>序号</th><th>时间</th><th>分类</th><th>标段名</th><th>开标地点</th>
-      </tr>
-    </thead>
-    <tbody></tbody>
-  </table>
-</div>
+      // 0. host 池子
+      const HOSTS = ['www', 'hnsbenji', 'changsha', 'zhuzhou',   'xiangtan'
+                    ,'hengyang', 'shaoyang', 'yueyang', 'changde', 'zhangjiajie'
+                    ,'yiyang', 'loudi', 'chenzhou', 'yongzhou', 'huaihua'
+                    , 'xiangxi'
+                  ];
 
-<script>
-/* ========== 工具 ========== */
-const REGION = '4307';
+      const HOST = HOSTS[Math.floor(Math.random() * HOSTS.length)];
 
-// 0. host 池子
-const HOSTS = ['www', 'hnsbenji', 'changsha', 'zhuzhou',   'xiangtan'
-              ,'hengyang', 'shaoyang', 'yueyang', 'changde', 'zhangjiajie'
-              ,'yiyang', 'loudi', 'chenzhou', 'yongzhou', 'huaihua'
-              , 'xiangxi'
-            ];
+      const API_TEMP = date => `https://${HOST}.hnsggzy.com/tradeApi/constructionSection/getCalendarByDate?date=${date}&regionCode=${REGION}`;
 
-const HOST = HOSTS[Math.floor(Math.random() * HOSTS.length)];
+      // 复用：将 Date 转为北京时间 YYYY-MM-DD
+      const formatDateCN = d => d.toLocaleDateString('zh-CN', {
+        timeZone: 'Asia/Shanghai',
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit'
+      }).replace(/\//g, '-');
 
-const API_TEMP = date => `https://${HOST}.hnsggzy.com/tradeApi/constructionSection/getCalendarByDate?date=${date}&regionCode=${REGION}`;
+      // 复用：获取今天日期字符串（北京时间，不受服务器时区影响）
+      const getTodayStr = () => formatDateCN(new Date());
 
-// 复用：将 Date 转为北京时间 YYYY-MM-DD
-const formatDateCN = d => d.toLocaleDateString('zh-CN', {
-  timeZone: 'Asia/Shanghai',
-  year: 'numeric',
-  month: '2-digit',
-  day: '2-digit'
-}).replace(/\//g, '-');
+      const fmtDate = d => d.toLocaleString('zh-CN', {
+        timeZone: 'Asia/Shanghai',  // 顺便把表格时间也固定时区，更保险
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit',
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: false
+      });
 
-// 复用：获取今天日期字符串（北京时间，不受服务器时区影响）
-const getTodayStr = () => formatDateCN(new Date());
+      const parseTime = str => new Date(str.replace(' ', 'T'));
+      const shorten = s => s.replace(/直播大厅(\d+)/, '$1');
 
-const fmtDate = d => d.toLocaleString('zh-CN', {
-  timeZone: 'Asia/Shanghai',  // 顺便把表格时间也固定时区，更保险
-  year: 'numeric',
-  month: '2-digit',
-  day: '2-digit',
-  hour: '2-digit',
-  minute: '2-digit',
-  hour12: false
-});
+      /* ========== 加载遮罩控制 ========== */
+      const loader = document.getElementById('loader');
 
-const parseTime = str => new Date(str.replace(' ', 'T'));
-const shorten = s => s.replace(/直播大厅(\d+)/, '$1');
-
-/* ========== 加载遮罩控制 ========== */
-const loader = document.getElementById('loader');
-function showLoader() {
-  loader.classList.remove('hidden');
-  btnRefresh.disabled = true;
-  datePicker.disabled = true;
-}
-function hideLoader() {
-  loader.classList.add('hidden');
-  btnRefresh.disabled = false;
-  datePicker.disabled = false;
-}
-
-/* ========== 核心 ========== */
-async function loadByDate(date) {
-  showLoader();
-  const status = document.getElementById('status');
-  status.textContent = `正在加载 ${date} 数据...`;
-  
-  try {
-    const resp = await fetch(API_TEMP(date));
-    if (!resp.ok) throw new Error(resp.statusText);
-    const json = await resp.json();
-    const list = json.data?.constructionSectionDTOS || [];
-
-    const rows = list.map((item) => {
-      let d = parseTime(item.bidOpeningTimeStart);
-      if (d.getHours() === 10 && d.getMinutes() === 0) {
-        d.setMinutes(30);
-        d.setHours(9);
+      function showLoader() {
+        loader.classList.remove('hidden');
+        btnRefresh.disabled = true;
+        datePicker.disabled = true;
       }
-      const 分类 = (d.getHours() === 9 && d.getMinutes() === 0) ? '机器管' : '老系统';
-      return {
-        时间: fmtDate(d),
-        分类,
-        标段名: item.bidSectionName,
-        开标地点: shorten(item.bidOpeningSite)
-      };
-    })
-    .sort((a, b) =>
-	    b.分类.localeCompare(a.分类, 'zh-CN')
-        || a.开标地点.localeCompare(b.开标地点, 'zh-CN')
-    );
-	
-	// 3. 再统一编号（1 开始）
-	rows.forEach((r, idx) => { r.序号 = idx + 1; });
+      function hideLoader() {
+        loader.classList.add('hidden');
+        btnRefresh.disabled = false;
+        datePicker.disabled = false;
+      }
 
-    renderTable(rows);
-    status.textContent = `共 ${rows.length} 条记录（${date}）`;
-  } catch (e) {
-    status.textContent = '加载失败：' + e.message;
-    tbody.innerHTML = '<tr><td colspan="5" style="text-align:center;color:red">出错了，请稍后重试</td></tr>';
-  } finally {
-    hideLoader();
-  }
-}
+      /* ========== 核心 ========== */
+      async function loadByDate(date) {
+        showLoader();
+        const status = document.getElementById('status');
+        status.textContent = `正在加载 ${date} 数据...`;
+        
+        try {
+          const resp = await fetch(API_TEMP(date));
+          if (!resp.ok) throw new Error(resp.statusText);
+          const json = await resp.json();
+          const list = json.data?.constructionSectionDTOS || [];
 
-/* ========== 统一入口：静默设置日期 + 加载 ========== */
-function setDateAndLoad(date) {
-  datePicker.removeEventListener('change', onDateChange); // 先解绑
-  datePicker.value = date;                                // 静默赋值
-  datePicker.addEventListener('change', onDateChange);    // 重新绑定
-  loadByDate(date);
-}
+          const rows = list.map((item) => {
+            let d = parseTime(item.bidOpeningTimeStart);
+            if (d.getHours() === 10 && d.getMinutes() === 0) {
+              d.setMinutes(30);
+              d.setHours(9);
+            }
+            
+            // 分类逻辑：先判断时间，时间符合再看 isassistpb
+            let 分类;
+            if (d.getHours() === 9 && d.getMinutes() === 0) {
+              // 9:00 开标：根据 isassistpb 判断
+              分类 = item.isassistpb === "0" ? '非机器管' : '机器管';
+            } else {
+              // 非 9:00 开标：直接老系统
+              分类 = '老系统';
+            }
 
-/* 用户手动选择日期 */
-function onDateChange() {
-  if (!datePicker.value) {        // 清除 → 回今天
-    setDateAndLoad(getTodayStr());  // 用工具函数
-    return;
-  }
-  loadByDate(datePicker.value);
-}
+            return {
+              时间: fmtDate(d),
+              分类,
+              标段名: item.bidSectionName,
+              开标地点: shorten(item.bidOpeningSite)
+            };
+          })
+          .sort((a, b) =>
+            b.分类.localeCompare(a.分类, 'zh-CN')
+              || a.开标地点.localeCompare(b.开标地点, 'zh-CN')
+          );
+        
+          // 3. 再统一编号（1 开始）
+          rows.forEach((r, idx) => { r.序号 = idx + 1; });
+          renderTable(rows);
+          status.textContent = `共 ${rows.length} 条记录（${date}）`;
+        } catch (e) {
+          status.textContent = '加载失败：' + e.message;
+          tbody.innerHTML = '<tr><td colspan="5" style="text-align:center;color:red">出错了，请稍后重试</td></tr>';
+        } finally {
+          hideLoader();
+        }
+      }
 
-/* 刷新按钮：加载当前选中日期（若为空则回今天）*/
-function loadToday() {
-  const current = datePicker.value || getTodayStr();  // 用工具函数
-  setDateAndLoad(current);
-}
+      /* ========== 统一入口：静默设置日期 + 加载 ========== */
+      function setDateAndLoad(date) {
+        datePicker.removeEventListener('change', onDateChange); // 先解绑
+        datePicker.value = date;                                // 静默赋值
+        datePicker.addEventListener('change', onDateChange);    // 重新绑定
+        loadByDate(date);
+      }
 
-function renderTable(data) {
-  const tbody = document.querySelector('#table tbody');
-  if (!data.length) {
-    tbody.innerHTML = '<tr><td colspan="5" style="text-align:center;color:#999">本日无开标</td></tr>';
-    return;
-  }
-  tbody.innerHTML = data.map(r => `
-    <tr>
-      <td>${r.序号}</td>
-      <td>${r.时间}</td>
-      <td>${r.分类}</td>
-      <td>${r.标段名}</td>
-      <td>${r.开标地点}</td>
-    </tr>`).join('');
-}
+      /* 用户手动选择日期 */
+      function onDateChange() {
+        if (!datePicker.value) {        // 清除 → 回今天
+          setDateAndLoad(getTodayStr());  // 用工具函数
+          return;
+        }
+        loadByDate(datePicker.value);
+      }
 
-/* ========== 入口 ========== */
-const btnRefresh = document.getElementById('btnRefresh');
-const datePicker = document.getElementById('datePicker');
+      /* 刷新按钮：加载当前选中日期（若为空则回今天）*/
+      function loadToday() {
+        const current = datePicker.value || getTodayStr();  // 用工具函数
+        setDateAndLoad(current);
+      }
 
-/* ========== 绑定事件 ========== */
-datePicker.addEventListener('change', onDateChange);
-btnRefresh.addEventListener('click', loadToday);
+      function renderTable(data) {
+        const tbody = document.querySelector('#table tbody');
+        if (!data.length) {
+          tbody.innerHTML = '<tr><td colspan="5" style="text-align:center;color:#999">本日无开标</td></tr>';
+          return;
+        }
+        tbody.innerHTML = data.map(r => `
+          <tr>
+            <td>${r.序号}</td>
+            <td>${r.时间}</td>
+            <td>${r.分类}</td>
+            <td>${r.标段名}</td>
+            <td>${r.开标地点}</td>
+          </tr>`).join('');
+      }
 
-/* ========== 首次进页面 ========== */
-setDateAndLoad(getTodayStr());  // 用工具函数，不再是 toISOString()
-</script>
-</body>
+      /* ========== 入口 ========== */
+      const btnRefresh = document.getElementById('btnRefresh');
+      const datePicker = document.getElementById('datePicker');
+
+      /* ========== 绑定事件 ========== */
+      datePicker.addEventListener('change', onDateChange);
+      btnRefresh.addEventListener('click', loadToday);
+
+      /* ========== 首次进页面 ========== */
+      setDateAndLoad(getTodayStr());  // 用工具函数，不再是 toISOString()
+    </script>
+  </body>
 </html>

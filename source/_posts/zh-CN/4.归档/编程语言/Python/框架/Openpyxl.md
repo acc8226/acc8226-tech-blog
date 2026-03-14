@@ -1,5 +1,5 @@
 ---
-title: Openpyxl
+title: openpyxl
 date: 2026-03-03 22:04:17
 updated: 2026-03-03 22:04:17
 categories:
@@ -23,6 +23,7 @@ ws.append([1, 2, 3])
 wb.save("example.xlsx")
 ```
 
+<!-- more -->
 结果会显示 2 行。第一行为 A1，第二行分别为 1、2、3
 
 ## 创建工作簿
