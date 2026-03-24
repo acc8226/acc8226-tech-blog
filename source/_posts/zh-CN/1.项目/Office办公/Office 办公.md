@@ -15,7 +15,7 @@ tags: Office 办公
 
 对项目所属地排序
 
-```excel
+```vb
 =LET(
     lastRow, LOOKUP(2,1/(Sheet1!K:K<>""),ROW(Sheet1!K:K)),
     dataRange, Sheet1!K2:INDEX(Sheet1!K:K,lastRow),
@@ -32,7 +32,7 @@ tags: Office 办公
 
 特定日期内对项目所属地排序
 
-```excel
+```vb
 =LET(
     lastRow, LOOKUP(2,1/(Sheet1!K:K<>""),ROW(Sheet1!K:K)),
     dataRange, Sheet1!K2:INDEX(Sheet1!K:K,lastRow),
