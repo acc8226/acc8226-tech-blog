@@ -64,7 +64,7 @@ categories: 我的创作
 #### 1.1.3 截图
 
 * 【win 绿色版 & mac】[PixPin](https://pixpinapp.com) 不付费也能使用 OCR 和长截图功能 ｜ [Snipaste](https://zh.snipaste.com/) | [小旺截图](https://www.xiaowang.com)
-* liunx 系统自带 或 [Snipaste](https://zh.snipaste.com/)
+* liunx 系统自带 或 [Snipaste](https://zh.snipaste.com)
 
 #### 1.1.4 护眼
 
