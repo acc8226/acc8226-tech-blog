@@ -143,18 +143,18 @@ Albert 安装失败了，[ulauncher](https://ulauncher.io) 是可以，但是不
 
 ### 雷柏键盘 专用
 
-fn + f1 打开浏览器 uos
-fn + f2 打开邮箱 uos
-fn + f3 打开计算器 uos、ubuntu、opensuse
-fn + f4 打开预览 同 win ubuntu 打开搜索 opensuse
-fn + f5 打开显示器设置 uos、ubuntu 打开系统设置 opensuse
-fn + f6 上一曲 uos、ubuntu、opensuse
-fn + f7 下一曲 uos、ubuntu、opensuse
-fn + f8 暂停 播放 uos、ubuntu、opensuse
-fn + f9 停止 uos、ubuntu、opensuse
-fn + f10 静音 uos、ubuntu、opensuse
-fn + f11 降低音量 uos、ubuntu、opensuse
-fn + f12 升高音量 uos、ubuntu、opensuse
+* fn + f1 打开浏览器 uos
+* fn + f2 打开邮箱 uos
+* fn + f3 打开计算器 uos、ubuntu、opensuse
+* fn + f4 打开预览 同 win ubuntu 打开搜索 opensuse
+* fn + f5 打开显示器设置 uos、ubuntu 打开系统设置 opensuse
+* fn + f6 上一曲 uos、ubuntu、opensuse
+* fn + f7 下一曲 uos、ubuntu、opensuse
+* fn + f8 暂停 播放 uos、ubuntu、opensuse
+* fn + f9 停止 uos、ubuntu、opensuse
+* fn + f10 静音 uos、ubuntu、opensuse
+* fn + f11 降低音量 uos、ubuntu、opensuse
+* fn + f12 升高音量 uos、ubuntu、opensuse
 
 ### 系统快捷键
 
