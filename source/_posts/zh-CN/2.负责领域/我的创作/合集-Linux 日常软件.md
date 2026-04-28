@@ -14,14 +14,13 @@ categories: 我的创作
 ### tar
 
 打包 `rm -rf html.tar.gz && tar czvf html.tar.gz *`
+<!-- more -->
 
 ## 拓展软件使用
 
 ### rss 订阅
 
 [FreshRSS](https://www.freshrss.org) a free, self-hostable feeds aggregator
-
-<!-- more -->
 
 ### 网盘搭建
 

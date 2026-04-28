@@ -23,7 +23,7 @@ categories: 我的创作
 * 【限免】限时免费
 * 【精品软件】对软件的极高评价
 
-挑选软件我尽量考虑以免费为主。
+挑选软件我尽量考虑以免费为主。<!-- more -->
 
 ## 1【常用】lang 编程语言
 
@@ -203,10 +203,12 @@ not【全平台 付费】[Beyond Compare](https://www.beyondcompare.cc)
 * ——————— ฅ՞• •՞ฅ ———————
 * 【全平台】[Eclipse](https://www.eclipse.org/downloads) ｜ [aliyun mirror](https://mirrors.aliyun.com/eclipse/technology/epp/downloads/release/) 优点是占用内存稍小
 * 【全平台 对非商业用途免费】[IntelliJ IDEA](https://www.jetbrains.com.cn/idea)，其中 [EPA 版本](https://www.jetbrains.com/resources/eap/) 更新太频繁不推荐
-* 【全平台 免费】[SpringTools](https://spring.io/tools)
+* 【全平台 免费】[SpringTools](https://spring.io/tools) for Java EE
 * ——————— ฅ՞• •՞ฅ ———————
-* 【全平台 对非商业用途免费】[PyCharm](https://www.jetbrains.com.cn/pycharm)
-* 【全平台 对非商业用途免费】[WebStorm](https://www.jetbrains.com.cn/webstorm)
+* 【全平台 对非商业用途免费】[PyCharm](https://www.jetbrains.com.cn/pycharm) for python
+* ——————— ฅ՞• •՞ฅ ———————
+* 【全平台 对非商业用途免费】[WebStorm](https://www.jetbrains.com.cn/webstorm) for 前端
+* ——————— ฅ՞• •՞ฅ ———————
 * 【win mac】[Visual Studio](https://visualstudio.microsoft.com/zh-hans) 你可以使用 C#、F# 或 Visual Basic 语言编写 .NET 应用
 * ——————— ฅ՞• •՞ฅ ———————
 * [DevEco Studio](https://developer.huawei.com/consumer/cn/deveco-studio/resources/) 面向 HarmonyOS 应用及元服务开发者提供的集成开发环境
@@ -219,8 +221,6 @@ not【全平台 付费】[Beyond Compare](https://www.beyondcompare.cc)
 * [Turbo](https://turbo.build) Turbo is an incremental bundler and build system optimized for JavaScript and TypeScript, written in Rust.
 * [Vite](https://cn.vitejs.dev) 下一代的前端工具链
 * [Webpack](https://www.webpackjs.com) 功能强大，适用于各种规模的前端项目，支持复杂的构建流程和优化。
-
-<!-- more -->
 
 ### 7.2 Java 应用构建工具
 

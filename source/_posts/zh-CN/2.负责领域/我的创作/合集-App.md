@@ -1053,19 +1053,20 @@ not
 
 备用
 
+* [雨见浏览器](https://www.yujianweb.cn/) 有特色，可玩性强
 * [X 浏览器](https://sj.qq.com/appdetail/com.mmbox.xbrowser) 只有 1M 大小，占用极少的资源，启动速度飞快。其中扫描二维码会自动复制到粘贴功能很好用
-* Firefox 火狐浏览器 [应用宝版](https://sj.qq.com/appdetail/org.mozilla.firefox) | [国外商店版](https://firefox.en.uptodown.com/android)
+* Firefox 火狐浏览器 [应用宝版](https://sj.qq.com/appdetail/org.mozilla.firefox) | 高级用户可在 https://ftp.mozilla.org/pub/fenix/releases/ 下载 | [国外商店版](https://firefox.en.uptodown.com/android)
 * [微软 Edge](https://sj.qq.com/appdetail/com.microsoft.emmx) 大声朗读功能很强大
 
 备用
 
-* [夸克](https://sj.qq.com/appdetail/com.quark.browser) 越来越臃肿了，功能多，比 UC 稍好
-* [Alook](https://sj.qq.com/appdetail/alook.browser) 有点臃肿，但是功能性还行，界面也有点差
+* [Alook](https://sj.qq.com/appdetail/alook.browser) 轻度臃肿，但是功能性还行，界面也有点差
+* [夸克](https://sj.qq.com/appdetail/com.quark.browser) 越来越臃肿，功能多，比 UC 稍好，有魔改，兼容性不如三巨头
 
 not
 
 * [360 手机浏览器](https://mse.360.cn) 广告太多
-* [Google Chrome](https://sj.qq.com/appdetail/com.android.chrome) 国内不好用
+* Google Chrome [应用宝版](https://sj.qq.com/appdetail/com.android.chrome) 国内依旧水土不服
 * [UC 标准版](https://sj.qq.com/appdetail/com.UCMobile) 太臃肿了
 * [via 浏览器](https://sj.qq.com/appdetail/mark.via) 比 X 浏览器体积更大且某些方面体验不如
 * ——————— ฅ՞• •՞ฅ ———————
@@ -1097,7 +1098,7 @@ not [Chrome](https://sj.qq.com/appdetail/com.android.chrome) 不太好用
 
 夸克 网盘 + 网页朗读 + 小说本地在线阅读
 
-备用 [360浏览器](https://appgallery.huawei.com/app/detail?id=com.qihoo.hms.browser)
+备用 [360浏览器](https://appgallery.huawei.com/app/detail?id=com.qihoo.hms.browser) | 雨见浏览器 至少没有魔改
 
 ## 18 知识社区
 

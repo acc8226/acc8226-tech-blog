@@ -92,9 +92,7 @@ PostgreSQL 是 gitlab 唯一支持的数据库
 
 ### postgres
 
-端口 5430
-
-密码
+这里端口设置为 5430，密码设置为 abcfeitangfei
 
 步骤：
 
@@ -244,9 +242,6 @@ https://github.moeyy.xyz/https://github.com/acc8226/acc8226-tech-blog/archive/re
 https://ghproxy.imciel.com/https://github.com/acc8226/acc8226-tech-blog/archive/refs/tags/tag2022.zip
 
 
-网游UU加速器对于经常玩其他国服的游戏来说经常用到！
-该加速器除了提供各种游戏的加速之外，还提供了：学术资源 加速服务！
-学术资源包含：TED，Sci-Hub，Trello，Skype，Teams 等等加速访问服务
-其实它还支持了 GitHub，不过没有明确标注出来！
+网游 UU 加速器对于经常玩其他国服的游戏来说经常用到！该加速器除了提供各种游戏的加速之外，还提供了：学术资源 加速服务！学术资源包含：TED，Sci-Hub，Trello，Skype，Teams 等等加速访问服务。其实它还支持了 GitHub，不过没有明确标注出来。
 
 「[Watt Toolkit](https://steampp.net/)」是一个开源跨平台的多功能 Steam 工具箱。也支持 GitHub 加速
