@@ -33,7 +33,7 @@ categories: 我的创作
 * 【mac】[猫眼浏览器](https://www.catsxp.com) 鼠标悬停切换标签功能很好用，建议关掉烦人的自动更新功能
 * 【linux】[360 安全浏览器](https://browser.360.net/gc/index.html)<!-- more -->
 
-浏览器我都会搭配 Bitwarden 插件，实现密码的自动填充。
+浏览器我会搭配 Bitwarden 插件，实现密码的自动填充。
 
 #### 1.0.3 输入法
 
@@ -53,7 +53,7 @@ categories: 我的创作
 
 * 【**win 精品软件**】[WGestures 1 代](https://dl-x-yingdev-x-com.img.addlink.cn/Content/Projects/WGestures/Release/1.8.5.0/Install%20WGestures%201.8.5.0.zip) 免费 | [WGestures 2](https://store.lizhi.io/site/products/id/523?cid=46jjayiu) 付费
 * 【mac】[BetterAndBetter](https://www.better365.cn/bab2.html) 不仅仅是鼠标手势
-* 【linux】使用 apt install Easystroke 或 KDE 桌面内置的鼠标手势
+* 【linux】使用 apt install Easystroke；KDE 桌面推荐内置的鼠标手势就够用
 
 #### 1.1.2【可选】键鼠增强
 
@@ -80,20 +80,20 @@ categories: 我的创作
   * [Motrix Next](https://motrix-next.pages.dev/) 颜值高，并支持下载 HTTP、FTP、BT、磁力链接。Github 资源良好支持
   * [Neat Download Manager](https://www.neatdownloadmanager.com/index.php/en) 体积小功能强，不支持 BT 磁力。[搭配 crx 插件](https://www.crxsoso.com/search?keyword=NeatDownloadManager%20&store=chrome) 支持在线网页视频下载
   * 哔哩哔哩专用下载器：【win】[DownKyi](https://www.colostar.cn/links/13486.html)（哔哩下载姬）
-
 * **mac 平台**
   1. [Motrix Next](https://motrix-next.pages.dev/) | [下载页](https://motrix.app/zh-CN/download)
   1. [Neat Download Manager](https://www.neatdownloadmanager.com/index.php/en) 
   1. mac 版迅雷其实也不错，不过必须去官网下载才是完整版
 * **linux 平台**
-  1. 【全平台】[Motrix Next](https://motrix-next.pages.dev/)
+  1. 【全平台】[Motrix Next](https://motrix-next.pages.dev)
+  1. 迅雷 无广告很清爽
   1. 【linux win】[XDM](https://github.com/subhra74/xdm/releases) 可以认为是 linux 环境下的 idm
 
 #### 1.1.6 网盘
 
-**windows 和 mac 平台** 天翼云盘
+**windows 和 mac 平台** [天翼云盘](https://cloud.189.cn)
 
-**linux 平台** 天翼云盘不支持，虚位以待
+**linux 平台** [天翼云盘](https://cloud.189.cn) 网页版
 
 #### 1.1.7 看图
 
@@ -258,7 +258,7 @@ not【win linux】[阿里旺旺](https://wangwang.taobao.com) 不好用
 
 备用
 
-* [向日葵](https://sunlogin.oray.com)
+* 【全平台】[向日葵](https://sunlogin.oray.com)
 * [魔控](https://monect.com) 除了远程控制电脑，还能模拟游戏手柄
 
 not 【全平台】[ToDesk](https://www.todesk.com/download.html) 吃相难看，说检测到异常非要我开会员
