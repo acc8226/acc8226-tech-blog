@@ -8,6 +8,9 @@
     "deploy": "hexo deploy",
     "server": "hexo server"
   },
+  "hexo": {
+    "version": "8.1.1"
+  },
   "dependencies": {
     "hexo": "^8.1.1",
     "hexo-generator-archive": "^2.0.0",
