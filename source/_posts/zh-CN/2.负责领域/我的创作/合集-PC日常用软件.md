@@ -38,7 +38,7 @@ categories: 我的创作
 #### 1.0.3 输入法
 
 * 【win & mac】自带输入法 或[微信输入法](https://z.weixin.qq.com)
-* 【linux】自带 或[搜狗输入法](https://shurufa.sogou.com/linux)
+* 【linux】自带 或[搜狗输入法](https://shurufa.sogou.com/linux) 或 [RIME 输入法](https://rime.im/)
 
 ### 1.1 工具类
 
@@ -47,7 +47,8 @@ categories: 我的创作
 * 【win11】[PeaZip](https://peazip.github.io/index.html) 可添加智能解压到新版 win 11 右键菜单
 * 【win7、8、10】[Bandizip 6.2x](https://www.iplaysoft.com/bandizip.html) 含自动解压（智能解压）且颜值和功能均在线，v6 是最后一个无广告版本。到 v7 版本不付费则会偶尔弹窗
 * 【低于 win7】[7-Zip 24.09 x86](https://mirrors.nju.edu.cn/7-zip/7z2409.exe)
-* 【mac、linux】[PeaZip](https://peazip.github.io/index.html) 包含特别好用的智能解压
+* 【mac】[PeaZip](https://peazip.github.io/index.html) 含智能解压，非首选，没有 windows 版好用
+* 【linux】使用系统自带解压功能即可，否则 [PeaZip](https://peazip.github.io/index.html) 备用
 
 #### 1.1.1【常用】鼠标手势
 
@@ -287,7 +288,7 @@ not albert 安装不上
 
 ### 1.9 阅读类
 
-* 【全平台】[Koodo Reader](https://www.koodoreader.com/zh) 开源的电子书阅读器，支持多达15种主流电子书格式， 内置笔记、高亮、翻译功能，助力高效书籍阅读和学习
+* 【全平台】[Koodo Reader](https://www.koodoreader.com/zh) 开源的电子书阅读器，支持多达 15 种主流电子书格式， 内置笔记、高亮、翻译功能，助力高效书籍阅读和学习
 * 【win】[Fluent Reader 一款 rss 阅读器](https://github.com/yang991178/fluent-reader/releases)
 * 【win mac】[Jane Reader](https://janereader.com/) 现代化的 epub 阅读器
 * 【mac】自带【mac】iBook 可用于阅读电子书
@@ -297,9 +298,7 @@ not albert 安装不上
 
 ### 1.10 词典类
 
-[金山词霸](https://cp.iciba.com) 或者 [欧路词典](https://www.eudic.net)
-
-not 网易有道翻译
+【全平台】[欧路词典](https://www.eudic.net)
 
 ## 2 拓展
 
