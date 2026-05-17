@@ -130,7 +130,7 @@ categories: 我的创作
 
 [wps for linux arm](https://365.wps.cn/download365)
 
-官网收录：【win】[永中 Office](https://www.yozosoft.com) |【全平台】[LibreOffice](https://zh-cn.libreoffice.org/download/libreoffice) & [tuna 源](https://mirrors-i.tuna.tsinghua.edu.cn/libreoffice/libreoffice/stable/)
+官网收录：【win】[永中 Office](https://www.yozosoft.com) |【全平台】[LibreOffice](https://zh-cn.libreoffice.org/download/libreoffice) & [tuna 源](https://mirrors-i.tuna.tsinghua.edu.cn/libreoffice/libreoffice/stable) & [校园网联合镜像站](https://mirrors.cernet.edu.cn/app/LibreOffice)
 
 #### 1.2.2 PDF 文档
 

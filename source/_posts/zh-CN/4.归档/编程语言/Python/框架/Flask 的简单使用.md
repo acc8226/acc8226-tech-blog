@@ -233,7 +233,11 @@ if __name__ == '__main__':
 
 ### gunicorn 不支持在 Windows 系统上直接运行
 
-因为它依赖于 fcntl 模块，而该模块在 Windows 上不可用。因此这里可以使用 Waitress 作为 Windows 上的 WSGI 服务器来运行 Flask 应用。
+Gunicorn（Green Unicorn）是一个基于 Python 的 WSGI（Web 服务器网关接口）HTTP 服务器，用于部署 Python Web 应用程序。它在 Unix 系统上表现出色，但官方并不支持在 Windows 上运行。
+
+如果不想使用 WSL，可以考虑使用其他WSGI服务器，如 Waitress。Waitress 是一个纯 Python 编写的 WSGI 服务器，可以在Windows上运行，并且性能与Gunicorn相当。
+
+打开命令提示符或 PowerShell，运行以下命令以安装 Waitress： pip install waitress
 
 使用方法
 
