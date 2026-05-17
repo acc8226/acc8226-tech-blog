@@ -25,35 +25,36 @@ categories: 我的创作
 #### 1.0.1 安全类
 
 * 【win】自带电脑管家（例如微软电脑管家）或 [360 安全卫士极速版](https://sfdl.360safe.com/setupbeta_jisu.exe) 或 [火绒安全软件](https://www.huorong.cn/person)
-* 【mac】[腾讯柠檬清理](https://lemon.qq.com) 或 [360 安全卫士 Mac 版](https://www.360.cn/mac/index.html)
+* 【mac】[腾讯柠檬清理](https://lemon.qq.com) 或 [360 安全卫士 Mac 版](https://www.360.cn/mac/index.html)<!-- more -->
 
 #### 1.0.2 浏览器
 
-* 【**win 精品软件**】[百分浏览器](https://www.centbrowser.cn) 鼠标悬停切换标签功能很好用 | [360 极速浏览器X](https://browser.360.cn/ee/) 毕竟 IE 双核浏览器，且一些老网站只能用 IE 打开
+* 【win】【精品软件】[百分浏览器](https://www.centbrowser.cn) 鼠标悬停切换标签功能很好用 |【备用】 [360 极速浏览器X](https://browser.360.cn/ee/) 毕竟 IE 双核浏览器，且一些老网站只能用 IE 打开
 * 【mac】[猫眼浏览器](https://www.catsxp.com) 鼠标悬停切换标签功能很好用，建议关掉烦人的自动更新功能
-* 【linux】[360 安全浏览器](https://browser.360.net/gc/index.html)<!-- more -->
+* 【linux】自带浏览器 或者【**linux 精品软件**】[360 安全浏览器](https://browser.360.net/gc/index.html)
 
-浏览器我会搭配 Bitwarden 插件，实现密码的自动填充。
+浏览器我会搭配浏览器插件 Bitwarden，来实现密码自动填充。
 
 #### 1.0.3 输入法
 
 * 【win & mac】自带输入法 或[微信输入法](https://z.weixin.qq.com)
-* 【linux】自带 或[搜狗输入法](https://shurufa.sogou.com/linux)
+* 【linux】自带输入法 或【**linux 精品软件**】[搜狗输入法](https://shurufa.sogou.com/linux) 或 [RIME 输入法](https://rime.im/)
 
 ### 1.1 工具类
 
 #### 1.1.0【常用】压缩解压
 
-* 【win11】[PeaZip](https://peazip.github.io/index.html) 可添加智能解压到新版 win 11 右键菜单
-* 【win7、8、10】[Bandizip 6.2x](https://www.iplaysoft.com/bandizip.html) 含自动解压（智能解压）且颜值和功能均在线，v6 是最后一个无广告版本。到 v7 版本不付费则会偶尔弹窗
+* 【win11】【**windows 精品软件**】[PeaZip](https://peazip.github.io/index.html) 可添加智能解压到 win 11 右键上下文菜单
+* 【win7、8、10】【**windows 精品软件**】[Bandizip 6.2x](https://www.iplaysoft.com/bandizip.html) 含自动解压（智能解压）且颜值和功能均在线，v6 是最后一个无广告版本。到 v7 版本不付费会偶尔弹窗
 * 【低于 win7】[7-Zip 24.09 x86](https://mirrors.nju.edu.cn/7-zip/7z2409.exe)
-* 【mac、linux】[PeaZip](https://peazip.github.io/index.html) 包含特别好用的智能解压
+* 【mac】[PeaZip](https://peazip.github.io/index.html) 含智能解压，非首选，没有 windows 版好用
+* 【linux】使用系统自带解压功能即可，否则 [PeaZip](https://peazip.github.io/index.html) 备用
 
 #### 1.1.1【常用】鼠标手势
 
 * 【**win 精品软件**】[WGestures 1 代](https://dl-x-yingdev-x-com.img.addlink.cn/Content/Projects/WGestures/Release/1.8.5.0/Install%20WGestures%201.8.5.0.zip) 免费 | [WGestures 2](https://store.lizhi.io/site/products/id/523?cid=46jjayiu) 付费
 * 【mac】[BetterAndBetter](https://www.better365.cn/bab2.html) 不仅仅是鼠标手势
-* 【linux】使用 apt install Easystroke；KDE 桌面推荐内置的鼠标手势就够用
+* 【linux】使用 apt install Easystroke【**linux 精品软件**】；KDE 桌面推荐内置的鼠标手势就够用
 
 #### 1.1.2【可选】键鼠增强
 
@@ -68,11 +69,9 @@ categories: 我的创作
 
 #### 1.1.4 护眼
 
-**windows 平台**【win mac】[f.lux](https://justgetflux.com) +【win 绿色版 自荐】[捷键](https://feipig.fun/jiejian) 包含了定时提醒
-
-**mac 平台**【mac win】[f.lux](https://justgetflux.com) +【mac】[一休](https://apps.apple.com/cn/app/%E4%B8%80%E4%BC%91-%E4%BC%91%E6%81%AF%E4%B8%80%E4%B8%8B/id6467176005) 用于定时提醒
-
-**linux 平台** 虚位以待
+* **windows 平台**【win mac】[f.lux](https://justgetflux.com) +【win 绿色版 自荐】[捷键](https://feipig.fun/jiejian) 包含了定时提醒
+* **mac 平台**【mac win】[f.lux](https://justgetflux.com) +【mac】[一休](https://apps.apple.com/cn/app/%E4%B8%80%E4%BC%91-%E4%BC%91%E6%81%AF%E4%B8%80%E4%B8%8B/id6467176005) 用于定时提醒
+* **linux 平台** 虚位以待
 
 #### 1.1.5 下载
 
@@ -149,13 +148,17 @@ categories: 我的创作
 
 官网收录：【win】【[mac](https://apps.apple.com/cn/app/updf-%E6%96%B0%E4%B8%80%E4%BB%A3-ai-%E6%99%BA%E8%83%BD-pdf-%E7%BC%96%E8%BE%91%E5%99%A8/id1619925971?mt=12)】[UPDF](https://www.updf.cn) | 【win mac】[福昕阅读器](https://www.foxitsoftware.cn/pdf-reader) | [Adobe Acrobat Reader](https://get.adobe.com/cn/reader)
 
-#### 1.2.3 邮件收发
+#### 1.2.3 OFD 文档
+
+windows 和 mac 平台用 wps，linux 平台用国产应用商店里的 友虹OFD 即可。
+
+#### 1.2.4 邮件收发
 
 * 【**win 精品软件**】[Foxmail](https://www.foxmail.com)
 * 【mac】网易邮箱大师 [AppStore 版](https://apps.apple.com/cn/app/%E7%BD%91%E6%98%93%E9%82%AE%E7%AE%B1%E5%A4%A7%E5%B8%88/id1233593954?mt=12)
 * linux 用户 [Thunderbird](https://www.thunderbird.net/zh-CN)
 
-#### 1.2.4 办公通讯
+#### 1.2.5 办公通讯
 
 防诈骗！不轻易共享屏幕！
 
@@ -165,7 +168,7 @@ categories: 我的创作
 * 【全平台】【[mac 版](https://apps.apple.com/cn/app/%E8%85%BE%E8%AE%AF%E4%BC%9A%E8%AE%AE-%E5%A4%9A%E4%BA%BA%E5%AE%9E%E6%97%B6%E8%A7%86%E9%A2%91%E4%BC%9A%E8%AE%AE%E8%BD%AF%E4%BB%B6/id1484048379)】[腾讯会议](https://meeting.tencent.com)
 * 【win mac】[网易会议](https://meeting.163.com)
 
-#### 1.2.5 思维导图
+#### 1.2.6 思维导图
 
 【全平台】Xmind 思维导图 [官网](https://xmind.cn) 免费版功能就不错了且导出的图片的水印没有那么影响使用
 
@@ -181,7 +184,7 @@ not
 * Freeplane 不喜欢
 * Scapple 收费就算了
 
-#### 1.2.6 笔记类
+#### 1.2.7 笔记类
 
 在线 [flomo 浮墨笔记](https://sj.qq.com/appdetail/com.flomo.app) 可以多台设备同步且不收费，适合灵光一闪
 
@@ -252,9 +255,7 @@ not【win linux】[阿里旺旺](https://wangwang.taobao.com) 不好用
 
 **VNC 远程** - VNC Viewer
 
-远程桌面
-
-【全平台】[RustDesk](https://rustdesk.com/index.html) The Open Source Remote Desktop Access Software
+远程桌面【全平台】[RustDesk](https://rustdesk.com/index.html) The Open Source Remote Desktop Access Software
 
 备用
 
@@ -287,7 +288,7 @@ not albert 安装不上
 
 ### 1.9 阅读类
 
-* 【全平台】[Koodo Reader](https://www.koodoreader.com/zh) 开源的电子书阅读器，支持多达15种主流电子书格式， 内置笔记、高亮、翻译功能，助力高效书籍阅读和学习
+* 【全平台】[Koodo Reader](https://www.koodoreader.com/zh) 开源的电子书阅读器，支持多达 15 种主流电子书格式， 内置笔记、高亮、翻译功能，助力高效书籍阅读和学习
 * 【win】[Fluent Reader 一款 rss 阅读器](https://github.com/yang991178/fluent-reader/releases)
 * 【win mac】[Jane Reader](https://janereader.com/) 现代化的 epub 阅读器
 * 【mac】自带【mac】iBook 可用于阅读电子书
@@ -297,9 +298,7 @@ not albert 安装不上
 
 ### 1.10 词典类
 
-[金山词霸](https://cp.iciba.com) 或者 [欧路词典](https://www.eudic.net)
-
-not 网易有道翻译
+【全平台】[欧路词典](https://www.eudic.net)
 
 ## 2 拓展
 
