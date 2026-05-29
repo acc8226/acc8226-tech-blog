@@ -17,7 +17,7 @@ Apache POI 包含用于 MS-Office 的所有 OLE2 复合文档的类和方法。 
 * HSSF(可怕的 SpreadSheet 格式):用于读取和写入 .xls 格式的 MS-Excel 文件。
 * XSSF(XML SpreadSheet 格式):用于 MS-Excel 的 .xlsx 文件格式。
 * HPSF(可怕属性集格式):用于提取 MS-Office 文件的属性集。
-* HWPF(可怕字处理器格式):用于读取和写入 MS-Word 的.doc扩展文件。
+* HWPF(可怕字处理器格式):用于读取和写入 MS-Word 的.doc 扩展文件。
 * XWPF(XML 字处理器格式):用于读取和写入 MS-Word 的扩展文件 .docx。
 * HSLF(可怕的幻灯片布局格式):用于阅读，创建和编辑 PowerPoint 演示文稿。
 * HDGF(Horrible DiaGram 格式):它包含 MS-Visio 二进制文件的类和方法。
@@ -35,7 +35,7 @@ implementation("org.apache.poi:poi-ooxml:5.2.3")
 
 ## 解析 word
 
-Poi 之Word 文档结构介绍
+Poi 之 Word 文档结构介绍
 
 1、poi 之 word 文档结构介绍之正文段落
 
@@ -77,8 +77,5 @@ Free Spire.Office for Java | 免费的 Java Office 套件，涵盖 Office 和 PD
 
 ## 参考
 
-apache_poi_word 教程_w3cschool
-<https://www.w3cschool.cn/apache_poi_word/>
-
-Poi 之 Word 文档结构介绍 - Flink 菜鸟 - 博客园
-<https://www.cnblogs.com/Springmoon-venn/p/5494602.html>
+* [apache_poi_word 教程](https://www.w3cschool.cn/apache_poi_word)_w3cschool
+* [Poi 之 Word 文档结构介绍](https://www.cnblogs.com/Springmoon-venn/p/5494602.html)- Flink 菜鸟 - 博客园

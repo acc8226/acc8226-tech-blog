@@ -154,11 +154,19 @@ not
 
 ## 4【常用】Editor 编辑器
 
-【全平台】[Visual Studio Code](https://code.visualstudio.com) windows 推荐使用**安装版**而非便携版，这样能及时获得更新。[win 7 最后一个支持版](https://code.visualstudio.com/updates/v1_70)
+轻量级
+
+【win 精品软件 绿色版】[Notepad++](https://github.com/notepad-plus-plus/notepad-plus-plus) | [mirror](https://sourceforge.net/projects/notepadplusplus.mirror/) 是好软件，除了曾经发表过不良言论
+【mac】[Nextpad++ for Mac](https://nextpad.org/): Free Native macOS Code Editor and Notepad++ port for Mac
+
+中量级
+
+* 【全平台】[Visual Studio Code](https://code.visualstudio.com) windows 推荐使用**安装版**而非便携版，这样能及时获得更新。
+* 【全平台】[VSCodium](https://vscodium.com) ｜ [清华源](https://mirrors-i.tuna.tsinghua.edu.cn/github-release/VSCodium/vscodium/LatestRelease/) [兰大源](https://mirror.lzu.edu.cn/github-release/VSCodium/vscodium/LatestRelease/) VSCodium is a community-driven, freely-licensed binary distribution of Microsoft’s editor VS Code.
+
+注：[win 7 最后一个支持版](https://code.visualstudio.com/updates/v1_70)
 
 vscode 插件推荐：[markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
-
-[VSCodium](https://vscodium.com) ｜ [清华源](https://mirrors-i.tuna.tsinghua.edu.cn/github-release/VSCodium/vscodium/LatestRelease/) [兰大源](https://mirror.lzu.edu.cn/github-release/VSCodium/vscodium/LatestRelease/) Free/Libre Open Source Software Binaries of VS Code
 
 备用
 
@@ -167,7 +175,6 @@ vscode 插件推荐：[markdownlint](https://marketplace.visualstudio.com/items?
 
 not
 
-* 【win 精品软件 绿色版】[Notepad++](https://github.com/notepad-plus-plus/notepad-plus-plus) | [mirror](https://sourceforge.net/projects/notepadplusplus.mirror/) 是好软件，除了言论
 * 【全平台】[Brackets](https://brackets.io) - A modern, open source code editor that understands web design
 * 【win】[EverEdit](https://www.everedit.net) 不好用
 * 【win】[Geany](https://www.geany.org) 只有安装版的差评，且 UI 目前差点意思

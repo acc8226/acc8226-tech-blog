@@ -521,7 +521,6 @@ not [泰捷视频](https://www.51togic.com/%e6%b3%b0%e6%8d%b7%e8%a7%86%e9%a2%91)
 ### 鸿蒙
 
 1. [抖音](https://appgallery.huawei.com/app/detail?id=com.ss.hm.ugc.aweme)
-1. [西瓜视频](https://appgallery.huawei.com/app/detail?id=com.ss.hm.article.video)
 1. [哔哩哔哩](https://appgallery.huawei.com/app/detail?id=yylx.danmaku.bili)
 1. [央视影音](https://appgallery.huawei.com/app/detail?id=com.cctv.cbox)
 1. [央视频](https://appgallery.huawei.com/app/detail?id=com.cctv.yangshipin.app.harmonyp)
@@ -541,6 +540,7 @@ not [泰捷视频](https://www.51togic.com/%e6%b3%b0%e6%8d%b7%e8%a7%86%e9%a2%91)
 * [咪咕视频](https://appgallery.huawei.com/app/detail?id=com.cmcc.cmvideohm)
 * 斗鱼
 * 红果免费视频
+* [西瓜视频](https://appgallery.huawei.com/app/detail?id=com.ss.hm.article.video) 目前版本很多内容看不了，比如安卓内容丰富
 
 ## 3 工具【常用】
 
@@ -607,10 +607,10 @@ not
 1. [ES文件浏览器](https://appgallery.huawei.com/app/detail?id=com.estrongs.hm.pop)
 1. [QQ同步助手](https://appgallery.huawei.com/app/detail?id=com.tencent.qqpim.hos)
 1. [一个木函](https://appgallery.huawei.com/app/detail?id=com.sakuraft.woodbox)
+1. 微信输入法
 
 备用
 
-* 搜狗输入法
 * [万年历](https://appgallery.huawei.com/app/detail?id=com.youloft.calendar.har)
 * [奇妙工具箱](https://appgallery.huawei.com/app/detail?id=com.magicalstory.toolbox.huawei)
 * [流舟文件](https://appgallery.huawei.com/app/detail?id=com.liuzho.file.explorer.hmos)
@@ -638,6 +638,7 @@ not
 * [京东](https://appgallery.huawei.com/app/detail?id=com.jd.hm.mall)
 * [淘宝](https://appgallery.huawei.com/app/detail?id=com.taobao.taobao4hmos)
 * [拼多多](https://appgallery.huawei.com/app/detail?id=com.xunmeng.pinduoduo.hos)
+* 闲鱼
 
 ## 5 导航
 
@@ -657,11 +658,12 @@ not
 ### 鸿蒙
 
 * [高德地图](https://appgallery.huawei.com/app/detail?id=com.amap.hmapp)
+* [百度地图](https://appgallery.huawei.com/app/detail?id=com.baidu.hmmap) 常德科院的地图需要和高德互为补充
 * 【系统自带】[地图](https://appgallery.huawei.com/app/detail?id=com.huawei.hmos.maps.app)
+* 两步路户外助手
 
 备用
 
-* [百度地图](https://appgallery.huawei.com/app/detail?id=com.baidu.hmmap) 常德科院的地图需要和高德互为补充
 * [腾讯地图](https://appgallery.huawei.com/app/detail?id=com.tencent.mapohos)
 
 ## 6 出行
@@ -686,6 +688,8 @@ not
 
 ### 鸿蒙
 
+* [铁路12306](https://appgallery.huawei.com/app/detail?id=com.chinarailway.ticketingHM)
+* 巴士管家 手续费较低
 * [滴滴出行](https://appgallery.huawei.com/app/detail?id=com.sdu.didi.hmos.psnger)
 * [嘀嗒出行](https://appgallery.huawei.com/app/detail?id=com.didapinche.passenger) 顺风车用
 * [哈啰](https://appgallery.huawei.com/app/detail?id=com.hellobike.app) 顺风车用
@@ -737,6 +741,8 @@ not
 * [美团](https://appgallery.huawei.com/app/detail?id=com.sankuai.hmeituan)
 * 大众点评
 * [建行生活](https://appgallery.huawei.com/app/detail?id=com.ccb.ccblife.hos) 单位食堂查餐费用
+* 阳光惠生活
+* 买单吧
 
 备用
 
@@ -822,10 +828,10 @@ not
 
 ### 鸿蒙
 
-* [铁路12306](https://appgallery.huawei.com/app/detail?id=com.chinarailway.ticketingHM)
 * [携程旅行](https://appgallery.huawei.com/app/detail?id=com.ctrip.harmonynext)
 * [同程旅行](https://appgallery.huawei.com/app/detail?id=com.tongcheng.hmos)
 * [智行旅行](https://appgallery.huawei.com/app/detail?id=com.suanya.travel.harmonynext)
+* 马蜂窝
 
 备用
 
@@ -1404,6 +1410,8 @@ not
 
 * [公考雷达](https://appgallery.huawei.com/app/detail?id=com.maidu.gkld.hw)
 * [粉笔](https://appgallery.huawei.com/app/detail?id=com.fenbi.gwy)
+* ——————— ฅ՞• •՞ฅ ———————
+* 软考真题 26年终于出了鸿蒙版的了
 
 ## 38 申论面试
 
@@ -1574,6 +1582,10 @@ not 格式工厂
 ## 53 医疗保健
 
 not 泰康医生 被代理人打电话让我领取保险，结果投保满 1 年就没了，我还花了往返地铁费
+
+### 鸿蒙
+
+3Dbody 解剖 用于了解自己的肌肉部位
 
 ## 54 快递
 
@@ -1855,8 +1867,7 @@ not Nova Launcher 连基础的手势操作还需要 pro 付费，差评
 
 ### 鸿蒙
 
-* [形色](https://appgallery.huawei.com/app/detail?id=com.xingse.ai)
-* 花伴侣
+[形色](https://appgallery.huawei.com/app/detail?id=com.xingse.ai)
 
 ## 73 求职
 
