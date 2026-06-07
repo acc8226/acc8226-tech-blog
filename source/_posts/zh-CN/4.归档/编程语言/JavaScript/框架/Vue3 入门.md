@@ -13,7 +13,7 @@ tags:
 创建项目
 
 ```sh
-npm create vue@latest
+npm create vue@latest 或 pnpm create vue@latest
 ```
 
 运行

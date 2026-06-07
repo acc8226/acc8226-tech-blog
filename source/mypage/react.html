@@ -1,42 +1,3 @@
----
-title: React-入门
-date: 2022-08-08 00:00:00
-updated: 2026-06-07 19:49:10
-categories:
-  - 框架
-  - js
-tags:
-- js
-- React
----
-
-创建和嵌套组件 
-React 应用程序是由 组件 组成的。一个组件是 UI（用户界面）的一部分，它拥有自己的逻辑和外观。组件可以小到一个按钮，也可以大到整个页面。
-
-React 组件是返回标签的 JavaScript 函数：
-
-```js
-function MyButton() {
-  return (
-    <button>我是一个按钮</button>
-  );
-}
-```
-
-<!-- more -->
-从零开始构建 React 应用
-
-```sh
-npm create vite@latest my-app -- --template react-ts
-或
-pnpm create vite@latest my-app -- --template react-ts
-```
-
-## 简单示例
-
-https://blog.feipig.fun/mypage/react.html
-
-```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -72,9 +33,3 @@ https://blog.feipig.fun/mypage/react.html
     -->
   </body>
 </html>
-```
-
-## 参考
-
-* [React 官方中文文档](https://zh-hans.reactjs.org) – 用于构建用户界面的 JavaScript 库
-* babel-standalone (v7.28.4) - Standalone build of Babel for use in non-Node.js environments. Similar to the (now deprecacted) babel-browser | BootCDN - Bootstrap 中文网开源项目免费 CDN 加速服务

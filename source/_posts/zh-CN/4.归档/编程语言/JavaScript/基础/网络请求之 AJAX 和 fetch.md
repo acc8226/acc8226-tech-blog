@@ -50,7 +50,7 @@ xmlhttp.open("GET","demo_get2.asp?fname=Bill&lname=Gates",true);
 xmlhttp.send();
 ```
 
-### POST请求
+### POST 请求
 
 ```js
 xmlhttp.open("POST","ajax_test.asp",true);

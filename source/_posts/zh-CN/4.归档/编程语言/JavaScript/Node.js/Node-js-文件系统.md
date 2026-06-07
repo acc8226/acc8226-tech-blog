@@ -70,8 +70,6 @@ fs.stat('/Users/liuht/code/itbilu/demo/fs.js', function (err, stats) {
 })
 ```
 
-<!-- more -->
-
 ### 写入文件
 
 以下为异步模式下写入文件的语法格式：
