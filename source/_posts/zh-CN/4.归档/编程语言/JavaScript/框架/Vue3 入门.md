@@ -26,10 +26,10 @@ npm run dev
 
 <!-- more -->
 
-IDE 支持​
+**IDE 支持​**
 推荐使用的 IDE 是 VS Code，配合 [Vue - Official 扩展](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (之前是 Volar)。该插件提供了语法高亮、TypeScript 支持，以及模板内表达式与组件 props 的智能提示。
 
-浏览器开发者插件​
+**浏览器开发者插件​**
 Vue 的浏览器开发者插件使我们可以浏览一个 Vue 应用的组件树，查看各个组件的状态，追踪状态管理的事件，还可以进行组件性能分析。
 [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
 

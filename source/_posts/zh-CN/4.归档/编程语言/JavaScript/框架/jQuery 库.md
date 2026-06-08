@@ -86,5 +86,4 @@ $(function(){});
 
 ## 参考
 
-jQuery
-<https://jquery.com/>
+[jQuery](https://jquery.com)

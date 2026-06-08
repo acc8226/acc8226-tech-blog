@@ -16,12 +16,12 @@ localStorage 的写入有三种方法:
 
 ```js
 var storage=window.localStorage;
-            //写入 a 字段
-            storage["a"]=1;
-            //写入 b 字段
-            storage.a=1;
-            //写入 c 字段
-            storage.setItem("c",3);
+//写入 a 字段
+storage["a"]=1;
+//写入 b 字段
+storage.a=1;
+//写入 c 字段
+storage.setItem("c",3);
 ```
 
 JSON.stringify()这个方法，来将 JSON 转换成为 JSON 字符串

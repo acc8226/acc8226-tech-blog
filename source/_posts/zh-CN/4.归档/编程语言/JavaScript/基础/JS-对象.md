@@ -24,9 +24,7 @@ JavaScript 提供多个内建对象，比如 String、Date、Array 等等。 对
 日期是一个对象
 数学和正则表达式也是对象
 数组是一个对象
-甚至函数也可以是对象
-
-<!-- more -->
+甚至函数也可以是对象<!-- more -->
 
 > 对象只是一种特殊的数据。对象拥有属性和方法。
 
@@ -68,8 +66,6 @@ var myDataValue = nameValue.value
 // 我们可以这样把这个新的成员的名字和值加到person对象里：
 person[myDataName] = myDataValue
 ```
-
-<!-- more -->
 
 > 这是使用点表示法无法做到的，点表示法只能接受字面量的成员的名字，不接受变量作为名字。
 

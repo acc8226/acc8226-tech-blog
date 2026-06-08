@@ -5,7 +5,7 @@ updated: 2021-01-22 23:20:55
 categories:
   - 语言
   - Node.js
-tags: nodeJS
+tags: Node.js
 ---
 
 ## 获取 GET 请求内容

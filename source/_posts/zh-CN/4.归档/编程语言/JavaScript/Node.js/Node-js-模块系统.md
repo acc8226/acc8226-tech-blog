@@ -5,12 +5,12 @@ updated: 2021-01-22 23:20:55
 categories:
   - 语言
   - Node.js
-tags: nodeJS
+tags: Node.js
 ---
 
 为了让 Node.js 的文件可以相互调用，Node.js 提供了一个简单的模块系统。
 
-模块是 Node.js 应用程序的基本组成部分，文件和模块是一一对应的。换言之，一个 Node.js 文件就是一个模块，这个文件可能是 JavaScript 代码、JSON 或者编译过的 C/C++ 扩展。
+模块是 Node.js 应用程序的基本组成部分，文件和模块是一一对应的。换言之，一个 Node.js 文件就是一个模块，这个文件可能是 JavaScript 代码、JSON 或者编译过的 C/C++ 扩展。<!-- more -->
 
 ### 创建模块
 
@@ -48,9 +48,7 @@ module.exports = function () {
 
 ```js
 var http = require("http");
-
 ...
-
 http.createServer(...);
 ```
 

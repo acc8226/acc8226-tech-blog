@@ -5,7 +5,7 @@ updated: 2021-01-22 23:20:55
 categories:
   - 语言
   - Node.js
-tags: nodeJS
+tags: Node.js
 ---
 
 Web 服务器一般指网站服务器，是指驻留于因特网上某种类型计算机的程序，Web 服务器的基本功能就是提供 Web 信息浏览服务。它只需支持 HTTP 协议、HTML 文档格式及 URL，与客户端的网络浏览器配合。

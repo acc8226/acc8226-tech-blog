@@ -12,9 +12,7 @@ tags:
 
 Vue.js 是什么
 
-Vue (读音 /vjuː/，类似于 **view**)
-是一套用于构建用户界面的**渐进式框架**。与其它大型框架不同的是，Vue
-被设计为可以自底向上逐层应用。Vue
+Vue (读音 /vjuː/，类似于 **view**)，是一套用于构建用户界面的**渐进式框架**。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue
 的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合。另一方面，当与[现代化的工具链](https://cn.vuejs.org/v2/guide/single-file-components.html)以及各种[支持类库](https://github.com/vuejs/awesome-vue#libraries--plugins)结合使用时，Vue
 也完全能够为复杂的单页应用提供驱动。<!-- more -->
 
@@ -23,12 +21,11 @@ Vue (读音 /vjuː/，类似于 **view**)
 ### 兼容性
 
 Vue **不支持** IE8 及以下版本，因为 Vue 使用了 IE8 无法模拟的 ECMAScript 5
-特性。但它支持所有[兼容 ECMAScript 5 的浏览器](https://caniuse.com/#feat=es5)。<!-- more -->
+特性。但它支持所有[兼容 ECMAScript 5 的浏览器](https://caniuse.com/#feat=es5)。
 
 ### 语义化版本控制
 
-Vue
-在其所有项目中公布的功能和行为都遵循[语义化版本控制](https://semver.org/lang/zh-CN/)。对于未公布的或内部暴露的行为，其变更会描述在[发布说明](https://github.com/vuejs/vue/releases)中。
+Vue 在其所有项目中公布的功能和行为都遵循[语义化版本控制](https://semver.org/lang/zh-CN/)。对于未公布的或内部暴露的行为，其变更会描述在[发布说明](https://github.com/vuejs/vue/releases)中。
 
 ### 更新日志
 
@@ -44,8 +41,7 @@ Vue 应用。
 
 1. [Vue Devtools 的旧版本 (v6)](https://www.crxsoso.com/webstore/detail/iaajmlceplecbljialhhkmedjlpdblhp)
    [Vue.js devtools - Chrome 应用商店](https://chromewebstore.google.com/detail/vuejs-devtools/iaajmlceplecbljialhhkmedjlpdblhp)
-   |
-   [火狐](https://addons.mozilla.org/zh-CN/firefox/addon/vue-js-devtools-v6-legacy/)
+   | [火狐](https://addons.mozilla.org/zh-CN/firefox/addon/vue-js-devtools-v6-legacy/)
 1. [【新版本】Vue.js devtools](https://www.crxsoso.com/webstore/detail/nhdogjmejiglipccpnnnanhbledajbpd)-
    用于调试 Vue.js 应用程序的 Chrome
    开发工具扩展。[Vue.js devtools - Chrome 应用商店](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd?hl=zh-CN&utm_source=ext_sidebar)
@@ -75,7 +71,7 @@ Vue 应用。
 
 ```html
 <script type="module">
-  import Vue from "https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/vue.esm.browser.js";
+    import Vue from "https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/vue.esm.browser.js";
 </script>
 ```
 
@@ -83,20 +79,17 @@ Vue 应用。
 包的源代码。
 
 Vue 也可以在 [unpkg](https://unpkg.com/vue@2.7.16/dist/vue.js) 和
-[cdnjs](https://cdnjs.cloudflare.com/ajax/libs/vue/2.7.16/vue.js) 上获取 (cdnjs
-的版本更新可能略滞后)。
+[cdnjs](https://cdnjs.cloudflare.com/ajax/libs/vue/2.7.16/vue.js) 上获取 (cdnjs 的版本更新可能略滞后)。
 
 > 添加国内镜像 [BootCDN](https://cdn.bootcdn.net/ajax/libs/vue/2.7.16/vue.js)|
 > [Staticfile CDN](https://cdn.staticfile.net/vue/2.7.16/vue.js)
 
 请确认了解[不同构建版本](https://v2.cn.vuejs.org/v2/guide/installation.html#对不同构建版本的解释)并在你发布的站点中使用**生产环境版本**，把
-`vue.js` 换成
-`vue.min.js`。这是一个更小的构建，可以带来比开发环境下更快的速度体验。
+`vue.js` 换成 `vue.min.js`。这是一个更小的构建，可以带来比开发环境下更快的速度体验。
 
 ## 安装 之 命令行工具 (CLI)
 
-注：Vue CLI 现已处于维护模式! 现在官方推荐使用 create-vue 来创建基于 Vite
-的新项目。
+注：Vue CLI 现已处于维护模式! 现在官方推荐使用 create-vue 来创建基于 Vite 的新项目。
 
 安装：
 

@@ -5,7 +5,7 @@ updated: 2021-01-22 23:20:55
 categories:
   - 语言
   - Node.js
-tags: nodeJS
+tags: Node.js
 ---
 
 util 是一个 Node.js 核心模块，提供常用函数的集合，用于弥补核心 JavaScript 的功能 过于精简的不足。
@@ -81,8 +81,6 @@ var obj = new Person()
 console.log(util.inspect(obj))
 console.log(util.inspect(obj, true))
 ```
-
-<!-- more -->
 
 运行结果是：
 

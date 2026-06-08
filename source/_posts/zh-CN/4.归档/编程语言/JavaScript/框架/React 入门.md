@@ -50,7 +50,6 @@ https://blog.feipig.fun/mypage/react.html
   <body>
     <div id="root"></div>
     <script type="text/babel">
-    
       function MyApp() {
         return <h1>Hello, React!</h1>;
       }
@@ -58,7 +57,6 @@ https://blog.feipig.fun/mypage/react.html
       const container = document.getElementById('root');
       const root = ReactDOM.createRoot(container);
       root.render(<MyApp />);
-
     </script>
     <!--
       Note: this page is a great way to try React but it's not suitable for production.

@@ -5,7 +5,7 @@ updated: 2021-01-22 23:20:55
 categories:
   - 语言
   - Node.js
-tags: nodeJS
+tags: Node.js
 ---
 
 Node.js 提供一组类似 UNIX（POSIX）标准的文件操作 API。 Node 导入文件系统模块(fs)语法如下所示：

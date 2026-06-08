@@ -5,7 +5,7 @@ updated: 2021-01-22 23:20:55
 categories:
   - 语言
   - Node.js
-tags: nodeJS
+tags: Node.js
 ---
 
 跨域资源共享([CORS](https://developer.mozilla.org/en-US/docs/Glossary/CORS "CORS: CORS (Cross-Origin Resource Sharing) is a system, consisting of transmitting HTTP headers, that determines whether browsers block frontend JavaScript code from accessing responses for cross-origin requests.")) 是一种机制，它使用额外的  [HTTP](https://developer.mozilla.org/en-US/docs/Glossary/HTTP "HTTP: The HyperText Transfer Protocol (HTTP) is the underlying network protocol that enables transfer of hypermedia documents on the Web, typically between a browser and a server so that humans can read them. The current version of the HTTP specification is called HTTP/2.")  头来告诉浏览器   让运行在一个 origin (domain) 上的 Web 应用被准许访问来自不同源服务器上的指定的资源。当一个资源从与该资源本身所在的服务器**不同的域、协议或端口**请求一个资源时，资源会发起一个**跨域 HTTP 请求**。
@@ -72,8 +72,6 @@ Access-Control-Allow-Origin: <origin> | *
 ```text
 Access-Control-Allow-Headers: <field-name>[, <field-name>]*
 ```
-
-<!-- more -->
 
 - [`Access-Control-Expose-Headers`](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Access-Control-Expose-Headers "响应首部 Access-Control-Expose-Headers 列出了哪些首部可以作为响应的一部分暴露给外部。")  头让服务器把允许浏览器访问的头放入白名单，例如：
 

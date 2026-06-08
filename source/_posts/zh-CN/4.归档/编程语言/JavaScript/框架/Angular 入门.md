@@ -12,8 +12,6 @@ tags:
 
 [Angular 中文官网](https://angular.cn)
 
-Angular 需要 Node.js 的活跃 LTS 版或维护期 LTS 版。
-
 ## 什么是 Angular？[](https://angular.cn/guide/what-is-angular#what-is-angular "Link to this heading")
 
 本主题会帮你了解 Angular：什么是 Angular？它有哪些优势？当构建应用时它能为你提供什么帮助？

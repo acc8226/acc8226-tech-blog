@@ -5,7 +5,7 @@ updated: 2026-06-07 09:10:06
 categories:
   - 语言
   - Node.js
-tags: nodeJS
+tags: Node.js
 ---
 
 PM2 是一个守护进程管理器，它将帮助您管理和保持应用程序在线。开始使用 PM2 非常简单，它提供了一个简单直观的 CLI，可以通过 NPM 安装。
