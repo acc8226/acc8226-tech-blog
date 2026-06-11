@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+      <meta charset="UTF-8">
+      <title>工程开标日历</title>
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <style>
+        :root {
+          /* 设计系统 - 单色蓝配色 */
+          --primary-900: #1e3a8a;
+          --primary-700: #1d4ed8;
+          --primary-600: #2563eb;  /* 主色 */
+          --primary-100: #dbeafe;
+          --primary-50: #eff6ff;
+          
+          --gray-900: #111827;
+          --gray-700: #374151;
+          --gray-500: #6b7280;
+          --gray-300: #d1d5db;
+          --gray-200: #e5e7eb;
+          --gray-100: #f3f4f6;
+          --gray-50: #f9fafb;
+          
+          --white: #ffffff;
+          --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+          --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+        }
+
+        body {
+          margin: 0;
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+          font-size: 14px;
+          color: var(--gray-900);
+          background: var(--gray-50);
+          line-height: 1.5;
+        }
+
+        h1 {
+          text-align: center;
+          margin: 20px 0 16px;
+          font-size: 22px;
+          font-weight: 600;
+          color: var(--gray-900);
+          letter-spacing: -0.5px;
+        }
+
+        .wrap {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 16px 24px;
+        }
+
+        /* 工具栏 - 卡片式设计 */
+        .bar {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          margin-bottom: 16px;
+          flex-wrap: wrap;
+          background: var(--white);
+          padding: 12px;
+          border-radius: 8px;
+          box-shadow: var(--shadow);
+          border: 1px solid var(--gray-200);
+        }
+
+        .nav-group {
+          display: flex;
+          gap: 8px;
+          flex-shrink: 0;
+        }
+
+        .range-section {
+          display: none;
+          gap: 10px;
+          align-items: center;
+          flex-wrap: wrap;
+          width: 100%;
+          margin-top: 12px;
+          padding-top: 12px;
+          border-top: 1px solid var(--gray-200);
+        }
+
+        .range-section.show {
+          display: flex;
+        }
+
+        .range-section span {
+          color: var(--gray-700); /* 和 label 同色 */
+          font-size: 14px;        /* 和 label 同大小 */
+          font-weight: 500;       /* 和 label 同粗细 */
+          flex-shrink: 0;
+        }
+
+        .range-inputs {
+          display: flex;
+          gap: 8px;
+          align-items: center;
+          flex-shrink: 0;
+        }
+
+        .range-buttons {
+          display: flex;
+          gap: 8px;
+          flex-shrink: 0;
+        }
+
+        /* 按钮设计系统 - 统一蓝色系 */
+        button {
+          padding: 8px 16px;
+          font-size: 14px;
+          font-weight: 500;
+          min-height: 36px;
+          cursor: pointer;
+          border: 1px solid var(--gray-300);
+          background: var(--white);
+          color: var(--gray-700);
+          border-radius: 6px;
+          transition: all 0.15s ease;
+          white-space: nowrap;
+          box-shadow: var(--shadow-sm);
+        }
+
+        button:hover:not(:disabled) {
+          border-color: var(--primary-600);
+          color: var(--primary-700);
+          background: var(--primary-50);
+        }
+
+        button:disabled {
+          opacity: 0.5;
+          cursor: not-allowed;
+        }
+
+        /* 主要按钮 - 实心蓝 */
+        button.primary {
+          background: var(--primary-600);
+          color: var(--white);
+          border-color: var(--primary-600);
+          box-shadow: 0 1px 2px rgba(37, 99, 235, 0.2);
+        }
+
+        button.primary:hover:not(:disabled) {
+          background: var(--primary-700);
+          border-color: var(--primary-700);
+          color: var(--white);
+        }
+
+        /* 切换按钮 - 幽灵按钮样式 */
+        button.toggle-btn {
+          background: transparent;
+          border-color: var(--gray-300);
+          color: var(--gray-600);
+          font-size: 13px;
+          padding: 6px 12px;
+        }
+
+        button.toggle-btn:hover:not(:disabled) {
+          background: var(--gray-100);
+          border-color: var(--gray-400);
+          color: var(--gray-900);
+        }
+
+        button.toggle-btn.active {
+          background: var(--primary-50);
+          color: var(--primary-700);
+          border-color: var(--primary-600);
+          font-weight: 600;
+        }
+
+        label {
+          font-size: 14px;
+          font-weight: 500;
+          color: var(--gray-700);
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+
+        input[type=date] {
+          position: relative;
+          padding: 8px 12px;
+          font-size: 14px;
+          font-weight: 400;
+          cursor: pointer;
+          background: var(--white);
+          border: 1px solid var(--gray-300);
+          border-radius: 6px;
+          width: 125px;
+          color: var(--gray-900);
+          transition: border-color 0.15s;
+        }
+
+        input[type=date]:hover {
+          border-color: var(--gray-400);
+        }
+
+        input[type=date]:focus {
+          outline: none;
+          border-color: var(--primary-600);
+          box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+
+        input[type=date]::-webkit-calendar-picker-indicator {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background: transparent;
+          color: transparent;
+          cursor: pointer;
+        }
+
+        /* 表格设计 */
+        table {
+          width: 100%;
+          border-collapse: separate;
+          border-spacing: 0;
+          background: var(--white);
+          border-radius: 8px;
+          overflow: hidden;
+          box-shadow: var(--shadow);
+          border: 1px solid var(--gray-200);
+        }
+
+        th, td {
+          padding: 12px 16px;
+          text-align: left;
+          border-bottom: 1px solid var(--gray-200);
+        }
+
+        th {
+          background: var(--gray-50);
+          font-weight: 600;
+          font-size: 13px;
+          color: var(--gray-700);
+          text-transform: uppercase;
+          letter-spacing: 0.3px;
+          border-bottom: 2px solid var(--gray-200);
+        }
+
+        tbody tr:last-child td {
+          border-bottom: none;
+        }
+
+        /* 日期分隔行样式 - 仅左边框，无背景色，与表头区分 */
+        tr.date-separator {
+          background: transparent !important;  /* 无背景色，与数据行一致 */
+          border-left: 3px solid var(--primary-600);  /* 蓝色左边框强调 */
+        }
+
+        tr.date-separator td {
+          color: var(--gray-700);  /* 深灰色文字，不抢眼 */
+          font-weight: 600;
+          font-size: 13px;
+          padding: 10px 16px;
+          border-bottom: 1px solid var(--gray-200);  /* 普通灰色边框 */
+          letter-spacing: 0.3px;
+        }
+
+        /* 状态文字 */
+        #status {
+          font-size: 13px;
+          color: var(--gray-600);
+          font-weight: 500;
+        }
+
+        /* 加载动画 */
+        #loader {
+          position: fixed;
+          inset: 0;
+          background: rgba(255, 255, 255, 0.9);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 999;
+          transition: opacity 0.2s;
+        }
+        #loader.hidden { opacity: 0; pointer-events: none; }
+
+        .spinner {
+          width: 40px;
+          height: 40px;
+          border: 3px solid var(--gray-200);
+          border-top-color: var(--primary-600);
+          border-radius: 50%;
+          animation: spin 0.8s linear infinite;
+        }
+
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        /* 悬浮气泡样式 */
+        .tip-tooltip {
+          position: fixed;
+          padding: 6px 10px;
+          background: #333;
+          color: #fff;
+          font-size: 12px;
+          border-radius: 4px;
+          z-index: 9999;
+          pointer-events: none;
+          opacity: 0;
+          transition: opacity 0.2s;
+          max-width: 800px;
+          white-space: nowrap;
+        }
+
+        /* 移动端优化 */
+        @media (max-width: 640px) {
+          h1 {
+            font-size: 18px;
+            margin: 16px 0 12px;
+          }
+
+          .wrap {
+            padding: 0 8px 16px;  /* 减小左右边距 */
+          }
+
+          .bar {
+            padding: 8px;
+            gap: 8px;
+          }
+
+          label {
+            width: 100%;
+            margin-bottom: 2px;
+            font-size: 14px;
+          }
+
+          input[type=date] {
+            width: 110px;
+            min-width: 110px;
+            font-size: 14px;
+            padding: 6px 10px;
+          }
+
+          button {
+            padding: 6px 12px;
+            font-size: 13px;
+            min-height: 32px;
+          }
+
+          .nav-group { gap: 6px; }
+
+          .range-section {
+            gap: 8px;
+            margin-top: 10px;
+            padding-top: 10px;
+          }
+
+          .range-inputs span {
+            font-size: 13px;
+            color: var(--gray-500);
+          }
+
+          #status {
+            width: 100%;
+            margin-top: 4px;
+            font-size: 12px;
+          }
+
+          /* 移动端表格列宽调整 */
+          th, td {
+            padding: 6px 6px;  /* 减小内边距 */
+            font-size: 13px;
+            line-height: 1.3;  /* 减小行高 */
+          }
+
+          th {
+            font-size: 12px;
+          }
+
+          th:nth-child(1), td:nth-child(1) {  /* 序号列 */
+            width: 50px;
+            min-width: 26px;
+          }
+
+          th:nth-child(2), td:nth-child(2) {  /* 时间列 */
+            width: 85px;
+            min-width: 60px;
+          }
+
+          th:nth-child(3), td:nth-child(3) {  /* 分类列 */
+            width: 70px;
+            min-width: 40px;
+          }
+
+          th:nth-child(4), td:nth-child(4) {  /* 标段名列 - 给更多空间 */
+            width: auto;
+            min-width: 120px;
+          }
+
+          th:nth-child(5), td:nth-child(5) {  /* 开标地点列 */
+            width: 90px;
+            min-width: 56px;
+          }
+
+          tr.date-separator td {
+            padding: 8px 8px;
+            font-size: 12px;
+          }
+        }
+
+        /* 链接容器：弹性布局，文字+图标对齐 */
+        .bid-link {
+          color: var(--primary-600); /* 改用全局主题色 */
+          text-decoration: none; /* 容器本身不设置下划线 */
+          transition: all 0.2s ease;
+          display: inline-flex; /* 改为弹性布局，文字和图标不换行 */
+          align-items: baseline; /* 文字和图标基线对齐 */
+          gap: 2px; /* 文字和图标之间的固定间距，推荐2-3px */
+        }
+
+        /* 仅给文字部分添加下划线，不影响图标 */
+        .bid-link .text-part {
+          text-decoration: inherit;
+          transition: inherit;
+        }
+
+        /* hover 效果：仅文字部分出现下划线 */
+        .bid-link:hover .text-part {
+          color: var(--primary-700);
+          text-decoration: underline;
+        }
+
+        /* 点击反馈 */
+        .bid-link:active {
+          color: var(--primary-900);
+          transform: scale(0.98);
+        }
+
+        /* 外部链接图标 */
+        .external-icon {
+          font-size: 12px;
+          line-height: 1; /* 消除图标自带行高 */
+          opacity: 0.7;
+          transition: all 0.2s ease;
+        }
+
+        .bid-link:hover .external-icon {
+          opacity: 1;
+          color: var(--primary-700);
+        }
+      </style>
+    </head>
+  <body>
+    <!-- 悬浮气泡容器 新增 -->
+    <div class="tip-tooltip" id="tooltip"></div>
+
+    <div id="loader">
+      <div class="spinner"></div>
+    </div>
+
+    <div class="wrap">
+      <h1 title="本工具仅供个人学习交流使用，数据来源于湖南省公共资源交易服务平台，所有信息仅供参考，不构成任何交易建议，最终以官方公告为准。">工程项目 · 开标日历</h1>
+      <div class="bar">
+        <label id="singleDateLabel">
+          选择日期
+          <input type="date" id="datePicker">
+        </label>
+        
+        <div class="nav-group" id="singleDateNav">
+          <button id="btnPrev" title="上一日">← 上一日</button>
+          <button id="btnNext" title="下一日">下一日 →</button>
+        </div>
+        
+        <button id="btnToday" class="primary" title="回到今天">回到今天</button>
+        <button id="btnRefresh">刷新</button>
+        <button id="btnToggleRange" class="toggle-btn" title="展开区间查询">区间查询 ▼</button>
+        
+        <span id="status"></span>
+        
+        <div class="range-section" id="rangeSection">
+          <span>时间范围</span>
+          <div class="range-inputs">
+            <input type="date" id="rangeStart" placeholder="开始日期">
+            <span style="color: var(--gray-400);">→</span>
+            <input type="date" id="rangeEnd" placeholder="结束日期">
+          </div>
+          <div class="range-buttons">
+            <button id="btnQueryRange" class="primary">查询区间</button>
+            <button id="btnClearRange" type="button">清空</button>
+          </div>
+          <button id="btnBackToSingle" type="button" style="margin-left: auto; font-size: 13px; color: var(--gray-500); border: none; background: transparent; box-shadow: none;">返回单日 ▲</button>
+        </div>
+      </div>
+      
+      <table id="table">
+        <thead>
+          <tr>
+            <th style="width: 60px;">序号</th>
+            <th style="width: 100px;">时间</th>
+            <th style="width: 80px;">分类</th>
+            <th>标段名</th>
+            <th style="width: 120px;">开标地点</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <script>
+      const REGION = '4307';
+      // 【核心修改】常德优先 + 省级备用节点，不跨地市
+      const SAFE_HOSTS = ['changde', 'www', 'hnsbenji'];
+      let currentHostIndex = 0;
+      const MAX_RETRY = 2;
+      let failCount = 0;
+
+      // 悬浮请求防抖
+      let tipTimer = null;
+
+      // 获取当前节点
+      function getCurrentHost() {
+        return SAFE_HOSTS[currentHostIndex];
+      }
+
+      // 切换下一个备用节点
+      function switchHost() {
+        currentHostIndex = (currentHostIndex + 1) % SAFE_HOSTS.length;
+        failCount = 0;
+      }
+
+      // 接口地址（动态取当前节点）
+      const API_TEMP = date => 
+        `https://${getCurrentHost()}.hnsggzy.com/tradeApi/constructionSection/getCalendarByDate?date=${date}&regionCode=${REGION}`;
+      const DETAIL_BASE_URL = 
+        `https://${getCurrentHost()}.hnsggzy.com/tradeApi/constructionTender/getBySectionId?sectionId=`;
+
+      // 通用请求头（模拟正常浏览器，防风控）
+      const FETCH_HEADERS = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+        "Accept": "application/json, text/plain, */*",
+        "Accept-Language": "zh-CN,zh;q=0.9",
+        "Referer": `https://${getCurrentHost()}.hnsggzy.com/`
+      };
+
+      // 防抖函数（降低请求频率）
+      function debounce(fn, delay = 188) {
+        let timer = null;
+        return function(...args) {
+          if (timer) clearTimeout(timer);
+          timer = setTimeout(() => fn.apply(this, args), delay);
+        };
+      }
+
+      const formatDateCN = d => d.toLocaleDateString('zh-CN', {
+        timeZone: 'Asia/Shanghai',
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit'
+      }).replace(/\//g, '-');
+
+      const getTodayStr = () => formatDateCN(new Date());
+      const fmtDate = d => d.toLocaleString('zh-CN', {
+        timeZone: 'Asia/Shanghai',
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit',
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: false
+      });
+
+      const parseTime = str => new Date(str.replace(' ', 'T'));
+      const shorten = s => s.replace(/直播大厅(\d+)/, '$1');
+      const WEEKDAYS = ['周日', '周一', '周二', '周三', '周四', '周五', '周六'];
+      
+      function formatDateWithWeekday(dateStr) {
+        const [year, month, day] = dateStr.split('-').map(Number);
+        const d = new Date(year, month - 1, day);
+        return `${dateStr} ${WEEKDAYS[d.getDay()]}`;
+      }
+
+      function getDateRange(startStr, endStr) {
+        const dates = [];
+        const start = new Date(startStr);
+        const end = new Date(endStr);
+        let current = new Date(start);
+        while (current <= end) {
+          dates.push(formatDateCN(current));
+          current.setDate(current.getDate() + 1);
+        }
+        return dates;
+      }
+
+      const loader = document.getElementById('loader');
+
+      const tooltip = document.getElementById('tooltip');
+      let currentFetch = null; // 记录当前请求，用于取消
+
+      function showLoader() {
+        loader.classList.remove('hidden');
+        document.querySelectorAll('button, input').forEach(el => el.disabled = true);
+      }
+      function hideLoader() {
+        loader.classList.add('hidden');
+        document.querySelectorAll('button, input').forEach(el => el.disabled = false);
+      }
+
+      // 隐藏悬浮气泡
+      function hideTooltip() {
+        tooltip.style.opacity = '0';
+        if (tipTimer) clearTimeout(tipTimer);
+        // 终止正在进行的请求
+        if (currentFetch && currentFetch.abort) {
+          currentFetch.abort();
+          currentFetch = null;
+        }
+      }
+
+      // 显示气泡 + 定位
+      function showTooltip(text, e) {
+        tooltip.textContent = text;
+        tooltip.style.left = (e.pageX + 15) + 'px';
+        tooltip.style.top = (e.pageY + 15) + 'px';
+        tooltip.style.opacity = '1';
+      }
+
+      // 悬浮请求详情接口
+      async function fetchTimeById(id, e) {
+        if(tipTimer) clearTimeout(tipTimer);
+        tipTimer = setTimeout(async () => {
+          hideTooltip();
+          showTooltip('加载中...', e);
+          try {
+            const url = `${DETAIL_BASE_URL}${id}&t=GC`;
+            const res = await fetch(url, { headers: FETCH_HEADERS });
+            const json = await res.json();
+            if (json.code === 200 && json.data?.constructionTender) {
+              const tender = json.data.constructionTender;
+              // 控制价格式化：千分位 + 保留 2 位小数，自动去除末尾无效0
+              const rawPrice = json.data.constructionSectionList?.[0]?.tenderControlPrice;
+              let priceText = '暂无';
+              if (rawPrice !== undefined && rawPrice !== null && rawPrice !== '') {
+                const num = Number(rawPrice);
+                if (!isNaN(num)) {
+                  // 先保留2位小数
+                  const fixedNum = num.toFixed(2);
+                  // 转数字再加上千分位，自动清理末尾 .00 / .0
+                  priceText = Number(fixedNum).toLocaleString('zh-CN', {
+                    minimumFractionDigits: 0,
+                    maximumFractionDigits: 2
+                  });
+                } else {
+                  priceText = rawPrice;
+                }
+              }
+              showTooltip(`${tender.tenderProjectType}，${tender.tendererName}，控制价 ${priceText} 万`, e);
+            } else {
+              showTooltip('未获取数据', e);
+            }
+          } catch (err) {
+            if (err.name !== 'AbortError') {
+              showTooltip('接口请求失败', e);
+            }
+          }
+        }, 399);
+      }
+
+      // 单日加载（加节点重试+请求头）
+      async function loadByDate(date) {
+        showLoader();
+        const status = document.getElementById('status');
+        const dateWithWeekday = formatDateWithWeekday(date);
+        status.textContent = `正在加载 ${dateWithWeekday} 数据...`;
+        
+        try {
+          const resp = await fetch(API_TEMP(date), { headers: FETCH_HEADERS });
+          if (!resp.ok) throw new Error('请求异常');
+          const json = await resp.json();
+          const list = json.data?.constructionSectionDTOS || [];
+          failCount = 0;
+
+          const rows = list.map((item) => {
+            let d = parseTime(item.bidOpeningTimeStart);
+            if (d.getHours() === 10 && d.getMinutes() === 0) {
+              d.setMinutes(30);
+              d.setHours(9);
+            }
+            
+            let 分类;
+            if (d.getHours() === 9 && d.getMinutes() === 0) {
+              分类 = item.isassistpb === "0" ? '非机器管' : '机器管';
+            } else {
+              分类 = '老系统';
+            }
+
+            return {
+              日期: date,
+              时间: fmtDate(d),
+              分类,
+              标段名: item.bidSectionName,
+              开标地点: shorten(item.bidOpeningSite),
+              link: `https://changde.hnsggzy.com/#/resources/transactionDetail/industry?bidSectionId=${item.bidSectionId}&t=GC`,
+              dateId: item.bidSectionId, // 存储id用于悬浮请求
+            };
+          })
+          .sort((a, b) =>
+            b.分类.localeCompare(a.分类, 'zh-CN')
+              || a.开标地点.localeCompare(b.开标地点, 'zh-CN')
+          );
+        
+          rows.forEach((r, idx) => { r.序号 = idx + 1; });
+          renderTable(rows, false);
+          status.textContent = `共 ${rows.length} 条记录（${dateWithWeekday}）`;
+        } catch (e) {
+          failCount++;
+          // 达到重试次数，切换备用节点
+          if (failCount >= MAX_RETRY) {
+            switchHost();
+            status.textContent = `节点异常，已切换备用节点，请重试`;
+          } else {
+            status.textContent = `加载失败，正在重试(${failCount}/${MAX_RETRY})`;
+          }
+          document.querySelector('#table tbody').innerHTML = 
+            '<tr><td colspan="5" style="text-align:center;color:var(--gray-500);padding:24px;">出错了，请稍后重试</td></tr>';
+        } finally {
+          hideLoader();
+        }
+      }
+
+      // 区间加载
+      async function loadByRange(startDate, endDate) {
+        showLoader();
+        const status = document.getElementById('status');
+        const dates = getDateRange(startDate, endDate);
+        
+        status.textContent = `正在查询 ${dates.length} 天的数据...`;
+        
+        const allRows = [];
+        let successCount = 0;
+        let failCount = 0;
+        
+        for (let i = 0; i < dates.length; i++) {
+          const date = dates[i];
+          status.textContent = `正在加载 ${formatDateWithWeekday(date)} (${i + 1}/${dates.length})...`;
+          
+          try {
+            const resp = await fetch(API_TEMP(date), { headers: FETCH_HEADERS });
+            if (!resp.ok) throw new Error('请求异常');
+            const json = await resp.json();
+            const list = json.data?.constructionSectionDTOS || [];
+            
+            const dayRows = list.map((item) => {
+              let d = parseTime(item.bidOpeningTimeStart);
+              if (d.getHours() === 10 && d.getMinutes() === 0) {
+                d.setMinutes(30);
+                d.setHours(9);
+              }
+              
+              let 分类;
+              if (d.getHours() === 9 && d.getMinutes() === 0) {
+                分类 = item.isassistpb === "0" ? '非机器管' : '机器管';
+              } else {
+                分类 = '老系统';
+              }
+
+              return {
+                日期: date,
+                时间: fmtDate(d),
+                分类,
+                标段名: item.bidSectionName,
+                开标地点: shorten(item.bidOpeningSite),
+                link: `https://changde.hnsggzy.com/#/resources/transactionDetail/industry?bidSectionId=${item.bidSectionId}&t=GC`,
+                dateId: item.bidSectionId, // 存储id用于悬浮请求
+              };
+            });
+            
+            allRows.push(...dayRows);
+            successCount++;
+          } catch (e) {
+            console.error(`查询 ${date} 失败:`, e);
+            failCount++;
+          }
+        }
+        
+        allRows.sort((a, b) => {
+          const dateCompare = a.日期.localeCompare(b.日期);
+          if (dateCompare !== 0) return dateCompare;
+          const typeCompare = b.分类.localeCompare(a.分类, 'zh-CN');
+          if (typeCompare !== 0) return typeCompare;
+          return a.开标地点.localeCompare(b.开标地点, 'zh-CN');
+        });
+        
+        allRows.forEach((r, idx) => { r.序号 = idx + 1; });
+        renderTable(allRows, true);
+        
+        const rangeText = `${formatDateWithWeekday(startDate)} 至 ${formatDateWithWeekday(endDate)}`;
+        if (failCount > 0) {
+          status.textContent = `共 ${allRows.length} 条记录（${rangeText}），${successCount}天成功${failCount}天失败`;
+        } else {
+          status.textContent = `共 ${allRows.length} 条记录（${rangeText}）`;
+        }
+        
+        hideLoader();
+      }
+
+      // 绑定防抖后的日期变更事件
+      const debouncedLoadByDate = debounce(loadByDate);
+
+      function setDateAndLoad(date) {
+        datePicker.removeEventListener('change', onDateChange);
+        datePicker.value = date;
+        datePicker.addEventListener('change', onDateChange);
+        debouncedLoadByDate(date);
+      }
+
+      function onDateChange() {
+        if (!datePicker.value) {
+          setDateAndLoad(getTodayStr());
+          return;
+        }
+        debouncedLoadByDate(datePicker.value);
+      }
+
+      function loadToday() {
+        const current = datePicker.value || getTodayStr();
+        setDateAndLoad(current);
+      }
+
+      function parseDateStr(dateStr) {
+        const [year, month, day] = dateStr.split('-').map(Number);
+        return new Date(year, month - 1, day);
+      }
+      
+      function getPrevDateStr(currentDateStr) {
+        const d = parseDateStr(currentDateStr);
+        d.setDate(d.getDate() - 1);
+        return formatDateCN(d);
+      }
+      
+      function getNextDateStr(currentDateStr) {
+        const d = parseDateStr(currentDateStr);
+        d.setDate(d.getDate() + 1);
+        return formatDateCN(d);
+      }
+      
+      function onPrevDay() {
+        const current = datePicker.value || getTodayStr();
+        const prevDate = getPrevDateStr(current);
+        setDateAndLoad(prevDate);
+      }
+      
+      function onNextDay() {
+        const current = datePicker.value || getTodayStr();
+        const nextDate = getNextDateStr(current);
+        setDateAndLoad(nextDate);
+      }
+      
+      function onToday() {
+        setDateAndLoad(getTodayStr());
+      }
+
+      function toggleRangeSection() {
+        const isShowing = rangeSection.classList.contains('show');
+        if (isShowing) {
+          rangeSection.classList.remove('show');
+          singleDateLabel.style.display = 'flex';
+          singleDateNav.style.display = 'flex';
+          btnToday.style.display = 'block';
+          btnToggleRange.textContent = '区间查询 ▼';
+          btnToggleRange.classList.remove('active');
+        } else {
+          rangeSection.classList.add('show');
+          if (window.innerWidth <= 640) {
+            singleDateLabel.style.display = 'none';
+            singleDateNav.style.display = 'none';
+            btnToday.style.display = 'none';
+          }
+          btnToggleRange.textContent = '单日查询 ▲';
+          btnToggleRange.classList.add('active');
+        }
+      }
+
+      function backToSingle() {
+        rangeSection.classList.remove('show');
+        singleDateLabel.style.display = 'flex';
+        singleDateNav.style.display = 'flex';
+        btnToday.style.display = 'block';
+        btnToggleRange.textContent = '区间查询 ▼';
+        btnToggleRange.classList.remove('active');
+        setDateAndLoad(datePicker.value || getTodayStr());
+      }
+
+      function onQueryRange() {
+        const start = rangeStart.value;
+        const end = rangeEnd.value;
+        
+        if (!start || !end) {
+          alert('请选择开始日期和结束日期');
+          return;
+        }
+        
+        if (start > end) {
+          alert('开始日期不能晚于结束日期');
+          return;
+        }
+        
+        const days = Math.ceil((new Date(end) - new Date(start)) / (1000 * 60 * 60 * 24)) + 1;
+        if (days > 8) {
+          alert('为保护服务器，单次查询最多支持 8 天，请缩小查询范围');
+          return;
+        }
+        
+        loadByRange(start, end);
+      }
+      
+      function onClearRange() {
+        rangeStart.value = '';
+        rangeEnd.value = '';
+      }
+
+      /* 渲染表格 - 区间模式和单日模式保持一致 */
+      function renderTable(data, isRangeMode) {
+        const tbody = document.querySelector('#table tbody');
+        
+        if (!data.length) {
+          tbody.innerHTML = '<tr><td colspan="5" style="text-align:center;color:var(--gray-500);padding:24px;">暂无开标记录</td></tr>';
+          return;
+        }
+        
+        let html = '';
+        
+        if (!isRangeMode) {
+          // 单日模式：普通渲染
+          html = data.map(r => `
+            <tr>
+              <td>${r.序号}</td>
+              <td>${r.时间}</td>
+              <td>${r.分类}</td>
+              <td>
+                <a href="${r.link || '#'}"
+                  class="bid-link"
+                  data-bid-id="${r.dateId}"
+                  target="_blank">
+                  <span class="text-part">${r.标段名}</span>
+                  <span class="external-icon">↗</span>
+                </a>
+              </td>
+              <td>${r.开标地点}</td>
+            </tr>`).join('');
+        } else {
+          // 区间模式：只保留日期分隔行，数据行无特殊背景色
+          let lastDate = '';
+          
+          data.forEach((r) => {
+            // 日期变化时，插入日期分隔行
+            if (r.日期 !== lastDate) {
+              const weekday = WEEKDAYS[new Date(r.日期).getDay()];
+              html += `<tr class="date-separator">
+                <td colspan="5">📅 ${r.日期} ${weekday}</td>
+              </tr>`;
+              lastDate = r.日期;
+            }
+            
+            const timeOnly = r.时间.split(' ')[1] || r.时间;
+            
+            // 数据行不再添加任何背景色类，与单日模式保持一致
+            html += `<tr>
+              <td>${r.序号}</td>
+              <td>${timeOnly}</td>
+              <td>${r.分类}</td>
+              <td>
+                <a href="${r.link || '#'}"
+                  class="bid-link"
+                  data-bid-id="${r.dateId}"
+                  target="_blank">
+                  <span class="text-part">${r.标段名}</span>
+                  <span class="external-icon">↗</span>
+                </a>
+              </td>
+              <td>${r.开标地点}</td>
+            </tr>`;
+          });
+        }
+        
+        tbody.innerHTML = html;
+
+        // 绑定悬浮事件
+        bindHoverEvent();
+      }
+
+      // 绑定标段名链接悬浮事件
+      function bindHoverEvent() {
+        const links = document.querySelectorAll('.bid-link');
+        links.forEach(link => {
+          // 鼠标进入
+          link.addEventListener('mouseenter', function(e) {
+            const bidId = this.dataset.bidId;
+            if (bidId) {
+              fetchTimeById(bidId, e);
+            }
+          });
+          // 鼠标离开
+          link.addEventListener('mouseleave', hideTooltip);
+          // 鼠标移动，跟随气泡
+          link.addEventListener('mousemove', function(e) {
+            tooltip.style.left = (e.pageX + 15) + 'px';
+            tooltip.style.top = (e.pageY + 15) + 'px';
+          });
+        });
+      }
+
+      const btnRefresh = document.getElementById('btnRefresh');
+      const datePicker = document.getElementById('datePicker');
+      const btnPrev = document.getElementById('btnPrev');
+      const btnNext = document.getElementById('btnNext');
+      const btnToday = document.getElementById('btnToday');
+      const btnToggleRange = document.getElementById('btnToggleRange');
+      const singleDateLabel = document.getElementById('singleDateLabel');
+      const singleDateNav = document.getElementById('singleDateNav');
+      const rangeSection = document.getElementById('rangeSection');
+      
+      const rangeStart = document.getElementById('rangeStart');
+      const rangeEnd = document.getElementById('rangeEnd');
+      const btnQueryRange = document.getElementById('btnQueryRange');
+      const btnClearRange = document.getElementById('btnClearRange');
+      const btnBackToSingle = document.getElementById('btnBackToSingle');
+
+      datePicker.addEventListener('change', onDateChange);
+      btnRefresh.addEventListener('click', loadToday);
+      btnPrev.addEventListener('click', onPrevDay);
+      btnNext.addEventListener('click', onNextDay);
+      btnToday.addEventListener('click', onToday);
+      
+      btnToggleRange.addEventListener('click', toggleRangeSection);
+      btnBackToSingle.addEventListener('click', backToSingle);
+      btnQueryRange.addEventListener('click', onQueryRange);
+      btnClearRange.addEventListener('click', onClearRange);
+
+      window.addEventListener('resize', () => {
+        if (rangeSection.classList.contains('show')) {
+          if (window.innerWidth > 640) {
+            singleDateLabel.style.display = 'flex';
+            singleDateNav.style.display = 'flex';
+            btnToday.style.display = 'block';
+          } else {
+            singleDateLabel.style.display = 'none';
+            singleDateNav.style.display = 'none';
+            btnToday.style.display = 'none';
+          }
+        }
+      });
+
+      setDateAndLoad(getTodayStr());
+    </script>
+  </body>
+</html>
