@@ -3,7 +3,12 @@
   <head>
       <meta charset="UTF-8">
       <title>工程开标日历</title>
+      <!-- 禁止爬虫：不索引、不跟踪链接、不显示快照、不显示摘要 -->
+      <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
       <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta name="author" content="acc8226">
+      <link rel="author" href="mailto:acc8226@qq.com">
+
       <style>
         :root {
           /* 设计系统 - 单色蓝配色 */
@@ -279,17 +284,36 @@
         }
         #loader.hidden { opacity: 0; pointer-events: none; }
 
-        .spinner {
-          width: 40px;
-          height: 40px;
-          border: 3px solid var(--gray-200);
-          border-top-color: var(--primary-600);
-          border-radius: 50%;
-          animation: spin 0.8s linear infinite;
+        /* 灵动三点式加载动画 */
+        .loader-dots {
+          display: flex;
+          gap: 12px;
+          align-items: center;
+          justify-content: center;
         }
 
-        @keyframes spin { to { transform: rotate(360deg); } }
+        .loader-dots span {
+          width: 12px;
+          height: 12px;
+          background: var(--primary-600);
+          border-radius: 50%;
+          animation: bounce 1.2s ease-in-out infinite;
+        }
 
+        .loader-dots span:nth-child(1) { animation-delay: -0.32s; }
+        .loader-dots span:nth-child(2) { animation-delay: -0.16s; }
+        .loader-dots span:nth-child(3) { animation-delay: 0s; }
+
+        @keyframes bounce {
+          0%, 60%, 100% {
+            transform: scale(0.8);
+            opacity: 0.5;
+          }
+          30% {
+            transform: scale(1.2);
+            opacity: 1;
+          }
+        }
         /* 悬浮气泡样式 */
         .tip-tooltip {
           position: fixed;
@@ -408,6 +432,10 @@
             font-size: 11px;
             padding: 6px 10px;
           }
+          /* 手机端隐藏导出按钮 */
+          #btnExport {
+            display: none;
+          }
         }
 
         /* 链接容器：弹性布局，文字+图标对齐 */
@@ -455,7 +483,11 @@
     <div class="tip-tooltip" id="tooltip"></div>
 
     <div id="loader">
-      <div class="spinner"></div>
+      <div class="loader-dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
 
     <div class="wrap">
@@ -473,6 +505,7 @@
         
         <button id="btnToday" class="primary" title="回到今天">回到今天</button>
         <button id="btnRefresh">刷新</button>
+        <button id="btnExport">导出 CSV</button>
         <button id="btnToggleRange" class="toggle-btn" title="展开区间查询">区间查询 ▼</button>
         
         <span id="status"></span>
@@ -485,6 +518,8 @@
             <input type="date" id="rangeEnd" placeholder="结束日期">
           </div>
           <div class="range-buttons">
+            <button id="btnThisWeek">本周</button>
+            <button id="btnNextWeekRange">下周</button>
             <button id="btnQueryRange" class="primary">查询区间</button>
             <button id="btnClearRange" type="button">清空</button>
           </div>
@@ -504,6 +539,11 @@
         </thead>
         <tbody></tbody>
       </table>
+
+      <div style="text-align: center; padding: 16px; font-size: 12px; color: var(--gray-500);">
+        © 2026 acc8226 | <a href="https://gitcode.com/acc8226/" target="_blank" style="color: var(--primary-600); text-decoration: none;">开源项目</a>
+      </div>
+
     </div>
 
     <script>
@@ -516,6 +556,10 @@
 
       // 悬浮请求防抖
       let tipTimer = null;
+
+      // 保存最后一次单日查询的数据，用于“返回单日”时不重复请求
+      let lastSingleDate = null;
+      let lastSingleRows = null;
 
       // 获取当前节点
       function getCurrentHost() {
@@ -725,11 +769,16 @@
           rows.sort((a, b) =>
             b.分类.localeCompare(a.分类, 'zh-CN')
               || a.开标地点.localeCompare(b.开标地点, 'zh-CN')
+              || (a.标段名 < b.标段名 ? -1 : (a.标段名 > b.标段名 ? 1 : 0)) // 确保按 Unicode 码点排序。这会使中文数字按笔画/码点顺序（一、二、三）正确排列。
           );
         
           rows.forEach((r, idx) => { r.序号 = idx + 1; });
           renderTable(rows, false);
           status.textContent = `共 ${rows.length} 条记录（${dateWithWeekday}）`;
+          
+          // 保存最后一次单日数据
+          lastSingleDate = date;
+          lastSingleRows = rows.slice(); // 深拷贝
         } catch (e) {
           failCount++;
           // 达到重试次数，切换备用节点
@@ -783,9 +832,12 @@
           if (dateCompare !== 0) return dateCompare;
           const typeCompare = b.分类.localeCompare(a.分类, 'zh-CN');
           if (typeCompare !== 0) return typeCompare;
-          return a.开标地点.localeCompare(b.开标地点, 'zh-CN');
+          const placeCompare = a.开标地点.localeCompare(b.开标地点, 'zh-CN');
+          if (placeCompare !== 0) return placeCompare;
+          // 按 Unicode 码点比较标段名（解决中文数字排序问题）
+          return a.标段名 < b.标段名 ? -1 : (a.标段名 > b.标段名 ? 1 : 0);
         });
-        
+                
         allRows.forEach((r, idx) => { r.序号 = idx + 1; });
         renderTable(allRows, true);
         
@@ -855,6 +907,37 @@
         setDateAndLoad(getTodayStr());
       }
 
+      // 获取指定周的工作日范围（周一至周五）
+      function getWeekWorkdays(baseDate = new Date(), offsetWeeks = 0) {
+        const target = new Date(baseDate);
+        target.setDate(target.getDate() + offsetWeeks * 7);
+        const day = target.getDay(); // 0周日 ~ 6周六
+        // 计算本周一
+        const diffToMonday = day === 0 ? -6 : 1 - day;
+        const monday = new Date(target);
+        monday.setDate(target.getDate() + diffToMonday);
+        const friday = new Date(monday);
+        friday.setDate(monday.getDate() + 4); // +4天是周五
+        return {
+          start: formatDateCN(monday),
+          end: formatDateCN(friday)
+        };
+      }
+
+      function setThisWeek() {
+        const { start, end } = getWeekWorkdays(new Date(), 0);
+        rangeStart.value = start;
+        rangeEnd.value = end;
+        onQueryRange();
+      }
+
+      function setNextWeekRange() {
+        const { start, end } = getWeekWorkdays(new Date(), 1);
+        rangeStart.value = start;
+        rangeEnd.value = end;
+        onQueryRange();
+      }
+
       function toggleRangeSection() {
         const isShowing = rangeSection.classList.contains('show');
         if (isShowing) {
@@ -883,7 +966,18 @@
         btnToday.style.display = 'block';
         btnToggleRange.textContent = '区间查询 ▼';
         btnToggleRange.classList.remove('active');
-        setDateAndLoad(datePicker.value || getTodayStr());
+        
+        // 如果曾经进行过单日查询（哪怕结果为0条），直接恢复
+        if (lastSingleRows) {
+          datePicker.value = lastSingleDate;
+          renderTable(lastSingleRows, false);
+          const status = document.getElementById('status');
+          const dateWithWeekday = formatDateWithWeekday(lastSingleDate);
+          status.textContent = `共 ${lastSingleRows.length} 条记录（${dateWithWeekday}）`;
+        } else {
+          // 兜底：重新加载
+          setDateAndLoad(datePicker.value || getTodayStr());
+        }
       }
 
       function onQueryRange() {
@@ -913,6 +1007,9 @@
         rangeStart.value = '';
         rangeEnd.value = '';
       }
+      
+      let currentExportData = [];
+      let currentExportMode = false;
 
       /* 渲染表格 - 区间模式和单日模式保持一致 */
       function renderTable(data, isRangeMode) {
@@ -920,6 +1017,9 @@
 
         if (!data.length) {
           tbody.innerHTML = '<tr><td colspan="5" style="text-align:center;color:var(--gray-500);padding:24px;">暂无记录</td></tr>';
+          // 保存导出数据
+          currentExportData = [];
+          currentExportMode = isRangeMode;
           return;
         }
 
@@ -980,6 +1080,10 @@
         
         tbody.innerHTML = html;
 
+        // 保存当前数据供导出使用
+        currentExportData = data;
+        currentExportMode = isRangeMode;
+        
         // 绑定悬浮事件
         bindHoverEvent();
       }
@@ -1015,7 +1119,63 @@
         });
       }
 
+      // 导出 CSV 功能
+      function exportToCSV() {
+        if (!currentExportData.length) {
+          alert('没有数据可导出');
+          return;
+        }
+        
+        const headers = ['序号', '时间', '分类', '标段名', '开标地点'];
+        const rows = [];
+        
+        for (const r of currentExportData) {
+          // 对于区间模式，日期字段已经存在；单日模式也一样
+          const timeStr = r.时间;
+          rows.push([
+            r.序号,
+            timeStr,
+            r.分类,
+            r.标段名,
+            r.开标地点
+          ]);
+        }
+        
+        const escapeCSV = (cell) => {
+          if (cell === undefined || cell === null) return '';
+          const str = String(cell);
+          if (str.includes(',') || str.includes('"') || str.includes('\n') || str.includes('\r')) {
+            return '"' + str.replace(/"/g, '""') + '"';
+          }
+          return str;
+        };
+        
+        const csvContent = [
+          headers.map(escapeCSV).join(','),
+          ...rows.map(row => row.map(escapeCSV).join(','))
+        ].join('\n');
+        
+        const blob = new Blob(["\uFEFF" + csvContent], { type: "text/csv;charset=utf-8;" });
+        const link = document.createElement('a');
+        const url = URL.createObjectURL(blob);
+        link.href = url;
+        
+        let filename = '';
+        if (currentExportMode && rangeStart.value && rangeEnd.value) {
+          filename = `开标数据_${rangeStart.value}_至_${rangeEnd.value}.csv`;
+        } else {
+          const currentDate = datePicker.value || getTodayStr();
+          filename = `开标数据_${currentDate}.csv`;
+        }
+        link.setAttribute('download', filename);
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        URL.revokeObjectURL(url);
+      }
+
       const btnRefresh = document.getElementById('btnRefresh');
+      const btnExport = document.getElementById('btnExport');
       const datePicker = document.getElementById('datePicker');
       const btnPrev = document.getElementById('btnPrev');
       const btnNext = document.getElementById('btnNext');
@@ -1030,17 +1190,21 @@
       const btnQueryRange = document.getElementById('btnQueryRange');
       const btnClearRange = document.getElementById('btnClearRange');
       const btnBackToSingle = document.getElementById('btnBackToSingle');
+      const btnThisWeek = document.getElementById('btnThisWeek');
+      const btnNextWeekRange = document.getElementById('btnNextWeekRange');
 
       datePicker.addEventListener('change', onDateChange);
       btnRefresh.addEventListener('click', loadToday);
       btnPrev.addEventListener('click', onPrevDay);
       btnNext.addEventListener('click', onNextDay);
       btnToday.addEventListener('click', onToday);
-      
+      if (btnExport) btnExport.addEventListener('click', exportToCSV);
       btnToggleRange.addEventListener('click', toggleRangeSection);
       btnBackToSingle.addEventListener('click', backToSingle);
       btnQueryRange.addEventListener('click', onQueryRange);
       btnClearRange.addEventListener('click', onClearRange);
+      if (btnThisWeek) btnThisWeek.addEventListener('click', setThisWeek);
+      if (btnNextWeekRange) btnNextWeekRange.addEventListener('click', setNextWeekRange);
 
       window.addEventListener('resize', () => {
         if (rangeSection.classList.contains('show')) {
@@ -1055,6 +1219,21 @@
           }
         }
       });
+
+      // 移动端区间查询自动触发
+      function initAutoRangeQuery() {
+        if (!isMobileDevice()) return;
+        const autoQuery = debounce(() => {
+          const start = rangeStart.value;
+          const end = rangeEnd.value;
+          if (start && end && start <= end) {
+            onQueryRange();
+          }
+        }, 300);
+        rangeStart.addEventListener('change', autoQuery);
+        rangeEnd.addEventListener('change', autoQuery);
+      }
+      initAutoRangeQuery();
 
       setDateAndLoad(getTodayStr());
     </script>
