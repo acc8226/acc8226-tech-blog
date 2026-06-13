@@ -9,6 +9,9 @@
       <meta name="author" content="acc8226">
       <link rel="author" href="mailto:acc8226@qq.com">
 
+      <!-- favicon -->
+      <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232563eb' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3Ccircle cx='12' cy='15' r='1'%3E%3C/circle%3E%3Ccircle cx='16' cy='15' r='1'%3E%3C/circle%3E%3Ccircle cx='8' cy='15' r='1'%3E%3C/circle%3E%3C/svg%3E">
+
       <style>
         :root {
           /* 设计系统 - 单色蓝配色 */
@@ -277,6 +280,7 @@
           inset: 0;
           background: rgba(255, 255, 255, 0.9);
           display: flex;
+          flex-direction: column;
           align-items: center;
           justify-content: center;
           z-index: 999;
@@ -436,6 +440,10 @@
           #btnExport {
             display: none;
           }
+          /* 移动端隐藏外部链接图标 */
+          .external-icon {
+            display: none;
+          }
         }
 
         /* 链接容器：弹性布局，文字+图标对齐 */
@@ -488,6 +496,7 @@
         <span></span>
         <span></span>
       </div>
+      <div id="loaderPercent" style="margin-top: 12px; font-size: 14px; color: var(--primary-600); font-weight: 500; display: none;">0%</div>
     </div>
 
     <div class="wrap">
@@ -540,10 +549,9 @@
         <tbody></tbody>
       </table>
 
-      <div style="text-align: center; padding: 16px; font-size: 12px; color: var(--gray-500);">
-        © 2026 acc8226 | <a href="https://gitcode.com/acc8226/" target="_blank" style="color: var(--primary-600); text-decoration: none;">开源项目</a>
+      <div style="text-align: center; margin-top: 6px; padding: 15px; font-size: 12px; color: var(--gray-500);">
+        © 2026 acc8226 | <a href="javascript:void(0)" target="_blank" style="color: inherit; text-decoration: none; opacity: 0.8;">开源项目</a>
       </div>
-
     </div>
 
     <script>
@@ -640,9 +648,25 @@
       const tooltip = document.getElementById('tooltip');
       let currentFetch = null; // 记录当前请求，用于取消
 
+      // 百分比相关函数
+      function updateLoaderPercent(percent) {
+        const percentEl = document.getElementById('loaderPercent');
+        if (percentEl) {
+          percentEl.textContent = Math.min(100, Math.floor(percent)) + '%';
+        }
+      }
+
+      function showLoaderPercent(show) {
+        const percentEl = document.getElementById('loaderPercent');
+        if (percentEl) {
+          percentEl.style.display = show ? 'block' : 'none';
+        }
+      }
+
       function showLoader() {
         loader.classList.remove('hidden');
         document.querySelectorAll('button, input').forEach(el => el.disabled = true);
+        showLoaderPercent(false); // 确保单日查询不显示百分比
       }
       function hideLoader() {
         loader.classList.add('hidden');
@@ -798,9 +822,9 @@
       // 区间加载
       async function loadByRange(startDate, endDate) {
         showLoader();
+        showLoaderPercent(true); // 显示百分比
         const status = document.getElementById('status');
         const dates = getDateRange(startDate, endDate);
-        
         status.textContent = `正在查询 ${dates.length} 天的数据...`;
         
         const allRows = [];
@@ -809,6 +833,8 @@
         
         for (let i = 0; i < dates.length; i++) {
           const date = dates[i];
+          const percent = ((i + 1) / dates.length) * 100;
+          updateLoaderPercent(percent);
           status.textContent = `正在加载 ${formatDateWithWeekday(date)} (${i + 1}/${dates.length})...`;
           
           try {
@@ -826,6 +852,9 @@
             failCount++;
           }
         }
+        
+        // 最终显示100%
+        updateLoaderPercent(100);
         
         allRows.sort((a, b) => {
           const dateCompare = a.日期.localeCompare(b.日期);
@@ -848,6 +877,7 @@
           status.textContent = `共 ${allRows.length} 条记录（${rangeText}）`;
         }
         
+        showLoaderPercent(false);
         hideLoader();
       }
 
@@ -1023,32 +1053,33 @@
           return;
         }
 
-        let html = '';
-        
-        if (!isRangeMode) {
-          // 单日模式：普通渲染
-          html = data.map(r => `
+        // 公共行生成函数
+        function renderRow(r, showFullTime) {
+          const timeStr = showFullTime ? r.时间 : (r.时间.split(' ')[1] || r.时间);
+          return `
             <tr>
               <td>${r.序号}</td>
-              <td>${r.时间}</td>
+              <td>${timeStr}</td>
               <td>${r.分类}</td>
               <td>
-                <a href="${r.link || '#'}"
-                  class="bid-link"
-                  data-bid-id="${r.dateId}"
-                  target="_blank">
+                <a href="${r.link || '#'}" class="bid-link" data-bid-id="${r.dateId}" target="_blank">
                   <span class="text-part">${r.标段名}</span>
                   <span class="external-icon">↗</span>
                 </a>
               </td>
               <td>${r.开标地点}</td>
-            </tr>`).join('');
+            </tr>`;
+        }
+
+        let html = '';
+        
+        if (!isRangeMode) {
+          // 单日模式：显示完整时间
+          html = data.map(r => renderRow(r, true)).join('');
         } else {
           // 区间模式：只保留日期分隔行，数据行无特殊背景色
           let lastDate = '';
-          
           data.forEach((r) => {
-            // 日期变化时，插入日期分隔行
             if (r.日期 !== lastDate) {
               const weekday = WEEKDAYS[new Date(r.日期).getDay()];
               html += `<tr class="date-separator">
@@ -1056,25 +1087,7 @@
               </tr>`;
               lastDate = r.日期;
             }
-            
-            const timeOnly = r.时间.split(' ')[1] || r.时间;
-            
-            // 数据行不再添加任何背景色类，与单日模式保持一致
-            html += `<tr>
-              <td>${r.序号}</td>
-              <td>${timeOnly}</td>
-              <td>${r.分类}</td>
-              <td>
-                <a href="${r.link || '#'}"
-                  class="bid-link"
-                  data-bid-id="${r.dateId}"
-                  target="_blank">
-                  <span class="text-part">${r.标段名}</span>
-                  <span class="external-icon">↗</span>
-                </a>
-              </td>
-              <td>${r.开标地点}</td>
-            </tr>`;
+            html += renderRow(r, false);
           });
         }
         
