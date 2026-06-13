@@ -446,6 +446,26 @@
           }
         }
 
+        /* 360 小设备 */
+        @media (max-width: 360px) {
+          /* 移动端表格列宽调整 */
+          th, td {
+            padding: 6px 4px;  /* 减小内边距 */
+            font-size: 12px;
+          }
+
+          th:nth-child(1), td:nth-child(1) {  /* 序号列 */
+            padding-left: 6px;
+          }
+        }
+
+        /* 320 小设备 */
+        @media (max-width: 320px) {
+          th:nth-child(1), td:nth-child(1) {  /* 序号列 */
+            padding-left: 5px;
+          }
+        }
+
         /* 链接容器：弹性布局，文字+图标对齐 */
         .bid-link {
           color: var(--primary-600); /* 改用全局主题色 */
@@ -548,10 +568,6 @@
         </thead>
         <tbody></tbody>
       </table>
-
-      <div style="text-align: center; margin-top: 6px; padding: 15px; font-size: 12px; color: var(--gray-500);">
-        © 2026 acc8226 | <a href="javascript:void(0)" target="_blank" style="color: inherit; text-decoration: none; opacity: 0.8;">开源项目</a>
-      </div>
     </div>
 
     <script>
@@ -733,6 +749,17 @@
         }, 399);
       }
 
+      // HTML 转义，防止 XSS
+      function escapeHtml(str) {
+        if (!str) return '';
+        return String(str)
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;')
+          .replace(/'/g, '&#39;');
+      }
+
       function toCamelCase(str) {
         if (!str) return 'construction';
         const parts = str.toLowerCase().split('_');
@@ -746,11 +773,11 @@
       // 公共数据转换函数
       function transformSections(sections, date) {
         return sections.map((item) => {
-          let d = parseTime(item.bidOpeningTimeStart);
+          const d = parseTime(item.bidOpeningTimeStart);
           // 特殊时间调整
           if (d.getHours() === 10 && d.getMinutes() === 0) {
-            d.setMinutes(30);
             d.setHours(9);
+            d.setMinutes(30);
           }
 
           let 分类;
@@ -770,7 +797,7 @@
             标段名: item.bidSectionName,
             开标地点: shorten(item.bidOpeningSite),
             link: `https://changde.hnsggzy.com/#/resources/transactionDetail/${mappedType}?bidSectionId=${item.bidSectionId}&t=GC`,
-            dateId: item.bidSectionId, // 存储id用于悬浮请求
+            dateId: item.bidSectionId, // 存储 id 用于悬浮请求
           };
         });
       }
@@ -1104,16 +1131,16 @@
           const timeStr = showFullTime ? r.时间 : (r.时间.split(' ')[1] || r.时间);
           return `
             <tr>
-              <td>${r.序号}</td>
-              <td>${timeStr}</td>
-              <td>${r.分类}</td>
+              <td>${escapeHtml(r.序号)}</td>
+              <td>${escapeHtml(timeStr)}</td>
+              <td>${escapeHtml(r.分类)}</td>
               <td>
-                <a href="${r.link || '#'}" class="bid-link" data-bid-id="${r.dateId}" target="_blank">
+                <a href="${escapeHtml(r.link || '#')}" class="bid-link" data-bid-id="${r.dateId}" target="_blank">
                   <span class="text-part">${r.标段名}</span>
                   <span class="external-icon">↗</span>
                 </a>
               </td>
-              <td>${r.开标地点}</td>
+              <td>${escapeHtml(r.开标地点)}</td>
             </tr>`;
         }
 
@@ -1129,7 +1156,7 @@
             if (r.日期 !== lastDate) {
               const weekday = WEEKDAYS[new Date(r.日期).getDay()];
               html += `<tr class="date-separator">
-                <td colspan="5">📅 ${r.日期} ${weekday}</td>
+                <td colspan="5">📅 ${escapeHtml(r.日期)} ${escapeHtml(weekday)}</td>
               </tr>`;
               lastDate = r.日期;
             }
