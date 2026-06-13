@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>帮助说明 - 工程开标日历</title>
+  <style>
+    :root {
+      --primary-600: #2563eb;
+      --primary-50: #eff6ff;
+      --gray-900: #111827;
+      --gray-700: #374151;
+      --gray-600: #4b5563;
+      --gray-500: #6b7280;
+      --gray-200: #e5e7eb;
+      --gray-100: #f3f4f6;
+      --white: #ffffff;
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--gray-100);
+      color: var(--gray-900);
+      line-height: 1.6;
+      padding: 24px 16px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--white);
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      padding: 24px 28px;
+    }
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 8px;
+      color: var(--gray-900);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .sub {
+      color: var(--gray-500);
+      border-bottom: 1px solid var(--gray-200);
+      padding-bottom: 16px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 1.3rem;
+      margin: 20px 0 12px;
+      color: var(--primary-600);
+      border-left: 4px solid var(--primary-600);
+      padding-left: 12px;
+    }
+    p {
+      margin: 12px 0;
+      color: var(--gray-700);
+    }
+    ul {
+      margin: 8px 0 16px 24px;
+    }
+    li {
+      margin: 6px 0;
+    }
+    .warning {
+      background: #fef3c7;
+      border-left: 4px solid #f59e0b;
+      padding: 12px 16px;
+      border-radius: 8px;
+      margin: 16px 0;
+      font-size: 0.9rem;
+    }
+    .footer {
+      margin-top: 32px;
+      padding-top: 16px;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--gray-500);
+      border-top: 1px solid var(--gray-200);
+    }
+    a {
+      color: var(--primary-600);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 640px) {
+      body { padding: 12px; }
+      .container { padding: 20px; }
+      h1 { font-size: 1.5rem; }
+      h2 { font-size: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>📖 帮助说明</h1>
+  <div class="sub">工程项目 · 开标日历</div>
+
+  <p><strong>数据来源</strong>：湖南省公共资源交易服务平台，仅供个人学习交流使用，不构成交易建议，最终以官方公告为准。</p>
+
+  <h2>📅 单日查询</h2>
+  <p>默认显示今天的数据。可通过日期选择器手动选择日期，或使用“上一日 / 下一日”按钮快速切换。页面标题会显示当前日期及星期几。</p>
+
+  <h2>📆 区间查询</h2>
+  <p>点击工具栏中的“区间查询 ▼”展开区间查询面板。选择开始日期和结束日期后，点击“查询区间”。</p>
+  <div class="warning">
+    ⚠️ 为保护服务器资源，单次最多查询 <strong>8 天</strong>。若超过 8 天，系统会提示无法查询，请缩小日期范围。
+  </div>
+  <p>区间查询结果会按日期分组显示，每个日期作为分隔行，数据行不再重复显示完整时间。</p>
+
+  <h2>🖱️ 悬浮查看详情（桌面端）</h2>
+  <p>将鼠标悬停在表格中的“标段名”链接上，稍后会出现气泡提示，显示：</p>
+  <ul>
+    <li>招标项目类型（如工业工程、住建工程等）</li>
+    <li>招标人名称</li>
+    <li>控制价（单位自动转换为“万”或“亿”）</li>
+  </ul>
+  <p>移动端由于屏幕限制，暂不支持悬浮查看，可直接点击链接跳转到官方详情页。</p>
+
+  <h2>📎 导出 CSV</h2>
+  <p>点击“导出 CSV”按钮，可将当前表格中的数据（单日或区间结果）导出为 CSV 文件，方便在 Excel 中打开。移动端为节省空间，该按钮会自动隐藏。</p>
+
+  <h2>🔁 节点切换</h2>
+  <p>系统内置多个数据节点（常德、省级等）。如果当前节点响应异常，会自动尝试切换到备用节点，无需手动干预。</p>
+
+  <h2>🔗 官方详情页</h2>
+  <p>点击任意“标段名”链接，会跳转到湖南省公共资源交易服务平台的官方交易详情页，可查看完整公告、中标候选人等信息。</p>
+
+  <h2>⚠️ 免责声明</h2>
+  <p>本工具为个人开发，数据接口来自公开渠道，可能存在延迟、缺失或错误。所有信息仅供参考，不构成任何投资或交易建议。最终结果请以官方发布的公告为准。</p>
+
+  <div class="footer">
+    版本 v26.06 · 反馈邮箱 <a href="mailto:acc8226@qq.com">acc8226@qq.com</a>
+  </div>
+</div>
+</body>
+</html>

@@ -1,511 +1,573 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
   <head>
-      <meta charset="UTF-8">
-      <title>工程开标日历</title>
-      <!-- 禁止爬虫：不索引、不跟踪链接、不显示快照、不显示摘要 -->
-      <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      <meta name="author" content="acc8226">
-      <link rel="author" href="mailto:acc8226@qq.com">
+    <meta charset="UTF-8">
+    <title>工程开标日历</title>
+    <!-- 禁止爬虫：不索引、不跟踪链接、不显示快照、不显示摘要 -->
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="author" content="acc8226">
+    <link rel="author" href="mailto:acc8226@qq.com">
 
-      <!-- favicon -->
-      <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232563eb' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3Ccircle cx='12' cy='15' r='1'%3E%3C/circle%3E%3Ccircle cx='16' cy='15' r='1'%3E%3C/circle%3E%3Ccircle cx='8' cy='15' r='1'%3E%3C/circle%3E%3C/svg%3E">
+    <!-- favicon -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232563eb' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3Ccircle cx='12' cy='15' r='1'%3E%3C/circle%3E%3Ccircle cx='16' cy='15' r='1'%3E%3C/circle%3E%3Ccircle cx='8' cy='15' r='1'%3E%3C/circle%3E%3C/svg%3E"
+    >
 
-      <style>
-        :root {
-          /* 设计系统 - 单色蓝配色 */
-          --primary-900: #1e3a8a;
-          --primary-700: #1d4ed8;
-          --primary-600: #2563eb;  /* 主色 */
-          --primary-100: #dbeafe;
-          --primary-50: #eff6ff;
-          
-          --gray-900: #111827;
-          --gray-700: #374151;
-          --gray-500: #6b7280;
-          --gray-300: #d1d5db;
-          --gray-200: #e5e7eb;
-          --gray-100: #f3f4f6;
-          --gray-50: #f9fafb;
-          
-          --white: #ffffff;
-          --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-          --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    <style>
+      :root {
+        /* 设计系统 - 单色蓝配色 */
+        --primary-900: #1e3a8a;
+        --primary-700: #1d4ed8;
+        --primary-600: #2563eb; /* 主色 */
+        --primary-100: #dbeafe;
+        --primary-50: #eff6ff;
+
+        --gray-900: #111827;
+        --gray-700: #374151;
+        --gray-500: #6b7280;
+        --gray-300: #d1d5db;
+        --gray-200: #e5e7eb;
+        --gray-100: #f3f4f6;
+        --gray-50: #f9fafb;
+
+        --white: #ffffff;
+        --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+        --shadow:
+          0 1px 3px 0 rgba(0, 0, 0, 0.1),
+          0 1px 2px 0 rgba(0, 0, 0, 0.06);
+      }
+
+      body {
+        margin: 0;
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+        font-size: 14px;
+        color: var(--gray-900);
+        background: var(--gray-50);
+        line-height: 1.5;
+      }
+
+      h1 {
+        text-align: center;
+        margin: 20px 0 16px;
+        font-size: 22px;
+        font-weight: 600;
+        color: var(--gray-900);
+        letter-spacing: -0.5px;
+      }
+
+      .wrap {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 16px 24px;
+      }
+
+      /* 工具栏 - 卡片式设计 */
+      .bar {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-bottom: 16px;
+        flex-wrap: wrap;
+        background: var(--white);
+        padding: 12px;
+        border-radius: 8px;
+        box-shadow: var(--shadow);
+        border: 1px solid var(--gray-200);
+      }
+
+      .nav-group {
+        display: flex;
+        gap: 8px;
+        flex-shrink: 0;
+      }
+
+      .range-section {
+        display: none;
+        gap: 10px;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 12px;
+        padding-top: 12px;
+        border-top: 1px solid var(--gray-200);
+      }
+
+      .range-section.show {
+        display: flex;
+      }
+
+      .range-section span {
+        color: var(--gray-700); /* 和 label 同色 */
+        font-size: 14px; /* 和 label 同大小 */
+        font-weight: 500; /* 和 label 同粗细 */
+        flex-shrink: 0;
+      }
+
+      .range-inputs {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        flex-shrink: 0;
+      }
+
+      .range-buttons {
+        display: flex;
+        gap: 8px;
+        flex-shrink: 0;
+      }
+
+      /* 按钮设计系统 - 统一蓝色系 */
+      button {
+        padding: 8px 16px;
+        font-size: 14px;
+        font-weight: 500;
+        min-height: 36px;
+        cursor: pointer;
+        border: 1px solid var(--gray-300);
+        background: var(--white);
+        color: var(--gray-700);
+        border-radius: 6px;
+        transition: all 0.15s ease;
+        white-space: nowrap;
+        box-shadow: var(--shadow-sm);
+      }
+
+      button:hover:not(:disabled) {
+        border-color: var(--primary-600);
+        color: var(--primary-700);
+        background: var(--primary-50);
+      }
+
+      button:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+
+      /* 主要按钮 - 实心蓝 */
+      button.primary {
+        background: var(--primary-600);
+        color: var(--white);
+        border-color: var(--primary-600);
+        box-shadow: 0 1px 2px rgba(37, 99, 235, 0.2);
+      }
+
+      button.primary:hover:not(:disabled) {
+        background: var(--primary-700);
+        border-color: var(--primary-700);
+        color: var(--white);
+      }
+
+      /* 切换按钮 - 幽灵按钮样式 */
+      button.toggle-btn {
+        background: transparent;
+        border-color: var(--gray-300);
+        color: var(--gray-600);
+        font-size: 13px;
+        padding: 6px 12px;
+      }
+
+      button.toggle-btn:hover:not(:disabled) {
+        background: var(--gray-100);
+        border-color: var(--gray-400);
+        color: var(--gray-900);
+      }
+
+      button.toggle-btn.active {
+        background: var(--primary-50);
+        color: var(--primary-700);
+        border-color: var(--primary-600);
+        font-weight: 600;
+      }
+
+      label {
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--gray-700);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      input[type="date"] {
+        position: relative;
+        padding: 8px 12px;
+        font-size: 14px;
+        font-weight: 400;
+        cursor: pointer;
+        background: var(--white);
+        border: 1px solid var(--gray-300);
+        border-radius: 6px;
+        width: 125px;
+        color: var(--gray-900);
+        transition: border-color 0.15s;
+      }
+
+      input[type="date"]:hover {
+        border-color: var(--gray-400);
+      }
+
+      input[type="date"]:focus {
+        outline: none;
+        border-color: var(--primary-600);
+        box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+      }
+
+      input[type="date"]::-webkit-calendar-picker-indicator {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        color: transparent;
+        cursor: pointer;
+      }
+
+      /* 表格设计 */
+      table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0;
+        background: var(--white);
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: var(--shadow);
+        border: 1px solid var(--gray-200);
+      }
+
+      th, td {
+        padding: 12px 16px;
+        text-align: left;
+        border-bottom: 1px solid var(--gray-200);
+      }
+
+      th {
+        background: var(--gray-50);
+        font-weight: 600;
+        font-size: 13px;
+        color: var(--gray-700);
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+        border-bottom: 2px solid var(--gray-200);
+      }
+
+      tbody tr:last-child td {
+        border-bottom: none;
+      }
+
+      /* 日期分隔行样式 - 仅左边框，无背景色，与表头区分 */
+      tr.date-separator {
+        background: transparent !important; /* 无背景色，与数据行一致 */
+        border-left: 3px solid var(--primary-600); /* 蓝色左边框强调 */
+      }
+
+      tr.date-separator td {
+        color: var(--gray-700); /* 深灰色文字，不抢眼 */
+        font-weight: 600;
+        font-size: 13px;
+        padding: 10px 16px;
+        border-bottom: 1px solid var(--gray-200); /* 普通灰色边框 */
+        letter-spacing: 0.3px;
+      }
+
+      /* 状态文字 */
+      #status {
+        font-size: 13px;
+        color: var(--gray-600);
+        font-weight: 500;
+      }
+
+      /* 加载动画 */
+      #loader {
+        position: fixed;
+        inset: 0;
+        background: rgba(255, 255, 255, 0.9);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 999;
+        transition: opacity 0.2s;
+      }
+      #loader.hidden {
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      /* 灵动三点式加载动画 */
+      .loader-dots {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .loader-dots span {
+        width: 12px;
+        height: 12px;
+        background: var(--primary-600);
+        border-radius: 50%;
+        animation: bounce 1.2s ease-in-out infinite;
+      }
+
+      .loader-dots span:nth-child(1) {
+        animation-delay: -0.32s;
+      }
+      .loader-dots span:nth-child(2) {
+        animation-delay: -0.16s;
+      }
+      .loader-dots span:nth-child(3) {
+        animation-delay: 0s;
+      }
+
+      @keyframes bounce {
+        0%, 60%, 100% {
+          transform: scale(0.8);
+          opacity: 0.5;
         }
-
-        body {
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-          font-size: 14px;
-          color: var(--gray-900);
-          background: var(--gray-50);
-          line-height: 1.5;
+        30% {
+          transform: scale(1.2);
+          opacity: 1;
         }
+      }
+      /* 悬浮气泡样式 */
+      .tip-tooltip {
+        position: fixed;
+        padding: 6px 10px;
+        background: #333;
+        color: #fff;
+        font-size: 12px;
+        border-radius: 4px;
+        z-index: 9999;
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.2s;
+        max-width: 699px; /* 默认限制宽度，防止过长 */
+        white-space: normal; /* 允许换行 */
+        word-break: break-word; /* 长单词换行 */
+        line-height: 1.4;
+      }
 
+      /* 右下角帮助浮动按钮 */
+      .help-float {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: var(--primary-600);
+        color: white;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        z-index: 1000;
+        font-size: 22px;
+        font-weight: 500;
+        transition: all 0.2s ease;
+        text-decoration: none;
+        border: none;
+      }
+      .help-float:hover {
+        background: var(--primary-700);
+        transform: scale(1.05);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+      }
+
+      /* 移动端优化 */
+      @media (max-width: 640px) {
         h1 {
-          text-align: center;
-          margin: 20px 0 16px;
-          font-size: 22px;
-          font-weight: 600;
-          color: var(--gray-900);
-          letter-spacing: -0.5px;
+          font-size: 18px;
+          margin: 16px 0 12px;
         }
 
         .wrap {
-          max-width: 1200px;
-          margin: 0 auto;
-          padding: 0 16px 24px;
+          padding: 0 8px 16px; /* 减小左右边距 */
         }
 
-        /* 工具栏 - 卡片式设计 */
         .bar {
-          display: flex;
-          gap: 10px;
-          align-items: center;
-          margin-bottom: 16px;
-          flex-wrap: wrap;
-          background: var(--white);
-          padding: 12px;
-          border-radius: 8px;
-          box-shadow: var(--shadow);
-          border: 1px solid var(--gray-200);
-        }
-
-        .nav-group {
-          display: flex;
+          padding: 8px;
           gap: 8px;
-          flex-shrink: 0;
-        }
-
-        .range-section {
-          display: none;
-          gap: 10px;
-          align-items: center;
-          flex-wrap: wrap;
-          width: 100%;
-          margin-top: 12px;
-          padding-top: 12px;
-          border-top: 1px solid var(--gray-200);
-        }
-
-        .range-section.show {
-          display: flex;
-        }
-
-        .range-section span {
-          color: var(--gray-700); /* 和 label 同色 */
-          font-size: 14px;        /* 和 label 同大小 */
-          font-weight: 500;       /* 和 label 同粗细 */
-          flex-shrink: 0;
-        }
-
-        .range-inputs {
-          display: flex;
-          gap: 8px;
-          align-items: center;
-          flex-shrink: 0;
-        }
-
-        .range-buttons {
-          display: flex;
-          gap: 8px;
-          flex-shrink: 0;
-        }
-
-        /* 按钮设计系统 - 统一蓝色系 */
-        button {
-          padding: 8px 16px;
-          font-size: 14px;
-          font-weight: 500;
-          min-height: 36px;
-          cursor: pointer;
-          border: 1px solid var(--gray-300);
-          background: var(--white);
-          color: var(--gray-700);
-          border-radius: 6px;
-          transition: all 0.15s ease;
-          white-space: nowrap;
-          box-shadow: var(--shadow-sm);
-        }
-
-        button:hover:not(:disabled) {
-          border-color: var(--primary-600);
-          color: var(--primary-700);
-          background: var(--primary-50);
-        }
-
-        button:disabled {
-          opacity: 0.5;
-          cursor: not-allowed;
-        }
-
-        /* 主要按钮 - 实心蓝 */
-        button.primary {
-          background: var(--primary-600);
-          color: var(--white);
-          border-color: var(--primary-600);
-          box-shadow: 0 1px 2px rgba(37, 99, 235, 0.2);
-        }
-
-        button.primary:hover:not(:disabled) {
-          background: var(--primary-700);
-          border-color: var(--primary-700);
-          color: var(--white);
-        }
-
-        /* 切换按钮 - 幽灵按钮样式 */
-        button.toggle-btn {
-          background: transparent;
-          border-color: var(--gray-300);
-          color: var(--gray-600);
-          font-size: 13px;
-          padding: 6px 12px;
-        }
-
-        button.toggle-btn:hover:not(:disabled) {
-          background: var(--gray-100);
-          border-color: var(--gray-400);
-          color: var(--gray-900);
-        }
-
-        button.toggle-btn.active {
-          background: var(--primary-50);
-          color: var(--primary-700);
-          border-color: var(--primary-600);
-          font-weight: 600;
         }
 
         label {
+          width: 100%;
+          margin-bottom: 2px;
           font-size: 14px;
-          font-weight: 500;
-          color: var(--gray-700);
-          display: flex;
-          align-items: center;
+        }
+
+        input[type="date"] {
+          width: 110px;
+          min-width: 110px;
+          font-size: 14px;
+          padding: 6px 10px;
+        }
+
+        button {
+          padding: 6px 12px;
+          font-size: 13px;
+          min-height: 32px;
+        }
+
+        .nav-group {
+          gap: 6px;
+        }
+
+        .range-section {
           gap: 8px;
+          margin-top: 10px;
+          padding-top: 10px;
         }
 
-        input[type=date] {
-          position: relative;
-          padding: 8px 12px;
-          font-size: 14px;
-          font-weight: 400;
-          cursor: pointer;
-          background: var(--white);
-          border: 1px solid var(--gray-300);
-          border-radius: 6px;
-          width: 125px;
-          color: var(--gray-900);
-          transition: border-color 0.15s;
+        .range-inputs span {
+          font-size: 13px;
+          color: var(--gray-500);
         }
 
-        input[type=date]:hover {
-          border-color: var(--gray-400);
-        }
-
-        input[type=date]:focus {
-          outline: none;
-          border-color: var(--primary-600);
-          box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
-        }
-
-        input[type=date]::-webkit-calendar-picker-indicator {
-          position: absolute;
-          left: 0;
-          top: 0;
+        #status {
           width: 100%;
-          height: 100%;
-          background: transparent;
-          color: transparent;
-          cursor: pointer;
+          margin-top: 4px;
+          font-size: 12px;
         }
 
-        /* 表格设计 */
-        table {
-          width: 100%;
-          border-collapse: separate;
-          border-spacing: 0;
-          background: var(--white);
-          border-radius: 8px;
-          overflow: hidden;
-          box-shadow: var(--shadow);
-          border: 1px solid var(--gray-200);
-        }
-
+        /* 移动端表格列宽调整 */
         th, td {
-          padding: 12px 16px;
-          text-align: left;
-          border-bottom: 1px solid var(--gray-200);
+          padding: 6px 6px; /* 减小内边距 */
+          font-size: 13px;
+          line-height: 1.3; /* 减小行高 */
         }
 
         th {
-          background: var(--gray-50);
-          font-weight: 600;
-          font-size: 13px;
-          color: var(--gray-700);
-          text-transform: uppercase;
-          letter-spacing: 0.3px;
-          border-bottom: 2px solid var(--gray-200);
+          font-size: 12px;
         }
 
-        tbody tr:last-child td {
-          border-bottom: none;
+        th:nth-child(1), td:nth-child(1) {
+          /* 序号列 */
+          width: 50px;
+          min-width: 26px;
         }
 
-        /* 日期分隔行样式 - 仅左边框，无背景色，与表头区分 */
-        tr.date-separator {
-          background: transparent !important;  /* 无背景色，与数据行一致 */
-          border-left: 3px solid var(--primary-600);  /* 蓝色左边框强调 */
+        th:nth-child(2), td:nth-child(2) {
+          /* 时间列 */
+          width: 85px;
+          min-width: 60px;
+        }
+
+        th:nth-child(3), td:nth-child(3) {
+          /* 分类列 */
+          width: 70px;
+          min-width: 40px;
+        }
+
+        th:nth-child(4), td:nth-child(4) {
+          /* 标段名列 - 给更多空间 */
+          width: auto;
+          min-width: 120px;
+        }
+
+        th:nth-child(5), td:nth-child(5) {
+          /* 开标地点列 */
+          width: 90px;
+          min-width: 56px;
         }
 
         tr.date-separator td {
-          color: var(--gray-700);  /* 深灰色文字，不抢眼 */
-          font-weight: 600;
-          font-size: 13px;
-          padding: 10px 16px;
-          border-bottom: 1px solid var(--gray-200);  /* 普通灰色边框 */
-          letter-spacing: 0.3px;
+          padding: 8px 8px;
+          font-size: 12px;
         }
 
-        /* 状态文字 */
-        #status {
-          font-size: 13px;
-          color: var(--gray-600);
-          font-weight: 500;
-        }
-
-        /* 加载动画 */
-        #loader {
-          position: fixed;
-          inset: 0;
-          background: rgba(255, 255, 255, 0.9);
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          z-index: 999;
-          transition: opacity 0.2s;
-        }
-        #loader.hidden { opacity: 0; pointer-events: none; }
-
-        /* 灵动三点式加载动画 */
-        .loader-dots {
-          display: flex;
-          gap: 12px;
-          align-items: center;
-          justify-content: center;
-        }
-
-        .loader-dots span {
-          width: 12px;
-          height: 12px;
-          background: var(--primary-600);
-          border-radius: 50%;
-          animation: bounce 1.2s ease-in-out infinite;
-        }
-
-        .loader-dots span:nth-child(1) { animation-delay: -0.32s; }
-        .loader-dots span:nth-child(2) { animation-delay: -0.16s; }
-        .loader-dots span:nth-child(3) { animation-delay: 0s; }
-
-        @keyframes bounce {
-          0%, 60%, 100% {
-            transform: scale(0.8);
-            opacity: 0.5;
-          }
-          30% {
-            transform: scale(1.2);
-            opacity: 1;
-          }
-        }
-        /* 悬浮气泡样式 */
         .tip-tooltip {
-          position: fixed;
+          max-width: calc(100vw - 30px); /* 移动端自适应屏幕宽度 */
+          font-size: 11px;
           padding: 6px 10px;
-          background: #333;
-          color: #fff;
-          font-size: 12px;
-          border-radius: 4px;
-          z-index: 9999;
-          pointer-events: none;
-          opacity: 0;
-          transition: opacity 0.2s;
-          max-width: 699px;          /* 默认限制宽度，防止过长 */
-          white-space: normal;       /* 允许换行 */
-          word-break: break-word;    /* 长单词换行 */
-          line-height: 1.4;
         }
-
-        /* 移动端优化 */
-        @media (max-width: 640px) {
-          h1 {
-            font-size: 18px;
-            margin: 16px 0 12px;
-          }
-
-          .wrap {
-            padding: 0 8px 16px;  /* 减小左右边距 */
-          }
-
-          .bar {
-            padding: 8px;
-            gap: 8px;
-          }
-
-          label {
-            width: 100%;
-            margin-bottom: 2px;
-            font-size: 14px;
-          }
-
-          input[type=date] {
-            width: 110px;
-            min-width: 110px;
-            font-size: 14px;
-            padding: 6px 10px;
-          }
-
-          button {
-            padding: 6px 12px;
-            font-size: 13px;
-            min-height: 32px;
-          }
-
-          .nav-group { gap: 6px; }
-
-          .range-section {
-            gap: 8px;
-            margin-top: 10px;
-            padding-top: 10px;
-          }
-
-          .range-inputs span {
-            font-size: 13px;
-            color: var(--gray-500);
-          }
-
-          #status {
-            width: 100%;
-            margin-top: 4px;
-            font-size: 12px;
-          }
-
-          /* 移动端表格列宽调整 */
-          th, td {
-            padding: 6px 6px;  /* 减小内边距 */
-            font-size: 13px;
-            line-height: 1.3;  /* 减小行高 */
-          }
-
-          th {
-            font-size: 12px;
-          }
-
-          th:nth-child(1), td:nth-child(1) {  /* 序号列 */
-            width: 50px;
-            min-width: 26px;
-          }
-
-          th:nth-child(2), td:nth-child(2) {  /* 时间列 */
-            width: 85px;
-            min-width: 60px;
-          }
-
-          th:nth-child(3), td:nth-child(3) {  /* 分类列 */
-            width: 70px;
-            min-width: 40px;
-          }
-
-          th:nth-child(4), td:nth-child(4) {  /* 标段名列 - 给更多空间 */
-            width: auto;
-            min-width: 120px;
-          }
-
-          th:nth-child(5), td:nth-child(5) {  /* 开标地点列 */
-            width: 90px;
-            min-width: 56px;
-          }
-
-          tr.date-separator td {
-            padding: 8px 8px;
-            font-size: 12px;
-          }
-
-          .tip-tooltip {
-            max-width: calc(100vw - 30px);  /* 移动端自适应屏幕宽度 */
-            font-size: 11px;
-            padding: 6px 10px;
-          }
-          /* 手机端隐藏导出按钮 */
-          #btnExport {
-            display: none;
-          }
-          /* 移动端隐藏外部链接图标 */
-          .external-icon {
-            display: none;
-          }
+        /* 手机端隐藏导出按钮 */
+        #btnExport {
+          display: none;
         }
-
-        /* 360 小设备 */
-        @media (max-width: 360px) {
-          /* 移动端表格列宽调整 */
-          th, td {
-            padding: 6px 4px;  /* 减小内边距 */
-            font-size: 12px;
-          }
-
-          th:nth-child(1), td:nth-child(1) {  /* 序号列 */
-            padding-left: 6px;
-          }
-        }
-
-        /* 320 小设备 */
-        @media (max-width: 320px) {
-          th:nth-child(1), td:nth-child(1) {  /* 序号列 */
-            padding-left: 5px;
-          }
-        }
-
-        /* 链接容器：弹性布局，文字+图标对齐 */
-        .bid-link {
-          color: var(--primary-600); /* 改用全局主题色 */
-          text-decoration: none; /* 容器本身不设置下划线 */
-          transition: all 0.2s ease;
-          display: inline-block;  /* 关键修改：不再用 inline-flex */
-        }
-
-        /* 仅给文字部分添加下划线，不影响图标 */
-        .bid-link .text-part {
-          text-decoration: inherit;
-          transition: inherit;
-        }
-
-        /* hover 效果：仅文字部分出现下划线 */
-        .bid-link:hover .text-part {
-          color: var(--primary-700);
-          text-decoration: underline;
-        }
-
-        /* 点击反馈 */
-        .bid-link:active {
-          color: var(--primary-900);
-          transform: scale(0.98);
-        }
-
-        /* 外部链接图标 */
+        /* 移动端隐藏外部链接图标 */
         .external-icon {
-          font-size: 12px;
-          line-height: 1; /* 消除图标自带行高 */
-          opacity: 0.7;
-          transition: all 0.2s ease;
+          display: none;
         }
 
-        .bid-link:hover .external-icon {
-          opacity: 1;
-          color: var(--primary-700);
+        .help-float {
+          width: 38px;
+          height: 38px;
+          font-size: 18px;
+          bottom: 16px;
+          right: 16px;
         }
-      </style>
-    </head>
+      }
+
+      /* 360 小设备 */
+      @media (max-width: 360px) {
+        /* 移动端表格列宽调整 */
+        th, td {
+          padding: 6px 4px; /* 减小内边距 */
+          font-size: 12px;
+        }
+
+        th:nth-child(1), td:nth-child(1) {
+          /* 序号列 */
+          padding-left: 6px;
+        }
+      }
+
+      /* 320 小设备 */
+      @media (max-width: 320px) {
+        th:nth-child(1), td:nth-child(1) {
+          /* 序号列 */
+          padding-left: 5px;
+        }
+      }
+
+      /* 链接容器：弹性布局，文字+图标对齐 */
+      .bid-link {
+        color: var(--primary-600); /* 改用全局主题色 */
+        text-decoration: none; /* 容器本身不设置下划线 */
+        transition: all 0.2s ease;
+        display: inline-block; /* 关键修改：不再用 inline-flex */
+      }
+
+      /* 仅给文字部分添加下划线，不影响图标 */
+      .bid-link .text-part {
+        text-decoration: inherit;
+        transition: inherit;
+      }
+
+      /* hover 效果：仅文字部分出现下划线 */
+      .bid-link:hover .text-part {
+        color: var(--primary-700);
+        text-decoration: underline;
+      }
+
+      /* 点击反馈 */
+      .bid-link:active {
+        color: var(--primary-900);
+        transform: scale(0.98);
+      }
+
+      /* 外部链接图标 */
+      .external-icon {
+        font-size: 12px;
+        line-height: 1; /* 消除图标自带行高 */
+        opacity: 0.7;
+        transition: all 0.2s ease;
+      }
+
+      .bid-link:hover .external-icon {
+        opacity: 1;
+        color: var(--primary-700);
+      }
+    </style>
+  </head>
   <body>
     <!-- 悬浮气泡容器 新增 -->
     <div class="tip-tooltip" id="tooltip"></div>
@@ -516,34 +578,45 @@
         <span></span>
         <span></span>
       </div>
-      <div id="loaderPercent" style="margin-top: 12px; font-size: 14px; color: var(--primary-600); font-weight: 500; display: none;">0%</div>
+      <div
+        id="loaderPercent"
+        style="margin-top: 12px; font-size: 14px; color: var(--primary-600); font-weight: 500; display: none"
+      >
+        0%
+      </div>
     </div>
 
     <div class="wrap">
-      <h1 title="本工具仅供个人学习交流使用，数据来源于湖南省公共资源交易服务平台，所有信息仅供参考，不构成任何交易建议，最终以官方公告为准。">工程项目 · 开标日历</h1>
+      <h1
+        title="本工具仅供个人学习交流使用，数据来源于湖南省公共资源交易服务平台，所有信息仅供参考，不构成任何交易建议，最终以官方公告为准。"
+      >
+        工程项目 · 开标日历
+      </h1>
       <div class="bar">
         <label id="singleDateLabel">
           选择日期
           <input type="date" id="datePicker">
         </label>
-        
+
         <div class="nav-group" id="singleDateNav">
           <button id="btnPrev" title="上一日">← 上一日</button>
           <button id="btnNext" title="下一日">下一日 →</button>
         </div>
-        
+
         <button id="btnToday" class="primary" title="回到今天">回到今天</button>
         <button id="btnRefresh">刷新</button>
         <button id="btnExport">导出 CSV</button>
-        <button id="btnToggleRange" class="toggle-btn" title="展开区间查询">区间查询 ▼</button>
-        
+        <button id="btnToggleRange" class="toggle-btn" title="展开区间查询">
+          区间查询 ▼
+        </button>
+
         <span id="status"></span>
-        
+
         <div class="range-section" id="rangeSection">
           <span>时间范围</span>
           <div class="range-inputs">
             <input type="date" id="rangeStart" placeholder="开始日期">
-            <span style="color: var(--gray-400);">→</span>
+            <span style="color: var(--gray-400)">→</span>
             <input type="date" id="rangeEnd" placeholder="结束日期">
           </div>
           <div class="range-buttons">
@@ -552,28 +625,37 @@
             <button id="btnQueryRange" class="primary">查询区间</button>
             <button id="btnClearRange" type="button">清空</button>
           </div>
-          <button id="btnBackToSingle" type="button" style="margin-left: auto; font-size: 13px; color: var(--gray-500); border: none; background: transparent; box-shadow: none;">返回单日 ▲</button>
+          <button
+            id="btnBackToSingle"
+            type="button"
+            style="margin-left: auto; font-size: 13px; color: var(--gray-500); border: none; background: transparent; box-shadow: none"
+          >
+            返回单日 ▲
+          </button>
         </div>
       </div>
-      
+
       <table id="table">
         <thead>
           <tr>
-            <th style="width: 60px;">序号</th>
-            <th style="width: 100px;">时间</th>
-            <th style="width: 80px;">分类</th>
+            <th style="width: 60px">序号</th>
+            <th style="width: 100px">时间</th>
+            <th style="width: 80px">分类</th>
             <th>标段名</th>
-            <th style="width: 120px;">开标地点</th>
+            <th style="width: 120px">开标地点</th>
           </tr>
         </thead>
         <tbody></tbody>
       </table>
     </div>
 
+    <!-- 右下角帮助按钮 -->
+    <a href="help.html" target="_blank" rel="noopener noreferrer" class="help-float" title="帮助说明">?</a>
+
     <script>
-      const REGION = '4307';
+      const REGION = "4307";
       // 【核心修改】常德优先 + 省级备用节点，不跨地市
-      const SAFE_HOSTS = ['changde', 'www', 'hnsbenji'];
+      const SAFE_HOSTS = ["changde", "www", "hnsbenji"];
       let currentHostIndex = 0;
       const MAX_RETRY = 2;
       let failCount = 0;
@@ -597,52 +679,55 @@
       }
 
       // 接口地址（动态取当前节点）
-      const API_TEMP = date => 
+      const API_TEMP = (date) =>
         `https://${getCurrentHost()}.hnsggzy.com/tradeApi/constructionSection/getCalendarByDate?date=${date}&regionCode=${REGION}`;
-      const DETAIL_BASE_URL = 
+      const DETAIL_BASE_URL =
         `https://${getCurrentHost()}.hnsggzy.com/tradeApi/constructionTender/getBySectionId?sectionId=`;
 
       // 通用请求头（模拟正常浏览器，防风控）
       const FETCH_HEADERS = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+        "User-Agent":
+          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
         "Accept": "application/json, text/plain, */*",
         "Accept-Language": "zh-CN,zh;q=0.9",
-        "Referer": `https://${getCurrentHost()}.hnsggzy.com/`
+        "Referer": `https://${getCurrentHost()}.hnsggzy.com/`,
       };
 
       // 防抖函数（降低请求频率）
       function debounce(fn, delay = 188) {
         let timer = null;
-        return function(...args) {
+        return function (...args) {
           if (timer) clearTimeout(timer);
           timer = setTimeout(() => fn.apply(this, args), delay);
         };
       }
 
-      const formatDateCN = d => d.toLocaleDateString('zh-CN', {
-        timeZone: 'Asia/Shanghai',
-        year: 'numeric',
-        month: '2-digit',
-        day: '2-digit'
-      }).replace(/\//g, '-');
+      const formatDateCN = (d) =>
+        d.toLocaleDateString("zh-CN", {
+          timeZone: "Asia/Shanghai",
+          year: "numeric",
+          month: "2-digit",
+          day: "2-digit",
+        }).replace(/\//g, "-");
 
       const getTodayStr = () => formatDateCN(new Date());
-      const fmtDate = d => d.toLocaleString('zh-CN', {
-        timeZone: 'Asia/Shanghai',
-        year: 'numeric',
-        month: '2-digit',
-        day: '2-digit',
-        hour: '2-digit',
-        minute: '2-digit',
-        hour12: false
-      });
+      const fmtDate = (d) =>
+        d.toLocaleString("zh-CN", {
+          timeZone: "Asia/Shanghai",
+          year: "numeric",
+          month: "2-digit",
+          day: "2-digit",
+          hour: "2-digit",
+          minute: "2-digit",
+          hour12: false,
+        });
 
-      const parseTime = str => new Date(str.replace(' ', 'T'));
-      const shorten = s => s.replace(/直播大厅(\d+)/, '$1');
-      const WEEKDAYS = ['周日', '周一', '周二', '周三', '周四', '周五', '周六'];
-      
+      const parseTime = (str) => new Date(str.replace(" ", "T"));
+      const shorten = (s) => s.replace(/直播大厅(\d+)/, "$1");
+      const WEEKDAYS = ["周日", "周一", "周二", "周三", "周四", "周五", "周六"];
+
       function formatDateWithWeekday(dateStr) {
-        const [year, month, day] = dateStr.split('-').map(Number);
+        const [year, month, day] = dateStr.split("-").map(Number);
         const d = new Date(year, month - 1, day);
         return `${dateStr} ${WEEKDAYS[d.getDay()]}`;
       }
@@ -659,39 +744,43 @@
         return dates;
       }
 
-      const loader = document.getElementById('loader');
+      const loader = document.getElementById("loader");
 
-      const tooltip = document.getElementById('tooltip');
+      const tooltip = document.getElementById("tooltip");
       let currentFetch = null; // 记录当前请求，用于取消
 
       // 百分比相关函数
       function updateLoaderPercent(percent) {
-        const percentEl = document.getElementById('loaderPercent');
+        const percentEl = document.getElementById("loaderPercent");
         if (percentEl) {
-          percentEl.textContent = Math.min(100, Math.floor(percent)) + '%';
+          percentEl.textContent = Math.min(100, Math.floor(percent)) + "%";
         }
       }
 
       function showLoaderPercent(show) {
-        const percentEl = document.getElementById('loaderPercent');
+        const percentEl = document.getElementById("loaderPercent");
         if (percentEl) {
-          percentEl.style.display = show ? 'block' : 'none';
+          percentEl.style.display = show ? "block" : "none";
         }
       }
 
       function showLoader() {
-        loader.classList.remove('hidden');
-        document.querySelectorAll('button, input').forEach(el => el.disabled = true);
+        loader.classList.remove("hidden");
+        document.querySelectorAll("button, input").forEach((el) =>
+          el.disabled = true
+        );
         showLoaderPercent(false); // 确保单日查询不显示百分比
       }
       function hideLoader() {
-        loader.classList.add('hidden');
-        document.querySelectorAll('button, input').forEach(el => el.disabled = false);
+        loader.classList.add("hidden");
+        document.querySelectorAll("button, input").forEach((el) =>
+          el.disabled = false
+        );
       }
 
       // 隐藏悬浮气泡
       function hideTooltip() {
-        tooltip.style.opacity = '0';
+        tooltip.style.opacity = "0";
         if (tipTimer) clearTimeout(tipTimer);
         // 终止正在进行的请求
         if (currentFetch && currentFetch.abort) {
@@ -703,47 +792,58 @@
       // 显示气泡 + 定位
       function showTooltip(text, e) {
         tooltip.textContent = text;
-        tooltip.style.left = (e.pageX + 15) + 'px';
-        tooltip.style.top = (e.pageY + 15) + 'px';
-        tooltip.style.opacity = '1';
+        tooltip.style.left = (e.pageX + 15) + "px";
+        tooltip.style.top = (e.pageY + 15) + "px";
+        tooltip.style.opacity = "1";
       }
 
       // 悬浮请求详情接口
       async function fetchTimeById(id, e) {
-        if(tipTimer) clearTimeout(tipTimer);
+        if (tipTimer) clearTimeout(tipTimer);
         tipTimer = setTimeout(async () => {
           hideTooltip();
-          showTooltip('加载中...', e);
+          showTooltip("加载中...", e);
           try {
             const url = `${DETAIL_BASE_URL}${id}&t=GC`;
             const res = await fetch(url, { headers: FETCH_HEADERS });
             const json = await res.json();
             if (json.code === 200 && json.data?.constructionTender) {
               const tender = json.data.constructionTender;
-              // 控制价格式化：千分位 + 保留 2 位小数，自动去除末尾无效0
-              const rawPrice = json.data.constructionSectionList?.[0]?.tenderControlPrice;
-              let priceText = '暂无';
-              if (rawPrice !== undefined && rawPrice !== null && rawPrice !== '') {
+              const rawPrice = json.data.constructionSectionList?.[0]
+                ?.tenderControlPrice;
+              let priceText = "暂无";
+              if (
+                rawPrice !== undefined && rawPrice !== null && rawPrice !== ""
+              ) {
                 const num = Number(rawPrice);
                 if (!isNaN(num)) {
-                  // 先保留2位小数
-                  const fixedNum = num.toFixed(2);
-                  // 转数字再加上千分位，自动清理末尾 .00 / .0
-                  priceText = Number(fixedNum).toLocaleString('zh-CN', {
-                    minimumFractionDigits: 0,
-                    maximumFractionDigits: 2
-                  });
+                  if (num >= 10000) {
+                    const yi = num / 10000;
+                    const yiFixed = yi.toFixed(2);
+                    const yiDisplay = yiFixed.replace(/\.?0+$/, "");
+                    priceText = `${yiDisplay} 亿`;
+                  } else {
+                    const fixedNum = num.toFixed(2);
+                    const wanDisplay = Number(fixedNum).toLocaleString(
+                      "zh-CN",
+                      { minimumFractionDigits: 0, maximumFractionDigits: 2 },
+                    );
+                    priceText = `${wanDisplay} 万`;
+                  }
                 } else {
                   priceText = rawPrice;
                 }
               }
-              showTooltip(`${tender.tenderProjectType}，${tender.tendererName}，控制价 ${priceText} 万`, e);
+              showTooltip(
+                `${tender.tenderProjectType}，${tender.tendererName}，控制价 ${priceText}`,
+                e,
+              );
             } else {
-              showTooltip('未获取数据', e);
+              showTooltip("未获取数据", e);
             }
           } catch (err) {
-            if (err.name !== 'AbortError') {
-              showTooltip('接口请求失败', e);
+            if (err.name !== "AbortError") {
+              showTooltip("接口请求失败", e);
             }
           }
         }, 399);
@@ -751,23 +851,23 @@
 
       // HTML 转义，防止 XSS
       function escapeHtml(str) {
-        if (!str) return '';
+        if (!str) return "";
         return String(str)
-          .replace(/&/g, '&amp;')
-          .replace(/</g, '&lt;')
-          .replace(/>/g, '&gt;')
-          .replace(/"/g, '&quot;')
-          .replace(/'/g, '&#39;');
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;")
+          .replace(/'/g, "&#39;");
       }
 
       function toCamelCase(str) {
-        if (!str) return 'construction';
-        const parts = str.toLowerCase().split('_');
+        if (!str) return "construction";
+        const parts = str.toLowerCase().split("_");
         // 第一个单词全小写，后续单词首字母大写
         for (let i = 1; i < parts.length; i++) {
           parts[i] = parts[i].charAt(0).toUpperCase() + parts[i].slice(1);
         }
-        return parts.join('');
+        return parts.join("");
       }
 
       // 公共数据转换函数
@@ -782,9 +882,9 @@
 
           let 分类;
           if (d.getHours() === 9 && d.getMinutes() === 0) {
-            分类 = item.isassistpb === "0" ? '非机器管' : '机器管';
+            分类 = item.isassistpb === "0" ? "非机器管" : "机器管";
           } else {
-            分类 = '老系统';
+            分类 = "老系统";
           }
 
           // 映射 tenderProjectType
@@ -796,7 +896,8 @@
             分类,
             标段名: item.bidSectionName,
             开标地点: shorten(item.bidOpeningSite),
-            link: `https://changde.hnsggzy.com/#/resources/transactionDetail/${mappedType}?bidSectionId=${item.bidSectionId}&t=GC`,
+            link:
+              `https://changde.hnsggzy.com/#/resources/transactionDetail/${mappedType}?bidSectionId=${item.bidSectionId}&t=GC`,
             dateId: item.bidSectionId, // 存储 id 用于悬浮请求
           };
         });
@@ -805,28 +906,30 @@
       // 单日加载（加节点重试+请求头）
       async function loadByDate(date) {
         showLoader();
-        const status = document.getElementById('status');
+        const status = document.getElementById("status");
         const dateWithWeekday = formatDateWithWeekday(date);
         status.textContent = `正在加载 ${dateWithWeekday} 数据...`;
-        
+
         try {
           const resp = await fetch(API_TEMP(date), { headers: FETCH_HEADERS });
-          if (!resp.ok) throw new Error('请求异常');
+          if (!resp.ok) throw new Error("请求异常");
           const json = await resp.json();
           const list = json.data?.constructionSectionDTOS || [];
           failCount = 0;
 
           const rows = transformSections(list, date);
           rows.sort((a, b) =>
-            b.分类.localeCompare(a.分类, 'zh-CN')
-              || a.开标地点.localeCompare(b.开标地点, 'zh-CN')
-              || (a.标段名 < b.标段名 ? -1 : (a.标段名 > b.标段名 ? 1 : 0)) // 确保按 Unicode 码点排序。这会使中文数字按笔画/码点顺序（一、二、三）正确排列。
+            b.分类.localeCompare(a.分类, "zh-CN") ||
+            a.开标地点.localeCompare(b.开标地点, "zh-CN") ||
+            (a.标段名 < b.标段名 ? -1 : (a.标段名 > b.标段名 ? 1 : 0)) // 确保按 Unicode 码点排序。这会使中文数字按笔画/码点顺序（一、二、三）正确排列。
           );
-        
-          rows.forEach((r, idx) => { r.序号 = idx + 1; });
+
+          rows.forEach((r, idx) => {
+            r.序号 = idx + 1;
+          });
           renderTable(rows, false);
           status.textContent = `共 ${rows.length} 条记录（${dateWithWeekday}）`;
-          
+
           // 保存最后一次单日数据
           lastSingleDate = date;
           lastSingleRows = rows.slice(); // 深拷贝
@@ -837,9 +940,10 @@
             switchHost();
             status.textContent = `节点异常，已切换备用节点，请重试`;
           } else {
-            status.textContent = `加载失败，正在重试(${failCount}/${MAX_RETRY})`;
+            status.textContent =
+              `加载失败，正在重试(${failCount}/${MAX_RETRY})`;
           }
-          document.querySelector('#table tbody').innerHTML = 
+          document.querySelector("#table tbody").innerHTML =
             '<tr><td colspan="5" style="text-align:center;color:var(--gray-500);padding:24px;">出错了，请稍后重试</td></tr>';
         } finally {
           hideLoader();
@@ -850,31 +954,32 @@
       async function loadByRange(startDate, endDate) {
         showLoader();
         showLoaderPercent(true);
-        const status = document.getElementById('status');
+        const status = document.getElementById("status");
         const dates = getDateRange(startDate, endDate);
         const total = dates.length;
         status.textContent = `正在查询 ${total} 天的数据...`;
-        
+
         const allRows = [];
         let successCount = 0;
         let failCount = 0;
-        
+
         let currentPercent = 0;
         let animFrame = null;
-        
+
         // 平滑动画函数
         function startSmoothAnimation(targetPercent) {
           if (animFrame) cancelAnimationFrame(animFrame);
           const startPercent = currentPercent;
           const startTime = performance.now();
           const duration = 600; // 动画持续时间（毫秒）
-          
+
           function animate(now) {
             const elapsed = now - startTime;
             let t = Math.min(1, elapsed / duration);
             // 缓动 easeOutCubic
             const ease = 1 - Math.pow(1 - t, 3);
-            const newPercent = startPercent + (targetPercent - startPercent) * ease;
+            const newPercent = startPercent +
+              (targetPercent - startPercent) * ease;
             currentPercent = newPercent;
             updateLoaderPercent(currentPercent);
             if (t < 1) {
@@ -888,26 +993,30 @@
           }
           animFrame = requestAnimationFrame(animate);
         }
-        
+
         function stopAnimation() {
           if (animFrame) {
             cancelAnimationFrame(animFrame);
             animFrame = null;
           }
         }
-        
+
         for (let i = 0; i < total; i++) {
           const date = dates[i];
           const targetPercent = ((i + 1) / total) * 100;
-          
+
           // 开始平滑动画
           startSmoothAnimation(targetPercent);
-          
-          status.textContent = `正在加载 ${formatDateWithWeekday(date)} (${i + 1}/${total})...`;
-          
+
+          status.textContent = `正在加载 ${formatDateWithWeekday(date)} (${
+            i + 1
+          }/${total})...`;
+
           try {
-            const resp = await fetch(API_TEMP(date), { headers: FETCH_HEADERS });
-            if (!resp.ok) throw new Error('请求异常');
+            const resp = await fetch(API_TEMP(date), {
+              headers: FETCH_HEADERS,
+            });
+            if (!resp.ok) throw new Error("请求异常");
             const json = await resp.json();
             const list = json.data?.constructionSectionDTOS || [];
             const dayRows = transformSections(list, date);
@@ -917,13 +1026,13 @@
             console.error(`查询 ${date} 失败:`, e);
             failCount++;
           }
-          
+
           // 请求完成后，停止动画并强制设定为目标值
           stopAnimation();
           currentPercent = targetPercent;
           updateLoaderPercent(currentPercent);
         }
-        
+
         // 最终显示100%
         stopAnimation();
         currentPercent = 100;
@@ -932,24 +1041,29 @@
         allRows.sort((a, b) => {
           const dateCompare = a.日期.localeCompare(b.日期);
           if (dateCompare !== 0) return dateCompare;
-          const typeCompare = b.分类.localeCompare(a.分类, 'zh-CN');
+          const typeCompare = b.分类.localeCompare(a.分类, "zh-CN");
           if (typeCompare !== 0) return typeCompare;
-          const placeCompare = a.开标地点.localeCompare(b.开标地点, 'zh-CN');
+          const placeCompare = a.开标地点.localeCompare(b.开标地点, "zh-CN");
           if (placeCompare !== 0) return placeCompare;
           // 按 Unicode 码点比较标段名（解决中文数字排序问题）
           return a.标段名 < b.标段名 ? -1 : (a.标段名 > b.标段名 ? 1 : 0);
         });
-                
-        allRows.forEach((r, idx) => { r.序号 = idx + 1; });
+
+        allRows.forEach((r, idx) => {
+          r.序号 = idx + 1;
+        });
         renderTable(allRows, true);
-        
-        const rangeText = `${formatDateWithWeekday(startDate)} 至 ${formatDateWithWeekday(endDate)}`;
+
+        const rangeText = `${formatDateWithWeekday(startDate)} 至 ${
+          formatDateWithWeekday(endDate)
+        }`;
         if (failCount > 0) {
-          status.textContent = `共 ${allRows.length} 条记录（${rangeText}），${successCount}天成功${failCount}天失败`;
+          status.textContent =
+            `共 ${allRows.length} 条记录（${rangeText}），${successCount}天成功${failCount}天失败`;
         } else {
           status.textContent = `共 ${allRows.length} 条记录（${rangeText}）`;
         }
-        
+
         showLoaderPercent(false);
         hideLoader();
       }
@@ -958,9 +1072,9 @@
       const debouncedLoadByDate = debounce(loadByDate);
 
       function setDateAndLoad(date) {
-        datePicker.removeEventListener('change', onDateChange);
+        datePicker.removeEventListener("change", onDateChange);
         datePicker.value = date;
-        datePicker.addEventListener('change', onDateChange);
+        datePicker.addEventListener("change", onDateChange);
         debouncedLoadByDate(date);
       }
 
@@ -978,34 +1092,34 @@
       }
 
       function parseDateStr(dateStr) {
-        const [year, month, day] = dateStr.split('-').map(Number);
+        const [year, month, day] = dateStr.split("-").map(Number);
         return new Date(year, month - 1, day);
       }
-      
+
       function getPrevDateStr(currentDateStr) {
         const d = parseDateStr(currentDateStr);
         d.setDate(d.getDate() - 1);
         return formatDateCN(d);
       }
-      
+
       function getNextDateStr(currentDateStr) {
         const d = parseDateStr(currentDateStr);
         d.setDate(d.getDate() + 1);
         return formatDateCN(d);
       }
-      
+
       function onPrevDay() {
         const current = datePicker.value || getTodayStr();
         const prevDate = getPrevDateStr(current);
         setDateAndLoad(prevDate);
       }
-      
+
       function onNextDay() {
         const current = datePicker.value || getTodayStr();
         const nextDate = getNextDateStr(current);
         setDateAndLoad(nextDate);
       }
-      
+
       function onToday() {
         setDateAndLoad(getTodayStr());
       }
@@ -1023,7 +1137,7 @@
         friday.setDate(monday.getDate() + 4); // +4天是周五
         return {
           start: formatDateCN(monday),
-          end: formatDateCN(friday)
+          end: formatDateCN(friday),
         };
       }
 
@@ -1042,41 +1156,42 @@
       }
 
       function toggleRangeSection() {
-        const isShowing = rangeSection.classList.contains('show');
+        const isShowing = rangeSection.classList.contains("show");
         if (isShowing) {
-          rangeSection.classList.remove('show');
-          singleDateLabel.style.display = 'flex';
-          singleDateNav.style.display = 'flex';
-          btnToday.style.display = 'block';
-          btnToggleRange.textContent = '区间查询 ▼';
-          btnToggleRange.classList.remove('active');
+          rangeSection.classList.remove("show");
+          singleDateLabel.style.display = "flex";
+          singleDateNav.style.display = "flex";
+          btnToday.style.display = "block";
+          btnToggleRange.textContent = "区间查询 ▼";
+          btnToggleRange.classList.remove("active");
         } else {
-          rangeSection.classList.add('show');
+          rangeSection.classList.add("show");
           if (window.innerWidth <= 640) {
-            singleDateLabel.style.display = 'none';
-            singleDateNav.style.display = 'none';
-            btnToday.style.display = 'none';
+            singleDateLabel.style.display = "none";
+            singleDateNav.style.display = "none";
+            btnToday.style.display = "none";
           }
-          btnToggleRange.textContent = '单日查询 ▲';
-          btnToggleRange.classList.add('active');
+          btnToggleRange.textContent = "单日查询 ▲";
+          btnToggleRange.classList.add("active");
         }
       }
 
       function backToSingle() {
-        rangeSection.classList.remove('show');
-        singleDateLabel.style.display = 'flex';
-        singleDateNav.style.display = 'flex';
-        btnToday.style.display = 'block';
-        btnToggleRange.textContent = '区间查询 ▼';
-        btnToggleRange.classList.remove('active');
-        
+        rangeSection.classList.remove("show");
+        singleDateLabel.style.display = "flex";
+        singleDateNav.style.display = "flex";
+        btnToday.style.display = "block";
+        btnToggleRange.textContent = "区间查询 ▼";
+        btnToggleRange.classList.remove("active");
+
         // 如果曾经进行过单日查询（哪怕结果为0条），直接恢复
         if (lastSingleRows) {
           datePicker.value = lastSingleDate;
           renderTable(lastSingleRows, false);
-          const status = document.getElementById('status');
+          const status = document.getElementById("status");
           const dateWithWeekday = formatDateWithWeekday(lastSingleDate);
-          status.textContent = `共 ${lastSingleRows.length} 条记录（${dateWithWeekday}）`;
+          status.textContent =
+            `共 ${lastSingleRows.length} 条记录（${dateWithWeekday}）`;
         } else {
           // 兜底：重新加载
           setDateAndLoad(datePicker.value || getTodayStr());
@@ -1086,40 +1201,43 @@
       function onQueryRange() {
         const start = rangeStart.value;
         const end = rangeEnd.value;
-        
+
         if (!start || !end) {
-          alert('请选择开始日期和结束日期');
+          alert("请选择开始日期和结束日期");
           return;
         }
-        
+
         if (start > end) {
-          alert('开始日期不能晚于结束日期');
+          alert("开始日期不能晚于结束日期");
           return;
         }
-        
-        const days = Math.ceil((new Date(end) - new Date(start)) / (1000 * 60 * 60 * 24)) + 1;
+
+        const days =
+          Math.ceil((new Date(end) - new Date(start)) / (1000 * 60 * 60 * 24)) +
+          1;
         if (days > 8) {
-          alert('为保护服务器，单次查询最多支持 8 天，请缩小查询范围');
+          alert("为保护服务器，单次查询最多支持 8 天，请缩小查询范围");
           return;
         }
-        
+
         loadByRange(start, end);
       }
-      
+
       function onClearRange() {
-        rangeStart.value = '';
-        rangeEnd.value = '';
+        rangeStart.value = "";
+        rangeEnd.value = "";
       }
-      
+
       let currentExportData = [];
       let currentExportMode = false;
 
       /* 渲染表格 - 区间模式和单日模式保持一致 */
       function renderTable(data, isRangeMode) {
-        const tbody = document.querySelector('#table tbody');
+        const tbody = document.querySelector("#table tbody");
 
         if (!data.length) {
-          tbody.innerHTML = '<tr><td colspan="5" style="text-align:center;color:var(--gray-500);padding:24px;">暂无记录</td></tr>';
+          tbody.innerHTML =
+            '<tr><td colspan="5" style="text-align:center;color:var(--gray-500);padding:24px;">暂无记录</td></tr>';
           // 保存导出数据
           currentExportData = [];
           currentExportMode = isRangeMode;
@@ -1128,14 +1246,18 @@
 
         // 公共行生成函数
         function renderRow(r, showFullTime) {
-          const timeStr = showFullTime ? r.时间 : (r.时间.split(' ')[1] || r.时间);
+          const timeStr = showFullTime
+            ? r.时间
+            : (r.时间.split(" ")[1] || r.时间);
           return `
             <tr>
               <td>${escapeHtml(r.序号)}</td>
               <td>${escapeHtml(timeStr)}</td>
               <td>${escapeHtml(r.分类)}</td>
               <td>
-                <a href="${escapeHtml(r.link || '#')}" class="bid-link" data-bid-id="${r.dateId}" target="_blank">
+                <a href="${
+            escapeHtml(r.link || "#")
+          }" class="bid-link" data-bid-id="${r.dateId}" target="_blank">
                   <span class="text-part">${r.标段名}</span>
                   <span class="external-icon">↗</span>
                 </a>
@@ -1144,39 +1266,42 @@
             </tr>`;
         }
 
-        let html = '';
-        
+        let html = "";
+
         if (!isRangeMode) {
           // 单日模式：显示完整时间
-          html = data.map(r => renderRow(r, true)).join('');
+          html = data.map((r) => renderRow(r, true)).join("");
         } else {
           // 区间模式：只保留日期分隔行，数据行无特殊背景色
-          let lastDate = '';
+          let lastDate = "";
           data.forEach((r) => {
             if (r.日期 !== lastDate) {
               const weekday = WEEKDAYS[new Date(r.日期).getDay()];
               html += `<tr class="date-separator">
-                <td colspan="5">📅 ${escapeHtml(r.日期)} ${escapeHtml(weekday)}</td>
+                <td colspan="5">📅 ${escapeHtml(r.日期)} ${
+                escapeHtml(weekday)
+              }</td>
               </tr>`;
               lastDate = r.日期;
             }
             html += renderRow(r, false);
           });
         }
-        
+
         tbody.innerHTML = html;
 
         // 保存当前数据供导出使用
         currentExportData = data;
         currentExportMode = isRangeMode;
-        
+
         // 绑定悬浮事件
         bindHoverEvent();
       }
 
       // 判断是否为移动设备（简单可靠的宽度判断 + UA 辅助）
       function isMobileDevice() {
-        return window.innerWidth <= 640 || /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+        return window.innerWidth <= 640 ||
+          /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
       }
 
       // 绑定标段名链接悬浮事件
@@ -1186,21 +1311,21 @@
           return;
         }
 
-        const links = document.querySelectorAll('.bid-link');
-        links.forEach(link => {
+        const links = document.querySelectorAll(".bid-link");
+        links.forEach((link) => {
           // 鼠标进入
-          link.addEventListener('mouseenter', function(e) {
+          link.addEventListener("mouseenter", function (e) {
             const bidId = this.dataset.bidId;
             if (bidId) {
               fetchTimeById(bidId, e);
             }
           });
           // 鼠标离开
-          link.addEventListener('mouseleave', hideTooltip);
+          link.addEventListener("mouseleave", hideTooltip);
           // 鼠标移动，跟随气泡
-          link.addEventListener('mousemove', function(e) {
-            tooltip.style.left = (e.pageX + 15) + 'px';
-            tooltip.style.top = (e.pageY + 15) + 'px';
+          link.addEventListener("mousemove", function (e) {
+            tooltip.style.left = (e.pageX + 15) + "px";
+            tooltip.style.top = (e.pageY + 15) + "px";
           });
         });
       }
@@ -1208,13 +1333,13 @@
       // 导出 CSV 功能
       function exportToCSV() {
         if (!currentExportData.length) {
-          alert('没有数据可导出');
+          alert("没有数据可导出");
           return;
         }
-        
-        const headers = ['序号', '时间', '分类', '标段名', '开标地点'];
+
+        const headers = ["序号", "时间", "分类", "标段名", "开标地点"];
         const rows = [];
-        
+
         for (const r of currentExportData) {
           // 对于区间模式，日期字段已经存在；单日模式也一样
           const timeStr = r.时间;
@@ -1223,85 +1348,92 @@
             timeStr,
             r.分类,
             r.标段名,
-            r.开标地点
+            r.开标地点,
           ]);
         }
-        
+
         const escapeCSV = (cell) => {
-          if (cell === undefined || cell === null) return '';
+          if (cell === undefined || cell === null) return "";
           const str = String(cell);
-          if (str.includes(',') || str.includes('"') || str.includes('\n') || str.includes('\r')) {
+          if (
+            str.includes(",") || str.includes('"') || str.includes("\n") ||
+            str.includes("\r")
+          ) {
             return '"' + str.replace(/"/g, '""') + '"';
           }
           return str;
         };
-        
+
         const csvContent = [
-          headers.map(escapeCSV).join(','),
-          ...rows.map(row => row.map(escapeCSV).join(','))
-        ].join('\n');
-        
-        const blob = new Blob(["\uFEFF" + csvContent], { type: "text/csv;charset=utf-8;" });
-        const link = document.createElement('a');
+          headers.map(escapeCSV).join(","),
+          ...rows.map((row) => row.map(escapeCSV).join(",")),
+        ].join("\n");
+
+        const blob = new Blob(["\uFEFF" + csvContent], {
+          type: "text/csv;charset=utf-8;",
+        });
+        const link = document.createElement("a");
         const url = URL.createObjectURL(blob);
         link.href = url;
-        
-        let filename = '';
+
+        let filename = "";
         if (currentExportMode && rangeStart.value && rangeEnd.value) {
           filename = `开标数据_${rangeStart.value}_至_${rangeEnd.value}.csv`;
         } else {
           const currentDate = datePicker.value || getTodayStr();
           filename = `开标数据_${currentDate}.csv`;
         }
-        link.setAttribute('download', filename);
+        link.setAttribute("download", filename);
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
         URL.revokeObjectURL(url);
       }
 
-      const btnRefresh = document.getElementById('btnRefresh');
-      const btnExport = document.getElementById('btnExport');
-      const datePicker = document.getElementById('datePicker');
-      const btnPrev = document.getElementById('btnPrev');
-      const btnNext = document.getElementById('btnNext');
-      const btnToday = document.getElementById('btnToday');
-      const btnToggleRange = document.getElementById('btnToggleRange');
-      const singleDateLabel = document.getElementById('singleDateLabel');
-      const singleDateNav = document.getElementById('singleDateNav');
-      const rangeSection = document.getElementById('rangeSection');
-      
-      const rangeStart = document.getElementById('rangeStart');
-      const rangeEnd = document.getElementById('rangeEnd');
-      const btnQueryRange = document.getElementById('btnQueryRange');
-      const btnClearRange = document.getElementById('btnClearRange');
-      const btnBackToSingle = document.getElementById('btnBackToSingle');
-      const btnThisWeek = document.getElementById('btnThisWeek');
-      const btnNextWeekRange = document.getElementById('btnNextWeekRange');
+      const btnRefresh = document.getElementById("btnRefresh");
+      const btnExport = document.getElementById("btnExport");
+      const datePicker = document.getElementById("datePicker");
+      const btnPrev = document.getElementById("btnPrev");
+      const btnNext = document.getElementById("btnNext");
+      const btnToday = document.getElementById("btnToday");
+      const btnToggleRange = document.getElementById("btnToggleRange");
+      const singleDateLabel = document.getElementById("singleDateLabel");
+      const singleDateNav = document.getElementById("singleDateNav");
+      const rangeSection = document.getElementById("rangeSection");
 
-      datePicker.addEventListener('change', onDateChange);
-      btnRefresh.addEventListener('click', loadToday);
-      btnPrev.addEventListener('click', onPrevDay);
-      btnNext.addEventListener('click', onNextDay);
-      btnToday.addEventListener('click', onToday);
-      if (btnExport) btnExport.addEventListener('click', exportToCSV);
-      btnToggleRange.addEventListener('click', toggleRangeSection);
-      btnBackToSingle.addEventListener('click', backToSingle);
-      btnQueryRange.addEventListener('click', onQueryRange);
-      btnClearRange.addEventListener('click', onClearRange);
-      if (btnThisWeek) btnThisWeek.addEventListener('click', setThisWeek);
-      if (btnNextWeekRange) btnNextWeekRange.addEventListener('click', setNextWeekRange);
+      const rangeStart = document.getElementById("rangeStart");
+      const rangeEnd = document.getElementById("rangeEnd");
+      const btnQueryRange = document.getElementById("btnQueryRange");
+      const btnClearRange = document.getElementById("btnClearRange");
+      const btnBackToSingle = document.getElementById("btnBackToSingle");
+      const btnThisWeek = document.getElementById("btnThisWeek");
+      const btnNextWeekRange = document.getElementById("btnNextWeekRange");
 
-      window.addEventListener('resize', () => {
-        if (rangeSection.classList.contains('show')) {
+      datePicker.addEventListener("change", onDateChange);
+      btnRefresh.addEventListener("click", loadToday);
+      btnPrev.addEventListener("click", onPrevDay);
+      btnNext.addEventListener("click", onNextDay);
+      btnToday.addEventListener("click", onToday);
+      if (btnExport) btnExport.addEventListener("click", exportToCSV);
+      btnToggleRange.addEventListener("click", toggleRangeSection);
+      btnBackToSingle.addEventListener("click", backToSingle);
+      btnQueryRange.addEventListener("click", onQueryRange);
+      btnClearRange.addEventListener("click", onClearRange);
+      if (btnThisWeek) btnThisWeek.addEventListener("click", setThisWeek);
+      if (btnNextWeekRange) {
+        btnNextWeekRange.addEventListener("click", setNextWeekRange);
+      }
+
+      window.addEventListener("resize", () => {
+        if (rangeSection.classList.contains("show")) {
           if (window.innerWidth > 640) {
-            singleDateLabel.style.display = 'flex';
-            singleDateNav.style.display = 'flex';
-            btnToday.style.display = 'block';
+            singleDateLabel.style.display = "flex";
+            singleDateNav.style.display = "flex";
+            btnToday.style.display = "block";
           } else {
-            singleDateLabel.style.display = 'none';
-            singleDateNav.style.display = 'none';
-            btnToday.style.display = 'none';
+            singleDateLabel.style.display = "none";
+            singleDateNav.style.display = "none";
+            btnToday.style.display = "none";
           }
         }
       });
@@ -1316,8 +1448,8 @@
             onQueryRange();
           }
         }, 300);
-        rangeStart.addEventListener('change', autoQuery);
-        rangeEnd.addEventListener('change', autoQuery);
+        rangeStart.addEventListener("change", autoQuery);
+        rangeEnd.addEventListener("change", autoQuery);
       }
       initAutoRangeQuery();
 
