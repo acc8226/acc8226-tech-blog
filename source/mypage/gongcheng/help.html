@@ -2,7 +2,10 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="acc8226">
+  <link rel="author" href="mailto:acc8226@qq.com">
   <title>帮助说明 - 工程开标日历</title>
   <style>
     :root {
@@ -78,6 +81,22 @@
       margin: 16px 0;
       font-size: 0.9rem;
     }
+    .info {
+      background: var(--primary-50);
+      border-left: 4px solid var(--primary-600);
+      padding: 12px 16px;
+      border-radius: 8px;
+      margin: 16px 0;
+      font-size: 0.9rem;
+    }
+    .compat {
+      background: #f0fdf4;
+      border-left: 4px solid #22c55e;
+      padding: 12px 16px;
+      border-radius: 8px;
+      margin: 16px 0;
+      font-size: 0.9rem;
+    }
     .footer {
       margin-top: 32px;
       padding-top: 16px;
@@ -93,6 +112,15 @@
     a:hover {
       text-decoration: underline;
     }
+    .sub a {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px dotted var(--gray-300);
+    }
+    .sub a:hover {
+      color: var(--primary-600);
+      border-bottom-color: var(--primary-600);
+    }
     @media (max-width: 640px) {
       body { padding: 12px; }
       .container { padding: 20px; }
@@ -104,43 +132,59 @@
 <body>
 <div class="container">
   <h1>📖 帮助说明</h1>
-  <div class="sub">工程项目 · 开标日历</div>
-
+  <div class="sub">
+    <a href="index.html" style="color: inherit; text-decoration: none; border-bottom: 1px dotted var(--gray-300);">工程项目 · 开标日历</a>
+  </div>
   <p><strong>数据来源</strong>：湖南省公共资源交易服务平台，仅供个人学习交流使用，不构成交易建议，最终以官方公告为准。</p>
 
   <h2>📅 单日查询</h2>
   <p>默认显示今天的数据。可通过日期选择器手动选择日期，或使用“上一日 / 下一日”按钮快速切换。页面标题会显示当前日期及星期几。</p>
 
-  <h2>📆 区间查询</h2>
+  <h2>📆 区间查询（智能工作日）</h2>
   <p>点击工具栏中的“区间查询 ▼”展开区间查询面板。选择开始日期和结束日期后，点击“查询区间”。</p>
   <div class="warning">
     ⚠️ 为保护服务器资源，单次最多查询 <strong>8 天</strong>。若超过 8 天，系统会提示无法查询，请缩小日期范围。
   </div>
-  <p>区间查询结果会按日期分组显示，每个日期作为分隔行，数据行不再重复显示完整时间。</p>
+  <div class="info">
+    ✨ <strong>智能跳过节假日</strong>：区间查询时，系统会自动跳过周末及法定节假日（包括调休安排），只对实际有开标可能的工作日发起请求，节约时间且更精准。<br>
+    ✨ <strong>“本周”按钮</strong>：点击“本周”会自动选取 <strong>周一至本周最后一个工作日</strong>（考虑调休上班的周六/周日），而非简单到周五。点击“下周”同理。
+  </div>
 
   <h2>🖱️ 悬浮查看详情（桌面端）</h2>
   <p>将鼠标悬停在表格中的“标段名”链接上，稍后会出现气泡提示，显示：</p>
   <ul>
-    <li>招标项目类型（如工业工程、住建工程等）</li>
+    <li>工程招标项目类型（如工业工程、住建工程等）</li>
     <li>招标人名称</li>
-    <li>控制价（单位自动转换为“万”或“亿”）</li>
+    <li>控制价/最高限价（单位自动转换为“万”或“亿”）</li>
   </ul>
   <p>移动端由于屏幕限制，暂不支持悬浮查看，可直接点击链接跳转到官方详情页。</p>
 
   <h2>📎 导出 CSV</h2>
   <p>点击“导出 CSV”按钮，可将当前表格中的数据（单日或区间结果）导出为 CSV 文件，方便在 Excel 中打开。移动端为节省空间，该按钮会自动隐藏。</p>
 
-  <h2>🔁 节点切换</h2>
-  <p>系统内置多个数据节点（常德、省级等）。如果当前节点响应异常，会自动尝试切换到备用节点，无需手动干预。</p>
+  <h2>🔁 节点容灾与真实请求头</h2>
+  <p>系统内置多个数据节点。如果当前节点响应异常，会自动尝试切换到备用节点。同时，所有请求会使用您当前浏览器的真实 User-Agent 及匹配的 Referer，更接近正常访问，降低风控干扰。</p>
 
   <h2>🔗 官方详情页</h2>
   <p>点击任意“标段名”链接，会跳转到湖南省公共资源交易服务平台的官方交易详情页，可查看完整公告、中标候选人等信息。</p>
 
+  <!-- 新增兼容性提示 -->
+  <h2>📱 兼容性提示</h2>
+  <div class="compat">
+      ⚡ 本工具使用了较新的 Web 技术（如 <code>fetch</code>、箭头函数、CSS Grid/Flex、<code>Set</code> 数据结构等）。<br>
+      在<strong>低版本操作系统（如 Windows 7 及以下、Android 4.4 及以下）或老旧浏览器（如 IE、旧版 Safari 等）</strong>上可能出现显示异常或无法正常查询。<br><br>
+      ✅ 建议您：<strong>升级系统</strong> 或使用主流浏览器的最新版本：<br>
+      &nbsp;&nbsp;• <strong>手机端</strong>：推荐 <strong>Edge、Firefox、Safari</strong> 或 360 极速浏览器；<br>
+      &nbsp;&nbsp;• <strong>电脑端</strong>：推荐 <strong>Edge</strong> 或国产<a href="https://www.centbrowser.cn/" target="_blank" rel="noopener noreferrer"><strong>百分浏览器</strong></a>。<br>
+      以获得最佳体验。
+  </div>
+
   <h2>⚠️ 免责声明</h2>
-  <p>本工具为个人开发，数据接口来自公开渠道，可能存在延迟、缺失或错误。所有信息仅供参考，不构成任何投资或交易建议。最终结果请以官方发布的公告为准。</p>
+  <p>本工具为个人开发，仅为方便自身查看招标日历。数据接口来自公开渠道，可能存在延迟、缺失或错误。所有信息仅供参考。最终结果请以官方发布的公告为准。<br>
+  如涉及侵权，请联系删除（邮箱：<a href="mailto:acc8226@qq.com">acc8226@qq.com</a>）。</p>
 
   <div class="footer">
-    版本 v26.06 · 反馈邮箱 <a href="mailto:acc8226@qq.com">acc8226@qq.com</a>
+    版本 v26.06 (智能工作日版)
   </div>
 </div>
 </body>

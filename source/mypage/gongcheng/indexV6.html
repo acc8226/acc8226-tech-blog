@@ -374,11 +374,14 @@
         transition: all 0.2s ease;
         text-decoration: none;
         border: none;
+        opacity: 0.81;           /* 添加半透明 */
+        backdrop-filter: blur(2px); /* 可选：轻微背景模糊，减少遮挡感 */
       }
       .help-float:hover {
         background: var(--primary-700);
         transform: scale(1.05);
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+        opacity: 1;              /* 悬停时完全不透明，更清晰 */
       }
 
       /* 移动端优化 */
@@ -501,7 +504,7 @@
           width: 38px;
           height: 38px;
           font-size: 18px;
-          bottom: 16px;
+          bottom: 18px;
           right: 16px;
         }
       }
@@ -588,7 +591,7 @@
 
     <div class="wrap">
       <h1
-        title="本工具仅供个人学习交流使用，数据来源于湖南省公共资源交易服务平台，所有信息仅供参考，不构成任何交易建议，最终以官方公告为准。"
+        title="本工具仅供个人学习交流使用，数据来源于湖南省公共资源交易服务平台。如涉及侵权，请联系删除（邮箱：acc8226@qq.com）"
       >
         工程项目 · 开标日历
       </h1>
@@ -654,6 +657,40 @@
 
     <script>
       const REGION = "4307";
+
+      // 法定节假日（非周末的放假日期，格式 YYYY-MM-DD）
+      const HOLIDAYS = new Set([
+        // 2025年 (依据国务院官方通知)
+        "2025-01-01", // 元旦（周三）
+        "2025-05-01", "2025-05-02", // 劳动节（周四、五）
+        "2025-10-01", "2025-10-02", "2025-10-03", "2025-10-06", "2025-10-07", "2025-10-08", // 国庆中秋连休（工作日部分）
+        // 2026年
+        "2026-01-01", "2026-01-02", // 元旦（周四、五）
+        "2026-02-16", "2026-02-17", "2026-02-18", "2026-02-19", "2026-02-20", "2026-02-23", // 春节（2月16-20日周一至周五，23日周一）
+        "2026-04-06", // 清明节（周一）
+        "2026-05-01", "2026-05-04", "2026-05-05", // 劳动节（5月1日周五，5月4-5日周一、二）
+        "2026-06-19", // 端午节（周五）
+        "2026-09-25", // 中秋节（周五）
+        "2026-10-01", "2026-10-02", "2026-10-05", "2026-10-06", "2026-10-07", // 国庆节（10月1-2日周四-五，10月5-7日周一-三）
+      ]);
+
+      // 调休数据：需要上班的周末 (格式：YYYY-MM-DD)
+      const WORK_WEEKENDS = new Set([
+        // 2025年 (依据国务院官方通知)
+        "2025-01-26", // 周日 (春节调休)
+        "2025-02-08", // 周六 (春节调休)
+        "2025-04-27", // 周日 (劳动节调休)
+        "2025-09-28", // 周日 (国庆中秋调休)
+        "2025-10-11", // 周六 (国庆中秋调休)
+        // 2026年
+        "2026-01-04", // 周日 (元旦调休上班)
+        "2026-02-14", // 周六 (春节调休上班)
+        "2026-02-28", // 周六 (春节调休上班)
+        "2026-05-09", // 周六 (劳动节调休上班)
+        "2026-09-20", // 周日 (国庆节调休上班)
+        "2026-10-10", // 周六 (国庆节调休上班)
+      ]);
+
       // 【核心修改】常德优先 + 省级备用节点，不跨地市
       const SAFE_HOSTS = ["changde", "www", "hnsbenji"];
       let currentHostIndex = 0;
@@ -684,14 +721,16 @@
       const DETAIL_BASE_URL =
         `https://${getCurrentHost()}.hnsggzy.com/tradeApi/constructionTender/getBySectionId?sectionId=`;
 
-      // 通用请求头（模拟正常浏览器，防风控）
-      const FETCH_HEADERS = {
-        "User-Agent":
-          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
-        "Accept": "application/json, text/plain, */*",
-        "Accept-Language": "zh-CN,zh;q=0.9",
-        "Referer": `https://${getCurrentHost()}.hnsggzy.com/`,
-      };
+      function getFetchHeaders() {
+        // 获取当前浏览器的 User-Agent，若获取不到则使用一个现代通用的 Chrome 的 UA （模拟正常浏览器，防风控）作为降级
+        const userAgent = (navigator && navigator.userAgent) ? navigator.userAgent : "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36";
+        return {
+          "User-Agent": userAgent,
+          "Accept": "application/json, text/plain, */*",
+          "Accept-Language": "zh-CN,zh;q=0.9",
+          "Referer": `https://${getCurrentHost()}.hnsggzy.com/`,
+        };
+      }
 
       // 防抖函数（降低请求频率）
       function debounce(fn, delay = 188) {
@@ -805,7 +844,7 @@
           showTooltip("加载中...", e);
           try {
             const url = `${DETAIL_BASE_URL}${id}&t=GC`;
-            const res = await fetch(url, { headers: FETCH_HEADERS });
+            const res = await fetch(url, { headers: getFetchHeaders() });
             const json = await res.json();
             if (json.code === 200 && json.data?.constructionTender) {
               const tender = json.data.constructionTender;
@@ -911,7 +950,7 @@
         status.textContent = `正在加载 ${dateWithWeekday} 数据...`;
 
         try {
-          const resp = await fetch(API_TEMP(date), { headers: FETCH_HEADERS });
+          const resp = await fetch(API_TEMP(date), { headers: getFetchHeaders() });
           if (!resp.ok) throw new Error("请求异常");
           const json = await resp.json();
           const list = json.data?.constructionSectionDTOS || [];
@@ -955,9 +994,26 @@
         showLoader();
         showLoaderPercent(true);
         const status = document.getElementById("status");
-        const dates = getDateRange(startDate, endDate);
-        const total = dates.length;
-        status.textContent = `正在查询 ${total} 天的数据...`;
+
+        // 1. 获取区间内所有日期
+        const allDates = getDateRange(startDate, endDate);
+        // 2. 过滤出工作日（有开标可能的日期）
+        const workDates = allDates.filter(dateStr => {
+          const [y, m, d] = dateStr.split("-").map(Number);
+          const dateObj = new Date(y, m - 1, d);
+          return isWorkday(dateObj);
+        });
+
+        const total = workDates.length;
+        if (total === 0) {
+          status.textContent = `所选区间内无工作日，无数据。`;
+          renderTable([], true);
+          showLoaderPercent(false);
+          hideLoader();
+          return;
+        }
+
+        status.textContent = `正在查询 ${total} 个工作日的开标数据...`;
 
         const allRows = [];
         let successCount = 0;
@@ -971,7 +1027,7 @@
           if (animFrame) cancelAnimationFrame(animFrame);
           const startPercent = currentPercent;
           const startTime = performance.now();
-          const duration = 600; // 动画持续时间（毫秒）
+          const duration = 700; // 动画持续时间（毫秒）
 
           function animate(now) {
             const elapsed = now - startTime;
@@ -1002,7 +1058,7 @@
         }
 
         for (let i = 0; i < total; i++) {
-          const date = dates[i];
+          const date = workDates[i];
           const targetPercent = ((i + 1) / total) * 100;
 
           // 开始平滑动画
@@ -1014,7 +1070,7 @@
 
           try {
             const resp = await fetch(API_TEMP(date), {
-              headers: FETCH_HEADERS,
+              headers: getFetchHeaders(),
             });
             if (!resp.ok) throw new Error("请求异常");
             const json = await resp.json();
@@ -1141,15 +1197,69 @@
         };
       }
 
+      // 判断某天是否为工作日（周一~周五，或者虽为周六日但在调休上班集合中）
+      function isWorkday(date) {
+        const dateStr = formatDateCN(date);
+        // 法定节假日 → 不是工作日
+        if (HOLIDAYS.has(dateStr)) return false;
+
+        const day = date.getDay(); // 0周日 ~ 6周六
+        const isWeekend = (day === 0 || day === 6);
+        if (isWeekend) {
+          // 周末且是调休上班 → 是工作日；否则不是
+          return WORK_WEEKENDS.has(dateStr);
+        }
+        // 周一至周五，且不在法定节假日中 → 是工作日
+        return true;
+      }
+
+      // 获取包含 baseDate 的那一周的 [周一, 最后一个工作日]
+      // offsetWeeks: 0=本周, 1=下周, -1=上周 等
+      function getWeekRangeWithLastWorkday(baseDate = new Date(), offsetWeeks = 0) {
+        const target = new Date(baseDate);
+        target.setDate(target.getDate() + offsetWeeks * 7);
+        const day = target.getDay(); // 0周日 ~ 6周六
+        // 计算本周一
+        const diffToMonday = day === 0 ? -6 : 1 - day;
+        const monday = new Date(target);
+        monday.setDate(target.getDate() + diffToMonday);
+        monday.setHours(0, 0, 0, 0);
+
+        // 从周一开始，向后找最后一个工作日（最多检查到周日+7 天保底）
+        let lastWorkday = new Date(monday);
+        for (let i = 0; i <= 6; i++) {
+          const checkDate = new Date(monday);
+          checkDate.setDate(monday.getDate() + i);
+          if (isWorkday(checkDate)) {
+            lastWorkday = new Date(checkDate);
+          } else {
+            // 如果遇到非工作日（周末且不调休），则停止继续（因为最后一个工作日一定在此之前的连续工作日末尾）
+            // 但考虑到可能周六休息、周日上班的情况（周日上班但周六休息），需要继续向后检查。
+            // 简化逻辑：遍历全部7天，始终记录最后一个 isWorkday 为 true 的日子。
+            // 上述代码已兼容：每次遇到工作日就更新 lastWorkday，所以最后就是最后一个工作日。
+          }
+        }
+        // 再次确保遍历全部 7 天（上面已经遍历 0~6，lastWorkday 就是最后一个工作日）
+        // 注意：如果整周没有工作日（极不可能，因为周一定是工作日），则回退到周一
+        if (!isWorkday(lastWorkday)) {
+          lastWorkday = monday; // 保底
+        }
+
+        return {
+          start: formatDateCN(monday),
+          end: formatDateCN(lastWorkday),
+        };
+      }
+
       function setThisWeek() {
-        const { start, end } = getWeekWorkdays(new Date(), 0);
+        const { start, end } = getWeekRangeWithLastWorkday(new Date(), 0);
         rangeStart.value = start;
         rangeEnd.value = end;
         onQueryRange();
       }
 
       function setNextWeekRange() {
-        const { start, end } = getWeekWorkdays(new Date(), 1);
+        const { start, end } = getWeekRangeWithLastWorkday(new Date(), 1);
         rangeStart.value = start;
         rangeEnd.value = end;
         onQueryRange();
