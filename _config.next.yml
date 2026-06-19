@@ -333,7 +333,7 @@ font:
   # Font settings for <code> and code blocks. 用于代码
   codes:
     external: true
-    family: "'Mona Sans', PingFang SC, Microsoft YaHei"
+    family: "Mona Sans, PingFang SC, Microsoft YaHei"
     
 # ---------------------------------------------------------------
 # SEO Settings
