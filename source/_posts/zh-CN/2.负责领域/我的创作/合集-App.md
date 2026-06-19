@@ -106,7 +106,7 @@ Bitwarden【已适配安卓平板】[Github 版](https://github.com/bitwarden/an
 
 #### 鸿蒙
 
-缺一款全平台的秘密管理软件，例如流行的 Bitwarden。难道现阶段只能卓易通？
+缺一款全平台密码管理软件，例如 Bitwarden。
 
 ### 1.3 电子邮件
 
@@ -124,7 +124,9 @@ Bitwarden【已适配安卓平板】[Github 版](https://github.com/bitwarden/an
 
 #### 鸿蒙
 
-[QQ 邮箱](https://appgallery.huawei.com/app/detail?id=com.tencent.qqmail.hmos) 现在已有广告，我暂用自带电子邮件
+网易邮箱大师
+
+备用 [QQ 邮箱](https://appgallery.huawei.com/app/detail?id=com.tencent.qqmail.hmos) 现在已有广告，我暂用自带电子邮件
 
 ### 1.4 倒数日
 
@@ -134,7 +136,7 @@ Bitwarden【已适配安卓平板】[Github 版](https://github.com/bitwarden/an
 
 #### 鸿蒙
 
-[mDays 倒计时](https://appgallery.huawei.com/app/detail?id=com.wtkj.app.counter.hm)
+[mDays倒计时](https://appgallery.huawei.com/app/detail?id=com.wtkj.app.counter.hm)
 
 ### 1.5 阅读
 
@@ -299,7 +301,7 @@ not [QQ 音乐 HD](https://sj.qq.com/appdetail/com.tencent.qqmusicpad) 首先更
 * [听听 FM](https://sj.qq.com/appdetail/com.audio.tingting)
 * [阿基米德](https://sj.qq.com/appdetail/org.ajmd) 界面有点杂乱
 * ——————— ฅ՞• •՞ฅ ———————
-* [极客时间](https://sj.qq.com/appdetail/org.geekbang.geekTime) 程序员才需要
+* [极客时间](https://sj.qq.com/appdetail/org.geekbang.geekTime) IT课程自学
 
 not
 
@@ -329,6 +331,8 @@ not 酷FM 一款酷狗推出的的音乐 FM 电台 app，现已停止更新
 * [阿基米德](https://appgallery.huawei.com/app/detail?id=org.ajmide.harmonyapp)
 * [小宇宙](https://appgallery.huawei.com/app/detail?id=app.podcast.cosmos.hongmeng)
 * [蜻蜓 FM](https://appgallery.huawei.com/app/detail?id=fm.qtradio.hm)
+* ——————— ฅ՞• •՞ฅ ———————
+* 极客时间 IT课程自学
 
 ### 1.8 资讯
 
@@ -387,12 +391,11 @@ not 今日头条 竟然有点卡
 
 #### 鸿蒙
 
-* [今日头条](https://appgallery.huawei.com/app/detail?id=com.ss.hm.article.news)
-* 三联中读
-* ZAKER
+[今日头条](https://appgallery.huawei.com/app/detail?id=com.ss.hm.article.news)
 
 备用
 
+* ZAKER
 * [界面新闻](https://appgallery.huawei.com/app/detail?id=harm.jiemian.news)
 * [简讯](https://appgallery.huawei.com/app/detail?id=com.tipsoon.harm)
 
@@ -691,9 +694,9 @@ not
 * [铁路12306](https://appgallery.huawei.com/app/detail?id=com.chinarailway.ticketingHM)
 * 巴士管家 手续费较低
 * [滴滴出行](https://appgallery.huawei.com/app/detail?id=com.sdu.didi.hmos.psnger)
+* [掌上公交](https://appgallery.huawei.com/app/detail?id=com.mygolbs.mybus.hm)
 * [嘀嗒出行](https://appgallery.huawei.com/app/detail?id=com.didapinche.passenger) 顺风车用
 * [哈啰](https://appgallery.huawei.com/app/detail?id=com.hellobike.app) 顺风车用
-* [掌上公交](https://appgallery.huawei.com/app/detail?id=com.mygolbs.mybus.hm)
 
 备用
 
@@ -739,10 +742,11 @@ not
 ### 鸿蒙
 
 * [美团](https://appgallery.huawei.com/app/detail?id=com.sankuai.hmeituan)
-* 大众点评
+* 大众点评 发现好去处
 * [建行生活](https://appgallery.huawei.com/app/detail?id=com.ccb.ccblife.hos) 单位食堂查餐费用
-* 阳光惠生活
-* 买单吧
+* 阳光惠生活 光大银行用
+* 买单吧 交行用
+* 掌上生活 招行用
 
 备用
 
@@ -756,21 +760,23 @@ not
 
 ### 鸿蒙
 
-1. [库迪咖啡](https://appgallery.huawei.com/app/detail?id=com.cotticoffee.cotticlient.happ)
-1. [瑞幸咖啡](https://appgallery.huawei.com/app/detail?id=com.lucky.luckincoffee)
 1. [蜜雪冰城](https://appgallery.huawei.com/app/detail?id=com.mxbc.mxsa_oh)
+1. [库迪咖啡](https://appgallery.huawei.com/app/detail?id=com.cotticoffee.cotticlient.happ)
 1. [必胜客](https://appgallery.huawei.com/app/detail?id=com.yumc.ph.superapp)
 1. [肯德基](https://appgallery.huawei.com/app/detail?id=com.yumc.kfc.superapp)
 1. [麦当劳](https://appgallery.huawei.com/app/detail?id=com.mcdonalds.cma.hm)
 
-备用 [德克士](https://appgallery.huawei.com/app/detail?id=com.dicos.hoprod)
+备用
+
+* [德克士](https://appgallery.huawei.com/app/detail?id=com.dicos.hoprod)
+* [瑞幸咖啡](https://appgallery.huawei.com/app/detail?id=com.lucky.luckincoffee)
 
 若没有对应 app，则可以考虑支付宝和微信小程序
 
 ## 9 票务类
 
-[猫眼电影](https://sj.qq.com/appdetail/com.sankuai.movie)
-[淘票票](https://sj.qq.com/appdetail/com.taobao.movie.android)
+* [猫眼电影](https://sj.qq.com/appdetail/com.sankuai.movie)
+* [淘票票](https://sj.qq.com/appdetail/com.taobao.movie.android)
 
 备用
 
@@ -881,6 +887,8 @@ not
 
 * [QQ](https://appgallery.huawei.com/app/detail?id=com.tencent.mqq)
 * [微信](https://appgallery.huawei.com/app/detail?id=com.tencent.wechat)
+* 小红书 看世界杯？
+* 微博
 
 ## 12 商务类
 
@@ -990,6 +998,7 @@ not
 
 * [支付宝](https://appgallery.huawei.com/app/detail?id=com.alipay.mobile.client)
 * [云闪付](https://appgallery.huawei.com/app/detail?id=com.unionpay.hmos.wallet)
+* 数字人民币【元服务】
 
 备用 [翼支付](https://appgallery.huawei.com/app/detail?id=com.bestpay.harmonyclient)
 
@@ -1113,7 +1122,8 @@ not [Chrome](https://sj.qq.com/appdetail/com.android.chrome) 不太好用
 ### 鸿蒙
 
 * [知乎](https://appgallery.huawei.com/app/detail?id=com.zhihu.hmos)
-* [知识星球](https://appgallery.huawei.com/app/detail?id=com.unnoo.zsxq)
+
+备用 [知识星球](https://appgallery.huawei.com/app/detail?id=com.unnoo.zsxq)
 
 ## 19 AI
 
@@ -1213,6 +1223,7 @@ never 【垃圾】~~微众银行的垃圾微粒贷~~ TM 垃圾微粒贷，网贷
 
 * [中国工商银行](https://appgallery.huawei.com/app/detail?id=com.icbc.harmonyclient)
 * [中国建设银行](https://appgallery.huawei.com/app/detail?id=com.ccb.mobilebank.hm)
+* 招商银行
 
 ## 25 营业厅
 
@@ -1227,7 +1238,7 @@ never 【垃圾】~~微众银行的垃圾微粒贷~~ TM 垃圾微粒贷，网贷
 
 ## 26 匿名应用
 
-[联通小号](https://sj.qq.com/appdetail/com.glhh.chinaunicom.wxh) 一段时间不用，要记得及时续费
+[联通小号](https://sj.qq.com/appdetail/com.glhh.chinaunicom.wxh) 一段时间不用，记得及时续费
 
 ## 27 政务
 
@@ -1255,10 +1266,8 @@ never 【垃圾】~~微众银行的垃圾微粒贷~~ TM 垃圾微粒贷，网贷
 
 湖南专用
 
-* [湘易办](https://appgallery.huawei.com/app/detail?id=com.szhn.fintech.app.productions.xybga)
+* [湘易办](https://appgallery.huawei.com/app/detail?id=com.szhn.fintech.app.productions.xybga) 市民用，医保也可在里面查询
 * [湘办通](https://appgallery.huawei.com/app/detail?id=com.xbt.project) 党政智慧办公平台
-
-缺了一个湘医保
 
 ## 28 菜谱类
 

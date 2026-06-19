@@ -1180,23 +1180,6 @@
         setDateAndLoad(getTodayStr());
       }
 
-      // 获取指定周的工作日范围（周一至周五）
-      function getWeekWorkdays(baseDate = new Date(), offsetWeeks = 0) {
-        const target = new Date(baseDate);
-        target.setDate(target.getDate() + offsetWeeks * 7);
-        const day = target.getDay(); // 0周日 ~ 6周六
-        // 计算本周一
-        const diffToMonday = day === 0 ? -6 : 1 - day;
-        const monday = new Date(target);
-        monday.setDate(target.getDate() + diffToMonday);
-        const friday = new Date(monday);
-        friday.setDate(monday.getDate() + 4); // +4天是周五
-        return {
-          start: formatDateCN(monday),
-          end: formatDateCN(friday),
-        };
-      }
-
       // 判断某天是否为工作日（周一~周五，或者虽为周六日但在调休上班集合中）
       function isWorkday(date) {
         const dateStr = formatDateCN(date);
@@ -1365,9 +1348,7 @@
               <td>${escapeHtml(timeStr)}</td>
               <td>${escapeHtml(r.分类)}</td>
               <td>
-                <a href="${
-            escapeHtml(r.link || "#")
-          }" class="bid-link" data-bid-id="${r.dateId}" target="_blank">
+                <a href="${(r.link || "#")}" class="bid-link" data-bid-id="${r.dateId}" target="_blank">
                   <span class="text-part">${r.标段名}</span>
                   <span class="external-icon">↗</span>
                 </a>

@@ -12,8 +12,7 @@ tags: js
 
 让我们在五分钟内创建并运行您的第一个 Deno 程序。
 
-安装完成后，您的系统路径中应该有 deno 可执行文件。您可以通过运行以下命令来验证安装：
-deno --version
+安装完成后，您的系统路径中应该有 deno 可执行文件。您可以通过运行以下命令来验证安装：deno --version
 <!-- more -->
 
 ## [Hello World](https://docs.deno.org.cn/runtime/#hello-world)

@@ -21,7 +21,7 @@ Messaging that just works — RabbitMQ
 Downloads - Erlang/OTP
 <https://www.erlang.org/downloads>
 
-若仅是体验 rabbitmq，可借助 docker 工具。
+若仅是体验 rabbitmq，可借助 docker 工具。<!-- more -->
 
 ```sh
 docker run -it --rm --name rabbitmq \
@@ -29,8 +29,6 @@ docker run -it --rm --name rabbitmq \
 -p 15672:15672 \
 rabbitmq:3.10-management
 ```
-
-<!-- more -->
 
 ## 使用
 

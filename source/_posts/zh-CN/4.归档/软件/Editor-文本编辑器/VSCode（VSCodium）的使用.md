@@ -1,11 +1,32 @@
 ---
-title: VS Code 的使用
+title: VSCode（VSCodium）的使用
 date: 2022-05-07 09:42:38
-updated: 2022-05-07 09:42:38
+updated: 2026-06-18 19:43:49
 categories: 文本编辑器
 ---
 
 作为一款开箱即用的产物，基本上不用进行过多额外配置呢。
+
+## 常用安装包说明
+
+### 1. User Installer（个人普通用户首选）
+- 安装文件：`VSCodiumUserSetup-x64.exe`
+- 权限：无需管理员权限，仅当前Windows登录用户可用
+- 默认路径：`C:\Users\你的用户名\AppData\Local\Programs\VSCodium`
+- 优点：安装简单、不影响其他系统用户
+- 适用场景：个人自用、公司电脑无管理员权限、日常前后端开发
+
+### 2. System Installer
+- 安装文件：`VSCodiumSetup-x64.exe`
+- 权限：需要管理员权限，本机所有Windows账户均可使用
+- 默认路径：`C:\Program Files\VSCodium`
+- 适用场景：多人共用一台电脑、需要全局统一开发环境
+
+### 3. .zip 绿色便携版
+- 安装文件：`VSCodium-win32-x64.zip`
+- 特点：免安装，解压直接运行，不写入注册表、不修改系统配置
+- 便携技巧：解压根目录新建`data`文件夹，插件、配置会保存在程序目录，实现完整便携
+- 适用场景：U盘随身携带、多设备复用、多版本共存、不想在系统内安装软件
 
 ## 统一 vscode 换行符 （\n）
 
