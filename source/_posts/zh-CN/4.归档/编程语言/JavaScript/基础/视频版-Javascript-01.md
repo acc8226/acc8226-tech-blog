@@ -154,7 +154,7 @@ console.log(num.toString(2))
 可以把任意值转换为数值, 如果要转换的字符串中有非数值的字符, 返回 NaN
 
 ```js
-Number(true) // true返回1, false返回0
+Number(true) // true 返回1 , false 返回 0
 Number(undefined) // NaN
 Number("Hello") // NaN
 Number("") // 0

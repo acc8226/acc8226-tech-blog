@@ -17,7 +17,7 @@ tags: js
 
 最常见的问题就是：HTML 元素是按其在页面中出现的次序调用的，如果用 JavaScript 来管理页面上的元素（更精确的说法是使用  [文档对象模型](https://developer.mozilla.org/zh-CN/docs/Web/API/Document_Object_Model) DOM），若 JavaScript 加载于欲操作的 HTML 元素之前，则代码将出错。
 
-解决此问题的旧方法是：把脚本元素放在文档体的底端（</body> 标签之前，与之相邻）
+解决此问题的旧方法是：把脚本元素放在文档体的底端（</body> 标签之前，与之相邻）<!-- more -->
 
 或者“内部”示例使用了以下结构：
 
@@ -26,8 +26,6 @@ document.addEventListener("DOMContentLoaded", function() {
   . . .
 });
 ```
-
-<!-- more -->
 
 这是一个事件监听器，它监听浏览器的 "`DOMContentLoaded`" 事件，即 HTML 文档体加载、解释完毕事件。事件触发时将调用 " `. . .`" 处的代码，从而避免了错误发生（[事件](https://developer.mozilla.org/zh-CN/docs/Learn/JavaScript/Building_blocks/Events)  的概念稍后学习）。
 

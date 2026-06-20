@@ -332,7 +332,7 @@ font:
     external: false
   # Font settings for <code> and code blocks. 用于代码
   codes:
-    external: true
+    external: false
     family: "PingFang SC, Microsoft YaHei"
     
 # ---------------------------------------------------------------
