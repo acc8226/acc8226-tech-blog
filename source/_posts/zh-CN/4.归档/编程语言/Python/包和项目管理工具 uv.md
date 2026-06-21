@@ -85,8 +85,6 @@ uv python install 3.12
 安装最新版本的 Python
 uv python install
 
-<!-- more -->
-
 要查看可用和已安装的 Python 版本：
 uv python list
 

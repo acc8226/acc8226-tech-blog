@@ -117,5 +117,3 @@ console.log(Counter.value()); /* logs 2 */
 Counter.decrement();
 console.log(Counter.value()); /* logs 1 */
 ```
-
-## 参考

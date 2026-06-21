@@ -9,7 +9,7 @@ tags:
 - python
 ---
 
-开源软件社区驱动的 conda-forge 组织提供了可免费使用，无商业风险且稳定高效的一系列开源工具及网络资源服务，今天我要给大家介绍的 Miniforge，就由conda-forge 组织开发维护，可作为 anaconda、miniconda 的替代品。
+开源软件社区驱动的 conda-forge 组织提供了可免费使用，无商业风险且稳定高效的一系列开源工具及网络资源服务，今天我要给大家介绍的 Miniforge，就由 conda-forge 组织开发维护，可作为 anaconda、miniconda 的替代品。
 
 Conda/Mamba 是业界标准解决方案。它会创建一个包含独立编译器、C 库和预编译二进制包的隔离环境，**完美解决老旧系统自带的过时低版本 GCC 无法运行 numpy 等库的新版本问题**。<!-- more -->
 

@@ -22,9 +22,7 @@ JavaScript 高级程序设计（特别是对浏览器差异的复杂处理），
 
 所有这些框架都提供针对常见 JavaScript 任务的函数，包括动画、DOM 操作以及 Ajax 处理。
 
-在本教程中，您将学习到如何开始使用它们，来使得 JavaScript 编程更容易、更安全且更有乐趣。
-
-<!-- more -->
+在本教程中，您将学习到如何开始使用它们，来使得 JavaScript 编程更容易、更安全且更有乐趣。<!-- more -->
 
 ### jQuery
 
@@ -53,8 +51,8 @@ MooTools 也含有一些轻量级的效果和动画函数。
 
 下面是其他一些在上面未涉及的框架：
 
-YUI - Yahoo! User Interface Framework，涵盖大量函数的大型库，从简单的 JavaScript 功能到完整的 internet widget。
-Ext JS - 可定制的 widget，用于构建富因特网应用程序（rich Internet applications）。
-Dojo - 用于 DOM 操作、事件、widget 等的工具包。
-script.aculo.us - 开源的 JavaScript 框架，针对可视效果和界面行为。
-UIZE - Widget、AJAX、DOM、模板等等。
+* YUI - Yahoo! User Interface Framework，涵盖大量函数的大型库，从简单的 JavaScript 功能到完整的 internet widget。
+* Ext JS - 可定制的 widget，用于构建富因特网应用程序（rich Internet applications）。
+* Dojo - 用于 DOM 操作、事件、widget 等的工具包。
+* script.aculo.us - 开源的 JavaScript 框架，针对可视效果和界面行为。
+* UIZE - Widget、AJAX、DOM、模板等等。

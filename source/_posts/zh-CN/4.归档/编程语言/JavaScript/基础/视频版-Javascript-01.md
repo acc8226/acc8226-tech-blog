@@ -23,33 +23,25 @@ JavaScript 现在的意义
 
 JavaScript 是一种客户端的脚本语言, 也是一种弱类型的脚本语言
 
-1. ECMAScript
-   语法规范
-2. DOM
-   操作网页上元素的 API
-3. BOM
-   操作浏览器部分功能的 API
+1. ECMAScript 语法规范
+2. DOM 操作网页上元素的 API
+3. BOM 操作浏览器部分功能的 API
 
 <!-- more -->
 
 script 标签的属性
 
-- type
-  type="text/javascript"
-  可以省略
-- async
-  async="async"
-  值可以省略, 立即异步下载外部 js, 不影响页面其他的操作, js 下载完毕立即执行
-- defer
-  defer="defer"
-  脚本延迟到文档完全被解析和显示后执行, 只有**外部脚本**可以使用
+- type type="text/javascript" 可以省略
+- async async="async" 值可以省略, 立即异步下载外部 js, 不影响页面其他的操作, js
+  下载完毕立即执行
+- defer defer="defer" 脚本延迟到文档完全被解析和显示后执行,
+  只有**外部脚本**可以使用
 
 ## 数据类型
 
 掌握四种常见的数据类型
 
-- number
-  整数, 浮点数(注意 0.1 + 0.2 的结果为 0.30000000000000004 的原因)
+- number 整数, 浮点数(注意 0.1 + 0.2 的结果为 0.30000000000000004 的原因)
 - string
 - undefined
 - boolean
@@ -63,19 +55,15 @@ script 标签的属性
 - Boolean 类型有两个字面量: true 和 false, 并且区分大小写!
   **任何类型**都可以转换为 Boolean 类型, 一般使用在流程控制语句后面:
 
---Boolean: false,
---String: ""(空字符串),
---Number: 0 和 NaN,
---Object: null,
---Undefined: undefined
-它们的结果都是 false, 其他情况则为 true
+--Boolean: false, --String: ""(空字符串), --Number: 0 和 NaN, --Object: null,
+--Undefined: undefined 它们的结果都是 false, 其他情况则为 true
 
 ```js
-var i = 1
+var i = 1;
 if (i) {
-  console.log("你是true")
+  console.log("你是true");
 } else {
-  console.log("你是false")
+  console.log("你是false");
 }
 ```
 
@@ -103,10 +91,8 @@ isNaN(): 任何不能被转换为数值的值都会导致这个函数返回 true
 
 ### Undefined 类型
 
-- 这是一种比较特殊的类型, 表示变量未赋值, 这种类型只有一种值,就是 undefined
-  例如
-  var msg;
-  console.log(msg); // 结果是 undefined
+- 这是一种比较特殊的类型, 表示变量未赋值, 这种类型只有一种值,就是 undefined 例如
+  var msg; console.log(msg); // 结果是 undefined
 - undefined 是 Undefined 类型的字面量
 - typeof 获取得到的也是"undefined"这个字面量
 
@@ -124,26 +110,27 @@ isNaN(): 任何不能被转换为数值的值都会导致这个函数返回 true
 例如
 
 ```js
-var age = 18
-var ageString = age.toString()
-console.log(ageString)
+var age = 18;
+var ageString = age.toString();
+console.log(ageString);
 
-console.log(true.toString())
+console.log(true.toString());
 ```
 
 如果是数值类型, 可以携带一个参数, 输出对应进制的值。
 
 ```js
-var num = 15
-console.log(num.toString(16))
-console.log(num.toString(10)) // 默认也是十进制
-console.log(num.toString(8))
-console.log(num.toString(2))
+var num = 15;
+console.log(num.toString(16));
+console.log(num.toString(10)); // 默认也是十进制
+console.log(num.toString(8));
+console.log(num.toString(2));
 ```
 
 #### String 函数
 
-该函数存在的意义: 有些值没有 toString(), 这个时候可以用 String(), 比如 undefined 和 null 类型
+该函数存在的意义: 有些值没有 toString(), 这个时候可以用 String(), 比如 undefined
+和 null 类型
 
 #### 通过 "+" 符号拼接
 
@@ -154,37 +141,34 @@ console.log(num.toString(2))
 可以把任意值转换为数值, 如果要转换的字符串中有非数值的字符, 返回 NaN
 
 ```js
-Number(true) // true 返回1 , false 返回 0
-Number(undefined) // NaN
-Number("Hello") // NaN
-Number("") // 0
-Number("    ") // 0
-Number(123) // 123
-Number("123abc") //  NaN
-Number("123") // 123
+Number(true); // true 返回1 , false 返回 0
+Number(undefined); // NaN
+Number("Hello"); // NaN
+Number(""); // 0
+Number("    "); // 0
+Number(123); // 123
+Number("123abc"); //  NaN
+Number("123"); // 123
 ```
 
 #### parseInt() 字符串取整
 
 例如 parseInt("12.2FBI") // 返回 12, 但当第一个字符不是数组或者符号, 就返回 NaN
-parseInt("") // 返回 NaN
-parseInt("10") // 返回 10
-parseInt("0xC") // 返回 12
+parseInt("") // 返回 NaN parseInt("10") // 返回 10 parseInt("0xC") // 返回 12
 
 > parseInt() 也可传两个参数, 第二个参数表示要转换的进制
 
-parseInt("D", 16) // 为 13
-parseInt("D") // 默认为 10 进制, 结果为 NaN
+parseInt("D", 16) // 为 13 parseInt("D") // 默认为 10 进制, 结果为 NaN
 
 #### parseFloat()解析字符串
 
-不同之处在于只能解析十进制;
-当解析的内容只有整数时, 则解析成整数
+不同之处在于只能解析十进制; 当解析的内容只有整数时, 则解析成整数
 
 #### 转换为布尔型
 
 - Boolean()的使用, 上面已经讲过了
-- 流程控制语句会自动把括号内的值转成 boolean 类型, 也会存在这种形式 `!("77")`, 结果为 false(也是隐式转换的味道)
+- 流程控制语句会自动把括号内的值转成 boolean 类型, 也会存在这种形式 `!("77")`,
+  结果为 false(也是隐式转换的味道)
 
 ## 操作符
 
@@ -194,13 +178,9 @@ parseInt("D") // 默认为 10 进制, 结果为 NaN
 
 ### 操作符的优先级
 
-()
-!, ++, --
-先\*, /, 后+, -
+() !, ++, -- 先\*, /, 后+, -
 
-> , >=, <, <=
-> ==, !=, ===
-> 逻辑运算符 先 &&, 后 ||
+> , >=, <, <= ==, !=, === 逻辑运算符 先 &&, 后 ||
 
 ### 恶心的短路操作
 
@@ -220,28 +200,26 @@ parseInt("D") // 默认为 10 进制, 结果为 NaN
 令人费解的短路逻辑 o(>﹏<)o 不要
 
 ```js
-console.log("abc" && "edf") // "edf"
-console.log(null && undefined) // null
-console.log(undefined && null) // undefined
+console.log("abc" && "edf"); // "edf"
+console.log(null && undefined); // null
+console.log(undefined && null); // undefined
 
-console.log("abc" || "edf") // "abc"
-console.log(null || undefined) // undefined
-console.log(undefined || null) // null
+console.log("abc" || "edf"); // "abc"
+console.log(null || undefined); // undefined
+console.log(undefined || null); // null
 ```
 
 然而这种写法, 保底取 `0` 也是厉害
 
 ```js
 function sum(n1, n2) {
-    // 这种写法, 保底取 0 也是厉害
-    n1 = n1 || 0
-    n2 = n2 || 0
-    return n1 + n2
+  // 这种写法, 保底取 0 也是厉害
+  n1 = n1 || 0;
+  n2 = n2 || 0;
+  return n1 + n2;
 }
 ```
 
-if 语句
-包含只有 if, 只有 if 和 else, 和 if elseif 嵌套语句三种情况
+if 语句 包含只有 if, 只有 if 和 else, 和 if elseif 嵌套语句三种情况
 
-switch 语句
-用的是 `===` 全等号
+switch 语句 用的是 `===` 全等号

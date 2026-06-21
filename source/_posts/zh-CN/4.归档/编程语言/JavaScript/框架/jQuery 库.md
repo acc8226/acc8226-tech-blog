@@ -1,7 +1,7 @@
 ---
 title: 使用 jQuery 库
 date: 2022-08-08 00:00:00
-updated: 2022-08-08 00:00:00
+updated: 2026-06-21 14:00:48
 categories:
   - 框架
   - js
@@ -10,15 +10,19 @@ tags:
 - jQuery
 ---
 
+【已过时技术】
+
 ## 开始
 
 JQuery 是一个快速、小型和功能丰富的 JavaScript 库。它使 HTML 文档遍历和操作、事件处理、动画和 Ajax 之类的事情变得更加简单，并且提供了一个跨多种浏览器的易于使用的 API。通过多功能性和可扩展性的结合，jQuery 改变了数百万人编写 JavaScript 的方式。
+
+如果你当前引用了 jQuery，所以你可以直接使用 `console.log('jQuery版本：' + $.fn.jquery);` 查看当前使用 jquery 版本。
 
 ### ready 方法
 
 当 DOM（文档对象模型） 已经加载，并且页面（包括图像）已经完全呈现时，会发生 ready 事件。
 
-由于该事件在文档就绪后发生，因此把所有其他的 jQuery 事件和函数置于该事件中是非常好的做法。正如上面的例子中那样。
+由于该事件在文档就绪后发生，因此把所有其他的 jQuery 事件和函数置于该事件中是非常好的做法。正如上面的例子中那样。<!-- more -->
 
 简写:
 
@@ -28,8 +32,6 @@ $().ready(function(){});
 $(function(){});
 ```
 
-<!-- more -->
-
 示例1:
 
 ```html
@@ -38,7 +40,7 @@ $(function(){});
   <head>
     <meta charset="utf-8">
     <title>菜鸟教程(runoob.com)</title>
-    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/1.12.4/jquery.min.js"></script>
     <script>$(function() {
         $("p").click(function() {
           $(this).hide();
@@ -62,7 +64,7 @@ $(function(){});
     <head>
       <meta charset="utf-8">
       <title>菜鸟教程(runoob.com)</title>
-      <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+      <script src="https://cdn.staticfile.org/jquery/1.12.4/jquery.min.js"></script>
       <script>$(document).ready(function() {
           $("button").click(function() {
             $.ajax({
@@ -83,6 +85,13 @@ $(function(){});
 
   </html>
 ```
+
+## jquery 各版本
+
+* jQuery Core 1.12.4: uncompressed, [minified](https://cdn.staticfile.org/jquery/1.12.4/jquery.min.js)
+* jQuery Core 2.2.4: uncompressed, minified
+* jQuery Core 3.7.1: uncompressed, [minified](https://code.jquery.com/jquery-3.7.1.min.js), slim, slim minified
+* jQuery Core 4.0.0:
 
 ## 参考
 

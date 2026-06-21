@@ -20,6 +20,7 @@ public static Box operator+ (Box b, Box c) {
    return box;
 }
 ```
+<!-- more -->
 
 ### 可重载和不可重载运算符
 
@@ -28,8 +29,6 @@ public static Box operator+ (Box b, Box c) {
 +, -, !, ~, ++, -- 这些一元运算符只有一个操作数，且可以被重载。
 +, -, *, /, % 这些二元运算符带有两个操作数，且可以被重载。
 ==, !=, <, >, <=, >= 这些比较运算符可以被重载。
-
-<!-- more -->
 
 实例
 
