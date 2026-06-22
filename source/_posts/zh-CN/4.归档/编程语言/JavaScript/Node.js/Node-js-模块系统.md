@@ -1,5 +1,5 @@
 ---
-title: Node-js-模块系统
+title: Node-js 模块系统
 date: 2021-01-22 23:20:55
 updated: 2021-01-22 23:20:55
 categories:
@@ -59,6 +59,7 @@ Node.js 中自带了一个叫做 http 的模块，我们在我们的代码中请
 Node.js 的 require 方法中的文件查找策略如下：
 
 由于 Node.js 中存在 4 类模块（原生模块和 3 种文件模块），尽管 require 方法极其简单，但是内部的加载却是十分复杂的，其加载优先级也各自不同。如下图所示：
+
 ![](https://upload-images.jianshu.io/upload_images/1662509-cc682160d98e6bc0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 **从文件模块缓存中加载**

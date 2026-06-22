@@ -1,5 +1,5 @@
 ---
-title: Node-js-常用工具
+title: Node.js 常用工具
 date: 2021-01-22 23:20:55
 updated: 2021-01-22 23:20:55
 categories:
@@ -19,6 +19,7 @@ JavaScript 的面向对象特性是基于原型的，与常见的基于类的不
 
 ```js
 var util = require("util")
+
 function Base() {
   this.name = "base"
   this.base = 1991
@@ -26,12 +27,15 @@ function Base() {
     console.log("Hello " + this.name)
   }
 }
+
 Base.prototype.showName = function () {
   console.log(this.name)
 }
+
 function Sub() {
   this.name = "sub"
 }
+
 util.inherits(Sub, Base)
 var objBase = new Base()
 objBase.showName()

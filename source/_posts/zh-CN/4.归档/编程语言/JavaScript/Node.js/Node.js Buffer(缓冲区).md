@@ -1,5 +1,5 @@
 ---
-title: buffer 缓冲
+title: Node.js buffer 缓冲
 date: 2021-01-22 23:20:55
 updated: 2021-01-22 23:20:55
 categories:
