@@ -32,7 +32,6 @@ console.log(greet("world"));
 ```
 
 保存文件并用 Deno 运行它：
-main.ts
 
 ```sh
 $ deno main.js
