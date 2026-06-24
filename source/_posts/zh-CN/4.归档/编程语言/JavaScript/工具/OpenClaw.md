@@ -21,9 +21,7 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 
 * Node >=22
 * macOS、Linux 或通过 WSL2 的 Windows
-* pnpm 仅在从源代码构建时需要
-
-<!-- ​more -->
+* pnpm 仅在从源代码构建时需要<!-- ​more -->
 
 ### 快速安装（推荐）
 
@@ -49,7 +47,7 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 
 大语言模型我选择了 [Qwen Chat](https://chat.qwen.ai/)
 
-其中 wsl 限制，openclaw 还提示了 ssh -N -L 18789:127.0.0.1:18789 kk@172.17.1.5。不知道下次是否还需要设置。
+其中 wsl 限制，openclaw 还提示了 `ssh -N -L 18789:127.0.0.1:18789 kk@172.17.1.5`。不知道下次是否还需要设置。
 
 ## 参考
 
