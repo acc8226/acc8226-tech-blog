@@ -15,7 +15,6 @@ tags:
 音视频引擎（TRTC SDK）
 TRTC SDK 提供了丰富的接口，其中大多数用于实现高级功能。比如 TRTC Web SDK 实现屏幕分享功能。<!-- more -->
 
-
 Web SDK 对浏览器的支持情况。
 实际以 TRTC.isSupported 检测结果为准。您也可以使用 [TRTC 检测页面](https://web.sdk.qcloud.com/trtc/webrtc/demo/detect/index.html) 快速验证浏览器的兼容性。
 
