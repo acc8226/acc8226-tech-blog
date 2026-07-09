@@ -12,16 +12,13 @@ tags: js
 
 让我们在五分钟内创建并运行您的第一个 Deno 程序。
 
-安装完成后，您的系统路径中应该有 deno 可执行文件。您可以通过运行以下命令来验证安装：deno --version
-<!-- more -->
+安装完成后，您的系统路径中应该有 deno 可执行文件。您可以通过运行以下命令来验证安装：deno --version<!-- more -->
 
 ## [Hello World](https://docs.deno.org.cn/runtime/#hello-world)
 
 Deno 可以运行 JavaScript 和 [TypeScript](https://typescript.net.cn/)，无需额外的工具或配置。让我们创建一个简单的 "hello world" 程序并用 Deno 运行它。
 
-创建一个名为 `main` 的 TypeScript 或 JavaScript 文件，并包含以下代码
-
-main.ts
+创建一个名为 `main` 的 TypeScript 或 JavaScript 文件，并包含以下代码 main.ts
 
 ```ts
 function greet(name: string): string {

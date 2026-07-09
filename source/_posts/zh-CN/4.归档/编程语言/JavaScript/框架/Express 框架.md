@@ -15,13 +15,13 @@ Express 框架核心特性：
 
 - 可以设置中间件来响应 HTTP 请求。
 - 定义了路由表用于执行不同的 HTTP 请求动作。
-- 可以通过向模板传递参数来动态渲染 HTML 页面。
+- 可以通过向模板传递参数来动态渲染 HTML 页面。<!-- more -->
 
 ### 第一个 Express 框架实例
 
 接下来我们使用 Express 框架来输出 "Hello World"。
 
-以下实例中我们引入了 express 模块，并在客户端发起请求后，响应 "Hello World" 字符串。<!-- more -->
+以下实例中我们引入了 express 模块，并在客户端发起请求后，响应 "Hello World" 字符串。
 
 创建 express_demo.js 文件，代码如下所示：
 

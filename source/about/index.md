@@ -14,10 +14,11 @@ comments: false
 
 * 邮箱：[acc8226@qq.com](mailto:acc8226@qq.com)
 * 软件工程专业
-* 曾就职北京某软件公司，从事安卓移动应用开发、后台系统 Java 开发
+* 曾就职北京某软件公司，从事安卓移动应用开发、后端 Java 应用开发
 
-惯用编程语言
+惯用开发语言
 
+* XML / HTML
 * Java / Kotlin
 * Javascript / TypeScript
 * Python
@@ -25,9 +26,9 @@ comments: false
 
 惯用 IDE
 
+* Eclipse / MyEclipse
 * JetBrain 系列(IDEA、PyCharm...)
 * VSCode / VSCodium
-* Eclipse / MyEclipse
 
 - - -
 
@@ -39,4 +40,4 @@ comments: false
 
 - - -
 
-[博客主站](https://feipig.fun) | [备用链接1](https://likai.eu.org) | [备用链接2](https://acc8226.onrender.com/)
+[博客主站](https://feipig.fun) | [备用链接 1](https://likai.eu.org) | [备用链接 2](https://acc8226.onrender.com/)
