@@ -45,7 +45,7 @@ vim test2.sh
  #!/bin/bash
  echo hello; echo there
  filename=ttt.sh
- if [ -e "$filename" ]; then    # 注意: "if"和"then"需要分隔，-e用于判断文件是否存在
+ if [ -e "$filename" ]; then # 注意: "if"和"then"需要分隔，-e 用于判断文件是否存在
      echo "File $filename exists."; cp $filename $filename.bak
  else
      echo "File $filename not found."; touch $filename
@@ -98,7 +98,7 @@ abc
 
 解释说明
 
-上面脚本使用case语句，首先创建了一个变量初始化为b,然后使用case语句判断该变量的范围，并打印相关信息。如果你有其它编程语言的经验，这将很容易理解。
+上面脚本使用 case 语句，首先创建了一个变量初始化为 b,然后使用 case 语句判断该变量的范围，并打印相关信息。如果你有其它编程语言的经验，这将很容易理解。
 
 ## 点号
 
@@ -116,11 +116,11 @@ Hello World
 
 ### 双引号（")
 
-"STRING" 将会阻止（解释）STRING中大部分特殊的字符。后面的实验会详细说明。
+"STRING" 将会阻止（解释）STRING 中大部分特殊的字符。后面的实验会详细说明。
 
 ### 单引号（'）
 
-'STRING' 将会阻止STRING中所有特殊字符的解释，这是一种比使用"更强烈的形式。后面的实验会详细说明。
+'STRING' 将会阻止 STRING 中所有特殊字符的解释，这是一种比使用"更强烈的形式。后面的实验会详细说明。
 
 ### 区别
 
@@ -133,10 +133,10 @@ Hello World
 ## 斜线和反斜线
 
 1.斜线（/）
-文件名路径分隔符。分隔文件名不同的部分（如/home/bozo/projects/Makefile）。也可以用来作为除法算术操作符。注意在linux中表示路径的时候，许多个/跟一个/是一样的。/home/shiyanlou等同于////home///shiyanlou
+文件名路径分隔符。分隔文件名不同的部分（如/home/bozo/projects/Makefile）。也可以用来作为除法算术操作符。注意在linux中表示路径的时候，许多个/跟一个/是一样的。/home/shiyanlou 等同于 ////home///shiyanlou
 
 2.反斜线（\）
-一种对单字符的引用机制。\X 将会“转义”字符X。这等价于"X"，也等价于'X'。\ 通常用来转义双引号（"）和单引号（'），这样双引号和单引号就不会被解释成特殊含义了。
+一种对单字符的引用机制。\X 将会“转义”字符 X。这等价于"X"，也等价于'X'。\ 通常用来转义双引号（"）和单引号（'），这样双引号和单引号就不会被解释成特殊含义了。
 
 符号 说明
 \n 表示新的一行
@@ -145,7 +145,7 @@ Hello World
 \v 表示垂直制表符
 \b 表示后退符
 \a 表示"alert"(蜂鸣或者闪烁)
-\0xx 转换为八进制的ASCII码, 等价于0xx
+\0xx 转换为八进制的 ASCII 码, 等价于 0xx
 " 表示引号字面的意思
 转义符也提供续行功能，也就是编写多行命令的功能。
 
@@ -168,7 +168,7 @@ ls
 
 ### 空命令
 
-等价于“NOP”（no op，一个什么也不干的命令）。也可以被认为与 shell 的内建命令 true 作用相同。“:”命令是一个 bash 的内建命令，它的退出码（exit status）是（0）。
+等价于 “NOP”（no op，一个什么也不干的命令）。也可以被认为与 shell 的内建命令 true 作用相同。“:”命令是一个 bash 的内建命令，它的退出码（exit status）是（0）。
 
 如：
 
@@ -199,7 +199,7 @@ done
 
 condition=5
 
-if [ $condition -gt 0 ] #gt表示greater than，也就是大于，同样有-lt（小于），-eq（等于）
+if [ $condition -gt 0 ] #gt 表示 greater than，也就是大于，同样有 -lt（小于），-eq（等于）
 then :   # 什么都不做，退出分支
 else
     echo "$condition"
@@ -306,7 +306,7 @@ vim test20.sh
 a=123
 ( a=321; )
 
-echo "$a" #a的值为123而不是321，因为括号将判断为局部变量
+echo "$a" # a 的值为 123 而不是 321，因为括号将判断为局部变量
 ```
 
 运行代码：
@@ -381,7 +381,7 @@ cat t.back
 
 注意： 在大括号中，不允许有空白，除非这个空白被引用或转义。
 
-#### 2.代码块
+#### 2. 代码块
 
 代码块，又被称为内部组，这个结构事实上创建了一个匿名函数（一个没有名字的函数）。然而，与“标准”函数不同的是，在其中声明的变量，对于脚本其他部分的代码来说**还是可见的**。
 
@@ -410,7 +410,7 @@ a = 321
 
 ## 中括号
 
-#### 1.条件测试
+### 1.条件测试
 
 条件测试表达式放在[ ]中。下列练习中的-lt (less than)表示小于号。
 
@@ -441,7 +441,7 @@ a: 5
 
 双中括号（[[ ]]）也用作条件测试（判断），后面的实验会详细讲解。
 
-#### 2.数组元素
+### 2.数组元素
 
 在一个array结构的上下文中，中括号用来引用数组中每个元素的编号。
 
@@ -469,7 +469,7 @@ $ bash test25.sh
 ## 重定向
 
 重定向
-test.sh > filename：重定向test.sh的输出到文件 filename 中。如果 filename 存在的话，那么将会被覆盖。
+test.sh > filename：重定向 test.sh 的输出到文件 filename 中。如果 filename 存在的话，那么将会被覆盖。
 
 test.sh &> filename：重定向 test.sh 的 stdout（标准输出）和 stderr（标准错误）到 filename 中。
 
@@ -535,7 +535,7 @@ a is equal to b.
 
 ### 用于重定向stdin或stdout
 
-下面脚本用于备份最后24小时当前目录下所有修改的文件.
+下面脚本用于备份最后 24 小时当前目录下所有修改的文件.
 
 ```sh
 vim test28.sh
@@ -550,7 +550,7 @@ BACKUPFILE=backup-$(date +%m-%d-%Y)
 # 在备份文件中嵌入时间.
 archive=${1:-$BACKUPFILE}
 #  如果在命令行中没有指定备份文件的文件名,
-#  那么将默认使用"backup-MM-DD-YYYY.tar.gz".
+#  那么将默认使用 "backup-MM-DD-YYYY.tar.gz".
 
 tar cvf - `find . -mtime -1 -type f -print` > $archive.tar
 gzip $archive.tar

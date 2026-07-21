@@ -43,23 +43,19 @@ https://github.com/o0HalfLife0o/TVBoxOSC | [releases](https://github.com/o0HalfL
 接口
 
 * http://www.饭太硬.com/tv
-* http://www.mpanso.com/小米/DEMO.json
 * http://肥猫.com
 * http://tvbox.王二小放牛娃.top
 * http://我不是.摸鱼儿.top
 * https://gh.aptv.app/https://raw.githubusercontent.com/PizazzGY/TVBox/main/api.json
-* http://ttkx.live:55/天天开心
 * https://gh.aptv.app/https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json
 * https://gh.aptv.app/https://raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json
 * https://100km.top/0
 * http://ok321.top/ok
 * http://74.120.175.78/JK/XYQTVBox/dj.json
 * https://jihulab.com/ymz1231/xymz/-/raw/main/ymshaoer
-* http://m.nxog.top/nxog/ou1.php
 * https://ghproxy.com/https://raw.githubusercontent.com/2hacc/TVBox/main/tvbox.json
 * https://cdn.jsdelivr.net/gh/2hacc/TVBox@main/tvbox.json
 * https://github.moeyy.xyz/https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json
-* http://www.weetai.cn/tvbox.json
 * https://raw.liucn.cc/box/m.json
 
 ## 我的直播源

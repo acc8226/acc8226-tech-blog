@@ -11,7 +11,7 @@ Z-shell（Zsh）是一种 Bourne 式的交互式 POSIX shell，以其丰富的�
 
 Zsh 具有交互式制表符补全、自动文件搜索、支持正则表达式、用于定义命令范围的高级速记符，以及丰富的主题引擎等功能。这些功能也包含在你所熟悉的其它 Bourne 式 shell 环境中，这意味着，如果你已经了解并喜欢 Bash，那么你也会熟悉 Zsh，除此以外，它还有更多的功能。你可能会认为它是一种 Bash++。
 
-用你的包管理器安装 Zsh。
+用你的包管理器安装 Zsh。<!-- more -->
 
 在 Fedora、RHEL 和 CentOS 上：
 
@@ -24,8 +24,6 @@ sudo dnf install zsh
 ```sh
 sudo apt install zsh
 ```
-
-<!-- more -->
 
 ## 参考
 

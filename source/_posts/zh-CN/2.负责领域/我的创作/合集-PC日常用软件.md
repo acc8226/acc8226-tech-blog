@@ -626,7 +626,7 @@ not
 
 ### 2.32 文本提取器
 
-[WindowTextExtractor](https://github.com/AlexanderPro/WindowTextExtractor/releases) 能够显示大多数 Windows 应用程序中存储在星号 （*****） 后面的密码
+[WindowTextExtractor](https://github.com/AlexanderPro/WindowTextExtractor/releases) 能够显示大多数 Windows 应用程序中存储在星号后面的密码
 
 ### 2.33 桌面壁纸
 
@@ -879,7 +879,6 @@ not
 * 【mac】Parallels desktop 属于买断特定版本，啥玩意，再也不买了
 * 【全平台】QOwnNotes 不好用，淘汰
 * 【全平台】Transmission 只能下载 bt 种子，淘汰
-* Cursor 0.1.3-x64
 * Dawn Launcher 不好用
 * EncryptoforWin 厂商专注 mac 已经不更新了
 * MQTT.FX 很久没更新了，淘汰

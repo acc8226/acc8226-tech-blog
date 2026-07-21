@@ -9,7 +9,7 @@ tags:
 
 ## 什么是 PowerShell
 
-PowerShell 是一种跨平台的任务自动化解决方案，由命令行 shell、脚本语言和配置管理框架组成。 PowerShell 目前已经支持在 Windows、Linux 和 macOS 上运行。
+PowerShell 是一种跨平台的任务自动化解决方案，由命令行 shell、脚本语言和配置管理框架组成。PowerShell 目前已经支持在 Windows、Linux 和 macOS 上运行。
 
 ## mac 安装 PowerShell
 
@@ -101,11 +101,11 @@ New-Item -Path 'C:\temp\New Folder' -ItemType Directory
 
 New-Item -Path 'C:\temp\New Folder\file.txt' -ItemType File
 
-注意：使用 Force选项 和 New-Item命令创建文件夹时，文件夹若已存在，则不会覆盖或替换该文件夹。它将简单地返回现有的文件夹对象。但是，如果您对已经存在的文件使用 New-Item -Force，则该文件 被覆盖。
+注意：使用 Force 选项 和 New-Item 命令创建文件夹时，文件夹若已存在，则不会覆盖或替换该文件夹。它将简单地返回现有的文件夹对象。但是，如果您对已经存在的文件使用 New-Item -Force，则该文件 被覆盖。
 
 删除文件夹中的所有文件和文件夹
 
-您可以使用 Remove-Item 删除包含的项，但系统将提示您确认 如果该项目包含任何其他内容。例如，如果您试图删除文件夹 C:\temp\DeleteMe 包含其他项，PowerShell提示您确认 删除文件夹：
+您可以使用 Remove-Item 删除包含的项，但系统将提示您确认 如果该项目包含任何其他内容。例如，如果您试图删除文件夹 C:\temp\DeleteMe 包含其他项，PowerShell 提示您确认 删除文件夹：
 
 Remove-Item -Path C:\temp\DeleteMe
 
@@ -121,7 +121,7 @@ PS> Get-Content -Path C:\boot.ini
 查询服务名称为 “ssh-agent” 的服务。
 Get-Service ssh-agent
 
-查询服务名称为“ssh-agent”的服务，若查询到则启动
+查询服务名称为 “ssh-agent” 的服务，若查询到则启动
 Get-Service ssh-agent | Set-Service -StartupType Manual
 
 设置为自启动
@@ -167,10 +167,8 @@ PS> [environment]::GetEnvironmentvariable("Path", "User")
 
 ## 美化
 
-Home | Oh My Posh
-<https://ohmyposh.dev/>
+[Home | Oh My Posh](https://ohmyposh.dev)
 
 ## 参考
 
-PowerShell 中文博客 – 收集和分享 Windows PowerShell 相关教程, 技术和最新动态
-<https://www.pstips.net/>
+[PowerShell 中文博客](https://www.pstips.net) – 收集和分享 Windows PowerShell 相关教程, 技术和最新动态

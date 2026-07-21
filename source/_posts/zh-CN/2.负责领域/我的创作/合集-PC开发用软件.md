@@ -326,7 +326,6 @@ not
 
 * 【JavaScript】[Yarn](https://www.yarnpkg.cn) - JavaScript 软件包管理器
 
-
 ## 11 NoSql 数据库
 
 #### 11.1 Redis
@@ -492,7 +491,7 @@ mac 已经将 zsh 取代 bash 作为默认 shell 了
 
 ### 跨平台应用程序框架
 
-* [Electron](https://www.electronjs.org/zh) 一个使用 JavaScript, HTML 和 CSS 开发跨平台桌面应用程序的框架，它允许开发者通过 Web 技术构建桌面软件，并提供丰富的 API 来调用操作系统的功能。
+* 【JavaScript】[Electron](https://www.electronjs.org/zh) 一个使用 JavaScript, HTML 和 CSS 开发跨平台桌面应用程序的框架，它允许开发者通过 Web 技术构建桌面软件，并提供丰富的 API 来调用操作系统的功能。
 * 【Dart】[Flutter](https://flutter.dev) 一个由 Google 支持的开源框架，允许开发者使用 Dart 语言编写一次代码，然后编译成适用于 Android、iOS、Web 和桌面平台的高性能、可定制的原生界面应用程序。
 * [Tauri](https://v2.tauri.app) 用于构建适用于所有主要桌面和移动平台的小巧、快速的二进制文件的框架
 
