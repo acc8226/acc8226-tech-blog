@@ -31,7 +31,7 @@ categories: 我的创作
 
 * 【win】【精品软件】[百分浏览器](https://www.centbrowser.cn) 鼠标悬停切换标签功能很好用 |【备用】 [360 极速浏览器X](https://browser.360.cn/ee/) 毕竟 IE 双核浏览器，且一些老网站只能用 IE 打开
 * 【mac】[猫眼浏览器](https://www.catsxp.com) 鼠标悬停切换标签功能很好用，建议关掉烦人的自动更新功能
-* 【linux】自带浏览器 或者【**linux 精品软件**】[360 安全浏览器](https://browser.360.net/gc/index.html)
+* 【linux】自带浏览器 或者【**linux 精品软件**】[360 安全浏览器](https://browser.360.net/gc/index.html) 选择其他系统的 deb 包支持 ubuntu
 
 浏览器我会搭配浏览器插件 Bitwarden，来实现密码自动填充。
 
