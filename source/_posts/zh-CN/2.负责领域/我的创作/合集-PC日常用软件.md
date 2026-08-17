@@ -31,14 +31,14 @@ categories: 我的创作
 
 * 【win】【精品软件】[百分浏览器](https://www.centbrowser.cn) 鼠标悬停切换标签功能很好用 |【备用】 [360 极速浏览器X](https://browser.360.cn/ee/) 毕竟 IE 双核浏览器，且一些老网站只能用 IE 打开
 * 【mac】[猫眼浏览器](https://www.catsxp.com) 鼠标悬停切换标签功能很好用，建议关掉烦人的自动更新功能
-* 【linux】自带浏览器 或者【**linux 精品软件**】[360 安全浏览器](https://browser.360.net/gc/index.html) 选择其他系统的 deb 包支持 ubuntu
+* 【linux】自带浏览器 或者【**linux 精品软件**】[360 安全浏览器](https://browser.360.net/gc/index.html) 选择其他系统-deb 支持 ubuntu
 
 浏览器我会搭配浏览器插件 Bitwarden，来实现密码自动填充。
 
 #### 1.0.3 输入法
 
 * 【win & mac】自带输入法 或[微信输入法](https://z.weixin.qq.com)
-* 【linux】自带输入法 或【**linux 精品软件**】[搜狗输入法](https://shurufa.sogou.com/linux) 或 [RIME 输入法](https://rime.im/)
+* 【linux】自带输入法 或【**linux 精品软件**】[搜狗输入法](https://shurufa.sogou.com/linux) 或 [RIME 输入法](https://rime.im)
 
 ### 1.1 工具类
 
@@ -84,15 +84,15 @@ categories: 我的创作
   1. [Neat Download Manager](https://www.neatdownloadmanager.com/index.php/en) 
   1. mac 版迅雷其实也不错，不过必须去官网下载才是完整版
 * **linux 平台**
-  1. 【全平台】[Motrix Next](https://motrix-next.pages.dev)
-  1. 迅雷 无广告很清爽
-  1. 【linux win】[XDM](https://github.com/subhra74/xdm/releases) 可以认为是 linux 环境下的 idm
+  * 【全平台】[Motrix Next](https://motrix-next.pages.dev)
+  * 迅雷 无广告很清爽
+  * 【linux win】[XDM](https://github.com/subhra74/xdm/releases) 可以认为是 linux 环境下的 idm
 
 #### 1.1.6 网盘
 
-**windows 和 mac 平台** [天翼云盘](https://cloud.189.cn)
+**windows 和 mac 平台** [天翼云盘](https://cloud.189.cn) 客户端
 
-**linux 平台** [天翼云盘](https://cloud.189.cn) 网页版
+**linux 平台** [天翼云盘](https://cloud.189.cn) 只有网页版，相当于残废了
 
 #### 1.1.7 看图
 
@@ -125,7 +125,7 @@ categories: 我的创作
 
 **Web 平台** 暂推荐 [金山文档](https://www.kdocs.cn) 适合文档分享。但千万记得加水印和设置只读访问权限，防止资料泄漏
 
-**linux 平台** 除了 WPS 和 LiberOffice，可以安装 [WinApps for linux](https://nowsci.com/winapps) | [github 项目地址](https://github.com/Fmstrat/winapps)
+**linux 平台** 除了 [WPS](https://linux.wps.cn/ 和 LiberOffice，可以安装 [WinApps for linux](https://nowsci.com/winapps) | [github 项目地址](https://github.com/Fmstrat/winapps)
 
 [wps for linux arm](https://365.wps.cn/download365)
 
@@ -142,7 +142,7 @@ categories: 我的创作
 注：如果觉得 SumatraPDF 太过精简，可考虑 WPS 自带的 pdf 组件。否则可额外下载 【win】[WPS PDF 独立版](https://www.wps.cn/product/kingsoftpdf)
 
 * **mac 平台**【mac】[迅读 PDF](https://www.pdfxd.com/mac.html) 全能好用的 PDF 文件阅读器及编辑器
-* **linux 平台**【linux】自带或者使用浏览器读取 pdf
+* **linux 平台**【linux】自带、使用浏览器读取 PDF、WPS 也能读取 PDF
 
 【网页版 在线 pdf 工具】[smallpdf.com](https://smallpdf.com) A Free Solution to all your PDF Problems
 
@@ -150,7 +150,8 @@ categories: 我的创作
 
 #### 1.2.3 OFD 文档
 
-windows 和 mac 平台用 wps，linux 平台用国产应用商店里的 友虹OFD 即可。
+* windows 和 mac 平台用 wps 即可
+* linux 平台银河麒麟系统自带了友虹 OFD，否则我推荐[葫芦OFD](https://www.oneofd.cn/download.html)
 
 #### 1.2.4 邮件收发
 
@@ -226,7 +227,8 @@ not
 
 **linux 平台**
 
-本地播放：【全平台】[VLC](https://www.videolan.org)
+1. 本地播放：【全平台】[VLC](https://www.videolan.org)
+1. 在线平台【linux】GitHub - msojocs/[bilibili-linux](https://github.com/msojocs/bilibili-linux): 基于哔哩哔哩官方客户端移植的 Linux 版本
 
 官网收录：【win mac】[迅雷影音](https://video.xunlei.com/pc.html) | 【win】[射手影音](https://www.splayer.org) | 【win mac】[抖音电脑版](https://www.douyin.com) |【win mac】[爱奇艺客户端](https://www.iqiyi.com/appstore.html) | 【win [mac](https://apps.apple.com/cn/app/%E8%85%BE%E8%AE%AF%E8%A7%86%E9%A2%91-%E5%BF%83%E5%8A%A8%E7%9A%84%E4%BF%A1%E5%8F%B77-%E7%8B%AC%E5%AE%B6%E7%83%AD%E6%92%AD/id1231336508?mt=12)】[腾讯视频](https://v.qq.com/download.html) |【win [mac](https://apps.apple.com/cn/app/%E4%BC%98%E9%85%B7%E8%A7%86%E9%A2%91-%E6%83%9C%E8%8A%B1%E8%8A%B7-%E5%85%A8%E7%BD%91%E7%8B%AC%E6%92%AD/id1014945607?mt=12)】[优酷](https://youku.com/product/index) 柯南 1080 p 限免看 |【win [mac](https://apps.apple.com/cn/app/%E5%A4%AE%E8%A7%86%E5%BD%B1%E9%9F%B3-%E6%B5%B7%E9%87%8F%E5%A4%AE%E8%A7%86%E5%86%85%E5%AE%B9%E9%AB%98%E6%B8%85%E7%9B%B4%E6%92%AD/id1357529089?mt=12)】[央视影音](https://app.cctv.com)
 
@@ -250,8 +252,8 @@ not【win linux】[阿里旺旺](https://wangwang.taobao.com) 不好用
 
 **RDP 远程**
 
-* windows 平台首推 xshell [校园免费版](https://www.xshell.com/zh/free-for-home-school)，其次是 MobaXterm。
-* linux 则为 Remmina。
+* windows 平台首推 xshell [校园免费版](https://www.xshell.com/zh/free-for-home-school)，其次是 MobaXterm
+* linux 则为 Remmina
 
 **VNC 远程** - VNC Viewer
 
@@ -407,7 +409,7 @@ not
 
 剪辑暂时用【全平台】[Shotcut](https://www.shotcut.org)
 
-### 2.4 TTS 文字转语音软件
+### 2.4 TTS 文字转语音
 
 用 edge 的大声朗读或者使用网页版的转语音服务即可
 
@@ -447,7 +449,7 @@ or【win】[GRC's | DNS Nameserver Performance Benchmark](https://www.grc.com/
 1. 【全平台 精品软件】[Typora](https://typoraio.cn) 功能强大，容易上手，但收费，有条件可支持下
 1. 【全平台】[obsidian](https://obsidian.md) 功能特强大，玩法多
 
-备用【全平台】MarkText [官网](https://www.marktext.cc/) | [GitHub 源](https://github.com/marktext/marktext/releases) 轻度使用的 markdown 编辑器
+备用【全平台】MarkText [官网](https://www.marktext.cc) | [GitHub 源](https://github.com/marktext/marktext/releases) 轻度使用的 markdown 编辑器
 
 not
 
@@ -812,7 +814,7 @@ not
 1. [GOFF Concepts](http://goffconcepts.com/index.html) 主页 --- GOFF Concepts Home Page 提供了 FileSearchEX 等软件
 1. [Sordum.org - Simplify Your computer Usage](https://www.sordum.org) 提供了很多好用小工具，比如 Dns Jumper
 
-## 6 XP 怀旧专题
+## 6 Win XP 怀旧专题
 
 1. [补丁合集](https://www.123pan.com/s/aDE9-hCCyh.html) 包含使 XP 系统支持 4G 以上内存补丁和消除安全证书过期的补丁
 1. [360 安全卫士极速版](https://wsdl.360safe.com/setupbeta_jisu.exe)

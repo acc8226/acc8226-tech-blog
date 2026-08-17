@@ -4,17 +4,17 @@ date: 2022-08-06 13:24:36
 comments: false
 ---
 
-活着的意义何在，在乎搞钱？
-要能处理好关系才不矛盾
+活着的意义何在，何乎搞钱
+能处理好各种关系
 这个世界复杂充满谎言
-钱少为何不能封妻荫子
+钱少能否封妻荫子
 人心不古
 
 - - -
 
 * 邮箱：[acc8226@qq.com](mailto:acc8226@qq.com)
 * 软件工程专业
-* 曾就职北京某软件公司，从事安卓移动应用开发、后端 Java 应用开发
+* 曾就职北京某软件公司，从事安卓移动应用开发、Java 后端应用开发
 
 惯用开发语言
 
@@ -27,7 +27,7 @@ comments: false
 惯用 IDE
 
 * Eclipse / MyEclipse
-* JetBrain 系列(IDEA、PyCharm...)
+* JetBrain 系列(IDEA、PyCharm、WebStorm...)
 * VSCode / VSCodium
 
 - - -

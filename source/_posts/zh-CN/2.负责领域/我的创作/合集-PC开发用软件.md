@@ -33,15 +33,15 @@ categories: 我的创作
 
 ### 1.2 C#
 
-[C# 指南-.NET 托管语言](https://learn.microsoft.com/zh-cn/dotnet/csharp) | Microsoft Learn
+[C# 指南-.NET 托管语言](https://learn.microsoft.com/zh-cn/dotnet/csharp)
 
 ### 1.3 Dart
 
-Dart [官网](https://dart.cn)
+[Dart 官网](https://dart.cn)
 
 ### 1.4 Go
 
-Go [官网](https://golang.google.cn)
+[Go 官网](https://golang.google.cn)
 
 ### 1.5 Java
 
@@ -51,7 +51,7 @@ Go [官网](https://golang.google.cn)
 * [Microsoft openjdk](https://docs.microsoft.com/zh-cn/java/openjdk/download)
 * [Oracle Java](https://www.oracle.com/java/technologies/javase-downloads.html)
 * [Temurin](https://adoptium.net/temurin/releases)
-* --国产 JDK--
+* -----国产 JDK-----
 * [腾讯 TencentKona-21](https://cnb.cool/tencent/TencentKona/TencentKona-21)
 * [阿里 Dragonwell](https://dragonwell-jdk.io/#/index)
 * [毕昇 JDK](https://www.hikunpeng.com/developer/devkit/download/jdk)
