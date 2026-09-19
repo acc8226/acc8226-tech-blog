@@ -33,11 +33,11 @@ macOS 一个很好用的原因，就是在于支持多点触控的触控板包�
 
 先把会涉及到按键符号告诉大家，因为在很多时候，快捷键的显示都会用对应的符号表示。
 
-⌘ (command)
-⌥ (option)
-⇧ (shift)
-⌃ (control)
-⌫ 删除
+* ⌘ (command)
+* ⌥ (option)
+* ⇧ (shift)
+* ⌃ (control)
+* ⌫ 删除
 
 如果使用了外接键盘。则 ctrl 的作用为 command
 windows 键为 control

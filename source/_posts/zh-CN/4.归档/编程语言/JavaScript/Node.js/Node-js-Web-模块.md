@@ -66,7 +66,7 @@ console.log("Server running at http://127.0.0.1:8080/")
 
 接下来我们在该目录下创建一个 index.html 文件，代码如下：
 
-```js
+```html
 <!DOCTYPE html>
 <html>
 <head>

@@ -10,10 +10,3 @@ categories:
 [易采集EasySpider](https://www.easyspider.cn/) 是一款可视化，几分钟设计一个爬虫/浏览器自动化测试任务的开源、免费、无广告软件。
 
 [官方视频教程](https://www.bilibili.com/video/BV1th411A7ey/)
-
-获取统计的机器管数目
-
-https://hnsggzy.com/tradeApi/constructionTender/listSection?current=1&size=1&regionCode=430700
-
-data.total 字段（整型）
- 

@@ -133,6 +133,7 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 * 【全平台 付费】[DataGrip](https://www.jetbrains.com/datagrip) DataGrip Is Now Free for Non-Commercial Use
   * 使用 Ubuntu？`sudo snap install datagrip --classic`
 * 【全平台 免费】[Navicat Premium Lite](https://www.navicat.com.cn/download/navicat-premium-lite) 毕竟免费，识别多种数据库，包括本地 sqlite
+* 【全平台】[DBeaver Community](https://dbeaver.io/download) 功能强大，除了颜值稍低
 
 备用
 
@@ -144,7 +145,6 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 not
 
 * 【win mac】[PGAdmin](https://www.pgadmin.org/download) 使用不习惯，且只支持 postgres
-* 【全平台】[DBeaver Community](https://dbeaver.io/download) 颜值太低
 * 【全平台】[DbVisualizer](https://www.dbvis.com) 付费版才好用
 * 【win mac】[Beekeeper Studio](https://github.com/beekeeper-studio/beekeeper-studio/releases) 社区版功能一般，除非付费版
 
@@ -170,8 +170,8 @@ vscode 插件推荐：[markdownlint](https://marketplace.visualstudio.com/items?
 
 备用
 
-* 【全平台】[notepad--](https://gitee.com/cxasm/notepad--) npp 的全平台版本，剔除了不良言论
-* 【全平台】[Zed](https://zed.dev) 据说是新一代编辑器，还不完善
+* 【全平台】[notepad--](https://gitee.com/cxasm/notepad--) 除了 linux 版本的暂不完善
+* 【全平台】[Zed](https://zed.dev) 据说是新一代编辑器
 
 not
 

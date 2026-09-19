@@ -90,6 +90,7 @@ console.log(util.inspect(obj, true))
 
 ```js
 Person { name: 'byvoid', toString: [Function] }
+
 Person {
   name: 'byvoid',
   toString:

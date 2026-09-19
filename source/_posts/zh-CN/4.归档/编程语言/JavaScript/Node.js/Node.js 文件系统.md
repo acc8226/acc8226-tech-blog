@@ -178,7 +178,7 @@ async function readTextFile(path) {
 readTextFile('sample.txt').then(s => console.log(s));
 ```
 
-在async函数中，用await调用 `fs/promises` 与同步方法类似，但代码却是异步执行的。
+在 async 函数中，用await调用 `fs/promises` 与同步方法类似，但代码却是异步执行的。
 
 ## 异步还是同步
 

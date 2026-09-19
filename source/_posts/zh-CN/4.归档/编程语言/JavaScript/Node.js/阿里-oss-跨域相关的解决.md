@@ -19,7 +19,7 @@ tags: nodeJS
 
 允许 Methods: 按需选择, 例如只 GET
 
-允许 Headers: 没有特殊情况, \*即可
+允许 Headers: 没有特殊情况, \* 即可
 
 暴露 Headers: 默认不填即可<!-- more -->
 
@@ -53,8 +53,8 @@ Referer列表：http://*.oss-cn-beijing.aliyuncs.com，http://*.aliyun.com。
 
 ```text
 Referer 不在规定范围或者格式错误时，需要确认是否配置http://或者https://，并更正Referer的配置范围，
-比如a.aliyun.com和b.aliyun.com，匹配于http://*.aliyun.com或http://?.aliyun.com。
-domain.com匹配于http://domain.com，而不是http://*.domain.com。
+比如 a.aliyun.com和b.aliyun.com，匹配于 http://*.aliyun.com或http://?.aliyun.com。
+domain.com匹配于http://domain.com，而不是 http://*.domain.com。
 ```
 
 测试防盗链是否生效:
@@ -64,5 +64,5 @@ domain.com匹配于http://domain.com，而不是http://*.domain.com。
 通过 curl 命令加参数 -e，传递设置的白名单中 Referer 到访问地址，代表由 oss.jinxiangtest.com 网站传递的请求。没有报错，证明白名单 Referer 设置生效。
 `curl --referer http://oss.jinxiangtest.com http://oss.jinxiangtest.com/testoss.txt`
 
-通过 curl 命令加参数 -e，传递错误的 Refere 到访问地址，由于 oss.jinxiangtest234.com 不在白名单中，系统报错，证明白名单 Referer 设置生效。
+通过 curl 命令加参数 -e，传递错误的 Referer 到访问地址，由于 oss.jinxiangtest234.com 不在白名单中，系统报错，证明白名单 Referer 设置生效。
 `curl -e http://abc.com http://oss.jinxiangtest.com/testoss.txt`

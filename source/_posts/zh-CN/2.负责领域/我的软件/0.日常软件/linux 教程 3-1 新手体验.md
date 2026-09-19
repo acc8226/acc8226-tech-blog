@@ -11,7 +11,7 @@ categories:
 
 连接网络 有线网络或者是无线 wifi
 
-选择源 确定自带源是否速度够快，否则可以尝试更改为 位于中国的服务器
+选择源 确定自带源是否速度够快，否则可以尝试更改为位于中国的服务器
 
 更新系统
 
@@ -20,9 +20,7 @@ sudo apt update
 sudo apt upgrade -y
 ```
 
-个性化设置。建议开启夜灯
-
-<!-- more -->
+个性化设置。建议开启夜灯<!-- more -->
 
 ## 熟悉系统软硬件以及浏览器和输入法
 
@@ -66,7 +64,7 @@ spotify
 [NewsFlash](https://gitlab.com/news-flash/news_flash_gtk)
 bitwarden
 powershell
-vscode
+vscodium
 idea
 pycharm
 vlc 装系统使用最小化配置竟然安装失败了，但是第二次重装系统选择全量却可以，另外使用 nala 也可以安装成功
