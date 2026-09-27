@@ -102,7 +102,7 @@ categories: 我的创作
 #### 1.1.8 图像处理
 
 * 轻量级【win 绿色版】[Paint.NET](https://www.getpaint.net) 功能强大且有绿色版
-* 重量级【全平台 精品软件】[GIMP](https://www.gimp.org) PS 的替代品且免费
+* 重量级【全平台 精品软件】GIMP [官网](https://www.gimp.org) | [国内 mirror](https://mirrors.aliyun.com/gimp/gimp/) PS 的替代品且免费
 
 not 付费的 PS
 

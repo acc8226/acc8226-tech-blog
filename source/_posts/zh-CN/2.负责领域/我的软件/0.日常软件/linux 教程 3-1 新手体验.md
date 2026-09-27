@@ -276,13 +276,9 @@ microsoft-edge-stable_126.0.2592.81-1_amd64.deb 使用 dpkg 安装后如何卸�
 这里的 -r 或 --remove 选项表示卸载（remove）软件包。
 sudo dpkg -r microsoft-edge-stable
 
-如果软件包已经被卸载，但是它的配置文件仍然存在，您可能还想删除这些配置文件。为此，可以使用 -p 或 --purge 选项加上软件包的名称和版本号，如下：
+如果软件包已经被卸载，但是它的配置文件仍然存在，您可能还想删除这些配置文件。为此，可以使用 -P 或 --purge 选项加上软件包的名称和版本号，如下：
 sudo dpkg -P microsoft-edge-stable
 -P 选项已经包含了 -r 的功能，并且额外删除了配置文件
-
-## 额外的软件
-
-[video-downloader](https://github.com/unrud/video-downloader) 用不了，差评
 
 ## 技巧
 
@@ -301,8 +297,6 @@ sudo nala install gnome-shell-extension-manager
 ## Web 应用
 
 [duolingo](https://www.duolingo.cn)
-
-[阿里云盘](https://www.alipan.com)
 
 ## 技巧
 

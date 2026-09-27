@@ -116,4 +116,4 @@ x11 桌面锁屏命令 xset dpms force off
 
 ## 多系统安装工具 Ventoy
 
-[VentoyRelease](https://www.lanzoui.com/b01bd54gb)
+[Ventoy-Release](https://www.lanzoui.com/b01bd54gb)

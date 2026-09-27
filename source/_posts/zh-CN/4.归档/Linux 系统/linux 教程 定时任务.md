@@ -7,7 +7,7 @@ categories: linux
 
 我们时常会有一些定期定时的任务，如周期性的清理一下／tmp，周期性的去备份一次数据库，周期性的分析日志等等。而且有时候因为某些因素的限制，执行该任务的时间会很尴尬。本课程将带你很好的利用 Linux 系统的计划工具。
 
-crontab 命令常见于 Unix 和类 Unix 的操作系统之中（Linux 就属于类 Unix 操作系统），用于设置周期性被执行的指令。
+crontab 命令常见于 Unix 和类 Unix 的操作系统之中（Linux 就属于类 Unix 操作系统），用于设置周期性被执行的指令。<!-- more -->
 
 ## crontab 简介
 
@@ -27,8 +27,6 @@ crontab 命令从输入设备读取指令，并将其存放于 crontab 文件中
 # |  |  |  |  |
 # *  *  *  *  * user-name command to be executed
 ```
-
-<!-- more -->
 
 在本实验环境中 crontab 也是不被默认启动的，同时不能在后台由 upstart 来管理，所以需要我们手动来启动它:
 

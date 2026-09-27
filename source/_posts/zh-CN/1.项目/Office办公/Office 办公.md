@@ -72,7 +72,7 @@ df = pd.read_excel('a.xls', usecols=[0, 3])
 df.to_csv('b.csv', index=False, encoding='utf-8-sig')   # utf-8-sig 让 Excel 直接双击不乱码
 ```
 
-小案例：提取所需列 并 过滤条件 和 排序
+小案例：提取特定列 并 过滤条件 和 排序
 
 1\. 1.挂网数据 xls 提取手工台账用辅助列 csv 格式.py
 
