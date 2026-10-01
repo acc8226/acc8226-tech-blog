@@ -9,7 +9,7 @@ categories: linux
 
 ## 常见的日志
 
-日志是一个系统管理员，一个运维人员，甚至是开发人员不可或缺的东西，系统用久了偶尔也会出现一些错误，我们需要日志来给系统排错，在一些网络应用服务不能正常工作的时候，我们需要用日志来做问题定位，日志还是过往时间的记录本，我们可以通过它知道我们是否被不明用户登录过等等。
+日志是一个系统管理员，一个运维人员，甚至是开发人员不可或缺的东西，系统用久了偶尔也会出现一些错误，我们需要日志来给系统排错，在一些网络应用服务不能正常工作的时候，我们需要用日志来做问题定位，日志还是过往时间的记录本，我们可以通过它知道我们是否被不明用户登录过等等。<!-- more -->
 
 在 Linux 中大部分的发行版都内置使用 syslog 系统日志，那么通过前期的课程我们了解到常见的日志一般存放在 `/var/log` 中，我们来看看其中有哪些日志
 
@@ -24,19 +24,18 @@ categories: linux
 
 接下来我们来看看常见的系统日志有哪些，他们都记录了怎样的信息
 
-<!-- more -->
 
-| 日志名称           | 记录信息                                                                    |
-| ------------------ | --------------------------------------------------------------------------- |
+| 日志名称 | 记录信息 |
+| ------------------ | --------------------------------------------- |
 | alternatives.log   | 系统的一些更新替代信息记录 |
 | apport.log | 应用程序崩溃信息记录 |
 | apt/history.log | 使用 apt-get 安装卸载软件的信息记录 |
-| apt/term.log | 使用 apt-get 时的具体操作，如 package 的下载、打开等                        |
+| apt/term.log | 使用 apt-get 时的具体操作，如 package 的下载、打开等 |
 | auth.log | 登录认证的信息记录 |
 | boot.log | 系统启动时的程序服务的日志信息 |
 | btmp | 错误的信息记录 |
 | Consolekit/history | 控制台的信息记录 |
-| dist-upgrade       | dist-upgrade 这种更新方式的信息记录 |
+| dist-upgrade | dist-upgrade 这种更新方式的信息记录 |
 | dmesg | 启动时，显示屏幕上内核缓冲信息,与硬件有关的信息 |
 | dpkg.log | dpkg 命令管理包的日志。 |
 | faillog | 用户登录失败详细信息记录 |
@@ -222,37 +221,37 @@ facility.priority　　　　　log_location
 
 rsyslog 通过 Facility 的概念来定义日志消息的来源，以便对日志进行分类，Facility 的种类有：
 
-| 类别     | 解释 |
+| 类别 | 解释 |
 | -------- | ---------------- |
-| kern     | 内核消息 |
-| user     | 用户信息 |
-| mail     | 邮件系统消息 |
+| kern | 内核消息 |
+| user | 用户信息 |
+| mail | 邮件系统消息 |
 | daemon   | 系统服务消息     |
-| auth     | 认证系统 |
+| auth | 认证系统 |
 | authpriv | 权限系统 |
 | syslog   | 日志系统自身消息 |
-| cron     | 计划安排 |
-| news     | 新闻信息 |
+| cron | 计划安排 |
+| news | 新闻信息 |
 | local0~7 | 由自定义程序使用 |
 
 而另外一部分 priority 也称之为 serverity level，除了日志的来源以外，对统一源产生日志消息还需要进行优先级的划分，而优先级的类别有以下几种：
 
-| 类别          | 解释                           |
+| 类别 | 解释 |
 | ------------- | ------------------------------ |
-| emergency     | 系统已经无法使用了 |
-| alert         | 必须立即处理的问题 |
-| critical      | 很严重了 |
-| error         | 错误 |
-| warning       | 警告信息 |
-| notice        | 系统正常，但是比较重要 |
+| emergency | 系统已经无法使用了 |
+| alert | 必须立即处理的问题 |
+| critical | 很严重了 |
+| error | 错误 |
+| warning | 警告信息 |
+| notice | 系统正常，但是比较重要 |
 | informational | 正常 |
-| debug         | debug 的调试信息 |
-| panic         | 很严重但是已淘汰不常用 |
-| none          | 没有优先级，不记录任何日志消息 |
+| debug | debug 的调试信息 |
+| panic | 很严重但是已淘汰不常用 |
+| none | 没有优先级，不记录任何日志消息 |
 
 我们来看看系统中的配置
 
-![实验楼](https://upload-images.jianshu.io/upload_images/1662509-8b400b2e535de548?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/1662509-8b400b2e535de548?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ```sh
 auth,authpriv.*       /var/log/auth.log
@@ -283,7 +282,7 @@ ping 127.0.0.1 | logger -it logger_test -p local3.notice &
 sudo tail -f /var/log/syslog
 ```
 
-![实验楼](https://upload-images.jianshu.io/upload_images/1662509-1de803f3e1201137?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/1662509-1de803f3e1201137?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 从图中我们可以看到我们成功的将 ping 的信息写入了 syslog 中，格式也就是使用的 rsyslog 的默认模板
 

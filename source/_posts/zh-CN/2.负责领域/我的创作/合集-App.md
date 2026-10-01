@@ -20,20 +20,18 @@ categories: 我的创作
 * 在挑选 app 上尽量跨平台、无广告和体积小巧优先，一定程度保证使用体验一致
 * “官网收录”收录了一些 app 的官网，仅供参考
 
-### 安卓还是 iOS、鸿蒙 6
+### 安卓、苹果还是鸿蒙
 
-如果只考虑必要需求，现阶段低于 **1300 元**以下只有安卓设备，否则我推荐日臻完善的鸿蒙系统。<!-- more -->
+现阶段低于 1500 元以下推荐安卓设备，否则我推荐日臻完善的鸿蒙系统。苹果则根据个人喜好<!-- more -->
 
 ### 手机还是平板
 
-一般建议有手机后才考虑买平板，平板会有良好的影音体验。
+一般建议有手机后才考虑买平板（3000 以上预算我会无脑选 iPad，否则综合考虑买 iPad 或安卓平板），平板会有良好的影音体验。
 
 * 看视频、漫画更爽
 * 阅读 PDF、小说更方便
 * 可随时处理 Office 办公、邮件
 * 玩游戏更震撼
-
-关于价格：3000 以上预算我会无脑选 iPad，2200~3000 综合考虑买 iPad 或安卓平板，2200 以下只推荐购买安卓平板。
 
 ### 怎么挑选平板 Pad 应用
 
@@ -136,7 +134,9 @@ Bitwarden【已适配安卓平板】[Github 版](https://github.com/bitwarden/an
 
 #### 鸿蒙
 
-[mDays倒计时](https://appgallery.huawei.com/app/detail?id=com.wtkj.app.counter.hm)
+嘀嗒清单 包含了倒数日功能
+
+备用 [mDays倒计时](https://appgallery.huawei.com/app/detail?id=com.wtkj.app.counter.hm)
 
 ### 1.5 阅读
 
@@ -187,7 +187,7 @@ not
 本地
 
 * [kindle](https://sj.qq.com/appdetail/com.amazon.kindlefc) 在线和本地都很强
-* ~~Anyview 阅读 贼好用可惜停止更新了~~
+* ~~Anyview 阅读 贼好用，但可惜停止更新了~~
 * ~~阅读星Pro 阅读必备神器, 能读取各种格式的阅读格式文件 后 app 名字更新为云虫爱看，现在已经绝版了~~
 
 在线
@@ -549,7 +549,7 @@ not [泰捷视频](https://www.51togic.com/%e6%b3%b0%e6%8d%b7%e8%a7%86%e9%a2%91)
 
 ### 安卓
 
-* [WiFi 万能钥匙极速版](https://sj.qq.com/appdetail/com.snda.lantern.wifilocating) 偶尔可以用下，虽说现在的能用的热点不多了
+* [WiFi 万能钥匙极速版](https://sj.qq.com/appdetail/com.snda.lantern.wifilocating) 偶尔用用有奇效，虽说现在能用的热点不多了
 * [一个木函](https://sj.qq.com/appdetail/com.One.WoodenLetter)
 
 可选
@@ -557,7 +557,7 @@ not [泰捷视频](https://www.51togic.com/%e6%b3%b0%e6%8d%b7%e8%a7%86%e9%a2%91)
 * [CX 文件管理器](https://apkpure.com/cx-file-explorer/com.cxinventor.file.explorer) 小巧且强大，支持 webdav
 * [GKD 搞快点](https://gkd.li) 预设了跳广告规则，开箱即用
 * Hiddify 【适配了平板】魔法上网工具
-* [微信输入法](https://sj.qq.com/appdetail/com.tencent.wetype) 其中的跨设备粘贴绝了
+* [微信输入法](https://sj.qq.com/appdetail/com.tencent.wetype) 跨设备粘贴绝了
 * ——————— ฅ՞• •՞ฅ ———————
 * [QQ 同步助手](https://sj.qq.com/appdetail/com.tencent.qqpim) 同步手机通讯录用 换机只用一次
 
@@ -647,7 +647,7 @@ not
 
 ### 安卓 & iPhone
 
-[高德地图](https://sj.qq.com/appdetail/com.autonavi.minimap) ｜ [百度地图](https://sj.qq.com/appdetail/com.baidu.BaiduMap) ｜ [腾讯地图](https://sj.qq.com/appdetail/com.tencent.map)【小程序】 比 app 更清爽
+[高德地图](https://sj.qq.com/appdetail/com.autonavi.minimap) ｜ [百度地图](https://sj.qq.com/appdetail/com.baidu.BaiduMap) ｜ [腾讯地图](https://sj.qq.com/appdetail/com.tencent.map)
 
 ### 安卓平板
 
@@ -655,7 +655,7 @@ not
 
 备用
 
-* [百度地图](https://sj.qq.com/appdetail/com.baidu.BaiduMap) 通用版【已适配平板】备用，找便宜宾馆用
+* [百度地图](https://sj.qq.com/appdetail/com.baidu.BaiduMap) 通用版【已适配平板】备用，宾馆也很多
 * [腾讯地图](https://sj.qq.com/appdetail/com.tencent.map) 通用版【已适配平板】内置的【小程序】地图很好用
 
 ### 鸿蒙
@@ -675,8 +675,8 @@ not
 
 1. 滴滴出行 [app](https://sj.qq.com/appdetail/com.sdu.didi.psnger) /【小程序】 加班、搬家、货运搬家用
 1. 腾讯乘车码【小程序】 通用性较强 | 乐行永州【小程序】 只适合永州地区公交（75 折）
-1. [云闪付](https://sj.qq.com/appdetail/com.unionpay)-出行
-1. [支付宝](https://sj.qq.com/appdetail/com.eg.android.AlipayGphone)-出行【支付宝小程序】
+1. [云闪付](https://sj.qq.com/appdetail/com.unionpay) 的出行频道
+1. [支付宝](https://sj.qq.com/appdetail/com.eg.android.AlipayGphone) 支付宝出行【支付宝小程序】
 
 可选
 
@@ -713,7 +713,7 @@ not
 * ——————— ฅ՞• •՞ฅ ———————
 [建行生活](https://sj.qq.com/appdetail/com.ccb.longjiLife) | 招商银行[掌上生活](https://sj.qq.com/appdetail/com.cmbchina.ccd.pluto.cmbActivity) | 交通银行[买单吧](https://sj.qq.com/appdetail/com.bankcomm.maidanba) | 光大银行[阳光惠生活](https://sj.qq.com/appdetail/com.ebank.creditcard)
 * ——————— ฅ՞• •՞ฅ ———————
-[网上国网](https://sj.qq.com/appdetail/com.sgcc.wsgw.cn) 缴电费。当然一些银行网站、app 和 微信支付宝也能做到
+[网上国网](https://sj.qq.com/appdetail/com.sgcc.wsgw.cn) 缴电费用。当然微信小程序也能做到
 
 其实 [抖音](https://sj.qq.com/appdetail/com.ss.android.ugc.aweme) 也包含了生活、超市、优惠、直播和团购频道
 
@@ -923,25 +923,29 @@ not
 
 ### 安卓
 
+**Office**
+
+[WPS Office](https://sj.qq.com/appdetail/cn.wps.moffice_eng) 可做到 Office 文档和 PDF 通吃，功能强大但不够清爽
+
+备用
+
 * [永中 Office](https://sj.qq.com/appdetail/com.yozo.office) 不足百兆且较为清爽
 * [ONLYOFFICE](https://download.onlyoffice.com/install/mobile/android/onlyoffice-documents.apk) 功能较全
-* ——————— ฅ՞• •՞ฅ ———————
-* [Adobe Acrobat Reader](https://adobe-reader.en.uptodown.com/android/download) 老牌产品, 这款 App 是通用版, 平板也做了适配
-* [PDF Reader Pro](https://www.pdfreaderpro.com/pdfreaderpro-android)
-* [迅读 PDF](https://sj.qq.com/appdetail/com.xundupdf.reader) 裁剪模式很好用
-* ——————— ฅ՞• •՞ฅ ———————
-* [HP 打印服务](https://sj.qq.com/appdetail/com.hp.android.printservice) 毕竟市场占用率高且方便
-
-备用 [WPS Office](https://sj.qq.com/appdetail/cn.wps.moffice_eng) 可做到 Office 文档和 PDF 通吃，功能强大但不够清爽
 
 not
 
 * LibreOffice Viewer [Google Play 版](https://play.google.com/store/apps/details?id=org.documentfoundation.libreoffice) | [F-Droid - Free and Open Source Android App Repository](https://f-droid.org/packages/org.documentfoundation.libreoffice) 功能不太完善
 * Polaris Office 北极星办公 其中安卓版本不是最新版不能用
 
-**怀旧经典** 智器阅读 一款 pdf 阅读器 想当年 当时可以裁掉白边
+**PDF**
 
-在线文档
+* [Adobe Acrobat Reader](https://adobe-reader.en.uptodown.com/android/download) 老牌产品, 这款 App 是通用版, 平板也做了适配
+* [PDF Reader Pro](https://www.pdfreaderpro.com/pdfreaderpro-android)
+* [迅读 PDF](https://sj.qq.com/appdetail/com.xundupdf.reader) 裁剪模式很好用
+
+* [HP 打印服务](https://sj.qq.com/appdetail/com.hp.android.printservice) 毕竟市场占用率高且方便
+
+**在线文档**
 
 * [金山文档](https://sj.qq.com/appdetail/cn.wps.yun)
 * [腾讯文档](https://sj.qq.com/appdetail/com.tencent.docs)
@@ -949,21 +953,14 @@ not
 
 ### 安卓平板
 
+* [WPS Office](https://sj.qq.com/appdetail/cn.wps.moffice_eng) 可做到 Office 文档和 PDF 通吃，功能强大但是不够清爽
 * [Microsoft Word](https://sj.qq.com/appdetail/com.microsoft.office.word)、[Excel](https://sj.qq.com/appdetail/com.microsoft.office.excel)、[PowerPoint](https://sj.qq.com/appdetail/com.microsoft.office.powerpoint)
-* [WPS Office](https://sj.qq.com/appdetail/cn.wps.moffice_eng) 
 * ——————— ฅ՞• •՞ฅ ———————
 * [Adobe Acrobat Reader](https://adobe-reader.en.uptodown.com/android/download) 老牌产品, 这款 App 是通用版, 平板也做了适配
 * UPDF 有适配平板且功能强大颜值也高
 * [PDF Reader Pro](https://www.pdfreaderpro.com/pdfreaderpro-android)
 
-备用 [WPS Office](https://sj.qq.com/appdetail/cn.wps.moffice_eng) 可做到 Office 文档和 PDF 通吃，功能强大但是不够清爽
-
-not 
-
-* [福昕 PDF 阅读器](https://sj.qq.com/appdetail/com.foxit.mobile.pdf.lite) 有广告
-* [语雀](https://sj.qq.com/appdetail/com.yuque.mobile.android.app) 在线文档我都不爱
-* [金山文档](https://sj.qq.com/appdetail/cn.wps.yun)
-* [腾讯文档](https://sj.qq.com/appdetail/com.tencent.docs)
+not [福昕 PDF 阅读器](https://sj.qq.com/appdetail/com.foxit.mobile.pdf.lite) 有广告
 
 ### iPad
 
@@ -1286,11 +1283,9 @@ never 【垃圾】~~微众银行的垃圾微粒贷~~ TM 垃圾微粒贷，网贷
 * [灯塔专业版](https://sj.qq.com/appdetail/com.alipictures.moviepro) 个人认为灯塔比猫眼好用
 * [猫眼专业版](https://sj.qq.com/appdetail/com.sankuai.moviepro)
 
-## 30 OCR 提取
+## 30 扫描
 
-[极度扫描](https://jidusm.wlhex.com) 跨平台 OCR 图片转文字 表格识别翻译，免费用户也能用
-
-## 31 扫描
+### 安卓
 
 * [汉王扫描王](https://sj.qq.com/appdetail/com.hanvonscanner.app) 还能从图片中提取表格【限免中】
 * [白描](https://sj.qq.com/appdetail/com.uzero.baimiao) 可以免费制作身份证正反面 A4 扫描件，免费版有每日次数限制
@@ -1302,6 +1297,12 @@ not 扫描宝和印象笔记，动不动就要会员，差评
 ### 鸿蒙
 
 [扫描全能王](https://appgallery.huawei.com/app/detail?id=com.intsig.camscanner.hap)
+
+## 31 OCR 提取
+
+同上
+
+not 极度扫描 已经几年没更新了
 
 ## 32 标注/绘图
 
@@ -1804,7 +1805,7 @@ not
 
 ## 65 广场舞
 
-[糖豆](https://sj.qq.com/appdetail/com.bokecc.dance) 广场舞的爱好者用
+[糖豆](https://sj.qq.com/appdetail/com.bokecc.dance) 广场舞人群用
 
 ## 66 桌面启动器
 
@@ -1818,7 +1819,7 @@ not Nova Launcher 连基础的手势操作还需要 pro 付费，差评
 
 ### 安卓
 
-* [腾讯应用宝](https://sj.qq.com)-全网最新最热手机应用游戏下载
+* [腾讯应用宝](https://sj.qq.com) 手机应用游戏下载
 * [百度手机助手](https://shouji.baidu.com)
 * ——————— ฅ՞• •՞ฅ ———————
 * [Google Play Store](https://sj.qq.com/appdetail/com.android.vending) 【安卓平板支持】[Play 官网](https://play.google.com) 谷歌应用市场是安卓系统原生官方综合类应用市场，其中包括最新的游戏、应用、音乐、书籍等，非常丰富。需魔法 和 预先谷歌框架支持
@@ -1829,7 +1830,7 @@ not Nova Launcher 连基础的手势操作还需要 pro 付费，差评
 
 ### 安卓 TV
 
-[当贝市场](https://www.dangbei.com/)
+[当贝市场](https://www.dangbei.com)
 
 ## 68 下载器
 
@@ -1845,7 +1846,7 @@ not Nova Launcher 连基础的手势操作还需要 pro 付费，差评
 
 ### 通用
 
-[Keep - AI 运动教练](https://sj.qq.com/appdetail/com.gotokeep.keep)
+[Keep](https://sj.qq.com/appdetail/com.gotokeep.keep) AI 运动教练
 
 ### 鸿蒙
 
@@ -1896,11 +1897,15 @@ not Nova Launcher 连基础的手势操作还需要 pro 付费，差评
 
 其中 GitHub App [apkmirror 源](https://www.apkmirror.com/apk/github/)
 
-## 76 游戏加速器
+## 76 本地生活
+
+[京通](https://sj.qq.com/appdetail/com.bjbdc.jingtong)、[我的长沙](https://sj.qq.com/appdetail/com.changsha.apps.android.mycs)、[我的常德](https://sj.qq.com/appdetail/com.iflytek.cdipsp) 按需选择即可
+
+## 77 游戏加速器
 
 [雷神加速器](https://sj.qq.com/appdetail/com.nn.accelerator.box)
 
-## 77 游戏
+## 78 游戏
 
 可自行选配，除了应用商店分发渠道则可以去官网下载。我一般会玩经典系列，比如王国保卫战、割绳子、小鳄鱼洗澡、糖果粉碎传奇、滑雪大冒险、愤怒的小鸟<br/>
 Bean's Quest 算是 1 代 和 Bean Dreams 算是 2 代
@@ -1916,10 +1921,11 @@ Bean's Quest 算是 1 代 和 Bean Dreams 算是 2 代
 5. [iHour](https://sj.qq.com/appdetail/com.clover.ihour) 一个帮助你规划、记录自己时间投入的 app
 6. [讯飞有声](https://sj.qq.com/appdetail/com.iflytek.readassistant) txt、pdf、word 资料可随时语音播放
 
-小程序
+微信小程序
 
 * 刺猬云印刷 1.9 元打印包邮
 * 学信网报告在线验证 方便对方审查学历信息
+* 网上国网 充电费用
 
 ### 薅羊毛
 
@@ -1931,7 +1937,7 @@ OPPO 自带的文档 app 很好用
 
 ## 其他 App
 
-京通 自从北京通 app 下架后，然后有了它之后[北京公积金](https://sj.qq.com/appdetail/cn.gov.bjgjj.gjjapp) app 也几乎不用装，一般我也用网站，想不到提取公积金特简单，简单申请当日到账
+京通 自从北京通 app 下架后，然后有了它之后[北京公积金](https://sj.qq.com/appdetail/cn.gov.bjgjj.gjjapp) app 也几乎不用安装了。一般我也用网站，想不到提取公积金特简单，简单申请当日到账
 
 ~~北京健康宝 疫情已落幕~~
 

@@ -23,6 +23,7 @@ Ubuntu 的软件源配置文件在 `/etc/apt/sources.list`。请将系统自带�
 sudo sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
 ```
 
+<!-- more -->
 方式二：直接覆盖
 
 以 20.04 LTS 为例，copy 内容覆盖掉 /sources.list 即可。
