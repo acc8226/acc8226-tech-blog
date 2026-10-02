@@ -24,7 +24,7 @@ categories: 我的创作
 
 #### 1.0.1 安全类
 
-* 【win】自带电脑管家（例如微软电脑管家）或 [360 安全卫士极速版](https://sfdl.360safe.com/setupbeta_jisu.exe) 或 [火绒安全软件](https://www.huorong.cn/person)
+* 【win】自带电脑管家（例如微软电脑管家 | [360 安全卫士极速版](https://sfdl.360safe.com/setupbeta_jisu.exe) | [火绒安全软件](https://www.huorong.cn/person)
 * 【mac】[腾讯柠檬清理](https://lemon.qq.com) 或 [360 安全卫士 Mac 版](https://www.360.cn/mac/index.html)<!-- more -->
 
 #### 1.0.2 浏览器
@@ -37,8 +37,8 @@ categories: 我的创作
 
 #### 1.0.3 输入法
 
-* 【win & mac】自带输入法 或[微信输入法](https://z.weixin.qq.com)
-* 【linux】自带输入法 或【**linux 精品软件**】[搜狗输入法](https://shurufa.sogou.com/linux) 或 [RIME 输入法](https://rime.im)
+* 【win & mac】系统自带输入法 | [豆包输入法](https://shurufa.doubao.com/pc) - 强在语音输入 | [微信输入法](https://z.weixin.qq.com) - 强在跨设备粘贴 | [RIME 输入法](https://rime.im)
+* 【linux】自带输入法 或【**linux 精品软件**】[搜狗输入法](https://shurufa.sogou.com/linux) | [RIME 输入法引擎](https://rime.im) （iBus/Fcitx5）+ 搭配 [oh-my-rime 薄荷输入法](https://www.mintimate.cc/zh/)
 
 ### 1.1 工具类
 
@@ -307,19 +307,20 @@ not
 
 ### 2.0 驱动运行库硬件检测
 
-驱动请认准设备官网
+驱动请认准品牌机型号，直接从品牌机官网。若单独硬件，则去硬件官网下载并安装驱动。
 
-驱动备份【win】[dism++](https://github.com/Chuyu-Team/Dism-Multi-language)
+**驱动备份**【win】[dism++](https://github.com/Chuyu-Team/Dism-Multi-language)
 
-硬件检测
+**硬件检测**
+
 * 【win】[CPU-Z | Softwares | CPUID](https://www.cpuid.com/softwares/cpu-z.html)
 * 【win】[GUP-Z](https://www.techpowerup.com/download/techpowerup-gpu-z)
 * 【win】[AIDA64 Extreme](https://www.aida64.com/downloads)
 * 【win】[360 驱动大师](https://dm.weishi.360.cn/home.html)
 * 【win】[驱动精灵](http://www.drivergenius.com)
-* [CrystalDiskInfo](https://crystalmark.info/en) 磁盘检测
+* [CrystalDiskInfo](https://crystalmark.info/en/software/crystaldiskinfo/) 看硬盘健康、通电次数、通电时长（新机重点看这个！）
 
-运行库 [Download Visual C++ Redistributable Runtimes All-in-One Feb 2024 | TechPowerUp](https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one)
+**运行库** [Download Visual C++ Redistributable Runtimes All-in-One Feb 2024 | TechPowerUp](https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one)
 
 .net 运行库【win】WirelessMon 4.0 用于监控无线适配器和 WiFi 接入点的 Windows 软件
 
@@ -332,7 +333,12 @@ not
 
 官网收录：【mac】[AppCleaner](https://freemacsoft.net/appcleaner)
 
-linux [安兔兔](https://www.antutu.com/download.htm)
+**硬件跑分**
+
+* [图吧工具箱](https://www.tbtool.cn) 开源、免费、绿色、纯净的硬件检测工具合集
+* 【win linux】[安兔兔评测](https://www.antutu.com/download)
+* CPU 跑分 [Geekbench - Cross-Platform Benchmark](https://www.geekbench.com/)
+* [CrystalDiskMark](https://crystalmark.info/en/software/crystaldiskmark/)：SSD 读写速度跑分，测固态有没有降速、是否为假货。
 
 ### 2.1 激活类
 
@@ -855,7 +861,6 @@ not
 
 一些用过的软件但主观关键明显不好用的记录，说不定下版会优化，所以仅供参考
 
-* [图吧工具箱](https://www.tbtool.cn) 中规中矩，功能挺强大
 * [Advanced IP Scanner](https://www.advanced-ip-scanner.com/cn) 免费下载网络扫描程序 但我不喜欢安装版
 * ——————— ฅ՞• •՞ฅ ———————
 * [Fantastical](https://apps.apple.com/cn/app/fantastical-calendar/id975937182)【mac】拥有和系统自带日历应用类似界面布局，但界面信息更加直观自然。软件支持苹果各个平台，除了可以与 iCloud / Google / Yahoo 日历无缝整合同步外，它还解决了系统自带日历 APP 功能的诸多不足
