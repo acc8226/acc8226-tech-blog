@@ -15,7 +15,7 @@ categories: 我的创作
 注：
 
 * 以下内容谨代表个人观点。软件上我优先考虑那些跨平台且好用的软件
-* 关于应该选择绿色版还是安装版：若无在他人电脑上的使用需要 或 特定版本不想升级 或 纯粹是绿色软件爱好者，否则默认推荐安装版
+* 选择绿色版还是安装版？默认推荐安装版，除非暂时在他人电脑上试用 或 纯粹是绿色软件爱好者
 * “官网收录”模块收录的各软件官网地址仅供参考
 
 ## 1 日常
@@ -29,9 +29,9 @@ categories: 我的创作
 
 #### 1.0.2 浏览器
 
-* 【win】【精品软件】[百分浏览器](https://www.centbrowser.cn) 鼠标悬停切换标签功能很好用 |【备用】 [360 极速浏览器X](https://browser.360.cn/ee/) 毕竟 IE 双核浏览器，且一些老网站只能用 IE 打开
-* 【mac】[猫眼浏览器](https://www.catsxp.com) 鼠标悬停切换标签功能很好用，建议关掉烦人的自动更新功能
-* 【linux】自带浏览器 或者【**linux 精品软件**】[360 安全浏览器](https://browser.360.net/gc/index.html)
+* 【**win 精品软件**】[百分浏览器](https://www.centbrowser.cn) 鼠标悬停切换标签功能很好用 |【备用】系统自带的微软 *Edge 浏览器*，因为保留了 IE 模式供老网站用
+* 【mac】[猫眼浏览器](https://www.catsxp.com) 同时提供了 windwos 版本，不过最重要的是带鼠标悬停，同时建议关掉烦人的自动更新功能
+* 【**linux 精品软件**】[360 安全浏览器](https://browser.360.net/gc/index.html) 主要带鼠标悬停
 
 我通常会搭配浏览器插件 Bitwarden 来实现密码自动填充。
 
@@ -45,8 +45,8 @@ categories: 我的创作
 #### 1.1.0【常用】压缩解压
 
 * 【win11】[PeaZip](https://peazip.github.io/index.html) 可添加智能解压到 win 11 右键上下文菜单 | [NanaZip](https://github.com/M2Team/NanaZip/releases) 界面简洁而现代化并包含智能解压
-* 【win7、8、10】【**windows 精品软件**】[Bandizip 6](https://www.iplaysoft.com/bandizip.html) 含自动解压（智能解压）且颜值和功能均在线，v6 是最后一个无广告版本。到 v7 版本不付费会偶尔弹窗
-* 【低于 win7】[7-Zip](https://mirrors.nju.edu.cn/7-zip/)
+* 【win7、8、10】【**win 精品软件**】[Bandizip 6](https://www.iplaysoft.com/bandizip.html) 含自动解压（智能解压）且颜值和功能均在线，v6 是最后一个无广告版本。到 v7 版本不付费会偶尔弹窗
+* 【低于 win7】[7-Zip](https://mirror.nju.edu.cn/github-release/ip7z/7zip/LatestRelease/)
 * 【mac】[PeaZip](https://peazip.github.io/index.html) 含智能解压，非首选，没有 windows 版好用
 * 【linux】使用系统自带解压功能即可，或者 [PeaZip](https://peazip.github.io/index.html)
 
@@ -91,7 +91,7 @@ categories: 我的创作
 
 #### 1.1.5 护眼
 
-* **windows 平台**【win mac】[f.lux](https://justgetflux.com) +【win 绿色版 自荐】[捷键](https://feipig.fun/jiejian) 包含了定时提醒
+* **windows 平台**【win mac】[f.lux](https://justgetflux.com)，可选搭配【win 绿色版 自荐】[捷键](https://feipig.fun/jiejian) 包含了定时提醒
 * **mac 平台**【mac win】[f.lux](https://justgetflux.com) +【mac】[一休](https://apps.apple.com/cn/app/%E4%B8%80%E4%BC%91-%E4%BC%91%E6%81%AF%E4%B8%80%E4%B8%8B/id6467176005) 用于定时提醒
 * **linux 平台** 系统自带夜览
 
@@ -109,7 +109,7 @@ categories: 我的创作
 #### 1.1.8 图像处理
 
 * 轻量级【win 绿色版】[Paint.NET](https://www.getpaint.net) 功能强大且有绿色版
-* 重量级【全平台 精品软件】GIMP [官网](https://www.gimp.org) | [国内 mirror](https://mirrors.aliyun.com/gimp/gimp/) PS 的替代品且免费
+* 重量级【**全平台 精品软件**】GIMP [官网](https://www.gimp.org) | [国内 mirror](https://mirrors.aliyun.com/gimp/gimp/) PS 的替代品且免费
 
 not 付费的 PS
 
@@ -214,7 +214,7 @@ mac 和 linux 一般选择本地自带即可
 1. lx-music-desktop [项目主页](https://github.com/lyswhut/lx-music-desktop) | [发行版](https://github.com/lyswhut/lx-music-desktop/releases) 需自寻音乐源
 1. 听书用[喜马拉雅](https://www.ximalaya.com)
 
-本地播放：【win 绿色版】[MusicPlayer2](https://github.com/zhongyang219/MusicPlayer2)
+本地播放：【win 绿色版】[MusicPlayer2](https://github.com/zhongyang219/MusicPlayer2) 一款本地音乐播放软件，旨在为用户提供最佳的本地音乐播放体验。它支持歌词显示、歌词卡拉OK 样式显示、歌词在线下载
 
 **linux 平台**
 
@@ -228,7 +228,7 @@ mac 和 linux 一般选择本地自带即可
 
 **windows 平台**
 
-1. 本地播放：【全平台 绿色版】[VLC Media Player（VLC）](https://www.videolan.org) 支持 [Chocolatey](https://community.chocolatey.org/packages/vlc#install) 源 |【win 精品软件 安装版】 [PotPlayer](https://potplayer.tv/?lang=zh_CN) [绿色版](https://potplayer.org) 再搭配 HEVC 解码器 [LAVFilters](https://github.com/Nevcairiel/LAVFilters/releases) 
+1. 本地播放：【全平台 绿色版】[VLC Media Player（VLC）](https://www.videolan.org) 支持 [Chocolatey](https://community.chocolatey.org/packages/vlc#install) 源 |【**win 精品软件**】 [PotPlayer](https://potplayer.tv/?lang=zh_CN) [绿色版](https://potplayer.org) 再搭配 HEVC 解码器 [LAVFilters](https://github.com/Nevcairiel/LAVFilters/releases) 
 1. 在线平台：【win】[荐片播放器](https://www.jianpian6.co) 可观看最新电影 +【win mac】[哔哩哔哩客户端](https://app.bilibili.com)
 1. 电视直播 [VLC Media Player](https://www.videolan.org) 和 [PotPlayer](https://potplayer.tv/?lang=zh_CN) 都能打
 1. 视频刮削+播放器 [网易爆米花🍿](https://bmh.163.com/) 用来看片
@@ -465,7 +465,7 @@ or【win】[GRC's | DNS Nameserver Performance Benchmark](https://www.grc.com/
 
 ### 2.8 markdown 编辑
 
-1. 【全平台 精品软件】[Typora](https://typoraio.cn) 功能强大，容易上手，但收费，有条件可支持下
+1. 【**全平台 精品软件**】[Typora](https://typoraio.cn) 功能强大，容易上手，但收费，有条件可支持下
 1. 【全平台】[obsidian](https://obsidian.md) 功能强大，玩法多
 
 备用【全平台】MarkText [官网](https://www.marktext.cc) | [GitHub 源](https://github.com/marktext/marktext/releases) 轻度使用的 markdown 编辑器
@@ -600,7 +600,7 @@ not
 
 ### 2.26 日历
 
-notion calendar
+notion calendar 国内用户用得不多
 
 not 【mac】fantastical 免费版限制太多
 
@@ -693,7 +693,7 @@ not【win】[Seer](http://www.1218.io/seer.html) 收费就算了
 
 #### 2.40.2 EarTrumpet【win10 必备】
 
-【win】[EarTrumpet](https://eartrumpet.app) 一款超赞的音量控制应用
+【win】[EarTrumpet](https://eartrumpet.app) 一款音量控制应用
 
 #### 2.40.3 windows 系统优化
 
@@ -732,9 +732,9 @@ not【win】[Seer](http://www.1218.io/seer.html) 收费就算了
 
 [file-transfer-go](https://github.com/MatrixSeven/file-transfer-go)
 
-备用 【全平台】[LocalSend](https://localsend.org/download) 局域网文件传输 
+备用【全平台】[LocalSend](https://localsend.org/download) 局域网文件传输 
 
-## 3 专3业
+## 3 专业
 
 ### 3.1 虚拟机
 
@@ -774,7 +774,7 @@ not [乐播投屏](https://www.lebo.cn) 太臃肿且要**注意远程屏幕共�
 
 ### 3.6 格式转换
 
-* 【精品 win 安装版】[格式工厂](http://www.pcgeshi.com/index.html) 全功能转换，不得不说还得是 windows 版的老牌和强大，实属装机必备 | [格式工厂 mac 版](https://apps.apple.com/cn/app/%E6%A0%BC%E5%BC%8F%E5%B7%A5%E5%8E%82/id6443540458?mt=12)
+* 【**win 精品软件**】[格式工厂](http://www.pcgeshi.com/index.html) 全功能转换，不得不说还得是 windows 版的老牌和强大，实属装机必备 | [格式工厂 mac 版](https://apps.apple.com/cn/app/%E6%A0%BC%E5%BC%8F%E5%B7%A5%E5%8E%82/id6443540458?mt=12)
 * 曾经限免 [VideoProc Converter AI](https://www.videoproc.com/zh/video-converting-software/?ttpath=site-header-zh)
 * 【全平台】[HandBrake](https://handbrake.fr) 视频转换
 

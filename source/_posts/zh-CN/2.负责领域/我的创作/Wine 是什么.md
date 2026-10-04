@@ -1,6 +1,5 @@
 ---
 title: Wine 是什么
-permalink: mydev/
 date: 2026-10-04 09:33:08
 updated: 2026-10-04 09:33:08
 categories: 我的创作
@@ -82,9 +81,9 @@ winetricks --version       # 查看版本
 
 ### Bug提交说明
 
-1. 安装微软原生dll：**不要提交bug到WineHQ**
-2. 仅gecko/mono/fakeie6：可提交bug，必须在报告里写明
-3. winetricks自身bug：提交到其GitHub issues
+1. 安装微软原生 dll：**不要提交 bug 到 WineHQ**
+2. 仅 gecko/mono/fakeie6：可提交 bug，必须在报告里写明
+3. winetricks 自身 bug：提交到其 GitHub issues
 
 ### 核心要点
 
