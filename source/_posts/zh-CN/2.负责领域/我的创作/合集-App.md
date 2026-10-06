@@ -816,7 +816,7 @@ not
 1. 飞猪 [app](https://sj.qq.com/appdetail/com.taobao.trip) 不怎么用，感觉阿里没做起来
 1. [马蜂窝](https://sj.qq.com/appdetail/com.mfw.roadbook) 包含懒人玩法攻略
 
-记录：长沙金井小区老板 120 元的房真黑，不要考试当天才订房。我应该提前和他说我第二天早起会退房的，但主要损失还是被无良商户、无良信贷中介、被诈
+记录：长沙金井小区老板 120 元的房真黑，不要考试当天才订房
 
 备用 [去哪儿旅行](https://sj.qq.com/appdetail/com.Qunar)
 

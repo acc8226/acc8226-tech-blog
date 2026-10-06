@@ -2,7 +2,7 @@
 title: 合集-PC开发用软件
 permalink: mydev/
 date: 2020-06-03 00:22:53
-updated: 2025-10-09 21:11:45
+updated: 2026-10-06 19:52:34
 categories: 我的创作
 ---
 
@@ -388,7 +388,7 @@ not 【gui mac】snailSVN 偶有 bug
 
 ## 15 ssh & ftp 文件传输
 
-【全平台 精品软件】[Termius](https://www.termius.com)
+【全平台 精品软件】[WindTerm](https://github.com/kingToolbox/WindTerm/releases)
 
 and 【Windows 精品软件 免费 便携版】WinSCP [官网](https://winscp.net/eng/index.php) | [下载](https://winscp.net/eng/downloads.php) - Free SFTP and FTP client
 
@@ -411,14 +411,6 @@ not
 * 【web】[sshwifty](https://github.com/nirui/sshwifty/releases) 功能不太全，且目前不太好用
 * 【win mac】[XTerminal](http://xterminal.cn) 颜值不够高
 * 【win】[VanDyke SecureCRT](https://www.vandyke.com/products/securecrt/index.html) 卡死了且界面老旧还付费
-
-**mac 平台**
-
-依旧 [Termius](https://www.termius.com) 免费订阅模式 + ZenTermLite 用于 sz 和 rz
-
-**linux 平台**
-
-依旧 [Termius](https://www.termius.com) 免费订阅模式
 
 ### xshell 设置
 

@@ -2,7 +2,7 @@
 title: 合集-PC日常用软件
 permalink: mypc/
 date: 2023-03-22 21:02:00
-updated: 2026-10-04 13:46:53
+updated: 2026-10-06 19:52:49
 categories: 我的创作
 ---
 
@@ -15,7 +15,7 @@ categories: 我的创作
 注：
 
 * 以下内容谨代表个人观点。软件上我优先考虑那些跨平台且好用的软件
-* 选择绿色版还是安装版？默认推荐安装版，除非暂时在他人电脑上试用 或 纯粹是绿色软件爱好者
+* 选择绿色版还是安装版？默认推荐安装版，除非临时在他人电脑上使用 或 纯粹是绿色软件爱好者
 * “官网收录”模块收录的各软件官网地址仅供参考
 
 ## 1 日常
@@ -52,7 +52,7 @@ categories: 我的创作
 
 #### 1.1.1 截图
 
-* 【win 绿色版 & mac】[PixPin](https://pixpinapp.com) 不付费也能使用 OCR 和长截图功能 ｜ [Snipaste](https://zh.snipaste.com/)
+* 【win 绿色版 mac】[PixPin](https://pixpinapp.com) 不付费也能使用 OCR 和长截图功能 ｜ [Snipaste](https://zh.snipaste.com/)
 * liunx 系统自带 或 [Snipaste](https://zh.snipaste.com)、火焰截图
 
 #### 1.1.2 下载
@@ -81,7 +81,7 @@ categories: 我的创作
 
 * 【**win 精品软件**】[WGestures 1 代](https://dl-x-yingdev-x-com.img.addlink.cn/Content/Projects/WGestures/Release/1.8.5.0/Install%20WGestures%201.8.5.0.zip) 免费 | [WGestures 2](https://store.lizhi.io/site/products/id/523?cid=46jjayiu) 付费
 * 【mac】[BetterAndBetter](https://www.better365.cn/bab2.html) 不仅仅是鼠标手势
-* 【linux】KDE 桌面推荐内置的鼠标手势就够用，否则依旧老牌 apt install Easystroke【**linux 精品软件**】适用于 x11。
+* 【linux】KDE 桌面推荐内置的鼠标手势就够用，否则依旧老牌 apt install Easystroke【**linux 精品软件**】仅适用于 x11。
 
 #### 1.1.4 键鼠增强
 
@@ -132,7 +132,7 @@ not 付费的 PS
 一般品牌机都会赠送[微软 Office](https://www.microsoftstore.com.cn/software/office) | 重新安装[已购买 Office](https://account.microsoft.com/services/)，否则一般会用【全平台 [WPS](https://www.wps.cn) 需登录才能解锁编辑太恶心。好在我找到了 [WPS 11.1 旧版本](https://www.123pan.com/s/aDE9-hCCyh.html)
 
 **linux 平台**
-默认 x86 使用[WPS 个人版](https://linux.wps.cn/)，arm 则必须[wps for linux arm](https://365.wps.cn/download365)
+x86 平台请使用[WPS 个人版](https://linux.wps.cn/)，arm 则必须[wps for linux arm](https://365.wps.cn/download365)
 
 备用：
 
@@ -190,9 +190,9 @@ not 付费的 PS
 
 not
 
+* Freeplane 不喜欢
 * GitMind 功能不够强大，貌似不能从 md 中导入
 * MindManager 收费软件我都不喜欢
-* Freeplane 不喜欢
 * Scapple 收费就算了
 
 #### 1.2.7 记事本增强
@@ -728,11 +728,15 @@ not【win】[Seer](http://www.1218.io/seer.html) 收费就算了
 1. win Vista/7/8 缺失的非激活的窗口下使用滚轮滚动
 1. 反转鼠标滚动方向，类似苹果的自然滚动
 
-### 2.41 局域网文件快传
+### 2.41 局域网文件传输
 
 [file-transfer-go](https://github.com/MatrixSeven/file-transfer-go)
 
-备用【全平台】[LocalSend](https://localsend.org/download) 局域网文件传输 
+备用【全平台】[LocalSend](https://localsend.org/download) 局域网文件传输
+
+### 2.42 系统美化
+
+桌面动态壁纸 [Lively Wallpaper - Microsoft Store 应用程序](https://apps.microsoft.com/store/detail/lively-wallpaper)
 
 ## 3 专业
 
@@ -836,6 +840,9 @@ not
 
 ## 6 Win XP 怀旧专题
 
+<details>
+<summary>点击查看</summary>
+
 1. [补丁合集](https://www.123pan.com/s/aDE9-hCCyh.html) 包含使 XP 系统支持 4G 以上内存补丁和消除安全证书过期的补丁
 1. [360 安全卫士极速版](https://wsdl.360safe.com/setupbeta_jisu.exe)
 1. [360 安全浏览器 13](https://down.360safe.com/se/360se13.1.6410.0.exe)
@@ -848,7 +855,12 @@ not
 
 [天翼云盘-资源分享](https://cloud.189.cn/t/bmAfU33iIFjq)（访问码：5bzb）
 
+</details>
+
 ## 7 Win 7 怀旧专题
+
+<details>
+<summary>点击查看</summary>
 
 1. [补丁合集](https://www.123pan.com/s/aDE9-eLCyh.html) 包含使 Win 7 支持 Nvme 硬盘的补丁等必备补丁
 1. [360 安全卫士极速版](https://wsdl.360safe.com/setupbeta_jisu.exe)
@@ -863,6 +875,8 @@ not
 
 [天翼云盘-资源分享](https://cloud.189.cn/t/vIJBZrqmeYvm)（访问码：qt6b）
 
+</details>
+
 ## 8 软件推荐网站
 
 [软件推荐 - 入门向导](https://getquicker.net/Guides/Guide?id=9260b229-c617-42f5-378b-08da75b5e519&step=4a095264-4550-4d66-a410-08da7756e1a7)
@@ -873,17 +887,15 @@ not
 
 一些用过的软件但主观关键明显不好用的记录，说不定下版会优化，所以仅供参考
 
-* [Advanced IP Scanner](https://www.advanced-ip-scanner.com/cn) 免费下载网络扫描程序 但我不喜欢安装版
+* [Advanced IP Scanner](https://www.advanced-ip-scanner.com/cn) 免费下载网络扫描程序，但我不喜欢安装版
 * ——————— ฅ՞• •՞ฅ ———————
 * [Fantastical](https://apps.apple.com/cn/app/fantastical-calendar/id975937182)【mac】拥有和系统自带日历应用类似界面布局，但界面信息更加直观自然。软件支持苹果各个平台，除了可以与 iCloud / Google / Yahoo 日历无缝整合同步外，它还解决了系统自带日历 APP 功能的诸多不足
-* [Lively Wallpaper - Microsoft Store 应用程序](https://apps.microsoft.com/store/detail/lively-wallpaper) 占用 CPU 资源太大
 * [pear-rec](https://027xiguapi.github.io/pear-rec)【全平台】录屏软件 至少我在 windows 上体验不佳
-* [flowlauncher](https://www.flowlauncher.com/docs) 作为一款启动器 有点儿卡
+* [flowlauncher](https://www.flowlauncher.com/docs) 作为一款启动器，有点卡
+* [TDM Fast](https://tdmfast.com/) 一款专为 Windows 用户打造的高速多线程下载器。内置浏览器嗅探，一键下载 YouTube、X、B站 等视频，也能处理 HuggingFace 上百 GB 的大模型
 
 ## 10 回收站
 
-* 【浏览器插件】CSDN 猿如意 不让人满意
-* ——————— ฅ՞• •՞ฅ ———————
 * 【win】芒果壁纸 时间长了会白屏
 * 【win】录猎不好用
 * 【win】芒果加速 啥玩意，体验2小时，推广
@@ -903,7 +915,7 @@ not
 * Dawn Launcher 不好用
 * EncryptoforWin 厂商专注 mac 已经不更新了
 * MQTT.FX 很久没更新了，淘汰
-* OfficeBox 官方绿色版 颜值太低且功能不强大，差评
+* 【win】OfficeBox 官方绿色版 颜值太低且功能不强大，差评
 * PDF Shaper Professional v13.3 只有些页面功能而已
 * Wox-1.4.1196 已经不太维护的启动器，界面也一般
 * oblivion-desktop 魔法没有一次连成功的

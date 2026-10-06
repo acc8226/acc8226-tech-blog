@@ -5,7 +5,7 @@ updated: 2026-10-04 09:33:08
 categories: 我的创作
 ---
 
-[Wine](https://www.winehq.org/) （“Wine Is Not an Emulator” 的首字母缩写）是一个能够在多种 POSIX-compliant 操作系统（诸如 Linux，macOS 及 BSD 等）上运行 Windows 应用的兼容层。Wine 不是像虚拟机或者模拟器一样模仿内部的 Windows 逻辑，而是將 Windows API 调用翻译成为动态的 POSIX 调用，免除了性能和其他一些行为的内存占用，让你能够干净地集合 Windows 应用到你的桌面。
+[Wine](https://www.winehq.org/) （“Wine Is Not an Emulator” 的首字母缩写）是一个能够在多种 POSIX-compliant 操作系统（诸如 Linux，macOS 及 BSD 等）上运行 Windows 应用的兼容层。Wine 不是像虚拟机或者模拟器一样模仿内部的 Windows 逻辑，而是將 Windows API 调用翻译成为动态的 POSIX 调用，免除了性能和其他一些行为的内存占用，让你能够干净地集合 Windows 应用到你的桌面。<!-- more -->
 
 **热度排名（来自 Wine Wiki 这份列表里的工具）**
 
@@ -17,7 +17,7 @@ categories: 我的创作
 
 ### 简介
 
-[winetricks](https://github.com/Winetricks/winetricks) 是辅助脚本，用于下载安装 Windows 可再分发运行库、字体、DLL补丁，可替换Wine内置组件。
+[winetricks](https://github.com/Winetricks/winetricks) 是辅助脚本，用于下载安装 Windows 可再分发运行库、字体、DLL 补丁，可替换 Wine 内置组件。
 - ⚠️ 使用winetricks安装原生微软DLL后，**WineHQ 不再受理 bug 上报**；仅 gecko/mono/fakeie6 例外，提交bug时需要注明。
 - 建议搭配最新版Wine，旧版Wine部分组件会出错。
 
@@ -76,7 +76,7 @@ winetricks --version       # 查看版本
 ### 卸载说明
 
 ✅ 推荐方式：直接销毁整个Wine前缀重建
-❌ **winetricks无法单独卸载单个DLL/组件**
+❌ **winetricks 无法单独卸载单个 DLL/组件**
 > Wine 自带 uninstaller 仅识别规范 Windows 安装程序，对 winetricks 安装项不一定生效。
 
 ### Bug提交说明
@@ -88,7 +88,7 @@ winetricks --version       # 查看版本
 ### 核心要点
 
 1. winetricks ≠ Wine本体，只是辅助脚本
-2. 多软件建议**每个软件单独一个WINEPREFIX**，避免组件冲突
+2. 多软件建议**每个软件单独一个 WINEPREFIX**，避免组件冲突
 3. 环境变量 `WINEPREFIX` 控制目标容器；`WINE` 指定wine程序路径
 4. 环境损坏优先重建前缀，不尝试单独删 dll 修复
 
