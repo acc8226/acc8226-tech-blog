@@ -58,24 +58,20 @@ categories: 我的创作
 #### 1.1.2 下载
 
 * **windows 平台**
-  * [Motrix Next](https://motrix-next.pages.dev) 颜值高，并支持下载 HTTP、FTP、BT、磁力链接。Github 资源良好支持
+  * [Motrix Next](https://motrix-next.pages.dev) 颜值高，并支持下载 HTTP、FTP、BT、磁力链接。Github 资源良好支持 | [Motrix Turbo v2](https://github.com/agalwood/Motrix)
+  * [Free Download Manager（FDM）](https://www.freedownloadmanager.org/zh/download.htm)，简称 FDM，是一款开源的全能下载器。支持 FTP、BitTorrent 种子，磁力链接
+  * [迅雷](https://www.xunlei.com/) 对一些冷门资源有奇效
+  * IDM 经久不衰，付费软件而已
+  * [Neat Download Manager（NDM）](https://www.neatdownloadmanager.com/index.php/en) 体积小功能强，不支持 BT 磁力。[搭配 crx 插件](https://www.crxsoso.com/search?keyword=NeatDownloadManager%20&store=chrome) 支持在线网页视频下载
   * 哔哩哔哩专用下载器：【win】[DownKyi](https://www.colostar.cn/links/13486.html)（哔哩下载姬）
 * **mac 平台**
   1. [Motrix Next](https://motrix-next.pages.dev/) | [下载页](https://motrix.app/zh-CN/download)
   1. [Neat Download Manager](https://www.neatdownloadmanager.com/index.php/en) 
   1. mac 版迅雷其实也不错，不过必须去官网下载才是完整版
 * **linux 平台**
-  * 【全平台】[Motrix Next](https://motrix-next.pages.dev)
+  * 【全平台】[Motrix Next](https://motrix-next.pages.dev) | [Motrix Turbo v2](https://github.com/agalwood/Motrix)
   * 【linux win】[XDM](https://github.com/subhra74/xdm/releases) 可以认为是 linux 环境下的 idm
   * 老版本迅雷 无广告+强大的资源抓取
-
-备用
-
-* **windows 平台**
-  * [迅雷 ](https://www.xunlei.com/) 对一些冷门资源有奇效
-  * IDM 经久不衰，付费软件而已。
-  * [Free Download Manager（FDM）](https://www.freedownloadmanager.org/zh/download.htm)，简称 FDM，是一款开源的全能下载器。支持 FTP、BitTorrent 种子，磁力链接
-  * [Neat Download Manager（NDM）](https://www.neatdownloadmanager.com/index.php/en) 体积小功能强，不支持 BT 磁力。[搭配 crx 插件](https://www.crxsoso.com/search?keyword=NeatDownloadManager%20&store=chrome) 支持在线网页视频下载
 
 #### 1.1.3 【常用】鼠标手势
 
@@ -218,7 +214,7 @@ mac 和 linux 一般选择本地自带即可
 
 **linux 平台**
 
-本地播放：平时我也基本不看歌词。比如自带的 kde 组件 [elisa](https://apps.kde.org/zh-cn/elisa)
+本地播放：[深度音乐](https://www.deepin.org/zh/original/deepin-music/) 可以关联本地同名歌词
 
 在线播放：[lx-music 洛雪音乐桌面版](https://github.com/lyswhut/lx-music-desktop) | [QQ 音乐](https://y.qq.com/download/index.html) | [YesPlayMusic](https://github.com/qier222/YesPlayMusic) 高颜值的第三方网易云播放器 | [AlgerMusicPlayer](https://donate.alger.fun/download)
 
@@ -286,9 +282,9 @@ not【win linux】[阿里旺旺](https://wangwang.taobao.com) 不好用
 
 ### 1.8 启动器
 
-**windows 平台**【win 自荐】[捷键](https://blog.feipig.fun/jiejian) 自研，已包含了该功能，按 alt + 空格可呼出
+**windows 平台** 【win mac】[Raycast](https://www.raycast.com) | [uTools](https://u.tools)
 
-**mac 平台**【mac】[Raycast](https://www.raycast.com)
+**mac 平台** 同样是 [Raycast](https://www.raycast.com)
 
 not
 
@@ -297,9 +293,8 @@ not
 
 **linux 平台**
 
-* linux 系统自带
-* 【全平台】[utools](https://u.tools) 算是不错的选择了，但目前不支持 linux for arm
-* [Ulauncher](https://ulauncher.io/) — Application launcher for Linux 🐧
+* 【全平台】[uTools](https://u.tools) 算是不错的选择了，但目前不支持 linux for arm
+* [Ulauncher](https://ulauncher.io) — Application launcher for Linux 🐧
 
 ### 1.9 阅读类
 
@@ -736,7 +731,8 @@ not【win】[Seer](http://www.1218.io/seer.html) 收费就算了
 
 ### 2.42 系统美化
 
-桌面动态壁纸 [Lively Wallpaper - Microsoft Store 应用程序](https://apps.microsoft.com/store/detail/lively-wallpaper)
+1. [Windhawk](https://windhawk.net/) Windows 系统自定义增强工具，可实现任务栏定制、应用功能补全等多种需求
+1. 桌面动态壁纸 [Lively Wallpaper - Microsoft Store 应用程序](https://apps.microsoft.com/store/detail/lively-wallpaper)
 
 ## 3 专业
 
@@ -830,7 +826,7 @@ not
 
 ### 4.3 红白机模拟器
 
-[小鸡模拟器 windows 经典版](https://dl.xiaoji001.com/download/pc/xiaoji_0.0.30.exe) | [VirtuaNES](https://www.emulator-zone.com/doc.php/nes/virtuanes.html)
+[小鸡模拟器](https://www.xiaoji001.com) 最新版PC/安卓/iOS/TV版 - 经典游戏模拟器 | [VirtuaNES](https://www.emulator-zone.com/doc.php/nes/virtuanes.html)
 
 ## 5 一些优秀的应用厂商
 
