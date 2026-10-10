@@ -2,7 +2,7 @@
 title: 合集-PC日常用软件
 permalink: mypc/
 date: 2023-03-22 21:02:00
-updated: 2026-10-06 19:52:49
+updated: 2026-10-10 23:09:15
 categories: 我的创作
 ---
 
@@ -15,8 +15,9 @@ categories: 我的创作
 注：
 
 * 以下内容谨代表个人观点。软件上我优先考虑那些跨平台且好用的软件
-* 选择绿色版还是安装版？默认推荐安装版，除非临时在他人电脑上使用 或 纯粹是绿色软件爱好者
+* 选择绿色版还是安装版？默认推荐安装版，除非临时在他人电脑上使用，或纯粹是绿色软件爱好者
 * “官网收录”模块收录的各软件官网地址仅供参考
+* 更加推崇开源软件，而非商业闭源软件
 
 ## 1 日常
 
@@ -25,7 +26,8 @@ categories: 我的创作
 #### 1.0.1 安全类
 
 * 【win】自带电脑管家（例如微软电脑管家 | [360 安全卫士极速版](https://sfdl.360safe.com/setupbeta_jisu.exe) | [火绒安全软件](https://www.huorong.cn/person)
-* 【mac】[腾讯柠檬清理](https://lemon.qq.com) 或 [360 安全卫士 Mac 版](https://www.360.cn/mac/index.html)<!-- more -->
+* 【mac】[腾讯柠檬清理](https://lemon.qq.com) 或 [360 安全卫士 Mac 版](https://www.360.cn/mac/index.html)
+<!-- more -->
 
 #### 1.0.2 浏览器
 
@@ -33,12 +35,12 @@ categories: 我的创作
 * 【mac】[猫眼浏览器](https://www.catsxp.com) 同时提供了 windwos 版本，不过最重要的是带鼠标悬停，同时建议关掉烦人的自动更新功能
 * 【**linux 精品软件**】[360 安全浏览器](https://browser.360.net/gc/index.html) 主要带鼠标悬停
 
-我通常会搭配浏览器插件 Bitwarden 来实现密码自动填充。
+我通常会搭配浏览器插件 [Bitwarden](https://bitwarden.com) 来实现密码自动填充
 
 #### 1.0.3 输入法
 
-* 【win & mac】系统自带输入法 | [豆包输入法](https://shurufa.doubao.com/pc) - 强在语音输入 | [微信输入法](https://z.weixin.qq.com) - 强在跨设备粘贴 | [RIME 输入法](https://rime.im)
-* 【linux】自带输入法 或【**linux 精品软件**】[搜狗输入法](https://shurufa.sogou.com/linux) | [RIME 输入法引擎](https://rime.im) （iBus/Fcitx5）+ 搭配 [oh-my-rime 薄荷输入法](https://www.mintimate.cc/zh/)
+* 【win & mac】系统自带输入法 | [RIME 小狼毫](https://rime.im) | [豆包输入法](https://shurufa.doubao.com/pc) 强在语音输入 | [微信输入法](https://z.weixin.qq.com) 强在跨设备粘贴 
+* 【linux】自带输入法 | [RIME 中州韵](https://rime.im) （iBus/Fcitx5）+ 搭配 [oh-my-rime 薄荷输入法](https://www.mintimate.cc/zh/) | 【**linux 精品软件**】[搜狗输入法](https://shurufa.sogou.com/linux)
 
 ### 1.1 工具类
  
@@ -52,8 +54,9 @@ categories: 我的创作
 
 #### 1.1.1 截图
 
-* 【win 绿色版 mac】[PixPin](https://pixpinapp.com) 不付费也能使用 OCR 和长截图功能 ｜ [Snipaste](https://zh.snipaste.com/)
-* liunx 系统自带 或 [Snipaste](https://zh.snipaste.com)、火焰截图
+* 【win 绿色版】[PixPin](https://pixpinapp.com) 不付费也能使用 OCR 和长截图功能 ｜ 备用 [Snipaste](https://zh.snipaste.com)
+* 【mac】[PixPin](https://pixpinapp.com) 不付费也能使用 OCR 和长截图功能
+* liunx 系统自带 或 [Snipaste](https://zh.snipaste.com) | Flameshot(火焰截图) 免费开源的跨平台截图工具，支持 arm 架构
 
 #### 1.1.2 下载
 
@@ -61,7 +64,7 @@ categories: 我的创作
   * [Motrix Next](https://motrix-next.pages.dev) 颜值高，并支持下载 HTTP、FTP、BT、磁力链接。Github 资源良好支持 | [Motrix Turbo v2](https://github.com/agalwood/Motrix)
   * [Free Download Manager（FDM）](https://www.freedownloadmanager.org/zh/download.htm)，简称 FDM，是一款开源的全能下载器。支持 FTP、BitTorrent 种子，磁力链接
   * [迅雷](https://www.xunlei.com/) 对一些冷门资源有奇效
-  * IDM 经久不衰，付费软件而已
+  * [Internet Download Manager (IDM) ](https://www.internetdownloadmanager.com) 经久不衰，付费软件而已
   * [Neat Download Manager（NDM）](https://www.neatdownloadmanager.com/index.php/en) 体积小功能强，不支持 BT 磁力。[搭配 crx 插件](https://www.crxsoso.com/search?keyword=NeatDownloadManager%20&store=chrome) 支持在线网页视频下载
   * 哔哩哔哩专用下载器：【win】[DownKyi](https://www.colostar.cn/links/13486.html)（哔哩下载姬）
 * **mac 平台**
@@ -93,8 +96,8 @@ categories: 我的创作
 
 #### 1.1.6 网盘
 
-* **windows 和 mac 平台** [天翼云盘](https://cloud.189.cn) 客户端
-* **linux 平台** [天翼云盘](https://cloud.189.cn) 只有网页版能用
+* **windows 和 mac 平台** [天翼云盘](https://cloud.189.cn)
+* **linux 平台** [天翼云盘](https://cloud.189.cn) 只有网页版能用 | [阿里云盘](https://www.aliyundrive.com)
 
 #### 1.1.7 看图
 
@@ -128,11 +131,11 @@ not 付费的 PS
 一般品牌机都会赠送[微软 Office](https://www.microsoftstore.com.cn/software/office) | 重新安装[已购买 Office](https://account.microsoft.com/services/)，否则一般会用【全平台 [WPS](https://www.wps.cn) 需登录才能解锁编辑太恶心。好在我找到了 [WPS 11.1 旧版本](https://www.123pan.com/s/aDE9-hCCyh.html)
 
 **linux 平台**
-x86 平台请使用[WPS 个人版](https://linux.wps.cn/)，arm 则必须[wps for linux arm](https://365.wps.cn/download365)
+x86 平台请使用[WPS 个人版](https://linux.wps.cn/)，arm 则必须[WPS for linux arm](https://365.wps.cn/download365)
 
 备用：
 
-* 【全平台】[LibreOffice](https://zh-cn.libreoffice.org/download/libreoffice) & [tuna 源](https://mirrors-i.tuna.tsinghua.edu.cn/libreoffice/libreoffice/stable) & [校园网联合镜像站](https://mirrors.cernet.edu.cn/app/LibreOffice)
+* 【全平台】[LibreOffice](https://zh-cn.libreoffice.org/download/libreoffice) & [tuna 源](https://mirrors-i.tuna.tsinghua.edu.cn/libreoffice/libreoffice/stable) & [校园网联合镜像站](https://mirrors.cernet.edu.cn/app/LibreOffice) | [ONLYOFFICE](https://www.onlyoffice.com) Secure Online Office
 * **Web 平台** 暂推荐 [金山文档](https://www.kdocs.cn) 适合文档分享。但千万记得加水印和设置只读访问权限，防止资料泄漏
 * 可以安装 [WinApps for linux](https://nowsci.com/winapps) | [github 项目地址](https://github.com/Fmstrat/winapps)
 
@@ -143,8 +146,8 @@ x86 平台请使用[WPS 个人版](https://linux.wps.cn/)，arm 则必须[wps fo
 **windows 平台**
 
 * 阅读器 【win 绿色版】[SumatraPDF](https://www.sumatrapdfreader.org) 小巧却功能强大的 PDF 阅读器，同时支持 ePub, MOBI, CHM, XPS, DjVu, CBZ, CBR 格式
-* 编辑器 【win】[PDFgear](https://www.pdfgear.com/download)
-* PDF 标注做笔记 [BookxNote](http://www.bookxnote.com)
+* 编辑器 【win】[PDFgear](https://www.pdfgear.com/download) 阅读、编辑、转换、合并和跨设备签署 PDF 文件，免费且无需注册。
+* PDF 标注做笔记 [BookxNote](http://www.bookxnote.com) 笔记整理
 
 注：如果觉得 SumatraPDF 太过精简，可考虑 WPS 自带的 pdf 组件。否则可额外下载 【win】[WPS PDF 独立版](https://www.wps.cn/product/kingsoftpdf)
 
@@ -168,7 +171,7 @@ x86 平台请使用[WPS 个人版](https://linux.wps.cn/)，arm 则必须[wps fo
 
 #### 1.2.5 办公通讯
 
-防诈骗！不轻易共享屏幕！
+**防诈骗！不轻易共享屏幕！**
 
 * 【全平台】【[mac 版](https://apps.apple.com/cn/app/%E9%A3%9E%E4%B9%A6-%E5%85%88%E8%BF%9B%E5%9B%A2%E9%98%9F-%E5%85%88%E7%94%A8%E9%A3%9E%E4%B9%A6/id1551632588?mt=12)】[飞书](https://www.feishu.cn) 先进企业协作与管理平台
 * 【全平台】【[mac 版](https://apps.apple.com/cn/app/%E9%92%89%E9%92%89-%E8%AE%A9%E8%BF%9B%E6%AD%A5%E5%8F%91%E7%94%9F/id1435447041?mt=12)】[钉钉](https://page.dingtalk.com/wow/z/dingtalk/simple/ddhomedownload#) 个人版不好用，有点卡
@@ -197,7 +200,7 @@ not
 
 在线：有道云笔记、印象笔记、华为云笔记、小米云笔记 按需选择
 
-本地：win [Notepad3](https://www.rizonesoft.com/downloads/notepad3/) 颜值高 | [Notepad--](https://gitee.com/cxasm/notepad--) 是一款国产跨平台轻量级文本编辑器，开源免费、无广告、无功能限制
+本地：win [Notepad3](https://www.rizonesoft.com/downloads/notepad3) 颜值高 | [Notepad--](https://gitee.com/cxasm/notepad--) 是一款国产跨平台轻量级文本编辑器，开源免费、无广告、无功能限制
 mac 和 linux 一般选择本地自带即可
 
 ### 1.3 音频类
@@ -214,7 +217,7 @@ mac 和 linux 一般选择本地自带即可
 
 **linux 平台**
 
-本地播放：[深度音乐](https://www.deepin.org/zh/original/deepin-music/) 可以关联本地同名歌词
+本地播放：[深度音乐](https://www.deepin.org/zh/original/deepin-music/) 可关联本地同名歌词
 
 在线播放：[lx-music 洛雪音乐桌面版](https://github.com/lyswhut/lx-music-desktop) | [QQ 音乐](https://y.qq.com/download/index.html) | [YesPlayMusic](https://github.com/qier222/YesPlayMusic) 高颜值的第三方网易云播放器 | [AlgerMusicPlayer](https://donate.alger.fun/download)
 
@@ -264,7 +267,7 @@ not【win linux】[阿里旺旺](https://wangwang.taobao.com) 不好用
 **RDP 远程**
 
 * windows 平台首推 xshell [校园免费版](https://www.xshell.com/zh/free-for-home-school)，其次是 MobaXterm
-* linux 则为 Remmina
+* linux 则为 [Remmina](https://www.remmina.org) remote desktop client
 
 **VNC 远程** - VNC Viewer
 
@@ -804,11 +807,13 @@ not [乐播投屏](https://www.lebo.cn) 太臃肿且要**注意远程屏幕共�
 
 【全平台】[FFmpeg](https://ffmpeg.org) 用于录制、转换和流式传输音频和视频
 
-### 3.10 游戏串流
+### 3.10 流程图绘制
 
-[Sunshine | LizardByte](https://app.lizardbyte.dev/Sunshine/?lng=zh-CN)  是 Moonlight 的自托管游戏串流服务端
+【全平台】[draw.io](https://www.drawio.com) 是一款流程图、结构图与电路图绘制工具，内置多种的导图模式可供选择，可以轻松的进行流程图绘制操作
 
-可搭配 [MOONLIGHT](https://moonlight-stream.org) 开源游戏串流客户端
+### 3.11 游戏串流
+
+[Sunshine | LizardByte](https://app.lizardbyte.dev/Sunshine/?lng=zh-CN)  是 Moonlight 的自托管游戏串流服务端，可搭配 [MOONLIGHT](https://moonlight-stream.org) 开源游戏串流客户端
 
 ## 4 游戏
 
@@ -818,7 +823,8 @@ not [乐播投屏](https://www.lebo.cn) 太臃肿且要**注意远程屏幕共�
 
 ### 4.2 加速器
 
-【win mac】[雷神网游加速器](https://www.leigod.com) 搞活动是 139 元 5200 小时
+* [瓦特工具箱](https://steampp.net/)(Steam++官网) - Watt Toolkit 一个开源跨平台的多功能 Steam 工具箱
+* 【win mac】[雷神加速器](https://www.leigod.com) 专线加速游戏，按分钟计费可暂停
 
 not
 
@@ -826,7 +832,7 @@ not
 
 ### 4.3 红白机模拟器
 
-[小鸡模拟器](https://www.xiaoji001.com) 最新版PC/安卓/iOS/TV版 - 经典游戏模拟器 | [VirtuaNES](https://www.emulator-zone.com/doc.php/nes/virtuanes.html)
+[小鸡模拟器](https://www.xiaoji001.com) 最新版 PC/安卓/iOS/TV 版 - 经典游戏模拟器 | [VirtuaNES](https://www.emulator-zone.com/doc.php/nes/virtuanes.html)
 
 ## 5 一些优秀的应用厂商
 

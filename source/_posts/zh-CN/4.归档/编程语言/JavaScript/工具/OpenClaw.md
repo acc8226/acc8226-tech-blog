@@ -21,7 +21,8 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 
 * Node >=22
 * macOS、Linux 或通过 WSL2 的 Windows
-* pnpm 仅在从源代码构建时需要<!-- ​more -->
+* pnpm 仅在从源代码构建时需要
+<!-- ​more -->
 
 ### 快速安装（推荐）
 
